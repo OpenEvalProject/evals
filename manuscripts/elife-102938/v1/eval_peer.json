@@ -1,0 +1,166 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C19",
+      "C52",
+      "C60",
+      "C61",
+      "C65"
+    ],
+    "result": "The study generated 100 degenerate models of the pyloric network with widely distributed conductance values and systematically compared their sensitivity to perturbations in intrinsic versus synaptic conductances. The main finding is that model networks are consistently more sensitive to perturbations in intrinsic conductances than synaptic conductances, though individual models show quantitative differences in robustness that decrease as perturbation magnitude increases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly affirm this central finding. The editor states 'The results demonstrate that model networks are more sensitive to perturbations in intrinsic conductances than in synaptic conductances' and calls the study 'important' with 'compelling insights.' The anonymous reviewer confirms 'Their main finding is that changes to intrinsic conductances tend to have a larger impact on network function than changes to synaptic conductances' and describes the results as 'compelling.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "The 100 models in the database display pyloric rhythms consistent with experimental STG measurements, with conductance values widely distributed over many-fold ranges (non-normally distributed). t-SNE visualization reveals clusters in conductance space but not in feature space, indicating degenerate solutions with similar outputs from different parameter sets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the model generation approach or the characterization of degeneracy. The anonymous reviewer notes 'The paper is well-written, and the results are compelling' and confirms the authors 'addressed most of the minor comments,' suggesting acceptance of the methodological foundation including model database properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C51"
+    ],
+    "result": "Currentscape analysis demonstrates degeneracy by showing that two models with similar network activity are driven by different combinations of ionic currents in each cell type. These differences in underlying current contributions result in differential sensitivities to perturbations despite similar functional outputs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge the currentscape analysis or the demonstration of degeneracy. The editor's statement that the findings 'underscore the importance of intrinsic plasticity, a crucial yet often overlooked factor' implicitly accepts the degeneracy framework that motivates examining multiple models with different underlying mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Quantitative analysis of sensitivity curves using sigmoidal fits reveals that the midpoint parameters for synaptic curves are significantly larger than intrinsic curves (p < 0.001), indicating synaptic conductances must be varied further from starting values to disrupt activity. The areas under synaptic curves are significantly larger (p < 0.001), confirming greater robustness to synaptic perturbations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the quantitative characterization of the differential sensitivity. The anonymous reviewer states the results are 'compelling' and notes the authors 'addressed most of the minor comments,' indicating acceptance of the statistical analyses. No concerns are raised about the curve fitting or parameter comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Principal component analysis shows that 97.6% of variance in sensitivity curves is captured by the first component, indicating curves vary predominantly along a single dimension. The eigenvalues for intrinsic and synaptic curves have significantly different distributions (p < 0.05) with opposite-signed means, suggesting the curves can be approximated by the same sigmoid with flipped sign.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PCA analysis is not questioned by reviewers. The anonymous reviewer's statement that 'the results are compelling' and lack of specific critique of the PCA methodology indicates acceptance of this analytical approach and its findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C90",
+      "C91",
+      "C94",
+      "C97"
+    ],
+    "result": "Two-dimensional projections of conductance space using the trained classifier reveal that initial conductance values are generally farther from the boundary of pyloric activity for synaptic conductances than intrinsic conductances. The occupied areas for synaptic conductances are larger, consistent with greater robustness to synaptic perturbations, though individual models show variation in which cells are most sensitive.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the 2D visualization approach or its interpretations. The editor's characterization of the study as providing 'compelling insights' and the anonymous reviewer's statement that results are 'compelling' indicate acceptance of these supporting analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C115",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors acknowledge that their study design may underestimate the influence of intrinsic activity by constraining models to a restricted region of parameter space. They predict results will generalize to other rhythmic circuits with oscillatory properties but acknowledge uncertainty about whether cortical/hippocampal circuits would show similar patterns, noting the need for future studies in other circuit types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Both reviewers explicitly raise concerns about generalizability. The editor states 'The generality of these conclusions should be tested across diverse networks and functions.' The anonymous reviewer notes 'it remains unclear how general the results are' and states 'they do not claim generality beyond the specific function they explore in the STG circuit,' while suggesting 'the paper would be much more insightful if it provided a more general statement.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study examined inhibitory synapses (as found in the STG), which may show diminishing effects with increased strength due to reversal potential saturation. The authors speculate that excitatory circuits might show different patterns, though cortical function depends on excitatory/inhibitory balance, making direct predictions uncertain.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anonymous reviewer explicitly states 'it remains unclear...what the underlying mechanism is' and notes the paper 'would be much more insightful if it...investigated the mechanism behind why, in their hands, synaptic parameters appear more resilient to changes than intrinsic parameters.' This indicates the mechanistic explanation remains insufficiently developed despite the authors' discussion of inhibitory versus excitatory dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "A random forest classifier (500 trees, max depth 4) was trained on 1200 manually labeled traces to classify network activity as pyloric or not pyloric. The classifier achieved \u226595% accuracy for selected models, with approximately 2-3% misclassification rate. Only models meeting this accuracy threshold after perturbation were included in the study.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the classification methodology. The anonymous reviewer notes the authors 'addressed most of the minor comments' and describes results as 'compelling,' suggesting acceptance of the analytical pipeline including the classifier. No concerns are raised about the 95% accuracy threshold or validation approach.",
+    "result_type": "MINOR"
+  }
+]

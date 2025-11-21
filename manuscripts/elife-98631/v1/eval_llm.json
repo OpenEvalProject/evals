@@ -1,0 +1,442 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C40",
+      "C41",
+      "C42",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The manuscript provides extensive background on fragile X premutation-associated conditions (FXTAS, FXPOI, FXAND), their genetic basis involving CGG repeat expansion in FMR1, and the pathomechanisms including RAN translation that produces toxic FMRpolyG protein. This background establishes the clinical and molecular context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established knowledge about fragile X-associated conditions, supported by appropriate citations to the literature. The background information is accurate and provides necessary context for understanding the significance of the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C69",
+      "C71",
+      "C158",
+      "C159"
+    ],
+    "result": "Mass spectrometry-based screening using an RNA-tagging technique identified 172 proteins binding to FMR1 RNA containing 99 CGG repeats, with 32 proteins significantly enriched compared to GC-rich control RNA. The identified proteins included known FMR1 RNA interactors (DDX3X, SAM68) and novel candidates including RPS26.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MS2-based RNA pull-down approach is well-described with appropriate controls (GC-rich RNA). The identification of known interactors (DDX3X, SAM68) validates the approach. Technical replicates were performed, and quantitative analysis identified enriched proteins. The experimental design and execution appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C70"
+    ],
+    "result": "siRNA-mediated depletion of RPS26 and DHX15 significantly decreased FMRpolyG protein levels without affecting mRNA levels in transient expression systems. The effect was independent of CGG repeat length (99xCGG vs 16xCGG) and reporter type (GFP vs nanoluciferase), with even partial RPS26 silencing sufficient to reduce RAN translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent reporter systems (FMR99xG-GFP and FMR16xG-nanoluciferase) show consistent effects of RPS26 depletion on protein but not mRNA levels. The dose-response data (Figure 1D) and use of different CGG repeat lengths strengthen the conclusion. Western blots and RT-qPCR provide complementary evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C73",
+      "C161"
+    ],
+    "result": "RPS26 depletion reduced FMRpolyG aggregate formation and alleviated FMRpolyG-induced apoptosis in cell models, suggesting that decreasing RPS26 levels helps mitigate FXPAC-related cellular phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Microscopy data (Figure 1E) quantitatively demonstrates reduced aggregate frequency, and luminescence-based apoptosis assays (Figure 1F) show decreased apoptosis at multiple timepoints. The functional consequences of RPS26 depletion on toxicity are well-documented with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Biochemical RNA-protein pull-down assays confirmed that RPS26 coprecipitates with FMR1 5'UTR containing CGG repeats (both 99xCGG and 23xCGG) but not with GC-rich control RNA. The interaction was not solely dependent on CGG repeat number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The orthogonal biochemical validation using biotinylated RNA pull-downs provides independent confirmation of the MS screening results. The finding that RPS26 enrichment is similar with different CGG repeat lengths (99x vs 23x) is interesting but requires further mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "RPS26 depletion reduced HEK293T cell proliferation by 34% at 48 hours post-silencing, but did not cause significant cell death, indicating that RPS26 depletion affects cell division but is not acutely toxic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell counting and viability assays (Figure 2A) provide clear quantitative data showing reduced proliferation without increased cell death. This is consistent with cited literature on RPS26 function and important for interpreting the specificity of effects on FMRpolyG translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C137",
+      "C193",
+      "C194"
+    ],
+    "result": "RPS26 and TSR2 depletion did not significantly inhibit global translation as measured by SUnSET assay, indicating that the effects on FMRpolyG are specific rather than due to general translation shutdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SUnSET assay (Figures 2B, 5C) with appropriate positive control (cycloheximide) demonstrates that global translation is maintained despite RPS26/TSR2 depletion. This is critical for establishing selectivity and is consistent with the known function of RPS26 in translating specific mRNA subsets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Three stable cell line models were generated: S-95xCGG and S-16xCGG (doxycycline-inducible, single-copy integration) and L-99xCGG (lentiviral, constitutive expression). These models express FMRpolyG at levels comparable to endogenous FMR1, with the S-models showing no aggregate formation even after prolonged expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell models are well-characterized with microscopy, western blot, and RT-qPCR data (Figure 3, Figure 3\u2014figure supplement 1). The lack of aggregation in S-models is advantageous for quantifying total FMRpolyG by western blot. Single-copy integration better mimics physiological conditions than transient overexpression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C104",
+      "C105"
+    ],
+    "result": "RPS26 silencing significantly decreased FMRpolyG levels in all stable cell models (S-95xCGG, S-16xCGG, L-99xCGG) without affecting mRNA levels or FMRP protein levels, demonstrating that RPS26 selectively modulates RAN translation but not canonical FMRP translation from the same mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Consistent effects across three independent stable cell models with different CGG repeat lengths and integration methods provide strong evidence. The selective effect on FMRpolyG but not FMRP (both from same mRNA) is a key finding supported by western blot and RT-qPCR data (Figure 3B-E). This selectivity is mechanistically important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C172"
+    ],
+    "result": "Known RPS26-responsive proteins (Suz12, Histone H3.3) responded to RPS26 depletion as expected, validating the siRNA approach. RPS26 depletion did not affect FMRP levels in patient-derived fibroblasts (81xCGG) or control fibroblasts (31xCGG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Validation with known RPS26 responders (Figure 3\u2014figure supplement 1) confirms siRNA efficacy. Testing in patient-derived fibroblasts with endogenous FMR1 expression (Figure 3F) strengthens the conclusion that FMRP translation is unaffected by RPS26 depletion, supporting the selectivity for RAN translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C169"
+    ],
+    "result": "SILAC-MS proteomic analysis identified over 2600 proteins in RPS26-depleted cells, with ~80% (1506 proteins) showing no response to RPS26 depletion. 223 proteins were negative responders and 158 were positive responders (p<0.05), indicating that RPS26 depletion affects translation of a limited subset of proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SILAC-MS approach is appropriate for global proteomic analysis. High identification confidence (>80% with \u22652 unique peptides) and proper statistical analysis support the findings. The observation that most proteins are unaffected is consistent with RPS26's known role in selective translation and validates the specificity of effects on FMRpolyG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Positive responders to RPS26 depletion were enriched for translation initiation complex components and large ribosomal subunit proteins. No significant GO term enrichment was found for negative responders. Western blot validation confirmed 6 of 8 tested proteins aligned with SILAC-MS data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GO analysis (Figure 4B) shows logical enrichment of translation-related proteins among positive responders, consistent with compensatory responses to 40S subunit perturbation. The 75% validation rate (6/8 proteins) by western blot is reasonable for proteomic studies. The lack of GO enrichment for negative responders may reflect their smaller number and diverse functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "Bioinformatic analysis revealed that mRNAs encoding RPS26-sensitive proteins have significantly higher GC content in 5'UTRs (positions -6 to -30) and coding sequences (positions +9 to +14), shorter 5'UTRs, and enrichment for GC-rich hexamers. This suggests RPS26-sensitive translation is selective for transcripts with GC-rich, shorter 5'UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comprehensive bioinformatic analysis with appropriate statistical testing (Figure 4D-E, Figure 4\u2014figure supplement 1) identifies clear sequence features of RPS26-sensitive transcripts. The GC-richness of FMR1 5'UTR (~90%) fits this pattern. However, the analysis does not identify specific positional requirements, and the mechanistic basis for these sequence preferences requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C128"
+    ],
+    "result": "Mutagenesis experiments showed that RPS26 depletion specifically affected FMRpolyG translation initiated from the ACG near-cognate codon but not from GTG or CTG codons. ASO blocking of the ACG codon reduced the effect of RPS26 depletion, indicating that ACG codon accessibility is required for RPS26-sensitive translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The codon substitution experiments (Figure 4F) and ASO blocking experiments (Figure 4G) provide direct evidence for codon-specific effects. The finding that only ACG (not GTG or CTG) is RPS26-sensitive is mechanistically important. However, the -4 position mutagenesis showed no effect, contrasting with yeast data, suggesting species-specific differences in RPS26 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C141",
+      "C173",
+      "C174",
+      "C176"
+    ],
+    "result": "TSR2 (RPS26 chaperone) depletion decreased both RPS26 and FMRpolyG levels without affecting FMRP or other 40S proteins (RACK1, RPS6, RPS15), but reduced Histone H3.3 (a known RPS26 responder). TSR2 silencing had the same effect on RAN translation as direct RPS26 depletion, without inhibiting global translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TSR2 experiments (Figure 5A-C) provide strong support that RPS26 incorporation/levels mediate the effects on RAN translation. The selective effects (FMRpolyG and H3.3 reduced, FMRP and other 40S proteins unchanged) mirror RPS26 depletion results. However, the mechanism (reduced RPS26 levels vs. impaired loading) remains unclear as acknowledged by the authors (C175).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "RPS6 depletion did not affect FMR99xG levels but caused ~50% reduction in cell number, while TSR2 depletion caused only ~15% reduction in cell number, demonstrating specificity of RPS26/TSR2 effects on RAN translation versus general ribosomal protein depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative control with RPS6 (another 40S protein) is important for establishing specificity (Figure 5C-D). The differential effects on cell proliferation (RPS6 >> TSR2 > RPS26) suggest that the impact on FMRpolyG is not simply due to reduced cell viability. This strengthens the conclusion that RPS26 has a specific role in RAN translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "RPS25 (another 40S component near RPS26) depletion significantly reduced FMRpolyG levels without affecting mRNA in S-95xCGG cells and SH-SY5Y neuroblastoma cells. RPS25 coprecipitated with FMR1 5'UTR in biochemical assays. RPS25 silencing negatively affected cell proliferation in HEK293T but only moderately in SH-SY5Y cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RPS25 experiments (Figure 6) extend the findings to another 40S component, suggesting a broader role for specific ribosomal proteins in RAN translation. Testing in neuronal SH-SY5Y cells is relevant given the neurological manifestations of FXTAS. The RNA pull-down confirms RPS25 interaction with FMR1 RNA. However, the mechanism of RPS25 action and whether it acts independently or cooperatively with RPS26 is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C44",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C171",
+      "C190",
+      "C191",
+      "C192",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "The manuscript discusses the established role of ribosome heterogeneity and RPS26 in selective mRNA translation, including its involvement in stress responses, pluripotency maintenance, and interaction with mRNA upstream of the start codon. This provides context for understanding RPS26's role in RAN translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-cited background knowledge about RPS26 function that contextualizes the experimental findings. The discussion appropriately integrates prior knowledge with new findings, though some mechanistic details (e.g., specific sequence recognition by RPS26) remain unclear as acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "The manuscript discusses connections between RPS26/TSR2 and Diamond-Blackfan anemia, ribosomal protein co-regulation, and RPS26's role in ovarian function, suggesting potential relevance to FXPOI where FMRpolyG aggregates are found in ovarian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately discuss the broader implications of the findings, connecting to known roles of RPS26 in other diseases and tissues. The connection to FXPOI is speculative but reasonable given RPS26's known role in ovarian function and the presence of FMRpolyG in ovarian cells. The discussion of ribosomal protein co-regulation is supported by the SILAC-MS data showing increased 60S proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C127",
+      "C195"
+    ],
+    "result": "The authors propose that the observed effects may depend on RNA sequences/structures in FMR1 5'UTR rather than CGG repeat length, and that RNA structure thermodynamic stability and PIC scanning dynamics could modulate RPS26 sensitivity. Alternative explanations include decreased translationally active ribosomes affecting specific mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable interpretations and hypotheses based on the data, but they remain speculative (C127 is explicitly marked as speculation). The lack of CGG repeat length dependence is well-supported experimentally, but the mechanistic basis requires further investigation. The alternative explanation about ribosome levels is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C207",
+      "C208"
+    ],
+    "result": "The manuscript reviews known RAN translation modifiers including RNA helicases (DDX3X, DHX36), stress pathway components (PERK, SRPK1), and quality control pathways (RQC), noting that mechanistic insights remain elusive. RPS25 has shown context-dependent effects in different disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents accurate review of the literature on RAN translation regulation, appropriately cited. The acknowledgment that mechanistic insights remain elusive justifies the need for the current study. The context-dependent effects of RPS25 in different models highlight the complexity of RAN translation regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C72",
+      "C129",
+      "C160",
+      "C170",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "The study concludes that RPS26, RPS25, and TSR2 play important roles in noncanonical CGGexp-related RAN translation, with RPS26 depletion selectively modulating RAN translation without affecting canonical FMRP translation. Sequence/structure elements in FMR1 mRNA that confer RPS26 sensitivity may be potential therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main conclusions are well-supported by multiple lines of evidence across different experimental systems. The selectivity for RAN translation over canonical FMRP translation is a key finding with therapeutic implications. However, the therapeutic potential (C211) is speculative and would require extensive additional work including in vivo validation and assessment of potential side effects from RPS26 modulation.",
+    "result_type": "MAJOR"
+  }
+]

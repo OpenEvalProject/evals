@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Layilin is predominantly expressed on Tregs in human skin, with LAYN-expressing Tregs showing a transcriptional profile enriched for adhesion molecules, T cell activation pathways, and clonal expansion. LAYN expression levels per cell do not differ between healthy and psoriatic skin, but LAYN+ Tregs exhibit 636 differentially expressed genes including integrins (ITGB7, ITGB6) and adhesion molecules (CADM1), with enrichment in migration/adhesion pathways by GSEA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C30 are well-supported by single-cell RNA-seq data from n=5 healthy and n=5 psoriatic skin samples (Figure 1A-J). The transcriptional profiling, differential expression analysis, GSEA, and TCR repertoire analysis converge to show that LAYN+ Tregs represent an activated, clonally expanded subset with enhanced adhesion signatures. The finding that LAYN expression per cell doesn't increase in psoriasis (C20-C21) is appropriately supported by volcano plot analysis, though this negative result could benefit from power analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C71"
+    ],
+    "result": "Deletion of layilin in human Tregs by CRISPR (achieving 30-50% reduction) has no significant effect on Treg activation markers or suppressive capacity in vitro, as measured by spectral flow cytometry and standard suppression assays with CD4+ and CD8+ T cell responders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by in vitro data from n=6 donors across two independent experiments (Figure 2C-D). The CRISPR approach achieved partial deletion (30-50%), and multiple activation markers and suppression ratios were tested. However, the partial deletion efficiency is a limitation\u2014complete knockout might reveal effects masked by residual layilin+ cells. The conclusion that layilin plays a \"minimal role\" in vitro is appropriately cautious given this caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C70"
+    ],
+    "result": "Treg-specific deletion of layilin in Foxp3Cre/Laynfl/fl mice significantly reduces skin inflammation in the IMQ model, with decreased clinical scores, reduced infiltration of CD4+ Teff and CD8+ T cells, and fewer pro-inflammatory cytokine-producing cells. Bulk RNA-seq of layilin-deleted Tregs shows enrichment in cellular movement and migration pathways, without changes in Treg activation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C43, C70 are supported by in vivo data from n=6-7 mice per group across three independent experiments (Figure 3). The tamoxifen-inducible Cre system with qRT-PCR validation (C36) confirms deletion. Statistical significance is shown for clinical scores (****p<0.0001, two-way ANOVA) and immune cell infiltration (*p<0.05, t-test). The RNA-seq (n=5 per group) provides mechanistic insight. The contrast with in vitro findings (C33) strengthens the conclusion that layilin's role is context-dependent, requiring the complex in vivo tissue environment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C73"
+    ],
+    "result": "Layilin enhances Treg adhesion through modulation of LFA-1 activation. Crosslinking layilin with antibodies or engaging it with its natural ligand collagen IV increases LFA-1 activation (measured by m-24 antibody binding). CRISPR-mediated layilin deletion reduces LFA-1 activation and adhesion to collagen IV-coated plates but not uncoated plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-C45, C49-C53, C73 are supported by multiple complementary approaches: antibody crosslinking (n=3 donors, Figure 4D), CRISPR deletion with collagen IV coating (n=6 donors, Figure 4E), and adhesion assays (n=7 donors, Figure 4F). The ligand-specificity (collagen IV vs. uncoated/fibronectin) strengthens the mechanistic claim. Statistical significance is shown (*p<0.05, ***p<0.001). The convergence of antibody crosslinking and genetic deletion provides robust evidence. However, the m-24 antibody specificity for \"active\" LFA-1 should be validated with additional conformational assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Layilin-deficient Tregs show increased F-actin staining and cellular projections consistent with lamellipodia formation specifically in the presence of collagen IV. The authors propose a model where layilin stabilizes focal adhesion complexes through LFA-1 and talin interactions, while its absence promotes lamellipodia formation and cell motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C61 are partially supported by phalloidin staining data (n=3 donors, 10 pictures per donor, Figure 5A-B) showing increased F-actin and protrusions in layilin-deficient cells on collagen IV (*p<0.05, two-way ANOVA). However, C60-C61 represent a proposed mechanistic model (Figure 5C) that is largely speculative. While consistent with the data and prior literature on talin/vinculin/paxillin complexes (C56-C59), direct evidence for layilin-talin-LFA-1 complex formation in Tregs is lacking. The model requires validation through co-immunoprecipitation, proximity ligation assays, or super-resolution microscopy to demonstrate these molecular interactions directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C72"
+    ],
+    "result": "The authors conclude that layilin modulates Treg motility and suppressive capacity in non-lymphoid tissues through LFA-1 activation and cytoskeletal remodeling. They propose layilin anchors Tregs near collagen IV-rich blood vessels, limiting their suppressive capacity by restricting motility, with this role being context-dependent on the in vivo tissue environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C62-C64, C68, C72 represent the manuscript's central conclusions, integrating data from multiple experimental systems. The conclusion is well-supported by: (1) in vivo functional data showing enhanced suppression with layilin deletion (C5, C37-C39), (2) mechanistic data on LFA-1 and adhesion (C49-C53), (3) cytoskeletal changes (C55), and (4) prior two-photon microscopy data cited from Mehta et al., 2021 showing increased motility of layilin-deficient Tregs. The contrast between in vitro (no effect, C33) and in vivo (significant effect, C43) strengthens the tissue-context argument (C72). However, C63-C64 about collagen IV-rich blood vessel localization remain somewhat speculative without direct spatial evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C27",
+      "C34",
+      "C35",
+      "C46",
+      "C47",
+      "C48",
+      "C67",
+      "C69",
+      "C74"
+    ],
+    "result": "Background claims establishing prior knowledge about Tregs, layilin, LFA-1, and the IMQ model, all supported by appropriate citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C18, C27, C34-C35, C46-C48, C67, C69, C74 are background/context claims appropriately supported by citations to established literature. These provide necessary context for interpreting the current work. The citations appear appropriate and accurately represent prior findings. C1 (Tregs essential for tolerance) and C46-C48 (LFA-1 biology) represent well-established immunological knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors speculate that layilin may help sequester Tregs to defined niches in steady-state, while in pathological conditions increased motility may be more important. They propose layilin as a therapeutic target for autoimmune diseases, with a neutralizing antibody potentially dampening inflammation by enhancing Treg suppression and attenuating CD8+ T cell killing, though acknowledge more research is needed on layilin's role in non-immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C79 are largely speculative hypotheses about layilin's physiological role and therapeutic potential. While these speculations are reasonable extrapolations from the data, they lack direct experimental support in this manuscript. C65-C66 about steady-state vs. pathological roles are plausible but untested. C76-C78 about therapeutic potential are premature without: (1) testing in additional disease models, (2) understanding on-target effects in non-immune cells (acknowledged in C79), and (3) pharmacological validation with neutralizing antibodies. These represent appropriate future directions but should not be considered supported results.",
+    "result_type": "MINOR"
+  }
+]

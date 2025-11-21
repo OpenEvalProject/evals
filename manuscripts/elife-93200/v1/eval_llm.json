@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors establish the background knowledge that thalamocortical activity orchestrates consciousness, T-type calcium channels (particularly Cav3.1) modulate thalamic rhythms, and specific thalamic nuclei including MD are implicated in consciousness control, though the precise mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior literature with appropriate citations (C13-C37). The authors accurately summarize the state of the field, identifying both what is known (thalamocortical involvement, T-type channel function) and knowledge gaps (specific regions and mechanisms). This provides appropriate context for their investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cav3.1 knockout mice show enhanced resistance to ethanol-induced loss of movement at 3.0 g/kg dose, with increased latency to first LOM, decreased duration of first LOM, and decreased total time in LOM compared to wild-type mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 provide statistical evidence with appropriate tests (Student's t-test, p<0.05) and effect sizes across multiple behavioral measures. The dose-dependent relationship (C41) is supported by data at 2.0, 3.0, and 4.0 g/kg (Figure 1\u2014figure supplement 2). Sample sizes appear adequate (n=9 per group for 3.0 g/kg), and the interpretation (C42) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C52"
+    ],
+    "result": "MD-specific knockdown of Cav3.1 using lentiviral shRNA increases ethanol resistance, with significant correlation between knockdown level and total time in LOM, and this effect is not due to hyperlocomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The region-specific manipulation (C43-C45) shows statistically significant effects (p<0.05) with appropriate controls (shControl). The correlation analysis (C49, R=0.599, p=0.018) strengthens the causal link. Importantly, the locomotor control experiment (C52) rules out a confounding explanation. The specificity is further validated by immunohistochemistry showing targeted MD knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Cav3.1 knockdown in the ventrobasal (VB) thalamus does not affect ethanol-induced loss of movement, demonstrating regional specificity of the MD effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative control experiment in VB (C46-C48) shows no significant effects (p>0.3 for all measures), providing important specificity for the MD findings. This strengthens the conclusion that MD, not general thalamic Cav3.1, mediates ethanol resistance. However, sample size is smaller (n=5 per group) than MD experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Global Cav3.1 knockout mice show hyperlocomotion in open field test, but MD-specific knockdown mice do not, indicating the ethanol resistance phenotype is dissociable from locomotor effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dissociation between global KO (C50, p=0.0001) and MD-specific KD (C51, p=0.868) locomotor phenotypes is statistically clear and important for interpretation. This control addresses a potential confound where increased movement could artifactually appear as ethanol resistance. The ANOVA with post-hoc corrections is appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "MD neurons in Cav3.1 KO mice show near-complete absence of burst firing during NREM sleep and significantly reduced overall firing rate with lower variability across brain states compared to WT mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological characterization is rigorous with clear cell-type classification (C53) and strong statistical evidence for burst absence (C54: 4/44 vs 34/34 neurons, p<0.0001). The repeated-measures ANOVA (C55-C56) appropriately tests group and state effects. The interpretation (C57) logically follows, though the mechanism linking reduced excitability to ethanol resistance requires further explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "MD firing rate correlates negatively with brain state (from wake to sleep) in both WT and KO mice, but KO mice show less distinction between wakeful and unconscious states, suggesting Cav3.1 channels control state-dependent neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C59-C60) shows significant negative relationships in both genotypes (p<1e-10), supporting state-dependent firing. The repeated-measures ANOVA (C58, p<0.0001) demonstrates main effects. However, the interpretation (C61-C63) makes inferential leaps about consciousness that go beyond firing rate measurements. The claim about \"less clear distinction\" (C63) is supported by reduced variability but could benefit from more direct quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Under ethanol, WT MD neurons show increased burst firing and significantly decreased tonic firing, while KO neurons maintain wake-level firing without bursting, indicating Cav3.1 channels mediate the ethanol-induced reduction in MD activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contrast between WT (C64-C69: 20/33 bursting, p<0.0001 for firing decrease) and KO (C67, C70: 0/36 bursting, p=0.130 for firing change) is statistically robust with appropriate corrections. The mechanistic interpretation (C83) is well-supported by the data. However, the causal chain from firing maintenance to behavioral resistance could be strengthened with additional manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Individual WT MD neurons show significantly reduced Z-scores during ethanol-induced fLOM (29/31 neurons), while KO neurons subdivide into populations with decreasing, maintaining, or increasing activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Z-score analysis (C71: t(62)=-5.14, p<0.0001) provides normalized comparison to wake state. The single-neuron analysis (C72-C73) reveals heterogeneity in KO responses that is masked by population averages. This is an important observation, though the functional significance of the three KO subpopulations (C73) remains unclear and warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "UMAP dimensionality reduction of firing properties shows that WT neurons form distinct clusters for wake, REM, NREM, and ethanol-induced fLOM states, while KO neurons overlap with wake clusters even during low-consciousness states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The UMAP visualization (C75-C78) provides compelling qualitative support for state distinctions, and the interpretation (C79-C80) aligns with other findings. However, UMAP is a visualization tool with stochastic elements, and no quantitative metrics (cluster separation, silhouette scores) are provided. The claim would be strengthened by quantitative clustering analysis and validation that results are robust to UMAP parameters and random seed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C96",
+      "C97"
+    ],
+    "result": "20 Hz optogenetic stimulation of MD neurons in WT mice significantly increases ethanol resistance (increased latency to fLOM, decreased duration and total time in LOM) without affecting locomotor activity, demonstrating that maintaining wakeful-level MD firing is sufficient to induce ethanol resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optogenetic experiment provides strong causal evidence with significant effects on all three behavioral measures (C85-C87, p<0.02). The verification of neural entrainment (C88) and locomotor control (C89-C90, p=0.0812) strengthen the interpretation. The 20 Hz frequency matches physiological wake-state firing, supporting the mechanistic claim (C96-C97). Sample sizes are adequate (n=6-8), though slightly smaller than genetic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "20 Hz electrical stimulation of MD increases ethanol resistance (increased latency, decreased total time in LOM), while burst-like stimulation has no effect, suggesting tonic firing rather than burst firing mediates resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrical stimulation replicates optogenetic findings (C91-C92, p=0.008) using an independent method, strengthening causal claims. The negative result with burst-like stimulation (C94) is important for mechanism, though the interpretation (C95) should be cautious since artificial burst stimulation may not fully recapitulate physiological bursting. The lack of effect on fLOM duration (C93) is noted but unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Phasic inhibition of MD neurons using archaerhodopsin under lower ethanol dose (2.0 g/kg) significantly increases fLOM duration, suggesting burst-related mechanisms may stabilize rather than induce unconscious states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The archaerhodopsin experiment (C136: p=0.022) provides interesting mechanistic insight, but uses a different ethanol dose (2.0 vs 3.0 g/kg) making direct comparison difficult. The interpretation (C137-C138) is speculative, and the authors acknowledge they \"cannot formulate any clear conclusion on the direct role of burst events.\" This experiment raises interesting questions but requires additional work to definitively test the burst hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors conclude that MD neural activity plays a causal role in consciousness maintenance, with Cav3.1 T-type calcium channels serving as the key cellular modulator, and claim this is the first demonstration of MD's causal involvement in ethanol-induced loss of consciousness in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The summary claims (C98-C106) accurately reflect the collective evidence from genetic, pharmacological, and stimulation experiments. The causal claim is supported by converging evidence from multiple approaches. The novelty claim (C117) appears justified based on the literature review, though \"first report\" claims are always subject to incomplete literature searches. The mechanistic model (C114-C115) integrating readout and modulator functions is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors contextualize their findings within MD's known anatomical connectivity and prior work showing MD's role in cortical state control, brain state stabilization, and arousal under anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anatomical and functional context (C107-C109, C111-C112) is well-supported by appropriate citations. The speculative statement (C110) about MD as a \"major hub\" is clearly identified as such and represents reasonable interpretation. This contextualizes the current findings within the broader literature on thalamic control of consciousness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose that Cav3.1 channels have a polyvalent role controlling both burst and tonic firing, and that reduced firing in KO mice results from loss of Cav3.1's excitatory contributions through mechanisms like EPSP amplification and the T-window current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation (C118, C121-C122) is consistent with the observed reduction in both burst and tonic firing in KO mice. The mechanistic explanations (C119-C121) are supported by cited literature on Cav3.1 function. However, these are inferences from the data rather than direct demonstrations. The paradox of reduced excitability leading to maintained activity under ethanol (and behavioral resistance) requires more explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that relative changes in MD firing rate, rather than absolute firing levels, correlate with brain state transitions, and that low variability in KO mice drives ethanol resistance by making brain states less distinguishable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposal about relative vs. absolute firing (C127, C129) is an interesting interpretation of the paradox that KO mice have lower baseline firing but greater ethanol resistance. The variability hypothesis (C130-C131) is plausible but remains speculative. The mechanistic explanations for firing reduction under ethanol (C123-C124) cite appropriate literature but are not directly tested. These claims represent reasonable interpretations but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors review prior literature on burst firing's role in consciousness and present data showing intermediate burst propensity during ethanol-induced LOM compared to NREM sleep and wakefulness, with burst-like electrical stimulation having no effect on ethanol resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review (C132-C133) is appropriately cited. The quantitative comparison of burst propensity (C134) across states provides important context, showing ethanol-LOM is distinct from both wake and NREM. The negative result with burst-like stimulation (C135) is clearly stated. However, the functional interpretation of these observations remains unclear, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors speculate that altered Cav3.1 expression may link sleep impairment and alcohol addiction through mechanisms involving sustained tonic firing, sleep destabilization, and engagement of addiction networks via adenosine and GABA receptor changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C139-C146) are explicitly speculative, connecting the current findings to clinical conditions (alcoholism, mental disorders) and proposing mechanistic links. While the speculation is grounded in cited literature, it goes well beyond the data presented. The bidirectional relationship between Cav3.1 mutations and alcoholism (C139-C143) is interesting but requires dedicated investigation. These represent reasonable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

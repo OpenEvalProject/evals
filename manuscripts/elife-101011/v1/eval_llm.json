@@ -1,0 +1,479 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C108"
+    ],
+    "result": "A high cholesterol diet impairs GLP-1R-dependent glucoregulation in vivo. Mice fed a high cholesterol diet for 5 weeks showed worse glucose lowering responses to exendin-4 compared to chow-fed mice, despite similar vehicle responses. Islets from high cholesterol-fed mice displayed near-significant increases in cholesterol and decreased exendin-4-induced cAMP responses ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C32 are directly supported by IPGTT data (Figure 1A-C) showing impaired exendin-4 responses in high cholesterol diet-fed mice. Claims C30-C31 are supported by islet cholesterol measurements and cAMP assays (Figure 1\u2014figure supplement 1A-B). The inference that high cholesterol specifically impacts beta cell GLP-1R activity (C108) is reasonable given the ex vivo cAMP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Simvastatin treatment reduces islet cholesterol levels and improves GLP-1R function. Simvastatin decreased islet cholesterol content (confirmed by filipin staining) and correlated with increased exendin-4-induced cAMP and insulin secretion responses. Simvastatin also triggered decreased GLP-1R plasma membrane diffusion under vehicle conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are directly supported by experimental data (Figure 1G-I, Figure 1\u2014figure supplement 1F-H). The correlation between cholesterol reduction and improved GLP-1R function is well-documented. The inference about cholesterol's importance in GLP-1R movement (C43) is reasonable given the RICS data showing changes in diffusion with cholesterol modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C109",
+      "C110"
+    ],
+    "result": "Acute cholesterol loading of islets impairs GLP-1R-mediated insulin secretion potentiation. Islets loaded with cholesterol-saturated M\u03b2CD showed increased cholesterol content and decreased insulin secretion in response to exendin-4 versus vehicle, primarily due to elevated basal secretion at 11 mM glucose. This effect was not due to saturation of the secretory response and was accompanied by decreased capacity for exendin-4 to reduce GLP-1R plasma membrane diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are directly supported by experimental data (Figure 1D-F, Figure 1\u2014figure supplement 1C-E). The insulin secretion data clearly show the impairment in GLP-1R function with cholesterol loading. The control experiment with secretagogue cocktail (C36) appropriately rules out secretory saturation. The inference about GLP-1R's inability to potentiate secretion (C110) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Coarse-grained molecular dynamics simulations identify state-dependent cholesterol binding sites on GLP-1R. cgMD simulations of active (agonist-bound) and inactive (apo) GLP-1R states revealed similar top occupancy residues enriched in hydrophobic amino acids (Phe, Leu, Ile, Val), but notable differences in the top three cholesterol binding sites between states. Site I differed markedly between states, with the inactive state showing a site in the TM5-TM6 region that undergoes key structural changes upon activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C56 are supported by cgMD simulation data (Figure 2A-E). The computational methodology using Martini 3 forcefield is appropriate. The identification of state-dependent binding sites is clearly shown in the data. However, the speculation that the TM5-TM6 site is state-specific (C53) is reasonable but remains computational prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Screening of cholesterol binding site residues identifies mutations affecting GLP-1R internalisation. Twelve residues from cholesterol binding sites were mutated to alanine and screened. Four mutations (V229A, V160A, I165A, L401A) caused significant decreases in GLP-1R internalisation (30-40% reduction) without affecting surface expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are directly supported by experimental screening data (Figure 2G-H). The computational predictions (C57-C58) using Missense3D-TM are appropriate. The experimental validation shows clear effects on internalisation for four mutants while maintaining surface expression, providing strong evidence for functional relevance of these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The V229A mutation reduces GLP-1R-cholesterol interactions under basal conditions. GLP-1R V229A showed no significant difference in surface expression versus WT (though a non-significant tendency for reduction was observed). PhotoClick cholesterol binding assays revealed significantly decreased cholesterol binding to V229A under vehicle conditions without affecting binding after exendin-4 stimulation. Co-localisation studies with D4H*-mCherry cholesterol probe corroborated reduced cholesterol association under vehicle conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by multiple complementary assays (Figure 3A-G). The PhotoClick cholesterol binding assay (C63) provides direct biochemical evidence, while the D4H*-mCherry co-localisation (C64) provides spatial confirmation. The consistency between methods strengthens the conclusion. The non-significant trend in surface expression (C62) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The V229A mutation does not affect receptor conformational shift or agonist binding affinity. TR-FRET conformational assays showed no changes in receptor conformational shift following exendin-4 binding between WT and V229A. Similarly, no differences in binding affinity to exendin-asp3-TMR were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by TR-FRET and binding affinity data (Figure 3\u2014figure supplement 1B-D). These negative results are important controls showing that the V229A mutation specifically affects cholesterol interactions without disrupting basic receptor function (agonist binding and conformational change). The data quality appears adequate to support these null findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The V229A mutation reduces GLP-1R plasma membrane lateral diffusion under basal conditions. RICS analysis revealed pronounced reduction in V229A diffusion compared to WT under vehicle conditions, to a similar extent as exendin-4 binding to WT receptor, recapitulating the effect of simvastatin-induced cholesterol reduction. Single particle tracking confirmed reduced total displacement and speed of V229A versus WT receptors under vehicle conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by complementary biophysical measurements (RICS in Figure 4A-B and SPT in Figure 4C). The comparison to simvastatin effects (C69) and exendin-4 stimulation (C68) provides important context. The consistency between RICS and SPT methods strengthens the conclusion about reduced lateral mobility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "V229A mutation affects GLP-1R co-diffusion with lipid-ordered nanodomains. Exendin-4 activation tended to reduce diffusion of lipid-ordered nanodomains (measured by Laurdan GP) for both WT and V229A, with no differences between receptor types. However, RICCS cross-correlation analysis showed reduced movement of GLP-1R-lipid nanodomain complexes for WT after exendin-4, with V229A showing this behavior already under vehicle conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by RICS and RICCS data (Figure 4D-E). The Laurdan GP measurements (C71-C72) show overall lipid nanodomain behavior, while RICCS (C73-C74) specifically measures receptor-nanodomain co-diffusion. The finding that V229A pre-exists in a state similar to activated WT is consistent with other oligomerization data. The interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "V229A mutation increases GLP-1R higher-order oligomerization under basal conditions. Number and Brightness analysis showed both WT and V229A existed predominantly as monomers/dimers (60-80%). Around 30% existed as dimers-hexamers or hexamers-decamers, with tendencies for increased hexamers-decamers after exendin-4 and higher proportions for V229A under vehicle conditions. V229A showed higher proportions of higher-order oligomers pre-existing under vehicle conditions with no further increases after exendin-4, indicating higher clustering propensity in the inactive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by N&B analysis data (Figure 5A). The quantitative oligomerization state measurements provide detailed characterization. The key finding that V229A pre-exists in higher oligomeric states (C80-C81) is statistically significant and consistent with other biophysical measurements (reduced diffusion, increased lipid raft association). The inference about clustering propensity (C81) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "V229A mutation increases GLP-1R segregation to lipid rafts under basal conditions. GLP-1R V229A presented with significantly increased levels of receptors in lipid raft fractions prior to exendin-4 stimulation versus WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is directly supported by lipid raft fractionation data (Figure 5B). This biochemical fractionation approach complements the microscopy-based co-localization data. The increased lipid raft association is consistent with the reduced cholesterol binding paradox and suggests complex effects of the mutation on lipid interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "V229A mutation reduces GLP-1R recruitment to clathrin-coated pits after agonist stimulation. Before agonist addition, both WT and V229A showed weak association with clathrin-positive regions with no differences between receptors. After exendin-4 stimulation, receptor association with clathrin increased, but this increase was significantly less pronounced for V229A compared to WT, consistent with reduced internalization propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by TIRF microscopy data (Figure 5C). The quantitative \u0394F/S measurements show clear differences in clathrin recruitment. The correlation with known rapid GLP-1R internalization (C86) is appropriately cited. The agreement with previous internalization data (C88) provides internal consistency. The methodology appears sound for measuring receptor-clathrin association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "V229A mutation slows GLP-1R internalization kinetics. GLP-1R V229A internalized more slowly than WT after exendin-4 stimulation, with only ~10% internalized after 5 min versus ~30% for WT. However, V229A internalization eventually recovered after 30 min, reaching ~50% for both receptor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are directly supported by time-course internalization data (Figure 6A-C). The kinetic measurements clearly show delayed but not abolished internalization for V229A. The eventual recovery to similar levels (C91) is an important observation suggesting the mutation affects kinetics rather than capacity. The data quality and replication appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "V229A mutation increases GLP-1R plasma membrane recycling without affecting degradation. Plasma membrane recycling of internalized V229A was increased versus WT at both 1 hr and 3 hr periods. No changes in exendin-4-induced degradation were detected between WT and V229A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by recycling and degradation assay data (Figure 6D-G). The increased recycling (C92) is consistent with the overall trafficking phenotype of V229A. The lack of effect on degradation (C93) is an important control showing specificity of the mutation's effects. The methodology using cleavable SNAP probes appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "V229A mutation causes G\u03b1s-biased signaling. NanoBiT complementation assays showed V229A had significantly increased potency and efficacy of mini-Gs recruitment versus WT. Mini-Gq recruitment was unchanged. V229A caused a small but consistent increase in \u03b2-arrestin 2 recruitment. Bias calculations showed V229A is G\u03b1s-biased versus WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by NanoBiT dose-response data (Figure 7A-D). The increased mini-Gs recruitment (C94) with unchanged mini-Gq (C95) and modest increase in \u03b2-arrestin 2 (C96) provide clear evidence for biased signaling. The bias calculation (C97) appropriately quantifies this. The methodology is well-established for measuring GPCR signaling bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "V229A mutation increases GLP-1R activity at the plasma membrane with a trend toward increased endosomal activity. Bystander complementation assays showed V229A displayed significantly increased activity at the plasma membrane. A tendency for increased activity from endosomes was observed but did not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by bystander NanoBiT data (Figure 7E-F). The significant increase in plasma membrane activity (C98) is consistent with the biased signaling and reduced internalization. The non-significant trend for endosomal activity (C99) is appropriately noted as not reaching significance. The spatial resolution of this assay is valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "V229A mutation affects cAMP response kinetics and amplitude. GLP-1R V229A displayed a tendency for increased exendin-4-induced cAMP AUC, with kinetic responses that appeared delayed but reached significantly higher maximal cAMP peak levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by cAMP biosensor data (Figure 8A-B). The delayed but higher peak response is an interesting phenotype consistent with altered trafficking and signaling. The statistical significance of peak levels (C101) versus trend for AUC (C100) is appropriately distinguished. The live-cell cAMP measurements provide temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "V229A mutation improves insulin secretion fold-response to exendin-4 in INS-1 832/3 cells. V229A caused significantly decreased basal insulin secretion under vehicle (11 mM glucose alone) conditions, which resulted in significantly increased insulin secretion fold-responses to exendin-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are directly supported by insulin secretion data in INS-1 832/3 cells (Figure 8C-D). The decreased basal secretion (C102) leading to increased fold-response (C103) is clearly shown. This represents an improved secretory profile as the receptor shows enhanced dynamic range. The functional significance for beta cell biology is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "V229A mutation improves insulin secretion in primary mouse islets. In GLP-1R KO mouse islets transduced with WT or V229A, there was no difference in surface expression (though V229A showed a tendency for reduced levels). V229A caused significantly decreased internalization following exendin-4 stimulation. Expression of V229A was associated with significantly improved insulin secretion fold-increases to exendin-4, with no changes under 11 mM glucose alone but enhanced secretion during exendin-4 stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by experiments in primary islets (Figure 8E-I). The validation in primary tissue is critical for physiological relevance. The pattern differs slightly from cell lines (no basal change, C106) but shows improved exendin-4 response. The reduced internalization (C105) is consistent with cell line data. This represents strong validation of the key functional phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C155"
+    ],
+    "result": "V229A mutation does not rescue GLP-1R function under high cholesterol conditions. Loading of transduced islets with excess cholesterol led to loss of secretory responses to exendin-4 for both WT and V229A. The V229A mutation did not confer an advantage to ameliorate insulin secretion responses in cholesterol-loaded islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107 and C155 are supported by insulin secretion data in cholesterol-loaded islets (Figure 8\u2014figure supplement 1A-B). This is an important negative result showing that while V229A improves function under normal conditions, it cannot overcome the detrimental effects of excess cholesterol. This suggests the mutation's benefits are context-dependent and highlights the complexity of cholesterol-GLP-1R interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C10",
+      "C156",
+      "C157",
+      "C158",
+      "C162",
+      "C163",
+      "C165",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "GLP-1R cholesterol binding sites represent potential targets for allosteric modulation and future therapeutic development. The study suggests these sites have potential for rational design of novel allosteric modulators to fine-tune GLP-1R responses. Multiple future research directions are proposed including testing in vivo under metabolic stress, studying effects of different agonists/antagonists on cholesterol interactions, investigating effects in other cell types (especially neurons), and further structural/computational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C156-C158, C162-C163, C165, C167-C171 are largely speculative about future applications and research directions. While the functional validation of V229A (C157, C167) is supported by the data, the therapeutic potential (C10, C158, C171) remains to be demonstrated. The proposed future studies (C156, C162-C163, C168-C170) are reasonable but speculative. These represent important discussion points but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on GLP-1R biology, GPCR structure and function, and cholesterol-GPCR interactions. This includes GLP-1R tissue expression, activation by GLP-1, physiological roles, therapeutic targeting, receptor structure, signaling mechanisms, lipid interactions, and previous findings on cholesterol's effects on GLP-1R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C28 are background information supported by appropriate citations to published literature. These establish the scientific context for the study. The prior work on cholesterol extraction effects (C1, C27-C28) from the authors' previous publication provides direct motivation for the current study. All claims are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Discussion of cholesterol effects on beta cell function and clinical implications. This includes effects of acute versus chronic cholesterol exposure on insulin secretion, roles of cholesterol regulatory proteins (StAR, HMGCR), GLP-1R's role in mitochondrial function, effects of statins, and speculation about clinical implications for patients with dyslipidemia or taking statins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109, C111-C117 are supported by appropriate citations. However, claims C118, C123-C124 are speculative interpretations about mechanisms and clinical implications that extend beyond the data. While the speculation is reasonable given the results, it lacks direct experimental support. The discussion appropriately acknowledges uncertainty (\"possible,\" \"might,\" \"speculate\") but these remain hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Discussion of GLP-1R-cholesterol binding mechanisms and structural basis. This includes GLP-1R segregation to lipid nanodomains, plausibility of direct cholesterol interactions, characteristics of high-occupancy residues, lack of consensus motifs, state-dependent binding, and functional importance of the TM5-TM6 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C135 combine experimental observations with reasonable inferences. The segregation to lipid nanodomains (C125) is cited. The plausibility of direct interactions (C126) is supported by the functional data. The characteristics of binding residues (C127) come from simulation data. The lack of consensus motifs (C128-C129) is appropriately cited. The inferences about state-dependent binding (C130, C133) and functional importance (C134-C135) are reasonable given the simulation and experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Discussion of V229A mutation effects on receptor behavior and cholesterol interactions. This includes characteristics of residues affecting internalization, predicted structural changes, effects on lateral diffusion and oligomerization, role of cholesterol in regulating diffusion, effects on lipid nanodomain partitioning, complexity of lipid interactions, and overall impact on trafficking and signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C147 are largely supported by the experimental data with reasonable inferences. The observation about branched amino acids (C136) comes from screening data. Predicted structural changes (C137) are from computational analysis. The inferences about oligomerization and diffusion (C139-C140) are well-supported by N&B and RICS data. The paradox of reduced total cholesterol binding but increased lipid raft segregation (C143-C144) is an important observation highlighting complexity. The Laurdan probe limitation (C145) is appropriately noted. Overall conclusions (C146-C147) are reasonable syntheses of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Comparison of V229A effects with biased agonist exendin-phe1 and simvastatin treatment. V229A shares some features with exendin-phe1 (reduced internalization, increased recycling) but differs in others (\u03b2-arrestin recruitment, oligomerization). V229A and simvastatin both reduce lateral diffusion and increase cAMP/insulin responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C154 appropriately compare the current findings with previous work. The comparison with exendin-phe1 (C148-C151) is well-cited and highlights both similarities and differences. The comparison with simvastatin effects (C153-C154) is supported by data within the current study. These comparisons provide valuable context for interpreting the V229A phenotype and suggest convergent mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C164",
+      "C166"
+    ],
+    "result": "Broader context of GPCR-cholesterol interactions and significance for class B1 GPCRs. Examples from adenosine A2A receptor show similar phenomena of cholesterol binding site mutations affecting receptor function. The current study represents a first for class B1 GPCRs in demonstrating importance of GPCR-lipid interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 are appropriately cited examples from other GPCRs. Claim C164 about GLP-1R roles in neurons is cited. Claim C166 about this being a first for class B1 GPCRs is a reasonable assessment given the literature, though \"first\" claims should be interpreted cautiously. The comparison with other GPCR classes provides valuable context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Summary conclusion that cholesterol levels have specific effects on GLP-1R behaviors indicating potential direct interactions. This synthesizes the cholesterol modulation experiments (diet, loading, simvastatin) to conclude that cholesterol specifically affects GLP-1R function, suggesting direct receptor-lipid interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 represent reasonable inferences from the collective experimental data on cholesterol modulation (C2-C3, C29-C43). The specificity of effects (C44) is supported by the consistent patterns across multiple manipulations. The inference about potential direct interactions (C45) is reasonable given the functional effects, though it remains somewhat speculative until the computational predictions are fully validated. The subsequent experiments with V229A provide strong support for this inference.",
+    "result_type": "MAJOR"
+  }
+]

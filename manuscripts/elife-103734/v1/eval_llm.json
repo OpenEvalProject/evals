@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "70 participants completed a learning task with independently manipulated volatility and noise across six blocks of 60 trials each. Participants successfully learned the task, selecting the most rewarded option on 71% of trials. The study was adequately powered (d=0.35, 80% power) and received ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C62 provide comprehensive methodological details including sample size, task structure, ethical approval, and participant performance. The power analysis (C45-C46) justifies the sample size, and the task design (C41-C57) is clearly described with appropriate controls and manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Participants adapted their learning rates normatively to volatility (higher learning rates when volatility was high, F(1,696)=22.2, p<0.001) but showed no main effect of noise (F(1,696)=0.63, p=0.43). A significant volatility\u00d7noise interaction (F(1,693)=7.74, p=0.006) revealed that noise increased learning rates when volatility was low but not when volatility was high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 report consistent statistical findings with appropriate F-statistics and p-values. The pattern shows expected adaptation to volatility but unexpected responses to noise, with the interaction effect properly characterized through follow-up analyses (C10-C11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The intact Bayesian Observer Model (BOM) adapted normatively to both volatility and noise. Lesioning the BOM by removing volatility or noise adaptation did not replicate participant behavior. However, degrading the BOM's representation of uncertainty\u2014with greater coarsening of noise than volatility (F(1,69)=49, p<0.001)\u2014better matched participant learning rates and was favored by BIC scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 describe a systematic model comparison approach with appropriate statistical support. The degraded BOM provides a mechanistic explanation for participant behavior through differential precision in representing noise versus volatility, supported by model comparison metrics (C15) and miscategorization analyses (C16-C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C28",
+      "C80"
+    ],
+    "result": "When trials were labeled using the degraded BOM's estimates rather than task block structure, participants showed normative learning rate adaptation\u2014increasing learning rates when the degraded model estimated high volatility (F(1,566)=86, p<0.001) and low noise (F(1,566)=81, p<0.001). This pattern was not observed with intact BOM labels, suggesting participants adapt to imprecise estimates of noise that lead to its misattribution as volatility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C28, and C80 demonstrate that the degraded BOM captures participant behavior through trial relabeling. The control analysis (C20) strengthens the interpretation by showing this effect is specific to the degraded model. This provides strong evidence for the main conclusion about imprecise noise estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C91"
+    ],
+    "result": "Pupil size did not vary normatively with task block structure (no effect of volatility: F(1,1723)=0.002, p=0.9; opposite effect of noise: F(1,1723)=13.8, p<0.001). However, when trials were labeled by the degraded BOM's estimates, pupil size increased normatively with high volatility (F(1,2067)=105, p<0.001) and low noise (F(1,2067)=42.3, p<0.001). The degraded model explained additional variance in pupil data beyond the intact model for noise (F(1,286)=4.1, p=0.04) but not volatility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C91 provide converging physiological evidence supporting the degraded BOM. The hierarchical regression analysis (C23) demonstrates that the degraded model captures variance in pupil responses not explained by the intact model, specifically for noise estimation, validating the behavioral findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C77",
+      "C78"
+    ],
+    "result": "The best-fitting reinforcement learning measurement model included separate learning rates for win and loss outcomes. Inverse temperature decreased with higher noise but was not affected by volatility. Including inverse temperature as a covariate did not alter the main learning rate findings. Appropriate statistical checks (normality tests, logistic transformation) were performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C77-C78 describe appropriate model selection and statistical procedures. The control analysis (C65) demonstrates robustness of the main findings to potential confounds from choice stochasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The BOM was provided with all trial outcomes (excluding practice block), treated win and loss outcomes independently, and reset beliefs about outcome magnitudes at the start of each block while maintaining beliefs about volatility and noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 describe appropriate implementation details for the BOM that account for the task structure (changing stimuli between blocks). These methodological choices are justified by the task design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "An alternative latent-state model captured the volatility effect in participant behavior (F(1,696)=9.98, p=0.001) but, unlike participants, increased learning rates with noise (F(1,696)=100, p<0.001). Using latent-state model trial labels did not rescue normative behavior in participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 demonstrate that an alternative computational approach does not explain participant behavior as well as the degraded BOM. This strengthens the main findings by ruling out a competing explanation, though the authors appropriately note that other latent-state formulations might perform better.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Pupillometry data underwent standard preprocessing including blink removal, linear interpolation, low-pass filtering, and z-scoring. Trials with >50% interpolated data were excluded (mean 6.7%), and the first five trials of each block were excluded to avoid luminance adaptation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe standard and appropriate preprocessing procedures for pupillometry data, with citations supporting the rationale for specific choices (C76). The exclusion criteria are reasonable and clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C44"
+    ],
+    "result": "Efficient learning requires adapting to different forms of uncertainty. Normatively, learning rates should increase when volatility is high (to track changes) and when noise is low (to weight reliable information more heavily).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C29, and C44 state well-established normative principles from learning theory, supported by appropriate citations (C29). These provide the theoretical foundation for the experimental predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C24"
+    ],
+    "result": "Previous studies consistently found increased learning rates with higher volatility. However, normative responses to noise have only been observed when noise was explicitly signaled or unambiguously different from volatility. Prior work by the authors showed appropriate volatility adaptation regardless of outcome valence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C30-C31 accurately characterize the prior literature with appropriate citations. This establishes the novelty of the current study in examining noise adaptation when volatility and noise are not easily discriminable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Theoretical frameworks propose that noradrenergic/locus coeruleus activity signals volatility while cholinergic activity represents noise. Pupil dilation correlates with LC activity in primates and has been associated with volatility in humans, though it also responds to other signals like surprise. The pupillary signal may reflect general belief updating rather than specific volatility, predicting that pupil size should increase with both high volatility and low noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 provide appropriate theoretical background with citations supporting each point. The inference about pupil size reflecting general belief updating (C37) is reasonable given the cited evidence, leading to a testable prediction (C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C57"
+    ],
+    "result": "The task was designed so that high volatility/low noise and low volatility/high noise conditions produced similar ranges of outcome magnitudes, requiring participants to discriminate uncertainty sources based on temporal structure rather than magnitude ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C57 describe a key design feature that distinguishes this study from prior work. Figure 1b provides visual confirmation of similar magnitude ranges across conditions, supporting this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82",
+      "C85"
+    ],
+    "result": "Human learners are relatively insensitive to changes in outcome noise, making internally consistent errors by misattributing noise as volatility. This leads to suboptimal choice and occurs when volatility and noise are not unambiguously different.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C81-C82, and C85 represent the main conclusions of the study, well-supported by the behavioral findings (C6-C11), modeling results (C12-C20), and pupillometry data (C21-C23). The inference about suboptimal choice (C82) follows logically from the misattribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "The absence of normative noise adaptation contrasts with previous studies where noise was explicitly signaled or unambiguous. A recent study in visual perception also found insensitivity to noise, suggesting this may be a general feature of human decision-making rather than specific to learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 appropriately contextualize the findings relative to prior work. However, the generalization to all decision-making (C87) is speculative, based on a single study in a different domain (C86). More evidence would be needed to support this broader claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Noise fundamentally limits information reliability, and ignoring it has detrimental effects on inference. Evidence shows humans can respond normatively to noise when it is unambiguous, making complete insensitivity unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 provide appropriate theoretical context with citations. The argument that complete insensitivity would be surprising given the importance of noise and evidence for normative responses under some conditions is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C100"
+    ],
+    "result": "The pupillometry signal reflects general belief updating rather than specifically volatility, as it responds to both volatility and noise. Distinct behavioral and physiological responses to the two forms of uncertainty suggest separable neural representations are maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C100 draw reasonable inferences from the pupillometry findings (C21-C23) and are supported by citations to prior work (C92). The inference about separable neural representations (C100) is appropriately cautious, acknowledging the study cannot directly address neural implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The BOM provides an algorithmic description of how the task may be solved but likely does not describe cognitive or neural implementation. Alternative approaches exist, including simpler methods that may be more plausible. The results indicate relative insensitivity to noise but do not specify underlying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 appropriately acknowledge limitations of the modeling approach. The authors correctly distinguish between algorithmic-level descriptions and implementation-level mechanisms, noting that alternative formulations exist (C95) and that the study identifies the phenomenon but not the mechanism (C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Previous neuroimaging work has examined one form of uncertainty at a time. An analogy to neuronal decoding suggests that signal-correlation (tracking volatility) and noise-correlation (independent covariation) may provide a framework for understanding how different uncertainty types are encoded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 provide appropriate context about prior neuroimaging work (C97) and offer a speculative but reasonable analogy to neuronal decoding literature (C98-C99). This is presented as a possibility rather than a conclusion, which is appropriate given the study's focus on behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The reinforcement learning measurement model fitted separately to blocks does not account for learning adaptation across blocks, as it measures rather than models the adaptation process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 appropriately clarifies the purpose and limitations of the measurement model. This distinction between measurement and mechanistic models is important for interpreting the results and is correctly stated.",
+    "result_type": "MINOR"
+  }
+]

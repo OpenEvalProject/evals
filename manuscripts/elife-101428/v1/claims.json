@@ -415,7 +415,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's experimental data, with reference to figures and statistical analysis.",
+    "evidence": "This is a primary finding from the study's experimental data, with statistical analysis and reference to figures.",
     "evidence_type": [
       "DATA"
     ]
@@ -444,7 +444,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's experimental data, with reference to a figure and statistical analysis.",
+    "evidence": "This is a primary finding from the study's experimental data, with statistical analysis and reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
@@ -458,7 +458,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a finding from the study's morphological analysis, with reference to a figure and statistical analysis.",
+    "evidence": "This is a finding from the study's morphological analysis, with statistical analysis and reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
@@ -472,7 +472,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a finding from the study's morphological analysis, with reference to a figure and statistical analysis.",
+    "evidence": "This is a finding from the study's morphological analysis, with statistical analysis and reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
@@ -599,7 +599,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's electrophysiological recordings, with reference to a figure and statistical analysis.",
+    "evidence": "This is a primary finding from the study's electrophysiological recordings, with statistical analysis and reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
@@ -633,20 +633,47 @@
   },
   {
     "claim_id": "C48",
-    "claim": "In 49 paired recordings from labeled SGCs and unlabeled GCs, depolarization evoked firing in SGCs failed to evoke polysynaptic inhibitory postsynaptic currents (IPSCs) in unlabeled GCs.",
+    "claim": "Wide-field light activation failed to evoke putative polysynaptic EPSCs in unlabeled neurons.",
     "claim_type": "EXPLICIT",
-    "source": "In paired recordings from labeled SGCs and unlabeled GCs (n=49), depolarization evoked firing in SGCs (400 pA, 10 ms, 10 pulses, 50 Hz) failed to evoke polysynaptic inhibitory postsynaptic currents (IPSCs) in unlabeled GCs (Figure 4G).",
+    "source": "The recordings also allowed us to test the unlikely possibility that activation of ChR2-expressing labeled neurons evoked synaptic excitation in unlabeled neurons. Wide-field light activation, which likely activates multiple labeled neurons and axon terminals throughout the slice preparation, did not evoke putative polysynaptic EPSCs in unlabeled neurons (n=63 pairs tested).",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is a primary finding from the study's dual patch clamp recordings, with reference to a figure.",
+    "evidence": "This is a finding from the study's optogenetic experiments.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C49",
+    "claim": "Current-evoked firing in labeled cells failed to evoke EPSCs in unlabeled cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistently, in paired recordings between labeled and unlabeled neurons, current-evoked firing in labeled cells failed to evoke EPSCs in unlabeled cells (Figure 4F), underscoring the lack of glutamatergic connectivity between SGCs and GCs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study's dual patch clamp recordings, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Depolarization evoked firing in SGCs failed to evoke polysynaptic inhibitory postsynaptic currents (IPSCs) in unlabeled GCs.",
+    "claim_type": "EXPLICIT",
+    "source": "In paired recordings from labeled SGCs and unlabeled GCs (n=49), depolarization evoked firing in SGCs (400 pA, 10 ms, 10 pulses, 50 Hz) failed to evoke polysynaptic inhibitory postsynaptic currents (IPSCs) in unlabeled GCs (Figure 4G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study's dual patch clamp recordings, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
     "claim": "In 1/49 recordings from SGCLabeled to GCUnlabeled pairs, wide-field optogenetic activation evoked IPSCs in the unlabeled GC.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, in 1/49 recordings from SGCLabeled to GCUnlabeled pairs, wide-field optogenetic activation at a light intensity that evoked firing in the recorded labeled SGC evoked IPSCs in the unlabeled GC in the absence of direct synaptic connection between the pairs (Figure 4H and I).",
@@ -654,13 +681,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a finding from the study's dual patch clamp recordings, with reference to figures.",
+    "evidence": "This is a finding from the study's optogenetic experiments, with reference to figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C50",
+    "claim_id": "C52",
     "claim": "One pair (out of 63) showed current-induced firing in a labeled GC resulted in robust feedback IPSCs in an unlabeled SGC.",
     "claim_type": "EXPLICIT",
     "source": "Unexpectedly, we identified one pair (out of 63) in which current-induced firing in a labeled GC resulted in robust feedback IPSCs in an unlabeled SGC (Figure 4J and K).",
@@ -674,7 +701,21 @@
     ]
   },
   {
-    "claim_id": "C51",
+    "claim_id": "C53",
+    "claim": "Focal optical activation of GCs consistently resulted in robust IPSCs in the recorded unlabeled GC with IPSC amplitude decreasing progressively with the size of the ROI.",
+    "claim_type": "EXPLICIT",
+    "source": "Focal optical activation of GCs consistently resulted in robust IPSCs in the recorded unlabeled GC with IPSC amplitude decreasing progressively with the size of the ROI (Figure 4\u2014figure supplement 1, p<0.05 by one-way ANOVA, from 5 to 8 cells from 3 mice).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study's control experiments, with statistical analysis and reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
     "claim": "TTX consistently increased EPSC inter-event interval (IEI) by twofold.",
     "claim_type": "EXPLICIT",
     "source": "In GCs recorded under our experimental conditions in mice, the sodium channel blocker tetrodotoxin (TTX) (1 \u00b5M) consistently increased EPSC inter-event interval (IEI) (Figure 5\u2014figure supplement 1) by twofold (2.25\u00b10.3-fold increase in IEI from 5.29\u00b10.84 s in aCSF to 12.49\u00b12.84 s in TTX, n=12 cells/3 mice, p=0.0005 by paired t-test).",
@@ -682,27 +723,27 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a finding from the study's electrophysiological recordings, with reference to a figure and statistical analysis.",
+    "evidence": "This is a finding from the study's pharmacological experiments, with statistical analysis and reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C52",
+    "claim_id": "C55",
     "claim": "Approximately half the sEPSCs recorded in GCs represent AP-dependent events.",
     "claim_type": "EXPLICIT",
     "source": "These data identify that approximately half the sEPSCs recorded in GCs represent AP-dependent events and justify analysis of sEPSC in individual neurons and their correlations in neuronal pairs.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation of the study's experimental data.",
+    "evidence": "This is an inference from the study's experimental data on TTX effects.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C53",
+    "claim_id": "C56",
     "claim": "sEPSCs in labeled GCs had shorter IEI than unlabeled GCs, indicating more frequent sEPSCs.",
     "claim_type": "EXPLICIT",
     "source": "Recordings from GCs identified that sEPSCs in labeled cells had shorter IEI than unlabeled GCs, indicating more frequent sEPSCs (Figure 5C and D, IEI in s, unlabeled: 5.87 (9.94), n=5 cells from 5 mice; labeled: 2.14 (3.71), n=5 cells from 4 mice, p<0.0001 by Kolmogorov-Smirnov [K-S] test, Cohen's d=0.73).",
@@ -710,13 +751,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's electrophysiological recordings, with reference to figures and statistical analysis.",
+    "evidence": "This is a primary finding from the study's electrophysiological recordings, with statistical analysis and reference to figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C54",
+    "claim_id": "C57",
     "claim": "sEPSC amplitude was higher in labeled GCs than in unlabeled GCs.",
     "claim_type": "EXPLICIT",
     "source": "Additionally, sEPSC amplitude was also higher in labeled GCs than in unlabeled GCs (Figure 5D, amplitude in pA, unlabeled: 16.69 (8.82), n=5 cells from 4 mice; labeled: 20.36 (8.78), n=5 cells from 4 mice, p<0.0001 by K-S test, Cohen's d=0.57).",
@@ -724,27 +765,27 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's electrophysiological recordings, with reference to a figure and statistical analysis.",
+    "evidence": "This is a primary finding from the study's electrophysiological recordings, with statistical analysis and reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C55",
-    "claim": "Labeled SGCs had lower sEPSC IEI, indicating higher frequency than unlabeled SGCs.",
+    "claim_id": "C58",
+    "claim": "Labeled SGCs had lower sEPSC IEI, indicating higher frequency.",
     "claim_type": "EXPLICIT",
     "source": "As with GCs, labeled SGCs also had lower sEPSC IEI, indicating higher frequency (Figure 5E and F, IEI in s, unlabeled: 2.0 (3.1), n=6 cells from 4 mice; labeled: 1.30 (2.64), n=6 cells from 4 mice, p<0.0001 by K-S test, Cohen's d=0.33) and larger sEPSC amplitude (Figure 5F, amplitude in pA, unlabeled: 15.0 (7.08), n=6 cells from 4 mice; labeled: 19.36 (8.64), n=6 cells from 4 mice, p<0.0001 by K-S test, Cohen's d=0.58) than in unlabeled SGCs.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's electrophysiological recordings, with reference to figures and statistical analysis.",
+    "evidence": "This is a primary finding from the study's electrophysiological recordings, with statistical analysis and reference to figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C56",
+    "claim_id": "C59",
     "claim": "Labeled SGCs had larger sEPSC amplitude than unlabeled SGCs.",
     "claim_type": "EXPLICIT",
     "source": "As with GCs, labeled SGCs also had lower sEPSC IEI, indicating higher frequency (Figure 5E and F, IEI in s, unlabeled: 2.0 (3.1), n=6 cells from 4 mice; labeled: 1.30 (2.64), n=6 cells from 4 mice, p<0.0001 by K-S test, Cohen's d=0.33) and larger sEPSC amplitude (Figure 5F, amplitude in pA, unlabeled: 15.0 (7.08), n=6 cells from 4 mice; labeled: 19.36 (8.64), n=6 cells from 4 mice, p<0.0001 by K-S test, Cohen's d=0.58) than in unlabeled SGCs.",
@@ -752,13 +793,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's electrophysiological recordings, with reference to figures and statistical analysis.",
+    "evidence": "This is a primary finding from the study's electrophysiological recordings, with statistical analysis and reference to figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C57",
+    "claim_id": "C60",
     "claim": "Peri-occurrence was significantly higher in L-L than in L-U pairs for the \u00b1100 ms detection window.",
     "claim_type": "EXPLICIT",
     "source": "Peri-occurrence, quantified as the maximum cross-correlation in the detection window (Rmax), was significantly higher in L-L than in L-U pairs for the \u00b1100 ms detection window (Figure 6, Rmax in \u00b1100 ms window, L-L: 0.184\u00b10.014, L-U: 0.126\u00b10.016, p=0.018 by t-test in 7 L-L and 8 L-U pairs).",
@@ -766,13 +807,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's correlation analysis, with reference to a figure and statistical analysis.",
+    "evidence": "This is a primary finding from the study's correlation analysis, with statistical analysis and reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C58",
+    "claim_id": "C61",
     "claim": "Co-occurrence was higher in L-L pairs both within the 10 ms bin and within the 5 ms bin.",
     "claim_type": "EXPLICIT",
     "source": "Co-occurrence, quantified as the correlation in the center bin, was higher in L-L pairs both within the 10 ms bin (Figure 6E and G, 10 ms center bin correlation, L-L: 0.117\u00b10.025, L-U: 0.087\u00b10.014, p=0.0075 by two-way ANOVA in 7 L-L and 8 L-U pairs) and within the 5 ms bin (Figure 6F and G, 5 ms center bin correlation, L-L: 0.081\u00b10.019, L-U: 0.042\u00b10.009, p<0.0001 by two-way ANOVA in 7 L-L and 8 L-U pairs).",
@@ -780,107 +821,109 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a primary finding from the study's correlation analysis, with reference to figures and statistical analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C59",
-    "claim": "Center bin classification performed better than chance at predicting whether a recorded session was L-L versus L-U.",
-    "claim_type": "EXPLICIT",
-    "source": "Center bin classification performed better than chance at predicting whether a recorded session was L-L versus L-U (AUROCChance = 50%; AUROC10msCenter = 66.96%; AUROC5msCenter = 71.43%).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a finding from the study's correlation analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C60",
-    "claim": "Intrinsic properties of SGCs, specifically their less adapting firing characteristics, likely enable preferential recruitment of SGCs among neurons labeled based on IEG expression.",
-    "claim_type": "EXPLICIT",
-    "source": "Our data identify that intrinsic properties of SGCs, specifically their less adapting firing characteristics, likely enable preferential recruitment of SGCs among neurons labeled based on IEG expression.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an interpretation and conclusion drawn from the study's experimental data.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C61",
-    "claim": "Neurons activated during a behavioral experience received more frequent and larger excitatory synaptic input than those not engaged in the task.",
-    "claim_type": "EXPLICIT",
-    "source": "At the circuit level, neurons activated during a behavioral experience received more frequent and larger excitatory synaptic input than those not engaged in the task.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a conclusion drawn from the study's experimental data.",
+    "evidence": "This is a primary finding from the study's correlation analysis, with statistical analysis and reference to figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C62",
-    "claim": "Neurons in a shared DG ensemble receive more correlated spontaneous excitatory inputs than neurons without shared activation.",
+    "claim": "Center bin classification performed better than chance at predicting whether a recorded session was L-L versus L-U.",
     "claim_type": "EXPLICIT",
-    "source": "Notably, neurons in a shared DG ensemble receive more correlated spontaneous excitatory inputs than neurons without shared activation, suggesting a role for common afferent inputs in behaviorally driven ensemble recruitment.",
+    "source": "Center bin classification performed better than chance at predicting whether a recorded session was L-L versus L-U (AUROCChance = 50%; AUROC10msCenter = 66.96%; AUROC5msCenter = 71.43%).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the study's experimental data.",
+    "evidence": "This is a finding from the study's classification analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C63",
+    "claim": "Intrinsic properties of SGCs, specifically their less adapting firing characteristics, likely enable preferential recruitment of SGCs among neurons labeled based on IEG expression.",
+    "claim_type": "EXPLICIT",
+    "source": "Our data identify that intrinsic properties of SGCs, specifically their less adapting firing characteristics, likely enable preferential recruitment of SGCs among neurons labeled based on IEG expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the study's experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Neurons activated during a behavioral experience received more frequent and larger excitatory synaptic input than those not engaged in the task.",
+    "claim_type": "EXPLICIT",
+    "source": "At the circuit level, neurons activated during a behavioral experience received more frequent and larger excitatory synaptic input than those not engaged in the task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the study's experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Neurons in a shared DG ensemble receive more correlated spontaneous excitatory inputs than neurons without shared activation.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, neurons in a shared DG ensemble receive more correlated spontaneous excitatory inputs than neurons without shared activation, suggesting a role for common afferent inputs in behaviorally driven ensemble recruitment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the study's experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
     "claim": "There is no evidence for local feedforward or recurrent excitation in DG neurons labeled as part of a memory trace.",
     "claim_type": "EXPLICIT",
     "source": "Whereas GCs and downstream CA3 neurons with shared behavioral activation develop preferential glutamatergic connectivity (Ryan et al., 2015), we found no evidence for local feedforward or recurrent excitation in DG neurons labeled as part of a memory trace.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the study's experimental data, with citation to prior research.",
+    "evidence": "This is a conclusion drawn from the study's experimental findings, with citation to prior research.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C64",
+    "claim_id": "C67",
     "claim": "Activation of labeled DG neurons rarely drove inhibitory synaptic currents in unlabeled neurons.",
     "claim_type": "EXPLICIT",
     "source": "Unexpectedly, although lateral inhibition has been proposed as a mechanism for dentate engram refinement (Stefanelli et al., 2016), our experiments revealed that activation of labeled DG neurons rarely drove inhibitory synaptic currents in unlabeled neurons.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the study's experimental data, with citation to prior research.",
+    "evidence": "This is a conclusion drawn from the study's experimental findings, with citation to prior research.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C65",
+    "claim_id": "C68",
     "claim": "Approximately a third of the projection neurons activated as a part of a dentate-dependent spatial navigation task and during exposure to EE had morphology consistent with SGCs.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, we find approximately a third of the projection neurons activated as a part of a dentate-dependent spatial navigation task and during exposure to EE had morphology consistent with SGCs.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the study's morphological analysis.",
+    "evidence": "This is a conclusion drawn from the study's morphological analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C66",
+    "claim_id": "C69",
     "claim": "The reduced AP accommodation and attenuation in SGCs contributes to enhanced SGC firing and c-Fos expression during afferent activation.",
     "claim_type": "EXPLICIT",
     "source": "It is possible that the reduced AP accommodation and attenuation in SGCs contributes to enhanced SGC firing and c-Fos expression during afferent activation.",
@@ -894,7 +937,7 @@
     ]
   },
   {
-    "claim_id": "C67",
+    "claim_id": "C70",
     "claim": "Greater activity-dependent c-Fos expression in SGCs may result in their preferential labeling as part of neuronal ensembles activated during behavioral tasks.",
     "claim_type": "EXPLICIT",
     "source": "This greater activity-dependent c-Fos expression in SGCs may result in their preferential labeling as part of neuronal ensembles activated during behavioral tasks.",
@@ -908,21 +951,47 @@
     ]
   },
   {
-    "claim_id": "C68",
+    "claim_id": "C71",
     "claim": "Behaviorally relevant activation of SGCs and GCs in DG neuronal ensembles is determined by a combination of sustained firing characteristics of SGCs, enhanced glutamatergic inputs, and shared afferent drive rather than by selective circuit-level refinement by recurrent excitation or by lateral inhibition.",
     "claim_type": "EXPLICIT",
     "source": "Together, these results identify that behaviorally relevant activation of SGCs and GCs in DG neuronal ensembles is determined by a combination of sustained firing characteristics of SGCs, enhanced glutamatergic inputs, and shared afferent drive rather than by selective circuit-level refinement by recurrent excitation or by lateral inhibition.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is the main conclusion drawn from the study's experimental data.",
+    "evidence": "This is a conclusion drawn from the study's experimental findings.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C69",
+    "claim_id": "C72",
+    "claim": "Neurons with higher excitability outcompete neighboring cells for allocation to behaviorally activated neuronal ensembles.",
+    "claim_type": "EXPLICIT",
+    "source": "Studies evaluating mechanisms of ensemble recruitment during fear and aversive memory encoding, by experimentally enhancing excitability or CREB expression in a sparse population of amygdala neurons, have proposed that neurons with higher excitability outcompete neighboring cells for allocation to behaviorally activated neuronal ensembles (Han et al., 2007; Zhou et al., 2009; Sano et al., 2014; Yiu et al., 2014; Gouty-Colomer et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior research.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "There is no difference in intrinsic physiology and active properties between labeled and unlabeled GCs.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our data revealed no difference in intrinsic physiology and active properties between labeled and unlabeled GCs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study's electrophysiological recordings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
     "claim": "Firing threshold and input resistance of GCs labeled during fear conditioning and recorded 24 hr later were not different from unlabeled GCs.",
     "claim_type": "EXPLICIT",
     "source": "This is consistent with a previous report that firing threshold and input resistance of GCs labeled during fear conditioning and recorded 24 hr later were not different from unlabeled GCs (Ryan et al., 2015), although GCs and SGCs were not explicitly distinguished.",
@@ -935,22 +1004,49 @@
     ]
   },
   {
-    "claim_id": "C70",
-    "claim": "Sustained firing during depolarizing current injections larger than 400 pA and in response to afferent input are quintessential functional differences between GCs and SGCs.",
+    "claim_id": "C75",
+    "claim": "SGCs show less adapting firing than GCs.",
     "claim_type": "EXPLICIT",
-    "source": "Indeed, the sustained firing during depolarizing current injections larger than 400 pA (this study) and in response to afferent input (Larimer and Strowbridge, 2010; Afrasiabi et al., 2022) are quintessential functional differences between GCs and SGCs.",
+    "source": "In addition to previously reported less adapting firing in SGCs than in GCs (Walker et al., 2010; Afrasiabi et al., 2022), we find reduced spike amplitude attenuation in SGCs resulting in more sustained firing, particularly in response to large current injections.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the study's experimental data and prior research, with citations.",
+    "evidence": "This is a finding from the study's electrophysiological recordings, with citations to prior research.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C71",
-    "claim": "The sustained SGC firing is ideally suited to induce more IEG (c-Fos or ARC) expression and could contribute to higher-than-expected labeling of SGCs during memory engram encoding.",
+    "claim_id": "C76",
+    "claim": "Labeled SGCs had lower spike frequency adaptation than unlabeled SGCs.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, in the first direct comparison of behaviorally recruited and unlabeled SGC, we identify that labeled SGCs had lower spike frequency adaptation than unlabeled SGCs, indicating that sustained firing may predispose SGCs to activation during behavioral encoding.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding from the study's electrophysiological recordings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Sustained firing during depolarizing current injections larger than 400 pA and in response to afferent input are quintessential functional differences between GCs and SGCs.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the sustained firing during depolarizing current injections larger than 400 pA (this study) and in response to afferent input (Larimer and Strowbridge, 2010; Afrasiabi et al., 2022) are quintessential functional differences between GCs and SGCs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the study's findings and prior research, with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Sustained SGC firing is ideally suited to induce more IEG (c-Fos or ARC) expression and could contribute to higher-than-expected labeling of SGCs during memory engram encoding.",
     "claim_type": "EXPLICIT",
     "source": "This sustained SGC firing is ideally suited to induce more IEG (c-Fos or ARC) expression and could contribute to higher-than-expected labeling of SGCs during memory engram encoding.",
     "source_type": [
@@ -963,34 +1059,49 @@
     ]
   },
   {
-    "claim_id": "C72",
-    "claim": "The c-Fos-dependent ensemble labeling approach requires time for reporter expression.",
+    "claim_id": "C79",
+    "claim": "The enrichment of activity-dependent markers, including PENK, in behaviorally activated DG neurons, such as SGCs labeled in TRAP2 mice, supports the role of sustained firing in SGC recruitment.",
     "claim_type": "EXPLICIT",
-    "source": "Since the c-Fos-dependent ensemble labeling approach requires time for reporter expression, our experimental design does not allow a comparison of neuronal excitability at or before task performance.",
+    "source": "This is also supported by the enrichment of activity-dependent markers, including PENK, in behaviorally activated DG neurons, such as SGCs labeled in TRAP2 mice (Erwin et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on knowledge of the experimental method used.",
+    "evidence": "This claim is supported by a citation to prior research.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C73",
+    "claim_id": "C80",
+    "claim": "The sustained firing in SGCs, as well as higher NMDAR-mediated currents, contribute to their increased representation among behaviorally tagged DG neuronal ensembles.",
+    "claim_type": "EXPLICIT",
+    "source": "It is possible that the sustained firing in SGCs, as well as higher NMDAR-mediated currents (Larimer and Strowbridge, 2010), contribute to their increased representation (~30%) among behaviorally tagged DG neuronal ensembles compared to their relative population (~3\u20135%) (Save et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative interpretation of the study's findings, with citations to prior research.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
     "claim": "The wider dendritic arbors of SGCs are ideally positioned to receive distributed inputs and could support their preferential recruitment during behaviors.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, the wider dendritic arbors of SGCs are ideally positioned to receive distributed inputs and could support their preferential recruitment during behaviors.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculative interpretation based on the study's findings and known morphology.",
+    "evidence": "This is a speculative interpretation based on morphological features.",
     "evidence_type": [
       "SPECULATION",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C74",
+    "claim_id": "C82",
     "claim": "The SGC labeling during BM and EE is considerably lower than the approximate 80% representation in DG engrams reported previously following novel environment exposure.",
     "claim_type": "EXPLICIT",
     "source": "Although we find higher-than-expected SGCs among neuronal ensembles, the SGC labeling during BM and EE is considerably lower than the approximate 80% representation in DG engrams reported previously following novel environment exposure (Erwin et al., 2020).",
@@ -1004,7 +1115,7 @@
     ]
   },
   {
-    "claim_id": "C75",
+    "claim_id": "C83",
     "claim": "Restricting analysis to a subset of neurons filled during physiological recordings contributed to overrepresentation of SGCs among engram neurons in prior studies.",
     "claim_type": "EXPLICIT",
     "source": "It is possible that restricting analysis to a subset of neurons filled during physiological recordings contributed to overrepresentation of SGCs among engram neurons in prior studies (Erwin et al., 2020).",
@@ -1014,24 +1125,25 @@
     "evidence": "This is a speculative interpretation of differences between the current study and prior research, with citation.",
     "evidence_type": [
       "SPECULATION",
+      "INFERENCE",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C76",
-    "claim": "SGCs represent greater than 70% of the labeled neurons recorded in our study.",
+    "claim_id": "C84",
+    "claim": "SGCs represent greater than 70% of the labeled neurons recorded in the study.",
     "claim_type": "EXPLICIT",
-    "source": "Indeed, SGCs represent greater than 70% of the labeled neurons recorded in our study.",
+    "source": "This is not surprising because SGCs, especially those in the sparsely populated molecular layer, are more readily visualized and accessed for patch physiology than labeled GCs in the densely packed cell layer. Indeed, SGCs represent greater than 70% of the labeled neurons recorded in our study.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the study's experimental data.",
+    "evidence": "This is a finding from the study's experimental recordings.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C77",
+    "claim_id": "C85",
     "claim": "Neurons in shared ensembles, including the DG to CA3 projections, show preferential connectivity and selective synaptic strengthening.",
     "claim_type": "EXPLICIT",
     "source": "Neurons in shared ensembles, including the DG to CA3 projections, show preferential connectivity and selective synaptic strengthening (Ryan et al., 2015; Rao-Ruiz et al., 2021).",
@@ -1044,7 +1156,20 @@
     ]
   },
   {
-    "claim_id": "C78",
+    "claim_id": "C86",
+    "claim": "Connectivity between GCs is rarely observed in the healthy DG.",
+    "claim_type": "EXPLICIT",
+    "source": "While connectivity between GCs is rarely observed in the healthy DG, whether SGCs with axon collaterals in the molecular layer make functional synaptic contacts on GC has not been examined.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
     "claim": "DG ensembles stably reactivate and engage downstream circuits up to 12 days after encoding.",
     "claim_type": "EXPLICIT",
     "source": "We leveraged findings that DG ensembles stably reactivate and engage downstream circuits up to 12 days after encoding (Kitamura et al., 2017) to evaluate local connectivity among SGCs and GCs in behaviorally recruited DG ensembles 1 week after encoding.",
@@ -1057,60 +1182,99 @@
     ]
   },
   {
-    "claim_id": "C79",
+    "claim_id": "C88",
+    "claim": "Paired recordings did not find evidence for glutamatergic connections between labeled SGCs and GCs.",
+    "claim_type": "EXPLICIT",
+    "source": "Our paired recordings did not find evidence for glutamatergic connections between labeled SGCs and GCs, indicating that local DG engram refinement is not supported by mutual synaptic strengthening.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study's dual patch clamp recordings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "There is no evidence of direct synaptic connectivity between GCs and SGCs, regardless of whether the neurons were labeled or unlabeled.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, we observed no evidence of direct synaptic connectivity between GCs and SGCs, regardless of whether the neurons were labeled or unlabeled.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study's dual patch clamp recordings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "SGCs have compact axonal distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, SGCs have compact axonal distribution (Gupta et al., 2020), minimizing the possibility that lack of connections was a consequence of severed axons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to prior research.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
     "claim": "There is increased overlap between DG ensembles labeled during encoding and recall.",
     "claim_type": "EXPLICIT",
     "source": "Taken together with the evidence for increased overlap between DG ensembles labeled during encoding and recall, the limited glutamatergic interconnectivity among GCs and SGCs supports an instructive role for afferent inputs in DG ensemble recruitment.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation based on the study's findings and established knowledge.",
+    "evidence": "This is an inference based on the study's findings and established knowledge.",
     "evidence_type": [
       "INFERENCE",
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C80",
+    "claim_id": "C92",
     "claim": "Labeled neurons received more frequent and higher amplitude spontaneous glutamatergic inputs than corresponding unlabeled cells.",
     "claim_type": "EXPLICIT",
     "source": "Indeed, we found that labeled neurons received more frequent and higher amplitude spontaneous glutamatergic inputs than corresponding unlabeled cells, suggesting that strengthening of shared inputs may contribute to ensemble maintenance.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the study's experimental data.",
+    "evidence": "This is a finding from the study's electrophysiological recordings.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C81",
+    "claim_id": "C93",
     "claim": "The event timing of spontaneous glutamatergic inputs to pairs of labeled DG neurons was more correlated than inputs to L-U pairs.",
     "claim_type": "EXPLICIT",
     "source": "Consistent with the proposal that afferent inputs contribute to DG ensemble recruitment, we found that the event timing of spontaneous glutamatergic inputs to pairs of labeled DG neurons was more correlated than inputs to L-U pairs, suggesting that labeled neuronal pairs may receive correlated input streams.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the study's experimental data.",
+    "evidence": "This is a finding from the study's correlation analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C82",
+    "claim_id": "C94",
     "claim": "Input correlation was effective in discriminating between L-L versus L-U neuronal pairs.",
     "claim_type": "EXPLICIT",
     "source": "Moreover, input correlation was effective in discriminating between L-L versus L-U neuronal pairs, further supporting the role for input-dependent recruitment of neuronal ensembles.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the study's experimental data.",
+    "evidence": "This is a finding from the study's classification analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C83",
+    "claim_id": "C95",
     "claim": "Focal activation of a random cohort of task-unrelated GCs, labeled with ChR2 by viral transfection, was shown to mediate surround inhibition of GCs.",
     "claim_type": "EXPLICIT",
     "source": "Although GC-mediated lateral inhibition of adjacent GCs is sparse (Espinoza et al., 2018; Braganza et al., 2020), focal activation of a random cohort of task-unrelated GCs, labeled with ChR2 by viral transfection, was shown to mediate surround inhibition of GCs (Stefanelli et al., 2016; Braganza et al., 2020).",
@@ -1123,22 +1287,35 @@
     ]
   },
   {
-    "claim_id": "C84",
-    "claim": "Unlike the findings based on focal activation of random GCs, our analysis of SGCs and GCs tagged during naturalistic behavior found limited evidence for lateral inhibition of GCs.",
+    "claim_id": "C96",
+    "claim": "Analysis of SGCs and GCs tagged during naturalistic behavior found limited evidence for lateral inhibition of GCs.",
     "claim_type": "EXPLICIT",
     "source": "However, unlike the findings based on focal activation of random GCs (Stefanelli et al., 2016), our analysis of SGCs and GCs tagged during naturalistic behavior found limited evidence for lateral inhibition of GCs.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the study's experimental data, with citation to prior research.",
+    "evidence": "This is a finding from the study's dual patch clamp recordings, with citation to prior research.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C85",
-    "claim": "Focal optical activation of cohorts of GCs labeled with ChR2 based on CAMKII expression supported robust feedback inhibition in our slice preparation.",
+    "claim_id": "C97",
+    "claim": "Wide-field optical stimulation of labeled neurons rarely elicited lateral inhibition (1 of 55 recordings).",
+    "claim_type": "EXPLICIT",
+    "source": "Even wide-field optical stimulation of labeled neurons, which would be expected to activate labeled terminals on interneurons due to the recruitment of intact and severed axons, rarely elicited lateral inhibition (1 of 55 recordings).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study's optogenetic experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Focal optical activation of cohorts of GCs labeled with ChR2 based on CAMKII expression supported robust feedback inhibition in the slice preparation.",
     "claim_type": "EXPLICIT",
     "source": "Our control experiments demonstrate that, unlike activation of sparse behaviorally labeled neurons, focal optical activation of cohorts of GCs labeled with ChR2 based on CAMKII expression supported robust feedback inhibition (Figure 4\u2014figure supplement 1) in our slice preparation.",
     "source_type": [
@@ -1151,35 +1328,35 @@
     ]
   },
   {
-    "claim_id": "C86",
-    "claim": "The circuit needed to support lateral inhibition is present in our slice preparation.",
+    "claim_id": "C99",
+    "claim": "The circuit needed to support lateral inhibition is present in the slice preparation.",
     "claim_type": "EXPLICIT",
     "source": "Moreover, we have consistently recorded unitary IPSCs in DG interneuron-interneuron and interneuron-GC pairs (Yu et al., 2015; Yu et al., 2016; Proddutur et al., 2023), demonstrating that the circuit needed to support lateral inhibition is present in our slice preparation.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the study's experimental data and prior research, with citations.",
+    "evidence": "This is a finding from the study's electrophysiological recordings, with citations to prior research.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C87",
+    "claim_id": "C100",
     "claim": "The sparse recruitment of behaviorally labeled ensembles may not be sufficient to elicit lateral inhibition.",
     "claim_type": "EXPLICIT",
     "source": "Collectively, our results suggest that the sparse recruitment of behaviorally labeled ensembles may not be sufficient to elicit lateral inhibition.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation and conclusion drawn from the study's experimental data.",
+    "evidence": "This is a conclusion drawn from the study's experimental findings.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C88",
+    "claim_id": "C101",
     "claim": "Focal activation of 2\u20134% of densely packed GCs is needed to recruit lateral inhibition in the DG.",
     "claim_type": "EXPLICIT",
     "source": "Our results are consistent with prior findings that focal activation of 2\u20134% of densely packed GCs is needed to recruit lateral inhibition in the DG (Braganza et al., 2020).",
@@ -1192,7 +1369,7 @@
     ]
   },
   {
-    "claim_id": "C89",
+    "claim_id": "C102",
     "claim": "Sparse behaviorally tagged ensembles are insufficient to support the kind of lateral inhibition observed during focal activation of high-density virally labeled GCs.",
     "claim_type": "EXPLICIT",
     "source": "Importantly, we identify that sparse behaviorally tagged ensembles are insufficient to support the kind of lateral inhibition observed during focal activation of high-density virally labeled GCs (Stefanelli et al., 2016; Braganza et al., 2020 andFigure 4\u2014figure supplement 1).",
@@ -1200,14 +1377,15 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a conclusion drawn from the study's experimental data, with citations to prior research and reference to a figure.",
+    "evidence": "This is a conclusion drawn from the study's experimental findings, with citations to prior research and reference to a figure.",
     "evidence_type": [
       "DATA",
+      "INFERENCE",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C90",
+    "claim_id": "C103",
     "claim": "Modulating interneuron activity can constrain engram size by regulating network excitability.",
     "claim_type": "EXPLICIT",
     "source": "Additionally, while modulating interneuron activity can constrain engram size by regulating network excitability (Morrison et al., 2016; Stefanelli et al., 2016), our microcircuit analyses suggest that SGCs have a limited role in ensemble refinement by lateral inhibition.",
@@ -1220,23 +1398,10 @@
     ]
   },
   {
-    "claim_id": "C91",
-    "claim": "The non-fear-based contextual behavioral paradigms adopted in this study are known to engage the DG.",
+    "claim_id": "C104",
+    "claim": "The BM and EE paradigms resulted in considerably sparser labeling than reported in contextual fear conditioning paradigms adopted in prior studies.",
     "claim_type": "EXPLICIT",
-    "source": "The non-fear-based contextual behavioral paradigms adopted in this study are known to engage the DG.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is based on established knowledge in the field.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C92",
-    "claim": "The non-fear-based contextual behavioral paradigms resulted in considerably sparser labeling than reported in contextual fear conditioning paradigms adopted in prior studies.",
-    "claim_type": "EXPLICIT",
-    "source": "However, they resulted in considerably sparser labeling than reported in contextual fear conditioning paradigms adopted in prior studies (Liu et al., 2012; Liu et al., 2014; Ryan et al., 2015; Roy et al., 2017).",
+    "source": "The non-fear-based contextual behavioral paradigms adopted in this study are known to engage the DG. However, they resulted in considerably sparser labeling than reported in contextual fear conditioning paradigms adopted in prior studies (Liu et al., 2012; Liu et al., 2014; Ryan et al., 2015; Roy et al., 2017).",
     "source_type": [
       "TEXT"
     ],
@@ -1247,7 +1412,7 @@
     ]
   },
   {
-    "claim_id": "C93",
+    "claim_id": "C105",
     "claim": "The DG is preferentially activated by novelty.",
     "claim_type": "EXPLICIT",
     "source": "Since the DG is preferentially activated by novelty (Hainmueller and Bartos, 2020; Mazurkiewicz et al., 2022; Borzello et al., 2023), we reasoned that learning-related decrease in novelty may have contributed to sparse DG labeling during day 6 of BM spatial navigation.",
@@ -1260,49 +1425,62 @@
     ]
   },
   {
-    "claim_id": "C94",
+    "claim_id": "C106",
     "claim": "Tamoxifen induction during a single episode of EE exposure reliably labeled a larger cohort of DG neurons.",
     "claim_type": "EXPLICIT",
     "source": "Consistent with a role for novelty in DG ensemble activation (Mazurkiewicz et al., 2022), tamoxifen induction during a single episode of EE exposure reliably labeled a larger cohort of DG neurons, thereby enabling circuit analysis.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the study's experimental data, with citation to prior research.",
+    "evidence": "This is a finding from the study's experimental design, with citation to prior research.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C95",
+    "claim_id": "C107",
+    "claim": "There is significantly greater co-labeling of tdT neurons with c-Fos upon a second exposure to the same environment, than following prior exposure to the BM.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, our demonstration of significantly greater co-labeling of tdT neurons with c-Fos upon a second exposure to the same environment, than following prior exposure to the BM, confirmed task-specific neuronal labeling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study's immunohistochemistry experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
     "claim": "c-Fos co-labeling was observed in less than 10% of the tdT-positive neurons after re-exposure to the environment.",
     "claim_type": "EXPLICIT",
     "source": "While consistent with the rates of reactivation observed in fear conditioning experiments (DeNardo et al., 2019), c-Fos co-labeling was observed in less than 10% of the tdT-positive neurons after re-exposure to the environment, suggesting that not all tdT-labeled neurons may be behaviorally relevant.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the study's experimental data, with citation to prior research.",
+    "evidence": "This is a finding from the study's immunohistochemistry experiments, with citation to prior research.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C96",
+    "claim_id": "C109",
     "claim": "Use of the TRAP2 system may miss active neurons expressing other IEGs.",
     "claim_type": "EXPLICIT",
     "source": "A related caveat is the possibility that use of the TRAP2 system may miss active neurons expressing other IEGs (Heroux et al., 2018).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a limitation acknowledged by the authors, with citation to prior research.",
+    "evidence": "This is a caveat acknowledged by the authors, with citation to prior research.",
     "evidence_type": [
       "CITATION",
       "SPECULATION"
     ]
   },
   {
-    "claim_id": "C97",
+    "claim_id": "C110",
     "claim": "c-Fos-driven labeling in TRAP2 mice remains the current best approach for activity-dependent labeling, especially of DG neurons.",
     "claim_type": "EXPLICIT",
     "source": "Nevertheless, c-Fos-driven labeling in TRAP2 mice remains the current best approach for activity-dependent labeling, especially of DG neurons (Kawashima et al., 2014).",
@@ -1316,7 +1494,7 @@
     ]
   },
   {
-    "claim_id": "C98",
+    "claim_id": "C111",
     "claim": "SGCs represent about a third of dentate projection neurons labeled based on c-Fos expression during the contextual memory encoding.",
     "claim_type": "EXPLICIT",
     "source": "In summary, we find that SGCs represent about a third of dentate projection neurons labeled based on c-Fos expression during the contextual memory encoding, which is a considerable overrepresentation relative to their known population density.",
@@ -1329,28 +1507,28 @@
     ]
   },
   {
-    "claim_id": "C99",
+    "claim_id": "C112",
     "claim": "Unique sustained firing characteristics and temporal precision of afferent inputs may support preferential labeling of SGCs during activity-dependent labeling of memory ensembles.",
     "claim_type": "EXPLICIT",
     "source": "We propose that their unique sustained firing characteristics and temporal precision of afferent inputs may support their preferential labeling during activity-dependent labeling of memory ensembles.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a proposal and interpretation based on the study's findings.",
+    "evidence": "This is a conclusion drawn from the study's experimental findings.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C100",
+    "claim_id": "C113",
     "claim": "Correlated inputs, the ability to sustain AP firing, and sparse surround inhibition rather than glutamatergic interconnectivity are key determinants for recruitment of neurons to dentate memory ensembles.",
     "claim_type": "EXPLICIT",
     "source": "Taken together, these data support a role for correlated inputs, the ability to sustain AP firing, and sparse surround inhibition rather than glutamatergic interconnectivity as key determinants for recruitment of neurons to dentate memory ensembles.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is the main conclusion drawn from the study's experimental data.",
+    "evidence": "This is a conclusion drawn from the study's experimental findings.",
     "evidence_type": [
       "DATA",
       "INFERENCE"

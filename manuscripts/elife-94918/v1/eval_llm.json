@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "RecB mRNA is present at very low levels (~0.62 molecules per cell, with ~70% of cells having no recB mRNA), has a short lifetime (1.6 min), and exhibits constitutive but noisy transcription with a low transcription rate (km = 0.21 min\u207b\u00b9) and high coefficient of variation (CV\u00b2m = 5.9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27-C38 collectively demonstrate low recB mRNA abundance through smFISH quantification (C27-C28), characterize mRNA degradation kinetics (C29-C30), establish constitutive transcription through cell-cycle analysis (C32-C33), and quantify transcriptional parameters and noise (C34-C38). The experimental data from multiple independent techniques (smFISH, rifampicin time-course, stochastic modeling) converge to support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RecB protein is present at low abundance (3.9 \u00b1 0.6 molecules per cell), is stable with removal primarily through dilution (\u03b3p = 0.015 min\u207b\u00b9, matching growth rate), and is translated at low rates (0.15 min\u207b\u00b9) compared to typical E. coli proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are well-supported by Halo-labeling quantification (C39), pulse-chase experiments (C40-C41), consistency with independent studies (C42), and parameter estimation from the two-stage model (C43-C44). The convergence of removal rate with growth rate provides strong evidence for protein stability, and comparison with literature values validates the low translation rate conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "RecB protein exhibits lower cell-to-cell variability than predicted by the two-stage stochastic model of gene expression, with experimental CV\u00b2 (~0.19) approximately half the theoretical prediction (~0.45), suggesting active noise suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 demonstrate a significant discrepancy between experimental protein noise and theoretical predictions through stochastic simulations (C45-C46) and analytical calculations (C47). The inference of a regulatory mechanism (C48) is reasonable given the systematic deviation from theory, though the specific mechanism is not yet identified in these claims. The comparison is methodologically sound and the statistical significance is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Upon DNA damage with ciprofloxacin, RecB protein concentration remains constant while recB mRNA concentration decreases ~2.4-fold, resulting in ~2.5-fold increased translational efficiency, indicating post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by parallel smFISH and Halo-labeling experiments under DNA damage conditions. The maintained protein levels (C49-C50) despite decreased mRNA (C51-C52) lead to increased translational efficiency (C53-C54), with statistical significance confirmed. The inference of post-transcriptional regulation (C55) is well-justified by the decoupling of mRNA and protein levels. The experimental design appropriately controls for cell size changes during filamentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57"
+    ],
+    "result": "Hfq binds to recB mRNA at two main sites identified by CLASH, including a site ~8 nucleotides upstream of the ptrA RBS containing multiple Hfq-binding motifs (A-R-N).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C56-C57 are supported by CLASH data showing Hfq-binding profiles across recBCD transcripts. The identification of binding sites (C56) and specific motifs (C57) is based on established Hfq-binding consensus sequences. The data quality and specificity of CLASH for identifying direct RNA-protein interactions support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Hfq downregulates RecB translation in vivo: \u0394hfq mutants show 30% increased RecB protein concentration (2.67 vs 2.17 mol/\u00b5m\u00b2) and 2-fold increased translational efficiency (14.0 vs 7.9 proteins/mRNA) without affecting mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C58-C61 are well-supported by quantitative Halo-labeling (C58), RT-qPCR (C59), and translational efficiency calculations (C60) across five biological replicates with statistical significance. The lack of effect on mRNA stability (C59) combined with increased protein levels establishes translational control. The conclusion that Hfq alters RecB translation (C61) is strongly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C62",
+      "C63"
+    ],
+    "result": "Hfq contributes to suppression of RecB protein fluctuations: noise suppression is less effective in \u0394hfq mutants compared to wild-type, as measured by the difference between theoretical and experimental CV\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C62-C63 demonstrate reduced noise suppression in \u0394hfq through comparison of theoretical predictions with experimental measurements. The statistical significance (p=0.0088) and consistency across replicates support this finding. This represents the first experimental evidence of an RNA-binding protein involved in noise suppression in bacterial cells under native conditions, as stated in C74.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Complementation of \u0394hfq with plasmid-expressed Hfq partially restores RecB protein concentration to wild-type levels (2.57 mol/\u00b5m\u00b2) without affecting mRNA levels, confirming Hfq's role in translational control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by complementation experiments showing recovery of RecB protein levels despite sub-physiological Hfq expression. The lack of effect on mRNA levels (C65) confirms the translational mechanism. This genetic complementation provides strong evidence for specificity of Hfq's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Overexpression of the sRNA ChiX, which sequesters Hfq, increases RecB protein production, while \u0394chiX shows no effect, indicating that ChiX indirectly affects RecB by competing for Hfq binding rather than through direct regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by ChiX overexpression experiments (C66), \u0394chiX characterization (C68), and appropriate controls with CyaR. The inference that ChiX acts by sequestering Hfq (C67) is reasonable given the known high affinity of ChiX for Hfq and the lack of direct effect in \u0394chiX. This provides additional evidence for Hfq's role through competition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Deletion of the main Hfq-binding site (recB-5'UTR*) decreases mRNA levels 2-fold but maintains protein levels through compensatory 2-fold increase in translational efficiency (16.3 vs 7.9 proteins/mRNA), demonstrating that Hfq specifically limits recB translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C69-C73 are supported by parallel mRNA and protein quantification in the recB-5'UTR* mutant. The compensatory increase in translational efficiency (C71) despite decreased mRNA (C69) with maintained protein levels (C70) provides strong evidence for specific Hfq-mediated translational repression. The statistical equivalence to \u0394hfq translational efficiency (C72) further validates the specificity of the deleted binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "DSBs are highly toxic DNA lesions that can lead to cell death, mutations, and genomic rearrangements if not properly repaired, and occur spontaneously in 18% of E. coli cells per generation during normal replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C14 establish the biological context for the study through well-established knowledge about DSB toxicity (C1, C11-C12) and their occurrence (C13-C14). These are supported by appropriate citations to the literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C75"
+    ],
+    "result": "RecBCD overproduction sensitizes cells to DNA damage (UV and gamma irradiation, ciprofloxacin), while RecBCD expression is essential for DSB repair, suggesting the need for tight regulation within an optimal range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C20, C75 are supported by citations to prior work (Dermi\u0107 et al., 2005; Emmerson, 1968; White et al., 2018) and confirmed by the authors' own experiments (C75, Appendix 3-figure 2). This establishes the biological rationale for investigating RecB regulation and provides context for the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "RecBCD is expressed at very low levels (<10 molecules per cell), shows no transcriptional regulation upon DNA damage, and is not part of the SOS response regulon, with transcription considered constitutive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C24-C26 are supported by multiple literature citations and are consistent with the authors' experimental findings (C26 also supported by data in this manuscript). This establishes the prior knowledge about RecB expression and sets up the novelty of discovering post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C17",
+      "C18",
+      "C23"
+    ],
+    "result": "RecBCD is a nuclease/helicase that processes chromosomes at ~1.6 kb/s for up to ~100 kb, with probabilistic chi site recognition; the recB ribosome-binding site is located within the ptrA coding sequence, suggesting potential translational coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C17-C18, C23 describe established mechanistic and genetic features of RecBCD supported by appropriate citations. These provide necessary background for understanding the biological system and the potential for translational regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C36",
+      "C44"
+    ],
+    "result": "The measured recB mRNA lifetime (1.6 min) and transcription rate (0.21 min\u207b\u00b9) are consistent with genome-wide studies in E. coli, while the translation rate (0.15 min\u207b\u00b9) falls below typical ranges, indicating unusually low expression at multiple levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C36, C44 compare the measured parameters to literature values, providing context for the significance of the findings. The comparisons are appropriate and support the conclusion that recB expression is unusually low at both transcriptional and translational levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "This work provides the first experimental evidence of an RNA-binding protein involved in noise suppression in bacterial cells under native conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by the collective experimental evidence showing Hfq's role in reducing RecB protein fluctuations (C10, C62-C63) in native E. coli. While similar phenomena have been observed in synthetic systems and mammalian cells (C76-C79), this represents a novel finding for native bacterial gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Post-transcriptional regulation has been theoretically proposed and experimentally demonstrated in synthetic systems and mammalian cells as an effective strategy for reducing protein noise, particularly for low-abundance genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by appropriate citations to theoretical work (C76) and experimental studies in synthetic systems (C77) and mammalian cells (C78-C79). These establish the broader context for the significance of the findings and show that the RecB-Hfq system represents a natural example of a phenomenon previously observed in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30",
+      "C42"
+    ],
+    "result": "The measured RecB protein lifetime is set by the cell doubling time, consistent with recent high-throughput studies of protein turnover in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C42 are supported by the pulse-chase experiments and comparison with growth rate, with independent validation from Gupta et al., 2024. This confirms that RecB is a stable protein removed primarily through dilution.",
+    "result_type": "MINOR"
+  }
+]

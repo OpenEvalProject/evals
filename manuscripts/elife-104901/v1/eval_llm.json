@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "AlphaFold2 was used with structural templates and modified sampling parameters to predict closed and inactivated states of the hERG channel. The closed-state model was generated using a deactivated VSD from rat EAG channel (PDB 8EP1) combined with the selectivity filter from open-state hERG (PDB 5VA2). For the inactivated state, AlphaFold2 predicted multiple clusters with distinct selectivity filter conformations, including V625 carbonyl flipping and G626 constriction, which coincide with previously proposed C-type inactivation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C56 describe a novel methodology for guiding AlphaFold2 to predict multiple conformational states using structural templates and modified sampling. The clustering analysis (C49-C52) provides quantitative metrics (RMSD, pLDDT scores) supporting distinct conformations. Remarkably, AlphaFold2 independently predicted selectivity filter conformations (C53-C56) that match experimental and computational studies published after its training cutoff, providing strong validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Structural comparison of the predicted hERG channel states reveals state-specific differences in pore architecture and drug-binding residues. The closed state shows the most constricted pore, while the inactivated state features lateral rotation of V625 backbone carbonyls and repositioning of drug-binding residues Y652 and F656. These structural changes in the inactivated state expand hydrophobic pockets beneath the selectivity filter and reposition F656 toward the pore axis, potentially explaining enhanced drug binding observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 present quantitative structural comparisons supported by pore radius measurements (Figure 3). Claims C73-C75 provide a mechanistic explanation linking structural features to enhanced drug binding in the inactivated state, supported by docking data and citations to experimental studies. The structural analysis is internally consistent and provides testable predictions about drug-binding mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Molecular dynamics simulations demonstrate that the AlphaFold-predicted open-state model conducts K+ ions under applied membrane voltage (500 and 750 mV), while the predicted inactivated-state model does not conduct ions. Both direct and water-mediated knock-on mechanisms were observed in the conductive open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by extensive MD simulation data shown in Figures 5 and supplementary figures. Multiple replicate simulations under different conditions (ions-only vs. ions+water, different voltages) consistently show ion conduction in the open state but not in the inactivated state. This functional validation strongly supports the physiological relevance of the predicted structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Computational drug docking reveals state-dependent binding preferences consistent with experimental observations. Most drugs (astemizole, terfenadine, cisapride, d/l-sotalol, dofetilide, haloperidol, E-4031) showed stronger binding to the inactivated-state model, while others (moxifloxacin, quinidine, verapamil, perhexiline) did not show strong preference for the inactivated state, aligning with experimental studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by docking simulations (Figure 6\u2014figure supplement 1) and validated against multiple experimental studies. The qualitative agreement between predicted state-dependent binding and experimental observations using inactivation-deficient mutants or specific voltage protocols provides strong validation. However, the rigid backbone assumption in GALigandDock (C82) limits quantitative accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Multi-state docking incorporating open, inactivated, and closed-state conformations significantly improves correlation with experimental drug affinities compared to single-state modeling. Multi-state modeling improved R\u00b2 from 0.43 to 0.63 (47% increase in predictive power) when compared to using only the open-state model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by quantitative correlation analysis in Figure 7 with appropriate statistical metrics (R\u00b2, Pearson's r, p-values). The improvement is substantial and statistically significant. The comparison is strengthened by using a five-state Markov model (C90) to weight state probabilities during experimental protocols, addressing the complexity of comparing docking affinities to IC50 values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C9"
+    ],
+    "result": "Protein residue interaction network analysis across closed, open, and inactivated states identified critical residues driving state transitions in the S5-P linker and selectivity filter regions. Distinct hydrogen bonding patterns were observed between states, and mutations of these residues have been shown to impact hERG inactivation in numerous experimental and clinical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 and C9 are supported by detailed interaction network analysis (Figure 4) and validation against extensive mutagenesis data (Table 2). The identification of state-specific interaction patterns provides mechanistic insights, and the validation against independent experimental studies strengthens confidence in the predicted structures. The analysis appropriately distinguishes between intra- and inter-subunit interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MD simulations reveal a unique two-step dilation process in the hERG selectivity filter under applied voltage: the selectivity filter near F627 dilates first, followed by dilation near G628. Despite this dilation, ion conduction is still observed across all replicas, contrasting with the Shaker channel where dilation blocks conduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe a novel finding about hERG-specific inactivation mechanisms supported by MD simulation data (Figure 5\u2014figure supplement 6). The sequential dilation process is clearly documented, and the comparison with Shaker channels (supported by citations) highlights channel-specific differences. The observation that conduction persists despite dilation is important for understanding hERG inactivation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The hERG potassium channel is a critical drug anti-target in cardiac safety pharmacology. It underlies the IKr current essential for cardiac repolarization, and its blockade by drugs can cause QT prolongation, acquired long QT syndrome, and potentially fatal torsades de pointes arrhythmia. Drug binding exhibits state-dependence, with interactions with the inactivated state linked to elevated arrhythmia risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C15-C29 establish the biological and pharmacological context for the study. These are well-established facts in the field, supported by appropriate citations to authoritative reviews and primary literature. The claims accurately represent current understanding of hERG channel function, clinical significance, and state-dependent pharmacology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C30",
+      "C31"
+    ],
+    "result": "Current experimental and computational methods have limitations in capturing multiple conformational states of proteins. Cryo-EM typically captures single conformational snapshots, MD simulations are limited by timescales and computational resources, and enhanced sampling techniques can push proteins into non-physiological conformations. Comprehensive structural views of hERG closed and inactivated states have remained elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C30-C31 accurately describe known limitations of current structural biology methods and identify the knowledge gap addressed by this study. These are well-recognized challenges in the field and provide appropriate motivation for the AlphaFold-based approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "AlphaFold2 represents a major advance in protein structure prediction using deep learning, but in its default configuration generates only single-state structures. AlphaFold2 requires amino acid sequences as input and leverages multiple sequence alignments, structural templates, and evolutionary conservation to predict 3D structures including inter-residue distances and angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C32-C36 accurately describe AlphaFold2's capabilities and limitations, supported by appropriate citations to the original AlphaFold2 papers. These claims establish the technical foundation for the study's methodological innovations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The hERG channel is a homotetramer with each subunit containing six transmembrane segments (S1-S6), forming voltage-sensing and pore domains, plus specialized intracellular regions. The channel exists in discrete functional states (closed, open, inactivated) with state-specific structural features. Published cryo-EM structures have resolved only the open state, while computational studies exploring inactivation have limitations including high voltages forcing unnatural conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C37-C43 accurately describe established structural and functional knowledge about hERG channels, supported by appropriate citations. These claims provide essential background for understanding the study's contributions and are consistent with current literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study has several acknowledged limitations: the N-terminal PAS domain was excluded due to GPU memory constraints, pLDDT scores are not reliable for selecting alternative conformations, GALigandDock uses a rigid backbone assumption preventing observation of drug-induced allosteric effects, and drug-binding potency measurements are highly dependent on experimental techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 transparently acknowledge important limitations of the study, supported by appropriate citations. The authors appropriately qualify their results and identify areas requiring future work. This honest assessment of limitations strengthens confidence in the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study employed established computational tools and methods: AlphaFold3 for future work, ColabFold for streamlined structure prediction, Amber22 with CHARMM36m force fields for MD simulations, GALigandDock for drug docking (25,000 poses per ligand-channel pair), and a five-state hERG Markov model to predict channel state probabilities during experimental protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 describe the computational methods used in the study, appropriately citing the relevant software and force field papers. The methods are standard in the field and appropriately applied. The use of the Markov model (C90) to bridge docking simulations and experimental measurements is a methodological innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "AlphaFold2 successfully predicts inactivation mechanisms preventing ion conduction and uncovers novel molecular features explaining enhanced drug binding during inactivation. Leveraging AlphaFold-derived states significantly improves computational screening agreement with experimental drug affinities, representing an important advance over traditional single-state models that miss critical state-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 summarize the major findings of the study, which are supported by extensive computational and validation data throughout the manuscript. The MD simulations (C62-C63) validate the non-conductive nature of the inactivated state, structural analysis (C73-C75) explains enhanced drug binding, and correlation analysis (C67-C69) demonstrates improved predictive power. These represent significant advances in the field.",
+    "result_type": "MAJOR"
+  }
+]

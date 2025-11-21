@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C103",
+      "C104"
+    ],
+    "result": "Optogenetic inhibition using AAV1-CaMKII\u03b1-eNpHR3.0-EYFP effectively suppresses climbing fiber to Purkinje cell (CF-PC) synaptic transmission in vitro. Laser illumination (3-5 mW, 593 nm) significantly reduced CF EPSC amplitude in all NpHR-expressing cells (9/9 cells) and completely abolished CF-induced spikelets, while GFP controls showed no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22, C103-C104 provide converging evidence from voltage-clamp and current-clamp recordings demonstrating robust and consistent optogenetic suppression of CF transmission. The 100% success rate (9/9 cells) in NpHR group with appropriate GFP controls and statistical significance (p<0.001 for EPSCs, p=0.002 for spikelets) strongly support the effectiveness of the manipulation in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C23",
+      "C24",
+      "C65",
+      "C25",
+      "C26",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Optogenetic inhibition selectively suppresses complex spike (Cs) activity in awake mice without affecting simple spike (Ss) activity. In vivo recordings from cerebellar lobule IV/V showed significant reduction in Cs firing rates in the NpHR group (p=0.0022) with 6/8 cells responsive, while Ss rates remained unchanged and GFP controls showed no effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C26, C62-C65, C91-C95 demonstrate selective Cs suppression in vivo, but several concerns limit confidence: (1) recordings were from lobule IV/V, not the flocculus where behavioral manipulations occurred (C63), raising questions about regional specificity; (2) only 75% of cells (6/8) responded to optogenetic suppression (C91), suggesting incomplete penetrance; (3) sustained suppression was validated only for 40 minutes (C65, C25), while behavioral experiments lasted hours, creating uncertainty about maintained efficacy during long protocols.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C3",
+      "C32",
+      "C69",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Optogenetic inhibition of CF transmission during optokinetic reflex (OKR) training impairs motor memory acquisition. The GFP control group showed significant gain increase (nearly doubling from 0-50 min, p<0.0001), while the NpHR group exhibited flat learning curves with no significant gain improvement (p=0.1046), demonstrating that CF transmission is essential for cerebellar motor learning acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C32, C66-C69, C96-C98 provide strong, consistent evidence that CF inhibition blocks motor learning acquisition. The contrasting learning curves between groups, robust statistical significance (p=0.0007 for between-group comparison), and clear behavioral phenotype (flat vs. increasing gain) with appropriate controls support this conclusion. However, the result is limited to gain-increase learning and does not address other forms of motor adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C70",
+      "C99",
+      "C100",
+      "C4",
+      "C41"
+    ],
+    "result": "Optogenetic inhibition of CF transmission during memory consolidation (either 30 min or 6 hr post-learning) does not impair long-term memory formation. Both NpHR and GFP groups showed equivalent memory retention at 24 hr (p=0.3173 for 30 min protocol; p=0.6405 for 6 hr protocol), indicating CF transmission is dispensable for memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C36, C70, C99-C100 demonstrate that CF inhibition during consolidation does not affect memory retention. The lack of significant differences between groups across two different consolidation durations (30 min and 6 hr), with proper acquisition validation (C70), supports the conclusion. However, the study only examined early consolidation windows (up to 6 hr) and may miss longer-term consolidation processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C71",
+      "C101",
+      "C102"
+    ],
+    "result": "Disrupting CF signaling during memory retrieval does not affect recall of motor memory in fully trained mice. Both NpHR and GFP groups showed no significant change in gain retrieval before versus during optogenetic stimulation (NpHR: p=0.2439; GFP: p=0.3180), indicating CF transmission is not required for memory retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C71, C101-C102 provide consistent evidence that CF inhibition does not impair memory retrieval. The within-subject design (before vs. during stimulation) with appropriate controls and non-significant results in both groups support this conclusion. However, the retrieval test was relatively brief and may not capture all aspects of memory expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C61"
+    ],
+    "result": "CF transmission plays a phase-specific role in motor learning, being essential for memory acquisition but dispensable for consolidation and retrieval. This represents a specialized temporal contribution where CF input drives initial motor adaptation but subsequent memory processes rely on distinct neural mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39-C40, C43-C44, C61 synthesize the main conclusion from the acquisition, consolidation, and retrieval experiments. The convergent evidence from all three phases, with consistent patterns of CF-dependence during acquisition and CF-independence during later phases, strongly supports this phase-specific model. This conclusion is well-grounded in the experimental data, though mechanistic understanding of downstream circuits remains limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C72",
+      "C78"
+    ],
+    "result": "Memory consolidation and retrieval depend on downstream circuits independent of CF activity, with CF signaling not directly impacting medial vestibular nuclei (MVN) function during these phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38, C72, C78 propose that downstream circuits operate independently of CF activity during consolidation/retrieval, but this is largely inferential. The study demonstrates CF is not required for these phases but does not directly test MVN function or other downstream circuits. The conclusion about MVN (C78) is speculative without direct measurements of MVN activity or manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C73",
+      "C74",
+      "C80",
+      "C81"
+    ],
+    "result": "CF signaling operates in a context-sensitive manner, being selectively activated for tasks involving substantial, persistent errors requiring precise error correction during acquisition, while CF-independent mechanisms dominate later phases where adjustments are less critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45, C73-C74, C80-C81 propose a context-dependent model of CF function, but this is largely interpretive. The study only examined gain-increase learning in OKR and did not systematically vary error magnitude or persistence. The comparison to VOR literature provides context but the current data do not directly test whether error magnitude determines CF-dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Optogenetic CF suppression likely mimicked functional consequences of CF long-term depression (LTD), potentially impairing parallel fiber-PC (PF-PC) LTD and hindering gain enhancement during learning through reduced calcium influx and altered complex spike waveforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C57 propose a mechanistic interpretation linking optogenetic suppression to CF-LTD and PF-PC plasticity, but this is speculative. The study did not measure calcium transients, PF-PC LTD, or complex spike waveforms during behavioral learning. While the interpretation is plausible based on cited literature, it remains untested in the current experimental paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C79"
+    ],
+    "result": "Alternative mechanisms support memory consolidation and retrieval, including PC intrinsic plasticity for consolidation and granule cell activity for retrieval, with simple spiking potentially encoding timing and frequency information for stabilizing memory traces in downstream circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C53, C79 cite prior literature to propose alternative mechanisms but do not test these mechanisms in the current study. The role of PC intrinsic plasticity, granule cell activity, and simple spike encoding remain speculative in the context of the current OKR paradigm and would require direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C82",
+      "C83",
+      "C60"
+    ],
+    "result": "The study focused on early consolidation phases (30 min to 6 hr) that are critical for encoding and stabilizing motor memory, while extended consolidation periods involving systems-level integration may involve slower processes not examined here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C82-C83 accurately describe the scope and limitations of the consolidation experiments, appropriately citing literature on biphasic consolidation dynamics. Claim C60 appropriately acknowledges that longer-term consolidation processes were not examined. This represents an honest assessment of the study's temporal window and its limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C27",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Background knowledge claims establish the established understanding of CF transmission in cerebellar motor learning, including CF's role as an instructive signal, the OKR as a model system, complex spike generation in response to motor errors, and prior evidence for CF involvement in motor learning from lesion and optogenetic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C14, C27, C42, C46-C50 represent well-established knowledge in the field, appropriately cited to foundational and recent literature. These claims provide necessary context for the current study and accurately represent the state of knowledge, including conflicting findings (e.g., C12 vs. C13-C14) that motivate the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Methodological details for viral injection and surgical procedures are provided, including injection coordinates, angles, volumes, flow rates, and recovery periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 provide detailed methodological information that appears technically sound and is consistent with cited prior work (C84). The surgical approach (bilateral IO injections at specific coordinates and angles) is appropriate for targeting CF projections, and the 2-3 week expression period is standard for AAV vectors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The cerebellum maintains adaptive plasticity by dynamically alternating between CF-dependent and CF-independent mechanisms, with CF transmission potentially gating its own instructive signals through molecular-layer interneurons and coordinating cortical plasticity with vestibular reflexes through parallel pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 propose broader mechanistic models of cerebellar function, but these are largely speculative in the context of the current study. Claim C76 cites prior work on interneuron-mediated gating but this was not examined here. Claim C77 about CF-vestibular nucleus coordination is explicitly noted as undefined behaviorally. These represent interesting hypotheses but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

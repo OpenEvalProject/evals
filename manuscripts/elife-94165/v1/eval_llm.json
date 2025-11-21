@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C94",
+      "C95",
+      "C57",
+      "C58",
+      "C59",
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "The instantaneous condition-dependent subspace of PM MN populations shifts progressively throughout the time course of behavioral trials during both execution and observation. During the delay epoch, the subspace shifts concurrently toward both the go cue and movement onset subspaces, rather than remaining orthogonal as in reaching tasks. AE populations show similar progressive shifting during execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C94-C95, and C57-C59, C100-C102, C104 are well-supported by principal angle analyses (Figure 4) showing gradual decreases during delay epochs. The finding differs from prior reaching studies (C99) and is supported by multiple sessions across three monkeys. The methodology using instantaneous PCA at 1ms intervals with cross-validation provides robust evidence for progressive subspace shifting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Condition-dependent neural trajectories for the four RGM movements separate increasingly over the course of behavioral trials during both execution and observation, with trajectories being close together at instruction onset, more separated at go cue and movement onset, and somewhat less separated at hold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C63-C66 are supported by trajectory visualizations (Figure 5) and cumulative separation analyses (Figure 5\u2014figure supplement 1). The progressive separation is quantified and consistent across sessions. The observation that separation is less during observation than execution (C65) is appropriately attributed to lower firing rates with citation support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Classification accuracy of trajectory segments peaks near the time when segments were clipped and shows progressive increases during preparatory epochs, indicating gradual rather than abrupt shifts in neural representations. Movement segment classification accuracy rises during the delay epoch, indicating the subspace is already shifting toward the movement representation before movement onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73, C75 are supported by LSTM classification analyses (Figure 6) with appropriate cross-validation. The progressive increase in classification accuracy during delay epochs (C72-C73) provides strong evidence against orthogonal preparatory/movement subspaces. The use of bootstrapped chance levels strengthens the interpretation. However, the LSTM architecture details and hyperparameter selection are not fully justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C76",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Instantaneous execution and observation condition-dependent subspaces remain largely distinct throughout the time course of trials in monkeys R and F, with minimal overlap indicated by large principal angles and low cross-projection classification accuracy. Progressive shifting of subspaces is absent when comparing execution to observation contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39, C76, C105-C107 are supported by principal angle analyses (Figure 7) and cross-projection classification (Figure 7\u2014figure supplement 1). The finding is consistent across two of three monkeys, with monkey T showing some overlap (acknowledged in C110). The lack of progressive shifting in cross-context comparisons contrasts with within-context results, supporting distinct subspaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C77",
+      "C80",
+      "C111",
+      "C112"
+    ],
+    "result": "Despite progressing through distinct subspaces, MN execution and observation trajectory segments can be partially aligned using canonical correlation analysis, with alignment being poorest for instruction segments and strongest for movement and hold segments. This indicates similar relationships among neural representations of different movements during execution and observation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C77, C80, C111-C112 are supported by CCA analyses (Figure 8). The progressive increase in alignment from instruction to hold segments is well-documented. The bootstrapping approach (500 iterations) provides robust estimates. However, the interpretation that alignment reflects 'similar relationships' (C7, C80) requires caution\u2014CCA maximizes correlation by design, so moderate correlations may not indicate strong biological similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C89",
+      "C90",
+      "C91",
+      "C81",
+      "C82",
+      "C83",
+      "C87",
+      "C88"
+    ],
+    "result": "MN populations show consistent patterns of co-modulation during execution both within and between sessions, but AE neurons show considerable variability. Surprisingly, MN/AE alignment during execution is weaker than MN execution/observation alignment. Within-group analyses reveal that MN execution trajectories are highly consistent, MN observation trajectories are less consistent, and AE execution trajectories show the greatest variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C81-C83, C87-C91 are supported by CCA comparisons (Figure 8C-D) with appropriate statistical testing (Kruskal-Wallis, post-hoc tests). The finding that MN/AE alignment is weaker than MN:E/O alignment (C81-C82) is surprising and well-documented. The within-group analyses (C87-C91, Figure 8D) provide mechanistic insight into why between-group alignments differ. However, the smaller AE population sizes (acknowledged in C75) may contribute to lower alignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The temporal progression of MN instantaneous subspaces during observation is similar to execution, particularly around instruction onset and hold, though the decrease in principal angle during the delay epoch is less pronounced during observation. AE populations show similar patterns to MN populations during execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by comparing panels in Figure 4. The qualitative similarity is evident, though quantitative comparisons are limited. The observation that delay epoch changes are less pronounced during observation (C61) is consistent with lower firing rates during observation. The similarity between AE and MN execution patterns (C62) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Neural trajectories of PM MN populations during RGM movements show a shared rotational component in total variance (condition-independent), but condition-dependent trajectories appear knotted rather than exhibiting simple rotational motifs when projected into their own subspace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by Figure 3 showing total variance trajectories (3A) and condition-dependent trajectories (3B). The contrast between the smooth rotation in total space and the knotted appearance in condition-dependent space motivates the novel analytical approach. However, the term 'knotted' is descriptive rather than mathematically precise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "The study recorded from three monkeys (R: 6kg female, F: 10kg male, T: 10kg male) across three sessions each, using floating microelectrode arrays in PMv and PMd. The RGM task involved continuous fluid movements without dissociating reach, grasp, and manipulation components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 describe the experimental design and are supported by Methods and Figure 2. The sample size (3 monkeys, 3 sessions each) is adequate for within-subject analyses but limited for generalization. The choice not to dissociate RGM components (C48) is acknowledged as a limitation but reflects naturalistic movements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mirror neurons in macaque premotor cortex, PMv, PMd, and M1 discharge during both execution and observation, with many showing noncongruent activity. Early studies emphasized congruent neurons, but recent work shows that roughly half or more are noncongruent, with congruence possibly not exceeding chance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C24 provide literature context and are supported by appropriate citations. These claims establish the motivation for examining population-level dynamics rather than single-neuron congruence. The citations are accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Prior studies show that reaching movements exhibit simple rotational motifs in low-dimensional subspaces with partially shared execution/observation subspaces, but hand movements including grasping are more complex, possibly reflecting the greater degrees of freedom in hand control. M1 subspaces shift progressively during RGM movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C31-C34, C50-C52 provide literature context with appropriate citations. The contrast between reaching and grasping complexity motivates the study's focus on RGM movements. The speculation about degrees of freedom (C52) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Population co-modulation patterns can be analyzed in high-dimensional neural state space using dimensionality reduction to identify low-dimensional subspaces. Variance can be partitioned into condition-independent and condition-dependent components using standard approaches or demixed PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30, C35-C37 describe standard analytical frameworks in computational neuroscience with appropriate citations. These provide the conceptual foundation for the study's approach. The definitions are accurate and well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Prior studies of reaching show that PMd/M1 trajectories occupy one subspace during delay and transition to a different subspace during movement, with orthogonal preparatory/movement subspaces. Hand movement trajectories are more complex. PMd neurons show signal-related discharge ~60ms after instruction, and MN firing rates modulate during delay periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C96-C99 provide literature context with appropriate citations. These establish expectations that the current study's findings contradict (non-orthogonal subspaces during RGM). The citations are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C113",
+      "C114",
+      "C125",
+      "C127"
+    ],
+    "result": "The present findings are consistent with recent studies emphasizing noncongruent activity and differences in execution vs. observation. The minimal subspace overlap is consistent with low congruence. Prior studies using representational similarity analysis or examining condition-independent variance have found similar or greater execution/observation similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C113-C114, C125, C127 appropriately contextualize findings within recent literature. The acknowledgment that studies not separating condition-dependent/independent variance find greater similarity (C127) is important for interpretation. Citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "MN execution/observation alignment in the same session was less than between-session MN execution alignment. This may reflect lower firing rates during observation or greater trial-by-trial variability in observation segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is supported by Figure 8C data, but the explanations (C116-C117) are speculative. Both lower firing rates and greater variability could contribute, but these factors are not independently tested. Additional analyses controlling for firing rate differences would strengthen the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C128",
+      "C129"
+    ],
+    "result": "Speculation about functional roles: MNs may carry consistent forward models during execution while AE neurons carry variable feedback. During observation, MNs may receive both predictive signals and variable visual input. The aligned latent dynamics could represent either recognition of similar movements or preparation of responsive movements. Condition-dependent activity may represent movement types in an actor-dependent manner, while condition-independent activity may represent action classes independent of actor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118, C122-C124, C126, C128-C129 are explicitly speculative and not directly tested. While these interpretations are plausible given the data, they remain hypotheses requiring future experimental validation. The speculation is appropriately qualified in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C110"
+    ],
+    "result": "The difference in orthogonality of preparatory vs. movement subspaces compared to reaching studies may reflect differences in degrees of freedom (4 DOFs in reaching vs. 22+ DOFs in RGM). Monkey T may have had a substantial proportion of congruent neurons by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103 and C110 are speculative. The DOF explanation (C103) is plausible but not directly tested\u2014the study does not manipulate or measure DOFs. The speculation about monkey T (C110) is reasonable given the data but cannot be verified without single-neuron congruence analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The prevalence of MNs makes it unlikely their observation activity is vestigial. The PM MN population processes information about task epochs and target objects during observation, consistent with predictive representation of behavioral event sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by the classification analyses showing above-chance decoding during observation (Figure 6E-H). The inference that MNs process task-relevant information (C120) is well-supported. The interpretation as predictive representation (C121) is consistent with cited literature but remains inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C38",
+      "C47"
+    ],
+    "result": "The observation-related activity of execution-related neurons in PMv, PMd, and M1 is likely related to motoric functions. The extent of shared vs. unique subspaces may differ for condition-independent vs. condition-dependent variance. Prior work shows M1 activity varies with both reach location and object throughout movement epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C38, C47 are supported by citations and provide context. C25 is an inference from prevalence data. C38 motivates the study's focus on condition-dependent variance. C47 cites prior work by the authors establishing the complexity of RGM representations.",
+    "result_type": "MINOR"
+  }
+]

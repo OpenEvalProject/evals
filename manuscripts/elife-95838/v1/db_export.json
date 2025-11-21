@@ -1,0 +1,2590 @@
+{
+  "submission": {
+    "id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:05:40.369250Z",
+    "updated_at": "2025-11-21T16:05:40.369250Z"
+  },
+  "content": [
+    {
+      "id": "64838682-0f91-426d-9f50-482e8f771682",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "content_type": "manuscript",
+      "content_text": "# Acquisition phase-specific contribution of climbing fiber transmission to cerebellum-dependent motor memory in mice\n\n## Authors\n\n- Jewoo Seo<sup>1</sup> ([ORCID: 0000-0002-9162-848X](https://orcid.org/0000-0002-9162-848X))\n- Seung Ha Kim<sup>1</sup> ([ORCID: 0000-0003-0279-8290](https://orcid.org/0000-0003-0279-8290))\n- Jaegeon Lee<sup>1</sup> ([ORCID: 0000-0001-7865-3966](https://orcid.org/0000-0001-7865-3966))\n- Min Seok Kim<sup>1</sup> ([ORCID: 0009-0002-3478-7975](https://orcid.org/0009-0002-3478-7975))\n- Yong-Seok Lee<sup>1</sup> ([ORCID: 0000-0002-6217-9574](https://orcid.org/0000-0002-6217-9574))\n- Sang Jeong Kim<sup>1</sup> ([ORCID: 0000-0001-8931-3713](https://orcid.org/0000-0001-8931-3713)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))\n2. Department of Biomedical Sciences, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))\n3. Memory Network Medical Research Center, Wide River Institute of Immunology, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))\n4. Neuroscience Research Institute, Seoul National University Medical Research Center Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))\n\n\u2020 Corresponding author\n\n## Abstract\n\nClimbing fiber (CF) transmission from the inferior olive (IO) triggers complex spikes (Cs) in Purkinje cells (PCs) driven by a burst of calcium spikes. In the context of motor learning, especially the compensatory optic response, CF transmission serves as an instructive signal selectively conveyed to PCs. While the significance of CF input in motor memory formation is widely acknowledged, a comprehensive understanding of its distinct contribution across different temporal windows, spanning from the initial learning phase to the retrieval period, remains incomplete. Therefore, we aimed to investigate the necessity of CF-induced instructive signals in motor learning by assessing their roles in memory acquisition, consolidation, and retrieval. We employed optogenetics to selectively inhibit CF transmission during targeted time windows. Consequently, the absence of CF-induced instructive signals during motor learning impairs memory acquisition. However, when these signals were suppressed during the consolidation and retrieval period, there was neither a loss of long-term memory nor a prevention of memory retrieval. Our results highlight that CF transmission plays a specialized and critical role primarily in memory acquisition, rather than in subsequent processes.\n\n## Introduction\n\nThe cerebellar architecture, characterized by multiple synapses connecting diverse neuron types, enables precise adjustments within intricate neural networks (Boyden et al., 2004). Within this framework, the climbing fiber (CF) transmission derived from the inferior olive (IO) projecting to the cerebellar cortex is generally recognized as the primary pathway for relaying instructive signals to correct errors and enhance motor performance, including oculomotor behaviors (Albus, 1971; Frens et al., 2001; Ito, 1972; Marr, 1969).\n\nA prominent example of cerebellum-dependent motor learning is the optokinetic reflex (OKR), a compensatory optic response evoked by an unstable visual field (Cahill and Nathans, 2008; Schweigart et al., 1997). In OKR, adaptation to stabilize retinal images amid mismatched visual input requires the engagement of multiple neural substrates. For instance, complex spikes (Cs) in floccular Purkinje cells (PCs) driven by CF input emerge in response to unpredicted motor performance errors (Clopath et al., 2014; Eccles et al., 1966; Goossens et al., 2004; Palmer et al., 2010). Rotational visual stimulation induces Cs discharge in floccular PCs, reflecting CF-induced Cs generation in response to error signals generated from errors in oculomotor performance (Frens et al., 2001; Graf et al., 1988). Therefore, this fine-tuning of Cs in PCs is expected to regulate learning by modulating error-correcting adaptations (Yang and Lisberger, 2014).\n\nPrevious studies highlight a potential duality in CF involvement in cerebellar motor learning. For example, one study using a modified behavioral paradigm to suppress Cs suggested that simple spikes (Ss) alone may suffice for motor learning (Ke et al., 2009). In contrast, pharmacological lesioning and optogenetic inactivation of the IO impair oculomotor learning (Pham et al., 2020) and prevent eye blink conditioning (Kim et al., 2020; Medina et al., 2002; Welsh and Harvey, 1998). While CF\u2019s role in acquisition is well-supported by existing literature, its involvement in downstream memory processes like consolidation and retrieval remains contentious. This ambiguity stems from methodological limitations in previous studies, which have lacked the spatial and temporal precision to isolate CF function at distinct learning stages. Addressing this knowledge gap is essential to clarify whether CF input is uniformly critical or phase-specific in motor learning and memory.\n\nTo address this gap, we investigated the necessity of CF-induced instructive signals in motor learning by assessing their contributions across memory acquisition, consolidation, and retrieval phases. Using optogenetics, we selectively inhibited CF signals in the flocculus, a lobe-like cerebellar structure primarily responsible for ocular reflex, during targeted learning stages. Our findings provide compelling evidence for a phase-specific role of CF transmission in motor learning. This indicates that CF input is essential primarily during acquisition, with minimal involvement in consolidation and retrieval.\n\n## Results\n\n### Optogenetic inhibition of climbing fiber transmission derived from the inferior olive\n\nTo specifically manipulate CF signals in the cerebellar cortex, generally known to originate from the IO, we injected AAV1-CaMKII\u03b1-eNpHR 3.0-EYFP or AAV1-CaMKII\u03b1-EGFP into the IO of wild-type mice (Figure 1A and B). This approach allowed visualization of IO neuron expression and CF terminals in the brainstem nucleus and flocculus. Importantly, the selectively segregated expression in these regions enabled manipulation of CF terminals without disrupting IO somas, which, if damaged, can critically impair motor performance and ocular reflexes due to the IO\u2019s role as a prominent center of sensory integration (Pham et al., 2020; Shaikh et al., 2017; Van Der Giessen et al., 2008).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95838/elife-95838-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram showing virus injection for optogenetic manipulation of CF transmission. (B) Bi. A virus is expressed specifically only in the IO region (IO, inferior olive; py, pyramidal tract; ml, medial lemniscus). Scale bar, 100 \u03bcm. Bii. Virus expression along CF in the cerebellar flocculus region. (GCL, granule cell layer; PCL, Purkinje cell layer; ML, molecular layer; FL, flocculus). Scale bar, 100 \u03bcm. (C) A scheme of optogenetic suppression using a yellow laser (593 nm, 3\u20135 mW) while recording CF EPSCs under voltage clamp mode. (D) Left, representative traces of CF EPSCs of the GFP (top) and NpHR group (bottom) with (dark line) and without (light line) opto-stimulation. Right, Quantitative analysis of suppression of CF EPSCs (GFP: n = 10 cells/2 mice, NpHR: n = 9 cells/5 mice, *** p < 0.001, Unpaired t-test). (E) A scheme of optogenetic suppression while recording complex spikes under current clamp mode. (F) Representative traces of complex spike of the GFP (top) and NpHR group (bottom) with (dark line) and without (light line) opto-stimulation. Quantitative analysis of number of complex spike spikelets (GFP: n = 8 cells/1 mouse, NpHR: n = 8 cells/5 mice, ** p = 0.002; Paired t-test). The error bars indicate \u00b1 SEM.\n\nTo confirm the effectiveness of optogenetic inhibition of climbing fiber (CF) transmission, we performed whole-cell patch-clamp recordings of Purkinje cells (PCs) in acute slices of cerebellar vermis lobules 4\u20135. A 593 nm yellow laser was used to activate halorhodopsin (NpHR). PCs were selected based on optical fluorescence expression (Figure 1C and E), and a stimulation electrode was positioned in the granule cell layer near the recorded PC. The stimulation intensity was carefully calibrated to evoke minimal CF excitatory postsynaptic currents (EPSCs). Laser illumination (3\u20135 mW) during stimulation resulted in a significant reduction in EPSC amplitude, indicating robust inhibition of CF transmission. Notably, this inhibition was consistent, with 9 out of 9 cells in the NpHR group exhibiting reliable suppression without failures. Importantly, laser illumination did not affect CF EPSCs in the GFP group (Figure 1D). Under the current-clamp mode, CF stimulation-induced spikelets were also completely abolished in the NpHR group but remained unaffected in the GFP group (Figure 1F). These findings establish that optogenetic inhibition effectively suppresses CF-PC synaptic transmission in vitro.\n\nTo extend our findings in vivo, we recorded from PCs in awake, head-fixed mice during 593 nm optogenetic stimulation. AAV1-CaMKII\u03b1-eNpHR 3.0-EYFP or AAV1-CaMKII\u03b1-EGFP was injected into the IO followed by the creation of a cranial window above the cerebellar vermis three weeks later (Figure 2A). Due to technical constraints preventing direct access to the flocculus for in vivo recordings, we targeted cerebellar lobule IV/V. PCs were identified based on the detection of Cs (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95838/elife-95838-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic diagram of virus injection into IO and in vivo recording during optogenetic manipulation of CF transmission. Arrow heads indicate NpHR-expressing CF terminals in the molecular layer of the cerebellar cortex. Scale bar, 50 \u03bcm. (B) Representative electrophysiological recording traces of PC firing from the GFP and NpHR groups, without (OFF) and with (ON) yellow (593 nm) opto-stimulation. The upper plots show 10 s traces without and with opto-stimulation, and the lower plots display a 1 s segment from the respective upper traces. Asterisks denote Cs. (C) Comparison of Ss firing rates during optogenetic inhibition. For the GFP group, firing rates with laser off (n = 11 cells from 4 mice) versus on (n = 11 cells from 4 mice) were not significantly different (Mann-Whitney test, p = 0.8594). Similarly, for the NpHR group, no significant difference was observed between OFF (n = 10 cells from 6 mice) and ON (n = 10 cells from 6 mice) conditions (Mann-Whitney test, p > 0.9999). (D) Comparison of Cs firing rates during optogenetic inhibition. In the GFP group, no significant difference was observed between OFF (n = 8 cells from 4 mice) and ON (n = 8 cells from 4 mice) conditions (Mann-Whitney test, p = 0.4563). In the NpHR group, Cs firing rates were significantly reduced during opto-stimulation (OFF, n = 6 cells from 6 mice; ON, n = 6 cells from 6 mice; Mann-Whitney test, ** p = 0.0022). Of note, 6 out of 8 recorded cells were responsive to optogenetic suppression. The error bars indicate \u00b1 SEM.\n\nOptogenetic inhibition selectively suppressed Cs firing rates in the NpHR group without affecting Ss rates, whereas no changes were observed in the GFP control group (Figure 2C and D). Recordings from the same neurons during both laser-off and laser-on conditions demonstrated consistent and robust suppression of Cs activity throughout the 40-min optostimulation period. Although continuous recordings over several hours were not feasible, the stability and sustained suppression observed at 40 min strongly suggest that the manipulation would remain effective during the extended durations required for behavioral experiments. These findings confirm that optogenetic inhibition of NpHR-expressing CFs selectively suppresses Cs activity in awake mice without altering Ss activity. Furthermore, they validate the feasibility and specificity of using optogenetic interventions to block CF transmission both in vitro and in vivo, reinforcing the reliability of this approach for studying CF contributions to cerebellar function and behavior.\n\n### Inhibition of climbing fiber transmission during memory acquisition\n\nAn evaluation of CF\u2019s direct contribution in a region-specific manner has not been performed. Thus, after confirming the viability of optogenetic inhibition of CF, we investigated whether the elimination of CF transmission in the cerebellar flocculus affects cerebellar motor learning. When images on the retina are unstable due to mismatched visual inputs, CF signals are conventionally perceived to be responsible for sending error signals to the cerebellar cortex to improve ocular reflexes (Bloedel and Bracha, 1998; Frens et al., 2001; Zang and De Schutter, 2019). Using the same mouse model shown in Figure 1, we surgically implanted an optical fiber in flocculus to suppress CF transmission in vivo during OKR (Figure 3A). Head-fixed mice were placed in a rotating drum painted with a black striped pattern to provide visual input, and its rotating motion elicited an unstable retinal image. Hence, in the beginning, the trace of the mouse\u2019s eye movement represented in a sine curve was only partially overlapping with the trace of the drum\u2019s kinetics, but as the mouse underwent more sessions of OKR learning, the trace of eye movement became almost identical (Figure 3Bi). Notably, the group with inhibited CF transmission exhibited only slight changes or no improved trace of eye movements (Figure 3Bii). Overall, the results demonstrated that CF transmission is required for motor memory acquisition.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95838/elife-95838-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illustration of the optokinetic reflex behavioral test (left) and experimental scheme (right). For training, visual stimulation was given by constant rotation of the screen, while the table, where a mouse\u2019s head is fixed, remained stationary. For day 1, a mouse was trained for a total of 50 minutes, and on day 2, an amount of sustained memory was validated via gain check. Scale bar, 100 \u03bcm. (B) Representative traces of the screen (black sinusoidal curve) and eye movements (grey sinusoidal curve) divided into the GFP (i) and NpHR (ii) groups. Top traces (pre) were acquired before learning, and bottom traces (post) were obtained after 50 min of learning. The vertical scale bar represents 10 degrees per second and the horizontal scale bar represents 0.5 s. (C) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). Yellow boxes indicate opto-stimulation (12.5 58 mW for 10 min/session, total of 5 sessions). The left graph represents the GFP (n = 8) and the right graph indicates the NpHR (n = 9) group. (D) Comparison of gain changes between the GFP and NpHR groups (GFP, n = 8 mice; NpHR, n = 9 mice). Percentages of gain increment from 0 to 50 min were calculated. The change of gain of the GFP group was significantly larger than that of the NpHR group (left; Unpaired t-test, p = 0.0007). The gain of the GFP group was significantly increased from 0 to 50 min (right; Paired t-test, **** p < 0.0001), while the NpHR group showed no significant improvement of gain from 0 to 50 min (right; Paired t-test, p = 0.1046). The error bars indicate \u00b1 SEM.\n\nThis indicates that CF transmission is essential for cerebellar motor learning by presenting two contrasting learning curves. The control group exhibited an increasing trend in the learning curve, whereas the NpHR group\u2019s learning curve was almost flat, which reflects no change of gain (Figure 3C). The gain value through the learning sessions was distinctly increased in the control group, whereas the NpHR group showed no significant change in gain (Figure 3D). Furthermore, from 0 to 50 min period of learning, the control group demonstrated almost a doubling in gain, whereas the NpHR group showed little or almost no change of gain (Figure 3E). These results indicate that CF transmission is required for the proper acquisition of motor memory.\n\n### Inhibition of climbing fiber transmission during memory consolidation and retrieval phase\n\nWhen memories are initially acquired, they are generally unstable; hence, it requires some time to shape a stabilized long-term memory (Attwell et al., 2002). Therefore, memories undergo multiple processes that allow distinct shifts from short-term to long-term memory, leading to the construction of adapted behavior (Shutoh et al., 2006). Having confirmed the active involvement of CF transmission during memory acquisition, we sought to understand if its role is limited to the acquisition period or extends to memory transfer during the consolidation phase for long-term storage. We implemented identical surgical and behavioral procedures as previously conducted. However, instead of optogenetically inhibiting the transmission during memory acquisition, we suppressed CF activity in two distinct optogenetic manipulation schemes: one targeting short-term inhibition (30 min) and the other for long-term inhibition (6 hr) (Figure 4A and D). This approach was based on findings that long-term memories associated with cerebellum-dependent behaviors are vulnerable to disruption within specific time windows of consolidation, spanning from minutes to hours (Cooke et al., 2004; Titley et al., 2007). Learning curves confirmed the successful gain enhancement, validating the integrity of memory acquisition (Figure 4B and E). Once the gain was robustly enhanced, optogenetic inhibition of CF transmission during consolidation did not yield any change in the maintenance of memory, irrespective of the duration of manipulation. Consequently, long-term memory was well-established in both NpHR and GFP groups (Figure 4C and F). In addition, we verified whether CF signaling is required during the retrieval phase (Figure 4G). When mice, fully trained in the optokinetic reflex, displayed increased gain, disrupting CF signaling did not affect the retrieval of motor memory (Figure 4H). This divergence underscores a specialized role for CF transmission in the early stages of motor learning, with subsequent phases relying on distinct neural mechanisms. The results highlight phase-specific contributions of CF-driven error signaling, aligning with the hypothesis that memory consolidation and retrieval depend on downstream circuits independent of CF activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/95838/elife-95838-fig4-v1.jpg)\n\n**Figure 4.:** (A) Illustration of the experimental scheme. 10 min of optokinetic reflex training was repeated 5 times, and then opto-stimulation (12.5 mW) was given at 0 min post-learning for 30 min. (B) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). A yellow box indicates opto-stimulation at 0 min post-learning. The left graph represents the GFP and the right graph indicates the NpHR group. (C) Comparison of consolidation percentage between the GFP and NpHR groups (GFP group, n = 7 mice; NpHR group, n = 9 mice). The percentage of sustained memory after 24 hr was calculated. No difference was observed between the groups (p = 0.3173; Unpaired t-test). (D) Illustration of the experimental scheme. 10 min of optokinetic reflex training was repeated 5 times, and then opto-stimulation (12.5 mW) was given at 0 min post-learning for 6 hr. (E) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). A yellow box indicates opto-stimulation at 0 min post-learning. The left graph represents the GFP group, and the right graph indicates the NpHR group. (F) Comparison of gain changes between GFP and NpHR groups (GFP group, n = 6 mice; NpHR group, n = 6 mice). Percentages of gain increment from 0 to 50 min were calculated. No difference was observed between the groups (Unpaired t-test, p = 0.6405). (G) Illustration of the experimental scheme. Following proper motor learning on day 1, the remaining gain value was checked on day 2, after testing 1st gain retrieval without opto-stimulation, 2nd gain retrieval was tested with opto-stimulation to validate the effect of CF inhibition on gain retrieval (opto-stimulation was given 3 times for 24 s each at 12.5 mW). (H) Gain retrievals before and during opto-stimulation were compared. The left graph represents the GFP group, and the right shows the NpHR group (GFP group, n = 6 mice; NpHR group, n = 8 mice). There was no significant variation between the groups (NpHR group, p = 0.2439; GFP group, p = 0.3180; Paired t-test). The error bars indicate \u00b1 SEM.\n\n## Discussion\n\nMotor learning is a finely tuned process, yet its underlying cellular mechanisms operate with remarkable precision, adapting selectively to task demands. This adaptability relies on CF activity, originating from the inferior olive, which instructs cerebellar circuits to reduce motor errors and enhance performance. CF-driven Cs in PCs have long been associated with motor learning, but how CF signals vary across learning stages remains less understood. Our study uncovers a distinct role for CF signaling that challenges traditional views: CF input is essential for driving motor adaptation during memory acquisition but surprisingly dispensable during consolidation and retrieval. This phase-specific pattern of CF transmission in cerebellum-dependent learning indicates that its role is not uniform over time, as previously thought, but instead selectively tunes cerebellar circuits to optimize adaptation.\n\nBy inhibiting CF transmission optogenetically, we demonstrated that CF activity is crucial for enhancing motor gain in the early phases of memory acquisition, where substantial adjustments and corrections are necessary. Conversely, CF input was found to have a minor influence during memory consolidation and retrieval, indicating that different mechanisms may dominate as motor memories become stable and transition to downstream circuits. This finding refines our understanding of CF function: CFs prompt learning adjustments but do not play a key role in the later phases of memory storage or recall, thereby altering our perspective on the cerebellum\u2019s role in memory formation over time.\n\nMotor memories gained through cerebellar-dependent learning are thought to transfer to the vestibular nuclei for long-term retention (Jang et al., 2020; Seo et al., 2024; Shutoh et al., 2006). By employing optogenetic inhibition of CF transmission at various stages of learning, we identified the phase-specific role of CF signaling. CF activity was crucial for motor adaptation, such as gain increase training, during the acquisition phase but was not needed during consolidation and retrieval. This suggests that the primary function of CF input lies in initial memory formation rather than in subsequent memory processing.\n\nOur results suggest that CF-dependent and CF-independent mechanisms may operate in a context-sensitive manner during cerebellar learning, consistent with established insights derived from the vestibulo-ocular reflex (VOR) and OKR systems. Specifically, CF signaling appears essential in tasks involving substantial, persistent errors requiring precise error correction. For instance, in the VOR, the increase in gain is contingent upon CF-driven complex spikes, which provide adaptive signals in response to large error inputs (Ke et al., 2009). Conversely, CF-independent processes can facilitate reductions in VOR gain, wherein smaller or more gradual adjustments are adequate. This selective role of CF signaling reflects a broader functional adaptation within cerebellar circuits, permitting the engagement of different pathways according to the demands of motor learning. The findings related to our OKR results correspond with this notion, emphasizing the involvement of CF-dependent pathways in tasks characterized by substantial error correction throughout the acquisition phase. In contrast, CF-independent mechanisms likely enable incremental adjustments of lesser magnitude, thereby promoting efficient motor adaptation in the absence of CF input. This delineation of responsibilities between CF-dependent and CF-independent processes highlights the cerebellum\u2019s adaptive plasticity, wherein CF input is selectively activated based on the magnitude and persistence of motor errors. The cerebellum maintains a balance between precision and flexibility by dynamically alternating between these mechanisms, enhancing motor adaptation across various behavioral contexts. This interplay offers a versatile framework for motor learning in cerebellar-dependent tasks, encompassing VOR, OKR, and likely other forms of sensorimotor adaptation.\n\nIn addition to their robust excitatory drive on PCs, CFs shape cerebellar computation by recruiting molecular-layer interneurons to impose feedforward inhibition. Optogenetic activation of molecular-layer interneurons, which silences PCs, markedly suppresses CF-evoked dendritic calcium spikes; thereby, CF transmission may dynamically gate their own instructive signals, shifting the polarity and magnitude of synaptic plasticity at PF\u2013PC synapses (Rowan et al., 2018). Beyond the cerebellar cortex, anatomical tracing reveals that the same IO neurons that innervate the flocculus also send axon collaterals to the vestibular nuclei (Balaban et al., 1981), suggesting that CF signals can simultaneously modulate cortical and vestibular outputs. While the behavioral consequences of this direct CF-vestibular nucleus pathway remain to be defined, it provides a parallel channel through which IO teaching signals may coordinate cortical plasticity with adaptive vestibular reflexes.\n\nThe process of systems consolidation, facilitated by the medial vestibular nuclei (MVN), a downstream circuitry of floccular PCs, is essential for long-term memory storage (Shutoh et al., 2006). Given that CF activity modulates floccular PC firing, we hypothesized that CF signaling might indirectly influence MVN activity during memory consolidation and retrieval. However, contrary to this expectation, our results revealed no substantial effect of CF transmission on long-term memory formation or recall, suggesting that CF signaling does not directly impact MVN function. Instead, previous studies suggest that PC intrinsic plasticity supports memory consolidation (Seo et al., 2024), while granule cell activity contributes to memory retrieval (Wada et al., 2014). These findings reinforce the notion that CF signaling primarily facilitates the acquisition phase of motor memory, while simple spiking in PCs may encode timing and frequency information crucial for stabilizing memory traces in downstream circuits. Ss could either complement or function independently of CF transmission, especially during phases when error correction demands are minimal. Mechanistically, suppressing CF signaling likely mimicked key aspects of long-term depression (LTD) at CF-PC synapses, such as reducing the amplitude of Cs (Hansel and Linden, 2000). Under normal conditions, CF input promotes parallel fiber-PC (PF-PC) LTD by driving calcium influx during error correction, such as in response to retinal slip (Coesmans et al., 2004). CF-LTD modifies Cs waveforms and attenuates CF-evoked dendritic calcium transients (Weber et al., 2003). In our study, optogenetic CF suppression likely simulated the functional consequences of CF-LTD, which may have impaired PF-PC LTD and subsequently hindered gain enhancement during learning (Han et al., 2007).\n\nOur findings underscore a phase-specific role for CF input, demonstrating that CF activity is critical for motor memory acquisition but less necessary for consolidation and retrieval. Using optogenetic inhibition, we achieved precise temporal control over CF activity within distinct learning phases, enabling targeted manipulation of CF signaling. This differs from prior studies that employed pharmacological or lesion methods, which affect broader cerebellar pathways and may implicate CF signaling across multiple memory stages. The task demands inherent to different learning phases may explain these observed differences. Tasks requiring high-error correction, such as those encountered during the active learning phase, likely depend on CF-driven signals for precise error correction during acquisition. In contrast, CF-independent mechanisms may dominate later phases where such adjustments are less critical. This context-sensitive role highlights the adaptability of CF signaling in tuning cerebellar circuits to meet the specific demands of each learning phase. Moreover, cerebellar-dependent memory consolidation exhibits biphasic temporal dynamics: an initial rapid phase of consolidation followed by prolonged stabilization. Our study specifically focused on the early consolidation phase, emphasizing cerebellar plasticity mechanisms that are critical for encoding and stabilizing motor memory (Cooke et al., 2004; Seo et al., 2024; Steinmetz and Freeman, 2016; Titley et al., 2007). Importantly, changes during this early period significantly shape memory formation and retention, while alterations beyond this timeframe have minimal impact on storage or performance. While our findings align with this framework, extended consolidation periods may involve slower processes, such as systems-level integration into downstream nuclei or cortical regions, contributing to memory stabilization or generalization. Future investigations using chronic in-vivo recordings or live imaging could elucidate these prolonged dynamics and clarify CF transmission\u2019s nuanced contributions across phases of cerebellar-dependent memory consolidation.\n\nIn conclusion, inhibiting CF transmission during motor learning impairs gain increases specifically during acquisition. These findings provide critical insights into CF signaling\u2019s role in cerebellum-dependent learning while underscoring the need for further exploration of how cerebellar circuits contribute to adaptive motor memory over extended timeframes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Other</td>\n      <td>AAV9.CaMKII\u03b1.EGFP</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_50469</td>\n      <td>Plasmid #50469</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>AAV1. CaMKII\u03b1.eNpHR 3.0.EYFP</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_26971</td>\n      <td>Plasmid #26971</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Zoletil</td>\n      <td>Virvac</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rompun</td>\n      <td>Bayer</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dexamethasone</td>\n      <td>Samyang Pharmaceutical</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Meloxicam</td>\n      <td>Boehringer Ingelheim</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ZEN</td>\n      <td>Zeiss</td>\n      <td>RRID:SCR_013672</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>http://fiji.sc</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Patchmaster</td>\n      <td>HEKA</td>\n      <td>RRID:SCR_000034</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Igor Pro</td>\n      <td>WaveMetrics</td>\n      <td>RRID:SCR_000325</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals and stereotaxic surgery for virus injection\n\nAll experimental procedures were approved by the Seoul National University Institutional Animal Care and Use Committee (SNU-21031907\u20131 and SNU-230109-2-4). Animals were housed under a 12 \u202fhr light\u2013dark schedule, with food and water available ad libitum, at 20\u201324 \u202f\u00b0C and 40\u201360% relative humidity. First, only male wild-type mice (aged 7\u201310 weeks C57Bl/6 N from Orient Bio) were anesthetized using intraperitoneal injections of a Zoletil/Rompun mixture (30 mg / 10 mg/kg). For optogenetic expression in CF, the virus was injected into the IO 2\u20133 weeks before the behavioral test, as previously described (Kimpo et al., 2014; Roh et al., 2020). Briefly, bilateral injections were made at the midpoint between the edge of the occipital bone and the C1 cervical vertebra. The glass pipette was set at a 55\u00b0 angle from the vertical and 7\u00b0 from the midline. After approaching a 3 mm depth, a virus solution containing 100\u2013200 nL of AAV1-CaMkII\u03b1-eNpHR3.0-EYFP or AAV9.CaMkII\u03b1-EGFP was injected with a Picopump at 5 nL/s. The pipettes were left in place for 10 min before they were removed to minimize backflow.\n\n### Stereotaxic surgery for optic cannula implantation\n\nAfter the mice were fully recovered (a few days to a week) from the first surgery of virus injection, a second operation of optic cannula implantation (\u00d81.25 mm Ceramic Ferrule, L=3.0 mm) near cerebellar flocculus and head fixation was conducted. Unlike the fiber optic cannula, head fixation parts were hand-made. Before the surgery, mice were anesthetized by intraperitoneal injection of Zoletil 50 (Virbac, 15 mg/kg) and xylazine (Rompun, Bayer, 15 mg/kg) mixture. Mice were given 48 hr to recover after surgery.\n\n### Confirmation of viral expression\n\nAfter completion of all the experiments, sampling using cardiac perfusion is performed. The brain was then extracted and coronal sections were made at 30 \u03bcm intervals. Images were acquired and processed using a confocal microscope (Zeiss LSM 7 MP, Carl Zeiss, Jena, Germany) and Zen software (Zeiss). The location of virus expression was confirmed by comparison with the brain atlas (Paxinos and Franklin\u2019s The Mouse Brain in Stereotaxic Coordinates 4th Edition by George Paxinos).\n\n### Optical suppression of CF terminals in the cerebellar cortex in vivo\n\nTo manipulate CF transmission-induced Cs in PCs, AAV1.CaMKII\u237a.eNpHR3.0.eYFP or AAV8.CaMKIIa.eGFP was bilaterally injected into the IO. A glass micro-pipette was used to inject 200 nL per site. To optically suppress the CF terminals and record CF-PC synaptic response, a small cranial window was made above the cerebellar cortex lobule IV/V a week after the viral injection. After 2 weeks from the viral injection, mice underwent single-unit recordings. The recordings were performed as described in Neural data acquisition and analysis. Cs responses were acquired during 10 s of yellow on and off sessions 20 times to test the effect of CF terminal suppression on CF-PC synaptic transmission.\n\n### Neural data acquisition and analysis\n\nSingle-unit recordings were performed while mice were head-fixed and awake in the recording rack. A Digital Lynx system (Neuralynx, Bozeman, MT) was used to amplify, band pass filter (0.1\u20138000 Hz for simple spikes, 10\u2013200 Hz for complex spikes), and digitize the electrode recordings. A silicon neural probe (Cambridge NeuroTech) was used to probe and acquire Cs signals. Cs signals were collected at a 32 kHz sampling rate. Cs waveforms were manually selected based on visual inspection of the averaged appearance of characteristic negative Ca2+ peaks.\n\n### Slice preparation, electrophysiology, and optogenetic validation\n\nAn acute brain slice preparation and electrophysiological experiments were carried out as previously described (Lee et al., 2024). First, mice aged 9\u201310 weeks with AAV1.CaMKII\u03b1.eNpHR 3.0.WPRE-EYFP injection into their inferior olivary neuron 2\u20133 weeks before the preparation were anesthetized by isoflurane and briefly decapitated. Then, 250 \u03bcm-thick sagittal slices of the cerebellar vermis were obtained from the mice using a vibratome (VT1200S, Leica). The ice-cold cutting solution contained 75 mM sucrose, 75 mM NaCl, 2.5 mM KCl, 7 mM MgCl2, 0.5 mM CaCl2, 1.25 mM NaH2PO4, 26 mM NaHCO3, and 25 mM glucose with bubbled 95% O2 and 5% CO2. The slices were immediately transferred into the artificial cerebrospinal fluid (ACSF) containing 125 mM NaCl, 2.5 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 1.25 mM NaH2PO4, 26 mM NaHCO3, and 10 mM glucose with bubbled 95% O2 and 5% CO2. They were allowed to recover at 32 \u00b0C for 30 min and at room temperature for 1 hr. All recordings were performed within 8 hr of recovery.\n\nBrain slices were placed in a submerged chamber with perfusion of ACSF for at least 10 min before recording. We used OptoPatcher (HEKA Elektronik) holding recording pipette (2\u20133 M\u03a9) filled with internal solution containing 9 mM KCl, 10 mM KOH, 120 mM K-gluconate, 3.48 mM MgCl2, 10 mM HEPES, 4 mM NaCl, 4 mM Na2ATP, 0.4 mM Na3GTP, and 17.5 mM sucrose (pH 7.25). The stimulation electrode was placed on the granule cell layer near the PC. The stimulation isolator injected a brief current pulse to the stimulation electrode and was controlled using PatchMaster software (HEKA Elektronik). Stimulation intensity (6\u201330 \u03bcA) was calibrated to minimally evoke CF EPSC. Regarding the laser on trial, a 593.5 nm irradiation from a yellow laser was applied 5 s before CF stimulation. The eEPSC amplitude was averaged over three lasers on and off trials. Under current clamp mode, complex spikes induced by CF stimulation were recorded using the same validation protocol. Overall, the laser illumination (3\u20135 mW) consistently inhibited CF transmission. Electrophysiological data were acquired using an EPC10 patch-clamp amplifier (HEKA Elektronik) and PatchMaster software (HEKA Elektronik) with a sampling frequency of 20 kHz, and the signals were filtered at 2 kHz. All electrophysiological recordings were acquired from the central cerebellar vermis. The amplitude of EPSC was analyzed using Igor Pro (WaveMetrics).\n\n### Optokinetic reflex behavior test\n\nFirst, two sessions of acclimation were conducted. During each session, the mouse was restrained using a custom-made restrainer for 20 min both with and without light for habituation to the recording environment. Following the procedure reported by Stahl et al., 2000, a calibration was performed. This allowed for the conversion of the dynamics of pupil-to-eye rotation. Next, three basal oculomotor performances, including (OKR), vestibulo-ocular reflex in the dark (dVOR), and vestibulo-ocular reflex in the light (lVOR), were measured. During the recording of eye movements, it was necessary to control pupil dilation that was induced by an absence of light in dark conditions. Thus, physostigmine salicylate solution (Eserine; Sigma Millipore) was given to mice under brief isoflurane anesthesia. The concentration of eserine solution was increased from 0.1%, 0.15%, and 0.2% based on the pupil size. Basal oculomotor performances were described in gains. For the actual learning protocol, we adopted OKR, and it consisted of five training sessions (10 min per session), six checkup points, and 24 hr of consolidation period. During the training sessions, the mice were visually stimulated with a sinusoidally rotating drum (\u00b15 degrees). Completely trained mice were placed back into their home cage, which was stored in the dark condition until the last gain checkup points.\n\n### Experimental design\n\nFor our in vivo OKR experiments, group sizes for mice expressing AAV\u2010Ef1\u03b1\u2010DIO\u2010NpHR\u2010EYFP (NpHR) or AAV\u2010Ef1\u03b1\u2010DIO\u2010EYFP (EYFP) were chosen to match those of comparable published studies (PMID:\u202f36639897;\u202f16458438;\u202f16135754;\u202f11805298) to ensure adequate statistical power. Each cohort underwent identical surgical, recovery, and behavioral testing pipelines, with two independent cohorts run to confirm reproducibility. Mice were randomly assigned to the NpHR or EYFP groups, and the order of OKR testing was shuffled across animals to eliminate potential time-of-day or operator effects. While full blinding to viral condition was not technically feasible, all data acquisition and processing steps were standardized to minimize bias.\n\n### Gain analysis\n\nGains acquired from basal oculomotor performances and OKR learning were calculated as the ratio of evoked eye movements to the movement of the screen or turn table as visual or vestibular stimuli, respectively. A custom-built LabView (National Instruments) analysis tool was used for all the calculations.\n\n### Statistical analysis\n\nData are presented as mean \u202f\u00b1\u202fSEM and were analyzed in GraphPad Prism (GraphPad Software Inc, CA, USA). Between\u2010group comparisons of continuous variables (e.g., CF-EPSC suppression magnitudes, percent gain change, consolidation percentages) were analyzed by unpaired two-tailed t-tests. Within\u2010animal comparisons (e.g. pre- versus post-learning gain; number of complex-spike spikelets) were analyzed by paired two-tailed t-tests. Simple and complex spike firing rates were compared with two-tailed Mann-Whitney U tests, which did not meet parametric assumptions and/or involved small sample sizes. All tests were two\u2010tailed, and statistical significance was defined as p\u202f<\u202f0.05. In figures, asterisks denote significance levels (*p\u202f<\u202f0.05; **p\u202f<\u202f0.01; ***p\u202f<\u202f0.001; ****p\u202f<\u202f0.0001), and the exact test used with sample sizes and p-values is reported in each legend.\n",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kate M Wassum, University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95838.4.sa0](https://doi.org/10.7554/eLife.95838.4.sa0)\n\nThis study presents potentially valuable insights into the role of climbing fibers in cerebellar learning. The main claim is that climbing fiber activity is necessary for optokinetic reflex adaptation, but is dispensable for its long-term consolidation. There is evidence to support the first part of this claim, though it requires a clearer demonstration of the penetrance and selectivity of the manipulation. However, support for the latter part of the claim is incomplete owing to methodological concerns, including the robustness of the CF marking and manipulation approach and the unclear efficacy of longer-duration climbing fiber activity suppression.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95838.4.sa1](https://doi.org/10.7554/eLife.95838.4.sa1)\n\nSummary:\n\nThe authors aimed to explore the role of climbing fibers (CFs) in cerebellar learning, with a focus on optokinetic reflex (OKR) adaptation. Their goal was to understand how CF activity influences memory acquisition, memory consolidation, and memory retrieval by optogenetically suppressing CF inputs at various stages of the learning process.\n\nStrengths:\n\nThe study addresses a significant question in the cerebellar field by focusing on the specific role of CFs in adaptive learning. The authors use optogenetic tools to manipulate CF activity. This provides a direct method to test the causal relationship between CF activity and learning outcomes.\n\nWeaknesses:\n\nDespite shedding light on the potential role of CFs in cerebellar learning, the study is hampered by significant methodological issues that question the validity of its conclusions. The absence of detailed evidence on the effectiveness of CF suppression and concerns over tissue damage from optogenetic stimulation weaken the argument that CFs are not essential for memory consolidation. These challenges make it difficult to confirm whether the study's objectives were fully met or if the findings conclusively support the authors' claims. The research commendably attempts to unravel the temporal involvement of CFs in learning but also underscores the difficulties in pinpointing specific neural mechanisms that underlie the phases of learning. Addressing these methodological issues, investigating other signals that might instruct consolidation, and understanding CFs' broader impact on various learning behaviors are crucial steps for future studies.\n\nComments on revisions:\n\nIn this revision, the authors provide new data regarding the effect of eNpHR on CF-evoked complex spiking in vivo but fails to address overall concerns showing the functional effect that explains their causal results. Additionally, the paper has a narrow \"CF-or-nothing\" framing that leaves unanswered the central question of which signal instructs consolidation if CFs do not. Substantial new experiments and tighter logic are required before the work can serve as a definitive test of CF involvement in different memory processes.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95838.4.sa2](https://doi.org/10.7554/eLife.95838.4.sa2)\n\nSummary:\n\nThe authors attempted to study connections with the inferior olive to the cerebellar cortex and analyze impacts on optokinetic reflex using optogenetics to perturb the pathway. This is a commendable effort as these methods are very challenging due to the location of the inferior olive and recording methods.\n\nStrengths:\n\nThe authors have shown that climbing fiber activity was altered due to the optogenetic perturbation. They have added an additional figure to show that complex spikes disappear with inhibitory optogenetics and the impacts on behavior are interesting.\n\nWeaknesses:\n\nThe images provided to show injection region are difficult to see and specific cell types are not co-labeled. The data and strength of the results would benefit from high-resolution images demonstrating selectivity and expression, in particular for Figure 2A and 3A. In addition, while the processed recording data looks very striking, including the raw data, as done in Figure 2, would again support the conclusions.\n\nOne major concern is that the viruses chosen are non-specific to the cell targets and a cre-based approach is lacking to draw conclusions on only the targeted pathway of interest. It is unclear based on the figures provided if the AAVs labeled only the pathway of interest. It would be interesting to know if typical memory acquisition returns in the same animals if inhibition stops and if animal movement was impacted by the perturbation.\n",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e8b0626-4c3c-4c26-a8cc-762da23fb07e",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C1",
+      "claim": "Climbing fiber (CF) transmission from the inferior olive (IO) triggers complex spikes (Cs) in Purkinje cells (PCs) driven by a burst of calcium spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Climbing fiber (CF) transmission from the inferior olive (IO) triggers complex spikes (Cs) in Purkinje cells (PCs) driven by a burst of calcium spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about cerebellar physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "7c523836-4087-4741-91b3-1fa203295230",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C2",
+      "claim": "In the context of motor learning, especially the compensatory optic response, CF transmission serves as an instructive signal selectively conveyed to PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of motor learning, especially the compensatory optic response, CF transmission serves as an instructive signal selectively conveyed to PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established understanding in the field of cerebellar motor learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "b6b5fd13-ee35-42ad-af65-ef3f04e2350f",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C3",
+      "claim": "The absence of CF-induced instructive signals during motor learning impairs memory acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the absence of CF-induced instructive signals during motor learning impairs memory acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the optogenetic experiments presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "689013c0-876e-45ca-a382-1bc8c4f13ddb",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C4",
+      "claim": "When CF-induced instructive signals were suppressed during the consolidation and retrieval period, there was neither a loss of long-term memory nor a prevention of memory retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when these signals were suppressed during the consolidation and retrieval period, there was neither a loss of long-term memory nor a prevention of memory retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the optogenetic experiments presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "83365ba5-967e-4ee4-854d-6d4866856e91",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C5",
+      "claim": "CF transmission plays a specialized and critical role primarily in memory acquisition, rather than in subsequent processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results highlight that CF transmission plays a specialized and critical role primarily in memory acquisition, rather than in subsequent processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "2fad9d3f-8209-4aaa-a48d-7bedd5d796a9",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C6",
+      "claim": "The cerebellar architecture, characterized by multiple synapses connecting diverse neuron types, enables precise adjustments within intricate neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellar architecture, characterized by multiple synapses connecting diverse neuron types, enables precise adjustments within intricate neural networks (Boyden et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Boyden et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "567c4a49-1475-47bd-be42-5ffa3157af4c",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C7",
+      "claim": "The climbing fiber (CF) transmission derived from the inferior olive (IO) projecting to the cerebellar cortex is generally recognized as the primary pathway for relaying instructive signals to correct errors and enhance motor performance, including oculomotor behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this framework, the climbing fiber (CF) transmission derived from the inferior olive (IO) projecting to the cerebellar cortex is generally recognized as the primary pathway for relaying instructive signals to correct errors and enhance motor performance, including oculomotor behaviors (Albus, 1971; Frens et al., 2001; Ito, 1972; Marr, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to foundational work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "b4d0bb5e-af93-4824-84bd-87da4fda5739",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C8",
+      "claim": "The optokinetic reflex (OKR) is a compensatory optic response evoked by an unstable visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent example of cerebellum-dependent motor learning is the optokinetic reflex (OKR), a compensatory optic response evoked by an unstable visual field (Cahill and Nathans, 2008; Schweigart et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Cahill and Nathans, 2008 and Schweigart et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "7ce403fe-30b9-4679-9e87-b6c839bb3351",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C9",
+      "claim": "Complex spikes (Cs) in floccular Purkinje cells (PCs) driven by CF input emerge in response to unpredicted motor performance errors.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, complex spikes (Cs) in floccular Purkinje cells (PCs) driven by CF input emerge in response to unpredicted motor performance errors (Clopath et al., 2014; Eccles et al., 1966; Goossens et al., 2004; Palmer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "85c4a7a2-de76-48e3-a94a-5d7c152170f2",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C10",
+      "claim": "Rotational visual stimulation induces Cs discharge in floccular PCs, reflecting CF-induced Cs generation in response to error signals generated from errors in oculomotor performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Rotational visual stimulation induces Cs discharge in floccular PCs, reflecting CF-induced Cs generation in response to error signals generated from errors in oculomotor performance (Frens et al., 2001; Graf et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Frens et al., 2001 and Graf et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "0972083a-70cd-49e3-bb26-b9f8e8c3dfbd",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C11",
+      "claim": "Fine-tuning of Cs in PCs is expected to regulate learning by modulating error-correcting adaptations.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this fine-tuning of Cs in PCs is expected to regulate learning by modulating error-correcting adaptations (Yang and Lisberger, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Yang and Lisberger, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "889d799c-b1ca-4e9f-a251-cf1648bccf74",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C12",
+      "claim": "One study using a modified behavioral paradigm to suppress Cs suggested that simple spikes (Ss) alone may suffice for motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one study using a modified behavioral paradigm to suppress Cs suggested that simple spikes (Ss) alone may suffice for motor learning (Ke et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ke et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "656a6cda-42e8-4bc5-b7e9-d19513832db8",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C13",
+      "claim": "Pharmacological lesioning and optogenetic inactivation of the IO impair oculomotor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pharmacological lesioning and optogenetic inactivation of the IO impair oculomotor learning (Pham et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Pham et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "464398ad-61ab-48a6-a617-cc94fcc18edb",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C14",
+      "claim": "Pharmacological lesioning and optogenetic inactivation of the IO prevent eye blink conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "pharmacological lesioning and optogenetic inactivation of the IO impair oculomotor learning (Pham et al., 2020) and prevent eye blink conditioning (Kim et al., 2020; Medina et al., 2002; Welsh and Harvey, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Kim et al., 2020; Medina et al., 2002; and Welsh and Harvey, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "dd801f59-5d7b-4c20-a863-72f5cb8d495b",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C15",
+      "claim": "AAV1-CaMKII\u03b1-eNpHR 3.0-EYFP or AAV1-CaMKII\u03b1-EGFP was injected into the IO of wild-type mice to specifically manipulate CF signals in the cerebellar cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "To specifically manipulate CF signals in the cerebellar cortex, generally known to originate from the IO, we injected AAV1-CaMKII\u03b1-eNpHR 3.0-EYFP or AAV1-CaMKII\u03b1-EGFP into the IO of wild-type mice (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method used and references Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "c8b5e4ba-aea4-48b2-bd31-85d59e85354b",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C16",
+      "claim": "The selectively segregated expression in the IO and flocculus enabled manipulation of CF terminals without disrupting IO somas.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the selectively segregated expression in these regions enabled manipulation of CF terminals without disrupting IO somas, which, if damaged, can critically impair motor performance and ocular reflexes due to the IO's role as a prominent center of sensory integration (Pham et al., 2020; Shaikh et al., 2017; Van Der Giessen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and describes the experimental approach.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "7c4ed696-0981-47d2-baf4-ed54f13cd8ca",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C17",
+      "claim": "Laser illumination (3\u20135 mW) during stimulation resulted in a significant reduction in EPSC amplitude in the NpHR group.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser illumination (3\u20135 mW) during stimulation resulted in a significant reduction in EPSC amplitude, indicating robust inhibition of CF transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct experimental result from the patch-clamp recordings shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "0b30f66b-31fc-4090-a981-887077a0722a",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C18",
+      "claim": "9 out of 9 cells in the NpHR group exhibited reliable suppression of CF EPSCs without failures.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this inhibition was consistent, with 9 out of 9 cells in the NpHR group exhibiting reliable suppression without failures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f00ade0f-fa0c-492c-8840-23f1b0b06638",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C19",
+      "claim": "Laser illumination did not affect CF EPSCs in the GFP group.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, laser illumination did not affect CF EPSCs in the GFP group (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control result shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "40013bcf-5823-420c-82de-88d51c0b2a23",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C20",
+      "claim": "CF stimulation-induced spikelets were completely abolished in the NpHR group under current-clamp mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the current-clamp mode, CF stimulation-induced spikelets were also completely abolished in the NpHR group but remained unaffected in the GFP group (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "ebbead34-e33b-473a-9719-53922431da30",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C21",
+      "claim": "CF stimulation-induced spikelets remained unaffected in the GFP group under current-clamp mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the current-clamp mode, CF stimulation-induced spikelets were also completely abolished in the NpHR group but remained unaffected in the GFP group (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control result shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "5a527df4-2afe-41ba-9e78-0ac23a1141f8",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C22",
+      "claim": "Optogenetic inhibition effectively suppresses CF-PC synaptic transmission in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings establish that optogenetic inhibition effectively suppresses CF-PC synaptic transmission in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vitro patch-clamp experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "3b654ae8-3745-4150-9ecc-85bd4fe2eef3",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C23",
+      "claim": "Optogenetic inhibition selectively suppressed Cs firing rates in the NpHR group without affecting Ss rates in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic inhibition selectively suppressed Cs firing rates in the NpHR group without affecting Ss rates, whereas no changes were observed in the GFP control group (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from in vivo recordings shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "2efca413-0def-4779-84a6-76c9a5a796f2",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C24",
+      "claim": "No changes in Cs or Ss firing rates were observed in the GFP control group during optogenetic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic inhibition selectively suppressed Cs firing rates in the NpHR group without affecting Ss rates, whereas no changes were observed in the GFP control group (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control result from in vivo recordings shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "5d780e9b-60f2-4521-83ab-dc39cb90761f",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C25",
+      "claim": "The stability and sustained suppression of Cs activity observed at 40 min strongly suggest that the manipulation would remain effective during the extended durations required for behavioral experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Although continuous recordings over several hours were not feasible, the stability and sustained suppression observed at 40 min strongly suggest that the manipulation would remain effective during the extended durations required for behavioral experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed data at 40 minutes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "c1fdb8d8-3a25-4929-b672-19a5eed3d433",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C26",
+      "claim": "Optogenetic inhibition of NpHR-expressing CFs selectively suppresses Cs activity in awake mice without altering Ss activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings confirm that optogenetic inhibition of NpHR-expressing CFs selectively suppresses Cs activity in awake mice without altering Ss activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vivo recording experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "36ce2259-a382-41cb-87dc-e43bf59876de",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C27",
+      "claim": "CF signals are conventionally perceived to be responsible for sending error signals to the cerebellar cortex to improve ocular reflexes when images on the retina are unstable due to mismatched visual inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "When images on the retina are unstable due to mismatched visual inputs, CF signals are conventionally perceived to be responsible for sending error signals to the cerebellar cortex to improve ocular reflexes (Bloedel and Bracha, 1998; Frens et al., 2001; Zang and De Schutter, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bloedel and Bracha, 1998; Frens et al., 2001; and Zang and De Schutter, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "24277266-9dfe-424e-88ac-d5957467e02d",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C28",
+      "claim": "The control group exhibited an increasing trend in the learning curve during OKR training.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that CF transmission is essential for cerebellar motor learning by presenting two contrasting learning curves. The control group exhibited an increasing trend in the learning curve, whereas the NpHR group's learning curve was almost flat, which reflects no change of gain (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "d188fde0-bbc1-460b-8f6b-acf57674e2eb",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C29",
+      "claim": "The NpHR group's learning curve was almost flat during OKR training, reflecting no change of gain.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that CF transmission is essential for cerebellar motor learning by presenting two contrasting learning curves. The control group exhibited an increasing trend in the learning curve, whereas the NpHR group's learning curve was almost flat, which reflects no change of gain (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "46c3ac7b-8d86-4f4f-bd74-9c31a019545f",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C30",
+      "claim": "The gain value through the learning sessions was distinctly increased in the control group, whereas the NpHR group showed no significant change in gain.",
+      "claim_type": "EXPLICIT",
+      "source": "The gain value through the learning sessions was distinctly increased in the control group, whereas the NpHR group showed no significant change in gain (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "b7c486bc-a055-431e-8d2b-ea486ede86fd",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C31",
+      "claim": "From 0 to 50 min period of learning, the control group demonstrated almost a doubling in gain, whereas the NpHR group showed little or almost no change of gain.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, from 0 to 50 min period of learning, the control group demonstrated almost a doubling in gain, whereas the NpHR group showed little or almost no change of gain (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result referenced to Figure 3E (though the figure label appears to be 3D in the actual figure).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "bac71fdd-0a12-495e-9c1d-894ca3fb1c01",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C32",
+      "claim": "CF transmission is required for the proper acquisition of motor memory.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that CF transmission is required for the proper acquisition of motor memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the OKR experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "19bf9458-4f20-414a-99d8-c5ee68a7a39b",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C33",
+      "claim": "Long-term memories associated with cerebellum-dependent behaviors are vulnerable to disruption within specific time windows of consolidation, spanning from minutes to hours.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was based on findings that long-term memories associated with cerebellum-dependent behaviors are vulnerable to disruption within specific time windows of consolidation, spanning from minutes to hours (Cooke et al., 2004; Titley et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Cooke et al., 2004 and Titley et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "ff1f0fdf-f66c-4c93-9e38-8c71aacb39d8",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C34",
+      "claim": "Optogenetic inhibition of CF transmission during consolidation (30 min) did not yield any change in the maintenance of memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the gain was robustly enhanced, optogenetic inhibition of CF transmission during consolidation did not yield any change in the maintenance of memory, irrespective of the duration of manipulation. Consequently, long-term memory was well-established in both NpHR and GFP groups (Figure 4C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "b2166315-399e-4e17-8de6-0157d09f5517",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C35",
+      "claim": "Optogenetic inhibition of CF transmission during consolidation (6 hr) did not yield any change in the maintenance of memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the gain was robustly enhanced, optogenetic inhibition of CF transmission during consolidation did not yield any change in the maintenance of memory, irrespective of the duration of manipulation. Consequently, long-term memory was well-established in both NpHR and GFP groups (Figure 4C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "51369457-f037-4210-b74a-7b5a7e38e24c",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C36",
+      "claim": "Long-term memory was well-established in both NpHR and GFP groups after consolidation period.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, long-term memory was well-established in both NpHR and GFP groups (Figure 4C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figures 4C and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "83c40c96-925b-465a-910c-1e53e2234ed7",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C37",
+      "claim": "Disrupting CF signaling during the retrieval phase did not affect the retrieval of motor memory in fully trained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "When mice, fully trained in the optokinetic reflex, displayed increased gain, disrupting CF signaling did not affect the retrieval of motor memory (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "508729bf-0f40-4996-9941-8b45c82bb5ba",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C38",
+      "claim": "Memory consolidation and retrieval depend on downstream circuits independent of CF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This divergence underscores a specialized role for CF transmission in the early stages of motor learning, with subsequent phases relying on distinct neural mechanisms. The results highlight phase-specific contributions of CF-driven error signaling, aligning with the hypothesis that memory consolidation and retrieval depend on downstream circuits independent of CF activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "8e4a9792-cf60-4fb0-b094-2f77d8a74de8",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C39",
+      "claim": "CF input is essential for driving motor adaptation during memory acquisition but surprisingly dispensable during consolidation and retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study uncovers a distinct role for CF signaling that challenges traditional views: CF input is essential for driving motor adaptation during memory acquisition but surprisingly dispensable during consolidation and retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "6fc11024-4793-4833-826f-621ef0ac7adb",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C40",
+      "claim": "CF activity is crucial for enhancing motor gain in the early phases of memory acquisition, where substantial adjustments and corrections are necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "By inhibiting CF transmission optogenetically, we demonstrated that CF activity is crucial for enhancing motor gain in the early phases of memory acquisition, where substantial adjustments and corrections are necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic inhibition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "89049480-d5e6-49a3-a690-af505dec1f69",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C41",
+      "claim": "CF input was found to have a minor influence during memory consolidation and retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, CF input was found to have a minor influence during memory consolidation and retrieval, indicating that different mechanisms may dominate as motor memories become stable and transition to downstream circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic inhibition experiments during consolidation and retrieval.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "ca704628-f5e4-404d-91ef-457e39852ffa",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C42",
+      "claim": "Motor memories gained through cerebellar-dependent learning are thought to transfer to the vestibular nuclei for long-term retention.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor memories gained through cerebellar-dependent learning are thought to transfer to the vestibular nuclei for long-term retention (Jang et al., 2020; Seo et al., 2024; Shutoh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Jang et al., 2020; Seo et al., 2024; and Shutoh et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "af390667-3a7b-4263-b71c-85eaccf6d353",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C43",
+      "claim": "CF activity was crucial for motor adaptation during the acquisition phase but was not needed during consolidation and retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "By employing optogenetic inhibition of CF transmission at various stages of learning, we identified the phase-specific role of CF signaling. CF activity was crucial for motor adaptation, such as gain increase training, during the acquisition phase but was not needed during consolidation and retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results across different learning phases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "9d1a865f-7c00-4b2a-92f6-5b8517994e33",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C44",
+      "claim": "The primary function of CF input lies in initial memory formation rather than in subsequent memory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the primary function of CF input lies in initial memory formation rather than in subsequent memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the phase-specific experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "76930a32-6569-4709-bd51-1c55d2b9432a",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C45",
+      "claim": "CF signaling appears essential in tasks involving substantial, persistent errors requiring precise error correction.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, CF signaling appears essential in tasks involving substantial, persistent errors requiring precise error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of motor learning theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "ab9fdb4b-25a0-4675-a8e4-dd9c8c269d98",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C46",
+      "claim": "In the VOR, the increase in gain is contingent upon CF-driven complex spikes, which provide adaptive signals in response to large error inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in the VOR, the increase in gain is contingent upon CF-driven complex spikes, which provide adaptive signals in response to large error inputs (Ke et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ke et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "be243a8c-93fe-4d74-8c22-972b0bfed9e8",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C47",
+      "claim": "CF-independent processes can facilitate reductions in VOR gain, wherein smaller or more gradual adjustments are adequate.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, CF-independent processes can facilitate reductions in VOR gain, wherein smaller or more gradual adjustments are adequate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on existing literature about VOR learning.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "1e4ce99a-53e8-4fbc-a3a2-7ec45eef18bb",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C48",
+      "claim": "Optogenetic activation of molecular-layer interneurons, which silences PCs, markedly suppresses CF-evoked dendritic calcium spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of molecular-layer interneurons, which silences PCs, markedly suppresses CF-evoked dendritic calcium spikes; thereby, CF transmission may dynamically gate their own instructive signals, shifting the polarity and magnitude of synaptic plasticity at PF\u2013PC synapses (Rowan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Rowan et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "8f0967cb-526b-46f8-9076-ca9c38c4413e",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C49",
+      "claim": "The same IO neurons that innervate the flocculus also send axon collaterals to the vestibular nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the cerebellar cortex, anatomical tracing reveals that the same IO neurons that innervate the flocculus also send axon collaterals to the vestibular nuclei (Balaban et al., 1981)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Balaban et al., 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "2e09c424-5479-4f9d-ac24-d53910367391",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C50",
+      "claim": "The process of systems consolidation, facilitated by the medial vestibular nuclei (MVN), a downstream circuitry of floccular PCs, is essential for long-term memory storage.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of systems consolidation, facilitated by the medial vestibular nuclei (MVN), a downstream circuitry of floccular PCs, is essential for long-term memory storage (Shutoh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Shutoh et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "8068b629-bc0d-4be9-adc9-b6c76bdf1dea",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C51",
+      "claim": "PC intrinsic plasticity supports memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, previous studies suggest that PC intrinsic plasticity supports memory consolidation (Seo et al., 2024)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Seo et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "dbbc0b90-7557-49a0-84ee-1f5a44e26abd",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C52",
+      "claim": "Granule cell activity contributes to memory retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "while granule cell activity contributes to memory retrieval (Wada et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wada et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "2ba1bb23-b194-4ba6-901a-3878e73b2805",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C53",
+      "claim": "CF signaling primarily facilitates the acquisition phase of motor memory, while simple spiking in PCs may encode timing and frequency information crucial for stabilizing memory traces in downstream circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reinforce the notion that CF signaling primarily facilitates the acquisition phase of motor memory, while simple spiking in PCs may encode timing and frequency information crucial for stabilizing memory traces in downstream circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results and existing literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "b76cdbf0-73f3-4a4d-8402-8ec90493a202",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C54",
+      "claim": "Suppressing CF signaling likely mimicked key aspects of long-term depression (LTD) at CF-PC synapses, such as reducing the amplitude of Cs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, suppressing CF signaling likely mimicked key aspects of long-term depression (LTD) at CF-PC synapses, such as reducing the amplitude of Cs (Hansel and Linden, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation supported by a citation to Hansel and Linden, 2000.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "18117853-e027-49e4-a4c1-85e63e936d3c",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C55",
+      "claim": "Under normal conditions, CF input promotes parallel fiber-PC (PF-PC) LTD by driving calcium influx during error correction, such as in response to retinal slip.",
+      "claim_type": "EXPLICIT",
+      "source": "Under normal conditions, CF input promotes parallel fiber-PC (PF-PC) LTD by driving calcium influx during error correction, such as in response to retinal slip (Coesmans et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Coesmans et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f452d73e-dcca-446a-9020-3040709dca4a",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C56",
+      "claim": "CF-LTD modifies Cs waveforms and attenuates CF-evoked dendritic calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "CF-LTD modifies Cs waveforms and attenuates CF-evoked dendritic calcium transients (Weber et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Weber et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "9c01dffc-42f2-4168-854c-bce9bc941ccd",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C57",
+      "claim": "Optogenetic CF suppression likely simulated the functional consequences of CF-LTD, which may have impaired PF-PC LTD and subsequently hindered gain enhancement during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, optogenetic CF suppression likely simulated the functional consequences of CF-LTD, which may have impaired PF-PC LTD and subsequently hindered gain enhancement during learning (Han et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation supported by a citation to Han et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "a9366cf4-f40e-441d-9da8-1c61a38be3ac",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C58",
+      "claim": "Cerebellar-dependent memory consolidation exhibits biphasic temporal dynamics: an initial rapid phase of consolidation followed by prolonged stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cerebellar-dependent memory consolidation exhibits biphasic temporal dynamics: an initial rapid phase of consolidation followed by prolonged stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established knowledge in the field of memory consolidation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f0a9d0f2-660b-4d94-8ad4-de5d78f48ba4",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C59",
+      "claim": "Changes during the early consolidation period significantly shape memory formation and retention, while alterations beyond this timeframe have minimal impact on storage or performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, changes during this early period significantly shape memory formation and retention, while alterations beyond this timeframe have minimal impact on storage or performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental design and results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "c7a21157-8849-4cbb-8ad4-d3ed77b8f14f",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C60",
+      "claim": "Extended consolidation periods may involve slower processes, such as systems-level integration into downstream nuclei or cortical regions, contributing to memory stabilization or generalization.",
+      "claim_type": "EXPLICIT",
+      "source": "While our findings align with this framework, extended consolidation periods may involve slower processes, such as systems-level integration into downstream nuclei or cortical regions, contributing to memory stabilization or generalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms beyond the scope of the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "56583c1b-e006-4477-9150-9ca6c2f41084",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C61",
+      "claim": "Inhibiting CF transmission during motor learning impairs gain increases specifically during acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, inhibiting CF transmission during motor learning impairs gain increases specifically during acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "006f2b78-5114-4955-9938-612bbd4ba08d",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C62",
+      "claim": "AAV1-CaMKII\u03b1-eNpHR 3.0-EYFP or AAV1-CaMKII\u03b1-EGFP was injected into the IO followed by the creation of a cranial window above the cerebellar vermis three weeks later for in vivo recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "AAV1-CaMKII\u03b1-eNpHR 3.0-EYFP or AAV1-CaMKII\u03b1-EGFP was injected into the IO followed by the creation of a cranial window above the cerebellar vermis three weeks later (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method used and references Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "21eeb44f-3142-4cad-bf8f-823effce2f99",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C63",
+      "claim": "Due to technical constraints preventing direct access to the flocculus for in vivo recordings, cerebellar lobule IV/V was targeted.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to technical constraints preventing direct access to the flocculus for in vivo recordings, we targeted cerebellar lobule IV/V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a methodological choice in the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "7267721b-3634-42a7-88de-4139aa7f7301",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C64",
+      "claim": "PCs were identified based on the detection of Cs during in vivo recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs were identified based on the detection of Cs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the method for identifying PCs and references Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "62fc24da-5886-42ba-9046-1f2c9c6ec3c4",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C65",
+      "claim": "Recordings from the same neurons during both laser-off and laser-on conditions demonstrated consistent and robust suppression of Cs activity throughout the 40-min optostimulation period.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings from the same neurons during both laser-off and laser-on conditions demonstrated consistent and robust suppression of Cs activity throughout the 40-min optostimulation period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the in vivo recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "13d137b5-8705-4eb7-9d29-67dd697864ff",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C66",
+      "claim": "An optical fiber was surgically implanted in flocculus to suppress CF transmission in vivo during OKR.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same mouse model shown in Figure 1, we surgically implanted an optical fiber in flocculus to suppress CF transmission in vivo during OKR (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method and references Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "17e0a301-6f4b-47c1-8530-2cc17f5c6fd9",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C67",
+      "claim": "As the mouse underwent more sessions of OKR learning, the trace of eye movement became almost identical to the trace of the drum's kinetics in the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, in the beginning, the trace of the mouse's eye movement represented in a sine curve was only partially overlapping with the trace of the drum's kinetics, but as the mouse underwent more sessions of OKR learning, the trace of eye movement became almost identical (Figure 3Bi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 3Bi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "16cf5982-44af-4f31-9908-1822766dd1d9",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C68",
+      "claim": "The group with inhibited CF transmission exhibited only slight changes or no improved trace of eye movements during OKR learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the group with inhibited CF transmission exhibited only slight changes or no improved trace of eye movements (Figure 3Bii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 3Bii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "94c620a1-6ee9-4ede-8a07-46a3563ac89a",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C69",
+      "claim": "CF transmission is essential for cerebellar motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that CF transmission is essential for cerebellar motor learning by presenting two contrasting learning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the contrasting learning curves in the OKR experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "c8eb4cc7-a1ca-49d6-86eb-1b09637bce46",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C70",
+      "claim": "Learning curves confirmed the successful gain enhancement, validating the integrity of memory acquisition in the consolidation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning curves confirmed the successful gain enhancement, validating the integrity of memory acquisition (Figure 4B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figures 4B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "18380ffb-a3a1-41a2-85ed-400d3bf9edad",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C71",
+      "claim": "CF signaling is not required during the retrieval phase of motor memory.",
+      "claim_type": "IMPLICIT",
+      "source": "In addition, we verified whether CF signaling is required during the retrieval phase (Figure 4G). When mice, fully trained in the optokinetic reflex, displayed increased gain, disrupting CF signaling did not affect the retrieval of motor memory (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental result that disrupting CF signaling did not affect memory retrieval.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "9ede7581-b4d7-4ac2-984a-3de1818545f3",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C72",
+      "claim": "Memory consolidation and retrieval depend on downstream circuits independent of CF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The results highlight phase-specific contributions of CF-driven error signaling, aligning with the hypothesis that memory consolidation and retrieval depend on downstream circuits independent of CF activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "434fedc0-6865-4b2a-b99a-141e956a9ad1",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C73",
+      "claim": "CF-dependent and CF-independent mechanisms may operate in a context-sensitive manner during cerebellar learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that CF-dependent and CF-independent mechanisms may operate in a context-sensitive manner during cerebellar learning, consistent with established insights derived from the vestibulo-ocular reflex (VOR) and OKR systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of existing literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "74bd6923-9212-4987-9b82-b4a0183ccde4",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C74",
+      "claim": "CF signaling is selectively activated based on the magnitude and persistence of motor errors.",
+      "claim_type": "EXPLICIT",
+      "source": "This delineation of responsibilities between CF-dependent and CF-independent processes highlights the cerebellum's adaptive plasticity, wherein CF input is selectively activated based on the magnitude and persistence of motor errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional role of CF signaling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "69bac6aa-30ae-4a75-a701-7d02a967c435",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C75",
+      "claim": "The cerebellum maintains a balance between precision and flexibility by dynamically alternating between CF-dependent and CF-independent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum maintains a balance between precision and flexibility by dynamically alternating between these mechanisms, enhancing motor adaptation across various behavioral contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the cerebellum's functional organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "2c08dd80-2d58-4242-945d-ee44c08f95b9",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C76",
+      "claim": "CF transmission may dynamically gate their own instructive signals, shifting the polarity and magnitude of synaptic plasticity at PF\u2013PC synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of molecular-layer interneurons, which silences PCs, markedly suppresses CF-evoked dendritic calcium spikes; thereby, CF transmission may dynamically gate their own instructive signals, shifting the polarity and magnitude of synaptic plasticity at PF\u2013PC synapses (Rowan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation supported by a citation to Rowan et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "67a4dfb0-61dc-4a4f-8c45-9dbfc1ca1f5e",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C77",
+      "claim": "IO teaching signals may coordinate cortical plasticity with adaptive vestibular reflexes through a parallel CF-vestibular nucleus pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "While the behavioral consequences of this direct CF-vestibular nucleus pathway remain to be defined, it provides a parallel channel through which IO teaching signals may coordinate cortical plasticity with adaptive vestibular reflexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation about the functional role of the CF-vestibular nucleus pathway.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "5412b309-062e-48cc-89f2-dddc2922ae25",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C78",
+      "claim": "CF signaling does not directly impact MVN function during memory consolidation and retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "However, contrary to this expectation, our results revealed no substantial effect of CF transmission on long-term memory formation or recall, suggesting that CF signaling does not directly impact MVN function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "6d56e9c9-1d6c-44a9-86a6-367e8bcdb4e1",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C79",
+      "claim": "Simple spiking in PCs could either complement or function independently of CF transmission, especially during phases when error correction demands are minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Ss could either complement or function independently of CF transmission, especially during phases when error correction demands are minimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation about the role of simple spikes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "62ef2e26-b815-49be-88e3-525baad70308",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C80",
+      "claim": "Tasks requiring high-error correction, such as those encountered during the active learning phase, likely depend on CF-driven signals for precise error correction during acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "The task demands inherent to different learning phases may explain these observed differences. Tasks requiring high-error correction, such as those encountered during the active learning phase, likely depend on CF-driven signals for precise error correction during acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the phase-specific results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f8ceb46c-3651-40c3-9625-3f916def6f4d",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C81",
+      "claim": "CF-independent mechanisms may dominate later phases of learning where error correction adjustments are less critical.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CF-independent mechanisms may dominate later phases where such adjustments are less critical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the phase-specific results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "1ba233f4-a978-4a7a-bb87-4e3fd1c0f162",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C82",
+      "claim": "The study specifically focused on the early consolidation phase, emphasizing cerebellar plasticity mechanisms that are critical for encoding and stabilizing motor memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study specifically focused on the early consolidation phase, emphasizing cerebellar plasticity mechanisms that are critical for encoding and stabilizing motor memory (Cooke et al., 2004; Seo et al., 2024; Steinmetz and Freeman, 2016; Titley et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the study and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "955a4263-4b5f-43dc-94f3-1ea3d6a39b10",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C83",
+      "claim": "Changes during the early consolidation period significantly shape memory formation and retention, while alterations beyond this timeframe have minimal impact on storage or performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, changes during this early period significantly shape memory formation and retention, while alterations beyond this timeframe have minimal impact on storage or performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental design and existing literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "60f76baa-1155-47d0-bafa-f0421541c9a6",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C84",
+      "claim": "The virus was injected into the IO 2\u20133 weeks before the behavioral test.",
+      "claim_type": "EXPLICIT",
+      "source": "For optogenetic expression in CF, the virus was injected into the IO 2\u20133 weeks before the behavioral test, as previously described (Kimpo et al., 2014; Roh et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental timeline and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "6948a80d-616f-4edb-afe4-e4e3db142c53",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C85",
+      "claim": "Bilateral injections were made at the midpoint between the edge of the occipital bone and the C1 cervical vertebra for IO virus injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, bilateral injections were made at the midpoint between the edge of the occipital bone and the C1 cervical vertebra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f2220520-e561-400b-93c8-80b0c6f5857d",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C86",
+      "claim": "The glass pipette was set at a 55\u00b0 angle from the vertical and 7\u00b0 from the midline for IO virus injection.",
+      "claim_type": "EXPLICIT",
+      "source": "The glass pipette was set at a 55\u00b0 angle from the vertical and 7\u00b0 from the midline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "090106af-3f63-4868-b68c-69532e4641ed",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C87",
+      "claim": "A virus solution containing 100\u2013200 nL of AAV1-CaMkII\u03b1-eNpHR3.0-EYFP or AAV9.CaMkII\u03b1-EGFP was injected with a Picopump at 5 nL/s.",
+      "claim_type": "EXPLICIT",
+      "source": "After approaching a 3 mm depth, a virus solution containing 100\u2013200 nL of AAV1-CaMkII\u03b1-eNpHR3.0-EYFP or AAV9.CaMkII\u03b1-EGFP was injected with a Picopump at 5 nL/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the injection parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "5d05b38a-0a4c-4bf9-a8e8-3dd17df0b037",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C88",
+      "claim": "The pipettes were left in place for 10 min before removal to minimize backflow.",
+      "claim_type": "EXPLICIT",
+      "source": "The pipettes were left in place for 10 min before they were removed to minimize backflow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "2068aa3f-a764-43dc-9f43-103e8c6b0490",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C89",
+      "claim": "Mice were given 48 hr to recover after optic cannula implantation surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were given 48 hr to recover after surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the post-surgical recovery period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "11170be2-2dd5-48e9-97ab-7099ffda741e",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C90",
+      "claim": "The stimulation intensity was carefully calibrated to evoke minimal CF excitatory postsynaptic currents (EPSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation intensity was carefully calibrated to evoke minimal CF excitatory postsynaptic currents (EPSCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method for patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "c223e6a8-0e57-40d2-8f05-40efede29712",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C91",
+      "claim": "6 out of 8 recorded cells in the NpHR group were responsive to optogenetic suppression of Cs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, 6 out of 8 recorded cells were responsive to optogenetic suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the in vivo recordings shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "13eae143-a8f8-4ee8-aea0-642432557d04",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C92",
+      "claim": "For the GFP group, Ss firing rates with laser off versus on were not significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "For the GFP group, firing rates with laser off (n = 11 cells from 4 mice) versus on (n = 11 cells from 4 mice) were not significantly different (Mann-Whitney test, p = 0.8594).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the in vivo recordings shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "dc7cb0d9-606d-4636-85c3-18b770a80b81",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C93",
+      "claim": "For the NpHR group, no significant difference in Ss firing rates was observed between OFF and ON conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, for the NpHR group, no significant difference was observed between OFF (n = 10 cells from 6 mice) and ON (n = 10 cells from 6 mice) conditions (Mann-Whitney test, p > 0.9999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the in vivo recordings shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f104b157-05ab-4804-afb0-99a2dfc16a60",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C94",
+      "claim": "In the GFP group, no significant difference in Cs firing rates was observed between OFF and ON conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the GFP group, no significant difference was observed between OFF (n = 8 cells from 4 mice) and ON (n = 8 cells from 4 mice) conditions (Mann-Whitney test, p = 0.4563).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the in vivo recordings shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "fa2e101d-9d81-44c2-aa79-97a034bbffa1",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C95",
+      "claim": "In the NpHR group, Cs firing rates were significantly reduced during opto-stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the NpHR group, Cs firing rates were significantly reduced during opto-stimulation (OFF, n = 6 cells from 6 mice; ON, n = 6 cells from 6 mice; Mann-Whitney test, ** p = 0.0022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the in vivo recordings shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "694192bf-1eea-4734-8377-7751c94f335b",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C96",
+      "claim": "The change of gain of the GFP group was significantly larger than that of the NpHR group during OKR acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "The change of gain of the GFP group was significantly larger than that of the NpHR group (left; Unpaired t-test, p = 0.0007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the OKR experiments shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "531be897-bd92-47f6-a23c-1434d3f9334c",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C97",
+      "claim": "The gain of the GFP group was significantly increased from 0 to 50 min during OKR acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "The gain of the GFP group was significantly increased from 0 to 50 min (right; Paired t-test, **** p < 0.0001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the OKR experiments shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "4f352b50-bcab-4e1c-8c49-34c153a783ad",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C98",
+      "claim": "The NpHR group showed no significant improvement of gain from 0 to 50 min during OKR acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "while the NpHR group showed no significant improvement of gain from 0 to 50 min (right; Paired t-test, p = 0.1046).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the OKR experiments shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "7bf70057-912e-410d-a1ae-4452651690d1",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C99",
+      "claim": "No difference in consolidation percentage was observed between the GFP and NpHR groups after 30 min of optogenetic inhibition post-learning.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference was observed between the groups (p = 0.3173; Unpaired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the consolidation experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "cbb4274d-2d7a-4d85-98d4-b6adae4e7e42",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C100",
+      "claim": "No difference in consolidation percentage was observed between GFP and NpHR groups after 6 hr of optogenetic inhibition post-learning.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference was observed between the groups (Unpaired t-test, p = 0.6405).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the consolidation experiments shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "bd001020-9e72-401b-b176-cbe1cbc60715",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C101",
+      "claim": "There was no significant variation in gain retrieval before and during opto-stimulation in the NpHR group.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant variation between the groups (NpHR group, p = 0.2439; GFP group, p = 0.3180; Paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the retrieval experiments shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "1044a1b0-d9a5-4656-9f60-ebf479984a31",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C102",
+      "claim": "There was no significant variation in gain retrieval before and during opto-stimulation in the GFP group.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant variation between the groups (NpHR group, p = 0.2439; GFP group, p = 0.3180; Paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the retrieval experiments shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "dc9dd8d3-1efc-4e2a-a2ea-a0ba34e82080",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C103",
+      "claim": "CF EPSCs were significantly suppressed in the NpHR group compared to the GFP group.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis of suppression of CF EPSCs (GFP: n = 10 cells/2 mice, NpHR: n = 9 cells/5 mice, *** p < 0.001, Unpaired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the in vitro experiments shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "d9b94e6e-cd8b-49de-88b1-a10028a7488c",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "claim_id": "C104",
+      "claim": "The number of complex spike spikelets was significantly reduced in the NpHR group during optogenetic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis of number of complex spike spikelets (GFP: n = 8 cells/1 mouse, NpHR: n = 8 cells/5 mice, ** p = 0.002; Paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the in vitro experiments shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition using AAV1-CaMKII\u03b1-eNpHR3.0-EYFP effectively suppresses climbing fiber to Purkinje cell (CF-PC) synaptic transmission in vitro. Laser illumination (3-5 mW, 593 nm) significantly reduced CF EPSC amplitude in all NpHR-expressing cells (9/9 cells) and completely abolished CF-induced spikelets, while GFP controls showed no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C22, C103-C104 provide converging evidence from voltage-clamp and current-clamp recordings demonstrating robust and consistent optogenetic suppression of CF transmission. The 100% success rate (9/9 cells) in NpHR group with appropriate GFP controls and statistical significance (p<0.001 for EPSCs, p=0.002 for spikelets) strongly support the effectiveness of the manipulation in vitro.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition selectively suppresses complex spike (Cs) activity in awake mice without affecting simple spike (Ss) activity. In vivo recordings from cerebellar lobule IV/V showed significant reduction in Cs firing rates in the NpHR group (p=0.0022) with 6/8 cells responsive, while Ss rates remained unchanged and GFP controls showed no effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C23-C26, C62-C65, C91-C95 demonstrate selective Cs suppression in vivo, but several concerns limit confidence: (1) recordings were from lobule IV/V, not the flocculus where behavioral manipulations occurred (C63), raising questions about regional specificity; (2) only 75% of cells (6/8) responded to optogenetic suppression (C91), suggesting incomplete penetrance; (3) sustained suppression was validated only for 40 minutes (C65, C25), while behavioral experiments lasted hours, creating uncertainty about maintained efficacy during long protocols.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f0012411-4af3-4c8a-bd93-25288601a739",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of CF transmission during optokinetic reflex (OKR) training impairs motor memory acquisition. The GFP control group showed significant gain increase (nearly doubling from 0-50 min, p<0.0001), while the NpHR group exhibited flat learning curves with no significant gain improvement (p=0.1046), demonstrating that CF transmission is essential for cerebellar motor learning acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28-C32, C66-C69, C96-C98 provide strong, consistent evidence that CF inhibition blocks motor learning acquisition. The contrasting learning curves between groups, robust statistical significance (p=0.0007 for between-group comparison), and clear behavioral phenotype (flat vs. increasing gain) with appropriate controls support this conclusion. However, the result is limited to gain-increase learning and does not address other forms of motor adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "9a3b6139-2672-4999-a64d-69b8ecdc3197",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of CF transmission during memory consolidation (either 30 min or 6 hr post-learning) does not impair long-term memory formation. Both NpHR and GFP groups showed equivalent memory retention at 24 hr (p=0.3173 for 30 min protocol; p=0.6405 for 6 hr protocol), indicating CF transmission is dispensable for memory consolidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C33-C36, C70, C99-C100 demonstrate that CF inhibition during consolidation does not affect memory retention. The lack of significant differences between groups across two different consolidation durations (30 min and 6 hr), with proper acquisition validation (C70), supports the conclusion. However, the study only examined early consolidation windows (up to 6 hr) and may miss longer-term consolidation processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "9aaa79a1-b97c-4b72-8988-d9a2c1c1115f",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Disrupting CF signaling during memory retrieval does not affect recall of motor memory in fully trained mice. Both NpHR and GFP groups showed no significant change in gain retrieval before versus during optogenetic stimulation (NpHR: p=0.2439; GFP: p=0.3180), indicating CF transmission is not required for memory retrieval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C71, C101-C102 provide consistent evidence that CF inhibition does not impair memory retrieval. The within-subject design (before vs. during stimulation) with appropriate controls and non-significant results in both groups support this conclusion. However, the retrieval test was relatively brief and may not capture all aspects of memory expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "0f72dde9-6819-4403-8db0-bf819410a302",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CF transmission plays a phase-specific role in motor learning, being essential for memory acquisition but dispensable for consolidation and retrieval. This represents a specialized temporal contribution where CF input drives initial motor adaptation but subsequent memory processes rely on distinct neural mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C39-C40, C43-C44, C61 synthesize the main conclusion from the acquisition, consolidation, and retrieval experiments. The convergent evidence from all three phases, with consistent patterns of CF-dependence during acquisition and CF-independence during later phases, strongly supports this phase-specific model. This conclusion is well-grounded in the experimental data, though mechanistic understanding of downstream circuits remains limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "06639a40-78cb-461e-9176-90b35087c0c2",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Memory consolidation and retrieval depend on downstream circuits independent of CF activity, with CF signaling not directly impacting medial vestibular nuclei (MVN) function during these phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38, C72, C78 propose that downstream circuits operate independently of CF activity during consolidation/retrieval, but this is largely inferential. The study demonstrates CF is not required for these phases but does not directly test MVN function or other downstream circuits. The conclusion about MVN (C78) is speculative without direct measurements of MVN activity or manipulation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "f3cfd942-db08-4409-89ca-f5649c593bdb",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CF signaling operates in a context-sensitive manner, being selectively activated for tasks involving substantial, persistent errors requiring precise error correction during acquisition, while CF-independent mechanisms dominate later phases where adjustments are less critical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45, C73-C74, C80-C81 propose a context-dependent model of CF function, but this is largely interpretive. The study only examined gain-increase learning in OKR and did not systematically vary error magnitude or persistence. The comparison to VOR literature provides context but the current data do not directly test whether error magnitude determines CF-dependence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "19becb6f-1b38-4b11-9413-f4acc7ef334c",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optogenetic CF suppression likely mimicked functional consequences of CF long-term depression (LTD), potentially impairing parallel fiber-PC (PF-PC) LTD and hindering gain enhancement during learning through reduced calcium influx and altered complex spike waveforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C57 propose a mechanistic interpretation linking optogenetic suppression to CF-LTD and PF-PC plasticity, but this is speculative. The study did not measure calcium transients, PF-PC LTD, or complex spike waveforms during behavioral learning. While the interpretation is plausible based on cited literature, it remains untested in the current experimental paradigm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "1c84722e-f09c-4e62-9e6e-0fb26c025fc8",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Alternative mechanisms support memory consolidation and retrieval, including PC intrinsic plasticity for consolidation and granule cell activity for retrieval, with simple spiking potentially encoding timing and frequency information for stabilizing memory traces in downstream circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C53, C79 cite prior literature to propose alternative mechanisms but do not test these mechanisms in the current study. The role of PC intrinsic plasticity, granule cell activity, and simple spike encoding remain speculative in the context of the current OKR paradigm and would require direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "56e52542-3afe-4441-b8c8-c7a5166b4785",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study focused on early consolidation phases (30 min to 6 hr) that are critical for encoding and stabilizing motor memory, while extended consolidation periods involving systems-level integration may involve slower processes not examined here.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C82-C83 accurately describe the scope and limitations of the consolidation experiments, appropriately citing literature on biphasic consolidation dynamics. Claim C60 appropriately acknowledges that longer-term consolidation processes were not examined. This represents an honest assessment of the study's temporal window and its limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge claims establish the established understanding of CF transmission in cerebellar motor learning, including CF's role as an instructive signal, the OKR as a model system, complex spike generation in response to motor errors, and prior evidence for CF involvement in motor learning from lesion and optogenetic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C14, C27, C42, C46-C50 represent well-established knowledge in the field, appropriately cited to foundational and recent literature. These claims provide necessary context for the current study and accurately represent the state of knowledge, including conflicting findings (e.g., C12 vs. C13-C14) that motivate the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "5a2a184d-d88b-4b83-bb87-260a58c00271",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details for viral injection and surgical procedures are provided, including injection coordinates, angles, volumes, flow rates, and recovery periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C90 provide detailed methodological information that appears technically sound and is consistent with cited prior work (C84). The surgical approach (bilateral IO injections at specific coordinates and angles) is appropriate for targeting CF projections, and the 2-3 week expression period is standard for AAV vectors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "a755dfa8-3222-40d5-99d3-27abdd359b89",
+      "content_id": "64838682-0f91-426d-9f50-482e8f771682",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The cerebellum maintains adaptive plasticity by dynamically alternating between CF-dependent and CF-independent mechanisms, with CF transmission potentially gating its own instructive signals through molecular-layer interneurons and coordinating cortical plasticity with vestibular reflexes through parallel pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C77 propose broader mechanistic models of cerebellar function, but these are largely speculative in the context of the current study. Claim C76 cites prior work on interneuron-mediated gating but this was not examined here. Claim C77 about CF-vestibular nucleus coordination is explicitly noted as undefined behaviorally. These represent interesting hypotheses but lack direct experimental support in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "06822ad6-1ee5-4086-8c5a-9fbb5d1b5512",
+      "content_id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors injected AAV1-CaMKII\u03b1-eNpHR3.0-EYFP or AAV1-CaMKII\u03b1-EGFP into the inferior olive (IO) of wild-type mice to manipulate climbing fiber (CF) signals in the cerebellar cortex. The selectively segregated expression in the IO and flocculus enabled manipulation of CF terminals without disrupting IO somas.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raised significant concerns about the selectivity and specificity of the viral approach. One reviewer noted 'the viruses chosen are non-specific to the cell targets and a cre-based approach is lacking to draw conclusions on only the targeted pathway of interest' and 'it is unclear based on the figures provided if the AAVs labeled only the pathway of interest.' Another reviewer stated 'the images provided to show injection region are difficult to see and specific cell types are not co-labeled,' requesting 'high-resolution images demonstrating selectivity and expression.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e",
+      "content_id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "In vitro patch-clamp recordings showed that optogenetic inhibition with laser illumination (3\u20135 mW) resulted in significant reduction in CF EPSC amplitude in the NpHR group (9 out of 9 cells exhibited reliable suppression), while laser illumination did not affect CF EPSCs in the GFP control group. CF stimulation-induced spikelets were completely abolished in the NpHR group but remained unaffected in the GFP group under current-clamp mode.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged this finding, with one stating 'the authors have shown that climbing fiber activity was altered due to the optogenetic perturbation.' The editor noted 'there is evidence to support' the claim about CF necessity, though requesting 'a clearer demonstration of the penetrance and selectivity of the manipulation.' The in vitro data itself was not directly challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "74b4cbca-a20f-46c9-9e37-5a9994105a80",
+      "content_id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "In vivo recordings in awake mice showed that optogenetic inhibition selectively suppressed complex spike (Cs) firing rates in the NpHR group without affecting simple spike (Ss) rates, whereas no changes were observed in the GFP control group. The suppression was sustained throughout a 40-minute optostimulation period, with 6 out of 8 recorded cells responsive to optogenetic suppression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledged the new in vivo data ('the authors provide new data regarding the effect of eNpHR on CF-evoked complex spiking in vivo'), they expressed concern that it 'fails to address overall concerns showing the functional effect that explains their causal results.' The editor noted concerns about 'the unclear efficacy of longer-duration climbing fiber activity suppression,' and one reviewer requested 'including the raw data, as done in Figure 2, would again support the conclusions' for other figures. The 40-minute recording does not fully validate efficacy during the hours-long behavioral experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "b9972f0c-afac-479c-91c0-5a11280f3800",
+      "content_id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "During OKR training with optogenetic CF inhibition, the control (GFP) group exhibited an increasing learning curve with significant gain enhancement (almost doubling from 0 to 50 min), whereas the NpHR group's learning curve was almost flat with no significant change in gain. This demonstrates that CF transmission is essential for cerebellar motor learning and memory acquisition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor stated 'there is evidence to support the first part of this claim' regarding CF necessity for OKR adaptation. One reviewer noted 'the impacts on behavior are interesting' and 'the authors have shown that climbing fiber activity was altered due to the optogenetic perturbation.' While methodological concerns were raised about selectivity and penetrance, the behavioral finding itself that CF inhibition impairs acquisition was accepted by reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1",
+      "content_id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Optogenetic inhibition of CF transmission during the consolidation period (both 30 min and 6 hr post-learning) did not yield any change in the maintenance of memory. Long-term memory was well-established in both NpHR and GFP groups, with no difference in consolidation percentage between groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor explicitly stated 'support for the latter part of the claim is incomplete owing to methodological concerns, including the robustness of the CF marking and manipulation approach and the unclear efficacy of longer-duration climbing fiber activity suppression.' One reviewer noted 'the absence of detailed evidence on the effectiveness of CF suppression and concerns over tissue damage from optogenetic stimulation weaken the argument that CFs are not essential for memory consolidation.' Another reviewer emphasized that the paper 'leaves unanswered the central question of which signal instructs consolidation if CFs do not.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "5c5ba7d4-ad07-4e7c-8167-a6bf455bd27a",
+      "content_id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Disrupting CF signaling during the retrieval phase did not affect the retrieval of motor memory in fully trained mice. There was no significant variation in gain retrieval before and during opto-stimulation in either the NpHR or GFP groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Similar to the consolidation findings, the editor noted 'support for the latter part of the claim is incomplete owing to methodological concerns, including the robustness of the CF marking and manipulation approach and the unclear efficacy of longer-duration climbing fiber activity suppression.' The same methodological concerns about CF suppression efficacy and selectivity apply to the retrieval experiments, making the conclusion uncertain despite the behavioral data showing no effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "18370cda-7ff4-4ada-a8eb-f500ebf272a5",
+      "content_id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "CF transmission plays a specialized and critical role primarily in memory acquisition, where CF activity is crucial for enhancing motor gain and driving motor adaptation. CF input is essential during memory acquisition but dispensable during consolidation and retrieval, with the primary function of CF input lying in initial memory formation rather than subsequent memory processing.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor stated 'the main claim is that climbing fiber activity is necessary for optokinetic reflex adaptation, but is dispensable for its long-term consolidation. There is evidence to support the first part of this claim, though it requires a clearer demonstration of the penetrance and selectivity of the manipulation. However, support for the latter part of the claim is incomplete.' One reviewer noted the study 'fails to address overall concerns showing the functional effect that explains their causal results' and that 'substantial new experiments and tighter logic are required before the work can serve as a definitive test of CF involvement in different memory processes.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "44a7f8e9-900a-467a-bd06-79b82a78463d",
+      "content_id": "f72d49c9-52b5-4edd-87fa-37342ae61ce9",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Memory consolidation and retrieval depend on downstream circuits independent of CF activity, representing a specialized role for CF transmission in early stages of motor learning with subsequent phases relying on distinct neural mechanisms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer explicitly criticized the narrow framing: 'the paper has a narrow \"CF-or-nothing\" framing that leaves unanswered the central question of which signal instructs consolidation if CFs do not.' The editor noted incomplete support for claims about CF dispensability during consolidation due to methodological concerns. Without establishing what mechanisms do support consolidation, the claim about downstream circuit independence remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd801f59-5d7b-4c20-a863-72f5cb8d495b",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "c8b5e4ba-aea4-48b2-bd31-85d59e85354b",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "7c4ed696-0981-47d2-baf4-ed54f13cd8ca",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "0b30f66b-31fc-4090-a981-887077a0722a",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "f00ade0f-fa0c-492c-8840-23f1b0b06638",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "40013bcf-5823-420c-82de-88d51c0b2a23",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "ebbead34-e33b-473a-9719-53922431da30",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "5a527df4-2afe-41ba-9e78-0ac23a1141f8",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "dc9dd8d3-1efc-4e2a-a2ea-a0ba34e82080",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "d9b94e6e-cd8b-49de-88b1-a10028a7488c",
+      "result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd"
+    },
+    {
+      "claim_id": "006f2b78-5114-4955-9938-612bbd4ba08d",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "21eeb44f-3142-4cad-bf8f-823effce2f99",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "7267721b-3634-42a7-88de-4139aa7f7301",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "3b654ae8-3745-4150-9ecc-85bd4fe2eef3",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "2efca413-0def-4779-84a6-76c9a5a796f2",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "62fc24da-5886-42ba-9046-1f2c9c6ec3c4",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "5d780e9b-60f2-4521-83ab-dc39cb90761f",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "c1fdb8d8-3a25-4929-b672-19a5eed3d433",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "c223e6a8-0e57-40d2-8f05-40efede29712",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "13eae143-a8f8-4ee8-aea0-642432557d04",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "dc7cb0d9-606d-4636-85c3-18b770a80b81",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "f104b157-05ab-4804-afb0-99a2dfc16a60",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "fa2e101d-9d81-44c2-aa79-97a034bbffa1",
+      "result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0"
+    },
+    {
+      "claim_id": "13d137b5-8705-4eb7-9d29-67dd697864ff",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "17e0a301-6f4b-47c1-8530-2cc17f5c6fd9",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "16cf5982-44af-4f31-9908-1822766dd1d9",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "24277266-9dfe-424e-88ac-d5957467e02d",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "d188fde0-bbc1-460b-8f6b-acf57674e2eb",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "46c3ac7b-8d86-4f4f-bd74-9c31a019545f",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "b7c486bc-a055-431e-8d2b-ea486ede86fd",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "b6b5fd13-ee35-42ad-af65-ef3f04e2350f",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "bac71fdd-0a12-495e-9c1d-894ca3fb1c01",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "94c620a1-6ee9-4ede-8a07-46a3563ac89a",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "694192bf-1eea-4734-8377-7751c94f335b",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "531be897-bd92-47f6-a23c-1434d3f9334c",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "4f352b50-bcab-4e1c-8c49-34c153a783ad",
+      "result_id": "f0012411-4af3-4c8a-bd93-25288601a739"
+    },
+    {
+      "claim_id": "19bf9458-4f20-414a-99d8-c5ee68a7a39b",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "ff1f0fdf-f66c-4c93-9e38-8c71aacb39d8",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "b2166315-399e-4e17-8de6-0157d09f5517",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "51369457-f037-4210-b74a-7b5a7e38e24c",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "c8eb4cc7-a1ca-49d6-86eb-1b09637bce46",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "7bf70057-912e-410d-a1ae-4452651690d1",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "cbb4274d-2d7a-4d85-98d4-b6adae4e7e42",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "689013c0-876e-45ca-a382-1bc8c4f13ddb",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "89049480-d5e6-49a3-a690-af505dec1f69",
+      "result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197"
+    },
+    {
+      "claim_id": "83c40c96-925b-465a-910c-1e53e2234ed7",
+      "result_id": "9aaa79a1-b97c-4b72-8988-d9a2c1c1115f"
+    },
+    {
+      "claim_id": "18380ffb-a3a1-41a2-85ed-400d3bf9edad",
+      "result_id": "9aaa79a1-b97c-4b72-8988-d9a2c1c1115f"
+    },
+    {
+      "claim_id": "bd001020-9e72-401b-b176-cbe1cbc60715",
+      "result_id": "9aaa79a1-b97c-4b72-8988-d9a2c1c1115f"
+    },
+    {
+      "claim_id": "1044a1b0-d9a5-4656-9f60-ebf479984a31",
+      "result_id": "9aaa79a1-b97c-4b72-8988-d9a2c1c1115f"
+    },
+    {
+      "claim_id": "83365ba5-967e-4ee4-854d-6d4866856e91",
+      "result_id": "0f72dde9-6819-4403-8db0-bf819410a302"
+    },
+    {
+      "claim_id": "8e4a9792-cf60-4fb0-b094-2f77d8a74de8",
+      "result_id": "0f72dde9-6819-4403-8db0-bf819410a302"
+    },
+    {
+      "claim_id": "6fc11024-4793-4833-826f-621ef0ac7adb",
+      "result_id": "0f72dde9-6819-4403-8db0-bf819410a302"
+    },
+    {
+      "claim_id": "af390667-3a7b-4263-b71c-85eaccf6d353",
+      "result_id": "0f72dde9-6819-4403-8db0-bf819410a302"
+    },
+    {
+      "claim_id": "9d1a865f-7c00-4b2a-92f6-5b8517994e33",
+      "result_id": "0f72dde9-6819-4403-8db0-bf819410a302"
+    },
+    {
+      "claim_id": "56583c1b-e006-4477-9150-9ca6c2f41084",
+      "result_id": "0f72dde9-6819-4403-8db0-bf819410a302"
+    },
+    {
+      "claim_id": "508729bf-0f40-4996-9941-8b45c82bb5ba",
+      "result_id": "06639a40-78cb-461e-9176-90b35087c0c2"
+    },
+    {
+      "claim_id": "9ede7581-b4d7-4ac2-984a-3de1818545f3",
+      "result_id": "06639a40-78cb-461e-9176-90b35087c0c2"
+    },
+    {
+      "claim_id": "5412b309-062e-48cc-89f2-dddc2922ae25",
+      "result_id": "06639a40-78cb-461e-9176-90b35087c0c2"
+    },
+    {
+      "claim_id": "76930a32-6569-4709-bd51-1c55d2b9432a",
+      "result_id": "f3cfd942-db08-4409-89ca-f5649c593bdb"
+    },
+    {
+      "claim_id": "434fedc0-6865-4b2a-b99a-141e956a9ad1",
+      "result_id": "f3cfd942-db08-4409-89ca-f5649c593bdb"
+    },
+    {
+      "claim_id": "74bd6923-9212-4987-9b82-b4a0183ccde4",
+      "result_id": "f3cfd942-db08-4409-89ca-f5649c593bdb"
+    },
+    {
+      "claim_id": "62ef2e26-b815-49be-88e3-525baad70308",
+      "result_id": "f3cfd942-db08-4409-89ca-f5649c593bdb"
+    },
+    {
+      "claim_id": "f8ceb46c-3651-40c3-9625-3f916def6f4d",
+      "result_id": "f3cfd942-db08-4409-89ca-f5649c593bdb"
+    },
+    {
+      "claim_id": "b76cdbf0-73f3-4a4d-8402-8ec90493a202",
+      "result_id": "19becb6f-1b38-4b11-9413-f4acc7ef334c"
+    },
+    {
+      "claim_id": "18117853-e027-49e4-a4c1-85e63e936d3c",
+      "result_id": "19becb6f-1b38-4b11-9413-f4acc7ef334c"
+    },
+    {
+      "claim_id": "f452d73e-dcca-446a-9020-3040709dca4a",
+      "result_id": "19becb6f-1b38-4b11-9413-f4acc7ef334c"
+    },
+    {
+      "claim_id": "9c01dffc-42f2-4168-854c-bce9bc941ccd",
+      "result_id": "19becb6f-1b38-4b11-9413-f4acc7ef334c"
+    },
+    {
+      "claim_id": "8068b629-bc0d-4be9-adc9-b6c76bdf1dea",
+      "result_id": "1c84722e-f09c-4e62-9e6e-0fb26c025fc8"
+    },
+    {
+      "claim_id": "dbbc0b90-7557-49a0-84ee-1f5a44e26abd",
+      "result_id": "1c84722e-f09c-4e62-9e6e-0fb26c025fc8"
+    },
+    {
+      "claim_id": "2ba1bb23-b194-4ba6-901a-3878e73b2805",
+      "result_id": "1c84722e-f09c-4e62-9e6e-0fb26c025fc8"
+    },
+    {
+      "claim_id": "6d56e9c9-1d6c-44a9-86a6-367e8bcdb4e1",
+      "result_id": "1c84722e-f09c-4e62-9e6e-0fb26c025fc8"
+    },
+    {
+      "claim_id": "a9366cf4-f40e-441d-9da8-1c61a38be3ac",
+      "result_id": "56e52542-3afe-4441-b8c8-c7a5166b4785"
+    },
+    {
+      "claim_id": "f0a9d0f2-660b-4d94-8ad4-de5d78f48ba4",
+      "result_id": "56e52542-3afe-4441-b8c8-c7a5166b4785"
+    },
+    {
+      "claim_id": "1ba233f4-a978-4a7a-bb87-4e3fd1c0f162",
+      "result_id": "56e52542-3afe-4441-b8c8-c7a5166b4785"
+    },
+    {
+      "claim_id": "955a4263-4b5f-43dc-94f3-1ea3d6a39b10",
+      "result_id": "56e52542-3afe-4441-b8c8-c7a5166b4785"
+    },
+    {
+      "claim_id": "c7a21157-8849-4cbb-8ad4-d3ed77b8f14f",
+      "result_id": "56e52542-3afe-4441-b8c8-c7a5166b4785"
+    },
+    {
+      "claim_id": "5e8b0626-4c3c-4c26-a8cc-762da23fb07e",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "7c523836-4087-4741-91b3-1fa203295230",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "2fad9d3f-8209-4aaa-a48d-7bedd5d796a9",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "567c4a49-1475-47bd-be42-5ffa3157af4c",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "b4d0bb5e-af93-4824-84bd-87da4fda5739",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "7ce403fe-30b9-4679-9e87-b6c839bb3351",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "85c4a7a2-de76-48e3-a94a-5d7c152170f2",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "0972083a-70cd-49e3-bb26-b9f8e8c3dfbd",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "889d799c-b1ca-4e9f-a251-cf1648bccf74",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "656a6cda-42e8-4bc5-b7e9-d19513832db8",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "464398ad-61ab-48a6-a617-cc94fcc18edb",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "36ce2259-a382-41cb-87dc-e43bf59876de",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "ca704628-f5e4-404d-91ef-457e39852ffa",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "ab9fdb4b-25a0-4675-a8e4-dd9c8c269d98",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "be243a8c-93fe-4d74-8c22-972b0bfed9e8",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "1e4ce99a-53e8-4fbc-a3a2-7ec45eef18bb",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "8f0967cb-526b-46f8-9076-ca9c38c4413e",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "2e09c424-5479-4f9d-ac24-d53910367391",
+      "result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6"
+    },
+    {
+      "claim_id": "60f76baa-1155-47d0-bafa-f0421541c9a6",
+      "result_id": "5a2a184d-d88b-4b83-bb87-260a58c00271"
+    },
+    {
+      "claim_id": "6948a80d-616f-4edb-afe4-e4e3db142c53",
+      "result_id": "5a2a184d-d88b-4b83-bb87-260a58c00271"
+    },
+    {
+      "claim_id": "f2220520-e561-400b-93c8-80b0c6f5857d",
+      "result_id": "5a2a184d-d88b-4b83-bb87-260a58c00271"
+    },
+    {
+      "claim_id": "090106af-3f63-4868-b68c-69532e4641ed",
+      "result_id": "5a2a184d-d88b-4b83-bb87-260a58c00271"
+    },
+    {
+      "claim_id": "5d05b38a-0a4c-4bf9-a8e8-3dd17df0b037",
+      "result_id": "5a2a184d-d88b-4b83-bb87-260a58c00271"
+    },
+    {
+      "claim_id": "2068aa3f-a764-43dc-9f43-103e8c6b0490",
+      "result_id": "5a2a184d-d88b-4b83-bb87-260a58c00271"
+    },
+    {
+      "claim_id": "11170be2-2dd5-48e9-97ab-7099ffda741e",
+      "result_id": "5a2a184d-d88b-4b83-bb87-260a58c00271"
+    },
+    {
+      "claim_id": "69bac6aa-30ae-4a75-a701-7d02a967c435",
+      "result_id": "a755dfa8-3222-40d5-99d3-27abdd359b89"
+    },
+    {
+      "claim_id": "2c08dd80-2d58-4242-945d-ee44c08f95b9",
+      "result_id": "a755dfa8-3222-40d5-99d3-27abdd359b89"
+    },
+    {
+      "claim_id": "67a4dfb0-61dc-4a4f-8c45-9dbfc1ca1f5e",
+      "result_id": "a755dfa8-3222-40d5-99d3-27abdd359b89"
+    },
+    {
+      "claim_id": "dd801f59-5d7b-4c20-a863-72f5cb8d495b",
+      "result_id": "06822ad6-1ee5-4086-8c5a-9fbb5d1b5512"
+    },
+    {
+      "claim_id": "c8b5e4ba-aea4-48b2-bd31-85d59e85354b",
+      "result_id": "06822ad6-1ee5-4086-8c5a-9fbb5d1b5512"
+    },
+    {
+      "claim_id": "7c4ed696-0981-47d2-baf4-ed54f13cd8ca",
+      "result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e"
+    },
+    {
+      "claim_id": "0b30f66b-31fc-4090-a981-887077a0722a",
+      "result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e"
+    },
+    {
+      "claim_id": "f00ade0f-fa0c-492c-8840-23f1b0b06638",
+      "result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e"
+    },
+    {
+      "claim_id": "40013bcf-5823-420c-82de-88d51c0b2a23",
+      "result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e"
+    },
+    {
+      "claim_id": "ebbead34-e33b-473a-9719-53922431da30",
+      "result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e"
+    },
+    {
+      "claim_id": "5a527df4-2afe-41ba-9e78-0ac23a1141f8",
+      "result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e"
+    },
+    {
+      "claim_id": "dc9dd8d3-1efc-4e2a-a2ea-a0ba34e82080",
+      "result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e"
+    },
+    {
+      "claim_id": "d9b94e6e-cd8b-49de-88b1-a10028a7488c",
+      "result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e"
+    },
+    {
+      "claim_id": "3b654ae8-3745-4150-9ecc-85bd4fe2eef3",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "2efca413-0def-4779-84a6-76c9a5a796f2",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "5d780e9b-60f2-4521-83ab-dc39cb90761f",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "c1fdb8d8-3a25-4929-b672-19a5eed3d433",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "006f2b78-5114-4955-9938-612bbd4ba08d",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "21eeb44f-3142-4cad-bf8f-823effce2f99",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "7267721b-3634-42a7-88de-4139aa7f7301",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "62fc24da-5886-42ba-9046-1f2c9c6ec3c4",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "c223e6a8-0e57-40d2-8f05-40efede29712",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "13eae143-a8f8-4ee8-aea0-642432557d04",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "dc7cb0d9-606d-4636-85c3-18b770a80b81",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "f104b157-05ab-4804-afb0-99a2dfc16a60",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "fa2e101d-9d81-44c2-aa79-97a034bbffa1",
+      "result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80"
+    },
+    {
+      "claim_id": "b6b5fd13-ee35-42ad-af65-ef3f04e2350f",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "24277266-9dfe-424e-88ac-d5957467e02d",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "d188fde0-bbc1-460b-8f6b-acf57674e2eb",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "46c3ac7b-8d86-4f4f-bd74-9c31a019545f",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "b7c486bc-a055-431e-8d2b-ea486ede86fd",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "bac71fdd-0a12-495e-9c1d-894ca3fb1c01",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "56583c1b-e006-4477-9150-9ca6c2f41084",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "13d137b5-8705-4eb7-9d29-67dd697864ff",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "17e0a301-6f4b-47c1-8530-2cc17f5c6fd9",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "16cf5982-44af-4f31-9908-1822766dd1d9",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "94c620a1-6ee9-4ede-8a07-46a3563ac89a",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "694192bf-1eea-4734-8377-7751c94f335b",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "531be897-bd92-47f6-a23c-1434d3f9334c",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "4f352b50-bcab-4e1c-8c49-34c153a783ad",
+      "result_id": "b9972f0c-afac-479c-91c0-5a11280f3800"
+    },
+    {
+      "claim_id": "689013c0-876e-45ca-a382-1bc8c4f13ddb",
+      "result_id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1"
+    },
+    {
+      "claim_id": "ff1f0fdf-f66c-4c93-9e38-8c71aacb39d8",
+      "result_id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1"
+    },
+    {
+      "claim_id": "b2166315-399e-4e17-8de6-0157d09f5517",
+      "result_id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1"
+    },
+    {
+      "claim_id": "51369457-f037-4210-b74a-7b5a7e38e24c",
+      "result_id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1"
+    },
+    {
+      "claim_id": "c8eb4cc7-a1ca-49d6-86eb-1b09637bce46",
+      "result_id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1"
+    },
+    {
+      "claim_id": "7bf70057-912e-410d-a1ae-4452651690d1",
+      "result_id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1"
+    },
+    {
+      "claim_id": "cbb4274d-2d7a-4d85-98d4-b6adae4e7e42",
+      "result_id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1"
+    },
+    {
+      "claim_id": "83c40c96-925b-465a-910c-1e53e2234ed7",
+      "result_id": "5c5ba7d4-ad07-4e7c-8167-a6bf455bd27a"
+    },
+    {
+      "claim_id": "18380ffb-a3a1-41a2-85ed-400d3bf9edad",
+      "result_id": "5c5ba7d4-ad07-4e7c-8167-a6bf455bd27a"
+    },
+    {
+      "claim_id": "bd001020-9e72-401b-b176-cbe1cbc60715",
+      "result_id": "5c5ba7d4-ad07-4e7c-8167-a6bf455bd27a"
+    },
+    {
+      "claim_id": "1044a1b0-d9a5-4656-9f60-ebf479984a31",
+      "result_id": "5c5ba7d4-ad07-4e7c-8167-a6bf455bd27a"
+    },
+    {
+      "claim_id": "83365ba5-967e-4ee4-854d-6d4866856e91",
+      "result_id": "18370cda-7ff4-4ada-a8eb-f500ebf272a5"
+    },
+    {
+      "claim_id": "8e4a9792-cf60-4fb0-b094-2f77d8a74de8",
+      "result_id": "18370cda-7ff4-4ada-a8eb-f500ebf272a5"
+    },
+    {
+      "claim_id": "6fc11024-4793-4833-826f-621ef0ac7adb",
+      "result_id": "18370cda-7ff4-4ada-a8eb-f500ebf272a5"
+    },
+    {
+      "claim_id": "89049480-d5e6-49a3-a690-af505dec1f69",
+      "result_id": "18370cda-7ff4-4ada-a8eb-f500ebf272a5"
+    },
+    {
+      "claim_id": "af390667-3a7b-4263-b71c-85eaccf6d353",
+      "result_id": "18370cda-7ff4-4ada-a8eb-f500ebf272a5"
+    },
+    {
+      "claim_id": "9d1a865f-7c00-4b2a-92f6-5b8517994e33",
+      "result_id": "18370cda-7ff4-4ada-a8eb-f500ebf272a5"
+    },
+    {
+      "claim_id": "508729bf-0f40-4996-9941-8b45c82bb5ba",
+      "result_id": "44a7f8e9-900a-467a-bd06-79b82a78463d"
+    },
+    {
+      "claim_id": "9ede7581-b4d7-4ac2-984a-3de1818545f3",
+      "result_id": "44a7f8e9-900a-467a-bd06-79b82a78463d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "40b1e897-b832-4771-97f3-537d2022acd0",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "38403bcf-a8d1-42e4-bdcd-3e4122017ee0",
+      "peer_result_id": "74b4cbca-a20f-46c9-9e37-5a9994105a80",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate in vivo CF suppression (C23-C26, C62-C65, C91-C95). OpenEval rates UNCERTAIN due to regional mismatch (lobule IV/V vs flocculus), incomplete penetrance (75%), and limited duration validation (40 min vs hours-long experiments). Peer review also rates UNCERTAIN, acknowledging new in vivo data but noting it 'fails to address overall concerns' about functional effects and long-duration efficacy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "0bd408a4-9b3f-489a-a724-29c4d1017f0f",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "9aaa79a1-b97c-4b72-8988-d9a2c1c1115f",
+      "peer_result_id": "5c5ba7d4-ad07-4e7c-8167-a6bf455bd27a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate CF role in memory retrieval (C37, C71, C101-C102). OpenEval rates SUPPORTED based on within-subject design and consistent null results, noting only that brief testing may miss some aspects. Peer review rates UNCERTAIN due to methodological concerns about CF suppression efficacy and selectivity that apply across all behavioral phases.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "220e0714-2502-45ef-bc9b-34c13047e54a",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "f0012411-4af3-4c8a-bd93-25288601a739",
+      "peer_result_id": "b9972f0c-afac-479c-91c0-5a11280f3800",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate CF necessity for acquisition (C3, C28-C32, C66-C69, C96-C98). OpenEval rates SUPPORTED with strong statistical evidence (p=0.0007) and clear behavioral phenotype, noting limitation to gain-increase learning. Peer review also rates SUPPORTED, with editor stating 'there is evidence to support' this claim and reviewers acknowledging 'impacts on behavior are interesting,' though requesting clearer demonstration of manipulation penetrance and selectivity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "e1453429-9c33-4fb7-abd1-623652524cb9",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd",
+      "peer_result_id": "bc90a4cf-ce0a-47b4-bd46-1c56b38acc4e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address in vitro optogenetic validation (C17-C22, C103-C104). OpenEval rates SUPPORTED based on 100% success rate, appropriate controls, and strong statistics. Peer review also rates SUPPORTED, acknowledging 'climbing fiber activity was altered due to the optogenetic perturbation,' though the in vitro data itself was not directly challenged.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "68c6fe71-1ecf-49c0-9252-4a01e13bd305",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9a3b6139-2672-4999-a64d-69b8ecdc3197",
+      "peer_result_id": "b89c2996-cc86-49e0-b7b5-08ba9110f4f1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate CF role in consolidation (C4, C33-C36, C70, C99-C100). OpenEval rates SUPPORTED based on lack of group differences across two consolidation durations, noting limitation to early windows (up to 6 hr). Peer review rates UNCERTAIN, with editor stating 'support for the latter part of the claim is incomplete' due to methodological concerns about CF suppression efficacy, tissue damage, and the unanswered question of what signal instructs consolidation if not CFs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "d14d9ac5-3a94-4bd0-a9e8-a38dc650fd4b",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "0f72dde9-6819-4403-8db0-bf819410a302",
+      "peer_result_id": "18370cda-7ff4-4ada-a8eb-f500ebf272a5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the overall phase-specific model (C5, C39-C40, C43-C44). OpenEval rates SUPPORTED based on convergent evidence across acquisition, consolidation, and retrieval phases. Peer review rates UNCERTAIN, with editor stating 'there is evidence to support the first part [acquisition] but support for the latter part [consolidation] is incomplete' due to methodological concerns, and one reviewer noting 'substantial new experiments and tighter logic are required.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "b059ae6a-e54d-4633-9de6-0e3aa0e1c745",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "06639a40-78cb-461e-9176-90b35087c0c2",
+      "peer_result_id": "44a7f8e9-900a-467a-bd06-79b82a78463d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims about downstream circuit independence (C38, C72). OpenEval rates UNCERTAIN, noting the conclusion is 'largely inferential' without direct MVN measurements or manipulation. Peer review also rates UNCERTAIN, with one reviewer criticizing the 'narrow CF-or-nothing framing that leaves unanswered the central question of which signal instructs consolidation if CFs do not.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "d726b838-e2c9-4c77-92e3-5e46845f0d48",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "20bb0c96-64ed-43a7-8843-de72b5fe73bd",
+      "peer_result_id": "06822ad6-1ee5-4086-8c5a-9fbb5d1b5512",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address viral targeting specificity (C15-C16). OpenEval includes these claims in a SUPPORTED evaluation of in vitro optogenetic effects. Peer review rates UNCERTAIN, with significant concerns about selectivity: 'viruses chosen are non-specific to the cell targets,' 'unclear if AAVs labeled only the pathway of interest,' and requests for 'high-resolution images demonstrating selectivity and expression.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "2101bd30-de55-469b-8259-b30ac9d45415",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f3cfd942-db08-4409-89ca-f5649c593bdb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates context-dependent CF function model (C45, C73-C74, C80-C81) as UNCERTAIN, noting it is 'largely interpretive' without systematic variation of error magnitude. No corresponding peer review evaluation found for these specific interpretive claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "fafce6ad-28b2-42da-bec6-8e65d354433b",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "19becb6f-1b38-4b11-9413-f4acc7ef334c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates mechanistic interpretation linking optogenetic suppression to CF-LTD and plasticity (C54-C57) as UNCERTAIN, noting it is 'speculative' without direct measurements of calcium transients or LTD. No corresponding peer review evaluation found for these mechanistic claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "90e14894-417c-4a82-b8b0-3228983c534b",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1c84722e-f09c-4e62-9e6e-0fb26c025fc8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates alternative mechanisms from literature (C51-C53, C79) as UNCERTAIN, noting they are not tested in current study. No corresponding peer review evaluation found for these literature-based alternative mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "234a10f7-16bd-4b7b-8118-bbbcebe971e7",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "56e52542-3afe-4441-b8c8-c7a5166b4785",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates SUPPORTED for claims accurately describing scope and limitations of consolidation experiments (C58-C60, C82-C83), noting 'honest assessment' of temporal window. No corresponding peer review evaluation found specifically addressing these limitation acknowledgments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "1b161786-0eb2-4a37-b258-c975edd76211",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "ced2f66e-8752-448e-a2f5-5c5f0abd18a6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates SUPPORTED for background/context claims (C1-C2, C6-C14, C27, C42, C46-C50) as 'well-established knowledge' appropriately cited. No corresponding peer review evaluation found for these foundational context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "9ce53f1b-a9eb-42e7-bd2f-3f3a014725a2",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "5a2a184d-d88b-4b83-bb87-260a58c00271",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates SUPPORTED for methodological details (C84-C90) as 'technically sound' and consistent with prior work. No corresponding peer review evaluation found specifically for these surgical/methodological claims, though peer reviewers raised broader concerns about viral targeting.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    },
+    {
+      "id": "d05b185a-a2fd-46df-893f-699b66014110",
+      "submission_id": "4879fbc1-6295-4b7f-a855-08d06e7b29f5",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "a755dfa8-3222-40d5-99d3-27abdd359b89",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates UNCERTAIN for broader mechanistic models (C75-C77) as 'largely speculative' without direct experimental support. No corresponding peer review evaluation found for these broader theoretical claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:05:40.369250Z"
+    }
+  ]
+}

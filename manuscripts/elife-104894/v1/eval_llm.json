@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C37",
+      "C72",
+      "C73"
+    ],
+    "result": "TGF\u03b22 treatment (1 ng/ml, 5 days) induces selective transcriptional changes in primary TM cells, including upregulation of fibrotic markers (SNAI1, FN1), mechanosensitive channels (TRPV4, PIEZO1), and autoinhibitory TGF\u03b2 signaling components (SMAD7), while downregulating TGFBR2 and MYOC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 provide statistically significant qPCR data (p<0.05) from 3-7 pTM strains showing consistent directional changes. The pattern of upregulation (fibrotic markers and mechanosensors) alongside autoinhibitory feedback (C11-C12, C73) is internally consistent and supported by cited literature (C72). Sample sizes are adequate for gene expression studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C88",
+      "C89"
+    ],
+    "result": "TGF\u03b22 treatment increases membrane-bound TRPV4 protein levels, with evidence suggesting isoform-specific responses and increased trafficking/membrane insertion. This upregulation is independent of TRPV4 activity itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Western blot data (C17) shows increased membrane TRPV4, but is based on only N=2 pooled samples, which is insufficient for robust quantification. The mechanistic interpretation (C89) is speculative. However, C88 appropriately demonstrates that TRPV4 inhibition doesn't affect transcriptional upregulation, supporting independence from channel activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C47",
+      "C74",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Five-day TGF\u03b22 treatment (1 ng/ml) produces a 258% potentiation of TRPV4-mediated calcium responses to GSK101 across 5/5 pTM strains, primarily affecting TRPV4-expressing cells without changing responder fraction or time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Calcium imaging data (C18) shows robust, statistically significant (p=0.0046) potentiation across multiple cell strains. The observation that responder fraction and time course are unchanged (C90-C91) strengthens the interpretation that this reflects enhanced TRPV4 function rather than altered cell populations. The concentration used (C74) is clinically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C93"
+    ],
+    "result": "The potentiating effect of TGF\u03b22 on TRPV4 activity is time-dependent, with 24-hour treatments (1 or 5 ng/ml) showing no significant enhancement of GSK101-evoked calcium responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 show lack of significant potentiation at 24 hours, contrasting with the robust 5-day effect. This temporal dependence (C93) is consistent with transcriptional mechanisms requiring chronic exposure. The comparison strengthens the overall mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "A single 5 ng/ml TGF\u03b22 dose (24 hours) doubles the amplitude of GSK101-evoked TRPV4 current and alters its rectification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Electrophysiology data (Figure 3) demonstrates increased current density in TGF\u03b22-treated cells (n=10) vs. control (n=11). This provides direct functional evidence complementing the calcium imaging data, though the effect size appears smaller than the 5-day treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C54",
+      "C55",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "TRPV4 activation is both sufficient and necessary for TM contractility: GSK101 induces contraction in hydrogels, while HC-06 suppresses TGF\u03b22-induced hypercontractility across 3/3 pTM strains tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contractility assay provides strong evidence with appropriate controls: TGF\u03b22 induces hypercontractility (C21, p<0.0003), HC-06 blocks it (C22, p<0.0001), and GSK101 acutely induces contraction (C23, p<0.01). The bidirectional manipulation (agonist/antagonist) and consistency across strains (C96) strongly support the causal role of TRPV4. The 3D hydrogel model is physiologically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C110"
+    ],
+    "result": "In the LV-TGF\u03b22 mouse model, intravitreal TGF\u03b22 overexpression induces sustained OHT (4-5 weeks), which is reversibly blocked by intracameral HC-06 injection with ~4-day duration of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo IOP data show robust, statistically significant OHT induction (C24-C25, p<0.002) that persists for weeks (C97). HC-06 effectively lowers IOP (C26) with transient effect (C98), while PBS control shows minimal effect (C99-C100). The high efficiency of OHT induction (C110, ~100%) and appropriate controls strengthen the result. Sample size (N=5) is adequate for IOP studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C33",
+      "C50",
+      "C51",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Genetic deletion of Trpv4 significantly attenuates TGF\u03b22-induced OHT (~50% reduction) without affecting baseline IOP, demonstrating that TRPV4 is necessary for TGF\u03b22-induced but not normotensive IOP regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Trpv4-/- mice show normal baseline IOP (C27, C103) but significantly reduced response to LV-TGF\u03b22 (C28, p=0.0009). The comparison with pharmacological inhibition (C50-C51) is informative, showing genetic deletion produces stable but partial (~50%) reduction vs. complete but transient pharmacological blockade. This suggests compensatory mechanisms in knockout mice. The control experiments (C104) appropriately show no genotype effect in LV-Ctrl eyes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C56",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "TGF\u03b22-induced and circadian (nocturnal) OHT are non-additive, and both require TRPV4 activity. HC-06 blocks TGF\u03b22-induced daytime OHT and lowers nocturnal IOP in both control and TGF\u03b22-treated eyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The circadian IOP measurements demonstrate that TGF\u03b22-induced OHT during the day (C29, p<0.0001) disappears at night (C30), indicating non-additivity (C35). HC-06 blocks daytime TGF\u03b22 OHT (C31, p<0.001) and reduces nocturnal IOP in both groups (C32, p<0.01). This convergence on TRPV4 as a common effector (C34, C56) is well-supported. PBS control (C109) appropriately shows no effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "TRPV4 inhibition does not disrupt mechanisms maintaining daytime normotensive IOP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is demonstrated by the observation that HC-06 treatment of LV-Ctrl eyes during the day does not significantly lower IOP below normal levels (Figures 5-6). This is an important safety consideration for therapeutic applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C45",
+      "C46",
+      "C48",
+      "C65",
+      "C80",
+      "C81"
+    ],
+    "result": "TGF\u03b22 and TRPV4 engage in bidirectional mechanistic interplay: TGF\u03b22 amplifies TRPV4 expression and activity, while TRPV4 is required for TGF\u03b22-induced contractility and OHT, positioning TRPV4 as a molecular linchpin linking mechanical stress to pathological outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C39-C40) is well-supported by the combined evidence from gene expression (C45), contractility (C46), and IOP studies (C48). The proposed model (C65, C80-C81) of convergence at TRPV4-Rho signaling is consistent with all experimental observations and cited literature. The bidirectional nature of the interaction is a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C83"
+    ],
+    "result": "TRPV4 inhibition represents a promising therapeutic strategy for glaucoma, as Trpv4-/- mice show no visual phenotypes and TRPV4 antagonists can lower IOP without compromising homeostatic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the IOP-lowering effects are well-demonstrated, the therapeutic promise (C41, C83) is speculative. The claim relies heavily on cited literature about Trpv4-/- phenotypes rather than data presented in this study. Long-term safety, efficacy in chronic treatment, and effects on retinal ganglion cell survival are not addressed. This represents future work rather than a supported conclusion from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background claims establishing the clinical relevance of POAG, the roles of IOP and TGF\u03b22 as risk factors, and historical understanding of TGF\u03b22-induced facility suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C8, C42-C44) are appropriately supported by citations to established literature. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C70",
+      "C71",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Literature-based claims about TRPV4 properties, expression, activation mechanisms, and roles in other tissues/diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C52-C53, C57-C64, C69-C71, C84-C87) appropriately cite prior literature to establish TRPV4's known properties and provide context for the current findings. They are not novel results but necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C77",
+      "C78",
+      "C82"
+    ],
+    "result": "Speculative mechanistic interpretations about TRPV4 thermosensitivity, trafficking mechanisms, contributions from other channels, and clinical relevance based on mouse-human conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C66-C68, C75, C77-C78, C82) are explicitly speculative or inferential, extending beyond the direct experimental evidence. While they represent reasonable hypotheses based on the data and literature, they require additional experimental validation. C67-C68 appropriately acknowledge uncertainty with \"may reflect\" and \"could reflect.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "TRPV4 inhibitors, ROCK inhibitors, and dominant negative RhoA constructs lower IOP across diverse OHT models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by appropriate citations to prior literature (Redmon et al., 2024; Rao et al., 2017; Borr\u00e1s et al., 2015) and provides context for the convergence on TRPV4-Rho signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "No adverse health effects, inflammation, or behavioral changes were observed following lentiviral or intracameral injections in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These safety observations (C111-C112) are important for validating the experimental models but represent negative findings. They are appropriately reported but not major results.",
+    "result_type": "MINOR"
+  }
+]

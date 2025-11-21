@@ -1,0 +1,1978 @@
+{
+  "submission": {
+    "id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:09:22.621657Z",
+    "updated_at": "2025-11-21T16:09:22.621657Z"
+  },
+  "content": [
+    {
+      "id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "content_type": "manuscript",
+      "content_text": "# Optogenetic silencing of hippocampal inputs to the retrosplenial cortex causes a prolonged disruption of spatial working memory\n\n## Authors\n\n- B\u00e1rbara Pinto-Correia<sup>1</sup>\n- Patr\u00edcia Caldeira-Bernardo<sup>1</sup>\n- Miguel Remondes<sup>1</sup> ([ORCID: 0000-0001-9321-3985](https://orcid.org/0000-0001-9321-3985)) \u2020\n\n### Affiliations\n\n1. Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa Lisbon Portugal ([ROR:01c27hj86](https://ror.org/01c27hj86))\n2. Faculdade de Medicina Veterin\u00e1ria, Universidade Lus\u00f3fona Lisbon Portugal ([ROR:05xxfer42](https://ror.org/05xxfer42))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWorking memory allows us to keep information in memory for the time needed to perform a given task. Such fundamental cognitive ability relies on a neural circuit, including the retrosplenial cortex (RSC), connected to several cortical areas, functionally and anatomically, namely primary visual areas, and higher cognitive areas such as the cingulate, midcingulate, and subicular cortices. RSC bears intimate anatomical and functional connections with the hippocampus and has been implicated in integrating and translating spatial-temporal contextual information between ego- and allocentric reference frames to compute predictions about goals in goal-directed behaviors. The relative contribution of the hippocampus and retrosplenial cortex in working memory-guided behaviors remains unclear due to the lack of studies reversibly interfering with synapses connecting the two regions during such behaviors. We here used eArch3.0, a hyperpolarizing proton pump, to silence hippocampal axon terminals in RSC while animals perform a standard delayed non-match to place task. We found that such manipulation impairs memory retrieval, significantly decreasing performance and hastening decision-making. Furthermore, we found that such impairment outlasts light activation of the opsin, its effects being noticed up to three subsequent trials.\n\n## Introduction\n\nThe ability to guide behavior according to knowledge stored previously in memory lies at the heart of adaptive behavior and is essential for survival. A crucial aspect of adaptive behavior is the capacity to make decisions based on the spatial structure of the surrounding context, something globally known as spatial cognition or spatial goal-directed behavior. Such cognitive function starts with the selection of relevant information from a flood of sensory stimuli and ends with its storage in cortico-hippocampal circuits (Morris et al., 1982; Nadel, 1990; Scoville and Milner, 1957) ultimately as a cognitive map manifested in a vast repertoire of neural activity, selective to multiple ego- (self-referenced) and allocentric (world-referenced) spatial variables, the seminal example of which is the existence of hippocampal place-selective neurons (O\u2019Keefe and Dostrovsky, 1971). To allow for the planning of the movements necessary to reach an intended goal, all the while ensuring that body actions are consistent with the context acted upon, a mechanism must exist that reinstates (retrieves) allocentric contextual representations, stored in the hippocampus (HIPP) as spatial memories, aligned to the animal\u2019s viewpoint, e.g., from an egocentric perspective (Bicanski and Burgess, 2018; Carstensen et al., 2021; Gomez et al., 2009; Gomez et al., 2013; Michelmann et al., 2020). In such a circuit, the retrosplenial cortex (RSC) emerges as a cornerstone, encoding contextual variables in both ego- and allocentric reference frames, representing future spatial goals, and effectively anchoring spatial memory-dependent decisions (Alexander et al., 2020; Alexander and Nitz, 2015; Carstensen et al., 2021; Carstensen et al., 2021; Gomez et al., 2009; Gomez et al., 2013; Michelmann et al., 2020; Nitzan et al., 2020).\n\nDespite this remarkable work, we are yet to determine which neural pathways convey allocentric-referenced information stored in the HIPP, through hypothetical recall and egocentric referencing in RSC, onto the anterior midline cingulate (CG) and medial prefrontal cortical areas, responsible for planning motor behavior according to previous events, present needs, and motivation (Akam et al., 2021; Brown and Braver, 2005; Cowen et al., 2012; Jin et al., 2009; Miller et al., 2019; Sober and Sabes, 2003). We have recently found that HIPP axons target the divisions of the medial mesocortex: CG, midcingulate, and RSC, according to a gradient, in which RSC receives a combination of anatomically and functionally distinct inhibitory and excitatory functional synapses (Ferreira-Fernandes et al., 2019), whose manipulation results in specific behavioral deficits (Yamawaki et al., 2019). We hypothesize that these direct connections between hippocampal CA1 and RSC convey recently encoded and recalled memories to the relevant medial mesocortical regions.\n\nTo test this hypothesis, we used the delayed non-match to place (DNMP) task, a spatial working memory (WM) task that requires animals to retrieve the memory of a previous decision, and of the time it occurred, to disambiguate it from similar, previously rewarded, decisions (Aggleton et al., 1986; Maguire, 2001; Shaw and Aggleton, 1995; Shaw et al., 2013; Wilson et al., 2013). We then used optogenetics to reversibly interrupt synaptic transmission between HIPP and RSC neurons during the retrieval phase of the DNMP task. Optogenetics uses light-activated membrane-bound molecules with the capacity to sustain and reversibly change neuronal membrane potential through various molecular mechanisms, namely opening ion channels or pumping ions across the membrane (Fenno et al., 2011), to excite or silence groups of neurons with behavior-specific temporal accuracy. As far as it is known, optogenetics is the only molecular technique allowing for reversible perturbation of neural activity within the time constants of the cognitive functions at play during WM (Yamamoto et al., 2014).\n\nTo test the hypothesis that HIPP inputs onto RSC carry contextual information necessary for DNMP performance and are thus necessary for spatial WM, we used the optogenetic neural silencer eArch3.0 expressed in hippocampal neurons via local injection of an anterograde, static, viral vector (reviewed in Saleeba et al., 2019), AAV5-hSyn1-eArch3.0, under a pan-neuronal promoter, or its \u2018empty\u2019 counterpart with only YFP, in adult male Long-Evans rats previously trained in DNMP to 75% performance. We then ran multiple 28-trial DNMP sessions, in which we randomly interleaved two types of trials: no-illumination (NI) or illumination during the test, or retrieval, phase (TI), with green (525 nm) light delivered via two diagonal, intra-cerebral lambda fiber-optic implants, longitudinally staggered such as to deliver light to the full extent of RSC. In each animal, we measured three performance variables: individual trial (error/correct) and global performance (% correct trials), response latency to the choice point, and time spent at the choice point. We then used multivariable generalized linear mixed model (GLMM) using the above categorical and continuous variables to investigate the impact of silencing hippocampal synapses onto RSC neurons in spatial WM-dependent behavior.\n\nIf indeed the HIPP input onto RSC neurons anchors the decisions during \u2018test\u2019 runs to the memory of the \u2018sample\u2019 runs, we predict that by silencing HIPP inputs in RSC, we will prevent the transfer of information previously encoded in HIPP, and thus hinder the mechanism allowing RSC to inform the correct trajectory during the \u2018test\u2019 run, resulting in lower performance, specifically in eArch+ animals.\n\n## Results\n\n### Injection of AAV-5-hSyn1-eArch3.0 results in significant expression of a fluorescent tag in RSC hippocampal terminals\n\nBesides abundant expression of both eArch and CTRL transgenes in hippocampal CA1, we found highly significant expression in the RSC layers as previously reported (Figure 1A\u2014figure supplement 1; Ferreira-Fernandes et al., 2019). We could observe that HIPP axon terminals are distributed with high density in the superficial RSC layers II\u2013III, as well as in deeper layer V, and sparsely on all other layers, forming beads-on-a-string structures, typical of axon terminals establishing synapses. On these RSC regions, we surgically implanted two fiber-optic stubs diagonally to target both hemispheres, at a relative reverse angle in distinct AP coordinates (Figure 1B, Methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/96515/elife-96515-fig1-v1.jpg)\n\n**Figure 1.:** (A) Anatomical distribution of eYFP fluorescence expression in distinct AP coordinates of the retrosplenial cortex (RSC) after injection in the hippocampus (HIPP). (B) Injection spots in the HIPP. (C) Fiber-optic placement with two fiber-optic stubs at AP-reversed 30\u00b0 angles reaching the two hemispheres at two distinct AP levels of RSC (arrows point to fiber-optic tracks, please see Figure 1\u2014figure supplement 1 for low-magnification images of all animals and examples of high-magnification images).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96515/elife-96515-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Low-magnification anatomical distribution of eYFP fluorescence expression in the retrosplenial cortex (RSC) after injection in the hippocampus (HIPP) and position of the fiber-optic tracks (arrows), with high-magnification examples in the lower two panels, on all eArch (A) and CTRL (B) animals. (C) Example of a fiber-optic stub \u2018full track\u2019 placed at a 30\u00b0 angle reaching the two hemispheres of RSC.\n\n### DNMP sessions in which no light was delivered resulted in no differences in behavioral performance between eArch+ and CTRL animals\n\nFreely moving behavior is conditioned by the relations of body shape and movement, with surrounding context structure and dynamics. As such, to make sure all behavioral alterations observed during light delivery and opsin activation are due solely to this mechanism, it is imperative that pre-illumination DNMP testing is run under the same conditions as those used while we silence RSC-HIPP axon terminals, except for light delivery. The DNMP task includes a sample (encoding) phase, a delay (memory retention) period, and a choice (retrieval) phase, on a T-shaped maze apparatus. During the sample run, animals are rewarded for running the only available arm, with the alternative arm being blocked. This is followed by the delay period, and the \u2018test\u2019 (retrieval) run, during which both arms are made available, and animals are rewarded for choosing the arm previously blocked (i.e. \u2018not matching\u2019 the arm sampled previously).\n\nWe thus ran the DNMP protocol in two groups of animals expressing either AAV-5-hSyn1-eArch3.0 (eArch+) or an empty construct (CTRL) AAV-5-hSyn1-YFP, with fiber-optic stubs surgically implanted, and patch cords attached to the fiber-optic stubs, no light being delivered (Figure 2A and B). Under such conditions, we found no differences between eArch+ and CTRL animals in any of the three sessions run (Figure 2C, Supplementary file 1A, GLMM, p=0.212, Bonferroni post hoc test).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/96515/elife-96515-fig2-v1.jpg)\n\n**Figure 2.:** (A) Delayed non-match to place (DNMP) protocol. Rats explore the unblocked arm in a sample run, then wait in the starting area for a 15 s delay. Once back on the track, with both arms unblocked, rats receive a reward if they choose the arm opposite the one explored in the sample run. (B) Training schedule, after reaching 75% performance, 3 baseline (no light delivered) sessions are followed by 10 sessions with illuminated trials interleaved with non-illuminated ones. (C) No differences in performance were observed in the baseline sessions (generalized linear mixed model [GLMM], p=0.212, Bonferroni post hoc test).\n\n### eArch activation via green light illumination resulted in significantly lower global performance in eArch+, but not CTRL, animals\n\nAfter the \u2018baseline\u2019 phase above, we started the \u2018illumination\u2019 phase protocol, in which \u2018test-illuminated\u2019 trials (TI), with light delivered through the fiber-optic implants in the test epoch of the DNMP protocol, were randomly interleaved with \u2018non-illuminated\u2019 trials (NI), where no light was delivered in the same ~25 min session (Figure 2B). In these sessions, we observed a significant difference between eArch+ and CTRL animals, with an overall lower performance in eArch+ animals (Figure 3A, Supplementary file 1B, GLMM, p=0.006, Bonferroni post hoc test). In addition, we found that the ratio of correct trials in the TI and NI trial groups (Figure 3B, Supplementary file 1A and B) was both significantly different from baseline levels (p<0.001), and from their CTRL counterparts (TI, p=0.02, NI, p=0.008), whose performance did not differ from baseline (p=0.252, p=0.184). The fact that more errors were committed in both TI and NI trials of an illuminated session, but only in eArch+ animals, being absent from CTRL animals, implies two things: first, the effect we observe is not the result of light alone acting upon neurons, an effect described earlier in striatal medium spiny (Owen et al., 2019) and CG neurons (Stujenske et al., 2015); second, the effects of eArch light activation of hippocampal inputs onto RSC neurons outlasted illumination, affecting subsequent NI trials. We were surprised by this result, as it indicates that the effects of eArch activation on either, or both, the neurophysiology of HIPP-RSC synapses and the ensuing circuit mechanisms involved in DNMP last longer than would be expected. To directly address this possibility, we analyzed the probability of animals committing errors after illuminated trials. We observed that, overall, illuminated trials were followed by a decreased probability of correct trials on eArch+, but not CTRL, animals (Figure 3C, Supplementary file 1D, p=0.015). This is consistent with the effects of eArch activation outlasting illumination by enough time such as to affect subsequent trials.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/96515/elife-96515-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illumination of RSC during delayed non-match to place (DNMP) leads to a significantly lower performance in eArch+, compared to empty-vector CTRL animals (CTRL: 0.81\u00b10.03, ARCH: 0.73\u00b10.08, generalized linear mixed model [GLMM], p=0.006, Bonferroni post hoc test). (B) In eArchT+ animals, we found no differences between performance in TI and NI trials taken as groups, both significantly lower than both baseline (p<0.001), and the corresponding trial groups in CTRL animals (TI, p=0.02, NI, p=0.008). In CTRL animals, no differences were found among the three groups (p=0.252 and 0.184). (C) Illumination on any given trial resulted in lower performance in the subsequent trial in eArch+, but not CTRL, animals (p=0.015), regardless of whether the illuminated trial is a correct or an incorrect trial. All summary data depicted is mean \u00b1 SD.\n\nThe effect of light delivery in subsequent non-illuminated trials in sessions where the two types of trials are interleaved within 1\u20132 min, as in the present study, has at least one precedent study in Robinson et al., 2017. In that study, trials in which a silencer opsin is activated by light are characterized by increased error probability and abnormal neural activity with decreased temporal selectivity and coding. Thus, both neural activity and behavior of interleaved non-illuminated trials are affected by the activation of the opsin in illuminated trials, leading authors to hypothesize that such persistent disruption of temporal coding in light-off trials is caused by synaptic plasticity events largely specific to the neural activity taking place in the (previous) epoch where light is delivered.\n\nOur findings also imply that the notion of millisecond time-resolved neuron silencing using eArch is not applicable to synaptic transmission and, by consequence, to the ensuing behavioral effects we now investigate.\n\n### Contrary to CTRL animals, eArch+ animals do not correct course following an incorrect decision in illuminated sessions\n\nA fundamental principle of learning theory, and a common empirical finding in reward-based learning experiments, is that following an error in which reward is withheld, animals will correct their course of action. Conversely, following a correct decision, which is rewarded, animals maintain their course of action. This behavior is presumably informed by the association of the previous action with resulting outcome, which they store in memory for the next trial (Mizumori and Jo, 2013). Under this assumption, we predict that in eArch+, but not CTRL animals, illuminated trials will be followed by persistently defective HIPP-RSC synaptic function, presumably preventing subsequent decisions from anchoring themselves to the previous action-outcome association, even in the absence of light delivery, resulting in a higher probability of errors. To test such prediction, we analyzed the probability of an error trial following error, in illuminated sessions, and found that it is significantly higher in eArch+ animals than in CTRL animals, regardless of whether the present trial is itself illuminated (Figure 4A, Supplementary file 1E, p<0.001, Bonferroni post hoc test). Importantly, this difference is absent in baseline sessions, in which no illumination occurs (Figure 4B, Supplementary file 1F, p=0.172, Bonferroni post hoc test). This is consistent with our prediction and suggests that silencing HIPP terminals in RSC interrupts the flow of information from the previous trial, preventing subsequent error correction for which it is necessary.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/96515/elife-96515-fig4-v1.jpg)\n\n**Figure 4.:** (A) eArch+ animals exhibit persistent errors (p<0.001, Bonferroni post hoc test). (B) Persistent errors are absent in baseline (no light delivered) sessions (p=0.172, Bonferroni post hoc test). All summary data depicted is mean \u00b1 SD.\n\n### How long does the effect of eArch silencing last?\n\nThe silencing effects of light-mediated eArch activation on hippocampal axon terminals onto RSC neurons outlasted illumination, affecting subsequent trials and lowering spatial WM performance. We thus sought to determine how long would such an effect last. According to existing literature, once expressed in CA3-CA1 synaptic terminals, illumination of Arch with green-yellow light results in its activation into a powerful outward-moving proton pump, effectively hyperpolarizing neurons, independent of local membrane voltage (Krol et al., 2019; Miao et al., 2015). Besides this effect, eArch was recently found to reduce the amplitude and slope of fEPSP from right after the onset to over 2 min after illumination offset, via a pH increase that is independent of hyperpolarization, and to cause a sustained decrease in synaptic vesicle release (El-Gaby et al., 2016). Such sustained alkalinization, specific to synaptic boutons, lasts for several minutes post-activation of eArch and has been replicated on striatal-cortical synapses as well (Mahn et al., 2016). This previous data reporting the effects of eArch activation led us to further investigate, in our experimental conditions, how far in time would eArch behavioral effects last. We thus asked the following question: if one trial is illuminated, how many subsequent trials will be affected? To answer this question, we computed the probability of a correct trial on trial t+1, t+2, t+3, and t+4, following every illuminated trial. Our previous data shows that, overall, non-illuminated trials suffer the effects of illumination, resulting in more errors. However, by selecting the second previous and third previous trial as a trigger for our analysis, we will be biasing our analysis to include a few sequences of one or two interleaved non-illuminated trials, thus possibly attenuating the silencing effect. As depicted in Figure 5 (see also Supplementary file 1G), the probability of a trial being correct is lower in eArch+, compared to CTRL animals, whenever TI happens in the previous (Figure 5A T-1, p=0.01, Bonferroni post hoc test), the second previous (T-2, p=0.033), and the third previous trial (T-3, p=0.036), such difference becoming nonsignificant on condition T-4, when the fourth previous trial was illuminated (T-4, p=0.078). Considering that the inter-trial interval (ITI) is circa 20 s, we can reasonably estimate that some non-illuminated trials occurred between this and the n-previous illuminated one, and that, despite this, the effects of eArch activation are still present, hence after ~3 min. To try and analyze these effects in more detail, without decreasing the sample size to non-interpretable numbers, we quantified performance specifically following sequences of two consecutively non-illuminated trials. We found that after such sequences, there is still a significant impairment in eArch+ animals, in agreement with the previous analysis and with the notion that the effects of eArch silencing outlast its activation by light (Figure 5B, p=0.023, Mann-Whitney U).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/96515/elife-96515-fig5-v1.jpg)\n\n**Figure 5.:** (A) eArch+ animals exhibit decreased performance once silencing occurred at T-1 (p=0.01, Bonferroni post hoc test), T-2 (p=0.033), T-3 (p=0.036), not T-4 (p=0.078). (B) Two consecutively non-illuminated trials after illumination still result in decreased performance on the subsequent trial (p=0.023, Mann-Whitney U). All summary data depicted is mean \u00b1 SD.\n\n### Silencing HIPP terminals in RSC hastens decision processing at the choice point\n\nIn previous work, we have examined the role CG neurons might play during spatial WM, by silencing CG and measuring performance in this same DNMP task, and found that silencing CG interferes with performance, with animals spending less time in the decision processes in DNMP trials (Cruz et al., 2023). We interpreted this decreased latency as hastiness, with animals taking erroneous decisions based on incomplete cognitive processing. We asked the exact same question in the present work, and quantified latency to the choice point, and latency at the choice point, overall, in error vs correct trials (Figure 6). We found that, overall, CTRL animals spend more time at the choice point than eArch+ animals (Figure 6A, Supplementary file 1H, p=0.02, fixed effect omnibus test). Furthermore, this is true for correct but not error trials both under NI and TI (Figure 6B, respectively, p=0.008 and p=0.045, simple effects parameter estimates), suggesting that in CTRL animals, correct decisions involve more time taken at the choice point, contrary to error trials in which no such difference is found.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/96515/elife-96515-fig6-v1.jpg)\n\n**Figure 6.:** (A) CTRL animals spend more time at the choice point than eArch+ animals (p=0.02, fixed effect omnibus test). (B) This is true specifically for correct trials in both NI and TI (respectively, p=0.008 and p=0.045, simple effects parameter estimates). All summary data depicted is mean \u00b1 SD.\n\n## Discussion\n\nWe expressed eArch3.0 in hippocampal neurons and delivered green light into RSC, a cortical region thought to be involved in the encoding of contextual information relevant to represent future goals and actions, to silence HIPP terminals therein while rats ran a well-known spatial WM task. We found that such manipulation significantly decreased spatial WM performance. Interestingly, we found that the effect of hippocampal terminal silencing in RSC during test trials affects interleaved trials during which no light is delivered, thus spreading beyond illumination. We explored this effect further and found that eArch activation lowers performance down to the subsequent three non-illuminated trials, but also that it decreases error-corrective behavior, in which animals use action-outcome information after an error trial (i.e. absence of reward), to correct course in the subsequent trial. Such a prolonged effect finds a precedent in a previous study (Robinson et al., 2017) in which silencing entorhinal-HIPP circuits during WM trials results in lower performance in subsequent non-illuminated trials, suggesting that a possible short- to mid-term neural plasticity event disrupts a key process at play during retrieval. Such an event might be related to recent findings showing that eArch activation in CA3-CA1 synaptic responses in vitro hyperpolarizes neurons independent of local membrane voltage (Krol et al., 2019; Miao et al., 2015), reducing the amplitude and slope of recorded fEPSP for over 2 min after illumination offset. This effect is achieved by a pH increase that causes a sustained decrease in synaptic efficacy, with lower vesicle release (El-Gaby et al., 2016) at synaptic boutons, replicated on another study using striatal-cortical synapses (Mahn et al., 2016). We believe such might be the mechanism behind the above-mentioned synaptic plasticity event. These findings imply that the temporal resolution of optogenetic neuron silencing, with neurons effectively unable to generate action potentials, cannot be generalized to the distinct realm of synaptic transmission. Rather, the effects of optogenetics in synaptic physiology might permeate into the synaptic plasticity mechanisms underlying memory acquisition and retrieval.\n\nFinally, as we have seen before with optogenetic silencing of CG neurons during DNMP (Cruz et al., 2023), we found that eArch+ animals spend less time at the choice point compared to CTRL. This behavior is in line with hastier, more erroneous, decisions. In CTRL animals specifically, correct trials are characterized by an increased delay at the choice point, as if the correct decision process took place here. This is consistent with previous findings placing the behavioral decision at an equivalent stage in a continuous alternation task, sensitive to RSC permanent lesions, where goal locations are progressively encoded by RSC.\n\nIn sum, by reversibly silencing the HIPP synaptic inputs to RSC, we have shown that silencing this input affects spatial WM, possibly via changes in synaptic mechanisms conveying memorized contextual and episodic information about past decisions and action-outcome associations onto medial mesocortical executive decision centers.\n\n## Methods\n\n### Rats\n\nWe used 16 (8 eArch and 8 CTRL) male Long-Evans rats aged 4\u20136 months and weighing 430\u2013600 g (Charles River Laboratories), housed individually and kept under a 12 hr light/dark cycle, gradually deprived to 80\u201385% of their free-feeding body weight. All procedures were performed in accordance with EU guidelines, approved by the Portuguese National Authority for Animal Health (license number 017548-2021), as well as by the animal well-being office at Instituto de Medicina Molecular Joa\u0303o Lobo Antunes (license number AWB_2020_08_MR_NeuralBases).\n\n### Behavioral apparatus and equipment\n\nExperiments were performed on a black acrylic T-maze comprising a central 170 cm long arm, a 25\u00d730 cm2 start platform, and a horizontal arm (88 cm long) extending equally on both sides with two reward ports at their ends (2 cm diameter) where chocolate milk reward was delivered. A black plastic resting box (57\u00d739\u00d742 cm3) was located near the start region to place the rats during the delay and ITI periods. A cable tray above the maze supported the video recording and optogenetic stimulation systems. Both were linked to a computer situated in an adjacent room outside the behavior room. The Bonsai software (Lopes et al., 2015) was used to process and control video recording, position tracking, reward delivery, and optogenetic stimulation onset.\n\nTo record the behavioral sessions, a Flea 3 PointGrey camera was used, capturing at a rate of 30 fps. The optogenetic stimulation system used was the PlexBright system (Plexon, Dallas, TX, USA), comprising several components. The system consisted of an LD-1 Single Channel LED Driver set at 240 mA, connected to a Dual LED Commutator placed above the maze. This commutator was linked to two green 525 nm LED modules, each attached to a 2-m-long 0.66 NA patch cable with an FC ferrule tip and stainless-steel cladding. This patch tip was connected to an implanted lambda fiber-optic stub (200/230 \u03bcm, 0.66 NA) with a 2 mm active length and 5 mm implant length (Optogenix) via a ceramic sleeve. Additionally, a red 5 mm LED was used to track the rats\u2019 xy position coordinates. This LED was connected to the tip of the patch cable, close to the fiber-optic stub implants.\n\n### Surgical procedure: viral injections and fiber-optic stub implants\n\nAnimals were bilaterally injected with the viral vector AAV5.hSyn-eArch3.0-eYFP and the respective control AAV5.hSyn-eYFP (University of North Carolina at Chapel Hill Vector Core). Viral titers were 4.4\u00d71012 vg/ml and 3.3\u00d71012 vg/ml, respectively. Before surgery, animals were placed in an induction chamber saturated with 5% isoflurane until absence of the righting reflex. Once the animals were deeply anesthetized, they were weighed and transferred to a heating pad. An intraperitoneal injection of a ketamine (37.5 mg/kg) and medetomidine (0.5 mg/kg) cocktail (\u00bd dose) was administered, as well as a subcutaneous injection of carprofen (5 mg/kg, \u00bd dose), and Ringer\u2019s lactate every hour to maintain hydration levels. The heads were shaved, lidocaine applied to the ears, and eyes covered with a protection gel (Lubrithal) to prevent drying of the cornea. The animals were installed in the stereotaxic frame secured by ear bars. Anesthesia was maintained with 1\u20133% isoflurane in oxygen until the end of the procedure. Once animals were placed on the frame, the surgical site was scrubbed with 10% povidone-iodine alternated with 70% ethanol three times before an incision was made to expose the skull. Bregma and lambda were carefully identified and marked on the skull surface. These two landmarks were used to level the skull dorsoventrally. Once the skull was leveled, the craniotomy coordinates were marked on the bone. Before drilling, the bone surface was treated with Baytril to minimize infection.\n\nA high-power microdrill tool was used to drill the location of four anchoring screws on the lateral edges of the parietal bones and to perform three craniotomies: two single-hole craniotomies (\u22125, \u00b14), one on each hemisphere, for the microinjection spots; and one craniotomy for the fiber-optic stubs covering both hemispheres. The latter was drilled in an oval shape covering the fiber-optic stub implantation coordinates (\u22123, +1), (\u22125, \u20131). Loose bone pieces were carefully removed with tweezers. To prevent the brain from swelling while the next steps were performed, the craniotomies were covered with hemostatic sponge previously soaked in saline solution.\n\nThe viral construct was injected using a Narishige manual microinjection control system operating a glass micropipette plunger, and both held on the stereotaxic frame. The micropipette was filled with mineral oil and placed in the microinjector, after which the viral suspension was aspirated (0.8 \u03bcl). Using bregma as a reference, the pipette was carefully positioned over the microinjection coordinates and slowly lowered until reaching the targets: \u22125, \u00b14, \u20132.6 and \u22125, \u00b14, \u20132.8, where 0.4 \u03bcl of viral suspension was injected after a 5 min resting period, at a rate of 100 nl/min. Once each injection was done, the micropipette was left in place for 10 min before being slowly retracted. The craniotomies were then covered with hemostatic sponge previously soaked in saline solution and left in place to serve as a barrier between the brain and the dental acrylic (Kerr TAB 2000 fast setting) applied afterward.\n\nIn the fiber-optic stub craniotomy, the dura was removed to expose the brain surface over each implant coordinate (\u22123, +1)(\u22125, \u20131). The fiber-optic stubs were secured to the stereotaxic frame, positioned in a 30\u00b0 angle, and lowered across the two hemispheres to their final target position (\u22123, +1, \u20132.86)(\u22125, \u20131, \u20132,86). Following placement of the first fiber-optic stub, it was secured using dental acrylic cement (Kerr TAB 2000 fast setting) connecting it to the anchoring screws, while the opposite hemisphere was protected with hemostatic sponge. The same procedure was followed for the second fiber-optic stub.\n\nOnce the dental acrylic was cured, the skin was sutured using absorbable sutures, and 10% povidone-iodine solution was applied around the wound. Carprofen (5 mg/kg, \u00bd dose) was administered subcutaneously for analgesia. Animals were then placed in a heated cage during the first 24 hr post-surgery for recovery. During this period, ad libitum food, nutritional gel, and water were provided. For the first 7 days, buprenorphine (0.3 mg/kg), a postoperative analgesic, was administered dissolved in chocolate milk.\n\n### Delayed non-matching to place task and protocol\n\nDuring the week before surgery, rats underwent daily handling and were administered chocolate milk via a 1 ml syringe for habituation. A week post-surgery, the process was repeated, and rats were habituated to the maze. To facilitate this habituation, chocolate milk drops were scattered across the maze and in the reward ports. Once the rats were drinking chocolate milk from the reward ports, they were habituated to do the same with the patch cords attached. Following habituation, the DNMP training sessions started.\n\nEach session consisted of 28 trials, and each trial comprises three epochs: (1) the sample run, (2) the delay, (3) and the test run. (1) In the sample run, one arm was blocked, thereby the rat was forced to visit the only available arm, where a reward awaited; (2) when the rat consumed the reward, it was picked up and placed in the resting box for 15 s. During this delay, the arms and the stem near the choice point were cleaned with 70% ethanol; (3) in the test run, the block from epoch 1 was removed, rats were free to choose which arm to visit (left or right), and were rewarded for choosing the arm opposite to the sample arm (i.e. non-matching the sample). After the test run, rats were returned to the box for a 20 s ITI and a new trial started.\n\nThe sample run arms were balanced (50% left and 50% right) and pseudo-randomized to avoid more than three consecutive runs to the same arm. Rats were scored based on the number of correct and incorrect choices in the test run. Throughout the sessions, the position of the experimenter in the room remained constant. Rats were trained until reaching a performance of at least 75% of correct choices in three consecutive sessions, after which we introduced optogenetic inhibition.\n\n### Optogenetic inhibition protocol\n\nThe protocol consisted of 10 consecutive sessions of 28 trials, of which 14 were illuminated in the test epoch (TI) and 14 were not illuminated (NI). This interleaved approach was chosen to prevent compensatory mechanisms. The illuminated trials had the arms pseudo-randomized, ensuring a balanced distribution of left and right sample arms (50% each) and restricted to allow a maximum of three consecutive trials. The onset of illumination was triggered to the position of the animal at 120 cm into the central arm and ended when the rat reached the chosen arm, at 190 cm. Based on the average speed of the animal at this point (~50 cm/s), we estimate illumination time to be ~1.4 s. Each rat completed a total of 280 trials, half of which were subjected to optogenetic inhibition. Upon concluding the experiment, the rats were sacrificed, the implant was extracted, and the fiber-optic stubs were connected to the optogenetic system to verify the emission of light through the optic fiber.\n\n### Histology\n\nAt the end of the experiments, animals were sacrificed via an isoflurane overdose followed by an intraperitoneal injection of sodium pentobarbital (800 mg/kg). Rats were then transcardially perfused with 250 ml of PBS followed by 500 ml of 10% formalin solution. The brains were dissected and kept in a Falcon tube containing 10% formalin solution, covered with aluminum foil, and left at room temperature for 24 hr. Afterward, the brains were transferred to a 15% sucrose solution and kept at 4\u00b0C overnight. Once sunk, the brains were embedded in gelatin, frozen in 2-methylbutane liquid nitrogen, and sectioned in 50 \u03bcm coronal slices using a cryostat (model CM3050 S, Leica). The fixed brain slices were degelatinized and incubated in DAPI 1:700 (Sigma) for 20 min. These slices were then mounted, coverslipped in Mowiol, and left to dry for 24 hr. The expression of the eArch3.0 viral construct in the HIPP was confirmed using an AxioZoom V16 fluorescence stereo microscope (Zeiss). The expression of the eArch3.0 viral construct in the RSC was confirmed using an LSM 880 confocal point-scanning microscope with Airyscan (Zeiss). CTRL animals underwent the exact same procedure.\n\n### Data and statistical analyses\n\nDatasets were manually assembled containing specific details of each run. Within this dataset, each session\u2019s runs were detailed with the following specifications: run number, run type (sample or test), illumination condition (TI or NI), and outcome (correct or incorrect trial). Additionally, the rats\u2019 xy positions were tracked via an LED, recorded, and timestamped using Bonsai software (Lopes et al., 2015). Custom Python scripts, all deposited in Dryad under the DOI 10.5061/dryad.fxpnvx11z (Pinto-Correia, 2025), were used to compute individual runs from these data, ensuring the accuracy of individual runs while excluding any with position data interference. Performance was computed for each experimental session, including baseline sessions, consisting of the three sessions before starting optogenetic inhibition. Performance for illuminated and non-illuminated conditions was calculated as the ratio of correct trials over the total number of illuminated or non-illuminated trials, respectively. Probability computations were conducted for trial accuracy given the previous trial\u2019s illumination (trialn-1 to trialn-4) and for error occurrence given the previous error trial as follows:\n\n$$\nP(correcttrial_{n}|trial_{n\u2212x}illuminated)=P(trial_{n}iscorrect\u2229trial_{n\u2212x}isilluminated)/P(illuminatedtrials_{n\u2212x})\n$$\n\n\n\n$$\nP(errortrial_{n}|trial_{n\u22121}error)=P(trial_{n}isanerror\u2229trial_{n\u22121}isanerror)/P(errortrials_{n\u22121})\n$$\n\nThe time spent at the choice point was determined as the difference between the timestamps of choice point entry and exit. An additional 10 cm was added to the region of interest to account for instances when the rat was stationary but engaged in head poking. Time values were log-transformed to achieve a Gaussian distribution. Normalization to the baseline of log-transformed time in the choice point to the baseline was computed as: [log(latency) \u2013 log(baseline mean)]/[log(baseline mean)]. Outliers in time data were identified as values deviating by 2 standard deviations (SD) from the mean and were subsequently removed.\n\nGLMMs were employed to analyze the results. Model selection was based on the Akaike information criterion (AIC), with the chosen model being the one that converged and exhibited the lowest AIC value. The normality of a distribution was assessed using the Shapiro test along with assessment of residuals using quantile-quantile (Q-Q) plots. All the analysis was conducted in Jamovi with the GAMLJ package.\n\nTo assess baseline performance differences between eArch and CTRL groups, we used a GLMM with a binomial distribution and logit link function, with individual subjects (i.e. rats) as the random effects variable. The same GLMM, followed by a Bonferroni post hoc test, was conducted to analyze the ratio of correct trials between groups during the experiment and to assess the trial history effect of illumination. The same tests were used to analyze the trial history effect of errors, using as random effect variables the \u2018session number\u2019 and \u2018run number\u2019. To compare the groups after two consecutive illuminated trials, a Mann-Whitney U test was applied. For analyzing log time in the choice point, a GLMM with a Gaussian distribution and identity link function was applied, considering rat as the random effects variable. To determine significant differences between groups, we used the Wald chi-square test, and for differences between groups and illumination condition, we used simple effects parameter estimates. All code and data are deposited in Dryad under the DOI 10.5061/dryad.fxpnvx11z (Pinto-Correia, 2025).\n\n### Lead contact and materials availability\n\nFurther information and requests for resources and reagents should be directed to and will be fulfilled by Lead Contact, Miguel Remondes, DVM, PhD (mremondes@medicina.ulisboa.pt). This study did not generate new unique reagents. All data and code are deposited on Dryad under 10.5061/dryad.fxpnvx11z.\n",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96515.3.sa0](https://doi.org/10.7554/eLife.96515.3.sa0)\n\nThe authors report that optogenetic inhibition of hippocampal axon terminals in retrosplenial cortex impairs the performance of a delayed non-match to place task. Elucidating the role of hippocampal projections to the retrosplenial cortex in memory and decision-making behaviors is important. However, the strength of evidence for the paper's claims is incomplete.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96515.3.sa1](https://doi.org/10.7554/eLife.96515.3.sa1)\n\nThe authors examine the impact of optogenetic inhibition of hippocampal axon terminals in the retrosplenial cortex (RSP) during the performance of a working memory T-maze task. Performance on a delayed non-match-to-place task was impaired by such inhibition. The authors also report that inhibition is associated with faster decision-making and that the effects of inhibition can be observed over several subsequent trials. The work seems reasonably well done and the role of hippocampal projections to retrosplenial cortex in memory and decision-making is very relevant to multiple fields. However, the work should be expanded in several ways before one can make firm conclusions on the role of this projection in memory and behavior.\n\nComments on revised version:\n\nThe authors have provided their comments on the concerns voiced in my first review. I remain of the opinion that the experiments do not extend beyond determining whether disruption of hippocampal to retrosplenial cortex connections impacts spatial working memory. Given the restricted level of inquiry and the very moderate effect of the manipulation on memory, the work, in my opinion, does not provide significant insight into the processes of spatial working memory nor the function of the hippocampal to retrosplenial cortex connection.\n",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8176f62f-cb6b-4d90-bc36-feec2664e49d",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C1",
+      "claim": "Working memory allows us to keep information in memory for the time needed to perform a given task.",
+      "claim_type": "EXPLICIT",
+      "source": "Working memory allows us to keep information in memory for the time needed to perform a given task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about working memory that draws from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "d4b01c33-3ae7-447c-8fc6-e7827a78fd39",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C2",
+      "claim": "Working memory relies on a neural circuit including the retrosplenial cortex (RSC).",
+      "claim_type": "EXPLICIT",
+      "source": "Such fundamental cognitive ability relies on a neural circuit, including the retrosplenial cortex (RSC), connected to several cortical areas, functionally and anatomically, namely primary visual areas, and higher cognitive areas such as the cingulate, midcingulate, and subicular cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established neuroscientific knowledge about working memory circuits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "3647e362-065f-4342-bbbf-4dc63121a1b6",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C3",
+      "claim": "RSC is connected to primary visual areas and higher cognitive areas such as the cingulate, midcingulate, and subicular cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Such fundamental cognitive ability relies on a neural circuit, including the retrosplenial cortex (RSC), connected to several cortical areas, functionally and anatomically, namely primary visual areas, and higher cognitive areas such as the cingulate, midcingulate, and subicular cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes anatomical and functional connectivity based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "ed56d70b-830e-4d25-93ef-a83c89c17315",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C4",
+      "claim": "RSC has intimate anatomical and functional connections with the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC bears intimate anatomical and functional connections with the hippocampus and has been implicated in integrating and translating spatial-temporal contextual information between ego- and allocentric reference frames to compute predictions about goals in goal-directed behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established neuroscientific knowledge about RSC-hippocampal connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "c49c050a-3bf9-4c31-ad3d-0c07798a20eb",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C5",
+      "claim": "RSC has been implicated in integrating and translating spatial-temporal contextual information between ego- and allocentric reference frames.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC bears intimate anatomical and functional connections with the hippocampus and has been implicated in integrating and translating spatial-temporal contextual information between ego- and allocentric reference frames to compute predictions about goals in goal-directed behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established neuroscientific knowledge about RSC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "b43f81a3-2a5c-4686-848b-c68338d3aa09",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C6",
+      "claim": "Optogenetic silencing of hippocampal axon terminals in RSC impairs memory retrieval in a delayed non-match to place task.",
+      "claim_type": "EXPLICIT",
+      "source": "We here used eArch3.0, a hyperpolarizing proton pump, to silence hippocampal axon terminals in RSC while animals perform a standard delayed non-match to place task. We found that such manipulation impairs memory retrieval, significantly decreasing performance and hastening decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "8340c431-93c1-4c17-85bf-1b9e653782f6",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C7",
+      "claim": "Optogenetic silencing of hippocampal axon terminals in RSC significantly decreases performance in a delayed non-match to place task.",
+      "claim_type": "EXPLICIT",
+      "source": "We here used eArch3.0, a hyperpolarizing proton pump, to silence hippocampal axon terminals in RSC while animals perform a standard delayed non-match to place task. We found that such manipulation impairs memory retrieval, significantly decreasing performance and hastening decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "2c3f710a-5c07-4a29-9512-d1dd06ac45fe",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C8",
+      "claim": "Optogenetic silencing of hippocampal axon terminals in RSC hastens decision-making in a delayed non-match to place task.",
+      "claim_type": "EXPLICIT",
+      "source": "We here used eArch3.0, a hyperpolarizing proton pump, to silence hippocampal axon terminals in RSC while animals perform a standard delayed non-match to place task. We found that such manipulation impairs memory retrieval, significantly decreasing performance and hastening decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "dd203ac8-2a94-4ca1-b409-d3829aae2c09",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C9",
+      "claim": "The impairment caused by optogenetic silencing outlasts light activation of the opsin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that such impairment outlasts light activation of the opsin, its effects being noticed up to three subsequent trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "25bc25e8-02a7-4857-9e6b-4331f4c95217",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C10",
+      "claim": "The effects of optogenetic silencing are noticed up to three subsequent trials after illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that such impairment outlasts light activation of the opsin, its effects being noticed up to three subsequent trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "c60fcf3f-1f64-44c0-a303-4b97ae46809d",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C11",
+      "claim": "Spatial cognition involves the capacity to make decisions based on the spatial structure of the surrounding context.",
+      "claim_type": "EXPLICIT",
+      "source": "A crucial aspect of adaptive behavior is the capacity to make decisions based on the spatial structure of the surrounding context, something globally known as spatial cognition or spatial goal-directed behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about spatial cognition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "face9deb-2c96-455e-9f2f-925ea056e261",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C12",
+      "claim": "Spatial cognition starts with the selection of relevant information from sensory stimuli and ends with its storage in cortico-hippocampal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Such cognitive function starts with the selection of relevant information from a flood of sensory stimuli and ends with its storage in cortico-hippocampal circuits (Morris et al., 1982; Nadel, 1990; Scoville and Milner, 1957) ultimately as a cognitive map manifested in a vast repertoire of neural activity, selective to multiple ego- (self-referenced) and allocentric (world-referenced) spatial variables, the seminal example of which is the existence of hippocampal place-selective neurons (O'Keefe and Dostrovsky, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "5e9b252e-c5de-4803-ad40-1d4cf03580da",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C13",
+      "claim": "Hippocampal place-selective neurons exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Such cognitive function starts with the selection of relevant information from a flood of sensory stimuli and ends with its storage in cortico-hippocampal circuits (Morris et al., 1982; Nadel, 1990; Scoville and Milner, 1957) ultimately as a cognitive map manifested in a vast repertoire of neural activity, selective to multiple ego- (self-referenced) and allocentric (world-referenced) spatial variables, the seminal example of which is the existence of hippocampal place-selective neurons (O'Keefe and Dostrovsky, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to O'Keefe and Dostrovsky, 1971.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "64996780-e1aa-456d-82f3-6a07f2ac2031",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C14",
+      "claim": "A mechanism must exist that reinstates allocentric contextual representations stored in the hippocampus aligned to the animal's viewpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow for the planning of the movements necessary to reach an intended goal, all the while ensuring that body actions are consistent with the context acted upon, a mechanism must exist that reinstates (retrieves) allocentric contextual representations, stored in the hippocampus (HIPP) as spatial memories, aligned to the animal's viewpoint, e.g., from an egocentric perspective (Bicanski and Burgess, 2018; Carstensen et al., 2021; Gomez et al., 2009; Gomez et al., 2013; Michelmann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "a26bf6c8-080f-442a-941e-d6852e40e01a",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C15",
+      "claim": "RSC encodes contextual variables in both ego- and allocentric reference frames.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a circuit, the retrosplenial cortex (RSC) emerges as a cornerstone, encoding contextual variables in both ego- and allocentric reference frames, representing future spatial goals, and effectively anchoring spatial memory-dependent decisions (Alexander et al., 2020; Alexander and Nitz, 2015; Carstensen et al., 2021; Carstensen et al., 2021; Gomez et al., 2009; Gomez et al., 2013; Michelmann et al., 2020; Nitzan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "70d16e39-ce43-40cc-a552-d0b9772b327b",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C16",
+      "claim": "RSC represents future spatial goals.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a circuit, the retrosplenial cortex (RSC) emerges as a cornerstone, encoding contextual variables in both ego- and allocentric reference frames, representing future spatial goals, and effectively anchoring spatial memory-dependent decisions (Alexander et al., 2020; Alexander and Nitz, 2015; Carstensen et al., 2021; Carstensen et al., 2021; Gomez et al., 2009; Gomez et al., 2013; Michelmann et al., 2020; Nitzan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "cd276829-563b-494f-86ec-ffc4c63f9a85",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C17",
+      "claim": "RSC anchors spatial memory-dependent decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a circuit, the retrosplenial cortex (RSC) emerges as a cornerstone, encoding contextual variables in both ego- and allocentric reference frames, representing future spatial goals, and effectively anchoring spatial memory-dependent decisions (Alexander et al., 2020; Alexander and Nitz, 2015; Carstensen et al., 2021; Carstensen et al., 2021; Gomez et al., 2009; Gomez et al., 2013; Michelmann et al., 2020; Nitzan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "538db2bb-7bfe-47f0-99f3-6dd2bc20fcc4",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C18",
+      "claim": "HIPP axons target the divisions of the medial mesocortex according to a gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently found that HIPP axons target the divisions of the medial mesocortex: CG, midcingulate, and RSC, according to a gradient, in which RSC receives a combination of anatomically and functionally distinct inhibitory and excitatory functional synapses (Ferreira-Fernandes et al., 2019), whose manipulation results in specific behavioral deficits (Yamawaki et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research by the authors and others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "d6352c19-e6ef-49b3-ab34-6d829adec2f5",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C19",
+      "claim": "RSC receives a combination of anatomically and functionally distinct inhibitory and excitatory functional synapses from the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently found that HIPP axons target the divisions of the medial mesocortex: CG, midcingulate, and RSC, according to a gradient, in which RSC receives a combination of anatomically and functionally distinct inhibitory and excitatory functional synapses (Ferreira-Fernandes et al., 2019), whose manipulation results in specific behavioral deficits (Yamawaki et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ferreira-Fernandes et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "f090667f-82cd-476d-ae7f-fbfdd484a90e",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C20",
+      "claim": "Manipulation of hippocampal synapses onto RSC results in specific behavioral deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently found that HIPP axons target the divisions of the medial mesocortex: CG, midcingulate, and RSC, according to a gradient, in which RSC receives a combination of anatomically and functionally distinct inhibitory and excitatory functional synapses (Ferreira-Fernandes et al., 2019), whose manipulation results in specific behavioral deficits (Yamawaki et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Yamawaki et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "85e825fb-ee09-418d-ab83-53beafb42aa6",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C21",
+      "claim": "Direct connections between hippocampal CA1 and RSC convey recently encoded and recalled memories to relevant medial mesocortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that these direct connections between hippocampal CA1 and RSC convey recently encoded and recalled memories to the relevant medial mesocortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their reasoning.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "c8c0b910-866d-4d68-b8bd-328f0c36d2c3",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C22",
+      "claim": "The delayed non-match to place (DNMP) task is a spatial working memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we used the delayed non-match to place (DNMP) task, a spatial working memory (WM) task that requires animals to retrieve the memory of a previous decision, and of the time it occurred, to disambiguate it from similar, previously rewarded, decisions (Aggleton et al., 1986; Maguire, 2001; Shaw and Aggleton, 1995; Shaw et al., 2013; Wilson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "a7951324-b0b8-41c5-b013-7403e391b0db",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C23",
+      "claim": "The DNMP task requires animals to retrieve the memory of a previous decision and the time it occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we used the delayed non-match to place (DNMP) task, a spatial working memory (WM) task that requires animals to retrieve the memory of a previous decision, and of the time it occurred, to disambiguate it from similar, previously rewarded, decisions (Aggleton et al., 1986; Maguire, 2001; Shaw and Aggleton, 1995; Shaw et al., 2013; Wilson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "30f54f48-3597-4154-bbe9-a9ec91b7cc45",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C24",
+      "claim": "Optogenetics is the only molecular technique allowing for reversible perturbation of neural activity within the time constants of cognitive functions at play during working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as it is known, optogenetics is the only molecular technique allowing for reversible perturbation of neural activity within the time constants of the cognitive functions at play during WM (Yamamoto et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Yamamoto et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "f8c2ea47-9a90-44ee-89a7-32813f839b5c",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C25",
+      "claim": "eArch3.0 is a hyperpolarizing proton pump.",
+      "claim_type": "EXPLICIT",
+      "source": "We here used eArch3.0, a hyperpolarizing proton pump, to silence hippocampal axon terminals in RSC while animals perform a standard delayed non-match to place task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about eArch3.0.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "2612fce9-e2e3-4253-9477-a53e29e5a116",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C26",
+      "claim": "Illumination of eArch3.0 with green-yellow light results in its activation into an outward-moving proton pump.",
+      "claim_type": "EXPLICIT",
+      "source": "According to existing literature, once expressed in CA3-CA1 synaptic terminals, illumination of Arch with green-yellow light results in its activation into a powerful outward-moving proton pump, effectively hyperpolarizing neurons, independent of local membrane voltage (Krol et al., 2019; Miao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Krol et al., 2019 and Miao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "8ca7b8e6-dd24-4f34-bd0d-40c857c7b95e",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C27",
+      "claim": "eArch activation hyperpolarizes neurons independent of local membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "According to existing literature, once expressed in CA3-CA1 synaptic terminals, illumination of Arch with green-yellow light results in its activation into a powerful outward-moving proton pump, effectively hyperpolarizing neurons, independent of local membrane voltage (Krol et al., 2019; Miao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Krol et al., 2019 and Miao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "2326704b-ffa2-49af-afe5-96503ff38697",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C28",
+      "claim": "eArch reduces the amplitude and slope of fEPSP from right after the onset to over 2 min after illumination offset.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides this effect, eArch was recently found to reduce the amplitude and slope of fEPSP from right after the onset to over 2 min after illumination offset, via a pH increase that is independent of hyperpolarization, and to cause a sustained decrease in synaptic vesicle release (El-Gaby et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to El-Gaby et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0645117a-0771-4645-9b52-9871bd6d2eba",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C29",
+      "claim": "eArch causes a sustained decrease in synaptic vesicle release via a pH increase independent of hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides this effect, eArch was recently found to reduce the amplitude and slope of fEPSP from right after the onset to over 2 min after illumination offset, via a pH increase that is independent of hyperpolarization, and to cause a sustained decrease in synaptic vesicle release (El-Gaby et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to El-Gaby et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "60ffa592-2a4a-4dbb-b289-3b4dfcd55c3e",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C30",
+      "claim": "Sustained alkalinization specific to synaptic boutons lasts for several minutes post-activation of eArch.",
+      "claim_type": "EXPLICIT",
+      "source": "Such sustained alkalinization, specific to synaptic boutons, lasts for several minutes post-activation of eArch and has been replicated on striatal-cortical synapses as well (Mahn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mahn et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "66cb4345-f73c-42c4-b39c-93dc38f6f2c2",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C31",
+      "claim": "Injection of AAV-5-hSyn1-eArch3.0 results in significant expression of a fluorescent tag in RSC hippocampal terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides abundant expression of both eArch and CTRL transgenes in hippocampal CA1, we found highly significant expression in the RSC layers as previously reported (Figure 1A\u2014figure supplement 1; Ferreira-Fernandes et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "e87fa4ab-d362-4be9-98ab-aa0b5030e00a",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C32",
+      "claim": "HIPP axon terminals are distributed with high density in the superficial RSC layers II\u2013III and in deeper layer V.",
+      "claim_type": "EXPLICIT",
+      "source": "We could observe that HIPP axon terminals are distributed with high density in the superficial RSC layers II\u2013III, as well as in deeper layer V, and sparsely on all other layers, forming beads-on-a-string structures, typical of axon terminals establishing synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "9172a452-555e-483d-9295-4d0635bb0f42",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C33",
+      "claim": "HIPP axon terminals form beads-on-a-string structures typical of axon terminals establishing synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "We could observe that HIPP axon terminals are distributed with high density in the superficial RSC layers II\u2013III, as well as in deeper layer V, and sparsely on all other layers, forming beads-on-a-string structures, typical of axon terminals establishing synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "9e2a4f25-ca4e-4d9a-85f0-23ed02d28753",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C34",
+      "claim": "DNMP sessions with no light delivery resulted in no differences in behavioral performance between eArch+ and CTRL animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Under such conditions, we found no differences between eArch+ and CTRL animals in any of the three sessions run (Figure 2C, Supplementary file 1A, GLMM, p=0.212, Bonferroni post hoc test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "abdbd659-5390-4115-9c23-a84775935a01",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C35",
+      "claim": "eArch activation via green light illumination resulted in significantly lower global performance in eArch+, but not CTRL, animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In these sessions, we observed a significant difference between eArch+ and CTRL animals, with an overall lower performance in eArch+ animals (Figure 3A, Supplementary file 1B, GLMM, p=0.006, Bonferroni post hoc test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "a22bbcce-effd-4877-8c79-20b004ebf01e",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C36",
+      "claim": "The ratio of correct trials in TI and NI trial groups was significantly different from baseline levels in eArch+ animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the ratio of correct trials in the TI and NI trial groups (Figure 3B, Supplementary file 1A and B) was both significantly different from baseline levels (p<0.001), and from their CTRL counterparts (TI, p=0.02, NI, p=0.008), whose performance did not differ from baseline (p=0.252, p=0.184).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "e9e31c0b-9267-402a-9fa7-873669a32979",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C37",
+      "claim": "The ratio of correct trials in TI and NI trial groups was significantly different from CTRL counterparts in eArch+ animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the ratio of correct trials in the TI and NI trial groups (Figure 3B, Supplementary file 1A and B) was both significantly different from baseline levels (p<0.001), and from their CTRL counterparts (TI, p=0.02, NI, p=0.008), whose performance did not differ from baseline (p=0.252, p=0.184).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "14bf28c4-19f0-4159-b062-91421c962248",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C38",
+      "claim": "CTRL animals' performance in TI and NI trials did not differ from baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the ratio of correct trials in the TI and NI trial groups (Figure 3B, Supplementary file 1A and B) was both significantly different from baseline levels (p<0.001), and from their CTRL counterparts (TI, p=0.02, NI, p=0.008), whose performance did not differ from baseline (p=0.252, p=0.184).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0e189573-5b28-498d-929e-483a810af9c2",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C39",
+      "claim": "The effect observed is not the result of light alone acting upon neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that more errors were committed in both TI and NI trials of an illuminated session, but only in eArch+ animals, being absent from CTRL animals, implies two things: first, the effect we observe is not the result of light alone acting upon neurons, an effect described earlier in striatal medium spiny (Owen et al., 2019) and CG neurons (Stujenske et al., 2015); second, the effects of eArch light activation of hippocampal inputs onto RSC neurons outlasted illumination, affecting subsequent NI trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data and comparison with cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "5983a7d7-f502-4ca9-bf19-8e276ff964eb",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C40",
+      "claim": "The effects of eArch light activation of hippocampal inputs onto RSC neurons outlasted illumination, affecting subsequent NI trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that more errors were committed in both TI and NI trials of an illuminated session, but only in eArch+ animals, being absent from CTRL animals, implies two things: first, the effect we observe is not the result of light alone acting upon neurons, an effect described earlier in striatal medium spiny (Owen et al., 2019) and CG neurons (Stujenske et al., 2015); second, the effects of eArch light activation of hippocampal inputs onto RSC neurons outlasted illumination, affecting subsequent NI trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "e0f74732-e86e-4388-b424-56468d0a1715",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C41",
+      "claim": "Illuminated trials were followed by a decreased probability of correct trials on eArch+, but not CTRL, animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that, overall, illuminated trials were followed by a decreased probability of correct trials on eArch+, but not CTRL, animals (Figure 3C, Supplementary file 1D, p=0.015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "2872da36-463f-4220-8caa-67be82a5068d",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C42",
+      "claim": "The effect of light delivery in subsequent non-illuminated trials in sessions where the two types of trials are interleaved has at least one precedent study.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of light delivery in subsequent non-illuminated trials in sessions where the two types of trials are interleaved within 1\u20132 min, as in the present study, has at least one precedent study in Robinson et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Robinson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "24d67dfc-67c8-4adc-a86e-ccc2a4a818cd",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C43",
+      "claim": "In Robinson et al., 2017, trials in which a silencer opsin is activated by light are characterized by increased error probability and abnormal neural activity with decreased temporal selectivity and coding.",
+      "claim_type": "EXPLICIT",
+      "source": "In that study, trials in which a silencer opsin is activated by light are characterized by increased error probability and abnormal neural activity with decreased temporal selectivity and coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes findings from Robinson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "f8724c79-e9c9-4b52-8a2b-fb1006e96dd3",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C44",
+      "claim": "Both neural activity and behavior of interleaved non-illuminated trials are affected by the activation of the opsin in illuminated trials in Robinson et al., 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both neural activity and behavior of interleaved non-illuminated trials are affected by the activation of the opsin in illuminated trials, leading authors to hypothesize that such persistent disruption of temporal coding in light-off trials is caused by synaptic plasticity events largely specific to the neural activity taking place in the (previous) epoch where light is delivered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes findings and hypotheses from Robinson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "df6b62f1-8cb6-4b94-b8f4-a3fc5596e92b",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C45",
+      "claim": "The notion of millisecond time-resolved neuron silencing using eArch is not applicable to synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also imply that the notion of millisecond time-resolved neuron silencing using eArch is not applicable to synaptic transmission and, by consequence, to the ensuing behavioral effects we now investigate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "b92aacd2-a592-458d-bd39-a1951f124164",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C46",
+      "claim": "Following an error in which reward is withheld, animals will correct their course of action.",
+      "claim_type": "EXPLICIT",
+      "source": "A fundamental principle of learning theory, and a common empirical finding in reward-based learning experiments, is that following an error in which reward is withheld, animals will correct their course of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge in learning theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "4e55edf5-fc8d-4e9c-9b5c-c3b8c805a4be",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C47",
+      "claim": "Following a correct decision which is rewarded, animals maintain their course of action.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, following a correct decision, which is rewarded, animals maintain their course of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge in learning theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "397d5547-9f98-47fd-a0db-6fc838916137",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C48",
+      "claim": "The probability of an error trial following error is significantly higher in eArch+ animals than in CTRL animals in illuminated sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "To test such prediction, we analyzed the probability of an error trial following error, in illuminated sessions, and found that it is significantly higher in eArch+ animals than in CTRL animals, regardless of whether the present trial is itself illuminated (Figure 4A, Supplementary file 1E, p<0.001, Bonferroni post hoc test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "699326bd-18cd-475b-a596-7c7a306997d5",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C49",
+      "claim": "The difference in probability of error following error between eArch+ and CTRL animals is absent in baseline sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this difference is absent in baseline sessions, in which no illumination occurs (Figure 4B, Supplementary file 1F, p=0.172, Bonferroni post hoc test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "7ffdee15-1c11-4101-90d0-099e8519ef54",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C50",
+      "claim": "Silencing HIPP terminals in RSC interrupts the flow of information from the previous trial, preventing subsequent error correction.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our prediction and suggests that silencing HIPP terminals in RSC interrupts the flow of information from the previous trial, preventing subsequent error correction for which it is necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "7934cebe-7785-4335-b0a8-4f0ec7469215",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C51",
+      "claim": "The probability of a trial being correct is lower in eArch+ compared to CTRL animals when TI happens in the previous trial.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in Figure 5 (see also Supplementary file 1G), the probability of a trial being correct is lower in eArch+, compared to CTRL animals, whenever TI happens in the previous (Figure 5A T-1, p=0.01, Bonferroni post hoc test), the second previous (T-2, p=0.033), and the third previous trial (T-3, p=0.036), such difference becoming nonsignificant on condition T-4, when the fourth previous trial was illuminated (T-4, p=0.078).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "7222d186-71e9-4114-8203-30bcdd74a41b",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C52",
+      "claim": "The probability of a trial being correct is lower in eArch+ compared to CTRL animals when TI happens in the second previous trial.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in Figure 5 (see also Supplementary file 1G), the probability of a trial being correct is lower in eArch+, compared to CTRL animals, whenever TI happens in the previous (Figure 5A T-1, p=0.01, Bonferroni post hoc test), the second previous (T-2, p=0.033), and the third previous trial (T-3, p=0.036), such difference becoming nonsignificant on condition T-4, when the fourth previous trial was illuminated (T-4, p=0.078).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "d516bc8c-9969-441a-8e22-3de6e728e71b",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C53",
+      "claim": "The probability of a trial being correct is lower in eArch+ compared to CTRL animals when TI happens in the third previous trial.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in Figure 5 (see also Supplementary file 1G), the probability of a trial being correct is lower in eArch+, compared to CTRL animals, whenever TI happens in the previous (Figure 5A T-1, p=0.01, Bonferroni post hoc test), the second previous (T-2, p=0.033), and the third previous trial (T-3, p=0.036), such difference becoming nonsignificant on condition T-4, when the fourth previous trial was illuminated (T-4, p=0.078).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "6c694554-8205-4718-bf10-656a26ea0419",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C54",
+      "claim": "The difference in probability of correct trials between eArch+ and CTRL animals becomes nonsignificant when the fourth previous trial was illuminated.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in Figure 5 (see also Supplementary file 1G), the probability of a trial being correct is lower in eArch+, compared to CTRL animals, whenever TI happens in the previous (Figure 5A T-1, p=0.01, Bonferroni post hoc test), the second previous (T-2, p=0.033), and the third previous trial (T-3, p=0.036), such difference becoming nonsignificant on condition T-4, when the fourth previous trial was illuminated (T-4, p=0.078).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "9fb2ed0f-79a9-4373-b537-37a381ce1811",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C55",
+      "claim": "The effects of eArch activation are still present after approximately 3 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the inter-trial interval (ITI) is circa 20 s, we can reasonably estimate that some non-illuminated trials occurred between this and the n-previous illuminated one, and that, despite this, the effects of eArch activation are still present, hence after ~3 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data and timing parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "7d3f5f4c-7d55-4b23-9d2d-1e2737910626",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C56",
+      "claim": "After two consecutively non-illuminated trials, there is still a significant impairment in eArch+ animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that after such sequences, there is still a significant impairment in eArch+ animals, in agreement with the previous analysis and with the notion that the effects of eArch silencing outlast its activation by light (Figure 5B, p=0.023, Mann-Whitney U).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0da7c659-d884-437b-8aec-92f5e8e7f317",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C57",
+      "claim": "CTRL animals spend more time at the choice point than eArch+ animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, overall, CTRL animals spend more time at the choice point than eArch+ animals (Figure 6A, Supplementary file 1H, p=0.02, fixed effect omnibus test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0918b93b-07bc-4df5-8407-88b37118c117",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C58",
+      "claim": "CTRL animals spend more time at the choice point than eArch+ animals specifically for correct trials in both NI and TI.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this is true for correct but not error trials both under NI and TI (Figure 6B, respectively, p=0.008 and p=0.045, simple effects parameter estimates), suggesting that in CTRL animals, correct decisions involve more time taken at the choice point, contrary to error trials in which no such difference is found.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "e78b464a-34f2-4372-9fed-7e8e12eb1e0d",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C59",
+      "claim": "In CTRL animals, correct decisions involve more time taken at the choice point.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this is true for correct but not error trials both under NI and TI (Figure 6B, respectively, p=0.008 and p=0.045, simple effects parameter estimates), suggesting that in CTRL animals, correct decisions involve more time taken at the choice point, contrary to error trials in which no such difference is found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "c69bf5e4-55a0-4d2e-beae-c7474fb54855",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C60",
+      "claim": "Silencing hippocampal inputs to RSC affects spatial working memory possibly via changes in synaptic mechanisms conveying memorized contextual and episodic information.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, by reversibly silencing the HIPP synaptic inputs to RSC, we have shown that silencing this input affects spatial WM, possibly via changes in synaptic mechanisms conveying memorized contextual and episodic information about past decisions and action-outcome associations onto medial mesocortical executive decision centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion that combines experimental findings with speculation about mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "90ca6357-cdb0-4521-a7eb-9250d1a03fb0",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C61",
+      "claim": "Silencing CG neurons during DNMP interferes with performance, with animals spending less time in decision processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work, we have examined the role CG neurons might play during spatial WM, by silencing CG and measuring performance in this same DNMP task, and found that silencing CG interferes with performance, with animals spending less time in the decision processes in DNMP trials (Cruz et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Cruz et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0a43cac0-1dc6-4c78-9cc5-8ade1283b847",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C62",
+      "claim": "eArch+ animals spend less time at the choice point compared to CTRL, consistent with hastier, more erroneous decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as we have seen before with optogenetic silencing of CG neurons during DNMP (Cruz et al., 2023), we found that eArch+ animals spend less time at the choice point compared to CTRL. This behavior is in line with hastier, more erroneous, decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by experimental data and comparison with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "4025c9f5-ecca-4a9d-9620-55b74effebd3",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C63",
+      "claim": "16 male Long-Evans rats aged 4\u20136 months and weighing 430\u2013600 g were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 16 (8 eArch and 8 CTRL) male Long-Evans rats aged 4\u20136 months and weighing 430\u2013600 g (Charles River Laboratories), housed individually and kept under a 12 hr light/dark cycle, gradually deprived to 80\u201385% of their free-feeding body weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "8466fcdc-1495-45c3-a6dc-e0cfcd330f48",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C64",
+      "claim": "Rats were housed individually and kept under a 12 hr light/dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 16 (8 eArch and 8 CTRL) male Long-Evans rats aged 4\u20136 months and weighing 430\u2013600 g (Charles River Laboratories), housed individually and kept under a 12 hr light/dark cycle, gradually deprived to 80\u201385% of their free-feeding body weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "a6469153-69e4-45f4-9844-304d01926b63",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C65",
+      "claim": "Rats were gradually deprived to 80\u201385% of their free-feeding body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 16 (8 eArch and 8 CTRL) male Long-Evans rats aged 4\u20136 months and weighing 430\u2013600 g (Charles River Laboratories), housed individually and kept under a 12 hr light/dark cycle, gradually deprived to 80\u201385% of their free-feeding body weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "1fe2ca21-e619-465d-ab00-00ca4adeb08b",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C66",
+      "claim": "All procedures were performed in accordance with EU guidelines and approved by the Portuguese National Authority for Animal Health.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were performed in accordance with EU guidelines, approved by the Portuguese National Authority for Animal Health (license number 017548-2021), as well as by the animal well-being office at Instituto de Medicina Molecular Jo\u00e3o Lobo Antunes (license number AWB_2020_08_MR_NeuralBases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0d3769f2-65d8-4267-919e-82b86d1e1d14",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C67",
+      "claim": "The T-maze comprises a central 170 cm long arm, a 25\u00d730 cm2 start platform, and a horizontal arm 88 cm long extending equally on both sides.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed on a black acrylic T-maze comprising a central 170 cm long arm, a 25\u00d730 cm2 start platform, and a horizontal arm (88 cm long) extending equally on both sides with two reward ports at their ends (2 cm diameter) where chocolate milk reward was delivered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "7b0e995b-e70e-447c-91ba-68a7a03a8928",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C68",
+      "claim": "Animals were bilaterally injected with AAV5.hSyn-eArch3.0-eYFP or AAV5.hSyn-eYFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals were bilaterally injected with the viral vector AAV5.hSyn-eArch3.0-eYFP and the respective control AAV5.hSyn-eYFP (University of North Carolina at Chapel Hill Vector Core).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "e4c9df9e-e037-49af-809f-97db118cd9bc",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C69",
+      "claim": "Viral titers were 4.4\u00d71012 vg/ml for AAV5.hSyn-eArch3.0-eYFP and 3.3\u00d71012 vg/ml for AAV5.hSyn-eYFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral titers were 4.4\u00d71012 vg/ml and 3.3\u00d71012 vg/ml, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "5ded1401-abbb-4571-b72e-25827ee4e080",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C70",
+      "claim": "Each DNMP session consisted of 28 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Each session consisted of 28 trials, and each trial comprises three epochs: (1) the sample run, (2) the delay, (3) and the test run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "223b607a-8c49-4167-b83d-048e1e52cc2a",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C71",
+      "claim": "In the sample run, one arm was blocked and the rat was forced to visit the only available arm where a reward awaited.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) In the sample run, one arm was blocked, thereby the rat was forced to visit the only available arm, where a reward awaited;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "909d9b26-e011-4a01-a1f0-f5cfc333ec63",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C72",
+      "claim": "During the delay, rats were placed in the resting box for 15 s.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) when the rat consumed the reward, it was picked up and placed in the resting box for 15 s. During this delay, the arms and the stem near the choice point were cleaned with 70% ethanol;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "1e2cee78-b651-48b9-a501-0217959ae49a",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C73",
+      "claim": "In the test run, rats were rewarded for choosing the arm opposite to the sample arm.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) in the test run, the block from epoch 1 was removed, rats were free to choose which arm to visit (left or right), and were rewarded for choosing the arm opposite to the sample arm (i.e. non-matching the sample).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "634537b8-9279-4fb7-90ca-16a1cefac78a",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C74",
+      "claim": "Rats were trained until reaching a performance of at least 75% of correct choices in three consecutive sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats were trained until reaching a performance of at least 75% of correct choices in three consecutive sessions, after which we introduced optogenetic inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "76518976-ab95-4629-a73c-2618152ca58f",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C75",
+      "claim": "The optogenetic inhibition protocol consisted of 10 consecutive sessions of 28 trials, of which 14 were illuminated in the test epoch and 14 were not illuminated.",
+      "claim_type": "EXPLICIT",
+      "source": "The protocol consisted of 10 consecutive sessions of 28 trials, of which 14 were illuminated in the test epoch (TI) and 14 were not illuminated (NI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "cbd0dd8e-127f-4330-b722-76da43bfb14b",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C76",
+      "claim": "The onset of illumination was triggered to the position of the animal at 120 cm into the central arm and ended when the rat reached the chosen arm at 190 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "The onset of illumination was triggered to the position of the animal at 120 cm into the central arm and ended when the rat reached the chosen arm, at 190 cm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "696703ed-c984-47b8-a9ff-00bb8c3e9dbd",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C77",
+      "claim": "Illumination time is estimated to be approximately 1.4 s based on the average speed of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the average speed of the animal at this point (~50 cm/s), we estimate illumination time to be ~1.4 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on experimental measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "50276acf-6101-4693-99c9-ac0d204990e3",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "claim_id": "C78",
+      "claim": "Each rat completed a total of 280 trials, half of which were subjected to optogenetic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Each rat completed a total of 280 trials, half of which were subjected to optogenetic inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "844e999e-c4d9-4b59-b7e6-5f9655ad0802",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AAV-5-hSyn1-eArch3.0 injection in hippocampal CA1 results in significant expression of fluorescent-tagged terminals in RSC, with high density in superficial layers II\u2013III and deeper layer V, forming beads-on-a-string structures typical of synaptic terminals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 provide converging anatomical evidence from fluorescence microscopy showing successful viral transduction and axonal projection patterns. The observations are consistent with prior work (Ferreira-Fernandes et al., 2019) and provide necessary validation that the optogenetic manipulation targets the intended circuit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0c74c556-9515-4e5d-9720-a2ace18d67fa",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In baseline DNMP sessions without light delivery, eArch+ and CTRL animals showed no differences in behavioral performance across three sessions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by statistical analysis (GLMM, p=0.212) demonstrating no baseline differences between groups. This is a critical control establishing that differences observed during illumination are due to optogenetic manipulation rather than pre-existing group differences or effects of surgical implants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "a02173d8-67dd-479f-8ae5-97e0573a3597",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic activation of eArch3.0 in hippocampal terminals within RSC during the test phase of DNMP significantly impaired performance in eArch+ animals compared to controls, with decreased accuracy in both illuminated (TI) and non-illuminated (NI) trials relative to baseline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 collectively demonstrate the primary behavioral effect with appropriate statistical support (p=0.006 for overall performance; p<0.001, p=0.02, p=0.008 for specific comparisons). The finding that both TI and NI trials show impairment in eArch+ but not CTRL animals rules out non-specific light effects and suggests prolonged synaptic disruption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "e8156ccc-5a22-4d28-9d62-ad159d3989e6",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The behavioral impairment caused by eArch activation is not due to light alone and outlasts the illumination period, affecting subsequent non-illuminated trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by the observation that CTRL animals show no light-induced deficits and by statistical evidence (p=0.015) that illuminated trials reduce performance in subsequent trials in eArch+ animals. This finding is consistent with cited literature on prolonged optogenetic effects (Robinson et al., 2017; El-Gaby et al., 2016).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0be9c194-e8b4-44cc-add9-f52a3da310dd",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "eArch+ animals show significantly impaired error correction, with higher probability of consecutive errors in illuminated sessions compared to CTRL animals, while this difference is absent in baseline sessions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by statistical analysis (p<0.001 for illuminated sessions, p=0.172 for baseline). The finding that eArch+ animals fail to correct errors after reward omission suggests disruption of action-outcome association processing, though the mechanistic interpretation (C50) involves some inference beyond the direct data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "83b02335-45d7-4e3b-9f63-27bc756f6a83",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The effects of eArch activation persist for up to three trials (approximately 3 minutes) after illumination, with significant performance impairments when illumination occurred 1-3 trials prior, but not 4 trials prior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 provide temporal characterization of the prolonged effect with statistical support (p=0.01, p=0.033, p=0.036 for T-1 through T-3; p=0.078 for T-4; p=0.023 for two consecutive non-illuminated trials). The temporal estimate relies on reasonable assumptions about inter-trial intervals (~20s), making the ~3 minute duration estimate well-founded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "94b14e81-b4af-463f-970e-c691f6c0de7e",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "eArch+ animals spend less time at the choice point compared to CTRL animals, specifically during correct trials in both illuminated and non-illuminated conditions, suggesting hastier decision-making processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 and C62 are supported by statistical analysis (p=0.02 overall; p=0.008 and p=0.045 for NI and TI correct trials). The interpretation that reduced time reflects hastier decisions (C59, C62) is reasonable given the correlation with increased errors, though alternative explanations (e.g., motor effects) are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "658f3de8-c8c2-4983-bf47-596ae349f96e",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Optogenetic silencing of hippocampal inputs to RSC impairs spatial working memory retrieval, decreases performance, and hastens decision-making, possibly via disruption of synaptic mechanisms conveying contextual and episodic information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 and C60 summarize the main findings which are well-supported by the experimental data. However, the mechanistic interpretation in C60 about specific synaptic mechanisms is speculative and goes beyond what the behavioral data alone can demonstrate. The causal link between hippocampal-RSC communication and working memory is established, but the precise mechanisms remain uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "6405725d-a53b-4cee-867f-9d6c8b7e9075",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "eArch3.0 activation causes both immediate hyperpolarization and prolonged synaptic suppression through pH-dependent mechanisms that reduce vesicle release for several minutes, challenging the notion of millisecond-precise optogenetic control at synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 accurately cite established literature (Krol et al., 2019; Miao et al., 2015; El-Gaby et al., 2016; Mahn et al., 2016) describing eArch mechanisms. Claim C45 is a reasonable inference from the current behavioral data showing prolonged effects. However, the authors did not directly measure synaptic physiology in their preparation, so the mechanistic link is inferred rather than demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "22b6feaf-eef1-461e-8677-1b333f0c96a1",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous work (Robinson et al., 2017) demonstrated that optogenetic silencing during working memory tasks can affect subsequent non-illuminated trials through synaptic plasticity mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 accurately describe findings from Robinson et al., 2017, providing important context for interpreting the prolonged effects observed in the current study. This represents appropriate citation of relevant prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes the theoretical framework for working memory, spatial cognition, RSC function, hippocampal-RSC connectivity, and the rationale for using optogenetics and the DNMP task.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide background knowledge and cite appropriate literature to establish context. Claims C1-C5, C11-C17 draw on established neuroscience; C18-C20 cite the authors' prior work; C21 is explicitly stated as a hypothesis; C22-C24 appropriately describe the DNMP task and optogenetics; C46-C47 cite learning theory; C61 cites the authors' previous work. All are appropriately supported by citations or represent standard knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "8882300b-d181-4403-a175-38e5a7fb54a0",
+      "content_id": "a4db5c0e-9486-4778-86fe-42c9aa020f5c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The methods describe the experimental subjects, housing conditions, apparatus, surgical procedures, viral vectors, behavioral protocol, and optogenetic stimulation parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C78 provide methodological details that appear complete and appropriate for the experimental design. Sample sizes (8 per group), viral titers, behavioral parameters, and illumination timing are specified. The estimate of illumination duration (C77) is based on reasonable calculation from measured animal speed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5",
+      "content_id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Optogenetic silencing of hippocampal axon terminals in RSC during the test epoch of a delayed non-match to place task impairs memory retrieval, significantly decreasing performance in eArch+ animals compared to controls. The manipulation affects both illuminated trials (TI) and non-illuminated trials (NI), with eArch+ animals showing significantly lower performance than CTRL animals in both conditions, while CTRL performance did not differ from baseline.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor states that 'the strength of evidence for the paper's claims is incomplete,' and the reviewer notes that 'the work should be expanded in several ways before one can make firm conclusions.' In the revised review, the reviewer emphasizes that 'the experiments do not extend beyond determining whether disruption of hippocampal to retrosplenial cortex connections impacts spatial working memory' and describes 'the very moderate effect of the manipulation on memory,' suggesting the evidence is insufficient to support strong conclusions about the role of this projection.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "f40257b8-3336-4609-8224-6a85fe9923a2",
+      "content_id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Optogenetic silencing of hippocampal terminals in RSC hastens decision-making, with eArch+ animals spending less time at the choice point compared to CTRL animals, particularly for correct trials. This behavior is consistent with hastier, more erroneous decisions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the reviewer acknowledges that 'the authors also report that inhibition is associated with faster decision-making,' they express that the overall work 'does not provide significant insight into the processes of spatial working memory nor the function of the hippocampal to retrosplenial cortex connection.' The editor's statement that evidence is 'incomplete' applies to all major claims, including this behavioral finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "3611c2ca-6252-4379-8b53-5db38db014ca",
+      "content_id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The impairment caused by optogenetic silencing outlasts light activation, with effects persisting for up to three subsequent trials (approximately 3 minutes). Illuminated trials are followed by decreased probability of correct trials in eArch+ but not CTRL animals, and performance remains impaired when illumination occurred in the previous, second previous, or third previous trial.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The reviewer notes that 'the authors also report that...the effects of inhibition can be observed over several subsequent trials,' acknowledging this finding. However, the reviewer's overall assessment that 'the experiments do not extend beyond determining whether disruption...impacts spatial working memory' and the editor's statement about 'incomplete' evidence suggest that while the persistent effects are observed, their mechanistic interpretation and significance remain uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "3370175f-d3e8-40cd-afa1-00905416ffb6",
+      "content_id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The probability of an error trial following an error is significantly higher in eArch+ animals than in CTRL animals during illuminated sessions, but this difference is absent in baseline sessions. This suggests that silencing hippocampal terminals in RSC interrupts the flow of information from the previous trial, preventing subsequent error correction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While this finding is part of the experimental results, the reviewer's critique that the work provides only 'restricted level of inquiry' and 'very moderate effect' on memory, combined with the editor's assessment of 'incomplete' evidence, indicates that the mechanistic interpretation about information flow and error correction is not strongly supported. The reviewer does not specifically validate or challenge this particular claim.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "1ab39d74-073d-406a-8784-bc4e7c898ebe",
+      "content_id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "AAV-5-hSyn1-eArch3.0 injection results in significant expression in RSC hippocampal terminals, with high density distribution in superficial RSC layers II-III and deeper layer V, forming beads-on-a-string structures typical of axon terminals establishing synapses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer states 'the work seems reasonably well done,' which implicitly accepts the technical execution including viral expression and anatomical characterization. Neither the reviewer nor editor raises concerns about the anatomical or expression data, suggesting these methodological aspects are accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "88506742-c286-471e-83c6-50840a3aca26",
+      "content_id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "DNMP sessions with no light delivery resulted in no differences in behavioral performance between eArch+ and CTRL animals during baseline sessions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This baseline control finding is implicitly accepted as the reviewer does not question the control conditions. The reviewer's concern is not with the baseline data but with the limited scope and moderate effects of the manipulation itself, indicating acceptance of the control experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "3210f0b6-6412-44d6-908f-5c2a1c37eaef",
+      "content_id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The behavioral effects observed are not the result of light alone acting upon neurons, as demonstrated by the absence of effects in CTRL animals that received the same illumination protocol.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer does not challenge the control comparisons or suggest that light artifacts explain the results. The critique focuses on the limited mechanistic insight rather than questioning whether the effects are opsin-specific, implicitly accepting this control.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "80c85a73-1d73-4b6c-88c8-6eccdb62f909",
+      "content_id": "c8b01303-df9d-4586-a651-02f2791a7ba1",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Silencing hippocampal inputs to RSC affects spatial working memory possibly via changes in synaptic mechanisms conveying memorized contextual and episodic information about past decisions and action-outcome associations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "The reviewer explicitly states that 'the experiments do not extend beyond determining whether disruption of hippocampal to retrosplenial cortex connections impacts spatial working memory' and that the work 'does not provide significant insight into the processes of spatial working memory nor the function of the hippocampal to retrosplenial cortex connection.' This directly challenges the mechanistic interpretation about synaptic mechanisms conveying contextual and episodic information.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "66cb4345-f73c-42c4-b39c-93dc38f6f2c2",
+      "result_id": "844e999e-c4d9-4b59-b7e6-5f9655ad0802"
+    },
+    {
+      "claim_id": "e87fa4ab-d362-4be9-98ab-aa0b5030e00a",
+      "result_id": "844e999e-c4d9-4b59-b7e6-5f9655ad0802"
+    },
+    {
+      "claim_id": "9172a452-555e-483d-9295-4d0635bb0f42",
+      "result_id": "844e999e-c4d9-4b59-b7e6-5f9655ad0802"
+    },
+    {
+      "claim_id": "9e2a4f25-ca4e-4d9a-85f0-23ed02d28753",
+      "result_id": "0c74c556-9515-4e5d-9720-a2ace18d67fa"
+    },
+    {
+      "claim_id": "abdbd659-5390-4115-9c23-a84775935a01",
+      "result_id": "a02173d8-67dd-479f-8ae5-97e0573a3597"
+    },
+    {
+      "claim_id": "a22bbcce-effd-4877-8c79-20b004ebf01e",
+      "result_id": "a02173d8-67dd-479f-8ae5-97e0573a3597"
+    },
+    {
+      "claim_id": "e9e31c0b-9267-402a-9fa7-873669a32979",
+      "result_id": "a02173d8-67dd-479f-8ae5-97e0573a3597"
+    },
+    {
+      "claim_id": "14bf28c4-19f0-4159-b062-91421c962248",
+      "result_id": "a02173d8-67dd-479f-8ae5-97e0573a3597"
+    },
+    {
+      "claim_id": "0e189573-5b28-498d-929e-483a810af9c2",
+      "result_id": "e8156ccc-5a22-4d28-9d62-ad159d3989e6"
+    },
+    {
+      "claim_id": "5983a7d7-f502-4ca9-bf19-8e276ff964eb",
+      "result_id": "e8156ccc-5a22-4d28-9d62-ad159d3989e6"
+    },
+    {
+      "claim_id": "e0f74732-e86e-4388-b424-56468d0a1715",
+      "result_id": "e8156ccc-5a22-4d28-9d62-ad159d3989e6"
+    },
+    {
+      "claim_id": "397d5547-9f98-47fd-a0db-6fc838916137",
+      "result_id": "0be9c194-e8b4-44cc-add9-f52a3da310dd"
+    },
+    {
+      "claim_id": "699326bd-18cd-475b-a596-7c7a306997d5",
+      "result_id": "0be9c194-e8b4-44cc-add9-f52a3da310dd"
+    },
+    {
+      "claim_id": "7ffdee15-1c11-4101-90d0-099e8519ef54",
+      "result_id": "0be9c194-e8b4-44cc-add9-f52a3da310dd"
+    },
+    {
+      "claim_id": "7934cebe-7785-4335-b0a8-4f0ec7469215",
+      "result_id": "83b02335-45d7-4e3b-9f63-27bc756f6a83"
+    },
+    {
+      "claim_id": "7222d186-71e9-4114-8203-30bcdd74a41b",
+      "result_id": "83b02335-45d7-4e3b-9f63-27bc756f6a83"
+    },
+    {
+      "claim_id": "d516bc8c-9969-441a-8e22-3de6e728e71b",
+      "result_id": "83b02335-45d7-4e3b-9f63-27bc756f6a83"
+    },
+    {
+      "claim_id": "6c694554-8205-4718-bf10-656a26ea0419",
+      "result_id": "83b02335-45d7-4e3b-9f63-27bc756f6a83"
+    },
+    {
+      "claim_id": "9fb2ed0f-79a9-4373-b537-37a381ce1811",
+      "result_id": "83b02335-45d7-4e3b-9f63-27bc756f6a83"
+    },
+    {
+      "claim_id": "7d3f5f4c-7d55-4b23-9d2d-1e2737910626",
+      "result_id": "83b02335-45d7-4e3b-9f63-27bc756f6a83"
+    },
+    {
+      "claim_id": "0da7c659-d884-437b-8aec-92f5e8e7f317",
+      "result_id": "94b14e81-b4af-463f-970e-c691f6c0de7e"
+    },
+    {
+      "claim_id": "0918b93b-07bc-4df5-8407-88b37118c117",
+      "result_id": "94b14e81-b4af-463f-970e-c691f6c0de7e"
+    },
+    {
+      "claim_id": "e78b464a-34f2-4372-9fed-7e8e12eb1e0d",
+      "result_id": "94b14e81-b4af-463f-970e-c691f6c0de7e"
+    },
+    {
+      "claim_id": "0a43cac0-1dc6-4c78-9cc5-8ade1283b847",
+      "result_id": "94b14e81-b4af-463f-970e-c691f6c0de7e"
+    },
+    {
+      "claim_id": "b43f81a3-2a5c-4686-848b-c68338d3aa09",
+      "result_id": "658f3de8-c8c2-4983-bf47-596ae349f96e"
+    },
+    {
+      "claim_id": "8340c431-93c1-4c17-85bf-1b9e653782f6",
+      "result_id": "658f3de8-c8c2-4983-bf47-596ae349f96e"
+    },
+    {
+      "claim_id": "2c3f710a-5c07-4a29-9512-d1dd06ac45fe",
+      "result_id": "658f3de8-c8c2-4983-bf47-596ae349f96e"
+    },
+    {
+      "claim_id": "c69bf5e4-55a0-4d2e-beae-c7474fb54855",
+      "result_id": "658f3de8-c8c2-4983-bf47-596ae349f96e"
+    },
+    {
+      "claim_id": "2612fce9-e2e3-4253-9477-a53e29e5a116",
+      "result_id": "6405725d-a53b-4cee-867f-9d6c8b7e9075"
+    },
+    {
+      "claim_id": "8ca7b8e6-dd24-4f34-bd0d-40c857c7b95e",
+      "result_id": "6405725d-a53b-4cee-867f-9d6c8b7e9075"
+    },
+    {
+      "claim_id": "2326704b-ffa2-49af-afe5-96503ff38697",
+      "result_id": "6405725d-a53b-4cee-867f-9d6c8b7e9075"
+    },
+    {
+      "claim_id": "0645117a-0771-4645-9b52-9871bd6d2eba",
+      "result_id": "6405725d-a53b-4cee-867f-9d6c8b7e9075"
+    },
+    {
+      "claim_id": "60ffa592-2a4a-4dbb-b289-3b4dfcd55c3e",
+      "result_id": "6405725d-a53b-4cee-867f-9d6c8b7e9075"
+    },
+    {
+      "claim_id": "df6b62f1-8cb6-4b94-b8f4-a3fc5596e92b",
+      "result_id": "6405725d-a53b-4cee-867f-9d6c8b7e9075"
+    },
+    {
+      "claim_id": "2872da36-463f-4220-8caa-67be82a5068d",
+      "result_id": "22b6feaf-eef1-461e-8677-1b333f0c96a1"
+    },
+    {
+      "claim_id": "24d67dfc-67c8-4adc-a86e-ccc2a4a818cd",
+      "result_id": "22b6feaf-eef1-461e-8677-1b333f0c96a1"
+    },
+    {
+      "claim_id": "f8724c79-e9c9-4b52-8a2b-fb1006e96dd3",
+      "result_id": "22b6feaf-eef1-461e-8677-1b333f0c96a1"
+    },
+    {
+      "claim_id": "8176f62f-cb6b-4d90-bc36-feec2664e49d",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "d4b01c33-3ae7-447c-8fc6-e7827a78fd39",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "3647e362-065f-4342-bbbf-4dc63121a1b6",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "ed56d70b-830e-4d25-93ef-a83c89c17315",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "c49c050a-3bf9-4c31-ad3d-0c07798a20eb",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "c60fcf3f-1f64-44c0-a303-4b97ae46809d",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "face9deb-2c96-455e-9f2f-925ea056e261",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "5e9b252e-c5de-4803-ad40-1d4cf03580da",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "64996780-e1aa-456d-82f3-6a07f2ac2031",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "a26bf6c8-080f-442a-941e-d6852e40e01a",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "70d16e39-ce43-40cc-a552-d0b9772b327b",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "cd276829-563b-494f-86ec-ffc4c63f9a85",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "538db2bb-7bfe-47f0-99f3-6dd2bc20fcc4",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "d6352c19-e6ef-49b3-ab34-6d829adec2f5",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "f090667f-82cd-476d-ae7f-fbfdd484a90e",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "85e825fb-ee09-418d-ab83-53beafb42aa6",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "c8c0b910-866d-4d68-b8bd-328f0c36d2c3",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "a7951324-b0b8-41c5-b013-7403e391b0db",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "30f54f48-3597-4154-bbe9-a9ec91b7cc45",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "b92aacd2-a592-458d-bd39-a1951f124164",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "4e55edf5-fc8d-4e9c-9b5c-c3b8c805a4be",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "90ca6357-cdb0-4521-a7eb-9250d1a03fb0",
+      "result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8"
+    },
+    {
+      "claim_id": "4025c9f5-ecca-4a9d-9620-55b74effebd3",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "8466fcdc-1495-45c3-a6dc-e0cfcd330f48",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "a6469153-69e4-45f4-9844-304d01926b63",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "1fe2ca21-e619-465d-ab00-00ca4adeb08b",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "0d3769f2-65d8-4267-919e-82b86d1e1d14",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "7b0e995b-e70e-447c-91ba-68a7a03a8928",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "e4c9df9e-e037-49af-809f-97db118cd9bc",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "5ded1401-abbb-4571-b72e-25827ee4e080",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "223b607a-8c49-4167-b83d-048e1e52cc2a",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "909d9b26-e011-4a01-a1f0-f5cfc333ec63",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "1e2cee78-b651-48b9-a501-0217959ae49a",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "634537b8-9279-4fb7-90ca-16a1cefac78a",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "76518976-ab95-4629-a73c-2618152ca58f",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "cbd0dd8e-127f-4330-b722-76da43bfb14b",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "696703ed-c984-47b8-a9ff-00bb8c3e9dbd",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "50276acf-6101-4693-99c9-ac0d204990e3",
+      "result_id": "8882300b-d181-4403-a175-38e5a7fb54a0"
+    },
+    {
+      "claim_id": "b43f81a3-2a5c-4686-848b-c68338d3aa09",
+      "result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5"
+    },
+    {
+      "claim_id": "8340c431-93c1-4c17-85bf-1b9e653782f6",
+      "result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5"
+    },
+    {
+      "claim_id": "2c3f710a-5c07-4a29-9512-d1dd06ac45fe",
+      "result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5"
+    },
+    {
+      "claim_id": "abdbd659-5390-4115-9c23-a84775935a01",
+      "result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5"
+    },
+    {
+      "claim_id": "a22bbcce-effd-4877-8c79-20b004ebf01e",
+      "result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5"
+    },
+    {
+      "claim_id": "e9e31c0b-9267-402a-9fa7-873669a32979",
+      "result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5"
+    },
+    {
+      "claim_id": "14bf28c4-19f0-4159-b062-91421c962248",
+      "result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5"
+    },
+    {
+      "claim_id": "2c3f710a-5c07-4a29-9512-d1dd06ac45fe",
+      "result_id": "f40257b8-3336-4609-8224-6a85fe9923a2"
+    },
+    {
+      "claim_id": "0da7c659-d884-437b-8aec-92f5e8e7f317",
+      "result_id": "f40257b8-3336-4609-8224-6a85fe9923a2"
+    },
+    {
+      "claim_id": "0918b93b-07bc-4df5-8407-88b37118c117",
+      "result_id": "f40257b8-3336-4609-8224-6a85fe9923a2"
+    },
+    {
+      "claim_id": "e78b464a-34f2-4372-9fed-7e8e12eb1e0d",
+      "result_id": "f40257b8-3336-4609-8224-6a85fe9923a2"
+    },
+    {
+      "claim_id": "0a43cac0-1dc6-4c78-9cc5-8ade1283b847",
+      "result_id": "f40257b8-3336-4609-8224-6a85fe9923a2"
+    },
+    {
+      "claim_id": "dd203ac8-2a94-4ca1-b409-d3829aae2c09",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "25bc25e8-02a7-4857-9e6b-4331f4c95217",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "5983a7d7-f502-4ca9-bf19-8e276ff964eb",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "e0f74732-e86e-4388-b424-56468d0a1715",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "7934cebe-7785-4335-b0a8-4f0ec7469215",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "7222d186-71e9-4114-8203-30bcdd74a41b",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "d516bc8c-9969-441a-8e22-3de6e728e71b",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "6c694554-8205-4718-bf10-656a26ea0419",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "9fb2ed0f-79a9-4373-b537-37a381ce1811",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "7d3f5f4c-7d55-4b23-9d2d-1e2737910626",
+      "result_id": "3611c2ca-6252-4379-8b53-5db38db014ca"
+    },
+    {
+      "claim_id": "397d5547-9f98-47fd-a0db-6fc838916137",
+      "result_id": "3370175f-d3e8-40cd-afa1-00905416ffb6"
+    },
+    {
+      "claim_id": "699326bd-18cd-475b-a596-7c7a306997d5",
+      "result_id": "3370175f-d3e8-40cd-afa1-00905416ffb6"
+    },
+    {
+      "claim_id": "7ffdee15-1c11-4101-90d0-099e8519ef54",
+      "result_id": "3370175f-d3e8-40cd-afa1-00905416ffb6"
+    },
+    {
+      "claim_id": "66cb4345-f73c-42c4-b39c-93dc38f6f2c2",
+      "result_id": "1ab39d74-073d-406a-8784-bc4e7c898ebe"
+    },
+    {
+      "claim_id": "e87fa4ab-d362-4be9-98ab-aa0b5030e00a",
+      "result_id": "1ab39d74-073d-406a-8784-bc4e7c898ebe"
+    },
+    {
+      "claim_id": "9172a452-555e-483d-9295-4d0635bb0f42",
+      "result_id": "1ab39d74-073d-406a-8784-bc4e7c898ebe"
+    },
+    {
+      "claim_id": "9e2a4f25-ca4e-4d9a-85f0-23ed02d28753",
+      "result_id": "88506742-c286-471e-83c6-50840a3aca26"
+    },
+    {
+      "claim_id": "0e189573-5b28-498d-929e-483a810af9c2",
+      "result_id": "3210f0b6-6412-44d6-908f-5c2a1c37eaef"
+    },
+    {
+      "claim_id": "c69bf5e4-55a0-4d2e-beae-c7474fb54855",
+      "result_id": "80c85a73-1d73-4b6c-88c8-6eccdb62f909"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c1b68be9-38e9-406f-81f8-dc46b9e59262",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "844e999e-c4d9-4b59-b7e6-5f9655ad0802",
+      "peer_result_id": "1ab39d74-073d-406a-8784-bc4e7c898ebe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate anatomical validation claims (C31-C33). OpenEval finds these supported with appropriate evidence from fluorescence microscopy. Peer reviewer implicitly accepts these technical aspects as part of stating 'the work seems reasonably well done,' with no concerns raised about viral expression or anatomical characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "9558fb8c-907d-4988-b068-02b00b466aea",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0c74c556-9515-4e5d-9720-a2ace18d67fa",
+      "peer_result_id": "88506742-c286-471e-83c6-50840a3aca26",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address baseline control (C34). OpenEval explicitly supports this as critical validation showing no pre-existing group differences. Peer reviewer implicitly accepts this control, focusing critique on limited scope rather than questioning baseline comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "678b0e47-23f4-456b-bf9a-90389b3853c4",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "a02173d8-67dd-479f-8ae5-97e0573a3597",
+      "peer_result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate primary behavioral effects (C35-C38). OpenEval finds these well-supported with appropriate statistics (p=0.006 overall). Peer reviewer rates as UNCERTAIN, noting 'very moderate effect of the manipulation' and 'incomplete' evidence, suggesting the behavioral findings alone are insufficient for strong conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "59357c2a-7f2e-4657-b50a-f880055b63f6",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "e8156ccc-5a22-4d28-9d62-ad159d3989e6",
+      "peer_result_id": "3210f0b6-6412-44d6-908f-5c2a1c37eaef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address control comparisons (C39-C41). OpenEval supports these claims showing opsin-specific effects without non-specific light artifacts. Peer reviewer implicitly accepts these controls (SUPPORTED for C39), not challenging the specificity of effects but rather the limited mechanistic insight.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "3fb2a9d3-ee9c-436f-bc21-1eef32019968",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "0be9c194-e8b4-44cc-add9-f52a3da310dd",
+      "peer_result_id": "3370175f-d3e8-40cd-afa1-00905416ffb6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate error correction findings (C48-C50). OpenEval finds statistical support (p<0.001) though notes mechanistic interpretation involves inference. Peer reviewer rates UNCERTAIN, with overall assessment that work provides 'restricted level of inquiry' suggesting mechanistic interpretation about action-outcome associations is not strongly supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "23532034-9f9d-4b9a-bacd-4e6b33cdc648",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "83b02335-45d7-4e3b-9f63-27bc756f6a83",
+      "peer_result_id": "3611c2ca-6252-4379-8b53-5db38db014ca",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address temporal persistence of effects (C51-C56). OpenEval supports these with statistical evidence (p=0.01-0.036 for T-1 through T-3). Peer reviewer acknowledges 'effects of inhibition can be observed over several subsequent trials' but rates UNCERTAIN due to limited mechanistic interpretation and overall 'incomplete' evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "b5aa1217-9072-4cba-a97f-44b5e4c1c787",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "94b14e81-b4af-463f-970e-c691f6c0de7e",
+      "peer_result_id": "f40257b8-3336-4609-8224-6a85fe9923a2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate decision-making speed claims (C57-C59, C62). OpenEval supports with statistics (p=0.02 overall) though notes alternative explanations not fully excluded. Peer reviewer acknowledges the finding but rates UNCERTAIN, stating work 'does not provide significant insight into the processes of spatial working memory.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "9cf05d03-4a69-4402-980d-1343f9896571",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "658f3de8-c8c2-4983-bf47-596ae349f96e",
+      "peer_result_id": "644b1315-f0e0-4b6f-8d8d-c88c45495df5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address main findings and their interpretation (C6-C8, C60). OpenEval supports the causal link but notes mechanistic interpretation is speculative. Peer reviewer rates UNCERTAIN for the broader claims (C6-C8), emphasizing 'incomplete' evidence and 'very moderate effect,' questioning the strength of conclusions about this projection's role.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "763833c8-67b5-4c94-ab5f-af8e94d01978",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "658f3de8-c8c2-4983-bf47-596ae349f96e",
+      "peer_result_id": "80c85a73-1d73-4b6c-88c8-6eccdb62f909",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both specifically evaluate mechanistic interpretation (C60). OpenEval supports the causal link but notes precise synaptic mechanisms remain uncertain and go beyond behavioral data. Peer reviewer rates UNSUPPORTED, explicitly stating experiments 'do not provide significant insight into...the function of the hippocampal to retrosplenial cortex connection.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "0dd5e4fb-54ba-4fc6-9e8d-186744693b3d",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "6405725d-a53b-4cee-867f-9d6c8b7e9075",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature citations about eArch mechanisms (C26-C30, C45) as appropriately supported, though notes synaptic physiology was not directly measured. No corresponding peer review evaluation found for these specific methodological citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "8fe19251-092e-4095-8137-88093cf49885",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "22b6feaf-eef1-461e-8677-1b333f0c96a1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates citations to Robinson et al., 2017 (C42-C44) as appropriate context for prolonged effects. No corresponding peer review evaluation found for these specific literature citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "92c368c2-f534-4c5d-b59a-9f0eaf7c7056",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "0982f3d1-285c-452e-9f5e-dc069f9f90e8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates extensive background and contextual claims (C1-C5, C11-C24, C46-C47, C61) as appropriately supported by citations and established knowledge. No corresponding peer review evaluation found addressing these background claims specifically.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    },
+    {
+      "id": "17f6e315-3318-4f3b-ad9c-4be76649f012",
+      "submission_id": "e6f8ebcd-333d-4ef6-87e4-1d52c0033c2b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "8882300b-d181-4403-a175-38e5a7fb54a0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological details (C63-C78) as complete and appropriate, including sample sizes, viral titers, and behavioral parameters. No corresponding peer review evaluation found specifically addressing these methodological specifications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:09:22.621657Z"
+    }
+  ]
+}

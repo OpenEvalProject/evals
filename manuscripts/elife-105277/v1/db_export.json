@@ -1,0 +1,2132 @@
+{
+  "submission": {
+    "id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:44:24.501031Z",
+    "updated_at": "2025-11-21T16:44:24.501031Z"
+  },
+  "content": [
+    {
+      "id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "content_type": "manuscript",
+      "content_text": "# Layilin regulates Treg motility and suppressive capacity in skin\n\n## Authors\n\n- Victoire Gouirand<sup>1</sup> ([ORCID: 0000-0002-2666-0061](https://orcid.org/0000-0002-2666-0061))\n- Sean Clancy<sup>1</sup>\n- Courtney Macon<sup>1</sup>\n- Jose Valle<sup>2</sup>\n- Mariela Pauli<sup>2</sup>\n- Hong-An Truong<sup>2</sup>\n- Jarish Cohen<sup>1</sup>\n- Maxime Kinet<sup>1</sup>\n- Margaret M Lowe<sup>1</sup>\n- Samuel J Lord<sup>3</sup> ([ORCID: 0000-0002-2785-989X](https://orcid.org/0000-0002-2785-989X))\n- Kristen Skruber<sup>3</sup>\n- Hobart Harris<sup>4</sup>\n- Esther Kim<sup>4</sup>\n- Isaac Neuhaus<sup>1</sup>\n- Karin Reif<sup>2</sup> ([ORCID: 0000-0001-5490-8389](https://orcid.org/0000-0001-5490-8389))\n- Ali A Zarrin<sup>2</sup>\n- R Dyche Mullins<sup>3</sup> ([ORCID: 0000-0002-0871-5479](https://orcid.org/0000-0002-0871-5479))\n- Michael D Rosenblum<sup>1</sup> ([ORCID: 0000-0002-0462-5732](https://orcid.org/0000-0002-0462-5732)) \u2020\n\n### Affiliations\n\n1. Department of Dermatology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. TRex Bio Inc South San Francisco United States\n3. Department of Cellular and Molecular Pharmacology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n4. Department of Surgery, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRegulatory T cells (Tregs) are essential for maintaining immune tolerance in both lymphoid and non-lymphoid tissues. We discovered that layilin, a C-type lectin receptor, is predominantly expressed on Tregs in skin. Layilin was highly expressed on a subset of clonally expanded \u2018effector\u2019 Tregs in both healthy and psoriatic human skin. Layilin-expressing Tregs exhibited a transcriptional profile indicative of enhanced adhesion. Deletion of layilin in Tregs in mice in vivo resulted in significantly attenuated skin inflammation. Mechanistically, layilin enhanced in vitro human Treg adhesion via modulation of lymphocyte function-associated antigen-1, resulting in distinct cytoskeletal alterations consistent with enhanced focal adhesion and lamellipodia formation. Taken together, we define layilin as a critical regulator of Treg-suppressive capacity by modulating motility and adhesion in a non-lymphoid tissue.\n\n## Introduction\n\nRegulatory T cells (Tregs) play a crucial role in mediating peripheral immune tolerance. Although present in lymphoid organs, specialized subsets of these cells stably reside in non-lymphoid tissues, including skin, gut, and lung (Mu\u00f1oz-Rojas and Mathis, 2021; Ali and Rosenblum, 2017). Subsets of Tregs in skin play a crucial role in suppressing hair follicle autoreactivity (Cohen et al., 2024). In addition, these cells facilitate hair follicle cycling (Ali et al., 2017), augment wound healing (Nosbaum et al., 2016), and establish and maintain tolerance to skin commensals (Scharschmidt et al., 2015; Scharschmidt et al., 2017). Many autoimmune and chronic inflammatory diseases are thought to result from an imbalance in the relative abundance and functional state of proinflammatory and regulatory cells. Thus, elucidating the fundamental mechanisms these cells utilize in both healthy and inflamed tissues is crucial in attempts to develop novel therapies aimed at restoring tissue immune homeostasis.\n\nLayilin is a cell surface C-type lectin receptor (Borowsky and Hynes, 1998; Bono et al., 2001). This family of receptors plays a role in many cellular functions, including adhesion and cell signaling (Brown et al., 2018). Previously, we and others have shown that layilin is preferentially expressed on exhausted CD8+ T cells infiltrating human and murine tumors (Zheng et al., 2017; Fu et al., 2014; Mahuron et al., 2020). In addition, intratumoral Tregs express high levels of layilin (Bhairavabhotla et al., 2016; Mehta et al., 2021; De Simone et al., 2016). Mechanistically, we have shown that layilin functions to anchor Tregs in non-lymphoid tissues, and in doing so, limits their suppressive capacity (Mehta et al., 2021). On CD8+ T cells, layilin co-localizes with integrin \u03b1L\u03b22 (lymphocyte function-associated antigen-1 [LFA-1]), enhancing its adhesive properties (Mahuron et al., 2020). Despite emerging evidence that layilin plays an important role in the biology of Tregs in non-lymphoid tissues, little is known about the potential role it plays in autoimmune disease. In addition, whether layilin functions to modulate LFA-1 activation on Tregs remains to be determined. Here, we interrogate the functional biology of Treg expression of layilin in inflammatory skin disease.\n\n## Results\n\n### Layilin is expressed on activated \u2018effector\u2019 Tregs in human inflammatory skin disease\n\nTo begin to understand the expression pattern of layilin on immune cells in chronic inflammatory skin diseases, we performed single-cell RNA sequencing of CD45+ cells sorted from healthy or psoriatic skin. Consistent with previous observations (Bhairavabhotla et al., 2016), the main population expressing LAYILIN are Tregs (Figure 1A\u2013C). There were no changes in the relative expression of LAYN per cell when comparing Treg clusters from psoriasis skin with healthy control skin (Figure 1\u2014figure supplement 1A), suggesting that LAYN expression is not increased on Tregs in inflamed skin. Because layilin is expressed on ~40\u201350% of Tregs in both healthy and inflamed skin (Mehta et al., 2021), we sought to understand how layilin-expressing Tregs differed from layilin-non-expressing Tregs at the transcriptional level. To this end, we subclustered Tregs from psoriatic skin and performed pseudo-bulk analysis based on LAYN gene counts (threshold greater than 0 considered positive for LAYN expression) (Figure 1D and E). We found that LAYN-expressing (LAYN>0) and non-expressing (LAYN<0) cells are relatively similar to equivalent levels of FOXP3 and CTLA-4 expression (Figure 1F). Similarly to the observation made in Figure 1\u2014figure supplement 1A, we noticed most differences are driven by LAYN expression (Figure 1\u2014figure supplement 1B). Focusing on psoriatic skin, we found that 636 genes were significantly differentially expressed (DEGs) between LAYN-positive and LAYN-negative Tregs (Figure 1G). Interestingly, several TNFRSF family genes and several adhesion molecules, including integrin coding genes (ITGB7 and ITGB6) or cell\u2013cell adhesion (CADM1), were expressed at significantly higher levels in LAYN-expressing Tregs (Figure 1G). Gene set enrichment analysis (GSEA) on DEGs revealed pathways for T cell activation and cell migration and adhesion to be enriched in LAYN-expressing Tregs (Figure 1H).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/105277/elife-105277-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013C) Single-cell RNA-seq of FACS-purified CD45+ cells from healthy and psoriatic skin. n=5 healthy skins and 5 psoriatic skins. (A) Representative Uniform Manifold Approximation and Projection (UMAP) showing all clusters found. (B) Dot plot of LAYN, FOXP3, and CD8A expression by clusters. (C) UMAP of FOXP3 and LAYN expression in skin. (D) UMAP of Tregs subset showing in red LAYN non-expressing Tregs (LAYN<0) and blue LAYN-expressing Tregs (LAYN>0) based on gene count >0. (E, F) Violin plot of LAYN (E), FOXP3, and CTLA4 (F) in subset Tregs from skin followed by resclustering based on LAYN gene count >0. (G) Volcano plot of LAYN-expressing Tregs (right) compared to Layn-non-expressing Tregs (left) obtained from pseudo-bulk analysis performed on Tregs subset. (H) Gene set enrichment analysis of top enriched pathways in LAYN-expressing Tregs compared to LAYN-non-expressing Tregs associated with panel (F). (I, J) T cell receptor (TCR) analysis run on Treg cluster subset by LAYN expression. In (I), we show the relative abundance of TCR clonotype frequencies separated into five groups: rare being expressed between 0 and 104, small between 104 and 0.001, medium between 0.001 and 0.01, large between 0.01 and 0.1, and hyperexpanded between 0.1 and 1. (J) Representation of the top expressed clonotypes in a subset of Tregs from skin resclustered according to LAYN gene count >0.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105277/elife-105277-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Volcano plot comparing regulatory T cell (Treg) cluster from psoriasis to Treg cluster from healthy skin. (B) Quadrant representation of results from pseudo-bulk RNAseq of Treg cluster subclustered in LAYN-expressing and non-expressing Tregs. Red dots represent differentially expressed genes, and black dots are not differentially expressed ones. The left-upper quadrant corresponds to genes enriched only in psoriatic LAYN-expressing Tregs, the right-bottom quadrant are the ones only enriched in LAYN-expressing Tregs from healthy skin, and the upper-right quadrant corresponds to genes enriched in LAYN-expressing Tregs and common to both conditions.\n\nT cell receptor (TCR) engagement is a potent inducer of layilin expression on Tregs (Mehta et al., 2021). Thus, we hypothesized that layilin-expressing Tregs may be specific for tissue antigens and consequently more clonal than Tregs in skin with undetectable layilin expression. To test this hypothesis, we performed TCR repertoire analysis using the same subclustering of Tregs as in the pseudo-bulk analysis (Figure 1I and J). Interestingly, LAYN-expressing Tregs had more expanded clones, with the top 15 expressed clonotypes being more abundant in LAYN-expressing cells. These findings are similar to previous observations made in CD8+ T cells (Mahuron et al., 2020). Taken together, transcriptional immunophenotyping of Tregs isolated from psoriatic skin suggests that LAYN expression correlates with more activated, more motile, and clonally expanded cells.\n\n### Layilin has a minimal effect on Treg activation and suppressive capacity in vitro\n\nActivated lymphocytes express receptors and pathways that can either promote or attenuate their effector functions (Carlino et al., 2021). In addition, ex vivo activation of lymphocytes can induce molecular pathways that only play a meaningful biologic role when the cells are in their natural in vivo setting. Thus, we sought to determine whether layilin expression on Tregs plays a role in promoting their activation state or suppressive capacity in vitro. To do so, we isolated Tregs from peripheral blood of healthy volunteers and expanded them ex vivo with anti-CD3 and anti-CD28-coated beads and high-dose IL-2. Expanded cells were specifically edited for LAYN using a well-established CRISPR-Cas9 electroporation protocol (Albanese et al., 2022; Figure 2A). Four days post-electroporation, we consistently observed a maximal reduction in LAYN expression by ~30\u201350% compared to single guide-treated control cells (Figure 2B). After 4 days of suboptimal activation post-electroporation, cells were rested and cultured with or without TCR restimulation. Subsequently, the cells underwent spectral flow cytometry analysis using a detailed panel of Treg activation markers. In these experiments, deletion of layilin did not influence Treg activation across multiple donors with or without TCR stimulation (Figure 2C). To determine if deleting layilin on Tregs impairs their suppressive function in vitro, we performed standard Treg suppression assays with cells edited for LAYN or control guide RNAs. In these experiments, deleting layilin on 30\u201350% of Tregs had no effect on their ability to suppress either CD4+ or CD8+ T cell proliferation (Figure 2D). Taken together, this data suggests that layilin plays a minimal role, if any, in Treg activation and suppressive capacity in vitro.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/105277/elife-105277-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic experimental design strategy starting with the isolation of human Tregs from peripheral blood, activated and expanded using anti-CD3/anti-CD28 stimulation and IL-2 for 12 days. We deleted LAYN using CRISPR/Cas9, and after 4 days, cells were used for the experiment. (B) Frequency of LAYN+ Tregs gated on live CD8-CD4+CD25+FOXP3+ cells and representative expression of layilin. n=6 donors from two independent experiments. Significance was defined by a two\u2010tailed Student\u2019s t\u2010test. *p<0.05. (C) Frequencies (on the left) and mean fluorescence intensity (MFI, on the right) of sg-LAYN and sg-CTRL Tregs gated on live CD8-CD4+CD25+FOXP3+ cells expressing the different activation Treg markers listed on the x-axis. The top-row graphs show results from cells stimulated with anti-CD3/anti-CD28; the bottom graphs show results obtained from cells without anti-CD3/anti-CD28 stimulation. n=6 donors from two independent experiments. Significance was defined by using a multiple-paired t\u2010test. (D) Proliferation percentage measured using cell trace violet for CD4+ T responder (left panel) or CD8+ T responder (right panel) after 3 days of suppression assay. Results are presented in the x-axis, and the different ratios of sg-LAYN and sg-CTRL Tregs and T responders used for the assay represent two independent experiments. Significance was defined by two\u2010way ANOVA, followed by Tukey\u2019s multiple-comparisons test.\n\n### Layilin attenuates Treg suppression in vivo\n\nWe have previously shown that layilin acts to anchor Tregs in tissues and that deletion selectively in these cells results in enhanced tumor growth (Mehta et al., 2021). Thus, despite having limited to no role in Treg activation and suppression in vitro (Figure 2), we hypothesized that layilin expression on Tregs in vivo would attenuate their suppressive capacity. To test this hypothesis, we utilized the well-established imiquimod (IMQ) model of skin inflammation (Gangwar et al., 2022; van der Fits et al., 2009), where Tregs are known to play a significant role (Choi et al., 2020; Chen et al., 2022; Hartwig et al., 2018). To inducibly and selectively delete Layn in Tregs, we crossed Foxp3CreERT2 mice (Foxp3Cre) (Rubtsov et al., 2010) with Laynfl/fl mice (generated previously by our lab; Mahuron et al., 2020). To delete layilin in Tregs, the resultant Foxp3Cre/Laynfl/fl mice were treated with systemic tamoxifen from 6 days to 2 days prior to beginning IMQ application on dorsal back skin for 6 days (Figure 3A). Because there are no working antibodies that reliably detect murine layilin by flow cytometry, we performed qRT-PCR on sort-purified Tregs from Foxp3Cre/Laynfl/fl and Laynfl/fl mice after tamoxifen treatment to assay for Layn deletion. These experiments confirmed a significant reduction in Layn expression in Tregs from Foxp3Cre/Laynfl/fl mice (Figure 3\u2014figure supplement 1A). Clinical signs of disease, including skin lesions, scaling, and erythema, were quantified in a blinded fashion throughout the duration of the IMQ treatment. Consistent with our hypothesis, we observed a significant reduction in the clinical severity of skin inflammation in Foxp3Cre/Laynfl/fl mice treated with tamoxifen compared to age- and gender-matched littermate Foxp3Cre control mice treated with tamoxifen (Figure 3B and C). Flow cytometric quantification of immune cell infiltrate and cellular cytokine production was performed on day 6. Foxp3Cre/Laynfl/fl mice had a significant reduction in the absolute number of skin infiltrating CD4+ Teff cells and CD8+ T cells compared to controls (Figure 3D). In addition, there was a significant reduction in the number of TNFa-producing CD4+ Teff cells, IL-17-producing CD8+ T cells, and IL-17-producing Tregs in Foxp3Cre/Laynfl/fl mice compared to controls (Figure 3E, Figure 3\u2014figure supplement 1B). There were no significant differences in the expression of select Treg activation markers between layilin-deleted and control Tregs (Figure 3F, Figure 3\u2014figure supplement 1C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/105277/elife-105277-fig3-v1.jpg)\n\n**Figure 3.:** (A) Experimental design strategy of the imiquimod (IMQ) model. After 4 days of tamoxifen injection, mice were rested for 2 days before the start of the IMQ treatment. They received a daily dose of IMQ on shaved back skin and were scored for erythema, scaling, skin lesions, and weight loss. After 6 days of treatment, the mice were euthanized. (B) Representative pictures of mouse back skin after 5 days of treatment from each experimental group. (C) Overall clinical score over time. n=7 mice from three independent experiments. Significance was defined by two\u2010way ANOVA. ****p<0.0001. (D) Absolute count of Teff, CD8, and Tregs obtained from each experimental group, respectively, gated on live CD3+TCR\u03b2+ and CD4+FOXP3- or CD8+, CD4+FOXP3+. n=7 and 6 mice per group from three independent experiments. Significance was defined by a two\u2010tailed Student\u2019s t\u2010test. *p<0.05. (E) Absolute count of cells Teff, CD8, and Treg either IFN\u0263+, IL17+, or TNF\u03b1+. n=7 and 6 mice per group from three independent experiments. Significance was defined by a multiple-paired t\u2010test. *p<0.05. (F) Frequencies of Tregs activation markers gated on live CD3+TCR\u03b2+ CD4+FOXP3+ Tregs. n=7 and 6 mice per group from three independent experiments, except ICOS and CTLA from two mice and one experiment. Significance was defined by a multiple-paired t\u2010test. (G) Volcano plot of differential expression of genes from sorted Tregs gated on GFP+ from Foxp3Cre; Laynfl/fl (on the right) or Foxp3Cre (on the left) after 4 days of treatment. Red dots represent differentially expressed genes, and black dots are not differentially expressed ones. n=5 mice per group from two independent experiments. (H) Top deregulated pathways obtained from a gene set enrichment analysis comparing Foxp3Cre; Laynfl/fl to Foxp3Cre Tregs. The top axis and bar plot represent the normalized enrichment score (NES). The bottom axis and dot represent the adjusted p-value associated with pathways enrichment. n=5 mice per group from two independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105277/elife-105277-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) qRT-PCR of Layn from sorted regulatory T cells (Tregs) and Teff cells isolated respectively by gating on live CD45+CD3+CD4+CD8-CD25hiCD62LhiGFP+ and CD45+CD3+CD4+CD8-CD25loCD62LhiGFP-. Tregs and Teff have been isolated from back skin of Foxp3Cre; Laynfl/fl or Foxp3Cre mice after 4 days of treatment. Each bar corresponds to five mice mixed to create a representative sample for each group. (B) Mean fluorescence intensity (MFI) of cells Teff, CD8, and Treg either IFN\u0263+, IL17+, or TNF\u03b1+. n=7 and 6 mice per group from three independent experiments. Significance was defined by a multiple-paired t\u2010test. (C) MFI of Tregs activation markers gated on live CD3+TCR\u03b2+ CD4+FOXP3+ Tregs. n=7 and 6 mice per group from three independent experiments, except ICOS and CTLA from two mice and one experiment. Significance was defined by a multiple-paired t\u2010test. (D) Quality control of samples repartition used for bulk RNAseq in Figure 5. (E) Quality check of bulk RNAseq representing total of counts for each sample. In (F) and (G), n=5 mice per group from two independent experiments.\n\nTo comprehensively interrogate how layilin deletion alters Treg biology in vivo at the transcriptional level, we performed bulk RNA sequencing. RNA was isolated from GFP-expressing Tregs sort purified from back skin after 4 days of IMQ treatment and subjected to low-input RNA sequencing (Figure 3\u2014figure supplement 1D and E). These experiments identified several DEGs in Foxp3Cre/Laynfl/fl mice relative to Foxp3Cre control mice both treated with tamoxifen (Figure 3G). Interestingly, GSEA of DEGs revealed enrichment in pathways involved in cellular movement, locomotion, and migration (Figure 3H). Taken together, these results reveal that layilin attenuates Treg suppression in vivo without altering their activation capacity and is consistent with previous studies that suggest that the anchoring function of layilin limits Treg\u2019s ability to optimally mediate immune regulation in skin (Mehta et al., 2021).\n\n### Layilin enhanced Treg adhesion in an LFA-1-dependent manner\n\nWe have previously shown that layilin co-localizes with LFA-1 on CD8+ T cells and functions to augment LFA-1-mediated adhesion of these cells (Mahuron et al., 2020). Thus, we set out to determine whether layilin functions in a similar fashion on Tregs. In addition, we sought to determine whether layilin expression on Tregs influences motility pathways at the transcriptional level. To this end, we sorted purified Tregs from human peripheral blood, CRISPR-edited these cells for Layn (or control guide RNA), sort-purified these cells based on layilin expression, and performed bulk RNA sequencing on highly pure layilin-expressing or layilin-edited cells (Figure 4A). Consistent with the experiments described above where layilin was deleted in Tregs in vivo in mice (Figure 3), several genes involved in cellular locomotion, migration, and adhesion were differentially expressed in layilin-expressing vs. layilin-edited cells (Figure 4B and C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/105277/elife-105277-fig4-v1.jpg)\n\n**Figure 4.:** (A) The experimental design strategy starts with the isolation of human Tregs from peripheral blood, which were activated and expanded using anti-CD3/anti-CD28 stimulation and IL-2 for 12 days. We deleted LAYN using a CRISPR/Cas9; after 4 days, cells were sorted by flow cytometry based on LAYN expression, as represented by the representative histogram of LAYN expression on sgCtrl (stained with or without primary antibody detecting layilin followed by streptavidin-PE staining) or sg-LAYN Tregs, to obtain a pure population of LAYN+ or LAYN- Tregs. After sorting, cells were placed in culture for follow-up experiments presented in panels (B), (C), and (F). (B) Volcano plot of differential genes expressed in LAYN+ (on the left) or LAYN- (on the right) Tregs put in culture for 24 hours in the presence of anti-CD3/anti-CD28. Red dots represent differentially expressed genes, and black dots are not differentially expressed ones. n=4 paired donors for each group. (C) Top deregulated pathways obtained from a gene set enrichment analysis comparing LAYN+ to LAYN- Tregs. The top axis and bar plot represent the normalized enrichment score (NES). The bottom axis and dot represent the adjusted p-value associated with pathways enrichment. n=4 paired donors for each group. (D) Ratio of m24+ to total CD18+ Tregs gated on live CD8-CD4+CD25+FOXP3+ cells after 3 days culture with or without anti-CD3/anti-CD28 stimulation and in the presence of a layilin-crosslinking antibody as described on the x-axis for 20 minutes during LFA-1 activation staining. n=3 donors. Significance was defined by one\u2010way ANOVA, followed by Dunnett\u2019s multiple-comparisons test. *p<0.05, ***p<0.001. (E) Frequency of m24+ sg-LAYN and sg-CTRL Tregs gated on live CD8-CD4+CD25+FOXP3+ cells after 24 hours of culture in a non-coated plate or collagen IV-coated plate. n=6 donors from two independent experiments. Significance was defined by two\u2010way ANOVA, followed by Sidak\u2019s multiple-comparisons test. *p<0.05. (F) Numbers of cells attached to the bottom of the well are measured by the cell titer blue (expressed by relative fluorescence unit). n=7 donors from two independent experiments. Significance was defined by two\u2010way ANOVA. ns, nonsignificant, ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105277/elife-105277-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quality check of bulk RNAseq representing total counts for each sample (left panel) and LAYN count for each sample demonstrating CRISPR efficiency (right panel). n=4 paired donors for each group. (B) On the left panel, we represent the frequency of total m24+ regulatory T cells (Tregs) gated on live CD8-CD4+CD25+FOXP3 + cells after 3 days of culture with or without anti-CD3/anti-CD28 stimulation and in the presence of a layilin-crosslinking antibody as described on the x-axis for 20 minutes during lymphocyte function-associated antigen-1 (LFA-1) activation staining. The right panel represents the frequency of CD18+ Tregs. n=3 donors. Significance was defined by one\u2010way ANOVA, followed by Dunnett\u2019s multiple-comparisons test. *p<0.05, ***p<0.001. (C) Frequency of LAYN+ Tregs gated on live CD8-CD4+CD25+FOXP3+ cells to measure CRISPR efficiency after 24 hours of culture in a non-coated plate or collagen IV-coated plate. n=6 donors from two independent experiments.\n\nLFA-1 is critical for the development and function of Tregs (Marski et al., 2005; Wohler et al., 2009). LFA-1 is present either in a low-affinity inactive form or a high-affinity active form (Sun et al., 2019; Kondo et al., 2022). In its active form, LFA-1 mediates binding to intercellular adhesion molecule 1 (ICAM-1) and cell\u2013cell adhesion (Abram and Lowell, 2009; Walling and Kim, 2018). To test if layilin modulates LFA-1 function on Tregs, we utilized an anti-human layilin-crosslinking antibody (Mahuron et al., 2020). Layilin-expressing human Tregs were treated with anti-layilin-crosslinking antibody, and LFA-1 activation was quantified by flow cytometry using the m-24 antibody binding, a monoclonal antibody (mAb) that especially recognizes LFA-1 in its open, active conformation (Dransfield and Hogg, 1989). These experiments were performed with and without anti-CD3/anti-CD28 stimulation to determine whether TCR stimulation can enhance the effect of layilin on LFA-1 activation. Both in non-stimulated and stimulated conditions, crosslinking layilin on Tregs resulted in increased LFA-1 activation, as measured by increased m-24 mAb staining (Figure 4D).\n\nTo bolster our findings with layilin crosslinking antibodies, we set out to repeat these experiments with a natural ligand for layilin. Layilin has been shown to bind to collagen IV (Glasgow et al., 2022). Thus, to confirm layilin\u2019s impact on LFA-1 activation, we used our CRISPR system to reduce layilin expression (Figure 4\u2014figure supplement 1) and plated the cells from five different donors on non-coated or collagen IV-coated plates. Consistent with the results using layilin crosslinking mAbs, these experiments revealed that CRISPR-mediated Layn editing reduces LFA-1 activation only in the presence of collagen IV (Figure 4E). Finally, we tested the direct adhesive capacity of Tregs using an adhesion assay under the same coated plate conditions. Cells were sort-purified on layilin expression (as described above) to obtain pure populations of layilin-expressing and layilin-deficient Tregs. Consistent with our previous findings, Tregs deficient in layilin displayed a reduced capacity to bind to collagen IV-coated plates but not uncoated plates (Figure 4F). Taken together, this data reveals that engagement of layilin on Tregs results in enhanced LFA-1 activation and cellular adhesion.\n\n### Layilin induces cytoskeleton changes in Tregs\n\nActin polymerization is one of the major cytoskeleton changes involved in cell migration and adhesion (Gardel et al., 2010). Thus, we hypothesized that signaling through layilin would induce cytoskeleton changes consistent with increased adhesion. To test this, we measured actin dynamics in cells by performing F-actin staining on Tregs sort-purified based on layilin expression after CRISPR-editing with Layn-specific or control guide RNAs (as described in Figure 4A). These experiments were performed in the presence of layilin ligand (collagen IV) or irrelevant ligand (fibronectin). These experiments revealed increased F-actin staining and increased cellular projections (consistent with lamellipodia) in layilin-deficient cells only in the presence of collagen IV (Figure 5A and B). As previously shown, layilin contains a talin binding domain, which we have shown to be essential for layilin-LFA-1 interaction in exhausted CD8+ T cells (Mahuron et al., 2020). Furthermore, talin, vinculin, and paxillin are recruited to form a complex and interact with the binding domain of high-affinity conformation integrins, leading to focal adhesion and slowing cells (Jankowska et al., 2018). Conversely, an increase in polymerized actin content and cellular protrusions correlates with a higher motile profile (Dupr\u00e9 et al., 2015; Yan et al., 2019). Lamellipodia are the main protrusive structures formed by T cells during migration and require actin-related protein 3 (ARP3) (Obeidy et al., 2020). Taken together, we propose a working model (Figure 5C) in which layilin, by its interaction with LFA-1 and talin, stabilizes the formation of focal adhesion complexes and favors a more anchored Treg cell phenotype. Conversely, the absence of layilin promotes cell motility, at least in part, by enhancing lamellipodia formation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/105277/elife-105277-fig5-v1.jpg)\n\n**Figure 5.:** (A) Representative pictures of LAYN+ (on the top) or LAYN- (on the bottom), Tregs phalloidin staining (in pink) and nuclei (in blue) after a 48-hour culture on collagen IV (left) or fibronectin (right)-coated plates. White boxes highlight protuberances at the membranes. (B) Quantification of phalloidin staining associated with pictures in (A). n=3 donors; 10 pictures were quantified for each donor, and experiments were repeated independently twice. Significance was defined by two\u2010way ANOVA, followed by Sidak\u2019s multiple-comparisons test. *p<0.05. (C) Graphical hypotheses of layilin pathway mechanism of action. In the presence of layilin, it interacts with lymphocyte function-associated antigen-1 (LFA-1) and maybe other integrins and stabilizes the formation of a focal adhesion complex, leading to the anchoring mechanism of the cells. Without layilin, integrins are less prone to adhesion mechanisms, and the ARP3 complex may act in lamellipodia formation, leading to more migratory Tregs.\n\n## Discussion\n\nIn this study, we discovered that layilin, a C-type lectin cell surface receptor, is highly expressed by Tregs in skin. The summation of our data from results presented herein and previous studies (Mehta et al., 2021) suggests that layilin modulates Treg motility in tissues. This effect on motility is mediated, at least in part, through the modulation of LFA-1 activation and contributes to cytoskeletal remodeling necessary for cellular adhesion and movement.\n\nOur data supports a model whereby layilin expression is induced on Tregs upon entering non-lymphoid tissues such as skin. This acts to anchor Tregs in the tissue, possibly adjacent to (or within) collagen IV-rich blood vessels (Uitto et al., 1989; Pfisterer et al., 2021). In this capacity, layilin may help sequester Tregs to a defined niche, facilitating their ability to maintain tissue immune homeostasis in the steady state. Conversely, in pathological situations such as tumors and chronic inflammation, the motility of Tregs may play a larger role in their functionality, allowing them to navigate to various tissue microanatomic niches to attenuate specific cell types and inflammatory mediators. Notably, several studies have underscored the crucial role of adhesion properties, particularly those mediated by ICAM-1, the main adhesion molecule expressed by T cells, in enabling effective Treg suppression capacity (Gottrand et al., 2015; Tran et al., 2009; Chen et al., 2017). In this context, layilin expression on Tregs most likely acts to curtail their suppressive capacity by limiting their motility. Indeed, two-photon microscopy studies revealed that layilin-deficient Tregs are relatively more motile in inflamed skin compared to layilin-expressing control Tregs (Mehta et al., 2021). In support of this theory, herein, we show that reducing layilin expression on Tregs results in enhanced immune regulation in a skin inflammation model, as demonstrated by a significant reduction in pro-inflammatory cells, observed in Foxp3Cre/Laynfl/fl mice compared to controls. In contrast, it is interesting to highlight that, in vitro, layilin plays a minimal role in Treg activation and suppressive capacity in vitro. This suggests the role of layilin in the suppression capacities of Tregs depends on the more complex, dynamic, and collagen-rich in vivo environment.\n\nAn intriguing finding is the association between layilin and LFA-1 activation observed in Tregs, echoing previous discoveries in CD8+ T cells (Mahuron et al., 2020). LFA-1 is crucial for T cell engagement at the immune synapse (Hammer et al., 2019; Franciszkiewicz et al., 2013). While the modulation of LFA-1 by layilin may enhance Treg interactions with other cells, potentially boosting their suppressive abilities, it could also confine their impact to a narrowly defined area due to reduced motility.\n\nLayilin\u2019s role in enhancing the effector functions of CD8+ T cells in tumors (Zheng et al., 2017; Mahuron et al., 2020; Pan et al., 2019) and limiting Treg-suppressive capacity in inflamed tissues suggests that it could be a valuable therapeutic target for autoimmune and chronic inflammatory diseases. A layilin neutralizing antibody could attenuate CD8+ T cell killing and enhance Treg suppression, effectively working in concert to dampen tissue inflammation. Tissue-specific autoimmune diseases thought to be mediated by autoreactive CD8+ T cells and suboptimally controlled by Tregs would be attractive indications. However, more research is necessary to understand the role of layilin on non-immune cells, such as gastrointestinal epithelial cells (Bono et al., 2001; Kim et al., 2018), to help build confidence around this therapeutic hypothesis.\n\n## Materials and methods\n\n### Experimental animals\n\nFoxp3GFPCreERT2 mice were purchased from the Jackson Laboratory (ref #016961, Bar Harbor, ME) and were bred and maintained at the University of California San Francisco (UCSF) specific pathogen-free facility. As previously described by our group, Laynfl/fl mice were created by inserting LoxP sites flanking exon 4 of the Layn gene using CRISPR-Cas9 (Mehta et al., 2021). Layilin was deleted specifically on Tregs by crossing Laynfl/fl mice to Foxp3GFPCreERT2 mice upon treatment with tamoxifen. All mouse experiments were performed on 7\u201312-week-old animals. All mice were housed under a 12-hour light/dark cycle. All animal experiments were performed following the guidelines established by the Laboratory Animal Resource Center at UCSF, and all experimental plans and protocols were approved by the Institutional Animal Care and Use Committee (IACUC) beforehand.\n\n### Mouse tissue processing\n\nBriefly, mouse skin was minced and digested in a buffer containing collagenase XI, DNase, and hyaluronidase in complete Roswell Park Memorial Institute (RPMI) medium in an incubator shaker at 225 rpm for 45 minutes at 37\u00b0C. Once the single-cell suspensions were obtained, cells were counted using an automated cell counter (NucleoCounter NC-200, Chemometec). 2\u20134 \u00d7 106 cells were stained, and flow cytometric analysis was performed.\n\n### Human specimens\n\nNormal healthy human skin was obtained from patients at the UCSF undergoing elective surgery, and the specimens received were de-identified (study number 19-29608) and certified as Not Human Subjects Research. Blood samples were obtained from healthy adult volunteers (study number 12-09489) or ordered from the Standford Blood Center. Biopsies of psoriasis were obtained with a 6 mm punch biopsy tool (study number 19-29608). For all fresh human tissue samples, active/flaring disease was confirmed both clinically and histologically. Studies using human samples were approved by the UCSF Committee on Human Research and the institutional review board of UCSF. Informed written consent was obtained from all patients.\n\n### Human skin digestion\n\nSkin samples were stored in a sterile container on gauze and PBS at 4\u00b0C until digestion. Skin was processed and digested as previously described. Briefly, hair and subcutaneous fat were removed, and skin was cut into small pieces and mixed with digestion buffer containing 0.8 mg/ml collagenase type 4 (4188; Worthington), 0.02 mg/ml DNAse (DN25-1G; Sigma-Aldrich), 10% Fetal bovine serum (FBS), 1% 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES), and 1% penicillin/streptavidin in RPMI medium and digested overnight in an incubator. They were washed (2% FBS, 1% penicillin/streptavidin in RPMI medium), double filtered through a 100 \u03bcm filter, and cells were pelleted and counted.\n\n### Tregs are derived from human peripheral blood\n\nCD4+ T cells were purified using RosetteSep (Stem Cell), followed by a gradient of Ficoll-Paque Plus (GE Healthcare) from the peripheral blood of healthy volunteers. Once isolated, CD4+ T cells were stained and sorted by gating on live CD4+CD8-CD25hiCD127lo cells. Purified Tregs were ex vivo expanded for 12 days in complete X-Vivo media (Lonza) with 500 U/ml IL-2 (2000 U/ml, Tonbo Biosciences) and stimulated with anti-CD3/CD28 beads at a cells:beads ratio of 1:1 (Gibco). At D12, cells were frozen for later experiments.\n\n### Human Tregs engineering/CRISPR\n\nTo engineer human Treg, we used a CRISPR-cas9 SNP protocol. We thawed D12 Tregs and rested them for 4 hours. Afterward, we mixed 22.2 pmol of Streptococcus pyogenes Cas9 with 88.8 pmol of scramble single guide (sg-CTRL) or LAYN single guide (sg-LAYN, UUCUCGAAGACUGAACUUUG) and incubated for 10 minutes at room temperature to form the RNP complex. During the incubation, we harvested the cells, counted them using the NucleoCounter, and resuspended them in P3 buffer cells at a 2 million/20 ul concentration. Once the RNP complex was formed, an electroporation enhancer (IDT) was added at a ratio of 1:2 (EE:RNP) to the cells in an electroporation plate. Cells were electroporated using the DG-113 program on a 4D-Nucleofector 96-well unit (Lonza). After 4 days, efficiency was measured, and cells were used for the experiment.\n\n### Single-cell RNA sequencing\n\nSequencing data are available on the National Center for Biotechnology Information Gene Expression Omnibus (GEO): GSE249622, GSE249793, and GSE283500. scRNA-seq and scTCR-seq libraries were prepared at the UCSF Core Immunology laboratory using the 10X Chromium Single Cell 5\u2032 Gene Expression and V(D)J Profiling Solution kit, according to the manufacturer\u2019s instructions (10X Genomics). 150 paired-end sequencing was performed on a NovaSeq 6000 instrument. The Cell Ranger analysis pipelines were then used to process the generated sequencing data. Data were demultiplexed into FASTQ files, aligned to the GRCh38 human reference genome, and counted, and TCR library reads were assembled into single-cell V(D)J sequences and annotations. For gene expression analysis, the R package Seurat was used. Filtered gene-barcode matrices were loaded, and quality control steps were performed (low-quality or dying cells and cell doublets/multiplets were excluded from subsequent analysis). Data were normalized and scaled, then linear dimensional reduction using principal component analysis was performed. Highly variable genes were used to perform unsupervised clustering, and non-linear dimensional reduction with Uniform Manifold Approximation and Projection (UMAP) was used to visualize the data.\n\nFor differential gene expression analysis comparing LAYN-expressing cells to LAYN-non-expressing cells, data were subsetted into LAYN-negative (LAYN<0) and LAYN-positive (LAYN>0) using LAYN expression >0 as a threshold. For TCR analysis, samples were downsampled to get the same number of cells for each donor. All plots were generated using the R packages ggplot2 and cowplot.\n\n### Conventional and spectral flow cytometry\n\nSingle-cell suspensions were counted and pelleted. Cells were washed and stained with Ghost Viability dye (Tonbo Biosciences) and antibodies against surface markers in PBS. Cells were fixed and permeabilized for intracellular staining using a FoxP3 staining kit (eBiosciences) and then stained with antibodies against intracellular markers. Fluorophore-conjugated antibodies specific for human or mouse surface and intracellular antigens were purchased from SinoBiological, Cytek, BD Biosciences, eBiosciences, or BioLegend. The following anti-human antibodies and clones were used: layilin (clone #07, Sino Biological Cat# 10208-MM07, RRID:AB_2860113), PE-Streptavidin, CD3 (UCHT1), CD4 (SK3), CD8 (SK1), CD45RO (UCHL1), FoxP3 (PCH101), CD25 (M-A251), CTLA4 (14D3), ICOS (ISA-3), CD27 (O323), CD11c (3.9), HLA-DR (L243), CD137 (4B4-1), PD1 (EH12.2H7), Ki67 (EH12.2H7), LAG3 (11C3C65), CD38 (HIT2), CD62L (DREG56), CD69 (FN50), CD127 (eBioRDR5), GATA3 (L50-823), GZMB (GB11), and HELIOS (22F6). Layilin Ab was biotin-tagged using Miltenyi\u2019s One-Step Antibody Biotinylation kit (130-093-385). The following anti-mouse antibodies and clones were used: CD3 (145-2C11), CD4 (RM4-5), CD8 (53-6.7), CD45 (30-F11), FoxP3 (FJK-16s), TCRb (H57-597), CD25 (PC61.5), CTLA4 (UC10-4B9), ICOS (C398.4A), Ki67 (B56), CD44 (IM7), CD69 (H1.213), IL-17 (TC11-18H10.1), IFN\u03b3 (XMG1.2), and TNF\u03b1 (MP6-XT22). Samples were run on a Fortessa analyzer (BD Biosciences) for conventional flow cytometry or an Aurora analyzer (Cytek) for spectral flow cytometry in the UCSF Flow Cytometry Core. Data was collected using FACS Diva software (BD Biosciences). Data were analyzed using FlowJo software (FlowJo, LLC). Dead cells and doublet cell populations were excluded, followed by pre-gating on CD45+ populations for immune cell analysis. Lymphoid cells were gated as TCR\u03b2+CD3+ T cells, CD3+CD8+ T cells (CD8), CD3+CD4+CD25\u2013Foxp3\u2013 T effector cells (Teff), and CD3+CD4+CD25+Foxp3+ Tregs. For human Tregs, expression of layilin was quantified based on isotype control antibody or secondary control.\n\n### RNA-sequencing analysis\n\nFor human Tregs, cells were sorted based on layilin expression and put in culture for 24 hours in the presence of anti-CD3/anti-CD28 stimulation. After 24 hours, cells have been harvested and spun down to obtain a pellet, followed by a flash freezing of the subsequent. Samples have been shipped to Novogene for RNA extraction, library preparation, and sequencing.\n\nFor the IMQ mouse model, Treg and Teff cells were isolated respectively by gating on live CD45+CD3+CD4+CD8-CD25hiCD62LhiGFP+ and CD45+CD3+CD4+CD8-CD25loCD62LhiGFP- cells. Cells were sorted into lysis buffer from the kit and frozen on dry ice before being processed using the SMART-Seq v4 Ultra Low Input RNA Kit (Takara Bio) according to the manufacturer\u2019s protocol. 100 pg of amplified cDNA obtained was used to generate a library using Nextera XT DNA preparation kit (Illumina). The quality of cDNA and library products was checked and quantified using an Agilent High Sensitivity DNA chip. An equal quantity of libraries was indexed and pooled together before being sent to Novogene.\n\nWe used NovaSeq 6000 PE150 to a 30M read depth for all sequencing. Reads were aligned to Ensembl GRCm39 (for mouse) or GRCh38 (for human) reference genome using Kallisto (RRID:SCR_016582). The R/Bioconductor package Limma voom was used to determine differential expression (Law et al., 2014; Ritchie et al., 2015). Sequencing data are available on the National Center for Biotechnology Information GEO with accession numbers GSE282563 (for human) and GSE282465.\n\n### In vitro human Treg suppression assay\n\nBefore plating, the responder cells (CD4+ T effectors and CD8+ T cells) were stained with cell trace violet (CTV, Thermo Fisher) at 7 million/ml concentration and CTV diluted at 1:8000 in PBS. After a 30-minute incubation in the dark at 37\u00b0C, cells were washed and resuspended at a concentration of 5 \u00d7 105 cells/ml. 50K responder cells were plated in 96-well U-bottom plates, and appropriate cell numbers equivalent to each ratio of Tregs CRISPR were added to the plate, as well as anti-CD3/anti-CD28 stimulation. After a 3-day incubation, the proliferation of responder cells was measured using CTV quantification and flow cytometry.\n\n### Imiquimod model\n\nMice were treated for 5 days with tamoxifen to induce Cre recombinase before the start of the treatment. On the last day of tamoxifen treatment, the back skin of the mice was shaved. Two days later, we measured the clinical score of mice to establish a baseline with the following readouts: erythema, scaling, skin lesions, and weight. We then started the IMQ 5% cream (Taro) application for six consecutive days. On day 7 (for flow cytometry) or day 5 (for bulk RNAseq), mice were sacrificed, and skin and sdLN were harvested. Samples were stained and analyzed by flow cytometry.\n\n### LFA-1 activation assay\n\n100,000 cells were plated in a 96-well U-plate for 24 hours in combination with appropriate treatment. To report LFA-1 activation, cells were stained at 37\u00b0C with clone m24 (BioLegend) in an affinity buffer containing 20 mM HEPES, 140 mM NaCl, 1 mM MgCl2, 1 mM CaCl2, 2 mg/ml glucose, and 0.5% bovine serum albumin (BSA). 2 mM MnCl2 was used as a positive control and a combination of 2 mM MnCl2 + 2 mM EDTA as negative control. For layilin crosslinking, layilin antibody was added simultaneously using the following concentrations: 12.5 or 25 ug/ml (Sino Biological).\n\n### In vitro human Treg adhesion assay\n\nThe day before, the plate was coated with 2.5 ug/ml of collagen IV (C5533, MilliporeSigma) and incubated overnight at 4\u00b0. Cells were sorted based on layilin expression and put in culture for 24 hours in the presence of anti-CD3/anti-CD28 stimulation. After incubation, the plate was washed twice by flipping it to remove any unbound cells. To measure the cells attached, we used Cell Titer Blue (Promega) and read the fluorescence using a plate reader.\n\n### F-actin staining\n\nCells were sorted based on layilin expression and put in culture for 48 hours in the presence of anti-CD3/anti-CD28 stimulation. After 48 hours, cells were harvested, and a cytospin was performed to transfer cells on a slide. After being fixed for 10 minutes at room temperature using 4% paraformaldehyde (PFA), slides were washed and stained with phalloidin Alexa Fluor 546 (Invitrogen) diluted in a mix of PBS containing 1% BSA and 0.1% saponin for an hour at room temperature protected from light. After washing in PBS, slides were mounted with a hard mounting solution containing DAPI (Southern Biotech). Images \u00d7100 were obtained using a confocal microscope.\n\n### Quantitative PCR\n\nFor the assessment of Layn gene expression, Tregs and Teffs were sort-purified from skin and sdLNs of Foxp3CreERT2; Laynfl/fl and Foxp3CreERT2 mice. RNA was isolated using a column-based kit (PureLink RNA Mini Kit, Thermo Fisher), and then transcribed (iScript cDNA Synthesis Kit, Bio-Rad). Expression of Layn was determined using a SYBR Green assay (SSo Advanced Universal SYBR Green kit; Bio-Rad). The cycle number of duplicate or triplicate samples was normalized to the expression of the endogenous control Rsp17. Primer sequences used are for Rsp17: for: 5\u2032-CGCCATTATCCCCAGCAAG-3\u2032; rev 5\u2032-TGTCGGGATCCACCTCAATG-3\u2032; for layn: for: 5\u2032-TCCATGACGCCTTTCAAAGAC-3\u2032; rev 5\u2032-AGGCTGTGTTATTGCTCTGTTTC-3\u2032. Data are presented as relative arbitrary units (AU).\n\n### Statistical analyses\n\nStatistical analyses were performed with Prism software package version 10 (GraphPad). p-Values were calculated using two-tailed unpaired or paired Student\u2019s t-test for comparison between two groups, one- or two-way ANOVA, followed by the appropriate post hoc test for comparison including more than two groups and/or more than one condition. Pilot experiments were used to determine the sample size for animal experiments. No animals were excluded from the analysis unless there were technical errors. Mice were age- and gender-matched and randomly assigned into experimental groups. Appropriate statistical analyses were applied, assuming a normal sample distribution. All in vivo mouse experiments were conducted with at least 2\u20133 independent animal cohorts. RNA-seq experiments were conducted using 4\u20135 biological samples (as indicated in figure legends). Data are mean \u00b1 S.E.M. p-Values correlate with symbols as follows: ns = not significant, p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shimon Sakaguchi, Osaka University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.105277.2.sa0](https://doi.org/10.7554/eLife.105277.2.sa0)\n\nThis study reports valuable findings on the role of layilin in the motility and suppressive capacity of clonal expanded regulatory T cells (Tregs) in the skin. Although the strength of the study is utilizing conditional knock-out mice and human skin samples, the analysis of the molecular mechanism by which layilin affects Treg function is incomplete. The study will be of interest to medical scientists working on skin immunology.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105277.2.sa1](https://doi.org/10.7554/eLife.105277.2.sa1)\n\nSummary and Strengths:\n\nThis work shows that the gene encoding Layilin is expressed preferentially in human skin Tregs, and that the fraction of Tregs expressing Layilin may overexpress genes related to T cell activation and adhesion. Expression of Layilin on Tregs would have no impact on activation markers or in vitro suppressive function. However, activation of Layilin either with a cross-linking antibody or collagen IV, its natural ligand, would promote cell adhesion via LFA1 activation. The in vivo functional role of Layilin in Tregs is studied in a conditional KO mouse model in a model of skin inflammation. Deletion of Layilin in Tregs led to an attenuation of the disease score and a reduction in the cutaneous lymphocyte infiltrate. This work is clearly innovative, but a number of major points limit its interest.\n\nWeakness and major points:\n\n(1) The number of panels and figures suggests that this story is quite complete but several data presented in the main figures do not provide essential information for a proper understanding of Layilin's role in Tregs.\n\nFigures 1I, 1J, and the whole of Figure 2 could be placed as supplementary figures. Also, for Figure 3E, it would be preferable to show the percentage of cells expressing cytokines rather than their absolute numbers. In fact, the drop in the numbers of cytokine-producing cells is probably due solely to the drop in total cell numbers and not to a decrease in the proportion of cells expressing cytokines. If this is the case, these data should be shown in supplementary figures. Finally, Figures 4 and 5 could be merged.\n\n(2) Some important data are not shown or not mentioned.\n\n(a) It would be important to show the proportion of Treg, Tconv, and CD8 expressing Layilin in healthy skin and in patients developing psoriasis, as well as in the blood of healthy subjects.\n\n(b) We lack information to be convinced that there is enrichment for migration and adhesion genes in Layilin+ Tregs in the GSEA data. The authors should indicate what geneset libraries they used. Indeed, it is tempting to show only the genesets that give results in line with the message you want to get across. If these genesets come from public banks, the bank used should be indicated, and the results of all gene sets shown in an unbiased way. In addition, it should be indicated whether the analyses were performed on untransformed or pseudobulk scRNAseq data analyses. Finally, it would be preferable to confirm the GSEA data with z-score analyses, as Ingenuity does, for example. Indeed, in GSEA-type analyses, there are genes that have activating but also inhibiting effects on a pathway in a given gene set.\n\n(c) For all FACS data, the raw data should be shown as histograms or dot plots for representative samples.\n\n(d) For Figure 5B, the number of samples analyzed is insufficient to draw clear conclusions.\n\n(3) For Figs. 4 and 5, the design of the experiment poses a problem. Indeed, the comparison between Layn+ and Layn- cells may, in part, not be directly linked to the expression or absence of expression of this protein. Indeed, Layn+ and Layn- Tregs may constitute populations with different biological properties, beyond the expression of Layn. However, in the experiment design used here, a significant fraction of the sorted Layn- Tregs will be cells belonging to the population that has never expressed this protein. It would have been preferable to sort first the Layn+ Tregs, then knock down this protein and re-sort the Layn- Tregs and Layn+ Tregs. If this experiment is too cumbersome to perform, I agree that the authors should not do it. However, it would be important to mention the point I have just made in the text.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105277.2.sa2](https://doi.org/10.7554/eLife.105277.2.sa2)\n\nSummary:\n\nIn their manuscript, Gouirand et al. report on the role of Layilin expression for the motility and suppressive capacity of regulatory T cells (Tregs). In previous studies, the authors had already demonstrated that Layilin is expressed on Tregs, that it acts as a negative regulator of their suppressive capacity, that it functions to anchor Tregs in non-lymphoid tissues, and that it enhances the adhesive properties of Layilin-expressing cells by co-localization with the integrin \u03b1L\u03b22 (LFA-1). Building on these published data, the authors now show that Layilin is highly expressed on a subset of clonally expanded effector Tregs in both healthy and psoriatic skin and that deletion of Layilin in Tregs in vivo resulted in significantly attenuated skin inflammation. Furthermore, the authors addressed the molecular mechanism by which Layilin affects the suppressive capacity of Tregs and showed that Layilin increased Treg adhesion via modulation of LFA-1, resulting in distinct cytoskeletal changes.\n\nStrengths:\n\nCertainly, the strength of this study lies in the combination of data from mouse and human models.\n\nWeaknesses:\n\nSome of the conclusions drawn by the authors must be treated with caution, as the experimental conditions were not always appropriate, leading to a risk of misinterpretation.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105277.2.sa3](https://doi.org/10.7554/eLife.105277.2.sa3)\n\nSummary:\n\nGouirand et al explore the function of Layilin on Treg in the context of psoriasis using both patient samples and a conditional mutant mouse model. They perform functional analysis in the patient samples using Cas9-mediated deletion. The authors suggest that Layilin works in concert with integrins to bind collagen IV to attenuate cell movement.\n\nThe work is well done and built on solid human data. The report is a modest advance from the authors' previous report in 2021 that focused on tumor responses, with this report focusing on psoriasis. There are some experimental concerns that should be considered.\n\nStrengths:\n\n(1) Good complementation of patient and animal model data.\n\n(2) Solid experimentation using state-of-the-art approaches.\n\n(3) There is clearly a biological effect of LAYN deficiency in the mouse model.\n\n(4) The report adds some new information to what was already known from the previous reports.\n\nWeaknesses:\n\n(1) It is not clear that the assays used for functional analysis of the patient samples were optimal.\n\n(2) Several conclusions are not fully substantiated.\n\n(3) The report is lacking some experimental details.\n",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e3b5865c-5a89-4835-b572-ae60a635e3ed",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C1",
+      "claim": "Regulatory T cells (Tregs) are essential for maintaining immune tolerance in both lymphoid and non-lymphoid tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulatory T cells (Tregs) are essential for maintaining immune tolerance in both lymphoid and non-lymphoid tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific consensus about Treg function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "9d07fccf-1a37-4e6b-a60b-a8a24b8c6f9f",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C2",
+      "claim": "Layilin is predominantly expressed on Tregs in skin.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that layilin, a C-type lectin receptor, is predominantly expressed on Tregs in skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-cell RNA sequencing data presented in Figure 1A-C showing LAYILIN expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "fb15d3f0-3c2e-46f2-88da-a3bb6442f891",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C3",
+      "claim": "Layilin was highly expressed on a subset of clonally expanded 'effector' Tregs in both healthy and psoriatic human skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Layilin was highly expressed on a subset of clonally expanded 'effector' Tregs in both healthy and psoriatic human skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TCR repertoire analysis showing expanded clones in LAYN-expressing Tregs (Figure 1I and J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "34223732-0e10-40cb-838d-75e335b68dfb",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C4",
+      "claim": "Layilin-expressing Tregs exhibited a transcriptional profile indicative of enhanced adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Layilin-expressing Tregs exhibited a transcriptional profile indicative of enhanced adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential gene expression analysis showing enrichment of adhesion molecules in LAYN-expressing Tregs (Figure 1G-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "2ca1d22c-cf43-4ea1-9530-b75f9482c3e4",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C5",
+      "claim": "Deletion of layilin in Tregs in mice in vivo resulted in significantly attenuated skin inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of layilin in Tregs in mice in vivo resulted in significantly attenuated skin inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IMQ model data showing reduced clinical scores in Foxp3Cre/Laynfl/fl mice (Figure 3B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "76e5830b-a708-4090-b415-c183feefeb78",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C6",
+      "claim": "Layilin enhanced in vitro human Treg adhesion via modulation of lymphocyte function-associated antigen-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, layilin enhanced in vitro human Treg adhesion via modulation of lymphocyte function-associated antigen-1, resulting in distinct cytoskeletal alterations consistent with enhanced focal adhesion and lamellipodia formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by LFA-1 activation assays and adhesion assays (Figure 4D-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "f521c1a7-a0c6-42ce-9496-07413eb345a3",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C7",
+      "claim": "Layilin modulates Treg motility and adhesion in non-lymphoid tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we define layilin as a critical regulator of Treg-suppressive capacity by modulating motility and adhesion in a non-lymphoid tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple experimental approaches including in vivo deletion studies, adhesion assays, and cytoskeletal analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "5aa3b55e-6eb7-423f-8176-01e01fe693b8",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C8",
+      "claim": "Specialized subsets of Tregs stably reside in non-lymphoid tissues, including skin, gut, and lung.",
+      "claim_type": "EXPLICIT",
+      "source": "Although present in lymphoid organs, specialized subsets of these cells stably reside in non-lymphoid tissues, including skin, gut, and lung (Mu\u00f1oz-Rojas and Mathis, 2021; Ali and Rosenblum, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "2cc51e6f-5a31-406b-aa9b-a2068018cba5",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C9",
+      "claim": "Subsets of Tregs in skin play a crucial role in suppressing hair follicle autoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsets of Tregs in skin play a crucial role in suppressing hair follicle autoreactivity (Cohen et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "17f37dd1-7178-4c01-8cdd-5dc30b9462c1",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C10",
+      "claim": "Tregs facilitate hair follicle cycling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these cells facilitate hair follicle cycling (Ali et al., 2017), augment wound healing (Nosbaum et al., 2016), and establish and maintain tolerance to skin commensals (Scharschmidt et al., 2015; Scharschmidt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "bb51f77c-aeb9-4796-b1d7-0ccfee33214a",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C11",
+      "claim": "Tregs augment wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these cells facilitate hair follicle cycling (Ali et al., 2017), augment wound healing (Nosbaum et al., 2016), and establish and maintain tolerance to skin commensals (Scharschmidt et al., 2015; Scharschmidt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "25587eef-6ece-45b2-8140-784c22ac9dc6",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C12",
+      "claim": "Tregs establish and maintain tolerance to skin commensals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these cells facilitate hair follicle cycling (Ali et al., 2017), augment wound healing (Nosbaum et al., 2016), and establish and maintain tolerance to skin commensals (Scharschmidt et al., 2015; Scharschmidt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "75b2fc3e-7a90-4486-95ef-009506a41491",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C13",
+      "claim": "Layilin is a cell surface C-type lectin receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Layilin is a cell surface C-type lectin receptor (Borowsky and Hynes, 1998; Bono et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "7d2f9656-ef8e-4454-b048-306fc3c43c8f",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C14",
+      "claim": "C-type lectin receptors play a role in many cellular functions, including adhesion and cell signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of receptors plays a role in many cellular functions, including adhesion and cell signaling (Brown et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "82a73af7-ecce-4f7c-ac1d-b241bb8e31ae",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C15",
+      "claim": "Layilin is preferentially expressed on exhausted CD8+ T cells infiltrating human and murine tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we and others have shown that layilin is preferentially expressed on exhausted CD8+ T cells infiltrating human and murine tumors (Zheng et al., 2017; Fu et al., 2014; Mahuron et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "e65aad3a-e319-43bc-9aed-a1654ab9802f",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C16",
+      "claim": "Intratumoral Tregs express high levels of layilin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, intratumoral Tregs express high levels of layilin (Bhairavabhotla et al., 2016; Mehta et al., 2021; De Simone et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "6063ec67-3657-43ef-a34c-b09e9f914c53",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C17",
+      "claim": "Layilin functions to anchor Tregs in non-lymphoid tissues and limits their suppressive capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we have shown that layilin functions to anchor Tregs in non-lymphoid tissues, and in doing so, limits their suppressive capacity (Mehta et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "0cfdf9c8-d84a-467f-ab2e-cca08c486c18",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C18",
+      "claim": "On CD8+ T cells, layilin co-localizes with integrin \u03b1L\u03b22 (lymphocyte function-associated antigen-1 [LFA-1]), enhancing its adhesive properties.",
+      "claim_type": "EXPLICIT",
+      "source": "On CD8+ T cells, layilin co-localizes with integrin \u03b1L\u03b22 (lymphocyte function-associated antigen-1 [LFA-1]), enhancing its adhesive properties (Mahuron et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "e3f88923-2d6a-4679-bed3-a2b459650ff8",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C19",
+      "claim": "The main population expressing LAYILIN in skin are Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations (Bhairavabhotla et al., 2016), the main population expressing LAYILIN are Tregs (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-cell RNA-seq data shown in Figure 1A-C and consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "26b2009d-be78-489f-8e72-130413b6fcd2",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C20",
+      "claim": "There were no changes in the relative expression of LAYN per cell when comparing Treg clusters from psoriasis skin with healthy control skin.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no changes in the relative expression of LAYN per cell when comparing Treg clusters from psoriasis skin with healthy control skin (Figure 1\u2014figure supplement 1A), suggesting that LAYN expression is not increased on Tregs in inflamed skin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by volcano plot analysis shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "5eb27919-3511-4a06-a297-61d4bdd3c2a9",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C21",
+      "claim": "LAYN expression is not increased on Tregs in inflamed skin.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no changes in the relative expression of LAYN per cell when comparing Treg clusters from psoriasis skin with healthy control skin (Figure 1\u2014figure supplement 1A), suggesting that LAYN expression is not increased on Tregs in inflamed skin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that LAYN expression per cell does not change between healthy and psoriatic skin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "42d7de0e-245d-4d46-8314-cfba365c7e57",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C22",
+      "claim": "Layilin is expressed on ~40\u201350% of Tregs in both healthy and inflamed skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Because layilin is expressed on ~40\u201350% of Tregs in both healthy and inflamed skin (Mehta et al., 2021), we sought to understand how layilin-expressing Tregs differed from layilin-non-expressing Tregs at the transcriptional level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "5a65e594-d7b0-447e-be93-821eb41084c4",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C23",
+      "claim": "LAYN-expressing and non-expressing Tregs have equivalent levels of FOXP3 and CTLA-4 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LAYN-expressing (LAYN>0) and non-expressing (LAYN<0) cells are relatively similar to equivalent levels of FOXP3 and CTLA-4 expression (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by violin plot data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "b173cec0-c8fc-4d02-a76e-5d853fef69ea",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C24",
+      "claim": "636 genes were significantly differentially expressed between LAYN-positive and LAYN-negative Tregs in psoriatic skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on psoriatic skin, we found that 636 genes were significantly differentially expressed (DEGs) between LAYN-positive and LAYN-negative Tregs (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by volcano plot analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "97df0fdf-ac30-4275-be25-95a7cf987481",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C25",
+      "claim": "Several TNFRSF family genes and several adhesion molecules, including integrin coding genes (ITGB7 and ITGB6) or cell\u2013cell adhesion (CADM1), were expressed at significantly higher levels in LAYN-expressing Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, several TNFRSF family genes and several adhesion molecules, including integrin coding genes (ITGB7 and ITGB6) or cell\u2013cell adhesion (CADM1), were expressed at significantly higher levels in LAYN-expressing Tregs (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by differential gene expression analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "4291022c-4f10-40c7-9717-bc095eb5c068",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C26",
+      "claim": "Pathways for T cell activation and cell migration and adhesion are enriched in LAYN-expressing Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) on DEGs revealed pathways for T cell activation and cell migration and adhesion to be enriched in LAYN-expressing Tregs (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "5a450ac2-3369-460b-9435-77cddaca3abc",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C27",
+      "claim": "TCR engagement is a potent inducer of layilin expression on Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell receptor (TCR) engagement is a potent inducer of layilin expression on Tregs (Mehta et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "1d6f2d47-33a6-438d-a202-eaeb30b3e6d6",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C28",
+      "claim": "LAYN-expressing Tregs had more expanded clones, with the top 15 expressed clonotypes being more abundant in LAYN-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, LAYN-expressing Tregs had more expanded clones, with the top 15 expressed clonotypes being more abundant in LAYN-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TCR repertoire analysis shown in Figure 1I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "2a27bf25-7855-4806-896d-b61db7046224",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C29",
+      "claim": "The clonal expansion pattern in LAYN-expressing Tregs is similar to previous observations made in CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are similar to previous observations made in CD8+ T cells (Mahuron et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to previous literature findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "1722b666-311d-4065-a9d3-e312f70d0023",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C30",
+      "claim": "LAYN expression correlates with more activated, more motile, and clonally expanded Tregs in psoriatic skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, transcriptional immunophenotyping of Tregs isolated from psoriatic skin suggests that LAYN expression correlates with more activated, more motile, and clonally expanded cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference drawn from multiple data types including transcriptional profiling and TCR analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "1c959a28-4c86-4482-ae5d-8a58c24e8c1f",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C31",
+      "claim": "Deleting layilin on 30\u201350% of Tregs had no effect on their ability to suppress either CD4+ or CD8+ T cell proliferation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, deleting layilin on 30\u201350% of Tregs had no effect on their ability to suppress either CD4+ or CD8+ T cell proliferation (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro suppression assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "6a7a201d-2d58-4ed8-8c6a-9a239ff0025f",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C32",
+      "claim": "Deletion of layilin did not influence Treg activation across multiple donors with or without TCR stimulation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, deletion of layilin did not influence Treg activation across multiple donors with or without TCR stimulation (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spectral flow cytometry analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "6d51126c-76e2-4a1a-9492-75223fe8e1f1",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C33",
+      "claim": "Layilin plays a minimal role in Treg activation and suppressive capacity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this data suggests that layilin plays a minimal role, if any, in Treg activation and suppressive capacity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the in vitro experimental data showing no significant effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "fb1f0dde-c151-499d-ba6c-0cfc26abeb14",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C34",
+      "claim": "Layilin acts to anchor Tregs in tissues and deletion selectively in these cells results in enhanced tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that layilin acts to anchor Tregs in tissues and that deletion selectively in these cells results in enhanced tumor growth (Mehta et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "03857ca3-a304-4257-9d1f-047630f0762e",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C35",
+      "claim": "Tregs play a significant role in the imiquimod (IMQ) model of skin inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we utilized the well-established imiquimod (IMQ) model of skin inflammation (Gangwar et al., 2022; van der Fits et al., 2009), where Tregs are known to play a significant role (Choi et al., 2020; Chen et al., 2022; Hartwig et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "889b7d66-269f-45fd-8fe4-d2e32f70d0a3",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C36",
+      "claim": "Foxp3Cre/Laynfl/fl mice showed a significant reduction in Layn expression in Tregs after tamoxifen treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments confirmed a significant reduction in Layn expression in Tregs from Foxp3Cre/Laynfl/fl mice (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "0741db78-822f-4543-972e-79ccd012988b",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C37",
+      "claim": "Foxp3Cre/Laynfl/fl mice had a significant reduction in the clinical severity of skin inflammation compared to control mice in the IMQ model.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, we observed a significant reduction in the clinical severity of skin inflammation in Foxp3Cre/Laynfl/fl mice treated with tamoxifen compared to age- and gender-matched littermate Foxp3Cre control mice treated with tamoxifen (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by clinical scoring data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "212978db-eae6-49fa-9119-14e3e02fbc73",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C38",
+      "claim": "Foxp3Cre/Laynfl/fl mice had a significant reduction in the absolute number of skin infiltrating CD4+ Teff cells and CD8+ T cells compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxp3Cre/Laynfl/fl mice had a significant reduction in the absolute number of skin infiltrating CD4+ Teff cells and CD8+ T cells compared to controls (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry quantification shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "7b3a379f-2849-4775-8cfe-a9a122a089ce",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C39",
+      "claim": "There was a significant reduction in the number of TNFa-producing CD4+ Teff cells, IL-17-producing CD8+ T cells, and IL-17-producing Tregs in Foxp3Cre/Laynfl/fl mice compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there was a significant reduction in the number of TNFa-producing CD4+ Teff cells, IL-17-producing CD8+ T cells, and IL-17-producing Tregs in Foxp3Cre/Laynfl/fl mice compared to controls (Figure 3E, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 3E and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "41bf98c8-539a-42d0-a99e-d67ef73670e5",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C40",
+      "claim": "There were no significant differences in the expression of select Treg activation markers between layilin-deleted and control Tregs in the IMQ model.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in the expression of select Treg activation markers between layilin-deleted and control Tregs (Figure 3F, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 3F and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "00648f75-fe85-4eef-ac02-c825094e3095",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C41",
+      "claim": "Bulk RNA sequencing identified several differentially expressed genes in Foxp3Cre/Laynfl/fl Tregs relative to Foxp3Cre control Tregs after 4 days of IMQ treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments identified several DEGs in Foxp3Cre/Laynfl/fl mice relative to Foxp3Cre control mice both treated with tamoxifen (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bulk RNA-seq data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "9590ede8-4fa6-4623-a48b-d289e7c96987",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C42",
+      "claim": "GSEA of DEGs from Tregs in the IMQ model revealed enrichment in pathways involved in cellular movement, locomotion, and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GSEA of DEGs revealed enrichment in pathways involved in cellular movement, locomotion, and migration (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "61cb7ab5-6b87-4cdf-a899-c75b6d26e56c",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C43",
+      "claim": "Layilin attenuates Treg suppression in vivo without altering their activation capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results reveal that layilin attenuates Treg suppression in vivo without altering their activation capacity and is consistent with previous studies that suggest that the anchoring function of layilin limits Treg's ability to optimally mediate immune regulation in skin (Mehta et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the in vivo IMQ model data and consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "7bc6f04c-7439-47b7-af9a-f2af15d7c9f5",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C44",
+      "claim": "Layilin co-localizes with LFA-1 on CD8+ T cells and functions to augment LFA-1-mediated adhesion of these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that layilin co-localizes with LFA-1 on CD8+ T cells and functions to augment LFA-1-mediated adhesion of these cells (Mahuron et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "1ab0368e-03a4-4085-9c28-24c06be429fb",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C45",
+      "claim": "Several genes involved in cellular locomotion, migration, and adhesion were differentially expressed in layilin-expressing vs. layilin-edited human Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the experiments described above where layilin was deleted in Tregs in vivo in mice (Figure 3), several genes involved in cellular locomotion, migration, and adhesion were differentially expressed in layilin-expressing vs. layilin-edited cells (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bulk RNA-seq data from CRISPR-edited human Tregs shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "73b0ef37-7d44-4c75-a12c-df81fa4ba94b",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C46",
+      "claim": "LFA-1 is critical for the development and function of Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "LFA-1 is critical for the development and function of Tregs (Marski et al., 2005; Wohler et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "d8d7490d-0a4c-47dc-9a9e-b7a31cf05d12",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C47",
+      "claim": "LFA-1 is present either in a low-affinity inactive form or a high-affinity active form.",
+      "claim_type": "EXPLICIT",
+      "source": "LFA-1 is present either in a low-affinity inactive form or a high-affinity active form (Sun et al., 2019; Kondo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "fc373ec6-9ad9-4903-8e6b-16817f98f45f",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C48",
+      "claim": "In its active form, LFA-1 mediates binding to intercellular adhesion molecule 1 (ICAM-1) and cell\u2013cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "In its active form, LFA-1 mediates binding to intercellular adhesion molecule 1 (ICAM-1) and cell\u2013cell adhesion (Abram and Lowell, 2009; Walling and Kim, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "6a4034df-25e6-4cda-b1c1-cfb43a91286d",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C49",
+      "claim": "Crosslinking layilin on Tregs resulted in increased LFA-1 activation, as measured by increased m-24 mAb staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Both in non-stimulated and stimulated conditions, crosslinking layilin on Tregs resulted in increased LFA-1 activation, as measured by increased m-24 mAb staining (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data using m-24 antibody shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "1c6f323e-c6a3-409d-998a-7162c46d889e",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C50",
+      "claim": "Layilin has been shown to bind to collagen IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Layilin has been shown to bind to collagen IV (Glasgow et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "396db338-5834-4f5e-b2f6-d30d946c5618",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C51",
+      "claim": "CRISPR-mediated Layn editing reduces LFA-1 activation only in the presence of collagen IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results using layilin crosslinking mAbs, these experiments revealed that CRISPR-mediated Layn editing reduces LFA-1 activation only in the presence of collagen IV (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "a39a03d1-0800-4eb8-90ef-a3f6b8a2347e",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C52",
+      "claim": "Tregs deficient in layilin displayed a reduced capacity to bind to collagen IV-coated plates but not uncoated plates.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous findings, Tregs deficient in layilin displayed a reduced capacity to bind to collagen IV-coated plates but not uncoated plates (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by adhesion assay data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "0f3ba22f-6035-4602-992f-17adeddeaed6",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C53",
+      "claim": "Engagement of layilin on Tregs results in enhanced LFA-1 activation and cellular adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this data reveals that engagement of layilin on Tregs results in enhanced LFA-1 activation and cellular adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from multiple experimental approaches including crosslinking, CRISPR editing, and adhesion assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "dccb9577-6fce-46ed-a401-d934574d0cf0",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C54",
+      "claim": "Actin polymerization is one of the major cytoskeleton changes involved in cell migration and adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin polymerization is one of the major cytoskeleton changes involved in cell migration and adhesion (Gardel et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "7554122c-91cb-4919-9d2f-9864f4a44b32",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C55",
+      "claim": "Layilin-deficient Tregs showed increased F-actin staining and increased cellular projections (consistent with lamellipodia) only in the presence of collagen IV.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed increased F-actin staining and increased cellular projections (consistent with lamellipodia) in layilin-deficient cells only in the presence of collagen IV (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phalloidin staining data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "8aa46830-45b0-4878-836c-cde096daf159",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C56",
+      "claim": "Layilin contains a talin binding domain, which is essential for layilin-LFA-1 interaction in exhausted CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown, layilin contains a talin binding domain, which we have shown to be essential for layilin-LFA-1 interaction in exhausted CD8+ T cells (Mahuron et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "f965f4d7-04dd-4d1b-a4d5-bdaf3c8f7123",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C57",
+      "claim": "Talin, vinculin, and paxillin are recruited to form a complex and interact with the binding domain of high-affinity conformation integrins, leading to focal adhesion and slowing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, talin, vinculin, and paxillin are recruited to form a complex and interact with the binding domain of high-affinity conformation integrins, leading to focal adhesion and slowing cells (Jankowska et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "164362d1-1cf7-4de5-939f-97acfbcfb506",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C58",
+      "claim": "An increase in polymerized actin content and cellular protrusions correlates with a higher motile profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, an increase in polymerized actin content and cellular protrusions correlates with a higher motile profile (Dupr\u00e9 et al., 2015; Yan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "6c49981b-7471-4aa0-a6f6-4bfb0d0b86b9",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C59",
+      "claim": "Lamellipodia are the main protrusive structures formed by T cells during migration and require actin-related protein 3 (ARP3).",
+      "claim_type": "EXPLICIT",
+      "source": "Lamellipodia are the main protrusive structures formed by T cells during migration and require actin-related protein 3 (ARP3) (Obeidy et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "bf4abf0e-61fc-4de5-94c2-2252c093c2d4",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C60",
+      "claim": "Layilin, by its interaction with LFA-1 and talin, stabilizes the formation of focal adhesion complexes and favors a more anchored Treg cell phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we propose a working model (Figure 5C) in which layilin, by its interaction with LFA-1 and talin, stabilizes the formation of focal adhesion complexes and favors a more anchored Treg cell phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanistic model based on the experimental data and previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "0eb6e6f9-72cd-4ae7-9140-36af2e9492d6",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C61",
+      "claim": "The absence of layilin promotes cell motility, at least in part, by enhancing lamellipodia formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the absence of layilin promotes cell motility, at least in part, by enhancing lamellipodia formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data showing increased lamellipodia in layilin-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "959b9a23-f265-4f2a-aefa-92a7ce3375fa",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C62",
+      "claim": "Layilin modulates Treg motility in tissues through the modulation of LFA-1 activation and cytoskeletal remodeling necessary for cellular adhesion and movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The summation of our data from results presented herein and previous studies (Mehta et al., 2021) suggests that layilin modulates Treg motility in tissues. This effect on motility is mediated, at least in part, through the modulation of LFA-1 activation and contributes to cytoskeletal remodeling necessary for cellular adhesion and movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data and previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "51872090-97b3-4005-8277-3f753128a927",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C63",
+      "claim": "Layilin expression is induced on Tregs upon entering non-lymphoid tissues such as skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data supports a model whereby layilin expression is induced on Tregs upon entering non-lymphoid tissues such as skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "862384bf-d35b-4b01-8541-6d5aafc6de8d",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C64",
+      "claim": "Layilin acts to anchor Tregs in the tissue, possibly adjacent to (or within) collagen IV-rich blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "This acts to anchor Tregs in the tissue, possibly adjacent to (or within) collagen IV-rich blood vessels (Uitto et al., 1989; Pfisterer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data and previous literature about collagen IV localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "b77e41a8-e6a1-47b3-b7f9-ba9bb5ca4d09",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C65",
+      "claim": "Layilin may help sequester Tregs to a defined niche, facilitating their ability to maintain tissue immune homeostasis in the steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "In this capacity, layilin may help sequester Tregs to a defined niche, facilitating their ability to maintain tissue immune homeostasis in the steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the functional role of layilin.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "6e40d7b5-859b-482d-9c97-b0b812ee48ae",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C66",
+      "claim": "In pathological situations such as tumors and chronic inflammation, the motility of Tregs may play a larger role in their functionality, allowing them to navigate to various tissue microanatomic niches to attenuate specific cell types and inflammatory mediators.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in pathological situations such as tumors and chronic inflammation, the motility of Tregs may play a larger role in their functionality, allowing them to navigate to various tissue microanatomic niches to attenuate specific cell types and inflammatory mediators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the role of Treg motility in disease.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "0b5cc100-03f7-4685-b0ab-1726c74d7079",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C67",
+      "claim": "Several studies have underscored the crucial role of adhesion properties, particularly those mediated by ICAM-1, in enabling effective Treg suppression capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, several studies have underscored the crucial role of adhesion properties, particularly those mediated by ICAM-1, the main adhesion molecule expressed by T cells, in enabling effective Treg suppression capacity (Gottrand et al., 2015; Tran et al., 2009; Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "9fbeb13c-a7c3-415e-8792-10d46157c135",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C68",
+      "claim": "Layilin expression on Tregs most likely acts to curtail their suppressive capacity by limiting their motility.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, layilin expression on Tregs most likely acts to curtail their suppressive capacity by limiting their motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data and previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "341fb3cb-de12-4baa-8e07-058f4020e104",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C69",
+      "claim": "Two-photon microscopy studies revealed that layilin-deficient Tregs are relatively more motile in inflamed skin compared to layilin-expressing control Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two-photon microscopy studies revealed that layilin-deficient Tregs are relatively more motile in inflamed skin compared to layilin-expressing control Tregs (Mehta et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "f1656b5b-8539-4c40-a60f-9293f6f94769",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C70",
+      "claim": "Reducing layilin expression on Tregs results in enhanced immune regulation in a skin inflammation model, as demonstrated by a significant reduction in pro-inflammatory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this theory, herein, we show that reducing layilin expression on Tregs results in enhanced immune regulation in a skin inflammation model, as demonstrated by a significant reduction in pro-inflammatory cells, observed in Foxp3Cre/Laynfl/fl mice compared to controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the IMQ model data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "cd0d6a8a-dace-4808-8612-40f08bb42dd5",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C71",
+      "claim": "In vitro, layilin plays a minimal role in Treg activation and suppressive capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, it is interesting to highlight that, in vitro, layilin plays a minimal role in Treg activation and suppressive capacity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the in vitro experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "2fa48df0-6aa6-4134-9569-c197a5407ff5",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C72",
+      "claim": "The role of layilin in the suppression capacities of Tregs depends on the more complex, dynamic, and collagen-rich in vivo environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the role of layilin in the suppression capacities of Tregs depends on the more complex, dynamic, and collagen-rich in vivo environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the contrasting in vitro and in vivo results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "efd60cad-039d-4aad-992f-ffd7c3121942",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C73",
+      "claim": "The association between layilin and LFA-1 activation observed in Tregs echoes previous discoveries in CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing finding is the association between layilin and LFA-1 activation observed in Tregs, echoing previous discoveries in CD8+ T cells (Mahuron et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous literature findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "575d972a-1673-4e6a-b213-db22657a8c97",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C74",
+      "claim": "LFA-1 is crucial for T cell engagement at the immune synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "LFA-1 is crucial for T cell engagement at the immune synapse (Hammer et al., 2019; Franciszkiewicz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "32db8725-f57f-4793-b1ac-b6fbad473587",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C75",
+      "claim": "The modulation of LFA-1 by layilin may enhance Treg interactions with other cells, potentially boosting their suppressive abilities, but could also confine their impact to a narrowly defined area due to reduced motility.",
+      "claim_type": "EXPLICIT",
+      "source": "While the modulation of LFA-1 by layilin may enhance Treg interactions with other cells, potentially boosting their suppressive abilities, it could also confine their impact to a narrowly defined area due to reduced motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the dual effects of layilin on Treg function.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "3cd2cc47-8619-4a10-a113-009a75c24818",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C76",
+      "claim": "Layilin's role in enhancing the effector functions of CD8+ T cells in tumors and limiting Treg-suppressive capacity in inflamed tissues suggests that it could be a valuable therapeutic target for autoimmune and chronic inflammatory diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Layilin's role in enhancing the effector functions of CD8+ T cells in tumors (Zheng et al., 2017; Mahuron et al., 2020; Pan et al., 2019) and limiting Treg-suppressive capacity in inflamed tissues suggests that it could be a valuable therapeutic target for autoimmune and chronic inflammatory diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic hypothesis based on the experimental data and previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "a2e681a4-90e1-4e05-b102-a1b4cf44732a",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C77",
+      "claim": "A layilin neutralizing antibody could attenuate CD8+ T cell killing and enhance Treg suppression, effectively working in concert to dampen tissue inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "A layilin neutralizing antibody could attenuate CD8+ T cell killing and enhance Treg suppression, effectively working in concert to dampen tissue inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "38c253ab-4cc8-46e2-bfb4-185b57304d07",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C78",
+      "claim": "Tissue-specific autoimmune diseases thought to be mediated by autoreactive CD8+ T cells and suboptimally controlled by Tregs would be attractive indications for layilin-targeted therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-specific autoimmune diseases thought to be mediated by autoreactive CD8+ T cells and suboptimally controlled by Tregs would be attractive indications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "f4f7a533-a428-4e3e-aa0a-11cc51a278cf",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "claim_id": "C79",
+      "claim": "More research is necessary to understand the role of layilin on non-immune cells, such as gastrointestinal epithelial cells, to help build confidence around the therapeutic hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more research is necessary to understand the role of layilin on non-immune cells, such as gastrointestinal epithelial cells (Bono et al., 2001; Kim et al., 2018), to help build confidence around this therapeutic hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges limitations and the need for further research, with citations to previous work on layilin in non-immune cells.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "031097b2-14b8-4815-8320-2ff28ee7f712",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Layilin is predominantly expressed on Tregs in human skin, with LAYN-expressing Tregs showing a transcriptional profile enriched for adhesion molecules, T cell activation pathways, and clonal expansion. LAYN expression levels per cell do not differ between healthy and psoriatic skin, but LAYN+ Tregs exhibit 636 differentially expressed genes including integrins (ITGB7, ITGB6) and adhesion molecules (CADM1), with enrichment in migration/adhesion pathways by GSEA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C30 are well-supported by single-cell RNA-seq data from n=5 healthy and n=5 psoriatic skin samples (Figure 1A-J). The transcriptional profiling, differential expression analysis, GSEA, and TCR repertoire analysis converge to show that LAYN+ Tregs represent an activated, clonally expanded subset with enhanced adhesion signatures. The finding that LAYN expression per cell doesn't increase in psoriasis (C20-C21) is appropriately supported by volcano plot analysis, though this negative result could benefit from power analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "a39d189a-a597-4826-ac74-df65f7e5435f",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deletion of layilin in human Tregs by CRISPR (achieving 30-50% reduction) has no significant effect on Treg activation markers or suppressive capacity in vitro, as measured by spectral flow cytometry and standard suppression assays with CD4+ and CD8+ T cell responders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by in vitro data from n=6 donors across two independent experiments (Figure 2C-D). The CRISPR approach achieved partial deletion (30-50%), and multiple activation markers and suppression ratios were tested. However, the partial deletion efficiency is a limitation\u2014complete knockout might reveal effects masked by residual layilin+ cells. The conclusion that layilin plays a \"minimal role\" in vitro is appropriately cautious given this caveat.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Treg-specific deletion of layilin in Foxp3Cre/Laynfl/fl mice significantly reduces skin inflammation in the IMQ model, with decreased clinical scores, reduced infiltration of CD4+ Teff and CD8+ T cells, and fewer pro-inflammatory cytokine-producing cells. Bulk RNA-seq of layilin-deleted Tregs shows enrichment in cellular movement and migration pathways, without changes in Treg activation markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C36-C43, C70 are supported by in vivo data from n=6-7 mice per group across three independent experiments (Figure 3). The tamoxifen-inducible Cre system with qRT-PCR validation (C36) confirms deletion. Statistical significance is shown for clinical scores (****p<0.0001, two-way ANOVA) and immune cell infiltration (*p<0.05, t-test). The RNA-seq (n=5 per group) provides mechanistic insight. The contrast with in vitro findings (C33) strengthens the conclusion that layilin's role is context-dependent, requiring the complex in vivo tissue environment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "52d6237d-d54d-4a64-9363-a10aa25a67db",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Layilin enhances Treg adhesion through modulation of LFA-1 activation. Crosslinking layilin with antibodies or engaging it with its natural ligand collagen IV increases LFA-1 activation (measured by m-24 antibody binding). CRISPR-mediated layilin deletion reduces LFA-1 activation and adhesion to collagen IV-coated plates but not uncoated plates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C44-C45, C49-C53, C73 are supported by multiple complementary approaches: antibody crosslinking (n=3 donors, Figure 4D), CRISPR deletion with collagen IV coating (n=6 donors, Figure 4E), and adhesion assays (n=7 donors, Figure 4F). The ligand-specificity (collagen IV vs. uncoated/fibronectin) strengthens the mechanistic claim. Statistical significance is shown (*p<0.05, ***p<0.001). The convergence of antibody crosslinking and genetic deletion provides robust evidence. However, the m-24 antibody specificity for \"active\" LFA-1 should be validated with additional conformational assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "6cad36fa-c50c-40fb-82de-f66a82a17a94",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Layilin-deficient Tregs show increased F-actin staining and cellular projections consistent with lamellipodia formation specifically in the presence of collagen IV. The authors propose a model where layilin stabilizes focal adhesion complexes through LFA-1 and talin interactions, while its absence promotes lamellipodia formation and cell motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C61 are partially supported by phalloidin staining data (n=3 donors, 10 pictures per donor, Figure 5A-B) showing increased F-actin and protrusions in layilin-deficient cells on collagen IV (*p<0.05, two-way ANOVA). However, C60-C61 represent a proposed mechanistic model (Figure 5C) that is largely speculative. While consistent with the data and prior literature on talin/vinculin/paxillin complexes (C56-C59), direct evidence for layilin-talin-LFA-1 complex formation in Tregs is lacking. The model requires validation through co-immunoprecipitation, proximity ligation assays, or super-resolution microscopy to demonstrate these molecular interactions directly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "f24c6585-9cca-4b2a-818c-5f35f78e2f38",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that layilin modulates Treg motility and suppressive capacity in non-lymphoid tissues through LFA-1 activation and cytoskeletal remodeling. They propose layilin anchors Tregs near collagen IV-rich blood vessels, limiting their suppressive capacity by restricting motility, with this role being context-dependent on the in vivo tissue environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C62-C64, C68, C72 represent the manuscript's central conclusions, integrating data from multiple experimental systems. The conclusion is well-supported by: (1) in vivo functional data showing enhanced suppression with layilin deletion (C5, C37-C39), (2) mechanistic data on LFA-1 and adhesion (C49-C53), (3) cytoskeletal changes (C55), and (4) prior two-photon microscopy data cited from Mehta et al., 2021 showing increased motility of layilin-deficient Tregs. The contrast between in vitro (no effect, C33) and in vivo (significant effect, C43) strengthens the tissue-context argument (C72). However, C63-C64 about collagen IV-rich blood vessel localization remain somewhat speculative without direct spatial evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about Tregs, layilin, LFA-1, and the IMQ model, all supported by appropriate citations to previous literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C18, C27, C34-C35, C46-C48, C67, C69, C74 are background/context claims appropriately supported by citations to established literature. These provide necessary context for interpreting the current work. The citations appear appropriate and accurately represent prior findings. C1 (Tregs essential for tolerance) and C46-C48 (LFA-1 biology) represent well-established immunological knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7",
+      "content_id": "0d32a050-2078-4ec9-8de9-d309d51b938a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors speculate that layilin may help sequester Tregs to defined niches in steady-state, while in pathological conditions increased motility may be more important. They propose layilin as a therapeutic target for autoimmune diseases, with a neutralizing antibody potentially dampening inflammation by enhancing Treg suppression and attenuating CD8+ T cell killing, though acknowledge more research is needed on layilin's role in non-immune cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C79 are largely speculative hypotheses about layilin's physiological role and therapeutic potential. While these speculations are reasonable extrapolations from the data, they lack direct experimental support in this manuscript. C65-C66 about steady-state vs. pathological roles are plausible but untested. C76-C78 about therapeutic potential are premature without: (1) testing in additional disease models, (2) understanding on-target effects in non-immune cells (acknowledged in C79), and (3) pharmacological validation with neutralizing antibodies. These represent appropriate future directions but should not be considered supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "42a0d682-569b-487c-82c8-7afb63e6bd52",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Layilin is predominantly expressed on Tregs in skin, as demonstrated by single-cell RNA sequencing data showing LAYILIN expression patterns across different immune cell populations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 requests 'the proportion of Treg, Tconv, and CD8 expressing Layilin in healthy skin and in patients developing psoriasis, as well as in the blood of healthy subjects' to be shown, indicating that the current data presentation is insufficient to fully support the claim of predominant expression. The reviewers acknowledge the finding but require additional quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "226c36bd-ccce-41ac-a9aa-146746351efe",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Layilin is highly expressed on clonally expanded effector Tregs in both healthy and psoriatic skin, with LAYN-expressing Tregs showing more expanded clones and correlating with more activated and motile cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 suggests that 'Figures 1I, 1J...could be placed as supplementary figures,' indicating these TCR clonality data are not considered essential for understanding Layilin's role. This suggests the reviewers view the clonal expansion findings as less critical to the main conclusions, though they do not explicitly challenge the data quality.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "102776b5-a06f-4b95-81bd-23ab4a329dbc",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Layilin-expressing Tregs exhibit a transcriptional profile with enrichment of adhesion molecules and pathways for T cell activation, cell migration, and adhesion, with 636 differentially expressed genes identified between LAYN-positive and LAYN-negative Tregs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states 'We lack information to be convinced that there is enrichment for migration and adhesion genes in Layilin+ Tregs in the GSEA data' and requests specification of geneset libraries, unbiased presentation of all gene sets, and confirmation with z-score analyses. The reviewer questions whether the GSEA results genuinely support the enrichment claims or represent selective reporting.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "cd5f07af-d0c2-4601-9f12-fc15d314b52d",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "LAYN expression per cell does not change between healthy and psoriatic skin, suggesting that LAYN expression is not increased on Tregs in inflamed skin.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer explicitly challenges this finding. The data is presented as supplementary information and the conclusion is stated clearly without objection from reviewers, suggesting implicit acceptance of this observation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "3243c825-7563-4f5e-8573-af31ac902bc1",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Layilin deletion in Tregs has no effect on their activation markers or suppressive capacity in vitro, suggesting layilin plays a minimal role in Treg function under in vitro conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 suggests 'the whole of Figure 2 could be placed as supplementary figures,' indicating these in vitro data are not essential. Reviewer 3 states 'It is not clear that the assays used for functional analysis of the patient samples were optimal,' raising concerns about the experimental design and whether the in vitro conditions adequately test Layilin's function.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "07f372de-59a8-47be-94e6-390d555496f0",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Deletion of layilin in Tregs in vivo using conditional knockout mice resulted in significantly attenuated skin inflammation in the IMQ model, with reduced clinical scores and decreased infiltration of pro-inflammatory cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 states 'There is clearly a biological effect of LAYN deficiency in the mouse model,' affirming the in vivo functional findings. The editor notes the study reports 'valuable findings' and the 'strength of the study is utilizing conditional knock-out mice,' supporting the validity of these core in vivo results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "cf531224-204a-4ed6-9b5e-142b398d1769",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Layilin deletion in Tregs does not alter activation markers but leads to differential gene expression enriched in pathways for cellular movement, locomotion, and migration, suggesting layilin attenuates Treg suppression in vivo without affecting activation capacity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While no reviewer explicitly challenges these RNA-seq findings, Reviewer 1's general concern about GSEA methodology ('we lack information to be convinced that there is enrichment') applies to these pathway analyses as well. The editor notes 'the analysis of the molecular mechanism by which layilin affects Treg function is incomplete,' suggesting these mechanistic conclusions require further support.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "5856137a-1175-4279-bd9f-83c9bb84d39b",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Layilin enhances Treg adhesion via modulation of LFA-1, with crosslinking or collagen IV engagement increasing LFA-1 activation and CRISPR-mediated deletion reducing LFA-1 activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raises concerns about the experimental design for Figures 4 and 5, noting that 'Layn+ and Layn- Tregs may constitute populations with different biological properties, beyond the expression of Layn' and that the comparison may not be 'directly linked to the expression or absence of expression of this protein.' This fundamental design issue undermines confidence in the LFA-1 mechanism conclusions. Reviewer 2 states 'the experimental conditions were not always appropriate, leading to a risk of misinterpretation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "56edb2df-2982-4137-b301-d7bd6eccb360",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Tregs deficient in layilin displayed reduced capacity to bind to collagen IV-coated plates but not uncoated plates, demonstrating layilin-mediated adhesion is collagen IV-dependent.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1's concern about the experimental design applies here: the comparison between naturally Layn+ and Layn- cells may reflect inherent population differences rather than Layilin function specifically. The reviewer suggests a more rigorous approach would be to 'sort first the Layn+ Tregs, then knock down this protein and re-sort,' indicating the current design is suboptimal.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "bb1e8d81-e50f-49f1-898b-25dbf7b2ca0f",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Layilin-deficient Tregs showed increased F-actin staining and increased cellular projections consistent with lamellipodia only in the presence of collagen IV.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states 'For Figure 5B, the number of samples analyzed is insufficient to draw clear conclusions,' directly challenging the strength of this cytoskeletal finding. Additionally, the general experimental design concerns about comparing naturally Layn+ vs Layn- populations apply to these data as well.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "cc42cc72-30bd-4135-9e43-943ccdfdac9e",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors propose a mechanistic model where layilin stabilizes focal adhesion complexes through LFA-1 and talin interactions, favoring an anchored Treg phenotype, while its absence promotes cell motility through enhanced lamellipodia formation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor states 'the analysis of the molecular mechanism by which layilin affects Treg function is incomplete,' directly indicating that the proposed mechanistic model is not fully substantiated. Reviewer 2 notes 'Some of the conclusions drawn by the authors must be treated with caution, as the experimental conditions were not always appropriate,' and Reviewer 3 states 'Several conclusions are not fully substantiated.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "d8efff9e-f1c7-4436-87ec-30b29998e1ab",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Genes involved in cellular locomotion, migration, and adhesion were differentially expressed in layilin-expressing versus layilin-edited human Tregs based on bulk RNA-seq of CRISPR-edited cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1's concerns about GSEA methodology and the need for unbiased presentation of pathway analyses apply to these human Treg RNA-seq data. Additionally, Reviewer 1 requests that 'raw data should be shown as histograms or dot plots for representative samples' for all FACS data, suggesting insufficient data presentation throughout.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "3c24fff9-5425-49f3-b488-2a9bacf376e1",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The authors propose that layilin expression is induced on Tregs entering non-lymphoid tissues where it anchors them near collagen IV-rich structures, with different functional implications in homeostasis versus pathological inflammation, and that layilin's role depends on the complex in vivo environment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are largely speculative interpretations and models. Reviewer 3 notes the work is 'a modest advance from the authors' previous report in 2021' and that 'The report adds some new information to what was already known,' suggesting the novelty of these conceptual models is limited. The editor's comment that 'the analysis of the molecular mechanism...is incomplete' indicates these broader models lack sufficient mechanistic support.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "314143c5-c241-477f-87b6-4785ebca8835",
+      "content_id": "ff2f5cc5-f0cb-4ca3-9db4-c8f756c47205",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "The authors propose layilin as a potential therapeutic target for autoimmune and chronic inflammatory diseases, suggesting a neutralizing antibody could dampen tissue inflammation by affecting both CD8+ T cells and Tregs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative therapeutic hypotheses. While no reviewer explicitly challenges them, Reviewer 3's characterization of the work as 'a modest advance' and the editor's note that the study 'will be of interest to medical scientists working on skin immunology' (rather than broader therapeutic development) suggest limited enthusiasm for the therapeutic implications at this stage.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d07fccf-1a37-4e6b-a60b-a8a24b8c6f9f",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "fb15d3f0-3c2e-46f2-88da-a3bb6442f891",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "34223732-0e10-40cb-838d-75e335b68dfb",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "e3f88923-2d6a-4679-bed3-a2b459650ff8",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "26b2009d-be78-489f-8e72-130413b6fcd2",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "5eb27919-3511-4a06-a297-61d4bdd3c2a9",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "42d7de0e-245d-4d46-8314-cfba365c7e57",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "5a65e594-d7b0-447e-be93-821eb41084c4",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "b173cec0-c8fc-4d02-a76e-5d853fef69ea",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "97df0fdf-ac30-4275-be25-95a7cf987481",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "4291022c-4f10-40c7-9717-bc095eb5c068",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "5a450ac2-3369-460b-9435-77cddaca3abc",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "1d6f2d47-33a6-438d-a202-eaeb30b3e6d6",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "2a27bf25-7855-4806-896d-b61db7046224",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "1722b666-311d-4065-a9d3-e312f70d0023",
+      "result_id": "031097b2-14b8-4815-8320-2ff28ee7f712"
+    },
+    {
+      "claim_id": "1c959a28-4c86-4482-ae5d-8a58c24e8c1f",
+      "result_id": "a39d189a-a597-4826-ac74-df65f7e5435f"
+    },
+    {
+      "claim_id": "6a7a201d-2d58-4ed8-8c6a-9a239ff0025f",
+      "result_id": "a39d189a-a597-4826-ac74-df65f7e5435f"
+    },
+    {
+      "claim_id": "6d51126c-76e2-4a1a-9492-75223fe8e1f1",
+      "result_id": "a39d189a-a597-4826-ac74-df65f7e5435f"
+    },
+    {
+      "claim_id": "cd0d6a8a-dace-4808-8612-40f08bb42dd5",
+      "result_id": "a39d189a-a597-4826-ac74-df65f7e5435f"
+    },
+    {
+      "claim_id": "2ca1d22c-cf43-4ea1-9530-b75f9482c3e4",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "889b7d66-269f-45fd-8fe4-d2e32f70d0a3",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "0741db78-822f-4543-972e-79ccd012988b",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "212978db-eae6-49fa-9119-14e3e02fbc73",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "7b3a379f-2849-4775-8cfe-a9a122a089ce",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "41bf98c8-539a-42d0-a99e-d67ef73670e5",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "00648f75-fe85-4eef-ac02-c825094e3095",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "9590ede8-4fa6-4623-a48b-d289e7c96987",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "61cb7ab5-6b87-4cdf-a899-c75b6d26e56c",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "f1656b5b-8539-4c40-a60f-9293f6f94769",
+      "result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6"
+    },
+    {
+      "claim_id": "76e5830b-a708-4090-b415-c183feefeb78",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "7bc6f04c-7439-47b7-af9a-f2af15d7c9f5",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "1ab0368e-03a4-4085-9c28-24c06be429fb",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "6a4034df-25e6-4cda-b1c1-cfb43a91286d",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "1c6f323e-c6a3-409d-998a-7162c46d889e",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "396db338-5834-4f5e-b2f6-d30d946c5618",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "a39a03d1-0800-4eb8-90ef-a3f6b8a2347e",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "0f3ba22f-6035-4602-992f-17adeddeaed6",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "efd60cad-039d-4aad-992f-ffd7c3121942",
+      "result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db"
+    },
+    {
+      "claim_id": "dccb9577-6fce-46ed-a401-d934574d0cf0",
+      "result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94"
+    },
+    {
+      "claim_id": "7554122c-91cb-4919-9d2f-9864f4a44b32",
+      "result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94"
+    },
+    {
+      "claim_id": "8aa46830-45b0-4878-836c-cde096daf159",
+      "result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94"
+    },
+    {
+      "claim_id": "f965f4d7-04dd-4d1b-a4d5-bdaf3c8f7123",
+      "result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94"
+    },
+    {
+      "claim_id": "164362d1-1cf7-4de5-939f-97acfbcfb506",
+      "result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94"
+    },
+    {
+      "claim_id": "6c49981b-7471-4aa0-a6f6-4bfb0d0b86b9",
+      "result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94"
+    },
+    {
+      "claim_id": "bf4abf0e-61fc-4de5-94c2-2252c093c2d4",
+      "result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94"
+    },
+    {
+      "claim_id": "0eb6e6f9-72cd-4ae7-9140-36af2e9492d6",
+      "result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94"
+    },
+    {
+      "claim_id": "f521c1a7-a0c6-42ce-9496-07413eb345a3",
+      "result_id": "f24c6585-9cca-4b2a-818c-5f35f78e2f38"
+    },
+    {
+      "claim_id": "959b9a23-f265-4f2a-aefa-92a7ce3375fa",
+      "result_id": "f24c6585-9cca-4b2a-818c-5f35f78e2f38"
+    },
+    {
+      "claim_id": "51872090-97b3-4005-8277-3f753128a927",
+      "result_id": "f24c6585-9cca-4b2a-818c-5f35f78e2f38"
+    },
+    {
+      "claim_id": "862384bf-d35b-4b01-8541-6d5aafc6de8d",
+      "result_id": "f24c6585-9cca-4b2a-818c-5f35f78e2f38"
+    },
+    {
+      "claim_id": "9fbeb13c-a7c3-415e-8792-10d46157c135",
+      "result_id": "f24c6585-9cca-4b2a-818c-5f35f78e2f38"
+    },
+    {
+      "claim_id": "2fa48df0-6aa6-4134-9569-c197a5407ff5",
+      "result_id": "f24c6585-9cca-4b2a-818c-5f35f78e2f38"
+    },
+    {
+      "claim_id": "e3b5865c-5a89-4835-b572-ae60a635e3ed",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "5aa3b55e-6eb7-423f-8176-01e01fe693b8",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "2cc51e6f-5a31-406b-aa9b-a2068018cba5",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "17f37dd1-7178-4c01-8cdd-5dc30b9462c1",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "bb51f77c-aeb9-4796-b1d7-0ccfee33214a",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "25587eef-6ece-45b2-8140-784c22ac9dc6",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "75b2fc3e-7a90-4486-95ef-009506a41491",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "7d2f9656-ef8e-4454-b048-306fc3c43c8f",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "82a73af7-ecce-4f7c-ac1d-b241bb8e31ae",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "e65aad3a-e319-43bc-9aed-a1654ab9802f",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "6063ec67-3657-43ef-a34c-b09e9f914c53",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "0cfdf9c8-d84a-467f-ab2e-cca08c486c18",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "5a450ac2-3369-460b-9435-77cddaca3abc",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "fb1f0dde-c151-499d-ba6c-0cfc26abeb14",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "03857ca3-a304-4257-9d1f-047630f0762e",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "73b0ef37-7d44-4c75-a12c-df81fa4ba94b",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "d8d7490d-0a4c-47dc-9a9e-b7a31cf05d12",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "fc373ec6-9ad9-4903-8e6b-16817f98f45f",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "0b5cc100-03f7-4685-b0ab-1726c74d7079",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "341fb3cb-de12-4baa-8e07-058f4020e104",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "575d972a-1673-4e6a-b213-db22657a8c97",
+      "result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0"
+    },
+    {
+      "claim_id": "b77e41a8-e6a1-47b3-b7f9-ba9bb5ca4d09",
+      "result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7"
+    },
+    {
+      "claim_id": "6e40d7b5-859b-482d-9c97-b0b812ee48ae",
+      "result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7"
+    },
+    {
+      "claim_id": "32db8725-f57f-4793-b1ac-b6fbad473587",
+      "result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7"
+    },
+    {
+      "claim_id": "3cd2cc47-8619-4a10-a113-009a75c24818",
+      "result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7"
+    },
+    {
+      "claim_id": "a2e681a4-90e1-4e05-b102-a1b4cf44732a",
+      "result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7"
+    },
+    {
+      "claim_id": "38c253ab-4cc8-46e2-bfb4-185b57304d07",
+      "result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7"
+    },
+    {
+      "claim_id": "f4f7a533-a428-4e3e-aa0a-11cc51a278cf",
+      "result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7"
+    },
+    {
+      "claim_id": "9d07fccf-1a37-4e6b-a60b-a8a24b8c6f9f",
+      "result_id": "42a0d682-569b-487c-82c8-7afb63e6bd52"
+    },
+    {
+      "claim_id": "e3f88923-2d6a-4679-bed3-a2b459650ff8",
+      "result_id": "42a0d682-569b-487c-82c8-7afb63e6bd52"
+    },
+    {
+      "claim_id": "fb15d3f0-3c2e-46f2-88da-a3bb6442f891",
+      "result_id": "226c36bd-ccce-41ac-a9aa-146746351efe"
+    },
+    {
+      "claim_id": "1d6f2d47-33a6-438d-a202-eaeb30b3e6d6",
+      "result_id": "226c36bd-ccce-41ac-a9aa-146746351efe"
+    },
+    {
+      "claim_id": "1722b666-311d-4065-a9d3-e312f70d0023",
+      "result_id": "226c36bd-ccce-41ac-a9aa-146746351efe"
+    },
+    {
+      "claim_id": "34223732-0e10-40cb-838d-75e335b68dfb",
+      "result_id": "102776b5-a06f-4b95-81bd-23ab4a329dbc"
+    },
+    {
+      "claim_id": "b173cec0-c8fc-4d02-a76e-5d853fef69ea",
+      "result_id": "102776b5-a06f-4b95-81bd-23ab4a329dbc"
+    },
+    {
+      "claim_id": "97df0fdf-ac30-4275-be25-95a7cf987481",
+      "result_id": "102776b5-a06f-4b95-81bd-23ab4a329dbc"
+    },
+    {
+      "claim_id": "4291022c-4f10-40c7-9717-bc095eb5c068",
+      "result_id": "102776b5-a06f-4b95-81bd-23ab4a329dbc"
+    },
+    {
+      "claim_id": "26b2009d-be78-489f-8e72-130413b6fcd2",
+      "result_id": "cd5f07af-d0c2-4601-9f12-fc15d314b52d"
+    },
+    {
+      "claim_id": "5eb27919-3511-4a06-a297-61d4bdd3c2a9",
+      "result_id": "cd5f07af-d0c2-4601-9f12-fc15d314b52d"
+    },
+    {
+      "claim_id": "1c959a28-4c86-4482-ae5d-8a58c24e8c1f",
+      "result_id": "3243c825-7563-4f5e-8573-af31ac902bc1"
+    },
+    {
+      "claim_id": "6a7a201d-2d58-4ed8-8c6a-9a239ff0025f",
+      "result_id": "3243c825-7563-4f5e-8573-af31ac902bc1"
+    },
+    {
+      "claim_id": "6d51126c-76e2-4a1a-9492-75223fe8e1f1",
+      "result_id": "3243c825-7563-4f5e-8573-af31ac902bc1"
+    },
+    {
+      "claim_id": "2ca1d22c-cf43-4ea1-9530-b75f9482c3e4",
+      "result_id": "07f372de-59a8-47be-94e6-390d555496f0"
+    },
+    {
+      "claim_id": "889b7d66-269f-45fd-8fe4-d2e32f70d0a3",
+      "result_id": "07f372de-59a8-47be-94e6-390d555496f0"
+    },
+    {
+      "claim_id": "0741db78-822f-4543-972e-79ccd012988b",
+      "result_id": "07f372de-59a8-47be-94e6-390d555496f0"
+    },
+    {
+      "claim_id": "212978db-eae6-49fa-9119-14e3e02fbc73",
+      "result_id": "07f372de-59a8-47be-94e6-390d555496f0"
+    },
+    {
+      "claim_id": "7b3a379f-2849-4775-8cfe-a9a122a089ce",
+      "result_id": "07f372de-59a8-47be-94e6-390d555496f0"
+    },
+    {
+      "claim_id": "f1656b5b-8539-4c40-a60f-9293f6f94769",
+      "result_id": "07f372de-59a8-47be-94e6-390d555496f0"
+    },
+    {
+      "claim_id": "41bf98c8-539a-42d0-a99e-d67ef73670e5",
+      "result_id": "cf531224-204a-4ed6-9b5e-142b398d1769"
+    },
+    {
+      "claim_id": "00648f75-fe85-4eef-ac02-c825094e3095",
+      "result_id": "cf531224-204a-4ed6-9b5e-142b398d1769"
+    },
+    {
+      "claim_id": "9590ede8-4fa6-4623-a48b-d289e7c96987",
+      "result_id": "cf531224-204a-4ed6-9b5e-142b398d1769"
+    },
+    {
+      "claim_id": "61cb7ab5-6b87-4cdf-a899-c75b6d26e56c",
+      "result_id": "cf531224-204a-4ed6-9b5e-142b398d1769"
+    },
+    {
+      "claim_id": "76e5830b-a708-4090-b415-c183feefeb78",
+      "result_id": "5856137a-1175-4279-bd9f-83c9bb84d39b"
+    },
+    {
+      "claim_id": "6a4034df-25e6-4cda-b1c1-cfb43a91286d",
+      "result_id": "5856137a-1175-4279-bd9f-83c9bb84d39b"
+    },
+    {
+      "claim_id": "396db338-5834-4f5e-b2f6-d30d946c5618",
+      "result_id": "5856137a-1175-4279-bd9f-83c9bb84d39b"
+    },
+    {
+      "claim_id": "0f3ba22f-6035-4602-992f-17adeddeaed6",
+      "result_id": "5856137a-1175-4279-bd9f-83c9bb84d39b"
+    },
+    {
+      "claim_id": "a39a03d1-0800-4eb8-90ef-a3f6b8a2347e",
+      "result_id": "56edb2df-2982-4137-b301-d7bd6eccb360"
+    },
+    {
+      "claim_id": "7554122c-91cb-4919-9d2f-9864f4a44b32",
+      "result_id": "bb1e8d81-e50f-49f1-898b-25dbf7b2ca0f"
+    },
+    {
+      "claim_id": "bf4abf0e-61fc-4de5-94c2-2252c093c2d4",
+      "result_id": "cc42cc72-30bd-4135-9e43-943ccdfdac9e"
+    },
+    {
+      "claim_id": "0eb6e6f9-72cd-4ae7-9140-36af2e9492d6",
+      "result_id": "cc42cc72-30bd-4135-9e43-943ccdfdac9e"
+    },
+    {
+      "claim_id": "959b9a23-f265-4f2a-aefa-92a7ce3375fa",
+      "result_id": "cc42cc72-30bd-4135-9e43-943ccdfdac9e"
+    },
+    {
+      "claim_id": "1ab0368e-03a4-4085-9c28-24c06be429fb",
+      "result_id": "d8efff9e-f1c7-4436-87ec-30b29998e1ab"
+    },
+    {
+      "claim_id": "51872090-97b3-4005-8277-3f753128a927",
+      "result_id": "3c24fff9-5425-49f3-b488-2a9bacf376e1"
+    },
+    {
+      "claim_id": "862384bf-d35b-4b01-8541-6d5aafc6de8d",
+      "result_id": "3c24fff9-5425-49f3-b488-2a9bacf376e1"
+    },
+    {
+      "claim_id": "b77e41a8-e6a1-47b3-b7f9-ba9bb5ca4d09",
+      "result_id": "3c24fff9-5425-49f3-b488-2a9bacf376e1"
+    },
+    {
+      "claim_id": "6e40d7b5-859b-482d-9c97-b0b812ee48ae",
+      "result_id": "3c24fff9-5425-49f3-b488-2a9bacf376e1"
+    },
+    {
+      "claim_id": "9fbeb13c-a7c3-415e-8792-10d46157c135",
+      "result_id": "3c24fff9-5425-49f3-b488-2a9bacf376e1"
+    },
+    {
+      "claim_id": "2fa48df0-6aa6-4134-9569-c197a5407ff5",
+      "result_id": "3c24fff9-5425-49f3-b488-2a9bacf376e1"
+    },
+    {
+      "claim_id": "3cd2cc47-8619-4a10-a113-009a75c24818",
+      "result_id": "314143c5-c241-477f-87b6-4785ebca8835"
+    },
+    {
+      "claim_id": "a2e681a4-90e1-4e05-b102-a1b4cf44732a",
+      "result_id": "314143c5-c241-477f-87b6-4785ebca8835"
+    },
+    {
+      "claim_id": "38c253ab-4cc8-46e2-bfb4-185b57304d07",
+      "result_id": "314143c5-c241-477f-87b6-4785ebca8835"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "78005231-cc76-49e3-9ffd-923779854966",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a39d189a-a597-4826-ac74-df65f7e5435f",
+      "peer_result_id": "3243c825-7563-4f5e-8573-af31ac902bc1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate in vitro CRISPR deletion experiments (C31-C33). OpenEval finds claims SUPPORTED with appropriate caution about partial deletion efficiency, while peer reviewers rate UNCERTAIN, suggesting the entire Figure 2 could be supplementary and questioning whether assays were optimal for testing Layilin function.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "2abcb7ad-3663-493a-a994-1fbce046bf53",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6",
+      "peer_result_id": "07f372de-59a8-47be-94e6-390d555496f0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate in vivo mouse model data (C5, C36-C39, C70). Strong agreement: both rate these claims as SUPPORTED. Peer reviewers explicitly state 'There is clearly a biological effect' and praise the conditional knockout approach, aligning with OpenEval's assessment of robust statistical support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "d10ebc68-c399-4a79-bb50-9165d5fd089d",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "671780d2-f0ea-4ae9-8c55-b36a0599c0d6",
+      "peer_result_id": "cf531224-204a-4ed6-9b5e-142b398d1769",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address RNA-seq pathway analysis from mouse model (C40-C43). OpenEval rates SUPPORTED as part of broader in vivo results, while peer reviewers rate UNCERTAIN, citing general concerns about GSEA methodology and noting 'the analysis of the molecular mechanism...is incomplete.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "16d2fac6-1d85-41f9-9391-d087707ab0b8",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db",
+      "peer_result_id": "5856137a-1175-4279-bd9f-83c9bb84d39b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate LFA-1 activation mechanism (C6, C49, C51, C53). OpenEval rates SUPPORTED based on convergent antibody crosslinking and CRISPR data, but peer reviewers rate UNCERTAIN, raising fundamental concerns that Layn+ vs Layn- populations may differ beyond Layilin expression, creating confounding variables.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "3fc4e026-df72-40c7-971d-594b90ad5951",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db",
+      "peer_result_id": "56edb2df-2982-4137-b301-d7bd6eccb360",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address collagen IV-specific adhesion (C52). OpenEval includes this in SUPPORTED evaluation of LFA-1 mechanism, while peer reviewers rate UNCERTAIN due to experimental design concerns about comparing naturally different cell populations rather than isolating Layilin's specific effect.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "385739a4-b33c-4fb7-b161-06345a8bc23b",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "52d6237d-d54d-4a64-9363-a10aa25a67db",
+      "peer_result_id": "d8efff9e-f1c7-4436-87ec-30b29998e1ab",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address human Treg adhesion gene enrichment (C45). OpenEval includes this in SUPPORTED LFA-1 mechanism evaluation, while peer reviewers rate UNCERTAIN, citing GSEA methodology concerns and requesting raw data presentation as histograms or dot plots.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "07823b8f-cd58-4e91-8beb-52fb1d24dfd9",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94",
+      "peer_result_id": "bb1e8d81-e50f-49f1-898b-25dbf7b2ca0f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate cytoskeletal changes (C55). OpenEval rates UNCERTAIN due to lack of direct molecular interaction evidence, while peer reviewers rate UNCERTAIN stating 'the number of samples analyzed is insufficient to draw clear conclusions' and citing experimental design concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "4c3a0ed9-faaf-4ee2-86ad-14f2f8484a0a",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "6cad36fa-c50c-40fb-82de-f66a82a17a94",
+      "peer_result_id": "cc42cc72-30bd-4135-9e43-943ccdfdac9e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the proposed mechanistic model (C60-C61, C62). Strong agreement: both rate UNCERTAIN. OpenEval notes the model is 'largely speculative' lacking direct evidence for molecular complexes, while peer reviewers state 'the analysis of the molecular mechanism...is incomplete' and 'conclusions are not fully substantiated.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "51925761-1477-46a9-9ed8-ec68c5c17f35",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f24c6585-9cca-4b2a-818c-5f35f78e2f38",
+      "peer_result_id": "3c24fff9-5425-49f3-b488-2a9bacf376e1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate integrative conclusions and conceptual models (C62-C64, C68, C72). OpenEval rates SUPPORTED based on convergent multi-system data, while peer reviewers rate UNCERTAIN, noting the work is 'a modest advance' with limited novelty and incomplete mechanistic analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "650dcbc2-13ad-48ea-b14e-d8a531c278fe",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7",
+      "peer_result_id": "314143c5-c241-477f-87b6-4785ebca8835",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate therapeutic potential claims (C76-C78). Strong agreement: both rate UNCERTAIN. OpenEval notes these are 'premature' without additional disease models and pharmacological validation, while peer reviewers show limited enthusiasm, characterizing the work as 'a modest advance.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "368fc8f9-2389-4251-9aeb-7bd8af72d36b",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "d886216a-cd72-4f7a-8385-d3fab0c3d6b7",
+      "peer_result_id": "3c24fff9-5425-49f3-b488-2a9bacf376e1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address speculative physiological role hypotheses (C65-C66). Strong agreement: both rate UNCERTAIN. OpenEval notes these are 'reasonable extrapolations' but 'lack direct experimental support,' while peer reviewers note limited novelty and incomplete mechanistic support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "11ec240f-ae5d-4a84-831d-d1dacffd9322",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "031097b2-14b8-4815-8320-2ff28ee7f712",
+      "peer_result_id": "42a0d682-569b-487c-82c8-7afb63e6bd52",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate LAYN expression patterns (C2, C19). OpenEval rates SUPPORTED by scRNA-seq data from n=5 healthy and n=5 psoriatic samples, while peer reviewers rate UNCERTAIN, requesting additional quantitative data on proportions of different cell types expressing Layilin in skin and blood.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "82c5c550-6b11-477b-9d78-446539c4a528",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "031097b2-14b8-4815-8320-2ff28ee7f712",
+      "peer_result_id": "226c36bd-ccce-41ac-a9aa-146746351efe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address TCR clonality data (C3, C28, C30). OpenEval rates SUPPORTED as part of comprehensive scRNA-seq analysis showing clonal expansion, while peer reviewers rate UNCERTAIN, suggesting these data 'could be placed as supplementary figures' and are not essential for understanding Layilin's role.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "11283133-f02d-4360-861f-f50c3549568e",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "031097b2-14b8-4815-8320-2ff28ee7f712",
+      "peer_result_id": "102776b5-a06f-4b95-81bd-23ab4a329dbc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate GSEA enrichment for migration/adhesion genes (C4, C24-C26). OpenEval rates SUPPORTED by differential expression and GSEA analysis, while peer reviewers rate UNCERTAIN, stating 'We lack information to be convinced' and requesting specification of geneset libraries, unbiased presentation, and z-score confirmation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "dfd1320c-641b-48d8-ad29-90b0fbbb3bdc",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "031097b2-14b8-4815-8320-2ff28ee7f712",
+      "peer_result_id": "cd5f07af-d0c2-4601-9f12-fc15d314b52d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address LAYN expression levels in psoriasis (C20-C21). OpenEval rates SUPPORTED, noting this negative result is 'appropriately supported by volcano plot analysis' though could benefit from power analysis. Peer reviewers rate SUPPORTED with implicit acceptance, no explicit challenges raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    },
+    {
+      "id": "d33b2e1a-68cf-4fb2-94c4-add2272c8017",
+      "submission_id": "c39cd55f-6399-485a-9ef9-47022e45a751",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "f7269dc3-78b1-4cc3-b3cd-cc7c1cdd6ff0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background/context claims (C1, C8-C18, C27, C34-C35, C46-C48, C67, C69, C74) as SUPPORTED by appropriate citations to established literature. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:44:24.501031Z"
+    }
+  ]
+}

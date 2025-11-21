@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study established a novel methodology for deriving molecular connectivity (MC) from dynamic [11C]DASB-PET scans acquired simultaneously with fMRI in rats. Two cohorts were used: 30 rats for baseline assessment and 11 rats for MDMA challenge experiments, with appropriate ethical approval and standardized imaging protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C78-C85 collectively describe the experimental design, animal cohorts, imaging protocols, and ethical compliance. The methodology is clearly documented with appropriate sample sizes (n=30 baseline, n=11 MDMA), validated imaging equipment, and established protocols. The experimental design is sound and adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C45",
+      "C46",
+      "C70",
+      "C71"
+    ],
+    "result": "At baseline, molecular connectivity (MC) and functional connectivity (FC) showed moderate correlation (r=0.51, p<0.001), both exhibited small-world properties at the group level, and demonstrated temporal stability throughout the scan duration. MC and FC showed comparable network-level organization but only moderate edge-level correlation, indicating complementary information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C45-C46, C70-C71 provide converging evidence from multiple analytical approaches (correlation analysis, graph theory, temporal stability assessment) demonstrating that MC is a reliable measure with properties similar to but distinct from FC. The statistical tests are appropriate, sample sizes adequate (n=30), and results are internally consistent across different analytical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Independent component analysis revealed distinct spatial patterns for FC and MC. FC showed canonical resting-state networks (default-mode, sensorimotor, visual), while MC revealed two primary components: an anterior component including limbic regions and a posterior component including subcortical areas rich in SERT. PET ICs appeared less bilateral than fMRI ICs, likely due to lower temporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C48-C51 describe ICA results with clear spatial patterns supported by Figure 2. The finding that MC reveals different spatial organization than FC is well-documented. The explanation for reduced bilaterality (lower temporal resolution: 80 vs 2400 frames) is reasonable, though this represents a methodological limitation that could affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C72"
+    ],
+    "result": "MDMA induced differential temporal effects on SERT binding: immediate decreases in subcortical regions and delayed effects (~10 min) in salience network regions. Baseline MC independent components showed highly significant spatial correlations (p<0.001) with the spatiotemporal pattern of MDMA-induced SERT changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C72 demonstrate strong correspondence between baseline MC patterns and pharmacological response patterns, supported by statistical analysis (p<0.001) and visual evidence in Figure 3. This validates the biological relevance of MC. However, the small sample size for MDMA experiments (n=11, per C68) is a limitation that should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C73",
+      "C74"
+    ],
+    "result": "MDMA-induced changes in MC showed only low correlation (r=0.29) with changes in SERT binding potential (BPND). While BPND decreases followed an anterior-posterior gradient strongest in high-SERT regions, MC changes were more globally distributed, affecting regions like the insula despite low SERT expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C73-C74 demonstrate that MC provides complementary information to traditional BPND measurements, supported by Figure 4. The low correlation (r=0.29) and differential spatial patterns indicate MC captures network-level changes beyond local receptor occupancy. This is a key finding showing the added value of MC, though the mechanism remains unclear (acknowledged in C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C52",
+      "C63"
+    ],
+    "result": "MDMA induced more pronounced changes in MC than FC, particularly in the subcortical network (MC: p=0.009; FC: p=0.79). Salience network FC showed a trend toward reduction (16%, p=0.02) that did not survive FDR correction. The study demonstrates significant within-subject temporal associations in [11C]DASB binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C34 and C52, C63 show differential sensitivity of MC vs FC to MDMA. However, the FC effect in the salience network (C32) did not survive multiple comparison correction, weakening this conclusion. The small MDMA cohort (n=11, C68) limits statistical power. While MC changes are statistically significant, the lack of corrected FC changes makes the comparative claim less definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The physiological basis of MC likely involves the interplay of serotonin levels and SERT dynamics through competition and internalization mechanisms. Evidence from prior work suggests spontaneous serotonin surges (up to 1500-fold) occur at rest, SERT expression is essential for these surges, and SERT regulation occurs over multiple timescales (milliseconds to hours) through various mechanisms including phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C44 synthesize prior literature to propose mechanisms underlying MC. While the cited evidence (C36-C41, C43-C44) supports various aspects of serotonin/SERT dynamics, the connection to the observed MC signal (C42) remains speculative. The authors acknowledge complexity and conflicting results (C37). This represents a reasonable hypothesis but lacks direct experimental validation in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The distinct temporal dynamics of BPND variations between MC components may reflect hierarchical organization of the serotonergic system, with raphe nuclei exerting immediate modulation on posterior subcortical structures and more gradual downstream effects on limbic and cortical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 propose a hierarchical interpretation of the temporal dynamics observed in C26. While this interpretation is neuroanatomically plausible, it remains speculative (indicated by 'may reflect' and 'likely to exert'). The authors acknowledge that 'precise biological mechanisms driving these temporal differences remain unclear' in the discussion, indicating this requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The findings align with prior work showing MDMA has limited effects on FC and that serotonergic receptor distributions correlate with network-level activity. A trend toward reduced salience FC and MC was observed but did not reach significance. The interpretation that increased neuronal activity occurs in an incoherent manner is proposed, though vascular effects may confound FC readouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C61 contextualize findings within prior literature. The alignment with previous work (C55-C58) is well-supported by citations. However, the non-significant trend (C59) and speculative interpretation about incoherent neuronal activity (C60) are not strongly supported. The acknowledgment of potential vascular confounds (C61) further complicates interpretation of FC results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Study limitations include protocols predating consensus recommendations for rat fMRI, use of isoflurane anesthesia (though at validated low dose of 1.3%), and small sample size for MDMA experiments (n=11). The authors argue that consistency of effects suggests stability despite the small sample size, and found no evidence of isoflurane-MDMA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 transparently acknowledge methodological limitations. The justifications provided (C65-C67, C69) are reasonable but do not fully address the concerns. Isoflurane is a known confound in rodent fMRI despite low-dose use. The small MDMA cohort (n=11) limits statistical power and generalizability. The argument for stability based on consistency (C69) is weak without formal power analysis or replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study contributes to integrating molecular data into connectomic frameworks, demonstrating that subject-level MC is reliable and complementary to FC in both resting and pharmacologically challenged states. However, the multimodal approach cannot fully decipher mechanisms of interregional coherence in PET time courses, requiring future studies with more direct neurotransmitter measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide balanced conclusions acknowledging both contributions and limitations. The demonstration of MC feasibility and complementarity to FC is well-supported by the data (C17-C34, C70-C74). The acknowledgment that mechanisms remain unclear (C75) and call for future work (C77) is appropriate given the exploratory nature of this methodology development study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "MC was calculated using DVR-1 with cerebellar gray matter as reference region, validated in prior studies. The first 20 minutes dominated by perfusion effects were discarded, and piecewise linear detrending was applied to the remaining 60 minutes to obtain temporally stable values and avoid artificial inflation of correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 describe the analytical pipeline for MC calculation. The use of DVR-1 with cerebellar reference is validated by prior work (C86). The preprocessing steps (C87-C88, C92) are justified and documented in supplementary materials (Figure 1\u2014figure supplement 1). The detrending approach addresses a real methodological challenge (artificial correlation inflation), though this preprocessing step could potentially introduce artifacts that warrant further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C62"
+    ],
+    "result": "The introduction establishes that simultaneous PET/MRI enables multimodal brain assessment, with PET quantifying molecular changes and fMRI capturing hemodynamic responses. Prior PET studies focused on interregional binding coherence across subjects using static scans, while the concept of subject-level molecular connectivity through temporal correlation of dynamic binding potentials remained unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 and C62 provide appropriate background context supported by relevant citations. The characterization of prior work appears accurate, and the identification of the research gap (C12) is reasonable. These claims establish the rationale for the study but do not constitute novel findings themselves.",
+    "result_type": "MINOR"
+  }
+]

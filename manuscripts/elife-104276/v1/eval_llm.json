@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Polysome accumulation correlates with nucleoid segregation dynamics across growth conditions and cell cycle stages. The rate of polysome accumulation at mid-nucleoid correlates with the rate of nucleoid splitting (\u03c1=-0.52), and polysome accumulation contributes most to nucleoid migration early in the segregation cycle (0-25%), with this contribution decreasing over time while cell elongation contribution increases. This correlation is reproducible across strains, fluorescent markers, and nutrient conditions, with faster-growing populations showing stronger polysome accumulation and earlier nucleoid splitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C39-C44 provide extensive experimental evidence from time-lapse microscopy (Figure 1) and population snapshots (Figure 2) demonstrating strong correlations between polysome accumulation and nucleoid segregation. The linear mixed-effects modeling (C39-C40) provides statistical rigor, and the reproducibility across multiple experimental conditions (C41-C44) strengthens the findings. The correlations are quantified with appropriate statistical measures (Spearman \u03c1 values with p<10^-10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Spatial asymmetries exist in both polysome distribution and nucleoid compaction in newborn E. coli cells. Newborn cells have more polysomes at the new pole compared to the old pole, and this polysome asymmetry negatively correlates with nucleoid position (\u03c1=-0.41). The nucleoid shows ~20% higher DNA concentration toward the new pole, and the relative availability of polysome-free space correlates most strongly (\u03c1=0.52) with asymmetric DNA distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are well-supported by quantitative microscopy data (Figure 3) with appropriate statistical analysis including Spearman correlations and Gaussian function fitting. The asymmetries are measured with sufficient precision (~20% difference in DNA concentration) and the correlations are statistically significant. The use of linear mixed-effects models to identify contributing factors (C49) adds analytical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A minimal reaction-diffusion model successfully recapitulates key experimental observations of nucleoid segregation. The model captures the negative correlation between growth rate and relative timing of nucleoid splitting, reproduces the constant cell length at nucleoid splitting across growth rates, and at low nucleoid diffusion coefficients (Dn<0.005 \u03bcm\u00b2/s), reproduces experimentally observed cellular asymmetries including nucleoid position offset and asymmetric compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate good agreement between model predictions and experimental data (Figures 4D, 4E, Figure 4\u2014figure supplement 3). The model successfully captures both population-level trends and single-cell asymmetries. However, the model is simplified (1D, average polysome description) and relies on parameter fitting. The agreement with prior experimental data (Govers et al., 2024) for cell length at splitting adds validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Polysomes accumulate within nucleoids in newborn cells through nonequilibrium processes rather than simple diffusion into DNA-free space. RplA-msfGFP-labeled polysomes are present within nucleoids in the shortest cells, while freely diffusing mCherry-\u03bcNS particles of similar size are restricted to cell poles and cannot access mid-cell until after nucleoid splitting is visible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by comparative particle tracking experiments (Figure 5) that effectively distinguish between nonequilibrium polysome production and passive diffusion. The use of \u03bcNS particles as a control for size-matched freely diffusing objects is appropriate. The spatial distributions are clearly different between polysomes and \u03bcNS particles, supporting the nonequilibrium mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Rifampicin treatment demonstrates causality between polysome dynamics and nucleoid segregation. Halting transcription with rifampicin immediately arrests nucleoid segregation, with the distance between sister nucleoids remaining constant for ~30 min before decreasing. After 1 hour of treatment, when RplA-GFP fluorescence becomes homogeneous, the two nucleoid objects fuse. The negative correlation between polysome accumulation and nucleoid depletion is reversed ~9 min after rifampicin addition, and polysome depletion results in loss of asymmetric nucleoid compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C55-C60 are strongly supported by time-course rifampicin experiments (Figure 6) showing immediate arrest of segregation followed by gradual reversal. The temporal dynamics (immediate arrest, 30-min delay before reversal, 1-hour fusion) are well-documented. The correlation reversal (C59) and loss of asymmetry (C60) provide additional mechanistic support. This is a key causality experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Redirecting gene expression to plasmids creates ectopic polysome accumulations that drive aberrant nucleoid dynamics. Plasmid-based mTagBFP2 overexpression reduces cell growth rate while creating various patterns of polysome accumulation. Ectopic polysome accumulation at poles prevents nucleoid splitting, while accumulation between sister nucleoids pushes them further apart. Both phenotypes are reproduced by the theoretical model when ectopic polysome production is simulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C67 are supported by plasmid overexpression experiments (Figure 7) showing correlated changes in polysome distribution and nucleoid dynamics. The verification that DNA replication continues (C63) rules out a trivial explanation. The model reproduction of both phenotypes (C67) strengthens the mechanistic interpretation. However, the stochastic nature of plasmid clustering introduces some variability, and the long-term effects (>8 hr) show complexity not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cell width control is critical for proper nucleoid segregation along the cell length. A22 treatment causes cell width enlargement, resulting in a polysome phase at cell center surrounded by nucleoid at the periphery. Combined A22 and cephalexin treatment leads to aberrant nucleoid segregation along the cell width, formation of polysome bridges, and coalescence of polysome accumulations toward the center with nucleoid fusion around the periphery. Width-enlarged cells show decreased numbers but increased sizes of nucleoid and polysome objects compared to normal-width filamentous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C68-C73 are supported by cell width perturbation experiments (Figure 8) with appropriate controls (cephalexin alone). The quantitative comparison (C73) between treatments with matched cell area distributions is methodologically sound. The observations support the hypothesis that cell width limits polysome diffusion around nucleoids. However, the interpretation relies on the assumption that transertion creates a diffusion barrier, which is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The proposed mechanism couples nucleoid segregation to cell growth through polysomes without requiring regulatory molecules. Polysome concentration and accumulation rate directly reflect transcriptional and translational activities, such that increases in polysome concentration lead to both faster protein synthesis/cell growth and faster nucleoid segregation, creating an inherent coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C74-C76 represent the main conceptual conclusion of the paper, synthesizing the experimental and modeling results. The conclusion is well-supported by the collective evidence showing correlations between polysome dynamics, nucleoid segregation, and growth rate across multiple conditions. The self-organizing nature is supported by the minimal model requiring no regulatory components. However, this remains a proposed mechanism that may work alongside other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Rod-shaped cell morphology and cell width control ensure nucleoid growth along the cell length axis. The nucleoid attachment to the membrane through transertion may act as a diffusion barrier limiting polysome exchange between DNA-free regions. This explains improved nucleoid segregation in wall-less L-forms when compressed to normal width and suggests nucleoid segregation may have imposed evolutionary constraints on cell width control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by the cell width experiments (C6, C68-C73) and provide a mechanistic interpretation. The explanation of L-form behavior (C80) integrates prior work (Wu et al., 2020) with current findings. However, the role of transertion as a diffusion barrier (C78) is inferred rather than directly demonstrated. The evolutionary constraint hypothesis (C81) is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "E. coli lacks a ParABS system yet faithfully segregates nucleoids across growth rates. Many bacteria use ParABS to segregate oriC-proximal regions, but this system doesn't explain terminal region separation or sister nucleoid migration. ParABS genes are often non-essential, and some bacteria including E. coli lack this system entirely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11 establish the biological context and motivation for the study. These are well-established facts in the field, supported by extensive citations (C8-C11). Claim C1 is stated as known fact and is consistent with the literature. This background appropriately frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Various mechanisms have been proposed for bacterial chromosome segregation, including DNA replication-dependent extrusion, entropic unmixing forces, and DNA loop extrusion via MukB. However, recent modeling suggests entropic forces may inhibit rather than promote segregation, and mukB deletion mutants show only moderate defects that can be suppressed by other mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 accurately summarize prior work on chromosome segregation mechanisms, with appropriate citations. The presentation of conflicting views (C13 vs C14) is balanced. The discussion of mukB mutants (C15-C17) correctly notes that most cells still segregate successfully, supporting the need for alternative mechanisms. This is accurate background material.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Nucleoid segregation timing correlates with growth rate, occurring earlier in richer media. The 1963 Jacob model proposed membrane attachment and localized growth, and transertion has been demonstrated, but there is no evidence for localized membrane growth between nucleoids. E. coli uses dispersed peptidoglycan growth, wall-less cells can segregate nucleoids, and chromosomal loci segregate faster than cell elongation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 accurately present established observations about nucleoid segregation timing and critique the Jacob 1963 model. The citations support each claim. The logical argument that cell elongation cannot be the major driver (C24) is sound given the rate comparison. This provides appropriate context for why alternative mechanisms are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior work has established that macromolecular crowders compact nucleoids through excluded-volume interactions, ribosome allocation increases with growth rate, polysomes are comparable in size to nucleoid mesh, and ribosomes accumulate in DNA-free regions. Theoretical work suggests DNA can phase separate from polysomes through excluded-volume effects alone, and a recent nonequilibrium model proposes that polysome-DNA repulsion and mRNA synthesis/degradation could explain nucleoid positioning and segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 accurately summarize relevant prior experimental and theoretical work with appropriate citations. The progression from general crowding effects (C25) through ribosome biology (C26-C29) to theoretical models (C30-C33) logically builds the foundation for the current study. The description of the Miangolarra et al. 2021 model (C31-C33) is accurate and provides direct context for the current work's extension of that model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Experimental setup details: CJW7323 cells were grown in M9gluCAAT in a microfluidic device, and the average relative timing of cell constriction initiation was estimated as shown in supplementary figures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are straightforward methodological details that are clearly stated in the figure captions and methods. These are factual descriptions of the experimental setup.",
+    "result_type": "MINOR"
+  }
+]

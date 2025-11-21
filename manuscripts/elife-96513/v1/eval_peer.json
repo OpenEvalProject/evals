@@ -1,0 +1,135 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C40",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors developed mwSuMD, an improved adaptive sampling method based on SuMD that uses multiple parallel replicas (walkers) to address complex conformational transitions and protein-protein associations without energetic bias. The method is compatible with multiple MD engines (ACEMD, NAMD, GROMACS, OPENMM) and designed to yield mechanistic descriptions of structural events.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm the methodological contribution, with one stating 'The mwSuMD method is solid and valuable, has wide applicability and is compatible with the most world-widely used MD engines' and another noting it is 'a powerful tool to gain insight on the structural basis for the pharmacology of G protein-coupled receptors.' The editor confirms 'solid evidence that the mwSuMD approach can assist in the sampling of complex binding processes.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C41",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "mwSuMD simulations of AVP binding to V2R demonstrated improved performance over SuMD, particularly with 100 ps time windows and RMSD as the supervised metric combined with SMscore, achieving minimum RMSD of 3.85 \u00c5 and mode RMSD of 4.40 \u00c5, comparable to the equilibrium MD reference of 3.80\u00b10.52 \u00c5.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these methodological validation results without critique. One reviewer notes the study 'provides solid evidence that the mwSuMD approach can assist in the sampling of complex binding processes,' implicitly supporting the AVP:V2R benchmark data. The comparison to equilibrium MD and systematic parameter testing are not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C42"
+    ],
+    "result": "mwSuMD identified V2R residues E184ECL2, P298ECL3, and E303ECL3 as involved during AVP binding (though not in final contact), none of which are characterized in mutagenesis studies. The method also simulated AVP dissociation approximately 10 times faster than SuMD, with ECL2 and ECL3 slightly more involved during association than dissociation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not explicitly challenge these findings, one notes that 'validation of the findings, even computationally through for instance in silico mutagenesis study, is advisable,' suggesting the novel residue predictions require further support. The dissociation speed improvement is accepted as a methodological advantage but the biological insights about ECL involvement are not specifically discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C33"
+    ],
+    "result": "mwSuMD simulated PF06882961 binding to GLP-1R using multistep supervision, achieving RMSD of 3.79\u00b10.83 \u00c5 and sampling a counterclockwise TM6 helix rotation consistent with active Gs-coupled structures. The simulation showed the central polar network and TM6 kink residues adopting active-like conformations, with PF06882961 stabilized and GDP destabilized during the process.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer states 'No significant advance of the existing structural data on GPCR and GPCR/G protein coupling is provided. Most of the results are reproductions of the previously reported structures,' suggesting these findings largely recapitulate known structural features rather than providing novel insights. However, the method's ability to simulate the activation pathway is not directly challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "mwSuMD successfully simulated G protein binding to GPCRs: \u03b22AR:Gs achieved minimum RMSD of 3.94-3.96 \u00c5 in two of three replicas; A1R:Gi engagement reached RMSD \u22485 \u00c5 in ~50 ns while 1 \u03bcs classic MD failed (RMSD >40 \u00c5); GLP-1R:Gs binding showed two of three replicas reaching RMSD \u226410 \u00c5, with replica 2 achieving 7.59\u00b11.58 \u00c5 for G\u03b1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these results as demonstrating the method's capability. The editor notes the approach 'can assist in the sampling of complex binding processes, leading to useful findings for GPCR activity.' The comparison to failed classic MD simulations effectively demonstrates mwSuMD's advantage for rare event sampling, which reviewers do not contest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "mwSuMD identified a 'hidden interaction' between D344^6.33 and R385^\u03b15 proposed to be important for Gs coupling to GLP-1R, which would explain the GLP-1 EC50 reduction upon D344A mutation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer specifically highlights this finding as having 'potential to provide novel insight into GPCR functionality' but emphasizes 'validation of the findings, even computationally through for instance in silico mutagenesis study, is advisable.' This indicates the claim is interesting but requires additional validation beyond the simulation observation and literature correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C47",
+      "C48"
+    ],
+    "result": "mwSuMD simulated the complete sequence from inactive GPCR to GDP release without energy bias for the first time, identifying structural changes including AHD opening, \u03b1G-\u03b14 loop conformational change, and rupture of GDP-D295G\u03b1 hydrogen bond. The \u03b1G-\u03b14 loop's role is supported by H/D exchange experiments, and its sequence divergence among G protein isoforms suggests involvement in selectivity. The \u03b26-\u03b15 loop conformational change occurs after GDP release rather than initiating it.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as a significant achievement. The editor states the manuscript 'provides solid evidence' for the method's capabilities, and one reviewer notes 'The mwSuMD method is solid and valuable' without challenging the GDP release mechanism. The experimental support cited for \u03b1G-\u03b14 loop involvement and consistency with recent simulations strengthen the claims, which reviewers do not question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The authors propose that mwSuMD trajectories can serve as a backbone for further MD sampling to quantify kinetics and anticipate the method can be applied to a wide range of structural phenomena in both membrane and cytosolic proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers support the method's broad applicability. One states 'has wide applicability and is compatible with the most world-widely used MD engines. It may be of interest to the computational structural biology community,' and the editor notes it 'has the potential to have broad applicability in structural biology and pharmacology.' These forward-looking claims about utility are accepted.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C23",
+      "C82"
+    ],
+    "result": "FLiSimBA is a computational framework that accurately simulates fluorescence lifetime data for biological applications. The simulated histograms closely matched experimental histograms, with no significant differences in fitted P1 (p=0.98) or empirical lifetime (p=0.81) between simulated and experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9, C23, and C82 collectively demonstrate that FLiSimBA successfully recapitulates experimental data. The statistical validation (C23) with non-significant differences between simulated and experimental data provides strong quantitative support for the framework's accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Different sources of signal contribute distinct biases and noise to fluorescence lifetime measurements. Autofluorescence decreased fitted P1 and empirical lifetime (p<0.0001), while afterpulse and background increased empirical lifetime (p<0.0001) but did not significantly affect fitted P1 (p>0.6). These biases decreased and plateaued at higher photon counts, with variance also decreasing, resulting in both less bias and less noise at higher photon counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 provide comprehensive statistical evidence (n=500 simulations) showing how autofluorescence, afterpulse, and background differentially affect lifetime measurements. The mechanistic explanations based on lifetime values (C14-C16) are consistent with the observed effects, and the photon-dependent behavior is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Minimum detectable differences (MDD) in fluorescence lifetime decrease with increasing photon counts and repeated measurements. For example, approximately 300,000 photons are needed to detect a P1 change of 0.006 or lifetime change of 5 ps with five measurements per group. The gain in SNR decreases at higher sensor fluorescence levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 provide quantitative guidelines for experimental design based on simulation data. The specific photon requirements (C26) are derived from MDD curves, and the diminishing returns at higher photon counts (C27) are consistent with the variance data from Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Hybrid detectors (HBDs) and GaAsP PMTs show similar photon-dependent changes and comparable MDDs despite HBDs having narrower IRF and no afterpulse. While HBDs introduce less IRF noise (STD: 0.0005 vs 0.0008 for fitted P1), photon noise dominates (STD: 0.0028 for both), resulting in little SNR improvement for fluorescent protein-based sensors in biological applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 provide a comprehensive comparison of detector types with quantitative noise decomposition (C31-C32). The conclusion (C33) is well-supported by the data showing photon noise dominance. However, the generalization is limited to fluorescent protein-based sensors under the specific conditions tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C6",
+      "C78"
+    ],
+    "result": "Fluorescence lifetime measurements show sensor expression dependence in biological settings. When P1 changed from 0.4 to 0.5, both fitted P1 and empirical lifetime increased (p<0.0001), but the magnitude of change varied with photon count. Responses were relatively stable at \u2265500,000 photons. This challenges the conventional view that lifetime is independent of sensor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C6, and C78 demonstrate expression-level dependence with statistical support. The quantitative threshold of 500,000 photons (C37) is specific to the parameters used. The conclusion challenges established assumptions but is well-supported by simulation data showing how relative contributions of sensor vs. background signals affect measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Higher sensor photon counts reduce the impact of sensor expression changes on absolute lifetime measurements. As photon counts increase, greater differences in sensor expression can be tolerated without significant lifetime changes. Fitted P1 tolerates more photon changes than empirical lifetime for a given photon count.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide quantitative guidelines for comparing absolute lifetime values across different expression levels. The differential tolerance between fitted P1 and empirical lifetime (C41) is consistent with their different sensitivities to background signals shown in earlier results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C87"
+    ],
+    "result": "Developing sensors outside autofluorescence spectra or lowering background signals can reduce sensor expression dependence. With no autofluorescence, fitted P1 becomes completely independent of sensor expression (p>0.8 for most photon counts), while empirical lifetime shows reduced dependence. Lower background significantly reduces dependence for empirical lifetime but not fitted P1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 and C87 demonstrate how technological innovations can mitigate expression dependence, with statistical support. The differential effects on fitted P1 vs. empirical lifetime are consistent with earlier findings about background sensitivity. These are simulation-based predictions that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C85"
+    ],
+    "result": "Multiplexed fluorescence lifetime imaging is feasible with sensors having different lifetime constants. Deconvolution accurately recovered photon numbers, with better performance at greater lifetime separation (STD=0.012 for 4 ns vs. 0.053-0.061 for 0.5 ns separation). A 0.5 ns separation can achieve 5% minimum detectable \u0394F/F0 with high sensor 1 expression (\u2265800,000 photons) and reasonable sensor 2 expression (\u2264500,000 photons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 and C85 demonstrate feasibility of multiplexed imaging with quantitative parameter specifications. The systematic analysis of statistical power under various conditions (C54-C55) provides practical guidelines. However, this is a simulation-based proof-of-concept that requires experimental validation, and the bias from autofluorescence (C52) needs consideration in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Fluorescence lifetime imaging (FLIM) allows measurement of absolute signal levels independent of sensor concentration when only the sensor is present. This enables comparison of biological signals across animals and time periods despite expression changes, and offers potential for quantifying absolute values of biological signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C73-C75 describe established advantages of FLIM supported by citations. However, the manuscript's main contribution is showing that this independence breaks down in biological settings (addressed in other results), making this a contextual claim rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C5",
+      "C7",
+      "C8"
+    ],
+    "result": "FLIM's advantage of sensor concentration independence is compromised in biological experiments by autofluorescence, background light, dark current, and afterpulse. Prior simulations typically assumed only sensor fluorescence, making them useful in vitro but not readily applicable to biological settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C5, C7-C8 establish the motivation for the study with citation support (C5) and are validated by the simulation results throughout the manuscript. This represents an assessment of prior work's limitations rather than a novel experimental finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "FLIM-AKAR is a FRET-based PKA biosensor with double exponential decay (\u03c41=2.14 ns, \u03c42=0.69 ns). Autofluorescence from brain tissue exhibited faster decay than FLIM-AKAR, and both experimental and simulated data showed good fitting to the double exponential model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe the sensor properties and validation of the model fitting. These are well-established properties (C59-C61 with citations) and methodological validations (C62-C63 with figure support) that provide necessary context for the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Simulation parameters were empirically determined: autofluorescence (4560 photons), background (3484 photons), and afterpulse ratios (0.32-0.40% for GaAsP PMTs, 0% for HBDs). Afterpulse results from ionization of residual gas in PMTs, background from ambient light and dark current, and autofluorescence from cellular fluorescent components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 describe methodological details and parameter values used in simulations. These are empirically measured values specific to the experimental setup, with appropriate citations for established phenomena (C64, C72). The values are clearly stated but specific to this study's conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "FLIM-compatible sensors are being actively developed and increasingly adopted. Fitted parameters like fitted P1 are preferred over empirical lifetime when histograms can be described by multi-exponential decay and sufficient photons are collected, due to lower sensitivity to background interference. Empirical lifetime is used when decay is too complex or photon counts are too low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe field trends (knowledge claims), while C79-C80 provide practical recommendations based on the simulation results. The preference for fitted P1 (C79) is supported by Figure 7 data, though the recommendation is context-dependent on photon counts and decay complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Simultaneous spectral and lifetime multiplexing enables detection of a much larger number of signals dynamically, opening doors to better systems understanding of signaling within cells and physiological interactions between organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is a forward-looking statement about potential applications. While the simulation results (Figure 8) support feasibility of lifetime-based multiplexing, the claim about enabling 'much larger number of signals' and 'systems understanding' is speculative and lacks quantitative support or experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Simulation methodology used specific IRF parameters (340 ps FWHM for GaAsP PMT, 120 ps for HBD) and repeated simulations 500 times under each condition to generate statistical distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C86 describe methodological parameters. The IRF values are based on empirical measurements (C83) or manufacturer specifications (C84 with citation). The 500 repetitions (C86) provide adequate statistical power for the analyses performed.",
+    "result_type": "MINOR"
+  }
+]

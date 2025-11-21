@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C99"
+    ],
+    "result": "C. elegans globally reduces protein synthesis in response to cold, as demonstrated by polysome profiling showing loss of polyribosomes and increased monosomes, and by SUnSET assay showing reduced puromycin incorporation at 4\u00b0C compared to 20\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C34, C35, C36, C37, and C99 are well-supported by converging experimental evidence from two independent methods (polysome profiling in Figure 1B and SUnSET assay in Figure 1C). The data clearly show reduced translation at 4\u00b0C while demonstrating that some translation continues, consistent with findings in other hibernating species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C40",
+      "C41",
+      "C107"
+    ],
+    "result": "Despite global translation reduction, the residual translation of individual transcripts correlates strongly with their mRNA abundance (Pearson correlation = 0.72), suggesting that mRNA levels are the primary determinant of cold-specific translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26, C40, C41, and C107 are supported by ribosomal profiling and RNA-seq data showing strong correlation (r=0.72) between mRNA levels and ribosomal occupancy during the 10\u00b0C to 4\u00b0C transition (Figure 2A). The correlation coefficient provides quantitative support for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C27",
+      "C47",
+      "C48",
+      "C108",
+      "C111"
+    ],
+    "result": "Cold-specific gene expression is regulated primarily at the transcriptional level, as demonstrated by the lips-11 promoter being sufficient to drive cold-induced GFP expression and by the general correlation between mRNA abundance and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C27, C47, C48, C108, and C111 are supported by the lips-11 promoter-GFP reporter experiment (Figure 2B) showing transcriptional regulation, combined with the correlation data between mRNA levels and translation. The use of a single gene (lips-11) as the primary validation is a limitation, though the correlation data provides broader support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C128"
+    ],
+    "result": "A subset of transcripts, including fatty acid desaturases FAT-2, FAT-3, and FAT-4, show reduced translation in the cold without corresponding decreases in mRNA levels, suggesting cold-specific translational repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, and C128 are supported by ribosomal profiling data (Figure 2A red dots, Figure 2\u2014figure supplement 1B, Supplementary file 3) showing reduced ribosomal occupancy for these transcripts despite stable mRNA levels. This represents an exception to the general correlation pattern and is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C31",
+      "C52",
+      "C53",
+      "C60"
+    ],
+    "result": "Cold-induced expression of lips-11 depends on the IRE-1/XBP-1 branch of the UPR, as demonstrated by reduced lips-11 reporter expression upon ire-1 RNAi but not atf-6 or pek-1 RNAi, and by increased xbp-1 splicing in the cold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C31, C52, C53, and C60 are well-supported by multiple lines of evidence: RNAi experiments showing specific dependence on ire-1 (Figure 3A), xbp-1 splicing reporter data (Figure 3B), ribosomal profiling of xbp-1 splicing (Figure 3\u2014figure supplement 2B), and xbp-1 dependence of lips-11 expression (Figure 3C). The convergence of genetic and molecular evidence is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C64",
+      "C71"
+    ],
+    "result": "Cold exposure specifically activates the ER UPR but not mitochondrial UPR, as shown by increased hsp-4 reporter expression but not hsp-6 or hsp-60 reporter expression in the cold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C64, and C71 are supported by reporter strain data showing differential activation of ER stress markers (hsp-4, Figure 4A) versus mitochondrial stress markers (hsp-6 and hsp-60, Figure 4\u2014figure supplement 1). The use of established reporter strains and the clear differential response provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Four UPRER target genes show increased abundance in the cold, with 3/4 being known IRE-1 targets, and their upregulation depends on IRE-1 as shown by reduced expression in ire-1(ok799) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C68, C69, and C70 are supported by RT-qPCR data (Figure 4B, Figure 4\u2014figure supplement 2) showing increased transcript levels in wild-type animals and reduced levels in ire-1 mutants. The time course data (day 1 and day 3) and genetic validation strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C124"
+    ],
+    "result": "Protein misfolding transiently increases on day 1 of cold exposure but returns to basal levels by day 3, as measured by the CPL-1 misfolding reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, and C124 are supported by the CPL-1 misfolding reporter data (Figure 5) showing a statistically significant increase at day 1 (p<0.0001) but not at day 3. The transient nature of the response is clearly demonstrated, though the modest magnitude of the day 1 increase is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C117",
+      "C127",
+      "C129"
+    ],
+    "result": "Dietary supplementation with unsaturated fatty acids does not prevent IRE-1 activation in hibernating nematodes, as shown by no reduction in lips-11 reporter expression following FA supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, C117, C127, and C129 are supported by the FA supplementation experiments (Figure 6\u2014figure supplement 2) showing no reduction in lips-11 reporter expression with oleic, palmitic, or linoleic acid supplementation. The positive control with fat-6 RNAi (Figure 6\u2014figure supplement 1) validates the supplementation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C130",
+      "C131"
+    ],
+    "result": "Choline supplementation reduces IRE-1-dependent gene expression (lips-11 and hsp-4 reporters) at both day 1 and day 3 of cold exposure and improves cold survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C83, C130, and C131 are well-supported by microscopy data showing reduced reporter expression with choline supplementation (Figure 6A-B) and survival assay data (Figure 6C, p=0.02). The consistency across multiple reporters and time points, plus the functional survival benefit, provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C32",
+      "C84"
+    ],
+    "result": "Cold-induced UPR activation is triggered by disruptions in both protein and lipid homeostasis, with lipid stress related to insufficient phosphatidylcholine rather than unsaturated fatty acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C32, and C84 are supported by the combined evidence of transient protein misfolding (Figure 5), the effect of choline supplementation (Figure 6A-C), and the lack of effect of FA supplementation (Figure 6\u2014figure supplement 2). The inference about PC versus unsaturated FAs is well-reasoned based on the differential effects of supplementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C33",
+      "C86",
+      "C87"
+    ],
+    "result": "IRE-1 signaling is beneficial for cold survival, as ire-1(ok799) mutants display modest but significant impairment of cold survival compared to wild-type animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C33, C86, and C87 are supported by survival assay data (Figure 7A, p=0.03) comparing wild-type and ire-1(ok799) mutants. The effect is statistically significant though modest in magnitude. The use of six biological replicates with >800 animals per time point provides adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "RNAi-mediated depletion of LIPS-11 has no obvious impact on cold survival, suggesting either no essential role or functional redundancy with other IRE-1/XBP-1 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C89 are supported by the stated observation of no effect of lips-11 RNAi on cold survival. However, no data figure is provided for this negative result, which is a limitation. The interpretation of possible redundancy is reasonable speculation given the lack of effect despite clear IRE-1-dependent upregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C92"
+    ],
+    "result": "Little overlap exists between IRE-1-dependent gene sets from different studies (UPRPT, UPRLBS, and cold-induced genes), suggesting that IRE-1-mediated gene expression is largely context-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C92 are supported by the Venn diagram analysis (Figure 7\u2014figure supplement 1, Supplementary file 5) showing minimal overlap between different IRE-1-dependent gene sets. The conclusion about context-dependence is a reasonable inference from the data, though alternative explanations (technical differences, thresholds) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The biggest changes in ribosomal occupancy of mRNAs occur during the shift from 10\u00b0C to 4\u00b0C, suggesting most translational remodeling happens during the first day at 4\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are supported by ribosomal profiling data (Figure 2\u2014figure supplement 1A) showing the largest changes during the 10\u00b0C to 4\u00b0C transition. The inference about timing is reasonable based on the data, though the claim about 'most' remodeling occurring on day 1 is somewhat imprecise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "CEBP-1::EGFP and NUMR-1::EGFP protein levels increase in the cold while HSF-1::EGFP does not, validating that ribosomal occupancy correlates with protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 are supported by microscopy data (Figure 2\u2014figure supplement 3) showing differential expression patterns consistent with ribosomal profiling predictions. This provides important validation of the ribosomal profiling approach, though the sample size is limited to three genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "XBP-1::GFP expression increases significantly in the cold, and ribosomal profiling data are consistent with increased xbp-1 mRNA splicing during cooling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 are supported by the XBP-1::GFP reporter data (Figure 3B, Figure 3\u2014figure supplement 2A) and ribosomal profiling coverage tracks (Figure 3\u2014figure supplement 2B). The convergence of reporter and profiling data provides strong support for increased xbp-1 splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The lips-11 promoter-GFP reporter is induced by tunicamycin treatment, confirming its responsiveness to ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are supported by microscopy data (Figure 3\u2014figure supplement 1) showing increased reporter expression with tunicamycin treatment. This positive control validates the reporter's responsiveness to canonical ER stress inducers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Unsaturated fatty acid supplementation prevents hsp-4 induction in fat-6 RNAi-depleted animals, validating the effectiveness of FA supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by microscopy data (Figure 6\u2014figure supplement 1) confirming a previous report. This positive control is important for validating the FA supplementation approach used in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establishing the context of hibernation, cold adaptation, protein synthesis regulation, and current gaps in understanding of cold-specific gene expression mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C16 represent established knowledge and literature context supported by appropriate citations. These provide the scientific background and rationale for the study but do not constitute novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "C. elegans is an appropriate model for studying cold adaptation, as it thrives in temperate climates, can enter cold dormancy, and shares some cold survival mechanisms with mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 establish C. elegans as a valid model system through citations to previous work. These justify the choice of model organism but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C49",
+      "C54",
+      "C55",
+      "C62",
+      "C65",
+      "C66",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Background information on the UPR system, its branches, lips-11 gene function, and mechanisms of IRE-1 activation by protein and lipid stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C49, C54-C55, C62, C65-C66, C72, C75-C78 represent established knowledge about UPR biology supported by appropriate citations. These provide necessary background but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C44",
+      "C91",
+      "C96",
+      "C97",
+      "C98",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C132",
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "Discussion of prior work on fatty acid desaturases, IRE-1 activation in different contexts, physiological differences at different temperatures, and clinical applications of cooling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C91, C96-C98, C112-C115, C118-C122, C132, C137-C138, C140 represent citations to prior work that contextualize the current findings. These are appropriately cited but represent background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Summary model proposing that cold-induced protein and lipid stress specifically activates the IRE-1 branch of UPR, leading to XBP-1-mediated transcription of target genes beyond lips-11 that benefit cold survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C94, and C95 represent a synthesis of the experimental findings into a coherent model (Figure 7B). The model is well-supported by the collective evidence, though the identity of additional IRE-1 targets beyond lips-11 remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C123",
+      "C125",
+      "C126",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C139"
+    ],
+    "result": "Speculative discussion about the adaptive significance of translational regulation, potential mechanisms of mRNA enrichment, alternative explanations for choline effects, and potential clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C106, C109-C110, C123, C125-C126, C133-C136, C139 represent speculation and discussion of implications rather than tested hypotheses. While these are reasonable interpretations and suggestions for future work, they lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  }
+]

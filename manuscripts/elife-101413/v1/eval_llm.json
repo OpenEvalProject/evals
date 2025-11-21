@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study employed a double-blind, crossover design with 94 healthy young adults who completed a probabilistic reversal learning task across three sessions: a drug-free baseline session, and two drug sessions (one with 20 mg oral methamphetamine and one with placebo), with order counterbalanced. Demographic variables did not differ significantly between groups stratified by baseline performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C22, C23, and C24 collectively describe the experimental design and participant characteristics. The design is clearly specified with appropriate controls (baseline session, counterbalancing, double-blinding), and demographic comparisons confirm group equivalence. This provides a solid methodological foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "There was a strong practice effect with significantly better performance on sessions two and three compared to session one (baseline), but no difference between sessions two and three.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 report statistical results (F(2,186) = 14.53, p < 0.001) showing practice effects across sessions. The finding that sessions 2 and 3 did not differ supports the effectiveness of the baseline session in controlling for practice effects, which is important for interpreting drug effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Methamphetamine significantly increased subjective 'feel drug effect' ratings compared to placebo at multiple time points post-administration, with no differences in these ratings between low and high baseline performers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 report significant Drug \u00d7 Time interaction (F(5,555) = 38.46, p < 0.001) and lack of baseline performance group differences in subjective drug effects. This confirms that MA was pharmacologically active and that subjective effects were comparable across performance groups, ruling out differential drug perception as a confound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C7",
+      "C8",
+      "C75",
+      "C76"
+    ],
+    "result": "Methamphetamine did not improve overall task performance when all subjects were considered together, but showed a marginally significant interaction with baseline performance. Specifically, MA marginally improved performance in participants with poor baseline performance (p = 0.071) but not in high baseline performers, demonstrating that baseline performance modulates the effect of MA on learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C33 and C7-C8 describe the primary behavioral finding. However, the key Drug \u00d7 Baseline Performance interaction was only marginally significant (p = 0.07), and the post-hoc comparison in low performers was also marginal (p = 0.071). While the pattern is consistent and supported by additional analyses, the statistical evidence does not reach conventional significance thresholds, warranting caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Methamphetamine was associated with a trend toward faster reaction times and significantly reduced RT variability, with the reduction in RT variability being specific to low baseline performers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 report that MA reduced RT variability (t(93) = 2.54, p = 0.012, d = 0.25), with this effect specific to low baseline performers (t(46) = 3.04, p = 0.003, d = 0.48). The citation to prior work (C36) supports the interpretation that reduced RT variability reflects increased attention. These findings provide converging evidence for MA's effects on cognitive performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Methamphetamine did not affect initial learning but improved performance later in learning, particularly for stimuli with less predictable reward probabilities and in subjects with low baseline performance. A breakpoint analysis identified trial 10 as the transition from early to late learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe learning dynamics with appropriate statistical analysis (Bai-Perron breakpoint test). The finding that MA improved late learning specifically for less predictable rewards in low performers (t(46) = -2.59, p = 0.01, d = 0.32) is statistically significant and provides mechanistic insight into MA's effects. The breakpoint analysis provides objective segmentation of learning phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The Pearce-Hall hybrid feedback confirmatory model best fit the data, and simulations using individual parameter estimates confirmed that MA increases performance later in learning for stimuli with less predictable reward probabilities, particularly in subjects with low baseline performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 report model comparison results (100% protected exceedance probability) and simulation validation. The model selection is rigorous, and simulations confirm the behavioral findings (t(46) = 2.00, p = 0.03, d = 0.23). Model validation analyses (Figure 4\u2014figure supplement 1) support parameter recovery, strengthening confidence in the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C59",
+      "C62",
+      "C69",
+      "C70"
+    ],
+    "result": "Methamphetamine reduced the eta parameter (controlling dynamic adjustments of learning rate according to recent prediction errors), particularly in low baseline performers. This was the only model parameter significantly affected by MA, and this reduction pushed eta values closer to task-specific optimal values, thereby improving performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C59, C62, C69-C70 describe the key computational finding. MA significantly reduced eta overall (t(93) = -3.005, p = 0.003, d = 0.43), with the effect strongest in low performers (t(46) = -3.06, p = 0.003, d = 0.67). The specificity of this effect (no other parameters changed) and the relationship to optimal performance (C60-C62) provide strong mechanistic support for how MA improves learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Low baseline performers in the placebo condition exhibited greater variability in learning rates, rendering their choices more erratic. Methamphetamine reduced learning rate variability across learning stages, improved the signal-to-noise ratio between real reversals and misleading feedback in low baseline performers, particularly for less predictable rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 describe learning rate dynamics derived from the computational model. Statistical tests show MA reduced learning rate variability (multiple comparisons, all p < 0.01) and significantly increased SNR in low performers (t(46) = -2.81, p = 0.007, d = 0.49). These findings provide mechanistic insight into how reduced eta improves performance by stabilizing learning rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Higher eta scores were associated with fewer correct choices after two consecutive probabilistic errors. There was a trend toward improved correct choice probability under MA after misleading feedback, with this effect significant in low baseline performers but not high performers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 link the eta parameter to specific behavioral outcomes. The correlation between eta and errors after misleading feedback (r = 0.29, p < 0.001) is significant, and the improvement in low performers under MA (t(46) = -2.41, p = 0.02, d = 0.30) is statistically significant. This provides direct behavioral validation of the computational model's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "Regression analysis revealed that eta and play bias negatively predicted task performance, while other parameters positively predicted performance. Simulations showed that low-to-intermediate eta values achieved best performance. Low baseline performers had particularly high eta values at baseline, explaining why they showed the largest improvements under MA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60-C61 describe regression and simulation analyses linking model parameters to performance. The finding that low performers had higher baseline eta (t(46) = 2.59, p = 0.01, d = 0.53) and that intermediate eta is optimal (simulation results) provides a coherent explanation for the baseline-dependent drug effects. The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "High baseline performers displayed higher inverse temperatures compared to low performers. MA specifically affected the eta parameter while leaving other parameters, such as inverse temperature, unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 report that high performers had higher inverse temperature (t(93) = 7.94, p < 0.001, d = 1.33) and that MA selectively affected eta. This specificity is important for mechanistic interpretation and is supported by control analyses mentioned in the text (Appendix 3). The selective effect strengthens the claim that MA targets a specific computational process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Exploratory simulations using a model that jointly estimates stochasticity and volatility showed that inability to infer stochasticity leads to misestimation of volatility, particularly for high outcome noise. A lesioned model showed similar behavior to low performers, with increased eta estimates. This suggests MA may reduce oversensitivity to volatility in low performers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C68 describe exploratory simulation analyses that were not fit to actual participant data. While the simulations provide interesting mechanistic hypotheses about how low performers may misinterpret stochasticity as volatility, these remain speculative (C68 explicitly notes this). The authors appropriately acknowledge this is exploratory and requires future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MA did not bring low baseline performers to the level of high performers. High performers may have gained good task structure representation during practice. The data do not support an inverted-U-shaped effect of catecholaminergic action since high performers' performance did not decrease with MA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C79 are supported by the data showing no performance decrement in high performers. However, C78 is speculative about why high performers didn't improve. The rejection of the inverted-U hypothesis (C79) is a valid interpretation of the results, though alternative explanations (ceiling effects, task-specific factors) are not fully ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "MA may prolong phasic dopamine signals facilitating better task structure learning, and may improve meta-control of when to shield versus shift beliefs in low performers. MA's effects may be driven by its influence on the noradrenaline system, which is important for change detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 propose neurobiological mechanisms for MA's effects. While C74 is supported by citations, C71-C73 are speculative interpretations. The study did not directly measure dopamine or noradrenaline, and MA affects multiple neurotransmitter systems. These are reasonable hypotheses but lack direct empirical support from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C82"
+    ],
+    "result": "The inclusion of an orientation session may be a good strategy to control for practice and drug order effects. Individual baseline differences strongly influence drug effects and should be considered in pharmacological studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C82 draw methodological conclusions supported by the study design and results. The lack of session order effects and the successful control of practice effects support C80. C82 is supported both by the current results and by citations to prior literature, making this a well-founded methodological recommendation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11"
+    ],
+    "result": "Adaptive learning requires calibrating learning rates according to new information, with optimal learning requiring increased weighting of surprising information during change and ignoring surprising events during stability. Humans can calibrate learning rates according to statistical content, though the exact neural mechanisms remain unclear and individuals vary widely. Catecholamines appear to play a critical role in these adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C11 provide background context supported by extensive citations. These establish the theoretical framework and knowledge gaps that motivate the study. The claims accurately represent established knowledge in the field and appropriately acknowledge uncertainties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Multiple neurocomputational models implicate catecholamines (dopamine and norepinephrine) in learning rate adjustments through various mechanisms. Catecholaminergic drugs affect cognitive performance including reversal learning, but effects vary across tasks and individuals, potentially depending on baseline dopamine levels. Prior work shows baseline-dependent effects of methylphenidate on reversal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 provide comprehensive literature review supported by appropriate citations. These claims establish the theoretical and empirical foundation for the current study, accurately representing prior work on catecholamines, cognitive control, and individual differences in drug effects. The review appropriately acknowledges complexity and variability in prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Participants learned the task well, as evidenced by choice behavior largely following the underlying reward probabilities of stimuli across sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 reports a basic validation that participants understood and performed the task. This is supported by visual inspection of Figure 4D-F showing choice probabilities tracking reward probabilities. This is an important sanity check for the experimental paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C9"
+    ],
+    "result": "The study provides evidence that MA facilitates the ability to dynamically adjust learning from prediction errors relative to placebo, advancing existing literature by presenting evidence for a causal link between catecholaminergic modulation and learning flexibility, and highlighting a baseline dependency principle for catecholaminergic modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 and C9 state the main conclusions. While the computational findings (reduced eta) are well-supported, the overall behavioral effects were marginal (p = 0.07). The claim of a 'causal link' is somewhat overstated given the marginal statistical significance of key behavioral effects and the fact that MA affects multiple neurotransmitter systems. The baseline dependency finding is better supported but also relies on marginal interactions.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors provide background on vimentin as a type III intermediate filament protein with diverse pathophysiological roles, including a single cysteine at position 328 that is crucial for filament assembly and stress response. They identify a research gap: the role of C328 in EMT, tumor growth, and progression has not been studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 establish the scientific context through citations to prior literature and identify the knowledge gap motivating this study. These background claims are well-supported by appropriate citations and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors successfully expressed wildtype and C328S mutant vimentin at equal levels in MCF-7 cells (a vimentin-deficient breast cancer cell line). C328S-VIM forms filaments but shows altered organization with perinuclear condensation compared to wildtype, and is not dominant negative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C45 are supported by qPCR (C40), western blot quantification (C40), and immunostaining data (C41-C45) shown in Figure 1. The equal expression levels and differential localization patterns are clearly demonstrated. The dominant negative experiments in multiple cell lines provide convincing evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In silico modeling predicts that the C328S mutation alters vimentin-actin interactions by changing hydrogen bonding and hydrophobic contacts in the coiled-coil rod domain, weakening binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 are based on computational modeling (Figure 1E) without experimental validation of the predicted structural changes or binding affinity measurements. While the modeling provides a mechanistic hypothesis, the claim that binding affinity is 'weakened' requires direct biochemical validation (e.g., co-immunoprecipitation, binding assays).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "C328S-VIM expression disrupts F-actin organization in MCF-7 cells, showing low-level stress fiber staining with aggregates at cortical margins and no stress fibers in cell centers, compared to high-level organized stress fibers in wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by phalloidin staining and quantification (Figure 1F-G, Figure 1\u2014figure supplement 2). The quantification method is cited (Avraham-Chakim et al., 2013) and the differences are clearly visible and quantified. This provides strong evidence for altered actin organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "C328S-VIM expression significantly alters MCF-7 cell morphology, increasing nuclear and cellular dimensions (area, perimeter, axes) while decreasing nucleus/cell area ratio and cell compactness, resulting in more cellular projections and ruffled margins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by quantitative morphological analysis using CellMask staining and automated image analysis (Figure 2B-D). Multiple parameters show significant changes (p<0.05), and the analysis appears comprehensive with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "C328S-VIM expression enhances MCF-7 cell proliferation, migration, and invasion while reducing adhesion to uncoated surfaces (but not to ECM-coated surfaces).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by multiple functional assays: colony formation, MTT, CyQUANT proliferation (C55), adhesion assays with and without substrate coating (C56-C57), and transwell migration/invasion assays (C58-C59). All show significant differences (p<0.05) with appropriate controls (Figure 2E-N).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "RNA-Seq analysis reveals 3,421 upregulated and 3,940 downregulated genes in C328S-VIM vs WT-VIM MCF-7 cells. XIST (a lncRNA implicated in tumors) is the most upregulated gene. GO analysis shows downregulation of cell adhesion and keratinocyte differentiation, and upregulation of developmental processes. RT-qPCR validation shows significant correlation (R\u00b2=0.77, p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by RNA-Seq data (Figure 3A-F) with appropriate validation by RT-qPCR showing good correlation. The GO analysis is standard and the identification of XIST as most upregulated is clearly shown. However, the manuscript should clarify the statistical thresholds used for calling genes 'significantly' differentially expressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "C328S-VIM expression downregulates epithelial markers (keratins K8, K18, K19) and upregulates mesenchymal markers (TWIST1, CDH2/N-cadherin) and EMT transcription factors (ZEB1, ZEB2, TWIST1, TWIST2, ETS1, LEF1, SNAI2, FOXC2), indicating EMT-like characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by RNA-Seq data validated by immunostaining (Figure 3G), western blotting (Figure 3H-I), and comprehensive analysis of EMT markers (Figure 3J, Figure 3\u2014figure supplement 4). The multi-level validation (transcriptome, protein) strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "C328S-VIM expression upregulates breast cancer stem cell markers (CD56, POU5F1, PROCR, ITGA6) and downregulates ESR1, PGR, and HER2, transforming triple-positive MCF-7 cells to triple-reduced status and increasing cancer stemness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by RNA-Seq data (Figure 3K) showing differential expression of stemness markers and hormone receptors. The transformation from triple-positive to triple-reduced is a significant finding supported by the data, though the term 'triple-reduced' rather than 'triple-negative' should be clarified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Flow cytometry confirms significantly higher expression of stem cell markers CD56 and CD201 in C328S-VIM cells (p<0.0001). In vivo, C328S-VIM cells form tumors in nude mice without estrogen supplementation (unlike WT cells), and these tumors show significantly elevated CD56 and CD201 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by flow cytometry data (Figure 3L-N) and in vivo transplantation experiments with immunohistochemistry (Figure 3O-T). The in vivo validation of stemness markers and estrogen-independent tumor formation is particularly strong evidence. However, the study lacks information on sample size (number of mice) and tumor measurement methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Control experiments with Y117L-VIM (which forms ULFs but not long filaments) show no tumor formation, while double mutant (C328S+Y117L) produces tumors, demonstrating that C328S tumor-promoting effects are specific and dominant over Y117L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by in vivo data (Figure 3\u2014figure supplement 5H) and provide important specificity controls. The dominance of C328S over Y117L in the double mutant strengthens the conclusion that C328S specifically drives tumorigenesis. However, the mechanism of this dominance is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "shRNA-mediated knockdown of C328S-VIM (>90%) or XIST (75%) partially reverses phenotypes: VIM knockdown significantly increases adhesion (54%, p<0.001) and reverses several morphological features (p<0.01-0.05), while both knockdowns reduce invasion (p<0.05). XIST and VIM show reciprocal regulation (30% and 20% reduction respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 are supported by RT-qPCR, western blot, and functional assay data (Figure 4A-O). The partial reversal of phenotypes upon knockdown supports a causal role for C328S-VIM. However, the incomplete reversal and lack of significance for some assays (proliferation, migration) suggests additional mechanisms may be involved. The reciprocal regulation between VIM and XIST is interesting but mechanistically unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Flow cytometry shows that stem cell marker expression (CD56, CD201) is irreversible upon shRNA knockdown of C328S-VIM or XIST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by flow cytometry data (Figure 4P-Q, supplementary figures 2-3) showing no significant changes in CD56/CD201 expression after knockdown. This suggests that once stemness is established, it becomes independent of continued C328S-VIM or XIST expression, which has important biological implications. However, the timeframe of knockdown and whether longer-term knockdown might reverse stemness is not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors discuss that C328S-VIM effects on cell morphology differ from prior reports on wildtype vimentin, possibly due to EMT stage-dependent morphological variation. They propose that C328 residue acts as a tumor suppressor based on increased malignancy upon mutation, and that RNAi-mediated reversal establishes a direct link between C328 and cancer progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 represent discussion and interpretation of results. The interpretation that C328 acts as a tumor suppressor (C97) is a reasonable inference from the data showing increased malignancy with C328S mutation. The reconciliation of conflicting literature (C90-C92) is appropriately cautious. The claim of 'direct link' (C96) is supported by the knockdown experiments, though 'direct' may overstate the case given the partial reversal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose that C328S-VIM affects a central mechanism regulating keratin expression (K8, K18, K19), potentially through suppression of transcription factor AP-1 activity, though AP-1 subunit expression is unchanged in RNA-Seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 represent speculation about mechanisms. While the observation of coordinated keratin downregulation (C98-C99) is supported by data, the proposed AP-1 mechanism (C100-C102) is purely speculative ('conceivable') without experimental validation. The authors acknowledge that AP-1 subunits are not transcriptionally affected, making the hypothesis of AP-1 activity suppression untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors discuss that C328S-VIM upregulates multiple breast cancer stem cell markers and transforms MCF-7 from triple-positive to triple-reduced status (unlike wildtype vimentin), which has important clinical implications. They propose a mechanism linking disrupted vimentin-actin interactions to regulation of hormone receptors and cancer progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 integrate experimental findings with clinical context. The transformation to triple-reduced status (C108) is well-supported by data. The clinical implications (C105-C106) are appropriately cited. However, the proposed mechanism (C109) linking vimentin-actin disruption to receptor expression is speculative and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors propose that C328S-VIM induces EMT-like changes via XIST upregulation, supported by XIST's known roles in breast cancer proliferation/invasion and mammary stem cell differentiation, and by the observation that XIST knockdown reduces proliferation and invasion in C328S cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by literature citations (C110-C112) and experimental data showing XIST knockdown effects (C113, from Figure 4). However, the mechanistic link between C328S-VIM and XIST upregulation is not established, and the claim that C328S acts 'via' XIST (C113) may overstate the evidence given the partial effects of XIST knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The authors conclude that C328S-VIM makes MCF-7 cells estrogen-independent in vivo, supporting enhanced cancer stemness, and that C328 is an important regulator of cancer cell behavior where alterations promote EMT-like changes and may induce metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by in vivo data (Figure 3O-P) showing tumor formation without estrogen supplementation. The conclusion about C328 as an important regulator is justified by the comprehensive dataset. However, the claim that alterations 'may induce metastasis' (C115) is speculative as no metastasis data are presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors discuss that wildtype vimentin effects may be tissue-specific (tumorigenic in lung but not breast cancer) and justify their use of MCF-7 cells as more appropriate than SW13/cl.2 cells for studying C328-VIM in EMT, since EMT requires epithelial cells expressing keratin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 provide methodological justification and context. The tissue-specificity observation (C117) is an important inference from their data and cited literature. The critique of SW13/cl.2 cells (C118-C119) and justification for MCF-7 (C120-C121) are reasonable, though the claim that SW13/cl.2 'may not be appropriate' could be stated more definitively given that these cells lack all IFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors conclude that mutations around C328 have been reported in patients, their hypothesis that C328 mutations induce conformational changes activating EMT has clinical implications, and that C328 dictates mechanotransduction signals to remodel actin and protect against EMT/cancer growth via XIST modulation. They propose targeting vimentin/XIST via RNAi as a therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C125 represent conclusions and therapeutic proposals. While C122 is supported by citation, the mechanistic claims (C123-C124) extrapolate beyond the data\u2014conformational changes are predicted but not directly demonstrated, and the 'protective' role of wildtype C328 is inferred from loss-of-function. The therapeutic proposal (C125) is premature without additional validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The authors note that recent work shows C328 modifies actin organization in response to oxidants/electrophiles, and their data suggest that C328S substitution can disrupt actin organization even without such stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 appropriately contextualize findings with recent literature (Gonz\u00e1lez-Jim\u00e9nez et al., 2023) and make a reasonable inference that C328S disrupts actin organization constitutively rather than requiring stress stimuli. This is supported by the F-actin staining data in unstressed cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors conclude that vimentin is an active participant (not just a marker) in cancer progression, the correlation between C328 and actin organization/XIST induction/hyperproliferation is novel, C328 protects against EMT/cancer growth via XIST modulation, and targeting vimentin via RNAi should be considered for breast cancer treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 represent the study's main conclusions. While the novelty (C129) and active role of vimentin (C128) are supported by the comprehensive dataset, the mechanistic claim about 'protection' (C130) and therapeutic recommendation (C131) go beyond what the data directly demonstrate. The study shows correlation and partial reversibility but does not establish complete mechanistic understanding or therapeutic efficacy.",
+    "result_type": "MAJOR"
+  }
+]

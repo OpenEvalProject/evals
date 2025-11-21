@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C40"
+    ],
+    "result": "This study generated 5378 predicted nitrogenase structures and 3 crystallographic structures, representing approximately a 50-fold increase compared to the 39 structures (15 HH and 24 DDKK) currently available in the Protein Data Bank.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32, and C40 collectively document the scale of structural data generated. The numbers are explicitly stated and internally consistent (5378 predicted + 3 crystallographic = 5381 total structures vs. 39 in PDB represents ~50-fold increase). The data generation is a straightforward methodological achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The nitrogenase phylogenetic dataset contains five major clades (Nif-I, Nif-II, Nif-III, Vnf, and Anf), with Vnf and Anf homologs nested within the Nif-III clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C8 describe the phylogenetic organization used in this study, supported by Figure 1A and citation to Garcia et al., 2023. This represents established phylogenetic relationships from prior work that form the basis for the current structural analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "All predicted nitrogenase structures showed high confidence with pLDDT scores ranging from approximately 82 to 98, with lowest confidence for H-subunit structures (median pLDDT \u2248 88) and highest for K-subunit structures (median pLDDT \u2248 98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 report prediction confidence metrics supported by Figure 1\u2014figure supplement 1. The pLDDT scores indicate reliable structural predictions across all nitrogenase variants, validating the computational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Predicted nitrogenase structures show sufficient variation to resolve phylogenetic relationships despite overall small structural differences (RMSD <3 \u00c5), with RMSD strongly correlating with sequence identity and hierarchical clustering reproducing major clades. Active sites show high conservation (RMSD <0.5 \u00c5 around 8Fe7S cluster), and structural similarity does not correlate with phylogenetic tree depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 and C41-C44 collectively demonstrate that structural predictions capture phylogenetically meaningful variation. Multiple complementary metrics (RMSD, RMSD100, TM-score) support this conclusion, shown in Figures 2 and supplements. The lack of correlation between RMSD and tree depth (C43) indicates structural distinctions arose early and were conserved, supporting the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "Three major insertion events distinguish nitrogenase variants: a D-subunit C-terminus extension (~60 residues) unique to Anf, a K-subunit N-terminus extension (~8\u201340 residues) unique to Nif-I that evolved progressively in length, and a D-subunit insertion (~55 residues) unique to Nif-II. Both D-subunit insertions appeared within single branches and remained conserved, while the K-subunit N-terminus elongated progressively through Nif-I evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C46-C48, C51-C52 describe the major structural innovations identified in this study, supported by Figure 3 and phylogenetic mapping. The progressive evolution of the K-subunit N-terminus is particularly well-documented and represents a key finding linking structural evolution to phylogeny.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C54",
+      "C55"
+    ],
+    "result": "All three insertions are exposed at the surface of the DDKK complex, comprise varying proportions of helix or loop regions, and the D-subunit C-terminus and K-subunit N-terminus extensions occupy similar positions lining the edges of the D-K subunit interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C54, and C55 describe the structural characteristics and locations of the insertions, supported by Figures 3B-D. These observations provide structural context for understanding potential functional roles of the insertions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The K-subunit N-terminus extension is predominantly found in oxygen-tolerant, aerobic, or facultatively anaerobic diazotrophs, whereas the D-subunit insertion of Nif-II is mostly found in anaerobic diazotrophs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 link structural features to host ecology, providing important context for interpreting the functional significance of the insertions. This ecological correlation is stated explicitly and forms the basis for hypotheses about oxygen adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C53"
+    ],
+    "result": "No major deletion events were detected in nitrogenase evolutionary history, and the oldest ancestors and Group III nitrogenases are among the shortest in sequence length without any of the identified insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C53 describe the pattern of structural evolution as primarily additive rather than involving deletions. This observation is straightforward and supported by the phylogenetic analysis of insertion events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Total surface area is greatest in the Nif-II clade, likely driven by surface-exposed insertions. Nif-I homologs (especially those with longer K-subunit extensions) have the largest number of intersubunit contacts and strongest binding affinities, while Nif-III nitrogenases have the weakest. These patterns support the hypothesis that the K-subunit N-terminal extension contributes positively to DDKK complex interaction strength and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C59-C61 describe clade-specific structural attributes supported by computational analyses shown in Figure 4 and supplements. The correlation between K-subunit extension and increased intersubunit interactions provides mechanistic insight, though the functional significance requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The proportion of charged residues across DDKK proteins shows a weak negative correlation with phylogenetic distance from the root (Spearman R \u2248 \u20130.261).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 reports a specific correlation with a statistical measure, supported by Figure 4\u2014figure supplement 1E. However, the correlation is weak and the biological significance is unclear. This represents a minor observation about amino acid composition trends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The structural attributes of nitrogenase ancestors largely resemble those of their descendants in a clade-specific manner, reinforcing that major structural distinctions were set early in nitrogenase history and conserved in respective clades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 synthesize the structural analysis to conclude that major innovations occurred early and were maintained. This is supported by the lack of correlation between structural attributes and tree depth, and the clade-specific patterns observed throughout the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C64",
+      "C65"
+    ],
+    "result": "Three ancestral nitrogenase variants were crystallized: Anc1A and Anc1B (same age, ~2.5 billion years based on GOE timing) and the older Anc2. Anc1A and Anc2 are hybrid complexes containing ancestral D-subunit with WT H- and K-subunits, while Anc1B contains ancestral H-, D-, and K-subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C64-C65 describe the experimental targets for crystallography, supported by Figure 5A and citations to Garcia et al., 2023. The age estimate relies on inference from the GOE timing, which introduces uncertainty but is a reasonable approach given the limitations of molecular dating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Ancestral nitrogenases required different crystallization conditions than modern proteins, specifically pH 6.5 (unusually acidic for nitrogenase) and space group P 212121, which differs from space groups of extant nitrogenases from A. vinelandii (P 21), C. pasteurianum (P 21), and K. pneumoniae (C 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 report crystallographic observations supported by citations to prior work on extant nitrogenases. These differences in crystallization conditions may reflect subtle structural or surface property differences in ancestral proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Global structural differences between ancestral and WT A. vinelandii DDKK are relatively minor (RMSDs: Anc1B-WT 0.36 \u00c5, Anc1A-WT 0.31 \u00c5, Anc2-WT 0.24 \u00c5), within the range of extant structural variation. All ancestors showed anisotropic diffraction, were solved by molecular replacement using WT structure, and exhibit three Rossmann-fold domains with P-cluster and FeMoco modeled at full occupancy. A slight shift in the twofold symmetry axis between Anc1B and WT was observed, similar to VFe and FeFe proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C69-C76 describe the crystallographic results in detail. The RMSD values are small and within expected ranges, the structures were successfully solved, and the overall architecture is conserved. The shift in symmetry axis (C75-C76) is a subtle observation supported by comparison to other nitrogenase variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Most ancestral DDKK substitutions were not close to metalloclusters but were situated at the DDKK-HH interface. Specific substitutions identified include: D-subunit S165A (present in all ancestors, may influence HH S175 interactions), K-subunit K211N and G307N (specific to Anc1B, likely impact HH E111 interactions), and HH S177G in Anc1B (near interface with potential interaction with K-subunit G307N). These substitutions might have modified ancestral activity by impeding protein-protein interactions necessary for electron transfer, cofactor loading, and complex maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C82 identify specific substitutions at the DDKK-HH interface and propose they may affect activity. While the structural observations are supported by the crystal structures (Figures 5E-G), the functional interpretations are speculative (C78 explicitly stated as hypothesis). The connection between these substitutions and the previously reported decreased activity (C67) is plausible but not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C83"
+    ],
+    "result": "Predicted structures for nitrogenase variants showed high similarity to experimentally determined structures (average RMSD <1.4 \u00c5), including for the crystallized ancestral variants that were not included in the AlphaFold training database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C83 validate the prediction approach by comparing to experimental structures, shown in Figure 6. The high accuracy for ancestors not in the training set is particularly notable and strengthens confidence in the predicted structures throughout the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C85",
+      "C86"
+    ],
+    "result": "Both crystallographic and predicted structures of nitrogenase ancestors highlight long-term evolutionary conservation of core structural features. Historical structural variation sufficiently distinguishes major nitrogenase clades independent of sequence information, driven primarily by insertion events that occurred early in nitrogenase evolutionary history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C85, and C86 synthesize the major findings of the study. The conservation of core features is demonstrated by the crystallographic data (C28-C30, C71-C73), while the phylogenetic signal in structural variation is shown by the clustering analyses (C14, C41). The role of early insertion events is well-documented throughout (C15-C16, C51-C52, C62-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37",
+      "C56",
+      "C58"
+    ],
+    "result": "The K-subunit N-terminus extension emerged during early diversification of Group I nitrogenases, coinciding with proliferation into oxygen-tolerant bacterial lineages and planetary oxygenation. This extension may play a direct role in stabilizing oxygen-sensitive intersubunit interactions or an indirect role by shaping interaction sites with accessory proteins that improve oxygen protection. The N-terminus may wrap around small molecule entry points to reduce oxygen access in aerobic Nif-I hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C34 establishes the timing and ecological context (supported by phylogenetic and ecological data), but C36, C37, C56, and C58 propose functional mechanisms that are speculative. While the structural observations and ecological correlations are solid, the specific mechanisms by which the K-subunit extension might confer oxygen tolerance are hypothetical and require experimental validation. The coincidence of timing is suggestive but not proof of causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The D-subunit insertion in Nif-II protrudes near the inferred HH binding site and is likely capable of H-subunit interactions based on alignment with Nif-I nitrogenases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57 and C58 describe the location and inferred function of the Nif-II insertion. While the structural location is observed (C57), the functional capability (C58) is inferred from alignment without direct experimental evidence. No crystallographic structures of bound HH-DDKK complexes are available for Nif-II, and bound structures were not predicted in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C95"
+    ],
+    "result": "Nitrogenase retains a conserved multimeric core structure while evolving novel structural features aligned with key environmental transitions in Earth's history. Subtle, modular changes distal to the active site likely played a crucial role in the enzyme's adaptation and long-term persistence over geologic time, suggesting that transient regulatory adaptations in response to global shifts may have significantly influenced protein evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C95 represent the overarching conclusions of the study. The conservation of core structure is well-demonstrated (C28, C33, C71-C73), the novel features are documented (C15-C16), and the alignment with environmental transitions is supported by the ecological correlations (C34, C49-C50) and timing (C25). However, the causal connection between environmental transitions and structural evolution, while plausible, involves inference beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Ancestral nitrogenase variants preferentially bind ATP cofactor and exhibit the same general N2 binding and reduction mechanism as extant nitrogenases, but with decreased activity for N2 or other substrate reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C67 cite prior work (Harris et al., 2024; Garcia et al., 2023) characterizing the functional properties of these same ancestral variants. These claims provide important functional context for interpreting the structural findings but represent prior results rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Beyond limited substitutions at the interfaces of Anc1A/B and Anc2, changes in ancestral enzymes were distributed evenly across protein subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 describes the distribution of ancestral substitutions, providing context for why interface substitutions (C77-C82) are of particular interest. This observation is straightforward and supported by the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C45",
+      "C93",
+      "C94"
+    ],
+    "result": "AlphaFold2 does not use information about metal cofactors when building models, limiting detailed active-site side chain prediction. Future iterations with enhanced capacity to capture finer-scale features may enable higher-resolution estimates and reveal subtle structural variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C93, and C94 acknowledge limitations of the prediction methodology and suggest future improvements. These are accurate statements about the current capabilities and limitations of AlphaFold2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "While the NifK extension may contribute to oxygen protection, it is absent in Vnf and Anf nitrogenases present in aerobic and facultative anaerobic diazotrophs. Within the framework of constructively neutral evolution, emergent changes may have initially been neutral, only later acquiring adaptive value as environmental conditions shifted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 notes an important caveat to the oxygen protection hypothesis\u2014the NifK extension is not universal among aerobic diazotrophs. Claim C92 provides an alternative evolutionary framework (constructively neutral evolution) for interpreting the findings. Both claims appropriately acknowledge uncertainty about the adaptive significance of the structural changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C35",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Background context on nitrogenase: it is the only known enzyme family catalyzing N2 reduction to NH3, existed >3 billion years ago, is extremely oxygen-sensitive, originated in anaerobic organisms on an anoxic planet >3.2 billion years ago, and evolved through Earth's progressive oxygenation beginning ~2.4-3 billion years ago. Modern aerobic diazotrophs use various oxygen protection strategies, but evolutionary modifications to the enzyme itself improving aerobic compatibility have not been identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C35, C87-C90 provide established background knowledge from prior work, all supported by appropriate citations. These claims set the context for the study but do not represent new findings. Claim C90 identifies the knowledge gap this study addresses.",
+    "result_type": "MINOR"
+  }
+]

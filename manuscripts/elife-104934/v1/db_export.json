@@ -1,0 +1,2990 @@
+{
+  "submission": {
+    "id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:51:52.314132Z",
+    "updated_at": "2025-11-21T17:51:52.314132Z"
+  },
+  "content": [
+    {
+      "id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "content_type": "manuscript",
+      "content_text": "# A comprehensive antigen-antibody complex database unlocking insights into interaction interface\n\n## Authors\n\n- Yuwei Zhou<sup>1</sup> ([ORCID: 0009-0006-7787-1711](https://orcid.org/0009-0006-7787-1711))\n- Wenwen Liu<sup>1</sup> ([ORCID: 0009-0007-2591-9856](https://orcid.org/0009-0007-2591-9856))\n- Ziru Huang<sup>1</sup> ([ORCID: 0009-0006-2380-3676](https://orcid.org/0009-0006-2380-3676))\n- Yushu Gou<sup>1</sup> ([ORCID: 0009-0008-4613-3024](https://orcid.org/0009-0008-4613-3024))\n- Siqi Liu<sup>1</sup> ([ORCID: 0009-0008-4918-5903](https://orcid.org/0009-0008-4918-5903))\n- Lixu Jiang<sup>1</sup> ([ORCID: 0000-0001-6800-7063](https://orcid.org/0000-0001-6800-7063))\n- Yue Yang<sup>1</sup> ([ORCID: 0009-0002-9935-0133](https://orcid.org/0009-0002-9935-0133))\n- Jian Huang<sup>1</sup> ([ORCID: 0000-0003-3282-8892](https://orcid.org/0000-0003-3282-8892)) \u2020\n\n### Affiliations\n\n1. The Clinical Hospital of Chengdu Brain Science Institute, School of Life Science and Technology, University of Electronic Science and Technology of China Chengdu China ([ROR:04qr3zq92](https://ror.org/04qr3zq92))\n2. School of Healthcare Technology, Chengdu Neusoft University Chengdu China ([ROR:04p9p1r69](https://ror.org/04p9p1r69))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntibodies are critical components of the vertebrate immune system and possess a wide array of biomedical applications. Elucidating the complex interactions between antibodies and antigens is an important step in drug development. However, the complex and vast nature of the data presents significant challenges in accurately identifying and comprehending these interactions. To overcome these challenges and deepen our understanding of the antibody-antigen interface, we developed the Antigen-Antibody Complex Database (AACDB). The current version provides a comprehensive collection of 7498 manually processed antigen-antibody complexes, ensuring accuracy and detail. This database provides extensive metadata and rectifies annotation errors found in the PDB database. Furthermore, it integrates data on antibody developability and antigen-drug target relationships, making it valuable for assisting new antibody therapies development. Notably, the database includes comprehensive paratope and epitope annotation information, thereby serving as a valuable benchmark for immunoinformatics research. The AACDB interface is designed to be user-friendly, providing researchers with powerful search and visualization tools that enable effortless querying, manipulation, and visualization of complex data. Researchers can access AACDB completely online at http://i.uestc.edu.cn/AACDB. Regular updates are promised to ensure the timely provision of scientific and valuable information.\n\n## Introduction\n\nAntibodies are not only an essential part of the vertebrate immune system, but also have wide application in biomedical field (Lyu et al., 2022; Su and Shuai, 2020). In clinical practice, the advent of monoclonal antibodies (mAbs) has transformed the treatment for various cancers, autoimmune diseases, and numerous other conditions. Due to their large binding interfaces, high affinity and specificity, antibody drugs have successfully targeted numerous proteins that were previously impervious to small molecule therapies. The expansion of antibody drug formats, such as antibody-drug conjugates (ADCs), domain antibodies, bispecific antibodies, and antibody fusion proteins, has broadened their indications to a wider range of diseases including blood disorders, infections, neurological conditions, ocular diseases, and metabolic disorders (Carter and Rajpal, 2022; Tsuchikama et al., 2024; Chi et al., 2023). Antibody drug development typically encompasses three stages: three stages: preclinical research, clinical trial, and post-marketing surveillance study (Zhou et al., 2023). The preclinical research of antibodies mainly refers to a series of in vitro experiments and animal model studies conducted before the application of antibodies in clinical trials. In this stage, an important task is to determine the binding interfaces and interaction sites between antibodies and their drug targets. Understanding how antibodies specifically interact with their targets or antigens can help optimize antibody drug leads further, as well as provide insights into mechanisms of interaction (Myung et al., 2023).\n\nThe field of machine learning and deep learning-based methods for antigen and antibody binding interfaces prediction has gained significant attention in recent years (Pittala and Bailey-Kellogg, 2020; Qiu et al., 2023; Zhou et al., 2019; Qi et al., 2014; Papadopoulos et al., 2025; Chinery et al., 2023; Li et al., 2024b; Liberis et al., 2018; Kalemati et al., 2024; Shashkova et al., 2022). The advancement of this field heavily relies on a reliable foundation of data. Although the Protein Data Bank (PDB) (Burley et al., 2023; Burley et al., 2024; Berman et al., 2000) is a well-established repository for protein complexes, identifying antigen-antibody complexes within its extensive collection of general protein structures presents considerable challenges. In 2018, AbDb (Ferdous and Martin, 2018) was introduced as a specialized database for antigen-antibody complexes. However, its adoption has been limited by the absence of advanced visualization tools, interactive functionalities, and abundant metadata annotations. We acknowledge that AbDb has made exceptional contributions to the field by aggregating antibody-antigen structures over the past decade. Our work builds upon these foundations, aiming to address complementary challenges in annotation and interoperability. In comparison, the series of SAbDab databases (Dunbar et al., 2014; Raybould et al., 2020; Schneider et al., 2022) indeed provide a comprehensive data source of antibody structure and achieve in time updating. However, this rapid updating process may inadvertently overlook a significant amount of information that requires thorough verification, thereby increasing the likelihood of incorporating erroneous annotations directly from the PDB database.\n\nA further challenge in the field of interface prediction is the lack of a standardized definition for interacting amino acids. Some datasets are based on differences in the solvent accessible surface area (\u0394SASA) for each residue upon binding (Qiu et al., 2023; Sun et al., 2009); others are based on distances between atoms (Pittala and Bailey-Kellogg, 2020; Chinery et al., 2023; Li et al., 2024b; Liberis et al., 2018; Daberdaku and Ferrari, 2019). Different studies employ different datasets and definitions, resulting in a lack of comparability. There is an urgent need for a standard benchmark dataset to enable objective comparisons of these methods. None of the databases mentioned above provide details of interaction residues. To address these limitations, we developed the Antigen-Antibody Complex Database (AACDB). It has a user-friendly interface for convenient querying, manipulation, browsing, and visualization of comprehensive information about antibody-antigen complexes. Notably, AACDB also provides detailed information on interacting residues using two methods (\u0394SASA and atom distance), facilitating the benchmarking studies of the predictive methods for paratopes and epitopes.\n\n## Results\n\n### Statistics\n\nFrom over 32,000 experimental structures in the PDB database, we manually curated 7498 antigen-antibody entries for the current version of AACDB, encompassing to 16 antibody fragment types across 14 species (Figure 1). It is obvious that Fab fragments and human antibodies accounted for the largest proportion of the data, accounting for 71.98% and 60.95%, respectively. Our statistical analysis reveals a significant increase in the number of antigen-antibody complex entries within the PDB during the period from 2021\u20132023. These entries accounted for approximately 45% of the total antigen-antibody complex entries. Our search was conducted with an end date of November 2023. Notably, Figure 1B contains a 2024-dated entry resulting from database versioning updates: the original 7SIX record (added November 16, 2022) was superseded by the 8TM1 entry through an official revision on January 12, 2024. Furthermore, the developability properties of antibodies in 325 entries can be queried in the DOTAD database, at the meanwhile, 3733 antigen records have been identified as drug targets in DrugBank (data not shown).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104934/elife-104934-fig1-v1.jpg)\n\n**Figure 1.:** (A) Antibody fragment distribution in the database. (B) The number of antibody-antigen complexes released in different years (unique PDBID). (C) Organismal distribution of antibody entries. Statistical cutoff date: May 30, 2024. Fab: antigen binding fragment; Fv: variable fragment; scFv: single chain variable fragment; VHH: Variable domain of heavy chain of heavy chain antibody; sdAb: single domain antibody.\n\n### Database browse and search\n\nAll the data can be browsed directly by clicking the \u2018Datasets\u2019 item on the top menu of AACDB webpage (http://i.uestc.edu.cn/AACDB; Figure 2). The summary table includes nine columns as follows:\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104934/elife-104934-fig2-v1.jpg)\n\n**Figure 2.:** This example demonstrates the use of the keyword \u2018Lysozyme\u2019 in the \u2018Protein\u2019 column, showcasing the search functionality of the AACDB database. The search results display an antigen related to lysozyme.\n\nThe table in AACDB can be easily searched through the search panel at the top section of the \u2018Datasets\u2019 page. Users can perform a quick search by specifying one or more fields and entering relevant keywords. The search results can be downloaded as files in either txt or csv format. Figure 2 shows the search results using the keyword \u2018Lysozyme\u2019 in \u2018Protein\u2019 column, returning 117 hits.\n\nAn individual structure can be accessed using its AACDB_ID accession code. When clicking the AACDB_ID hyperlink, the user will be brought to its details page as shown in Figure 3. There, the complex structure can be visualized with different colors and styles (Figure 3A). Besides the visualization window, we provide more details of this entry, including the mutation, INN, and clinical trial of antibody, the ID in DrugBank of antigen (if it exists) (Figure 3B). Under the structure information tab, further details about each chain can be found. These include: sequence, mutate amino acid type and position, interacting residues in each chain based on the \u0394SASA method, interacting plot of paratope-epitope residues by a distance cutoff of <6 \u00c5 (Figure 3D). It should be pointed out that while our manuscript emphasizes widely accepted thresholds for consistency with prior benchmarks, AACDB explicitly provides raw \u0394SASA and distance values for all annotated residues. Users can dynamically filter the data from the downloaded file (e.g. selecting 5 \u00c5 instead of 6 \u00c5) by excluding entries exceeding their preferred thresholds.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104934/elife-104934-fig3-v1.jpg)\n\n**Figure 3.:** (A) Structure visualization window. The molecular structure is displayed with distinct color-coding for clarity: each chain is represented by a unique color, facilitating easy identification. The epitope is highlighted in blue, while the paratope is marked in green (B) Entry meta information. (C) Sequence and mutation information. (D) Interacting residues details based on solvent accessible surface area (SASA) and atom distance methods. (E) The download hyperlinks of a single entry.\n\n### Data download\n\nWe provide two ways for downloading the data:\n\nMoreover, the website provides a user-friendly \u2018Help\u2019 page that presents a step-by-step tutorial to assist users in manipulating, querying, browsing, and downloading the AACDB database.\n\n## Discussion\n\nResearch on antigen-antibody interactions contributes to the advancement of the antibody-related industry. Databases such as PDB and SabDab provide the foundational data for this purpose. However, there are still many unresolved issues. In this study, we developed the AACDB database to provide a curated and reliable dataset of antigen-antibody interactions. During the process of data collection and organization, we identified numerous annotation errors in the PDB database. Some of these errors had been directly introduced into SabDab. For example, the species of the antibody in 7WRL was incorrectly labeled as \u2018SARS coronavirus B012\u2019 in both PDB and SabDab. We also invested significant effort and time to manually cross-reference with original literature in order to rectify these errors and exclude antibody binding proteins that were erroneously annotated as antigens by SabDab. Apart from the curation and reannotation of structural data, AACDB offers features not provided by other antigen-antibody complex databases: (1) AACDB\u2019s data processing pipeline supports mmCIF files, and (2) we provide amino acids in the interaction interface through two methods, enabling the definition of unified standards for epitopes and paratopes. This provides a more accurate and comprehensive benchmark dataset for developed interaction interface prediction tools, enhancing the comparability of various tools.\n\nHowever, AACDB still has some limitations. Despite our best efforts, the limitations of our team\u2019s resources and knowledge mean that our database may not capture all antigen-antibody complex structures. Since the data is manually curated, eliminating errors completely during the information processing is a challenge. While we strive to fill in any gaps, we also hope that experts and users within the community can provide timely feedback to help us improve these issues. Additionally, currently, AACDB only includes antigen proteins with a length greater than 50 amino acids. The current AACDB release exclusively includes antigen proteins exceeding 50 amino acids in length. Future iterations will expand structural coverage to diverse antigen classes (peptides, nucleic acids, haptens) while incorporating literature-validated affinity data through systematic cross-referencing.\n\nIn summary, AACDB is a novel database of antigen-antibody complexes that provides information on antibody-developability, antigen-drug target relationships, and detailed antigen-antibody interaction interfaces. It is fully accessible at http://i.uestc.edu.cn/AACDB. We are committed to a regular data update, ensuring that researchers in immunoinformatics have access to timely and valuable resources.\n\n## Materials and methods\n\nThe conceptual framework of AACDB is illustrated in Figure 4. Based on this concept, we first search the PDB database (https://www.rcsb.org/) using the keywords \u2018antibody,\u2019 \u2018antigen,\u2019 \u2018immunoglobulin,\u2019 and \u2018complex.\u2019 Over 32,000 experimental structures were extracted (up to December 2023). Each entry was next processed following the steps in Figure 5.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/104934/elife-104934-fig4-v1.jpg)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/104934/elife-104934-fig5-v1.jpg)\n\n### Entry screening\n\nWe aimed to retrieve all antibody-related complexes from the PDB using the chosen search approach. However, we encountered a notable number of false hits in the results, prompting us to implement a stringent structural filtering process. Antibody complexes were defined as structures containing at least one antibody molecule and another protein exceeding 50 amino acids in length. Structures that lacked antibodies or consisted solely of one type of antibody were excluded from further analysis. It is crucial to emphasize that not all proteins that bind to antibodies qualify as antigens. For instance, immunoglobulin-binding proteins like Protein A and Protein G, expressed by Staphylococcus aureus and Streptococcal species, are commonly employed for antibody purification procedures (Fishman and Berg, 2019). Although protein A may bind to the Fab region of antibodies, the interacting amino acids might be located in the framework region (FR) rather than the complementarity-determining regions (CDRs) (Graille et al., 2000). These proteins are often misidentified as antigens. Consequently, structures exhibiting such characteristics require meticulous verification and should be excluded from our dataset.\n\n### PDB splitting\n\nWe directly incorporated the PDB entry of antigen-antibody complex with only one antigen and one antibody into the AACDB database. However, quite a few antigen-antibody complexes contain several antigens and antibodies. In such cases, before splitting the structures, we need to determine the correct pairing of light and heavy chains by examining the information on equivalent chain interactions in the PDBsum database (Laskowski et al., 2018). Next, we assign the correct antigen chains to the antibodies by identifying whether the remaining chains in the structure interact with the CDR regions of determined antibodies. For example, in the case of 1AHW, which contains two copies of antigen-antibody complexes, chains BA and DE are identified as two antibody pairs, where chains C and F bind to BA and DE, respectively. Consequently, 1AHW is split into two files, BAC and DEF (Figure 6A). In 6OGE, Pertuzumab (chains C and B) and Trastuzumab (chains E and D) bind to different epitopes of the receptor tyrosine-protein kinase erbB-2 (chain A). This generates two records in AACDB (CBA and EDA) (Figure 6B). Specifically, in the analysis of anti-idiotypic antibody complexes, the partner antibody is treated as a dual-chain antigen, necessitating individual evaluation of heavy chain and light chain interactions with the anti-idiotypic component. When both chains engage in binding, the complex is divided into two distinct entries: \u2018anti-idiotypic antibody-heavy chain\u2019 and \u2018anti-idiotypic antibody-light chain.\u2019 Conversely, if only one chain participates, the non-interacting chain will be excluded from AACDB records. For instance, in 3BQU, the anti-idiotype 3H6 Fab (chains DC) only interacts with the heavy chain (chain B) of 2F5 Fab. In AACDB, 2F5 Fab will be split and the light chain (chain A) will be discarded (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/104934/elife-104934-fig6-v1.jpg)\n\n**Figure 6.:** (A) 1AHW contains two copies of the same antigen and the same antibody. (B) In 6OGE, two different antibodies bind to distinct epitopes of the same antigen. (C) In 3BQU, an anti-idiotypic antibody binds exclusively to a single chain of the antibody.\n\nFor each PDB entry, we utilized the corresponding split chains information to divide the downloaded.pdb based on the ATOM records. Notably, certain structures are exclusively provided in the \u2018mmCIF\u2019 format by the PDB database. While \u2018.pdb\u2019 and \u2018.cif\u2019 files store atomic coordinates in distinct text formats, the segmentation of these structure files is automatically performed based on manually annotated antibody-antigen chains. To address this, we integrated these considerations into our file processing pipeline enabling a fully automated file segmentation process. Additionally, the Naccess software does not support .cif files as input, we converted the \u2018.cif\u2019 files into \u2018.pdb\u2019 format files while performing the splitting process (see Interacting residues definition). Furthermore, we refined the annotation of the split \u2018.fasta\u2019 files to ensure coherence with AACDB records.\n\n### Metadata\n\nAACDB provides detailed metadata for each entry, including chain IDs, antibody name, antigen name, method, resolution, organism, and more. To ensure data accuracy, we have conducted comprehensive verification by consulting original literature sources. AACDB has addressed many annotation errors identified within the corresponding PDB entries. These errors include but not limited to: (1) mislabeling of species (e.g. the entry 7WRL where the organism of BD55-1239H antibody was erroneously labeled as \u2018SARS coronavirus B012\u2019); (2) Resolution annotation errors (e.g. 1NSN, in which the resolution of 2.9 \u00c5 is misannotated as 2.8 \u00c5).; (3) mislabeling of antibody chains as other proteins (e.g. in 3KS0, the light chain of B2B4 antibody was misnamed as heme domain of flavocytochrome b2); (4) misidentification of heavy chains as light chains (e.g. both two chains of antibody were labeled as light chain in 5EBW); (5) mutation status annotation errors. We have identified cases in which PDB entries indicate \u2018NO\u2019 for mutations, while in reality, mutations exist (e.g. bevacizumab (Avastin) in 6BFT was labeled as none mutation. When aligned with the bevacizumab sequence, however, mutation T8D/T30D in heavy chain and S52D/S53D in light chain were observed.); and (6) incomplete annotations. Certain entries only provide the name of the mutant without specifying the precise mutation site (e.g. in 7SU1, antibody was described as Ipilimumab variant Ipi.106. but PDB database does not provide any mutation amino acid or position, which can be identified by blast to Ipilimumab sequence).\n\nWe carefully checked each entry manually to find out all possible annotation problems. Given the context-dependent nature of mutations, sequence alignment was not universally performed across all antibody sequences. Instead, therapeutic antibody sequences served as definitive references. For example, for entries in the PDB labeled as \u2018Bevacizumab mutant\u2019 or \u2018Ipilimumab variant Ipi.106\u2019 where the \u2018Mutation(s)\u2019 field was annotated as \u2018NO,\u2019 we retrieved corresponding therapeutic antibody sequences from Thera-SAbDab and performed sequence alignment with the PDB entries to identify mutated residues. For other antibodies lacking well-defined wild-type references, mutation information was directly extracted from the PDB or original literature. All corrections have been publicly archived in AACDB.\n\nThe antibody nomenclature follows the title of the corresponding search entry in the RCSB PDB database, with verification done through the original literature. In cases where the name in the original literature differs from that in the RCSB PDB, we used the name in the published literature as the standard. Furthermore, for antibody fragments lacking names in both the RCSB PDB database and original literature, we adopt a naming convention of \u2018PDBID\u2019 + \u2018antibody fragment\u2019 (e.g. 4WEB Fab).\n\nBiological and physicochemical properties are critical considerations in the development pipelines for therapeutic antibodies. These properties include solubility, immunogenicity, aggregation tendencies, expression level, stability, and hydrophobicity. We provide the International Non-proprietary Name (INN) and clinical trial information for each therapeutic antibody entry, linked to the DOTAD database (Li et al., 2024a). Numerous antigens have been successfully identified as targets for antibodies or small molecule drugs. We conducted a comparison between antigen sequences and the drug targets listed in the DrugBank database (Knox et al., 2024). A threshold of percent identity >90% was applied to determine the corresponding drug targets.\n\n### Interacting residues definition\n\nWe labeled the interacting residues based on SASA and atom distance. Naccess V2.1.1 and Bio.PDB module were employed to calculate SASA values for each residue in antibody and antigen, respectively. The residues with a SASA loss (\u0394SASA) in binding of more than 1 \u00c52 were classified as interacting residues. In addition, we also defined another set of interacting paratope-epitope residues by a distance cutoff of 6 \u00c5. Two amino acids are considered interacting residues if they have at least one pair of non-hydrogen atoms within a distance of 6 \u00c5.\n\n### Data integration and website implementation\n\nThe main data processing algorithm is implemented in Python. The front-end web interface of AACDB was constructed by HTML and enhanced with JavaScript, CSS, and Bootstrap technologies. We developed a dynamic 3D structure visualization window based on PV, a WebGL-based protein viewer, inspired by Dunbar et al., 2014. All the data were managed within the MySQL database system. For the back-end functionality, PHP is utilized to enable data browsing, searching, and downloading features.\n",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104934.3.sa0](https://doi.org/10.7554/eLife.104934.3.sa0)\n\nThis useful manuscript provides a newly curated database (termed AACDB) of antibody-antigens structural information, alongside annotations that are either taken and from the PDB, or added de-novo. Sequences, structures, and annotations can be easily downloaded from the AACDB website, speeding up the development of structure-based algorithms and analysis pipelines to characterize antibody-antigen interactions. The methodology presented for this data curation is solid. The curated dataset will be of broad interest and value to researchers interested in antibody-antigen interactions.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104934.3.sa1](https://doi.org/10.7554/eLife.104934.3.sa1)\n\nThis work introduces and describes a useful curation pipeline of antibody-antigen structures downloaded from the PDB database. The antibody-antigen structures are presented in a new database called AACDB - with associated website - alongside annotations that were either corrected from those present in the PDB database, or added de-novo with solid methodology. Sequences, structures and annotations can be very easily downloaded from the AACDB website, speeding up the development of structure-based algorithms and analysis pipelines to characterize antibody-antigen interactions. However, AACDB is missing some important annotations that I believe would greatly enhance its usefulness, such as binding affinity annotations.\n\nI think the potentially most significant contribution of this database is the manual data curation to fix errors present in the PDB entries, by cross-referencing with the literature. The authors also seem to describe, whenever possible, the procedures they took to correct the annotations.\n\nI have personally verified some of the examples presented by the authors, and found that SAbDab appears to fix the mistakes related to mis-identification of antibody chains, but not other annotations.\n\n\"(1) the species of the antibody in 7WRL was incorrectly labeled as \"SARS coronavirus B012\" in both PDB and SabDab\" \u2192 I have verified the mistake and fix, and that SAbDab does not fix is, just uses the pdb annotation.\n\n\"(2) 1NSN, the resolution should be 2.9 , but it was incorrectly labeled as 2.8\" \u2192 I have verified the mistake and fix, and that saabdab does not fix it, just uses the PDB annotation.\n\n\"(3) mislabeling of antibody chains as other proteins (e.g. in 3KS0, the light chain of B2B4 antibody was misnamed as heme domain of flavocytochrome b2)\" \u2192 SAbDab fixes this as well in this case.\n\n\"(4) misidentification of heavy chains as light chains (e.g. both two chains of antibody were labeled as light chain in 5EBW)\" \u2192 SAbDab fixes this as well in this case.\n\nI believe the splitting of the pdb files is a valuable contribution as it standardizes the distribution of antibody-antigen complexes. Indeed, there is great heterogeneity in how many copies of the same structure are present in the structure uploaded to the PDB, generating potential artifacts for machine learning applications to pick up on. That being said, I have two thoughts both for the authors and the broader community. First, in the case of multiple antibodies binding to different epitopes on the same antigen, one should not ignore the potentially stabilizing effect that the binding of one antibody has on the complex, thereby enabling the binding of the second antibody. In general, I urge the community to think about what is the most appropriate spatial context to consider when modeling the stability of interactions from crystal structure data. Second, and in a similar vein, some antigens occur naturally as homomultimers - e.g. influenza hemagglutinin is a homotrimer. Therefore, to analyze the stability of a full-antigen-antibody structure, I believe it would be necessary to consider the full homo-trimer, whereas in the current curation of AACDB with the proposed data splitting, only the monomers are present.\n\nI think the annotation of interface residues is a very useful addition to structural datasets.\n\nI am, however, not convinced of the utility of *change* in SASA as a useful metric for identifying interacting residues, beyond what is already identified via pairwise distances between the antibody and antigen residues. If we had access to the unbound conformation of most antibodies and antigens, then we could analyze the differences in structural conformations upon binding, which can be in part quantified by change in SASA. However, as only bound structures are usually available, one is usually force to approximate a protein's unbound structure by computationally removing its binding partner - as it seems to me the authors of this work are doing.\n\nSome obvious limitations of AACDB in its current form include:\n\nAACDB only contains entries with protein-based antigens of at most 50 amino-acids in length. This excludes non-protein-based antigens, such as carbohydrate- and nucleotide-based, as well as short peptide antigens https://www.biorxiv.org/content/10.1101/2023.12.10.570461v1.\n\nAACDB does not include annotations of binding affinity, which are present in SAbDab and have been proven useful both for characterizing drivers of antibody-antigen interactions (cite https://www.sciencedirect.com/science/article/pii/S0969212624004362?via%3Dihub) and for benchmarking antigen-specific antibody-design algorithms cite.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104934.3.sa2](https://doi.org/10.7554/eLife.104934.3.sa2)\n\nSummary:\n\nAntibodies, thanks to their high binding affinity and specificity to cognate protein targets, are increasingly used as research and therapeutic tools. In this work, Zhou et al. have created, curated and made publicly available a new database of antibody-antigen complexes to support research in the field of antibody modelling, development and engineering.\n\nStrengths:\n\nThe authors have performed a manual curation of antibody-antigen complexes from the Protein Data Bank, rectifying annotation errors; they have added two methods to estimate paratope-epitope interfaces; they have produced a web interface capable of effective visualisation and of summarising the key useful information in one page. The database is also cross-linked to other databases that contain information relevant to antibody developability and therapeutic applications.\n\nWeaknesses:\n\nThe database does not import all the experimental information from PDB and contains only complexes with large protein targets.\n\nComments on revisions: I thank the authors for having incorporated my feedback and I look forward to the next releases of this database.\n",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4cb3e136-df7a-43d6-b13c-925fca360cf9",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C1",
+      "claim": "Antibodies are critical components of the vertebrate immune system and possess a wide array of biomedical applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies are critical components of the vertebrate immune system and possess a wide array of biomedical applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about antibodies' role in immunity and their applications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "c2cf2027-74f5-45b7-b317-f9a4a9dbd801",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C2",
+      "claim": "The Antigen-Antibody Complex Database (AACDB) current version provides a comprehensive collection of 7498 manually processed antigen-antibody complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The current version provides a comprehensive collection of 7498 manually processed antigen-antibody complexes, ensuring accuracy and detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the database content, representing data collected by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "64fe912b-0874-4b8f-b6dd-bc15d147543a",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C3",
+      "claim": "AACDB rectifies annotation errors found in the PDB database.",
+      "claim_type": "EXPLICIT",
+      "source": "This database provides extensive metadata and rectifies annotation errors found in the PDB database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the database's functionality based on the authors' curation work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "30a855a3-e612-4618-aa1a-e33833dd662d",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C4",
+      "claim": "AACDB integrates data on antibody developability and antigen-drug target relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it integrates data on antibody developability and antigen-drug target relationships, making it valuable for assisting new antibody therapies development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the database based on the authors' integration work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "ee572b83-84b5-457d-a061-a213361b82b7",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C5",
+      "claim": "AACDB includes comprehensive paratope and epitope annotation information.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the database includes comprehensive paratope and epitope annotation information, thereby serving as a valuable benchmark for immunoinformatics research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about database content based on the authors' annotation work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7ea4810b-040d-4ac2-8370-4daf0acac160",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C6",
+      "claim": "AACDB can be accessed online at http://i.uestc.edu.cn/AACDB.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers can access AACDB completely online at http://i.uestc.edu.cn/AACDB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the database's accessibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f21f37c2-3836-46ca-893f-56d827f8b092",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C7",
+      "claim": "The advent of monoclonal antibodies (mAbs) has transformed the treatment for various cancers, autoimmune diseases, and numerous other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical practice, the advent of monoclonal antibodies (mAbs) has transformed the treatment for various cancers, autoimmune diseases, and numerous other conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge about therapeutic antibodies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "fd8e19a7-ae79-4cab-b97d-020c2c86851b",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C8",
+      "claim": "Antibody drugs have successfully targeted numerous proteins that were previously impervious to small molecule therapies due to their large binding interfaces, high affinity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their large binding interfaces, high affinity and specificity, antibody drugs have successfully targeted numerous proteins that were previously impervious to small molecule therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge about antibody drug properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "5ca868a3-0f5e-42aa-9194-dd2fb34e34e7",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C9",
+      "claim": "The expansion of antibody drug formats has broadened their indications to a wider range of diseases including blood disorders, infections, neurological conditions, ocular diseases, and metabolic disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The expansion of antibody drug formats, such as antibody-drug conjugates (ADCs), domain antibodies, bispecific antibodies, and antibody fusion proteins, has broadened their indications to a wider range of diseases including blood disorders, infections, neurological conditions, ocular diseases, and metabolic disorders (Carter and Rajpal, 2022; Tsuchikama et al., 2024; Chi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "d6d72815-48fb-47a3-b089-e0d92b246cb3",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C10",
+      "claim": "Antibody drug development typically encompasses three stages: preclinical research, clinical trial, and post-marketing surveillance study.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody drug development typically encompasses three stages: three stages: preclinical research, clinical trial, and post-marketing surveillance study (Zhou et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "36a365fd-14a3-4666-a938-9a326e166398",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C11",
+      "claim": "Understanding how antibodies specifically interact with their targets or antigens can help optimize antibody drug leads and provide insights into mechanisms of interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding how antibodies specifically interact with their targets or antigens can help optimize antibody drug leads further, as well as provide insights into mechanisms of interaction (Myung et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "c9329f60-a737-4d26-ae14-c17fa3db0388",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C12",
+      "claim": "The field of machine learning and deep learning-based methods for antigen and antibody binding interfaces prediction has gained significant attention in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "The field of machine learning and deep learning-based methods for antigen and antibody binding interfaces prediction has gained significant attention in recent years (Pittala and Bailey-Kellogg, 2020; Qiu et al., 2023; Zhou et al., 2019; Qi et al., 2014; Papadopoulos et al., 2025; Chinery et al., 2023; Li et al., 2024b; Liberis et al., 2018; Kalemati et al., 2024; Shashkova et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "9e26e540-991a-4cb9-b7d6-9cfe2b50bdaa",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C13",
+      "claim": "The Protein Data Bank (PDB) is a well-established repository for protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Protein Data Bank (PDB) (Burley et al., 2023; Burley et al., 2024; Berman et al., 2000) is a well-established repository for protein complexes, identifying antigen-antibody complexes within its extensive collection of general protein structures presents considerable challenges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature about PDB.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "b98cf953-e52b-432a-b5de-5a5a66d412c6",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C14",
+      "claim": "Identifying antigen-antibody complexes within PDB's extensive collection of general protein structures presents considerable challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Protein Data Bank (PDB) (Burley et al., 2023; Burley et al., 2024; Berman et al., 2000) is a well-established repository for protein complexes, identifying antigen-antibody complexes within its extensive collection of general protein structures presents considerable challenges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' experience with the PDB database.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "b6d0c6d3-3d3c-41b4-9582-9060cfa9c5cf",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C15",
+      "claim": "AbDb was introduced in 2018 as a specialized database for antigen-antibody complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2018, AbDb (Ferdous and Martin, 2018) was introduced as a specialized database for antigen-antibody complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to the AbDb publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f03a1638-0c07-4c63-a490-e6c59b7d645f",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C16",
+      "claim": "AbDb's adoption has been limited by the absence of advanced visualization tools, interactive functionalities, and abundant metadata annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its adoption has been limited by the absence of advanced visualization tools, interactive functionalities, and abundant metadata annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' assessment of AbDb's features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "91f84f9b-2964-464b-8595-0103daf3b4ea",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C17",
+      "claim": "The series of SAbDab databases provide a comprehensive data source of antibody structure and achieve in time updating.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the series of SAbDab databases (Dunbar et al., 2014; Raybould et al., 2020; Schneider et al., 2022) indeed provide a comprehensive data source of antibody structure and achieve in time updating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to SAbDab publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "8b43cc08-204a-41f3-aad9-f0738446be26",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C18",
+      "claim": "SAbDab's rapid updating process may inadvertently overlook information that requires thorough verification, thereby increasing the likelihood of incorporating erroneous annotations directly from the PDB database.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this rapid updating process may inadvertently overlook a significant amount of information that requires thorough verification, thereby increasing the likelihood of incorporating erroneous annotations directly from the PDB database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' observations of annotation errors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "64a7e113-27fd-422b-91f8-edfdef099e94",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C19",
+      "claim": "There is a lack of a standardized definition for interacting amino acids in the field of interface prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "A further challenge in the field of interface prediction is the lack of a standardized definition for interacting amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' review of the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7656b639-c294-43df-84a2-8f16609e2230",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C20",
+      "claim": "Some datasets for interface prediction are based on differences in the solvent accessible surface area (\u0394SASA) for each residue upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Some datasets are based on differences in the solvent accessible surface area (\u0394SASA) for each residue upon binding (Qiu et al., 2023; Sun et al., 2009); others are based on distances between atoms (Pittala and Bailey-Kellogg, 2020; Chinery et al., 2023; Li et al., 2024b; Liberis et al., 2018; Daberdaku and Ferrari, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "32a0e1a7-c6c8-48cb-b7aa-1c70c02c47ab",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C21",
+      "claim": "Some datasets for interface prediction are based on distances between atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Some datasets are based on differences in the solvent accessible surface area (\u0394SASA) for each residue upon binding (Qiu et al., 2023; Sun et al., 2009); others are based on distances between atoms (Pittala and Bailey-Kellogg, 2020; Chinery et al., 2023; Li et al., 2024b; Liberis et al., 2018; Daberdaku and Ferrari, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "256db056-524e-475a-afc6-0d1980e7a315",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C22",
+      "claim": "Different studies employ different datasets and definitions for interface prediction, resulting in a lack of comparability.",
+      "claim_type": "EXPLICIT",
+      "source": "Different studies employ different datasets and definitions, resulting in a lack of comparability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' review of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f8062db1-7fa8-4038-9ac8-5e8836dbdad0",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C23",
+      "claim": "There is an urgent need for a standard benchmark dataset to enable objective comparisons of interface prediction methods.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an urgent need for a standard benchmark dataset to enable objective comparisons of these methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the identified lack of standardization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "49ac5b22-cf5f-4973-b391-1363b919c2dc",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C24",
+      "claim": "None of the existing databases provide details of interaction residues.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the databases mentioned above provide details of interaction residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' review of existing databases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "630626b2-a32b-42fb-9935-7c8a3f87b640",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C25",
+      "claim": "AACDB provides detailed information on interacting residues using two methods (\u0394SASA and atom distance).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, AACDB also provides detailed information on interacting residues using two methods (\u0394SASA and atom distance), facilitating the benchmarking studies of the predictive methods for paratopes and epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's features based on the authors' implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "5f694cf0-6ebb-4150-a9af-1524fa612c9b",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C26",
+      "claim": "From over 32,000 experimental structures in the PDB database, 7498 antigen-antibody entries were manually curated for AACDB.",
+      "claim_type": "EXPLICIT",
+      "source": "From over 32,000 experimental structures in the PDB database, we manually curated 7498 antigen-antibody entries for the current version of AACDB, encompassing to 16 antibody fragment types across 14 species (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data collection process and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "8c12bbc2-6439-4d90-934b-f6652d147afb",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C27",
+      "claim": "AACDB encompasses 16 antibody fragment types across 14 species.",
+      "claim_type": "EXPLICIT",
+      "source": "From over 32,000 experimental structures in the PDB database, we manually curated 7498 antigen-antibody entries for the current version of AACDB, encompassing to 16 antibody fragment types across 14 species (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database content based on the authors' curation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "95cdae27-5d03-457f-b366-ac52a53f941b",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C28",
+      "claim": "Fab fragments accounted for 71.98% of the data in AACDB.",
+      "claim_type": "EXPLICIT",
+      "source": "It is obvious that Fab fragments and human antibodies accounted for the largest proportion of the data, accounting for 71.98% and 60.95%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the database content.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7d0d2179-1e61-407a-b0a9-712c2e074fb4",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C29",
+      "claim": "Human antibodies accounted for 60.95% of the data in AACDB.",
+      "claim_type": "EXPLICIT",
+      "source": "It is obvious that Fab fragments and human antibodies accounted for the largest proportion of the data, accounting for 71.98% and 60.95%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the database content.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "069bb353-36d5-4ca6-bb07-9f8a91f7469b",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C30",
+      "claim": "There was a significant increase in the number of antigen-antibody complex entries within the PDB during the period from 2021\u20132023.",
+      "claim_type": "EXPLICIT",
+      "source": "Our statistical analysis reveals a significant increase in the number of antigen-antibody complex entries within the PDB during the period from 2021\u20132023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical observation from the authors' analysis of PDB data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "540dc128-e839-4f76-a90e-e5b5c44f7db5",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C31",
+      "claim": "Antigen-antibody complex entries from 2021-2023 accounted for approximately 45% of the total antigen-antibody complex entries.",
+      "claim_type": "EXPLICIT",
+      "source": "These entries accounted for approximately 45% of the total antigen-antibody complex entries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the authors' analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "0cef65eb-df03-4183-a76a-d0e42cdaba20",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C32",
+      "claim": "The developability properties of antibodies in 325 entries can be queried in the DOTAD database.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the developability properties of antibodies in 325 entries can be queried in the DOTAD database, at the meanwhile, 3733 antigen records have been identified as drug targets in DrugBank (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's integration with other resources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "c0b1f9a6-cbc6-4db3-b4a9-6a26900b0d87",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C33",
+      "claim": "3733 antigen records have been identified as drug targets in DrugBank.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the developability properties of antibodies in 325 entries can be queried in the DOTAD database, at the meanwhile, 3733 antigen records have been identified as drug targets in DrugBank (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's integration with DrugBank.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "b221622e-7b1d-4e95-b744-97d4a756928f",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C34",
+      "claim": "Fab fragments account for the largest proportion of antibody fragment types in AACDB.",
+      "claim_type": "IMPLICIT",
+      "source": "It is obvious that Fab fragments and human antibodies accounted for the largest proportion of the data, accounting for 71.98% and 60.95%, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the statistical data and Figure 1A showing the distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "2c2a0057-72a6-482d-9c9f-58eff074c8fe",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C35",
+      "claim": "Human antibodies account for the largest proportion of species in AACDB.",
+      "claim_type": "IMPLICIT",
+      "source": "It is obvious that Fab fragments and human antibodies accounted for the largest proportion of the data, accounting for 71.98% and 60.95%, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the statistical data and Figure 1C showing the organismal distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "c3be2ee5-3849-442c-9d0d-d01932aeac60",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C36",
+      "claim": "The AACDB summary table includes nine columns of information.",
+      "claim_type": "EXPLICIT",
+      "source": "The summary table includes nine columns as follows:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database interface structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "0134cfaf-6076-40b6-b619-77c0d08115f6",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C37",
+      "claim": "Users can perform a quick search in AACDB by specifying one or more fields and entering relevant keywords.",
+      "claim_type": "EXPLICIT",
+      "source": "Users can perform a quick search by specifying one or more fields and entering relevant keywords.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's search functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "d8109637-c3c9-477d-959a-974f53c3aa06",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C38",
+      "claim": "Search results in AACDB can be downloaded as files in either txt or csv format.",
+      "claim_type": "EXPLICIT",
+      "source": "The search results can be downloaded as files in either txt or csv format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's download functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "69c244bc-87fa-4e01-918c-a2e611a8e40c",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C39",
+      "claim": "A search using the keyword 'Lysozyme' in the 'Protein' column returned 117 hits.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows the search results using the keyword 'Lysozyme' in 'Protein' column, returning 117 hits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific example demonstrating the database's search functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "bddd538d-72c6-48ac-a193-5afef5c6a83d",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C40",
+      "claim": "Individual structures can be accessed in AACDB using their AACDB_ID accession code.",
+      "claim_type": "EXPLICIT",
+      "source": "An individual structure can be accessed using its AACDB_ID accession code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's navigation functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "fe944f72-85ba-4e1b-8532-9ef3dbb91129",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C41",
+      "claim": "AACDB provides visualization of complex structures with different colors and styles.",
+      "claim_type": "EXPLICIT",
+      "source": "There, the complex structure can be visualized with different colors and styles (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the database's visualization features, supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "0dabdb20-c2c9-43df-a674-054e5ae5f608",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C42",
+      "claim": "AACDB provides details including mutation, INN, and clinical trial information of antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the visualization window, we provide more details of this entry, including the mutation, INN, and clinical trial of antibody, the ID in DrugBank of antigen (if it exists) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the metadata provided in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "afa11395-a940-41fc-ae54-e28fa1f56e74",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C43",
+      "claim": "AACDB provides the DrugBank ID of antigens when it exists.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the visualization window, we provide more details of this entry, including the mutation, INN, and clinical trial of antibody, the ID in DrugBank of antigen (if it exists) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the metadata provided in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "6d6d6711-38ce-437b-b148-0f643e22b761",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C44",
+      "claim": "AACDB provides sequence information for each chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the structure information tab, further details about each chain can be found. These include: sequence, mutate amino acid type and position, interacting residues in each chain based on the \u0394SASA method, interacting plot of paratope-epitope residues by a distance cutoff of <6 \u00c5 (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the detailed information provided in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "6a8d3a29-e864-4da3-8625-f453b49afecf",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C45",
+      "claim": "AACDB provides mutate amino acid type and position information for each chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the structure information tab, further details about each chain can be found. These include: sequence, mutate amino acid type and position, interacting residues in each chain based on the \u0394SASA method, interacting plot of paratope-epitope residues by a distance cutoff of <6 \u00c5 (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the detailed information provided in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "816bb9a8-b583-44d2-9940-b27bc83deec7",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C46",
+      "claim": "AACDB provides interacting residues in each chain based on the \u0394SASA method.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the structure information tab, further details about each chain can be found. These include: sequence, mutate amino acid type and position, interacting residues in each chain based on the \u0394SASA method, interacting plot of paratope-epitope residues by a distance cutoff of <6 \u00c5 (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the interaction data provided in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "eadeeaaf-4d61-413b-a350-48ba74a8e8ce",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C47",
+      "claim": "AACDB provides interacting plot of paratope-epitope residues by a distance cutoff of <6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the structure information tab, further details about each chain can be found. These include: sequence, mutate amino acid type and position, interacting residues in each chain based on the \u0394SASA method, interacting plot of paratope-epitope residues by a distance cutoff of <6 \u00c5 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the interaction visualization provided in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "2cccf556-59d5-40bd-809c-0b92756d6917",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C48",
+      "claim": "AACDB provides raw \u0394SASA and distance values for all annotated residues.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be pointed out that while our manuscript emphasizes widely accepted thresholds for consistency with prior benchmarks, AACDB explicitly provides raw \u0394SASA and distance values for all annotated residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the detailed data provided in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "34cfc459-0d67-4242-9148-d0d13c01c2e6",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C49",
+      "claim": "Users can dynamically filter AACDB data by excluding entries exceeding their preferred thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Users can dynamically filter the data from the downloaded file (e.g. selecting 5 \u00c5 instead of 6 \u00c5) by excluding entries exceeding their preferred thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's flexibility in data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "2fe3ab4e-9be8-4998-bcbe-ca6b14d927b1",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C50",
+      "claim": "AACDB provides two ways for downloading data: bulk download and single entry download.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide two ways for downloading the data:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's download functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "8dce0a36-0652-4708-854b-38ba4b286406",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C51",
+      "claim": "AACDB provides a user-friendly 'Help' page with a step-by-step tutorial.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the website provides a user-friendly 'Help' page that presents a step-by-step tutorial to assist users in manipulating, querying, browsing, and downloading the AACDB database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database's user support features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7bc6117b-9277-4924-9674-38afd79fe019",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C52",
+      "claim": "Numerous annotation errors were identified in the PDB database during AACDB data collection and organization.",
+      "claim_type": "EXPLICIT",
+      "source": "During the process of data collection and organization, we identified numerous annotation errors in the PDB database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from the authors' curation work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f8c9f33f-0770-4998-9647-332ffb660e21",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C53",
+      "claim": "Some annotation errors from PDB had been directly introduced into SabDab.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these errors had been directly introduced into SabDab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' comparison of databases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f8849021-e52c-48cd-be4c-dc4caa281960",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C54",
+      "claim": "The species of the antibody in 7WRL was incorrectly labeled as 'SARS coronavirus B012' in both PDB and SabDab.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the species of the antibody in 7WRL was incorrectly labeled as 'SARS coronavirus B012' in both PDB and SabDab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example of an annotation error identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "8aa4cac1-b72d-45f2-91e5-eebaffc2401a",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C55",
+      "claim": "AACDB's data processing pipeline supports mmCIF files.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the curation and reannotation of structural data, AACDB offers features not provided by other antigen-antibody complex databases: (1) AACDB's data processing pipeline supports mmCIF files, and (2) we provide amino acids in the interaction interface through two methods, enabling the definition of unified standards for epitopes and paratopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a technical feature of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "d2866fdb-d460-4dfb-b63b-550305d3c0bc",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C56",
+      "claim": "AACDB provides amino acids in the interaction interface through two methods, enabling the definition of unified standards for epitopes and paratopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the curation and reannotation of structural data, AACDB offers features not provided by other antigen-antibody complex databases: (1) AACDB's data processing pipeline supports mmCIF files, and (2) we provide amino acids in the interaction interface through two methods, enabling the definition of unified standards for epitopes and paratopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a key feature of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "d101f433-fad5-4d4e-9e8a-675baaed11b9",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C57",
+      "claim": "AACDB provides a more accurate and comprehensive benchmark dataset for developed interaction interface prediction tools.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a more accurate and comprehensive benchmark dataset for developed interaction interface prediction tools, enhancing the comparability of various tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the database's utility based on its features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "87f660a2-6067-4316-a2bf-acba707cfe27",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C58",
+      "claim": "AACDB may not capture all antigen-antibody complex structures due to limitations of team resources and knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite our best efforts, the limitations of our team's resources and knowledge mean that our database may not capture all antigen-antibody complex structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "be3b6986-0715-48a6-8b18-ea59e1387813",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C59",
+      "claim": "Eliminating errors completely during manual information processing is a challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the data is manually curated, eliminating errors completely during the information processing is a challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation inherent to manual curation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "34834168-c664-4001-8c27-b13982275798",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C60",
+      "claim": "Currently, AACDB only includes antigen proteins with a length greater than 50 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, currently, AACDB only includes antigen proteins with a length greater than 50 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a current limitation of the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "61cdef90-db5e-432c-8b22-6337241ce4d2",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C61",
+      "claim": "Future iterations of AACDB will expand structural coverage to diverse antigen classes (peptides, nucleic acids, haptens).",
+      "claim_type": "EXPLICIT",
+      "source": "Future iterations will expand structural coverage to diverse antigen classes (peptides, nucleic acids, haptens) while incorporating literature-validated affinity data through systematic cross-referencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about planned future developments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "bf628a4f-397c-421e-b6a6-b8bf1bb09317",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C62",
+      "claim": "Future iterations of AACDB will incorporate literature-validated affinity data through systematic cross-referencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Future iterations will expand structural coverage to diverse antigen classes (peptides, nucleic acids, haptens) while incorporating literature-validated affinity data through systematic cross-referencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about planned future developments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "97c7cd75-c8f9-4248-9689-4c9fb95d5a7b",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C63",
+      "claim": "AACDB is committed to regular data updates.",
+      "claim_type": "EXPLICIT",
+      "source": "We are committed to a regular data update, ensuring that researchers in immunoinformatics have access to timely and valuable resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database maintenance plan.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "52a62eee-2b8b-4e47-ae0c-0ed8be86f902",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C64",
+      "claim": "Over 32,000 experimental structures were extracted from PDB using the keywords 'antibody,' 'antigen,' 'immunoglobulin,' and 'complex' (up to December 2023).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this concept, we first search the PDB database (https://www.rcsb.org/) using the keywords 'antibody,' 'antigen,' 'immunoglobulin,' and 'complex.' Over 32,000 experimental structures were extracted (up to December 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data collection methodology and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "6526399c-077a-43dc-8d0a-54369ed7625c",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C65",
+      "claim": "A notable number of false hits were encountered in the PDB search results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we encountered a notable number of false hits in the results, prompting us to implement a stringent structural filtering process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' data collection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "08261648-480c-4818-b524-06c17d932549",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C66",
+      "claim": "Antibody complexes were defined as structures containing at least one antibody molecule and another protein exceeding 50 amino acids in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody complexes were defined as structures containing at least one antibody molecule and another protein exceeding 50 amino acids in length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the inclusion criteria used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f2df0305-8fd7-4b9c-8b3a-4c1c56319b11",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C67",
+      "claim": "Structures that lacked antibodies or consisted solely of one type of antibody were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures that lacked antibodies or consisted solely of one type of antibody were excluded from further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the exclusion criteria used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f0fdbf42-975a-4223-a6cf-d42a0e6831f3",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C68",
+      "claim": "Not all proteins that bind to antibodies qualify as antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "It is crucial to emphasize that not all proteins that bind to antibodies qualify as antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "680597f0-5374-4e44-96bc-4e34435d4a52",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C69",
+      "claim": "Immunoglobulin-binding proteins like Protein A and Protein G are commonly employed for antibody purification procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, immunoglobulin-binding proteins like Protein A and Protein G, expressed by Staphylococcus aureus and Streptococcal species, are commonly employed for antibody purification procedures (Fishman and Berg, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "5dbd3c08-38b6-445e-96ff-2c6365097821",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C70",
+      "claim": "Protein A may bind to the Fab region of antibodies with interacting amino acids located in the framework region (FR) rather than the complementarity-determining regions (CDRs).",
+      "claim_type": "EXPLICIT",
+      "source": "Although protein A may bind to the Fab region of antibodies, the interacting amino acids might be located in the framework region (FR) rather than the complementarity-determining regions (CDRs) (Graille et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7fe1c017-619b-4608-96ae-e39bcb1d3569",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C71",
+      "claim": "Immunoglobulin-binding proteins are often misidentified as antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are often misidentified as antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' data curation experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "09d1b6c8-bcf3-4050-8ed9-626a3019a95a",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C72",
+      "claim": "The correct pairing of light and heavy chains was determined by examining the information on equivalent chain interactions in the PDBsum database.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, before splitting the structures, we need to determine the correct pairing of light and heavy chains by examining the information on equivalent chain interactions in the PDBsum database (Laskowski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology used, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "eaed04b0-1216-4422-8b0b-c96c57fb5c19",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C73",
+      "claim": "Correct antigen chains were assigned to antibodies by identifying whether the remaining chains in the structure interact with the CDR regions of determined antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we assign the correct antigen chains to the antibodies by identifying whether the remaining chains in the structure interact with the CDR regions of determined antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "29ea6cb2-d541-41d0-97e4-53ac7a3e07ca",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C74",
+      "claim": "In 1AHW, chains BA and DE are identified as two antibody pairs, where chains C and F bind to BA and DE, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the case of 1AHW, which contains two copies of antigen-antibody complexes, chains BA and DE are identified as two antibody pairs, where chains C and F bind to BA and DE, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific example from the database, illustrated in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "ca7dff79-eeec-4e0a-b5f1-e8d8e7bddeae",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C75",
+      "claim": "1AHW is split into two files, BAC and DEF.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, 1AHW is split into two files, BAC and DEF (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the data processing procedure, illustrated in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "4ce25113-c26e-4922-a760-24e7825dcc9c",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C76",
+      "claim": "In 6OGE, Pertuzumab (chains C and B) and Trastuzumab (chains E and D) bind to different epitopes of the receptor tyrosine-protein kinase erbB-2 (chain A).",
+      "claim_type": "EXPLICIT",
+      "source": "In 6OGE, Pertuzumab (chains C and B) and Trastuzumab (chains E and D) bind to different epitopes of the receptor tyrosine-protein kinase erbB-2 (chain A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific example from the database, illustrated in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "e2c83dcb-ea46-42be-8711-bac58d63ca8e",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C77",
+      "claim": "6OGE generates two records in AACDB (CBA and EDA).",
+      "claim_type": "EXPLICIT",
+      "source": "This generates two records in AACDB (CBA and EDA) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the data processing procedure, illustrated in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "38a7043d-487a-4ed8-94e3-0ffee2b265f4",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C78",
+      "claim": "In anti-idiotypic antibody complexes, the partner antibody is treated as a dual-chain antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in the analysis of anti-idiotypic antibody complexes, the partner antibody is treated as a dual-chain antigen, necessitating individual evaluation of heavy chain and light chain interactions with the anti-idiotypic component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology for handling anti-idiotypic antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "edc43655-cb6b-4a06-9bbc-dd2a29a8d47a",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C79",
+      "claim": "When both chains of an anti-idiotypic antibody complex engage in binding, the complex is divided into two distinct entries: 'anti-idiotypic antibody-heavy chain' and 'anti-idiotypic antibody-light chain.'",
+      "claim_type": "EXPLICIT",
+      "source": "When both chains engage in binding, the complex is divided into two distinct entries: 'anti-idiotypic antibody-heavy chain' and 'anti-idiotypic antibody-light chain.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data processing procedure for anti-idiotypic antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "41f5109c-ac30-4764-ab40-a08039258332",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C80",
+      "claim": "If only one chain of an anti-idiotypic antibody complex participates in binding, the non-interacting chain will be excluded from AACDB records.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, if only one chain participates, the non-interacting chain will be excluded from AACDB records.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data processing procedure for anti-idiotypic antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "b8485f67-e98d-4208-a37d-b8473300c5d3",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C81",
+      "claim": "In 3BQU, the anti-idiotype 3H6 Fab (chains DC) only interacts with the heavy chain (chain B) of 2F5 Fab.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in 3BQU, the anti-idiotype 3H6 Fab (chains DC) only interacts with the heavy chain (chain B) of 2F5 Fab.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific example from the database, illustrated in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "3bf880bd-974a-46d7-9207-8e2dcbd7a8da",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C82",
+      "claim": "In AACDB, the light chain (chain A) of 2F5 Fab in 3BQU will be discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "In AACDB, 2F5 Fab will be split and the light chain (chain A) will be discarded (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the data processing procedure, illustrated in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "2bf277c1-fbce-4d78-ba26-96124072bc88",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C83",
+      "claim": "The corresponding split chains information was utilized to divide the downloaded .pdb files based on the ATOM records.",
+      "claim_type": "EXPLICIT",
+      "source": "For each PDB entry, we utilized the corresponding split chains information to divide the downloaded.pdb based on the ATOM records.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "79f0bbc3-2921-42c4-8d7f-3dc5afb0299c",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C84",
+      "claim": "Certain structures are exclusively provided in the 'mmCIF' format by the PDB database.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, certain structures are exclusively provided in the 'mmCIF' format by the PDB database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about PDB data formats.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "c007274f-556b-4ec2-9267-633e47e97562",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C85",
+      "claim": "The segmentation of structure files is automatically performed based on manually annotated antibody-antigen chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, certain structures are exclusively provided in the 'mmCIF' format by the PDB database. While '.pdb' and '.cif' files store atomic coordinates in distinct text formats, the segmentation of these structure files is automatically performed based on manually annotated antibody-antigen chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the automated processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "bc9ea560-fca5-429d-b105-ec2b227e3c82",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C86",
+      "claim": "The Naccess software does not support .cif files as input.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Naccess software does not support .cif files as input, we converted the '.cif' files into '.pdb' format files while performing the splitting process (see Interacting residues definition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a technical limitation of the Naccess software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "637616b6-691e-4633-8381-d5f81df60777",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C87",
+      "claim": ".cif files were converted into .pdb format files while performing the splitting process.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Naccess software does not support .cif files as input, we converted the '.cif' files into '.pdb' format files while performing the splitting process (see Interacting residues definition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7aa4145b-052c-4de6-87aa-f41908e91bd5",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C88",
+      "claim": "The annotation of the split .fasta files was refined to ensure coherence with AACDB records.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we refined the annotation of the split '.fasta' files to ensure coherence with AACDB records.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "40150557-c9a7-435a-b1ea-6e03405c4dcb",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C89",
+      "claim": "AACDB provides detailed metadata for each entry, including chain IDs, antibody name, antigen name, method, resolution, organism, and more.",
+      "claim_type": "EXPLICIT",
+      "source": "AACDB provides detailed metadata for each entry, including chain IDs, antibody name, antigen name, method, resolution, organism, and more.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the metadata provided in the database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "15780f8d-a219-4e9f-aeec-9b2455876141",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C90",
+      "claim": "Comprehensive verification of metadata was conducted by consulting original literature sources.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure data accuracy, we have conducted comprehensive verification by consulting original literature sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the quality control methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "cbf06767-436e-464f-aa4b-3f1a20bd7418",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C91",
+      "claim": "AACDB has addressed many annotation errors identified within the corresponding PDB entries.",
+      "claim_type": "EXPLICIT",
+      "source": "AACDB has addressed many annotation errors identified within the corresponding PDB entries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the curation work performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "8425436e-9a5f-43ff-8a42-a19da432cc45",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C92",
+      "claim": "In entry 7WRL, the organism of BD55-1239H antibody was erroneously labeled as 'SARS coronavirus B012'.",
+      "claim_type": "EXPLICIT",
+      "source": "These errors include but not limited to: (1) mislabeling of species (e.g. the entry 7WRL where the organism of BD55-1239H antibody was erroneously labeled as 'SARS coronavirus B012');",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example of an annotation error identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f8d0adf3-d22a-4621-96f2-27d3fe82ba8c",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C93",
+      "claim": "In 1NSN, the resolution of 2.9 \u00c5 is misannotated as 2.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Resolution annotation errors (e.g. 1NSN, in which the resolution of 2.9 \u00c5 is misannotated as 2.8 \u00c5).;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example of an annotation error identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "97b9b1dc-422b-4070-930e-056735afd4de",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C94",
+      "claim": "In 3KS0, the light chain of B2B4 antibody was misnamed as heme domain of flavocytochrome b2.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) mislabeling of antibody chains as other proteins (e.g. in 3KS0, the light chain of B2B4 antibody was misnamed as heme domain of flavocytochrome b2);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example of an annotation error identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "cbbbd3bd-8f6c-468d-b1bd-a46a5cbaa01b",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C95",
+      "claim": "In 5EBW, both two chains of antibody were labeled as light chain.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) misidentification of heavy chains as light chains (e.g. both two chains of antibody were labeled as light chain in 5EBW);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example of an annotation error identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7fd99297-9b9a-4773-8570-30e8b0246480",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C96",
+      "claim": "Cases were identified in which PDB entries indicate 'NO' for mutations, while in reality, mutations exist.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) mutation status annotation errors. We have identified cases in which PDB entries indicate 'NO' for mutations, while in reality, mutations exist (e.g. bevacizumab (Avastin) in 6BFT was labeled as none mutation. When aligned with the bevacizumab sequence, however, mutation T8D/T30D in heavy chain and S52D/S53D in light chain were observed.);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about annotation errors identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "c1f587c4-013a-462c-ab85-7ca50f77ee72",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C97",
+      "claim": "Bevacizumab (Avastin) in 6BFT was labeled as having no mutation, but when aligned with the bevacizumab sequence, mutation T8D/T30D in heavy chain and S52D/S53D in light chain were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) mutation status annotation errors. We have identified cases in which PDB entries indicate 'NO' for mutations, while in reality, mutations exist (e.g. bevacizumab (Avastin) in 6BFT was labeled as none mutation. When aligned with the bevacizumab sequence, however, mutation T8D/T30D in heavy chain and S52D/S53D in light chain were observed.);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example of a mutation annotation error identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "32985e75-a66d-48b6-8500-4ac7c7a76c83",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C98",
+      "claim": "Certain entries only provide the name of the mutant without specifying the precise mutation site.",
+      "claim_type": "EXPLICIT",
+      "source": "and (6) incomplete annotations. Certain entries only provide the name of the mutant without specifying the precise mutation site (e.g. in 7SU1, antibody was described as Ipilimumab variant Ipi.106. but PDB database does not provide any mutation amino acid or position, which can be identified by blast to Ipilimumab sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about incomplete annotations identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "48a182ad-6a7b-4466-90af-6b938a77ff87",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C99",
+      "claim": "In 7SU1, antibody was described as Ipilimumab variant Ipi.106 but PDB database does not provide any mutation amino acid or position.",
+      "claim_type": "EXPLICIT",
+      "source": "and (6) incomplete annotations. Certain entries only provide the name of the mutant without specifying the precise mutation site (e.g. in 7SU1, antibody was described as Ipilimumab variant Ipi.106. but PDB database does not provide any mutation amino acid or position, which can be identified by blast to Ipilimumab sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example of an incomplete annotation identified by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "60452cb9-ec9d-4046-a474-a179b5ab2097",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C100",
+      "claim": "Each entry was carefully checked manually to find out all possible annotation problems.",
+      "claim_type": "EXPLICIT",
+      "source": "We carefully checked each entry manually to find out all possible annotation problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the quality control methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "0665b97a-62a7-4777-9edb-ba2394f9d3d1",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C101",
+      "claim": "For therapeutic antibodies, sequences from Thera-SAbDab served as definitive references for mutation identification.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the context-dependent nature of mutations, sequence alignment was not universally performed across all antibody sequences. Instead, therapeutic antibody sequences served as definitive references.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology for mutation identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "16af7aec-d6e5-4f95-9dca-25f5346ddaad",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C102",
+      "claim": "For antibodies lacking well-defined wild-type references, mutation information was directly extracted from the PDB or original literature.",
+      "claim_type": "EXPLICIT",
+      "source": "For other antibodies lacking well-defined wild-type references, mutation information was directly extracted from the PDB or original literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology for mutation identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "e6567435-832b-42d9-9d87-d88960cc9b4b",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C103",
+      "claim": "All corrections have been publicly archived in AACDB.",
+      "claim_type": "EXPLICIT",
+      "source": "All corrections have been publicly archived in AACDB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data transparency and accessibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f28ffeb1-4f22-474d-b30a-63af13b63c5a",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C104",
+      "claim": "The antibody nomenclature follows the title of the corresponding search entry in the RCSB PDB database, with verification done through the original literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The antibody nomenclature follows the title of the corresponding search entry in the RCSB PDB database, with verification done through the original literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the naming convention used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "4b56312e-3a9e-4556-ab46-4254135958c1",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C105",
+      "claim": "In cases where the name in the original literature differs from that in the RCSB PDB, the name in the published literature was used as the standard.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where the name in the original literature differs from that in the RCSB PDB, we used the name in the published literature as the standard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the naming convention priority.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "12c19698-0a60-4b83-bfd2-2fd1b6601e45",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C106",
+      "claim": "For antibody fragments lacking names in both the RCSB PDB database and original literature, a naming convention of 'PDBID' + 'antibody fragment' was adopted.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for antibody fragments lacking names in both the RCSB PDB database and original literature, we adopt a naming convention of 'PDBID' + 'antibody fragment' (e.g. 4WEB Fab).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the naming convention for unnamed fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "3f4127d2-c7f5-415a-be34-f68cc6daa6d7",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C107",
+      "claim": "Biological and physicochemical properties are critical considerations in the development pipelines for therapeutic antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological and physicochemical properties are critical considerations in the development pipelines for therapeutic antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge in antibody drug development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "d7c46c76-107d-49b6-b1eb-f2521554aeda",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C108",
+      "claim": "AACDB provides the International Non-proprietary Name (INN) and clinical trial information for each therapeutic antibody entry, linked to the DOTAD database.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide the International Non-proprietary Name (INN) and clinical trial information for each therapeutic antibody entry, linked to the DOTAD database (Li et al., 2024a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the metadata provided, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "011ea1d8-e90c-4f13-8cc1-b1caebbe6225",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C109",
+      "claim": "A comparison was conducted between antigen sequences and the drug targets listed in the DrugBank database.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted a comparison between antigen sequences and the drug targets listed in the DrugBank database (Knox et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "406f4606-d2b5-4564-bd22-be0f86f2b9f2",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C110",
+      "claim": "A threshold of percent identity >90% was applied to determine the corresponding drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "A threshold of percent identity >90% was applied to determine the corresponding drug targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the criteria used for drug target identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "5c5ee41b-13d2-4e55-aa46-2e745b4004d9",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C111",
+      "claim": "Interacting residues were labeled based on SASA and atom distance.",
+      "claim_type": "EXPLICIT",
+      "source": "We labeled the interacting residues based on SASA and atom distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology for defining interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "e8f4246c-9cd0-42fd-b178-1635d81d48f7",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C112",
+      "claim": "Naccess V2.1.1 and Bio.PDB module were employed to calculate SASA values for each residue in antibody and antigen, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Naccess V2.1.1 and Bio.PDB module were employed to calculate SASA values for each residue in antibody and antigen, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the computational tools used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "629baf64-9d8b-4b16-885c-16287d6b8dd4",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C113",
+      "claim": "Residues with a SASA loss (\u0394SASA) in binding of more than 1 \u00c52 were classified as interacting residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The residues with a SASA loss (\u0394SASA) in binding of more than 1 \u00c52 were classified as interacting residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the threshold used for defining interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "095051f0-ec7b-48d8-8eca-ae852316e942",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C114",
+      "claim": "Another set of interacting paratope-epitope residues was defined by a distance cutoff of 6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also defined another set of interacting paratope-epitope residues by a distance cutoff of 6 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the alternative method for defining interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "40eb5b25-86df-4369-b2c0-c7f51be87035",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C115",
+      "claim": "Two amino acids are considered interacting residues if they have at least one pair of non-hydrogen atoms within a distance of 6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Two amino acids are considered interacting residues if they have at least one pair of non-hydrogen atoms within a distance of 6 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the specific criterion for distance-based interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "209ee28e-c250-4218-a946-7c0ff4dfa8e1",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C116",
+      "claim": "The main data processing algorithm is implemented in Python.",
+      "claim_type": "EXPLICIT",
+      "source": "The main data processing algorithm is implemented in Python.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "29706302-3008-4963-9797-3f740f010b8e",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C117",
+      "claim": "The front-end web interface of AACDB was constructed by HTML and enhanced with JavaScript, CSS, and Bootstrap technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "The front-end web interface of AACDB was constructed by HTML and enhanced with JavaScript, CSS, and Bootstrap technologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical implementation of the web interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "b8b417d8-2380-4644-a8a8-fbf56ef95aa4",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C118",
+      "claim": "A dynamic 3D structure visualization window was developed based on PV, a WebGL-based protein viewer.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a dynamic 3D structure visualization window based on PV, a WebGL-based protein viewer, inspired by Dunbar et al., 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the visualization tool implementation, with citation to inspiration source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "e5915efd-b4e2-4735-8e92-34dedc47a060",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C119",
+      "claim": "All the data were managed within the MySQL database system.",
+      "claim_type": "EXPLICIT",
+      "source": "All the data were managed within the MySQL database system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the database management system used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "051015dd-4182-429f-ba91-1cb13090dbaa",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "claim_id": "C120",
+      "claim": "PHP is utilized to enable data browsing, searching, and downloading features for the back-end functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "For the back-end functionality, PHP is utilized to enable data browsing, searching, and downloading features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the back-end technical implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AACDB contains 7,498 manually curated antigen-antibody complex entries extracted from over 32,000 PDB structures (up to December 2023), encompassing 16 antibody fragment types across 14 species. Fab fragments (71.98%) and human antibodies (60.95%) constitute the largest proportions, with approximately 45% of entries released during 2021-2023.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26-31, C34-35, and C64 provide consistent, specific quantitative data about database content and composition. The statistics are internally consistent and supported by Figure 1, which visually confirms the distributions described. The manual curation process is explicitly stated (C26, C100), providing methodological transparency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AACDB identifies and corrects numerous annotation errors in PDB entries, including species mislabeling (e.g., 7WRL), resolution errors (e.g., 1NSN), chain misidentification (e.g., 3KS0, 5EBW), and mutation annotation errors (e.g., 6BFT, 7SU1). These errors were propagated to SAbDab in some cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-99 provide specific, verifiable examples of annotation errors with PDB IDs and detailed descriptions. The manual verification process (C90, C100) and cross-referencing with original literature support the validity of these corrections. Multiple error categories are documented with concrete examples, demonstrating systematic quality control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7e97430b-9521-4839-8a40-59bffb6a14e0",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AACDB provides interacting residue annotations using two standardized methods: \u0394SASA (>1 \u0172 threshold using Naccess V2.1.1) and atom distance (<6 \u00c5 cutoff for non-hydrogen atoms). Raw values are provided to allow users to apply custom thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C46-49, C56, and C111-115 consistently describe the dual annotation approach with specific computational tools and thresholds. The methodology is clearly defined and reproducible. The provision of raw data (C48-49) addresses the flexibility concern, though the choice of specific thresholds (1 \u0172, 6 \u00c5) lacks explicit justification beyond being 'widely accepted.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AACDB integrates antibody developability information (325 entries linked to DOTAD) and antigen-drug target relationships (3,733 antigens identified as drug targets in DrugBank using >90% sequence identity threshold).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32-33, C42-43, and C107-110 describe the integration methodology with specific numbers and criteria. The 90% identity threshold (C110) is reasonable for drug target identification. However, the relatively small proportion of entries with developability data (325/7498 = 4.3%) limits the utility of this feature for most database entries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "c0bb2345-a86d-41d9-96ca-184159153ac3",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AACDB serves as a benchmark dataset for immunoinformatics research by providing comprehensive paratope and epitope annotations, addressing the lack of standardized interaction residue definitions in existing databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C23-24, and C57 assert AACDB's utility as a benchmark, but C24's claim that 'none of the existing databases provide details of interaction residues' is potentially inaccurate given that SAbDab does provide some interface annotations. The benchmark utility claim (C57) is inferential and requires validation through actual usage by the community.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AACDB implements stringent filtering to exclude false positives, including removal of immunoglobulin-binding proteins (Protein A/G) that bind framework regions rather than CDRs, and systematic splitting of multi-complex structures into individual antibody-antigen pairs using PDBsum chain interaction data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-82 describe a systematic curation methodology with specific examples (1AHW, 6OGE, 3BQU) illustrated in Figure 6. The exclusion criteria for non-antigen binding proteins (C68-71) are scientifically sound and supported by citations. The splitting methodology (C72-82) is clearly documented with visual evidence, though the manual nature introduces potential for inconsistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "06f72b74-e693-4959-a3c4-796f73c5a839",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AACDB provides a user-friendly web interface with search functionality across nine metadata fields, structure visualization with customizable display options, and flexible data download options (bulk and single-entry) in txt/csv formats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-41 and C50-51 describe interface features that are verifiable through Figures 2-3. The search example (C39: 117 hits for 'Lysozyme') provides concrete evidence of functionality. The interface description is consistent across claims, though actual usability would require hands-on testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "c4f12adc-79ca-47f2-8166-b24d9dcb097f",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AACDB's data processing pipeline supports both PDB and mmCIF file formats, with automated conversion of mmCIF to PDB format for compatibility with Naccess software, and automated file segmentation based on manually annotated antibody-antigen chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C84-88 describe technical implementation details that address a known limitation (Naccess incompatibility with mmCIF). The automated segmentation based on manual annotations (C85) represents a hybrid approach that balances efficiency with accuracy. The methodology is clearly described and technically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f40f6f64-7d92-4322-86af-fd8927573acf",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AACDB implements a hierarchical nomenclature system prioritizing original literature over PDB annotations, uses therapeutic antibody sequences from Thera-SAbDab as mutation references, and adopts a 'PDBID + antibody fragment' convention for unnamed entries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-106 describe a systematic naming and mutation annotation approach with clear prioritization rules. The use of Thera-SAbDab as reference (C101) is appropriate for therapeutic antibodies. The transparency commitment (C103) enhances reproducibility, though the actual accessibility of corrections should be verified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7bc79536-3d3e-486c-bd5a-d2df176b0514",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AACDB is implemented using Python for data processing, HTML/JavaScript/CSS/Bootstrap for the front-end, PV (WebGL-based viewer) for 3D visualization, MySQL for data management, and PHP for back-end functionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116-120 provide a complete technical stack description. The choice of technologies is standard and appropriate for a web-based database. The citation to Dunbar et al., 2014 for visualization inspiration (C118) acknowledges prior work. However, no information about code availability or version control is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "b89d4fc1-8f6e-4f40-9e38-2b33a1f3ccd2",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Existing databases face challenges including difficulty identifying antigen-antibody complexes in PDB, limited visualization tools in AbDb, potential error propagation in SAbDab's rapid updates, and lack of standardized definitions for interacting residues across the field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C14, C16, C18-19, and C22 present critical assessments of existing resources. While C14 and C19 identify legitimate challenges, C16's characterization of AbDb's limitations and C18's suggestion that SAbDab's rapid updates increase errors are inferential and potentially unfair without systematic comparison. The authors acknowledge AbDb's contributions but the criticism may overstate AACDB's novelty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "45650860-bf24-4bd2-b312-b3a8ac7e6221",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AACDB acknowledges limitations including potential incomplete coverage due to resource constraints, inherent challenges in eliminating all manual curation errors, and current restriction to antigens >50 amino acids. Future plans include expanding to diverse antigen classes and incorporating affinity data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-63 transparently acknowledge limitations and outline future directions. The 50 amino acid cutoff (C60) is a significant limitation that excludes peptide antigens. The acknowledgment of manual curation challenges (C59) is honest. Future plans (C61-62) are appropriate but remain speculative until implemented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "836643e2-5378-42ac-b3d2-04b7dfff2545",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "AACDB provides detailed chain-level information including sequence, mutation type and position, and comprehensive metadata (chain IDs, antibody/antigen names, method, resolution, organism).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-45 and C89 describe the metadata structure, which is visually confirmed in Figure 3. The level of detail is appropriate for structural biology applications. The metadata verification through literature (C90) enhances reliability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides background context on antibodies' role in immunity and therapeutics, antibody drug development stages, the growing field of ML/DL-based interface prediction, and PDB as an established protein structure repository.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-13 present established scientific knowledge supported by appropriate citations. These claims provide necessary context but do not constitute novel findings. The statements are accurate and well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "eb4ccb65-11e5-4573-8eaa-d2a58f8ebd80",
+      "content_id": "d7377adc-f4eb-4355-bef6-cd9b9be3919b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "AACDB is accessible at http://i.uestc.edu.cn/AACDB. The manuscript contextualizes AACDB relative to prior databases AbDb (2018) and SAbDab series.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C15, and C17 provide factual information about database accessibility and prior work. The citations to AbDb and SAbDab are appropriate. Database accessibility is verifiable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors manually curated 7498 antigen-antibody complex entries from over 32,000 PDB structures, encompassing 16 antibody fragment types across 14 species, with Fab fragments (71.98%) and human antibodies (60.95%) being most prevalent. A significant increase in entries occurred during 2021-2023, accounting for approximately 45% of the total.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers acknowledge the database contains 7498 manually curated entries and recognize the manual curation effort as solid methodology. The first reviewer states 'The methodology presented for this data curation is solid,' and the second reviewer confirms 'The authors have performed a manual curation of antibody-antigen complexes from the Protein Data Bank.' No concerns were raised about these statistical claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "ee6c147e-396e-407e-95ea-6e7b3de9010b",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors identified and corrected numerous annotation errors from PDB that had been propagated to SAbDab, including species mislabeling (e.g., 7WRL), resolution errors (e.g., 1NSN), chain misidentification (e.g., 3KS0, 5EBW), and mutation annotation errors (e.g., 6BFT). Each entry was manually checked to identify annotation problems.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly validated the error correction claims. The second reviewer states 'I have personally verified some of the examples presented by the authors, and found that SAbDab appears to fix the mistakes related to mis-identification of antibody chains, but not other annotations,' confirming errors in 7WRL and 1NSN. The first reviewer identifies 'the potentially most significant contribution of this database is the manual data curation to fix errors present in the PDB entries.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "AACDB provides comprehensive paratope and epitope annotations using two methods: \u0394SASA (>1 \u0172 threshold) and atom distance (<6 \u00c5 cutoff), enabling standardized benchmarking for interface prediction tools. Naccess V2.1.1 and Bio.PDB were used to calculate SASA values.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the interface annotation as useful, the second reviewer expresses skepticism about \u0394SASA utility: 'I am, however, not convinced of the utility of *change* in SASA as a useful metric for identifying interacting residues, beyond what is already identified via pairwise distances.' The reviewer notes that approximating unbound structures by computationally removing binding partners is a limitation. The third reviewer simply states 'they have added two methods to estimate paratope-epitope interfaces' without critical evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "add09bd8-6db6-487a-9d66-dabf42918e6a",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors developed a standardized splitting procedure for PDB files containing multiple antibody-antigen complexes, creating separate entries for each unique antibody-antigen pair (e.g., 1AHW split into BAC and DEF; 6OGE into CBA and EDA). Anti-idiotypic complexes receive special treatment with partner antibodies treated as dual-chain antigens.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The second reviewer acknowledges 'the splitting of the pdb files is a valuable contribution as it standardizes the distribution of antibody-antigen complexes,' but raises important concerns about biological context: 'one should not ignore the potentially stabilizing effect that the binding of one antibody has on the complex' and notes that 'some antigens occur naturally as homomultimers' which are not preserved in the current splitting approach. This represents a methodological limitation that affects interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7ec27cee-d37e-4d9b-8329-1f986132003f",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "AACDB integrates antibody developability data (325 entries linked to DOTAD) and drug target information (3733 antigens identified in DrugBank using >90% identity threshold), providing INN and clinical trial information for therapeutic antibodies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these integrations without criticism. The third reviewer explicitly notes 'The database is also cross-linked to other databases that contain information relevant to antibody developability and therapeutic applications' as a strength. No concerns were raised about the integration methodology or thresholds used.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "dd78a606-492d-44cb-956f-98ce4a7bff0b",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "AACDB provides a web interface with search functionality, 3D visualization (using PV WebGL-based viewer), and download capabilities in multiple formats. The interface includes a Help page with tutorials and is built using HTML, JavaScript, CSS, Bootstrap (frontend) and PHP with MySQL (backend).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers acknowledge the usability of the interface. The first reviewer states 'Sequences, structures, and annotations can be easily downloaded from the AACDB website,' and the second reviewer confirms 'Sequences, structures and annotations can be very easily downloaded from the AACDB website.' The third reviewer notes 'they have produced a web interface capable of effective visualisation and of summarising the key useful information in one page.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "493b1426-79ae-4758-ad98-d88090da9147",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "AACDB's data processing pipeline supports mmCIF files, converting them to PDB format when necessary for compatibility with Naccess software, which does not support .cif input.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this technical capability. The first reviewer notes this as a feature 'not provided by other antigen-antibody complex databases,' and no concerns were raised about the file format handling or conversion process.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "1bb286a2-323a-4a5e-9b8f-73f2a1d60ce2",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "AACDB currently only includes antigen proteins >50 amino acids in length, excluding peptides, nucleic acids, and haptens. Future iterations will expand to include these diverse antigen classes and incorporate literature-validated affinity data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly identifies this as a limitation: 'AACDB only contains entries with protein-based antigens of at most 50 amino-acids in length. This excludes non-protein-based antigens, such as carbohydrate- and nucleotide-based, as well as short peptide antigens.' The third reviewer also notes 'The database does not import all the experimental information from PDB and contains only complexes with large protein targets' as a weakness. The limitation is acknowledged by reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "1c18d642-1b08-4864-807a-4bbd38f80a0c",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "AACDB provides raw \u0394SASA and distance values for all annotated residues, allowing users to dynamically filter data using custom thresholds (e.g., selecting 5 \u00c5 instead of 6 \u00c5).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This flexibility is not explicitly discussed by reviewers but is consistent with their acknowledgment of the database's utility and download capabilities. No concerns were raised about data accessibility or filtering options.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "285fa560-1f81-412a-b8fe-aa9d83a1f6b0",
+      "content_id": "043ea73b-f432-4746-9b64-c38b503a4084",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors acknowledge that despite best efforts, the database may not capture all antigen-antibody complexes due to resource limitations, and that eliminating all errors in manual curation is challenging.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accept these limitations as inherent to manual curation efforts. The second reviewer notes the absence of binding affinity data as a limitation but does not challenge the authors' acknowledgment of incompleteness. The overall positive reception suggests reviewers view the acknowledged limitations as reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2cf2027-74f5-45b7-b317-f9a4a9dbd801",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "5f694cf0-6ebb-4150-a9af-1524fa612c9b",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "8c12bbc2-6439-4d90-934b-f6652d147afb",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "95cdae27-5d03-457f-b366-ac52a53f941b",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "7d0d2179-1e61-407a-b0a9-712c2e074fb4",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "069bb353-36d5-4ca6-bb07-9f8a91f7469b",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "540dc128-e839-4f76-a90e-e5b5c44f7db5",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "b221622e-7b1d-4e95-b744-97d4a756928f",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "2c2a0057-72a6-482d-9c9f-58eff074c8fe",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "52a62eee-2b8b-4e47-ae0c-0ed8be86f902",
+      "result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78"
+    },
+    {
+      "claim_id": "64fe912b-0874-4b8f-b6dd-bc15d147543a",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "7bc6117b-9277-4924-9674-38afd79fe019",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "f8c9f33f-0770-4998-9647-332ffb660e21",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "f8849021-e52c-48cd-be4c-dc4caa281960",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "cbf06767-436e-464f-aa4b-3f1a20bd7418",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "8425436e-9a5f-43ff-8a42-a19da432cc45",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "f8d0adf3-d22a-4621-96f2-27d3fe82ba8c",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "97b9b1dc-422b-4070-930e-056735afd4de",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "cbbbd3bd-8f6c-468d-b1bd-a46a5cbaa01b",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "7fd99297-9b9a-4773-8570-30e8b0246480",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "c1f587c4-013a-462c-ab85-7ca50f77ee72",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "32985e75-a66d-48b6-8500-4ac7c7a76c83",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "48a182ad-6a7b-4466-90af-6b938a77ff87",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "60452cb9-ec9d-4046-a474-a179b5ab2097",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "15780f8d-a219-4e9f-aeec-9b2455876141",
+      "result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca"
+    },
+    {
+      "claim_id": "630626b2-a32b-42fb-9935-7c8a3f87b640",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "816bb9a8-b583-44d2-9940-b27bc83deec7",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "eadeeaaf-4d61-413b-a350-48ba74a8e8ce",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "2cccf556-59d5-40bd-809c-0b92756d6917",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "34cfc459-0d67-4242-9148-d0d13c01c2e6",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "d2866fdb-d460-4dfb-b63b-550305d3c0bc",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "5c5ee41b-13d2-4e55-aa46-2e745b4004d9",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "e8f4246c-9cd0-42fd-b178-1635d81d48f7",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "629baf64-9d8b-4b16-885c-16287d6b8dd4",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "095051f0-ec7b-48d8-8eca-ae852316e942",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "40eb5b25-86df-4369-b2c0-c7f51be87035",
+      "result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0"
+    },
+    {
+      "claim_id": "30a855a3-e612-4618-aa1a-e33833dd662d",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "0cef65eb-df03-4183-a76a-d0e42cdaba20",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "c0b1f9a6-cbc6-4db3-b4a9-6a26900b0d87",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "0dabdb20-c2c9-43df-a674-054e5ae5f608",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "afa11395-a940-41fc-ae54-e28fa1f56e74",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "3f4127d2-c7f5-415a-be34-f68cc6daa6d7",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "d7c46c76-107d-49b6-b1eb-f2521554aeda",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "011ea1d8-e90c-4f13-8cc1-b1caebbe6225",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "406f4606-d2b5-4564-bd22-be0f86f2b9f2",
+      "result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee"
+    },
+    {
+      "claim_id": "ee572b83-84b5-457d-a061-a213361b82b7",
+      "result_id": "c0bb2345-a86d-41d9-96ca-184159153ac3"
+    },
+    {
+      "claim_id": "f8062db1-7fa8-4038-9ac8-5e8836dbdad0",
+      "result_id": "c0bb2345-a86d-41d9-96ca-184159153ac3"
+    },
+    {
+      "claim_id": "49ac5b22-cf5f-4973-b391-1363b919c2dc",
+      "result_id": "c0bb2345-a86d-41d9-96ca-184159153ac3"
+    },
+    {
+      "claim_id": "d101f433-fad5-4d4e-9e8a-675baaed11b9",
+      "result_id": "c0bb2345-a86d-41d9-96ca-184159153ac3"
+    },
+    {
+      "claim_id": "6526399c-077a-43dc-8d0a-54369ed7625c",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "08261648-480c-4818-b524-06c17d932549",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "f2df0305-8fd7-4b9c-8b3a-4c1c56319b11",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "f0fdbf42-975a-4223-a6cf-d42a0e6831f3",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "680597f0-5374-4e44-96bc-4e34435d4a52",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "5dbd3c08-38b6-445e-96ff-2c6365097821",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "7fe1c017-619b-4608-96ae-e39bcb1d3569",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "09d1b6c8-bcf3-4050-8ed9-626a3019a95a",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "eaed04b0-1216-4422-8b0b-c96c57fb5c19",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "29ea6cb2-d541-41d0-97e4-53ac7a3e07ca",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "ca7dff79-eeec-4e0a-b5f1-e8d8e7bddeae",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "4ce25113-c26e-4922-a760-24e7825dcc9c",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "e2c83dcb-ea46-42be-8711-bac58d63ca8e",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "38a7043d-487a-4ed8-94e3-0ffee2b265f4",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "edc43655-cb6b-4a06-9bbc-dd2a29a8d47a",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "41f5109c-ac30-4764-ab40-a08039258332",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "b8485f67-e98d-4208-a37d-b8473300c5d3",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "3bf880bd-974a-46d7-9207-8e2dcbd7a8da",
+      "result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528"
+    },
+    {
+      "claim_id": "c3be2ee5-3849-442c-9d0d-d01932aeac60",
+      "result_id": "06f72b74-e693-4959-a3c4-796f73c5a839"
+    },
+    {
+      "claim_id": "0134cfaf-6076-40b6-b619-77c0d08115f6",
+      "result_id": "06f72b74-e693-4959-a3c4-796f73c5a839"
+    },
+    {
+      "claim_id": "d8109637-c3c9-477d-959a-974f53c3aa06",
+      "result_id": "06f72b74-e693-4959-a3c4-796f73c5a839"
+    },
+    {
+      "claim_id": "69c244bc-87fa-4e01-918c-a2e611a8e40c",
+      "result_id": "06f72b74-e693-4959-a3c4-796f73c5a839"
+    },
+    {
+      "claim_id": "bddd538d-72c6-48ac-a193-5afef5c6a83d",
+      "result_id": "06f72b74-e693-4959-a3c4-796f73c5a839"
+    },
+    {
+      "claim_id": "fe944f72-85ba-4e1b-8532-9ef3dbb91129",
+      "result_id": "06f72b74-e693-4959-a3c4-796f73c5a839"
+    },
+    {
+      "claim_id": "2fe3ab4e-9be8-4998-bcbe-ca6b14d927b1",
+      "result_id": "06f72b74-e693-4959-a3c4-796f73c5a839"
+    },
+    {
+      "claim_id": "8dce0a36-0652-4708-854b-38ba4b286406",
+      "result_id": "06f72b74-e693-4959-a3c4-796f73c5a839"
+    },
+    {
+      "claim_id": "8aa4cac1-b72d-45f2-91e5-eebaffc2401a",
+      "result_id": "c4f12adc-79ca-47f2-8166-b24d9dcb097f"
+    },
+    {
+      "claim_id": "79f0bbc3-2921-42c4-8d7f-3dc5afb0299c",
+      "result_id": "c4f12adc-79ca-47f2-8166-b24d9dcb097f"
+    },
+    {
+      "claim_id": "c007274f-556b-4ec2-9267-633e47e97562",
+      "result_id": "c4f12adc-79ca-47f2-8166-b24d9dcb097f"
+    },
+    {
+      "claim_id": "bc9ea560-fca5-429d-b105-ec2b227e3c82",
+      "result_id": "c4f12adc-79ca-47f2-8166-b24d9dcb097f"
+    },
+    {
+      "claim_id": "637616b6-691e-4633-8381-d5f81df60777",
+      "result_id": "c4f12adc-79ca-47f2-8166-b24d9dcb097f"
+    },
+    {
+      "claim_id": "7aa4145b-052c-4de6-87aa-f41908e91bd5",
+      "result_id": "c4f12adc-79ca-47f2-8166-b24d9dcb097f"
+    },
+    {
+      "claim_id": "0665b97a-62a7-4777-9edb-ba2394f9d3d1",
+      "result_id": "f40f6f64-7d92-4322-86af-fd8927573acf"
+    },
+    {
+      "claim_id": "16af7aec-d6e5-4f95-9dca-25f5346ddaad",
+      "result_id": "f40f6f64-7d92-4322-86af-fd8927573acf"
+    },
+    {
+      "claim_id": "e6567435-832b-42d9-9d87-d88960cc9b4b",
+      "result_id": "f40f6f64-7d92-4322-86af-fd8927573acf"
+    },
+    {
+      "claim_id": "f28ffeb1-4f22-474d-b30a-63af13b63c5a",
+      "result_id": "f40f6f64-7d92-4322-86af-fd8927573acf"
+    },
+    {
+      "claim_id": "4b56312e-3a9e-4556-ab46-4254135958c1",
+      "result_id": "f40f6f64-7d92-4322-86af-fd8927573acf"
+    },
+    {
+      "claim_id": "12c19698-0a60-4b83-bfd2-2fd1b6601e45",
+      "result_id": "f40f6f64-7d92-4322-86af-fd8927573acf"
+    },
+    {
+      "claim_id": "209ee28e-c250-4218-a946-7c0ff4dfa8e1",
+      "result_id": "7bc79536-3d3e-486c-bd5a-d2df176b0514"
+    },
+    {
+      "claim_id": "29706302-3008-4963-9797-3f740f010b8e",
+      "result_id": "7bc79536-3d3e-486c-bd5a-d2df176b0514"
+    },
+    {
+      "claim_id": "b8b417d8-2380-4644-a8a8-fbf56ef95aa4",
+      "result_id": "7bc79536-3d3e-486c-bd5a-d2df176b0514"
+    },
+    {
+      "claim_id": "e5915efd-b4e2-4735-8e92-34dedc47a060",
+      "result_id": "7bc79536-3d3e-486c-bd5a-d2df176b0514"
+    },
+    {
+      "claim_id": "051015dd-4182-429f-ba91-1cb13090dbaa",
+      "result_id": "7bc79536-3d3e-486c-bd5a-d2df176b0514"
+    },
+    {
+      "claim_id": "b98cf953-e52b-432a-b5de-5a5a66d412c6",
+      "result_id": "b89d4fc1-8f6e-4f40-9e38-2b33a1f3ccd2"
+    },
+    {
+      "claim_id": "f03a1638-0c07-4c63-a490-e6c59b7d645f",
+      "result_id": "b89d4fc1-8f6e-4f40-9e38-2b33a1f3ccd2"
+    },
+    {
+      "claim_id": "8b43cc08-204a-41f3-aad9-f0738446be26",
+      "result_id": "b89d4fc1-8f6e-4f40-9e38-2b33a1f3ccd2"
+    },
+    {
+      "claim_id": "64a7e113-27fd-422b-91f8-edfdef099e94",
+      "result_id": "b89d4fc1-8f6e-4f40-9e38-2b33a1f3ccd2"
+    },
+    {
+      "claim_id": "256db056-524e-475a-afc6-0d1980e7a315",
+      "result_id": "b89d4fc1-8f6e-4f40-9e38-2b33a1f3ccd2"
+    },
+    {
+      "claim_id": "87f660a2-6067-4316-a2bf-acba707cfe27",
+      "result_id": "45650860-bf24-4bd2-b312-b3a8ac7e6221"
+    },
+    {
+      "claim_id": "be3b6986-0715-48a6-8b18-ea59e1387813",
+      "result_id": "45650860-bf24-4bd2-b312-b3a8ac7e6221"
+    },
+    {
+      "claim_id": "34834168-c664-4001-8c27-b13982275798",
+      "result_id": "45650860-bf24-4bd2-b312-b3a8ac7e6221"
+    },
+    {
+      "claim_id": "61cdef90-db5e-432c-8b22-6337241ce4d2",
+      "result_id": "45650860-bf24-4bd2-b312-b3a8ac7e6221"
+    },
+    {
+      "claim_id": "bf628a4f-397c-421e-b6a6-b8bf1bb09317",
+      "result_id": "45650860-bf24-4bd2-b312-b3a8ac7e6221"
+    },
+    {
+      "claim_id": "97c7cd75-c8f9-4248-9689-4c9fb95d5a7b",
+      "result_id": "45650860-bf24-4bd2-b312-b3a8ac7e6221"
+    },
+    {
+      "claim_id": "6d6d6711-38ce-437b-b148-0f643e22b761",
+      "result_id": "836643e2-5378-42ac-b3d2-04b7dfff2545"
+    },
+    {
+      "claim_id": "6a8d3a29-e864-4da3-8625-f453b49afecf",
+      "result_id": "836643e2-5378-42ac-b3d2-04b7dfff2545"
+    },
+    {
+      "claim_id": "40150557-c9a7-435a-b1ea-6e03405c4dcb",
+      "result_id": "836643e2-5378-42ac-b3d2-04b7dfff2545"
+    },
+    {
+      "claim_id": "4cb3e136-df7a-43d6-b13c-925fca360cf9",
+      "result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb"
+    },
+    {
+      "claim_id": "f21f37c2-3836-46ca-893f-56d827f8b092",
+      "result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb"
+    },
+    {
+      "claim_id": "fd8e19a7-ae79-4cab-b97d-020c2c86851b",
+      "result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb"
+    },
+    {
+      "claim_id": "5ca868a3-0f5e-42aa-9194-dd2fb34e34e7",
+      "result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb"
+    },
+    {
+      "claim_id": "d6d72815-48fb-47a3-b089-e0d92b246cb3",
+      "result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb"
+    },
+    {
+      "claim_id": "36a365fd-14a3-4666-a938-9a326e166398",
+      "result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb"
+    },
+    {
+      "claim_id": "c9329f60-a737-4d26-ae14-c17fa3db0388",
+      "result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb"
+    },
+    {
+      "claim_id": "9e26e540-991a-4cb9-b7d6-9cfe2b50bdaa",
+      "result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb"
+    },
+    {
+      "claim_id": "7ea4810b-040d-4ac2-8370-4daf0acac160",
+      "result_id": "eb4ccb65-11e5-4573-8eaa-d2a58f8ebd80"
+    },
+    {
+      "claim_id": "b6d0c6d3-3d3c-41b4-9582-9060cfa9c5cf",
+      "result_id": "eb4ccb65-11e5-4573-8eaa-d2a58f8ebd80"
+    },
+    {
+      "claim_id": "91f84f9b-2964-464b-8595-0103daf3b4ea",
+      "result_id": "eb4ccb65-11e5-4573-8eaa-d2a58f8ebd80"
+    },
+    {
+      "claim_id": "c2cf2027-74f5-45b7-b317-f9a4a9dbd801",
+      "result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8"
+    },
+    {
+      "claim_id": "5f694cf0-6ebb-4150-a9af-1524fa612c9b",
+      "result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8"
+    },
+    {
+      "claim_id": "8c12bbc2-6439-4d90-934b-f6652d147afb",
+      "result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8"
+    },
+    {
+      "claim_id": "95cdae27-5d03-457f-b366-ac52a53f941b",
+      "result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8"
+    },
+    {
+      "claim_id": "7d0d2179-1e61-407a-b0a9-712c2e074fb4",
+      "result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8"
+    },
+    {
+      "claim_id": "069bb353-36d5-4ca6-bb07-9f8a91f7469b",
+      "result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8"
+    },
+    {
+      "claim_id": "540dc128-e839-4f76-a90e-e5b5c44f7db5",
+      "result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8"
+    },
+    {
+      "claim_id": "52a62eee-2b8b-4e47-ae0c-0ed8be86f902",
+      "result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8"
+    },
+    {
+      "claim_id": "64fe912b-0874-4b8f-b6dd-bc15d147543a",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "7bc6117b-9277-4924-9674-38afd79fe019",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "f8c9f33f-0770-4998-9647-332ffb660e21",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "f8849021-e52c-48cd-be4c-dc4caa281960",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "cbf06767-436e-464f-aa4b-3f1a20bd7418",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "8425436e-9a5f-43ff-8a42-a19da432cc45",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "f8d0adf3-d22a-4621-96f2-27d3fe82ba8c",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "97b9b1dc-422b-4070-930e-056735afd4de",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "cbbbd3bd-8f6c-468d-b1bd-a46a5cbaa01b",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "7fd99297-9b9a-4773-8570-30e8b0246480",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "c1f587c4-013a-462c-ab85-7ca50f77ee72",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "32985e75-a66d-48b6-8500-4ac7c7a76c83",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "48a182ad-6a7b-4466-90af-6b938a77ff87",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "60452cb9-ec9d-4046-a474-a179b5ab2097",
+      "result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b"
+    },
+    {
+      "claim_id": "ee572b83-84b5-457d-a061-a213361b82b7",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "630626b2-a32b-42fb-9935-7c8a3f87b640",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "816bb9a8-b583-44d2-9940-b27bc83deec7",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "eadeeaaf-4d61-413b-a350-48ba74a8e8ce",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "d2866fdb-d460-4dfb-b63b-550305d3c0bc",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "5c5ee41b-13d2-4e55-aa46-2e745b4004d9",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "e8f4246c-9cd0-42fd-b178-1635d81d48f7",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "629baf64-9d8b-4b16-885c-16287d6b8dd4",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "095051f0-ec7b-48d8-8eca-ae852316e942",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "40eb5b25-86df-4369-b2c0-c7f51be87035",
+      "result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b"
+    },
+    {
+      "claim_id": "29ea6cb2-d541-41d0-97e4-53ac7a3e07ca",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "ca7dff79-eeec-4e0a-b5f1-e8d8e7bddeae",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "4ce25113-c26e-4922-a760-24e7825dcc9c",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "e2c83dcb-ea46-42be-8711-bac58d63ca8e",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "38a7043d-487a-4ed8-94e3-0ffee2b265f4",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "edc43655-cb6b-4a06-9bbc-dd2a29a8d47a",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "41f5109c-ac30-4764-ab40-a08039258332",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "b8485f67-e98d-4208-a37d-b8473300c5d3",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "3bf880bd-974a-46d7-9207-8e2dcbd7a8da",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "2bf277c1-fbce-4d78-ba26-96124072bc88",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "c007274f-556b-4ec2-9267-633e47e97562",
+      "result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a"
+    },
+    {
+      "claim_id": "30a855a3-e612-4618-aa1a-e33833dd662d",
+      "result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f"
+    },
+    {
+      "claim_id": "0cef65eb-df03-4183-a76a-d0e42cdaba20",
+      "result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f"
+    },
+    {
+      "claim_id": "c0b1f9a6-cbc6-4db3-b4a9-6a26900b0d87",
+      "result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f"
+    },
+    {
+      "claim_id": "0dabdb20-c2c9-43df-a674-054e5ae5f608",
+      "result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f"
+    },
+    {
+      "claim_id": "afa11395-a940-41fc-ae54-e28fa1f56e74",
+      "result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f"
+    },
+    {
+      "claim_id": "d7c46c76-107d-49b6-b1eb-f2521554aeda",
+      "result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f"
+    },
+    {
+      "claim_id": "011ea1d8-e90c-4f13-8cc1-b1caebbe6225",
+      "result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f"
+    },
+    {
+      "claim_id": "406f4606-d2b5-4564-bd22-be0f86f2b9f2",
+      "result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f"
+    },
+    {
+      "claim_id": "0134cfaf-6076-40b6-b619-77c0d08115f6",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "d8109637-c3c9-477d-959a-974f53c3aa06",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "69c244bc-87fa-4e01-918c-a2e611a8e40c",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "bddd538d-72c6-48ac-a193-5afef5c6a83d",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "fe944f72-85ba-4e1b-8532-9ef3dbb91129",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "2fe3ab4e-9be8-4998-bcbe-ca6b14d927b1",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "8dce0a36-0652-4708-854b-38ba4b286406",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "29706302-3008-4963-9797-3f740f010b8e",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "b8b417d8-2380-4644-a8a8-fbf56ef95aa4",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "e5915efd-b4e2-4735-8e92-34dedc47a060",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "051015dd-4182-429f-ba91-1cb13090dbaa",
+      "result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b"
+    },
+    {
+      "claim_id": "8aa4cac1-b72d-45f2-91e5-eebaffc2401a",
+      "result_id": "493b1426-79ae-4758-ad98-d88090da9147"
+    },
+    {
+      "claim_id": "79f0bbc3-2921-42c4-8d7f-3dc5afb0299c",
+      "result_id": "493b1426-79ae-4758-ad98-d88090da9147"
+    },
+    {
+      "claim_id": "bc9ea560-fca5-429d-b105-ec2b227e3c82",
+      "result_id": "493b1426-79ae-4758-ad98-d88090da9147"
+    },
+    {
+      "claim_id": "637616b6-691e-4633-8381-d5f81df60777",
+      "result_id": "493b1426-79ae-4758-ad98-d88090da9147"
+    },
+    {
+      "claim_id": "34834168-c664-4001-8c27-b13982275798",
+      "result_id": "1bb286a2-323a-4a5e-9b8f-73f2a1d60ce2"
+    },
+    {
+      "claim_id": "61cdef90-db5e-432c-8b22-6337241ce4d2",
+      "result_id": "1bb286a2-323a-4a5e-9b8f-73f2a1d60ce2"
+    },
+    {
+      "claim_id": "bf628a4f-397c-421e-b6a6-b8bf1bb09317",
+      "result_id": "1bb286a2-323a-4a5e-9b8f-73f2a1d60ce2"
+    },
+    {
+      "claim_id": "2cccf556-59d5-40bd-809c-0b92756d6917",
+      "result_id": "1c18d642-1b08-4864-807a-4bbd38f80a0c"
+    },
+    {
+      "claim_id": "34cfc459-0d67-4242-9148-d0d13c01c2e6",
+      "result_id": "1c18d642-1b08-4864-807a-4bbd38f80a0c"
+    },
+    {
+      "claim_id": "87f660a2-6067-4316-a2bf-acba707cfe27",
+      "result_id": "285fa560-1f81-412a-b8fe-aa9d83a1f6b0"
+    },
+    {
+      "claim_id": "be3b6986-0715-48a6-8b18-ea59e1387813",
+      "result_id": "285fa560-1f81-412a-b8fe-aa9d83a1f6b0"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "cc2e3e87-8929-45bf-b3f2-b385313d319b",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "d3ed6c3c-6a38-4c56-bc11-71deacc44d78",
+      "peer_result_id": "f2ac7f97-05d9-4af3-ab26-c4ea9887b7e8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on database statistics and manual curation methodology (C2, C26-31, C64). Both evaluations find the manual curation solid and the quantitative data well-supported. OpenEval notes internal consistency with Figure 1, while peer reviewers explicitly validate the methodology as solid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "f3b7c333-abfc-4b04-ab79-fac32f407dbb",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "92659a9e-99c9-4b33-886e-d38e7c9ed1ca",
+      "peer_result_id": "ee6c147e-396e-407e-95ea-6e7b3de9010b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on error correction claims (C3, C52-54, C91-100). Both evaluations support the validity of documented annotation errors. Peer reviewers independently verified specific examples (7WRL, 1NSN) and identified manual curation as potentially the most significant contribution, aligning with OpenEval's assessment of systematic quality control.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "a128908c-28ad-4081-a292-c954c9a48ce7",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0",
+      "peer_result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial disagreement on interface annotation methodology (C25, C46-47, C56, C111-115). OpenEval finds the dual annotation approach supported despite lacking explicit threshold justification. Peer reviewers express skepticism about \u0394SASA utility and note limitations in approximating unbound structures, marking this as UNCERTAIN versus OpenEval's SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "7cf7cc0d-df4c-4766-a8a8-661dcd10694d",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "f74c1ba4-f447-48a7-b5cb-a257a1c35bee",
+      "peer_result_id": "7ec27cee-d37e-4d9b-8329-1f986132003f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on database integration claims (C4, C32-33, C42-43, C107-110). Both evaluations support the integration methodology and thresholds. OpenEval notes the limitation of small proportion with developability data (4.3%), while peer reviewers acknowledge cross-linking as a strength without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "ab092181-ffbb-48f9-a9c1-ec1a725ebd4f",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "cf26813b-3836-4bf2-8eef-0bdeae4c4528",
+      "peer_result_id": "add09bd8-6db6-487a-9d66-dabf42918e6a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on complex splitting methodology (C65-82 vs C74-82). OpenEval finds the systematic curation and splitting methodology supported with clear documentation. Peer reviewers acknowledge value but raise important biological concerns about stabilizing effects and natural homomultimers not preserved, marking as UNCERTAIN versus OpenEval's SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "0a005f4f-a0e0-4986-9f43-6b2f3771ea83",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "06f72b74-e693-4959-a3c4-796f73c5a839",
+      "peer_result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on interface usability and functionality (C36-41, C50-51 vs C37-41, C50-51, C117-120). Both evaluations support the web interface claims. OpenEval verifies functionality through figures and search examples, while peer reviewers confirm easy downloading and effective visualization capabilities.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "8cb032e5-d35b-4417-aa50-b3072a3a0519",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "c4f12adc-79ca-47f2-8166-b24d9dcb097f",
+      "peer_result_id": "493b1426-79ae-4758-ad98-d88090da9147",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on technical implementation for file format handling (C55, C84-88 vs C55, C84, C86-87). Both evaluations support the mmCIF compatibility solution. OpenEval describes the hybrid automated/manual approach as technically sound, while peer reviewers note this as a unique feature not provided by other databases.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "29c0ca89-aed6-4e1e-be0f-8bf0bb90ba40",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "45650860-bf24-4bd2-b312-b3a8ac7e6221",
+      "peer_result_id": "1bb286a2-323a-4a5e-9b8f-73f2a1d60ce2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on acknowledged limitations (C58-63 vs C60-62). Both evaluations support the transparency of limitation acknowledgment. OpenEval notes the 50 amino acid cutoff as significant, and peer reviewers explicitly identify exclusion of peptide and non-protein antigens as a limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "daff2bed-b542-4aa9-843a-9df43f31198c",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "45650860-bf24-4bd2-b312-b3a8ac7e6221",
+      "peer_result_id": "285fa560-1f81-412a-b8fe-aa9d83a1f6b0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on manual curation limitations (C58-59). Both evaluations accept the inherent challenges of manual curation. OpenEval finds the honest acknowledgment appropriate, while peer reviewers implicitly accept these as reasonable limitations for manual curation efforts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "4d0ff3c5-7103-44ad-aed2-ad84144d79da",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "7e97430b-9521-4839-8a40-59bffb6a14e0",
+      "peer_result_id": "1c18d642-1b08-4864-807a-4bbd38f80a0c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on data flexibility (C48-49). OpenEval notes provision of raw data addresses flexibility concerns, while peer reviewers acknowledge utility and download capabilities without raising concerns about data accessibility or filtering options.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "92af526d-a647-4af2-b836-e563d0ea7ac2",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "7bc79536-3d3e-486c-bd5a-d2df176b0514",
+      "peer_result_id": "dd78a606-492d-44cb-956f-98ce4a7bff0b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on technical stack and visualization (C116-120). Both evaluations support the implementation. OpenEval finds the technology choices standard and appropriate with proper citation, while peer reviewers confirm effective visualization and information summarization capabilities.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "a1e6e2a4-833c-4273-a7cc-f2b7aa003126",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "c0bb2345-a86d-41d9-96ca-184159153ac3",
+      "peer_result_id": "32c0ce8c-e4d2-4507-87b9-7db3c9da919b",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address benchmark utility claims (C5, C23-24, C57 vs C5). OpenEval marks as UNCERTAIN, questioning the accuracy of claims about existing databases and noting benchmark utility requires community validation. Peer reviewers acknowledge interface annotation as useful but express skepticism about specific metrics, showing partial overlap in concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "62e81105-366c-4e39-bdbc-8b8bae3d12b9",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "f40f6f64-7d92-4322-86af-fd8927573acf",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates systematic naming and mutation annotation approach (C101-106) as SUPPORTED with appropriate prioritization rules and transparency. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "b3644354-666b-4dbe-9c02-cea7ac9721f4",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "b89d4fc1-8f6e-4f40-9e38-2b33a1f3ccd2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval marks critical assessments of existing resources (C14, C16, C18-19, C22) as UNCERTAIN, noting some criticisms may be inferential or potentially unfair without systematic comparison. No corresponding peer review evaluation found addressing these comparative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "30d35dc0-c48f-4d8c-98de-65d0ff7c6de5",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "836643e2-5378-42ac-b3d2-04b7dfff2545",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds metadata structure claims (C44-45, C89) SUPPORTED with visual confirmation in figures and literature verification. No corresponding peer review evaluation found for these metadata-specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "14544b5b-d9ce-45eb-a9c2-151249c7005e",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "79a7b5bd-0e75-4a7d-96ec-67f3b2364efb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background scientific context claims (C1, C7-13) as SUPPORTED, noting they present established knowledge with appropriate citations but do not constitute novel findings. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    },
+    {
+      "id": "1765fa06-6139-44ae-88ac-f3e59f133539",
+      "submission_id": "39ba9f81-8aae-4e46-b5c6-7f5510003a6d",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "eb4ccb65-11e5-4573-8eaa-d2a58f8ebd80",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds factual information about database accessibility and prior work (C6, C15, C17) SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these accessibility claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:51:52.314132Z"
+    }
+  ]
+}

@@ -1,0 +1,2010 @@
+{
+  "submission": {
+    "id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:46:13.839663Z",
+    "updated_at": "2025-11-21T17:46:13.839663Z"
+  },
+  "content": [
+    {
+      "id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "content_type": "manuscript",
+      "content_text": "# Reliable protein\u2013protein docking with AlphaFold, Rosetta, and replica exchange\n\n## Authors\n\n- Ameya Harmalkar<sup>1</sup> ([ORCID: 0000-0001-6863-9634](https://orcid.org/0000-0001-6863-9634))\n- Sergey Lyskov<sup>1</sup> ([ORCID: 0000-0001-6380-6712](https://orcid.org/0000-0001-6380-6712))\n- Jeffrey J Gray<sup>1</sup> ([ORCID: 0000-0001-6380-2324](https://orcid.org/0000-0001-6380-2324)) \u2020\n\n### Affiliations\n\n1. Department of Chemical and Biomolecular Engineering, The Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n2. Program in Molecular Biophysics, The Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n3. Data Science and AI Institute, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite the recent breakthrough of AlphaFold (AF) in the field of protein sequence-to-structure prediction, modeling protein interfaces and predicting protein complex structures remains challenging, especially when there is a significant conformational change in one or both binding partners. Prior studies have demonstrated that AF-multimer (AFm) can predict accurate protein complexes in only up to 43% of cases (Yin et al., 2022). In this work, we combine AF as a structural template generator with a physics-based replica exchange docking algorithm to better sample conformational changes. Using a curated collection of 254 available protein targets with both unbound and bound structures, we first demonstrate that AF confidence measures (pLDDT) can be repurposed for estimating protein flexibility and docking accuracy for multimers. We incorporate these metrics within our ReplicaDock 2.0 protocol to complete a robust in silico pipeline for accurate protein complex structure prediction. AlphaRED (AlphaFold-initiated Replica Exchange Docking) successfully docks failed AF predictions, including 97 failure cases in Docking Benchmark Set 5.5. AlphaRED generates CAPRI acceptable-quality or better predictions for 63% of benchmark targets. Further, on a subset of antigen-antibody targets, which is challenging for AFm (20% success rate), AlphaRED demonstrates a success rate of 43%. This new strategy demonstrates the success possible by integrating deep learning-based architectures trained on evolutionary information with physics-based enhanced sampling. The pipeline is available at https://github.com/Graylab/AlphaRED.\n\n## Introduction\n\nIn silico protein structure prediction, that is, sequence to structure, tackles one of the core questions in structural biology. AlphaFold (AF) (Jumper et al., 2021) has brought a paradigm shift in the field of structural biology by intertwining deep learning (DL) tools with evolutionary data to predict single-chain structures with high accuracy. Further, AlphaFold-multimer (AFm) (Evans et al., 2021) and related work Baek et al., 2021; Tsaban et al., 2022 have demonstrated the utility of AF to predict protein complexes. The association of proteins to form transient or stable protein complexes often involves binding-induced conformational changes. Capturing conformational dynamics of protein\u2013protein interactions is another grand challenge in structural biology, and many physics-based (computational) approaches have been used to tackle this challenge (Harmalkar et al., 2022). Computational tools have sampled the uncharted landscape of protein\u2013protein interactions by emulating kinetic mechanisms such as conformer selection and induced-fit and identifying energetically stable binding states. However, these tools are hampered by the accuracy of the energy functions and the limitations of time and length scales for sampling. In fact, AFm predicted accurate protein complexes in only 43% of cases in one recent study (Yin et al., 2022). As the development of DL-based tools have unveiled ground-breaking performance in structure prediction, integration of a biophysical context has potential to strengthen prediction of protein assemblies and binding pathways.\n\nBlind docking challenges prior to AF, particularly CASP13-CAPRI and CASP14-CAPRI experiments, reported high-quality predictions for only 8% targets (Lensink et al., 2019, Lensink et al., 2021). With the availability of AF and AFm, the CASP15-CAPRI experiment stood as its first blind assessment for the prediction of protein complexes and higher-order assemblies (Lensink et al., 2023). In this round, the docking community relied on AF and AFm for single-structure or complex predictions. Given that AF generates a static three-dimensional structure, it has been unclear whether conformational diversity could be captured by AF. In other terms, given a protein sequence, could AF generate ensembles of structures that include both unbound and bound conformations? Additionally, can AF reveal intrinsic conformational heterogeneity?\n\nTo diversify model complexes generated with AFm in the recent round of CASP15, predictors employed tuning parameters such as dropout (Wallner, 2022), higher recycles on inference (Mirdita et al., 2022), or modulating the MSA inputs (Del Alamo et al., 2022, Wayment-Steele et al., 2022) with the amino acid sequence. While these approaches demonstrated the ability to generate broader conformational ensembles, AFm performance still worsens with a higher degree of conformational flexibility between unbound and bound targets (Yin et al., 2022). Prediction accuracies especially deteriorated in bound complex regions involving loop motions, concerted motions between domains, rearrangement of secondary structures, or hinge-like domain motions, that is, large-scale conformational changes, which are also challenging for conventional docking methods (Salda\u00f1o et al., 2022).\n\nUnlike state-of-the-art docking algorithms, AF\u2019s output models incorporate a residue-specific estimate of prediction accuracy. This suggests a few interesting questions: (1) Do the residue-specific estimates from AF/AFm relate to potential metrics demonstrating conformational flexibility? (2) Can AF/AFm metrics deduce information about docking accuracy? (3) Can we create a docking pipeline for in silico complex structure prediction incorporating AFm to convert sequence to structure to docked complexes?\n\nRecent work in physics-based docking approaches tested induced-fit docking (Harmalkar et al., 2022), large ensembles (Marze et al., 2018), and fast Fourier transforms with improved energy functions (Yan et al., 2020) to capture conformational changes and better dock protein structures. Coupling temperature replica exchange with induced-fit docking, ReplicaDock 2.0 (Harmalkar et al., 2022) achieved successful local docking predictions on 80% of rigid (unbound-to-bound root mean square deviation, RMSDUB< 1.1 \u00c5) and 61% medium (1.1 \u2264 RMSDUB <2.2\u00c5) targets in the Docking Benchmark 5.0 set (Vreven et al., 2015). However, like most state-of-the-art physics-based docking methods, ReplicaDock 2.0 performance was limited for highly flexible targets: 33% success rate on targets with RMSDUB \u2265 2.2\u00c5. Promisingly, by focusing backbone moves on known mobile residues (i.e., residues that exhibit conformational changes upon binding), ReplicaDock 2.0 sampling substantially improved the docking accuracy. But the flexible residues must first, somehow, be identified. Additionally, physics-based docking is quite slow (6\u20138 h on a 24-core CPU cluster) compared to recent DL-based docking tools (0.1\u201310 min on a single NVIDIA GPU). However, docking-specific DL tools such as EquiDock (Ganea et al., 2021) and dMASIF (Sverrisson et al., 2020) do not allow for protein flexibility, and recent tools like GeoDock (Chu et al., 2023) and DockGPT McPartlon and Xu, 2023 have very limited backbone flexibility. Further, all of these DL docking tools have low success rates on unbound docking targets such as those in Docking Benchmark 5.5 (Chu et al., 2023).\n\nIn this work, we combine the features of a top DL approach (AFm; Evans et al., 2021) with physics-based docking schemes (ReplicaDock 2.0; Harmalkar et al., 2022) to systematically dock protein interfaces. The overarching goal is to create a one-stop, fully automated pipeline for simple, reproducible, and accurate modeling of protein complexes. We investigate the aforementioned questions and create a protocol to resolve AFm failures and capture binding-induced conformational changes. We first assess the utility of AFm confidence metrics to detect conformational flexibility and binding site confidence. Next, we feed these metrics and the AFm-generated structural template to ReplicaDock 2.0, creating a pipeline we call AlphaRED (AlphaFold-initiated Replica Exchange Docking). We test AlphaRED\u2019s docking accuracy on a curated set of benchmark targets of bound and unbound protein structures of varying levels of binding-induced conformational change, including antibody\u2013antigen interfaces, which additionally challenge AF2m due to the lack of evolutionary information across the interface (Yin and Pierce, 2023; Ruffolo et al., 2023). In summary, we to assess the promise of combining the best of DL and biophysical approaches for predicting challenging protein complexes.\n\n## Results\n\n### Dataset curation\n\nWe curated a dataset for conformational flexibility from the Docking Benchmark Set 5.5 (DB5.5) (Vreven et al., 2015), which comprises experimentally characterized (X-ray or cryo-EM) structures of bound protein complexes and their corresponding unbound protein subunits. Each protein target (with unbound and bound structures) is classified based on their unbound-to-bound root-mean-square-deviation (RMSDUB) as rigid (RMSDUB \u2264 1.2 \u00c5), medium (1.2 \u00c5 < RMSDUB \u2264 2.2 \u00c5), or difficult (RMSDUB \u2265 2.2 \u00c5). Furthermore, due to the poor performance of AF and other predictor groups in predicting antibody\u2013antigen targets in the recent CASP15-CAPRI round CASP15, 2022, we identified a subset comprising only antibody\u2013antigen complexes (including single-domain antibodies or nanobodies) extracting all 67 antibody\u2013antigen structures from the DB5.5 (Guest et al., 2020, Vreven et al., 2015) set. The comprehensive dataset includes 254 protein targets exhibiting binding-induced conformational changes.\n\nFor each protein target, we extracted the amino acid sequences from the bound structure and predicted a corresponding three-dimensional complex structure with the ColabFold implementation (https://github.com/YoshitakaMo/localcolabfold; Moriwaki, 2023) of the AlphaFold multimer v2.3.0 (released in March 2023) for the 254 benchmark targets from DB5.5. Being trained on experimentally characterized structures deposited in the PDB, AF is expected to produce models analogous to the PDB structures. Since most of the benchmark targets in DB5.5 were included in AF training, there would be training bias associated with their predictions (i.e., our measured success rates are an upper bound). However, since both unbound and bound structures exist for the benchmark targets in the PDB, we first investigated whether AFm exhibits any bias toward either unbound or bound forms for the same protein sequence. Appendix 1\u2014figure 1 compares the C\u03b1-RMSD of all protein partners (calculated on a per-chain basis) of the AFm predicted complex structures from the bound (B) and unbound (U) crystal structures on a log-log scale (a few AFm predicted models were 20 \u00c5 apart from both bound and unbound structures). As evident from Supplementary Fig.S1A, the protein partners from the AFm top-ranked model deviate from both unbound and bound forms and skew more often toward the bound state. Antibody\u2013antigen targets further demonstrate a similar trend, however with fewer targets predicted within sub-angstrom accuracy to the bound form (29.7% for Ab-Ag targets as opposed to 41% for DB5.5). We also calculated the TM-scores (Zhang and Skolnick, 2004) of the AFm predicted complex structures with respect to the bound and the unbound crystal structures (Appendix 1\u2014figure 2). As TM-scores reflect a global comparison between structures and are less sensitive to local structural deviations, no strong conclusions could be derived. This is in agreement with our intuition that since both unbound and bound states of proteins will share a similar fold, and AF can predict structures with high TM-scores in most cases, gauging the conformational deviations with TM-scores would be inconclusive.\n\n### AlphaFold pLDDT provides a predictive confidence measure for backbone flexibility\n\nAF employs multiple sequence alignments with a multi-track attention-based architecture to predict three-dimensional structures of proteins and complexes. Further, for each structural prediction, it provides a residue-level confidence measure: the predicted local-distance difference test (pLDDT), estimating the agreement between predicted model to an experimental structure based on the C\u03b1 LDDT test (\u2018Methods\u2019). Tunyasuvunakool et al. analyzed pLDDT confidence measures for the human proteome demonstrating the correlation between lower pLDDT scores with higher disordered regions in protein structures (Tunyasuvunakool et al., 2021). Building on this observation, we evaluated whether there is a correlation between AF pLDDT confidence metric and the experimental metrics of conformational change between unbound and bound structures. In this regard, we compared the computational (AF-pLDDT) and experimental (per-residue RMSD and LDDT) metrics against each other.\n\nAs a reference, we first superimposed the unbound partners over the bound structures and calculated residue-wise C\u03b1 deviations to determine the per-residue RMSDBU values. LDDTBU was measured by calculating the local distance differences in the unbound structure relative to the bound form. These metrics capture the extent of motion in the unbound\u2013bound transitions for each of the protein targets. Next, we compared the per-residue pLDDT score from AFm predicted monomer models with the experimental metrics. Figure 1A and B shows the results for two representative protein targets: kinase-associated phosphatase in complex with phospho-CDK2 (1FQ1; Song et al., 2001) and TGF-\u03b2 receptor with FKBP12 domain (1B6C; Huse et al., 1999). In both cases, pLDDT confidence scores correlate with the experimental measurements of binding: pLDDT decreases as LDDTBU decreases and RMSDBU increases. This is further illustrated with the AF2 predicted structures of the two targets superimposed over the bound structures (Figure 1C). In regions of low confidence/pLDDT (highlighted in red), the prediction is inaccurate, but higher confidence/pLDDT regions (highlighted in blue) have high accuracy of prediction with the bound form. The results for the benchmark set (Figure 1\u2014figure supplements 1 and 2) show similar trends for most targets. The pLDDT, thus, can suggest protein residues that move upon binding.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig1-v1.jpg)\n\n**Figure 1.:** (A) AlphaFold pLDDT plotted against LDDTBU. LDDTBU is calculated by comparing the unbound and bound environment for each residue. High scores correlate with high pLDDT (red). (B) Per-residue root-mean-square-deviation between unbound\u2013bound structures (Per-Residue RMSDBU) vs. AlphaFold pLDDT for two example complex structures. Higher RMSDs correlate with lower pLDDT. (C) Structures for two targets (PDB ID: 1B6C and 1FQ1) with the experimental bound form (gray) and the AlphaFold-multimer predicted model (red\u2013white\u2013blue in A and B). In both cases, the residues with low pLDDT scores (red) are the residues with incorrect conformation and more conformational change.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig1-figsupp2-v1.jpg)\n\n### Interface-pLDDT correlates with DockQ and discriminates poorly docked structures\n\nWhen the prediction accuracy is lower, it is often evident from lower confidence metrics (such as average pLDDT or PAE). However, for AFm complex predictions, the confidence metrics of the overall prediction do not correlate with the accuracy of the docked prediction, that is, even if the complex exhibits higher confidence, the docking interfaces could be incorrect. Figure 2 shows a few examples of failed AFm predictions including rigid (2FJU [Jezyk et al., 2006]), medium (5VNW [McMahon et al., 2018]), and flexible targets (1IB1 [Vetter et al., 1999], 2FJG [Fuh et al., 2006]). In all the examples, the AFm model (highlighted in red to blue based on residue-wise pLDDT) is superimposed over an individual binding partner, and the bound structure is highlighted in pale green. AFm models predict the individual subunits (protein partners) accurately in almost all scenarios; however, the docking orientation is incorrect.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig2-v1.jpg)\n\n**Figure 2.:** Four targets with poor DockQ scores and high interface root mean square deviations (RMSDs): (i) activated Rac1 bound to phospholipase C\u03b22 (2FJU) \u2013 rigid target (RMSDUB = 1.04 \u00c5); (ii) nanobody bound to serum albumin (5VNW) \u2013 medium target (RMSDUB = 1.49 \u00c5); (iii) 14-3-3 zeta Isoform:serotonin N-acetyltransferase complex (1IB1) \u2013 difficult target (RMSDUB = 2.09 \u00c5)l and (iv) G6 antibody in complex with the VEGF antigen \u2013 difficult target (RMSDUB = 2.51 \u00c5). Bound structure in green and AlphaFold prediction colored by residue-wise pLDDT in red \u2192 blue (low confidence \u2192 high confidence).\n\nWe investigated whether any of the AF predictive metrics could be repurposed for distinguishing native-like binding sites from non-native ones. That is, can one utilize pLDDT or PAE from AFm models to determine whether the predicted docked complex has the accurate binding orientation? Thus, we evaluated accuracy with the DockQ score, the standard metric for docking model quality (Basu and Wallner, 2016). DockQ \u2208[0,1] combines interface RMSD (Irms), fraction of native-like contacts ($f_{nat}$), and ligand-RMSD (Lrms). DockQ scores above 0.23 correspond to models with a CAPRI quality of \u2018acceptable\u2019 or higher. As an acceptable quality target implies docked decoys are in the near-native binding region, we chose a binary classification of success with a threshold of DockQ = 0.23. We then tested how well DockQ correlated with several AFm-derived metrics: (1) interface residues: the number of interface residues (atoms of residues on one partner within 8 \u00c5 from an atom on another partner); (2) interface contacts: the number of interface contacts between the residues on the interface (C\u03b2 atoms within 5 \u00c5); (3) average pLDDT, determined by averaging over the per-residue LDDT score of the entire protein complex; and (4) interface-pLDDT, determined by averaging the per-residue LDDT score only over the predicted interfacial residues (as identified in case a).\n\nFigure 3A shows the classification accuracy of each of these metrics with a receiver-operating characteristics curve. The interface-pLDDT metric stands out with a higher true positive rate (TPR) with an area under curve (AUC) of 0.86. With interface-pLDDT as a discriminating metric, we tested multiple thresholds to estimate the optimum cutoff for distinguishing near-native structures (defined as an interface-RMSD <4 \u00c5) from the predictions. Figure 3B summarizes the performance with a confusion matrix for the chosen interface-pLDDT cutoff of 85. 79% of the targets are classified accurately with a precision of 75%, thereby validating the utility of interface-pLDDT as a discriminating metric to rank the docking quality of the AFm complex structure predictions. With newer structure prediction tools such as AlphaFold3 (Abramson et al., 2024) and ESM3 (Hayes et al., 2024) being released, investigating features that could predict flexible residues or interface site would be valuable as this information may guide local docking. This discrimination is also evident in the highlighted interface residues in Figure 2, where the AFm predicted models have lower confidence at predicted interfaces (red). Finally, we show the trend between DockQ scores and interface-pLDDT for each target in Figure 3C. The interface-pLDDT threshold of 85 (dashed line) thus can serve as the AF-derived metric to distinguish acceptable quality docked predictions from incorrect models.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig3-v1.jpg)\n\n**Figure 3.:** (A) Receiver-operator characteristics (ROC) curve as a function of different metrics for the docking dataset (n = 254). Interface residues are defined based on whether atoms of residues on one partner are within 8 \u00c5 from atom/s on another partner. Interface-pLDDT is the average pLDDT of interface residues. Avg-pLDDT corresponds to the average pLDDT across all the residues in the predicted model. Interface contacts and interface residues are the counts of the interface contacts and interface residues respectively. Interface-pLDDT has the highest area under curve (AUC) score of 0.86. (B) Confusion matrix with an interface-pLDDT threshold between labels predicted false (<85) and true (\u226585) and an interface-RMSD threshold between labels actually true (\u22644 \u00c5) and false(>4 \u00c5) actual labels. (C) Interface-pLDDT versus DockQ for all protein targets in the benchmark set. DockQ is calculated from the predicted AlphaFold structure and the experimental bound structure in the PDB. We fit a sigmoidal curve to this available data.\n\n### Docking benchmark targets initiated from AlphaFold models improves performance\n\nWith metrics to identify the flexible regions in the protein and the docking accuracy of generated docked models, we next fused AFm with our docking protocol, ReplicaDock 2.0 (Harmalkar et al., 2022), to build a protocol for (1) improving on incorrect AF docking predictions and producing alternate, near-native binding models and (2) capturing backbone conformational changes with our induced-fit protocol ReplicaDock2.0 (Harmalkar et al., 2022). We named the protocol AlphaRED. AlphaRED uses AFm predicted structures as the primary template, estimates docking accuracy metrics, and initiates global docking or refinement protocols as required.\n\nFigure 4 illustrates this docking pipeline. After AFm predicts a model from the protein sequences, we calculate the interface-pLDDT to determine the docking scheme to follow. If the AFm model is likely to be inaccurate (interface pLDDT < 85), we initiate a global replica exchange docking simulation to explore the protein conformational landscape and identify putative binding sites. On the other hand, if the interface-pLDDT > 85 for the AFm predicted model, the docked complex is likely in the correct binding orientation. This implies the global docking stage of the protocol can be skipped and local docking simulations can be directly initiated from the complex coordinates. Global docking follows an exhaustive, rigid-body search (no backbone moves) between the protein partners to sample putative landscapes in the energy landscape. An unbiased global docking simulation is initiated by randomizing the spatial orientation of protein partners from the input structure. The replica exchange MC routine ReplicaDock 2.0 performs rigid-body rotations (8\u00b0) and translations (4 \u00c5). Sampled decoys are clustered from all replicas (based on energies and structural similarity) and the five top clusters are passed along for flexible local docking.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig4-v1.jpg)\n\n**Figure 4.:** Starting with protein sequences of putative complexes, we obtain predicted models from AlphaFold. Each model is accompanied with predicted local-distance difference test (pLDDT) scores, and based on the interface pLDDT we either initiate global rigid-body docking (interface pLDDT < 85), or flexible local docking refinement(interface pLDDT \u2265 85). For global rigid-body docking, the protein partners are first randomized in Cartesian coordinates and then docked with rigid-backbones using temperature replica exchange docking within ReplicaDock2 (Harmalkar et al., 2022). Decoy structures are clustered based on energy before flexible local docking refinement. In flexible local docking, we use the directed induced-fit strategy in ReplicaDock2. With mobile residues selected by the AlphaFold residue-wise pLDDT scores (threshold of 80). The protocol moves the backbones with Rosetta\u2019s Backrub or Balanced Kinematic Closure movers. Output structures are refined and top-scoring structures are selected based on interface energy.\n\nFor flexible local docking, we perform aggressive backbone moves (backrub + kinematic closure, \u2018Methods\u2019) on candidate encounter complexes (clustered decoys), with fine rigid-body rotations and translations. To narrow conformational sampling, backbone moves are explicitly performed over residues identified as \u2018mobile\u2019 based on the per-residue pLDDT metric (residue pLDDT < 80). Unlike ReplicaDock 2.0 that performs induced-fit over putative interfaces, this approach targets backbone motions over these predicted mobile residues, reducing the sampling space. Local docking decoys are further refined for side-chain packing and minimization to obtain the final docked structures (details in \u2018Methods\u2019). The methodological advancements and Rosetta movers in AlphaRED are further detailed in the \u2018Methods\u2019 section.\n\nWe investigated AlphaRED\u2019s performance on all 254 benchmark targets (Figure 5). Ninety-seven targets under the threshold of interface-pLDDT (\u226485) were passed to the global docking branch. Targets with interface-pLDDT over 85 proceeded directly to local docking refinement. For all benchmark targets, we compared AlphaRED performance of the top-scoring decoys against initial AFm-predicted complex structures. Figure 5A. shows the interface-RMSD (Irms) of the AFm and AlphaRED predictions from the bound structure, respectively. The lower Irms values indicate that AlphaRED improves on existing predictions for almost all targets. For targets where AFm prediction is determined to be a failure (interface-pLDDT \u2264 85, red), AlphaRED demonstrates a vast improvement in Irms for 93 out of 97 targets. Additionally, for targets where AFm prediction is considered acceptable (interface-pLDDT > 85), local docking slightly improves performance. AlphaRED captures lower interface-RMSDs (under 10 \u00c5) for targets where AFm models dock at binding sites \u223c40 \u00c5 away. Figure 5B demonstrates the improvement in recapitulating native-like contacts ($f_{nat}$) with AlphaRED.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig5-v1.jpg)\n\n**Figure 5.:** Targets with interface-predicted local-distance difference test (Interface-pLDDT) \u2264 85 passed first to global rigid docking (red) where targets with interface-pLDDT > 85 proceeded directly to local flexible backbone docking refinement (colored based on their interface-pLDDT scores; in shades of blue). (A) Interface-RMSD from AlphaFold-multimer (AFm) predicted models (y-axis) in comparison with AlphaFold-initiated Replica Exchange Docking (AlphaRED) models (x-axis). (B) Fraction of native-like contacts for models from AFm and AlphaRED, respectively. (a) and (b) indicate two targets (global and local docking) highlighted in Figure 6. (C) Performance on the subset of antigen\u2013antibody targets in DB5.5. (D) DockQ scores for the benchmark targets (DB5) and antibody\u2013antigen complexes.\n\nFigure 5C shows the performance of the subset of antibody\u2013antigen targets in the benchmark. Antibody targets are critical for understanding adaptive immune responses and for the design and engineering of antibody therapeutics (Chungyoun and Gray, 2023). However, antibodies have proven challenging for deep learning methods, especially those reliant on multiple sequence alignments, as each antibody evolves in a different organism, and their antigens evolve on a different timescale altogether. Finally, to evaluate docking success rates, we calculate DockQ for top predictions from AFm and AlphaRED, respectively (Figure 5D). AlphaRED demonstrates a success rate (DockQ > 0.23) of 63% for the benchmark targets. Particularly for Ab-Ag complexes, AFm predicted acceptable or better quality docked structures in only 20% of the 67 targets. In contrast, the AlphaRED pipeline succeeds in 43% of the targets, a significant improvement. Most of the improvements in the success rates are for cases where AFm predictions are worse. For targets with good AFm predictions, AlphaRED refinement results in minimal improvements in docking accuracy.\n\nFigure 6 highlights a global docking (a) and local docking (b) example for targets 2FJU and 5C7X, respectively. Starting from the incorrect AFm prediction (orange), AlphaRED samples over the conformational landscape to identify a top-scoring decoy (blue) with 2.6 \u00c5 Irms from the native (gray). Figure 6b shows the extent of backbone sampling with ReplicaDock 2.0 local docking. The top-scoring decoy (blue) samples backbone closer to the bound form, improving model quality and docking accuracy.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig6-v1.jpg)\n\n**Figure 6.:** Docking performance for targets (a) activated Rac1 bound to phospholipase C\u03b22 (2FJU), and (b) neutralizing anti-human antibody Fab fragment in complex with human GM-CSF (5C7X).Starting from the AlphaFold-multimer (AFm) model (orange), global docking performance on 2FJU shows native-like binding site (gray) and sampled AlphaFold-initiated Replica Exchange Docking (AlphaRED) decoy (blue). For local docking, backbone sampling on mobile residues predicted by residue pLDDT (outlined cartoon) shows AlphaRED decoy (blue) moves backbone toward the bound form (gray).\n\n### Evaluation on blind CASP15 targets\n\nAll results presented thus far may be biased by the fact that these benchmark target structures were used in the AFm training. The ultimate challenge for protein structure prediction protocols is to perform successfully over blind targets such as those in CASP (Critical Assessment of protein Structure Prediction) or CAPRI (Critical Assessment of PRotein Interactions) competitions (Kryshtafovych et al., 2021, Lensink et al., 2021). CASP15 (Summer 2022) provided multiple protein docking targets (CASP15, 2022) that were not included in AFm training, allowing an unbiased evaluation of our AlphaRED pipeline (Lensink et al., 2023). Thus, we tested the protocol on the five heterodimeric nanobody\u2013antigen complexes where most of the groups performed poorly (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig7-v1.jpg)\n\n**Figure 7.:** Docking performance for CASP targets T205-T209. (Top) T205. Interface score (Rosetta Energy Units, REU) vs. Interface root mean square deviation (RMSD) (\u00c5) for candidate docking structures generated by the AlphaRED docking pipeline. (Top-right) The top-scoring AlphaRED model (green-blue) recapitulates the native interface (gray) and has an interface RMSD of 2.84 \u00c5. The distinction between the predicted model with respect to the AFm model (orange) is evident (bottom) Top-scoring AlphaRED predictions for targets T206, T207, T208, and T209, respectively.\n\nSince the nanobody\u2013antigen complexes were CASP targets, we did not have unbound structures, rather only the sequences of individual chains. Therefore, for each target, we employed the AlphaRED strategy as described in Figure 4. All targets predicted with AFm had low interface-pLDDT, thereby demanding global docking. This is unsurprising since the targets were nanobody\u2013antigen targets and their CDRs, particularly CDR H3, are not conserved with a scarcity of co-evolution data with the antigen (Adolf-Bryfogle et al., 2015). For representative target T205, our docking strategy improves the performance drastically (interface RMSD 11.4 \u00c5 for AFm model to 2.84 \u00c5 for AlphaRED) and binds in the correct site. The interface scores versus interface-RMSD plot shows a distinct funnel with low-energy medium-quality structures (Figure 6, top). Since the crystal structures are not yet released, the reference structure here is the top model predicted for each category in CASP15 (Lensink et al., 2023). For all the targets, Figure 6, bottom shows similar improvements for other nanobody\u2013antigen complexes. These cases validate our strategy for blind targets and demonstrate the ability of AlphaRED to serve as a robust pipeline, integrating AF with biophysical attributes to better predict protein complex structures.\n\n## Discussion\n\nAF has dramatically transformed the field of structural biology and is currently the state-of-the-art method to predict protein structures from sequences, not just for monomers but also for complexes and higher assemblies (Bryant et al., 2022). One of the key elements of its success was the ability to mine evolutionary links between amino acids across protein families and determine structural templates. This approach dramatically improves prediction accuracy for monomers as reflected from prior CASP rounds. However, across protein interfaces, the evolutionary constraints can be weak and often skew predictions to inaccurate binding sites. Here, we demonstrated how augmenting the predictions of AF with an energy function-dependent sampling approach reveals better backbone conformational diversity and accurate prediction of protein complex structures. By utilizing the AlphaRED strategy, we show that failure cases in AFm predicted models are improved for all targets (lower Irms for 97 of 254 failed targets) with CAPRI acceptable quality or better models generated for 62% of targets overall (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/94029/elife-94029-fig8-v1.jpg)\n\n**Figure 8.:** Comparison of AFm (hashed) and AlphaRED performance for DB5.5 benchmark set. Success rates evaluated based on DockQ criteria: incorrect: DockQ < 0.23; acceptable: DockQ \u2208(0.23,0.49]; medium: DockQ \u2208(0.49,0.8]; high: DockQ \u22650.8. (A) Classification based on the scale of flexibility: difficult (35 targets); medium (60 targets); rigid (159 targets). (B) Performance on the antibody\u2013antigen complexes (67 targets) and other (non-antibody targets).\n\nFirst, we showed that AF confidence measures can be repurposed for estimating flexibility and docking accuracy. Interface-pLDDT, an average of the per-residue pLDDT only for the interfacial residues, is a robust metric to determine whether AFm predicted binding interfaces are correct. Additionally, thresholds of per-residue pLDDT can ascertain regions of backbone flexibility upon binding. Thus, AFm predicted models can be used as input structures for ReplicaDock 2.0 guiding the choices of global or local sampling and identifying the mobile protein segments. With DL methods for structure prediction and downstream sampling with a physics-based energy function, one can efficiently explore the protein energy landscape as demonstrated with AlphaRED\u2019s performance on DB5.5. Finally, we evaluated recent CASP15 targets to investigate the extrapolation of this strategy over blind protein targets. CASP15 targets were absent from the training routine of AF and served as blind challenges to determine the efficacy of the protocol. With AlphaRED, we obtained DockQ scores over 0.23 for all five targets, with medium-quality models (DockQ > 0.49) for targets T205, T207, and T208, respectively. AFSample, a top-performing group in CASP15, employed stochastic perturbation with dropout and increased sampling to obtain medium- and high-quality models for these targets. However, AFSample requires GPU simulations to produce \u223c240\u00d7 models with compute time \u223c1000\u00d7 more than the baseline AFm (Wallner, 2022). On other hand, we utilized ColabFold (Mirdita et al., 2022) to generate 1\u20135 structures for our docking routine with the baseline version. As opposed to a couple of days on GPU (each GPU node contains up to 48 cores) utilized by AFSample, our docking routine fused with ColabFold uses 5\u20137 h on our CPU cluster (runs on 1 node, with 24 cores, approximating to \u223c100 h of CPU-hours per target). The AlphaRED docking strategy demonstrates a new and better way to predict protein complex structures within feasible compute times.\n\nThis work is particularly impactful for its success rate on antibody\u2013antigen targets. DL promises accurate design and optimization of antibody therapeutics (Chungyoun and Gray, 2023), but a lack of fast and accurate docking methods for antibodies prevent high-throughput computational screening. Additionally, this work is impactful because by integrating a physics-based method for refinement, the pipeline can potentially handle post-translationally modified proteins or non-canonical residue types that are not defined in ML approaches like AF.\n\nWith this work, we have built upon the recent advances in structural biology to develop a robust tool for protein docking. We fused DL tools with conventional physics-based sampling tools to develop a pipeline that extracts the best outcomes of each methodology, where DL methods generate accurate, static structures, and physics-based sampling provides diversity and better discrimination. The protein conformational landscape is vast and DL tools such as AF provide a snapshot of relevant local minima that can aid in narrowing down the degrees of freedom in sampling (Roney and Ovchinnikov, 2022). With the paradigm shift in computational structural biology toward DL approaches, integrating physics within these models has tremendous potential toward understanding protein dynamics, modulating protein\u2013protein interactions, and downstream applications to protein design.\n\n## Methods\n\n### Prediction of structures\n\nFor each target in the DB5.5 dataset, we first extracted the corresponding FASTA sequence for the bound complex and then obtained AF predicted models with the ColabFold v1.5.2 (Ovchinnikov, 2021) implementation of AF (Jumper et al., 2021) and AlphaFold-multimer (v.2.3.0) (Evans et al., 2021). Each prediction run was performed without templates, with automatic alignments and the default number of recycles to generate five relaxed predictions. Each AF prediction includes a per-residue pLDDT (predicted LDDT) measurement (Mariani et al., 2013), a confidence measure in prediction accuracy, and predicted template alignment (pTM) score (Zhang and Skolnick, 2004). The models were structurally compared with the unbound and bound structures (deposited in the PDB) for measuring flexibility, similarity, and accuracy of docking prediction.\n\n### Metrics for backbone flexibility: RMSD and LDDT\n\nStructures of proteins deposited in the PDB (Berman et al., 2000) provide a static representation of the native state of the protein. However, structural diversity has been captured by experimental techniques to identify different states of a protein in diverse physiological or chemical states, for example, catalysis (Kingsley and Lill, 2015), transport (Gora et al., 2013), and ligand binding (Gunasekaran and Nussinov, 2007). For protein docking challenges in particular, conformational changes are binding-induced, leading to structural differences between unbound and bound structures of protein targets.\n\nTo measure the conformational change in protein structures, we calculated two metrics: C\u03b1 RMSD and LDDT (Mariani et al., 2013). To get a detailed representation of the intrinsic motion of a protein, we calculated RMSDs at a residue level, that is, per-residue C\u03b1 RMSD for each residue of a protein target. The sequences + structures of unbound and bound proteins were aligned and the RMSDs were calculated for the aligned residues. The total sequence lengths were also matched and lingering end-termini residues were trimmed to ensure structural and sequential similarity.\n\nLDDT is a superimposition-free score that estimates local distance differences in a model relative to a reference structure (Mariani et al., 2013). Unlike the global distance test (Zemla, 2003) score based on rigid-body superimposition, the LDDT score measures the conserved local interactions in the protein model to the reference. For every residue, it computes the distance between all pair of atoms $D(i,j)$ in both the model and the reference structure (bound) within a threshold (defined as the inclusion radius, generally set to 10 \u00c5). For each pairwise distance in both distance vectors, if the distance is within the threshold, the distance is considered conserved and the fraction of conserved distances is calculated. The final LDDT score is the average of this fraction for the tolerances of 0.5, 1, 2, and 4 \u00c5.\n\nFor a protein structure with $N$ number of residues, the overall LDDT score can be given as follows:\n\n$$\ndists_to_score(i,j)\n$$\n\nwhere norm is the normalization factor\n\n$$\nnorm=\\frac{1}{\\sumi,jdists_to_score(i,j)}\n$$\n\nand $score(i,j)$ is the LDDT score for the residue $i$ with respect to every other residue $j$\n\n$$\nscore(i,j)=0.25\u22c5{\u00a0bool[\u0394D(i,j)<0.5]\u00a0+bool[\u0394D(i,j)<1.0]\u00a0+bool[\u0394D(i,j)<2.0]\u00a0+bool[\u0394D(i,j)<4.0]\u00a0}\n$$\n\n$\u0394D(i,j)$ denotes the absolute difference between $D_{true}(i,j)$ and $D_{predicted}(i,j)$ calculated as follows:\n\n$$\n\u0394D(i,j)=|D_{true}(i,j)\u2212D_{predicted}(i,j)|\n$$\n\nwhere $D_{true}(i,j)$ and $D_{predicted}(i,j)$ denote the distances between the C\u03b1 coordinates of the ith residue and the jth residue for the true (reference) and predicted (model) structures, respectively. Let $x_{i}^{k}$ and $y_{i}^{k}$ represent the kth coordinate of the C\u03b1 atom in the ith residue in the reference (true) structure and predicted structure respectively, such that\n\n$$\nD_{true}(i,j)=\\sqrt{\\sumk=13(x_{i}^{k}\u2212x_{j}^{k})^{2}}\u00a0andD_{predicted}(i,j)=\\sqrt{\\sumk=13(y_{i}^{k}\u2212y_{j}^{k})^{2}}\n$$\n\nFinally, the distances to score ($dists_to_score(i,j)$) are computed as those pairwise distances within an inclusion radius (cutoff = 10 \u00c5). $m_{i}^{j}$ is the mask value (1 or 0) indicating if the jth coordinate of the C\u03b1 atom in the ith residue exists in the true structure.\n\n$$\ndist_{_}to_score(i,j)={1ifD_{true}(i,j)<cutoff\u22c5m_{i}^{j}\u22c5m_{j}^{i}\u22c5(1\u2212\\delta_{j}N)0otherwise\n$$\n\nwhere $\\delta=KroneckerDelta$.\n\nThe advantage of the LDDT measurement lies in the estimation of relative domain orientations in multi-domain proteins or concerted motions (e.g., hinge-like moves in closed and apo proteins). In these cases, the RMSDs would be relatively high for all residues in the mobile domain; however, since the inter-residue distances within the domains are conserved, they would provide an inaccurate depiction of flexibility for the protein. Estimating both RMSDs and LDDT scores allows us to obtain a nuanced perspective of flexibility during protein association based on experimental structures.\n\n### Developing a pipeline for protein docking\n\nUsing AlphaFold2 as a structural module, we built a pipeline for protein\u2013protein docking to better predict protein complex structures with relatively higher accuracy. As illustrated in Figure 4, given a sequence of a protein complex, we use the ColabFold implementation of AF2-multimer to obtain a predictive template. An interface-pLDDT filter determines the accuracy of the docking prediction of the top-ranked model from AFm. If the interface-pLDDT \u2264 85, the prediction has lower confidence in the docking orientation, and the protocol initiates a rigid, global docking search with ReplicaDock 2.0. Implementation of ReplicaDock 2.0 (global docking) is similar to the version reported in prior work (Harmalkar et al., 2022). Each simulation initiates eight trajectories across three temperature replicas with inverse temperatures set to 1.5\u20131 kcal\u20131.mol, 3\u20131 kcal-1.mol, and 5\u20131 kcal\u20131.mol, respectively. Across each replica within each trajectory, rigid-body perturbations (4 \u00c5 translations and 8\u00b0 rotations) are performed for an exhaustive global search. Next, we perform an energy-based clustering of the models to obtain diverse and energetically favorable clusters. Five cluster centers (decoys) are selected and passed to the flexible local docking stage to sample conformational changes.\n\nOn the other hand, if the interface-pLDDT > 85, the binding orientation has higher confidence and the protocol directly performs a flexible local docking simulation skipping the rigid, global docking. In this stage, we perform smaller rigid-body perturbations (1 \u00c5 translations and 3\u00b0 rotations) and aggressive backbone moves using a set of backbone and side-chain movers: Rosetta Backrub (Smith and Kortemme, 2008), Balanced Kinematic Closure (BalancedKIC), and Sidechain. The sampling weights are biased such that backbone and side-chain movers are weighted higher than rigid-body moves (3:1 weightage for backbone:rigid-body moves). We perform directed backbone sampling by focusing on predicted mobile residues (per-residue pLDDT < 80). This is automated with the BFactorResidueSelector that selects contiguous sets of residues below the specified pLDDT threshold.\n\nHowever, unlike the induced-fit strategy in ReplicaDock (Harmalkar et al., 2022), we perform backbone sampling directed only on the mobile residues (with per-residue pLDDT < 80) identified from the AF model. We automate it using the BFactorResidueSelector to select contiguous sets of residues below the specified pLDDT threshold in the prior section. This residue subset is passed along to the backbone movers to sample backbone moves along with small rigid-body moves. Sampled decoyed are then refined, that is, undergo side-chain packing and minimization, to output docked decoys. The best ranked decoys based on interface scores are then identified as the top-scoring structures.\n",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Qiang Cui, Boston University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.94029.3.sa0](https://doi.org/10.7554/eLife.94029.3.sa0)\n\nThe authors report how a previously published method, ReplicaDock, can be used to improve predictions from AlphaFold-multimer (AFm) for protein docking studies. The level of improvement is modest for cases where AFm is successful; for cases where AFm is not as successful, the improvement is more significant, although the accuracy of prediction is also notably lower. The evidence for the ReplicaDock approach being more predictive than AFm is particularly convincing for the antibody\u2013antigen test case. Overall, the study makes a valuable contribution by combining data- and physics-driven approaches.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94029.3.sa1](https://doi.org/10.7554/eLife.94029.3.sa1)\n\nSummary:\n\nThe authors wanted to use AlphaFold-multimer (AFm) predictions to reduce the challenge of physics-based protein-protein docking.\n\nStrengths:\n\nThey found two features of AFm predictions that are very useful. (1) pLLDT is predictive of flexible residues, which they could target for conformational sampling during docking; (2) the interface-pLLDT score is predictive of the quality of AFm predictions, which allows the authors to decide whether to do local or global docking.\n\nWeaknesses:\n\n(1) As admitted by the authors, the AFm predictions for the main dataset are undoubtedly biased because these structures were used for AFm training. Could the authors find a way to assess the extent of this bias?\n\n(2) For the CASP15 targets where this bias is absent, the presentation was very brief. In particular, I'm interested in seeing how AFm helped with the docking? They may even want to do a direct comparison with docking results w/o the help of AFm.\n\nComments on revisions:\n\nThis revision has addressed my previous comments.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94029.3.sa2](https://doi.org/10.7554/eLife.94029.3.sa2)\n\nSummary:\n\nIn short, this paper uses a previously published method, ReplicaDock to improve predictions from AlphaFold-multimer. The method generated about 25% more acceptable predictions than AFm, but more important is improving an Antibody-antigen set, where more than 50% of the models become improved.\n\nWhen looking at the results in more detail, it is clear that for the models where the AFm models are good, the improvement is modest (or not at all). See, for instance, the blue dots in Fig 6. However, in the cases where AFm fails, the improvement is substantial (red dots in Fig 6), but no models reach a very high accuracy (Fnat ~0.5 compared to 0.8 for the good AFm models). So the paper could be summarized by claiming, \"We apply ReplicaDock when AFm fails\", instead of trying to sell the paper as an utterly novel pipeline. I must also say that I am surprised by the excellent performance of ReplicaDock - it seems to be a significant step ahead of other (not AlphaFold) docking methods, and from reading the original paper, that was unclear. Having a better benchmark of it alone (without AFm) would be very interesting.\n\nThese results also highlight several questions I try to describe in the weakness section below. In short, they boil down to the fact that the authors must show how good/bad ReplicaDock is at all targets not only the ones where AFm fails. In addition, I have several more technical comments.\n\nStrengths:\n\nImpressive increase in performance on AB-AG set (although a small set and no proteins).\n\nWeaknesses:\n\nThe presentation is a bit hard to follow. The authors mix several measures (Fnat, iRMS, RMSDbound, etc). In addition, it is not always clear what is shown. For instance, in Fig 1, is the RMSD calculated for a single chain or the entire protein? I would suggest that the author replace all these measures with two: TM-score when evaluating the quality of a single chain and DockQ when evaluating the results for docking. This would provide a clearer picture of the performance. This applies to most figures and tables. For instance, Fig 9 could be shown as a distribution of DockQ scores.\n\nThe improvements on the models where AFm is good are minimal (if at all), and it is unclear how global docking would perform on these targets, nor exactly why the plDDT<0.85 cutoff was chosen. To better understand the performance of ReplicaDock, the authors should therefore (i) run global and local docking on all targets and report the results, (ii) report the results if AlphaFold (not multimer) models of the chains were used as input to ReplicaDock (I would assume it is similar). These models can be downloaded from AlphaFoldDB.\n\nFurther, it would be interesting to see if ReplicaDock could be combined with AFsample (or any other model to generate structural diversity) to improve performance further.\n\nThe estimates of computing costs for the AFsample are incorrect (check what is presented in their paper). What are the computational costs for RepliaDock global docking?\n\nIt is unclear strictly what sequences were used as input to the modelling. The authors should use full-length UniProt sequences if that were not done.\n\nThe antibody-antigen dataset is small. It could easily be expanded to thousands of proteins. It would be interesting to know the performance of ReplicaDock on a more extensive set of Antibodies and nanobodies.\n\nUsing pLDDT on the interface region to identify good/bas models is likely suboptimal. It was acceptable (as a part of the score) for AlphaFold-2.0 (monomer), but AFm behaves differently. Here, AFm provides a direct score to evaluate the quality of the interaction (ipTM or Ranking Confidence). The authors should use these to separate good/bad models (for global/local docking), or at least show that these scores are less good than the one they used.\n\nComments on revisions:\n\nThe inclusion of the DockQ improved the paper. No further comments.\n",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "92c748b8-e325-4b6e-aa54-d8079e8adde4",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C1",
+      "claim": "AlphaFold-multimer (AFm) can predict accurate protein complexes in only up to 43% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have demonstrated that AF-multimer (AFm) can predict accurate protein complexes in only up to 43% of cases (Yin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yin et al., 2022, which provides the 43% success rate statistic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "62a32003-d025-4728-b0a0-fb08d2b9db56",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C2",
+      "claim": "AlphaFold confidence measures (pLDDT) can be repurposed for estimating protein flexibility and docking accuracy for multimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a curated collection of 254 available protein targets with both unbound and bound structures, we first demonstrate that AF confidence measures (pLDDT) can be repurposed for estimating protein flexibility and docking accuracy for multimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes demonstrating this capability using a dataset of 254 protein targets with experimental structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "937820be-0d25-41a3-8221-b2e5da1eef5e",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C3",
+      "claim": "AlphaRED successfully docks failed AF predictions, including 97 failure cases in Docking Benchmark Set 5.5.",
+      "claim_type": "EXPLICIT",
+      "source": "AlphaRED (AlphaFold-initiated Replica Exchange Docking) successfully docks failed AF predictions, including 97 failure cases in Docking Benchmark Set 5.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental results on the Docking Benchmark Set 5.5 dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "7fe45bb2-ed8c-42be-b13c-65f4fe143cfc",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C4",
+      "claim": "AlphaRED generates CAPRI acceptable-quality or better predictions for 63% of benchmark targets.",
+      "claim_type": "EXPLICIT",
+      "source": "AlphaRED generates CAPRI acceptable-quality or better predictions for 63% of benchmark targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This success rate is reported based on experimental evaluation of AlphaRED on benchmark targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "d4f58acf-d2c7-4071-b07b-db903a893008",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C5",
+      "claim": "On a subset of antigen-antibody targets, AlphaRED demonstrates a success rate of 43%, compared to AFm's 20% success rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, on a subset of antigen-antibody targets, which is challenging for AFm (20% success rate), AlphaRED demonstrates a success rate of 43%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative performance data on antigen-antibody targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "dbe21117-4fcf-403d-8ec3-38ff95298f27",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C6",
+      "claim": "AlphaFold (AF) has brought a paradigm shift in structural biology by intertwining deep learning tools with evolutionary data to predict single-chain structures with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "AlphaFold (AF) (Jumper et al., 2021) has brought a paradigm shift in the field of structural biology by intertwining deep learning (DL) tools with evolutionary data to predict single-chain structures with high accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the original AlphaFold paper (Jumper et al., 2021) and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "d014cac2-3ef8-46a1-8f69-60204ff0450d",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C7",
+      "claim": "AlphaFold-multimer (AFm) and related work have demonstrated the utility of AF to predict protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, AlphaFold-multimer (AFm) (Evans et al., 2021) and related work Baek et al., 2021; Tsaban et al., 2022 have demonstrated the utility of AF to predict protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published work on AlphaFold-multimer and related methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "28d8dfe8-4a50-4985-a7ca-d4f3bbc75c25",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C8",
+      "claim": "The association of proteins to form transient or stable protein complexes often involves binding-induced conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of proteins to form transient or stable protein complexes often involves binding-induced conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about protein-protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "1d261fb5-3f59-4d85-ad3b-c9f62e37dfa3",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C9",
+      "claim": "Blind docking challenges prior to AF, particularly CASP13-CAPRI and CASP14-CAPRI experiments, reported high-quality predictions for only 8% targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Blind docking challenges prior to AF, particularly CASP13-CAPRI and CASP14-CAPRI experiments, reported high-quality predictions for only 8% targets (Lensink et al., 2019, Lensink et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to CASP-CAPRI assessment papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "2286c4e3-6262-4758-98e4-477d95844600",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C10",
+      "claim": "AFm performance worsens with a higher degree of conformational flexibility between unbound and bound targets.",
+      "claim_type": "EXPLICIT",
+      "source": "While these approaches demonstrated the ability to generate broader conformational ensembles, AFm performance still worsens with a higher degree of conformational flexibility between unbound and bound targets (Yin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yin et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "b8ba4f8a-0f93-49f4-999b-faaf7d722fa0",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C11",
+      "claim": "Prediction accuracies especially deteriorated in bound complex regions involving loop motions, concerted motions between domains, rearrangement of secondary structures, or hinge-like domain motions.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction accuracies especially deteriorated in bound complex regions involving loop motions, concerted motions between domains, rearrangement of secondary structures, or hinge-like domain motions, that is, large-scale conformational changes, which are also challenging for conventional docking methods (Salda\u00f1o et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Salda\u00f1o et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "9091037b-764c-42b0-a932-822b9323d7ef",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C12",
+      "claim": "ReplicaDock 2.0 achieved successful local docking predictions on 80% of rigid targets and 61% medium targets in the Docking Benchmark 5.0 set.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupling temperature replica exchange with induced-fit docking, ReplicaDock 2.0 (Harmalkar et al., 2022) achieved successful local docking predictions on 80% of rigid (unbound-to-bound root mean square deviation, RMSDUB< 1.1 \u00c5) and 61% medium (1.1 \u2264 RMSDUB <2.2\u00c5) targets in the Docking Benchmark 5.0 set (Vreven et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the ReplicaDock 2.0 paper and the Docking Benchmark 5.0 dataset.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "7c425bce-c65f-41fb-90ac-b82ad9fd19d0",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C13",
+      "claim": "ReplicaDock 2.0 had a 33% success rate on targets with RMSDUB \u2265 2.2\u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, like most state-of-the-art physics-based docking methods, ReplicaDock 2.0 performance was limited for highly flexible targets: 33% success rate on targets with RMSDUB \u2265 2.2\u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported performance metric from prior work on ReplicaDock 2.0.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "14065c64-419b-4e48-8df5-fb1e682f5aaf",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C14",
+      "claim": "By focusing backbone moves on known mobile residues, ReplicaDock 2.0 sampling substantially improved the docking accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Promisingly, by focusing backbone moves on known mobile residues (i.e., residues that exhibit conformational changes upon binding), ReplicaDock 2.0 sampling substantially improved the docking accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported finding from prior work on ReplicaDock 2.0.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "236db016-8bd7-4dfa-8d2a-814e3222cbd0",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C15",
+      "claim": "Physics-based docking is quite slow (6\u20138 h on a 24-core CPU cluster) compared to recent DL-based docking tools (0.1\u201310 min on a single NVIDIA GPU).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, physics-based docking is quite slow (6\u20138 h on a 24-core CPU cluster) compared to recent DL-based docking tools (0.1\u201310 min on a single NVIDIA GPU).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides specific computational time comparisons between different docking approaches.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "7daea070-4b6d-4be5-8c24-cc2d23dfe6ec",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C16",
+      "claim": "Docking-specific DL tools such as EquiDock and dMASIF do not allow for protein flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "However, docking-specific DL tools such as EquiDock (Ganea et al., 2021) and dMASIF (Sverrisson et al., 2020) do not allow for protein flexibility, and recent tools like GeoDock (Chu et al., 2023) and DockGPT McPartlon and Xu, 2023 have very limited backbone flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the respective DL docking tool papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "561bf46f-acf6-440f-ac79-fd051bbafc9e",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C17",
+      "claim": "All DL docking tools have low success rates on unbound docking targets such as those in Docking Benchmark 5.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, all of these DL docking tools have low success rates on unbound docking targets such as those in Docking Benchmark 5.5 (Chu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chu et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "9e5137ce-adbb-41e7-abc6-04343c6a17e7",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C18",
+      "claim": "The curated dataset includes 254 protein targets exhibiting binding-induced conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The comprehensive dataset includes 254 protein targets exhibiting binding-induced conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "443443df-5aa3-47d8-b20d-47634f2f4075",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C19",
+      "claim": "The dataset was curated from the Docking Benchmark Set 5.5 (DB5.5), which comprises experimentally characterized (X-ray or cryo-EM) structures of bound protein complexes and their corresponding unbound protein subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We curated a dataset for conformational flexibility from the Docking Benchmark Set 5.5 (DB5.5) (Vreven et al., 2015), which comprises experimentally characterized (X-ray or cryo-EM) structures of bound protein complexes and their corresponding unbound protein subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source and composition of the dataset with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "53bf9cc9-ff12-4e0a-b1ee-cb601a2b0041",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C20",
+      "claim": "Each protein target is classified based on their unbound-to-bound root-mean-square-deviation (RMSDUB) as rigid (RMSDUB \u2264 1.2 \u00c5), medium (1.2 \u00c5 < RMSDUB \u2264 2.2 \u00c5), or difficult (RMSDUB \u2265 2.2 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Each protein target (with unbound and bound structures) is classified based on their unbound-to-bound root-mean-square-deviation (RMSDUB) as rigid (RMSDUB \u2264 1.2 \u00c5), medium (1.2 \u00c5 < RMSDUB \u2264 2.2 \u00c5), or difficult (RMSDUB \u2265 2.2 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classification scheme used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "1a68ae10-162f-4efb-a394-22bf67ee00b3",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C21",
+      "claim": "The dataset includes 67 antibody\u2013antigen structures extracted from the DB5.5 set.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, due to the poor performance of AF and other predictor groups in predicting antibody\u2013antigen targets in the recent CASP15-CAPRI round CASP15, 2022, we identified a subset comprising only antibody\u2013antigen complexes (including single-domain antibodies or nanobodies) extracting all 67 antibody\u2013antigen structures from the DB5.5 (Guest et al., 2020, Vreven et al., 2015) set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a subset of the dataset with citations to the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "9f3f4394-3e19-43cb-acb7-c3e9d4cacd26",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C22",
+      "claim": "Most of the benchmark targets in DB5.5 were included in AF training.",
+      "claim_type": "EXPLICIT",
+      "source": "Since most of the benchmark targets in DB5.5 were included in AF training, there would be training bias associated with their predictions (i.e., our measured success rates are an upper bound).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential training bias based on the dataset composition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "6371aff2-e176-4127-bdb9-3e391b3344f3",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C23",
+      "claim": "The protein partners from the AFm top-ranked model deviate from both unbound and bound forms and skew more often toward the bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "As evident from Supplementary Fig.S1A, the protein partners from the AFm top-ranked model deviate from both unbound and bound forms and skew more often toward the bound state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Appendix 1\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "b3ec9103-ec10-47af-8716-a39f9ea2fed3",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C24",
+      "claim": "For antibody\u2013antigen targets, 29.7% were predicted within sub-angstrom accuracy to the bound form, compared to 41% for DB5.5 targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody\u2013antigen targets further demonstrate a similar trend, however with fewer targets predicted within sub-angstrom accuracy to the bound form (29.7% for Ab-Ag targets as opposed to 41% for DB5.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides comparative performance statistics from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "a502d61a-0e3c-47f2-9005-1fb3e6d752b8",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C25",
+      "claim": "AF employs multiple sequence alignments with a multi-track attention-based architecture to predict three-dimensional structures of proteins and complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "AF employs multiple sequence alignments with a multi-track attention-based architecture to predict three-dimensional structures of proteins and complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach used by AlphaFold, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "06154d5b-8818-4a16-a73c-d9eabb5099cf",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C26",
+      "claim": "The predicted local-distance difference test (pLDDT) estimates the agreement between predicted model to an experimental structure based on the C\u03b1 LDDT test.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, for each structural prediction, it provides a residue-level confidence measure: the predicted local-distance difference test (pLDDT), estimating the agreement between predicted model to an experimental structure based on the C\u03b1 LDDT test ('Methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pLDDT metric used by AlphaFold.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "56fe3306-8258-412f-94bb-66d37537510a",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C27",
+      "claim": "Lower pLDDT scores correlate with higher disordered regions in protein structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Tunyasuvunakool et al. analyzed pLDDT confidence measures for the human proteome demonstrating the correlation between lower pLDDT scores with higher disordered regions in protein structures (Tunyasuvunakool et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tunyasuvunakool et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "b5292153-31c8-40ba-b51c-700733cda98c",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C28",
+      "claim": "pLDDT confidence scores correlate with the experimental measurements of binding: pLDDT decreases as LDDTBU decreases and RMSDBU increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, pLDDT confidence scores correlate with the experimental measurements of binding: pLDDT decreases as LDDTBU decreases and RMSDBU increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "c0ef2983-b634-419e-88cf-e2711c661267",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C29",
+      "claim": "In regions of low confidence/pLDDT (highlighted in red), the prediction is inaccurate, but higher confidence/pLDDT regions (highlighted in blue) have high accuracy of prediction with the bound form.",
+      "claim_type": "EXPLICIT",
+      "source": "In regions of low confidence/pLDDT (highlighted in red), the prediction is inaccurate, but higher confidence/pLDDT regions (highlighted in blue) have high accuracy of prediction with the bound form.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by visual evidence in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "9da373dc-6210-44df-b064-df9f66a88561",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C30",
+      "claim": "The pLDDT can suggest protein residues that move upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The pLDDT, thus, can suggest protein residues that move upon binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the correlation analysis between pLDDT and experimental flexibility metrics.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "a8da77e7-ba41-47d8-93dd-9d0e4544dc19",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C31",
+      "claim": "For AFm complex predictions, the confidence metrics of the overall prediction do not correlate with the accuracy of the docked prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for AFm complex predictions, the confidence metrics of the overall prediction do not correlate with the accuracy of the docked prediction, that is, even if the complex exhibits higher confidence, the docking interfaces could be incorrect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by examples shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "09b58723-c430-4682-92fd-82c7a57362e5",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C32",
+      "claim": "AFm models predict the individual subunits (protein partners) accurately in almost all scenarios; however, the docking orientation is incorrect in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "AFm models predict the individual subunits (protein partners) accurately in almost all scenarios; however, the docking orientation is incorrect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the examples shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "5d9d566b-e758-4837-a7ed-30e94fe9d938",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C33",
+      "claim": "Interface-pLDDT has the highest area under curve (AUC) score of 0.86 for discriminating docking quality.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface-pLDDT metric stands out with a higher true positive rate (TPR) with an area under curve (AUC) of 0.86.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ROC curve analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "77261700-5924-4a68-9ab0-7a273a130038",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C34",
+      "claim": "With interface-pLDDT cutoff of 85, 79% of the targets are classified accurately with a precision of 75%.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3B summarizes the performance with a confusion matrix for the chosen interface-pLDDT cutoff of 85. 79% of the targets are classified accurately with a precision of 75%, thereby validating the utility of interface-pLDDT as a discriminating metric to rank the docking quality of the AFm complex structure predictions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the confusion matrix analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "e8a97aa7-8bcb-40cd-96ef-e6a5b6aa14b6",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C35",
+      "claim": "The interface-pLDDT threshold of 85 can serve as the AF-derived metric to distinguish acceptable quality docked predictions from incorrect models.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface-pLDDT threshold of 85 (dashed line) thus can serve as the AF-derived metric to distinguish acceptable quality docked predictions from incorrect models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "a5f66520-b9f1-429f-a155-5fd182251fd3",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C36",
+      "claim": "Ninety-seven targets under the threshold of interface-pLDDT (\u226485) were passed to the global docking branch.",
+      "claim_type": "EXPLICIT",
+      "source": "Ninety-seven targets under the threshold of interface-pLDDT (\u226485) were passed to the global docking branch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the application of the AlphaRED protocol to the benchmark dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "3c271be7-f51c-4d01-8813-e8e491bd68af",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C37",
+      "claim": "AlphaRED demonstrates a vast improvement in Irms for 93 out of 97 targets where AFm prediction is determined to be a failure (interface-pLDDT \u2264 85).",
+      "claim_type": "EXPLICIT",
+      "source": "For targets where AFm prediction is determined to be a failure (interface-pLDDT \u2264 85, red), AlphaRED demonstrates a vast improvement in Irms for 93 out of 97 targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the performance data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "3a05de0c-6b19-4667-a4d1-958200c75413",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C38",
+      "claim": "AlphaRED captures lower interface-RMSDs (under 10 \u00c5) for targets where AFm models dock at binding sites \u223c40 \u00c5 away.",
+      "claim_type": "EXPLICIT",
+      "source": "AlphaRED captures lower interface-RMSDs (under 10 \u00c5) for targets where AFm models dock at binding sites \u223c40 \u00c5 away.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the performance data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "a38ded1f-1549-4e93-8366-f67e7f9b060f",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C39",
+      "claim": "AlphaRED demonstrates a success rate (DockQ > 0.23) of 63% for the benchmark targets.",
+      "claim_type": "EXPLICIT",
+      "source": "AlphaRED demonstrates a success rate (DockQ > 0.23) of 63% for the benchmark targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the DockQ score analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "84f8bdd9-4fb1-4e2c-afdb-996876614df1",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C40",
+      "claim": "For Ab-Ag complexes, AFm predicted acceptable or better quality docked structures in only 20% of the 67 targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly for Ab-Ag complexes, AFm predicted acceptable or better quality docked structures in only 20% of the 67 targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the performance data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "fc40f805-ef4d-4d7e-8ccd-3193d4048c3e",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C41",
+      "claim": "The AlphaRED pipeline succeeds in 43% of the antibody-antigen targets, a significant improvement over AFm's 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the AlphaRED pipeline succeeds in 43% of the targets, a significant improvement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the performance data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "ec2ff19a-3272-4803-8b6f-04430e860741",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C42",
+      "claim": "For targets with good AFm predictions, AlphaRED refinement results in minimal improvements in docking accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "For targets with good AFm predictions, AlphaRED refinement results in minimal improvements in docking accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the performance analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "afafa2a5-698e-4783-8bb1-42c01b54ae12",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C43",
+      "claim": "Starting from the incorrect AFm prediction, AlphaRED samples over the conformational landscape to identify a top-scoring decoy with 2.6 \u00c5 Irms from the native for target 2FJU.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from the incorrect AFm prediction (orange), AlphaRED samples over the conformational landscape to identify a top-scoring decoy (blue) with 2.6 \u00c5 Irms from the native (gray).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the example shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "3a77c625-f5aa-4289-8225-637c0b9f7ec6",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C44",
+      "claim": "CASP15 (Summer 2022) provided multiple protein docking targets that were not included in AFm training.",
+      "claim_type": "EXPLICIT",
+      "source": "CASP15 (Summer 2022) provided multiple protein docking targets (CASP15, 2022) that were not included in AFm training, allowing an unbiased evaluation of our AlphaRED pipeline (Lensink et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the CASP15 blind test with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "f19537ee-d039-4a4c-aeeb-b7cbf558b07e",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C45",
+      "claim": "All CASP15 targets predicted with AFm had low interface-pLDDT, thereby demanding global docking.",
+      "claim_type": "EXPLICIT",
+      "source": "All targets predicted with AFm had low interface-pLDDT, thereby demanding global docking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the application of AlphaRED to CASP15 targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "eb5e637d-a7d0-4c73-948d-b1ef41c7a570",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C46",
+      "claim": "For CASP15 target T205, AlphaRED improves the performance drastically (interface RMSD 11.4 \u00c5 for AFm model to 2.84 \u00c5 for AlphaRED).",
+      "claim_type": "EXPLICIT",
+      "source": "For representative target T205, our docking strategy improves the performance drastically (interface RMSD 11.4 \u00c5 for AFm model to 2.84 \u00c5 for AlphaRED) and binds in the correct site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "7d7f9431-e2db-4661-b9fd-b88ce989777a",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C47",
+      "claim": "Antibodies have proven challenging for deep learning methods, especially those reliant on multiple sequence alignments, as each antibody evolves in a different organism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, antibodies have proven challenging for deep learning methods, especially those reliant on multiple sequence alignments, as each antibody evolves in a different organism, and their antigens evolve on a different timescale altogether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the challenges of antibody structure prediction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "e6cdd50b-47c0-478e-bedb-260d415bc694",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C48",
+      "claim": "Across protein interfaces, the evolutionary constraints can be weak and often skew predictions to inaccurate binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, across protein interfaces, the evolutionary constraints can be weak and often skew predictions to inaccurate binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of AlphaFold's limitations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "48d3d446-b86a-465c-b932-18892faaa363",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C49",
+      "claim": "Failure cases in AFm predicted models are improved for all targets (lower Irms for 97 of 254 failed targets).",
+      "claim_type": "EXPLICIT",
+      "source": "By utilizing the AlphaRED strategy, we show that failure cases in AFm predicted models are improved for all targets (lower Irms for 97 of 254 failed targets) with CAPRI acceptable quality or better models generated for 62% of targets overall (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the summary results shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "32077c37-76a2-42cb-b63f-a09eb7aaa608",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C50",
+      "claim": "Interface-pLDDT is a robust metric to determine whether AFm predicted binding interfaces are correct.",
+      "claim_type": "EXPLICIT",
+      "source": "Interface-pLDDT, an average of the per-residue pLDDT only for the interfacial residues, is a robust metric to determine whether AFm predicted binding interfaces are correct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "efd93050-0b04-45a0-b839-9286118ff900",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C51",
+      "claim": "Thresholds of per-residue pLDDT can ascertain regions of backbone flexibility upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, thresholds of per-residue pLDDT can ascertain regions of backbone flexibility upon binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the correlation analysis between pLDDT and experimental flexibility metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "b05e2fed-66a0-411f-8113-995413d14d96",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C52",
+      "claim": "AFSample requires GPU simulations to produce \u223c240\u00d7 models with compute time \u223c1000\u00d7 more than the baseline AFm.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AFSample requires GPU simulations to produce \u223c240\u00d7 models with compute time \u223c1000\u00d7 more than the baseline AFm (Wallner, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wallner, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "72f40362-7d7e-49a7-8bed-08eb5f658df9",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C53",
+      "claim": "AlphaRED docking routine uses 5\u20137 h on a CPU cluster (runs on 1 node, with 24 cores, approximating to \u223c100 h of CPU-hours per target).",
+      "claim_type": "EXPLICIT",
+      "source": "As opposed to a couple of days on GPU (each GPU node contains up to 48 cores) utilized by AFSample, our docking routine fused with ColabFold uses 5\u20137 h on our CPU cluster (runs on 1 node, with 24 cores, approximating to \u223c100 h of CPU-hours per target).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides computational resource requirements for AlphaRED.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "9a9406d5-a186-4a1f-9725-c2ea901f7e26",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C54",
+      "claim": "By integrating a physics-based method for refinement, the pipeline can potentially handle post-translationally modified proteins or non-canonical residue types that are not defined in ML approaches like AF.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this work is impactful because by integrating a physics-based method for refinement, the pipeline can potentially handle post-translationally modified proteins or non-canonical residue types that are not defined in ML approaches like AF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "95b3cb36-2167-45b7-b0b0-66e0e5ad4cc9",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C55",
+      "claim": "DL tools such as AF provide a snapshot of relevant local minima that can aid in narrowing down the degrees of freedom in sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein conformational landscape is vast and DL tools such as AF provide a snapshot of relevant local minima that can aid in narrowing down the degrees of freedom in sampling (Roney and Ovchinnikov, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Roney and Ovchinnikov, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "2bb4e175-7a92-48ec-aaba-c2baef365e89",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C56",
+      "claim": "Each AF prediction includes a per-residue pLDDT measurement and predicted template alignment (pTM) score.",
+      "claim_type": "EXPLICIT",
+      "source": "Each AF prediction includes a per-residue pLDDT (predicted LDDT) measurement (Mariani et al., 2013), a confidence measure in prediction accuracy, and predicted template alignment (pTM) score (Zhang and Skolnick, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the outputs of AlphaFold predictions with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "1c6eab79-5415-49d1-9f47-78df7649aedc",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C57",
+      "claim": "LDDT is a superimposition-free score that estimates local distance differences in a model relative to a reference structure.",
+      "claim_type": "EXPLICIT",
+      "source": "LDDT is a superimposition-free score that estimates local distance differences in a model relative to a reference structure (Mariani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LDDT metric with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "5b2af5f5-9b31-4dfe-a52c-a265211abbdd",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C58",
+      "claim": "The advantage of the LDDT measurement lies in the estimation of relative domain orientations in multi-domain proteins or concerted motions.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of the LDDT measurement lies in the estimation of relative domain orientations in multi-domain proteins or concerted motions (e.g., hinge-like moves in closed and apo proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantages of using LDDT as a metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "c7766ba2-7666-410c-be40-7d774c221252",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C59",
+      "claim": "Global docking follows an exhaustive, rigid-body search (no backbone moves) between the protein partners to sample putative landscapes in the energy landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Global docking follows an exhaustive, rigid-body search (no backbone moves) between the protein partners to sample putative landscapes in the energy landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the global docking methodology in AlphaRED.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "2c46658b-2d87-4f79-9d0d-e1d139845678",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C60",
+      "claim": "The replica exchange MC routine ReplicaDock 2.0 performs rigid-body rotations (8\u00b0) and translations (4 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "The replica exchange MC routine ReplicaDock 2.0 performs rigid-body rotations (8\u00b0) and translations (4 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical parameters of the ReplicaDock 2.0 method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "e8fd9e06-e6c4-40ed-a883-99c4a68840b4",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C61",
+      "claim": "For flexible local docking, aggressive backbone moves (backrub + kinematic closure) are performed on candidate encounter complexes with fine rigid-body rotations and translations.",
+      "claim_type": "EXPLICIT",
+      "source": "For flexible local docking, we perform aggressive backbone moves (backrub + kinematic closure, 'Methods') on candidate encounter complexes (clustered decoys), with fine rigid-body rotations and translations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexible local docking methodology in AlphaRED.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "ddef2398-4e5c-4880-a29d-47f97dad8382",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C62",
+      "claim": "Backbone moves are explicitly performed over residues identified as 'mobile' based on the per-residue pLDDT metric (residue pLDDT < 80).",
+      "claim_type": "EXPLICIT",
+      "source": "To narrow conformational sampling, backbone moves are explicitly performed over residues identified as 'mobile' based on the per-residue pLDDT metric (residue pLDDT < 80).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how mobile residues are identified and used in AlphaRED.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "3b7aa13a-01d4-43e4-8c9d-d09c05016cbf",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C63",
+      "claim": "Implementation of ReplicaDock 2.0 (global docking) is similar to the version reported in prior work.",
+      "claim_type": "EXPLICIT",
+      "source": "Implementation of ReplicaDock 2.0 (global docking) is similar to the version reported in prior work (Harmalkar et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references the prior implementation with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "4289a5f3-a72c-4bcb-bfbc-8890e81d528f",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C64",
+      "claim": "Each simulation initiates eight trajectories across three temperature replicas with inverse temperatures set to 1.5\u20131 kcal\u20131.mol, 3\u20131 kcal-1.mol, and 5\u20131 kcal\u20131.mol, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Each simulation initiates eight trajectories across three temperature replicas with inverse temperatures set to 1.5\u20131 kcal\u20131.mol, 3\u20131 kcal-1.mol, and 5\u20131 kcal\u20131.mol, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical parameters of the replica exchange simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "6b81e6bc-621c-499d-b7c2-5a791902f753",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C65",
+      "claim": "Five cluster centers (decoys) are selected and passed to the flexible local docking stage to sample conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Five cluster centers (decoys) are selected and passed to the flexible local docking stage to sample conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering and selection process in AlphaRED.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "c10ba804-647f-4a5a-ad45-62d723ff07cb",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C66",
+      "claim": "The sampling weights are biased such that backbone and side-chain movers are weighted higher than rigid-body moves (3:1 weightage for backbone:rigid-body moves).",
+      "claim_type": "EXPLICIT",
+      "source": "The sampling weights are biased such that backbone and side-chain movers are weighted higher than rigid-body moves (3:1 weightage for backbone:rigid-body moves).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling strategy in flexible local docking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "ccfc5a63-bb04-4e6d-8dc5-d219e4be38bf",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C67",
+      "claim": "Sampled decoys are then refined, that is, undergo side-chain packing and minimization, to output docked decoys.",
+      "claim_type": "EXPLICIT",
+      "source": "Sampled decoyed are then refined, that is, undergo side-chain packing and minimization, to output docked decoys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the refinement step in AlphaRED.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "c823bf78-06d0-4da3-a80c-3d47251922e7",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C68",
+      "claim": "The best ranked decoys based on interface scores are identified as the top-scoring structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The best ranked decoys based on interface scores are then identified as the top-scoring structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final selection criterion in AlphaRED.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "6422dc47-7a3a-44ba-a0a6-77e196c9bda4",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C69",
+      "claim": "DockQ scores above 0.23 correspond to models with a CAPRI quality of 'acceptable' or higher.",
+      "claim_type": "EXPLICIT",
+      "source": "DockQ scores above 0.23 correspond to models with a CAPRI quality of 'acceptable' or higher.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the DockQ scoring threshold used for evaluation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "0eddf244-f6c3-48e4-908a-e7411b9482e7",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C71",
+      "claim": "For each target, amino acid sequences were extracted from the bound structure and predicted with ColabFold implementation of AlphaFold multimer v2.3.0.",
+      "claim_type": "EXPLICIT",
+      "source": "For each protein target, we extracted the amino acid sequences from the bound structure and predicted a corresponding three-dimensional complex structure with the ColabFold implementation (https://github.com/YoshitakaMo/localcolabfold; Moriwaki, 2023) of the AlphaFold multimer v2.3.0 (released in March 2023) for the 254 benchmark targets from DB5.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the prediction methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "1482fdda-1725-4ca1-987a-7ffb3155cea5",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C72",
+      "claim": "Each prediction run was performed without templates, with automatic alignments and the default number of recycles to generate five relaxed predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each prediction run was performed without templates, with automatic alignments and the default number of recycles to generate five relaxed predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the AlphaFold prediction parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "44264dc3-78d4-47ba-9450-9b42e1540c0f",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "claim_id": "C73",
+      "claim": "The BFactorResidueSelector selects contiguous sets of residues below the specified pLDDT threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "We automate it using the BFactorResidueSelector to select contiguous sets of residues below the specified pLDDT threshold in the prior section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical component of the AlphaRED implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3b6c5447-5a7a-4a01-b479-3816ab53bafa",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors curated a dataset of 254 protein targets from Docking Benchmark Set 5.5 (DB5.5), classified by conformational flexibility (rigid, medium, difficult), including a subset of 67 antibody-antigen complexes. Most benchmark targets were included in AlphaFold training, introducing potential training bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 describe the dataset curation methodology with appropriate citations and acknowledge the training bias limitation. The dataset composition and classification scheme are clearly defined and appropriate for evaluating protein docking methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "26a829c4-ffaa-413a-adfe-d7ca1ec94038",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AFm predictions deviate from both unbound and bound forms but skew more often toward the bound state, with 41% of DB5.5 targets and 29.7% of antibody-antigen targets predicted within sub-angstrom accuracy to the bound form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 are supported by data in Appendix 1-figure 1 showing RMSD comparisons. The analysis appropriately compares AFm predictions to both unbound and bound structures, revealing a bias toward bound conformations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "b4e39f79-b079-4055-aa10-aede10c57d3d",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AlphaFold pLDDT scores correlate with experimental flexibility metrics (RMSDBU and LDDTBU), with lower pLDDT indicating regions of conformational change upon binding. Per-residue pLDDT thresholds can identify flexible backbone regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C28-C30, C51 are supported by correlation analysis in Figure 1 showing relationships between pLDDT and experimental flexibility metrics across multiple targets. The correlation is demonstrated both quantitatively (R-squared values) and visually (structural overlays).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "623c277f-0e76-4890-9984-a2e6ae251aba",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Overall AFm confidence metrics do not correlate with docking accuracy; AFm can predict individual subunits accurately while producing incorrect docking orientations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by examples in Figure 2 showing cases where high-confidence AFm predictions have incorrect binding interfaces. This observation motivates the need for interface-specific confidence metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "adb3d244-a77d-4d28-82af-037568a33606",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Interface-pLDDT (average pLDDT of interfacial residues) discriminates docking quality with AUC=0.86, achieving 79% classification accuracy with 75% precision at a threshold of 85. This metric robustly determines whether AFm predicted binding interfaces are correct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35, C50 are supported by ROC analysis (Figure 3A), confusion matrix (Figure 3B), and correlation with DockQ scores (Figure 3C). The statistical evaluation is appropriate, though the threshold selection could benefit from cross-validation to avoid overfitting to this specific dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "de545a11-c041-4df1-b58b-ec005ba32f6e",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AlphaRED successfully improves docking for 93 of 97 AFm failure cases (interface-pLDDT \u226485) in DB5.5, achieving 63% success rate (DockQ>0.23) overall and reducing interface-RMSD from ~40\u00c5 to <10\u00c5 for many targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36-C39, C49 are supported by comprehensive performance data in Figure 5 showing improvements in interface-RMSD, fraction of native contacts, and DockQ scores. The results demonstrate clear improvement over AFm baseline, though the magnitude varies by target difficulty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "8ea264a7-4839-4709-8cef-29dbd21d37c6",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "On antibody-antigen targets, AlphaRED achieves 43% success rate compared to AFm's 20%, demonstrating substantial improvement on this challenging subset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C40-C41 are supported by performance data in Figure 5C-D specifically for the 67 antibody-antigen complexes. The improvement is statistically meaningful, though absolute success rates remain modest, indicating continued challenges for this target class.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "decf88d5-1ca9-4a25-b08d-b44291485169",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For targets with good AFm predictions (interface-pLDDT>85), AlphaRED refinement produces minimal improvements in docking accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by data in Figure 5 showing that targets with high initial interface-pLDDT cluster near the diagonal, indicating little change. This validates the decision tree logic of the AlphaRED protocol.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "f91f951c-7849-4385-a1ec-5a8d88b95888",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For target 2FJU, AlphaRED samples the conformational landscape to identify a top-scoring decoy with 2.6\u00c5 interface-RMSD from native, starting from an incorrect AFm prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by the case study shown in Figure 6a demonstrating successful global docking. This provides a concrete example of the method's ability to recover from AFm failures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "3f14254f-273a-43de-a4f5-1a868f07688c",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "On blind CASP15 targets (not in AFm training), AlphaRED dramatically improves performance, reducing interface-RMSD from 11.4\u00c5 to 2.84\u00c5 for target T205 and achieving improvements across five nanobody-antigen complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by results in Figure 7 on CASP15 targets. This provides crucial validation on truly blind targets without training bias, though the reference structures are top CASP15 models rather than experimental structures (not yet released), which introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AlphaRED implements a two-stage docking protocol: global rigid-body docking with replica exchange (8\u00b0 rotations, 4\u00c5 translations) followed by flexible local docking with backbone moves (backrub, kinematic closure) focused on mobile residues (pLDDT<80), using 3:1 weighting for backbone:rigid-body moves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C68 describe the technical implementation of AlphaRED with specific parameters. The methodology is clearly documented and builds appropriately on prior ReplicaDock 2.0 work (C63), though reproducibility would benefit from code availability and more detailed parameter justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "9fbea016-9eee-45a0-8806-8e1a34b293c6",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AlphaRED requires 5-7 hours (~100 CPU-hours) on a 24-core CPU cluster per target, compared to AFSample which requires ~1000\u00d7 more compute time than baseline AFm on GPU.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 provide computational cost comparisons with appropriate citations. However, the comparison is somewhat indirect (CPU vs GPU hours) and would benefit from standardized benchmarking on equivalent hardware.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "10878a8b-62ab-486f-a298-ccf6c8911b22",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "AFm predictions were generated using ColabFold v1.5.2 implementation of AlphaFold-multimer v2.3.0 without templates, with automatic alignments and default recycles, producing five relaxed predictions per target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 describe the prediction methodology with specific version numbers and parameters. This provides adequate detail for reproducibility, though the choice of 'default' parameters could be more explicitly justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "f17ae586-eecd-45a5-8ade-073425a17e54",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work shows AFm predicts accurate protein complexes in only 43% of cases, with performance worsening for targets with higher conformational flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C10 accurately cite prior work (Yin et al., 2022) establishing AFm limitations. These claims appropriately contextualize the motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "e14ace2d-f8a8-4fe8-ac05-ebe39bb68c6e",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "By integrating physics-based refinement, AlphaRED can potentially handle post-translationally modified proteins or non-canonical residue types not defined in ML approaches like AlphaFold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 is speculative about future applications without supporting data. While the reasoning is plausible given Rosetta's capabilities, this capability has not been demonstrated in the manuscript and remains hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "cbb0c230-2346-4941-ac6e-eafe07a7341f",
+      "content_id": "5ef0a51e-7c6f-469d-ae55-7513b15fdd82",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establish that AlphaFold revolutionized structure prediction, AFm extended this to complexes, protein binding involves conformational changes, prior docking methods had limited success (8% in CASP13/14-CAPRI), physics-based methods like ReplicaDock 2.0 showed promise but computational expense, DL docking tools lack flexibility, and various technical details about LDDT, pLDDT, and DockQ metrics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C17, C25-C27, C47-C48, C55-C58, C69 provide background context with appropriate citations to established literature. These claims accurately represent prior knowledge and appropriately contextualize the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "9db9b1cf-2eb0-4003-8cc5-677277497963",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that AlphaFold's pLDDT confidence scores correlate with experimental measurements of protein flexibility (LDDT_BU and RMSD_BU), and that pLDDT can identify residues that move upon binding. Low pLDDT regions correspond to inaccurate predictions while high pLDDT regions show high accuracy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly identifies this as a strength, stating 'pLLDT is predictive of flexible residues, which they could target for conformational sampling during docking.' The reviewers do not challenge this finding, and it forms a foundational component of the AlphaRED method that reviewers accept.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "31d78477-52dd-41fc-8697-66cc866397c6",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors show that interface-pLDDT (average pLDDT of interfacial residues) is a robust metric for discriminating docking quality, with an AUC of 0.86. Using an interface-pLDDT cutoff of 85, they achieve 79% classification accuracy with 75% precision for distinguishing correct from incorrect AFm predictions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 acknowledges this as a strength ('the interface-pLLDT score is predictive of the quality of AFm predictions'), but Reviewer 3 raises significant concerns, stating 'Using pLDDT on the interface region to identify good/bad models is likely suboptimal' and suggests that AFm-specific scores (ipTM or Ranking Confidence) should be used instead. The reviewers request comparison with alternative metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "f2bca115-ab14-4997-b9e6-64f32d2cc889",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "AlphaRED successfully improves docking predictions for AFm failures (interface-pLDDT \u226485), achieving improvements in 93 of 97 failed targets and generating CAPRI acceptable-quality or better predictions for 63% of benchmark targets overall.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor notes 'for cases where AFm is not as successful, the improvement is more significant,' and Reviewer 3 acknowledges 'the method generated about 25% more acceptable predictions than AFm.' However, Reviewer 3 also notes 'no models reach a very high accuracy (Fnat ~0.5 compared to 0.8 for the good AFm models),' indicating the improvement is substantial but with limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "a5da58b0-b26a-4b03-8514-ee5f267cc1e9",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "On antibody-antigen targets, AlphaRED demonstrates a success rate of 43% compared to AFm's 20%, representing a significant improvement on this challenging subset.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states 'The evidence for the ReplicaDock approach being more predictive than AFm is particularly convincing for the antibody\u2013antigen test case.' Reviewer 3 acknowledges 'Impressive increase in performance on AB-AG set' as a strength, though notes it is 'a small set.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "96e4ed12-58da-473b-bc7e-0afcd7755baa",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "For targets with good AFm predictions (interface-pLDDT >85), AlphaRED refinement results in minimal improvements in docking accuracy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly notes 'The level of improvement is modest for cases where AFm is successful,' and Reviewer 3 states 'for the models where the AFm models are good, the improvement is modest (or not at all). See, for instance, the blue dots in Fig 6.' This finding is consistently acknowledged across reviews.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "d9ef93b6-ce23-48b9-bc89-bcc3ed5679a0",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "On CASP15 targets (not included in AFm training), AlphaRED demonstrates substantial improvements, such as reducing interface RMSD from 11.4 \u00c5 to 2.84 \u00c5 for target T205.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 initially expressed concern that 'For the CASP15 targets where this bias is absent, the presentation was very brief' and requested more detail about how AFm helped with docking and direct comparisons. While the revision note states 'This revision has addressed my previous comments,' the limited initial presentation suggests this result needed strengthening.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "31e3666a-b558-48e9-b00b-5354b79a329b",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Most benchmark targets in DB5.5 were included in AlphaFold training, creating potential training bias that means measured success rates represent an upper bound.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly raises this concern: 'As admitted by the authors, the AFm predictions for the main dataset are undoubtedly biased because these structures were used for AFm training. Could the authors find a way to assess the extent of this bias?' The authors acknowledge this limitation, and reviewers accept it as a caveat.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "e84e11ea-2b75-40a2-bc3a-302ba9dfc302",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors curated a dataset of 254 protein targets from Docking Benchmark Set 5.5, classified by flexibility (rigid, medium, difficult), including a subset of 67 antibody-antigen structures.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 raises methodological concerns, stating 'It is unclear strictly what sequences were used as input to the modelling. The authors should use full-length UniProt sequences if that were not done' and 'The antibody-antigen dataset is small. It could easily be expanded to thousands of proteins.' These comments suggest the dataset composition and preparation needed clarification or expansion.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "1b22f760-5360-46e0-89c2-4d57c8935c58",
+      "content_id": "64301f2c-d66e-4444-bf5b-0f3b4d692a44",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "AlphaRED computational costs are 5-7 hours on a 24-core CPU cluster (~100 CPU-hours per target), which is more efficient than alternative approaches like AFSample.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 challenges the comparison: 'The estimates of computing costs for the AFsample are incorrect (check what is presented in their paper).' This suggests the computational cost claims needed verification or correction.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9e5137ce-adbb-41e7-abc6-04343c6a17e7",
+      "result_id": "3b6c5447-5a7a-4a01-b479-3816ab53bafa"
+    },
+    {
+      "claim_id": "443443df-5aa3-47d8-b20d-47634f2f4075",
+      "result_id": "3b6c5447-5a7a-4a01-b479-3816ab53bafa"
+    },
+    {
+      "claim_id": "53bf9cc9-ff12-4e0a-b1ee-cb601a2b0041",
+      "result_id": "3b6c5447-5a7a-4a01-b479-3816ab53bafa"
+    },
+    {
+      "claim_id": "1a68ae10-162f-4efb-a394-22bf67ee00b3",
+      "result_id": "3b6c5447-5a7a-4a01-b479-3816ab53bafa"
+    },
+    {
+      "claim_id": "9f3f4394-3e19-43cb-acb7-c3e9d4cacd26",
+      "result_id": "3b6c5447-5a7a-4a01-b479-3816ab53bafa"
+    },
+    {
+      "claim_id": "6371aff2-e176-4127-bdb9-3e391b3344f3",
+      "result_id": "26a829c4-ffaa-413a-adfe-d7ca1ec94038"
+    },
+    {
+      "claim_id": "b3ec9103-ec10-47af-8716-a39f9ea2fed3",
+      "result_id": "26a829c4-ffaa-413a-adfe-d7ca1ec94038"
+    },
+    {
+      "claim_id": "62a32003-d025-4728-b0a0-fb08d2b9db56",
+      "result_id": "b4e39f79-b079-4055-aa10-aede10c57d3d"
+    },
+    {
+      "claim_id": "b5292153-31c8-40ba-b51c-700733cda98c",
+      "result_id": "b4e39f79-b079-4055-aa10-aede10c57d3d"
+    },
+    {
+      "claim_id": "c0ef2983-b634-419e-88cf-e2711c661267",
+      "result_id": "b4e39f79-b079-4055-aa10-aede10c57d3d"
+    },
+    {
+      "claim_id": "9da373dc-6210-44df-b064-df9f66a88561",
+      "result_id": "b4e39f79-b079-4055-aa10-aede10c57d3d"
+    },
+    {
+      "claim_id": "efd93050-0b04-45a0-b839-9286118ff900",
+      "result_id": "b4e39f79-b079-4055-aa10-aede10c57d3d"
+    },
+    {
+      "claim_id": "a8da77e7-ba41-47d8-93dd-9d0e4544dc19",
+      "result_id": "623c277f-0e76-4890-9984-a2e6ae251aba"
+    },
+    {
+      "claim_id": "09b58723-c430-4682-92fd-82c7a57362e5",
+      "result_id": "623c277f-0e76-4890-9984-a2e6ae251aba"
+    },
+    {
+      "claim_id": "5d9d566b-e758-4837-a7ed-30e94fe9d938",
+      "result_id": "adb3d244-a77d-4d28-82af-037568a33606"
+    },
+    {
+      "claim_id": "77261700-5924-4a68-9ab0-7a273a130038",
+      "result_id": "adb3d244-a77d-4d28-82af-037568a33606"
+    },
+    {
+      "claim_id": "e8a97aa7-8bcb-40cd-96ef-e6a5b6aa14b6",
+      "result_id": "adb3d244-a77d-4d28-82af-037568a33606"
+    },
+    {
+      "claim_id": "32077c37-76a2-42cb-b63f-a09eb7aaa608",
+      "result_id": "adb3d244-a77d-4d28-82af-037568a33606"
+    },
+    {
+      "claim_id": "937820be-0d25-41a3-8221-b2e5da1eef5e",
+      "result_id": "de545a11-c041-4df1-b58b-ec005ba32f6e"
+    },
+    {
+      "claim_id": "a5f66520-b9f1-429f-a155-5fd182251fd3",
+      "result_id": "de545a11-c041-4df1-b58b-ec005ba32f6e"
+    },
+    {
+      "claim_id": "3c271be7-f51c-4d01-8813-e8e491bd68af",
+      "result_id": "de545a11-c041-4df1-b58b-ec005ba32f6e"
+    },
+    {
+      "claim_id": "3a05de0c-6b19-4667-a4d1-958200c75413",
+      "result_id": "de545a11-c041-4df1-b58b-ec005ba32f6e"
+    },
+    {
+      "claim_id": "a38ded1f-1549-4e93-8366-f67e7f9b060f",
+      "result_id": "de545a11-c041-4df1-b58b-ec005ba32f6e"
+    },
+    {
+      "claim_id": "48d3d446-b86a-465c-b932-18892faaa363",
+      "result_id": "de545a11-c041-4df1-b58b-ec005ba32f6e"
+    },
+    {
+      "claim_id": "7fe45bb2-ed8c-42be-b13c-65f4fe143cfc",
+      "result_id": "8ea264a7-4839-4709-8cef-29dbd21d37c6"
+    },
+    {
+      "claim_id": "d4f58acf-d2c7-4071-b07b-db903a893008",
+      "result_id": "8ea264a7-4839-4709-8cef-29dbd21d37c6"
+    },
+    {
+      "claim_id": "84f8bdd9-4fb1-4e2c-afdb-996876614df1",
+      "result_id": "8ea264a7-4839-4709-8cef-29dbd21d37c6"
+    },
+    {
+      "claim_id": "fc40f805-ef4d-4d7e-8ccd-3193d4048c3e",
+      "result_id": "8ea264a7-4839-4709-8cef-29dbd21d37c6"
+    },
+    {
+      "claim_id": "ec2ff19a-3272-4803-8b6f-04430e860741",
+      "result_id": "decf88d5-1ca9-4a25-b08d-b44291485169"
+    },
+    {
+      "claim_id": "afafa2a5-698e-4783-8bb1-42c01b54ae12",
+      "result_id": "f91f951c-7849-4385-a1ec-5a8d88b95888"
+    },
+    {
+      "claim_id": "3a77c625-f5aa-4289-8225-637c0b9f7ec6",
+      "result_id": "3f14254f-273a-43de-a4f5-1a868f07688c"
+    },
+    {
+      "claim_id": "f19537ee-d039-4a4c-aeeb-b7cbf558b07e",
+      "result_id": "3f14254f-273a-43de-a4f5-1a868f07688c"
+    },
+    {
+      "claim_id": "eb5e637d-a7d0-4c73-948d-b1ef41c7a570",
+      "result_id": "3f14254f-273a-43de-a4f5-1a868f07688c"
+    },
+    {
+      "claim_id": "c7766ba2-7666-410c-be40-7d774c221252",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "2c46658b-2d87-4f79-9d0d-e1d139845678",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "e8fd9e06-e6c4-40ed-a883-99c4a68840b4",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "ddef2398-4e5c-4880-a29d-47f97dad8382",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "3b7aa13a-01d4-43e4-8c9d-d09c05016cbf",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "4289a5f3-a72c-4bcb-bfbc-8890e81d528f",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "6b81e6bc-621c-499d-b7c2-5a791902f753",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "c10ba804-647f-4a5a-ad45-62d723ff07cb",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "ccfc5a63-bb04-4e6d-8dc5-d219e4be38bf",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "c823bf78-06d0-4da3-a80c-3d47251922e7",
+      "result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad"
+    },
+    {
+      "claim_id": "b05e2fed-66a0-411f-8113-995413d14d96",
+      "result_id": "9fbea016-9eee-45a0-8806-8e1a34b293c6"
+    },
+    {
+      "claim_id": "72f40362-7d7e-49a7-8bed-08eb5f658df9",
+      "result_id": "9fbea016-9eee-45a0-8806-8e1a34b293c6"
+    },
+    {
+      "claim_id": "0eddf244-f6c3-48e4-908a-e7411b9482e7",
+      "result_id": "10878a8b-62ab-486f-a298-ccf6c8911b22"
+    },
+    {
+      "claim_id": "1482fdda-1725-4ca1-987a-7ffb3155cea5",
+      "result_id": "10878a8b-62ab-486f-a298-ccf6c8911b22"
+    },
+    {
+      "claim_id": "92c748b8-e325-4b6e-aa54-d8079e8adde4",
+      "result_id": "f17ae586-eecd-45a5-8ade-073425a17e54"
+    },
+    {
+      "claim_id": "2286c4e3-6262-4758-98e4-477d95844600",
+      "result_id": "f17ae586-eecd-45a5-8ade-073425a17e54"
+    },
+    {
+      "claim_id": "9a9406d5-a186-4a1f-9725-c2ea901f7e26",
+      "result_id": "e14ace2d-f8a8-4fe8-ac05-ebe39bb68c6e"
+    },
+    {
+      "claim_id": "dbe21117-4fcf-403d-8ec3-38ff95298f27",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "d014cac2-3ef8-46a1-8f69-60204ff0450d",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "28d8dfe8-4a50-4985-a7ca-d4f3bbc75c25",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "1d261fb5-3f59-4d85-ad3b-c9f62e37dfa3",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "b8ba4f8a-0f93-49f4-999b-faaf7d722fa0",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "9091037b-764c-42b0-a932-822b9323d7ef",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "7c425bce-c65f-41fb-90ac-b82ad9fd19d0",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "14065c64-419b-4e48-8df5-fb1e682f5aaf",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "236db016-8bd7-4dfa-8d2a-814e3222cbd0",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "7daea070-4b6d-4be5-8c24-cc2d23dfe6ec",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "561bf46f-acf6-440f-ac79-fd051bbafc9e",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "a502d61a-0e3c-47f2-9005-1fb3e6d752b8",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "06154d5b-8818-4a16-a73c-d9eabb5099cf",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "56fe3306-8258-412f-94bb-66d37537510a",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "7d7f9431-e2db-4661-b9fd-b88ce989777a",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "e6cdd50b-47c0-478e-bedb-260d415bc694",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "95b3cb36-2167-45b7-b0b0-66e0e5ad4cc9",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "2bb4e175-7a92-48ec-aaba-c2baef365e89",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "1c6eab79-5415-49d1-9f47-78df7649aedc",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "5b2af5f5-9b31-4dfe-a52c-a265211abbdd",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "6422dc47-7a3a-44ba-a0a6-77e196c9bda4",
+      "result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f"
+    },
+    {
+      "claim_id": "62a32003-d025-4728-b0a0-fb08d2b9db56",
+      "result_id": "9db9b1cf-2eb0-4003-8cc5-677277497963"
+    },
+    {
+      "claim_id": "b5292153-31c8-40ba-b51c-700733cda98c",
+      "result_id": "9db9b1cf-2eb0-4003-8cc5-677277497963"
+    },
+    {
+      "claim_id": "c0ef2983-b634-419e-88cf-e2711c661267",
+      "result_id": "9db9b1cf-2eb0-4003-8cc5-677277497963"
+    },
+    {
+      "claim_id": "9da373dc-6210-44df-b064-df9f66a88561",
+      "result_id": "9db9b1cf-2eb0-4003-8cc5-677277497963"
+    },
+    {
+      "claim_id": "efd93050-0b04-45a0-b839-9286118ff900",
+      "result_id": "9db9b1cf-2eb0-4003-8cc5-677277497963"
+    },
+    {
+      "claim_id": "a8da77e7-ba41-47d8-93dd-9d0e4544dc19",
+      "result_id": "31d78477-52dd-41fc-8697-66cc866397c6"
+    },
+    {
+      "claim_id": "09b58723-c430-4682-92fd-82c7a57362e5",
+      "result_id": "31d78477-52dd-41fc-8697-66cc866397c6"
+    },
+    {
+      "claim_id": "5d9d566b-e758-4837-a7ed-30e94fe9d938",
+      "result_id": "31d78477-52dd-41fc-8697-66cc866397c6"
+    },
+    {
+      "claim_id": "77261700-5924-4a68-9ab0-7a273a130038",
+      "result_id": "31d78477-52dd-41fc-8697-66cc866397c6"
+    },
+    {
+      "claim_id": "e8a97aa7-8bcb-40cd-96ef-e6a5b6aa14b6",
+      "result_id": "31d78477-52dd-41fc-8697-66cc866397c6"
+    },
+    {
+      "claim_id": "32077c37-76a2-42cb-b63f-a09eb7aaa608",
+      "result_id": "31d78477-52dd-41fc-8697-66cc866397c6"
+    },
+    {
+      "claim_id": "937820be-0d25-41a3-8221-b2e5da1eef5e",
+      "result_id": "f2bca115-ab14-4997-b9e6-64f32d2cc889"
+    },
+    {
+      "claim_id": "7fe45bb2-ed8c-42be-b13c-65f4fe143cfc",
+      "result_id": "f2bca115-ab14-4997-b9e6-64f32d2cc889"
+    },
+    {
+      "claim_id": "3c271be7-f51c-4d01-8813-e8e491bd68af",
+      "result_id": "f2bca115-ab14-4997-b9e6-64f32d2cc889"
+    },
+    {
+      "claim_id": "3a05de0c-6b19-4667-a4d1-958200c75413",
+      "result_id": "f2bca115-ab14-4997-b9e6-64f32d2cc889"
+    },
+    {
+      "claim_id": "a38ded1f-1549-4e93-8366-f67e7f9b060f",
+      "result_id": "f2bca115-ab14-4997-b9e6-64f32d2cc889"
+    },
+    {
+      "claim_id": "48d3d446-b86a-465c-b932-18892faaa363",
+      "result_id": "f2bca115-ab14-4997-b9e6-64f32d2cc889"
+    },
+    {
+      "claim_id": "d4f58acf-d2c7-4071-b07b-db903a893008",
+      "result_id": "a5da58b0-b26a-4b03-8514-ee5f267cc1e9"
+    },
+    {
+      "claim_id": "84f8bdd9-4fb1-4e2c-afdb-996876614df1",
+      "result_id": "a5da58b0-b26a-4b03-8514-ee5f267cc1e9"
+    },
+    {
+      "claim_id": "fc40f805-ef4d-4d7e-8ccd-3193d4048c3e",
+      "result_id": "a5da58b0-b26a-4b03-8514-ee5f267cc1e9"
+    },
+    {
+      "claim_id": "ec2ff19a-3272-4803-8b6f-04430e860741",
+      "result_id": "96e4ed12-58da-473b-bc7e-0afcd7755baa"
+    },
+    {
+      "claim_id": "3a77c625-f5aa-4289-8225-637c0b9f7ec6",
+      "result_id": "d9ef93b6-ce23-48b9-bc89-bcc3ed5679a0"
+    },
+    {
+      "claim_id": "f19537ee-d039-4a4c-aeeb-b7cbf558b07e",
+      "result_id": "d9ef93b6-ce23-48b9-bc89-bcc3ed5679a0"
+    },
+    {
+      "claim_id": "eb5e637d-a7d0-4c73-948d-b1ef41c7a570",
+      "result_id": "d9ef93b6-ce23-48b9-bc89-bcc3ed5679a0"
+    },
+    {
+      "claim_id": "9f3f4394-3e19-43cb-acb7-c3e9d4cacd26",
+      "result_id": "31e3666a-b558-48e9-b00b-5354b79a329b"
+    },
+    {
+      "claim_id": "9e5137ce-adbb-41e7-abc6-04343c6a17e7",
+      "result_id": "e84e11ea-2b75-40a2-bc3a-302ba9dfc302"
+    },
+    {
+      "claim_id": "443443df-5aa3-47d8-b20d-47634f2f4075",
+      "result_id": "e84e11ea-2b75-40a2-bc3a-302ba9dfc302"
+    },
+    {
+      "claim_id": "53bf9cc9-ff12-4e0a-b1ee-cb601a2b0041",
+      "result_id": "e84e11ea-2b75-40a2-bc3a-302ba9dfc302"
+    },
+    {
+      "claim_id": "1a68ae10-162f-4efb-a394-22bf67ee00b3",
+      "result_id": "e84e11ea-2b75-40a2-bc3a-302ba9dfc302"
+    },
+    {
+      "claim_id": "72f40362-7d7e-49a7-8bed-08eb5f658df9",
+      "result_id": "1b22f760-5360-46e0-89c2-4d57c8935c58"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "d6e8bdbd-04d8-4f95-a6b7-a7e7c2684ba2",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "b4e39f79-b079-4055-aa10-aede10c57d3d",
+      "peer_result_id": "9db9b1cf-2eb0-4003-8cc5-677277497963",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C2, C28-C30, C51 regarding pLDDT's predictive value for flexible residues. Both evaluations find this SUPPORTED. Peer Reviewer 1 explicitly identifies this as a strength, and OpenEval confirms support through correlation analysis in Figure 1.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "bf0f7883-1a3e-4061-9115-602d7cad2899",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "decf88d5-1ca9-4a25-b08d-b44291485169",
+      "peer_result_id": "96e4ed12-58da-473b-bc7e-0afcd7755baa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claim C42 regarding modest improvement for high-confidence AFm predictions. Both evaluations find this SUPPORTED. The editor and Reviewer 3 explicitly acknowledge this finding, consistent with OpenEval's analysis of Figure 5 data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "6c5fa1ba-f1d4-44f3-86ab-0fa8b18224e8",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "3f14254f-273a-43de-a4f5-1a868f07688c",
+      "peer_result_id": "d9ef93b6-ce23-48b9-bc89-bcc3ed5679a0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C44-C46 on CASP15 validation, but with different confidence levels. OpenEval finds SUPPORTED with caveats about reference structures. Peer review marks UNCERTAIN, with Reviewer 2 initially finding the presentation too brief and requesting more detail, though later satisfied after revision.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "da2db58e-08c1-41af-a9e5-4e5f23ced2f4",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "3b6c5447-5a7a-4a01-b479-3816ab53bafa",
+      "peer_result_id": "e84e11ea-2b75-40a2-bc3a-302ba9dfc302",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address dataset curation (C18-C21), but peer review raises additional concerns. OpenEval finds the methodology SUPPORTED. Peer Reviewer 3 marks UNCERTAIN, questioning whether full-length UniProt sequences were used and suggesting the antibody-antigen dataset could be expanded.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "a265b912-a998-4f9b-9828-a8787bd92411",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "8ea264a7-4839-4709-8cef-29dbd21d37c6",
+      "peer_result_id": "a5da58b0-b26a-4b03-8514-ee5f267cc1e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address antibody-antigen performance (C4-C5, C40-C41) and find it SUPPORTED. The editor finds this evidence 'particularly convincing,' and Reviewer 3 notes 'impressive increase,' though both acknowledge the small dataset size. OpenEval notes modest absolute success rates.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "5804ac06-4302-4fa8-bf3e-ae652e596d3a",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "de545a11-c041-4df1-b58b-ec005ba32f6e",
+      "peer_result_id": "f2bca115-ab14-4997-b9e6-64f32d2cc889",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address overall AlphaRED performance improvements (C3, C36-C39, C49) and find them SUPPORTED. Peer review notes ~25% more acceptable predictions but highlights that no models reach very high accuracy. OpenEval confirms clear improvement with magnitude varying by target difficulty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "809bab19-0a24-4d30-848b-5a59fb1fb7e7",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "adb3d244-a77d-4d28-82af-037568a33606",
+      "peer_result_id": "31d78477-52dd-41fc-8697-66cc866397c6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on interface-pLDDT metric (C33-C35, C50). OpenEval finds SUPPORTED based on ROC analysis in Figure 3. Peer review marks UNCERTAIN, with Reviewer 3 stating the metric is 'likely suboptimal' and requesting comparison with AFm-specific scores (ipTM, Ranking Confidence).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "7524edc8-68fe-4194-bd65-a0ea68993493",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "623c277f-0e76-4890-9984-a2e6ae251aba",
+      "peer_result_id": "31d78477-52dd-41fc-8697-66cc866397c6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claims C31-C32 about high-confidence AFm predictions with incorrect interfaces. OpenEval finds SUPPORTED as motivation for interface-specific metrics. Peer result R2 addresses broader interface-pLDDT concerns (C31-C35, C50) with UNCERTAIN evaluation due to Reviewer 3's methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "f2cf8df6-07ff-46e8-9b9a-2ad2cd50a89f",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "9fbea016-9eee-45a0-8806-8e1a34b293c6",
+      "peer_result_id": "1b22f760-5360-46e0-89c2-4d57c8935c58",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address computational cost comparisons (C53), but with different assessments. OpenEval finds SUPPORTED but notes indirect comparison (CPU vs GPU). Peer review marks UNCERTAIN, with Reviewer 3 stating 'estimates of computing costs for AFsample are incorrect' and requesting verification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "a15136cf-2118-499d-a2f0-51a21a4609de",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "3b6c5447-5a7a-4a01-b479-3816ab53bafa",
+      "peer_result_id": "31e3666a-b558-48e9-b00b-5354b79a329b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address training bias limitation (C22). OpenEval finds the acknowledgment SUPPORTED as part of dataset methodology. Peer review also marks SUPPORTED, with Reviewer 2 explicitly raising this concern and authors acknowledging it as a caveat.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "5f8f0fbe-5460-4cd9-8b35-c7852358488d",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "26a829c4-ffaa-413a-adfe-d7ca1ec94038",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C23-C24 on RMSD comparisons and AFm bias toward bound conformations SUPPORTED based on Appendix 1-figure 1. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "8b162cb1-1b19-44e9-b617-552903b3259d",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "f91f951c-7849-4385-a1ec-5a8d88b95888",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claim C43 on successful global docking case study SUPPORTED based on Figure 6a. No corresponding peer review evaluation found for this specific claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "4fcc0a2c-146b-4dec-90a3-4f3abf054cbb",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "f4fa90ab-3ea1-4e07-b8c4-f75443e112ad",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C59-C68 on AlphaRED technical implementation SUPPORTED, noting clear documentation but suggesting code availability would improve reproducibility. No corresponding peer review evaluation found for these technical details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "9a7c5456-b275-462c-9f81-e71aecdb3db0",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "10878a8b-62ab-486f-a298-ccf6c8911b22",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C71-C72 on prediction methodology SUPPORTED with adequate detail for reproducibility. No corresponding peer review evaluation found for these methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "7a3e934f-3f46-4f23-bcaf-f8703759ece4",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "f17ae586-eecd-45a5-8ade-073425a17e54",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C1, C10 citing prior work on AFm limitations SUPPORTED as appropriate contextualization. No corresponding peer review evaluation found for these background citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "c0f67027-075b-4a6d-8eff-3690b7503b1f",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "e14ace2d-f8a8-4fe8-ac05-ebe39bb68c6e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval marks claim C54 on future applications as UNCERTAIN, noting it is speculative without supporting data. No corresponding peer review evaluation found for this claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    },
+    {
+      "id": "1e04a8c4-db43-4b87-ac75-cb4c0bc939d5",
+      "submission_id": "7a11bcb8-54fc-4f35-9351-c884e02ff15d",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "cbb0c230-2346-4941-ac6e-eafe07a7341f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C6-C17, C25-C27, C47-C48, C55-C58, C69 providing background context SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:13.839663Z"
+    }
+  ]
+}

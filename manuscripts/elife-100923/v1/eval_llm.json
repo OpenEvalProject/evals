@@ -1,0 +1,397 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Single-cell RNA-seq analysis of TNBC identified 9 major and 29 minor cell clusters from 29,733 cells, with the immune microenvironment characterized by high proportions of T cells and macrophages. Ferroptosis-related genes showed significant differential expression across clinicopathological classifications and cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 provide comprehensive characterization of the single-cell landscape with specific quantitative results (cell numbers, cluster counts) and differential expression patterns. The findings are supported by data shown in Figure 1 and represent standard single-cell analysis workflows with appropriate quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "T cells in TNBC (n=11,784) were classified into three ferroptosis-related subpopulations (T_C1, T_C2, T_C3) using NMF algorithm, with T_C2 enriched for NK cells. Pseudotime analysis showed all three subpopulations participate in differentiation, and cycling T-cells showed significantly higher expression of functional genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 describe a coherent analysis of T cell subpopulations with specific quantitative results and methodological details. The use of NMF for subpopulation identification and pseudotime analysis are appropriate methods, with results supported by Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Transcription factor analysis revealed differential activities in T cell subtypes, with RFX5, EOMES, TBX21, CEBPB, RUNX3, and IKZF3 showing higher activities in NKT cells, while IRF, NFATC2, STAT, and PRDM1 showed higher activities in CD8+ T cells. These transcription factors are associated with ferroptosis regulation through pathways involving SLC7A11 and GPX4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 present direct observations from transcription factor activity analysis (Figure 2i), while C129-C132 provide mechanistic context from cited literature. The integration of observed TF activities with known ferroptosis mechanisms is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Macrophages (n=3,671) were classified into two ferroptosis-related subpopulations using NMF: FOLR2+MAC (M_C1) expressing FOLR2, SEPP1, MRC1, LYVE1, SLC40A1, and CD163, and TREM2+MAC (M_C2) expressing TREM2, FN1, CXCR4, C3, S100A8, IFI6, and SPP1. Pseudotime analysis showed M_C2 represents an early stage that develops into M_C1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 provide detailed characterization of macrophage subpopulations with specific marker genes and developmental trajectories. The analysis is methodologically sound with results shown in Figure 3, and the naming convention based on marker expression is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The two macrophage subpopulations showed significant negative correlation in enrichment scores (r=-0.779), vigorous communication with cancer epithelial cells, and differential transcription factor activities with most TFs showing higher activity in FOLR2+MAC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide quantitative correlation data and functional characterization of macrophage subpopulations. The negative correlation is precisely quantified, and the cell-cell communication and TF activity analyses are supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "FOLR2+MAC markers (FOLR2, SEPP1, MRC1, LYVE1, SLC40A1, CD163) are normally present in healthy mammary macrophages and correlate with favorable prognosis in breast cancer. FOLR2 is positively correlated with antitumor immune cells and immune pathways, and FOLR2+ macrophages are important for initiating antitumor immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are well-supported by multiple citations to prior literature (J\u00e4ppinen et al., 2019; Nalio Ramos et al., 2022; Wang et al., 2020). The characterization of FOLR2+MAC as favorable prognostic markers is consistent with established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "TREM2+MAC markers (TREM2, FN1, C3, CXCR4, SPP1, S100A8, IFI6) are lowly expressed in healthy breast tissue and highly expressed in tumors. TREM2 absence reshapes macrophage infiltration and enhances checkpoint blockade response, while S100A8+ infiltration and IFI6 expression are associated with poor prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by multiple citations to prior literature (Molgora et al., 2020; M\u00fcller et al., 2001; Nalio Ramos et al., 2022; Drews-Elger et al., 2014; Rigiracciolo et al., 2022; Davenport et al., 2023). The characterization of TREM2+MAC as tumor-associated with poor prognosis is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A risk score model was constructed using 23 genes selected by LASSO regression from 41 genes significantly associated with RFS (p<0.01) identified by univariate Cox regression. In the training set (GSE25066), high-risk patients had shorter RFS (p<0.05) with AUCs of 0.87, 0.88, and 0.88 for 3-, 4-, and 5-year RFS prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe a standard prognostic model development workflow with appropriate statistical methods (Cox regression, LASSO). The quantitative performance metrics are precisely reported and supported by Figure 4. The training set performance is excellent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C73"
+    ],
+    "result": "In external validation (GSE86166), the risk score model demonstrated AUCs of 0.65, 0.67, and 0.71 for 3-, 4-, and 5-year RFS prediction, with high-risk patients showing shorter RFS (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C9 and C73 report external validation results with modest AUCs (0.65-0.71), substantially lower than training performance (0.87-0.88). While statistical significance is maintained, the large performance drop suggests potential overfitting or limited generalizability. The model shows some predictive value but may require additional validation or refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The risk score was an independent prognostic factor in both training (GSE25066) and validation (GSE86166) sets. In GSE25066, both risk score and stage were independent factors, while in GSE86166, only the risk score remained significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 report multivariate Cox regression results showing the risk score maintains independent prognostic value after adjusting for clinical variables. The results are supported by Figure 5 and demonstrate clinical utility beyond standard staging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C108"
+    ],
+    "result": "ImmuneScore, StromalScore, ESTIMATEScore, and TumorPurity did not differ between risk groups. However, CIBERSORT analysis showed high-risk patients had higher proportions of T cells CD4 memory activated, NK cells resting, and monocytes, while low-risk patients had higher proportions of NK cells activated and mast cells resting, suggesting mast cells resting infiltration is favorable for prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C108 present immune infiltration analysis results supported by Figure 6. The lack of difference in overall immune scores but significant differences in specific cell types is biologically plausible and suggests the risk score captures specific immune features rather than overall immune content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C10"
+    ],
+    "result": "High-risk patients showed enhanced sensitivity to 27 therapeutic agents with significantly lower IC50 values, suggesting these patients may be more sensitive to these drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 and C10 report drug sensitivity predictions based on computational methods (pRRophetic). While the statistical associations are shown in Figure 7a, these are in silico predictions without experimental validation. The clinical relevance of these predictions requires prospective validation in patient cohorts or experimental models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Thirteen drugs positively associated with the risk score had significantly higher IC50 in high-risk patients, suggesting reduced sensitivity to these drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 report computational drug sensitivity predictions similar to C79-C80. The same limitations apply - these are in silico predictions requiring experimental or clinical validation before clinical application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "TIDE scores were not significantly different between low- and high-risk groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 reports a negative result from TIDE analysis (Figure 7c). This is clearly stated and suggests the risk score may not predict immunotherapy response, which is an important limitation to report.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "High-risk associated genes CDC25B, SPC25, and PTTG1 promote cell cycle progression and tumor proliferation. CDC25B activates CDK1/Cyclin B (overexpressed in breast cancer), SPC25 promotes proliferation through mitotic disorder and is associated with high recurrence and low survival, and PTTG1 promotes proliferation/migration/invasion and is a poor prognosis biomarker associated with high grade and lymph node metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 provide mechanistic context for high-risk genes based on well-cited literature (Cairns et al., 2020; Guo et al., 2022; Yang et al., 2022; Wang et al., 2019; Qi et al., 2019; Meng et al., 2020). These claims appropriately contextualize the model genes with established cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "High-risk patients showed sensitivity to ABT-263 (increases ROS and induces apoptosis) and erlotinib (EGFR TKI). ROS is a key regulator of ferroptosis, and EGFR promotes breast cancer through multiple oncogenic pathways. The high sensitivity to erlotinib may be due to higher EGFR expression in high-risk tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C117 provide well-cited mechanistic context for drug sensitivity findings. However, C118 is speculative about EGFR expression levels without direct evidence. The mechanistic rationale is sound but the specific drug sensitivity predictions require validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "TNBC is an aggressive malignancy lacking ER, PR, and HER2 expression, with poor prognosis (median survival <1 year after recurrent metastasis), high heterogeneity, and limited effective methods to predict prognostic risk and drug sensitivity. TNBC exhibits ferroptotic heterogeneity, but the TME mediated by ferroptosis-related genes remains poorly characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C13-C20 provide well-established background on TNBC characteristics supported by multiple citations. These claims accurately represent current knowledge and identify the clinical gap addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The TME is composed of various cell types (CAFs, TAMs, T cells, NK cells, B cells, endothelial cells) that interact with cancer cells and influence tumor progression, metastasis, and therapy response. TME composition varies greatly among breast cancer patients, and revealing individual TME characteristics is crucial for treatment selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 provide well-cited background on TME importance (Binnewies et al., 2018; Mao et al., 2021; Mayer et al., 2023; de Visser and Joyce, 2023; Yang et al., 2023b). These establish the rationale for TME characterization in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Ferroptosis is an iron-dependent, non-apoptotic form of regulated cell death involving lipid hydroperoxides. Drug-resistant cancer cells are more sensitive to ferroptosis, making it a potential therapeutic target. Ferroptotic heterogeneity exists in TNBC subtypes, but the ferroptosis landscape and its relationship with prognosis and treatment response remain unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide well-cited background on ferroptosis (Fang et al., 2023; Viswanathan et al., 2017; Hangauer et al., 2017; Kim et al., 2022; Tsoi et al., 2018; Yang et al., 2023a; Lu et al., 2022). These establish the scientific rationale for studying ferroptosis in TNBC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Single-cell RNA-seq enhances understanding of transcriptional heterogeneity and can explore TME, while bulk RNA-seq analyzes average expression to explore individual differences. Machine learning is increasingly used for cancer diagnosis, treatment, and prognosis. Several RNA-seq based prognostic models exist for breast cancer, but reproducibility and interpretability require further exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 provide methodological background supported by appropriate citations (Li et al., 2024; Ma et al., 2023; Chen et al., 2022; Janjic et al., 2022; Ching et al., 2018; Guan et al., 2024; Gao et al., 2024; Lei et al., 2022; Pei et al., 2023; Zhao et al., 2024). These establish the methodological rationale and identify limitations in existing approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study used nine scRNA-seq TNBC samples from GSE176078, bulk RNA-seq from GSE25066 (training) and GSE86166 (validation). Quality control filtered cells with <200 genes or >20% mitochondrial genes, identified top 2000 HVGs, and analyzed 391 of 471 ferroptosis-related genes from FerrDb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 provide clear methodological details about data sources and processing. The quality control criteria are standard for scRNA-seq analysis, and the data sources are properly cited and publicly available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "At the single-cell level, T cells were classified into three subpopulations and macrophages into two subpopulations, with infiltration degrees significantly correlated with clinical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C6 state that infiltration degrees are significantly correlated with clinical outcomes, but the manuscript does not provide direct statistical evidence linking the single-cell subpopulation infiltration to clinical outcomes in the scRNA-seq cohort. The connection is inferred through the bulk RNA-seq risk model, which is an indirect relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "NK cells have rapid and efficient antitumor immunity with activity negatively correlated with breast cancer progression. Altering macrophage or T-cell infiltration in different subpopulations could potentially improve TNBC patient prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are well-supported by citations (Bouzidi et al., 2021; Gong et al., 2022a; Guillerey et al., 2016). Claim C135 is appropriately framed as speculation about future therapeutic approaches based on the study findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "CXCL7 from monocytes stimulates cancer cell migration/invasion/metastasis. Mast cell effects on tumor invasiveness vary among breast cancer subtypes. TNBC treatment relies mainly on chemotherapy, while small molecule inhibitors and targeted drugs hold promise for high-risk patients. Intratumor heterogeneity contributes to poor outcomes, and ferroptosis is a major pathway in heterogeneous tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 and C119-C122 provide relevant biological context supported by appropriate citations (Wang et al., 2021; Bense et al., 2017; Majorini et al., 2020; Su et al., 2023; Wu et al., 2021; Zardavas et al., 2015). These contextualize the study findings within current knowledge.",
+    "result_type": "MINOR"
+  }
+]

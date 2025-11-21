@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C29"
+    ],
+    "result": "Targeted metabolomics analysis of Salmonella-infected macrophages revealed that \u03b2-alanine concentrations were significantly downregulated compared to mock-infected macrophages. Eight amino acids showed significant differences in abundance between the two groups, with \u03b2-alanine being one of five downregulated amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C29 are supported by LC-MS/MS metabolomics data presented in Figure 1C-D with appropriate statistical criteria (VIP >1, p<0.05, FC >1.5 or <0.667). The experimental design includes biological replicates (n=4) and proper controls (mock-infected vs. infected). The PCA analysis (C23, Figure 1B) demonstrates clear separation between groups, supporting the validity of the metabolomics approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "Exogenous \u03b2-alanine supplementation (1-4 mM) significantly enhanced Salmonella intracellular replication in RAW264.7 macrophages in a dose-dependent manner, suggesting that Salmonella utilizes host-derived \u03b2-alanine for intracellular growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are directly supported by experimental data in Figure 1E showing dose-dependent increases in bacterial replication with statistical significance (p<0.001). Claims C30, C33, and C37 are reasonable inferences from the combined metabolomics (decreased \u03b2-alanine in infected cells) and supplementation data. The experiments include appropriate replicates (n=3) and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Addition of 1 mM \u03b2-alanine to Salmonella-infected macrophages did not affect ROS/RNS levels or the percentage of M1/M2 macrophages, indicating that \u03b2-alanine does not alter the macrophage immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by experimental data in Figure 1\u2014figure supplements 1-2 showing no significant differences in ROS/RNS levels or M1/M2 macrophage percentages. Claim C36 is a reasonable inference from these data. The experiments include appropriate replicates (n=3) and proper controls, ruling out indirect effects of \u03b2-alanine on macrophage antimicrobial activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Unlike E. coli, Salmonella does not use CycA as a \u03b2-alanine transporter. The \u0394cycA mutant retained the ability to use \u03b2-alanine as a sole carbon source and showed no defects in intracellular replication or mouse colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41-C42 are supported by experimental data in Figure 1\u2014figure supplements 3-6 showing that the \u0394cycA mutant has no growth defect with \u03b2-alanine and no virulence attenuation. Claim C40 is a valid inference from these data. Claim C38 is supported by citation. The experiments include appropriate controls and statistical analyses (n=5 mice per group for in vivo studies).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "GabP, which transports the \u03b2-alanine structural analog GABA in E. coli, is not involved in \u03b2-alanine uptake in Salmonella. The \u0394gabP mutant showed no growth defect in minimal medium with \u03b2-alanine as the sole carbon source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by experimental data in Figure 1\u2014figure supplements 7-8. Claim C45 is a valid inference from these data. Claim C43 is supported by citation to Pavi\u0107 et al., 2021. The experimental approach is appropriate for testing transporter function, with proper controls and replicates (n=3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The \u0394argT mutant showed markedly decreased growth in minimal medium with \u03b2-alanine as the sole carbon source, suggesting that ArgT transports \u03b2-alanine in Salmonella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by experimental data in Figure 1F showing decreased growth of the \u0394argT mutant. Claim C47 is a reasonable inference from these data. However, the conclusion would be strengthened by complementation experiments and direct transport assays. The experiment includes appropriate controls and replicates (n=4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Expression of the panD gene (encoding L-aspartate decarboxylase) was significantly upregulated in Salmonella growing inside RAW264.7 macrophages and in N-minimal medium compared to rich medium, suggesting a relationship between panD expression and intracellular growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by qRT-PCR and bioluminescent reporter data in Figure 2B-D with statistical significance (p<0.01). Claims C52-C53 are reasonable inferences from these data. The experiments include appropriate biological replicates (n=3) and proper controls. N-minimal medium is an established model for intracellular conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The \u0394panD mutant showed a 2.4-fold reduction in replication in RAW264.7 macrophages at 20 hr post-infection compared to wild-type, with significantly fewer bacteria per infected cell. Complementation with panD restored replication ability, indicating that panD contributes to Salmonella replication in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by gentamicin protection assays (Figure 2E) and immunofluorescence analysis (Figure 2F-G) with strong statistical significance (p<0.001 and p<0.0001). Claim C55 demonstrates genetic complementation, strengthening the conclusion. Claim C58 is a valid inference. The experiments include appropriate replicates (n=3 for in vitro, n=80 cells for microscopy) and proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The \u0394panD mutant showed normal growth rates in LB and RPMI media, indicating that the impaired intracellular replication was not due to a general growth defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by growth curve data in Figure 2\u2014figure supplements 1-2. This is an important control demonstrating that the intracellular replication defect is specific to the intracellular environment rather than a general fitness cost. The experiments include appropriate replicates (n=4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The replication defect of \u0394panD in RAW264.7 cells was rescued by addition of 1 mM \u03b2-alanine to the culture medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by experimental data in Figure 2H. This is a critical experiment demonstrating that the replication defect is specifically due to \u03b2-alanine deficiency and can be complemented by exogenous \u03b2-alanine. The experiment includes appropriate replicates (n=3) and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Replication of S. Typhi \u0394panD in human THP-1 macrophages was reduced by 2.6-fold compared to wild-type, suggesting that panD also facilitates S. Typhi replication within human macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by experimental data in Figure 2\u2014figure supplement 3 with statistical significance (p<0.01). Claim C63 is a reasonable inference. This extends the findings to another Salmonella serovar and human macrophages, strengthening the generalizability of the results. The experiment includes appropriate replicates (n=4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "\u03b2-alanine synthesis is critical for Salmonella replication inside macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is a summary conclusion supported by multiple lines of evidence from claims C50-C63, including gene expression data, mutant phenotypes, complementation experiments, and rescue by exogenous \u03b2-alanine. The conclusion is well-supported by converging evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The \u0394panD mutant showed dramatically attenuated virulence in mice with 100% survival over 10 days (vs. 0% for WT), significantly reduced bacterial burdens in liver and spleen, increased body weight, fewer bacteria per macrophage, and reduced liver pathology. Complementation restored virulence, demonstrating that \u03b2-alanine synthesis is critical for systemic Salmonella infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C78 are supported by comprehensive in vivo data in Figure 3B-F including survival curves (log-rank test, p<0.0001), bacterial burden measurements, body weight monitoring, immunofluorescence microscopy (n=80 cells), and histopathology. Claim C79 is a valid conclusion. The experiments include appropriate sample sizes (n=10 for survival, n=7 for bacterial burden), proper controls, and complementation strains. The dramatic phenotype (100% vs. 0% survival) provides strong evidence for the importance of \u03b2-alanine synthesis in virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "RNA-seq analysis revealed that mutation of panD caused extensive transcriptional changes (1379 differentially expressed genes) affecting multiple metabolic pathways including amino acid metabolism, lipid metabolism, carbohydrate metabolism, energy metabolism, and nucleotide metabolism, indicating that \u03b2-alanine is involved in regulating diverse metabolic pathways in Salmonella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by RNA-seq data in Figure 4A-D with appropriate statistical criteria (fold change \u22652, p<0.05) and biological replicates (n=3). PCA analysis shows clear separation between groups. GO and KEGG enrichment analyses are appropriate methods for interpreting the transcriptomic data. Claim C83 is a valid inference from these comprehensive data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mutation of panD decreased expression of genes involved in seven virulence-associated pathways (methionine metabolism, fatty acid \u03b2-oxidation, histidine biosynthesis, zinc/galactose/potassium/polyamine transport) and the transcriptional regulator LeuO. qRT-PCR validation of 16 selected genes confirmed downregulation in \u0394panD, and complementation restored expression to wild-type levels, confirming positive regulation by \u03b2-alanine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C87, C89 are supported by RNA-seq data in Figure 4E. Claims C90-C91 are supported by qRT-PCR validation in Figure 4F with statistical significance (p<0.05) and appropriate replicates (n=3). Claim C92 is a valid conclusion. The qRT-PCR validation of RNA-seq results and complementation experiments strengthen the findings. However, the functional significance of these pathways for virulence requires further investigation (addressed in subsequent experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Expression of SPI-2 genes and other virulence-associated pathogenicity islands (SPI-1, SPI-3, SPI-4, SPI-5) was unaffected by panD mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by RNA-seq data in Figure 4\u2014figure supplements 1-3. This is an important negative result indicating that \u03b2-alanine does not affect virulence through the major pathogenicity islands, suggesting alternative mechanisms. The data are clearly presented and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "\u03b2-alanine promotes Salmonella intracellular replication and virulence by activating virulence-associated pathways or the regulator LeuO, rather than by activating expression of virulence genes in pathogenicity islands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is a reasonable inference from the combined RNA-seq data showing downregulation of specific metabolic pathways (C84) and LeuO (C87) but no effect on SPI genes (C94-C95). However, this remains a hypothesis that requires functional validation of the specific pathways, which is addressed in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Mutations in genes involved in fatty acid \u03b2-oxidation (fadAB), methionine metabolism (metR), histidine biosynthesis (hisABCDFGHL), potassium uptake (kdpABC), galactose uptake (mglABC), polyamine uptake (potFGHI), and the transcriptional regulator leuO did not affect Salmonella colonization in mouse liver/spleen or body weight of infected mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 are supported by mouse infection data in Figure 5A-C with appropriate sample sizes (n=5 mice per group) and statistical analyses. These are important negative results indicating that these pathways, despite being downregulated in \u0394panD, do not individually account for the virulence defect. This narrows the focus to the remaining pathway (zinc transport).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Mutation of the zinc transporter gene znuA significantly decreased Salmonella colonization in mouse liver and spleen and increased body weight of infected mice, indicating that \u03b2-alanine might promote Salmonella virulence in vivo by promoting zinc uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by mouse infection data in Figure 5D with statistical significance (p<0.001) and appropriate sample sizes (n=5). The results are consistent with previous studies (cited). Claim C103 is a reasonable inference. This identifies zinc transport as a key pathway linking \u03b2-alanine to virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Zinc concentration in macrophages of \u0394panD-infected mouse livers was 3.2-fold higher than in WT-infected mice, suggesting that panD and \u03b2-alanine are crucial for Salmonella to obtain zinc from host cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by experimental data in Figure 5E with strong statistical significance (p<0.0001) and appropriate sample size (n=5). Claim C105 is a reasonable inference. The accumulation of zinc in host cells when bacteria cannot take it up provides strong evidence for the role of \u03b2-alanine in zinc acquisition. However, the mechanism by which \u03b2-alanine affects zinc uptake requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The double mutant \u0394panD\u0394znuA showed significantly lower colonization and higher body weight in infected mice compared to the single mutant \u0394znuA, suggesting that the contribution of panD to Salmonella virulence is partially dependent on znuA and that \u03b2-alanine promotes virulence partially by increasing zinc transporter gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by mouse infection data in Figure 5D with appropriate sample sizes (n=5) and statistical analyses. Claims C108-C109 are reasonable inferences from the epistasis analysis. The double mutant experiment is a strong genetic approach to test the relationship between panD and znuA. The use of \"partially dependent\" is appropriate since the double mutant shows an additive effect, indicating that panD has znuA-independent functions as well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Zinc concentration in \u0394panD-infected RAW264.7 cells was 1.8-fold higher than in WT-infected cells, further indicating that panD and \u03b2-alanine are crucial for Salmonella to absorb zinc from macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by experimental data in Figure 6A with strong statistical significance (p<0.0001) and appropriate replicates (n=3). Claim C111 is a reasonable inference. This extends the in vivo zinc accumulation findings (C104) to the in vitro macrophage system, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Replication of the double mutant \u0394panD\u0394znuA in RAW264.7 cells was significantly reduced compared to the single mutant \u0394znuA, implying that the contribution of panD to intracellular replication is partially dependent on znuA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by experimental data in Figure 6B with appropriate replicates (n=3) and statistical analyses. Claim C113 is a reasonable inference from the epistasis analysis. This extends the in vivo epistasis findings (C106-C108) to the in vitro system, providing consistent evidence for the panD-znuA relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Addition of 100 \u03bcM zinc rescued the replication defect of \u0394panD in RAW264.7 cells, while addition of 1 mM \u03b2-alanine did not rescue \u0394znuA replication, suggesting that impaired replication due to \u03b2-alanine deficiency can be relieved by zinc supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by experimental data in Figure 6C-D with appropriate replicates (n=3) and statistical analyses. Claim C116 is a reasonable inference. These rescue experiments provide strong evidence for the epistatic relationship between \u03b2-alanine and zinc, supporting the model that \u03b2-alanine acts upstream of zinc uptake.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "\u03b2-alanine promotes Salmonella replication within macrophages by increasing the expression of zinc transporter genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is a summary conclusion supported by multiple lines of evidence including RNA-seq data showing znuABC downregulation in \u0394panD (C84), zinc accumulation in host cells infected with \u0394panD (C110), epistasis analysis with double mutants (C112-C113), and rescue experiments (C114-C116). The conclusion is well-supported by converging evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Salmonella promotes its replication inside macrophages by utilizing both host- and bacterial-derived \u03b2-alanine, which promotes intracellular replication and systemic infection partially by increasing expression of zinc transporter genes and facilitating zinc uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are summary conclusions integrating findings from the entire study. The utilization of both host- and bacterial-derived \u03b2-alanine is supported by the metabolomics data (C29), supplementation experiments (C31-C33), and panD mutant phenotypes (C54-C79). The mechanism involving zinc transporter genes is supported by RNA-seq (C84), epistasis analysis (C106-C113), and rescue experiments (C114-C116). The use of \"partially\" is appropriate given the epistasis data showing znuA-independent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Salmonella relies on a large amount of \u03b2-alanine to efficiently replicate in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 is explicitly stated as speculation in the manuscript. While the importance of both host- and bacterial-derived \u03b2-alanine is demonstrated, the claim about requiring \"a large amount\" is not quantitatively supported. The dose-response experiment (C31-C32) shows effects at 1-4 mM, but whether this represents a \"large amount\" relative to other nutrients is not established. This remains a reasonable hypothesis but lacks direct quantitative evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "\u03b2-alanine increases expression of zinc transporter genes znuABC, representing an additional mechanism for efficient zinc uptake by Salmonella in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is supported by RNA-seq data (C84) showing downregulation of znuABC in \u0394panD, qRT-PCR validation (C90-C91), and functional evidence from zinc accumulation experiments (C104, C110). The characterization as an \"additional mechanism\" is appropriate given that ZnuABC function was previously known, but the regulation by \u03b2-alanine is novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Utilization of \u03b2-alanine promotes Salmonella uptake of zinc, which is required for metabolic needs and to subvert antimicrobial defense of macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 integrates findings from the current study (\u03b2-alanine promotes zinc uptake) with previous knowledge about zinc's roles in Salmonella pathogenesis (cited as C124). The first part (\u03b2-alanine promotes zinc uptake) is well-supported by the current data. The second part (zinc's functions) relies on prior literature, which is appropriately cited. This represents a valid synthesis of new and existing knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The panD gene is present in all Salmonella strains and its mutation markedly reduces replication in macrophages and virulence in mice, suggesting it may be a potential target to control systemic Salmonella infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is stated as general knowledge about panD conservation. Claim C129 is a summary of experimental findings from the study (C54-C79). Claim C130 is explicitly stated as speculation about potential applications. While the conservation of panD and its importance for virulence support its potential as a therapeutic target, actual validation would require drug development and testing, which is beyond the scope of this study. The claim is appropriately framed as a possibility rather than a demonstrated fact.",
+    "result_type": "MINOR"
+  }
+]

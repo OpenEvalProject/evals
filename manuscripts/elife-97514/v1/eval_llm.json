@@ -1,0 +1,187 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C89",
+      "C90"
+    ],
+    "result": "The flagellar motor and chemoreceptor cluster colocalize at the same cell pole in P. aeruginosa. This was directly observed using fluorescent labeling of flagellar filaments and CheY-eYFP fusion proteins, with 145 cells showing consistent colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35, C36, C89, and C90 provide converging evidence from direct fluorescence imaging (Figure 1D) showing consistent colocalization in all 145 observed cells with labeled flagella. The methodology is appropriate and the quantitative data strongly support this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C93",
+      "C97",
+      "C98",
+      "C109"
+    ],
+    "result": "FlhF controls the polar distribution pattern of both the chemoreceptor cluster and flagellar motor, but has minimal impact on chemoreceptor assembly efficiency. In \u0394flhF mutants, both structures lose robust polar localization but maintain colocalization with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 provide experimental evidence from \u0394flhF mutants showing altered distribution (12.8% decrease in precise polar localization) while maintaining ~80% assembly efficiency and consistent colocalization (101/101 cells). Western blot data (C59) confirms this is not due to expression changes. The distinction between localization and assembly efficiency is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C68",
+      "C69",
+      "C100",
+      "C104",
+      "C108",
+      "C110"
+    ],
+    "result": "The structural integrity of the flagellar motor, specifically the MS ring (FliF) and C ring (FliG), is required for efficient chemoreceptor cluster assembly. Disruption of these core motor structures significantly reduces the proportion of cells with obvious chemoreceptor clusters (to ~60% in \u0394fliF and \u0394fliG, and ~50% in \u0394flhF\u0394fliF), while motor stator deletion has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 provide quantitative data showing significant decreases in chemoreceptor assembly in motor structure mutants but not in stator mutants. Western blot controls (C59, C68) confirm effects are not due to expression changes. The distinction between structural integrity and motor function is well-demonstrated. However, the mechanism remains unclear and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C73",
+      "C74",
+      "C75",
+      "C84",
+      "C87"
+    ],
+    "result": "Overexpression of CheY leads to elevated intracellular c-di-GMP levels and triggers cell aggregation. CheY overexpression increased c-di-GMP levels by 71.8% compared to wild-type, while cheY deletion decreased levels by 58.6%. Co-expression of phosphodiesterase mitigates the aggregation phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 provide quantitative measurements using a validated c-di-GMP biosensor (pCdrA-gfp). The dose-dependent aggregation (C84) and rescue by PDE co-expression (C87) provide strong supporting evidence. Sample sizes are adequate (N>198 for each condition). The causal link between CheY overexpression, c-di-GMP elevation, and aggregation is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C122"
+    ],
+    "result": "The colocalization of chemoreceptor cluster and flagellar motor enables threshold-limited cross-pathway regulation by CheY-P, avoiding signaling interference between multiple chemosensory pathways. At low concentrations, CheY-P regulates motor switching; at high concentrations, it triggers c-di-GMP expression and suppresses motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the colocalization is well-documented and the c-di-GMP connection is demonstrated, the mechanistic link between colocalization and prevention of cross-pathway interference is largely inferential. Claims C115-C117 propose a threshold model but lack direct experimental validation. The physiological significance arguments (C121-C122) are speculative. Additional experiments testing cross-pathway interference directly would be needed to support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C91",
+      "C92"
+    ],
+    "result": "Before cell division, P. aeruginosa assembles chemotaxis complexes and flagellar motors at both cell poles, ensuring daughter cells inherit complete motility and chemotaxis capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C91-C92 describe observations of bipolar assembly in pre-division cells, supported by fluorescence imaging data. This is consistent with the construction model presented in Figure 5A. However, the functional consequence (C38, C92) regarding daughter cell capabilities is inferred rather than directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C107"
+    ],
+    "result": "Chemoreceptor complex assembly does not affect flagellar assembly efficiency, and P ring deletion does not affect chemoreceptor assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by flagellar labeling in \u0394cheA mutants showing wild-type phenotype (Figure 3\u2014supplement 1). Claim C107 shows \u0394flgI mutants have similar chemoreceptor assembly to wild-type (Figure 3\u2014supplement 2). These reciprocal experiments establish independence in one direction and specificity for core motor structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "In \u0394flhF\u0394fliF double mutants, approximately 50% of cells show obvious chemoreceptor clusters, suggesting passive regulation by membrane curvature may contribute to chemoreceptor localization in P. aeruginosa, albeit to a lesser degree than active mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 provides quantitative data (~50% in double mutant vs ~90% in wild-type), but the interpretation (C71) that this represents membrane curvature effects is speculative. Alternative explanations for the residual 50% assembly are not excluded. The comparison to E. coli mechanisms is indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C131",
+      "C132"
+    ],
+    "result": "CheY-eYFP accurately marks the location of the chemoreceptor complex, as demonstrated by colocalization with CheA-CFP and polar localization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 show CheY-eYFP localization at cell poles in ~90% of cells. Claim C131-C132 demonstrate high spatial overlap between CheA-CFP and CheY-eYFP (Figure 1\u2014supplement 2), validating CheY-eYFP as a marker. The functional validation (C31) showing moderate chemotaxis on soft agar supports that the fusion does not severely disrupt function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The potential 100 ms reduction in CheY-P diffusion time due to colocalization has limited effect on overall chemotaxis timing in P. aeruginosa, given that chemotaxis temporal comparison operates on second timescales and motor switching intervals are 1-2 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 cite established timescale measurements from prior studies. Claim C81 provides a logical inference comparing these timescales. The reasoning is sound but relies entirely on literature values rather than new measurements. This argues against enhanced chemotaxis performance as the primary function of colocalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Flagellar filaments were labeled using sulfhydryl-maleimide conjugation with FliC cysteine mutants, and CheY-eYFP fusion with 3x glycine linker was used to visualize chemotaxis complex positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C125-C126) describe the experimental approach used throughout the study. The methods are clearly documented and build on prior work (Wu et al., 2021; Tian et al., 2022). The validation of CheY-eYFP as an accurate marker is provided elsewhere (C131-C132).",
+    "result_type": "MINOR"
+  }
+]

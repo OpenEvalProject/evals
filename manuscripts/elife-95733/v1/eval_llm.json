@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C71"
+    ],
+    "result": "The proposed memory model reinterprets grid cells as representing non-spatial attributes rather than spatial information, with place cells representing conjunctions of spatial and non-spatial attributes. Grid cells exhibit hexagonal spatial firing patterns due to feedback from hippocampal place cells arranged in a hexagonal lattice through memory consolidation processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 and C71 collectively describe the core theoretical framework of the model, which is internally consistent and clearly articulated. The model provides a novel interpretation that is logically coherent, though empirical validation of the non-spatial nature of grid cells remains a prediction rather than demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C91",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The model architecture uses border cells as primary spatial input to hippocampus, with place cells recruited during memory formation using Hebbian-like learning. Memory consolidation through pattern separation produces equally dissimilar memories arranged in a hexagonal lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 and C91-C100 describe the model architecture and learning mechanisms with appropriate citations to prior work. The model assumptions are clearly stated and mathematically specified, providing a coherent computational framework that can be implemented and tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C120"
+    ],
+    "result": "Model simulations demonstrate that grid patterns emerge immediately in novel environments with specific geometric properties: non-spatial attribute cells show immediate hexagonal grids, head direction cells form modules with three layers following face-centered cubic packing, and interior place cells arrange in precise hexagonal patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C110 and C120 report specific simulation results with quantitative measures (grid scores, spacing ratios, cell counts). The results are internally consistent and supported by figures showing firing maps and spatial autocorrelations. However, the simulations test the model's internal consistency rather than providing empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Simulations show differential time courses for grid field stabilization: non-spatial attribute cells produce immediate grid patterns while head direction cells require prior experience. Grid stabilization correlates with formation of exterior place cell memories that conform to enclosure borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 describe simulation results showing temporal dynamics of grid formation with reference to specific figures. The results are quantified with grid scores across sessions and demonstrate a mechanistic explanation for the differential stabilization rates. The findings are internally consistent with the model's assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Model simulations produce two types of place cells: 29 exterior place cells (active <2.5% of time) that fire near borders with high head direction selectivity, and 19 interior place cells (active >2.5%) with lower head direction selectivity, particularly at place field centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 report specific quantitative results from simulations with clear operational definitions (2.5% activity threshold). The results are supported by firing maps in Figure 10B showing the predicted properties. The findings follow logically from the model's consolidation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C40",
+      "C52"
+    ],
+    "result": "The model explains empirical findings about grid and border cell responses to enclosure manipulations, including rotation effects that depend on enclosure geometry and deformation effects that affect only some grid modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C40, and C52 cite empirical findings and explain how the model accounts for them through its assumptions about border cell alignment and multiple grid modules. The explanations are logically consistent with the model architecture, though they rely on specific assumptions about border cell organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C72",
+      "C73",
+      "C103"
+    ],
+    "result": "The model predicts that both place cells and grid cells lie on a toroidal manifold defined by circular border cell dimensions, providing one of the first computational explanations for the empirically observed toroidal population structure of grid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C72-C73, and C103 describe a model prediction that matches empirical findings (Gardner et al., 2022). The toroidal structure emerges naturally from the circular dimension assumptions. The claim of being 'one of the first' is appropriately hedged with citations to prior models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The model makes testable predictions: grid cells should revert to their underlying non-spatial receptive fields without hippocampal feedback, place cell fields should be hexagonally arranged for situations producing grid cell firing, and there should be one-to-one correspondence between grid fields and place fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 clearly state testable predictions that follow logically from the model's core assumptions. C82 notes that one prediction (head direction cells becoming active at all positions without hippocampal feedback) has empirical support from Bonnevie et al., 2013, providing some validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model predicts that hexagonal grid cells should be rare in naturalistic environments with varied non-spatial attributes, and that grid-like responses can occur in any highly familiar two-dimensional space without requiring spatial navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 state predictions that follow from the model's core assumption that hexagonal grids emerge only when non-spatial attributes are uniform across space. C86 cites empirical support for irregular multi-location firing fields (Diehl et al., 2017), consistent with the prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C92",
+      "C93"
+    ],
+    "result": "The model uses three non-orthogonal circular dimensions to achieve approximately Euclidean distance representations, in contrast to two orthogonal dimensions which produce city-block metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C92-C93 describe a design choice supported by empirical evidence that animals learn Euclidean representations (C36 with citations). Figure 3D demonstrates the Euclidean approximation quantitatively. The mathematical reasoning is sound and the choice is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The model accounts for empirical findings about grid and place cell dynamics: grids are less regular in novel environments, grid spacing shrinks with experience, grids appear immediately upon entry to novel environments, place cells slowly stabilize, and boundary encounters stabilize grid fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41, C53-C55 cite multiple empirical findings and explain how the model accounts for them through consolidation dynamics and boundary learning. Each claim is supported by appropriate citations and the explanations are consistent with the model's mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "The model relates grid cell modules to dense sphere packing in three dimensions (Kepler conjecture), predicting face-centered cubic or hexagonal close packing arrangements. Empirical data shows modules with spacing ratios of \u221a2, which differs from the model's predicted \u221a3 ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C51 describe empirical findings about grid modules and relate them to sphere packing theory. However, C51 notes a discrepancy between the model's prediction (\u221a3 spacing ratio) and empirical observations (\u221a2 ratio). The author proposes an alternative interpretation but this remains speculative and unvalidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The model explains grid-like responses in non-spatial domains (bird morphology space, odor space, visual search) as arising from the same memory consolidation mechanisms applied to two-dimensional non-spatial spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 cite empirical findings of grid-like responses in non-spatial domains and explain them through the model's general memory framework. The explanation is logically consistent with the model's assumptions, though it remains a post-hoc explanation rather than a prediction that was validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The model is consistent with findings that hippocampal inactivation eliminates grid responses and that place cells exist before grid cells during development, supporting the model's assumption that place cells drive grid cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 cite empirical findings that support the model's core assumption of hippocampal-to-entorhinal feedback. These findings are used to motivate the model architecture and are consistent with the model's predictions, though they were not generated by the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C77",
+      "C78"
+    ],
+    "result": "The model assumes that cells habituate to constant stimulation and adjust firing thresholds through divisive normalization and inhibitory interneurons, allowing grid cells to modulate activity based on memory feedback rather than constant bottom-up drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C77-C78 describe model assumptions about neural adaptation mechanisms, with C38 and C78 supported by appropriate citations to habituation and normalization literature. The assumptions are biologically plausible and necessary for the model to produce the observed firing patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript reviews prior literature establishing that MTL function differs between species (episodic memory in humans/primates vs. spatial navigation in rodents) and that spatial location is a powerful episodic retrieval cue, motivating the need for a unified memory-based account.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 accurately cite and summarize prior literature with appropriate references. The claims establish the scientific context and motivation for the proposed model. The literature review is balanced and acknowledges both memory and spatial navigation perspectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript correctly attributes the discovery of major cell types in the rodent navigation system: place cells (O'Keefe, 1976), grid cells (Hafting et al., 2005), head direction cells (Taube et al., 1990), conjunctive grid cells (Sargolini et al., 2006), border cells (Lever et al., 2009; Solstad et al., 2008), and object-vector cells (H\u00f8ydal et al., 2019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 provide accurate historical attributions with appropriate citations. These are factual claims about the discovery of cell types that are well-established in the literature and correctly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript reviews the functional distinction between lateral entorhinal cortex (LEC) providing non-spatial 'what' information, particularly about objects, and medial entorhinal cortex (mEC) providing spatial 'where' information, though acknowledging some overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C89-C90 accurately summarize the literature on LEC/mEC functional distinctions with appropriate citations. The claims acknowledge nuance (LEC provides some spatial information) and are used to motivate the model's reinterpretation of mEC function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The manuscript reviews empirical findings on head direction sensitivity in place cells, showing strong sensitivity in mazes and more complex sensitivity in open fields, and that removal of head direction input affects both place and grid cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 accurately cite empirical findings about head direction's role in place and grid cell responses. The citations are appropriate and the findings are used to justify including head direction as an input dimension in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C56",
+      "C57"
+    ],
+    "result": "The manuscript cites memory principles (encoding in novel situations, retrieval in familiar situations, pattern separation during consolidation) and perceptual phenomena (caricature effects) to support the model's consolidation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C56-C57 cite established findings from memory and perception literature with appropriate references. These principles are used to motivate the model's learning rules, though the application to spatial navigation is novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The manuscript cites evidence for non-spatial representations in MTL across species and for temporal representations in hippocampus, acknowledging limitations of the current model in addressing temporal aspects of episodic memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 accurately cite literature on non-spatial and temporal representations with appropriate references. C67 is used to acknowledge a limitation of the current model, demonstrating appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The manuscript cites findings about place field size changes with grid spacing manipulations, irregular grid patterns in flying bats, and mathematical results on sphere packing in four dimensions to support model predictions about irregular grids in higher-dimensional spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 cite relevant empirical and mathematical findings with appropriate references. The citations support the model's predictions about when regular hexagonal grids should and should not emerge, though the connections are somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C34",
+      "C37",
+      "C74",
+      "C75",
+      "C76",
+      "C80"
+    ],
+    "result": "The manuscript cites various supporting findings and methods (human reorientation difficulty, Grid Score measure, border cell properties, context effects, theta oscillations) that relate to model assumptions and predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C37, C74-C76, and C80 cite diverse literature that supports various aspects of the model or relates to its predictions. The citations are appropriate and accurately represent the cited work, though some connections (e.g., C80 on theta oscillations) are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The manuscript cites evidence that grid cells exist during sleep to contrast with the proposed memory model, which assumes grid patterns arise from memory feedback during active navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 accurately cites Gardner et al., 2019 regarding grid cells during sleep. This finding is acknowledged as a challenge for the proposed model, which emphasizes memory retrieval during active navigation, demonstrating appropriate consideration of contradictory evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The model assumes the enclosure width is half the period of circular border cells to reduce confusion between opposite sides of the enclosure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 clearly states a specific model assumption with clear rationale. This design choice is necessary for the model to avoid confusing opposite borders and is explicitly acknowledged as an assumption rather than an empirical constraint.",
+    "result_type": "MINOR"
+  }
+]

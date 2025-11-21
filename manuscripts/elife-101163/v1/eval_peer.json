@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C20",
+      "C58",
+      "C63"
+    ],
+    "result": "The study analyzed 15,000-21,000 single cells from three human male brains using ~31,000 X-chromosome fCpG sites as barcodes. The approach leveraged X-chromosome sites to overcome sparse single-cell methylation sequencing coverage (<5% of CpG sites), with cells having at least 500 covered fCpG sites and cell pairs sharing at least 30 common sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises significant concerns about data sparsity and representativeness, noting that 'methylation status is detected in only a small fraction (~500/31,000 = 1.6%) of fCpGs per cell, with only 48 common sites identified between cell pairs' and questions 'whether these fCpGs are truly representative' given the genome contains over 28 million CpG sites. Reviewer 2 also questions 'the confidence in determining methylation status (0 or 1) when a CpG site is covered by only one read' for X-chromosome sites. These methodological concerns about coverage and reliability are not adequately addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C13",
+      "C19",
+      "C25",
+      "C41",
+      "C47",
+      "C52"
+    ],
+    "result": "The authors claim that fCpG barcodes become polymorphic during development through DNA methylation replication errors, starting from a predominantly methylated progenitor state and becoming fixed when cells stop dividing. They argue these sites are neutral (predominantly intergenic) and can distinguish between thousands of cells more efficiently than mutations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 2 fundamentally challenges the conceptual foundation, stating 'DNA methylation is unstable across cell divisions and differentiation, and is hardly called barcodes' and that 'the use of \"Human Brain Barcodes\" in the title and across the whole paper lacks convincing evidence.' The reviewer emphasizes that 'barcodes should be stable in principle and not dynamic across cell generations' and that 'the unstable nature of CpG methylation would introduce significant problems in inferring the true cell lineage.' The editor notes 'the evidence supporting the claims of the author remains incomplete.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C22",
+      "C23",
+      "C24",
+      "C43",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors claim barcodes start methylated and record mitotic ages, with early-appearing neurons (PN, THM) showing higher methylation and later-appearing excitatory neurons and glial cells showing lower methylation. They interpret this as a 'stopwatch-like' pattern where barcode methylation indicates when different neurons appear during development.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 challenges the interpretation, stating 'the author assumed that the early-formed brain stem would resemble progenitors better and have a higher average methylation level than the forebrain - however, this difference in DNA methylation status could well reflect cell-type-specific gene expression instead of cell lineage progression.' Reviewer 1 notes 'inconsistent or erroneous use of neurodevelopmental concepts which hinders appropriate interpretation of the results.' The alternative hypothesis of cell-type-specific methylation patterns versus developmental timing is not adequately ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C73",
+      "C74",
+      "C84"
+    ],
+    "result": "The authors constructed phylogenetic trees from ~1000 cells that they claim resemble caudal to rostral brain development, with sequential branching of brainstem neurons, inhibitory neurons, excitatory neurons, and hippocampal neurons. However, bootstrap support was typically less than 15%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states 'the application to detect specific lineages is less convincing' and notes 'without addressing these problems it is challenging for a reader to come to the same conclusions as the author.' The authors themselves acknowledge 'the degree of confidence was generally low, with bootstrap branch support typically less than 15%' and that 'phylogenies are limited by sparse cell sampling and that barcodes may be similar by chance.' The low statistical confidence undermines the reliability of the inferred developmental patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors claim inhibitory neurons show more tangential migration than excitatory neurons, with related inhibitory neuron pairs found in the same cortical region ~25% of the time versus ~50% for excitatory neurons. They interpret scattered inhibitory neurons as evidence of tangential migration from ganglionic eminences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 questions the migration findings, asking 'how far away did the author mean for the tangential direction? Lateral dispersion is known, but it is hard to believe that the excitatory neurons travel across different brain regions.' The reviewer also asks 'how would the author interpret shared or divergent methylation for the same cell type across different brain regions?' The authors themselves acknowledge 'the extent of migration is uncertain due to sparse sampling and because barcodes can match by chance.' These limitations and alternative interpretations are not adequately addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C44",
+      "C45",
+      "C79",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors claim high lineage fidelity (>90%) for inhibitory neurons and evidence for both distinct progenitors for most inhibitory and excitatory neurons, as well as some common progenitors primarily for earlier emerging excitatory neurons. They document switching between inhibitory neuron subtypes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors themselves acknowledge 'the approach remains speculative due to several factors: the absence of direct experimental validation, limited experimental cell sampling, and the possibility that barcode similarities may arise by chance rather than reflecting true biological relationships.' Reviewer 2's fundamental concerns about methylation stability as a lineage marker apply to these lineage fidelity claims. Reviewer 1 notes the need for 'further elucidation' of 'biological relevance.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C89"
+    ],
+    "result": "The authors claim that methylation both demethylates and remethylates (fluctuates) rather than proceeding unidirectionally, as fully demethylated neurons were not observed and brain tumors maintained ~50% methylation. They argue epigenetic remodeling does not systematically alter fCpG sites because neurons of the same type were both closely and remotely related.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 2 emphasizes that 'the unstable nature of CpG methylation would introduce significant problems in inferring the true cell lineage' and notes 'this problem is even more concerning in the last section of the results, where CpG status fluctuates in post-mitotic cells.' The claim that fluctuating methylation can still serve as a reliable lineage marker contradicts the fundamental requirement for stable inheritance. The evidence that neurons of the same type show variable relatedness could equally support the interpretation that methylation patterns are unreliable for lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C66",
+      "C72"
+    ],
+    "result": "The authors report average pairwise differences (PWDs) of ~0.5 between cells, with about 10 closely related cell pairs per million (PWD <0.05). They show PWDs were lowest in brainstem cells, intermediate in inhibitory neurons, and highest in excitatory neurons. Closely related pairs were more frequent within brains than between brains.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges 'the correlation with cellular division and distinction of cell types appears plausible and strong.' These descriptive statistics about methylation patterns and their correlation with cell types are accepted by reviewers, though the interpretation of what these patterns mean for lineage relationships remains contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C55",
+      "C57",
+      "C81",
+      "C82",
+      "C83",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors suggest future improvements including combining mutations with fCpGs, targeted sequencing, and potential applications to other tissues and comparisons between individuals. They propose the brain's developmental pattern allows validation by sampling neurons that differentiated at different times.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are speculative suggestions for future work and methodological considerations. Reviewer 1 notes 'this novel application of fCpGs will allow the re-use of existing sc-MeSeq to infer additional features that were previously unavailable, once the biological relevance has been further elucidated.' The editor states the approach 'could be of broad interest to neuroscientists and developmental biologists' if clarified further. These forward-looking statements are not directly challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C16",
+      "C17",
+      "C18",
+      "C26",
+      "C42",
+      "C46",
+      "C56",
+      "C65"
+    ],
+    "result": "The manuscript presents established knowledge about brain development, DNA methylation biology, and references to prior studies on tangential migration and developmental patterns. These include statements about prenatal brain growth, caudal to rostral development, and the timing of different neuron populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature or basic biological facts. However, Reviewer 1 notes 'inconsistent or erroneous use of neurodevelopmental concepts' suggesting some of these established concepts may be misapplied in the interpretation of results.",
+    "result_type": "MINOR"
+  }
+]

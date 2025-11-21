@@ -1,0 +1,136 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C64",
+      "C65"
+    ],
+    "result": "ProtSSN is a novel pre-training framework that integrates sequential (linguistic) and geometric (topological) encoders using a funnel-shaped learning pipeline. The method combines protein language models (ESM2) with equivariant graph neural networks to encode both global AA interactions and geometry-aware local enhancements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states that ProtSSN is 'a valuable approach that generates protein embeddings by integrating sequence and structural information' and reviewers acknowledge the method as 'a denoising-style model that incorporates both structure and primary-sequence embeddings.' One reviewer notes 'the approach seems promising' and another confirms 'the authors describe a method that makes accurate mutation effect predictions by informing its predictions with structure.' No concerns were raised about the methodological framework itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C38",
+      "C52",
+      "C55"
+    ],
+    "result": "ProtSSN demonstrates exceptional predictive performance across over 300 deep mutational scanning assays with significantly fewer trainable parameters compared to other zero-shot learning methods. The model benefits from structure information to capture protein characteristics, outperforming large-scale language models and showing superior performance among non-MSA zero-shot methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the editor states 'the evidence supporting the authors' claims is compelling, with well-executed comparisons,' one reviewer raises significant concerns about missing comparisons: 'the best-performing methods on ProteinGym are excluded from the paper (e.g., EVE-based models and GEMME)' which 'outperform ProtSSN models.' Another reviewer notes that after revisions including SaProt, 'they see that SaProt performs similarly to their method,' suggesting the performance advantage may not be as exceptional as claimed. The lack of comparison with top-performing methods creates uncertainty about the claimed superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C69",
+      "C70",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors curate two new thermostability benchmarks (DTm and DDG) measuring \u0394Tm and \u0394\u0394G values respectively, comprising 66 protein-environment pairs with 2520 mutations (DTm) and 36 data points with 829 mutations (DDG). These low-throughput datasets emphasize experimental consistency and data accuracy, serving as valuable complements to ProteinGym.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer acknowledges 'the authors curate a new dataset of assays measuring thermostability' which 'can be used to validate and interpret mutation effect prediction methods in the future.' However, the same reviewer raises concerns: 'These new benchmarks contain on average measurements of less than a percent of all possible point mutations' and 'it is unclear what sorts of protein regions these mutations are more likely to lie in; therefore it is challenging to make conclusions about what a model has necessarily learned based on its score on this benchmark.' The reviewer also notes redundancy: 'several assays in this new benchmark seem to be similar to each other, such as four assays on ubiquitin performed in pH 2.25 to pH 3.0.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "ProtSSN demonstrates consistency in providing high-quality fitness predictions of thermostability, achieving top performance with minimal variance in bootstrapping experiments (50% sampling for 10 independent runs).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor notes that ProtSSN demonstrates 'improved prediction of mutation effects on thermostability compared to competing models' and reviewers do not challenge the consistency or stability claims. One reviewer states 'I think the rounds of review have improved the paper,' suggesting acceptance of the robustness analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ablation studies show that integrating equivariance significantly improves performance, hidden representations outperform hardcoded attributes, six EGNN layers are sufficient, and ESM2-t33 (650M parameters) achieves optimal performance with best stability, while larger models (3B parameters) show performance degradation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the ablation study results. One reviewer appreciates 'the breadth of the analysis and comparisons to other methods' and notes 'the authors separate tasks, models, and sizes of models in an intuitive, easy-to-read fashion.' No concerns were raised about the specific ablation findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ProtSSN shows robustness to variations in input protein structures, with minimal performance difference between AlphaFold2 and ESMFold-derived structures across all benchmarks. The performance difference for ESM-if1 and MIF-ST is 3-5 times higher than ProtSSN.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the robustness claims regarding different folding methods. The editor confirms 'the evidence supporting the authors' claims is compelling' and no specific concerns were raised about the structure folding comparison experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "ProtSSN outperforms MSA-based methods across taxa except for viruses, where precise identification of conserved sites in spike proteins is crucial for positive mutations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not directly challenge this specific claim, one reviewer raises fundamental concerns about MSA-based method comparisons, questioning 'Do MSAs and other embedding methods lead to some notable type of data leakage? Does this leakage qualify as \"x-shot\" learning under current definitions?' This suggests uncertainty about the validity of comparisons with MSA-based methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ProtSSN is pre-trained on 30,948 experimental protein structures from CATH v4.3.0 with <40% sequence identity, excluding proteins exceeding 2000 AAs, using frozen ESM2-t33 for node feature extraction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the training data or preprocessing details. One reviewer initially requested more methodological detail but later stated 'My concerns have been addressed,' suggesting acceptance of the training procedure description.",
+    "result_type": "MINOR"
+  }
+]

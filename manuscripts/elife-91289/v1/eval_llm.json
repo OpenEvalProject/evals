@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C58"
+    ],
+    "result": "Four missense mutations in ZC3H11A (c.412G>A, c.128G>A, c.461C>T, c.2239T>A) were identified in four patients from a cohort of 1015 adolescents with high myopia by whole exome sequencing. These mutations exhibit low population frequencies, high predicted pathogenicity, localization to conserved amino acids and functional domains, and structural impacts on protein conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16-C20 provide converging genetic, bioinformatic, and structural evidence supporting ZC3H11A as a candidate gene. The mutations are rare (C16), predicted pathogenic (C17), located in conserved regions and functional domains (C18-C19), and cause structural changes (C20). However, the study lacks segregation analysis and comprehensive clinical phenotyping (C103), limiting causal inference. The identification is supported but requires functional validation and family studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C21",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Zc3h11a+/- mice exhibit a myopic phenotype characterized by significantly increased refraction and axial length at weeks 4 and 6, with deeper vitreous chambers, while anterior chamber depth, lens diameter, and body weight remain unchanged. Retinal structure and histomorphology are preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C24 demonstrate statistically significant myopic shifts in Zc3h11a+/- mice with appropriate controls and measurements (Figure 2). The lack of gross structural changes (C21, C96) validates the model for studying refractive development (C97). However, the transient nature of axial length differences (only at weeks 4 and 6) is acknowledged as potentially due to technical limitations (C93), and the study lacks long-term follow-up (C104). The phenotype is supported but incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C59",
+      "C99"
+    ],
+    "result": "Zc3h11a+/- mice show impaired bipolar cell function and reduced bipolar cell numbers, evidenced by decreased ERG b-wave amplitudes at specific light intensities, reduced PKC-\u03b1 protein abundance, while photoreceptor function (a-wave) and cone/rod markers remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 provide consistent functional (ERG) and molecular (immunofluorescence, western blot) evidence for bipolar cell-specific deficits. The selective reduction in b-wave but not a-wave amplitudes (C26-C27) and decreased PKC-\u03b1 (C28-C29) with preserved photoreceptor markers (C30) support cell-type specificity. However, the mechanistic link between Zc3h11a loss and bipolar cell dysfunction is not directly demonstrated, remaining inferential (C31, C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C100"
+    ],
+    "result": "Transmission electron microscopy reveals ultrastructural abnormalities in Zc3h11a+/- mice, including damage to bipolar cells in the inner nuclear layer (enlarged perinuclear gaps, cytoplasmic edema) and photoreceptor membrane disc disruption, while the outer nuclear layer remains morphologically normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide detailed TEM evidence of cellular damage in specific retinal layers. The observations are consistent with functional deficits (bipolar cell dysfunction from Result 3). However, the interpretation that membrane disc damage impairs visual function (C36) is inferential and not directly tested. The structural findings support cellular pathology but lack quantitative analysis and functional correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C101"
+    ],
+    "result": "RNA sequencing of Zc3h11a+/- mouse retinas identified 769 differentially expressed genes (303 upregulated, 466 downregulated). GO enrichment analysis revealed significant enrichment in zinc ion transport, RNA metabolism, NF-\u03baB signaling regulation, and calcium ion binding. KEGG pathway analysis indicated involvement of PI3K-AKT and MAPK signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C37-C43 present comprehensive transcriptomic data with appropriate statistical thresholds (FC\u22652, p<0.05). The enrichment analyses (GO and KEGG) are standard and properly conducted. However, the study lacks validation of key differentially expressed genes beyond the pathways examined in subsequent experiments. The inference of dysregulated pathways (C101) is preliminary and requires further validation, though the data quality appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C60",
+      "C62",
+      "C87"
+    ],
+    "result": "Zc3h11a negatively regulates PI3K-AKT and NF-\u03baB signaling pathways. In Zc3h11a+/- mice, PI3K, p-AKT/AKT, and NF-\u03baB expression are upregulated while Zc3h11a and I\u03baB\u03b1 are downregulated. Mutant ZC3H11A proteins show reduced nuclear I\u03baB\u03b1 mRNA levels, suggesting impaired mRNA export contributes to pathway dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide qPCR and western blot evidence for pathway activation in Zc3h11a+/- mice. The transfection experiments (C50) support a mechanistic link between ZC3H11A mutations and I\u03baB\u03b1 mRNA export. However, the proposed mechanism (C62, C87) remains partially inferential, as direct measurement of I\u03baB\u03b1 mRNA nuclear export was not performed in the mouse model. The pathway dysregulation is well-supported, but the precise molecular mechanism requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "Myopia-related factors Tgf\u03b21, Mmp2, and Il6 are upregulated in the retina and sclera of Zc3h11a+/- mice, accompanied by disorganized scleral collagen fibers. This suggests Zc3h11a mutation participates in myopia development through NF-\u03baB pathway-mediated upregulation of these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide qPCR, western blot, and TEM evidence for increased myopia-related factors and scleral structural changes. The data are consistent with the pathway dysregulation identified in Result 6. However, the causal relationship (C57) is inferential and not directly tested through intervention studies. The correlation between pathway activation and myopia factor expression is supported, but causality remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C63",
+      "C64",
+      "C94"
+    ],
+    "result": "The authors propose a mechanistic model where Zc3h11a loss leads to impaired I\u03baB\u03b1 nuclear export, resulting in PI3K-AKT activation and NF-\u03baB pathway dysregulation. This promotes Tgf\u03b21 expression, which further activates PI3K-AKT, creating a feed-forward loop that drives Mmp2 and Il6 expression and early high myopia development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65, C94 present an integrated mechanistic model synthesizing the experimental findings. While individual components are supported by data (Results 5-7), the complete pathway and feed-forward mechanism are largely inferential. The model lacks direct experimental validation of the proposed sequence of events, intervention studies to disrupt specific pathway components, or temporal analysis of pathway activation. The model is plausible but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior literature establishes that ZC3H11A regulates NF-\u03baB signaling through I\u03baB\u03b1 mRNA export, I\u03baB\u03b1 inhibits NF-\u03baB nuclear translocation, and AKT promotes I\u03baB\u03b1 degradation to enhance NF-\u03baB activity. Decreased Zc3h11a inhibits I\u03baB\u03b1 nuclear-to-cytoplasmic translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C85-C86 accurately cite established literature on ZC3H11A function and PI3K-AKT-NF-\u03baB pathway interactions. These provide appropriate context for the experimental findings. The citations appear accurate and relevant to the study's mechanistic framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Prior studies demonstrate that Tgf\u03b21 is elevated in myopia models, Mmp2 and Il6 are regulated by NF-\u03baB and can induce myopia, and inhibiting Mmp2 or Il6 provides some control over myopia progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C89-C91 cite relevant prior literature establishing the roles of these factors in myopia. The citations provide appropriate context for interpreting the upregulation of these factors in the Zc3h11a+/- model. The literature support appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "ZC3H11A is a zinc finger protein family member involved in stress responses and mRNA export. Multiple zinc finger proteins are associated with myopia, including ZC3H11B (a human homolog), ZNF644, and ZENK. Prior studies show reduced Zc3h11a expression in induced myopia models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70, C75-C79 provide appropriate background on ZC3H11A and related zinc finger proteins in myopia. The citations appear accurate and establish the rationale for investigating ZC3H11A. This contextualizes the gene selection and study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Refractive development is visually controlled through complex retina-to-sclera signaling. Optical information is processed by the retina and converted to molecular signals regulating growth. All retinal cell types contain myopia-related genes, and bipolar cell damage may impair visual signal processing, contributing to high myopia pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 accurately cite established knowledge about visual control of eye growth and retinal signaling in myopia. Claim C84 is an inference connecting the observed bipolar cell damage to myopia pathogenesis, which is plausible given the established framework but not directly tested. The background is accurate, though the mechanistic link remains inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C88"
+    ],
+    "result": "PI3K-AKT is a critical pathway for cell survival and differentiation. ZC3H11A dysfunction enhances NF-\u03baB signaling and inflammation-related gene expression in vitro. Myopia patients show increased inflammatory cells and immune dysfunction. Traditional Chinese medicines can control myopia by suppressing AKT and NF-\u03baB-mediated inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C71-C74, C88 cite relevant literature establishing the roles of these pathways in cellular function, inflammation, and myopia. The citations provide context for the pathway-focused investigation. The literature support appears accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C103",
+      "C104"
+    ],
+    "result": "The study has several acknowledged limitations: homozygous knockout mice were not obtained due to embryonic lethality, axial length differences were detected only at weeks 4 and 6 (possibly due to technical resolution limits), patient examinations were incomplete without segregation analysis, and observation time was limited without assessment of late refractive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C103-C104 transparently acknowledge study limitations. These are appropriate caveats that contextualize the findings. The technical limitations (C93) are supported by citations, and the acknowledgment of incomplete clinical data (C103) and limited follow-up (C104) is important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C105"
+    ],
+    "result": "High myopia is a severe refractive error (\u2264-6.00 D or axial length >26 mm) causing irreversible visual impairment. Myopia prevalence ranges from 10-30% in adults to 80-90% in East/Southeast Asian youth, with projected 938 million cases by 2050. HM causes various ocular complications. Approximately 20 genes are associated with syndromic HM, but known genes explain only ~20% of cases. The causes are complex, involving multiple tissues and pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C15, C105 provide standard background on myopia epidemiology, clinical features, and genetics. The definitional and epidemiological claims are supported by appropriate citations. The projection (C12) is speculative but cited. This background accurately frames the study's context and rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C102",
+      "C106"
+    ],
+    "result": "The findings offer potential therapeutic intervention targets for controlling high myopia development. The identification of the PI3K-AKT-NF-\u03baB pathway may open opportunities for prevention and treatment. Future research will likely identify more genes and mechanisms for clinical intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C102, C106 are speculative statements about potential future applications and research directions. These are appropriate concluding remarks that acknowledge the translational potential while recognizing the need for further work. The speculation is reasonable given the findings but does not constitute a testable result.",
+    "result_type": "MINOR"
+  }
+]

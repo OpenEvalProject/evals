@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C44",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors developed a novel level-set-based meshing scheme that creates a homeomorphic map between a unit sphere and the embryo surface at each timepoint, enabling the definition of quasi-Lagrangian markers without cellular segmentation. Validation against cellular junction tracking shows the relative displacement between markers and junctions remains under 8% on average, with this accuracy being independent of particle number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 provide quantitative validation data showing <8% relative displacement with independence from particle number (Figures 1c-d). Claims C33, C44, C47 describe the methodology with appropriate citations. Claims C125-C129 acknowledge limitations (small deformation assumption, temporal sampling requirements) which strengthens credibility. The validation is rigorous despite acknowledged approximations in junction identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The strain rate tensor field is computed from the velocity field of tracked surface particles and decomposed into eigenvalues/eigenvectors to derive a scalar strain rate field. This field enables unified description of cell-level and tissue-level dynamics, though accuracy depends on spatial and temporal sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 describe the mathematical computation with appropriate citations (Mancinelli et al., 2018). Claims C59-C63 explain the eigenvalue decomposition and scalar field derivation with mathematical rigor. Claim C130 is supported by citation (Blanchard et al., 2009). Claims C131-C132 appropriately acknowledge accuracy dependencies and capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The computed scalar strain rate field corresponds well with known features of ascidian development, including endoderm invagination at the vegetal pole, synchronized cell divisions at the animal pole, and neural plate zippering, as visualized in spatiotemporal heatmaps (Figure 2b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 describe qualitative correspondence between computed fields and known biology, supported by Figure 2b and citations to prior work (Sherrard et al., 2010; Hashimoto et al., 2015). The visual evidence in Figure 2b shows clear spatiotemporal patterns matching described biological processes. This provides important validation of the method's biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Spherical harmonics decomposition of the strain rate field enables spatial spectral analysis, producing time series coefficients for each harmonic mode. This represents the first comprehensive time series-based description of morphogenesis and enables compressed representation, though challenges exist in mode selection and interpretability depending on embryo alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 establish the mathematical foundation with appropriate citations. Claims C133-C135 describe benefits with data support. Claim C134's novelty claim ('first comprehensive time series-based description') is qualified appropriately ('to the best of our acknowledge'). Claims C136-C139 honestly acknowledge challenges (mode selection, alignment dependence), which strengthens credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C90"
+    ],
+    "result": "Variance analysis of spherical harmonic modes reveals that Y\u2080\u2080 (embryo-wide activity, 64.4% variance) and Y\u2081\u2080 (animal/vegetal poles, 4.1% variance) are the dominant modes. Their antiphased temporal dynamics indicate that sporadic cell divisions dominate morphological activity but coexist with slower, localized processes like endoderm invagination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide quantitative variance ratios and describe temporal patterns from Figure 3b data. Claim C86 connects positive peaks in f\u2081\u2080(t) to cell divisions with citation support (Jeffery, 1992). Claim C87 provides biological context from literature. Claim C90 synthesizes the coexistence of multiple processes. The interpretation is well-supported by the data and consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Wavelet transform (using Ricker wavelet) of spherical harmonic time series produces time-frequency scalograms that decompose signals into canonical high- and low-frequency components mappable to biological processes. This approach has been underused in developmental biology despite success in other biological fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C93 establish context with appropriate citations. Claims C142-C144 describe the methodology and outputs with data support from Figures 4a-d. Claim C145 is appropriately marked as speculation about optimization. The wavelet analysis produces interpretable scalograms that successfully identify developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "Wavelet analysis of f\u2080\u2080(t) identifies two major phases of ascidian development (gastrulation and neurulation) separated by a transition phase. Within gastrulation, two sub-phases are identified: endoderm invagination followed by blastophore closure, supported by topological analysis of embryonic holes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 describe patterns in Figure 4a-b scalograms with clear visual support. Claim C99 connects timing to biological processes with additional topological validation (Figure 4b). Claim C100 provides biological definition. The identification of blastophore closure as a distinct phase is a novel finding supported by multiple lines of evidence (timing, topology, morphological activity patterns).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C38",
+      "C123"
+    ],
+    "result": "The method successfully recovers the two-step process of endoderm invagination originally described by Sherrard et al. (2010): apical constriction followed by apicobasal shortening. Wavelet analysis of f\u2082\u2080(t) during invagination (Figure 4d) shows timing consistent with cell shape ratio analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 cites prior work (Sherrard et al., 2010) establishing the two-step mechanism. Claims C104, C38, and C123 show the method recovers this known process, validated by Figure 4d scalogram and cell shape analysis (Figure 4b). This provides strong validation of the method's ability to detect known biological processes and demonstrates biological interpretability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "Application to MEK kinase-inhibited mutant embryos shows altered morphogenetic dynamics: reduced Y\u2081\u2080 variance (1.65% vs 4.1% in WT), absence of vegetal pole invagination activity in f\u2081\u2080(t) scalogram, and timing of second developmental phase coinciding with major cell division wave, consistent with disrupted endoderm invagination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 establishes the experimental perturbation with citation (Guignard, 2020). Claims C110, C112-C113 describe results from Figure 5 with quantitative variance comparisons and scalogram interpretations. The mutant analysis demonstrates the method can detect phenotypic differences and is consistent with known effects of MEK inhibition on endoderm specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C121",
+      "C122",
+      "C124"
+    ],
+    "result": "The complete workflow (level-set meshing \u2192 strain rate computation \u2192 spherical harmonics \u2192 wavelet analysis) produces automated spatiotemporal scalograms that identify and classify morphogenetic events in ascidian development, including distinguishing gastrulation/neurulation phases, identifying blastophore closure as a novel stage, capturing cell division patterns, and distinguishing short-scale from low-frequency processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C31-C32, C35-C37 describe the overall workflow and outputs. Claims C39-C40, C121-C122, C124 enumerate specific capabilities demonstrated in the results. The method successfully identifies known processes (endoderm invagination, cell divisions) and novel findings (blastophore closure stage), supported by multiple figures and validation against prior work. The automation claim (C119) is supported by the workflow description.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The workflow provides a fully automated, hands-off approach that compresses developmental dynamics into single-image scalograms, enabling rapid comprehension of morphogenesis essence compared to traditional manual observation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 describe methodological advantages supported by the demonstrated workflow and results. The scalograms in Figures 4-5 demonstrate the compression capability. However, the claim of 'unprecedented hands-off approach' (C119) may be somewhat overstated given that parameter selection (time windows, normalization, harmonic mode selection) still requires expertise, though this is acknowledged in C145.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Traditional morphogenesis analysis methods (qualitative observation, basic statistics) are time-consuming, unfit for scale, lack standardization, cannot handle overlapping spatiotemporal events, and are not automated, though they have successfully advanced the field to its current state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C10-C11, C115-C118 provide critical assessment of traditional methods based on established understanding and logical inference. Claim C116 appropriately acknowledges the success of traditional methods while noting limitations. These claims provide important motivation for the new method but are primarily based on general knowledge rather than systematic comparison or quantitative evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Strain rate computation requires fiducial markers on the embryo surface, a requirement not always met in developmental imaging. Additionally, stochastic processes like proliferation can uneven marker distribution, compromising accuracy of mechanical indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe technical challenges based on continuum mechanics principles (C41) and biological reality (C42-C43). These are logical inferences about limitations of traditional approaches that motivate the level-set solution. The claims are reasonable but represent problem statement rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The resulting scalogram heatmaps could be used for downstream analyses including deep neural networks for variational studies comparing WT and mutant embryos, or for examining single-cell morphological behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C148 are explicitly speculative (evidence_type: SPECULATION) about potential future applications. While the suggestions are reasonable given the data format produced, no evidence is provided that these applications have been tested or validated. These represent promising directions but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C46",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C91",
+      "C100",
+      "C114"
+    ],
+    "result": "Background and context claims about morphogenesis, developmental biology methods, microscopy advances, continuum mechanics framework, spectral decomposition benefits, and ascidian development characteristics, supported by extensive literature citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C7-C30, C46, C72-C75, C91, C100, C114) provide field context and theoretical foundation, supported by appropriate citations to prior work. They establish the scientific background and motivation but do not represent novel findings of this study. The claims are well-supported by literature but are primarily review/context rather than new results.",
+    "result_type": "MINOR"
+  }
+]

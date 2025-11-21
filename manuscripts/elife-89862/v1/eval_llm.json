@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The manuscript establishes the context that while loss of microbial diversity is associated with various human diseases, the ecological mechanisms driving this diversity reduction remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 accurately reflect the current state of knowledge in the field. C1 represents established scientific consensus about disease-microbiome associations, and C2 identifies a genuine knowledge gap that motivates the study. These are well-supported background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study compiled and filtered 2893 publicly available stool metagenomes from 13 studies, ultimately analyzing 408 deeply sequenced metagenomes from 10 studies representing healthy (n=229), IBD (n=101), and non-IBD (n=78) individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe the dataset composition and quality control procedures. The exclusion of samples with <25 million reads (C29) is justified to improve assembly quality and reduce correlation between sequencing depth and population estimates. The final dataset composition is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The estimated number of microbial populations based on single-copy core genes was higher in healthy individuals than those diagnosed with IBD, consistent with reduced microbial diversity in IBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by data in Appendix 1-figure 1 and aligns with previous literature (Kostic et al., 2014; Nagalingam and Lynch, 2012; Knox et al., 2019). This finding validates the dataset and confirms expected diversity patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The authors developed a per-population copy number (PPCN) normalization method that estimates the proportion of microbes with particular metabolic capacities by normalizing module copy numbers by the estimated number of populations, validated using simulated metagenomic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe a novel methodological contribution. The PPCN method is clearly defined (C72) and validated using simulated data (C73, Appendix 2). This normalization is critical for comparing metabolic potential across samples with different diversity levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Without normalization, module copy numbers were higher in healthy samples with weak differential occurrence between cohorts, but PPCN normalization reversed this trend, revealing most metabolic modules were elevated in IBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate the importance of PPCN normalization. The reversal of trends after normalization (C35) is supported by Figure 2 and Appendix 1-figure 5, showing that raw copy numbers are confounded by differences in microbial diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A set of 33 metabolic modules were significantly enriched in IBD metagenomes, with 17 matching previously identified HMI-associated modules. The majority (23/33) encoded biosynthetic capabilities, primarily for amino acid metabolism (33%), carbohydrate metabolism (21%), and cofactor/vitamin biosynthesis (15%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe a core finding. The statistical approach (Wilcoxon test with FDR-adjusted p<2e-10 and effect size threshold >0.12) is stringent. The overlap with Watson et al., 2023 (C37) provides independent validation. The functional categorization (C38-C39) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Contrary to previous reports based on reference genomes, amino acid synthesis and carbohydrate metabolism were not reduced in the IBD gut microbiome, aligning instead with recent findings of increased amino acid secretion potential in IBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 highlight a discrepancy with earlier studies (Gevers et al., 2014; Morgan et al., 2012) but align with more recent work (Heinken et al., 2021). This difference may reflect methodological improvements (metagenome-based vs. reference genome-based approaches) and represents an important refinement of understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The 33 IBD-enriched modules form an interconnected metabolic network, with each module sharing on average 25.6% of enzymes and 40.2% of metabolites with other enriched modules, and overall 18.2% of enzymes and 20.4% of compounds being shared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe the metabolic network properties of enriched modules. The quantitative analysis of shared components is documented in Supplementary file 2a. This interconnectedness suggests coordinated metabolic capabilities rather than isolated functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Per-cohort analysis showed that all cohorts within a given group exhibited similar PPCN distributions, indicating the observed trends result from between-group differences rather than cohort-specific biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 addresses potential batch effects and cohort biases, a critical concern in meta-analyses. The per-cohort analysis (Appendix 1-figure 6B and C) demonstrates consistency across cohorts, strengthening confidence in the biological signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "A smaller proportion of genes resolved to known functions in healthy samples compared to IBD samples, and 84% of KEGG modules had significantly lower median copy numbers in the healthy group after normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 identify a potential bias in functional annotation. The authors acknowledge this issue and discuss two hypotheses to explain it, but cannot definitively determine the source or full implications. This represents an important limitation that warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "From 338 gut-associated GTDB reference genomes (76.3% Firmicutes, 17.8% Bacteroidetes, 5.9% Proteobacteria), 17.5% (59 genomes) were classified as HMI using an 80% completeness threshold for the 33 modules. HMI genomes were larger (3.8 vs 2.9 Mbp) and encoded more genes (3634 vs 2683) than non-HMI genomes, and were consistently higher in detection and abundance in IBD samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 describe the reference genome analysis. The HMI classification threshold (C76) is acknowledged as arbitrary with limitations (C77), notably failing to classify some Bacteroides species as HMI despite their IBD association. However, genomes classified as HMI showed consistent enrichment in IBD (C78), validating the approach despite its limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "HMI reference genomes were present in a significantly higher proportion of IBD samples compared to non-HMI genomes (p<1e-5), and the fraction of HMI populations was significantly higher in IBD samples compared to non-IBD and healthy samples (p<1e-24). In healthy individuals, HMI and non-HMI populations were detected similarly (p=0.267).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 provide strong statistical evidence for differential distribution of HMI populations across health states. The read recruitment analysis with appropriate statistical tests (Wilcoxon rank-sum, Kruskal-Wallis) supports the conclusion that HMI populations are enriched in IBD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The intestinal environment of healthy individuals likely supports both HMI and non-HMI populations through metabolic interactions like cross-feeding. Loss of such interactions is associated with IBD, consistent with the enrichment of cobalamin biosynthesis modules (top two HMI-associated modules) in IBD, as cobalamin auxotrophy and cross-feeding are common in gut bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide an ecological interpretation supported by data (C52) and literature (Marcelino et al., 2023; Degnan et al., 2014a; Magn\u00fasd\u00f3ttir et al., 2015; Kelly et al., 2019). The cobalamin biosynthesis example (C55-C56) provides specific mechanistic support for the cross-feeding hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A logistic regression classifier trained on PPCNs of 33 HMI-associated modules achieved 85.6% accuracy and 0.832 AUROCC in distinguishing IBD from healthy samples (76.8% sensitivity, 89.5% specificity), outperforming or matching previous classifiers while using fewer features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C57-C61 describe the classifier performance. The 25-fold cross-validation (Figure 4) provides robust performance estimates. Comparisons with previous studies (C59-C60) are appropriately documented. The simpler model with fewer features (C61) is an advantage for interpretability and potential clinical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Repeated sample-split validation (1000 iterations) showed that 89.4% (95% CI: 87.5%-91.3%) of modules identified as IBD-enriched in training sets remained significant in validation sets, indicating the approach yields stable and statistically significant results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 address the important issue of selection bias when testing hypotheses on the same data used for selection. The repeated sample-split analysis provides strong evidence for the stability and validity of the identified modules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C62",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The HMI-based classifier tracked gut microbiome recovery following antibiotic treatment in an independent dataset, with classification patterns corresponding to species richness decline and recovery. All pretreatment samples were classified as healthy, declining to a minimum at day 8 post-treatment, then recovering to >90% healthy by day 180, suggesting HMI indicates general gut stress regardless of source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C62, C64-C66 demonstrate the classifier's generalizability to a different stress condition (antibiotics vs. IBD). The correspondence with species richness patterns from Palleja et al., 2018 (C64) provides independent validation. This supports the interpretation that HMI reflects general gut stress (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68"
+    ],
+    "result": "Environmental stress in the human gut\u2014whether from inflammation, cancer, or antibiotic use\u2014promotes survival and expansion of HMI populations. HMI serves as a high-level metric to classify gradients of human health states that is robust to ethnic, geographical, or lifestyle factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C67-C68 represent the study's overarching conclusions. These are supported by convergent evidence from multiple analyses: metagenome-level enrichment (C36), genome-level validation (C50-C51), classifier performance across diverse cohorts (C57-C58), and generalization to antibiotic stress (C64-C65). The robustness claim (C68) is supported by the meta-analysis design spanning multiple cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The reduction in microbial diversity (dysbiosis) is an emergent property of microbial communities responding to disease pathogenesis or external factors that disrupt the gut ecosystem. This paradigm depicts microbes as bystanders rather than drivers of noncommunicable diseases and provides an ecological framework to explain diversity reduction in IBD and other diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present the study's conceptual framework. This interpretation is supported by the data showing HMI enrichment under stress and is consistent with recent literature on disrupted cross-feeding (Heinken et al., 2021; Marcelino et al., 2023). However, the 'bystander' interpretation (C70) is a hypothesis that requires further testing\u2014the data show correlation but do not definitively establish causality or rule out microbial contributions to disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The authors acknowledge that survival in disturbed gut environments likely requires additional functions beyond the 33 metabolic modules considered, and that there may be multiple ways to achieve metabolic independence, meaning some HMI populations were likely not identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 represent important limitations acknowledged by the authors. The 33-module set is a useful but incomplete proxy for HMI. This honest assessment of limitations strengthens the overall credibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Previous IBD classifiers achieved maximum accuracy of 77% and AUROCC of 0.92, but were limited by small sample sizes from single regions, reliance on difficult-to-reproduce metabolomics data, or complex k-mer models without resolution for health gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 provide context for the current study's contribution by reviewing previous classifier approaches. The critique is fair and well-supported by citations, highlighting genuine limitations in translational potential and ecological interpretability of prior work.",
+    "result_type": "MINOR"
+  }
+]

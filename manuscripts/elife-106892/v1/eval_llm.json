@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study used time-resolved tmFRET with TCSPC to measure conformational energetics of the CNBD in full-length SthK channels (SthKFull) and compared them to the C-terminal fragment (SthKCterm). The presence of transmembrane domains in SthKFull makes the activating conformational change in the CNBD more favorable by approximately -1 kcal/mol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 describe the core experimental approach and main finding. The experimental methodology (tmFRET with TCSPC, donor-acceptor labeling) is clearly described and executed. The key conclusion about transmembrane domain coupling is supported by quantitative energetic measurements showing \u0394G differences between SthKFull and SthKCterm constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "TCSPC provides several methodological advantages over frequency-domain FLIM measurements, including ~10-fold lower protein concentration requirements, better-defined noise characteristics (Poisson distribution), and improved background fluorescence accounting. TCSPC data can be fit to obtain distance distributions that account for conformational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 establish the technical advantages of TCSPC. The practical benefits (lower protein concentration, better noise characterization) are supported by the instrument specifications and statistical theory. The ability to extract distance distributions is demonstrated throughout the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In heterotetrameric SthKCterm with a single labeled subunit, TCSPC measurements detected cAMP-induced conformational changes in the CNBD. The donor-only lifetime was best fit with a double exponential decay (17.6 ns and 4.73 ns components), and addition of acceptor-labeled protein showed decreased lifetimes upon cAMP binding, indicating shorter donor-acceptor distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 describe validation experiments in SthKCterm. The experimental design (heterotetramers to eliminate intersubunit FRET) is sound, and the observed cAMP-dependent lifetime changes are consistent with FRET principles. Control experiments (donor-only) show expected behavior, supporting the validity of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C45",
+      "C47",
+      "C49",
+      "C50"
+    ],
+    "result": "Distance distributions from TCSPC data were fit with a two-Gaussian model representing resting and active states. The fits converged with reduced \u03c7\u00b2 near 1, and distance parameters were similar to previously published frequency-domain results. Computational predictions using chiLife showed remarkable similarity to experimental distance distributions, and the KD value was comparable to previous steady-state tmFRET measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 validate the TCSPC approach by comparison to prior methods and computational predictions. The good fit quality (\u03c7\u00b2 \u2248 1), consistency with frequency-domain measurements, and agreement with structural predictions provide strong convergent evidence. The similar KD values across methods support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Intersubunit FRET was detected in heterotetramers with a single donor and three acceptors. The measured distance distributions aligned well with chiLife predictions, with the closest intersubunit distances dominating the FRET signal. This demonstrates that intersubunit FRET must be considered when analyzing homotetrameric SthK data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 establish the presence and characteristics of intersubunit FRET. The experimental design specifically tests for this effect, and the results align with computational predictions and FRET theory (closest distances dominate). This is an important methodological finding for interpreting homotetrameric data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "There are only minimal differences in the distance distributions between resting and active states when comparing homotetrameric and heterotetrameric SthKCterm protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by the comparison of distance parameters (r\u0304 and \u03c3 values) between the two constructs shown in Figures 2C and 4C, which are within ~1.5 \u00c5. This validates that the homotetrameric construct, despite having intersubunit FRET, reports similar conformational states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Full-length SthKFull protein with Acd incorporation was successfully expressed and purified. In-gel fluorescence confirmed Acd incorporation, Coomassie staining showed <15% truncated subunits, and size exclusion chromatography indicated monodispersed, well-behaved protein without aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 describe protein quality control. Multiple orthogonal methods (fluorescence, Coomassie, SEC) confirm successful protein preparation. The small proportion of truncated protein is acknowledged and unlikely to significantly affect the measurements given the tetrameric nature of the channel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C69"
+    ],
+    "result": "TCSPC measurements of SthKFull showed cAMP-dependent decreases in fluorescence lifetime similar to SthKCterm. The dose-response relationship yielded KD = 0.52 \u03bcM, comparable to SthKCterm but lower than wild-type SthK electrophysiology measurements (KD = 1.5 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C69 demonstrate successful FRET measurements in full-length channels. The cAMP-dependent lifetime changes follow expected trends. However, the authors appropriately note caution in interpreting absolute KD values due to high CNBD affinity and protein concentration uncertainties (C69), which is a reasonable limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Energetic analysis reveals that in SthKCterm, the resting-to-active transition is unfavorable without ligand (\u0394G = +1.15 kcal/mol) and favorable with cAMP (\u0394G = -1.87 kcal/mol). In SthKFull, the transition is less unfavorable without ligand (\u0394G = +0.22 kcal/mol) and more favorable with cAMP (\u0394G = -2.87 kcal/mol), suggesting ~-1 kcal/mol stabilization from pore coupling. The \u0394\u0394G values are very similar between constructs (-3.03 vs -3.10 kcal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 present the key energetic findings. The calculations are based on well-defined experimental measurements (fA2 values from distance distributions) using the Boltzmann relationship. The similar \u0394\u0394G values despite different \u0394G values support the modular gating model and indicate that coupling affects basal energetics but not ligand-induced changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "Donor-acceptor distances were remarkably consistent across all constructs (within ~1.5 \u00c5) in both apo and cAMP-bound conditions. The stabilization of the active state in SthKFull relative to SthKCterm was observed in both the absence and presence of cAMP (not cAMP-dependent). Consequently, \u0394\u0394G was the same for both constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C79-C80 synthesize key findings about the nature of domain coupling. The consistency of distances across constructs validates the structural similarity of conformational states, while the cAMP-independent nature of coupling provides mechanistic insight. These conclusions are well-supported by the quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The observed intersubunit FRET required incorporation into the FRET model for fitting lifetime data. While all fits converged with \u03c7\u00b2 near 1, representing intersubunit distances as a single additional acceptor may not fully capture the distance distribution in tetrameric protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 acknowledge both a methodological necessity and limitation. The need to account for intersubunit FRET is demonstrated experimentally (C51-C55), and the simplification to a single additional acceptor is a reasonable approximation given the good fit quality, though the authors appropriately note this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The data showing more favorable CNBD activation in full-length channels are consistent with a model where the resting CNBD works to close the pore. Similar conclusions were reached for HCN1 and spHCN channels where deleting C-terminal domains gave more favorable pore activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 interpret the energetic findings in the context of allosteric models and compare to related channels. The interpretation is consistent with the data (more favorable CNBD activation when pore is present), and the comparison to HCN channels (supported by citations) provides independent validation of the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The study has limitations: FRET reporters were only in the CNBD from a single donor-acceptor pair, and no cooperativity between subunits was observed for CNBD conformational changes. Future work should include FRET reporters in C-linker and pore, and investigate where intersubunit cooperativity arises.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 appropriately acknowledge study limitations and suggest future directions. The single donor-acceptor pair limitation is inherent to the focused approach, and the lack of observed cooperativity is a valid negative result. The suggested future experiments are logical extensions.",
+    "result_type": "MINOR"
+  }
+]

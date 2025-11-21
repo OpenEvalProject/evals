@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Signal detection theory simulations demonstrate that conservative criterion placement inflates neural measures of both conscious and unconscious processing compared to liberal criterion placement. When the criterion shifts from conservative to liberal, average signal strength decreases in both 'seen' and 'unseen' response categories, leading to counterintuitive effects on neural effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are well-supported by the simulation results shown in Figure 1. The signal detection theory framework clearly demonstrates the predicted effects, and the authors correctly note this consequence has not been previously highlighted in consciousness literature despite being implied by signal detection theory. The simulation methodology is sound and the conclusions follow logically from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Two EEG experiments were conducted using rapid serial visual presentation (RSVP) of oriented textures. Experiment 1 (N=16) used a detection task with payoff-based criterion manipulation (40ms target duration), while Experiment 2 (N=26) used the Perceptual Awareness Scale (PAS) with explicit instructions to respond according to experience (30ms target duration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 describe the experimental design and are well-documented in the Methods section and Figure 2. The experimental procedures are clearly described with appropriate detail about stimulus parameters, task instructions, and criterion manipulations. The designs are appropriate for testing the hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "The criterion manipulation successfully induced strong criterion shifts in both experiments, with concomitant increases in hits and false alarms under liberal versus conservative conditions, while sensitivity (d') remained largely unchanged. Effect sizes confirmed much larger effects on criterion (Exp1: g=2.84; Exp2: g=2.02) than on sensitivity (Exp1: g=0.30; Exp2: g=0.42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C59 are strongly supported by the behavioral data in Figure 2C-D and signal detection theory analyses. The manipulation checks demonstrate successful criterion shifts with minimal sensitivity changes, which is essential for isolating criterion effects. The effect size calculations appropriately quantify the manipulation success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C6",
+      "C100"
+    ],
+    "result": "All levels of the Perceptual Awareness Scale (PAS) were affected by criterion shifts, showing concomitant increases in both hits and false alarms across PAS0-PAS3 responses. This occurred despite explicit instructions to respond only according to experience, demonstrating that the PAS does not guard against criterion confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C6, C100 are well-supported by the behavioral data from Experiment 2 shown in Figure 2D. The finding that all PAS levels show criterion effects is novel and important. However, the authors acknowledge (and critics have noted) that the specific instructions and feedback used may differ from standard PAS implementation, which could limit generalizability. Despite this caveat, the result challenges assumptions about PAS robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "EEG classification analysis used leave-one-person-out cross-validation with LDA classifiers trained on occipitoparietal electrodes to discriminate target from no-target trials. Three classification performance peaks were identified at 137, 266, and 430ms with similar topographic patterns across experiments. Trial counts were equated between conditions to control for signal-to-noise differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 describe the neural analysis methodology, which is appropriate and well-controlled. The leave-one-person-out cross-validation maximizes training data while ensuring independence. Trial count equation is a critical control. The identification of three temporal peaks with consistent topography across experiments (Figure 3A) provides confidence in the reliability of the neural measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A 2\u00d72\u00d72\u00d73 ANOVA revealed significant main effects of criterion on neural classification performance after post hoc sorting, with higher performance for conservative versus liberal conditions. Criterion effects occurred at late latencies (266, 430ms) but not early (137ms), and interacted significantly with visibility and latency but not experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 report the primary statistical results supporting criterion effects on neural measures. The ANOVA design is appropriate, and the results clearly demonstrate the predicted criterion effects. The temporal specificity (late but not early latencies) and the three-way interaction with experiment and visibility are important nuances. Statistical reporting is complete with F-values, p-values, and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Without post hoc sorting on responses, there was no main effect of criterion on classification performance (F1,40=1.16, p=0.29), and if anything the effect was in the opposite direction. This confirms that criterion effects observed with post hoc sorting are due to the sorting procedure itself, not general differences in neural sensitivity between conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe a critical control analysis shown in Figure 3C. This control effectively rules out the alternative explanation that conservative conditions simply have better neural decoding overall. The absence of criterion effects without post hoc sorting, combined with opposite-direction trends, strongly supports the interpretation that post hoc sorting creates the observed confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "In Experiment 1 (detection task), criterion strongly interacted with visibility (F1,15=11.06, p<0.01), with significant criterion effects only in the 'unseen' condition at late latencies (266, 430ms) but not in the 'seen' condition or at early latency (137ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by the experiment-specific ANOVA and post-hoc tests shown in Figure 4A. The finding that criterion effects are specific to the 'unseen' condition in the high-sensitivity detection task is important for understanding how experimental context modulates criterion confounds. Statistical evidence is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "In Experiment 2 (PAS task), criterion interacted with visibility (F2.29,41.37=2.86, p=0.06), with criterion effects predominantly in the 'seen' conditions (PAS1-3) at late latencies but not in the 'unseen' condition (PAS0), showing an opposite pattern to Experiment 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by the experiment-specific ANOVA and post-hoc tests shown in Figure 4B. The opposite pattern from Experiment 1 (effects in 'seen' rather than 'unseen') is a key finding that motivates the follow-up simulations. The marginally significant interaction (p=0.06) is appropriately interpreted in context of the clear post-hoc effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Follow-up simulations manipulating sensitivity while keeping response thresholds constant showed that when sensitivity is low, criterion shifts have larger effects on 'seen' neural measures, whereas when sensitivity is high, criterion shifts have larger effects on 'unseen' neural measures. This demonstrates that sensitivity changes can differentially impact neural measures in 'seen' and 'unseen' conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are well-supported by the simulation results in Figure 4C-D. These simulations provide a mechanistic explanation for the differential effects observed between Experiments 1 and 2. The simulations are appropriately designed to isolate the effect of sensitivity, and the results clearly demonstrate the predicted patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Follow-up simulations manipulating overall criterion placement while keeping sensitivity constant showed that when the overall criterion is conservative, criterion shifts have larger effects on 'seen' neural measures, whereas when the overall criterion is liberal, criterion shifts have larger effects on 'unseen' neural measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are well-supported by the simulation results in Figure 4E-F. These simulations demonstrate an additional factor (overall criterion placement) that modulates where criterion confounds manifest. The simulations appropriately isolate this factor and demonstrate clear differential effects on 'seen' versus 'unseen' conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Criterion shifts differentially confound neural measures of conscious and unconscious processing depending on both overall criterion and sensitivity. The direction of influence is counterintuitive and difficult to predict. The higher sensitivity in Experiment 1 versus Experiment 2 explains why criterion effects appeared in 'unseen' versus 'seen' conditions respectively, consistent with simulation predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 synthesize the simulation and empirical findings. The explanation linking differential sensitivity between experiments to the observed pattern of results is compelling and well-supported by the simulations in Figure 4C-D. The conclusion that these factors cannot be controlled in principle (criterion) or practice (sensitivity) is justified, though somewhat pessimistic about potential solutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C4",
+      "C5"
+    ],
+    "result": "Post hoc sorting on 'seen' and 'unseen' responses causes neural effect sizes to become stronger under conservative compared to liberal response criteria. This was demonstrated through both simulations and empirical data from two experiments, confirming that criterion shifts confound neural measures of conscious and unconscious processing under post hoc sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93, C4-C5 represent the core findings of the manuscript. These are strongly supported by converging evidence from simulations (Figure 1) and two independent experiments with different response scales (Figures 2-4). The methodological controls (trial count equating, independent training data, control analyses without post hoc sorting) strengthen confidence in the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C94",
+      "C95",
+      "C98",
+      "C110"
+    ],
+    "result": "Criterion placement threatens the construct validity of neural measures of conscious and unconscious processing. These confounds potentially contaminate existing studies using post hoc sorting approaches, and the omnipresence of arbitrary criterion placement due to non-perceptual influences means subjective measures do not reliably measure the construct they intend to measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C94-C95, C98, C110 represent the main conclusions about implications for the field. These are well-supported by the empirical findings, though they represent strong interpretive claims. The authors appropriately cite numerous studies that could be affected. The conclusion about construct validity is justified given the demonstrated confounds, though some may debate whether this completely invalidates subjective measures or whether solutions exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C103",
+      "C105",
+      "C107",
+      "C108"
+    ],
+    "result": "Arbitrary criterion placement is intrinsic to decision making and affected by many uncontrolled factors including base-rate, signal-to-noise ratio, payoff matrix, and task instructions. There is no criterion-free experimental context, and criterion shifts occur naturally across experiments even without explicit manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97, C103, C105, C107-C108 are supported by established signal detection theory principles and cited empirical work. These claims provide important context for why the demonstrated confounds are problematic - criterion cannot be eliminated or fully controlled. The claims are appropriately supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "Criterion shifts threaten the construct validity of the PAS specifically. Similar effects have been shown for confidence judgments, where payoff and base-rate induced criterion shifts affect confidence distributions even when perceptual experience is not affected. Without resolving the criterion problem, experiments remain open to critique about whether participants adopted the subjective scale as intended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101-C102, C104 extend the findings to the PAS and related subjective measures. The empirical evidence from Experiment 2 supports the PAS-specific claims, though with caveats about the specific implementation. The citations to work on confidence judgments (C101-C102) appropriately contextualize the findings within broader issues with subjective measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Peters and Lau (2015) proposed a potential solution combining objective first-order judgments with criterion-free subjective measures using betting paradigms. However, saving the construct validity of subjective measures requires solving the criterion problem through properly defined experimental procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C115 discuss potential solutions but remain somewhat speculative. The authors appropriately describe the Peters and Lau approach but express uncertainty about whether it truly solves the problem. The claim that solving the criterion problem is necessary (C114-C115) is more of a recommendation than an empirically tested result. These represent important discussion points but lack the empirical support of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C29",
+      "C37",
+      "C38",
+      "C42"
+    ],
+    "result": "Post hoc sorting based on 'seen'/'unseen' judgments is a hallmark approach in consciousness research, but cognitive and response biases strongly affect criterion placement. While the criterion problem has been known since signal detection theory and hypothesized to underlie subjective threshold effects, the specific effect of criterion placement on neural measures under post hoc sorting has never been explicitly investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C29, C37-C38, C42 establish the background and novelty of the work. These are appropriately supported by citations to relevant literature. The claim of novelty (C3, C42) appears justified - while criterion effects are well-known, their specific consequences for post hoc sorted neural measures had not been systematically investigated. This establishes the importance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction provides historical context about consciousness research, including the rejection of introspectionism and behaviorism, the development of the contrastive approach, debates between objective and subjective threshold approaches, and the rise of post hoc sorting methods that have been used to propose phenomena like unconscious working memory, error detection, and arithmetic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C32 provide historical and theoretical background. These are appropriately supported by citations to relevant literature and represent accurate characterizations of the field's development. While these are primarily review/background claims rather than novel findings, they are important for contextualizing the current work and are accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C39"
+    ],
+    "result": "Arbitrary criterion placement influences decisions about stimulus presence/absence even when consciousness is not affected. Two stimuli undergoing identical processing may be reported differently depending on criterion. Perceptual decisions can be motivated by non-perceptual information like payoff or base-rate, and most consciousness researchers believe such criterion shifts do not involve changes in conscious perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C39 establish key theoretical principles about criterion effects. These are well-supported by signal detection theory (C39) and empirical citations (C35-C36). The survey of consciousness researchers (C36) provides useful context about field consensus. These claims appropriately set up the motivation for investigating criterion effects on neural measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C109",
+      "C116",
+      "C117"
+    ],
+    "result": "The current experiments can be viewed as a caricature of actual experimental practice. Many researchers view subjective measures as crucial for consciousness research, yet experimental contexts inducing conservative responses overestimate neural correlates of both conscious and unconscious conditions, while liberal contexts do the reverse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C109, C116-C117 provide important framing and summary of implications. The characterization as a 'caricature' (C106) appropriately acknowledges that the experimental manipulation is more extreme than natural variation, while still being relevant to actual practice. The summary of main findings (C116-C117) accurately reflects the empirical results.",
+    "result_type": "MINOR"
+  }
+]

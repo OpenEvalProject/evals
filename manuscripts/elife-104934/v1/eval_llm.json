@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C35",
+      "C64"
+    ],
+    "result": "AACDB contains 7,498 manually curated antigen-antibody complex entries extracted from over 32,000 PDB structures (up to December 2023), encompassing 16 antibody fragment types across 14 species. Fab fragments (71.98%) and human antibodies (60.95%) constitute the largest proportions, with approximately 45% of entries released during 2021-2023.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-31, C34-35, and C64 provide consistent, specific quantitative data about database content and composition. The statistics are internally consistent and supported by Figure 1, which visually confirms the distributions described. The manual curation process is explicitly stated (C26, C100), providing methodological transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53",
+      "C54",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C90"
+    ],
+    "result": "AACDB identifies and corrects numerous annotation errors in PDB entries, including species mislabeling (e.g., 7WRL), resolution errors (e.g., 1NSN), chain misidentification (e.g., 3KS0, 5EBW), and mutation annotation errors (e.g., 6BFT, 7SU1). These errors were propagated to SAbDab in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-99 provide specific, verifiable examples of annotation errors with PDB IDs and detailed descriptions. The manual verification process (C90, C100) and cross-referencing with original literature support the validity of these corrections. Multiple error categories are documented with concrete examples, demonstrating systematic quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C56",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "AACDB provides interacting residue annotations using two standardized methods: \u0394SASA (>1 \u0172 threshold using Naccess V2.1.1) and atom distance (<6 \u00c5 cutoff for non-hydrogen atoms). Raw values are provided to allow users to apply custom thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C46-49, C56, and C111-115 consistently describe the dual annotation approach with specific computational tools and thresholds. The methodology is clearly defined and reproducible. The provision of raw data (C48-49) addresses the flexibility concern, though the choice of specific thresholds (1 \u0172, 6 \u00c5) lacks explicit justification beyond being 'widely accepted.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C42",
+      "C43",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "AACDB integrates antibody developability information (325 entries linked to DOTAD) and antigen-drug target relationships (3,733 antigens identified as drug targets in DrugBank using >90% sequence identity threshold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-33, C42-43, and C107-110 describe the integration methodology with specific numbers and criteria. The 90% identity threshold (C110) is reasonable for drug target identification. However, the relatively small proportion of entries with developability data (325/7498 = 4.3%) limits the utility of this feature for most database entries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C57"
+    ],
+    "result": "AACDB serves as a benchmark dataset for immunoinformatics research by providing comprehensive paratope and epitope annotations, addressing the lack of standardized interaction residue definitions in existing databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C23-24, and C57 assert AACDB's utility as a benchmark, but C24's claim that 'none of the existing databases provide details of interaction residues' is potentially inaccurate given that SAbDab does provide some interface annotations. The benchmark utility claim (C57) is inferential and requires validation through actual usage by the community.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "AACDB implements stringent filtering to exclude false positives, including removal of immunoglobulin-binding proteins (Protein A/G) that bind framework regions rather than CDRs, and systematic splitting of multi-complex structures into individual antibody-antigen pairs using PDBsum chain interaction data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-82 describe a systematic curation methodology with specific examples (1AHW, 6OGE, 3BQU) illustrated in Figure 6. The exclusion criteria for non-antigen binding proteins (C68-71) are scientifically sound and supported by citations. The splitting methodology (C72-82) is clearly documented with visual evidence, though the manual nature introduces potential for inconsistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C50",
+      "C51"
+    ],
+    "result": "AACDB provides a user-friendly web interface with search functionality across nine metadata fields, structure visualization with customizable display options, and flexible data download options (bulk and single-entry) in txt/csv formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-41 and C50-51 describe interface features that are verifiable through Figures 2-3. The search example (C39: 117 hits for 'Lysozyme') provides concrete evidence of functionality. The interface description is consistent across claims, though actual usability would require hands-on testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "AACDB's data processing pipeline supports both PDB and mmCIF file formats, with automated conversion of mmCIF to PDB format for compatibility with Naccess software, and automated file segmentation based on manually annotated antibody-antigen chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C84-88 describe technical implementation details that address a known limitation (Naccess incompatibility with mmCIF). The automated segmentation based on manual annotations (C85) represents a hybrid approach that balances efficiency with accuracy. The methodology is clearly described and technically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "AACDB implements a hierarchical nomenclature system prioritizing original literature over PDB annotations, uses therapeutic antibody sequences from Thera-SAbDab as mutation references, and adopts a 'PDBID + antibody fragment' convention for unnamed entries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-106 describe a systematic naming and mutation annotation approach with clear prioritization rules. The use of Thera-SAbDab as reference (C101) is appropriate for therapeutic antibodies. The transparency commitment (C103) enhances reproducibility, though the actual accessibility of corrections should be verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "AACDB is implemented using Python for data processing, HTML/JavaScript/CSS/Bootstrap for the front-end, PV (WebGL-based viewer) for 3D visualization, MySQL for data management, and PHP for back-end functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-120 provide a complete technical stack description. The choice of technologies is standard and appropriate for a web-based database. The citation to Dunbar et al., 2014 for visualization inspiration (C118) acknowledges prior work. However, no information about code availability or version control is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C18",
+      "C19",
+      "C22"
+    ],
+    "result": "Existing databases face challenges including difficulty identifying antigen-antibody complexes in PDB, limited visualization tools in AbDb, potential error propagation in SAbDab's rapid updates, and lack of standardized definitions for interacting residues across the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C16, C18-19, and C22 present critical assessments of existing resources. While C14 and C19 identify legitimate challenges, C16's characterization of AbDb's limitations and C18's suggestion that SAbDab's rapid updates increase errors are inferential and potentially unfair without systematic comparison. The authors acknowledge AbDb's contributions but the criticism may overstate AACDB's novelty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "AACDB acknowledges limitations including potential incomplete coverage due to resource constraints, inherent challenges in eliminating all manual curation errors, and current restriction to antigens >50 amino acids. Future plans include expanding to diverse antigen classes and incorporating affinity data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-63 transparently acknowledge limitations and outline future directions. The 50 amino acid cutoff (C60) is a significant limitation that excludes peptide antigens. The acknowledgment of manual curation challenges (C59) is honest. Future plans (C61-62) are appropriate but remain speculative until implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C89"
+    ],
+    "result": "AACDB provides detailed chain-level information including sequence, mutation type and position, and comprehensive metadata (chain IDs, antibody/antigen names, method, resolution, organism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-45 and C89 describe the metadata structure, which is visually confirmed in Figure 3. The level of detail is appropriate for structural biology applications. The metadata verification through literature (C90) enhances reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript provides background context on antibodies' role in immunity and therapeutics, antibody drug development stages, the growing field of ML/DL-based interface prediction, and PDB as an established protein structure repository.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-13 present established scientific knowledge supported by appropriate citations. These claims provide necessary context but do not constitute novel findings. The statements are accurate and well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C15",
+      "C17"
+    ],
+    "result": "AACDB is accessible at http://i.uestc.edu.cn/AACDB. The manuscript contextualizes AACDB relative to prior databases AbDb (2018) and SAbDab series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C15, and C17 provide factual information about database accessibility and prior work. The citations to AbDb and SAbDab are appropriate. Database accessibility is verifiable.",
+    "result_type": "MINOR"
+  }
+]

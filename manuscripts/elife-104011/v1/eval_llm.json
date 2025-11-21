@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Dip2 regulates Pkc1-mediated cell wall integrity (CWI) pathway in yeast. Deletion of DIP2 results in increased resistance to cell wall stress and hyperactivation of Pkc1, as evidenced by ~3-fold increase in pSlt2 phosphorylation. This phenotype is dependent on Dip2's catalytic activity and can be reversed by Pkc1 inhibition with cercosporamide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 provide converging evidence from multiple experimental approaches: spot assays (C47-C48), CFU counts (C49), western blots for pSlt2 (C50), catalytic mutant complementation (C51-C52), and pharmacological inhibition (C55-C56). The genetic complementation and inhibitor experiments establish causality. The data consistently support that Dip2 regulates Pkc1 activity through its enzymatic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Pkc1 activation in yeast requires specific DAG subspecies C36:0 and C36:1. Cell wall stress induces ~8-fold increase in C36:0 and ~6-fold increase in C36:1 DAGs while other DAG species remain unchanged. The C1 domain of Pkc1 shows selective binding to C36:0 DAG-containing liposomes in vitro with concentration-dependent binding, but no binding to other DAG species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 combine lipidomic analysis (C60-C62) with in vitro biochemical binding assays (C64-C66). The selective accumulation of specific DAG species upon stress and the matching specificity of the C1 domain binding provide strong mechanistic support. The concentration-dependent binding (C65) and negative results with other DAGs (C66) strengthen the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78",
+      "C79"
+    ],
+    "result": "Canonical DAG-metabolizing enzymes (Dga1, Lro1, Dgk1) are promiscuous and decoupled from Pkc1 signaling. Despite causing ~2-10 fold accumulation of bulk DAGs, deletion of these enzymes does not affect cell wall stress resistance or pSlt2 phosphorylation levels, establishing a functional dichotomy between metabolic and signaling DAG pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 provide lipidomic evidence showing broad DAG accumulation in enzyme knockouts, while C73-C74 demonstrate no effect on Pkc1 signaling. This negative result is critical and well-controlled, contrasting with the Dip2 deletion phenotype. The conclusion of functional dichotomy (C79) is a reasonable inference from the differential effects of bulk vs. selective DAG accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Dip2-regulated DAG subspecies are sourced from PIP2 hydrolysis by Plc1. PLC inhibitor U73122 reduces C36:0 and C36:1 DAG levels by 80-90%, while blocking PA-to-DAG or ceramide-to-DAG pathways has no effect. Genetic deletion of PLC1 in \u0394dip2 reduces selective DAGs by ~75% and depletes pSlt2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 use both pharmacological (C80-C81) and genetic approaches (C85-C87) that converge on the same conclusion. The specificity is demonstrated by negative results with other pathway inhibitors (C81). The reduction in both DAG levels and pSlt2 upon PLC1 manipulation provides mechanistic coherence. However, the incomplete reduction (~75-90%) suggests additional minor sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The acyl-chain remodeling enzyme Psi1 contributes to selective DAG production for Pkc1 activation. Deletion of PSI1 in \u0394dip2 background reduces accumulated C36:0 and C36:1 DAGs by ~36-40% and restores pSlt2 levels to wildtype. The Psi1-Plc1-Dip2 axis serves as both a source and checkpoint for Pkc1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 provide genetic evidence linking Psi1 to selective DAG production and Pkc1 activation. The quantitative contribution (~36-40%, C92) is modest but significant. The restoration of pSlt2 in the double knockout (C93) and the reduction in WT upon PSI1 deletion (C94) provide consistent support. The incomplete contribution suggests Psi1 is one of multiple sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C104",
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Dip2 and PKC show phylogenetic co-occurrence and coevolution in Opisthokonta. PKC is the only DAG effector conserved across fungi and all opisthokonts. Phylogenetic correlation analysis shows significantly high association in patristic distances between Dip2 and PKC (r>0.8), significantly different from random control gene pairs, suggesting coevolution for establishment of selective DAG-based PKC signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C112 combine phylogenetic distribution analysis (C97, C104) with quantitative correlation methods (C109-C111). The correlation coefficient exceeds the empirical cutoff of 0.8 (C110) and is statistically significant compared to controls (C111). Multiple phylogenetic methods were used (C109), strengthening the analysis. The evolutionary interpretation (C112) is a reasonable inference from the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "C1 domains from Drosophila PKC98E and rat PKC\u03b4 show binding to DAG species that accumulate in respective Dip2 knockout organisms. PKC98E binds C32:0 and C34:1 DAGs accumulated in \u0394Dmdip2, while rat PKC\u03b4 binds C32:0, C34:1, and C36:0 DAGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 provide in vitro binding data for higher eukaryote PKC C1 domains. While the correlation between accumulated DAGs in knockouts and C1 domain binding is suggestive, the authors acknowledge complications from multiple Dip2 and PKC paralogs in higher eukaryotes. The broader specificity of rat PKC\u03b4 (C69) compared to yeast Pkc1 raises questions about the generality of the selective binding mechanism. Additional experiments with tissue-specific analysis would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C123"
+    ],
+    "result": "Double deletion of DGA1 and LRO1 shows sensitivity to cell wall stress despite ~1.6-fold increase in pSlt2 levels. This increase is insufficient to confer resistance to cell wall stress, being half the level observed in \u0394dip2 (~3-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 show an intermediate phenotype in the double knockout that differs from both WT and \u0394dip2. The modest pSlt2 increase without stress resistance (C76-C77) supports the conclusion that bulk DAG accumulation has limited effect on Pkc1 signaling (C123). However, the mechanism for the partial pSlt2 increase remains unexplained and could indicate some cross-talk between pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Double knockout of PAH1 and DIP2 shows complex effects: ~1.5-2-fold increase in bulk DAGs but ~42-81% decrease in selective C36:0/C36:1 DAGs. Both \u0394pah1 and \u0394pah1\u0394dip2 are defective in growth and sensitive to cell wall stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 present conflicting observations. The reduction in selective DAGs (C83) suggests Pah1 contributes to their production, but the cell wall stress sensitivity (C84) doesn't correlate with pSlt2 levels, indicating pleiotropic effects. The authors acknowledge this phenotype may not be linked to Pkc1 activation, suggesting confounding effects from altered lipid metabolism. The interpretation is complicated by the growth defect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C75"
+    ],
+    "result": "Dip2 localization to mitochondria does not change under cell wall stress or in the absence of bulk DAG-metabolizing enzymes LRO1 and DGA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C75 use microscopy with mitochondrial markers to show stable Dip2 localization. This negative result is important for understanding the spatial regulation of the pathway, though it leaves open the question of how mitochondrial Dip2 regulates plasma membrane-localized Pkc1. The data are clear but the mechanistic implications remain to be explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Plc1 partially localizes to mitochondria and vacuoles, similar to Dip2, suggesting local production of selective DAGs for Dip2 to act upon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 provides microscopy evidence for Plc1 localization that overlaps with Dip2. This spatial correlation supports the proposed pathway but is descriptive rather than mechanistic. The partial colocalization is consistent with the model but doesn't prove functional interaction at these sites. Additional experiments (e.g., proximity labeling, functional assays at specific organelles) would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C107",
+      "C108"
+    ],
+    "result": "Phylogenetic analysis reveals evolutionary origins of DAG signaling components. Primitive PKC (C1 and kinase domains only) exists in Microsporidia and two Dictyostelium species. DAG effectors with C1 domains evolved in Unikonta and are absent from Bikonta. Psi1 is conserved in both Unikonta and Bikonta, while Plc1 emerged in protists and is distributed across Unikonta but absent in Bikonta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 provide comprehensive phylogenetic distribution data across the tree of life. The analysis uses appropriate databases and methods. The observation that Dip2 is absent in Basidiomycota (C105) is noted as a potential gene loss event, showing appropriate caution. The distribution patterns are clearly documented and support the evolutionary narrative, though the functional implications of these distributions require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The Dip2-PKC axis was established approximately 1.2 billion years ago in Opisthokonta, marking the rooting of the first specific DAG-based signaling module in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C15 make broad evolutionary claims about timing and significance. While the phylogenetic co-occurrence of Dip2 and PKC in Opisthokonta is well-supported, the specific timing of ~1.2 billion years ago is not explicitly justified in the provided text. The claim that this is the 'first specific DAG-based signaling module' (C15) is supported by PKC being the earliest DAG effector, but 'specific' requires the functional specificity demonstrated in yeast to hold across evolution, which is uncertain given the complications in higher eukaryotes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The discovery of Dip2 reveals two functional DAG pools in cells: a bulk metabolic pool for membrane biogenesis and storage lipid biosynthesis, and a Dip2-regulated selective pool for Pkc1 signaling. The promiscuity of DAG-metabolizing enzymes necessitated evolution of a specific regulator like Dip2 for DAG-based PKC signaling in early Opisthokonta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 synthesize the experimental findings into a conceptual model. The functional dichotomy (C113-C115) is well-supported by the differential effects of bulk vs. selective DAG manipulation. The evolutionary argument (C117) is a reasonable speculation based on the phylogenetic data and functional requirements, though it contains speculative elements about evolutionary necessity. The model is consistent with all presented data.",
+    "result_type": "MAJOR"
+  }
+]

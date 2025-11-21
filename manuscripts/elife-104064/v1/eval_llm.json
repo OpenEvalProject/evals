@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C20",
+      "C54"
+    ],
+    "result": "CisA is required for CISSc contraction in situ. In cisA-deficient hyphae, CISSc particles remain in the extended conformation regardless of cellular integrity, whereas wild-type and complemented strains show contracted particles in dead cells. This demonstrates that CISSc contraction is not a consequence of cell death but requires CisA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, C20, and C54 are strongly supported by cryoET imaging data showing that \u0394cisA mutant hyphae contain only extended CISSc particles in both intact and lysed cells (Figure 2), while WT and complemented strains show the expected contraction in dead cells. The complementation experiment (C17) provides critical genetic validation. Sample sizes (n=100 particles, 270 tomograms total) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The first high-resolution cryoEM structure of a CIS IId subtype reveals that extended CISSc particles comprise 783 polypeptide chains forming a 268 nm bullet-shaped assembly with conserved eCIS architecture (cap, sheath-tube, baseplate). The structure includes a C6-symmetrical Cis16 cap, 61 sheath and 60 tube layers, and a baseplate with wedges containing two Cis11 and one Cis12 copies. No tail fiber-like structures were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 are well-supported by the cryoEM reconstruction achieving 3.4-3.5 \u00c5 resolution for cap and baseplate modules (C24), enabling de novo modeling. The structural characterization is comprehensive with clear identification of components and their stoichiometry. The absence of tail fibers (C33) is consistently reported across structural analysis and bioinformatics. All particles showed identical length (C26), providing internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36"
+    ],
+    "result": "CisA is not part of the purified CISSc complex structure. No density for CisA was detected in the cryoEM model, and mass spectrometry confirmed the absence of CisA peptides from purified CISSc particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, and C36 are supported by convergent evidence from cryoEM structure determination (no CisA density) and mass spectrometry (no CisA peptides in purified particles). However, the authors acknowledge that the purification protocol may not preserve transient CisA-CISSc interactions (C35), which is an appropriate caveat. The detection of CisA peptides in crude preparations from stressed cells (C61) supports the transient interaction hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "CisA is a bitopic membrane protein with a cytoplasmic N-terminus (aa 1-285), a transmembrane domain, and a periplasmic C-terminal domain (aa 310-468) that is predicted to facilitate oligomerization. This topology was confirmed by fluorescence microscopy, cellular fractionation, and dual reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C42 are well-supported by multiple complementary experimental approaches: fluorescence microscopy showing peripheral localization (C39), cellular fractionation demonstrating membrane association (C40), and dual phoA-lacZ\u03b1 reporter assays confirming bitopic topology (C41). The AlphaFold3 prediction of pentamerization (C38) is computational and requires experimental validation, but the overall membrane protein characterization is robust with appropriate controls (WhiA for fractionation, SepH/RsbN for topology).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CisA is required for CISSc-mediated cell death in response to stress. Without nisin stress, all strains showed similar viability, but upon nisin treatment, \u0394cisA hyphae maintained viability comparable to unstressed cells while WT showed dramatically reduced viability. Complementation fully reversed the \u0394cisA phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are strongly supported by the fluorescence-based viability assay with appropriate controls (unstressed conditions, complementation). Statistical analysis shows significant differences (p<0.0001) between WT and \u0394cisA under stress (Figure 5d). The assay uses biological triplicates with n=100 images per replicate. The complementation experiment (C47) provides critical genetic validation that the phenotype is specifically due to cisA deletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55"
+    ],
+    "result": "The absence of functional CisA impacts cellular development and secondary metabolite production. The \u0394cisA mutant sporulated markedly earlier than WT and complemented strains and showed significantly reduced actinorhodin production, phenocopying CISSc deletion mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C55 are supported by developmental assays (microscopy, CFU counts) and actinorhodin quantification showing significant differences (p<0.0001) between \u0394cisA and WT/complemented strains. The experiments used biological triplicates with appropriate time course measurements. The phenotype similarity to CISSc deletion mutants (C49, C55) strengthens the conclusion that CisA is essential for CISSc function. However, the manuscript states sporulation occurred 'markedly earlier' but the specific time difference is unclear from C50.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C58",
+      "C6"
+    ],
+    "result": "CisA is an essential membrane-associated factor that mediates CISSc interaction with the cytoplasmic membrane prior to firing, representing a distinct mechanism from T6SS and extracellular CIS that possibly evolved due to the role of CISSc in regulated cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C58, and C6 represent the main conclusions synthesizing the experimental findings. The conclusion that CisA mediates membrane interaction (C58) is well-supported by the combination of: (1) CisA membrane localization, (2) requirement for CISSc contraction in situ, (3) absence from purified particles, and (4) lack of tail fibers in CISSc structure. The distinction from T6SS and eCIS (C6) is supported by structural and functional data. The evolutionary speculation is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "AlphaFold2-Multimer analysis identified Cis11 as a potential CisA interaction partner, consistent with Cis11's peripheral surface-exposed position in the baseplate. CisA peptides were detected in crude CISSc purifications from stressed cells, and extended CISSc-membrane associations were rarely observed in WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62 provide suggestive but not definitive evidence for CisA-Cis11 interaction. The AlphaFold2-Multimer prediction (C59) is computational and requires experimental validation. The authors acknowledge they could not confirm direct interaction due to CisA toxicity in E. coli, preventing co-purification and two-hybrid studies. Detection of CisA peptides in crude preparations (C61) supports transient interaction but is not conclusive. The structural compatibility (C60) and rare observation of membrane-associated particles (C62) are consistent with the model but circumstantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors speculate that CisA may serve as both a membrane mediator and a stress sensor/checkpoint, with the C-terminal domain potentially sensing stress signals that trigger CisA oligomerization and CISSc recruitment. This stepwise mechanism may have evolved to prevent accidental self-inflicted cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C68 are explicitly speculative (using terms like 'speculate,' 'may,' 'could,' 'conceivable'). While the speculation is reasonable and consistent with the data (structural similarity to solute-binding domains C64, predicted oligomerization C38), these claims lack direct experimental support. The proposed mechanism of stress sensing and oligomerization-triggered recruitment (C66) is a hypothesis requiring future validation. The evolutionary argument (C67-C68) is plausible but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12"
+    ],
+    "result": "CISSc are cytoplasmic particles that mediate regulated cell death in response to stress, influencing sporulation and secondary metabolite production in S. coelicolor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C12 summarize prior work (Casu et al., 2023; Vladimirov et al., 2023) that is cited and forms the foundation for the current study. The localization (C1) is confirmed by cryoET in this manuscript. The functional roles (C2, C12) are established in previous publications and validated here through the \u0394cisA phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C56"
+    ],
+    "result": "Background information on CIS diversity and mechanisms: CIS are related to phage tails, fire via baseplate conformational changes, and include T6SS (membrane-anchored), eCIS (free-floating then released), and class IId eCIS in Streptomyces. All previously studied CIS require membrane binding before firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 and C56 represent established knowledge from the literature with appropriate citations. These provide necessary context for understanding the novelty of the current findings. The claims are well-supported by the cited references and represent accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "CisA (SCO4242) is conserved in the majority of Streptomyces and Actinomycete species carrying type IId eCIS loci and is encoded downstream of baseplate components, a location typically occupied by tail fiber genes in conventional eCIS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 are supported by bioinformatic analysis (Figure 1\u2014figure supplement 1 showing alignment of 75 CisA homologs) and gene cluster organization data with appropriate citations. The genomic context (C14) provides important motivation for investigating CisA's role. The reciprocal BLAST search methodology is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C18",
+      "C19"
+    ],
+    "result": "Purified CISSc particles from \u0394cisA mutant are in contracted conformation similar to WT. In situ, CISSc exists in two discrete conformational states: fully extended (233 nm length, 18 nm diameter) in intact WT hyphae and fully contracted (124 nm length, 23 nm diameter) in dead hyphae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by negative stain EM (C15) and cryoET measurements (C18-C19) with adequate sample sizes (n=100 particles for each conformation). The observation that purified \u0394cisA particles can contract (C15) while in situ particles cannot (C17) is important for understanding that CisA is required for in situ contraction specifically. The dimensional measurements (C18-C19) are precise and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C27"
+    ],
+    "result": "The S. coelicolor cis gene cluster contains 19 predicted open reading frames, and notably lacks a tape measure protein gene typically responsible for controlling eCIS particle length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C27 are supported by bioinformatic analysis of the gene cluster with appropriate citations. The absence of a tape measure protein gene (C27) is notable given the uniform particle length observed (C26), suggesting an alternative length-determination mechanism. This is a straightforward descriptive finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Intracellular CISSc particles lack structural components that can directly bind to the host membrane, distinguishing them from previously described CIS systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by the cryoEM structure showing absence of tail fibers (C33) and the bioinformatic analysis showing no tail fiber genes (C27). This is a key negative finding that distinguishes CISSc from other CIS and motivates the investigation of CisA as an alternative membrane interaction mechanism. The conclusion is well-supported by structural and genomic data.",
+    "result_type": "MAJOR"
+  }
+]

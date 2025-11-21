@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C18",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "The authors propose a biologically plausible, local plasticity rule where excitatory synapses minimize the discrepancy between stimulus-evoked and internally predicted activity, while inhibitory synapses maintain excitatory-inhibitory balance. The excitatory plasticity rule is mathematically similar to prior work (Pfister et al., 2006; Urbanczik and Senn, 2014).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the approach is 'solid' but express concerns about the derivation of learning rules being 'semi-heuristic' with 'unclear aspects to the formal derivation.' One reviewer notes that 'the link is only heuristic or at least not entirely presented' and that 'equation 13 does not appear to be complete/correct,' indicating the mathematical foundation requires clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C20",
+      "C21",
+      "C47",
+      "C48",
+      "C49",
+      "C54",
+      "C64",
+      "C65",
+      "C107"
+    ],
+    "result": "After learning, the trained network exhibits spontaneous stochastic transitions of cell assemblies that follow the transition statistics of evoked dynamics. Three cell assemblies emerged, each encoding one external stimulus, and their spontaneous reactivation sequences showed transition probabilities aligned with the trained stimulus patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this as a core finding. One reviewer states the authors 'demonstrate that their networks can learn to generate stochastic sequential patterns' and another notes 'this study makes an important contribution to computational neuroscience, by proposing a possible synaptic plasticity mechanism underlying spontaneous generations of learned stochastic state-switching dynamics.' The comprehensive simulations are praised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C64",
+      "C71",
+      "C72",
+      "C73",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "Inhibitory plasticity is crucial for maintaining excitatory-inhibitory balance and generating structured spontaneous activity. Without inhibitory plasticity, the model exhibited blurred assembly structures and transition probabilities did not align with true transitions, even though excitatory weights encoded appropriate transition information.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers highlight this as a key strength. One reviewer specifically notes 'the study of the interplay between excitation and inhibition (and their different plasticity rules) is a highlight of the study.' The necessity of both plasticity types for appropriate replay is well-demonstrated through ablation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C23",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C139",
+      "C140"
+    ],
+    "result": "The model replicates experimental results from songbirds (Bouchard and Brainard, 2016) showing that uncertainty of upcoming states modulates neural predictability. In the model, transition uncertainty modulated the degree to which post-stimulus activity (PSA) predicted upcoming states, with correlation differences increasing as entropy decreased.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this validation positively. One reviewer notes 'the study of songbird experimental data is another good feature of this paper; finches are classical model animals for understanding sequence learning in the brain.' The comparison with experimental data strengthens the model's biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "During training, excitatory synapses were modified much quicker than inhibitory synapses. This difference follows from the nature of the learning rules: excitatory synapses are reorganized by external stimuli while inhibitory synapses only change to rebalance excitation. This temporal ordering is consistent with experimental results (D'amour and Froemke, 2015).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about this finding. The temporal dynamics of plasticity are presented as emerging naturally from the model architecture and are supported by experimental citations. This result supports the biological plausibility of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C121"
+    ],
+    "result": "Over training, within-assembly excitatory connections strengthened while between-assembly connections settled at different values proportional to transition probabilities. The network learns temporal statistics by modifying inter-assembly excitatory connection structure, with learned synaptic distributions converging to values proportional to transition probabilities rather than uniform values as in STDP.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these mechanistic findings as part of the model's demonstration. The weight structure analysis provides insight into how the model encodes transition statistics, which reviewers acknowledge as a contribution to understanding the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model is capable of task switching through reorganization of weight structures via continuing plasticity. Between-assembly connections reorganized quickly when the task switched, while within-assembly connections remained stable. Errors showed abrupt increases followed by gradual decreases during task switching.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers view this positively. One reviewer states 'I also liked the study of rapid task-switching, it's a good-to-know type of result that is not very common in sequence learning papers.' This demonstrates the model's flexibility and learning capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The network can learn complex temporal structures including temporal community structure. When trained with community structure, the model showed appropriate stochastic transitions with stronger within-community than between-community connections, and within-community transitions occurred faster than between-community transitions. Low-dimensional representations showed clustering consistent with experimental results (Schapiro et al., 2013).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings on complex structures. The demonstration that the model scales to more complex tasks beyond simple three-state Markov chains strengthens the generality of the approach and is implicitly accepted through the overall positive assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C38",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The model assumes only connections onto excitatory neurons are plastic, with feedforward connections fixed. Additional simulations showed the network could still learn with 80%/20% excitatory/inhibitory ratio, but when plasticity was applied to all synapses, appropriate transitions were only learned under some conditions. With mixed selectivity neurons, appropriate stochastic transitions were reproduced.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers identify this as a weakness requiring additional validation. One reviewer states 'the proposed model assumes that only synapses targeting excitatory neurons are plastic, and uses an equal number of excitatory and inhibitory neurons' as a concern about biological realism. Another notes 'the study assumes that every excitatory neuron is directly given its target state when learning' as a 'major weakness.' The authors addressed these concerns with additional simulations, which one reviewer notes 'strengthened the paper significantly,' though limitations remain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The model's performance is robust to variations in stimulus duration and background input strength. Transition probabilities remained consistent when trained with half-duration inputs, though assembly durations and replay rates varied with background input strength.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers raised concerns about the constant background input of 0.3 used throughout the study, noting 'different amplitudes of constant input may correspond to different internal states.' The authors addressed this with additional simulations showing robustness, which the reviewer acknowledged: 'the authors have addressed all of the previously raised concerns satisfactorily, by running extra simulations...with varied amounts of constant inputs.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The model has limitations: it can only learn first-order Markovian transitions and cannot learn transition statistics if states are separated in time. The authors acknowledge these could potentially be addressed by incorporating working memory mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this limitation. One reviewer states 'the model also assumes Markovian state dynamics while biological systems can depend more on history. This limitation, however, is acknowledged in the Discussion.' The authors' transparent discussion of limitations is viewed positively.",
+    "result_type": "MINOR"
+  }
+]

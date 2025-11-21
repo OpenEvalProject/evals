@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors demonstrate proof-of-concept for dual-color control in Drosophila by co-expressing Chrimson with GtACR2 in P1 neurons. When Chrimson was co-expressed with tdTomato (control), both 470 nm and 590 nm light elicited similar courtship song. When co-expressed with GtACR2, 590 nm light reliably elicited courtship song while 470 nm light did not evoke detectable pulse song.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers acknowledge this as a valid proof-of-concept demonstration. The editor states 'The basic characterization of the activation of a red-shifted channelrhodopsin paired with a blue-light sensitive anion channel engineered to obtain desired inhibitory current kinetics is solid.' The reviewer summarizes this work positively, noting the authors 'first show that this works with Chrimson and GtACR2.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C28"
+    ],
+    "result": "GtACR2 has slow current decay kinetics (161 \u00b1 24 ms), which limits its application to optical stimulations of lower frequencies, making the GtACR2-Chrimson system more suitable for lower frequency stimulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this characterization as a motivation for developing improved tools. The reviewer notes the authors 'expand their search after finding that the tau-off (inactivation after light cessation) kinetics of these two opsins are not well-matched.' This finding is treated as established and drives the subsequent tool development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors characterize vfChrimson (IvfChr) as the fastest available red-shifted channelrhodopsin with an off-rate time constant of 5.6 \u00b1 0.3 ms, compared to C-Chrimson-ts at 21.5 \u00b1 1.2 ms. IvfChr shows 40% reduction in photocurrent compared to C-ChrimsonR-ts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this characterization without challenge. The editor notes 'The basic characterization of the activation of a red-shifted channelrhodopsin paired with a blue-light sensitive anion channel engineered to obtain desired inhibitory current kinetics is solid.' The kinetic measurements are treated as reliable baseline data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ZipACR has an off-rate time constant of 9.5 \u00b1 3.0 ms and strong photocurrents. When co-expressed with vfChrimson, 470 nm light induced significantly fewer APs than 635 nm light in 8 of 10 cases, but individual APs time-locked to blue light offset were consistently observed, indicating ZipACR closes too quickly to fully suppress vfChrimson's excitatory response.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this characterization and the rationale for further optimization. The reviewer notes the authors 'settle on a variant of red light-excitatory Chrimson and blue light-inhibitory ZipACR' and then 'create a structure homology model of the ZipACR retinal binding pocket and use this to guide generation of a small mutant panel.' This finding justifies the mutagenesis approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C33"
+    ],
+    "result": "Using a homology model of ZipACR with GtACR1 crystal structure and multiple alignments with GtACR1 and GtACR2, the authors identified I151V and I151T variants with increased off-rate time constants (15.5 \u00b1 8.4 ms and 20.2 \u00b1 6.4 ms respectively) that display appropriate kinetics, light spectra, and photocurrent magnitudes for the co-expressing system.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this structure-guided mutagenesis approach and the resulting variants. The reviewer describes how the authors 'create a structure homology model of the ZipACR retinal binding pocket and use this to guide generation of a small mutant panel, leading to a more optimized ZipACR mutant.' The methodology and results are treated as sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The Zip(151V) and Zip(151T) mutations did not change ion permeability of ZipACR. In hippocampal slices expressing Zip(151T), blue light pulses were consistently effective in blocking APs (except in two instances) while red light had no effect on AP induction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept these characterization data. The editor states 'The basic characterization of the activation of a red-shifted channelrhodopsin paired with a blue-light sensitive anion channel engineered to obtain desired inhibitory current kinetics is solid.' These functional validation experiments are treated as convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C77",
+      "C34"
+    ],
+    "result": "Testing vfChrimson in the BiPOLES tandem fusion system resulted in high intracellular accumulation in HEK 293 cells. The bicistronic 2A cassette with IvfChr led to ~2.7\u00d7 higher photocurrent compared to BiPOLES, and the optimized anion channels were paired with membrane-trafficking optimized vfChrimson (IvfChr) in a single expression unit.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this comparison and the rationale for the bicistronic approach. The reviewer notes the authors 'show that a bicistronically expressed fusion arrangement of these opsins, plus some functional peptides, can drive action potentials up to 20hz with red light.' The expression strategy is treated as validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In hippocampal slices, IvfChr-expressing neurons showed APs to both 470 and 635 nm light at powers as low as 1 mW/mm\u00b2. ZipT-IvfChr-expressing neurons produced APs only to 635 nm light, with 470 nm light (up to 10 mW/mm\u00b2) failing to induce APs. Co-illumination with 470 and 635 nm failed to generate APs, showing blue light effectively nullifies red light depolarization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept these core functional characterization data. The editor states 'The basic characterization of the activation of a red-shifted channelrhodopsin paired with a blue-light sensitive anion channel engineered to obtain desired inhibitory current kinetics is solid.' The reviewer confirms the authors 'show that red light = excitation and blue light = inhibition.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The Zip-IvfChr system can drive time-locked high-frequency APs in response to red pulses (635 nm) but produces no APs in response to blue pulses (470 nm). Blue light pulses transiently suppress APs, with suppression fully reversed within 5 ms after light termination due to fast ZipACR mutant kinetics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the reviewers accept the basic characterization, they note critical missing data. The reviewer states the authors are 'long on theory' but 'short on explicit data,' noting they 'neither show (1) all-optical on/off modulation of the same cell; nor (2) high-frequency inhibition or excitation (max stim rate of 20hz).' The claim about 'high-frequency' capability lacks direct demonstration at frequencies beyond 20 Hz.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C39"
+    ],
+    "result": "In vivo vibrissa movement experiments showed that IvfChr-expressing mice exhibited large whisker movements with both red and blue light pulses. ZipT-IvfChr-expressing mice showed strong whisking with red light comparable to IvfChr, but 450 nm light failed to reliably elicit whisker movement, confirming motoneurons are largely non-responsive to blue light while preserving red-shifted properties.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this in vivo validation. The reviewer notes the authors 'show function in vivo, in a mouse, using a physiological readout.' The editor confirms 'The basic characterization of the activation of a red-shifted channelrhodopsin paired with a blue-light sensitive anion channel engineered to obtain desired inhibitory current kinetics is solid.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In neurons expressing ZipT-IvfChr and ZipV-IvfChr, 470 nm light pulses blocked APs while 635 nm light had virtually no effect. Current injection evoked APs with high probability after 5 ms for ZipT-IvfChr, while ZipV-IvfChr recovery was immediate with 100% success rate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept these temporal precision measurements. The reviewer acknowledges 'The major advantage claimed by the authors over existing tools is the temporal time-locking of their inhibitory opsin - this is driven by the contrast between tau-off kinetics of their ZipACR variant compared to gtACR2.' The fast recovery kinetics are treated as validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C160"
+    ],
+    "result": "The authors characterized potassium-selective channelrhodopsins (HcKCR1, HcKCR2, WiChR) showing they have more hyperpolarized reversal potentials than ZipACR but much slower off-rate kinetics (49.7-229.3 ms vs ZipACR). None of the wild-type K-ChRs appear optimal for pairing with IvfChr kinetically.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this characterization and conclusion. The reviewer notes 'the overall data and approaches shown are useful' even beyond the final tool. This systematic characterization of alternative channels is treated as valuable contribution, though the negative result (non-optimal pairing) is accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors propose multiple potential applications including: dual optical activation of segregated neuronal groups when co-expressed with blue-shifted channelrhodopsins; spike-timing-dependent experiments requiring high temporal precision; presynaptic control of neurotransmitter release paired with postsynaptic spiking control; studying excitation/inhibition balance in cortical processing; and independent control of direct/indirect pathway neurons in striatum.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewers note these are theoretical applications without experimental validation. The reviewer states 'there were no experiments conducted that make use of the unique properties of this molecular strategy' and the authors 'provide state that there this is possible in theory and that there are no obvious reasons that it would not work, but do not present data that showcases their new tool for this purpose.' The editor notes 'evidence for their practical use under simultaneous multi-color or high frequency stimulation in cells are missing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors argue their system with fast closing kinetics (ZipT-IvfChr recovers within 5 ms, ZipV-IvfChr almost instantaneously) minimizes physiological disruption after light termination. They model that slower kinetics systems like BiPOLES with GtACR2 would have inhibitory effects lasting 10-20 ms, potentially disrupting neuronal physiology and altering intracellular ion concentrations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept the kinetic advantage as the major claimed improvement. The reviewer states 'The major advantage claimed by the authors over existing tools is the temporal time-locking of their inhibitory opsin - this is driven by the contrast between tau-off kinetics of their ZipACR variant compared to gtACR2.' The comparative advantage in recovery kinetics is treated as validated.",
+    "result_type": "MAJOR"
+  }
+]

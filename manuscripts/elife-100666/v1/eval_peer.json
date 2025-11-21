@@ -1,0 +1,117 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16"
+    ],
+    "result": "The authors demonstrate that the neural covariance spectrum in larval zebrafish whole-brain recordings exhibits scale invariance: randomly sampled subsets of neurons resemble the full population's covariance structure. This pattern holds across multiple datasets and experimental techniques.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly affirm this finding. The editor describes it as a 'surprising scale-invariance' that is 'convincingly' demonstrated, while the anonymous reviewer highlights that the spectrum 'exhibits scale-invariance under random subsampling of neurons' as a key strength. No concerns are raised about this core empirical observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C26"
+    ],
+    "result": "The authors propose that Euclidean Random Matrix (ERM) theory explains the observed scale invariance, with three key factors contributing: slow neural correlation decay (power-law), higher functional space dimension, and neural activity heterogeneity. The ERM model is extended to incorporate heterogeneity of neuron activity levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly states that the ERM model 'is analytically tractable and matches two nontrivial features of the covariance matrix: approximate power law scaling, and invariance under subsampling,' calling it 'an important conceptual and technical advance.' The editor confirms that 'a Euclidean random matrix model of the covariance matrix recapitulates these properties' with 'convincing analysis.' No methodological concerns are raised about the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors demonstrate that scale invariance is non-trivial by showing that several alternative models fail to reproduce it, including independent noise models, randomized eigenvector models, random recurrent neural networks, and latent variable models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer acknowledges that 'this property is not exhibited by conventional models of covariance spectra, motivating the introduction of the Euclidean random matrix model.' This implicitly accepts the authors' demonstration that alternative models fail to capture scale invariance. No reviewer challenges these control analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C13"
+    ],
+    "result": "The authors recorded brain-wide Ca2+ activity at 10 Hz in larval zebrafish using Fourier light-field microscopy, analyzing approximately 2000 ROIs per fish. Data dimensionality grows with sample size and reaches a maximum value as predicted by theory.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not question the experimental methodology or data quality. The editor describes the study as examining 'large-scale recordings in the zebrafish brain in vivo' without raising concerns. The anonymous reviewer's summary accurately describes the experimental approach without critique, indicating acceptance of the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The collapse index (CI) of the covariance matrix is consistently smaller (more scale-invariant) than the correlation matrix across all datasets, indicating that heterogeneity of neuronal activity variances significantly affects the eigenspectrum.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While no reviewer explicitly challenges this finding, the anonymous reviewer asks 'Are there quantitative comparisons of the collapse indices for the null models in Figure 2 and the data covariance in 2F? If so, this could be potentially useful to report.' This suggests the reviewer seeks more rigorous quantitative validation of the CI comparisons, indicating some uncertainty about the strength of this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Scale invariance persists and is enhanced when hunting behavior frames are removed from the data. During hunting, a specific neuronal cluster shows robust activations that are anatomically widespread but functionally localized, and this cluster disperses in functional space when hunting is removed.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not question these behavioral analyses. The anonymous reviewer notes that the authors 'examine the effects of subsampling based on anatomical location or functional relationships' without raising concerns, implicitly accepting these findings about behavior-dependent functional organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Robustness analyses show that altering spatial distribution of neurons in functional space (Gaussian, uniform, clustered) or changing the geometry (flat square, sphere, hemisphere) does not substantially affect large covariance eigenvalues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These robustness checks are not questioned by reviewers. The editor's statement that the analysis is 'convincing' and the anonymous reviewer's description of the model as 'tractable' suggest acceptance of these supporting analyses that demonstrate the model's robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C56",
+      "C58"
+    ],
+    "result": "The authors speculate that the functional space could represent latent cognitive variables, that long-range connections may cause extensive correlations, that the brain uses a finite set of dimensions for encoding, and that scale invariance could support efficient multiscale information processing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly acknowledges that the authors 'discuss the benefit of neural codes which can be subsampled without significant loss of information,' indicating acceptance of these interpretive discussions. No reviewer challenges these speculative interpretations, and they are presented as discussion points rather than empirical claims.",
+    "result_type": "MINOR"
+  }
+]

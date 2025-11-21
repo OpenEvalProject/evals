@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C85"
+    ],
+    "result": "Oscillatory mechanisms govern both caregiver and infant attention durations, with infant attention durations centering around 1\u20132 s and caregiver attention durations around 200\u2013500 ms. The attention distributions show periodic structure with modes greater than minimum values, and temporal interdependencies exist between look durations within individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C44, and C85 are well-supported by the PACF analysis (Figure 2b) and histogram data (Figure 2a). The findings replicate previous work (Yu and Smith, 2016) and demonstrate clear oscillatory patterns in attention shifting for both caregivers and infants, with appropriate statistical validation through shuffled baseline comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C86"
+    ],
+    "result": "Caregiver and infant attention shifts do not act as coupled oscillators across the dyad, as demonstrated by the absence of significant peaks in cross-correlation analysis between binary attention variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C45, and C86 are supported by rigorous cluster-based permutation analysis comparing observed cross-correlations to Poisson process baselines (Figure 2c). The null finding is appropriately validated and contradicts one potential mechanism of dyadic coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C82"
+    ],
+    "result": "Infant attention durations forward-predict theta power more than vice versa, with a significant positive association at time-lags from \u22122 to +6 s, peaking at t+1.5 s with an asymmetric significance window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 and C82 are supported by cross-correlation analysis (Figure 3a) with appropriate cluster-based permutation testing. The asymmetry in the cross-correlation function and peak timing provide strong evidence that attention durations drive theta activity more than the reverse, though autocorrelation limitations are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C56"
+    ],
+    "result": "Longer infant object attention episodes are associated with higher average theta activity during those episodes (\u03b2=0.33; p<0.001), indicating that sustained attention correlates with increased endogenous cognitive engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, and C56 are supported by linear mixed effects modeling with appropriate random effects structure (Figure 3b). The positive association is statistically significant and the scatter plot shows a clear relationship, though effect size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Little dynamical change in infant theta activity occurs over the duration of infant attention episodes, with decreases observed for 1\u20133 s episodes not surviving multiple comparison correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C57 are supported by modulation analysis (Figure 3c) with appropriate Benjamini-Hochberg correction. The lack of significant change over attention episodes is properly validated, though this contrasts with some prior work (Xie et al., 2018), which the authors address methodologically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C87"
+    ],
+    "result": "Fluctuations in infant look durations were not significantly forward-predicted by changes in caregiver look durations, though the cross-correlation peaked at t+2.5 s with a trend toward significance (p=0.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C59, and C87 show a trend that approaches but does not reach statistical significance (p=0.10). While the authors interpret this as evidence against caregiver-led attention structuring, the marginal p-value suggests the result is uncertain and may be underpowered. Additional data or analysis would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C69",
+      "C88"
+    ],
+    "result": "Infant theta activity significantly forward-predicts caregiver attention durations (significant cluster \u22121 to 5 s, p=0.012), with peak correlation at t+1.5 s and asymmetric significance window, suggesting caregivers adapt their behavior according to infant engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C69, and C88 are supported by cross-correlation analysis with cluster-based permutation testing (Figure 4b). The asymmetric pattern and peak timing provide strong evidence for infant-led dynamics, though the authors acknowledge this may be partially mediated by infant attention (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C70"
+    ],
+    "result": "Caregiver attention durations significantly decreased in the 0\u20134 s period after infant attention onsets toward objects (p=0.009), with this effect driven by infant attention episodes lasting over 3 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C70 are supported by event-related analysis with cluster-based permutation testing (Figure 5a, 5b). The immediate reactive decrease in caregiver attention is statistically significant and shows specificity to longer infant attention episodes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "Over the entire course of infant attention episodes, caregiver attention durations significantly increased, with significant differences between first and third chunks, driven by episodes lasting over 3 s. Overall, longer infant attention episodes associated with longer average caregiver attention (\u03b2=0.16, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C71 are supported by modulation analysis (Figure 5c, 5d) and linear mixed effects modeling (Figure 5e). The findings demonstrate both immediate reactive changes and slower modulations in caregiver behavior, with appropriate statistical validation including Wilcoxon signed ranks tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C90",
+      "C91"
+    ],
+    "result": "No significant time-lagged associations were found between infant attention durations and rate of change in caregiver F0, or between infant theta activity and caregiver F0, suggesting caregiver vocal salience does not forward-predict infant attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, C90, and C91 are supported by cross-correlation analyses with cluster-based permutation testing (Figure 6a, 6b). The null findings are appropriately validated against permutation distributions, providing evidence against vocal salience as a forward-predictive mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C79"
+    ],
+    "result": "Caregiver vocal behavior (rate of change in F0) showed no immediate event-related change relative to infant attention onsets toward objects, with no significant clusters above chance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, and C79 are supported by event-related analysis with cluster-based permutation testing (Figure 7b). The absence of immediate reactive vocal changes contrasts with the gaze findings and is properly validated statistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "Longer infant object look durations associated with greater rate of change in caregiver F0 overall (\u03b2=0.13; p<0.001), but for looks lasting 3\u201310 s, caregivers decreased the rate of change in F0 over the course of the look.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C80 are supported by linear mixed effects modeling (Figure 7a) and modulation analysis (Figure 7c, 7d). The findings show both overall positive associations and dynamic decreases during longer episodes, with appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C81",
+      "C100"
+    ],
+    "result": "By 12 months, intrinsic cognitive processes control infant attention through endogenous oscillatory neural activity, while infant attention is not forward-predicted by caregiver behaviors. Instead, caregivers rapidly modulate their behaviors reactively in response to infant attention and engagement, with greater reactive changes associated with longer infant attention. Shared attention develops through interactive but asymmetric, infant-led processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C81, and C100 represent the main conclusions synthesized from all analyses. These are well-supported by the convergent evidence from Parts 1-3, including oscillatory patterns, cross-correlation analyses, event-related findings, and modulation analyses. The infant-led interpretation is justified by the asymmetric cross-correlation patterns and reactive caregiver responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The finding that attention durations forward-predict theta power replicates prior work (Wass et al., 2018a) and may indicate that longer attention durations drive incremental increases in infants' endogenous attention control through self-sustaining bidirectional interactions between exploratory behaviors and information gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is supported by citation, but C84 is explicitly speculative interpretation. While the interpretation is plausible and grounded in active learning theory, it goes beyond what the current data directly demonstrate. The mechanism proposed requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Caregivers are unlikely to be responding to active attention-sharing cues from infants, as infants rarely looked toward caregiver faces and did not increase face looks before joint attention episodes. Instead, caregivers anticipate and 'catch' infant attention shifts, monitoring infant behavior in line with allostatic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by behavioral data (Figure 2a) showing rare infant face looks, citation to prior analysis (Phillips et al., 2023), and the timing of caregiver responses beginning just before infant attention onsets. The interpretation is well-grounded in the data and theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The increase in caregiver behavior after infant look onsets may reflect dynamic up-regulatory processes to maintain infant attention, while down-regulation over longer episodes may index decoupling of caregiver regulatory processes from infant attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98 and C99 are explicitly speculative interpretations of the observed patterns. While consistent with the data, these mechanistic explanations are not directly tested and represent hypotheses for future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "According to neurocomputational accounts, contingent environmental changes in response to infant actions improve prediction and control, and in social contexts, consistent caregiver responsiveness gives meaning to infant behavior. Over time, repeated interactive contingencies may influence how controlled processes guide infant attention and sensitivity to intentional communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are theoretical framework claims supported by appropriate citations (Friston et al., 2012; Oudeyer and Smith, 2016; Smith and Breazeal, 2007). C103 is speculative about developmental trajectories but appropriately framed as a possibility rather than a demonstrated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The study found no evidence that increases in salient caregiver cues forward-predicted increases in infant attention durations; instead, increases in infant attentiveness relate to inter-dyadic sensorimotor processes independent of infants' endogenous cognitive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C105 summarize key negative findings from the vocal and gaze analyses. C104 is well-supported by the cross-correlation results. C105 is an interpretive claim that may overstate the independence, as the study shows associations between infant theta and attention, suggesting endogenous processes do play a role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Eye-movement artifacts were removed using ICA decomposition, which does not remove all artifacts, but the observed associations between infant attention and theta activity suggest artifacts did not affect main findings, as shorter attention episodes did not associate with more theta activity as would be expected if artifacts were influential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 address a methodological limitation appropriately. The logic that artifact would produce opposite patterns to those observed is sound, and the use of ICA is standard practice. However, residual artifact cannot be completely ruled out, making this a reasonable but not definitive defense.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study included 66 caregiver-infant dyads (mean age 11.18 months, all female caregivers) with strong inter-rater reliability (kappa=0.9 for caregivers, 0.8 for infants), appropriate EEG quality control (mean 3.37 electrodes interpolated, 11.30% data removed), and minimal co-vocalizations (19.43%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C119 are methodological and demographic descriptors directly reported from the data. These are well-documented with appropriate quality metrics and exclusion criteria. The inter-rater reliability is strong, and EEG preprocessing follows established procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Prior literature establishes that caregiver behaviors influence infant attention, infant-directed speech has increased salience, infants deploy active learning strategies, and theta activity associates with endogenous attention control in infancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C36 are literature review claims supported by appropriate citations. These establish the theoretical and empirical foundation for the current study. The citations appear appropriate and the claims accurately represent prior work, though individual cited papers were not independently verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The association between infant neural engagement and caregiver attention durations was likely partially mediated by the weaker non-significant associations between infant attention and caregiver attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 proposes a mediation relationship but this is not formally tested. While the inference is reasonable given the pattern of correlations (Figure 4a vs 4b), mediation analysis would be required to support this claim definitively. The claim is appropriately tentative ('likely partially mediated').",
+    "result_type": "MINOR"
+  }
+]

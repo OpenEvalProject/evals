@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C29",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "GFP fluorescence changes in response to behavioral and sensory stimuli are comparable in magnitude to those observed with activity sensors. Population-level GFP responses to locomotion onset (~1% \u0394F/F0), visual gratings, and optogenetic stimulation were measured across V1 L2/3, V1 L5, and ACC L2/3, with responses varying by cortical region and depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21-C42 collectively demonstrate that GFP shows robust stimulus-evoked responses across multiple brain regions and cortical layers. The data in Figures 1A-L directly support these measurements, showing clear population responses to locomotion, visual stimuli, and optogenetic stimulation. The magnitude comparison to calcium indicators (C22-C24) is supported by cited literature values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "At the single-neuron level, a large fraction of neurons show significant GFP responses to behavioral stimuli, with response fractions similar to those measured with GCaMP. Peak responses are larger for calcium indicators, but trial-averaged responses show smaller differences, particularly for locomotion onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C56 are well-supported by data in Figures 2 and 3. Figure 2 shows the distribution differences between GFP and GCaMP peak responses, while Figure 3 demonstrates that similar fractions of neurons are responsive when measured with either indicator. The statistical analyses showing significance above chance levels (C51, C53, C54) are appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Blood vessel diameter changes explain 50% or more of the variance in neuronal GFP signals for most event-triggered averages and across entire recording durations. Variance explained was lower in ACC than V1, possibly due to contributions from the superior sagittal sinus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are directly supported by quantitative data in Figures 4D-E showing variance explained distributions. However, C122 is speculative about the anatomical cause for lower variance in ACC, which is appropriately acknowledged as speculation in the claim evidence. The core finding of substantial variance explained by blood vessel signals is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Hemodynamic responses are context-dependent and vary across cortical depth and regions. GFP responses to locomotion onset differ between closed loop, open loop, and dark conditions, with distinct patterns in V1 L2/3, V1 L5, and ACC L2/3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 are supported by data in Figure 5 showing differential responses across conditions and brain regions. The conclusion that hemodynamic responses are difficult to predict from component signals (C128) and don't generalize across depth or areas (C129) is justified by the complexity and variability shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Pairwise correlations of GFP signals systematically increase during locomotion across V1 L2/3, V1 L5, and ACC L2/3. This effect is opposite to the decorrelation observed with calcium indicators during locomotion, consistent with hemodynamic changes occurring at larger spatial scales than neuronal activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 are supported by data in Figure 6 showing increased correlations during locomotion. The comparison to calcium indicator studies (C57, C62) is appropriately cited. The interpretation about spatial scale (C63) is a reasonable inference from the correlation patterns, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Widefield imaging shows GFP responses to locomotion and grating onsets in both V1 and ACC, but no significant visuomotor mismatch responses. These responses are greatly attenuated when imaging without fluorescent indicator expression, supporting hemodynamic occlusion as the primary mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 are supported by data in Figure 7 and Figure 7\u2014figure supplement 1. The control experiment without fluorescent indicator (C71) provides critical evidence that the observed signals are due to occlusion of expressed fluorophore rather than intrinsic optical signals. The inference about hemodynamic occlusion (C72) is well-justified by this comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "GRAB-DA1m and GRAB-5HT1.0 responses in V1 are similar to GFP responses, with neuropil and blood vessel ROI signals showing comparable dynamics. Both sensors likely report signals dominated by hemodynamic occlusion rather than true neuromodulator release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 are supported by data in Figure 8B-H showing similarity between GRAB sensor responses and GFP. The similarity between neuropil and blood vessel ROI responses (C75, C76) is key evidence. The conclusion that responses are dominated by hemodynamic occlusion (C80) is a reasonable inference, though the authors appropriately frame it as likely rather than certain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "GRAB-ACh3.0 shows a distinct response pattern with locomotion onset signals three-fold higher than GFP or blood vessel ROI signals, suggesting a mixture of hemodynamic occlusion and true acetylcholine responses. Grating and mismatch responses remain similar to GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by data in Figure 8J-L. The quantitative difference between neuropil and blood vessel signals (C81) provides evidence for a genuine GRAB-ACh3.0 component. The inference about mixed signals (C82) is appropriately cautious and well-justified by the magnitude differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In ACC, GRAB-DA1m and GRAB-5HT1.0 responses show no evidence of signals beyond hemodynamic occlusion, despite dopamine and serotonin release being stronger in frontal cortex than V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by data in Figure 8\u2014figure supplement 1 and citations about regional differences in neuromodulator release (C87, C88). The negative result in ACC strengthens the interpretation that the GRAB sensors are primarily reporting hemodynamic signals in these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Widefield GRAB-NE1m responses are similar to GFP responses, demonstrating that low dynamic range sensors can show readily measurable responses that are difficult to distinguish from hemodynamic occlusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by data in Figure 9 comparing GRAB-NE1m to GFP responses. The conclusion about low dynamic range sensors (C91) is a reasonable generalization from the multiple GRAB sensor results presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Brain movement artifacts cannot fully explain the observed GFP responses. Movement kinematics differ from GFP response patterns, no movement is detected during visual stimulation, and movement should decrease rather than increase fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by data in Figure 4\u2014figure supplement 1 showing brain velocity measurements. The logical arguments about ROI-based measurements (C95) and the direction of fluorescence changes (C96, C97) provide additional support for ruling out movement as the primary explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "pH sensitivity of GFP does not substantially contribute to the observed effects. While GFP is pH-sensitive and neuronal activity affects intracellular pH, the magnitude of physiological pH changes (~0.1) at resting pH (7-8) produces negligible GFP fluorescence changes, and many observed responses show positive rather than negative correlations with activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 are supported by cited literature on GFP pH sensitivity (C98, C103, C104, C105) and cellular physiology (C99, C100, C103). The logical argument combining pH change magnitude with GFP sensitivity range effectively rules out pH as a major contributor. The observation of positive correlations (C102) contradicts the expected direction of pH effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Hemodynamic tissue deformation from blood vessel diameter changes likely contributes less than occlusion to the observed signals. While cells near vessels are displaced during vasodilation/vasoconstriction, these effects should decrease fluorescence on average, contrary to the observed increases during locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by established knowledge of tissue mechanics (C107, C108) and logical reasoning about ROI measurements (C109). The inference that tissue deformation is a smaller contributor than occlusion (C110) is justified by the direction of observed fluorescence changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Hemodynamic occlusion is the primary contributor to observed GFP signals. Blood absorbs excitation and emission light, with absorption varying by blood volume and composition. Neurovascular coupling links neuronal activity to hemodynamic changes in a layer-specific manner, and blood vessel cross-section changes are sufficient to explain observed effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 combine established biophysical principles (C111, C112), cited literature on neurovascular coupling (C113, C114, C115), optical calculations (C116), and inference from the study's data (C117, C118). The conclusion that hemodynamic occlusion is the primary contributor (C118) is well-supported by the totality of evidence, though alternative contributions are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Mitigation strategies for hemodynamic artifacts include isosbestic imaging or GFP calibration. Isosbestic imaging works for GCaMP in widefield but requires a second tunable light source for two-photon imaging. Separate GFP calibrations are likely necessary for different cortical regions and layers due to spatial heterogeneity of hemodynamic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 are supported by citations to published correction methods (C131, C133-C136) and technical considerations (C132). The recommendation for region/layer-specific calibrations (C137, C138) is a reasonable inference from the demonstrated spatial heterogeneity of hemodynamic responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background and motivation: Fluorescence imaging tools have proliferated, but in vivo measurements are contaminated by hemodynamic occlusion artifacts. While this problem is recognized in widefield imaging with established correction methods, effects in two-photon imaging remain poorly characterized, particularly in behaving animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 establish the context and motivation for the study through citations to published literature and statements about the state of the field. These background claims are appropriately supported by references and accurately represent the knowledge gap being addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Most (95%) GFP-expressing neurons in the study were excitatory due to the Ef1\u03b1 promoter bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by citation to published work on the Ef1\u03b1 promoter and represents an important methodological detail about the cell types being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Future directions: Hemodynamic signals could potentially serve as useful proxies for neuronal activity given layer-specific neurovascular coupling. Blood vessel diameter measurements might provide simple secondary measurements in two-photon imaging. The problem is likely best mitigated using high dynamic range sensors with low baseline fluorescence and controlled using activity-independent fluorescence measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C143 are speculative proposals for future work (C140, C141, C142, C143) based on the study's findings. While C139 is supported by citations, the practical recommendations remain untested hypotheses. These represent reasonable directions but lack experimental validation in the current work.",
+    "result_type": "MINOR"
+  }
+]

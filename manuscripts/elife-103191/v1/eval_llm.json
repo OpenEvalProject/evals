@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "C. elegans make accept-reject patch choice decisions, initially rejecting several bacterial patches before switching to exploitation. Animals encountered ~8.4 patches during 1-hr recordings, with encounters classified as short or long duration. Animals were significantly more likely to stay on patches at later time points, with probability of residing on patch increasing significantly after ~10 min. Despite detecting patches (evidenced by significant deceleration upon encounter), animals initially rejected them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide converging evidence from behavioral tracking (C4), statistical classification (C5), temporal analysis (C6-C7), and velocity measurements (C8-C11) that collectively demonstrate accept-reject decision-making. The velocity data (C8-C11) critically shows animals detect patches but choose to reject them initially, distinguishing this from inability to sense food. Statistical tests support temporal changes in behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The timing of the explore-to-exploit switch is density-dependent. At densities <0.5, animals do not detect patches. At highest densities (50, 200), animals spent nearly 100% of time on patches. At intermediate densities (0.5-10), animals initially resided on patches at chance levels before transitioning to more time on patch, with the switch occurring earlier at higher densities. Time on patch increased monotonically with bacterial density following a sigmoidal trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 demonstrate density-dependent foraging behavior across a range of bacterial densities with appropriate statistical tests (Kendall's \u03c4 correlation, comparison to permuted controls). The monotonic relationship (C14) and density-dependent switching (C19) are well-supported by data in Figure 2E-F, N. The detection threshold (C12) is validated by velocity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Three distinct patch encounter types were identified using quantitative classification methods: search (no slowdown, not detected or ignored), sample (detected but rejected), and exploit (accepted). Classification was based on GMM analysis of encounter duration and velocity, validated by Silverman's test for bimodality, and refined using semi-supervised QDA of velocity-related features. Average velocities during search on-patch (~200 \u03bcm/s) matched off-patch (~207 \u03bcm/s), while sample (~114 \u03bcm/s) and exploit (~57 \u03bcm/s) encounters showed markedly slower velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 describe a sophisticated classification approach combining multiple statistical methods (GMM, Silverman's test, semi-supervised QDA) with biological validation through velocity measurements. The bimodality is statistically validated (C20), the classification is methodologically sound (C21, C23), and the velocity data (C24) provides biological validation of the classification scheme. The approach is well-documented in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Encounter type proportions vary systematically with bacterial density. At low densities (0-0.3), animals spent nearly all time searching. With increasing density, animals spent less time searching and more time sampling and exploiting. At high densities (50, 200), animals almost exclusively exploited. The timing of the switch from exploration to exploitation occurred earlier at higher densities, with animals on medium density conditions (0.5-10) exploiting after an average of 4.8-18.7 exploratory encounters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe systematic changes in behavior across density conditions with quantitative measurements (C30) and clear trends (C26, C29). The data in Figure 2L-O support these claims. The density-dependent switching is consistent with the earlier claims about temporal dynamics and provides additional quantitative detail about the number of encounters before exploitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The explore-then-exploit strategy is not specific to patchily distributed environments. Even in single-patch environments (both large and small), animals initially explored (search and sample) before exploiting in a density-dependent manner, with the timing of the switch occurring significantly earlier with increasing bacterial density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate that the explore-then-exploit behavior generalizes beyond multi-patch environments through experiments with single patches of varying sizes. The density-dependent switching persists (C32), validated by Kendall's \u03c4 correlation (Figure 3H, I). This is an important control showing the behavior is not an artifact of patch distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "The decision to explore or exploit is guided by multiple factors: available sensory information (current patch density), internal satiety signals (time off food since last exploitation), and learned environmental statistics (densities of recently encountered and exploited patches). A GLM analysis showed all these covariates significantly contribute to exploitation decisions. The satiety-related signal was validated through food-deprivation experiments, and the role of recent experience was validated in multi-density environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, C40, C41, C43 are supported by a comprehensive GLM analysis (Figure 4C) showing significant coefficients for all proposed factors, with appropriate statistical tests and model selection criteria. The model predictions were validated through independent experiments with food-deprived animals (C38, Figure 4\u2014supplement 3) and multi-density environments (C41, C43, Figure 4F). The distinction between satiety and stress signals (C40) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C98"
+    ],
+    "result": "Model predictions about history-dependent effects were validated in multi-density environments. An augmentation in exploitation was observed when animals moved from low to high density as predicted by the model with history dependence, but not the model without. Specifically, the lower the density of recently encountered or exploited patches and the higher the density of the current patch, the more likely an animal would be to exploit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C98 describe successful validation of model predictions in a novel experimental context (multi-density environments). The model with history-dependent terms outperformed the model without these terms (Figure 4F), and the predicted relationships between prior experience and current decisions were observed. This provides strong support for the role of learning and memory in foraging decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C54"
+    ],
+    "result": "Ciliated sensory neurons are required for proper evaluation of patch density and decision-making. mec-4 mutants (reduced non-ciliated mechanoreceptor function) behaved similarly to wild-type, showing density-dependent delayed exploitation with no significant changes in GLM coefficients. In contrast, osm-6 mutants (reduced ciliated chemoreceptor and mechanoreceptor function) displayed immediate exploitation even on low-density patches, with significantly altered GLM coefficients indicating impaired density evaluation and a modified default strategy prioritizing exploitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C50-C51, C54 provide genetic validation of the sensory mechanisms underlying decision-making. The differential effects of mec-4 vs. osm-6 mutations (Figure 4G-H) support specific roles for different sensory modalities. The GLM analysis of mutant behavior provides quantitative support for altered decision-making strategies. However, the interpretation that osm-6 mutants have 'augmented detection' but 'diminished assessment' (C100) requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C96",
+      "C97"
+    ],
+    "result": "C. elegans use sampling to re-evaluate environmental quality when changes are detected. The duration of sampling is correlated with the mismatch between current and recently experienced patch densities. When there is no difference between current and prior experience (density 200), animals rarely sample. Animals likely use information learned during sampling to guide subsequent explore-exploit decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C96-C97 describe an adaptive sampling strategy supported by the correlation between sampling duration and density mismatch, and the GLM results showing significant effects of recently encountered patch density (Figure 4C, F). The observation that animals rarely sample when current matches prior experience (C97, Figure 2L-M) provides additional support. However, the causal claim that sampling information guides subsequent decisions (C82) is an inference from correlational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C90",
+      "C91",
+      "C92",
+      "C100"
+    ],
+    "result": "Bacterial detection and density assessment are mediated by distinct sensory mechanisms. Post-ingestive feedback or other non-ciliary sensory cues may drive initial detection, while ciliated sensory neurons are crucial for nuanced evaluation of bacterial patch density. osm-6 mutants display augmented ability to detect patches but diminished ability to assess density. Reduced efficacy in evaluating current patch density also affects learning and memory of patch density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53, C90-C92, C100 propose a two-mechanism model for bacterial sensing, but the evidence is largely inferential. The osm-6 phenotype (immediate exploitation, altered GLM coefficients) is consistent with this model, but alternative explanations exist. The claim that osm-6 mutants have 'augmented detection' (C100) is based on the absence of search behavior, but this could reflect altered decision thresholds rather than enhanced detection. The effect on learning/memory (C53) is inferred from altered coefficients but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "C. elegans exhibit delayed gratification, rejecting immediately available food for potentially better opportunities, despite likely possessing limited spatial memory and being unaware of the total number of patches in the environment. This suggests that delayed gratification and related processes may require less complex cognition than previously considered, or that the cognitive capacity of C. elegans has been underestimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C88 make interesting interpretations about cognition and delayed gratification, but these are speculative. The observation that animals reject patches even in single-patch environments (C88, Figure 3) is well-supported, but the interpretation as 'delayed gratification' (C86) is debatable. The behavior could reflect simpler mechanisms like sensory adaptation or threshold-based decision rules rather than cognitive evaluation of future opportunities. The claim about limited spatial memory (C87) is cited but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The relative density of the patch edge (where bacterial density is highest) was used as a proxy for an animal's assessment of bacterial patch density. This decision was based on previous findings that time spent on the patch edge affects subsequent area-restricted search. Alternative methods of patch density estimation should yield similar results given the monotonic relationship between patch density and behavioral outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 describe a methodological choice that is well-justified by prior literature (C94) and the observed monotonic relationships in the data (C95). The use of edge density as a proxy is reasonable given that animals encounter the edge first and show consistent velocity changes there. However, the claim that alternative methods would yield similar results (C95) is an assumption rather than a tested conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C101"
+    ],
+    "result": "Bacterial growth during the experiment was negligible, and the increased responsiveness to dilute patches over time could have resulted from small changes in bacterial growth or modulation of patch detection sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is well-supported by measurements shown in Figure 2\u2014supplement 3. Claim C99 is speculative but acknowledges uncertainty. The negligible bacterial growth (C101) is an important control that validates the interpretation of behavioral changes as reflecting animal state rather than environmental changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The assay is suitable for investigating neuronal mechanisms of decision-making. The frequency of decision-making opportunities (numerous accept-reject decisions in minutes) and consistency across animals and conditions support this. The accept-reject decision likely occurs during a narrow time window at or shortly after patch encounter. The assay could be adapted for calcium imaging in freely moving animals or leveraged as an accumulation of evidence paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 describe the utility of the assay for future mechanistic studies. The frequency and consistency of decisions (C102) are well-demonstrated in the results. The narrow time window (C103) is a reasonable inference from the velocity data. The suggestions for calcium imaging (C104) and evidence accumulation paradigms (C105) are speculative but well-justified by the experimental design and cited precedents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The results do not imply that C. elegans discretize their experiences into the model parameters. The exact mechanisms underlying exploitation decisions and the best model design require further investigation. It is possible that the density of recently exploited patches is predictive because post-ingestive feedback is required for memory and/or because more distant experiences are remembered (long-term memory). Future studies should differentiate between these possibilities and characterize the memory time window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 appropriately acknowledge limitations and uncertainties in the interpretation of the modeling results. The caution about not over-interpreting the model (C106) is scientifically appropriate. The acknowledgment that mechanisms require further investigation (C107) and the suggestions for future work (C108-C109) demonstrate appropriate scientific humility and provide clear directions for follow-up studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "This quantitative and ecologically inspired approach to investigating behavior and decision-making is powerful for refining hypotheses and enables subsequent investigation into underlying cellular, molecular, and circuit pathways in C. elegans, a strategy that could be adopted across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is a concluding statement about the broader implications of the approach. The study does demonstrate the value of combining ethological observations with quantitative modeling and genetic manipulations. The approach successfully identified novel behaviors, generated testable predictions, and validated them through multiple experimental paradigms. The suggestion that this could be adopted across species is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background claims about C. elegans biology, foraging theory, and prior literature on decision-making and foraging behavior. These include established facts about C. elegans nervous system (302 neurons), complex behaviors, stay-switch decisions, optimal foraging theory, and various factors that modulate foraging behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C85 are primarily citations to established literature and general knowledge about C. elegans biology and foraging theory. These are appropriately cited and provide necessary context for the study. The claims about optimal foraging theory (C65, C78-C79) and prior work on C. elegans foraging (C58-C61, C70-C75) are well-supported by the cited literature. These background claims are not novel findings but provide essential context.",
+    "result_type": "MINOR"
+  }
+]

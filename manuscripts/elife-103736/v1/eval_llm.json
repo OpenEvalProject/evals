@@ -1,0 +1,407 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C31",
+      "C32"
+    ],
+    "result": "The hunger state manipulation successfully altered subjective hunger ratings without affecting mood. Hunger ratings increased in the hungry condition and decreased in the sated condition (F(1)=26.31, p<.001, d=0.708), while positive and negative affect remained unchanged across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C31, and C32 provide converging evidence that the experimental manipulation was effective. The RM-ANOVA shows significant differences in hunger ratings between conditions with adequate statistical power (d=0.708), and the control analysis confirms no confounding mood effects. This establishes the validity of the hunger state manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C117",
+      "C118"
+    ],
+    "result": "Principal component analysis revealed that taste and health represent independent factors in food choice. Two components explained 81% of variance: the first loaded on health/caloric information, the second on taste/wanting, with minimal cross-loadings between components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C117-C118 collectively demonstrate through PCA that taste and health are orthogonal dimensions. The high variance explained (81%), clear component structure shown in supplementary figures, and low cross-loadings provide strong empirical justification for treating these as independent attributes in subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C37",
+      "C38",
+      "C48",
+      "C84",
+      "C85"
+    ],
+    "result": "Hunger amplified participants' preference for tasty over healthy food options. Participants were more likely to choose tasty options in both conditions, but this preference was significantly stronger when hungry (\u03b2_sated=-0.211, SE=0.103, p=0.04). Taste value differences predicted tasty choices across conditions, while health value differences predicted healthy choices primarily when sated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C21, C37-C38, C48, C84-C85 provide consistent evidence from preregistered hypotheses, GLMM analyses, and visual data (Figure 2c-d) that hunger increases preference for tasty foods. The statistical significance, effect sizes, and convergence across multiple analytical approaches strongly support this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C50"
+    ],
+    "result": "Response times were influenced by taste value differences but not health values or hunger state. RT was highest when taste ratings were similar between options (Figure 2e), and tasty choices were faster by 0.15s (SE=0.018, p<0.001). Hunger state did not affect RT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C49-C50 are supported by GLMM analyses with clear statistical significance. The finding that health values don't affect RT (C43) and hunger doesn't affect RT (C50) are well-documented null results. The pattern is consistent with difficulty-based RT effects where similar options require more deliberation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C65",
+      "C66",
+      "C88",
+      "C105"
+    ],
+    "result": "Hungry participants allocated more attention to tasty food options, particularly food images versus Nutri-Scores. Dwell time on tasty options predicted tasty choices in both conditions (Figure 3a), but the preference for looking at food images over Nutri-Scores was more pronounced when hungry (t(69)=2.595, p=.006, d=0.312), remaining significant after outlier exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C52-C56, C65-C66, C88, and C105 provide robust eye-tracking evidence with statistical significance, effect sizes, and robustness checks. The convergence between dwell time patterns and choice behavior, along with the condition-specific differences in attribute-level attention, strongly supports the attentional mechanism underlying hunger effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C67",
+      "C87",
+      "C89",
+      "C103",
+      "C104"
+    ],
+    "result": "Attention mediated the influence of hunger on dietary decisions. Bayesian mediation analysis revealed that hunger predicted increased dwell time on tasty options (a=0.01, CI=[<0.001, 0.022]), which in turn predicted tasty choices (b=5.41, CI=[4.54, 6.32]). The direct effect of hunger on choice became non-significant when attention was included (cp=0.19, CI=[-0.02, 0.41]), while the mediation path was significant (a*b=0.08, CI=[0.01, 0.16]).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C67, C87, C89, C103-C104 are supported by formal mediation analysis with credible intervals excluding zero for the mediation path. The statistical approach is appropriate, convergence diagnostics are reported, and the pattern is consistent with the attentional mechanism. The mediation provides mechanistic insight into how hunger affects choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C68",
+      "C72",
+      "C73"
+    ],
+    "result": "An extended multi-attribute attentional drift diffusion model (maaDDM2\u03c6) with separate discounting parameters for taste and health attributes provided the best account of choice and RT data. This model substantially outperformed all other models including the standard maaDDM (DIC=64002 vs 65155), with excellent posterior predictive checks (Figure 4). Models without starting point bias consistently outperformed those with starting point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C24, C68, C72-C73 are supported by rigorous model comparison using DIC, posterior predictive checks, and parameter recovery analyses. The substantial improvement in model fit (\u0394DIC>1000), convergence diagnostics (Rhat<1.05), and qualitative fit to data provide strong evidence for the extended model architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C70",
+      "C75",
+      "C86",
+      "C98"
+    ],
+    "result": "Hunger increased the relative weighting of taste versus health information in the decision process. The taste weight parameter (\u03c9) was greater than 0.5 in both conditions (indicating taste preference), but was credibly higher under hunger (HDI=[0.122, 0.642], Figure 5a). This pattern was consistent across all model variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25, C70, C75, C86, C98 are supported by Bayesian parameter estimation with credible intervals excluding zero for the hunger effect. The consistency across models, convergence of MCMC chains, and alignment with behavioral choice data provide strong support for increased taste weighting under hunger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C26",
+      "C71",
+      "C90",
+      "C112",
+      "C113"
+    ],
+    "result": "Hunger selectively increased the attentional discounting of health but not taste information. The maaDDM2\u03c6 model revealed that hunger amplified discounting of unattended health information (\u03c6_H: HDI=[-1.088, -0.188], Figure 5g) while not affecting taste discounting (\u03c6_T: HDI=[-0.291, 0.16], Figure 5f). This means unattended nutritional information had reduced influence on evidence accumulation when hungry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C26, C71, C90, C112-C113 are supported by the best-fitting model's parameter estimates with credible intervals. The attribute-specific effect (health but not taste) is a novel finding enabled by the model extension. The pattern is consistent with behavioral and eye-tracking data showing reduced health consideration under hunger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C115"
+    ],
+    "result": "Participants were more likely to choose options rated higher in taste, wanting, and caloric content. Taste ratings strongly predicted choice across conditions, while health ratings only predicted choice when sated and were less influential than taste ratings (Figure 2c-d). These patterns were consistent with supplementary analyses using wanting and caloric information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 and C115 are supported by GLMM analyses, visual evidence in Figure 2, and supplementary analyses reported in appendices. The convergence across different operationalizations (taste/health, wanting/health, calories) strengthens confidence in the core finding about attribute weighting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C101",
+      "C102"
+    ],
+    "result": "Valuation in dietary choice is influenced by both attribute weights and attention. Dwell time emerged as an important predictor of both choice and response time in GLMM analyses, demonstrating that attention plays a mechanistic role beyond simple attribute weighting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C101-C102 are supported by GLMM results showing significant dwell time effects and the mediation analysis demonstrating attention's causal role. The integration of eye-tracking with choice modeling provides converging evidence for attention's influence on valuation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Two explanations account for disproportionate dwell time on food images versus Nutri-Scores: (1) food images were more important for decisions (\u03c9>0.5), and people attend more to important attributes; (2) food images contain more complex information requiring longer processing time, while color-coded Nutri-Scores provide salient, easily discernible health information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C110 represent post-hoc interpretations (C106 is inference, C108-C110 are speculation) of the dwell time patterns. While C107 is supported by citation and C106 is consistent with modeling results, the complexity explanation (C108-C110) lacks direct empirical support. These are plausible but untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Prior research demonstrates that nutritional scores can promote healthy choice despite little dwell time, and that focusing attention on health aspects increases healthy choice through increased dlPFC value computations. These findings suggest attention-based interventions could mitigate hunger's effects by reducing attentional discounting of health information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C131-C132 are supported by appropriate citations to prior literature. However, C133 is speculative extrapolation from current findings and prior work. The cited evidence supports the general principle, but the specific application to hunger contexts requires empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C134"
+    ],
+    "result": "Hunger affects dietary choice through a twofold mechanism: (1) shifting relative weighting toward taste information, and (2) increasing attentional discounting of health information. The extended maaDDM2\u03c6 model revealed that valuation under hunger is compromised by both lower health weighting and stronger discounting of unattended health information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119 and C134 synthesize the main findings supported by modeling (C6-C7, C25-C26), behavioral (C2, C20-C21), and eye-tracking (C54-C55) results. The twofold mechanism is well-supported by converging evidence from multiple analytical approaches and represents the study's core theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Potential demand effects from the within-subject protein shake manipulation are acknowledged but unlikely. While recent research shows labeling effects on hunger ratings and valuations, the absence of starting point bias in the models argues against systematic prior bias from demand effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C122 address an important limitation. C121 is supported by citation, C122 provides model-based evidence against demand effects, but C120 acknowledges the limitation cannot be definitively ruled out. The within-subject design creates potential for demand effects that the starting point analysis only partially addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Both homeostatic and hedonic mechanisms drive eating behavior. Preference for high-caloric foods when hungry aligns with adaptive energy restoration (homeostatic), while preference for less healthy options when sated suggests hedonic drivers that could indicate maladaptive decision-making if sustained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C125 are supported by citations and established knowledge. C126 is a reasonable interpretation of the data. However, C127 is a data observation while C128 is speculation about hedonic predominance and maladaptive consequences. The distinction between homeostatic and hedonic mechanisms in the current data is not empirically tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Participants in the sated condition showed reduced attentional discounting of health information, which poses potential for attention-based intervention strategies to counter hedonic hunger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 is supported by modeling results (lower \u03c6_H discounting when sated). However, C130's claim about intervention potential is speculative. While the reduced discounting when sated is empirically supported, the leap to intervention efficacy requires additional research and is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The maaDDM2\u03c6 extension represents a general methodological contribution to multi-attribute decision-making research by allowing attribute-specific attentional discounting, which is likely applicable when attributes are described in markedly different formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 is a reasonable inference about the model's broader applicability, supported by its superior fit in this context. However, C136 is speculation about when the model would be useful. The methodological contribution is real and demonstrated, but generalizability claims require validation in other domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142"
+    ],
+    "result": "The study was preregistered, used appropriate power analysis (n=70 for d=0.3, \u03b1=0.05, power=0.8), and received ethical approval. The experiment was considered sufficiently powered based on expected larger effects for food choices (d=0.5) compared to the conservative power calculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 and C142 describe methodological rigor with appropriate documentation. The power analysis is conservative and well-justified. C140's inference about sufficient power is reasonable given the observed effect sizes, though the justification relies partly on expectations from prior literature rather than the preregistered calculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C153",
+      "C154",
+      "C156",
+      "C157",
+      "C158",
+      "C160"
+    ],
+    "result": "The study employed rigorous methods including individualized protein shake amounts (25% daily caloric needs), standardized food stimuli from validated databases, eye-tracking at 2kHz, appropriate preprocessing (RT outlier exclusion >4SD or <250ms), hierarchical Bayesian modeling with JAGS, piecewise constant averaging for computational efficiency, DIC for model comparison, and parameter recovery validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C160 describe methodological details that are well-documented and appropriate. The methods are state-of-the-art for this type of research, with proper validation procedures (parameter recovery), convergence diagnostics (Rhat), and model comparison approaches. The transparency and rigor support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior literature establishes that hunger promotes unhealthy dietary decisions, with evolutionary roots in adaptive preference for energy-dense foods. Modern obesogenic environments create mismatch with these mechanisms. Behavioral and neuroimaging studies show hunger increases reward value, choice frequency, and attention toward high-caloric foods. However, no prior study modeled attention and choice dynamics under different hunger states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16 are supported by appropriate citations to prior literature and represent accurate characterization of the field. C17's claim about the literature gap is a knowledge claim that appears accurate and motivates the current study. The background provides solid justification for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The study employed a within-subject design with 70 participants completing binary food choice tasks in hungry and sated states with eye-tracking. Choice attributes were taste (food images) and health (Nutri-Scores).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 accurately describe the experimental design, which is well-documented in methods and Figure 1. The sample size matches the preregistered power analysis, and the within-subject design is appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C91",
+      "C99",
+      "C100"
+    ],
+    "result": "The current findings align with previous research showing hunger affects dietary choice. Prior work using food bidding tasks found hunger elevated bids, with speculation this was driven by increased taste but not health valuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by current data and appropriate citations. C99 is supported by citation to Fisher & Rangel (2014). However, C100 is explicitly noted as speculation from the cited study, not an established finding. The alignment with prior work is appropriate but the speculative nature of C100 should be noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Hunger could impede ability or willingness to maintain health considerations in working memory when attention is drawn to tasty food stimuli, based on related work on attentional discounting and mnemonic demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 is explicitly speculative, drawing on related work (Eum et al., 2023; Weilb\u00e4cher et al., 2021) to propose a mechanism. While the speculation is informed by relevant literature and consistent with the findings, it represents a hypothesis rather than an empirically supported conclusion from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The pivotal role of attention was established in exploratory analyses using wanting and calorie measures as alternatives to taste and health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by supplementary analyses reported in appendices (Appendices 5-7, 11-12). These robustness checks using alternative operationalizations strengthen confidence that attention's role is not dependent on the specific taste/health framing.",
+    "result_type": "MINOR"
+  }
+]

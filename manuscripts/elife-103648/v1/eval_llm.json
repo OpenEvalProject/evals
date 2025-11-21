@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "NEKL-3 directly phosphorylates OSM-3 kinesin at residues 487-490 (YSTT motif) in the elbow region, which links coiled-coil1 and coiled-coil2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by converging in vitro phosphorylation assays (C1), mass spectrometry identification of specific phosphorylation sites (C2), and structural modeling showing the location of these residues in the elbow region (C3). The experimental evidence directly demonstrates NEKL-3-mediated phosphorylation at the identified sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The phosphor-dead (PD) mutation induces constitutive motility of OSM-3 in vitro, while the phosphor-mimic (PM) mutation does not, as demonstrated by ATPase activity, microtubule gliding, and single-molecule assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C44-C51 provide comprehensive in vitro biochemical evidence showing that PD mutation increases ATPase activity (C46), gliding speed (C48), and enables processive movement (C50), while PM mutation shows only modest increases in ATPase activity (C47) and lacks processive movement (C49). The data consistently support that PD disrupts autoinhibition while PM maintains it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C26",
+      "C27",
+      "C29",
+      "C30"
+    ],
+    "result": "Both PD and PM mutations shorten C. elegans sensory cilia in knock-in animals, but with distinct phenotypes: OSM-3PD fails to enter cilia and accumulates in neurites, while OSM-3PM enters cilia but moves at reduced speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C26-C30 are supported by quantitative cilium length measurements (C27, C29) and fluorescence imaging showing distinct localization patterns (C8, C26 for PD; C9, C29 for PM). The IFT velocity measurements (C30) further confirm impaired motility of PM mutant in cilia. The phenotypic differences between PD and PM mutants are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Elbow phosphorylation plays an inhibitory role in kinesin motility, with phosphorylation-dependent autoinhibition preventing precocious activation during cytoplasmic transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C31-C33 are supported by the combined in vitro and in vivo data showing that preventing phosphorylation (PD) causes constitutive activation (C32), while mimicking phosphorylation (PM) maintains autoinhibition but prevents full activation (C31). The inference that NEKL-3-mediated phosphorylation serves as a regulatory mechanism (C33) is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Structural modeling reveals that WT and PM mutants maintain head-tail interaction (autoinhibited conformation), while PD and G444E mutants show head-tail dissociation, with PD exhibiting higher folding/unfolding free energy indicating loop instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by AlphaFold2 structural predictions and PyRosetta energy minimization analyses. The structural models (C38-C40) are consistent with biochemical data, and energy analysis (C41-C42) provides mechanistic insight into why PD mutation destabilizes autoinhibition. However, these are computational predictions that would benefit from experimental structural validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C69",
+      "C70"
+    ],
+    "result": "A genetic suppressor screen identified an intragenic A489T mutation that fully restores OSM-3PD localization to cilia and normal IFT function, implicating T489 as a critical site for regulating elbow phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 and C69-C70 are well-supported by genetic screening data showing independent isolation of the same A489T suppressor mutation (C52-C53), restoration of ciliary localization (C54-C55), and normal IFT velocities (C56). The genetic suppression strongly implicates T489 in regulating elbow phosphorylation (C70), though direct mass spectrometry confirmation is acknowledged as pending.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C97",
+      "C98"
+    ],
+    "result": "Both T489E and T489A mutations form axonal puncta, demonstrating that T489 is a structural linchpin whose perturbation destabilizes autoinhibition and drives constitutive activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C97-C98 are supported by fluorescence imaging showing both T489E and T489A mutants recapitulate the hyperactive phenotype. The observation that both mutations (mimicking phosphorylation and preventing it) cause similar phenotypes (C57) supports the conclusion that dynamic phosphorylation cycling at T489 is necessary for proper regulation (C97-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C59",
+      "C60",
+      "C63",
+      "C72"
+    ],
+    "result": "A model is proposed wherein OSM-3 is phosphorylated by NEKL-3 in the soma to inhibit motility during transport, then dephosphorylated at the ciliary middle segment by an unidentified phosphatase to activate OSM-3 for IFT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C35 and C59-C60, C63, C72 represent a proposed mechanistic model based on the experimental findings. While the model is consistent with the data showing phosphorylation inhibits motility and the PM mutant phenotype suggests dephosphorylation is needed for activation, key elements remain speculative: the identity of the phosphatase (C72), the precise location of dephosphorylation (C63), and the transport mechanism to the ciliary base (C62) are not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "NEKL-3 phosphorylates OSM-3 at two distinct regions (Ser96 and the elbow motif) that differentially regulate its activity and localization, with elbow phosphorylation ensuring anterograde ciliary transport and Ser96 phosphorylation fine-tuning distal segment targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C73-C76 are supported by citation to a companion study (Huang et al., 2025) that demonstrates dual phosphorylation sites with distinct functional consequences. The nekl-3 cKO phenotype (C37) showing uniform OSM-3 distribution and premature activation is consistent with loss of both regulatory phosphorylations. The proposed model (C76) integrates findings from both studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The OSM-3PD phenotype resembles the previously characterized OSM-3G444E hyperactive mutation, with both showing absence from cilia, axonal puncta formation, and proposed disposal through membrane abscission and glial engulfment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C66-C68 are supported by comparison to the well-characterized G444E mutant phenotype. The similarity in ciliary defects and puncta formation (C28) is documented, and the proposed mechanism of disposal (C66-C67) is supported by citation to a recent study (Xie et al., 2024). The inference that OSM-3PD undergoes similar disposal (C68) is reasonable but remains to be directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The PM mutant's partial ATPase activity and increased gliding speed but lack of processive movement in single-molecule assays is explained by imperfect phosphomimicry, with gliding assays reflecting motor head activity after tail immobilization while single-molecule assays resolve native regulatory states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 and C91-C94 provide a mechanistic explanation for the apparent discrepancy between gliding and single-molecule assays. The interpretation that PD and PM mutations are confined to the elbow region (C92), that tail immobilization in gliding assays releases autoinhibition (C93), and that single-molecule assays directly resolve regulatory states (C94) is well-reasoned and consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Phosphorylation regulation of the elbow region may represent a widespread mechanism governing kinesin motility across the superfamily, potentially impacting a broad array of cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 represent a broad generalization based on the findings in OSM-3. While the elbow region is indeed conserved across the kinesin superfamily, the proposal that phosphorylation regulation is widespread (C84) and impacts diverse cellular processes (C85) is speculative and requires validation in other kinesin family members. This is appropriately framed as a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The elbow region of kinesins is a flexible junction between coiled-coil domains that serves as a pivotal regulatory center for autoinhibition, but its post-translational modification had not been elucidated prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C20-C23 establish the background knowledge about the kinesin elbow region based on prior literature (C4, C20-C22) and identify the knowledge gap (C23) that this study addresses. These claims are well-supported by appropriate citations and accurately frame the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C95",
+      "C96"
+    ],
+    "result": "Recombinant OSM-3 was expressed in E. coli, purified, and confirmed to form stable homodimers (173-193 kDa) by SEC-MALS, which is the predominant functional species in the in vitro assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C95-C96 describe the protein preparation and characterization methods. The SEC-MALS confirmation of dimeric state (C87, C95) is important for interpreting the in vitro assays, and the inference that dimeric OSM-3 is the predominant functional species (C96) is reasonable given the biochemical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C25"
+    ],
+    "result": "Background context establishing the importance of kinesin regulation, the role of cilia as a model system, the function of OSM-3 in C. elegans ciliary IFT, and the prior identification of NEKL-4 as a suppressor of OSM-3 hyperactive mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 and C24-C25 provide essential background information supported by appropriate citations to establish the biological context and rationale for the study. These claims accurately represent prior knowledge in the field and motivate the investigation of NIMA kinase regulation of OSM-3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C71",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Discussion of additional regulatory mechanisms and future directions, including the role of NEKL-4, potential involvement of other kinases and phosphatases, and possible regulation at the ciliary tip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C37, C61-C62, C64-C65, C71-C72, C77-C83 discuss additional regulatory mechanisms and future directions. While some claims are supported by citations (C36, C61, C71, C78, C82), many represent speculation about mechanisms not directly tested (C62, C65, C77, C81, C83). These are appropriately framed as hypotheses for future investigation but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Open-state OSM-3 mutants (e.g., G444E) displayed elevated ATPase activity consistent with structural predictions of autoinhibition release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by the ATPase activity data and structural predictions showing that G444E and PD mutants have elevated activity consistent with head-tail dissociation. This provides validation that the biochemical assays correlate with predicted structural states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Fluorescence of OSM-3::GFP and NEKL-3::GFP was observed in the soma and dendrites of sensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 reports a straightforward observation from fluorescence imaging that OSM-3 and NEKL-3 are present in the soma and dendrites. This localization data supports the model that phosphorylation occurs in these cellular compartments before ciliary entry.",
+    "result_type": "MINOR"
+  }
+]

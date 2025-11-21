@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C44",
+      "C45",
+      "C49"
+    ],
+    "result": "The study generated comprehensive transcriptomic atlases of T1 and T2 neuroblast-derived neurons and glia from adult Drosophila central brain using single nuclei RNA sequencing. The T1+T2 atlas contains 30,699 nuclei forming 152 clusters, while the T2-specific atlas contains 64,243 nuclei forming 198 clusters, with the T2 neuron atlas containing 50,148 nuclei forming 161 clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29-C32, C44-C45, and C49 provide consistent quantitative data on the sequencing approach and atlas generation. The methodology is clearly described with specific numbers of nuclei captured and clusters identified. The genetic labeling strategy (C30-C31) provides a reasonable approach to distinguish T1 from T2 lineages, though some contamination is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The T1+T2 atlas identified all known glial cell types including astrocytes, cortex, ensheathing, and surface glial subtypes (perineurial and subperineurial). Each glial cluster contained a mix of T1 and T2 progeny, and differential gene expression analysis showed no differences between T1 and T2 glial progeny across any glial cell types or clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C36-C42 are well-supported by the data shown in Figure 1E-F and supplementary files. The identification of known glial types is validated by canonical markers with appropriate citations. The finding that T1 and T2 glia are transcriptionally similar (C42) is a negative result that is appropriately reported, though the statistical power of this analysis is not explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The T2-specific glial atlas contains 12,315 glial nuclei and identified the same major glial cell types as the T1+T2 atlas, plus chiasm glia that may represent migratory glia from the DL1 lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by Figure 4 and appropriate citations. The identification of chiasm glia is interesting and appropriately cited to prior work (Viktorin et al., 2013), though the authors acknowledge uncertainty about whether these represent non-migrated central brain glia or contamination from optic lobe tissue (C102).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The T2 neuron atlas identified 161 neuron-specific clusters with diverse neurotransmitter expression profiles. Cholinergic neurons were most abundant (21%), followed by glutamatergic (12%), GABAergic (9%), tyraminergic (2.6%), dopaminergic (1.2%), serotonergic (1.2%), and octopaminergic (0.7%) neurons. Additionally, 12% of neurons co-expressed two or three neurotransmitters, and 40% did not express any neurotransmitter above threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C49-C58 provide detailed quantitative characterization of neurotransmitter expression supported by Figure 3. The percentages sum to approximately 100%, providing internal consistency. The threshold of log normalized expression <2 for the 40% non-expressing neurons (C58) is clearly stated. The co-expression finding (C57) is acknowledged as potentially biologically relevant or technical artifact (C96-C97), showing appropriate caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Sex-biased clusters were identified in both T2 glia and neurons. In glia, two female-enriched clusters (ensheathing/astrocyte and chiasm) and one male-enriched cluster (astrocyte-like) were found. In neurons, 14 sex-biased clusters were identified. Female nuclei showed enrichment of yp1/2/3 and dsx, while male nuclei showed enrichment of lncRNA:rox1/2 and fru.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 are supported by Figure 5 with appropriate normalization for sample input. The sex-specific markers (yp genes, rox1/2, fru, dsx) are well-established and properly cited. The identification of sex-biased clusters is methodologically sound, though the functional significance remains speculative (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Among 49 Drosophila neuropeptides, 13 showed enriched expression in limited clusters suitable as cluster-defining markers. All neuropeptide-expressing clusters co-expressed one or more neurotransmitters. Some clusters expressed multiple neuropeptides (e.g., clusters 100 and 128 express both NPF and AstA), while some neuropeptides were expressed in multiple clusters (e.g., Ms and Tk each in 2 clusters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by Figure 6A showing neuropeptide and neurotransmitter co-expression patterns. The finding that all neuropeptide clusters co-express neurotransmitters (C72) is clearly demonstrated. The complex relationship between neuropeptides and clusters (one-to-many and many-to-one) is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Morphological validation of neuropeptide-expressing neurons showed that T2-derived Ms+ neurons project to multiple layers of the dorsal fan-shaped body and entire ellipsoid body, while NPF+ and AstA+ neurons showed indistinguishable morphology with ~20 neurons projecting to lateral ellipsoid body and two fan-shaped body layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by Figure 6C-E and Videos 1-3. The genetic strategy to specifically label T2-derived neuropeptidergic neurons (Figure 6B) is elegant and addresses potential contamination from T1 neurons. The morphological similarity between NPF+ and AstA+ neurons (C77) supports the hypothesis that clusters 100 and 128 may represent the same or closely related cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "High correlations were found between multiple transcription factors and each neuropeptide across all cells in the dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by Figure 6 and Figure 6\u2014figure supplement 1, showing correlation analysis between TF and neuropeptide expression. However, correlation does not establish causation, and the authors appropriately frame this as identifying candidate regulatory relationships rather than proven mechanisms. The analysis provides a foundation for future functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C104"
+    ],
+    "result": "Most clusters expressed unique transcription factor combinations, with 100% of clusters having unique zinc finger and helix-turn-helix TF codes, 93.8% having unique homeodomain TF codes, and progressively lower uniqueness for basic domain (69.6%), unidentified DNA binding domain (59%), and high mobility group (34.2%) TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C79-C89, and C104 are well-supported by Figure 7 showing TF expression patterns across clusters. The quantitative analysis of uniqueness by TF class is clearly presented. The finding that zinc finger and helix-turn-helix TFs show 100% unique combinations (C84-C85) is particularly strong. However, the authors appropriately note potential false negatives due to low read depth (C107), which could affect these percentages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Several columnar neuron subtypes mapped to distinct clusters, while NPF+ and AstA+ neurons both mapped to two closely related clusters (clusters 100 and 128).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by the neuron-to-cluster mapping analysis shown in Figures 8-9. The mapping of columnar neurons to distinct clusters is validated through multiple complementary approaches (bulk RNA-seq correlation, split-Gal4 enhancer analysis, and marker gene validation). The finding that NPF+ and AstA+ neurons map to the same two clusters (C12) is consistent with their similar morphology (C77) and co-expression patterns (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Each transcriptional cluster represents one or a few closely related neuron subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C13 is a broad interpretive conclusion that is partially supported by the data. The mapping of known neuron types to distinct clusters (C11) and the unique TF codes (C10, C79-C89) support this hypothesis. However, the evidence is not comprehensive across all 161 clusters\u2014only a subset has been validated with known neuron types. The NPF+/AstA+ example (C12) shows that two closely related clusters may represent the same or very similar cell types, which is consistent with the claim but also shows the complexity of the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Both T1 and T2 neuroblasts generate transcriptionally similar cells despite their different developmental origins, as no cluster exclusively contained progeny from T1 or T2 lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 is based on the observation that no cluster was exclusively T1 or T2 (Figure 1C, Figure 1\u2014figure supplement 1). However, the authors acknowledge that deeper sequencing might resolve single clusters into separate T1 and T2 clusters. The T2-enriched clusters (C34) show that some cell types are preferentially derived from T2 lineages, suggesting the conclusion may be overstated. The lack of exclusive clusters could also reflect technical limitations (low coverage, ambient RNA) rather than true biological similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The T1 neuron atlas contains fewer distinct clusters (114) than the T2 neuron atlas (161), potentially due to T1 progeny containing a large population of transcriptionally similar Kenyon cells while T2 clusters contain fewer but more transcriptionally diverse cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43 and C93 provide clear quantitative data on cluster numbers. However, the explanation offered in C94-C95 is speculative. The difference could reflect true biological diversity, but could also result from differences in sequencing depth (22,807 T1 nuclei vs. 50,148 T2 nuclei), clustering parameters, or the presence of large homogeneous populations (Kenyon cells) in T1. The authors appropriately frame this as speculation ('could be due to') but do not provide statistical analysis to support the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The T1+T2 central brain atlas shows similarities to previous scRNA-seq datasets, including neurons expressing predominantly single neurotransmitters and major neuronal classes. Mushroom body neurons appearing in T2-derived progeny may result from off-target Gal4 expression or ambient RNA contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 appropriately compare the current dataset to prior work (Croset et al., 2018; Davie et al., 2018). The identification of expected cell types provides validation of the approach. Claim C92 acknowledges a potential technical issue (MB neurons in T2 atlas) and offers reasonable explanations, showing appropriate scientific caution. The ambient RNA explanation is more likely given the dissociation protocol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Based on prior estimates that T2 NBs produce ~5000 neurons/glia in the central brain with ~1800 in the central complex, the T2 atlas with 64,243 nuclei provides ~12x coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by appropriate citations to prior work. The calculation of ~12x coverage (C48) is straightforward arithmetic based on the cited estimates. However, this assumes the prior estimates are accurate and that all T2-derived cells were equally captured, which may not be true. The high coverage suggests good depth for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Multiple clusters with the same glial subtype annotation may represent distinct identities or different transcriptional states. The lack of differential gene expression between T1 and T2 glia suggests similarity despite different developmental origins. The T2 glia atlas contains more clusters than T1+T2 atlas, potentially due to 4x more glia captured. Chiasm glia identified may represent non-migrated central brain glia or optic lobe contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 appropriately acknowledge uncertainties in the data interpretation. C98 raises an important question about whether multiple clusters of the same glial type represent true biological diversity or technical/state variation\u2014this cannot be resolved with the current data. C99 is a reasonable inference from C42 but could also reflect insufficient resolution. C100 is plausible but the relationship between cell number and cluster number is not necessarily linear. C102 acknowledges two possible explanations for chiasm glia presence without being able to distinguish them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Sex-specific genes may provide insight into behavioral circuits, TF combinations may determine neuronal functional properties, zinc finger TFs may warrant more attention than traditionally given to homeodomain TFs, and sparse TF expression patterns may partly result from low read depth that could be addressed by deeper sequencing or functional assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C105-C108 are appropriately framed as speculation and suggestions for future work. C103 and C105 propose functional significance that is not tested in this study. C106 makes an interesting observation about zinc finger vs. homeodomain TF uniqueness but the interpretation is speculative. C107-C108 acknowledge a potential technical limitation and suggest solutions, showing good scientific practice. These are reasonable hypotheses but require experimental validation.",
+    "result_type": "MINOR"
+  }
+]

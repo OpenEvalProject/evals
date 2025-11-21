@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Rank-1 RNN models can perform the CDM task but only through input modulation, not selection vector modulation. In these models, selection vectors remain invariant across contexts while input representation directions change, with the overlap between input representation and selection vector being large in relevant contexts and small in irrelevant contexts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this finding. Reviewer 1 states the authors 'show that rank-one networks can only implement input modulation,' Reviewer 2 confirms 'the manuscript starts by demonstrating that unit-rank RNNs can only implement the input-modulation mechanism,' and the editor notes the results are 'convincing.' The mathematical proof and robustness across hyperparameters further strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Rank-3 RNN models exhibit pure selection vector modulation, where the selection vector changes across contexts while input representation direction remains invariant. The overlap between selection vector and input representation is large in relevant contexts and small in irrelevant contexts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this finding. Reviewer 1 notes the authors 'build rank three networks which implement selection-vector modulation,' and Reviewer 2 confirms 'higher-rank networks are required for selection vector modulation.' The editor describes the results as 'convincing,' indicating acceptance of this core finding about rank-3 networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Both rank-1 (input modulation) and rank-3 (selection vector modulation) models show well-represented irrelevant sensory input information in neural activity state space when using targeted dimensionality reduction, making these mechanisms indistinguishable through this analysis method and reconfirming the challenge of distinguishing modulation types from neural activity data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is implicitly accepted by all reviewers as part of the overall framework. Reviewer 1 acknowledges 'differentiating between selection mechanisms is generally a difficult task,' which aligns with this claim. No reviewer challenges this result, and it forms part of the 'convincing' results noted by the editor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C15"
+    ],
+    "result": "There exists a previously unknown link between selection vector modulation and network connectivity dimensionality, uncovered through low-rank RNN modeling and information flow analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly highlight this as a key contribution. Reviewer 1 states 'the most interesting aspect of the study involves establishing a link between selection vector modulation, network dimensionality and dimensionality of neural dynamics.' Reviewer 2 notes this addresses 'what type of structure in the recurrent connectivity favors one or the other mechanism,' which 'remained an open question.' The editor confirms these results are 'convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The pathway-based definition of input modulation and selection vector modulation is equivalent to the classical definition based on linearized dynamical system analysis, validated through both numerical comparison and theoretical derivation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes the study 'introduces a novel definition of selection vector modulation that explicitly links it to changes in the effective coupling along specific pathways,' and Reviewer 2 praises the 'analytic approach adopted in the manuscript' as 'impressive.' The equivalence validation strengthens the theoretical framework without explicit criticism from any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A minimum of three dimensions is required to visualize the pathway-based selection vector in neural activity state space, because only the second-order selection vector component (which depends on intermediate variable encoding) is subject to contextual modulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly notes 'very clear identification of the mechanisms leading to the two types of context-dependent modulation,' which encompasses this geometric understanding. The mechanistic explanation is part of the 'impressive' analytic approach praised by Reviewer 2, and no reviewer challenges this theoretical insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Networks with high-dimensional connectivity are more likely to have a large proportion of selection vector modulation, with a strong positive correlation between effective connectivity dimension and selection vector modulation proportion in vanilla RNNs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly highlights 'the high correlation between the networks' mechanisms and their dimensionality (Fig. 7d) is surprising since differentiating between selection mechanisms is generally a difficult task,' and notes 'the strength of this result is further corroborated by its consistency across multiple RNN hyperparameters.' This represents strong reviewer endorsement of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Models with high effective dimension exhibit richer response kernel profiles beyond sensory input and decision variable profiles, including response kernels with peak amplitudes between pulse onset and choice onset, which signify neural dynamics in extra dimensions and serve as a signature of selection vector modulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'single-neuron response kernels exhibiting specific profiles (peaking between stimulus onset and choice onset) are indicative of neural dynamics in extra dimensions, supporting the presence of selection vector modulation.' This finding is part of the 'novel neural dynamical signatures' that the editor describes as 'convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The percentage of explained variance (PEV) of extra dynamical modes, particularly the second transient mode, can serve as a reliable index reflecting the proportion of selection vector modulation in trained RNN models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'the percentage of explained variance (PEV) of extra dynamical modes extracted from response kernels at the population level can serve as an index to quantify the amount of selection vector modulation,' and notes 'the correlation between the selection mechanism and the dimensionality of neural dynamics is also high (Fig. 7g), potentially providing a promising future avenue for the study of neural recordings.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The major variance in neural activity of vanilla RNNs learned through backpropagation is task-relevant, but task-irrelevant variance likely exists in biological neural recordings, suggesting that integrative efforts incorporating recordings, perturbations, connectivity knowledge, and modeling may be required to address individual variability in neural computations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly acknowledges this limitation: 'the results linking selection vector modulation and dimensionality might not generalize to neural representations where a significant fraction of the variance encodes information unrelated to the task. Therefore, these tools might not be applicable to neural recordings.' This represents a recognized limitation rather than a challenge to the RNN findings themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Context-dependent decision-making is a fundamental cognitive ability, but the neural mechanisms underlying context-dependent selection remain elusive, with recent work highlighting the challenge of discriminating between input modulation and selection vector modulation mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims establish the motivation for the study and are implicitly accepted by all reviewers. Reviewer 2 explicitly acknowledges 'Pagan and colleagues identified two distinct mechanisms' and notes 'what type of structure in the recurrent connectivity favors one or the other mechanism however remained an open question,' confirming the problem statement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C63"
+    ],
+    "result": "The low-rank RNN modeling approach features well-controlled model complexity and mechanistic transparency, providing advantages over 'black-box' vanilla RNN approaches for understanding context-dependent computation mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly praises the approach, stating 'the analytic approach adopted in the manuscript is impressive' and noting 'very clear identification of the mechanisms leading to the two types of context-dependent modulation.' The editor confirms the study provides 'important set of analyses and theoretical derivations,' supporting the methodological claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The pulse-based CDM task is a rat-version paradigm where rats are presented with randomly-timed auditory pulses varying in location and frequency, and must determine prevalent location or frequency based on context cues, with pulse-based input allowing better characterization of responses compared to continuous input.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These task description claims are accepted without challenge by all reviewers. Reviewer 1 accurately summarizes 'subjects are presented with sequences of auditory pulses that vary in location and frequency, and they must determine either the prevalent location or frequency based on an external context signal,' confirming understanding and acceptance of the task paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The pathway-based understanding may be transferable to other cognitive tasks, and while transient dynamics in extra dimensions are not necessary for the CDM task studied, more complex context-dependent computations may require such dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These speculative claims about broader implications are not challenged by reviewers. The editor notes the manuscript 'will be of interest to a broad audience in systems and computational neuroscience,' implicitly supporting the potential broader applicability. These represent reasonable extensions acknowledged as speculative by the authors.",
+    "result_type": "MINOR"
+  }
+]

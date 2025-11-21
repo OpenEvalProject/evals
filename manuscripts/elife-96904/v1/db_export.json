@@ -1,0 +1,2135 @@
+{
+  "submission": {
+    "id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:15:05.872740Z",
+    "updated_at": "2025-11-21T17:15:05.872740Z"
+  },
+  "content": [
+    {
+      "id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "content_type": "manuscript",
+      "content_text": "# mirror determines the far posterior domain in butterfly wings\n\n## Authors\n\n- Martik Chatterjee<sup>1</sup> ([ORCID: 0000-0003-4689-6212](https://orcid.org/0000-0003-4689-6212)) \u2020\n- Xin Yi Yu<sup>1</sup>\n- Noah K Brady<sup>1</sup>\n- Connor Amendola<sup>1</sup>\n- Gabriel C Hatto<sup>1</sup>\n- Robert D Reed<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Ecology and Evolutionary Biology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))\n2. Depatment of Molecular Biology and Genetics, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))\n\n\u2020 Corresponding author\n\n## Abstract\n\nInsect wings, a key innovation that contributed to the explosive diversification of insects, are recognized for their remarkable variation and many splendid adaptations. Classical morphological work subdivides insect wings into several distinct domains along the anteroposterior (AP) axis, each of which can evolve relatively independently to produce the myriad forms we see in nature. Important insights into AP subdivision of insect wings come from work in Drosophila melanogaster; however, they do not fully explain the diversity of AP domains observed across broad-winged insects. Here, we show that the transcription factor mirror acts as a selector gene to differentiate a far posterior domain in the butterfly wing, classically defined as the vannus, and has effects on wing shape, scale morphology, and color pattern. Our results support models of how selector genes may facilitate evolutionarily individuation of distinct AP domains in insect wings outside of Drosophila and suggest that the D. melanogaster wing blade has been reduced to represent only a portion of the archetypal insect wing.\n\n## Introduction\n\nInsect wings vary dramatically in their size and morphology. Butter`lies and moths in particular have attracted attention for their rapidly evolving wings that show extreme variation in shape and color pattern. Interestingly, the diversity of lepidopteran color patterns appears to follow relatively simple rules, wherein an evolutionarily conserved set of spot and stripe pattern elements can vary in size, color, and presence/absence along the anteroposterior (AP) axis (Nijhout, 1991; Nijhout, 2001). Surveys of wing pattern diversity across butterflies, considering both natural variation and genetic mutants, suggest that wings can be subdivided into five AP domains, bounded by the M1, M3, Cu2, and 2A veins as summarized in Figure 1A (McKenna et al., 2020). Within each domain, there is a strong correlation between pattern variation and wing morphology, and, conversely, between domains, there is a relative degree of independence in morphological variation. We know little about how these different AP domains are differentiated during wing development, however.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/96904/elife-96904-fig1-v1.jpg)\n\n**Figure 1.:** (A) Comparative morphology previously identified boundaries associated with color pattern variation, demarcated by the M1, M3, Cu2, and 2A veins (de Celis et al., 1996). (B) Examples of the 2A vein marking a clear posterior color pattern boundary across multiple butterfly families. (C) Proximal posterior features of the archetypal dipteran wing include the calypters, which are only found in the Calyptratae clade, and the alula, a lobe at the base of the wing blade (McAlpine et al., 1981). (D) mirror RNAi knockdowns result in highly specific loss of the alula in Drosophila melanogaster (Kehl et al., 1998). (E) Snodgrass\u2019 model of the archetypal insect wing specifies three major domains along the anteroposterior axis: the remigium, the vannus, and the jugum. Homologies of these domains with the features of the dipteran wing (C), or butterfly wing pattern boundaries (A), have remained unclear.\n\nSome aspects of the AP wing differentiation process have been extrapolated from D. melanogaster wings to butterflies. The transcription factors engrailed and spalt define AP domains in developing fly wings (Guill\u00e9n et al., 1995; de Celis et al., 1996; Morata and Lawrence, 1975) and exhibit expression patterns in butterflies that suggest some functions may be conserved. In butterflies, engrailed transcription occurs across the entire region posterior to the M1 vein, while its paralog invected marks a largely overlapping region between M1 and 2A (Carroll et al., 1994; Keys et al., 1999; Banerjee and Monteiro, 2020). spalt expression is more dynamic and complex in butterflies, but appears to consistently mark a region between the R2 and M3 veins (Banerjee and Monteiro, 2020). These observations, coupled with the overall size and morphological complexity of butterfly wings, have spurred interest in the question of whether additional AP differentiation mechanisms may underlie AP domain specification in Lepidoptera and other insects (Abbasi and Marcus, 2017; Lawrence et al., 2019). The identification of additional domain-determining transcription factors in broad-winged insects would provide a model for the modular diversification of insect wing morphology.\n\n## Results and discussion\n\nThe goal of this study was to identify the molecular basis of AP domain specification in the butterfly wing, posterior to the M1 engrailed boundary. We initially identified the transcription factor mirror as a potential candidate selector gene based on previous mRNA-seq studies (Hanly et al., 2019), coupled with D. melanogaster work showing that mirror specifies the alula \u2013 a small membranous lobe at the posterior base of the wing in some dipterans (Figure 1C and D; Kehl et al., 1998; Foronda et al., 2009). We used in situ hybridization to visualize mirror mRNA localization in the last-instar imaginal discs of the common buckeye butterfly, Junonia coenia, and observed mirror expression throughout the wing domain posterior to the 2A vein boundary (Figure 2A; Figure 2\u2014figure supplement 1). This expression precisely marks the vannus, or anal region (Figure 1B and E), of the butterfly wing \u2013 a distinct posterior domain of the wing blade populated by the anal (A) veins and bordered anteriorly by the claval fold between the cubital (Cu) and A veins in the hindwing (Figure 2B). As observed in various representative species across different butterfly families, this region of the hindwing is distinct from the rest of the wing; the color patterns defining the wing blade terminate at the 2A vein, and in many species, it is marked by scales that differ in morphology and lack color patterns found in anterior regions of the wing (Figures 1B and 2B; Figure 2\u2014figure supplement 2A). This region has been proposed to represent the posterior-most color pattern domain in butterflies (Figures 1A and 2B; McKenna et al., 2020).\n\nTo functionally assess the role of mirror in wing development, we generated CRISPR/Cas9 mosaic knockouts (mKOs) targeting the coding region of J. coenia mirror. We recovered many mKO mutants that consistently exhibited several distinctive phenotypes (Figure 2C, D, and F; Figure 2\u2014figure supplement 2; Figure 2\u2014figure supplement 3; Figure 2\u2014figure supplement 4), but only ever in the mirror-expressing posterior vannus region:\n\n![Figure 2.](https://cdn.elifesciences.org/articles/96904/elife-96904-fig2-v1.jpg)\n\n**Figure 2.:** (A) In J. coenia, mirror (red) is expressed posterior to the 2A vein in the late last-instar hindwing imaginal discs, marking the region that will develop into the vannus. See Figure 2\u2014figure supplement 1 for forewing expression and controls. (B) In adult butterfly wings, the vannus is the wing field posterior to the 2A vein, shown here in J. coenia as a posterior lobe with silvery scales devoid of color patterns found anterior to 2A. (C) Targeted mosaic knockouts (mKOs) of mirror result in loss of vannus features in J. coenia. (D) Annotation of wild-type features preserved on one side of a contralateral mKO. (E) Annotation of full effect mutant phenotype in the opposing wing from the individual in (D) highlights loss of lobe, loss of 3A, ectopic branching of 2A, and posterior extension of color patterns. (F) Annotation of a partial mKO highlights transformation of posterior lobe and extension of color patterns, both of which terminate at the mutant clonal boundary. (G) The individual shown in (F) also shows ectopic branching of 2A in the mutant region, but preservation of 3A in the wild-type region. For additional mirror mKO phenotypes, see Figure 2\u2014figure supplements 2\u20134.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96904/elife-96904-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Related to Figure 2A. (A) mirror is expressed posterior to the 2A vein in last-instar forewing imaginal discs of J. coenia. (B) Double in situ of mirror (Channel 1: 647 nm) and wingless (Channel 2: 546 nm) in last instar J. coenia hindwing imaginal discs. Expression of wingless observed by HCR precisely matches expression in wing margin peripheral tissue and discal bands (white arrow) as previously described from chromogenic in situ (de Celis et al., 1996), thus providing a positive control for our HCR protocol. Bottom panels depict negative controls, lacking HCR probes, that show no signal in the 647 nm or 546 nm channels. Dashed lines show the position of selected veins.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96904/elife-96904-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Related to Figure 2B\u2013E. (A) Comparison of wild-type dorsal hindwing to mutant wings reveals complete or partial transformation of the vannus (black arrows), expansion of color patterns into the posterior wing margin (white arrows) along with vein aberrations (denoted by *), or total loss (denoted by -). The middle panels show magnified images of the posterior wing margin and vannus, with scale morphology details, in wild-type and mKO mutants (complete transformation in JCM22 and JCM29; partial transformation in JCM41). The bottom panels show contralateral hindwing pairs from the same individuals showing asymmetry in clonal mutations affecting posterior wing margin phenotype. (B) Additional mirror mKO hindwings show vannus transformation phenotypes, annotated as described above.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/96904/elife-96904-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Related to Figure 2B\u2013E. mirror mKOs in ventral J. coenia hindwings resulting in the expansion of color pattern elements (white arrows) as seen in asymmetric contralateral pairs from the same mutant individuals. Abnormal venation annotated by (*), missing venation annotated by (-).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/96904/elife-96904-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** mKOs of mirror result in anomalies along the forewing 2A vein, including vein bifurcation and ectopic vein fragments, which are often associated with color pattern disruption. Dashed lines show the position of 2A. Black arrows highlight 2A abnormalities.\n\nThe knockout phenotypes we observed illustrate several things about mirror\u2019s function in wing development. First, across all mKO replicates, we never observed mutant phenotypes anterior to the 2A vein, which suggests that mirror effects are limited to the far posterior domain in which we observed mirror expression. Second, mirror knockouts appear to affect multiple aspects of wing morphology, including scale shape and coloration, overall wing shape, and wing venation. Finally, the loss of mirror function resulted in transformation, not loss, of the posterior domain. Even in mKO individuals that appeared to have a mutant phenotype across the entire posterior region, the mirror-expressing cells posterior to the 2A vein were not simply lost \u2013 the wing field continues well past the 2A vein. Instead, the identities of the post-2A scale cells changed in color and structure. In this respect, the expansion of multiple color pattern systems into the posterior domain of mutants was particularly compelling because the loss of central symmetry system and submarginal patterns in the post-2A vannus region is commonly observed in Lepidoptera (Figure 1B). The ability to reconstitute these complex color pattern elements in the posterior domain by knocking out a single transcription factor leads us to speculate that their patterning information may occur in a latent form that is masked by mirror effects. Together, our expression and knockout data suggest that mirror acts as a selector gene necessary to define the identity of the far posterior wing domain.\n\nIdentifying mirror as a vannus-specifying factor is of interest for a few reasons. First, it provides a molecular explanation for how different AP domains of the butterfly wing may be individuated to independently evolve their own shape and color pattern variations. Previous authors have proposed the existence of such individuated domains and speculated that they may be specified by selector genes (McKenna et al., 2020; Abbasi and Marcus, 2017). Our data provide experimental support for this model and now motivate us to identify additional factors that may specify other domain boundaries between the M1 and A2 veins.\n\nNext, the role of mirror in specifying the vannus provides an important link between molecular developmental biology and Snodgrass\u2019 classical anatomical designations of the insect wing fields \u2013 i.e., the remigium, the vannus, and the jugum (Figure 1E; Snodgrass, 1935). The remigium and the vannus are dominant features of most insect wings, while the jugum is a smaller lobe-like feature that is reduced or lost in many clades. The remigium is the major anterior wing blade that is directly articulated by thoracic motor musculature to power flight and is typically divided from the vannus by a distinct wing fold (e.g. the \u2018anal fold\u2019 in butterflies). In many insect orders, the vannus is a prominent fan-like structure, which can be a greatly enlarged gliding surface in some hemimetabolous clades such as Orthoptera (crickets and grasshoppers), Dictyoptera (mantids and roaches), Phasmatodea (stick insects), and Plecoptera (stoneflies). Importantly, mirror knockdown in the hemimetabolous milkweed bug Oncopeltus fasciatus causes developmental defects in the claval and anal furrows in the posterior wing (Fisher et al., 2021), which leads us to infer that mirror\u2019s role in determining the vannus may be deeply conserved in insects. This prompts us to speculate that the developmental individuation of the posterior domain by mirror facilitated the remarkable diversification of the vannus across the insects.\n\nFinally, the function of mirror in determining the alula in D. melanogaster (Kehl et al., 1998) suggests that the alula may represent an evolutionarily reduced vannus. The ramifications of this are significant for reconstructing the history of the insect wing, because they suggest that the D. melanogaster wing blade is a lone remigium \u2013 only one-third of the archetypal insect wing (Figure 1E). The dipteran jugum appears to have been lost entirely, except perhaps as a membranous haltere cover (calypter) in the Calyptratae clade, as speculated by Snodgrass, 1935. Thus, while flies have been an important model for characterizing genes and processes that build insect wings, a more comprehensive understanding of the development and evolution of insect wings requires work in species that have wings more representative of the complete ancestral blueprint.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Junonia coenia)</td>\n      <td>mirror</td>\n      <td>This paper</td>\n      <td>V2 genome: JC_02269-RA; V3 genome: JC_g12219</td>\n      <td>V2 genome is available on https://www.lepbase.org/. Email authors if http://lepbase.org/ is inaccessible.</td>\n    </tr>\n    <tr>\n      <td>Strain (Junonia coenia)</td>\n      <td>Lab based for many generations \u2013 derived from wild collected individuals</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>mirror HCR v3 probes</td>\n      <td>This paper; Molecular Instruments</td>\n      <td>Lot #PRQ901</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>wingless HCR v3 probes</td>\n      <td>Molecular Instruments</td>\n      <td>Lot #PRG129</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>mirror sgRNA-1</td>\n      <td>This paper; IDT</td>\n      <td>CRISPR-cas9 guide RNA</td>\n      <td>5\u2019-GAATGGACTTGAACGGGGCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>mirror sgRNA-2</td>\n      <td>This paper; IDT</td>\n      <td>CRISPR-cas9 guide RNA</td>\n      <td>5\u2019-AGAAACAGGGTCGATGATGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Genotyping Primer Forward</td>\n      <td>This paper; IDT</td>\n      <td>Genotyping primer</td>\n      <td>5\u2019-CGCTTGTGCCCACCTTAAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Genotyping Primer Reverse</td>\n      <td>This paper; IDT</td>\n      <td>Genotyping primer</td>\n      <td>5\u2019-GTATGGCTCGGGGGATTCTG</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>HCR v3 Amplifiers, Buffers</td>\n      <td>Molecular Instruments</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DNA extraction</td>\n      <td>Omega Bio-tek</td>\n      <td>E.Z.N.A. Tissue DNA Kit</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PCR purification</td>\n      <td>Omega Bio-tek</td>\n      <td>MicroElute Cycle-Pure Kit</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Inference of CRISPR Edits</td>\n      <td>Synthego</td>\n      <td>RRID:SCR_0024508</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Identity of Iroquois family gene mirror ortholog in J. coenia\n\nWe performed a reciprocal BLAST of amino acid sequences of D. melanogaster Iroquois Complex genes araucan, caupolican, and mirror to identify their orthologs in the latest J. coenia and Heliconius erato lativitta genome sequences on lepbase.org and Tribolium castaneum and Apis mellifera on NCBI. The amino acid sequences of the top hits \u2013 from J. coenia (JC_02265-RA, JC_02269-RA), H. erato lativitta (HEL_009655-RA, HEL_009656-RA), A. mellifera (LOC412840, LOC412839), and T. castaneum (LOC652944, LOC660345) were aligned to the Iroquois genes of D. melanogaster using MUSCLE (Edgar, 2004). We used these alignments to build a maximum likelihood gene phylogeny on IQ-TREE 2 (Minh et al., 2020) using ModelFinder (Kalyaanamoorthy et al., 2017) for estimating the most accurate substitution model for our amino acid sequences. We used FigTree to visualize the tree depicted in Supplementary file 1.\n\n### HCR fluorescent in situ hybridization of mirror mRNA\n\nThis protocol was adapted and modified from Bruce et al. (dx.doi.org/10.17504/protocols.io.bunznvf6). The coding sequence of JC_02269-RA was used by Molecular Instruments, Inc (Los Angeles, CA, USA) to design a mirror-specific hybridization chain reaction (HCR) probe set (Lot #PRQ901).\n\nThe probes are unique to the JC_02269-RA transcript as verified by BLAST search, using the latest J. coenia genome assembly (v2) on https://www.lepbase.org/, and do not share significant sequence similarity with any other transcripts, including the other Iroquois family member JC_02265-RA (see Supplementary file 1).\n\nLast (fifth) instar larval wing imaginal discs were dissected in cold 1\u00d7 PBS. The dissected discs collected from the left and right sides of the larvae were randomly assigned to control or treatment batches. Both control and treatment batches were fixed in 1\u00d7 cold fix buffer (750 \u00b5L PBS, 50 mM EGTA, 250 \u00b5L 37% formaldehyde) on ice. The discs were then washed three times in 1\u00d7 PBS with 0.1% Tween 20 (PTw) on ice, spending approximately 30 s to 2 min for each wash. Tissues were then gradually dehydrated by washing in 33%, 66%, and 100% MeOH (in PTw) for 2\u20135 min/wash on ice and stored in 100% MeOH at \u201320\u00b0C for days until the HCR protocol was started. On the day of the HCR protocol, the wing discs were progressively rehydrated in cold 75% MeOH, 50% MeOH, and 25% MeOH in PTw, spending 2\u20135 min/wash. After rehydrating, discs were washed once for 10 min and twice for 5 min with PTw. The discs were then permeabilized in 300\u2013500 \u00b5L of detergent solution (1.0% SDS, 0.5% Tween, 50 mM Tris-HCl pH 7.5, 1 mM EDTA pH 8.0, 150 mM NaCl) for 30 min at room temperature. While waiting, hybridization buffer (Molecular Instruments) was warmed to 37\u00b0C (200 \u00b5L/tube). After permeabilizing with detergent solution, each tube of wing discs was incubated in 200 \u00b5L of pre-warmed hybridization buffer for 30 min at 37\u00b0C. Probe solution was prepared by adding 0.8 pmol (0.8 \u00b5L of probe from 1 \u00b5M stock solution) of each probe mixture to 200 \u00b5L of probe hybridization buffer at 37\u00b0C. The pre-hybridization buffer was removed, and the probe solution was added. For negative control tissues, hybridization buffer without probes was added instead. All wing discs were incubated overnight (12\u201316 hr) at 37\u00b0C. Before resuming the protocol, probe wash buffer (Molecular Instruments) was warmed to 37\u00b0C, amplification buffer (Molecular Instruments) was calibrated to room temperature, and a heat block was set to 95\u00b0C. The probe solution was removed and saved at \u201320\u00b0C to be reused. Wing discs were then washed four times in 1 mL pre-warmed probe wash buffer at 37\u00b0C for 15 min/wash. After the last wash step, discs were washed twice (5 min/wash) with 1 mL of 5\u00d7 SSCT (5\u00d7 sodium chloride sodium citrate, 0.1% Tween 20) at room temperature. The wing discs were pre-amplified with 1 mL of equilibrated amplification buffer for 30 min at room temperature. During this step, 2 \u00b5L of each of hairpin h1 and 2 \u00b5L of each hairpin h2 were mixed in 100 \u00b5L of amplification buffer at 95\u00b0C for 90 s and cooled to room temperature in the dark for 30 min. For mirror-only in situ hybridizations, we used B1 hairpin amplifiers tagged with Alexa Fluor 594 fluorophore (Molecular Instruments). For mirror and wingless double stains, we used mirror probes with B1 amplifier tagged with Alexa Fluor 647 fluorophore and wingless probes (Lot #PRG129) with B3 hairpin amplifiers tagged with Alexa Fluor 546 fluorophore. After 30 min, the pre-amplification buffer was removed from the discs, hairpin solution added, and the tissues were then incubated in the dark at room temperature for 2\u201316 hr. The hairpins were removed and saved at \u201320\u00b0C to be reused later. Excess hairpins were removed by washing five times (twice for 5 min, twice for 30 min, and once for 5 min) with 1 mL of 5\u00d7 SSCT at room temperature. The wing discs were then incubated in 50% glycerol solution (in 1\u00d7 PBS) with DAPI (0.01 \u00b5g/mL) overnight at 4\u00b0C. The wing discs were then mounted and visualized on a Zeiss 710 or Leica Stellaris 5 confocal microscope.\n\n### CRISPR-Cas9-mediated mutagenesis of mirror in J. coenia\n\nTwo single-guide RNAs (sgRNAs; sgRNA1-5\u2019-GAATGGACTTGAACGGGGCA; sgRNA2-5\u2019-AGAAACAGGGTCGATGATGA) targeting the homeobox domain of mirror were mixed with 500 ng/\u03bcL of Cas9 nuclease and injected to J. coenia eggs 0.5\u20134 hr after oviposition (n=1042 eggs) as previously described (Zhang and Reed, 2017). Injected G0 individuals were reared on standard artificial diet until they emerged and were immediately frozen in \u201320\u00b0C upon emergence. Wings of surviving G0 adults (n=99) were assayed for anomalies to detect mKO phenotypes (n=29). Injection results and mutation phenotype frequencies are detailed in Supplementary file 2.\n\n### Validating mirror mutants by genotyping\n\nDNA was extracted using E.Z.N.A. Tissue DNA Kit (Omega Bio-tek) from the thorax of individuals that showed mutations in the wings. Extracted genomic DNA was amplified using a pair of primers flanking the sgRNA cut sites (Forward: 5\u2019-CGCTTGTGCCCACCTTAAAC, Reverse: 5\u2019-GTATGGCTCGGGGGATTCTG). Amplified DNA was run on a 2% agarose gel and was excised and purified using the MicroElute Cycle-Pure Kit (Omega Bio-tek). Purified DNA was Sanger-sequenced by Cornell Institute of Biotechnology. Example mutant alleles of mirror are shown in Supplementary file 3.\n",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Perry, University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96904.3.sa0](https://doi.org/10.7554/eLife.96904.3.sa0)\n\nThis important study provides evidence of a deeply conserved role for the gene Mirror in providing positional identity in the posterior part of butterfly and fly wings, despite increased morphological complexity of butterfly wings. The findings are solid for the field of evo-devo. However, the tools in butterflies are more limited than in Drosophila and it is more difficult to determine which specific cells are mutant and whether the effect of mutation is cell-intrinsic. The work will be of interest to evolutionary and developmental biologists working on insect wing evolution and the evolution of patterning more generally.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96904.3.sa1](https://doi.org/10.7554/eLife.96904.3.sa1)\n\nSummary:\n\nThis short report shows that the transcription factor gene mirror is specifically expressed in the posterior region of the butterfly wing imaginal disk, and uses CRISPR mosaic knock-outs to show it is necessary to specify the morphological features (scales, veins, and surface) of this area.\n\nStrengths:\n\nThe data and figures support the conclusions. The article is swiftly written and makes an interesting evolutionary comparison to the function of this gene in Drosophila. Based on the data presented, it can now be established that mirror likely has a similar selector function for posterior-wing identity in a plethora of insects.\n\nComments on revisions:\n\nThe revision is satisfactory. I agree with the authors that this article provides interesting insights on the evolution of insect wings. Of note, butterfly and fly wing imaginal disks differ in their mode of development: while fly wing disks grow as epithelial sacs that evaginate during metamorphosis, butterfly wing disks develop as relatively flat epithelial sheets that expand and differentiate progressively. This makes the similar role of mirror all the more interesting.\n\nThe revised text appropriately discuss how selector genes like mirror regionalize the wing during larval and pupal development. This article makes a reasonable use of CRISPR mosaic knock outs and uses contralateral controls to show the nature of the phenotypic transformations.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96904.3.sa2](https://doi.org/10.7554/eLife.96904.3.sa2)\n\nThis is a short and unpretentious paper. It is an interesting area and therefore, although much of this area of research was pioneered in flies, extending basic findings to butterflies would be worthwhile. Indeed, there is an intriguing observation but it is technically flawed and these flaws are far too serious to allow us to recommend publication\n\nThe authors show that mirror is expressed at the back of the wing in butterflies (as in flies). They present some evidence that is required for the proper development of the back of the wing in butterflies (a region dubbed the vannus by the ancient guru Snodgrass). But there are problems with that evidence. First, concerning the method, using CRISP they treat embryos and the expectation is that the mirror gene will be damaged in groups of cell lineages, giving a mosaic animal in which some lines of cells are normal for mirror and others not. We do not know where the clones or patches of cells that are defective for mirror are because they are not marked. Also, we do not know what part of the wing is wildtype and what part is mutant for mirror. When the mirror mutant cells colonise the back of the wing and that butterfly survives (many butterflies fail to develop), the back of the wing is altered in some selected butterflies. This raises a second problem: we do not know whether the rear of the wing is missing or transformed. From the images the appearance of the back of the wing is clearly different from wild type, but is that due to transformation or not? And then I believe we need to know specifically what us difference between the rear of the wing and the main part. What we see is a silvery look at the back that is not present in the main part, is it the structure of the scales? We are not told. There are other problems. Mirror is only part of a group of genes in flies and in flies both iroquois and mirror are needed to make the back of the wing, the alula (Kehl et al). What is known about iro expression in butterflies?\n\nIn flies, mirror regulates a late and local expression of dpp that seems to be responsible of making the alula. What happens in butterflies? Would a study of expression of Dpp in wildtype and mirror compromised wings be useful?\n\nThus, I find the paper to be disappointing for a general journal as it does little more than claim what was discovered in Drosophila is at least partly true in butterflies. Also it fails to explain what the authors mean by \"wing domains\" and \"domain specification\". They are not alone, butterfly workers in general appear vague about these concepts, their vagueness allowing too much loose thinking. Since these matters are at the heart of the purpose and meaning of the work reported here, we readers need a paper containing more critical thought and information. I would like to have a better and more logical introduction and discussion.\n\nThey do define what they mean by the vannus of the wing. In flies the definition of compartments is clear and abundantly demonstrated, with gene expression and requirement being limited precisely to sets of cells that display lineage boundaries. It is true that domains of gene expression in flies, for example, of the iroquois complex, which includes mirror, can only be related to pattern with difficulty. Some recap of what is known plus the opinion of the authors on how they interpret papers on possible lineage domains in butterflies might also be useful as the reader, is no wiser about what the authors might mean at the end of it!\n\nThe references are sometimes inappropriate. The discovery of the AP compartments should not be referred to Guillen et al 1995, but to Morata and Lawrence 1975.\n\nComments on revisions:\n\nNearly all the previous criticisms remain valid and are not discussed or overcome in the revision. The authors wish to draw their conclusions and we think they can do that, but they should make clear that key evidence is lacking. Thus their conclusions are speculative. But they present them more or less as facts. This is not justified. Let us suppose that clones lacking mirror do not survive or do not develop properly in the rear part of the wing and what they are seeing is occasional damage due to incomplete regeneration or to regenerative duplication?\n\nMany clones in flies only include parts of one surface of the wing, could this happen here and how would it affect interpretations?\n\nThe null phenotype in the wing is not known but deduced from abnormal wings which \"even in mKO..... appeared to have a mutant phenotype across the entire posterior region\", a nice example of circular logic.\n\nWe believe the authors should be more objective and explain that their interpretations are not solid and that they should ideally be tested by finding ways of independently marking the clones. Other clonal mosaic experiments in butterflies have been done (eg https://journals.biologists.com/dev/article/150/18/dev201868/329659/Frizzled2-receives-WntA-signaling-during-butterfly) without cell autonomous independent markers, but they are more solid as transformed spots are made visible cell by cell by scale colour changes etc.\n\nTheir deduction that \"mirror acts as a selector gene necessary to define the far posterior wing domain\" is a speculative hypothesis, not a deduction and the readers should be so informed.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96904.3.sa3](https://doi.org/10.7554/eLife.96904.3.sa3)\n\nSummary:\n\nThe manuscript by Chatterjee et al., examines the role of the mirror locus in patterning butterfly wings. The authors examine the pattern of mirror expression in the common buckeye butterfly, Junonia coenia and then employ CRISPR mutagenesis to generate mosaic butterflies carrying clones of mirror mutant cells. They find that mirror is expressed in a well-defined posterior sector of final-instar wing discs from both hindwings and forewings and that CRISPR-injected larvae display a loss of adult wing structures presumably derived from the mirror expressing region of hindwing primordium (the case for forewings is a bit less clear since the mirror domain is narrower than in the hindwing, but there also do seem to be some anomalies in posterior regions of forewings in adults derived from CRISPR injected larvae). The authors conclude that wings of these butterflies have at least three different fundamental wing compartments, the mirror domain, a posterior domain defined by engrailed expression, and an anterior domain expressing neither mirror or engrailed. They speculate that this most posterior compartment has been reduced to a rudiment in Drosophila and thus has not been adequately recognized as a such a primary regional specialization.\n\nCritique: This is a very straight-forward study and the experimental results presented support the key claims that mirror is expressed in a restricted posterior section of the wing primordium and that mosaic wings from CRISPR injected larvae display loss of adult wing structures presumably derived from cells expressing mirror (or at least nearby). The major issue I have with this paper is the strong interpretation of these findings that lead the authors to conclude that mirror is acting as a high level gene akin to engrailed in defining a separate extreme posterior wing compartment. To place this claim in context, it is important in my view to consider what is known about engrailed, for which there is ample evidence to support the claim that this gene does play a very ancestral and conserved function in a defining posterior compartments of all body segments (including the wing) across arthropods.\n\n(A) engrailed is expressed in a broad posterior domain with a sharp anterior border in all segments of virtually all arthropods examined (broad use of a very good pan-species anti-En antibody makes this case very strong).\n\n(B) In Drosophila, marked clones of wing cells (generated during larval stages) strictly obey a straight anterior-posterior border indicating that cells in these two domains do not normally intermix, thus, supporting the claim that a clear A/P lineage compartment exists.\n\nIn my opinion, mirror does not seem to be in the same category of regulator as engrailed for the following reasons:\n\n(1) There is no evidence that I am aware of, either from the current experiments, or others that the mirror expression domain corresponds to a clonal lineage compartment. It is also unclear from the data shown in this study whether engrailed is co-expressed with mirror in posterior most cells of J. coenia wing discs? If so, it does not seem justified to infer that mirror acts as an independent determinant of the region of the wing where it is expressed.\n\n(2) The mirror is not only expressed in a posterior region of the wing in flies but also in the ventral region of the eye. In Drosophila, mirror mutants not only lack the alula (derived approximately from cells where mirror is expressed), but also lacks tissue derived from the ventral region of the eye disc (although this ventral tissue loss phenotype may extend beyond the cells expressing mirror).\n\nIn summary, it seems most reasonable to me to think of mirror as a transcription factor that provides important development information for a diverse set of cells in which it can be expressed (posterior wing cells and ventral eye cells) but not that it acts as a high level regulator as engrailed.\n\nRecommendation:\n\nWhile the data provided in this succinct study are solid and interesting, it is not clear to me that these findings support the major claim that mirror defines an extreme posterior compartment akin to that specified by engrailed. Minimally, the authors should address the points outlined above in their discussion section and greatly tone down their conclusion regarding mirror being a conserved selector-like gene dedicated to establishing posterior-most fates of the wing. They also should cite and discuss the original study in Drosophila describing the mirror expression pattern in the embryo and eye and the corresponding eye phenotype of mirror mutants: McNeill et al., Genes & Dev. 1997. 11: 1073-1082; doi:10.1101/gad.11.8.1073.\n",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dd76c3c1-8e6a-4324-ae5c-451143b834a7",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C1",
+      "claim": "Insect wings are a key innovation that contributed to the explosive diversification of insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect wings, a key innovation that contributed to the explosive diversification of insects, are recognized for their remarkable variation and many splendid adaptations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the evolutionary significance of insect wings, drawing from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "cf3e0134-2f58-483f-b6f0-6504fd7b1b7d",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C2",
+      "claim": "Classical morphological work subdivides insect wings into several distinct domains along the anteroposterior (AP) axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical morphological work subdivides insect wings into several distinct domains along the anteroposterior (AP) axis, each of which can evolve relatively independently to produce the myriad forms we see in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to established morphological work in the field, representing scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "6a5b14f8-4ca7-4a3f-ad0b-be295139d175",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C3",
+      "claim": "Each AP domain of insect wings can evolve relatively independently to produce diverse forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical morphological work subdivides insect wings into several distinct domains along the anteroposterior (AP) axis, each of which can evolve relatively independently to produce the myriad forms we see in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about evolutionary independence of wing domains, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "fde6bb6f-1458-42b1-8df0-840ec0415754",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C4",
+      "claim": "The transcription factor mirror acts as a selector gene to differentiate a far posterior domain in the butterfly wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the transcription factor mirror acts as a selector gene to differentiate a far posterior domain in the butterfly wing, classically defined as the vannus, and has effects on wing shape, scale morphology, and color pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by experimental data including expression analysis and CRISPR knockouts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "a303d98b-c3ef-4cd6-8896-cf17183a734d",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C5",
+      "claim": "The far posterior domain differentiated by mirror is classically defined as the vannus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the transcription factor mirror acts as a selector gene to differentiate a far posterior domain in the butterfly wing, classically defined as the vannus, and has effects on wing shape, scale morphology, and color pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the molecular finding to classical anatomical terminology.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "cda0c8c4-e811-4715-a7c9-74a84d008bb3",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C6",
+      "claim": "mirror has effects on wing shape, scale morphology, and color pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the transcription factor mirror acts as a selector gene to differentiate a far posterior domain in the butterfly wing, classically defined as the vannus, and has effects on wing shape, scale morphology, and color pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental knockout data showing multiple phenotypic effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "503e05ee-4c02-41bd-8fbc-89d4226cf39a",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C7",
+      "claim": "The D. melanogaster wing blade has been reduced to represent only a portion of the archetypal insect wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support models of how selector genes may facilitate evolutionarily individuation of distinct AP domains in insect wings outside of Drosophila and suggest that the D. melanogaster wing blade has been reduced to represent only a portion of the archetypal insect wing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of mirror function in butterflies versus Drosophila.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "d4e5424e-5e6e-44e9-ae99-78db6f714251",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C9",
+      "claim": "The diversity of lepidopteran color patterns follows relatively simple rules involving an evolutionarily conserved set of spot and stripe pattern elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the diversity of lepidopteran color patterns appears to follow relatively simple rules, wherein an evolutionarily conserved set of spot and stripe pattern elements can vary in size, color, and presence/absence along the anteroposterior (AP) axis (Nijhout, 1991; Nijhout, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nijhout's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "5bc9b8c8-2eb5-4c4c-ba33-f00c3435dd13",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C10",
+      "claim": "Butterfly wings can be subdivided into five AP domains, bounded by the M1, M3, Cu2, and 2A veins.",
+      "claim_type": "EXPLICIT",
+      "source": "Surveys of wing pattern diversity across butterflies, considering both natural variation and genetic mutants, suggest that wings can be subdivided into five AP domains, bounded by the M1, M3, Cu2, and 2A veins as summarized in Figure 1A (McKenna et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to McKenna et al., 2020 and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "1bf2dda8-51c4-4b29-b02e-0088a9edc69e",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C11",
+      "claim": "Within each AP domain, there is a strong correlation between pattern variation and wing morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each domain, there is a strong correlation between pattern variation and wing morphology, and, conversely, between domains, there is a relative degree of independence in morphological variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the relationship between pattern and morphology within domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "6d89207e-fcc2-4f2f-aac1-c84e8d868b47",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C12",
+      "claim": "Between AP domains, there is a relative degree of independence in morphological variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each domain, there is a strong correlation between pattern variation and wing morphology, and, conversely, between domains, there is a relative degree of independence in morphological variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the independence of variation between domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "162e144c-31a6-40bb-a0f2-dc04bdad9510",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C13",
+      "claim": "The transcription factors engrailed and spalt define AP domains in developing Drosophila melanogaster wings.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors engrailed and spalt define AP domains in developing fly wings (Guill\u00e9n et al., 1995; de Celis et al., 1996; Morata and Lawrence, 1975) and exhibit expression patterns in butterflies that suggest some functions may be conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to work in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "b9c9c392-3305-4f95-b02e-28fb198dddf7",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C14",
+      "claim": "engrailed and spalt exhibit expression patterns in butterflies that suggest some functions may be conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors engrailed and spalt define AP domains in developing fly wings (Guill\u00e9n et al., 1995; de Celis et al., 1996; Morata and Lawrence, 1975) and exhibit expression patterns in butterflies that suggest some functions may be conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on expression pattern observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "d6e74503-676c-40f7-ae75-d08fd7517085",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C15",
+      "claim": "In butterflies, engrailed transcription occurs across the entire region posterior to the M1 vein.",
+      "claim_type": "EXPLICIT",
+      "source": "In butterflies, engrailed transcription occurs across the entire region posterior to the M1 vein, while its paralog invected marks a largely overlapping region between M1 and 2A (Carroll et al., 1994; Keys et al., 1999; Banerjee and Monteiro, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies of engrailed expression in butterflies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "8bc553b2-eb0e-4d9f-8c86-2e9be24924a6",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C16",
+      "claim": "invected marks a largely overlapping region between M1 and 2A in butterflies.",
+      "claim_type": "EXPLICIT",
+      "source": "In butterflies, engrailed transcription occurs across the entire region posterior to the M1 vein, while its paralog invected marks a largely overlapping region between M1 and 2A (Carroll et al., 1994; Keys et al., 1999; Banerjee and Monteiro, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies of invected expression in butterflies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "973d1916-4a35-44dc-bc2b-1ab51961eb6e",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C17",
+      "claim": "spalt expression in butterflies consistently marks a region between the R2 and M3 veins.",
+      "claim_type": "EXPLICIT",
+      "source": "spalt expression is more dynamic and complex in butterflies, but appears to consistently mark a region between the R2 and M3 veins (Banerjee and Monteiro, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Banerjee and Monteiro, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "61db5e4b-1084-4181-932e-dd3b588ad156",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C18",
+      "claim": "mirror was identified as a potential candidate selector gene based on previous mRNA-seq studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially identified the transcription factor mirror as a potential candidate selector gene based on previous mRNA-seq studies (Hanly et al., 2019), coupled with D. melanogaster work showing that mirror specifies the alula \u2013 a small membranous lobe at the posterior base of the wing in some dipterans (Figure 1C and D; Kehl et al., 1998; Foronda et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hanly et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "4e471be6-310c-454b-a121-f9f96625b2a8",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C19",
+      "claim": "In D. melanogaster, mirror specifies the alula, a small membranous lobe at the posterior base of the wing.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially identified the transcription factor mirror as a potential candidate selector gene based on previous mRNA-seq studies (Hanly et al., 2019), coupled with D. melanogaster work showing that mirror specifies the alula \u2013 a small membranous lobe at the posterior base of the wing in some dipterans (Figure 1C and D; Kehl et al., 1998; Foronda et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Kehl et al., 1998 and Foronda et al., 2009, and illustrated in Figure 1C and D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "467e36c1-e22b-4e9f-8dca-0aa23ec1e444",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C20",
+      "claim": "mirror is expressed throughout the wing domain posterior to the 2A vein boundary in Junonia coenia last-instar imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "We used in situ hybridization to visualize mirror mRNA localization in the last-instar imaginal discs of the common buckeye butterfly, Junonia coenia, and observed mirror expression throughout the wing domain posterior to the 2A vein boundary (Figure 2A; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "3072c553-afd0-4c4b-9080-ed5f99f2f6d4",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C21",
+      "claim": "mirror expression precisely marks the vannus, or anal region, of the butterfly wing.",
+      "claim_type": "EXPLICIT",
+      "source": "This expression precisely marks the vannus, or anal region (Figure 1B and E), of the butterfly wing \u2013 a distinct posterior domain of the wing blade populated by the anal (A) veins and bordered anteriorly by the claval fold between the cubital (Cu) and A veins in the hindwing (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression data and illustrated in Figures 1B, 1E, and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "b1cd407e-fd65-46a4-a0ef-6ff883d93a1b",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C22",
+      "claim": "The vannus is a distinct posterior domain of the wing blade populated by the anal (A) veins.",
+      "claim_type": "EXPLICIT",
+      "source": "This expression precisely marks the vannus, or anal region (Figure 1B and E), of the butterfly wing \u2013 a distinct posterior domain of the wing blade populated by the anal (A) veins and bordered anteriorly by the claval fold between the cubital (Cu) and A veins in the hindwing (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an anatomical description based on established knowledge and illustrated in figures.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "fa9f529c-a8d1-48e3-b91f-5e4337844af3",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C23",
+      "claim": "The vannus is bordered anteriorly by the claval fold between the cubital (Cu) and A veins in the hindwing.",
+      "claim_type": "EXPLICIT",
+      "source": "This expression precisely marks the vannus, or anal region (Figure 1B and E), of the butterfly wing \u2013 a distinct posterior domain of the wing blade populated by the anal (A) veins and bordered anteriorly by the claval fold between the cubital (Cu) and A veins in the hindwing (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an anatomical description illustrated in Figure 2B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "4342c6be-0d19-47da-941c-fe5e922b37d4",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C24",
+      "claim": "The color patterns defining the wing blade terminate at the 2A vein in various butterfly species.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in various representative species across different butterfly families, this region of the hindwing is distinct from the rest of the wing; the color patterns defining the wing blade terminate at the 2A vein, and in many species, it is marked by scales that differ in morphology and lack color patterns found in anterior regions of the wing (Figures 1B and 2B; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by images in Figures 1B, 2B, and Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "e6f7e785-0434-4b50-8327-352ba1bb1330",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C25",
+      "claim": "In many butterfly species, the vannus is marked by scales that differ in morphology and lack color patterns found in anterior regions of the wing.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in various representative species across different butterfly families, this region of the hindwing is distinct from the rest of the wing; the color patterns defining the wing blade terminate at the 2A vein, and in many species, it is marked by scales that differ in morphology and lack color patterns found in anterior regions of the wing (Figures 1B and 2B; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation supported by images in Figures 1B, 2B, and Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "b1b417be-533f-4f5f-b85b-60d0e648a111",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C26",
+      "claim": "The vannus has been proposed to represent the posterior-most color pattern domain in butterflies.",
+      "claim_type": "EXPLICIT",
+      "source": "This region has been proposed to represent the posterior-most color pattern domain in butterflies (Figures 1A and 2B; McKenna et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to McKenna et al., 2020 and illustrated in Figures 1A and 2B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "de38a81d-e461-4e72-a70f-06002e709752",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C27",
+      "claim": "CRISPR/Cas9 mosaic knockouts of mirror in J. coenia consistently exhibited distinctive phenotypes only in the mirror-expressing posterior vannus region.",
+      "claim_type": "EXPLICIT",
+      "source": "To functionally assess the role of mirror in wing development, we generated CRISPR/Cas9 mosaic knockouts (mKOs) targeting the coding region of J. coenia mirror. We recovered many mKO mutants that consistently exhibited several distinctive phenotypes (Figure 2C, D, and F; Figure 2\u2014figure supplement 2; Figure 2\u2014figure supplement 3; Figure 2\u2014figure supplement 4), but only ever in the mirror-expressing posterior vannus region:",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental CRISPR knockout data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "4750f718-fad2-4272-b32a-f18021413cb8",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C28",
+      "claim": "mirror knockouts affect multiple aspects of wing morphology, including scale shape and coloration, overall wing shape, and wing venation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, mirror knockouts appear to affect multiple aspects of wing morphology, including scale shape and coloration, overall wing shape, and wing venation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the knockout experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "83928238-1787-4bc7-8225-e26a4f33173a",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C29",
+      "claim": "The loss of mirror function resulted in transformation, not loss, of the posterior domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the loss of mirror function resulted in transformation, not loss, of the posterior domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the knockout phenotypes observed in the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "1f4f8b2e-82e3-4821-9593-7f04cb771447",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C30",
+      "claim": "In mirror mKO individuals, the mirror-expressing cells posterior to the 2A vein were not simply lost but changed in identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in mKO individuals that appeared to have a mutant phenotype across the entire posterior region, the mirror-expressing cells posterior to the 2A vein were not simply lost \u2013 the wing field continues well past the 2A vein. Instead, the identities of the post-2A scale cells changed in color and structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the knockout experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "9da4e26c-0bf4-45f0-8e75-df5f37cbff35",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C31",
+      "claim": "The expansion of multiple color pattern systems into the posterior domain of mutants was observed in mirror knockouts.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, the expansion of multiple color pattern systems into the posterior domain of mutants was particularly compelling because the loss of central symmetry system and submarginal patterns in the post-2A vannus region is commonly observed in Lepidoptera (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the knockout experiments, illustrated in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "3f4a9237-847c-4dda-8c09-58099a8ea5bf",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C32",
+      "claim": "The loss of central symmetry system and submarginal patterns in the post-2A vannus region is commonly observed in Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, the expansion of multiple color pattern systems into the posterior domain of mutants was particularly compelling because the loss of central symmetry system and submarginal patterns in the post-2A vannus region is commonly observed in Lepidoptera (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about lepidopteran wing patterns, illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "81e7f4b9-9b5a-4c37-aa5f-17175594687a",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C33",
+      "claim": "The patterning information for color pattern elements may occur in a latent form that is masked by mirror effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to reconstitute these complex color pattern elements in the posterior domain by knocking out a single transcription factor leads us to speculate that their patterning information may occur in a latent form that is masked by mirror effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the knockout phenotypes observed.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "58fe6a91-1ea1-4ca5-ab51-650b669330fc",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C34",
+      "claim": "mirror acts as a selector gene necessary to define the identity of the far posterior wing domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our expression and knockout data suggest that mirror acts as a selector gene necessary to define the identity of the far posterior wing domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the expression and knockout data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "40f13159-7af0-4527-ab1c-683920e281ae",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C35",
+      "claim": "mirror provides a molecular explanation for how different AP domains of the butterfly wing may be individuated to independently evolve their own shape and color pattern variations.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it provides a molecular explanation for how different AP domains of the butterfly wing may be individuated to independently evolve their own shape and color pattern variations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the evolutionary significance of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "2780d92b-fc11-48ea-8bdf-6d3ef0b5b33f",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C36",
+      "claim": "Previous authors have proposed the existence of individuated domains in butterfly wings and speculated that they may be specified by selector genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous authors have proposed the existence of such individuated domains and speculated that they may be specified by selector genes (McKenna et al., 2020; Abbasi and Marcus, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to McKenna et al., 2020 and Abbasi and Marcus, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "decd0f01-019e-4f83-943e-b1fc1629f299",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C37",
+      "claim": "The role of mirror in specifying the vannus provides a link between molecular developmental biology and Snodgrass' classical anatomical designations of the insect wing fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the role of mirror in specifying the vannus provides an important link between molecular developmental biology and Snodgrass' classical anatomical designations of the insect wing fields \u2013 i.e., the remigium, the vannus, and the jugum (Figure 1E; Snodgrass, 1935).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting the molecular findings to classical anatomy, with citation to Snodgrass, 1935.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "5393bbff-e9dc-4fa7-b763-074a7a9d2c78",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C38",
+      "claim": "Snodgrass' classical anatomical designations of the insect wing fields include the remigium, the vannus, and the jugum.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the role of mirror in specifying the vannus provides an important link between molecular developmental biology and Snodgrass' classical anatomical designations of the insect wing fields \u2013 i.e., the remigium, the vannus, and the jugum (Figure 1E; Snodgrass, 1935).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge from Snodgrass, 1935, illustrated in Figure 1E.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "d0c5ae5e-a854-43eb-92ff-b8047ec0b3d8",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C39",
+      "claim": "The remigium and the vannus are dominant features of most insect wings.",
+      "claim_type": "EXPLICIT",
+      "source": "The remigium and the vannus are dominant features of most insect wings, while the jugum is a smaller lobe-like feature that is reduced or lost in many clades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about insect wings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "185ac429-e201-4d5d-829b-65857c45fe06",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C40",
+      "claim": "The jugum is a smaller lobe-like feature that is reduced or lost in many insect clades.",
+      "claim_type": "EXPLICIT",
+      "source": "The remigium and the vannus are dominant features of most insect wings, while the jugum is a smaller lobe-like feature that is reduced or lost in many clades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about insect wings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "c5efe8fc-0f69-40b3-823f-91b322fc1130",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C41",
+      "claim": "The remigium is the major anterior wing blade that is directly articulated by thoracic motor musculature to power flight.",
+      "claim_type": "EXPLICIT",
+      "source": "The remigium is the major anterior wing blade that is directly articulated by thoracic motor musculature to power flight and is typically divided from the vannus by a distinct wing fold (e.g. the 'anal fold' in butterflies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical and functional knowledge about insect wings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "f551788c-d3f6-47be-a735-03d06efc78f3",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C42",
+      "claim": "The remigium is typically divided from the vannus by a distinct wing fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The remigium is the major anterior wing blade that is directly articulated by thoracic motor musculature to power flight and is typically divided from the vannus by a distinct wing fold (e.g. the 'anal fold' in butterflies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about insect wings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "43e837c6-7308-4d16-8793-a4fd19b83564",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C43",
+      "claim": "In many insect orders, the vannus is a prominent fan-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In many insect orders, the vannus is a prominent fan-like structure, which can be a greatly enlarged gliding surface in some hemimetabolous clades such as Orthoptera (crickets and grasshoppers), Dictyoptera (mantids and roaches), Phasmatodea (stick insects), and Plecoptera (stoneflies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about insect wings across different orders.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "51be4b3f-08f2-4f45-97cb-cdfcf1b7375e",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C44",
+      "claim": "The vannus can be a greatly enlarged gliding surface in some hemimetabolous clades such as Orthoptera, Dictyoptera, Phasmatodea, and Plecoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "In many insect orders, the vannus is a prominent fan-like structure, which can be a greatly enlarged gliding surface in some hemimetabolous clades such as Orthoptera (crickets and grasshoppers), Dictyoptera (mantids and roaches), Phasmatodea (stick insects), and Plecoptera (stoneflies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about insect wings in specific orders.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "b78131f9-bd61-446f-8847-733f95cb96b8",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C45",
+      "claim": "mirror knockdown in the hemimetabolous milkweed bug Oncopeltus fasciatus causes developmental defects in the claval and anal furrows in the posterior wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, mirror knockdown in the hemimetabolous milkweed bug Oncopeltus fasciatus causes developmental defects in the claval and anal furrows in the posterior wing (Fisher et al., 2021), which leads us to infer that mirror's role in determining the vannus may be deeply conserved in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fisher et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "d143992a-2d3a-4d54-a84c-332ae0e1e488",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C46",
+      "claim": "mirror's role in determining the vannus may be deeply conserved in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, mirror knockdown in the hemimetabolous milkweed bug Oncopeltus fasciatus causes developmental defects in the claval and anal furrows in the posterior wing (Fisher et al., 2021), which leads us to infer that mirror's role in determining the vannus may be deeply conserved in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Oncopeltus data cited from Fisher et al., 2021.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "a30d9547-bcf2-469d-8f55-750eec679c56",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C47",
+      "claim": "The developmental individuation of the posterior domain by mirror may have facilitated the remarkable diversification of the vannus across the insects.",
+      "claim_type": "EXPLICIT",
+      "source": "This prompts us to speculate that the developmental individuation of the posterior domain by mirror facilitated the remarkable diversification of the vannus across the insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the evolutionary significance of mirror's role.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "62964f5d-c52a-48df-b0ea-7097aa14a209",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C48",
+      "claim": "The alula in D. melanogaster may represent an evolutionarily reduced vannus.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the function of mirror in determining the alula in D. melanogaster (Kehl et al., 1998) suggests that the alula may represent an evolutionarily reduced vannus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of mirror function in Drosophila and butterflies, with citation to Kehl et al., 1998.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "90a73ac8-c048-4695-b06a-e67ec8136994",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C49",
+      "claim": "The D. melanogaster wing blade is a lone remigium, representing only one-third of the archetypal insect wing.",
+      "claim_type": "EXPLICIT",
+      "source": "The ramifications of this are significant for reconstructing the history of the insect wing, because they suggest that the D. melanogaster wing blade is a lone remigium \u2013 only one-third of the archetypal insect wing (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the comparison of Drosophila wing structure to the archetypal insect wing, illustrated in Figure 1E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "2418de00-462d-4c1c-88a9-62a89afa0ac6",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C50",
+      "claim": "The dipteran jugum appears to have been lost entirely, except perhaps as a membranous haltere cover (calypter) in the Calyptratae clade.",
+      "claim_type": "EXPLICIT",
+      "source": "The dipteran jugum appears to have been lost entirely, except perhaps as a membranous haltere cover (calypter) in the Calyptratae clade, as speculated by Snodgrass, 1935.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation attributed to Snodgrass, 1935.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "8eb19516-aa84-4efa-90f4-3021238048de",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C51",
+      "claim": "A more comprehensive understanding of the development and evolution of insect wings requires work in species that have wings more representative of the complete ancestral blueprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while flies have been an important model for characterizing genes and processes that build insect wings, a more comprehensive understanding of the development and evolution of insect wings requires work in species that have wings more representative of the complete ancestral blueprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of Drosophila as a model and the need for broader comparative studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "c34cb46a-035b-4886-bc5e-ffd10de5c569",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C52",
+      "claim": "Mutant phenotypes in mirror knockouts were never observed anterior to the 2A vein.",
+      "claim_type": "EXPLICIT",
+      "source": "First, across all mKO replicates, we never observed mutant phenotypes anterior to the 2A vein, which suggests that mirror effects are limited to the far posterior domain in which we observed mirror expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the knockout experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "246d9f37-3d63-4cb1-a4d8-f21aa9ba93b4",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C53",
+      "claim": "mirror effects are limited to the far posterior domain in which mirror expression was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "First, across all mKO replicates, we never observed mutant phenotypes anterior to the 2A vein, which suggests that mirror effects are limited to the far posterior domain in which we observed mirror expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the spatial restriction of knockout phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "ff1d537d-2750-4c90-a478-3541a20bc484",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C54",
+      "claim": "The 2A vein marks a clear posterior color pattern boundary across multiple butterfly families.",
+      "claim_type": "IMPLICIT",
+      "source": "(B) Examples of the 2A vein marking a clear posterior color pattern boundary across multiple butterfly families.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with examples from multiple butterfly families.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "f5dd0bef-253d-4198-88ea-addf726f5971",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C55",
+      "claim": "The calypters are only found in the Calyptratae clade of Diptera.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Proximal posterior features of the archetypal dipteran wing include the calypters, which are only found in the Calyptratae clade, and the alula, a lobe at the base of the wing blade (McAlpine et al., 1981).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge cited from McAlpine et al., 1981 and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "f880ba72-145a-4550-8c04-619122d81e2f",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C56",
+      "claim": "mirror RNAi knockdowns result in highly specific loss of the alula in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) mirror RNAi knockdowns result in highly specific loss of the alula in Drosophila melanogaster (Kehl et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Kehl et al., 1998 and illustrated in Figure 1D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "91dda495-b560-41f1-a3c4-aa24e7b903ba",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C57",
+      "claim": "Homologies of the remigium, vannus, and jugum domains with features of the dipteran wing or butterfly wing pattern boundaries have remained unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "(E) Snodgrass' model of the archetypal insect wing specifies three major domains along the anteroposterior axis: the remigium, the vannus, and the jugum. Homologies of these domains with the features of the dipteran wing (C), or butterfly wing pattern boundaries (A), have remained unclear.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the state of knowledge regarding homologies, illustrated in Figure 1E.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "3b34aafc-266a-4d5f-99b9-f2e7ff2590ec",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C58",
+      "claim": "In J. coenia, mirror is expressed posterior to the 2A vein in the late last-instar hindwing imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) In J. coenia, mirror (red) is expressed posterior to the 2A vein in the late last-instar hindwing imaginal discs, marking the region that will develop into the vannus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by in situ hybridization data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "a3a1f0f9-a347-44da-a9cb-c4192c7df44f",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C59",
+      "claim": "In adult J. coenia butterfly wings, the vannus is a posterior lobe with silvery scales devoid of color patterns found anterior to 2A.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) In adult butterfly wings, the vannus is the wing field posterior to the 2A vein, shown here in J. coenia as a posterior lobe with silvery scales devoid of color patterns found anterior to 2A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "02b6933f-66cf-4056-9b8f-e41136078b5d",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C60",
+      "claim": "Targeted mosaic knockouts of mirror result in loss of vannus features in J. coenia.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Targeted mosaic knockouts (mKOs) of mirror result in loss of vannus features in J. coenia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "f3381c35-d1e7-4319-95ef-882ec2c1e5db",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C61",
+      "claim": "mirror mKO phenotypes include loss of posterior lobe, loss of 3A vein, ectopic branching of 2A vein, and posterior extension of color patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "(E) Annotation of full effect mutant phenotype in the opposing wing from the individual in (D) highlights loss of lobe, loss of 3A, ectopic branching of 2A, and posterior extension of color patterns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "04a8e4f3-9dd8-4555-827c-51f919654a2d",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C62",
+      "claim": "Partial mirror mKOs show transformation of posterior lobe and extension of color patterns that terminate at the mutant clonal boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "(F) Annotation of a partial mKO highlights transformation of posterior lobe and extension of color patterns, both of which terminate at the mutant clonal boundary.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "dba6124b-19fb-44aa-8c6a-3ff71e77c091",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C63",
+      "claim": "In partial mirror mKOs, ectopic branching of 2A occurs in the mutant region while 3A is preserved in the wild-type region.",
+      "claim_type": "EXPLICIT",
+      "source": "(G) The individual shown in (F) also shows ectopic branching of 2A in the mutant region, but preservation of 3A in the wild-type region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "18aa45f5-d31c-4451-9229-3cc2b7ba865a",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C64",
+      "claim": "mirror is expressed posterior to the 2A vein in last-instar forewing imaginal discs of J. coenia.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) mirror is expressed posterior to the 2A vein in last-instar forewing imaginal discs of J. coenia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "c22ae18d-7924-4e18-b7fe-f1caaa0f2a96",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C65",
+      "claim": "Expression of wingless observed by HCR precisely matches expression in wing margin peripheral tissue and discal bands as previously described from chromogenic in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Double in situ of mirror (Channel 1: 647 nm) and wingless (Channel 2: 546 nm) in last instar J. coenia hindwing imaginal discs. Expression of wingless observed by HCR precisely matches expression in wing margin peripheral tissue and discal bands (white arrow) as previously described from chromogenic in situ (de Celis et al., 1996), thus providing a positive control for our HCR protocol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1B and supported by citation to de Celis et al., 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "6bf0d1e0-5116-4e71-9bb5-258acfbd3bc2",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C66",
+      "claim": "mirror mKOs result in complete or partial transformation of the vannus.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Comparison of wild-type dorsal hindwing to mutant wings reveals complete or partial transformation of the vannus (black arrows), expansion of color patterns into the posterior wing margin (white arrows) along with vein aberrations (denoted by *), or total loss (denoted by -).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "5363fb5d-2890-446f-ab8f-16a86a030a01",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C67",
+      "claim": "mirror mKOs result in expansion of color patterns into the posterior wing margin.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Comparison of wild-type dorsal hindwing to mutant wings reveals complete or partial transformation of the vannus (black arrows), expansion of color patterns into the posterior wing margin (white arrows) along with vein aberrations (denoted by *), or total loss (denoted by -).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "fe1813ce-d509-40a5-bab4-be87bb0a6a92",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C68",
+      "claim": "mirror mKOs result in vein aberrations or total loss of veins.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Comparison of wild-type dorsal hindwing to mutant wings reveals complete or partial transformation of the vannus (black arrows), expansion of color patterns into the posterior wing margin (white arrows) along with vein aberrations (denoted by *), or total loss (denoted by -).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "566752fe-7bf1-4134-b1f0-a086aab5c6f9",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C69",
+      "claim": "Contralateral hindwing pairs from the same individuals show asymmetry in clonal mutations affecting posterior wing margin phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The bottom panels show contralateral hindwing pairs from the same individuals showing asymmetry in clonal mutations affecting posterior wing margin phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "57bf8b0d-da23-40fc-b349-10062a258e58",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C70",
+      "claim": "mirror mKOs in ventral J. coenia hindwings result in the expansion of color pattern elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Related to Figure 2B\u2013E. mirror mKOs in ventral J. coenia hindwings resulting in the expansion of color pattern elements (white arrows) as seen in asymmetric contralateral pairs from the same mutant individuals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "0cee6896-ccbd-4d70-a16a-9c91af4bd1d4",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C71",
+      "claim": "mKOs of mirror result in anomalies along the forewing 2A vein, including vein bifurcation and ectopic vein fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "mKOs of mirror result in anomalies along the forewing 2A vein, including vein bifurcation and ectopic vein fragments, which are often associated with color pattern disruption.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "7f5166d5-8d73-4208-b167-cf45bbaa828c",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C72",
+      "claim": "Forewing 2A vein anomalies in mirror mKOs are often associated with color pattern disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "mKOs of mirror result in anomalies along the forewing 2A vein, including vein bifurcation and ectopic vein fragments, which are often associated with color pattern disruption.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "7185edc4-2a12-48e0-8175-79cadf2b5d5c",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C73",
+      "claim": "A reciprocal BLAST was performed to identify orthologs of D. melanogaster Iroquois Complex genes in J. coenia and other species.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a reciprocal BLAST of amino acid sequences of D. melanogaster Iroquois Complex genes araucan, caupolican, and mirror to identify their orthologs in the latest J. coenia and Heliconius erato lativitta genome sequences on lepbase.org and Tribolium castaneum and Apis mellifera on NCBI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bioinformatic method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "fc2ce689-1542-4369-b6d4-e38426aa4d02",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C74",
+      "claim": "Two sgRNAs targeting the homeobox domain of mirror were used for CRISPR-Cas9 mutagenesis in J. coenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Two single-guide RNAs (sgRNAs; sgRNA1-5'-GAATGGACTTGAACGGGGCA; sgRNA2-5'-AGAAACAGGGTCGATGATGA) targeting the homeobox domain of mirror were mixed with 500 ng/\u03bcL of Cas9 nuclease and injected to J. coenia eggs 0.5\u20134 hr after oviposition (n=1042 eggs) as previously described (Zhang and Reed, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used, with citation to Zhang and Reed, 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "3fd38817-b50b-444b-b399-91db844d60c2",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C75",
+      "claim": "1042 J. coenia eggs were injected with CRISPR-Cas9 reagents targeting mirror.",
+      "claim_type": "EXPLICIT",
+      "source": "Two single-guide RNAs (sgRNAs; sgRNA1-5'-GAATGGACTTGAACGGGGCA; sgRNA2-5'-AGAAACAGGGTCGATGATGA) targeting the homeobox domain of mirror were mixed with 500 ng/\u03bcL of Cas9 nuclease and injected to J. coenia eggs 0.5\u20134 hr after oviposition (n=1042 eggs) as previously described (Zhang and Reed, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data about the number of eggs injected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "c87be800-7b1e-43b4-ab27-2181709eaf77",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C76",
+      "claim": "99 G0 adults survived from the CRISPR injection experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Wings of surviving G0 adults (n=99) were assayed for anomalies to detect mKO phenotypes (n=29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data about survival rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "6c096e2e-e487-415e-ae22-6b2a680923e4",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "claim_id": "C77",
+      "claim": "29 individuals showed mKO phenotypes out of 99 surviving G0 adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Wings of surviving G0 adults (n=99) were assayed for anomalies to detect mKO phenotypes (n=29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data about the frequency of mutant phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "837ce586-2c13-4108-bd76-a2049e381df8",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "mirror is expressed specifically in the vannus region posterior to the 2A vein in both forewing and hindwing imaginal discs of J. coenia, as demonstrated by in situ hybridization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C21, C58, and C64 are supported by in situ hybridization data shown in Figures 2A and Figure 2\u2014figure supplement 1. The expression pattern is clearly documented with appropriate positive controls (C65) and matches the anatomical vannus region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 mosaic knockouts of mirror in J. coenia result in transformation of the vannus domain, affecting wing shape, scale morphology, venation, and color pattern, with phenotypes restricted to the mirror-expressing posterior region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The knockout experiments (C27, C74-C77) demonstrate consistent phenotypes across multiple individuals (29/99 showed phenotypes) that are spatially restricted to the vannus region (C52). The transformation rather than loss of tissue (C29, C30) and multiple phenotypic effects (C28, C61-C63, C66-C72) are well-documented in Figures 2C-G and supplements, providing strong evidence for mirror's selector gene function (C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "68019ffe-985f-4051-aee2-e0ab14df86dc",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "mirror knockouts result in expansion of color pattern systems into the posterior domain, suggesting that patterning information may exist in latent form that is normally masked by mirror.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the expansion of color patterns into the vannus is observed in knockouts (C31) and the absence of these patterns in wild-type vannus is documented (C32), the claim that patterning information exists in 'latent form' (C33) is explicitly labeled as speculation by the authors and lacks direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "ea030314-dd5f-4979-9f27-c6faee91f326",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "mirror provides a molecular mechanism for AP domain individuation in butterfly wings, linking molecular developmental biology to classical anatomical designations of insect wing fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of mirror as a vannus-specifying selector gene (C4, C34) provides experimental support for previously proposed models (C36). The connection to Snodgrass' classical anatomy (C37, C38) is well-justified by the expression and functional data, establishing a molecular basis for morphological domain boundaries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "49ab52b5-7040-4bb8-80cb-bc8694597d4e",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mirror's role in vannus specification may be deeply conserved across insects, potentially facilitating diversification of this wing domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While mirror knockdown in Oncopeltus fasciatus affects posterior wing structures (C45, cited from Fisher et al., 2021), the inference of deep conservation (C46) is based on limited comparative data from only two distantly related species. The speculation about facilitating diversification (C47) is explicitly acknowledged as speculative and lacks direct evolutionary evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "72b6ad34-bd40-4356-a209-ffe6ff20a050",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The D. melanogaster alula represents an evolutionarily reduced vannus, suggesting the Drosophila wing blade is only the remigium portion of the archetypal insect wing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This inference (C48, C49) is based on the functional similarity of mirror in specifying the alula in Drosophila (C19, C56) and the vannus in butterflies. However, this represents a comparative inference without direct experimental validation in Drosophila. The claim about the dipteran jugum (C50) is attributed to Snodgrass' speculation rather than new data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "7eb87342-81a2-4765-8cb0-39f9fa8b27d9",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Butterfly wings can be subdivided into five AP domains bounded by specific veins, with the 2A vein marking a clear posterior boundary where color patterns terminate and scale morphology changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The five-domain model (C10) is supported by citation to McKenna et al., 2020 and illustrated in Figure 1A. The 2A vein boundary is documented across multiple butterfly families (C24, C54) with clear morphological and color pattern distinctions (C25) shown in Figures 1B, 2B, and supplements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "106d649d-e8d9-4048-9052-fbd35efd88e2",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The transcription factors engrailed and spalt, which define AP domains in Drosophila, exhibit expression patterns in butterflies suggesting some functional conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Drosophila functions (C13) are well-established by multiple citations. The butterfly expression patterns (C15, C16, C17) are supported by appropriate citations, though the inference of functional conservation (C14) is tentative and based on expression patterns rather than functional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "107e44ac-7498-48e0-97ef-88672f021570",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Classical anatomical knowledge defines the vannus as a distinct posterior wing domain populated by anal veins, with the remigium, vannus, and jugum representing the three major domains of the archetypal insect wing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established anatomical knowledge (C22, C23, C38-C44) supported by citation to Snodgrass, 1935 and other classical sources. The anatomical descriptions are consistent with accepted insect morphology and are illustrated in the figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "b44b9d60-f245-4c61-a9a3-7e28326f4a35",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Methodological details of mirror ortholog identification and CRISPR/Cas9 mutagenesis experiments, including injection of 1042 eggs yielding 99 surviving adults with 29 showing mutant phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methods are clearly described with appropriate detail (C73, C74) and experimental numbers are explicitly stated (C75-C77). The ~9.5% survival rate and ~29% penetrance among survivors are reasonable for CRISPR mosaic knockout experiments in butterflies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "b2c2b04c-36ec-4abf-8802-2217921b8758",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Validation of HCR in situ hybridization protocol using wingless as a positive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The wingless expression pattern observed by HCR matches previously published chromogenic in situ results (C65), providing appropriate validation of the technique used to assess mirror expression. This is shown in Figure 2\u2014figure supplement 1B with citation to de Celis et al., 1996.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "a2817616-47a5-4249-b7da-9e8b83dc470a",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about insect wing evolution, AP domain subdivision, and lepidopteran color pattern diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These represent established knowledge in the field (C1-C3, C9, C11-C12) supported by appropriate citations and general scientific consensus. They provide context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "90e1ddf7-8010-44e8-bda0-0edb30fb339c",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work identified mirror as a candidate based on mRNA-seq and its role in specifying the alula in D. melanogaster, though homologies between dipteran and butterfly wing domains remained unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The rationale for studying mirror (C18, C19) is supported by appropriate citations to Hanly et al., 2019 and Kehl et al., 1998. The Drosophila alula phenotype (C56) and the unclear state of homologies (C57) are well-documented, providing sound justification for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "7e4b00d4-2187-475d-bda7-3a702236405c",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A comprehensive understanding of insect wing development requires studying species with wings more representative of the ancestral blueprint than Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This inference (C51) is a reasonable conclusion given the findings that Drosophila wings represent a reduced subset of the archetypal insect wing. However, it represents a general recommendation rather than a specific testable result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "f2ee21dc-2ad3-4dec-90ee-46ea2c609f7f",
+      "content_id": "88d1afc1-d32a-4114-9a08-03d7fcd9652d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Descriptive observation of vannus morphology in adult J. coenia wings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a straightforward morphological description (C59) documented in Figure 2B, consistent with the expression data and providing phenotypic context for the knockout experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "1563bcb0-595b-4ebe-ba88-3716a98ad08a",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors show that mirror is expressed specifically in the posterior region of butterfly wing imaginal discs, posterior to the 2A vein boundary, marking the vannus region in both hindwings and forewings of Junonia coenia.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'the data and figures support the conclusions' and Reviewer 3 acknowledges 'the experimental results presented support the key claims that mirror is expressed in a restricted posterior section of the wing primordium.' The expression data using in situ hybridization is accepted by all reviewers as solid.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "CRISPR mosaic knockouts of mirror produce phenotypes restricted to the posterior vannus region, including loss of posterior lobe, vein aberrations (loss of 3A, ectopic branching of 2A), and expansion of color patterns into the posterior wing margin.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While Reviewer 1 states the data 'support the conclusions' and Reviewer 3 acknowledges 'mosaic wings from CRISPR injected larvae display loss of adult wing structures,' Reviewer 2 raises fundamental concerns: 'we do not know where the clones or patches of cells that are defective for mirror are because they are not marked' and questions whether effects represent 'transformation or not' versus 'occasional damage due to incomplete regeneration.' The lack of independent clone markers creates uncertainty about cell-autonomous effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "c254d805-da57-4624-b714-8f0b0f78810e",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The loss of mirror function results in transformation rather than loss of the posterior domain, with mirror-expressing cells changing identity and color pattern systems expanding into the posterior region at clonal boundaries.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 explicitly challenges this interpretation, stating 'we do not know whether the rear of the wing is missing or transformed' and criticizes the circular logic: 'The null phenotype in the wing is not known but deduced from abnormal wings.' Reviewer 3 does not directly address transformation versus loss. The interpretation is questioned as speculative without independent clone markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "3bd8e1ab-4643-4005-b9ca-41265585aa61",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors conclude that mirror acts as a selector gene necessary to define the identity of the far posterior wing domain (vannus) in butterflies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 2 states this 'deduction that mirror acts as a selector gene necessary to define the far posterior wing domain is a speculative hypothesis, not a deduction and the readers should be so informed.' Reviewer 3 argues 'it is not clear to me that these findings support the major claim that mirror defines an extreme posterior compartment akin to that specified by engrailed' and notes 'There is no evidence...that the mirror expression domain corresponds to a clonal lineage compartment.' Both reviewers challenge the selector gene interpretation as overreaching.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "215ec3a3-7803-4bd0-a9dd-1665e6cf23c5",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors claim mirror provides a molecular explanation for how AP domains are individuated to independently evolve and links molecular biology to classical anatomical designations of insect wing fields.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 states 'it is not clear to me that these findings support the major claim' about domain individuation and recommends the authors 'greatly tone down their conclusion regarding mirror being a conserved selector-like gene.' Reviewer 2 emphasizes that conclusions 'are speculative' and 'should make clear that key evidence is lacking.' The evolutionary interpretation is viewed as going beyond what the data support.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "d2e827b3-2c56-4cdd-acf3-d4808f68e25c",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors infer that the Drosophila alula represents an evolutionarily reduced vannus and that the D. melanogaster wing blade represents only one-third of the archetypal insect wing (the remigium alone).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 notes this is an inference based on comparison but does not explicitly critique it. Reviewer 2's general criticism that 'their conclusions are speculative' and lack 'key evidence' applies to these evolutionary claims. The Editor notes 'the tools in butterflies are more limited than in Drosophila' which affects confidence in comparative conclusions. The inference is plausible but not strongly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "9b502505-b9bf-4824-a1c2-8d7aa736276e",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors infer that mirror's role in determining the vannus may be deeply conserved in insects based on mirror knockdown effects in the milkweed bug Oncopeltus fasciatus.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Editor states the study 'provides evidence of a deeply conserved role for the gene Mirror in providing positional identity in the posterior part of butterfly and fly wings' and Reviewer 1 concludes 'it can now be established that mirror likely has a similar selector function for posterior-wing identity in a plethora of insects.' The conservation claim is accepted based on comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "d3f66a66-058a-4477-a679-f7f0b7848ef6",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The vannus region in butterflies is morphologically distinct, with color patterns terminating at the 2A vein and scales differing in morphology from anterior regions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These observational claims about butterfly wing morphology are not questioned by any reviewer. Reviewer 1 notes 'the data and figures support the conclusions' and the morphological descriptions are treated as established observations illustrated in the figures.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "5fd6fb2e-9e4d-465a-854f-249edf63c4db",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Expression of wingless observed by HCR in butterfly wing discs matches previously described patterns, providing a positive control for the in situ hybridization protocol.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This methodological validation is not questioned by reviewers. It serves as a technical control demonstrating the reliability of the HCR in situ method used for mirror expression analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "5840b93c-e134-4921-a6a4-ddbb8d642633",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Mirror knockouts in ventral hindwings and forewings show expansion of color pattern elements and vein anomalies including bifurcation and ectopic fragments along the 2A vein.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These phenotypic observations are documented in supplementary figures and not specifically challenged by reviewers. Reviewer 1 states 'the data and figures support the conclusions' and Reviewer 3 acknowledges the phenotypes exist, though interpretation is debated.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "71a4bd2f-2a5c-45e1-9bc0-c839295f2c09",
+      "content_id": "e041d5ff-41a1-40a6-afef-45ff0a84634a",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "From 1042 injected eggs, 99 G0 adults survived and 29 showed mosaic knockout phenotypes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These experimental statistics are factual data not questioned by reviewers. They document the efficiency of the CRISPR mosaic knockout approach used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "467e36c1-e22b-4e9f-8dca-0aa23ec1e444",
+      "result_id": "837ce586-2c13-4108-bd76-a2049e381df8"
+    },
+    {
+      "claim_id": "3072c553-afd0-4c4b-9080-ed5f99f2f6d4",
+      "result_id": "837ce586-2c13-4108-bd76-a2049e381df8"
+    },
+    {
+      "claim_id": "3b34aafc-266a-4d5f-99b9-f2e7ff2590ec",
+      "result_id": "837ce586-2c13-4108-bd76-a2049e381df8"
+    },
+    {
+      "claim_id": "18aa45f5-d31c-4451-9229-3cc2b7ba865a",
+      "result_id": "837ce586-2c13-4108-bd76-a2049e381df8"
+    },
+    {
+      "claim_id": "fde6bb6f-1458-42b1-8df0-840ec0415754",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "a303d98b-c3ef-4cd6-8896-cf17183a734d",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "cda0c8c4-e811-4715-a7c9-74a84d008bb3",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "de38a81d-e461-4e72-a70f-06002e709752",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "4750f718-fad2-4272-b32a-f18021413cb8",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "83928238-1787-4bc7-8225-e26a4f33173a",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "1f4f8b2e-82e3-4821-9593-7f04cb771447",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "58fe6a91-1ea1-4ca5-ab51-650b669330fc",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "c34cb46a-035b-4886-bc5e-ffd10de5c569",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "246d9f37-3d63-4cb1-a4d8-f21aa9ba93b4",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "02b6933f-66cf-4056-9b8f-e41136078b5d",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "f3381c35-d1e7-4319-95ef-882ec2c1e5db",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "04a8e4f3-9dd8-4555-827c-51f919654a2d",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "dba6124b-19fb-44aa-8c6a-3ff71e77c091",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "6bf0d1e0-5116-4e71-9bb5-258acfbd3bc2",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "5363fb5d-2890-446f-ab8f-16a86a030a01",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "fe1813ce-d509-40a5-bab4-be87bb0a6a92",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "566752fe-7bf1-4134-b1f0-a086aab5c6f9",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "57bf8b0d-da23-40fc-b349-10062a258e58",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "0cee6896-ccbd-4d70-a16a-9c91af4bd1d4",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "7f5166d5-8d73-4208-b167-cf45bbaa828c",
+      "result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1"
+    },
+    {
+      "claim_id": "9da4e26c-0bf4-45f0-8e75-df5f37cbff35",
+      "result_id": "68019ffe-985f-4051-aee2-e0ab14df86dc"
+    },
+    {
+      "claim_id": "3f4a9237-847c-4dda-8c09-58099a8ea5bf",
+      "result_id": "68019ffe-985f-4051-aee2-e0ab14df86dc"
+    },
+    {
+      "claim_id": "81e7f4b9-9b5a-4c37-aa5f-17175594687a",
+      "result_id": "68019ffe-985f-4051-aee2-e0ab14df86dc"
+    },
+    {
+      "claim_id": "40f13159-7af0-4527-ab1c-683920e281ae",
+      "result_id": "ea030314-dd5f-4979-9f27-c6faee91f326"
+    },
+    {
+      "claim_id": "2780d92b-fc11-48ea-8bdf-6d3ef0b5b33f",
+      "result_id": "ea030314-dd5f-4979-9f27-c6faee91f326"
+    },
+    {
+      "claim_id": "decd0f01-019e-4f83-943e-b1fc1629f299",
+      "result_id": "ea030314-dd5f-4979-9f27-c6faee91f326"
+    },
+    {
+      "claim_id": "b78131f9-bd61-446f-8847-733f95cb96b8",
+      "result_id": "49ab52b5-7040-4bb8-80cb-bc8694597d4e"
+    },
+    {
+      "claim_id": "d143992a-2d3a-4d54-a84c-332ae0e1e488",
+      "result_id": "49ab52b5-7040-4bb8-80cb-bc8694597d4e"
+    },
+    {
+      "claim_id": "a30d9547-bcf2-469d-8f55-750eec679c56",
+      "result_id": "49ab52b5-7040-4bb8-80cb-bc8694597d4e"
+    },
+    {
+      "claim_id": "503e05ee-4c02-41bd-8fbc-89d4226cf39a",
+      "result_id": "72b6ad34-bd40-4356-a209-ffe6ff20a050"
+    },
+    {
+      "claim_id": "62964f5d-c52a-48df-b0ea-7097aa14a209",
+      "result_id": "72b6ad34-bd40-4356-a209-ffe6ff20a050"
+    },
+    {
+      "claim_id": "90a73ac8-c048-4695-b06a-e67ec8136994",
+      "result_id": "72b6ad34-bd40-4356-a209-ffe6ff20a050"
+    },
+    {
+      "claim_id": "2418de00-462d-4c1c-88a9-62a89afa0ac6",
+      "result_id": "72b6ad34-bd40-4356-a209-ffe6ff20a050"
+    },
+    {
+      "claim_id": "5bc9b8c8-2eb5-4c4c-ba33-f00c3435dd13",
+      "result_id": "7eb87342-81a2-4765-8cb0-39f9fa8b27d9"
+    },
+    {
+      "claim_id": "4342c6be-0d19-47da-941c-fe5e922b37d4",
+      "result_id": "7eb87342-81a2-4765-8cb0-39f9fa8b27d9"
+    },
+    {
+      "claim_id": "e6f7e785-0434-4b50-8327-352ba1bb1330",
+      "result_id": "7eb87342-81a2-4765-8cb0-39f9fa8b27d9"
+    },
+    {
+      "claim_id": "b1b417be-533f-4f5f-b85b-60d0e648a111",
+      "result_id": "7eb87342-81a2-4765-8cb0-39f9fa8b27d9"
+    },
+    {
+      "claim_id": "ff1d537d-2750-4c90-a478-3541a20bc484",
+      "result_id": "7eb87342-81a2-4765-8cb0-39f9fa8b27d9"
+    },
+    {
+      "claim_id": "162e144c-31a6-40bb-a0f2-dc04bdad9510",
+      "result_id": "106d649d-e8d9-4048-9052-fbd35efd88e2"
+    },
+    {
+      "claim_id": "b9c9c392-3305-4f95-b02e-28fb198dddf7",
+      "result_id": "106d649d-e8d9-4048-9052-fbd35efd88e2"
+    },
+    {
+      "claim_id": "d6e74503-676c-40f7-ae75-d08fd7517085",
+      "result_id": "106d649d-e8d9-4048-9052-fbd35efd88e2"
+    },
+    {
+      "claim_id": "8bc553b2-eb0e-4d9f-8c86-2e9be24924a6",
+      "result_id": "106d649d-e8d9-4048-9052-fbd35efd88e2"
+    },
+    {
+      "claim_id": "973d1916-4a35-44dc-bc2b-1ab51961eb6e",
+      "result_id": "106d649d-e8d9-4048-9052-fbd35efd88e2"
+    },
+    {
+      "claim_id": "b1cd407e-fd65-46a4-a0ef-6ff883d93a1b",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "fa9f529c-a8d1-48e3-b91f-5e4337844af3",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "5393bbff-e9dc-4fa7-b763-074a7a9d2c78",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "d0c5ae5e-a854-43eb-92ff-b8047ec0b3d8",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "185ac429-e201-4d5d-829b-65857c45fe06",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "c5efe8fc-0f69-40b3-823f-91b322fc1130",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "f551788c-d3f6-47be-a735-03d06efc78f3",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "43e837c6-7308-4d16-8793-a4fd19b83564",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "51be4b3f-08f2-4f45-97cb-cdfcf1b7375e",
+      "result_id": "107e44ac-7498-48e0-97ef-88672f021570"
+    },
+    {
+      "claim_id": "7185edc4-2a12-48e0-8175-79cadf2b5d5c",
+      "result_id": "b44b9d60-f245-4c61-a9a3-7e28326f4a35"
+    },
+    {
+      "claim_id": "fc2ce689-1542-4369-b6d4-e38426aa4d02",
+      "result_id": "b44b9d60-f245-4c61-a9a3-7e28326f4a35"
+    },
+    {
+      "claim_id": "3fd38817-b50b-444b-b399-91db844d60c2",
+      "result_id": "b44b9d60-f245-4c61-a9a3-7e28326f4a35"
+    },
+    {
+      "claim_id": "c87be800-7b1e-43b4-ab27-2181709eaf77",
+      "result_id": "b44b9d60-f245-4c61-a9a3-7e28326f4a35"
+    },
+    {
+      "claim_id": "6c096e2e-e487-415e-ae22-6b2a680923e4",
+      "result_id": "b44b9d60-f245-4c61-a9a3-7e28326f4a35"
+    },
+    {
+      "claim_id": "c22ae18d-7924-4e18-b7fe-f1caaa0f2a96",
+      "result_id": "b2c2b04c-36ec-4abf-8802-2217921b8758"
+    },
+    {
+      "claim_id": "dd76c3c1-8e6a-4324-ae5c-451143b834a7",
+      "result_id": "a2817616-47a5-4249-b7da-9e8b83dc470a"
+    },
+    {
+      "claim_id": "cf3e0134-2f58-483f-b6f0-6504fd7b1b7d",
+      "result_id": "a2817616-47a5-4249-b7da-9e8b83dc470a"
+    },
+    {
+      "claim_id": "6a5b14f8-4ca7-4a3f-ad0b-be295139d175",
+      "result_id": "a2817616-47a5-4249-b7da-9e8b83dc470a"
+    },
+    {
+      "claim_id": "d4e5424e-5e6e-44e9-ae99-78db6f714251",
+      "result_id": "a2817616-47a5-4249-b7da-9e8b83dc470a"
+    },
+    {
+      "claim_id": "1bf2dda8-51c4-4b29-b02e-0088a9edc69e",
+      "result_id": "a2817616-47a5-4249-b7da-9e8b83dc470a"
+    },
+    {
+      "claim_id": "6d89207e-fcc2-4f2f-aac1-c84e8d868b47",
+      "result_id": "a2817616-47a5-4249-b7da-9e8b83dc470a"
+    },
+    {
+      "claim_id": "61db5e4b-1084-4181-932e-dd3b588ad156",
+      "result_id": "90e1ddf7-8010-44e8-bda0-0edb30fb339c"
+    },
+    {
+      "claim_id": "4e471be6-310c-454b-a121-f9f96625b2a8",
+      "result_id": "90e1ddf7-8010-44e8-bda0-0edb30fb339c"
+    },
+    {
+      "claim_id": "f5dd0bef-253d-4198-88ea-addf726f5971",
+      "result_id": "90e1ddf7-8010-44e8-bda0-0edb30fb339c"
+    },
+    {
+      "claim_id": "f880ba72-145a-4550-8c04-619122d81e2f",
+      "result_id": "90e1ddf7-8010-44e8-bda0-0edb30fb339c"
+    },
+    {
+      "claim_id": "91dda495-b560-41f1-a3c4-aa24e7b903ba",
+      "result_id": "90e1ddf7-8010-44e8-bda0-0edb30fb339c"
+    },
+    {
+      "claim_id": "8eb19516-aa84-4efa-90f4-3021238048de",
+      "result_id": "7e4b00d4-2187-475d-bda7-3a702236405c"
+    },
+    {
+      "claim_id": "a3a1f0f9-a347-44da-a9cb-c4192c7df44f",
+      "result_id": "f2ee21dc-2ad3-4dec-90ee-46ea2c609f7f"
+    },
+    {
+      "claim_id": "467e36c1-e22b-4e9f-8dca-0aa23ec1e444",
+      "result_id": "1563bcb0-595b-4ebe-ba88-3716a98ad08a"
+    },
+    {
+      "claim_id": "3072c553-afd0-4c4b-9080-ed5f99f2f6d4",
+      "result_id": "1563bcb0-595b-4ebe-ba88-3716a98ad08a"
+    },
+    {
+      "claim_id": "3b34aafc-266a-4d5f-99b9-f2e7ff2590ec",
+      "result_id": "1563bcb0-595b-4ebe-ba88-3716a98ad08a"
+    },
+    {
+      "claim_id": "18aa45f5-d31c-4451-9229-3cc2b7ba865a",
+      "result_id": "1563bcb0-595b-4ebe-ba88-3716a98ad08a"
+    },
+    {
+      "claim_id": "de38a81d-e461-4e72-a70f-06002e709752",
+      "result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7"
+    },
+    {
+      "claim_id": "4750f718-fad2-4272-b32a-f18021413cb8",
+      "result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7"
+    },
+    {
+      "claim_id": "c34cb46a-035b-4886-bc5e-ffd10de5c569",
+      "result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7"
+    },
+    {
+      "claim_id": "02b6933f-66cf-4056-9b8f-e41136078b5d",
+      "result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7"
+    },
+    {
+      "claim_id": "f3381c35-d1e7-4319-95ef-882ec2c1e5db",
+      "result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7"
+    },
+    {
+      "claim_id": "6bf0d1e0-5116-4e71-9bb5-258acfbd3bc2",
+      "result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7"
+    },
+    {
+      "claim_id": "5363fb5d-2890-446f-ab8f-16a86a030a01",
+      "result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7"
+    },
+    {
+      "claim_id": "fe1813ce-d509-40a5-bab4-be87bb0a6a92",
+      "result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7"
+    },
+    {
+      "claim_id": "83928238-1787-4bc7-8225-e26a4f33173a",
+      "result_id": "c254d805-da57-4624-b714-8f0b0f78810e"
+    },
+    {
+      "claim_id": "1f4f8b2e-82e3-4821-9593-7f04cb771447",
+      "result_id": "c254d805-da57-4624-b714-8f0b0f78810e"
+    },
+    {
+      "claim_id": "9da4e26c-0bf4-45f0-8e75-df5f37cbff35",
+      "result_id": "c254d805-da57-4624-b714-8f0b0f78810e"
+    },
+    {
+      "claim_id": "04a8e4f3-9dd8-4555-827c-51f919654a2d",
+      "result_id": "c254d805-da57-4624-b714-8f0b0f78810e"
+    },
+    {
+      "claim_id": "dba6124b-19fb-44aa-8c6a-3ff71e77c091",
+      "result_id": "c254d805-da57-4624-b714-8f0b0f78810e"
+    },
+    {
+      "claim_id": "fde6bb6f-1458-42b1-8df0-840ec0415754",
+      "result_id": "3bd8e1ab-4643-4005-b9ca-41265585aa61"
+    },
+    {
+      "claim_id": "58fe6a91-1ea1-4ca5-ab51-650b669330fc",
+      "result_id": "3bd8e1ab-4643-4005-b9ca-41265585aa61"
+    },
+    {
+      "claim_id": "40f13159-7af0-4527-ab1c-683920e281ae",
+      "result_id": "215ec3a3-7803-4bd0-a9dd-1665e6cf23c5"
+    },
+    {
+      "claim_id": "decd0f01-019e-4f83-943e-b1fc1629f299",
+      "result_id": "215ec3a3-7803-4bd0-a9dd-1665e6cf23c5"
+    },
+    {
+      "claim_id": "503e05ee-4c02-41bd-8fbc-89d4226cf39a",
+      "result_id": "d2e827b3-2c56-4cdd-acf3-d4808f68e25c"
+    },
+    {
+      "claim_id": "62964f5d-c52a-48df-b0ea-7097aa14a209",
+      "result_id": "d2e827b3-2c56-4cdd-acf3-d4808f68e25c"
+    },
+    {
+      "claim_id": "90a73ac8-c048-4695-b06a-e67ec8136994",
+      "result_id": "d2e827b3-2c56-4cdd-acf3-d4808f68e25c"
+    },
+    {
+      "claim_id": "d143992a-2d3a-4d54-a84c-332ae0e1e488",
+      "result_id": "9b502505-b9bf-4824-a1c2-8d7aa736276e"
+    },
+    {
+      "claim_id": "4342c6be-0d19-47da-941c-fe5e922b37d4",
+      "result_id": "d3f66a66-058a-4477-a679-f7f0b7848ef6"
+    },
+    {
+      "claim_id": "e6f7e785-0434-4b50-8327-352ba1bb1330",
+      "result_id": "d3f66a66-058a-4477-a679-f7f0b7848ef6"
+    },
+    {
+      "claim_id": "ff1d537d-2750-4c90-a478-3541a20bc484",
+      "result_id": "d3f66a66-058a-4477-a679-f7f0b7848ef6"
+    },
+    {
+      "claim_id": "a3a1f0f9-a347-44da-a9cb-c4192c7df44f",
+      "result_id": "d3f66a66-058a-4477-a679-f7f0b7848ef6"
+    },
+    {
+      "claim_id": "c22ae18d-7924-4e18-b7fe-f1caaa0f2a96",
+      "result_id": "5fd6fb2e-9e4d-465a-854f-249edf63c4db"
+    },
+    {
+      "claim_id": "57bf8b0d-da23-40fc-b349-10062a258e58",
+      "result_id": "5840b93c-e134-4921-a6a4-ddbb8d642633"
+    },
+    {
+      "claim_id": "0cee6896-ccbd-4d70-a16a-9c91af4bd1d4",
+      "result_id": "5840b93c-e134-4921-a6a4-ddbb8d642633"
+    },
+    {
+      "claim_id": "7f5166d5-8d73-4208-b167-cf45bbaa828c",
+      "result_id": "5840b93c-e134-4921-a6a4-ddbb8d642633"
+    },
+    {
+      "claim_id": "3fd38817-b50b-444b-b399-91db844d60c2",
+      "result_id": "71a4bd2f-2a5c-45e1-9bc0-c839295f2c09"
+    },
+    {
+      "claim_id": "c87be800-7b1e-43b4-ab27-2181709eaf77",
+      "result_id": "71a4bd2f-2a5c-45e1-9bc0-c839295f2c09"
+    },
+    {
+      "claim_id": "6c096e2e-e487-415e-ae22-6b2a680923e4",
+      "result_id": "71a4bd2f-2a5c-45e1-9bc0-c839295f2c09"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "135780be-a8c8-40f8-96bc-2d85594bd6a9",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "837ce586-2c13-4108-bd76-a2049e381df8",
+      "peer_result_id": "1563bcb0-595b-4ebe-ba88-3716a98ad08a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C20, C21, C58, C64 regarding mirror expression patterns. Both evaluations find the in situ hybridization data supporting these claims, with OpenEval noting appropriate positive controls and peer reviewers accepting the expression data as solid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "e27c8a34-cccf-43e3-be7b-200aa77ee74e",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b2c2b04c-36ec-4abf-8802-2217921b8758",
+      "peer_result_id": "5fd6fb2e-9e4d-465a-854f-249edf63c4db",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on claim C65 regarding wingless expression validation. Both evaluations accept this as appropriate methodological validation for the HCR in situ technique, with no concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "f745f808-eb32-4699-8606-1c93d18d73ba",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "b44b9d60-f245-4c61-a9a3-7e28326f4a35",
+      "peer_result_id": "71a4bd2f-2a5c-45e1-9bc0-c839295f2c09",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C75, C76, C77 regarding experimental statistics. Both evaluations accept these as factual data documenting CRISPR efficiency, with OpenEval noting the rates are reasonable for butterfly experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "9ba4588a-a389-4a2c-ba42-f19a99497fc0",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1",
+      "peer_result_id": "7d249d1f-a91a-4d45-b28f-18f17e3083b7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on knockout phenotype interpretation (C27, C28, C52, C60, C61, C66-C68). OpenEval finds claims SUPPORTED with strong evidence for selector gene function, while peer reviewers rate UNCERTAIN due to lack of independent clone markers and questions about whether effects represent transformation versus damage.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "aab6e64d-392e-462a-90bd-058c34c8f776",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1",
+      "peer_result_id": "3bd8e1ab-4643-4005-b9ca-41265585aa61",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Major disagreement on selector gene claims C4, C34. OpenEval finds these SUPPORTED by knockout experiments, while peer reviewers rate UNSUPPORTED, calling the selector gene interpretation 'speculative' and noting lack of evidence for clonal lineage compartment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "8c11d3cc-050b-40a2-8338-292a2a15bce8",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "68019ffe-985f-4051-aee2-e0ab14df86dc",
+      "peer_result_id": "c254d805-da57-4624-b714-8f0b0f78810e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C31-C33 regarding latent patterning information. Both evaluations express uncertainty, with OpenEval noting author speculation and peer reviewers questioning the transformation interpretation due to lack of independent markers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "2ec54fc5-723b-4f35-b9a7-efa59e923c53",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1",
+      "peer_result_id": "c254d805-da57-4624-b714-8f0b0f78810e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on transformation claims C29, C30, C62, C63. OpenEval finds these SUPPORTED as documented transformation, while peer reviewers rate UNCERTAIN, explicitly challenging whether data show transformation versus loss and criticizing circular logic.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "0678a95d-d0ce-41a8-916a-0881aec1521c",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "ea030314-dd5f-4979-9f27-c6faee91f326",
+      "peer_result_id": "215ec3a3-7803-4bd0-a9dd-1665e6cf23c5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on evolutionary interpretation claims C35, C37. OpenEval finds these SUPPORTED as well-justified connections to classical models, while peer reviewers rate UNCERTAIN, recommending authors 'greatly tone down' conclusions about conserved selector-like gene function.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "8b9976ef-bb67-4f4b-ba47-f3f3812eef80",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "72b6ad34-bd40-4356-a209-ffe6ff20a050",
+      "peer_result_id": "d2e827b3-2c56-4cdd-acf3-d4808f68e25c",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty for claims C7, C48, C49 regarding Drosophila alula homology. Both evaluations note this is comparative inference without direct experimental validation, though peer reviewers emphasize the speculative nature more strongly.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "11fbbde3-203d-407c-88f5-093c162594af",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "49ab52b5-7040-4bb8-80cb-bc8694597d4e",
+      "peer_result_id": "9b502505-b9bf-4824-a1c2-8d7aa736276e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on deep conservation claim C46. OpenEval rates UNCERTAIN due to limited comparative data from only two species, while peer reviewers rate SUPPORTED, with the Editor explicitly stating the study 'provides evidence of a deeply conserved role.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "98f3d8fb-ac13-457d-a2c4-10d80e554b13",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "7eb87342-81a2-4765-8cb0-39f9fa8b27d9",
+      "peer_result_id": "d3f66a66-058a-4477-a679-f7f0b7848ef6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on morphological claims C24, C25, C54. Both evaluations find these observational claims about butterfly wing morphology well-supported, with OpenEval noting documentation across multiple families and peer reviewers treating them as established observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "c229e265-84d3-4a9c-ae0f-bde160d2c76e",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "f2ee21dc-2ad3-4dec-90ee-46ea2c609f7f",
+      "peer_result_id": "d3f66a66-058a-4477-a679-f7f0b7848ef6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on morphological description C59. Both evaluations accept this straightforward observation documented in figures, with no concerns raised by either evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "1bd6aec7-751d-4896-969b-c5f5bea4c95b",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "dca7e419-12e6-4a7b-97cf-b559a39e58e1",
+      "peer_result_id": "5840b93c-e134-4921-a6a4-ddbb8d642633",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on phenotypic observations C70, C71, C72. Both evaluations accept these as documented phenotypes, though OpenEval includes them in broader SUPPORTED evaluation of knockout experiments while peer reviewers note interpretation is debated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "99f85c2d-60b4-41c9-9f91-08a3a919d10d",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "106d649d-e8d9-4048-9052-fbd35efd88e2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C13-C17 regarding Drosophila functions and butterfly expression patterns SUPPORTED by citations and expression data. No corresponding peer review evaluation specifically addresses these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "42c1d1a7-9bbe-4311-85be-bc62396efffd",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "107e44ac-7498-48e0-97ef-88672f021570",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C22, C23, C38-C44 regarding classical anatomical knowledge SUPPORTED by established sources. No corresponding peer review evaluation specifically addresses these anatomical background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "ec5559af-afab-4686-b524-566558f28756",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "a2817616-47a5-4249-b7da-9e8b83dc470a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C1, C2, C3, C9, C11, C12 regarding established field knowledge SUPPORTED by appropriate citations. No corresponding peer review evaluation addresses these contextual background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "33a69a0c-6b77-472d-a52c-5399b8181ea3",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "90e1ddf7-8010-44e8-bda0-0edb30fb339c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C18, C19, C55-C57 regarding study rationale and Drosophila alula phenotype SUPPORTED by appropriate citations. No corresponding peer review evaluation specifically addresses the study justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    },
+    {
+      "id": "0f2ba431-934e-4982-9fc0-0113663c1d79",
+      "submission_id": "ff98e0a0-87b9-47e1-aa21-243d6168273f",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "7e4b00d4-2187-475d-bda7-3a702236405c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claim C51 regarding recommendations for Drosophila wing studies SUPPORTED as a reasonable inference. No corresponding peer review evaluation addresses this general recommendation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:05.872740Z"
+    }
+  ]
+}

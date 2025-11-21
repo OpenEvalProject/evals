@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "GTSE1 was identified through bioinformatic analysis as a protein upregulated in AMBRA1 KO cells that is sensitive to Palbociclib treatment. GTSE1 expression is elevated in most tumor types compared to normal tissue and correlates with poor prognosis across multiple cancer cohorts, showing a survival pattern similar to the cyclin D1\u2013CDK4/6 gene cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatic pipeline (C9) is clearly described and appropriately integrates multiple datasets. The survival analyses (C12, C14) and expression comparisons (C13) are supported by TCGA and CPTAC data with appropriate statistical testing (log-rank tests, FDR correction). The figures provide clear visual evidence for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C58"
+    ],
+    "result": "GTSE1 is directly phosphorylated by cyclin D1\u2013CDK4 in vitro and in cells. This phosphorylation is demonstrated by phos-tag gel shifts, in vitro kinase assays, and physical interaction between GTSE1 and the cyclin D1\u2013CDK4 complex, and is abolished by the CDK4/6 inhibitor Palbociclib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal approaches converge on the same conclusion: phos-tag gels (C15), in vitro phosphorylation assays with purified proteins (C16), CDK4/6 inhibitor sensitivity (C17), and co-immunoprecipitation (C18). The use of appropriate positive controls (p107, p130, RB) and negative controls (ZC3HAV1, ERK1) strengthens the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C28"
+    ],
+    "result": "Cyclin D1\u2013CDK4 phosphorylates GTSE1 on four specific residues (S91, S262, S454, and S724). A quadruple mutant (Tetra SA) completely abolishes cyclin D1\u2013CDK4-mediated phosphorylation while other cyclin\u2013CDK complexes can still phosphorylate GTSE1 at different sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The site mapping is supported by systematic mutagenesis (C19, C20, C21) and differential sensitivity of the Tetra SA mutant to various cyclin\u2013CDK complexes (C28). The identification of S454 as a non-consensus site is appropriately noted. The use of PhosphoSitePlus database for validation adds confidence, though the claim acknowledges S454 may be indirectly phosphorylated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C57"
+    ],
+    "result": "In AMBRA1 KO cells with stabilized cyclin D1, GTSE1 levels remain elevated throughout the cell cycle rather than showing the normal G1-low, S/G2-high pattern. GTSE1 phosphorylation is sustained across all cell cycle phases in AMBRA1 KO cells, whereas it peaks at G2/M in parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell cycle synchronization experiments with appropriate markers (cyclin A2, cyclin B1, pH3) demonstrate altered GTSE1 abundance and phosphorylation patterns in AMBRA1 KO cells (C23, C24). The findings are consistent with prior literature (C22) and supported by both phos-tag gels and a phospho-specific antibody for S262.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "GTSE1 phospho-peptides are enriched in pan-cancer cohorts compared to adjacent normal tissues. Three of the four cyclin D1\u2013CDK4-dependent phosphorylation sites (S262, S454, S724) are statistically enriched in cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CPTAC data analysis provides clinical validation of the phosphorylation events identified experimentally. The statistical enrichment of specific sites (C26) directly links the biochemical findings to cancer pathophysiology. The analysis appropriately notes that S91 data are not available in CPTAC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "GTSE1 protein levels are elevated in AMBRA1 KO cells and upon overexpression of cyclin D1, particularly the AMBRA1-insensitive T286A mutant. This elevation is reversed by Palbociclib treatment, indicating dependence on CDK4/6 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple experimental systems converge on this conclusion: stable AMBRA1 KO cells (C29), cyclin D1 overexpression (C30), and acute AMBRA1 degradation using the mAID system (C31). The Palbociclib rescue experiments (C32) establish causality through CDK4/6 activity. The use of the mAID system is particularly strong as it minimizes compensatory effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "GTSE1 is stabilized in AMBRA1 KO cells, showing prolonged half-life in cycloheximide chase assays. A phospho-mimetic mutant (Tetra SD) exhibits slower degradation kinetics than wild-type or phospho-deficient (Tetra SA) GTSE1, as demonstrated by both immunoblotting and time-lapse fluorescence microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches demonstrate GTSE1 stabilization: CHX chase in mAID-AMBRA1 cells (C33), CHX chase in two independent AMBRA1 KO clones (C34), and comparison of GTSE1 mutants in stable cell lines (C35, C36). The time-lapse microscopy provides single-cell resolution and statistical significance. The use of stable cell lines rather than transient transfection strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "GTSE1 degradation occurs via the ubiquitin\u2013proteasome system involving a CRL, as shown by stabilization with MG132 and MLN4924 but not Bafilomycin A. However, GTSE1 is not a direct substrate of CRL4-AMBRA1, as it does not physically interact with AMBRA1 and its stabilization in AMBRA1 KO cells is secondary to CDK4/6 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inhibitor experiments (C37) appropriately distinguish between proteasomal, CRL-mediated, and autophagy-dependent degradation pathways. The negative co-IP result (C38) and Palbociclib rescue data establish that GTSE1 stabilization is an indirect consequence of elevated cyclin D1 levels rather than direct AMBRA1 substrate recognition. This is an important mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C60"
+    ],
+    "result": "GTSE1 abundance and phosphorylation show statistically significant positive correlations with cell proliferation markers (PCNA, KI67, MCM2) across multiple cancer cohorts, establishing a link between GTSE1 phosphorylation and proliferative phenotypes in human cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CPTAC data analysis with appropriate statistical testing (Spearman correlation, Benjamini-Hochberg correction) demonstrates significant correlations with proliferation markers. The analysis is comprehensive across multiple cancer types and uses established proliferation markers. The correlation is consistent with the functional data presented in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "GTSE1 levels and phosphorylation show a negative trend with cell migration and EMT markers (Vimentin, MMP1, ETS1), but these correlations do not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors appropriately note the lack of statistical significance, this negative result contrasts with published literature suggesting GTSE1 promotes migration. The discrepancy may reflect differences between total GTSE1 levels/phosphorylation versus localization or activity. Additional experiments would be needed to resolve this apparent contradiction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The phospho-mimetic GTSE1 mutant (Tetra SD) promotes cell proliferation more than wild-type or phospho-deficient GTSE1, as shown by growth curves, CellTrace dye dilution assays showing increased cell generations, and cell cycle analysis showing decreased G1 and increased S phase populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal proliferation assays converge on the same conclusion: growth curves (C42), CellTrace dye dilution with multiple biological replicates (C43), and cell cycle profiling (C44). The phenotype of Tetra SD cells mirrors that of AMBRA1 KO cells (C41), providing internal consistency. The use of stable cell lines and multiple independent measurements strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C56"
+    ],
+    "result": "While cyclin D1\u2013CDK4 phosphorylates GTSE1 at specific sites (S91, S262, S454, S724), other cyclin\u2013CDK complexes (cyclin A2\u2013CDK2, cyclin E1\u2013CDK2, cyclin B1\u2013CDK1) phosphorylate GTSE1 at additional or different sites, as the Tetra SA mutant still shows mobility shifts with these kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential phosphorylation by various cyclin\u2013CDK complexes is clearly demonstrated by phos-tag gels with appropriate CDK-specific inhibitors (C27). The Tetra SA mutant experiments (C28, C56) provide strong evidence for distinct phosphorylation sites. This establishes GTSE1 as a substrate for multiple CDKs with cyclin D1\u2013CDK4 targeting a unique subset of sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C45",
+      "C46",
+      "C53",
+      "C54"
+    ],
+    "result": "Background claims establishing that AMBRA1 targets D-type cyclins for degradation, that CCND1 is frequently amplified/overexpressed in cancers (15-20% of breast cancers, >50% of mantle cell lymphomas), and that D-type cyclins activate CDK4/6 to phosphorylate RB and drive oncogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited. They provide necessary context for the current work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C55"
+    ],
+    "result": "Background claims about GTSE1 function: it is expressed in S/G2 phases, interacts with p53 to promote its degradation, associates with microtubules to promote migration, is phosphorylated by CDK1\u2013cyclin B1 in prometaphase, and its high expression is associated with cancer progression and poor prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established findings from prior literature, appropriately cited. They provide context for why GTSE1 is a relevant substrate to study but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C59"
+    ],
+    "result": "Synthesis and interpretation: GTSE1 is a novel substrate of cyclin D1\u2013CDK4/6 in tumor cells overexpressing cyclin D1. Phosphorylation stabilizes GTSE1 across the cell cycle, promoting proliferation and contributing to poor cancer prognosis. This provides a mechanism for cyclin D1's oncogenic effects beyond RB phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims synthesize the experimental findings into a coherent model. They are well-supported by the totality of the data: identification of GTSE1 as a substrate (C15-C21), demonstration of phosphorylation-dependent stabilization (C33-C36), functional consequences for proliferation (C42-C44), and clinical correlations (C12, C25, C39). The proposal that this occurs particularly in pathological states (C47) is appropriately framed as a hypothesis.",
+    "result_type": "MAJOR"
+  }
+]

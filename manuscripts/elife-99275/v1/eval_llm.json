@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C70"
+    ],
+    "result": "The X-ray crystal structure of GeoRec2 was solved at 1.49 \u00c5 resolution and shows high structural similarity to both the AlphaFold model (RMSD 1.03 \u00c5) and cryo-EM structure of GeoCas9 (RMSD 1.10 \u00c5). Despite only 22% sequence identity, GeoRec2 and SpyRec3 are highly structurally similar (RMSD 2.00 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 and C70 provide converging structural evidence from X-ray crystallography showing excellent agreement with computational models and evolutionary conservation of structure despite low sequence identity. The RMSD values and resolution are appropriate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NMR spectroscopy demonstrates that individual GeoRec subdomains (GeoRec1: 136 residues, 16 kDa; GeoRec2: 212 residues, 25 kDa) maintain their structural integrity when linked in the full-length GeoRec construct (370 residues, 43 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C67-C69 are supported by NMR spectral overlays showing that amide and methyl resonances of intact GeoRec match those of isolated subdomains, indicating preserved folds. This is a well-established NMR approach for assessing domain independence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "CD thermal unfolding reveals distinct melting temperatures for GeoRec subdomains (GeoRec1 Tm ~34\u00b0C, GeoRec2 Tm ~62\u00b0C), and mutations K267E and R332A destabilize GeoRec2, with K267E reducing Tm to ~55\u00b0C and R332A showing a pre-unfolding event at 40\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C24-C27 present CD spectroscopy data showing clear thermal stability differences between subdomains and mutation-induced destabilization. The data support the inference that both mutations are destabilizing, though the mechanisms differ between variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "NMR relaxation analysis reveals that GeoRec2 exhibits elevated order parameters (S2) indicating ps-ns motions arise from global tumbling, but displays \u03bcs-ms motions in 17 residues. K267E mutation increases global kex from 147\u00b141 s\u207b\u00b9 to 376\u00b189 s\u207b\u00b9 and redistributes flexibility across 33 residues, while R332A maintains similar kex (142\u00b128 s\u207b\u00b9) but redistributes motions across 18 residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 present comprehensive NMR dynamics data from CPMG relaxation dispersion and Model-free analysis. The data clearly show mutation-induced changes in \u03bcs-ms dynamics while ps-ns motions remain largely unchanged. The global fitting approach and residue-specific analysis are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "K267E and R332A mutations were rationally designed based on proximity to gRNA (<5 \u00c5 in AlphaFold2 model) and homology to specificity-enhancing mutations in SpyCas9 (K526E in evoCas9 and R691A in HiFi SpyCas9). NMR chemical shift perturbations show these mutations cause highly localized structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 provide the rationale for mutation design based on structural predictions and homology to known SpyCas9 variants. The localized NMR perturbations support minimal global structural disruption. However, C19 notes that cryo-EM only confirms K267-gRNA interaction, not R332, introducing some uncertainty about the R332A design rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A 39nt RNA construct was designed for NMR binding studies, forming a 55.6 kDa complex with GeoRec. WT GeoRec binds this RNA with Kd = 3.3 \u00b1 1.5 \u03bcM, while K267E and R332A variants show reduced affinity (both Kd = 7.2 \u03bcM), requiring three-fold higher RNA concentrations to achieve maximal NMR effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 present consistent binding data from both NMR titrations and MST experiments. The ~2-fold reduction in affinity for both mutants is statistically significant and supported by concentration-dependent NMR perturbations. The experimental design of using truncated RNA is well-justified for NMR studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Full-length GeoCas9 has a Tm of ~60\u00b0C, which is not altered by K267E or R332A mutations in the apo state. Upon RNP formation, WT GeoCas9 Tm increases to 73\u00b0C, K267E to 70\u00b0C, and R332A shows minimal stabilization (61\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 present CD thermal stability data showing differential effects of mutations on RNP stability. The data are internally consistent and show that while apo protein stability is maintained, gRNA-induced stabilization is reduced, particularly for R332A. This correlates with the reduced RNA binding affinity observed by NMR and MST.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "MD simulations reveal that K267E and R332A mutations substantially alter GeoCas9 dynamics, particularly in Rec and HNH domains. Protein-RNA contacts are significantly reduced in all variants, with K267E showing >60 kcal/mol reduction in gRNA binding free energy and R332A showing <20 kcal/mol reduction. Protein-DNA interactions remain largely unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 present MD simulation data that corroborate experimental NMR and binding results. The differential effects on gRNA vs DNA binding are consistent with the mutation locations. However, the simulations are based on a cryo-EM structure with moderate resolution (3.17 \u00c5), which may introduce some uncertainty in the absolute values of binding energies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C78"
+    ],
+    "result": "In vitro DNA cleavage assays show that K267E and R332A single mutants have negligible impact on GeoCas9 on-target activity or specificity, following WT temperature dependence closely. The K267E/R332A double mutant shows decreased on-target efficiency but does not enhance specificity. WT GeoCas9 shows sensitivity to mismatches near the seed site, with ~50% cleavage of off-target DNA with 5-6 bp mismatches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 and C78 present functional data showing that despite biophysical changes, the mutations do not significantly alter GeoCas9 function. This contrasts with expectations based on SpyCas9 homology. The HiFi-SpyCas9 control validates the assay. However, the higher off-target cleavage compared to prior studies (C59) may be due to higher RNP concentrations, which could affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MST experiments with full-length GeoCas9 and full-length gRNA (both Tnnt2 and 8UZA sequences) show that WT, K267E, and R332A variants have similar affinities, supporting the observed similar cleavage activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 present MST data with full-length components that contrast with the isolated domain results (C41-C44). This suggests that the context of the full-length protein compensates for the reduced affinity observed in isolated GeoRec. The use of two different gRNA sequences strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "MD simulations of iGeoCas9 (containing 10 mutations) show increased dynamics in HNH and Rec domains, reduced gRNA binding free energy similar to K267E/R332A, and the greatest conformational sampling of all variants tested, suggesting high flexibility is critical for enhanced specificity in GeoCas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 present MD simulation data on a published high-specificity variant that provides context for interpreting the K267E/R332A results. The observation that iGeoCas9 shows similar biophysical changes but enhanced function suggests the K267E/R332A mutations move in the right direction but are insufficient alone. However, this is computational data that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The authors speculate that the biophysical impact of mutations within GeoRec may be tempered by evolutionary resilience and stable neighboring domains, requiring multiple additive or synergistic mutations to substantially alter activity or specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 are speculative interpretations of why single mutations don't affect function despite biophysical changes. While this is a reasonable hypothesis consistent with the data, it lacks direct experimental support. The speculation is clearly identified as such in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C66"
+    ],
+    "result": "Background information establishes that GeoCas9 is a thermophilic Type II-C Cas9 (1087 amino acids) with DNA cleavage up to 85\u00b0C, 281 residues shorter than SpyCas9, utilizing a 5'NNNNCRAA-3' PAM. Its compact size permits single AAV vector delivery unlike SpyCas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 and C66 provide well-established background information supported by appropriate citations to prior literature. These claims set the context for the study and are not novel findings but rather established facts about the GeoCas9 system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "NMR backbone assignments for GeoRec1 and GeoRec2 were deposited in the BMRB under accession numbers 52363 and 51197, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 report data deposition, which is verifiable and represents good scientific practice. This is a minor methodological detail rather than a scientific result.",
+    "result_type": "MINOR"
+  }
+]

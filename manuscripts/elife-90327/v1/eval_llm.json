@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C111"
+    ],
+    "result": "The authors developed a dual-color optogenetic system (Zip-IvfChr) by pairing engineered ZipACR variants with IvfChr that enables high-frequency neuronal activation with red light (635 nm) while permitting millisecond-precision suppression of action potentials with blue light (470 nm). The system produces no action potentials in response to blue light pulses, and blue light-induced suppression is fully reversed within 5 ms after light termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide direct experimental evidence from multiple preparations (HEK cells, organotypic slices, acute slices) demonstrating the core functionality. The temporal precision (C38: 5 ms recovery) and wavelength selectivity (C35-C36) are quantitatively demonstrated with appropriate controls. The methodological approach (C5, C34) is clearly described and validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Through structure-based mutagenesis of ZipACR guided by homology modeling with GtACR1, the authors identified I151V and I151T variants with optimized kinetics (off-rate time constants of 15.5\u00b18.4 ms and 20.2\u00b16.4 ms respectively) that are slightly slower than wild-type ZipACR (9.5\u00b12.9 ms) without compromising ion permeability or photocurrent magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe the rational design approach and provide quantitative kinetic measurements with appropriate sample sizes. The finding that mutations around the retinal binding pocket minimally affect ZipACR conductance (C115-C116) is supported by experimental data, though the comparison to unpublished data on other channelrhodopsins (C116) weakens this slightly. The identification of I151 as a critical residue (C118) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In hippocampal slice recordings, neurons expressing ZipT-IvfChr showed wavelength-selective responses: 635 nm light effectively drove action potentials at powers as low as 1 mW/mm\u00b2, while 470 nm light up to 10 mW/mm\u00b2 failed to induce action potentials and only produced modest subthreshold depolarization. Co-illumination with both wavelengths also failed to generate action potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 provide systematic dose-response data comparing IvfChr and ZipT-IvfChr across multiple light intensities with appropriate sample sizes (n=6-13). The wavelength selectivity is clearly demonstrated with a >10-fold difference in threshold. The co-illumination experiment (C81) provides important evidence that blue light effectively suppresses red light-induced excitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C39"
+    ],
+    "result": "In vivo validation in the facial motor nucleus demonstrated that ZipT-IvfChr-expressing motoneurons drove strong whisker movements with red light (638 nm, AUC=1.8\u00b10.29) comparable to IvfChr controls, while blue light (450 nm) failed to reliably elicit whisker movements (AUC=0.25\u00b10.07, ratio 450/638=0.15\u00b10.04, p=0.0012), confirming wavelength selectivity in behaving animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide quantitative behavioral data with statistical analysis showing significant differences between wavelengths for ZipT-IvfChr but not IvfChr controls. The sample size (n=4 per group) is modest but adequate for this proof-of-concept demonstration. The behavioral readout (whisker movement) provides functional validation beyond electrophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C132",
+      "C133"
+    ],
+    "result": "The fast kinetics of ZipACR variants enable rapid recovery from blue light-induced inhibition: neurons expressing ZipT-IvfChr recover the ability to fire action potentials within 5 ms after blue light offset, while ZipV-IvfChr shows immediate recovery with 100% success rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 and C132-C133 provide direct experimental measurements of recovery kinetics with clear temporal resolution. The experimental design (current injection at defined intervals after light offset) appropriately tests the recovery time course. This addresses a key design goal of minimizing post-illumination physiological disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Proof-of-concept validation in Drosophila P1 neurons showed that co-expression of Chrimson with GtACR2 enabled wavelength-selective control of courtship song: 590 nm light reliably elicited song (95.2\u00b19.14 pulses/10s) while 470 nm light produced no detectable song, despite both wavelengths being equally effective when Chrimson was expressed alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide clear behavioral evidence with appropriate controls (Chrimson alone, GtACR2 alone, co-expression). The quantitative song measurements demonstrate complete suppression of blue light responses while preserving red light responses. This validates the conceptual approach before engineering the optimized system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C77"
+    ],
+    "result": "The membrane-trafficking optimized IvfChr shows fast kinetics (off-rate 5.6\u00b10.3 ms) comparable to published vfChrimson, but with 40% reduced photocurrent compared to C-ChrimsonR-ts. The bicistronic 2A expression system produces ~2.7\u00d7 higher photocurrent than the BiPOLES tandem fusion system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide quantitative measurements in HEK293 cells with appropriate sample sizes and comparisons to controls. The photocurrent reduction (C56) is a limitation but is offset by improved membrane trafficking. The comparison to BiPOLES (C77) demonstrates the advantage of the 2A approach, though the mechanism (improved trafficking vs. expression) could be better separated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Zip(151T) is more consistent than Zip(151V) in blocking blue light-induced action potentials, likely due to its slightly slower closing rate, and is recommended for general experiments with wavelengths >600 nm. However, orange light should be avoided with ZipT-IvfChr due to significant photocurrent at these wavelengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C119 provide experimental evidence comparing the two variants, with C69 noting two outliers out of 10-16 cells tested. The mechanistic explanation (C119) linking slower kinetics to better performance is reasonable. The recommendations (C121-C123) are appropriately cautious and based on the experimental observations, though they represent expert opinion rather than systematic optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Evaluation of potassium-selective channelrhodopsins (HcKCR1, HcKCR2, WiChR) revealed that none are optimal for pairing with IvfChr: WiChR is kinetically too slow (229.3\u00b153.8 ms) but most potent; HcKCR1 shows strong desensitization and is too red-shifted (530 nm peak); HcKCR2 is least K+-selective but spectrally and kinetically closest to ideal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 provide systematic characterization of reversal potentials, kinetics, and spectral properties with appropriate sample sizes. The conclusion that none are optimal (C109, C160) is well-supported by the data. The specific assessments of each variant (C161-C163) are justified by the measurements, though the criteria for \"optimal\" could be more explicitly defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C28"
+    ],
+    "result": "GtACR2 has slow current decay (161\u00b124 ms) that limits its application to lower frequency optical stimulation, making it unsuitable for high-frequency applications despite its effectiveness in long-duration pulse protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 provide quantitative kinetic measurements and are supported by citations. The inference about frequency limitations (C52) is reasonable given the kinetics, though direct high-frequency testing of GtACR2 is not shown. This provides important context for why the authors pursued ZipACR engineering rather than using existing tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The bicistronic 2A approach was chosen over co-injection, IRES, and tandem fusion strategies because IRES produces unbalanced expression and BiPOLES-vfChrimson showed high intracellular accumulation in HEK293 cells. The 2A system ensures equimolar translation of both proteins from one mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 provide clear rationale for the expression strategy choice. The IRES limitation (C74) is supported by citation and authors' observations. The BiPOLES accumulation (C75) is shown in supplementary figures. However, the claim about equimolar translation (C76) is a general property of 2A systems rather than directly demonstrated here, and actual protein ratios are not measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "IvfChr shows desensitization with reduced action potential probability upon successive 635 nm stimulation, a phenomenon also observed in HEK293 cells and consistent with previous reports for red-shifted channelrhodopsins. ZipV-IvfChr occasionally shows blue light-induced action potentials, possibly due to its faster closure rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 document an important limitation of IvfChr with observations in both neurons and HEK cells. The mechanistic inference (C88) is supported by citation to similar phenomena. Claim C85 about ZipV-IvfChr is appropriately cautious (\"occasionally\") and the mechanistic explanation is reasonable, though not definitively tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Chrimson variants have the most red-shifted spectra but show slower on-rate to 470 nm compared to 590 nm light. Despite this kinetic difference, 470 nm light is equally effective in inducing action potentials as 590 nm light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by figure data and citations. This establishes the fundamental problem that motivated the study: red-shifted channelrhodopsins are still activated by blue light despite slower kinetics. The equal effectiveness (C42) demonstrates that kinetic differences alone are insufficient to prevent blue light activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The design priority was fast closing kinetics to minimize physiological disruption after light termination, as all channelrhodopsins can alter osmotic balance, ion gradients, and pH, with cationic channelrhodopsins additionally conducting calcium and potentially activating second messenger pathways during prolonged opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 describe well-established concerns about channelrhodopsin physiology, supported by citations. The design rationale (C125, C131) logically follows from these concerns. However, the actual physiological impact of the fast vs. slow kinetics is not directly tested in plasticity experiments, making this more of a design principle than a demonstrated advantage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Modeling suggests that slower kinetics B-ACRs like GtACR2 in BiPOLES would produce inhibitory effects lasting 10-20 ms after blue light termination, potentially disrupting millisecond-timescale neuronal physiology and altering intracellular ion concentrations with short- and long-term physiological consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C136 are speculative extrapolations based on the measured kinetics of GtACR2 (C51) and the authors' recovery time measurements for their own system. While the logic is sound, the actual 10-20 ms estimate is not directly measured for GtACR2, and the physiological consequences are hypothetical rather than demonstrated. This represents reasonable inference but lacks direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "A main limitation is limited control over IvfChr and ZipV/T expression ratios in the 2A system, as protein levels depend on degradation rates and proper folding/chromophore incorporation, which can vary across neurons and brain regions. Users should validate the system in their cells of interest before behavioral experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 provide an honest assessment of system limitations. The factors affecting protein levels (C148) are well-established, and the variability across cell types (C149) is a reasonable inference. The recommendation for validation (C150) is appropriate given these limitations. However, the actual extent of variability is not quantified in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Potential applications include dual optical activation of segregated neuronal populations when co-expressed with blue-shifted channelrhodopsins like oChIEF, spike-timing-dependent plasticity experiments, cortical excitation/inhibition balance studies, and independent control of striatal direct/indirect pathway neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C143 describe speculative future applications that are logical extensions of the demonstrated capabilities but are not experimentally validated in the manuscript. These represent reasonable hypotheses about potential uses rather than demonstrated results. The feasibility of these applications would depend on factors not tested here (e.g., expression levels, cell-type specificity).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C164",
+      "C165",
+      "C169"
+    ],
+    "result": "The chloride-based approach is unsuitable for axonal terminal manipulation due to high terminal chloride concentrations. While potassium-selective channelrhodopsins would be better positioned for this application, current variants require further engineering. Existing approaches using differential kinetics or synaptic release properties remain preferred for axonal stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158 and C165 are well-supported by citations about chloride concentrations and existing methods. The assessment of K-ChRs (C159, C164) follows logically from the characterization data (C98-C108). The recommendation (C165) appropriately acknowledges the limitations while pointing to alternative approaches. Claim C169 about future engineering is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C16",
+      "C17"
+    ],
+    "result": "All light-gated ion channels, including red-shifted channelrhodopsins, are activated by blue light due to intrinsic blue absorption by the retinal chromophore, making attempts to create blue light-insensitive opsins likely unsuccessful. This cross-talk problem is well-known in the optogenetics field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14 describe well-established phenomena in optogenetics. Claims C16-C17 about the chemical basis are supported by citations to retinal spectroscopy. However, C16's assertion that engineering efforts \"will likely be unsuccessful\" is somewhat speculative\u2014while difficult, it's not necessarily impossible. The claims accurately represent current understanding and provide important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Existing approaches to overcome cross-talk include pairing fast blue-shifted ChR with slow red-shifted ChR (requiring tight regulation of expression and intensity, not adopted for in vivo use) and prolonged photostimulation of axons (limited to axonal regions and may cause repetitive activity in neurons with slow spike-frequency adaptation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C22, and C24 are supported by citations to published work. Claims C19-C21 and C23 represent reasonable inferences about the limitations of these approaches, though the assertion that the first method \"has not been adopted for in vivo application\" (C21) is difficult to verify comprehensively. These claims provide important context for why a new approach was needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The BiPOLES tandem fusion system reduces vfChrimson photocurrent compared to the 2A-based IvfChr system, possibly due to hindered membrane trafficking. While the co-expression strategy addresses current limitations, development of a true spectrally narrow channelrhodopsin would be the preferred long-term solution, though this may not be achievable due to retinal chromophore properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C152 is supported by experimental data comparing the two systems. The mechanistic inference about trafficking is reasonable but not definitively proven. Claims C155-C157 provide appropriate perspective on the limitations of the approach and future directions, with C157 appropriately expressing uncertainty about feasibility. This represents honest assessment of the work's place in the field.",
+    "result_type": "MINOR"
+  }
+]

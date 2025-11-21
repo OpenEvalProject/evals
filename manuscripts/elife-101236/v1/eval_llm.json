@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ACVR2A is a critical gene in pre-eclampsia (PE) pathogenesis, encoding a receptor in the activin/TGF-\u03b2 signaling pathway with essential roles in reproductive processes. Multiple GWAS studies across diverse populations have consistently identified significant associations between ACVR2A gene polymorphisms and PE susceptibility, particularly in early-onset cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C18-C28 collectively establish ACVR2A's role in PE through well-documented genetic associations (Table 1), established biological functions in the TGF-\u03b2 pathway, and expression patterns in reproductive tissues. The evidence is supported by multiple independent GWAS studies across diverse populations and established biological knowledge about ACVR2A function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C66",
+      "C67"
+    ],
+    "result": "ACVR2A expression is significantly downregulated in placental tissues from PE patients compared to normotensive controls, as demonstrated by transcriptomic analysis (GSE114691), western blot, RT-PCR, immunohistochemistry, and immunofluorescence. ACVR2A is predominantly expressed in trophoblast cells, particularly extravillous trophoblasts (EVTs), and localized to the cell surface consistent with its role as a membrane receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29-C31, C33-C34 are well-supported by multiple complementary experimental approaches (Figure 1A-F) showing consistent downregulation of ACVR2A in PE placentas at both mRNA and protein levels (p<0.001). The study appropriately controlled for confounding factors (C66, C83) by matching age and BMI and excluding comorbidities. The localization data (C33-C34) is consistent with ACVR2A's known function as a membrane receptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C73",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CRISPR/Cas9-mediated knockout of ACVR2A was successfully established in HTR8/SVneo and JAR trophoblast cell lines, as confirmed by multiple validation methods including Sanger sequencing, gel electrophoresis, RT-qPCR, and western blotting. ACVR2A expression in these trophoblast cell lines was comparable to tumor cell lines, suggesting its potential role in trophoblast functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41, C73, C84-C87 describe rigorous validation of CRISPR/Cas9 knockout using multiple complementary methods (Figure 2). The successful deletion was confirmed at both genotypic (775 bp vs 1750 bp fragments) and phenotypic levels (absence of mRNA and protein). However, the use of immortalized/tumor-derived cell lines (JAR from choriocarcinoma, HTR8/SVneo immortalized) is a limitation that should be acknowledged, as these may not fully represent normal trophoblast behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ACVR2A knockout significantly impairs fundamental trophoblast cell functions, including migration (scratch assay), proliferation (CCK-8 assay), invasion (Transwell assay), and clonogenicity (colony formation assay) in both HTR8/SVneo and JAR cell lines (p<0.001 for all assays).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C42-C46 are supported by multiple functional assays (Figure 3) showing consistent impairment across different cellular functions. However, the authors acknowledge a critical limitation: reduced proliferation in knockout cells may confound the interpretation of migration and invasion assays, as fewer proliferating cells could inherently lead to fewer migrating/invading cells. While low-serum conditions (1-2% FBS) were used to minimize proliferation during these assays, the impact cannot be fully excluded. Additional proliferation-independent methods or normalization approaches are needed to definitively establish ACVR2A's specific role in migration and invasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "RNA-seq analysis of ACVR2A knockout cells revealed extensive transcriptomic changes, with 144 upregulated and 240 downregulated genes in JAR cells, and 99 upregulated and 73 downregulated genes in HTR8/SVneo cells. GSEA identified significant alterations in the Wnt signaling pathway (JAR: NES=-1.67, p=1.03E-04; HTR8/SVneo: NES=-1.45, p=0.6E-02), suggesting ACVR2A regulates trophoblast functions through the TCF7/c-JUN pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C52, C99-C103 are supported by comprehensive RNA-seq analysis using appropriate bioinformatics methods (DESeq2, FDR<0.05, |log2FC|\u22651). The GSEA results show statistically significant enrichment of Wnt pathway genes in both cell lines (Figures 4-5). The hypothesis that ACVR2A regulates trophoblast functions through TCF7/c-JUN is reasonable based on pathway analysis, though it requires experimental validation (addressed in subsequent claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "ACVR2A regulates trophoblast cell functions through the TCF7/c-JUN pathway. RT-PCR analysis showed significant downregulation of Wnt3, Wnt4, c-JUN, CCND1, TCF7, and TCF7L1 mRNA following ACVR2A knockout in both cell lines and PE placental tissues (p<0.001). Immunohistochemistry confirmed reduced protein expression of TCF7, TCF7L1, and c-JUN in PE placentas compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C52-C54, C57 provide experimental validation of the TCF7/c-JUN pathway hypothesis through RT-PCR (Figure 6A-C) and IHC (Figure 6D-I). The consistent downregulation of pathway components in both ACVR2A knockout cells and PE tissues supports a functional link. However, the evidence is primarily correlative; direct mechanistic studies (e.g., rescue experiments, pathway inhibition) would strengthen the causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Western blot analysis revealed significant downregulation of ACVR2A, SMAD4, SMAD1/5, pSMAD1/5/9, TCF7L1, and TCF7L2 in PE placentas compared to normotensive controls (p<0.05). These findings suggest ACVR2A regulates trophoblast function through both BMP/Smad1/5 signaling and the TCF7/c-JUN pathway, with potential cross-talk between TGF-\u03b2 family signaling and Wnt pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C75-C79 are supported by western blot data (Figure 7A) showing coordinated downregulation of ACVR2A, Smad signaling components, and TCF7/c-JUN pathway targets in PE tissues. The discussion appropriately acknowledges that while Smad2/3/4 were not directly assessed, prior literature supports cross-talk between Smad and TCF/LEF pathways. The evidence supports a model where ACVR2A dysfunction impairs both BMP/Smad and Wnt/TCF7 signaling in PE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C82"
+    ],
+    "result": "Pre-eclampsia is a complex pregnancy disorder characterized by hypertension and proteinuria after 20 weeks gestation, with clinical manifestations ranging from asymptomatic to severe. The pathogenesis involves genetic factors, trophoblast dysfunction, defective spiral artery remodeling, dysregulated immune responses, and other mechanisms. Trophoblast cells are vital for pregnancy and their dysfunction is closely linked to PE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12, C59-C62, C82 provide well-established background information about PE pathophysiology, supported by appropriate citations and clinical guidelines (ACOG). These claims accurately represent current knowledge about PE and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C63",
+      "C64"
+    ],
+    "result": "Genome-wide association studies (GWAS) have significantly advanced understanding of PE genetics by identifying multiple risk loci (including ACVR2A, MTHFR, FGF) linked to key biological processes. However, the genetic architecture of PE is complex with modest individual contributions, and GWAS findings require functional validation to establish biological significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17, C63-C64 accurately describe the role and limitations of GWAS in PE research, supported by appropriate citations. These claims provide important context for why functional studies of ACVR2A (like the current work) are needed to validate genetic associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prior research has established that ACVR2A plays important roles in cancer cell invasion/migration and reproductive biology. Studies show circular RNA ACVR2A is involved in bladder cancer invasion, the activin A/ACVR2A axis promotes colon cancer metastasis via SMAD2, and ACVR2A/ALK3 regulate endometrial receptivity and embryo implantation in mice. These findings support investigating ACVR2A's role in trophoblast function and PE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C68-C72 accurately cite prior research establishing ACVR2A's roles in cancer and reproduction, providing rationale for the current study. The comparison between tumor and trophoblast cell behaviors (C68) is well-supported by citations and provides context for using trophoblast cell lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C80",
+      "C81"
+    ],
+    "result": "Previous studies have found abnormal ACVR2A expression in the decidua of PE patients. Mouse studies show that uterine-specific ACVR2A knockout in progesterone receptor-expressing cells causes embryo implantation failure, suggesting ACVR2A may influence PE through both trophoblast and uterine signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C80-C81 are supported by appropriate citations to prior research. These claims provide important context that ACVR2A's role in PE may extend beyond trophoblast function to include uterine/decidual mechanisms, though the current study focuses on trophoblast cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study employed standard molecular and cellular biology methods including CRISPR/Cas9 gene editing, RT-qPCR (with 95-100% amplification efficiency), western blotting, immunohistochemistry, CCK-8 proliferation assays, scratch assays, Transwell invasion assays, and colony formation assays. Statistical analyses used appropriate parametric (t-test, ANOVA) or non-parametric (Mann-Whitney U) tests based on data distribution, with p<0.05 considered significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C88-C98, C104-C106 describe standard, well-established methods with appropriate technical details. The methods are generally rigorous, though some limitations are acknowledged (e.g., potential confounding of proliferation on migration/invasion assays). Quality control measures (e.g., PCR efficiency 95-100%, off-target assessment) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C75"
+    ],
+    "result": "The study concludes that diminished ACVR2A expression significantly influences trophoblast cell proliferation, invasion, and migration in PE, likely through the TCF7/c-JUN pathway, with implications for understanding PE pathogenesis and potential therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C75 represent the main conclusions of the study. While the evidence for ACVR2A's role in trophoblast function is substantial, several limitations affect the certainty of these conclusions: (1) the use of immortalized/tumor-derived cell lines may not fully represent normal trophoblast behavior; (2) the confounding effect of reduced proliferation on migration/invasion assays; (3) the primarily correlative nature of the pathway analysis without direct mechanistic validation (e.g., rescue experiments); (4) lack of in vivo validation. The authors acknowledge these limitations and suggest future studies are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The study included only PE patients without comorbidities (gestational diabetes, chronic hypertension, other pregnancy complications) to minimize confounding factors, with age and pre-pregnancy BMI matched between PE and control groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 describes appropriate inclusion/exclusion criteria to minimize confounding. The strict selection criteria (no comorbidities) and matching of age/BMI (C66) strengthen the study design, though this may limit generalizability to PE patients with comorbidities.",
+    "result_type": "MINOR"
+  }
+]

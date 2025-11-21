@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Single-cell multi-omics profiling of PBMCs from nine early HIV-1 infected individuals identified 16 distinct cell populations and characterized four CD4+ T cell subtypes (naive, effector memory, Th2, and Th17) based on marker gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 describe the study design, sample processing, and cell type identification. The methodology is clearly stated with appropriate sample size (n=9), integration of scRNA-seq and snRNA-seq data, and cell type annotation based on established marker genes (LDHB, SELL, HLA-DRA, GZMK, STAT6, GATA3, RORA, STAT3). The findings are supported by referenced figures showing UMAP clustering and marker gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "HIV-1 RNA+ cells were identified using genome alignment and targeted long-read sequencing, revealing 985 HIV-1 RNA+ cells with higher proportions in CD4 naive and effector memory cells compared to Th2 and Th17 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe a novel methodological approach combining standard alignment with targeted long-read sequencing to improve detection sensitivity. The identification of 985 HIV-1 RNA+ cells from 4,435 total CD4+ T cells (~22%) is reasonable for early infection. The differential distribution across cell subtypes is supported by Figure 1C and supplement 1E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "HIV-1 RNA+ CD4+ T cells showed 334 upregulated and 1,002 downregulated genes, with enrichment of T cell activation, antiviral defense, and interferon-beta response genes, particularly IFITM1, indicating active antiviral responses during acute infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 present differential gene expression analysis with clear numbers and functional categories. The identification of IFITM1 as the most upregulated gene is specific and verifiable from Figure 1D. The interpretation that these pathways represent antiviral responses (C48) is a reasonable inference supported by the gene ontology enrichment (Figure 1E) and established knowledge about interferon-stimulated genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "GSEA revealed cell-type-specific responses to HIV-1 infection, with interferon-gamma and interferon-alpha responses upregulated across all CD4+ T cell subtypes, but Th2 and Th17 cells showing downregulated T cell activation hallmarks and disrupted downstream signaling (PI3K-AKT-mTOR pathway in Th17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe GSEA results showing both common (interferon responses) and cell-type-specific (activation pathway downregulation) effects. The analysis is appropriate for the data type, and the findings are supported by Figure 1F-G and supplement 2A-B. The inference of immune dysfunction in activated T cells (C54) is reasonable given the paradoxical upregulation of interferon responses alongside downregulation of downstream effector pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Chromatin accessibility analysis revealed cell-type-specific epigenetic patterns in HIV-1 RNA+ cells, with naive cells showing closed DARs linked to TNF-alpha/NF-\u03baB signaling and open DARs related to HIV-1 Nef protein, while memory cells showed patterns related to Tat-mediated elongation and reduced accessibility at HIV-1 restriction factor genes (NR4A2, TRIM62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C69 describe integrated transcriptomic and epigenomic analysis using multiome technology. The identification of cell-type-specific chromatin accessibility patterns is supported by Figure 2B-E. The observation of increased accessibility at genes encoding Tat-interacting proteins (PSMB7, CDK9) and decreased accessibility at restriction factor genes provides mechanistic insights. The cited literature (C64-C65, C68-C69) supports the functional roles of these genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Integration of gene expression and chromatin accessibility identified 15 TFs with increased and 24 with decreased regulon activity in HIV-1 RNA+ cells, with KLF2 showing paradoxically elevated activity across all infected CD4+ T cell subtypes despite typically being suppressed in activated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C83 describe gene regulatory network analysis using SCENIC, identifying specific numbers of differentially active TFs. The finding that KLF2 is upregulated in HIV-1 infected cells across all subtypes (C78) is notable and well-supported by Figure 3A-C. The observation contradicts expected patterns (C76-C77) based on cited literature, making it a significant finding. Target gene analysis (C81-C82) links these TFs to antiviral pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Chromatin accessibility data confirmed increased activity of KLF2, JUND, and FOSL2::JUNB in HIV-1 RNA+ cells through enriched binding motifs in open DARs, enhanced TF activity scores, footprinting analysis, and increased accessibility at the KLF2 promoter and cis-regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 provide multi-layered validation of TF activity using complementary approaches: motif enrichment (C85), chromVAR activity scores (C86), footprinting (C87), and direct examination of promoter/enhancer accessibility (C88-C90). This convergent evidence from multiple analytical methods strongly supports the conclusion. Figure 3F-I provides visual confirmation of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Analysis of 88 curated KLF2 target genes revealed 44 upregulated in HIV-1 RNA+ cells, enriched for anti-apoptotic functions, with key targets including PIM1 and IL32 (HIV-1 replication regulators), TXNIP (proliferation inhibitor), and LTB (JAK/STAT pathway), all showing increased chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 describe systematic analysis of KLF2 target genes with validation in an independent dataset (C94). The functional enrichment for anti-apoptotic processes (C95) and identification of specific targets with known roles in HIV-1 biology (C96-C99, supported by citations) provides mechanistic insight. The chromatin accessibility data (C100, Figure 4C) provides orthogonal validation of gene expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Cell-cell interaction analysis revealed altered immune signaling in HIV-1 infected CD4+ T cells, including strong LTB-LTBR interactions in naive cells, elevated NRP2 interactions in effector cells, increased MIF/ICAM2 signaling with NK cells, but reduced CCL5/CLEC2B signaling, suggesting a balance between immune activation and evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C113 describe ligand-receptor interaction analysis using CellPhoneDB and CellChat. The findings are supported by Figure 4D and supplement 2A-B. The observation of both increased (C109-C110) and decreased (C111-C112) signaling pathways is biologically plausible. However, the interpretation of \"balance between activation and evasion\" (C113) is speculative, though reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Protein interaction analysis identified 16 KLF2 target genes encoding proteins that directly interact with HIV-1, including SOCS3 (interacts with Tat) and PIM1 (Tat transactivator, interacts with JUNB), both showing high expression and chromatin accessibility in HIV-1 RNA+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 describe protein-protein interaction analysis using STRING database to connect KLF2 targets to HIV-1 proteins. The identification of SOCS3 and PIM1 as key nodes is supported by citations (C115-C117) and the study's own expression/accessibility data (C119, Figure 4C). This provides a direct mechanistic link between KLF2 activity and HIV-1 biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "HIV-1 DNA+ cells (identified by scATAC-seq reads aligning to HIV-1 LTRs) clustered distinctly and were predominantly Th17 cells, showing enriched binding motifs for Th17 differentiation factors (RORC, STAT3, RORA) and increased expression of CCR6, IL4I1, NFKB1, and CCR5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C132 describe a novel approach to identify cells with integrated HIV-1 provirus using scATAC-seq. The methodology (\u22652 reads aligning to HIV-1 genome) is clearly defined (C120). The predominance of Th17 cells among HIV-1 DNA+ cells (C129) is a significant finding supported by motif enrichment (C126, Figure 5E-F) and gene expression (C132, Figure 5G). The small number of HIV-1 DNA+ cells (39 from 5,574 total) is a limitation but expected given the rarity of these cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "During acute HIV-1 infection, Th2 and Th17 cells showed heightened interferon-alpha responses despite diminished downstream signaling, while naive CD4+ T cells showed higher infection proportions potentially due to dysfunctional antiviral signaling, and memory cells showed enriched Tat-mediated elongation with downregulated interferon-gamma signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C142 synthesize multiple findings into a coherent model of cell-type-specific HIV-1 responses. The observations are supported by the study's GSEA (C137, C141) and cell proportion data (C138). The interpretation that HIV-1 disrupts interferon signaling (C140) is supported by citation and represents a reasonable inference from the paradoxical pattern of upregulated interferon responses with downregulated downstream pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "KLF2, known for promoting cellular quiescence and regulating T cell migration, showed sustained expression across all HIV-1-infected CD4+ T cell subtypes including activated cells, with upregulated target genes including HIV-1 replication regulators and TXNIP (proliferation inhibitor), suggesting HIV-1 persistence without triggering proliferation or transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 synthesize the KLF2 findings into a mechanistic model. The sustained KLF2 expression in activated cells (C144) contradicts normal biology (C143, supported by citation), making it significant. The validation in an independent dataset (C146) strengthens confidence. The interpretation about HIV-1 persistence mechanisms (C145) is a reasonable inference from the target gene functions, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "HIV-1 DNA+ cells, predominantly Th17 cells with enriched RORC/STAT3/RORA motifs, exhibited heightened susceptibility to HIV-1 integration with increased expression of HIV-1 co-receptors CCR6 and CCR5, along with IL4I1 (linked to immunosuppression) and NFKB1 (involved in viral transcription), suggesting Th17 cells serve as viral reservoirs due to their quiescent, stem cell-like characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C157 present a comprehensive characterization of HIV-1 DNA+ cells and propose Th17 cells as reservoirs. The findings are well-supported by multiple lines of evidence: motif enrichment (C150), co-receptor expression (C152-C153), and functional gene expression (C154-C156). The inference about reservoir potential (C157) is reasonable given the data, though it remains a hypothesis requiring functional validation. The cited literature supports the roles of CCR5 (C153), IL4I1 (C155), and NFKB1 (C156).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "The study did not observe differential expression of FOXP1 or GATA3, transcriptional regulators of HIV-1 RNA expression identified in other studies, potentially reflecting differences in infection models, stages, or cellular contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 acknowledge a discrepancy between the current findings and a recent publication (C147). The negative result (C148) is supported by referenced Figure 4\u2014figure supplement 1B. The proposed explanations (C149) are speculative but reasonable. This transparent reporting of discordant findings strengthens the overall credibility of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Study limitations include inability to distinguish HIV-1 RNA from DNA within single cells, focus on early infection stages (<6 months) limiting insights into longitudinal changes, and findings requiring validation across different infection phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 transparently acknowledge important limitations. The inability to distinguish RNA from DNA in single cells (C158) is a technical constraint of the targeted sequencing approach. The temporal limitation (C159-C160) is inherent to the study design focusing on early infection. These are appropriate caveats that help interpret the findings correctly.",
+    "result_type": "MINOR"
+  }
+]

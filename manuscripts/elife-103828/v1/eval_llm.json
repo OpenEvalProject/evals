@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors characterize sakura (CG14545), a previously uncharacterized gene encoding a 114 amino acid protein without known functional domains. Sakura is specifically expressed in ovarian germline cells including GSCs, localizes to the cytoplasm, and is enriched in developing oocytes. A CRISPR-generated null allele produces viable flies, demonstrating sakura is not essential for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization is well-supported by multiple complementary approaches: Western blots confirm tissue-specific expression (C38, C43), confocal imaging with Sakura-EGFP demonstrates germline-specific localization (C45-C47), and the null allele is properly validated by sequencing and Western blot (C39-C43). The rescue experiments with Sakura-EGFP further validate the specificity of the findings (C44, C50-C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Loss of sakura causes complete female sterility with no egg production, while males remain fertile. The phenotype is fully rescued by a sakura-EGFP transgene, confirming the specificity of the mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fertility phenotype is clearly demonstrated with appropriate controls (C48-C49) and the rescue experiment provides strong evidence for specificity (C50-C51). The sex-specific phenotype is consistent with the ovary-specific expression pattern. Sample sizes appear adequate based on the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "sakura null mutants display rudimentary ovaries with both germless (~65%) and tumorous (~35%) phenotypes in 2-5 day old flies. The tumorous ovarioles contain excess GSC-like cells (mean 26.5\u00b117.5 vs 2.2\u00b10.6 in controls) and show elevated apoptosis. Over time, tumorous ovarioles undergo apoptosis and become germless.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phenotypic characterization is thorough with appropriate quantification (C54-C57), temporal analysis (C58-C59), and mechanistic insight via cleaved Caspase-3 staining (C60). The age-dependent transition from tumorous to germless phenotypes is well-documented. Statistical significance is reported (p<0.05) and the large standard deviation in GSC-like cell counts (C57) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mosaic analysis demonstrates that sakura is intrinsically required in germline cells for GSC establishment, maintenance, and differentiation. sakura null GSC clones show reduced establishment (1.9% vs 12.3% marked GSCs), accelerated loss (75.6% vs 39.4% loss rate over 10 days), and increased accumulation of GSC-like cells over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mosaic analysis using the FLP-FRT system is properly executed with appropriate controls and time points (C70-C72). The statistical analysis includes chi-square test with significant p-value (4.8\u00d710\u207b\u00b9\u00b9) for establishment. The distinction between marked and unmarked cells in the same germarium strengthens the conclusion of cell-autonomous function. The experimental design appropriately addresses intrinsic vs extrinsic requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Loss of sakura impairs Dpp/BMP signaling in GSCs, as evidenced by significantly reduced pMad levels in sakura null GSC clones. This leads to aberrant Bam expression throughout the germarium including in GSCs, and elevated CycA levels, resulting in faulty GSC differentiation and loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic link between sakura loss and Dpp/BMP signaling is well-established through multiple lines of evidence: reduced pMad immunostaining with quantification (C75), ectopic Bam-GFP expression in both RNAi and clonal analysis (C73-C74), and elevated CycA levels (C76). The causal chain from reduced pMad to Bam derepression to differentiation defects is consistent with established Drosophila oogenesis biology (C106-C114). However, the mechanism by which sakura regulates Dpp/BMP signaling remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Double knockdown of sakura and bam partially suppresses the germless phenotype, increasing the proportion of tumorous ovarioles compared to sakura RNAi alone, suggesting the germless phenotype is partially attributable to ectopic bam expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic interaction experiment is appropriately designed with proper controls (sakura + w RNAi). The result supports the model that ectopic Bam expression contributes to the germless phenotype. However, the incomplete rescue indicates additional mechanisms beyond Bam misregulation contribute to the sakura phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Loss of sakura results in reduced piRNA levels and upregulated transposon expression in ovaries. Burdock piRNA levels are significantly reduced, and the Burdock sensor shows elevated GFP and \u03b2-gal expression in sakura knockdown germlines, indicating loss of piRNA-mediated transposon silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The piRNA phenotype is well-documented through multiple approaches: small RNA-seq showing global piRNA reduction (C62), RNA-seq showing transposon upregulation (C63), specific analysis of Burdock piRNAs (C64), and functional validation with the Burdock sensor (C65). The use of three biological replicates and appropriate controls (heterozygotes and rescue) strengthens the findings. The connection to the germless phenotype via DNA damage and apoptosis is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C66",
+      "C67"
+    ],
+    "result": "sakura is necessary for female-specific splicing of sex-lethal (sxl). sakura null ovaries exhibit the male-specific sxl mRNA isoform and reduced levels of the female-specific isoform, indicating disrupted sex-specific alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RT-PCR data clearly shows aberrant sxl splicing in sakura null ovaries with appropriate controls (C66). The result is consistent with the tumorous phenotype observed in other mutants with sxl splicing defects (C53). However, the mechanism by which sakura regulates sxl splicing is not addressed, and it remains unclear whether this is a direct or indirect effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "sakura is important for oogenesis beyond the germline cyst stage. TOsk-Gal4-driven sakura RNAi knockdown, which spares GSCs and early cysts, severely reduces egg production and the number of stage 14 oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of TOsk-Gal4 to bypass early germline defects is a clever experimental design that reveals additional roles for sakura in later oogenesis (C68-C69). The phenotype is clearly documented with appropriate quantification and controls. The observation of Orb mislocalization and cytoskeletal defects provides mechanistic insight, though the connection to piRNA defects is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Otu is identified as a protein binding partner of Sakura through mass spectrometry and validated by multiple co-immunoprecipitation approaches. Both the 104 kDa and 98 kDa isoforms of Otu interact with Sakura, and the Tudor domain is not required for this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein-protein interaction is rigorously demonstrated through multiple complementary approaches: mass spectrometry with three biological replicates (C78), co-IP of endogenous proteins from ovaries (C79-C80), co-IP of ectopically expressed proteins in S2 cells (C81), and analysis of both Otu isoforms (C82-C83). The use of appropriate negative controls and reciprocal IPs strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The N-terminal region of Sakura (1-49aa) and the N-terminal region of Otu (1-339aa) are sufficient for their interaction. AlphaFold predictions suggest these regions form the interaction interface, which is validated by co-IP experiments with truncated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain mapping is systematic and well-executed, combining computational prediction (C84) with experimental validation using multiple truncation constructs (C85-C88). The reciprocal co-IP confirms the minimal interacting regions. The agreement between AlphaFold predictions and experimental results strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Loss of otu phenocopies loss of sakura in ovaries. Germline otu RNAi produces rudimentary ovaries with germless and tumorous phenotypes, aberrant Bam expression, reduced pMad levels, elevated apoptosis, and loss of piRNA-mediated transposon silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phenocopy is comprehensively demonstrated across multiple phenotypic readouts (C91-C98). The similarity extends to molecular phenotypes (Bam expression, pMad levels, piRNA silencing), not just morphological defects. The use of multiple RNAi drivers (nos-Gal4-VP16, TOsk-Gal4, NGT-Gal4) and the otu14 mutant allele strengthens the conclusions. The phenocopy strongly supports functional interaction between Sakura and Otu.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Sakura and Otu function together in GSC renewal, differentiation, and oogenesis. They do not require each other for protein expression or stability, but Sakura is crucial for posterior enrichment of Otu in egg chambers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional relationship is supported by physical interaction (C18, C78-C83), phenocopy (C19, C91-C98), and genetic interaction (double knockdown enhances germless phenotype). The Western blot analysis clearly shows that protein levels are independent (C99-C101), ruling out a simple regulatory relationship. The localization phenotype (C103) suggests Sakura regulates Otu function through subcellular localization rather than protein stability. However, the precise molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Sakura does not affect Otu's deubiquitinase activity in vitro using Ub-Rhodamine 110 as substrate. Sakura itself does not exhibit deubiquitinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro deubiquitination assay is properly controlled with luciferase as a negative control. However, the authors appropriately acknowledge that this assay may not detect substrate-specific effects or effects that require additional cellular factors. The negative result is informative but does not rule out that Sakura modulates Otu activity in vivo through other mechanisms such as substrate specificity or localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The manuscript provides background on Drosophila ovary structure and GSC biology, describing the organization of ovaries into ovarioles, the germarium structure, GSC asymmetric division, and cyst development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in Drosophila biology, appropriately cited, and accurately described. They provide necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The manuscript provides background on BMP signaling, Bam function, and Otu's known roles in Drosophila oogenesis, establishing the molecular framework for understanding sakura's function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in Drosophila biology, appropriately cited from the literature. They provide the necessary mechanistic framework for interpreting the experimental findings and placing sakura in the context of known regulatory pathways.",
+    "result_type": "MINOR"
+  }
+]

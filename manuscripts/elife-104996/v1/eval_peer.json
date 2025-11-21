@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C45"
+    ],
+    "result": "The VARX model reveals that accounting for external stimulus inputs (film cuts, sound envelope, fixation onset, etc.) removes spurious recurrent connections. The number and effect size of significant recurrent connections drop when adding inputs to the model, with effect size monotonically decreasing as features are added. This demonstrates that failing to account for extrinsic inputs leads to spurious connections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding, stating that 'accounting for the driving movie stimulus can protect one against misidentifying brain responses to the stimulus as functional connectivity.' The editor's summary notes this as a key conclusion with 'convincing evidence,' and reviewers raised no concerns about these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C46",
+      "C50",
+      "C87"
+    ],
+    "result": "Intrinsic recurrent connectivity is reduced during movie watching compared to rest. Both the number of significant recurrent connections and their effect sizes are significantly reduced during movie watching, representing a small but significant decrease in recurrent connectivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers describe this as a 'very interesting' finding and note that 'the conclusion that intrinsic connectivity is reduced (rather than increased) during sensory stimulation is very interesting.' One reviewer suggested linking this to previous work (Nauhaus et al., 2009), which the authors addressed. No concerns were raised about the validity of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C44",
+      "C52",
+      "C63"
+    ],
+    "result": "The total response (H) to external inputs (fixation onset, scene cuts, sounds) is significantly stronger and longer than the direct feed-forward effect (B), indicating that intrinsic dynamics enhance and prolong neural responses. The duration and magnitude of responses to extrinsic input are largely a result of the intrinsic dynamic of the recurrent brain network.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this finding, stating that 'recurrent brain activity enhances and prolongs the putative neural responses to a stimulus.' The editor's summary notes 'convincing evidence for its conclusions,' and no concerns were raised about these claims regarding the enhancement and prolongation of responses by intrinsic dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C47",
+      "C51",
+      "C88"
+    ],
+    "result": "Intrinsic noise/variability is reduced during movie watching compared to rest. For BHA, there is a drop in relative power for channels that responded to external stimuli, with relative power dropping for nearly all patients in responsive channels. This reduction in intrinsic variance may result from neuronal gain adaptation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note that the study shows 'intrinsic noise is reduced in the task' as one of the key findings. The editor's summary confirms this is part of the work with 'convincing evidence.' No concerns were raised about these claims regarding noise reduction during stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C48"
+    ],
+    "result": "Cortical areas showing more outgoing connections have higher T1w/T2w ratio (located lower on the cortical hierarchy), while higher-order brain areas have mostly incoming connections. This demonstrates directed connectivity from sensory to higher-order brain areas.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers note that the study shows 'intrinsic directed connectivity from sensory to higher-order brain areas,' the manuscript itself acknowledges a significant caveat (C85): the correlation is not significant when normalizing for the number of electrodes in each region, and regions in the temporal lobe with many electrodes might drive this correlation. This limitation undermines confidence in the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C91",
+      "C92"
+    ],
+    "result": "The VARX model was validated on simulated whole-brain data, achieving a Spearman correlation of 0.69-0.70 with true DTI structural connectivity, which is considered relatively large compared to other methods. The sparse-inverse covariance method achieved only 0.52 correlation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly note as a strength that 'the authors validated their method on data simulated with a neural mass model.' The validation analysis is presented without criticism, and the comparison to other methods supports the VARX approach's superiority.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C62"
+    ],
+    "result": "BHA shows more sparse recurrent connectivity compared to LFP, but for both signal types, modeling the intrinsic dynamic removed spurious recurrent connections and showed that stimulus responses can be largely attributed to recurrent connections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note the use of 'intracranial EEG, which provides a direct measure of neuronal activity' as a strength. The parallel findings across both LFP and BHA are presented without criticism, strengthening the generalizability of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The stimulus features used capture substantial variance across the brain, but the video stimuli had rich semantic information not captured by the low-level features. Adding semantic features could have further reduced shared variance and recurrent connectivity in the model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor's summary notes a key limitation: 'for ideal performance, one must specify all sensory features in the model, which is not possible.' This directly addresses the incompleteness of the feature set. While reviewers found the work important overall, this limitation qualifies the strength of conclusions about connectivity reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The VARX model is well-established in linear systems and econometrics, extends the VAR model used for Granger-causality, and has practical advantages over Dynamic Causal Modeling (DCM) including computational efficiency and the ability to analyze many channels. However, DCM includes multiplicative interactions not present in VARX.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers describe the VARX framework as 'interesting' and 'original,' noting it 'tackles an important issue with an appropriate method.' The comparison to existing methods like DCM is presented without criticism, and reviewers affirm the model's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C72"
+    ],
+    "result": "Most computational models of brain activity in response to external stimuli do not account for recurrent architecture. Encoding models rely on simple input/output relationships, functional connectivity is measured as instantaneous correlations that don't capture time delays, and stimulus-induced correlations are often ignored in neuroscience studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept this characterization of the field by affirming that the paper 'tackles an important issue' and presents an 'interesting new framework.' The motivation for the VARX approach is not questioned, suggesting reviewers agree with this assessment of existing methods' limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C89",
+      "C90",
+      "C96",
+      "C97",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study analyzed intracranial EEG from 26 recording sessions with 5093 channels total, using various video clips and resting state recordings. Analysis was performed on both LFP and BHA signals with specific model parameters (600ms filters, 100ms delays, L2 regularization \u03bb=0.3).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note as strengths that 'they use intracranial EEG, which provides a direct measure of neuronal activity' and that 'code is made publicly available.' The methodological details are not criticized, and the dataset is considered adequate for the analyses performed.",
+    "result_type": "MINOR"
+  }
+]

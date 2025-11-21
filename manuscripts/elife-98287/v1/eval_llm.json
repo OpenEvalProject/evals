@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes foundational knowledge about RAG function in adaptive immunity and ILC2 function in type 2 immune responses. RAG1 and RAG2 mediate V(D)J recombination for T and B cell receptor assembly, and in their absence, mature T and B cells do not develop. ILC2s contribute to type 2 immune responses by producing IL-5 and IL-13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent well-established scientific knowledge about RAG function and ILC2 biology, supported by extensive prior literature. These claims provide necessary background context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "RAG-deficient mice exhibit increased ILC2 expansion and activation at steady state and during AD-like disease. In MC903-induced AD-like disease, Rag1-/- mice developed increased ear thickness and had increased absolute numbers and proportions of ILC2s producing IL-5 and IL-13 in skin-draining lymph nodes compared to WT controls. Similar phenotypes were observed at steady state and in Rag2-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C21-C27 are well-supported by experimental data shown in Figure 1 and Figure 1 supplements. The data demonstrate consistent increases in ILC2 numbers and cytokine production across multiple RAG-deficient models (Rag1-/- and Rag2-/-) and conditions (steady state and AD-like disease), with appropriate statistical analyses showing significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "RAG modulates ILC2 function in a cell-intrinsic manner independent of adaptive lymphocytes. Splenocyte chimera experiments showed that reconstitution of Rag1-/- mice with WT splenocytes did not rescue the hyperactive ILC2 phenotype. Mixed bone marrow chimera experiments demonstrated that Rag1-/- donor-derived ILC2s preferentially expanded and produced more IL-5 and IL-13 compared to WT donor-derived ILC2s in the same host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C28-C37 are supported by well-designed chimera experiments shown in Figure 2. The splenocyte chimera demonstrates that the presence of adaptive lymphocytes is insufficient to normalize ILC2 function, while the mixed bone marrow chimera provides strong evidence for cell-intrinsic effects by comparing WT and Rag1-/- cells in the same host environment. However, the splenocyte chimera had incomplete B cell reconstitution (C29), which could be a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "RAG fate mapping reveals heterogeneous expression history in lymphoid populations. Nearly all CD4+ T cells, CD8+ T cells, and B cells expressed tdRFP in RAG fate mapping reporter mice, while approximately 60% of NK cells and 50% of ILC2s in skin-draining lymph nodes were tdRFP+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by experimental data shown in Figure 3 using Rag1Cre::Rosa26LSL-tdRFP reporter mice. The findings are consistent with prior literature for T cells, B cells, and NK cells, and establish that approximately half of ILC2s have a history of RAG expression, providing the foundation for subsequent multiomic analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Multiomic single-cell analysis identifies a comprehensive ILC2 gene signature. Combining gene expression (GEX), gene activity (GA), and differentially accessible chromatin (DA) assays identified 235 unique ILC2 marker genes, including canonical markers (Icos, Il2ra, Il18r1, Gata3, Rora) and genes difficult to detect by RNA-seq alone (Il5, Bmp7, Ccl1, Ccr8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by the multiomic analysis shown in Figure 4. The integration of snRNA-seq and snATAC-seq data successfully identified known ILC2 markers and revealed additional markers that would be missed by single-assay approaches. The methodology is sound and the findings are validated by extensive citations to prior literature confirming the biological relevance of identified genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RAGexp ILC2s display suppressed activation and differentiation gene programs compared to RAGna\u00efve ILC2s. Gene set enrichment analysis showed suppression of lymphocyte activation and differentiation pathways in RAGexp cells. Gene-to-peak link (GPL) analysis revealed that RAGna\u00efve ILC2s had enhanced epigenomic activity at genes promoting ILC2 development and activation (Tox, Rora, Maf, Gata3, Il18r1, Il1rl1, Icos), while RAGexp ILC2s showed increased activity at genes associated with suppressive functions (Ndfip1, Dusp1, Asxl1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 are supported by GSEA and GPL analyses shown in Figures 5 and supplements. The computational approaches are appropriate and the biological interpretation is supported by extensive citations to prior literature establishing the functional roles of identified genes. The GPL analysis provides a novel quantitative framework for comparing epigenomic regulation between RAGexp and RAGna\u00efve cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Transcription factor analysis reveals distinct regulatory programs in RAGexp versus RAGna\u00efve ILC2s. ChromVAR analysis identified cell-type-specific TF motifs, with Rora specifically expressed in ILC2s despite similar motif accessibility for ROR\u03b1 and ROR\u03b3. Kr\u00fcppel-like factors showed differential expression: Klf2, Klf6, and Klf12 (associated with quiescence) were higher in RAGexp cells, while Klf7 (associated with enhanced survival) was higher in RAGna\u00efve cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C74 are supported by chromVAR and gene expression analyses shown in Figure 5 supplements. The integration of TF motif accessibility with gene expression data effectively addresses limitations of motif analysis alone. The findings are consistent with known TF functions and provide mechanistic insights into how RAG expression history shapes ILC2 regulatory programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "RAG expression history has a larger impact on ILC2 epigenomic signatures than disease state. Intersection analysis of gene-to-peak links split by RAG fate map and disease state showed that the largest peak sets were shared by all RAGna\u00efve cells regardless of disease, while disease-specific peaks were relatively few. For genes like Rora and Ccr6, RAGexp cells showed increased chromatin accessibility during AD-like disease that partially compensated for baseline suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by intersection analyses shown in Figure 6. The UpSet plots clearly demonstrate that RAG expression history is the dominant factor shaping ILC2 epigenomes, with disease playing a secondary modulatory role. The chromatin accessibility tracks for Rora and Ccr6 provide specific examples of how inflammation can partially overcome RAG-mediated suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RAG suppresses the Th2 locus through epigenomic mechanisms involving GATA3. GPL analysis of the Th2 locus (Il4, Il13, Rad50, Il5) showed fewer gene-to-peak links in RAGexp cells, particularly for Il5 and Il13. TF motif enrichment analysis identified GATA motifs only in RAGna\u00efve-specific peaks, with Gata3 being the only corresponding TF expressed at appreciable levels and showing higher expression in RAGna\u00efve cells. During AD-like disease, RAGexp cells showed increased chromatin accessibility at the Il13 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 are supported by detailed GPL and TF motif analyses of the Th2 locus shown in Figure 7. The findings confirm prior work on Th2 locus regulation while revealing a novel role for RAG in suppressing this critical type 2 cytokine locus. The identification of GATA3 as the key TF mediating differences between RAGexp and RAGna\u00efve cells is well-supported by both motif enrichment and gene expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "RAG suppresses developmental and effector functions of ILC2s through durable epigenomic imprinting. The study demonstrates that RAG expression, though transient during development, imprints lasting effects on ILC2 gene programs that restrain their expansion and type 2 cytokine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 represent the main conclusions of the study, supported by the collective evidence from RAG-deficient mice (Figures 1-2), RAG fate mapping (Figure 3), and multiomic analyses (Figures 4-7). The integration of functional, genetic, and epigenomic approaches provides strong support for the conclusion that RAG has non-canonical functions in suppressing ILC2 activity beyond its role in V(D)J recombination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "RAG expression may mark developmentally distinct ILC2 populations with implications for ontogeny and disease responses. The authors propose that RAG expression history defines ILC2 subpopulations with different developmental origins and functional properties, with RAGexp ILC2s showing suppressed proliferative and inflammatory functions even during AD-like disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C101 represent interpretations and hypotheses based on the data but lack direct experimental validation. While the observations of heterogeneous RAG fate mapping and differential functional properties are well-supported, the specific developmental origins and timing of RAG expression in ILC2s remain unclear. The authors acknowledge this limitation and suggest that novel mouse strains with intersectional genetics would be needed to definitively test these hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "RAGexp ILC2s may adopt a phenotype closer to na\u00efve T cells, requiring stronger stimuli for activation, though RAG-associated suppression can be overcome during inflammation. The authors propose that RAG expression establishes regulatory programs that keep ILC2s in a more quiescent state similar to na\u00efve T cells, but that sufficient inflammatory stimuli can overcome this suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C107 represent mechanistic hypotheses based on the observed similarities between RAGexp ILC2s and na\u00efve T cells, supported by the multiomic data showing suppressed activation programs and the observation that inflammation can induce chromatin accessibility in RAGexp cells. However, direct functional experiments testing activation thresholds or stimulus-response relationships in RAGexp versus RAGna\u00efve ILC2s are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The findings provide potential mechanistic insights into Omenn Syndrome and suggest evolutionary implications for RAG function. The authors propose that loss of RAG-mediated suppression of type 2 programs may contribute to the exaggerated type 2 immune activation observed in Omenn Syndrome, and that RAG acquisition may represent an evolutionary mechanism for fine-tuning both innate and adaptive immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C117 represent speculative connections between the current findings and clinical/evolutionary contexts. While the link between RAG dysfunction and type 2 immune activation in Omenn Syndrome is well-established clinically (C108-C112), the specific contribution of ILC2 dysregulation proposed here (C113-C114) is hypothetical and not directly tested. The evolutionary hypothesis (C115) is interesting but purely speculative. These claims appropriately acknowledge their speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The study has limitations in tissue and disease specificity but suggests broader implications for ILC2 function. The authors acknowledge that their focus on cutaneous inflammation and skin-draining lymph nodes may not capture the full diversity of ILC2 functions across tissues, but propose that RAG may modulate ILC2 functions more broadly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 represent appropriate acknowledgment of study limitations and reasonable speculation about broader implications. The authors correctly note that ILC2s have tissue-specific functions beyond type 2 inflammation (C120-C121, supported by citations) and that their findings may extend to other tissues and ILC populations (C122-C123), while acknowledging these remain to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The findings may provide mechanistic insights into prior observations of ILC3 hyperactivation in RAG-deficient mice. The authors note that their data on JAK2/STAT3 pathway regulation in ILC2s may offer cell-intrinsic mechanisms complementary to the previously described cell-extrinsic regulatory T cell-mediated control of ILC3s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C129 attempt to connect the current findings to prior work on ILC3s. While the GPL analysis showing differential Jak2 and Dusp1 activity between RAGna\u00efve and RAGexp ILC2s is supported (C126-C127), the extrapolation to ILC3 biology is speculative. The connection through DUSP1 regulation of JAK2/STAT3 (C128) is supported by a single citation and may not be directly applicable to the ILC3 context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The mechanisms by which RAG imprints durable epigenomic changes remain undefined, though several possibilities exist. The authors acknowledge this limitation and discuss potential mechanisms including direct chromatin binding, cryptic recombination, and E3 ubiquitin ligase activity, but note that conventional approaches may not be feasible for studying RAG in rare ILC2 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 appropriately acknowledge a major limitation of the study\u2014the lack of mechanistic understanding of how RAG expression leads to lasting epigenomic changes. The discussion of potential mechanisms (C132-C136) is well-grounded in prior literature about RAG biochemistry, and the authors correctly note the technical challenges of studying these mechanisms in rare cell populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The study expands understanding of RAG functions beyond antigen receptor rearrangement and provides insights into atopic syndromes in immunodeficiency. The authors conclude that their work demonstrates novel roles for RAG in innate immunity and offers mechanistic explanations for clinical observations in Omenn Syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 represent appropriate summary statements of the study's contributions. The work does expand prior findings on non-canonical RAG functions from NK cells to ILC2s (C137), and provides plausible mechanistic connections to clinical phenotypes in Omenn Syndrome (C138), though the clinical relevance remains to be directly tested.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C47"
+    ],
+    "result": "DIPx is a random forest-based algorithm using pathway activation scores (PAS) from molecular data (gene expression, mutations, gene-interaction networks) that achieved Spearman correlations of 0.50 in Test Set 1 (known combinations) and 0.26 in Test Set 2 (novel combinations), outperforming the DREAM Challenge winner TAIJI (0.38 and 0.18, respectively).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the approach as 'innovative' and note DIPx 'uses target and driver genes to elucidate pathway activation scores' with performance 'tested using the AstraZeneca-Sanger (AZS) DREAM Challenge dataset.' One reviewer acknowledges the model 'makes comparisons to the winning method' without challenging the reported correlations. The evidence is described as 'solid.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C99",
+      "C100"
+    ],
+    "result": "DIPx shows limited performance on novel drug combinations not in the training set (Test Set 2: correlation 0.26), with particularly poor performance (correlation ~0.1) when both drugs in a combination are absent from training, representing a major limitation for discovering new therapeutic strategies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly states 'The model struggles with predicting synergies for drug combinations not included in its training data (showing only Spearman correlation 0.26 in Test Set 2). This limits its potential for discovering new therapeutic strategies.' Another reviewer notes 'performance on some datasets seems unconvincing' and requests 'further validation.' The authors acknowledge this limitation, but reviewers indicate it undermines the model's clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DIPx achieved significantly higher and more stable Spearman correlations than TAIJI-M across bootstrap replicates in Test Set 1, with DIPx showing negative bias and TAIJI-M showing positive bias. Cross-validation (median 0.48) was comparable to Test Set 1 performance (0.50), indicating no overfitting, and DIPx outperformed TAIJI-M in 63% of cell lines.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly disagrees with the overfitting interpretation: 'I do not fully agree with them about the definition of overfitting still. If the objective is to identify synergies given any 2 drugs, not just those in a dataset at different doses, then the results certainly appear overfit to the training set given the performance degradation.' This directly challenges claims C53-C54 about lack of overfitting, though the reviewer acknowledges they 'cannot add any useful suggestions to improve performance.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C67",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "External validation on the O'Neil dataset showed DIPx performance improved with increasing monotherapy-sensitive drugs, with better results for colon and lung cancer cell lines. However, both DIPx and TAIJI-M performed poorly (correlations 0.09 and 0.05) when both drugs were in the training set, possibly due to limited sample size (42/583 combinations).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor notes 'performance on some datasets seems unconvincing and further validation would be required to demonstrate the generalizability of the model and, in turn, its clinical relevance.' Reviewer 1 emphasizes the pan-cancer limitation: 'The use of pan-cancer datasets, while offering broad applicability, may not be optimal for specific cancer subtypes with distinct biological mechanisms.' The poor performance in certain O'Neil subsets raises questions about generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DIPx uses only molecular data while TAIJI was originally trained with both monotherapy drug response and molecular data. When comparing TAIJI-M (molecular-only version) to DIPx, an interesting divergence emerged: DIPx performance improved with more monotherapy-sensitive drugs while TAIJI-M performance decreased in Test Set 2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 1 raises a critical methodological concern: 'TAJI was designed to use both monotherapy drug-response and molecular data, and likely won't be able to reach maximum potential if removing monotherapy drug-response from the training model. It would be critical to use the same training datasets and then compare the performances.' This directly challenges the fairness of the comparison and questions whether the reported superiority of DIPx is valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Higher drug synergy is associated with higher functional interaction between drug targets (highest z-score group showed median Loewe score 10.34), and this functional interaction information is captured by PAS. Target gene overlap alone did not predict synergy (p>0.72), but PAS could predict functional interaction z-scores (correlation 0.46), explaining why adding functional interaction as a separate feature did not improve the model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these mechanistic findings. One reviewer notes the study 'incorporates drug-specific pathway activation scores (PASs) to estimate synergy scores as one of the key advancements' and acknowledges DIPx's 'ability to be interpretable in terms of pathway and target interactions for synergistic effects.' The functional interaction analysis is accepted as supporting evidence for the PAS approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C43",
+      "C44",
+      "C45",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "DIPx provides biological interpretability by identifying activated pathways mediating drug synergy, illustrated by examples including ERBB2 signaling in Capivasertib+Sapitinib (validated by prior clinical studies in HER2+ breast cancer) and RAS signaling in Selumetinib+MK-2206 (validated by clinical trials targeting RAS pathway components).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the interpretability as a strength. One states 'DIPx uses target and driver genes to elucidate pathway activation scores (PASs) to predict drug synergy' and notes it could be 'of use for personalized drug synergy prediction and exploring the activated pathways related to the effects of drug combinations.' The biological examples are not challenged and align with cited clinical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "DIPx has three acknowledged limitations: (1) cell line training data may not capture tumor heterogeneity, (2) PAS computation uses only primary target genes, potentially missing non-primary target information, and (3) pan-cancer development may not be optimal for tissue-specific predictions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states these limitations are 'included in the Discussion section which are great,' affirming the authors' acknowledgment. Another reviewer emphasizes: 'Training and validating the model using cell lines may not fully capture the heterogeneity and complexity of in vivo tumors. To increase clinical relevance, it would be beneficial to validate the model using primary tumor samples or patient-derived xenografts.' The tissue-specificity concern is also raised independently.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Both DIPx and TAIJI-M showed improved performance as the number of drugs present in the training set increased in Test Set 2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is not challenged by reviewers and is consistent with expected behavior for machine learning models. It supports the interpretation that model performance depends on training data coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C85",
+      "C86"
+    ],
+    "result": "Mechanistic analysis suggests synergy occurs when drugs target different parts of a driving pathway (illustrated by BCL2L1+AZD5582 targeting BCL-xL and XIAP), while drugs targeting the same gene (Doxorubicin+AZ12623380 both targeting TOP2) show only additive effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these mechanistic interpretations. The biological reasoning is consistent with established principles and supported by the pathway analysis examples. One reviewer notes the model's ability to provide 'interpretable' results 'in terms of pathway and target interactions.'",
+    "result_type": "MINOR"
+  }
+]

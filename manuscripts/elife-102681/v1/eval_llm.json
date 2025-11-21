@@ -1,0 +1,562 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "lnc-FANCI-2 expression is upregulated in cervical lesions and cancer by HPV infection, with E7 and YY1 as major regulatory factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C43-C47 establish the regulatory mechanism of lnc-FANCI-2 expression based on prior work (Liu et al., 2021). These claims provide essential background context for the current study and are well-supported by citations to previous experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "lnc-FANCI-2 is differentially expressed across cell types, with high expression in HPV16+ cervical cancer tissues and cell lines, but absent in HPV18+ lines, and shows cell-type-specific subcellular localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 are supported by RNA-ISH data (Figures 1-2), RT-qPCR, northern blot, and cell fractionation experiments. The unexpected absence in HPV18+ cells (C57) is well-documented but mechanistically unexplained, which is acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CRISPR-Cas9 knockout of lnc-FANCI-2 promoter or YY1-binding motifs in CaSki cells achieves 70-90% reduction in lnc-FANCI-2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 are supported by multiple orthogonal methods including PCR genotyping (Figure 3B), RT-qPCR (Figure 3C), northern blot (Figure 3D), and RNA-ISH with quantification (Figure 3E-F). The two knockout strategies show dose-dependent effects consistent with their targeting approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81"
+    ],
+    "result": "lnc-FANCI-2 knockout cells display altered morphology, reduced proliferation, decreased colony formation, and impaired migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 and C81 are supported by morphological imaging (Figure 3\u2014figure supplement 1) and functional assays (Figures 3G-I). The phenotypic severity correlates with knockout efficiency (\u0394Pr-A9 > \u0394YY1-D5), providing internal consistency. However, the mechanistic link between lnc-FANCI-2 loss and these phenotypes requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "lnc-FANCI-2 knockout cells show minimal changes in E6/E7 expression but increased senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by western blot (Figure 3\u2014figure supplement 2A) and \u03b2-galactosidase staining (Figure 3\u2014figure supplement 2B). The maintenance of E6/E7 expression is important for establishing that phenotypic changes are not due to altered viral oncogene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "lnc-FANCI-2 knockout alters expression of multiple soluble receptors involved in cell signaling, with increases in PODXL2, ECM1, NECTIN2, MCAM, ADAM9, ADAM10 and decreases in ADAM8, TIMP2, ITGB6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 and C90 are supported by Proteome Profiler Array data (Figure 4A-B) with selective validation by western blot (Figure 4C). The 30% fold-change cutoff is reasonable, and validation of key targets strengthens the findings. However, only 60% concordance between RNA-seq and protein array (C98) suggests post-transcriptional regulation or technical variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "RNA-seq analysis reveals 1230 differentially expressed genes in \u0394Pr-A9 cells and 797 in \u0394YY1-D5 cells, with selective validation of key targets including IGFBP3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C103 are supported by comprehensive RNA-seq analysis (~120M reads per sample) with appropriate statistical thresholds (FC\u22651.8, FDR\u22640.01). Validation by RT-PCR (Figure 5F) and western blot (Figure 5G) for selected genes strengthens confidence. The hierarchical clustering showing similarity between KO lines (C94) supports reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "GSEA analysis shows lnc-FANCI-2 knockout leads to upregulation of KRAS signaling and EMT pathways, and downregulation of interferon response pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 are supported by GSEA using Hallmark gene sets (Figures 6A-E). The analysis shows consistent pathway enrichment across both knockout lines (C111), with specific gene counts provided. The use of established Hallmark gene sets and appropriate statistical thresholds (padj values provided) supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Loss of lnc-FANCI-2 increases RAS GTPase activity and phosphorylation of Akt and Erk1/2, with effects observed in both stable knockout and transient knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C126 are supported by RAS GTPase activity assays (Figure 7A) and western blots (Figures 7B-C). The demonstration that both stable KO and transient siRNA knockdown produce similar effects (C119, C124-C125) argues against clonal selection artifacts and supports a direct role for lnc-FANCI-2. The time-course data (C125) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The effect of lnc-FANCI-2 depletion on RAS signaling is specific and independent of subcellular localization, as shown by differential effects in HeLa (no effect) versus SiHa (effect) cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by western blot data (Figure 7\u2014figure supplement 2B). The negative control in HeLa cells (which lack lnc-FANCI-2) and positive effect in SiHa cells (with nuclear lnc-FANCI-2) provide important specificity controls and suggest the mechanism is independent of cytoplasmic versus nuclear localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The increased p-Akt and p-Erk in knockout cells is sensitive to PI3K inhibitor LY294002 and MEK1/2 inhibitor U0126, confirming pathway specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 are supported by western blot and cell viability data with pharmacological inhibitors (Figures 7D-E). The pathway-specific inhibition confirms that the observed phosphorylation changes occur through canonical PI3K/Akt and MEK/Erk pathways. The similar effects of LY294002 on WT and KO cells (C134) suggest the PI3K pathway remains functionally intact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "lnc-FANCI-2 suppresses IGFBP3 expression, as demonstrated by increased IGFBP3 in knockout cells and rescue experiments showing reduced IGFBP3 upon lnc-FANCI-2 re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by RT-PCR, western blot (Figures 5F-G, 8\u2014figure supplement 1A), and rescue experiments with RNA-ISH (Figures 8A-B). The rescue experiment (C139-C140) provides strong evidence for a direct suppressive effect, though the molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "lnc-FANCI-2 knockout increases MCAM expression at both RNA and protein levels, with accumulation of a cleaved nuclear MCAM isoform (~46 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 are supported by RNA-seq (Figure 5E), RT-PCR (Figure 8C), combined RNA-ISH/IF (Figures 8D-F), and cell fractionation with western blot (Figure 8G). The quantitative analysis of single cells (C144) showing reduced nuclear MCAM in lnc-FANCI-2-expressing cells provides strong evidence. The detection of a nuclear cleaved form is novel and interesting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "The nuclear MCAM signal represents a proteolytic cleavage product likely generated by increased ADAM9/ADAM10 and decreased TIMP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C147 is an inference based on observed changes in ADAM9, ADAM10, and TIMP2 expression (Figure 4) and citation to Stalin et al., 2016. While plausible, direct evidence for this specific cleavage mechanism in this system is not provided. Protease inhibitor experiments or direct cleavage assays would be needed to confirm this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "In TCGA cervical cancer samples, lnc-FANCI-2 and MCAM expression are negatively correlated, and high lnc-FANCI-2/low MCAM levels associate with better patient survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 are supported by TCGA data analysis (Figures 8H-I, Figure 8\u2014figure supplement 2). The negative correlation (R=-0.321, p=1.02e-08) is statistically significant with n=304 samples. The survival analysis (log-rank p=5.74e-05) provides clinical relevance. However, the analysis relies on NCBI's incorrect annotation of lnc-FANCI-2 as LINC00925, which could affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "MCAM knockdown reduces Akt and Erk phosphorylation in both WT and knockout cells, suggesting MCAM functions as both an effector and potential trigger of RAS signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 are supported by western blot data (Figure 8J). The observation that MCAM knockdown reduces phosphorylation even in the absence of lnc-FANCI-2 (C150-C151) suggests MCAM has an active role in signal transduction, not just as a passive downstream target. This is consistent with literature citations (Wang et al., 2020; Joshkon et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "IGFBP3 knockdown increases Erk1/2 phosphorylation but can prevent lnc-FANCI-2 knockdown-enhanced Akt phosphorylation, suggesting differential roles on the two pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by western blot data (Figure 8K). The differential effects on Erk versus Akt phosphorylation (C155-C156) are interesting and suggest pathway-specific regulation. However, the molecular mechanism underlying these differential effects is not explored and would benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C11"
+    ],
+    "result": "IRPCRP-mass spectrometry identifies 32 lnc-FANCI-2-binding proteins, including MAP4K4, H13, HNRH1, K1H1, and RNPS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158 and C11 are supported by IRPCRP-mass spectrometry data (Figure 9C, Supplementary file 4). The use of UV crosslinking and multiple pull-down protocols (Figure 9B) with RT-PCR validation of RNA recovery strengthens confidence. The identification of MAP4K4 is particularly relevant given its known role in RAS signaling regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "MAP4K4 knockdown phenocopies lnc-FANCI-2 loss in WT cells but shows differential effects in knockout cells, suggesting coordinated regulation of RAS signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C164 and C180-C183 are supported by western blot data (Figure 9D, Figure 8\u2014figure supplement 1C). The observation that MAP4K4 knockdown in WT cells increases p-Akt and p-Erk (C162) similar to lnc-FANCI-2 loss supports a functional interaction. The differential effect in KO cells (C164, C181) - strong effect on Erk but minimal on Akt - suggests pathway-specific coordination between lnc-FANCI-2 and MAP4K4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C14",
+      "C49",
+      "C50",
+      "C51",
+      "C165",
+      "C213",
+      "C214"
+    ],
+    "result": "lnc-FANCI-2 intrinsically regulates RAS signaling through protein interactions to impact cervical lesion progression and cancer prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C49-C51, C165, C213-C214 represent the main conclusions of the study. These are well-supported by the collective evidence from knockout phenotypes, RAS activity assays, pathway analysis, protein interaction data, and clinical correlations. The model (Figure 9E) integrates multiple lines of evidence. However, the term 'intrinsically' may be overstated as the mechanism involves multiple protein partners and indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "CRISPR-Cas9 knockout of lnc-FANCI-2 results in altered cell morphology and proliferation with increased RAS signaling, EMT, and decreased IFN response, while maintaining normal E6/E7 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10 summarize the key phenotypic and molecular changes in knockout cells. These are supported by extensive experimental data including morphology (Figure 3\u2014figure supplement 1), proliferation assays (Figure 3G), RNA-seq (Figures 5-6), western blots (Figure 7), and E6/E7 expression data (Figure 3\u2014figure supplement 2A). The comprehensive characterization across multiple levels provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background on cervical cancer epidemiology, HPV biology, and the requirement for additional factors beyond E6/E7 for malignant transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C38 provide essential background context supported by appropriate citations to established literature. These claims set up the rationale for investigating additional factors (like lnc-FANCI-2) that contribute to cervical cancer development beyond viral oncoproteins. The citations appear appropriate and the statements align with current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C172",
+      "C173"
+    ],
+    "result": "The study's findings suggest that lnc-FANCI-2, induced by E7/YY1, may mediate E7's reported p-Akt attenuation, and additional oncogenic stress is needed to overcome lnc-FANCI-2's restriction on RAS signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C173 represent interpretations connecting the current findings to prior literature. While C166-C170 are supported by appropriate citations, C172 is explicitly speculative ('it would be presumable'). C173 is a reasonable inference but lacks direct experimental evidence showing that activated RAS mutants specifically overcome lnc-FANCI-2 restriction. These connections are plausible but would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Loss of lnc-FANCI-2 promotes RAS signaling but reduces IFN responses, and high RAS signaling can induce senescence; lncRNAs may regulate RAS through mechanisms beyond miRNA sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C175 are supported by the study's data (RNA-seq showing decreased IFN response, senescence assay in Figure 3\u2014figure supplement 2B) and citation to Nieto et al., 2017. Claims C176-C178 provide context from literature and speculation about mechanisms. C177 is explicitly speculative but reasonable given the protein interaction data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "lnc-FANCI-2 expression patterns vary across HPV types and cell lines, with differential subcellular localization, but both cytoplasmic and nuclear forms restrict RAS signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C192 are supported by expression data (Figures 1-2) and functional data showing RAS signaling effects in both CaSki (cytoplasmic) and SiHa (nuclear) cells. The unexpected absence in HPV18+ cells (C187) and presence in C33A cells (C188) raises interesting questions about regulation. C189 mentions unpublished luciferase data, which weakens this specific claim. C193 is a reasonable statement about future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "IGFBP3 shows unexpected suppressive effects on Erk phosphorylation in CaSki cells, contrasting with its known role as a RAS signaling enhancer; clinical data show reduced IGFBP3 in cervical cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C198 are supported by literature citations (C194, C196-C197) and experimental data (C195, Figure 8K). The observation that IGFBP3 suppresses Erk phosphorylation (C195) is described as 'surprising' and contrasts with established literature (C194), suggesting context-dependent or cell-type-specific effects. The clinical correlation (C197-C198) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "lnc-FANCI-2 knockout affects expression of genes involved in RAS signaling, EMT, and IFN responses, with MCAM identified as a major RAS signaling effector that may promote tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C212 integrate RNA-seq, protein array, and functional data with literature on ADAM proteins and MCAM biology. The identification of MCAM as a key effector (C204) is supported by expression data, functional assays (Figure 8J), and clinical correlations (C210-C211). The inference about MCAM promoting tumorigenesis (C212) is reasonable based on the clinical data but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background on lncRNA definition, functional evidence gaps, and lnc-FANCI-2 genomic structure and annotation issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 provide background on lncRNAs and lnc-FANCI-2 specifically. C39-C40 are standard definitions supported by appropriate citations. C41-C42 describe lnc-FANCI-2 structure and annotation issues based on Liu et al., 2021. The annotation issue (C42) is important for interpreting TCGA data analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "\u0394Pr-A9 cells show higher knockout efficiency, more differentially expressed genes, and more severe phenotypes than \u0394YY1-D5 cells, justifying focus on \u0394Pr-A9 for detailed studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by comparison of data across figures (knockout efficiency in Figure 3C-F, DEG counts from RNA-seq, phenotypic severity in Figures 3G-I). This dose-response relationship between knockout efficiency and phenotypic severity provides internal consistency and justifies the experimental focus on \u0394Pr-A9 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "RAS activation triggers two major downstream pathways: Raf/Mek/Erk and PI3K/Akt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is well-established knowledge in cell signaling, supported by multiple authoritative citations (Conover et al., 2000; Allard and Duan, 2018; Bach, 2018; Downward, 2003; Simanshu et al., 2017) and illustrated in Figure 7\u2014figure supplement 1. This provides essential context for interpreting the phosphorylation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C153",
+      "C154",
+      "C159",
+      "C160",
+      "C161",
+      "C179"
+    ],
+    "result": "Background on IGFBP3 and MAP4K4 functions in RAS signaling regulation based on literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136, C153-C154, C159-C161, and C179 provide literature-based background on IGFBP3 and MAP4K4. These are supported by appropriate citations and provide context for interpreting the experimental findings. The characterization of MAP4K4 as a negative RAS regulator (C161, C179) is particularly relevant for understanding its interaction with lnc-FANCI-2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217"
+    ],
+    "result": "Future directions: investigating the YY1/lnc-FANCI-2/effector transcription network may provide insights into host homeostasis against HPV-induced carcinogenesis and identify additional players beyond E6/E7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C217 represent reasonable future directions based on the study's findings. C215 is supported by prior work (Liu et al., 2021) on YY1 regulation. C216-C217 are logical extensions of the current work. These are appropriate concluding statements about the broader implications and future research needs.",
+    "result_type": "MINOR"
+  }
+]

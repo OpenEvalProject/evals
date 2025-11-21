@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Time-course RNA-seq analysis of isolated DIOMs from 3IL to 4 d APF reveals dynamic transcriptional changes during muscle remodeling. The transcriptome shows substantial differences between pre-remodeling (3IL) and post-remodeling (4 d APF) stages, with sequential upregulation of genes related to atrophy (ubiquitin-proteasome, autophagy, histone modification at 1-2 d APF), chromatin remodeling (2 d APF), and hypertrophy (myofibril, mitochondrion, ribosome biogenesis at 3 d APF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 collectively describe a well-executed RNA-seq experiment with appropriate replication (C45), clear temporal dynamics (C46-C47), and biologically coherent patterns of gene expression (C51-C54). The sequential activation of functional gene modules aligns with known biological processes during muscle remodeling (C55), and the PCA analysis demonstrates robust separation of developmental stages (C46-C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Transcriptional dynamics during DIOM remodeling occur largely independently of autophagy. Knockdown of autophagy genes (Atg18a, FIP200, Stx17) had minimal impact on transcriptomic dynamics and DIOM growth rate, with TORC1 activity and protein synthesis capacity remaining comparable to controls despite autophagy deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C72 and C117-C124 provide converging evidence from multiple approaches (RNA-seq, cell volume measurements, rRNA quantification, nucleolus size, ribosomal protein expression) that autophagy loss does not substantially affect gene expression or protein synthesis during DIOM remodeling. The PCA analysis (C62) and multiple molecular markers (C66-C71) consistently support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C85",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "BNIP3 is the primary mitophagy receptor expressed during DIOM remodeling. Among known mitophagy regulators, only BNIP3 showed robust expression at 1 d APF when mitophagy is strongly induced, and BNIP3 RNAi or knockout led to significant mitochondrial accumulation in DIOMs at 4 d APF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 demonstrate specific expression of BNIP3 among mitophagy regulators using RNA-seq data, while C85-C86 show functional specificity through RNAi screens. Claims C88-C89 confirm the phenotype using both confocal microscopy and TEM, providing multiple lines of evidence for BNIP3's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "BNIP3 is critical for mitophagosome formation but dispensable for general autophagosome formation. TEM analysis showed that combining Stx17 RNAi with BNIP3 KO dramatically reduced mitophagosomes while leaving total autophagosome numbers unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 present clear TEM evidence demonstrating BNIP3's specific role in mitophagy. The experimental design using Stx17 RNAi to block autophagosome-lysosome fusion is appropriate for visualizing mitophagosomes (C90), and the comparison with the double mutant (C91) provides strong evidence for specificity. The quantification of total autophagosomes (C92) serves as an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The MER motif of Drosophila BNIP3 interacts with Atg18a in a manner evolutionarily conserved with mammalian counterparts. AlphaFold 3 predicted that BNIP3 residues 42-53 (MER) form an \u03b1-helix that docks into the groove between blades 2 and 3 of Atg18a's \u03b2-propeller structure, and co-immunoprecipitation experiments confirmed this interaction is attenuated by MER deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 combine computational prediction (AlphaFold 3) with experimental validation (co-IP). The structural prediction (C95-C97) is consistent with known mammalian interactions, and the biochemical validation (C98-C99) confirms the functional importance of the MER domain. However, AlphaFold predictions should be interpreted cautiously and ideally validated with additional structural methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107"
+    ],
+    "result": "Both MER and LIR motifs contribute to BNIP3-mediated mitophagy with functional redundancy. Rescue experiments showed that full-length BNIP3 and \u0394LIR constructs rescued the BNIP3 KO phenotype, while MER mutants and the \u0394LIR+\u0394MER double mutant failed to rescue, indicating the LIR motif alone is dispensable but both motifs together are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 describe a systematic structure-function analysis using rescue experiments. The finding that \u0394LIR rescues (C101-C102) while MER mutants do not (C103) is surprising but well-supported by multiple constructs and confirmed by degradation assays (C105). The conclusion of redundancy (C107) is appropriately cautious given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "BNIP3-mediated mitophagy specifically degrades larval muscle-derived mitochondria during DIOM remodeling. Time-course analysis showed mitochondria accumulation begins at 1 d APF in BNIP3 KO, Mito-QC assays demonstrated blocked mitophagy flux comparable to FIP200 RNAi, and GAL80ts pulse-chase experiments confirmed that larval mitochondria are cleared in controls but persist in BNIP3 KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 provide multiple complementary approaches to demonstrate BNIP3's role in degrading larval mitochondria. The time-course analysis (C109-C111) establishes when mitophagy occurs, the Mito-QC assay (C112-C113) measures flux directly, and the GAL80ts experiment (C114-C116) elegantly traces larval mitochondria specifically. These converging lines of evidence strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Transcriptome changes during DIOM remodeling reflect a metabolic shift from anaerobic glycolysis in larvae to aerobic metabolism in adults. Glycolysis genes (including Ldh) showed high expression in 3IL followed by decline, while genes for amino acid and lipid catabolism (Agxt, bmm) were significantly upregulated in adult muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C138 describe coherent metabolic reprogramming supported by RNA-seq data. The patterns of gene expression (C130, C134-C136) are consistent with known metabolic differences between larval and adult Drosophila. However, the interpretations (C132-C133, C137-C138) are inferences from expression data without direct metabolic measurements, which would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "BNIP3 KO exhibits a milder phenotype than complete autophagy loss, suggesting autophagy contributes to DIOM remodeling beyond mitochondrial degradation. BNIP3 KO muscles showed relatively normal but thinner myofibrils, while ATG RNAi caused severe myofibril disorganization with misaligned sarcomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C160-C162 compare phenotypes between BNIP3 KO and ATG RNAi, revealing differential effects on muscle structure. The observation that BNIP3 KO is viable with minimal mobility impairment (C87) while showing mitochondrial accumulation supports the conclusion that autophagy has additional functions beyond BNIP3-mediated mitophagy (C162). The comparison is well-supported by imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C172",
+      "C173"
+    ],
+    "result": "The LIR motif of BNIP3 is dispensable for mitophagy in DIOMs under physiological conditions, contrasting with some in vitro studies. This finding aligns with reticulocyte studies and suggests context-dependent requirements for LIR-Atg8 interactions, while the MER motif is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C168 and C172-C173 address an important mechanistic question about BNIP3 function. The finding that LIR is dispensable (C166) is well-supported by rescue experiments and consistent with some prior work (C167). The discussion of context-dependence (C168) appropriately acknowledges differences between in vitro and in vivo systems. The conclusion about MER essentiality (C172-C173) is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mitochondria are major autophagy cargo in DIOMs during remodeling. Previous work showed FIP200 or Stx17 RNAi induces accumulation of mitochondria or mitophagosomes respectively, and mitophagosomes were frequently observed in wild-type DIOMs at 1 d APF when autophagy is strongly induced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 establish the importance of mitophagy in DIOM remodeling based on prior work (C74) and current TEM observations (C75). The inference that mitochondria are major cargo (C76-C77) is reasonable given the accumulation phenotypes and frequent observation of mitophagosomes, though quantitative comparison with other cargo types would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The role of DIOMs in ecdysone biosynthesis remains unclear. While Phm (essential for ecdysteroid biosynthesis) is highly expressed at 1 d APF, other Halloween genes required for the pathway show minimal expression, suggesting DIOMs may contribute to a specific biosynthetic step rather than complete ecdysone production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C143 address an interesting question about DIOM function but reach uncertain conclusions. The RNA-seq data (C140-C141) show differential expression of biosynthetic enzymes, but the interpretation (C142-C143) remains speculative without direct measurements of ecdysteroid levels or metabolic flux. This represents an interesting hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Functional mitochondria are degraded during developmental muscle remodeling through a membrane-anchored receptor mechanism rather than PINK1/Parkin-mediated ubiquitination. The PINK1/Parkin axis requires mitochondrial membrane potential depolarization, which is not observed in remodeling muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 provide a logical explanation for why BNIP3 (membrane-anchored receptor) rather than PINK1/Parkin is used during DIOM remodeling. The reasoning is sound: PINK1/Parkin targets damaged mitochondria with depolarized membranes (C146), while developmental remodeling involves clearance of functional mitochondria (C144). However, direct measurement of mitochondrial membrane potential would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "BNIP3 protein levels appear to be regulated by both transcriptional and post-translational mechanisms, with FBXL4-mediated degradation potentially controlling protein abundance. The balance between synthesis and degradation likely results in peak BNIP3 levels at 1 d APF when mitophagy is most active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C152 propose a regulatory model for BNIP3 protein levels based on mRNA expression patterns (C148) and known degradation mechanisms (C149). However, the authors acknowledge that protein levels have not been directly measured (C151), making this conclusion speculative. The proposal for future work using GFP knock-in (C152) is appropriate given this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "BNIP3-mediated mitophagy requires both BNIP3 expression and autophagy induction, likely regulated by ecdysone signaling. Overexpression of BNIP3 alone did not significantly induce mitophagy in larval muscle cells, suggesting additional regulatory mechanisms are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 address the regulation of BNIP3-mediated mitophagy. The negative result from overexpression experiments (C153) is informative and supports a two-component model requiring both receptor and autophagy induction (C155). The proposal about ecdysone regulation (C156) is reasonable given prior work on developmental autophagy, though direct evidence is lacking. The acknowledgment of future research needs (C157) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "A key function of autophagy in DIOM remodeling is degrading larval mitochondria, and their accumulation in BNIP3 KO physically obstructs myofibril formation. In the absence of BNIP3, accumulated mitochondria cluster in the cell center, restricting myofibrils to the periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 synthesize the major findings into a mechanistic model. The conclusion that mitochondrial degradation is a key autophagy function (C158) is well-supported by the accumulated evidence. The physical obstruction model (C159) is a reasonable interpretation of the imaging data showing central mitochondrial clustering and peripheral myofibril restriction, though direct mechanical measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Mechanical tension may be important for proper myofibril organization during DIOM remodeling. ATG RNAi disrupts DIOM attachment, and reduced tension caused by unknown mechanisms might lead to myofibril disorganization when autophagy is impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C165 propose a mechanical tension hypothesis to explain myofibril disorganization in autophagy-deficient muscles. While the cited work establishes tension's importance for sarcomere assembly (C163) and ATG RNAi's effect on attachment (C164), the connection to myofibril disorganization (C165) remains speculative without direct measurements of tension or attachment in the experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The MER-Atg18a interaction may function at early stages of mitophagosome formation, with potential sequential or redundant roles for MER-Atg18a and LIR-Atg8a interactions. The overlap between the MER binding site and Atg16 binding site on Atg18 suggests temporal regulation of these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C174-C178 propose mechanistic models for how BNIP3 recruits autophagy machinery, but these remain speculative. The observation about overlapping binding sites (C174) is interesting, but the sequential (C175-C176) and redundancy (C177-C178) models are not directly tested. These represent reasonable hypotheses that require additional experimentation to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "In the RNA-seq experiments, autophagy was specifically depleted in muscle cells while remaining intact in other organs, potentially allowing nutrient supply from other tissues. Essential nutrients for DIOM hypertrophy may have been supplied by other organs like the fat body or derived from myofibril breakdown via the ubiquitin-proteasome system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C127 discuss potential explanations for why autophagy-deficient muscles can still undergo hypertrophy. While the experimental design (C125) is clearly described, the explanations for nutrient supply (C126-C127) are speculative without direct measurements of nutrient flux or source. These represent plausible hypotheses but lack experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Recent work suggests WIPIs bind Atg13 in the FIP200/ULK1 complex, proposing a NIX/BNIP3-WIPI-Atg13 axis for selective mitophagy analogous to other selective autophagy receptors. Testing whether artificial Atg1 complex interaction motifs can compensate for MER loss would be informative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C181 discuss recent mechanistic insights from other groups and propose future experiments. The citation of recent work (C179-C180) appropriately contextualizes the findings, and the suggestion for future experiments (C181) is a reasonable follow-up to test the proposed mechanism. This represents appropriate discussion of the broader implications of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "This study provides new insights into autophagy-associated muscle remodeling mechanisms, with transcriptional dynamics revealing sequential atrophy and hypertrophy events and mechanistic insights into BNIP3-mediated mitophagy in vivo. These findings are important given evolutionary conservation of muscle remodeling mechanisms between Drosophila and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C186 summarize the study's contributions appropriately. The transcriptional dataset (C183) and mechanistic insights into BNIP3 (C184) represent genuine advances. The evolutionary conservation argument (C185) is well-supported by cited literature. The call for future work (C186) is appropriate. These summary claims accurately reflect the supported findings of the study.",
+    "result_type": "MAJOR"
+  }
+]

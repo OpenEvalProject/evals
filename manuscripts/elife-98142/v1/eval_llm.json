@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C143"
+    ],
+    "result": "A GWAS using 193 DGRP lines identified 546 genetic variants associated with post-diapause fecundity, corresponding to 291 candidate genes, of which 40 had previously been associated with diapause and 89 were associated with multiple SNPs. This represents the first GWAS of diapause.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GWAS methodology is clearly described (C2, C3), sample size is adequate (C3, C151), and results are consistently reported across multiple claims (C4, C5, C48, C50). The identification of previously known diapause genes (C6, C51) provides validation. Statistical thresholds and variant-to-gene mapping criteria are specified (C49). The claim of being the first diapause GWAS (C143) is supported by the novelty of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C58",
+      "C59",
+      "C95"
+    ],
+    "result": "Gene network and ontology analyses revealed that diapause-associated genes are enriched for neuronal development and reproductive system/gonad development functions, consistent with environmental sensing by the nervous system and relay to the reproductive system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent claims (C8, C37, C58, C95) consistently report enrichment of neural and reproductive development genes. The gene ontology enrichment analysis is described with appropriate statistical methods (C58, Figure 2D shows q-values). The biological interpretation (C59) is reasonable given the enrichment patterns. The consistency across different analytical approaches strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Comparison with other Drosophila GWAS studies revealed the most significant overlap with olfactory behavior-associated genes, a previously undescribed connection to diapause, and the second most significant overlap with fecundity and lifespan genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative GWAS analysis is clearly presented (C9, Figure 3), with statistical significance assessed by Fisher's exact tests. The novelty of the olfactory behavior connection is explicitly stated (C61) and supported by literature review. The overlap with fecundity/lifespan genes (C62) provides biological plausibility. Multiple overlaps are shown with varying significance levels, demonstrating appropriate statistical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C63",
+      "C64"
+    ],
+    "result": "Gal4-mediated RNAi knockdown is effective at 10\u00b0C, as demonstrated by tdTomato reporter expression and zpg knockdown experiments showing comparable or higher effectiveness at 10\u00b0C compared to 18\u00b0C and 25\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effectiveness of Gal4/UAS system at 10\u00b0C is demonstrated through two independent approaches: fluorescent reporter expression (C63, Figure 4A-C) and functional knockdown of zpg with antibody validation (C64, Figure 4D-H'). Quantification is provided (Figure 4D) with appropriate statistical analysis. This methodological validation is critical for interpreting subsequent RNAi experiments at diapause temperatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C39",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C96",
+      "C108",
+      "C130"
+    ],
+    "result": "RNAi screen identified two neuronal genes, Dip-\u03b3 and Scribbler (sbb), as required in neurons for post-diapause fecundity recovery, with neuron-specific knockdown producing defects comparable to ubiquitous knockdown while glial knockdown had minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAi screen is well-controlled with tissue-specific drivers (C67-C69, Figure 4J-L) demonstrating neuronal requirement. Multiple RNAi lines were tested (Figure 4\u2014source data 2), and temperature-sensitive Gal80 was used to restrict knockdown to recovery phase (C38, Figure 4I). Statistical significance is shown (Figure 4J-L). The conclusion that these genes function in neurons (C70) is supported by the differential effects of neuronal vs. glial knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C119"
+    ],
+    "result": "Antenna removal reduced post-diapause fecundity and germline stem cell numbers, and substantially reduced diapause lifespan (median 7 days without antenna vs. 142.5 days with antenna), while having minimal effect on non-diapause lifespan (72 vs. 75 days). A wound-healing period partially rescued early mortality but antennaless flies still showed reduced diapause lifespan (95 vs. 142 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The antenna amputation experiments include appropriate surgical controls (arista removal, C71) and demonstrate specific effects on diapause phenotypes. Sample sizes are adequate (n values provided), and statistical analyses are performed (Log-rank tests with \u03c7\u00b2 values reported, Figure 5C-D). The wound-healing control experiment (C76-C79) addresses potential confounds from surgical trauma. The dramatic difference in diapause vs. non-diapause effects (C74, C75) is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C82",
+      "C84",
+      "C89",
+      "C91",
+      "C92",
+      "C121"
+    ],
+    "result": "Neuronal inactivation experiments using tetanus toxin demonstrated that olfactory receptor neurons (Orco-expressing), temperature-sensing neurons (Ir21a-expressing and hot cells), and Ir25a-expressing neurons are required for successful diapause recovery, with Ir21a inactivation causing complete post-diapause mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple neuronal subtypes were tested using well-characterized Gal4 drivers (C81-C93, Figure 5E-F). The Orco experiment (C82, C121) directly tests olfactory neurons and phenocopies antenna removal. The Ir21a result is particularly striking with 100% mortality (C91, n=25). Statistical analyses are provided (Figure 5E-F). The convergence of genetic and surgical approaches (antenna removal + neuronal inactivation) strengthens the conclusions about olfactory and thermosensory requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C123"
+    ],
+    "result": "A novel method was developed for assessing diapause success by measuring the ability of post-diapause flies to produce viable adult progeny, which is more stringent than measuring egg maturation alone as it requires fertilization, egg laying, and development to adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological innovation is clearly described (C35, C123) and represents a significant advance over previous approaches that only measured ovarian arrest. The 16-day assay period (Figure 1A) allows assessment of complete reproductive success. This stringency is important for interpreting differences with prior studies (C122) and provides a more ecologically relevant measure of diapause success.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Most DGRP lines showed reduced post-diapause fecundity compared to non-diapause controls, with exceptions (lines 309, 738, 853 showed enhanced post-diapause fecundity). Broad-sense heritability was 0.51, and there was a positive correlation (r=0.5682, R\u00b2=0.3228) between post-diapause and non-diapause fecundity. Post-diapause fecundity exceeded that of aged non-diapause flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fecundity measurements are well-documented with appropriate sample sizes (minimum 20 flies per line, C151) and statistical analyses. Heritability calculation (C44) uses standard methods described in Materials and Methods. The correlation analysis (C45, C46, Figure 1D) is properly conducted with Pearson's r reported. The comparison with aged flies (C47, Figure 1G) provides important context about diapause benefits. The identification of exceptional lines (C43) demonstrates genuine biological variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C94",
+      "C120",
+      "C144",
+      "C145"
+    ],
+    "result": "The study implicates the olfactory system as critically important for successful diapause, identifying nearly 300 candidate genes and specific cells in the antenna required for diapause lifespan extension and post-diapause fecundity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is supported by multiple converging lines of evidence: GWAS overlap with olfactory genes (C60), antenna requirement (C71-C75, C119), olfactory neuron inactivation (C82, C121), and identification of specific genes (C96). The integration of genetic (GWAS), surgical (antenna removal), and molecular genetic (RNAi, neuronal inactivation) approaches provides strong support for this central conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106"
+    ],
+    "result": "Recent studies have identified at least two parallel neural mechanisms by which cool temperatures affect reproductive arrest: sLNv neurons reduce PDF secretion leading to decreased insulin and JH production, and DN3 neurons disinhibit ASTC-R2 neurons which inhibit vitellogenic egg chamber development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize recent literature (C99, with citations to Hidalgo et al., 2023 and Meiselman et al., 2022). The mechanistic details (C100-C103) are supported by the cited studies. The synthesis of parallel pathways (C106) is a reasonable interpretation of the literature. However, these are primarily literature review claims rather than novel findings from this study, though they provide important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C114",
+      "C115",
+      "C117",
+      "C140",
+      "C142"
+    ],
+    "result": "Speculative mechanisms are proposed for how Sbb might regulate PDF expression or function in the DN3-ASTC-R2 pathway, and how cool/hot cells might interact through mutual inhibition, but these remain to be tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (C109, C111, C114, C115, C117, C140, C142) proposing potential mechanisms to explain the observed results. While the speculation is reasonable and grounded in known biology (e.g., Sbb as transcriptional repressor, C110), no experimental evidence is provided to test these hypotheses. These represent appropriate directions for future research but should not be considered supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The antenna may be required for promoting feeding and mating behaviors post-diapause rather than for relieving the vitellogenesis block, reconciling the current findings with previous work showing the antenna is not required for egg maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation reconciles an apparent discrepancy with prior work (C122, Meiselman et al., 2022) by noting the different assays used (C123). The proposed mechanism (C124, C126) is supported by known antenna functions in food and mate seeking (C125, with citations). This represents a thoughtful integration of current and prior results, though direct testing of feeding and mating behaviors would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C141"
+    ],
+    "result": "The observation that inhibiting Ir21a-expressing cells (located in the arista) impairs diapause while arista removal does not is puzzling, potentially explained by mutual inhibition between cool and hot cells, as supported by prior findings of hot cell spiking in Ir21a mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This identifies a genuine puzzle in the data (C137): Ir21a neuron inactivation causes severe defects (C89, C91) but arista removal does not (C71). The proposed explanation involving mutual inhibition (C140, C142) is speculative, though it is supported by prior observations (C141, Budelli et al., 2019). However, the speculation is not directly tested, and alternative explanations (e.g., incomplete cell ablation by surgery, off-target Gal4 expression) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The experimental design used 193 DGRP lines with virgin females subjected to 5 weeks of diapause at 10\u00b0C and 8:16 L:D, with a minimum of 20 females per line tested. The 5-week duration was chosen based on pilot studies showing good survival and sufficient phenotypic variation for GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate justification for key parameters. The 5-week duration (C148, C149) balances survival and phenotypic variation based on pilot data. Sample size (C151) is adequate for GWAS with 193 lines. The rationale for not extending beyond 5 weeks (C150) is reasonable. The conditions (C147, C148) are standard for Drosophila diapause studies.",
+    "result_type": "MINOR"
+  }
+]

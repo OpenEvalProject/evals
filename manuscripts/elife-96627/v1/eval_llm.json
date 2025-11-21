@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C17",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C90",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C132"
+    ],
+    "result": "The authors provide mathematical proof that spatial periodicity in grid cell firing emerges as the only possible solution to a sequence code of trajectories in 2-D space, with hexagonal lattice arrangement being necessary. They prove that seven cells are the minimum required, with exactly two possible arrangements (mirror images), and that any other solution requires at least eight cells (>14% increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C17, C20, C21, C24, C25, C27, C28, C30, C31, C32, C90, C110-C113, and C132 collectively present a rigorous mathematical proof based on four axioms. The proof demonstrates that firing fields must be convex (C21), spatially periodic with repeat length \u22653 (C24), arranged in hexagonal lattice (C17, C20, C132), with minimum seven elements (C30), and exactly two possible arrangements (C31, C32). The logical progression from axioms through geometric constraints (kissing number, lattice properties) to the unique solution is mathematically sound and well-supported by the formal proof structure presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C34",
+      "C35",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The hexagonal firing pattern with seven cells emerges as the most parsimonious solution because it uses the minimum number of neurons without increasing spatial or angular resolution, providing an evolutionary advantage through conservation of resources and representing the teleological cause for grid cell existence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C34, C35, C114-C117 build on the mathematical proof to argue for parsimony. The logic is sound: since adding more cells doesn't increase resolution (C34, C114) but costs >14% more neurons (C113), and biological efficiency favors minimal resource use (C115, supported by citation), the seven-cell hexagonal solution is most parsimonious. This provides a teleological explanation (C117) that is well-supported by the mathematical constraints and biological efficiency principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "The sequence code model predicts a fixed ratio between grid field spacing and field size of \u221a7 \u2248 2.65, and experimental data from 25 mouse grid cells yielded a ratio of 2.39 \u00b1 0.25, which is slightly smaller than predicted but consistent when accounting for experimental noise factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C38, C39 present a testable prediction and experimental validation. The model prediction (C36) follows logically from dense packing. The experimental measurement (C38: 2.39 \u00b1 0.25, n=25) is close to the predicted 2.65, and the discrepancy is reasonably explained by known sources of experimental variability (C39: path integration errors, map drift, noise). The prediction is supported by data shown in Figure 3\u2014figure supplement 1B, though the sample size is modest (n=25 from mice only).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The model predicts grid maps are rotated 10.9\u00b0 against the nearest wall of rectangular enclosures, which falls within the experimentally observed range (plateau ~6-12\u00b0, mean 7.2 \u00b1 3.5\u00b0, median 9.8\u00b0 in familiar environments), and explains the four distinct orientation configurations observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 present another testable prediction with experimental support. The 10.9\u00b0 prediction (C40) derives from the mathematical model (Figure 3B). This is well within the experimental distribution (C41: plateau 6-12\u00b0, mean 7.2 \u00b1 3.5\u00b0) and very close to the median in familiar environments (C42: 9.8\u00b0). The explanation for four orientation configurations (C43, C44) follows logically from alignment with walls. The consistency between prediction and experimental data from Stensola et al., 2015 provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The sequence code model predicts and explains fragmentation of grid maps in 1-D environments (multicompartment mazes and circular tracks), increased field spacing on 1-D tracks, compatibility with slices through 2-D hexagonal patterns, and translational shifts at turning points corresponding to re-anchoring of sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 show the model explains multiple 1-D phenomena. Fragmentation in multicompartment mazes (C45, C46) follows logically from parallel trajectories producing identical sequences. Path integration on circular tracks (C47) and increased spacing (C48, C49) are consistent with the model. Compatibility with 2-D slices (C50, C51) and translational shifts (C52, C53) are well-explained by sequence re-anchoring. All claims are supported by citations to experimental data (Derdikman et al., 2009; Jacob et al., 2019; Pr\u00f6ll et al., 2018; Dombeck et al., 2010), providing strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Grid cells code for non-spatial dimensions (distance, time) with similar firing patterns to 1-D spatial tracks, consistent with sequence coding of trajectories in any behaviorally relevant dimension, with different grid cells coding different dimensions in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 extend the model to non-spatial domains. The experimental evidence for time/distance coding (C54, supported by Kraus et al., 2015) and similarity to 1-D spatial patterns (C55) supports the generalization. The inference that sequence coding applies to any relevant dimension (C56) is logical, and parallel coding of different dimensions (C57, supported by Kraus et al., 2015) demonstrates the model's broader applicability. The evidence is consistent and well-cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The sequence code model explains grid map rescaling and distortions in response to environmental changes (stretching/compression, novelty, vertical surfaces) by assuming trajectory sequences are anchored to landmarks/borders, which is inconsistent with a rigid spatial metric but consistent with malleable spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 show the model explains grid map malleability. Experimental evidence for rescaling (C58, C62, C63) and map merging (C60, C61) is well-cited. The model's explanation via anchored sequences (C59) is logical and accounts for these phenomena better than the spatial metric hypothesis (C64). The explanation for novelty-induced expansion via broader initial resolution (C65) is reasonable, though acknowledged as needing future testing. Co-occurrence with place cell changes (C66) provides additional support. The convergent evidence from multiple experimental paradigms strongly supports the model's explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The sequence code model explains local distortions of grid maps near goal locations and rewards through increased transition probability between sequential cells, causing decreased spacing toward salient locations, consistent with experimental observations of grid field movement toward goals and place field backward shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C76 propose a mechanism for grid map warping. While experimental evidence for goal-related distortions exists (C67, C68, C73), the proposed mechanism (C72, C74) is explicitly speculative (C72 marked as SPECULATION). The analogy to place field plasticity (C73) is suggestive but not direct evidence for the grid cell mechanism. The model's consistency with malleability (C75, C76) is logical, but the specific mechanistic explanation lacks direct experimental validation. The result is plausible but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The sequence code model predicts that all grid cells have congruent firing field patterns differing only in phase, and that multiple phase-shifted grids enable arbitrarily smooth transitions and high angular resolution, consistent with experimental observations of phase-only differences and toroidal manifold representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 address population-level properties. The prediction of congruent patterns (C77) follows from the model definition and matches experimental data (C78, citing Hafting et al., 2005). The mechanism for smooth transitions via multiple phase-shifted grids (C79, C80, C81) is logically derived from Axiom 3 and illustrated in Figure 5A-B. The conclusions about arbitrary smoothness and angular resolution (C82, C83) follow mathematically. Consistency with toroidal manifold data (C84) provides additional experimental support. The logical chain from model to predictions to data is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Grid cell modules with different scales represent trajectories at different spatial resolutions, with the \u221a2 scaling factor between modules (doubling firing fields per area halves spacing by \u221a2) matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 explain modular organization. The experimental observation of modules with distinct scales (C85, citing Stensola et al., 2012) is well-established. The model's explanation via sampling resolution (C86, C87) is logical and supported by sampling theory (Williams, 1983). The geometric prediction of \u221a2 scaling (C88) follows from 2-D dense packing, and the match with experimental data (C89, citing Stensola et al., 2015) provides strong support. The convergence of theory and experiment is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The model builds on extensive experimental and theoretical evidence that cell sequences in the hippocampal formation code for trajectories, temporal structure, and ordered experiences, with recent studies showing grid cells specifically represent spatial trajectories through sequential activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C96-C109 establish the empirical foundation for the model. The evidence for sequence coding is extensive and well-cited: spatial trajectories (C13, C97), direction signals (C14), temporal binding (C15), path integration (C16), theta sweeps (C98), non-spatial variables (C99-C102), and replay (C103). The synthesis (C104, C109) is well-supported. The contrast with Rueckemann et al. (C105, C106) clarifies the model's novel contribution. The convergent evidence from multiple experimental paradigms and species provides strong support for the foundational assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The sequence code model provides a mechanistic explanation for grid cell path integration through velocity-driven advancement between cells, potentially implemented via continuous attractor networks with conformal isometry, and is consistent with experimental evidence for entorhinal-hippocampal coordination in memory-guided navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C131 connect the model to path integration mechanisms. The logic linking velocity integration to sequence advancement (C122, C123) is sound. The suggestion of continuous attractor implementation (C124) is appropriately speculative but well-cited. The conformal isometry property (C125) follows from the hexagonal lattice proof. Multi-scale integration (C126) explains modular organization. The mechanistic explanation (C127) is well-supported. Citations to prior modeling (C128, C129) and recent experimental data (C130, C131) provide convergent support. The integration of theory and experiment is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The mathematical proof establishes that firing field centers must be arranged in a hexagonal lattice, implying conformal isometry between neural and physical space, a property recently formalized as the conformal isometry hypothesis with similar conclusions reached independently by Sch\u00f8yen et al., 2024.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 establish an important geometric property. The hexagonal lattice arrangement (C132) is proven mathematically. The conformal isometry implication (C133) follows logically from the lattice geometry and is illustrated in Figure 5. The connection to recent independent work (C134, C135, citing Xu et al., 2024; Sch\u00f8yen et al., 2024) provides strong corroboration. The convergence of independent theoretical approaches reaching similar conclusions significantly strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Grid modules may represent trajectories at multiple scales analogous to mip mapping in computer vision, with the \u221a2 scaling factor potentially optimized for balancing detail loss and computational efficiency, though this hypothesis requires experimental testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C143 propose a functional explanation for modular scaling. The hypothesis about multiscale trajectory representation (C136, C137) is speculative but logical. The analogy to mip mapping (C138, C142) is interesting and well-cited. The connection to prior modeling (C139) provides some support. However, the authors explicitly acknowledge this needs experimental testing (C140) and that the specific \u221a2 factor is unexplained (C141). The speculation about optimization (C143) is reasonable but unproven. The result is plausible but requires substantial future work for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The model assumes complete tiling and equal directional representation; relaxing these assumptions would create gaps and variable resolution. Path integration errors may partly result from non-ideal tiling, potentially compensated by population coding. The trajectory code enables local path integration without global grid patterns, as demonstrated experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C153 address model assumptions and limitations. The assumptions (C144) and consequences of relaxing them (C145) are clearly stated. The speculation about path integration errors (C146, C147) is appropriately tentative and well-cited. The suggestion of population coding compensation (C148, C149) is reasonable. The key insight about local path integration without global patterns (C150, C151) is well-supported by experimental data (C152, C153, citing Peng et al., 2023). The honest acknowledgment of assumptions and their implications strengthens the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The sequence code model extends to non-spatial cognitive functions (working memory, episodic memory, conceptual spaces) and can explain reduced grid-like activity and path integration deficits in Alzheimer's disease patients and animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C156 extend the model to broader cognitive functions and clinical relevance. The extension to non-spatial domains (C154) is speculative but supported by human fMRI data (Constantinescu et al., 2016). The explanation for Alzheimer's-related deficits (C155, C156) is well-supported by citations to human (Kunz et al., 2015; Bierbrauer et al., 2020) and rodent (Ying et al., 2022, 2023) studies. The model provides a coherent framework for understanding these clinical observations, though direct mechanistic validation is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The sequence code model can potentially extend to 3-D space, though multiple optimal packing solutions exist (kissing number 12), predicting greater variability and local rather than global order. Experimental data from rats (irregular 3-D fields) and bats (fixed local distances without global lattice) are consistent with this prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C166 address 3-D extension. The logic that the model can extend to 3-D (C157, C158) is sound. The mathematical facts about 3-D packing (C159, C160) are well-cited. The predictions of greater variability (C161) and local order (C164) follow logically from the multiple optimal solutions. The experimental data from rats (C163, irregular fields) and bats (C165, fixed local distances) are well-cited and consistent with predictions. The synthesis (C166) appropriately acknowledges that global symmetry may not be required. The convergence of predictions and data is strong.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "The study identifies the process underlying hexagonal grid patterns as a neural sequence code of trajectories, addressing a recent proposal that hexagonal patterns are by-products of discrete uniform-sized firing regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 position the work relative to recent proposals. The citation to Jeffery, 2023 (C167) accurately represents a recent hypothesis. The claim that this study identifies the underlying process (C168) is justified by the mathematical proof demonstrating that sequence coding necessitates the observed patterns. This provides a clear answer to an open question in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The study's scope is limited to demonstrating the teleological cause for grid cells, remaining agnostic about mechanistic implementation details (velocity integration, connectivity, connection strengths). Future work should test predictions on larger datasets across species and modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 clearly state the study's scope and limitations. The explicit acknowledgment that the model doesn't provide mechanistic details (C169, C170, C171) is appropriate and honest. The call for future validation on larger datasets (C172) is reasonable given the modest sample size (n=25 mice). These limitations are clearly stated and don't undermine the main theoretical contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Grid cells have been hypothesized to support spatial navigation, episodic memory, and abstract feature spaces, exhibiting hexagonal firing patterns. However, no unifying theory explains grid cell emergence from basic principles, and existing mechanistic models don't explain why grid cells exist. This study identifies the local computational function as a trajectory code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 establish the background and motivation. The hypothesized functions (C1-C3) and hexagonal patterns (C4) are well-established and properly cited. The assessment that no unifying theory exists (C5, C6) and that mechanistic models lack teleological explanation (C7, C8) is accurate and supported by citations to recent reviews (Jeffery, 2024; Ginosar et al., 2023). The identification of trajectory coding as the local function (C10) is the study's main claim. This framing effectively motivates the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Previous studies described grid cell functions and properties but lacked a specific explanation for why grid cells evolved. Mechanistic models don't address teleological causes, and normative models fail to demonstrate necessity and often rely on hidden hyperparameter choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 critique prior approaches. The assessment of previous descriptive work (C91, C92) is fair and well-cited. The critique of mechanistic models (C93) is accurate\u2014they explain 'how' but not 'why'. The critique of normative models (C94, C95) is supported by citation to Schaeffer et al., 2022, which analyzed limitations of neural network approaches. This critical assessment effectively positions the current work's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Artificial neural networks trained for path integration develop grid-like firing and enable vector navigation, but the mechanisms remain obscure due to network opacity and dependence on specific hyperparameter choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 assess normative neural network models. The observation that grid-like patterns emerge in ANNs (C118, C119) is well-cited (Sorscher et al., 2023; Banino et al., 2018). The critique about mechanistic opacity (C120) and hyperparameter dependence (C121, citing Schaeffer et al., 2022) is fair and accurate. This assessment effectively contrasts the current mathematical approach with black-box neural network models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C33"
+    ],
+    "result": "Mathematical facts about 2-D lattices: the kissing number of a circle is 6 (hexagonal packing), there are five lattice types in the plane, and solutions with \u22658 elements can produce other lattice types (oblique, centered rectangular) observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, C33 state mathematical facts and their application. The kissing number (C18) is a proven mathematical result (Thue, 1910; Fejes, 1942). The five lattice types (C19) are well-established (Kittel, 1966). The observation that \u22658 element solutions can produce other lattice types (C33) is demonstrated in the paper and consistent with experimental observations (Stensola et al., 2015). These mathematical foundations are solid.",
+    "result_type": "MINOR"
+  }
+]

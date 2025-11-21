@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C124",
+      "C125"
+    ],
+    "result": "Model comparison revealed that healthy controls (CON) were best fit by model M1 (self-insertion and social contagion), while individuals with BPD were best fit by model M4 (disintegrated self-other representations). This pattern was replicated in model recovery analysis using synthetic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C124-C125 provide converging evidence from both real and simulated data that CON and BPD groups are best explained by different computational models. The hierarchical Bayesian model comparison shows high exceedance probabilities (CON M1: 0.98; BPD M4: 0.86), and model recovery successfully replicated these findings with synthetic data, demonstrating good model identifiability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C72",
+      "C73"
+    ],
+    "result": "The study confirmed its primary hypotheses: healthy controls demonstrated both self-insertion and social contagion processes, while individuals with BPD maintained distinct self-other representations, particularly for joint reward outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C17, C18, C72, and C73 collectively demonstrate that the pre-registered hypotheses were confirmed by the data. The model comparison results (C36-C39) provide the primary evidence, with behavioral and parameter analyses supporting the interpretation that CON participants integrate self-other information while BPD participants maintain separated representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C100",
+      "C126",
+      "C127"
+    ],
+    "result": "Both BPD and control groups showed equivalent predictive accuracy in phase 2 (CON: 77.2%, BPD: 72.7%), with no significant group differences. Model predictions closely matched observed accuracy, and both groups improved over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C100 demonstrate equivalent behavioral performance between groups using statistical tests, while C126-C127 show that computational models accurately captured this behavior. The convergence of behavioral data and model predictions, along with the lack of significant group differences (p=0.12), strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C89",
+      "C90"
+    ],
+    "result": "CON participants used their phase 1 preferences as priors for predicting partners in phase 2 (self-insertion), while BPD participants generated new, neutral priors about partners' relative reward preferences but maintained similar priors for absolute reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe the model properties, while C89-C90 provide the empirical evidence. The model comparison showing M1 for CON and M4 for BPD, combined with parameter analysis showing BPD participants had neutral priors centered around 0 for relative reward (\u0394\u03bc[0\u2212\u03b2_par^m] = \u20130.39, 95%HDI: \u22120.77,\u20130.05), supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C74",
+      "C101"
+    ],
+    "result": "All participants showed greater belief updating for relative versus absolute reward preferences in phase 2, with BPD participants showing consistently restricted informational surprise over absolute reward. Both groups eventually converged to equivalent updating schedules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C57 provide trial-by-trial Kullback-Leibler divergence analysis with statistical support (e.g., linear estimate = 0.54, p<0.001 for relative vs absolute updating). Claims C74 and C101 provide summary interpretations. The convergence of groups over time (C57) is supported by the group\u00d7time interaction in the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C95"
+    ],
+    "result": "CON participants showed greater belief shifts between phases 1 and 3 compared to BPD participants, with relative reward preferences being more susceptible to social contagion than absolute reward preferences. BPD participants showed reduced permeability to other-to-self information transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 provide statistical evidence from models M1 and M3 showing group differences in belief shifts (e.g., M3: linear estimate = 1.75, p<0.001) and the greater susceptibility of relative reward to contagion. Claim C95 provides the interpretation that BPD shows reduced social contagion, which is directly supported by the model comparison showing M4 (no contagion) as the best fit for BPD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C67",
+      "C76",
+      "C77"
+    ],
+    "result": "Exploratory network analysis revealed that childhood trauma (CTQ) and persecutory beliefs (RGPTSB) were associated with reduced trait mentalizing (MZQ), which in turn was associated with diminished shifts in relative reward preferences (social contagion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C76, and C77 report specific partial correlations from network analysis with FDR-corrected p-values (e.g., CTQ-MZQ: r=0.354, p[fdr]=0.02; MZQ-\u0394\u03b2: r=\u20130.26, p[fdr]=0.03). Claim C67 provides the interpretation. The use of bootstrapping (5000 reps) and permutation testing strengthens confidence in these associations, though the authors note some effects diminished when controlling for group status.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "BPD and control groups were well-matched on demographics but differed significantly on clinical measures: BPD participants reported higher childhood trauma, epistemic disruptions, paranoid beliefs, and poorer mentalizing, but did not differ in certainty about mental states or epistemic trust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are supported by Table 1 data showing non-significant differences for matching variables (age, gender, education, social deprivation) and significant differences for clinical measures (all p<0.001 for CTQ, RGPTS, MZQ, ETMCQ mistrust/credulity). The lack of differences in CAMSQ and ETMCQ trust subscales is also clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In phases 1 and 3, both groups made similar prosocial vs competitive choices, but CON participants made significantly fewer prosocial choices when individualistic options were available compared to BPD participants. Both groups favored individualistic over competitive choices equally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C33-C35 report specific behavioral choice frequencies with statistical tests. The pattern is consistent across phases 1 and 3, with significant group differences only for prosocial vs individualistic choices (phase 1: t=2.75, p=0.007; phase 3: t=2.31, p=0.02). The consistency of this pattern across phases strengthens the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C130",
+      "C132"
+    ],
+    "result": "Model parameters showed strong correlations with choice types: \u03b2_ppt^m correlated negatively with prosocial vs competitive and individualistic vs competitive choices, while \u03b1_ppt^m correlated positively with individualistic vs competitive choices and negatively with prosocial vs individualistic choices. Model responsibility and parameters were well-recovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128, C130, and C132 report specific correlations between model parameters and behavioral choices (e.g., \u03b2_ppt^m with prosocial vs competitive: r=\u20130.77, p<0.001). Claim C128 additionally reports excellent model and parameter recovery (\u03c1=0.46\u20130.97 for model confusion; \u03c1=0.70\u20130.94 for parameter recovery). These validations support the model's construct validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The server matching algorithm successfully paired participants with partners who were approximately 50% different in their choice preferences (mean similarity = 0.49, SD = 0.12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 reports the success of the matching algorithm with specific quantitative evidence. This is a methodological validation that ensures the experimental manipulation was implemented as intended, which is critical for interpreting the learning results in phase 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Reaction time analysis revealed that all participants were slower at the start of phase 2 and sped up over time. Participant-partner similarity interacted with trial number such that higher similarity led to slower initial reaction times that attenuated over time. No group differences in reaction time were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C134-C136 report reaction time effects with statistical support (e.g., time effect: linear estimate = \u201315.03, p<0.001; similarity\u00d7trial interaction: linear estimate = \u20130.53, p<0.001). The lack of group differences (C136) is notable given the computational differences between groups, suggesting that behavioral performance metrics alone may not capture underlying mechanistic differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Greater prior uncertainty over a partner's relative reward preferences was associated with increased attributions of harmful intent, suggesting that expectations of self-other difference may exaggerate beliefs about intentional harm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 reports a correlation between \u03b2_par^ref and harmful intent attributions (\u03c1=0.25, p[fdr]=0.04), but the authors note this is exploratory and the effect for absolute reward preferences did not reach significance. The interpretation about self-other difference exaggerating harm beliefs is plausible but requires replication and more direct testing of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The findings replicate and extend prior models of self-insertion and social contagion, demonstrating both processes in conjunction and showing that shifts in self-beliefs are influenced by uncertainty about self and others. The data align with prior research on social impression formation showing initial variability followed by steady updating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 integrate the current findings with prior literature through citations and theoretical interpretation. The replication of self-insertion effects (C79-C80) and social contagion effects (C81-C82) is supported by the model comparison and parameter analysis. The alignment with impression formation literature (C83-C85) is supported by the trial-by-trial updating patterns showing initial 'heating' and subsequent 'cooling' of beliefs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The findings provide a mechanistic explanation for prior observations in BPD, showing that individuals with BPD maintain equal generalization of absolute reward but disintegrate beliefs about relative reward through neutral priors. This reflects a strong concern about social relativity and may predispose to brittle or 'split' beliefs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 cite prior literature on BPD showing emphasis on social cues, reduced belief adaptation, and splitting. Claims C89-C90 provide the current empirical findings showing differential treatment of absolute vs relative reward. Claims C91-C93 offer interpretations that integrate these findings. The mechanistic account is well-supported by the model comparison and parameter analysis, though the interpretation about 'splitting' is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The results suggest that self-rigidity in BPD prevents observed social behaviors from generalizing to the self, potentially exacerbated by childhood trauma, paranoia, and impaired mentalizing. This resistance to social influence may serve as a protective response but can contribute to loneliness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 cite prior neuroimaging literature showing blunted neural responses in BPD. Claim C98 integrates the current findings with this prior work to propose a mechanistic basis for reduced social contagion. Claim C99 offers a functional interpretation supported by citation. The integration of computational, psychometric, and network analysis results (C64, C67, C76-C77) provides converging evidence for this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The computational algorithm underlying BPD participants' behavior is characterized by higher uncertainty, whether through neutral central tendency (M4) or large variance (M1) priors over relative reward, emphasizing less stable expectations about others. Future work should assess whether these entropic learning processes contribute to mood fluctuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 provides an interpretation of the model comparison results that accounts for both M4 (winning model) and M1 (alternative explanation) for BPD participants. This interpretation is supported by the parameter analysis showing neutral priors and larger prior flexibility in BPD. Claim C103 appropriately identifies this as a direction for future research rather than a current finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The findings have clinical implications: BPD participants were not entirely impermeable to observed behavior, suggesting that consistent external models of trust could be internalized over time. The paradigm and model may offer insights into therapy effectiveness, with future work needed to assess whether generalization principles can be restored following intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 suggests BPD participants showed some social contagion, but this contradicts the model comparison showing M4 (no contagion) as the best fit. Claims C105-C107 discuss clinical implications and future directions, which are speculative. While the theoretical connection to mentalisation-based therapies (C105) is supported by citations, the claim that the paradigm can assess therapy effectiveness (C106-C107) requires empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The model bridges formal theories of associative learning and social cognition, extending reinforcement learning approaches to capture the dynamic nature of social interactions. The paradigm is concise, visually engaging, and allows tight experimental control, effectively capturing core social psychological principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 describe the theoretical and methodological contributions of the work. The integration of Bayesian inference with social value orientation (C108-C110) is supported by the model formulation and citations to prior literature. The paradigm characteristics (C111) are descriptive and accurate. The claim that the model effectively captures social psychological principles (C112) is supported by the model validation results (C124-C128).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "A limitation is that the study did not measure whether BPD participants use salient, negative other-priors as templates for learning, which could explain the ambivalent priors observed. However, impression formation was independent of valence, supporting the hypothesis that vulnerable self-models and lack of self-insertion contribute to overly precise beliefs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 acknowledge a limitation regarding alternative explanations for the neutral priors in BPD. Claim C115 provides evidence that impressions formed regardless of partner valence (supported by Figure 2\u2014figure supplement 3). Claim C116 interprets this as supporting the vulnerable self-model hypothesis. The authors appropriately acknowledge the limitation while providing evidence that partially addresses the alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "A strength of the work is demonstrating self-insertion and contagion under minimal interaction conditions (observation alone). However, it remains unclear whether these effects will persist in richer conditions with higher affective arousal and mentalizing challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 accurately describes a strength of the experimental design\u2014that observation alone was sufficient to elicit the predicted effects. Claim C118 appropriately acknowledges the limitation that generalization to more naturalistic settings requires empirical testing. This is a fair assessment of the scope and limitations of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The action space and parameters governing choice were deliberately simple (two actions, two parameters) to avoid overly complex models that may be difficult to fit to real human data and fail to capture mechanisms in more complex contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 describe and justify the design choice to use a simple model. This is a reasonable methodological decision supported by the excellent model recovery results (C124-C128). The simplicity-complexity tradeoff is a standard consideration in computational modeling, and the authors provide appropriate justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The findings open possibilities for testing how social uncertainty across the lifespan may explain social bond formation and disruption. A strength of the work is using model comparison to understand algorithmic differences between BPD and controls, though the generalization of economic tasks to real-world behavior remains a topic of discussion in computational psychiatry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 appropriately identifies future research directions with citation support. Claim C122 acknowledges the broader limitation of computational psychiatry regarding ecological validity, supported by citations to review literature. Claim C123 accurately identifies model comparison as a methodological strength. These claims provide balanced assessment of contributions and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes theoretical background on self-other generalization (self-insertion and social contagion), the importance of social development, and the clinical characteristics of BPD including associations with childhood adversity, impaired mentalizing, and disrupted social inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C16 provide theoretical framing and background knowledge supported by citations to prior literature. These claims establish the rationale for the study and are appropriately supported by references to established theories (relational self theory, C9) and empirical findings about BPD (C12-C16). The background claims are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The abstract claims that BPD individuals showed equal predictive performance despite reduced updating sensitivity, and that childhood adversity is associated with separation of internalized beliefs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by the behavioral accuracy data (C29-C30) showing no group differences and the computational analysis showing reduced belief updating in BPD (C52-C54). Claim C6 is supported by the exploratory network analysis (C64, C67, C76-C77) showing associations between CTQ scores and belief parameters. Both claims accurately summarize key findings from the study.",
+    "result_type": "MAJOR"
+  }
+]

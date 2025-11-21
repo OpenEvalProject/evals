@@ -1,0 +1,499 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors developed a three-layered computational model of fly walking inspired by the hierarchical organization of the fly nervous system. The model consists of an inter-leg phase coordinator, a trajectory generator for each leg, and an optimal controller interfacing with leg dynamics. Each leg is modular with its own controller and trajectory generator, with inter-leg coordination achieved solely through phase coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 describe the model architecture and its biological inspiration. The model design is clearly documented in Figure 1B and the Methods section, with appropriate citations to neuroanatomical studies (Dallmann et al., 2021; Lesser et al., 2024; Cheong et al., 2024). The modular, layered structure is a methodological choice that is well-justified and implemented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The model generates 3D walking kinematics that closely resemble real fly walking data. Time series of joint angles matched the mean, frequency, and shape of experimental data, though simulated amplitudes were smaller and more regular. Average differences between simulated and real joint angles were less than 6 degrees across 500 walking bouts, comparable to the tracking uncertainty of 5.56 degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by quantitative comparisons shown in Figure 2 and Videos 1-3. The model error (< 6 degrees) is appropriately compared to the measurement uncertainty from the tracking method (Karashchuk et al., 2021). The authors acknowledge limitations (smaller amplitudes, more regular trajectories) while demonstrating that the model achieves its goal of realistic kinematic reproduction within measurement error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The model maintains realistic walking when subjected to external perturbations despite being trained only on unperturbed walking data. The optimal controller compensates for perturbations using proprioceptive feedback, allowing the trajectory generator to sustain realistic joint trajectories. For both impulse and persistent stochastic perturbations, joint angles deviated during perturbations but recovered afterward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 demonstrate the model's generalization capability beyond its training data. Figure 3 and Videos 4-7 show recovery from perturbations. This is a key result showing that the combination of the trajectory generator and optimal controller enables robustness without explicit training on perturbed data. The mechanism (proprioceptive feedback through the controller) is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model's response to perturbations was quantified using a novel kinematic similarity (KS) metric. Larger perturbations led to lower KS values, with impulse perturbations being more challenging than persistent stochastic perturbations. KS was not strongly dependent on walking speed. Impulse perturbations caused greater instantaneous deviations because they affected all legs simultaneously, unlike stochastic perturbations spread over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by the quantitative analysis in Figure 4. The KS metric is well-defined (Methods section) and appropriately applied. The comparison between perturbation types is logical and supported by the data. The explanation for why impulse perturbations are more challenging (simultaneous vs. distributed effects) is reasonable given the model architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "The model was tested across a range of sensory (5-15 ms) and motor (20-40 ms) delay values based on experimental measurements. Without perturbations, the model produced realistic walking with arbitrary delays. However, with perturbations, the model maintained realistic walking only up to approximately 30 ms motor delay and 10 ms sensory delay, consistent with physiological measurements from Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C69 are supported by Figure 5 and appropriate citations to experimental measurements (Tuthill and Wilson, 2016b; Azevedo et al., 2020). The delay estimates are grounded in electrophysiological data. The model's performance degradation beyond physiological delay values is clearly demonstrated. The calculation for distal sensor delays (C69) is reasonable based on conduction velocity estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model's robustness to perturbations was not dependent on walking speed but rather on the total sensorimotor delay. Slower walking did not improve perturbation resistance. Robust walking depended on the sum of motor and sensory delays rather than their individual values. As total delay increased, higher walking frequencies were affected first before complete walking collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by Figure 5C-E and Appendix 9. The finding that walking speed does not affect robustness is counterintuitive but clearly demonstrated. The result that total delay (rather than the ratio of sensory to motor delay) determines robustness is an important insight supported by the systematic parameter sweep shown in Figure 5E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C86"
+    ],
+    "result": "The model maintained robust walking only within the physiological range of delay values (approximately 30 ms motor delay and 10 ms sensory delay). Outside this range, walking became kinematically dissimilar to real flies. These model-derived limits are strikingly close to measured values from Drosophila, suggesting that the fly locomotor control system operates near the temporal limit for detecting and responding to perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 and C86 represent the central conclusion of the paper. The convergence between model predictions and experimental measurements is compelling evidence that sensorimotor delays are a fundamental constraint on fly locomotion. The comparison to measured values (30 ms motor delay from Azevedo et al., 2020; 6-10 ms sensory delay from Tuthill and Wilson, 2016b) strengthens this conclusion. However, this remains a model-based inference rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The optimal controller incorporates predictive compensation for motor delays by predicting future dynamics. The model was sensitive to the prediction horizon, working best when it matched the motor delay. When the prediction horizon was less than the motor delay, the model failed catastrophically, indicating that future predictions are crucial for compensating motor delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 describe a critical design feature of the controller. The sensitivity to prediction horizon and the catastrophic failure when mismatched (C106) provide strong evidence that predictive control is essential for the model's performance. This is supported by the controller formulation (Figure 6, Methods) and citations to relevant control theory (Stenberg et al., 2022) and neuroscience literature (Desmurget and Grafton, 2000; Li et al., 2023).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Robust walking in the presence of perturbations emerged from a local controller combined with a trajectory generator trained only on unperturbed data, without explicit adaptation mechanisms. The layered architecture breaks down multi-legged locomotion into three sub-problems (delayed control, joint kinematic generation, inter-leg coordination), with each layer providing an abstracted interface. This suggests that fast, robust locomotion can be maintained locally with minimal central plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 describe the emergent properties and implications of the model architecture. The finding that robustness emerges without explicit adaptation (C111-C112) is supported by the model's performance on perturbations (Figures 3-5). The layered decomposition (C114-C115) is a design choice that proved effective. The inference about local control (C116) is reasonable given the model's modular structure and performance, though it remains a hypothesis about biological systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The model was trained on high-resolution 3D joint angle data from walking flies, enabled by recent deep learning-based computer vision tools. The multi-layered architecture allows the data-driven model to generalize to new scenarios (large delays and perturbations) without retraining. The model's robustness deteriorates when sensorimotor delays exceed physiological ranges, suggesting that fly sensorimotor control circuits operate close to their temporal limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 summarize key innovations and findings. The use of high-resolution 3D tracking data (C29, citing Karashchuk et al., 2021) is well-documented. The generalization capability (C30) is demonstrated in Figures 3-5. The deterioration beyond physiological delays (C31) is shown in Figure 5. The inference about temporal limits (C32) is the main conclusion, supported by the convergence of model predictions with experimental measurements, though it remains a model-based hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that sensory and motor delays establish a fundamental tradeoff between speed and robustness of fly walking. The model predicts that walking robustness decreases as delays increase at fixed perturbation magnitude. This could be tested experimentally by manipulating conduction velocities through temperature changes. If robustness remains unchanged despite altered delays, this would indicate a stronger role for central control than the model suggests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 present a hypothesis and experimental predictions. The tradeoff hypothesis (C78) is a reasonable interpretation of the model results. The prediction (C79) follows directly from Figure 5. The proposed experimental test (C80-C81) is well-conceived, with appropriate citation to a similar approach in another system (Banerjee et al., 2021). These are appropriately framed as predictions and hypotheses rather than established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In the model, robust locomotion was constrained by cumulative sensorimotor delay rather than the individual delay components. This could be experimentally validated by comparing animals with different ratios of sensory to motor delays, potentially through developmental manipulation of specific neurons or glia. If sensory and motor delays have different effects on walking quality, this would suggest additional compensatory mechanisms beyond those in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 present a model finding (C87, supported by Figure 5E) and proposed experimental tests (C88-C90). The finding that total delay matters more than the ratio is clearly demonstrated. The proposed experiments are reasonable, with appropriate citation (Kottmeier et al., 2020). The interpretation of potential outcomes (C90) appropriately acknowledges model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In the model, which lacks limb compliance and biomechanical adaptations, the fly overcomes perturbations using only proprioceptive feedback. While biomechanical mechanisms might reduce the need for proprioception, the authors hypothesize that removing proprioceptive feedback would impair an insect's ability to sustain locomotion following perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 describe a model property (C98) and a hypothesis (C100). The model's reliance on proprioceptive feedback is a consequence of its design (lacking biomechanical compliance). The speculation about biomechanical mechanisms (C99) is reasonable. The hypothesis (C100) is appropriately framed as such and is consistent with the model results, though it requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose that fly motor circuits may encode predictions of future joint positions to account for motor delays. This hypothesis is supported by recent findings that descending motor commands excite GABAergic interneurons that inhibit velocity-encoding proprioceptors, suggesting predictive suppression of proprioceptive feedback during self-generated movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 present a hypothesis (C108) supported by recent experimental evidence (C109-C110, citing Dallmann et al., 2023). The connection between the model's predictive control mechanism and the experimental finding of predictive suppression is logical and appropriately presented as supporting evidence rather than proof. This represents a testable hypothesis linking the model to neural mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The model simplifies body-leg interactions by excluding dynamical coupling between legs through body mechanics and explicit leg-ground contact interactions. Legs are coupled only neurally through the phase coordinator. Ground interactions were implicitly captured by learned trajectories rather than explicit dynamics. The model focused on motion control (kinematic trajectory matching) rather than dynamics control with force computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 acknowledge important model simplifications. These limitations are clearly stated and justified. The distinction between motion control and dynamics control (C129) is appropriate. The explanation for why ground contact forces were not included (C130) is reasonable given data availability. These are honest assessments of model scope rather than flaws.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C160"
+    ],
+    "result": "The model was trained on 3473 walking bouts from 45 flies, totaling 3049.7 seconds of walking data. Average bout length was 0.877 seconds. The phase coordinator coupling strength of 6.5 was chosen to best reproduce phase coupling distributions from real data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 and C160 describe the training dataset and a key parameter choice. The dataset size is clearly documented. The coupling strength selection (C160) is justified by comparison to data (Appendix 5). These are straightforward methodological details that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Kinematic similarity (KS) was computed by reducing joint angles to two principal components, fitting a Gaussian kernel density estimator to experimental data, and evaluating the log probability density of simulated walking. Two dimensions were chosen because they captured 52.7% of variance and KDE works best in low dimensions. KS was evaluated during perturbations (600-1200 timesteps for persistent, 610-800 for impulse perturbations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C191 describe the KS metric methodology. The approach is clearly documented in Figure 4A and Methods. The choice of two dimensions (C188-C189) is justified by variance explained and practical considerations. The time windows for analysis (C190-C191) are clearly specified. This is a novel and appropriate metric for comparing simulated and real walking kinematics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The introduction establishes that walking animals face fundamental constraints from sensorimotor delays in neural signaling and muscle actuation. These delays limit feedback control performance, though animals may use predictive models and biomechanical adaptations to compensate. Experimental manipulation of delays is challenging, and computational models typically have not included delays as tunable parameters, leaving this area underexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide background context supported by appropriate citations. These establish the motivation for the study. The assessment that delays are underexplored in computational neuroscience (C11) is a reasonable characterization of the field. This background appropriately frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Drosophila is well-suited for studying locomotor control due to available genetic tools, agility, and the only walking animal with a nearly complete synaptic-resolution nervous system map. Flies walk with tetrapod to tripod gaits. Each leg has five joints with seven degrees of freedom, actuated by ~18 muscles innervated by ~70 uniquely identifiable motor neurons that receive thousands of synaptic inputs from hundreds of premotor neurons in the ventral nerve cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 provide biological background about Drosophila locomotion, all supported by appropriate citations. These facts establish why Drosophila is a good model system and provide anatomical context for the model architecture. The information is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Existing models of insect walking take three approaches: coupled oscillators/inverted pendula (kinematic focus), detailed leg mechanics with reactive controllers (physical focus), or normative optimization (de novo generation). These models focus on either kinematic or physiological accuracy but rarely both, produce unrealistic joint kinematics, or require computationally expensive retraining for parameter changes. None systematically explore varying sensorimotor delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 review prior modeling approaches with appropriate citations. The assessment of limitations (unrealistic kinematics, computational expense, lack of delay exploration) is a fair characterization supported by the cited literature. This establishes the gap that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Building and maintaining fast neurons and muscles is energetically expensive, while long delays limit reaction speed and robustness, impacting survival. In flies, leg motor neurons and some proprioceptor axons are among the largest diameter cables in the leg nerve, suggesting selective pressure for speed. The model suggests fly walking operates in a middle ground balancing speed and robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by appropriate citations (Sterling, 2015; More and Donelan, 2018; Phelps et al., 2021). The inference about selective pressure (C84) is reasonable given the anatomical observation. The conclusion about a middle ground (C85) is supported by the model results showing performance within but not far beyond physiological delay ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The modular model architecture could potentially be extended to animals with more legs (isopods, millipedes) through duplication and fine-tuning, or to other locomotor strategies (flying, swimming, slithering, digging) given appropriate data and controllers. The approach could also be applied to biomimetic robotics and represents a layered implementation of imitation learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 discuss potential applications and extensions of the modeling framework. These are appropriately framed as speculative possibilities rather than demonstrated capabilities. The requirements for extension (C120) are clearly stated. The connection to imitation learning (C123) is reasonable with appropriate citations (Hua et al., 2021; Johns, 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "To include ground contact forces and joint torques, the model would require force-based learning in the trajectory generator (new data or physics-based extrapolation) and reformulation of the controller using impedance or hybrid control techniques. This would make perturbation recovery more challenging and might decrease allowable delay values. Integration with virtual physics models is proposed as a promising future direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 discuss future extensions with appropriate technical detail and citations (Buss et al., 2002; Arevalo and Garcia, 2012; Sciavicco and Siciliano, 2012; Lobato-Rios et al., 2022; Wang-Chen et al., 2023; Vaxenburg et al., 2024). The speculation about effects on delay tolerance (C135) is reasonable. These represent thoughtful consideration of how to increase model realism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Real fly proprioception includes femoral chordotonal organs encoding angles and angular derivatives, plus hair plates and campaniform sensilla distributed across legs. More detailed proprioceptor models and biomechanical compliance would likely increase allowable delay ranges, while modeling nonlinearity and noise might decrease them. Different proprioceptor types may have different delays, as observed in stick insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 describe biological proprioception with appropriate citations (Mamiya et al., 2018; Tuthill and Wilson, 2016a). The speculations about effects of increased realism (C139-C140) are reasonable. The observation about differential delays in stick insects (C141, citing Gebehart and B\u00fcschges, 2021) motivates future work (C142).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Future work could constrain the model using synaptic connectivity from Drosophila VNC connectomes, though many physiological parameters remain unknown. The trajectory generator could be replaced with connectome simulations and artificial neural networks. More detailed delay structures from compartmental neuron models could be incorporated. The layered approach provides a framework for learning principles from closed-loop models despite incomplete biological information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 and C152-C155 discuss future directions toward neural realism. The feasibility of connectome-constrained models is supported by recent connectome publications (Azevedo et al., 2024; Takemura, 2023), while acknowledging current limitations (C145). The suggestions are technically sound and represent a logical progression toward increased biological realism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Walking flies continuously change direction and speed during navigation. While flies tend to recover at similar speeds after perturbations, individuals might change speed, phase coupling, or transition to other behaviors. Modeling these higher-level changes would require combining the sensorimotor model with navigation and behavioral transition models. The current model underfits joint angle oscillations, which might be improved through increased network complexity, better training, or accounting for individual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 discuss behavioral complexity beyond the current model scope, with appropriate citations (Katsov et al., 2017; Iwasaki et al., 2024; DeAngelis et al., 2019; Fisher, 2022; Berman et al., 2016). The acknowledgment of underfitting (C150) is honest, with reference to Figure 2 and Appendix 2. Suggestions for improvement (C151) are reasonable with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Many fly walking models ignore feedback, relying on central pattern generators or metachronal waves. Some incorporate proprioceptive feedback for inter-leg coordination timing. Experimental work shows cockroaches rely on central control and mechanical feedback at high speeds, while stick insects depend heavily on proprioceptive feedback. In Drosophila, silencing chordotonal neurons or amputation alters kinematics and coordination, but the role of proprioception in overcoming perturbations has not been previously studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 review the role of feedback in insect locomotion models and experiments, with appropriate citations throughout. The assessment that perturbation recovery via proprioception has not been studied in flies (C97) is a reasonable characterization that motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C163",
+      "C166",
+      "C167",
+      "C168",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C176",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The neural network trajectory generator used ELU nonlinearity, was trained for 300 iterations with batch size 2500 using Adam optimization with 5% dropout and gradient clipping. Training used TensorFlow on NVIDIA RTX 2070 GPU. The model included only joints with large movement ranges during walking. Dynamics equations were derived using SymPyBotics. Simulations ran at 600 Hz for 1800 timesteps, with perturbations applied at specified intervals. Simulations used Intel i9-9940X CPU with GNU Parallel for parallelization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C184 provide detailed methodological information about network architecture, training procedures, model simplifications, and computational implementation. All details are clearly documented with appropriate citations (Clevert et al., 2015; Kingma and Ba, 2017; Srivastava et al., 2014; Sousa, 2013; Tange, 2011; Karashchuk et al., 2021). These are standard methods appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Video visualizations used either a biomechanical fly body model with inverse kinematics optimization (Video 1) or ball-and-stick models (remaining videos). Realistic physics of leg-ground interactions were not simulated in the visualizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C195 describe visualization methods with appropriate citations (Vaxenburg et al., 2024; Hunter, 2007). The acknowledgment that physics was not simulated in visualizations (C194) is an honest limitation statement. These are straightforward methodological details.",
+    "result_type": "MINOR"
+  }
+]

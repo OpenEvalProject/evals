@@ -1,0 +1,389 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Brief optogenetic hand stimulation evokes rapid, self-terminating responses in S1 and M1, with M1 responses delayed (~10 ms) and attenuated (~1/3 amplitude) relative to S1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C22, and C87-C90 provide converging quantitative evidence from experimental recordings showing consistent temporal dynamics (onset latencies, peak latencies, durations) and amplitude relationships between S1 and M1 responses. The measurements are internally consistent and supported by statistical comparisons across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47"
+    ],
+    "result": "Propagation speed from hand to S1 is approximately 20-fold faster (3.0 m/s) than from S1 to M1 (0.14 m/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 provide the distance measurements and latency data used to calculate propagation speeds, with C3, C44, and C47 stating the resulting speed estimates. The calculations are straightforward and the 20-fold difference is consistently reported. However, the large standard deviation for S1-to-M1 speed (0.14 \u00b1 0.11 m/s) indicates substantial variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C102",
+      "C103"
+    ],
+    "result": "Cortical responses exhibit a triphasic pattern (peak-suppression-rebound) with later phases scaling proportionally to initial response amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C27 provide quantitative characterization of all three phases, while C102-C103 interpret this as a sequence of excitation, inhibition, and disinhibition with proportional scaling. The paired-pulse data (C27) and correlation analyses support the functional interpretation of this triphasic pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C57",
+      "C104"
+    ],
+    "result": "PV interneurons are strongly and rapidly recruited during hand stimulation, accounting for ~76% of initial spikes in S1 despite representing a minority of responsive units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C104 provide detailed quantitative characterization of PV unit properties (responsiveness, latency, amplitude), while C9, C32, and C57 consistently report that PV units account for three-quarters of evoked spikes. The data show PV units fire earlier and with higher amplitude than non-PV units, supporting their dominant role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C36",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Selective optogenetic activation of PV neurons alone is sufficient to generate suppression and rebound patterns resembling those evoked by hand stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 provide quantitative data showing that PV activation produces suppression and rebound in both S1 and M1, with C10 and C36 stating this sufficiency. The similarity of the patterns to hand stimulation responses supports a causal role for PV neurons in generating the triphasic response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C37",
+      "C38",
+      "C39",
+      "C75",
+      "C78",
+      "C113"
+    ],
+    "result": "M1 responses to hand stimulation depend on S1 activity, as demonstrated by reduced M1 responses (to 76.2%) when S1 is partially silenced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C113 provide quantitative measurements of response reduction in both S1 and M1 during S1 silencing, with C11, C39, C75, and C78 interpreting this as evidence for S1-dependent M1 responses. The experimental manipulation directly tests the S1\u2192M1 pathway, though residual M1 activity suggests additional pathways may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C53",
+      "C54",
+      "C55",
+      "C80"
+    ],
+    "result": "Laminar profiles of evoked activity match underlying circuit connectivity, with S1 showing middle-layer bias (thalamocortical input) and M1 showing upper-layer bias (corticocortical input).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe the observed laminar patterns, while C53-C55 and C80 relate these to known connectivity patterns from prior work. The consistency between functional activity patterns and anatomical connectivity provides strong support, though the inference relies partly on comparison to cited literature rather than direct connectivity measurements in the same animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The PV-Cre \u00d7 Ai32 mouse line enables specific optogenetic manipulation of peripheral mechanoreceptors and cortical PV interneurons without off-target excitatory neuron activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 describes ChR2 expression in peripheral afferents (supported by Figure 1A), while C81-C84 provide anatomical and electrophysiological validation showing no ChR2 expression in excitatory neurons and dominant GABAergic effects. This methodological validation is critical for interpreting all optogenetic manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Hand photostimulation evokes cortical activity without producing detectable forelimb movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by video motion analysis data (Figure 1\u2014figure supplement 1) showing no significant pixel value changes in the hand region during stimulation. This control is important for establishing that observed cortical responses reflect sensory rather than motor-related activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Rebound responses show laminar profiles and amplitude correlations similar to initial peak responses, with rebound amplitude correlating with peak amplitude but not with suppression parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C97-C100 describe correlation patterns between response phases. The strong correlation between rebound and peak amplitudes (C97) and laminar profiles (C30) suggests common underlying mechanisms, while the lack of correlation with suppression parameters (C99) indicates more complex dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Peak amplitude correlates with onset/peak latency but not with response duration, and S1 and M1 amplitudes are not correlated across experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 describe correlation patterns among response parameters. The negative correlation between amplitude and latency (faster onset = larger amplitude) is well-supported, while the lack of duration-amplitude correlation and cross-area amplitude correlation likely reflects experimental variability in probe placement and sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Baseline firing rates are low in both areas (lower in M1 than S1), with only a subset of units being stimulus-responsive (36.7% in S1, 25.6% in M1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 provide baseline characterization supported by quantitative measurements. However, the authors acknowledge that pooling multi-units and single units is problematic for absolute firing rate characterization, and low baseline rates reflect the quiescent behavioral state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Cortical excitability recovers by 250 ms after hand photostimulation, as shown by paired-pulse experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by paired-pulse data (Figure 4K-N) showing responses return to normal amplitude at 250 ms inter-stimulus intervals. This provides functional evidence for the time course of recovery from suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "During hand stimulation, PV and non-PV units show differential involvement in suppression (higher percentage of PV units suppressed) but similar rebound properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 provide detailed comparison of PV versus non-PV unit behavior across response phases. The data show PV units are more frequently suppressed but both cell types show similar rebound amplitudes and latencies, suggesting complex circuit interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "At low stimulus intensity (25%), cortical photostimulation primarily activates local PV units without producing suppression/rebound or affecting the non-stimulated area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is supported by intensity titration experiments (Figure 7\u2014figure supplement 2) showing dose-dependent effects. This control demonstrates that the suppression/rebound effects require sufficient PV activation and validates the specificity of the manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study builds on established knowledge of somatosensory pathways and recent detailed characterization of mouse hand/forelimb S1\u2192M1 circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C12-C16 establish the prior knowledge foundation through appropriate citations. These claims accurately represent established understanding of somatosensory pathways and recent circuit characterization work, providing proper context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "The measured propagation speeds are consistent with prior measurements in other species and circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C48-C49 compare the current findings to prior literature, showing consistency with known conduction velocities in rat whisker system, human somatosensory pathways, and other mouse corticocortical circuits. These comparisons validate the measurements and place them in broader context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The observed response patterns resemble 'packet'-like activity patterns and optogenetically evoked responses in other circuits, with termination likely involving spike frequency adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 relate the findings to broader concepts in neural dynamics through appropriate citations. The comparisons to packet-like activity and other optogenetic studies are reasonable, though the specific mechanisms of termination (C52) remain somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The findings are consistent with prior characterizations of PV neuron recruitment and rebound mechanisms in S1 and M1, likely involving intrinsic mechanisms and CTC circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C58-C59 appropriately cite prior work on PV recruitment, while C60-C63 discuss rebound mechanisms. However, C62 explicitly states mechanisms are speculative ('likely involving'), and the specific contributions of intrinsic versus circuit mechanisms remain unclear. The consistency with prior work is well-supported, but mechanistic understanding is incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The optogenetic approach offers advantages over electrical stimulation (specificity, no anesthesia required) while enabling cell-type-specific labeling of different somatosensory afferent subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 discuss methodological considerations with appropriate citations. The advantages of optogenetic over electrical stimulation (C66-C67) and the availability of different Cre lines (C68-C69) are well-established in the literature and accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "While alternative pathways to M1 (via S2 or CTC loops) could theoretically contribute, anatomical evidence suggests these are less likely for forelimb proprioceptive pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 and C76-C77 discuss alternative pathways with appropriate citations. The authors acknowledge these possibilities (C70, C74) while providing anatomical evidence (C72-C73) that makes them less likely. This represents appropriate scientific caution in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The S1-to-M1 transcortical loop may be particularly important for mediating rapid adjustments to somatosensory information in the context of motor commands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is explicitly speculative ('may be particularly important') and represents a functional interpretation not directly tested in the current study. While the citation provides theoretical support, the current experiments do not assess behavioral function or motor command integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "S1 onset latencies (15 ms average) are consistent with prior studies using similar optogenetic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 compares the measured latencies to prior work (Emanuel et al., 2021) showing consistency. This validation strengthens confidence in the measurements and methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "PV units lead non-PV units by several milliseconds, consistent with prior observations in the whisker-barrel system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 relates the PV/non-PV latency difference to prior work in the whisker system (Yu et al., 2016). This cross-system comparison supports the generality of PV neuron recruitment dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Prior work has shown PV expression in a subset of layer 5 excitatory neurons, necessitating validation of labeling specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 cites recent work (Palicz et al., 2024) identifying a potential confound, which the authors then address through validation experiments (C81-C84). This demonstrates appropriate attention to methodological rigor.",
+    "result_type": "MINOR"
+  }
+]

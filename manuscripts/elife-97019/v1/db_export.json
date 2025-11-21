@@ -1,0 +1,2419 @@
+{
+  "submission": {
+    "id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T18:06:06.938044Z",
+    "updated_at": "2025-11-21T18:06:06.938044Z"
+  },
+  "content": [
+    {
+      "id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "content_type": "manuscript",
+      "content_text": "# SIRT2-mediated ACSS2 K271 deacetylation suppresses lipogenesis under nutrient stress\n\n## Authors\n\n- Rezwana Karim<sup>1</sup> ([ORCID: 0000-0001-5445-417X](https://orcid.org/0000-0001-5445-417X))\n- Wendi Teng<sup>1</sup>\n- Cameron D Behram<sup>1</sup> ([ORCID: 0009-0000-3271-7872](https://orcid.org/0009-0000-3271-7872))\n- Hening Lin<sup>1</sup> ([ORCID: 0000-0002-0255-2701](https://orcid.org/0000-0002-0255-2701)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Chemical Biology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))\n2. Howard Hughes Medical Institute; Department of Chemistry and Chemical Biology; Department of Molecular Biology and Genetics, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))\n3. Howard Hughes Medical Institute; Department of Medicine and Department of Chemistry, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDe novo lipogenesis is associated with the development of human diseases such as cancer, diabetes, and obesity. At the core of lipogenesis lies acetyl coenzyme A (CoA), a metabolite that plays a crucial role in fatty acid synthesis. One of the pathways contributing to the production of cytosolic acetyl-CoA is mediated by acetyl-CoA synthetase 2 (ACSS2). Here, we reveal that when cells encounter nutrient stress, particularly a deficiency in amino acids, Sirtuin 2 (SIRT2) catalyzes the deacetylation of ACSS2 at the lysine residue K271. This results in K271 ubiquitination and subsequently proteasomal degradation of ACSS2. Substitution of K271 leads to decreased ubiquitination of ACSS2, increased ACSS2 protein level, and thus increased lipogenesis. Our study uncovers a mechanism that cells employ to efficiently manage lipogenesis during periods of nutrient stress.\n\n## Introduction\n\nCellular metabolism is influenced by various factors, including diet, stress, and genetics, which can have significant implications for health (Ameer et al., 2014). Dysregulation of these factors has been linked to the development of diseases such as cancer, diabetes, and obesity (Koundouros and Poulogiannis, 2020; Song et al., 2018). Among the metabolic pathways affected by these disturbances, de novo lipogenesis (DNL) stands out. DNL underlies the pathogenesis of nonalcoholic fatty liver disease and obesity, and is also exacerbated in cancer (Ameer et al., 2014; Nassir et al., 2015). Therefore, gaining a comprehensive understanding of DNL and its regulatory mechanisms is of utmost importance.\n\nAt the core of DNL lies acetyl coenzyme A (acetyl-CoA), a fundamental metabolite that serves as a building block for fatty acid biosynthesis (Zhao, 2025). Two primary pathways contribute to the production of cytosolic acetyl-CoA. One pathway is governed by the enzyme ATP citrate lyase (ACLY), which converts citrate derived from the mitochondrial tricarboxylic acid cycle into acetyl-CoA for DNL (Icard et al., 2020; Feng et al., 2020). The second pathway involves acetyl-CoA synthetase 2 (ACSS2), which catalyzes the ligation of exogenous acetate to CoA, generating acetyl-CoA in an ATP-dependent reaction (Ling et al., 2022; Schug et al., 2015). While acetate is not typically a fuel source in mammalian cells, its uptake increases under conditions of stress, such as low oxygen and nutrient availability (Zhao, 2025; Schug et al., 2016). In the metabolically stressed tumor microenvironment, ACSS2 promotes malignant cell growth by allowing cells to utilize acetate as an additional nutritional source when other carbon sources are scarce (Schug et al., 2015; Miller et al., 2021; Chen et al., 2015). Consequently, ACSS2 has been found to be upregulated in various cancers, including breast and hepatic cancer (Ling et al., 2022; Miller et al., 2021; Gao et al., 2016). Recent studies have implicated ACSS2 in promoting the progression of hepatic steatosis, a condition defined by aberrant fat build-up in the liver (Huang et al., 2018). In a diet-induced obesity model, mice lacking ACSS2 exhibited a significant reduction in body weight, serum cholesterol, as well as lower hepatic triglyceride levels (Huang et al., 2018). These findings underscore the significance of ACSS2 in metabolism and motivate us to further explore the mechanisms regulating its function.\n\nLysine acetylation is gaining recognition as a key regulator of metabolic processes by modifying and impacting metabolic enzymes. Most cytosolic and nuclear lysine acetylation is installed by a set of acetyltransferases, including p300/CBP, PCAF, and HAT1, while the enzymes for most mitochondrial lysine acetylation events remain unknown (Drazic et al., 2016). Lysine acetylation is reversible and can be removed by members of the metal ion-dependent histone deacetylases (HDAC1-11) or NAD+-dependent sirtuin (SIRT1-SIRT7) family of enzymes (Park and Kim, 2020). The catalytic activity of ACSS2 was reported to be inhibited by lysine acetylation on K661 and activated by SIRT1-catalyzed deacetylation (Hallows et al., 2006; Sahar et al., 2014). In our present study, we elucidate a new regulation of ACSS2 by lysine acetylation. Specifically, SIRT2 deacetylates ACSS2 at a specific lysine residue, K271, in response to nutrient stress. This deacetylation event exposes K271 for subsequent ubiquitination, ultimately marking ACSS2 for degradation. This degradation process results in a reduction in fatty acid synthesis, thereby revealing a previously unknown mechanism through which mammalian cells downregulate DNL via ACSS2 deacetylation, ubiquitination, and proteasomal degradation under conditions of nutrient stress.\n\n## Results\n\n### SIRT2 deacetylates ACSS2 under nutrient and amino acid deficiency\n\nHallows et al. revealed that ACSS2 undergoes deacetylation mediated by SIRT1, a class III deacetylase (Hallows et al., 2006). Among the seven known class III deacetylases in mammalian cells (Sirt1-7), SIRT1 and SIRT2 are the major cytosolic members (Carafa et al., 2016; Imai and Guarente, 2014; Wang and Lin, 2021). Given the cytosolic localization of ACSS2, we were interested in investigating whether SIRT2 could also serve as a potential deacetylase for ACSS2. To address this, we ectopically expressed Flag-tagged ACSS2 and HA-tagged SIRT2 in HEK293T cells. We performed immunoprecipitation experiments using anti-acetyl-lysine beads to capture lysine-acetylated proteins, and the acetylation level of ACSS2 was assessed using an anti-Flag antibody. Our results demonstrated that the expression of SIRT2 led to a decrease in ACSS2 acetylation, indicating that SIRT2 is capable of deacetylating ACSS2 (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overexpression of SIRT2 decreases ACSS2 acetylation. Flag-tagged ACSS2 was co-transfected with HA-tagged SIRT2 into HEK293T cells. Acetylation was determined using acetyl lysine IP and then western blot for Flag-ACSS2. (B) ACSS2 is deacetylated by SIRT2 under nutrient stress. Flag-tagged ACSS2 was ectopically expressed in control and SIRT2 knockdown HEK293T cells. SIRT2 knockdown only increased ACSS2 acetylation under nutrient stress. Relative acetylation/Flag ratios were quantified. Error bars represent \u00b1 SD for experiments performed in n=3, with ** indicating p<0.01. (C) ACSS2 is deacetylated by SIRT2 under amino acid deprivation. Flag-tagged ACSS2 was ectopically expressed in control and SIRT2 knockdown HEK293T cells. One set was grown in normal media and one set in Earle's balanced salt solution (EBSS) media (no amino acids). Changes in ACSS2 acetylation was determined by acetyl lysine IP and western blot for Flag. Relative acetylation/Flag ratios were quantified. Error bars represent \u00b1 SD for experiments performed in n=3, with ** indicating p<0.01.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Alk12 labeling results of overexpressed ARF6 in SIRT2 control and knockdown cells showing that SIRT2 demyristylates ARF6 in HEK293T cells as indicated by the increased myristylation signal with SIRT2 knockdown.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig1-figsupp2-v1.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig1-figsupp3-v1.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** HEK293T cells were treated with and without thiomyristoyllysine (TM) (SIRT2 inhibitor) and grown in normal or Earle's balanced salt solution (EBSS) media. Acetylation of ACSS2 was analyzed by acetyl lysine IP and western blot for Flag.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig1-figsupp5-v1.jpg)\n\nTo investigate whether endogenous SIRT2 regulates the acetylation levels of ACSS2, we employed lentiviral-mediated expression of short hairpin RNA (shRNA) to knock down SIRT2 in HEK293T cells. We then immunoprecipitated ectopically expressed Flag-tagged ACSS2 from both control and SIRT2 knockdown cells. However, we did not observe any significant difference in ACSS2 acetylation levels upon SIRT2 knockdown (Figure 1B). In contrast, SIRT2 knockdown was able to increase the myristoylation level of ARF6 (Figure 1\u2014figure supplement 1), a known SIRT2 demyritoylation substrate (Kosciuk et al., 2020). We hypothesized that this could be due to the low basal levels of SIRT2 in cells, which might not yield a substantial deacetylation effect detectable by western blotting. SIRT2 has been reported to be upregulated under various stress conditions, including Golgi stress induced by shigella infection (Wang et al., 2022; Zullo et al., 2018) as well as under conditions of low glucose or amino acid deprivation (Zullo et al., 2018; Wang and Tong, 2009). To induce a stress response that would upregulate SIRT2 and potentially affect ACSS2 acetylation, we subjected cells to nutrient exhaustion by not changing the cell culture media over the course of 4 days (Ma et al., 2013). This resulted in an increase in SIRT2 levels (Figure 1\u2014figure supplement 2) and when SIRT2 was knocked down under this condition, ACSS2 had increased acetylation compared to control knockdown cells (Figure 1B). These findings suggest that the deacetylation of ACSS2 by SIRT2 happens in the context of nutrient stress.\n\nOur initial approach of inducing nutrient exhaustion could be due to a multitude of factors, hence we wanted to deconvolute the specific nutrient stress that led to the enhanced deacetylation of ACSS2. Because previous reports showed that SIRT2 is upregulated under conditions of low glucose or amino acid deprivation (Zullo et al., 2018; Sun et al., 2022), we examined the changes in ACSS2 acetylation in SIRT2 control and knockdown cells under these conditions. We observed that under amino acid deprivation, SIRT2 knockdown increased ACSS2 acetylation levels (Figure 1C). Notably, this effect was not observed under glucose starvation, underscoring the specificity of SIRT2\u2019s deacetylation activity to amino acid stress (Figure 1\u2014figure supplement 3). To further confirm the effect of SIRT2 on ACSS2 acetylation, we employed the SIRT2-specific small molecule inhibitor thiomyristoyllysine (TM) (Figure 1\u2014figure supplement 4). TM increased ACSS2 acetylation under amino acid-starved conditions but not under normal conditions. Furthermore, the acetylation level of endogenous ACSS2 was increased by SIRT2 knockdown (Figure 1\u2014figure supplement 5). These findings align with a previous study demonstrating that amino acid starvation triggers SIRT2 activation and subsequent deacetylation of ATG4B (Sun et al., 2022). Overall, our data indicates that SIRT2 deacetylates ACSS2 in response to nutrient stress, particularly amino acid deprivation.\n\n### Acetylation stabilizes ACSS2 by inhibiting ubiquitination\n\nWe next aimed to investigate how nutrient stress-induced ACSS2 deacetylation by SIRT2 affects ACSS2 function. Consistent with the acetylation data, we found no alterations in the endogenous levels of ACSS2 when SIRT2 was knocked down under normal conditions. However, in the presence of nutrient stress, the endogenous ACSS2 levels exhibited an increase upon SIRT2 knockdown (Figure 2A). This effect was replicated under amino acid starvation (Figure 2B, Figure 2\u2014figure supplement 1) conditions but not under glucose starvation (Figure 1\u2014figure supplement 2). This was replicated in A549 cells as well (Figure 2\u2014figure supplement 2). To further investigate this phenomenon, we used cycloheximide to inhibit translation and assess the stability of ACSS2 under amino acid limitation. We found that ACSS2 exhibited lower stability in the presence of amino acid limitation compared to normal culturing conditions (Figure 2\u2014figure supplement 3). This suggests that under amino acid limitation, when SIRT2 is more active, there is an increased rate of deacetylation and degradation of ACSS2. Furthermore, our data demonstrated that under amino acid limitation, knocking down SIRT2 led to the stabilization of ACSS2 (Figure 2C, Figure 2\u2014figure supplement 4). Importantly, ACSS2 mRNA levels remained largely unaffected by SIRT2 knockdown or amino acid starvation (Figure 2\u2014figure supplement 5). Overall, the data suggests that SIRT2-mediated deacetylation of ACSS2 under amino acid limitation promotes its degradation, revealing a potential mechanism by which nutrient stress modulates ACSS2 function.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-v1.jpg)\n\n**Figure 2.:** (A and B) Endogenous ACSS2 levels increase when SIRT2 was knocked down under nutrient and amino acid stress. SIRT2 control and knockdown HEK293T cells were maintained in normal and nutrient deprived (A) or Earle's balanced salt solution (EBSS) (B) media and endogenous ACSS2 protein levels were determined by western blot. Relative ACSS2/actin ratios were quantified. ACSS2 level quantification was relative to actin. Error bars represent \u00b1 SD for experiments performed in triplicate. (C) Knockdown of SIRT2 stabilizes ACSS2 in amino acid deprived media. SIRT2 control and knockdown HEK293T cells were maintained under EBSS media and treated with cycloheximide (CHX) at the indicated time points. Endogenous ACSS2 level was determined by western blot and quantified. Error bars represent SD for experiments performed in n=3. (D) Endogenous ACSS2 accumulated by treatment of proteasome inhibitor MG132. HEK293T cells were treated with or without MG132. Cells were treated with EBSS media. Endogenous ACSS2 level was determined by western blot and quantified. Error bars represent SD for experiments performed in triplicate. (E) ACSS2 is ubiquitinated. Flag-tagged ACSS2 was transfected into HEK293T cells. The cells were then treated with MG132. Ubiquitination of immunoprecipitated ACSS2 was determined using a pan-ubiquitin antibody. (F) Knockdown of SIRT2 decreases ACSS2 ubiquitination. Flag-ACSS2 was co-transfected with HA-tagged K48 ubiquitin into SIRT2 control and knockdown HEK293T cells. Cells were maintained in EBSS media. Ubiquitination of purified Flag-ACSS2 was analyzed by western blot. (G) Inhibition of SIRT2 with thiomyristoyllysine (TM) decreases ACSS2 ubiquitination. Flag-tagged ACSS2 was transfected into HEK293T cells with or without TM treatment. Cells were maintained in EBSS media. Ubiquitination of immunoprecipitated protein was detected using K48 ubiquitin antibody. (H) SIRT2 deacetylates ACSS2 at K271. Flag-tagged ACSS2 wild-type (WT) and K271R mutant were ectopically expressed in control and SIRT2 knockdown HEK293T cells. Cells were maintained in EBSS media. Acetylation levels were detected by western blot. (I) Knockdown of SIRT2 does not change K271R ACSS2 ubiquitination. Flag-tagged WT and K271R ACSS2 were co-transfected with HA-tagged K48 ubiquitin into SIRT2 control and knockdown HEK293T cells. Ubiquitination of purified proteins was analyzed by western blot and quantified. Ubiquitination quantification is relative to Flag tag. Error bars represent SD for experiments performed in triplicate. (J) ACSS2 K271R mutant is more stable than WT. Flag-tagged ACSS2 WT or K271R mutant were ectopically expressed in HEK293T cells. Cells were treated with CHX to inhibit protein synthesis. The levels of the WT and K271R mutant ACSS2 at different time points were determined by western blot and quantified. Error bars represent SD for experiments performed in triplicate.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** SIRT2 control and knockdown A549 cells were maintained in Earle's balanced salt solution (EBSS) or normal and nutrient deprived media and endogenous ACSS2 protein levels were determined by western blot.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** HEK293T cells were maintained in normal and Earle's balanced salt solution (EBSS) media and treated with cycloheximide (CHX) and for various time points. Endogenous ACSS2 protein levels were analyzed by western blot.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** There are no significant changes in ACSS2 levels.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Each data point is a biological replicate.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Each data point is a biological replicate.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp7-v1.jpg)\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp8-v1.jpg)\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig2-figsupp9-v1.jpg)\n\nTo elucidate the mechanism via which acetylation regulates ACSS2 protein levels, we initially examined whether it undergoes degradation via the lysosome or the proteasome. We treated cells with bafilomycin (Baf), which inhibits lysosomal acidification, and MG132, a proteasome inhibitor (Mauvezin and Neufeld, 2015; Zhang et al., 2013). Endogenous ACSS2 levels increased with MG132 treatment but not with Baf, indicating that ACSS2 is degraded through the proteasomal pathway (Figure 2D, Figure 2\u2014figure supplement 6). Moreover, we readily observed ubiquitination of Flag-ACSS2 (Figure 2E). Given that SIRT2 knockdown increased endogenous ACSS2 levels, we further investigated whether SIRT2 regulates the ubiquitination of ACSS2. Notably, we found that knockdown or inhibition of SIRT2 in amino acid deprived media led to a decrease in ACSS2 K48-linked ubiquitination (Figure 2F and G), a hallmark of proteasomal degradation, suggesting that SIRT2 regulates the ubiquitination and degradation of ACSS2 through the proteasome pathway (Kwon and Ciechanover, 2017). The data together suggest that SIRT2 deacetylates ACSS2 to promote its ubiquitination and proteasomal degradation.\n\nTo further confirm this model and investigate the physiological significance of ACSS2 regulation by SIRT2, we aimed to identify the specific lysine residue deacetylated by SIRT2. Utilizing label-free quantification mass spectrometry, we analyzed purified Flag-tagged ACSS2 from control and SIRT2 knockdown cells. Our analysis showed that ACSS2 acetylation levels at K271 increased in SIRT2 knockdown cells (Supplementary file 1). SIRT2 knockdown failed to affect the acetylation level for the K271R mutant in amino acid deprived media, indicating that K271 is the site of deacetylation by SIRT2 (Figure 2H, Figure 2\u2014figure supplement 7). In contrast, the acetylation level of ACSS2 K661R mutant was still regulated by SIRT2 (Figure 2\u2014figure supplement 8). These observations collectively indicate that SIRT2 deacetylates ACSS2 at K271, which is different from previously reported SIRT1-regulated K661 deacetylation.\n\nInterestingly, data from the global characterization of the ubiquitin-modified proteome indicated that ACSS2 can be ubiquitinated at the K271 (Kim et al., 2011). To validate this, we tested the K48-linked ubiquitination of K271R and K271Q mutants, and both mutants showed a decrease in ACSS2 ubiquitination levels (Figure 2\u2014figure supplement 9). SIRT2 knockdown in amino acid deprived media decreased the ubiquitination of WT ACSS2, but not the ubiquitination of the K271R mutant (Figure 2I). Furthermore, the K271R mutant exhibited enhanced stability compared to the wild-type (WT) ACSS2 when cells were cultured in Earle\u2019s balanced salt solution (EBSS) medium lacking amino acids (Figure 2J). Collectively, our findings suggest that under amino acid limitation, SIRT2 deacetylates K271, thereby exposing the site for ubiquitination and leading to subsequent degradation of ACSS2.\n\n### Acetylation of ACSS2 promotes DNL\n\nACSS2 is known to be involved in DNL. Deletion of ACSS2 in mice results in reduced body weight and lipid deposition, while mutation of S236, a phosphorylation site on ACSS2, leads to increased triglyceride levels in adipocytes (Huang et al., 2018; Shaik et al., 2016). Based on our finding that ACSS2 is deacetylated and regulated by SIRT2, we next wanted to test whether this regulation could play a role in DNL.\n\nTo investigate this, we conducted a knockdown of endogenous ACSS2 in mouse 3T3-L1 preadipocytes and reintroduced either WT or the K271R mutant ACSS2 through transfection. To ensure comparable expression levels at the beginning, we adjusted the amount of transfected DNA for both WT and the K271R mutant ACSS2. Western blot analysis confirmed the successful knockdown of ACSS2 and the restoration of ACSS2 expression levels with both the WT and K271R mutant (Figure 3A). The cells were then subjected to adipocyte differentiation protocol. After 7 days, we observed that the protein level of the K271R mutant was higher than that of the WT ACSS2 (Figure 3B). This is consistent with our finding above that K271R mutation suppresses the ubiquitination and degradation of ACSS2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig3-v1.jpg)\n\n**Figure 3.:** (A) Endogenous ACSS2 was stably knocked down with short hairpin RNA (shRNA) in 3T3L1 cells and then wild-type (WT) or K271R mutant of ACSS2 was re-expressed in the knockdown cells to a level that is compatible with endogenous ACSS2. ACSS2 knockdown efficiency and re-expression levels were determined by western blot. (B) The cell lysate at days 0 and 7 were collected and ACSS2 level was measured by western blot. (C, D) Inhibition of SIRT2 with thiomyristoyllysine (TM) results in increased neutral lipid accumulation in cells expressing ACSS2 WT but not in cells expressing ACSS2 K271R mutant. The differentiation media was supplemented with 1.5 mM acetate. Accumulation of neutral lipids in differentiated adipocytes was measured using Oil Red O. Neutral lipid accumulation is quantified (C) by measuring the absorbance of stained neutral lipids at 500 nm on a plate reader. Representative cell imaging is shown in (D). Statistical analysis was performed using an unpaired two-tailed Student\u2019s t-test, with * indicating p<0.05 and ** indicating p<0.01.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Thiomyristoyllysine (TM) treatment in 3T3-L1 cells results in increased levels of endogenous ACSS2. (B) Inhibition of SIRT2 with TM leads to an increase in wild-type (WT) ACSS2 levels but does not affect the levels of the K271R mutant. (C) Oil Red O quantification shows that cells expressing the K271R mutant accumulate higher levels of lipids.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Overexpressed ACSS2-Flag WT, K271R, and K271Q was purified from SIRT2 knockdown HEK293T cells. ACSS2 activity was determined by measuring the formation of acetyl coenzyme A (acetyl-CoA) from acetate and CoA over time.\n\nWe determined the lipogenesis with Oil Red O staining, which detects lipid droplets in cells. During the differentiation process, we supplemented the media with acetate to induce lipogenesis through the ACSS2 pathway. Additionally, post differentiation and before reading out the Oil Red O staining, we cultured the cells for 3 more days without changing media to have a nutrient limiting condition. In the ACCS2 knockdown cells, re-expression of WT ACSS2 increased lipid accumulation based on Oil Red O staining of differentiated adipocytes, thereby validating ACSS2\u2019s functional role in DNL. Consistent with our above observation that ACSS2 K271R mutant is more stable than the WT, expressing the K271R mutant lead to more lipid droplets than expressing the WT ACSS2 (Figure 3\u2014figure supplement 1).\n\nTo find out whether SIRT2-mediated deacetylation of ACSS2 K271 affect lipogenesis, we used the SIRT2 small molecule inhibitor, TM. The inhibition of SIRT2 using TM increased lipid accumulation in cells with WT ACSS2, but not in cells with the K271R mutant that cannot be deacetylated by SIRT2 (Figure 3C and D). To make sure the mutants were enzymatically active, we isolated Flag-tagged WT, K271R, and K271Q ACSS2 proteins from SIRT2 knockdown HEK293T cells. Subsequently, we examined acetyl-CoA formation from acetate and CoA using high-performance liquid chromatography (HPLC). Our findings indicate that while the WT ACSS2 exhibits slightly higher activity compared to the K271R and K271Q mutants, all variants remain functional (Figure 3\u2014figure supplement 2). The slight reduction in acetyl-CoA formation for the K271R mutant may explain the relatively modest increase in lipid droplet formation observed in Figure 3D. These findings are consistent with the model that SIRT2 deacetylates ACSS2 on K271 to promote ACSS2 ubiquitination and degradation, and thus inhibiting lipogenesis (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97019/elife-97019-fig4-v1.jpg)\n\n**Figure 4.:** Under amino acid stress, SIRT2 actively deacetylates ACSS2 at K271, which reveals the site for ubiquitination and leads to the degradation of ACSS2. This downregulation of ACSS2 protein level results in decreased de novo lipogenesis (DNL). On the contrary, without amino acid stress, acetylation at K271 protects ACSS2 from degradation resulting in higher DNL.\n\n## Discussion\n\nOur study here identified ACSS2 K271 as a new substrate for SIRT2-mediated deacetylation. Interestingly, SIRT2-mediated ACSS2 K271 deacetylation only becomes obvious/important during nutrient (amino acid) limitation. K271 deacetylation leads to the ubiquitination and degradation of ACSS2, resulting in reduced lipogenesis (see working model in Figure 4). This regulatory mechanism can help to maintain cellular homeostasis by limiting lipogenesis under amino acid limitation. SIRT2 has been reported to be upregulated by several stresses, including Golgi stress caused by bacterial infection and nutrient depletion (Wang et al., 2022; Zullo et al., 2018). Thus, SIRT2 is increasingly recognized as a stress response protein. Our study here provides an interesting mechanism through which cells sense one metabolic stress (amino acid limitation) to regulate a different metabolic pathway (lipogenesis) by calling on SIRT2.\n\nDNL is a tightly regulated metabolic pathway responsible for converting excess carbons derived from carbohydrates or amino acids into fatty acids, contributing to triglyceride synthesis and storage. Dysregulation of DNL is associated with metabolic disorders such as obesity and nonalcoholic fatty liver disease. SIRT2 has been implicated in the regulation of DNL (Wang et al., 2019). SIRT2 is widely expressed in metabolically active tissues including adipose tissue and exerts its influence on DNL through the deacetylation of several proteins (Gomes et al., 2015). One important target of SIRT2 deacetylation is FoxO1, a transcription factor involved in adipogenesis. During calorie restriction, SIRT2-mediated deacetylation of FoxO1 promotes its nuclear localization, where it suppresses the transcription of PPAR\u03b3, a master regulator of adipocyte differentiation (Wang and Tong, 2009; Hernandez-Quiles et al., 2021). SIRT2 also suppresses ACLY, an enzyme responsible for the conversion of citrate to acetyl-CoA for fatty acid synthesis. SIRT2-mediated degradation of ACLY decreases acetyl-CoA production, thereby inhibiting DNL (Lin et al., 2013; Guo et al., 2019). Our finding here revealed that SIRT2 could also regulate another protein involved in DNL, ACSS2. Thus, it seems that SIRT2 can inhibit DNL through deacetylating many different substrate proteins.\n\nACSS2 has been reported to be activated by SIRT1-catalyzed deacetylation on K661 (Hallows et al., 2006). Subsequently, a follow-up investigation unveiled the role of the circadian clock in modulating intracellular acetyl-CoA levels through regulation of ACSS2 enzymatic activity. This study demonstrated the cyclic nature of ACSS2 acetylation, with rhythmicity dependent on a functional circadian clock. Specifically, deacetylation of K661 by SIRT1 was found to activate ACSS2, leading to periodic increases in acetyl-CoA production (Sahar et al., 2014). Conversely, our research elucidates a contrasting mechanism wherein SIRT2 inhibits ACSS2 by deacetylating K271 under conditions of nutrient stress. The dual regulation of ACSS2 by SIRT1 through the circadian clock and SIRT2 under nutrient stress underscores the intricate and multifaceted nature of regulatory mechanisms involved in lipid metabolism. These findings underscore the versatility of lysine acetylation in modulating cellular metabolic pathways.\n\nFurthermore, our study is complemented by research demonstrating the interconnection of metabolic pathways in response to nutrient levels. For instance, Guo and Cavener found that GCN2 kinase, which responds to amino acid scarcity, regulates lipid metabolism by suppressing lipogenesis in response to amino acid deprivation (Guo and Cavener, 2007). This highlights the intricate interplay between amino acid metabolism and lipid metabolism, further emphasizing the significance of understanding the regulatory mechanisms involving enzymes like ACSS2 in various metabolic contexts. Collectively, these studies contribute to a better understanding of how SIRT1 and SIRT2 regulate ACSS2 activity in various metabolic contexts, thereby enhancing our knowledge of acetate metabolism and its implications in health and disease.\n\nOur study provides further support for the important roles of SIRT2 in curbing DNL. DNL underlies many human diseases, including obesity and nonalcoholic liver disease (Yki-J\u00e4rvinen et al., 2021). Given the role of SIRT2 in suppressing DNL, methods that can increase SIRT2 activity or protein levels may be useful for treating human diseases involving DNL.\n\n## Methods\n\n### Reagents\n\nAnti-Flag affinity gel (A2220), anti-Flag antibody conjugated with horse radish peroxidase (A8592, 1:10,000), and HA antibody (SAB4300603, 1:1000) were purchased from Sigma-Aldrich. Antibody against \u03b2-actin (sc-47778, 1:1000) was purchased from Santa Cruz Biotechnology. Antibodies against SIRT2 (#12650, 1:1000), ACSS2 (D19C6, 1:1000), Ubiquitin (E4I2J, 1:1000), K48-linkage Specific Polyubiquitin (#4289, 1:1000) were purchased from Cell Signaling Technology. PTM antibodies anti-Kac (cat. #PTM-101) were purchased from PTM Biolabs Inc (Chicago, IL, USA). Protease inhibitor cocktail, bafilomycin A1, cycloheximide, and adipocyte differentiation cocktail were purchased from Sigma-Aldrich. ECL plus western blotting detection was purchased from Thermo Scientific. Polyethyleneimine (PEI) was purchased from Polysciences (24765). MG132 was purchased from Cayman. TM was made as previously described (Jing et al., 2016).\n\n### Cloning and mutagenesis\n\nACSS2 expression vector with Flag tag (NM_018677) was purchased from Origene (Rockville, MD, USA) for mammalian expression. To create ACSS2 K271 mutant constructs, site-directed mutagenesis via Quick Change PCR amplification was performed using the following primers: K271R Forward: 5\u2019-CAGTCCCCCCCAATTAGG AGGTCATGCCCAGAT-3\u2019 Reverse: 5\u2019- CCTAATTGGGGGGGACTGGCTGGTGGAGTCACC-3\u2019. K271Q Forward: 5\u2019 -CAGTCCCCCCCAATT CAG AGGTCATGCCCAGAT-3\u2019. Reverse: 5\u2019-CTGAATTGGGGGGGACTGGCTGGTGGAGTCACC-3\u2019.\n\npRK5-HA-Ubiquitin-K48 was a gift from Ted Dawson (Addgene plasmid # 17605; http://n2t.net/addgene:17605; RRID:Addgene_17605).\n\nSIRT2 WT and H187Y mutant expression vector with Flag tag was made as previously described (Jing et al., 2017).\n\n### Immunoblotting\n\nACSS2 expression plasmid was transfected into HEK293T cells using PEI transfection reagent following the manufacturer\u2019s protocol. The pCMV-Tag4a empty vector was used as the negative control. After overnight transfection, cells were washed twice with ice-cold PBS and collected by centrifugation at 1000\u00d7g for 5 min. Cells were then lysed in 1 mL of 1% NP-40 lysis buffer (25 mM Tris-HCl, pH 7.8, 150 mM NaCl, 10% glycerol, and 1% NP-40) with protease inhibitor cocktail (1:100 dilution) by rocking at 4\u00b0C for 30 min. After centrifugation at 17,000\u00d7g for 30 min, the supernatant was collected, and protein concentration was determined with the Bradford assay (23200, Thermo Fisher). Normalized lysates were incubated with 20 \u03bcL of anti-Flag affinity gel or anti-Acetyl-Lysine (mAb mix) Affinity Beads (Cytoskeleton, Inc, AAC04-beads) at 4\u00b0C for 2 hr. The affinity gel was washed three times with washing buffer (25 mM Tris-HCl, pH 7.8, 150 mM NaCl, 0.2% NP-40). Beads were dried with gel loading tips and resuspended in 30 \u03bcL of 1\u00d7 SDS loading dye. Western blot analysis was carried out according to standard methods.\n\n### Cell culture\n\nHEK293T cells were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) (11965-092, Gibco) with 10% calf serum (C8056, Sigma-Aldrich). SIRT2 stable knockdown HEK293T cells were generated as previously described. Cells were washed with phosphate buffer saline (PBS) 24 hr post transfection and grown in EBSS (24010043, Thermo Fisher) with 10% calf serum for 16 hr to induce amino acid stress.\n\n3T3-L1 (American Type Culture Collection, ATCC, Manassas, VA, USA) preadipocytes were cultured in high-glucose (400 mg/dL) DMEM (11965-092, Gibco) containing 10% fetal bovine serum (26140079, Gibco). For ACSS2 shRNA stable knockdown, lentivirus was generated by co-transfection of pLKO.1 with shRNA sequences specific to ACSS2 (TRCN0000045563, Millipore), pCMV-dR8.2, and pMD2.G plasmids into HEK293T cells. The cell medium was collected 48 hr after transfection and used to infect early passage cultures of 3T3L1 cells. After 72 hr, infected cells were treated with 1.5 \u03bcg/mL puromycin to select for stably incorporated shRNA constructs. The empty pLKO.1 vector was used as a negative control. ACSS2 WT and K271R mutant Flag-tagged expression plasmids were transfected into ACSS2 knockdown 3T3-L1 cells using PEI transfection reagent following the manufacturer\u2019s protocol. The pCMV-Tag4a empty vector was used as the negative control. Differentiation of 3T3L1 cell lines were done according to the manufacturer\u2019s protocol (DIF001-1KT, Sigma-Aldrich) 24 hr after transfection. Differentiation media was supplemented with 1.5 mM acetate (S5636, Sigma-Aldrich) and the cells were cultured for 3 days more post differentiation without changing media to mimic a nutrient limiting condition. Oil Red O of the differentiated cells was carried out according to standard protocol.\n\n### Detection of acetylated ACSS2 peptides by LC-MS/MS\n\nOverexpressed ACSS2-Flag was purified from SIRT2 control and knockout HEK293T cells by immunoprecipitation with anti-Flag affinity beads. The purified protein was digested with 1.5 mg of trypsin in a glass vial at 37\u00b0C for 2 hr, and then desalted using Sep-Pak C18 cartridge. The peptides were processed as previously described (Miller et al., 2022), and data was acquired using Xcalibur 2.2 operation software.\n\n### ACSS2 activity assay\n\nACSS2 activity was monitored by detecting the acetyl-CoA formation using HPLC. A reaction buffer (60 mM potassium phosphate pH 7.5, 3 mM ATP, 0.1 mM CoA, 4 mM MgCl2, 1 mM DTT, 0.24 mM sodium acetate) was prepared. Reactions were prepared with 0.04 \u03bcg of recombinant human ACSS2 protein. All samples were incubated at 37\u00b0C for the indicated time after which it was quenched with 10 \u03bcL of glacial acetic acid. After vortexing and centrifuging at 17,000\u00d7g for 5 min to remove the precipitated enzyme, the supernatant was loaded to HPLC with a Kinetex EVO C18 column (100\u00d74.60 mm, 5 \u03bcM, 100 \u00c5) for analysis. All experiments were performed in duplicate. The amount of acetyl-CoA formed over time was detected and quantified.\n\n### Data analysis\n\nStatistical analysis was performed using Prism (GraphPad Software). Experimental values are shown as mean \u00b1 SEM. Statistical significance between two groups was determined using the two-tailed Student\u2019s t-test. One-way ANOVA was applied for multigroup comparisons. p-Values<0.05 were considered significant.\n",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lydia WS Finley, https://ror.org/02yrq0923 Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97019.3.sa0](https://doi.org/10.7554/eLife.97019.3.sa0)\n\nThis useful study describes a role for acetylation in controlling the stability of acetyl-CoA synthetase 2, which converts acetate to acetyl-CoA for de novo lipid synthesis. While many aspects of the study are solid, some evidence supporting these findings is incomplete. Including direct demonstration of target deacetylation by sirtuin 2, revisiting statistical analyses, and confirming generalizability to adipocyte cell lines would further strengthen the study. This work will be of interest to researchers studying lipid metabolism and related diseases.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97019.3.sa1](https://doi.org/10.7554/eLife.97019.3.sa1)\n\nSummary:\n\nIn this manuscript, the authors delineate the crucial role of the SIRT2-ACSS2 axis in ACSS2 degradation. They demonstrate that SIRT2 acts as an ACSS2 deacetylase specifically under nutrient stress conditions, notably during amino acid deficiency. The SIRT2-mediated deacetylation of ACSS2 at K271 consequently triggers its proteasomal degradation. Additionally, they illustrate that acetylation of ACSS2 at K271 enhances ACSS2 protein levels, thereby promoting De Novo lipogenesis.\n\nStrengths:\n\nThe findings presented in this manuscript are clearly interesting.\n\nWeaknesses:\n\nFurther support is required for the model put forward by the authors.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97019.3.sa2](https://doi.org/10.7554/eLife.97019.3.sa2)\n\nSummary:\n\nKarim et al investigated the regulation of ACSS2 by SIRT2. The authors identified a previously undescribed acetylation that they then show is important for the regulation and stability of ACSS2 in cells. The authors show that ACSS2 ubiquitination and degradation by the proteasome is regulated by SIRT2-mediated deacetylation of ACSS2 and that stabilizing ACSS2 by blocking SIRT2 can alter lipid accumulation in adipocytes.\n\nStrengths:\n\nIdentification of a novel acetylation site on ACSS2 that regulates its protein stability and that has consequences on its activity in adipocytes. Multiple standard approaches were used to manipulate the expression and function of SIRT2 and ACSS2 (i.e., overexpression, knockdown, inhibitors).\n\nWeaknesses:\n\nThroughout the manuscript, normalizing the data to 1 and then comparing the fold-change using a t-test is not the best statistical approach in that situation since every normalized value for control is 1 with zero standard deviation. The authors should consider an alternative statistical approach.\n\nThough not necessary, using 13C-acetate or D3-acetate tracing would be better for understanding the impact of acetylation on the activity of ACSS2 and its impact on lipogenesis.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97019.3.sa3](https://doi.org/10.7554/eLife.97019.3.sa3)\n\nSummary:\n\nManuscript shows SIRT2 can regulate acetylation of ACSS2 at residue 271, acetylation of 271 protects ACSS2 from proteasomal degradation in a SIRT2-dependent manner. Lastly authors show that ACSS2 acetylation at K271 promotes lipid accumulation.\n\nStrengths:\n\nAuthor provide solid data showing ACSS2 acetylation can be regulated by targeting SIRT2 and that SIRT2 regulates ACSS2 ubiquitination. They identify K271 as a site of acetylation and show this is a site when mutated alters SIRT2-mediated ubiquitination.\n\nWeaknesses:\n\nHowever, data for this manuscript seems preliminary as nearly all data is performed in one cell line, some of the conclusions not well supported by data and overall role of ACSS2 K271 acetylation is not well characterized.\n",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6d038ca4-6555-4243-ac1d-82ac286c030f",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C1",
+      "claim": "De novo lipogenesis is associated with the development of human diseases such as cancer, diabetes, and obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo lipogenesis is associated with the development of human diseases such as cancer, diabetes, and obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ameer et al., 2014 in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "45ef423f-21d5-4b0f-b149-a60b611d460f",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C2",
+      "claim": "Acetyl coenzyme A (CoA) plays a crucial role in fatty acid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "At the core of lipogenesis lies acetyl coenzyme A (CoA), a metabolite that plays a crucial role in fatty acid synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "6f200bfb-64ff-4da1-b128-7fc5c2976523",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C3",
+      "claim": "SIRT2 catalyzes the deacetylation of ACSS2 at the lysine residue K271 when cells encounter nutrient stress, particularly a deficiency in amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we reveal that when cells encounter nutrient stress, particularly a deficiency in amino acids, Sirtuin 2 (SIRT2) catalyzes the deacetylation of ACSS2 at the lysine residue K271.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including mass spectrometry and western blot analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "37c07172-5fbd-4378-a9d3-86afb42119f1",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C4",
+      "claim": "K271 deacetylation results in K271 ubiquitination and subsequently proteasomal degradation of ACSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in K271 ubiquitination and subsequently proteasomal degradation of ACSS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing ubiquitination and degradation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "6672d90e-e916-4f69-b626-98a5634931e6",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C5",
+      "claim": "Substitution of K271 leads to decreased ubiquitination of ACSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of K271 leads to decreased ubiquitination of ACSS2, increased ACSS2 protein level, and thus increased lipogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing K271R mutant has decreased ubiquitination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "aab84fc7-10ae-4a11-bc56-c7c55d549207",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C6",
+      "claim": "Substitution of K271 leads to increased ACSS2 protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of K271 leads to decreased ubiquitination of ACSS2, increased ACSS2 protein level, and thus increased lipogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data showing K271R mutant has higher protein levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "5a558405-3555-4f54-8d06-edf4cc4f4c10",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C7",
+      "claim": "Substitution of K271 leads to increased lipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of K271 leads to decreased ubiquitination of ACSS2, increased ACSS2 protein level, and thus increased lipogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Oil Red O staining data showing increased lipid accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "35b490ee-243f-4c5f-a48e-bdd7d6a70e2c",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C8",
+      "claim": "DNL underlies the pathogenesis of nonalcoholic fatty liver disease and obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "DNL underlies the pathogenesis of nonalcoholic fatty liver disease and obesity, and is also exacerbated in cancer (Ameer et al., 2014; Nassir et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ameer et al., 2014 and Nassir et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "0ca1458a-27b7-43ba-bd7d-7d204e770c67",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C9",
+      "claim": "DNL is exacerbated in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "DNL underlies the pathogenesis of nonalcoholic fatty liver disease and obesity, and is also exacerbated in cancer (Ameer et al., 2014; Nassir et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ameer et al., 2014 and Nassir et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "db72f2cb-9806-4423-89b3-b130ce609e54",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C10",
+      "claim": "ACLY converts citrate derived from the mitochondrial tricarboxylic acid cycle into acetyl-CoA for DNL.",
+      "claim_type": "EXPLICIT",
+      "source": "One pathway is governed by the enzyme ATP citrate lyase (ACLY), which converts citrate derived from the mitochondrial tricarboxylic acid cycle into acetyl-CoA for DNL (Icard et al., 2020; Feng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Icard et al., 2020 and Feng et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "a01acf17-aca5-4b74-87ed-256b471d203a",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C11",
+      "claim": "ACSS2 catalyzes the ligation of exogenous acetate to CoA, generating acetyl-CoA in an ATP-dependent reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The second pathway involves acetyl-CoA synthetase 2 (ACSS2), which catalyzes the ligation of exogenous acetate to CoA, generating acetyl-CoA in an ATP-dependent reaction (Ling et al., 2022; Schug et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ling et al., 2022 and Schug et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "791dbfd5-1df8-46c7-8f53-50eceb2f5c37",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C12",
+      "claim": "Acetate uptake increases under conditions of stress, such as low oxygen and nutrient availability.",
+      "claim_type": "EXPLICIT",
+      "source": "While acetate is not typically a fuel source in mammalian cells, its uptake increases under conditions of stress, such as low oxygen and nutrient availability (Zhao, 2025; Schug et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhao, 2025 and Schug et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "8e8aa70d-38a5-4d1c-9e0d-7060162a9e58",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C13",
+      "claim": "ACSS2 promotes malignant cell growth by allowing cells to utilize acetate as an additional nutritional source when other carbon sources are scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "In the metabolically stressed tumor microenvironment, ACSS2 promotes malignant cell growth by allowing cells to utilize acetate as an additional nutritional source when other carbon sources are scarce (Schug et al., 2015; Miller et al., 2021; Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schug et al., 2015, Miller et al., 2021, and Chen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "586382b8-1b4b-467e-8937-bc69067183d6",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C14",
+      "claim": "ACSS2 has been found to be upregulated in various cancers, including breast and hepatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, ACSS2 has been found to be upregulated in various cancers, including breast and hepatic cancer (Ling et al., 2022; Miller et al., 2021; Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ling et al., 2022, Miller et al., 2021, and Gao et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "8b377fe3-ae4d-4dcb-bced-fb894a3f8d6a",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C15",
+      "claim": "ACSS2 has been implicated in promoting the progression of hepatic steatosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have implicated ACSS2 in promoting the progression of hepatic steatosis, a condition defined by aberrant fat build-up in the liver (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Huang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "b4461849-041e-41bb-94ed-307018b5f557",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C16",
+      "claim": "Mice lacking ACSS2 exhibited a significant reduction in body weight, serum cholesterol, as well as lower hepatic triglyceride levels in a diet-induced obesity model.",
+      "claim_type": "EXPLICIT",
+      "source": "In a diet-induced obesity model, mice lacking ACSS2 exhibited a significant reduction in body weight, serum cholesterol, as well as lower hepatic triglyceride levels (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Huang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "f6317df1-4200-475c-8259-ae9056ed41cb",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C17",
+      "claim": "Most cytosolic and nuclear lysine acetylation is installed by a set of acetyltransferases, including p300/CBP, PCAF, and HAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cytosolic and nuclear lysine acetylation is installed by a set of acetyltransferases, including p300/CBP, PCAF, and HAT1, while the enzymes for most mitochondrial lysine acetylation events remain unknown (Drazic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Drazic et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "dccc64f0-ea7d-4e75-863d-7ca589f56f57",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C18",
+      "claim": "The enzymes for most mitochondrial lysine acetylation events remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cytosolic and nuclear lysine acetylation is installed by a set of acetyltransferases, including p300/CBP, PCAF, and HAT1, while the enzymes for most mitochondrial lysine acetylation events remain unknown (Drazic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Drazic et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "f6f292a8-9185-43ee-8111-7085e59e82d7",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C19",
+      "claim": "Lysine acetylation can be removed by members of the metal ion-dependent histone deacetylases (HDAC1-11) or NAD+-dependent sirtuin (SIRT1-SIRT7) family of enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysine acetylation is reversible and can be removed by members of the metal ion-dependent histone deacetylases (HDAC1-11) or NAD+-dependent sirtuin (SIRT1-SIRT7) family of enzymes (Park and Kim, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Park and Kim, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "042376d8-bd02-4642-a62a-7453de11991d",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C20",
+      "claim": "The catalytic activity of ACSS2 was reported to be inhibited by lysine acetylation on K661.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic activity of ACSS2 was reported to be inhibited by lysine acetylation on K661 and activated by SIRT1-catalyzed deacetylation (Hallows et al., 2006; Sahar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hallows et al., 2006 and Sahar et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ff0546a0-8cdd-4854-bd83-84cdb32966eb",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C21",
+      "claim": "The catalytic activity of ACSS2 is activated by SIRT1-catalyzed deacetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic activity of ACSS2 was reported to be inhibited by lysine acetylation on K661 and activated by SIRT1-catalyzed deacetylation (Hallows et al., 2006; Sahar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hallows et al., 2006 and Sahar et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "aa3fb33d-ee7b-481e-a14b-015f6ad10f38",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C22",
+      "claim": "ACSS2 undergoes deacetylation mediated by SIRT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Hallows et al. revealed that ACSS2 undergoes deacetylation mediated by SIRT1, a class III deacetylase (Hallows et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hallows et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "e0744c52-f52d-4e70-8370-9cd4aa48863a",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C23",
+      "claim": "SIRT1 and SIRT2 are the major cytosolic members among the seven known class III deacetylases in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the seven known class III deacetylases in mammalian cells (Sirt1-7), SIRT1 and SIRT2 are the major cytosolic members (Carafa et al., 2016; Imai and Guarente, 2014; Wang and Lin, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Carafa et al., 2016, Imai and Guarente, 2014, and Wang and Lin, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "783a73e8-83de-4c0b-b208-787d4831b05a",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C24",
+      "claim": "The expression of SIRT2 led to a decrease in ACSS2 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrated that the expression of SIRT2 led to a decrease in ACSS2 acetylation, indicating that SIRT2 is capable of deacetylating ACSS2 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "8350a601-9d08-41e9-b71a-b83d662081d8",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C25",
+      "claim": "SIRT2 is capable of deacetylating ACSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrated that the expression of SIRT2 led to a decrease in ACSS2 acetylation, indicating that SIRT2 is capable of deacetylating ACSS2 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data showing decreased acetylation upon SIRT2 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "169570a6-dca7-4267-b0fb-b4e27c7e7a3d",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C26",
+      "claim": "SIRT2 knockdown increased ACSS2 acetylation under nutrient stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in an increase in SIRT2 levels (Figure 1\u2014figure supplement 2) and when SIRT2 was knocked down under this condition, ACSS2 had increased acetylation compared to control knockdown cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "73e96310-cf4f-4586-ab61-689a34952ec4",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C27",
+      "claim": "The deacetylation of ACSS2 by SIRT2 happens in the context of nutrient stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the deacetylation of ACSS2 by SIRT2 happens in the context of nutrient stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing SIRT2-dependent deacetylation only under nutrient stress conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ae48adde-2593-4c95-9232-118e30e18b28",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C28",
+      "claim": "SIRT2 is upregulated under conditions of low glucose or amino acid deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2 has been reported to be upregulated under various stress conditions, including Golgi stress induced by shigella infection (Wang et al., 2022; Zullo et al., 2018) as well as under conditions of low glucose or amino acid deprivation (Zullo et al., 2018; Wang and Tong, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zullo et al., 2018 and Wang and Tong, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "871493f6-0b99-4fd2-aba5-0982f4b99925",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C29",
+      "claim": "Under amino acid deprivation, SIRT2 knockdown increased ACSS2 acetylation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that under amino acid deprivation, SIRT2 knockdown increased ACSS2 acetylation levels (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ca05ac35-c22f-4364-a282-746adc772a22",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C30",
+      "claim": "SIRT2's deacetylation activity is specific to amino acid stress and not observed under glucose starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this effect was not observed under glucose starvation, underscoring the specificity of SIRT2's deacetylation activity to amino acid stress (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "0ff7f80f-394c-472b-a6c8-ba89531db3de",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C31",
+      "claim": "TM increased ACSS2 acetylation under amino acid-starved conditions but not under normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "TM increased ACSS2 acetylation under amino acid-starved conditions but not under normal conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data using the SIRT2 inhibitor TM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "a88b4df6-b4c7-4ed1-9756-1ae5def710d1",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C32",
+      "claim": "The acetylation level of endogenous ACSS2 was increased by SIRT2 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the acetylation level of endogenous ACSS2 was increased by SIRT2 knockdown (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "0f81c8a2-af0b-44ec-b207-a88bc108d86d",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C33",
+      "claim": "Amino acid starvation triggers SIRT2 activation and subsequent deacetylation of ATG4B.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings align with a previous study demonstrating that amino acid starvation triggers SIRT2 activation and subsequent deacetylation of ATG4B (Sun et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sun et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ac9dfbe5-8c40-4645-b2b2-6e5f2ca9569e",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C34",
+      "claim": "SIRT2 deacetylates ACSS2 in response to nutrient stress, particularly amino acid deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data indicates that SIRT2 deacetylates ACSS2 in response to nutrient stress, particularly amino acid deprivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental data points showing SIRT2-dependent deacetylation under amino acid deprivation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "35c8a4e5-cb83-4fea-a788-f8498feeb92c",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C35",
+      "claim": "Endogenous ACSS2 levels exhibited an increase upon SIRT2 knockdown in the presence of nutrient stress.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the presence of nutrient stress, the endogenous ACSS2 levels exhibited an increase upon SIRT2 knockdown (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "a760c249-aaf5-47d4-b6b9-bee8a1478b2a",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C36",
+      "claim": "ACSS2 exhibited lower stability in the presence of amino acid limitation compared to normal culturing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ACSS2 exhibited lower stability in the presence of amino acid limitation compared to normal culturing conditions (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "3f4c3210-902b-4325-98c6-50ea2f23c00e",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C37",
+      "claim": "Under amino acid limitation, when SIRT2 is more active, there is an increased rate of deacetylation and degradation of ACSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that under amino acid limitation, when SIRT2 is more active, there is an increased rate of deacetylation and degradation of ACSS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stability data showing faster degradation under amino acid limitation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "c9f3db9a-9d57-45d1-beff-99dc1f413afc",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C38",
+      "claim": "Under amino acid limitation, knocking down SIRT2 led to the stabilization of ACSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data demonstrated that under amino acid limitation, knocking down SIRT2 led to the stabilization of ACSS2 (Figure 2C, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "c95748fd-8007-4c33-bcb2-fb088d3b2984",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C39",
+      "claim": "ACSS2 mRNA levels remained largely unaffected by SIRT2 knockdown or amino acid starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ACSS2 mRNA levels remained largely unaffected by SIRT2 knockdown or amino acid starvation (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "9645f444-a406-4922-8f3b-ed79349a2137",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C40",
+      "claim": "SIRT2-mediated deacetylation of ACSS2 under amino acid limitation promotes its degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the data suggests that SIRT2-mediated deacetylation of ACSS2 under amino acid limitation promotes its degradation, revealing a potential mechanism by which nutrient stress modulates ACSS2 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on deacetylation, stability, and protein levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "248d7f77-1f44-4831-99de-154d3f9efc09",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C41",
+      "claim": "Endogenous ACSS2 levels increased with MG132 treatment but not with Baf.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous ACSS2 levels increased with MG132 treatment but not with Baf, indicating that ACSS2 is degraded through the proteasomal pathway (Figure 2D, Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "de804067-8fe3-4244-ba6d-1a24328cd66f",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C42",
+      "claim": "ACSS2 is degraded through the proteasomal pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous ACSS2 levels increased with MG132 treatment but not with Baf, indicating that ACSS2 is degraded through the proteasomal pathway (Figure 2D, Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the differential effects of proteasome and lysosome inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "de13a25a-15fb-4862-8932-e6d0ade80315",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C43",
+      "claim": "Ubiquitination of Flag-ACSS2 was readily observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we readily observed ubiquitination of Flag-ACSS2 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "714bab41-2158-46b2-bf25-2e937332ce9b",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C44",
+      "claim": "Knockdown or inhibition of SIRT2 in amino acid deprived media led to a decrease in ACSS2 K48-linked ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that knockdown or inhibition of SIRT2 in amino acid deprived media led to a decrease in ACSS2 K48-linked ubiquitination (Figure 2F and G), a hallmark of proteasomal degradation, suggesting that SIRT2 regulates the ubiquitination and degradation of ACSS2 through the proteasome pathway (Kwon and Ciechanover, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "59bd0f9d-ec57-4110-850c-d4d78d4aa43c",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C45",
+      "claim": "SIRT2 regulates the ubiquitination and degradation of ACSS2 through the proteasome pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that knockdown or inhibition of SIRT2 in amino acid deprived media led to a decrease in ACSS2 K48-linked ubiquitination (Figure 2F and G), a hallmark of proteasomal degradation, suggesting that SIRT2 regulates the ubiquitination and degradation of ACSS2 through the proteasome pathway (Kwon and Ciechanover, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data on K48-linked ubiquitination and proteasomal degradation, supported by citation to Kwon and Ciechanover, 2017.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "3e040044-da34-4d93-8896-ccd22fa9999b",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C46",
+      "claim": "ACSS2 acetylation levels at K271 increased in SIRT2 knockdown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing label-free quantification mass spectrometry, we analyzed purified Flag-tagged ACSS2 from control and SIRT2 knockdown cells. Our analysis showed that ACSS2 acetylation levels at K271 increased in SIRT2 knockdown cells (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "7e0ae48a-057b-4920-aa27-3b3f62bc5489",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C47",
+      "claim": "SIRT2 knockdown failed to affect the acetylation level for the K271R mutant in amino acid deprived media.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2 knockdown failed to affect the acetylation level for the K271R mutant in amino acid deprived media, indicating that K271 is the site of deacetylation by SIRT2 (Figure 2H, Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2H and Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "2770bc00-bcc9-49c0-8e5b-dfdee5788434",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C48",
+      "claim": "K271 is the site of deacetylation by SIRT2.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2 knockdown failed to affect the acetylation level for the K271R mutant in amino acid deprived media, indicating that K271 is the site of deacetylation by SIRT2 (Figure 2H, Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of effect of SIRT2 knockdown on K271R mutant acetylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "b2236d78-6960-4eea-bedd-a635d05b293c",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C49",
+      "claim": "The acetylation level of ACSS2 K661R mutant was still regulated by SIRT2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the acetylation level of ACSS2 K661R mutant was still regulated by SIRT2 (Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "aa219053-e17c-4fcb-a250-994aa86d9049",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C50",
+      "claim": "SIRT2 deacetylates ACSS2 at K271, which is different from previously reported SIRT1-regulated K661 deacetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations collectively indicate that SIRT2 deacetylates ACSS2 at K271, which is different from previously reported SIRT1-regulated K661 deacetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing K271 as the SIRT2 target site, distinct from K661.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "188da455-15b7-4c2e-aacf-8381e177efb8",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C51",
+      "claim": "ACSS2 can be ubiquitinated at the K271.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, data from the global characterization of the ubiquitin-modified proteome indicated that ACSS2 can be ubiquitinated at the K271 (Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kim et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "dde7ba5e-c089-4ec7-acf9-cd5120603cef",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C52",
+      "claim": "K271R and K271Q mutants showed a decrease in ACSS2 ubiquitination levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this, we tested the K48-linked ubiquitination of K271R and K271Q mutants, and both mutants showed a decrease in ACSS2 ubiquitination levels (Figure 2\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ead72394-02df-40fd-adab-c2290635de5e",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C53",
+      "claim": "SIRT2 knockdown in amino acid deprived media decreased the ubiquitination of WT ACSS2, but not the ubiquitination of the K271R mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2 knockdown in amino acid deprived media decreased the ubiquitination of WT ACSS2, but not the ubiquitination of the K271R mutant (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "f7499813-926f-4632-b62e-a0f8950eef9d",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C54",
+      "claim": "The K271R mutant exhibited enhanced stability compared to the wild-type (WT) ACSS2 when cells were cultured in EBSS medium lacking amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the K271R mutant exhibited enhanced stability compared to the wild-type (WT) ACSS2 when cells were cultured in Earle's balanced salt solution (EBSS) medium lacking amino acids (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "0005a6a4-67f8-4363-b604-b5ae1b19f13e",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C55",
+      "claim": "Under amino acid limitation, SIRT2 deacetylates K271, thereby exposing the site for ubiquitination and leading to subsequent degradation of ACSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our findings suggest that under amino acid limitation, SIRT2 deacetylates K271, thereby exposing the site for ubiquitination and leading to subsequent degradation of ACSS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on deacetylation, ubiquitination, and degradation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "e97fdb79-593d-4cba-bcaf-c224dbcc10ec",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C56",
+      "claim": "Deletion of ACSS2 in mice results in reduced body weight and lipid deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of ACSS2 in mice results in reduced body weight and lipid deposition, while mutation of S236, a phosphorylation site on ACSS2, leads to increased triglyceride levels in adipocytes (Huang et al., 2018; Shaik et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Huang et al., 2018 and Shaik et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "332a42c2-7015-4e2d-8009-650a1b7140a0",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C57",
+      "claim": "Mutation of S236, a phosphorylation site on ACSS2, leads to increased triglyceride levels in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of ACSS2 in mice results in reduced body weight and lipid deposition, while mutation of S236, a phosphorylation site on ACSS2, leads to increased triglyceride levels in adipocytes (Huang et al., 2018; Shaik et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Huang et al., 2018 and Shaik et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "b34bff68-20cc-4ec3-ac8d-da06572faf4c",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C58",
+      "claim": "The protein level of the K271R mutant was higher than that of the WT ACSS2 after 7 days of adipocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "After 7 days, we observed that the protein level of the K271R mutant was higher than that of the WT ACSS2 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "f6091fcf-04dd-444c-8409-eab2b199ca16",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C59",
+      "claim": "Re-expression of WT ACSS2 increased lipid accumulation based on Oil Red O staining of differentiated adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ACCS2 knockdown cells, re-expression of WT ACSS2 increased lipid accumulation based on Oil Red O staining of differentiated adipocytes, thereby validating ACSS2's functional role in DNL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Oil Red O staining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "8987f967-9c48-4aaa-85f0-967e111f8e5e",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C60",
+      "claim": "Expressing the K271R mutant lead to more lipid droplets than expressing the WT ACSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our above observation that ACSS2 K271R mutant is more stable than the WT, expressing the K271R mutant lead to more lipid droplets than expressing the WT ACSS2 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "f482e3c1-c322-4e74-afa0-c1200f5d7d2a",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C61",
+      "claim": "The inhibition of SIRT2 using TM increased lipid accumulation in cells with WT ACSS2, but not in cells with the K271R mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition of SIRT2 using TM increased lipid accumulation in cells with WT ACSS2, but not in cells with the K271R mutant that cannot be deacetylated by SIRT2 (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "bf326ba5-c856-4816-87f3-259a05d63c6b",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C62",
+      "claim": "WT ACSS2 exhibits slightly higher activity compared to the K271R and K271Q mutants, but all variants remain functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that while the WT ACSS2 exhibits slightly higher activity compared to the K271R and K271Q mutants, all variants remain functional (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "581f16aa-fe6b-4995-9a43-7effe21678d2",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C63",
+      "claim": "SIRT2 deacetylates ACSS2 on K271 to promote ACSS2 ubiquitination and degradation, and thus inhibiting lipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the model that SIRT2 deacetylates ACSS2 on K271 to promote ACSS2 ubiquitination and degradation, and thus inhibiting lipogenesis (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the combined experimental data and supported by the working model in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "668549d7-e09a-4579-9793-67ea833cf07f",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C64",
+      "claim": "SIRT2-mediated ACSS2 K271 deacetylation only becomes obvious/important during nutrient (amino acid) limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SIRT2-mediated ACSS2 K271 deacetylation only becomes obvious/important during nutrient (amino acid) limitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing effects only under amino acid limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "e1ddf3c1-5733-4f8c-a0dd-8544799780dc",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C65",
+      "claim": "K271 deacetylation leads to the ubiquitination and degradation of ACSS2, resulting in reduced lipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "K271 deacetylation leads to the ubiquitination and degradation of ACSS2, resulting in reduced lipogenesis (see working model in Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and the working model in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "6438eb25-d52a-417d-b323-add04b6c796d",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C66",
+      "claim": "This regulatory mechanism can help to maintain cellular homeostasis by limiting lipogenesis under amino acid limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulatory mechanism can help to maintain cellular homeostasis by limiting lipogenesis under amino acid limitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "2f1ebf1e-63ad-44b0-b212-b26e0323ac4a",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C67",
+      "claim": "SIRT2 has been reported to be upregulated by several stresses, including Golgi stress caused by bacterial infection and nutrient depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2 has been reported to be upregulated by several stresses, including Golgi stress caused by bacterial infection and nutrient depletion (Wang et al., 2022; Zullo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2022 and Zullo et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "e263a050-dcaf-4331-8d33-90c85eed10ef",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C68",
+      "claim": "SIRT2 is increasingly recognized as a stress response protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SIRT2 is increasingly recognized as a stress response protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the literature on SIRT2 upregulation under stress.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "c0becccc-3c9f-4767-971c-c0b86de58e58",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C69",
+      "claim": "Cells sense one metabolic stress (amino acid limitation) to regulate a different metabolic pathway (lipogenesis) by calling on SIRT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study here provides an interesting mechanism through which cells sense one metabolic stress (amino acid limitation) to regulate a different metabolic pathway (lipogenesis) by calling on SIRT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings showing SIRT2-mediated regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "e83f8807-2830-47b0-9a7c-49eae354559c",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C70",
+      "claim": "Dysregulation of DNL is associated with metabolic disorders such as obesity and nonalcoholic fatty liver disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of DNL is associated with metabolic disorders such as obesity and nonalcoholic fatty liver disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "6364279b-1055-4ba8-a0e2-c4da9301c264",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C71",
+      "claim": "SIRT2 has been implicated in the regulation of DNL.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2 has been implicated in the regulation of DNL (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "1baa3b60-ad27-49f2-b450-bf5869f47ead",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C72",
+      "claim": "SIRT2 is widely expressed in metabolically active tissues including adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2 is widely expressed in metabolically active tissues including adipose tissue and exerts its influence on DNL through the deacetylation of several proteins (Gomes et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gomes et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "8181abbe-730f-4882-83be-51dacf11b2ed",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C73",
+      "claim": "SIRT2 exerts its influence on DNL through the deacetylation of several proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2 is widely expressed in metabolically active tissues including adipose tissue and exerts its influence on DNL through the deacetylation of several proteins (Gomes et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gomes et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "42840c3a-579a-4b60-98b2-704a1e7a2971",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C74",
+      "claim": "During calorie restriction, SIRT2-mediated deacetylation of FoxO1 promotes its nuclear localization, where it suppresses the transcription of PPAR\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "During calorie restriction, SIRT2-mediated deacetylation of FoxO1 promotes its nuclear localization, where it suppresses the transcription of PPAR\u03b3, a master regulator of adipocyte differentiation (Wang and Tong, 2009; Hernandez-Quiles et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang and Tong, 2009 and Hernandez-Quiles et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "8e35d691-c5ba-407e-8844-5e4bda481596",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C75",
+      "claim": "SIRT2-mediated degradation of ACLY decreases acetyl-CoA production, thereby inhibiting DNL.",
+      "claim_type": "EXPLICIT",
+      "source": "SIRT2-mediated degradation of ACLY decreases acetyl-CoA production, thereby inhibiting DNL (Lin et al., 2013; Guo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lin et al., 2013 and Guo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "d89fc4d2-8535-40e0-bdea-347dabb71909",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C76",
+      "claim": "SIRT2 could also regulate another protein involved in DNL, ACSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding here revealed that SIRT2 could also regulate another protein involved in DNL, ACSS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "f0ccf839-ba0f-47f6-bfc3-a861151518d9",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C77",
+      "claim": "SIRT2 can inhibit DNL through deacetylating many different substrate proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it seems that SIRT2 can inhibit DNL through deacetylating many different substrate proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the multiple substrates of SIRT2 involved in DNL.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "5d4441ba-fcf3-4acb-866c-fab13915d09e",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C78",
+      "claim": "Deacetylation of K661 by SIRT1 was found to activate ACSS2, leading to periodic increases in acetyl-CoA production.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, deacetylation of K661 by SIRT1 was found to activate ACSS2, leading to periodic increases in acetyl-CoA production (Sahar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sahar et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "56a4196e-3cb8-4d13-a637-72cb469b1b89",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C79",
+      "claim": "SIRT2 inhibits ACSS2 by deacetylating K271 under conditions of nutrient stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, our research elucidates a contrasting mechanism wherein SIRT2 inhibits ACSS2 by deacetylating K271 under conditions of nutrient stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "c13ff0e7-c644-4ac5-a0b4-fc1b99486fe8",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C80",
+      "claim": "The dual regulation of ACSS2 by SIRT1 through the circadian clock and SIRT2 under nutrient stress underscores the intricate and multifaceted nature of regulatory mechanisms involved in lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual regulation of ACSS2 by SIRT1 through the circadian clock and SIRT2 under nutrient stress underscores the intricate and multifaceted nature of regulatory mechanisms involved in lipid metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of SIRT1 and SIRT2 regulation of ACSS2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "f367890c-0869-45a4-92e6-0ac5f54e60da",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C81",
+      "claim": "GCN2 kinase, which responds to amino acid scarcity, regulates lipid metabolism by suppressing lipogenesis in response to amino acid deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Guo and Cavener found that GCN2 kinase, which responds to amino acid scarcity, regulates lipid metabolism by suppressing lipogenesis in response to amino acid deprivation (Guo and Cavener, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guo and Cavener, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "3e828a4b-0070-4990-b478-74a7d3accff7",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C82",
+      "claim": "There is an intricate interplay between amino acid metabolism and lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights the intricate interplay between amino acid metabolism and lipid metabolism, further emphasizing the significance of understanding the regulatory mechanisms involving enzymes like ACSS2 in various metabolic contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the literature on metabolic regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "0f7907dd-403d-42a6-98c5-3188f5579019",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C83",
+      "claim": "DNL underlies many human diseases, including obesity and nonalcoholic liver disease.",
+      "claim_type": "EXPLICIT",
+      "source": "DNL underlies many human diseases, including obesity and nonalcoholic liver disease (Yki-J\u00e4rvinen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yki-J\u00e4rvinen et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "632148e5-e158-4019-a2a3-4decc09b6d6a",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "claim_id": "C84",
+      "claim": "Methods that can increase SIRT2 activity or protein levels may be useful for treating human diseases involving DNL.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the role of SIRT2 in suppressing DNL, methods that can increase SIRT2 activity or protein levels may be useful for treating human diseases involving DNL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the role of SIRT2 in suppressing DNL.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b7296006-97be-47f7-b47a-7bfb012f6311",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SIRT2 deacetylates ACSS2 specifically under amino acid deprivation stress. The authors demonstrate through overexpression, knockdown, and pharmacological inhibition experiments that SIRT2 reduces ACSS2 acetylation only when cells are subjected to amino acid limitation, not under normal conditions or glucose starvation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24-C34 provide converging evidence from multiple experimental approaches (overexpression, knockdown, inhibitor treatment) showing SIRT2-mediated deacetylation of ACSS2 specifically under amino acid stress. The specificity is demonstrated by negative results under glucose starvation (C30) and normal conditions, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "7b544c4d-e8cc-4655-8999-dac4a2fb028f",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SIRT2 deacetylates ACSS2 at lysine 271 (K271), a site distinct from the previously reported SIRT1 target K661. Mass spectrometry identified K271 as having increased acetylation in SIRT2 knockdown cells, and the K271R mutant was insensitive to SIRT2 knockdown while K661R remained responsive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 provide strong evidence through mass spectrometry identification (C46) and mutational analysis (C47-C49) that K271 is the specific SIRT2 deacetylation site. The differential response of K271R vs K661R mutants (C49) clearly distinguishes this from SIRT1 regulation, supporting the novelty of this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "43517e2b-009a-46dc-bc2b-833448749e27",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SIRT2-mediated deacetylation of ACSS2 under amino acid limitation promotes ACSS2 protein degradation. SIRT2 knockdown increases ACSS2 protein levels and stability under nutrient stress without affecting mRNA levels, indicating post-translational regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 demonstrate through protein stability assays (C36, C38), cycloheximide chase experiments, and mRNA analysis (C39) that SIRT2 regulates ACSS2 at the protein level. The lack of mRNA changes (C39) rules out transcriptional effects, supporting a post-translational degradation mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "913e83ab-3f31-4e78-b675-05b3bde5eefa",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ACSS2 is degraded through the proteasomal pathway via K48-linked ubiquitination regulated by SIRT2. MG132 but not bafilomycin increases ACSS2 levels, and SIRT2 knockdown or inhibition reduces K48-linked ubiquitination of ACSS2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 provide clear evidence for proteasomal degradation through differential inhibitor responses (C41-C42) and direct demonstration of K48-linked ubiquitination (C43-C44). The SIRT2-dependence of ubiquitination (C44) mechanistically links deacetylation to degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "74f95cd6-e6ed-4602-9da7-166574dc3acc",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "K271 deacetylation by SIRT2 exposes this residue for ubiquitination, leading to ACSS2 degradation. K271R and K271Q mutants show decreased ubiquitination, increased stability, and are insensitive to SIRT2 knockdown effects on ubiquitination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C51-C55 demonstrate the mechanistic link between K271 deacetylation and ubiquitination through mutational analysis. The K271R mutant phenotypes (decreased ubiquitination C52-C53, increased stability C54) and insensitivity to SIRT2 manipulation (C53) provide strong evidence for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "fa86819d-0715-41dc-b822-432634ddd64d",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "K271 acetylation status regulates lipogenesis through ACSS2 protein levels. The K271R mutant shows increased protein levels and lipid accumulation compared to wild-type ACSS2, and SIRT2 inhibition increases lipogenesis in cells expressing wild-type but not K271R ACSS2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C58-C63 demonstrate functional consequences through Oil Red O staining and adipocyte differentiation assays. The differential response to SIRT2 inhibition between WT and K271R (C61) provides strong evidence that K271 deacetylation is the mechanism by which SIRT2 regulates lipogenesis. The modest activity difference (C62) does not undermine the stability-based mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "03a81a7a-ae0e-46d4-91b2-3ca4fa8929b5",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SIRT2-mediated K271 deacetylation represents a mechanism for cells to limit lipogenesis under amino acid limitation, potentially maintaining cellular homeostasis by coordinating amino acid and lipid metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66, C69 synthesize the experimental findings into a coherent regulatory model. While C66 is speculative about homeostasis, the core mechanism (C64-C65) is well-supported by the experimental data. The cross-talk between amino acid stress and lipid metabolism (C69) is a reasonable inference from the demonstrated SIRT2-mediated regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "b57d1832-608c-4bff-a803-c69d551baba9",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "De novo lipogenesis (DNL) is associated with human diseases including cancer, diabetes, obesity, and nonalcoholic fatty liver disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C9, C70, C83 establish the disease relevance of DNL through citations to prior literature. These are well-established facts in the field and provide appropriate context for the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ACSS2 catalyzes acetyl-CoA synthesis from acetate and is upregulated in cancer and metabolic diseases. ACSS2 deletion in mice reduces body weight and lipid deposition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 provide established background on ACSS2 function and disease relevance through appropriate citations. The mouse knockout data (C16) from prior work establishes ACSS2's role in lipid metabolism, providing context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "b5d18e37-52eb-4ec6-af1d-b864081d615c",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Lysine acetylation is regulated by acetyltransferases and deacetylases including sirtuins. SIRT1 and SIRT2 are major cytosolic deacetylases, and SIRT1 regulates ACSS2 activity through K661 deacetylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 provide appropriate background on acetylation regulation and prior SIRT1-ACSS2 work through citations. This establishes the rationale for investigating SIRT2 as another potential ACSS2 regulator.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "0a46b2cd-5c8f-4d1a-85aa-5f225c618021",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SIRT2 is upregulated under various stress conditions including amino acid deprivation and is increasingly recognized as a stress response protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C33, C67-C68 establish SIRT2's role as a stress-responsive protein through citations to prior literature. This provides important context for why SIRT2 activity is specifically observed under amino acid limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SIRT2 regulates DNL through deacetylation of multiple substrate proteins including FoxO1 and ACLY. The current study adds ACSS2 as another SIRT2 substrate involved in DNL regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 establish prior knowledge of SIRT2's role in DNL regulation and position the current findings (C76) within this broader context. The inference that SIRT2 inhibits DNL through multiple substrates (C77) is reasonable given the cited evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "d40a9276-43f8-42f6-b6f6-c3b8fac2ab9b",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SIRT1 and SIRT2 provide dual regulation of ACSS2 through different mechanisms: SIRT1 activates ACSS2 via K661 deacetylation in circadian regulation, while SIRT2 inhibits ACSS2 via K271 deacetylation under nutrient stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 appropriately contrast the current findings with prior SIRT1 work. The comparison is well-supported by the experimental data showing distinct sites (K271 vs K661) and opposite functional outcomes (degradation vs activation).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "486b3b3f-d868-47a2-ba06-530e9e74b58f",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "There is an intricate interplay between amino acid metabolism and lipid metabolism, as exemplified by GCN2 kinase regulation of lipogenesis in response to amino acid deprivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 provide relevant context from prior literature showing that amino acid stress can regulate lipid metabolism. This supports the biological plausibility of the SIRT2-ACSS2 mechanism discovered in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "3720092a-2f3b-4680-8f22-448816855848",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methods that increase SIRT2 activity or protein levels may be useful for treating human diseases involving DNL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is speculative about therapeutic applications. While the study demonstrates SIRT2's role in suppressing DNL, no therapeutic interventions or disease models are tested. This remains a hypothesis requiring future validation in disease contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "b30f956d-a457-4ac8-a6cd-7b17f996cbe7",
+      "content_id": "08e14497-b2bc-48fd-8bfd-20e06a124ba8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Acetyl-CoA plays a crucial role in fatty acid synthesis, and ACSS2 genetic manipulation affects lipid metabolism in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C56-C57 provide established biochemical and genetic background through general knowledge and citations. These support the rationale for studying ACSS2 regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "f09e951a-42c7-4457-9b0a-621a801ef246",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "SIRT2 deacetylates ACSS2 specifically under nutrient stress conditions, particularly amino acid deprivation. The authors show that SIRT2 expression decreases ACSS2 acetylation, SIRT2 knockdown increases ACSS2 acetylation under amino acid starvation (but not glucose starvation), and SIRT2 inhibitor TM increases ACSS2 acetylation only under amino acid-starved conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the findings are 'clearly interesting' and note 'solid data showing ACSS2 acetylation can be regulated by targeting SIRT2,' the editor and multiple reviewers indicate 'some evidence supporting these findings is incomplete' and request 'direct demonstration of target deacetylation by sirtuin 2.' One reviewer states 'further support is required for the model put forward by the authors,' suggesting the deacetylation mechanism needs stronger validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "0c2d2442-6277-4524-96be-afab82ac25e1",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "K271 is identified as the specific site of SIRT2-mediated deacetylation on ACSS2. Mass spectrometry showed increased K271 acetylation in SIRT2 knockdown cells, and SIRT2 knockdown failed to affect acetylation of the K271R mutant while still regulating the K661R mutant, indicating K271 is distinct from the previously reported SIRT1 target site K661.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge this as a strength, with one stating 'Identification of a novel acetylation site on ACSS2 that regulates its protein stability' and another noting 'They identify K271 as a site of acetylation and show this is a site when mutated alters SIRT2-mediated ubiquitination.' The use of mass spectrometry and mutant analysis is recognized as solid evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "079f28ad-7033-44f2-a7ea-0bcb30e58f72",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "SIRT2-mediated deacetylation promotes ACSS2 degradation under amino acid limitation. SIRT2 knockdown increases ACSS2 protein levels and stabilizes ACSS2 under nutrient stress, while ACSS2 exhibits lower stability under amino acid limitation compared to normal conditions. mRNA levels remain unaffected, indicating post-translational regulation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers note concerns about the completeness of the evidence. One reviewer states 'data for this manuscript seems preliminary as nearly all data is performed in one cell line' and 'some of the conclusions not well supported by data.' The editor requests 'confirming generalizability to adipocyte cell lines would further strengthen the study,' indicating the degradation mechanism needs validation across multiple systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "5ef42c14-b61f-40e0-9191-04ca5aebcb2c",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "ACSS2 is degraded through the proteasomal pathway via K48-linked ubiquitination regulated by SIRT2. ACSS2 levels increased with proteasome inhibitor MG132 but not lysosome inhibitor Bafilomycin, and SIRT2 knockdown or inhibition decreased K48-linked ubiquitination of ACSS2 under amino acid deprivation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this finding positively, with one stating 'Author provide solid data showing ACSS2 acetylation can be regulated by targeting SIRT2 and that SIRT2 regulates ACSS2 ubiquitination.' The use of standard proteasome/lysosome inhibitors and K48-ubiquitin specific detection is recognized as appropriate methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "59268d8a-19f0-4725-9ef3-b113d58c6c97",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "K271 serves as both an acetylation and ubiquitination site, where deacetylation exposes the site for ubiquitination leading to ACSS2 degradation. K271R and K271Q mutants showed decreased ubiquitination, SIRT2 knockdown decreased ubiquitination of WT but not K271R mutant, and K271R exhibited enhanced stability under amino acid limitation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers recognize this as a key finding, noting 'acetylation of 271 protects ACSS2 from proteasomal degradation in a SIRT2-dependent manner' and acknowledging the mutant analysis showing 'when mutated alters SIRT2-mediated ubiquitination.' The mechanistic link between acetylation and ubiquitination at the same residue is treated as a solid contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "416665f9-292c-482c-93ed-60ae35d750e9",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "K271 acetylation status affects lipogenesis in adipocytes. The K271R mutant showed higher protein levels and increased lipid accumulation compared to WT ACSS2 during adipocyte differentiation. SIRT2 inhibition increased lipid accumulation in WT but not K271R cells, supporting the model that SIRT2 deacetylation of K271 inhibits lipogenesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers note this shows 'consequences on its activity in adipocytes,' concerns are raised about the scope and interpretation. One reviewer states 'overall role of ACSS2 K271 acetylation is not well characterized' and another suggests 'using 13C-acetate or D3-acetate tracing would be better for understanding the impact of acetylation on the activity of ACSS2 and its impact on lipogenesis.' The editor requests 'confirming generalizability to adipocyte cell lines,' indicating the functional consequences need stronger validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "40037b9d-1150-418e-8883-0791c2848c85",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The overall model that SIRT2 catalyzes K271 deacetylation under amino acid stress, leading to K271 ubiquitination, proteasomal degradation, and reduced lipogenesis. This regulatory mechanism is specific to amino acid limitation and not observed under other nutrient stress conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express mixed views on the overall model. While findings are described as 'clearly interesting,' one reviewer states 'further support is required for the model put forward by the authors.' The editor notes 'some evidence supporting these findings is incomplete' and requests 'direct demonstration of target deacetylation by sirtuin 2.' Statistical concerns are also raised, with one reviewer noting 'normalizing the data to 1 and then comparing the fold-change using a t-test is not the best statistical approach,' which affects confidence in quantitative claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "6e5bfda6-50ea-4133-81e9-9521073f25fe",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Background claims about de novo lipogenesis, ACSS2 function, acetylation mechanisms, SIRT2 biology, and disease relevance drawn from published literature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are citation-based background claims that reviewers do not question. They provide established context for the study and are treated as accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4",
+      "content_id": "61da679d-4bfb-41cf-9017-3936a32e910f",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Interpretive and speculative claims about the broader significance of SIRT2-ACSS2 regulation, including cross-talk between amino acid and lipid metabolism, therapeutic implications, and the complexity of metabolic regulation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are interpretive claims that extend beyond the direct experimental data. While reviewers find the study 'useful' and note it 'will be of interest to researchers studying lipid metabolism and related diseases,' the speculative nature of therapeutic implications and broader metabolic significance is not directly validated by the presented experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6f200bfb-64ff-4da1-b128-7fc5c2976523",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "783a73e8-83de-4c0b-b208-787d4831b05a",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "8350a601-9d08-41e9-b71a-b83d662081d8",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "169570a6-dca7-4267-b0fb-b4e27c7e7a3d",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "73e96310-cf4f-4586-ab61-689a34952ec4",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "871493f6-0b99-4fd2-aba5-0982f4b99925",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "ca05ac35-c22f-4364-a282-746adc772a22",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "0ff7f80f-394c-472b-a6c8-ba89531db3de",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "a88b4df6-b4c7-4ed1-9756-1ae5def710d1",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "ac9dfbe5-8c40-4645-b2b2-6e5f2ca9569e",
+      "result_id": "b7296006-97be-47f7-b47a-7bfb012f6311"
+    },
+    {
+      "claim_id": "3e040044-da34-4d93-8896-ccd22fa9999b",
+      "result_id": "7b544c4d-e8cc-4655-8999-dac4a2fb028f"
+    },
+    {
+      "claim_id": "7e0ae48a-057b-4920-aa27-3b3f62bc5489",
+      "result_id": "7b544c4d-e8cc-4655-8999-dac4a2fb028f"
+    },
+    {
+      "claim_id": "2770bc00-bcc9-49c0-8e5b-dfdee5788434",
+      "result_id": "7b544c4d-e8cc-4655-8999-dac4a2fb028f"
+    },
+    {
+      "claim_id": "b2236d78-6960-4eea-bedd-a635d05b293c",
+      "result_id": "7b544c4d-e8cc-4655-8999-dac4a2fb028f"
+    },
+    {
+      "claim_id": "aa219053-e17c-4fcb-a250-994aa86d9049",
+      "result_id": "7b544c4d-e8cc-4655-8999-dac4a2fb028f"
+    },
+    {
+      "claim_id": "35c8a4e5-cb83-4fea-a788-f8498feeb92c",
+      "result_id": "43517e2b-009a-46dc-bc2b-833448749e27"
+    },
+    {
+      "claim_id": "a760c249-aaf5-47d4-b6b9-bee8a1478b2a",
+      "result_id": "43517e2b-009a-46dc-bc2b-833448749e27"
+    },
+    {
+      "claim_id": "3f4c3210-902b-4325-98c6-50ea2f23c00e",
+      "result_id": "43517e2b-009a-46dc-bc2b-833448749e27"
+    },
+    {
+      "claim_id": "c9f3db9a-9d57-45d1-beff-99dc1f413afc",
+      "result_id": "43517e2b-009a-46dc-bc2b-833448749e27"
+    },
+    {
+      "claim_id": "c95748fd-8007-4c33-bcb2-fb088d3b2984",
+      "result_id": "43517e2b-009a-46dc-bc2b-833448749e27"
+    },
+    {
+      "claim_id": "9645f444-a406-4922-8f3b-ed79349a2137",
+      "result_id": "43517e2b-009a-46dc-bc2b-833448749e27"
+    },
+    {
+      "claim_id": "248d7f77-1f44-4831-99de-154d3f9efc09",
+      "result_id": "913e83ab-3f31-4e78-b675-05b3bde5eefa"
+    },
+    {
+      "claim_id": "de804067-8fe3-4244-ba6d-1a24328cd66f",
+      "result_id": "913e83ab-3f31-4e78-b675-05b3bde5eefa"
+    },
+    {
+      "claim_id": "de13a25a-15fb-4862-8932-e6d0ade80315",
+      "result_id": "913e83ab-3f31-4e78-b675-05b3bde5eefa"
+    },
+    {
+      "claim_id": "714bab41-2158-46b2-bf25-2e937332ce9b",
+      "result_id": "913e83ab-3f31-4e78-b675-05b3bde5eefa"
+    },
+    {
+      "claim_id": "59bd0f9d-ec57-4110-850c-d4d78d4aa43c",
+      "result_id": "913e83ab-3f31-4e78-b675-05b3bde5eefa"
+    },
+    {
+      "claim_id": "37c07172-5fbd-4378-a9d3-86afb42119f1",
+      "result_id": "74f95cd6-e6ed-4602-9da7-166574dc3acc"
+    },
+    {
+      "claim_id": "6672d90e-e916-4f69-b626-98a5634931e6",
+      "result_id": "74f95cd6-e6ed-4602-9da7-166574dc3acc"
+    },
+    {
+      "claim_id": "188da455-15b7-4c2e-aacf-8381e177efb8",
+      "result_id": "74f95cd6-e6ed-4602-9da7-166574dc3acc"
+    },
+    {
+      "claim_id": "dde7ba5e-c089-4ec7-acf9-cd5120603cef",
+      "result_id": "74f95cd6-e6ed-4602-9da7-166574dc3acc"
+    },
+    {
+      "claim_id": "ead72394-02df-40fd-adab-c2290635de5e",
+      "result_id": "74f95cd6-e6ed-4602-9da7-166574dc3acc"
+    },
+    {
+      "claim_id": "f7499813-926f-4632-b62e-a0f8950eef9d",
+      "result_id": "74f95cd6-e6ed-4602-9da7-166574dc3acc"
+    },
+    {
+      "claim_id": "0005a6a4-67f8-4363-b604-b5ae1b19f13e",
+      "result_id": "74f95cd6-e6ed-4602-9da7-166574dc3acc"
+    },
+    {
+      "claim_id": "aab84fc7-10ae-4a11-bc56-c7c55d549207",
+      "result_id": "fa86819d-0715-41dc-b822-432634ddd64d"
+    },
+    {
+      "claim_id": "5a558405-3555-4f54-8d06-edf4cc4f4c10",
+      "result_id": "fa86819d-0715-41dc-b822-432634ddd64d"
+    },
+    {
+      "claim_id": "b34bff68-20cc-4ec3-ac8d-da06572faf4c",
+      "result_id": "fa86819d-0715-41dc-b822-432634ddd64d"
+    },
+    {
+      "claim_id": "f6091fcf-04dd-444c-8409-eab2b199ca16",
+      "result_id": "fa86819d-0715-41dc-b822-432634ddd64d"
+    },
+    {
+      "claim_id": "8987f967-9c48-4aaa-85f0-967e111f8e5e",
+      "result_id": "fa86819d-0715-41dc-b822-432634ddd64d"
+    },
+    {
+      "claim_id": "f482e3c1-c322-4e74-afa0-c1200f5d7d2a",
+      "result_id": "fa86819d-0715-41dc-b822-432634ddd64d"
+    },
+    {
+      "claim_id": "bf326ba5-c856-4816-87f3-259a05d63c6b",
+      "result_id": "fa86819d-0715-41dc-b822-432634ddd64d"
+    },
+    {
+      "claim_id": "581f16aa-fe6b-4995-9a43-7effe21678d2",
+      "result_id": "fa86819d-0715-41dc-b822-432634ddd64d"
+    },
+    {
+      "claim_id": "668549d7-e09a-4579-9793-67ea833cf07f",
+      "result_id": "03a81a7a-ae0e-46d4-91b2-3ca4fa8929b5"
+    },
+    {
+      "claim_id": "e1ddf3c1-5733-4f8c-a0dd-8544799780dc",
+      "result_id": "03a81a7a-ae0e-46d4-91b2-3ca4fa8929b5"
+    },
+    {
+      "claim_id": "6438eb25-d52a-417d-b323-add04b6c796d",
+      "result_id": "03a81a7a-ae0e-46d4-91b2-3ca4fa8929b5"
+    },
+    {
+      "claim_id": "c0becccc-3c9f-4767-971c-c0b86de58e58",
+      "result_id": "03a81a7a-ae0e-46d4-91b2-3ca4fa8929b5"
+    },
+    {
+      "claim_id": "6d038ca4-6555-4243-ac1d-82ac286c030f",
+      "result_id": "b57d1832-608c-4bff-a803-c69d551baba9"
+    },
+    {
+      "claim_id": "35b490ee-243f-4c5f-a48e-bdd7d6a70e2c",
+      "result_id": "b57d1832-608c-4bff-a803-c69d551baba9"
+    },
+    {
+      "claim_id": "0ca1458a-27b7-43ba-bd7d-7d204e770c67",
+      "result_id": "b57d1832-608c-4bff-a803-c69d551baba9"
+    },
+    {
+      "claim_id": "e83f8807-2830-47b0-9a7c-49eae354559c",
+      "result_id": "b57d1832-608c-4bff-a803-c69d551baba9"
+    },
+    {
+      "claim_id": "0f7907dd-403d-42a6-98c5-3188f5579019",
+      "result_id": "b57d1832-608c-4bff-a803-c69d551baba9"
+    },
+    {
+      "claim_id": "db72f2cb-9806-4423-89b3-b130ce609e54",
+      "result_id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5"
+    },
+    {
+      "claim_id": "a01acf17-aca5-4b74-87ed-256b471d203a",
+      "result_id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5"
+    },
+    {
+      "claim_id": "791dbfd5-1df8-46c7-8f53-50eceb2f5c37",
+      "result_id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5"
+    },
+    {
+      "claim_id": "8e8aa70d-38a5-4d1c-9e0d-7060162a9e58",
+      "result_id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5"
+    },
+    {
+      "claim_id": "586382b8-1b4b-467e-8937-bc69067183d6",
+      "result_id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5"
+    },
+    {
+      "claim_id": "8b377fe3-ae4d-4dcb-bced-fb894a3f8d6a",
+      "result_id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5"
+    },
+    {
+      "claim_id": "b4461849-041e-41bb-94ed-307018b5f557",
+      "result_id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5"
+    },
+    {
+      "claim_id": "f6317df1-4200-475c-8259-ae9056ed41cb",
+      "result_id": "b5d18e37-52eb-4ec6-af1d-b864081d615c"
+    },
+    {
+      "claim_id": "dccc64f0-ea7d-4e75-863d-7ca589f56f57",
+      "result_id": "b5d18e37-52eb-4ec6-af1d-b864081d615c"
+    },
+    {
+      "claim_id": "f6f292a8-9185-43ee-8111-7085e59e82d7",
+      "result_id": "b5d18e37-52eb-4ec6-af1d-b864081d615c"
+    },
+    {
+      "claim_id": "042376d8-bd02-4642-a62a-7453de11991d",
+      "result_id": "b5d18e37-52eb-4ec6-af1d-b864081d615c"
+    },
+    {
+      "claim_id": "ff0546a0-8cdd-4854-bd83-84cdb32966eb",
+      "result_id": "b5d18e37-52eb-4ec6-af1d-b864081d615c"
+    },
+    {
+      "claim_id": "aa3fb33d-ee7b-481e-a14b-015f6ad10f38",
+      "result_id": "b5d18e37-52eb-4ec6-af1d-b864081d615c"
+    },
+    {
+      "claim_id": "e0744c52-f52d-4e70-8370-9cd4aa48863a",
+      "result_id": "b5d18e37-52eb-4ec6-af1d-b864081d615c"
+    },
+    {
+      "claim_id": "ae48adde-2593-4c95-9232-118e30e18b28",
+      "result_id": "0a46b2cd-5c8f-4d1a-85aa-5f225c618021"
+    },
+    {
+      "claim_id": "0f81c8a2-af0b-44ec-b207-a88bc108d86d",
+      "result_id": "0a46b2cd-5c8f-4d1a-85aa-5f225c618021"
+    },
+    {
+      "claim_id": "2f1ebf1e-63ad-44b0-b212-b26e0323ac4a",
+      "result_id": "0a46b2cd-5c8f-4d1a-85aa-5f225c618021"
+    },
+    {
+      "claim_id": "e263a050-dcaf-4331-8d33-90c85eed10ef",
+      "result_id": "0a46b2cd-5c8f-4d1a-85aa-5f225c618021"
+    },
+    {
+      "claim_id": "6364279b-1055-4ba8-a0e2-c4da9301c264",
+      "result_id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d"
+    },
+    {
+      "claim_id": "1baa3b60-ad27-49f2-b450-bf5869f47ead",
+      "result_id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d"
+    },
+    {
+      "claim_id": "8181abbe-730f-4882-83be-51dacf11b2ed",
+      "result_id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d"
+    },
+    {
+      "claim_id": "42840c3a-579a-4b60-98b2-704a1e7a2971",
+      "result_id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d"
+    },
+    {
+      "claim_id": "8e35d691-c5ba-407e-8844-5e4bda481596",
+      "result_id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d"
+    },
+    {
+      "claim_id": "d89fc4d2-8535-40e0-bdea-347dabb71909",
+      "result_id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d"
+    },
+    {
+      "claim_id": "f0ccf839-ba0f-47f6-bfc3-a861151518d9",
+      "result_id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d"
+    },
+    {
+      "claim_id": "5d4441ba-fcf3-4acb-866c-fab13915d09e",
+      "result_id": "d40a9276-43f8-42f6-b6f6-c3b8fac2ab9b"
+    },
+    {
+      "claim_id": "56a4196e-3cb8-4d13-a637-72cb469b1b89",
+      "result_id": "d40a9276-43f8-42f6-b6f6-c3b8fac2ab9b"
+    },
+    {
+      "claim_id": "c13ff0e7-c644-4ac5-a0b4-fc1b99486fe8",
+      "result_id": "d40a9276-43f8-42f6-b6f6-c3b8fac2ab9b"
+    },
+    {
+      "claim_id": "f367890c-0869-45a4-92e6-0ac5f54e60da",
+      "result_id": "486b3b3f-d868-47a2-ba06-530e9e74b58f"
+    },
+    {
+      "claim_id": "3e828a4b-0070-4990-b478-74a7d3accff7",
+      "result_id": "486b3b3f-d868-47a2-ba06-530e9e74b58f"
+    },
+    {
+      "claim_id": "632148e5-e158-4019-a2a3-4decc09b6d6a",
+      "result_id": "3720092a-2f3b-4680-8f22-448816855848"
+    },
+    {
+      "claim_id": "45ef423f-21d5-4b0f-b149-a60b611d460f",
+      "result_id": "b30f956d-a457-4ac8-a6cd-7b17f996cbe7"
+    },
+    {
+      "claim_id": "e97fdb79-593d-4cba-bcaf-c224dbcc10ec",
+      "result_id": "b30f956d-a457-4ac8-a6cd-7b17f996cbe7"
+    },
+    {
+      "claim_id": "332a42c2-7015-4e2d-8009-650a1b7140a0",
+      "result_id": "b30f956d-a457-4ac8-a6cd-7b17f996cbe7"
+    },
+    {
+      "claim_id": "783a73e8-83de-4c0b-b208-787d4831b05a",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "8350a601-9d08-41e9-b71a-b83d662081d8",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "169570a6-dca7-4267-b0fb-b4e27c7e7a3d",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "73e96310-cf4f-4586-ab61-689a34952ec4",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "871493f6-0b99-4fd2-aba5-0982f4b99925",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "ca05ac35-c22f-4364-a282-746adc772a22",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "0ff7f80f-394c-472b-a6c8-ba89531db3de",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "a88b4df6-b4c7-4ed1-9756-1ae5def710d1",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "ac9dfbe5-8c40-4645-b2b2-6e5f2ca9569e",
+      "result_id": "f09e951a-42c7-4457-9b0a-621a801ef246"
+    },
+    {
+      "claim_id": "3e040044-da34-4d93-8896-ccd22fa9999b",
+      "result_id": "0c2d2442-6277-4524-96be-afab82ac25e1"
+    },
+    {
+      "claim_id": "7e0ae48a-057b-4920-aa27-3b3f62bc5489",
+      "result_id": "0c2d2442-6277-4524-96be-afab82ac25e1"
+    },
+    {
+      "claim_id": "2770bc00-bcc9-49c0-8e5b-dfdee5788434",
+      "result_id": "0c2d2442-6277-4524-96be-afab82ac25e1"
+    },
+    {
+      "claim_id": "b2236d78-6960-4eea-bedd-a635d05b293c",
+      "result_id": "0c2d2442-6277-4524-96be-afab82ac25e1"
+    },
+    {
+      "claim_id": "aa219053-e17c-4fcb-a250-994aa86d9049",
+      "result_id": "0c2d2442-6277-4524-96be-afab82ac25e1"
+    },
+    {
+      "claim_id": "35c8a4e5-cb83-4fea-a788-f8498feeb92c",
+      "result_id": "079f28ad-7033-44f2-a7ea-0bcb30e58f72"
+    },
+    {
+      "claim_id": "a760c249-aaf5-47d4-b6b9-bee8a1478b2a",
+      "result_id": "079f28ad-7033-44f2-a7ea-0bcb30e58f72"
+    },
+    {
+      "claim_id": "3f4c3210-902b-4325-98c6-50ea2f23c00e",
+      "result_id": "079f28ad-7033-44f2-a7ea-0bcb30e58f72"
+    },
+    {
+      "claim_id": "c9f3db9a-9d57-45d1-beff-99dc1f413afc",
+      "result_id": "079f28ad-7033-44f2-a7ea-0bcb30e58f72"
+    },
+    {
+      "claim_id": "c95748fd-8007-4c33-bcb2-fb088d3b2984",
+      "result_id": "079f28ad-7033-44f2-a7ea-0bcb30e58f72"
+    },
+    {
+      "claim_id": "9645f444-a406-4922-8f3b-ed79349a2137",
+      "result_id": "079f28ad-7033-44f2-a7ea-0bcb30e58f72"
+    },
+    {
+      "claim_id": "248d7f77-1f44-4831-99de-154d3f9efc09",
+      "result_id": "5ef42c14-b61f-40e0-9191-04ca5aebcb2c"
+    },
+    {
+      "claim_id": "de804067-8fe3-4244-ba6d-1a24328cd66f",
+      "result_id": "5ef42c14-b61f-40e0-9191-04ca5aebcb2c"
+    },
+    {
+      "claim_id": "de13a25a-15fb-4862-8932-e6d0ade80315",
+      "result_id": "5ef42c14-b61f-40e0-9191-04ca5aebcb2c"
+    },
+    {
+      "claim_id": "714bab41-2158-46b2-bf25-2e937332ce9b",
+      "result_id": "5ef42c14-b61f-40e0-9191-04ca5aebcb2c"
+    },
+    {
+      "claim_id": "59bd0f9d-ec57-4110-850c-d4d78d4aa43c",
+      "result_id": "5ef42c14-b61f-40e0-9191-04ca5aebcb2c"
+    },
+    {
+      "claim_id": "188da455-15b7-4c2e-aacf-8381e177efb8",
+      "result_id": "59268d8a-19f0-4725-9ef3-b113d58c6c97"
+    },
+    {
+      "claim_id": "dde7ba5e-c089-4ec7-acf9-cd5120603cef",
+      "result_id": "59268d8a-19f0-4725-9ef3-b113d58c6c97"
+    },
+    {
+      "claim_id": "ead72394-02df-40fd-adab-c2290635de5e",
+      "result_id": "59268d8a-19f0-4725-9ef3-b113d58c6c97"
+    },
+    {
+      "claim_id": "f7499813-926f-4632-b62e-a0f8950eef9d",
+      "result_id": "59268d8a-19f0-4725-9ef3-b113d58c6c97"
+    },
+    {
+      "claim_id": "0005a6a4-67f8-4363-b604-b5ae1b19f13e",
+      "result_id": "59268d8a-19f0-4725-9ef3-b113d58c6c97"
+    },
+    {
+      "claim_id": "b34bff68-20cc-4ec3-ac8d-da06572faf4c",
+      "result_id": "416665f9-292c-482c-93ed-60ae35d750e9"
+    },
+    {
+      "claim_id": "f6091fcf-04dd-444c-8409-eab2b199ca16",
+      "result_id": "416665f9-292c-482c-93ed-60ae35d750e9"
+    },
+    {
+      "claim_id": "8987f967-9c48-4aaa-85f0-967e111f8e5e",
+      "result_id": "416665f9-292c-482c-93ed-60ae35d750e9"
+    },
+    {
+      "claim_id": "f482e3c1-c322-4e74-afa0-c1200f5d7d2a",
+      "result_id": "416665f9-292c-482c-93ed-60ae35d750e9"
+    },
+    {
+      "claim_id": "bf326ba5-c856-4816-87f3-259a05d63c6b",
+      "result_id": "416665f9-292c-482c-93ed-60ae35d750e9"
+    },
+    {
+      "claim_id": "581f16aa-fe6b-4995-9a43-7effe21678d2",
+      "result_id": "416665f9-292c-482c-93ed-60ae35d750e9"
+    },
+    {
+      "claim_id": "6f200bfb-64ff-4da1-b128-7fc5c2976523",
+      "result_id": "40037b9d-1150-418e-8883-0791c2848c85"
+    },
+    {
+      "claim_id": "37c07172-5fbd-4378-a9d3-86afb42119f1",
+      "result_id": "40037b9d-1150-418e-8883-0791c2848c85"
+    },
+    {
+      "claim_id": "6672d90e-e916-4f69-b626-98a5634931e6",
+      "result_id": "40037b9d-1150-418e-8883-0791c2848c85"
+    },
+    {
+      "claim_id": "aab84fc7-10ae-4a11-bc56-c7c55d549207",
+      "result_id": "40037b9d-1150-418e-8883-0791c2848c85"
+    },
+    {
+      "claim_id": "5a558405-3555-4f54-8d06-edf4cc4f4c10",
+      "result_id": "40037b9d-1150-418e-8883-0791c2848c85"
+    },
+    {
+      "claim_id": "668549d7-e09a-4579-9793-67ea833cf07f",
+      "result_id": "40037b9d-1150-418e-8883-0791c2848c85"
+    },
+    {
+      "claim_id": "e1ddf3c1-5733-4f8c-a0dd-8544799780dc",
+      "result_id": "40037b9d-1150-418e-8883-0791c2848c85"
+    },
+    {
+      "claim_id": "6d038ca4-6555-4243-ac1d-82ac286c030f",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "45ef423f-21d5-4b0f-b149-a60b611d460f",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "35b490ee-243f-4c5f-a48e-bdd7d6a70e2c",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "0ca1458a-27b7-43ba-bd7d-7d204e770c67",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "db72f2cb-9806-4423-89b3-b130ce609e54",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "a01acf17-aca5-4b74-87ed-256b471d203a",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "791dbfd5-1df8-46c7-8f53-50eceb2f5c37",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "8e8aa70d-38a5-4d1c-9e0d-7060162a9e58",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "586382b8-1b4b-467e-8937-bc69067183d6",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "8b377fe3-ae4d-4dcb-bced-fb894a3f8d6a",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "b4461849-041e-41bb-94ed-307018b5f557",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "f6317df1-4200-475c-8259-ae9056ed41cb",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "dccc64f0-ea7d-4e75-863d-7ca589f56f57",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "f6f292a8-9185-43ee-8111-7085e59e82d7",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "042376d8-bd02-4642-a62a-7453de11991d",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "ff0546a0-8cdd-4854-bd83-84cdb32966eb",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "aa3fb33d-ee7b-481e-a14b-015f6ad10f38",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "e0744c52-f52d-4e70-8370-9cd4aa48863a",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "ae48adde-2593-4c95-9232-118e30e18b28",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "0f81c8a2-af0b-44ec-b207-a88bc108d86d",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "e97fdb79-593d-4cba-bcaf-c224dbcc10ec",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "332a42c2-7015-4e2d-8009-650a1b7140a0",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "2f1ebf1e-63ad-44b0-b212-b26e0323ac4a",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "e263a050-dcaf-4331-8d33-90c85eed10ef",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "e83f8807-2830-47b0-9a7c-49eae354559c",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "6364279b-1055-4ba8-a0e2-c4da9301c264",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "1baa3b60-ad27-49f2-b450-bf5869f47ead",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "8181abbe-730f-4882-83be-51dacf11b2ed",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "42840c3a-579a-4b60-98b2-704a1e7a2971",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "8e35d691-c5ba-407e-8844-5e4bda481596",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "5d4441ba-fcf3-4acb-866c-fab13915d09e",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "f367890c-0869-45a4-92e6-0ac5f54e60da",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "0f7907dd-403d-42a6-98c5-3188f5579019",
+      "result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe"
+    },
+    {
+      "claim_id": "6438eb25-d52a-417d-b323-add04b6c796d",
+      "result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4"
+    },
+    {
+      "claim_id": "c0becccc-3c9f-4767-971c-c0b86de58e58",
+      "result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4"
+    },
+    {
+      "claim_id": "d89fc4d2-8535-40e0-bdea-347dabb71909",
+      "result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4"
+    },
+    {
+      "claim_id": "f0ccf839-ba0f-47f6-bfc3-a861151518d9",
+      "result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4"
+    },
+    {
+      "claim_id": "56a4196e-3cb8-4d13-a637-72cb469b1b89",
+      "result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4"
+    },
+    {
+      "claim_id": "c13ff0e7-c644-4ac5-a0b4-fc1b99486fe8",
+      "result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4"
+    },
+    {
+      "claim_id": "3e828a4b-0070-4990-b478-74a7d3accff7",
+      "result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4"
+    },
+    {
+      "claim_id": "632148e5-e158-4019-a2a3-4decc09b6d6a",
+      "result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "10a29a39-bfcd-4f69-be6f-2b22e60e120f",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "b7296006-97be-47f7-b47a-7bfb012f6311",
+      "peer_result_id": "f09e951a-42c7-4457-9b0a-621a801ef246",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address SIRT2-mediated deacetylation of ACSS2 under amino acid stress (C24-C34). OpenEval finds the evidence SUPPORTED with converging experimental approaches, while peer reviewers rate it UNCERTAIN, noting 'some evidence supporting these findings is incomplete' and requesting 'direct demonstration of target deacetylation by sirtuin 2.' This represents a significant disagreement on evidence sufficiency.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "4f405a35-cfdd-4a07-a8b7-6dda457da1a4",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "7b544c4d-e8cc-4655-8999-dac4a2fb028f",
+      "peer_result_id": "0c2d2442-6277-4524-96be-afab82ac25e1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address K271 identification as the SIRT2 deacetylation site (C46-C50). Both evaluations are SUPPORTED. Reviewers explicitly acknowledge this as a strength, noting 'Identification of a novel acetylation site on ACSS2' and recognizing the mass spectrometry and mutational analysis as solid evidence. Strong agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "af5755f3-a40e-4474-8b9b-1710b62a1c34",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "43517e2b-009a-46dc-bc2b-833448749e27",
+      "peer_result_id": "079f28ad-7033-44f2-a7ea-0bcb30e58f72",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address SIRT2 regulation of ACSS2 at the protein level (C35-C40). OpenEval finds evidence SUPPORTED through protein stability assays and mRNA analysis, while peer reviewers rate it UNCERTAIN, noting 'data for this manuscript seems preliminary as nearly all data is performed in one cell line' and requesting validation across multiple systems. Disagreement on generalizability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "316d7652-4842-4519-a984-29cfe1fbc7d8",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "913e83ab-3f31-4e78-b675-05b3bde5eefa",
+      "peer_result_id": "5ef42c14-b61f-40e0-9191-04ca5aebcb2c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address proteasomal degradation mechanism (C41-C45). Both evaluations are SUPPORTED. Reviewers acknowledge 'solid data showing ACSS2 acetylation can be regulated by targeting SIRT2 and that SIRT2 regulates ACSS2 ubiquitination.' Strong agreement on this mechanistic finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "34336ddd-0230-479f-bd03-00516f966654",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "74f95cd6-e6ed-4602-9da7-166574dc3acc",
+      "peer_result_id": "59268d8a-19f0-4725-9ef3-b113d58c6c97",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the mechanistic link between K271 deacetylation and ubiquitination (C51-C55, with OpenEval also including C4-C5). Both evaluations are SUPPORTED. Reviewers recognize 'acetylation of 271 protects ACSS2 from proteasomal degradation in a SIRT2-dependent manner' as a key finding. Strong agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "0fd4f857-4c5a-4e1b-8383-0ba93ea2a4ed",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "fa86819d-0715-41dc-b822-432634ddd64d",
+      "peer_result_id": "416665f9-292c-482c-93ed-60ae35d750e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address functional consequences in lipogenesis and adipocyte differentiation (C58-C63, with OpenEval also including C6-C7). OpenEval finds evidence SUPPORTED, while peer reviewers rate it UNCERTAIN, noting 'overall role of ACSS2 K271 acetylation is not well characterized' and suggesting isotope tracing would better validate functional impact. Disagreement on functional validation sufficiency.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "4b7d9c63-7c95-4ed8-bf1f-95c7f0a81061",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "03a81a7a-ae0e-46d4-91b2-3ca4fa8929b5",
+      "peer_result_id": "40037b9d-1150-418e-8883-0791c2848c85",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the overall regulatory model (C64-C66, C69, with peer review also including C3-C7). OpenEval finds the core mechanism SUPPORTED while noting C66 is speculative. Peer reviewers rate it UNCERTAIN, stating 'further support is required for the model put forward by the authors' and raising statistical concerns. Disagreement on model validation, with peer review expressing broader concerns about the overall framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "4ace62dd-7ceb-41b0-8285-7e35ebbf9b30",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "b57d1832-608c-4bff-a803-c69d551baba9",
+      "peer_result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address citation-based background claims about DNL and disease relevance (C1, C8-C9, C70, C83, with peer review covering broader background C1-C23, C28, C33, C56-C57, C67-C68, C70-C75, C78, C81, C83). Both evaluations are SUPPORTED. These established facts provide accepted context and show strong agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "d6892da9-1da2-4d22-a825-bd14e6cb89bf",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "61919c9a-14a9-4c7c-98e8-b8aa16b201c5",
+      "peer_result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses ACSS2 background claims (C10-C16) as SUPPORTED through appropriate citations. Peer review groups these with other background claims (R8) and also rates them SUPPORTED as accepted knowledge. Agreement on background context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "08f9fa12-67c9-4389-8049-8ff5da90e979",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b5d18e37-52eb-4ec6-af1d-b864081d615c",
+      "peer_result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses acetylation regulation background (C17-C23) as SUPPORTED through citations. Peer review groups these with other background claims (R8) and rates them SUPPORTED. Agreement on established background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "04403703-f364-4890-a2e9-e19c14a0404b",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "0a46b2cd-5c8f-4d1a-85aa-5f225c618021",
+      "peer_result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses SIRT2 stress-responsive background (C28, C33, C67-C68) as SUPPORTED through citations. Peer review groups these with other background claims (R8) and rates them SUPPORTED. Agreement on background context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ea97fdf4-b4cb-40d0-9dbb-901d2d996ef8",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ce0d6617-ad90-436d-a7a6-d4ea751aa75d",
+      "peer_result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses SIRT2's role in DNL regulation background (C71-C77) as SUPPORTED, with C76-C77 involving some inference. Peer review groups C71-C75 with background claims (R8, SUPPORTED) but places C76-C77 in interpretive claims (R9, UNCERTAIN). Partial disagreement on whether these claims are established facts versus interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "ae4ca270-6cd0-42af-90b3-1cf02b357ee9",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "d40a9276-43f8-42f6-b6f6-c3b8fac2ab9b",
+      "peer_result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval addresses contrast with SIRT1 work (C78-C80) as SUPPORTED by experimental data. Peer review groups C79-C80 with interpretive claims (R9, UNCERTAIN) that extend beyond direct experimental data. Disagreement on whether the SIRT1/SIRT2 distinction is sufficiently validated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "89da9c87-68de-4429-b8f7-11edfa9ed019",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "486b3b3f-d868-47a2-ba06-530e9e74b58f",
+      "peer_result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval addresses amino acid stress and lipid metabolism context (C81-C82) as SUPPORTED through citations. Peer review groups C82 with interpretive claims (R9, UNCERTAIN). Minor disagreement on whether this represents established context versus speculative connection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "fda05795-00a9-4fe3-9439-2baa6aa1355e",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "3720092a-2f3b-4680-8f22-448816855848",
+      "peer_result_id": "ddcb9bda-34bc-47b3-b645-c2a42c6876b4",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address therapeutic implications (C84). Both evaluations are UNCERTAIN. OpenEval notes no therapeutic interventions were tested, while peer reviewers acknowledge the speculative nature of therapeutic claims. Strong agreement on the preliminary nature of therapeutic implications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    },
+    {
+      "id": "97ad3683-5fba-4f10-873a-294892061ced",
+      "submission_id": "ed6e87db-fc51-48e9-a562-e2628c00bfee",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "b30f956d-a457-4ac8-a6cd-7b17f996cbe7",
+      "peer_result_id": "6e5bfda6-50ea-4133-81e9-9521073f25fe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses biochemical and genetic background (C2, C56-C57) as SUPPORTED through general knowledge and citations. Peer review groups these with background claims (R8) and rates them SUPPORTED. Agreement on established background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:06:06.938044Z"
+    }
+  ]
+}

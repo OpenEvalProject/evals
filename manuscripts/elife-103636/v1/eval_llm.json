@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the scientific context that context-dependent decision-making is a fundamental cognitive ability, but the neural mechanisms remain poorly understood. A key challenge is distinguishing between input modulation and selection vector modulation mechanisms using neural activity data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C13 collectively establish the background and motivation for the study through citations to prior work. These claims accurately represent the state of the field and are well-supported by appropriate references to established literature (Mante et al. 2013, Pagan et al. 2022, 2025).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Rank-1 recurrent neural networks can perform the context-dependent decision-making task but exclusively through input modulation, with selection vectors remaining invariant across contexts. Irrelevant sensory information is still represented in neural state space despite input modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C21-C30 are well-supported by the modeling results in Figure 2, including psychometric curves (C22), cosine angle analysis (C23, C26), overlap analysis (C27), and dimensionality reduction (C29). The mathematical proof (C25) and robustness across hyperparameters (C24) strengthen the conclusion. The finding that irrelevant information persists in state space (C29-C30) is consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Rank-3 recurrent neural networks with additional connectivity dimensions can perform the task through pure selection vector modulation, where selection vectors change across contexts while input representations remain invariant. Neural activity patterns are indistinguishable from rank-1 models using standard dimensionality reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C32-C40 are supported by the rank-3 model analyses in Figure 3, including task performance (C35), cosine angle analysis showing selection vector changes (C36), overlap analysis (C37), and dimensionality reduction showing indistinguishability from rank-1 models (C39-C40). The multi-population structure (C32) is consistent with cited theory (Dubreuil et al. 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42"
+    ],
+    "result": "Additional connectivity dimensions enable selection vector modulation by providing intermediate pathways for information flow, establishing a previously unknown link between network connectivity dimensionality and selection mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-C42 are supported by the information flow analysis in Figures 4-6. The pathway-based analysis demonstrates how intermediate variables enable context-dependent modulation of selection vectors. The comparative analysis of rank-1 and rank-3 models provides clear evidence for this link, though the mechanistic understanding relies on the specific low-rank architecture studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The pathway-based definition of input modulation, selection vector modulation, and selection vector is mathematically equivalent to the classical linearized dynamical systems definition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by both numerical comparison (Figures 5D, 6B) and theoretical derivation in Methods. The equivalence is demonstrated across a wide range of parameter regimes for models with mixed modulation strategies, validating the novel pathway-based framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Selection vector modulation requires a minimum of three dimensions in neural state space (input, decision variable, and intermediate variable directions), because only the second-order selection vector component depending on intermediate variables is subject to contextual modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by the geometric visualization in Figure 6C and the mathematical analysis of selection vector components. The logical connection between intermediate variables and contextual modulation is clearly established through the pathway-based framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Neural networks with high-dimensional connectivity are more likely to exhibit large proportions of selection vector modulation because more connections can support selection vector modulation compared to input modulation. A strong positive correlation exists between effective connectivity dimension and selection vector modulation proportion in vanilla RNNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by the correlation analysis in Figure 7D (Spearman's r=0.919, p<1e-3, n=3892) and the theoretical rationale based on counting eligible connections (Figure 7A-B). The prediction is validated across a large number of trained vanilla RNNs with varying regularization coefficients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Novel neural dynamical signatures distinguish selection vector modulation at the single neuron level: high-dimensional networks exhibit response kernels with peak amplitudes between pulse onset and choice onset, signifying dynamics in extra dimensions beyond input and decision variable subspaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C55-C59 are supported by the response kernel analysis in Figure 7E. Low effective dimension models show only sensory input and decision variable profiles (C55), while high effective dimension models show additional intermediate profiles (C56-C57). The interpretation that these reflect extra dimensions (C59) is logically connected to the theoretical framework in Figure 6C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "At the population level, the percentage of explained variance (PEV) of extra dynamical modes serves as a reliable index for selection vector modulation proportion. High effective dimension models show substantial PEV in the second transient mode, while low dimension models show near-zero PEV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by the SVD analysis in Figure 7F and correlation analysis in Figure 7G (Spearman's r=0.902, p<1e-3, n=3892). The shared dynamical modes (C60) and differential PEV (C61) are clearly demonstrated, and the correlation with selection vector modulation proportion (C62) is strong across multiple model configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C63"
+    ],
+    "result": "The low-rank RNN modeling approach provides mechanistic transparency and enables development of analyses linking connectivity dimensionality, neural dynamics, and selection mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C63 describe the methodological advantages of the low-rank RNN approach. These are supported by the successful application throughout the study and are consistent with cited low-rank RNN theory (Beiran et al. 2021, Dubreuil et al. 2022). The approach demonstrably enabled the novel insights reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The pulse-based CDM task used in this study is a rat-version paradigm where rats discriminate randomly-timed auditory pulses varying in location and frequency based on context cues. This pulse-based design allows better characterization of behavioral and neural responses compared to continuous input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 accurately describe the task paradigm with appropriate citations (Pagan et al. 2022, Mante et al. 2013). The task structure is clearly illustrated in Figure 1A. The advantage of pulse-based input (C19) is supported by citation and demonstrated in the response kernel analysis (Figure 7E).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "In input modulation, while input information is modulated by context along the selection vector direction, it can be preserved across contexts in directions orthogonal to the selection vector, explaining why irrelevant information appears in neural state space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 provides a mechanistic explanation supported by the modeling results (Figures 2F, 3F) and is consistent with the theoretical framework from Pagan et al. 2022. This explains the counterintuitive observation that both modulation types can produce similar neural activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The major variance in neural activity of vanilla RNNs learned through backpropagation is task-relevant, as demonstrated by lesion analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by the lesion analysis in Figure 7\u2014figure supplement 4C. The analysis demonstrates that trained vanilla RNNs have minimal task-irrelevant variance, which explains why the PEV-based index works reliably for these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C69",
+      "C70"
+    ],
+    "result": "The pathway-based understanding may be transferable to other cognitive tasks, and addressing individual variability in neural computation may require integrative efforts combining recordings, perturbations, connectivity knowledge, and computational modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64, C66, C69-C70 are speculative statements about future applications and limitations. While C69 is a reasonable speculation based on neuroscience knowledge, and C70 is a logical recommendation based on the study's findings (particularly the counterexample in Figure 7\u2014figure supplement 3), these remain untested predictions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C67"
+    ],
+    "result": "Transient dynamics in extra dimensions are not necessary for the context-dependent decision-making task studied here, but may be required for more complex operations like information switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by the rank-1 model results (Figure 2) and citation to Dubreuil et al. 2022. Claim C67 is supported by citation to Tian et al. 2024. Together these establish that while extra dimensions aren't necessary for basic CDM, they may be required for more complex computations.",
+    "result_type": "MINOR"
+  }
+]

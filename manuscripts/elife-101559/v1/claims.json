@@ -1,0 +1,1194 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Fluorescence lifetime imaging microscopy (FLIM) allows the measurement of absolute signal levels independent of sensor concentration.",
+    "claim_type": "EXPLICIT",
+    "source": "Fluorescence lifetime imaging microscopy (FLIM) excels over the widely used fluorescence intensity imaging by allowing the measurement of absolute signal levels independent of sensor concentration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an established advantage of FLIM in the abstract, representing a known property of the technique.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "FLIM's advantage of sensor concentration independence can be compromised by factors like autofluorescence in biological experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "However, FLIM's advantage can be compromised by factors like autofluorescence in biological experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulation results presented throughout the manuscript showing how autofluorescence affects lifetime measurements.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "FLiSimBA is a flexible computational framework for realistic Fluorescence Lifetime Simulation for Biological Applications.",
+    "claim_type": "EXPLICIT",
+    "source": "To address this, we introduce FLiSimBA, a flexible computational framework for realistic Fluorescence Lifetime Simulation for Biological Applications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the development and implementation of this simulation framework.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Fluorescence lifetime is insensitive to fluorophore concentration when only the sensor is present.",
+    "claim_type": "EXPLICIT",
+    "source": "Although fluorescence lifetime is independent of sensor expression when only the sensor is present, in biology experiments, this very advantage of FLIM breaks down when multiple other factors are present.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an established principle of fluorescence lifetime measurements.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "In biological experiments, the advantage of FLIM breaks down when multiple factors such as autofluorescence, background light, dark current, and afterpulse are present.",
+    "claim_type": "EXPLICIT",
+    "source": "Although fluorescence lifetime is independent of sensor expression when only the sensor is present, in biology experiments, this very advantage of FLIM breaks down when multiple other factors are present. These include autofluorescence (natural emission of light by biological tissue after light absorption), background light (e.g. ambient light), dark current, and afterpulse of the photomultiplier tube (PMT) (Akgun et al., 2008; Georgakoudi and Quinn, 2023; Malak et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by both citations to prior work and the simulation data presented in the manuscript.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "As sensor expression varies, the relative contribution of sensor fluorescence over other sources of light or electrical noise varies correspondingly, leading to an apparent change in fluorescence lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "As sensor expression varies, the relative contribution of sensor fluorescence over these other sources of light or electrical noise varies correspondingly, leading to an apparent change in fluorescence lifetime.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through the simulation results shown in Figures 5 and 6.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Prior simulation work usually assumes the presence of sensor fluorescence only, without considering contributions from autofluorescence and afterpulse of the PMT.",
+    "claim_type": "EXPLICIT",
+    "source": "However, prior work usually assumes the presence of sensor fluorescence only, without considering the important contributions to noise and bias due to other factors, such as autofluorescence and afterpulse of the PMT.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of prior work, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Prior simulations are useful in vitro but are not readily applicable in biological settings.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, these simulations are useful in vitro but are not readily applicable in biological settings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the limitations of prior work.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The simulated fluorescence lifetime histogram closely matched the experimental histogram.",
+    "claim_type": "EXPLICIT",
+    "source": "The simulated histogram closely matched the experimental histogram (Figure 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by visual comparison in Figure 1 and statistical analysis in Figure 2\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Autofluorescence decreased the fitted P1 and empirical lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "Autofluorescence (autoF) decreased the fitted P1 and empirical lifetime, consistent with the faster decay of autofluorescence compared with that of FLIM-AKAR sensor fluorescence (Figure 2, Figure 2\u2014figure supplement 1; Figure 2B: p<0.0001, sensor +autoF vs sensor only under all sensor photon number conditions for both fitted P1 and empirical lifetime).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by simulation data with statistical analysis shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Addition of afterpulse and background did not significantly change the fitted P1.",
+    "claim_type": "EXPLICIT",
+    "source": "Further addition of afterpulse and background did not significantly change the fitted P1 (Figure 2; Figure 2B: p>0.6, final simulated data vs sensor + autoF condition for all sensor photon number conditions), consistent with consideration of the background term during the fitting procedure.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by simulation data with statistical analysis shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Afterpulse and background increased the empirical lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, afterpulse and background increased the empirical lifetime, as they are evenly distributed across lifetime time channels and have a higher mean lifetime than FLIM-AKAR (Figure 2; Figure 2B: p<0.0001, final simulated data vs sensor + autoF for all sensor photon number conditions).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by simulation data with statistical analysis shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Afterpulse and background had a greater impact on empirical lifetime compared with autofluorescence.",
+    "claim_type": "EXPLICIT",
+    "source": "Afterpulse and background had a greater impact on empirical lifetime compared with autofluorescence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the simulation results shown in Figure 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The empirical lifetime of background/afterpulse is approximately 4.90 ns.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because the empirical lifetime of background/afterpulse (~4.90 ns) deviates more from FLIM-AKAR (2\u20132.3 ns) than the empirical lifetime of autofluorescence (around 1.69 ns) does.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a measured value from the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The empirical lifetime of autofluorescence is around 1.69 ns.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because the empirical lifetime of background/afterpulse (~4.90 ns) deviates more from FLIM-AKAR (2\u20132.3 ns) than the empirical lifetime of autofluorescence (around 1.69 ns) does.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a measured value from the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The empirical lifetime of FLIM-AKAR is 2\u20132.3 ns.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because the empirical lifetime of background/afterpulse (~4.90 ns) deviates more from FLIM-AKAR (2\u20132.3 ns) than the empirical lifetime of autofluorescence (around 1.69 ns) does.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a measured value from the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Autofluorescence affects both the fitted P1 and empirical lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, while autofluorescence affects both the fitted P1 and empirical lifetime, only empirical lifetime is sensitive to afterpulse and background.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Only empirical lifetime is sensitive to afterpulse and background.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, while autofluorescence affects both the fitted P1 and empirical lifetime, only empirical lifetime is sensitive to afterpulse and background.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The biases introduced by autofluorescence, afterpulse, and background were less pronounced at higher sensor photon counts.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the biases introduced by autofluorescence, afterpulse, and background were less pronounced at higher sensor photon counts, which can be explained by the relatively small contribution of these factors when sensor fluorescence is high.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "As the number of sensor photons increased, the biases not only decreased but also plateaued.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, as the number of sensor photons increased, the biases not only decreased but also plateaued, which made fluorescence lifetime less dependent on the number of sensor photons (Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The variance decreased at higher photon counts for both the fitted P1 and empirical lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the variance also decreased at higher photon counts for both the fitted P1 and empirical lifetime (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Higher photon counts resulted in both less bias and less noise.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, higher photon counts resulted in both less bias and less noise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion from the simulation results in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The values from final simulated data were not significantly different from those from experimental data for both fitted P1 and empirical lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "For both fitted P1 and empirical lifetime, the values from final simulated data were not significantly different from those from experimental data (Figure 2\u2014figure supplement 1C; adjusted p=0.81 for empirical lifetime and 0.98 for fitted P1, final simulated data vs experimental data; n=500 and 7, respectively).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by statistical comparison shown in Figure 2\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "As the number of sensor photons increased, the MDDs decreased.",
+    "claim_type": "EXPLICIT",
+    "source": "As the number of sensor photons increased, the MDDs decreased.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "As the number of repeated measurements increased, the MDD also decreased.",
+    "claim_type": "EXPLICIT",
+    "source": "As the number of repeated measurements increased, the MDD also decreased (Figure 3B and C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 3B and C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "To detect a P1 change of 0.006 or a lifetime change of 5 ps with five sample measurements in each comparison group, approximately 300,000 photons are needed.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, to detect a P1 change of 0.006 or a lifetime change of 5 ps with five sample measurements in each comparison group, approximately 300,000 photons are needed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is derived from the MDD curves shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "As the sensor fluorescence increased, the gain in SNR decreased.",
+    "claim_type": "EXPLICIT",
+    "source": "As the sensor fluorescence increased, the gain in SNR decreased.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the MDD curves in Figure 3 showing diminishing returns at higher photon counts.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Hybrid detectors are advantageous over traditional gallium arsenide phosphide (GaAsP) PMTs because of their narrower IRF width and lack of afterpulsing.",
+    "claim_type": "EXPLICIT",
+    "source": "HBDs are advantageous over traditional gallium arsenide phosphide (GaAsP) PMTs because of their narrower IRF width and lack of afterpulsing (Becker et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known advantage, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Hybrid detectors and GaAsP PMTs displayed similar photon-dependent changes in fitted P1 and empirical lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "Hybrid detectors and GaAsP PMTs displayed similar photon-dependent changes in fitted P1 and empirical lifetime (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "A given sensor photon number gave a comparable MDD for HBDs and GaAsP PMTs.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, a given sensor photon number gave a comparable MDD for HBDs and GaAsP PMTs (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "HBDs with a narrower IRF introduced less noise than GaAsP detectors.",
+    "claim_type": "EXPLICIT",
+    "source": "although HBDs with a narrower IRF introduced less noise than GaAsP detectors (Figure 4G and H; noise from sampling from the IRF: standard deviation (STD) of fitted P1: 0.0008 for GaAsP PMTs and 0.0005 for HBDs; STD of empirical lifetime: 0.0003 for GaAsP PMTs and 0.0001 for HBDs)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 4G and H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The noise of lifetime measurements was dominated by photon noise, and not by IRF noise.",
+    "claim_type": "EXPLICIT",
+    "source": "the noise of lifetime measurements was dominated by photon noise, and not by IRF noise (Figure 4G and H; noise from sampling of photons: STD of fitted P1: 0.0028 for both GaAsP PMTs and HBDs; STD of empirical lifetime: 0.0025 for both GaAsP PMTs and HBDs).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 4G and H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "HBDs with a narrower IRF and no afterpulse yield little improvement in the SNR for fluorescent protein-based sensors in biological applications.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, although HBD can offer other advantages (Becker et al., 2011; Trinh and Esposito, 2021), HBDs with a narrower IRF and no afterpulse yield little improvement in the SNR for fluorescent protein-based sensors in biological applications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results in Figure 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "When P1 changed from 0.4 to 0.5, both fitted P1 and empirical lifetime increased.",
+    "claim_type": "EXPLICIT",
+    "source": "When P1 changed from 0.4 to 0.5, both fitted P1 and empirical lifetime increased as expected (Figure 5B and C; adjusted p<0.0001, P1=0.4 vs P1=0.5, under all photon number conditions for both fitted P1 and empirical lifetime).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 5B and C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "As the sensor photon count increased, fitted P1 increased and empirical lifetime decreased with both plateauing at high photon counts.",
+    "claim_type": "EXPLICIT",
+    "source": "As the sensor photon count increased, fitted P1 increased and empirical lifetime decreased with both plateauing at high photon counts (Figure 5B and C; p<0.05, 800,000 photons vs 550,000 photons or less for fitted P1, 800,000 photons vs 700,000 photons or less for empirical lifetime, for both P1=0.4 and P1=0.5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 5B and C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "As the sensor photon count increased, the change in the fitted P1 and empirical lifetime also showed an apparent increase.",
+    "claim_type": "EXPLICIT",
+    "source": "As the sensor photon count increased, the change in the fitted P1 and empirical lifetime also showed an apparent increase (Figure 5D and E; p<0.05, 800,000 photons vs 450,000 photons or less for fitted P1 and 400,000 photons or less for empirical lifetime).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 5D and E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The fluorescence lifetime responses were relatively stable at sensor photon counts of 500,000 and above.",
+    "claim_type": "EXPLICIT",
+    "source": "With the parameters used in our case study, the fluorescence lifetime responses were relatively stable at sensor photon counts of 500,000 and above (Figure 5D and E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 5D and E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "A higher sensor photon count reduces the likelihood of significant changes in lifetime due to sensor expression.",
+    "claim_type": "EXPLICIT",
+    "source": "A higher sensor photon count reduces the likelihood of significant changes in lifetime due to sensor expression (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "As sensor fluorescence increased, the sensor expression-induced apparent change in fitted P1 and empirical lifetime decreased.",
+    "claim_type": "EXPLICIT",
+    "source": "As sensor fluorescence increased, the sensor expression-induced apparent change in fitted P1 and empirical lifetime decreased.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "As the total number of sensor photons increased, a greater difference in sensor expression was tolerated.",
+    "claim_type": "EXPLICIT",
+    "source": "As the total number of sensor photons increased, a greater difference in sensor expression was tolerated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Fitted P1 could tolerate more photon changes than empirical lifetime for a given number of sensor photons.",
+    "claim_type": "EXPLICIT",
+    "source": "Fitted P1 could tolerate more photon changes than empirical lifetime for a given number of sensor photons (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "If sensors could be made with emission spectra that do not overlap with tissue autofluorescence, both the relative response and absolute values of fitted P1 no longer depended on sensor expression.",
+    "claim_type": "EXPLICIT",
+    "source": "If sensors could be made with emission spectra that do not overlap with tissue autofluorescence (e.g. red or far-red sensors), both the relative response and absolute values of fitted P1 no longer depended on sensor expression (Figure 7A and C left panels; 7A: p=0.047 for 30,000 photons, p>0.8 for the other photon counts, vs 800,000 photons).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 7A and C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "With no autofluorescence, the relative response in empirical lifetime showed less dependence on sensor expression.",
+    "claim_type": "EXPLICIT",
+    "source": "With no autofluorescence, the relative response in empirical lifetime showed less dependence on sensor expression (Figure 7B, left, p<0.05 for 150,000 photons or less, p>0.2 for the other photon counts, vs 800,000 photons)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Sensors with spectra that avoid overlap with autofluorescence are completely independent of sensor expression levels when fitted P1 is used as the metric of evaluation.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, sensors with spectra that avoid overlap with autofluorescence are completely independent of sensor expression levels when fitted P1 is used as the metric of evaluation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results in Figure 7.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "When background signals were lower, both the relative response and absolute values of fitted P1 showed a similar sensor expression dependence to that of the higher background.",
+    "claim_type": "EXPLICIT",
+    "source": "When background signals were lower, both the relative response and absolute values of fitted P1 showed a similar sensor expression dependence to that of the higher background (Figure 7A and C, middle panels; 7A: p<0.05 for 350,000 photons or less, p>0.1 for the other photon counts, vs 800,000 photons).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 7A and C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "A lower background slightly reduced the sensor expression dependence for the empirical lifetime response.",
+    "claim_type": "EXPLICIT",
+    "source": "For the empirical lifetime response, a lower background slightly reduced the sensor expression dependence (Figure 7B, middle, p<0.05 for 350,000 photons or less, p>0.1 for the other photon counts, vs 800,000 photons).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "A lower background signal caused greater tolerance of sensor expression level changes for the measurement of absolute empirical lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, a lower background signal caused greater tolerance of sensor expression level changes for the measurement of absolute empirical lifetime (Figure 7D, middle).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 7D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "A lower background does not significantly alter the sensor level dependence when fitted P1 is used as the metric of measurement.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, a lower background does not significantly alter the sensor level dependence when fitted P1 is used as the metric of measurement, but it significantly reduces the sensor level dependence when empirical lifetime is used as the metric of measurement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results in Figure 7.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "When there was no autofluorescence and the background was lower, there was no longer sensor expression dependence for fitted P1.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with the results above, when there was no autofluorescence and the background was lower, there was no longer sensor expression dependence for fitted P1 (Figure 7A and C, right panels; 7A: p>0.99 for all photon counts vs 800,000 photons)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 7A and C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "When there was no autofluorescence and the background was lower, the sensor expression dependence became much less pronounced for empirical lifetime.",
+    "claim_type": "EXPLICIT",
+    "source": "and the sensor expression dependence also became much less pronounced for empirical lifetime (Figure 7B and D, right; 7B: p<0.05 for 150,000 photons or less, p>0.3 for the other photon counts, vs 800,000 photons).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 7B and D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Deconvolution accurately recovered the photon numbers attributed to each sensor compared with the actual sensor photons inputted into the model.",
+    "claim_type": "EXPLICIT",
+    "source": "Deconvolution accurately recovered the photon numbers attributed to each sensor compared with the actual sensor photons inputted into the model (Figure 8C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 8C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The number of fitted sensor 1 photons (with shorter lifetime) was greater than the number of simulated sensor 1 photons, consistent with the contribution of autofluorescence whose average lifetime is closer to that of Sensor 1.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of fitted sensor 1 photons (with shorter lifetime) was greater than the number of simulated sensor 1 photons, consistent with the contribution of autofluorescence whose average lifetime is closer to that of Sensor 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 8C and explained by the properties of autofluorescence.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "When the lifetime decay constants of the two species were further separated, the variance in the fitted sensor photons decreased.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, when the lifetime decay constants of the two species were further separated, the variance in the fitted sensor photons decreased (Figure 8C, STD = 0.012 for 4 ns separation and STD = 0.053\u20130.061 for 0.5 ns separation), indicating that further separation of lifetimes between the two sensors resulted in a better SNR.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 8C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The statistical power for detecting a specific intensity change was greater when the intensity change was greater and when the difference between the lifetime constants of the two sensors was greater.",
+    "claim_type": "EXPLICIT",
+    "source": "The statistical power for detecting a specific intensity change was greater when the intensity change was greater and when the difference between the lifetime constants of the two sensors was greater (Figure 8E, for any given heatmap).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 8E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The statistical power was greater when the number of starting sensor 1 photons was greater and the number of sensor 2 photons were lower.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the statistical power was also greater when the number of starting sensor 1 photons was greater and the number of sensor 2 photons were lower (Figure 8E, comparing between the heatmaps).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 8E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The minimum detectable \u0394F/F0 for sensor 1 decreased as the lifetime separation increased, as sensor 1 expression level increased, or as the number of sensor 2 photons decreased.",
+    "claim_type": "EXPLICIT",
+    "source": "The minimum detectable \u0394F/F0 for sensor 1 decreased as the lifetime separation increased, as sensor 1 expression level increased, or as the number of sensor 2 photons decreased (Figure 8F and Figure 8\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 8F and Figure 8\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Only a 0.5 ns separation in lifetime constants between the two sensors could result in a minimum detectable \u0394F/F0 of 5% in sensor 1 if sensor 1 showed high but reasonable expression (800,000 photons or higher) and sensor 2 showed reasonable expression (500,000 photons or lower).",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, only a 0.5 ns separation in lifetime constants between the two sensors could result in a minimum detectable \u0394F/F0 of 5% in sensor 1 if sensor 1 showed high but reasonable expression (800,000 photons or higher) and sensor 2 showed reasonable expression (500,000 photons or lower) (Figure 8F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 8F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Multiplexed fluorescence lifetime imaging was feasible with small shifts in the sensor properties.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, our simulation showed that multiplexed fluorescence lifetime imaging was feasible with small shifts in the sensor properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results in Figure 8.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "FLIM-AKAR is a FRET-based biosensor that measures the activity of protein kinase A (PKA) in a variety of biological contexts, including brain slices and freely moving animals.",
+    "claim_type": "EXPLICIT",
+    "source": "In the examples in this study, we used the lifetime distribution of the FLIM-compatible A Kinase Activity Reporter (FLIM-AKAR), a F\u00f6rster resonance energy transfer (FRET)-based biosensor that measures the activity of protein kinase A (PKA) in a variety of biological contexts, including brain slices and freely moving animals (Chen et al., 2014; Chen et al., 2017; Lee et al., 2019; Lee et al., 2021; Tilden et al., 2024).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an established property of FLIM-AKAR, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The fluorescence lifetime of FLIM-AKAR follows a double exponential decay.",
+    "claim_type": "EXPLICIT",
+    "source": "The fluorescence lifetime of FLIM-AKAR follows a double exponential decay defined by the following equation:",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known property of FLIM-AKAR and used as the basis for simulations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "\u03c41 and \u03c42 for FLIM-AKAR were previously determined to be 2.14 ns and 0.69 ns, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "For FLIM-AKAR sensor fluorescence, \u03c41 and \u03c42 were previously determined to be 2.14 ns and 0.69 ns, respectively (Chen et al., 2014; Chen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as previously determined values, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The autofluorescence lifetime histogram exhibited faster decay than that of FLIM-AKAR.",
+    "claim_type": "EXPLICIT",
+    "source": "The autofluorescence lifetime histogram exhibited faster decay than that of FLIM-AKAR (Figure 2\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the data shown in Figure 2\u2014figure supplement 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Both experimental and simulated data showed good fitting.",
+    "claim_type": "EXPLICIT",
+    "source": "Both experimental and simulated data showed good fitting (Figure 2\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the data shown in Figure 2\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Afterpulse is a long-lasting signal from ionization of residual gas inside the PMT following a photon detection event.",
+    "claim_type": "EXPLICIT",
+    "source": "After that, we added the afterpulse of the PMT, long-lasting signals from ionization of residual gas inside the PMT following a photon detection event (Akgun et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known phenomenon, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The afterpulse was modeled as an even lifetime distribution with the amount of signal as a fraction of sensor fluorescence.",
+    "claim_type": "EXPLICIT",
+    "source": "The afterpulse was modeled as an even lifetime distribution with the amount of signal as a fraction of sensor fluorescence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the modeling approach used in the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Background signals are accounted for largely by ambient light leakage and the dark current of the PMT.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we added a specific number of background signals (Fbackground) that was empirically determined from measurements, accounted for largely by ambient light leakage and the dark current of the PMT.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the sources of background signals in the simulations.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Fauto was determined to be 4560 photons.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, Fauto was determined to be 4560 photons and Fbackground was 3484 photons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an empirically determined value from measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Fbackground was determined to be 3484 photons.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, Fauto was determined to be 4560 photons and Fbackground was 3484 photons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an empirically determined value from measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The afterpulse ratio of the PMT was 0.32% for most figures.",
+    "claim_type": "EXPLICIT",
+    "source": "For GaAsP PMTs, an afterpulse ratio of 0.32% was used in all figures except for Figure 2 and Figure 2\u2014figure supplement 1, where a ratio of 0.40% was used to match the specific experimental data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an empirically determined value used in the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The afterpulse ratio of the PMT was 0.40% for Figure 2 and Figure 2\u2014figure supplement 1.",
+    "claim_type": "EXPLICIT",
+    "source": "For GaAsP PMTs, an afterpulse ratio of 0.32% was used in all figures except for Figure 2 and Figure 2\u2014figure supplement 1, where a ratio of 0.40% was used to match the specific experimental data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an empirically determined value used in the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The afterpulse ratio for hybrid detectors is 0.",
+    "claim_type": "EXPLICIT",
+    "source": "For GaAsP PMTs, an afterpulse ratio of 0.32% was used in all figures except for Figure 2 and Figure 2\u2014figure supplement 1, where a ratio of 0.40% was used to match the specific experimental data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a property of hybrid detectors used in the simulations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "All biological tissues exhibit autofluorescence due to fluorescent cellular components and metabolites, such as nicotinamide-adenine dinucleotide (NAD), flavins, and aromatic amino acids.",
+    "claim_type": "EXPLICIT",
+    "source": "All biological tissues exhibit autofluorescence due to fluorescent cellular components and metabolites, such as nicotinamide-adenine dinucleotide (NAD), flavins, and aromatic amino acids (Georgakoudi and Quinn, 2023; Ma et al., 2024; Malak et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as established knowledge, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Fluorescence lifetime refers to the time between excitation of a fluorophore and emission of light.",
+    "claim_type": "EXPLICIT",
+    "source": "Fluorescence lifetime refers to the time between excitation of a fluorophore and emission of light.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definition of fluorescence lifetime.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Fluorescence lifetime can be used to compare the dynamics of biological signals across animals or over long periods of time despite changes in sensor expression levels.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, fluorescence lifetime can be used to compare the dynamics of biological signals across animals or over long periods of time despite changes in sensor expression levels (Laviv et al., 2020; Ma et al., 2024).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an advantage of fluorescence lifetime, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Fluorescence lifetime offers the potential to quantitate absolute values of biological signals because of its quantitative nature and its insensitivity to sensor expression.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, it offers the potential to quantitate absolute values of biological signals because of its quantitative nature and its insensitivity to sensor expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an advantage of fluorescence lifetime.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "FLIM-compatible sensors are being actively developed.",
+    "claim_type": "EXPLICIT",
+    "source": "Because of these advantages, FLIM-compatible sensors are being actively developed and FLIM has been increasingly adopted to elucidate the dynamics of many types of biological signals over multiple time scales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a current trend in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "FLIM has been increasingly adopted to elucidate the dynamics of many types of biological signals over multiple time scales.",
+    "claim_type": "EXPLICIT",
+    "source": "Because of these advantages, FLIM-compatible sensors are being actively developed and FLIM has been increasingly adopted to elucidate the dynamics of many types of biological signals over multiple time scales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a current trend in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Apparent changes in fluorescence lifetime observed over days, across cell types, or subcellular compartments may reflect variations in sensor expression levels rather than true differences in biological signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, apparent changes in fluorescence lifetime observed over days, across cell types, or subcellular compartments may reflect variations in sensor expression levels rather than true differences in biological signals (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results in Figure 6.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Fitted parameters, such as fitted P1, are preferred over empirical lifetime when the lifetime histogram can be described by multi-exponential decay equations and sufficient photons are collected for fitting.",
+    "claim_type": "EXPLICIT",
+    "source": "Fitted parameters, such as fitted P1, are preferred over empirical lifetime when the lifetime histogram can be described by multi-exponential decay equations and sufficient photons are collected for fitting, because they are less sensitive to background interference (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a recommendation based on the simulation results in Figure 7.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Empirical lifetime is used when sensor lifetime decay is too complex, or when photon counts are too low for fitting.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, empirical lifetime is used when sensor lifetime decay is too complex, or when photon counts are too low for fitting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a practical consideration for choosing analysis methods.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "With simultaneous spectral and lifetime multiplexing, the proposed method enables the detection of a much larger number of signals dynamically.",
+    "claim_type": "EXPLICIT",
+    "source": "With simultaneous spectral and lifetime multiplexing, our proposed method enables the detection of a much larger number of signals dynamically, opening doors to better systems understanding of signaling within the cell and physiological interactions between different organs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion about the potential of the proposed multiplexing approach.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "FLiSimBA recapitulates experimental data.",
+    "claim_type": "EXPLICIT",
+    "source": "FLiSimBA recapitulates experimental data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key feature of FLiSimBA and demonstrated in Figure 2\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The FWHM of the Gaussian IRF of the GaAsP PMT was set to match the FWHM of the experimentally collected IRF (340 ps).",
+    "claim_type": "EXPLICIT",
+    "source": "The full width at half maximum (FWHM) of the Gaussian IRF of the GaAsP PMT was set to match the FWHM of the experimentally collected IRF (340 ps).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter used in the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The FWHM of the hybrid detector Gaussian IRF was set as 120 ps based on the HPM-100\u201340 model.",
+    "claim_type": "EXPLICIT",
+    "source": "The FWHM of the hybrid detector Gaussian IRF was set as 120 ps based on the HPM-100\u201340 model (Becker & Hickl) (Becker et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter used in the simulations, based on manufacturer specifications.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "If the two sensors had comparable dynamic ranges and comparable expression levels, the minimum detectable \u0394F/F0 for sensor 2 was similar to that of sensor 1.",
+    "claim_type": "EXPLICIT",
+    "source": "If the two sensors had comparable dynamic ranges and comparable expression levels, the minimum detectable \u0394F/F0 for sensor 2 was similar to that of sensor 1 (Figure 8\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results in Figure 8\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The simulation was repeated 500 times under each P1 and sensor fluorescence photon number condition.",
+    "claim_type": "EXPLICIT",
+    "source": "The simulation was repeated 500 times under each P1 and sensor fluorescence photon number (Fsensor) condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology used in the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Developing sensors outside autofluorescence spectra or having a lower background can significantly reduce the dependence of fluorescence lifetime on sensor expression in biological systems.",
+    "claim_type": "EXPLICIT",
+    "source": "using FLiSimBA, we show quantitatively the benefit gained from future technological innovations: Developing sensors outside autofluorescence spectra or having a lower background can significantly reduce the dependence of fluorescence lifetime on sensor expression in biological systems, increasing the versatility of lifetime comparison across animals, brain regions, and chronic time scales, as well as allowing us to quantify the absolute levels of analytes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results in Figure 7.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  }
+]

@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "\u0394133p53 and \u0394160p53 isoforms exhibit structural destabilization due to N-terminal deletions that disrupt critical contacts in the DNA-binding domain, expose hydrophobic residues, and increase aggregation propensity. The structural analysis shows that \u0394133p53 lacks ~20% of the DBD while \u0394160p53 lacks ~33%, with \u0394160p53 being more severely affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C60 are well-supported by structural analysis using contact density maps (Figure 1B), hydrophobic surface analysis (Figure 1C), and in vitro aggregation assays (Figure 1\u2014figure supplement 2). The structural predictions are based on established crystal structures and AlphaFold2 modeling, providing convergent evidence for destabilization and aggregation propensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "\u0394133p53 and \u0394160p53 retain the oligomerization domain and can form both homo-oligomers and hetero-oligomers with FLp53 and with each other. Co-immunoprecipitation experiments demonstrate direct interactions between these isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by co-immunoprecipitation data (Figure 2A) showing specific interactions between FLAG-tagged and V5-tagged proteins, as well as between FLAG-tagged FLp53 and untagged isoforms (Figure 2\u2014figure supplement 1). The experiments include appropriate controls and demonstrate oligomerization capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "\u0394133p53 and \u0394160p53 isoforms demonstrate significant loss of DNA-binding activity at p53 target promoters (p21, MDM2, BAX, PUMA). Co-expression with FLp53 at 1:1 ratio selectively impairs FLp53 binding to the high-affinity p21 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by ChIP-qPCR data (Figure 3B, 3C) showing diminished DNA binding of the isoforms and selective inhibition of FLp53 binding to the p21 promoter. The data are quantitative with technical triplicates and statistical significance indicated. The selective effect on high-affinity promoters is consistent with the structural defects identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The isoforms \u0394133p53 and \u0394160p53 exert concentration-dependent and promoter-specific dominant-negative effects on FLp53 transcriptional activity. At 1:1 ratio, effects are minimal for p21/MDM2 but significant for BAX, while PUMA shows enhancement. At higher ratios (1:5, 1:10), all promoters show significant inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C91 are supported by comprehensive luciferase reporter assays (Figure 4A-H) with multiple ratios tested across four different promoters. The data show clear concentration-dependent effects with statistical significance (p<0.01). The promoter-specific effects are reproducible across biological replicates (n=3). The unexpected PUMA enhancement at 1:1 ratio (C84) is acknowledged but requires mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C137",
+      "C138"
+    ],
+    "result": "Theoretical modeling suggests that at least three isoform molecules per tetramer are required to abolish FLp53 transcriptional activity, and the decreased nuclear ratio of isoforms to FLp53 reduces the likelihood of forming inhibitory hetero-tetramers, making hetero-tetramerization unlikely as the main mechanism of dominant-negative effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C138 rely on theoretical modeling (Figure 4\u2014figure supplement 1) comparing experimental data to predicted tetramer formation probabilities. While the experimental curves are above the 2FL theoretical curves, the model makes several assumptions: (1) transfection levels equal expression levels, (2) only tetramers with \u22653 isoforms are inactive, (3) tetramer formation follows simple binomial statistics. The subcellular localization data (C136-C137) supporting reduced nuclear ratios is inferential rather than directly measured. Additional quantitative measurements of nuclear protein ratios would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "\u0394133p53 and \u0394160p53 exhibit greater cytoplasmic localization compared to FLp53, with cytoplasm-to-nucleus ratios approximately 1.5-fold higher. Immunofluorescence shows heterogeneous distribution and punctate cytoplasmic staining suggesting aggregate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by subcellular fractionation with western blot quantification (Figure 5A-B) and immunofluorescence microscopy (Figure 5C). The fractionation includes appropriate markers (\u03b1-Tubulin for cytoplasm, Histone H3 for nucleus) to verify fraction purity. The punctate staining pattern is consistent with aggregation, though the inference of aggregates from punctate staining alone (C98) could benefit from additional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Co-expression of \u0394133p53 and \u0394160p53 with FLp53 at 1:5 ratio induces FLp53 aggregation, reducing soluble FLp53 levels in both cytoplasm and nucleus while increasing insoluble nuclear FLp53. Immunofluorescence demonstrates co-aggregation forming punctate spots in both compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C109 are supported by subcellular fractionation showing decreased soluble and increased insoluble FLp53 (Figure 6A-D) and immunofluorescence showing co-localization and co-aggregation (Figure 6E, Figure 6\u2014figure supplement 3). The experiments include both tagged and untagged proteins (Figure 6\u2014figure supplement 2) demonstrating that tags do not contribute to aggregation. Quantification shows statistical significance (p<0.01). The multiple bands in the insoluble fraction (Figure 6\u2014figure supplement 1) support the presence of aggregates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C154"
+    ],
+    "result": "Experiments with untagged \u0394133p53 and \u0394160p53 demonstrate that antibody epitope tags (FLAG/V5) do not contribute to protein aggregation or alter biochemical/physiological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 and C154 are supported by direct comparison of tagged versus untagged proteins in subcellular fractionation (Figure 6\u2014figure supplement 2) and caspase activity assays (Figure 7). Both tagged and untagged isoforms show similar effects on FLp53 aggregation and apoptosis, providing important validation that the observed phenomena are not artifacts of the tagging strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Co-expression of \u0394133p53 or \u0394160p53 with FLp53 at 1:5 ratio significantly diminishes FLp53-induced caspase-3/7 activity and apoptosis, independent of FLAG tagging. This correlates with impaired expression of apoptosis-inducing genes BAX and PUMA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 are supported by caspase-3/7 activity assays (Figure 7) showing ~2.5-fold increase with FLp53 alone and significant reduction upon co-expression with isoforms. The effect is consistent whether proteins are tagged or untagged. The correlation with BAX/PUMA promoter activity (Figure 4G-H) provides mechanistic support. Statistical significance is indicated (p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The high aggregation propensity of \u0394133p53 and \u0394160p53 results from exposed hydrophobic sequences and may be enhanced by prevention of MDM2-mediated degradation due to lack of N-terminal TADs, leading to cellular accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 is supported by immunofluorescence and in vitro aggregation data (Figure 5C, Figure 1\u2014figure supplement 2). Claim C140 is a reasonable inference from hydrophobic surface analysis (Figure 1C). However, claims C141-C142 regarding MDM2-mediated degradation are speculative inferences based on citations but lack direct experimental evidence in this study. No degradation assays or MDM2 interaction studies are presented to test whether these isoforms actually escape MDM2-mediated degradation or accumulate to higher levels than FLp53.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C147",
+      "C150",
+      "C151"
+    ],
+    "result": "Cytoplasmic aggregation limits nuclear import of the isoforms, reducing their nuclear ratio relative to FLp53 and sequestering FLp53 in the cytoplasm, thereby reducing functional FLp53 availability in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C136 are inferences from subcellular localization data (Figure 5) showing cytoplasmic aggregation and higher cytoplasm-to-nucleus ratios for the isoforms. However, the claim that \"only a limited amount\" reaches the nucleus (C134) and that the \"ratio diminishes in the nucleus\" (C136) lacks direct quantitative measurement of nuclear protein ratios. Claims C147, C150-C151 about sequestration and reduced functional availability are logical inferences but would benefit from direct measurement of nuclear FLp53 levels or functional assays specifically in nuclear fractions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C152",
+      "C155",
+      "C157"
+    ],
+    "result": "Co-aggregation of \u0394133p53 and \u0394160p53 with FLp53, rather than hetero-tetramerization, is the primary mechanism for their dominant-negative effect. Two mechanisms are involved: a subsidiary hetero-tetramerization mechanism and a predominant co-aggregation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C152, C155, and C157 represent the main conclusion integrating multiple lines of evidence: (1) theoretical modeling suggesting hetero-tetramerization alone cannot explain the data (Figure 4\u2014figure supplement 1), (2) extensive co-aggregation demonstrated by immunofluorescence and fractionation (Figures 5-6), (3) concentration-dependent effects consistent with aggregation-driven sequestration, and (4) consistency with prior work on other p53 isoforms. While individual components have uncertainties, the convergent evidence from structural analysis, DNA binding, transcriptional activity, subcellular localization, and aggregation assays collectively support this dual-mechanism model with aggregation as the primary factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "The enhancement of PUMA promoter activity at 1:1 FLp53:isoform ratio may result from isoform-mediated activation of p21 induction pathways independent of FLp53, facilitating FLp53-p21 interaction required for optimal PUMA activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C127 is explicitly speculative (\"We speculate...\") and based solely on citations to prior work without experimental validation in this study. The unexpected PUMA enhancement (C84, C126) is documented but the proposed mechanism involving p21-independent pathways and FLp53-p21 interactions is not tested. This would require additional experiments measuring p21 levels, FLp53-p21 interactions, and testing whether p21 depletion affects the PUMA response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Cytoplasmic isoform aggregates may reflect autophagy-related degradation, and overexpression of aggregation-prone proteins could induce ER stress and activate autophagy. Nuclear aggregation suggests distinct mechanisms govern isoform behavior within the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C143-C144 are speculative and based solely on citations to prior work without experimental validation. No autophagy markers (LC3B, p62/SQSTM1), ER stress markers, or autophagy flux assays are presented in this study. Claim C145 regarding distinct nuclear mechanisms is an inference from observing nuclear aggregation but lacks mechanistic investigation. These claims represent interesting hypotheses for future work but are not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "Cytoplasmic aggregation may destabilize FLp53 conformation, mask the NLS preventing nuclear import, and disrupt FLp53-MDM2 interaction, inhibiting degradation and enhancing accumulation that drives further aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C148-C149 are speculative inferences based on citations but lack direct experimental evidence. No experiments test whether: (1) aggregated FLp53 has altered conformation, (2) the NLS is masked in aggregates, (3) nuclear import is specifically impaired, or (4) FLp53-MDM2 interactions are disrupted. These are reasonable hypotheses based on the aggregation data, but would require conformational studies, nuclear import assays, and MDM2 co-immunoprecipitation experiments for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "The tumor-suppressive efficacy of p53 depends on balanced expression of FLp53 and its isoforms, with their relative abundance being critical in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 is supported by the concentration-dependent effects demonstrated throughout the study (Figures 4, 7) showing that elevated isoform levels attenuate FLp53 activity while FLp53 overexpression can overcome isoform inhibition. This is a logical inference from the experimental data, though it would be strengthened by experiments in cancer cell lines with endogenous expression levels or patient samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Modulating the stability and aggregation of p53 isoforms could be a novel strategy for cancer therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C12 is speculative and represents a therapeutic hypothesis based on the study's findings. While the mechanistic insights about aggregation-mediated dominant-negative effects provide a rationale, no therapeutic interventions, proof-of-concept experiments, or validation in cancer models are presented. This is appropriate as a future direction but is not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

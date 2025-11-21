@@ -1,0 +1,923 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Single-neuron axonal projections reveal the route map of neuron output and provide a key cue for understanding how information flows across the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Single-neuron axonal projections reveal the route map of neuron output and provide a key cue for understanding how information flows across the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the biological significance of axonal projections, drawing from established neuroscience knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Reconstruction of single-neuron axonal projections requires intensive manual operations in tens of terabytes of brain imaging data and is highly time-consuming and labor-intensive.",
+    "claim_type": "EXPLICIT",
+    "source": "Reconstruction of single-neuron axonal projections requires intensive manual operations in tens of terabytes of brain imaging data and is highly time-consuming and labor-intensive.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by references to the labor-intensive nature of current reconstruction methods mentioned in the Introduction section.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Current methods struggle with densely distributed axons, focusing mainly on skeleton extraction.",
+    "claim_type": "EXPLICIT",
+    "source": "The main issue lies in the need for precise reconstruction algorithms to avoid reconstruction errors, yet current methods struggle with densely distributed axons, focusing mainly on skeleton extraction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the discussion of current reconstruction frameworks in the Introduction and the comparative results shown in the manuscript.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "PointTree successfully reconstructs single-neuron axonal projections across hundreds of GBs images within a mouse brain with an average of 80% f1-score.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method successfully reconstructs single-neuron axonal projections across hundreds of GBs (Gigabytes) images within a mouse brain with an average of 80% f1-score, while current methods only provide less than 40% f1-score reconstructions from a few hundred MBs (Megabytes) images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is directly supported by quantitative data presented in Figure 6E showing f1-scores above 0.8.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Current methods only provide less than 40% f1-score reconstructions from a few hundred MBs images.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method successfully reconstructs single-neuron axonal projections across hundreds of GBs (Gigabytes) images within a mouse brain with an average of 80% f1-score, while current methods only provide less than 40% f1-score reconstructions from a few hundred MBs (Megabytes) images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparative data shown in Figure 3B comparing PointTree with other methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Advances in optical imaging and molecular labeling techniques have allowed observation of the entire mouse brain at single-axon resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "Advances in optical imaging and molecular labeling techniques (Cai et al., 2019; Chung and Deisseroth, 2013; \u00c7i\u00e7ek et al., 2016; Kim and Schnitzer, 2022; Li et al., 2010; Osten and Margrie, 2013) have allowed us to observe the entire mouse brain at single-axon resolution and provided the database for the study of neuronal projection patterns (Foster et al., 2021; Gao et al., 2022; Mu\u00f1oz-Casta\u00f1eda et al., 2021; Peng et al., 2021; Qiu et al., 2024; Sun et al., 2019; Xu et al., 2021; Zeng, 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by multiple citations to published work in the field.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Reconstruction of long-range projected axons requires extensive manual annotation in tens of TBs volumetric images.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the reconstruction of these long-range projected axons still requires extensive manual annotation in tens of TBs volumetric images (\u00c7i\u00e7ek et al., 2016; Friedmann et al., 2020; Wang et al., 2019; Winnubst et al., 2019; Zhou et al., 2021), this labor-intensive process creates a major bottleneck for high-throughput mapping of neuronal projections (Zeng and Sanes, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to multiple studies describing manual reconstruction efforts.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The identification of densely distributed axons is considered an open problem in the field.",
+    "claim_type": "EXPLICIT",
+    "source": "The identification of densely distributed axons is considered an open problem in the field (Li et al., 2019; Lichtman and Denk, 2011; Zeng and Sanes, 2017), which still has no good solution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to literature discussing this challenge.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "A single reconstruction error can result in an entire branch being connected erroneously to other neurons or missing.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, during neuron reconstruction, reconstruction errors accumulate, and a single reconstruction error can result in an entire branch being connected erroneously to other neurons or missing (Helmstaedter, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Helmstaedter, 2013, discussing error accumulation in reconstruction.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The BigNeuron project conducts a systematic evaluation of 35 automatic neuron reconstruction algorithms.",
+    "claim_type": "EXPLICIT",
+    "source": "The BigNeuron project (Manubens-Gil et al., 2023) conducts a systematic evaluation of 35 automatic neuron reconstruction algorithms, all of which are based on tracing neurite skeletons and can be divided into two categories: local and global approaches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is directly cited from the BigNeuron project publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "In local approaches, localization errors typically occur when the image region contains other neurite signals.",
+    "claim_type": "EXPLICIT",
+    "source": "In the local approach (Choromanska et al., 2012; Li et al., 2020; Peng et al., 2011; Yang et al., 2013), the localization of the next skeleton point requires computation of the signal anisotropy of the image region near the current skeleton point. Localization errors typically occur when this image region contains other neurite signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the description of how local approaches work and their limitations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Global approaches result in densely distributed neurites being connected to each other erroneously.",
+    "claim_type": "EXPLICIT",
+    "source": "The global approach (Li et al., 2019; T\u00fcretken et al., 2011; Xiao and Peng, 2013) first generates multiple seed points that are commonly located at the neurite centerline and then establishes connections between these seed points for generating the neurite skeleton. This connection relies mainly on spatial location information, resulting in densely distributed neurites being connected to each other erroneously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the limitations of global approaches based on their methodology.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Deep learning is widely used in neuron reconstruction mainly for neuronal image segmentation and signal intensity enhancement.",
+    "claim_type": "EXPLICIT",
+    "source": "While deep learning is widely used in neuron reconstruction (Huang et al., 2020; Li and Shen, 2020; Liu et al., 2022; Zhou et al., 2018), - mainly for neuronal image segmentation and signal intensity enhancement to reduce reconstruction errors - even ideal segmentation with all neurite centers identified and their signal enhanced still exhibits significant reconstruction errors with skeleton-based methods (Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to deep learning applications in neuron reconstruction and by Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Even ideal segmentation with all neurite centers identified and their signal enhanced still exhibits significant reconstruction errors with skeleton-based methods.",
+    "claim_type": "EXPLICIT",
+    "source": "While deep learning is widely used in neuron reconstruction (Huang et al., 2020; Li and Shen, 2020; Liu et al., 2022; Zhou et al., 2018), - mainly for neuronal image segmentation and signal intensity enhancement to reduce reconstruction errors - even ideal segmentation with all neurite centers identified and their signal enhanced still exhibits significant reconstruction errors with skeleton-based methods (Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "For long-range axonal reconstruction across hundreds of GB-scale images, current strategies are not effective to eliminate the accumulation of errors.",
+    "claim_type": "EXPLICIT",
+    "source": "However, for long-range axonal reconstruction across hundreds of GB-scale images, the strategy is not effective to eliminate the accumulation of errors due to factors such as the position of the axon at a distance from the soma and slight morphological differences between axon junction and termination.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the limitations of current methods described in the manuscript.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Current long-range projection reconstruction methods are semi-automatic and require substantial human intervention.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, current long-range projection reconstruction methods are semi-automatic and require substantial human intervention (Gao et al., 2023; Wang et al., 2019; Winnubst et al., 2019; Zhou et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to current reconstruction methods.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "PointTree uses a constrained Gaussian clustering method to partition the foreground region of a neuronal image into a series of columnar regions.",
+    "claim_type": "EXPLICIT",
+    "source": "In the workflow, we design a constrained Gaussian clustering method to partition the foreground region of a neuronal image into a series of columnar regions whose centerline belongs to only a single neurite.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of PointTree as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Each columnar region's centerline belongs to only a single neurite.",
+    "claim_type": "EXPLICIT",
+    "source": "In the workflow, we design a constrained Gaussian clustering method to partition the foreground region of a neuronal image into a series of columnar regions whose centerline belongs to only a single neurite.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a design principle of the PointTree method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "PointTree uses a minimal information flow tree model to suppress the cumulative reconstruction error.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on the reconstructed shapes, we design a minimal information flow tree model to suppress the cumulative reconstruction error.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key component of the PointTree methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "For 208 neurite branches, the ground-truth information flow values achieve the minimum value for most neuronal branches (195/208).",
+    "claim_type": "EXPLICIT",
+    "source": "It is evident that, for most neuronal branches (195/208), the ground-truth values of the information flow achieve the minimum value, suggesting that MIFT rule is reasonable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the analysis shown in Figure 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The MIFT rule is reasonable for identifying correct root nodes in neuronal branches.",
+    "claim_type": "EXPLICIT",
+    "source": "It is evident that, for most neuronal branches (195/208), the ground-truth values of the information flow achieve the minimum value, suggesting that MIFT rule is reasonable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the statistical validation of the MIFT model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "PointTree can successfully separate densely distributed neurites in a range of 71.4% and 91.7%.",
+    "claim_type": "EXPLICIT",
+    "source": "PointTree can successfully separate the densely distributed neurites in a range of 71.4% and 91.7%, while these skeleton-based methods only separate 25.0% densely distributed neurites (Figure 2B) at most.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by quantitative data shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Skeleton-based methods only separate 25.0% densely distributed neurites at most.",
+    "claim_type": "EXPLICIT",
+    "source": "PointTree can successfully separate the densely distributed neurites in a range of 71.4% and 91.7%, while these skeleton-based methods only separate 25.0% densely distributed neurites (Figure 2B) at most.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by comparative data in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "For PointTree, the average precision is above 90%, both recall and f1-score are above 85%.",
+    "claim_type": "EXPLICIT",
+    "source": "For PointTree, the average precision is above 90%, both recall and f1-score are above 85%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The f1-score of skeleton-based method reconstructions ranges from 30% to 40%.",
+    "claim_type": "EXPLICIT",
+    "source": "The f1-score of these reconstructions ranges from 30% to 40%, which indicates the ineffective reconstructions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparative data in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "For LSM data with mean SNR = 5.01, PointTree achieves average precision = 96.0%, recall = 88.7%, and f1-score=91.0%.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically: for LSM data (sample size n=25, mean SNR = 5.01), average precision = 96.0%, recall = 88.7%, and f1-score=91.0%;",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by quantitative analysis shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "For fMOST data with mean SNR = 8.68, PointTree achieves average precision = 95.8%, recall = 87.3%, and f1-score=90.0%.",
+    "claim_type": "EXPLICIT",
+    "source": "for fMOST data (sample size n=25, mean SNR = 8.68), average precision = 95.8%, recall = 87.3%, and f1-score=90.0%;",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by quantitative analysis shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "For HD-fMOST data with mean SNR = 11.4, PointTree achieves average precision = 98.1%, recall = 91.0%, and f1-score=93.3%.",
+    "claim_type": "EXPLICIT",
+    "source": "for HD-fMOST data (sample size n=25, mean SNR = 11.4), average precision = 98.1%, recall = 91.0%, and f1-score=93.3% (Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by quantitative analysis shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "By using MIFT, the average of f1-score is above 0.8 for the reconstructions from two image blocks generated with the first fusion.",
+    "claim_type": "EXPLICIT",
+    "source": "By using MIFT, the average of f1-score is above 0.8 for the reconstructions from two image blocks which are generated with the first fusion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the data shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "In the second fusion, the f1-score with MIFT keeps 0.79.",
+    "claim_type": "EXPLICIT",
+    "source": "In the second fusion (top-right panel in Figure 5A), the f1-score still keeps 0.79.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Without MIFT, the first fusion leads to a drop of about f1-score of 0.3.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, without MIFT, the first fusion leads to a drop of about f1-score of 0.3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparative data in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Without MIFT, after the second fusion, the f1-score is less than 0.2.",
+    "claim_type": "EXPLICIT",
+    "source": "After the second fusion, the f1-score is less than 0.2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the data shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The testing image block for long-range axon reconstruction has the size of 11226\u00d78791 \u00d7 1486 voxels and includes axons from eight neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "The testing image block has the size of 11226\u00d78791 \u00d7 1486 voxels and includes axons from eight neurons (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental dataset used for validation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "For long-range axonal projections of eight neurons, the average precision is above 85% and the average recall and f1-score are above 80%.",
+    "claim_type": "EXPLICIT",
+    "source": "The average precision is above 85% and the average recall and f1-score are above 80% (Figure 6E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 6E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "For 14 long-range projections from HD-fMOST system, the average f1-score is above 90%.",
+    "claim_type": "EXPLICIT",
+    "source": "The quantitative results suggest that the average f1-score is above 90% (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "For 254 image blocks with 512\u00d7512 \u00d7 512 voxels, the total time required for reconstruction is approximately 44 min.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, in a typical scenario involving 254 image blocks with 512\u00d7512 \u00d7 512 voxels, the total time required for reconstruction is approximately 44 min.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the timing data in Table 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "For 821 image blocks with 512\u00d7512 \u00d7 512 voxels, the total time cost amounts to about 60 min.",
+    "claim_type": "EXPLICIT",
+    "source": "Even for a larger dataset comprising 821 image blocks with 512\u00d7512 \u00d7 512 voxels and including a significant number of sparsely distributed neurites, the total time cost amounts to about 60 min (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the timing data in Table 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The reconstruction speed using PointTree is generally faster than the imaging speed.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the need to solve multiple large-scale optimization problems, the reconstruction speed using PointTree is generally faster than the imaging speed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the timing data presented in Table 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "PointTree addresses the problem of mutual interference among densely distributed neurites by designing a reconstruction method based on point set assignment.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we address the problem of mutual interference among densely distributed neurites and the cumulative error during reconstruction by designing a reconstruction method based on point set assignment and the minimal information flow tree, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes the methodological contribution of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "PointTree addresses the cumulative error during reconstruction by designing the minimal information flow tree.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we address the problem of mutual interference among densely distributed neurites and the cumulative error during reconstruction by designing a reconstruction method based on point set assignment and the minimal information flow tree, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes the methodological contribution of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "PointTree enables accurate reconstruction of long-range neuron projections from hundreds of gigabytes of data.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, our approach enables accurate reconstruction of long-range neuron projections from hundreds of gigabytes of data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the experimental results shown throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "PointTree significantly enhances the efficiency of whole-brain-scale neuron reconstruction.",
+    "claim_type": "EXPLICIT",
+    "source": "This advance significantly enhances the efficiency of whole-brain-scale neuron reconstruction, bridging the substantial gap between factory-level generation of whole-brain-scale neuronal imaging data and tens of hours required to reconstruct one neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the performance improvements demonstrated in the results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "PointTree is performed on image foregrounds where the segmented neurites have a fixed radius approximately equal to the total size of the three voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach is performed on image foregrounds where the segmented neurites have a fixed radius approximately equal to the total size of the three voxels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a technical constraint of the PointTree method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "For reconstructions of neurons whose projections are distributed over hundreds to thousands of GBs of data, less than GB-sized images with labels are needed as training data.",
+    "claim_type": "EXPLICIT",
+    "source": "Typically, in reconstructions of neurons whose projections are distributed over hundreds to thousands of GBs of data, less than GB-sized images with labels are needed as training data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training data requirements for the segmentation network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The labeling process for training data takes a few hours.",
+    "claim_type": "EXPLICIT",
+    "source": "The labeling process takes a few hours, which is negligible for semi-automatic reconstruction of all neurons in the whole volume images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an estimate of the time required for data preparation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "PointTree can be applied to any skeleton tracking-based application scenario and effectively eliminate dense signal interference.",
+    "claim_type": "EXPLICIT",
+    "source": "Essentially, our method can be applied to any skeleton tracking-based application scenario and effectively eliminate dense signal interference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the generalizability of the method based on its design principles.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "PointTree generates reconstruction errors when some neurites with weak image intensities are not identified.",
+    "claim_type": "EXPLICIT",
+    "source": "First, our method directly handles image foregrounds, which leads to reconstruction errors when some neurites with weak image intensities are not identified.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of a limitation of the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Relying solely on foreground point information and rule-based judgment methods may generate some connection errors when establishing connections between neurites.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, relying solely on foreground point information and rule-based judgment methods may generate some connection errors when establishing connections between neurites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of a limitation of the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The minimal information flow tree's fundamental assumption that axons should be as smooth as possible does not always hold true.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, the minimal information flow tree's fundamental assumption, that axons should be as smooth as possible, does not always hold true.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of a limitation of the MIFT model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Real axons can take quite sharp turns leading the algorithm to erroneously separate a single continuous axon into disjoint fibers.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, real axons can take quite sharp turns (Figure 1\u2014figure supplement 3) leading the algorithm to erroneously separate a single continuous axon into disjoint fibers (Figure 1\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by examples shown in Figure 1\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "All animal experiments followed procedures approved by the Institutional Animal Ethics Committee of the Huazhong University of Science and Technology.",
+    "claim_type": "EXPLICIT",
+    "source": "All animal experiments followed procedures approved by the Institutional Animal Ethics Committee of the Huazhong University of Science and Technology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about ethical compliance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "For one C57BL/6 male mouse, 100 nl AAV-Cre virus and 100 nl of AAV-EF1\u03b1-DIO-EYFP virus were injected into the VPM nucleus at the same time.",
+    "claim_type": "EXPLICIT",
+    "source": "For one C57BL/6 male mouse, 100 nl AAV-Cre virus and 100 nl of AAV-EF1\u03b1-DIO-EYFP virus were injected into the VPM nucleus at the same time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for sample preparation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "21 days after virus injection, the chemical sectioning fluorescence tomography (CSFT) system was used to acquire imaging data.",
+    "claim_type": "EXPLICIT",
+    "source": "21 days later, the chemical sectioning fluorescence tomography (CSFT) system (Wang et al., 2021) was used to acquire imaging data (Figures 1\u20146), more details can be seen in the reference (Zhang et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the imaging procedure used in the study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "For one C57BL/6 J male mouse, 100 nl of AAV-YFP was injected into the motor area.",
+    "claim_type": "EXPLICIT",
+    "source": "For one C57BL/6 J male mouse, 100 nl of AAV-YFP was injected into the motor area.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for another sample preparation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "UNet3D was used for image stacks segmentation without network structure modification.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we used UNet3D (\u00c7i\u00e7ek et al., 2016) for image stacks segmentation without network structure modification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the segmentation network used in the study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Adam optimizer is used with an initial learning rate at 3e-4 in the training stage.",
+    "claim_type": "EXPLICIT",
+    "source": "In the training stage, Adam optimizer is used with an initial learning rate at 3e-4.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training parameters for the neural network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The input image size for training is 128\u00d7128 \u00d7 128.",
+    "claim_type": "EXPLICIT",
+    "source": "The input image size is 128\u00d7128 \u00d7 128.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training parameters for the neural network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Batch size is set to 1 and the L1-norm is used as loss function to train the network.",
+    "claim_type": "EXPLICIT",
+    "source": "Batch size is set to 1, the L1-norm is used as loss function to train the network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training parameters for the neural network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Two sets of training data were created, each consisting of 20 512\u00d7512 \u00d7 512 image blocks.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we created two sets of training data, each consisting of 20 512\u00d7512 \u00d7 512 image blocks (each divided into 64 image blocks of size 128\u00d7128 \u00d7 128).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training data preparation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "In each training set, 10 image blocks contain densely distributed neurites, while the other 10 blocks contain sparsely distributed neurites.",
+    "claim_type": "EXPLICIT",
+    "source": "In each set, 10 image blocks contain densely distributed neurites, while the other 10 blocks contain sparsely distributed neurites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the composition of the training data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "In the predicting stage, voxels whose values are more than 0.5 are regarded as the foreground points.",
+    "claim_type": "EXPLICIT",
+    "source": "In the predicting stage, we applied the threshold operation to the distance field image. The voxels whose values are more than 0.5 are regarded as the foreground points.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the threshold used for segmentation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "PointTree uses three-dimensional Gaussian functions to approximate the columnar shape of local neurites.",
+    "claim_type": "EXPLICIT",
+    "source": "The three-dimensional Gaussian function exhibits an ellipsoidal shape in space, which we have utilized to approximate the columnar shape of local neurites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mathematical approach used in PointTree.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The EM algorithm is used to solve the constrained Gaussian mixture model.",
+    "claim_type": "EXPLICIT",
+    "source": "The constrained Gaussian mixture model was solved by the EM algorithm (McLachlan and Krishnan, 2007), the EM algorithm is divided into two steps:",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the optimization algorithm used, with citation to the EM algorithm.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "For each columnar region, the minimum-volume ellipsoids that can fully encompass the region are calculated.",
+    "claim_type": "EXPLICIT",
+    "source": "After deriving the columnar regions through solving the constrained Gaussian mixture model, it is imperative to characterize their geometric shape (terminals and centerlines). For this purpose, we calculate the minimum-volume ellipsoids that can fully encompass each individual columnar region.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the geometric characterization step in PointTree.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The 0-1 assignment model can robustly and accurately establish connections between particles in live-cell imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "The 0\u20131 assignment model (Volgenant, 1996) can robustly and accurately establish connections between particles in live-cell imaging (Jaqaman et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to the 0-1 assignment model and its application.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The 0-1 assignment model is particularly effective in handling cases where particles are densely distributed, merged, or split.",
+    "claim_type": "EXPLICIT",
+    "source": "It is particularly effective in handling cases where particles are densely distributed, merged, or split.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the citation to Jaqaman et al., 2008.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The Lapjv algorithm is utilized to solve the 0-1 assignment optimization problem.",
+    "claim_type": "EXPLICIT",
+    "source": "The Lapjv algorithm (Volgenant, 1996) is utilized to solve this optimization problem and the shapes of individual neurites in block images are formed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the algorithm used for solving the assignment problem, with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The region growing method is employed to generate skeletons from the reconstructed shape.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we employ the region growing method to generate skeletons from the reconstructed shape, achieving the neurites reconstruction from individual image blocks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the skeleton extraction method used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Three commonly used metrics were used: precision, recall, and f1-score.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, three commonly used metrics defined in Quan et al., 2016 were used, including precision, recall, and f1-score, which are computed to measure the fidelity between the reconstruction results and the ground truth.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the evaluation metrics used, with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Early motor skill learning (trials 1-11) is characterized by rapid performance improvements that occur predominantly during rest periods (micro-offline gains) rather than during practice (micro-online gains), with participants reaching 95% of maximal skill within 11 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence for the behavioral characteristics of early learning. Statistical analysis (C3) demonstrates that micro-offline gains exclusively account for total early learning (F[2,75]=14.79, p<0.001), supported by visualization (C1, C2) and additional behavioral measures (C4, C5). The findings are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Overnight consolidation of the trained motor skill was observed, with significant performance improvements on Day 2 Retest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 provides statistical evidence (t=7.21, p<0.001) for overnight skill consolidation with specific quantitative measures (0.68 \u00b1 0.56 keypresses/s improvement). This is a standard finding in motor learning research and is adequately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Broadband MEG activity from multiple brain regions, predominantly contralateral to the engaged hand, provides optimal information for decoding individual finger keypresses, with whole-brain voxel-space decoders achieving 74.51% accuracy and parcel-space decoders achieving 70.11% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide systematic comparison of decoder performance across frequency bands and spatial scales with appropriate statistical tests. The finding that broadband activity outperforms narrowband and that multiple brain regions contribute to decoding is well-supported by the data and figures referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "A novel hybrid-space decoder combining whole-brain parcel-space and regional voxel-space features achieves superior keypress decoding accuracy (78.15%) compared to either spatial scale alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 demonstrate that the hybrid approach significantly outperforms both voxel-space (paired t-test: t=6.30, p<0.001) and parcel-space decoders (t=12.08, p<0.001). The statistical comparisons are appropriate and effect sizes are substantial (Cohen's d=0.39 and 0.98 respectively).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "Linear discriminant analysis (LDA)-based dimensionality reduction further improves hybrid-space decoder performance to 90.47% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 provides specific quantitative improvement with LDA application. This is supported by Figure 3B and supplementary analyses showing LDA outperformed other dimensionality reduction methods for the hybrid-space approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Index finger keypresses exhibited the highest misclassification rates, suggesting potential differentiation based on sequence context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 provides specific false negative (0.115) and false positive (0.067) rates with comparison ranges for other digits. This observation motivates the subsequent contextualization analysis and is well-documented in the confusion matrix (Figure 3C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "The hybrid-space decoder robustly generalizes to Day 2, maintaining high accuracy for both trained (87.11%) and untrained (79.44%) sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 demonstrate decoder generalization across sessions and sequences. The maintained high accuracy on Day 2 for both trained and untrained sequences supports the robustness of the decoding approach, though accuracy is somewhat lower for untrained sequences as expected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C39"
+    ],
+    "result": "Neural representations of keypresses progressively differentiate during early learning, with cortical contributions shifting from contralateral pre-central areas in trial 1 to greater involvement of post-central, superior frontal, and middle frontal cortex by trials 11-36.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, and C39 describe the evolution of neural representations during learning with supporting visualization (Figure 4A) and feature importance analysis (Figure 4\u2014figure supplement 1). The shift in cortical contributions is consistent with motor learning literature and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Incorporating sequence context information (5-class decoding distinguishing index finger keypresses at different ordinal positions) significantly improves decoding accuracy from 90.47% to 94.15%, with this improvement specific to the trained sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide strong evidence for contextual differentiation with statistical support (t=7.09, p<0.001, Cohen's d=0.86) and demonstration of specificity to the trained sequence on Day 2. The improvement is consistent across multiple window durations (C23) and the specificity analysis (C24) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Contextualization (differentiation of neural representations for the same action at different sequence positions) increases sharply during early learning, with offline contextualization significantly greater than online contextualization and strongly correlating with micro-offline gains (r=0.903, R\u00b2=0.816).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 provide the core finding linking neural representation changes to behavioral learning. The statistical evidence is strong (t=4.84, p<0.001 for offline vs online; strong correlation with learning), and the relationship is visualized in Figure 5A-B and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Online contextualization does not explain learning gains, while offline contextualization shows significant within-subject correlations with micro-offline gains that are stronger than any online contextualization relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide both group-level and within-subject analyses demonstrating the specificity of the offline contextualization-learning relationship. The within-subject analysis (C30: t=3.87, p=0.00035) and comparisons to online measures (C31) strengthen the interpretation beyond group-level correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The contextualization findings are not explained by behavioral confounds including typing rhythm, adjacent keypress transition times, or overall typing speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide important control analyses ruling out alternative explanations. Statistical tests show no significant relationships with typing rhythm (t=-0.03, p=0.976), very weak relationship with transition times (R\u00b2=0.00507), and no relationship with typing speed (R\u00b2=0.028, p=0.41).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Contextualization observed on Day 1 generalizes to Day 2 Retest specifically for the trained sequence, with lower contextualization for untrained control sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 demonstrate both retention and specificity of contextualization. The comparison between trained and control sequences on Day 2 (Figure 5C) provides evidence that contextualization is a learned feature specific to the practiced skill rather than a general property of sequence performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Individual sequence action representations differentiate during early skill learning in a manner reflecting local sequence context, with the degree of differentiation\u2014particularly prominent over rest intervals\u2014correlating with skill gains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 summarize the main findings of the study, which are supported by the collective evidence from decoder performance (C21-C25), contextualization measures (C26-C31), and control analyses (C32-C34). The integration of neural and behavioral measures provides converging evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Micro-offline gains during early learning are reproducible, not explained by fatigue recovery or predictive slowing, and represent a form of memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 rely on citations to previous work that tested alternative explanations for micro-offline gains. While the current study does not directly test these alternatives, the cited literature (B\u00f6nstrup et al., 2020; Jacobacci et al., 2020; Brooks et al., 2024) provides the empirical basis for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Neural replay during rest periods predicts and causally drives micro-offline learning, as demonstrated by human neuroimaging and non-human primate studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 synthesize findings from multiple cited studies providing converging evidence for the role of neural replay in micro-offline learning. The progression from correlational (C44-C45) to causal evidence (C46-C48) in non-human primates strengthens the mechanistic interpretation, though direct causal evidence in humans is not yet available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "While long-term learning changes sequence representations but not individual action representations, it was previously unknown whether individual action representations differentiate during early learning or whether identical movements at different sequence positions show contextual differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 establish the knowledge gap addressed by the current study through citations to relevant prior work (Yokoi and Diedrichsen, 2019; Beukema et al., 2019). This appropriately contextualizes the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Low-frequency oscillations (LFOs) provide superior decoding accuracy compared to other frequency bands and encode information about movement trajectories, velocity, timing, preparation, and sensorimotor integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by data from the current study (Figure 3\u2014figure supplement 1) showing LFOs outperform other bands. Claims C55-C58 rely on extensive citations to prior literature characterizing LFO properties. The integration of current findings with prior knowledge is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "A possible neural mechanism supporting contextualization is the emergence of conjunctive 'what-where' representations of procedural memories with modulation of neuronal population dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is explicitly speculative ('A possible neural mechanism') and supported only by citations to relevant conceptual frameworks. While this is a reasonable hypothesis given the data, it lacks direct empirical support from the current study and represents a direction for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Systematic inclusion of contextualized information into sequence skill practice environments could improve learning in music education, sports training, and rehabilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is speculative about potential applications without empirical testing. While the finding that contextualization correlates with learning suggests potential practical implications, translation to applied settings requires additional validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study included 26 participants (from 33 recruited) after exclusions, exceeding the calculated minimum sample size of 22, with appropriate ethical approval and minimal head movement during MEG recording.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 describe methodological details including ethical approval, sample size determination, exclusion criteria, and data quality measures. The power analysis (C65) and head movement quantification (C66: 1.159 mm \u00b1 1.077 SD) demonstrate appropriate methodological rigor.",
+    "result_type": "MINOR"
+  }
+]

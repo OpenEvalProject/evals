@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors successfully generated iPSC lines from two HDLS patients with CSF-1R mutations and created isogenic controls using CRISPR/Cas9 gene editing. The iPSC lines were characterized and confirmed to have normal karyotypes with no off-target editing events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe a complete workflow from patient biopsy to validated iPSC lines with isogenic controls. The characterization includes pluripotency markers (C27), karyotyping (C28), and off-target analysis (C30), providing comprehensive validation of the cell lines. The methodology is standard and the results are well-documented with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Patient-derived iPSCs were successfully differentiated into macrophages (iMacs) that exhibited typical macrophage morphology, phenotype (CD45+/CD14+), and phagocytic function, though yield varied between mutant and isogenic lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 demonstrate successful generation of functional iMacs from HDLS patient iPSCs. The cells show appropriate markers (C33), morphology (C34), and phagocytic capacity (C35-C36). The variation in yield (C32) is noted but does not compromise the functional characterization. Multiple assays converge to support macrophage identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C3"
+    ],
+    "result": "Mutant iMacs showed reduced CSF-1 sensitivity compared to isogenic controls, with significantly lower survival at all CSF-1 concentrations tested over 7 days of culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C3 describe reduced CSF-1 sensitivity in mutant cells, which is expected given the known CSF-1R mutations. The MTT assay data (Figure 2F) shows clear statistical differences in survival between mutant and isogenic cells across CSF-1 concentrations, directly supporting the reduced ligand sensitivity phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Bulk RNA-seq revealed distinct transcriptional profiles between mutant and isogenic iMacs, with mutant cells showing upregulation of proliferation and viral defense pathways, while isogenic cells showed higher expression of chemokine and migration genes. Mutant cells also showed markers of immaturity (high MPO, low MARCO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 describe comprehensive transcriptomic differences supported by PCA, volcano plots, and GO analysis (Figure 3A-F). The patterns are consistent across both patient lines (HD1 and HD2), strengthening the findings. The identification of maturity markers (C46-C47) adds biological context. However, the manuscript lacks information about statistical thresholds, multiple testing correction, and sample sizes for RNA-seq, which are critical for evaluating the robustness of differential expression claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mutant iMacs exhibited a metabolic shift toward glycolysis with significantly increased glycolytic capacity and reserve. HD2 mutant cells also showed significantly increased mitochondrial respiration (OCR), while HD1 showed trends in the same direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C48-C54 describe metabolic reprogramming in mutant iMacs using Seahorse analysis. The glycolytic shift is statistically significant for both HD1 and HD2 (C48-C49), while mitochondrial changes reach significance only for HD2 (C51). The data are presented with appropriate replicates (n=3-9) and statistical tests. The interpretation (C52-C54) appropriately acknowledges the differences between cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C4",
+      "C5"
+    ],
+    "result": "When exposed to apoptotic neuronal cells, mutant iMacs from both patients showed significantly increased IL-1\u03b2 transcription compared to isogenic controls. Mutant iMacs also exhibited higher baseline expression of pro-inflammatory cytokines, consistent with an activated inflammatory phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C4, and C5 demonstrate that mutant iMacs have an inflammatory phenotype with specific upregulation of IL-1\u03b2 upon apoptotic cell exposure. The phagocytic capacity was equivalent (C55), isolating the cytokine response as the key difference. The baseline elevation of pro-inflammatory cytokines (C58) supports the activated state interpretation. However, the manuscript shows qPCR data for transcription but does not confirm protein-level IL-1\u03b2 secretion, which would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "iMacs co-cultured with forebrain organoids for 23 days differentiated into microglia-like cells (iMicro) expressing IBA-1 and showing transcriptional profiles characteristic of microglial functions including CNS development, synapse organization, and neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 demonstrate that iMacs acquire microglia-like characteristics in organoid co-culture. The evidence includes marker expression (C59), localization (C59), transcriptomic changes (C62-C65), and GO pathway analysis showing microglial functions (C63, C65). The control showing no IBA-1+ cells without iMac addition (C61) is important. However, the manuscript notes that sufficient iMicro were only recovered from mutant HD1 and isogenic HD2 co-cultures, limiting the comparisons that can be made.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C6",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Co-culture experiments revealed mutation-dependent effects on neuronal populations. Isogenic HD1 iMacs significantly reduced neuronal numbers, while mutant HD1 iMacs did not. Transcriptomic analysis showed differential effects on mitochondrial gene expression in neurons and NPCs depending on whether mutant or isogenic iMacs were used, suggesting impaired microglia-neuron crosstalk in HDLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71, C6, C80-C82 describe complex organoid co-culture results with mutation-dependent effects. The key finding is that isogenic HD1 iMacs reduced neuronal populations (C67) while mutant HD1 iMacs did not (C68), suggesting dysregulated crosstalk (C81). However, several issues limit confidence: (1) HD2 showed no significant effects (C68), (2) NPC populations were unchanged, (3) the transcriptomic analysis (C69-C70) shows differential metabolic gene expression but the functional significance is unclear, (4) the manuscript acknowledges that organoid size reduction in prior work was mediated by cholesterol transfer (C80), but this was not measured here, and (5) the experimental design has mutant/isogenic iMacs co-cultured with isogenic organoids, which may not fully recapitulate the in vivo situation. The interpretation that this represents 'impaired regulation' (C6, C71) is reasonable but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "The authors propose that microglial dysregulation, particularly elevated IL-1\u03b2 production, is a key contributor to HDLS pathology. They suggest that CSF-1R mutations cause subtle disruptions to microglia homeostasis through abnormal metabolic function and inflammatory activation that compound over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8, C78-C79, C83-C84, and C86 represent the authors' mechanistic model. While the data show that mutant iMacs have elevated IL-1\u03b2 transcription (C56), altered metabolism (C48-C49), and reactive transcriptional profiles (C40-C41), the causal link to neurodegeneration is not directly demonstrated. The model is plausible and consistent with the data, but remains speculative (C83-C84, C86 are explicitly marked as speculation). The organoid experiments (C67-C71) show some effects but are inconsistent between patients. Additional experiments blocking IL-1\u03b2 or demonstrating progressive pathology would be needed to support causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The authors propose that canakinumab, an IL-1\u03b2-targeting antibody, could be a potential therapeutic target for HDLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C87 is explicitly marked as speculation and is not supported by any experimental data in the manuscript. While the elevated IL-1\u03b2 transcription in mutant iMacs (C56) provides a rationale, no blocking experiments or therapeutic interventions were performed. This is a reasonable hypothesis for future work but cannot be considered a supported result of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C72",
+      "C73"
+    ],
+    "result": "Prior animal models of HDLS (mouse, rat, zebrafish) have shown inconsistent results and do not fully recapitulate human disease pathology. No previous in vitro studies have generated isogenic controls by reverting HDLS mutations to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24, C72-C73 summarize limitations of prior models based on cited literature. The citations support the claims about inconsistent animal model phenotypes (C20-C22) and zebrafish limitations (C23-C24). The statement that no prior studies reverted mutations to wild-type (C73) is supported by citation to Wu et al. 2021, which generated patient iPSCs but did not create isogenic controls. This establishes the novelty of the current approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "iMac yield varied greatly between cell lines, with Mut HD1 showing 50% lower yield than IsoHD1, while Mut HD2 showed 200% higher yield than IsoHD2. The authors speculate this may relate to differences in mutation type and completeness of gene editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 report experimental observations about iMac yields that are stated in the Discussion and shown in Figure 2B. The opposite effects in HD1 vs HD2 are notable. However, C76 is speculation about the mechanism. The data support the yield differences but the explanation remains uncertain. The speculation about incomplete epigenetic reversion in HD2 is not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Mutant iMacs showed higher baseline pro- and anti-inflammatory cytokine production even without apoptotic cell stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by the qPCR data in Figure 4A-B showing elevated baseline cytokine transcription in mutant iMacs. This is consistent with the reactive transcriptional profile observed in RNA-seq (C40-C41, C58) and supports the interpretation of an activated inflammatory state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C92",
+      "C93"
+    ],
+    "result": "HDLS is a rare, fatal, autosomal dominant neurodegenerative disease caused by CSF-1R mutations, most commonly in the tyrosine kinase domain, leading to reduced auto-phosphorylation and impaired signaling. The disease affects approximately 250,000 people globally and has no cure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C14, C92-C93 provide background information about HDLS that is well-established in the literature and properly cited. These claims accurately represent current knowledge about the disease and are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background information about microglia function, HDLS patient microglia characteristics, macrophage metabolism, and clinical features of HDLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19, C88-C91, C94-C96 provide background information from cited literature. These are accurate representations of prior knowledge and establish context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "IL-1\u03b2 has been implicated in neuroinflammation and neurodegeneration in Alzheimer's disease, with elevated levels found in postmortem brain samples around amyloid plaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is background information from cited literature (Cacabelos et al., 1994; Shaftel et al., 2008; Italiani et al., 2018) that provides context for the potential role of IL-1\u03b2 in HDLS. This is not a novel finding of the current study.",
+    "result_type": "MINOR"
+  }
+]

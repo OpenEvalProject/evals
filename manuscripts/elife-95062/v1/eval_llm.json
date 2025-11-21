@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors developed a novel iPSC-based model of TDP43 proteinopathy by fusing GFP to endogenous TDP43 using CRISPR-Cas9 genome editing. The GFP integration did not adversely affect iPSC differentiation into motor neurons or TDP43 function, as evidenced by normal expression of motor neuron markers (ISL1, NF-M) and no significant changes in TARDBP, UNC13A, or STMN2 expression or splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide strong evidence for successful genome editing and validation of the TDP43-GFP knock-in line. The data show efficient differentiation (~80% ISL1+ cells), normal marker expression, and no aberrant splicing in the absence of nanobody expression. Multiple independent clones (E5, E8) were validated, strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Expression of an NES-tagged anti-GFP nanobody induced TDP43 mislocalization from nucleus to cytoplasm in TDP43-GFP motor neurons, leading to pathological features including reduced dendrite complexity, soma swelling, increased apoptosis (cleaved caspase-3), and formation of cytoplasmic TDP43 puncta. Control nanobody had no effect, and nanobody expression in unedited cells caused no phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 collectively demonstrate successful induction of TDP43 mislocalization and associated pathology. The data include appropriate controls (control nanobody, unedited cells) and quantification of multiple pathological features. The observation of TDP43 puncta is supported by super-resolution microscopy, though the authors acknowledge they cannot confirm these are true aggregates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "TDP43 mislocalization caused widespread alternative splicing defects affecting 175 genes, including characteristic ALS-associated cryptic exon inclusion in UNC13A and STMN2. Long-read sequencing revealed 476 STMN2 isoforms, with 40 (8.4%) containing cryptic exons exclusively in NES-expressing neurons. Only 35% of splicing changes were proximal to TDP43 binding sites, suggesting nuclear loss of TDP43 explains only a subset of splicing defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C39-C46 provide comprehensive evidence for splicing defects using multiple approaches (RT-qPCR, short-read RNA-seq, long-read ONT sequencing). The comparison with TDP43 eCLIP data (C41) and the inference about mechanisms (C42) are appropriately cautious. The long-read sequencing data revealing novel STMN2 isoforms adds significant depth to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The iPSC model shows strong concordance with ALS patient data, with 34 of 90 alternatively spliced genes from patient cortical neurons also detected in the model, all displaying identical splicing events. Comparison with TDP43 knockdown data revealed significant overlap but also identified genes (143 and 79 in two datasets) affected by mislocalization but not knockdown, suggesting nuclear loss alone cannot explain all splicing defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 demonstrate clinical relevance through comparison with patient data and mechanistic insight through comparison with knockdown models. The statistical analysis appears appropriate (stringent FDR and \u0394PSI thresholds), and the conclusion (C52) is appropriately cautious given the data. The differences between mislocalization and knockdown suggest distinct mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Twelve genes showing alternative splicing in both the iPSC model and ALS/FTD post-mortem tissue were validated by RT-qPCR, with 9 of 12 showing decreased canonical transcript expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide orthogonal validation of RNA-seq findings using RT-qPCR. The validation rate (12/12 for splicing events, 9/12 for canonical transcript reduction) is strong. The stringent selection criteria (overlap with patient data, statistical thresholds) increase confidence in these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Transcriptomic analysis revealed that TDP43 mislocalization profoundly impacts the motor neuron transcriptome, with hundreds of differentially expressed genes (fold change \u22652, FDR<0.01). Downregulated genes were enriched for synaptic and cytoskeletal pathways, while upregulated genes were enriched for RNA processing pathways including nonsense-mediated decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe comprehensive transcriptomic changes with appropriate statistical thresholds. The PCA showing 90% variance explained by nanobody expression (C35) demonstrates strong experimental effect. The GO enrichment findings (C37-C38) are biologically plausible and relevant to ALS pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "An inducible system using doxycycline-controlled nanobody expression successfully triggered TDP43 mislocalization in TDP43-GFP-NES motor neurons. Mislocalization led to cytoplasmic TDP43 puncta and increased phosphorylated TDP43 without changing total TDP43 levels. TDP43 mislocalization alone did not induce stress granules, though sodium arsenite treatment induced stress granules with only partial TDP43 colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 demonstrate successful development of an inducible model with appropriate controls. The western blot data (C57) showing increased phosphorylation without total protein changes is well-controlled. The stress granule analysis (C58-C60) provides important mechanistic insight, distinguishing TDP43 puncta from stress granules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "TDP43 mislocalization and significant alternative splicing defects in all 12 validated genes were detected as early as 8 hours after doxycycline treatment, suggesting dysfunctional alternative splicing is an early molecular event in TDP43 proteinopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 provide strong time-course data showing rapid onset of both mislocalization and splicing defects. The inference (C63) that splicing defects are early events is well-supported by the 8-hour timepoint data. This addresses a key limitation of previous models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "In the inducible model, transcriptomic analysis at day 40 revealed splicing defects in 494 genes (adjusted p-value <0.01, \u0394PSI >0.1), enriched for pathways related to synaptic function and cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 extend the splicing analysis to the inducible model with appropriate statistical thresholds. The pathway enrichment findings are consistent with earlier results (C40) and ALS pathology. The larger number of affected genes (494 vs 175) may reflect differences in timepoint or model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Following doxycycline withdrawal, TDP43 localization was largely restored to the nucleus, but a subset of neurons retained cytoplasmic TDP43 for at least 21 days despite undetectable nanobody expression. This suggests TDP43 mislocalization may become self-sustaining in some cells, and removal of the initial trigger may be insufficient to reverse mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide strong evidence for persistent mislocalization using immunofluorescence and super-resolution microscopy showing TDP43 remains cytoplasmic without detectable nanobody. The inferences (C69-C70) about self-sustaining mislocalization are appropriately cautious ('may become,' 'suggests') and supported by the data. This is a novel and important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Small RNA sequencing revealed approximately 150 microRNAs significantly altered (FDR <0.01, fold change \u22651.5) upon TDP43 mislocalization, with nearly equal numbers upregulated and downregulated. The model recapitulated known ALS-associated changes including downregulation of miR-218 and miR-9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 demonstrate widespread microRNA dysregulation with appropriate statistical thresholds. The bidirectional changes (C73) are interesting and contrast with patient data. The validation of known ALS-associated changes (C72) supports model relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TDP43 knockdown affected only one microRNA significantly (miR-1249-3p), contrasting sharply with mislocalization effects. Gene set enrichment analysis showed substantial overlap for downregulated microRNAs but not upregulated ones, suggesting mislocalized TDP43 selectively affects microRNA expression and that nuclear loss and cytoplasmic gain induce distinct molecular alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 provide strong comparative data showing differential effects of mislocalization versus knockdown on microRNA expression. The GSEA approach (C75-C76) is appropriate for avoiding arbitrary thresholds. The inferences (C77-C78) are well-supported and provide important mechanistic insight into distinct effects of nuclear loss versus cytoplasmic gain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Western blot analysis detected hyperphosphorylated TDP43 in whole-cell lysates but no truncated TDP43 fragments even 20 days after mislocalization, suggesting TDP43 mislocalization alone is insufficient to generate significant levels of truncated isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C81-C82 address an important question about TDP43 truncation. The western blot data clearly show no truncated fragments. The inference (C82) is appropriately cautious and acknowledges this as a limitation of the model. The authors appropriately note that the C-terminal GFP tag would be lost in truncated isoforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The model recapitulates key pathological features of TDP43 proteinopathy including neuronal loss, reduced neurite complexity, cytoplasmic accumulation and aggregation of TDP43, splicing defects from nuclear loss, microRNA dysregulation from cytoplasmic gain, and self-sustaining mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a summary claim supported by multiple detailed results above. Claims C4-C7 are each supported by specific experimental evidence presented in the manuscript. The model successfully recapitulates multiple aspects of TDP43 proteinopathy at cellular, molecular, and functional levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims about ALS, TDP43 proteinopathy, TDP43 function, and limitations of existing models are supported by appropriate citations and establish the rationale for developing a new model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C22 provide background context supported by citations. These are standard background claims that establish the scientific rationale for the study. The critical assessment of existing models (C17, C21-C22) appropriately identifies limitations that the new model addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "TDP43 undergoes alternative splicing within exon 6 in response to hyperexcitability in iPSC-derived neurons, generating truncated proteins detected in motor neurons but unchanged between ALS patients and healthy tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is a background claim supported by citation to Weskamp et al., 2020. This provides context for the authors' investigation of truncated TDP43 isoforms in their model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The model has potential applications for studying non-neuronal cell contributions to TDP43 proteinopathy and for developing therapies against TDP43-associated neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 are speculative statements about future applications of the model. While the model's capabilities support these potential applications, these claims represent future work rather than demonstrated results. The speculation is reasonable but not yet validated.",
+    "result_type": "MINOR"
+  }
+]

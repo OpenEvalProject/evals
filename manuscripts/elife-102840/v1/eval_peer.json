@@ -1,0 +1,168 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C34",
+      "C35"
+    ],
+    "result": "PointTree achieves superior reconstruction performance compared to existing skeleton-based methods, with f1-scores above 80% for long-range axonal projections across hundreds of GBs of data, while current methods achieve only 30-40% f1-scores and separate at most 25% of densely distributed neurites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this core finding. The editor states the method is 'a significant improvement over existing measures' and Reviewer 1 notes 'the algorithm is far superior to existing techniques, especially when a dense labelling of the tissue means that neighbouring neurites interfere with the reconstruction.' Reviewer 2 describes the performance as 'impressive based on these 3 criteria.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C39"
+    ],
+    "result": "PointTree uses a constrained Gaussian clustering method to partition neuronal images into columnar regions, each belonging to a single neurite, thereby addressing the problem of mutual interference among densely distributed neurites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this methodological innovation without challenge. The editor highlights 'the key innovation is to separate the identification of sections of an axon from the statistical rules used to constrain global structure,' and Reviewer 1 describes the algorithm as working 'by first identifying points in three-dimensional space...then used to identify short sections of axon using an optimisation algorithm.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C40"
+    ],
+    "result": "PointTree uses a minimal information flow tree (MIFT) model to suppress cumulative reconstruction errors, with validation showing that ground-truth information flow values achieve the minimum value for 195/208 neuronal branches, suggesting the MIFT rule is reasonable.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the MIFT approach, Reviewer 1 raises significant concerns: 'the assumption that axons should always be as smooth as possible is not always correct' and notes 'real axons in many systems can take quite sharp turns.' The reviewer requests 'explicit acknowledgement of this bias' and notes the model 'has the potential to bias data collection,' indicating the evidence for this approach is viewed as incomplete or potentially problematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The MIFT model maintains reconstruction quality during multi-block fusion (f1-score above 0.8 after first fusion, 0.79 after second fusion), while without MIFT, performance degrades dramatically (f1-score drops by 0.3 after first fusion and below 0.2 after second fusion).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these specific quantitative findings about MIFT's effectiveness in preventing error accumulation during fusion. The data demonstrating MIFT's utility in maintaining reconstruction quality across multiple fusions is implicitly accepted through the overall positive assessment of the method's performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PointTree achieves high reconstruction accuracy across different imaging modalities: LSM (f1-score=91.0%, SNR=5.01), fMOST (f1-score=90.0%, SNR=8.68), and HD-fMOST (f1-score=93.3%, SNR=11.4).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the performance data, Reviewer 2 expresses concern about generalizability: 'the signal to noise ratio is extremely high (also the case in all raw data images in the paper)' and requests to see 'how PointTree's performance change in increasingly noisy samples.' This indicates uncertainty about whether the reported performance extends to more challenging, noisier datasets typical of many experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PointTree demonstrates computational efficiency, reconstructing 254 image blocks (512\u00d7512\u00d7512 voxels) in approximately 44 minutes and 821 blocks in about 60 minutes, with reconstruction speed generally faster than imaging speed.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the computational efficiency claims. The timing data is accepted as part of the overall demonstration that the method represents a practical advance, with Reviewer 1 noting it 'could be applied more broadly' and has potential applications beyond the specific use case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PointTree has acknowledged limitations: it generates errors when neurites with weak intensities are not identified, may produce connection errors when relying solely on foreground information, and the MIFT assumption of smooth axons does not always hold as real axons can take sharp turns, potentially causing erroneous separation of continuous axons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly validates these limitations, particularly emphasizing the MIFT smoothness assumption issue: 'real axons in many systems can take quite sharp turns and this is also seen in the data presented in the paper (Fig 1C).' The reviewer requests 'explicit acknowledgement of this bias,' which the manuscript provides, and these limitations are treated as important caveats to the method's applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Even with ideal segmentation where all neurite centers are identified and signals enhanced, skeleton-based methods still exhibit significant reconstruction errors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is implicitly supported by reviewers' acceptance of the motivation for developing PointTree. The editor notes the method addresses problems with existing approaches, and Reviewer 1 acknowledges that current methods struggle with dense labeling, supporting the claim that segmentation alone is insufficient for accurate reconstruction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "PointTree uses UNet3D for segmentation with specific training parameters (Adam optimizer, learning rate 3e-4, batch size 1, L1-norm loss, 128\u00d7128\u00d7128 input size) and training data consisting of two sets of 20 image blocks each (10 dense, 10 sparse), with a threshold of 0.5 for foreground identification.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these methodological details. Reviewer 1 notes that 'the Methods section in particular should be expanded to more clearly explain what each algorithm is doing,' but this is a request for clarity rather than a challenge to the validity of the approach. The technical implementation details are accepted as appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C15",
+      "C16"
+    ],
+    "result": "Current reconstruction methods face fundamental challenges: they require intensive manual operations in tens of terabytes of data, struggle with densely distributed axons, are ineffective at eliminating error accumulation across large-scale images, and remain semi-automatic requiring substantial human intervention.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers fully accept this problem statement. Reviewer 1 states 'This is an important problem as modern high-throughput imaging techniques can produce large amounts of raw data, but identifying neuronal morphologies and connectivities requires large amounts of manual work.' The editor and reviewers treat these limitations of existing methods as established context justifying the new approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "PointTree enables accurate reconstruction of long-range neuron projections from hundreds of gigabytes of data and significantly enhances the efficiency of whole-brain-scale neuron reconstruction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the advance, Reviewer 1 notes a critical limitation: 'the best reconstruction accuracy is below 90%, which does not fully solve the problem of needing manual proof-reading.' This indicates that while the method improves efficiency, it does not completely eliminate the bottleneck, tempering claims about fully enabling automated whole-brain reconstruction.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C50",
+      "C130",
+      "C131"
+    ],
+    "result": "RsbT activates RsbU by inducing flexible linkers to form a coiled-coil that dimerizes the phosphatase domains. The Q94L mutation in the linker region causes constitutive activation of RsbU in the absence of RsbT, and AlphaFold2 modeling predicts that the linkers form extended alpha-helices (82-112) that cross to connect dimers of the N-terminal and C-terminal phosphatase domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by multiple lines of evidence including genetic screens (C29-C33), AlphaFold2 structural predictions (C34-C36), and mutagenesis studies (C46-C50). The Q94L mutation provides strong genetic evidence for the importance of the linker in activation, and the structural predictions are consistent with the biochemical and genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RsbT binds to RsbUQ94L with approximately 10-fold higher affinity (KD = 0.56 \u00b1 0.2 \u00b5M) compared to wild-type RsbU (KD = 4.5 \u00b1 1 \u00b5M), supporting the hypothesis that RsbT binding stabilizes the linker in a dimerized conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence anisotropy measurements (C51-C53) provide quantitative binding data that directly support the model. The 10-fold increase in affinity for the Q94L mutant is consistent with the hypothesis that this mutation stabilizes the active conformation (C54-C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C132"
+    ],
+    "result": "RsbUQ94L substantially recapitulates RsbT activation by decreasing the KM for Mn2+ more than 50-fold (from 77 \u00b1 9 mM to 1.4 \u00b1 0.2 mM), demonstrating that the linker transduces RsbT binding to control the active site. The kcat increases from 1.4 \u00b1 0.077 min\u207b\u00b9 to 2.4 \u00b1 0.084 min\u207b\u00b9 without RsbT, and further to 9.0 \u00b1 0.64 min\u207b\u00b9 with RsbT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphatase assays (C56-C63) provide detailed kinetic parameters that demonstrate the Q94L mutation primarily affects metal cofactor binding (KM) rather than catalytic rate (kcat). This is consistent with the proposed allosteric mechanism where linker dimerization controls active site conformation (C64-C65, C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C78",
+      "C116"
+    ],
+    "result": "AlphaFold2 prediction of the 2RsbT/2RsbU complex shows RsbU adopts a conformation very similar to the RsbU dimer (RMSD 1.36 \u00c5), with RsbT positioned in a hybrid interface spanning the N-terminal dimerization domains and linker. Previously identified binding residues are buried in the predicted interface, validating the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AlphaFold2 predictions (C67-C69) are supported by prior genetic data showing that residues Y28, E24, I74, I78 (RsbU) and R19, R23, N24 (RsbT) are important for binding (C70). The structural similarity between the RsbU dimer and the RsbT/RsbU complex (C67) supports the interpretation that the dimer model represents the active state (C68, C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "A genetic screen identified 11 suppressor mutations of RsbUY28I that fall into three classes: substitutions near the RsbT binding site (S49G, K53E), substitutions near RsbT-linker contacts (T89A, G92E/R, Q94L), and substitutions in the regulatory switch element (T110S, V142A, K143E, C165Y, M173I). These data support the model that RsbT activates RsbU by transmitting signals through the coiled-coil linker to the switch element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic screen (C71-C73) provides independent validation of the AlphaFold2 model, with mutations mapping to functionally relevant regions (C74-C77). The near-saturation of the screen (C72) and the absence of suppressors in rsbT (C73) strengthen confidence in the results. The classification of mutations into three functional groups (C74) provides strong support for the proposed mechanism (C78-C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The RsbUR91E mutation abolishes RsbT stimulation of phosphatase activity, and a compensatory charge swap (RsbTD92K) partially restores activity, demonstrating that direct contacts between RsbT and the RsbU linker (specifically R91-D92) are responsible for phosphatase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The charge swap experiment (C80-C83) provides strong evidence for direct interaction between R91 of RsbU and D92 of RsbT. The partial restoration of activity by the compensatory mutation (C82-C83) is consistent with the predicted salt bridge interaction and supports the conclusion that RsbT-linker contacts drive activation (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "SAXS analysis reveals that the RsbU linker is highly flexible in the absence of RsbT. The scattering data show poor fit to the rigid AlphaFold2 model (\u03c7\u00b2 = 12.53), but excellent fit to a two-state flexible model (\u03c7\u00b2 = 1.2) with Rg values of 34.91 \u00c5 (71%) and 45.69 \u00c5 (29%), indicating RsbU samples both compact and extended conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAXS data (C85-C106) provide strong biophysical evidence for linker flexibility. Multiple independent indicators of flexibility are observed (C92-C97), and the MultiFoXS analysis (C98-C105) demonstrates that a two-state flexible model fits the data much better than a rigid model. The constraint that the N-terminal domain remains dimerized (C100) is justified by prior structural data. The conclusion of linker flexibility (C106) is well-supported by the comprehensive SAXS analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "SAXS analysis of the RsbT/RsbUQ94L complex shows that RsbT rigidifies the flexible linker of RsbU to dimerize the phosphatase domains. The complex has an Rg (35.06 \u00b1 0.43 \u00c5) that matches the AlphaFold2 prediction (33.68 \u00c5) and is smaller than the RsbU dimer (39.05 \u00b1 0.16 \u00c5). The scattering profile fits the rigid AlphaFold2 model well (\u03c7\u00b2 = 1.83) without requiring flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAXS data for the RsbT/RsbUQ94L complex (C107-C115) demonstrate that RsbT binding rigidifies the linker, in contrast to the flexible RsbU dimer. The good fit to the rigid AlphaFold2 model (C115), the smaller Rg compared to RsbU alone (C112-C113), and the absence of flexibility indicators (C114) all support the conclusion that RsbT rigidifies the linker to dimerize the phosphatase domains (C116-C117). The use of the Q94L mutant to stabilize the complex is appropriate given the higher binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "AlphaFold2 predictions suggest that RsbP, a second B. subtilis GSR phosphatase with an N-terminal PAS domain, is controlled through a similar activation mechanism as RsbU. Previously identified activating mutations in RsbP map to similar positions as those in RsbU, and the predicted 2RsbP/2RsbQ complex shows RsbQ positioned similarly to RsbT in the RsbU complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AlphaFold2 predictions for RsbP (C120-C121, C124) combined with the mapping of previously identified mutations (C122) provide strong support for a conserved mechanism. However, this remains a testable hypothesis (C125) that requires experimental validation. The structural predictions are high quality and the mutation mapping provides independent support, but the lack of direct experimental validation for RsbP limits the strength of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C133"
+    ],
+    "result": "AlphaFold2 predictions of diverse GSR-initiating phosphatases from multiple bacterial species show high-confidence predictions of phosphatase domains dimerized through a shared \u03b10, \u03b11, \u03b12 interface, connected by crossing \u03b1-helical linkers. Many predicted structures have unfavorable polar residues in the coiled-coil interface, consistent with a regulatory role for linker stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AlphaFold2 predictions across multiple bacterial species (C126) provide strong evidence for conservation of the mechanism. The presence of unfavorable polar residues in the coiled-coil interface (C127) is consistent with the regulatory model demonstrated for RsbU. However, the conclusion that this is an evolutionarily conserved mechanism (C128, C133) is based primarily on structural predictions without experimental validation for most of the predicted phosphatases. The predictions are high quality and the pattern is consistent, but experimental validation would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "E. coli RssB and B. subtilis RsbU share three regulatory features: positioning of flexible linkers, the interface between the linker and \u03b11 of the phosphatase domain, and conformational change of the switch helices. These similarities suggest that key regulatory features were conserved when an ancestral phosphatase became a dedicated adapter protein in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with RssB (C134-C140) is well-supported by multiple citations to prior research. The three shared regulatory features are documented in the literature, and the mechanistic similarities are striking. The evolutionary inference (C141) is reasonable but speculative, as it is based on comparative analysis rather than direct phylogenetic evidence. The conclusion is supported by the data but represents an inference about evolutionary history.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "P. aeruginosa RssB has a catalytically active phosphatase domain and forms a dimer with crossing linkers and dimerized phosphatase domains similar to RsbU. The adapter function requires RssC, and E. coli RssB weakly dimerizes, supporting a mechanistic link between phosphatase regulation and adapter function. These findings suggest linker-mediated control is broadly conserved for GSR initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure of P. aeruginosa RssB (C143) provides strong structural evidence for conservation of the dimeric architecture. The requirement for RssC (C144) and weak dimerization of E. coli RssB (C145) are supported by citations. The conclusion about broad conservation (C146) is reasonable but represents an inference that extends beyond the specific systems studied. The evidence supports the conclusion but additional experimental validation in other systems would strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The crossing \u03b1-helical linkers of RsbU are structurally similar to those of histidine kinases and GGDEF diguanylate cyclases, and shared regulatory domains (response receiver, HAMP, PAS) connect phosphatase dimers by coiled-coil linkers. This shared architecture suggests modular exchange of N-terminal domains across effector families, providing bacteria with an exchangeable toolkit for signaling pathway evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural similarities (C148) and presence of shared regulatory domains (C149) are supported by AlphaFold2 predictions and prior research (C151-C154). However, the conclusion about modular exchangeability (C150, C156) is highly speculative. While the structural similarities are compelling, the specific mechanism for RsbU (flexibility controlled by binding partner) differs from mechanisms in histidine kinases and GGDEF cyclases (C155). The hypothesis of modular exchange requires experimental demonstration of domain swapping and functional validation, which is not provided. This represents an interesting hypothesis but lacks direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The crossing linker helices in RsbU have similar conformation to those in P. aeruginosa RssB crystal structures, and other bacterial signaling proteins (histidine kinases, GGDEF cyclases) have similar pitch angles for helices connecting to catalytic domains. This suggests the RsbU linker could be a conserved regulatory feature analogous to linkers in other signaling proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons (C37, C41-C42) are based on analysis of crystal structures and AlphaFold2 predictions, providing solid structural evidence. The similar pitch angles across different protein families (C42) support the hypothesis of a conserved regulatory mechanism (C43). However, the conclusion remains somewhat speculative (C43) as it is based primarily on structural similarity rather than functional validation. The evidence supports the hypothesis but additional experimental work would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Socket2 analysis identifies amino acids 83-97 of RsbU as a two-turn coiled coil with Q94 unfavorably packing against L90. Substitutions of Q94 with hydrophobic residues result in mild RsbT-independent activation, while aromatic residues drive constitutive activation. Small or charged residues do not lead to activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Socket2 analysis (C44-C45) provides computational support for the coiled-coil structure. The systematic mutagenesis of Q94 (C46-C49) provides strong genetic evidence for the importance of hydrophobicity at this position. The pattern of results (hydrophobic residues activate, charged/small residues do not) is consistent with the model that burial of Q94 in the coiled-coil interface drives activation. The data are internally consistent and support the structural model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The allosteric switch controlling phosphatase activity of SpoIIE couples dimerization to cofactor interaction, consistent with the mechanism observed for RsbU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C66) is supported by citation to prior research on SpoIIE. It provides important context for interpreting the RsbU results by showing that the coupling of dimerization to cofactor binding is a conserved feature of PPM phosphatases. However, this is background information rather than a new result from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on the General Stress Response and RsbU/RsbT system: The GSR promotes bacterial survival in adverse conditions and is present in all analyzed bacterial species. RsbU is a PPM phosphatase that dephosphorylates RsbV to activate \u03c3B, and is itself activated by RsbT, which is released from the stressosome in response to stress. The mechanism of RsbT activation of RsbU was not previously known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C28) provide essential background information that is well-supported by citations to prior research and established knowledge in the field. They set up the knowledge gap that the study addresses (C2, C19, C28) and provide the necessary context for understanding the significance of the results. This is not a result of the current study but rather background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "\u03c3B was the first conditionally activated cellular transcription factor to be identified, discovered 45 years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This historical claim (C129) is supported by citation to the original discovery. It provides important context for the significance of the work but is not a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The coiled-coil linker mechanism provides a resolution to how shared sensory domains control diverse signaling proteins and provides bacteria with a modularly exchangeable toolkit for evolution of signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These broad claims (C7-C9) represent the most speculative conclusions of the paper. While the structural predictions across bacterial phyla (C7) are supported by AlphaFold2 data, the claims about resolution of the mystery of sensory domain control (C8) and modular exchangeability (C9) are highly speculative. The evidence for RsbU is strong, but the generalization to other signaling systems and the claim of modular exchangeability require experimental validation that is not provided. These represent interesting hypotheses for future work rather than well-supported conclusions.",
+    "result_type": "MAJOR"
+  }
+]

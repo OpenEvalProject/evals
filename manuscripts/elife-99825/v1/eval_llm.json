@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C41",
+      "C43",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose that cAMP accumulation in adhesive papillae functions as a timer mechanism for metamorphosis initiation. Live imaging with Pink Flamindo showed that cAMP temporarily decreases (0.83-fold at 35s) then gradually increases (0.0102/min starting at 4min 40s) after adhesion stimulation in larvae that successfully metamorphose, but not in those that fail. The authors interpret this as evidence that the ~30 minute gap between adhesion and metamorphosis represents the time required for cAMP to accumulate above a threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide direct experimental evidence from Pink Flamindo imaging showing biphasic cAMP dynamics correlating with metamorphosis success. Claims C3, C43, C110-C111 present the mechanistic interpretation that cAMP accumulation functions as a timer. The experimental data (n=5 successful, n=4 failed) directly support the temporal dynamics, though the sample size is modest. The interpretation is logical given the known ~30 min adhesion requirement (C107) and the correlation between cAMP patterns and metamorphosis outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C35",
+      "C40",
+      "C42"
+    ],
+    "result": "The Gq, Gs, and Gi pathways are all involved in metamorphosis initiation downstream of GABA. Knockdown of G\u03b1q and G\u03b1s reduced metamorphosis rates (C21-C23), with G\u03b1s showing stronger effects. Knockdown of Gq pathway components (PLC\u03b21/2/3, PLC\u03b24, IP3R) prevented metamorphosis (C27). Overexpression of constitutively active forms of G\u03b1q, PLC\u03b21/2/3, G\u03b1s, and bPAC induced metamorphosis without adhesion (C30-C31, C35, C40, C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence support the involvement of all three G-protein pathways. Loss-of-function experiments (knockdowns) show requirement for G\u03b1q, G\u03b1s, and downstream components. Gain-of-function experiments (constitutively active overexpression) show sufficiency. The data are internally consistent with appropriate controls (STD MO, uninjected). Statistical significance is reported (p<0.001) with reasonable sample sizes (n=60-123 per condition). The convergence of genetic, pharmacological, and overexpression approaches strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The Gq pathway functions upstream of the Gs/cAMP pathway, but with complexity. Theophylline and caG\u03b1s rescued G\u03b1q knockdowns (C66-C67), suggesting Gq is upstream. However, caPLC\u03b21/2/3 failed to rescue G\u03b1s knockdowns while caG\u03b1q succeeded (C71-C72), suggesting Gq can stimulate cAMP synthesis independently of Gs. The authors propose Gq activates G\u03b1s-independent adenylate cyclase through Ca2+ and PKC (C73-C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis experiments (C66-C67, C71-C72) provide strong evidence for pathway ordering, though the results reveal unexpected complexity rather than simple linearity. The rescue of G\u03b1s morphants by caG\u03b1q (C72) contradicts simple upstream positioning but is explained by known Ca2+/PKC activation of AC (C73, supported by citations). Pink Flamindo imaging showing cAMP increase in G\u03b1s knockdowns (C74, Figure 3\u2014figure supplement 1C) and partial theophylline rescue (C74, Figure 4N) provide independent support for G\u03b1s-independent cAMP synthesis. The interpretation is well-supported though the pathway architecture is more complex than initially hypothesized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The Gi pathway (specifically dvG\u03b1i_Chr2) functions upstream of both Gq and Gs pathways. dvG\u03b1i_Chr2 knockdown prevented metamorphosis and abolished cAMP dynamics (C84, C87). GABA/Gi pathway components (GAD, GABABR1) were rescued by caPLC\u03b21/2/3 and theophylline (C76), placing GABA/Gi upstream. However, GABA partially rescued G\u03b1q, PLC\u03b2, and G\u03b1s knockdowns (C79-C80), suggesting additional PLC\u03b2-independent pathways activated by GABA/Gi (C94-C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of dvG\u03b1i_Chr2 as the key Gi protein is well-supported by strong knockdown phenotype (C84, Figure 6B-C) and rescue by theophylline/GABA (C84, Figure 6D). Pink Flamindo imaging in dvG\u03b1i_Chr2 knockdowns (C87, Figure 6E) directly demonstrates loss of cAMP dynamics, supporting upstream positioning. The epistasis experiments (C76, C79-C80) are internally consistent. The partial rescue of PLC\u03b2 double knockdown by GABA (C94, Figure 5G) provides evidence for bypass pathways. The simultaneous knockdown of GABABR1 and G\u03b1q showing strong impairment (C93) supports compensatory pathway architecture. Multiple independent experimental approaches converge on these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "The Gq and Gs pathways function specifically in the adhesive papillae to trigger metamorphosis. RNA-seq confirmed expression of pathway genes in papillae (C45). Papilla amputation reduced theophylline-induced metamorphosis from 100% to 30% (C46) and reduced effects of caG\u03b1q, caPLC\u03b21/2/3, caG\u03b1s, and bPAC overexpression (C48). Papilla amputation also suppressed GABA-induced metamorphosis (C62), and anterior fragments responded to GABA independently of the brain (C64-C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The papilla amputation experiments (C46, C48, C62) provide strong spatial localization evidence, with dramatic effects (100% to 30% reduction for theophylline, C46). RNA-seq data (C45) confirm molecular expression in the relevant tissue. The anterior fragment experiments (C64-C65) elegantly demonstrate that the brain is not required for GABA response, with qRT-PCR showing 3-fold upregulation of GABA-responsive genes (C64, Figure 3\u2014figure supplement 2H). The convergence of expression data, surgical ablation, and isolated tissue experiments strongly supports papilla-specific function. Sample sizes are adequate (n=35-95 per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C69",
+      "C70",
+      "C78"
+    ],
+    "result": "The Gq pathway mediates Ca2+ transients in adhesive papillae upon stimulation. G\u03b1q knockdown significantly reduced Ca2+ transients detected by GCaMP8 (C33, 62% vs 92% in controls). G\u03b1s knockdown did not prevent Ca2+ transients (C69), confirming Gs is downstream of Gq-dependent Ca2+ increase (C70). GAD knockdown also prevented Ca2+ transients (C78), placing GABA upstream of Gq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Live Ca2+ imaging with GCaMP8 provides direct functional evidence for Gq-dependent Ca2+ signaling (C33, Figure 1N-O). The differential effects of G\u03b1q vs G\u03b1s knockdown (C33 vs C69) establish epistatic relationships. Sample sizes are adequate (n=10-27 per condition). The imaging approach directly measures the predicted Ca2+ transient rather than relying solely on genetic inference. The results are consistent with known Gq\u2192PLC\u03b2\u2192IP3\u2192Ca2+ signaling (C24-C25, C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Both G\u03b1s and G\u03b1q knockdowns abolished the temporal cAMP decrease and reduced subsequent cAMP accumulation rate, indicating both pathways are required for normal cAMP dynamics. However, neither knockdown completely abolished cAMP increase, suggesting additional cAMP production mechanisms exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Pink Flamindo imaging in knockdown larvae (C55, Figure 3\u2014figure supplement 1C-D) directly demonstrates altered cAMP dynamics. The observation that cAMP still increases (albeit at reduced rates) in both knockdowns (C57) is important for understanding pathway redundancy and supports the existence of G\u03b1s-independent AC (C74-C75). The quantitative slope measurements provide objective assessment of accumulation rates. This result helps explain the partial rescue experiments and pathway complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The G\u03b2\u03b3i complex is necessary for metamorphosis initiation. Overexpression of wild-type G\u03b1i and G\u03b1s (which sequester G\u03b2\u03b3) suppressed metamorphosis (C90). Dominant-negative G\u03b1i (which binds G\u03b2\u03b3 but lacks GTPase activity) also reduced metamorphosis (C92), confirming the effect occurs through G\u03b2\u03b3 sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design cleverly uses wild-type G\u03b1 overexpression to sequester G\u03b2\u03b3 (C90, Figure 6F), with appropriate mechanistic validation using dominant-negative G\u03b1i (C92, Figure 6\u2014figure supplement 1E). This approach provides evidence for G\u03b2\u03b3 function independent of specific G\u03b1 subunits. The results are consistent with known G\u03b2\u03b3i activation of PLC\u03b2 (C89, supported by citations). Statistical significance is demonstrated (p<0.001 implied by ***). The logic connecting G\u03b2\u03b3 sequestration to loss of function is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "MEK1/2 is a common downstream target of both GABA and cAMP pathways. The MEK inhibitor U0126 significantly reduced GABA-induced metamorphosis (C98) and antagonized theophylline effects (C99), suggesting GABA and cAMP converge on MEK1/2 for metamorphosis initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Pharmacological inhibition with U0126 (C98-C99, Figure 6\u2014figure supplement 1F-G) provides functional evidence for MEK involvement downstream of both pathways. The use of a well-characterized MEK inhibitor previously validated in ascidians strengthens the interpretation. The convergence on a common target (C100) helps explain the compensatory effects observed in rescue experiments. However, the mechanism linking cAMP to MEK activation is not directly demonstrated and relies on literature (cited in C100). The experiments are well-controlled with DMSO controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Wild-type Ciona G\u03b1q exhibits constitutive activity distinct from typical G\u03b1 proteins. Unlike wtG\u03b1s and wtG\u03b1i, wtG\u03b1q overexpression induced metamorphosis without adhesion (C102) and rescued G\u03b1s morphants (C103). Dominant-negative G\u03b1q weakly inhibited metamorphosis (C105), suggesting GDP/GTP exchange is important for this constitutive activity (C106).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential behavior of wtG\u03b1q compared to wtG\u03b1s/wtG\u03b1i (C102, Figure 6\u2014figure supplement 2A-B) provides strong evidence for unusual constitutive activity. The rescue of G\u03b1s morphants by wtG\u03b1q (C103, Figure 6\u2014figure supplement 2C) functionally validates this activity. The dnG\u03b1q experiment (C105-C106, Figure 6\u2014figure supplement 2F) provides mechanistic insight, though the effect is weak. The observation that wtG\u03b1q lacks the morphological abnormalities of caG\u03b1q (C104) suggests mechanistic differences. This is an interesting finding about Ciona-specific G\u03b1q properties, though the molecular basis remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "GIRK channel knockdown weakly enhanced metamorphosis initiation without settlement, suggesting GIRK channels negatively regulate metamorphosis through hyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GIRK knockdown experiment (C97, Figure 6I) provides functional evidence for negative regulation, consistent with known GIRK function in neuronal hyperpolarization. The effect is weak but statistically significant. This result supports the model that Gi has both activating (via G\u03b2\u03b3\u2192PLC\u03b2) and inhibiting (via GIRK) functions. However, only one GIRK gene was tested, and the mechanism linking GIRK to metamorphosis timing is not directly demonstrated. The result is consistent with the overall model but represents a minor supporting finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C45",
+      "C59",
+      "C82",
+      "C96",
+      "C114"
+    ],
+    "result": "RNA-seq analysis of adhesive papillae identified expression of key signaling pathway components including PLC\u03b21/2/3, PLC\u03b24, IP3R, G\u03b1q, G\u03b1s, G\u03b1i isoforms, GAD, AC5/6, and PDE1 in the papilla region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data (presented in Figure 1\u2014figure supplement 1C, Figure 1\u2014figure supplement 3B, and Supplementary file 1) provide comprehensive expression profiling supporting the localization of signaling components to papillae. The data are from two biological replicates and are presented as RPKM values. This transcriptomic evidence complements the functional studies and validates that the relevant molecular machinery is present in the tissue of interest. The approach is technically sound, though the papilla region includes ~20 cells per papilla, so cellular resolution is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C86"
+    ],
+    "result": "Typical G\u03b1i showed moderate reduction in metamorphosis rate upon knockdown (C83), while dvG\u03b1i_Chr4 knockdown resulted in slight reduction (C86), suggesting supportive but non-essential roles for these G\u03b1i isoforms compared to the critical dvG\u03b1i_Chr2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Knockdown experiments for typical G\u03b1i (C83, Figure 6\u2014figure supplement 1A) and dvG\u03b1i_Chr4 (C86, Figure 6\u2014figure supplement 1B) show statistically significant but modest effects compared to the dramatic dvG\u03b1i_Chr2 phenotype. This establishes a hierarchy of G\u03b1i importance and suggests functional redundancy. The effects are statistically significant despite being moderate, supporting the interpretation of auxiliary roles. Sample sizes are adequate (n>100 per condition).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Theophylline treatment and bPAC overexpression induced metamorphosis without adhesion, confirming that cAMP elevation is sufficient to trigger metamorphosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Pharmacological (theophylline, C39) and optogenetic (bPAC, C40) approaches both induced metamorphosis without adhesion, providing convergent evidence for cAMP sufficiency. The use of two independent methods to elevate cAMP strengthens the conclusion. Sample sizes are adequate (n=57-88). However, theophylline has multiple targets beyond PDE (acknowledged in C38), so the bPAC experiment provides cleaner evidence. These experiments establish cAMP as sufficient but are confirmatory of prior work (C37) rather than entirely novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "cAMP accumulation does not alter the timing of acquiring metamorphic competence, as bPAC-overexpressed larvae showed low metamorphosis rates at 24 hpf similar to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that even bPAC-overexpressed larvae rarely metamorphose at 24 hpf (C44, Figure 2H) demonstrates that cAMP elevation alone cannot override developmental timing of competence acquisition. This is an important negative result that constrains the model\u2014cAMP functions as a timer after competence is acquired, not as a determinant of competence itself. The time-course experiment (C42, Figure 2H) provides the data supporting this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Ciona larvae initiate metamorphosis tens of minutes (~30 min) after adhesion, and this gap is suggested to ensure adhesion rigidity. Larvae experiencing short-term adhesion must re-adhere for 30 min, and weaker adhesion force extends the time requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe established characteristics of Ciona metamorphosis from prior work (C107-C109 cite previous studies including authors' own work). Claim C1 is a basic observation. Claim C2 is a functional hypothesis about the gap's purpose. These provide essential context for the current study but are not new findings. The ~30 min requirement and force-dependence (C109) are important for interpreting the cAMP timer model but represent prior knowledge rather than results of this manuscript.",
+    "result_type": "MINOR"
+  }
+]

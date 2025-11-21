@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C35",
+      "C36",
+      "C37",
+      "C43",
+      "C44",
+      "C45",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The intra-Golgi transport velocity of secretory cargos decreases as they transit from cis to trans-Golgi, and different cargos exhibit distinct velocities within the same cisternae. All RUSH reporters fit first-order exponential kinetics (adj. R\u00b2\u22650.85), with dLQ/dt slowing to zero at the trans-Golgi. At LQ=0.40 (medial-Golgi), instantaneous velocities range from 6.1 nm/min (SBP-GFP) to 20.5 nm/min (TNF\u03b1-SBP-GFP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C52 provide converging evidence from multiple RUSH reporters showing non-constant, cargo-specific intra-Golgi transport velocities. The first-order exponential fits (adj. R\u00b2\u22650.85) are robust, and the velocity measurements at LQ=0.40 demonstrate clear differences between cargos. The data directly contradict the cisternal progression model's prediction of constant velocity (C10, C37, C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Golgi residence times vary widely among secretory cargos, ranging from 6.0\u00b10.4 min (TNF\u03b1-SBP-GFP) to 16\u00b12 min (SBP-GFP-CD59). Truncation of the luminal domain dramatically extends residence times: GFP-Tac from 16 min to 3.4\u00b10.3 hr, and GFP-CD8a from 7.8\u00b10.7 min to 66\u00b17 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C63 demonstrate substantial variation in Golgi residence times with appropriate statistical reporting (mean\u00b1SEM, sample sizes). The dramatic extension of residence times upon luminal domain truncation (C62-C63) is particularly striking and well-documented. This contradicts the cisternal progression model's prediction of uniform residence times (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "GFP-Tac-TC and GFP-CD8a-TC, truncation mutants lacking luminal domains, exhibit Golgi residence times (3.4 hr and 66 min) comparable to glycosyltransferases and localize to the trans-cisternal interior (LQ=0.94 and 0.86). VHH-anti-GFP internalization assays suggest these constructs lack post-Golgi retrieval mechanisms, implying retention within a stable trans-Golgi interior domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C78 present multiple lines of evidence supporting stable domain retention, but the conclusion relies heavily on negative evidence (absence of retrieval signals, C73, C75). While the VHH internalization assay (C71) is informative, proving the absence of a retrieval mechanism is inherently difficult (C75). The authors acknowledge this limitation. The stable domain hypothesis (C77-C78) is plausible but requires additional validation beyond the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Under BFA treatment (inhibiting COPI-mediated retrograde transport), nocodazole-induced Golgi ministacks maintain stacked organization for 30-60 min. LQs of Golgi markers remain relatively stable, though the axial length decreases (d(GM130-GalT-mCherry) from 300\u00b110 nm to 190\u00b130 nm) and the TGN collapses (d(GalT-mCherry-CD8a-furin) from 200\u00b120 nm to 100\u00b130 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C85-C95 provide quantitative evidence that Golgi stacks persist under BFA treatment despite COPI dissociation. The measurements of cisternal distances (C91, C94) and LQ stability (C86-C88) are well-documented with appropriate statistics. However, the authors acknowledge BFA's pleiotropic effects (C97-C99), which complicates interpretation. The conclusion that the Golgi is not a dynamic equilibrium (C96) is supported but should be considered in light of these caveats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CollagenX, which forms ~40 nm aggregates (~190 copies) and localizes to the cisternal rim, exhibits intra-Golgi transport kinetics similar to conventional cargos: first-order exponential with tintra=8\u00b11 min and y0=0.92\u00b10.08. Side-averaging shows double puncta at medial/trans-Golgi and carriers at 40 min post-chase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 demonstrate that rim-localized large cargos follow similar kinetics to interior-localized small cargos. The data (C43-C45) are consistent with other RUSH reporters, and the side-averaging visualization (C46-C47) provides orthogonal validation. This supports the rim progression model by showing that both rim and interior cargos can follow similar transport kinetics despite different localization patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Nocodazole-induced Golgi ministacks (\u22653 hr treatment) largely represent native Golgi stacks, and GLIM can precisely pinpoint cisternal localization with nanometer accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by extensive prior literature (multiple citations) and the authors' previous methodological validation. These are foundational methodological claims that enable the study's main findings. The Auto-GLIM validation (Figure 1\u2014figure supplement 1H-M) further supports the reliability of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The findings challenge the classical cisternal progression model and support the rim progression model (a modified stable compartment model). This model explains glycosyltransferase retention in the cisternal interior and accounts for diverse cargo transport velocities through differential retention times in stable cisternal domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C101-C103 represent the authors' main interpretive conclusion, synthesizing the experimental findings. The data on variable transport velocities (C29-C52), diverse residence times (C55-C63), and BFA resistance (C33, C95-C96) collectively support this interpretation. However, the authors acknowledge their data alone cannot definitively resolve the debate (C114-C115), and alternative explanations remain possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors speculate that Golgi glycosyltransferases may assemble a dense protein matrix at the cisternal interior, functioning like a gel-filtration chromatography matrix. This could explain size-dependent cargo partitioning, progressive velocity reduction, and first-order exponential exit kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C108 are explicitly speculative (C105: 'tempting to speculate'). While the hypothesis is creative and could explain multiple observations, it lacks direct experimental validation. The authors appropriately present this as speculation requiring further testing. The evidence cited (C104) is from prior work, not new data demonstrating the matrix hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study has several acknowledged limitations: reliance on overexpressed fluorescent cargos (potentially saturating transport), use of nocodazole-induced ministacks (not native Golgi), focus on constitutive secretion (not regulated secretion), and inability to definitively resolve the cisternal progression vs. stable compartment debate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 represent the authors' transparent acknowledgment of study limitations. These are appropriately self-critical and demonstrate scientific rigor. The limitations are real and should be considered when interpreting the results, but they do not invalidate the main findings\u2014they contextualize them and suggest directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establishing Golgi structure, function, and the competing models of intra-Golgi transport (cisternal progression vs. stable compartment vs. rim progression vs. rapid partitioning). These include established knowledge and prior observations from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide essential background context, drawing on established cell biology knowledge and prior literature (extensively cited). These are not new findings but necessary framing for the study. The citations appear appropriate and the characterizations of competing models are fair, though the authors favor the stable compartment/rim progression interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "One LQ unit corresponds to 274 nm, as determined by side-averaging in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is a calibration factor from the authors' previous work (Tie et al., 2022), essential for converting LQ values to physical distances. This is a methodological detail that enables quantitative interpretation of the velocity measurements (e.g., C51).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C59",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Additional background claims about Golgi exit kinetics, residence time definition, COPI function, BFA mechanism, and prior findings on cargo localization patterns. These establish context for interpreting the experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C59, C79-C84, C97-C100 provide necessary background from prior literature and the authors' previous work. These are well-supported by citations and establish the conceptual framework for the study. The caveats about BFA (C97-C99) are particularly important for interpreting the BFA experiments.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study characterized morphological and electrophysiological differences between thorny and athorny CA3 pyramidal neurons. From 348 recorded CA3 pyramids, 229 were thorny and 119 were athorny. Athorny cells were located deeper in the pyramidal layer and had longer primary apical dendrites, resembling developmental differences reported by Marissal et al., 2012, suggesting these cell types may be developmentally distinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide converging morphological and electrophysiological evidence characterizing thorny vs. athorny neurons. The sample size is substantial (348 cells), statistical tests are appropriate (Mann-Whitney U), and findings are consistent with prior literature (C29). The comparison to developmental studies (C29-C30) is appropriately presented as suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The study identified asymmetric connectivity patterns between thorny and athorny CA3 pyramidal neurons. Athorny-to-athorny connections occurred at 15%, thorny-to-athorny at 11%, thorny-to-thorny at 8%, and athorny-to-thorny at only 4%. The overall connectivity rate (8.9%) matched previously reported values. Connection strengths, latencies (<3 ms indicating monosynaptic connections), and failure rates were characterized across connection types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 present the core experimental finding of asymmetric connectivity with appropriate statistical analysis. The connectivity measurements are based on simultaneous whole-cell recordings from up to 8 cells, providing direct evidence. Latency measurements (C41) support the monosynaptic nature of connections. The consistency with prior work (C37) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C65",
+      "C79"
+    ],
+    "result": "Synaptic product analysis, incorporating connection probability, strength, and presynaptic population size, revealed that athorny neurons receive strong input from both thorny and athorny populations, while thorny neurons receive much weaker input, particularly from athorny cells. This demonstrates distinctly asymmetric connectivity between the two CA3 pyramidal subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C65, C79 synthesize the connectivity data into a coherent picture of asymmetric network organization. The synaptic product metric appropriately integrates multiple experimental measurements (connection probability, strength, population size) to estimate functional impact. This analysis directly supports the main experimental conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Two recent independent studies using different experimental methods reported similar asymmetric connectivity patterns in CA3, with superficial neurons (corresponding to athorny cells based on location) frequently innervating themselves and deep pyramids, but much less frequent connectivity from deep to superficial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 appropriately cite convergent evidence from independent laboratories using different methodologies (Watson et al., 2024; Layous et al., 2025). This cross-validation strengthens confidence in the asymmetric connectivity finding, though the correspondence between deep/superficial and thorny/athorny classifications requires the additional anatomical data from C27.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A computational model incorporating the experimentally measured asymmetric connectivity reproduced the sequential activation of athorny then thorny neurons during sharp wave events. The model includes PV+ basket cells and anti-SPW interneurons, with bistability between SPW and non-SPW states driven by pyramidal cell adaptation. Athorny cells fire first due to lower rheobase, recruit other athorny cells via high A\u2192A connectivity, and disynaptically suppress thorny cells via basket cells, resulting in a 29 ms delay between population peaks matching experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 describe a mechanistically detailed computational model that successfully reproduces key experimental observations (29 ms delay matching Hunt et al., 2018). The model is based on established neuron models (AdEx) with parameters drawn from literature and the authors' own data. The proposed disynaptic inhibition mechanism provides a plausible explanation for the long delay that would be difficult to explain by direct excitation alone (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Systematic variation of connectivity parameters in the model revealed that low A\u2192T and high A\u2192A connectivity are crucial for producing the long delay between athorny and thorny peak firing. Decreasing A\u2192A or increasing A\u2192T connectivity resulted in simultaneous peaks, while further increasing A\u2192A or decreasing A\u2192T produced even longer delays. Connections from basket interneurons were as important as excitatory connections, while connections to basket cells had minor effects. The model dynamics remained qualitatively similar when including short-term depression and synaptic variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 present a thorough parameter exploration demonstrating the robustness and necessity of the asymmetric connectivity for the observed dynamics. The systematic variation of connectivity parameters (Figure 5) maps out the parameter space and identifies the critical features. The robustness to additional biological details (C60) strengthens the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C23",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C80"
+    ],
+    "result": "The computational modeling demonstrates that the experimentally measured asymmetric connectivity is crucial for determining the sequential activation of athorny and thorny cells during sharp waves. The mechanism involves athorny neurons switching the network to the SPW state while simultaneously disynaptically suppressing thorny neurons through PV+ basket cells, explaining the tens-of-milliseconds delay observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C23, C68-C74, C80 synthesize the modeling results into mechanistic conclusions linking connectivity to function. The model provides a testable mechanistic explanation for how asymmetric connectivity produces sequential activation. However, the model relies on the existence of anti-SPW interneurons in CA3, which remains to be experimentally demonstrated (C71), introducing some uncertainty about the complete mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C30"
+    ],
+    "result": "The study discusses potential relationships between thorny/athorny classification and developmental origin. Early-born CA3 neurons are located deeper and have longer apical dendrites (similar to athorny cells), and developmentally distinct populations show different roles in memory encoding. Thorn density can be modulated by training and hormones, though whether this results in complete cell-type transitions is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C78, C30 appropriately discuss potential connections to developmental studies and functional implications, but these remain speculative. The morphological similarities between athorny cells and early-born neurons (C77) are suggestive but not definitive. The functional implications (C76) and plasticity of thorns (C78) are cited from other work but their relationship to the current findings requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The experimental methods involved whole-cell patch-clamp recordings from up to 8 CA3 pyramidal neurons simultaneously in 400 \u03bcm horizontal hippocampal slices from P40 C57/Bl6n mice. Quality control criteria excluded cells with membrane potential less negative than -50 mV or series resistance above 30 M\u03a9. A subset of data (238/348 cells) was previously published.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 describe standard and appropriate electrophysiological methods. The simultaneous recording from up to 8 cells is technically demanding but well-established for connectivity studies. Quality control criteria (C86) are reasonable. The transparency about data reuse (C85) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The computational model used adaptive exponential integrate-and-fire (AdEx) neurons to capture diverse firing patterns and adaptation dynamics. Model parameters for athorny and thorny neurons were based on detailed physiological characterization from Hunt et al., 2018 and Linaro et al., 2022. Interneuron parameters were drawn from CA3 data when available or other hippocampal regions. Population sizes were based on estimates from Bezaire and Soltesz, 2013, with the 66-34% thorny-athorny ratio from experimental data. Excitatory-to-excitatory connection probabilities used experimentally measured values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C97 describe appropriate modeling choices with parameters grounded in experimental literature and the authors' own data. The AdEx model is well-suited for capturing adaptation (C88-C89), which is central to the proposed mechanism. The systematic use of literature values for parameters that were not directly measured (C90-C94) is appropriate, though it introduces some uncertainty about parameter interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C46"
+    ],
+    "result": "The introduction establishes background knowledge about the hippocampus, CA3, sharp wave-ripple complexes, and pyramidal neuron heterogeneity. Key prior findings include: CA3 as the main SPW generator, SPW-Rs' role in memory consolidation through replay, the existence of thorny and athorny CA3 pyramidal subtypes, athorny cells firing before thorny cells during SPWs, and high recurrent connectivity (8.8%) within CA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22, C46 appropriately cite established knowledge and prior findings from the literature. These background claims are well-supported by citations to seminal and recent work. The characterization of the field's understanding provides appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Recent work has indicated that distinct subpopulations of pyramidal neurons within CA3 may contribute differently to network activity, including sharp waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 accurately represents recent findings in the field and is supported by appropriate citations. This provides direct motivation for the current study's focus on subpopulation-specific connectivity.",
+    "result_type": "MINOR"
+  }
+]

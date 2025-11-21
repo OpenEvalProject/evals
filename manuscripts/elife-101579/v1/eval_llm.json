@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "VCS MN is a rapid U-Net-based classifier using ResNet18 that identifies micronucleated cells from low-resolution H2B-emiRFP703 images with 70% recall and 89% PPV for MN, and 65% recall and 93% PPV for MN+ nuclei in RPE1 cells. The classifier performs similarly in U2OS cells and rarely misidentifies chromatin bridges or nuclear blebs as MN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28, C43-C66 collectively describe VCS MN's architecture, training dataset (~2000 crops), and performance metrics across multiple cell lines. The reported recall and PPV values (C53-C55, C63-C65) are supported by data in Figures 1c-e, and error analysis (C58-C61) is documented in Figure 1\u2014figure supplement 3. The classifier's specificity for micronucleated cells is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "VCS MN classifies MN rupture status using a Dendra2 intensity threshold of 0.16, correctly classifying ~90% of MN and identifying 60% of rupture- nuclei and 70% of rupture+ nuclei with ~75% PPV for both classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe the rupture classification method and its performance. The 0.16 threshold (C67) and ~90% classification accuracy (C68) are supported by Figure 1\u2014figure supplement 3c. The recall and PPV values for rupture+/- nuclei (C69) are shown in Figure 1g. The explanation for lower sensitivity in rupture- nuclei (C70) is a reasonable inference from Figure 1\u2014figure supplement 3d-e.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "MNFinder is a robust MN segmentation pipeline using an ensemble of attention-gated U-Nets and a UNet3+-based cell instance classifier that achieves 82-93% recall and 75-100% PPV across multiple cell lines, imaging conditions, and resolutions, with mIoU values of 74-79%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29, C72-C88 describe MNFinder's architecture, performance, and comparison to existing methods. The ensemble architecture (C74-C77) is documented in Figure 2\u2014figure supplement 1 and Table 1. Performance metrics (C78-C81) are shown in Figure 2c-d and Table 1. Error analysis (C82-C85) is supported by Figure 2\u2014figure supplement 3. Comparison to existing methods (C87-C88) is documented in Table 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Visual cell sorting with VCS MN achieves 95% sorting efficiency and generates cell populations with strong enrichment for MN+ or MN- cells, with Dendra2 red:green ratios remaining stable for 8 hours after photoconversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 describe the validation of visual cell sorting for isolating micronucleated cells. The 95% sorting efficiency (C90) is shown in Figure 3\u2014figure supplement 1c. Dendra2 stability over 8 hours (C91-C92) is demonstrated in Figure 3b and Figure 3\u2014figure supplement 1d. Enrichment of correct cell types (C93-C94) is shown in Figure 3c. The 7-fold enrichment in U2OS cells (C96) is calculated from predicted PPV values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Visual cell sorting of Mps1i-treated RPE1 cells recapitulates established aneuploidy signatures, identifying 2200 DEGs (63 with >1.5-fold change) with substantial overlap in Hallmark pathways compared to previous studies, including inflammation, EMT, and p53 pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C98-C103 describe validation of visual cell sorting for transcriptome analysis. PCA clustering by treatment (C98) is shown in Figure 4b. The number of DEGs (C100) is documented in Figure 4c and Figure 4\u2014figure supplement 1b-c. GSEA analysis (C101-C102) showing pathway overlap is presented in Figure 4d and Figure 4\u2014figure supplement 1f-h. Minimal UV-associated changes (C99) are shown in Figure 4\u2014figure supplement 1a-b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C31",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "RNASeq analysis of MN+ versus MN- cells after Mps1i treatment revealed minimal transcriptional differences, with samples clustering by replicate rather than MN status and only two genes (EGR1 and TNFAIP3) upregulated >1.5-fold, both also upregulated in bulk Mps1i analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C31, C104-C108 describe the lack of MN-specific transcriptional response. Clustering by replicate (C105) is shown in Figure 5b. Few DEGs (C106) are documented in Figure 5c and Figure 5\u2014figure supplement 1i. The two upregulated genes (C107) are shown in Figure 5\u2014figure supplement 1cj. Nuclear atypia analysis (C104) is in Figure 5\u2014figure supplement 1a. The conclusion (C108) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "RNASeq analysis of intact versus ruptured MN+ cells identified 14 DEGs with >1.5-fold change, but GSEA showed almost complete overlap with bulk Mps1i pathways. Immunofluorescence validation showed no increase in EGR1 and only a small shift in ATF3 in ruptured MN cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C117 describe the minimal unique transcriptional effects of MN rupture. Clustering by condition (C109) is shown in Figure 5e. The 14 DEGs (C110-C111) are documented in Figure 5f and Figure 5\u2014figure supplement 1k-l. GSEA overlap (C112) is shown in Figure 5g and Figure 5\u2014figure supplement 1m-n. Immunofluorescence validation (C115-C116) is presented in Figure 6b-c. The conclusion (C117) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "DNA-FISH analysis revealed that aneuploidy frequency was consistently higher in MN+ versus MN- cells and higher in ruptured versus intact MN+ cells for 2/3 chromosomes tested, suggesting that transcriptional changes in micronucleated cells correlate with slightly increased aneuploidy rather than MN formation or rupture per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C118-C121 describe the relationship between MN status and aneuploidy. Aneuploidy frequency differences (C118-C119) are shown in Figure 6e. The conclusion that micronucleated cells have slightly higher aneuploidy (C120) and that MN formation/rupture don't cause specific transcriptional changes (C121) is well-supported by the combined RNASeq and DNA-FISH data. This provides a mechanistic explanation for the observed transcriptional patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In RPE1 cells, Mps1i treatment for 24 hours increased MN frequency from 3% to ~50%, with most MN+ nuclei having one MN containing a single chromosome. Mps1i also increased misshapen nuclei and chromatin bridges to lower levels than MN, with only misshapen nuclei slightly enriched in the MN+ population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C37-C42 describe the effects of Mps1i treatment on RPE1 cells. The increase in MN frequency (C37) is shown in Figure 1\u2014figure supplement 1b. The distribution of MN per nucleus (C40) and chromosome content (C41) are documented in Figure 1\u2014figure supplement 1d-e. The lower frequency of other nuclear abnormalities (C38-C39) is shown in Figure 1\u2014figure supplement 1b-c. The conclusion (C42) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "MN-nucleus assignment by proximity was accurate 97% of the time, with MN being on average 3.3 times closer to the nearest nucleus than the second nearest, suggesting robust assignment even at high cell densities where 10% of nuclei had borders <6 \u00b5m apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe the accuracy of proximity-based MN-nucleus assignment. The 97% accuracy (C49) is shown in Figure 1\u2014figure supplement 2d-e. The 3.3-fold distance difference (C50) is documented in Figure 1\u2014figure supplement 2g. The 10% of nuclei with borders <6 \u00b5m apart (C51) is shown in Figure 1\u2014figure supplement 2h. The inference about robustness at high density (C52) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "VCS MN performed substantially worse on \u00d740 confocal images of DAPI-labeled RPE1 cells compared to the training set, with MN masks failing to cover most of the MN area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 describes the poor performance of VCS MN on higher resolution confocal images. This is documented in Figure 2a with quantified recall and mIoU values. This observation motivated the development of MNFinder for fixed cell analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C138"
+    ],
+    "result": "The study demonstrates that MNFinder robustly segments MN across multiple cell types and imaging conditions, VCS MN rapidly identifies micronucleated cells and can be combined with photoconversion for live cell isolation, and visual cell sorting is suitable for bulk genomic analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124, C138 are summary statements about the overall capabilities of the developed methods. These are well-supported by the comprehensive performance data presented throughout the manuscript for both VCS MN and MNFinder, and the successful validation of visual cell sorting for transcriptome analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Visual cell sorting has several advantages over existing methods: it works on any adherent cell line, overcomes limitations of lamin B2 overexpression and chromosome-specific missegregation systems, is highly scalable, captures whole live cells, and can be performed on attached cells using standard microscopy equipment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C134 describe advantages of visual cell sorting over existing methods. These are well-reasoned comparisons supported by citations to prior literature (C126-C128, C129-C131, C133-C134) and logical inferences from the demonstrated capabilities of the method. The claims are appropriately framed as advantages rather than direct experimental comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Visual cell sorting and the MN segmentation modules have limitations: only ~200,000 cells can be analyzed per experiment due to Dendra2 decay and ongoing rupture, the method requires introduction of fluorescent proteins, and performance may vary with divergent nuclear morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 describe limitations of the methods. These are honest assessments based on the experimental design (C135-C136) and observed performance variations (C137). The throughput limitation (C135) is a reasonable inference from the Dendra2 stability data and experimental timeline. The requirement for fluorescent proteins (C136) is inherent to the method design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Comparison with previous studies showed large overlap in upregulated pathways but globally lower gene expression changes, which could reflect exclusion of highly lobulated nuclei and suggests nuclear atypia may contribute significantly to aneuploidy signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C141 compare the current results to previous studies and speculate about the role of nuclear atypia. While the pathway overlap (C139) is well-documented in Figure 4d and Figure 4\u2014figure supplement 1f-h, the speculation about nuclear atypia (C140-C141) is not directly tested. The authors acknowledge this could also reflect technical variation in sequencing protocols. Additional experiments would be needed to definitively test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors argue that cGAS bound to ruptured MN is incapable of activating STING based on prior literature, and expect that analysis in cGAS/STING-active cell lines would yield similar results to RPE1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C144 address the potential limitation of using RPE1 cells with reduced cGAS expression. While the citations to prior literature (C142-C143) support the argument that cGAS recruitment to MN doesn't activate STING in the first cell cycle, the prediction that other cell lines would show similar results (C144) is speculative and not directly tested. This represents a reasonable hypothesis but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Visual cell sorting is proposed as a flexible platform for future applications including optical pooled screening, chromosome-specific MN analysis, disease behavior studies, and in vivo assays, enabling large-scale analyses of post-mitotic changes caused by micronucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C151 describe proposed future applications of visual cell sorting. These are reasonable extensions of the demonstrated capabilities (C148-C149) and well-reasoned proposals for future work (C146-C147, C150) supported by appropriate citations. The claims are appropriately framed as potential applications rather than demonstrated results. The summary statement (C151) accurately reflects the potential impact of the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C46",
+      "C62"
+    ],
+    "result": "The manuscript provides extensive background on MN biology, including their role in genome instability, cancer, aging, and disease, the challenges of automated MN detection, and the use of Mps1 inhibition to induce MN formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C9-C27, C32-C33, C35-C36, C46, C62 provide background knowledge about MN biology and prior methods. These are well-supported by citations to prior literature and represent accurate summaries of established knowledge in the field. They provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Deep Retina nucleus segmenter frequently missed highly lobulated nuclei, resulting in an image set with higher mean nuclear solidity than bulk Mps1i-treated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 describes a limitation of the Deep Retina segmenter used for nucleus detection. This is documented in Figure 1\u2014figure supplement 2b with quantified solidity measurements. This observation is important for interpreting the downstream analyses, particularly the RNASeq results.",
+    "result_type": "MINOR"
+  }
+]

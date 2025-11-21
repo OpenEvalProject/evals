@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "High-level resistance to cyetpyrafen evolved rapidly in field populations of T. urticae, appearing within three years of pesticide release and becoming geographically widespread across China. Bioassay data show populations transitioned from universally susceptible in 2017-2018 (LC50 1.4-21.6 mg/L) to predominantly resistant by 2021 (8/10 populations with LC50 >1606.2 mg/L), with an 877-fold difference between susceptible and resistant groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25-C32 are strongly supported by comprehensive bioassay data collected longitudinally from 2017-2024 across multiple geographic locations. The temporal progression from universal susceptibility to widespread resistance is well-documented with specific LC50 values and sample sizes. The bimodal distribution and geographic spread patterns are clearly demonstrated in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Laboratory selection for cyetpyrafen resistance produced a 2521-fold increase in LC50 over 66 generations, with high cross-resistance to other SDH inhibitors (21,254-fold for cyenopyrafen, 69,861-fold for cyflumetofen) but weak cross-resistance to complex III inhibitors (2-3-fold). The selected strain (LabR) showed biphasic resistance development with accelerated increase after generation 31.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 are well-supported by laboratory selection experiment data tracking resistance development over multiple generations with specific LC50 measurements. Cross-resistance patterns are documented through bioassays with multiple pesticides. The control strain (LabS) provides appropriate baseline comparison, though the decrease in its LC50 is unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Fifteen target-site mutations were identified in the succinate dehydrogenase genes sdhB (6 mutations on 5 residues) and sdhD (9 mutations on 3 residues), with remarkable diversity including 5 different substitutions at residue R119 of sdhD. All mutations are located at or near the ubiquinone binding site (Q-site) and affect highly conserved residues across animal species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C51-C55, C57 are strongly supported by Sanger sequencing and pool-seq data from 1,268 individuals across 52 populations. The structural modeling (Figure 3c-d) confirms Q-site localization. The conservation analysis across ~700 animal species validates the functional importance of mutated residues. This represents an unprecedented number of mutations for arthropod pest resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C68",
+      "C69"
+    ],
+    "result": "Resistance mutations were absent from 2,317 historical specimens collected before cyetpyrafen release (2013-2018), except for one mutation (A285S) found in a single population that was not detected post-release. This suggests mutations arose through de novo substitutions or from extremely rare standing variation rather than pre-existing at appreciable frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C59, C68-C69 are supported by extensive screening of historical specimens (n=2,317) using both Sanger sequencing and pool-seq. The absence of 14/15 mutations pre-release combined with their rapid appearance post-release provides strong evidence for de novo origin or very rare standing variation. However, the authors appropriately acknowledge this cannot be demonstrated definitively (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C87",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C120",
+      "C122"
+    ],
+    "result": "Identical resistance mutations appeared on multiple different haplotypes across populations, indicating recurrent independent origins rather than spread via migration. Six of ten mutations detected by Sanger sequencing were found on multiple haplotypes, with no instances of multiple resistance mutations within the same haplotype. Recombination is unlikely to explain this pattern given the short time frame and close proximity of mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C84-C89, C120, C122 are well-supported by haplotype network analysis of 844 (sdhB) and 696 (sdhD) individuals. The presence of identical mutations on multiple haplotypes combined with the rarity of populations containing both parental and recombinant haplotypes (only 3/52 populations) argues against recombination. The calculation showing recombination would require 2.5\u00d710^8 effective individuals (C89) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Population Branch Excess (PBE) analysis revealed genetic heterogeneity in selection signals among resistant populations. The laboratory-selected strain showed clear signals at both sdhB and sdhD, while field populations showed variable patterns: 4/10 had signals at sdhB, 1/10 at sdhD, and 5/10 showed no clear signals at either gene. Populations with PBE signals showed corresponding decreases in nucleotide diversity and Tajima's D near SDH genes, but genome-wide diversity was not significantly reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are supported by whole-genome resequencing data from 22 populations analyzed with PBE methodology. The heterogeneity in selection signals is clearly documented in Figure 2b. The lack of genome-wide diversity reduction (p>0.05) indicates no strong bottlenecks. However, the absence of clear signals in 5/10 resistant populations (C46) suggests either incomplete sweeps, soft sweeps from multiple origins, or other resistance mechanisms not captured by this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "TreeMix analysis indicates low migration among populations (best model with 1 migration event explaining minimal additional variance beyond drift model). Populations cluster by geography rather than resistance status. No significant isolation-by-distance was detected for resistance alleles (Mantel test p>0.05 for all years), and geographic distribution patterns suggest multiple evolutionary mechanisms including both migration (e.g., H146Q in adjacent populations) and independent origins (e.g., I260V ubiquitous across populations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 are supported by TreeMix analysis (1000 replicates), Mantel tests, and geographic distribution data. The high variance explained by drift alone (0.930) and non-significant isolation-by-distance patterns support limited migration. However, the interpretation of evolutionary mechanisms (C80) is inferential and could benefit from additional population genetic analyses. The ubiquity of I260V across all post-release populations is notable but could reflect either multiple origins or rapid spread.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Individual mutations showed weak associations with resistance (R\u00b2=0.091-0.303), but multivariate analysis identified three mutations (I260T, I260V, D116G) significantly correlated with resistance (p<0.005). When considering all five common mutations together, strong associations emerged between survival and frequency of predominant allele (R\u00b2=0.707), individuals with any resistant allele (R\u00b2=0.747), and homozygous mutants (R\u00b2=0.606).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 are supported by regression analyses using survival at 1000 mg/L cyetpyrafen as the phenotype. The progression from weak individual mutation effects to strong combined effects is well-documented in Figure 5a-c. However, the analysis is limited to five common mutations and may not capture the full complexity of resistance. The use of survival at a single concentration rather than LC50 values is a practical compromise given high resistance levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Bioassays of homozygous mutant lines demonstrated that single mutations and a combination of two mutations confer high resistance to cyetpyrafen. At 1000 mg/L, susceptible lines showed 100% mortality while all homozygous mutant lines showed <25.2% mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by bioassay data from established homozygous lines (Figure 5d). The large effect sizes are clearly demonstrated. However, the study acknowledges the need for further functional validation using approaches like CRISPR-Cas9. The lines were created by crossing individuals with the same genotype from the same population to minimize background genetic differences, which is appropriate methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Temporal analysis reveals mutations first appeared in 2020 (7 mutations), 2021 (3 mutations), and 2024 (4 mutations). I260V and R119C were most common (65.9% and 46.3% of post-release populations) and became fixed in the laboratory-selected strain (LabR) despite being absent from the source population (ZJXS1). By 2024, resistant haplotype H6 (sdhB) became predominant while previously common susceptible haplotype H3 was nearly lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C90-C95 are supported by temporal sequencing data and haplotype analysis. The progressive appearance of mutations and rapid frequency changes are well-documented in Figures 3e and 4d. The fixation of I260V and R119C in LabR despite absence from source population ZJXS1 (C66-C67) provides strong evidence for de novo origin during selection, though contamination cannot be completely excluded as acknowledged by authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study employed pooled whole-genome resequencing of 22 population samples and Sanger sequencing of 1,268 individuals from 52 populations. Haplotype analysis of 844 (sdhB) and 696 (sdhD) individuals revealed high genetic diversity with 8 SNPs generating 11 haplotypes for sdhB and 11 SNPs generating 24 haplotypes for sdhD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C81-C83 describe the methodological approach and are supported by the Materials and Methods section and Supplementary files. The sample sizes are substantial and appropriate for the analyses conducted. The combination of pool-seq and individual Sanger sequencing provides complementary data, with good correlation between methods (Figure 3\u2014figure supplement 1, R\u00b2=0.947).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Cross-resistance was observed between cyetpyrafen and other SDHi acaricides (cyflumetofen and cyenopyrafen). While these compounds were registered in China before and after cyetpyrafen, they held small market shares compared to cyetpyrafen, which is expected to be the main driver of resistance evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by cross-resistance bioassay data (C36-C37) and market information. However, the relative contributions of different SDHi acaricides to resistance evolution cannot be definitively determined from the data presented, as acknowledged by the authors. The inference that cyetpyrafen is the main contributor (C106) is reasonable given its market dominance and temporal correlation with resistance emergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The 15 mutations on 8 amino acid residues identified in this study represent the highest number of mutations and altered residues ever found in a single pesticide target in arthropod pests, all emerging within a short period. This exceeds previous records including 5-10 mutations in VGSC genes and 29 mutations across 67 weed species for ALS inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by citations to comparative literature and the data presented in this study. The comparison is appropriate and the claim of unprecedented diversity (C110) appears justified based on the cited literature. However, the qualifier \"as far as we know\" appropriately acknowledges potential limitations in literature coverage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Several identified mutations have been previously reported in laboratory-selected or field populations resistant to related SDHi acaricides: I260T in cyflumetofen-resistant populations, I260V (with S56L) in pyflubumide/cyenopyrafen-resistant populations, R119L in both resistant and susceptible strains without validation, and H258Y arising de novo in laboratory selection for pyflubumide/cyenopyrafen resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 are supported by appropriate citations to prior studies (Sugimoto et al., 2020; Maeoka and Osakabe, 2021; Njiru et al., 2023). This contextualizes the current findings within existing literature and demonstrates both novelty (many mutations are new) and consistency (some mutations previously identified) with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Haplotype analysis suggests the two mutations fixed in the laboratory-selected population (LabR) likely arose de novo, and by extension, multiple de novo mutations could have contributed to rapid resistance evolution in field populations. However, contamination during laboratory selection cannot be completely excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by haplotype analysis showing the mutations arose on haplotypes present in the source population. The inference is reasonable but appropriately qualified with acknowledgment of alternative explanations (contamination) and the speculative nature of extending laboratory findings to field populations (C116 uses \"could have\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "An average of 2.7 resistant mutations per population were observed in 2024 samples. Population genetic calculations indicate an effective population size (Ne) of 2.29\u00d710\u2076 would be necessary to generate the observed mutation diversity, which is plausible given TSSM's high reproductive capacity (>100 eggs/female) and short generation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by mutation count data and population genetic calculations using standard theory (\u0398 = 3Ne\u03bc for haplodiploid species). The calculation assumes a mutation rate from Drosophila (2.8\u00d710\u207b\u2079), which is reasonable but not directly measured in TSSM. The biological plausibility argument (C125) is sound given known TSSM life history traits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Laboratory selection studies are unlikely to identify all resistance mutations found in field populations, as demonstrated by QTL mapping studies that identified only a few mutations despite using multiple selected populations. Some laboratory-identified mutations (e.g., H258Y) may have high fitness costs or negative effects on other pesticides, limiting their field relevance. Field population studies are essential for comprehensive understanding of resistance evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 are supported by comparison of mutations found in this study versus prior laboratory studies (citations provided) and by data showing field populations have greater mutational diversity than laboratory strains. The argument about fitness costs and differential selection (C128-C129) is supported by citations. The conclusion about the necessity of field studies (C131) is well-justified by the data and appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Both field and laboratory populations evolved resistance through large-effect alleles, contrary to theoretical expectations that laboratory selection favors polygenic architectures. High-level resistance developed at similar rates in laboratory (33 of 65 generations) and field (3 years) populations. Field populations show evidence of parallel adaptation with multiple allelic options favored by selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by bioassay data from homozygous lines (C133), temporal resistance development data (C134), and haplotype analysis showing multiple mutations across populations (C135). The comparison to theoretical expectations (C132) is appropriately cited. However, the similarity in resistance development rates (C134) should be interpreted cautiously given differences in selection intensity and consistency between lab and field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Identifying candidate genes from genomic signals is difficult when adaptation occurs via soft sweeps, which may be common when effective mutation rate (4Ne\u03bc) >> 0.01. The multiple haplotypes and distinct evolutionary histories of SDH genes suggest soft selective sweeps through recurrent mutation. Incomplete sweeps or selection at other loci may further reduce detection signals, though haplotype-based methods using individual-level data could improve detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by appropriate citations to theoretical literature and by the empirical observation of multiple haplotypes carrying resistance mutations (C139). The interpretation of soft sweeps is consistent with the data showing weak or absent PBE signals in some resistant populations. The suggestion for improved methods (C141) is appropriately speculative and cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "While the study focused on SDH target-site mutations, other genes may contribute to resistance. However, the strong positive associations between SDH mutation frequencies and survival (R\u00b2=0.606-0.747) provide strong evidence that these mutations play a major role in resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 appropriately acknowledge study limitations while defending the main conclusions. The caveat about other potential resistance genes (C142) is important given that 5/10 resistant populations showed no clear selection signals at SDH genes. The defense based on phenotype-genotype associations (C143) is well-supported by the regression analyses in Figure 5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The study demonstrates that rapid pesticide resistance evolution is driven by an unprecedented number of recurrently evolved, population-specific mutations in target genes. These findings reveal complex origins and diverse genetic bases of field resistance, presenting challenges for SNP-specific monitoring but highlighting the value of amplicon and whole-genome sequencing approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 represent the main conclusions and are well-supported by the comprehensive dataset including bioassays, genomic analyses, and haplotype studies. The challenge for SNP-specific monitoring (C146) logically follows from the high mutation diversity. The recommendation for sequencing-based approaches (C147) is justified by the study's success in identifying many mutations that would be missed by targeted SNP assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establish the context of pesticide resistance as a widespread and growing problem since 1914, the challenges in understanding field versus laboratory resistance evolution, and the specific history of TSSM as a highly resistant pest and the development of SDHi acaricides including cyetpyrafen's 2017 release in China.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C24 provide essential background context and are supported by appropriate citations to the literature. These claims establish the scientific and practical importance of the study. The characterization of TSSM as the \"most resistant invertebrate pest worldwide\" (C18) is supported by citations documenting resistance to 11+ acaricide groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "General principles of resistance evolution are discussed: both de novo mutations and standing variation can contribute to resistance depending on the system; resistant alleles can spread via migration or arise independently; and TSSM populations may have strong evolutionary potential for in situ evolution with repeatable evolutionary responses to selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119, C121 synthesize general principles from the literature (appropriately cited) and from this study's findings. The speculation about TSSM's evolutionary potential (C121) is supported by the data showing multiple independent origins and is appropriately qualified as a suspicion rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "Through migration, resistance alleles on different genetic backgrounds may eventually co-occur in the same population to produce a polyallelic basis of adaptation, where particular alleles may not reach high frequencies unless one haplotype is favored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C136 is speculative about future evolutionary dynamics and is appropriately cited to theoretical work (Ralph and Coop, 2010). While consistent with population genetic theory, there is limited direct evidence from this study for this process occurring. The claim is presented as a possibility (\"may eventually\") rather than an observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "In a structural model of human SDH, eight amino acid residues were predicted at the ubiquinone binding site (Q-site), corresponding to specific positions on mite SDH subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by citations to structural studies (Njiru et al., 2022; Du et al., 2023) and by the 3D modeling shown in Figure 3c-d. The use of human SDH structure as a template for understanding mite SDH is standard practice, though the authors note differences exist between species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Logistic regression analysis of selection strength on individual resistance alleles found only I260V showed statistically significant selection (p=0.011).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by statistical analysis of temporal allele frequency data. However, the lack of significance for other alleles may reflect limited statistical power given the short time series and small number of populations, rather than absence of selection. The collective selection coefficient for all alleles was significant (s\u0303 = 0.707, p=0.0007), supporting strong selection overall.",
+    "result_type": "MINOR"
+  }
+]

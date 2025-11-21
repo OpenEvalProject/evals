@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C67",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study utilized the UK Biobank dataset comprising over 3000 phenotypes from ~500,000 participants, though the dataset has limitations including non-random participant selection and missing data points requiring exclusion of some individuals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge these data limitations, stating 'the Biobank data used here are not designed for this current study, so there are many limitations for model development using these data, e.g., missing data points.' They note this is 'a common caveat for human studies and has been discussed by the authors,' indicating acceptance of both the dataset choice and its acknowledged limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C89",
+      "C90",
+      "C101",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The model best predicts chronological age when incorporating data from multiple organ systems, requiring only 9-11 independent components (PLS axes), with the most valuable phenotypes being FVC and blood pressure. Phenotype clusters appeared enriched for specific organ systems.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise this finding, stating 'it was found that this mathematical model can best predict age when all different organ and physiological systems are sampled. This finding makes scenes in general, but can be, and have been, neglected when people use molecular markers to predict age.' The model performance metrics (RMSE 4.8-5.1 years, R\u00b2~0.6-0.63) are not questioned by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C69",
+      "C70",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The \u0394Age parameter (difference between biological and chronological age) shows no correlation with chronological age, predicts mortality equivalently to chronological years, and correlates significantly in longitudinal assessments (R\u00b2~0.56-0.6), despite mortality data not being used in model development.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers describe the results as 'convincing, utilizing comprehensive data-driven approaches' and do not challenge the \u0394Age validation metrics or mortality predictions. The longitudinal correlation data addressing model robustness is implicitly accepted as the reviewers note 'the authors improved the manuscript by adding discussion' of limitations without questioning these validation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C57"
+    ],
+    "result": "\u0394Age shows robust correlation with parental age at death (p<10\u207b\u00b3\u00b9 to 10\u207b\u2076\u2078), with individuals predicted to be biologically younger having parents who lived longer. The genetic correlation between parental mortality GWAS and offspring \u0394Age GWAS was significant.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these findings and describe the overall results as 'convincing.' The parental lifespan correlations serve as validation that the model captures heritable aging components, which aligns with the reviewers' acceptance that the study 'provides a way to identify environmental and genetic factors that impact aging and lifespan.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Education level (qualifications) was the single most significant non-biological parameter correlating with \u0394Age (p<10\u207b\u00b2\u2070\u2070), with each additional education level progressively associated with increased youthfulness. The effect size of education (-1.51) was much greater than wealth (-0.81) or place of birth (-0.13).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers identify this as a novel finding, stating the model reveals 'new factors potentially affecting aging.' The education finding is not challenged and fits within the reviewers' acknowledgment that the study successfully identifies 'environmental and genetic factors that impact aging and lifespan.' The statistical significance and effect sizes are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C63",
+      "C97"
+    ],
+    "result": "Computer gaming frequency was the second strongest behavioral trait associated with \u0394Age, correlating with youthfulness (effect size -2.2, p=4\u00d710\u207b\u2078). This association remained significant when age was factored out and across all dropout models tested, suggesting no specific singular phenotypes are responsible.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly identify this as a novel discovery, stating the study identified 'new factors that may influence human aging, including genes involved in synapse biology and a tendency to play computer games.' The finding is presented as one of the study's contributions without any critique or skepticism from reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C54"
+    ],
+    "result": "GWAS analysis identified 9 loci in males and 25 loci in females associated with \u0394Age (threshold 10\u207b\u2079), with four loci found in both sexes including HLA, NRBF2/JMJD1C/TATDN1P1, APOE/TOMM40/APOC, and CST3. Two loci (APOE and HLA) were previously associated with longevity. Total genetic heritability was ~10-11%, similar to previous longevity estimates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the GWAS findings and describe results as 'convincing.' The identification of known longevity loci (APOE, HLA) serves as validation. Reviewers acknowledge the study 'identified known as well as new factors that may influence human aging,' accepting both the replication of known loci and discovery of novel ones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C96"
+    ],
+    "result": "Gene ontology analysis revealed the top enriched category was modulation of excitatory postsynaptic potential (18-fold enrichment, adjusted p=0.046), comprising multiple genes influencing synaptic function, suggesting the nervous system plays a particularly important role in systemic aging.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly identify this as a novel finding, stating the study identified 'new factors that may influence human aging, including genes involved in synapse biology.' This finding is presented as one of the study's contributions without critique, indicating reviewer acceptance of this unexpected result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "CST3 (cystatin-C) had the most significant association with \u0394Age in the full model (effect size>0.4, p<10\u207b\u2078\u2070), but this association disappeared when kidney clusters were omitted, suggesting cystatin-C is a marker rather than a driver of aging. This aligns with previous Mendelian randomization studies showing cystatin-C levels predict disease but genetic variants do not.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this interpretation or the cluster-dropout analysis methodology. The distinction between markers and drivers is accepted as the reviewers describe the overall approach as utilizing 'comprehensive data-driven approaches' without raising concerns about this specific mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C116"
+    ],
+    "result": "There is no overlap between GWAS results for aging clocks built via different modalities (retina, DNA methylation, physiological functions), but significant genetic overlap exists between phenotypic clocks. The NHANES biological age clock shared 5 loci with UKBB \u0394Age (APOB, PIK3CG, TRIB1, SMARCA4, APOE; overlap significance p<10\u207b\u2078).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not explicitly challenge these cross-cohort comparisons, they identify 'no validation dataset to verify the proposed model' as a key weakness, stating 'It will be super useful and convincing if another biobank dataset containing those 12 traits can be applied to the current model.' The NHANES comparison provides partial validation but does not fully address the reviewers' call for external validation of the complete model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Measuring human biological age using 12 simple but diverse physiological measurements captures approximately 87% of the full \u0394Age model and might have actuarial and clinical value.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers specifically identify the lack of external validation as a weakness, stating 'the authors suggested that human biological age can be predicted with a high accuracy using 12 simple physiological measurements. It will be super useful and convincing if another biobank dataset containing those 12 traits can be applied to the current model.' This indicates the claim requires additional validation before being fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Three modeling approaches (PLS, GBM, linear regression) yielded very similar results, with PLS and linear regression nearly identical (R\u00b2=0.99) and GBM slightly lower correlation (R\u00b2=0.87), likely due to imputation requirements. Top genetic loci were consistent across all models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the methodological comparisons or robustness checks. The consistency across methods strengthens confidence in findings, and reviewers describe the overall approach as utilizing 'comprehensive data-driven approaches' without raising concerns about model selection or validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C40",
+      "C25",
+      "C26"
+    ],
+    "result": "Environmental and lifestyle factors showed expected correlations with \u0394Age: wealth positively correlated with youthfulness, smoking with older biological age, beer/cider consumption positively correlated while champagne/white wine negatively correlated, TV watching positively correlated while outdoor time (males) and DIY projects (females) correlated with younger \u0394Age.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these environmental associations and note the study 'provides a way to identify environmental and genetic factors impacting aging and lifespan, revealing new factors potentially affecting aging.' The consistency with known associations (wealth, smoking) validates the model while novel associations (specific alcohol types, activities) are accepted as new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Particulate air pollution (pm10) is associated with older biological age (p=1.6\u00d710\u207b\u2079), but when lung parameters are omitted from the model, the correlation drops below statistical significance (p=5\u00d710\u207b\u00b3), suggesting pollution mostly affects pulmonary health rather than global organismal aging.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the cluster-dropout analysis approach or this specific mechanistic interpretation. The methodology for distinguishing organ-specific from systemic effects is implicitly accepted as part of the 'comprehensive data-driven approaches' praised by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "GWAS of forced vital capacity (FVC) showed strong genetic correlation with \u0394Age (0.49\u00b10.02, p=5\u00d710\u207b\u2076\u2075), while blood creatinine levels, despite being used in \u0394Age derivation, showed no genetic correlation (0.1\u00b10.07, p=0.1).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these genetic correlation analyses. The finding that some input phenotypes show genetic correlation while others do not is consistent with the distinction between markers and drivers of aging, which reviewers implicitly accept through their overall positive assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C115"
+    ],
+    "result": "APOE genotype influences \u0394Age at all ages, even as young as 40 years, perhaps due to its effects on lipid homeostasis or inflammation, though APOE4 individuals generally die prematurely of Alzheimer's disease.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the APOE findings. The identification of APOE as a significant locus is consistent with previous longevity studies, which reviewers implicitly accept by describing the results as 'convincing' and noting the study identified 'known as well as new factors.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C27",
+      "C28"
+    ],
+    "result": "Individual physiological measures show expected age-related changes: systolic blood pressure increases with age, hand-grip strength decreases with age, and heel bone density and thalamus volume both show strong associations with \u0394Age (p~10\u207b\u00b9\u2070 to 10\u207b\u00b9\u00b9).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these basic physiological relationships, which serve as validation that the model captures known aging biology. These findings are consistent with the reviewers' assessment that results are 'convincing' and the approach is 'comprehensive.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C24",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Background context on aging research: previous studies focused on lifespan measures, DNA methylation clocks, and specific organ aging; known loci like APOE and HLA are associated with longevity; aging has both genetic and environmental determinants including smoking and exercise.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are contextual claims citing previous literature that reviewers do not challenge. They serve to position the current study within the field and are implicitly accepted as accurate representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The model assumes that the rate of aging is constant for each individual, which is not always true.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this limitation, noting 'there are many limitations for model development using these data' and that 'This is a common caveat for human studies and has been discussed by the authors.' The assumption is accepted as a reasonable modeling choice given data constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "In the UKBB dataset, 8883 males and 5668 females died within 5 years of initial attendance, with mortality rates following a Gompertzian pattern (doubling every 7.7 years).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these mortality statistics or the Gompertzian analysis. These descriptive statistics support the mortality validation of \u0394Age and are implicitly accepted as part of the 'convincing' results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2442 @@
+{
+  "submission": {
+    "id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:39:49.360792Z",
+    "updated_at": "2025-11-21T17:39:49.360792Z"
+  },
+  "content": [
+    {
+      "id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "content_type": "manuscript",
+      "content_text": "# Confirmation of HLA-II associations with TB susceptibility in admixed African samples\n\n## Authors\n\n- Dayna Adrienne Croock<sup>1</sup> ([ORCID: 0000-0002-5107-8006](https://orcid.org/0000-0002-5107-8006))\n- Yolandi Swart<sup>1</sup>\n- Haiko Schurz<sup>1</sup> ([ORCID: 0000-0002-0009-3409](https://orcid.org/0000-0002-0009-3409))\n- Desiree C Petersen<sup>1</sup> ([ORCID: 0000-0002-0817-2574](https://orcid.org/0000-0002-0817-2574))\n- Marlo M\u00f6ller<sup>1</sup> ([ORCID: 0000-0002-0805-6741](https://orcid.org/0000-0002-0805-6741))\n- Caitlin Uren<sup>1</sup> ([ORCID: 0000-0003-2358-0135](https://orcid.org/0000-0003-2358-0135)) \u2020\n\n### Affiliations\n\n1. DSI-NRF Centre of Excellence for Biomedical Tuberculosis Research, South African Medical Research Council Centre for Tuberculosis Research, Division of Molecular Biology and Human Genetics, Faculty of Medicine and Health Sciences, Stellenbosch University Stellenbosch South Africa ([ROR:05bk57929](https://ror.org/05bk57929))\n2. Centre for Bioinformatics and Computational Biology, Stellenbosch University Stellenbosch South Africa ([ROR:05bk57929](https://ror.org/05bk57929))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreviously, the International Tuberculosis Host Genetics Consortium (ITHGC) demonstrated the power of large-scale GWAS analysis across diverse ancestries in identifying tuberculosis (TB) susceptibility loci (Schurz et al., 2024). Despite identifying a significant genetic correlate in the human leukocyte antigen (HLA)-II region, this association did not replicate in the African ancestry-specific analysis, due to small sample size and the inclusion of admixed samples. Our study aimed to build upon the findings from the ITHGC and identify TB susceptibility loci in an admixed South African cohort using the local ancestry allelic adjusted association (LAAA) model. We identified a suggestive association peak (rs3117230, p-value = 5.292 \u00d7 10-6, OR = 0.437, SE = 0.182) in the HLA-DPB1 gene originating from KhoeSan ancestry. These findings extend the work of the ITHGC, underscore the need for innovative strategies in studying complex admixed populations, and confirm the role of the HLA-II region in TB susceptibility in admixed South African samples.\n\n## Introduction\n\nTuberculosis (TB) is a communicable disease caused by Mycobacterium tuberculosis (M.tb) (World Health Organization, 2023). M.tb infection has a wide range of clinical manifestations from asymptomatic, non-transmissible, or so-called \u2018latent\u2019, infections to active TB (Zaidi et al., 2023). Approximately 1/4 of the global population is infected with M.tb, but only 5\u201315% of infected individuals will develop active TB (Menzies et al., 2021). Several factors increase the risk of progressing to active TB, including co-infection with HIV and comorbidities, such as diabetes mellitus, asthma and other airway and lung diseases (Glaziou et al., 2018). Socio-economic factors including smoking, malnutrition, alcohol abuse, intravenous drug use, prolonged residence in a high burdened community, overcrowding, informal housing and poor sanitation also influence M.tb transmission and infection (Cudahy et al., 2020; Escombe et al., 2019; Laghari et al., 2019; Matose et al., 2019; Smith et al., 2023). Additionally, individual variability in infection and disease progression has been attributed to variation in the host genome (Schurz et al., 2024; Uren et al., 2020; Verhein et al., 2018; Uren et al., 2021). Numerous genome-wide association studies (GWASs) investigating TB susceptibility have been conducted across different population groups. However, findings from these studies often do not replicate across population groups (M\u00f6ller and Kinnear, 2020; M\u00f6ller et al., 2018; Uren et al., 2017). This lack of replication could be caused by small sample sizes, variation in phenotype definitions among studies, variation in linkage disequilibrium (LD) patterns across different population groups and the presence of population-specific effects (M\u00f6ller and Kinnear, 2020). Additionally, complex LD patterns within population groups, produced by admixture, impede the detection of statistically significant loci when using traditional GWAS methods (Swart et al., 2020).\n\nThe International Tuberculosis Host Genetics Consortium (ITHGC) performed a meta-analysis of TB GWAS results including 14 153 TB cases and 19 536 controls of African, Asian and European ancestries (Schurz et al., 2024). The multi-ancestry meta-analysis identified one genome-wide significant variant (rs28383206) in the human leukocyte antigen (HLA)-II region (p=5.2 x 10\u20139, OR = 0.89, 95% CI=0.84\u20130.95). The association peak at the HLA-II locus encompassed several genes encoding crucial antigen presentation proteins (including HLA-DR and HLA-DQ). While ancestry-specific association analyses in the European and Asian cohorts also produced suggestive peaks in the HLA-II region, the African ancestry-specific association test did not yield any significant associations or suggestive peaks. The authors described possible reasons for the lack of associations, including the smaller sample size compared to the other ancestry-specific meta-analyses, increased genetic diversity within African individuals and population stratification produced by two admixed cohorts from the South African Coloured (SAC) population (Schurz et al., 2024). The SAC population (as termed in the South African census Lehohla, 2012) forms part of a multi-way (up to five-way) admixed population with ancestral contributions from Bantu-speaking African (~30%), KhoeSan (~30%), European (~20%), and East (~10%) and Southeast Asian (~10%) populations (Chimusa et al., 2013). The diverse genetic background of admixed individuals can lead to population stratification, potentially introducing confounding variables. However, the power to detect statistically significant loci in admixed populations can be improved by leveraging admixture-induced local ancestry (Swart et al., 2021; Swart et al., 2022a). Since previous computational algorithms did not include local ancestry as a covariate for GWASs, the local ancestry allelic adjusted association model (LAAA) was developed to overcome this limitation (Duan et al., 2018). The LAAA model identifies ancestry-specific alleles associated with the phenotype by including the minor alleles and the corresponding ancestry of the minor alleles (obtained by local ancestry inference) as covariates. The LAAA model has been successfully applied in a cohort of multi-way admixed SAC individuals to identify novel variants associated with TB susceptibility (Swart et al., 2021; Swart et al., 2022b).\n\nOur study builds upon the findings from the ITHGC (Schurz et al., 2024) and aims to resolve the challenges faced in African ancestry-specific association analysis. Here, we explore host genetic correlates of TB in a complex admixed SAC population using the LAAA model.\n\n## Results\n\n### Global and local ancestry inference\n\nAfter close inspection of global ancestry proportions generated using ADMIXTURE, the K number of contributing ancestries (the lowest k-value determined through cross-validation) was K=3 for the Xhosa individuals and K=5 for the SAC individuals (Figure 1). This is consistent with previous global ancestry deconvolution results (Chimusa et al., 2014; Choudhury et al., 2021). It is evident that our cohort is a complex, highly admixed group with ancestral contributions from the indigenous KhoeSan (~22\u201330%), Bantu-speaking African (~30\u201372%), European (~5\u201324%), Southeast Asian (~11%), and East Asian (~5%) population groups.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99200/elife-99200-fig1-v1.jpg)\n\n**Figure 1.:** Ancestral proportions for each individual are plotted vertically with different colours representing different contributing ancestries.\n\nLocal ancestry was estimated for all individuals. Admixture between geographically distinct populations creates complex ancestral and admixture-induced LD blocks, which can be visualised using local ancestry karyograms. Figure 2 shows karyograms for three individuals from the merged dataset. It is evident that, despite individuals being from the same population group, each possesses unique patterns of local ancestry arising from differing numbers and lengths of ancestral segments.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99200/elife-99200-fig2-v1.jpg)\n\n**Figure 2.:** Each admixed individual (A, B and C) has unique local ancestry patterns generated by admixture among geographically distinct ancestral population groups.\n\n### Local ancestry-allelic adjusted analysis\n\nLAAA models were successfully applied for all five contributing ancestries (KhoeSan, Bantu-speaking African, European, East Asian and Southeast Asian). However, no variants passed the threshold for statistical significance. Although no variants reached genome-wide significance, a suggestive peak was identified in the HLA-II region of chromosome 6 when using the LAAA model and adjusting for KhoeSan ancestry (Figure 3). The QQ-plot suggested minimal genomic inflation, which was verified by calculating the genomic inflation factor (\u03bb=1.05289; Figure 3\u2014figure supplement 1). The lead variants identified using the LAAA model whilst adjusting for KhoeSan ancestry in this region on chromosome 6 are summarised in Table 1. The suggestive peak encompasses the HLA-DPA1/B1 (major histocompatibility complex, class II, DP alpha 1/beta 1) genes (Figure 4). It is noteworthy that without the LAAA model, this suggestive peak would not have been observed for this cohort. This highlights the importance of utilising the LAAA model in future association studies when investigating disease susceptibility loci in admixed individuals, such as the SAC population.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99200/elife-99200-fig3-v1.jpg)\n\n**Figure 3.:** The thresholds for genome-wide significance (p-value = 5 x 10\u20138) and suggestive significance (p-value = 1 x 10\u20135) and the significance threshold for admixture mapping (p-value = 2.5 x 10\u20136) are shown. The four different models are represented in black (global ancestry only - GAO), blue (local ancestry effect - LAO), orange (ancestry plus allelic effect - APA), and pink (local ancestry adjusted allelic effect - LAAA).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99200/elife-99200-fig3-figsupp1-v1.jpg)\n\n**Table 1.**\n Suggestive associations (p-value <1e\u20135) for the LAAA analysis adjusting for KhoeSan local ancestry on chromosome 6.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Position</th>\n      <th>Marker name</th>\n      <th>Ref</th>\n      <th>Alt</th>\n      <th>AltFreq</th>\n      <th>OR (95% CI)</th>\n      <th>SE</th>\n      <th>p-value (x10\u20136)</th>\n      <th>Gene</th>\n      <th>Location</th>\n      <th>Imputed/typed</th>\n      <th>INFO score</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>33075635</td>\n      <td>rs3117230</td>\n      <td>A</td>\n      <td>G</td>\n      <td>0.370</td>\n      <td>0.437 (0.306; 0.624)</td>\n      <td>0.182</td>\n      <td>5.292</td>\n      <td>HLA-DPB1</td>\n      <td>Intergenic</td>\n      <td>Genotyped</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>33048661</td>\n      <td>rs1042151</td>\n      <td>A</td>\n      <td>G</td>\n      <td>0.325</td>\n      <td>0.437 (0.305; 0.627)</td>\n      <td>0.184</td>\n      <td>6.806</td>\n      <td>HLA-DPB1</td>\n      <td>Exonic</td>\n      <td>Imputed</td>\n      <td>0.992</td>\n    </tr>\n    <tr>\n      <td>33058874</td>\n      <td>rs2179920</td>\n      <td>C</td>\n      <td>T</td>\n      <td>0.369</td>\n      <td>0.445 (0.313; 0.633)</td>\n      <td>0.180</td>\n      <td>6.960</td>\n      <td>HLA-DPB1</td>\n      <td>Intergenic</td>\n      <td>Genotyped</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>33072266</td>\n      <td>rs2064478</td>\n      <td>C</td>\n      <td>T</td>\n      <td>0.371</td>\n      <td>0.447 (0.313; 0.637)</td>\n      <td>0.181</td>\n      <td>8.222</td>\n      <td>HLA-DPB1</td>\n      <td>Intergenic</td>\n      <td>Imputed</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>33072729</td>\n      <td>rs3130210</td>\n      <td>G</td>\n      <td>T</td>\n      <td>0.371</td>\n      <td>0.447 (0.313; 0.637)</td>\n      <td>0.181</td>\n      <td>8.222</td>\n      <td>HLA-DPB1</td>\n      <td>Intergenic</td>\n      <td>Imputed</td>\n      <td>0.999</td>\n    </tr>\n    <tr>\n      <td>33073440</td>\n      <td>rs2064475</td>\n      <td>G</td>\n      <td>A</td>\n      <td>0.371</td>\n      <td>0.447 (0.313; 0.637)</td>\n      <td>0.181</td>\n      <td>8.222</td>\n      <td>HLA-DPB1</td>\n      <td>Intergenic</td>\n      <td>Imputed</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>33074348</td>\n      <td>rs3117233</td>\n      <td>T</td>\n      <td>C</td>\n      <td>0.371</td>\n      <td>0.447 (0.313; 0.637)</td>\n      <td>0.181</td>\n      <td>8.222</td>\n      <td>HLA-DPB1</td>\n      <td>Intergenic</td>\n      <td>Imputed</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>33074707</td>\n      <td>rs3130213</td>\n      <td>G</td>\n      <td>A</td>\n      <td>0.371</td>\n      <td>0.447 (0.313; 0.637)</td>\n      <td>0.181</td>\n      <td>8.222</td>\n      <td>HLA-DPB1</td>\n      <td>Intergenic</td>\n      <td>Imputed</td>\n      <td>0.970</td>\n    </tr>\n  </tbody>\n</table>\n\n_Ref, reference allele; Alt, alternate allele; AltFreq, alternate allele frequency; OR, odds ratio; SE, standard error._\n\n![Figure 4.](https://cdn.elifesciences.org/articles/99200/elife-99200-fig4-v1.jpg)\n\n**Figure 4.:** SNPs in linkage disequilibrium (LD) with the lead variant are coloured red/orange. The lead variant is indicated in purple. Functional protein-coding genes are coded in red and non-functional (pseudo-genes) are indicated in black.\n\nThe lead variant within this suggestive peak lies within COL11A2P1 (collagen type X1 alpha 2 pseudogene 1). COL11A2P1 is an unprocessed pseudogene (ENSG00000228688). Unprocessed pseudogenes are seldom transcribed and translated into functional proteins (Witek and Mohiuddin, 2024). HLA-DPB1 and HLA-DPA1 are the closest functional protein-coding genes to our lead variants. The lead variant identified in the ITHGC meta-analysis, rs28383206, was not present in our genotype or imputed datasets. The ITHGC imputed genotypes using the 1000 Genomes (1000 G) reference panel (Schurz et al., 2024). The lead variant, rs28383206, has an alternate allele frequency of 11.26% in the African population subgroup within the 1000 G dataset (https://www.ncbi.nlm.nih.gov/snp/rs28383206). However, rs28383206 is absent from our in-house whole-genome sequencing (WGS) datasets, which include Bantu-speaking African and KhoeSan individuals. This absence suggests that rs28383206 might not have been imputed in our datasets using the AGR reference panel, potentially due to its low alternate allele frequency in southern African populations. Our merged dataset contained two variants located within 800 base pairs of rs28383206: rs482205 (6:32576009) and rs482162 (6:32576019). However, these variants were not significantly associated with TB status in our cohort (Supplementary file 1).\n\n## Discussion\n\nThe LAAA analysis of host genetic susceptibility to TB, involving 942 TB cases and 592 controls, identified one suggestive association peak adjusting for KhoeSan local ancestry. The association peak identified in this study encompasses the HLA-DPB1 gene, a highly polymorphic locus, with over 2000 documented allelic variants (Robinson et al., 2020). This association is noteworthy given that HLA-DPB1 alleles have been associated with TB resistance (Dawkins et al., 2022; Ravikumar et al., 1999; Selvaraj et al., 2008). The direction of effect of the lead variants in our study (Table 1) similarly suggests a protective effect against developing active TB. However, variants in HLA-DPB1 were not identified in the ITHGC meta-analysis.\n\nThe ITHGC did not identify any significant associations or suggestive peaks in their African ancestry-specific analyses. Notably, the suggestive peak in the HLA-DPB1 region was only captured in our cohort using the LAAA model whilst adjusting for KhoeSan local ancestry. This underscores the importance of incorporating global and local ancestry in association studies investigating complex multi-way admixed individuals, as the genetic heterogeneity present in admixed individuals (produced as a result of admixture-induced and ancestral LD patterns) may cause association signals to be missed when using traditional association models (Duan et al., 2018; Swart et al., 2022b).\n\nWe did not replicate the significant association signal in HLA-DRB1 identified by the ITHGC. However, the ITHGC also did not replicate this association in their own African ancestry-specific analysis. The significant association, rs28383206, identified by the ITHGC meta-analysis appears to be tagging the HLA-DQA1*02:1 allele, which is associated with TB in Icelandic and Asian populations (Li et al., 2021; Sveinbjornsson et al., 2016; Zheng et al., 2018). It is possible that this association signal is specific to non-African populations, but additional research is required to verify this hypothesis. Both our study and the ITHGC independently pinpointed variants associated with TB susceptibility in different genes within the HLA-II locus (Figure 5). The HLA-II region spans ~0.8 Mb on chromosome 6p21.32 and encompasses the HLA-DP, -DR, and -DQ alpha and beta chain genes. The HLA-II complex is the human form of the major histocompatibility complex class II (MHC-II) proteins on the surface of antigen presenting cells, such as monocytes, dendritic cells and macrophages. The innate immune response against M.tb involves phagocytosis by alveolar macrophages. In the phagosome, mycobacterial antigens are processed for presentation on MHC-II on the surface of the antigen presenting cell. Previous studies have suggested that M.tb interferes with the MHC-II pathway to enhance intracellular persistence and delay activation of the adaptive immune response (Oliveira-Cortez et al., 2016). For example, M.tb can inhibit phagosome maturation and acidification, thereby limiting antigen processing and presentation on MHC-II molecules (Chang et al., 2005). Given that MHC-II plays an essential role in the adaptive immune response to TB and numerous studies have identified HLA-II variants associated with TB (Cai et al., 2019; Chihab et al., 2023;\u2005de\u2005de S\u00e1 et al., 2020; Harishankar et al., 2018; Schurz et al., 2024; Selvaraj et al., 2008), additional research is required to elucidate the effects of HLA-II variation on TB risk status.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/99200/elife-99200-fig5-v1.jpg)\n\n**Figure 5.:** Genes in red were identified by the ITHGC. Genes in blue were identified by this study.\n\nThis analysis has a few limitations. First, unlike the ITHGC manuscript, we did not validate our SNP peak in the HLA-II region through fine mapping. Although we initially considered performing HLA imputation and fine-mapping using the HIBAG R package, as described in the ITHGC article (https://hibag.s3.amazonaws.com/hlares_index.html#estimates), the African HIBAG model was trained on genotype data from African American and HapMap YRI populations, which have minimal to no KhoeSan ancestry. Since our association peak likely originates from KhoeSan ancestral haplotype blocks, using an imputation reference panel that includes individuals with KhoeSan ancestry is essential to this analysis. We acknowledge that HLA typing could validate the importance of our lead SNPs in the HLA-II region and support the LAAA model, but this was not feasible due to the absence of a suitable reference panel that includes KhoeSan ancestry. Second, our analysis has a notable case-control imbalance (cases/controls = 1.610). While many studies discuss methods for addressing case-control imbalances with more controls than cases which can inflate type 1 error rates (Dai et al., 2021; \u00d6ztornaci et al., 2023; Zhou et al., 2018), few address the implications of a large case-to-control ratio like ours (952 cases to 592 controls). To assess the impact of this imbalance, we used the Michigan genetic association study (GAS) power calculator (Skol et al., 2006). Under an additive disease model with an estimated prevalence of 0.15, a disease allele frequency of 0.3, a genotype relative risk of 1.5, and a default significance level of 7\u00d710\u207b\u2076, we achieved an expected power of approximately 75%. With a balanced sample size of 950 cases and 950 controls, power would exceed 90%, but it would drop significantly with a smaller balanced cohort of 590 cases and 590 controls. Given these results, we proceeded with our analysis to maximise statistical power despite the case-control imbalance.\n\nIn conclusion, the application of the LAAA to a highly admixed SAC cohort revealed a suggestive association signal in the HLA-II region associated with protection against TB that was not identified by the African-ancestry specific analysis performed by the ITHGC. Our study builds on the results of the ITHGC by demonstrating an alternative method to identify association signals in cohorts with complex genetic ancestry. This analysis shows the value of including individual global and local ancestry in genetic association analyses. Furthermore, we confirm HLA-II loci associations with TB susceptibility in an admixed South African population, highlighting the role of the adaptive immune system in TB susceptibility and resistance.\n\n## Materials and methods\n\n### Data\n\nThis study included the two SAC admixed datasets from the ITHGC analysis [RSA(A) and RSA(M)] as well as four additional TB case-control datasets obtained from admixed South African population groups (Table 2). Like the SAC population, the Xhosa population is admixed with Bantu-speaking African and KhoeSan ancestral contributions (Choudhury et al., 2021). All datasets were collected over the past 30 years under different research projects (Daya et al., 2013; Kroon et al., 2020; Schurz et al., 2018; Smith et al., 2023; Ugarte-Gil et al., 2020) and individuals that were included in the analyses consented to the use of their data in future research regarding TB host genetics. Across all datasets, TB cases were bacteriologically confirmed (culture positive) or diagnosed by GeneXpert. Controls were healthy individuals with no history of TB disease or treatment. However, given the high prevalence of TB in South Africa 852 cases (95% CI 679\u20131026) per 10,000 individuals 15 years and older (Cudahy et al., 2020), most controls have likely been exposed to M.tb at some point (Gallant et al., 2010). For all datasets, cases and controls were obtained from the same community and thus share similar socio-economic status and health care access.\n\n**Table 2.**\n Summary of the datasets included in analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset</th>\n      <th>Genotyping platform</th>\n      <th>Self-reported ethnicity</th>\n      <th>Cases/controls</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RSA(A)</td>\n      <td>Affymetrix 500 k</td>\n      <td>SAC</td>\n      <td>642/91</td>\n      <td>Daya et al., 2013</td>\n    </tr>\n    <tr>\n      <td>RSA(M)</td>\n      <td>MEGA array 1.1 M</td>\n      <td>SAC</td>\n      <td>555/440</td>\n      <td>Schurz et al., 2018; Swart et al., 2021</td>\n    </tr>\n    <tr>\n      <td>RSA(TANDEM)</td>\n      <td>H3Africa array</td>\n      <td>SAC and Bantu-speaking African</td>\n      <td>161/133</td>\n      <td>Swart et al., 2022b</td>\n    </tr>\n    <tr>\n      <td>RSA(NCTB)</td>\n      <td>H3Africa array</td>\n      <td>SAC</td>\n      <td>49/111</td>\n      <td>Oyageshio et al., 2023</td>\n    </tr>\n    <tr>\n      <td>RSA(Worcester)</td>\n      <td>H3Africa array</td>\n      <td>SAC</td>\n      <td>61 cases</td>\n      <td>Unpublished</td>\n    </tr>\n    <tr>\n      <td>RSA(Xhosa)</td>\n      <td>Whole genome sequencing</td>\n      <td>IsiXhosa</td>\n      <td>44/120</td>\n      <td>Unpublished</td>\n    </tr>\n  </tbody>\n</table>\n\nA list of sites genotyped on the Infinium H3Africa array (https://chipinfo.h3abionet.org/browse) was extracted from the whole-genome sequenced [RSA(Xhosa)] dataset and treated as genotype data in subsequent analyses. Quality control (QC) of raw genotype data was performed using PLINK v1.9 (Purcell et al., 2007). In all datasets, individuals were screened for sex concordance and discordant sex information was corrected based on X chromosome homozygosity estimates (Festimate <0.2 for females and Festimate >0.8 for males). In the event that sex information could not be corrected based on homozygosity estimates, individuals with missing or discordant sex information were removed. Individuals with genotype call rates less than 90% and SNPs with more than 5% missingness were removed as described previously (Swart et al., 2021). Monomorphic sites were removed. Individuals were screened for deviations in Hardy-Weinberg Equilibrium (HWE) for each SNP, and sites deviating from the HWE threshold of 10\u20135 were removed. Sex chromosomes were excluded from the analysis. The genome coordinates across all datasets were checked for consistency and, if necessary, converted to GRCh37 using the UCSC liftOver tool (Kuhn et al., 2013). The number of individuals and variants remaining after genotype QC is shown in Supplementary file 2.\n\nGenotype datasets were pre-phased using SHAPEIT v2 (Delaneau et al., 2013) and imputed using the Positional Burrows-Wheeler Transformation (PBWT) algorithm through the Sanger Imputation Server (SIS; Durbin, 2014). The African Genome Resource (AGR) panel (n=4956), accessed via the SIS, was used as the reference panel for imputation (Gurdasani et al., 2015) since it has been shown that the AGR is the best reference panel for imputation of missing genotypes for samples from the SAC population (Schurz et al., 2019). Imputed data were filtered to remove sites with imputation quality INFO scores less than 0.95. Individual datasets were screened for relatedness using KING software (Manichaikul et al., 2010) and individuals up to second degree relatedness were removed. A total of 7,544,769 markers overlapped across all six datasets. This list of intersecting markers was extracted from each dataset using the PLINK --extract flag. The datasets were then merged using the PLINK v1.9. After merging, all individuals missing more than 10% genotypes were removed, markers with more than 5% missing data were excluded and a HWE filter was applied to controls (threshold <10\u20135). The merged dataset was screened for relatedness using KING, and individuals up to second degree relatedness were subsequently removed. The final merged dataset after QC and data filtering (including the removal of related individuals) consisted of 1 544 individuals (952 TB cases and 592 healthy controls). A total of 7,510,057 variants passed QC and filtering parameters.\n\n### Global ancestry inference\n\nADMIXTURE was used to determine the correct number of contributing ancestral proportions in our multi-way admixed population cohort (Alexander and Lange, 2011). ADMIXTURE estimates the number of contributing ancestral populations (denoted by K) and population allele frequencies through cross-validation (CV). All 1544 individuals were grouped into running groups of equal size together with 191 reference populations (Table 3). Running groups were created to ensure approximately equal numbers of reference populations and admixed populations. Xhosa and SAC samples were divided into separate running groups.\n\n**Table 3.**\n Ancestral populations included for global ancestry deconvolution.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Population</th>\n      <th>n</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>European (British \u2013 GBR)</td>\n      <td>40</td>\n      <td>1000 Genomes (1000 G) phase 3 (Auton et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>East Asian (Chinese \u2013 CHB)</td>\n      <td>40</td>\n      <td>1000 G phase 3</td>\n    </tr>\n    <tr>\n      <td>Bantu-speaking African (Yoruba \u2013 YRI)</td>\n      <td>40</td>\n      <td>1000 G phase 3</td>\n    </tr>\n    <tr>\n      <td>Southeast Asian (Malaysian)</td>\n      <td>38</td>\n      <td>Singapore Sequencing Malay Project (SSMP) (Wong et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>KhoeSan (Nama)</td>\n      <td>33</td>\n      <td>African Genome Variation Project (AGVP/ADRP) (Gurdasani et al., 2015)</td>\n    </tr>\n  </tbody>\n</table>\n\nRedundant SNPs were removed by PLINK through LD pruning by removing each SNP with LD r2 >0.1 within a 50-SNP sliding window (advanced by 10 SNPs at a time). Ancestral proportions were inferred in an unsupervised manner for K=3\u20136 (1 iteration). The best value of K for the data was selected by choosing the K value with the lowest CV error across all running groups. Ten iterations of K=3 and K=5 were run for the Xhosa and SAC individuals respectively. Since it has been shown that RFMix (Maples et al., 2013) outperforms ADMIXTURE in determining global ancestry proportions (Uren et al., 2020), RFMix was also used to refine inferred global ancestry proportions. Global ancestral proportions were visualised using PONG (Behr et al., 2016).\n\n### Local ancestry inference\n\nThe merged dataset and the reference file (containing reference populations from Table 3) were phased separately using SHAPEIT2. The local ancestry for each position in the genome was inferred using RFMix (Maples et al., 2013). Default parameters were used, but the number of generations since admixture was set to 15 for the SAC individuals and 20 for the Xhosa individuals (as determined by previous studies) (Uren et al., 2016). RFMix was run with three expectation maximisation iterations and the --reanalyse-reference flag.\n\n### Batch effect screening and correction\n\nMerging separate datasets generated at different timepoints and/or facilities, as we have done here, will undoubtedly introduce batch effects. Principal component analysis (PCA) is a common method used to visualise batch effects, where the first two principal components (PCs) are plotted with each sample coloured by batch, and a separation of colours is indicative of a batch effect (Nyamundanda et al., 2017). However, it is difficult to differentiate between separation caused by population structure and separation caused by batch effect using PCA alone. An alternative method to detect batch effects (Chen et al., 2022) involves coding case/control status by batch, followed by running an association analysis testing each batch against all other batches. If any single dataset has more positive signals compared to the other datasets, then batch effects may be responsible for producing spurious results. Batch effects can be resolved by removing those SNPs which pass the genome-wide significance threshold from the merged dataset. We have adapted this batch effect correction method for application in a highly admixed cohort with complex population structure (Croock et al., 2024). Code required to execute batch effect correction procedures is publicly available (https://github.com/TBHostGenetics/data_harmonisation, copy archived at Croock, 2025). Our modified method was used to remove 36 627 SNPs affected by batch effects from our merged dataset.\n\n### Local ancestry allelic adjusted association analysis\n\nThe LAAA association model was used to investigate if there are allelic, ancestry-specific or ancestry-specific allelic associations with TB susceptibility in our merged dataset. Global ancestral components inferred by RFMix, age and sex were included as covariates in the association tests (Supplementary file 3). Variants with minor allele frequency (MAF) <1% were removed to improve the stability of the association tests. A total of 784,557 autosomal markers (with MAF >1%) and 1544 unrelated individuals (952 TB cases and 592 healthy controls) were available for further analyses. Of the markers included in the final dataset, 535,193 sites were imputed. Dosage files, which code the number of alleles of a specific ancestry at each locus across the genome, were compiled. Separate regression models for each ancestral contribution were fitted to investigate which ancestral contribution is associated with TB susceptibility. Code required to execute the LAAA model is publicly available (https://github.com/TBHostGenetics/LAAA-model, copy archived at Swart, 2025). Details regarding the models have been described elsewhere (Swart et al., 2022b); but in summary, four regression models were tested to detect the source of the association signals observed:\n\n### (1) Null model or global ancestry (GA) model\n\nThe null model only includes global ancestry, sex and age covariates. This test investigates whether an additive allelic dose exerts an effect on the phenotype (without including local ancestry of the allele).\n\n### (2) Local ancestry (LA) model\n\nThis model is used in admixture mapping to identify ancestry-specific variants associated with a specific phenotype. The LA model evaluates the number of alleles of a specific ancestry at a locus and includes the corresponding marginal effect as a covariate in association analyses.\n\n### (3) Ancestry plus allelic (APA) model\n\nThe APA model simultaneously performs model (1) and (2). This model tests whether an additive allelic dose exerts an effect on the phenotype whilst adjusting for local ancestry.\n\n### (4) Local ancestry adjusted allelic (LAAA) model\n\nThe LAAA model is an extension of the APA model, which models the combination of the minor allele and ancestry of the minor allele at a specific locus and the effect this interaction has on the phenotype.\n\nThe R package STEAM (Significance Threshold Estimation for Admixture Mapping; Grinde et al., 2019) was used to determine the admixture mapping significance threshold given the global ancestral proportions of each individual and the number of generations since admixture (g=15). For the LA model, a genome-wide significance threshold of p-value <2.5 x 10\u20136 was deemed significant by STEAM. The traditional genome-wide significance threshold of 5x10\u20138 was used for the GA, APA and LAAA models, as recommended by the authors of the LAAA model (Duan et al., 2018). Results from the analysis performed on chromosome 6 whilst adjusting for KhoeSan ancestry are documented in Supplementary file 4.\n",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99200.4.sa0](https://doi.org/10.7554/eLife.99200.4.sa0)\n\nThis valuable study confirms the association between the human leukocyte antigen (HLA)-II region and tuberculosis (TB) susceptibility in genetically admixed South African populations, specifically identifying a near-genome-wide significant association in the HLA-DPB1 gene, which originates from KhoeSan ancestry. The evidence supporting the association between the HLA-II region and TB susceptibility is solid, and the work will be of interest to those studying the genetic basis of tuberculosis susceptibility/infection resistance.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99200.4.sa1](https://doi.org/10.7554/eLife.99200.4.sa1)\n\nSummary:\n\nThis manuscript is about using different analytical approaches to allow ancestry adjustments to GWAS analyses amongst admixed populations. This work is a follow-on from the recently published ITHGC multi-population GWAS (https://doi.org/10.7554/eLife.84394), with the focus on the admixed South African populations. Ancestry adjustment models detected a peak of SNPs in the class II HLA DPB1, distinct from the class II HLA DQA1 loci signficant in the ITHGC analysis.\n\nStrengths:\n\nExcellent demonstration of GWAS analytical pipelines in highly admixed populations. Particularly the utility of ancestry adjustment to improve study power to detect novel associations. Further confirmation of the importance of the HLA class II locus in genetic susceptibility to TB.\n\nWeaknesses:\n\nLimited novelty compared to the group's previous existing publications and the body of work linking HLA class II alleles with TB susceptibility in South Africa or other African populations. This work includes only ~100 new cases and controls from what has already been published. High resolution HLA typing has detected significant signals in both the DQA1 and DPB1 regions identified by the larger ITHGC and in this GWAS analysis respectively (Chihab L et al. HLA. 2023 Feb; 101(2): 124-137).\n\nDespite the availability of strong methods for imputing HLA from GWAS data (Karnes J et Plos One 2017), the authors did not confirm with HLA typing the importance of their SNP peak in the class II region. This would have supported the importance of this ancestry adjustment versus prior ITHGC analysis.\n\nThe populations consider active TB and healthy controls (from high-burden presumed exposed communities) and do not provide QFT or other data to identify latent TB infection.\n\nImportant methodological points for clarification and for readers to be aware of when reading this paper:\n\n(1) One of the reasons cited for the lack of African ancestry-specific associations or suggestive peaks in the ITHGC study was the small African sample size. The current association test includes a larger African cohort and yields a near-genome-wide significant threshold in the HLA-DPB1 gene originating from the KhoeSan ancestry. Investigation is needed as to whether the increase in power is due to increased African samples and not necessarily the use of the LAAA model as stated on lines 295 and 296?\n\nAuthors response - The Manhattan plot in Figure 3 includes the results for all four models: the traditional GWAS model (GAO), the admixture mapping model (LAO), the ancestry plus allelic (APA) model and the LAAA model. In this figure, it is evident that only the LAAA model identified the association peak on chromosome 6, which lends support the argument that the increase in power is due to the use of the LAAA model and not solely due to the increase in sample size.\n\nReviewer comment - This data supports the authors conclusions that increase power is related to the LAAA model application rather than simply increase sample size.\n\n(2) In line 256, the number of SNPs included in the LAAA analysis was 784,557 autosomal markers; the number of SNPs after quality control of the imputed dataset was 7,510,051 SNPs (line 142). It is not clear how or why ~90% of the SNPs were removed. This needs clarification.\n\nAuthors response:\n\nIn our manuscript (line 194), we mention that \"...variants with minor allele frequency (MAF) < 1% were removed to improve the stability of the association tests.\" A large proportion of imputed variants fell below this MAF threshold and were subsequently excluded from this analysis.\n\nReviewers additional comment: The authors should specify the number of SNPs in the dataset before imputation and indicate what proportion of the 784,557 remaining SNPs were imputed. Providing this information might help the reader better understand the rationale behind the imputation process.\n\n(3) The authors have used the significance threshold estimated by the STEAM p-value < 2.5x10-6 in the LAAA analysis. Grinde et al. 2019 implemented their significance threshold estimation approach tailored to admixture mapping (local ancestry (LA) model), where there is a reduction in testing burden. The authors should justify why this threshold would apply to the LAAA model (a joint genotype and ancestry approach).\n\nAuthors response: We describe in the methods (line 189 onwards) that the LAAA model is an extension of the APA model. Since the APA model itself simultaneously performs the null global ancestry only model and the local ancestry model (utilised in admixture mapping), we thus considered the use of a threshold tailored to admixture mapping appropriate for the LAAA model.\n\nReviewers additional comment: While the LAAA model is an extension of the APA model, the authors describe the LAAA test as 'models the combination of the minor allele and the ancestry of the minor allele at a specific locus, along with the effect of this interaction,' thus a joint allele and ancestry effects model. Grinde et al. (2019) proposed the significance threshold estimation approach, STEAM, specifically for the LA approach, which tests for ancestry effects alone and benefits from the reduced testing burden. However, it remains unclear why the authors found it appropriate to apply STEAM to the LAAA model, a joint test for both allele and ancestry effects, which does not benefit from the same reduction in testing burden.\n\n(4) Batch effect screening and correction (line 174) is a quality control check. This section is discussed after global and local ancestry inferences in the methods. Was this QC step conducted after the inferencing? If so, the authors should justify how the removed SNPs due to the batch effect did not affect the global and local ancestry inferences or should order the methods section correctly to avoid confusion.\n\nAuthors response: The batch effect correction method utilised a pseudo-case-control comparison which included global ancestry proportions. Thus, batch effect correction was conducted after ancestry inference. We excluded 36 627 SNPs that were believed to have been affected by the batch effect. We have amended line 186 to include the exact number of SNPs excluded due to batch effect.\n\nThe ancestry inference by RFMix utilised the entire merged dataset of 7 510 051 SNPs. Thus, the SNPs removed due to the batch effect make up a very small proportion of the SNPs used to conduct global and local ancestry inferences (less than 0.5%). As a result, we do not believe that the removed SNPs would have significantly affected the global and local ancestry inferences. However, we did conduct global ancestry inference with RFMix on each separate dataset as a sanity check. In the tables below, we show the average global ancestry proportions inferred for each separate dataset, the average global ancestry proportions across all datasets and the average global ancestry proportions inferred using the merged dataset. The SAC and Xhosa cohorts are shown in two separate tables due to the different number of contributing ancestral populations to each cohort. The differences between the combined average global ancestry proportions across the separate cohorts does not differ significantly to the global ancestry proportions inferred using the merged dataset.\n\nThis is an excellent response and should remain accessible to readers for clarifying this issue.\n\nComments on revisions:\n\nThank you for addressing my other recommendations to authors. These have all been satisfactorily addressed.\n",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ba58c22d-5f29-41b5-8798-95edb30a199c",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C1",
+      "claim": "The International Tuberculosis Host Genetics Consortium (ITHGC) demonstrated the power of large-scale GWAS analysis across diverse ancestries in identifying tuberculosis (TB) susceptibility loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the International Tuberculosis Host Genetics Consortium (ITHGC) demonstrated the power of large-scale GWAS analysis across diverse ancestries in identifying tuberculosis (TB) susceptibility loci (Schurz et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schurz et al., 2024",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "cba974c5-ef36-489b-9ac9-9a4a1df0ee85",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C2",
+      "claim": "The ITHGC identified a significant genetic correlate in the human leukocyte antigen (HLA)-II region.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite identifying a significant genetic correlate in the human leukocyte antigen (HLA)-II region, this association did not replicate in the African ancestry-specific analysis, due to small sample size and the inclusion of admixed samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schurz et al., 2024 in the abstract",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "90a7d1a7-8ef9-4e01-9a62-e436b05fc5c8",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C3",
+      "claim": "The HLA-II association did not replicate in the African ancestry-specific analysis due to small sample size and the inclusion of admixed samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite identifying a significant genetic correlate in the human leukocyte antigen (HLA)-II region, this association did not replicate in the African ancestry-specific analysis, due to small sample size and the inclusion of admixed samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the ITHGC study results",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5e96a73a-1d82-4b2f-b21f-50a2c130e9ba",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C4",
+      "claim": "A suggestive association peak (rs3117230, p-value = 5.292 \u00d7 10-6, OR = 0.437, SE = 0.182) was identified in the HLA-DPB1 gene originating from KhoeSan ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a suggestive association peak (rs3117230, p-value = 5.292 \u00d7 10-6, OR = 0.437, SE = 0.182) in the HLA-DPB1 gene originating from KhoeSan ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LAAA analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "65dae19a-acb5-4434-85b3-248907d270c2",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C5",
+      "claim": "Tuberculosis (TB) is a communicable disease caused by Mycobacterium tuberculosis (M.tb).",
+      "claim_type": "EXPLICIT",
+      "source": "Tuberculosis (TB) is a communicable disease caused by Mycobacterium tuberculosis (M.tb) (World Health Organization, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization, 2023, and represents established scientific knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "53e577a3-53ea-4332-995e-ed9cec8ac6ec",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C6",
+      "claim": "M.tb infection has a wide range of clinical manifestations from asymptomatic, non-transmissible, or so-called 'latent', infections to active TB.",
+      "claim_type": "EXPLICIT",
+      "source": "M.tb infection has a wide range of clinical manifestations from asymptomatic, non-transmissible, or so-called 'latent', infections to active TB (Zaidi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaidi et al., 2023",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "d2519129-4731-42a1-8962-0e5d769f97d8",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C7",
+      "claim": "Approximately 1/4 of the global population is infected with M.tb.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 1/4 of the global population is infected with M.tb, but only 5\u201315% of infected individuals will develop active TB (Menzies et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Menzies et al., 2021",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "0b29d04a-7d28-46d0-9581-05e4e905d235",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C8",
+      "claim": "Only 5\u201315% of M.tb infected individuals will develop active TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 1/4 of the global population is infected with M.tb, but only 5\u201315% of infected individuals will develop active TB (Menzies et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Menzies et al., 2021",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5939a839-eb9a-4532-9583-9ce9dab6555f",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C9",
+      "claim": "Co-infection with HIV increases the risk of progressing to active TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Several factors increase the risk of progressing to active TB, including co-infection with HIV and comorbidities, such as diabetes mellitus, asthma and other airway and lung diseases (Glaziou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glaziou et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "eb903907-58a9-4627-a762-663ffade962e",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C10",
+      "claim": "Comorbidities such as diabetes mellitus, asthma and other airway and lung diseases increase the risk of progressing to active TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Several factors increase the risk of progressing to active TB, including co-infection with HIV and comorbidities, such as diabetes mellitus, asthma and other airway and lung diseases (Glaziou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glaziou et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "3aa63feb-8926-4bdb-aae3-bb9e2314fea7",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C11",
+      "claim": "Socio-economic factors including smoking, malnutrition, alcohol abuse, intravenous drug use, prolonged residence in a high burdened community, overcrowding, informal housing and poor sanitation influence M.tb transmission and infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Socio-economic factors including smoking, malnutrition, alcohol abuse, intravenous drug use, prolonged residence in a high burdened community, overcrowding, informal housing and poor sanitation also influence M.tb transmission and infection (Cudahy et al., 2020; Escombe et al., 2019; Laghari et al., 2019; Matose et al., 2019; Smith et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "af111ab2-64d4-4008-8bee-44a28861b1a7",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C12",
+      "claim": "Individual variability in infection and disease progression has been attributed to variation in the host genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, individual variability in infection and disease progression has been attributed to variation in the host genome (Schurz et al., 2024; Uren et al., 2020; Verhein et al., 2018; Uren et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "eceb612d-57eb-4abb-9487-059316ab58b5",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C13",
+      "claim": "Findings from TB susceptibility GWAS studies often do not replicate across population groups.",
+      "claim_type": "EXPLICIT",
+      "source": "However, findings from these studies often do not replicate across population groups (M\u00f6ller and Kinnear, 2020; M\u00f6ller et al., 2018; Uren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "4b77bc93-5ee0-487f-a4dc-d2d80f1bd058",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C14",
+      "claim": "Lack of replication in TB GWAS could be caused by small sample sizes, variation in phenotype definitions among studies, variation in linkage disequilibrium (LD) patterns across different population groups and the presence of population-specific effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of replication could be caused by small sample sizes, variation in phenotype definitions among studies, variation in linkage disequilibrium (LD) patterns across different population groups and the presence of population-specific effects (M\u00f6ller and Kinnear, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to M\u00f6ller and Kinnear, 2020",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "933788d9-e4ed-434d-81dd-ad2b4926c437",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C15",
+      "claim": "Complex LD patterns within population groups, produced by admixture, impede the detection of statistically significant loci when using traditional GWAS methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, complex LD patterns within population groups, produced by admixture, impede the detection of statistically significant loci when using traditional GWAS methods (Swart et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Swart et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5afdf5da-ac4f-4956-8889-2c597d66206d",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C16",
+      "claim": "The ITHGC performed a meta-analysis of TB GWAS results including 14,153 TB cases and 19,536 controls of African, Asian and European ancestries.",
+      "claim_type": "EXPLICIT",
+      "source": "The International Tuberculosis Host Genetics Consortium (ITHGC) performed a meta-analysis of TB GWAS results including 14 153 TB cases and 19 536 controls of African, Asian and European ancestries (Schurz et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schurz et al., 2024",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "4478e7cc-89bd-400f-a94f-4c6f95bf183b",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C17",
+      "claim": "The ITHGC multi-ancestry meta-analysis identified one genome-wide significant variant (rs28383206) in the HLA-II region (p=5.2 x 10\u20139, OR = 0.89, 95% CI=0.84\u20130.95).",
+      "claim_type": "EXPLICIT",
+      "source": "The multi-ancestry meta-analysis identified one genome-wide significant variant (rs28383206) in the human leukocyte antigen (HLA)-II region (p=5.2 x 10\u20139, OR = 0.89, 95% CI=0.84\u20130.95).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schurz et al., 2024 and represents data from that study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "68a10117-e8ea-49a0-8949-fb7268619c08",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C18",
+      "claim": "The association peak at the HLA-II locus encompassed several genes encoding crucial antigen presentation proteins (including HLA-DR and HLA-DQ).",
+      "claim_type": "EXPLICIT",
+      "source": "The association peak at the HLA-II locus encompassed several genes encoding crucial antigen presentation proteins (including HLA-DR and HLA-DQ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the ITHGC study results and established knowledge about HLA genes",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "da884e63-15c2-4275-b65f-e6459ee73f0f",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C19",
+      "claim": "The European and Asian ancestry-specific association analyses in the ITHGC study produced suggestive peaks in the HLA-II region.",
+      "claim_type": "EXPLICIT",
+      "source": "While ancestry-specific association analyses in the European and Asian cohorts also produced suggestive peaks in the HLA-II region, the African ancestry-specific association test did not yield any significant associations or suggestive peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the ITHGC study results",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "349723df-5a92-4587-8af0-6c98887fb97c",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C20",
+      "claim": "The African ancestry-specific association test in the ITHGC study did not yield any significant associations or suggestive peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "While ancestry-specific association analyses in the European and Asian cohorts also produced suggestive peaks in the HLA-II region, the African ancestry-specific association test did not yield any significant associations or suggestive peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the ITHGC study results",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "0a1a2207-683f-4045-9a02-3cead6a945b8",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C21",
+      "claim": "The South African Coloured (SAC) population forms part of a multi-way (up to five-way) admixed population with ancestral contributions from Bantu-speaking African (~30%), KhoeSan (~30%), European (~20%), and East (~10%) and Southeast Asian (~10%) populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The SAC population (as termed in the South African census Lehohla, 2012) forms part of a multi-way (up to five-way) admixed population with ancestral contributions from Bantu-speaking African (~30%), KhoeSan (~30%), European (~20%), and East (~10%) and Southeast Asian (~10%) populations (Chimusa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lehohla, 2012 and Chimusa et al., 2013",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "42d79f5f-7bef-4780-9c74-0f3274ebb059",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C22",
+      "claim": "The diverse genetic background of admixed individuals can lead to population stratification, potentially introducing confounding variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The diverse genetic background of admixed individuals can lead to population stratification, potentially introducing confounding variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "9052f8dc-a2c5-4b83-8e24-7b454d6e492a",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C23",
+      "claim": "The power to detect statistically significant loci in admixed populations can be improved by leveraging admixture-induced local ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the power to detect statistically significant loci in admixed populations can be improved by leveraging admixture-induced local ancestry (Swart et al., 2021; Swart et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Swart et al., 2021 and 2022a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "d580e647-2f55-417d-a21c-9203332cdc37",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C24",
+      "claim": "The local ancestry allelic adjusted association model (LAAA) was developed to include local ancestry as a covariate for GWASs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since previous computational algorithms did not include local ancestry as a covariate for GWASs, the local ancestry allelic adjusted association model (LAAA) was developed to overcome this limitation (Duan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duan et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "3533d9af-8019-4f89-bb2b-e86710ba71fe",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C25",
+      "claim": "The LAAA model identifies ancestry-specific alleles associated with the phenotype by including the minor alleles and the corresponding ancestry of the minor alleles (obtained by local ancestry inference) as covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "The LAAA model identifies ancestry-specific alleles associated with the phenotype by including the minor alleles and the corresponding ancestry of the minor alleles (obtained by local ancestry inference) as covariates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the LAAA model methodology",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "d273cf11-01b6-47a3-8fef-b04b3c5156fd",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C26",
+      "claim": "The LAAA model has been successfully applied in a cohort of multi-way admixed SAC individuals to identify novel variants associated with TB susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The LAAA model has been successfully applied in a cohort of multi-way admixed SAC individuals to identify novel variants associated with TB susceptibility (Swart et al., 2021; Swart et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Swart et al., 2021 and 2022b",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "0e1e296e-3206-423d-a15b-d6f145dd32a6",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C27",
+      "claim": "The K number of contributing ancestries was K=3 for the Xhosa individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "After close inspection of global ancestry proportions generated using ADMIXTURE, the K number of contributing ancestries (the lowest k-value determined through cross-validation) was K=3 for the Xhosa individuals and K=5 for the SAC individuals (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ADMIXTURE analysis results shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "01dc6ad5-720e-4b53-99c6-8168ee3015d2",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C28",
+      "claim": "The K number of contributing ancestries was K=5 for the SAC individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "After close inspection of global ancestry proportions generated using ADMIXTURE, the K number of contributing ancestries (the lowest k-value determined through cross-validation) was K=3 for the Xhosa individuals and K=5 for the SAC individuals (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ADMIXTURE analysis results shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "906ccec7-c65f-452b-b3a0-55ffb4398065",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C29",
+      "claim": "The global ancestry results are consistent with previous global ancestry deconvolution results.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous global ancestry deconvolution results (Chimusa et al., 2014; Choudhury et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chimusa et al., 2014 and Choudhury et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "9dc2c898-95bd-4001-9c10-58302cb156d0",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C30",
+      "claim": "The cohort is a complex, highly admixed group with ancestral contributions from the indigenous KhoeSan (~22\u201330%), Bantu-speaking African (~30\u201372%), European (~5\u201324%), Southeast Asian (~11%), and East Asian (~5%) population groups.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that our cohort is a complex, highly admixed group with ancestral contributions from the indigenous KhoeSan (~22\u201330%), Bantu-speaking African (~30\u201372%), European (~5\u201324%), Southeast Asian (~11%), and East Asian (~5%) population groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ADMIXTURE analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "b96ee8e6-53cd-4e7a-ab5c-855669ece5c8",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C31",
+      "claim": "Admixture between geographically distinct populations creates complex ancestral and admixture-induced LD blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Admixture between geographically distinct populations creates complex ancestral and admixture-induced LD blocks, which can be visualised using local ancestry karyograms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "d23b2254-80f2-4ff8-aa56-435867eab404",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C32",
+      "claim": "Despite individuals being from the same population group, each possesses unique patterns of local ancestry arising from differing numbers and lengths of ancestral segments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that, despite individuals being from the same population group, each possesses unique patterns of local ancestry arising from differing numbers and lengths of ancestral segments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by local ancestry karyograms shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "41126b36-304b-4ba0-94a3-061fd982fd48",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C33",
+      "claim": "No variants passed the threshold for statistical significance in the LAAA models for all five contributing ancestries.",
+      "claim_type": "EXPLICIT",
+      "source": "LAAA models were successfully applied for all five contributing ancestries (KhoeSan, Bantu-speaking African, European, East Asian and Southeast Asian). However, no variants passed the threshold for statistical significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on LAAA analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "8f450955-8a46-4899-87cc-5e5d09053e5f",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C34",
+      "claim": "A suggestive peak was identified in the HLA-II region of chromosome 6 when using the LAAA model and adjusting for KhoeSan ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no variants reached genome-wide significance, a suggestive peak was identified in the HLA-II region of chromosome 6 when using the LAAA model and adjusting for KhoeSan ancestry (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LAAA analysis results shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "4132c5e3-7907-4ce0-b971-b5e46c9f2d9c",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C35",
+      "claim": "The QQ-plot suggested minimal genomic inflation, which was verified by calculating the genomic inflation factor (\u03bb=1.05289).",
+      "claim_type": "EXPLICIT",
+      "source": "The QQ-plot suggested minimal genomic inflation, which was verified by calculating the genomic inflation factor (\u03bb=1.05289; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by QQ-plot analysis shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "aa701a24-a547-42a4-ae57-3566b12b256a",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C36",
+      "claim": "The suggestive peak encompasses the HLA-DPA1/B1 (major histocompatibility complex, class II, DP alpha 1/beta 1) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The suggestive peak encompasses the HLA-DPA1/B1 (major histocompatibility complex, class II, DP alpha 1/beta 1) genes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by regional association plot shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "cab9cc50-3959-48c7-a226-eeb36b686c03",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C37",
+      "claim": "Without the LAAA model, the suggestive peak would not have been observed for this cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that without the LAAA model, this suggestive peak would not have been observed for this cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of different models shown in Figure 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "c6265aeb-217f-42cf-a0d0-0ea81dce103d",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C38",
+      "claim": "The lead variant within the suggestive peak lies within COL11A2P1 (collagen type X1 alpha 2 pseudogene 1).",
+      "claim_type": "EXPLICIT",
+      "source": "The lead variant within this suggestive peak lies within COL11A2P1 (collagen type X1 alpha 2 pseudogene 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genomic annotation of the lead variant",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "a57022cd-e984-44f6-96b7-f4f22c540a15",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C39",
+      "claim": "COL11A2P1 is an unprocessed pseudogene (ENSG00000228688).",
+      "claim_type": "EXPLICIT",
+      "source": "COL11A2P1 is an unprocessed pseudogene (ENSG00000228688).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on gene annotation databases",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "f2fd00c8-877a-4679-b9f4-b7eda7cbc834",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C40",
+      "claim": "Unprocessed pseudogenes are seldom transcribed and translated into functional proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Unprocessed pseudogenes are seldom transcribed and translated into functional proteins (Witek and Mohiuddin, 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Witek and Mohiuddin, 2024",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "2ce2a66e-42d5-446d-8180-c5d25a1d40c3",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C41",
+      "claim": "HLA-DPB1 and HLA-DPA1 are the closest functional protein-coding genes to the lead variants.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-DPB1 and HLA-DPA1 are the closest functional protein-coding genes to our lead variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genomic annotation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "0566e39c-643f-49a5-99a4-216a02201244",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C42",
+      "claim": "The lead variant identified in the ITHGC meta-analysis, rs28383206, was not present in the genotype or imputed datasets of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The lead variant identified in the ITHGC meta-analysis, rs28383206, was not present in our genotype or imputed datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "bd728330-6790-405b-bb4a-37297ed8eb43",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C43",
+      "claim": "The ITHGC imputed genotypes using the 1000 Genomes (1000 G) reference panel.",
+      "claim_type": "EXPLICIT",
+      "source": "The ITHGC imputed genotypes using the 1000 Genomes (1000 G) reference panel (Schurz et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schurz et al., 2024",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "3d8bb7e8-4a82-47f1-aab2-2cc958d8ff77",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C44",
+      "claim": "The lead variant rs28383206 has an alternate allele frequency of 11.26% in the African population subgroup within the 1000 G dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The lead variant, rs28383206, has an alternate allele frequency of 11.26% in the African population subgroup within the 1000 G dataset (https://www.ncbi.nlm.nih.gov/snp/rs28383206).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from the 1000 Genomes database",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5eeae292-5b38-4332-a3d7-6e7c43db3d4e",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C45",
+      "claim": "rs28383206 is absent from the in-house whole-genome sequencing (WGS) datasets, which include Bantu-speaking African and KhoeSan individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, rs28383206 is absent from our in-house whole-genome sequencing (WGS) datasets, which include Bantu-speaking African and KhoeSan individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of in-house WGS data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "9982666b-4508-4ec0-9ba3-5a40dadca05c",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C46",
+      "claim": "rs28383206 might not have been imputed in the datasets using the AGR reference panel, potentially due to its low alternate allele frequency in southern African populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This absence suggests that rs28383206 might not have been imputed in our datasets using the AGR reference panel, potentially due to its low alternate allele frequency in southern African populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the absence of the variant and allele frequency patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "3b5a04f7-be9d-42ae-803f-f856c5a74921",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C47",
+      "claim": "The merged dataset contained two variants located within 800 base pairs of rs28383206: rs482205 (6:32576009) and rs482162 (6:32576019).",
+      "claim_type": "EXPLICIT",
+      "source": "Our merged dataset contained two variants located within 800 base pairs of rs28383206: rs482205 (6:32576009) and rs482162 (6:32576019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genomic position analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "a39710f9-c4b3-41d5-bf66-98baa94437b0",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C48",
+      "claim": "rs482205 and rs482162 were not significantly associated with TB status in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these variants were not significantly associated with TB status in our cohort (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on association analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "4c99c551-720d-45f0-91a5-c33e528076fa",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C49",
+      "claim": "The LAAA analysis of host genetic susceptibility to TB involved 942 TB cases and 592 controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The LAAA analysis of host genetic susceptibility to TB, involving 942 TB cases and 592 controls, identified one suggestive association peak adjusting for KhoeSan local ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "27246de7-ccc8-4e5d-ac84-6f4db8977882",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C50",
+      "claim": "The association peak identified in this study encompasses the HLA-DPB1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The association peak identified in this study encompasses the HLA-DPB1 gene, a highly polymorphic locus, with over 2000 documented allelic variants (Robinson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on LAAA analysis results and supported by citation to Robinson et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "b9cefe1b-4366-48e0-8e34-c27150b69009",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C51",
+      "claim": "HLA-DPB1 is a highly polymorphic locus, with over 2000 documented allelic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The association peak identified in this study encompasses the HLA-DPB1 gene, a highly polymorphic locus, with over 2000 documented allelic variants (Robinson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Robinson et al., 2020",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "da2c140a-e4d0-455b-9dfb-78ea724c1330",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C52",
+      "claim": "HLA-DPB1 alleles have been associated with TB resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This association is noteworthy given that HLA-DPB1 alleles have been associated with TB resistance (Dawkins et al., 2022; Ravikumar et al., 1999; Selvaraj et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "51beea2e-92f0-48b5-b25e-54726ebb6de2",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C53",
+      "claim": "The direction of effect of the lead variants suggests a protective effect against developing active TB.",
+      "claim_type": "EXPLICIT",
+      "source": "The direction of effect of the lead variants in our study (Table 1) similarly suggests a protective effect against developing active TB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on odds ratios shown in Table 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "60f94ca4-25c5-46de-a20d-ab504b25a3ca",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C54",
+      "claim": "Variants in HLA-DPB1 were not identified in the ITHGC meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, variants in HLA-DPB1 were not identified in the ITHGC meta-analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with ITHGC results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "f75d173b-e270-442d-9292-653e7476c153",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C55",
+      "claim": "The ITHGC did not identify any significant associations or suggestive peaks in their African ancestry-specific analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The ITHGC did not identify any significant associations or suggestive peaks in their African ancestry-specific analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ITHGC study results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "35dfe38c-9fca-4b75-9fa5-103668c9399d",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C56",
+      "claim": "The suggestive peak in the HLA-DPB1 region was only captured using the LAAA model whilst adjusting for KhoeSan local ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the suggestive peak in the HLA-DPB1 region was only captured in our cohort using the LAAA model whilst adjusting for KhoeSan local ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of different models in the analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "0b3a2671-b7ad-4978-868c-de085a3e9f88",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C57",
+      "claim": "The genetic heterogeneity present in admixed individuals (produced as a result of admixture-induced and ancestral LD patterns) may cause association signals to be missed when using traditional association models.",
+      "claim_type": "EXPLICIT",
+      "source": "This underscores the importance of incorporating global and local ancestry in association studies investigating complex multi-way admixed individuals, as the genetic heterogeneity present in admixed individuals (produced as a result of admixture-induced and ancestral LD patterns) may cause association signals to be missed when using traditional association models (Duan et al., 2018; Swart et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Duan et al., 2018 and Swart et al., 2022b",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "8748c0af-7e2e-4850-b6c9-8cc9f7ee819a",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C58",
+      "claim": "This study did not replicate the significant association signal in HLA-DRB1 identified by the ITHGC.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not replicate the significant association signal in HLA-DRB1 identified by the ITHGC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "41a7cd8e-3ad3-40d8-906a-4efbc26fa910",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C59",
+      "claim": "The ITHGC did not replicate the HLA-DRB1 association in their own African ancestry-specific analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ITHGC also did not replicate this association in their own African ancestry-specific analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ITHGC study results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "33ae5e47-a567-408c-85b2-87781c77727c",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C60",
+      "claim": "The significant association rs28383206 identified by the ITHGC meta-analysis appears to be tagging the HLA-DQA1*02:1 allele, which is associated with TB in Icelandic and Asian populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant association, rs28383206, identified by the ITHGC meta-analysis appears to be tagging the HLA-DQA1*02:1 allele, which is associated with TB in Icelandic and Asian populations (Li et al., 2021; Sveinbjornsson et al., 2016; Zheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "318341d8-ee09-4fc7-b4ef-82af305f0f67",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C61",
+      "claim": "The rs28383206 association signal may be specific to non-African populations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that this association signal is specific to non-African populations, but additional research is required to verify this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on observed patterns",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "25b286f2-827e-49f6-b889-84d8b915c437",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C62",
+      "claim": "Both this study and the ITHGC independently pinpointed variants associated with TB susceptibility in different genes within the HLA-II locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Both our study and the ITHGC independently pinpointed variants associated with TB susceptibility in different genes within the HLA-II locus (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of results shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "b8519641-ef7d-45b4-90c2-ad72bfd9f314",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C63",
+      "claim": "The HLA-II region spans ~0.8 Mb on chromosome 6p21.32 and encompasses the HLA-DP, -DR, and -DQ alpha and beta chain genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The HLA-II region spans ~0.8 Mb on chromosome 6p21.32 and encompasses the HLA-DP, -DR, and -DQ alpha and beta chain genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genomic knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "cbcd2b2f-d04c-4460-9af6-7075afe72ef7",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C64",
+      "claim": "The HLA-II complex is the human form of the major histocompatibility complex class II (MHC-II) proteins on the surface of antigen presenting cells, such as monocytes, dendritic cells and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The HLA-II complex is the human form of the major histocompatibility complex class II (MHC-II) proteins on the surface of antigen presenting cells, such as monocytes, dendritic cells and macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established immunological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "30d777ca-176e-4360-96b2-387834c84081",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C65",
+      "claim": "The innate immune response against M.tb involves phagocytosis by alveolar macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The innate immune response against M.tb involves phagocytosis by alveolar macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established immunological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "3440232c-5469-4855-b3d2-f93eeab3e4d0",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C66",
+      "claim": "In the phagosome, mycobacterial antigens are processed for presentation on MHC-II on the surface of the antigen presenting cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In the phagosome, mycobacterial antigens are processed for presentation on MHC-II on the surface of the antigen presenting cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established immunological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "cf0e5c3d-00ea-4059-8004-924c348b4968",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C67",
+      "claim": "M.tb interferes with the MHC-II pathway to enhance intracellular persistence and delay activation of the adaptive immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have suggested that M.tb interferes with the MHC-II pathway to enhance intracellular persistence and delay activation of the adaptive immune response (Oliveira-Cortez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Oliveira-Cortez et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "3e231a71-4a99-497d-ae7a-a0323735f81c",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C68",
+      "claim": "M.tb can inhibit phagosome maturation and acidification, thereby limiting antigen processing and presentation on MHC-II molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, M.tb can inhibit phagosome maturation and acidification, thereby limiting antigen processing and presentation on MHC-II molecules (Chang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "8efa01d8-9c09-4b44-87c1-364fb0a39748",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C69",
+      "claim": "MHC-II plays an essential role in the adaptive immune response to TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that MHC-II plays an essential role in the adaptive immune response to TB and numerous studies have identified HLA-II variants associated with TB (Cai et al., 2019; Chihab et al., 2023; de de S\u00e1 et al., 2020; Harishankar et al., 2018; Schurz et al., 2024; Selvaraj et al., 2008), additional research is required to elucidate the effects of HLA-II variation on TB risk status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations and established immunological knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "d5e78fe3-ec94-4e07-b73c-654fbeec3695",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C70",
+      "claim": "Numerous studies have identified HLA-II variants associated with TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that MHC-II plays an essential role in the adaptive immune response to TB and numerous studies have identified HLA-II variants associated with TB (Cai et al., 2019; Chihab et al., 2023; de de S\u00e1 et al., 2020; Harishankar et al., 2018; Schurz et al., 2024; Selvaraj et al., 2008), additional research is required to elucidate the effects of HLA-II variation on TB risk status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "20c40dd3-868e-4ffa-862a-802ae922c3c7",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C71",
+      "claim": "The analysis has a notable case-control imbalance (cases/controls = 1.610).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our analysis has a notable case-control imbalance (cases/controls = 1.610).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study sample composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "6e879969-776c-418b-85c4-8a29331b07d3",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C72",
+      "claim": "Under an additive disease model with an estimated prevalence of 0.15, a disease allele frequency of 0.3, a genotype relative risk of 1.5, and a default significance level of 7\u00d710\u207b\u2076, the study achieved an expected power of approximately 75%.",
+      "claim_type": "EXPLICIT",
+      "source": "Under an additive disease model with an estimated prevalence of 0.15, a disease allele frequency of 0.3, a genotype relative risk of 1.5, and a default significance level of 7\u00d710\u207b\u2076, we achieved an expected power of approximately 75%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on power calculation using Michigan GAS power calculator",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "24970971-5eb6-4d3a-9922-ebb169d03e99",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C73",
+      "claim": "With a balanced sample size of 950 cases and 950 controls, power would exceed 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "With a balanced sample size of 950 cases and 950 controls, power would exceed 90%, but it would drop significantly with a smaller balanced cohort of 590 cases and 590 controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on power calculation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "e16f7961-91fa-450a-b791-a8ced02d3c2b",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C74",
+      "claim": "The application of the LAAA to a highly admixed SAC cohort revealed a suggestive association signal in the HLA-II region associated with protection against TB that was not identified by the African-ancestry specific analysis performed by the ITHGC.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the application of the LAAA to a highly admixed SAC cohort revealed a suggestive association signal in the HLA-II region associated with protection against TB that was not identified by the African-ancestry specific analysis performed by the ITHGC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of results from this study and the ITHGC",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "831ae3b1-ee33-4ff0-9af2-b16d12f9e325",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C75",
+      "claim": "This study demonstrates an alternative method to identify association signals in cohorts with complex genetic ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study builds on the results of the ITHGC by demonstrating an alternative method to identify association signals in cohorts with complex genetic ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the successful application of the LAAA model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "b333cf55-8660-4d09-b24c-11604db98e02",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C76",
+      "claim": "This analysis shows the value of including individual global and local ancestry in genetic association analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows the value of including individual global and local ancestry in genetic association analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the results demonstrating improved detection with LAAA",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "05d2ccbc-a910-4a78-b4e2-0c898f33e10c",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C77",
+      "claim": "This study confirms HLA-II loci associations with TB susceptibility in an admixed South African population.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirm HLA-II loci associations with TB susceptibility in an admixed South African population, highlighting the role of the adaptive immune system in TB susceptibility and resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the identification of the HLA-DPB1 association",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "61b81c8b-c699-43c2-ad5b-5647e65acee8",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C78",
+      "claim": "The HLA-II association highlights the role of the adaptive immune system in TB susceptibility and resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirm HLA-II loci associations with TB susceptibility in an admixed South African population, highlighting the role of the adaptive immune system in TB susceptibility and resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the known role of HLA-II in adaptive immunity",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "016903ef-1e60-44e0-a8fb-3fd45ba27fbf",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C79",
+      "claim": "The Xhosa population is admixed with Bantu-speaking African and KhoeSan ancestral contributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the SAC population, the Xhosa population is admixed with Bantu-speaking African and KhoeSan ancestral contributions (Choudhury et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Choudhury et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "751af1db-c75a-4944-a31e-a7622a6a89ce",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C80",
+      "claim": "Across all datasets, TB cases were bacteriologically confirmed (culture positive) or diagnosed by GeneXpert.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all datasets, TB cases were bacteriologically confirmed (culture positive) or diagnosed by GeneXpert.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of case definition in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "98a46593-d307-4ccd-8357-461f88445692",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C81",
+      "claim": "Controls were healthy individuals with no history of TB disease or treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Controls were healthy individuals with no history of TB disease or treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of control definition in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "a21789b3-5e33-47a5-8ed8-ae338f99beb3",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C82",
+      "claim": "Most controls have likely been exposed to M.tb at some point given the high prevalence of TB in South Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the high prevalence of TB in South Africa 852 cases (95% CI 679\u20131026) per 10,000 individuals 15 years and older (Cudahy et al., 2020), most controls have likely been exposed to M.tb at some point (Gallant et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on TB prevalence data supported by citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "70a05e7e-dce5-43f8-bd2a-047697c679fd",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C83",
+      "claim": "For all datasets, cases and controls were obtained from the same community and thus share similar socio-economic status and health care access.",
+      "claim_type": "EXPLICIT",
+      "source": "For all datasets, cases and controls were obtained from the same community and thus share similar socio-economic status and health care access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "23a66d89-577d-4800-9d71-e4c5a865847c",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C84",
+      "claim": "The African Genome Resource (AGR) panel is the best reference panel for imputation of missing genotypes for samples from the SAC population.",
+      "claim_type": "EXPLICIT",
+      "source": "The African Genome Resource (AGR) panel (n=4956), accessed via the SIS, was used as the reference panel for imputation (Gurdasani et al., 2015) since it has been shown that the AGR is the best reference panel for imputation of missing genotypes for samples from the SAC population (Schurz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schurz et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "1d8fa7a0-b031-4c3b-84c5-61da1f359d79",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C85",
+      "claim": "The final merged dataset after QC and data filtering consisted of 1,544 individuals (952 TB cases and 592 healthy controls).",
+      "claim_type": "EXPLICIT",
+      "source": "The final merged dataset after QC and data filtering (including the removal of related individuals) consisted of 1 544 individuals (952 TB cases and 592 healthy controls).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of final study sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "018e1578-3d25-4634-a18f-8633a60783dc",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C86",
+      "claim": "A total of 7,510,057 variants passed QC and filtering parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 7,510,057 variants passed QC and filtering parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of final dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "6d46b069-c563-4795-ae70-729eb211a94a",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C87",
+      "claim": "RFMix outperforms ADMIXTURE in determining global ancestry proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it has been shown that RFMix (Maples et al., 2013) outperforms ADMIXTURE in determining global ancestry proportions (Uren et al., 2020), RFMix was also used to refine inferred global ancestry proportions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Uren et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "98bffc8b-c32e-4ed0-ad0d-88ce9f22cc8b",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C88",
+      "claim": "The number of generations since admixture was set to 15 for the SAC individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Default parameters were used, but the number of generations since admixture was set to 15 for the SAC individuals and 20 for the Xhosa individuals (as determined by previous studies) (Uren et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on previous studies cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "adce3270-6296-49b2-a183-e0bb9ffa8521",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C89",
+      "claim": "The number of generations since admixture was set to 20 for the Xhosa individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Default parameters were used, but the number of generations since admixture was set to 15 for the SAC individuals and 20 for the Xhosa individuals (as determined by previous studies) (Uren et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on previous studies cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "b6c33fa8-d9ce-4398-b994-757ad83fc3ee",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C90",
+      "claim": "36,627 SNPs affected by batch effects were removed from the merged dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modified method was used to remove 36 627 SNPs affected by batch effects from our merged dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of batch effect correction results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "ab34f608-7762-43e4-a34a-d0bc5751d110",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C91",
+      "claim": "A total of 784,557 autosomal markers (with MAF >1%) and 1,544 unrelated individuals (952 TB cases and 592 healthy controls) were available for LAAA analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 784,557 autosomal markers (with MAF >1%) and 1544 unrelated individuals (952 TB cases and 592 healthy controls) were available for further analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of final analysis dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "90c85586-42e6-4b10-8656-24d1b606f2a2",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C92",
+      "claim": "Of the markers included in the final dataset, 535,193 sites were imputed.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the markers included in the final dataset, 535,193 sites were imputed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dataset composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "4dfd411b-6172-4bbd-a482-498600756e3a",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C93",
+      "claim": "For the LA model, a genome-wide significance threshold of p-value <2.5 x 10\u20136 was deemed significant by STEAM.",
+      "claim_type": "EXPLICIT",
+      "source": "For the LA model, a genome-wide significance threshold of p-value <2.5 x 10\u20136 was deemed significant by STEAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on STEAM analysis for admixture mapping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "d43286a0-9204-4d86-a4dc-c205c1a3fa46",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "claim_id": "C94",
+      "claim": "The traditional genome-wide significance threshold of 5x10\u20138 was used for the GA, APA and LAAA models.",
+      "claim_type": "EXPLICIT",
+      "source": "The traditional genome-wide significance threshold of 5x10\u20138 was used for the GA, APA and LAAA models, as recommended by the authors of the LAAA model (Duan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on recommendations from Duan et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "05e5874e-f3de-417d-9d17-4f5c99801659",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Global ancestry analysis using ADMIXTURE identified K=3 ancestries for Xhosa individuals and K=5 for SAC individuals, with ancestral contributions from KhoeSan (~22\u201330%), Bantu-speaking African (~30\u201372%), European (~5\u201324%), Southeast Asian (~11%), and East Asian (~5%) populations, consistent with previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are well-supported by ADMIXTURE analysis results shown in Figure 1 and are consistent with prior ancestry deconvolution studies (C29). The methodology is standard and the results align with established knowledge about SAC population structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "7eb7f68b-2a94-44c7-8ab6-ab28f9bfe950",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Local ancestry analysis revealed that admixture creates complex ancestral and admixture-induced LD blocks, with each individual possessing unique patterns of local ancestry despite being from the same population group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by local ancestry karyograms in Figure 2 demonstrating individual-level variation in ancestral segment patterns. This is consistent with established genetic principles about admixture and represents appropriate characterization of the study population.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "782e3502-dc0a-41ae-b4fb-85acdd349caf",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LAAA analysis adjusting for KhoeSan ancestry identified a suggestive association peak (rs3117230, p=5.292\u00d710\u207b\u2076, OR=0.437) in the HLA-DPB1 gene region on chromosome 6 in 942 TB cases and 592 controls. This peak was only detectable using the LAAA model and not with traditional GWAS approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C37, C4, C49-C50 describe a suggestive but not genome-wide significant association (p=5.292\u00d710\u207b\u2076 vs. threshold of 5\u00d710\u207b\u2078). While the QQ-plot shows minimal inflation (\u03bb=1.05289, C35), the association does not reach statistical significance. The claim that LAAA was necessary to detect this signal (C37, C56) is supported by Figure 3 comparisons, but without replication or fine-mapping validation, the biological significance remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "9ff3a58f-05d6-4d5b-9282-518c0d870d96",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The lead variant rs3117230 lies within COL11A2P1, an unprocessed pseudogene unlikely to be functional, with HLA-DPB1 and HLA-DPA1 being the nearest functional protein-coding genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by genomic annotation data and established knowledge about pseudogene function (C40). The identification of nearby functional genes is appropriate for interpreting the potential biological relevance of the association signal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "530f22db-1ee0-460c-90f6-110b7aad7788",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ITHGC lead variant rs28383206 was absent from this study's datasets, likely due to low allele frequency in southern African populations and use of the AGR reference panel for imputation. Two nearby variants (rs482205, rs482162) were present but not significantly associated with TB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 provide a reasonable explanation for the absence of rs28383206 based on allele frequency patterns and imputation panel differences. The analysis of nearby variants (C47-C48) appropriately addresses whether the ITHGC signal could be captured through proxy SNPs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "02c93ec4-385a-495b-bafc-e566b5af357e",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HLA-DPB1 is highly polymorphic with over 2000 allelic variants and has been previously associated with TB resistance. The protective effect direction (OR=0.437) observed in this study is consistent with prior associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by citations to prior literature on HLA-DPB1 polymorphism and TB associations. The interpretation of effect direction based on odds ratios in Table 1 is appropriate, though the suggestive p-value limits confidence in this specific association.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5312b7d9-970a-4266-a0d5-d70147179293",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The HLA-DPB1 association was not identified in the ITHGC meta-analysis, and the ITHGC also failed to identify associations in their African ancestry-specific analysis. The LAAA model's ability to detect this signal demonstrates the importance of incorporating local ancestry in admixed populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C59 correctly note the differences between this study and ITHGC results. However, the claim that LAAA is necessary (C56-C57) is based on a suggestive, not significant, association. The lack of replication in ITHGC could reflect true absence of signal, insufficient power, or methodological differences. Without independent validation, the superiority of LAAA for this specific locus remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "93a84e58-7cfd-4fca-baab-54ce12aa0726",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ITHGC variant rs28383206 appears to tag the HLA-DQA1*02:1 allele associated with TB in Icelandic and Asian populations, and may be specific to non-African populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 are speculative (C61 explicitly states this). While supported by citations showing associations in non-African populations, the hypothesis that this signal is population-specific requires additional research to verify, as acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both this study and ITHGC identified variants in different genes within the HLA-II locus (spanning ~0.8 Mb on chromosome 6p21.32), which encodes MHC-II proteins essential for antigen presentation and adaptive immune response to M.tb. M.tb can interfere with the MHC-II pathway to enhance persistence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 appropriately contextualize the findings within established immunological knowledge about HLA-II function and TB pathogenesis. The comparison with ITHGC results (C62, Figure 5) is valid, and the biological rationale for HLA-II involvement in TB susceptibility is well-supported by multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "d1a55805-c2db-4206-9402-3b475da37ac9",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study has a case-control imbalance (952 cases/592 controls, ratio=1.610) resulting in approximately 75% power under specified assumptions, which would exceed 90% with balanced samples of 950 cases and 950 controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 appropriately acknowledge the case-control imbalance and provide power calculations using standard methods (Michigan GAS calculator). The transparency about this limitation and its impact on statistical power is appropriate, though the authors proceeded despite suboptimal power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "911dd7ad-71e2-4818-a39c-ca69e3bae51a",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The LAAA model applied to an admixed SAC cohort revealed a suggestive HLA-II association with TB protection not identified by ITHGC African-ancestry analysis, demonstrating the value of incorporating local ancestry in genetic association studies and confirming the role of HLA-II in TB susceptibility in admixed South African populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C74-C78 overstate the findings. The association is suggestive, not significant (p=5.292\u00d710\u207b\u2076 vs. threshold 5\u00d710\u207b\u2078), lacks replication, and was not validated by HLA fine-mapping (acknowledged limitation). While the LAAA approach is methodologically sound, claiming to 'confirm' HLA-II associations (C77) is not justified by a single suggestive signal. The value of the method is demonstrated, but the specific biological conclusion requires validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "4f5cc39d-dabf-49bf-9b00-52491838e473",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ITHGC meta-analysis of 14,153 TB cases and 19,536 controls identified a genome-wide significant variant (rs28383206) in the HLA-II region across diverse ancestries, but this association did not replicate in African ancestry-specific analysis, attributed to small sample size and inclusion of admixed samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C16-C20 accurately summarize prior work from the ITHGC study (Schurz et al., 2024). The characterization of the multi-ancestry meta-analysis results and the failure to replicate in African-specific analysis is appropriately cited and provides essential context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "793849b2-f4d9-4f84-a7c8-37b0a80eff84",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The SAC population is a multi-way admixed population with contributions from five ancestral groups. While admixture can cause population stratification, leveraging local ancestry through the LAAA model can improve detection of association signals in admixed populations, as previously demonstrated for TB susceptibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 provide appropriate background on the SAC population structure and the rationale for using LAAA. The citations support both the ancestry composition (C21) and the utility of local ancestry methods (C23, C26), establishing the methodological foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "68f11ba3-76a1-455f-b9cf-48e0baaa680d",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TB cases were bacteriologically confirmed or diagnosed by GeneXpert, while controls were healthy individuals with no TB history. Cases and controls were from the same communities with similar socioeconomic status, though most controls likely had M.tb exposure given high TB prevalence in South Africa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 appropriately describe the study design and phenotype definitions. The acknowledgment that controls likely had M.tb exposure (C82) is important for interpretation, as this represents a comparison of disease resistance rather than infection susceptibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "367d2856-1a4d-40f0-aaaf-76386e25ee70",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used appropriate quality control procedures, imputation with the AGR reference panel (optimal for SAC populations), and batch effect correction, resulting in a final dataset of 1,544 individuals with 784,557 markers (MAF>1%) for LAAA analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C92 describe standard and appropriate methods for GWAS data processing. The choice of AGR reference panel is justified by prior work (C84), and the batch effect correction using a modified method is appropriate for admixed populations. The final sample and marker counts are clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "103723d7-8bed-4bc2-92ef-f131537e259e",
+      "content_id": "152a1059-8844-4bbe-95dd-2ef2f6f5f80f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Significance thresholds were set at p<2.5\u00d710\u207b\u2076 for the LA model (determined by STEAM) and p<5\u00d710\u207b\u2078 for GA, APA, and LAAA models following standard recommendations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 describe appropriate statistical thresholds. The use of STEAM to determine admixture mapping thresholds (C93) and standard genome-wide significance for other models (C94) follows established best practices and recommendations from the LAAA developers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "08a8a64b-76da-42d5-9066-9cf162488d9d",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study identified a suggestive association peak (rs3117230, p-value = 5.292 \u00d7 10\u207b\u2076) in the HLA-DPB1 gene originating from KhoeSan ancestry using the LAAA model. This peak was only detected when adjusting for KhoeSan local ancestry and would not have been observed using traditional GWAS methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm this finding. The editor states this is a 'near-genome-wide significant association in the HLA-DPB1 gene, which originates from KhoeSan ancestry' and calls the evidence 'solid.' The anonymous reviewer confirms 'Ancestry adjustment models detected a peak of SNPs in the class II HLA DPB1' and acknowledges the authors' demonstration that 'increase power is related to the LAAA model application rather than simply increase sample size.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The study confirms association between the HLA-II region and TB susceptibility in admixed South African populations, identifying a different gene (HLA-DPB1) than the ITHGC meta-analysis (which identified HLA-DRB1/DQA1). The African ancestry-specific analysis in the ITHGC study did not yield significant associations, but this study detected a signal using the LAAA model.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states this is a 'valuable study' that 'confirms the association between the human leukocyte antigen (HLA)-II region and tuberculosis (TB) susceptibility in genetically admixed South African populations.' The anonymous reviewer notes this provides 'Further confirmation of the importance of the HLA class II locus in genetic susceptibility to TB' and acknowledges the peak is 'distinct from the class II HLA DQA1 loci significant in the ITHGC analysis.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5e939f35-920f-48ea-9ca4-7c9de7453c85",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The study demonstrates that the LAAA model, which incorporates local ancestry as a covariate, improves power to detect statistically significant loci in admixed populations and represents an alternative method for identifying association signals in cohorts with complex genetic ancestry.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer explicitly praises this as an 'Excellent demonstration of GWAS analytical pipelines in highly admixed populations. Particularly the utility of ancestry adjustment to improve study power to detect novel associations.' The reviewer's methodological inquiry about whether increased power was due to sample size or the LAAA model was satisfactorily resolved, with the reviewer stating 'This data supports the authors conclusions that increase power is related to the LAAA model application.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "c42ffa1f-5f4b-4562-838b-2e026becbf27",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Global and local ancestry analysis revealed that the cohort is highly admixed with K=3 ancestries for Xhosa and K=5 for SAC individuals, with ancestral contributions from KhoeSan (~22-30%), Bantu-speaking African (~30-72%), European (~5-24%), Southeast Asian (~11%), and East Asian (~5%) populations. Each individual possesses unique patterns of local ancestry.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer challenges these ancestry characterization results. The anonymous reviewer's methodological question about whether batch effect correction affected ancestry inference was satisfactorily addressed by the authors, with the reviewer stating 'This is an excellent response and should remain accessible to readers for clarifying this issue.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "ce551a3a-2659-4aa8-9241-ae975727602c",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The identified HLA-DPB1 variants show a protective effect against developing active TB (based on odds ratios), consistent with previous associations between HLA-DPB1 alleles and TB resistance, highlighting the role of the adaptive immune system in TB susceptibility.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor affirms the work 'will be of interest to those studying the genetic basis of tuberculosis susceptibility/infection resistance.' The anonymous reviewer acknowledges this provides 'Further confirmation of the importance of the HLA class II locus in genetic susceptibility to TB.' Neither reviewer challenges the interpretation of protective effects or the biological significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "cde04512-81e8-4f7d-af9c-ceab315f5a18",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The lead variant from the ITHGC meta-analysis (rs28383206) was not present in this study's datasets, likely due to low allele frequency in southern African populations and use of the AGR reference panel for imputation. Nearby variants in the dataset were not significantly associated with TB.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer challenges this finding or the explanation for the absence of rs28383206. The anonymous reviewer does not raise concerns about this discrepancy, implicitly accepting the authors' explanation regarding imputation reference panels and allele frequencies.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "51f9069b-9062-4482-8617-c329d3f442e3",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The study has a case-control imbalance (942 cases/592 controls = 1.610) and achieved approximately 75% power under the specified disease model parameters. Power would exceed 90% with a balanced sample of 950 cases and 950 controls.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer challenges the power calculations or raises concerns about the case-control imbalance affecting the validity of the results. The anonymous reviewer's focus on methodological rigor suggests implicit acceptance of these statistical considerations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "db1c0ec6-fa01-4a33-904c-2f756d836249",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "No variants passed the genome-wide significance threshold in the LAAA models for all five ancestries, though a suggestive peak was identified. The QQ-plot showed minimal genomic inflation (\u03bb=1.05289).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor characterizes the association as 'near-genome-wide significant,' acknowledging it did not reach full genome-wide significance but treating this as a valuable finding nonetheless. Neither reviewer challenges the quality control metrics or suggests the genomic inflation is problematic.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "df00fd3e-acc0-4cc6-856b-84fc81d12cd0",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The final dataset consisted of 1,544 individuals (952 TB cases and 592 controls) with 7,510,057 variants after QC. For LAAA analysis, 784,557 autosomal markers with MAF >1% were used, of which 535,193 sites were imputed.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The anonymous reviewer raised a significant methodological concern about why ~90% of SNPs were removed between QC (7,510,051 SNPs) and LAAA analysis (784,557 markers). While the authors explained this was due to MAF filtering, the reviewer requested additional clarification: 'The authors should specify the number of SNPs in the dataset before imputation and indicate what proportion of the 784,557 remaining SNPs were imputed.' This request was not fully addressed in the review exchange.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "a50201f3-ea0d-4f90-b2db-dfb40c0a40b1",
+      "content_id": "1ad3f1f6-bd58-4b88-aeb3-93c2c9463c5f",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The study used a genome-wide significance threshold of p-value <2.5 \u00d7 10\u207b\u2076 (determined by STEAM) for the LA model and the traditional threshold of 5\u00d710\u207b\u2078 for GA, APA and LAAA models.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The anonymous reviewer raised a substantive concern about the appropriateness of applying the STEAM threshold (designed for admixture mapping with reduced testing burden) to the LAAA model (a joint allele and ancestry effects model). The reviewer stated: 'it remains unclear why the authors found it appropriate to apply STEAM to the LAAA model, a joint test for both allele and ancestry effects, which does not benefit from the same reduction in testing burden.' This concern was not fully resolved.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0e1e296e-3206-423d-a15b-d6f145dd32a6",
+      "result_id": "05e5874e-f3de-417d-9d17-4f5c99801659"
+    },
+    {
+      "claim_id": "01dc6ad5-720e-4b53-99c6-8168ee3015d2",
+      "result_id": "05e5874e-f3de-417d-9d17-4f5c99801659"
+    },
+    {
+      "claim_id": "906ccec7-c65f-452b-b3a0-55ffb4398065",
+      "result_id": "05e5874e-f3de-417d-9d17-4f5c99801659"
+    },
+    {
+      "claim_id": "9dc2c898-95bd-4001-9c10-58302cb156d0",
+      "result_id": "05e5874e-f3de-417d-9d17-4f5c99801659"
+    },
+    {
+      "claim_id": "b96ee8e6-53cd-4e7a-ab5c-855669ece5c8",
+      "result_id": "7eb7f68b-2a94-44c7-8ab6-ab28f9bfe950"
+    },
+    {
+      "claim_id": "d23b2254-80f2-4ff8-aa56-435867eab404",
+      "result_id": "7eb7f68b-2a94-44c7-8ab6-ab28f9bfe950"
+    },
+    {
+      "claim_id": "41126b36-304b-4ba0-94a3-061fd982fd48",
+      "result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf"
+    },
+    {
+      "claim_id": "8f450955-8a46-4899-87cc-5e5d09053e5f",
+      "result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf"
+    },
+    {
+      "claim_id": "4132c5e3-7907-4ce0-b971-b5e46c9f2d9c",
+      "result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf"
+    },
+    {
+      "claim_id": "aa701a24-a547-42a4-ae57-3566b12b256a",
+      "result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf"
+    },
+    {
+      "claim_id": "cab9cc50-3959-48c7-a226-eeb36b686c03",
+      "result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf"
+    },
+    {
+      "claim_id": "5e96a73a-1d82-4b2f-b21f-50a2c130e9ba",
+      "result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf"
+    },
+    {
+      "claim_id": "4c99c551-720d-45f0-91a5-c33e528076fa",
+      "result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf"
+    },
+    {
+      "claim_id": "27246de7-ccc8-4e5d-ac84-6f4db8977882",
+      "result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf"
+    },
+    {
+      "claim_id": "c6265aeb-217f-42cf-a0d0-0ea81dce103d",
+      "result_id": "9ff3a58f-05d6-4d5b-9282-518c0d870d96"
+    },
+    {
+      "claim_id": "a57022cd-e984-44f6-96b7-f4f22c540a15",
+      "result_id": "9ff3a58f-05d6-4d5b-9282-518c0d870d96"
+    },
+    {
+      "claim_id": "f2fd00c8-877a-4679-b9f4-b7eda7cbc834",
+      "result_id": "9ff3a58f-05d6-4d5b-9282-518c0d870d96"
+    },
+    {
+      "claim_id": "2ce2a66e-42d5-446d-8180-c5d25a1d40c3",
+      "result_id": "9ff3a58f-05d6-4d5b-9282-518c0d870d96"
+    },
+    {
+      "claim_id": "0566e39c-643f-49a5-99a4-216a02201244",
+      "result_id": "530f22db-1ee0-460c-90f6-110b7aad7788"
+    },
+    {
+      "claim_id": "bd728330-6790-405b-bb4a-37297ed8eb43",
+      "result_id": "530f22db-1ee0-460c-90f6-110b7aad7788"
+    },
+    {
+      "claim_id": "3d8bb7e8-4a82-47f1-aab2-2cc958d8ff77",
+      "result_id": "530f22db-1ee0-460c-90f6-110b7aad7788"
+    },
+    {
+      "claim_id": "5eeae292-5b38-4332-a3d7-6e7c43db3d4e",
+      "result_id": "530f22db-1ee0-460c-90f6-110b7aad7788"
+    },
+    {
+      "claim_id": "9982666b-4508-4ec0-9ba3-5a40dadca05c",
+      "result_id": "530f22db-1ee0-460c-90f6-110b7aad7788"
+    },
+    {
+      "claim_id": "3b5a04f7-be9d-42ae-803f-f856c5a74921",
+      "result_id": "530f22db-1ee0-460c-90f6-110b7aad7788"
+    },
+    {
+      "claim_id": "a39710f9-c4b3-41d5-bf66-98baa94437b0",
+      "result_id": "530f22db-1ee0-460c-90f6-110b7aad7788"
+    },
+    {
+      "claim_id": "b9cefe1b-4366-48e0-8e34-c27150b69009",
+      "result_id": "02c93ec4-385a-495b-bafc-e566b5af357e"
+    },
+    {
+      "claim_id": "da2c140a-e4d0-455b-9dfb-78ea724c1330",
+      "result_id": "02c93ec4-385a-495b-bafc-e566b5af357e"
+    },
+    {
+      "claim_id": "51beea2e-92f0-48b5-b25e-54726ebb6de2",
+      "result_id": "02c93ec4-385a-495b-bafc-e566b5af357e"
+    },
+    {
+      "claim_id": "60f94ca4-25c5-46de-a20d-ab504b25a3ca",
+      "result_id": "5312b7d9-970a-4266-a0d5-d70147179293"
+    },
+    {
+      "claim_id": "f75d173b-e270-442d-9292-653e7476c153",
+      "result_id": "5312b7d9-970a-4266-a0d5-d70147179293"
+    },
+    {
+      "claim_id": "35dfe38c-9fca-4b75-9fa5-103668c9399d",
+      "result_id": "5312b7d9-970a-4266-a0d5-d70147179293"
+    },
+    {
+      "claim_id": "0b3a2671-b7ad-4978-868c-de085a3e9f88",
+      "result_id": "5312b7d9-970a-4266-a0d5-d70147179293"
+    },
+    {
+      "claim_id": "8748c0af-7e2e-4850-b6c9-8cc9f7ee819a",
+      "result_id": "5312b7d9-970a-4266-a0d5-d70147179293"
+    },
+    {
+      "claim_id": "41a7cd8e-3ad3-40d8-906a-4efbc26fa910",
+      "result_id": "5312b7d9-970a-4266-a0d5-d70147179293"
+    },
+    {
+      "claim_id": "33ae5e47-a567-408c-85b2-87781c77727c",
+      "result_id": "93a84e58-7cfd-4fca-baab-54ce12aa0726"
+    },
+    {
+      "claim_id": "318341d8-ee09-4fc7-b4ef-82af305f0f67",
+      "result_id": "93a84e58-7cfd-4fca-baab-54ce12aa0726"
+    },
+    {
+      "claim_id": "25b286f2-827e-49f6-b889-84d8b915c437",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "b8519641-ef7d-45b4-90c2-ad72bfd9f314",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "cbcd2b2f-d04c-4460-9af6-7075afe72ef7",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "30d777ca-176e-4360-96b2-387834c84081",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "3440232c-5469-4855-b3d2-f93eeab3e4d0",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "cf0e5c3d-00ea-4059-8004-924c348b4968",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "3e231a71-4a99-497d-ae7a-a0323735f81c",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "8efa01d8-9c09-4b44-87c1-364fb0a39748",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "d5e78fe3-ec94-4e07-b73c-654fbeec3695",
+      "result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d"
+    },
+    {
+      "claim_id": "20c40dd3-868e-4ffa-862a-802ae922c3c7",
+      "result_id": "d1a55805-c2db-4206-9402-3b475da37ac9"
+    },
+    {
+      "claim_id": "6e879969-776c-418b-85c4-8a29331b07d3",
+      "result_id": "d1a55805-c2db-4206-9402-3b475da37ac9"
+    },
+    {
+      "claim_id": "24970971-5eb6-4d3a-9922-ebb169d03e99",
+      "result_id": "d1a55805-c2db-4206-9402-3b475da37ac9"
+    },
+    {
+      "claim_id": "e16f7961-91fa-450a-b791-a8ced02d3c2b",
+      "result_id": "911dd7ad-71e2-4818-a39c-ca69e3bae51a"
+    },
+    {
+      "claim_id": "831ae3b1-ee33-4ff0-9af2-b16d12f9e325",
+      "result_id": "911dd7ad-71e2-4818-a39c-ca69e3bae51a"
+    },
+    {
+      "claim_id": "b333cf55-8660-4d09-b24c-11604db98e02",
+      "result_id": "911dd7ad-71e2-4818-a39c-ca69e3bae51a"
+    },
+    {
+      "claim_id": "05d2ccbc-a910-4a78-b4e2-0c898f33e10c",
+      "result_id": "911dd7ad-71e2-4818-a39c-ca69e3bae51a"
+    },
+    {
+      "claim_id": "61b81c8b-c699-43c2-ad5b-5647e65acee8",
+      "result_id": "911dd7ad-71e2-4818-a39c-ca69e3bae51a"
+    },
+    {
+      "claim_id": "ba58c22d-5f29-41b5-8798-95edb30a199c",
+      "result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473"
+    },
+    {
+      "claim_id": "cba974c5-ef36-489b-9ac9-9a4a1df0ee85",
+      "result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473"
+    },
+    {
+      "claim_id": "90a7d1a7-8ef9-4e01-9a62-e436b05fc5c8",
+      "result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473"
+    },
+    {
+      "claim_id": "5afdf5da-ac4f-4956-8889-2c597d66206d",
+      "result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473"
+    },
+    {
+      "claim_id": "4478e7cc-89bd-400f-a94f-4c6f95bf183b",
+      "result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473"
+    },
+    {
+      "claim_id": "68a10117-e8ea-49a0-8949-fb7268619c08",
+      "result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473"
+    },
+    {
+      "claim_id": "da884e63-15c2-4275-b65f-e6459ee73f0f",
+      "result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473"
+    },
+    {
+      "claim_id": "349723df-5a92-4587-8af0-6c98887fb97c",
+      "result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473"
+    },
+    {
+      "claim_id": "0a1a2207-683f-4045-9a02-3cead6a945b8",
+      "result_id": "793849b2-f4d9-4f84-a7c8-37b0a80eff84"
+    },
+    {
+      "claim_id": "42d79f5f-7bef-4780-9c74-0f3274ebb059",
+      "result_id": "793849b2-f4d9-4f84-a7c8-37b0a80eff84"
+    },
+    {
+      "claim_id": "9052f8dc-a2c5-4b83-8e24-7b454d6e492a",
+      "result_id": "793849b2-f4d9-4f84-a7c8-37b0a80eff84"
+    },
+    {
+      "claim_id": "d580e647-2f55-417d-a21c-9203332cdc37",
+      "result_id": "793849b2-f4d9-4f84-a7c8-37b0a80eff84"
+    },
+    {
+      "claim_id": "3533d9af-8019-4f89-bb2b-e86710ba71fe",
+      "result_id": "793849b2-f4d9-4f84-a7c8-37b0a80eff84"
+    },
+    {
+      "claim_id": "d273cf11-01b6-47a3-8fef-b04b3c5156fd",
+      "result_id": "793849b2-f4d9-4f84-a7c8-37b0a80eff84"
+    },
+    {
+      "claim_id": "751af1db-c75a-4944-a31e-a7622a6a89ce",
+      "result_id": "68f11ba3-76a1-455f-b9cf-48e0baaa680d"
+    },
+    {
+      "claim_id": "98a46593-d307-4ccd-8357-461f88445692",
+      "result_id": "68f11ba3-76a1-455f-b9cf-48e0baaa680d"
+    },
+    {
+      "claim_id": "a21789b3-5e33-47a5-8ed8-ae338f99beb3",
+      "result_id": "68f11ba3-76a1-455f-b9cf-48e0baaa680d"
+    },
+    {
+      "claim_id": "70a05e7e-dce5-43f8-bd2a-047697c679fd",
+      "result_id": "68f11ba3-76a1-455f-b9cf-48e0baaa680d"
+    },
+    {
+      "claim_id": "23a66d89-577d-4800-9d71-e4c5a865847c",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "1d8fa7a0-b031-4c3b-84c5-61da1f359d79",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "018e1578-3d25-4634-a18f-8633a60783dc",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "6d46b069-c563-4795-ae70-729eb211a94a",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "98bffc8b-c32e-4ed0-ad0d-88ce9f22cc8b",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "adce3270-6296-49b2-a183-e0bb9ffa8521",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "b6c33fa8-d9ce-4398-b994-757ad83fc3ee",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "ab34f608-7762-43e4-a34a-d0bc5751d110",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "90c85586-42e6-4b10-8656-24d1b606f2a2",
+      "result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70"
+    },
+    {
+      "claim_id": "4dfd411b-6172-4bbd-a482-498600756e3a",
+      "result_id": "103723d7-8bed-4bc2-92ef-f131537e259e"
+    },
+    {
+      "claim_id": "d43286a0-9204-4d86-a4dc-c205c1a3fa46",
+      "result_id": "103723d7-8bed-4bc2-92ef-f131537e259e"
+    },
+    {
+      "claim_id": "5e96a73a-1d82-4b2f-b21f-50a2c130e9ba",
+      "result_id": "08a8a64b-76da-42d5-9066-9cf162488d9d"
+    },
+    {
+      "claim_id": "8f450955-8a46-4899-87cc-5e5d09053e5f",
+      "result_id": "08a8a64b-76da-42d5-9066-9cf162488d9d"
+    },
+    {
+      "claim_id": "aa701a24-a547-42a4-ae57-3566b12b256a",
+      "result_id": "08a8a64b-76da-42d5-9066-9cf162488d9d"
+    },
+    {
+      "claim_id": "cab9cc50-3959-48c7-a226-eeb36b686c03",
+      "result_id": "08a8a64b-76da-42d5-9066-9cf162488d9d"
+    },
+    {
+      "claim_id": "27246de7-ccc8-4e5d-ac84-6f4db8977882",
+      "result_id": "08a8a64b-76da-42d5-9066-9cf162488d9d"
+    },
+    {
+      "claim_id": "35dfe38c-9fca-4b75-9fa5-103668c9399d",
+      "result_id": "08a8a64b-76da-42d5-9066-9cf162488d9d"
+    },
+    {
+      "claim_id": "cba974c5-ef36-489b-9ac9-9a4a1df0ee85",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "4478e7cc-89bd-400f-a94f-4c6f95bf183b",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "68a10117-e8ea-49a0-8949-fb7268619c08",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "da884e63-15c2-4275-b65f-e6459ee73f0f",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "349723df-5a92-4587-8af0-6c98887fb97c",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "60f94ca4-25c5-46de-a20d-ab504b25a3ca",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "f75d173b-e270-442d-9292-653e7476c153",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "8748c0af-7e2e-4850-b6c9-8cc9f7ee819a",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "41a7cd8e-3ad3-40d8-906a-4efbc26fa910",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "25b286f2-827e-49f6-b889-84d8b915c437",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "e16f7961-91fa-450a-b791-a8ced02d3c2b",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "05d2ccbc-a910-4a78-b4e2-0c898f33e10c",
+      "result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba"
+    },
+    {
+      "claim_id": "9052f8dc-a2c5-4b83-8e24-7b454d6e492a",
+      "result_id": "5e939f35-920f-48ea-9ca4-7c9de7453c85"
+    },
+    {
+      "claim_id": "d580e647-2f55-417d-a21c-9203332cdc37",
+      "result_id": "5e939f35-920f-48ea-9ca4-7c9de7453c85"
+    },
+    {
+      "claim_id": "3533d9af-8019-4f89-bb2b-e86710ba71fe",
+      "result_id": "5e939f35-920f-48ea-9ca4-7c9de7453c85"
+    },
+    {
+      "claim_id": "d273cf11-01b6-47a3-8fef-b04b3c5156fd",
+      "result_id": "5e939f35-920f-48ea-9ca4-7c9de7453c85"
+    },
+    {
+      "claim_id": "831ae3b1-ee33-4ff0-9af2-b16d12f9e325",
+      "result_id": "5e939f35-920f-48ea-9ca4-7c9de7453c85"
+    },
+    {
+      "claim_id": "b333cf55-8660-4d09-b24c-11604db98e02",
+      "result_id": "5e939f35-920f-48ea-9ca4-7c9de7453c85"
+    },
+    {
+      "claim_id": "0e1e296e-3206-423d-a15b-d6f145dd32a6",
+      "result_id": "c42ffa1f-5f4b-4562-838b-2e026becbf27"
+    },
+    {
+      "claim_id": "01dc6ad5-720e-4b53-99c6-8168ee3015d2",
+      "result_id": "c42ffa1f-5f4b-4562-838b-2e026becbf27"
+    },
+    {
+      "claim_id": "906ccec7-c65f-452b-b3a0-55ffb4398065",
+      "result_id": "c42ffa1f-5f4b-4562-838b-2e026becbf27"
+    },
+    {
+      "claim_id": "9dc2c898-95bd-4001-9c10-58302cb156d0",
+      "result_id": "c42ffa1f-5f4b-4562-838b-2e026becbf27"
+    },
+    {
+      "claim_id": "d23b2254-80f2-4ff8-aa56-435867eab404",
+      "result_id": "c42ffa1f-5f4b-4562-838b-2e026becbf27"
+    },
+    {
+      "claim_id": "da2c140a-e4d0-455b-9dfb-78ea724c1330",
+      "result_id": "ce551a3a-2659-4aa8-9241-ae975727602c"
+    },
+    {
+      "claim_id": "51beea2e-92f0-48b5-b25e-54726ebb6de2",
+      "result_id": "ce551a3a-2659-4aa8-9241-ae975727602c"
+    },
+    {
+      "claim_id": "8efa01d8-9c09-4b44-87c1-364fb0a39748",
+      "result_id": "ce551a3a-2659-4aa8-9241-ae975727602c"
+    },
+    {
+      "claim_id": "d5e78fe3-ec94-4e07-b73c-654fbeec3695",
+      "result_id": "ce551a3a-2659-4aa8-9241-ae975727602c"
+    },
+    {
+      "claim_id": "61b81c8b-c699-43c2-ad5b-5647e65acee8",
+      "result_id": "ce551a3a-2659-4aa8-9241-ae975727602c"
+    },
+    {
+      "claim_id": "0566e39c-643f-49a5-99a4-216a02201244",
+      "result_id": "cde04512-81e8-4f7d-af9c-ceab315f5a18"
+    },
+    {
+      "claim_id": "bd728330-6790-405b-bb4a-37297ed8eb43",
+      "result_id": "cde04512-81e8-4f7d-af9c-ceab315f5a18"
+    },
+    {
+      "claim_id": "3d8bb7e8-4a82-47f1-aab2-2cc958d8ff77",
+      "result_id": "cde04512-81e8-4f7d-af9c-ceab315f5a18"
+    },
+    {
+      "claim_id": "5eeae292-5b38-4332-a3d7-6e7c43db3d4e",
+      "result_id": "cde04512-81e8-4f7d-af9c-ceab315f5a18"
+    },
+    {
+      "claim_id": "9982666b-4508-4ec0-9ba3-5a40dadca05c",
+      "result_id": "cde04512-81e8-4f7d-af9c-ceab315f5a18"
+    },
+    {
+      "claim_id": "3b5a04f7-be9d-42ae-803f-f856c5a74921",
+      "result_id": "cde04512-81e8-4f7d-af9c-ceab315f5a18"
+    },
+    {
+      "claim_id": "a39710f9-c4b3-41d5-bf66-98baa94437b0",
+      "result_id": "cde04512-81e8-4f7d-af9c-ceab315f5a18"
+    },
+    {
+      "claim_id": "20c40dd3-868e-4ffa-862a-802ae922c3c7",
+      "result_id": "51f9069b-9062-4482-8617-c329d3f442e3"
+    },
+    {
+      "claim_id": "6e879969-776c-418b-85c4-8a29331b07d3",
+      "result_id": "51f9069b-9062-4482-8617-c329d3f442e3"
+    },
+    {
+      "claim_id": "24970971-5eb6-4d3a-9922-ebb169d03e99",
+      "result_id": "51f9069b-9062-4482-8617-c329d3f442e3"
+    },
+    {
+      "claim_id": "41126b36-304b-4ba0-94a3-061fd982fd48",
+      "result_id": "db1c0ec6-fa01-4a33-904c-2f756d836249"
+    },
+    {
+      "claim_id": "4132c5e3-7907-4ce0-b971-b5e46c9f2d9c",
+      "result_id": "db1c0ec6-fa01-4a33-904c-2f756d836249"
+    },
+    {
+      "claim_id": "1d8fa7a0-b031-4c3b-84c5-61da1f359d79",
+      "result_id": "df00fd3e-acc0-4cc6-856b-84fc81d12cd0"
+    },
+    {
+      "claim_id": "018e1578-3d25-4634-a18f-8633a60783dc",
+      "result_id": "df00fd3e-acc0-4cc6-856b-84fc81d12cd0"
+    },
+    {
+      "claim_id": "ab34f608-7762-43e4-a34a-d0bc5751d110",
+      "result_id": "df00fd3e-acc0-4cc6-856b-84fc81d12cd0"
+    },
+    {
+      "claim_id": "90c85586-42e6-4b10-8656-24d1b606f2a2",
+      "result_id": "df00fd3e-acc0-4cc6-856b-84fc81d12cd0"
+    },
+    {
+      "claim_id": "4dfd411b-6172-4bbd-a482-498600756e3a",
+      "result_id": "a50201f3-ea0d-4f90-b2db-dfb40c0a40b1"
+    },
+    {
+      "claim_id": "d43286a0-9204-4d86-a4dc-c205c1a3fa46",
+      "result_id": "a50201f3-ea0d-4f90-b2db-dfb40c0a40b1"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "96a544f3-024f-4745-b614-6e16d2fd859c",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "530f22db-1ee0-460c-90f6-110b7aad7788",
+      "peer_result_id": "cde04512-81e8-4f7d-af9c-ceab315f5a18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C42-C48 regarding the absence of rs28383206 and the explanation based on allele frequency patterns and imputation panel differences. Both evaluations find this explanation supported and neither raises concerns about the discrepancy with ITHGC results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "5c96ab6d-14b5-48d4-bcc9-adfe372b6a11",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "d1a55805-c2db-4206-9402-3b475da37ac9",
+      "peer_result_id": "51f9069b-9062-4482-8617-c329d3f442e3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C71-C73 regarding power calculations and case-control imbalance. Both evaluations find the acknowledgment of limitations and power calculations appropriate. OpenEval notes transparency while peer reviewers implicitly accept these statistical considerations without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "eab6f377-c170-427e-8fc6-fc9dc0b1be98",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "103723d7-8bed-4bc2-92ef-f131537e259e",
+      "peer_result_id": "a50201f3-ea0d-4f90-b2db-dfb40c0a40b1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Strong disagreement on claims C93-C94 regarding statistical thresholds. OpenEval finds the use of STEAM for LAAA analysis appropriate and following best practices. However, peer reviewers raise substantive unresolved concerns about applying STEAM thresholds (designed for admixture mapping) to the LAAA model (a joint test), questioning whether this is methodologically appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "850fed66-ff87-46b6-b353-08d6bceba3f1",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "05e5874e-f3de-417d-9d17-4f5c99801659",
+      "peer_result_id": "c42ffa1f-5f4b-4562-838b-2e026becbf27",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C27-C30 regarding ancestry characterization using ADMIXTURE analysis. Both evaluations find these results well-supported. Peer reviewers additionally confirm that concerns about batch effect correction affecting ancestry inference were satisfactorily addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "518c3bbb-240f-49cc-abee-a752583d6ae8",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf",
+      "peer_result_id": "08a8a64b-76da-42d5-9066-9cf162488d9d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on claims C33-C37, C4, C49-C50 regarding the HLA-DPB1 association. OpenEval rates this as UNCERTAIN due to the suggestive but not genome-wide significant p-value and lack of replication. In contrast, peer reviewers rate this as SUPPORTED, with the editor calling the evidence 'solid' and treating the near-genome-wide significant association as a valuable finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "cc5f137c-d5e9-4cac-a47b-444cab2d50e3",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "793849b2-f4d9-4f84-a7c8-37b0a80eff84",
+      "peer_result_id": "5e939f35-920f-48ea-9ca4-7c9de7453c85",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C21-C26 regarding the rationale for using LAAA in admixed populations. OpenEval finds the methodological foundation well-supported by citations. Peer reviewers explicitly praise this as an 'Excellent demonstration of GWAS analytical pipelines in highly admixed populations' and confirm the utility of ancestry adjustment for improving study power.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "04bcc5f2-07c8-4e83-95b5-4b5b3457c02e",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "367d2856-1a4d-40f0-aaaf-76386e25ee70",
+      "peer_result_id": "df00fd3e-acc0-4cc6-856b-84fc81d12cd0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C84-C92 regarding GWAS data processing methods. OpenEval finds these methods standard and appropriate. However, peer reviewers raise UNCERTAIN concerns about why ~90% of SNPs were removed between QC and LAAA analysis, requesting clarification about pre-imputation SNP counts and the proportion of imputed SNPs\u2014concerns not fully addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "743b88ab-968b-4f36-8cde-4f24add2825d",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "782e3502-dc0a-41ae-b4fb-85acdd349caf",
+      "peer_result_id": "db1c0ec6-fa01-4a33-904c-2f756d836249",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C33, C35 regarding statistical significance and quality control. OpenEval rates the association as UNCERTAIN due to not reaching genome-wide significance. Peer reviewers rate this as SUPPORTED, with the editor characterizing it as 'near-genome-wide significant' and treating it as valuable despite not reaching the threshold.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "18535e33-2bb5-4b5b-b556-2ec188d3f66b",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "911dd7ad-71e2-4818-a39c-ca69e3bae51a",
+      "peer_result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba",
+      "openeval_evaluation_type": "UNSUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Strong disagreement on claims C74-C78 regarding confirmation of HLA-II associations. OpenEval rates these claims as UNSUPPORTED, stating the authors overstate findings and that claiming to 'confirm' associations is not justified by a single suggestive signal. In contrast, peer reviewers rate this as SUPPORTED, with the editor explicitly stating the study 'confirms the association between HLA-II region and TB susceptibility' and calling it a 'valuable study.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "cc11a2b3-bbc4-40c0-acf0-4f87aa35465d",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "02c93ec4-385a-495b-bafc-e566b5af357e",
+      "peer_result_id": "ce551a3a-2659-4aa8-9241-ae975727602c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C51-C53 regarding HLA-DPB1 polymorphism and protective effects. OpenEval finds the interpretation appropriate though limited by suggestive p-value. Peer reviewers support the biological significance and interpretation of protective effects without challenge, affirming the work's relevance to TB susceptibility research.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "573f10ef-e57f-43b5-bb6f-a8d06ebfae0e",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "4f5cc39d-dabf-49bf-9b00-52491838e473",
+      "peer_result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C1-C3, C16-C20 regarding prior ITHGC study results and context. OpenEval finds the characterization of prior work accurate and appropriately cited. Peer reviewers acknowledge this provides context and note the current study's peak is 'distinct from the class II HLA DQA1 loci significant in the ITHGC analysis.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "91d5ef9f-ccbf-4149-ae7d-1a0930031c46",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "5312b7d9-970a-4266-a0d5-d70147179293",
+      "peer_result_id": "5a5e4839-cef2-4746-ad95-f66c9a28ddba",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C54-C59 regarding differences from ITHGC and necessity of LAAA. OpenEval rates this as UNCERTAIN, noting the claim that LAAA is necessary is based on a suggestive association and lacks independent validation. Peer reviewers rate this as SUPPORTED, explicitly affirming that 'increase power is related to the LAAA model application rather than simply increase sample size.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "58b79f83-8d40-421c-a939-aacb0b2a4a3d",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "5fe1850b-870b-4e2e-b3f5-fd4a014ad81d",
+      "peer_result_id": "ce551a3a-2659-4aa8-9241-ae975727602c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C62-C70 regarding biological context and HLA-II function in TB pathogenesis. OpenEval finds the contextualization within immunological knowledge well-supported. Peer reviewers affirm this provides 'Further confirmation of the importance of the HLA class II locus in genetic susceptibility to TB' and find the biological significance appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "61ebca8b-a3d2-45e0-9394-df01377d7507",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "7eb7f68b-2a94-44c7-8ab6-ab28f9bfe950",
+      "peer_result_id": "c42ffa1f-5f4b-4562-838b-2e026becbf27",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C31-C32 regarding individual-level variation in ancestral segments. OpenEval finds the local ancestry karyograms appropriately demonstrate variation. Peer reviewers do not challenge these findings, and concerns about batch effects on ancestry inference were satisfactorily resolved.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "b2876866-afce-4761-bf10-d2803e30e83d",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "9ff3a58f-05d6-4d5b-9282-518c0d870d96",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C38-C41 regarding genomic annotation and nearby functional genes SUPPORTED based on established knowledge about pseudogene function. No corresponding peer review evaluation found for these specific annotation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "290d8855-7d02-468a-933f-fd6d9d549ca1",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "93a84e58-7cfd-4fca-baab-54ce12aa0726",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates claims C60-C61 regarding population-specific signals as UNCERTAIN, noting they are speculative and require additional research. No corresponding peer review evaluation found addressing this specific hypothesis about population specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    },
+    {
+      "id": "4d1195b7-dc76-45cb-a94e-6f23bdecca56",
+      "submission_id": "e15ceebb-71a0-4b53-b843-6d52484f512a",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "68f11ba3-76a1-455f-b9cf-48e0baaa680d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C80-C83 regarding study design and phenotype definitions SUPPORTED, noting the important distinction that controls represent disease resistance rather than infection susceptibility. No corresponding peer review evaluation found for these study design claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:39:49.360792Z"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C22",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors created a fully human-annotated mesoSPIM dataset containing 2,632 neural nuclei from mouse neocortex, claimed to be the first human-annotated ground truth 3D data from mesoSPIM samples. The dataset was derived from CLARITY-cleared TPH2-tdTomato mouse tissue acquired with mesoSPIM at 0.63X zoom with 561 nm excitation, cropped to somatosensory and visual cortex regions, and manually annotated in 3D.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the dataset as an important contribution, with the editor stating 'tested on an annotated dataset' and reviewers confirming 'comprehensive evaluation of their method and comparisons to other approaches for multiple datasets.' No concerns were raised about the dataset creation or annotation quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C77",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors developed WNet3D, a novel 3D self-supervised learning method for cell segmentation inspired by WNet, with modifications including conversion to fully 3D architecture, addition of SoftNCuts loss, replacement of two-step model update with weighted sum of encoder/decoder losses, trimming weights for faster inference, and introduction of group normalization. The model was typically trained for 50 epochs with batch size of 2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the work as presenting 'a self-supervised method for the segmentation of 3D cells' and states 'the segmentation method is solid.' Reviewers acknowledge the method development without raising concerns about the architectural modifications or training approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C34",
+      "C35",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "WNet3D trained without ground truth labels achieves performance on par with state-of-the-art supervised methods on the mesoSPIM dataset. The pretrained WNet3D achieved 0.81\u00b10.004 F1-Score with artifact filtering and 0.74\u00b10.12 without filtering. With 80% raw data, WNet3D achieved 0.71\u00b10.03 F1-Score (unfiltered), comparable to supervised models. With only 10% training data, WNet3D achieved 0.74\u00b10.02 F1-Score, on-par with top supervised model SwinUNetR (0.78\u00b10.07). Statistical testing showed WNet3D was not significantly different from best-performing supervised models (SwinUNetR p=1, Cellpose tuned p=0.21, SegResNet p=0.076).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the comparisons were performed ('compares favorably to other learning-based methods and Otsu thresholding'), one reviewer raises significant concerns: 'Given the good results for Otsu thresholding alone (quite close F1-score to WNet 3d), it seems like DL might not really be necessary at all for this dataset.' Another reviewer questions whether artifact removal was applied consistently to baselines, noting 'it is unclear whether the Otsu thresholding baseline was given the same post-processing as the WNet3D,' which could affect the validity of performance comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The supervised models (SwinUNetR and SegResNet) have comparable instance segmentation performance to Cellpose and StarDist on held-out test data from the mesoSPIM dataset. With 80% training data, SwinUNetR achieved the best performance (0.83\u00b10.01 F1-Score), followed by Cellpose tuned (0.76\u00b10.03), SegResNet (0.74\u00b10.006), and StarDist tuned (0.72\u00b10.007).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer expresses strong concerns about the baseline performance: 'CellPose and StarDist perform poorly in all the experiments performed by the authors. In almost all cases they underperform Otsu thresholding, which is in most cases on par with the WNet results... This is surprising and contradicts the collective expertise of the community.' The reviewer suggests 'Perhaps these methods were not trained in an optimal way' and notes 'the reported results should by no means be taken as a fair assessment of the capabilities of StarDist or CellPose.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "WNet3D was benchmarked on three additional 3D datasets (Platynereis-ISH-Nuclei, Platynereis-Nuclei, and Mouse-Skull-Nuclei) with varying cell sizes, densities, and imaging modalities. The pretrained WNet3D model (trained only on mesoSPIM dataset) generalized favorably across datasets, achieving on average the highest F1-Score on each individual dataset, with notably strong performance on the challenging Mouse Skull dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the benchmarking ('comprehensive evaluation of their method and comparisons to other approaches for multiple datasets'), but the same concerns about baseline method performance apply. One reviewer notes that CellPose and StarDist 'underperform Otsu thresholding' across experiments, questioning whether these methods were optimally trained, which undermines confidence in the generalization claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C63"
+    ],
+    "result": "WNet3D can be used for active learning by generating 3D labels that can be corrected and used to train supervised models. A SwinUNetR trained using WNet3D self-supervised generated labels can be nearly as good as a fully supervised model requiring human 3D labels (no significant difference across F1 vs. IoU thresholds; Kruskal-Wallis H test H=4.91, p=0.085, n=9).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this workflow as part of the comprehensive evaluation without raising specific concerns. The editor notes the work offers 'the possibility of eliminating time-consuming data labeling to speed up quantitative analysis,' which aligns with the active learning approach demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C51",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors developed CellSeg3D, a Python package providing access to models in Jupyter Notebooks and a napari GUI plugin with full support for labeling, training (self-supervised or supervised), model inference, evaluation, and various pre/post-processing utilities. A 3D annotator in napari was built to aid expert labeling. All code and data is open-sourced, and pretrained weights are available through HuggingFace.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly notes the work is 'conveniently packaged as a Napari plugin' and states 'This work will be of interest to a wide variety of laboratories analysing fluorescently labeled images.' Reviewers acknowledge the software contribution without raising concerns about its functionality or accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C61",
+      "C62"
+    ],
+    "result": "WNet3D has limitations: as a self-supervised method, it cannot inherently discriminate cells vs. artifacts (having no notion of a 'cell'), it excels in samples with enough signal-to-noise separation (clearly visible nuclei), and as a semantic segmentation method, it requires fine-tuning of threshold parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly acknowledge these limitations through their questions about artifact filtering. One reviewer asks 'Why don't you also report the score for Otsu thresholding - No Artifacts?' noting that 'post-processing (or artifact removal) seems to have a substantial impact on accuracy,' which aligns with the authors' stated limitations about artifact discrimination and threshold tuning.",
+    "result_type": "MINOR"
+  }
+]

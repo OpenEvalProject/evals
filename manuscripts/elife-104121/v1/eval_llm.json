@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Microbiota composition causally influences hepatic gene expression in response to oxalate. SW-SW mice showed oxalate-induced hepatic stress (219 genes upregulated, increased mitochondrial/translation activity), while SW-NALB mice showed minimal response (21 genes downregulated, decreased sulfation). Since hosts differed only by microbiota, this demonstrates microbiota-dependent oxalate effects on liver function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 provide converging evidence from a well-controlled fecal transplant experiment where genetically identical mice received different microbiota. The RNAseq data (Figure 1) shows clear differential hepatic responses based on microbiota composition, with appropriate statistical analysis (FDR<0.05) and pathway enrichment. The experimental design properly isolates microbiota as the causal variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Oxalate differentially impacts gut microbial metabolism depending on microbiota composition. SW-SW mice showed net decrease in 162 metabolites (negative impact), while SW-NALB mice showed net increase in 83 metabolites (positive impact). The SW-NALB response exhibits homeostatic feedback with minimal metabolic disruption, contrasting with the large disruption in SW-SW mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are supported by untargeted metabolomics data (Figure 2) with appropriate statistical analysis (FDR<0.05, Mann-Whitney U test). The interpretation of homeostatic feedback in SW-NALB mice is reasonable given the smaller magnitude of changes and net positive metabolite shift. The integration with transcriptomic data (Figure 2C) strengthens the causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Oxalate stimulates taxonomically diverse but metabolically redundant microorganisms in N. albigula. Oxalate exposure significantly altered metagenome composition (p=0.02), increasing 1073 genes and decreasing 382 genes, including oxalate metabolism, formate metabolism, and sugar metabolism genes. The lack of metabolomic change despite metagenomic shifts suggests adaptive metabolic redundancy maintains homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 are well-supported by shotgun metagenomic data (Figure 3) with appropriate statistical analysis (FDR<0.05, Wald test). The longitudinal design strengthens the inference of adaptation. The interpretation of metabolic redundancy is supported by the combination of metagenomic changes (Figure 3) with stable metabolomic profiles (Figure 2, SW-NALB). However, the inference of redundancy would be stronger with direct functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Oxalate metabolism genes are widely distributed across diverse taxa in N. albigula gut microbiota. 59.3% of genomes contain oxalate-related genes, but only 27.8% have complete degradation pathways. Formate (97.18%), acetogenic (97.18%), and methanogenic (100%) genes are nearly ubiquitous, while sulfate-reducing genes are less common (31.05%). The broad taxonomic distribution suggests horizontal gene transfer and functional redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are supported by comprehensive genome analysis of 248 high-quality genomes (Figure 4, >80% complete, >90% pure). The quantification of gene distribution is clear and well-presented. The inference of horizontal gene transfer (C77) is reasonable given the broad taxonomic distribution but relies on a single citation rather than direct evidence from this study. The distinction between genes present vs. complete pathways (C70 vs C71) is important and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Both substrate availability and microbial community composition impact oxalate metabolism in vitro. Substrates enriched by oxalate exposure differentially affect oxalate degradation and microbial growth (p<0.001). Significant oxalate metabolism occurs even without O. formigenes, demonstrating metabolic redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by in vitro experimental data (Figure 5A-F) with appropriate statistical analysis (ANOVA p<0.001). The experimental design tests both substrate effects and community composition effects. The demonstration of oxalate metabolism without O. formigenes (C81) directly supports the redundancy hypothesis. However, the in vitro conditions may not fully reflect in vivo complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Diverse oxalate-degrading bacteria mitigate oxalate homeostasis and pathology as effectively as O. formigenes alone. While O. formigenes produced the greatest reduction in urinary/fecal oxalate, other oxalate-degrading bacteria also significantly reduced oxalate vs. controls. Renal CaOx deposition, cardiac fibrosis, and colitis tracked oxalate levels and did not require O. formigenes if other oxalate-degraders were present. Adding O. formigenes to an effective microbiota provided no additional benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are strongly supported by in vivo transplant experiments (Figure 6) with appropriate controls, sample sizes (n=16/group), and statistical analysis (ANOVA p<0.001). The key finding that O. formigenes is not additive when other oxalate-degraders are present (C87) is well-demonstrated by comparing Groups 2, 3, and 4. The correlation between oxalate levels and pathology (C85) is supported by histopathology data. This is a central finding addressing the clinical question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The All (Group 4) microbial consortium provided protective effects against oxalate exposure. While overall microbiome composition in stool was not different between groups, the All group showed significantly lower within-group beta-diversity, greatest post-antibiotic alpha diversity recovery, and stable persistence of inoculated bacteria throughout the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by 16S rRNA sequencing data (Figure 6\u2014figure supplement 2) with appropriate statistical analysis (PERMANOVA, paired t-tests). The finding of lower within-group variation (C90) and better recovery (C91) in the All group supports the protective effect interpretation. However, the lack of overall compositional differences (C89) suggests the protective effect may be more about functional redundancy than taxonomic composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The metabolic cohort was less effective than the taxonomic cohort at inducing oxalate metabolism but showed greater effects on formate metabolism. In both cohorts, urinary oxalate (but not formate) correlated with CaOx deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by comparison of the two independent cohort studies (Figure 6 vs. Figure 6\u2014figure supplement 3). The differential effectiveness (C93) and formate effects (C94) are clearly shown in the data. The correlation analysis (C95) is appropriate. However, the batch effects acknowledged by the authors (C121) complicate direct comparison between cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Oxalate homeostasis is primarily mediated by metabolic redundancy among diverse oxalate-degrading bacteria rather than a single species. This conclusion integrates findings showing: (1) microbiota-dependent host responses (Figure 1), (2) microbiota-dependent microbial metabolic changes affecting host (Figure 2), (3) widespread distribution of oxalate genes (Figures 3-4), and (4) effectiveness of diverse bacteria vs. single species (Figure 6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 represent the primary conclusion synthesizing multiple lines of evidence. The stepwise experimental approach (transcriptomics \u2192 metabolomics \u2192 metagenomics \u2192 genome analysis \u2192 in vitro \u2192 in vivo) provides strong converging support. Each component experiment is well-controlled and statistically sound. The conclusion that redundancy is the primary mechanism is well-justified by the data, particularly the in vivo demonstration that diverse bacteria are as effective as O. formigenes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Metabolic redundancy among diverse taxa is the primary driver of oxalate homeostasis. Heterogeneity in microbiome composition significantly impacted multiple diet-microbe-host interfaces (hepatic activity, gut metabolism, renal mineralization, inflammation, cardiac fibrosis). Oxalate degradation was highly redundant in N. albigula. O. formigenes reduced oxalate but showed no additive effect when co-administered with other oxalate-degraders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 summarize the main findings with strong support from multiple experimental systems. The evidence for redundancy over cooperation is compelling, though the authors acknowledge the cooperation hypothesis remains inconclusive (C107). The integration of molecular, in vitro, and in vivo data provides robust support for the redundancy conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C122"
+    ],
+    "result": "The metabolic cooperation hypothesis (where oxalate degradation by-products are used in downstream pathways like acetogenesis, methanogenesis, sulfate reduction) remains inconclusive due to multiple host and microbial sources of formate confounding the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107 and C122 appropriately acknowledge a limitation of the study. The authors correctly identify that formate measurements are confounded by multiple sources, making it difficult to definitively test the cooperation hypothesis. This honest assessment of uncertainty is appropriate given the data (e.g., C84, C94 showing inconsistent formate patterns).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors propose a three-phase pre-clinical workflow for developing bacteriotherapies: Phase I (case-control metagenome studies to identify microbiome-influenced phenotypes), Phase II (mechanistic in vitro/germ-free studies), and Phase III (complex systems modeling to identify critical variables). This approach should enable more effective probiotic and patient selection for clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C119, C126-C127 propose a workflow based on the current study's approach. While the logic is sound and the current study demonstrates the value of this approach for oxalate metabolism, the generalizability to other diet-microbe-host interactions is speculative. The proposal is reasonable but lacks validation beyond the single case study presented. This is more of a perspective/framework than a tested result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Clinical trials with O. formigenes have shown variable success (43% of studies show significant reduction in urine oxalate), and oxalate-degrading lactic acid bacteria have been successful in only 37.5% of studies. Despite well-understood mechanisms of oxalate metabolism, mechanistic knowledge alone is insufficient for developing effective bacteriotherapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by citations to published meta-analyses (Batagello et al., 2018; Ariceta et al., 2023). These claims establish the clinical motivation for the study and are appropriately cited. The inference that mechanistic knowledge is insufficient (C45) is reasonable given the variable clinical outcomes despite decades of mechanistic research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Oxalate can have positive or negative effects on microbial growth depending on species and environment. The amount of oxalate is too great for a single specialist to handle alone, supporting the 'ecosystem on a leash' hypothesis. Formate toxicity to bacteria and hosts provides ecological pressure for its metabolism. The gut microbiota serves as an adaptive organ where metabolically redundant microbes eliminate dietary components for their own benefit, residually affecting host health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 integrate current findings with prior literature to provide ecological/evolutionary context. C108 is supported by current data (Figures 2B, 5B) and citations. C109 is a reasonable inference from the redundancy data though somewhat speculative. C110 is well-supported by multiple citations. C111 synthesizes the findings within an established theoretical framework (adaptive organ concept) with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Study limitations include: (1) host genetics were largely excluded from most experiments and may impact oxalate homeostasis beyond the microbiota, and (2) batch effects are apparent between the taxonomic and metabolic cohort studies (e.g., creatinine values, urine output).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 appropriately acknowledge study limitations. C120 correctly identifies that host genetics were controlled in most experiments (except N. albigula study) and may be an additional layer of complexity. C121 acknowledges batch effects visible in the data (e.g., Figure 6\u2014figure supplement 1C vs. Figure 6\u2014figure supplement 4C), which is important for interpreting differences between cohort studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The negative effects of oxalate were mitigated by metabolically redundant oxalate-degrading bacteria more than by metabolic cooperation or a single species. O. formigenes can lower urine oxalate on a poor oxalate-degrading background but loses this effect when co-administered with other oxalate-degrading bacteria. This explains why N. albigula effectively degrades even very high dietary oxalate levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 represent the main conclusions, well-supported by the integrated experimental evidence. C123 is supported by the totality of data. C124 is the key mechanistic finding directly demonstrated in Figure 6. C125 connects the findings to the N. albigula natural history, supported by current data and prior citations. These conclusions directly address the study objectives and clinical question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background context: Host-associated microbiomes impact all aspects of health, but effective microbiome-targeted therapies have been elusive due to complexity. Many probiotic clinical trials show variable results despite known mechanisms. Complex systems theory may help bridge the gap between mechanistic studies and effective bacteriotherapies, but few studies have integrated experimental biology with complex systems approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide literature-based background context, all supported by appropriate citations to published work. These establish the rationale and knowledge gaps motivating the study. The characterization of the field's history and current challenges is accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Complex systems theory background: Mammals and gut microbiota form a holobiont with form/function driven by host-microbe and microbe-microbe interactions ('ecosystem on a leash'). Essential features include functional redundancy, cooperation through direct interactions, distinct functional nodes, fractality, and homeostatic feedback. However, there is lack of consensus on terminology/models, and experimental evidence of multiple complexity features within single systems is sparse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 provide theoretical framework from complex systems literature, all appropriately cited. These establish the conceptual foundation for the study's approach. The characterization of complex systems features and current limitations is accurate. C23 correctly identifies the gap that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Oxalate biology background: Oxalate is an antinutrient from plants and liver metabolism that mammals cannot degrade. Multiple gut bacteria degrade oxalate through simple pathways but are antibiotic-susceptible. Elevated oxalate induces oxidative stress, inflammasome activation, and epithelial barrier disruption, linking to diseases including kidney stones, cancer, and cardiometabolic disorders. Despite decades of mechanistic knowledge, clinical trials with O. formigenes show variable success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C42 provide comprehensive background on oxalate biology, all supported by appropriate citations. These establish why oxalate is a good model system (moderate complexity, well-studied mechanisms, clinical relevance, variable trial outcomes). The characterization is accurate and well-documented, providing strong rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Methods validation: Swiss-Webster mice harbor poor oxalate-degrading microbiota (used in hyperoxaluria studies), while N. albigula exclusively consumes high-oxalate cactus and harbors highly effective oxalate-degrading microbiota. Neomycin reduces gut microbiota by ~90%. A 1.5% oxalate diet induces hyperoxaluria in Swiss-Webster mice. Fecal transplants from N. albigula induce significant oxalate metabolism. 248 high-quality genomes were extracted, with 92% showing oxalate-responsive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C135 describe methodological details and validation, all supported by citations to prior work or current data. These establish that the experimental models are appropriate and well-characterized. The genome extraction quality metrics (C134: 248 genomes; completeness >80%, purity >90%) meet current standards.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Abstract summary: Microbiome composition influenced multiple oxalate-microbe-host interfaces. O. formigenes was only effective against poor oxalate-degrading microbiota backgrounds, explaining variable clinical trial outcomes. Metabolic redundancy among diverse microorganisms in specific diet-microbe axes is a critical variable impacting bacteriotherapy efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are the abstract's main findings, well-supported by the detailed experimental results described in other claim groups. These accurately summarize the study's key contributions and are appropriately stated as findings rather than speculation.",
+    "result_type": "MAJOR"
+  }
+]

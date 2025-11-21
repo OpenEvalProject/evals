@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "m6A is the most abundant internal mRNA modification in mammals and primarily functions to promote cytoplasmic mRNA degradation via YTH family readers, explaining ~30% of mRNA half-life variation in mESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C9 establish well-documented background knowledge about m6A function, supported by multiple citations to prior literature. These claims provide the foundational context for the study and are consistently supported across the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C25",
+      "C26"
+    ],
+    "result": "Nuclear m6A levels are higher than cytoplasmic m6A levels at both sample and gene levels, as predicted by m6ADyn and confirmed experimentally in NIH3T3 cells, MEFs, and by orthogonal GLORI measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C25-C26 demonstrate strong concordance between model predictions (C19) and experimental data across multiple cell types (C20-C21) and independent methodologies (C25-C26, R=0.71 correlation). The ~82% of genes showing higher nuclear methylation provides robust quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Genes with higher nuclear:cytoplasmic localization exhibit higher overall m6A levels, as predicted by m6ADyn and confirmed in mESCs, NIH3T3, and HEK293T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 show consistent agreement between model predictions (C22) and experimental observations across three independent cell types (C23-C24). The relationship is mechanistically explained by reduced exposure to cytoplasmic m6A-dependent decay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Loss of m6A methylation causes highly methylated genes to shift toward cytoplasmic localization, as predicted by m6ADyn and observed in Mettl3 KO mESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 demonstrate agreement between model prediction (C27) and experimental observation in Mettl3 KO cells (C28). The effect is specific to highly methylated genes, supporting the model's mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "m6A-mediated decay is stronger in cytoplasmic genes and more methylated genes, with 44% of METTL3-dependent decay variability in cytoplasmic genes attributable to m6A levels versus only 19% in nuclear genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 show strong quantitative agreement between model predictions (C29-C30) and experimental data (C31-C33). The differential R\u00b2 values (0.44 vs 0.19) provide compelling evidence for compartment-specific effects of m6A on stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Transcriptional inhibition with ActD leads to decreased m6A levels that are inversely correlated with mRNA stability, as predicted by m6ADyn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C36 show qualitative agreement between model and data, but the authors note the effect is 'subtle' (C36). The manuscript's Discussion acknowledges this as a limitation where model predictions were not fully supported, suggesting the effect size is smaller than anticipated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "CPT treatment reduces m6A levels with dramatic effect sizes, and the decrease is stronger in genes with shorter half-lives, as predicted by m6ADyn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 demonstrate strong agreement between model predictions and experimental observations following CPT treatment. The 'dramatic effect sizes' and correlation with half-life provide robust support, though the quantitative discrepancy with ActD treatment remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Triple knockdown of YTHDF1-3 proteins leads to subtle increases in m6A levels and reduced nuclear:cytoplasmic ratios for highly methylated genes, partially consistent with m6ADyn predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C44 show qualitative agreement with model predictions but with important caveats: YTHDF3 was not successfully knocked down (C42), effects were 'subtle' (C43), and the authors acknowledge in Discussion that some predicted relationships were not observed. The incomplete knockdown limits interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "During heat stress, genes with increased m6A levels (high PC1) become more nuclear, while genes with decreased m6A (low PC1) show the opposite trend, with PC1 and nuclear:cytoplasmic ratio correlating at R=0.4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 establish the heat stress context (C45-C46), demonstrate nuclear retention (C47), and show systematic relationships between m6A dynamics and localization (C48-C51). The R=0.4 correlation provides quantitative support for the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "High PC1 genes (showing m6A induction during heat stress) are enriched for heat stress response genes, have shorter half-lives, become more nuclear during stress, and show transcriptional induction by Pro-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 provide converging evidence characterizing high PC1 genes. The siWtap control (C52) demonstrates m6A is not driving localization changes, while Pro-seq data (C56) confirms transcriptional induction. Gene ontology enrichment (C55) validates biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "HSF1-target genes lose m6A dynamics and nuclear enrichment during heat stress in HSF1-KO cells, while HSF1-independent genes retain normal responses, demonstrating that m6A changes are secondary to HSF1-driven transcriptional induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide strong genetic evidence that m6A dynamics in HSF1 targets depend on HSF1-mediated transcription. The differential behavior of HSF1-dependent versus independent genes (C60) serves as an internal control, supporting the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "During heat stress, m6A accumulates in genes with increased nuclear localization, primarily due to export block and, in a subset, increased transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 synthesize the heat stress findings. C61 is directly supported by experimental data (C47-C60), while C62 represents a reasonable mechanistic interpretation supported by the HSF1 experiments and export block observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "m6A deposition follows a '100-nt rule' where methylation occurs at DRACH motifs unless within ~100 nt of splice junctions, where it is inhibited by the exon-junction complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 cite recent literature establishing the 100-nt rule. These are well-supported prior findings that provide important context for the passive dynamics model proposed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Passive regulation of modifications is precedented: DNA methylation is passively diluted during cell division, and neuronal mRNA localization can be explained by mRNA stability rather than active transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 establish precedents for passive regulatory mechanisms from other systems (DNA methylation, neuronal mRNA localization). These are appropriately cited and provide conceptual framework for the m6A passive dynamics model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Changes in m6A levels across compartments and stimuli are relatively rare and subtle, and many can be accounted for by changes in mRNA metabolism rather than active site-specific control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 represent the study's main conclusion, synthesizing findings from all experiments. The conclusion is appropriately cautious ('many' rather than 'all') and acknowledges the limitations discussed throughout. The evidence from multiple experimental systems provides reasonable support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "m6A profiles are generally similar across cell types and conditions, though changes at minority of sites have been reported, and studies show conflicting results regarding m6A levels across subcellular compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 accurately summarize prior literature on m6A dynamics and compartmentalization. The citations support both the general conservation (C10, C12) and reported dynamics (C11, C13-C14), including noting conflicting findings (C13 vs C14).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Historical context and methodological background: m6A was discovered 50 years ago, modern detection uses m6A-seq/meRIP, deposition is catalyzed by METTL3-containing complex, and prior literature focused on active regulation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C15-C18 provide accurate historical and methodological context, appropriately cited. These establish the background against which the current study's passive dynamics model is positioned.",
+    "result_type": "MINOR"
+  }
+]

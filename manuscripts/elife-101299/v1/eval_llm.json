@@ -1,0 +1,567 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The ABC-Myc mouse model is an MYC-driven liver cancer genetic model from which NEJF10 cells were derived. NEJF10 cells can be cultured in both 2D and 3D conditions and are suitable for genome-wide genetic screenings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the model system used in the study. All claims are explicitly stated with citations to prior work (Fang et al., 2023) and supported by figure references showing 2D and 3D culture capability. The characterization of the cell line is foundational for the subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Approximately 44.8% of upregulated genes and 49.4% of downregulated genes under 1% oxygen are shared with 3D spheroid culture. The most significant gene signatures upregulated in 3D vs 2D under 21% oxygen are hypoxia-related, consistent with previous observations that organoid culture induces a strong hypoxia signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 provide specific quantitative data on gene expression overlap between hypoxia and 3D culture, with explicit percentages and gene counts referenced to figures and supplementary files. The hypoxia signature finding is consistent with prior work (Yang et al., 2009), providing independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Hypoxia and 3D culture induce common genes involved in focal adhesion, proteoglycans, extracellular matrix and receptor interaction, and oncogenic signaling pathways (Hippo, HIF1, Wnt, PI3K-AKT), while inhibiting genes involved in mitochondrial translation and the proteasome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 describe pathway enrichment analysis results with explicit statements and figure references. The analysis methodology (REACTOME and KEGG) is specified, and results are supported by citations. The findings are internally consistent and represent standard pathway analysis outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Genes involved in protein translation/ribosome biology, oxidative phosphorylation, and protein export are dominantly downregulated by hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are explicitly stated with figure references showing the data. These findings are distinct from the shared effects of hypoxia and 3D culture, representing hypoxia-specific transcriptional changes. The pathway analysis methodology is consistent with other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "3D culture specifically enhances expression of genes in TGF-\u03b2-SMAD signaling, regulation of pyruvate dehydrogenase complex, NOTCH, MAPK, autophagy, and lysosome pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 identify 3D-specific pathway enrichments with explicit statements and figure references. These findings distinguish 3D culture effects from hypoxia effects, representing a key result of the comparative analysis. The data are presented consistently with other pathway analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "3D culture suppresses expression of genes in DNA homologous recombination and Fanconi anemia pathways, which are involved in DNA repair and frequently mutated in various cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 describe 3D-specific suppression of DNA repair pathways with explicit statements, figure references, and citations to prior work (Knijnenburg et al., 2018). The functional context (DNA repair, cancer mutations) is appropriately cited, providing biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Hypoxia dominantly induces intron retention while 3D culture dominantly induces exon skipping in alternative splicing. Splicing is an important mechanism for cellular adaptation to environmental stress, as evidenced by altered splicing of Pdk1 under different culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe alternative splicing patterns with explicit statements and figure references. The Pdk1 example provides specific evidence for the general conclusion about splicing as an adaptation mechanism. The data are quantitative and supported by referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Cells undergo commonly shared and context-dependent transcriptional reprogramming in normoxia, hypoxia, and 3D spheroid conditions. Pathways involved in multicellular organogenesis and tissue homeostasis are specifically induced by hypoxia and/or 3D culture, suggesting that conventional 2D culture under normoxia may not recapitulate cellular fitness in 3D culture or under hypoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 represent summary conclusions based on the transcriptomic data presented in claims C5-C36. The conclusions are explicitly stated and logically follow from the presented evidence. The inference about limitations of 2D normoxic culture is appropriately qualified as a suggestion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Culture conditions have a drastic effect on DNA accessibility. While 36.1% of chromatin accessibility regions are shared across three conditions, unique chromatin accessibility is observed (20% for 2D normoxia, 7.6% for 2D hypoxia, and 13% for 3D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 present ATAC-seq results with specific percentages and figure references. The quantitative data are explicit and the methodology (ATAC-seq) is standard. The findings complement the transcriptomic data by providing a mechanistic basis for gene expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "AP1 transcription factors and CTCF are more active in normoxic 2D culture, while ATF4 is more selectively active in hypoxic 2D conditions. ATF4 is known to regulate the integrated stress response and cell survival under hypoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 describe transcription factor activity based on motif analysis with explicit statements. The ATF4 finding is supported by citation to prior work (Liu et al., 2008), providing functional context. The methodology (Homer motif analysis) is appropriate for inferring TF activity from ATAC-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SMAD4, SOX9, GLI1, and WT1 transcription factors have specifically high activity under normoxic 3D culture. The high transcriptional activity of SMAD4 is consistent with upregulation of TGF-\u03b2-SMAD target genes in 3D culture, including Wwtr1, which shows a unique ATAC-seq peak with a SMAD4 binding motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 integrate ATAC-seq motif analysis with RNA-seq data to demonstrate SMAD4 activity in 3D culture. The Wwtr1 example provides specific evidence linking chromatin accessibility, TF binding motifs, and gene expression. The internal consistency between datasets strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The HIF-1\u03b2 (ARNT) binding motif is greatly enriched under hypoxic 2D and normoxic 3D conditions, though significant changes in HIF-1\u03b1 and HIF-2\u03b1 binding motifs were not observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 describes a specific finding from ATAC-seq motif analysis with explicit statement and figure reference. The observation that ARNT but not HIF-\u03b1 motifs show enrichment is interesting and suggests chromatin may be poised for HIF-\u03b1 binding, though this interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "NEJF10 cells show similar doubling time over 4 weeks under normoxia and 1% oxygen in monolayer culture, probably due to greater dependence on glycolysis for ATP production. NEJF10 cells also grow continuously in 3D culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 establish that NEJF10 cells tolerate chronic hypoxia and 3D culture, which is essential for the CRISPR screening experiments. The data are explicitly stated with figure references. The glycolysis interpretation (C58) is appropriately qualified as probable and supported by referenced data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Genome-wide CRISPR screening identified 648 common genes in negative selection and 6 common genes in positive selection under all conditions. Positive selection genes include tumor suppressors (Cdkn2a, Pten, Ambra1), while negative selection genes engage in essential processes including RNA polymerase, DNA replication, ribosome, spliceosome, and MYC/E2F pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 present core CRISPR screening results with explicit statements and figure references. The identification of shared essential genes provides a baseline for understanding context-specific fitness. The pathway analysis methodology is consistent with other results in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Genes responsible for saturated fatty acid synthesis (Fasn, Acaca) and non-saturated fatty acid synthesis (Scd2) or fatty acid catabolism (Acsl4) exert opposite functions in cell fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 describes an interesting finding about lipid metabolism genes from the CRISPR screen. The statement is explicit and represents a key metabolic finding. However, the claim would benefit from more detailed data presentation showing the specific fitness effects in each condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Knockout of Vhl leads to gradual gRNA depletion in normoxia but not under 1% oxygen, indicating that VHL loss is incompatible with cellular fitness under normoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe a key finding about VHL function with explicit statements and figure references. The interpretation (C68) logically follows from the gRNA depletion data. This result is important for understanding oxygen-dependent fitness mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Knockout of Hif1a or Arnt (HIF-1\u03b2) leads to gRNA depletion under 1% oxygen but not normoxia, while knockout of Epas1 (HIF-2\u03b1) does not lead to gRNA depletion under either condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe the complementary finding to VHL knockout, showing HIF-1\u03b1/\u03b2 are essential in hypoxia but not normoxia. The data are explicitly stated with figure references. The differential effect of HIF-1\u03b1 vs HIF-2\u03b1 is notable and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Cells in 3D cannot tolerate genetic deletion of Hif1a and Arnt, and even show remarkable increase in gRNA counts of the Vhl gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 extend the VHL-HIF findings to 3D culture with explicit statements and figure references. The increase in Vhl gRNA counts in 3D suggests positive selection for VHL loss, which is consistent with the hypoxic environment in 3D spheroids.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of DepMAP data shows that nearly all human cancer cells cultured under 2D normoxia cannot tolerate loss of VHL, while cells tend to gain growth benefit by HIF1A knockout. The VHL knockout effect is significantly negatively correlated with HIF1A expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 use external DepMAP data to validate the VHL-HIF findings across many cell lines. The explicit statements and figure references support the conclusions. The correlation analysis (C76) provides quantitative support for the relationship between VHL and HIF1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Partial loss of VHL leads to significant reduction in cell proliferation in 2D but not in 3D culture under 21% oxygen. These genetic data indicate that VHL-HIF1 plays a dominant role in determining cell fitness in normoxia and hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 provide experimental validation of the VHL findings using a different approach (partial knockdown vs complete knockout). The data are explicitly stated with figure references. The conclusion (C78) appropriately summarizes the VHL-HIF results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Cells tolerate loss of mitochondrial ribosomal genes better in 1% oxygen than normoxia. Hypoxia buffers the blockade effect of mitochondrial protein translation, and the knockout effect of human mitochondrial ribosomal gene MRPS22 is correlated with HIF1A expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 describe oxygen-dependent fitness effects for mitochondrial ribosomal genes with explicit statements and figure references. The DepMAP correlation (C81) provides independent validation. The interpretation about hypoxia buffering (C80) is appropriately qualified and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Knockout of mitochondrial respiratory chain complexes I-V produces distinct fitness outcomes. Complex I and IV knockout leads to fitness advantage in all conditions, complex II and III loss is detrimental in 2D but enriched in 3D, while complex V (ATP synthase) knockout has adverse effects in normoxia but fitness advantage in 1% oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 describe complex-specific fitness effects with explicit statements and figure references. The finding that each complex has distinct fitness outcomes is surprising and well-documented. The Atp5c1 example (C86) provides specific evidence for the complex V finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Human ATP5C1 is a pan-essential gene in 2D normoxia according to DepMAP data. There is a negative correlation between ATP5C1 knockout and HIF1A expression, independently validating that cells with loss of ATPase survive better in hypoxia than normoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 use DepMAP data to validate the ATP synthase findings across many cell lines. The explicit statements and figure references support the conclusions. The correlation analysis (C88) and interpretation (C89) appropriately use HIF1A as a hypoxia surrogate marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Under 3D culture conditions, protein interaction networks are enriched with genes involved in epigenetics, TGF-\u03b2-SMAD signaling, Hippo signaling, and M6A methyltransferase complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe 3D-specific enrichments from protein interaction network analysis with explicit statements and figure references. The findings identify key pathways and complexes that are specifically important in 3D culture, representing a major result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Signaling pathways involved in multicellular organogenesis (TGF-\u03b2, Wnt, Hedgehog, Notch) are enriched particularly in 3D culture. This supports the theory that breakdown of communication and coordination between cells leads to tumorigenesis. The TGF-\u03b2-SMAD2/3/4 pathway is particularly important for restricting 3D cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 integrate the pathway findings with cancer biology theory. The data are explicitly stated with figure references and citations to prior work. The interpretation about multicellularity and cancer (C95) is appropriately cited. The distinction between TGF-\u03b2 and BMP pathways (C96) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "KMT2D is a methyltransferase that methylates H3K4 and frequently exhibits loss of function mutations in various cancers. KMT2D is a pan-essential gene in 2D normoxia regardless of mutation status, with gRNA depletion under both oxygen tensions in 2D culture, but gRNAs are remarkably enriched under 3D culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe a striking context-dependent effect for KMT2D with explicit statements, figure references, and citations. The finding that KMT2D is essential in 2D but promotes fitness when knocked out in 3D is counterintuitive and well-documented. DepMAP validation strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "BCOR is a frequently mutated tumor suppressor gene. Knockout of Bcor in NEJF10 cells promotes cell fitness in hypoxia and more dramatically in 3D but has minimal effect in normoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 describe another context-dependent tumor suppressor with explicit statements, figure references, and citations. The pattern is similar to KMT2D, showing that multiple epigenetic modifiers behave differently in 2D vs 3D culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Wtap, Mettl3, and Mettl14 encode proteins forming the WMM complex that acts as a N6-methyltransferase to regulate mRNA stability. Knockout of these genes leads to great gRNA enrichment in 3D culture but reduction in 2D culture. DepMAP data show these genes are commonly essential to most cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 describe the WMM complex with explicit statements and figure references. The context-dependent fitness effects are well-documented. The DepMAP validation (C106) shows the genes are generally essential in 2D normoxia, consistent with the authors' findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Previous studies show that METTL3 enhances tumor suppression activity of p53, knockout of Mettl3 enhances liver tumorigenesis in mouse models, and METTL14 acts as a tumor suppressor by facilitating DNA repair or modulating glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 cite prior work to provide context for the WMM complex findings. The citations are explicit and appropriate. These claims establish that the tumor suppressor role of the WMM complex is supported by independent studies, strengthening the interpretation of the 3D-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Analysis of DepMAP data shows the knockout effect of METTL3 is negatively correlated with TP53 mutations, positively correlated with TP53 knockout effect, negatively correlated with MDM2 knockout, and positively correlated with MDM2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 use DepMAP data to establish genetic connections between METTL3 and the p53 pathway. The explicit statements and figure references support the conclusions. The correlation patterns are internally consistent and support the functional connection between WMM complex and p53.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Organogenesis signaling and epigenetic regulators behave drastically differently in 2D vs 3D culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is a summary conclusion based on claims C90-C113. The conclusion is explicitly stated and well-supported by the extensive data on context-dependent fitness effects for multiple epigenetic modifiers and organogenesis pathways. This represents a major finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Prmt5 is essential to cell survival regardless of culture conditions. PRMT5 is required for survival of MYC-driven cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 establish Prmt5 as a pan-essential gene with explicit statements, figure references, and citations. This sets up the subsequent investigation of context-dependent synthetic lethality. The MYC-specific requirement (C116) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "shRNA-mediated knockdown of Prmt5 significantly reduces growth of NEJF10 spheroids while having minimal effect in monolayer culture under 21% and 1% oxygen. Complete loss of Prmt5 is needed to inhibit NEJF10 proliferation under 2D culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 describe context-dependent effects of partial Prmt5 loss with explicit statements and figure references. The interpretation (C119) appropriately explains the differential effects based on the degree of knockdown. The data support a 3D-specific vulnerability to partial Prmt5 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "In ABC-Myc mice, knockout of either one or both alleles of Prmt5 extends comparable mouse survival. Deletion of even one Prmt5 allele leads to massive necrosis in tumor regions with inflammatory cell infiltration. Partial loss of Prmt5 function in vivo may lead to comparable effect to complete loss, and Prmt5 is essential for MYC-transformed cancer cells but not non-transformed liver cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 provide in vivo validation of the Prmt5 findings with explicit statements and figure references. The survival data, histological evidence, and interpretation are well-documented. The finding that partial loss is sufficient in vivo is important for therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "MTAP deletion is synthetically lethal to PRMT5 ablation. Mtap displays distinct exon skipping in 3D culture, and exon junction reads and Mtap expression are greatly reduced in 3D culture compared to 2D conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 establish the mechanism for 3D-specific Prmt5 vulnerability through Mtap downregulation. The data are explicitly stated with figure references and citations. The splicing analysis (C125) and expression validation by multiple methods (C126-C127) provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Four open chromatin regions at the Mtap genomic locus are closed in 3D culture. The enhancer activity driving Mtap expression is repressed in 3D culture, leading to downregulation of Mtap expression and synthetic lethality with partial loss of Prmt5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 provide the epigenetic mechanism for Mtap downregulation in 3D culture with explicit statements and figure references. The ATAC-seq data showing closed chromatin regions provide a mechanistic explanation for the reduced Mtap expression and consequent synthetic lethality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Cancer cells have distinct fitness mechanisms dependent on culture conditions. Epigenetic modifiers (KMT2D, BCOR, METTL3, METTL14) are limiting factors for uncontrolled cell proliferation in 3D spheroids, revealing how they function as tumor suppressors. These modifiers likely maintain cellular homeostasis during organogenesis, and when disrupted, tumorigenesis ensues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 represent the major conclusions of the study. The conclusions are explicitly stated and well-supported by the extensive data on context-dependent fitness effects. The interpretation about organogenesis and tumorigenesis (C133) is appropriately qualified as likely and represents a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "VHL and HIF1A are essential for cell survival in NEJF10 cells under 21% and 1% oxygen respectively, and this was not observed in K562 and U2OS cells, suggesting a cell type-specific effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 acknowledges cell type-specific effects with explicit statement and citations to prior work. This appropriately qualifies the generalizability of the VHL-HIF findings and demonstrates awareness of differences between cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Peroxisome-mediated lipid metabolism might not be essential to MYC-driven cancer. Targeting cholesterol synthesis might be an option for MYC-driven cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 make inferences about therapeutic targeting based on the screening data. While the peroxisome finding is explicitly stated, the therapeutic implications (C136) are speculative and appropriately qualified as 'might be.' The claims would benefit from additional validation or mechanistic studies.",
+    "result_type": "MINOR"
+  }
+]

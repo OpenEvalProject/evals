@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C96",
+      "C97",
+      "C110",
+      "C111"
+    ],
+    "result": "VGLL2-NCOA2 and TEAD1-NCOA2 are recurrent fusion proteins identified in spindle cell rhabdomyosarcoma (scRMS), a pediatric cancer distinct from embryonic RMS. These fusions involve VGLL2 or TEAD1 as 5' partners and NCOA2 as the 3' partner, and VGLL2-NCOA2 has been shown to drive tumor formation in model systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C96, C97, C110, and C111 are well-supported by multiple prior publications (Alaggio et al., 2016; Tan et al., 2020; Chen et al., 2020; Cyrta et al., 2021; Whittle et al., 2022; Watson et al., 2023). The structural characterization is shown in Figure 1A, and the oncogenic potential has been demonstrated in prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C12",
+      "C74"
+    ],
+    "result": "VGLL2-NCOA2 and TEAD1-NCOA2 fusion proteins are potent activators of TEAD-dependent transcription, with activity comparable to constitutively active YAP/TAZ (YAP5SA/TAZ4SA). In contrast, wild-type VGLL2 and TEAD1 do not strongly activate TEAD-mediated transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, C8, C12, and C74 are supported by luciferase reporter assays (Figure 1B-C), RNA-seq showing upregulation of TEAD target genes (Figure 1D-E), and RT-qPCR validation. The data demonstrate statistically significant differences (p<0.0001) between fusion proteins and wild-type proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C78"
+    ],
+    "result": "VGLL2-NCOA2 promotes cell proliferation and requires both its N-terminal VGLL2 and C-terminal NCOA2 parts for transcriptional activity. The effect is dose-dependent and the C-terminal NCOA2 TADs are essential for robust transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C11, and C78 are supported by EdU proliferation assays (Figure 1\u2014figure supplement 1B), deletion construct experiments (Figure 1\u2014figure supplement 1C-D), and dose-response luciferase assays (Figure 1\u2014figure supplement 1E-F). The data clearly demonstrate the requirement for both fusion parts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "VGLL2-NCOA2 and TEAD1-NCOA2 function independently of YAP/TAZ. The fusion proteins bind to TEAD but not to YAP/TAZ, and maintain transcriptional activity in YAP/TAZ knockdown cells. TEAD DNA binding is critical for fusion protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13-C17, C24-C27 are supported by co-IP assays (Figure 2A-C, 2G) showing selective TEAD binding and lack of YAP/TAZ interaction, and RT-qPCR in YAP/TAZ knockdown cells (Figure 2H) showing maintained target gene expression. The TEAD-ENR repressor experiments (Figure 2D) confirm TEAD dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C84",
+      "C85"
+    ],
+    "result": "The TEAD palmitoylation inhibitor CP1 effectively inhibits YAP5SA- and VGLL2-NCOA2-induced transcription but has no effect on TEAD1-NCOA2, likely because TEAD1-NCOA2 lacks the C-terminal auto-palmitoylation domain. TEAD-ENR repressor inhibits all three proteins, confirming TEAD DNA binding is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23, C84-C85 are supported by luciferase reporter assays with CP1 treatment and TEAD-ENR co-expression (Figure 2D). The structural basis for CP1 resistance is shown in Figure 1A and supported by prior mechanistic studies (Li et al., 2020; Sun et al., 2022). This has important therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "VGLL2-NCOA2 and YAP control overlapping yet distinct chromatin landscapes. Both proteins drive open chromatin at Hippo pathway genes, preferentially occupy distal enhancer regions, and share genomic binding sites at target genes like CCN1, CCN2, and ANKRD1. TEAD and AP1 motifs are enriched in both VGLL2-NCOA2 and YAP binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 are supported by integrated ATAC-seq, CUT&RUN, and RNA-seq analyses (Figure 3). The data show significant enrichment of Hippo pathway genes (Figure 3A-C), distal genomic occupancy (Figure 3D), TEAD/AP1 motif enrichment (Figure 3E), and overlapping binding at target loci (Figure 3F). The analyses were performed in duplicate/triplicate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C41",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "VGLL2-NCOA2 and TEAD1-NCOA2 fusion proteins specifically recruit the histone acetyltransferase EP300 via their C-terminal NCOA2 domains. EP300 binds to the same genomic regions as the fusion proteins and shows enrichment at Hippo pathway genes with TEAD and AP1 motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C38, C41, C45-C48, C50-C51, C53, C55-C56 are supported by BioID proteomics (Figure 4A), co-IP assays (Figure 4B, 5A), and EP300 CUT&RUN sequencing (Figure 4C-E). The data show specific EP300 association with fusion proteins but not YAP5SA, enrichment at TEAD target genes, and co-localization with fusion protein binding sites. The NCOA2 domain is required for EP300 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C49",
+      "C52"
+    ],
+    "result": "CREB motifs are specifically enriched in VGLL2-NCOA2 CUT&RUN peaks but not YAP5SA peaks, while CREB motifs are found in EP300 peaks in both control and fusion-expressing cells. EP300 occupies the CREB3 locus constitutively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C49, and C52 are supported by motif enrichment analysis (Figure 3E, 4D) and EP300 CUT&RUN genomic tracks (Figure 4E). The CREB3 locus serves as an appropriate control showing constitutive EP300 binding. This is consistent with known CREB-EP300 interactions (Chrivia et al., 1993).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "EP300 inhibition by A485 suppresses fusion protein-induced oncogenic transformation in vitro. A485 treatment inhibits TEAD target gene expression and colony formation induced by VGLL2-NCOA2 and TEAD1-NCOA2 but not YAP5SA in C2C12 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57-C62 are supported by RT-qPCR showing reduced target gene expression with A485 treatment (Figure 5B-D) and soft agar colony formation assays showing reduced colony size and number (Figure 5E-G). The differential effect on fusion proteins versus YAP5SA is statistically significant (p<0.0001) and consistent across assays. Experiments were performed in triplicate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "EP300 inhibition by A485 suppresses fusion protein-induced tumorigenesis in vivo. VGLL2-NCOA2 and TEAD1-NCOA2 expressing C2C12 cells form aggressive, highly proliferative tumors in nude mice. A485 treatment significantly reduces tumor growth, proliferation (Ki67), and target gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C69 are supported by in vivo allograft experiments (Figure 6). Tumor volume measurements show significant growth inhibition with A485 (Figure 6C-D, p<0.0001, n=6 per group). IHC shows reduced Ki67 staining (Figure 6E-F, p<0.001), and RT-qPCR confirms reduced target gene expression (Figure 6G-H, p<0.01-0.0001). The study design is appropriate with adequate sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "VGLL2-NCOA2 and TEAD1-NCOA2 provide a distinct YAP/TAZ-independent mechanism of oncogenic transformation related to the Hippo pathway. The C-terminal NCOA2 TADs enable oncogenic activity that bypasses YAP/TAZ requirement, converging on TEAD transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C79-C81 represent the major conceptual conclusion of the study, supported by the combined experimental evidence showing YAP/TAZ-independent TEAD activation (Figures 2-3), EP300 recruitment (Figure 4), and functional dependence on EP300 (Figures 5-6). This is a well-supported novel mechanism distinct from canonical YAP/TAZ-driven tumorigenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C86",
+      "C87"
+    ],
+    "result": "Current TEAD inhibitors target auto-palmitoylation in the C-terminal YAP/TAZ binding domain and are in clinical development. How these inhibitors affect VGLL fusion proteins requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 and C86 are supported by citations to prior work (Pobbati et al., 2023; Li et al., 2020; Chan et al., 2016; Holden et al., 2020; Kaneda et al., 2020; Tang et al., 2021; Hu et al., 2022). Claim C87 is a reasonable statement about future research needs based on the CP1 results (Figure 2D).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "CITED2, the 3' partner in VGLL2-CITED2 fusion found in scRMS, is a known EP300-associated transcriptional regulator. The VGLL2-CITED2 fusion may also mediate YAP/TAZ-independent TEAD activation via EP300 engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is supported by citations (Alaggio et al., 2016; Bhattacharya et al., 1999; Bamforth et al., 2001). However, claim C89 is speculative and not directly tested in this study. While the hypothesis is reasonable based on the VGLL2-NCOA2 mechanism, experimental validation of VGLL2-CITED2 function is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "EP300 inhibitors may provide a therapeutic strategy for scRMS with VGLL/TEAD fusions and other tumors with NCOA1/2/3 rearrangements, including uterine sarcoma, mesenchymal chondrosarcoma, soft tissue angiofibroma, ovarian sex cord tumors, leukemia, colon cancer, and ependymoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is reasonably supported by the in vitro and in vivo efficacy data (Figures 5-6) for scRMS models. However, claim C91 extends this to other tumor types based only on the presence of NCOA rearrangements and cited literature. While mechanistically plausible, direct experimental validation in these other tumor types is lacking. This represents a reasonable hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C43",
+      "C44"
+    ],
+    "result": "CREBBP/EP300 are histone acetyltransferases that induce H3K27ac at promoters and enhancers to activate transcription, form complexes with NCOA proteins for nuclear receptor regulation, interact with CREB transcription factors, and are implicated in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C43-C44 are well-established facts from prior literature (Ogryzko et al., 1996; Bannister and Kouzarides, 1996; Waddell et al., 2021; Hogg et al., 2021; Yi et al., 2021; Chrivia et al., 1993). These provide important background context for interpreting the fusion protein mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "VGLL4 is a transcriptional repressor with two TDU domains, while VGLL1-3 have single TDU domains. The NCOA2 N-terminal domains are absent in the fusions, suggesting they are not regulated by nuclear receptors. NCOA proteins associate with YAP/TAZ-TEAD machinery, but YAP/TAZ appear dominant in normal contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C75-C77 are supported by protein structure data (Figure 1A), established knowledge of VGLL4 function (Koontz et al., 2013; Cai et al., 2022; Zhang et al., 2014; Li et al., 2023), and prior work on NCOA function (Yi et al., 2021; Liu et al., 2016). These provide important mechanistic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "In the fusion proteins, VGLL2 retains its TDU domain, TEAD1 retains its TEA DNA binding domain, and NCOA2 retains its two C-terminal TAD domains. These are the key functional domains maintained in the 5' and 3' fusion partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are directly supported by the protein structure diagram (Figure 1A) and are fundamental to understanding fusion protein function. This structural characterization is essential for interpreting all subsequent functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Background on Hippo signaling: The pathway was identified in Drosophila, regulates organ size and cancer, involves MST1/2-LATS1/2 kinases that control YAP/TAZ localization and activity, and TEAD-mediated transcription. YAP/TAZ upregulation and fusions drive various cancers. VGLL proteins interact with TEADs, with VGLL4 acting as a repressor, but VGLL1-3 function is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 provide essential background context and are well-supported by extensive prior literature (Zheng and Pan, 2019; Ma et al., 2019; Calses et al., 2019; Kulkarni et al., 2020; Piccolo et al., 2023; Thompson, 2020; Franklin et al., 2023; and many others cited). This establishes the scientific foundation for the current study.",
+    "result_type": "MINOR"
+  }
+]

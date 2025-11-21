@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript establishes background knowledge about the mammalian olfactory system, including that the olfactory epithelium contains hundreds of OSN subtypes each expressing a single OR, that neurogenesis occurs throughout life in the OE, and that OSN neurogenesis has been hypothesized to be stochastic with respect to subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 represent well-established background knowledge supported by appropriate citations to prior literature. These claims provide the necessary context for the study and are not contested findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior studies have shown that olfactory experience can alter the relative quantities of distinct OSN subtypes, with changes generally attributed to altered OSN survival rather than changes in birthrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 accurately summarize prior work with appropriate citations. These claims establish the prevailing view in the field that experience-induced changes in OSN subtype representations are due to survival differences, setting up the novelty of the current study's focus on birthrate changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous work (van der Linden et al., 2020) demonstrated that UNO reduces overall OSN neurogenesis and that subtypes with reduced representations on the closed side also exhibited lower birthrates, indicating two distinct mechanisms by which olfactory stimulation affects OSN subtype representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 accurately describe findings from van der Linden et al., 2020, which are foundational to the current study. The interpretation of two distinct mechanisms (C17-C19) is reasonable based on the cited evidence, though C19 includes speculation about overstimulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior studies identified musk-responsive OSN subtypes (including Olfr235) that are differentially represented between male and female mice housed in sex-separated conditions, with some subtypes showing selective responsivity to sex-specific odors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 accurately summarize prior findings from van der Linden et al., 2018 and Vihani et al., 2020 that motivate the current study's focus on musk-responsive subtypes. The citations are appropriate and the claims provide essential background for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Using scRNA-seq analysis of OEs from UNO-treated male mice, the authors found that musk-responsive OSN subtypes exhibited 3.1-fold greater quantities of newborn OSNs on the open side compared to the closed side, while randomly chosen subtypes showed nearly equal quantities (1.07-fold difference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by scRNA-seq data from two independent OE samples (Figure 1). The analysis appropriately identifies newborn OSNs based on Gap43 expression and OR gene expression. The control comparison with random zone 2/3 subtypes (C33) strengthens the specificity of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Histological validation using EdU labeling and RNA-FISH confirmed that musk-responsive subtypes Olfr235, Olfr1440, and Olfr1431 showed significant open-side biases in newborn OSN quantities in UNO-treated male mice, while Olfr1437 and non-musk-responsive subtypes did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by rigorous histological data (Figure 2) with appropriate statistical testing (p<0.05). The validation using multiple normalization methods (C39) strengthens confidence in the findings. The inclusion of negative controls (C37-C38) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Exposure to male odors is required for UNO-induced open-side biases in newborn Olfr235 OSNs: sex-separated females showed no significant bias, while sex-combined females showed significant biases comparable to sex-separated males. Non-occluded mice exposed to males also showed elevated quantities of newborn Olfr235 OSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by comprehensive data (Figure 3) comparing multiple experimental groups with appropriate statistical testing. The experimental design effectively isolates the effect of male odor exposure. The control subtype Olfr912 (C45) shows no differences, supporting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Unlike Olfr235, subtypes Olfr1440 and Olfr1431 exhibited significant open-side biases in UNO-treated mice regardless of sex-separation status, while non-musk-responsive subtypes showed no open-side biases in newborn OSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by data in Figure 3 supplements. The differential responses of different musk-responsive subtypes (C46 vs C40-C43) suggest subtype-specific sensitivity to different odor components, which the authors appropriately discuss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Exposure to adult mice selectively enhanced the UNO effect size for newborn Olfr1431 OSNs (2-fold increase) but not for other musk-responsive subtypes tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by data in Figure 3 supplement 3. The finding suggests age-dependent differences in odor emission, though the sample sizes are modest (n=3-10). The specificity for Olfr1431 is intriguing and appropriately interpreted as potential age-dependent odor variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Exposure of UNO-treated mice to low concentrations (0.1% or 1%) of the musk odorant muscone induced significant open-side biases in newborn OSNs of musk-responsive subtypes, with effects diminishing at 10% concentration, while non-musk-responsive subtypes were unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by dose-response data (Figure 4) showing concentration-dependent effects. The loss of effect at 10% (C55) is reasonably attributed to transnasal/retronasal odor transfer, though this remains speculative. The specificity for musk-responsive subtypes (C56) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Exposure of non-occluded mice to musk odorants (muscone or ambretone at 0.1%) selectively elevated quantities of newborn OSNs of all three musk-responsive subtypes tested (1.5-3.8 fold increases), while exposure to non-musk odorants or testing of non-musk-responsive subtypes showed no effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by comprehensive data (Figure 4D-F and supplements) with appropriate controls. The specificity for musk odorants (C58) and musk-responsive subtypes (C59-C60) strongly supports the hypothesis that discrete odorants selectively accelerate birthrates of subtypes they stimulate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Musk odorant-dependent increases in newborn OSN quantities persist into adulthood, with all three musk-responsive subtypes showing elevated quantities in adult mice exposed to muscone, though statistical significance was reached only for Olfr1440.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by data from adult mice (Figure 5). The lack of statistical significance for Olfr235 and Olfr1431 (C62) is appropriately attributed to lower baseline birthrates in adults, though this limits the strength of the conclusion for these subtypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71"
+    ],
+    "result": "Odor-driven increases in newborn OSN quantities are stable over time (4 vs 7 days post-EdU), indicating that observed changes reflect altered OSN birthrates rather than altered survival or OR gene switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 and C71 are supported by time-course data (Figure 6) showing statistically indistinguishable effects at 4 and 7 days post-EdU. This temporal stability is critical evidence that the mechanism involves birthrate changes rather than post-mitotic selection, though longer time points would further strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "GC-MS analysis of mouse preputial gland extracts revealed molecules with signals structurally consistent with known musk molecules, with cycloheptadecanol identified as a potential match.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 are based on preliminary GC-MS data (Appendix 1 figure 2). While the structural similarity is noted, the authors appropriately acknowledge that verification requires comparison to pure standards. The identification of cycloheptadecanol (C69) is speculative without such validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C72"
+    ],
+    "result": "The authors conclude that discrete odorants can selectively accelerate the birthrates of OSN subtypes that they stimulate, though this capacity appears limited to only a fraction of OSN subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C72 represent the main conclusions of the study, supported by the collective evidence from scRNA-seq, histological validation, odor exposure experiments, and temporal stability analyses. The limitation to a fraction of subtypes (C72) is supported by negative results for control subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors speculate that persistent neurogenesis in the OE may serve an adaptive function, potentially enhancing sensitivity to specific odors or enabling formation of new olfactory bulb connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 are speculative hypotheses about functional significance, appropriately presented as such. While the speculation is reasonable and supported by citations to relevant literature, the current study does not directly test these functional hypotheses. Future work is needed to validate these proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors provide context that musk odors are naturally emitted by mammals and may have physiological functions, with evidence suggesting mice also emit musk-like molecules based on OR conservation, preputial gland similarities to muskrat scent glands, and prior preliminary findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 appropriately summarize prior literature about musk odors in mammals and provide circumstantial evidence for musk emission by mice. The citations are appropriate and the claims provide important context for interpreting the biological significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

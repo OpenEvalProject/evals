@@ -1,0 +1,520 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C56"
+    ],
+    "result": "The authors engineered an 'immune-evasive saRNA' platform that uses cap-independent translation to co-express inhibitors of dsRNA-sensing pathways (PKR, OAS/RNase L) and NF-\u03baB signaling from a single saRNA transcript, providing continuous protection against innate immune activation during replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The construct design is clearly described (C9-C13) and the rationale for cap-independent expression is well-justified (C56). The experimental data throughout the manuscript demonstrate that this approach successfully reduces immunotoxicity while maintaining transgene expression, supporting the core innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C17",
+      "C63",
+      "C79",
+      "C96",
+      "C97"
+    ],
+    "result": "In primary mouse fibroblast-like synoviocytes, the E3-NSs-L* construct (targeting dsRNA-sensing pathways) enables sustained transgene expression while substantially reducing cytotoxicity and preserving cell viability without external immunosuppressants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (BioTracker, annexin V, calcein AM) consistently demonstrate that E3-NSs-L* preserves cell viability (C63, C79, C96) while maintaining transgene expression (C14). The stepwise improvement with increasing pathway inhibition (C97) provides strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C75",
+      "C76"
+    ],
+    "result": "The E3 construct (targeting dsRNA-sensing pathways with E3 alone) provided the highest transgene expression levels among tested constructs, while E3-NSs-L* showed intermediate expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Longitudinal fluorescence data for both EGFP and mScarlet3 (C57-C60) consistently show this expression pattern. The data are quantitative and statistically analyzed (C75-C76), providing robust support for this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C77",
+      "C78"
+    ],
+    "result": "Conventional saRNA and the E3 construct both cause cell loss over time, with conventional saRNA showing immediate effects and E3 showing delayed but progressive cell loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BioTracker data (C61-C62, C77-C78) demonstrate distinct temporal patterns of cell loss for these constructs. The finding is corroborated by multiple cell viability assays and is consistent with the mechanistic understanding of RNase L activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Both E3 and E3-NSs-L* constructs effectively block saRNA-induced eIF2\u03b1 phosphorylation, with E3-NSs-L* additionally increasing total eIF2\u03b1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In-cell western data (C100-C101) clearly demonstrate prevention of eIF2\u03b1 phosphorylation by both constructs, consistent with prior literature on E3 function (C102). The increase in total eIF2\u03b1 with E3-NSs-L* (C103) is an additional observation supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "All saRNA constructs, including those targeting dsRNA-sensing pathways, reduce eIF4E phosphorylation while total eIF4E levels remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In-cell western data (C104-C105) demonstrate this effect across all constructs. The finding that dsRNA-sensing pathway inhibition does not prevent this reduction (C106) is an important mechanistic insight supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Conventional saRNA and E3 increase PKR levels, while E3-NSs-L* mitigates this increase through NSs-mediated PKR degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In-cell western data (C108-C110) show the differential effects on PKR levels. The interpretation is consistent with the known function of NSs as a ubiquitin ligase targeting PKR (C111), providing mechanistic support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "RNase L activation by the E3 construct enhances transgene expression through selective depletion of host mRNA, reducing competition for ribosomes, while E3-NSs-L* suppresses RNase L activity, preserving host mRNA but limiting ribosome availability for transgene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is supported by multiple lines of evidence: RIN analysis showing differential rRNA integrity (C123-C125), SUnSET data demonstrating differential protein synthesis rates (C126-C129), and the logical consistency with known RNase L biology (C124). The hypothesis (C121) is well-tested and the data support the proposed mechanism (C130-C131).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Inhibition of dsRNA-sensing pathways with E3 or E3-NSs-L* selectively suppresses some cytokines (IFN-\u03b1, IFN-\u03b2, TNF) but elevates others (MCP-1, GM-CSF), indicating that dsRNA-sensing pathway inhibition alone only partially attenuates the cytokine response to saRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiplex immunoassay data (C132-C136) demonstrate the selective and sometimes paradoxical effects on cytokine secretion. The conclusion that further strategies are needed (C137-C138) is a reasonable inference from the data and motivates the subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Co-expression of srI\u03baB\u03b1 broadly reduces saRNA-induced cytokine secretion, with srI\u03baB\u03b1-Smad7-SOCS1 providing additional suppression only for IL-6, indicating that NF-\u03baB is a key driver of saRNA-induced cytokine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiplex immunoassay data (C144-C146) clearly demonstrate the broad cytokine suppression by srI\u03baB\u03b1 and the limited additional benefit of Smad7-SOCS1. The conclusion about NF-\u03baB's central role (C147-C148) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The srI\u03baB\u03b1 construct causes cell loss, but co-expression of Smad7 and SOCS1 prevents this cytotoxicity and maintains cell viability comparable to mock transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (BioTracker, CellTag, calcein AM) consistently demonstrate that srI\u03baB\u03b1 reduces cell number and viability (C156, C159), while srI\u03baB\u03b1-Smad7-SOCS1 prevents these effects (C157, C160). The AUC analysis (C158) provides additional quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C163",
+      "C161",
+      "C162"
+    ],
+    "result": "The srI\u03baB\u03b1-Smad7-SOCS1 construct produces 2-3 fold higher mScarlet3 expression than moxBFP or srI\u03baB\u03b1 constructs, despite low EGFP expression from the fourth cistron position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Fluorescence data (C163) clearly demonstrate the enhanced mScarlet3 expression. The low EGFP expression (C161) is expected given its position in the polyprotein (C162), and this expectation is supported by prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "srI\u03baB\u03b1 reduces eIF2\u03b1 phosphorylation and total eIF4E levels, with the latter likely contributing to poor transgene expression; co-expression of Smad7 and SOCS1 prevents these effects and preserves eIF4E levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In-cell western data (C164-C167) demonstrate the differential effects on translation factors. The inference that eIF4E depletion contributes to poor transgene expression (C168-C169) is reasonable given eIF4E's known role. The rescue by Smad7-SOCS1 (C170) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Prolonged saRNA expression from constructs encoding dsRNA-sensing pathway inhibitors (moxBFP) does not trigger fibroblast activation, while constructs with inflammatory signaling inhibitors (srI\u03baB\u03b1, srI\u03baB\u03b1-Smad7-SOCS1) reduce basal FAP-\u03b1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In-cell western data for FAP-\u03b1 (C174-C175) support the differential effects on fibroblast activation. The inferences about lack of activation and reduced basal activation (C176-C177) are reasonable interpretations of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "ML336 suppresses transgene expression in a concentration-dependent manner (IC50 = 8.5 nM), with reversible inhibition at intermediate concentrations (10 nM-1 \u03bcM) and irreversible termination at higher concentrations (>1 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Concentration-response data (C178) provide a precise IC50 value. Washout experiments (C179-C180) clearly demonstrate the concentration-dependent reversibility. The interpretation of reversible vs. irreversible effects (C181-C182) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Sustained ML336 treatment effectively terminates transgene expression from an established immune-evasive replicon without compromising cell viability, while vehicle-treated cultures show reduced viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Longitudinal fluorescence data (C183) demonstrate effective termination of transgene expression. Calcein AM data (C184-C185) show that ML336 treatment preserves viability while vehicle treatment reduces it, supporting the safety and efficacy of this control mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The immune-evasive saRNA system offers both concentration-dependent control of expression and on-demand termination via the small-molecule antiviral ML336.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims are well-supported by the detailed ML336 experiments (C178-C185). The system provides both tunable control and termination capability, which are key features for therapeutic applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C82"
+    ],
+    "result": "Blocking saRNA replication with ML336 restores cell viability to mock transfection levels, indicating that saRNA-induced cell loss is primarily driven by dsRNA generated during replication rather than by dsRNA byproducts from in vitro transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Calcein AM data (C65) clearly demonstrate the rescue effect of ML336. The inference that replication-generated dsRNA is the primary driver of cytotoxicity (C66) is well-supported by this experiment and is consistent with the known mechanism of ML336 as an RdRp inhibitor (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Conventional saRNA upregulates antiviral and proinflammatory transcripts, while E3 and srI\u03baB\u03b1-Smad7-SOCS1 attenuate this induction, with srI\u03baB\u03b1-Smad7-SOCS1 showing broader suppression and lower EGFP transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR data (C149-C151) demonstrate the differential effects on antiviral gene expression. The lower EGFP transcript levels with srI\u03baB\u03b1-Smad7-SOCS1 are noted, though the authors provide several potential explanations for this observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The srI\u03baB\u03b1-Smad7-SOCS1 construct is ~40% longer than conventional saRNA and shares a common truncated byproduct with moxBFP and srI\u03baB\u03b1 constructs, which is expected to be replication-incompetent, potentially contributing to reduced replicon activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The length difference (C152) is a straightforward calculation. The inference about increased replication time (C153) is reasonable. The gel electrophoresis data (C154) clearly show the truncated byproduct, and the inference about its replication incompetence (C155) is supported by citation to prior work on the conserved sequence element.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Cell number preservation, as measured by BioTracker and CellTag, increases stepwise with greater dsRNA-sensing pathway inhibition across the conventional saRNA, E3, and E3-NSs-L* constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "AUC analysis of BioTracker data and CellTag measurements both demonstrate this stepwise improvement, providing strong quantitative support for the dose-dependent effect of dsRNA-sensing pathway inhibition on cell viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Staurosporine and conventional saRNA induce transient annexin V staining and reduced calcein AM fluorescence, while E3 prevents initial annexin V increase but elevates it from day 2 onward with reduced calcein AM intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Annexin V and calcein AM data (C90-C95) demonstrate the temporal dynamics of apoptosis markers for different treatments. The data are consistent with the expected effects of staurosporine and saRNA on cell death pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C186",
+      "C187"
+    ],
+    "result": "The difference in calcein AM signal between vehicle and ML336-treated cultures may reflect altered cell proliferation, consistent with saRNA-induced reduction in eIF4E phosphorylation, a key regulator of cell growth and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a reasonable inference (C186) based on the known role of eIF4E phosphorylation (C187), but it remains speculative without direct measurement of cell proliferation. The claim is presented as a hypothesis rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "saRNA-induced translation shutdown is mediated by eIF2\u03b1 phosphorylation following PKR activation, and saRNA also reduces eIF4E phosphorylation, which suppresses cap-dependent translation and favors cap-independent translation, explaining why IRES-driven transgenes achieve higher expression than cap-dependent counterparts with conventional saRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic model is well-supported by the experimental data in the manuscript (eIF2\u03b1 and eIF4E phosphorylation) and by extensive citations to prior literature (C188-C191). The inference about IRES-driven transgene expression (C192) is a logical conclusion supported by both the data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "saRNA co-opts the viral host shutoff mechanism: RNase L activation degrades host mRNAs without impairing translation machinery, while saRNA transcripts are protected within replication organelles; this leads to ribosome stalling, ribotoxic stress response, and ultimately apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is supported by the RIN and SUnSET data in the manuscript, combined with extensive citations to prior literature on RNase L function (C195), viral replication organelles (C196), and the consequences of mRNA cleavage (C197-C199). The inference that saRNA co-opts this mechanism (C194) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "PKR is a central mediator of apoptosis in response to cytosolic dsRNA, with apoptosis occurring independently of eIF2\u03b1 phosphorylation, suggesting that the E3 construct may be particularly suited for immunotherapeutic applications where robust transgene expression and immunogenic cell death are advantageous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of PKR in apoptosis is well-supported by citations (C200-C201). The inference about the E3 construct's suitability for immunotherapy (C202) is a reasonable conclusion based on the observed combination of high transgene expression and cytotoxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "dsRNA activates NF-\u03baB independently of PKR and RNase L, potentially through reduced eIF4E phosphorylation leading to decreased I\u03baB\u03b1 levels, allowing NF-\u03baB nuclear translocation and cytokine expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is supported by citations to prior literature (C203-C204) and is consistent with the experimental observations in the manuscript. The mechanistic link through eIF4E and I\u03baB\u03b1 (C204-C206) provides a plausible explanation for the cytokine responses observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "NF-\u03baB promotes inflammatory cytokine production but also supports cell survival through anti-apoptotic genes; in FLS and hepatocytes, srI\u03baB\u03b1 overexpression reduces cytokines but increases apoptosis sensitivity, raising safety concerns given that RNA delivery systems like LNPs accumulate in the liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual role of NF-\u03baB is well-established (C207-C208), and the effects of srI\u03baB\u03b1 in FLS and hepatocytes are supported by citations (C209-C210). The safety concern regarding LNP accumulation (C211) is a reasonable inference based on cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "Smad7 and SOCS1 have anti-apoptotic properties that likely enable them to mitigate srI\u03baB\u03b1-induced reductions in FLS cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anti-apoptotic properties of Smad7 and SOCS1 are well-supported by citations (C212-C213). The inference that these properties explain the rescue of cell viability (C214) is reasonable and consistent with the experimental data showing that Smad7-SOCS1 co-expression prevents srI\u03baB\u03b1-induced cell loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217"
+    ],
+    "result": "SOCS1, an endogenous inhibitor of JAK1 and JAK2, offers a genetically encoded alternative to the small-molecule inhibitor ruxolitinib for enhancing saRNA-driven transgene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The roles of ruxolitinib and SOCS1 as JAK inhibitors are well-supported by citations (C215-C217). The inference that SOCS1 provides a genetically encoded alternative is reasonable, though the manuscript does not directly compare SOCS1 to ruxolitinib experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "saRNA vaccines trigger intense innate immune responses that hinder antigen expression and cause pronounced inflammation, contributing to adverse events including pain, headache, tenderness, arthralgia, fever, and chills.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about saRNA vaccine immunogenicity and adverse events are well-supported by citations to preclinical and clinical literature (C218-C220). This provides important context for the motivation of the immune-evasive saRNA platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "Viral vectors lack external shut-off mechanisms and often rely on suicide genes for safety, while ML336 is a potent and well-tolerated VEEV RdRp inhibitor that enables controllable saRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations of viral vectors are supported by citations (C221-C222), and the properties of ML336 are well-documented in cited literature (C223). This comparison highlights a key advantage of the immune-evasive saRNA platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C224",
+      "C225"
+    ],
+    "result": "Producing long RNA with high yield and integrity presents technical challenges, as larger RNAs are more prone to secondary structure formation and abortive transcription during in vitro synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These challenges are well-documented in cited literature (C224-C225) and represent a limitation of the immune-evasive saRNA approach that uses longer constructs. The authors acknowledge this limitation and suggest potential solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C226"
+    ],
+    "result": "Conventional saRNA typically fails to drive hepatic expression despite LNP accumulation in the liver, instead inducing transgene expression in the spleen, lungs, and muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation about the biodistribution and expression pattern of conventional saRNA is supported by citations (C226) and provides important context for potential in vivo applications of the immune-evasive saRNA platform.",
+    "result_type": "MINOR"
+  }
+]

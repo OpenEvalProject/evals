@@ -1,0 +1,2290 @@
+{
+  "submission": {
+    "id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:29:35.436740Z",
+    "updated_at": "2025-11-21T16:29:35.436740Z"
+  },
+  "content": [
+    {
+      "id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "content_type": "manuscript",
+      "content_text": "# Phage-displayed synthetic library and screening platform for nanobody discovery\n\n## Authors\n\n- Baolong Xia<sup>1</sup> ([ORCID: 0000-0003-2536-0267](https://orcid.org/0000-0003-2536-0267))\n- Ah-Ram Kim<sup>1</sup> ([ORCID: 0000-0001-9597-6759](https://orcid.org/0000-0001-9597-6759))\n- Feimei Liu<sup>2</sup>\n- Myeonghoon Han<sup>1</sup>\n- Emily Stoneburner<sup>1</sup>\n- Stephanie Makdissi<sup>3</sup>\n- Francesca Di Cara<sup>3</sup>\n- Stephanie E Mohr<sup>1</sup> ([ORCID: 0000-0001-9639-7708](https://orcid.org/0000-0001-9639-7708))\n- Aaron Ring<sup>2</sup> \u2020\n- Norbert Perrimon<sup>1</sup> ([ORCID: 0000-0001-7542-472X](https://orcid.org/0000-0001-7542-472X)) \u2020\n\n### Affiliations\n\n1. Department of Genetics, Blavatnik Institute, Harvard Medical School Boston United States\n2. Department of Immunobiology, Yale School of Medicine Boston United States ([ROR:03v76x132](https://ror.org/03v76x132))\n3. Department of Microbiology and Immunology, Dalhousie University Halifax Canada ([ROR:01e6qks80](https://ror.org/01e6qks80))\n4. Drosophila RNAi Screening Center, Harvard Medical School Halifax Canada\n5. Division of Translational Science and Therapeutics, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n6. Howard Hughes Medical Institute Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNanobodies, single-domain antibodies derived from camelid heavy-chain antibodies, are known for their high affinity, stability, and small size, which make them useful in biological research and therapeutic applications. However, traditional nanobody generation methods rely on camelid immunization, which can be costly and time-consuming, restricting their practical feasibility. In this study, we present a phage-displayed synthetic library for nanobody discovery. To validate this approach, we screened nanobodies targeting various Drosophila secreted proteins. The nanobodies identified were suitable for applications such as immunostaining and immunoblotting, supporting the phage-displayed synthetic library as a versatile platform for nanobody development. To address the challenge of limited accessibility to high-quality synthetic libraries, this library is openly available for non-profit use.\n\n## Introduction\n\nNanobodies, single-domain antibody fragments derived from camelid heavy-chain antibodies, are valuable tools in biological research and therapeutic trials due to their small size, superior stability, and high specificity for target antigens (Muyldermans, 2013; K\u00f6nning et al., 2017). These features make nanobodies ideal for applications beyond traditional in vitro assays, including live-cell imaging and functional studies. For example, when fused to fluorescence proteins or functional domains, intracellularly expressed nanobodies enable real-time visualization and manipulation of proteins within living cells, providing a useful approach to study cellular dynamics in native environments (Rothbauer et al., 2006; Caussinus et al., 2011; Harmansa and Affolter, 2018; Schnider et al., 2024).\n\nTraditional methods for nanobody generation, which rely on animal immunization, can be costly and time-consuming and are also limited by immunologic tolerance to conserved antigens (Banik et al., 2023). To overcome these challenges, in vitro technologies such as yeast, phage, and ribosome display have emerged as valuable alternatives, enabling the generation of synthetic nanobody libraries for direct antigen selection without animal immunization (Moutel et al., 2016; Zimmermann et al., 2018; McMahon et al., 2018).\n\nThe yeast-display platform, as demonstrated by Kruse and colleagues (McMahon et al., 2018), has proven exceptionally useful for screening nanobodies that recognize distinct conformational states of target proteins, such as G-protein-coupled receptors (GPCRs), facilitating structural studies and functional assays. While yeast display offers benefits such as robust expression and efficient cell-based screening, it also demands substantial antigen quantities and incurs high costs due to the need for magnetic- or fluorescence-activated cell sorting (MACS/FACS). These factors can limit the accessibility of yeast display for high-throughput or resource-limited applications. Moreover, due to limitations in yeast cell transformation efficiency, yeast display libraries have relatively low diversity (108 variants in the Kruse yeast library), potentially limiting the chances of identifying high-affinity nanobodies.\n\nPhage display, meanwhile, is a well-established technology in antibody discovery (Smith and Petrenko, 1997; Nagano and Tsutsumi, 2021; Hutchings and Sato, 2024). Phage display generally requires less antigen, enables precise control over screening conditions (e.g. temperature, pH, chemical composition), and supports rapid, iterative rounds of selection. Given these benefits, we sought to create a phage-displayed synthetic nanobody library to leverage the diversity of a well-designed synthetic library with the added flexibility of phage display, providing an alternative platform for nanobody discovery.\n\nHere, we describe the construction of a phage-displayed synthetic nanobody library using DNA templates originally used to create a yeast display library (McMahon et al., 2018). We validate the platform by screening for nanobodies against a panel of Drosophila-secreted proteins, with applications in immunostaining and immunoblotting analysis. This phage display-based platform offers a streamlined, cost-effective solution for nanobody discovery, broadening access to synthetic libraries for biological research and biomedical applications.\n\n## Results\n\n### Design and construction of phage-displayed synthetic nanobody library\n\nTo adapt the previously developed yeast-displayed nanobody library to a phage display platform, we used existing DNA templates originally reported by McMahon et al., 2018 to construct a phage-displayed nanobody library. In this library, the nanobody sequences include constant framework and designed position-specific variations of three complementarity-determining regions (CDRs; Figure 1A). CDRs form the binding interface between nanobodies and antigens, and thus are crucial for nanobody diversity and specificity. The partial randomization in the residues flanking CDRs recapitulates the observed variations at these positions of 93 unique nanobodies deposited in the Protein Data Bank. The more thorough randomization in highly variable positions within CDRs reflects the high diversity of the library. Moreover, the CDR3 region was designed with varying lengths (7, 11, or 15 residues) to promote diverse binding modes and increase the potential for high-affinity binders, providing an additional dimension of diversity and complexity to the nanobody library.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of synthetic nanobody library design. Nanobody sequences were inserted at the 5\u2019 end of pIII sequence in the phagemid. Nanobody sequences contain constant framework (FR1-FR4) and randomized regions within the CDRs. The randomization in highly variable positions is indicated as asterisks (*). The frequencies of amino acids in the variable positions are indicated in the bar chart. Cysteine and methionine were eliminated from design to avoid chemical reactivity. The CDR3 region was designed with varying lengths (7, 11, or 15 residues). (B) Schematic of antigen-expressing vector. Antigen expression was driven by an inducible metallothionein (MT) promoter. The antigen is fused to an N-terminal BiP signal peptide and FLAG-tag, as well as a C-terminal human Immunoglobulin G (hIgG) Fc domain. GFP-T2A-PuroR cassette is driven by Copia promoter for fluorescence labeling and antibiotics selection.\n\nM13 bacteriophage is a non-lytic filamentous bacteriophage and is commonly used for phage display. M13 bacteriophage contains single-stranded DNA genome packaged within a protein capsid formed by the major coat protein pVIII and the minor coat proteins pIII, pVI, pVII, and pIX (Jia and Xiang, 2023). To construct a phage-displayed nanobody library, the DNA sequences were inserted into 5' end of pIII sequence in a phagemid vector (Figure 1A). Next, the phagemid library was introduced into bacteria by massive electroporation. This resulted in a yield of 2.4\u00d71010 individual clones, suggesting a high level of diversity in the phage library. Following helper phage infection, the phages were packaged in the bacteria periplasm and secreted into the culture medium, producing a phage library with nanobodies displayed on the phage surface via fusion to the pIII coat protein.\n\n### Purification of Drosophila secreted proteins as antigens for nanobody screening\n\nCell-cell communication is primarily mediated by secreted and transmembrane proteins, which is of significant research interest and has therapeutic potential. To address the challenge of producing antibodies against secreted and membrane proteins\u2014especially the need for proper protein maturation and post-translational modifications\u2014we used Drosophila S2 cells to produce 8 Drosophila secreted proteins as antigens for nanobody screening: Carbonic anhydrase-related protein B (CARPB), Myoinhibiting peptide precursor (Mip), Salivary gland-derived secreted factor (Sgsf), neuropeptide Nesfatin-1, Midkine and pleiotrophin 1 (Miple1), Amnesiac (Amn), CG9849, and CG13965.\n\nThe antigen expression vector was designed with two modules: one for antigen secretion and the other for stable cell line generation (Figure 1B). The antigen-expression module includes an inducible metallothionein promoter to prevent potential toxicity from constitutive expression, along with a BiP signal peptide for secretion, a FLAG-tag for detection, and a human Immunoglobulin G (hIgG) Fc domain for purification. The second module contains GFP-T2A-PuroR under constitutively active Copia promoter, enabling both GFP-based labeling and puromycin selection in serum-free ESF921 media.\n\nFollowing transfection, puromycin selection was used to establish stable cell lines. Initial adherent cultures were adapted to suspension culture to increase cell density for efficient antigen production. Antigen expression was induced with CuSO4, after which conditioned media was harvested and the proteins were purified from conditioned medium using Protein A resin.\n\n### Nanobody screening with phage-displayed nanobody library\n\nTo screen for nanobodies that bind these antigens, we first coated 96-well MaxiSorp plates with mCherry-hIgG for negative selection and antigen-hIgG for positive selection (Figure 2A). Then, the phage-displayed nanobody library was incubated with a mCherry-hIgG-coated plate to remove phages with affinity to the plate or the hIgG domain. Next, unbound phages were transferred to antigen-hIgG-coated plates to select phages with affinity to the antigen. After stringent washing, the phages that remained bound to the antigen-coated plate were eluted by infecting bacteria in an \u2018elution by infection\u2019 manner. The infected bacteria were used to amplify the selected phages in the presence of helper phages to generate phages used in subsequent iterative selection steps. To enrich for nanobodies with high affinity, in the next rounds of selection, we reduced the antigen amount coated on the plate and increased the number of washing cycles to gradually increase the selection stringency (see Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of nanobody screening. The mCherry-hIgG-coated plate was used for negative selection and the antigen-hIgG-coated plate was used for positive selection. Three iterative rounds of screening were performed for each antigen. (B) ELISA with polyclonal phages from three rounds of selection in CARPB screen campaign. The mCherry-hIgG and CARPB-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (C) ELISA with monoclonal phages from the third round of selection in the CARPB screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and CARPB-hIgG. (D) Predicted Aligned Error (PAE) map generated using AlphaFold-Multimer for the CARPB-NbCARPB-1H complex. Low PAE values, shown in blue, indicate accurate predictions for the interaction interfaces, depicted in the top right and bottom left quadrants. High Local Interaction Score (LIS) and interface TM-score (ipTM) values confirm the structural reliability of the interface. (E) Predicted 3D structure of the CARPB-NbCARPB-1H complex, showing the interaction interface. The region enclosed by the dotted box corresponds to the interaction interface visualized in panel F. Residues involved in the interaction (within 8 \u00c5 distance) are marked in red (CARPB) and green (NbCARPB-1H) in the structure and protein sequences. CDRs in the protein sequence are marked by boxes. The interaction predominantly occurs within these CDR regions. (F) Neighboring residues between CARPB and NbCARPB-1H, showing residues within a 5 \u00c5 distance. Cyan indicates residues of CARPB, and magenta indicates residues of NbCARPB-1H. Each residue is labeled with its residue name and number.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) ELISA with polyclonal phages from three rounds of selection in Nesfatin-1 screen campaign. The mCherry-hIgG and Nesfatin1-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (B) ELISA with monoclonal phages from the third round of selection in Nesfatin1 screen campaign. 48 monoclonal phages were tested against mCherry-hIgG and Nesfatin1-hIgG. (C) Nesfatin1-expressing cells stained with nanobody-displaying phages. GFP signals mark cells expressing membrane-tethered Nesfatin-1. Nb.b201 phage, an irrelevant nanobody displaying phage, was used as negative control. BF, bright field. (D) Nesfatin1-expressing cells stained with purified nanobodies. GFP signals label the cells expressing membrane-tethered Nesfatin-1. Nb127D01 is an irrelevant nanobody used as negative control. BF, bright field.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) ELISA with polyclonal phages from three rounds of selection in Mip screen campaign. The mCherry-hIgG and Mip-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (B) ELISA with monoclonal phages from the third round of selection in Mip screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and Mip-hIgG. (C) Mip-expressing cells stained with nanobody-displaying phages. GFP signals mark cells expressing membrane-tethered Mip. Nb.b201 phage, an irrelevant nanobody displaying phage, was used as negative control. BF, bright field. (D) Mip-expressing cells stained with purified nanobodies. GFP signals label the cells expressing membrane-tethered Mip. Nb127D01 is an irrelevant nanobody used as a negative control. BF, bright field.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) ELISA with polyclonal phages from three rounds of selection in CG9849 screen campaign. The mCherry-hIgG and CG9849-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (B) ELISA with monoclonal phages from the third round of selection in the CG9849 screen campaign. 144 monoclonal phages were tested against mCherry-hIgG and CG9849-hIgG. (C) CG9849-expressing cells stained with nanobody-displaying phages. GFP signals mark cells expressing membrane-tethered CG9849. Nb.b201 phage, an irrelevant nanobody displaying phage, was used as negative control. BF, bright field. (D) CG9849-expressing cells stained with purified nanobodies. GFP signals label the cells expressing membrane-tethered CG9849. Nb127D01 is an irrelevant nanobody used as negative control. BF, bright field.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) ELISA with polyclonal phages from three rounds of selection in Amn screen campaign. The mCherry-hIgG and Amn-hIgG were coated in decreasing amounts across different rows. The intensity of green color represents the ELISA signal strength. (B) ELISA with monoclonal phages from the third round of selection in Amn screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and Amn-hIgG.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) ELISA with monoclonal phages from the third round of selection in Sgsf screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and Sgsf-hIgG. (B) ELISA with monoclonal phages from the third round of selection in Miple1 screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and Miple1-hIgG. (C) ELISA assay with monoclonal phages from the third round of selection in the CG13965 screen campaign. 96 monoclonal phages were tested against mCherry-hIgG and CG13965-hIgG.\n\nAfter three rounds of selection, we evaluated the selection outcomes with an enzyme-linked immunosorbent assay (ELISA) using the polyclonal phages after each round of selection. Typically, the ELISA signal increased after 2\u20133 rounds of selection, indicating that phages with affinity for the antigen were progressively enriched in the polyclonal population (Figure 2B). For the CARPB and Nesfatin-1 screen campaigns (Figure 2B, Figure 2\u2014figure supplement 1A), we observed specific ELISA signals against antigen-hIgG but not against mCherry-hIgG even when testing the polyclonal phages, suggesting that the majority of the phage population in these samples specifically recognizes the antigens.\n\nNext, we identified positive hits from the nanobody screens by ELISA using monoclonal phages after the third round of selection. The monoclonal phages exhibiting specific ELISA signals against antigen-hIgG rather than mCherry-hIgG were defined as positive hits for each screen campaign. As expected, most monoclonal phages exhibited specific antigen recognition in the CARPB and Nesfatin-1 screen campaigns (Figure 2C, Figure 2\u2014figure supplement 1B), consistent with the polyclonal phage ELISA results. The nanobody sequences of these hits were identified by Sanger sequencing of the phagemids. In total, we identified 5 candidate nanobodies for CARPB (Figure 2), 7 candidate nanobodies for Nesfatin-1 (Figure 2\u2014figure supplement 1), 2 candidate nanobodies for Mip (Figure 2\u2014figure supplement 2), 1 candidate nanobody for CG9849 (Figure 2\u2014figure supplement 3) and 2 candidate nanobodies for Amn (Figure 2\u2014figure supplement 4), demonstrating that the phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens. These nanobody sequences were listed in Table 1. However, we failed to identify nanobodies against Sgsf, Miple1, and CG13965 (Figure 2\u2014figure supplement 5), suggesting room for further improvement of our current library and screening platform (see Discussion).\n\n**Table 1.**\n Protein sequences of the nanobodies identified in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>nanobody</th>\n      <th>sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NbCARPB-1H</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGTISYAPVMGWYRQAPGKEREFVAGISLGGNTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAVYVGSSPYEYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbCARPB-2A</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGNISHYSIMGWYRQAPGKEREFVAAINIGATTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAYAARRPGYEYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbCARPB-2E</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGTISAHSVMGWYRQAPGKEREFVAGIAYGGNTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVASHYTRAPATAHDYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbCARPB-4D</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGYISQPGYMGWYRQAPGKERELVAAITSGGITYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVSYASSYLYSYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbCARPB-5F</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFIGFMGWYRQAPGKERELIAGITSGGSTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVVYGGYAYWPAWHDYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbMip-4G</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGNIFNRGAMGWYRQAPGKERELVAAINQGTNTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVHPTYKSHLGYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbMip-4H</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGTIFFRGVMGWYRQAPGKERELVAAISRGANTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVYFPNEGGHYYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbNesfatin1-1A</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGTISTFTFMGWYRQAPGKEREFVAAIGYGGITNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAPYGYSYPQFYAFKYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbNesfatin1-1E</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGNIFEPASMGWYRQAPGKERELVAAINRGAITYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAASRYYGAIFLYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbNesfatin1-1G</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGNIFRYRAMGWYRQAPGKERELVAAIAAGGTTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVGRYIVSVYRDDYWYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbNesfatin1-1H</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFYLVDMGWYRQAPGKEREFVATIATGGITYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAARVYDGTSDWRHYYYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbNesfatin1-2A</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGNISPYAAMGWYRQAPGKEREFVAAIARGSTTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVRYLGYTVKGILHIYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbNesfatin1-2C</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGYIFYRYTMGWYRQAPGKERELVAGINRGGITNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVIARAQWYLAYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbNesfatin1-3C</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFRFYGMGWYRQAPGKEREFVAAIAYGTTTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVRGYNTADSVRRYDYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbCG9849-15G</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFPWRGMGWYRQAPGKERELVAAISGGANTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAGTLTAGQHRYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbAmn-4D</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGSIFLIFAMGWYRQAPGKEREFVATIGYGATTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAVRGFYLRNPPDGYNIRHRYWGQGTQVTVSS</td>\n    </tr>\n    <tr>\n      <td>NbAmn-10A</td>\n      <td>QVQLQESGGGLVQAGGSLRLSCAASGTIFLGIYMGWYRQAPGKERELVAAIALGASTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCASRDAADIYDHDFWYWGQGTQVTVSS</td>\n    </tr>\n  </tbody>\n</table>\n\nTo predict the structural basis of antigen-nanobody interactions, we used AlphaFold-Multimer (Evans et al., 2022) to model CARPB-nanobody complexes and evaluated the interaction using both interface pTM (ipTM) score (Evans et al., 2022) and Local Interaction Score (LIS) (Kim et al., 2024). The ipTM score reflects the structural accuracy of the predicted complex, while LIS indicates the potential interaction strength. Among the five candidate nanobodies for CARPB, one nanobody, NbCARPB-1H, exhibited high LIS and ipTM scores, indicating a reliable interaction model (Figure 2D). The Predicted Aligned Error (PAE) map further supported the accuracy of the complex prediction, showing low PAE values (shown as blue color area) in the interaction interface, indicating a reliable structure prediction (Figure 2D). The predicted 3D structure revealed specific interactions between the complementarity-determining regions (CDRs) of NbCARPB-1H and residues in both the N-terminal (CARPB24-52) and C-terminal (CARPB276-277) regions of CARPB (Figure 2E and F). The successful structural modeling of NbCARPB-1H highlights its reliable interaction with CARPB, validating the accuracy of AlphaFold-Multimer predictions for antigen-nanobody complexes.\n\n### Nanobodies recognize membrane-tethered forms of the antigens\n\nTo further validate that the identified nanobodies can recognize the antigens, we tethered each antigen to the cell surface by glycosylphosphatidylinositol (GPI) anchoring or mCD8 fusion. Four of the five antigens (CARPB, Mip, Nesfatin-1, and CG9849, but not Amn) were successfully presented on cell surface as detected by N-terminal FLAG-tag immunostaining. To test nanobody binding, the antigen-expressing cells were incubated with nanobody-displaying phages, followed by detection of phage binding on cell surface. In contrast to what we observed for an irrelevant nanobody Nb.b201, a nanobody against human serum albumin (McMahon et al., 2018), the positive nanobody-displaying phages could recognize the antigens on the cell surface (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig3-v1.jpg)\n\n**Figure 3.:** (A) CARPB-expressing cells stained with nanobody-displaying phages. GFP signals mark cells expressing membrane-tethered CARPB. Nb.b201 phage, an irrelevant nanobody displaying phage, was used as negative control. BF, bright field. (B) CARPB-expressing cells stained with purified nanobodies. GFP signals label the cells expressing membrane-tethered CARPB. Nb127D01 is an irrelevant nanobody used as a negative control. BF, bright field.\n\nSince phage display potentially results in multivalent nanobody presentation, we next asked if the monovalent form of the nanobodies still recognizes the antigens. To do this, we incubated the antigen-expressing cells with purified nanobodies, and we observed similar results (Figure 3B), further suggesting that these nanobodies specifically recognize their target proteins.\n\n### Nanobody application in immunostaining and immunoblotting\n\nTo test downstream applications of the nanobodies, NbMip-4G, identified in our nanobody screening against Mip (Figure 2\u2014figure supplement 2), was evaluated for immunostaining and immunoblotting applications. Mip is a neuropeptide that regulates sleep homeostasis, food intake, and mating behavior (Oh et al., 2014; Min et al., 2016; Jang et al., 2017). We observed a strong cytoplasmic immunostaining signal in cells with smaller nuclei in the Drosophila adult gut (Figure 4A), consistent with a previous observation based on single-cell RNA-seq data that Mip is expressed in the enteroendocrine cells (Guo et al., 2019). Importantly, the immunostaining signal disappeared when Mip expression was knocked down by RNA interference (RNAi) (Mex >Mip RNAiv106076), further supporting the specificity of the NbMip-4G.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/105887/elife-105887-fig4-v1.jpg)\n\n**Figure 4.:** (A) Immunostaining of Drosophila adult intestine with NbMip-4G nanobody. (B) Immunoblotting detection of Mip in Drosophila adult hemolymph with NbMip-4G nanobody. A nonspecific band is included as a loading control. (C) Predicted Aligned Error (PAE) map generated using AlphaFold-Multimer for the Mip-NbMip-4G complex. Low PAE values, shown in blue, indicate accurate predictions for the interaction interfaces, depicted in the top right and bottom left quadrants. High LIS and ipTM values confirm the structural reliability of the interface. (D) Predicted 3D structure of the Mip-NbMip-4G complex. The surface representation shows NbMip-4G in green and the interacting helical segment of Mip (residues 42\u201362) in red. Key residues involved in the interaction are marked in red (Mip) and green (NbMip-4G) in the protein sequences. CDRs in the protein sequence are marked by boxes. The interaction predominantly occurs within these CDR regions. (E) Neighboring residues between Mip and NbMip-4G, showing residues within a 5 \u00c5 distance. Cyan indicates residues of Mip, and magenta indicates residues of NbMip-4G. Each residue in NbMip-4G is labeled with its residue name and number.\n\nImmunoblotting analysis of adult fly hemolymph with NbMip-4G also demonstrated its utility in protein detection. A clear reduction in Mip protein levels was observed in Mip mutant (Mip1) or RNAi knockdown (Mex >Mip RNAiv106076) samples compared to control (Mex-Gal4/w1118) (Figure 4B). These results confirm that NbMip-4G can specifically detect Mip in immunoblotting applications.\n\nTo further explore the molecular interaction between Mip and NbMip-4G, we predicted their complex using AlphaFold-Multimer and assessed the structural reliability of the interaction. The PAE map (Figure 4C) indicated low PAE values at the interaction interface between Mip and NbMip-4G, confirming the accuracy of the structural prediction. The predicted 3D structure of the Mip-NbMip-4G complex revealed that NbMip-4G primarily interacts with a helical segment of Mip spanning residues 42\u201362 (Figure 4D). Interacting residues, predominantly located within the CDRs of NbMip-4G, were identified through contact interface analysis (Figure 4D and E). These structural insights elucidate the molecular basis of the high specificity and binding affinity of NbMip-4G for Mip, reinforcing its potential as a versatile tool for detecting and studying Mip in functional studies.\n\n## Discussion\n\nIn this study, we constructed a phage-displayed nanobody library and established a versatile platform for rapid nanobody discovery. Furthermore, we successfully identified nanobodies against various Drosophila secreted proteins using this platform. Our current phage display library has higher diversity compared with yeast display library (1010 vs 108), potentially increasing the likelihood of identifying high-affinity binders. Additionally, whereas the yeast screening platform requires expensive and tedious MACS/FACS for each round of selection, the phage screening platform has much simpler selection steps and a faster turnaround time, making the phage screening platform a streamlined, cost-effective solution for nanobody discovery.\n\nThe Kruse nanobody library design, which served as the foundation for our work, incorporates optimized randomization within complementarity-determining regions (CDRs) while maintaining a robust framework (McMahon et al., 2018). We further adapted this design for phage display, enabling greater scalability and access. Unlike many existing libraries that are commercially restricted or require expensive licensing, we have democratized access to our platform by making it openly available for non-profit use to address the field\u2019s broader challenge of limited accessibility to high-quality synthetic libraries.\n\nDespite its advantages, our library and approach still face challenges. For example, we screened nanobodies against eight Drosophila secreted proteins and successfully identified nanobodies for five of them. For the remaining three antigens, we did not observe any monoclonal phage with specific affinity to the antigens after 3 or 4 rounds of selection. Further increasing library diversity, optimizing the screening strategy, and/or improving antigen quality might increase the success rate. Moreover, for these hits we identified, some nanobodies (e.g. Nesfatin-1 nanobodies in Figure 2\u2014figure supplement 1) only showed binding affinity in ELISA and failed to recognize membrane-tethered forms of the antigens, possibly due to low affinity. Further affinity maturation by random mutagenesis or directed evolution might increase affinity of these antibodies to the antigens.\n\nOverall, we show that our phage-displayed nanobody library provides a highly efficient, cost-effective platform for nanobody discovery. By making this resource openly accessible to the academic and non-profit research community, we hope to foster innovation and collaboration across the scientific community, overcoming financial and technical barriers that have limited the use of synthetic libraries. Our library represents a step forward in addressing the diverse and complex needs of nanobody discovery, offering a valuable alternative to other existing platforms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>CARPB</td>\n      <td>FlyBase</td>\n      <td>FLYB: FBgn0052698</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Mip</td>\n      <td>FlyBase</td>\n      <td>FLYB: FBgn0036713</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Sgsf</td>\n      <td>FlyBase</td>\n      <td>FLYB: FBgn0266261</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Nesfatin-1</td>\n      <td>FlyBase</td>\n      <td>FLYB: FBgn0052190</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Miple1</td>\n      <td>FlyBase</td>\n      <td>FLYB: FBgn0027111</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>Amn</td>\n      <td>FlyBase</td>\n      <td>FLYB: FBgn0086782</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>CG9849</td>\n      <td>FlyBase</td>\n      <td>FLYB: FBgn0034803</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>CG13965</td>\n      <td>FlyBase</td>\n      <td>FLYB: FBgn0032834</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (D. melanogaster)</td>\n      <td>S2</td>\n      <td>DRSC</td>\n      <td>FLYB: FBbt:00005737</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (D. melanogaster)</td>\n      <td>S2R+</td>\n      <td>DRSC</td>\n      <td>FLYB: FBtc0000150</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>SS320 (MC1061 F') Electrocompetent Cells</td>\n      <td>Biosearch</td>\n      <td>60512\u20132</td>\n      <td>For phage library construction</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>One Shot TOP10 Chemically Competent E. coli</td>\n      <td>Invitrogen</td>\n      <td>C404010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>One Shot OmniMAX 2 T1R E. coli</td>\n      <td>Invitrogen</td>\n      <td>C854003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>One Shot ccdB Survival 2 T1R Competent Cells</td>\n      <td>Invitrogen</td>\n      <td>A10460</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21 Competent E. coli</td>\n      <td>NEB</td>\n      <td>C2530H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>M13 Major Coat Protein Antibody (RL-ph1) HRP</td>\n      <td>Santa Cruz biotechnology</td>\n      <td>sc-53004 HRP</td>\n      <td>1:1000 dilution for ELISA</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>M13 Major Coat Protein Antibody (RL-ph1) Alexa Fluor 647</td>\n      <td>Santa Cruz biotechnology</td>\n      <td>sc-53004 AF647</td>\n      <td>1:500 dilution for immunostaining</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 647 AffiniPure Goat Anti-Alpaca IgG, VHH domain</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>128-605-230</td>\n      <td>1:500 dilution for immunostaining</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Peroxidase AffiniPure Goat Anti-Alpaca IgG, VHH domain</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>128-035-230</td>\n      <td>1:5000 dilution for immunoblotting</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Effectene Transfection Reagent</td>\n      <td>Qiagen</td>\n      <td>301425</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Construction of phage-displayed nanobody library\n\nLibrary construction followed an established protocol (McMahon et al., 2018). Nanobody library DNA fragments were digested with the restriction enzymes FseI and Nsil at 37 \u00b0C for 1 hr and purified using gel extraction (QIAGEN). Similarly, the phagemid vector p443 was linearized by FseI and NsiI digestion and purified by gel extraction.\n\nThe purified nanobody DNA fragments and linearized vector were ligated overnight at 16 \u00b0C using T4 DNA ligase (NEB). The ligation products were cleaned using a QIAquick PCR Purification Kit (QIAGEN) and eluted in water. The purified phagemid constructs were then electroporated into electrocompetent E. coli strain SS320 (Biosearch) at 2,500 V, 125 \u03a9, and 50 \u00b5F. Immediately following electroporation, cells were recovered in 5 mL of S.O.C medium (Corning) by shaking at 37\u00b0C and 220 rpm for 1 hr. M13K07 helper phage particles were added at a final concentration of 1010 phage/mL and incubated for 1 hr at 37 \u00b0C without antibiotics. Next, the culture was expanded in 1 L of 2YT medium supplemented with Tetracycline (at final concentration of 10 \u03bcg/mL), kanamycin (50 \u00b5g/mL), and carbenicillin (100 \u00b5g/mL), followed by overnight incubation in a 37 \u00b0C shaking incubator.\n\nThe overnight culture was centrifuged, and phage particles were precipitated from the supernatant by adding PEG/NaCl to a final volume ratio of 1:5 and incubating on ice for 30 min. The precipitated phage was resuspended in PBS, supplemented with 10% glycerol, thoroughly mixed, aliquoted, and stored at \u201380 \u00b0C. The constructed library resulted in 2.4x1010 transformants, with each aliquot containing 1013 phage particles.\n\n### Sequences of the Drosophila secreted proteins\n\nThe protein sequence of Nesfatin-1 was adapted from previous literature (Yeom et al., 2021). Putative mature protein sequences for seven Drosophila secreted proteins (CARPB, Mip, Sgsf, Miple1, Amn, CG9849, and CG13965) assessed in this study were determined based on the predicted sequences excluding signal peptide or transmembrane domain from the full sequences (https://www.flyrnai.org/tools/nanobody/web/protein). The protein sequences of the eight Drosophila secreted proteins are as follows.\n\n#### CARPB (FBgn0052698)\n\nVSWEDWWTYDGISGPAFWGLINPEWSLCNKGRRQSPVNLEPQRLLFDPNLRPMHIDKHRISGLITNTGHSVIFTAGNDTVANYDGMQTPVNISGGPLSYRYRFHEIHMHYGLNDQFGSEHSVEGYTFPAEIQIFGYNSQLYANFSDALNRAQGIVGVSILLQLGDLSNAELRMLTDQLERIRYGGDEAFVKRLSIRGLLPDTDHYMTYDGSTTAPACHETVTWVVLNKPIYITKQQLHALRRLMQGSPDHPKAPLGNNYRPPQPLLHRPIRTNIDFKTTKSNGKAACPTMYREVYYKATSWKQN.\n\n#### Mip (FBgn0036713)\n\nNLVASGSAGSPPSNEPGGGGLSEQVVLDQLSESDLYGNNKRAWQSLQSSWGKRSSSGDVSDPDIYMTGHFVPLVITDGTNTIDWDTFERLASGQSAQQQQQQPLQQQSQSGEDFDDLAGEPDVEKRAWKSMNVAWGKRRQAQGWNKFRGAWGKREPTWNNLKGMWGKRDQWQKLHGGWGKRSQLPSN.\n\n#### Sgsf (FBgn0266261)\n\nYRIIESNEVPKTCPALNKDIIFEEPHLNNNQREFYDVREIPRRLHFNSNKKEIQSENWLLRIIRIKTINDGPRHKVTEIKEDKHMDGFAKRLFNILKKTLKMHEPSYKHNNDQKDLFVLKKNHFPPEHHIVKREPVHYNYM.\n\n#### Miple1 (FBgn0027111)\n\nSTVLGTTEGQETPLALPVAEQTQPTTAIQGEVWEEDDHEVLIRNERGTKSDGLSCRYGKNPWTECDTKTNTRSRTLTLKKGDPACDQTRTIQKKCKKACRYEKGSWSECATGQMTRADKLKASSDPSCEATRVIKKNCKPGKSKDKSAKEQRKNKDKAARKGRV.\n\n#### Amn (FBgn0086782)\n\nLRRRVVSGSKGSAALALCRQFEQLSASRRERAEECRTTQLRYHYHRNGAQSRSLCAAVLCCKRSYIPRPNFSCFSLVFPVGQRFAAARTRFGPTLVASWPLCNDSETKVLTKWPSCSLIGRRSVPRGQPKFSRENPRALSPSLLGEMR.\n\n#### Nesfatin-1 (Precursor protein: NUCB1, FBgn0052190)\n\nLPVTQNKKDHKEAAESSTPATADVETALEYERYLREVVEALEADPEFRKKLDKAPEADIRSGKIAQELDYVNHHVRTKLDEI.\n\n#### CG9849 (FBgn0034803)\n\nSTTISIPITTQDIIAGDVFFEILSPSELEYTYRLRPAKDFGSAFSERLEGVPLVITDPPGACQEIRNARDLNGGVALIDRGECSFLTKTLRAEAAGALAAIITEYNPSSPEFEHYIEMIHDNSQQDANIPAGFLLGKNGVIIRSTLQRLKRVHALINIPVNLTFTPPSKINHPPWLGW.\n\n#### CG13965 (FBgn0032834)\n\nQETPAAESSPASPTDGETSPVTEASSIGELTQTTEAGSEVTESPTNSTDMVNSTDNPDPNGSPDPENGGDPFVKPGSHIKGPRHVRAHDGFHSLKTEKHWASWNDAFTTPRP.\n\n### Purification of secreted antigens using stable Drosophila S2 cell lines\n\nDrosophila S2 cells cultured in ESF921 medium (Expression Systems) were transfected with an antigen expression vector as described (Kim et al., 2022). Following transfection, puromycin selection was used to establish stable cell lines. Adherent cultures were gradually adapted to suspension conditions to enhance cell density and antigen production. Antigen expression was induced by adding 500 \u00b5M CuSO4 to suspension cultures. Conditioned medium (CM) containing secreted antigens was harvested 4\u20135 days post-induction. CM was then clarified by centrifugation at 1000\u00d7g for 10 min and filtered through a 0.22 \u00b5m filter to remove residual debris.\n\nProtein A resin (1 mL, GenScript) was prepared by washing with 25 mL TBS in a gravity purification column. CM containing antigen-hIgG (50\u2013250 mL) was passed through the resin by gravity flow, and the flow-through was collected. The resin was then washed three times with 25 mL TBS to remove unbound material. To elute antigen-hIgG, the resin was treated with 5 mL of 0.1 M glycine (pH 3.5), and the eluate was collected into a 15 mL conical tube preloaded with 0.5 mL Tris-HCl (pH 8.5), equivalent to 10% of the elution buffer volume. An additional 2 mL of TBS was passed through the resin, and the eluate was collected into the same tube. The combined eluate was mixed thoroughly.\n\nThe pooled eluate was concentrated using an Amicon Ultra-15 centrifugal filter (50 kDa cutoff; Millipore Sigma) at 4150\u00d7g and 4 \u00b0C for 30 min, with TBS washes repeated three times. The protein concentration of the final sample was measured at A280 using a NanoDrop spectrophotometer, with absorbance values adjusted based on the protein extinction coefficients.\n\n### Nanobody screening by phage display\n\nPurified antigen-hIgG proteins were diluted in PBS (1 \u00b5g/well for the first round, 0.5 \u00b5g/well for the second round and 0.25 \u00b5g/well for the third round) and coated onto Nunc MaxiSorp 96-well plates (Thermo Fisher Scientific, 442404) at 4 \u00b0C overnight. Antigen-coated plates were blocked with freshly prepared 5% skim milk in PBST (MPBST; PBS with 0.05% Tween-20) at room temperature (RT) for 1\u20132 hr. For negative selection, MaxiSorp plates were coated with mCherry-hIgG (1 \u00b5g/well), blocked similarly with 5% MPBST, and processed alongside the antigen plates.\n\nFor the first round of screening, nanobody-displaying phage libraries were thawed (1.5 mL tube) and diluted in 4.5 mL MPBST. A 60 \u00b5L aliquot of the diluted phages was added to each well of the mCherry-hIgG-coated plates at RT for 1 hr to remove nonspecific binders. The unbound phage-containing solution was then transferred to antigen-hIgG-coated plates. To minimize phage loss during transfer, the negative selection plate wells were washed with 90 \u00b5L MPBST, and the wash solution was also transferred to the antigen-coated plates, bringing the final volume to 150 \u00b5L. Antigen plates were incubated with the phage solution at RT for 1 hr and washed extensively with TBST (10 times in the first round, 20 times in the second round, and 30 times in the third round).\n\nTo recover antigen-bound phages, freshly prepared OmniMAX E. coli cells (Invitrogen, C854003) were grown to an OD600 of ~0.6 and added to each well of the washed antigen plates (50 \u00b5L per well). The plates were incubated at RT for 30 min with gentle shaking. Following incubation, the bacteria were collected and mixed with helper phages at a multiplicity of infection (MOI) of ~20. The mixture was incubated at 37 \u00b0C for 30 min with shaking and subsequently transferred to 36 mL of 2xYT medium supplemented with ampicillin (100 \u00b5g/mL) and kanamycin (50 \u00b5g/mL). The cultures were incubated overnight at 37 \u00b0C with shaking at 220 rpm to propagate the phages.\n\nPhages were precipitated from the overnight supernatant using PEG/NaCl (20% PEG8000, 2.5 M NaCl; 9 mL per 36 mL supernatant), incubated at 4 \u00b0C for 30 min, and centrifuged at 12,000\u00d7g for 30 min at 4 \u00b0C. The phage pellet was resuspended in 2 mL PBS, centrifuged at 12,000\u00d7g for 5 min to remove debris, and 1 mL was used for subsequent screening rounds. Phages obtained after the final round of screening were used for downstream applications, including polyclonal and monoclonal phage ELISA, and for monoclonal phage production.\n\n### Polyclonal phage ELISA\n\nPurified antigen-hIgG and mCherry-hIgG proteins were serially diluted, coated onto MaxiSorp plates, and blocked as described above. Polyclonal phage libraries from the 1st, 2nd, and 3rd selection rounds were incubated with the antigen-coated plates at room temperature (RT) for 1 hr. After incubation, the plates were washed three times with TBST and then incubated with an anti-M13-HRP secondary antibody (Santa Cruz biotechnology, sc-53004 HRP) in blocking solution at RT for 1 hr.\n\nFollowing incubation, the plates were washed again with TBST three times. 100 \u03bcL TMB substrate solution (Thermo Fisher Scientific, 34028) was added to each well, and color development was monitored. The reaction was stopped by adding 50 \u03bcL 0.4 M H2SO4 per well, and absorbance was measured at 450 nm (OD450) to quantify ELISA signals.\n\n### Monoclonal phage ELISA\n\nTo isolate individual nanobody-displaying phages, 96 phage-producing colonies were picked from the 3rd round of selection and inoculated into 96-well deep plates containing 100 \u00b5L 2xYT medium supplemented with carbenicillin. The plates were incubated at 37 \u00b0C for 6\u20138 hr until OD600 reached approximately 0.6. Helper phages were added to the cultures and incubated at RT for 30 min. The culture was then supplemented with 1 mL per well of 2xYT containing both carbenicillin and kanamycin and incubated overnight at 37 \u00b0C with shaking.\n\nThe culture supernatants containing monoclonal phages were collected by centrifuging the plates. These supernatants were used as the primary antibody for the monoclonal phage ELISA. To prepare antigen-coated plates, purified antigen-hIgG and mCherry-hIgG proteins (0.5 \u00b5g/mL) were coated onto MaxiSorp plates and blocked as described above. A mixture of the phage-containing supernatant and blocking solution (1:1) was added to the antigen-coated plates and incubated at RT for 1 hr.\n\nAfter washing with TBST for 10 times, the plates were incubated with an anti-M13-HRP secondary antibody in blocking solution at RT for 1 hr. Following incubation, the plates were washed again with TBST three times. 100 \u03bcL TMB substrate solution (Thermo Fisher Scientific, 34028) was added to each well, and color development was monitored. The reaction was stopped by adding 50 \u03bcL 0.4 M H2SO4, and absorbance was measured at 450 nm (OD450) to quantify the ELISA signals.\n\n### Cloning, expression, and purification of nanobody-ALFA-His in BL21 competent cells\n\nTo generate a cloning vector for bacterial nanobody expression with an ALFA-tag for detection and a His-tag for purification, a pET-26b-Nb-GGA plasmid compatible with BsaI-mediated Golden Gate Assembly (GGA) was constructed. A DNA fragment containing CmR-ccdB, the ALFA-tag coding sequence, and the His-tag coding sequence was synthesized with a point mutation in the ccdB gene to eliminate the BsaI recognition site. The synthetic DNA fragment was inserted into NcoI/XhoI-linearized pET-26b vector by HiFi cloning (NEB). The phagemids of the positive nanobodies identified in the monoclonal ELISA step were used to amplify PCR products with nanobody CDS flanked by BsaI-GGA cloning sites. The resulting PCR products were utilized to clone pET-26b-Nanobody-ALFA-His in One Shot ccdB Survival 2 T1R Competent Cells (Invitrogen, A10460).\n\nThe production and purification of nanobody-ALFA-His followed previously published protocols (Kim et al., 2022). Briefly, BL21 competent cells (NEB) were transformed with the pET-26b-Nanobody-ALFA-His plasmid and plated on LB plate supplemented with kanamycin (50 \u00b5g/mL). After overnight incubation at 37 \u00b0C, a single colony was inoculated into 10 mL LB medium supplemented with kanamycin and grown at 37 \u00b0C in a shaking incubator overnight.\n\nThe overnight culture was used to inoculate 50 mL LB medium with kanamycin in a 250 mL Erlenmeyer flask. The culture was incubated at 37 \u00b0C with shaking until the OD600 reached 0.6\u20130.8, at which point IPTG was added at a final concentration of 0.3 mM to induce protein expression. The culture was incubated overnight at 15 \u00b0C with shaking.\n\nAfter overnight induction, bacterial cells were harvested by centrifugation at 6000\u00d7g for 15 min at 4 \u00b0C. The pellet was subjected to periplasmic preparation using B-PER II reagent (Thermo Fisher Scientific, 78260); details described in Kim et al., 2022. The periplasmic fraction filtered by 0.22 \u00b5m filter was supplemented with 10 mM imidazole and used for purification using Ni\u00b2+ affinity chromatography (Cytiva, 17531801). The periplasmic sample was passed through a gravity-flow column containing 1 mL of Ni\u00b2+ resin pre-washed with TBS with 10 mM imidazole. The column was washed with 20 mL of TBS with 20 mM imidazole (3 times), and nanobody-ALFA-His was eluted in 1 mL fractions using TBS with increasing imidazole concentrations (100 mM, 250 mM, 500 mM). Eluates were analyzed by SDS-PAGE, and fractions containing purified nanobody were pooled, dialyzed, and stored at \u221280 \u00b0C.\n\n### Live cell staining with nanobody-displaying phages or purified nanobodies\n\nS2R + cells were transfected with antigen-GPI or antigen-mCD8 plasmids for transfection validation. After 2 days of transfection, cells were harvested and washed with PBS. The cells were incubated with a blocking solution (e.g. 5% skim milk in PBS) at 4 \u00b0C for 30 min, followed by incubation with nanobody-displaying phages or purified nanobodies in the blocking solution for 1 hr at 4 \u00b0C. After three washes with PBS, cells were incubated with secondary antibodies anti-M13-647 (Santa Cruz Biotechnology, sc-53004 AF647) or anti-VHH-647 (Jackson ImmunoResearch, 128-605-230) for 30 min at 4 \u00b0C. After three additional washes with PBS, the cells were imaged using an IN Cell high-throughput confocal microscopy system (MicRoN Core, Harvard Medical School).\n\n### Immunostaining of adult fly intestine\n\nFlies were maintained on standard medium at 25 \u00b0C. Mip knockdown was achieved using a Mip RNAi line (VDRC v106076) under the control of a Mex-Gal4 driver (BDSC 91367) for 20 days at 25 \u00b0C. Flies (w1118 crossed with Mex-Gal4) were used as controls. Adult flies were dissected in 1\u00d7PBS to collect intestinal tissues, which were fixed in 4% methanol-free formaldehyde in PBS at RT for 1 hr.\n\nFollowing fixation, tissues were permeabilized with 0.1% Triton X-100 in PBS (PBST), with three solution changes every 10 min for a total of 30 min. Tissues were then blocked in 5% normal goat serum (NGS) in PBST at RT for 1 hr. Samples were incubated overnight at 4 \u00b0C with primary antibody NbMip-4G (1:10 dilution) diluted in 5% NGS in PBST.\n\nAfter incubation, tissues were washed three times with PBST (15 min per wash) and then incubated with secondary antibody anti-VHH-647 (Jackson ImmunoResearch, 128-605-230, 1:500 dilution) in 5% NGS in PBST at RT for 2 hr. Following secondary antibody incubation, tissues were washed four times in 0.05% Tween-20 in PBS (15 min per wash) and given a final wash in 1\u00d7PBS. The tissues were mounted in ProLong Gold Antifade Mounting Medium (Invitrogen) and imaged using a confocal microscope.\n\n### Immunoblotting of adult fly hemolymph\n\nHemolymph samples were collected from control flies (w1118 crossed with Mex-Gal4), Mip mutant flies (Mip1, a kind gift from Jongkyeong Chung, Seoul National University), and Mip-RNAi flies (VDRC v106076 crossed with Mex-Gal4) using a previously reported protocol (Pinelli et al., 2024). The protein samples were subject to SDS-PAGE (12% gel). After transfer, the membrane was blocked with 5% BSA/TBST at 4 \u00b0C overnight. The membrane was incubated with the primary antibody NbMip-4G (1:300) at RT for 1 hr.\n\nThe membrane was then washed three times with TBST (15 min per wash) before incubation with secondary antibody Goat Anti-Alpaca IgG, VHH domain (Jackson ImmunoResearch 128-035-230, 1:5000). The membrane was washed three times (15 min per wash) in TBST, developed using Clarity Western ECL Substrate (Bio-Rad), and imaged using a ChemiDOC Imaging System (Bio-Rad).\n\n### Antigen-nanobody complex prediction using AlphaFold-Multimer\n\nFor the prediction of antigen-nanobody complexes using AlphaFold-Multimer (AFM), we employed LocalColabFold version 1.5.5 (Mirdita et al., 2022). It integrates AFM version 2.3.2 (Evans et al., 2022) and generates multiple sequence alignments via MMseqs2 (version 14-7e284). Computations were performed on the Harvard O2 high-performance computing cluster. The ipTM score was used to evaluate the overall structural accuracy and confidence of the entire protein complex (Evans et al., 2022). While ipTM provides a global metric, it may overlook localized interactions in small or flexible regions. To address this limitation, we calculated the Local Interaction Score (LIS), which leverages low Predicted Aligned Error (PAE) regions to pinpoint interacting domains, ignoring high PAE regions likely associated with non-interacting areas (Kim et al., 2024). The contact interface was identified using two criteria: residues with a Predicted Aligned Error (PAE) less than 12 and an inter-residue distance of less than 8 \u00c5 between C-beta atoms (or C-alpha atoms for glycine residues). The code for LIS analysis is available in https://github.com/flyark/AFM-LIS (Kim, 2025). For the visualization of the predicted structures, ChimeraX was utilized (Meng et al., 2023).\n\n### Declaration of generative AI used in the writing process\n\nDuring the preparation of this manuscript, the authors used OpenAI\u2019s ChatGPT to improve the readability and language of the text. All intellectual content, scientific accuracy, and conclusions were reviewed, verified, and edited by the authors, who take full responsibility for the final version of the manuscript.\n",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ahmad S Khalil, Boston University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.105887.3.sa0](https://doi.org/10.7554/eLife.105887.3.sa0)\n\nThis important study presents an alternative platform for nanobody discovery using phage-displayed synthetic libraries. The evidence supporting the platform, which is used to isolate and validate nanobodies targeting Drosophila secreted proteins, is compelling. By making the library openly accessible, this provides an excellent resource to the wider scientific community. The paper presents a detailed protocol for nanobody screening; as this protocol is refined and optimized over time, this will increase the success rate for discovering nanobodies with improved properties using this alternative platform.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105887.3.sa1](https://doi.org/10.7554/eLife.105887.3.sa1)\n\nSummary:\n\nIn this study, authors propose an alternative platform for nanobody discovery using a phage-displayed synthetic library. Authors relied on DNA templates originally created by McMahon et al. (2018) to build the yeast-displayed synthetic library. To validate their platform, authors screened for nanobodies against 8 Drosophila secreted proteins. Nanobody screening has been performed with phage-displayed nanobody libraries followed by an enzyme-linked immunosorbent assay (ELISA) to validate positive hits. Nanobodies with higher affinity have been then tested for immunostaining and immunoblotting applications using Drosophila adult guts and hemolymph, respectively.\n\nStrengths:\n\nThe authors presented a detailed protocol with various and complementary approaches to select nanobodies and test their application for immunostaining and immunoblotting experiments. Data are convincing and the manuscript is well-written, clear and easy to read.\n\nWeaknesses:\n\nWhen using membrane-tethered forms of the antigens to test the affinity of nanobodies identified by ELISA, many nanobodies fail to recognize the antigens. While authors suggested a low affinity of these nanobodies for their antigens, this hypothesis has not been tested in the manuscript.\n\nImproving the protocol at each step for nanobody selection would greatly increase a successful rate for nanobodies discovery with high affinity.\n",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4eecb008-5146-4c4d-9b38-fd254f78fb3a",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C1",
+      "claim": "Nanobodies are single-domain antibodies derived from camelid heavy-chain antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies, single-domain antibodies derived from camelid heavy-chain antibodies, are known for their high affinity, stability, and small size, which make them useful in biological research and therapeutic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and introduction as established knowledge about nanobodies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "9120f3f1-942b-4e87-80c7-ccf0fe331914",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C2",
+      "claim": "Nanobodies are known for their high affinity, stability, and small size.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies, single-domain antibodies derived from camelid heavy-chain antibodies, are known for their high affinity, stability, and small size, which make them useful in biological research and therapeutic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about nanobody properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "71b6d415-f487-4c15-b9b7-2bc26363657a",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C3",
+      "claim": "Nanobodies are useful in biological research and therapeutic applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies, single-domain antibodies derived from camelid heavy-chain antibodies, are known for their high affinity, stability, and small size, which make them useful in biological research and therapeutic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about nanobody applications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "4609488d-4044-46c5-b168-551c6ac1cb8d",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C4",
+      "claim": "Traditional nanobody generation methods rely on camelid immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, traditional nanobody generation methods rely on camelid immunization, which can be costly and time-consuming, restricting their practical feasibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about traditional nanobody generation methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "e7e3ec41-2a3b-43c2-bdbb-99c8dc4d4000",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C5",
+      "claim": "Camelid immunization for nanobody generation can be costly and time-consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "However, traditional nanobody generation methods rely on camelid immunization, which can be costly and time-consuming, restricting their practical feasibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about limitations of traditional methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "22e8cc7a-1c7e-428d-8c65-95e0ba9c16f0",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C6",
+      "claim": "A phage-displayed synthetic library for nanobody discovery was constructed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we present a phage-displayed synthetic library for nanobody discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "36c8cccb-3913-4be5-8a8f-c91aa294a253",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C7",
+      "claim": "Nanobodies targeting various Drosophila secreted proteins were screened to validate the phage-displayed synthetic library approach.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this approach, we screened nanobodies targeting various Drosophila secreted proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental validation performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "eb5c9ca0-2348-4ec3-ad9e-5542d43fb129",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C8",
+      "claim": "The identified nanobodies were suitable for applications such as immunostaining and immunoblotting.",
+      "claim_type": "EXPLICIT",
+      "source": "The nanobodies identified were suitable for applications such as immunostaining and immunoblotting, supporting the phage-displayed synthetic library as a versatile platform for nanobody development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation experiments in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "0719463c-e50c-451a-8b5e-1594c2f3f38a",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C9",
+      "claim": "The phage-displayed synthetic library is openly available for non-profit use.",
+      "claim_type": "EXPLICIT",
+      "source": "To address the challenge of limited accessibility to high-quality synthetic libraries, this library is openly available for non-profit use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the resource developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "51574d46-b389-426a-a408-e91cedb6fe75",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C10",
+      "claim": "Nanobodies are valuable tools in biological research and therapeutic trials due to their small size, superior stability, and high specificity for target antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies, single-domain antibody fragments derived from camelid heavy-chain antibodies, are valuable tools in biological research and therapeutic trials due to their small size, superior stability, and high specificity for target antigens (Muyldermans, 2013; K\u00f6nning et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "6f33b8d1-60a1-47d1-b245-d7b86bac9797",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C11",
+      "claim": "Nanobodies are ideal for applications beyond traditional in vitro assays, including live-cell imaging and functional studies.",
+      "claim_type": "EXPLICIT",
+      "source": "These features make nanobodies ideal for applications beyond traditional in vitro assays, including live-cell imaging and functional studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about nanobody applications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "184c30a0-1cb0-4086-837d-f40fb23096af",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C12",
+      "claim": "When fused to fluorescence proteins or functional domains, intracellularly expressed nanobodies enable real-time visualization and manipulation of proteins within living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when fused to fluorescence proteins or functional domains, intracellularly expressed nanobodies enable real-time visualization and manipulation of proteins within living cells, providing a useful approach to study cellular dynamics in native environments (Rothbauer et al., 2006; Caussinus et al., 2011; Harmansa and Affolter, 2018; Schnider et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "1aa11188-db09-44e0-8bd7-332f480e761c",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C13",
+      "claim": "Traditional methods for nanobody generation are limited by immunologic tolerance to conserved antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional methods for nanobody generation, which rely on animal immunization, can be costly and time-consuming and are also limited by immunologic tolerance to conserved antigens (Banik et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "6e69739a-7bd3-4196-8bbf-86289b963675",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C14",
+      "claim": "In vitro technologies such as yeast, phage, and ribosome display have emerged as valuable alternatives for nanobody generation.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome these challenges, in vitro technologies such as yeast, phage, and ribosome display have emerged as valuable alternatives, enabling the generation of synthetic nanobody libraries for direct antigen selection without animal immunization (Moutel et al., 2016; Zimmermann et al., 2018; McMahon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "89463388-af14-4fe7-bade-3cd3c510764b",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C15",
+      "claim": "The yeast-display platform has proven exceptionally useful for screening nanobodies that recognize distinct conformational states of target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast-display platform, as demonstrated by Kruse and colleagues (McMahon et al., 2018), has proven exceptionally useful for screening nanobodies that recognize distinct conformational states of target proteins, such as G-protein-coupled receptors (GPCRs), facilitating structural studies and functional assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "6766a807-4682-4abe-bd69-a580902b1790",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C16",
+      "claim": "Yeast display requires substantial antigen quantities and incurs high costs due to the need for magnetic- or fluorescence-activated cell sorting (MACS/FACS).",
+      "claim_type": "EXPLICIT",
+      "source": "While yeast display offers benefits such as robust expression and efficient cell-based screening, it also demands substantial antigen quantities and incurs high costs due to the need for magnetic- or fluorescence-activated cell sorting (MACS/FACS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of yeast display based on the authors' knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "c4ce8d60-e7c1-40de-90f8-f92ed5d6f54c",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C17",
+      "claim": "Yeast display libraries have relatively low diversity (10^8 variants in the Kruse yeast library) due to limitations in yeast cell transformation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, due to limitations in yeast cell transformation efficiency, yeast display libraries have relatively low diversity (108 variants in the Kruse yeast library), potentially limiting the chances of identifying high-affinity nanobodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of yeast display with reference to a specific library.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "36079b48-3c2e-4ab7-849d-b6249433dffe",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C18",
+      "claim": "Phage display is a well-established technology in antibody discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Phage display, meanwhile, is a well-established technology in antibody discovery (Smith and Petrenko, 1997; Nagano and Tsutsumi, 2021; Hutchings and Sato, 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ce54274e-7819-4dc8-8dcb-813808568582",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C19",
+      "claim": "Phage display generally requires less antigen than yeast display.",
+      "claim_type": "EXPLICIT",
+      "source": "Phage display generally requires less antigen, enables precise control over screening conditions (e.g. temperature, pH, chemical composition), and supports rapid, iterative rounds of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of phage display based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "73485773-cebf-44f8-af6b-248f56533a2d",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C20",
+      "claim": "Phage display enables precise control over screening conditions (e.g. temperature, pH, chemical composition).",
+      "claim_type": "EXPLICIT",
+      "source": "Phage display generally requires less antigen, enables precise control over screening conditions (e.g. temperature, pH, chemical composition), and supports rapid, iterative rounds of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of phage display based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f385a47d-9aad-4ac1-8023-91ceba30b74e",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C21",
+      "claim": "Phage display supports rapid, iterative rounds of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Phage display generally requires less antigen, enables precise control over screening conditions (e.g. temperature, pH, chemical composition), and supports rapid, iterative rounds of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of phage display based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "95587dd4-ff7e-4bfa-bd7a-bc5fcd69f253",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C22",
+      "claim": "The phage-displayed synthetic nanobody library was constructed using DNA templates originally used to create a yeast display library.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe the construction of a phage-displayed synthetic nanobody library using DNA templates originally used to create a yeast display library (McMahon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study with citation to the source of the DNA templates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "0f1dd43d-f087-442a-a5b5-9ca38704cbb2",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C23",
+      "claim": "The nanobody library includes constant framework and designed position-specific variations of three complementarity-determining regions (CDRs).",
+      "claim_type": "EXPLICIT",
+      "source": "In this library, the nanobody sequences include constant framework and designed position-specific variations of three complementarity-determining regions (CDRs; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the design of the library as shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "9bcf3787-028c-4a61-89c4-929cc02a9651",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C24",
+      "claim": "CDRs form the binding interface between nanobodies and antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "CDRs form the binding interface between nanobodies and antigens, and thus are crucial for nanobody diversity and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CDR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "597771f6-f66d-4ed9-b68f-118eccc21393",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C25",
+      "claim": "CDRs are crucial for nanobody diversity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "CDRs form the binding interface between nanobodies and antigens, and thus are crucial for nanobody diversity and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CDR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "8ac753ec-8e28-4ace-a985-cffe69342ae0",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C26",
+      "claim": "The partial randomization in the residues flanking CDRs recapitulates the observed variations at these positions of 93 unique nanobodies deposited in the Protein Data Bank.",
+      "claim_type": "EXPLICIT",
+      "source": "The partial randomization in the residues flanking CDRs recapitulates the observed variations at these positions of 93 unique nanobodies deposited in the Protein Data Bank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design rationale based on analysis of existing nanobody structures.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "0af5b5d6-4413-4d91-bb74-235b0c8b510a",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C27",
+      "claim": "The CDR3 region was designed with varying lengths (7, 11, or 15 residues).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the CDR3 region was designed with varying lengths (7, 11, or 15 residues) to promote diverse binding modes and increase the potential for high-affinity binders, providing an additional dimension of diversity and complexity to the nanobody library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f8a6f2d5-7faf-4db6-b6f1-9ed6245963c7",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C28",
+      "claim": "Varying CDR3 lengths promote diverse binding modes and increase the potential for high-affinity binders.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the CDR3 region was designed with varying lengths (7, 11, or 15 residues) to promote diverse binding modes and increase the potential for high-affinity binders, providing an additional dimension of diversity and complexity to the nanobody library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the stated rationale for the CDR3 design feature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "863c84c6-8291-446b-8aa3-707f16cc3c54",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C29",
+      "claim": "Cysteine and methionine were eliminated from the library design to avoid chemical reactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cysteine and methionine were eliminated from design to avoid chemical reactivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend describing the library design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "85f295d0-450a-49a9-b87a-5c55e1dd53d7",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C30",
+      "claim": "The nanobody DNA sequences were inserted into the 5' end of pIII sequence in a phagemid vector.",
+      "claim_type": "EXPLICIT",
+      "source": "To construct a phage-displayed nanobody library, the DNA sequences were inserted into 5' end of pIII sequence in a phagemid vector (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the cloning strategy used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "76c892bf-f710-4a24-aacb-6d7549d15ff2",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C31",
+      "claim": "The phagemid library was introduced into bacteria by massive electroporation, resulting in a yield of 2.4\u00d710^10 individual clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the phagemid library was introduced into bacteria by massive electroporation. This resulted in a yield of 2.4\u00d71010 individual clones, suggesting a high level of diversity in the phage library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the library construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "fb29313d-d1c0-4a3a-90bf-81fa02f1b026",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C32",
+      "claim": "The yield of 2.4\u00d710^10 individual clones suggests a high level of diversity in the phage library.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a yield of 2.4\u00d71010 individual clones, suggesting a high level of diversity in the phage library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "dbccc8f3-2201-488b-87e3-964a0f039f4f",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C33",
+      "claim": "Cell-cell communication is primarily mediated by secreted and transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-cell communication is primarily mediated by secreted and transmembrane proteins, which is of significant research interest and has therapeutic potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "76fdfd3a-3707-45ac-be56-12579ed6e4b2",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C34",
+      "claim": "Drosophila S2 cells were used to produce 8 Drosophila secreted proteins as antigens for nanobody screening.",
+      "claim_type": "EXPLICIT",
+      "source": "To address the challenge of producing antibodies against secreted and membrane proteins\u2014especially the need for proper protein maturation and post-translational modifications\u2014we used Drosophila S2 cells to produce 8 Drosophila secreted proteins as antigens for nanobody screening: Carbonic anhydrase-related protein B (CARPB), Myoinhibiting peptide precursor (Mip), Salivary gland-derived secreted factor (Sgsf), neuropeptide Nesfatin-1, Midkine and pleiotrophin 1 (Miple1), Amnesiac (Amn), CG9849, and CG13965.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "01b3dda1-93bd-4009-99f0-795ea9d51b1b",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C35",
+      "claim": "The eight Drosophila secreted proteins used as antigens were CARPB, Mip, Sgsf, Nesfatin-1, Miple1, Amn, CG9849, and CG13965.",
+      "claim_type": "EXPLICIT",
+      "source": "To address the challenge of producing antibodies against secreted and membrane proteins\u2014especially the need for proper protein maturation and post-translational modifications\u2014we used Drosophila S2 cells to produce 8 Drosophila secreted proteins as antigens for nanobody screening: Carbonic anhydrase-related protein B (CARPB), Myoinhibiting peptide precursor (Mip), Salivary gland-derived secreted factor (Sgsf), neuropeptide Nesfatin-1, Midkine and pleiotrophin 1 (Miple1), Amnesiac (Amn), CG9849, and CG13965.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This lists the specific antigens used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "389dcf85-a137-4f16-9385-02f3cb9083dd",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C36",
+      "claim": "The antigen expression vector includes an inducible metallothionein promoter to prevent potential toxicity from constitutive expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The antigen-expression module includes an inducible metallothionein promoter to prevent potential toxicity from constitutive expression, along with a BiP signal peptide for secretion, a FLAG-tag for detection, and a human Immunoglobulin G (hIgG) Fc domain for purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the antigen expression vector.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "fbcf8ce4-76d2-464c-847e-9cc497dbfd45",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C37",
+      "claim": "The antigen expression vector includes a BiP signal peptide for secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "The antigen-expression module includes an inducible metallothionein promoter to prevent potential toxicity from constitutive expression, along with a BiP signal peptide for secretion, a FLAG-tag for detection, and a human Immunoglobulin G (hIgG) Fc domain for purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the antigen expression vector.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "4dc240d0-6a9f-4bbd-b5c9-b609b9dc3f18",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C38",
+      "claim": "The antigen expression vector includes a FLAG-tag for detection.",
+      "claim_type": "EXPLICIT",
+      "source": "The antigen-expression module includes an inducible metallothionein promoter to prevent potential toxicity from constitutive expression, along with a BiP signal peptide for secretion, a FLAG-tag for detection, and a human Immunoglobulin G (hIgG) Fc domain for purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the antigen expression vector.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "c83273c0-bc54-4790-a590-8b22b2910dc2",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C39",
+      "claim": "The antigen expression vector includes a human Immunoglobulin G (hIgG) Fc domain for purification.",
+      "claim_type": "EXPLICIT",
+      "source": "The antigen-expression module includes an inducible metallothionein promoter to prevent potential toxicity from constitutive expression, along with a BiP signal peptide for secretion, a FLAG-tag for detection, and a human Immunoglobulin G (hIgG) Fc domain for purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the antigen expression vector.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "7b07122b-bd35-4b9d-86e4-47cd754d2a0a",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C40",
+      "claim": "The second module of the antigen expression vector contains GFP-T2A-PuroR under constitutively active Copia promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The second module contains GFP-T2A-PuroR under constitutively active Copia promoter, enabling both GFP-based labeling and puromycin selection in serum-free ESF921 media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the antigen expression vector.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "1a250fb6-797c-403d-bf22-21c09e4f473d",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C41",
+      "claim": "Three iterative rounds of selection were performed for each antigen in the nanobody screening.",
+      "claim_type": "EXPLICIT",
+      "source": "After three rounds of selection, we evaluated the selection outcomes with an enzyme-linked immunosorbent assay (ELISA) using the polyclonal phages after each round of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "1a561bcd-1271-4118-bf69-6b364782dac5",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C42",
+      "claim": "The ELISA signal increased after 2\u20133 rounds of selection, indicating that phages with affinity for the antigen were progressively enriched in the polyclonal population.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, the ELISA signal increased after 2\u20133 rounds of selection, indicating that phages with affinity for the antigen were progressively enriched in the polyclonal population (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the ELISA data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "d0116dcd-c501-498a-a717-62cf02c24415",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C43",
+      "claim": "For the CARPB and Nesfatin-1 screen campaigns, specific ELISA signals against antigen-hIgG but not against mCherry-hIgG were observed even when testing the polyclonal phages.",
+      "claim_type": "EXPLICIT",
+      "source": "For the CARPB and Nesfatin-1 screen campaigns (Figure 2B, Figure 2\u2014figure supplement 1A), we observed specific ELISA signals against antigen-hIgG but not against mCherry-hIgG even when testing the polyclonal phages, suggesting that the majority of the phage population in these samples specifically recognizes the antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the ELISA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "2d6fbc8f-d638-4cb9-9a69-3041df1bb929",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C44",
+      "claim": "The majority of the phage population in the CARPB and Nesfatin-1 samples specifically recognizes the antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "For the CARPB and Nesfatin-1 screen campaigns (Figure 2B, Figure 2\u2014figure supplement 1A), we observed specific ELISA signals against antigen-hIgG but not against mCherry-hIgG even when testing the polyclonal phages, suggesting that the majority of the phage population in these samples specifically recognizes the antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the ELISA data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ebd46038-7d7b-4bd3-a8f9-0ac3a6e86baf",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C45",
+      "claim": "5 candidate nanobodies for CARPB were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 5 candidate nanobodies for CARPB (Figure 2), 7 candidate nanobodies for Nesfatin-1 (Figure 2\u2014figure supplement 1), 2 candidate nanobodies for Mip (Figure 2\u2014figure supplement 2), 1 candidate nanobody for CG9849 (Figure 2\u2014figure supplement 3) and 2 candidate nanobodies for Amn (Figure 2\u2014figure supplement 4), demonstrating that the phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the screening campaign.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "9c825f53-bfa6-4fec-a530-f93e73637d66",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C46",
+      "claim": "7 candidate nanobodies for Nesfatin-1 were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 5 candidate nanobodies for CARPB (Figure 2), 7 candidate nanobodies for Nesfatin-1 (Figure 2\u2014figure supplement 1), 2 candidate nanobodies for Mip (Figure 2\u2014figure supplement 2), 1 candidate nanobody for CG9849 (Figure 2\u2014figure supplement 3) and 2 candidate nanobodies for Amn (Figure 2\u2014figure supplement 4), demonstrating that the phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the screening campaign.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "5292d791-ea58-488d-95e7-9b8a7556729f",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C47",
+      "claim": "2 candidate nanobodies for Mip were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 5 candidate nanobodies for CARPB (Figure 2), 7 candidate nanobodies for Nesfatin-1 (Figure 2\u2014figure supplement 1), 2 candidate nanobodies for Mip (Figure 2\u2014figure supplement 2), 1 candidate nanobody for CG9849 (Figure 2\u2014figure supplement 3) and 2 candidate nanobodies for Amn (Figure 2\u2014figure supplement 4), demonstrating that the phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the screening campaign.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "eaee1db6-7840-46b3-afb5-1622f5723d0e",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C48",
+      "claim": "1 candidate nanobody for CG9849 was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 5 candidate nanobodies for CARPB (Figure 2), 7 candidate nanobodies for Nesfatin-1 (Figure 2\u2014figure supplement 1), 2 candidate nanobodies for Mip (Figure 2\u2014figure supplement 2), 1 candidate nanobody for CG9849 (Figure 2\u2014figure supplement 3) and 2 candidate nanobodies for Amn (Figure 2\u2014figure supplement 4), demonstrating that the phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the screening campaign.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "b2ea0110-566a-4228-a493-e346b6b779e8",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C49",
+      "claim": "2 candidate nanobodies for Amn were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 5 candidate nanobodies for CARPB (Figure 2), 7 candidate nanobodies for Nesfatin-1 (Figure 2\u2014figure supplement 1), 2 candidate nanobodies for Mip (Figure 2\u2014figure supplement 2), 1 candidate nanobody for CG9849 (Figure 2\u2014figure supplement 3) and 2 candidate nanobodies for Amn (Figure 2\u2014figure supplement 4), demonstrating that the phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the screening campaign.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "dc31fc28-2571-4ead-8341-2c05456a5459",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C50",
+      "claim": "The phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 5 candidate nanobodies for CARPB (Figure 2), 7 candidate nanobodies for Nesfatin-1 (Figure 2\u2014figure supplement 1), 2 candidate nanobodies for Mip (Figure 2\u2014figure supplement 2), 1 candidate nanobody for CG9849 (Figure 2\u2014figure supplement 3) and 2 candidate nanobodies for Amn (Figure 2\u2014figure supplement 4), demonstrating that the phage-displayed nanobody library is a versatile platform for discovering nanobodies against various antigens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "10137fe3-6193-4b4d-b4aa-c33052419976",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C51",
+      "claim": "No nanobodies against Sgsf, Miple1, and CG13965 were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we failed to identify nanobodies against Sgsf, Miple1, and CG13965 (Figure 2\u2014figure supplement 5), suggesting room for further improvement of our current library and screening platform (see Discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the screening campaign.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "65978158-3630-4608-b6df-3f46c67aee45",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C52",
+      "claim": "The failure to identify nanobodies against Sgsf, Miple1, and CG13965 suggests room for further improvement of the library and screening platform.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we failed to identify nanobodies against Sgsf, Miple1, and CG13965 (Figure 2\u2014figure supplement 5), suggesting room for further improvement of our current library and screening platform (see Discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "708217ea-4d75-4a35-83ec-519535647b0b",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C53",
+      "claim": "AlphaFold-Multimer was used to predict the structural basis of antigen-nanobody interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "To predict the structural basis of antigen-nanobody interactions, we used AlphaFold-Multimer (Evans et al., 2022) to model CARPB-nanobody complexes and evaluated the interaction using both interface pTM (ipTM) score (Evans et al., 2022) and Local Interaction Score (LIS) (Kim et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "55b80977-f02e-44de-9d64-aec0a78fee29",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C54",
+      "claim": "NbCARPB-1H exhibited high LIS and ipTM scores, indicating a reliable interaction model.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the five candidate nanobodies for CARPB, one nanobody, NbCARPB-1H, exhibited high LIS and ipTM scores, indicating a reliable interaction model (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "a928fded-9a3b-4aeb-a337-4c3331989d32",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C55",
+      "claim": "The Predicted Aligned Error (PAE) map showed low PAE values in the interaction interface for the CARPB-NbCARPB-1H complex, indicating a reliable structure prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "The Predicted Aligned Error (PAE) map further supported the accuracy of the complex prediction, showing low PAE values (shown as blue color area) in the interaction interface, indicating a reliable structure prediction (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational modeling analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "6e36248b-e499-4e13-8fb8-fd3fd858e659",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C56",
+      "claim": "The predicted 3D structure revealed specific interactions between the CDRs of NbCARPB-1H and residues in both the N-terminal (CARPB24-52) and C-terminal (CARPB276-277) regions of CARPB.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted 3D structure revealed specific interactions between the complementarity-determining regions (CDRs) of NbCARPB-1H and residues in both the N-terminal (CARPB24-52) and C-terminal (CARPB276-277) regions of CARPB (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational modeling analysis shown in Figures 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "c793fbe7-6fd0-435f-a8d2-049753a542c4",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C57",
+      "claim": "Four of the five antigens (CARPB, Mip, Nesfatin-1, and CG9849, but not Amn) were successfully presented on cell surface as detected by N-terminal FLAG-tag immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the five antigens (CARPB, Mip, Nesfatin-1, and CG9849, but not Amn) were successfully presented on cell surface as detected by N-terminal FLAG-tag immunostaining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the cell surface presentation validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "98db1332-f7b8-43b9-b346-537b9a4dc7ef",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C58",
+      "claim": "The positive nanobody-displaying phages could recognize the antigens on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to what we observed for an irrelevant nanobody Nb.b201, a nanobody against human serum albumin (McMahon et al., 2018), the positive nanobody-displaying phages could recognize the antigens on the cell surface (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the cell surface binding assay shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "4268f5e3-fa34-4c11-b08c-7c97e05d63d3",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C59",
+      "claim": "The monovalent form of the nanobodies recognizes the antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Since phage display potentially results in multivalent nanobody presentation, we next asked if the monovalent form of the nanobodies still recognizes the antigens. To do this, we incubated the antigen-expressing cells with purified nanobodies, and we observed similar results (Figure 3B), further suggesting that these nanobodies specifically recognize their target proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the purified nanobody binding assay shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "98770964-b4f1-4c43-af27-2f8ec1be14e2",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C60",
+      "claim": "NbMip-4G was evaluated for immunostaining and immunoblotting applications.",
+      "claim_type": "EXPLICIT",
+      "source": "To test downstream applications of the nanobodies, NbMip-4G, identified in our nanobody screening against Mip (Figure 2\u2014figure supplement 2), was evaluated for immunostaining and immunoblotting applications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental validation performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "d65e7dfd-6fe4-4f61-a04c-65781a6ac9ef",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C61",
+      "claim": "Mip is a neuropeptide that regulates sleep homeostasis, food intake, and mating behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Mip is a neuropeptide that regulates sleep homeostasis, food intake, and mating behavior (Oh et al., 2014; Min et al., 2016; Jang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "30f8392b-7e68-4b7d-9302-7dc5a7de07c5",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C62",
+      "claim": "A strong cytoplasmic immunostaining signal was observed in cells with smaller nuclei in the Drosophila adult gut using NbMip-4G.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong cytoplasmic immunostaining signal in cells with smaller nuclei in the Drosophila adult gut (Figure 4A), consistent with a previous observation based on single-cell RNA-seq data that Mip is expressed in the enteroendocrine cells (Guo et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the immunostaining shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "d875a1e2-a27b-4848-8928-ae44f451cc75",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C63",
+      "claim": "The immunostaining signal with NbMip-4G is consistent with previous observation that Mip is expressed in the enteroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong cytoplasmic immunostaining signal in cells with smaller nuclei in the Drosophila adult gut (Figure 4A), consistent with a previous observation based on single-cell RNA-seq data that Mip is expressed in the enteroendocrine cells (Guo et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous literature and the experimental data in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "d229711e-b05c-448d-966c-f1817c4fcfa5",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C64",
+      "claim": "The immunostaining signal with NbMip-4G disappeared when Mip expression was knocked down by RNA interference.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the immunostaining signal disappeared when Mip expression was knocked down by RNA interference (RNAi) (Mex >Mip RNAiv106076), further supporting the specificity of the NbMip-4G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the RNAi knockdown validation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "02fdf9ef-3569-4e47-906b-a5bdd6951327",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C65",
+      "claim": "The loss of immunostaining signal upon Mip knockdown supports the specificity of NbMip-4G.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the immunostaining signal disappeared when Mip expression was knocked down by RNA interference (RNAi) (Mex >Mip RNAiv106076), further supporting the specificity of the NbMip-4G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the RNAi knockdown experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "1ddeeb0a-eeb6-45e4-b0cd-b67310bbea5f",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C66",
+      "claim": "A clear reduction in Mip protein levels was observed in Mip mutant or RNAi knockdown samples compared to control by immunoblotting with NbMip-4G.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting analysis of adult fly hemolymph with NbMip-4G also demonstrated its utility in protein detection. A clear reduction in Mip protein levels was observed in Mip mutant (Mip1) or RNAi knockdown (Mex >Mip RNAiv106076) samples compared to control (Mex-Gal4/w1118) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the immunoblotting shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "cfb77296-0adb-4f88-b844-75339ad88c9c",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C67",
+      "claim": "NbMip-4G can specifically detect Mip in immunoblotting applications.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that NbMip-4G can specifically detect Mip in immunoblotting applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the immunoblotting experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "7a58206a-4532-4dc3-902b-419bdf359dfa",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C68",
+      "claim": "The predicted 3D structure of the Mip-NbMip-4G complex revealed that NbMip-4G primarily interacts with a helical segment of Mip spanning residues 42\u201362.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted 3D structure of the Mip-NbMip-4G complex revealed that NbMip-4G primarily interacts with a helical segment of Mip spanning residues 42\u201362 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational modeling analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ffd0f8c1-c583-46cd-adaf-1a9c93fc980f",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C69",
+      "claim": "Interacting residues between Mip and NbMip-4G are predominantly located within the CDRs of NbMip-4G.",
+      "claim_type": "EXPLICIT",
+      "source": "Interacting residues, predominantly located within the CDRs of NbMip-4G, were identified through contact interface analysis (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational modeling analysis shown in Figures 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "0d3a9ddf-ecdc-459e-9f7e-0da284acf53d",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C70",
+      "claim": "The current phage display library has higher diversity compared with yeast display library (10^10 vs 10^8).",
+      "claim_type": "EXPLICIT",
+      "source": "Our current phage display library has higher diversity compared with yeast display library (1010 vs 108), potentially increasing the likelihood of identifying high-affinity binders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the library diversity based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "df2f1429-3c9c-413a-af4d-1718fc9eb83d",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C71",
+      "claim": "Higher library diversity potentially increases the likelihood of identifying high-affinity binders.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current phage display library has higher diversity compared with yeast display library (1010 vs 108), potentially increasing the likelihood of identifying high-affinity binders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantage of higher diversity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "e61c8d1f-dd45-49fd-a42f-ecb2c389e804",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C72",
+      "claim": "The phage screening platform has much simpler selection steps and a faster turnaround time compared to yeast screening platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, whereas the yeast screening platform requires expensive and tedious MACS/FACS for each round of selection, the phage screening platform has much simpler selection steps and a faster turnaround time, making the phage screening platform a streamlined, cost-effective solution for nanobody discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the two platforms based on the authors' experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "e4b3f9fe-98d9-4613-aa60-b3e53731b701",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C73",
+      "claim": "The phage screening platform is a streamlined, cost-effective solution for nanobody discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, whereas the yeast screening platform requires expensive and tedious MACS/FACS for each round of selection, the phage screening platform has much simpler selection steps and a faster turnaround time, making the phage screening platform a streamlined, cost-effective solution for nanobody discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of the platforms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "a719d829-c122-4b04-afd9-13e35a7282ab",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C74",
+      "claim": "The Kruse nanobody library design incorporates optimized randomization within complementarity-determining regions (CDRs) while maintaining a robust framework.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kruse nanobody library design, which served as the foundation for our work, incorporates optimized randomization within complementarity-determining regions (CDRs) while maintaining a robust framework (McMahon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to the source of the library design.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "2e894511-07ed-4c0d-b317-84458f55437e",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C75",
+      "claim": "The library has been made openly available for non-profit use to democratize access.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike many existing libraries that are commercially restricted or require expensive licensing, we have democratized access to our platform by making it openly available for non-profit use to address the field's broader challenge of limited accessibility to high-quality synthetic libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the resource developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "a5212d80-aa6d-4304-8d3e-09eb3514c52d",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C76",
+      "claim": "Nanobodies were successfully identified for five out of eight Drosophila secreted proteins screened.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we screened nanobodies against eight Drosophila secreted proteins and successfully identified nanobodies for five of them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "20416fce-7a2a-4cab-bf0e-2853f09e26e8",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C77",
+      "claim": "For three antigens (Sgsf, Miple1, and CG13965), no monoclonal phage with specific affinity to the antigens was observed after 3 or 4 rounds of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "For the remaining three antigens, we did not observe any monoclonal phage with specific affinity to the antigens after 3 or 4 rounds of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the screening campaign.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "c6d473ad-a95f-4c9f-9869-1e798d874a63",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C78",
+      "claim": "Further increasing library diversity, optimizing the screening strategy, and/or improving antigen quality might increase the success rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Further increasing library diversity, optimizing the screening strategy, and/or improving antigen quality might increase the success rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential improvements to the platform.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f7dd21cc-ce65-4061-bc94-2a058f280382",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C79",
+      "claim": "Some nanobodies (e.g. Nesfatin-1 nanobodies) only showed binding affinity in ELISA and failed to recognize membrane-tethered forms of the antigens, possibly due to low affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for these hits we identified, some nanobodies (e.g. Nesfatin-1 nanobodies in Figure 2\u2014figure supplement 1) only showed binding affinity in ELISA and failed to recognize membrane-tethered forms of the antigens, possibly due to low affinity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation with speculation about the cause.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "e1f38cd1-1e11-4120-9116-1156d61cabe2",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C80",
+      "claim": "Further affinity maturation by random mutagenesis or directed evolution might increase affinity of these antibodies to the antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Further affinity maturation by random mutagenesis or directed evolution might increase affinity of these antibodies to the antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential improvements to the nanobodies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "a8d862d1-ea04-4840-99a1-b28a4c7be5a9",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C81",
+      "claim": "M13 bacteriophage is a non-lytic filamentous bacteriophage commonly used for phage display.",
+      "claim_type": "EXPLICIT",
+      "source": "M13 bacteriophage is a non-lytic filamentous bacteriophage and is commonly used for phage display.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about M13 bacteriophage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ca081b24-a5f3-49be-9ed8-c9751ce55ca4",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C82",
+      "claim": "M13 bacteriophage contains single-stranded DNA genome packaged within a protein capsid formed by the major coat protein pVIII and the minor coat proteins pIII, pVI, pVII, and pIX.",
+      "claim_type": "EXPLICIT",
+      "source": "M13 bacteriophage contains single-stranded DNA genome packaged within a protein capsid formed by the major coat protein pVIII and the minor coat proteins pIII, pVI, pVII, and pIX (Jia and Xiang, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "70e55604-ddea-4617-bf56-c5a6dd1d0388",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C83",
+      "claim": "The ipTM score reflects the structural accuracy of the predicted complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The ipTM score was used to evaluate the overall structural accuracy and confidence of the entire protein complex (Evans et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to the source of the metric.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "9a86c7f8-a9f5-4148-9b5f-36c51d644be0",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C84",
+      "claim": "Local Interaction Score (LIS) indicates the potential interaction strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The ipTM score reflects the structural accuracy of the predicted complex, while LIS indicates the potential interaction strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the LIS metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ff76c2ea-6880-43f7-9349-83c4f415431f",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C85",
+      "claim": "LIS leverages low Predicted Aligned Error (PAE) regions to pinpoint interacting domains, ignoring high PAE regions likely associated with non-interacting areas.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this limitation, we calculated the Local Interaction Score (LIS), which leverages low Predicted Aligned Error (PAE) regions to pinpoint interacting domains, ignoring high PAE regions likely associated with non-interacting areas (Kim et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to the source of the LIS method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "8f4e03b9-53aa-4dfc-a8b6-1525f97fa0c8",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C86",
+      "claim": "Antigen expression was induced with CuSO4 in the stable cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Antigen expression was induced with CuSO4, after which conditioned media was harvested and the proteins were purified from conditioned medium using Protein A resin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "3e0ef6cc-5abc-4f38-9bbf-5c23252747f7",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C87",
+      "claim": "Proteins were purified from conditioned medium using Protein A resin.",
+      "claim_type": "EXPLICIT",
+      "source": "Antigen expression was induced with CuSO4, after which conditioned media was harvested and the proteins were purified from conditioned medium using Protein A resin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "3fc10cf2-4a28-4401-b840-524e39c079c0",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C88",
+      "claim": "In the next rounds of selection, the antigen amount coated on the plate was reduced and the number of washing cycles was increased to gradually increase the selection stringency.",
+      "claim_type": "EXPLICIT",
+      "source": "To enrich for nanobodies with high affinity, in the next rounds of selection, we reduced the antigen amount coated on the plate and increased the number of washing cycles to gradually increase the selection stringency (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental strategy used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "09200c13-47e6-4d77-bb10-9e2b1d99866e",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C89",
+      "claim": "The constructed library resulted in 2.4\u00d710^10 transformants.",
+      "claim_type": "EXPLICIT",
+      "source": "The constructed library resulted in 2.4x1010 transformants, with each aliquot containing 1013 phage particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the library construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "c6052b9a-8d7b-456b-9e1e-ccaff5803d89",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C90",
+      "claim": "Each aliquot of the phage library contains 10^13 phage particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The constructed library resulted in 2.4x1010 transformants, with each aliquot containing 1013 phage particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the library construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "5e28282f-488a-4ea0-b4b4-210e5fd631c0",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C91",
+      "claim": "Mip is expressed in the enteroendocrine cells based on single-cell RNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong cytoplasmic immunostaining signal in cells with smaller nuclei in the Drosophila adult gut (Figure 4A), consistent with a previous observation based on single-cell RNA-seq data that Mip is expressed in the enteroendocrine cells (Guo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "1753c0ed-c31e-4bcf-9e04-4a50444fce00",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C92",
+      "claim": "The contact interface between CARPB and NbCARPB-1H was identified using residues with a Predicted Aligned Error (PAE) less than 12 and an inter-residue distance of less than 8 \u00c5 between C-beta atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The contact interface was identified using two criteria: residues with a Predicted Aligned Error (PAE) less than 12 and an inter-residue distance of less than 8 \u00c5 between C-beta atoms (or C-alpha atoms for glycine residues).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "408f46df-b6b0-4a12-b042-7228b1864dcc",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C93",
+      "claim": "OpenAI's ChatGPT was used to improve the readability and language of the manuscript text.",
+      "claim_type": "EXPLICIT",
+      "source": "During the preparation of this manuscript, the authors used OpenAI's ChatGPT to improve the readability and language of the text.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the declaration of generative AI use.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f7cddc2b-6460-4246-89fb-50a879513e96",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "claim_id": "C94",
+      "claim": "All intellectual content, scientific accuracy, and conclusions were reviewed, verified, and edited by the authors.",
+      "claim_type": "EXPLICIT",
+      "source": "All intellectual content, scientific accuracy, and conclusions were reviewed, verified, and edited by the authors, who take full responsibility for the final version of the manuscript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the declaration of generative AI use.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f69526d0-3937-438e-9354-20ce9a624268",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors constructed a phage-displayed synthetic nanobody library using DNA templates from a yeast display library (McMahon et al., 2018). The library features constant framework regions with position-specific variations in three CDRs, including CDR3 regions of varying lengths (7, 11, or 15 residues). The library achieved 2.4\u00d710^10 transformants with 10^13 phage particles per aliquot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C22, C23, C26-C32, C89-C90 collectively describe the library construction methodology and results. The experimental data (transformant count, phage particle count) and design features (CDR randomization, framework conservation) are clearly documented with appropriate citations and methodological detail. The library diversity claim is directly supported by the transformant count.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Eight Drosophila secreted proteins (CARPB, Mip, Sgsf, Nesfatin-1, Miple1, Amn, CG9849, CG13965) were produced as antigens using S2 cells with a dual-module expression vector. The vector includes an inducible metallothionein promoter, BiP signal peptide, FLAG-tag, hIgG Fc domain for purification, and a GFP-T2A-PuroR cassette for selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40, C86-C87 describe the antigen production system with clear methodological detail. The vector design is well-documented with rationale for each component (inducible promoter to prevent toxicity, signal peptide for secretion, tags for detection/purification). The experimental protocol is described in sufficient detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "48a79398-c7b8-4a3b-97b0-433a93473401",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phage display screening identified nanobodies against five of eight target antigens: 5 for CARPB, 7 for Nesfatin-1, 2 for Mip, 1 for CG9849, and 2 for Amn. ELISA signals increased after 2-3 rounds of selection, with CARPB and Nesfatin-1 showing specific signals even in polyclonal populations. Selection stringency was increased across rounds by reducing antigen amounts and increasing wash cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C50, C88 describe the screening results with quantitative data shown in figures. The progressive enrichment is demonstrated by ELISA (C42), and specific binding is validated by comparison to negative control (mCherry-hIgG). The identification of multiple nanobodies for 5/8 antigens supports the versatility claim (C50), though the 62.5% success rate is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "b31658dc-68f1-4b98-b58f-03b5583a7c25",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The screening failed to identify nanobodies against three antigens (Sgsf, Miple1, CG13965), indicating limitations of the current library and screening platform that require further improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C76-C77 honestly report negative results. The 62.5% success rate (5/8 antigens) is clearly documented, and the authors appropriately acknowledge this as a limitation requiring further optimization. This transparent reporting strengthens the overall credibility of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AlphaFold-Multimer predictions of the CARPB-NbCARPB-1H complex showed high ipTM and LIS scores, with low PAE values at the interaction interface. The predicted structure revealed specific interactions between NbCARPB-1H CDRs and both N-terminal (residues 24-52) and C-terminal (residues 276-277) regions of CARPB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56, C83-C85, C92 describe computational structural predictions with appropriate metrics (ipTM, LIS, PAE). The methodology is properly cited and the criteria for defining contact interfaces are clearly stated (PAE <12, distance <8\u00c5). However, these are computational predictions without experimental validation (e.g., mutagenesis, crystallography), which limits confidence in the specific residue interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "d5ee9d5f-c4b7-460e-aae9-59d82d6b94b1",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Four antigens (CARPB, Mip, Nesfatin-1, CG9849) were successfully displayed on cell surfaces and recognized by their corresponding nanobody-displaying phages. Purified monovalent nanobodies also recognized membrane-tethered antigens, confirming specific binding independent of multivalent presentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 describe cell surface binding validation with appropriate negative controls (Nb.b201, Nb127D01). The demonstration that monovalent nanobodies bind (C59) is important for ruling out avidity effects from multivalent phage display. However, one antigen (Amn) failed to display on the cell surface, which is noted but not explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "65755e21-3d39-4921-974f-36e22c47fbe9",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NbMip-4G showed specific immunostaining of enteroendocrine cells in Drosophila adult gut, consistent with known Mip expression patterns. The signal disappeared upon Mip RNAi knockdown, confirming antibody specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C62-C65 demonstrate successful application of NbMip-4G in immunostaining with appropriate validation. The consistency with prior RNA-seq data (C63, citing Guo et al., 2019) and loss of signal upon RNAi knockdown (C64-C65) provide strong evidence for specificity. This represents a key validation of the nanobodies' utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "12fa6617-88a7-45e6-ae84-6a13f2f6d042",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NbMip-4G detected Mip protein in adult fly hemolymph by immunoblotting, with clear reduction in Mip mutant and RNAi knockdown samples compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 demonstrate successful application in immunoblotting with appropriate genetic controls (Mip1 mutant, RNAi knockdown). The reduction in signal in loss-of-function conditions validates specificity. This complements the immunostaining results and demonstrates versatility of the nanobody.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "2140df97-e9b6-445d-998e-1a1e13bd1417",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AlphaFold-Multimer prediction of the Mip-NbMip-4G complex revealed that NbMip-4G primarily interacts with a helical segment of Mip (residues 42-62), with interacting residues predominantly located within the CDRs of NbMip-4G.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 describe computational structural predictions for the Mip-NbMip-4G complex. While the predictions are consistent with expected CDR-mediated binding, these remain computational models without experimental structural validation. The functional validation (immunostaining, immunoblotting) provides indirect support but does not confirm the specific residue interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ec96d17f-6c3e-48a1-9fa9-3a24d10cc216",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The phage display library has 100-fold higher diversity than the yeast display library (10^10 vs 10^8), potentially increasing the likelihood of identifying high-affinity binders. The phage screening platform offers simpler selection steps and faster turnaround compared to yeast display, making it a more cost-effective solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 compare the phage and yeast platforms. The diversity comparison (C70) is supported by experimental data (2.4\u00d710^10 transformants). The operational advantages (C72-C73) are reasonable inferences based on the elimination of MACS/FACS requirements. However, the claim that higher diversity 'potentially increases' high-affinity binder identification (C71) remains speculative without direct comparison data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "7d0ce48c-0aa8-4400-93cb-3317eead22dc",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Some identified nanobodies (e.g., Nesfatin-1 nanobodies) only showed binding in ELISA but failed to recognize membrane-tethered antigens, possibly due to low affinity. Further optimization through increased library diversity, improved screening strategy, antigen quality improvement, or affinity maturation might increase success rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C80 acknowledge limitations and propose potential improvements. While the observation that some nanobodies only work in ELISA (C79) is supported by data, the explanations (low affinity) and proposed solutions (C78, C80) are speculative. These represent reasonable hypotheses for future work but lack experimental validation in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "1aaabb37-c698-427f-b3cd-e8f4e05255f1",
+      "content_id": "57d518b3-0396-4fc2-9182-631ff94dae8f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The phage-displayed synthetic library has been made openly available for non-profit use to democratize access and address limited accessibility to high-quality synthetic libraries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C75 state that the library is openly available for non-profit use. This is clearly stated in both the abstract and discussion. While the actual mechanism for distribution is not detailed in the manuscript, the commitment to open access is explicit and represents an important contribution to the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors constructed a phage-displayed synthetic nanobody library using DNA templates from a yeast display library, with designed CDR variations and varying CDR3 lengths. The library yielded 2.4\u00d710^10 transformants, representing higher diversity than yeast display libraries (10^10 vs 10^8).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers affirm the platform construction and validation. The editor states 'This important study presents an alternative platform for nanobody discovery using phage-displayed synthetic libraries' and notes 'The evidence supporting the platform...is compelling.' The anonymous reviewer confirms 'Authors relied on DNA templates originally created by McMahon et al. (2018)' and describes the protocol as detailed and convincing.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ade0b11d-630a-4279-97c0-03ffb431a313",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors screened the phage library against eight Drosophila secreted proteins and successfully identified nanobodies for five targets (CARPB, Nesfatin-1, Mip, CG9849, and Amn). ELISA signals increased after 2-3 rounds of selection, demonstrating progressive enrichment of antigen-specific phages.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept the screening results as valid. The editor notes the platform 'is used to isolate and validate nanobodies targeting Drosophila secreted proteins' with 'compelling' evidence. The anonymous reviewer confirms 'Nanobody screening has been performed with phage-displayed nanobody libraries followed by an enzyme-linked immunosorbent assay (ELISA) to validate positive hits' and states 'Data are convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "c35fcc00-484f-40ec-93a2-7b06f1c8f84b",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors failed to identify nanobodies against three antigens (Sgsf, Miple1, and CG13965) after 3-4 rounds of selection, suggesting room for improvement of the library and screening platform.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these negative results without disputing them. The editor notes 'as this protocol is refined and optimized over time, this will increase the success rate,' implicitly accepting the current limitations. The anonymous reviewer does not challenge these failures but focuses on the need for protocol improvement.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "ee548226-7ced-4506-b5d3-60b384fbf86b",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Four antigens (CARPB, Mip, Nesfatin-1, and CG9849) were successfully presented on cell surfaces, and both phage-displayed and purified monovalent nanobodies recognized these membrane-tethered antigens.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept the cell surface binding data. The anonymous reviewer states 'Data are convincing' regarding the overall validation approaches. However, the reviewer notes a weakness: 'When using membrane-tethered forms of the antigens to test the affinity of nanobodies identified by ELISA, many nanobodies fail to recognize the antigens,' indicating some nanobodies showed limited functionality in this assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "e007f79d-792f-456e-a38e-6e7f365fbef1",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Some nanobodies (e.g., Nesfatin-1 nanobodies) only showed binding affinity in ELISA and failed to recognize membrane-tethered forms of the antigens, possibly due to low affinity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The anonymous reviewer explicitly identifies this as a weakness: 'When using membrane-tethered forms of the antigens to test the affinity of nanobodies identified by ELISA, many nanobodies fail to recognize the antigens. While authors suggested a low affinity of these nanobodies for their antigens, this hypothesis has not been tested in the manuscript.' The reviewer indicates the explanation is speculative and untested.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f6efc409-53cf-4f41-ad95-435afba3bf3c",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "NbMip-4G was validated for immunostaining and immunoblotting applications. It specifically detected Mip in enteroendocrine cells of Drosophila adult gut, and the signal disappeared upon RNAi knockdown. Immunoblotting showed reduced Mip levels in mutant or knockdown samples.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers affirm these application validations. The anonymous reviewer states 'Nanobodies with higher affinity have been then tested for immunostaining and immunoblotting applications using Drosophila adult guts and hemolymph, respectively' and confirms 'Data are convincing.' The editor notes the nanobodies are 'suitable for applications' and the evidence is 'compelling.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "AlphaFold-Multimer modeling predicted structural interactions between nanobodies and their antigens. NbCARPB-1H showed high LIS and ipTM scores with specific CDR interactions at CARPB N- and C-terminal regions. NbMip-4G primarily interacts with a helical segment of Mip (residues 42-62).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the computational modeling results. The anonymous reviewer describes the manuscript as 'well-written, clear and easy to read' with 'convincing' data, implicitly accepting the structural predictions as part of the overall validation. No concerns are raised about the modeling approach or conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "d7049589-b5f8-469d-be43-a96b767f3153",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The phage-displayed synthetic library has been made openly available for non-profit use to democratize access and address limited accessibility to high-quality synthetic libraries.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly affirms this contribution: 'By making the library openly accessible, this provides an excellent resource to the wider scientific community.' This is treated as a significant strength of the work without any concerns raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f6dd3347-9007-4c80-b5b2-ec0b2f727ec5",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The phage display platform offers advantages over yeast display including higher library diversity (10^10 vs 10^8), simpler selection steps, faster turnaround time, and lower costs, making it a streamlined, cost-effective solution for nanobody discovery.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor affirms this as an 'alternative platform' and notes it provides 'an excellent resource.' The anonymous reviewer does not challenge these comparative advantages. The editor's statement that 'as this protocol is refined and optimized over time, this will increase the success rate' suggests acceptance of the platform's current utility while acknowledging room for improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f05f352a-5b75-450c-8ba2-951734d2404d",
+      "content_id": "bfedec7f-f192-41f0-b479-3212e030c0ba",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors suggest that further increasing library diversity, optimizing screening strategy, improving antigen quality, and affinity maturation by mutagenesis or directed evolution might increase success rate and nanobody affinity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers implicitly support these suggestions for improvement. The editor states 'as this protocol is refined and optimized over time, this will increase the success rate for discovering nanobodies with improved properties.' The anonymous reviewer notes 'Improving the protocol at each step for nanobody selection would greatly increase a successful rate for nanobodies discovery with high affinity,' aligning with the authors' proposed improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "22e8cc7a-1c7e-428d-8c65-95e0ba9c16f0",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "95587dd4-ff7e-4bfa-bd7a-bc5fcd69f253",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "0f1dd43d-f087-442a-a5b5-9ca38704cbb2",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "8ac753ec-8e28-4ace-a985-cffe69342ae0",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "0af5b5d6-4413-4d91-bb74-235b0c8b510a",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "863c84c6-8291-446b-8aa3-707f16cc3c54",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "85f295d0-450a-49a9-b87a-5c55e1dd53d7",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "76c892bf-f710-4a24-aacb-6d7549d15ff2",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "fb29313d-d1c0-4a3a-90bf-81fa02f1b026",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "09200c13-47e6-4d77-bb10-9e2b1d99866e",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "c6052b9a-8d7b-456b-9e1e-ccaff5803d89",
+      "result_id": "f69526d0-3937-438e-9354-20ce9a624268"
+    },
+    {
+      "claim_id": "76fdfd3a-3707-45ac-be56-12579ed6e4b2",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "01b3dda1-93bd-4009-99f0-795ea9d51b1b",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "389dcf85-a137-4f16-9385-02f3cb9083dd",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "fbcf8ce4-76d2-464c-847e-9cc497dbfd45",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "4dc240d0-6a9f-4bbd-b5c9-b609b9dc3f18",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "c83273c0-bc54-4790-a590-8b22b2910dc2",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "7b07122b-bd35-4b9d-86e4-47cd754d2a0a",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "8f4e03b9-53aa-4dfc-a8b6-1525f97fa0c8",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "3e0ef6cc-5abc-4f38-9bbf-5c23252747f7",
+      "result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689"
+    },
+    {
+      "claim_id": "1a250fb6-797c-403d-bf22-21c09e4f473d",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "1a561bcd-1271-4118-bf69-6b364782dac5",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "d0116dcd-c501-498a-a717-62cf02c24415",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "2d6fbc8f-d638-4cb9-9a69-3041df1bb929",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "ebd46038-7d7b-4bd3-a8f9-0ac3a6e86baf",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "9c825f53-bfa6-4fec-a530-f93e73637d66",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "5292d791-ea58-488d-95e7-9b8a7556729f",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "eaee1db6-7840-46b3-afb5-1622f5723d0e",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "b2ea0110-566a-4228-a493-e346b6b779e8",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "dc31fc28-2571-4ead-8341-2c05456a5459",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "3fc10cf2-4a28-4401-b840-524e39c079c0",
+      "result_id": "48a79398-c7b8-4a3b-97b0-433a93473401"
+    },
+    {
+      "claim_id": "10137fe3-6193-4b4d-b4aa-c33052419976",
+      "result_id": "b31658dc-68f1-4b98-b58f-03b5583a7c25"
+    },
+    {
+      "claim_id": "65978158-3630-4608-b6df-3f46c67aee45",
+      "result_id": "b31658dc-68f1-4b98-b58f-03b5583a7c25"
+    },
+    {
+      "claim_id": "a5212d80-aa6d-4304-8d3e-09eb3514c52d",
+      "result_id": "b31658dc-68f1-4b98-b58f-03b5583a7c25"
+    },
+    {
+      "claim_id": "20416fce-7a2a-4cab-bf0e-2853f09e26e8",
+      "result_id": "b31658dc-68f1-4b98-b58f-03b5583a7c25"
+    },
+    {
+      "claim_id": "708217ea-4d75-4a35-83ec-519535647b0b",
+      "result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf"
+    },
+    {
+      "claim_id": "55b80977-f02e-44de-9d64-aec0a78fee29",
+      "result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf"
+    },
+    {
+      "claim_id": "a928fded-9a3b-4aeb-a337-4c3331989d32",
+      "result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf"
+    },
+    {
+      "claim_id": "6e36248b-e499-4e13-8fb8-fd3fd858e659",
+      "result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf"
+    },
+    {
+      "claim_id": "70e55604-ddea-4617-bf56-c5a6dd1d0388",
+      "result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf"
+    },
+    {
+      "claim_id": "9a86c7f8-a9f5-4148-9b5f-36c51d644be0",
+      "result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf"
+    },
+    {
+      "claim_id": "ff76c2ea-6880-43f7-9349-83c4f415431f",
+      "result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf"
+    },
+    {
+      "claim_id": "1753c0ed-c31e-4bcf-9e04-4a50444fce00",
+      "result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf"
+    },
+    {
+      "claim_id": "c793fbe7-6fd0-435f-a8d2-049753a542c4",
+      "result_id": "d5ee9d5f-c4b7-460e-aae9-59d82d6b94b1"
+    },
+    {
+      "claim_id": "98db1332-f7b8-43b9-b346-537b9a4dc7ef",
+      "result_id": "d5ee9d5f-c4b7-460e-aae9-59d82d6b94b1"
+    },
+    {
+      "claim_id": "4268f5e3-fa34-4c11-b08c-7c97e05d63d3",
+      "result_id": "d5ee9d5f-c4b7-460e-aae9-59d82d6b94b1"
+    },
+    {
+      "claim_id": "98770964-b4f1-4c43-af27-2f8ec1be14e2",
+      "result_id": "65755e21-3d39-4921-974f-36e22c47fbe9"
+    },
+    {
+      "claim_id": "30f8392b-7e68-4b7d-9302-7dc5a7de07c5",
+      "result_id": "65755e21-3d39-4921-974f-36e22c47fbe9"
+    },
+    {
+      "claim_id": "d875a1e2-a27b-4848-8928-ae44f451cc75",
+      "result_id": "65755e21-3d39-4921-974f-36e22c47fbe9"
+    },
+    {
+      "claim_id": "d229711e-b05c-448d-966c-f1817c4fcfa5",
+      "result_id": "65755e21-3d39-4921-974f-36e22c47fbe9"
+    },
+    {
+      "claim_id": "02fdf9ef-3569-4e47-906b-a5bdd6951327",
+      "result_id": "65755e21-3d39-4921-974f-36e22c47fbe9"
+    },
+    {
+      "claim_id": "1ddeeb0a-eeb6-45e4-b0cd-b67310bbea5f",
+      "result_id": "12fa6617-88a7-45e6-ae84-6a13f2f6d042"
+    },
+    {
+      "claim_id": "cfb77296-0adb-4f88-b844-75339ad88c9c",
+      "result_id": "12fa6617-88a7-45e6-ae84-6a13f2f6d042"
+    },
+    {
+      "claim_id": "7a58206a-4532-4dc3-902b-419bdf359dfa",
+      "result_id": "2140df97-e9b6-445d-998e-1a1e13bd1417"
+    },
+    {
+      "claim_id": "ffd0f8c1-c583-46cd-adaf-1a9c93fc980f",
+      "result_id": "2140df97-e9b6-445d-998e-1a1e13bd1417"
+    },
+    {
+      "claim_id": "0d3a9ddf-ecdc-459e-9f7e-0da284acf53d",
+      "result_id": "ec96d17f-6c3e-48a1-9fa9-3a24d10cc216"
+    },
+    {
+      "claim_id": "df2f1429-3c9c-413a-af4d-1718fc9eb83d",
+      "result_id": "ec96d17f-6c3e-48a1-9fa9-3a24d10cc216"
+    },
+    {
+      "claim_id": "e61c8d1f-dd45-49fd-a42f-ecb2c389e804",
+      "result_id": "ec96d17f-6c3e-48a1-9fa9-3a24d10cc216"
+    },
+    {
+      "claim_id": "e4b3f9fe-98d9-4613-aa60-b3e53731b701",
+      "result_id": "ec96d17f-6c3e-48a1-9fa9-3a24d10cc216"
+    },
+    {
+      "claim_id": "c6d473ad-a95f-4c9f-9869-1e798d874a63",
+      "result_id": "7d0ce48c-0aa8-4400-93cb-3317eead22dc"
+    },
+    {
+      "claim_id": "f7dd21cc-ce65-4061-bc94-2a058f280382",
+      "result_id": "7d0ce48c-0aa8-4400-93cb-3317eead22dc"
+    },
+    {
+      "claim_id": "e1f38cd1-1e11-4120-9116-1156d61cabe2",
+      "result_id": "7d0ce48c-0aa8-4400-93cb-3317eead22dc"
+    },
+    {
+      "claim_id": "0719463c-e50c-451a-8b5e-1594c2f3f38a",
+      "result_id": "1aaabb37-c698-427f-b3cd-e8f4e05255f1"
+    },
+    {
+      "claim_id": "2e894511-07ed-4c0d-b317-84458f55437e",
+      "result_id": "1aaabb37-c698-427f-b3cd-e8f4e05255f1"
+    },
+    {
+      "claim_id": "22e8cc7a-1c7e-428d-8c65-95e0ba9c16f0",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "95587dd4-ff7e-4bfa-bd7a-bc5fcd69f253",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "0f1dd43d-f087-442a-a5b5-9ca38704cbb2",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "8ac753ec-8e28-4ace-a985-cffe69342ae0",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "0af5b5d6-4413-4d91-bb74-235b0c8b510a",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "f8a6f2d5-7faf-4db6-b6f1-9ed6245963c7",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "863c84c6-8291-446b-8aa3-707f16cc3c54",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "85f295d0-450a-49a9-b87a-5c55e1dd53d7",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "76c892bf-f710-4a24-aacb-6d7549d15ff2",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "fb29313d-d1c0-4a3a-90bf-81fa02f1b026",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "0d3a9ddf-ecdc-459e-9f7e-0da284acf53d",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "09200c13-47e6-4d77-bb10-9e2b1d99866e",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "c6052b9a-8d7b-456b-9e1e-ccaff5803d89",
+      "result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59"
+    },
+    {
+      "claim_id": "36c8cccb-3913-4be5-8a8f-c91aa294a253",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "76fdfd3a-3707-45ac-be56-12579ed6e4b2",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "01b3dda1-93bd-4009-99f0-795ea9d51b1b",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "389dcf85-a137-4f16-9385-02f3cb9083dd",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "fbcf8ce4-76d2-464c-847e-9cc497dbfd45",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "4dc240d0-6a9f-4bbd-b5c9-b609b9dc3f18",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "c83273c0-bc54-4790-a590-8b22b2910dc2",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "7b07122b-bd35-4b9d-86e4-47cd754d2a0a",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "1a250fb6-797c-403d-bf22-21c09e4f473d",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "1a561bcd-1271-4118-bf69-6b364782dac5",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "d0116dcd-c501-498a-a717-62cf02c24415",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "2d6fbc8f-d638-4cb9-9a69-3041df1bb929",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "ebd46038-7d7b-4bd3-a8f9-0ac3a6e86baf",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "9c825f53-bfa6-4fec-a530-f93e73637d66",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "5292d791-ea58-488d-95e7-9b8a7556729f",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "eaee1db6-7840-46b3-afb5-1622f5723d0e",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "b2ea0110-566a-4228-a493-e346b6b779e8",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "dc31fc28-2571-4ead-8341-2c05456a5459",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "a5212d80-aa6d-4304-8d3e-09eb3514c52d",
+      "result_id": "ade0b11d-630a-4279-97c0-03ffb431a313"
+    },
+    {
+      "claim_id": "10137fe3-6193-4b4d-b4aa-c33052419976",
+      "result_id": "c35fcc00-484f-40ec-93a2-7b06f1c8f84b"
+    },
+    {
+      "claim_id": "65978158-3630-4608-b6df-3f46c67aee45",
+      "result_id": "c35fcc00-484f-40ec-93a2-7b06f1c8f84b"
+    },
+    {
+      "claim_id": "20416fce-7a2a-4cab-bf0e-2853f09e26e8",
+      "result_id": "c35fcc00-484f-40ec-93a2-7b06f1c8f84b"
+    },
+    {
+      "claim_id": "c793fbe7-6fd0-435f-a8d2-049753a542c4",
+      "result_id": "ee548226-7ced-4506-b5d3-60b384fbf86b"
+    },
+    {
+      "claim_id": "98db1332-f7b8-43b9-b346-537b9a4dc7ef",
+      "result_id": "ee548226-7ced-4506-b5d3-60b384fbf86b"
+    },
+    {
+      "claim_id": "4268f5e3-fa34-4c11-b08c-7c97e05d63d3",
+      "result_id": "ee548226-7ced-4506-b5d3-60b384fbf86b"
+    },
+    {
+      "claim_id": "f7dd21cc-ce65-4061-bc94-2a058f280382",
+      "result_id": "e007f79d-792f-456e-a38e-6e7f365fbef1"
+    },
+    {
+      "claim_id": "eb5c9ca0-2348-4ec3-ad9e-5542d43fb129",
+      "result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c"
+    },
+    {
+      "claim_id": "98770964-b4f1-4c43-af27-2f8ec1be14e2",
+      "result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c"
+    },
+    {
+      "claim_id": "30f8392b-7e68-4b7d-9302-7dc5a7de07c5",
+      "result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c"
+    },
+    {
+      "claim_id": "d875a1e2-a27b-4848-8928-ae44f451cc75",
+      "result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c"
+    },
+    {
+      "claim_id": "d229711e-b05c-448d-966c-f1817c4fcfa5",
+      "result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c"
+    },
+    {
+      "claim_id": "02fdf9ef-3569-4e47-906b-a5bdd6951327",
+      "result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c"
+    },
+    {
+      "claim_id": "1ddeeb0a-eeb6-45e4-b0cd-b67310bbea5f",
+      "result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c"
+    },
+    {
+      "claim_id": "cfb77296-0adb-4f88-b844-75339ad88c9c",
+      "result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c"
+    },
+    {
+      "claim_id": "708217ea-4d75-4a35-83ec-519535647b0b",
+      "result_id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945"
+    },
+    {
+      "claim_id": "55b80977-f02e-44de-9d64-aec0a78fee29",
+      "result_id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945"
+    },
+    {
+      "claim_id": "a928fded-9a3b-4aeb-a337-4c3331989d32",
+      "result_id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945"
+    },
+    {
+      "claim_id": "6e36248b-e499-4e13-8fb8-fd3fd858e659",
+      "result_id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945"
+    },
+    {
+      "claim_id": "7a58206a-4532-4dc3-902b-419bdf359dfa",
+      "result_id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945"
+    },
+    {
+      "claim_id": "ffd0f8c1-c583-46cd-adaf-1a9c93fc980f",
+      "result_id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945"
+    },
+    {
+      "claim_id": "0719463c-e50c-451a-8b5e-1594c2f3f38a",
+      "result_id": "d7049589-b5f8-469d-be43-a96b767f3153"
+    },
+    {
+      "claim_id": "2e894511-07ed-4c0d-b317-84458f55437e",
+      "result_id": "d7049589-b5f8-469d-be43-a96b767f3153"
+    },
+    {
+      "claim_id": "0d3a9ddf-ecdc-459e-9f7e-0da284acf53d",
+      "result_id": "f6dd3347-9007-4c80-b5b2-ec0b2f727ec5"
+    },
+    {
+      "claim_id": "df2f1429-3c9c-413a-af4d-1718fc9eb83d",
+      "result_id": "f6dd3347-9007-4c80-b5b2-ec0b2f727ec5"
+    },
+    {
+      "claim_id": "e61c8d1f-dd45-49fd-a42f-ecb2c389e804",
+      "result_id": "f6dd3347-9007-4c80-b5b2-ec0b2f727ec5"
+    },
+    {
+      "claim_id": "e4b3f9fe-98d9-4613-aa60-b3e53731b701",
+      "result_id": "f6dd3347-9007-4c80-b5b2-ec0b2f727ec5"
+    },
+    {
+      "claim_id": "c6d473ad-a95f-4c9f-9869-1e798d874a63",
+      "result_id": "f05f352a-5b75-450c-8ba2-951734d2404d"
+    },
+    {
+      "claim_id": "e1f38cd1-1e11-4120-9116-1156d61cabe2",
+      "result_id": "f05f352a-5b75-450c-8ba2-951734d2404d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "7aa7c020-35b6-4ffc-88d7-a220a53e985b",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f69526d0-3937-438e-9354-20ce9a624268",
+      "peer_result_id": "04de3139-bf0f-48fd-9986-b6fdb4d1aa59",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the library construction methodology (C6, C22-C23, C26-C32, C89-C90). OpenEval emphasizes experimental data and methodological detail, while peer reviewers describe the platform as 'compelling' and 'detailed and convincing.' Peer review also includes C70 (diversity comparison) which OpenEval addresses separately in R10.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "6b8b7fca-9104-463e-867c-ea03e048ba0b",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "9f8ba16c-d8db-4e60-9c98-e4f4d51cd689",
+      "peer_result_id": "ade0b11d-630a-4279-97c0-03ffb431a313",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the antigen production system (C34-C40). OpenEval focuses on vector design rationale and reproducibility, while peer reviewers accept this as part of the overall 'convincing' screening methodology. Peer review R2 also encompasses screening results (C41-C50) which OpenEval addresses separately in R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "5acd032f-b29b-4e95-b1bc-264a3c2b692e",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "48a79398-c7b8-4a3b-97b0-433a93473401",
+      "peer_result_id": "ade0b11d-630a-4279-97c0-03ffb431a313",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the screening results and progressive enrichment (C41-C50). OpenEval provides detailed analysis of ELISA validation and notes the modest 62.5% success rate. Peer reviewers describe the data as 'convincing' and accept the screening methodology as valid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "9b98b787-6644-4674-a07d-ad03ec555d98",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b31658dc-68f1-4b98-b58f-03b5583a7c25",
+      "peer_result_id": "c35fcc00-484f-40ec-93a2-7b06f1c8f84b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the transparent reporting of negative results (C51-C52, C77). OpenEval commends the honest acknowledgment of limitations, while peer reviewers implicitly accept these failures and focus on future protocol improvements to increase success rates.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "609ca591-6a57-4659-82a1-e6a6852df841",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "ba42858a-d66e-46f7-ba9f-5d28bbf5afbf",
+      "peer_result_id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the computational structural predictions (C53-C56). OpenEval notes these are predictions without experimental validation, limiting confidence in specific residue interactions. Peer reviewers do not challenge the modeling approach and implicitly accept it as part of the 'convincing' overall validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "4f5e9e1c-cc3f-4821-91e3-48ae9e6faf10",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "d5ee9d5f-c4b7-460e-aae9-59d82d6b94b1",
+      "peer_result_id": "ee548226-7ced-4506-b5d3-60b384fbf86b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the cell surface binding validation (C57-C59). OpenEval highlights appropriate negative controls and notes one antigen (Amn) failed to display. Peer reviewers find data 'convincing' but note a weakness that many nanobodies fail to recognize membrane-tethered antigens.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f9595516-28e5-4b69-9823-5faca5755a2d",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "65755e21-3d39-4921-974f-36e22c47fbe9",
+      "peer_result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the immunostaining application (C60, C62-C65). OpenEval emphasizes consistency with RNA-seq data and RNAi validation as strong evidence for specificity. Peer reviewers describe the immunostaining and immunoblotting data as 'convincing.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "28d53e32-d409-4135-bdaf-22057c2a0518",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "12fa6617-88a7-45e6-ae84-6a13f2f6d042",
+      "peer_result_id": "f6efc409-53cf-4f41-ad95-435afba3bf3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the immunoblotting application (C66-C67). OpenEval highlights genetic controls validating specificity and demonstrating nanobody versatility. Peer reviewers accept this as part of the overall 'convincing' application validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "a35e1d3f-0029-440e-984e-2573ff2479de",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "2140df97-e9b6-445d-998e-1a1e13bd1417",
+      "peer_result_id": "81b891a0-6bac-4ec3-9b4c-d77bcbbf0945",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the computational structural predictions for Mip-NbMip-4G complex (C68-C69). OpenEval notes these remain computational models without experimental structural validation. Peer reviewers do not raise concerns about the modeling approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "4c43e1a5-7fcb-4bf4-80b8-ab5e937c7c10",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ec96d17f-6c3e-48a1-9fa9-3a24d10cc216",
+      "peer_result_id": "f6dd3347-9007-4c80-b5b2-ec0b2f727ec5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the phage vs. yeast platform comparison (C70-C73). OpenEval notes the diversity claim is data-supported but the affinity advantage remains speculative. Peer reviewers affirm this as an 'alternative platform' providing 'an excellent resource' while acknowledging room for improvement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "c4eed37c-e7a0-46e2-b548-1ce53b7775fa",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "7d0ce48c-0aa8-4400-93cb-3317eead22dc",
+      "peer_result_id": "e007f79d-792f-456e-a38e-6e7f365fbef1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both rate as UNCERTAIN the explanation for nanobodies failing in non-ELISA assays (C79). OpenEval notes the low affinity explanation is speculative without validation. Peer reviewers explicitly identify this as a weakness, stating 'this hypothesis has not been tested in the manuscript.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "745c7741-0159-4d76-a62d-d8cf50db0072",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "7d0ce48c-0aa8-4400-93cb-3317eead22dc",
+      "peer_result_id": "f05f352a-5b75-450c-8ba2-951734d2404d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval rates proposed improvements (C78, C80) as UNCERTAIN due to lack of experimental validation, while peer reviewers SUPPORT these suggestions. Peer reviewers view these as reasonable future directions that would 'greatly increase a successful rate,' aligning with the authors' proposals.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    },
+    {
+      "id": "f9864f84-46e6-4cf2-a3d2-81740bf8db82",
+      "submission_id": "c6287a4d-618b-4fb6-874f-24257261fc98",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "1aaabb37-c698-427f-b3cd-e8f4e05255f1",
+      "peer_result_id": "d7049589-b5f8-469d-be43-a96b767f3153",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the open availability commitment (C9, C75). OpenEval notes the commitment is explicit though distribution mechanisms are not detailed. Peer reviewers explicitly affirm this as providing 'an excellent resource to the wider scientific community.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:29:35.436740Z"
+    }
+  ]
+}

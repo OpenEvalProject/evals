@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "AlphaFold2 predicted the structure of the ULK1\u2013ATG13\u2013FIP200 complex with 1:1:2 stoichiometry, showing that ATG13 engages both FIP200 protomers via phenylalanine residues and binds ULK1's tandem MIT domains. The predicted structure is consistent with prior low-resolution cryo-EM data and reveals extensive buried surface areas between the four molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AlphaFold2 predictions (C2, C3, C4, C19\u2013C27) are internally consistent and align with prior structural data (C19). The buried surface area calculations (C20\u2013C24) provide quantitative support for the predicted interactions. The 1:1:2 stoichiometry (C4, C27) is consistent with prior literature and the structural model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The ATG13\u2013FIP200 interaction is mediated by three phenylalanine residues (F377, F394, F453) in ATG13 that insert into hydrophobic pockets at the base of FIP200's UBL domains. This interaction was validated by ITC (KD = 6.6 \u03bcM) and disrupted by the FIP3A mutation both in vitro and in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural prediction (C29) is validated by direct binding measurements via ITC (C30) and functional disruption by point mutations in vitro (C31) and in cells (C32). The convergence of computational, biophysical, and cellular evidence strongly supports this interaction mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C44"
+    ],
+    "result": "The ULK1\u2013ATG13 interaction is mediated by MIT\u2013MIM contacts similar to the yeast Atg1\u2013Atg13 complex. Two phenylalanine residues (F470, F512) in ATG13's MIM motifs insert into hydrophobic pockets of ULK1's tandem MIT domains, with a measured KD of 0.34 \u03bcM that is severely attenuated by the ULK2A mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural similarity to the yeast complex (C33, C34) is supported by prior crystallographic data. The predicted interaction mode (C35, C36) is validated by ITC measurements (C37) and mutational analysis (C38). The conclusion that MIT\u2013MIM contacts mediate this interaction (C44) is well-supported by converging structural and biochemical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ATG13 stabilizes ULK1 in cells, as evidenced by reduced ULK1 levels in ATG13 KO cells. This stabilization depends on the ATG13\u2013ULK1 interaction, since the ULK2A mutation in ATG13 fails to rescue ULK1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that ULK1 levels are reduced in ATG13 KO cells (C39) and rescued by wild-type but not ULK2A mutant ATG13 (C42) provides strong evidence for ATG13-mediated stabilization (C40, C43). This mirrors the known ATG13-mediated stabilization of ATG101 (C41), providing additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ULK1 and FIP200 interact directly via contacts between ULK1's MIT domains and FIP200's hydrophobic groove, involving residues L967 and F997. This interaction was demonstrated by pull-down assays and cellular co-immunoprecipitation, and is disrupted by the FIP2A mutation while retaining ATG13 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The direct ULK1\u2013FIP200 interaction is supported by AlphaFold2 predictions and cryo-EM structures (C45), despite conflicting with one prior report (C46). The interaction is validated by pull-down assays (C48) and cellular co-IP (C50), with specific residues identified (C47). The FIP2A mutation disrupts FIP200 binding while maintaining ATG13 interaction (C49, C50, C51), establishing three independent interactions within the complex (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The direct ULK1\u2013FIP200 interaction is partially but significantly important for autophagy activity. The ULK1FIP2A mutant shows reduced autophagic flux compared to wild-type, but retains partial activity due to indirect ULK1\u2013FIP200 interaction via ATG13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Halo-LC3 processing assay (C53) demonstrates that disrupting the direct ULK1\u2013FIP200 interaction reduces but does not abolish autophagy activity (C54). The partial phenotype is explained by indirect interaction via ATG13 (C55), supported by colocalization data (C56). The functional importance is clearly demonstrated, though the partial phenotype indicates redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C80"
+    ],
+    "result": "The ATG13\u2013FIP200 and ATG13\u2013ULK1 interactions complement each other in autophagy function. Single disruptions (FIP3A or ULK2A) partially reduce autophagic flux, while simultaneous disruption (FU5A) nearly abolishes it, demonstrating that the triadic interaction is crucial for robust ULK complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The knock-in cell experiments (C57\u2013C60) demonstrate additive effects of disrupting individual interactions, with the double mutant (FU5A) showing near-complete loss of function. The FLAG-tag control (C61, C62) appropriately accounts for potential artifacts. The conclusion that the interactions complement each other (C63, C64, C80) is strongly supported by the dose-dependent functional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "In ATG13FU5A KI cells where ATG13 is dissociated from the ULK complex, ATG9A still colocalizes with FIP200, likely due to p62 body-mediated recruitment of both FIP200 and ATG9 vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The colocalization observation (C65) is clearly demonstrated, but the interpretation that p62 bodies recruit both components (C66) is speculative and based on inference from colocalization with p62. The authors acknowledge this limitation and suggest that evaluation under conditions preventing p62 body-mediated recruitment would be needed to assess autophagosome formation-associated recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Disruption of the triadic ULK complex interactions reduces ULK1 kinase activity, as evidenced by decreased ATG14 phosphorylation at Ser29 in ATG13FIP3A and ATG13FU5A KI cells. This reduced ULK1 activity is a key factor explaining the autophagy deficiency in these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The importance of ATG14 Ser29 phosphorylation is established by prior work (C67). The observation that this phosphorylation is reduced in mutant cells (C68) provides a mechanistic link between complex disruption and autophagy deficiency (C69). However, the complete loss of ATG14 phosphorylation in ATG13 KO cells remains unexplained, suggesting additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A major structural difference between the mammalian ULK complex and the yeast Atg1 complex is that mammalian ATG13 binds two FIP200s within the same dimer, whereas yeast Atg13 bridges distinct Atg17 dimers. This difference means mammalian ATG13 cannot induce higher-order assemblage through bridging, necessitating alternative phase separation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison (C70, C71) is based on the AlphaFold2 model and prior knowledge of the yeast complex structure. The functional consequence regarding bridging and higher-order assemblage (C72, C73) is a logical inference from the structural differences. This represents a significant mechanistic distinction between the mammalian and yeast systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "The triadic interaction among ULK1, ATG13, and FIP200 is unique to mammals and may enable tissue-specific fine-tuning of autophagy activity through regulation of ATG13 splicing variants that lack some interaction sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The uniqueness of the triadic interaction to mammals (C74) is stated based on literature review. The existence of multiple ATG13 splicing variants (C77\u2013C79) is well-documented. However, the proposed physiological significance for tissue-specific regulation (C75, C76, C81) is speculative and not directly tested. While the hypothesis is reasonable given the partial phenotypes of single mutations (C80), experimental validation in vivo would be required to support this regulatory model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C28"
+    ],
+    "result": "Background knowledge establishing the composition and function of the ULK/Atg1 complex in autophagy initiation, the state of structural knowledge prior to this study, and prior biochemical characterization of the mammalian ULK complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, supported by appropriate citations to prior literature. They provide necessary context for the current work but do not constitute novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The triadic interaction among ULK1, ATG13, and FIP200 is crucial for autophagosome formation, with each interaction being additively important for autophagic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C5, C6) are well-supported by the collective experimental evidence from the mutational analysis and functional assays described in other claim groups. They represent the main conclusions of the study and are appropriately supported by the data.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Accounting for external stimulus inputs in the VARX model removes spurious recurrent connections. The number and effect size of significant recurrent connections decrease when external inputs (film cuts, sound envelope, motion, fixation onset, fixation novelty, acoustic edges) are included in the model compared to VAR models without inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 provide converging statistical evidence from 26 recording sessions showing systematic decreases in both the number of significant connections (C24: p<0.0001) and effect sizes (C25: p<0.0001) when inputs are added. The cumulative feature addition analysis (C27-C29) demonstrates that film cuts and sound envelope significantly reduce spurious connectivity, supporting the conclusion that stimulus-induced correlations inflate apparent connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C46",
+      "C50",
+      "C87"
+    ],
+    "result": "Recurrent connectivity is reduced during movie watching compared to rest. Both the number of significant connections and their effect sizes decrease during movie viewing relative to resting state, indicating that external stimulation reduces intrinsic brain dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 provide statistical evidence from mixed-effects models (p<0.001 for both measures) across 26 recording sessions. The findings are consistent across multiple claims (C46, C50, C87) and supported by both LFP and BHA analyses. The statistical approach appropriately accounts for repeated measures across patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C44",
+      "C52",
+      "C63"
+    ],
+    "result": "The total brain response to external inputs is dominated by intrinsic dynamics rather than direct feed-forward effects. The system response H (which includes recurrent connectivity) is significantly stronger and longer than the feed-forward response B alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide statistical evidence (p<0.0001 and p=0.0002, N=23) showing that total responses are both stronger and more prolonged than feed-forward effects. This finding is replicated across multiple stimulus types (fixation onset, film cuts, sound envelope) and signal types (LFP and BHA), as indicated by C63. The interpretation (C34, C52) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C47",
+      "C51",
+      "C88"
+    ],
+    "result": "External stimulation reduces intrinsic noise in responsive brain channels. Channels showing significant responses to external stimuli exhibit decreased relative power in the innovation process during movie watching, consistent with noise quenching through gain adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 provides strong statistical evidence (p=8.8\u00d710\u207b\u2077, N=26) for reduced relative power in responsive channels. The observation that this effect is specific to responsive channels (C41) strengthens the interpretation. The proposed gain adaptation mechanism (C88) is supported by simulation results matching the empirical data pattern, though the mechanism itself remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C48"
+    ],
+    "result": "Cortical areas showing more outgoing connections have higher T1w/T2w ratios and are located lower on the cortical hierarchy, while higher-order areas show predominantly incoming connections. This suggests a hierarchical organization of connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 provides statistical support (t(533)=2.62, p=0.009) from a mixed-effects model. However, C85 reveals a critical caveat: the correlation becomes non-significant when normalizing for the number of electrodes per region. C86 suggests potential confounding by electrode density in temporal lobe regions. This undermines confidence in the hierarchical interpretation despite the initial statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C49"
+    ],
+    "result": "The brain's response to naturalistic audiovisual stimuli is substantially shaped by the same intrinsic dynamics observed during rest, with recurrent connections minimally altered by watching videos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the study and are supported by the convergence of multiple lines of evidence from other results: reduced spurious connectivity when accounting for inputs (C23-C29), small but significant decreases in connectivity during movies (C30-C31), and dominance of intrinsic dynamics in total responses (C32-C34). The conclusion integrates findings across different analyses and signal types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C62",
+      "C63"
+    ],
+    "result": "BHA shows more sparse recurrent connectivity than LFP, but both signal types show similar patterns: accounting for external inputs removes spurious connections, and stimulus responses are enhanced by recurrent connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 document parallel analyses for BHA matching the LFP results. Claims C62-C63 explicitly state that despite differences in sparsity, both signal types show the same key patterns. The consistency across signal types strengthens the overall conclusions, though the sparsity difference (C35) is expected given the different frequency content and spatial extent of LFP versus BHA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C91",
+      "C92"
+    ],
+    "result": "The VARX model successfully recovers structural connectivity from simulated neural activity, achieving a Spearman correlation of 0.69-0.70 with DTI-based structural connectivity, outperforming sparse-inverse covariance methods (r=0.52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C91 report consistent correlation values (0.69-0.70) from validation analyses using simulated whole-brain data. The comparison with an alternative method (C92) provides context for evaluating performance. However, this validation is limited to simulated data with known ground truth, and the authors acknowledge (C82) that this is considered relatively good compared to prior work. The validation does not extend to real neural data where true connectivity is unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "The low-level stimulus features used (film cuts, motion, fixation onset/novelty, sound envelope, acoustic edges) capture substantial variance in intracranial EEG, though adding semantic features could further reduce apparent recurrent connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 references prior published work by the authors demonstrating that these features capture substantial variance. Claim C54 appropriately acknowledges limitations and speculates about potential improvements. Claim C56 summarizes the implication that the VARX model can reveal reduced connectivity by removing stimulus effects. The speculation about semantic features (C54) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C89",
+      "C80"
+    ],
+    "result": "The study analyzed intracranial EEG from 26 recording sessions (22 patients, 4 with two recordings) with 5093 total channels, recording up to 64.7 minutes per patient across multiple movie clips and resting states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the dataset and are internally consistent. The sample size (N=26 sessions, 5093 channels) is substantial for intracranial EEG studies. The variety of stimuli (C94) provides good coverage of different conditions. The description is clear and detailed enough for understanding the scope of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C90",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study used standard signal processing methods for intracranial EEG, including bipolar referencing, bandpass filtering for BHA (70-150 Hz), downsampling to 60 Hz, and L2-regularized model fitting with specific parameter choices (\u03bb=0.3, nb=36, na=6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe methodological details that are standard for intracranial EEG analysis. The parameter choices are explicitly stated and justified. Claims C98-C99 provide appropriate citations for feature extraction methods. The methods are described with sufficient detail for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Increasing the number of delays (na) in the model increases estimated effect size but leads to fewer significant connections, with na=6 (100ms) chosen as the largest model order supported by statistical analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 describe parameter exploration results shown in appendix figures. The trade-off between effect size and number of significant connections is documented empirically. The choice of na=6 is justified based on statistical considerations, though the specific criterion for 'largest model order supported' could be more explicitly defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The VARX model is well-established in linear systems and econometrics, extends the VAR model used for Granger causality in neuroscience, and offers computational advantages over Dynamic Causal Modeling (DCM) by assuming directly observable neural activity and allowing higher-order dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C71-C72 establish the background and positioning of VARX relative to existing methods, supported by appropriate citations. Claims C75-C78 provide accurate technical comparisons with DCM, noting both similarities (both include A and B terms) and differences (DCM limited to first-order dynamics, includes multiplicative interactions, requires slower estimation). The computational advantage claim (C78) is supported by the practical demonstration of analyzing up to 300 channels (C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Fixation onsets are tightly correlated with saccade onsets (30ms jitter) and can have 'acausal' components due to neural activity preceding the saccade, representing a modeling choice to treat them as external inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 provides specific timing information (30ms jitter) based on knowledge of eye movement physiology. Claim C84 appropriately acknowledges the complexity of treating fixation onsets as purely external inputs, noting that pre-saccadic neural activity could appear as acausal responses. This caveat is important for interpretation and is appropriately disclosed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The correlation between connectivity directionality and cortical hierarchy becomes non-significant when normalizing for electrode density, suggesting that regions with many electrodes (particularly temporal lobe) may drive the observed correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent an important caveat to the hierarchical connectivity result (C43). The authors appropriately disclose this limitation, noting that the statistical significance disappears with normalization (C85) and speculating about the potential confound (C86). This transparency about limitations is appropriate, though it substantially weakens the hierarchical connectivity finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Current computational models of brain activity typically do not account for recurrent brain architecture, relying instead on simple input/output relationships or instantaneous correlations. External stimuli can induce correlations between brain areas, which should be controlled for but are often ignored in functional connectivity studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the background and motivation for the study. They are supported by appropriate citations to established literature (C1, C3-C4, C6-C7, C9, C11-C12) and represent accurate characterizations of the field based on knowledge and inference (C2, C5, C10). The claims provide necessary context for understanding the contribution of the VARX approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C55",
+      "C57",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Prior literature shows mixed findings on how external stimuli affect functional connectivity and neural variability, with some studies showing preserved correlations and others showing stimulus-induced changes. Noise quenching and reduced variability with stimulation have been associated with attention and performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize relevant prior literature with appropriate citations. The mixed findings (C13-C16, C55, C57) provide context for the current study's contribution. The noise quenching literature (C64-C65, C67-C68) supports the interpretation of the intrinsic variance findings. All claims are appropriately attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C60",
+      "C61",
+      "C70"
+    ],
+    "result": "Linear models, despite being inadequate for neuronal dynamics, remain important tools for understanding neural representations and have been widely used for encoding models across different modalities. LFP and BHA have different physiological origins and spatial extents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide methodological context and justification. Claims C19-C20 acknowledge limitations while justifying the approach, supported by citations. Claims C60-C61 provide physiological background for interpreting differences between LFP and BHA, with appropriate citations. Claim C70 references prior work by the authors on film cut responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C66"
+    ],
+    "result": "The role of feed-forward responses may be to shape input for processing by existing intrinsic dynamics, suggesting that learning involves mapping external stimuli to pre-existing brain dynamics. Gain adaptation can explain noise quenching by implicitly reducing intrinsic noise contribution when external input adds power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent theoretical interpretations and proposed mechanisms. Claims C58-C59 are explicitly speculative interpretations of the findings, consistent with Buzs\u00e1ki's theoretical framework but not directly tested. Claim C66 proposes a specific mechanism (gain adaptation) that is supported by simulation results but remains somewhat speculative as the actual mechanism in the brain. These are reasonable interpretations but go beyond what the data directly demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Some prior methods attempt to account for task effects by first modeling task-evoked responses and then computing functional connectivity on residuals, or by correlating multiple response estimates over time windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe alternative approaches in the literature with appropriate citations (Fair et al., 2007; Rissman et al., 2004). The descriptions are factually correct and provide context for positioning the VARX approach relative to existing methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "LFP shows a drop in power in the theta/alpha band (5-11 Hz) during movie watching across all electrodes in an example patient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 describes an observation from example data shown in an appendix figure. The claim is appropriately qualified as an example from one patient and notes that similar narrow-band drops were observed in most patients at different frequencies. This is a descriptive observation supporting the broader finding of reduced power during stimulation.",
+    "result_type": "MINOR"
+  }
+]

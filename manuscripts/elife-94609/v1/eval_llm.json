@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "SUL1 deletion extends yeast replicative lifespan through a mechanism independent of sulfate transport. While SUL1\u0394 significantly increases lifespan, mutations that specifically abolish sulfate transport (SUL1E427Q), deletion of the homologous transporter (SUL2\u0394), or disruption of the sulfate assimilation pathway (MET3\u0394) do not extend lifespan, despite all showing delayed sulfur uptake kinetics. This demonstrates that lifespan extension is mediated by SUL1's signaling function rather than its nutrient transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic dissection is well-designed and provides strong evidence (C1, C14-C16). The sulfate uptake measurements (C17-C18) confirm that SUL1E427Q has similar transport defects to SUL1\u0394 but lacks the lifespan phenotype, supporting the conclusion that signaling rather than transport mediates longevity (C2, C19, C72). The epistasis experiments are appropriately controlled and the logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SUL1 deletion induces transcriptional changes characteristic of conserved longevity mechanisms, including upregulation of stress response and carbohydrate metabolism genes and downregulation of amino acid biosynthesis and ribosomal genes. RNA-seq analysis identified 182 upregulated and 57 downregulated genes in SUL1\u0394. Importantly, SUL2\u0394 and SUL1E427Q show opposite transcriptional patterns, particularly for carbohydrate metabolism genes, supporting that SUL1 deletion acts through altered PKA signaling rather than disrupted sulfate transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (C20-C22, C77) are well-presented with appropriate enrichment analyses. The comparison with SUL2\u0394 and SUL1E427Q controls (C26, C78-C79) strengthens the mechanistic interpretation that signaling changes drive the phenotype (C80). The connection to known longevity pathways (C23-C24) is appropriately cited. Statistical thresholds and replication are adequately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Computational analysis identified six transcription factors (SUA7, MSN2, IXR1, FKH1, FKH2, and SFP1) associated with differentially expressed genes in SUL1\u0394. The identification of IXR1, which regulates hypoxic genes under normoxia, suggests SUL1 deletion induces a gene expression program similar to diauxic shift, consistent with reduced PKA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcription factor association analysis (C28, C83) is appropriately conducted and the identified factors are well-characterized in the literature (C84-C88). The inference about diauxic shift-like gene expression (C29) is reasonable given the IXR1 involvement and comparison to known MSN2 mutant phenotypes, though this remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C35",
+      "C59"
+    ],
+    "result": "SUL1 deletion decreases PKA pathway activity, as evidenced by increased mRNA levels of TPS1 and stress-related genes, and significantly elevated concentrations of trehalose and glycogen, which serve as established indicators of reduced PKA activity in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR measurements (C36) and biochemical quantification of trehalose and glycogen (C37) provide direct evidence for decreased PKA activity. The use of these metabolites as PKA activity indicators is well-established in the literature (C35). Statistical significance is appropriately reported with p-values. The inference of decreased PKA activity (C38) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C89",
+      "C90"
+    ],
+    "result": "SUL1 deletion increases nuclear localization of MSN2 throughout the lifespan without changing total MSN2 protein levels. The SUL1\u0394 strain shows significantly increased nuclear accumulation of MSN2-EGFP in log phase cells and enhanced nuclear/cytoplasmic MSN2 ratio during aging, particularly in early and middle life stages (prior to generation 17). SUL1\u0394 also exhibits a more robust MSN2 nuclear translocation response to glucose limitation stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence microscopy data (C39, C41-C43) are quantitative and appropriately analyzed with sufficient cell numbers (n=80-100). The time-lapse imaging throughout the lifespan is a strength. The observation that differences diminish after generation 17 (C44) is appropriately attributed to reduced sample size. The glucose limitation experiments (C89) provide additional validation. The conclusion that SUL1 deletion increases MSN2 nuclear localization (C45) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C91",
+      "C92"
+    ],
+    "result": "The stress response regulation in SUL1\u0394 is MSN2-dependent rather than MSN4-dependent. While MSN2 and MSN4 are both PKA-controlled transcription factors that bind the same stress response element, no significant MSN4 nuclear translocation alteration was observed in SUL1\u0394 during aging, contrasting with the pronounced MSN2 response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential behavior of MSN2 versus MSN4 (C93) is clearly demonstrated with appropriate imaging data. The inference that stress response is MSN2-dependent (C94) is logical given the contrasting localization patterns. The background on MSN2/MSN4 function (C91-C92) is appropriately cited. This specificity strengthens the mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "SUL1 deletion enhances autophagy, as evidenced by upregulation of autophagy genes in RNA-seq and increased ATG8-EGFP expression during aging. ATG8 levels steadily increase with age in SUL1\u0394 strains but not in wild-type, with statistically significant differences during middle and late life stages. SUL1\u0394 also shows more pronounced ATG8 upregulation in response to glucose restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data showing autophagy gene upregulation (C47) is complemented by direct ATG8-EGFP measurements (C49-C51). The time-lapse imaging throughout the lifespan with adequate sample size (n=80) provides robust evidence. The glucose restriction experiments (C51) validate the enhanced autophagic capacity. The conclusion (C52) is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C4",
+      "C57",
+      "C97"
+    ],
+    "result": "MSN2 and ATG8 are required for the lifespan extension by SUL1 deletion. While deletion of MSN2 or ATG8 alone does not affect lifespan, deletion of either gene in the SUL1\u0394 background partially abolishes the lifespan extension, demonstrating that the longevity effect is at least partially mediated through increased stress response (MSN2) and elevated autophagy (ATG8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis experiments (C53-C56) are well-designed with appropriate controls showing that single deletions have no effect while double mutants show partial suppression. The sample sizes (n=100-200 cells) are adequate for lifespan analysis. The conclusion that both pathways contribute to lifespan extension (C4, C57, C97) is appropriately stated as 'partial' mediation, acknowledging that other mechanisms may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C64",
+      "C98"
+    ],
+    "result": "SUL1 deletion extends lifespan through a PKA-dependent mechanism involving multiple downstream effectors. The model proposes that SUL1 deletion decreases PKA signaling, leading to increased trehalose accumulation, enhanced MSN2-mediated stress response, elevated autophagy, and reduced ribosome biogenesis, collectively resulting in enhanced stress resistance and increased lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative model (C58, C60, C64, C98) is well-supported by the cumulative experimental evidence from multiple independent measurements (trehalose/glycogen levels, MSN2 localization, autophagy markers, RNA-seq, and epistasis experiments). The mechanistic pathway is logically constructed and consistent with known PKA signaling biology. However, direct measurement of PKA activity itself would strengthen the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The SUL1E427Q mutant shows compensatory upregulation of SUL1 mRNA expression. RNA-seq data revealed that SUL1 mRNA levels were significantly increased in the SUL1E427Q mutant (mean FPKM 37.13) compared to wild-type (mean FPKM 21.36), suggesting that loss of sulfate transport function triggers compensatory transcriptional upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (C81) clearly shows increased SUL1 expression in the transport-deficient mutant. The inference of compensatory upregulation (C82) is reasonable, though the mechanism is not explored. This observation strengthens the argument that transport and signaling functions are separable, as the mutant maintains signaling capacity despite transport deficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C23",
+      "C24",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C46",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C74",
+      "C75",
+      "C76",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C99"
+    ],
+    "result": "Background claims establishing the scientific context for nutrient sensing, aging, PKA signaling, sulfate metabolism, and autophagy in yeast and other organisms. These claims provide the foundation for interpreting the experimental findings and are supported by appropriate citations to the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C5-C13, C23-C24, C30-C34, C46, C61-C63, C65-C68, C74-C76, C91-C92, C95-C96, C99) are appropriately cited and represent established knowledge in the field. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the claims are consistent with current understanding of these pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C100"
+    ],
+    "result": "Speculative claims about broader implications. The authors suggest that the mechanism of signaling-dependent lifespan regulation might be general for other nutrient transceptors and that the findings may have implications for lifespan regulation in more complex organisms, given the conservation of PKA pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C73, C100) are explicitly speculative and appropriately presented as such. While the conservation of PKA signaling supports potential broader relevance, no experimental evidence is provided to test these hypotheses in other transceptors or organisms. These represent reasonable directions for future work but cannot be evaluated as supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Methodological claims describing strain backgrounds, genetic manipulations, and data deposition. All strains are in the BY4741 background, knockout and EGFP-labeled strains were generated using standard methods, and RNA-seq data were deposited in GEO (accession GSE296216).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C101-C104) are straightforward descriptions of experimental procedures and data management. The methods are standard and appropriately described. Data deposition in a public repository (C104) follows best practices for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

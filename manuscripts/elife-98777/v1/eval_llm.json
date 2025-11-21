@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study demonstrates spatial convergence but temporal divergence of connectome dynamics across fMRI and intracranial EEG frequency bands. Approximately 20% of cross-modal recurrence plot (CRP) entries showed significant spatial similarity, but the on-/off-diagonal ratio was close to 1 (0.89\u00b10.12), indicating that spatially similar patterns occur asynchronously rather than synchronously across modalities. Cross-frequency overlap was minimal (Jaccard index \u22640.06), demonstrating temporal independence across frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 provide converging quantitative evidence from the intracranial dataset. The spatial convergence (20% significant entries, C37) rules out scenario III, while the on-/off-diagonal ratio near 1 (C39-C42) with strong Bayesian support (BF01=8.2, C41) demonstrates temporal divergence, supporting scenario II. The low cross-frequency overlap (C44-C45) confirms multi-timescale independence. Statistical rigor includes individual subject testing, null model comparisons, and Bayesian analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C87"
+    ],
+    "result": "The main findings from intracranial EEG were replicated in whole-brain source-localized scalp EEG-fMRI data (N=26 healthy subjects). Approximately 28% of CRP entries showed significant spatial convergence, the on-/off-diagonal ratio was close to 1 (1.01\u00b10.1), and cross-frequency overlap remained low (Jaccard index \u22640.10), confirming spatial convergence with temporal divergence across the full cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate successful replication in an independent dataset with different population (healthy vs. epilepsy patients), different recording modality (scalp vs. intracranial), and whole-brain coverage. The consistency of findings (spatial convergence ~20-28%, on-/off-diagonal ratio ~1, low cross-frequency overlap) across datasets strengthens the main conclusions. Statistical testing includes group-level t-tests and Bayesian analysis (BF01=3.4, C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "After convolving intracranial EEG signals with the hemodynamic response function (HRF), spatial convergence persisted (22\u00b17% significant CRP entries) but temporal divergence remained (on-/off-diagonal ratio 1.02\u00b10.12, BF01=2.0), indicating that fMRI connectome dynamics are not merely a temporally smoothed version of electrophysiological dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 address a critical alternative explanation by testing whether temporal divergence results from different signal speeds. The HRF convolution analysis demonstrates that even when matching the temporal characteristics of fMRI and EEG signals, temporal divergence persists. This strengthens the interpretation that the modalities capture distinct neural processes rather than the same process at different speeds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C72",
+      "C73"
+    ],
+    "result": "Connection-level analysis revealed significant temporal association between fMRI and iEEG functional connectivity in a substantial proportion of individual connections across all frequency bands, contrasting with the connectome-level temporal divergence. This suggests that infraslow fluctuations in individual connections are neurally distinct from connectome-wide dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C72-C73 reconcile the current findings with prior literature showing temporal convergence at the connection level. The distinction between connection-level convergence and connectome-level divergence is conceptually important and empirically demonstrated. However, the manuscript could benefit from more detailed quantification of this connection-level analysis beyond the supplementary figure reference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "K-means clustering identified discrete recurrent connectome states in both fMRI and EEG frequency bands that were significantly more dissociable than null data (z-scores: 103.6 for fMRI, 128.0-3.7 for EEG bands). All fMRI states matched with specific EEG states across all frequency bands at non-overlapping timepoints, supporting frequency-specific but temporally independent FC processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C74-C75, C77 demonstrate that the observed spatial convergence reflects genuine recurrent states rather than random fluctuations or static connectome expression. The clustering analysis with null model comparison (C57) provides strong evidence for discrete states. The finding that all fMRI states match across all EEG bands (C75) rather than specific band-state pairings supports the multi-frequency nature of the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C60",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors reconceptualize the functional connectome as a multiplex system where multiple connectivity states co-exist at any given timepoint across different timescales, potentially maximizing information flow by enabling concurrent connectivity across multiple sets of brain regions independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56, C60, C91, C93-C94 present the conceptual framework and functional interpretation. While the empirical findings (spatial convergence with temporal divergence) support the existence of parallel timescale-specific processes, the functional claims about 'maximizing information flow' (C93) and being 'optimally poised' (C94) are speculative. The illustrative example in Figure 5 (C55-C56) demonstrates co-existence but does not test functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "The observed asynchronicity of spatially similar connectome patterns suggests that hemodynamic and electrophysiological signals reflect partly distinct neural processes, potentially corresponding to slow (thin, unmyelinated) versus fast (thick, myelinated) fiber systems that subserve cognitive processes at different speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C66, C70 provide a theoretical interpretation linking the findings to known neurophysiological differences between modalities. While the interpretation is plausible and supported by citation (C64-C65), it remains speculative as the study does not directly measure fiber properties or test this mechanism. The claim that diverging variance is 'at least partly neural' (C70) is reasonable but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The cross-modal spatial similarity of connectome frames was small albeit above chance, consistent with prior literature. This small effect size indicates that beyond common spatial patterns, connectome-wide co-activation patterns contain substantial variance unique to each data modality and FC timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 acknowledge an important limitation and contextualize it within existing literature. The small effect sizes (C67-C68) are honestly reported and appropriately interpreted as reflecting both shared and modality-specific variance (C69). This transparency strengthens rather than weakens the overall conclusions by acknowledging that the findings align with scenario II but also partially with scenario III.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study acknowledges several methodological limitations including temporal resolution bounded by hemodynamic response (C81-C83), inability to investigate high-frequency broadband (C84-C85), limited spatial sampling in intracranial data (C86-C87), and volume conduction concerns (C88-C90). Key limitations were addressed through replication in whole-brain scalp EEG-fMRI data and leakage correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C90 transparently discuss limitations and mitigation strategies. The replication in scalp EEG-fMRI (C87) effectively addresses the spatial sampling limitation of intracranial recordings. Volume conduction mitigation (C89) and acknowledgment of its limitations (C90) demonstrate methodological rigor. The inability to study high-gamma (C84) is a genuine limitation but does not invalidate the main findings across delta-gamma bands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study was motivated by the hypothesis that multiple connectome state sequences may concurrently unfold at different timescales to serve as parallel 'channels' of functional connectivity, potentially minimizing interference and maximizing information flow. This addresses a gap in knowledge due to the dominance of slow fMRI in network science.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C32-C34 establish the study's rationale and hypothesis. The identification of a genuine knowledge gap (C4) is well-justified given fMRI's temporal limitations. The hypothesis (C3, C33) is clearly stated and testable. The functional speculation about minimizing interference and maximizing information flow (C34) appropriately frames the motivation, though empirical testing of these functional consequences is beyond the current study's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Prior multimodal studies have shown at least moderate correlation between time-averaged (static) functional connectomes in fMRI and electrophysiological data, but the temporal relationship of connectome dynamics across FC timescales has rarely been studied due to the requirement for concurrent recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 accurately characterize prior literature with appropriate citations (C35) and identify the specific gap addressed by the current study (C36). This contextualization is important for understanding the novelty of investigating temporal relationships rather than just spatial similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study utilized two independent datasets: intracranial EEG-fMRI from 9 epilepsy patients (average 37 electrodes per subject after exclusions) and source-localized scalp EEG-fMRI from 26 healthy subjects (68 cortical regions). Appropriate exclusion criteria were applied for epileptiform activity and white matter electrodes in the intracranial dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 describe the datasets and preprocessing with appropriate detail. The sample sizes (N=9 and N=26) are reasonable for rare concurrent recordings. Exclusion criteria for epileptiform activity and white matter electrodes (C102) are appropriate. The choice of anatomical parcellation to avoid modality bias (C104) demonstrates methodological care. The use of two independent datasets with different populations strengthens generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Functional connectivity was estimated using amplitude coupling (primary analysis) and phase coupling (replication) for EEG, with a 6-second backward shift of fMRI to account for hemodynamic delay. Full correlation was used instead of partial correlation to enable comparison with existing literature. K-means clustering with K=5 (and K=7 for replication) was used to identify connectome states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 describe key methodological choices with clear rationale. The use of both amplitude and phase coupling provides robustness. The 6-second HRF delay (C107) is standard and was further validated by testing multiple lags. The choice of full over partial correlation (C108) is justified by literature compatibility, though partial correlation might have been informative. The clustering approach (C109) follows established methods with appropriate replication at different K values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Complex brain functions like speech comprehension involve multiple parallel neural operations across distributed brain regions, occurring at different timescales from tens of milliseconds to several seconds. This may require functional connectivity among multiple sets of regions at multiple speeds in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C16 establish general neuroscience principles that motivate the study. These are well-established concepts supported by appropriate citations (C14). The logical inference that parallel multi-timescale processes may require parallel multi-timescale connectivity (C16) is reasonable and sets up the study's central question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The functional connectome exhibits continuous reconfigurations across different spatial patterns, with dynamics observable in both fMRI (infraslow, seconds to minutes) and electrophysiology (sub-second, ~1-150 Hz). These modalities differ in underlying neural populations (pyramidal neurons vs. diverse populations), connectivity mechanisms, and timescales, though both can reliably capture large-scale functional connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C31 provide comprehensive background on functional connectome dynamics and methodological differences between fMRI and electrophysiology. All statements are appropriately supported by citations and represent established knowledge in the field. This background effectively motivates why concurrent multimodal recordings are needed to understand multi-timescale dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C76"
+    ],
+    "result": "Prior multimodal studies have predominantly focused on cross-validating hemodynamic and electrophysiological observations by examining their convergence. Previous work by the authors showed that connection-wise dynamics of electrophysiological FC are temporally independent across frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C76 accurately characterize prior research approaches and cite relevant prior work by the authors. This contextualization helps distinguish the current study's focus on connectome-level temporal relationships from prior connection-level or region-level analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C92",
+      "C95"
+    ],
+    "result": "The co-existence of multiple distinct connectivity processes across timescales can be conceptualized as a multiplex system, analogous to frequency multiplexing in telecommunications, where the brain leverages timescale-specific communication channels to maximize bandwidth for information flow. This motivates future use of multimodal approaches in connectomics research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80, C92, C95 present the conceptual framework and implications. The multiplex conceptualization (C78-C79) is a useful theoretical model supported by the empirical findings. The telecommunications analogy (C92) aids understanding but remains metaphorical. The functional claim about maximizing bandwidth (C80) is speculative and not directly tested. The recommendation for future multimodal research (C95) is reasonable but represents an opinion rather than an empirical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study examined FC dynamics concurrently across timescales from infraslow to \u03b3-range using simultaneously recorded intracranial EEG and fMRI, as well as source-localized scalp EEG-fMRI. Spatial convergence refers to spatially similar patterns across modalities, while temporal convergence refers to spatial convergence at corresponding timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 clearly describe the study design and define key terminology. The definitions of spatial and temporal convergence (C6-C7) are essential for interpreting the results and are clearly stated. The multimodal approach (C5) is appropriate for addressing the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The findings suggest that hemodynamic and frequency-specific electrophysiological signals, while involving similar large-scale networks, represent functionally distinct connectome trajectories operating at different FC speeds in parallel. This multiplex is poised to enable concurrent connectivity across multiple sets of brain regions independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 summarize the main interpretation of the findings. The conclusion that signals represent 'functionally distinct' trajectories (C11) is well-supported by the temporal divergence findings. However, the functional claim that the multiplex 'enables concurrent connectivity' (C12) is more speculative, as the study demonstrates co-existence but does not directly test functional enabling or consequences.",
+    "result_type": "MAJOR"
+  }
+]

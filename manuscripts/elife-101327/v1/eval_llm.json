@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C123",
+      "C124",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors developed SMARTTR, a comprehensive workflow and R package for brain-wide mapping and analysis of multiple neural ensembles from traditionally coronally sectioned datasets. The pipeline integrates immunolabeling, automated segmentation in ImageJ/FIJI, atlas registration, and network analysis capabilities with an object-oriented data management structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C44 collectively describe the development and features of the SMARTTR workflow. The pipeline components are well-documented with available source code (C32, C44), validation data (C56-C60), and clear descriptions of the object-oriented architecture (C35-C40). The modular design and compatibility with alternative workflows (C41-C43, C151-C153) are explicitly stated and supported by the software design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The automated segmentation algorithms for eYFP+ and c-Fos+ cells were validated against manual counting by two independent annotators, showing high correlation (r=0.85 for eYFP+, r=0.93 for c-Fos+) and strong performance metrics (F1 scores of 0.85 and 0.86 respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 present comprehensive validation data with appropriate statistical measures (correlation coefficients, precision, recall, F1 scores). The validation includes inter-rater reliability (r=0.92-0.93) and comparison to previous methods (C60), providing strong evidence for algorithm accuracy. The validation is supported by Figure 2\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The learned helplessness behavioral paradigm was successfully established, with IS mice showing significantly decreased habituation activity and increased escape latency compared to context-trained controls during subsequent escapable shock testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe the experimental design and behavioral outcomes. The behavioral effects are supported by statistical analysis (unpaired t-tests) and shown in Figures 2B-D. The decreased habituation activity (C49) and increased escape latency (C50) are consistent with the learned helplessness phenotype and provide the foundation for subsequent neural mapping analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "During LH acquisition, global brain-wide neural activation levels and targeted regional activity did not differ between IS and CT groups, but network analysis revealed distinct patterns with IS showing predominant motor/somatosensory correlations while CT showed auditory/associative region correlations. Global network topology metrics (degree, clustering, efficiency, betweenness) were similar between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 are supported by comprehensive network analysis data shown in Figure 3 and supplements. The lack of global differences (C61-C62, C67) is clearly demonstrated, while the regional correlation patterns (C64-C65) and network topology analyses (C66-C68) are appropriately analyzed. The conclusion about information transfer (C69) follows logically from the data, though it represents an inference about functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Individual node analysis during LH acquisition revealed that IS networks showed high connectivity in somatosensory, motor, and limbic regions (including AI, PIR, SH, ENT as information bridges), while CT networks emphasized contextual/navigational processing regions (SUB, ECT, dDG, MS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 describe regional network properties supported by degree and betweenness centrality analyses shown in Figure 3I-J. The functional interpretations are supported by appropriate citations to prior literature (C73, C75-C76). The overall pattern interpretation (C77-C78) represents a reasonable inference from the network data, though it involves some speculation about functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Permutation analysis during LH acquisition identified functional inversions in connections involving vCA1, VTA, and PERI, which shifted from positive correlations in CT to negative correlations in IS groups, suggesting altered processing of reward, affective states, and sensory feature valuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by permutation analysis data shown in Figure 3K-L. The correlation reversals (C79) are statistically demonstrated, and the functional interpretations (C80-C84) are supported by appropriate citations to prior literature. However, the mechanistic implications (C82, C84) represent inferences that would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "During LH expression, global brain-wide neural activation and targeted regional activity showed no differences between groups, and global network topology metrics remained similar. However, qualitative observations suggested differential integration of somatosensory/motor areas with limbic structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 are supported by c-Fos+ network analysis data shown in Figure 4 and supplements. The lack of global differences (C85-C87, C90-C91) is clearly demonstrated. The qualitative observation (C89) and inference about information transfer (C92) are appropriately cautious, though they represent interpretations rather than direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "During LH expression, the IS network showed high connectivity in dCA1 and VM, with STN and SNr displaying highest betweenness centrality. The SNr showed a functional reversal from negative to positive correlations, and permutation analysis revealed altered PERI connections, suggesting these regions may be critical for adaptive escape responses and motor gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C104 are supported by network analysis data shown in Figure 4D-K. The regional connectivity patterns (C93-C96) and correlation shifts (C97, C102-C103) are clearly demonstrated. The functional interpretations (C98-C101, C104) are supported by appropriate citations but represent inferences about mechanism that would benefit from causal experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Analysis of reactivated cells (co-labeled/eYFP+) revealed significantly decreased reactivation proportions in multiple regions (ACA, AI, dDG, dCA3, MEA) in IS mice, with a trending brain-wide decrease (p=0.0560). LA reactivation showed strong correlation with escape latency in the IS group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by experimental data shown in Figure 5A-J and supplements. The regional decreases (C105) are statistically significant with appropriate multiple comparison corrections. The trending global decrease (C106) approaches but does not reach significance. The LA correlation (C107) is clearly demonstrated. The interpretation as a novel marker (C109) is reasonable but represents an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Network analysis of reactivated cells revealed dCA1, AI, MOs, and SSp-n as highly interconnected in IS networks, with ACA and MOs showing highest betweenness. The AI showed significantly strengthened functional connectivity in IS, and permutation analysis revealed functional reversals in CEA connections involving regions related to response inhibition, motor regulation, and emotional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C119 are supported by network analysis data shown in Figure 5N-V. The regional connectivity patterns (C110-C111) and AI correlation shift (C112-C113) are statistically demonstrated. The CEA connection reversals (C114) and functional interpretations (C115-C118) are supported by appropriate citations. The mechanistic conclusion (C119) represents a reasonable inference but would benefit from causal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Global network analysis across all three datasets (eYFP+, c-Fos+, co-labeled/eYFP+) revealed no differences in topological metrics between groups, suggesting LH is not characterized by gross alterations in information transfer. However, region-specific analyses revealed a functional shift from navigational/contextual to sensory/affective processing in IS mice, despite comparable absolute activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 synthesize findings across multiple analyses. The lack of global topological differences (C126-C127) is consistently demonstrated across datasets. The functional shift interpretation (C128) is supported by the regional network analyses. The lack of absolute activity differences (C129-C130) is clearly shown but contrasts with prior literature (C131), which the authors appropriately discuss in terms of methodological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The authors report that widescale decreased reactivation following traumatic stress has not been previously described and suggest it may represent a novel phenomenon of neural plasticity underlying LH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 present a novel finding (decreased reactivation) but the interpretation involves significant speculation. The trending global decrease (p=0.0560, C106) does not reach statistical significance, and the mechanistic interpretation (C136) about neural plasticity suppressing ensemble reactivity is speculative without additional experimental validation. The novelty claim (C135) is based on literature review but may be limited by search scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The authors justify their serial sectioning approach over intact tissue clearing methods, citing better antibody penetration and signal-to-noise ratio for multiple markers in deep structures, while acknowledging limitations in z-plane registration accuracy (~100 \u03bcm) and requirements for technical skill.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C149 present a balanced assessment of methodological trade-offs. The advantages of serial sectioning (C141) and limitations of clearing methods (C142-C144) are supported by the authors' experience (C143) and technical reasoning. The registration limitations (C145-C147) are honestly acknowledged, and the comparison to other methods (C148) is appropriately cited. This represents a fair methodological discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The ArcCreERT2 tagging system enables permanent eYFP labeling of Arc-expressing neurons following 4-OHT injection, and combined with c-Fos staining allows identification of dual ensembles. Custom algorithms were developed to segment eYFP+ cells (accounting for dendritic staining) and c-Fos+ cells (punctate nuclear staining), with colocalization determined by volumetric overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C51-C55 describe established methods (C24-C26 with appropriate citations) and the authors' segmentation approach. The custom algorithms (C51, C53-C55) are described in detail with available source code. The generalizability claim (C52) is reasonable based on similarity to other tagging systems, though direct validation would strengthen this assertion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The introduction establishes that IEGs are used as proxies for neural activity, brain-wide mapping methods have been developed, activity-dependent tagging systems enable multi-ensemble studies, but most engram studies focus on few regions and high-throughput multi-ensemble mapping poses technical challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide background context supported by appropriate citations to established literature. The characterization of IEGs (C1-C4), mapping methods (C5-C7), tagging systems (C8-C10), and current limitations (C11-C12) are well-supported by cited references and represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors applied their workflow to study learned helplessness, a traumatic stress model, identifying altered functional connectivity signatures during IS and ES exposure. The work is presented as a freely available reference dataset with tutorial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 describe the application and data sharing aspects of the work. The LH application (C19-C20) is appropriate and well-established (C20, C125). The novelty claim (C21) appears reasonable based on literature review. The findings (C22) are supported by the detailed analyses. Data availability (C23) is clearly stated and represents good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors assert that accessible approaches for scalable brain-wide mapping of multiple ensembles in coronal sections are scarce, and standardized open-source tools for network analysis of IEG patterns are lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 characterize the gap in available methods. The citation to Roy et al. 2022 (C120) supports the scarcity claim, and the assessment of available tools (C121-C122) appears reasonable based on the authors' literature review, though comprehensive verification would require systematic review of all available software.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors discuss that their findings contrast with prior work showing amygdalar Arc upregulation after IS, attributing the difference to the longer tagging window of the ArcCreERT2 system (4-OHT half-life ~6 hr) which may capture consolidation-related activity. They also note that stressor controllability can alter SN neuron properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 appropriately contextualize the findings relative to prior work. The contrast with Machida et al. 2018 (C131) is acknowledged, and the methodological explanation (C132-C133) is reasonable and supported by citation. The SN finding (C134) is appropriately cited. This represents honest discussion of discrepancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors interpret the AI's influential network position and functional alteration as potentially critical for mediating the helpless state, note consistency with prior fear network studies identifying ACA as a hub, and position SMARTTR as a hypothesis-generating toolkit for future mechanistic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 provide interpretation and context. The AI interpretation (C137-C138) is supported by appropriate citations and network data, though it represents inference about mechanism. The ACA finding (C139) is appropriately contextualized with prior work. The characterization of SMARTTR as hypothesis-generating (C140) is appropriately modest and realistic about the limitations of correlational network analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C150",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The authors note alternative registration approaches exist, anticipate adding features based on community feedback (citing the Franklin-Paxinos atlas integration as an example), and suggest future GUI development for easier use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150 and C155 describe current features with appropriate citations. Claims C154 and C156 represent future plans and are appropriately speculative. These represent reasonable forward-looking statements about software development.",
+    "result_type": "MINOR"
+  }
+]

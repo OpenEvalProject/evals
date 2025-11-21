@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C40",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C80",
+      "C205"
+    ],
+    "result": "The model learns place-like representations in output units and boundary-tuned representations in recurrent units. Output units develop unimodal, isotropic firing fields resembling biological place cells, while recurrent units become border-tuned, with border representations forming the main basis for place cell formation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm these core findings. Reviewer 1 states 'network modeling results are solid,' Reviewer 2 notes the model is 'clearly described' with 'convincing' results, and Reviewer 4 describes analyses as 'thorough and interesting.' No reviewer challenges the emergence of place-like and border-like representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C45",
+      "C46",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C81",
+      "C82",
+      "C206"
+    ],
+    "result": "The model exhibits global remapping in output units and rate remapping in recurrent units when moved between environments. Output units show marked shifts in preferred firing locations and rate changes between contexts, while recurrent units primarily rate remap through pronounced rate changes without changing preferred locations. This remapping arises from sparse input from differentially activated boundary units.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'The global remapping that the authors show is convincing and well-supported by their analyses.' Reviewer 4 notes 'The analysis of how the RNN remapped, using a context signal to switch between largely independent maps...were both thorough and interesting.' No concerns are raised about the remapping findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The model demonstrates geometric remapping behaviors when environments are manipulated. Place fields expand and elongate with environment stretching, exhibit field completion in previously unseen regions, and show field doubling during uniform expansion. These behaviors parallel biological observations and demonstrate generalization capabilities.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'The geometric manipulations and the resulting stretching of place responses, without additional training, are interesting.' Reviewer 4 notes 'Figure 4 contained some interesting and strong evidence for map-like generalisation as environmental geometry was warped.' These findings are praised without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C41",
+      "C42",
+      "C137",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C184",
+      "C186",
+      "C187"
+    ],
+    "result": "The model does not learn grid-like representations despite successfully performing path integration, raising questions about the necessity of grid cells for path integration and their causal relationship with place cells. The model suggests path integration may be performed by non-grid spatial cells and that grid cells may serve additional computational purposes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 acknowledges this as an 'interesting possibility that path integration is not the speciality of grid cells.' However, Reviewer 3 also notes 'The role of grid cells in the proposed view...remains elusive,' and 'Whether and how the proposed model is integrated into the entire picture of the hippocampal-entorhinal memory processing remains elusive,' indicating the implications need further development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C43",
+      "C44",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C193"
+    ],
+    "result": "Place unit centers in the model form clusters organized in a hexagonal lattice in open fields, especially in larger symmetrical geometries. This hexagonal arrangement exhibits distortions in non-symmetric environments and appears advantageous for optimal position decoding, suggesting hexagonal symmetry emerges from decoding requirements even without grid cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'The clustering of place cell peaks on a triangular lattice is intriguing, given there is no grid cell input. It could have something to do with the fact that a triangular lattice provides optimal coverage of 2d space.' Reviewer 4 calls 'Figure 7 was striking and potentially very interesting.' The computational finding itself is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C139",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C194"
+    ],
+    "result": "Analysis of CA1 place fields in mice reveals preliminary evidence of clustering and possible hexagonal arrangement of place field centers similar to model predictions. Field centers cluster near boundaries and show clustering stronger than expected from uniform sampling at small and intermediate distances, though most animals did not exhibit pronounced spatial arrangement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes 'the link to experimental data may benefit from further development.' Reviewer 2 states the comparison with empirical data 'is valuable as a first exploration, showing a promising example, but doesn't robustly support the modelling results.' The authors themselves describe findings as 'preliminary evidence' and 'not conclusive,' acknowledging limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C121",
+      "C122"
+    ],
+    "result": "The network exhibits robustness to noise perturbations and forms approximate attractors. After noise injection, ratemap correlations temporarily decrease but recover to steady-state configurations highly correlated with pre-noise states. Each environment corresponds to distinct attractive states, and the network maintains stable decoding errors even for very long sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 4 states 'It was impressive that the RNN path-integration error stayed low for so long (Fig A1), given that normally networks that only work with dead-reckoning have errors that compound.' The stability findings are acknowledged positively without criticism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Low-dimensional projections reveal that recurrent states capture environment geometry and can be described with few principal components within environments (~4 PCs for >90% variance), while requiring more components across environments (~20 PCs). Output states are higher-dimensional and less separable, requiring >25 PCs per environment and >75 PCs across environments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'Low-dimensional projections of the recurrent population activity forms environment-specific clusters that reflect the environment's geometry, which suggests independent rather than generalised representations.' This analysis is acknowledged without criticism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The context signal determines the resulting representation and enables switching between environment-specific representations. Context weights are largely negative and uncorrelated across rows, suggesting the context signal inhibits independent sets of units to produce sparse, orthogonal recurrent representations across environments through rate changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic finding is part of the remapping analysis that Reviewer 4 describes as 'thorough and interesting.' The context signal mechanism is not challenged by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C159",
+      "C160"
+    ],
+    "result": "The model predicts that border-type input is sufficient to explain both place field formation and global remapping through sparse input from independent cell assemblies enacted by boundary cell rate changes. While current experimental evidence suggests border cells maintain firing rates during remapping, the model's sparse border code would require only a small number of rate-remapping cells, or alternatively, gating mechanisms could enable remapping.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 notes the model 'proposes plausible mechanisms' but also states 'The role of grid cells in the proposed view...remains elusive' and questions integration with 'the entire picture of the hippocampal-entorhinal memory processing.' The prediction conflicts with some experimental observations, though the authors propose reconciliations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The model has limitations including lack of field doubling when walls are inserted (likely due to absence of sensory information) and lack of multiple firing fields in single units (possibly due to the single-center decoding operation). The authors suggest adding sensory modalities and alternative decoding approaches could address these limitations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these acknowledged limitations. Reviewer 2 notes 'it is not obvious to what extent the modelling choices are a realistic reflection of how the brain solves navigation,' which aligns with the authors' discussion of model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "The hexagonal place field arrangement suggests a potential border-to-place-to-grid cell model where boundary-tuned cells inform place cell pattern formation, which in turn guides grid cell patterns. This could explain grid cell behaviors in non-standard environments including pattern elongation and permanent geometric influences, with border cells potentially serving error-correction functions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 states 'The role of grid cells in the proposed view...remains elusive' and 'Whether and how the proposed model is integrated into the entire picture of the hippocampal-entorhinal memory processing remains elusive.' This speculative framework is acknowledged as interesting but not fully developed or validated.",
+    "result_type": "MAJOR"
+  }
+]

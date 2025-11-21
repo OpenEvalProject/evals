@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10"
+    ],
+    "result": "An optogenetic system based on iLID-SspB was developed to recruit DH-PH domains of three RhoA GEFs (LARG, GEF-H1, and PRG) to the plasma membrane, achieving 3-10 fold membrane recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10 describe the development and validation of the optogenetic tool. The manuscript provides clear experimental evidence of successful membrane recruitment with quantified fold-changes, supported by appropriate controls and multiple GEF constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20"
+    ],
+    "result": "Optogenetic activation of different RhoA GEFs produced distinct phenotypic responses: optoLARG induced only retraction, while optoGEF-H1 and optoPRG induced both retraction and protrusion phenotypes with varying frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 report quantitative phenotypic distributions across different optogenetic constructs. The data show clear differences between GEFs with specific percentages reported (e.g., 35% retraction, 40% protrusion for optoPRG), supported by videos and quantitative membrane area measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The phenotype triggered by optoPRG is determined by the cell state rather than the location of activation, as cells retain the same phenotype when activated at different poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe spatial control experiments showing phenotype persistence across different activation sites. The Sankey diagram (Figure 1H) and quantitative membrane area analysis provide strong evidence that phenotype is cell-state dependent rather than spatially determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The dual phenotype behavior of PRG DH-PH domain is not cell-line specific, as it was observed in both RPE1 and HeLa cells, and also occurs with GEF-H1 though less efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 demonstrate generalizability across cell lines and GEFs. The manuscript provides experimental data from HeLa cells showing both phenotypes, though the lack of detailed quantification in HeLa cells and limited characterization of GEF-H1 dual behavior are minor weaknesses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C108",
+      "C109"
+    ],
+    "result": "The phenotype triggered by optoPRG activation is predicted by its basal cytosolic concentration: below ~40 a.u., ~95% of cells retract, while above this threshold, ~85% protrude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C108-C109 present a clear concentration-dependent phenotypic switch with specific quantitative thresholds. Figure 2A provides compelling visual and quantitative evidence with a large sample size showing the sharp transition around 40 a.u.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The basal concentration of PRG DH-PH domain changes the cell state before optogenetic activation, as evidenced by increased cell size, membrane activity, and phenotype correlation with overexpression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 provide multiple lines of evidence for cell state changes: overexpression experiments shifting phenotype distributions, cell size differences (1.5x larger), and increased membrane dynamics. The convergence of these independent measurements strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Retracting and protruding cells show distinct actin and myosin dynamics from the first 30 seconds after optogenetic activation, with retracting cells showing immediate actin polymerization followed by myosin recruitment, while protruding cells show initial decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe temporal dynamics of cytoskeletal components with high temporal resolution (30s). The Lifeact and MRLC data in Figure 3A-F provide quantitative time-course measurements with statistical comparisons showing significant differences at early timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "RhoA biosensor measurements reveal that retracting cells show strong immediate RhoA activation while protruding cells show much smaller and delayed responses, indicating different pathways are engaged within tens of seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 present biosensor data showing differential RhoA activation kinetics between phenotypes. Figure 3G-I provides quantitative measurements with statistical analysis, though the use of a different fluorescent protein (iRFP) for these experiments and resulting bias toward retraction phenotype is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "At high optoPRG concentrations, RhoA biosensor intensity first decays then rises in response to pulses, suggesting PRG DH-PH can functionally inhibit RhoA signaling in addition to activating it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe biphasic RhoA dynamics at high GEF concentrations. Figure 4A shows representative traces with clear initial decreases followed by increases, providing direct evidence for functional inhibition, though the mechanism is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The PH domain of PRG can inhibit RhoA downstream signaling through competitive binding to RhoA-GTP, as demonstrated by optoPH recruitment causing immediate decreases in RhoA biosensor intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 combine prior literature (C52) with new experimental data (C54-C55) showing optoPH-induced RhoA inhibition. Figure 4B-D provides direct evidence, though the effect is variable across cells and the mean effect is modest (Figure 4\u2014supplement 1A), suggesting context-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A double mutation (F1044A/I1046E) in the PH domain that prevents RhoA-GTP binding eliminates the protruding phenotype even at high optoPRG concentrations, demonstrating that PH-RhoA-GTP binding during recruitment is essential for protrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe a critical loss-of-function experiment. The mutation is well-characterized in prior literature (C56), and Figure 4E-G shows clear elimination of protrusion phenotype across concentration ranges, providing strong genetic evidence for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "PH domain sequestration of RhoA-GTP is necessary but not sufficient for triggering protrusions, as optoPH recruitment alone does not induce clear protrusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by Figure 4H-I showing that optoPH recruitment does not produce the protrusion phenotype despite its ability to inhibit RhoA. This establishes that an additional active process (later shown to be Cdc42 activation) is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "OptoPRG activates Cdc42 immediately in both phenotypes, but Cdc42 activity is sustained only in protruding cells, followed by Rac1 activation likely through Cdc42-Rac1 positive feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 describe a cascade of GTPase activation using multiple biosensors (PBD, Cdc42-specific, Rac1-specific). Figure 5A-I provides comprehensive temporal data showing differential activation patterns between phenotypes, with appropriate citations for biosensor specificity and feedback mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "IPA3 treatment (PAK inhibitor) eliminates the protruding phenotype and can convert protruding cells to retracting, confirming that Cdc42-PAK activation is required for protrusion but not retraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe pharmacological validation experiments. Figure 5J-K shows clear phenotype switching after IPA3 treatment with quantitative data (N=28 cells), providing strong causal evidence for the role of the Cdc42-PAK pathway in protrusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C111"
+    ],
+    "result": "A minimal mathematical model incorporating GEF-mediated RhoA activation, PH domain binding to RhoA-GTP, and RhoA deactivation can recapitulate the full range of RhoA dynamics by adjusting a single parameter (Geq/Kb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75, C111 describe the mathematical model and its validation. Figure 6A-B shows the model can fit diverse experimental RhoA dynamics with one free parameter, though Figure 6\u2014supplement 1A shows some dynamics are not well-captured, indicating model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C112"
+    ],
+    "result": "Model predictions were experimentally validated by controlling phenotypes in the same cell through frequency modulation of light pulses, though this was achieved in only 3 out of 90 cells at intermediate expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77 and C112 describe experimental validation of model predictions, but the extremely low success rate (3/90 cells, 3.3%) raises questions about the robustness and practical applicability of the frequency-based control. While the model prediction is validated in principle, the rarity of success suggests additional factors not captured by the model may be important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C110"
+    ],
+    "result": "At low GEF concentrations, RhoA dominates over Cdc42; at high concentrations, simultaneous Cdc42 activation and RhoA sequestration shift the balance toward Cdc42, with only intermediate concentrations allowing control of both phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C110 synthesize the mechanistic model from experimental observations. Figure 6G-H provides a clear conceptual framework supported by the biosensor data, mutation experiments, and mathematical modeling, though the relative contributions of RhoA vs Cdc42 are inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior work established that LARG, GEF-H1, and PRG DH domains have been used with various optogenetic systems, PH domains participate in auto-amplification and specificity, and all previous RhoA optogenetic tools triggered contractility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 accurately cite and summarize prior literature establishing the foundation for the current work. The citations are appropriate and the characterization of prior optogenetic tools as uniformly inducing contractility provides important context for the novelty of the dual phenotype observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Prior biochemical and structural studies established that PRG DH-PH activates both RhoA and Cdc42, the PH domain binds RhoA-GTP creating a positive feedback loop, and PH overexpression can inhibit RhoA through competitive binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 accurately cite established biochemical mechanisms from the literature. These prior findings provide the molecular basis for interpreting the current optogenetic observations, with appropriate citations to structural, in vitro, and cellular studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The dual phenotype is observed with GEF-H1 (rarely) but not LARG, correlating with differences in PH domain competitive inhibition efficiency and Cdc42 activation ability reported in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 connect experimental observations of GEF-specific differences to known biochemical properties. The correlation between phenotypic behavior and published PH domain binding affinities/specificities provides mechanistic insight, though the GEF-H1 and LARG data are less extensively characterized than PRG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "PRG is known to function in cell migration at both front and rear, with FRET measurements showing RhoA activity at the front and RhoA-GTP biosensors showing activity at the rear; PRG is also overexpressed in cancers where it promotes migration and EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 accurately cite literature on PRG's physiological roles and disease relevance. These claims provide important biological context for the dual functionality observed, though the apparent contradiction between FRET and biosensor measurements (C95-C96) is noted but not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "This work demonstrates that changing dynamics of a single protein can reverse its function on a timescale of seconds, a phenomenon previously shown mainly at transcriptional timescales (hours) or in limited examples involving Src clustering and RhoA amplitude-dependent responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 place the findings in the context of protein dynamics and cellular responses. The comparison to prior work is appropriate, accurately citing examples of dynamic encoding of cellular responses, though the claim of uniqueness should be tempered by the limited success rate of frequency-based control (C77).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Background knowledge establishes that Rho GTPases (RhoA, Rac1, Cdc42) control protrusion and retraction during migration, with canonical roles of Rac1/Cdc42 promoting protrusion and RhoA promoting retraction, though RhoA's role is context-dependent; prior optogenetic tools for Rac1/Cdc42 induced protrusion while RhoA tools induced retraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 accurately present established knowledge about Rho GTPase biology and prior optogenetic work. The citations are appropriate and the summary correctly identifies the gap in understanding that motivated the current study, particularly regarding RhoA's context-dependent functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Cells were cultured under standard conditions, transfected with jetPRIME reagent, and imaged at 37\u00b0C with 5% CO2 using DMD-based local illumination at least 30 hours after transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 describe standard experimental methods that are clearly documented. The methods are appropriate for the experiments performed, though some details about light intensity calibration and DMD pattern specifications could be more complete.",
+    "result_type": "MINOR"
+  }
+]

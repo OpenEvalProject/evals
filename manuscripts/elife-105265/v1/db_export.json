@@ -1,0 +1,1617 @@
+{
+  "submission": {
+    "id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:02:59.219990Z",
+    "updated_at": "2025-11-21T16:02:59.219990Z"
+  },
+  "content": [
+    {
+      "id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "content_type": "manuscript",
+      "content_text": "# The Product neutrality function defining genetic interactions emerges from mechanistic models of cell growth\n\n## Authors\n\n- Lucas Fuentes Valenzuela<sup>1</sup> ([ORCID: 0009-0002-7403-3537](https://orcid.org/0009-0002-7403-3537))\n- Paul Francois<sup>2</sup> ([ORCID: 0000-0002-2223-839X](https://orcid.org/0000-0002-2223-839X))\n- Jan M Skotheim<sup>1</sup> ([ORCID: 0000-0001-8420-6820](https://orcid.org/0000-0001-8420-6820)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Department of Biochemistry and Molecular Medicine, University of Montreal Montreal Canada ([ROR:0161xgx34](https://ror.org/0161xgx34))\n3. Chan Zuckerberg Biohub San Francisco United States ([ROR:00knt4f32](https://ror.org/00knt4f32))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetic analyses, which examine the phenotypic effects of mutations both individually and in combination, have been fundamental to our understanding of cellular functions. Such analyses rely on a neutrality function that predicts the expected phenotype for double mutants based on the phenotypes of the two individual non-interacting mutations. In this study, we examine fitness, the most fundamental cellular phenotype, through an analysis of the extensive colony growth rate data available for budding yeast. Our results confirm that the Product neutrality function describes the colony growth rate, or fitness, of a double mutant as the product of the fitnesses of the individual single mutants. This Product neutrality function performs better than Additive or Minimum neutrality functions, supporting its continued use in genetic interaction studies. Furthermore, we explore the mechanistic origins of this neutrality function by analyzing two theoretical models of cell growth. We perform a computational genetic analysis to show that in both models, the Product neutrality function naturally emerges due to the interdependence of cellular processes that maximize growth rates. Thus, our findings provide mechanistic insight into how the Product neutrality function arises and affirm its utility in predicting genetic interactions affecting cell growth and proliferation.\n\n## Introduction\n\nGenetic analysis has been one of the primary methods scientists use to understand how a cell works. One way this is done is through the analysis of genetic interactions, in which the phenotypic effects of mutations are analyzed both as single mutations and then together as double mutations in the same cell. Genes are then said to interact if their combination produces phenotypes that are different from what is predicted from a generic model combining two non-interacting mutations (Phillips, 2008; Beltrao et al., 2010; Costanzo et al., 2019). In other words, a genetic interaction is identified when combining multiple mutations yields something unexpected. Yet, what should we expect when combining mutations in such a complex system as a living cell?\n\nThe expected phenotype of a double mutant predicted from the two single mutants\u2019 phenotypes is defined by the neutrality function. In this way, the neutrality function calculates the expected phenotype of a double-mutant strain carrying two non-interacting mutations (Beltrao et al., 2010; Mani et al., 2008). If the double-mutant phenotype deviates significantly from that given by the neutrality function for two specific mutations, they are then said to interact. A lot of care, therefore, needs to be taken in selecting the appropriate neutrality function, which depends on the context and phenotype to be examined (Phillips, 2008). The neutrality function should be defined such that most mutations are categorized as non-interacting. If the neutrality function were not defined this way, the majority of genes would appear to interact, leaving only a few genes with distinct functions. However, decades of cell biological and structural biological analysis have identified specific functions for many genes and their associated proteins. For example, the components of the ribosome or RNA polymerase have the specific task to form these complexes, and metabolic enzymes catalyze specific biochemical reactions. This implies that a judiciously selected neutrality function should predict most double-mutant fitnesses from the single-mutant fitnesses since any two randomly selected genes should be unlikely to interact. Recent technological advances have enabled the screening of the proliferation of single and double genetic mutants at increasingly larger scales in E. coli (Typas et al., 2008; Butland et al., 2008; Babu et al., 2014), fission yeast (Roguev et al., 2008; Dixon et al., 2008), C. elegans (Lehner et al., 2006; Byrne et al., 2007), and human cells (Horlbeck et al., 2018). In budding yeast, Synthetic Genetic Arrays (SGAs) Tong et al., 2001 have generated the largest and most comprehensive such datasets (Baryshnikova et al., 2010b; Costanzo et al., 2010; Costanzo et al., 2016).\n\nThe most fundamental phenotype of a cell is its fitness, namely how quickly it grows and proliferates in a given environment. Here, we focus on this property and define fitness as the relative exponential growth rate with respect to that of a wild-type cell. For yeast proliferation, single-mutant fitnesses are usually assumed to combine according to a Product neutrality function, namely that the fitness of the double mutant is the product of the fitnesses of the single mutants (Mani et al., 2008). This neutrality function was shown to better predict double-mutant fitnesses than an Additive neutrality function, where the differences between wild-type and mutant fitnesses were simply added together, and a Minimum neutrality function, where the double-mutant fitness was taken as the lowest fitness of the two single-mutant strains. However, this analysis was based on older, less extensive data, which raises the question of whether this neutrality function remains accurate when the large amount of more recently collected yeast data is also considered. And, if so, then why does the Product neutrality function accurately describe double-mutant fitnesses? In other words, what are the properties of the underlying system controlling cell growth and proliferation that result in a Product neutrality function for mutant fitnesses?\n\nIn this paper, we conduct an in-depth analysis of recent yeast double-mutant datasets and show that they support the Product neutrality function. Moreover, we analyze two theoretical models of growth of increasing complexity (Scott et al., 2010; Wei\u00dfe et al., 2015) and find that the Product neutrality function emerges naturally from both growth models, albeit with small deviations specific to each. Taken together, our work supports the use of the Product neutrality function to model genetic interactions in the regulation of cell growth and gives mechanistic insight into its origin.\n\n## Results\n\n### High-throughput gene perturbation experiments in budding yeast support a Product neutrality function for double-mutant fitness\n\nTo test the general validity of neutrality functions for mutations affecting cell proliferation, we sought to examine the most extensive such dataset. In the SGA dataset, over 20 million single- and double-mutant budding yeast strains were generated. Then, the growth rates of their colonies were measured in SGAs (Tong et al., 2001; Baryshnikova et al., 2010b; Costanzo et al., 2010; Costanzo et al., 2016). Each mutant\u2019s fitness was then defined as this measured growth rate normalized by that of the wild-type strain, enabling a consistent comparison across thousands of genotypes. Next, we use SGA datasets of growth of single- and double-mutant cells for pairs of mutations to test specific neutrality functions.\n\nHere, we followed (Mani et al., 2008) and began our examination using the Product, Additive, and Minimum neutrality functions (see Figure 1A). The Product neutrality function predicts that the fitness of a double mutant is the product of the fitnesses of the two corresponding single mutants, while the Additive neutrality function proposes that the difference between the double-mutant and wild-type fitnesses is the sum of the differences between the two mutant and wild-type fitnesses. The Minimum neutrality function proposes that the fitness of the double mutant is equal to the fitness of the least fit single mutant. Effectively, these neutrality functions express different forms of modularity or independence between cellular processes. The Product model suggests that a mutation\u2019s effect depends on the fitness of the background strain without that mutation, while a mutation\u2019s effect is independent of the fitness of the background strain in an Additive model. The Minimum model suggests that there is some rate-limiting process whose slow time scale dominates the determination of cell growth so that more minor mutations affecting other processes have no additional effect.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/105265/elife-105265-fig1-v1.jpg)\n\n**Figure 1.:** (A) Budding yeast mutant fitness is defined as the colony growth rate relative to that of wild-type cells. Schematic illustration of epistasis in growth rate and of different laws proposed in the literature. \u03bb denotes the growth rate, and W the fitness. (B\u2013D) For each double mutant, we plot the residual of the fitness predicted from the indicated model against the fitness of the fittest of the two separate single mutants (maximum single-mutant fitness). Dots indicate the median for 10 equally spaced bins between 0.5 and 1. (E) Box plots for the distributions of the residuals for the three neutrality functions as a function of the maximum single-mutant fitness. A thick line denotes the median, and boxes denote the 25th and 75th percentiles of the distributions. The data plotted here represents a subset of the entire Synthetic Genetic Array (SGA) dataset, corresponding to the Deletion Mutant Array (DMA) at 30\u00b0C.Appendix 1\u2014figures 1 and 2 report results for the other subdatasets.\n\nTo compare the different neutrality functions with double-mutant fitnesses, we first perform some minor pre-processing of the SGA data (see Methods for details). We note that these data are from combinations of gene deletions, temperature-sensitive alleles, and hypomorphic mutants (see Methods). Moreover, cells were growing quickly on the relatively rich synthetic complete media containing glucose (Baryshnikova et al., 2010a). For these reasons, increasing the growth rate is difficult, and we are in the regime where mutations generally decrease fitness. This contrasts with evolution experiments, where fitness increases very slowly through the gradual accumulation of mutations, which likely exhibit different neutrality functions from those we consider here (Phillips, 2008; Bakerlee et al., 2022; Johnson et al., 2023). Consistent with previous work (Mani et al., 2008), we see that the Product neutrality function better predicts double-mutant fitnesses as a function of the single-mutant fitnesses over a broad range of fitness defects (Figure 1, Appendix 1\u2014figure 1). Indeed, the median residual for the Product neutrality function remains very close to zero even for highly deleterious mutations, while it significantly deviates for the other two. For instance, for a maximum single-mutant fitness of 72%, the median residual is \u22120.8% for the Product neutrality function, while they are \u221216.8% and 9.8% for the Minimum and Additive neutrality functions, respectively. For smaller values of the maximum single-mutant fitness, the median residual remains virtually unchanged for the Product neutrality function, while it deviates even further from zero for the other two. However, we note that significant variation around the median residual remains. At a maximum single-mutant fitness of 72%, the interquartile range lies between 8% and 10% depending on the neutrality function considered.\n\nThis observation that the Product neutrality function best describes double mutant fitnesses holds for mutations to essential and nonessential genes, and across different temperature conditions (see Methods and Appendix 1\u2014figures 1 and 2). The Minimum neutrality function generally predicts fitnesses that are too high, while the Additive neutrality function generally predicts fitnesses that are too low.\n\n### The Product neutrality function describes interactions between genes associated with two distinct biological processes\n\nWhile the Product neutrality function predicts double-mutant fitnesses better than the other ones we considered, there remains significant variation (residuals) in the data. This suggests that mutations affecting different functional parts of the cell might be following different neutrality functions. To determine whether this is the case, we analyze the distribution of epistasis residuals for pairs of distinct biological processes and their associated genes. We use the Gene Ontology (GO) dataset (Ashburner et al., 2000, Aleksander et al., 2023) and, for each biological process, extract the genes in the SGA dataset that are associated with this process (see Methods for details). In particular, we define inter-process gene pairs as pairs of gene perturbations in two distinct biological processes identified using GO annotations (Figure 2A). Similarly, intra-process pairs are defined as pairs of gene perturbations in the same GO-annotated biological process (Appendix 1\u2014figure 3A). Then, for each pair of GO-defined processes, we compute the residuals for the neutrality functions for all pairs of mutations where one mutation is associated with one process and the second mutation with the other. For each neutrality function and pair of GO processes, we extract the median residual as a function of the largest single-mutant fitness defect (a proxy for mutation severity). This shows that, while imperfect, the Product neutrality function is a good description of typical interactions, while the Additive and Minimum neutrality functions have large, systematic residuals (Figure 2B\u2013D). In general, this result is expected and consistent with the use of this type of genetic analysis to define mutations in genes from different biological processes as not interacting. Moreover, we find that this is not only generally true, but also true for each specific pair of processes that we consider. In other words, we do not find evidence that there are particular pairs of processes whose mutations significantly deviate from the Product neutrality function or more closely follow an Additive or Minimum neutrality function.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/105265/elife-105265-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic illustration of the analysis process. We first select two different Gene Ontology (GO) biological processes and extract the double mutants in the Synthetic Genetic Array (SGA) dataset associated with them. Then, we compute the median residual for each pair of biological processes and each neutrality function. (B\u2013D) Median residual for the Minimum, Product, and Additive neutrality functions as a function of the maximum single-mutant fitness. Each line denotes mutations to a different pair of distinct GO biological processes. The majority of biological process pairs closely follow the Product model.\n\nWhile mutations associated with different biological processes have fitnesses generally predicted by the Product neutrality function, since they generally do not interact, this may not be the case for mutations associated with the same process. For example, if two mutations break the same protein complex, one would not expect any additional drop in fitness for the double mutant. Consistent with this notion, for gene pairs in the same biological process, we observe more deviations as well as significantly larger residuals (Appendix 1\u2014figure 3B\u2013D). The quantitative comparison of the two types of interactions reveals that large residuals (both positive and negative) are significantly more likely for two mutations categorized as being in the same GO process (Appendix 1\u2014figure 3E, F).\n\nWe note that the SGA dataset has already been used to assign a biological process to each gene (Costanzo et al., 2016). For each mutation, a vector of residuals for the Product neutrality function with all other mutations was generated. Then, a Pearson correlation coefficient was calculated for each pair of these vectors. The reasoning was that mutations affecting the same biological process should have similar genetic interaction profiles, which was found to be the case. This then allowed the clustering of groups of correlated mutations, which were named using prior knowledge of many genes in each cluster. That this analysis generally works, that is, the gene clusters have discernible biological meaning, can be viewed as further support of the Product neutrality function.\n\n### A bacterial growth model partially supports the Product neutrality function\n\nHaving verified empirically that the Product neutrality function is supported by the latest data for cell proliferation, we now turn our attention to its origins. Addressing this question requires some mechanistic model of biosynthesis. However, most mechanistic models of growth apply directly to single cells in rich nutrient conditions, which may not directly apply to the SGA measurements of colony expansion rates. In particular, colony growth has been shown to follow a biphasic pattern (Meunier and Choder, 1999). A first exponential phase is followed by a slower linear phase as the colony expands. Previous modeling and empirical work indicates that this second linear expansion rate reflects the underlying exponential growth of cells in the periphery of the colony (Pirt, 1967; Gray and Kirwan, 1974; Baryshnikova et al., 2010a; Gandhi et al., 2016; Zackrisson et al., 2016; Miller et al., 2022). More precisely, mathematical models show the linear colony-size expansion rate is directly proportional to the square root of the exponential growth rate under non-limiting conditions. Intuitively, this relationship arises because colony growth is dominated by the expansion of the population of cells in an annulus at the colony border that are exposed to rich nutrient conditions. These cells expand at a rate similar to the exponential rate of cells growing in a rich nutrient liquid culture. In contrast, the cells in the interior of the colony experience poor nutrient conditions, grow very slowly, and do not contribute to colony growth.\n\nThis intimate relationship between both proliferation rates allows us to explore the origin of the Product neutrality function in mechanistic models of cell growth. Indeed, if colony-based fitnesses follow a Product model, then\n\n$$\nW_{xy}^{c}\u223cW_{x}^{c}W_{y}^{c}\u21d4\\frac{\\lambda_{xy}^{c}}{\\lambda_{WT}^{c}}\u223c\\frac{\\lambda_{x}^{c}\\lambda_{y}^{c}}{(\\lambda_{WT}^{c})^{2}},\n$$\n\nwhere the superscript $c$ indicates colony-based values for the fitness $W$ and the growth rate \u03bb. Taking into account the relationship between single-cell exponential growth rates and colony growth rates, we can write\n\n$$\n\\lambda^{c}\u221d\\sqrt{\\lambda^{l}},\n$$\n\nwhere the superscript $l$ denotes liquid cultures. Combining these expressions, we obtain\n\n$$\n\\frac{\\sqrt{\\lambda_{xy}^{l}}}{\\sqrt{\\lambda_{WT}^{l}}}\u223c\\frac{\\sqrt{\\lambda_{x}^{l}}\\sqrt{\\lambda_{y}^{l}}}{\\sqrt{\\lambda_{WT}^{l}}^{2}}\u21d2W_{xy}^{l}\u223cW_{x}^{l}W_{y}^{l}.\n$$\n\nIn other words, from the perspective of the Product neutrality function, fitnesses based on colony expansion rates are equivalent to fitnesses based on single-cell exponential growth rates. The prevalence of the Product neutrality model\u2014both in the SGA data and in previous studies on datasets from liquid cultures (Mani et al., 2008; Jasnos and Korona, 2007; Onge et al., 2007)\u2014encourages the exploration of its origin in mechanistic models of cell growth.\n\nWhile models of entire cells do exist, these models are complex and computationally intensive (Onge et al., 2007; Karr et al., 2012). This makes probing and extracting explanatory information from these models difficult. We therefore sought to analyze simpler, more tractable, lower-dimensional models of cell growth. Coarse-grained models offer an appealing alternative for probing the fundamental principles of metabolism and growth (Scott et al., 2010; Wei\u00dfe et al., 2015; Roy et al., 2021; Balakrishnan et al., 2022; Chure and Cremer, 2023; Calabrese et al., 2023). Rather than representing as many reactions as possible, they provide an integrated representation of generic processes in the cell. Their simplicity and low dimensionality make them easy to compare with empirical measurements and to examine for potential explanatory relationships.\n\nThe reduced, tractable model of cell growth that we will consider first was developed for E. coli (Scott et al., 2010; Scott and Hwa, 2011; Figure 3A). While this model was developed for E. coli bacteria and validated using data from this organism, there is nothing specific to prokaryotes in the model. Experimental measurements in other organisms suggest that the observations leading to this model, including that the cellular ribosome fraction increases with growth rate, are in fact generic and also seen in the yeast S. cerevisiae (Metzl-Raz et al., 2017; Elsemman et al., 2022; Xia et al., 2022). In its simplest form, the model defines growth as resulting from two sets of processes, metabolic and translational, that interact in a linear pathway. The metabolic sector provides precursors that are then assembled into proteins by the translational sector, and the flux through each sector is determined by the amount of proteins in that sector. For optimal growth, in which no proteins are wasted, the flux through the metabolic sector is equal to the flux through the translational sector so that\n\n$$\n\\lambda=\u03ba_{t}\u03d5_{t}=\u03ba_{n}\u03d5_{n},\n$$\n\n![Figure 3.](https://cdn.elifesciences.org/articles/105265/elife-105265-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the bacterial growth model by Scott and Hwa. Growth rate is defined by the translation flux, which is itself equal to the metabolic flux. The cell partitions its proteome so as to maximize growth rate. (B) Mutations are modeled such that they affect either of the parameters, separately. Values of $\u03ba_{t}$ and $\u03ba_{n}$ in the mutant are indicated with primes and are sampled from a uniform distribution from 0 to their value in wild-type cells. indicates the corresponding growth rate. The analytical expression of the double-mutant fitness consists of the Product model with a perturbation. (C\u2013E) For each sampled double mutant, we plot the residual of the fitness predicted from the indicated model against the fitness of the fittest of the two separate single mutants (maximum single-mutant fitness). Dots indicate the median for 10 equally spaced bins between 0.5 and 1. (F) Box plots for the distributions of the residuals for the three models and the model in (C) as a function of the maximum single-mutant fitness. A thick line denotes the median, and boxes denote the upper and lower quartiles of the data. The analytical model in (B), named Scott\u2013Hwa and shown in red, is exact.\n\nwhere the flux through translation and metabolic sectors is characterized by the parameters $\u03ba_{t}$ and $\u03ba_{n}$ multiplying the fraction of the proteome devoted to ribosomes and metabolic proteins, $\u03d5_{t}$ and $\u03d5_{n}$, respectively. These fluxes directly determine the growth rate of the cell, $\\lambda$. The total proteome is fixed and is partitioned into metabolic, translational, and \u2018other\u2019 sectors of the cell so that\n\n$$\n1=\u03d5_{t}+\u03d5_{n}+\u03d5_{o}\n$$\n\nwhere $\u03d5_{o}$ is the fraction of the cell devoted to other housekeeping functions. This set of algebraic equations can be solved for the optimal growth rate\n\n$$\n\\lambda=(1\u2212\u03d5_{o})\\frac{1}{1/\u03ba_{t}+1/\u03ba_{n}}.\n$$\n\nWe can then model a mutation as a perturbation to these parameters that decreases the growth rate since these are the types of mutations that dominate the budding yeast data (Figure 3B). Single mutants have either $\u03ba_{t}$ or $\u03ba_{n}$ perturbed, while double mutants have both parameters perturbed. Given that we are concerned with two non-interacting mutations, we do not consider the cases where both mutations affect the same parameters. Indeed, one expects two mutations affecting the same parameter to interact. These combinations are therefore inappropriate to study the emerging neutrality functions from growth models, and we do not consider them in this paper.\n\nWe can also consider mutations to $\u03d5_{o}$, which could be associated with deleting a gene encoding a protein that is not required for the given growth condition. This would serve to increase the cell growth rate because now a larger fraction of the proteome could be devoted to metabolism and translation. In this case, a mutation to $\u03d5_{o}$ and another to either $\u03ba_{t}$ or $\u03ba_{n}$ would combine exactly multiplicatively so that\n\n$$\nW_{xy}=W_{x}W_{y}.\n$$\n\nHowever, in the generally rich media conditions the SGA experiments were done, there is no evidence that any gene deletion causes an increase in cell growth rate so we do not consider this type of mutation further. We therefore ignore the multiplicative factor $(1\u2212\u03d5_{o})$ and analyze the following expression for growth rate\n\n$$\n\\lambda=\\frac{1}{1/\u03ba_{t}+1/\u03ba_{n}}.\n$$\n\nWe can then analytically derive a closed-form solution for the double-mutant fitness as a function of the single-mutant fitnesses (Figure 3C; see SI for details). Under this model, which we call Scott\u2013Hwa in reference to the authors of the initial work, we observe that the Product neutrality function fits the mutational analysis of the Scott\u2013Hwa model better than the Additive or Minimum neutrality functions (Figure 3D-G).\n\nWe understand the better performance of the Product neutrality function to arise from a type of feedback regulation that ensures that the flux through all sectors is equal. This effectively makes the mutations to the metabolic and translational sector interdependent, despite their a priori independent functions. In this model, these sectors are coupled because the cell is assumed to have a feedback process to optimize growth rate under any perturbation to its parameters. For instance, in the case of a mutation that decreases the metabolic capacity $\u03ba_{n}$, this feedback drives an increase in the fraction of metabolic proteins at the expense of translational proteins such that the growth rate is maximized under those new parameters. If this feedback were absent, then the growth rates of the double mutant would be significantly lower. In that case, the double-mutant fitness actually follows a Minimum neutrality function (see Appendix 1 and Appendix 1\u2014figure 4). Finally, we also note that the Product neutrality function does not accurately predict model fitnesses well for beneficial mutations\u2014that is, mutations that increase growth rate (see Appendix 1\u2014figure 5). This is because the deviations from the Product neutrality function in the mathematical derivation for the double-mutant fitness in Figure 3 can diverge for beneficial mutations (e.g. $W_{x}=W_{y}=2$). When the Scott\u2013Hwa model\u2019s growth-optimizing feedback operates in the context of beneficial mutations, as one process is made more efficient, proteomic resources are allocated to accelerate other processes in the cell. In this way, improving the efficiency of one process will indirectly benefit other processes, leading to compound effects such that double-mutant fitnesses are higher than any of the three models predicts for beneficial mutations.\n\nWe note that in this analysis, we do not aim to replicate the statistics of mutations in the SGA dataset, where mutations to either sector could be statistically rarer or more frequent than the other. Instead, we here aim to analyze how mutations to independent parameters governing cell growth combine considering the simplest model with two sectors and their corresponding parameters.\n\n### The Product neutrality function accurately predicts fitness for many pairs of parameters in a more complex cell growth model\n\nWhile the Scott\u2013Hwa model has proven successful for predicting many aspects of bacterial growth, it remains very simple. Therefore, we sought to explore a more complex model that explicitly incorporates more aspects of biosynthesis. Here, we consider the model of Wei\u00dfe et al., 2015, which incorporates nutrient intake, transcription, competitive binding between mRNAs and ribosomes, and translation, all of which are mediated by associated enzymes and a limiting cellular \u2018energy\u2019 (Figure 4A). The Wei\u00dfe model decomposes cell growth into multiple steps (see supporting material for a full model description). External nutrients are first imported into the cell and then metabolized into a cellular \u2018energy\u2019. Both of these steps are catalyzed by associated transport and metabolic enzymes according to Michaelis\u2013Menten kinetics. Transcription and translation are then activated by this generated \u2018energy\u2019, also via Michaelis\u2013Menten kinetics. In particular, the model incorporates different transcription rates for ribosomal and non-ribosomal mRNAs. Different mRNAs then compete for free ribosomes to form a ribosome\u2013mRNA complex. This mRNA competition is modeled using mass action kinetics with specified binding and unbinding rates. Four types of proteins are explicitly modeled as a product of translation: transport proteins, metabolic enzymes, ribosomal proteins, and so-called q-proteins which support housekeeping functions much like the \u2018other\u2019 proteins in the Scott\u2013Hwa model.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/105265/elife-105265-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of the growth model from Wei\u00dfe et al., 2015. This model includes nutrient intake, metabolism, transcription, and translation. (B) Schematic of the mutational analysis. For each pair of parameters \u03b1 and \u03b2, mutations are modeled such that they affect either of the parameters, separately. Then, the median residual is computed for each neutrality function and they are subsequently reported for every pair of parameters considered. For each parameter pair, we report the mean deviation of the simulated double mutants from (C) the Product neutrality function and (D) the analytical expression of the double-mutant fitness under the Scott\u2013Hwa model. Only parameter pairs corresponding to two different biological processes are considered. Those corresponding to the same process are grayed out. Parameter pairs involving translation ($g_{max},K_{p}$) are the ones described best by the Scott\u2013Hwa model, while the others are better described by the Product neutrality function.\n\nTo perform a mutational analysis of the Wei\u00dfe model, we first identified the parameters in the model that can reasonably be expected to change through a gene perturbation (see supporting material for details). For instance, we assume that some parameters, such as the maximum nutrient import rate, could be impacted by a gene perturbation, while other parameters, such as the average gene length in the genome, could not. This led to the identification of 9 easily interpreted parameters whose mutation could negatively impact the cell growth rate and correspond to 28 parameter pairs associated with different biological processes. We then performed a similar analysis as we did for the Scott\u2013Hwa model. Namely, we constructed mutants for each pair of parameters by rescaling the values of the original parameters by a number randomly sampled between 0 and 1 (see Methods for details). We then analyzed the statistics of the epistasis coefficients for the neutrality functions that we considered so far (Figure 4B).\n\nOur mutational analysis of the Wei\u00dfe model revealed several striking observations. First, the Product neutrality function is generally better than the Additive or Minimal neutrality functions at describing the mutational results. However, we observe a range of responses and can identify two key subpopulations of parameter pairs. The subset of parameter pairs involving protein translation follows the Scott\u2013Hwa model very closely (Figure 4D). This is not entirely surprising, as the Wei\u00dfe model is an extension of the Scott\u2013Hwa model and incorporates a similar global feedback optimizing cell growth and a competition for resources. On the other hand, another subset of parameter pairs follows the Product neutrality function even more closely. These parameter pairs involve mutations to the other sectors, including the transport, metabolism, and transcription sectors (Figure 4C). This raises the question of why some parameter pairs more closely follow the Product neutrality function than others.\n\n### Nonlinear kinetics drive deviations from the Product neutrality function in the Wei\u00dfe model for cell growth\n\nTo address the question as to what drives deviations from the Product neutrality function in our genetic analysis of the Wei\u00dfe model, we took an analytical approach. We examined the dependence of the growth rate on the parameter pairs exhibiting small deviations from the Product neutrality function. To do this, we first extracted a closed form expression that models the growth rate \u03bb and its dependence on two mutated parameters \u03b1 and \u03b2 (Figure 5A; see supporting material). While only approximate, this derivation represents the data appropriately for members of this subset of parameters (see Appendix 1\u2014figure 7). There are two striking features in this derivation. First, the growth rate \u03bb has an explicit dependence on the two parameters \u03b1 and \u03b2, when \u03b1 and \u03b2 are selected from the subset of parameters governing metabolism and transport sectors. Second, the amplitude of deviation from the Product neutrality function is governed by an additional parameter, \u03b3, which is the inverse of the Michaelis\u2013Menten constant giving the transcription rate as a function of the cellular \u2018energy\u2019. Thus, when $\\gamma$ is small, transcription is a less efficient process that is then linearly related to the cellular \u2018energy\u2019 available. When $\\gamma$ is larger, transcription is saturated and performed at a rate unrelated to the available \u2018energy\u2019. As we decrease $\\gamma$, we observe that the Product neutrality function is a better and better approximation (Figure 5C). Importantly, the intuition provided by the analytical approximation extends to multiple pairs of parameters (see Appendix 1 and Appendix 1\u2014figure 8). Taken together, our analysis of the Wei\u00dfe model shows how the Product neutrality function naturally arises for many different parameter pairs and how deviations from it can be driven by nonlinear effects, such as those that can emerge from Michaelis\u2013Menten kinetics.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/105265/elife-105265-fig5-v1.jpg)\n\n**Figure 5.:** (A) A subset of parameter pairs we analyzed follows the Product model very closely. We derived an analytical approximation of the growth rate and the double-mutant fitness for these pairs and found that the deviation from the product law is governed by nonlinear kinetics. (B) In the case of the parameter pair $(v_{t},n_{s})$, we show that the deviation from the Product model is driven by the Michaelis\u2013Menten constant $\\theta_{x}$ associated with transcription (see Supporting Information). (C) Tuning the value of \u03b3 impacts how good of an approximation the Product neutrality function is for this and other parameter pairs (see text). This analysis validates the analytical approximation and highlights how nonlinear kinetics, in this case Michaelis\u2013Menten kinetics, can drive deviations from the Product neutrality function.\n\n## Discussion\n\nCell growth and proliferation are fundamental to cell biology and have been subject to extensive genetic analysis aiming to understand the underlying regulatory network. Such genetic analysis often aims to identify interactions between mutations through the combination of individual mutations in a double-mutant cell. If the double-mutant proliferates at an unexpected rate, the mutated genes are considered to interact. This, of course, raises the question as to what is the expected rate of proliferation for a cell containing both mutations given the proliferation rate of a cell containing only one of the individual mutations. By analyzing a high-throughput dataset of interactions of gene perturbations in budding yeast (Costanzo et al., 2010; Costanzo et al., 2016), we found that single-mutant fitnesses tend to combine multiplicatively, consistent with earlier work (Mani et al., 2008).\n\nAfter establishing that the fitness of a double mutant is expected to be approximately the product of the fitness of the individual mutants, namely, the Product neutrality function, we sought to determine if this was also a feature of models of cell growth. If so, then what underlying mechanisms present in these models give rise to this Product neutrality function? Our analysis complements previous, more abstract theoretical attempts at understanding the origin of the Product neutrality function that are not based on any specific model of cell growth (Chiu et al., 2012). Indeed, we found that the Product neutrality function best fits the simulated double-mutant fitnesses despite deviations that depend on the specific parameter pairs and the particular model considered.\n\nThat the Product neutrality function fits the budding yeast data and cell growth models better than the Additive and Minimum neutrality functions has important implications for the underlying network controlling cell growth and proliferation. On the one hand, the Minimum neutrality function implies that the double-mutant fitness is set by the most deleterious mutation so that the process this gene is involved in becomes rate limiting for cell growth. Clearly, cell growth does not operate this way, likely because the underlying processes are interconnected. Mutations impairing protein translation impact synthesis of all the proteins in the cell so that other processes, like transcription or surface transport, are also affected. As the cell readjusts its machinery to ensure optimal use of resources, interconnected processes are impacted through a redistribution of cellular resources. On the other hand, the Additive neutrality function implies that a mutation has the same absolute effect on the proliferation rate regardless of the presence of another mutation. This is also clearly not the case as the Additive neutrality function consistently predicts fitnesses below those observed in the data. In the models, this is due in part to growth-supporting feedback that reapportions the proteome. In reality, this may reflect the presence of the general stress response which supports cells in response to genetic or environmental perturbations limiting their growth rate (Gasch et al., 2000). In this way, the Product neutrality function is a reasonable intermediate model between Minimum and Additive that incorporates\u2014albeit approximately\u2014effects such as growth-optimizing feedback and is consistent with the phenomenon of diminishing returns or increasing cost epistasis (Reddy and Desai, 2021). Moreover, our theoretical analysis gives insight into the mechanistic underpinning of the Product neutrality function. In our analyses, a product of the single-mutant growth rates naturally emerges in the analytical treatment of both theoretical models that we consider, albeit with deviation terms that depend on the specific model and simplifying assumptions.\n\nTaken together, our work here constitutes a first step toward understanding the structure of interactions inherent in cell growth models. While we focused on coarse-grained models for their simplicity and mechanistic interpretability, they might be too simple to effectively model large double-mutant datasets and the resulting double-mutant fitness distributions. For instance, it is not possible to differentiate between multiple types of growth rate perturbations impacting the same sector, as they would all be modeled through a limited number of parameters (Metzl-Raz et al., 2017). We therefore expect the combination of high-throughput genetic data with the analysis of larger-scale models, for instance based on Flux Balance Analysis, Metabolic Control Analysis, or whole-cell modeling, to lead to important complementary insights regarding the regulation of cell growth and proliferation (Karr et al., 2012; Oftadeh et al., 2021; Segr\u00e8 et al., 2005; He et al., 2010; Orth et al., 2010; Kacser and Burns, 1973; Szathm\u00e1ry, 1993; Dykhuizen et al., 1987; de Vienne et al., 2023; Kryazhimskiy, 2021) We also believe that theoretical exploration of fitness landscapes will shed light on the underlying structure of growth and metabolism networks (Reddy and Desai, 2021; Guo et al., 2019; Boffi et al., 2023). In addition to larger-scale models, we see the refinement of the measurement of cell growth rates as a path forward to a better understanding of its regulation (MacLean, 2010). While we showed here that the Product neutrality function fits the data well for deleterious mutations, we anticipate that there are significant and meaningful deviations that are currently obscured by experimental noise. Similarly, large-scale measurements of the impacts of beneficial mutations will be instrumental in testing the validity of the Product neutrality function in this other regime. From our modeling efforts, we anticipate that such measurements could give important insights into the underlying genetic network regulating growth and proliferation.\n\n## Methods\n\n### Analysis of the SGA dataset\n\nThe complete SGA dataset was accessed on the cell map webpage. In the SGA genetic interaction dataset, a set of query mutant strains is crossed to an ordered array of mutants.\n\nThere are two sets of query mutants. The first one consists of a mix of nonessential deletion mutant strains and of temperature-sensitive alleles of essential genes. The second one is a set of mutants carrying hypomorphic, Decreased Abundance by mRNA Perturbation (DAmP) alleles of essential genes.\n\nThere are also two types of arrays. The Deletion Mutant Array (DMA) denotes deletions to a set of nonessential genes, while the Temperature Sensitive Array (TSA) contains a mix of essential and nonessential genes.\n\nBoth sets of query mutants are crossed to either type of array, at two different temperature conditions, namely 26 and 30\u00b0C. The analysis of Figure 1 reports the analysis of the first set of query mutants crossed to the DMA at 30\u00b0C. In Appendix 1\u2014figure 1, we report the same analysis for the first set of query mutants for the other array\u2013temperature combinations. In Appendix 1\u2014figure 2, we report the analysis for the DAmP set of query mutants in the different array\u2013temperature combinations.\n\nFor each subdataset\u2014that is, each combination of query mutants, array, and temperature condition\u2014the data is processed in the following steps. First, only deleterious mutations are kept. That is, we remove mutants having a fitness larger than 1. Second, we eliminate mutants where the Additive model predicts a negative fitness, that is, such that\n\n$$\nW_{x}+W_{y}<1,\n$$\n\nbecause in this case the prediction under the Additive neutrality function is negative ($W_{x}+W_{y}\u22121<0$). While we could have analyzed these datapoints with the other neutrality functions, we sought to analyze all neutrality functions on the same consistent dataset.\n\nFor the sake of clarity, the scatter plots in Figure 1 do not reproduce the entire dataset. Instead, the dataset is binned in 10 bins along the x-axis, and 500 values are sampled at random in that bin. However, the median lines on top of the scatter plots (e.g. Figure 1B\u2013D) as well as the box plots (e.g. Figure 1, Appendix 1\u2014figures 1 and 2) apply to the entire dataset.\n\n### Analysis of the GO biological processes\n\nThe analysis of GO biological processes is based on the Uniprot database. In this dataset, genes are associated with a series of GO biological processes. To analyze the behavior of the fitness of double mutants associated with different biological processes, we first selected the set of biological processes that were represented by a large enough number of single mutants in the SGA dataset. Arbitrarily, this limit was set at 50. This led to a limited number of 47 biological processes (and a maximum total of 1081 pairs), which we report in the section \u2018Analysis of GO biological processes\u2019. Naturally, as genes are potentially associated with multiple GO biological processes, this analysis sometimes leads to pairs of processes with genes in common. In this case, we discarded the pair so that we only consider biological process pairs that do not have any genes in common. This results in 685 pairs of biological processes that do not share any genes.\n\n### Mutational analysis of growth models\n\nA mutation is modeled as a perturbation of a parameter that decreases the growth rate. For a given parameter \u03b1, we model a perturbation as $\\alpha^{\u2032}=\\theta\\alpha$, where \u03b8 is a random variable uniformly distributed in $[0,1]$. When estimating the impact of the parameter \u03b3 in the Wei\u00dfe model (see section \u2018Nonlinear kinetics drive deviations from the Product neutrality function in the Wei\u00dfe model for cell growth\u2019), we perform a mutational analysis as described above for different values of the parameter \u03b3 and collect the median residual.\n",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "dcc84f2d-f0c1-416b-82c3-e51e5fa67c95",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anne-Florence Bitbol, Ecole Polytechnique Federale de Lausanne (EPFL) Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.105265.3.sa0](https://doi.org/10.7554/eLife.105265.3.sa0)\n\nThe paper addresses the question of gene epistasis and asks what is the correct null model for which we should declare no epistasis. By reanalyzing synthetic gene array datasets regarding single and double-knockout yeast mutants, and considering two theoretical models of cell growth, the authors reach the valuable conclusion that the product function is a good null model. While the justification of some assumptions is incomplete, the results have the potential to be of value to the field of gene epistasis.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105265.3.sa1](https://doi.org/10.7554/eLife.105265.3.sa1)\n\nSummary\n\nDetecting unexpected epistatic interactions between multiple mutations requires a robust null expectation-or neutral function-that predicts the combined effects of multiple mutations on phenotype based on the individual effects of single mutations. This study evaluated the relevance of the product neutrality function, where double-mutant fitness is represented as a multiplicative combination of single-mutant fitness in the absence of epistatic interactions. The authors used a recent large dataset on fitness, specifically yeast colony size, to analyze epistatic interactions.\n\nThe study confirmed that the product function outperformed other neutral functions in predicting double-mutant fitness, showing no bias between negative and positive epistatic interactions. Additionally, in the theoretical portion of the study, the authors employed a previously established theoretical model of bacterial cell growth to simulate growth rates of both single- and double-mutants under multiple parameters. The simulations similarly demonstrated that the product function was superior to other functions in predicting the fitness of hypothetical double-mutants. Based on these findings, the authors concluded that the product function is a robust tool for analyzing epistatic interactions in growth fitness and effectively reflects how growth rates depend on the combination of multiple biochemical pathways.\n\nStrength\n\nBy leveraging a previously published large dataset of yeast colony sizes for single- and double-knockout mutants, this study validated the relevance of the product function, which has frequently been used in genetics to analyze epistatic interactions. The confirmation that the product function provides a more reliable prediction of double-mutant fitness compared to other neutral functions is valuable for researchers analyzing epistatic interactions, particularly those working with the same dataset.\n\nNotably, this dataset has been previously used in studies exploring epistatic interactions with the product neutrality function. This study's findings affirm the validity of using the product function, which could enhance confidence in the conclusions drawn by those earlier studies. Consequently, both researchers utilizing this dataset and readers of prior research will benefit from the confirmation provided by this study.\n\nWeakness\n\nThis study contains several serious problems, primarily stemming from the following issues: ignoring the substantial differences in the mechanisms regulating cell growth between prokaryotes and eukaryotes and adopting an overly specific and unrealistic set of assumptions in the mutation model. Below, the details are discussed.\n\n(1) Misapplication of prokaryotic growth models\n\nThe mechanistic origin of the multiplicative model observed in yeast colony fitness is explained using a bacterial cell growth model. However, there is no valid justification for linking these two systems. The bacterial growth model, the Scott-Hwa model, heavily rely on specific molecular mechanisms, such as ppGpp-mediated regulation, which adjusts ribosome expression and activity during translation. In particular, this mechanism is critical to ensure growth-dependency of the fraction of ribosome in proteome in the Scott-Hwa model [https://doi.org/10.1111/j.1462-2920.2010.02357.x; https://doi.org/10.1073/pnas.2201585119]. Yeast cells lack this regulatory mechanism, making it inappropriate to directly apply bacterial growth models to yeast.\n\nThe Wei\u00dfe model is based on a larger set of underlying equations and involves more parameters than the Scott-Hwa model. In the original paper by Wei\u00dfe et al. (PNAS, 2015), however, the model parameters were fitted solely to experimental data from E. coli, and the model's applicability to yeast was never assessed. In summary, for neither the Scott-Hwa model nor the Wei\u00dfe model has it been demonstrated that the entire model quantitatively fits experimental data from yeast. A positive correlation between growth rate and RNA/protein ratio, often observed in yeast, supports only a limited portion of either model, and does not constitute validation of the models as a whole.\n\n(2) Overly specific assumptions in the theoretical model\n\nThe theoretical model assumes that two mutations affect only independent parameters of specific biochemical processes. However, this overly restrictive assumption weakens the model's validity in explaining the general occurrence of the multiplicative model in mutations. Furthermore, experimental evidence suggests limitations of this approach. For example, in most viable yeast deletion mutants with reduced growth rates, the expression of ribosomal proteins remained largely unchanged, contrary to the predictions of the Scott-Hwa model [https://doi.org/10.7554/eLife.28034]. This discrepancy highlights that the Scott-Hwa model and its derivatives cannot reliably explain mutants' growth rates based on current experimental evidence.\n\n(3) Limited reliability of the mechanistic origin of the multiplicative model\n\nThe authors seem to regard growth-optimizing feedback as the mechanistic origin of the multiplicative model. However, the importance of growth-optimizing feedback in explaining product neutrality heavily depends on the very specific framework of the Scott-Hwa model. As I pointed out above, the Scott-Hwa model is a bacterial growth model that considers only a narrowly defined set of biochemical reactions. Using such a narrow model to explore the mechanistic origin of product neutrality observed on a genome-wide scale appears to be inappropriate. Arguments based on either the Scott-Hwa model or the Wei\u00dfe model fail to account for the generality of product neutrality across diverse genetic perturbations. These models, in their current form, do not explain the broader patterns of product neutrality observed experimentally.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105265.3.sa2](https://doi.org/10.7554/eLife.105265.3.sa2)\n\nThe paper deals with the important question of gene epistasis, focusing on asking what is the correct null model for which we should declare no epistasis.\n\nIn the first part, they use the Synthetic Genetic Array dataset to claim that the effects of a double mutation on growth rate is well predicted by the product of the individual effects (much more than e.g. the additive model). The second (main) part shows this is also the prediction of two simple, coarse-grained models for cell growth.\n\nI find the topic interesting, the paper well written, and the approach innovative.\n\nComments on revisions:\n\nThe authors have adequately addressed the comments raised in the review below, and I find that the paper has improved.\n",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0dee80dd-ef36-46c5-9933-d96d003d42c5",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C1",
+      "claim": "Over 20 million single- and double-mutant budding yeast strains were generated in the SGA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SGA dataset, over 20 million single- and double-mutant budding yeast strains were generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the size of the SGA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "e08fd31c-ec18-4a4f-b357-96e5e42a4a61",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C2",
+      "claim": "Colony growth rates of mutant yeast strains were measured in SGAs (Tong et al., 2001; Baryshnikova et al., 2010b; Costanzo et al., 2010; Costanzo et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the growth rates of their colonies were measured in SGAs (Tong et al., 2001; Baryshnikova et al., 2010b; Costanzo et al., 2010; Costanzo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work describing the SGA methodology.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "0596bbd3-1a13-4a80-881d-4a32991c5c74",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C3",
+      "claim": "Each mutant's fitness was defined as the measured growth rate normalized by that of the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Each mutant's fitness was then defined as this measured growth rate normalized by that of the wild-type strain, enabling a consistent comparison across thousands of genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "f51679a0-b49c-46f5-aa4a-dd9cfd297ba7",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C4",
+      "claim": "The Product neutrality function predicts that the fitness of a double mutant is the product of the fitnesses of the two corresponding single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The Product neutrality function predicts that the fitness of a double mutant is the product of the fitnesses of the two corresponding single mutants, while the Additive neutrality function proposes that the difference between the double-mutant and wild-type fitnesses is the sum of the differences between the two mutant and wild-type fitnesses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the Product neutrality function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "3627f015-a817-4cd1-9aad-5ac5a7b70f0e",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C5",
+      "claim": "The Additive neutrality function proposes that the difference between the double-mutant and wild-type fitnesses is the sum of the differences between the two mutant and wild-type fitnesses.",
+      "claim_type": "EXPLICIT",
+      "source": "The Product neutrality function predicts that the fitness of a double mutant is the product of the fitnesses of the two corresponding single mutants, while the Additive neutrality function proposes that the difference between the double-mutant and wild-type fitnesses is the sum of the differences between the two mutant and wild-type fitnesses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the Additive neutrality function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "ecd90369-06f5-47c7-9355-e3539017e529",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C6",
+      "claim": "The Minimum neutrality function proposes that the fitness of the double mutant is equal to the fitness of the least fit single mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The Minimum neutrality function proposes that the fitness of the double mutant is equal to the fitness of the least fit single mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the Minimum neutrality function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "5504b23f-f63c-4e5b-a547-214f888c5b50",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C7",
+      "claim": "The Product neutrality function better predicts double-mutant fitnesses than the Additive or Minimum neutrality functions over a broad range of fitness defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Mani et al., 2008), we see that the Product neutrality function better predicts double-mutant fitnesses as a function of the single-mutant fitnesses over a broad range of fitness defects (Figure 1, Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in figures and consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "86177359-863d-4c52-b640-e24a9af44259",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C8",
+      "claim": "For a maximum single-mutant fitness of 72%, the median residual is \u22120.8% for the Product neutrality function.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, for a maximum single-mutant fitness of 72%, the median residual is \u22120.8% for the Product neutrality function, while they are \u221216.8% and 9.8% for the Minimum and Additive neutrality functions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific quantitative result from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "8c659ff5-b8ea-4218-a00d-d5b48172b1d4",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C9",
+      "claim": "For a maximum single-mutant fitness of 72%, the median residual is \u221216.8% for the Minimum neutrality function.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, for a maximum single-mutant fitness of 72%, the median residual is \u22120.8% for the Product neutrality function, while they are \u221216.8% and 9.8% for the Minimum and Additive neutrality functions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific quantitative result from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "ba916047-c93a-489b-a0ff-2f63e977f10e",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C10",
+      "claim": "For a maximum single-mutant fitness of 72%, the median residual is 9.8% for the Additive neutrality function.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, for a maximum single-mutant fitness of 72%, the median residual is \u22120.8% for the Product neutrality function, while they are \u221216.8% and 9.8% for the Minimum and Additive neutrality functions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific quantitative result from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "15d87cf7-c72e-4622-95fd-9cecf8397ab8",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C11",
+      "claim": "At a maximum single-mutant fitness of 72%, the interquartile range of residuals lies between 8% and 10% depending on the neutrality function considered.",
+      "claim_type": "EXPLICIT",
+      "source": "At a maximum single-mutant fitness of 72%, the interquartile range lies between 8% and 10% depending on the neutrality function considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific quantitative result describing variation in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "fa01db4c-5e47-4803-9a41-9667148ab12d",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C12",
+      "claim": "The Product neutrality function best describes double mutant fitnesses for mutations to essential and nonessential genes, and across different temperature conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation that the Product neutrality function best describes double mutant fitnesses holds for mutations to essential and nonessential genes, and across different temperature conditions (see Methods and Appendix 1\u2014figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis across different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "bfafbdc7-7221-40a1-be5f-e390c911c427",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C13",
+      "claim": "The Minimum neutrality function generally predicts fitnesses that are too high.",
+      "claim_type": "EXPLICIT",
+      "source": "The Minimum neutrality function generally predicts fitnesses that are too high, while the Additive neutrality function generally predicts fitnesses that are too low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General observation from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "f81f7374-ebb9-4f38-8b6e-ca7c9926a8fa",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C14",
+      "claim": "The Additive neutrality function generally predicts fitnesses that are too low.",
+      "claim_type": "EXPLICIT",
+      "source": "The Minimum neutrality function generally predicts fitnesses that are too high, while the Additive neutrality function generally predicts fitnesses that are too low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General observation from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "6082f66a-6c8c-457a-a105-45f23917e4b6",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C15",
+      "claim": "The Product neutrality function is a good description of typical interactions between genes associated with two distinct biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that, while imperfect, the Product neutrality function is a good description of typical interactions, while the Additive and Minimum neutrality functions have large, systematic residuals (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of GO-annotated biological processes shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "2a1be81c-c7e7-4c92-a71a-82b838655d88",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C16",
+      "claim": "The Additive and Minimum neutrality functions have large, systematic residuals for interactions between genes associated with two distinct biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that, while imperfect, the Product neutrality function is a good description of typical interactions, while the Additive and Minimum neutrality functions have large, systematic residuals (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of GO-annotated biological processes shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "29d1dafe-0d98-4db5-aa45-712fe9ff249e",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C17",
+      "claim": "For gene pairs in the same biological process, there are more deviations and significantly larger residuals from the Product neutrality function.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, for gene pairs in the same biological process, we observe more deviations as well as significantly larger residuals (Appendix 1\u2014figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "bb2d6b79-3ad9-442f-a132-1a1fcdc593e5",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C18",
+      "claim": "Large residuals (both positive and negative) are significantly more likely for two mutations categorized as being in the same GO process.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantitative comparison of the two types of interactions reveals that large residuals (both positive and negative) are significantly more likely for two mutations categorized as being in the same GO process (Appendix 1\u2014figure 3E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative comparison shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "69da7e59-6c91-45fa-b2bc-a60faa2213d0",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C19",
+      "claim": "Colony growth follows a biphasic pattern with a first exponential phase followed by a slower linear phase as the colony expands.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, colony growth has been shown to follow a biphasic pattern (Meunier and Choder, 1999). A first exponential phase is followed by a slower linear phase as the colony expands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "e97d20df-1a31-438f-9b36-eaa0c023da7f",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C20",
+      "claim": "The linear colony-size expansion rate is directly proportional to the square root of the exponential growth rate under non-limiting conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, mathematical models show the linear colony-size expansion rate is directly proportional to the square root of the exponential growth rate under non-limiting conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mathematical models of colony growth.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "5e05342a-9cb3-4987-b104-e9a76b2537fb",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C21",
+      "claim": "Colony growth is dominated by the expansion of the population of cells in an annulus at the colony border that are exposed to rich nutrient conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, this relationship arises because colony growth is dominated by the expansion of the population of cells in an annulus at the colony border that are exposed to rich nutrient conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation based on understanding of colony growth dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "e412e8c9-094b-4f69-a914-fb566ec16956",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C22",
+      "claim": "Cells in the interior of the colony experience poor nutrient conditions, grow very slowly, and do not contribute to colony growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the cells in the interior of the colony experience poor nutrient conditions, grow very slowly, and do not contribute to colony growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation based on understanding of colony growth dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "f534edad-d4ea-431b-ad49-c4a19a6df814",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C23",
+      "claim": "From the perspective of the Product neutrality function, fitnesses based on colony expansion rates are equivalent to fitnesses based on single-cell exponential growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, from the perspective of the Product neutrality function, fitnesses based on colony expansion rates are equivalent to fitnesses based on single-cell exponential growth rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from mathematical relationships between colony and single-cell growth rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "3fbf7fcf-1030-4fa5-ae37-b9f28683c4aa",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C24",
+      "claim": "The Scott-Hwa model defines growth as resulting from two sets of processes, metabolic and translational, that interact in a linear pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In its simplest form, the model defines growth as resulting from two sets of processes, metabolic and translational, that interact in a linear pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the Scott-Hwa model structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "56855976-6381-424e-86b9-333f8eb40137",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C25",
+      "claim": "In the Scott-Hwa model, the metabolic sector provides precursors that are then assembled into proteins by the translational sector.",
+      "claim_type": "EXPLICIT",
+      "source": "The metabolic sector provides precursors that are then assembled into proteins by the translational sector, and the flux through each sector is determined by the amount of proteins in that sector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the Scott-Hwa model structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "215b4ff3-0cf4-483e-a01e-78f43c8f7e5b",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C27",
+      "claim": "The Product neutrality function fits the mutational analysis of the Scott-Hwa model better than the Additive or Minimum neutrality functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this model, which we call Scott\u2013Hwa in reference to the authors of the initial work, we observe that the Product neutrality function fits the mutational analysis of the Scott\u2013Hwa model better than the Additive or Minimum neutrality functions (Figure 3D-G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis of the model shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "1b1d386a-f6d0-48f8-b74e-d3df130b4de7",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C28",
+      "claim": "The better performance of the Product neutrality function in the Scott-Hwa model arises from a type of feedback regulation that ensures that the flux through all sectors is equal.",
+      "claim_type": "EXPLICIT",
+      "source": "We understand the better performance of the Product neutrality function to arise from a type of feedback regulation that ensures that the flux through all sectors is equal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the model results based on the model's feedback mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "38742050-f4ed-489e-ba63-99a05101b2e0",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C29",
+      "claim": "In the Scott-Hwa model, metabolic and translational sectors are coupled because the cell is assumed to have a feedback process to optimize growth rate under any perturbation to its parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, these sectors are coupled because the cell is assumed to have a feedback process to optimize growth rate under any perturbation to its parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of the model's feedback mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "a2a4b7ce-e99e-42b5-9d2c-6c9e4d1f47ef",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C30",
+      "claim": "If the growth-optimizing feedback in the Scott-Hwa model were absent, the double-mutant fitness would follow a Minimum neutrality function.",
+      "claim_type": "EXPLICIT",
+      "source": "If this feedback were absent, then the growth rates of the double mutant would be significantly lower. In that case, the double-mutant fitness actually follows a Minimum neutrality function (see Appendix 1 and Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of the model without feedback shown in appendix.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "edbf06e5-f6e0-49b2-a346-a52d3d00d7d1",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C31",
+      "claim": "The Product neutrality function does not accurately predict model fitnesses well for beneficial mutations in the Scott-Hwa model.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also note that the Product neutrality function does not accurately predict model fitnesses well for beneficial mutations\u2014that is, mutations that increase growth rate (see Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in appendix figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "28b0c0b7-e495-40d5-ab80-5549856c86da",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C32",
+      "claim": "The Wei\u00dfe model incorporates nutrient intake, transcription, competitive binding between mRNAs and ribosomes, and translation, all mediated by associated enzymes and a limiting cellular 'energy'.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we consider the model of Wei\u00dfe et al., 2015, which incorporates nutrient intake, transcription, competitive binding between mRNAs and ribosomes, and translation, all of which are mediated by associated enzymes and a limiting cellular 'energy' (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the Wei\u00dfe model structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "d0f23922-4706-4765-8559-5e6d1aac2241",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C33",
+      "claim": "The Wei\u00dfe model explicitly models four types of proteins: transport proteins, metabolic enzymes, ribosomal proteins, and q-proteins which support housekeeping functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Four types of proteins are explicitly modeled as a product of translation: transport proteins, metabolic enzymes, ribosomal proteins, and so-called q-proteins which support housekeeping functions much like the 'other' proteins in the Scott\u2013Hwa model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the Wei\u00dfe model structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "7727196c-e60c-4237-9b65-556a1a1608d1",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C34",
+      "claim": "The Product neutrality function is generally better than the Additive or Minimal neutrality functions at describing the mutational results in the Wei\u00dfe model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mutational analysis of the Wei\u00dfe model revealed several striking observations. First, the Product neutrality function is generally better than the Additive or Minimal neutrality functions at describing the mutational results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational analysis of the Wei\u00dfe model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "10892a5d-db70-4929-8e9b-45f2662966eb",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C35",
+      "claim": "Parameter pairs involving protein translation in the Wei\u00dfe model follow the Scott-Hwa model very closely.",
+      "claim_type": "EXPLICIT",
+      "source": "The subset of parameter pairs involving protein translation follows the Scott\u2013Hwa model very closely (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "2a0f5d26-87b7-46e5-b467-1456263adc42",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C36",
+      "claim": "Parameter pairs involving mutations to transport, metabolism, and transcription sectors in the Wei\u00dfe model follow the Product neutrality function even more closely than the Scott-Hwa model.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, another subset of parameter pairs follows the Product neutrality function even more closely. These parameter pairs involve mutations to the other sectors, including the transport, metabolism, and transcription sectors (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "4e25216b-ba28-4548-8587-934db306f5d3",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C37",
+      "claim": "In the Wei\u00dfe model, the amplitude of deviation from the Product neutrality function is governed by the inverse of the Michaelis-Menten constant giving the transcription rate as a function of the cellular 'energy'.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the amplitude of deviation from the Product neutrality function is governed by an additional parameter, \u03b3, which is the inverse of the Michaelis\u2013Menten constant giving the transcription rate as a function of the cellular 'energy'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from analytical approximation of the Wei\u00dfe model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "4b2afa0a-d90c-4b50-acff-719e15b40758",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C39",
+      "claim": "Deviations from the Product neutrality function in the Wei\u00dfe model can be driven by nonlinear effects, such as those that emerge from Michaelis-Menten kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our analysis of the Wei\u00dfe model shows how the Product neutrality function naturally arises for many different parameter pairs and how deviations from it can be driven by nonlinear effects, such as those that can emerge from Michaelis\u2013Menten kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from analytical and computational analysis of the Wei\u00dfe model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "9feb6146-e1e8-4f09-aab1-f536622a6121",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C40",
+      "claim": "The Product neutrality function was shown to better predict double-mutant fitnesses than an Additive neutrality function and a Minimum neutrality function in previous work (Mani et al., 2008).",
+      "claim_type": "EXPLICIT",
+      "source": "This neutrality function was shown to better predict double-mutant fitnesses than an Additive neutrality function, where the differences between wild-type and mutant fitnesses were simply added together, and a Minimum neutrality function, where the double-mutant fitness was taken as the lowest fitness of the two single-mutant strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous work by Mani et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "87c32718-fbbc-45b3-ad13-bec7a75ccbc8",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C41",
+      "claim": "Genetic analyses rely on a neutrality function that predicts the expected phenotype for double mutants based on the phenotypes of the two individual non-interacting mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such analyses rely on a neutrality function that predicts the expected phenotype for double mutants based on the phenotypes of the two individual non-interacting mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about genetic analysis methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "b9ca51fd-f360-4564-9911-82db6abcfa8d",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C42",
+      "claim": "A genetic interaction is identified when combining multiple mutations yields something unexpected.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, a genetic interaction is identified when combining multiple mutations yields something unexpected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of genetic interaction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "b995bc85-1105-4f94-84c8-5b054f20a5cd",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C43",
+      "claim": "The neutrality function calculates the expected phenotype of a double-mutant strain carrying two non-interacting mutations (Beltrao et al., 2010; Mani et al., 2008).",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the neutrality function calculates the expected phenotype of a double-mutant strain carrying two non-interacting mutations (Beltrao et al., 2010; Mani et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "8209ad2c-0e7c-4b63-89e4-e53d5ce7faf6",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C44",
+      "claim": "The neutrality function should be defined such that most mutations are categorized as non-interacting.",
+      "claim_type": "EXPLICIT",
+      "source": "The neutrality function should be defined such that most mutations are categorized as non-interacting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Principle for defining neutrality functions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "1e5aa384-808b-40de-b7e2-13a773e3f87b",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C45",
+      "claim": "Decades of cell biological and structural biological analysis have identified specific functions for many genes and their associated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, decades of cell biological and structural biological analysis have identified specific functions for many genes and their associated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about the state of biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "59e8d3c3-c9a4-4f8a-b891-8e1cc319509b",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C46",
+      "claim": "A judiciously selected neutrality function should predict most double-mutant fitnesses from the single-mutant fitnesses since any two randomly selected genes should be unlikely to interact.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that a judiciously selected neutrality function should predict most double-mutant fitnesses from the single-mutant fitnesses since any two randomly selected genes should be unlikely to interact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the specificity of gene functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "3c688430-6751-466e-82e2-8f0f0c6e0612",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C47",
+      "claim": "Synthetic Genetic Arrays (SGAs) have generated the largest and most comprehensive datasets of single and double genetic mutants in budding yeast (Baryshnikova et al., 2010b; Costanzo et al., 2010; Costanzo et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, Synthetic Genetic Arrays (SGAs) Tong et al., 2001 have generated the largest and most comprehensive such datasets (Baryshnikova et al., 2010b; Costanzo et al., 2010; Costanzo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the SGA dataset supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "de7b35f5-4337-4dbd-b936-1c1dbc98d7c0",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C48",
+      "claim": "Fitness is defined as the relative exponential growth rate with respect to that of a wild-type cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we focus on this property and define fitness as the relative exponential growth rate with respect to that of a wild-type cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of fitness used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "1428ac9e-0a90-4224-8373-d2c4fb82c086",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C49",
+      "claim": "For yeast proliferation, single-mutant fitnesses are usually assumed to combine according to a Product neutrality function (Mani et al., 2008).",
+      "claim_type": "EXPLICIT",
+      "source": "For yeast proliferation, single-mutant fitnesses are usually assumed to combine according to a Product neutrality function, namely that the fitness of the double mutant is the product of the fitnesses of the single mutants (Mani et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about common assumption supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "3f089dce-cac3-4e6a-961f-89419f6057f6",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C50",
+      "claim": "The SGA data are from combinations of gene deletions, temperature-sensitive alleles, and hypomorphic mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that these data are from combinations of gene deletions, temperature-sensitive alleles, and hypomorphic mutants (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the types of mutations in the SGA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "56a4abc4-e7d0-43d0-8d71-d90fd6c2dcc0",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C51",
+      "claim": "Cells in the SGA experiments were growing quickly on relatively rich synthetic complete media containing glucose (Baryshnikova et al., 2010a).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cells were growing quickly on the relatively rich synthetic complete media containing glucose (Baryshnikova et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental conditions supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "e1037fd5-109c-49ea-bf86-f5de76f6200e",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C52",
+      "claim": "In the SGA experiments, mutations generally decrease fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "For these reasons, increasing the growth rate is difficult, and we are in the regime where mutations generally decrease fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation about the nature of mutations in the dataset.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "03c326c7-9b08-4ea2-88f8-7dbc03bf444d",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C53",
+      "claim": "The observation that the cellular ribosome fraction increases with growth rate is generic and also seen in the yeast S. cerevisiae (Metzl-Raz et al., 2017; Elsemman et al., 2022; Xia et al., 2022).",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental measurements in other organisms suggest that the observations leading to this model, including that the cellular ribosome fraction increases with growth rate, are in fact generic and also seen in the yeast S. cerevisiae (Metzl-Raz et al., 2017; Elsemman et al., 2022; Xia et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental measurements in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "e8aa67c0-f471-44fc-80d9-cbda990e3cb8",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C54",
+      "claim": "The Product neutrality function naturally emerges from both the Scott-Hwa and Wei\u00dfe growth models due to the interdependence of cellular processes that maximize growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We perform a computational genetic analysis to show that in both models, the Product neutrality function naturally emerges due to the interdependence of cellular processes that maximize growth rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion from computational analysis of both models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "96443907-d778-4d4f-871e-87e519bb1201",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C55",
+      "claim": "The Product neutrality function performs better than Additive or Minimum neutrality functions in describing colony growth rate data from budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "This Product neutrality function performs better than Additive or Minimum neutrality functions, supporting its continued use in genetic interaction studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding from analysis of SGA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "3db0e5ae-b9fa-46cd-949d-4beb3f15641b",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C56",
+      "claim": "The Product neutrality function describes the colony growth rate, or fitness, of a double mutant as the product of the fitnesses of the individual single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirm that the Product neutrality function describes the colony growth rate, or fitness, of a double mutant as the product of the fitnesses of the individual single mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "8168c845-54e1-4a70-84db-547b4c846538",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C57",
+      "claim": "The SGA dataset has been used to assign a biological process to each gene (Costanzo et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the SGA dataset has already been used to assign a biological process to each gene (Costanzo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous use of the SGA dataset.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "71859a53-0f49-4756-83df-5201818d1be5",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C58",
+      "claim": "Mutations affecting the same biological process should have similar genetic interaction profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasoning was that mutations affecting the same biological process should have similar genetic interaction profiles, which was found to be the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning used in previous analysis of SGA data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "6db9ae5f-313d-4c74-b1da-460ae28d1d49",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C59",
+      "claim": "When improving the efficiency of one process in the Scott-Hwa model with beneficial mutations, proteomic resources are allocated to accelerate other processes in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "When the Scott\u2013Hwa model's growth-optimizing feedback operates in the context of beneficial mutations, as one process is made more efficient, proteomic resources are allocated to accelerate other processes in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of model behavior with beneficial mutations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "d0ae2344-e648-423d-b025-fcabd4524000",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "claim_id": "C60",
+      "claim": "In the Scott-Hwa model with beneficial mutations, improving the efficiency of one process will indirectly benefit other processes, leading to compound effects such that double-mutant fitnesses are higher than any of the three models predicts.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, improving the efficiency of one process will indirectly benefit other processes, leading to compound effects such that double-mutant fitnesses are higher than any of the three models predicts for beneficial mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of model behavior with beneficial mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8d199f9a-6908-4652-9e67-9675149eb5ef",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The SGA dataset contains over 20 million single- and double-mutant budding yeast strains with measured colony growth rates. Fitness was defined as growth rate normalized to wild-type, with mutations from gene deletions, temperature-sensitive alleles, and hypomorphic mutants grown on rich media where mutations generally decrease fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C47, C50-C52 provide a comprehensive description of the SGA dataset that is well-supported by citations and direct statements. The dataset characteristics are clearly documented and the experimental conditions are appropriately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "590f4de0-ca6f-4808-ab1f-e81213e4613c",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Three neutrality functions were defined to predict double-mutant fitness: Product (fitness is product of single-mutant fitnesses), Additive (differences sum), and Minimum (fitness equals least fit single mutant). The Product neutrality function is commonly assumed for yeast proliferation and should predict most double-mutant fitnesses since randomly selected genes are unlikely to interact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C41-C49 establish the theoretical framework for neutrality functions with clear definitions supported by citations. The reasoning about gene specificity (C44-C46) provides logical justification for why the Product function should work, though this is more conceptual than empirical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of the SGA dataset shows the Product neutrality function better predicts double-mutant fitnesses than Additive or Minimum functions across a broad range of fitness defects. At 72% maximum single-mutant fitness, median residuals were -0.8% (Product), -16.8% (Minimum), and 9.8% (Additive), with interquartile ranges of 8-10%. This holds for essential and nonessential genes across different temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14, C55-C56 present quantitative empirical results with specific numerical values and are supported by data analysis shown in figures. The consistency across different experimental conditions (C12) strengthens the finding. However, the substantial interquartile range (C11) indicates significant variation remains unexplained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "cef513bb-89fb-4648-92fc-090632300dc8",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For gene pairs in different GO biological processes, the Product neutrality function accurately describes typical interactions while Additive and Minimum functions show large systematic residuals. Gene pairs within the same biological process show significantly larger residuals and more deviations from the Product function, consistent with the expectation that mutations in the same process are more likely to interact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18, C57-C58 demonstrate that the Product function works best for inter-process gene pairs, which is the appropriate use case for a neutrality function. The observation that intra-process pairs deviate more (C17-C18) is logically consistent and supported by appendix figures, validating the biological interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "1d325504-490a-40aa-bbab-6a2898600a54",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Colony growth follows a biphasic pattern with exponential then linear phases. The linear colony expansion rate is proportional to the square root of exponential growth rate, arising because growth is dominated by cells at the colony border in rich nutrients. This mathematical relationship means fitnesses based on colony expansion rates are equivalent to single-cell exponential growth rates from the Product neutrality function perspective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 provide the theoretical bridge between colony-based measurements and single-cell growth models. C19 is supported by citation, C20-C22 explain the mechanism, and C23 derives the mathematical equivalence. The logic is sound and the mathematical derivation shown in the text is correct, validating the use of growth models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Scott-Hwa bacterial growth model, which defines growth from metabolic and translational sectors in a linear pathway with growth-optimizing feedback, shows the Product neutrality function fits better than Additive or Minimum functions. This arises from feedback regulation ensuring equal flux through all sectors. Without this feedback, the model would follow a Minimum neutrality function. The model's observations are generic and also seen in S. cerevisiae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30, C53-C54 present computational modeling results that mechanistically explain the Product function. The model structure is clearly described (C24-C25), the computational results support the Product function (C27), and the mechanistic explanation via feedback (C28-C29) is logical. The counterfactual analysis (C30) strengthens the causal interpretation. Citation support for applicability to yeast (C53) validates the model choice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "bc899eac-54c9-47cb-b787-9e82ff98cbef",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Product neutrality function does not accurately predict fitnesses for beneficial mutations in the Scott-Hwa model. With beneficial mutations, growth-optimizing feedback causes proteomic resources to be reallocated to accelerate other processes, leading to compound effects where double-mutant fitnesses exceed predictions from all three neutrality functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C59-C60 identify an important limitation of the Product function for beneficial mutations, supported by appendix figure analysis (C31). The mechanistic explanation (C59-C60) is consistent with the model's feedback mechanism. This is appropriately noted as a boundary condition for the model's applicability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "bcc5acb3-dfe1-4758-93ee-6d623498929b",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Wei\u00dfe model, which incorporates nutrient intake, transcription, competitive mRNA-ribosome binding, and translation with four protein types, shows the Product neutrality function is generally better than Additive or Minimal functions. Parameter pairs involving translation follow the Scott-Hwa model closely, while pairs involving transport, metabolism, and transcription follow the Product function even more closely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 present analysis of a more complex growth model. The model structure is clearly described (C32-C33), computational results support the Product function (C34), and the differential behavior of parameter pairs (C35-C36) is supported by figures. This demonstrates the Product function emerges from multiple mechanistic frameworks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "b3d39be6-a66f-4d2b-ae14-1c863d8fbb1c",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In the Wei\u00dfe model, deviations from the Product neutrality function are governed by the inverse of the Michaelis-Menten constant for transcription rate as a function of cellular energy. These deviations can be driven by nonlinear effects emerging from Michaelis-Menten kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C39 identify the mechanistic source of deviations from the Product function through analytical approximation. The identification of the specific parameter \u03b3 (C37) and the general principle about nonlinear kinetics (C39) are supported by data and inference. This provides mechanistic insight into when the Product function is expected to deviate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "122bf43e-e7d8-4596-9ebd-f5c61de50247",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous work by Mani et al. (2008) showed the Product neutrality function better predicts double-mutant fitnesses than Additive and Minimum neutrality functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 accurately represents prior work through citation. This establishes the historical context for the current study and shows the authors are building on established findings with newer, more extensive data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "4b2505ca-cc94-4afa-9d20-b35a725190c5",
+      "content_id": "8e906fae-b547-49f9-9ae5-173988e24a1d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Decades of cell biological and structural biological analysis have identified specific functions for many genes and their associated proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is a general knowledge statement about the state of the field that is uncontroversial and well-established. It provides context for why most gene pairs should not interact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "b6746290-351d-4e74-b8de-7fe5d3b0b950",
+      "content_id": "dcc84f2d-f0c1-416b-82c3-e51e5fa67c95",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Using the large-scale SGA dataset of yeast colony growth rates, the authors demonstrate that the Product neutrality function better predicts double-mutant fitnesses than Additive or Minimum neutrality functions across a broad range of fitness defects, with the Product function showing minimal systematic bias (median residual -0.8% vs -16.8% and 9.8% for Minimum and Additive functions at 72% single-mutant fitness).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly states the study 'confirmed that the product function outperformed other neutral functions in predicting double-mutant fitness, showing no bias between negative and positive epistatic interactions' and found the approach 'innovative.' The editor notes the authors 'reach the valuable conclusion that the product function is a good null model.' Reviewer 1 acknowledges this as a 'Strength' stating 'confirmation that the product function provides a more reliable prediction of double-mutant fitness compared to other neutral functions is valuable.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "6201e2de-12d7-43c4-a031-158676f6ca93",
+      "content_id": "dcc84f2d-f0c1-416b-82c3-e51e5fa67c95",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors use the Scott-Hwa bacterial growth model to provide mechanistic explanation for Product neutrality, showing that growth-optimizing feedback coupling metabolic and translational sectors leads to Product neutrality function fitting better than Additive or Minimum functions, and that without this feedback, the Minimum neutrality function would apply instead.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 1 explicitly challenges this result, stating 'there is no valid justification for linking these two systems' and that 'the Scott-Hwa model heavily rely on specific molecular mechanisms, such as ppGpp-mediated regulation...Yeast cells lack this regulatory mechanism, making it inappropriate to directly apply bacterial growth models to yeast.' Reviewer 1 further criticizes that 'using such a narrow model to explore the mechanistic origin of product neutrality observed on a genome-wide scale appears to be inappropriate.' The editor notes 'the justification of some assumptions is incomplete.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8",
+      "content_id": "dcc84f2d-f0c1-416b-82c3-e51e5fa67c95",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors analyze the Weisse model (a more complex bacterial growth model) and show that the Product neutrality function generally describes mutational results better than alternatives, with parameter pairs involving transport, metabolism, and transcription following Product neutrality even more closely than the Scott-Hwa model, and deviations driven by nonlinear Michaelis-Menten kinetics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 1 explicitly challenges the applicability of the Weisse model to yeast, stating 'In the original paper by Weisse et al. (PNAS, 2015), however, the model parameters were fitted solely to experimental data from E. coli, and the model's applicability to yeast was never assessed.' Reviewer 1 concludes 'for neither the Scott-Hwa model nor the Weisse model has it been demonstrated that the entire model quantitatively fits experimental data from yeast' and that 'Arguments based on either the Scott-Hwa model or the Weisse model fail to account for the generality of product neutrality across diverse genetic perturbations.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "ce6aeebc-ea2c-49c2-af3c-22372b4bff8b",
+      "content_id": "dcc84f2d-f0c1-416b-82c3-e51e5fa67c95",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors claim that observations from bacterial models, including that cellular ribosome fraction increases with growth rate, are generic and also seen in yeast S. cerevisiae, supporting the applicability of bacterial growth models to yeast.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 1 explicitly rejects this justification, stating 'A positive correlation between growth rate and RNA/protein ratio, often observed in yeast, supports only a limited portion of either model, and does not constitute validation of the models as a whole.' Reviewer 1 further notes that 'in most viable yeast deletion mutants with reduced growth rates, the expression of ribosomal proteins remained largely unchanged, contrary to the predictions of the Scott-Hwa model,' demonstrating experimental evidence contradicting the model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0dee80dd-ef36-46c5-9933-d96d003d42c5",
+      "result_id": "8d199f9a-6908-4652-9e67-9675149eb5ef"
+    },
+    {
+      "claim_id": "e08fd31c-ec18-4a4f-b357-96e5e42a4a61",
+      "result_id": "8d199f9a-6908-4652-9e67-9675149eb5ef"
+    },
+    {
+      "claim_id": "0596bbd3-1a13-4a80-881d-4a32991c5c74",
+      "result_id": "8d199f9a-6908-4652-9e67-9675149eb5ef"
+    },
+    {
+      "claim_id": "3c688430-6751-466e-82e2-8f0f0c6e0612",
+      "result_id": "8d199f9a-6908-4652-9e67-9675149eb5ef"
+    },
+    {
+      "claim_id": "3f089dce-cac3-4e6a-961f-89419f6057f6",
+      "result_id": "8d199f9a-6908-4652-9e67-9675149eb5ef"
+    },
+    {
+      "claim_id": "56a4abc4-e7d0-43d0-8d71-d90fd6c2dcc0",
+      "result_id": "8d199f9a-6908-4652-9e67-9675149eb5ef"
+    },
+    {
+      "claim_id": "e1037fd5-109c-49ea-bf86-f5de76f6200e",
+      "result_id": "8d199f9a-6908-4652-9e67-9675149eb5ef"
+    },
+    {
+      "claim_id": "f51679a0-b49c-46f5-aa4a-dd9cfd297ba7",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "3627f015-a817-4cd1-9aad-5ac5a7b70f0e",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "ecd90369-06f5-47c7-9355-e3539017e529",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "87c32718-fbbc-45b3-ad13-bec7a75ccbc8",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "b9ca51fd-f360-4564-9911-82db6abcfa8d",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "b995bc85-1105-4f94-84c8-5b054f20a5cd",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "8209ad2c-0e7c-4b63-89e4-e53d5ce7faf6",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "59e8d3c3-c9a4-4f8a-b891-8e1cc319509b",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "de7b35f5-4337-4dbd-b936-1c1dbc98d7c0",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "1428ac9e-0a90-4224-8373-d2c4fb82c086",
+      "result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c"
+    },
+    {
+      "claim_id": "5504b23f-f63c-4e5b-a547-214f888c5b50",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "86177359-863d-4c52-b640-e24a9af44259",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "8c659ff5-b8ea-4218-a00d-d5b48172b1d4",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "ba916047-c93a-489b-a0ff-2f63e977f10e",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "15d87cf7-c72e-4622-95fd-9cecf8397ab8",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "fa01db4c-5e47-4803-9a41-9667148ab12d",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "bfafbdc7-7221-40a1-be5f-e390c911c427",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "f81f7374-ebb9-4f38-8b6e-ca7c9926a8fa",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "96443907-d778-4d4f-871e-87e519bb1201",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "3db0e5ae-b9fa-46cd-949d-4beb3f15641b",
+      "result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc"
+    },
+    {
+      "claim_id": "6082f66a-6c8c-457a-a105-45f23917e4b6",
+      "result_id": "cef513bb-89fb-4648-92fc-090632300dc8"
+    },
+    {
+      "claim_id": "2a1be81c-c7e7-4c92-a71a-82b838655d88",
+      "result_id": "cef513bb-89fb-4648-92fc-090632300dc8"
+    },
+    {
+      "claim_id": "29d1dafe-0d98-4db5-aa45-712fe9ff249e",
+      "result_id": "cef513bb-89fb-4648-92fc-090632300dc8"
+    },
+    {
+      "claim_id": "bb2d6b79-3ad9-442f-a132-1a1fcdc593e5",
+      "result_id": "cef513bb-89fb-4648-92fc-090632300dc8"
+    },
+    {
+      "claim_id": "8168c845-54e1-4a70-84db-547b4c846538",
+      "result_id": "cef513bb-89fb-4648-92fc-090632300dc8"
+    },
+    {
+      "claim_id": "71859a53-0f49-4756-83df-5201818d1be5",
+      "result_id": "cef513bb-89fb-4648-92fc-090632300dc8"
+    },
+    {
+      "claim_id": "69da7e59-6c91-45fa-b2bc-a60faa2213d0",
+      "result_id": "1d325504-490a-40aa-bbab-6a2898600a54"
+    },
+    {
+      "claim_id": "e97d20df-1a31-438f-9b36-eaa0c023da7f",
+      "result_id": "1d325504-490a-40aa-bbab-6a2898600a54"
+    },
+    {
+      "claim_id": "5e05342a-9cb3-4987-b104-e9a76b2537fb",
+      "result_id": "1d325504-490a-40aa-bbab-6a2898600a54"
+    },
+    {
+      "claim_id": "e412e8c9-094b-4f69-a914-fb566ec16956",
+      "result_id": "1d325504-490a-40aa-bbab-6a2898600a54"
+    },
+    {
+      "claim_id": "f534edad-d4ea-431b-ad49-c4a19a6df814",
+      "result_id": "1d325504-490a-40aa-bbab-6a2898600a54"
+    },
+    {
+      "claim_id": "3fbf7fcf-1030-4fa5-ae37-b9f28683c4aa",
+      "result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6"
+    },
+    {
+      "claim_id": "56855976-6381-424e-86b9-333f8eb40137",
+      "result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6"
+    },
+    {
+      "claim_id": "215b4ff3-0cf4-483e-a01e-78f43c8f7e5b",
+      "result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6"
+    },
+    {
+      "claim_id": "1b1d386a-f6d0-48f8-b74e-d3df130b4de7",
+      "result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6"
+    },
+    {
+      "claim_id": "38742050-f4ed-489e-ba63-99a05101b2e0",
+      "result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6"
+    },
+    {
+      "claim_id": "a2a4b7ce-e99e-42b5-9d2c-6c9e4d1f47ef",
+      "result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6"
+    },
+    {
+      "claim_id": "03c326c7-9b08-4ea2-88f8-7dbc03bf444d",
+      "result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6"
+    },
+    {
+      "claim_id": "e8aa67c0-f471-44fc-80d9-cbda990e3cb8",
+      "result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6"
+    },
+    {
+      "claim_id": "edbf06e5-f6e0-49b2-a346-a52d3d00d7d1",
+      "result_id": "bc899eac-54c9-47cb-b787-9e82ff98cbef"
+    },
+    {
+      "claim_id": "6db9ae5f-313d-4c74-b1da-460ae28d1d49",
+      "result_id": "bc899eac-54c9-47cb-b787-9e82ff98cbef"
+    },
+    {
+      "claim_id": "d0ae2344-e648-423d-b025-fcabd4524000",
+      "result_id": "bc899eac-54c9-47cb-b787-9e82ff98cbef"
+    },
+    {
+      "claim_id": "28b0c0b7-e495-40d5-ab80-5549856c86da",
+      "result_id": "bcc5acb3-dfe1-4758-93ee-6d623498929b"
+    },
+    {
+      "claim_id": "d0f23922-4706-4765-8559-5e6d1aac2241",
+      "result_id": "bcc5acb3-dfe1-4758-93ee-6d623498929b"
+    },
+    {
+      "claim_id": "7727196c-e60c-4237-9b65-556a1a1608d1",
+      "result_id": "bcc5acb3-dfe1-4758-93ee-6d623498929b"
+    },
+    {
+      "claim_id": "10892a5d-db70-4929-8e9b-45f2662966eb",
+      "result_id": "bcc5acb3-dfe1-4758-93ee-6d623498929b"
+    },
+    {
+      "claim_id": "2a0f5d26-87b7-46e5-b467-1456263adc42",
+      "result_id": "bcc5acb3-dfe1-4758-93ee-6d623498929b"
+    },
+    {
+      "claim_id": "4e25216b-ba28-4548-8587-934db306f5d3",
+      "result_id": "b3d39be6-a66f-4d2b-ae14-1c863d8fbb1c"
+    },
+    {
+      "claim_id": "4b2afa0a-d90c-4b50-acff-719e15b40758",
+      "result_id": "b3d39be6-a66f-4d2b-ae14-1c863d8fbb1c"
+    },
+    {
+      "claim_id": "9feb6146-e1e8-4f09-aab1-f536622a6121",
+      "result_id": "122bf43e-e7d8-4596-9ebd-f5c61de50247"
+    },
+    {
+      "claim_id": "1e5aa384-808b-40de-b7e2-13a773e3f87b",
+      "result_id": "4b2505ca-cc94-4afa-9d20-b35a725190c5"
+    },
+    {
+      "claim_id": "0dee80dd-ef36-46c5-9933-d96d003d42c5",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "e08fd31c-ec18-4a4f-b357-96e5e42a4a61",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "0596bbd3-1a13-4a80-881d-4a32991c5c74",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "f51679a0-b49c-46f5-aa4a-dd9cfd297ba7",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "3627f015-a817-4cd1-9aad-5ac5a7b70f0e",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "ecd90369-06f5-47c7-9355-e3539017e529",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "5504b23f-f63c-4e5b-a547-214f888c5b50",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "86177359-863d-4c52-b640-e24a9af44259",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "8c659ff5-b8ea-4218-a00d-d5b48172b1d4",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "ba916047-c93a-489b-a0ff-2f63e977f10e",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "15d87cf7-c72e-4622-95fd-9cecf8397ab8",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "fa01db4c-5e47-4803-9a41-9667148ab12d",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "bfafbdc7-7221-40a1-be5f-e390c911c427",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "f81f7374-ebb9-4f38-8b6e-ca7c9926a8fa",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "6082f66a-6c8c-457a-a105-45f23917e4b6",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "2a1be81c-c7e7-4c92-a71a-82b838655d88",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "29d1dafe-0d98-4db5-aa45-712fe9ff249e",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "bb2d6b79-3ad9-442f-a132-1a1fcdc593e5",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "9feb6146-e1e8-4f09-aab1-f536622a6121",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "3c688430-6751-466e-82e2-8f0f0c6e0612",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "3f089dce-cac3-4e6a-961f-89419f6057f6",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "56a4abc4-e7d0-43d0-8d71-d90fd6c2dcc0",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "e1037fd5-109c-49ea-bf86-f5de76f6200e",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "96443907-d778-4d4f-871e-87e519bb1201",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "3db0e5ae-b9fa-46cd-949d-4beb3f15641b",
+      "result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950"
+    },
+    {
+      "claim_id": "3fbf7fcf-1030-4fa5-ae37-b9f28683c4aa",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "56855976-6381-424e-86b9-333f8eb40137",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "215b4ff3-0cf4-483e-a01e-78f43c8f7e5b",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "1b1d386a-f6d0-48f8-b74e-d3df130b4de7",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "38742050-f4ed-489e-ba63-99a05101b2e0",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "a2a4b7ce-e99e-42b5-9d2c-6c9e4d1f47ef",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "edbf06e5-f6e0-49b2-a346-a52d3d00d7d1",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "e8aa67c0-f471-44fc-80d9-cbda990e3cb8",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "6db9ae5f-313d-4c74-b1da-460ae28d1d49",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "d0ae2344-e648-423d-b025-fcabd4524000",
+      "result_id": "6201e2de-12d7-43c4-a031-158676f6ca93"
+    },
+    {
+      "claim_id": "28b0c0b7-e495-40d5-ab80-5549856c86da",
+      "result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8"
+    },
+    {
+      "claim_id": "d0f23922-4706-4765-8559-5e6d1aac2241",
+      "result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8"
+    },
+    {
+      "claim_id": "7727196c-e60c-4237-9b65-556a1a1608d1",
+      "result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8"
+    },
+    {
+      "claim_id": "10892a5d-db70-4929-8e9b-45f2662966eb",
+      "result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8"
+    },
+    {
+      "claim_id": "2a0f5d26-87b7-46e5-b467-1456263adc42",
+      "result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8"
+    },
+    {
+      "claim_id": "4e25216b-ba28-4548-8587-934db306f5d3",
+      "result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8"
+    },
+    {
+      "claim_id": "4b2afa0a-d90c-4b50-acff-719e15b40758",
+      "result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8"
+    },
+    {
+      "claim_id": "e8aa67c0-f471-44fc-80d9-cbda990e3cb8",
+      "result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8"
+    },
+    {
+      "claim_id": "03c326c7-9b08-4ea2-88f8-7dbc03bf444d",
+      "result_id": "ce6aeebc-ea2c-49c2-af3c-22372b4bff8b"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f9e97266-3610-499c-baa4-7e476c208aa2",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "48c57e67-68d6-4640-ad24-9cf3bbbf1dd6",
+      "peer_result_id": "6201e2de-12d7-43c4-a031-158676f6ca93",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate the Scott-Hwa computational model (C24-C30, C54). OpenEval finds the model well-supported with clear mechanistic explanations. Peer reviewers explicitly reject this, arguing the bacterial model is inappropriate for yeast due to missing ppGpp regulation and lack of quantitative validation in yeast. This is a major disagreement on model applicability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "714c5816-5086-4a63-8327-bc0eb0fc1220",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "bcc5acb3-dfe1-4758-93ee-6d623498929b",
+      "peer_result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate the Weisse model (C32-C36). OpenEval finds it supported with clear computational results demonstrating the Product function. Peer reviewers explicitly challenge this, noting the model was only fitted to E. coli data and never validated for yeast, questioning its applicability to explain genome-wide patterns. Strong disagreement on model validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "0b1bb62f-8d28-4023-86a8-884e57c9f083",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "bc899eac-54c9-47cb-b787-9e82ff98cbef",
+      "peer_result_id": "6201e2de-12d7-43c4-a031-158676f6ca93",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both address limitations of the Product function for beneficial mutations (C31, C59-C60). OpenEval views this as an appropriately noted boundary condition. Peer reviewers include these claims in their broader critique of the Scott-Hwa model's applicability, viewing them as part of an unsupported mechanistic framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "4d1fd356-f41f-4935-ae1c-06bff911e7bb",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b3d39be6-a66f-4d2b-ae14-1c863d8fbb1c",
+      "peer_result_id": "12a7ddc0-8b5e-4acf-97de-ef01a3b8edc8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate mechanistic explanations for deviations (C37, C39). OpenEval finds the analytical approximation and identification of nonlinear kinetics well-supported. Peer reviewers reject the underlying models, arguing they fail to account for the generality of product neutrality across diverse genetic perturbations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "56abccd2-dae0-4bc4-b3cc-3363ac6049b2",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "8d199f9a-6908-4652-9e67-9675149eb5ef",
+      "peer_result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate SGA dataset description (C1-C3, C47, C50-C52). OpenEval finds the dataset well-documented. Peer reviewers also accept the dataset and empirical findings as supported, with no criticism of data quality or description. Agreement on data foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "44c50766-af0b-4fc9-864e-52f9e8aa3212",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "2115e314-ace2-43c3-82d0-9d69c36cc4cc",
+      "peer_result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate empirical results showing Product function superiority (C7-C14, C55-C56). OpenEval finds quantitative results well-supported by data. Peer reviewers explicitly confirm this finding as valuable and innovative, with all reviewers acknowledging it as a strength. Strong agreement on empirical results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "e4f6ac0d-dd56-408a-816d-7955db583d00",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "cef513bb-89fb-4648-92fc-090632300dc8",
+      "peer_result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate inter-process vs intra-process gene pair analysis (C15-C18, C57-C58). OpenEval finds this demonstrates appropriate use case validation. Peer reviewers include these claims in their overall positive evaluation of the empirical findings. Agreement on this empirical observation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "393ac1d9-5e1a-4387-ac66-d3e5e1587877",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "590f4de0-ca6f-4808-ab1f-e81213e4613c",
+      "peer_result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates theoretical framework for neutrality functions (C4-C6, C41-C49). Peer reviewers include some of these claims (C4-C6) in their positive evaluation of the overall approach. Implicit agreement on theoretical definitions, though peer focus is on empirical validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "dc834e85-490d-4822-97b6-8371b0d14763",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "122bf43e-e7d8-4596-9ebd-f5c61de50247",
+      "peer_result_id": "b6746290-351d-4e74-b8de-7fe5d3b0b950",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both reference prior work (C40). OpenEval notes appropriate citation of historical context. Peer reviewers include this in their overall positive evaluation. Agreement on contextual framing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "91e8c5dc-5e65-494b-b908-8a4d96b3a98a",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP10",
+      "openeval_result_id": null,
+      "peer_result_id": "ce6aeebc-ea2c-49c2-af3c-22372b4bff8b",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers explicitly reject the justification for applying bacterial models to yeast (C53), citing contradictory experimental evidence in yeast deletion mutants. OpenEval evaluated C53 as part of R6 and found it supported, but peer reviewers provide specific experimental counterevidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "84b9ccd0-01f5-4989-8397-e598ddb4a2da",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1d325504-490a-40aa-bbab-6a2898600a54",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates theoretical bridge between colony measurements and single-cell models (C19-C23), finding the mathematical derivation sound and well-supported. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    },
+    {
+      "id": "5f1aa36d-5384-4f21-b7ed-6b8c146c8293",
+      "submission_id": "b3553583-c8e7-4aa1-ab6b-15568ff29265",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "4b2505ca-cc94-4afa-9d20-b35a725190c5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates general field knowledge statement (C45) as uncontroversial context. No corresponding peer review evaluation found for this claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:02:59.219990Z"
+    }
+  ]
+}

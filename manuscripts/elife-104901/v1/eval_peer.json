@@ -1,0 +1,144 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "AlphaFold2 predicted inactivated-state conformations of hERG featuring selectivity filter distortions, including a lateral flip of V625 backbone carbonyls and constriction at G626, creating a potential barrier to ion conduction. These conformations align with previously proposed C-type inactivation mechanisms and were predicted independently despite not being in AlphaFold2's training dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raised concerns about potential bias in selecting the inactivated conformation, noting that 'the authors base their initial selection of the \"most likely\" inactivated conformation on the expected flipping of V625 and the constriction at G626 carbonyls' and suggesting this 'follows a bit the \"Streetlight effect.\"' While the authors addressed this by evaluating conformational variability and including alternative models, and Reviewer 3 acknowledged these efforts, the fundamental concern about selection bias and whether pLDDT scores reliably indicate functional relevance remains partially unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50"
+    ],
+    "result": "AlphaFold2 was used with targeted structural templates to model the closed state of hERG, combining a deactivated VSD from rat EAG channel with the selectivity filter from open-state hERG. The resulting closed-state models showed high structural similarity with minimal RMSD differences between clusters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor and reviewers describe the methodology as 'well-described' (Reviewer 3) and the overall approach as using 'state-of-the-art modeling methods' (Reviewer 1). The authors' explanation of their template selection strategy was accepted in revision, with Reviewer 3 noting they 'explained that their approach to template selection was guided by their experience.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Molecular dynamics simulations demonstrated K+ ion conduction through the open-state model under applied membrane voltage, but no conduction through the inactivated-state model, using both direct and water-mediated knock-on mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states that 'molecular dynamics and drug-docking simulations, combined with experimental characterization, offer convincing evidence supporting the models.' Reviewer 1 notes that 'molecular dynamics simulations confirm that ion conduction for structure models of the open but not the inactivated state,' affirming this key functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Drug docking simulations showed that most drugs bind more strongly to the inactivated-state model, consistent with experimental studies. Multi-state docking incorporating open, inactivated, and closed states improved correlation with experimental drug affinities (R\u00b2=0.63) compared to single open-state modeling (R\u00b2=0.43), representing a 47% improvement in predictive power.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the editor notes the work 'shows potential for improving drug potency predictions,' Reviewer 1 raised significant concerns about controls, stating 'the comparison of predicted and experimentally measured binding affinities lacks of appropriate controls' and suggesting 'a much better control is the use of alternative structures predicted by AlphaFold for each state.' The authors addressed some concerns but the fundamental issue of whether alternative conformations would yield similar improvements remains incompletely resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Protein residue interaction network analysis across closed, open, and inactivated states identified critical residues driving state transitions in the S5-P linker and selectivity filter regions, with findings validated by prior mutagenesis studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges that the study provides 'detailed insights into the structure-function relationship' and that 'AlphaFold modeling, MD simulations and Markov modeling are nicely combined to investigate the impact of structural changes.' The validation with mutagenesis data (Table 2) strengthens these findings, and no specific concerns were raised about this analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Structural comparison revealed state-dependent changes in pore geometry and drug-binding residues. The closed state showed the most constricted pore, while the inactivated state featured repositioning of Y652 and F656 that expands hydrophobic pockets and may enhance drug binding affinity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These structural analyses are part of the 'detailed insights into the structure-function relationship' praised by Reviewer 1. Reviewer 3 notes the 'methodology is well-described, and the figures are clear and descriptive.' No specific concerns were raised about these structural comparisons, which support the drug-binding findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MD simulations revealed a unique two-step dilation process in the hERG selectivity filter, with F627 dilating first followed by G628, yet ion conduction was still observed despite this dilation, contrasting with other K+ channels like Shaker.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is part of the MD simulation results that the editor describes as providing 'convincing evidence supporting the models.' The comparison with other K+ channels adds context, and no reviewer raised concerns about these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study has several acknowledged limitations: exclusion of the N-terminal PAS domain due to GPU memory constraints, unreliability of pLDDT scores for selecting alternative conformations, rigid protein backbone assumption in docking preventing observation of allosteric modifications, and variability in experimental IC50 measurements depending on technique.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes that 'the authors acknowledged these limitations in the main text and highlighted the need for future studies to explore these regions in greater detail.' Reviewer 1's concern about pLDDT as a selection criterion was addressed when authors 'noted that pLDDT scores are not always reliable for selecting new or alternative conformations, citing proper references.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Leveraging AlphaFold-derived multi-state models significantly improves computational screening for hERG drug interactions compared to traditional single-state models that miss critical state-dependent effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the editor states the work 'shows potential for improving drug potency predictions in ion channel pharmacology,' Reviewer 3 raises a fundamental concern about generalizability: 'The primary issue with the study is the lack of a general pipeline or strategy that can be universally applied to any system' and questions 'Is this method better suited for ion channels or membrane proteins with already solved structures and extensive research available?' This limits confidence in the broader applicability of the approach.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1148 @@
+{
+  "submission": {
+    "id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:18:54.150652Z",
+    "updated_at": "2025-11-21T17:18:54.150652Z"
+  },
+  "content": [
+    {
+      "id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "content_type": "manuscript",
+      "content_text": "# The geometry and dimensionality of brain-wide activity\n\n## Authors\n\n- Zezhen Wang<sup>1</sup> ([ORCID: 0009-0006-1401-9871](https://orcid.org/0009-0006-1401-9871))\n- Weihao Mai<sup>2</sup> ([ORCID: 0000-0002-2320-2276](https://orcid.org/0000-0002-2320-2276))\n- Yuming Chai<sup>3</sup> ([ORCID: 0000-0003-0184-1824](https://orcid.org/0000-0003-0184-1824))\n- Kexin Qi<sup>3</sup>\n- Hongtai Ren<sup>5</sup>\n- Chen Shen<sup>3</sup>\n- Shiwu Zhang<sup>5</sup>\n- Guodong Tan<sup>4</sup>\n- Yu Hu<sup>2</sup> ([ORCID: 0000-0003-0790-1605](https://orcid.org/0000-0003-0790-1605)) \u2020\n- Quan Wen<sup>1</sup> ([ORCID: 0000-0003-0268-8403](https://orcid.org/0000-0003-0268-8403)) \u2020\n\n### Affiliations\n\n1. School of Data Science, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n2. Division of Life Science, The Hong Kong University of Science and Technology Hong Kong China ([ROR:00q4vv597](https://ror.org/00q4vv597))\n3. Hefei National Laboratory for Physical Sciences at the Microscale, Center for Integrative Imaging, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n4. Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n5. Department of Precision Machinery and Precision Instrumentation, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n6. Department of Mathematics, The Hong Kong University of Science and Technology Hong Kong China ([ROR:00q4vv597](https://ror.org/00q4vv597))\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding neural activity organization is vital for deciphering brain function. By recording whole-brain calcium activity in larval zebrafish during hunting and spontaneous behaviors, we find that the shape of the neural activity space, described by the neural covariance spectrum, is scale-invariant: a smaller, randomly sampled cell assembly resembles the entire brain. This phenomenon can be explained by Euclidean Random Matrix theory, where neurons are reorganized from anatomical to functional positions based on their correlations. Three factors contribute to the observed scale invariance: slow neural correlation decay, higher functional space dimension, and neural activity heterogeneity. In addition to matching data from zebrafish and mice, our theory and analysis demonstrate how the geometry of neural activity space evolves with population sizes and sampling methods, thus revealing an organizing principle of brain-wide activity.\n\n## Introduction\n\nGeometric analysis of neuronal population activity has revealed the fundamental structures of neural representations and brain dynamics (Churchland et al., 2012; Zhang et al., 2023; Kriegeskorte and Wei, 2021; Chung and Abbott, 2021). Dimensionality reduction methods, which identify collective or latent variables in neural populations, simplify our view of high-dimensional neural data (Cunningham and Yu, 2014).Their applications to optical and multi-electrode recordings have begun to reveal important mechanisms by which neural cell assemblies process sensory information (Stringer et al., 2019a; Si et al., 2019), make decisions (Mante et al., 2013; Yang et al., 2022), maintain working memory (Xie et al., 2022) and generate motor behaviors (Churchland et al., 2012; Nguyen et al., 2016; Lind\u00e9n et al., 2022; Urai et al., 2022).\n\nIn the past decade, the number of neurons that can be simultaneously recorded in vivo has grown exponentially (Buzs\u00e1ki, 2004; Ahrens et al., 2012; Jun et al., 2017; Stevenson and Kording, 2011; Nguyen et al., 2016; Sofroniew et al., 2016; Lin et al., 2022; Meshulam et al., 2019; Demas et al., 2021). This increase spans various brain regions (Musall et al., 2019; Stringer et al., 2019a; Jun et al., 2017) and the entire mammalian brain (Stringer et al., 2019b; Kleinfeld et al., 2019). As more neurons are recorded, the multidimensional neural activity space, with each axis representing a neuron\u2019s activity level (Figure 1A), becomes more complex. The changing size of observed cell assemblies raises a number of basic questions. How does this space\u2019s geometry evolve and what structures remain invariant with increasing number of neurons recorded?\n\n![Figure 1.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig1-v1.jpg)\n\n**Figure 1.:** (A) Illustration of how dimensionality of neural activity ($D_{PR}$) changes with the number of recorded neurons. (B) The eigenvalues of the neural covariance matrix dictate the geometrical configuration of the neural activity space with $\\sqrt{\\lambda}_{i}$ being the distribution width along a principal axis. (C) Examples of two neural populations with identical dimensionality ($D_{PR}=25/11\u22482.27$) but different spatial configurations, as revealed by the eigenvalue spectrum (green: ${\\lambda_{i}}={7,7,1}$, blue: ${\\lambda_{i}}={9,3,3}$).\n\nA key measure, the effective dimension or participation ratio (denoted as $D_{PR}$, Figure 1B), captures a major part of variability in neural activity (Recanatesi et al., 2019; Litwin-Kumar et al., 2017; Gao et al., 2017 ; Clark et al., 2023; Dahmen et al., 2020). How does $D_{PR}$ vary with the number of sampled neurons (Figure 1A)? Two scenarios are possible: $D_{PR}$ grows continuously with more sampled neurons; $D_{PR}$ saturates as the sample size increases. Which scenario fits the brain? Furthermore, even if two cell assemblies have the same $D_{PR}$, they can have different shapes (the geometric configuration of the neural activity space, as dictated by the eigenspectrum of the covariance matrix, Figure 1C). How does the shape vary with the number of neurons sampled? Lastly, are we going to observe the same picture of neural activity space when using different recording methods such as two-photon microscopy, which records all neurons in a brain region, versus Neuropixels (Jun et al., 2017), which conducts a broad random sampling of neurons?\n\nHere, we aim to address these questions by analyzing brain-wide Ca2+ activity in larval zebrafish during hunting or spontaneous behavior (Figure 2A) recorded by Fourier light-field microscopy (Cong et al., 2017). The small size of this vertebrate brain, together with the volumetric imaging method, enables us to capture a significant amount of neural activity across the entire brain simultaneously. To characterize the geometry of neural activity beyond its dimensionality $D_{PR}$, we examine the eigenvalues or spectrum of neural covariance (Hu and Sompolinsky, 2022; Figure 1C). The covariance spectrum has been instrumental in offering mechanistic insights into neural circuit structure and function, such as the effective strength of local recurrent interactions and the depiction of network motifs (Hu and Sompolinsky, 2022; Morales et al., 2023; Dahmen et al., 2020). Intriguingly, we find that both the dimensionality and covariance spectrum remain invariant for cell assemblies that are randomly selected from various regions of the zebrafish brain. We also verify this observation in datasets recorded by different experimental methods, including light-sheet imaging of larval zebrafish (Chen et al., 2018), two-photon imaging of mouse visual cortex (Stringer et al., 2019b), and multi-area Neuropixels recording in the mouse (Stringer et al., 2019b). To explain the observed phenomenon, we model the covariance matrix of brain-wide activity by generalizing the Euclidean Random Matrix (ERM) (M\u00e9zard et al., 1999) such that neurons correspond to points distributed in a $d$-dimensional functional or feature space, with pairwise correlation decaying with distance. The ERM theory, studied in theoretical physics (M\u00e9zard et al., 1999Goetschy and Skipetrov, 2013), provides extensive analytical tools for a deep understanding of the neural covariance matrix model, allowing us to unequivocally identify three crucial factors for the observed scale invariance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig2-v1.jpg)\n\n**Figure 2.:** (A) Rapid light-field Ca2+ imaging system for whole-brain neural activity in larval zebrafish. (B) Inferred firing rate activity from the brain-wide calcium imaging. The ROIs are sorted by their weights in the first principal component (Stringer et al., 2019b). (C) Procedure of calculating the covariance spectrum on the full and sampled neural activity matrices. (D) Dimensionality (circles, average across eight samplings (dots)), as a function of the sampling fraction. The curve is the predicted dimensionality using Equation 5. (E) Iteratively sampled covariance matrices. Neurons are sorted in each matrix to maximize values near the diagonal. (F) The covariance spectra, that is, eigenvalue versus rank/N, for randomly sampled neurons of different sizes (colors). The gray dots represent the sorted variances $C_{ii}$ of all neurons. (G\u2013I) Same as F but from three models of covariance (see details in Methods): (G) a Wishart random matrix calculated from a random activity matrix of the same size as the experimental data; (H) replacing the eigenvectors by a random orthogonal set; (I) covariance generated from a randomly connected recurrent network. The collapse index (CI), which quantifies the level of scale invariance in the eigenspectrum (see Methods), is: (G) CI = 0.214; (H) CI = 0.222; (I) CI = 0.139.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Spatial distribution of segmented ROIs (shown in different colors). There are 1347\u20133086 ROIs in each animal. Scale bar, 100 \u03bcm. (B) Explained variance of the activity data by PCs up to 500 rank. The different colored lines represent different fish data (n = 6).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013D) Distribution of normalized pairwise covariances, where $E(\\sigma_{i}^{2})=1$ (Methods). (E\u2013H) Sampled covariance eigenspectra of different datasets. (I\u2013L) Pdfs of sampled covariance matrix eigenspectra of different datasets. The datasets correspond to the following examples: column 1: fish data (from fish 1, all fish data are shown in Figure 5\u2014figure supplement 1A\u2013F) from whole-brain light-field imaging; column 2: fish data from whole-brain light-sheet imaging; column 3: mouse data from multi-area Neuropixels recording; column 4: mouse data from two-photon visual cortex recording.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Red: eigenspectrum of the original data covariance matrix. Blue: eigenspectrum of the covariance matrix with negative entries replaced by zeros. In this figure, all neurons recorded in each fish were utilized without any sampling. (A\u2013F) fish 1 to fish 6.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Analysis of multi-area Neuropixels recordings (Stringer et al., 2019b) from 1024 neurons, downsampled to different rates resulting in 7200 time frames per condition (6, 12, 18, and 24 Hz; columns 1\u20134, respectively). (A\u2013D) Distribution of pairwise covariances after normalization to unit variance ($E(\\sigma_{i}^{2})=1$, see Methods). (E\u2013H) Eigenvalue spectra of the covariance matrices, showing similar power-law scaling across sampling rates. (I\u2013L) Probability density functions (PDFs) of the eigenvalues, demonstrating that the characteristic shape of the distribution is preserved across different temporal resolutions.\n\nBuilding upon our theoretical results, we further explore the connection between the spatial arrangement of neurons and their locations in functional space, which allows us to distinguish among three sampling approaches: random sampling, anatomical sampling (akin to optical recording of all neurons within a specific region of the brain) and functional sampling (Meshulam et al., 2019). Our ERM theory makes distinct predictions regarding the scaling relationship between dimensionality and the size of cell assembly, as well as the shape of covariance eigenspectrum under various sampling methods. Taken together, our results offer a new perspective for interpreting brain-wide activity and unambiguously show its organizing principles, with unexplored consequences for neural computation.\n\n## Results\n\n### Geometry of neural activity across random cell assemblies in zebrafish brain\n\nWe recorded brain-wide Ca2+activity at a volume rate of 10 Hz in head-fixed larval zebrafish (Figure 2A) during hunting attempts (Methods) and spontaneous behavior using a Fourier light-field microscopy (Cong et al., 2017). Approximately 2000 ROIs (1977.3 \u00b1 677.1, mean \u00b1 SD) with a diameter of 16.84 \u00b1 8.51 \u00b5m were analyzed per fish based on voxel activity (Methods, Figure 2\u2014figure supplement 1). These ROIs likely correspond to multiple nearby neurons with correlated activity. Henceforth, we refer to the ROIs as \u2018neurons\u2019 for simplicity.\n\nWe first investigate the dimensionality of neural activity $D_{PR}$ (Figure 1B) in a randomly chosen cell assembly in zebrafish, similar to multi-area Neuropixels recording in a mammalian brain. We focus on how $D_{PR}$ changes with a large sample size $N$. We find that if the mean squared covariance remains finite instead of vanishing with $N$, the dimensionality $D_{PR}$ (Figure 1B) becomes sample size independent and depends only on the variance $\\sigma_{i}^{2}$ and the covariance $C_{ij}$ between neurons $i$ and $j$:\n\n$$\nlimN\u2192\u221eD_{PR}=\\frac{E(\\sigma_{i}^{2})^{2}}{E_{i\\neqj}(C_{ij}^{2})},\n$$\n\nwhere $E(\u2026)$ denotes average across neurons (Methods and Dahmen et al., 2020). The finite mean squared covariance condition is supported by the observation that the neural activity covariance $C_{ij}$ is positively biased and widely distributed with a long tail (Figure 2\u2014figure supplement 2A). As predicted, the data dimensionality grows with sample size and reaches the maximum value specified by Equation 1 (Figure 2D).\n\nNext, we investigate the shape of the neural activity space described by the eigenspectrum of the covariance matrix derived from the activity of $N$ randomly selected neurons (Figure 2C). When the eigenvalues are arranged in descending order and plotted against the normalized rank $r/N$, where $r=1,\u2026,N$ (we refer to it as the rank plot), this curve shows an approximate power law that spans 10 folds. Interestingly, as the size of the covariance matrices decreases ($N$ decreases), the eigenspectrum curves nearly collapse over a wide range of eigenvalues. This pattern holds across diverse datasets and experimental techniques (Figure 2F, Figure 2\u2014figure supplement 2E\u2013L). The similarity of the covariance matrices of randomly sampled neural populations can be intuitively visualized (Figure 2E), after properly sorting the neurons (Methods).\n\nThe scale invariance in the neural covariance matrix \u2013 the collapse of the covariance eigenspectrum under random sampling \u2013 is non-trivial. The spectrum is not scale invariant in a common covariance matrix model based on independent noise (Figure 2G). It is absent when replacing the neural covariance matrix eigenvectors with random ones, keeping the eigenvalues identical (Figure 2H). A recurrent neural network with random connectivity (Hu and Sompolinsky, 2022) does not yield a scale-invariant covariance spectrum (Figure 2I). A recently developed latent variable model (Morrell et al., 2024; Appendix 1\u2014figure 6), which is able to reproduce avalanche criticality, also fails to generate the scale-invariant covariance spectrum. Thus, a new model is needed for the covariance matrix of neural activity.\n\n### Modeling covariance by organizing neurons in functional space\n\nDimension reduction methods simplify and visualize complex neuron interactions by embedding them into a low-dimensional map, within which nearby neurons have similar activities. Inspired by these ideas, we use the ERM (M\u00e9zard et al., 1999) to model neural covariance. Imagine sprinkling neurons uniformly distributed on a $d$-dimensional functional space of size $L$ (Figure 3A), where the distance between neurons $i$ and $j$ affects their correlation. Let $x\u2192_{i}$ represent the functional coordinate of the neuron $i$. The distance-correlation dependency is described by kernel function$f(x\u2192_{i}\u2212x\u2192_{j})>0$ with $f(0)=1$, indicating closer neurons have stronger correlations, and decreases as distance $\u2016x\u2192_{i}\u2212x\u2192_{j}\u2016$ increases (Figure 3A and Methods). To model the covariance, we extend the ERM by incorporating heterogeneity of neuron activity levels (shown as the size of the neuron in the functional space in Figure 3A).\n\n$$\nC_{ij}=\\sigma_{i}\\sigma_{j}f(x\u2192_{i}\u2212x\u2192_{j}),i,j=1,2,\u2026,N.\n$$\n\nThe variance of neural activity $\\sigma_{i}^{2}$ is drawn i.i.d. from a given distribution and is independent of neurons\u2019 position.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the ERM model, which reorganizes neurons (circles) from the anatomical space to the functional space (here $d=2$ is a two-dimensional box). The correlation between a pair of neurons decreases with their distance in the functional space according to a kernel function $f(x\u2192)$. This correlation is then scaled by neurons\u2019 variance $\\sigma_{i}^{2}$ (circle size) to obtain the covariance $C_{ij}$. (B) An example ERM correlation matrix (i.e., when $\\sigma_{i}^{2}\u22611$). (C) Spectrum (same as Figure 2F) for the ERM correlation matrix in (B). The gray dots represent the sorted variances $C_{ii}$ of all neurons (same as in Figure 2F). (D) Visualizing the distribution of the same ERM eigenvalues in C by plotting the probability density function (pdf).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Covariance spectra under different kernel functions $f(x\u2192)$.The figure presents both the sampled eigenvalue rank plot and the pdf of Euclidean Random Matrix (ERM) with different functions $f(x\u2192)$ and varying dimensions $d$, where panels (A\u2013D, I, J) display the rank plot and panels (E\u2013H, K, L) show the pdf of ERM. (A, E) Exponential function $f(x\u2192)=e^{\u2212\\frac{\u2016x\u2016}{b}}$ where $b=1$ and dimension $d=2$. (B, F) Exponential function $f(x\u2192)=e^{\u2212\\frac{\u2016x\u2016}{b}}$ where $b=1$ and dimension $d=3$. (C, G) Gaussian pdf $f(x\u2192)=e^{\u2212\\frac{\u2016x\u2016^{2}}{2\\sigma_{x}^{2}}}$ where $\\sigma_{x}^{2}=0.1$ and dimension $d=2$. (D, H) Gaussian pdf $f(x\u2192)=e^{\u2212\\frac{\u2016x\u2016^{2}}{2\\sigma_{x}^{2}}}$ where $\\sigma_{x}^{2}=0.1$ and dimension $d=3$. (I, K) t pdf (Equation 11) and dimension $d=2$. (J, L) t pdf (Equation 11) and dimension $d=3$. The ERM simulations were conducted 100 times and each ERM used an identical sampling technique described in (Methods). The results represent mean \u00b1 SEM. (M) Summary of CIs for different $f(x\u2192)$ and $d$. On the x-axis labels, \u2018e\u2019 denotes the Exponential function $f(x\u2192)$, \u2018g\u2019 denotes the Gaussian pdf $f(x\u2192)$, \u2018t\u2019 denotes the t-distribution pdf $f(x\u2192)$, while \u20182\u2019 and \u20183\u2019 indicate $d=2$ or $d=3$, respectively.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Impact of $\u03b7$ and $d$ on the scale invariance of covariance eigenspectra in the Euclidean Random Matrix (ERM) with $f(x\u2192)=e^{\u2212\u2016x\u2192\u2016^{\u03b7}}$.The columns from left to right correspond to $\u03b7=0.3,0.5,0.7,0.9$, and the rows from top to bottom correspond to $d=1,2,3$ (Equations 2 and 11). Other ERM simulation parameters: $N=4096$, $\u03c1=256$, $L=(N/\u03c1)^{1/d}$, $\u03f5=0.03125$, and $\\sigma_{i}^{2}=1$. Each panel shows a single ERM realization. For visualization purposes, the views in some panels are truncated since we use the same range for the eigenvalues in all panels.\n\nThis multidimensional functional space may represent attributes to which neurons are tuned, such as sensory features (e.g., visual orientation Hubel and Wiesel, 1959, auditory frequency) and movement characteristics (e.g., direction, speed Stefanini et al., 2020; Kropff et al., 2015). In sensory systems, it represents stimuli as neural activity patterns, with proximity indicating similarity in features. For motor control, it encodes movement parameters and trajectories. In the hippocampus, it represents the place field of a place cell, acting as a cognitive map of physical space (O\u2019Keefe, 1976; Moser et al., 2008; Tingley and Buzs\u00e1ki, 2018).\n\nWe first explore the ERM with various forms of $f(x\u2192)$ and find that fast-decaying functions like Gaussian and exponential functions do not produce eigenspectra similar to the data and no scale invariance over random sampling (Figure 3\u2014figure supplement 1A\u2013H and Appendix 2). Thus, we turn to slow-decaying functions including the power law, which produce spectra similar to the data (Figure 3C, D; see also Figure 3\u2014figure supplement 2). We adopt a particular kernel function because of its closed-form and analytical properties: $f(x\u2192)=\u03f5^{\\mu}(\u03f5^{2}+\u2016x\u2192\u2016^{2})^{\u2212\\mu/2}$ (Methods). For large distance $\u2016x\u2192\u2016\u226b\u03f5$, it approximates a power law $f(x\u2192)\u2248\u03f5^{\\mu}\u2016x\u2192\u2016^{\u2212\\mu}$ and smoothly transitions at small distance to satisfy the correlation requirement $f(0)=1$ (Appendix 1\u2014figure 3I, J).\n\n### Analytical theory on the conditions of scale invariance in ERM\n\nTo determine the conditions for scale invariance in ERM, we analytically calculate the eigenspectrum of covariance matrix $C$ (Equation 2) for large $N,L$ using the replica method (M\u00e9zard et al., 1999). A key order parameter emerging from this calculation is the neuron density $\u03c1:=N/L^{d}$. In the high-density regime $\u03c1\u03f5^{d}\u22481$, the covariance spectrum can be approximated in a closed form (Methods). For the slow-decaying kernel function $f(x\u2192)$ defined above, the spectrum for large eigenvalues follows a power law (Appendix 2):\n\n$$\n\\lambda\u223c(r/N)^{\u22121+\\frac{\\mu}{d}}\u03c1^{\\frac{\\mu}{d}},andequivalentlyp(\\lambda)\u223c\u03c1^{\\frac{\\mu}{d\u2212\\mu}}\\lambda^{\u2212\\frac{2d\u2212\\mu}{d\u2212\\mu}},\n$$\n\nwhere r is the rank of the eigenvalues in descending order and $p(\\lambda)$ is their probability density function. Equation 3 intuitively explains the scale invariance over random sampling. Sampling in the ERM reduces the neuron density \u03c1. The eigenspectrum is \u03c1-independent whenever $\\mu/d\u22480$. This indicates two factors contributing to the scale invariance of the eigenspectrum. First, a small exponent \u03bc in the kernel function $f(x\u2192)$ means that pairwise correlations slowly decay with functional distance and can be significantly positive across various functional modules and throughout the brain. For a given \u03bc, an increase in dimension $d$ improves the scale invariance. The dimension $d$ could represent the number of independent features or latent variables describing neural activity or cognitive states.\n\nWe verify our theoretical predictions by comparing sampled eigenspectra in finite-size simulated ERMs across different $\\mu$ and $d$ (Figure 4A). We first consider the case of homogeneous neurons ($\\sigma_{i}^{2}\u22611$ in Equation 2, revisited later) in these simulations (Figures 3C, D, 4A), making $C$\u2019s entries correlation coefficients. To quantitatively assess the level of scale invariance, we introduce a collapse index (CI, see Methods for a detailed definition). Motivated by Equation 3, the CI measures the shift of the eigenspectrum when the number of sampled neurons changes. The smaller CI values indicate higher scale invariance. Intuitively, it is defined as the area between spectrum curves from different sample sizes (Figure 4A, upper right). In the log\u2013log scale rank plot, Equation 3 shows the spectrum shifts vertically with $\u03c1$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig4-v1.jpg)\n\n**Figure 4.:** (A) Impact of $\\mu$ and $d$ (see text) on the scale invariance of Euclidean Random Matrix (ERM) spectrum (same plots as Figure 3C) with $f(x\u2192)=\u03f5^{\\mu}(\u03f5^{2}+\u2016x\u2192\u2016^{2})^{\u2212\\mu/2}$. The degree of scale invariance is quantified by the collapse index (CI), which essentially measures the area between different spectrum curves (upper right inset). For comparison, we fix the same coordinate range across panels hence some plots are cropped. The gray dots represent the sorted variances $C_{ii}$ of all neurons (same as in Figure 2F). (B) Top: sampled correlation matrix spectrum in an example animal (fish 1). Bottom: same as top but for the covariance matrix that incorporates heterogeneous variances. The gray dots represent the sorted variances $C_{ii}$ of all neurons (same as in Figure 2F). (C) The CI of the correlation matrix (filled squares) is found to be larger than that for the covariance matrix (opened squares) across different datasets: f1 to f6: six light-field zebrafish data (10 Hz per volume, this paper); fl: light-sheet zebrafish data (2 Hz per volume, Chen et al., 2018); mn: mouse Neuropixels data (downsampled to 10 Hz per volume); mp: mouse two-photon data (3 Hz per volume, Stringer et al., 2019b).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013C) Rank plots of the normalized eigenspectra ($\\lambda/\u03c1$), with the simulations obtained using correlation matrix (sim: corr, $\\sigma_{i}^{2}=1$) and covariance matrix (sim: cov, neuron\u2019s activity variance $\\sigma_{i}^{2}$ is i.i.d. sampled from a log-normal distribution with zero mean and a standard deviation of 0.5 in the natural logarithm of the $\\sigma_{i}^{2}$ values; we also normalize $E(\\sigma_{i}^{2})=1$ (Methods)). The curves between \u2018sim: corr\u2019 and \u2018sim: cov\u2019 are nearly identical in panels (A) and (B). The theoretical predictions of normalized eigenvalues $\\lambda/\u03c1$ are obtained using the high-density theory (cyan, Equation 12). The density \u03c1 decreases from panel (A) to panel (C) ($\u03c1=1024,256,10.24$, respectively). (D\u2013F) Numerical validation of the theoretical spectrum by comparing probability density functions for increasing density of covariance ERM ($\u03c1=1024,256,10.24$, respectively). Other simulation parameters: $N=1024$, $d=2$, $L=(N/\u03c1)^{1/d}$, $\\mu=0.5$, $\u03f5=0.03125$. The ERM simulations were conducted 100 times. The results are presented as the mean \u00b1 SEM.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The CI as a function of the heterogeneity of neural activity levels $E(\\sigma_{i}^{4})$. We generate Euclidean Random Matrix (ERM) where each neuron\u2019s activity variance $\\sigma_{i}^{2}$ is i.i.d. sampled from a log-normal distribution where the logarithm of the variable follows a normal distribution with zero mean and a sequence of standard deviation ($0,0.05,0.1,\u2026,0.5$) in the natural logarithm of the values $\\sigma_{i}^{2}$. We also normalize $E(\\sigma_{i}^{2})=1$ (Methods). The solid blue line is the average across 100 ERM simulations, and the shaded area represents the SD. The red line results from the Gaussian variational method with simulation value integration limit $q_{s}^{s}$. The green line is the result of the Gaussian variational method with high-density value integration limit $q_{s}^{h}$ (Methods). $\u03c1_{0}=128$. (B) Same as A, but with a smaller $\u03c1_{0}=10.24$. Other parameters: $\\mu=0.5$, $d=2$, $N=1024$, $L=(N/\u03c1)^{1/d}$, $\u03f5=0.03125$. (C) The collapse index (CI) of the correlation matrix (filled symbols) is larger than that of the covariance matrix (opened symbols) across different datasets excluding those shown in Figure 4. We use 7200 time frame data across all the datasets. l2 to l3: light-sheet zebrafish data (2 Hz per volume); n2 to n3: Neuropixels mouse data, downsampled to 10 Hz per volume, p2 to p3: two-photon mouse data (3 Hz per volume).\n\nThus, we define CI as this average displacement (Figure 4A, upper right, Methods), and a smaller CI means more scale invariant. Using CI, Figure 4A shows that scale invariance improves with slower correlation decay as $\\mu$ decreases and the functional dimension $d$ increases. Conversely, with large $\\mu$ and small $d$, the covariance eigenspectrum varies significantly with scale (Figure 4A).\n\nNext, we consider the general case of unequal neural activity levels $\\sigma_{i}^{2}$ and check for differences between the correlation (equivalent to $\\sigma_{i}^{2}\u22611$) and covariance matrix spectra. Using the collapsed index (CI), we compare the scale invariance of the two spectra in the experimental data. Intriguingly, the CI of the covariance matrix is consistently smaller (more scale-invariant) across all datasets (Figure 4C, Figure 4\u2014figure supplement 2C, open vs. closed squares), indicating that the heterogeneity of neuronal activity variances significantly affects the eigenspectrum and the geometry of neural activity space (Tian et al., 2024). By extending our spectrum calculation to the intermediate density regime $\u03c1\u03f5^{d}\u226a1$ (Methods), we show that the ERM model can quantitatively explain the improved scale invariance in the covariance matrix compared to the correlation matrix (Figure 4\u2014figure supplement 2B; Table 1).\n\n**Table 1.**\n Table of notations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Notation</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>C\\begin{document}$C$\\end{document}</td>\n      <td>Covariance matrix, Equation 2</td>\n    </tr>\n    <tr>\n      <td>Cij\\begin{document}$C_{ij}$\\end{document}</td>\n      <td>Pairwise covariance between neuron i, j; entries of C\\begin{document}$C$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>DPR\\begin{document}$D_{\\rm PR}$\\end{document}</td>\n      <td>Participation ratio dimension, Equation 5</td>\n    </tr>\n    <tr>\n      <td>DPRASap\\begin{document}$D_{\\rm PR}^{\\rm ASap}$\\end{document}</td>\n      <td>Anatomical sampling dimension, Equation 4</td>\n    </tr>\n    <tr>\n      <td>\u03bb</td>\n      <td>Eigenvalue of a covariance matrix C\\begin{document}$C$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>p(\u03bb)\\begin{document}$p(\\lambda)$\\end{document}</td>\n      <td>Probability density function of covariance eigenvalues, Equation 8</td>\n    </tr>\n    <tr>\n      <td>r</td>\n      <td>Rank of an eigenvalue in descending order, Equation 3</td>\n    </tr>\n    <tr>\n      <td>q</td>\n      <td>Fraction of eigenvalues up to \u03bb and q=r/N\\begin{document}$q=r/N$\\end{document}; Equation 13</td>\n    </tr>\n    <tr>\n      <td>f(x\u2192)=f(\u2016x\u2192i\u2212x\u2192j\u2016)\\begin{document}$f(\\vec x)=f(\\|\\vec x_i-\\vec x_j\\|)$\\end{document}</td>\n      <td>Kernel function or distance-correlation function, Equation 11</td>\n    </tr>\n    <tr>\n      <td>f~(k\u2192)\\begin{document}$\\tilde f(\\vec k)$\\end{document}</td>\n      <td>Fourier transform of f(x\u2192),f~(k\u2192)=\u222bRdf(x\u2192)e\u2212ix\u2192\u22c5k\u2192ddx\u2192\\begin{document}$f(\\vec{x}), \\tilde{f}(\\vec{k})=\\int_{\\mathbb{R}^d} f(\\vec{x}) e^{-i \\vec{x} \\cdot \\vec{k}}d^{d}\\vec x$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>\u03bc</td>\n      <td>Power-law exponent in f(x\u2192)\\begin{document}$f(\\vec x)$\\end{document} , Equation 11</td>\n    </tr>\n    <tr>\n      <td>\u03b5</td>\n      <td>Resolution parameter in f(x\u2192)\\begin{document}$f(\\vec x)$\\end{document} to smooth the singularity near 0, Equation 11</td>\n    </tr>\n    <tr>\n      <td>N\\begin{document}$N$\\end{document}</td>\n      <td>Number of neurons</td>\n    </tr>\n    <tr>\n      <td>N0\\begin{document}$N_0$\\end{document}</td>\n      <td>The total number of neurons prior to sampling</td>\n    </tr>\n    <tr>\n      <td>k</td>\n      <td>N/N0\\begin{document}$N/N_0$\\end{document} the fraction of sampled neurons</td>\n    </tr>\n    <tr>\n      <td>L\\begin{document}$L$\\end{document}</td>\n      <td>Linear box size of the functional space</td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>Density of neurons in the functional space, Equation 3</td>\n    </tr>\n    <tr>\n      <td>d\\begin{document}$d$\\end{document}</td>\n      <td>Dimension of the functional space, Equation 3</td>\n    </tr>\n    <tr>\n      <td>ai(t)\\begin{document}$a_i(t)$\\end{document}</td>\n      <td>Neural activity of neuron i at time t</td>\n    </tr>\n    <tr>\n      <td>\u03c3i2\\begin{document}$\\sigma _i^2$\\end{document}</td>\n      <td>Temporal variance of neural activity, Equation 2</td>\n    </tr>\n    <tr>\n      <td>Cl</td>\n      <td>Collapse index for measuring scale invariance, Equation 13</td>\n    </tr>\n    <tr>\n      <td>\u03b1</td>\n      <td>Power-law coefficient of eigenspectrum in the rank plot, see Discussion</td>\n    </tr>\n    <tr>\n      <td>x\u2192i,y\u2192i\\begin{document}$\\vec x_i,\\vec y_i$\\end{document}</td>\n      <td>Neuron i's coordinate in the functional and anatomical space, respectively</td>\n    </tr>\n    <tr>\n      <td>v\u2192func,v\u2192anat\\begin{document}$\\vec v_{func},\\vec v_{anat}$\\end{document}</td>\n      <td>The first canonical directions in the functional and anatomical space, respectively</td>\n    </tr>\n    <tr>\n      <td>RCCA\\begin{document}$R_{\\rm CCA}$\\end{document}</td>\n      <td>The first canonical correlation</td>\n    </tr>\n    <tr>\n      <td>RASap\\begin{document}$R_{\\rm ASap}$\\end{document}</td>\n      <td>Correlation between anatomical and functional coordinates along ASap direction, Equation 4</td>\n    </tr>\n  </tbody>\n</table>\n\nLastly, we examine factors that turn out to have minimal impact on the scale invariance of the covariance spectrum. First, the shape of the kernel function $f(x\u2192)$ over a small distance (small distance means f(x) near x = 0 in the functional space, Appendix 1\u2014figure 3) does not affect the distribution of large eigenvalues (Appendix 1\u2014figure 3, Table 3, Appendix 1\u2014figure 2, Appendix 1\u2014figure 1A).\n\nThis supports our use of a specific $f(x\u2192)$ to represent a class of slow-decaying kernels. Second, altering the spatial distribution of neurons in the functional space, whether using a Gaussian, uniform, or clustered distribution, does not affect large covariance eigenvalues, except possibly the leading ones (Appendix 1\u2014figure 1B, Appendix 1). Third, different geometries of the functional space, such as a flat square, a sphere, or a hemisphere, result in eigenspectra similar to the original ERM model (Appendix 1\u2014figure 1C). These findings indicate that our theory for the covariance spectrum\u2019s scale invariance is robust to various modeling details.\n\n### Connection among random sampling, functional sampling, and anatomical sampling\n\nSo far, we have focused on random sampling of neurons, but how does the neural activity space change with different sampling methods? To this end, we consider three methods (Figure 5A1): random sampling (RSap), anatomical sampling (ASap) where neurons in a brain region are captured by optical imaging (Grewe and Helmchen, 2009; Gauthier and Tank, 2018; Stringer et al., 2019a), and functional sampling (FSap) where neurons are selected based on activity similarity (Meshulam et al., 2019). In ASap or FSap, sampling involves expanding regions of interest in anatomical space or functional space while measuring all neural activity within those regions (Appendix 1). The difference among sampling methods depends on the neuron organization throughout the brain. If anatomically localized neurons also cluster functionally (Figure 5A4), ASap \u2248 FSap; if they are spread in the functional space (Figure 5A2), ASap \u2248 RSap. Generally, the anatomical\u2013functional relationship is in-between and can be quantified using the Canonical Correlation Analysis (CCA). This technique finds axes (CCA vectors $v\u2192_{anat}$ and $v\u2192_{func}$) in anatomical and functional spaces such that the neurons\u2019 projection along these axes has the maximum correlation, $R_{CCA}$. The extreme scenarios described above correspond to $R_{CCA}=1$ and $R_{CCA}=0$.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig5-v1.jpg)\n\n**Figure 5.:** (A) Three sampling methods (A1) and $R_{CCA}$ (see text). When $R_{CCA}\u22480$ (A2), the anatomical sampling (ASap) resembles the random sampling (RSap), and while when $R_{CCA}\u22481$ (A4), ASap is similar to the functional sampling (FSap). (B) Distribution of neurons in the functional space inferred by MDS. Each neuron is color-coded by its projection along the first canonical direction $v\u2192_{anat}$ in the anatomical space (see text). Data based on fish 6, same for (C-E). (C) Similar to (B) but plotting neurons in the anatomical space with color based on their projection along $v\u2192_{func}$ in the functional space (see text). (D) Dimensionality ($D_{PR}$) across sampling methods: average $D_{PR}$ under RSap (circles), average and individual brain region $D_{PR}$ under ASap (squares and dots), and $D_{PR}$ under FSap for the most correlated neuron cluster (triangles; Methods). Dashed and solid lines are theoretical predictions for $D_{PR}$ under RSap and FSap, respectively (Methods). (E) The CI of correlation matrices under three sampling methods in six animals (colors). **p < 0.01; ***p < 0.001; one-sided paired t tests: RSap versus ASap, p = 0.0010; RSap versus FSap, p = 0.0004; ASap versus FSap, p = 0.0014.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Comparison of sampled covariance eigenspectra in fish data and fitted ERM models. The columns correspond to six light-field zebrafish data: fish 1 to fish 6. Number of time frames: fish 1 \u2013 7495, fish 2 \u2013 9774, fish 3 \u2013 13,904, fish 4 \u2013 7318, fish 5 \u2013 7200, and fish 6 \u2013 9388. (A\u2013F) sampled covariance eigenspectra for different fish data. (G\u2013L) Same as (A\u2013F) but for ERM models with fitted parameters ($\\mu/d$, $L$), functional coordinates inferred using MDS, and the experimental $\\sigma_{i}$. (M\u2013R) Same as (A\u2013F) but for ERM models with fitted parameters ($\\mu/d$, $L$), uniform distributed functional coordinates, and a log-normal distribution of $\\sigma^{2}$. $\\mu/d=[0.456,0.258,0.205,0.262,0.302,0.308]$ in fish 1\u20136.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Comparison of the covariance matrix between fish data and our fitted model. The columns correspond to six light-field zebrafish data: fish 1 to fish 6. (A\u2013F) The covariance matrix of different fish data. (G\u2013L) The covariance matrix of ERM models with fitted parameters ($\\mu$, $L$) and functional coordinates inferred using MDS and the experimental $\\sigma_{i}$.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Columns correspond to five light-field zebrafish data: fish 1 to fish 6. (A\u2013F) Comparison of the power-law kernel function $f(x\u2192)$ in the model (blue line) and the correlation\u2013distance relationship in the data (red line). The distance is calculated from the inferred coordinates using MDS. The shaded area represents the SD. (G\u2013L) Same as (A\u2013D) but on the log\u2013log scale.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Columns correspond to six light-field zebrafish data: fish 1 to fish 6. (A\u2013F) CCA correlation between the first CCA variables with different embedding dimensions in the functional space. Blue line indicates the CCA correlation of example fish data, green line shows the CCA correlation of example fish data with shuffled functional coordinates, and error bars represent the SD.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** Columns correspond to five light-field zebrafish data: fish 1 to fish 5 (with fish 6 has been shown in Figure 5). (A\u2013E) Distribution of neurons in the functional space, where each neuron is color-coded by the projection of its coordinate along the canonical axis $b\u2192_{1}$ in anatomical space (see text in Result). Arrow: the first CCA direction $a\u2192_{1}$ in functional space. (F\u2013J) Distribution of neurons in the anatomical space with the forebrain neuron located on the left side and the hindbrain neuron on the right side. Each neuron is color-coded by the projection of its coordinate along the canonical axis $a\u2192_{1}$ in functional space (see text in Result). Arrow: the first CCA direction $b\u2192_{1}$ in anatomical space.\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig5-figsupp6-v1.jpg)\n\n**Figure 5\u2014figure supplement 6.:** Dimensionality ($D_{PR}$) across sampling methods in fish data.(A\u2013F) Result from fish 1 to fish 6: mean RSap $D_{PR}$ (circles), mean (squares), and individual ASap $D_{PR}$, and FSap\u2019s most correlated cluster $D_{PR}$ (triangles). Dashed and solid lines indicate RSap and uniform FSap theoretical predictions, respectively.\n\n![Figure 5\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/100666/elife-100666-fig5-figsupp7-v1.jpg)\n\n**Figure 5\u2014figure supplement 7.:** Dimensionality ($D_{PR}$) across sampling methods in Euclidean Random Matrix (ERM).PR dimensionality result of ERM model, coordinate in funcitonal and anatomical space are multivariate Gaussian distribution, the CCA correlation between funcitonal and anatomical space are $R_{CCA}=0.4,0.6,0.8$ in (A\u2013C). Mean RSap $D_{PR}$ (circles), mean (squares), and individual ASap $D_{PR}$, and FSap\u2019s most correlated cluster $D_{PR}$ (triangles). Dashed and solid lines indicate RSap and uniform FSap theoretical predictions, respectively. ERM parameter:$\\mu=0.6$ , $d=2$, functional coordinates follow a multivariate normal distribution with variance $\\sigma_{x1}^{2}=2,\\sigma_{x2}^{2}=1$, anatomical coordinates follow a multivariate normal distribution with variance $\\sigma_{y1}^{2}=1,\\sigma_{y2}^{2}=1,\\sigma_{y3}^{2}=1$.\n\nTo determine the anatomical\u2013functional relationship in neural data, we infer the functional coordinates $x\u2192_{i}$ of each neuron by fitting the ERM using multidimensional scaling (MDS) (Cox and Cox, 2000) (Methods). For simplicity and better visualization, we use a low-dimensional functional space where $d=2$. The fitted functional coordinates confirm the slow decay kernel function in ERM except for a small distance (Figure 5\u2014figure supplement 3). The ERM with inferred coordinates $x\u2192_{i}$ also reproduces the experimental covariance matrix, including cluster structures (Figure 5\u2014figure supplement 2) and its sampling eigenspectra (Figure 5\u2014figure supplement 1).\n\nEquipped with the functional and anatomical coordinates, we next use CCA to determine which scenarios illustrated in Figure 5A align better with the neural data. Figure 5B, C shows a representative fish with a significant $R_{CCA}=0.327$ (p-value = 0.0042, Anderson\u2013Darling test). Notably, the CCA vector in the anatomical space, $v\u2192_{anat}$, aligns with the rostrocaudal axis. Coloring each neuron in the functional space by its projection along $v\u2192_{anat}$ shows a correspondence between clustering and anatomical coordinates (Figure 5B). Similarly, coloring neurons in the anatomical space (Figure 5C) by their projection along $v\u2192_{func}$ reveals distinct localizations in regions like the forebrain and optic tectum. Across animals, functionally clustered neurons show anatomical segregation (Chen et al., 2018), with an average $R_{CCA}$ of 0.335 \u00b1 0.054 (mean \u00b1 SD).\n\nNext, we investigate the effects of different sampling methods (Figure 5A1) on the geometry of the neural activity space when there is a significant but moderate anatomical\u2013functional correlation as in the experimental data. Interestingly, dimensionality $D_{PR}^{ASap}$ in data under anatomical sampling consistently falls between random and functional sampling values (Figure 5D). This phenomenon can be intuitively explained by the ERM theory. Recall that for large $N$, the key term in Equation 1 is $E_{i\\neqj}(C_{ij}^{2})$. For a fixed number of sampled neurons, this average squared covariance is maximized when neurons are selected closely in the functional space (FSap) and minimized when distributed randomly (RSap). Thus, RSap and FSap $D_{PR}$ set the upper and lower bounds of dimensionality, with ASap expected to fall in between. This reasoning can be precisely formulated to obtain quantitative predictions of the bounds (Methods). We predict the ASap dimension at large $N$ as\n\n$$\nD_{PR}^{ASap}\u2248(1\u2212R_{ASap}^{2}+k^{2}R_{ASap}^{2})^{\\mu/d}D_{PR}.\n$$\n\nHere, $D_{PR}$ is the dimensionality under RSap (Equation 1), $k$ represents the fraction of sampled neurons. $R_{ASap}$ is the correlation between anatomical and functional coordinates along the direction where the anatomical subregions are divided (Methods), and it is bounded by the canonical correlation $R_{ASap}\\leqR_{CCA}$. When $R_{ASap}=0$, we get the upper bound $D_{PR}^{ASap}=D_{PR}$ (Figure 5D, dashed line). The lower bound is reached when $R_{ASap}=R_{CCA}=1$ (Figure 5A4), where Equation 4 shows a scaling relationship $D_{PR}^{ASap}=D_{PR}^{FSap}\u223ck^{2\\mu/d}D_{PR}$ that depends on the sampling fraction $k$ (Figure 5D, solid line). This contrasts with the $k$-independent dimensionality of RSap in Equation 1. Furthermore, if $R_{ASap}$ and its upper bound is not close to 1 (precisely $R_{ASap}\\leq0.84$ for the ERM model in Figure 5D), $D_{PR}^{ASap}$ align closer to the upper bound of RSap. This prediction agrees well with our observations in data across animals (Figure 5D, Figure 5\u2014figure supplement 6, and Figure 5\u2014figure supplement 7).\n\nBeyond dimensionality, our theory predicts the difference in the covariance spectrum between sampling methods based on the neuronal density \u03c1 in the functional space (Equation 3). This density \u03c1 remains constant during FSap (Figure 5A1) and decreases under RSap; the average density across anatomical regions $\u27e8\u03c1\u27e9$ in ASap lies between those of FSap and RSap. Analogous to Equation 4, the relationship in \u03c1 orders the spectra: ASap\u2019s spectrum lies between those of FSap and RSap (Methods). This further implies that the level of scale invariance under ASap should fall between that of RSap and FSap, which is confirmed by our experimental data (Figure 5E).\n\n## Discussion\n\n### Impact of hunting behavior on scale invariance and functional space organization\n\nHow does task-related neural activity shape the covariance spectrum and brain-wide functional organization? We examine the hunting behavior in larval zebrafish, marked by eye convergence (both eyes move inward to focus on the central visual field) (Bianco et al., 2011). We find that scale invariance of the eigenspectra persists and is enhanced even after removing the hunting frames from the Ca2+ imaging data (Figure 4C, Appendix 1\u2014figure 7A, B, Appendix 1). This is consistent with the scale-invariant spectrum found in other datasets during spontaneous behaviors (Figure 5\u2014figure supplement 1F, Figure 2\u2014figure supplement 2G, H), suggesting scale invariance is a general phenomenon.\n\nInterestingly, in the inferred functional space, we observe reorganizations of neurons after removing hunting behavior (Appendix 1\u2014figure 7C, D). Neurons in one cluster disperse from their center of mass (Appendix 1\u2014figure 7D) and decreases the local neuronal density \u03c1 (Appendix 1 and Appendix 1\u2014figure 7E). The neurons in this dispersed cluster have a consistent anatomical distribution from the midbrain to the hindbrain in four out of five fish (Appendix 1\u2014figure 9). During hunting, the cluster has robust activations that are widespread in the anatomical space but localized in the functional space (Appendix 1, Appendix 1\u2014Video 1).\n\nOur findings suggest that the functional space could be defined by latent variables that represent cognitive factors such as decision-making, memory, and attention. These variables set the space\u2019s dimensions, with neural activity patterns reflecting cognitive state dynamics. Functionally related neurons \u2013 through sensory tuning, movement parameters, internal conditions, or cognitive factors \u2013 become closer in this space, leading to stronger activity correlations.\n\n### Criticality and power law\n\nWhat drives brain dynamics with a slow-decaying distance\u2013correlation function $f(x\u2192)$ in functional space? Long-range connections and a slow decline in projection strength over distance (Kunst et al., 2019) may cause extensive correlations, enhancing global activity patterns. This behavior is also reminiscent of phase transitions in statistical mechanics (Kardar, 2007), where local interactions lead to expansive correlated behaviors. Studies suggest that critical brains optimize information processing (Beggs and Plenz, 2003; Dahmen et al., 2019). The link between neural correlation structures and neuronal connectivity topology is an exciting area for future exploration.\n\nIn the high-density regime of the ERM model, the rank plot (Equation 3) for large eigenvalues ($\\lambda>1$) follows a power law $\\lambda\u223cr^{\u2212\\alpha}$, with $\\alpha=1\u2212\\mu/d<1$. The scale-invariant spectrum occurs when \u03b1 is close to 1. Experimental data, however, align more closely with the model in the intermediate-density regime, where the power-law spectrum is an approximation and the decay is slower (for ERM model, Figure 4\u2014figure supplement 1BC, and for data $\\alpha=0.47\\pm0.08$, mean \u00b1 SD, n =6 fish). Stringer et al., 2019a found an $\\alpha\u22731$ decay in the mouse visual cortex\u2019s stimulus trial averaged covariance spectrum, and they argued that this decay optimizes visual code efficiency and smoothness. Our study differs in two fundamental ways. First, we recorded brain-wide activity during spontaneous or hunting behavior, calculating neural covariance from single-trial activity. Much of the neural activity was not driven by sensory stimulus and unrelated to specific tasks, requiring a different interpretation of the neural covariance spectrum. Second, without loss of generality, we normalized the mean variance of neural activity $E(\\sigma^{2})$ by scaling the covariance matrix so that its eigenvalues sum up to $N$. This normalization imposes a constraint on the spectrum. In particular, large and small eigenvalues may have different behaviors and do not need to obey a single power law $\\lambda\u223cr^{\u2212\\alpha}$ for all $N$ eigenvalues (Pospisil and Pillow, 2024) (Methods). Stringer et al., 2019a did not take this possibility into account, making their theory less applicable to our analysis.\n\nWe draw inspiration from the renormalization group (RG) approach to navigate neural covariance across scales, which has also been explored in the recent literature. Following Kadanoff\u2019s block spin transformation (Kardar, 2007, Meshulam et al., 2019) formed size-dependent neuron clusters and their covariance matrices by iteratively pairing the most correlated neurons and placing them adjacent on a lattice. The groups expanded until the largest reached the system size. The RG process, akin to spatial sampling in functional space (FSap), maintains constant neuron density \u03c1. Thus, for any kernel function $f(x\u2192)$, including the power law and exponential, the covariance eigenspectrum remains invariant across scales (Appendix 1\u2014figure 5A, B, D, E).\n\nMorrell et al., 2024; Morrell et al., 2021 proposed a simple model in which a few time-varying latent factors impact the whole neural population. We evaluated if this model could account for the scale invariance seen in our data. Simulations showed that the resulting eigenspectra differed considerably from our findings (Appendix 1\u2014figure 6). Although the Morrell model demonstrated a degree of scale invariance under functional sampling (or RG), it did not align with the scale-invariant features under random sampling, suggesting that this simple model might not capture all crucial features in our observations.\n\nWe emphasize that the covariance spectrum being a power law is distinct from the scale invariance we define in this study, namely the collapse of spectrum curves under random neuron sampling. The random RNN model in Figure 2I shows a power-law behavior, but lacks true scale invariance as spectrum curves for different sizes do not collapse. When connection strength $g$ approaches 1, the system exhibits a power-law spectrum of $\\lambda\u221d(\\frac{r}{N})^{\u2212\\frac{3}{2}}$. Subsampling causes the spectrum to shift by $\\lambda\u221dk^{\u2212\\frac{1}{2}}(\\frac{r}{N})^{\u2212\\frac{3}{2}}$, where $k=N_{s}/N$ is the sampling fraction (derived from Equation 24 in Hu and Sompolinsky, 2022).\n\n### Bounded dimensionality under random sampling\n\nThe saturation of the dimensionality $D_{PR}$ at large sample sizes indicates a limit to neural assembly complexity, evidenced by the finite mean square covariance. This is in contrast with neural dynamics models such as the balanced excitatory\u2013inhibitory (E\u2013I) neural network (Renart et al., 2010), where $E_{i\\neqj}(C_{ij}^{2})\u223c1/N$ resulting in an unbounded dimensionality (see Appendix 2). Our results suggest that the brain encodes experiences, sensations, and thoughts using a finite set of dimensions instead of an infinitely complex neural activity space.\n\nWe found that the relationship between dimensionality and the number of recorded neurons depends on the sampling method. For functional sampling, the dimensionality scales with the sampling fraction $k:D_{PR}^{FSap}\u223ck^{2\\mu/d}D_{PR}$. This suggests that if anatomically sampled neurons are functionally clustered, as with cortical neurons forming functional maps, the increase in dimensionality with neuron number may seem unbounded. This offers new insights for interpreting large-scale neural activity data recorded under various techniques.\n\nManley et al., 2024 found that, unlike in our study, neural activity dimensionality in head-fixed, spontaneously behaving mice did not saturate. They used shared variance component analysis (SVCA) and noted that PCA-based estimates often show dimensionality saturation, which is consistent with our findings. We intentionally chose PCA in our study for several reasons. First, PCA is a trusted and widely used method in neuroscience, proven to uncover meaningful patterns in neural data. Second, its mathematical properties are well understood, making it particularly suitable for our theoretical analysis. Although newer methods such as SVCA might offer valuable insights, we believe PCA remains the most appropriate method for our research questions.\n\nIt is important to note that the scale invariance of dimensionality and covariance spectrum are distinct phenomena with different underlying requirements. Dimensionality invariance relies on finite mean square covariance, causing saturation at large sample sizes. In contrast, spectral invariance requires a slow-decaying correlation kernel (small $\\mu$) and/or a high-dimensional functional space (large $d$). Although both features appear in our data, they result from distinct mechanisms. A neural system could show saturating dimensionality without spectral invariance if it has finite mean square covariance but rapidly decaying correlations with functional distance. Understanding these requirements clarifies how neural organization affects different scale-invariant properties.\n\n### Computational benefits of a scale-invariant covariance spectrum\n\nOur findings are validated across multiple datasets obtained through various recording techniques and animal models, ranging from single-neuron calcium imaging in larval zebrafish to single-neuron multi-electrode recordings in the mouse brain (see Figure 2\u2014figure supplement 2). The conclusion remains robust when the multi-electrode recording data are reanalyzed under different sampling rates (6\u201324 Hz, Figure 2\u2014figure supplement 4). We also confirm that substituting a few negative covariances with zero retains the spectrum of the data covariance matrix (Figure 2\u2014figure supplement 3 and Methods).\n\nThe scale invariance of neural activity across different neuron assembly sizes could support efficient multiscale information encoding and processing. This indicates that the neural code is robust and requires minimal adjustments despite changes in population size. One recent study shows that randomly sampled and coarse-grained macrovoxels can predict population neural activity (Hoffmann et al., 2023), reinforcing that a random neuron subset may capture overall activity patterns. This enables downstream circuits to readout and process information through random projections (Gao et al., 2017). A recent study demonstrates that a scale-invariant noise covariance spectrum with a specific slope $\\alpha<1$ enables neurons to convey unlimited stimulus information as the population size increases (Moosavi et al., 2024). The linear Fisher information, in this context, grows at least as $N^{1\u2212\\alpha}$.\n\nUnderstanding how dimensionality and spectrum change with sample size also suggests the possibility of extrapolating from small samples to overcome experimental limitations. This is particularly feasible when $\\mu/d\u21920$, where the dimensionality and spectrum under anatomical, random, and functional sampling coincide (Equations 3 and 4). Developing extrapolation methods and exploring the benefits of scale-invariant neural code are promising future research directions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>Tg(elavl3: H2B- GCaMP6f)</td>\n      <td>https://doi.org/10.7554/eLife.12741</td>\n      <td></td>\n      <td>Jiu-Lin Du, Institute of Neuroscience, Chinese Academy of Sciences, Shanghai</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>julia1.7</td>\n      <td>https://julialang.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>https://ww2.mathworks.cn/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Mathematica</td>\n      <td>https://www.wolfram.com/mathematica/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental methods\n\nThe handling and care of the zebrafish complied with the guidelines and regulations of the Animal Resources Center of the University of Science and Technology of China (USTC). All larval zebrafish (huc:h2b -GCaMP6f Cong et al., 2017) were raised in E2 embryo medium (comprising 7.5 mM NaCl, 0.25 mM KCl, 0.5 mM MgSO4, 0.075 mM KH2PO4, 0.025 mM Na2HPO4, 0.5 mM CaCl2, and 0.35 mM NaHCO3; containing 0.5 mg/l methylene blue) at 28.5\u00b0C and with a 14-hr light and 10-hr dark cycle.\n\nTo induce hunting behavior (composed of motor sequences like eye convergence and J turn) in larval zebrafish, we fed them a large amount of paramecia over a period of 4\u20135 days post-fertilization (dpf). The animals were then subjected to a 24-hr starvation period, after which they were transferred to a specialized experimental chamber. The experimental chamber was 20 mm in diameter and 1 mm in depth, and the head of each zebrafish was immobilized by applying 2% low melting point agarose. The careful removal of the agarose from the eyes and tail of the fish ensured that these body regions remained free to move during hunting behavior. Thus, characteristic behavioral features such as J-turns and eye convergence could be observed and analyzed. Subsequently, the zebrafish were transferred to an incubator and stayed overnight. At 7 dpf, several paramecia were introduced in front of the previously immobilized animals, each of which was monitored by a stereomicroscope. Those displaying binocular convergence were selected for subsequent Ca2+ imaging experiments.\n\nWe developed a novel optomagnetic system that allows (1) precise control of the trajectory of the paramecium and (2) imaging brain-wide Ca2+ activity during the hunting behavior of zebrafish. To control the movement of the paramecium, we treated these microorganisms with a suspension of ferric tetroxide for 30 min and selected those that responded to its magnetic attraction. A magnetic paramecium was then placed in front of a selected larva, and its movement was controlled by changing the magnetic field generated by Helmholtz coils that were integrated into the imaging system. The real-time position of the paramecium, captured by an infrared camera, was identified by online image processing. The positional vector relative to a predetermined target position was calculated. The magnitude and direction of the current in the Helmholtz coils were adjusted accordingly, allowing for precise control of the magnetic field and hence the movement of the paramecium. Multiple target positions could be set to drive the paramecium back and forth between multiple locations.\n\nThe experimental setup consisted of head-fixed larval zebrafish undergoing two different types of behavior: induced hunting behavior by a moving paramecium in front of a fish (fish 1\u20135), and spontaneous behavior without any visual stimulus as a control (fish 6). Experiments were carried out at ambient temperature (ranging from 23 to 25\u00b0C). The behavior of the zebrafish was monitored by a high-speed infrared camera (Basler acA2000-165umNIR, 0.66\u00d7) behind a 4F optical system and recorded at 50 Hz. Brain-wide Ca2+ imaging was achieved using XLFM. Light-field images were acquired at 10 Hz, using customized LabVIEW software (National Instruments, USA) or Solis software (Oxford Instruments, UK), with the help of a high-speed data acquisition card (PCIe-6321, National Instruments, USA) to synchronize the fluorescence with behavioral imaging.\n\n#### Behavior analysis\n\nThe background of each behavior video was removed using the clone stamp tool in Adobe Photoshop CS6. Individual images were then processed by an adaptive thresholding algorithm, and fish head and yolk were selected manually to determine the head orientation. The entire body centerline, extending from head to tail, was divided into 20 segments. The amplitude of a bending segment was defined as the angle between the segment and the head orientation. To identify the paramecium in a noisy environment, we subtracted a background image, averaged over a time window of 100 s, from all the frames. The major axis of the left or right eye was identified using DeepLabCut (Mathis et al., 2018). The eye orientation was defined as the angle between the rostrocaudal axis and the major axis of an eye. The convergence angle was defined as the angle between the major axes of the left and right eyes. An eye-convergence event was defined as a period of time where the angle between the long axis of the eyes stayed above 50\u00b0 (Bianco et al., 2011).\n\n#### Imaging data acquisition and processing\n\nWe used a fast eXtended light-field microscope (XLFM, with a volume rate of 10 Hz) to record Ca2+ activity throughout the brain of head-fixed larval zebrafish. Fish were ordered by the dates of experiments. As previously described (Cong et al., 2017), we adopted the Richardson\u2013Lucy deconvolution method to iteratively reconstruct 3D fluorescence stacks (600 \u00d7 600 \u00d7 250) from the acquired 2D images (2048 \u00d7 2048). This algorithm requires an experimentally measured point spread function of the XLFM system. The entire recording for each fish is 15.3 \u00b1 4.3 min (mean \u00b1 SD).\n\nTo perform image registration and segmentation, we first cropped and resized the original image stack to 400 \u00d7 308 \u00d7 210, which corresponded to the size of a standard zebrafish brain (zbb) atlas (Tabor et al., 2019). This step aimed to reduce substantial memory requirements and computational costs in subsequent operations. Next, we picked a typical volume frame and aligned it with the zbb atlas using a basic 3D affine transformation. This transformed frame was used as a template. We aligned each volume with the template using rigid 3D intensity-based registration (Studholme et al., 1997) and non-rigid pairwise registration (Rueckert et al., 1999) in the Computational Morphometry Toolkit (CMTK) (https://www.nitrc.org/projects/cmtk/). After voxel registration, we computed the pairwise correlation between nearby voxel intensities and performed the watershed algorithm on the correlation map to cluster and segment voxels into consistent ROIs across all volumes. We defined the diameter of each ROI using the maximum Feret diameter (the longest distance between any two voxels within a single ROI).\n\nFinally, we adopted the \u2018OASIS\u2019 deconvolution method to denoise and infer neural activity from the fluorescence time sequence (Friedrich et al., 2017). The deconvolved $\u0394F/F$ of each ROI was used to infer firing rates for subsequent analysis.\n\n### Other experimental datasets analyzed\n\nTo validate our findings across different recording methods and animal models, we also analyzed three additional datasets (Table 2). We include a brief description below for completeness. Further details can be found in the respective reference. The first dataset includes whole-brain light-sheet Ca2+ imaging of immobilized larval zebrafish in the presence of visual stimuli as well as in a spontaneous state (Chen et al., 2018). Each volume of the brain was scanned through 2.11 \u00b1 0.21 planes per second, providing a near-simultaneous readout of neuronal Ca2+ signals. We analyzed fish 8 (69,207 neurons \u00d7 7890 frames), 9 (79,704 neurons \u00d7 7720 frames), and 11 (101,729 neurons \u00d7 8528 frames), which are the first three fish data with more than 7200 frames. For simplicity, we labeled them l2, l3, and l1(fl). The second dataset consists of Neuropixels recordings from approximately ten different brain areas in mice during spontaneous behavior (Stringer et al., 2019b). Data from the three mice, Kerbs, Robbins, and Waksman, include the firing rate matrices of 1462 neurons \u00d7 39,053 frames, 2296 neurons \u00d7 66,409 frames, and 2688 neurons \u00d7 74,368 frames, respectively. The last dataset comprises two-photon Ca2+ imaging data (2\u20133 Hz) obtained from the visual cortex of mice during spontaneous behavior. While this dataset includes numerous animals, we focused on the first three animals that exhibited spontaneous behavior. While this dataset includes numerous animals, we focused on the first three animals that exhibited spontaneous behavior:spont_M150824_MP019_2016-04-05 (11,983 neurons \u00d7 21,055 frames), spont_M160825_MP027_2016-12-12 (11,624 neurons \u00d7 23,259 frames), and spont_M160907_MP028_2016-09-26 (9392 neurons \u00d7 10,301 frames) (Stringer et al., 2019b).\n\n**Table 2.**\n Resources for additional experimental datasets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset</th>\n      <th>Data reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Light-sheet imaging of larval zebrafish (Chen et al., 2018)</td>\n      <td>https://janelia.figshare.com/articles/dataset/Whole-brain_light-sheet_imaging_data/7272617</td>\n    </tr>\n    <tr>\n      <td>Neuropixels recordings in mice (Stringer et al., 2019b)</td>\n      <td>https://janelia.figshare.com/articles/dataset/Eight-probe_Neuropixels_recordings_during_spontaneous_behaviors/7739750</td>\n    </tr>\n    <tr>\n      <td>Two-photon imaging in mice (Stringer et al., 2019b)</td>\n      <td>https://janelia.figshare.com/articles/dataset/Recordings_of_ten_thousand_neurons_in_visual_cortex_during_spontaneous_behaviors/6163622</td>\n    </tr>\n  </tbody>\n</table>\n\n### Covariance matrix, eigenspectrum, and sampling procedures\n\nTo begin, we multiplied the inferred firing rate of each neuron (see Methods) by a constant such that in the resulting activity trace $a_{i}$, the mean of $a_{i}(t)$ over the nonzero time frames equaled one (Meshulam et al., 2019). Consistent with the literature (Meshulam et al., 2019), this step aimed to eliminate possible confounding factors in the raw activity traces, such as the heterogeneous expression level of the fluorescence protein within neurons and the nonlinear conversion of the electrical signal to Ca2+ concentration. Note that after this scaling, neurons could still have different activity levels characterized by the variance of $a_{i}(t)$ over time, due to differences in the sparsity of activity (proportion of nonzero frames) and the distribution of nonzero $a_{i}(t)$ values. Without normalization, the covariance matrix becomes nearly diagonal, causing significant underestimation of the covariance structures.\n\nThe three models of covariance in Figure 2G\u2013I were constructed as follows. For model in Figure 2G, the entries of matrix $G$ (with dimensions $N\\timesT$) were sampled from an i.i.d. Gaussian distribution with zero mean and standard deviation $\\sigma=1$. In Figure 2H, we constructed the composite covariance matrix for fish 1 achieved by maintaining the eigenvalues from the fish 1 data covariance matrix and replacing the eigenvectors $U$ with a set of random orthonormal basis. Lastly, the covariance matrix in Figure 2I was generated from a randomly connected recurrent network of linear rate neurons. The entries in the synaptic weight matrix are normally distributed with $J_{ij}\u223cN(0,g^{2}/N)$, with a coupling strength  $g=0.95$ (Hu and Sompolinsky, 2022; Morales et al., 2023). For consistency, we used the same number of time frames $T=7200$ when comparing CI across all the datasets (Figures 4B, C, 5D, E, Figure 4\u2014figure supplement 2C). For other cases, we analyzed the full length of the data (number of time frames: fish 1 \u2013 7495, fish 2 \u2013 9774, fish 3 \u2013 13,904, fish 4 \u2013 7318, fish 5 \u2013 7200, and fish 6 \u2013 9388). Next, the covariance matrix was calculated as $C_{ij}=\\frac{1}{T\u22121}\\sumt=1T(a_{i}(t)\u2212a\u00af_{i})(a_{j}(t)\u2212a\u00af_{j})$, where $a\u00af_{i}$ is the mean of $a_{i}(t)$ over time. Finally, to visualize covariance matrices on a common scale, we multiplied matrix C by a constant such that the average of its diagonal entries equaled one, that is, $Tr\u2061(C)/N=1$. This scaling did not alter the shape of covariance eigenvalue distribution, but set the mean at 1 (see also Equation 8).\n\nTo maintain consistency across datasets, we fixed the same initial number of neurons at $N_{0}=1,024$. These $N_{0}$ neurons were randomly chosen once for each zebrafish dataset and then used throughout the subsequent analyses. We adopted this setting for all analyses except in two particular instances: (1) for comparisons among the three sampling methods (RSap, ASap, and FSap), we specifically chose 1024 neurons centered along the anterior\u2013posterior axis, mainly from the midbrain to the anterior hindbrain regions (Figure 5DE, Figure 5\u2014figure supplement 6). (2) When investigating the impact of hunting behavior on scale invariance, we included the entire neuronal population (Appendix 1).\n\nWe used an iterative procedure to sample the covariance matrix $C$ (calculated from data or as simulated ERMs). For RSap, in the first iteration, we randomly selected half of the neurons. The covariance matrix for these selected neurons was a $N/2\\timesN/2$ diagonal block of $C$. Similarly, the covariance matrix of the unselected neurons was another diagonal block of the same size. In the next iteration, we similarly created two new sampled blocks with half the number of neurons for each of the blocks we had. Repeating this process for $n$ iterations resulted in 2n blocks, each containing $N:=N_{0}/2^{n}$ neurons. At each iteration, the eigenvalues of each block were calculated and averaged across the blocks after being sorted in descending order. Finally, the averaged eigenvalues were plotted against rank/$N$ on a log\u2013log scale.\n\nIn the case of ASap and FSap, the process of selecting neurons was different, although the remaining procedures followed the RSap protocol. In ASap, the selection of neurons was based on a spatial criterion: neurons close to the anterior end on the anterior\u2013posterior axis were grouped to create a diagonal block of size $\\frac{N}{2}\\times\\frac{N}{2}$, with the remaining neurons forming a separate block. FSap, on the other hand, used the RG framework (Meshulam et al., 2019) to define the blocks (details in Appendix 1). In each iteration, the cluster of neurons within a block that showed the highest average correlation ($E_{i\\neqj}(C_{ij}^{2})$) was identified and labeled as the most correlated cluster (refer to Figure 5D, Figure 5\u2014figure supplement 6, and Figure 5\u2014figure supplement 7).\n\nIn the ERM model, as part of implementing ASap, we generated anatomical and functional coordinates for neurons with a specified CCA properties as described in Methods. Mirroring the approach taken with our data, ASap segmented neurons into groups based on the first dimension of their anatomical coordinates, akin to the anterier\u2013posterior axis. FSap employed the same RG procedures outlined earlier (Appendix 1).\n\nTo determine the overall power-law coefficient of the eigenspectra, \u03b1, throughout sampling, we fitted a straight line in the log\u2013log rank plot to the large eigenvalues that combined the original and three iterations of sampled covariance matrices (selecting the top 10% eigenvalues for each matrix and excluding the first four largest ones for each matrix). We averaged the estimated \u03b1 over 10 repetitions of the entire sampling procedure. $R^{2}$ of the power-law fit was computed in a similar way. To visualize the statistical structures of the original and sampled covariance matrices, the orders of the neurons (i.e., columns and rows) are determined by the following algorithm. We first construct a symmetric Toeplitz matrix $T$, with entries $T_{i,j}=t_{i\u2212j}$ and $t_{i\u2212j}\u2261t_{j\u2212i}$. The vector $t\u2192=[t_{0},t_{1},\u2026,t_{N\u22121}]$ is equal to the mean covariance vector of each neuron calculated below. Let $c_{i}\u2192$ be a row vector of the data covariance matrix; we identify $t\u2192=\\frac{1}{N}\\sumi=1ND(c_{i}\u2192)$, where $D(\u22c5)$ denotes a numerical ordering operator, namely rearranging the elements in a vector $c\u2192$ such that $c_{0}\\geqc_{1}\\geq\u2026\\geqc_{N\u22121}$. The second step is to find a permutation matrix P such that $\u2016T\u2212PCP^{T}\u2016_{F}$ is minimized, where $\u2016\u00a0\u2016_{F}$ denotes the Frobenius norm. This quadratic assignment problem is solved by simulated annealing. Note that after sampling, the smaller matrix will appear different from the larger one. We need to perform the above reordering algorithm for every sampled matrix so that matrices of different sizes become similar in Figure 2E.\n\nThe composite covariance matrix with substituted eigenvectors in Figure 2H was created as described in the following steps. First, we generated a random orthogonal matrix $U_{r}$ (based on the Haar measure) for the new eigenvectors. This was achieved by QR decomposition $A=U_{r}R$ of a random matrix $A$ with i.i.d. entries $A_{ij}\u223cN(0,1/N)$. The composite covariance matrix $C_{r}$ was then defined as $C_{r}:=U_{r}\u039bU_{r}^{T}$, where $\u039b$ is a diagonal matrix that contains the eigenvalues of $C$. Note that since all the eigenvalues are real and $U_{r}$ is orthogonal, the resulting $C_{r}$ is a real and symmetric matrix. By construction, $C_{r}$ and $C$ have the same eigenvalues, but their sampled eigenspectra can differ.\n\n### Dimensionality\n\nIn this section, we introduce the participation ratio ($D_{PR}$) as a metric for effective dimensionality of a system, based on Recanatesi et al., 2019; Litwin-Kumar et al., 2017; Gao and Ganguli, 2015; Gao et al., 2017; Clark et al., 2023; Dahmen et al., 2020. $D_{PR}$ is defined as:\n\n$$\nD_{PR}(C)=\\frac{(\\sumi\\lambda_{i})^{2}}{\\sumi\\lambda_{i}^{2}}=\\frac{(Tr(C))^{2}}{Tr(C^{2})}=\\frac{N^{2}E(\\sigma^{2})^{2}}{NE(\\sigma^{4})+N(N\u22121)E_{i\\neqj}(C_{ij}^{2})}\n$$\n\nHere, $\\lambda_{i}$ are the eigenvalues of the covariance matrix $C$, representing variances of neural activities. $Tr(\u22c5)$ denotes the trace of the matrix. The term $E_{i\\neqj}(C_{ij}^{2})$ denotes the expected value of the squared elements that lie off the main diagonal of $C$. This represents the average squared covariance between the activities of distinct pairs of neurons.\n\nWith these definitions, we explore the asymptotic behavior of $D_{PR}$ as the number of neurons $N$ approaches infinity:\n\n$$\nlimN\u2192\u221eD_{PR}(C)=\\frac{E(\\sigma^{2})^{2}}{E_{i\\neqj}(C_{ij}^{2})}\n$$\n\nThis limit highlights the relationship between the PR dimension and the average squared covariance among different pairs of neurons. To predict how $D_{PR}$ scales with the number of neurons (Figure 2D), we first estimated these statistical quantities ($E_{i\\neqj}(C_{ij}^{2})$, $E(\\sigma^{2})$, and $E(\\sigma^{4})$) using all available neurons, then applied Equation 5 for different values of $N$. It is worth mentioning that a similar theoretical finding is established by Dahmen et al., 2020. The transition from increasing $D_{PR}$ with $N$ to approaching the saturation point occurs when $N$ is significantly larger than $D_{PR}$.\n\n### ERM model\n\nWe consider the eigenvalue distribution or spectrum of the matrix $C$ at the limit of $N\u226b1$ and $L\u226b1$. This spectrum can be analytically calculated in both high- and intermediate-density scenarios using the replica method (M\u00e9zard et al., 1999). The following sketch shows our approach, and detailed derivations can be found in Appendix 2. To calculate the probability density function of the eigenvalues (or eigendensity), we first compute the resolvent or Stieltjes transform $g(z)=\u2212\\frac{2}{N}\u2202_{z}\u27e8ln\u2061\u00a0det(zI\u2212C)^{\u22121/2}\u27e9$, $z\\inC$. Here, $\u27e8\u2026\u27e9$ is the average across the realizations of $C$ (i.e., random $x\u2192_{i}$\u2019 s and $\\sigma_{i}^{2}$\u2019 s). The relationship between the resolvent and the eigendensity is given by the Sokhotski\u2013Plemelj formula:\n\n$$\np(\\lambda)=\u2212\\frac{1}{\\pi}lim\u03b7\u21920^{+}Img(\\lambda+i\u03b7),\n$$\n\nwhere $Im$ means imaginary part.\n\nHere we follow the field-theoretic approach (M\u00e9zard et al., 1999), which turns the problem of calculating the resolvent to a calculation of the partition function in statistical physics by using the replica method. In the limit $N\u2192\u221e$, $L^{d}\u2192\u221e$, \u03c1 being finite, by performing a leading order expansion of the canonical partition function at large $z$ (Appendix 2), we find the resolvent is given by\n\n$$\ng(z)=\\frac{1}{\u03c1}\\int\\frac{d^{d}k\u2192}{(2\\pi)^{d}}\\frac{1}{z\u2212\u03c1E(\\sigma^{2})f~(k\u2192)}\n$$\n\nIn the high-density regime, the probability density function (pdf) of the covariance eigenvalues can be approximated and expressed from Equations 6 and 7 using the Fourier transform of the kernel function $f~(k\u2192)$:\n\n$$\np(\\lambda)=\\frac{1}{\u03c1E(\\sigma^{2})}\\int_{R^{d}}\\frac{d^{d}k\u2192}{(2\\pi)^{d}}\\delta(\\frac{\\lambda}{E(\\sigma^{2})}\u2212\u03c1f~(k\u2192)),\n$$\n\nwhere $\\delta(x)$ is the Dirac delta function and $E(\\sigma^{2})$ is the expected value of the variances of neural activity. Intuitively, Equation 8 means that $\\lambda/\u03c1$ are distributed with a density proportional to the area of $f~(k\u2192)$\u2019 level sets (i.e., isosurfaces).\n\nIn Results, we found that the covariance matrix consistently shows greater scale invariance compared to the correlation matrix across all datasets. This suggests that the variability in neuronal activity significantly influences the eigenspectrum. This finding, however, cannot be explained by the high-density theory, which predicts that the eigenspectrum of the covariance matrix is simply a rescaling of the correlation eigenspectrum by $E(\\sigma_{i}^{2})$, the expected value of the variances of neural activity. Without loss of generality, we can always standardize the fluctuation level of neural activity by setting $E(\\sigma^{2})=1$. This is equivalent to multiplying the covariance matrix $C$ by a constant such that $Tr\u2061(C)/N=1$, which in turn scales all the eigenvalues of $C$ by the same factor. Consequently, the heterogeneity of $\\sigma_{i}^{2}$ has no effect on the scale invariance of the eigenspectrum (see Equation 8). This theoretical prediction is indeed correct and is confirmed by direct numerical simulations and quantifying the scale invariance using the CI (Figure 4\u2014figure supplement 2A).\n\nFortunately, the inconsistency between theory and experimental results can be resolved by focusing the ERM within the intermediate density regime $\u03c1\u03f5^{d}\u226a1$, where neurons are positioned at a moderate distance from each other. As mentioned above, we set $E(\\sigma^{2})=1$ in our model and vary the diversity of activity fluctuations among neurons represented by $E(\\sigma^{4})$. Consistent with the experimental observations, we find that the CI decreases with $E(\\sigma^{4})$ (see Figure 4\u2014figure supplement 2B). This agreement indicates that the neural data are better explained by the ERM in the intermediate density regime.\n\nTo gain a deeper understanding of this behavior, we use the Gaussian variational method (M\u00e9zard et al., 1999) to calculate the eigenspectrum. Unlike the high-density theory where the eigendensity has an explicit expression, in the intermediate density the resolvent $g(z)$ no longer has an explicit expression and is given by the following equation:\n\n$$\ng(z)=\u27e8\\frac{1}{z\u2212\\sigma^{2}\\intDk\u2192G~(k\u2192,z)}\u27e9_{\\sigma},\n$$\n\nwhere $\u27e8\u2026\u27e9_{\\sigma}$ computes the expectation value of the term within the bracket with respect to \u03c3, namely $\u27e8\u2026\u27e9_{\\sigma}\u2261\\int\u2026p(\\sigma)d\\sigma$. Here and in the following, we denote $\\intDk\u2192\u2261\\int\\frac{d^{d}k\u2192}{(2\\pi)^{d}}$. The function $G(k\u2192,z)$ is determined by a self-consistent equation,\n\n$$\n\\frac{1}{f~(k\u2192)}=\\frac{1}{G~(k\u2192,z)}+\u27e8\\frac{\u03c1\\sigma^{2}}{z\u2212\\sigma^{2}\\intDk\u2192G~(k\u2192,z)}\u27e9_{\\sigma}\n$$\n\nWe can solve $\\intDk\u2192G(k\u2192,z)$ from Equation 10 numerically and below is an outline, and the details are explained in Appendix 2. Let us define the integral $G\u2261\\intDk\u2192G~(k\u2192,z)$. First, we substitute $z\u2261\\lambda+i\u03b7$ into Equation 10 and write $G=ReG+iImG$. Equation 10 can thus be decomposed into its real part and imaginary part, and a set of nonlinear and integral equations, each of which involves both $ReG$ and $ImG$. We solve these equations at the limit $\u03b7\u21920$ using a fixed-point iteration that alternates between updating $ReG$ and $ImG$ until convergence.\n\nWe find that the variational approximations exhibit excellent agreement with the numerical simulation for both large and intermediate \u03c1 where the high-density theory starts to deviate significantly (for $\u03c1=256$ and $\u03c1=10.24$, $\u03f5=0.03125$, Figure 4\u2014figure supplement 1). Note that the departure of the leading eigenvalues in these plots is expected, since the power-law kernel function we use is not integrable (see Methods).\n\nTo elucidate the connection between the two different methods, we estimate the condition when the result of the high-density theory (Equation 8) matches that of the variational method (Equations 9 and 10; Appendix 2). The transition between these two density regimes can also be understood (see Equation 22 and Appendix 2).\n\nImportantly, the scale invariance of the spectrum at $\\mu/d\u21920$ previously derived using the high-density result (Equation 3) can be extended to the intermediate-density regime by proving the \u03c1-independence using the variational method (Appendix 2).\n\nFinally, using the variational method and the integration limit estimated by simulation (see Methods), we show that the heterogeneity of the variance of neural activity, quantified by $E(\\sigma^{4})$, indeed improves the collapse of the eigenspectra for intermediate \u03c1 (Appendix 2). Our theoretical results agree excellently with the ERM simulation (Figure 4\u2014figure supplement 2A, B).\n\n### Kernel function\n\nThroughout the paper, we have mainly considered a particular approximate power-law kernel function inspired by the Student\u2019s t distribution\n\n$$\nf(x\u2192)=\u03f5^{\\mu}(\u03f5^{2}+\u2016x\u2192\u2016^{2})^{\u2212\\mu/2}.\n$$\n\nTo understand how to choose $\u03f5$ and $\\mu$, see Methods. Variations of Equation 11 near $x=0$ have also been explored; see a summary in Table 3.\n\n**Table 3.**\n Modifications of the shape of $f(x\u2192)$ near $\u2016x\u2192\u2016=0$ used in Appendix 1\u2014figures 1\u20133.Flat: when $\u2016x\u2192\u2016<\u03f5$, $f(x\u2192)=1$. Tangent: when $\u2016x\u2192\u2016<c\u03f5$, $f(x\u2192)$ follows a tangent line of the exact power law ($b\u2016x\u2192\u2016+1$ and $\\frac{\u03f5^{\\mu}}{\u2016x\u2192\u2016^{\\mu}}$ have a same first-order derivative when $\u2016x\u2192\u2016=c\u03f5$). b and c are constants. Tent: when $\u2016x\u2192\u2016<c\u03f5$, $f(x\u2192)$ follows a straight line while the slope is not the same as the tangent case. Parabola: when $\u2016x\u2192\u2016<c\u03f5$, $f(x\u2192)$ follows a quadratic function ($ax^{2}+1$ and $\\frac{\u03f5^{\\mu}}{\u2016x\u2192\u2016^{\\mu}}$ have same first-order derivative). t pdf: mimic the smoothing treatment like the t distribution. All the constant parameters are set such that $f(0)=1$.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>f(x\u2192)\\begin{document}$f(\\vec x)$\\end{document}</th>\n      <th>Definition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Flat</td>\n      <td>f(x\u2192)={1,\u2016x\u2192\u2016&lt;\u03f5e\u03bc\u2016x\u2192\u2016\u03bc,\u2016x\u2192\u2016\u2265\u03f5\\begin{document}$f \\left(\\vec x\\right) =\\left\\{\\begin{array}{cl} 1, &amp; \\|\\vec{x}\\|&lt;\\epsilon \\\\ \\frac{e^\\mu}{\\|\\vec{x}\\|^\\mu}, &amp; \\|\\vec{x}\\| \\geq \\epsilon \\end{array}\\right.$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>Tangent</td>\n      <td>f(x\u2192)={b\u2016x\u2192\u2016+1,\u2016x\u2192\u2016&lt;c\u03f5,f\u2032(c\u03f5)=be\u03bc\u2016x\u2192\u2016\u03bc,\u2016x\u2192\u2016\u2265c\u03f5\\begin{document}$f \\left(\\vec x\\right) =\\left\\{\\begin{array}{cc} b\\|\\vec{x}\\|+1, &amp; \\|\\vec{x}\\|&lt;c \\epsilon, f^{\\prime}(c \\epsilon)=b \\\\ \\frac{e^\\mu}{\\|\\vec{x}\\|^\\mu}, &amp; \\|\\vec{x}\\| \\geq c \\epsilon \\end{array}\\right.$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>Tent</td>\n      <td>f(x\u2192)={b\u2016x\u2192\u2016+1,\u2016x\u2192\u2016&lt;c\u03f5,f\u2032(c\u03f5)\u2260be\u03bc\u2016x\u2192\u2016\u03bc,\u2016x\u2192\u2016\u2265c\u03f5\\begin{document}$f\\left(\\vec x\\right) =\\left\\{\\begin{array}{ll} b\\|\\vec{x}\\|+1, &amp;\\|\\vec{x}\\|&lt;c \\epsilon, f^{\\prime}(c \\epsilon) \\neq b \\\\ \\frac{e^\\mu}{\\|\\vec{x}\\|^\\mu}, &amp; \\|\\vec{x}\\| \\geq c \\epsilon \\end{array}\\right. $\\end{document}</td>\n    </tr>\n    <tr>\n      <td>Parabola</td>\n      <td>f(x\u2192)={b\u2016x\u2192\u20162+1,\u2016x\u2192\u2016&lt;c\u03f5,f\u2032(c\u03f5)=2bc\u03f5e\u03bc\u2016x\u2192\u2016\u03bc,\u2016x\u2192\u2016\u2265c\u03f5\\begin{document}$f\\left(\\vec{x}\\right) =\\left\\{\\begin{array}{ll} b\\|\\vec{x}\\|^2+1, &amp; \\|\\vec{x}\\|&lt;c \\epsilon , f^{\\prime}(c \\epsilon)=2 b c \\epsilon \\\\ \\frac{e^\\mu}{\\|\\vec{x}\\|^\\mu}, &amp; \\|\\vec{x}\\| \\geq c \\epsilon \\end{array}\\right.$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>t pdf</td>\n      <td>f(x\u2192)=\u03b5\u03bc(\u03b52+\u2016x\u2192\u20162)\u2212\u03bc/2\\begin{document}$f(\\vec x)=\\varepsilon ^\\mu(\\varepsilon ^2+\\|\\vec x\\|^2)^{-\\mu/2}$\\end{document}</td>\n    </tr>\n  </tbody>\n</table>\n\nIt is worth mentioning that a power law is not the only slow-decaying function that can produce a scale-invariant covariance spectrum (Figure 3\u2014figure supplement 2). We choose it for its analytical tractability in calculating the eigenspectrum. Importantly, we find numerically that the two contributing factors to scale invariance \u2013 namely, slow spatial decay and higher functional space \u2013 can be generalized to other nonpower-law functions. An example is the stretched exponential function $f(x\u2192)=e^{\u2212\u2016x\u2192\u2016^{\u03b7}}$ with $0<\u03b7<1$. When $\u03b7$ is small and $d$ is large, the covariance eigenspectra also display a similar collapse upon random sampling (Figure 3\u2014figure supplement 2).\n\nThis approximate power-law $f(x\u2192)$ has the advantage of having an analytical expression for its Fourier transform, which is crucial for the high-density theory (Equation 8),\n\n$$\nf(k\u2192)=\\frac{2^{\\frac{d\u2212\\mu+2}{2}}\\pi^{\\frac{d}{2}}k^{\\frac{\\mu\u2212d}{2}}\u03f5^{\\frac{\\mu+d}{2}}K_{(d\u2212\\mu)/2}(k\u03f5)}{\u0393(\\mu/2)},k=\u2016k\u2192\u2016\n$$\n\nHere, $K_{\\alpha}(x)$ is the modified Bessel function of the second kind, and $\u0393(x)$ is the Gamma function. We calculated the above formulas analytically for $d=1,2,3$ with the assistance of Mathematica and conjectured the case for general dimension $d$, which we confirmed numerically for $d\\leq10$.\n\nWe want to explain two technical points relevant to the interpretation of our numerical results and the choice of $f(x\u2192)$. Unlike the case in the usual ERM, here we allow $f(x\u2192)$ to be non-integrable (over $R^{d}$), which is crucial to allow power law $f(x\u2192)$. The nonintegrability violates a condition in the classical convergence results of the ERM spectrum (Bordenave, 2008) as $N\u2192\u221e$. We believe that this is exactly the reason for the departure of the first few eigenvalues from our theoretical spectrum (e.g., in Figure 3). Our hypothesis is also supported by ERM simulations with integrable $f(x\u2192)$ (Figure 3\u2014figure supplement 1), where the numerical eigenspectrum matches closely with our theoretical one, including the leading eigenvalues. For ERM to be a legitimate model for covariance matrices, we need to ensure that the resulting matrix $C$ is positive semidefinite. According to the Bochner theorem (Rudin, 1990), this is equivalent to the Fourier transform (FT) of the kernel function $f~(k\u2192)$ being nonnegative for all frequencies. For example, in 1D, a rectangle function $rect\u2061(x)={1,if|x|\\leq\\frac{1}{2}0,otherwise$ does not meet the condition (its FT is $sinc(x)=\\frac{sin\u2061(x)}{x}$), but a tent function $tent\u2061(x)={1\u2212|x|,\u00a0if\u00a0|x|\\leq10,otherwise$ does (its FT is $sinc^{2}(x)$). For the particular kernel function $f(x\u2192)$ in Equation 11, this condition can be easily verified using the analytical expressions of its Fourier transform (Equation 12). The integral expression for $K_{\\alpha}(x)$, given as $K_{\\alpha}(x)=\\int_{0}^{\u221e}e^{\u2212xcosh\u2061t}cosh\u2061(\\alphat)dt$, shows that $K_{\\alpha}(x)$ is positive for all $x>0$. Likewise, the Gamma function $\u0393(x)>0$. Therefore, the Fourier transform of Equation 11 is positive and the resulting matrix $C$ (of any size and values of $x\u2192_{i}$) is guaranteed to be positive definite.\n\nBuilding upon the theory outlined above, numerical simulations further validated the empirical robustness of our ERM model, as showcased in Figures 3B\u2013D\u20134A. In Figure 3B\u2013D, the ERM was characterized by the parameters $N=1024$, $d=2$, $L=10$, $\u03c1=10.24$, and $\\mu=0.5$ and $\u03f5=0.03125$ for $f(x\u2192)$. To numerically compute the eigenvalue probability density function, we generated the ERM 100 times, each sampled using the method described in Methods. The pdf was computed by calculating the pdf of each ERM realization and averaging these across the instances. The curves in Figure 3D showed the average of over 100 ERM simulations. The shaded area (most of which is smaller than the marker size) represented the SEM. For Figure 4A, the columns from left to right were corresponded to $\\mu=0.5,0.9,1.3$,  and the rows from top to bottom were corresponded to $d=1,2,3$. Other ERM simulation parameters: $N=4096$, $\u03c1=256$, $L=(N/\u03c1)^{1/d}$, $\u03f5=0.03125$, and $\\sigma_{i}^{2}=1$. It should be noted that for Figure 4A, the presented data pertain to a single ERM realization.\n\n### Collapse index\n\nWe quantify the extent of scale invariance using CI defined as the area between two spectrum curves (Figure 4A, upper right), providing an intuitive measure of the shift of the eigenspectrum when varying the number of sampled neurons. We chose the CI over other measures of distance between distributions for several reasons. First, it directly quantifies the shift of the eigenspectrum, providing a clear and interpretable measure of scale invariance. Second, unlike methods that rely on estimating the full distribution, the CI avoids potential inaccuracies in estimating the probability of the top leading eigenvalues. Finally, the use of CI is motivated by theoretical considerations, namely the ERM in the high-density regime, which provides an analytical expression for the covariance spectrum (Equation 3) valid for large eigenvalues.\n\n$$\nCI:=\\frac{1}{log\u2061(q_{0}/q_{1})}\\int_{log\u2061q_{1}}^{log\u2061q_{0}}|\\frac{\u2202log\u2061\\lambda(q)}{\u2202log\u2061\u03c1}|dlog\u2061q,\n$$\n\nwe set $q_{1}$ such that $\\lambda(q_{1})=1$, which is the mean of the eigenvalues of a normalized covariance matrix. The other integration limit $q_{0}$ is set to 0.01 such that $\\lambda(q_{0})$ is the 1% largest eigenvalue.\n\nHere, we provide numerical details on calculating CI for the ERM simulations and experimental data.\n\n#### A calculation of CI for experimental datasets/ERM model\n\nTo calculate CI for a covariance matrix $C$ of size $N_{0}$, we first computed its eigenvalues $\\lambda_{i}^{0}$ and those of the sampled block $C_{s}$ of size $N_{s}=N_{0}/2$, denoted as $\\lambda_{i}^{s}$ (averaged over 20 times for the ERM simulation and 2000 times in experimental data). Next, we estimated $log\u2061\\lambda(q)$ using the eigenvalues of $C_{0}$ and $C_{s}$ at $q=i/N_{s}$, $i=1,2,\u2026,N_{s}$. For the sampled $C_{s}$, we simply had $log\u2061\\lambda(q=i/N_{s})=log\u2061\\lambda_{i}^{s}$, its ith largest eigenvalue. For the original $C_{0}$, $log\u2061\\lambda(q=i/N_{s})$ was estimated by a linear interpolation, on the $log\u2061\\lambda\u2212log\u2061q$ scale, using the value of $log\u2061\\lambda(q)$ in the nearest neighboring $q=i/N_{0}$\u2019s (which again are simply $log\u2061\\lambda_{i}^{0}$). Finally, the integral (Equation 13) was computed using the trapezoidal rule, discretized at $q=i/N_{s}$\u2019s, using the finite difference $\\frac{\u2202log\u2061\\lambda(q)}{\u2202log\u2061\u03c1}\u2248\\frac{1}{log\u2061(N_{0}/N_{s})}|\u0394log\u2061\\lambda(q)|$, where $\u0394$ denotes the difference between the original eigenvalues of $C_{0}$ and those of sampled $C_{s}$.\n\n#### Estimating CI using the variational method\n\nIn the definition of CI (Equation 13), calculating $\\lambda(q)$ and $\\frac{\u2202log\u2061\\lambda(q)}{\u2202log\u2061\u03c1}$ directly using the variational method is difficult, but we can make use of an implicit differentiation\n\n$$\n\\frac{\u2202log\u2061\\lambda(q,\u03c1)}{\u2202log\u2061\u03c1}=\\frac{\u03c1}{\\lambda}\\frac{\u2202\\lambda(q,\u03c1)}{\u2202\u03c1}=\u2212\\frac{\u03c1}{\\lambda}\\frac{\\frac{\u2202q(\u03c1,\\lambda)}{\u2202\u03c1}}{\\frac{\u2202q(\u03c1,\\lambda)}{\u2202\\lambda}},\n$$\n\nwhere $q(\\lambda):=\\int_{\\lambda}^{\u221e}p(\\lambda)d\\lambda$ is the complementary cdf (the inverse function of $\\lambda(q)$ in Methods). Using this, the integral in CI (Equation 13) can be rewritten as\n\n$$\n\\int_{log\u2061q_{1}}^{log\u2061q_{0}}|\\frac{\u2202log\u2061\\lambda(q,\u03c1)}{\u2202log\u2061\u03c1}|dlog\u2061q=\\int_{q_{1}}^{q_{0}}|\u2212\\frac{\u03c1}{q\\lambda}\\frac{\\frac{\u2202q}{\u2202\u03c1}}{\\frac{\u2202q}{\u2202\\lambda}}|dq=\\int_{\\lambda(q_{1})}^{\\lambda(q_{0})}|\u2212\\frac{\u03c1}{q\\lambda}\\frac{\\frac{\u2202q}{\u2202\u03c1}y}{\\frac{\u2202q}{\u2202\\lambda}}|\\frac{\u2202q}{\u2202\\lambda}d\\lambda=\\int_{\\lambda(q_{0})}^{\\lambda(q_{1})}|\\frac{1}{\\lambda}\\frac{\u2202log\u2061q}{\u2202log\u2061\u03c1}|d\\lambda.\n$$\n\nSince $\\frac{\u2202q}{\u2202\\lambda}=\u2212p(\\lambda)<0$, we switch the order of the integration interval in the final expression of Equation 15.\n\nFirst, we explain how to compute the complementary cdf $q(\\lambda)$ numerically using the variational method. The key is to integrate the probability density function $p(\\lambda)$ from \u03bb to a finite $\\lambda(q_{s})$ rather than to infinity,\n\n$$\nq(\\lambda)=\\int_{\\lambda}^{\u221e}p(\\lambda)d\\lambda=\\int_{\\lambda(q_{s})}^{\u221e}p(\\lambda)d\\lambda+\\int_{\\lambda}^{\\lambda(q_{s})}p(\\lambda)d\\lambda=q_{s}+\\int_{\\lambda}^{\\lambda(q_{s})}p(\\lambda)d\\lambda.\n$$\n\nThe integration limit $\\lambda(q_{s})$ cannot be calculated directly using the variational method. We thus used the value of $\\lambda^{s}(q_{s}\u2248q_{0})$ (Methods) from simulations of the ERM with a large $N=1024$ as an approximation. Furthermore, we employed a smoothing technique to reduce bias in the estimation of $\\lambda^{s}(q_{s})$ due to the leading zigzag eigenvalues (i.e., the largest eigenvalues) of the eigenspectrum. Specifically, we determined the nearest rank $j<Nq_{0}$ and then smoothed the eigenvalue $log\u2061\\lambda^{s}(q_{s})$ on the log\u2013log scale using the formula $log\u2061\\lambda^{s}(q_{s})=\\frac{1}{3}\\sumi=02log\u2061\\lambda^{s}(\\frac{j+i}{N})$ and $log\u2061q_{s}=\\frac{1}{3}\\sumi=02log\u2061\\frac{j+i}{N}$, averaging over 100 ERM simulations.\n\nNote that we can alternatively use the high-density theory (Appendix 2) to compute the integration limit $\\lambda(q_{s}=1/N)$ instead of resorting to simulations. However, since the true value deviates from the $\\lambda^{h}(q_{s}=1/N)$ derived from high-density theory, this approach introduces a constant bias (Figure 4\u2014figure supplement 2) when computing the integral in Equation 16. Therefore we used the simulation value $\\lambda^{s}(q_{s}\u2248q_{0})$ when producing Figure 4\u2014figure supplement 2AB.\n\nNext, we describe how each term within the integral of Equation 15 was numerically estimated. First, we calculated $\\frac{\u2202log\u2061q}{\u2202log\u2061\u03c1}$ with a similar method described in Methods. Briefly, we calculated $q_{0}(\\lambda)$ for density $\u03c1_{0}=\\frac{N_{0}}{L^{d}}$ and $q_{s}(\\lambda)$ for density $\u03c1_{s}=\\frac{N_{s}}{L^{d}}$, and then used the finite difference $\\frac{1}{log\u2061(\u03c1_{0}/\u03c1_{s})}|\u0394log\u2061q(\\lambda)|$. Second, $\\frac{\u2202log\u2061q(\\lambda)}{\u2202log\u2061\u03c1}$ was evaluated at $\\lambda=\\lambda(q_{1})+i\\frac{\\lambda(q_{0})\u2212\\lambda(q_{1})}{k\u22121}$, where $i=0,1,2,\u2026,k\u22121$, and we used $k=20$. Finally, we performed a cubic spline interpolation of the term $\\frac{\u2202log\u2061q}{\u2202log\u2061\u03c1}$, and obtained the theoretical CI by an integration of Equation 15. Figure 4\u2014figure supplement 2A, B shows a comparison between theoretical CI and that obtained by numerical simulations of ERM (Methods).\n\n### Fitting ERM to data\n\n#### Estimating the ERM parameters\n\nOur ERM model has four parameters: $\\mu$ and $\u03f5$ dictate the kernel function $f(x\u2192)$, whereas the box size $L$ and the embedding dimension $d$ determine the neuronal density $\u03c1$. In the following, we describe an approximate method to estimate these parameters from pairwise correlations measured experimentally $R_{ij}=\\frac{C_{ij}}{\\sigma_{i}\\sigma_{j}}$. We proceed by deriving a relationship between the correlation probability density distribution $h(R)$ and the pairwise distance probability density distribution $g(u):=g(\u2016x\u2192_{1}\u2212x\u2192_{2}\u2016)$ in the functional space, from which the parameters of the ERM can be estimated.\n\nConsider a distribution of neurons in the functional space with a coordinate distribution $p(x\u2192)$. The pairwise distance density function $g(u)$ is related to the spatial point density by the following formula:\n\n$$\ng(u)=\\int_{[0,L]^{d}}p(x\u2192_{1})p(x\u2192_{2})\\delta(\u2016x\u2192_{1}\u2212x\u2192_{2}\u2016\u2212u)dx\u2192_{1}dx\u2192_{2}\n$$\n\nFor ease of notation, we subsequently omit the region of integration, which is the same as here. In the case of a uniform distribution, $p(x\u2192_{1})=p(x\u2192_{2})=1/V=1/L^{d}$. For other spatial distributions, Equation 17 cannot be explicitly evaluated. We therefore make a similar approximation by focusing on a small pairwise distance (i.e., large correlation):\n\n$$\np(x\u2192_{1})\u2248p(x\u2192_{2})\u2248p(\\frac{x\u2192_{1}+x\u2192_{2}}{2})\n$$\n\nBy a change of variables:\n\n$$\nX\u2192=\\frac{x\u2192_{1}+x\u2192_{2}}{2},u\u2192=x\u2192_{1}\u2212x\u2192_{2},\n$$\n\nEquation 17 can be rewritten as\n\n$$\ng(u)\u2248\\intp^{2}(X\u2192)\\delta(\u2016u\u2192\u2016\u2212u)dX\u2192du\u2192=S_{d\u22121}(u)\\intp^{2}(X\u2192)dX\u2192\n$$\n\nwhere $S_{d\u22121}(u)$ is the surface area of $d\u22121$ sphere with radius u. Note that the approximation of $g(u)$ is not normalized to 1, as Equation 19 provides an approximation valid only for small pairwise distances (i.e., large correlation). Therefore, we believe this does not pose an issue.\n\nWith the approximate power-law kernel function $R=f(u)\u2248(\\frac{\u03f5}{u})^{\\mu}$, the probability density function of pairwise correlation $h(R)$ is given by:\n\n$$\nh(R)=g(u)|\\frac{du}{dR}|=\\frac{2\\pi^{\\frac{d}{2}}\u03f5^{d}}{\u0393(\\frac{d}{2})\\muR^{(\\mu+d)/\\mu}}\\intp^{2}(X\u2192)dX\u2192\n$$\n\nTaking the logarithm on both sides\n\n$$\nlog\u2061h(R)=log\u2061(\u03f5^{d}\\intp^{2}(X\u2192)dX\u2192)+log\u2061\\frac{2\\pi^{\\frac{d}{2}}}{\u0393(\\frac{d}{2})\\mu}\u2212\\frac{\\mu+d}{\\mu}log\u2061R\n$$\n\nEquation 21 is the key formula for ERM parameters estimation. In the case of a uniform spatial distribution, $\u03f5^{d}\\intp^{2}(X\u2192)dX\u2192=\u03f5^{d}/V=(\u03f5/L)^{d}$. For a given dimension $d$, we can therefore estimate $\\mu$ and $(\u03f5/L)^{d}$ separately by fitting $h(R)$ on the log\u2013log scale using the linear least squares. Lastly, we fit the distribution of $\\sigma^{2}$ (the diagonal entries of the covariance matrix $C$) to a log-normal distribution by estimating the maximum likelihood.\n\nThere is a redundancy between the unit of the functional space (using a rescaled $\u03f5_{\\delta}\u2261\u03f5/\\delta$) and the unit of $f(x\u2192)$ (using a rescaled $f_{\\delta}(x\u2192)\u2261f(x\u2192/\\delta)$), thus $\u03f5$ and $L$ are a pair of redundant parameters: once \u03b5 is given, $L$ is also determined. We set $\u03f5=0.03125$ throughout the article. In summary, for a given dimension $d$ and $\u03f5$, $\\mu$ of $f(x\u2192)$ (Equation 11), the distribution of $\\sigma^{2}$ and $\u03c1$ (or equivalently $L$) can be fitted by comparing the distribution of pairwise correlations in experimental data and ERM. Furthermore, knowing $(\u03f5/L)^{d}$ enables us to determine a fundamental dimensionless parameter\n\n$$\n\u03c1\u03f5^{d}:=N(\u03f5/L)^{d},\n$$\n\nwhich tells us whether the experimental data are better described by the high-density theory or the Gaussian variational method (Appendix 2). Indeed, the fitted $\u03c1\u03f5^{d}\u223c10^{\u22123}\u221210^{0}$ is much smaller than 1, consistent with our earlier conclusion that neural data are better described by an ERM model in the intermediate-density regime.\n\nNotably, we found that a smaller embedding dimension $d\\leq5$ gave a better fit to the overall pairwise correlation distribution. The following is an empirical explanation. As $d$ grows, to best fit the slope of $log\u2061h(R)\u2212log\u2061R$, $\\mu$ will also grow. However, for very high dimensions $d$, the y-intercept would become very negative, or equivalently, the fitted correlation would become extremely small. This can be verified by examining the leading order $log\u2061R$ independent term in Equation 21, which can be approximated as $dlog\u2061\\frac{\u03f5}{L}+\\frac{d}{2}(log\u2061\\pi+1\u2212log\u2061\\frac{d}{2})$. It becomes very negative for large $d$ since $\u03f5\u226aL$ by construction. Throughout this article, we use $d=2$ when fitting the experimental data with our ERM model.\n\nThe above calculation can be extended to the cases where the coordinate distribution $p(x\u2192)$ becomes dependent on other parameters. To estimate the parameters in coordinate distributions that can generate ERMs with a similar pairwise correlation distribution (Appendix 1\u2014figure 1), we fixed the integral value $\\intp^{2}(x\u2192)dx\u2192$. Consider, for example, a transformation of the uniform coordinate distribution to the normal distribution $N(\\mu_{p}=0,\\sigma_{p}^{2}I)$ in $R^{2}$. We imposed $\\intp^{2}(x\u2192)dx\u2192=1/(4\\pi\\sigma_{p}^{2})=1/L^{2}$. For the log-normal distribution, a similar calculation led to $Lexp\u2061(\\sigma_{p}^{2}/4\u2212\\mu_{p})=2\\sqrt{\\pi}\\sigma_{p}$. The numerical values for these parameters are shown in Appendix 1. However, note that due to the approximation we used (Equation 18), our estimate of the ERM parameters becomes less accurate if the density function $p(x\u2192)$ changes rapidly over a short distance in the functional space. More sophisticated methods, such as grid search, may be needed to tackle such a scenario.\n\nAfter determining the parameters of the ERM, we first examine the spectrum of the ERM with uniformly distributed random functional coordinates $x\u2192_{i}\\in[0,L]^{d}$ (Figure 5\u2014figure supplement 1M\u2013R). Second, we use $f(x\u2192)$ to translate experimental pairwise correlations into pairwise distances for all neurons in the functional space (Figure 5\u2014figure supplement 2, Figure 5\u2014figure supplement 1G\u2013L). The embedding coordinates $x\u2192_{i}$ in the functional space can then be solved through multidimensional scaling (MDS) by minimizing the Sammon error (Methods). The similarity between the spectra of the uniformly distributed coordinates (Figure 5\u2014figure supplement 1M\u2013R) and those of the embedding coordinates (Figure 5\u2014figure supplement 1G\u2013L) is also consistent with the notion that specific coordinate distributions in the functional space have little impact on the shape of the eigenspectrum (Appendix 1\u2014figure 1).\n\n#### Nonnegativity of data covariance\n\nTo use ERM to model the covariance matrix, the pairwise correlation is given by a non-negative kernel function $f(x\u2192)$ that monotonically decreases with the distance between neurons in the functional space. This nonnegativeness brings about a potential issue when applied to experimental data, where, in fact, a small fraction of pairwise correlations/covariances are negative. We have verified that the spectrum of the data covariance matrix (Figure 2\u2014figure supplement 3) remains virtually unchanged when replacing these negative covariances with zero (Figure 2\u2014figure supplement 3). This confirms that the ERM remains a good model when the neural dynamics is in a regime where pairwise covariances are mostly positive Dahmen et al., 2019 (see also Figure 2\u2014figure supplement 2B, Figure 2\u2014figure supplement 2B\u2013D).\n\n#### Multidimensional scaling\n\nWith the estimated ERM parameters ($\\mu$ in $f(x\u2192)$ and the box size $L$ for given $\u03f5$ and $d$, see Methods), we performed MDS to infer neuronal coordinates $x\u2192_{i}$ in functional space. First, we computed a pairwise correlation $R_{ij}=\\frac{C_{ij}}{\\sigma_{i}\\sigma_{j}}$ from the data covariances. Next, we calculated the pairwise distance, denoted by $u_{ij}^{\u2217}$, by computing the inverse function of $f(x\u2192)$ with respect to the absolute value of $R_{ij}$, $u_{ij}^{\u2217}=f^{\u22121}(|R_{ij}|)$. We used the absolute value $|R_{ij}|$ instead of $R_{ij}$ as a small percentage of $R_{ij}$ are negative (Figure 2\u2014figure supplement 2A\u2013D) where the distance is undefined. This substitution by the absolute value serves as a simple workaround for the issue and is only used here in the analysis to infer the neuronal coordinates by MDS. Finally, we estimated the embedding coordinates $x\u2192_{i}$ for each neuron by the SMACOF algorithm (Scaling by MAjorizing a COmplicated Function), which minimizes the Sammon error\n\n$$\nE=\\frac{1}{\\sumi<ju_{ij}^{\u2217}}\\sumi<j\\frac{(u_{ij}^{\u2217}\u2212u_{ij})^{2}}{u_{ij}^{\u2217}}\n$$\n\nwhere $u_{ij}=\u2016x\u2192_{i}\u2212x\u2192_{j}\u2016$ is the pairwise distance in the embedding space calculated above. To reduce errors at large distances (i.e., small correlations with $R_{ij}<f(L)$, where $L$ is the estimated box size), we performed a soft cut-off at a large distance:\n\n$$\nu_{ij}^{\u2217}=f^{\u22121}(|R_{ij}|),R_{ij}\\geqf(L)u_{ij}^{\u2217}=Llog\u2061(f^{\u22121}(|R_{ij}|)/L)+L,R_{ij}<f(L)\n$$\n\nDuring the optimization process, we started at the embedding coordinates estimated by the classical MDS (Cox and Cox, 2000), with an initial sum of squares distance error that can be calculated directly, and ended with an error or its gradient smaller than 10\u22124.\n\nThe fitted ERM with the embedding coordinates $x\u2192_{i}$ reproduced the experimental covariance matrix including the cluster structures (Figure 5\u2014figure supplement 2) and its sampling eigenspectra (Figure 5\u2014figure supplement 1).\n\n### Canonical correlation analysis\n\nHere we briefly explain the CCA method (Knapp, 1978) for completeness. The basis vectors $v\u2192_{func}$ and $v\u2192_{anat}$, in functional and anatomical space, respectively, were found by maximizing the correlation $R_{CCA}=corr({v\u2192_{func}\u22c5x\u2192_{i}},{v\u2192_{anat}\u22c5y\u2192_{i}})$. These basis vectors satisfy the condition that the projections of the neuron coordinates along them, ${x\u2192_{i}\u22c5v\u2192_{func}}$ and ${y\u2192_{i}\u22c5v\u2192_{anat}}$, are maximally correlated among all possible choices of $v\u2192_{func}$ and $v\u2192_{anat}$. Here, ${x\u2192_{i}}$, ${y\u2192_{i}}$ represent the coordinates in functional and anatomical spaces, respectively. The resulting maximum correlation is $R_{CCA}$. To check the significance of the canonical correlation, we shuffled the functional space coordinates ${x\u2192_{i}}$ across neurons\u2019 identity and re-calculated the canonical correlation with the anatomical coordinates, as shown in Figure 5\u2014figure supplement 4.\n\nTo study the effect of functional\u2013anatomical relation described by $R_{CCA}$ in the ERM model, we generated three-dimensional anatomical coordinates ${y\u2192_{i}}$ and two-dimensional functional coordinates ${x\u2192_{i}}$ for each neuron which are jointly five-dimensional zero-mean multivariate Gaussian random variables. The coordinates are independent among each other, except for the first dimension ${x\u2192_{i}^{1}}$ of the functional coordinates and the first dimension ${y\u2192_{i}^{1}}$, which are assigned to have a correlation coefficient equals to $R_{CCA}$. The variances of the coordinates are $\\sigma_{y1}^{2}=1,\\sigma_{y2}^{2}=1,\\sigma_{y3}^{2}=1$, and $\\sigma_{x1}^{2}=2,\\sigma_{x2}^{2}=1$ for the numerics in Figure 5\u2014figure supplement 7. Under this construction, the first canonical correlation between the anatomical and functional coordinates equals $R_{CCA}$, and the first canonical direction $v\u2192_{anat}$ in the anatomical space is $(1,0,0)^{T}$ and the first canonical direction $v\u2192_{func}$ in the functional space is $(1,0)^{T}$.\n\n### Spectrum of three types of sampling procedures in ERM model\n\nIn Result, we have considered three types of sampling procedures: random sampling (RSap), spatial sampling in the anatomical space (ASap, e.g., recording neurons in a brain region), and spatial sampling in the functional space (FSap), namely spatial sampling in functional space by subdividing the space into smaller regions, is equivalent to the previously reported RG inspired process (Bradde and Bialek, 2017). Here, we consider the relationship between the spectrum of three types of sampling procedures.\n\nWe assume a uniform random distribution of neurons in a $d$-dimensional functional space, $[0,L]^{d}$. For RSap procedures, the resulting neuronal density $\u03c1_{R}$ is reduced to $\u03c1_{R}=k\u03c1_{0}$, with $k$ representing the sampling ratio ($k=N/N_{0}$) and $\u03c1_{0}$ being the initial density. In contrast, FSap maintains the original density, $\u03c1_{F}=\u03c1_{0}$. This constancy in neuronal density under FSap ensures that the covariance eigenspectrum remains invariant across scales for any spatial correlation functions $f(x\u2192)$, such as power law and exponential, as shown in Appendix 1\u2014figure 5A, B, D, E. In contrast, RSap reduces \u03c1, thus demanding more rigorous conditions to achieve a scale-invariant covariance spectrum (e.g., compare Appendix 1\u2014figure 5A, C).\n\nUnder ASap, sampled neurons are not spread out evenly in functional space, whereas our theoretical framework assumes a uniform distribution. To reconcile this discrepancy, we employ a uniform approximation of the neural distribution. This approach involves introducing an effective density, $\u03c1^{\u2032}$, defined as the spatial average of the density function $\u03c1(x\u2192)$. This adjustment allows our theoretical model to accommodate non-uniform distributions encountered in anatomically spatial sampling.\n\n$$\n\u03c1^{\u2032}\u2261\u27e8\u03c1(x\u2192)\u27e9=\\intp(x\u2192)\u03c1(x\u2192)dx\u2192=kN_{0}\\intp^{2}(x\u2192)dx\u2192,\n$$\n\nwhere $p(x\u2192)$ is the normalized density distribution (see Methods).\n\nUsing the Cauchy\u2013Schwarz inequality, we have\n\n$$\n\\intp^{2}(x\u2192)dx\u2192\\intdx\u2192\\geq(\\intp(x\u2192)dx\u2192)^{2}\n$$\n\nthus $\u03c1^{\u2032}\\geqk\u03c1_{0}$.\n\nAccording to the condition $p(x\u2192)<\\frac{1}{kV}$, we have $\u03c1^{\u2032}\\leq\u03c1_{0}$, intuitively, sampling within a uniformly distributed neuron population does not increase the density.\n\nSo we have $\u03c1_{0}\\geq\u03c1_{A}^{\u2032}\\geqk\u03c1_{0}$, that is, $\u03c1_{F}\\geq\u03c1_{A}^{\u2032}\\geq\u03c1_{R}$. Thus, the spectrum ASap should be between FSap and RSap.\n\n### Dimensions of three types of sampling procedures in ERM model\n\n#### Scaling of dimensions through random sampling\n\nLet us revisit the definition of the participation ratio (PR) dimension as defined in Equation 5:\n\n$$\nD_{PR}(C)=\\frac{(\\sumi\\lambda_{i})^{2}}{\\sumi\\lambda_{i}^{2}}=\\frac{(Tr(C))^{2}}{Tr(C^{2})}=\\frac{N^{2}E(\\sigma^{2})^{2}}{NE(\\sigma^{4})+N(N\u22121)E_{i\\neqj}(C_{ij}^{2})}\n$$\n\nDuring the random sampling process, the expected values $E(\\sigma^{2})$, $E(\\sigma^{4})$, and $E_{i\\neqj}(C_{ij}^{2})$ remain constant. These constants allow for the estimation of the PR dimension across various scales using:\n\n$$\nD_{PR}^{RSap}=\\frac{kN_{0}E(\\sigma^{2})^{2}}{E(\\sigma^{4})+(kN_{0}\u22121)E_{i\\neqj}(C_{ij}^{2})}\n$$\n\nHere, $k=N/N_{0}$ represents a scaling factor (fraction) associated with sampling. The key question is to understand how the dimensionality changes with $k$. Under random sampling, as $k$ increases, the dimensionality will quickly approaches a saturating point defined by Equation 1.\n\n#### Scaling of dimensions through functional sampling\n\nIn this section, we leverage the uniform ERM model to estimate dimensions within the context of functional sampling, specifically focusing on the estimation of squared pairwise covariance $E_{i\\neqj}(C_{ij}^{2})$ and dimensionality. Adopting an approximation for a power-law kernel function $f(x)\u2248\u03f5^{\\mu}\u2016x\u2016^{\u2212\\mu}$ allows us to express the expected value of the squared covariance $E_{i\\neqj}(C_{ij}^{2})$ as follows:\n\n$$\nE_{i\\neqj}(C_{ij}^{2})=\\int_{[0,L]^{d}}p(x\u2192_{1})p(x\u2192_{2})f^{2}(\u2016x\u2192_{1}\u2212x\u2192_{2}\u2016)dx\u2192_{1}dx\u2192_{2}\u2248\\int_{[0,L]^{d}}p(x\u2192_{1})p(x\u2192_{2})\u03f5^{2\\mu}\u2016x\u2192_{1}\u2212x\u2192_{2}\u2016^{\u22122\\mu}dx\u2192_{1}dx\u2192_{2}.\n$$\n\nFor a set subjected to functional sampling with a sampling fraction $k$, this procedure adjusts the size of the functional space in the ERM model by a factor of $k^{\u22121/d}$. Consequently, the $E_{i\\neqj}^{k}(C_{ij}^{2})$ for the sampled fraction $k$ is given by:\n\n$$\nE_{i\\neqj}^{k}(C_{ij}^{2})=\\int_{[0,k^{1/d}L]^{d}}p(x\u2192_{1})p(x\u2192_{2})f^{2}(\u2016x\u2192_{1}\u2212x\u2192_{2}\u2016)dx\u2192_{1}dx\u2192_{2}=\\int_{[0,L]^{d}}p(x\u2192_{1})p(x\u2192_{2})f^{2}(k^{1/d}\u2016x\u2192_{1}\u2212x\u2192_{2}\u2016)dx\u2192_{1}dx\u2192_{2}\u2248\\int_{[0,L]^{d}}p(x\u2192_{1})p(x\u2192_{2})\u03f5^{2\\mu}k^{\u22122\\mu/d}\u2016x\u2192_{1}\u2212x\u2192_{2}\u2016^{\u22122\\mu}dx\u2192_{1}dx\u2192_{2}\u2248k^{\u22122\\mu/d}E_{i\\neqj}(C_{ij}^{2}),\n$$\n\nHere, we assume that $E[\\sigma^{2}]$ and $E[\\sigma^{4}]$ are constant across the sampling process. This model enables the estimation of the ratio $\\mu/d$ as detailed in the Methods.\n\n$$\nD_{PR}^{FSap}\u2248\\frac{kN_{0}E(\\sigma^{2})^{2}}{E(\\sigma^{4})+(kN_{0}\u22121)k^{\u22122\\mu/d}E_{i\\neqj}(C_{ij}^{2})}\n$$\n\nIn the large $N$ limit, we observe distinct behaviors in the evolution of dimensionality in both theory and data: it saturates in RSap (dashed line in Figure 5D), namely $D_{PR}^{RSap}\u2248D_{PR}$ defined in Equation 1, whereas it follows a different scaling relationship $D_{PR}^{FSap}\u2248k^{2\\mu/d}D_{PR}$ in FSap (solid line in Figure 5D).\n\n#### Comparative analysis of PR dimension across sampling techniques\n\nThis section examines the behavior of the PR dimension under three sampling techniques: anatomical sampling, random sampling, and functional sampling. We show that the average PR dimension following anatomical sampling occupies a middle ground between the extremes presented by random and functional sampling.\n\nThe PR dimension, denoted $D_{PR}$, reflects the sampling impact and depends on the distribution $p(X\u2192)$ of the functional coordinates $X\u2192$. Defining the sampling fraction as $k=1/q$, the mean $D_{PR}$ is represented as:\n\n$$\nmean(D_{PR})=\\frac{1}{q}\\sumi=1qD_{PR}^{i}=\\frac{1}{q}\\sumi=1qJ(p_{i}(X\u2192)),\n$$\n\nwhere the neuron set $1,2,...,N$ is segmented into $q$ clusters ${X\u2192_{1},X\u2192_{2},...,X\u2192_{q}}$, each comprising $\\frac{N}{q}$ neurons. The probability distribution $p_{i}(X\u2192)$ corresponds to each cluster ${X\u2192_{i}}$. The probability distribution for each cluster, $p_{i}(X\u2192)$, emerges naturally from the sampling process.\n\nThe equivalence of the mean probability density function across the sampled clusters to the original set\u2019s probability density function leads us to the condition:\n\n$$\n\\frac{1}{q}\\sumi=1qp_{i}(X\u2192)=p(X\u2192),\n$$\n\nThis condition is a direct consequence of the sampling process, ensuring that the aggregated probability density function of all sampled sets mirrors the overall density distribution of the neurons.\n\nApplying the Lagrange multiplier method to optimize the mean $D_{PR}$:\n\n$$\nL(p,\\lambda)=\\frac{1}{q}\\sumi=1qJ(p_{i}(X\u2192))+\\int_{D}d^{d}X\u2192\\lambda(X\u2192)(\\frac{1}{q}\\sumi=1qp_{i}(X\u2192)\u2212p(X\u2192)),\n$$\n\nHere, $L(p,\\lambda)$ is the Lagrangian, $\\lambda(X\u2192)$ is the Lagrange multiplier, we derive the optimal condition:\n\n$$\n\\frac{\u2202L(p,\\lambda)}{\u2202p_{i}}=0,\n$$\n\nyielding:\n\n$$\n\\frac{1}{q}\\frac{\u2202J}{\u2202p_{i}(X\u2192)}+\\frac{\\lambda(X\u2192)}{q}=0.\n$$\n\nAt the optimal mean $D_{PR}$, each $p(X\u2192_{i})$ is equivalent, leading to $p(X\u2192_{i})=p(X\u2192_{j})=p(X\u2192)$ (representative of random sampling). Hence, the mean $D_{PR}$ post-random sampling sets the upper limit for the mean $D_{PR}$ after anatomical sampling.\n\nLet us investigate the lower bound of the mean PR dimension with the ERM model. For the minimization of mean $(D_{PR})$, a key requirement is the functional spatial proximity of neurons within the same cluster, in other words, the neuron set should be distinctly separated in functional space. Consequently, achieving the minimum mean PR dimension necessitates a functional sampling strategy.\n\n#### Derive upper bound of dimension from spectrum\n\nTo deduce $D_{PR}$ from the spectrum, for simplicity, we focus on the high-density region, where we have an analytical expression for \u03bb that is valid for large eigenvalues:\n\n$$\n\\lambda_{r}=\\gamma(\\frac{r}{N})^{\u22121+\\frac{\\mu}{d}}\u22c5\u03c1^{\\frac{\\mu}{d}}=\\gammar^{\u22121+\\frac{\\mu}{d}}L^{\u2212\\mu}Nforr\\leq\\beta(N),\n$$\n\nwhere $L$ is the size of the functional space, $\\gamma$ is the coefficient in Equation 3, which depends on $d$, $\\mu$, and $E(\\sigma^{2})$. Note that the eigenvalue $\\lambda_{r}$ decays rapidly after the threshold $r=\\beta(N)$. Since we did not discuss small eigenvalues in this article, we represent them here as an unknown function $\u03b7(r,N,L)$:\n\n$$\n\\lambda_{r}=\u03b7(r,N,L)forr>\\beta(N)\n$$\n\nAs discussed in Methods, without changing the properties of the spectrum, we can always impose $E(\\sigma^{2})=1$ such that\n\n$$\n\\sumr=1N\\lambda_{r}=Tr\u2061(C)=N\n$$\n\nWe emphasize that this constraint requires that large and small eigenvalues behave differently because otherwise $\\sumr=1Nr^{\u2212\\alpha}$ with $\\alpha<1$ would scale as $N^{1\u2212\\alpha}$, and $\\sumr=1N\\lambda_{r}$ is not proportional to $N$.\n\nUsing the Cauchy\u2013Schwarz inequality, we have an upper bound of $\\sumr=1N\\lambda_{r}^{2}$:\n\n$$\n\\sumr=1N\\lambda_{r}^{2}\\leq(\\sumr\\lambda_{r})^{2}=N^{2}\n$$\n\nOn the other hand, $\\lambda_{1}^{2}$ is a lower bound of $\\sumr=1N\\lambda_{r}^{2}$:\n\n$$\n\\sumr=1N\\lambda_{r}^{2}>\\lambda_{1}^{2}=L^{\u22122\\mu}N^{2}\\gamma^{2}\n$$\n\nAs a result, the dimensionality\n\n$$\nD_{PR}=\\frac{(\\sumr=1N\\lambda_{r})^{2}}{\\sumr=1N\\lambda_{r}^{2}},\n$$\n\nis bounded as\n\n$$\n1\\leqD_{PR}<L^{2\\mu}\\gamma^{\u22122}\n$$\n\nUnder random sampling, $L$ remains fixed. Thus, we must have a bounded dimensionality that is independent of $N$ for our ERM model. A tighter lower bound of $\\sumr=1N\\lambda_{r}^{2}$ is\n\n$$\n\\sumr=1N\\lambda_{r}^{2}>\\gamma^{2}L^{\u22122\\mu}N^{2}\\sumr=1\\beta(N)(r^{\u22122+2\\mu/d})\n$$\n\nA tighter upper bound of participation ratio $D_{PR}$ can be written as:\n\n$$\nD_{PR}=\\frac{(\\sumr=1N\\lambda_{r})^{2}}{\\sumr=1N\\lambda_{r}^{2}}<\\frac{L^{2\\mu}\\gamma^{\u22122}}{\\sumr=1\\beta(N)(r^{\u22122+2\\mu/d})}<L^{2\\mu}\\gamma^{\u22122}\n$$\n\nHowever, in functional sampling, enlarging the region size with constant density \u03c1 results in $L\u223cN^{1/d}$. Thus, the upper bound of $D_{PR}$ should grow as $N^{2\\mu/d}$, consistent with the previously derived result (Equation 31) in Methods.\n\n#### Simulating CCA and anatomical sampling\n\nIn this section, we estimate the dimensions of the anatomically sampled neuron set. For simplicity, we assume that the functional coordinates of neurons, $X_{i}$, and the anatomical coordinates of neurons, $Y_{i}$, both follow a multivariate Gaussian distribution. We define anatomical sampling, which involves sampling on $Y_{i}$, along a direction chosen arbitrarily and denote this direction as $Y^{A}$. Subsequently, we perform sampling on $X_{i}$ in the direction denoted by $X^{A}$, which is determined to have the highest correlation with $Y^{A}$ according to CCA. This process effectively mimics the scenario of functional sampling.\n\nThe key to calculating the PR dimension involves computing the expected value $E_{i\\neqj}(C_{ij}^{2})$. In the ERM model, the distribution of $C_{ij}$ can be estimated by the distribution of points in the functional space. This allows for the calculation of the PR dimension across anatomical sampling by comparing the distribution of $X_{i}$ after anatomical sampling with that after functional sampling. We can model the distribution of $X^{A}$ and $Y^{A}$ as follows:\n\n$$\nR_{ASap}=corr(X^{A},Y^{A}),C_{ASap}=corr(X^{A},Y^{A})\\sigma_{x}\\sigma_{y},[X^{A}Y^{A}]\u223cN([00],[\\sigma_{x}^{2}C_{ASap}C_{ASap}\\sigma_{y}^{2}]),\n$$\n\nHere, we consider only the projection of the functional coordinate onto the direction $X^{A}$, which exhibits the highest correlation, denoted by $R_{ASap}$, with $Y^{A}$. Specifically, when selecting the anatomical direction as the first CCA direction, the correlation between $X^{A}$ and $Y^{A}$ reaches its maximum, such that $R_{ASap}=R_{CCA}$. In this case, anatomical sampling results in the minimization of the dimensionality.\n\nNow, let us perform anatomical sampling on the neurons. The $X\u2192_{i}$ and $Y\u2192_{i}$ denote the functional and anatomical coordinates of the $i^{th}$ neuron cluster after anatomical sampling, respectively.\n\nTo approximate, we need to calculate the functional coordinate probability distribution $p(X\u2192_{i})=p(X\u2192|q_{ik}^{y}<Y^{A}<q_{(i+1)k}^{y})$, which is the distribution of the $i^{th}$ neuron cluster after anatomical sampling. $Y^{A}$ represents the selected direction in anatomical space, and $q_{ik}^{y}$ denotes the $ik^{th}$ quantile of $Y^{A}$, where $k$ is the sampled fraction. Note the following relationships and distributions:\n\n$$\np(X^{A}|Y^{A}=y)=\\frac{p(X^{A},Y^{A}=y)}{p(Y^{A}=y)},p(X^{A}|Y^{A}=y)\u223cN(y\\frac{\\sigma_{x}}{\\sigma_{y}}R_{ASap},\\sigma_{x}^{2}(1\u2212R_{ASap}^{2})).\n$$\n\n\n\n$$\np(X_{i}^{A})=p(X^{A}|q_{ik}^{y}<Y^{A}<q_{(i+1)k}^{y})=\\frac{1}{k}\\int_{q_{ik}^{y}}^{q_{(i+1)k}^{y}}p(X^{A}|Y^{A}=y)dy\n$$\n\nThe conditional probability distribution $P(X^{A}|q_{ik}^{y}<Y^{A}<q_{(i+1)k}^{y})$ is equivalent to the distribution of the sum of $Y_{i}^{A}\\frac{\\sigma_{x}}{\\sigma_{y}}R_{ASap}$ and $X_{0}$, where $X_{0}\u223cN(0,\\sigma_{x}^{2}(1\u2212R_{ASap}^{2}))$:\n\n$$\nX_{i}^{A}=Y_{i}^{A}\\frac{\\sigma_{x}}{\\sigma_{y}}R_{ASap}+X_{0},\n$$\n\n\n\n$$\np(Y_{i}^{A}=y)={\\frac{1}{k\\sqrt{2\\pi}\\sigma_{y}}exp\u2061(\u2212\\frac{y^{2}}{2\\sigma_{y}^{2}})for\u00a0q_{ik}^{y}<y<q_{(i+1)k}^{y},0otherwise.\n$$\n\nThe computation of $X_{i}^{A}$ involves two technical challenges: (1) The distribution of $Y_{i}^{A}$ is represented by a non-elementary function (Equation 49), which complicates the direct calculation of $X_{i}^{A}$, which is the sum of $Y_{i}^{A}R_{ASap}\\sigma_{x}/\\sigma_{y}$ and $X_{0}$. To facilitate approximation, we model $Y_{i}^{A}$ using a normal distribution with equivalent variance. (2) Calculating the variance of $Y_{i}^{A}$ presents direct challenges, and the variance of $Y_{i}^{A}$ differs across different neuron clusters i. Using a uniform distribution for $Y$ simplifies this task (this assumption is only used to calculate the variance of $Y_{i}^{A}$). Under this assumption, the variance of $Y_{i}^{A}$ can be straightforwardly calculated as $Var(Y_{i}^{A})=k^{2}\\sigma_{y}^{2}$. Consequently, we approximate $Y_{i}^{A}$ and $X_{i}^{A}$ as follows:\n\n$$\nY_{i}^{A}\u223cN(\\frac{q_{ik}^{y}+q_{(i+1)k}^{y}}{2},k^{2}\\sigma_{y}^{2}),\n$$\n\n\n\n$$\nX_{i}^{A}\u223cN(\\frac{q_{ik}^{y}+q_{(i+1)k}^{y}}{2}\\frac{\\sigma_{x}}{\\sigma_{y}}R_{ASap},\\sigma_{x}^{2}(1\u2212R_{ASap}^{2}+k^{2}R_{ASap}^{2})).\n$$\n\nCalculating the PR dimension directly from the distribution of $X_{i}^{A}$ is difficult; thus, we approximate anatomical sampling with fraction $k$ as functional sampling with fraction $k_{f}$, leading to:\n\n$$\nk_{f}=\\sqrt{1+k^{2}R_{ASap}^{2}\u2212R_{ASap}^{2}}.\n$$\n\nUsing the equation for functional sampling $E_{i\\neqj}^{k}(C_{ij}^{2})\u2248k^{\u22122\\mu/d}E_{i\\neqj}(C_{ij}^{2})$ (Equation 30):\n\n$$\nE_{i\\neqj}^{k}(C_{ij}^{2})\u2248(1+k^{2}R_{ASap}^{2}\u2212R_{ASap}^{2})^{\u2212\\mu/d}E_{i\\neqj}(C_{ij}^{2}).\n$$\n\n\n\n$$\nD_{PR}^{ASap}\u2248\\frac{kN_{0}E(\\sigma^{2})^{2}}{E(\\sigma^{4})+(kN_{0}\u22121)(1+k^{2}R_{ASap}^{2}\u2212R_{ASap}^{2})^{\u2212\\mu/d}E_{i\\neqj}(C_{ij}^{2})}\n$$\n",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Latham, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.100666.3.sa0](https://doi.org/10.7554/eLife.100666.3.sa0)\n\nThis important study shows a surprising scale-invariance of the covariance spectrum of large-scale recordings in the zebrafish brain in vivo. A convincing analysis demonstrates that a Euclidean random matrix model of the covariance matrix recapitulates these properties. The results provide several new and insightful approaches for probing large-scale neural recordings.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100666.3.sa1](https://doi.org/10.7554/eLife.100666.3.sa1)\n\nSummary:\n\nThe authors examine the eigenvalue spectrum of the covariance matrix of neural recordings in the whole-brain larval zebrafish during hunting and spontaneous behavior. They find that the spectrum is approximately power law, and, more importantly, exhibits scale-invariance under random subsampling of neurons. This property is not exhibited by conventional models of covariance spectra, motivating the introduction of the Euclidean random matrix model. The authors show that this tractable model captures the scale invariance they observe. They also examine the effects of subsampling based on anatomical location or functional relationships. Finally, they discuss the benefit of neural codes which can be subsampled without significant loss of information.\n\nStrengths:\n\nWith large-scale neural recordings becoming increasingly common, neuroscientists are faced with the question: how should we analyze them? To address that question, this paper proposes the Euclidean random matrix model, which embeds neurons randomly in an abstract feature space. This model is analytically tractable and matches two nontrivial features of the covariance matrix: approximate power law scaling, and invariance under subsampling. It thus introduces an important conceptual and technical advance for understanding large-scale simultaneously recorded neural activity.\n\nComment:\n\nAre there quantitative comparisons of the collapse indices for the null models in Figure 2 and the data covariance in 2F? If so, this could be potentially useful to report.\n",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c230face-a8fc-4d24-9d92-127df668a8aa",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C1",
+      "claim": "By recording whole-brain calcium activity in larval zebrafish during hunting and spontaneous behaviors, the shape of the neural activity space, described by the neural covariance spectrum, is scale-invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "By recording whole-brain calcium activity in larval zebrafish during hunting and spontaneous behaviors, we find that the shape of the neural activity space, described by the neural covariance spectrum, is scale-invariant: a smaller, randomly sampled cell assembly resembles the entire brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from whole-brain calcium imaging in larval zebrafish, as described in the abstract and detailed in the results section with figures showing eigenspectrum collapse.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "219e3ed8-b711-434c-922d-29bd1ef119e5",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C2",
+      "claim": "A smaller, randomly sampled cell assembly resembles the entire brain in terms of neural covariance spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "By recording whole-brain calcium activity in larval zebrafish during hunting and spontaneous behaviors, we find that the shape of the neural activity space, described by the neural covariance spectrum, is scale-invariant: a smaller, randomly sampled cell assembly resembles the entire brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experimental data showing that eigenspectra collapse across different sample sizes, as shown in Figure 2F and related figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "08ad13fd-f7d3-4110-ba1c-a1f41f6df464",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C3",
+      "claim": "The scale invariance phenomenon can be explained by Euclidean Random Matrix theory.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon can be explained by Euclidean Random Matrix theory, where neurons are reorganized from anatomical to functional positions based on their correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors develop a theoretical model based on ERM theory and show it matches experimental observations, providing a mechanistic explanation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "c8e3db7e-ca83-4142-be61-119a761bfde5",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C4",
+      "claim": "Three factors contribute to the observed scale invariance: slow neural correlation decay, higher functional space dimension, and neural activity heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Three factors contribute to the observed scale invariance: slow neural correlation decay, higher functional space dimension, and neural activity heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These factors are identified through theoretical analysis of the ERM model and validated through simulations and comparison with experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "0a796314-6a53-49a1-b8a9-a7285c8c56ff",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C5",
+      "claim": "Geometric analysis of neuronal population activity has revealed fundamental structures of neural representations and brain dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Geometric analysis of neuronal population activity has revealed the fundamental structures of neural representations and brain dynamics (Churchland et al., 2012; Zhang et al., 2023; Kriegeskorte and Wei, 2021; Chung and Abbott, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "fddaad86-65b6-46b3-bf38-f7ec0900f7ac",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C6",
+      "claim": "Dimensionality reduction methods identify collective or latent variables in neural populations and simplify the view of high-dimensional neural data.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimensionality reduction methods, which identify collective or latent variables in neural populations, simplify our view of high-dimensional neural data (Cunningham and Yu, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in neuroscience, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "e7e7c50c-fee6-4b37-a417-a4402e32efa8",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C7",
+      "claim": "The number of neurons that can be simultaneously recorded in vivo has grown exponentially in the past decade.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past decade, the number of neurons that can be simultaneously recorded in vivo has grown exponentially (Buzs\u00e1ki, 2004; Ahrens et al., 2012; Jun et al., 2017; Stevenson and Kording, 2011; Nguyen et al., 2016; Sofroniew et al., 2016; Lin et al., 2022; Meshulam et al., 2019; Demas et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations documenting technological advances in neural recording.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "eca5bf13-ef36-4e71-ae13-38ea9ad6cfdb",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C9",
+      "claim": "Brain-wide Ca2+ activity was recorded at a volume rate of 10 Hz in head-fixed larval zebrafish during hunting attempts and spontaneous behavior using Fourier light-field microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded brain-wide Ca2+activity at a volume rate of 10 Hz in head-fixed larval zebrafish (Figure 2A) during hunting attempts (Methods) and spontaneous behavior using a Fourier light-field microscopy (Cong et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methodology used to collect data, with reference to Figure 2A and citation to the imaging method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "ed95e7ce-8a12-427f-8e2b-06cee575cdb7",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C10",
+      "claim": "Approximately 2000 ROIs (1977.3 \u00b1 677.1, mean \u00b1 SD) with a diameter of 16.84 \u00b1 8.51 \u00b5m were analyzed per fish based on voxel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 2000 ROIs (1977.3 \u00b1 677.1, mean \u00b1 SD) with a diameter of 16.84 \u00b1 8.51 \u00b5m were analyzed per fish based on voxel activity (Methods, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This provides quantitative data about the number and size of regions of interest analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "f509de4b-f0d9-4169-9357-3ec12bd1b4b8",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C13",
+      "claim": "The data dimensionality grows with sample size and reaches the maximum value specified by Equation 1.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, the data dimensionality grows with sample size and reaches the maximum value specified by Equation 1 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 2D, confirming the theoretical prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "57ea1997-d618-4458-8d62-83c5689eea15",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C16",
+      "claim": "The scale invariance pattern holds across diverse datasets and experimental techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern holds across diverse datasets and experimental techniques (Figure 2F, Figure 2\u2014figure supplement 2E\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from multiple datasets shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "2e5e2f58-538c-4a11-b63b-caca750c136b",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C17",
+      "claim": "The scale invariance in the neural covariance matrix is non-trivial.",
+      "claim_type": "EXPLICIT",
+      "source": "The scale invariance in the neural covariance matrix \u2013 the collapse of the covariance eigenspectrum under random sampling \u2013 is non-trivial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is argued by showing that several alternative models do not produce scale invariance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "1994cea8-78c1-43b3-95de-2b5b97ec425d",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C18",
+      "claim": "The spectrum is not scale invariant in a common covariance matrix model based on independent noise.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectrum is not scale invariant in a common covariance matrix model based on independent noise (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "27eceb90-8e6f-406f-ad92-95aa3adc4c62",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C19",
+      "claim": "Scale invariance is absent when replacing the neural covariance matrix eigenvectors with random ones, keeping the eigenvalues identical.",
+      "claim_type": "EXPLICIT",
+      "source": "It is absent when replacing the neural covariance matrix eigenvectors with random ones, keeping the eigenvalues identical (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through simulation in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "064d623f-bf60-478e-8661-396001f687d3",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C20",
+      "claim": "A recurrent neural network with random connectivity does not yield a scale-invariant covariance spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "A recurrent neural network with random connectivity (Hu and Sompolinsky, 2022) does not yield a scale-invariant covariance spectrum (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 2I, with citation to the model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "cd4e75a9-0163-48bd-87ee-578746cccda0",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C21",
+      "claim": "A recently developed latent variable model fails to generate the scale-invariant covariance spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "A recently developed latent variable model (Morrell et al., 2024; Appendix 1\u2014figure 6), which is able to reproduce avalanche criticality, also fails to generate the scale-invariant covariance spectrum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis of the model, with citation and reference to supplementary figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "bac642d7-cc0b-4f15-9029-75954970dffc",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C24",
+      "claim": "The ERM was extended by incorporating heterogeneity of neuron activity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To model the covariance, we extend the ERM by incorporating heterogeneity of neuron activity levels (shown as the size of the neuron in the functional space in Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an extension to the standard ERM model to better match experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "398d10f6-fcd9-4f19-a721-1b229a0a52e4",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C26",
+      "claim": "Slow-decaying functions including the power law produce spectra similar to the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we turn to slow-decaying functions including the power law, which produce spectra similar to the data (Figure 3C, D; see also Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through simulations and comparison with data in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "13fc05ea-641c-4774-bb9e-6e5b24f67ab5",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C32",
+      "claim": "The CI of the covariance matrix is consistently smaller (more scale-invariant) than the correlation matrix across all datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the CI of the covariance matrix is consistently smaller (more scale-invariant) across all datasets (Figure 4C, Figure 4\u2014figure supplement 2C, open vs. closed squares), indicating that the heterogeneity of neuronal activity variances significantly affects the eigenspectrum and the geometry of neural activity space (Tian et al., 2024).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative comparison shown in the referenced figures, with citation to related work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "3fdb3bdc-0dba-4c10-8cfb-d49e7fd046bb",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C35",
+      "claim": "Altering the spatial distribution of neurons in the functional space does not affect large covariance eigenvalues, except possibly the leading ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, altering the spatial distribution of neurons in the functional space, whether using a Gaussian, uniform, or clustered distribution, does not affect large covariance eigenvalues, except possibly the leading ones (Appendix 1\u2014figure 1B, Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through simulations with different spatial distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "9fe60212-91e1-4988-92d5-5efe7b1d2394",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C36",
+      "claim": "Different geometries of the functional space result in eigenspectra similar to the original ERM model.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, different geometries of the functional space, such as a flat square, a sphere, or a hemisphere, result in eigenspectra similar to the original ERM model (Appendix 1\u2014figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations with different geometries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "fb28512e-3a51-466b-b70f-d1f4a588f071",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C44",
+      "claim": "Scale invariance of the eigenspectra persists and is enhanced even after removing the hunting frames from the Ca2+ imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that scale invariance of the eigenspectra persists and is enhanced even after removing the hunting frames from the Ca2+ imaging data (Figure 4C, Appendix 1\u2014figure 7A, B, Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analysis of data with hunting behavior removed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "f0888c4f-7aa4-4351-abee-14a210fe26bf",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C45",
+      "claim": "Scale invariance is consistent with the scale-invariant spectrum found in other datasets during spontaneous behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the scale-invariant spectrum found in other datasets during spontaneous behaviors (Figure 5\u2014figure supplement 1F, Figure 2\u2014figure supplement 2G, H), suggesting scale invariance is a general phenomenon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from multiple datasets shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "22aaea30-9186-41b0-ad1b-f7408572b0da",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C46",
+      "claim": "Neurons in one cluster disperse from their center of mass after removing hunting behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in one cluster disperse from their center of mass (Appendix 1\u2014figure 7D) and decreases the local neuronal density \u03c1 (Appendix 1 and Appendix 1\u2014figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from analysis of functional space organization with and without hunting behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "df4b95f3-3840-4be6-9143-aeb667ae6cdf",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C47",
+      "claim": "The neurons in the dispersed cluster have a consistent anatomical distribution from the midbrain to the hindbrain in four out of five fish.",
+      "claim_type": "EXPLICIT",
+      "source": "The neurons in this dispersed cluster have a consistent anatomical distribution from the midbrain to the hindbrain in four out of five fish (Appendix 1\u2014figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation about the anatomical location of functionally defined neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "d5293321-583c-4ffd-8d25-9dbc8e76fb68",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C48",
+      "claim": "During hunting, the cluster has robust activations that are widespread in the anatomical space but localized in the functional space.",
+      "claim_type": "EXPLICIT",
+      "source": "During hunting, the cluster has robust activations that are widespread in the anatomical space but localized in the functional space (Appendix 1, Appendix 1\u2014Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analysis of neural activity patterns during hunting behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "ff34bb40-1a7e-40f9-8585-c2a3f228803f",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C49",
+      "claim": "The functional space could be defined by latent variables that represent cognitive factors such as decision-making, memory, and attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the functional space could be defined by latent variables that represent cognitive factors such as decision-making, memory, and attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of what the functional space might represent.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "83cde73d-feab-4cb3-a206-68722e272773",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C50",
+      "claim": "Long-range connections and a slow decline in projection strength over distance may cause extensive correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-range connections and a slow decline in projection strength over distance (Kunst et al., 2019) may cause extensive correlations, enhancing global activity patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the slow-decaying correlation function, with citation to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "5960730a-c390-46b1-a606-dc092f8643d4",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C51",
+      "claim": "Studies suggest that critical brains optimize information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies suggest that critical brains optimize information processing (Beggs and Plenz, 2003; Dahmen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in neuroscience, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "df2e5904-4704-4805-9a6d-baf58410f99d",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C53",
+      "claim": "The scale-invariant spectrum occurs when \u03b1 is close to 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The scale-invariant spectrum occurs when \u03b1 is close to 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical condition for scale invariance derived from the power-law behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "9fb33dc9-bd32-4809-b663-04da5d498c67",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C56",
+      "claim": "The brain encodes experiences, sensations, and thoughts using a finite set of dimensions instead of an infinitely complex neural activity space.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the brain encodes experiences, sensations, and thoughts using a finite set of dimensions instead of an infinitely complex neural activity space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the finding that dimensionality saturates at large sample sizes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "292f7ef0-4510-4022-969e-1ec53b4ac0e5",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "claim_id": "C58",
+      "claim": "The scale invariance of neural activity across different neuron assembly sizes could support efficient multiscale information encoding and processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The scale invariance of neural activity across different neuron assembly sizes could support efficient multiscale information encoding and processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of scale invariance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f5b4078e-ead0-4f2e-adb2-b7684cb4c3af",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The neural covariance spectrum exhibits scale invariance across randomly sampled cell assemblies in larval zebrafish brain-wide calcium imaging, with this pattern holding across diverse datasets and experimental techniques including light-sheet imaging, two-photon imaging, and Neuropixels recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C16 collectively demonstrate scale invariance through experimental data showing eigenspectrum collapse across different sample sizes (Figure 2F) and validation across multiple datasets and recording methods (Figure 2\u2014figure supplement 2E\u2013L). The experimental evidence is robust and reproducible across different systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "55e3157a-9a5d-4c61-9239-54cefbceb1db",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The observed scale invariance can be explained by an extended Euclidean Random Matrix (ERM) theory that incorporates three key factors: slow neural correlation decay (power-law kernel function), higher functional space dimension, and heterogeneity of neural activity levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C24, and C26 present a theoretical framework validated through simulations and comparison with experimental data. The ERM model with slow-decaying kernel functions reproduces the experimental eigenspectra (Figure 3C, D), and the three contributing factors are analytically derived and numerically verified (Figure 4A).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "1393cdd4-85d4-4a15-b81b-9ea50b59858f",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The scale invariance phenomenon is non-trivial and cannot be explained by several alternative models including independent noise models, random eigenvector models, randomly connected recurrent neural networks, or latent variable models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 systematically rule out alternative explanations through simulations (Figures 2G-I, Appendix 1\u2014figure 6). Each alternative model is tested and shown to fail to reproduce the scale-invariant spectrum observed in data, strengthening the case for the proposed ERM framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "8b5a8a52-e9df-4886-a6a9-a987c826f524",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neural activity dimensionality grows with sample size and saturates at a maximum value predicted by the finite mean squared covariance condition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 is directly supported by experimental data (Figure 2D) matching theoretical predictions from Equation 1. The saturation behavior is consistent with the finite mean squared covariance observed in the data (Figure 2\u2014figure supplement 2A).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "b64ac758-e88b-4801-8100-6808be45dc25",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The covariance matrix consistently shows greater scale invariance (smaller collapse index) than the correlation matrix across all datasets, indicating that heterogeneity of neuronal activity variances significantly affects the eigenspectrum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is quantitatively demonstrated across multiple datasets (Figure 4C, Figure 4\u2014figure supplement 2C) and theoretically explained by the intermediate-density regime of the ERM model (Figure 4\u2014figure supplement 2A, B). The consistent pattern across datasets strengthens this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "b94a0f02-2f58-4a79-a49d-52697005018f",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The scale invariance of the covariance spectrum is robust to variations in spatial distribution of neurons and geometry of the functional space, with these factors having minimal impact on large eigenvalues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C36 are demonstrated through systematic simulations testing different spatial distributions (Gaussian, uniform, clustered) and geometries (flat square, sphere, hemisphere) as shown in Appendix 1\u2014figure 1B, C. This robustness analysis strengthens the generality of the theoretical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "7731c150-c260-4335-a01c-6b634e897773",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Scale invariance persists and is enhanced after removing hunting behavior from the data, with neurons in one cluster dispersing in functional space while maintaining consistent anatomical distribution from midbrain to hindbrain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 demonstrate that scale invariance is not dependent on task-related activity and reveal functional reorganization during hunting. The findings are supported by data analysis with and without hunting frames (Figure 4C, Appendix 1\u2014figure 7) and consistent anatomical patterns across fish (Appendix 1\u2014figure 9).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "35b4789b-1f9f-4998-9104-9dba899194e8",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Brain-wide Ca2+ activity was recorded at 10 Hz in head-fixed larval zebrafish using Fourier light-field microscopy, analyzing approximately 2000 ROIs per fish with diameters of 16.84 \u00b1 8.51 \u00b5m.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C10 describe the experimental methodology with specific quantitative details. The methods are well-established (citation to Cong et al., 2017) and the ROI analysis is documented with clear statistics and supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "05e9dace-c737-400e-b361-e9b7922061a9",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The functional space may represent latent cognitive variables, with slow-decaying correlations potentially arising from long-range connections, and scale invariance potentially supporting efficient multiscale information encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49, C50, and C58 are explicitly speculative interpretations without direct experimental validation. While these interpretations are plausible and consistent with the findings, they represent hypotheses for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "1fda03c0-e5e6-44b0-9ce5-9a366fed3736",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The brain encodes information using a finite set of dimensions rather than an infinitely complex space, with scale-invariant spectra occurring when the power-law exponent \u03b1 is close to 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C56 are supported by the theoretical analysis showing dimensionality saturation (Equation 1) and the power-law behavior of eigenspectra (Equation 3). The finite dimensionality is directly observed in experimental data (Figure 2D) and contrasts with alternative models like balanced E-I networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "2eaea92d-a543-4918-b674-99a21e4ee0ad",
+      "content_id": "595ba838-0742-45d9-945f-a513bde024ca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has established that geometric analysis reveals neural representations, dimensionality reduction simplifies neural data, recording capabilities have grown exponentially, and critical brains may optimize information processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C7, and C51 accurately summarize established knowledge in the field with appropriate citations. These provide necessary context for the current work and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "62d5b00a-5d57-4409-affe-252fd1a02425",
+      "content_id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that the neural covariance spectrum in larval zebrafish whole-brain recordings exhibits scale invariance: randomly sampled subsets of neurons resemble the full population's covariance structure. This pattern holds across multiple datasets and experimental techniques.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm this finding. The editor describes it as a 'surprising scale-invariance' that is 'convincingly' demonstrated, while the anonymous reviewer highlights that the spectrum 'exhibits scale-invariance under random subsampling of neurons' as a key strength. No concerns are raised about this core empirical observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "aa9a1e39-0788-425c-8b4e-8bb4a9f34910",
+      "content_id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors propose that Euclidean Random Matrix (ERM) theory explains the observed scale invariance, with three key factors contributing: slow neural correlation decay (power-law), higher functional space dimension, and neural activity heterogeneity. The ERM model is extended to incorporate heterogeneity of neuron activity levels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer explicitly states that the ERM model 'is analytically tractable and matches two nontrivial features of the covariance matrix: approximate power law scaling, and invariance under subsampling,' calling it 'an important conceptual and technical advance.' The editor confirms that 'a Euclidean random matrix model of the covariance matrix recapitulates these properties' with 'convincing analysis.' No methodological concerns are raised about the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "47d3f7b1-3e67-453b-aaa9-8374c824fafb",
+      "content_id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrate that scale invariance is non-trivial by showing that several alternative models fail to reproduce it, including independent noise models, randomized eigenvector models, random recurrent neural networks, and latent variable models.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer acknowledges that 'this property is not exhibited by conventional models of covariance spectra, motivating the introduction of the Euclidean random matrix model.' This implicitly accepts the authors' demonstration that alternative models fail to capture scale invariance. No reviewer challenges these control analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "2703b375-32f3-4aef-bcf7-f830aa4a4616",
+      "content_id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors recorded brain-wide Ca2+ activity at 10 Hz in larval zebrafish using Fourier light-field microscopy, analyzing approximately 2000 ROIs per fish. Data dimensionality grows with sample size and reaches a maximum value as predicted by theory.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not question the experimental methodology or data quality. The editor describes the study as examining 'large-scale recordings in the zebrafish brain in vivo' without raising concerns. The anonymous reviewer's summary accurately describes the experimental approach without critique, indicating acceptance of the methods.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "2a55eb9a-abfc-4e12-ac51-194a80a85d78",
+      "content_id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The collapse index (CI) of the covariance matrix is consistently smaller (more scale-invariant) than the correlation matrix across all datasets, indicating that heterogeneity of neuronal activity variances significantly affects the eigenspectrum.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While no reviewer explicitly challenges this finding, the anonymous reviewer asks 'Are there quantitative comparisons of the collapse indices for the null models in Figure 2 and the data covariance in 2F? If so, this could be potentially useful to report.' This suggests the reviewer seeks more rigorous quantitative validation of the CI comparisons, indicating some uncertainty about the strength of this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "de65e960-767a-4c57-9351-2bf52c103f5a",
+      "content_id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Scale invariance persists and is enhanced when hunting behavior frames are removed from the data. During hunting, a specific neuronal cluster shows robust activations that are anatomically widespread but functionally localized, and this cluster disperses in functional space when hunting is removed.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not question these behavioral analyses. The anonymous reviewer notes that the authors 'examine the effects of subsampling based on anatomical location or functional relationships' without raising concerns, implicitly accepting these findings about behavior-dependent functional organization.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "efe4aaa8-4940-44e3-8611-42dd184f8ae4",
+      "content_id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Robustness analyses show that altering spatial distribution of neurons in functional space (Gaussian, uniform, clustered) or changing the geometry (flat square, sphere, hemisphere) does not substantially affect large covariance eigenvalues.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These robustness checks are not questioned by reviewers. The editor's statement that the analysis is 'convincing' and the anonymous reviewer's description of the model as 'tractable' suggest acceptance of these supporting analyses that demonstrate the model's robustness.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "2a4b5104-b558-43d9-b3b6-640b147f0941",
+      "content_id": "3beae840-7744-4fa4-83cf-147086331db5",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors speculate that the functional space could represent latent cognitive variables, that long-range connections may cause extensive correlations, that the brain uses a finite set of dimensions for encoding, and that scale invariance could support efficient multiscale information processing.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer explicitly acknowledges that the authors 'discuss the benefit of neural codes which can be subsampled without significant loss of information,' indicating acceptance of these interpretive discussions. No reviewer challenges these speculative interpretations, and they are presented as discussion points rather than empirical claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c230face-a8fc-4d24-9d92-127df668a8aa",
+      "result_id": "f5b4078e-ead0-4f2e-adb2-b7684cb4c3af"
+    },
+    {
+      "claim_id": "219e3ed8-b711-434c-922d-29bd1ef119e5",
+      "result_id": "f5b4078e-ead0-4f2e-adb2-b7684cb4c3af"
+    },
+    {
+      "claim_id": "57ea1997-d618-4458-8d62-83c5689eea15",
+      "result_id": "f5b4078e-ead0-4f2e-adb2-b7684cb4c3af"
+    },
+    {
+      "claim_id": "08ad13fd-f7d3-4110-ba1c-a1f41f6df464",
+      "result_id": "55e3157a-9a5d-4c61-9239-54cefbceb1db"
+    },
+    {
+      "claim_id": "c8e3db7e-ca83-4142-be61-119a761bfde5",
+      "result_id": "55e3157a-9a5d-4c61-9239-54cefbceb1db"
+    },
+    {
+      "claim_id": "bac642d7-cc0b-4f15-9029-75954970dffc",
+      "result_id": "55e3157a-9a5d-4c61-9239-54cefbceb1db"
+    },
+    {
+      "claim_id": "398d10f6-fcd9-4f19-a721-1b229a0a52e4",
+      "result_id": "55e3157a-9a5d-4c61-9239-54cefbceb1db"
+    },
+    {
+      "claim_id": "2e5e2f58-538c-4a11-b63b-caca750c136b",
+      "result_id": "1393cdd4-85d4-4a15-b81b-9ea50b59858f"
+    },
+    {
+      "claim_id": "1994cea8-78c1-43b3-95de-2b5b97ec425d",
+      "result_id": "1393cdd4-85d4-4a15-b81b-9ea50b59858f"
+    },
+    {
+      "claim_id": "27eceb90-8e6f-406f-ad92-95aa3adc4c62",
+      "result_id": "1393cdd4-85d4-4a15-b81b-9ea50b59858f"
+    },
+    {
+      "claim_id": "064d623f-bf60-478e-8661-396001f687d3",
+      "result_id": "1393cdd4-85d4-4a15-b81b-9ea50b59858f"
+    },
+    {
+      "claim_id": "cd4e75a9-0163-48bd-87ee-578746cccda0",
+      "result_id": "1393cdd4-85d4-4a15-b81b-9ea50b59858f"
+    },
+    {
+      "claim_id": "f509de4b-f0d9-4169-9357-3ec12bd1b4b8",
+      "result_id": "8b5a8a52-e9df-4886-a6a9-a987c826f524"
+    },
+    {
+      "claim_id": "13fc05ea-641c-4774-bb9e-6e5b24f67ab5",
+      "result_id": "b64ac758-e88b-4801-8100-6808be45dc25"
+    },
+    {
+      "claim_id": "3fdb3bdc-0dba-4c10-8cfb-d49e7fd046bb",
+      "result_id": "b94a0f02-2f58-4a79-a49d-52697005018f"
+    },
+    {
+      "claim_id": "9fe60212-91e1-4988-92d5-5efe7b1d2394",
+      "result_id": "b94a0f02-2f58-4a79-a49d-52697005018f"
+    },
+    {
+      "claim_id": "fb28512e-3a51-466b-b70f-d1f4a588f071",
+      "result_id": "7731c150-c260-4335-a01c-6b634e897773"
+    },
+    {
+      "claim_id": "f0888c4f-7aa4-4351-abee-14a210fe26bf",
+      "result_id": "7731c150-c260-4335-a01c-6b634e897773"
+    },
+    {
+      "claim_id": "22aaea30-9186-41b0-ad1b-f7408572b0da",
+      "result_id": "7731c150-c260-4335-a01c-6b634e897773"
+    },
+    {
+      "claim_id": "df4b95f3-3840-4be6-9143-aeb667ae6cdf",
+      "result_id": "7731c150-c260-4335-a01c-6b634e897773"
+    },
+    {
+      "claim_id": "d5293321-583c-4ffd-8d25-9dbc8e76fb68",
+      "result_id": "7731c150-c260-4335-a01c-6b634e897773"
+    },
+    {
+      "claim_id": "eca5bf13-ef36-4e71-ae13-38ea9ad6cfdb",
+      "result_id": "35b4789b-1f9f-4998-9104-9dba899194e8"
+    },
+    {
+      "claim_id": "ed95e7ce-8a12-427f-8e2b-06cee575cdb7",
+      "result_id": "35b4789b-1f9f-4998-9104-9dba899194e8"
+    },
+    {
+      "claim_id": "ff34bb40-1a7e-40f9-8585-c2a3f228803f",
+      "result_id": "05e9dace-c737-400e-b361-e9b7922061a9"
+    },
+    {
+      "claim_id": "83cde73d-feab-4cb3-a206-68722e272773",
+      "result_id": "05e9dace-c737-400e-b361-e9b7922061a9"
+    },
+    {
+      "claim_id": "292f7ef0-4510-4022-969e-1ec53b4ac0e5",
+      "result_id": "05e9dace-c737-400e-b361-e9b7922061a9"
+    },
+    {
+      "claim_id": "df2e5904-4704-4805-9a6d-baf58410f99d",
+      "result_id": "1fda03c0-e5e6-44b0-9ce5-9a366fed3736"
+    },
+    {
+      "claim_id": "9fb33dc9-bd32-4809-b663-04da5d498c67",
+      "result_id": "1fda03c0-e5e6-44b0-9ce5-9a366fed3736"
+    },
+    {
+      "claim_id": "0a796314-6a53-49a1-b8a9-a7285c8c56ff",
+      "result_id": "2eaea92d-a543-4918-b674-99a21e4ee0ad"
+    },
+    {
+      "claim_id": "fddaad86-65b6-46b3-bf38-f7ec0900f7ac",
+      "result_id": "2eaea92d-a543-4918-b674-99a21e4ee0ad"
+    },
+    {
+      "claim_id": "e7e7c50c-fee6-4b37-a417-a4402e32efa8",
+      "result_id": "2eaea92d-a543-4918-b674-99a21e4ee0ad"
+    },
+    {
+      "claim_id": "5960730a-c390-46b1-a606-dc092f8643d4",
+      "result_id": "2eaea92d-a543-4918-b674-99a21e4ee0ad"
+    },
+    {
+      "claim_id": "c230face-a8fc-4d24-9d92-127df668a8aa",
+      "result_id": "62d5b00a-5d57-4409-affe-252fd1a02425"
+    },
+    {
+      "claim_id": "219e3ed8-b711-434c-922d-29bd1ef119e5",
+      "result_id": "62d5b00a-5d57-4409-affe-252fd1a02425"
+    },
+    {
+      "claim_id": "57ea1997-d618-4458-8d62-83c5689eea15",
+      "result_id": "62d5b00a-5d57-4409-affe-252fd1a02425"
+    },
+    {
+      "claim_id": "08ad13fd-f7d3-4110-ba1c-a1f41f6df464",
+      "result_id": "aa9a1e39-0788-425c-8b4e-8bb4a9f34910"
+    },
+    {
+      "claim_id": "c8e3db7e-ca83-4142-be61-119a761bfde5",
+      "result_id": "aa9a1e39-0788-425c-8b4e-8bb4a9f34910"
+    },
+    {
+      "claim_id": "bac642d7-cc0b-4f15-9029-75954970dffc",
+      "result_id": "aa9a1e39-0788-425c-8b4e-8bb4a9f34910"
+    },
+    {
+      "claim_id": "398d10f6-fcd9-4f19-a721-1b229a0a52e4",
+      "result_id": "aa9a1e39-0788-425c-8b4e-8bb4a9f34910"
+    },
+    {
+      "claim_id": "2e5e2f58-538c-4a11-b63b-caca750c136b",
+      "result_id": "47d3f7b1-3e67-453b-aaa9-8374c824fafb"
+    },
+    {
+      "claim_id": "1994cea8-78c1-43b3-95de-2b5b97ec425d",
+      "result_id": "47d3f7b1-3e67-453b-aaa9-8374c824fafb"
+    },
+    {
+      "claim_id": "27eceb90-8e6f-406f-ad92-95aa3adc4c62",
+      "result_id": "47d3f7b1-3e67-453b-aaa9-8374c824fafb"
+    },
+    {
+      "claim_id": "064d623f-bf60-478e-8661-396001f687d3",
+      "result_id": "47d3f7b1-3e67-453b-aaa9-8374c824fafb"
+    },
+    {
+      "claim_id": "cd4e75a9-0163-48bd-87ee-578746cccda0",
+      "result_id": "47d3f7b1-3e67-453b-aaa9-8374c824fafb"
+    },
+    {
+      "claim_id": "eca5bf13-ef36-4e71-ae13-38ea9ad6cfdb",
+      "result_id": "2703b375-32f3-4aef-bcf7-f830aa4a4616"
+    },
+    {
+      "claim_id": "ed95e7ce-8a12-427f-8e2b-06cee575cdb7",
+      "result_id": "2703b375-32f3-4aef-bcf7-f830aa4a4616"
+    },
+    {
+      "claim_id": "f509de4b-f0d9-4169-9357-3ec12bd1b4b8",
+      "result_id": "2703b375-32f3-4aef-bcf7-f830aa4a4616"
+    },
+    {
+      "claim_id": "13fc05ea-641c-4774-bb9e-6e5b24f67ab5",
+      "result_id": "2a55eb9a-abfc-4e12-ac51-194a80a85d78"
+    },
+    {
+      "claim_id": "fb28512e-3a51-466b-b70f-d1f4a588f071",
+      "result_id": "de65e960-767a-4c57-9351-2bf52c103f5a"
+    },
+    {
+      "claim_id": "f0888c4f-7aa4-4351-abee-14a210fe26bf",
+      "result_id": "de65e960-767a-4c57-9351-2bf52c103f5a"
+    },
+    {
+      "claim_id": "22aaea30-9186-41b0-ad1b-f7408572b0da",
+      "result_id": "de65e960-767a-4c57-9351-2bf52c103f5a"
+    },
+    {
+      "claim_id": "df4b95f3-3840-4be6-9143-aeb667ae6cdf",
+      "result_id": "de65e960-767a-4c57-9351-2bf52c103f5a"
+    },
+    {
+      "claim_id": "d5293321-583c-4ffd-8d25-9dbc8e76fb68",
+      "result_id": "de65e960-767a-4c57-9351-2bf52c103f5a"
+    },
+    {
+      "claim_id": "3fdb3bdc-0dba-4c10-8cfb-d49e7fd046bb",
+      "result_id": "efe4aaa8-4940-44e3-8611-42dd184f8ae4"
+    },
+    {
+      "claim_id": "9fe60212-91e1-4988-92d5-5efe7b1d2394",
+      "result_id": "efe4aaa8-4940-44e3-8611-42dd184f8ae4"
+    },
+    {
+      "claim_id": "ff34bb40-1a7e-40f9-8585-c2a3f228803f",
+      "result_id": "2a4b5104-b558-43d9-b3b6-640b147f0941"
+    },
+    {
+      "claim_id": "83cde73d-feab-4cb3-a206-68722e272773",
+      "result_id": "2a4b5104-b558-43d9-b3b6-640b147f0941"
+    },
+    {
+      "claim_id": "9fb33dc9-bd32-4809-b663-04da5d498c67",
+      "result_id": "2a4b5104-b558-43d9-b3b6-640b147f0941"
+    },
+    {
+      "claim_id": "292f7ef0-4510-4022-969e-1ec53b4ac0e5",
+      "result_id": "2a4b5104-b558-43d9-b3b6-640b147f0941"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "01520faf-594f-4ad9-9116-053d128b0b86",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f5b4078e-ead0-4f2e-adb2-b7684cb4c3af",
+      "peer_result_id": "62d5b00a-5d57-4409-affe-252fd1a02425",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C1, C2, C16 regarding scale invariance. Both evaluations find the experimental demonstration of eigenspectrum collapse convincing and well-supported. OpenEval emphasizes robustness across datasets while peer reviewers highlight it as a surprising and key strength.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "5dd85673-4bed-4200-8bab-e1bd466544be",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "55e3157a-9a5d-4c61-9239-54cefbceb1db",
+      "peer_result_id": "aa9a1e39-0788-425c-8b4e-8bb4a9f34910",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C3, C4, C24, C26 regarding the ERM model. Both evaluations recognize the model as an important advance that successfully reproduces experimental features. Peer reviewers explicitly call it 'analytically tractable' and matching 'nontrivial features,' aligning with OpenEval's assessment of theoretical validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "34fa789d-285e-4736-b0f5-c7dbb763ef0f",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1393cdd4-85d4-4a15-b81b-9ea50b59858f",
+      "peer_result_id": "47d3f7b1-3e67-453b-aaa9-8374c824fafb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C17-C21 regarding ruling out alternative models. Both evaluations accept that conventional models fail to capture scale invariance. OpenEval provides more detailed assessment of each alternative, while peer reviewers implicitly accept these control analyses without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "b61ef81d-5ca2-4251-912c-b6ef78075317",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "8b5a8a52-e9df-4886-a6a9-a987c826f524",
+      "peer_result_id": "2703b375-32f3-4aef-bcf7-f830aa4a4616",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on experimental methodology. OpenEval R4 focuses specifically on claim C13 (saturation behavior), while peer R4 addresses broader methodology (C9, C10, C13). Both find the experimental approach sound, though peer reviewers provide less detailed assessment of the saturation finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "eedd6b93-2048-4d03-bf2a-d5a813537321",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "b64ac758-e88b-4801-8100-6808be45dc25",
+      "peer_result_id": "2a55eb9a-abfc-4e12-ac51-194a80a85d78",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claim C32 regarding collapse index comparisons. OpenEval rates as SUPPORTED with quantitative evidence across datasets, while peer reviewers rate as UNCERTAIN, requesting more rigorous quantitative validation of CI comparisons between null models and data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "297b8018-0b71-4c4b-b98c-a0bc83d70983",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "b94a0f02-2f58-4a79-a49d-52697005018f",
+      "peer_result_id": "efe4aaa8-4940-44e3-8611-42dd184f8ae4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C35, C36 regarding robustness to spatial distributions and geometries. Both evaluations accept these simulation-based robustness checks. OpenEval provides detailed assessment of the systematic testing, while peer reviewers implicitly accept through general endorsement of the model's tractability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "12bb0807-7201-4aa6-8544-79e034eacdb4",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7731c150-c260-4335-a01c-6b634e897773",
+      "peer_result_id": "de65e960-767a-4c57-9351-2bf52c103f5a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C44-C48 regarding behavior-independent scale invariance and functional reorganization during hunting. Both evaluations support these findings. OpenEval emphasizes the anatomical consistency, while peer reviewers accept the subsampling analyses without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "5ff5bba7-ff48-41ad-b14e-744938483aa7",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "35b4789b-1f9f-4998-9104-9dba899194e8",
+      "peer_result_id": "2703b375-32f3-4aef-bcf7-f830aa4a4616",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on experimental methodology claims C9, C10. Both evaluations accept the imaging methods and ROI analysis as sound. OpenEval provides specific methodological details while peer reviewers offer general acceptance of the experimental approach without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "79ac9d3f-f152-4652-ba04-fabe8be8f537",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "05e9dace-c737-400e-b361-e9b7922061a9",
+      "peer_result_id": "2a4b5104-b558-43d9-b3b6-640b147f0941",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on speculative claims C49, C50, C58. OpenEval rates as UNCERTAIN, explicitly noting these are speculative interpretations without direct validation. Peer reviewers rate as SUPPORTED, accepting them as legitimate discussion points. Note peer R8 also includes C56 which OpenEval addresses separately in R10.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "3c038888-a19b-4614-b6fe-6357c8066cbc",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "1fda03c0-e5e6-44b0-9ce5-9a366fed3736",
+      "peer_result_id": "2a4b5104-b558-43d9-b3b6-640b147f0941",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claim C56 regarding finite dimensionality implications. OpenEval R10 rates C53 and C56 as SUPPORTED based on theoretical analysis and experimental data. Peer R8 groups C56 with speculative interpretations (C49, C50, C58) and accepts them as discussion points without distinguishing the theoretical basis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    },
+    {
+      "id": "28656f6b-9673-48d4-a893-b905516f6955",
+      "submission_id": "bf2a5a8e-40b0-411b-b971-0948a6435c8a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "2eaea92d-a543-4918-b674-99a21e4ee0ad",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C5, C6, C7, C51 regarding established background knowledge and found them well-supported by literature. No corresponding peer review evaluation found, as reviewers typically do not assess background/contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:18:54.150652Z"
+    }
+  ]
+}

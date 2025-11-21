@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "The authors experimentally tested the effects of graded AMPA receptor inhibition on spine density in hippocampal slice cultures. Using 200 nM NBQX (partial inhibition), they observed increased spine density, while 50 \u03bcM NBQX (complete blockade) resulted in decreased spine density. Electrophysiological recordings confirmed that 200 nM NBQX reduced sEPSC amplitude while 50 \u03bcM NBQX nearly completely blocked excitatory transmission. These findings demonstrate a non-monotonic relationship between neural activity and spine numbers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers acknowledge these experimental findings without criticism. Reviewer 1 states 'Low levels of NBQX lead to a decrease of activity and a homeostatic increase of synapse density, whereas high levels block neural activity and lead to a reduced number of synapses after 3 days.' Reviewer 2 confirms 'the authors showed that a partial or complete inhibition of AMPA-type glutamate receptors differentially affects spine density, respectively leading to an increase or decrease.' The editor notes the methodology and findings are 'solid.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The authors hypothesized that (i) the relationship between neural activity and spine numbers is non-monotonic, leading to divergent responses under different levels of inhibition, and (ii) structural responses may be influenced by interactions with other plasticity mechanisms, especially homeostatic synaptic scaling.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these hypotheses as reasonable and supported by the experimental data. Reviewer 1 notes 'The authors conclude that there must be a non-linear dependency between neuronal activities and rewiring' and describes the biphasic model as appropriate. Reviewer 2 states the model 'provides a framework within which functional and structural changes coexist to regulate firing rate homeostasis.' The hypotheses are validated by both experimental and computational results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors implemented a biphasic structural plasticity rule in computational simulations showing that it maintains neural activity homeostasis under stimulation and permits either synapse formation or synapse loss depending on the degree of activity deprivation. Mild deprivation allowed network recovery through homeostatic connectivity increases, while complete silencing led to neuronal disconnection. The biphasic Gaussian rule best captured homeostatic characteristics while also allowing non-homeostatic, silencing-induced spine loss.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the model's conceptual value but express concerns about its validation. Reviewer 1 notes 'it remains unclear whether the model would actually reproduce the experiment' and states the simulations were conducted 'without attempting to reproduce the experiment.' Reviewer 2 emphasizes 'the manuscript would benefit from clarifications' and notes the lack of 'an actual timeline of structural changes throughout the three days.' The editor states 'additional work is needed to better link models with experiments.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C59",
+      "C64",
+      "C66"
+    ],
+    "result": "Computational simulations demonstrated that homeostatic synaptic scaling reduced stimulation-triggered synapse loss by downscaling synaptic weights and rescued silencing-induced synapse loss by upscaling recurrent input. With sufficient scaling strength, both synapse numbers and neural activity were restored after silencing. The authors conclude that biphasic HSP and monotonic homeostatic synaptic scaling play complementary and partially redundant roles in maintaining firing rate homeostasis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers find the computational results interesting but note limitations in experimental validation. Reviewer 2 specifically criticizes that 'the authors focus on the effects of either condition on spine number, but only integrate synaptic weights following complete inhibition' and states 'the fact that it is only demonstrated for one of the two conditions tested severely undermines the claims.' Reviewer 1 notes the model analysis is systematic but questions whether it captures the experimental reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "Experimental analysis of spine size distributions showed initial long-tail patterns with predominance of small spines. Under partial inhibition (200 nM NBQX), the relationship between initial spine size and size change was shifted upward, promoting enlargement regardless of initial size, with coordinated increases in both size and density. Complete inhibition (50 \u03bcM NBQX) reversed typical small spine growth and altered large spine fate, with highly variable size-density relationships.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge these experimental observations. Reviewer 2 notes 'they show some intriguing data suggesting a differential effect on spine size by partial or complete AMPAR inhibition' though adds 'further work is required to support some of their interpretations.' The data on spine size changes are accepted as valid observations, though their mechanistic interpretation requires additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "During network development with the biphasic Gaussian rule, half of excitatory neurons became silent and nearly half were isolated with inhomogeneous connectivity. Silent neurons were isolated while neurons with firing rates close to target possessed approximately 1000 synapses. After applying appropriate damping current, the biphasic rule produced network statistics comparable to linear and zero Gaussian rules.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly critiques this finding, stating 'the biphasic rule generates a lot of unconnected silent neurons and a reasonable network structure only emerges when the neurons are additionally supported by a facilitating input current. For comparison, a linear and a simpler nonlinear homeostatic plasticity model, which had been ruled out by the experimental data, need no external drive.' This suggests the biphasic model may have implementation issues that require artificial compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Computational simulations showed that network recovery depends on the product of external input and recurrent connectivity. Low recurrent connectivity prevented recovery despite stimulation, while higher connectivity allowed reactivation. Excessive stimulation with strong recurrent connectivity pushed the system from silencing-induced to over-excitation-induced degeneration. Recurrent connectivity serves as a critical amplifier of external input.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these computational findings as conceptually sound. Reviewer 1 describes these results matter-of-factly without criticism: 'For a transiently silenced stimulation, recovery is possible, but only when there is enough recurrent excitation from the rest of the network.' The mechanistic insights about recurrent connectivity are treated as valid model predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "After recovery from silencing with sufficient synaptic scaling, the previously deprived subpopulation showed high synchronization, suggesting mechanisms relevant to pathological states such as post-traumatic epilepsy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this computational observation. Reviewer 1 notes 'fast enough synaptic scaling leads to a recovery of neuronal activity in simulations, but leads to highly synchronous activity' without disputing the finding. The observation is accepted as a valid model prediction, though its clinical relevance is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Systematic simulations varying structural plasticity growth rates and synaptic scaling strength showed that slower growth rates preserved more residual synapses, allowing weak scaling to restore connectivity, while faster growth required stronger scaling. Best firing rate recovery was achieved with moderate synapse regeneration, whereas strong structural growth combined with strong scaling could induce excessive or delayed rebound activity. The authors conclude that calcium-based homeostatic synaptic scaling and structural plasticity interact dynamically in a context-dependent manner.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges 'A systematic model analysis shows at which scaling and rewiring speeds the activity and connectivity for a silenced sub-population can be restored' without criticism. The systematic parameter exploration is treated as a strength of the computational work, providing insights into the interaction between mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C93",
+      "C110"
+    ],
+    "result": "The authors conclude that homeostatic synaptic scaling and homeostatic structural plasticity dynamically compete and compensate for each other, ensuring efficient and robust control of firing rate homeostasis. The redundancy and heterogeneity between HSP and HSS mechanisms are critical for maintaining firing rate homeostasis and ensuring long-term network stability. Co-simulation revealed synergistic interaction between these mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers find the conceptual framework valuable, they express concerns about the strength of evidence. The editor states 'additional work is needed to better link models with experiments and support some of the conclusions drawn.' Reviewer 2 notes that demonstrating the interplay 'for only one of the two conditions tested severely undermines the claims of the authors in the discussion that the model tackles that question.' The conclusion is conceptually supported but empirically incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C127",
+      "C128",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors observed complex changes in spine size under both partial and complete AMPA receptor blockade, suggesting interaction between functional and structural plasticity. Under complete inhibition, small spines tended to shrink or disappear while large spines enlarged, resulting in overall increased sEPSC amplitudes. The authors infer that spine numbers and synaptic weights represent complementary facets of 'effective synaptic transmission' and that relying on only one measure risks misrepresenting network functional state.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 acknowledges the data but notes 'further work is required to support some of their interpretations.' The reviewer specifically criticizes that 'the authors focus on the effects of either condition on spine number, but only integrate synaptic weights following complete inhibition' and states this 'severely undermines the claims.' The observations are valid but the mechanistic interpretation and generalization require additional experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Based on experimental observations of variable spine remodeling outcomes, the authors hypothesize that different combinations of homeostatic synaptic scaling and structural plasticity operate at the dendritic segment level, or may even vary between cell types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is presented as a hypothesis rather than a demonstrated finding. Reviewer 2 notes the experimental data show 'intriguing' patterns but emphasizes that 'further work is required to support some of their interpretations.' The hypothesis is reasonable given the data variability but lacks direct experimental validation at the dendritic segment or cell-type-specific level.",
+    "result_type": "MINOR"
+  }
+]

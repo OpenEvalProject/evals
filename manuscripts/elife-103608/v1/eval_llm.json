@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors developed TEKRABber, a novel R Bioconductor software tool that addresses the challenge of comparing TE expression across species and calculating pairwise correlations between orthologous genes and TEs. TEKRABber implements scale-based normalization for cross-species comparison, provides functionality not available in existing tools, and demonstrates computational efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 and C145-C151 collectively establish the need for and capabilities of TEKRABber. The tool addresses a documented gap (C39), implements appropriate normalization methods (C145-C148), and demonstrates practical utility with reasonable computational performance (C151). The comparison with existing tools (Table 1, C46) and demonstration of scaling impact (C148) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C120"
+    ],
+    "result": "Expression patterns of KRAB-ZNF genes and TEs show clear species-specific differences, with humans, chimpanzees, bonobos, and macaques forming distinct clusters in t-SNE analysis. Differential expression analysis revealed specific numbers of up- and downregulated genes between species, with expression patterns differing more across species than across brain regions within species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 and C120 are supported by t-SNE clustering analysis (Figure 2A) and differential expression analysis (Figure 2B). The statistical significance and visual separation of species clusters, combined with specific counts of differentially expressed genes, provide strong evidence. The observation that species differences exceed regional differences is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C121"
+    ],
+    "result": "Evolutionary young KRAB-ZNF genes and TEs (evolved <44.2 mya) exhibit significantly lower expression levels than older counterparts across all brain regions and species. Young elements show proportionally more differential expression between humans and other primates, suggesting they are more dynamically regulated and may be subject to more stringent regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 and C121 are well-supported by evolutionary age inference (Figure 2C, Figure 2\u2014supplements 1-2) and expression analysis (Figure 2D-E). The statistical significance (Wilcoxon rank sum test, p<0.05) and consistency across brain regions strengthen the findings. However, C121's mechanistic interpretation is speculative, though reasonably inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "36 KRAB-ZNF genes and 18 TEs show human-specific differential expression compared to three non-human primates. KRAB-ZNFs tend toward downregulation in humans, though some disease-associated genes (ZNF778, ZNF267) are upregulated. TEs show a trend toward upregulation in humans, with LTR12B being notably downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 are supported by differential expression analysis (Figure 2F) with appropriate statistical thresholds. The associations with disease phenotypes (C59-C60) are supported by citations. The mechanistic connection to ZNF676/ZNF728 repression (C63) is appropriately cited, though the functional significance requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Correlation analysis identified 100,987 positive and 26,810 negative significant correlations between TEs and KRAB-ZNFs in human primary/secondary cortices. These correlations are significantly more numerous than expected by chance and show significant overlap with ChIP-exo data, indicating detection of putative functional relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 are well-supported by systematic correlation analysis with appropriate statistical controls (p<0.001, adjusted p-value<0.01, coefficient >0.4). The validation against ChIP-exo data (C71-C72, Figure 3C) provides independent experimental confirmation, though from different cell types. The predominance of positive correlations is acknowledged and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Bipartite network analysis reveals that KRAB-ZNF nodes act as hubs with higher connectivity than TE nodes. The human primary/secondary cortices network contains 354 nodes with 869 links clustered into 5 modules, with specific TE families (Alu, ERV1, ERVK, ERVL, L1, TcMar-Tigger, SVA) showing significantly different interaction patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 are supported by network topology analysis (Figure 3E-H) with appropriate statistical tests (Chi-squared test, p<0.001). The normalized degree distribution analysis (C78, Figure 3F) properly accounts for unequal node numbers. Module detection using bipartite modularity is methodologically sound, and the non-random distribution of links is statistically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Cross-species comparison of 178 KRAB-ZNFs and 836 TEs expressed in all four species reveals that humans have significantly higher numbers of correlations with TEs compared to non-human primates. This finding is not confounded by annotation differences or sample size, with 276 TE:KRAB-ZNF pairs showing opposite correlation signs between humans and bonobos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by rigorous cross-species analysis with appropriate controls (Figure 4A-B). The leave-one-out validation for humans (C88) addresses sample size differences. The comparison to random genes (C85-C86, Figure 4\u2014supplement 1) provides statistical validation. However, C90's interpretation of human-specific changes is tentative as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "ZNF528 and ZNF112 emerge as network hubs with distinct evolutionary profiles. ZNF528 shows a critical amino acid difference (histidine to glutamine) at the -1 position of the 15th zinc finger domain between bonobos and humans, which may explain reduced repressor potency in humans. This position represents a rare human polymorphism (rs373201614) under positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 are supported by network analysis (Figure 4C) and sequence analysis (Figure 4D). The amino acid difference at a DNA-contacting position is documented, and the functional interpretation (C96) is reasonably speculated based on prior work (C95). The positive selection evidence (C97) is appropriately cited. However, the functional consequence remains speculative without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C130",
+      "C131"
+    ],
+    "result": "The distribution of evolutionary young and old links in TE:KRAB-ZNF networks is non-random, with specific TE families showing distinct age profiles. All 24,063 positive and 2,455 negative human-specific correlations are evolutionary young links, with many involving Alu subfamilies. Different TE subfamilies interact with KRAB-ZNFs differently, with Alu being the only subfamily showing more negative than positive correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103, C130-C131 are supported by evolutionary age analysis integrated with network data (Figure 4E-F). The finding that all human-specific correlations are young (C102, C130) is striking and well-documented. The differential interaction patterns by TE family (C131) are clearly shown in Figure 4F. The enrichment of Alu in negative correlations is consistent with their known repression by KRAB-ZNFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C132"
+    ],
+    "result": "In Alzheimer's disease samples, expression variance of TEs and KRAB-ZNFs is primarily influenced by brain region rather than disease status. Differential expression analysis detected only 6 KRAB-ZNF genes and 10 TEs between control and AD samples in temporal cortex, with similar limited changes in cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 and C132 are supported by t-SNE analysis (Figure 5A) and differential expression analysis (Figure 5C-D). The observation that regional differences exceed disease-related differences is clearly demonstrated. However, the limited number of differentially expressed genes may reflect the complexity of AD pathology or limitations in detecting subtle changes through expression analysis alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C124",
+      "C157"
+    ],
+    "result": "21 TE:KRAB-ZNF correlations are detected in healthy human temporal cortex but not in non-human primates or AD patients. This human-specific, health-associated subnetwork includes 14 evolutionary young and 7 old interactions, with 11 involving Alu subfamilies. The correlations show weakening or loss in AD, particularly a module of young Alu subfamilies with negative correlations to KRAB-ZNFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C119, C124, C157 are supported by intersection analysis across datasets (Figure 6A-F). The identification of 21 human-control-specific correlations is methodologically sound. The loss of significance in AD (C114-C117) is demonstrated with specific examples (Figure 6D). The Alu module finding (C118-C119) represents a novel observation linking TE regulation to AD. However, causality cannot be established from correlation data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C13",
+      "C87",
+      "C122",
+      "C123",
+      "C156"
+    ],
+    "result": "Humans exhibit a notably denser TE:KRAB-ZNF network compared to non-human primates, particularly for recently evolved (Simiiformes-specific) TEs and KRAB-ZNFs. This increased connectivity represents recent additions to the network in the human lineage, consistent with higher connectivity in human transcription factor networks generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C13, C87, C122-C123, C156 collectively establish increased network complexity in humans. The finding is supported by multiple lines of evidence including correlation counts (C87), evolutionary age analysis (C6, C123), and comparison to prior work on transcription factor networks (C122). The interpretation of increased regulatory complexity is reasonable though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "ZNF528 is under positive selection in humans and shows numerous human-specific TE interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by network analysis showing ZNF528 as a hub with many young links (Figure 4C) and citation of positive selection evidence (C97). The human-specific interactions are documented in the network data. The functional significance of this positive selection in relation to TE regulation represents an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C69"
+    ],
+    "result": "Most negative interactions in the TE:KRAB-ZNF network involve Alu TEs, while links to other TEs are generally positive. KRAB-ZNFs have more negative correlations to TEs than random genes, despite the overall predominance of positive correlations in the dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C69 are supported by network analysis (Figure 3H) and comparison to random genes (Figure 3A). The predominance of Alu in negative correlations is consistent with known KRAB-ZNF repression of Alu elements. The authors appropriately acknowledge and discuss the unexpected prevalence of positive correlations (C70, C126-C128).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C106",
+      "C138"
+    ],
+    "result": "In Alzheimer's patients, a subnetwork involving 21 interactions with an Alu module appears diminished or lost, suggesting that KRAB-ZNF and TE interactions may influence susceptibility to Alzheimer's disease through dysregulation of Alu subfamily modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C14, C106, C138 propose a link between TE:KRAB-ZNF network disruption and AD susceptibility. While the loss of correlations in AD is documented (C11, C117), the causal relationship to disease susceptibility (C14) remains speculative. The hypothesis (C106) and suggestion (C138) are reasonable but require experimental validation. The correlational nature of the data cannot establish causality or directionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C125",
+      "C158"
+    ],
+    "result": "KRAB-ZNF and TE interactions vary across TE families, play an important role in shaping human brain evolution and maintaining healthy brain functionality, and TEs can have a role in species evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C125, C158 represent overarching conclusions from the study. The variation across TE families (C12) is well-documented (C81-C83, C131). The role in evolution and brain function (C125, C158) is supported by the collective findings of increased human connectivity, evolutionary young interactions, and AD-associated changes. However, these are integrative conclusions that extend beyond direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The study observes a higher number of negative correlations between young TEs and young KRAB-ZNF genes in humans compared to non-human primates, suggesting increased repression. However, the findings only weakly support the evolutionary arms-race hypothesis due to several inconsistencies including lower expression of young elements and negative correlations between young TEs and old KRAB-ZNFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C144 present a nuanced evaluation of the arms-race hypothesis. The increased negative correlations in humans (C139) are documented, but the authors appropriately acknowledge limitations (C140-C144). The observation that young elements have lower expression (contradicting arms-race predictions) and the presence of young TE-old KRAB-ZNF correlations (C143) are honest assessments of data that don't fit the model. This critical self-evaluation strengthens the overall analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Evolutionary young Alu subfamilies (AluYh9, AluSp) are downregulated in AD patients and have been associated with Tau pathology, early-onset AD mutations, ACE regulation, and RNA editing during neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 integrate current findings with prior literature. The downregulation of specific Alu subfamilies (C133) is supported by differential expression analysis. The associations with Tau pathology (C134), PSEN1 mutations (C135), ACE regulation (C136), and RNA editing (C137) are appropriately cited from prior work. This contextualizes the current findings within established Alu biology in AD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The current approach has limitations due to variations in TE lengths and positions across individual genomes and reliance on single reference genomes. Emerging methods including long-read sequencing, de novo TE annotations, and locus-specific expression detection may improve future analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 represent honest acknowledgment of methodological limitations and future directions. The constraints related to TE variability (C152-C153) are real limitations of reference genome-based approaches. The discussion of emerging methods (C154-C155) appropriately cites relevant developments. This transparent discussion of limitations strengthens the overall scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The introduction establishes background knowledge about TEs, KRAB-ZNF proteins, their evolutionary dynamics, roles in brain development, and associations with neurodegenerative diseases through citations of prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 represent established knowledge appropriately cited from prior literature. These provide essential context for the study but are not novel findings. The citations appear appropriate for the claims made, covering TE evolution (C1, C15-C20), KRAB-ZNF function (C2, C21-C26), brain-specific expression (C27-C31), and disease associations (C32-C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The study utilizes two independent RNA-seq datasets: Primate Brain Data containing 422 samples from 33 brain regions across four primate species, and Mayo Data containing 92 samples from two brain regions comparing AD patients and controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 accurately describe the datasets used (Table 2). The sample sizes and experimental design are clearly documented. The use of two independent datasets strengthens the study by allowing both evolutionary and disease-related analyses. The datasets are appropriately characterized and publicly available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C70",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors discuss multiple plausible explanations for positive correlations between KRAB-ZNFs and TEs, including TEs as cis-regulatory elements, TE influence on KRAB-ZNF expression, indirect regulation through gene promoters, and note that 19.43% of positive correlations overlap with ChIP-exo binding data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C126-C129 provide thoughtful discussion of unexpected positive correlations. The explanations are appropriately cited (C126-C128) and acknowledge the complexity of TE-KRAB-ZNF relationships. The ChIP-exo overlap data (C129) demonstrates that some positive correlations occur with direct binding, requiring explanation beyond simple repression models. This honest engagement with unexpected findings strengthens the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "ZNF267 is a transcriptomic signature for AD diagnosis, and AluYa5 expression leads to genetic dysregulation in AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 cite prior work linking specific genes/TEs to AD. These provide context for investigating TE:KRAB-ZNF networks in AD but are not novel findings of this study. The citations appear appropriate and support the rationale for examining these elements in the Mayo Data analysis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2123 @@
+{
+  "submission": {
+    "id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:54:22.750775Z",
+    "updated_at": "2025-11-21T17:54:22.750775Z"
+  },
+  "content": [
+    {
+      "id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "content_type": "manuscript",
+      "content_text": "# Perturbation-response analysis of in silico metabolic dynamics revealed hard-coded responsiveness in the cofactors and network sparsity\n\n## Authors\n\n- Yusuke Himeoka<sup>1</sup> ([ORCID: 0000-0001-8545-1625](https://orcid.org/0000-0001-8545-1625)) \u2020\n- Chikara Furusawa<sup>1</sup>\n\n### Affiliations\n\n1. Universal Biology Institute, University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n2. Center for Biosystems Dynamics Research, RIKEN Osaka Japan ([ROR:023rffy11](https://ror.org/023rffy11))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHomeostasis is a fundamental characteristic of living systems. Unlike rigidity, homeostasis necessitates that systems respond flexibly to diverse environments. Understanding the dynamics of biochemical systems when subjected to perturbations is essential for the development of a quantitative theory of homeostasis. In this study, we analyze the response of bacterial metabolism to externally imposed perturbations using kinetic models of Escherichia coli\u2019s central carbon metabolism in nonlinear regimes. We found that three distinct kinetic models consistently display strong responses to perturbations; in the strong responses, minor initial discrepancies in metabolite concentrations from steady-state values amplify over time, resulting in significant deviations. This pronounced responsiveness is a characteristic feature of metabolic dynamics, especially since such strong responses are seldom seen in toy models of the metabolic network. Subsequent numerical studies show that adenyl cofactors consistently influence the responsiveness of the metabolic systems across models. Additionally, we examine the impact of network structure on metabolic dynamics, demonstrating that as the metabolic network becomes denser, the perturbation response diminishes\u2014a trend observed commonly in the models. To confirm the significance of cofactors and network structure, we constructed a simplified metabolic network model underscoring their importance. By identifying the structural determinants of responsiveness, our findings offer implications for bacterial physiology, the evolution of metabolic networks, and the design principles for robust artificial metabolism in synthetic biology and bioengineering.\n\n## Introduction\n\nFor bacterial cells steadily growing under fixed, substrate-rich culture conditions, several quantitative laws pertaining to the physiology of growing bacteria have been identified. These include the linear association between growth rate and the ribosomal fraction in total proteomes (Schaechter et al., 1958; Scott et al., 2010), the linear relationship linking substrate uptake to growth rate (Pirt, 1965), and the correlations between transcriptional responses to various sublethal stresses (Kaneko et al., 2015).\n\nIn recent years, the dynamic aspects of bacterial physiology have garnered significant attention. A wealth of intriguing phenomena under such conditions has been gradually revealed. For instance, cells can \u2018remember\u2019 the duration of starvation and the nature of environmental changes\u2014such as the rate at which nutrients deplete\u2014and this can dramatically alter the distribution of lag times (Kaplan et al., 2021; Himeoka and Kaneko, 2017; Levin-Reisman et al., 2010; Himeoka et al., 2022a). Both the proteome and metabolome of starved cells display characteristically slow dynamics (Radzikowski et al., 2016). The metabolites used for storage play a pivotal role in fluctuating environments (Sekar et al., 2020). Further, there is a trade-off between the growth rate under nutrient-rich conditions and other physiological parameters, namely, the lag time upon nutrient shifts (Basan et al., 2020) and the death rate under starved conditions (Biselli et al., 2020).\n\nTo achieve a comprehensive understanding of physiological responses, the development of quantitative theories that elucidate the dynamics of cellular physiology is indispensable. Metabolism, often a primary trigger for physiological transitions, stands at the forefront of efforts to forge a unified perspective on the dynamics of bacterial physiology. To this end, extensive research has been undertaken to understand the dynamic responses of metabolic systems using mathematical frameworks; the metabolic control analysis (Heinrich and Rapoport, 1974), the biochemical systems theory, especially S-systems (Savageau, 1988), and the linear stability analysis of mass-balance kinetic models (Chakrabarti et al., 2013; Lee et al., 2014). The exploration of the study on the stability and responsiveness of the metabolic system is limited only to the linear region except S-systems. However, the S-system approach omits the mass-balance. The mass-balance condition, or, in other words, the stoichiometric constraints, is known to have a strong impact on the dynamics of chemical reaction systems (Feinberg, 2019). For the development of theoretical foundations of metabolic dynamics, it is essential to explore the dynamic responses of mass-balancing metabolism beyond the linear regime.\n\nIn this article, we examine the mass-balancing kinetic models of Escherichia coli\u2019s central carbon metabolism and ask how the metabolic state responds to perturbations with which the linear approximation is no longer valid. We study three independently proposed kinetic models (Chassagnole et al., 2002; Khodayari et al., 2014; Boecker et al., 2021) and explore the features shared among the models. We demonstrate that the three models exhibit strong responses to perturbations on the metabolic states. The effects of these perturbations are magnified, leading to significant deviations in metabolite concentrations from their steady-state values, depending on which and how metabolite concentrations are perturbed. The observed responsiveness is a hallmark of the realistic metabolic network as the toy metabolic models lack such a strong response. Computational analysis revealed that cofactors, such as ATP and ADP, play a crucial role in the strong response to perturbations. We also discovered the importance of the sparse structure of the metabolic network by adding virtual reactions to it. To validate our findings, we developed a simple, minimal model of metabolic reactions, and confirmed that cofactor dynamics and network sparsity are indeed the key ingredients of the strong responses.\n\n## Results\n\n### Model\n\nIn the present study, we investigate the dynamic response of metabolic states to perturbations in metabolite concentrations using kinetic models of E. coli central carbon metabolism. In kinetic modeling approaches, the temporal evolution of metabolites\u2019 concentrations is modeled using ordinary differential equations to capture behaviors in out-of-steady-state metabolism.\n\nWe employ three kinetic models of E. coli\u2019s central carbon metabolism, emphasizing the common features exhibited by the models. A limitation of kinetic models is their specificity; unlike constraint-based modeling, kinetic modeling necessitates extensive biochemical information, such as the function form of the reaction rate equation and the parameter values for each reaction. By examining a single kinetic model, conclusions may apply only to that specific model. Therefore, our focus lies on the shared features of the three models to circumvent the limitations of individual model specificity. We also believe there is potential for the results obtained commonly among the models to apply to real biological systems as well.\n\nThe models under consideration are those proposed by Chassagnole et al., 2002, Khodayari et al., 2014, and Boecker et al., 2021. While all three models incorporate the glycolytic pathway, only the models by Khodayari et al. and Chassagnole et al. feature the pentose phosphate (PP) pathway. Notably, the Chassagnole model excludes the tricarboxylic acid cycle. A graphical summary of the metabolic modules in these models is presented in Figure 1A.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-v1.jpg)\n\n**Figure 1.:** (A) A graphical summary of the three models used in this study. The solid circles represent the metabolites, and the lines represent the metabolic reactions. The dashed circles and lines are the subsystems not implemented in the model. (B\u2013D) Example time courses for each model. The top and bottom panels are examples of the strong and weak response, respectively. (E\u2013G) The response coefficient distribution $P(\u03c7)$ of each model (bottom). The average response coefficient distribution of the random catalytic reaction network (RCRN) model is overlaid (green line). The response coefficient distribution of each instance of the RCRN model is shown on the top panel. The model schemes, time courses, and distributions are aligned in each column, that is, the leftmost network of (A), (B), and (E) are from the model developed by Khodayari et al., 2014.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each point corresponds to a single initial condition, while the horizontal and vertical axes represent the response coefficient $\u03c7$ computed by the original and the linearized model, respectively, around the steady state. The linearized model is given by $d\u2062\ud835\udc99/d\u2062t=J\u2062\ud835\udc99$, where $J$ is the Jacobi matrix of the model at steady state. If any metabolite concentrations become negative, the response coefficient is incomputable and \u20180\u2019 is assigned to such trajectories (note that the minimum value of the response coefficient is unity). Since the response coefficient is based on the logarithm of the concentrations, as the metabolite concentrations approach zero, the response coefficient becomes larger. The high response coefficient in the Boecker and Chassagnole model will be explained by this artifact. The linearized Khodayari model shows either $\u03c7\u22481$ or $\u03c7=0$ (one or more metabolite concentrations become negative).This could be due to the number of variables in the model. For the response coefficient to have a larger value, the perturbation should be along the eigenvector that leads to oscillatory dynamics with long relaxation time (i.e., the corresponding eigenvalue has a small real part in terms of absolute value and a nonzero imaginary part). However, since the Khodayari model has about 800 variables, if perturbations are along such directions, there is a high probability that one or more metabolite concentrations will become negative.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Each distribution is obtained by simulating 4096 trajectories. The qualitative features (double-peaks for the Khodayari model and the plateau for the Boecker and Chassagnole models) are unvaried, while the scales of the response coefficient of the Khodayari model differ among the perturbation strengths.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** A metabolite is highlighted if its concentration changes more than $X$-fold from its steady concentration. $X$ is set to be 5 for the Boecker and Chassagnole models, while $X=25$ is chosen for the Khodayari model because too many metabolites are highlighted with $X=5$.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** For each model realization, we have computed 256 trajectories. Trajectories had negative value for any metabolites that are excluded for the computation of the distribution.\n\nThe Boecker and Chassagnole models utilize glucose as the sole carbon source, whereas the Khodayari model can assimilate other carbon sources, such as fructose, formate, and acetate depending on the differences between the extracellular and intracellular concentrations. The Boecker model explicitly models biomass formation, considering several metabolites as biomass precursors that are consumed with a fixed stoichiometry to produce biomass. Conversely, the Khodayari and Chassagnole models do not incorporate the biomass formation reaction. Instead, biomass precursor metabolites are consumed independently, implying that the stoichiometry of biomass formation varies depending on the concentrations. The dilution effect due to the volume growth is modeled in both the Boecker and Chassagnole models. In the Boecker model, the dilution rate corresponds proportionally to the biomass formation reaction rate, while it remains constant in the Chassagnole model. The Khodayari model omits the dilution effect. In addition to the metabolic reaction implemented in each model, the specific forms of the reaction rate equations also differ among the models.\n\nWithin these models, the dynamics of gene regulation mediated by transcription factors are not modeled; that is, the total concentration of each metabolic enzyme is constant while the substrate-level regulations are incorporated into the models (the lists of substrate-level regulations are provided in Supplementary file 1a\u2013c; for a detailed description, see \u2018Materials and methods\u2019).\n\n### Perturbation-response simulation\n\nIn this section, we present the results of a series of simulations, which we call perturbation-response simulations. These simulations highlight the unique responses of the metabolic models to perturbations and shed light on the dynamic behavior of metabolic systems. It may be useful for the reader to first describe the perturbation-response simulation procedure. The procedure is consistently applied across all three models used in our study and can be summarized as follows:\n\n#### 1. Computing the attractor\n\nFirst, we identify the steady-state attractor where the production/consumption of each metabolite is balanced. For the Khodayari and Boecker models, the attractor corresponds to the steady state studied in their original papers. For the Chassagnole model, we numerically determined the steady-state attractor (details provided in \u2018Materials and methods\u2019).\n\n#### 2. Generating the initial points by perturbation\n\nOnce the steady-state attractor has been computed, we establish a set of initial points for subsequent computations by perturbing the metabolite concentrations. This perturbation is a proxy for stochastic fluctuations within cells. We postulate that the perturbation source in the variability in protein concentrations is due to the inherent randomness of transcription and translation processes. Also, the cell division would be another source of perturbations of metabolites\u2019 concentrations while the cell division is not explicitly considered in the study. Based on a stochastic model of transcription and translation with a biologically relevant setup, the relative size of the concentration fluctuations is estimated to be several tens of percent (for a detailed derivation, see \u2018Materials and methods\u2019). Consequently, the perturbed concentration of chemical $n$ is $x_{n}=r_{n}x_{n}^{st}$, where $r_{n}$ is a uniformly distributed random number with a maximum strength of 40%, that is, ranging from 0.6 to 1.4. The perturbation strength is beyond the linear region that the relaxation dynamics is approximated by the linearized model around the steady state. The choice of uniform distribution is not essential for the following result. Also, the characteristic features of the response studied later remain consistent even when different perturbation strengths are employed (see Figure 1\u2014figure supplement 2).\n\n#### 3.Simulating the dynamics\n\nWe compute the model dynamics using the $N_{ini}$ points generated by the perturbation as initial points to explore the metabolic response to the perturbations. As far as we have tried, all initial points have returned to the original growing steady state, and thus, we hereafter study the relaxation behavior.\n\n### Strong responses in the kinetic models\n\nAfter executing the perturbation-response simulations for the models, we observed distinct relaxation dynamics in each. In Figure 1B\u2013D, the top and bottom panels display typical examples of dynamics from each model that either respond strongly or weakly to perturbations. In the weakly responding dynamics (bottom panel), the effects of the perturbations diminish almost monotonically. Conversely, in the dynamics that respond strongly (top panel), the initial displacements of concentrations are amplified over time, leading some metabolites\u2019 concentrations to overshoot or undershoot (significant concentration changes in metabolites are highlighted in Figure 1\u2014figure supplement 3).\n\nFor more in-depth analysis, we introduce a measure of the responsiveness to the perturbation that we call the response coefficient $\u03c7$, defined as\n\n$$\n\u03c7=maxt\\frac{\u2016ln\u2061x(t)\u2212ln\u2061x^{st}\u2016}{\u2016ln\u2061x(0)\u2212ln\u2061x^{st}\u2016},\n$$\n\nwhere $\u2016\u22c5\u2016$ is the Euclidean norm. The response coefficient distributions for each model are plotted in the bottom panels of Figure 1E\u2013G. All three models have the peak at $\u03c7=1$ (note that this is the minimum value of $\u03c7$). These peaks correspond to the trajectories where the Euclidean distance between the state and the attractor decreases monotonically with time (i.e., $max_{t}\u2061\u2225ln\u2061(\ud835\udc99)\u2062(t)-ln\u2061(\ud835\udc99)^{st}\u2225=\u2225ln\u2061(\ud835\udc99)\u2062(0)-ln\u2061(\ud835\udc99)^{st}\u2225$). In addition, the distribution of the Khodayari model exhibits another peak in a larger $\u03c7$ region while the other two models have plateaus adjacent to the primary peak. We have computed the response coefficient by linearizing each model. As shown in Figure 1\u2014figure supplement 1, the responsiveness of the original model cannot be described by the linearized model.\n\nFor comparison purposes, we conducted perturbation-response simulations for the random catalytic reaction networks (RCRN) model, a toy model of the metabolic network (Furusawa and Kaneko, 2003; Furusawa and Kaneko, 2012). In one instance of the RCRN model, the \u2018metabolites\u2019 are interconnected through a random network, and every metabolite is considered a catalyst as well as a reactant. We generated 128 instances of the RCRN model, each having the same number of metabolites and the same distribution of the reaction rate constant. For instance, to draw a comparison with the Khodayari model, we generated the model instances with 778 metabolites and 3112 reactions, where the reaction rate constants are randomly chosen from that of the Khodayari model (detailed construction of the RCRN model is provided in \u2018Materials and methods\u2019). The top panel of Figure 1E\u2013G presents the response coefficient distribution for each RCRN model instance, represented by different lines. Additionally, the \u2018average\u2019 response coefficient distribution, which is the mean of the distributions plotted in the top panel, is overlaid (green dotted line). As a fact, the emergence of the additional peak and plateaus, indicative of strong responsiveness, are unique traits of the realistic metabolic reaction network model and are seldom seen in toy representations of the metabolic network.\n\n### Key metabolites on the responsiveness\n\nWhat factors contribute to the strong responses of the metabolic state? In this section, we investigate which metabolites play pivotal roles in inducing these strong responses in the model. To understand the role of each metabolite\u2019s dynamics, we conducted perturbation-response simulations using model equations derived by fixing each metabolite\u2019s concentration to its steady-state value, that is, set $x_{met}=x_{met}^{st}$ and $dx_{met}/dt=0$ for the concentration of the metabolite $met$ whose concentration is fixed. The impact of holding each metabolite\u2019s concentration constant is quantified by the change in the average response coefficient:\n\n$$\n\u03c1_{x}^{+}=\\frac{\u27e8\u03c7_{x}\u27e9\u2212\u27e8\u03c7_{ori}\u27e9}{\u27e8\u03c7_{ori}\u27e9},(\u27e8\u03c7_{x}\u27e9\\geq\u27e8\u03c7_{ori}\u27e9)\n$$\n\n\n\n$$\n\u03c1_{x}^{\u2212}=\\frac{\u27e8\u03c7_{ori}\u27e9\u2212\u27e8\u03c7_{x}\u27e9}{\u27e8\u03c7_{ori}\u27e9},(\u27e8\u03c7_{x}\u27e9\\leq\u27e8\u03c7_{ori}\u27e9)\n$$\n\nwhere $x$ denotes the metabolites\u2019 IDs and $\u03c7_{x}$ represents the response coefficient of the model with the concentration of the metabolite $x$ fixed to constant. Note that for each metabolite in each model, either the $\u03c1_{x}^{+}$ or $\u03c1_{x}^{\u2212}$ is defined, depending on whether the modified model (with the metabolite $x$ as a held constant) exhibits an average response coefficient larger (for $\u03c1_{x}^{+}$) or smaller (for $\u03c1_{x}^{\u2212}$) than the original model.\n\nFigure 2 displays $\u03c1_{x}^{\\pm}$ values for representative metabolites (comprehensive results for all metabolites can be found in Figure 2\u2014figure supplement 1). While most metabolites have a bilateral effect on the average response coefficient depending on the original model (or exert a small unilateral effect), ATP and ADP (we refer to them collectively as AXPs) consistently demonstrate a marked impact in reducing the average response coefficient across models. This observed significance of AXPs in metabolic dynamics aligns with previous findings (Himeoka and Mitarai, 2022b). The common importance of AXPs is shown also when we quantify the impact of their dynamics on the responsiveness by utilizing the Sobol\u2019 total sensitivity index (Figure 2\u2014figure supplement 2; Homma and Saltelli, 1996).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-v1.jpg)\n\n**Figure 2.:** This impact is quantified by the relative change in the average response coefficient, as detailed in (1) and (2). The filled point and filled square symbols represent the decrease $(\u03c1_{x}^{\u2212})$ and the increase $(\u03c1_{x}^{+})$ of the response coefficient, respectively. The size of the symbols is scaled using the maximum and minimum values of $\u03c1_{x}^{\\pm}$ computed for each model. The cross symbol indicates that the original steady-state attractor becomes unstable when the concentration of the corresponding metabolite is fixed. If a dot, square, or cross is absent, the concentration of the corresponding metabolite is not a variable in the model. Only selected, representative metabolites are displayed in the figure. Comprehensive results are provided in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The dashed line in each panel is the average response coefficient of the original model.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The Sobol\u2019 total sensitivity index $S_{T_{i}}$ is computed for each metabolite.The sensitivity indices are computed by simulating 512 trajectories for the Khodayari model and 4096 trajectories for the Boecker and Chassagnole models.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The scatter plot of the Sobol\u2019 total sensitivity index $S_{T_{i}}$ versus the absolute value of the change in the response coefficient.$|\u03c1|\u2261|(\u27e8\u03c7_{x}\u27e9\u2212\u27e8\u03c7_{ori}\u27e9|/\u27e8\u03c7_{ori}\u27e9)$.The inset presents a magnified view of a portion of each figure. The names of metabolites that deviate from the trend between $|\u03c1|$ and $S_{Ti}$ are highlighted.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The relaxations of the inhibition strength of AKG on CSICD and OAA on MDH increase the responsiveness of the model, while those of FUM on MDH and OAA on FRD have no effect. To relax the inhibition, the equilibrium constant for the corresponding competitive inhibition $k_{rxn_i_met}$ is set to $10^{6}\\timesk_{rxn_i_met}$ (the inhibition term is implemented with the form $x_{met}/k_{rxn_i_met}$ in the denominator of the reaction rate function), where rxn, i, and met represent the reaction name, \u2018inhibition\u2019, and the metabolite name, respectively. Each distribution is computed from 4096 trajectories.\n\nInterestingly, halting the dynamics of several metabolites can amplify the model\u2019s response coefficient. Across the models, metabolites that augment the response coefficient when their concentrations are fixed tend to be allosteric regulators associated with negative regulation. Freezing these metabolites\u2019 concentrations effectively removes the negative feedback loop present in the metabolic systems. Typically, negative feedback stabilizes system behavior. In the present context, it assists the system in returning to its original state after perturbations. Hence, fixing these metabolites\u2019 concentrations allows the system to respond more vigorously to perturbations compared to the original model. We checked the effect of feedback itself on the responsiveness rather than the concentration dynamics by weakening the strength of substrate-level regulation of OAA, FUM, AKG in the Boecker model (Figure 2\u2014figure supplement 4). It was shown that weakening the substrate-level regulation of CSICD by AKG and MDH by OAA increases the responsiveness. On the other hand, weakening the strength of substrate-level regulation of neither FRD by OAA nor MDH by FUM alters the responsiveness, and in addition there is no substrate-level regulation by SUC. The increase in responsiveness by fixing the concentrations of OAA and AKG would be explained by substrate-level regulation of the corresponding metabolites. However, substrate-level regulation is not sufficient to describe the effect of fixing the concentration of FUM and SUC. Higher order effects may be required.\n\nPyruvate is an exception to the above description, which is not the regulator in the models. The strong influence of pyruvate on the increase in response coefficients is attributed to the phosphotransferase system (PTS). The external glucose is taken up by converting phosphoenolpyruvate into pyruvate through the PTS. This reaction elevates pyruvate concentration, subsequently decelerating glucose uptake. By holding pyruvate concentration constant, this negative feedback effect is negated, enhancing the autocatalytic nature of the reaction system formed by the PTS and glycolysis ($GLC_{ex}+PEP\u2192\u22ef\u21922PEP$).\n\n### Role of the sparsity of the networks\n\nThe key role of AXPs in changing the kinetic models\u2019 responsiveness is shown in the previous section. Nevertheless, this does not imply that all kinetic models of chemical reaction systems with cofactors such as AXPs always exhibit a strong response to perturbations. The strong responses demonstrated by the three models (as seen in Figure 1B\u2013D) are absent in abstract toy models of metabolism, which consist of random reaction networks incorporating such cofactor chemicals Kondo and Kaneko, 2011. This discrepancy prompts us to investigate other potential determinants causing metabolic models to display strong responses shown in the three models.\n\nA noteworthy attribute of metabolic networks is their inherent sparsity. While cofactors are linked to numerous reactions, the backbone networks\u2014networks excluding cofactors\u2014are distinctly sparse. As an example, the glycolytic pathway predominantly mirrors a linear sequence of reactions, resulting in many metabolites within this pathway participating in merely two reactions.\n\nDoes network structure play a role in the dynamics of metabolic systems? For this question, previous research in the opposite direction\u2014reaction dynamics on dense networks\u2014provides useful insights. Several studies use the random networks as an abstract model of metabolic networks (Furusawa and Kaneko, 2003; Kaneko et al., 2015; Awazu and Kaneko, 2009; Himeoka et al., 2022a). In such types of models, the effect of the initial perturbations on metabolite concentrations typically decays monotonically over time (Awazu and Kaneko, 2009; Himeoka and Mitarai, 2022b). This is in stark contrast to the behavior observed in Figure 1B\u2013D.\n\nConsidering the inherent tendency of random reaction networks to display dynamics characterized by weak responses, we are compelled to investigate the influence of network sparseness on the dynamic behavior of metabolic models. To this end, we increase the reaction density of the metabolic network in the three models and assess the resultant changes in responsiveness. Our approach entails initially introducing $N_{add}$ random reactions into the network and subsequently allocating kinetic parameters to these additions from the distribution of parameter values computed from the original model. We then execute a perturbation-response simulation on this extended model to determine the response coefficient, which in turn helps ascertain the distribution and average of these coefficients. This process is schematically depicted in Figure 3A.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig3-v1.jpg)\n\n**Figure 3.:** (A) A schematic figure of the network expansion simulation. Reactions are randomly added to the original metabolic network, and then, the corresponding ordinary differential equation (ODE) model is constructed. In the illustration, the additional reaction is highlighted as the dashed red lines. The perturbation-response simulation is performed on the expanded models to obtain the response coefficient distribution. The average response coefficient is calculated as a scalar indicator of the responsiveness for each response coefficient distribution. (B). The distribution of the average response coefficient is plotted against the number of additional reactions for the three models. The dashed line indicates the average response coefficient of the original model with no additional reaction. For each $N_{add}$, we generated 256 extended network, and 128 trajectories were computed for each extended network.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The horizontal axis represents the number of additional reactions. The additional reactions are chosen from the reactions registered in the metabolic model database (see Supplementary file 1d).\n\nFigure 3B illustrates the alterations in responsiveness resulting from the model extensions. We generated extended metabolic networks and accompanying ordinary differential equation (ODE) models by adding $N_{add}$ random reactions, and executed the perturbation-response simulation. The average response coefficient is then computed for each model, and the distribution of the average response coefficient is presented as the violin plots. In the perturbation-response simulation, the extended models with only a single attractor are subjected to the response coefficient analysis (comprehensive procedural details available in \u2018Materials and methods\u2019). Note that in this procedure metabolites are not newly introduced to the model, but only the reactions are. Thus, the reaction density increases.\n\nAs evident from the figures, a consistent trend emerges across the three models: the introduction of random reactions weakens responsiveness. However, the magnitude of this reduction varies among the models. It is important to note that the reactants of the added reactions are selected randomly, thus not based on any specific chemical rationale. Nevertheless, this diminished responsiveness persists even when the additional reactions are confined solely to those cataloged in the metabolic model database, as visualized in Figure 3\u2014figure supplement 1.\n\nSuch attenuation aligns with expectations shaped by prior studies on dense reaction networks (Furusawa and Kaneko, 2003; Kaneko et al., 2015; Awazu and Kaneko, 2009; Himeoka et al., 2022a). Evidently, the inherent sparsity of the backbone reaction network plays a critical role, enabling the kinetic model of metabolic systems to respond strongly to perturbations.\n\n### A minimal model for disrupted homeostasis\n\nSo far, we have studied the kinetic models of the central carbon metabolism of E. coli. Our findings indicate that cofactors and the sparsity of the backbone network (network devoid of cofactors) are the keys to the responsiveness of the metabolic dynamics. In this section, we develop a simple minimal model to investigate if these two factors are sufficient to induce strong responses in reaction systems.\n\nOur minimal model is designed in a manner that allows us to adjust the sparsity of the backbone network and the proportion of cofactor-coupled reactions. First, we explain the construction of the backbone networks. These networks are comprised of $N$ chemical species, $C_{1},C_{2},\u22ef,C_{N}$, and $R$ reactions $(R\\geqN\u22121)$. For simplicity, we construct the backbone network using only uni-uni reactions. The minimum number of uni-uni reactions required to interlink $N$ chemical species is $N\u22121$. To assemble a backbone network with $N$ chemicals and $R$ reactions, we first connect $N$ reactions using $N\u22121$ reactions and subsequently introduce random reactions for the pairs of chemicals that lack reactions, totaling $R\u2212(N\u22121)$. We incorporate exchange reactions with extracellular environments for 5% of the metabolites (this percentage is not critical to the results). The exchange reactions are always introduced to the two endpoints metabolites of the sequential linkage to ensure there are no dead-ends on reaction networks. We posit that one of the endpoint metabolites from the sequential linkage is the nutrient metabolite, and we set its external concentration at 100, while for the remainder, it is set to unity.\n\nAs cofactors, we introduce the three forms of the activation for mimicking AXP, $A^{\u2217\u2217},A^{\u2217}$, and A, which are not included in the $N$ chemicals in the backbone network. We introduce the coupling fraction $f$ to modulate the number of reactions with cofactor coupling. With the coupling fraction $f$, the number of reactions with cofactor coupling is given as $Round(fR)$ with $Round(\u22c5)$ as the function to round the value to the nearest integer. When a reaction is selected for cofactor coupling, two forms of the cofactor (chosen from $A^{\u2217\u2217},A^{\u2217}$, and A) are randomly selected. The reaction then gets coupled to the conversion between these two cofactor forms, with the direction being randomly set.\n\nOverall, the differential equation governing the minimal model can be expressed as\n\n$$\n\\frac{dx_{n}}{dt}=\\sumr=1RS_{nr}J_{r}(x)+D_{n}(X_{n}\u2212x_{n}),\n$$\n\nIn this expression, the concentrations of the chemicals from the backbone network, as well as the cofactors, are combined in a vertical stack, that is, $n=1,2,\u22ef,N,N+1,N+2,N+3$ with $n=1,\u22ef,N$ represents the concentrations of the nth chemical in the backbone network, and $x_{N+1},x_{N+2}$ and $x_{N+3}$ denote the concentrations of $A^{\u2217\u2217},A^{\u2217}$, and A, respectively. $S$ is the stoichiometric matrix of the reaction network. $D_{n}$ is unity if the nth chemical has an influx/efflux term, otherwise, it is zero. $X_{n}$ is the external concentration of chemical $n$, which is a constant parameter.\n\nMass action kinetics is employed for the reaction rate function $J_{r}$. The rate function has the form\n\n$$\nJ_{r}(x)=v_{r}(k_{r}^{+}\\prodn\\inSub(r)x_{n}\u2212k_{r}^{\u2212}\\prodn\\inPrd(r)x_{n})\n$$\n\nwhere $Sub(r)$ and $Prd(r)$ are the set of substrates and products, respectively, of the rth reaction. If the reaction is coupled with the cofactor, $|Sub(r)|=|Prd(r)|=2$ and otherwise $|Sub(r)|=|Prd(r)|=1$. We neither allowed the self-loops in the backbone network ($C_{n}\u21ccC_{n}$) nor the catalytic activity of the cofactors (e.g., $C_{n}+A^{\u2217}\u21ccC_{m}+A^{\u2217}$).\n\nThe parameters $v_{r}$ and $k_{r}^{\\pm}$ are the reaction rate and irreversibility, respectively. The $v_{r}$ values are randomly set as $v_{r}=10^{u_{r}}$ with the uniformly distributed random number, $u_{r}\u223cU(\u22123.66,7.13)$. The range for the kinetic parameter is derived from the Khodayari model. $k_{r}^{\\pm}$ is calculated using the Arrhenius equation based on the standard chemical potential of each chemical. We randomly set the standard chemical potential $\\mu_{n}$ for each chemical, where $\\mu_{n}$ follows the uniform distribution $U(0,1)$, while the standard chemical potentials of $A^{\u2217\u2217},A^{\u2217}$ and A are fixed to the constant values, $1.0,0.5$, and $0.0$, respectively. To satisfy the detailed balance condition, $k_{r}^{\\pm}$ are then given by $k_{r}^{\\pm}=min{1,exp\u2061(\\mp\\beta\u0394\\mu_{r})}$ with $\u0394\\mu_{r}$ as the standard chemical potential difference between the products and the substrates, $\u0394\\mu_{r}=\\sumn\\inPrd(r)\\mu_{n}\u2212\\sumn\\inSub(r)\\mu_{n}$, and $\\beta$ is the inverse temperature.\n\nWe generate $M$ networks for several choices of reaction number $R$ and coupling fraction $f$. We performed the perturbation-response simulation to determine the response coefficient distribution of each network. In Figure 4, the average response coefficient, averaged over the networks, is depicted as functions of $R$ and $f$ (see the rectangles labeled as \u2018Cofactor\u2019). These figures clearly illustrate that the average responsiveness tends to decrease as either $R$ increases or $f$ decreases.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig4-v1.jpg)\n\n**Figure 4.:** The distribution of the average response coefficient is plotted against the number of reactions, $R$, for the model with $N=64$ metabolites plus three cofactors (the panels labeled as \u2018Cofactor\u2019) and $N=67$ metabolites without cofactors (the panel labeled as \u2018Catalytic\u2019).For each combination of $R$ and $f$, we generated 512 random networks and computed 128 trajectories for each of these networks. The inverse temperature $\\beta$ is set at 10 for the cofactor version and 20 for the catalytic version. This is because the maximum chemical potential difference in the cofactor version is 2.0, but it is 1.0 in the catalytic version. The total concentrations of the cofactors are set to be unity.\n\nThe coupling with the cofactors leads to the two-body reactions, and thus, increases the nonlinearity of the model equation. It is noteworthy that the increase in responsiveness with $f$ cannot be fully attributed to the increase in the model\u2019s nonlinearity. To validate this, we employed the model (3) without the cofactors, but incorporated catalytic reactions. In this model, each reaction proceeds with the catalytic ability of an enzyme, represented as $C_{n}+C_{l}\u21ccC_{m}+C_{l}$ (here, autocatalytic reactions are permissible, meaning $l$ can be either $n$ or $m$).\n\nIn terms of the numbers of constant, linear, and quadratic terms in the model equation, the catalytic reaction version of the model corresponds to the $f=1$ case of the original minimal model. If the increase in responsiveness with $f$ is dictated solely by nonlinearity, the catalytic reaction model should have comparable responsiveness with the \u2018cofactor\u2019 model with high $f$. Yet, as shown in the rectangles above the main plot in Figure 4 (labeled as \u2018Catalytic\u2019), the responsiveness metrics are notably lower than those observed in the minimal model.\n\n## Discussion\n\nIn the present article, we have studied three models of E. coli\u2019s central carbon metabolism. Our findings indicate that these models commonly exhibit strong and weak responses to perturbations of the steady-state concentration. In the weak response, the effect of the perturbation dwindles almost monotonically over time. In contrast, during a strong response, initial deviations from the steady state get amplified. Note that the linearized models cannot capture the response dynamics. We introduced the response coefficient, $\u03c7$, as a metric to quantify the strength of these responses and undertook comprehensive computational analyses. The strong responsiveness was observed not only in the three models studied in the article, but also in a model of glycolytic pathway with multiple sets of parameter choices (Figure 1\u2014figure supplement 4; Haiman et al., 2021).\n\nWe aim to identify key metabolites whose dynamics play a crucial role in the emergence of strong response. We systematically fixed the concentration of each metabolite to its steady-state value and assessed the influence of individual metabolite dynamics on the overall response strength. For a majority of metabolites, the impact on the response coefficient is bidirectional: halting the dynamic concentration of a metabolite can either amplify or diminish the response, depending upon the base model. Even if their effects consistently amplify or diminish the response, the magnitude of change in the average response coefficients remains relatively modest.\n\nHowever, three metabolites\u2014ATP, ADP, and pyruvate\u2014stood out. They consistently and significantly influenced the average response coefficient across models. Pyruvate\u2019s pronounced impact can be attributed to the PTS, whereas the effects of ATP and ADP seem to arise synergistically across multiple reactions.\n\nOne of the authors has recently reported a kinetic model of E. coli metabolism to exhibit anomalous relaxations and the role of AXPs in the relaxations (Himeoka and Mitarai, 2022b). In the paper, they reduced the metabolic network into a coarse-grained minimal network. The minimal network revealed that, depending on the initial conditions, a futile cycle conversing ATP into AMP be overly active. Then, the futile cycle can deplete ATP and ADP, leading to a significant slowdown or even cessation of several ATP/ADP-coupled reactions, pushing the entire metabolic network into a \u2018choked\u2019 state. The extensive connectivity of AXPs is a common trait in metabolic models. Hence, it is plausible that the impact of AXPs\u2019 dynamics on the entire metabolic system is a common feature irrespective of specific kinetic models.\n\nSeveral experimental studies underscore the pivotal role of AXPs in metabolic homeostasis. For example, Teusink et al. demonstrated that in yeast a sudden increase in glucose levels in the culture medium can activate a positive feedback loop in ATP production in the glycolytic pathway, leading to growth arrest (van Heerden et al., 2014; Teusink et al., 1998). This phenomenon of growth arrest, triggered by a nutrient-level surge, has been observed across various bacterial species, including E. coli (Strange and Hunter, 1966; Postgate and Hunter, 1964; Calcott and Postgate, 1972), though its molecular mechanism has been most extensively studied in Saccharomyces cerevisiae. Moreover, a rapid decrease in the total adenyl cofactor concentration as a cellular response to external glucose up-shift has been documented (Theobald et al., 1997; Kresnowati et al., 2006; Rizzi et al., 1997; Walther et al., 2010). Walther et al. found that inhibiting this transient reduction in the adenyl cofactor pool increased the number of cells transitioning to a growth-arrested state upon glucose up-shift (Walther et al., 2010).\n\nNext, we focused on the structure of the backbone network as suggested by the relatively simple dynamics typically observed in the random network metabolic models (Furusawa and Kaneko, 2003; Kaneko et al., 2015; Awazu and Kaneko, 2009; Himeoka et al., 2022a). To this end, we increased the density of the backbone network in the three models by randomly selecting metabolites and introducing hypothetical reactions between them. The perturbation-response simulation on the extended models indicated that as more reactions were integrated, the system\u2019s response weakened.\n\nFinally, we devised a minimal model to evaluate our hypothesis that the dynamics of cofactors and the sparsity of the backbone network are pivotal determinants of responsiveness. This model successfully showed a strong response to perturbations when the fraction of reactions to be coupled with cofactors becomes high and the backbone network is sparse. It is worth noting that the heightened response due to cofactor coupling is not solely a result of the model equation\u2019s increased nonlinearity. Interestingly, the model\u2019s catalytic reaction variant demonstrated attenuated responses to perturbations, even though its nonlinearity mirrored that of the minimal model where all reactions were cofactor-coupled.\n\nThe present study showed that there are similar metabolic responses to perturbations across three distinct kinetic models of E. coli metabolism. We like to underscore that these models were proposed by different research groups and within distinct contexts. Furthermore, the specifics of each model diverge considerably: both the Khodayari and Chassagnole models are tailored for aerobic conditions, whereas the Boecker model is for anaerobic conditions. Certain reactions and metabolites present in the Khodayari model are absent in both the Boecker and Chassagnole models. The reaction rate functions and parameter values differ across these models because each model has been developed to recapitulate different experimental results. Yet, in spite of these pronounced disparities, the models exhibit converging characteristics to a certain degree, notably the pivotal role of AXPs and the diminishing responsiveness attributed to the addition of reactions. Such congruence in outcomes might hint at the presence of features that remain resilient against variations in model specifics, potentially being shaped by the foundational network structures inherent to core metabolic processes.\n\nFrom a theoretical standpoint, the robustness of metabolic systems, as well as the interplay between network structure and reaction dynamics, has been explored in the chemical reaction network theory and related fields (Feinberg, 2019; Gutenkunst et al., 2007; Himeoka et al., 2024; Kobayashi et al., 2022). However, the practical relevance of these theories to metabolic systems remains to be ascertained since the theories are mathematically rigorous and the strong assumptions narrow down the applicable systems. The cross-talk between bacterial physiology and chemical reaction network theory should enhance the developments of each field.\n\nIn the following sections, we discuss the potential implications of strong responsiveness in the context of biological sciences. The unique feature of strong responsiveness, as observed in our realistic metabolic model, naturally prompts the question: what could be its biological function? An initial hypothesis suggests its role in sensing ambient condition changes and fluctuations. Well-known design principles of signal transduction systems emphasize the amplification of external stimuli (Ferrell and Ha, 2014). Given that certain transcription factors are known to sense concentrations of metabolites in central carbon metabolism (Kotte et al., 2010; Okano et al., 2020; Kochanowski et al., 2013), strong responsiveness could serve as an amplifier for external cues.\n\nExploring metabolic dynamics also holds promise for synthetic biology and metabolic engineering (Shimizu et al., 2001; Schwander et al., 2016; Bar-Even et al., 2010; Doerr et al., 2019; Claassens et al., 2019; Kurisu et al., 2023; Opgenorth et al., 2014; Opgenorth et al., 2017). The construction of artificial metabolic reaction networks often relies on pathway prediction algorithms, constraint-based models, and machine learning (Moriya et al., 2010; Araki et al., 2015; Orth et al., 2010; Varma and Palsson, 1993; Segler et al., 2018). While these algorithms consider stoichiometric feasibility, they frequently overlook dynamics. This oversight can result in proposed network structures underperforming Schwander et al., 2016; Bar-Even et al., 2010; Doerr et al., 2019; Claassens et al., 2019, especially in terms of cofactor recycling (Opgenorth et al., 2014; Opgenorth et al., 2017). Notably, in silico reconstructed metabolic systems often disrupt cofactor balance (Okamoto et al., 1980; Okamoto and Hayashi, 1983), posing challenges to bottom-up synthesis in artificial cells. We hope our study offers foundational insights for the development of quantitative metabolic dynamics theories.\n\n## Materials and methods\n\n### Models and modifications\n\nIn Khodayari et al., 2014, the kinetic parameter values are estimated by using the ensemble modeling (Khodayari et al., 2014; Tran et al., 2008; Tan and Liao, 2012; Rizk and Liao, 2009) so that the steady flux distribution of the metabolic reactions becomes consistent with the experimental measurements. However, the steady-state dealt with in the article turned out to be unstable, that is, the maximum eigenvalue of the Jacobi matrix of the linearized system at the steady state was positive. For carrying out the perturbation-response simulation, we need to make the steady-state stable. To make the steady-state stable, we fixed the periplasmic hydrogen concentration to the steady-state value and removed the competitive inhibition of phosphoenolpyruvate carboxylase (those two factors were manually found). Also, we set the concentrations of the metabolites in the culture media (extracellular metabolites) with the assumption that the model cell is growing in a sufficiently large flask. In addition, the small molecules, H2O, O2, CO2, NH4, and phosphate, are set to be constant, further assuming that the exchange rate of the small chemicals between the extracellular culture is sufficiently fast.\n\nFor the dynamics of ATP and ADP concentrations, in the Chassagnole model (Chassagnole et al., 2002), we used the reactions that coupled with ATP and ADP. Since the kinetic rate equations of those reactions are defined with the dependency of ATP and ADP concentrations in the original model, we utilized the kinetic rate equations as they are. The reactions for the adenine base synthesis are not modeled in the model, and thus, the total concentration of ATP and ADP is the conserved quantity in the model. By assuming that the decreases of the ATP and ADP due to the growth dilution are compensated, the growth dilution term is not introduced to the model equations of ATP and ADP concentrations. Lastly, we introduced the non-growth-associated ATP hydrolysis reaction (ATP\u2192ADP) since the model fails to balance ATP and ADP and relaxes to a steady state where the concentration of some metabolites is almost zero. We utilized a simple Michaelis\u2013Menten rate equation for the hydrolysis reaction $J_{AH}=vx_{ATP}/(K_{M}+x_{ATP}),$ where $v=0.1(sec^{\u22121})$ and $K_{M}=1.0(mM)$\n\nThe Boecker model (Boecker et al., 2021) is used without modification.\n\n### Computation of dynamics\n\nAll the ODE simulations in the present study are done using ode15s() function in MATLAB (MathWorks, Inc, 2022). For computing the attractor of the Chassagnole model, we used the initial concentrations registered in chassagnole4 on JWS online (Olivier and Snoep, 2004) as the initial concentrations of the modified Chassagnole model to run the dynamics. The steady-state concentrations of the metabolites reach the initial concentrations and are utilized as the attractor.\n\nFor generating random initial conditions by perturbations without altering the conserved quantities, we have performed the conservation analysis described in Vallabhajosyula et al., 2006.\n\n### Estimate of the fluctuation strength\n\nFor estimating the strength of fluctuations, we utilize the following simple metabolic reaction:\n\n$$\n\u2205\u2192PX\u2192Q\u2205.\n$$\n\nThe concentration of the enzyme $P$ and $Q$ follows the stochastic transcription and translation model (Friedman et al., 2006; Paulsson and Ehrenberg, 2000). The temporal change of the concentration of the metabolite $X$ here is given by a simple model with the mass-action kinetics,\n\n$$\n\\frac{dx}{dt}=vp(t)\u2212uq(t)x(t),\n$$\n\nwhere $x,p,q$ are the concentrations of $X,P$, and $Q$, respectively. $v$ and $u$ are the kinetic parameters of the reactions. According to the time-scale separation of metabolic reactions and transcription/translation, we suppose that $x$ is the fast variable and its dynamics slave to $p$ and $q$. We assume that the timescales in the change of the metabolite concentrations are sufficiently smaller than that of the proteins and apply the quasi-steady-state approximation: we solve the steady state of the deterministic (Equation 5; Kaneko, 1981; Risken, 1996). Then, we calculate the mean and variance of the solution $x(t)=vp(t)/uq(t)$, which is a stochastic variable. Since the stochastic transcription and translation model leads to the gamma distribution of the protein concentration, the average and the variance are given by\n\n$$\n\u27e8x\u27e9=\\frac{v/u}{b^{2a}\u0393^{2}(a)}\\int_{R_{+}^{2}}dpdq\\frac{p}{q}p^{a\u22121}e^{\u2212p/b}q^{a\u22121}e^{\u2212q/b}=\\frac{v}{u}\\frac{a}{a\u22121}\n$$\n\n\n\n$$\n\u27e8x^{2}\u27e9=\\frac{(v^{2}/u^{2})}{b^{2a}\u0393^{2}(a)}\\int_{R_{+}^{2}}dpdq\\frac{p^{2}}{q^{2}}p^{a\u22121}e^{\u2212p/b}q^{a\u22121}e^{\u2212q/b}=\\frac{v^{2}}{u^{2}}\\frac{a(a+1)}{(a\u22121)(a\u22122)}\n$$\n\nwhere $a$ and $b$ are the parameters set by the rate of the transcription, translation, mRNA degradation, and protein degradation.\n\nThe coefficient of variation is then given by\n\n$$\n\\frac{\\sqrt{\u27e8x^{2}\u27e9\u2212\u27e8x\u27e9^{2}}}{\u27e8x\u27e9}=\\sqrt{\\frac{2a\u22121}{a(a\u22122)}}.\n$$\n\nwhere $a$ is the ratio between the transcription rate and the protein degradation rate. According to the large-scale proteomic analysis of E. coli (Taniguchi et al., 2010), the mean value of $a$ among the essential genes is $\u22486.82\\pm2.34$ (only with the essential metabolic enzymes listed in the iML1515 [Monk et al., 2017], the average value is $\u22486.72\\pm2.34$). By substituting $a=6.82$ into Equation 8, we obtain the relative noise strength as $\u224862%$. Since in the estimate we suppose the irreversible reactions lead to larger noise amplitudes than reversible reactions, we regard 62% as the maximum relative noise strength and use a bit smaller value, 40%.\n\n### Random catalytic reaction network model\n\nThe RCRN model is a simple, mass-balancing toy model of cellular metabolism (Furusawa and Kaneko, 2003; Kaneko et al., 2015). The ordinary differential equation dictating the temporal evolution of the ith metabolite\u2019s concentration $x_{i}$ is given by\n\n$$\n\\frac{dx_{i}}{dt}=\\sumj,kx_{k}(v_{ijk}x_{j}\u2212v_{jik}x_{i})+D_{i}x_{T(i)}x_{i}^{(ext)}\u2212\\mux_{i}\n$$\n\nwhere $v_{ijk},D_{i}$, and \u03bc are the rate constant of the reaction $C_{j}\u2192C_{i}$ catalyzed by $C_{k}$ ($C_{i}$ denotes the ith metabolite), the substrate update rate of $C_{i}$, and the specific growth rate of the model cell, respectively. $T(i)$ denotes the transporter metabolite (enzyme) for the uptake of $C_{i}$, and $x_{i}^{(ext)}$ is the external concentration of $C_{i}$. In the RCRN model, the total volume of the cell is usually set to be equal to the total amount of the metabolites. This is because each \u2018metabolite\u2019 in the model is interpreted as an enzyme as well as a reactant of the metabolic reactions. Hence, the specific growth rate of the model cell is set to the total uptake rate of the metabolites, $\\mu=\\sumiD_{i}x_{T(i)}x_{i}^{(ext)}$.\n\nIn the construction of an instance of the RCRN model, we first generate a random, connected network among $N$ metabolites, and then, we assign a single catalyst on each reaction edge. If the reaction $C_{j}\u2192C_{i}$ catalyzed by $C_{k}$ exists in the network, $v_{ijk}$ is non-zero, while otherwise, it is set to zero. In the present article, we suppose all the reactions are reversible, and thus, $v_{jik}$ is non-zero if and only if $v_{ijk}$ is non-zero.\n\nFor making the comparison of the responsiveness of the realistic model to the RCRN model, we generated 128 instances of the RCRN model where the number of metabolites $N$ is set to be equal to the realistic model that we want to make a comparison. The number of reactions $R$ is set to $3.5N$ for the Boecker and Chassagnole model while $4N$ for the Khodayari model. The ratio between $N$ and $R$ is set so that the Erd\u0151s\u2013R\u00e9nyi random graph of given size becomes connected with sufficiently high probability. The reaction rate constants $v_{ijk}$\u2019s are sampled from the model to compare. For the sake of simplicity, we suppose only the first metabolite is the nutrient metabolite which is taken up from the external environment and the Nth metabolite is the transporter of it. $D_{i}$ and $x_{i}^{(ext)}$ are set to unity for $i=1$, and for the else, those parameters are set to zero.\n\nFor each generated instance of the RCRN model, we performed the perturbation-response simulation where the attractor(s) are computed by simulating the model dynamics from randomly generated 32 initial concentrations $\ud835\udc99_{ini}\\in(10^{-3},10^{3})^{N}$. The RCRN models exhibiting multistability or computational failure due to numerical issues such as heavy stiffness are not subjected to further analysis (less than 10% of the model instances showed multistability for corresponding models; the computational failure is $\u224820%$ for the RCRN model with the parameter distribution of Chassagnole model, $\u224850%$ for that of the Khodayari model, while less than 1% for that of the Boecker model). For quantifying the response coefficient, we computed 128 trajectories for each of those models.\n\n### Random addition of the metabolic reactions\n\nFirst, we add uni-uni reactions where the reactants are randomly picked from the non-cofactor metabolites. Next, we decide whether the additional reaction to be coupled with the adenyl cofactor metabolites (ATP, ADP, or AMP) with a probability $p$. The probability $p$ equals to the fraction of adenyl cofactor-coupled reactions in the original model. The addition reaction is either the uni-uni reaction (if the reaction is not coupled with AXPs) or the bi-bi reaction (if the reaction is coupled with the adenyl cofactors). We computed the parameter value distribution for each reaction scheme, and the parameter values for the additional reactions are sampled from the corresponding parameter value distribution.\n\nFor the Khodayari model, the additional reaction is modeled using the elementary reaction decomposition (ERD) (see the next section), that is, a reaction $A\u21ccB$ is decomposed into the three elementary reaction steps, $E+A\u21ccEA$, $EA\u21ccEB$, and $EB\u21ccE+B$. The mass-action kinetics is adopted as the reaction rate function for each elementary reaction step.\n\nThe ERD is not applied to the Boecker model and the Chassagnole model. Also, several types of reaction rate functions are used in the two models. Thus, we decided to use the simplest enzymatic reaction kinetics used in each paper. The reversible Michaelis\u2013Menten kinetics\n\n$$\nv=\\frac{v_{+}[S_{1}]\u2212v_{\u2212}[P_{1}]}{1+[S_{1}]/K_{S_{1}}+[P_{1}]/K_{P_{1}}}\n$$\n\nis used for uni-uni reactions, and for bi-bi reactions, the ordered bi-bi reaction kinetics\n\n$$\nv=\\frac{v_{+}[S_{1}][S_{2}]\u2212v_{\u2212}[P_{1}][P_{2}]}{1+\\frac{[S_{1}]}{K_{S_{1}}}+\\frac{[P_{1}]}{K_{P_{1}}}+\\frac{[S_{1}][S_{2}]}{K_{S_{1}}K_{S_{2}}}+\\frac{[P_{1}][P_{2}]}{K_{P_{1}}K_{P_{2}}}}\n$$\n\nis adopted in the Boecker model, and a reaction kinetics\n\n$$\nv=\\frac{v_{+}[S_{1}][S_{2}]\u2212v_{\u2212}[P_{1}][P_{2}]}{(1+[S_{1}]/K_{S_{1}}+[P_{1}]/K_{P_{1}})(1+[S_{2}]/K_{S_{2}}+[P_{2}]/K_{P_{2}})}\n$$\n\nis used in the Chassagnole model. $[S_{i}],[P_{i}]$, and $K_{\u2217}$ ($\u2217$ is either $S_{1},S_{2},P_{1}$ or $P_{2}$) represent the concentration of the ith substrate and product, and the dissociation constant of the corresponding chemical, respectively.\n\nAfter constructing an extended model, we compute the steady-state attractor by simulating the dynamics from 128 random initial concentrations. These initial conditions are generated by applying a 40% relative perturbation to the steady-state concentrations of the original model. If all the initial conditions converge to a single attractor, then we generate another set of 128 initial conditions by applying a 40% relative perturbation to the steady-state concentrations of the extended model in order to perform the perturbation-response simulation. For the Boecker model, we require the extended model to have a steady growth rate greater than half of that of the original model. This is because growth dilution is typically the slowest process in the model, and thus, a significant slowdown of growth dilution can lead to an artificial overestimation of the model\u2019s responsiveness.\n\n### Elementary reaction decomposition\n\nHere, a brief description of the ERD is provided. Suppose that we have the following bi-to-uni reaction\n\n$$\nA+B\u21ccC,\n$$\n\nand that the reaction is catalyzed by an enzyme $E$. For implementing this reaction into the kinetic model, the Michaelis\u2013Menten-type kinetics of chemical reaction is often adopted. With the Michaelis\u2013Menten-type kinetics, the rate of the reaction $J$ is given by\n\n$$\nJ=[E]\\frac{v_{+}[A][B]\u2212v_{\u2212}[C]}{1+[A]/K_{A}+[A][B]/K_{AB}+[C]/K_{C}},\n$$\n\nwhere we supposed that the binding of the substrate to the enzyme occurs in the order of $A\u2192B$.\n\nThe Michaelis\u2013Menten-type reaction kinetics (Equation 11) is obtained by the pseudo-equilibrium approximation or the steady-state approximation of the following reactions:\n\n$$\nA+E\u21ccEA\n$$\n\n\n\n$$\nEA+B\u21ccEAB\n$$\n\n\n\n$$\nEAB\u21ccEC\n$$\n\n\n\n$$\nEC\u21ccE+C\n$$\n\nIn the ERD scheme, each step (Equations 12\u201314) of the overall reaction (Equation 9) is modeled using the mass-action kinetics. Also, the forward and the backward reactions are dealt as different reactions. For instance, the rates of the reaction $A+E\u21ccEA$ are given by $J_{A,E\u2192EA}=v_{A,E\u2192EA}[E][A]$ and $J_{EA\u2192A,E}=v_{EA\u2192A,E}[EA]$.\n\nThe advantage of the ERD is that every reaction rate function is given either by a linear or quadratic function of the metabolites\u2019 concentrations. This feature allows us in the present article to randomize the reaction network in a unified manner. Also, the ERD has the advantage of reducing the computational cost for the parameter estimation based on omics data. For more details, see original papers (Khodayari et al., 2014; Tran et al., 2008; Tan and Liao, 2012; Rizk and Liao, 2009).\n\n### Generative AIs and other software\n\nChatGPT (OpenAI, September 25, 2023, version) and Grammarly (Grammarly, Inc) are used to improve clarity and brush up on English grammar.\n",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marisa Nicol\u00e1s, Laborat\u00f3rio Nacional de Computa\u00e7\u00e3o Cient\u00edfica Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98800.4.sa0](https://doi.org/10.7554/eLife.98800.4.sa0)\n\nThis valuable study uses dynamic metabolic models to compare perturbation responses in a bacterial system, analyzing whether they return to their steady state or amplify beyond the initial perturbation. The evidence supporting the emergent properties of perturbed metabolic systems to network topology and sensitivity to specific metabolites is solid.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98800.4.sa1](https://doi.org/10.7554/eLife.98800.4.sa1)\n\nSummary:\n\nThe author studied metabolic networks for central metabolism, focusing on how system trajectories returned to their steady state. To quantify the response, systematic perturbation was performed in simulation and the maximal destabilization away from steady state (compared with initial perturbation distance) was characterized. The author analyzed the perturbation response and found that sparse network and networks with more cofactors are more \"stable\", in the sense that the perturbed trajectories have smaller deviation along the path back to the steady state.\n\nStrengths and major contributions:\n\nThe author compared three metabolic models and performed systematic perturbation analysis in simulation. This is the first work characterized how perturbed trajectories deviate from equilibrium in large biochemical systems and illustrated interesting findings about the difference between sparse biological systems and randomly simulated reaction networks.\n\nDiscussion and impact for the field:\n\nMetabolic perturbation is an important topic in cell biology and has important clinical implication in pharmacodynamics. The computational analysis in this study provides an initiative for future quantitative analysis on metabolism and homeostasis.\n\nComments on latest version:\n\nIn the latest version of this work, the author included NADH, NADPH into the analysis, and perform some comparison about sensitivity analysis. I think this paper is ready to be finalized, and many open questions inspired from this work can be studied in future.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98800.4.sa2](https://doi.org/10.7554/eLife.98800.4.sa2)\n\nThe authors have conducted a valuable comparative analysis of perturbation responses in three nonlinear kinetic models of E. coli central carbon metabolism found in the literature. They aimed to uncover commonalities and emergent properties in the perturbation responses of bacterial metabolism. They discovered that perturbations in the initial concentrations of specific metabolites, such as adenylate cofactors and pyruvate, significantly affect the maximal deviation of the responses from steady-state values. Furthermore, they explored whether the network connectivity (sparse versus dense connections) influences these perturbation responses. The manuscript is reasonably well written.\n\nComments on latest version:\n\nThe authors have adequately addressed my concerns.\n",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ba9df23f-d906-4fab-b9d6-1086b26bb3ec",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C1",
+      "claim": "Three distinct kinetic models of E. coli central carbon metabolism consistently display strong responses to perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that three distinct kinetic models consistently display strong responses to perturbations; in the strong responses, minor initial discrepancies in metabolite concentrations from steady-state values amplify over time, resulting in significant deviations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational simulations performed on three independently proposed kinetic models (Chassagnole et al., 2002; Khodayari et al., 2014; Boecker et al., 2021) showing response coefficient distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "78acb8a0-6b17-4ab5-b34e-e67280eb4549",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C2",
+      "claim": "Strong responses in metabolic dynamics are characterized by amplification of minor initial discrepancies in metabolite concentrations over time.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that three distinct kinetic models consistently display strong responses to perturbations; in the strong responses, minor initial discrepancies in metabolite concentrations from steady-state values amplify over time, resulting in significant deviations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is defined as part of the characterization of strong responses observed in the models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "e84b63d9-ddae-49f6-ad51-0e2ff49d0edc",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C3",
+      "claim": "Strong responses are seldom seen in toy models of the metabolic network.",
+      "claim_type": "EXPLICIT",
+      "source": "This pronounced responsiveness is a characteristic feature of metabolic dynamics, especially since such strong responses are seldom seen in toy models of the metabolic network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with random catalytic reaction network (RCRN) models shown in Figure 1E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "f74cdf10-32f5-4406-a8b3-44738fd3bdd2",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C4",
+      "claim": "Adenyl cofactors consistently influence the responsiveness of metabolic systems across models.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent numerical studies show that adenyl cofactors consistently influence the responsiveness of the metabolic systems across models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational analysis where fixing ATP and ADP concentrations significantly reduced average response coefficients across all three models (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "8ed26608-4990-44f1-9cdc-bea138501043",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C5",
+      "claim": "As the metabolic network becomes denser, the perturbation response diminishes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we examine the impact of network structure on metabolic dynamics, demonstrating that as the metabolic network becomes denser, the perturbation response diminishes\u2014a trend observed commonly in the models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by network expansion simulations where random reactions were added to the models (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "dedee430-7e0d-43c5-a0de-6146e374d623",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C6",
+      "claim": "There is a linear association between growth rate and the ribosomal fraction in total proteomes in bacterial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the linear association between growth rate and the ribosomal fraction in total proteomes (Schaechter et al., 1958; Scott et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "c74d122b-d2ee-4d37-8261-da925664785d",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C7",
+      "claim": "There is a linear relationship linking substrate uptake to growth rate in bacterial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "the linear relationship linking substrate uptake to growth rate (Pirt, 1965)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "b291ca30-5444-41e2-be78-6a3267bbeb04",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C8",
+      "claim": "Cells can remember the duration of starvation and the nature of environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, cells can 'remember' the duration of starvation and the nature of environmental changes\u2014such as the rate at which nutrients deplete\u2014and this can dramatically alter the distribution of lag times (Kaplan et al., 2021; Himeoka and Kaneko, 2017; Levin-Reisman et al., 2010; Himeoka et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous experimental and theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "8267db45-2c4d-49ad-87d0-229619d65a88",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C9",
+      "claim": "The proteome and metabolome of starved cells display characteristically slow dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the proteome and metabolome of starved cells display characteristically slow dynamics (Radzikowski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "49749912-ba8c-4a52-ba0f-54dbc47226e6",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C10",
+      "claim": "There is a trade-off between the growth rate under nutrient-rich conditions and the lag time upon nutrient shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, there is a trade-off between the growth rate under nutrient-rich conditions and other physiological parameters, namely, the lag time upon nutrient shifts (Basan et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "a516cf78-efec-4f9d-b38e-c52c0c31a116",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C11",
+      "claim": "There is a trade-off between the growth rate under nutrient-rich conditions and the death rate under starved conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, there is a trade-off between the growth rate under nutrient-rich conditions and other physiological parameters, namely, the lag time upon nutrient shifts (Basan et al., 2020) and the death rate under starved conditions (Biselli et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "3e74f6ab-442f-4280-ad46-c02738819992",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C12",
+      "claim": "The stoichiometric constraints have a strong impact on the dynamics of chemical reaction systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass-balance condition, or, in other words, the stoichiometric constraints, is known to have a strong impact on the dynamics of chemical reaction systems (Feinberg, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to theoretical work in chemical reaction network theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "dbf323a1-79e2-4e2b-9652-2236480c1369",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C13",
+      "claim": "The Khodayari and Chassagnole models feature the pentose phosphate pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "While all three models incorporate the glycolytic pathway, only the models by Khodayari et al. and Chassagnole et al. feature the pentose phosphate (PP) pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the structural features of the models used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1a091f86-b38a-4725-977a-0af731b37b72",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C14",
+      "claim": "The Chassagnole model excludes the tricarboxylic acid cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the Chassagnole model excludes the tricarboxylic acid cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the structural features of the models used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "735668df-ca43-402e-a3df-1d7f3cc21398",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C15",
+      "claim": "The Boecker and Chassagnole models utilize glucose as the sole carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "The Boecker and Chassagnole models utilize glucose as the sole carbon source, whereas the Khodayari model can assimilate other carbon sources, such as fructose, formate, and acetate depending on the differences between the extracellular and intracellular concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "b4d0117c-e05f-41d8-9d0e-4b118fc64139",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C16",
+      "claim": "The Khodayari model can assimilate carbon sources including fructose, formate, and acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "The Boecker and Chassagnole models utilize glucose as the sole carbon source, whereas the Khodayari model can assimilate other carbon sources, such as fructose, formate, and acetate depending on the differences between the extracellular and intracellular concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "e7120de3-f88d-4bb8-bf31-5531a3982dbc",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C17",
+      "claim": "The Boecker model explicitly models biomass formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Boecker model explicitly models biomass formation, considering several metabolites as biomass precursors that are consumed with a fixed stoichiometry to produce biomass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "a01d3e18-2d23-4e35-aaf6-3c787b35e7d2",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C18",
+      "claim": "The Khodayari and Chassagnole models do not incorporate the biomass formation reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the Khodayari and Chassagnole models do not incorporate the biomass formation reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "7ba0598a-00ee-4c36-8f2b-22360aa67e67",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C19",
+      "claim": "The relative size of concentration fluctuations due to stochastic transcription and translation is estimated to be several tens of percent.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a stochastic model of transcription and translation with a biologically relevant setup, the relative size of the concentration fluctuations is estimated to be several tens of percent (for a detailed derivation, see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by theoretical calculations based on a stochastic model of gene expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "9938838f-35f9-4df6-89a4-268a4e4adc9a",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C20",
+      "claim": "All initial points in the perturbation-response simulations returned to the original growing steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as we have tried, all initial points have returned to the original growing steady state, and thus, we hereafter study the relaxation behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational simulations performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "412b2740-fbce-4d69-a91a-87ec053e354a",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C21",
+      "claim": "The response coefficient distributions for all three models have a peak at \u03c7=1.",
+      "claim_type": "EXPLICIT",
+      "source": "All three models have the peak at \u03c7=1 (note that this is the minimum value of \u03c7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the response coefficient distributions shown in Figure 1E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "d67de697-475c-42f9-894a-78f55f3065b4",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C22",
+      "claim": "The distribution of the Khodayari model exhibits another peak in a larger \u03c7 region.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the distribution of the Khodayari model exhibits another peak in a larger \u03c7 region while the other two models have plateaus adjacent to the primary peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the response coefficient distribution shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1cfd7074-687e-45b1-9ba8-49a4a525590d",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C23",
+      "claim": "The Boecker and Chassagnole models have plateaus adjacent to the primary peak in their response coefficient distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the distribution of the Khodayari model exhibits another peak in a larger \u03c7 region while the other two models have plateaus adjacent to the primary peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the response coefficient distributions shown in Figure 1F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "7bd2f217-e4b9-4467-af83-2314ffc99de8",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C24",
+      "claim": "The responsiveness of the original models cannot be described by the linearized models.",
+      "claim_type": "EXPLICIT",
+      "source": "We have computed the response coefficient by linearizing each model. As shown in Figure 1\u2014figure supplement 1, the responsiveness of the original model cannot be described by the linearized model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison between original and linearized models shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "27cf249b-91a3-4eba-9f32-17650dee9e01",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C25",
+      "claim": "The emergence of additional peaks and plateaus in response coefficient distributions are unique traits of realistic metabolic reaction network models.",
+      "claim_type": "EXPLICIT",
+      "source": "As a fact, the emergence of the additional peak and plateaus, indicative of strong responsiveness, are unique traits of the realistic metabolic reaction network model and are seldom seen in toy representations of the metabolic network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with RCRN models shown in Figure 1E-G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "a332172b-b8c2-4397-bac3-436ed9ee515d",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C26",
+      "claim": "ATP and ADP consistently demonstrate a marked impact in reducing the average response coefficient across models.",
+      "claim_type": "EXPLICIT",
+      "source": "While most metabolites have a bilateral effect on the average response coefficient depending on the original model (or exert a small unilateral effect), ATP and ADP (we refer to them collectively as AXPs) consistently demonstrate a marked impact in reducing the average response coefficient across models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "e02d6ade-04c3-4382-b689-5429899ea3d2",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C27",
+      "claim": "The common importance of AXPs is shown by the Sobol' total sensitivity index.",
+      "claim_type": "EXPLICIT",
+      "source": "The common importance of AXPs is shown also when we quantify the impact of their dynamics on the responsiveness by utilizing the Sobol' total sensitivity index (Figure 2\u2014figure supplement 2; Homma and Saltelli, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sensitivity analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "d4a88535-a474-482b-9eaa-0697efe80336",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C28",
+      "claim": "Metabolites that augment the response coefficient when their concentrations are fixed tend to be allosteric regulators associated with negative regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, halting the dynamics of several metabolites can amplify the model's response coefficient. Across the models, metabolites that augment the response coefficient when their concentrations are fixed tend to be allosteric regulators associated with negative regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of metabolite-specific effects shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "d51f0e1d-aa12-443f-939f-3a7537daa4cb",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C29",
+      "claim": "Negative feedback stabilizes system behavior and assists the system in returning to its original state after perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, negative feedback stabilizes system behavior. In the present context, it assists the system in returning to its original state after perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established principles of control theory applied to the metabolic system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "5c1f9abd-3785-418d-9adf-3c93c302c6f2",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C30",
+      "claim": "Weakening the substrate-level regulation of CSICD by AKG increases the responsiveness of the Boecker model.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that weakening the substrate-level regulation of CSICD by AKG and MDH by OAA increases the responsiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "47398339-ff3e-4023-b042-86749e8b19e2",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C31",
+      "claim": "Weakening the substrate-level regulation of MDH by OAA increases the responsiveness of the Boecker model.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that weakening the substrate-level regulation of CSICD by AKG and MDH by OAA increases the responsiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "52af8b79-127b-4e1a-a979-0a8e69d90e7c",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C32",
+      "claim": "The strong influence of pyruvate on the increase in response coefficients is attributed to the phosphotransferase system (PTS).",
+      "claim_type": "EXPLICIT",
+      "source": "The strong influence of pyruvate on the increase in response coefficients is attributed to the phosphotransferase system (PTS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mechanistic analysis of the PTS system in the models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "9ad42af2-ebb3-4b78-bc13-066da74639ad",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C33",
+      "claim": "The external glucose is taken up by converting phosphoenolpyruvate into pyruvate through the PTS.",
+      "claim_type": "EXPLICIT",
+      "source": "The external glucose is taken up by converting phosphoenolpyruvate into pyruvate through the PTS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a known biochemical mechanism implemented in the models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "b3fc9c9b-6b67-403f-9059-ef2852e2bbae",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C34",
+      "claim": "Metabolic networks have inherent sparsity.",
+      "claim_type": "EXPLICIT",
+      "source": "A noteworthy attribute of metabolic networks is their inherent sparsity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on known structural properties of metabolic networks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "71f3bb49-3857-409d-9ae5-647c7345fca5",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C35",
+      "claim": "The glycolytic pathway predominantly mirrors a linear sequence of reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, the glycolytic pathway predominantly mirrors a linear sequence of reactions, resulting in many metabolites within this pathway participating in merely two reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on known structural properties of the glycolytic pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "de960c24-9f27-4206-9504-04db752e88e8",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C36",
+      "claim": "In random reaction network models, the effect of initial perturbations on metabolite concentrations typically decays monotonically over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In such types of models, the effect of the initial perturbations on metabolite concentrations typically decays monotonically over time (Awazu and Kaneko, 2009; Himeoka and Mitarai, 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "fe4cde4b-fd02-45f7-98b0-bd98736a7d5a",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C37",
+      "claim": "The introduction of random reactions weakens responsiveness in metabolic models.",
+      "claim_type": "EXPLICIT",
+      "source": "As evident from the figures, a consistent trend emerges across the three models: the introduction of random reactions weakens responsiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by network expansion simulations shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "386ce058-a1db-4172-b4f8-4f64cffa2886",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C38",
+      "claim": "The diminished responsiveness persists even when additional reactions are confined to those cataloged in the metabolic model database.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this diminished responsiveness persists even when the additional reactions are confined solely to those cataloged in the metabolic model database, as visualized in Figure 3\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "b2db9448-3959-4dd4-8816-43d97dbe541e",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C39",
+      "claim": "The inherent sparsity of the backbone reaction network plays a critical role in enabling the kinetic model of metabolic systems to respond strongly to perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, the inherent sparsity of the backbone reaction network plays a critical role, enabling the kinetic model of metabolic systems to respond strongly to perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the network expansion simulations and comparison with dense networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1c47c7f0-ec7e-49e1-8877-029ff82c9426",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C40",
+      "claim": "The minimal model successfully showed a strong response to perturbations when the fraction of reactions coupled with cofactors becomes high and the backbone network is sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "This model successfully showed a strong response to perturbations when the fraction of reactions to be coupled with cofactors becomes high and the backbone network is sparse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulations of the minimal model shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "f132db27-6ac5-4413-9cd4-22edbfd4e987",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C41",
+      "claim": "The heightened response due to cofactor coupling is not solely a result of the model equation's increased nonlinearity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the heightened response due to cofactor coupling is not solely a result of the model equation's increased nonlinearity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison between cofactor and catalytic versions of the minimal model shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "f1e1fedb-9839-42cd-933d-59de4f086930",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C42",
+      "claim": "The model's catalytic reaction variant demonstrated attenuated responses to perturbations compared to the cofactor-coupled model.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the model's catalytic reaction variant demonstrated attenuated responses to perturbations, even though its nonlinearity mirrored that of the minimal model where all reactions were cofactor-coupled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "abb77b84-c4f6-4cb7-8bee-b4fe499fd1a4",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C43",
+      "claim": "The three kinetic models were proposed by different research groups and within distinct contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We like to underscore that these models were proposed by different research groups and within distinct contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the literature sources of the models (Chassagnole et al., 2002; Khodayari et al., 2014; Boecker et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "07f66bd7-bb78-4e75-99ec-b25d838a3496",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C44",
+      "claim": "The Khodayari and Chassagnole models are tailored for aerobic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the specifics of each model diverge considerably: both the Khodayari and Chassagnole models are tailored for aerobic conditions, whereas the Boecker model is for anaerobic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "d04c531e-b838-43f1-8f80-cbd71c707070",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C45",
+      "claim": "The Boecker model is for anaerobic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the specifics of each model diverge considerably: both the Khodayari and Chassagnole models are tailored for aerobic conditions, whereas the Boecker model is for anaerobic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "758119b4-9862-4c5f-90c6-5e3b8ba77cc2",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C46",
+      "claim": "Strong responsiveness could serve as an amplifier for external cues in signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that certain transcription factors are known to sense concentrations of metabolites in central carbon metabolism (Kotte et al., 2010; Okano et al., 2020; Kochanowski et al., 2013), strong responsiveness could serve as an amplifier for external cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on known signal transduction principles and metabolic sensing mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "08325544-f196-41f1-b6cc-9233f96974cf",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C47",
+      "claim": "Certain transcription factors are known to sense concentrations of metabolites in central carbon metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that certain transcription factors are known to sense concentrations of metabolites in central carbon metabolism (Kotte et al., 2010; Okano et al., 2020; Kochanowski et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1fc3d818-db85-46f5-a731-fa9f95c29aee",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C48",
+      "claim": "Pathway prediction algorithms, constraint-based models, and machine learning often overlook dynamics in metabolic network construction.",
+      "claim_type": "EXPLICIT",
+      "source": "The construction of artificial metabolic reaction networks often relies on pathway prediction algorithms, constraint-based models, and machine learning (Moriya et al., 2010; Araki et al., 2015; Orth et al., 2010; Varma and Palsson, 1993; Segler et al., 2018). While these algorithms consider stoichiometric feasibility, they frequently overlook dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work in metabolic engineering and synthetic biology.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "3f2fc106-850e-4f94-a357-ea1ee2194cc1",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C49",
+      "claim": "In silico reconstructed metabolic systems often disrupt cofactor balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in silico reconstructed metabolic systems often disrupt cofactor balance (Okamoto et al., 1980; Okamoto and Hayashi, 1983), posing challenges to bottom-up synthesis in artificial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "05bd619d-5bc1-40d5-9101-4ea7b33d8d01",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C50",
+      "claim": "The steady-state dealt with in the Khodayari et al., 2014 article was unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the steady-state dealt with in the article turned out to be unstable, that is, the maximum eigenvalue of the Jacobi matrix of the linearized system at the steady state was positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational analysis of the Khodayari model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "eb7e7e3e-588f-4cc0-9ba6-6ece5f3a8e03",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C51",
+      "claim": "To make the Khodayari model steady-state stable, the periplasmic hydrogen concentration was fixed to the steady-state value and the competitive inhibition of phosphoenolpyruvate carboxylase was removed.",
+      "claim_type": "EXPLICIT",
+      "source": "To make the steady-state stable, we fixed the periplasmic hydrogen concentration to the steady-state value and removed the competitive inhibition of phosphoenolpyruvate carboxylase (those two factors were manually found).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes modifications made to the Khodayari model for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "3a846f37-82f2-4ae4-8de6-ded81232c45f",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C52",
+      "claim": "A non-growth-associated ATP hydrolysis reaction was introduced to the Chassagnole model to balance ATP and ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we introduced the non-growth-associated ATP hydrolysis reaction (ATP\u2192ADP) since the model fails to balance ATP and ADP and relaxes to a steady state where the concentration of some metabolites is almost zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes modifications made to the Chassagnole model for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "c774c0ad-4ba3-435a-b973-697c789cbd07",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C53",
+      "claim": "The coefficient of variation for metabolite concentrations due to stochastic gene expression is approximately 62%.",
+      "claim_type": "EXPLICIT",
+      "source": "By substituting a=6.82 into Equation 8, we obtain the relative noise strength as \u224862%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical calculations using parameters from proteomic analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1b78bbe3-ce46-4885-9ac7-8e3cec55c01f",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C54",
+      "claim": "The mean value of the transcription rate to protein degradation rate ratio among essential genes in E. coli is approximately 6.82\u00b12.34.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the large-scale proteomic analysis of E. coli (Taniguchi et al., 2010), the mean value of a among the essential genes is \u22486.82\u00b12.34",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to proteomic analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "50fb40f0-6236-43a8-8250-22364986965e",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C55",
+      "claim": "A sudden increase in glucose levels in yeast can activate a positive feedback loop in ATP production in the glycolytic pathway, leading to growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Teusink et al. demonstrated that in yeast a sudden increase in glucose levels in the culture medium can activate a positive feedback loop in ATP production in the glycolytic pathway, leading to growth arrest (van Heerden et al., 2014; Teusink et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "3a0ee7c6-87ae-418b-8279-daabfcdeb9ac",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C56",
+      "claim": "Growth arrest triggered by a nutrient-level surge has been observed across various bacterial species, including E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon of growth arrest, triggered by a nutrient-level surge, has been observed across various bacterial species, including E. coli (Strange and Hunter, 1966; Postgate and Hunter, 1964; Calcott and Postgate, 1972)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "004ddf0c-1768-4fe7-afc1-d250684398a5",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C57",
+      "claim": "A rapid decrease in the total adenyl cofactor concentration occurs as a cellular response to external glucose up-shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a rapid decrease in the total adenyl cofactor concentration as a cellular response to external glucose up-shift has been documented (Theobald et al., 1997; Kresnowati et al., 2006; Rizzi et al., 1997; Walther et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1b4392be-462a-47f2-aa9d-daaa27235618",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C58",
+      "claim": "Inhibiting the transient reduction in the adenyl cofactor pool increased the number of cells transitioning to a growth-arrested state upon glucose up-shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Walther et al. found that inhibiting this transient reduction in the adenyl cofactor pool increased the number of cells transitioning to a growth-arrested state upon glucose up-shift (Walther et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "8ca7d1f0-a81a-46df-b6a6-7fdde6f0af81",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C59",
+      "claim": "The average response coefficient tends to decrease as the number of reactions R increases in the minimal model.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 4. The distribution of the average response coefficient is plotted against the number of reactions, R, for the model with N=64 metabolites plus three cofactors (the panels labeled as 'Cofactor') and N=67 metabolites without cofactors (the panel labeled as 'Catalytic').",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is inferred from the violin plots in Figure 4 showing decreasing average response coefficients with increasing R.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "979bb729-927f-4aeb-9377-3570a1e9d849",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C60",
+      "claim": "The average response coefficient tends to increase as the coupling fraction f increases in the minimal model.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 4. The distribution of the average response coefficient is plotted against the number of reactions, R, for the model with N=64 metabolites plus three cofactors (the panels labeled as 'Cofactor') and N=67 metabolites without cofactors (the panel labeled as 'Catalytic').",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is inferred from the violin plots in Figure 4 showing increasing average response coefficients with increasing f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "45fef3ad-7793-47b5-af6f-b16d24c97505",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C62",
+      "claim": "In weakly responding dynamics, the effects of perturbations diminish almost monotonically.",
+      "claim_type": "EXPLICIT",
+      "source": "In the weakly responding dynamics (bottom panel), the effects of the perturbations diminish almost monotonically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the characteristics of weak response dynamics observed in the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "b462c682-5986-40ef-bed0-b7d54e35f726",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C63",
+      "claim": "In strongly responding dynamics, initial displacements of concentrations are amplified over time, leading some metabolites' concentrations to overshoot or undershoot.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in the dynamics that respond strongly (top panel), the initial displacements of concentrations are amplified over time, leading some metabolites' concentrations to overshoot or undershoot",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the characteristics of strong response dynamics observed in the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "685be837-d66c-4b17-bf3c-d03d6eb20eed",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C65",
+      "claim": "The minimum value of the response coefficient \u03c7 is unity.",
+      "claim_type": "EXPLICIT",
+      "source": "All three models have the peak at \u03c7=1 (note that this is the minimum value of \u03c7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical definition of the response coefficient.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "e8d1badf-c180-46b2-b9de-0859d49ce51c",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C66",
+      "claim": "The dynamics of gene regulation mediated by transcription factors are not modeled in the three kinetic models.",
+      "claim_type": "EXPLICIT",
+      "source": "Within these models, the dynamics of gene regulation mediated by transcription factors are not modeled; that is, the total concentration of each metabolic enzyme is constant while the substrate-level regulations are incorporated into the models",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the scope and limitations of the models used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "b00534ce-ebc0-4379-a9a0-4f57731aac77",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C67",
+      "claim": "Substrate-level regulations are incorporated into the three kinetic models.",
+      "claim_type": "EXPLICIT",
+      "source": "Within these models, the dynamics of gene regulation mediated by transcription factors are not modeled; that is, the total concentration of each metabolic enzyme is constant while the substrate-level regulations are incorporated into the models (the lists of substrate-level regulations are provided in Supplementary file 1a\u2013c; for a detailed description, see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes features of the models used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "10a4e19d-5a57-480e-b09d-40e478a2d5ec",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C68",
+      "claim": "The perturbation strength of 40% is beyond the linear region where relaxation dynamics is approximated by the linearized model around the steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "The perturbation strength is beyond the linear region that the relaxation dynamics is approximated by the linearized model around the steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodological choice and its justification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "c5effcbf-c93e-47f4-b589-ace4063988c0",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C69",
+      "claim": "The characteristic features of the response remain consistent even when different perturbation strengths are employed.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the characteristic features of the response studied later remain consistent even when different perturbation strengths are employed (see Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational analysis shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "89fd586b-5330-45ec-8dd7-ca1ee7153bb8",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C70",
+      "claim": "The extensive connectivity of AXPs is a common trait in metabolic models.",
+      "claim_type": "EXPLICIT",
+      "source": "The extensive connectivity of AXPs is a common trait in metabolic models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on known structural properties of metabolic networks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "456bcd83-e9ae-40a3-a6c9-8c1197e4c865",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C71",
+      "claim": "The impact of AXPs' dynamics on the entire metabolic system is a common feature irrespective of specific kinetic models.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is plausible that the impact of AXPs' dynamics on the entire metabolic system is a common feature irrespective of specific kinetic models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on the observed results across three different models.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "169f88f8-0fdc-4605-bf6c-e233dbd8edc6",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C72",
+      "claim": "A sudden increase in glucose levels can activate a positive feedback loop in ATP production in the glycolytic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Teusink et al. demonstrated that in yeast a sudden increase in glucose levels in the culture medium can activate a positive feedback loop in ATP production in the glycolytic pathway, leading to growth arrest (van Heerden et al., 2014; Teusink et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "4d4c0adf-688c-497a-ab72-dcc522ac6dd5",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "claim_id": "C73",
+      "claim": "The molecular mechanism of growth arrest upon nutrient surge has been most extensively studied in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon of growth arrest, triggered by a nutrient-level surge, has been observed across various bacterial species, including E. coli (Strange and Hunter, 1966; Postgate and Hunter, 1964; Calcott and Postgate, 1972), though its molecular mechanism has been most extensively studied in Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the literature on growth arrest mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4007eb79-e838-49bb-a67d-b4afb3c1d041",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Three independently developed kinetic models of E. coli central carbon metabolism (Khodayari, Boecker, and Chassagnole) consistently exhibit strong responses to perturbations, where minor initial deviations in metabolite concentrations from steady-state values amplify over time rather than decay monotonically. All models show response coefficient distributions with a peak at \u03c7=1, with the Khodayari model displaying an additional peak at higher \u03c7 values and the Boecker/Chassagnole models showing plateaus adjacent to the primary peak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C20-C23, and C62-C63 collectively demonstrate strong response behavior across three distinct models through computational simulations (Figure 1B-G). The response coefficient metric \u03c7 is well-defined (C65), simulations show convergence to steady state (C20), and the distribution patterns are clearly documented in the figures. The nonlinear nature is confirmed by comparison with linearized models (C24).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "486d7e0b-b56f-4c7f-85bf-e9a9782ee261",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Strong metabolic responses with amplification of perturbations are characteristic features of realistic metabolic network models and are seldom observed in toy models such as random catalytic reaction networks (RCRN), where perturbation effects typically decay monotonically over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C25 are directly supported by comparison with RCRN models shown in Figure 1E-G, where the toy models lack the additional peaks and plateaus seen in realistic models. Claim C36 provides theoretical context from prior work. The comparison methodology is clearly described and the distinction between realistic and toy models is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "d6930a2e-5134-40dc-859b-de0ac018593a",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adenyl cofactors (ATP and ADP, collectively termed AXPs) consistently and significantly reduce the average response coefficient across all three metabolic models when their concentrations are fixed, demonstrating their critical role in metabolic responsiveness. This effect is confirmed by both direct perturbation analysis and Sobol' sensitivity analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26-C27 are strongly supported by computational analyses shown in Figure 2 and Figure 2\u2014figure supplement 2. The consistency across three independent models strengthens the conclusion. Claims C70-C71 provide mechanistic context about AXP connectivity. The Sobol' sensitivity analysis provides independent validation of the importance of AXP dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "a77317e2-a3db-4611-ac52-0b8bf32e7520",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Metabolites that increase response coefficients when their concentrations are fixed tend to be allosteric regulators associated with negative feedback regulation. Fixing these metabolites removes stabilizing negative feedback loops, allowing stronger responses to perturbations. Specific examples include substrate-level regulation of CSICD by AKG and MDH by OAA in the Boecker model, and the role of pyruvate in the PTS system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by computational analysis in Figure 2 and Figure 2\u2014figure supplement 4. The mechanistic explanation via negative feedback (C29) is well-established in control theory. Claims C30-C31 provide specific validation in the Boecker model. The pyruvate/PTS mechanism (C32-C33) is biochemically sound and provides an exception to the allosteric regulator pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "cfed55d9-afd4-4e0a-add0-937a2f1b1aaa",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Network sparsity of the backbone metabolic network (excluding cofactors) is critical for strong metabolic responsiveness. As the metabolic network becomes denser through addition of random reactions, perturbation response diminishes consistently across all three models. This effect persists even when additional reactions are limited to those in metabolic databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37-C39 are supported by network expansion simulations shown in Figure 3 and Figure 3\u2014figure supplement 1. The trend is consistent across all three models. Claims C34-C35 provide context about known metabolic network structure. The robustness of the finding to different reaction addition strategies (random vs. database-constrained) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "c15283c5-eb2a-401e-a3d7-a45195e7c0b5",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A minimal model demonstrates that cofactor coupling and network sparsity are sufficient to generate strong metabolic responses. The model shows strong responses when the fraction of cofactor-coupled reactions is high and the backbone network is sparse. Importantly, the heightened response is not solely due to increased nonlinearity, as a catalytic reaction variant with equivalent nonlinearity shows attenuated responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by simulations shown in Figure 4. The minimal model successfully recapitulates the key features identified in the realistic models. Claims C59-C60 describe the quantitative trends. The comparison between cofactor-coupled and catalytic variants (C41-C42) provides strong evidence that cofactor dynamics, not just nonlinearity, drive the response behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "0db00ba9-2200-4efa-8c89-c040350cdbb0",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The three kinetic models used in this study differ substantially in their structural features, environmental conditions, and modeling approaches, yet show convergent response behaviors. The models were developed by different research groups for different contexts (aerobic vs. anaerobic), include different metabolic pathways, and use different carbon sources and biomass modeling approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 and C43-C45 accurately describe the documented differences between the three models based on the original publications. Claim C66-C67 clarifies the scope of the models (substrate-level regulation included, transcriptional regulation excluded). These differences are important for establishing that the convergent findings are robust to model-specific details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "4724d232-a6c3-489a-a1e2-abf72b932a3c",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Khodayari and Chassagnole models required modifications to achieve stable steady states for the perturbation-response analysis. The Khodayari model's original steady state was unstable and required fixing periplasmic hydrogen concentration and removing competitive inhibition of phosphoenolpyruvate carboxylase. The Chassagnole model required addition of a non-growth-associated ATP hydrolysis reaction to balance ATP and ADP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 transparently document necessary model modifications. These are methodological details essential for reproducibility. The modifications are justified (achieving stable steady states for perturbation analysis) and clearly described. However, these modifications raise questions about whether the modified models accurately represent the original biological systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "82f2c64b-fa91-47ff-aa17-d35c31402973",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The perturbation strength of 40% used in simulations is justified by theoretical estimates of concentration fluctuations due to stochastic gene expression (approximately 62% coefficient of variation) and is beyond the linear regime. The characteristic features of the response remain consistent across different perturbation strengths (20%, 40%, 60%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C53-C54 provide theoretical justification for the perturbation magnitude based on stochastic gene expression models and proteomic data. Claim C68 explains why nonlinear analysis is necessary. Claim C69 is supported by Figure 1\u2014figure supplement 2 showing robustness to perturbation strength. The theoretical derivation in Materials and Methods provides quantitative support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "e039c196-46ad-4e2a-ace4-a28bd8022d7e",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The responsiveness of the original nonlinear metabolic models cannot be adequately described by linearized versions of the models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is supported by comparison shown in Figure 1\u2014figure supplement 1. This establishes the necessity of nonlinear analysis for understanding metabolic responsiveness. The linearized models either show very different response patterns or computational artifacts (negative concentrations), confirming that the strong response behavior is inherently nonlinear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has established various quantitative laws and phenomena in bacterial physiology, including linear relationships between growth rate and ribosomal fraction/substrate uptake, cellular memory of starvation, slow dynamics in starved cells, and trade-offs between growth rate and lag time or death rate. Stoichiometric constraints are known to strongly impact chemical reaction system dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 accurately cite established prior work to provide context for the current study. These are background claims supported by appropriate citations. They establish the motivation for studying metabolic dynamics and the importance of mass-balance constraints. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "ae5190b6-17bb-41b2-a337-fcd262cc36d6",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Strong metabolic responsiveness could potentially serve as an amplifier for external cues in signal transduction, given that certain transcription factors sense metabolite concentrations in central carbon metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C46 is explicitly speculative (\"could serve\") and represents a hypothesis rather than a demonstrated result. While claim C47 establishes that transcription factors sense metabolites (supported by citations), the amplification function of strong responsiveness is not tested or validated. This is a reasonable hypothesis for future work but lacks direct supporting evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "2ebfda1d-7f70-4b9a-b6e7-e57444a90640",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Current approaches to constructing artificial metabolic networks (pathway prediction algorithms, constraint-based models, machine learning) often overlook dynamics and can disrupt cofactor balance, posing challenges for synthetic biology and artificial cell construction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by appropriate citations to prior work in metabolic engineering and synthetic biology. These claims establish the practical relevance of understanding metabolic dynamics and cofactor balance. The citations appear to support the specific claims about limitations of current approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "71c83417-7fb3-40af-9bbf-f3d2acc74804",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Experimental studies have documented the importance of adenyl cofactors in metabolic homeostasis, including growth arrest upon glucose up-shift in yeast and bacteria, rapid decreases in adenyl cofactor concentrations during glucose up-shift, and increased growth arrest when this transient reduction is inhibited. The molecular mechanism has been most extensively studied in S. cerevisiae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 and C72-C73 accurately cite experimental literature demonstrating the biological relevance of adenyl cofactor dynamics. These provide important validation that the computational findings about AXP importance align with experimental observations. The citations appear appropriate and the claims accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "db12c646-0a47-4a6a-acec-00d2f84fcade",
+      "content_id": "3ce6a867-11ca-4df6-998c-6e806e651c8c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The minimum value of the response coefficient \u03c7 is unity by mathematical definition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is a mathematical fact following from the definition of \u03c7 as the maximum ratio of distances from steady state. When the distance decreases monotonically, the maximum occurs at t=0, giving \u03c7=1. This is a definitional property of the metric used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "14e05676-0990-4449-82fa-2be51829ceed",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Three distinct kinetic models of E. coli central carbon metabolism consistently display strong responses to perturbations, characterized by amplification of minor initial discrepancies in metabolite concentrations over time. This pronounced responsiveness is a characteristic feature of realistic metabolic dynamics and is seldom seen in toy models of the metabolic network.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers affirm the core finding about strong perturbation responses across models. The editor states 'the evidence supporting the emergent properties of perturbed metabolic systems to network topology and sensitivity to specific metabolites is solid.' Reviewer 1 notes this is 'the first work characterized how perturbed trajectories deviate from equilibrium in large biochemical systems and illustrated interesting findings about the difference between sparse biological systems and randomly simulated reaction networks.' No concerns were raised about these fundamental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "4991f6b4-6188-4424-a6c5-417b272074bd",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Adenyl cofactors (ATP and ADP) consistently influence the responsiveness of metabolic systems across all three models, demonstrating a marked impact in reducing the average response coefficient when their concentrations are fixed. This impact is confirmed by Sobol' total sensitivity index analysis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly states 'They discovered that perturbations in the initial concentrations of specific metabolites, such as adenylate cofactors and pyruvate, significantly affect the maximal deviation of the responses from steady-state values.' Reviewer 1 notes the author 'included NADH, NADPH into the analysis' in the latest version, indicating acceptance of the cofactor analysis. The editor's statement about 'solid evidence' for 'sensitivity to specific metabolites' encompasses this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "9cb7e89c-3c76-4278-a597-15b9ac7f6c72",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "As the metabolic network becomes denser through addition of random reactions, the perturbation response diminishes. This trend is observed consistently across all three models and persists even when additional reactions are confined to those cataloged in metabolic model databases, demonstrating that inherent sparsity of the backbone reaction network plays a critical role in enabling strong responses to perturbations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly affirms 'the evidence supporting the emergent properties of perturbed metabolic systems to network topology...is solid.' Reviewer 2 states 'they explored whether the network connectivity (sparse versus dense connections) influences these perturbation responses' and notes the authors 'adequately addressed my concerns.' Reviewer 1 characterizes this as an 'interesting finding about the difference between sparse biological systems and randomly simulated reaction networks.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "e3c49a31-2b62-46bc-b120-6cf3f2a30ae0",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "A minimal model successfully demonstrates strong response to perturbations when the fraction of reactions coupled with cofactors is high and the backbone network is sparse. The heightened response due to cofactor coupling is not solely due to increased nonlinearity, as demonstrated by comparison with a catalytic reaction variant.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the minimal model analysis without raising concerns. Reviewer 1 notes the work 'illustrated interesting findings' about network properties, which encompasses the minimal model results. The editor's statement about 'solid evidence' for emergent properties related to network topology implicitly includes the minimal model demonstrations. No reviewer questioned the minimal model methodology or conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "778ac3ae-9a6e-41b4-9749-71ca9878b538",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Metabolites that augment the response coefficient when their concentrations are fixed tend to be allosteric regulators associated with negative regulation. Weakening substrate-level regulation by specific metabolites (AKG, OAA, pyruvate) increases responsiveness in the models.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly mentions 'perturbations in the initial concentrations of specific metabolites, such as adenylate cofactors and pyruvate, significantly affect the maximal deviation' and notes the authors 'adequately addressed my concerns.' The mechanistic analysis of negative feedback and specific regulatory interactions is accepted without challenge by any reviewer.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "2cabe767-571a-4ef6-be09-ba9433481839",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The three kinetic models (Khodayari, Boecker, Chassagnole) were proposed by different research groups in distinct contexts and have different structural features including pathway composition, carbon sources, and aerobic/anaerobic conditions. The models incorporate substrate-level regulations but do not model gene regulation dynamics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 describes the work as 'a valuable comparative analysis of perturbation responses in three nonlinear kinetic models of E. coli central carbon metabolism found in the literature' and notes the authors 'adequately addressed my concerns.' The model descriptions and differences are accepted as methodological context without challenge from any reviewer.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "6640e00c-6a65-4b5c-8eb6-9336254774b4",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The perturbation strength of 40% used in simulations is justified as beyond the linear region and consistent with biologically relevant concentration fluctuations estimated from stochastic gene expression models. All initial points in simulations returned to the original steady state, and characteristic features remain consistent across different perturbation strengths.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer raised concerns about the perturbation methodology or the choice of perturbation strength. Reviewer 1 notes the work provides 'systematic perturbation analysis in simulation' and characterizes it as valuable. The methodological choices are implicitly accepted through the reviewers' overall positive assessment and lack of critique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "fe167cbd-c607-4313-8ee0-3204a1513dbe",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Modifications were made to the Khodayari and Chassagnole models to achieve stable steady states, including fixing periplasmic hydrogen concentration, removing competitive inhibition, and introducing ATP hydrolysis reactions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 notes the authors 'adequately addressed my concerns' after revisions. These model modifications are presented as methodological details necessary for the analysis, and no reviewer challenged their validity or appropriateness. The acceptance of the overall results implicitly validates these technical adjustments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1d243bb3-27f8-494a-8cc7-0806a2380d91",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about bacterial physiology, metabolic network properties, and previous experimental observations regarding growth laws, cellular memory, trade-offs, and responses to nutrient shifts are cited from the literature to provide context.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are literature-based contextual claims that reviewers do not challenge. Reviewer 1 notes the work has 'important clinical implication in pharmacodynamics' and provides 'initiative for future quantitative analysis,' indicating acceptance of the biological context. No reviewer questioned the accuracy or relevance of the cited background information.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "5d6c3446-ec98-4a03-826e-ecaf19d05f2e",
+      "content_id": "a197acee-63fb-4175-8f4a-da8b89ff961b",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Strong responsiveness could serve as an amplifier for external cues in signal transduction, and current metabolic network construction methods often overlook dynamics, which has implications for synthetic biology and artificial cell design.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'The computational analysis in this study provides an initiative for future quantitative analysis on metabolism and homeostasis' and notes 'many open questions inspired from this work can be studied in future.' This indicates acceptance of the broader implications and speculative applications discussed by the authors. No reviewer challenged these interpretative claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ba9df23f-d906-4fab-b9d6-1086b26bb3ec",
+      "result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041"
+    },
+    {
+      "claim_id": "78acb8a0-6b17-4ab5-b34e-e67280eb4549",
+      "result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041"
+    },
+    {
+      "claim_id": "9938838f-35f9-4df6-89a4-268a4e4adc9a",
+      "result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041"
+    },
+    {
+      "claim_id": "412b2740-fbce-4d69-a91a-87ec053e354a",
+      "result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041"
+    },
+    {
+      "claim_id": "d67de697-475c-42f9-894a-78f55f3065b4",
+      "result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041"
+    },
+    {
+      "claim_id": "1cfd7074-687e-45b1-9ba8-49a4a525590d",
+      "result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041"
+    },
+    {
+      "claim_id": "45fef3ad-7793-47b5-af6f-b16d24c97505",
+      "result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041"
+    },
+    {
+      "claim_id": "b462c682-5986-40ef-bed0-b7d54e35f726",
+      "result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041"
+    },
+    {
+      "claim_id": "e84b63d9-ddae-49f6-ad51-0e2ff49d0edc",
+      "result_id": "486d7e0b-b56f-4c7f-85bf-e9a9782ee261"
+    },
+    {
+      "claim_id": "27cf249b-91a3-4eba-9f32-17650dee9e01",
+      "result_id": "486d7e0b-b56f-4c7f-85bf-e9a9782ee261"
+    },
+    {
+      "claim_id": "de960c24-9f27-4206-9504-04db752e88e8",
+      "result_id": "486d7e0b-b56f-4c7f-85bf-e9a9782ee261"
+    },
+    {
+      "claim_id": "f74cdf10-32f5-4406-a8b3-44738fd3bdd2",
+      "result_id": "d6930a2e-5134-40dc-859b-de0ac018593a"
+    },
+    {
+      "claim_id": "a332172b-b8c2-4397-bac3-436ed9ee515d",
+      "result_id": "d6930a2e-5134-40dc-859b-de0ac018593a"
+    },
+    {
+      "claim_id": "e02d6ade-04c3-4382-b689-5429899ea3d2",
+      "result_id": "d6930a2e-5134-40dc-859b-de0ac018593a"
+    },
+    {
+      "claim_id": "89fd586b-5330-45ec-8dd7-ca1ee7153bb8",
+      "result_id": "d6930a2e-5134-40dc-859b-de0ac018593a"
+    },
+    {
+      "claim_id": "456bcd83-e9ae-40a3-a6c9-8c1197e4c865",
+      "result_id": "d6930a2e-5134-40dc-859b-de0ac018593a"
+    },
+    {
+      "claim_id": "d4a88535-a474-482b-9eaa-0697efe80336",
+      "result_id": "a77317e2-a3db-4611-ac52-0b8bf32e7520"
+    },
+    {
+      "claim_id": "d51f0e1d-aa12-443f-939f-3a7537daa4cb",
+      "result_id": "a77317e2-a3db-4611-ac52-0b8bf32e7520"
+    },
+    {
+      "claim_id": "5c1f9abd-3785-418d-9adf-3c93c302c6f2",
+      "result_id": "a77317e2-a3db-4611-ac52-0b8bf32e7520"
+    },
+    {
+      "claim_id": "47398339-ff3e-4023-b042-86749e8b19e2",
+      "result_id": "a77317e2-a3db-4611-ac52-0b8bf32e7520"
+    },
+    {
+      "claim_id": "52af8b79-127b-4e1a-a979-0a8e69d90e7c",
+      "result_id": "a77317e2-a3db-4611-ac52-0b8bf32e7520"
+    },
+    {
+      "claim_id": "9ad42af2-ebb3-4b78-bc13-066da74639ad",
+      "result_id": "a77317e2-a3db-4611-ac52-0b8bf32e7520"
+    },
+    {
+      "claim_id": "8ed26608-4990-44f1-9cdc-bea138501043",
+      "result_id": "cfed55d9-afd4-4e0a-add0-937a2f1b1aaa"
+    },
+    {
+      "claim_id": "b3fc9c9b-6b67-403f-9059-ef2852e2bbae",
+      "result_id": "cfed55d9-afd4-4e0a-add0-937a2f1b1aaa"
+    },
+    {
+      "claim_id": "71f3bb49-3857-409d-9ae5-647c7345fca5",
+      "result_id": "cfed55d9-afd4-4e0a-add0-937a2f1b1aaa"
+    },
+    {
+      "claim_id": "fe4cde4b-fd02-45f7-98b0-bd98736a7d5a",
+      "result_id": "cfed55d9-afd4-4e0a-add0-937a2f1b1aaa"
+    },
+    {
+      "claim_id": "386ce058-a1db-4172-b4f8-4f64cffa2886",
+      "result_id": "cfed55d9-afd4-4e0a-add0-937a2f1b1aaa"
+    },
+    {
+      "claim_id": "b2db9448-3959-4dd4-8816-43d97dbe541e",
+      "result_id": "cfed55d9-afd4-4e0a-add0-937a2f1b1aaa"
+    },
+    {
+      "claim_id": "1c47c7f0-ec7e-49e1-8877-029ff82c9426",
+      "result_id": "c15283c5-eb2a-401e-a3d7-a45195e7c0b5"
+    },
+    {
+      "claim_id": "f132db27-6ac5-4413-9cd4-22edbfd4e987",
+      "result_id": "c15283c5-eb2a-401e-a3d7-a45195e7c0b5"
+    },
+    {
+      "claim_id": "f1e1fedb-9839-42cd-933d-59de4f086930",
+      "result_id": "c15283c5-eb2a-401e-a3d7-a45195e7c0b5"
+    },
+    {
+      "claim_id": "8ca7d1f0-a81a-46df-b6a6-7fdde6f0af81",
+      "result_id": "c15283c5-eb2a-401e-a3d7-a45195e7c0b5"
+    },
+    {
+      "claim_id": "979bb729-927f-4aeb-9377-3570a1e9d849",
+      "result_id": "c15283c5-eb2a-401e-a3d7-a45195e7c0b5"
+    },
+    {
+      "claim_id": "dbf323a1-79e2-4e2b-9652-2236480c1369",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "1a091f86-b38a-4725-977a-0af731b37b72",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "735668df-ca43-402e-a3df-1d7f3cc21398",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "b4d0117c-e05f-41d8-9d0e-4b118fc64139",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "e7120de3-f88d-4bb8-bf31-5531a3982dbc",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "a01d3e18-2d23-4e35-aaf6-3c787b35e7d2",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "abb77b84-c4f6-4cb7-8bee-b4fe499fd1a4",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "07f66bd7-bb78-4e75-99ec-b25d838a3496",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "d04c531e-b838-43f1-8f80-cbd71c707070",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "e8d1badf-c180-46b2-b9de-0859d49ce51c",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "b00534ce-ebc0-4379-a9a0-4f57731aac77",
+      "result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0"
+    },
+    {
+      "claim_id": "05bd619d-5bc1-40d5-9101-4ea7b33d8d01",
+      "result_id": "4724d232-a6c3-489a-a1e2-abf72b932a3c"
+    },
+    {
+      "claim_id": "eb7e7e3e-588f-4cc0-9ba6-6ece5f3a8e03",
+      "result_id": "4724d232-a6c3-489a-a1e2-abf72b932a3c"
+    },
+    {
+      "claim_id": "3a846f37-82f2-4ae4-8de6-ded81232c45f",
+      "result_id": "4724d232-a6c3-489a-a1e2-abf72b932a3c"
+    },
+    {
+      "claim_id": "7ba0598a-00ee-4c36-8f2b-22360aa67e67",
+      "result_id": "82f2c64b-fa91-47ff-aa17-d35c31402973"
+    },
+    {
+      "claim_id": "c774c0ad-4ba3-435a-b973-697c789cbd07",
+      "result_id": "82f2c64b-fa91-47ff-aa17-d35c31402973"
+    },
+    {
+      "claim_id": "1b78bbe3-ce46-4885-9ac7-8e3cec55c01f",
+      "result_id": "82f2c64b-fa91-47ff-aa17-d35c31402973"
+    },
+    {
+      "claim_id": "10a4e19d-5a57-480e-b09d-40e478a2d5ec",
+      "result_id": "82f2c64b-fa91-47ff-aa17-d35c31402973"
+    },
+    {
+      "claim_id": "c5effcbf-c93e-47f4-b589-ace4063988c0",
+      "result_id": "82f2c64b-fa91-47ff-aa17-d35c31402973"
+    },
+    {
+      "claim_id": "7bd2f217-e4b9-4467-af83-2314ffc99de8",
+      "result_id": "e039c196-46ad-4e2a-ace4-a28bd8022d7e"
+    },
+    {
+      "claim_id": "dedee430-7e0d-43c5-a0de-6146e374d623",
+      "result_id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c"
+    },
+    {
+      "claim_id": "c74d122b-d2ee-4d37-8261-da925664785d",
+      "result_id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c"
+    },
+    {
+      "claim_id": "b291ca30-5444-41e2-be78-6a3267bbeb04",
+      "result_id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c"
+    },
+    {
+      "claim_id": "8267db45-2c4d-49ad-87d0-229619d65a88",
+      "result_id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c"
+    },
+    {
+      "claim_id": "49749912-ba8c-4a52-ba0f-54dbc47226e6",
+      "result_id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c"
+    },
+    {
+      "claim_id": "a516cf78-efec-4f9d-b38e-c52c0c31a116",
+      "result_id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c"
+    },
+    {
+      "claim_id": "3e74f6ab-442f-4280-ad46-c02738819992",
+      "result_id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c"
+    },
+    {
+      "claim_id": "758119b4-9862-4c5f-90c6-5e3b8ba77cc2",
+      "result_id": "ae5190b6-17bb-41b2-a337-fcd262cc36d6"
+    },
+    {
+      "claim_id": "08325544-f196-41f1-b6cc-9233f96974cf",
+      "result_id": "ae5190b6-17bb-41b2-a337-fcd262cc36d6"
+    },
+    {
+      "claim_id": "1fc3d818-db85-46f5-a731-fa9f95c29aee",
+      "result_id": "2ebfda1d-7f70-4b9a-b6e7-e57444a90640"
+    },
+    {
+      "claim_id": "3f2fc106-850e-4f94-a357-ea1ee2194cc1",
+      "result_id": "2ebfda1d-7f70-4b9a-b6e7-e57444a90640"
+    },
+    {
+      "claim_id": "50fb40f0-6236-43a8-8250-22364986965e",
+      "result_id": "71c83417-7fb3-40af-9bbf-f3d2acc74804"
+    },
+    {
+      "claim_id": "3a0ee7c6-87ae-418b-8279-daabfcdeb9ac",
+      "result_id": "71c83417-7fb3-40af-9bbf-f3d2acc74804"
+    },
+    {
+      "claim_id": "004ddf0c-1768-4fe7-afc1-d250684398a5",
+      "result_id": "71c83417-7fb3-40af-9bbf-f3d2acc74804"
+    },
+    {
+      "claim_id": "1b4392be-462a-47f2-aa9d-daaa27235618",
+      "result_id": "71c83417-7fb3-40af-9bbf-f3d2acc74804"
+    },
+    {
+      "claim_id": "169f88f8-0fdc-4605-bf6c-e233dbd8edc6",
+      "result_id": "71c83417-7fb3-40af-9bbf-f3d2acc74804"
+    },
+    {
+      "claim_id": "4d4c0adf-688c-497a-ab72-dcc522ac6dd5",
+      "result_id": "71c83417-7fb3-40af-9bbf-f3d2acc74804"
+    },
+    {
+      "claim_id": "685be837-d66c-4b17-bf3c-d03d6eb20eed",
+      "result_id": "db12c646-0a47-4a6a-acec-00d2f84fcade"
+    },
+    {
+      "claim_id": "ba9df23f-d906-4fab-b9d6-1086b26bb3ec",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "78acb8a0-6b17-4ab5-b34e-e67280eb4549",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "e84b63d9-ddae-49f6-ad51-0e2ff49d0edc",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "412b2740-fbce-4d69-a91a-87ec053e354a",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "d67de697-475c-42f9-894a-78f55f3065b4",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "1cfd7074-687e-45b1-9ba8-49a4a525590d",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "7bd2f217-e4b9-4467-af83-2314ffc99de8",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "27cf249b-91a3-4eba-9f32-17650dee9e01",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "45fef3ad-7793-47b5-af6f-b16d24c97505",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "b462c682-5986-40ef-bed0-b7d54e35f726",
+      "result_id": "14e05676-0990-4449-82fa-2be51829ceed"
+    },
+    {
+      "claim_id": "f74cdf10-32f5-4406-a8b3-44738fd3bdd2",
+      "result_id": "4991f6b4-6188-4424-a6c5-417b272074bd"
+    },
+    {
+      "claim_id": "a332172b-b8c2-4397-bac3-436ed9ee515d",
+      "result_id": "4991f6b4-6188-4424-a6c5-417b272074bd"
+    },
+    {
+      "claim_id": "e02d6ade-04c3-4382-b689-5429899ea3d2",
+      "result_id": "4991f6b4-6188-4424-a6c5-417b272074bd"
+    },
+    {
+      "claim_id": "89fd586b-5330-45ec-8dd7-ca1ee7153bb8",
+      "result_id": "4991f6b4-6188-4424-a6c5-417b272074bd"
+    },
+    {
+      "claim_id": "456bcd83-e9ae-40a3-a6c9-8c1197e4c865",
+      "result_id": "4991f6b4-6188-4424-a6c5-417b272074bd"
+    },
+    {
+      "claim_id": "8ed26608-4990-44f1-9cdc-bea138501043",
+      "result_id": "9cb7e89c-3c76-4278-a597-15b9ac7f6c72"
+    },
+    {
+      "claim_id": "fe4cde4b-fd02-45f7-98b0-bd98736a7d5a",
+      "result_id": "9cb7e89c-3c76-4278-a597-15b9ac7f6c72"
+    },
+    {
+      "claim_id": "386ce058-a1db-4172-b4f8-4f64cffa2886",
+      "result_id": "9cb7e89c-3c76-4278-a597-15b9ac7f6c72"
+    },
+    {
+      "claim_id": "b2db9448-3959-4dd4-8816-43d97dbe541e",
+      "result_id": "9cb7e89c-3c76-4278-a597-15b9ac7f6c72"
+    },
+    {
+      "claim_id": "1c47c7f0-ec7e-49e1-8877-029ff82c9426",
+      "result_id": "e3c49a31-2b62-46bc-b120-6cf3f2a30ae0"
+    },
+    {
+      "claim_id": "f132db27-6ac5-4413-9cd4-22edbfd4e987",
+      "result_id": "e3c49a31-2b62-46bc-b120-6cf3f2a30ae0"
+    },
+    {
+      "claim_id": "f1e1fedb-9839-42cd-933d-59de4f086930",
+      "result_id": "e3c49a31-2b62-46bc-b120-6cf3f2a30ae0"
+    },
+    {
+      "claim_id": "8ca7d1f0-a81a-46df-b6a6-7fdde6f0af81",
+      "result_id": "e3c49a31-2b62-46bc-b120-6cf3f2a30ae0"
+    },
+    {
+      "claim_id": "979bb729-927f-4aeb-9377-3570a1e9d849",
+      "result_id": "e3c49a31-2b62-46bc-b120-6cf3f2a30ae0"
+    },
+    {
+      "claim_id": "d4a88535-a474-482b-9eaa-0697efe80336",
+      "result_id": "778ac3ae-9a6e-41b4-9749-71ca9878b538"
+    },
+    {
+      "claim_id": "d51f0e1d-aa12-443f-939f-3a7537daa4cb",
+      "result_id": "778ac3ae-9a6e-41b4-9749-71ca9878b538"
+    },
+    {
+      "claim_id": "5c1f9abd-3785-418d-9adf-3c93c302c6f2",
+      "result_id": "778ac3ae-9a6e-41b4-9749-71ca9878b538"
+    },
+    {
+      "claim_id": "47398339-ff3e-4023-b042-86749e8b19e2",
+      "result_id": "778ac3ae-9a6e-41b4-9749-71ca9878b538"
+    },
+    {
+      "claim_id": "52af8b79-127b-4e1a-a979-0a8e69d90e7c",
+      "result_id": "778ac3ae-9a6e-41b4-9749-71ca9878b538"
+    },
+    {
+      "claim_id": "dbf323a1-79e2-4e2b-9652-2236480c1369",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "1a091f86-b38a-4725-977a-0af731b37b72",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "735668df-ca43-402e-a3df-1d7f3cc21398",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "b4d0117c-e05f-41d8-9d0e-4b118fc64139",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "e7120de3-f88d-4bb8-bf31-5531a3982dbc",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "a01d3e18-2d23-4e35-aaf6-3c787b35e7d2",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "abb77b84-c4f6-4cb7-8bee-b4fe499fd1a4",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "07f66bd7-bb78-4e75-99ec-b25d838a3496",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "d04c531e-b838-43f1-8f80-cbd71c707070",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "e8d1badf-c180-46b2-b9de-0859d49ce51c",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "b00534ce-ebc0-4379-a9a0-4f57731aac77",
+      "result_id": "2cabe767-571a-4ef6-be09-ba9433481839"
+    },
+    {
+      "claim_id": "7ba0598a-00ee-4c36-8f2b-22360aa67e67",
+      "result_id": "6640e00c-6a65-4b5c-8eb6-9336254774b4"
+    },
+    {
+      "claim_id": "9938838f-35f9-4df6-89a4-268a4e4adc9a",
+      "result_id": "6640e00c-6a65-4b5c-8eb6-9336254774b4"
+    },
+    {
+      "claim_id": "c774c0ad-4ba3-435a-b973-697c789cbd07",
+      "result_id": "6640e00c-6a65-4b5c-8eb6-9336254774b4"
+    },
+    {
+      "claim_id": "1b78bbe3-ce46-4885-9ac7-8e3cec55c01f",
+      "result_id": "6640e00c-6a65-4b5c-8eb6-9336254774b4"
+    },
+    {
+      "claim_id": "10a4e19d-5a57-480e-b09d-40e478a2d5ec",
+      "result_id": "6640e00c-6a65-4b5c-8eb6-9336254774b4"
+    },
+    {
+      "claim_id": "c5effcbf-c93e-47f4-b589-ace4063988c0",
+      "result_id": "6640e00c-6a65-4b5c-8eb6-9336254774b4"
+    },
+    {
+      "claim_id": "05bd619d-5bc1-40d5-9101-4ea7b33d8d01",
+      "result_id": "fe167cbd-c607-4313-8ee0-3204a1513dbe"
+    },
+    {
+      "claim_id": "eb7e7e3e-588f-4cc0-9ba6-6ece5f3a8e03",
+      "result_id": "fe167cbd-c607-4313-8ee0-3204a1513dbe"
+    },
+    {
+      "claim_id": "3a846f37-82f2-4ae4-8de6-ded81232c45f",
+      "result_id": "fe167cbd-c607-4313-8ee0-3204a1513dbe"
+    },
+    {
+      "claim_id": "dedee430-7e0d-43c5-a0de-6146e374d623",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "c74d122b-d2ee-4d37-8261-da925664785d",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "b291ca30-5444-41e2-be78-6a3267bbeb04",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "8267db45-2c4d-49ad-87d0-229619d65a88",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "49749912-ba8c-4a52-ba0f-54dbc47226e6",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "a516cf78-efec-4f9d-b38e-c52c0c31a116",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "3e74f6ab-442f-4280-ad46-c02738819992",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "b3fc9c9b-6b67-403f-9059-ef2852e2bbae",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "71f3bb49-3857-409d-9ae5-647c7345fca5",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "de960c24-9f27-4206-9504-04db752e88e8",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "08325544-f196-41f1-b6cc-9233f96974cf",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "50fb40f0-6236-43a8-8250-22364986965e",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "3a0ee7c6-87ae-418b-8279-daabfcdeb9ac",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "004ddf0c-1768-4fe7-afc1-d250684398a5",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "1b4392be-462a-47f2-aa9d-daaa27235618",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "169f88f8-0fdc-4605-bf6c-e233dbd8edc6",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "4d4c0adf-688c-497a-ab72-dcc522ac6dd5",
+      "result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91"
+    },
+    {
+      "claim_id": "758119b4-9862-4c5f-90c6-5e3b8ba77cc2",
+      "result_id": "5d6c3446-ec98-4a03-826e-ecaf19d05f2e"
+    },
+    {
+      "claim_id": "1fc3d818-db85-46f5-a731-fa9f95c29aee",
+      "result_id": "5d6c3446-ec98-4a03-826e-ecaf19d05f2e"
+    },
+    {
+      "claim_id": "3f2fc106-850e-4f94-a357-ea1ee2194cc1",
+      "result_id": "5d6c3446-ec98-4a03-826e-ecaf19d05f2e"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2da64cc3-11dc-4ff6-a502-0ba315f1a2e3",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "4007eb79-e838-49bb-a67d-b4afb3c1d041",
+      "peer_result_id": "14e05676-0990-4449-82fa-2be51829ceed",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the core finding of strong perturbation responses across models (C1, C2, C21-C23, C62-C63). OpenEval provides detailed technical validation of computational methods and metrics, while peer reviewers emphasize the novelty and solid evidence for emergent properties. Peer review includes C3, C24, C25 which OpenEval addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "ec0e91f4-16d3-4659-a3ab-16761fea17bf",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "486d7e0b-b56f-4c7f-85bf-e9a9782ee261",
+      "peer_result_id": "14e05676-0990-4449-82fa-2be51829ceed",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates comparison with toy models (C3, C25, C36) as supported. Peer review R1 includes C3 and C25 in their broader assessment of core findings, affirming the distinction between realistic and toy models without separate detailed analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "88ff051c-586b-484c-859e-c7505eb56a71",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "d6930a2e-5134-40dc-859b-de0ac018593a",
+      "peer_result_id": "4991f6b4-6188-4424-a6c5-417b272074bd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C4, C26, C27, C70, C71). Both strongly support findings about adenylate cofactors and specific metabolites driving strong responses. OpenEval emphasizes computational validation and Sobol' sensitivity analysis, while peer reviewers explicitly affirm the discovery of metabolite-specific effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "8962ac85-05df-4c25-a580-f3c451d7f35f",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "a77317e2-a3db-4611-ac52-0b8bf32e7520",
+      "peer_result_id": "778ac3ae-9a6e-41b4-9749-71ca9878b538",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "High overlap on negative feedback and allosteric regulation (C28-C32). Both support these mechanistic findings. OpenEval provides detailed analysis of control theory basis, while peer reviewers accept the pyruvate and adenylate cofactor findings as adequately addressed. OpenEval includes C33 not mentioned in peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "af72f753-b15d-4c08-80ac-f4a261b5f297",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "cfed55d9-afd4-4e0a-add0-937a2f1b1aaa",
+      "peer_result_id": "9cb7e89c-3c76-4278-a597-15b9ac7f6c72",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support network topology findings (C5, C37-C39). OpenEval emphasizes robustness across reaction addition strategies, while peer reviewers explicitly affirm solid evidence for emergent properties related to network topology and the sparse vs. dense network distinction. Peer review includes broader contextual claims (C34-C35) in R9.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "ef2cfcce-11dc-4182-9821-9320a77bf27a",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "c15283c5-eb2a-401e-a3d7-a45195e7c0b5",
+      "peer_result_id": "e3c49a31-2b62-46bc-b120-6cf3f2a30ae0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C40-C42, C59-C60). Both support minimal model findings demonstrating cofactor dynamics drive response behavior. OpenEval provides detailed technical validation, while peer reviewers accept without challenge, implicitly validating through overall positive assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "65c552e9-e50d-4e9e-b830-f9be69e38406",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "0db00ba9-2200-4efa-8c89-c040350cdbb0",
+      "peer_result_id": "2cabe767-571a-4ef6-be09-ba9433481839",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C13-C18, C43-C45, C66-C67). Both support model descriptions and differences as valid methodological context. OpenEval emphasizes importance for establishing robustness, while peer reviewers accept as part of valuable comparative analysis without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "85c752ad-8a3d-46e6-bd3c-ff6a3bcde33c",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "4724d232-a6c3-489a-a1e2-abf72b932a3c",
+      "peer_result_id": "fe167cbd-c607-4313-8ee0-3204a1513dbe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C50-C52). Both support model modifications as necessary methodological details. OpenEval notes transparency but raises questions about biological accuracy, while peer reviewers implicitly accept through statement that concerns were adequately addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "405fccc8-abea-4d54-b63e-5bcb35239aa9",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "82f2c64b-fa91-47ff-aa17-d35c31402973",
+      "peer_result_id": "6640e00c-6a65-4b5c-8eb6-9336254774b4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "High overlap on perturbation methodology (C19, C53-C54, C68-C69). Both support the theoretical justification and perturbation strength choices. OpenEval provides detailed quantitative validation, while peer reviewers implicitly accept through lack of critique and positive assessment of systematic perturbation analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "996a47e4-20fd-4f02-8ecd-cf376baf2820",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "e039c196-46ad-4e2a-ace4-a28bd8022d7e",
+      "peer_result_id": "14e05676-0990-4449-82fa-2be51829ceed",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address nonlinear analysis necessity (C24). OpenEval provides specific computational validation showing linearized models fail, while peer reviewers include this in broader affirmation of core findings without separate detailed discussion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "d12dc201-d0d3-4fb9-966a-bd8e093616b2",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "0f7da61b-c854-4da4-9f80-b170c5a7e67c",
+      "peer_result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on background literature claims (C6-C12). OpenEval validates these as appropriately cited context, while peer review R9 groups broader set of literature claims (C6-C12, C34-C36, C47, C55-C58, C72-C73) together, accepting without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "c84f2c7a-7a21-4cd8-94bd-c9afe5dd233b",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ae5190b6-17bb-41b2-a337-fcd262cc36d6",
+      "peer_result_id": "5d6c3446-ec98-4a03-826e-ecaf19d05f2e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address speculative claims about biological implications. OpenEval rates C46-C47 as UNCERTAIN, noting lack of direct evidence for amplification hypothesis. Peer reviewers support broader implications (C46, C48-C49) as valuable future directions, accepting interpretative claims without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "a44ed935-dc08-4d22-ba2d-7530782999fb",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "2ebfda1d-7f70-4b9a-b6e7-e57444a90640",
+      "peer_result_id": "5d6c3446-ec98-4a03-826e-ecaf19d05f2e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "High overlap on practical applications (C48-C49). OpenEval supports these as appropriately cited prior work establishing relevance. Peer reviewers affirm the work provides initiative for future quantitative analysis, accepting broader implications including metabolic engineering applications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "327f94a5-032d-4460-876d-85533a42e9a8",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "71c83417-7fb3-40af-9bbf-f3d2acc74804",
+      "peer_result_id": "1d243bb3-27f8-494a-8cc7-0806a2380d91",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates experimental literature on cofactor dynamics (C55-C58, C72-C73) as supported with appropriate citations. Peer review R9 groups these with other background claims, accepting without challenge as valid biological context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    },
+    {
+      "id": "1ce651f4-d4d8-4bd0-b6b2-3905fe35d0e5",
+      "submission_id": "ce40df68-2588-44b0-9193-bdd755ff221b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "db12c646-0a47-4a6a-acec-00d2f84fcade",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval provides specific validation of mathematical definition of response coefficient \u03c7 (C65). No corresponding peer review evaluation found; this technical detail was not separately discussed by reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:54:22.750775Z"
+    }
+  ]
+}

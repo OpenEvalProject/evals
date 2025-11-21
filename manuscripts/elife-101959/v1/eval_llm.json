@@ -1,0 +1,168 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors present a novel method for extracting and separating inhibitory and excitatory synaptic conductances at high temporal resolution from intracellular recordings in rhythmically active networks. The method is based on current balance equations and linear regression, is applicable to any periodically active network where the oscillation period greatly exceeds interspike intervals and membrane time constants, and is compatible with both current-clamp and voltage-clamp protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C35-C37 collectively establish the methodological foundation and demonstrate its applicability. The theoretical framework (C35), experimental validation with both recording protocols (C37, C27), high temporal resolution (C5, C10), and broad applicability criteria (C4, C36) provide converging evidence. The method successfully extracts conductance profiles across multiple neuron types (C16-C26) with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The method achieves a time resolution of approximately 1/300 of the respiratory cycle period (roughly 10-13 ms given 3-4 s cycles) by exploiting the short membrane time constant relative to cycle period. Linear current-voltage relationships are maintained across hyperpolarized voltages (-100 to -60 mV) where voltage-gated channels are minimally active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 establish the temporal resolution through direct calculation from experimental parameters. Claims C12-C14 demonstrate that the critical assumption of linear I-V relationships holds experimentally (Figure 1\u2014figure supplement 1), and the hyperpolarization protocol effectively minimizes voltage-dependent currents. The linearity validation is essential for the method's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors characterize synaptic conductance profiles for six respiratory neuron types (pre-I/I, ramp-I, early-I, late-I, post-I, and aug-E) across 120 neurons, revealing distinct patterns of excitatory and inhibitory inputs throughout the respiratory cycle. Immunohistochemical identification confirms inhibitory (glycinergic/GABAergic) subpopulations within most electrophysiological types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 present comprehensive characterization across multiple neuron types with substantial sample sizes (n=6 to n=40 per type). The conductance profiles are internally consistent within types and corroborated by neurotransmitter phenotyping (C17, C19, C21, C24, C26) in 34 labeled neurons. The patterns are reproducible and statistically significant (Methods describe z-test with p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The inferred synaptic conductance profiles suggest that phasic excitatory and inhibitory inputs shape membrane potential trajectories and spiking patterns throughout the respiratory cycle, and are consistent with network architecture proposed in prior computational models (Smith et al., 2007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 synthesize the conductance data into functional interpretations. The consistency with prior models (C34, Figure 4\u2014figure supplement 1) provides external validation. However, these are inferences from conductance patterns rather than direct demonstrations of causality. The support is strong but indirect, relying on correlation between conductance timing and neuronal activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C29"
+    ],
+    "result": "Synaptic conductance profiles extracted from current-clamp and voltage-clamp recordings from the same neurons show very similar shapes and relationships between excitatory and inhibitory components. Conductance profiles are also consistent across different recording epochs from the same neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C29 demonstrate robustness through direct comparison of methods (n=10 neurons with both protocols, Figure 5) and temporal stability. The qualitative consistency across recording modes and epochs validates that the method captures genuine synaptic dynamics rather than artifacts. This is critical validation for the technique's reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "While absolute conductance values vary with assumed reversal potentials, the temporal shapes of synaptic conductance profiles remain consistent across different reversal potential values. Inhibitory reversal potentials varied significantly among cells (-62 to -116 mV), likely due to electrode distance from synaptic inputs, but timing estimates remain reliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 address a critical methodological concern. C28 is directly demonstrated (Figure 6), showing profile shape robustness. C30 documents empirical variability in reversal potentials. C31-C32 provide theoretical justification from prior literature (Wehr and Zador, 2003) that timing is preserved despite spatial filtering effects. This establishes that qualitative interpretations are valid despite quantitative uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C49"
+    ],
+    "result": "The linear upper boundary observed in wedge diagrams across almost all recordings indicates that respiratory interneurons receive only inhibitory input during certain phases of the cycle. This allows reliable estimation of inhibitory reversal potentials from the slope of the zero-excitation line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 describe a key feature of the analytical approach. The consistent observation of linear upper boundaries (C50) across the dataset validates the theoretical decomposition (C49) and enables reversal potential estimation. This is both a methodological validation and a biological finding about phase-specific input patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C6",
+      "C7",
+      "C41",
+      "C42"
+    ],
+    "result": "The respiratory cycle consists of three main phases (inspiratory, post-inspiratory, and late-expiratory), generated by interacting pontine-medullary circuits in the brainstem. The preB\u00f6tC contains neurons critical for inspiratory rhythm generation, while the B\u00f6tC contains expiratory neurons that interact with preB\u00f6tC circuits via inhibitory connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C15, C41-C42 establish the biological context, all supported by extensive prior literature citations (Feldman and Smith 1995; Richter and Smith 2014; Lindsey et al. 2012; Smith et al. 2013). These are well-established facts in respiratory neurobiology that provide the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study used strict quality criteria for data inclusion (coefficient of variation <10%, at least 3 current injection steps maintained for \u22655 cycles each) and employed technical innovations (Windkessel chamber) to optimize recording stability in the in situ perfused rat brainstem-spinal cord preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C43-C45 describe methodological details and quality control measures. These are straightforward descriptions of experimental procedures with clear acceptance criteria. The technical innovation (C45) addresses a known challenge in sharp electrode recordings. Ethical approval is documented (C43).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Rhythmic neural circuits generate spatiotemporal patterns of activity through synaptic interactions between neuronal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general statement about rhythmic circuits supported by citation to established literature (Buzs\u00e1ki, 2006). This provides background context rather than a novel finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The synaptic interaction profiles characterized are specific to the in situ brainstem-spinal cord preparation and cannot account for supra-brainstem and peripheral inputs present in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 appropriately acknowledges the limitations of the reduced preparation. This is a valid caveat supported by citations (Paton et al. 2022; Lindsey et al. 2012; Smith et al. 2013) discussing differences between in situ and in vivo systems. The authors correctly note this limits generalization to intact systems.",
+    "result_type": "MINOR"
+  }
+]

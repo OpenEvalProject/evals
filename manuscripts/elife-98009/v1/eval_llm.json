@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C83"
+    ],
+    "result": "IKK2 is a dual-specificity kinase that autophosphorylates at tyrosine residues in addition to serine residues. Tyrosine autophosphorylation is ATP-dependent, inhibited by kinase inhibitors, absent in the K44M mutant, and requires prior phosphorylation of activation loop serines S177/S181.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence support dual specificity: Western blots with anti-phosphotyrosine antibodies (C18, Figure 2A), inhibitor sensitivity (C19-C20), urea sensitivity (C21), and dependence on activation loop serine phosphorylation (C25-C26). The claim that both activities occur in the same active site (C22) is supported by similar inhibitor profiles. The C-terminal NBD is not required (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Y169, located at the DFG+1 position in IKK2, was identified as the prominent tyrosine autophosphorylation site by mass spectrometry. Structural analysis suggests Y169 is well-positioned to accept phosphate from ATP intramolecularly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Mass spectrometry directly identifies Y169 as the prominent autophosphorylation site (C27, Figure 3\u2014figure supplement 1A). Structural analysis and comparison with PKA support the positioning claim (C28-C29). The DFG+1 position is known to be important for substrate specificity (C31, cited).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The Y169F mutation severely reduces IKK2 activity, particularly toward S36 of I\u03baB\u03b1, while activation loop serine phosphorylation remains largely intact. This suggests Y169 phosphorylation is necessary but activation loop phosphorylation alone is insufficient for full IKK2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In vitro kinase assays show Y169F has severely reduced activity (C39, Figure 3E), with differential effects on S32 vs S36 phosphorylation (C40, Figure 3F). Cell-based assays confirm reduced activity upon TNF-\u03b1 stimulation (C42, Figure 3G). The observation that activation loop phosphorylation is only marginally affected (C43) supports the necessity-but-not-sufficiency interpretation (C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C101"
+    ],
+    "result": "The K44M mutation abolishes specific phosphorylation of I\u03baB\u03b1 at S32/S36 but retains kinase activity toward other sites, particularly the C-terminal PEST region. K44M also lacks autophosphorylation at both serines and tyrosines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple assays demonstrate that K44M lacks S32/S36 specificity (C33, Figure 3D) but retains activity toward I\u03baB\u03b1 (C32, Figure 3C), particularly the PEST region (C34-C35). Mass spectrometry confirms no contaminating kinase (C37). The K44M mutant also lacks tyrosine autophosphorylation (C20, Figure 2D) and activation loop serine phosphorylation (C13, Figure 3\u2014figure supplement 1D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C94",
+      "C98"
+    ],
+    "result": "Autophosphorylated IKK2 can transfer phosphate to I\u03baB\u03b1 S32/S36 in the absence of ATP when ADP is present. This phosphotransfer is specific to S32/S36, not the PEST region, and requires Y169. The phosphotransfer represents a single turnover event and is not inhibited by AMPPNP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Radioactive phosphotransfer assays with nucleotide-free P-IKK2 demonstrate transfer to I\u03baB\u03b1 enhanced by ADP (C70, Figure 5B). Cold ATP experiments confirm the finding (C72, Figure 5E). Controls rule out ATP contamination (C74, C75). Specificity for S32/S36 is shown (C76, Figure 6A), and Y169F cannot transfer phosphate (C77). The experimental design clearly represents single turnover (C98). However, the mechanism by which ADP facilitates transfer remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Molecular dynamics simulations show that phosphorylation at S177/S181 and Y169 progressively stabilizes IKK2, with p-IKK2 (S177/S181 phosphorylated) adopting an active conformation with proper R- and C-spines, while P-IKK2 (S177/S181/Y169 phosphorylated) shows structural distortions including \u03b1C-helix displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MD simulations show progressive energy stabilization (C46, Figure 4A), confirmed by DSC experiments (C47, Figure 4\u2014figure supplement 1A). The p-IKK2 structure shows features of active kinases (C51, C53, C54, Figure 4C-D), while P-IKK2 shows \u03b1C-helix distortion (C52) and discontinuous R-spine (C61). The counter-intuitive RMSD result (C49) is interpreted as increased internal motion (C50). These computational results are internally consistent and supported by experimental DSC data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Molecular docking and binding free energy calculations suggest that P-IKK2 preferentially binds ADP over ATP due to narrowing of the ATP-binding pocket, while p-IKK2 binds both nucleotides comparably. In ATP-bound p-IKK2, the terminal phosphate is positioned near Y169-OH, consistent with autophosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple docking programs and MM-PBSA calculations consistently show P-IKK2 has unfavorable ATP binding but favorable ADP binding (C55-C57, Figure 4\u2014figure supplement 1E-F). Structural analysis explains this through pocket narrowing and glycine-rich loop clashes (C60, Figure 4G). The positioning of ATP's terminal phosphate near Y169 in p-IKK2 (C58, Figure 4E) supports the autophosphorylation mechanism. These computational predictions are consistent with experimental phosphotransfer data showing ADP dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C106"
+    ],
+    "result": "The authors propose that IKK2 achieves substrate specificity through an unusual mechanism involving tyrosine autophosphorylation at Y169, which serves as a phosphoenzyme intermediate to relay phosphate to S32 of I\u03baB\u03b1, with ADP facilitating the conformational state required for this transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data support tyrosine autophosphorylation (C2, C27), its requirement for activity (C3, C42), and phosphotransfer in the presence of ADP (C5, C70-C72), the proposed mechanism (C82, C87-C88, C91) remains speculative. The claim that phosphate transfers from Y169 to S32 (C78, C82) is inferred but not directly demonstrated. The role of ADP as a conformational facilitator (C89) is plausible but not proven. Key mechanistic details\u2014such as whether ADP directly participates in phosphotransfer or only induces conformational changes\u2014remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Purified recombinant IKK2 undergoes time-dependent autophosphorylation in the presence of ATP. NEMO enhances autophosphorylation specificity but does not affect substrate phosphorylation efficiency. Deletion constructs lacking the C-terminal region retain both autophosphorylation and substrate phosphorylation activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Time-dependent autophosphorylation is directly shown (C10, Figure 1C). NEMO's effect on producing a sharper band (C11, Figure 1D) suggests enhanced specificity, though this is somewhat inferential. Controls with K44M mutant (C13) and inhibitor VII (C15) confirm autophosphorylation is self-catalyzed. Deletion constructs retain activity (C16, Figure 1F), suggesting uncharacterized autophosphorylation sites (C17).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C14",
+      "C31",
+      "C104",
+      "C105"
+    ],
+    "result": "Background claims about IKK2 function in NF-\u03baB signaling: IKK2 phosphorylates I\u03baB\u03b1 at S32/S36 in response to inflammatory signals, marking it for degradation. Mutation of these sites creates a super-repressor. IKK2 shows exquisite specificity, failing to phosphorylate even threonine substitutions at these positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the field, supported by citations (C8) and general knowledge (C1, C7, C9). They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Tyrosine phosphorylation of IKK2 is only observed upon ATP treatment of purified proteins and is absent in crystal structures, suggesting either efficient cellular phosphatases or that phosphotyrosine serves as a transient phosphate sink.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that tyrosine phosphorylation is only seen with ATP treatment (C66) is supported experimentally. However, the absence in crystal structures (C67) could have multiple explanations (long crystallization time, phosphatase activity during purification, etc.). The speculation about phosphotyrosine as a transient sink (C68) is interesting but remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C90",
+      "C92"
+    ],
+    "result": "Supporting context from literature: IKK2 phosphorylates I\u03baB\u03b1 sequentially (S32 then S36), IKK activity correlates with signal strength, and ADP acts as a stimulator for IRE1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are cited facts from the literature (C80, C90, C92) that provide context for interpreting the current findings. They are not novel results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C107"
+    ],
+    "result": "Discussion and speculation about the broader significance of findings: IKK2 may be unique among metazoan kinases in using a phosphoenzyme intermediate, the phosphorelay may underlie digital NF-\u03baB activation, and this mechanism may represent a new aspect of eukaryotic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are primarily speculative claims about the broader significance and implications of the findings (C85, C86, C93, C95, C96, C102, C103, C107). While the speculation is reasonable given the data, these interpretations go beyond what is directly demonstrated. The comparison to histidine kinases (C85, C97) and two-component systems (C96) is interesting but remains to be validated.",
+    "result_type": "MINOR"
+  }
+]

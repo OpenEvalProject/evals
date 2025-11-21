@@ -1,0 +1,163 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "SpikeMAP provides an automated spike sorting pipeline for high-density multielectrode arrays that uses filtering, threshold-based spike detection, PCA and k-means clustering on individual channels, LDA for cluster validation, spline interpolation for waveform fitting, and spatial localization methods to isolate single neurons from 4096-channel recordings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises substantial concerns about the spike sorting methodology, questioning the use of k-means with k=2 as 'a really strong assumption' and noting that PCA on single channels is 'a bit simplistic and not really matching state-of-the-art solutions.' Reviewer 2 emphasizes that 'the algorithmic part of the paper is not really new' and requests benchmarking against existing sorters like Kilosort. Reviewer 1 acknowledges the automation as a strength but does not validate the sorting accuracy beyond the optogenetic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C83",
+      "C118",
+      "C119"
+    ],
+    "result": "SpikeMAP classifies neurons as excitatory or inhibitory based on spike waveform features (full width at half-maximum and peak-to-peak duration), identifying 5.25% of neurons as inhibitory (consistent with expected PV interneuron percentages), with inhibitory cells showing higher Fano factors and rapid spatial decay of pairwise correlations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 acknowledges that spike width-based classification 'has been around for many years' but notes the validation is 'a good start' requiring 'further validation on other neuron types.' Reviewer 2 questions whether the classification truly brings 'anything new to state of the art solutions' and requests comparison with other sorters on the same ground truth data. The editor notes the work is 'solid' but both reviewers indicate the validation is incomplete without broader benchmarking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors validated a step-function opsin protocol for use with CMOS-based multielectrode arrays, demonstrating that blue light activation of PV interneurons produces sustained IPSCs in pyramidal neurons that can be deactivated with yellow light, with optimal inter-trial intervals of \u2265120 seconds to prevent desensitization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 describes the optogenetic validation as 'excellent validation experiments' and states the ground truth approach 'inspiring a degree of confidence.' Reviewer 2 acknowledges 'the GT recordings with optogenetic activation of the cells, based on the opsins is interesting and might provide useful data.' Both reviewers accept this methodological contribution without substantive critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C82"
+    ],
+    "result": "Optogenetic validation experiments showed that 56% of waveform-classified inhibitory neurons displayed light-induced firing rate increases during PV interneuron activation (with synaptic blockers), while only 8% of waveform-classified excitatory neurons showed such increases, demonstrating that waveform-based classification can identify PV interneurons with moderate accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes this validation 'has been validated on PV interneurons, inspiring a degree of confidence' but emphasizes 'this is a good start, and further validation on other neuron types could increase that confidence.' Reviewer 2 questions whether the 56% success rate is sufficient, stating 'I would still need to be convinced that the sorting pipelines is bringing something, on its own' and requests comparison with other methods. The moderate classification accuracy (56%) raises questions about reliability that reviewers indicate need further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "SpikeMAP uses a 250 \u03bcm exclusion radius around detected neurons to prevent double-counting, identifies the soma location as the channel with greatest negative deflection (corresponding to the axon initial segment), and validates spatial localization through voltage decay patterns and center-of-mass analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises concerns about double-counting, noting 'action potentials traveling down axons will exhibit a triphasic waveform that is different from the biphasic waveform that appears near the cell body, but these two signals will still be from the same neuron' and states 'I did not see anything that would directly address this situation.' Reviewer 2 questions the choice of center-of-mass over 'other methods such as monopolar triangulation or grid-based convolution' which 'might have better performances.' These methodological choices remain inadequately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C114"
+    ],
+    "result": "SpikeMAP uses piecewise cubic spline interpolation at 90 kHz to provide more precise waveform descriptions from signals recorded at 18 kHz.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 questions the rationale for spline interpolation, asking 'What's special with the value of 90kHz for a signal recorded at 18kHz? What is the gain with spline enhancement compared to without?' and requests demonstration that 'it has a key impact on the distinction of Excitatory vs. Inhibitory cells.' The authors do not provide comparative data showing the benefit of this approach, leaving its contribution unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C18",
+      "C19",
+      "C21",
+      "C81"
+    ],
+    "result": "Existing spike sorting methods lack the ability to reliably identify cell types in a biologically validated fashion at scale, and there exist no large-scale validation efforts showing that extracellular waveforms can distinguish cell types on high-density arrays.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 affirms 'there is a need for spike sorting packages that can take advantage of high-density electrode arrays' and acknowledges the gap in validated cell-type identification. Reviewer 2 agrees that 'the GT recordings...is interesting and might provide useful data to quantify how good spike sorting pipelines are' to discriminate cell types. Both reviewers accept the motivation for the work without challenging these background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C73",
+      "C74",
+      "C88"
+    ],
+    "result": "The authors acknowledge potential limitations including that the slight reduction in excitatory neuron firing may reflect GABAB-mediated inhibition, that viral targeting captures only a subset of PV interneurons, that non-PV inhibitory neurons may be misclassified, and that distinguishing all inhibitory cell types based on waveforms alone may not be achievable.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly requests 'similar experiments could be conducted for somatostatin and vasoactive intestinal peptide neurons' acknowledging the limitation to PV validation. Reviewer 2 notes the authors 'should have been more carefully compared to existing solutions.' Both reviewers implicitly accept these limitations as reasonable caveats, with Reviewer 1 stating the current validation 'is a good start' that needs extension.",
+    "result_type": "MINOR"
+  }
+]

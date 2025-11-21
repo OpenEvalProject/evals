@@ -1,0 +1,139 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript provides background on bacterial persisters and their clinical significance, contrasting traditional views of dormancy with recent evidence of metabolic heterogeneity. It also draws parallels to tumor cell metabolism, noting that non-proliferating tumorigenic persisters rely on energy metabolism rather than aerobic glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C7 are all supported by appropriate citations to prior literature. These claims establish the scientific context and motivation for the study, accurately representing the current state of knowledge regarding persister cells and metabolic reprogramming in both prokaryotic and eukaryotic systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Deletion of cyaA reduces intracellular cAMP, while deletion of crp increases cAMP due to negative feedback regulation. All three strains (WT, \u0394crp, \u0394cyaA) enter stationary phase around 5 hr, and cAMP levels increase in WT during the transition to stationary phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8\u2013C11 are supported by experimental data (Figures 1\u2014figure supplements 1\u20134) and align with known regulatory mechanisms. The observed cAMP dynamics are consistent with the feedback regulation of the Crp/cAMP complex on cyaA expression, and growth curves confirm comparable entry into stationary phase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "WT cells show increased ampicillin and ofloxacin persisters in late stationary phase, which is absent in \u0394crp and \u0394cyaA mutants. Complementation with crp restores persister levels. Gentamicin eliminates all persisters in all strains. The Crp/cAMP effect on persistence is also observed in the HipA7 background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12\u2013C15 are well-supported by experimental data (Figure 1 and supplements). The complementation experiment (C13) provides genetic validation. The gentamicin result (C14) is consistent across strains and conditions. The HipA7 data (C15) extend the findings to a high-persister background, strengthening the conclusion that Crp/cAMP regulates persistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Metabolomics analysis reveals that WT cells in late stationary phase maintain energy metabolism while downregulating anabolic pathways. Disruption of the Crp/cAMP complex leads to downregulation of energy metabolism and upregulation of anabolic metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16\u2013C18 are supported by untargeted metabolomics data (Figure 2). Hierarchical clustering confirms reproducibility (C16). Pathway enrichment analysis supports the metabolic shifts described (C17, C18). The use of multiple biological replicates and appropriate statistical methods strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Proteomics analysis shows that \u0394crp mutants upregulate anabolic pathways (cell wall, cell cycle, division) and downregulate energy metabolism pathways (TCA cycle, ETC, glycolysis). Key TCA cycle and ETC proteins are specifically downregulated in the mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C22 are supported by proteomics data (Figure 3 and supplement). Hierarchical clustering confirms consistency (C19). STRING pathway enrichment analysis identifies upregulated (C20) and downregulated (C21) pathways. Specific proteins involved in energy metabolism are identified (C22), providing molecular-level validation of the metabolomics findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "WT cells in late stationary phase contain a non-dividing subpopulation absent in mutants. WT exhibits a longer lag phase and slower initial growth compared to mutants, while mutants show increased doubling time in exponential phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23\u2013C26 are supported by flow cytometry data using an mCherry dilution assay (Figure 4). The presence of non-dividing cells in WT but not mutants (C23, C24) correlates with persister levels. Growth kinetics (C25, C26) are consistent with the metabolic states inferred from omics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "WT cells show higher SQR promoter activity and redox activity than mutants in stationary phase. Ampicillin-tolerant WT cells maintain elevated RSG levels, indicating active energy metabolism. WT exhibits higher VBNC levels than mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27\u2013C30 are supported by reporter assays (C27, Figure 5A), RSG dye assays (C28, C29, Figure 5B, D), and VBNC quantification (C30, Figure 5\u2014figure supplement 3). These functional assays validate the omics findings and demonstrate that persister cells maintain metabolic activity. The distinction between persisters and VBNC cells is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "High-throughput screening of the Keio collection and validation with newly generated knockouts confirm that mutations in TCA cycle, ETC, ATP synthase, and fermentation pathways reduce antibiotic tolerance, while glycolysis and pentose phosphate pathway deletions do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31\u2013C32 are supported by screening data (Figure 5E, Supplementary file 4) and validation experiments (Figure 5F). The authors appropriately acknowledge potential errors in the Keio collection and validate key findings with independently generated knockouts. The consistency between screening and validation strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The Crp/cAMP complex sustains an active respiratory state while downregulating anabolic pathways in persister cells. This respiratory state is essential for persister survival. Persisters exhibit reduced but active energy metabolism compared to exponential-phase cells, with the TCA cycle, ETC, and ATP synthase playing critical roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33\u2013C38 represent the main conclusions of the study, integrating findings from metabolomics, proteomics, and genetic screens. These claims are well-supported by the convergence of multiple lines of evidence (C33, C36, C38). The functional importance is demonstrated by genetic perturbations (C34). The upregulation of anabolic pathways in mutants (C35) and the reduced but active metabolism of persisters (C37) are supported by the data presented.",
+    "result_type": "MAJOR"
+  }
+]

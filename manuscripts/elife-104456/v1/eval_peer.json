@@ -1,0 +1,156 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The evolutionary algorithm optimization yielded two models (constrained and unconstrained) with similar chemotaxis indices (0.877 vs 0.855). The constrained model successfully produced inhibitory AIY\u2013AIZ connections and inhibitory ASER\u2013AIY connections, while the unconstrained model had excitatory ASER\u2013AIY connections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers affirm the computational modeling approach and its findings. The editor states the work 'demonstrates the possibility of a transition between excitatory and inhibitory signaling at the ASER-AIY synapse,' and the anonymous reviewer highlights 'the explicit demonstration of computational neurobehavioral modeling and evolutionary algorithms' as a key strength. No concerns were raised about these optimization results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The constrained model reproduced experimentally observed neuronal activity patterns where ASER and AIZ activation are synchronized, while the unconstrained model exhibited inverse AIZ activity (hyperpolarization instead of depolarization in response to salt concentration decreases).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept these findings as part of the model's successful replication of experimental observations. The editor notes the work 'demonstrates the possibility of a transition' in signaling, and the anonymous reviewer states 'the model successfully replicates some behaviors observed in previous experiments.' The comparison between constrained and unconstrained models is treated as valid evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The model worm exhibits klinotaxis behavior, continuously turning toward increasing salt concentration, as evidenced by positive correlations between curving rate and both bearing angle and normal gradient of salt concentration.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept the model's ability to reproduce klinotaxis behavior. The editor describes the work as investigating 'the synaptic mechanism for memory-dependent klinotaxis,' and the anonymous reviewer notes the model 'demonstrates how a single neuron, ASER, can change its signaling behavior' to enable navigation. No concerns were raised about the klinotaxis analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C34",
+      "C35"
+    ],
+    "result": "The model proposes that salt concentration memory is encoded as basal glutamate release from ASER and decoded by differential sensitivity of GLC-3 (inhibitory) and MGL-1 (excitatory) receptors on AIY, with receptor saturation states determining whether ASER\u2013AIY transmission is inhibitory or excitatory depending on cultivation history.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge this as a key proposal, the anonymous reviewer explicitly notes 'some key assumptions of the work still need to be verified by biological validation of further experiments.' The editor describes these as 'solid findings' that 'offer a proposal,' suggesting acceptance of the computational demonstration but implicit recognition that experimental validation is needed for the mechanistic claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The optimized network with excitatory ASER\u2013AIY connections (replacing inhibitory ones) successfully reproduced salt preference behavior of well-fed individuals cultivated at lower salt concentrations than the test environment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this as part of the model's successful replication of memory-dependent behavior. The editor notes the authors 'demonstrate the possibility of a transition between excitatory and inhibitory signaling,' and the anonymous reviewer states the model enables the worm to 'navigate toward or away from salt gradients based on prior exposure.' This bidirectional regulation is treated as a validated finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C38"
+    ],
+    "result": "Inhibition of SMB motor neuron activity (either through reduced synaptic connections or reduced bias terms) suppressed salt preference behavior, indicating that worms can switch between dwelling and dispersing behaviors by modulating only the most downstream motor neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept these findings as part of the model's demonstration of behavioral regulation. The anonymous reviewer notes the model shows 'how a simple sensorimotor circuit... enables it to navigate salt gradients,' and no concerns were raised about the SMB inhibition results. The consistency with experimental data (Figure 6a) is implicitly accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "result": "The model reveals that inhibitory ASER\u2013AIY connections are essential for synchronizing AIZ activation with ASER activity, that the circuit downstream of ASE functions as a klinotaxis module, and that this architecture enables simple and efficient bidirectional regulation of salt preference behavior.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers affirm these mechanistic insights. The editor describes the findings as 'solid' and notes they 'offer a proposal for how synaptic plasticity plays a role in sensorimotor navigation.' The anonymous reviewer highlights 'the explicit demonstration of... synaptic plasticity in a minimal neural circuit' as a key strength. These circuit-level conclusions are treated as valid contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The principle of motor response dependence on motor oscillation phase appears to be a convergent solution for taxis and navigation across species, with analogous mechanisms observed in Drosophila chemotaxis and zebrafish phototaxis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge this comparative claim. The editor notes the findings 'will be of interest to worm biologists and theoretical neuroscientists,' implicitly accepting the broader relevance. The anonymous reviewer does not raise concerns about the cross-species comparison, and the claim is supported by citations to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background claims about C. elegans neurobiology, salt chemotaxis behavior, neural circuit anatomy, receptor properties, and methodological approaches for deriving the minimal circuit from the connectome.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are not questioned by reviewers and serve as the established foundation for the study. The editor and anonymous reviewer both accept the biological context and prior experimental findings as valid starting points. The anonymous reviewer notes the study uses 'previously described neural connections,' affirming acceptance of the anatomical and physiological background.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C57",
+      "C58",
+      "C65"
+    ],
+    "result": "A substantial fraction (approximately 20-30%) of pancreatic ductal adenocarcinomas (PDACs) exhibit marked overexpression of MCT1, as demonstrated by analysis of public genomic databases (TCGA, CCLE, GTEx) and immunohistochemistry on tissue microarrays showing 56% of 95 PDAC samples were MCT1-positive, with varying staining intensities. MCT1 expression is barely detectable in normal pancreas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, C57, C58, and C65 collectively demonstrate MCT1 overexpression in a significant subset of PDACs through multiple independent lines of evidence: RNA-seq database analysis (C1, C25), tissue microarray immunohistochemistry (C57, C58), and comparison with normal pancreas (C65). The convergence of genomic and protein-level data from different sources provides strong support. However, there is a discrepancy between the ~20-25% from RNA-seq (C25) and 56% IHC positivity (C57), which may reflect differences in methodology, thresholds, or sample populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Five PDAC cell lines (MIA PaCa-2, PSN-1, Panc 02.13, AsPC-1, BxPC-3) were sensitive to 3BP with IC50s of 24-40 \u00b5M, while CFPAC-1 was highly resistant (IC50 >650 \u00b5M). Sensitivity to 3BP correlated with MCT1 expression levels at both RNA and protein levels, but not with GLUT1 or MCT4 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide consistent evidence linking 3BP sensitivity to MCT1 expression across multiple PDAC cell lines. The data show clear correlation between MCT1 expression (RNA and protein) and drug sensitivity, with the resistant line CFPAC-1 having much lower MCT1 expression. The lack of correlation with other transporters (C29) strengthens the specificity of the MCT1-3BP relationship. The use of multiple cell lines and both RNA and protein measurements provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C21"
+    ],
+    "result": "Genetic inactivation of MCT1 in MIA PaCa-2 cells confers complete resistance to 3BP, demonstrating that MCT1 expression is essential for 3BP activity. MCT1 knockout cells grew normally in the absence of drug but were completely resistant to 3BP at concentrations that eliminated wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C21 provide strong genetic evidence for MCT1-dependent 3BP activity. The CRISPR knockout approach (C31) with proper controls showing normal growth (C32) demonstrates specificity. The co-culture experiments with fluorescently labeled cells provide clear visual and quantitative evidence. This genetic validation is critical for establishing causality rather than just correlation, and is supported by prior literature (C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C5"
+    ],
+    "result": "ME3BP-7, a microencapsulated formulation of 3BP using succinyl-substituted \u03b2-cyclodextrin (3.4 succinyl groups per cyclodextrin at 1.2:1 molar ratio), dramatically improves serum stability compared to free 3BP. While free 3BP lost 90% activity within 30 minutes of serum exposure, ME3BP-7 retained >70% activity after 8 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 and C5 provide comprehensive evidence for improved serum stability through systematic optimization of the encapsulation formulation. The comparison of different cyclodextrin modifications (succinyl vs. hydroxypropyl), optimization of substitution degree, and molar ratios demonstrates rigorous formulation development. The serum stability assays using cell toxicity as a functional readout provide biologically relevant measurements. The dramatic improvement in stability (90% loss in 30 min for free 3BP vs. <30% loss in 8 hr for ME3BP-7) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C4"
+    ],
+    "result": "ME3BP-7 retains both MCT1-specificity and cytotoxic activity against PDAC cells in vitro, with parental MIA PaCa-2 cells remaining sensitive while MCT1 knockout cells are resistant, and showing IC50s of 24-40 \u00b5M across multiple PDAC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C4 demonstrate that the encapsulation process preserves both the targeting specificity and cytotoxic potency of 3BP. The use of isogenic cell lines (WT vs. MCT1 KO) provides strong evidence for maintained specificity (C39), while the IC50 values across multiple cell lines (C4) demonstrate preserved potency. This is critical for establishing that the formulation improvement doesn't compromise the drug's mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C72"
+    ],
+    "result": "ME3BP-7 exhibits uniquely rapid cytotoxic action compared to standard-of-care chemotherapies, causing cell death of MCT1-expressing cells within 30 minutes of exposure while sparing MCT1 knockout cells. In contrast, FOLFIRINOX agents and gemcitabine showed no differential effect on wild-type versus knockout cells and only decreased proliferation rather than causing cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C72 provide strong evidence for rapid, MCT1-specific cell killing through well-designed washout experiments. The use of co-cultures with fluorescently labeled WT and KO cells allows direct comparison and demonstrates specificity. The comparison with standard chemotherapies (C42, C43) provides important context showing ME3BP-7's unique mechanism and kinetics. The time-lapse imaging provides robust temporal data. However, the claim of being \"uniquely fast-acting\" (C72) is somewhat inferential as comprehensive comparison with all possible drugs wasn't performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C8"
+    ],
+    "result": "ME3BP-7 demonstrates manageable toxicity in vivo, with no overt toxicity observed after 5 weeks of treatment at 33 mg/kg, while free 3BP at the same dose caused severe toxicity and death in two-thirds of mice after only two doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C46, and C8 provide clear evidence of improved safety profile for ME3BP-7 versus free 3BP. The direct comparison at the same dose (33 mg/kg) is particularly compelling, showing dramatic reduction in acute toxicity. The monitoring of body weight and absence of adverse effects over 4-5 weeks provides evidence for tolerability. However, the toxicity assessment could be more comprehensive - histopathological examination is mentioned but detailed results are not fully presented in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C6"
+    ],
+    "result": "Systemically administered ME3BP-7 significantly reduced pancreatic cancer growth in the Panc 02.13 orthotopic xenograft model, with near-complete abrogation of tumor growth (p<0.01) and significantly decreased residual tumor weight (p=0.01) after 4 weeks of treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, and C6 demonstrate significant anti-tumor efficacy in a relevant preclinical model. The use of bioluminescence imaging for longitudinal monitoring and tumor weight measurements at endpoint provide complementary evidence. Statistical significance is properly reported with appropriate tests (one-way ANOVA, Mann-Whitney U test). The Panc 02.13 model expresses high levels of MCT1 (137 TPM), making it an appropriate model for testing MCT1-targeted therapy. However, the study design details (randomization, blinding, sample sizes) are not fully specified in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C7"
+    ],
+    "result": "ME3BP-7 significantly reduced metastatic spread in the TM01212 patient-derived xenograft model. While all control animals developed lung and liver metastases, only 3/7 treated mice had any distant metastases, with significantly decreased number and size (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C7 provide strong evidence for anti-metastatic activity in a clinically relevant PDX model that mimics human PDAC behavior. The TM01212 model expresses moderate MCT1 levels (37 TPM) and develops spontaneous metastases, making it appropriate for testing. The dramatic reduction in metastatic burden (all controls vs. 3/7 treated) with statistical significance is compelling. However, the mechanism of metastasis reduction (prevention of dissemination vs. elimination of micrometastases) is not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C62"
+    ],
+    "result": "Histological evaluation of major organs from ME3BP-7-treated mice revealed no pathological changes of significance, with no discernible damage in colon or uterus (tissues with relatively high MCT1 expression in normal tissues) after 4 weeks of treatment, while pancreatic tumors showed extensive necrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C62 provide important safety data showing selective tumor toxicity without damage to normal tissues. The specific examination of colon and uterus (C62) is particularly relevant given these tissues have the highest normal MCT1 expression (as established in C60, C61). The contrast between tumor necrosis and normal tissue preservation supports therapeutic window. However, the evaluation is described as showing \"no pathological changes of significance,\" which is somewhat subjective without detailed histopathological scoring criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Despite focal (non-uniform) MCT1 protein expression in TM01098 xenografts, ME3BP-7 treatment still resulted in significantly slower tumor growth (p<0.01 by ultrasound) and reduced tumor weight (p=0.0028) compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 demonstrate efficacy even in tumors with heterogeneous MCT1 expression, which is clinically relevant as tumor heterogeneity is common. The discordance between high RNA (96 TPM) and focal protein expression (C54) is interesting and suggests post-transcriptional regulation. The significant growth inhibition despite focal expression suggests either sufficient drug penetration to MCT1-positive regions or bystander effects. Statistical significance is properly reported with appropriate tests. However, the reduced efficacy compared to uniform MCT1-expressing models is not quantitatively compared.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Normal tissues express MCT1 at levels below the threshold required for 3BP sensitivity (~50 TPM), with the highest expression in colon, testis, and uterus (median 32-38 TPM). MCT1 RNA levels were consistent with immunohistochemistry patterns across normal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide important data establishing a potential therapeutic window based on differential MCT1 expression between tumors and normal tissues. The analysis of 51 normal tissue types from GTEx provides comprehensive coverage. The correlation between RNA and protein levels (C61) validates the RNA-seq data. The identification of a ~50 TPM threshold (C59) is based on cell line sensitivity data, providing a rational basis. However, the threshold is described as \"approximate\" and individual variation in normal tissues could affect safety margins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Despite striking in vitro effects, ME3BP-7 did not induce true regressions of established tumors in mice, though tumor growth was slowed and metastases were markedly reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 provides an honest assessment of the limitations of the in vivo efficacy data. The distinction between growth inhibition and true regression is important for setting realistic expectations. This is supported by the tumor growth curves and weight data from the in vivo studies (C47, C48, C55, C56) which show significant inhibition but not elimination of tumors. The acknowledgment of this limitation strengthens the overall credibility of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C66"
+    ],
+    "result": "Biochemical inhibitors of MCT1, specifically AZD3965, have not shown benefit in clinical trials for solid tumors, despite MCT1 being a promising biological target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, and C66 establish the clinical context and unmet need that motivates the ME3BP-7 approach. The claims are supported by citations to clinical trial results. This provides important rationale for why an alternative approach to targeting MCT1 (using a cytotoxic substrate rather than a transporter inhibitor) is needed. However, the specific reasons for AZD3965 failure are not detailed, which would strengthen the argument for the alternative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "3-Bromopyruvate (3BP) is a cytotoxic alkylating agent whose activity depends on MCT1-mediated cellular uptake, but its clinical development has been hampered by poor serum stability due to alkylation of plasma proteins, unfavorable pharmacokinetics, and excessive toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C23 provide comprehensive background on 3BP, establishing both its mechanism and the challenges that ME3BP-7 aims to address. The claims are well-supported by citations to prior literature. The mechanistic understanding (alkylation of proteins, C20, C23) explains the serum instability problem that the encapsulation strategy addresses. The dependence on MCT1 (C21) is supported by both literature and the experimental data in this study. This background effectively motivates the formulation development work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Previous work demonstrated that microencapsulation of 3BP reduces its toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 cites prior work (Chapiro et al., 2014) establishing proof-of-concept for the encapsulation approach. This provides important context showing the current work builds on and significantly advances a previously established strategy. The citation to prior work is appropriate for this background claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "ME3BP-7 differs from antibody-drug conjugates in being a small molecule where the same entity mediates both targeting (via MCT1 transport) and toxicity (via alkylation), potentially reducing production challenges and cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 provide important context positioning ME3BP-7 relative to other targeted therapeutic approaches. The distinction between ME3BP-7 (single molecule for targeting and killing) and ADCs (separate targeting and cytotoxic moieties) is valid and well-explained. The potential advantages in terms of production and cost are reasonable inferences based on the molecular properties, though not directly demonstrated in this study. The comparison helps clarify the novelty of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "MCT1 is overexpressed in subsets of mesotheliomas, leukemias, and several other tumor types beyond pancreatic cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by reference to the Human Protein Atlas database. This establishes the potential broader applicability of ME3BP-7 beyond pancreatic cancer, though this is not experimentally tested in the current study. The claim appropriately uses the term \"subsets\" acknowledging heterogeneity within tumor types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C63",
+      "C64"
+    ],
+    "result": "Pancreatic cancer has dismal prognosis with poor 5-year survival, limited treatment options (FOLFIRINOX, gemcitabine/nab-paclitaxel) that cause severe side effects with modest benefit, and is predicted to become the third leading cancer killer. Metabolic reprogramming involving monocarboxylate transporters is a hallmark of PDAC, with MCT1 overexpression associated with chemoresistance and poor prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 and C63-C64 establish the clinical context and biological rationale for the study. These are well-established facts in the field, appropriately supported by citations to epidemiological data and prior research. This background effectively motivates the need for new therapeutic approaches and the focus on metabolic targeting. These are standard background claims that set up the problem being addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Loss of MCT1 expression is expected to be an important resistance mechanism to ME3BP-7, and is conceivable since MCT1 is not an oncogene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 provide reasonable speculation about resistance mechanisms based on general principles of targeted therapy and the biology of MCT1. The distinction that MCT1 is not an oncogene (C71) is important for understanding that its loss would not necessarily be selected against (unlike loss of an oncogene product). This is appropriately framed as expectation/speculation rather than demonstrated fact, and is supported by citations to examples of target loss as a resistance mechanism in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Future directions include exploring different administration methods to improve in vivo potency, combination therapies with irinotecan/liposomal irinotecan, glutaminase inhibitors, or immune checkpoint inhibitors, though clinical trials will be necessary to reliably determine therapeutic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C79 are primarily speculative proposals for future work. While the suggestions are reasonable and based on mechanistic rationale (e.g., C77 cites evidence for MCT1-mediated immune exclusion), they are not tested in this study. The acknowledgment that clinical trials are needed (C79) is appropriate given the limitations of the preclinical models. These represent reasonable next steps but are not results of the current work. The combination therapy suggestions (C75, C76, C78) are based on limited data (differential effects on WT vs KO cells for standard chemotherapies) and mechanistic speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "ME3BP-7 shows efficacy across multiple pancreatic cancer model systems and potentially represents a powerful new therapeutic agent for pancreatic cancer and other MCT1-expressing cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 provide appropriate summary conclusions based on the demonstrated efficacy in three different PDAC models (Panc 02.13, TM01212, TM01098). The use of \"potentially\" in C81 appropriately qualifies the therapeutic promise given the preclinical nature of the data and acknowledged limitations (lack of true regressions, C73). The extension to other MCT1-expressing cancers is reasonable speculation based on the mechanism and expression data (C69) but is not experimentally demonstrated.",
+    "result_type": "MINOR"
+  }
+]

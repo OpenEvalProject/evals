@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "This single-arm pilot study enrolled 12 HR-positive, HER2-negative breast cancer patients who received sequential SBRT (24 Gy/3 fractions) followed by 6 cycles of dalpiciclib plus exemestane (with goserelin for premenopausal patients). All patients completed treatment and surgery. The study was ethically approved with informed consent, though sample size was determined by clinical rather than statistical considerations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C51-C59 provide clear documentation of study design, enrollment, treatment protocol, and ethical compliance. The methodology is transparently described with specific dosing regimens and timing. However, the acknowledgment that sample size was not statistically determined (C59) is a significant limitation that affects interpretation of all subsequent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The primary endpoint showed 2/12 patients (16.7%, 95% CI 3.5-46.0%) achieved RCB 0-I, with an objective response rate of 91.7% (95% CI 62.5-100%). Three patients (25.0%) achieved breast pathological complete response, and 25.0% of patients converted from planned mastectomy to breast conservation surgery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C34 report efficacy outcomes with appropriate confidence intervals, but the extremely small sample size (n=12) makes these estimates highly unstable (note the wide CI: 3.5-46.0% for primary endpoint). The 91.7% ORR appears promising, but with only 12 patients, this represents 11 responders\u2014a single additional non-responder would substantially change the percentage. Cross-trial comparisons mentioned in discussion are acknowledged as problematic (C65), yet the authors still make them. The lack of a control arm prevents causal attribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C40",
+      "C41",
+      "C35"
+    ],
+    "result": "Biomarker analysis in 10 evaluable patients showed treatment significantly increased tumor-infiltrating lymphocytes from 10.7% to 22.9% (p=0.043), while PD-L1 expression in immune and tumor cells showed no significant change. Median Ki67 in surgical specimens for non-pCR patients was 7% (range 5-70%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 report a statistically significant increase in TILs (p=0.043), but with only 10 paired samples, this barely reaches significance and may not survive multiple testing correction. The paired t-test assumes normal distribution, which is questionable with n=10. The wide Ki67 range (5-70%, C35) suggests substantial heterogeneity. The lack of PD-L1 change (C41) uses cautious language ('appeared to be') suggesting uncertainty. No correction for multiple comparisons is mentioned despite testing multiple biomarkers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C50"
+    ],
+    "result": "The treatment regimen was well-tolerated with grade 3 neutropenia (66.7%) and leukopenia (25.0%) as the most common severe adverse events. No grade 4-5 adverse events, serious adverse events, treatment-related deaths, dose modifications, or radiation-related skin toxicity occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C36-C38, C50 consistently document safety outcomes. The grade 3 neutropenia rate (66.7%) is comparable to historical controls from DAWNA-1 (84.2%, C49), and the absence of grade 4-5 events in 12 patients is reassuring. However, the small sample size limits detection of rare but serious adverse events. The safety profile appears consistent with known CDK4/6 inhibitor toxicity without unexpected radiation-related complications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Patient-reported outcomes using EORTC QLQ-C30 showed no clinically significant deterioration in global health status or functional domains (physical, role, emotional, cognitive, social) throughout treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by Figure 2 showing stable PRO scores across treatment cycles. However, the manuscript provides no quantitative data, statistical analysis, or definition of 'clinically significant deterioration.' The visual inspection of Figure 2 suggests stability, but without numerical data or pre-specified thresholds, this remains a qualitative assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors contextualize their 16.7% RCB 0-I rate against historical data showing 0-3.8% pCR with CDK4/6 inhibitor plus letrozole, 5.8-5.9% pCR with neoadjuvant chemotherapy, and ~60% ORR with neoadjuvant endocrine therapy alone. They note pCR is not significantly associated with prognosis in HR+/HER2- breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C42-C47 make cross-trial comparisons that the authors themselves acknowledge are problematic (C65: 'limited significance'). Different studies have different patient populations, eligibility criteria, and assessment methods. The comparison of 25.0% vs 14.1% breast conservation rate (C47) involves only 3 patients in the current study. The statement about pCR not predicting prognosis (C45) contradicts the use of RCB 0-I as the primary endpoint. These comparisons lack statistical rigor and appropriate caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors propose that sequential SBRT followed by CDK4/6 inhibitor plus endocrine therapy turned 'cold' tumors into 'hot' ones through enhanced immune responses, supported by preclinical evidence that SBRT with hypofractionation triggers stronger immune responses than conventional fractionation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C55-C56 extrapolate from preclinical data (C14-C15) and the observed TIL increase to propose a mechanistic explanation. However, C56 uses speculative language ('Apparently') and the causal chain is not established. The study lacks mechanistic experiments, immune profiling beyond TILs/PD-L1, or comparison groups to definitively attribute the TIL increase to the specific treatment sequence versus individual components. The 'cold to hot' tumor conversion is an inference not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors conclude that neoadjuvant SBRT followed by dalpiciclib and exemestane is effective and tolerable, provides novel insights for HR+/HER2- breast cancer treatment, and may be considered a feasible option for this patient population, particularly for achieving pathological downstaging and margin-free resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C60-C63 overstate the strength of evidence from this small pilot study. With n=12, no control arm, and wide confidence intervals, concluding the regimen 'is effective' (not 'may be effective') is premature. The claim of 'novel insights' (C63) is vague. The suggestion it 'may be considered as a feasible option' (C60) requires validation in larger controlled trials, which the authors acknowledge (C66-C67). The conclusions exceed what the data can support given the acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors acknowledge significant limitations including single-arm design, small sample size (n=12), inability to make valid cross-trial comparisons due to potential bias, and the need for larger prospective randomized trials with longer follow-up to validate findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 appropriately acknowledge the study's major limitations. The authors correctly identify that the small sample size limits comparisons with historical data (C65) and that validation in larger randomized trials is needed (C66-C67). This transparent acknowledgment of limitations is commendable, though it raises questions about the strength of the conclusions drawn in C60-C63.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes that HR+/HER2- breast cancer represents ~70% of cases, current neoadjuvant approaches (chemotherapy, endocrine therapy, or CDK4/6 inhibitors plus endocrine therapy) achieve limited pCR rates (<10%) and modest ORR (~50-60%), while preclinical evidence suggests CDK4/6 inhibitors can sensitize tumors to radiotherapy through multiple mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 appropriately cite prior literature to establish the clinical problem and biological rationale. The epidemiologic data (C1), treatment guidelines (C2), and efficacy rates (C4-C5, C8-C10) are supported by appropriate citations. The preclinical rationale (C14-C16) and dalpiciclib background (C17-C18) provide reasonable justification for the study design. These background claims establish appropriate context for the investigation.",
+    "result_type": "MINOR"
+  }
+]

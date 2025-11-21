@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "p130Cas contains two intrinsically disordered regions, with the substrate domain forming the largest unstructured region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are supported by computational disorder prediction analysis shown in Figure 1A. The prediction is based on established bioinformatics tools (PrDOS) and is consistent with known properties of LLPS-prone proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "EGFP-p130Cas forms cytoplasmic spots that emerge from focal adhesions and move into the cytoplasm across multiple cell types, with endogenous p130Cas showing similar behavior in MCF7 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are supported by live cell imaging (Videos 1-3, Figure 1\u2014figure supplement 1C-H) and Western blot quantification showing ~4-5x overexpression. The observation across multiple cell types (CHO, HeLa, HEK293T, MCF7) strengthens the finding, though endogenous visualization required cells with higher p130Cas expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "p130Cas cytoplasmic spots exhibit LLPS-characteristic behaviors including fusion, growth over time, and time-dependent changes in FRAP dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 are well-supported by imaging and FRAP data (Figure 1C-I). The fusion behavior, droplet growth, rapid recovery at 6 hr (t1/2=9.4\u00b11.9s, ~72% mobile fraction), and slower recovery at 24 hr (t1/2=26.4\u00b13.7s, ~26% mobile fraction) are all consistent with LLPS maturation. Statistical analysis appears appropriate with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "p130Cas droplets respond to polarity-altering reagents (hexanediol disrupts, ammonium acetate enhances) and form cytoplasmic condensates outside focal adhesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by imaging and quantification (Figure 1J-M) showing expected responses to hexanediol and ammonium acetate, which are established tests for LLPS. The citation to Jain and Vale, 2017 provides appropriate context. The conclusion (C14) is a reasonable inference from the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Paxillin and FAK co-localize with p130Cas in cytoplasmic spots and co-emerge from focal adhesions with correlated dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are supported by immunofluorescence imaging (Figure 2A-D) and time-lapse imaging (Figure 2E-F, Videos 4-5). The co-localization and co-emergence data provide strong evidence for coordinated behavior of these focal adhesion proteins in cytoplasmic condensates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "p130Cas is the main driver of cytoplasmic phase separation, as droplets form normally in paxillin-null and FAK-null cells but not when paxillin or FAK are expressed in p130Cas-null cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are supported by genetic experiments using knockout cell lines (Figure 2G-J). The reciprocal experiments (droplets form without paxillin/FAK but not without p130Cas) provide strong evidence for the hierarchical relationship. The conclusion (C25) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "p130Cas within droplets is phosphorylated on substrate domain tyrosines but is much less phosphorylated than in focal adhesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by immunofluorescence with phospho-specific antibody (Figure 2K-N). The quantification showing drastically higher pY-Cas/total p130Cas ratio in focal adhesions vs droplets (N=2176 FA and 53 droplets) provides strong statistical support. The inference (C28) is reasonable given the ratio data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The substrate domain is the main driver of p130Cas phase separation, with tyrosine phosphorylation contributing to a lesser extent, while the C-terminal disordered region is dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by mutant analysis (Figure 2P-R) showing strong reduction with substrate domain deletion, modest reduction with Y15F mutation, and no effect with C-terminal deletion. Sample sizes appear adequate (N=3-7 independent experiments). The disorder prediction for Y15F (C34) supports the interpretation of phosphorylation-dependent and -independent contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A bead-based in vitro assay demonstrates specific assembly of condensed phases on p130Cas-coated beads, with ammonium acetate enhancing and hexanediol reducing paxillin recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by imaging of beads with cell lysates (Figure 3A-D). The differential behavior between p130Cas and EGFP-only beads, along with responses to polarity-altering reagents, supports specific phase separation. However, the method is novel and may have limitations not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Mass spectrometry of p130Cas condensates identified 30 of 78 known direct interactors and enrichment of proteins involved in protein synthesis, RNA splicing, and RNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by mass spectrometry data (Supplementary file 1, Figure 3E, Figure 3\u2014figure supplement 1). The overlap with known interactors (30/78) and Gene Ontology analysis provide reasonable validation. However, the bead-based isolation method may introduce artifacts or miss transient interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "p130Cas condensates are distinct from stress granules and p-bodies, showing limited colocalization with their markers (G3BP2, PABP, Dcp1A) but partial overlap with Ago2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by immunofluorescence imaging (Figure 4A-L) and mass spectrometry data (Supplementary file 1). The limited colocalization with established markers and selective presence of only PABPC1 among six major stress granule constituents support the distinctness claim. The partial Ago2 overlap suggests some functional relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "p130Cas condensates contain RNA binding proteins (Ago2 in center, GW182 at periphery) and mRNAs, with cycloheximide treatment decreasing droplet formation, suggesting a role in mRNA metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by immunofluorescence and RNA FISH (Figure 5A-H). The spatial organization of Ago2 and GW182 is interesting but the mechanism is unclear. The cycloheximide effect (C51) supports a connection to translation, though the sample size (N=3, 39 and 52 cells) is modest. The conclusion (C52) is appropriately cautious ('may regulate').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "RNAseq identified 297 mRNAs enriched in p130Cas condensates, with 46 also differentially regulated upon p130Cas overexpression (p<0.05 for random overlap), enriched for cell cycle, survival, cell adhesion, and inflammatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by RNAseq data (Figure 6, Supplementary files 2-3). The statistical analysis showing <5% probability of random overlap (C56-C57) is appropriate, though the Methods description could be clearer. The Gene Ontology analyses (C54, C58) are standard and well-presented. However, correlation between droplet association and differential regulation doesn't prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "High fibronectin concentration increases p130Cas droplets and decreases translation in MCF7 cells and HUVECs (high p130Cas expressors), but not in NIH3T3 or MCF10A cells (low expressors), with p130Cas knockdown reversing the translation inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 are supported by extensive imaging and puromycin incorporation assays across multiple cell types (Figure 7). The correlation between p130Cas expression levels, droplet formation, and translation inhibition is compelling. The knockdown experiments (C61-C64) provide strong evidence for p130Cas requirement. Sample sizes are adequate (N>240 cells per condition). The conclusion (C67-C68) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Optogenetic induction of p130Cas condensates using Cry2 system causes reversible droplet formation (t1/2~9 min disassembly) and ~35% decrease in protein synthesis, providing direct evidence that droplet formation inhibits translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 are supported by optogenetic experiments (Figure 8, Video 6). The light-induced droplet formation, colocalization with paxillin/FAK, reversible kinetics, and correlated translation inhibition provide strong causal evidence. The control showing no effect of illumination on wild-type cells (Figure 8\u2014figure supplement 1F-G) is important. This is the strongest evidence for the functional role of droplets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background knowledge claims about LLPS, focal adhesions, and p130Cas properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C97 represent established knowledge from the literature, appropriately cited. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Summary of recent literature on LLPS of focal adhesion proteins (FAK, paxillin, p130Cas, tensin1, LIMD1, \u03b2PIX, GIT1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 accurately summarize recent publications (Case et al., 2022; Lee et al., 2023; Wang et al., 2021; Zhu et al., 2020; Hsu et al., 2023). These provide important context showing the current study builds on emerging understanding of focal adhesion LLPS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "High adhesion limits message translation via p130Cas-dependent cytoplasmic LLPS, as demonstrated by high fibronectin experiments and optogenetic induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 represent the main conclusions, well-supported by the combined evidence from fibronectin dose-response, knockdown experiments, and optogenetic studies (Figures 7-8). The mechanistic link between adhesion, droplet formation, and translation inhibition is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "This mechanism may contribute to quiescence in myofibroblasts and senescent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is speculative and not directly tested. While the authors cite literature showing correlation between high adhesion and quiescence in these cell types (C113), no experiments in myofibroblasts or senescent cells are presented. This remains a hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "p130Cas condensates traffic in and out of focal adhesions, contain proteins and RNAs involved in translation, are distinct from known structures, and are regulated by adhesion to suppress protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 summarize the main findings, which are well-supported by the collective evidence from imaging, proteomics, RNAseq, and functional assays presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Inhibition of protein synthesis at high adhesion has not been previously reported but is consistent with literature on adhesion and quiescence, suggesting excessive integrin-mediated adhesion can be inhibitory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 appropriately contextualize the novelty of the findings. The authors correctly note this is a new observation (C112) while connecting it to existing literature on adhesion and quiescence (C113, with appropriate citations). The inference (C114) is reasonable given the data.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors introduce ProtSSN, a novel pre-training framework that integrates sequential and geometric encoders for protein primary and tertiary structures using a funnel-shaped learning pipeline with linguistic and topological embeddings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C22-C26, C64-C65 collectively describe the ProtSSN architecture and design rationale. The method is clearly described with justification for the funnel-shaped design (limited crystal structures vs. sequences), the two-stage embedding approach (linguistic then topological), and the use of rotation/translation equivariant graph representations. The methodological description is coherent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C32",
+      "C33",
+      "C35",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ProtSSN demonstrates exceptional predictive performance on mutation effect prediction benchmarks with significantly fewer trainable parameters than competing methods, particularly excelling on thermostability prediction tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C32-C33, C35, C38-C40 are supported by experimental results shown in Figure 2 and Tables 1-3. The performance comparisons are comprehensive across multiple benchmarks (ProteinGym v1, DTm, DDG) and baseline methods. Bootstrapping analysis (C39-C40) provides evidence of consistency. The superior performance on thermostability benchmarks is attributed to structure information capturing protein compactness and local structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C69",
+      "C70",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors introduce two new thermostability benchmarks (DTm and DDG) that measure \u0394Tm and \u0394\u0394G values respectively, grouping assays by protein-condition combinations with emphasis on experimental consistency and environmental labels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C69-C70, C75-C81 describe the construction and characteristics of the new benchmarks. The datasets are well-documented with clear data sources (ProThermDB for DTm, DDMut for DDG), preprocessing steps, naming conventions, and size specifications. The rationale for creating these benchmarks (addressing limitations of existing datasets regarding environmental conditions and data quality) is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ablation studies demonstrate that equivariant graph convolution, data-driven node attributes from ESM2, six EGNN layers, and ESM2-t33 (650M parameters) provide optimal performance for ProtSSN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by ablation study results shown in Figure 3a-d. Each design choice is systematically evaluated: equivariance vs. non-equivariant methods (C41), learned vs. one-hot encodings (C42), network depth (C43-C44), and ESM2 scale (C45-C46). The finding that larger models don't always perform better (C46) is an important observation supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ProtSSN demonstrates robustness to variations in input protein structures, showing minimal performance differences between AlphaFold2 and ESMFold-derived structures compared to other structure-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by results in Table 2 comparing folding strategies. The quantitative comparison showing ProtSSN's performance difference is 3-5 times smaller than ESM-if1 and MIF-ST (C51) provides strong evidence for robustness. The analysis across different benchmark types (interaction vs. catalysis) adds depth to the evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ProtSSN demonstrates superior performance among non-MSA zero-shot methods for both single-site and multi-site mutations, outperforming MSA-based methods across most taxa except viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by results in Table 3 comparing ProtSSN to both zero-shot and MSA-based methods. The exception for viruses (C53) is explained with citations regarding the importance of conserved sites in spike proteins (C54). The comprehensive comparison across mutation depths, MSA depths, and taxa provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C21",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Existing protein engineering methods have limitations: sequence-based approaches struggle with geometric encoding and structure-sensitive properties, while structure-based methods fail to capture non-local connections and are often not tailored for mutation prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C18, C21, C60-C63 provide a critical assessment of existing methods that motivates the proposed approach. While these are largely inference-based claims about the field, they are supported by citations (C18) and align with known limitations. The identification of the lack of thermostability evaluation (C4) is validated by the authors' creation of new benchmarks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "MSA-based methods have computational disadvantages including higher search time and memory costs, and their performance depends heavily on MSA quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by general knowledge about MSA-based methods and are consistent with the comparative analysis in the paper. While not directly measured in this study, these are well-established characteristics of MSA-based approaches that contextualize the performance comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Existing large-scale benchmarks like ProteinGym v1 have limitations including noisy labels from high-throughput experiments and lack of environmental condition labels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 identify limitations of existing benchmarks that motivate the creation of DTm and DDG. The claim about noisy labels (C67) is supported by citation to Frazer et al., 2021. The observation about missing environmental labels (C68) is an inference that is validated by the authors' dataset construction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ProtSSN is pre-trained on 30,948 non-redundant protein structures from CATH v4.3.0 with <40% sequence identity, using frozen ESM2-t33 for node features and removing proteins >2000 AAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe the training data and setup. These are straightforward methodological details that are clearly stated and appropriate for the task. The choice of CATH v4.3.0 with sequence identity cutoff is standard practice for avoiding data leakage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Protein engineering involves modifying amino acids to achieve enhanced functionalities, which is necessary because wild-type proteins often cannot meet industrial requirements, and the vast search space poses challenges for conventional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C14 provide background and motivation for protein engineering. These are well-established facts in the field supported by citations (C10, C11, C13, C14) and general knowledge. They appropriately contextualize the research problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20"
+    ],
+    "result": "Deep learning methods, including autoregressive and masked language models, have shown strong performance in protein engineering, though sequence-to-structure-to-function projections require substantial resources, and structure-based methods can complement sequence approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C17, C19-C20 describe the state of deep learning in protein engineering. These are supported by multiple citations and represent accurate characterizations of the field. The claims about computational requirements (C17) and the complementary nature of structure-based methods (C19-C20) are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "ProteinGym v1 covers over 200 proteins across diverse functional properties and taxa, and there exists a trade-off between activity and thermostability in protein engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe existing resources and known relationships. C27 accurately describes ProteinGym v1 with citation, and C28 about the activity-thermostability trade-off is supported by citation to Zheng et al., 2022. These provide important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C37"
+    ],
+    "result": "Protein thermostability depends on overall architectural compactness and stable local structures (alpha helices, beta sheets), while both local and overall structures are crucial for binding and catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C37 describe established biological principles supported by citations (Robinson-Rechavi et al., 2006 for C34; Sheng et al., 2014 for C37). These provide the biological rationale for why structure information improves thermostability prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Protein language models cannot fully replace structure-based analysis even when scaled to larger sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by the experimental results showing that even large language models (e.g., ESM2 with 15B parameters) don't match the performance of structure-informed methods on certain tasks. This is an important inference from the comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "ProtSSN uses noise sampling at each epoch on node attributes to emulate random mutations in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 describes a methodological feature of ProtSSN's training procedure. This is clearly stated and represents a reasonable design choice for a denoising framework, though the biological justification could be stronger.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Obtaining experimental data for protein mutants is often infeasible due to cost and complexity, necessitating computational solutions that can suggest mutations without prior knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe practical constraints in protein engineering that motivate zero-shot learning approaches. These are based on established knowledge about experimental limitations and appropriately justify the research direction.",
+    "result_type": "MINOR"
+  }
+]

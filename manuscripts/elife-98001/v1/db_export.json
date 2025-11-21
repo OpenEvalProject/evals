@@ -1,0 +1,1956 @@
+{
+  "submission": {
+    "id": "e896603f-5720-40ab-95a9-4024317c7824",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T18:12:48.476056Z",
+    "updated_at": "2025-11-21T18:12:48.476056Z"
+  },
+  "content": [
+    {
+      "id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "content_type": "manuscript",
+      "content_text": "# Physiological magnetic field strengths help magnetotactic bacteria navigate in simulated sediments\n\n## Authors\n\n- Agnese Codutti<sup>1</sup>\n- Mohammad A Charsooghi<sup>2</sup>\n- Konrad Marx<sup>4</sup>\n- Elisa Cerd\u00e1-Do\u00f1ate<sup>2</sup>\n- Omar Mu\u00f1oz<sup>4</sup>\n- Paul Zaslansky<sup>2</sup>\n- Vitali Telezki<sup>4</sup>\n- Tom Robinson<sup>1</sup> ([ORCID: 0000-0001-5236-7179](https://orcid.org/0000-0001-5236-7179)) \u2020\n- Damien Faivre<sup>2</sup> ([ORCID: 0000-0001-6191-3389](https://orcid.org/0000-0001-6191-3389)) \u2020\n- Stefan Klumpp<sup>4</sup> ([ORCID: 0000-0003-0584-2146](https://orcid.org/0000-0003-0584-2146)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Colloids and Interfaces, Department Theory and Biosystems Potsdam Germany ([ROR:00pwgnh47](https://ror.org/00pwgnh47))\n2. Max Planck Institute of Colloids and Interfaces, Department Biomaterials Potsdam Germany ([ROR:00pwgnh47](https://ror.org/00pwgnh47))\n3. Physics Department, TU M\u00fcnchen Garching Germany\n4. University of G\u00f6ttingen, Institute for the Dynamics of Complex Systems G\u00f6ttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))\n5. Charit\u00e9 - Universit\u00e4tsmedizin Berlin, Department for Operative, Preventive and Pediatric Dentistry Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n6. Institute for Bioengineering, School of Engineering, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n7. Aix-Marseille Universit\u00e9, CEA, CNRS, BIAM Saint Paul lez Durance France ([ROR:035xkbk20](https://ror.org/035xkbk20))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial motility is typically studied in bulk solution, while their natural habitats often are complex environments. Here, we produced microfluidic channels that contained sediment-mimicking obstacles to study swimming of magnetotactic bacteria in a near-realistic environment. Magnetotactic bacteria are microorganisms that form chains of nanomagnets and that orient in Earth\u2019s magnetic field. The obstacles were produced based on micro-computer tomography reconstructions of bacteria-rich sediment samples. We characterized the swimming of the cells through these channels and found that swimming throughput was highest for physiological magnetic fields. This observation was confirmed by extensive computer simulations using an active Brownian particle model. The simulations indicate that swimming at strong fields is impeded by the trapping of bacteria in \u2018corners\u2019 that require transient swimming against the magnetic field for escape. At weak fields, the direction of swimming is almost random, making the process inefficient as well. We confirmed the trapping effect in our experiments and showed that lowering the field strength allows the bacteria to escape. We hypothesize that over the course of evolution, magnetotactic bacteria have thus evolved to produce magnetic properties that are adapted to the geomagnetic field in order to balance movement and orientation in such crowded environments.\n\n## Introduction\n\nThe motility of microorganism and other self-propelled particles has been studied extensively over the last years, aiming at an understanding of the physical mechanisms of micron-scale self-propulsion and of the rich collective behavior shown by such active particles (Bechinger et al., 2016; Elgeti et al., 2015; Klumpp et al., 2019). In addition, biomedical and environmental applications of functionalized self-propelled particles or microrobots are being developed (Bente et al., 2018; Felfoul et al., 2016; Magdanz and Schmidt, 2014). Often microorganisms in their natural habitats and microrobots in some of their envisioned applications move in complex environments rather than in a homogeneous space. Therefore, the interactions of self-propelled particles with walls and obstacles play a key role in their motility and have received considerable attention (Bechinger et al., 2016).\n\nThe complexity of an environment may arise on multiple scales: specifically, an environment may be geometrically complex, e.g., a porous medium, a space filled with obstacles or a maze (Volpe et al., 2011; Jakuszeit et al., 2019; Bhattacharjee and Datta, 2019b; Khatami et al., 2016), or the interaction with walls and obstacles may itself be complex and reflect a combination of hydrodynamic and steric interactions (Berke et al., 2008; Li and Tang, 2009; Bianchi et al., 2017; Ostapenko et al., 2018; Codutti et al., 2022) or even behavioral responses to the encounter with an obstacle, such as direction reversals (K\u00fchn et al., 2017) and effects of population heterogeneity (Junot et al., 2022).\n\nBoth steric and hydrodynamic interactions with walls have been the subject of numerous theoretical and computational as well as experimental studies (Berke et al., 2008; Li and Tang, 2009; Bianchi et al., 2017; Elgeti and Gompper, 2013; Ostapenko et al., 2018; Mousavi et al., 2020; Telezki and Klumpp, 2020; Codutti et al., 2022). A useful approach to wall interactions is the trapping of microorganisms in specifically designed microfluidic channels (Denissenko et al., 2012) or in microfluidic chambers (Ostapenko et al., 2018; Codutti et al., 2022; Bentley et al., 2022), which is also of interest in itself to understand their behavior in confinement, which is again a common feature of complex natural habits, e.g., in porous media. Surprisingly, the behavior of microorganisms with different hydrodynamic mechanisms was seen to be rather similar under such confinement (Ostapenko et al., 2018; Codutti et al., 2022). The motility of microorganism through arrays of obstacles or through porous materials has also been addressed in several experimental and theoretical studies, but mostly in geometric arrays of pillars of the same morphologies (Bhattacharjee and Datta, 2019a; Dehkharghani et al., 2023; Irani et al., 2022; Jakuszeit et al., 2019; Bhattacharjee and Datta, 2019b; Alirezaeizanjani et al., 2020).\n\nIn addition to obstacles, the complexity of an environment may reflect directional cues such as chemical gradients or external fields, to which the microrganisms show a behavioral response such as chemotaxis, phototaxis or magnetotaxis (Sourjik and Wingreen, 2012; Klumpp et al., 2019). Yet another common factor of complexity is fluid flow for active particles that swim (Kessler, 1985; Rusconi et al., 2014; Mathijssen et al., 2019). Thus, understanding the motility of microrganisms in such environments requires an understanding of the interplay of these different influences, which in general could either have synergistic effects or compete with each other in determining the direction of motion of a microorganism.\n\nHere, we study the navigation of magnetotactic bacteria through a disordered obstacle array as an example of motility in a complex environment. Specifically, we are interested in the interplay of directed motility due to the magnetic field and the randomization of motion required to navigate the obstacles.\n\nMagnetotactic bacteria are a group of bacteria that form a chain of specific organelles called magnetosomes, which contain magnetic nanoparticles and equip the cells with a magnetic moment. As a consequence, the cells align with magnetic fields, resulting in directional swimming of the cells, powered by their flagella, along the field lines of the magnetic field. In their natural habitats, these bacteria follow the magnetic field of the Earth, so they align to fields of the order of 50 \u03bcT. The swimming of magnetotactic bacteria has been studied in free space, in the presence of oxygen gradients, in hydrodynamic flow, and in confinement to small chambers (Bennet et al., 2014; Lef\u00e8vre et al., 2014; Mao et al., 2014b; Mao et al., 2014a; Reufer et al., 2014; Popp et al., 2014; Rismani Yazi et al., 2018; Codutti et al., 2022).\n\nHere, we study their swimming in obstacle arrays that mimic their natural environment: magnetotactic bacteria are predominantly found in micro-oxic aquatic environments, near the oxic-anoxic transition zone (Bazylinski and Frankel, 2004). Often, these micro-oxic regions are found in the sediment rather than in open water, so that magnetotactic bacteria typically live in a sedimentary environment that is sand or mud. We thus prepare microfluiudic environments that mimic these sediments and consist of arrays of irregularly shaped obstacles. We study the swimming of magnetotactic bacteria through these environments and ask how a magnetic field influences their throughput, as the field directs and constrains their motion, while navigation in the obstacle array requires the exploration of other swimming directions. Based on a combination of swimming experiments in the microfluidic environments and extensive computer simulations of an active Brownian particle model (Codutti et al., 2019), we show that intermediate magnetic field strength of the intensity of the geomagnetic field enhance throughput, while strong fields suppress it. We show that the suppression is due to trapping of bacteria in corners of the obstacle array from which the bacteria can only escape by transiently swimming against the magnetic field direction. This situation is reminiscent of escape problems from statistical physics, but is not driven by thermal fluctuations, but rather by the interplay of active motility and interactions with the obstacle surfaces.\n\n## Results and discussion\n\n### Characterization of sediment and construction of sediment-mimicking microfluidic channels\n\nTo study the swimming of magnetotactic bacteria in a near-realistic sediment environment that resembles their natural habitat, we produced microfluidic channels that contained sediment-mimicking obstacles (Figure 1, Figure 1\u2014figure supplement 1). To that end, we first characterized a sediment sample in water from the magnetotactic bacteria-rich lake Grosser Zernsee (Potsdam, Germany). We determined a 3D reconstruction of the sample using micro-computer tomography (\u03bcCT) with a resolution of 1.56 \u03bcm (Figure 2a\u2013d) and analyzed the sizes of sediment particles (sand grains) and of water gaps. In total, the sample consists of 61% sand and 39% water. The distribution of particle sizes is approximately a log-normal distribution with a mean particle diameter of 46 \u03bcm (Figure 2e), which classifies this sediment as silt (Boggs, 2011). The water gap sizes follow a normal distribution with a mean of 43 \u03bcm (Figure 2f).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig1-v1.jpg)\n\n**Figure 1.:** (a) Micro-computer tomography slices of sediment sampled (diameter 4mm) are cropped out to ignore border effect due to the reconstruction and binarized (b). The binarized images are then fitted with circles (c) for statistical analysis (grain size distribution in d) and for construction of arrays of pillar-shaped obstacles (e). The images of irregular grains (b) and fitted circles (e) are used as masks to design microfluidic channels with obstacle arrays (f), in which the bacteria are injected in the middle channel (3.5 mm \u00d7 1.2 mm \u00d7 10 \u03bcm) where they encounter the obstacles.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Note that in (C), a narrow channel has been cut out of the big obstacle in the center (indicated by the red square), as it would block the channel completely. The scale bar is 150 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Left column: irregular shaped obstacles based on 2d \u03bcCT images of sand samples, right column: rounded obstacle.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig2-v1.jpg)\n\n**Figure 2.:** (a) Slice of the sediment sample, (b) cube from the center of the cuvette, (c) and (d) examples of water gaps rendered with the Amira software. (e) Distribution of the smallest grain dimension (i.e. trabecular thickness analyzed with CTAn) with Gaussian fit $aexp\u2061(\u2212(x\u2212\\mu)^{2}/c^{2})$, $\\mu$ = 3.83, $c$ = 0.5903, corresponding to a mean sand grain diameter of 46 \u03bcm. (f) Distribution of the water gap size (i.e. trabecular separation) with Gaussian fit $aexp\u2061(\u2212(x\u2212\\mu)^{2}/c^{2})$, $\\mu$ = 42.94 \u03bcm, $c$ = 28.66 \u03bcm. (g) Percentage of sand over water as function of the distance from the bottom of the cuvette as obtained from 2D slices of the \u03bcCT images (yellow filled line) and for the equivalent fit with circles (yellow dashed line). The red points show the mean radius of the fitted circles (\u00b1 standard error of the mean) in \u03bcm (right axis).\n\nWe next analyzed two-dimensional slices of the \u03bcCT images at various depths of the sample to study if any difference is observed. This analysis returns similar values of the sand-to-water percentage (62\u201366% from top to bottom, see Figure 2g, with the small difference possibly due to sedimentation of the sediment under gravity). The mean radii of circular fits to the grains varies from 68 to 62 \u03bcm from bottom to top (Figure 2g), further potentially indicating a slight effect of sedimentation by gravity. This analysis provides the basis for the construction of our 2D microfluidic channels.\n\nTo realistically represent the porous environment where magnetotactic bacteria live, we constructed quasi-twodimensional microfluidic channels based on the 2D \u03bcCT images at different depths (Figure 1). These images (shown in Figure 1\u2014figure supplement 2) were used as masks (see Methods), such that each sediment grain becomes an irregularly shaped pillar in our quasi-2D structure. Bacteria thus swim through an array of pillars that act as obstacles for their motion. In addition, we generated channels with cylindrical pillars by fitting circles to the two-dimensional grain images (Figure 1, Figure 1\u2014figure supplement 2). These rounded-shaped pillars of different diameters are used for a comparison of our experiments with computer simulations below.\n\n### Swimming of magnetotactic bacteria through sediment-mimicking obstacle channels\n\nWith the sediment-mimicking channels at hand, we studied the motion of magnetotactic bacteria through those channels. A droplet of culture medium containing bacteria was injected into the entrance channel, which is placed under a custom-designed microscope (Bennet et al., 2014), with a controlled magnetic field of either 0 \u03bcT (field canceled), 50 \u03bcT (intensity of the geomagnetic field), or 500 (one order of magnitude larger than the geomagnetic field) \u03bcT (Figure 3a, Figure 3\u2014figure supplement 1). In all cases, no external flow was imposed.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig3-v1.jpg)\n\n**Figure 3.:** (A) View of a channel, in which the entrance (IN) and exit regions (OUT) are indicated, in which the bacterial density was monitored. Bacteria enter the IN region through an inlet that connects to a syringe containing bacteria. The magnetic field points to the left. (B) Cumulative bacterial intensity (measuring the cumulative arrival of bacteria) in these two regions, for three different field strengths. (C) Bacterial throughput, quantified by the ratio of the cumulative intensities in the OUT and IN regions as function of the magnetic field. The reduction of throughput by $B$ = 500 \u03bcT compared to $B$ = 50 \u03bcT is significant (Mann-Whitney test, $p<10^{\u22123}$), the increase between $B$ = 0 and $B$ = 50 \u03bcT is weakly significant ($p=0.028$), but agrees with the observation for a channel without obstacles in which the throughput increases monotonically with increasing field strength (Figure 3\u2014figure supplement 3).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig3-figsupp1-v1.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig3-figsupp2-v1.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Cumulative density of bacteria in the IN and OUT regions of the channel. (B) Ratio of the cumulative density in the IN and OUT regions, both as functions of time and for different magnetic field strengths. (C) Dependence of the latter ratio (taken after 30 min) on the magnetic field strength. In contrast to channels with obstacles (Figure 3), a monotonic dependence is observed.\n\nWe then imaged the entrance and exit regions of the microfluidic channel in an alternating fashion (Figure 3a), with snapshots every 20 s and counted the number of bacteria in these two regions. These counts are noisy and some bacteria pass the channel rapidly, within the first few snapshots. The delay time after which the first bacteria reach the exit region of the channel could, therefore, not be reliably quantified. Instead, we determined the cumulative density of bacteria in the exit and in the entrance regions of the channel (Figure 3b) and used their ratio, determined 30 min after injecting the bacteria, as a measure of the throughput of bacteria through the channel (see Methods). We determined the throughput in this way for 20 different channels, 10 with irregularly shaped obstacles and 10 with cylindrical pillars (Figure 1\u2014figure supplement 2). We obtained very similar results for channels with cylindrical pillars and with irregularly shaped pillars (Figure 3\u2014figure supplement 2). However, we found the strength of the magnetic field to have a strong impact on the throughput, with a non-monotonic dependence on the field strength (Figure 3c). The maximal throughput was obtained for the intermediate field strength of 50 \u03bcT, while without a field as well as with a field of 500 \u03bcT the throughput was smaller. By contrast, for a channel without obstacles, the throughput increased monotonically with the field strength (Figure 3\u2014figure supplement 3). This observation suggests that a magnetic field of a similar strength of the Earth\u2019s field enhances the flux of bacteria through the obstacle channel, but a too strong or null magnetic field inhibits it.\n\n### Simulations of bacterial swimming through obstacle channels\n\nTo gain further insight into how magnetotactic bacteria navigate through these complex environments, we compared our experimental findings to numerical simulations. To this end, we modeled the magnetotactic bacteria as dipolar active Brownian particles that align in an external magnetic field and interact with obstacles and walls present in the simulation box (see Methods).\n\nMost parameters of the model have been directly measured, only the interactions with the obstacles have to be parameterized by matching simulations to experimental data. When interacting with an obstacle or a wall, the active particles are subject to a repulsive force as well as a reorienting torque (Telezki and Klumpp, 2020). The latter is parameterized by an interaction parameter $\\alpha$, the only crucial free parameter of our model. \u03b1 has the units of length and is expected to be a fraction of the size of a bacterium. To adjust this parameter, we observed the motion of magnetotactic bacteria near the obstacles. When a bacterium meets an obstacle, it slides along the contour of that obstacle for some distance before leaving it again, as shown in Figure 4a. Similar behavior has been observed in other microorganisms (Rothschild, 1963; Berg and Turner, 1990; Tuson and Weibel, 2013). We observe the same behavior in the numerical simulations (Figure 4b). Here, the sliding distance along an obstacle is greatly influenced by the surface torque parameter \u03b1 (Figure 4\u2014figure supplement 1). Therefore, we calculated distributions of the sliding distances for different values of \u03b1 and compared these distributions to the one obtained from the experimental observations (see Figure 4c). A good match is obtained for $\\alpha=0.2\u00b5m$. Therefore, all the following numerical simulations were carried out with the interaction parameter set to $\\alpha=0.2\u00b5m$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig4-v1.jpg)\n\n**Figure 4.:** Sliding of bacteria on obstacle surfaces: (a) Experimental trajectories of sliding bacteria ($B=0$).(b) Trajectory of sliding particle in the simulation. The light blue region shows the spatial extent of the particle. Sliding is defined as motion in the sliding region (up to 2 \u03bcm from the surface, dotted line), provided that the particle also reaches the region where interactions with the obstacle take place (up to \u2248 0.6 \u03bcm from the surface, dashed line). The sliding distance is the distance covered tangentially to the surface. (c) Histogram of sliding distances as measured in the experiment (filled black circles) and the simulation (empty markers, for different values of the wall torque parameter \u03b1). We find good agreement for $\\alpha$ = 0.2 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Sliding distance as a function of the pillar radius as obtained from simulations for different wall torque parameters $\\alpha$.The presented values show the median, error bars indicate 25th and 75th percentile. The sliding distances were extracted from obstacle channel simulation data, where pillar radii were binned into 20 \u03bcm bin sizes for statistical analysis.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig4-figsupp2-v1.jpg)\n\nWhen analyzing sliding distances from obstacles of different sizes and thus different curvatures, we saw only a weak dependence on the curvature in both experimental and simulated trajectories (Figure 4\u2014figure supplements 1 and 2). However, our obstacles are all much larger than the size of the bacteria, so we cannot exclude a curvature dependence for obstacles comparable to their size. We noticed that in the experiments, the bacteria appeared to be slower while sliding along the walls compared to free swimming. This effect was neglected in the simulations.\n\nNext, we simulated the motion of active dipolar particles representing the bacteria through channels with arrays of spherical obstacles (which may overlap as in the experiments with cylindrical pillars). We varied the magnetic field strength and, to obtain a detailed picture of the swimming paths along which bacteria navigate through these channels, simulated channels with differently arranged obstacles, using the same obstacle arrays as in the experiments. In each simulation, we placed 1000 particles at the entrance end of the channel and calculated their individual trajectories for $N_{steps}=1\\times10^{6}$ steps (corresponding to approximately 30 min).\n\nFigure 5 shows the time-averaged local densities of bacteria during the simulation in one such channel with an external magnetic field of 50 \u03bcT pointing from left to right. In this heat map, shades of blue show the density of bacteria that did not arrive at the exit (right end of the channel) within the simulation time, while shades of red show the density of bacteria that did arrive, with purple resulting from a superposition of both color maps. Overall, bacteria are seen to move in a directed fashion, in the direction of the magnetic field (left to right). When they encounter a (single) obstacle, they move along its surface and then leave it, typically tangentially to the surface and in the direction of the magnetic field. In this way, the channel\u2019s geometry organizes the trajectories into \u2018natural paths.\u2019 However, when bacteria encounter overlapping obstacles, they can get trapped. Some examples of such traps are marked by green boxes in Figure 5. To escape a trap, bacteria need to reorient temporarily against the direction of the magnetic field. While some traps allow a fraction of the bacteria to escape and eventually arrive at the exit (purple trajectories that turn red), others do not (blue trajectories). Blue trajectories typically end in a trap of the latter type.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig5-v1.jpg)\n\n**Figure 5.:** Simulated motion of bacteria in an obstacle channel: Heat maps of the time-averaged density of bacteria from simulations of 2000 bacteria for 30 min with a magnetic field $B=50\u00b5T$, pointing from left to right.The blue map represents bacteria that did not arrive at the right end of the simulation box during the simulated time the red heat map represents those that did. The interplay between magnetic field and the channel\u2019s geometry creates natural paths through the channel. These paths can include traps or end in traps that are formed by overlapping obstacles (examples are indicated by the green boxes).\n\nFigure 6a shows corresponding trajectories (again plotted as heat maps) for different strengths of the magnetic field. Increasing the magnetic field strength has two opposing effects: On the one hand, bacteria are on average more aligned with the direction of the magnetic field and the observed paths through the channel become more focused as their persistence length increases with increasing field. As a consequence, the bacteria are expected to cross the channel faster. For very weak fields, the bacteria explore the channel in an effectively diffusive manner; for the case of 50 \u03bcT, we observed one dominant path through most of the channel. On the other hand, bacteria become more susceptible to trapping with increasing field. For a field of 500 \u03bcT, no simulated bacterium crossed the channel within the simulation time and the path that was dominant at 50 \u03bcT now ends in a trap, from which the bacteria can no longer escape at 500 \u03bcT. This negative effect of the magnetic field arises because escape from traps requires that the bacteria transiently orient against the field. These effects thus have opposing influences on the throughput of the channel and provide an explanation for our observation that intermediate field strengths generate the highest throughput.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig6-v1.jpg)\n\n**Figure 6.:** (a) Motion of bacteria in a channel for different values of the field strength $B$ (heat maps of the densities of arriving and non-arriving bacteria, blue and red, respectively, as in Figure 5) (b) Fraction $\u03d5$ of simulated bacteria that have arrived up to time $t$ for different $B$. Circles mark the first-arrival times $t_{f}$; crosses with thin lines mark total arrival fractions $\u03d5_{tot}$. The curve for $B$ = 500 \u03bcT remains at 0. (c) First-arrival times $t_{f}$ (top) and total arrival fraction $\u03d5_{tot}$ (bottom) as a function of the field strength $B$. With stronger fields, $t_{f}$ converges to the first-arrival time of a persistent swimmer in an empty channel (dashed gray line). $\u03d5_{tot}$ shows a peak at an intermediate (optimal) field strength, which can be explained by the interplay of two opposing effects that arise with stronger fields: effectively faster motion in the direction of the field and higher susceptibility to trapping. Blue data points show the results for the channel shown in (a), gray lines show results in other channels.\n\nTo quantify these observations, we determined the cumulative arrival of bacteria in the exit area, $\u03d5_{tot}$, which is plotted in Figure 6b as a function of time. This quantity also exhibits the non-monotonic behavior as a function of the magnetic field. We then performed extensive numerical simulations for a wide range of field strengths and for 10 different channels with different obstacle arrangements. We quantified the time of the first arrival (indicated by circles in Figure 6b) and the overall fraction of bacteria that arrived until the end of the simulation time $\u03d5_{tot}$ (crosses in Figure 6b) as functions of the field strength (Figure 6c). The first arrival time decreases with increasing field strength, however, the poor throughput for weak fields is mostly due to the slow arrival of the bulk of the bacteria, while some bacteria still cross the channel on an almost direct path. The fraction of arrivals, by contrast, shows the non-monotonic behavior indicated by our experimental results. Results for different channels (gray lines in Figure 6c) are qualitatively similar. Quantitatively, the arrival fraction $\u03d5_{tot}$ shows considerable dependence on the channel geometry, with maximal arrival fractions between 50 and 100% and maximal throughput in the range between a few and a few tens of \u03bcT. By contrast, the first-arrival time $t_{f}$ seems not to be affected by channel geometry (Figure 6c). The observation of a pronounced maximum in the throughput of the channel as well as of the variability in throughput between channels in our simulations agree well with the experimental observations. However, the simulations show lower throughput as well as lower variability in throughput than the experiments in the case without a magnetic field. We attribute this difference to different initial conditions in experiment and simulations. In the simulations, all bacteria start simultaneously at the beginning of the obstacle channel, while in the experiments they enter from the inlet and continue to do so during the experiments. The difference is expected to be most pronounced in the case of non-directional motion, i.e., for $B=0$.\n\n### Escape from traps\n\nOur simulations indicate that trapping of bacteria in the corners between overlapping obstacle pillars plays a crucial role for the non-monotonic dependence of the bacterial throughput on the magnetic field. We, therefore, investigated the escape from traps in more detail by simulating a large number of trap configurations with different geometric features. We first considered symmetric traps as shown in Figure 7a and varied the strengths of the magnetic field and the trap depth d (by varying the overlap between two circular pillars with fixed radius r). In this case, particles escape symmetrically in both directions, with an escape time that is, in a good approximation, exponentially distributed (Figure 7b). Varying the magnetic field strength results in an exponential dependence of the escape time on the field strength (Figure 7c). This result indicates that the escape from a trap is similar to the classical problem of an escape from a potential well due to thermal fluctuations (Kramers, 1940; H\u00e4nggi et al., 1990), even though the underlying fluctuations that orient the particle against the field are not of thermal origin here, but mostly result from the interaction of the active particle with the obstacle wall. Indeed, thermal-like distributions have been found for a related problem, the sedimentation of active particles (Tailleur and Cates, 2009; Palacci et al., 2010), specifically an exponential density profile characterized by an effective temperature. Such a description is, however, not generally possible (Tailleur and Cates, 2009). Likewise, we see an approximately exponential dependence on the trap depth d (blue data points in Figure 7e). We also generated a library of traps without the symmetry restriction by choosing the pillar radii and the distance of their centers (parallel and perpendicular to the field) randomly. An example with corresponding escape trajectories is shown in Figure 7d. This set of traps also results in a roughly exponential increase of the escape time $\\tau$ with trap depth, however, with large variability between different traps of the same depth (gray data points in Figure 7e).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig7-v1.jpg)\n\n**Figure 7.:** (a) Trajectories of 100 bacteria escaping from the apex of a symmetric trap ($B$ = 50 \u03bcT). The trap consists of two obstacles of radius 50 \u03bcm, in a distance of $\u0394y$ = 100 \u03bcm. This results in a trap depth $d$ = 50 \u03bcm. (b) Distribution of escape times of bacteria from the trap in (a). An exponential curve $exp\u2061(\u2212t/\\tau)$ (dashed line) is fitted to the data, with mean escape time $\\tau$ = 22 s. (c) Dependence of the mean escape time $\\tau$ on the field strength $B$ for the trap in (a). An exponential curve, $\\tau_{0;1}exp\u2061(B/B\u00af)$, is fitted to the data (dashed line). (d) Trajectories of 100 bacteria escaping from the apex of a generic trap ($B$ = 50 \u03bcT). (e) Dependence of $\\tau$ on $d$ for $B$ = 50 \u03bcT. Blue points show symmetric traps with both obstacles of radius 50 \u03bcm, similar to the trap in (a), gray points show a representative sample of all possible traps. An exponential curve,  $\\tau_{0;2}exp\u2061(d/d\u00af)$, is fitted to the blue data points (dashed line).\n\nFinally, we asked whether trapping of bacteria in corners is directly visible in our experiments. For that, we focused on one trap, indicated by the triangular area in Figure 8 (inset), and tracked the bacterial density in that area over time. Indeed, we could see bacteria trapped in this corner as indicated by a constant bacterial density in the trap. We then reduced the field strength in two steps, first from 500 \u03bcT to 50 \u03bcT and then to 0 \u03bcT. After both steps, we could observe a reduction of the bacterial density (Figure 8), indicating the expected release of bacteria from the trap upon reduction of the field and providing direct evidence for trapping in our experiments.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/98001/elife-98001-fig8-v1.jpg)\n\n**Figure 8.:** The bacterial density in a trap (indicated by the yellow triangular area in the inset) is monitored over time. At the time points indicated by the arrows, the field strength is reduced (from 500 \u03bcT to 50 \u03bcT and from 50 \u03bcT to 0 \u03bcT, respectively), allowing the escape of trapped bacteria.\n\n### Concluding remarks\n\nIn this study, we have used experiments in microfluidic channels and particle-based simulations to address the swimming of magnetotactic bacteria through an obstacle channel mimicking their natural habitat, sediment of a lake. We have shown that the efficiency with which the bacteria navigate through the obstacle array depends on the strength of the magnetic field. For weak fields, the bacteria motion is effectively diffusive and throughput is low, as the bacteria explore the channel in a largely random motion. For high fields, bacteria do not cross the channel as they get trapped in the corners that are created by overlapping cylindrical pillars. To escape from traps, they need to swim against the field, which becomes prohibitively difficult for strong fields. At intermediate field strength, notably comparable to the magnetic field of the Earth that they encounter in the natural habitat, the bacterial throughput is maximal. Hopping between traps has been described as a generic feature of active motion in porous environments (Kurzthaler et al., 2021). In our case, however, the escape from the traps does not only depend on the intrinsic properties of the bacteria\u2019s swimming, but also the strength of the magnetic field and their interaction with the obstacle walls.\n\nOur observation suggests that the ability to swim against the magnetic field, which usually directs the motion of the magnetotactic bacteria may be essential under some conditions such as the escape from traps studied here. This ability requires that the interaction with the magnetic field is not too dominant. Since in the natural habitat, the strength of the field is given by the magnetic field of the Earth and thus fixed, this might constrain the magnetic moment of magnetotactic bacteria. As a consequence, their alignment with a magnetic field of the strength of the Earth\u2019s field will not be perfect, thus reducing the efficiency of magnetic steering. Indeed, the alignment of different strains of magnetotactic bacteria with a field comparable to the Earth field has been observed to be considerably below 100% (Klumpp et al., 2019).\n\nThe ability to swim against the direction of a magnetic field is also important for magneto-areotactic band formation (Codutti et al., 2019). Contrary to the situation here, band formation requires swimming against the field direction for an extended amount of time. This is achieved by directional reversals, i.e., backward swimming that allows the bacteria to swim against the magnetic field without antiparallel alignment of their magnetic moment and the field. For escape from a trap, only transient swimming against the field is needed, so direction reversals may be less important here, even though they can also provide a mechanism for escape. In our previous work, we have shown that reversals are rare in M. gryphiswaldense under confinement and that they are not induced by collisions with walls (Codutti et al., 2022). This may, however, be different in different species and could for example depend on the mode of propulsion (K\u00fchn et al., 2017), which is rather diverse in magnetotactic bacteria (Lef\u00e8vre et al., 2014). In general, it will be interesting to see how the competition between magnetic directionality and trapping is resolved in different species. Our microfluidic obstacle channel and our simulations provide tools for such future studies.\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background Magnetospirillum gryphiswaldense</td>\n      <td>MSR-1</td>\n      <td>Schleifer et al., 1991</td>\n      <td>MSR-1</td>\n      <td>Obtained from Sch\u00fcler Lab (Univ. Bayreuth, Germany)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Simulation code</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Methods, section Model and simulations</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Microfluidic channels</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Methods, section Microfluidic channel</td>\n    </tr>\n  </tbody>\n</table>\n\n### Characterization of sediment\n\n#### Sample harvesting and preparation\n\nThe sediment sample was collected in the Gro\u00dfer Zernsee lake (Potsdam, Germany), from the first layer of sediment (5 cm) in the shallow water nearby the shore. Macroscopic organic matter was manually removed. The sand was stored in lake water, and shaken before sample preparation to avoid strong sedimentation effects. The sample of sand in water was placed in a plastic cuvette of 4 mm in diameter, with a layer of water covering the top of the sand.\n\n#### Micro-computer tomography\n\nThe micro-computer tomography scan was performed with the SkyScan 1172 scanner. For the scans, the following setting were used: X-ray source 89 kV, 112 \u00b5A, Image Pixel Size ($\u00b5m$)=1.56, Exposure (ms)=1400, Rotation Step (\u00b0)=0.150, with frame averaging. Raw data were reconstructed using NRcon software (Version 1.6.10.4). For the reconstruction: Pixel Size ($\u00b5m$)=1.56202, Reconstruction Angular Range (deg)=360.00, Angular Step (deg)=0.1500, Ring Artifact Correction = 10, Smoothing = 0, Filter cutoff relative to Nyquist frequency = 100, Filter type description = Hamming (Alpha = 0.54), Beam Hardening Correction (%)=70.\n\n#### 3D statistical analysis with CTAn\n\nFor the statistics, the first 1316 bottom slices were used (2 mm of sample), to avoid slices not completely filled by sand and distortion effects that were seen in the top slices. The microCT images were processed by thresholding with Otsu method, despeckled (for white and black speckles, to reduce the noise) and a Median filter was applied with the the CTAn software (Version 1.16, Brucker). The 3D statistics regarding the grain-size distribution (trabecular thickness) and the water-gap distribution (trabecular separation) was obtained by the CTAn software (Version 1.16, Brucker). In this process, the grain sizes are quantified by the smallest dimension of the sediment grains. The distributions were fitted with a MATLAB fitting tool, using a Gaussian fitting model $aexp\u2061(\u2212(x\u2212\\mu)^{2}/c^{2})$. For the grain-size, the fitting was performed on the distribution of the logarithm of the size, while for the water-gaps the fitting was performed on the gap size. The 3D visualization was done with the Amira software.\n\n#### 2D statistical analysis\n\n##### 2D image preparation\n\nThe 2D slices obtained from the microCT reconstruction at different regular depths (0, 624, 1248 and 1872 \u00b5m) from the bottom of the cuvette, Figure 1a were first processed with ImageJ: the images were cropped in the center to avoid the border effects, they were binarized to get black and white masks and a Median filtering was applied for smoothing (Figure 1b).\n\n##### Circle fitting\n\nSubsequently, the images were analyzed by a custom-made MATLAB program (Figure 1c): erosion was applied to separate the grains from each other (settings: diamond shape and radius 9 pixels). Subsequently, the centroid function provided the center of each grain and the radius of a circle with equivalent area.\n\n##### Grain size statistics\n\nThe radii of the circular fit were used for calculating the statistics of the slice (Figure 1d). The percentage of sand was calculated as black pixels number over total number of pixel times 100. While the 3D analysis method estimates the smallest dimension of the grain and thus underestimated grain size, the 2D method slightly overestimates the biggest dimension of the grain (see Figure 2g).\n\n### Microfluidic channel\n\n#### Mask template preparation\n\nThe 2D microCT binarized and processed images (Figure 1b), and the binarized images (Figure 1e) obtained from the circle fitting (Figure 1c) were adapted to avoid air bubble formation and to improve water perfusion, with water-gaps manually increased in critical points. These binary figures were used as a template to design the photomask in AutoCAD 2015 obtaining 1330 \u03bcm-wide microchannels Figure 1f. The design of our microfluidic systems also included channels parallel to the obstacle channel on both sides that could be used to impose chemical gradients, these were, however, not used in the present study.\n\n#### Master mould production\n\nA high-resolution chrome photomask was obtained from Compugraphics Jena GmbH and was used to produce a master mould with $10\u00b5m$ deep features. The master mould was fabricated by baking a silicon wafer at 200\u00b0C for 20 min and allowing it to cool down to room temperature. An SU-8 3010 (MicroChem Inc) thin film was then spin-coated onto the wafer to a height of $10\u00b5m$ (spin coating parameters: 15 s at 500 rpm, followed by 30 s at 3000 rpm), followed by a soft-bake (1 min at 65\u00b0C, followed by 3 min at 95\u00b0C, and 1 min at 65\u00b0C), exposed for 5 s to UV light through the chrome mask with a mask aligner (Klo\u00e9 UV-KUB 3) according to the manufacturer recommendations, and post-exposure bake (1 min at 65\u00b0C, followed by 3 min at 95\u00b0C , and 1 min at 65\u00b0C). The wafers were then developed with mr-Dev 600 (microresist technologies). Prior to their use, the master molds were treated with 1H,1H,2H,2H-perfluorodecyltriethoxysilane 97% (abcr) to reduce PDMS adhesion upon usage.\n\n#### Microsystem fabrication\n\nThe microfluidic device was produced with polydimethylsiloxane (PDMS) via soft lithography. Briefly, PDMS elastomer monomer and curing agent (Sylgard 184, Dow Corning) were mixed in a ratio 10:1 and then degassed. The PDMS was casted onto the master mold to a height of 5 mm and was cured at 80 for 2 hr. The inlets for the fluidic channel were then punched with a 1.5 mm diameter biopsy punch (pmfmedical). The PDMS was bonded to a clean glass slide by plasma activation to finish the microfluidic system.\n\n### Swimming in sediment-like obstacle channels\n\n#### Bacterial culture\n\nMagnetospirillum gryphiswaldense MSR-1 (Schleifer et al., 1991) was cultured in MSR-1 growth medium with the composition indicated by Heyen and Sch\u00fcler, 2003, with the addition of pyruvate (27 mM) as carbon source instead of lactate. For the creation of an aerotactic band and the subsequent selection of swimming bacteria, the growth medium was supplemented with 0.1% agar. Briefly, 1 mL of bacteria was inoculated into the bottom of a 15 mL Hungate tube filled with 10 mL of MSR-1 growth medium with 0.1% agar. The tube was sealed with a rubber cap pierced with a needle capped with a 0.2 \u03bcm filter (Whatman) to allow the formation of an oxygen gradient. To select the North-seeking bacteria (i.e. swimming with the North of their magnet at their front in oxic conditions) in the formed band, the tube was put inside a pair of coils to apply a magnetic field parallel to the oxygen gradient, but pointing downwards to the anoxic region (equivalent to the situation that the bacteria experience in their natural habitat in the Northern Hemisphere). The bacteria were grown at 28\u00baC and allowed to form an aerotactic band. Once the band had formed, the motile bacteria were selected by aspirating the band with a needle and culturing them for two passes in standard MSR-1 growth medium and microaerobic conditions. Subsequently, the magnetic bacteria were collected with a needle by placing a magnet next to the tube to attract them. The final population of North-seeking bacteria was estimated to be about 80% of the population. In oxic conditions such as the ones in our experiment (where oxygen can freely diffuse through the PDMS into the microchannel), these bacteria swim with the North of their magnet at their front. The optical density was measured at 565 nm (OD565) and was adjusted as needed with fresh growth medium for subsequent measurements.\n\n#### Operation of the chip\n\nThe microfluidic system was filled with a syringe pump with MSR-1 standard growth medium at a flow rate of 15 \u03bcL\u00b7min\u20131 and was incubated at room temperature for 30 min prior to its use. Subsequently, 25 \u03bcmL of MSR-1 standard growth medium containing bacteria at an OD565 of 0.1 were placed in the inlet and the bacteria were allowed to swim into the microchannel, placed under a custom-designed magnetic microscope equipped with three pairs of Helmholtz coils (Bennet et al., 2014). Different magnetic field intensities (B = 0, 50, 500 \u03bcT) were applied parallel to the microchannel length. Bacteria were imaged with a 10 x objective using phase contrast microscopy.\n\n#### Monitoring of bacterial throughput\n\nWe counted the number of bacteria in the entry and exit regions of the channels (Figure 5A) in snapshots taken every 20 s in alternating order and summed the number in the exit region over all snapshots up to 30 min to obtain an estimate of the cumulative arrivals. These were normalized to the likewise cumulated counts in the entry region to account for differences in bacterial loading, resulting in the OUT:IN ratio plotted as a measure of throughput. The cumulated count was used in the normalization, because bacteria continue to enter into the entry region from the inlet during the experiment (this is different in our simulations, where all bacteria start at time zero at the beginning of the channel). The distribution of IN:OUT ratios at different field strengths were compared with a Mann-Whitney U test, pooling the results for different channels and excluding outliers with z-score> 2.\n\n#### Model and simulations\n\n##### Equations of Motion\n\nWe model a magnetotactic bacterium as an active Brownian sphere in two dimensions that has a permanent dipole moment $\\mu=\\mue^$ with the magnetic strength $\\mu$ at the particle center (Telezki and Klumpp, 2020; Codutti et al., 2019). The magnetic moment is aligned with the orientation of the particle $e^$, which defines the direction of self-propulsion with speed $v_{0}$. The orientation of the particle is described by an angle $\\phi$ in the 2d plane. The orientation vector is then given by $e^=(cos\u2061\\phi,sin\u2061\\phi)$ and the position vector is given by $r=(x,y)$. The two-dimensional equations of motion are then\n\n$$\nr\u02d9=v_{0}e^+\\frac{1}{\\gamma_{T}}F+\\sqrt{2D_{T}}\u03be^{T}\n$$\n\n\n\n$$\n\\phi\u02d9=\\frac{1}{\\gamma_{R}}\\tau+\\sqrt{2D_{R}}\u03be^{R},\n$$\n\nwhere $\\gamma_{T}$ and $\\gamma_{R}$ are the translational and rotational drag coefficients, $\u03be^{T}$ is the translational stochastic force, and $\u03be^{R}$ is the rotational stochastic torque. Both are described by Gaussian white noise with zero mean\n\n$$\n\u27e8\u03be^{T,R}\u27e9=0\u27e8\u03be^{T,R}(t)\u22c5\u03be^{T,R}(t^{\u2032})\u27e9=1\\delta(t\u2212t^{\u2032}).\n$$\n\n$D_{T}$ and $D_{R}$ are the corresponding diffusion coefficients.\n\n$F$ and $\\tau$ describe forces and torques acting on the particle. In this study, we do not include particle-particle interactions. Forces $F$ thus result solely from interactions with the obstacles representing the sand grains and with the confining walls of the channel. These forces are described by a Weeks-Chandler-Andersen potential between the particle and a virtual particle inside the obstacle (i.e. sand obstacle or wall). The virtual particle is located with its surface at shortest distance to the particle (i.e. with its center at a distance $\\frac{\\sigma}{2}$ from the surface). $r_{S}$ connects the virtual particle to the particle. The repulsive surface force $F^{S}$ is then derived from the potential:\n\n$$\nF^{S}={48\u03f5\\frac{r\u2192_{S}}{r_{S}^{2}}[(\\frac{\\sigma}{r_{S}})^{12}\u2212\\frac{1}{2}(\\frac{\\sigma}{r_{S}})^{6}]if\u00a0r_{S}<2^{1/6}\\sigma0if\u00a0r_{S}\\geq2^{1/6}\\sigma.\n$$\n\nHere, $\u03f5$ calibrates the strength of the force.\n\nThe torques $\\tau$ acting on the particle result from interactions with the obstacles ($\\tau_{S}$) and the applied external magnetic field ($\\tau_{B}$). The external magnetic field has magnitude $B$ and is applied in the direction of the exit of the channel. Because the field is homogeneous, particles experience no force but an aligning torque $\\tau_{B}=\\muBsin\u2061\\phi$. In addition, a torque arises from steric and hydrodynamic interactions with the surfaces of the obstacles and channel walls (Volpe et al., 2011; Kantsler et al., 2013; Bechinger et al., 2016; Ostapenko et al., 2018). To model the reorientation of the bacteria near a surface, we introduce a surface torque,\n\n$$\n\\tau^{S}=\\alpha[e^\\timesF^{S}]_{z}.\n$$\n\nwith a tuning parameter $\\alpha$ (with dimension of length), which we determine by matching the sliding distances along an obstacle wall to experimental observations.\n\nFor a quantitative comparison between numerical simulations and experimental data, we used the parameter values listed in Table 1.\n\n**Table 1.**\n Model parameters and their values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Symbol</th>\n      <th>Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Diameter of active particle</td>\n      <td>\u03c3</td>\n      <td>1 \u03bcm (Klumpp and Faivre, 2016)</td>\n    </tr>\n    <tr>\n      <td>Magnetic moment</td>\n      <td>\u03bc</td>\n      <td>4 \u00d7 10-16 J/T (Codutti et al., 2022; Nadkarni et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>Self-propulsion speed</td>\n      <td>v0</td>\n      <td>50 \u03bcm/s</td>\n    </tr>\n    <tr>\n      <td>Fluid temperature</td>\n      <td>T</td>\n      <td>298 K</td>\n    </tr>\n    <tr>\n      <td>Fluid viscosity</td>\n      <td>\u03b7</td>\n      <td>8.9 \u00d7 10-4 Pa/s</td>\n    </tr>\n    <tr>\n      <td>Magnetic field strength</td>\n      <td>B</td>\n      <td>[0 . . . 500] \u00b5T</td>\n    </tr>\n    <tr>\n      <td>Surface force parameter</td>\n      <td>\u03f5</td>\n      <td>4 kBT</td>\n    </tr>\n    <tr>\n      <td>Surface torque parameter</td>\n      <td>\u03b1</td>\n      <td>0.2 \u00b5m</td>\n    </tr>\n  </tbody>\n</table>\n\n##### Simulations\n\nWe solve the equations of motion in two dimensions by using overdamped Brownian dynamics (BD) simulations. The following reduced units were used: time $t^{\u2217}=tD_{0}^{T}/\\sigma^{2}$, where $D_{0}^{T}=k_{B}T/3\\pi\u03b7\\sigma$ is the translational diffusion constant; position $r^{\u2217}=r/\\sigma$; $\u03f5^{\u2217}=\u03f5/k_{B}T$; field strength $B^{\u2217}=B/B_{0}$, where $B_{0}=1\\times10^{\u22125}T$ is the order of magnitude of the magnetic field strength of the earth; dipole strength $\\mu^{\u2217}=\\muB_{0}/k_{B}T$. The dimensionless equations of motion were integrated for $N_{steps}=5\\times10^{6}$ time steps using the Euler-Maruyama method (Kloeden and Platen, 1992) with a time step $\u0394t^{\u2217}=2\\times10^{\u22125}$. We note that, with this choice of dimensionless units, the self-propulsion velocity $v_{0}^{\u2217}=v_{0}\\sigma/D_{0}^{T}$ is identical to the P\u00e9clet number.\n\nFor simulations of swimming through obstacle channels, we use spherical obstacles with the same positions and diameters as the cylindrical pillars in our microfluidic channels. We simulated all 10 different obstacle arrays. In each case, we initiated 2000 bacteria at position $x=0$ corresponding to the IN region and tracked their motion until they arrived at the end of the channel (with $x\\geq3495\u00b5m$) or until the maximal simulated time (30 min).\n\nFor simulations of the escape from traps, traps with random parameters were constructed from two spherical obstacles as shown in Figure 7a and d. We simulated the escape of 100 bacteria from each trap to determine the escape time.\n\n### Sliding measurements and parameterization of obstacle interactions in the simulations\n\nFigure 4b illustrates how we determined the sliding distance. The sliding distance is defined as the arc length (solid green arrow) that is covered by the center of mass trajectory (solid blue line) inside the sliding region (dotted green line). The sliding region was chosen to be slightly larger than the interaction region (orange dotted line), where $F^{S}>0$ and thus $\\tau^{S}>0$. The sliding region was set to $2\u00b5m$, when measured from the obstacles\u2019 surface. This choice allows to compare data from numerical simulations to the experiments. It corresponds to the spatial resolution $\u0394x\u22482\u00b5m$ of the microscope, which limits the precision with which the beginning and the end of contact with an obstacle surface can be identified.\n\nFollowing that protocol, we measured the sliding distances in the absence of a magnetic field ($B=0$) in the numerical simulations and experiment (Figure 4c) For $\\alpha=0.2\u00b5m$, the simulations match the experimentally measured sliding distances (Figure 4).\n",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shashi Thutupalli, Simons Centre for the Study of Living Machines, National Centre for Biological Sciences (TIFR) India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98001.3.sa0](https://doi.org/10.7554/eLife.98001.3.sa0)\n\nThis study presents valuable experimental and numerical results on the motility of a magnetotactic bacterium living in sedimentary environments, particularly in environments of varying magnetic field strengths. The evidence supporting the claims of the authors is compelling and the study will be of specific relevance to biophysicists interested in bacterial motility.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98001.3.sa1](https://doi.org/10.7554/eLife.98001.3.sa1)\n\nSummary:\n\nThe authors present experimental and numerical results on the motility Magnetospirillum gryphiswaldense MSR-1, a magnetotactic bacterium living in sedimentary environments. The authors manufactured microfluidic chips containing three-dimensional obstacles of irregular shape, that match the statistical features of the grains observed in the sediment via micro-computer tomography. The bacteria are furthermore subject to an external magnetic field, whose intensity can be varied. The key quantity measured in the experiments is the throughput ratio, defined as the ratio between the number of bacteria that reach the end of the microfluidic channel and the number of bacteria entering it. The main result is that the throughput ratio is non-monotonic and exhibits a maximum at magnetic field strength comparable with Earth's magnetic field. The authors rationalize the throughput suppression at large magnetic fields by quantifying the number of bacteria trapped in corners between grains.\n\nStrengths:\n\nWhile magnetotactic bacteria general motility in bulk has been characterized, we know much less about their dynamics in a realistic setting, such as a disordered porous material. The micro-computer tomography of sediments and their artificial reconstruction in a microfluidic channel is a powerful method that establishes the rigorous methodology of this work. This technique can give access to further characterization of the microbial motility. The coupling of experiments and computer simulations lends considerable strength to the claims of the authors, because the model parameters (with one exception) are directly measured in the experiments.\n\nWeaknesses:\n\nThe main weakness of the manuscript pertains to the comparison between simulations and experiments due to limitations in the tracking of bacteria in the experiments.\n\nImpact:\n\nBuilding on the present work, and refining the experimental setup may shed light on the microbial interactions in an environment such as soil which deserves further studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98001.3.sa2](https://doi.org/10.7554/eLife.98001.3.sa2)\n\nSummary:\n\nThe manuscript reports results of a combined experimental and simulation study of magnetotactic bacteria in microfluidic channels containing sediment-mimicking obstacles. The obstacles were produced based on micro-computer tomography reconstructions of bacteria-rich sediment samples. The swimming of bacteria through these channels is found experimentally to display the highest throughput for physiological magnetic fields. Computer simulations of active Brownian particles, parameterized based on experimental trajectories are used to quantify the swimming throughput in detail. Similar behavior as in experiments is obtained, but also considerable variability between different channel geometries. Swimming at strong field is impeded by the trapping of bacteria in corners, while at weak fields the direction of motion is almost random. The trapping effect is confirmed in the experiments, as well as the escape of bacteria with reducing field strength.\n\nStrengths:\n\nThis is a very careful and detailed study, which draws its main strength from the fruitful combination of construction of novel microfluidic devives, their use in motility experiments, and simulations of active Brownian particles adapted to the experiment.\n\nBased on their results, the authors hypothesize that magnetotactic bacteria may have evolved to produce magnetic properties that are adapted to the geomagnetic field in order to balance movement and orientation in such crowded environments. They provide strong arguments in favor of such a hypothesis.\n\nWeaknesses:\n\nSome of the issues touched upon here have been studied also in other articles. It would be good to extend the list of references accordingly and discuss the relation briefly in the text.\n\nComments on revisions:\n\nIn their rebuttal letter, the authors have responded in detail to all points raised in my previous report. They have revised their manuscript accordingly.\n",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ec73a721-deb7-463f-8a4a-eeeee6b5c32a",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C1",
+      "claim": "Microfluidic channels were produced that contained sediment-mimicking obstacles to study swimming of magnetotactic bacteria in a near-realistic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we produced microfluidic channels that contained sediment-mimicking obstacles to study swimming of magnetotactic bacteria in a near-realistic environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this experimental approach was used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "4df3506d-a11d-439e-9dbb-31ec833b2337",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C2",
+      "claim": "Magnetotactic bacteria are microorganisms that form chains of nanomagnets and orient in Earth's magnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetotactic bacteria are microorganisms that form chains of nanomagnets and that orient in Earth's magnetic field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about magnetotactic bacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "4d2c85ff-ab21-40d4-8453-99e8badfc589",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C3",
+      "claim": "The obstacles in the microfluidic channels were produced based on micro-computer tomography reconstructions of bacteria-rich sediment samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The obstacles were produced based on micro-computer tomography reconstructions of bacteria-rich sediment samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the methodology for creating the obstacles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "a358d4f1-e2d3-483a-8587-bcb8f03cfb5c",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C4",
+      "claim": "Swimming throughput was highest for physiological magnetic fields.",
+      "claim_type": "EXPLICIT",
+      "source": "We characterized the swimming of the cells through these channels and found that swimming throughput was highest for physiological magnetic fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "9771f88b-470c-4b51-be90-94a85ccb0db3",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C5",
+      "claim": "The observation of highest throughput at physiological field strengths was confirmed by extensive computer simulations using an active Brownian particle model.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was confirmed by extensive computer simulations using an active Brownian particle model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that simulations confirmed the experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "fdec9c51-4cd9-4f3a-9488-78891f293d3a",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C6",
+      "claim": "Swimming at strong fields is impeded by the trapping of bacteria in 'corners' that require transient swimming against the magnetic field for escape.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations indicate that swimming at strong fields is impeded by the trapping of bacteria in 'corners' that require transient swimming against the magnetic field for escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is identified through simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "115a1e15-b42f-4976-a1cd-5369fc25ff3e",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C7",
+      "claim": "At weak fields, the direction of swimming is almost random, making the process inefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "At weak fields, the direction of swimming is almost random, making the process inefficient as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "c9aa255f-4931-4e57-8fd6-5ba2c022a671",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C8",
+      "claim": "The trapping effect was confirmed in experiments by showing that lowering the field strength allows the bacteria to escape.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the trapping effect in our experiments and showed that lowering the field strength allows the bacteria to escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental validation of the trapping mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "28a0fe43-c8f5-4a29-bea7-8b4c1bda3233",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C9",
+      "claim": "Magnetotactic bacteria have evolved to produce magnetic properties that are adapted to the geomagnetic field in order to balance movement and orientation in crowded environments.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that over the course of evolution, magnetotactic bacteria have thus evolved to produce magnetic properties that are adapted to the geomagnetic field in order to balance movement and orientation in such crowded environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "7bd10068-73c1-4169-84e5-4d519188c5c8",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C10",
+      "claim": "The sediment sample consists of 61% sand and 39% water.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, the sample consists of 61% sand and 39% water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the sediment characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "e3a42751-28cf-45f8-ba47-465b1398be67",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C11",
+      "claim": "The distribution of particle sizes is approximately a log-normal distribution with a mean particle diameter of 46 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of particle sizes is approximately a log-normal distribution with a mean particle diameter of 46 \u03bcm (Figure 2e), which classifies this sediment as silt (Boggs, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "772090c1-dc14-4b27-8dfd-6d7e6f836af7",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C12",
+      "claim": "The sediment with a mean particle diameter of 46 \u03bcm classifies as silt.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of particle sizes is approximately a log-normal distribution with a mean particle diameter of 46 \u03bcm (Figure 2e), which classifies this sediment as silt (Boggs, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is based on cited literature (Boggs, 2011).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "44737141-8d75-40cb-b1c0-dabf9595e6a2",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C13",
+      "claim": "The water gap sizes follow a normal distribution with a mean of 43 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The water gap sizes follow a normal distribution with a mean of 43 \u03bcm (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "242e912f-e136-4761-ad2b-6c8c741610bf",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C14",
+      "claim": "The sediment sample was collected from the Gro\u00dfer Zernsee lake in Potsdam, Germany.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the swimming of magnetotactic bacteria in a near-realistic sediment environment that resembles their natural habitat, we produced microfluidic channels that contained sediment-mimicking obstacles (Figure 1, Figure 1\u2014figure supplement 1). To that end, we first characterized a sediment sample in water from the magnetotactic bacteria-rich lake Grosser Zernsee (Potsdam, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The location of sample collection is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "f15b0252-658e-4c60-aa0b-6b1e2cf5da94",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C15",
+      "claim": "A 3D reconstruction of the sediment sample was determined using micro-computer tomography with a resolution of 1.56 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined a 3D reconstruction of the sample using micro-computer tomography (\u03bcCT) with a resolution of 1.56 \u03bcm (Figure 2a\u2013d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The methodology and resolution are explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "5f60a6b4-cd91-4e4c-8a1d-c6d1eb3f3678",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C18",
+      "claim": "In channels without obstacles, throughput increases monotonically with increasing field strength.",
+      "claim_type": "EXPLICIT",
+      "source": "but agrees with the observation for a channel without obstacles in which the throughput increases monotonically with increasing field strength (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a control experiment result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "66626992-f90f-4893-b6ea-e6422c778fe1",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C19",
+      "claim": "Very similar results were obtained for channels with cylindrical pillars and with irregularly shaped pillars.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained very similar results for channels with cylindrical pillars and with irregularly shaped pillars (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "288262ed-866d-4396-9cb1-1aecf06cd243",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C20",
+      "claim": "The strength of the magnetic field has a strong impact on the throughput, with a non-monotonic dependence on the field strength.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found the strength of the magnetic field to have a strong impact on the throughput, with a non-monotonic dependence on the field strength (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "94d2c0ab-bc7c-4f71-a61e-7d3f837e45ef",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C21",
+      "claim": "The maximal throughput was obtained for the intermediate field strength of 50 \u03bcT.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal throughput was obtained for the intermediate field strength of 50 \u03bcT, while without a field as well as with a field of 500 \u03bcT the throughput was smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "f232c5c4-4bb4-49c0-93b3-71f82f2db666",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C22",
+      "claim": "A magnetic field of similar strength to the Earth's field enhances the flux of bacteria through the obstacle channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that a magnetic field of a similar strength of the Earth's field enhances the flux of bacteria through the obstacle channel, but a too strong or null magnetic field inhibits it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "1dd9f0f2-be6b-4ec7-98ea-9fd9abe86196",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C23",
+      "claim": "Magnetotactic bacteria were modeled as dipolar active Brownian particles that align in an external magnetic field and interact with obstacles and walls.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we modeled the magnetotactic bacteria as dipolar active Brownian particles that align in an external magnetic field and interact with obstacles and walls present in the simulation box (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The modeling approach is explicitly described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "71a628e0-36cd-41f2-b8d2-94bd5cd0bc4c",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C24",
+      "claim": "When a bacterium meets an obstacle, it slides along the contour of that obstacle for some distance before leaving it again.",
+      "claim_type": "EXPLICIT",
+      "source": "When a bacterium meets an obstacle, it slides along the contour of that obstacle for some distance before leaving it again, as shown in Figure 4a.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This behavior is observed in experiments and shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "482834af-d026-48f4-a923-376c6e5642df",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C25",
+      "claim": "Similar sliding behavior has been observed in other microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar behavior has been observed in other microorganisms (Rothschild, 1963; Berg and Turner, 1990; Tuson and Weibel, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "b88d93d2-fe76-4493-b5ec-db34f2d99da6",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C26",
+      "claim": "The sliding distance along an obstacle is greatly influenced by the surface torque parameter \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the sliding distance along an obstacle is greatly influenced by the surface torque parameter \u03b1 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on simulation results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "b50746f6-e364-4cb0-b532-6fd74c313889",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C28",
+      "claim": "Only a weak dependence on curvature was observed in both experimental and simulated trajectories for sliding distances from obstacles of different sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "When analyzing sliding distances from obstacles of different sizes and thus different curvatures, we saw only a weak dependence on the curvature in both experimental and simulated trajectories (Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from both experiments and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "8fbc681e-a5d9-4c20-b17b-467bca3c2f6f",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C29",
+      "claim": "In the experiments, bacteria appeared to be slower while sliding along the walls compared to free swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that in the experiments, the bacteria appeared to be slower while sliding along the walls compared to free swimming. This effect was neglected in the simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation that was not included in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "8678ead0-21de-4c02-a243-49cdc253d32b",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C30",
+      "claim": "The channel's geometry organizes the trajectories into 'natural paths'.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the channel's geometry organizes the trajectories into 'natural paths.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "a4346986-901b-4f8d-aac7-fbe4d71f53db",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C31",
+      "claim": "When bacteria encounter overlapping obstacles, they can get trapped.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when bacteria encounter overlapping obstacles, they can get trapped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulations and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "3fb7c684-408e-403d-baeb-b49938b46e20",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C32",
+      "claim": "To escape a trap, bacteria need to reorient temporarily against the direction of the magnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "To escape a trap, bacteria need to reorient temporarily against the direction of the magnetic field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "a3c3d4f5-96b2-49e4-bf0f-31979a5acba0",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C33",
+      "claim": "Increasing the magnetic field strength causes bacteria to be on average more aligned with the direction of the magnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the magnetic field strength has two opposing effects: On the one hand, bacteria are on average more aligned with the direction of the magnetic field and the observed paths through the channel become more focused as their persistence length increases with increasing field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "2a02cc50-bf00-4f3a-8f6f-2d4069508518",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C34",
+      "claim": "Bacteria become more susceptible to trapping with increasing field strength.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, bacteria become more susceptible to trapping with increasing field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "b3b46bb1-3523-420d-a259-c42eb4c4476a",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C35",
+      "claim": "For a field of 500 \u03bcT, no simulated bacterium crossed the channel within the simulation time.",
+      "claim_type": "EXPLICIT",
+      "source": "For a field of 500 \u03bcT, no simulated bacterium crossed the channel within the simulation time and the path that was dominant at 50 \u03bcT now ends in a trap, from which the bacteria can no longer escape at 500 \u03bcT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "6294411b-c9b2-4afd-8365-fe38412c02c3",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C36",
+      "claim": "Escape from traps requires that the bacteria transiently orient against the field.",
+      "claim_type": "EXPLICIT",
+      "source": "This negative effect of the magnetic field arises because escape from traps requires that the bacteria transiently orient against the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "f4cf2bc7-adf7-43ff-a6b9-ff7c50fad4d3",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C37",
+      "claim": "The first arrival time decreases with increasing field strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The first arrival time decreases with increasing field strength, however, the poor throughput for weak fields is mostly due to the slow arrival of the bulk of the bacteria, while some bacteria still cross the channel on an almost direct path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the simulations shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "cb9e3b00-2488-4a4a-9e6f-648f53dee4e5",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C38",
+      "claim": "The fraction of arrivals shows non-monotonic behavior as indicated by experimental results.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of arrivals, by contrast, shows the non-monotonic behavior indicated by our experimental results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as agreement between simulations and experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "ac3b9ab4-d001-420c-93e0-001433055868",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C41",
+      "claim": "The observation of a pronounced maximum in the throughput of the channel agrees well with experimental observations.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of a pronounced maximum in the throughput of the channel as well as of the variability in throughput between channels in our simulations agree well with the experimental observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as agreement between simulations and experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "35d03d56-298e-4a83-8a8c-4fe25226d306",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C42",
+      "claim": "The simulations show lower throughput as well as lower variability in throughput than the experiments in the case without a magnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the simulations show lower throughput as well as lower variability in throughput than the experiments in the case without a magnetic field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a discrepancy between simulations and experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "b4ffd9fb-3f68-4a18-b95f-543990a4119a",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C43",
+      "claim": "The difference between simulations and experiments is attributed to different initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this difference to different initial conditions in experiment and simulations. In the simulations, all bacteria start simultaneously at the beginning of the obstacle channel, while in the experiments they enter from the inlet and continue to do so during the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the observed discrepancy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "f44a518b-50dd-4fec-a514-e07f3eade4b1",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C44",
+      "claim": "Escape times from symmetric traps are approximately exponentially distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, particles escape symmetrically in both directions, with an escape time that is, in a good approximation, exponentially distributed (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from trap simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "2d110734-5f99-49f4-8613-9333caf376ee",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C45",
+      "claim": "Varying the magnetic field strength results in an exponential dependence of the escape time on the field strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying the magnetic field strength results in an exponential dependence of the escape time on the field strength (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from trap simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "4a446962-9937-4733-b264-52aa2fd8d9db",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C46",
+      "claim": "The escape from a trap is similar to the classical problem of an escape from a potential well due to thermal fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the escape from a trap is similar to the classical problem of an escape from a potential well due to thermal fluctuations (Kramers, 1940; H\u00e4nggi et al., 1990), even though the underlying fluctuations that orient the particle against the field are not of thermal origin here, but mostly result from the interaction of the active particle with the obstacle wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation with citations to relevant literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "764e3989-d842-418f-bee0-5b6d19950384",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C47",
+      "claim": "Thermal-like distributions have been found for the sedimentation of active particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, thermal-like distributions have been found for a related problem, the sedimentation of active particles (Tailleur and Cates, 2009; Palacci et al., 2010), specifically an exponential density profile characterized by an effective temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the analogy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "1ae536ba-f3c5-4df8-8c19-7842f3118bcf",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C48",
+      "claim": "An approximately exponential dependence on trap depth is observed for symmetric traps.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we see an approximately exponential dependence on the trap depth d (blue data points in Figure 7e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from trap simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "69583318-f140-46a9-a270-7b98bf113b63",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C50",
+      "claim": "Bacteria were observed trapped in a corner as indicated by a constant bacterial density in the trap.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we could see bacteria trapped in this corner as indicated by a constant bacterial density in the trap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "ec5cbe54-4c1d-495e-85b8-9dbafb04f80c",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C51",
+      "claim": "After reducing the field strength from 500 \u03bcT to 50 \u03bcT and then to 0 \u03bcT, a reduction of the bacterial density in the trap was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We then reduced the field strength in two steps, first from 500 \u03bcT to 50 \u03bcT and then to 0 \u03bcT. After both steps, we could observe a reduction of the bacterial density (Figure 8), indicating the expected release of bacteria from the trap upon reduction of the field",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental observation shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "1deab0f4-0581-471b-b1d4-a1bceab12bb8",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C52",
+      "claim": "The reduction in bacterial density upon field reduction provides direct evidence for trapping in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "After both steps, we could observe a reduction of the bacterial density (Figure 8), indicating the expected release of bacteria from the trap upon reduction of the field and providing direct evidence for trapping in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "78fe6431-20ff-4a09-91ac-049d92c5a164",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C53",
+      "claim": "The ability to swim against the magnetic field may be essential for escape from traps.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation suggests that the ability to swim against the magnetic field, which usually directs the motion of the magnetotactic bacteria may be essential under some conditions such as the escape from traps studied here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "df130d48-e80e-4ce4-873a-55545323f24d",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C54",
+      "claim": "The ability to swim against the magnetic field requires that the interaction with the magnetic field is not too dominant.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability requires that the interaction with the magnetic field is not too dominant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "02045462-2b64-4707-a59e-089faa9ec208",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C55",
+      "claim": "The strength of the Earth's magnetic field might constrain the magnetic moment of magnetotactic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in the natural habitat, the strength of the field is given by the magnetic field of the Earth and thus fixed, this might constrain the magnetic moment of magnetotactic bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "00ca4536-4b2c-443e-a6d6-7677877325a0",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C56",
+      "claim": "The alignment of different strains of magnetotactic bacteria with a field comparable to the Earth field has been observed to be considerably below 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the alignment of different strains of magnetotactic bacteria with a field comparable to the Earth field has been observed to be considerably below 100% (Klumpp et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "5794ddbe-b486-4808-a6e4-7e2ab4337e17",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C57",
+      "claim": "The ability to swim against the direction of a magnetic field is important for magneto-areotactic band formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to swim against the direction of a magnetic field is also important for magneto-areotactic band formation (Codutti et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "eb12c78d-f1e5-4819-8c83-eff68a3a5cea",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C58",
+      "claim": "Band formation requires swimming against the field direction for an extended amount of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the situation here, band formation requires swimming against the field direction for an extended amount of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a contrast to the trap escape scenario.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "4cb32429-409c-45b9-b9cb-83eb3d5f974e",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C59",
+      "claim": "For escape from a trap, only transient swimming against the field is needed.",
+      "claim_type": "EXPLICIT",
+      "source": "For escape from a trap, only transient swimming against the field is needed, so direction reversals may be less important here, even though they can also provide a mechanism for escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "c689bb1d-3be6-45f3-9591-0aa537079da8",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C60",
+      "claim": "Reversals are rare in M. gryphiswaldense under confinement and are not induced by collisions with walls.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous work, we have shown that reversals are rare in M. gryphiswaldense under confinement and that they are not induced by collisions with walls (Codutti et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "5772360e-e585-4d08-87ad-09766b5d7f92",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C61",
+      "claim": "Magnetotactic bacteria are predominantly found in micro-oxic aquatic environments, near the oxic-anoxic transition zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetotactic bacteria are predominantly found in micro-oxic aquatic environments, near the oxic-anoxic transition zone (Bazylinski and Frankel, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "9fb37747-83b9-4c69-8acb-63fb99c64294",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C62",
+      "claim": "Micro-oxic regions are often found in the sediment rather than in open water.",
+      "claim_type": "EXPLICIT",
+      "source": "Often, these micro-oxic regions are found in the sediment rather than in open water, so that magnetotactic bacteria typically live in a sedimentary environment that is sand or mud.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about magnetotactic bacteria habitats.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "cfc8c35b-07c4-4e73-91af-528c904ae681",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C63",
+      "claim": "Hopping between traps has been described as a generic feature of active motion in porous environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Hopping between traps has been described as a generic feature of active motion in porous environments (Kurzthaler et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "817839cf-85d6-4ce6-a9e9-e4e9a57750c0",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C64",
+      "claim": "The escape from traps depends on the strength of the magnetic field and the bacteria's interaction with the obstacle walls.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, however, the escape from the traps does not only depend on the intrinsic properties of the bacteria's swimming, but also the strength of the magnetic field and their interaction with the obstacle walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinction from generic hopping behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "da252c69-ff3a-4c3c-a852-85ee7e1f1eeb",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C65",
+      "claim": "Magnetospirillum gryphiswaldense MSR-1 was cultured in MSR-1 growth medium with pyruvate as carbon source instead of lactate.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetospirillum gryphiswaldense MSR-1 (Schleifer et al., 1991) was cultured in MSR-1 growth medium with the composition indicated by Heyen and Sch\u00fcler, 2003, with the addition of pyruvate (27 mM) as carbon source instead of lactate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "2fd04bb8-cf93-40f6-a0d0-221728b179c9",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C66",
+      "claim": "The final population of North-seeking bacteria was estimated to be about 80% of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "The final population of North-seeking bacteria was estimated to be about 80% of the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the bacterial selection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "0af91110-5160-420d-b363-907326907450",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C67",
+      "claim": "In oxic conditions, North-seeking bacteria swim with the North of their magnet at their front.",
+      "claim_type": "EXPLICIT",
+      "source": "In oxic conditions such as the ones in our experiment (where oxygen can freely diffuse through the PDMS into the microchannel), these bacteria swim with the North of their magnet at their front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation of bacterial behavior in the experimental conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "7ae72a32-94ed-4211-8b9b-a2b4721e66ad",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C68",
+      "claim": "The sediment sample was collected from the first layer of sediment (5 cm) in the shallow water nearby the shore of Gro\u00dfer Zernsee lake.",
+      "claim_type": "EXPLICIT",
+      "source": "The sediment sample was collected in the Gro\u00dfer Zernsee lake (Potsdam, Germany), from the first layer of sediment (5 cm) in the shallow water nearby the shore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "17c9f4bf-c06e-4c6f-89ef-7f18d52e2ba3",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C69",
+      "claim": "The micro-computer tomography scan was performed with the SkyScan 1172 scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "The micro-computer tomography scan was performed with the SkyScan 1172 scanner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "992a3a16-c347-4c8c-bc78-5e0558064304",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C70",
+      "claim": "The sand-to-water percentage varies from 62\u201366% from top to bottom of the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis returns similar values of the sand-to-water percentage (62\u201366% from top to bottom, see Figure 2g, with the small difference possibly due to sedimentation of the sediment under gravity).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the 2D analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "8aca768d-7f09-402d-bf51-d34168941149",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "claim_id": "C71",
+      "claim": "The mean radii of circular fits to the grains varies from 68 to 62 \u03bcm from bottom to top.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean radii of circular fits to the grains varies from 68 to 62 \u03bcm from bottom to top (Figure 2g), further potentially indicating a slight effect of sedimentation by gravity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the 2D analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microfluidic channels containing sediment-mimicking obstacles were created based on micro-CT reconstructions of sediment from Gro\u00dfer Zernsee lake. The sediment was characterized as 61% sand and 39% water with a mean particle diameter of 46 \u03bcm (classified as silt) and mean water gap size of 43 \u03bcm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15, C68-C71 provide comprehensive methodological details and characterization data for the sediment and microfluidic channel construction. The \u03bcCT imaging (1.56 \u03bcm resolution), statistical analysis of particle sizes and water gaps, and channel fabrication are well-documented with supporting figures and consistent measurements across 2D and 3D analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "c4c22fd4-1454-4539-b597-74780428b95a",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Swimming throughput of magnetotactic bacteria through obstacle channels was highest at the intermediate field strength of 50 \u03bcT (physiological Earth field strength), with lower throughput at both 0 \u03bcT and 500 \u03bcT. This non-monotonic dependence on field strength was observed in channels with both cylindrical and irregularly shaped pillars, but not in channels without obstacles where throughput increased monotonically with field strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18-C22 collectively demonstrate the key experimental finding with appropriate controls. The non-monotonic relationship is statistically significant (Mann-Whitney test, p<0.001 for 500 \u03bcT vs 50 \u03bcT reduction; p=0.028 for 0 vs 50 \u03bcT increase), and the control experiment without obstacles confirms that the effect is specific to obstacle navigation. The consistency across different pillar geometries strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "3d740d07-fc6c-4c1f-9b85-061c0d9ce1ca",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An active Brownian particle model with dipolar alignment and obstacle interactions was developed to simulate bacterial swimming, with the surface torque parameter \u03b1 calibrated to \u03b1=0.2 \u03bcm by matching sliding distances along obstacles between simulations and experiments. The model reproduced experimental observations of bacterial sliding behavior along obstacle surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C23-C29 describe a well-parameterized computational model. The single free parameter (\u03b1) was systematically calibrated using experimental sliding distance distributions (Figure 4), providing quantitative validation. The model appropriately captures the key physics of magnetotactic bacterial motion, though one limitation is noted: bacteria appeared slower while sliding in experiments, which was neglected in simulations (C29).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulations revealed that channel geometry organizes bacterial trajectories into 'natural paths,' but overlapping obstacles create traps requiring transient swimming against the magnetic field for escape. Increasing field strength has opposing effects: enhanced alignment and faster directed motion versus increased susceptibility to trapping. At 500 \u03bcT, no bacteria crossed the channel within simulation time, while intermediate fields (50 \u03bcT) showed optimal throughput, reproducing the experimental non-monotonic behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C38, C41 provide a mechanistic explanation for the experimental observations through extensive simulations across 10 different channel geometries. The simulations quantitatively reproduce the non-monotonic throughput behavior and identify the physical mechanism (trapping vs. alignment trade-off). The agreement between simulations and experiments validates both the model and the mechanistic interpretation, though some discrepancy exists at B=0 attributed to different initial conditions (C42-C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "96d7d588-b31b-4ffd-99ea-d182e00a836c",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulations showed lower throughput and variability than experiments at zero magnetic field, which was attributed to different initial conditions: all bacteria starting simultaneously in simulations versus continuous entry from the inlet in experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C43 identify a discrepancy and propose an explanation, but this remains speculative without direct testing. The proposed mechanism (initial condition differences) is plausible but not validated experimentally or through modified simulations. This represents a limitation in the model-experiment agreement that could affect interpretation of results at weak fields.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "2119bc6f-6df1-4183-a747-41803eee2e2b",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Escape from symmetric traps follows approximately exponential time distributions with exponential dependence on both magnetic field strength and trap depth, analogous to thermal escape from potential wells despite the non-thermal origin of fluctuations from active particle-wall interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 demonstrate quantitative characterization of trap escape dynamics with appropriate statistical analysis. The analogy to Kramers escape theory is well-supported by the exponential distributions observed in simulations (Figure 7), and the comparison to thermal-like behavior in active particle sedimentation (C47) provides theoretical context. The distinction that fluctuations arise from wall interactions rather than thermal noise is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "cd0f20a9-461b-4468-b5ea-9edffee498d0",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Experimental validation of trapping was achieved by monitoring bacterial density in a corner trap at 500 \u03bcT, then reducing field strength to 50 \u03bcT and 0 \u03bcT. Bacterial density decreased after each field reduction, directly confirming that bacteria were trapped and could escape when field strength was lowered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C50-C52 provide direct experimental evidence for the trapping mechanism predicted by simulations. The sequential field reduction experiment (Figure 8) is well-designed to test the hypothesis, and the observed density reductions upon field reduction provide clear support for field-dependent trapping. This validates a key prediction of the computational model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study hypothesizes that magnetotactic bacteria have evolved magnetic properties adapted to the geomagnetic field to balance movement and orientation in crowded environments. This requires that magnetic field interaction not be too dominant, allowing transient swimming against the field for trap escape, which may constrain bacterial magnetic moments and explain observed sub-100% alignment at Earth field strengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6-C7, C9, C53-C56 present an evolutionary hypothesis based on the experimental and simulation findings. While the mechanistic observations (trapping at high fields, inefficiency at low fields) are well-supported, the evolutionary interpretation remains speculative. The supporting citation (C56) about sub-100% alignment provides correlative evidence but does not establish causation. This is appropriately framed as a hypothesis requiring further testing across multiple species and evolutionary contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "5d691d4c-ddac-48b3-b4bc-15570d954fac",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ability to swim against magnetic field direction is important for both trap escape (requiring only transient opposition) and magneto-aerotactic band formation (requiring extended opposition). Direction reversals, which are rare in M. gryphiswaldense under confinement and not induced by wall collisions, may be less important for trap escape than for band formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 appropriately contextualize the findings within broader magnetotactic bacterial behavior, distinguishing between transient and sustained swimming against the field. The citations to prior work (C57, C60) support the claims about band formation and reversal behavior. The distinction between mechanisms for different behavioral contexts is logical and well-reasoned.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "ac7a23d6-b423-41cc-94f2-b805ff474a5c",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Magnetotactic bacteria naturally inhabit micro-oxic sedimentary environments near the oxic-anoxic transition zone. While hopping between traps is a generic feature of active motion in porous media, escape in magnetotactic bacteria uniquely depends on magnetic field strength and wall interactions in addition to intrinsic swimming properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C61-C64 provide appropriate biological and physical context for the study. The habitat description is supported by citations (C61), and the distinction between generic active particle behavior and the specific case of magnetotactic bacteria (C63-C64) is well-articulated. This contextualizes why magnetic field strength is a critical parameter for this system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "aa607b9a-43fc-495c-9261-7568bb91203e",
+      "content_id": "4a462ba5-cdc7-4fce-b0fb-5b8bb2623c6f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "M. gryphiswaldense MSR-1 was cultured with pyruvate as carbon source and enriched for North-seeking bacteria (approximately 80% of final population), which swim with the North pole of their magnet forward in the oxic experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 provide clear methodological details for bacterial culture and selection. The enrichment procedure and resulting population composition are explicitly stated, and the explanation of swimming orientation in oxic conditions (C67) is consistent with known magnetotactic bacterial behavior. These details are important for reproducibility and interpretation of directional swimming results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "ea30d141-1628-46f7-a326-2d6d202a5b85",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors created microfluidic channels containing sediment-mimicking obstacles based on micro-computer tomography (\u03bcCT) reconstructions of sediment samples from Gro\u00dfer Zernsee lake. The sediment was characterized as 61% sand and 39% water with a mean particle diameter of 46 \u03bcm (classified as silt) and water gap sizes with a mean of 43 \u03bcm.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praised this methodology, with one stating 'The micro-computer tomography of sediments and their artificial reconstruction in a microfluidic channel is a powerful method that establishes the rigorous methodology of this work.' Another reviewer noted 'This is a very careful and detailed study' and praised the 'construction of novel microfluidic devices.' No concerns were raised about the sediment characterization or channel fabrication.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "5f1d02af-7cf0-4f8e-9464-1197d6fdf188",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Experimental measurements showed that swimming throughput through obstacle channels exhibited a non-monotonic dependence on magnetic field strength, with maximal throughput at the intermediate field strength of 50 \u03bcT (comparable to Earth's magnetic field), while throughput was lower at 0 \u03bcT and 500 \u03bcT.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers identified this as 'the main result' and stated that 'the evidence supporting the claims of the authors is compelling.' One reviewer summarized: 'The main result is that the throughput ratio is non-monotonic and exhibits a maximum at magnetic field strength comparable with Earth's magnetic field.' No concerns were raised about this experimental finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "c5430a7b-ad2a-4108-9394-43ec49b6a4d0",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Computer simulations using an active Brownian particle model confirmed the experimental observation of non-monotonic throughput behavior, with simulations showing a pronounced maximum in throughput and agreement with experimental observations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers praised the simulation approach, noting 'The coupling of experiments and computer simulations lends considerable strength to the claims of the authors, because the model parameters (with one exception) are directly measured in the experiments.' The study's strength was described as drawing from 'the fruitful combination of construction of novel microfluidic devices, their use in motility experiments, and simulations of active Brownian particles adapted to the experiment.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Simulations revealed that swimming at strong magnetic fields is impeded by trapping of bacteria in 'corners' between overlapping obstacles, requiring transient swimming against the magnetic field for escape. At 500 \u03bcT, bacteria become highly susceptible to trapping and no simulated bacterium crossed the channel within simulation time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledged this mechanism, with one stating 'The authors rationalize the throughput suppression at large magnetic fields by quantifying the number of bacteria trapped in corners between grains' and another noting 'Swimming at strong field is impeded by the trapping of bacteria in corners.' No concerns were raised about this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "a30af434-23c6-4b85-a053-77729317069b",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "At weak magnetic fields, the direction of swimming is almost random, making the process inefficient. The first arrival time decreases with increasing field strength, but poor throughput at weak fields is due to slow arrival of the bulk of bacteria.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged this finding, with one stating 'while at weak fields the direction of motion is almost random.' This was presented as part of the overall mechanism explaining the non-monotonic behavior and was not questioned by reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "1e8cd9fb-1952-40af-8e6f-a4d3c2695bca",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The trapping effect was confirmed experimentally by observing bacteria trapped in a corner at 500 \u03bcT (indicated by constant bacterial density), and showing that reducing the field strength to 50 \u03bcT and then 0 \u03bcT resulted in reduction of bacterial density in the trap, indicating escape.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly noted this validation, stating 'The trapping effect is confirmed in the experiments, as well as the escape of bacteria with reducing field strength.' This experimental confirmation of the simulation-predicted mechanism was recognized without criticism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "66aedc22-d8bd-4a9f-b605-324b6c8f9ce3",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "When bacteria meet obstacles, they slide along the contour for some distance before leaving. The sliding distance is greatly influenced by the surface torque parameter \u03b1, with only weak dependence on obstacle curvature. Bacteria appeared slower while sliding compared to free swimming in experiments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not raise concerns about these behavioral observations. The sliding behavior was part of the model parameterization that reviewers praised, noting 'model parameters (with one exception) are directly measured in the experiments.' The observation about slower sliding was acknowledged as neglected in simulations without criticism.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "52072c8b-a03a-4608-8d54-68f99631b3df",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The channel's geometry organizes bacterial trajectories into 'natural paths' through the obstacle array.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This interpretation of simulation results was not questioned by reviewers and fits within their overall positive assessment of the simulation approach and its insights into bacterial navigation through complex geometries.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "5cbd4c04-78d4-4338-9fb2-4bb7df84ed5f",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Simulations showed lower throughput and lower variability in throughput than experiments in the case without a magnetic field, which the authors attributed to different initial conditions (simultaneous start in simulations vs. continuous entry in experiments).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer identified 'The main weakness of the manuscript pertains to the comparison between simulations and experiments due to limitations in the tracking of bacteria in the experiments.' This suggests the discrepancy and its explanation may not be fully resolved, though reviewers did not explicitly reject the authors' interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "94f14060-580e-4052-850c-eff05cc3b7cd",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Escape times from symmetric traps are approximately exponentially distributed, with exponential dependence on both magnetic field strength and trap depth. This behavior is analogous to classical escape from a potential well due to thermal fluctuations, though the fluctuations here result from active particle-wall interactions rather than thermal motion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not question this detailed analysis of trap escape dynamics. The analogy to thermal escape was part of the theoretical framework that reviewers found compelling, as evidenced by their statement that the authors 'provide strong arguments in favor of' their hypothesis about evolutionary adaptation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "75df8c7c-cddc-4244-b76f-a9781c1c0bb6",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors hypothesize that magnetotactic bacteria have evolved magnetic properties adapted to the geomagnetic field to balance movement and orientation in crowded environments. This requires that interaction with the magnetic field is not too dominant, potentially constraining the magnetic moment of these bacteria.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorsed this hypothesis, stating 'Based on their results, the authors hypothesize that magnetotactic bacteria may have evolved to produce magnetic properties that are adapted to the geomagnetic field in order to balance movement and orientation in such crowded environments. They provide strong arguments in favor of such a hypothesis.' This represents reviewer acceptance of the evolutionary interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "7fb74f8b-6c26-426a-9cb0-855b8a706c96",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Control experiments showed that in channels without obstacles, throughput increases monotonically with increasing field strength. Very similar results were obtained for channels with cylindrical pillars and irregularly shaped pillars.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These control experiments were not questioned by reviewers and serve as important validation that the non-monotonic behavior is specifically due to the obstacle geometry. Reviewers' overall assessment of compelling evidence implicitly includes these controls.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "3933fca8-0019-48d7-9f31-57eee94b6fc2",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The ability to swim against the magnetic field is important for various behaviors including magneto-aerotactic band formation and trap escape. For trap escape, only transient swimming against the field is needed. Magnetotactic bacteria typically live in sedimentary micro-oxic environments, and escape from traps in these environments depends on magnetic field strength and wall interactions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these contextual claims and interpretations. One reviewer noted 'Some of the issues touched upon here have been studied also in other articles' and suggested extending references, but this indicates acceptance of the connections made rather than rejection of the claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "98c1f298-4711-4237-b237-8acf2746a12a",
+      "content_id": "70b32cb3-5093-4d47-8b4c-e28f312ae5cc",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "Magnetotactic bacteria are microorganisms that form chains of nanomagnets and orient in Earth's magnetic field. The study used Magnetospirillum gryphiswaldense MSR-1 cultured with pyruvate, with a final population of about 80% North-seeking bacteria that swim with the North of their magnet at their front in oxic conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological and background details were not questioned by reviewers. The careful methodology was praised, and these details are part of the rigorous experimental approach that reviewers commended.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ec73a721-deb7-463f-8a4a-eeeee6b5c32a",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "4d2c85ff-ab21-40d4-8453-99e8badfc589",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "7bd10068-73c1-4169-84e5-4d519188c5c8",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "e3a42751-28cf-45f8-ba47-465b1398be67",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "772090c1-dc14-4b27-8dfd-6d7e6f836af7",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "44737141-8d75-40cb-b1c0-dabf9595e6a2",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "242e912f-e136-4761-ad2b-6c8c741610bf",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "f15b0252-658e-4c60-aa0b-6b1e2cf5da94",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "7ae72a32-94ed-4211-8b9b-a2b4721e66ad",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "17c9f4bf-c06e-4c6f-89ef-7f18d52e2ba3",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "992a3a16-c347-4c8c-bc78-5e0558064304",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "8aca768d-7f09-402d-bf51-d34168941149",
+      "result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6"
+    },
+    {
+      "claim_id": "a358d4f1-e2d3-483a-8587-bcb8f03cfb5c",
+      "result_id": "c4c22fd4-1454-4539-b597-74780428b95a"
+    },
+    {
+      "claim_id": "288262ed-866d-4396-9cb1-1aecf06cd243",
+      "result_id": "c4c22fd4-1454-4539-b597-74780428b95a"
+    },
+    {
+      "claim_id": "94d2c0ab-bc7c-4f71-a61e-7d3f837e45ef",
+      "result_id": "c4c22fd4-1454-4539-b597-74780428b95a"
+    },
+    {
+      "claim_id": "f232c5c4-4bb4-49c0-93b3-71f82f2db666",
+      "result_id": "c4c22fd4-1454-4539-b597-74780428b95a"
+    },
+    {
+      "claim_id": "5f60a6b4-cd91-4e4c-8a1d-c6d1eb3f3678",
+      "result_id": "c4c22fd4-1454-4539-b597-74780428b95a"
+    },
+    {
+      "claim_id": "66626992-f90f-4893-b6ea-e6422c778fe1",
+      "result_id": "c4c22fd4-1454-4539-b597-74780428b95a"
+    },
+    {
+      "claim_id": "9771f88b-470c-4b51-be90-94a85ccb0db3",
+      "result_id": "3d740d07-fc6c-4c1f-9b85-061c0d9ce1ca"
+    },
+    {
+      "claim_id": "1dd9f0f2-be6b-4ec7-98ea-9fd9abe86196",
+      "result_id": "3d740d07-fc6c-4c1f-9b85-061c0d9ce1ca"
+    },
+    {
+      "claim_id": "71a628e0-36cd-41f2-b8d2-94bd5cd0bc4c",
+      "result_id": "3d740d07-fc6c-4c1f-9b85-061c0d9ce1ca"
+    },
+    {
+      "claim_id": "b88d93d2-fe76-4493-b5ec-db34f2d99da6",
+      "result_id": "3d740d07-fc6c-4c1f-9b85-061c0d9ce1ca"
+    },
+    {
+      "claim_id": "b50746f6-e364-4cb0-b532-6fd74c313889",
+      "result_id": "3d740d07-fc6c-4c1f-9b85-061c0d9ce1ca"
+    },
+    {
+      "claim_id": "8fbc681e-a5d9-4c20-b17b-467bca3c2f6f",
+      "result_id": "3d740d07-fc6c-4c1f-9b85-061c0d9ce1ca"
+    },
+    {
+      "claim_id": "8678ead0-21de-4c02-a243-49cdc253d32b",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "a4346986-901b-4f8d-aac7-fbe4d71f53db",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "3fb7c684-408e-403d-baeb-b49938b46e20",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "a3c3d4f5-96b2-49e4-bf0f-31979a5acba0",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "2a02cc50-bf00-4f3a-8f6f-2d4069508518",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "b3b46bb1-3523-420d-a259-c42eb4c4476a",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "6294411b-c9b2-4afd-8365-fe38412c02c3",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "f4cf2bc7-adf7-43ff-a6b9-ff7c50fad4d3",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "cb9e3b00-2488-4a4a-9e6f-648f53dee4e5",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "ac3b9ab4-d001-420c-93e0-001433055868",
+      "result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034"
+    },
+    {
+      "claim_id": "35d03d56-298e-4a83-8a8c-4fe25226d306",
+      "result_id": "96d7d588-b31b-4ffd-99ea-d182e00a836c"
+    },
+    {
+      "claim_id": "b4ffd9fb-3f68-4a18-b95f-543990a4119a",
+      "result_id": "96d7d588-b31b-4ffd-99ea-d182e00a836c"
+    },
+    {
+      "claim_id": "f44a518b-50dd-4fec-a514-e07f3eade4b1",
+      "result_id": "2119bc6f-6df1-4183-a747-41803eee2e2b"
+    },
+    {
+      "claim_id": "2d110734-5f99-49f4-8613-9333caf376ee",
+      "result_id": "2119bc6f-6df1-4183-a747-41803eee2e2b"
+    },
+    {
+      "claim_id": "4a446962-9937-4733-b264-52aa2fd8d9db",
+      "result_id": "2119bc6f-6df1-4183-a747-41803eee2e2b"
+    },
+    {
+      "claim_id": "764e3989-d842-418f-bee0-5b6d19950384",
+      "result_id": "2119bc6f-6df1-4183-a747-41803eee2e2b"
+    },
+    {
+      "claim_id": "1ae536ba-f3c5-4df8-8c19-7842f3118bcf",
+      "result_id": "2119bc6f-6df1-4183-a747-41803eee2e2b"
+    },
+    {
+      "claim_id": "69583318-f140-46a9-a270-7b98bf113b63",
+      "result_id": "cd0f20a9-461b-4468-b5ea-9edffee498d0"
+    },
+    {
+      "claim_id": "ec5cbe54-4c1d-495e-85b8-9dbafb04f80c",
+      "result_id": "cd0f20a9-461b-4468-b5ea-9edffee498d0"
+    },
+    {
+      "claim_id": "1deab0f4-0581-471b-b1d4-a1bceab12bb8",
+      "result_id": "cd0f20a9-461b-4468-b5ea-9edffee498d0"
+    },
+    {
+      "claim_id": "c9aa255f-4931-4e57-8fd6-5ba2c022a671",
+      "result_id": "cd0f20a9-461b-4468-b5ea-9edffee498d0"
+    },
+    {
+      "claim_id": "fdec9c51-4cd9-4f3a-9488-78891f293d3a",
+      "result_id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85"
+    },
+    {
+      "claim_id": "115a1e15-b42f-4976-a1cd-5369fc25ff3e",
+      "result_id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85"
+    },
+    {
+      "claim_id": "28a0fe43-c8f5-4a29-bea7-8b4c1bda3233",
+      "result_id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85"
+    },
+    {
+      "claim_id": "78fe6431-20ff-4a09-91ac-049d92c5a164",
+      "result_id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85"
+    },
+    {
+      "claim_id": "df130d48-e80e-4ce4-873a-55545323f24d",
+      "result_id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85"
+    },
+    {
+      "claim_id": "02045462-2b64-4707-a59e-089faa9ec208",
+      "result_id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85"
+    },
+    {
+      "claim_id": "00ca4536-4b2c-443e-a6d6-7677877325a0",
+      "result_id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85"
+    },
+    {
+      "claim_id": "5794ddbe-b486-4808-a6e4-7e2ab4337e17",
+      "result_id": "5d691d4c-ddac-48b3-b4bc-15570d954fac"
+    },
+    {
+      "claim_id": "eb12c78d-f1e5-4819-8c83-eff68a3a5cea",
+      "result_id": "5d691d4c-ddac-48b3-b4bc-15570d954fac"
+    },
+    {
+      "claim_id": "4cb32429-409c-45b9-b9cb-83eb3d5f974e",
+      "result_id": "5d691d4c-ddac-48b3-b4bc-15570d954fac"
+    },
+    {
+      "claim_id": "c689bb1d-3be6-45f3-9591-0aa537079da8",
+      "result_id": "5d691d4c-ddac-48b3-b4bc-15570d954fac"
+    },
+    {
+      "claim_id": "4df3506d-a11d-439e-9dbb-31ec833b2337",
+      "result_id": "ac7a23d6-b423-41cc-94f2-b805ff474a5c"
+    },
+    {
+      "claim_id": "5772360e-e585-4d08-87ad-09766b5d7f92",
+      "result_id": "ac7a23d6-b423-41cc-94f2-b805ff474a5c"
+    },
+    {
+      "claim_id": "9fb37747-83b9-4c69-8acb-63fb99c64294",
+      "result_id": "ac7a23d6-b423-41cc-94f2-b805ff474a5c"
+    },
+    {
+      "claim_id": "cfc8c35b-07c4-4e73-91af-528c904ae681",
+      "result_id": "ac7a23d6-b423-41cc-94f2-b805ff474a5c"
+    },
+    {
+      "claim_id": "817839cf-85d6-4ce6-a9e9-e4e9a57750c0",
+      "result_id": "ac7a23d6-b423-41cc-94f2-b805ff474a5c"
+    },
+    {
+      "claim_id": "da252c69-ff3a-4c3c-a852-85ee7e1f1eeb",
+      "result_id": "aa607b9a-43fc-495c-9261-7568bb91203e"
+    },
+    {
+      "claim_id": "2fd04bb8-cf93-40f6-a0d0-221728b179c9",
+      "result_id": "aa607b9a-43fc-495c-9261-7568bb91203e"
+    },
+    {
+      "claim_id": "0af91110-5160-420d-b363-907326907450",
+      "result_id": "aa607b9a-43fc-495c-9261-7568bb91203e"
+    },
+    {
+      "claim_id": "ec73a721-deb7-463f-8a4a-eeeee6b5c32a",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "4d2c85ff-ab21-40d4-8453-99e8badfc589",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "242e912f-e136-4761-ad2b-6c8c741610bf",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "f15b0252-658e-4c60-aa0b-6b1e2cf5da94",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "7bd10068-73c1-4169-84e5-4d519188c5c8",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "e3a42751-28cf-45f8-ba47-465b1398be67",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "772090c1-dc14-4b27-8dfd-6d7e6f836af7",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "44737141-8d75-40cb-b1c0-dabf9595e6a2",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "7ae72a32-94ed-4211-8b9b-a2b4721e66ad",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "17c9f4bf-c06e-4c6f-89ef-7f18d52e2ba3",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "992a3a16-c347-4c8c-bc78-5e0558064304",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "8aca768d-7f09-402d-bf51-d34168941149",
+      "result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85"
+    },
+    {
+      "claim_id": "a358d4f1-e2d3-483a-8587-bcb8f03cfb5c",
+      "result_id": "5f1d02af-7cf0-4f8e-9464-1197d6fdf188"
+    },
+    {
+      "claim_id": "288262ed-866d-4396-9cb1-1aecf06cd243",
+      "result_id": "5f1d02af-7cf0-4f8e-9464-1197d6fdf188"
+    },
+    {
+      "claim_id": "94d2c0ab-bc7c-4f71-a61e-7d3f837e45ef",
+      "result_id": "5f1d02af-7cf0-4f8e-9464-1197d6fdf188"
+    },
+    {
+      "claim_id": "f232c5c4-4bb4-49c0-93b3-71f82f2db666",
+      "result_id": "5f1d02af-7cf0-4f8e-9464-1197d6fdf188"
+    },
+    {
+      "claim_id": "9771f88b-470c-4b51-be90-94a85ccb0db3",
+      "result_id": "c5430a7b-ad2a-4108-9394-43ec49b6a4d0"
+    },
+    {
+      "claim_id": "1dd9f0f2-be6b-4ec7-98ea-9fd9abe86196",
+      "result_id": "c5430a7b-ad2a-4108-9394-43ec49b6a4d0"
+    },
+    {
+      "claim_id": "cb9e3b00-2488-4a4a-9e6f-648f53dee4e5",
+      "result_id": "c5430a7b-ad2a-4108-9394-43ec49b6a4d0"
+    },
+    {
+      "claim_id": "ac3b9ab4-d001-420c-93e0-001433055868",
+      "result_id": "c5430a7b-ad2a-4108-9394-43ec49b6a4d0"
+    },
+    {
+      "claim_id": "fdec9c51-4cd9-4f3a-9488-78891f293d3a",
+      "result_id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779"
+    },
+    {
+      "claim_id": "a4346986-901b-4f8d-aac7-fbe4d71f53db",
+      "result_id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779"
+    },
+    {
+      "claim_id": "3fb7c684-408e-403d-baeb-b49938b46e20",
+      "result_id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779"
+    },
+    {
+      "claim_id": "a3c3d4f5-96b2-49e4-bf0f-31979a5acba0",
+      "result_id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779"
+    },
+    {
+      "claim_id": "2a02cc50-bf00-4f3a-8f6f-2d4069508518",
+      "result_id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779"
+    },
+    {
+      "claim_id": "b3b46bb1-3523-420d-a259-c42eb4c4476a",
+      "result_id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779"
+    },
+    {
+      "claim_id": "6294411b-c9b2-4afd-8365-fe38412c02c3",
+      "result_id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779"
+    },
+    {
+      "claim_id": "115a1e15-b42f-4976-a1cd-5369fc25ff3e",
+      "result_id": "a30af434-23c6-4b85-a053-77729317069b"
+    },
+    {
+      "claim_id": "f4cf2bc7-adf7-43ff-a6b9-ff7c50fad4d3",
+      "result_id": "a30af434-23c6-4b85-a053-77729317069b"
+    },
+    {
+      "claim_id": "c9aa255f-4931-4e57-8fd6-5ba2c022a671",
+      "result_id": "1e8cd9fb-1952-40af-8e6f-a4d3c2695bca"
+    },
+    {
+      "claim_id": "69583318-f140-46a9-a270-7b98bf113b63",
+      "result_id": "1e8cd9fb-1952-40af-8e6f-a4d3c2695bca"
+    },
+    {
+      "claim_id": "ec5cbe54-4c1d-495e-85b8-9dbafb04f80c",
+      "result_id": "1e8cd9fb-1952-40af-8e6f-a4d3c2695bca"
+    },
+    {
+      "claim_id": "1deab0f4-0581-471b-b1d4-a1bceab12bb8",
+      "result_id": "1e8cd9fb-1952-40af-8e6f-a4d3c2695bca"
+    },
+    {
+      "claim_id": "71a628e0-36cd-41f2-b8d2-94bd5cd0bc4c",
+      "result_id": "66aedc22-d8bd-4a9f-b605-324b6c8f9ce3"
+    },
+    {
+      "claim_id": "482834af-d026-48f4-a923-376c6e5642df",
+      "result_id": "66aedc22-d8bd-4a9f-b605-324b6c8f9ce3"
+    },
+    {
+      "claim_id": "b88d93d2-fe76-4493-b5ec-db34f2d99da6",
+      "result_id": "66aedc22-d8bd-4a9f-b605-324b6c8f9ce3"
+    },
+    {
+      "claim_id": "b50746f6-e364-4cb0-b532-6fd74c313889",
+      "result_id": "66aedc22-d8bd-4a9f-b605-324b6c8f9ce3"
+    },
+    {
+      "claim_id": "8fbc681e-a5d9-4c20-b17b-467bca3c2f6f",
+      "result_id": "66aedc22-d8bd-4a9f-b605-324b6c8f9ce3"
+    },
+    {
+      "claim_id": "8678ead0-21de-4c02-a243-49cdc253d32b",
+      "result_id": "52072c8b-a03a-4608-8d54-68f99631b3df"
+    },
+    {
+      "claim_id": "35d03d56-298e-4a83-8a8c-4fe25226d306",
+      "result_id": "5cbd4c04-78d4-4338-9fb2-4bb7df84ed5f"
+    },
+    {
+      "claim_id": "b4ffd9fb-3f68-4a18-b95f-543990a4119a",
+      "result_id": "5cbd4c04-78d4-4338-9fb2-4bb7df84ed5f"
+    },
+    {
+      "claim_id": "f44a518b-50dd-4fec-a514-e07f3eade4b1",
+      "result_id": "94f14060-580e-4052-850c-eff05cc3b7cd"
+    },
+    {
+      "claim_id": "2d110734-5f99-49f4-8613-9333caf376ee",
+      "result_id": "94f14060-580e-4052-850c-eff05cc3b7cd"
+    },
+    {
+      "claim_id": "4a446962-9937-4733-b264-52aa2fd8d9db",
+      "result_id": "94f14060-580e-4052-850c-eff05cc3b7cd"
+    },
+    {
+      "claim_id": "764e3989-d842-418f-bee0-5b6d19950384",
+      "result_id": "94f14060-580e-4052-850c-eff05cc3b7cd"
+    },
+    {
+      "claim_id": "1ae536ba-f3c5-4df8-8c19-7842f3118bcf",
+      "result_id": "94f14060-580e-4052-850c-eff05cc3b7cd"
+    },
+    {
+      "claim_id": "28a0fe43-c8f5-4a29-bea7-8b4c1bda3233",
+      "result_id": "75df8c7c-cddc-4244-b76f-a9781c1c0bb6"
+    },
+    {
+      "claim_id": "78fe6431-20ff-4a09-91ac-049d92c5a164",
+      "result_id": "75df8c7c-cddc-4244-b76f-a9781c1c0bb6"
+    },
+    {
+      "claim_id": "df130d48-e80e-4ce4-873a-55545323f24d",
+      "result_id": "75df8c7c-cddc-4244-b76f-a9781c1c0bb6"
+    },
+    {
+      "claim_id": "02045462-2b64-4707-a59e-089faa9ec208",
+      "result_id": "75df8c7c-cddc-4244-b76f-a9781c1c0bb6"
+    },
+    {
+      "claim_id": "00ca4536-4b2c-443e-a6d6-7677877325a0",
+      "result_id": "75df8c7c-cddc-4244-b76f-a9781c1c0bb6"
+    },
+    {
+      "claim_id": "5f60a6b4-cd91-4e4c-8a1d-c6d1eb3f3678",
+      "result_id": "7fb74f8b-6c26-426a-9cb0-855b8a706c96"
+    },
+    {
+      "claim_id": "66626992-f90f-4893-b6ea-e6422c778fe1",
+      "result_id": "7fb74f8b-6c26-426a-9cb0-855b8a706c96"
+    },
+    {
+      "claim_id": "5794ddbe-b486-4808-a6e4-7e2ab4337e17",
+      "result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2"
+    },
+    {
+      "claim_id": "eb12c78d-f1e5-4819-8c83-eff68a3a5cea",
+      "result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2"
+    },
+    {
+      "claim_id": "4cb32429-409c-45b9-b9cb-83eb3d5f974e",
+      "result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2"
+    },
+    {
+      "claim_id": "c689bb1d-3be6-45f3-9591-0aa537079da8",
+      "result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2"
+    },
+    {
+      "claim_id": "5772360e-e585-4d08-87ad-09766b5d7f92",
+      "result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2"
+    },
+    {
+      "claim_id": "9fb37747-83b9-4c69-8acb-63fb99c64294",
+      "result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2"
+    },
+    {
+      "claim_id": "cfc8c35b-07c4-4e73-91af-528c904ae681",
+      "result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2"
+    },
+    {
+      "claim_id": "817839cf-85d6-4ce6-a9e9-e4e9a57750c0",
+      "result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2"
+    },
+    {
+      "claim_id": "4df3506d-a11d-439e-9dbb-31ec833b2337",
+      "result_id": "98c1f298-4711-4237-b237-8acf2746a12a"
+    },
+    {
+      "claim_id": "da252c69-ff3a-4c3c-a852-85ee7e1f1eeb",
+      "result_id": "98c1f298-4711-4237-b237-8acf2746a12a"
+    },
+    {
+      "claim_id": "2fd04bb8-cf93-40f6-a0d0-221728b179c9",
+      "result_id": "98c1f298-4711-4237-b237-8acf2746a12a"
+    },
+    {
+      "claim_id": "0af91110-5160-420d-b363-907326907450",
+      "result_id": "98c1f298-4711-4237-b237-8acf2746a12a"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "8379f38e-617b-41c2-97a4-2763855c2ab9",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6885b9d9-c81c-4ce7-8aff-1d1d3b99c3c6",
+      "peer_result_id": "ea30d141-1628-46f7-a326-2d6d202a5b85",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on sediment characterization and microfluidic channel construction methodology (C1, C3, C10-C15, C68-C71). Both evaluations rate this as SUPPORTED with high praise for the \u03bcCT imaging approach and rigorous methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "9076d4f7-3db3-4394-8ba8-1a78ef4cab4f",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "c4c22fd4-1454-4539-b597-74780428b95a",
+      "peer_result_id": "5f1d02af-7cf0-4f8e-9464-1197d6fdf188",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on the main experimental finding of non-monotonic throughput behavior (C4, C20-C22). Both evaluations rate this as SUPPORTED and identify it as the key result with compelling evidence. Peer review R12 also addresses the control experiments (C18-C19) that OpenEval includes in this result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "3eaf9f1c-5110-4a91-9807-2ffbdf3847d9",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "3d740d07-fc6c-4c1f-9b85-061c0d9ce1ca",
+      "peer_result_id": "c5430a7b-ad2a-4108-9394-43ec49b6a4d0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on computational model validity (C5, C23). OpenEval provides detailed assessment of model parameterization and notes the limitation about slower sliding (C24-C29), while peer review focuses on the strength of coupling experiments with simulations and directly measured parameters (C38, C41). Peer R7 separately addresses the sliding behavior observations without criticism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "0efc69be-039f-4d90-a2ee-205971208861",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "e8a714a9-7c57-4a30-ab81-1dd0c5fee034",
+      "peer_result_id": "cc36c9d4-3acc-444f-a9fc-2be342f2a779",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on the mechanistic explanation of trapping at high fields (C30-C36). Both evaluations rate this as SUPPORTED. OpenEval emphasizes quantitative reproduction across 10 geometries, while peer review explicitly acknowledges the trapping rationalization. Peer R5 separately addresses weak field behavior (C37), and peer R8 addresses C30 interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "42ad503e-a333-4b9d-ba29-3aee48b8ae33",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "96d7d588-b31b-4ffd-99ea-d182e00a836c",
+      "peer_result_id": "5cbd4c04-78d4-4338-9fb2-4bb7df84ed5f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on UNCERTAIN status for the discrepancy at B=0 and its explanation (C42-C43). Both evaluations recognize this as a limitation. OpenEval notes the explanation is speculative without validation, while peer review identifies this as the main weakness regarding simulation-experiment comparison due to tracking limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "79e990d2-079e-4ccc-be6c-8bf1bcaface7",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "2119bc6f-6df1-4183-a747-41803eee2e2b",
+      "peer_result_id": "94f14060-580e-4052-850c-eff05cc3b7cd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on trap escape dynamics characterization (C44-C48). Both evaluations rate this as SUPPORTED. OpenEval provides detailed assessment of the Kramers escape analogy and statistical analysis, while peer review implicitly accepts this as part of the compelling theoretical framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "c1a95cd2-019c-4562-a26a-b2475c087d86",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "cd0f20a9-461b-4468-b5ea-9edffee498d0",
+      "peer_result_id": "1e8cd9fb-1952-40af-8e6f-a4d3c2695bca",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on experimental validation of trapping mechanism (C8, C50-C52). Both evaluations rate this as SUPPORTED and recognize the sequential field reduction experiment as clear confirmation of the simulation-predicted trapping effect.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "93abb1a8-2725-454b-9c8b-b5c4bb8c8dc7",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "0d8f4acd-a8ac-441d-92a4-4a4c0b2c8d85",
+      "peer_result_id": "75df8c7c-cddc-4244-b76f-a9781c1c0bb6",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on evolutionary hypothesis (C6-C7, C9, C53-C56). OpenEval rates this as UNCERTAIN, noting the interpretation is speculative and requires further testing across species and evolutionary contexts. Peer review rates this as SUPPORTED, stating the authors 'provide strong arguments in favor of such a hypothesis' and explicitly endorsing the evolutionary adaptation claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "71a782e8-b2fc-40ff-8851-b97a5461cedc",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "5d691d4c-ddac-48b3-b4bc-15570d954fac",
+      "peer_result_id": "3933fca8-0019-48d7-9f31-57eee94b6fc2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on contextual claims about magnetotactic bacterial behavior (C57-C60). Both evaluations rate this as SUPPORTED. OpenEval notes appropriate contextualization and logical distinctions, while peer review accepts these connections and suggests extending references without challenging the claims. Peer R13 also covers broader context (C61-C64).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "c2f44f4a-f905-415d-a2ee-d97d917723cb",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ac7a23d6-b423-41cc-94f2-b805ff474a5c",
+      "peer_result_id": "98c1f298-4711-4237-b237-8acf2746a12a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on biological and physical context (C2, C61-C64). Both evaluations rate this as SUPPORTED. OpenEval emphasizes appropriate contextualization of habitat and magnetic field parameters, while peer review implicitly accepts these as part of the rigorous methodology. Peer R14 also covers bacterial culture details (C65-C67).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "b6f2ba75-4064-43a0-804d-dfd97422a8fb",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "aa607b9a-43fc-495c-9261-7568bb91203e",
+      "peer_result_id": "98c1f298-4711-4237-b237-8acf2746a12a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on bacterial culture and selection methodology (C65-C67). Both evaluations rate this as SUPPORTED. OpenEval notes clear methodological details important for reproducibility, while peer review praises the careful methodology without questioning these details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    },
+    {
+      "id": "fbb50c82-08fa-4c26-99da-cb584f699dbc",
+      "submission_id": "e896603f-5720-40ab-95a9-4024317c7824",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "c4c22fd4-1454-4539-b597-74780428b95a",
+      "peer_result_id": "7fb74f8b-6c26-426a-9cb0-855b8a706c96",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on control experiments (C18-C19). Both evaluations rate this as SUPPORTED. OpenEval includes these controls as part of demonstrating the key experimental finding, while peer review separately acknowledges them as important validation that the effect is specific to obstacle geometry.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:12:48.476056Z"
+    }
+  ]
+}

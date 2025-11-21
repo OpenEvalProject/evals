@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Systemic \u03b2-glucan administration induces peripheral trained immunity in alveolar macrophages (AMs), leading to exacerbated acute lung injury (ALI) following LPS or poly(I:C) challenge. This exacerbation is characterized by increased lung permeability, histological damage, neutrophil infiltration, and pro-inflammatory cytokine production (CXCL1, IL-6, TNF), persisting for at least 28 days and representing long-term AM reprogramming rather than residual inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C16-C36 collectively demonstrate that \u03b2-glucan training causes detrimental AM reprogramming leading to worse ALI outcomes. Multiple independent measures (microCT, Evans blue permeability, histology, cytokine levels, neutrophil counts) at both 7 and 28 days post-training, plus responses to both bacterial (LPS) and viral (poly(I:C)) challenges, provide converging evidence. The persistence at 28 days and ex vivo responses (C31) support the interpretation of true reprogramming (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "\u03b2-glucan training does not alter the number or proportion of AMs but increases the frequency of CD80+ AMs, indicating functional activation rather than numerical expansion. The lack of change in CD11b+ AMs suggests no expansion of monocyte-derived AMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by flow cytometry data showing no changes in AM numbers but increased CD80 expression. This is consistent with the interpretation that effects are due to intrinsic functional changes (C28) rather than cell number changes. The data directly address potential confounders regarding whether increased cytokine production is simply due to more cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The exacerbation of LPS-induced ALI by \u03b2-glucan is mediated through AMs via functional reprogramming. Depletion of AMs with clodronate abolished the \u03b2-glucan effect, Csf2rb\u2212/\u2212 mice (lacking AMs) showed no \u03b2-glucan-induced ALI exacerbation, and adoptive transfer of \u03b2-glucan-trained AMs into Csf2rb\u2212/\u2212 mice recapitulated the enhanced ALI phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 provide strong mechanistic evidence through complementary loss-of-function (depletion, genetic knockout) and gain-of-function (adoptive transfer) approaches. The adoptive transfer experiment (C40-C41) is particularly compelling as it demonstrates that trained AMs alone are sufficient to transfer the phenotype, supporting the conclusion of intrinsic AM reprogramming (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "\u03b2-glucan reprograms AMs at the transcriptional level, creating distinct gene expression profiles. At baseline, \u03b2-glucan training results in 88 differentially expressed genes enriched for innate immune and antiviral responses, with downregulation of LPS response genes. Upon LPS stimulation, \u03b2-glucan-trained AMs show heightened expression of pro-inflammatory genes (IL-6, IL-1, TNF) confirmed at the protein level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C53 are supported by comprehensive RNA-seq analysis with appropriate statistical thresholds (FDR <0.05, log2FC >1) and validation by ELISA. The PCA analysis (C43) demonstrates clear separation of groups. The apparent contradiction between baseline downregulation of LPS response genes (C46) and enhanced response upon LPS challenge (C50-C52) is resolved by the temporal distinction\u2014this represents priming rather than pre-activation. The protein-level validation (C52) strengthens the transcriptomic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "\u03b2-glucan functionally reprograms AMs by rewiring their metabolic state. Genes involved in oxidative phosphorylation and glycolysis are upregulated in \u03b2-glucan-trained AMs upon LPS stimulation. Seahorse assays confirm increased mitochondrial respiration at baseline and enhanced both mitochondrial respiration and glycolysis upon LPS challenge in trained AMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by both transcriptomic (GSEA) and functional metabolic assays (Seahorse). The consistency between gene expression and metabolic function measurements strengthens the conclusion. The finding that metabolic changes are more pronounced upon LPS stimulation parallels the transcriptional findings, supporting a model of priming rather than constitutive activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C90"
+    ],
+    "result": "\u03b2-glucan-induced AM reprogramming occurs independently of Dectin-1 (Clec7a), the canonical \u03b2-glucan receptor. In Dectin-1\u2212/\u2212 mice, \u03b2-glucan training maintained increased neutrophil infiltration, cytokine production, and enhanced AM responses to LPS stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 and C90 are supported by experiments in Dectin-1\u2212/\u2212 mice showing maintained \u03b2-glucan effects both in vivo and ex vivo. This is a surprising finding given prior literature (C57, C89) establishing Dectin-1 as the primary \u03b2-glucan receptor. The authors acknowledge alternative pathways (C91) but do not fully resolve the mechanism. The data clearly demonstrate Dectin-1 independence, though the alternative pathway remains to be identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "\u03b2-glucan-induced AM reprogramming is independent of type I IFN signaling. Ifnar\u2212/\u2212 AMs maintained increased pro-inflammatory cytokine production in response to LPS after \u03b2-glucan training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by ex vivo stimulation data from Ifnar\u2212/\u2212 AMs. This finding contrasts with prior work showing type I IFN dependence in other training models (C79), highlighting context-specificity of trained immunity mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C80"
+    ],
+    "result": "\u03b2-glucan-induced AM training is dependent on type II IFN (IFN\u03b3) signaling. In IfngR\u2212/\u2212 mice, \u03b2-glucan training failed to increase neutrophil recruitment, cytokine production, or ALI severity. Ex vivo, IfngR\u2212/\u2212 AMs showed abolished training responses to LPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C80 are supported by comprehensive in vivo and ex vivo experiments in IfngR\u2212/\u2212 mice. The complete abolition of the training phenotype in these mice, contrasting with maintained effects in Dectin-1\u2212/\u2212 and Ifnar\u2212/\u2212 mice, provides strong evidence for IFN\u03b3-dependence. This distinguishes the mechanism from type I IFN-dependent AM training described in other contexts (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C84"
+    ],
+    "result": "\u03b2-glucan reprograms AMs via an IFN\u03b3- and neutrophil-dependent mechanism. IFN\u03b3 levels and neutrophil numbers increase in BAL at day 1 post-\u03b2-glucan administration. Depletion of either IFN\u03b3 or neutrophils prior to \u03b2-glucan treatment significantly reduced inflammatory cytokine production by trained AMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C84 are supported by temporal analysis showing early IFN\u03b3 and neutrophil increases (C65) and depletion experiments (C66-C67) demonstrating requirement for both factors. The depletion experiments are well-controlled and directly test the proposed mechanism. However, the cellular source of IFN\u03b3 is not identified (acknowledged in discussion), and the mechanistic details of neutrophil involvement remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A single intraperitoneal injection of \u03b2-glucan induces long-term trained immunity in lung AMs with functional reprogramming at transcriptional and metabolic levels. This training is detrimental, causing severe ALI after LPS or poly(I:C) challenge, with effects persisting for at least 28 days and maintained even after adoptive transfer of trained AMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 represent summary statements of the main findings, supported by the collective experimental evidence. The 28-day persistence (C72) and adoptive transfer results (C74) particularly support the interpretation of true long-term reprogramming. These claims integrate findings from multiple experimental approaches and are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The maintenance of trained immunity in adoptively transferred AMs into Csf2rb\u2212/\u2212 mice suggests that the trained AM state is independent of bone marrow-derived monocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is a reasonable inference from the adoptive transfer experiments. Since Csf2rb\u2212/\u2212 mice lack the ability to generate new AMs from monocytes, the persistence of the trained phenotype in transferred AMs supports cell-intrinsic maintenance of the trained state. However, this does not address whether monocytes are involved in the initial training process, as acknowledged in the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establishing the context of alveolar macrophages, trained immunity, acute lung injury, and LPS-induced inflammation based on established knowledge and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C6-C14 represent background information supported by citations to prior literature and established scientific knowledge. These provide necessary context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "Discussion claims contextualizing findings within prior literature on AM ontogeny, plasticity, trained immunity mechanisms, \u03b2-glucan variability, and mycobiome diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C98 (excluding C80, C84, C88, C90, C97) represent discussion points supported by citations to prior literature. These contextualize the current findings but are not novel results from this study. The citations appear appropriate and relevant to the discussion points raised.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The quantity and quality of circulating \u03b2-glucan in an individual at steady state can remarkably affect subsequent immune responses to sterile or microbial inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is speculative, extrapolating from the experimental findings and prior literature on \u03b2-glucan variability (C92-C96) to human populations. While the speculation is reasonable given the data, it represents a hypothesis rather than a demonstrated finding. The claim appropriately uses cautious language ('can') but lacks direct experimental support in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "At 24 hours post-LPS instillation, no differences in ALI were observed between \u03b2-glucan-trained and control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 reports a negative finding at the 24-hour timepoint, which is important for establishing the temporal dynamics of the response. This is appropriately reported and helps distinguish acute from sustained effects. The claim is supported by the experimental data, though the specific measurements showing no difference are not detailed in the claim itself.",
+    "result_type": "MINOR"
+  }
+]

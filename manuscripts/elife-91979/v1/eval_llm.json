@@ -1,0 +1,471 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C27",
+      "C28",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C60",
+      "C61",
+      "C62",
+      "C164"
+    ],
+    "result": "ExA-SPIM combines a new microscope leveraging electronics metrology optics with tissue expansion methods to achieve nanoscale effective resolution (~0.5 \u00b5m lateral, ~1 \u00b5m axial with 3\u00d7 expansion) over large centimeter-scale volumes (>100 teravoxels) with minimal tiling (15 tiles for whole mouse brain) and no sectioning, at imaging speeds up to 946 megavoxels/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18, C27-C28, C44-C48, C60-C62, and C164 collectively describe the core technical specifications and capabilities of the ExA-SPIM system. These specifications are directly supported by the system design, measurements presented in Figures 2-3, and demonstrated applications. The optical specifications (NA=0.305, FOV=13.3mm, WD=35mm), effective resolution with expansion, imaging speed, and volumetric capabilities are all documented with experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The ExA-SPIM system uses axially-swept light sheet synchronized with a large-format CMOS sensor (Sony IMX411, 151 megapixels) that parallelizes readout across 14,192 pixels per row, achieving comparable SNR to sCMOS systems at higher imaging speeds, with high excitation laser powers (1000+ mW) distributed over a large light sheet resulting in typical SPIM light intensities and non-detrimental photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 describe the imaging approach and demonstrate its performance. The axial sweeping method (C50, supported by Dean et al., 2015), sensor specifications (C51, C53), SNR comparison (C52, demonstrated in Figure 2e), laser power requirements (C57), and photobleaching characterization (C59, demonstrated in Figure 2\u2014figure supplement 6) are all directly supported by experimental data and system specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "A new expansion microscopy protocol was developed for centimeter-scale tissue samples including entire mouse brains, using stringent dehydration (THF) and sequential delipidation (DISCO-type clearing followed by aqueous delipidation) to achieve optical clearing, followed by gelation using VA-044 initiator with temperature-controlled polymerization to achieve nearly isotropic 3\u00d7 expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C83 describe the tissue processing protocol developed for ExA-SPIM. The protocol steps are documented in detail with supporting citations (Chi et al., 2018; Renier et al., 2014; Chen and Svoboda, 2020c; Tillberg and Chen, 2019), demonstrated in Figure 3a, and validated on multiple tissue types including mouse brain, macaque motor cortex, and human visual cortex (C83, supported by Ouellette et al., 2023). The isotropic expansion (C82) is a key claim supported by the imaging results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ExA-SPIM enables whole-brain imaging of sparsely labeled neurons in 3\u00d7 expanded mouse brains in 15 tiles within 24 hours, with datasets aligned to <2 pixel residual error, clearly resolving dense axonal projections, varicosities, and enabling tracking of long-range axons across the entire brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86, C92-C96 describe the application of ExA-SPIM to mouse brain imaging. The labeling method (C84, supported by Yao et al., 2023), imaging speed (C93), alignment accuracy (C94, supported by H\u00f6rl et al., 2019), and image quality (C95-C96) are all demonstrated in Figure 3 and associated videos. The ability to resolve fine axonal structures and track them across the brain represents a key validation of the system's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ExA-SPIM successfully imaged a 1 cm\u00b3 block of pigtail macaque primary motor cortex (a particularly challenging heavily myelinated region) after 3\u00d7 expansion, clearly resolving individual cortico-spinal neurons, their dendritic arbors, dendritic spines, descending axons, and collaterals, with axonal pathways followable even in down-sampled data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 demonstrate ExA-SPIM's applicability to non-human primate tissue. The challenging nature of the tissue (C99, supported by Van Essen et al., 2019), successful imaging (C101-C102, demonstrated in Figure 5 and Videos 7-10), and ability to track axons in down-sampled data (C103) validate the method's robustness and potential for larger-scale primate neuroanatomy studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "ExA-SPIM imaging of 4\u00d7 expanded human neocortex sections labeled with SMI-32 for heavy chain neurofilaments clearly resolved individual axons and their trajectories with high contrast, revealing that larger axons (>1 \u00b5m) are well separated in both gray and white matter, and that white matter axons are arranged as multiple intercalated populations coursing in different directions rather than homogeneous fascicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 demonstrate ExA-SPIM's application to human brain tissue. The sample preparation (C108), image quality (C109-C110, demonstrated in Figure 6), and novel structural observations about white matter organization (C111) are all supported by the presented data. Claim C112 appropriately characterizes this as demonstrating feasibility for future larger-scale studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The etendue (G), proportional to the number of resolution elements and a quadratic function of FOV and NA, is limited to <1 mm\u00b2 for 90% of commercial biological microscopy objectives, while custom lenses (Mesolens, Sofroniew lens, RUSH lens) have achieved higher etendues but face manufacturing or design limitations; in contrast, electronics metrology lenses offer large etendues, low distortion, and are readily available and cost-effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C43 establish the optical engineering context and rationale for using metrology lenses. The etendue concept (C29-C31) is standard optical theory. The limitations of commercial objectives (C32, supported by Zhang and Gross, 2019a) and custom lenses (C34-C39, supported by multiple citations) are well-documented. The properties and availability of metrology lenses (C40-C43) provide the key motivation for the ExA-SPIM design approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "ExA-SPIM's use of lower NA optics (NA=0.305) combined with tissue expansion provides multiple advantages: lower NA lenses enable larger etendues, fields of view, and working distances; are less sensitive to tissue-induced aberrations (with spherical aberration scaling as NA\u00b3); and benefit from expansion reducing refractive index gradients to the third power while imaging path length increases only linearly, together explaining the advantages of expansion-assisted imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C135 provide the theoretical framework for why the ExA-SPIM approach works. The optical principles (C120-C123, supported by Zhang and Gross, 2019a) and aberration scaling (C127-C131, supported by Hecht, 2015; Weiss et al., 2021) are well-established. The scaling arguments for expansion benefits (C132-C134) are supported by Jacques, 2013. However, C135-C136 appropriately note this is speculative and requires further investigation, making the overall evaluation supported but with acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Despite 10\u00d7 lower signal collection compared to NA=1.0 systems (scaling as NA\u00b2), ExA-SPIM detects dim nanoscale features with high SNR using 1000+ mW lasers distributed over a ~1 cm light sheet (resulting in typical SPIM intensities), with non-detrimental photobleaching suggesting potential for even higher intensities; a custom NA=0.5 lens is being fabricated to improve light collection 2.7\u00d7 and enable 50-150 nm effective resolution in 3-12\u00d7 expanded tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C148 address a key limitation and future improvement. The signal collection limitation (C139-C141) is acknowledged based on optical principles (C140). However, the system's ability to detect dim features (C142, demonstrated throughout Figures 3-6) and the photobleaching characterization (C145, Figure 2\u2014figure supplement 6) support the current performance. The future lens development (C147-C148) is appropriately presented as ongoing work to address this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Custom acquisition software was developed to interface with the VP-151MX camera and stream data directly to next-generation file formats (OME-Zarr), enabling throughput to cloud storage of >100 TB per day using commodity hardware through high-speed networking, fast on-premises storage, and real-time compression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe the software and data handling infrastructure. The development of custom software (C65, with GitHub links and citations to Beati et al., 2020; Clack et al., 2023; Moore et al., 2021) and the throughput specifications (C66) are supported by the system description and Figure 2\u2014figure supplement 9. This infrastructure is essential for handling the large data volumes generated by ExA-SPIM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The achromatic performance of ExA-SPIM optics enables multi-channel fluorescence imaging (e.g., GFP and tdTomato) from mouse brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is directly demonstrated in Figure 4, showing dual-channel imaging of GFP and tdTomato in expanded mouse brain with diffraction-limited performance in both channels. This validates the achromatic correction of the metrology lens across visible wavelengths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "ExA-SPIM exhibits decreased image quality at larger imaging depths, which can be reduced with dual-sided excitation or multi-view detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 acknowledge a limitation and potential solutions. The depth-dependent image quality decrease (C137) is demonstrated in Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1. The proposed solutions (C138, supported by Dodt et al., 2007; Tomer et al., 2012) are established approaches but not implemented in the current system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "A modified inverted or open-top ExA-SPIM design could potentially provide mesoscale maps of white matter axons across the entire macaque brain in several days using ~6 \u00d7 1 cm thick slabs with reduced imaging resolution, compared to existing methods requiring 300 \u00b5m sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 are speculative about future applications. While C103 demonstrates that axonal pathways can be followed in down-sampled macaque data, and C105 (supported by Xu et al., 2021) establishes the limitations of current methods, C104 is a speculation about a modified system design (Figure 5\u2014figure supplement 1) that has not been built or tested. The feasibility requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "ExA-SPIM image volumes are sufficient for manual neuron tracing, and preliminary data suggests improved automated segmentation of thin axons compared to previous approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 is supported by the demonstrated manual reconstructions in Figure 3c-d. However, C118 regarding improved automated segmentation is stated as preliminary with only a citation to Winnubst et al., 2019 for comparison. No quantitative comparison data or statistical analysis of automated segmentation performance is provided, making this claim uncertain pending further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "ExA-SPIM's design has potential applications beyond tissue expansion, including imaging cleared mouse brains in a single tile at ~36 min/channel, and could be converted to inverted or open-top architectures for imaging tissue slabs up to 1 cm thick; lower-resolution mesoscale ExA-SPIM systems could provide extremely high throughput (cm\u00b3/day) for large-scale neuroanatomy investigations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C157 describe potential future applications and system variations. While C153-C154 are supported by Figure 2\u2014figure supplement 7 showing cleared brain imaging capability, claims C155-C157 are speculative about system modifications and applications that have not been implemented or validated. These represent reasonable extrapolations but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Future multi-scale microscopy applications, such as imaging immune cell-tumor interactions at 10\u00d7 expansion for <100 nm effective resolution throughout millimeter-scale samples, would benefit from ExA-SPIM's large field of view and reduced need for sectioning given the mechanical fragility of highly expanded samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C162 are entirely speculative about potential future applications outside neuroscience. While C161 correctly notes that 10\u00d7 expanded samples are mechanically fragile (established knowledge), and C162 logically follows that ExA-SPIM's capabilities would be advantageous, no experimental data for these applications is provided. This represents a reasonable speculation but is unsupported by current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Recent advances in tissue processing, labeling, and fluorescence microscopy provide unprecedented views of cells and tissues at sub-diffraction resolutions, but standard high-resolution objectives have limited working distances and fields of view (<1 mm), traditionally requiring physical sectioning and tiling; however, advances in clearing and expansion (up to 20\u00d7) now promise diffraction-limited imaging deep in tissue at molecular spatial scales approaching cryo-EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 establish the scientific context and motivation for ExA-SPIM. These are well-supported by extensive citations to the literature on microscopy advances (C1, C8), tissue organization (C2), objective limitations (C3, supported by Zhang and Gross, 2019b), traditional approaches (C4-C7, supported by multiple citations), and expansion microscopy capabilities (C9-C10, supported by Chang et al., 2017 and cryo-EM citations). This provides essential background but is not a novel result of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Axonal arbors span centimeters but can be thinner than 100 nm, and tracing them is critical for understanding brain connectivity and neuron classification; while single-cell transcriptomics has revealed great neuron diversity, the throughput of neuronal reconstructions remains too low for comparable scale studies, limited in part by speed and image quality of existing microscopy methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 establish the specific neuroscience motivation for ExA-SPIM. The structural properties of axons (C20-C21, supported by Economo et al., 2016; Winnubst et al., 2019), importance of tracing (C22-C23, supported by multiple citations), transcriptomics advances (C24, supported by Hodge et al., 2019; Tasic et al., 2018; Yao et al., 2023), and throughput limitations (C25-C26) are well-established in the field. This provides important context but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Tracking individual neuron axons is challenging because axon collaterals can be very thin (<100 nm) and traverse large distances; current best-in-class approaches require physical sectioning and extensive tiling (complicating data processing), take multiple days (increasing failure risk), and have highly anisotropic resolution (<1:6) that compromises unambiguous axon tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 describe the specific technical challenges that ExA-SPIM addresses. The challenges of axon tracing (C88) and limitations of current methods (C89-C91, supported by Economo et al., 2016; Gong et al., 2013; Gong et al., 2016; Winnubst et al., 2019) are well-documented. This establishes the need for improved methods but is not a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Recent breakthroughs in histological methods, labeling strategies, cameras, and microscopes are revolutionizing fluorescence microscopy; multi-scale imaging with high resolution and contrast over large spatial scales is necessary for many applications including reconstructing individual neurons in mouse brain; ExA-SPIM addresses this need.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 provide discussion context. The field advances (C113, extensively cited) and need for multi-scale imaging (C114-C115) are well-established. Claim C116 is a summary statement about ExA-SPIM's contribution that is supported by the demonstrated results. This is appropriate discussion material but not a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Expansion lattice light-sheet microscopy is limited to small tissue volumes << 1 mm\u00b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by the citation to Gao et al., 2023. This establishes an important distinction between ExA-SPIM and a related method, but is a characterization of prior work rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Imaging with diffraction-limited resolution throughout centimeter-scale specimens requires tissue samples with small index of refraction variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by the citation to Weiss et al., 2021. This is an important principle underlying the ExA-SPIM approach but represents established knowledge rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Tissue expansion microscopy (ExM) enables imaging optically transparent specimens at effective resolutions below the diffraction limit with low fluorescence background; multiple ExM variations have emerged for specific biological questions, though most protocols have been developed for specimens \u2264100 \u00b5m thick.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide background on expansion microscopy. The capabilities of ExM (C67-C68, supported by Chang et al., 2017; Chen et al., 2015; Tillberg and Chen, 2019) and the typical specimen size limitations (C70) are established in the literature. This provides important context for the novel whole-brain expansion protocol but is not itself a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Heavy chain neurofilaments comprise the internal scaffolds of long-range projection axons; visualizing them with immunofluorescence could provide detailed information about axonal trajectories without gene transfer methods and beyond what is achievable with diffusion MRI or optical coherence tomography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 provide biological context for the human brain imaging application. The role of neurofilaments (C106) is established knowledge, and the potential advantages of immunofluorescence visualization (C107, with citations to Huang et al., 2021; Van Essen et al., 2019; Li et al., 2019) represent a logical inference. This motivates the application but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Contrast, effective resolution, and imaging speed in expansion microscopy are fundamentally limited by fluorophore density and photon budget; ExA-SPIM allows distributing the technical burden between optics and tissue expansion, with target resolution determined by viable combinations of NA and expansion factor considering light collection efficiency and required working distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 provide design principles for expansion-assisted imaging. The fundamental limitations (C149) are well-established, and the design flexibility (C150, illustrated in Figure 1\u2014figure supplement 1) and practical considerations (C151) represent useful guidance. However, these are design principles rather than novel experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Large-format CMOS sensor technologies will continue to progress rapidly; for example, the recently announced 247-megapixel Sony IMX811 sensor will deliver 12-bit images at up to 3 gigavoxels/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 discuss future technology developments. While C126 accurately describes the specifications of an announced sensor, these are speculations about future progress rather than results of the current work. This provides useful context for the field's trajectory but is not a research finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "Further investigation into the optical properties of hydrogels and their constituents is necessary to fully support hypotheses about the advantages of expansion-assisted imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 appropriately acknowledges that the theoretical explanations for expansion-assisted imaging advantages (C132-C135) require further validation. This is an honest assessment of the current understanding and identifies important future work, but is not itself a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C163"
+    ],
+    "result": "The ExA-SPIM approach represents a new substrate for innovation within the realm of large-scale fluorescence imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C163 is a summary statement about the significance of ExA-SPIM. While supported by the demonstrated capabilities, this is a broad interpretive claim rather than a specific experimental result. It appropriately characterizes the contribution but is not itself a measurable finding.",
+    "result_type": "MINOR"
+  }
+]

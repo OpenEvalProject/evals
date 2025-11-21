@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Transcriptomic analysis of F. graminearum treated with quinofumelin (EC90) identified 234 differentially expressed genes (DEGs), with 137 down-regulated and 97 up-regulated. These DEGs were enriched in GO terms related to metal ion binding, oxidoreductase activity, and transcriptional regulation, and KEGG pathways including thiamine metabolism, tryptophan metabolism, and nucleotide sugar metabolism. Quality control analyses (PCA, clustering) demonstrated robust biological replication and significant differences between control and experimental samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C31-C37, C91-C93 collectively provide comprehensive transcriptomic data with appropriate quality control measures. The PCA analysis shows adequate variance explanation (45.59% and 16.98%), clustering analysis demonstrates biological replication, and differential expression analysis identifies specific gene sets with functional enrichment. The data quality metrics and statistical approaches appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Metabolomic analysis revealed 713 differential metabolites in positive ion mode (14 up-regulated, 699 down-regulated) and 230 in negative ion mode (103 up-regulated, 127 down-regulated). Amino acids and derivatives comprised the largest proportion (17%) of the 943 identified metabolites. KEGG enrichment analysis showed differential metabolites were primarily associated with nucleotide metabolism (25%), amino acid metabolism (25%), carbohydrate metabolism (25%), and energy metabolism (12.5%). Quality control demonstrated excellent instrument stability and data repeatability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C94-C98 provide comprehensive metabolomic data with appropriate quality control. The PCA shows high variance explanation (76.6% and 51.2% for PC1), QC samples demonstrate instrument stability, and Pearson correlation analysis confirms within-group consistency. The metabolite classification and pathway enrichment analyses are well-documented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "RT-qPCR validation confirmed that quinofumelin treatment at EC50 (0.035 \u03bcg/mL) and EC90 (1 \u03bcg/mL) decreased DHODH gene expression by 11.91% and 33.77% (p<0.05), respectively. This down-regulation inhibits the conversion of dihydroorotate to orotate, leading to decreased abundance of downstream metabolites orotidine-5P and uracil. The authors conclude that quinofumelin's mechanism of action involves inhibition of the de novo pyrimidine biosynthesis pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by RT-qPCR data with statistical significance (p<0.05) and are consistent with the integrated transcriptome and metabolome analyses. The dose-dependent decrease in DHODH expression and the logical connection to downstream metabolite depletion provide strong evidence for the proposed mechanism. However, the magnitude of gene expression changes (11.91% and 33.77%) is relatively modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C78"
+    ],
+    "result": "FgDHODHII (FGSG_09678) was identified through integrated transcriptome and metabolome analysis. The gene consists of 1419 bp without introns and encodes a 472 amino acid protein. FgDHODHII possesses a typical DHOD-2 like domain (NCBI: cd04738) and belongs to class 2 DHODs. Phylogenetic analysis shows all DHODHII proteins possess the dihydroorotate dehydrogenase domain, indicating high conservation among fungi. The amino acid sequence exhibits 551% similarity to DHODHII from Pyricularia oryzae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C49, C78 provide gene identification and characterization data. However, C49 contains an obvious error stating '551% similarity,' which is mathematically impossible (similarity cannot exceed 100%). This appears to be a typographical error that should read '55.1%' or similar. This error undermines confidence in the sequence analysis, though the phylogenetic and domain analyses appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Recovery assays demonstrated that exogenous UMP, uridine, or uracil (50 \u03bcg/mL) successfully restored quinofumelin-induced inhibition of mycelial growth in F. graminearum PH-1 and multiple other strains (F. graminearum and F. asiaticum). In contrast, exogenous dihydroorotate (50 \u03bcg/mL) failed to restore growth. These findings support that quinofumelin acts through modulation of the pyrimidine/uracil biosynthesis pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C53, C70-C72 provide consistent recovery assay data across multiple strains (5 F. graminearum and 5 F. asiaticum strains shown in Figures 4 and 4\u2014figure supplement 1). The selective rescue by downstream metabolites (UMP, uridine, uracil) but not by dihydroorotate strongly supports the proposed mechanism. The experimental design with multiple strains strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Deletion of FgDHODHII was lethal for mycelial growth on CZA plates. Two \u0394FgDHODHII deletion mutants were successfully generated and exhibited distinct phenotypic differences from wild-type PH-1 and complemented strains. Mycelial growth of \u0394FgDHODHII mutants was restored by supplementation with 50 \u03bcg/mL UMP, uridine, or uracil, but not by dihydroorotate. These findings indicate that FgDHODHII deficiency is functionally equivalent to complete inhibition by quinofumelin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C54-C58 provide strong genetic evidence through gene deletion experiments. The lethal phenotype rescued by downstream metabolites parallels the quinofumelin treatment results, supporting the target identification. The use of complemented strains as controls strengthens the conclusion. The parallel recovery patterns between deletion mutants and drug-treated cells provide compelling evidence for FgDHODHII as the target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Multiple biophysical methods confirmed direct interaction between quinofumelin and FgDHODHII. Molecular docking revealed a binding free energy of \u22126.8 kcal/mol. SPR analysis showed fast-binding and fast-dissociation kinetics with a KD of 6.606 \u00d7 10\u207b\u2076 M. MST assay demonstrated specific binding with a Kd of 0.471\u00b10.268 \u03bcM. No binding was observed between FgDHODHII and phenamacril (a structurally unrelated fungicide), confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C59-C64 provide convergent evidence from three independent biophysical methods (molecular docking, SPR, MST). The KD values from SPR (6.606 \u03bcM) and MST (0.471 \u03bcM) are in reasonable agreement considering different experimental conditions and methods. The negative control with phenamacril strengthens the specificity claim. The binding affinities are consistent with a direct protein-ligand interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors conclude that de novo uracil biosynthesis is the mechanism of action for quinofumelin, with FgDHODHII as its specific target. Based on these findings and previous studies, quinofumelin is categorized under FRAC group 52, which targets dihydroorotate dehydrogenase (DHODH) during the de novo pyrimidine biosynthesis pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C73, C74 represent the main conclusions of the study. These are well-supported by the convergent evidence from transcriptomics, metabolomics, recovery assays, genetic deletion, and biophysical binding studies (C3-C9, C43-C64). The FRAC classification is appropriately based on both current findings and previous literature (Higashimura et al., 2022; van Rhijn et al., 2024).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C26",
+      "C27",
+      "C68"
+    ],
+    "result": "Quinofumelin is a novel quinoline fungicide developed by Mitsui Chemicals Co., Ltd. Japan that exhibits exceptional antifungal activity against phytopathogens including F. graminearum and Sclerotinia sclerotiorum. Previous studies showed it inhibits mycelial growth, spore germination, and deoxynivalenol (DON) biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C26, C27, C68 provide background information supported by appropriate citations (Ito et al., 2023; Xiu et al., 2021; Tao et al., 2021). These claims establish the context and prior knowledge about quinofumelin's antifungal properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C90"
+    ],
+    "result": "Previous studies identified quinofumelin as a specific inhibitor of DHODHII in Pyricularia oryzae, suppressing fungal growth by blocking the conversion of dihydroorotate to orotate. Gene disruption of DHODHII (PoPYR4) confirmed its critical role in fungal pathogenicity. A previous study reported that exogenous orotate, but not dihydroorotate, recovered mycelial growth inhibited by quinofumelin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C90 accurately cite prior work (Higashimura et al., 2022) that identified DHODHII as quinofumelin's target in P. oryzae. These claims provide important context for the current study's investigation of the same mechanism in F. graminearum. The citation appears accurate based on the described findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The introduction provides historical context on fungicide development, noting that modern selective fungicides have made significant contributions to crop disease management but face resistance challenges. Over 30 fungicide targets have been identified in 130+ years of research, leading to development of over 200 modern selective fungicides. Examples include 24 fungicides targeting respiratory complex II, 20 targeting complex III, and 37 targeting C14-demethylase. Resistance is exemplified by Botrytis cinerea developing multi-resistance to all currently used modern selective fungicides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C25, C65-C67 provide general background information supported by appropriate citations (Lamberth et al., 2021; Morton and Staub, 2008; Lucas et al., 2015; FRAC website; Shao et al., 2021; Weber and Petridis, 2023). These claims establish the scientific and practical context for developing fungicides with novel mechanisms of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The discussion provides context on DHODH as a drug target, noting that ipflufenoquin also targets DHODH in Aspergillus fumigatus, and that DHODH has been investigated as a target for inhibiting infectious organisms and as an antitumor agent in mammals. In mammalian cells, DHODH is membrane-associated and plays a role in the respiratory chain through interaction with ubiquinone. Class 2 DHODHs are membrane-bound enzymes, while class 1 enzymes are cytosolic. The DHODH enzyme catalyzes a unique redox reaction in the de novo pyrimidine biosynthesis pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C75-C77, C79-C82 provide relevant background information about DHODH as a drug target, supported by appropriate citations (van Rhijn et al., 2024; Chen et al., 1992; Mao et al., 2021; Boukalova et al., 2020; Chen and Jones, 1976; N\u00f8rager et al., 2002; Dorasamy et al., 2017; Alves et al., 2015). These claims contextualize the significance of identifying DHODH as quinofumelin's target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors discuss mechanistic details, noting that orotate supplementation did not rescue \u0394FgDHODHII mutants, suggesting FgDHODHII follows a nonclassical two-site ping-pong mechanism rather than a classical ping-pong mechanism. Unlike other dehydrogenases requiring NAD/NADP, DHODH transfers electrons to ubiquinone, coupling pyrimidine biosynthesis with the electron transport system and energy production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C89 propose a nonclassical two-site ping-pong mechanism based on the observation that orotate doesn't rescue the deletion mutant (C83). However, this interpretation is speculative and not directly tested. The proposed mechanism is inferred from comparison with mammalian DHODH and brequinar sodium, but no direct mechanistic studies (e.g., kinetic analysis, substrate competition assays) were performed to validate this model. The coupling to electron transport (C88-C89) is well-established from prior literature but not experimentally demonstrated in this study.",
+    "result_type": "MINOR"
+  }
+]

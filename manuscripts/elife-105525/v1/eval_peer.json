@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C43",
+      "C44",
+      "C55"
+    ],
+    "result": "The C-terminal tail of EmrE acts as a secondary gate preventing proton leak in the absence of drug, and substrate binding unlocks this gate. Truncation of the C-terminal tail (\u0394107-EmrE) leads to increased proton leak in proteoliposomes and reduced bacterial growth, particularly after depletion of fermentable sugars.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm the central finding. The editor states the study 'provides a fundamental analysis of the EmrE efflux pump, highlighting the role of the C-terminal domain in influencing uncoupled proton leak.' Reviewer 1 notes 'the authors compare the WT pump to a C-terminal tail deletion, delta_107, finding that the mutant has increased proton leak in proteoliposome assays...and reduced growth.' Reviewer 2 states 'the claims are well supported by the data' and calls this 'a solid paper with important results.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Truncation of the C-terminal tail alters the pH regulation of alternating access in EmrE. NMR experiments show that \u0394107-EmrE exhibits fast-intermediate exchange at both low and high pH in the absence of drug, with slightly slower alternating access at high pH. With TPP+ bound, \u0394107-EmrE shows pH-dependent alternating access rates (4\u00b11 s\u207b\u00b9 at low pH, 17\u00b13 s\u207b\u00b9 at high pH), unlike WT-EmrE which maintains constant rates regardless of pH.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes the 'shifted pH dependence with a new titratable residue, faster alternating access at high pH values' as a strength. The editor highlights the integration of biophysical techniques with MD simulations as providing 'solid support for the key findings.' No reviewer challenges the NMR data on alternating access dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Molecular dynamics simulations reveal that \u0394107-EmrE forms a water wire connecting E14 at the primary binding site to bulk water, passing through residues A61A, I68B, and I71B. This water wire is well-connected in \u0394107-EmrE (characterized by smaller log(S) values) but poorly connected in WT-EmrE, consistent with the enhanced proton leak observed experimentally.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Reviewer 2 acknowledges 'the MD work from the Voth lab complements the experiments quite well,' they express concern about 'the reproducibility of the MD results with regard to the formation of water wires in the WT and truncation mutant' and suggest 'this could be resolved with simulations starting from structures built using very different loops and C-terminal tails.' The reviewer also recommends that 'the water wire gates identified in the MD should be tested experimentally with site-directed mutagenesis.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C118",
+      "C119"
+    ],
+    "result": "In WT-EmrE, the C-terminal tail forms specific interactions that block water wire formation. MD simulations show the tail forms a salt bridge between D84 and R106, and hydrogen bonds between the C-terminal carboxylate and T56/K22. The water wire is broken at the hydrophobic triad of A61A, I68B, and I71B in WT-EmrE.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises concerns about the MD reproducibility, stating 'the primary weaknesses are related to the reproducibility of the MD results with regard to the formation of water wires in the WT and truncation mutant' and notes concerns about 'initial structures used for simulations, and the stochasticity of the water wire formation.' However, after revision, the reviewer notes 'I find the new data regarding the computational pKa estimate of E14 compelling,' suggesting some validation was added.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "MD simulations show that in WT-EmrE, the minimum hydrogen-hydrogen distances of A61A-I68B and A61A-I71B are 2.9\u00b10.6 and 2.8\u00b10.6 \u00c5 respectively, while in \u0394107-EmrE these distances increase to 5.9\u00b11.0 and 5.4\u00b11.2 \u00c5. This suggests A61A moves away in the \u0394107 variant, opening a pore for water wire formation. A triangle larger than 5.4 \u00c5 is required for a water molecule to fit inside.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the measurements are presented, Reviewer 2's concerns about MD reproducibility and the need for experimental validation apply to these structural details. The reviewer specifically states 'the water wire gates identified in the MD should be tested experimentally with site-directed mutagenesis to determine if those residues do impact leak,' indicating these computational predictions require experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "MS-RMD simulations of explicit proton transport show a PMF with a deep well near x=0 \u00c5 (proton on glutamate) and a transition state near x=10.0 \u00c5, where the CEC is in close proximity to the pore defined by I68 and A61. The calculated pKa for E14 is 7.1, close to the experimental value of 6.8\u00b10.1 at 25\u00b0C, supporting the hypothesis that the hydrophobic gate formed by A61, I68, and I71 is the bottleneck for proton transport.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states in the revision comments: 'I find the new data regarding the computational pKa estimate of E14 compelling.' This suggests the pKa calculation provides important validation of the MD approach. The agreement between calculated and experimental pKa values strengthens confidence in the computational predictions about the proton transport mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C120",
+      "C121"
+    ],
+    "result": "NMR pH titrations of TPP+-bound \u0394107-EmrE reveal two apparent pKa values (5.6\u00b10.2 and 7.1\u00b10.2). The higher pKa is assigned to E14A based on similarity to WT-EmrE and location of sensitive residues. The lower pKa is likely an artifact of tail truncation, with sensitive residues clustering around R106 and D84. MD simulations show the R106-D84 hydrogen bond is broken in \u0394107-EmrE, consistent with the large pH-dependent chemical shift changes observed for these residues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes the 'shifted pH dependence with a new titratable residue' as part of the thorough experimental analysis. The authors' interpretation that the lower pKa is an artifact is presented transparently, and reviewers do not challenge this interpretation. The correlation between MD predictions and NMR observations strengthens the overall mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "SSME assays show that \u0394107-EmrE has ~3-fold greater proton leak than WT-EmrE in the absence of substrate. Upon addition of 16 \u03bcM harmane, there is a large increase in leak through WT-EmrE and a small increase through \u0394107-EmrE, such that harmane triggers identical total leak through either transporter. The leak is saturable with harmane concentration in both constructs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes the 'increased proton leak in proteoliposome assays' as part of the thorough experimental characterization. The editor emphasizes that 'the integration of biophysical techniques with molecular dynamics simulations offers solid support for the key findings.' The harmane data demonstrates substrate-dependent gating, supporting the secondary gate model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "In vivo growth assays show that cells expressing E14Q-EmrE grow equally well in the presence or absence of harmane, as the E14Q mutation prevents proton binding and abolishes leak. In the presence of harmane, the growth difference between \u0394107- and WT-EmrE is eliminated, with both showing significant growth defects relative to E14Q-EmrE. This in vivo data matches the in vitro SSME and pyranine transport assays.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'reduced growth, consistent with proton leak of the proton motive force' as part of the comprehensive characterization. The consistency between in vivo and in vitro data is a strength that reviewers do not challenge. The E14Q control effectively demonstrates that the growth defects are specifically due to proton leak through the transporter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Growth assays show that WT-EmrE, \u0394107-EmrE, and E14Q-EmrE all grow well in the absence of toxic compounds. In the presence of ethidium bromide, a functional transporter is required for survival. WT-EmrE confers resistance to ethidium bromide, E14Q-EmrE is non-functional, and \u0394107-EmrE is properly expressed, folded, and functionally able to confer resistance comparable to WT.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These control experiments establish that \u0394107-EmrE is properly folded and functional for drug efflux, which is essential for interpreting the proton leak phenotype. Reviewer 1 acknowledges the thorough experimental analysis without challenging these foundational controls. No reviewer questions the functionality or expression of the mutant constructs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "Pyranine and SSME assays demonstrate that WT-EmrE shows a small amount of proton leak (faster pH change than E14Q-EmrE), with E14 playing a role in mediating leak. \u0394107-EmrE shows much faster proton leak, matching the timescale and amplitude of CCCP-induced leak. Both WT- and \u0394107-EmrE have measurable current in SSME assays, with \u0394107-EmrE showing consistently higher leak under all pH conditions and greater net charge transport despite lacking H110.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 describes the work as combining 'thorough experimental analysis of structural, dynamic, and electrochemical properties of the mutant relative to WT proteins.' The editor notes 'the integration of biophysical techniques with molecular dynamics simulations offers solid support for the key findings.' The multiple complementary assays strengthen confidence in the proton leak phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The similarity of NMR spectra between \u0394107-EmrE and WT-EmrE when bound to TPP+ at low pH provides evidence that the general structure of \u0394107-EmrE remains intact and the binding site has undergone minimal perturbation upon truncation of the last four amino acids.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This structural validation is important for interpreting the functional differences as being due to loss of the C-terminal gate rather than global misfolding. Reviewer 1 notes the 'thorough experimental analysis of structural, dynamic, and electrochemical properties' without raising concerns about the structural integrity of the mutant. The NMR data provides direct evidence of proper folding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "MD simulations used an NMR structure determined with TPP+ (PDB: 7JK8) as the initial structural model. Since this structure does not include the C-terminal tail, it was modeled with CHARMM-GUI.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 expresses concern about 'initial structures used for simulations' and suggests 'this could be resolved with simulations starting from structures built using very different loops and C-terminal tails.' The modeling of the missing C-terminal tail is a potential source of uncertainty in the MD predictions, though the reviewer acknowledges improvements in revision.",
+    "result_type": "MINOR"
+  }
+]

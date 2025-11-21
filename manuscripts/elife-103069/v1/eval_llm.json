@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors developed a head-fixed directional reaching task in mice where animals rest their hand on a rung, receive a visual cue indicating one of four spouts, wait for an auditory 'Go' cue, and then reach to grab a water droplet within a one-second response period. EMG electrodes were chronically implanted in four forelimb muscle groups to measure motor output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe the behavioral task and measurement methods. The task design is clearly documented with supporting figures and videos, and the EMG implantation methods are described with appropriate citations to prior work. These methodological claims are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Both RFA and CFA exert oligosynaptic influence on forelimb muscles during reaching, as demonstrated by rapid changes in muscle activity (significantly different from zero within 25-100ms) following optogenetic inactivation of either region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 demonstrate that both motor cortical regions rapidly influence muscle activity. The statistical evidence is strong (p<10^-10 for most comparisons) and the rapid timescale (25-100ms) supports oligosynaptic influence. The experimental design with optogenetic inactivation is appropriate for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "RFA exhibits earlier pre-movement activity compared to CFA during reaching. The majority of neurons in both regions show elevated firing during movement and correlate with muscle activity, but RFA activity rises 53.9ms earlier than CFA on average, and RFA has a significantly higher fraction of pre-movement activity variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 establish earlier RFA activity through multiple complementary analyses (activity state deviation, individual neuron onset times, variance fractions) with consistent statistical support (p=0.031, p=0.016, n=6 mice). The convergence of multiple analytical approaches strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C93",
+      "C105"
+    ],
+    "result": "Endogenous activity in RFA exerts a larger influence on CFA than vice versa, demonstrating asymmetric reciprocal influence and functional hierarchy. Optogenetic inactivation of RFA caused significantly larger reductions in CFA firing than CFA inactivation caused in RFA firing, with this asymmetry present across multiple timescales (50-100ms windows).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54, C93, C105 establish the core finding of functional hierarchy through optogenetic perturbation experiments. The evidence is robust with significant statistical support (p=0.012 for 50ms, p=0.021 for 100ms windows), consistent effects across neurons (vast majority showed decreases), and appropriate controls. This is the central experimental finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C95"
+    ],
+    "result": "Trial-averaged firing patterns in RFA and CFA are highly similar during reaching. Over 80% of activity variance in both regions is captured by components with Pearson correlations >0.94, and both CCA and PLS analyses show that the vast majority of activity variance is explained by highly similar components between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60, C95 demonstrate high similarity between regions using two independent methods (CCA and PLS) with quantitative metrics. The finding that canonical variables capture 92% and PLS components capture 98% of variance compared to principal components provides strong evidence. Control analyses with shifted data confirm this is not by chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The alignment between RFA and CFA firing patterns is maximal at zero lag, not at a time lag greater than zero. When CFA activity was shifted relative to RFA activity from -30 to 30ms, the average Pearson correlation for canonical variables remained nearly constant across all lags tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 show that despite asymmetric influence and earlier RFA activity, maximal alignment occurs at zero lag. This is supported by systematic lag analysis with appropriate controls (CFA aligned to itself shows expected maxima). This finding is important for interpreting the relationship between hierarchy and firing patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C94"
+    ],
+    "result": "DLAG analysis revealed activity patterns shared at a lag between RFA and CFA, with a bias toward patterns where RFA activity leads. The median lag was -16ms, significantly less than zero (p=0.021), and RFA-led components captured more variance in CFA than CFA-led components captured in RFA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69, C94 demonstrate an asymmetry in lagged activity patterns using DLAG. The statistical significance (p=0.021) and consistency across multiple metrics (median lag, variance capture) support this finding. This provides evidence for hierarchy at the population level that is consistent with the optogenetic perturbation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C96"
+    ],
+    "result": "Firing pattern predictivity at the single-neuron level does not reflect the asymmetry seen in functional influence. Three different methods (Granger causality, transfer entropy, and convergent cross mapping) all showed symmetric predictive relationships between RFA and CFA neurons, with similar fractions of pairs showing prediction improvements in both directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C82, C96 demonstrate symmetric predictivity using three independent methods with appropriate statistical testing. The consistency across methods (Granger: 69% vs 60%, Transfer entropy: 29.4% vs 29.1%, CCM: 99.6% vs 97.0%) and similarity to within-region predictions strengthens this conclusion. This is a key finding showing dissociation between functional influence and firing pattern predictivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C97",
+      "C131",
+      "C133"
+    ],
+    "result": "Dual-region network models that successfully fit the data and captured asymmetric reciprocal influence did so without requiring asymmetric across-region input. Instead, the 'RFA' network had higher within-region inhibitory connection strength, suggesting asymmetric influence emerges from local circuit dynamics rather than input asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92, C97, C131, C133 demonstrate through computational modeling that hierarchy can emerge from differences in local dynamics rather than input asymmetry. The models fit data well (only 14% error increase with symmetric constraints), and the finding that actual input was larger CFA\u2192RFA despite RFA\u2192CFA dominance in influence is striking. Statistical support for inhibitory weight differences is strong (p=1.9\u00d710^-12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C10",
+      "C114",
+      "C123",
+      "C126",
+      "C134"
+    ],
+    "result": "Motor cortical hierarchy, while present during reaching in mice, is not reflected in firing patterns as commonly assumed. Firing patterns alone may not clearly reflect functional influence between regions, as the dominance of local population dynamics can decouple firing patterns from functional influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99, C10, C114, C123, C126, C134 represent the main conclusion integrating all findings. This is supported by the combination of: (1) demonstrated hierarchy via optogenetics, (2) high similarity in firing patterns, (3) symmetric predictivity, and (4) modeling showing local dynamics dominate. The conclusion is well-justified by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "Both CFA and RFA receive input from and project to a broad range of cortical regions, with local inputs expected to be most numerous. When silencing either region, activity is disrupted in diverse synaptic pathways, allowing measurement of the full influence mediated through multiple paths. Effects depend on both input amount and robustness to input loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104, C106 provide important context for interpreting optogenetic results. C100 is supported by anatomical citations, while C101-C104, C106 are logical inferences about circuit organization and the interpretation of inactivation experiments. These claims appropriately acknowledge the complexity of the system being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C136"
+    ],
+    "result": "Classical descriptions emphasized feedforward synaptic influence in hierarchical systems, but observations of prominent local synaptic input and contemporary understanding of local dynamics indicate the relevance of robustness to input loss. The findings comport with recent theoretical results suggesting local circuit dynamics can be the primary determinant of firing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110, C136 place the findings in theoretical context with appropriate citations. The alignment with recent theory (Bachschmid-Romano et al., 2023; Gozel and Doiron, 2023) and prior observations of local connectivity prominence supports the interpretation. This provides important conceptual framing for the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The findings call into question previous interpretations of earlier rising PM activity as reflecting hierarchy mediated by feedforward influence. The earlier rising activity in RFA may not depend on feedforward influence but instead on differing robustness to input loss, or could reflect involvement in distinct movement aspects requiring more preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 reinterpret prior findings in light of current results. The challenge to previous interpretations is justified by the demonstration that hierarchy exists without the expected firing pattern signatures. The alternative explanations are appropriately presented as possibilities rather than definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C127",
+      "C128",
+      "C135"
+    ],
+    "result": "The results raise questions about inferring interactions between regions through network modeling of activity patterns alone. In undersampled regimes, models may misattribute local influence to across-region connections. Accurate inference may require accounting for more than simultaneous activity patterns, and caution is needed when interpreting model connection strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118, C127-C128, C135 draw important methodological implications from the findings. The concerns about network modeling are logical given the demonstrated dissociation between functional influence and firing patterns. The suggestion to enforce anatomically realistic input balances is a constructive recommendation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The interpretation of DLAG components as mediating asymmetric influence remains speculative. The failure to detect asymmetry with CCA/PLS at lags may indicate DLAG components can accommodate similar correlation/covariance when aligned at a lag. Single-neuron predictivity measures may not capture population-level features and do not account for variance fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 appropriately acknowledge limitations and alternative interpretations. The caution about interpreting DLAG results is scientifically appropriate, and the explanations for discrepancies between methods are plausible. This demonstrates appropriate scientific restraint in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Hierarchy is commonly invoked in motor cortical descriptions, with observations supporting a partial hierarchy where PM and M1 interact and each drive downstream circuits. However, the empirical foundation for PM-M1 hierarchy remains incomplete, as existing observations have not resolved asymmetric reciprocal influence between endogenous activity in these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C18 establish the background and motivation for the study. These are well-supported by extensive citations to prior literature and accurately characterize the state of the field. The identification of the knowledge gap (C2, C16, C18) appropriately motivates the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior notions of PM-M1 hierarchy are based on observations from stimulation, lesion, pharmacological inactivation, anatomical projections, and activity differences. However, these observations do not necessarily imply asymmetric reciprocal influence of endogenous activity, and some observations are consistent with relatively symmetric influence or could reflect different functional roles rather than hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 critically evaluate prior evidence for hierarchy with appropriate citations. The logical argument that certain experimental approaches don't necessarily demonstrate endogenous activity influence (C22) is valid. The acknowledgment of conflicting evidence (C23) and alternative interpretations (C25) demonstrates balanced scholarship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "It is commonly assumed that feedforward signal flow manifests as temporally offset activity patterns and enables prediction between regions. However, movement-related activity patterns in PM and M1 are diverse, local circuit dynamics play a substantial role, and recent theory suggests local dynamics can be the primary determinant of firing patterns even with substantial across-region input. Whether hierarchy manifests in firing pattern predictivity remains unresolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 establish theoretical background and expectations with appropriate citations. The progression from common assumptions (C26, C28-C30) to complications from local dynamics (C31-C32) and unresolved questions (C33) effectively motivates the experimental investigation of firing pattern relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The findings help explain previous observations of highly similar firing patterns, preparatory activity similarities, and symmetric modeled input between PM and M1 that seemed at odds with hierarchy. These observations do not contradict an actual imbalance in reciprocal functional influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 reconcile prior seemingly contradictory findings with the current results. The explanation is logical and supported by the demonstrated dissociation between functional influence and firing patterns. This provides important context for understanding the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The firing pattern analysis involved all recorded activity rather than focusing on muscle-correlated components. If symmetry in predictivity or CCA/PLS was replaced by asymmetry for muscle-correlated components, this would imply an opposite asymmetry for remaining components, which may be surprising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 acknowledge a limitation and its implications. The logical inference about what would be required for different results (C130) is valid. This demonstrates appropriate consideration of alternative analytical approaches and their implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Network models could not directly fit individual neurons since datasets were from different mice, but provide proof of principle that population-level features like asymmetric influence and earlier activity change can emerge from local population dynamics rather than asymmetric across-region input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 appropriately acknowledge modeling limitations while drawing valid conclusions. The characterization as 'proof of principle' (C133) is appropriate given the limitation in C132. The models successfully demonstrate the plausibility of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Across-region connections may function to coordinate firing patterns or modulate higher-order features rather than determine firing patterns. Firing patterns may be defined by constraints like generating appropriate motor output, with local circuit dynamics governing motor cortical firing to some extent. The results underscore the need for developing theory about across-region interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 propose alternative functions for across-region connections and identify future directions. These are appropriately presented as possibilities (C137-C138) or supported by citations (C139-C140). The call for theoretical development (C140) is well-motivated by the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Asymmetric influence could arise from either asymmetric across-region input (RFA sending stronger input to CFA) or from differences in dependence on across-region input, where local circuit dynamics cause different degrees of robustness to input loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 present alternative hypotheses that motivated the modeling work. These are clearly presented as possibilities to be tested rather than conclusions. The hypotheses are logical and set up the subsequent modeling experiments appropriately.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2392 @@
+{
+  "submission": {
+    "id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:25:35.364848Z",
+    "updated_at": "2025-11-21T17:25:35.364848Z"
+  },
+  "content": [
+    {
+      "id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "content_type": "manuscript",
+      "content_text": "# Targeted protein degradation by KLHDC2 ligands identified by high-throughput screening\n\n## Authors\n\n- Han Zhou<sup>1</sup>\n- Tonglian Zhou<sup>1</sup>\n- Wenli Yu<sup>2</sup>\n- Liping Liu<sup>1</sup>\n- Yeonjin Ko<sup>3</sup>\n- Kristen A Johnson<sup>4</sup>\n- Ian A Wilson<sup>2</sup>\n- Peter G Schultz<sup>1</sup>\n- Michael J Bollong<sup>1</sup> ([ORCID: 0000-0001-9439-1476](https://orcid.org/0000-0001-9439-1476)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry, Scripps Research La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))\n2. Department of Integrative Structural and Computational Biology, Scripps Research La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))\n3. Chemical & Biological Integrative Research Center, Korea Institute of Science and Technology Seoul Republic of Korea ([ROR:04qh86j58](https://ror.org/04qh86j58))\n4. Department of Biology, Calibr-Skaggs at Scripps Research La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))\n\n\u2020 Corresponding author\n\n## Abstract\n\nProteolysis-targeting chimeras (PROTACs) enable the selective and sub-stoichiometric elimination of pathological proteins, yet only two E3 ligases are routinely used for this purpose. Here, we expand the repertoire of PROTAC-compatible E3 ligases by identifying a novel small molecule scaffold targeting the ubiquitin E3 ligase KLHDC2 using a fluorescence polarization-based high-throughput screen. We highlight the utility of this ligand with the synthesis of PROTACs capable of potently degrading BRD4 in cells. This work affords additional chemical matter for targeting KLHDC2 and suggests a practical approach for identifying novel E3 binders by high-throughput screening.\n\n## Introduction\n\nTargeted protein degradation has emerged as an alternative strategy to modulate cellular signaling. Among established pharmacological approaches, proteolysis-targeting chimeras (PROTACs) have gained prominence in the field, enabling the potent degradation of several challenging cancer targets like estrogen receptor, androgen receptor, among others, with several progressing to ongoing clinical trials (B\u00e9k\u00e9s et al., 2022; Teng and Gray, 2023; Berkley et al., 2025). PROTACs are heterobifunctional molecules composed of a ligand targeting the protein of interest, a ligand for a ubiquitin E3 ligase, and a linker with precise geometry to bring the two proteins within sufficient proximity to induce the ubiquitination and degradation of the so-called \u2018neosubstrate\u2019 proteins (Sakamoto et al., 2001). Despite the widespread clinical and academic use of PROTACs, most degrader molecules developed to date have exploited only two E3 ligases, VHL (von Hippel-Lindau) and CRBN (Cereblon) (Buckley et al., 2012; Winter et al., 2015). While several additional E3 ligases have been reported in the literature as being PROTAC-compatible, these ligands do not have well-understood mechanisms of E3 engagement and often do not fully degrade their target substrates (Ishida and Ciulli, 2021). As such, an expanded repertoire of E3 ligands would likely enable the degradation of a broader array of protein targets to endow subcellular and/or tissue specificity of degradation or to overcome potential resistance mutations in currently targeted E3s.\n\nAmong potential E3 ligases for PROTAC development, KLHDC2 (Kelch-like homology domain-containing protein 2) has emerged as a promising candidate (B\u00e9k\u00e9s et al., 2022). A CUL2 adaptor protein, KLHDC2, serves as a key component of the C-end degron pathway, recognizing C-terminal diglycine residues of client proteins, promoting their ubiquitination and degradation (Pilcher et al., 2025). Client proteins of KLHDC2 include selenocysteine-containing proteins, like SelK (Selenoprotein K), which, in the context of selenocysteine depletion, undergo premature translational termination, revealing a C-terminal diglycine degron (Rusnac et al., 2018). Previous work has shown that recognition of the diglycine degron of SelK by KLHDC2 in its Kelch beta propellor domain is characterized by low nanomolar dissociation constants (<10 nM) and with favorable binding kinetics for PROTAC development (Figure 1A; Rusnac et al., 2018). Unbiased protein proximity-based screens for generalizable E3 degraders have also indicated that KLHDC2 is among the best E3 ligases for fully degrading generic protein substrates (Poirson et al., 2024; R\u00f6th et al., 2023). Similarly, others have shown that peptide-based PROTACs derived from a 7-mer peptide of the C-terminus of SelK can be used to degrade a variety of kinase targets in human cells (Kim et al., 2023).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig1-v1.jpg)\n\n**Figure 1.:** (A) Structure of the Kelch domain of KLHDC2 from PDB 6DO3 bound to PPPMAGG, C-terminal peptide from SelK (left). Interface of SelK peptide (teal) bound to KLHDC2 (right) with TAMRA-labeled peptide used in this work above. (B) Fluorescence polarization signal of TAMRA-SelK peptide in response to increasing concentrations of GST-KLHDC2. (C) Fluorescence polarization signal from KLHDC2 and KEAP1 assays in response to increasing concentrations of unlabeled SelK peptide (n=3; mean and s.e.m.). Fluorescence polarization signals in Z\u2019-based determination assays with and without unlabeled SelK peptide (1 \u00b5M) in 384-well (D) and 1536-well (E) assays (n=20). (F) Corrected fluorescence polarization signal from the primary screening campaign with hits noted in teal. (G) Screening funnel depicting the high-throughput screening campaign.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Fluorescence polarization signal of TAMRA-conjugated NRF2 peptide in response to increasing concentrations of KEAP1. (B) Structure of KEAP1 Kelch domain ligand KI696. (C) Fluorescence polarization signal in response to the indicated concentrations of KI696 in the KEAP1 assay. n=3; mean and s.e.m.\n\nWe reasoned that the well-characterized interaction between KLHDC2 and SelK could be exploited to identify small molecule binders of KLHDC2 from a competitive in vitro screen using recombinant protein. Accordingly, we report here the development and execution of an FP-based high-throughput screen that identified a tetrahydroquinoline-based scaffold that competes for SelK peptide binding. We demonstrate this scaffold can be optimized for potency, achieving submicromolar affinity for KLHDC2 binding and can be further derivatized with JQ1 to degrade BRD4 in cell-based assays.\n\n## Results\n\nTo identify small molecules capable of binding the Kelch domain of KLHDC2, we first established a miniaturized fluorescence polarization (FP)-based assay reporting on the KLHDC2-SelK interaction. This assay derives from literature precedent in which a C-terminal peptidic fragment of SelK (HLRGSPPPMAGG) has been shown to potently associate with purified GST-tagged KLHDC2 in a recombinant AlphaScreen assay (Rusnac et al., 2018). Accordingly, we evaluated fluorescence polarization signal in response to increasing concentrations of recombinantly produced GST-tagged KLHDC2 from Sf9 insect cells in the presence of a 12-mer SelK peptide N-terminally conjugated with a TAMRA fluorophore (3.1 nM, TAMRA-HLRGSPPPMAGG). Under these conditions, a slightly shifted dissociation constant was achieved with the fluorophore-tagged SelK peptide (25 nM, Figure 1B) relative to the reported literature value of 3.4 nM for the unlabeled peptide (Rusnac et al., 2018). We then demonstrated that unlabeled SelK peptide can compete for KLHDC2 binding (IC50=55 nM) under these conditions, giving us good confidence in recapitulating this known interaction and providing a positive assay control for high-throughput screening (Figure 1C). A suitable 384-well FP assay with GST KLHDC2 (25 nM) and the TAMRA-tagged SelK peptide (3.1 nM) was achieved (Z\u2019=0.81) when exposed to a molecular excess of free SelK peptide (10 \u00b5M; Figure 1D).\n\nThe FP assay was further miniaturized to 1536-well format (Z\u2019=0.61, Figure 1E) and then screened against a subset of the Calibr small molecule library (354,274 compounds) using automated high-throughput screening for compounds which decreased the polarization signal (Figure 1F). From ~14,000 primary screening hits, 51 displayed dose-responsive inhibitory signals in follow-up assays. After attriting these molecules to remove potential fluorophores and quenchers, we ultimately identified four validated hit compounds that dose-dependently decreased FP signal with half-maximal inhibitory concentrations in the single-digit micromolar range (Figure 1G).\n\nIn parallel, we devised a counter screen to control for nonspecific binders using a different Kelch domain-containing ubiquitin E3 ligase, KEAP1 (Kelch-like ECH-associated protein 1), which has also been co-opted for targeted protein degradation using PROTACs (Du et al., 2022). Using recombinant KEAP1 Kelch domain expressed from Escherichia coli, we were able to establish a dissociation constant (Kd = 22 nM) via FP with a peptide corresponding to the KEAP1 substrate NRF2 (NFE2L2), which was N-terminally tagged with a TAMRA fluorophore (TAMRA-AFFAQLQLDEETGEFL, Figure 1\u2014figure supplement 1A). We confirmed this FP signal could be competed with good potency (IC50=6 nM) by a previously reported small molecule ligand of the KEAP1 Kelch domain, KI-696 (Figure 1\u2014figure supplement 1B and C). Importantly, the free SelK peptide displayed no inhibitory signal in FP assays measuring the association between KEAP1 and NRF2 (Figure 1C), further validating the specificity of the SelK-KLHDC2 FP-based interaction assay used for screening.\n\nWe then characterized the four hits for their capacity to bind to KLHDC2 in vitro. Two of these hits, 1 and 2, share a conserved 8-carboxy tetahydroquinoline scaffold (Figure 2A and B), whereas the other two compounds, 3 and 4, were closely related imidazopyridines that varied only by an additional methyl substitution present in 4 (Figure 2\u2014figure supplement 1). The four compounds displayed dose-dependent inhibitory effects in the SelK-KLHDC2 competitive FP assay in 384-well format (IC50s=2.5 \u00b5M for 1, 1.3 \u00b5M for 2, 3.6 \u00b5M for 3, and 2.8 \u00b5M for 4) and did not have an inhibitory effect in the KEAP1 counter-screening assay at concentrations less than 20 \u00b5M (Figure 2C and D; Figure 2\u2014figure supplement 1C, D). We next evaluated these four molecules for direct binding to immobilized KLHDC2 using surface plasmon resonance (SPR). 1 and 2 gave robust interaction responses, yielding Kd values of 810 nM and 440 nM, respectively (Figure 2E and F). Compounds 3 and 4 were not found to provide robust sensorgram signals. Whether this observation derives from incompatibility under the assay conditions or requires the presence of the SelK peptide for interaction with KLHDC2 remains unclear. As such, we chose to evaluate the tetrahydroquinoline series for further study.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig2-v1.jpg)\n\n**Figure 2.:** Structures and summary of activities of compounds 1 (A) and 2 (B). (C) Fluorescence polarization signal from KLHDC2 and KEAP1 assays in response to increasing concentrations of 1 (C) and 2 (D) (n=3; mean and s.e.m.). Representative surface plasmon resonance (SPR) sensorgrams of KLHDC2 binding from the indicated concentrations of 1 (E) and 2 (F).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Structures of compounds 3 (A) and 4 (B). Fluorescence polarization signal from KLHDC2 and KEAP1 assays from the indicated concentrations of 3 (C) and 4 (D) (n=3; mean and s.e.m.).\n\nWe next sought to understand if the tetrahydroquinoline scaffold might be further optimized for increased affinity with KLHDC2. We evaluated all commercially available analogs that shared the 8-carboxy tetrahydroquinoline core (53 analogs) in 384-well FP assays measuring association between KLHDC2 and the labeled SelK peptide. Notably, substitution of 2,5-dimethyl substituted phenyl group present in 2 to 3-substituted trifluoromethyl or trifluoromethoxy groups was found to increase potency in this initial screen (Figure 3A). We evaluated the trifluoromethyl substituted analog 5 and the trifluoromethoxy substituted 6 (Figure 3B and C) in follow-up FP assays with KLHDC2, observing increased potency for these analogs (IC50s=760 nM and 670 nM respectively, Figure 3D and E) with no inhibitory effect in the KEAP1 counter-screening assay. Compounds 5 and 6 also displayed increased potency in SPR assays measuring affinity for KLHDC2 binding with Kds of 380 nM and 160 nM, respectively (Figure 3F and G).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig3-v1.jpg)\n\n**Figure 3.:** (A) Heatmap of fluorescence polarization signal in response to dose responses of the 54 related compounds. Structures and summary of activities of compounds 5 (B) and 6 (C). Fluorescence polarization signal from KLHDC2 and KEAP1 assays in response to increasing concentrations of 5 (D) and 6 (E) (n=3; mean and s.e.m.). Representative surface plasmon resonance (SPR) sensorgrams of KLHDC2 binding from the indicated concentrations of 5 (F) and 6 (G).\n\nWe next sought to determine if the tetrahydroquinoline series could be used for targeted protein degradation. We performed docking studies using AutoDock Vina to evaluate the potential binding modes of 6 to the previously solved crystal structure of the Kelch domain of KLHDC2 (PDB 6DO3) (Rusnac et al., 2018). Surprisingly, 6 was not predicted to be capable of making interactions with Arg236 or Arg241, which recognize the anionic carboxy terminus of the C-terminal diglycine motif of SelK, as anticipated. Instead, 6 occupies a more distal, lipophilic spot in the SelK binding pocket, making a predicted H-bond interaction with Arg189 of KLHDC2 (Figure 4A). In this orientation, the trifluoromethoxy group points to solvent, providing a potential vector for derivatizing PROTAC linkers. We evaluated this hypothesis by synthesizing three PROTAC molecules bearing JQ1, a well-characterized ligand to BRD4 (bromodomain-containing protein 4), which has been used often in the literature as a means of testing PROTAC activity (Winter et al., 2015; Lu et al., 2015). These molecules were based on the methyl ester substituted scaffold represented by 2 (for increased cellular permeability and subsequent hydrolysis of the carboxylate by cellular esterases) and bore 3 position substituted PROTAC linkages to JQ1. These PROTACs linkers consisted of the flexible three ethylene glycol substituted 7 as well as the more structured linkers represented by 8 and 9 (Figure 4B). We evaluated the ability of these molecules to degrade BRD4 using a HEK293T-based assay in which the luminescence produced from a transiently transfected BRD4-HiBiT transgene correlates to the amount of cellular BRD4 present. We found 7 degraded BRD4 in the BRD4-HiBiT with modest activity after 4 hr of treatment (half-maximal degradation concentration, DC50=2.6 \u00b5M) and that degradation by this molecule persisted for 24 hr (DC50=4 \u00b5M; Figure 4C and D). Notably, the more rigid PROTAC 8 displayed considerably enhanced activity in degrading BRD4 within 4 hr of treatment (DC50=164 nM) that further increased (DC50=80 nM) at the 24 hr timepoint (Figure 4C and D). This result contrasts with dBET1, a reported CRBN-targeting PROTAC degrader of BRD4 (Winter et al., 2015), which potently promoted degradation at 4 hr in this assay (DC50=22 nM) but became inactive at the 24 hr timepoint. Notably, the most rigid biphenyl linker containing 9 did not promote BRD4 degradation at any concentration (<20 \u00b5M) or timepoint (4 or 24 hr) tested. We lastly confirmed the ability of 8 to degrade endogenous BRD4 in SK-BR-3 cells. 8 (100 nM) degraded more than 60% of endogenous BRD4 protein in 24 hr of treatment; maximal degradation was observed with the highest concentration tested (10 \u00b5M; 94% degradation; Figure 4E). Importantly, the 10 \u00b5M condition could be partially rescued when co-treated with MG-132 (29% remaining vs. 4% in the DMSO condition), indicating degradation occurs through a proteasome-mediated mechanism.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig4-v1.jpg)\n\n**Figure 4.:** (A) Binding pose of compound 6 to KHLDC2 (PDB 6DO3). (B) Structure and summary of activities of the indicated proteolysis-targeting chimeras (PROTAC) molecules. Relative BRD4 levels at 4 (C) or 24 hr (D) as measured by luminescence from HEK293T cells expressing a HiBiT-tagged BRD4 transgene (n=3; mean and s.e.m.). (E) Representative western blot and densitometry-based quantification of BRD4 levels from SK-BR-3 in response to 24 hr treatment with the indicated concentrations of 8.\n\n## Discussion\n\nHere, we have reported the development and execution of a high-throughput competitive FP-based screen that identified a novel ligand to KLHDC2, an E3 ligase effector of the C-end degradation rule. One tetrahydroquinoline scaffold was found to dose-dependently bind KLHDC2 in two in vitro assays, consistent with a binding mode that competes for interaction with KLHDC2 client proteins in the SelK recognition pocket. Importantly, we were able to further optimize the affinity of this series by several fold, yielding 6, a ligand which bound recombinant KLHDC2 in SPR assays with a Kd of 160 nM. As such, we hypothesize that 6 and its analogs will be useful tools to further probe the biological roles of KLHDC2 in cells. Recently, several other groups have used computational design to identify ligands to KLHDC2 (Scott et al., 2024; Zhou et al., 2024; Hickey et al., 2024). These ligands engage the diglycine recognition motif deep within the SelK binding pocket of KLHDC2, which contrasts with the predicted binding mode of 6 presented here. We demonstrated that the tetrahydroquinoline scaffold can be further derivatized, yielding PROTAC molecules like 8, which can degrade BRD4 in cells with long-acting degradation kinetics. Like other PROTAC designs, linker geometry is important, with the semirigid linker of 8 considerably outperforming other designs. To the extent that 8 may be further modified to increase its potency and drug likeness will be the subject of future work. To our knowledge, this is the first demonstration that a noncovalent, PROTAC-compatible E3 ligase ligand can be discovered by affinity-based, high-throughput screening. Overall, this work adds a novel scaffold for targeting KLHDC2 and further supports the notion that drug-like molecules can be developed to this E3 for therapeutic applications.\n\n## Materials and methods\n\n### Cell culture\n\nHEK293T and SK-BR-3 cells were purchased from American Type Culture Collection (ATCC) and were profiled for identity using Short Tandem Repeat (STR) profiling. HEK293T cells were maintained in DMEM (Gibco) containing 10% fetal bovine serum (Gibco) and 1% penicillin streptomycin (Gibco). SK-BR-3 cells were maintained in McCoy\u2019s 5A medium (Gibco) supplemented with 10% fetal bovine serum (Gibco) and 1% penicillin streptomycin (Gibco).\n\n### Protein expression and purification\n\nThe Kelch domain of human KLHDC2 (amino acids 1\u2013362) was cloned in frame with an N-terminal glutathione-S-transferase (GST) tag and TEV-cleavage sequence into the pFastBac vector and was expressed in two rounds of baculoviral production in insect Sf9 monolayer cells. The produced 15 mL of P3 virus was used to infect 1.5 L HiFive suspension cells at a cellular density of 106/mL in a 27\u00b0C shaker at 110 RPM. After 3 days of infection, the cells were harvested at 8000\u00d7g for 30 min and then lysed in 20 mM Tris, pH 8.0, 200 mM NaCl, 5 mM DTT in the presence of protease inhibitors (1 mg/mL leupeptin, 1 mg/mL pepstatin, and 100 mM PMSF) with sonication. The lysate was incubated with Pierce Glutathione Agarose (Thermo Scientific) at 4\u00b0C overnight and eluted with 250 mM glutathione. The crude protein was first dialyzed into dialysis buffer (20 mM Tris, pH 8.0, 200 mM NaCl, 5 mM DTT) and further purified with size exclusion using a Superdex-75 column (GE Healthcare). The human KEAP1 Kelch domain was expressed using a pET21a-KEAP1 plasmid outfitted cloned in frame with an N-terminal HIS6 tag. Plasmid-containing BL21(DE3) cells were amplified in 1 L 2YT culture at 37\u00b0C until the OD600 reached 0.8, followed by 1 mM IPTG induction at 4\u00b0C overnight. The harvested cells were lysed in the aforementioned lysis buffer and purified via a standard Ni-NTA purification protocol. Both proteins were concentrated with an Amicon concentrator (Sigma), and the protein concentrations were determined by BCA assay (Thermo Fisher 23327). All protein samples were flash-frozen in liquid nitrogen for future use.\n\n### Small molecule libraries\n\nThe small molecule library of 354,274 compounds consisted of a ChemDiv library (150,114 compounds), an Enamine library (142,208 compounds), a Life Chemicals library (33,792 compounds), and the ReFrame library (28,160 compounds).\n\n### High-throughput screening\n\nCompounds from selected small molecule libraries were pre-spotted at 10 \u00b5M (final concentration) with Echo Acoustic liquid handler system (Beckman) in the format of 1536-well or 384-well in Greiner solid black microplates (Cat.No. 782076 and 781209). The C-terminal peptide of SelK, native substrate KLHDC2 protein, HLRGSPPPMAGG (InnoPep. Inc), was spotted into each individual plate, which serves as positive control at a final concentration of 1 \u03bcM. The FP assay was carried out by first dispensing 5 \u03bcL of KLHDC2 protein at 25 nM for 1536-well microplates or 25 \u03bcL at 25 nM for 384-well microplates with a Multidrop Dispenser (Thermo Fisher) followed by incubation at room temperature for 1 hr. An equal volume of 3.12 nM TAMRA-HLRGSPPPMAGG (InnoPep. Inc) was dispensed into the plates and incubated at room temperature for another 1 hr in the dark. The final concentration of the protein and the corresponding TAMRA-peptide was 12.5 nM and 1.56 nM, respectively. FP signals were recorded using an Envision plate reader (Perkin Elmer), and the robust Z-scores were calculated using Genedata Screener where ~3% of the hits were selected each batch based on robust Z-scores for the primary screening. The second round of triplicate validation and the third round of dose-response characterization were carried out in a similar format.\n\n### Fluorescence polarization assays\n\nThe in-house validation of KLHDC binders including re-purchased SAR by inventory compounds was carried out in black solid-bottom 384-well microplates. 25 \u03bcL of KLHDC2 or KEAP1 protein was first dispensed into the plates, followed by transferring the corresponding concentration of compound through the Bravo Automated liquid handling system (Agilent). The mixture was incubated at room temperature for 1 hr before the TAMRA-peptide was added. The final concentration of the protein and the corresponding TAMRA-peptide was 25 nM and 3.12 nM, respectively. The plates were incubated at room temperature in a shaded environment for 1 more hour, and the FP signals were measured by Envision plate reader (Perkin Elmer). The data were analyzed and visualized by GraphPad Prism software.\n\n### SPR binding experiments with KLHDC2Klech\n\n10 \u03bcM His-GST-KLHDC2 in 100 \u03bcL of 1X HBS (HEPES-buffered saline, 10 mM HEPES, 150 mM NaCl, pH 7.4) containing 25 \u03bcM EZ-Link NHS-PEG4-biotin was incubated at 4\u00b0C for 2 hr, after which the reaction was quenched with 2 \u03bcL of 1 M Tris pH 7.5. The solution was dialyzed over an 18 hr period against three changes of 500 mL of 1X HBSS buffer. Biotinylated-His-GST-KLHDC2 was immobilized onto Xantec High Density SA chip by diluting to 0.7 \u03bcM injected over the surface for 60 s at 10 \u03bcL/min and resulting in approximate immobilized signal gain of 4000\u20134500 response units (RU). The running buffer for all immobilization assays was 50 mM Tris pH 8, 250 mM NaCl, 0.05% Tween 20, 0.1 mM DTT, and 2% DMSO. All measurements of direct binding in SPR experiments were collected using the Biacore 8K+ instrumentation.\n\n### Cell-based HiBIT BRD4 degradation assay\n\nHEK293T cells (0.2\u00d7106 cells/well, 40 \u03bcL) were seeded in white opaque bottom Greiner 384-well microplates for 24 hr before transfection with 1 ng pCMV6-HiBIT-BRD4 plasmid, 99 ng pUC19 plasmid, and 4 \u00b5L/\u00b5g FuGene (Promega) in OptiMEM (Thermo Fisher). The next day, compounds were spotted as DMSO solutions (100 nL) using a Bravo Automated Liquid Handler (Agilent) affixed with a pintool head (V&P Scientific) in serial dilution. After 4 hr of incubation, 30 \u03bcL of Nano-Glo HiBiT Lytic Reagent was added, and the plates were shaken for 5 min. The HiBIT-BRD4 levels of each well were measured by Envision plate reader (Perkin Elmer). The raw data was analyzed and visualized by GraphPad Prism software.\n\n### Cell-based endogenous BRD4 degradation assay\n\nSK-BR-3 cells (0.25\u00d7106 cells/well, 2 mL) were seeded in six-well polystyrene plates for 24 hr before the compounds were added at the indicated doses as DMSO solutions. The protease inhibitor MG132 (Selleck Chemicals) was added to the sixth well along with 10 \u03bcM 3d at a concentration of 10 \u03bcM. The plate was incubated at 37\u00b0C for 24 hr, and the cells from each well were collected and lysed in RIPA buffer (Thermo Fisher 89900) with Halt protease and phosphatase inhibitor cocktail (Thermo Fisher 78440). The cellular content was extracted on ice for 20 min, and the protein concentration was determined by BCA assay (Thermo Fisher 23327). 2 \u03bcg of each sample was resolved via SDS-PAGE gels, and western blotting was used to visualize the endogenous BRD4 level (BRD4 primary antibody Abcam plc, Ab128874, RRID:AB_11145462, 1:10,000 dilution) with Bio-Rad Gel Doc XR+ imaging system.\n\n### Statistics\n\nAll experiments were performed at least twice. All data are technical replicates.\n",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amy H Andreotti, https://ror.org/04rswrd78 Iowa State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.106844.2.sa0](https://doi.org/10.7554/eLife.106844.2.sa0)\n\nThis valuable study aims to advance the toolkit of small molecules used for approaches to targeted protein degradation for research and therapeutic applications. The authors provide solid data demonstrating the use of a high-throughput screen of small molecules to target a specific E3 ligase, KLHDC2 (Kelch-like homology domain containing protein 2); the resulting compounds then form the basis for new PROTAC (proteolysis targeting chimera) reagents. The strength of the work lies in expanding the PROTAC reagent inventory. The current work would be strengthened further by confirming that the PROTAC's activity is dependent on KLHDC2 and by a more thorough examination of off-target effects in cellular applications.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.106844.2.sa1](https://doi.org/10.7554/eLife.106844.2.sa1)\n\nSummary:\n\nThe manuscript \"Targeted Protein Degradation by KLHDC2 Ligands Identified by High Throughput Screening\" by Zhou, H. et al. describes the development of a high-throughput FP-based screen and the identification of a KLHDC2 ligand from a small molecule library. A counter screen and other filtering criteria led to the identification of lead compounds that contained a tetrahydroquinoline scaffold. Commercially available analogs (52 compounds) that shared this scaffold were characterized by a KLHDC2 competitive binding assay. Optimized compounds were obtained that demonstrated improved potency and increased binding affinity by SPR. Docking of a lead candidate (compound 6) suggested it bound at a distal lipophilic site within the SelK binding pocket of KLHDC2. Based on this model, the authors then synthesized PROTACs that linked the KLHDC2 binder to a BRD4-binding molecule, JQ1. These PROTAC candidates possessed different linker configurations, and PROTAC 8 was able to cause BRD4 degradation in cells, with a half-maximal degradation concentration (DC50) of 80 nM. The authors demonstrate the identification and characterization of small-molecule KLHDC2 ligands that can be used to generate PROTACs that result in BRD4 degradation in cells.\n\nStrengths:\n\nThe study by Zhou, H. et al. expands the E3 ligase toolkit by targeting KLHDC2 to identify ligands for PROTAC development, which has predominantly relied on VHL and CRBN. This was accomplished using a described FP-based high-throughput screening strategy (high Z' values in 1536 well format). Both target-specific and counter-specific assays were performed, along with subsequent stringent follow-up assays designed to address non-specific binding/specificity concerns. Label-free direct binding validations by SPR were used to determine binding affinity/kinetics. A strength of the study is the characterization of the interaction between candidate compounds and KLHDC2 versus related KEAP1.\n\nStructural insight into the potential mode of binding was inferred by computational docking studies of the newly discovered KLHDC2 ligands. This was performed to identify where the identified scaffolds could be modified by linker incorporation for the design of PROTACs. The computational predictions were evaluated by linking a solvent-exposed site on the KLHDC2 ligand to JQ1. Three linkers were tested, and two compounds were found to result in BRD4 degradation in cells by HiBiT degradation assay and western blot. These findings demonstrate the feasibility of these compounds for the design of PROTAC-based degraders.\n\nThe authors present compelling KLHDC2 binding data for their lead compounds and demonstrate degradation of a target using a PROTAC strategy. Accordingly, the screening approach and compounds identified are likely to be of interest to the field and are likely to be generalizable to other PROTAC targets of interest.\n\nWeaknesses:\n\nThe specificity of compounds for KLHDC2 was assessed by using a counter screen against KEAP1 and in vitro binding assays. However, off-target effects might occur in a cellular context, which weren't fully explored in the study. Notably, the authors do not demonstrate that the degradation induced by their PROTACs in cells is KLHDC2-dependent. A requirement for KLHDC2-mediated degradation could be evaluated, for example, by using knockout/knockdown of KLHDC2, or other means, to demonstrate specificity. Addressing specificity is deemed important to evaluate the proposed PROTAC mechanism of action in a cellular context that results in the degradation of BRD4. Specificity is important when considering the utility of these new compounds for PROTAC design.\n\nAdditional rationale behind the selection of linkers used to generate candidate PROTACs would be informative and would benefit from additional discussion and/or citation. The reasons for the lack of activity, such as for compound 9, were not fully explored or discussed, such as whether complex assembly is potentially affected by linker choice. Perhaps related to this point, the authors note that a trifluoromethoxy group increased the binding affinity of compound 6. However, the subsequent docking analysis revealed this moiety to be solvent-exposed. The relationship between this site of functionalization, linker selection, and the resulting binding affinity or effect on DC50 was not clear and/or could be developed further.\n\nMinor issues related to the presentation of the manuscript include sections that would benefit from either additional citation and/or description, such as the KI-696 inhibitor used and the BRD4 HiBiT degradation assay that was used to assess PROTAC potency. Figure captions should be reviewed to ensure that the number of independent experiments is indicated, and what data points and error bars represent, as these are not indicated in several figures. BRD4 levels were quantified in 4E; however, error/reproducibility (n) is not indicated.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.106844.2.sa2](https://doi.org/10.7554/eLife.106844.2.sa2)\n\nPROTACs are a class of small molecules that induce an interaction between a target protein and a ubiquitin ligase, thereby leading to the target protein's ubiquitination and subsequent proteasomal degradation. Given that the vast majority of PROTACs rely on the cereblon and VHL ubiquitin ligases, a major goal within this field has been to identify and develop ligands for additional ubiquitin ligases, in particular those whose expression affords tissue or subcellular specificity or those whose structure allows them to degrade targets that are otherwise incompatible with cereblon or VHL.\n\nIn this work, Zhou and colleagues from the Bollong group at Scripps utilize a high-throughput fluorescence polarization screen of >350,000 compounds to identify and optimize a novel ligand for KLHDC2, a ubiquitin ligase which had previously been discovered to be capable of proximity-induced degradation of target proteins. Zhou et al go on to show that this ligand can be used as the basis for PROTACs capable of degrading BRD4 in a cell line. Of note, prior to this paper, three other groups had also developed ligands to KLHDC2 and used them to generate active PROTACs. Interestingly, docking studies by Zhou suggest that their compound may bind to a different region of the KLHDC2's kelch domain.\n\nThe major strengths of this work are its brevity and the clarity of the writing and figures. Their claim that they have discovered a ligand for KLHDC2, which can be used to develop BRD4-degrading PROTACs, is well-supported by their findings from the screen, SPR, and cellular assays. The weakness of the work then, is not so much relevant to the paper at hand but rather stems from the fact that their story leaves me wanting to know more. Indeed, there are a number of interesting experiments that we need as a field in order to assess (1) how generalizable their findings are across cell lines and targets, and (2) how this new KLHDC2 ligand stacks up against the other recently discovered ligands for KLDHC2 as well as the existing standards, cereblon and VHL.\n\nNonetheless, Zhou and colleagues provide a valuable addition to the emerging repertoire of KLHDC2 ligands, and I'm certain that with time, we will come to understand what ligands work best for KLHDC2-based PROTACs and how they compare to the growing set of ubiquitin ligases in our armamentarium.\n",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89f1c1dc-5316-4d2e-a88b-c0f8bf819340",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C1",
+      "claim": "Only two E3 ligases are routinely used for PROTAC development.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteolysis-targeting chimeras (PROTACs) enable the selective and sub-stoichiometric elimination of pathological proteins, yet only two E3 ligases are routinely used for this purpose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a motivation for the study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "fae25bbd-c6ac-4c1d-aac5-406a76512c30",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C2",
+      "claim": "Most degrader molecules developed to date have exploited only two E3 ligases, VHL (von Hippel-Lindau) and CRBN (Cereblon).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the widespread clinical and academic use of PROTACs, most degrader molecules developed to date have exploited only two E3 ligases, VHL (von Hippel-Lindau) and CRBN (Cereblon) (Buckley et al., 2012; Winter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buckley et al., 2012 and Winter et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "f3c8cb03-5196-46ae-a4e5-3fc38d5cfc34",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C3",
+      "claim": "Several additional E3 ligases have been reported in the literature as being PROTAC-compatible.",
+      "claim_type": "EXPLICIT",
+      "source": "While several additional E3 ligases have been reported in the literature as being PROTAC-compatible, these ligands do not have well-understood mechanisms of E3 engagement and often do not fully degrade their target substrates (Ishida and Ciulli, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishida and Ciulli, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "d85e3554-7337-45be-9983-02db13e05bb4",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C4",
+      "claim": "Additional E3 ligases reported as PROTAC-compatible do not have well-understood mechanisms of E3 engagement and often do not fully degrade their target substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "While several additional E3 ligases have been reported in the literature as being PROTAC-compatible, these ligands do not have well-understood mechanisms of E3 engagement and often do not fully degrade their target substrates (Ishida and Ciulli, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishida and Ciulli, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "de23bc1d-d4fd-40ad-a5d8-47fef628eb24",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C5",
+      "claim": "KLHDC2 (Kelch-like homology domain-containing protein 2) has emerged as a promising candidate for PROTAC development.",
+      "claim_type": "EXPLICIT",
+      "source": "Among potential E3 ligases for PROTAC development, KLHDC2 (Kelch-like homology domain-containing protein 2) has emerged as a promising candidate (B\u00e9k\u00e9s et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to B\u00e9k\u00e9s et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "2436941c-a143-408c-a790-2a2751080090",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C6",
+      "claim": "KLHDC2 is a CUL2 adaptor protein.",
+      "claim_type": "EXPLICIT",
+      "source": "A CUL2 adaptor protein, KLHDC2, serves as a key component of the C-end degron pathway, recognizing C-terminal diglycine residues of client proteins, promoting their ubiquitination and degradation (Pilcher et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pilcher et al., 2025",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "d158c946-b0f9-4ec7-92ac-c88157dbe9a4",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C7",
+      "claim": "KLHDC2 serves as a key component of the C-end degron pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "A CUL2 adaptor protein, KLHDC2, serves as a key component of the C-end degron pathway, recognizing C-terminal diglycine residues of client proteins, promoting their ubiquitination and degradation (Pilcher et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pilcher et al., 2025",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e5aa201d-e525-4ede-aad1-a3f5960fbb91",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C8",
+      "claim": "KLHDC2 recognizes C-terminal diglycine residues of client proteins, promoting their ubiquitination and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "A CUL2 adaptor protein, KLHDC2, serves as a key component of the C-end degron pathway, recognizing C-terminal diglycine residues of client proteins, promoting their ubiquitination and degradation (Pilcher et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pilcher et al., 2025",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "3fdf42cd-846b-4931-95b2-a646ff8d420f",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C9",
+      "claim": "Client proteins of KLHDC2 include selenocysteine-containing proteins, like SelK (Selenoprotein K).",
+      "claim_type": "EXPLICIT",
+      "source": "Client proteins of KLHDC2 include selenocysteine-containing proteins, like SelK (Selenoprotein K), which, in the context of selenocysteine depletion, undergo premature translational termination, revealing a C-terminal diglycine degron (Rusnac et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rusnac et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "24801937-58c4-44e0-a812-fdc522319c8f",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C10",
+      "claim": "In the context of selenocysteine depletion, selenocysteine-containing proteins undergo premature translational termination, revealing a C-terminal diglycine degron.",
+      "claim_type": "EXPLICIT",
+      "source": "Client proteins of KLHDC2 include selenocysteine-containing proteins, like SelK (Selenoprotein K), which, in the context of selenocysteine depletion, undergo premature translational termination, revealing a C-terminal diglycine degron (Rusnac et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rusnac et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "0267c7de-ddad-4925-9668-1b5cabb63a83",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C11",
+      "claim": "Recognition of the diglycine degron of SelK by KLHDC2 in its Kelch beta propellor domain is characterized by low nanomolar dissociation constants (<10 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that recognition of the diglycine degron of SelK by KLHDC2 in its Kelch beta propellor domain is characterized by low nanomolar dissociation constants (<10 nM) and with favorable binding kinetics for PROTAC development (Figure 1A; Rusnac et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rusnac et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "ee4426dc-0244-45e9-8f73-7f836b8e837b",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C12",
+      "claim": "Recognition of the diglycine degron of SelK by KLHDC2 has favorable binding kinetics for PROTAC development.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that recognition of the diglycine degron of SelK by KLHDC2 in its Kelch beta propellor domain is characterized by low nanomolar dissociation constants (<10 nM) and with favorable binding kinetics for PROTAC development (Figure 1A; Rusnac et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rusnac et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "ed7edd08-e126-4d37-9509-8b61713c8481",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C13",
+      "claim": "Unbiased protein proximity-based screens for generalizable E3 degraders have indicated that KLHDC2 is among the best E3 ligases for fully degrading generic protein substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Unbiased protein proximity-based screens for generalizable E3 degraders have also indicated that KLHDC2 is among the best E3 ligases for fully degrading generic protein substrates (Poirson et al., 2024; R\u00f6th et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Poirson et al., 2024 and R\u00f6th et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "4096c7ec-1f04-48c3-a026-7faae518ff5c",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C14",
+      "claim": "Peptide-based PROTACs derived from a 7-mer peptide of the C-terminus of SelK can be used to degrade a variety of kinase targets in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, others have shown that peptide-based PROTACs derived from a 7-mer peptide of the C-terminus of SelK can be used to degrade a variety of kinase targets in human cells (Kim et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "dc69caab-a568-420d-a9ec-30d37b455cfd",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C15",
+      "claim": "A TAMRA-labeled SelK peptide (TAMRA-HLRGSPPPMAGG) binds to GST-KLHDC2 with a dissociation constant of 25 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, a slightly shifted dissociation constant was achieved with the fluorophore-tagged SelK peptide (25 nM, Figure 1B) relative to the reported literature value of 3.4 nM for the unlabeled peptide (Rusnac et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "6e18fe07-205a-428a-b167-26b29f38a3a8",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C16",
+      "claim": "The unlabeled SelK peptide has a reported dissociation constant of 3.4 nM for KLHDC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, a slightly shifted dissociation constant was achieved with the fluorophore-tagged SelK peptide (25 nM, Figure 1B) relative to the reported literature value of 3.4 nM for the unlabeled peptide (Rusnac et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rusnac et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "50c35efa-8110-4540-8731-e3c4930e1d47",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C17",
+      "claim": "Unlabeled SelK peptide can compete for KLHDC2 binding with an IC50 of 55 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "We then demonstrated that unlabeled SelK peptide can compete for KLHDC2 binding (IC50=55 nM) under these conditions, giving us good confidence in recapitulating this known interaction and providing a positive assay control for high-throughput screening (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "1e0c97be-c92d-46ec-988d-d034a935f3b2",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C18",
+      "claim": "A 384-well FP assay with GST KLHDC2 (25 nM) and TAMRA-tagged SelK peptide (3.1 nM) achieved a Z' of 0.81 when exposed to free SelK peptide (10 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "A suitable 384-well FP assay with GST KLHDC2 (25 nM) and the TAMRA-tagged SelK peptide (3.1 nM) was achieved (Z'=0.81) when exposed to a molecular excess of free SelK peptide (10 \u00b5M; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally, shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "02899aca-6285-4d9d-ab1a-f42801be6758",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C19",
+      "claim": "The FP assay was miniaturized to 1536-well format with a Z' of 0.61.",
+      "claim_type": "EXPLICIT",
+      "source": "The FP assay was further miniaturized to 1536-well format (Z'=0.61, Figure 1E) and then screened against a subset of the Calibr small molecule library (354,274 compounds) using automated high-throughput screening for compounds which decreased the polarization signal (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally, shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "407a74cc-34a1-46b1-a052-97585cb9c3d6",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C20",
+      "claim": "The high-throughput screen was performed against 354,274 compounds from the Calibr small molecule library.",
+      "claim_type": "EXPLICIT",
+      "source": "The FP assay was further miniaturized to 1536-well format (Z'=0.61, Figure 1E) and then screened against a subset of the Calibr small molecule library (354,274 compounds) using automated high-throughput screening for compounds which decreased the polarization signal (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in the methods and shown in Figure 1F and 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "f046a79e-2fa6-47cd-8520-a851e5570318",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C21",
+      "claim": "From approximately 14,000 primary screening hits, 51 displayed dose-responsive inhibitory signals in follow-up assays.",
+      "claim_type": "EXPLICIT",
+      "source": "From ~14,000 primary screening hits, 51 displayed dose-responsive inhibitory signals in follow-up assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as results from the screening campaign",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "99b555c9-7048-43c0-bfc3-1ddc2df497c3",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C22",
+      "claim": "Four validated hit compounds were identified that dose-dependently decreased FP signal with half-maximal inhibitory concentrations in the single-digit micromolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "After attriting these molecules to remove potential fluorophores and quenchers, we ultimately identified four validated hit compounds that dose-dependently decreased FP signal with half-maximal inhibitory concentrations in the single-digit micromolar range (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described as results from the screening campaign, shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "c54aa44c-592e-4f18-bafa-d17dab8e824f",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C23",
+      "claim": "KEAP1 (Kelch-like ECH-associated protein 1) has been co-opted for targeted protein degradation using PROTACs.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we devised a counter screen to control for nonspecific binders using a different Kelch domain-containing ubiquitin E3 ligase, KEAP1 (Kelch-like ECH-associated protein 1), which has also been co-opted for targeted protein degradation using PROTACs (Du et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Du et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "fb8a6f6d-0660-434e-b202-7312a3916e7f",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C24",
+      "claim": "Recombinant KEAP1 Kelch domain binds to a TAMRA-labeled NRF2 peptide (TAMRA-AFFAQLQLDEETGEFL) with a dissociation constant of 22 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using recombinant KEAP1 Kelch domain expressed from Escherichia coli, we were able to establish a dissociation constant (Kd = 22 nM) via FP with a peptide corresponding to the KEAP1 substrate NRF2 (NFE2L2), which was N-terminally tagged with a TAMRA fluorophore (TAMRA-AFFAQLQLDEETGEFL, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 1\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "77c627aa-7b05-48fa-8487-06713592ea2e",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C25",
+      "claim": "KI-696 is a small molecule ligand of the KEAP1 Kelch domain with an IC50 of 6 nM in the FP assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this FP signal could be competed with good potency (IC50=6 nM) by a previously reported small molecule ligand of the KEAP1 Kelch domain, KI-696 (Figure 1\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "784a7d0d-fd35-4daf-9ab9-7413066308dc",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C26",
+      "claim": "Free SelK peptide displayed no inhibitory signal in FP assays measuring the association between KEAP1 and NRF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the free SelK peptide displayed no inhibitory signal in FP assays measuring the association between KEAP1 and NRF2 (Figure 1C), further validating the specificity of the SelK-KLHDC2 FP-based interaction assay used for screening.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "b48a4c29-930b-4239-a327-c565885b0432",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C27",
+      "claim": "Two of the four hits (1 and 2) share a conserved 8-carboxy tetrahydroquinoline scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these hits, 1 and 2, share a conserved 8-carboxy tetahydroquinoline scaffold (Figure 2A and B), whereas the other two compounds, 3 and 4, were closely related imidazopyridines that varied only by an additional methyl substitution present in 4 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "90ee5db7-e407-4187-a454-68990abb1a2a",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C28",
+      "claim": "Compounds 3 and 4 are closely related imidazopyridines that vary only by an additional methyl substitution present in 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these hits, 1 and 2, share a conserved 8-carboxy tetahydroquinoline scaffold (Figure 2A and B), whereas the other two compounds, 3 and 4, were closely related imidazopyridines that varied only by an additional methyl substitution present in 4 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "b5606c32-984b-4c64-aba5-552255f149d3",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C29",
+      "claim": "Compound 1 has an IC50 of 2.5 \u00b5M in the SelK-KLHDC2 competitive FP assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The four compounds displayed dose-dependent inhibitory effects in the SelK-KLHDC2 competitive FP assay in 384-well format (IC50s=2.5 \u00b5M for 1, 1.3 \u00b5M for 2, 3.6 \u00b5M for 3, and 2.8 \u00b5M for 4) and did not have an inhibitory effect in the KEAP1 counter-screening assay at concentrations less than 20 \u00b5M (Figure 2C and D; Figure 2\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e4d84721-b292-4855-9dc8-54acc9db15ba",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C30",
+      "claim": "Compound 2 has an IC50 of 1.3 \u00b5M in the SelK-KLHDC2 competitive FP assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The four compounds displayed dose-dependent inhibitory effects in the SelK-KLHDC2 competitive FP assay in 384-well format (IC50s=2.5 \u00b5M for 1, 1.3 \u00b5M for 2, 3.6 \u00b5M for 3, and 2.8 \u00b5M for 4) and did not have an inhibitory effect in the KEAP1 counter-screening assay at concentrations less than 20 \u00b5M (Figure 2C and D; Figure 2\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "639dba25-d979-4098-8a21-c00bf83cbfc5",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C31",
+      "claim": "Compound 3 has an IC50 of 3.6 \u00b5M in the SelK-KLHDC2 competitive FP assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The four compounds displayed dose-dependent inhibitory effects in the SelK-KLHDC2 competitive FP assay in 384-well format (IC50s=2.5 \u00b5M for 1, 1.3 \u00b5M for 2, 3.6 \u00b5M for 3, and 2.8 \u00b5M for 4) and did not have an inhibitory effect in the KEAP1 counter-screening assay at concentrations less than 20 \u00b5M (Figure 2C and D; Figure 2\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 2\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "36d3f197-753b-4329-abed-b5ae757f8a86",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C32",
+      "claim": "Compound 4 has an IC50 of 2.8 \u00b5M in the SelK-KLHDC2 competitive FP assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The four compounds displayed dose-dependent inhibitory effects in the SelK-KLHDC2 competitive FP assay in 384-well format (IC50s=2.5 \u00b5M for 1, 1.3 \u00b5M for 2, 3.6 \u00b5M for 3, and 2.8 \u00b5M for 4) and did not have an inhibitory effect in the KEAP1 counter-screening assay at concentrations less than 20 \u00b5M (Figure 2C and D; Figure 2\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 2\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "16a34772-b8c9-4141-b694-d159fa7bbcc9",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C33",
+      "claim": "Compounds 1, 2, 3, and 4 did not have an inhibitory effect in the KEAP1 counter-screening assay at concentrations less than 20 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The four compounds displayed dose-dependent inhibitory effects in the SelK-KLHDC2 competitive FP assay in 384-well format (IC50s=2.5 \u00b5M for 1, 1.3 \u00b5M for 2, 3.6 \u00b5M for 3, and 2.8 \u00b5M for 4) and did not have an inhibitory effect in the KEAP1 counter-screening assay at concentrations less than 20 \u00b5M (Figure 2C and D; Figure 2\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figures 2C, 2D, and Figure 2\u2014figure supplement 1C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e1b0456f-593a-4bcd-a430-513e1d413167",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C34",
+      "claim": "Compound 1 binds to immobilized KLHDC2 with a Kd of 810 nM as measured by surface plasmon resonance.",
+      "claim_type": "EXPLICIT",
+      "source": "1 and 2 gave robust interaction responses, yielding Kd values of 810 nM and 440 nM, respectively (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using surface plasmon resonance, shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "f54ff75d-7d56-47a9-8573-905c53baae04",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C35",
+      "claim": "Compound 2 binds to immobilized KLHDC2 with a Kd of 440 nM as measured by surface plasmon resonance.",
+      "claim_type": "EXPLICIT",
+      "source": "1 and 2 gave robust interaction responses, yielding Kd values of 810 nM and 440 nM, respectively (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using surface plasmon resonance, shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "03fbf4e2-1333-4736-afe3-1cefef545e73",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C36",
+      "claim": "Compounds 3 and 4 were not found to provide robust sensorgram signals in surface plasmon resonance assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds 3 and 4 were not found to provide robust sensorgram signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as experimental observation from SPR assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "ff578966-da1e-4f9e-a8ca-cd09a2116d50",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C37",
+      "claim": "53 commercially available analogs sharing the 8-carboxy tetrahydroquinoline core were evaluated in 384-well FP assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated all commercially available analogs that shared the 8-carboxy tetrahydroquinoline core (53 analogs) in 384-well FP assays measuring association between KLHDC2 and the labeled SelK peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as experimental approach for structure-activity relationship studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "ffd5c01e-55c3-413e-8aaf-b534981d6c8d",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C38",
+      "claim": "Substitution of the 2,5-dimethyl substituted phenyl group present in compound 2 to 3-substituted trifluoromethyl or trifluoromethoxy groups increased potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, substitution of 2,5-dimethyl substituted phenyl group present in 2 to 3-substituted trifluoromethyl or trifluoromethoxy groups was found to increase potency in this initial screen (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed experimentally in the analog screen, shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "98be05b7-1642-4e24-a975-18e524c5c4c0",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C39",
+      "claim": "Compound 5 has an IC50 of 760 nM in the KLHDC2 FP assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the trifluoromethyl substituted analog 5 and the trifluoromethoxy substituted 6 (Figure 3B and C) in follow-up FP assays with KLHDC2, observing increased potency for these analogs (IC50s=760 nM and 670 nM respectively, Figure 3D and E) with no inhibitory effect in the KEAP1 counter-screening assay.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "c0130d0a-8ac8-4db7-aaee-0fc925c91277",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C40",
+      "claim": "Compound 6 has an IC50 of 670 nM in the KLHDC2 FP assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the trifluoromethyl substituted analog 5 and the trifluoromethoxy substituted 6 (Figure 3B and C) in follow-up FP assays with KLHDC2, observing increased potency for these analogs (IC50s=760 nM and 670 nM respectively, Figure 3D and E) with no inhibitory effect in the KEAP1 counter-screening assay.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "481b1898-6255-4cba-8756-3b503c282acb",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C41",
+      "claim": "Compounds 5 and 6 had no inhibitory effect in the KEAP1 counter-screening assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the trifluoromethyl substituted analog 5 and the trifluoromethoxy substituted 6 (Figure 3B and C) in follow-up FP assays with KLHDC2, observing increased potency for these analogs (IC50s=760 nM and 670 nM respectively, Figure 3D and E) with no inhibitory effect in the KEAP1 counter-screening assay.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using fluorescence polarization assay, shown in Figures 3D and 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "f241f709-d764-4949-81f7-8e88b0f75f59",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C42",
+      "claim": "Compound 5 binds to KLHDC2 with a Kd of 380 nM as measured by surface plasmon resonance.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds 5 and 6 also displayed increased potency in SPR assays measuring affinity for KLHDC2 binding with Kds of 380 nM and 160 nM, respectively (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using surface plasmon resonance, shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "5e39921c-5a17-4187-b224-af2f39259541",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C43",
+      "claim": "Compound 6 binds to KLHDC2 with a Kd of 160 nM as measured by surface plasmon resonance.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds 5 and 6 also displayed increased potency in SPR assays measuring affinity for KLHDC2 binding with Kds of 380 nM and 160 nM, respectively (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally using surface plasmon resonance, shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "18f0137c-16f6-46e4-b999-344dd4f4a387",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C44",
+      "claim": "Compound 6 occupies a lipophilic spot in the SelK binding pocket and makes a predicted H-bond interaction with Arg189 of KLHDC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, 6 occupies a more distal, lipophilic spot in the SelK binding pocket, making a predicted H-bond interaction with Arg189 of KLHDC2 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted by docking studies using AutoDock Vina, shown in Figure 4A",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "03a8d5b1-8f82-44a4-9123-b36c3d808af0",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C45",
+      "claim": "Compound 6 was not predicted to be capable of making interactions with Arg236 or Arg241 of KLHDC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, 6 was not predicted to be capable of making interactions with Arg236 or Arg241, which recognize the anionic carboxy terminus of the C-terminal diglycine motif of SelK, as anticipated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by docking studies using AutoDock Vina",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "0b4af72c-d770-4e12-a318-3e60b79dee54",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C46",
+      "claim": "Arg236 and Arg241 of KLHDC2 recognize the anionic carboxy terminus of the C-terminal diglycine motif of SelK.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, 6 was not predicted to be capable of making interactions with Arg236 or Arg241, which recognize the anionic carboxy terminus of the C-terminal diglycine motif of SelK, as anticipated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on known structural information about KLHDC2-SelK interaction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "257c40c6-ba55-4299-9b67-390a1c117406",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C47",
+      "claim": "In the predicted binding orientation of compound 6, the trifluoromethoxy group points to solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "In this orientation, the trifluoromethoxy group points to solvent, providing a potential vector for derivatizing PROTAC linkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by docking studies using AutoDock Vina",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "a66ad2d3-6ebb-4fea-ba19-93d7751dca66",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C48",
+      "claim": "JQ1 is a well-characterized ligand to BRD4 (bromodomain-containing protein 4).",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated this hypothesis by synthesizing three PROTAC molecules bearing JQ1, a well-characterized ligand to BRD4 (bromodomain-containing protein 4), which has been used often in the literature as a means of testing PROTAC activity (Winter et al., 2015; Lu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Winter et al., 2015 and Lu et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e26a4bd1-3a72-430d-ab30-65b4bdc64233",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C49",
+      "claim": "JQ1 has been used often in the literature as a means of testing PROTAC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated this hypothesis by synthesizing three PROTAC molecules bearing JQ1, a well-characterized ligand to BRD4 (bromodomain-containing protein 4), which has been used often in the literature as a means of testing PROTAC activity (Winter et al., 2015; Lu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Winter et al., 2015 and Lu et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e9efe200-bfa9-4546-8e0c-f07212dc7a38",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C50",
+      "claim": "Compound 7 degraded BRD4 in the BRD4-HiBiT assay with a DC50 of 2.6 \u00b5M after 4 hours of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 7 degraded BRD4 in the BRD4-HiBiT with modest activity after 4 hr of treatment (half-maximal degradation concentration, DC50=2.6 \u00b5M) and that degradation by this molecule persisted for 24 hr (DC50=4 \u00b5M; Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally in HEK293T cells expressing BRD4-HiBiT, shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "f9f96171-cd2f-4131-8226-0224925cce4c",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C51",
+      "claim": "Compound 7 degraded BRD4 with a DC50 of 4 \u00b5M after 24 hours of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 7 degraded BRD4 in the BRD4-HiBiT with modest activity after 4 hr of treatment (half-maximal degradation concentration, DC50=2.6 \u00b5M) and that degradation by this molecule persisted for 24 hr (DC50=4 \u00b5M; Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally in HEK293T cells expressing BRD4-HiBiT, shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "a247e5dd-aa87-414b-b749-98e77baf3d8a",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C52",
+      "claim": "Compound 8 degraded BRD4 with a DC50 of 164 nM after 4 hours of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the more rigid PROTAC 8 displayed considerably enhanced activity in degrading BRD4 within 4 hr of treatment (DC50=164 nM) that further increased (DC50=80 nM) at the 24 hr timepoint (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally in HEK293T cells expressing BRD4-HiBiT, shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "6ba4d778-846e-478a-862d-34e432de4613",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C53",
+      "claim": "Compound 8 degraded BRD4 with a DC50 of 80 nM after 24 hours of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the more rigid PROTAC 8 displayed considerably enhanced activity in degrading BRD4 within 4 hr of treatment (DC50=164 nM) that further increased (DC50=80 nM) at the 24 hr timepoint (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally in HEK293T cells expressing BRD4-HiBiT, shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "bc8105f5-12b8-41f7-9abb-234f35632358",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C54",
+      "claim": "dBET1 is a CRBN-targeting PROTAC degrader of BRD4.",
+      "claim_type": "EXPLICIT",
+      "source": "This result contrasts with dBET1, a reported CRBN-targeting PROTAC degrader of BRD4 (Winter et al., 2015), which potently promoted degradation at 4 hr in this assay (DC50=22 nM) but became inactive at the 24 hr timepoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Winter et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "980ae42c-9e1b-4df6-8b43-1d896d8c3526",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C55",
+      "claim": "dBET1 potently promoted BRD4 degradation at 4 hours with a DC50 of 22 nM but became inactive at the 24 hour timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "This result contrasts with dBET1, a reported CRBN-targeting PROTAC degrader of BRD4 (Winter et al., 2015), which potently promoted degradation at 4 hr in this assay (DC50=22 nM) but became inactive at the 24 hr timepoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured experimentally in HEK293T cells expressing BRD4-HiBiT",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "50a6bec2-fba3-456e-b34f-3d12afba1565",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C56",
+      "claim": "Compound 9 did not promote BRD4 degradation at any concentration (<20 \u00b5M) or timepoint (4 or 24 hr) tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the most rigid biphenyl linker containing 9 did not promote BRD4 degradation at any concentration (<20 \u00b5M) or timepoint (4 or 24 hr) tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured experimentally in HEK293T cells expressing BRD4-HiBiT",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "9d295fb6-0644-45df-8773-65c4d89e6501",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C57",
+      "claim": "Compound 8 at 100 nM degraded more than 60% of endogenous BRD4 protein in SK-BR-3 cells after 24 hours of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "8 (100 nM) degraded more than 60% of endogenous BRD4 protein in 24 hr of treatment; maximal degradation was observed with the highest concentration tested (10 \u00b5M; 94% degradation; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally by western blot in SK-BR-3 cells, shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "c6dd172c-b36e-44f1-95c6-33f35791e20e",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C58",
+      "claim": "Compound 8 at 10 \u00b5M achieved 94% degradation of endogenous BRD4 in SK-BR-3 cells after 24 hours of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "8 (100 nM) degraded more than 60% of endogenous BRD4 protein in 24 hr of treatment; maximal degradation was observed with the highest concentration tested (10 \u00b5M; 94% degradation; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally by western blot in SK-BR-3 cells, shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "ff2652b6-d271-4779-a807-2fa257b1ff1e",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C59",
+      "claim": "BRD4 degradation by compound 8 at 10 \u00b5M could be partially rescued when co-treated with MG-132.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the 10 \u00b5M condition could be partially rescued when co-treated with MG-132 (29% remaining vs. 4% in the DMSO condition), indicating degradation occurs through a proteasome-mediated mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured experimentally by western blot in SK-BR-3 cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "9b0f61bd-28ae-4261-a0a2-048de18fc438",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C60",
+      "claim": "BRD4 degradation by compound 8 occurs through a proteasome-mediated mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the 10 \u00b5M condition could be partially rescued when co-treated with MG-132 (29% remaining vs. 4% in the DMSO condition), indicating degradation occurs through a proteasome-mediated mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from rescue experiment with proteasome inhibitor MG-132",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "36c745b4-08c5-4afe-9f08-650b549bb9b0",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C61",
+      "claim": "This is the first demonstration that a noncovalent, PROTAC-compatible E3 ligase ligand can be discovered by affinity-based, high-throughput screening.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first demonstration that a noncovalent, PROTAC-compatible E3 ligase ligand can be discovered by affinity-based, high-throughput screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' assessment of the novelty of their work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "83378cea-02fe-42d7-9996-ce3ca0174ce6",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C62",
+      "claim": "The small molecule library consisted of 354,274 compounds from ChemDiv (150,114 compounds), Enamine (142,208 compounds), Life Chemicals (33,792 compounds), and ReFrame (28,160 compounds) libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "The small molecule library of 354,274 compounds consisted of a ChemDiv library (150,114 compounds), an Enamine library (142,208 compounds), a Life Chemicals library (33,792 compounds), and the ReFrame library (28,160 compounds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "663844ef-3611-498a-b577-0871025f225d",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C63",
+      "claim": "The Kelch domain of human KLHDC2 (amino acids 1\u2013362) was cloned in frame with an N-terminal glutathione-S-transferase (GST) tag.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kelch domain of human KLHDC2 (amino acids 1\u2013362) was cloned in frame with an N-terminal glutathione-S-transferase (GST) tag and TEV-cleavage sequence into the pFastBac vector and was expressed in two rounds of baculoviral production in insect Sf9 monolayer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "0c849ba1-2d40-4f1f-99e3-5136c910fa3d",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C64",
+      "claim": "GST-KLHDC2 was expressed in insect Sf9 cells using baculoviral production.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kelch domain of human KLHDC2 (amino acids 1\u2013362) was cloned in frame with an N-terminal glutathione-S-transferase (GST) tag and TEV-cleavage sequence into the pFastBac vector and was expressed in two rounds of baculoviral production in insect Sf9 monolayer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "29067dbe-0ad5-4d5a-b87a-ac3dd58b9677",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C65",
+      "claim": "The human KEAP1 Kelch domain was expressed using a pET21a-KEAP1 plasmid with an N-terminal HIS6 tag in BL21(DE3) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The human KEAP1 Kelch domain was expressed using a pET21a-KEAP1 plasmid outfitted cloned in frame with an N-terminal HIS6 tag. Plasmid-containing BL21(DE3) cells were amplified in 1 L 2YT culture at 37\u00b0C until the OD600 reached 0.8, followed by 1 mM IPTG induction at 4\u00b0C overnight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "348c0db3-b1a3-4545-9d8f-c17112e1c674",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C66",
+      "claim": "HEK293T and SK-BR-3 cells were purchased from American Type Culture Collection (ATCC).",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293T and SK-BR-3 cells were purchased from American Type Culture Collection (ATCC) and were profiled for identity using Short Tandem Repeat (STR) profiling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e3cb506e-cc59-4a09-9ce4-db32edec6468",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C67",
+      "claim": "HEK293T and SK-BR-3 cells were profiled for identity using Short Tandem Repeat (STR) profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293T and SK-BR-3 cells were purchased from American Type Culture Collection (ATCC) and were profiled for identity using Short Tandem Repeat (STR) profiling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "a3162d44-114a-4e6a-86d1-0434128d7507",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C68",
+      "claim": "Docking studies were performed using AutoDock Vina to evaluate the potential binding modes of compound 6 to KLHDC2 (PDB 6DO3).",
+      "claim_type": "EXPLICIT",
+      "source": "We performed docking studies using AutoDock Vina to evaluate the potential binding modes of 6 to the previously solved crystal structure of the Kelch domain of KLHDC2 (PDB 6DO3) (Rusnac et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "99f80cde-e5d8-49f3-a6b3-4783e0c36559",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C69",
+      "claim": "The crystal structure of the Kelch domain of KLHDC2 (PDB 6DO3) was previously solved.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed docking studies using AutoDock Vina to evaluate the potential binding modes of 6 to the previously solved crystal structure of the Kelch domain of KLHDC2 (PDB 6DO3) (Rusnac et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rusnac et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e3d3e917-1741-473a-a127-70386d1d7809",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C70",
+      "claim": "Several other groups have used computational design to identify ligands to KLHDC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several other groups have used computational design to identify ligands to KLHDC2 (Scott et al., 2024; Zhou et al., 2024; Hickey et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Scott et al., 2024; Zhou et al., 2024; Hickey et al., 2024",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "3e9f2416-1acb-41fc-ba94-d5e938196248",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C71",
+      "claim": "Computationally designed ligands to KLHDC2 engage the diglycine recognition motif deep within the SelK binding pocket of KLHDC2.",
+      "claim_type": "EXPLICIT",
+      "source": "These ligands engage the diglycine recognition motif deep within the SelK binding pocket of KLHDC2, which contrasts with the predicted binding mode of 6 presented here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with cited literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "c4916f0e-2dcf-4157-ac41-8d91f2dbfe88",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C72",
+      "claim": "The binding mode of compound 6 contrasts with computationally designed ligands that engage the diglycine recognition motif deep within the SelK binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "These ligands engage the diglycine recognition motif deep within the SelK binding pocket of KLHDC2, which contrasts with the predicted binding mode of 6 presented here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on docking studies and comparison with literature",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "d9d935c1-ecb3-458f-8185-4de6ae54410e",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C73",
+      "claim": "Linker geometry is important for PROTAC activity, with the semirigid linker of compound 8 considerably outperforming other designs.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other PROTAC designs, linker geometry is important, with the semirigid linker of 8 considerably outperforming other designs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental comparison of compounds 7, 8, and 9",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "53b14579-1750-4829-b48c-36bc7bff7982",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C74",
+      "claim": "An expanded repertoire of E3 ligands would likely enable the degradation of a broader array of protein targets.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, an expanded repertoire of E3 ligands would likely enable the degradation of a broader array of protein targets to endow subcellular and/or tissue specificity of degradation or to overcome potential resistance mutations in currently targeted E3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about the benefits of expanding E3 ligase repertoire",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "d853e113-10d5-4598-946a-23075a75c5c5",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C75",
+      "claim": "An expanded repertoire of E3 ligands could endow subcellular and/or tissue specificity of degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, an expanded repertoire of E3 ligands would likely enable the degradation of a broader array of protein targets to endow subcellular and/or tissue specificity of degradation or to overcome potential resistance mutations in currently targeted E3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about the benefits of expanding E3 ligase repertoire",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "a091e3f0-1922-431f-98d3-8dd62fec86aa",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C76",
+      "claim": "An expanded repertoire of E3 ligands could overcome potential resistance mutations in currently targeted E3s.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, an expanded repertoire of E3 ligands would likely enable the degradation of a broader array of protein targets to endow subcellular and/or tissue specificity of degradation or to overcome potential resistance mutations in currently targeted E3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about the benefits of expanding E3 ligase repertoire",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "5d64423b-ce60-4e15-b98d-bd933d375791",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C77",
+      "claim": "PROTACs are heterobifunctional molecules composed of a ligand targeting the protein of interest, a ligand for a ubiquitin E3 ligase, and a linker with precise geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "PROTACs are heterobifunctional molecules composed of a ligand targeting the protein of interest, a ligand for a ubiquitin E3 ligase, and a linker with precise geometry to bring the two proteins within sufficient proximity to induce the ubiquitination and degradation of the so-called 'neosubstrate' proteins (Sakamoto et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sakamoto et al., 2001",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "0ecd620e-8bd5-4da7-8da8-3140edba5d14",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C78",
+      "claim": "PROTACs bring two proteins within sufficient proximity to induce the ubiquitination and degradation of neosubstrate proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "PROTACs are heterobifunctional molecules composed of a ligand targeting the protein of interest, a ligand for a ubiquitin E3 ligase, and a linker with precise geometry to bring the two proteins within sufficient proximity to induce the ubiquitination and degradation of the so-called 'neosubstrate' proteins (Sakamoto et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sakamoto et al., 2001",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "b57e45cf-538e-463c-be72-d042bb66a180",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C79",
+      "claim": "PROTACs have enabled the potent degradation of several challenging cancer targets like estrogen receptor and androgen receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Among established pharmacological approaches, proteolysis-targeting chimeras (PROTACs) have gained prominence in the field, enabling the potent degradation of several challenging cancer targets like estrogen receptor, androgen receptor, among others, with several progressing to ongoing clinical trials (B\u00e9k\u00e9s et al., 2022; Teng and Gray, 2023; Berkley et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to B\u00e9k\u00e9s et al., 2022; Teng and Gray, 2023; Berkley et al., 2025",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "692bda7d-3264-4ed1-b544-4aeb56942dab",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C80",
+      "claim": "Several PROTACs are progressing to ongoing clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Among established pharmacological approaches, proteolysis-targeting chimeras (PROTACs) have gained prominence in the field, enabling the potent degradation of several challenging cancer targets like estrogen receptor, androgen receptor, among others, with several progressing to ongoing clinical trials (B\u00e9k\u00e9s et al., 2022; Teng and Gray, 2023; Berkley et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to B\u00e9k\u00e9s et al., 2022; Teng and Gray, 2023; Berkley et al., 2025",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "d2b63270-74cd-45a1-b735-b65b46343a25",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C81",
+      "claim": "The tetrahydroquinoline scaffold was found to dose-dependently bind KLHDC2 in two in vitro assays.",
+      "claim_type": "EXPLICIT",
+      "source": "One tetrahydroquinoline scaffold was found to dose-dependently bind KLHDC2 in two in vitro assays, consistent with a binding mode that competes for interaction with KLHDC2 client proteins in the SelK recognition pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on fluorescence polarization and surface plasmon resonance assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "b52e42c9-1e03-482e-9877-8cb9f17fd161",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C82",
+      "claim": "The tetrahydroquinoline scaffold binding mode is consistent with competing for interaction with KLHDC2 client proteins in the SelK recognition pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "One tetrahydroquinoline scaffold was found to dose-dependently bind KLHDC2 in two in vitro assays, consistent with a binding mode that competes for interaction with KLHDC2 client proteins in the SelK recognition pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from competitive fluorescence polarization assay results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "a2daffd3-9688-4f90-b1af-4ac8fca3853a",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C83",
+      "claim": "Compound 6 and its analogs will be useful tools to further probe the biological roles of KLHDC2 in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, we hypothesize that 6 and its analogs will be useful tools to further probe the biological roles of KLHDC2 in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "de3f8c34-17e1-4f7f-b5c5-a0ad7280d145",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C84",
+      "claim": "Drug-like molecules can be developed to KLHDC2 for therapeutic applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this work adds a novel scaffold for targeting KLHDC2 and further supports the notion that drug-like molecules can be developed to this E3 for therapeutic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the successful development of PROTAC molecules",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "5e296e40-9243-45cf-b93b-5fb8736d8ac3",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "claim_id": "C85",
+      "claim": "This work adds a novel scaffold for targeting KLHDC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this work adds a novel scaffold for targeting KLHDC2 and further supports the notion that drug-like molecules can be developed to this E3 for therapeutic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the identification and characterization of the tetrahydroquinoline scaffold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4c47b234-5009-4671-8c92-ec42a6cfd635",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes that current PROTAC development relies predominantly on two E3 ligases (VHL and CRBN), while other reported E3 ligases have limitations including poorly understood mechanisms and incomplete target degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by appropriate citations to the literature (Buckley et al., 2012; Winter et al., 2015; Ishida and Ciulli, 2021). These claims establish the scientific context and motivation for the study, representing accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "KLHDC2 is characterized as a promising E3 ligase for PROTAC development based on its role in the C-end degron pathway, high-affinity binding to SelK peptide (Kd <10 nM), favorable performance in unbiased screens, and demonstrated utility in peptide-based PROTACs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C14 are well-supported by multiple citations to prior work (B\u00e9k\u00e9s et al., 2022; Pilcher et al., 2025; Rusnac et al., 2018; Poirson et al., 2024; R\u00f6th et al., 2023; Kim et al., 2023). These claims accurately represent established knowledge about KLHDC2 and provide strong rationale for targeting this E3 ligase.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "a1cf2107-dacc-47ed-861d-7ada5b8ecd28",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A fluorescence polarization assay was developed and optimized for high-throughput screening, achieving a TAMRA-SelK peptide Kd of 25 nM for KLHDC2, with unlabeled peptide IC50 of 55 nM, and robust Z' values (0.81 in 384-well, 0.61 in 1536-well format).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by experimental data shown in Figures 1B-E. The Z' values (0.81 and 0.61) indicate acceptable to excellent assay quality for high-throughput screening. The modest shift in Kd from literature (3.4 nM to 25 nM) is reasonable given the TAMRA label addition and is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "4b820ea2-499d-4eb1-bdb2-f3fe7ecea901",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "High-throughput screening of 354,274 compounds yielded approximately 14,000 primary hits, which were triaged to 51 dose-responsive compounds, ultimately identifying four validated hit compounds with IC50 values in the single-digit micromolar range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 are supported by the screening funnel shown in Figure 1G and described in the methods. The attrition from ~14,000 to 51 to 4 compounds represents appropriate stringency. However, the manuscript lacks detail on the criteria used for compound attrition (removal of fluorophores and quenchers), which could affect reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "93ce1879-7c08-4ec7-81b2-589abdd26579",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A KEAP1-based counter-screen was established using a TAMRA-NRF2 peptide (Kd = 22 nM), validated with KI-696 (IC50 = 6 nM), and demonstrated specificity by showing no inhibition by SelK peptide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are supported by experimental data in Figure 1\u2014figure supplement 1 and Figure 1C. The counter-screen is well-designed to control for nonspecific Kelch domain binders. The lack of cross-reactivity between SelK peptide and KEAP1 validates the specificity of the primary assay.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "fd609a13-f654-4620-baaa-c62bf0723905",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Four hit compounds were characterized: compounds 1 and 2 (tetrahydroquinoline scaffold) with IC50 values of 2.5 \u00b5M and 1.3 \u00b5M, and compounds 3 and 4 (imidazopyridines) with IC50 values of 3.6 \u00b5M and 2.8 \u00b5M. All four showed selectivity for KLHDC2 over KEAP1 (<20 \u00b5M).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 are supported by experimental data in Figures 2C-D and Figure 2\u2014figure supplement 1. The IC50 values are in the expected range for screening hits. The selectivity data (>20 \u00b5M for KEAP1) demonstrates specificity, though the manuscript would benefit from testing at higher concentrations to establish true selectivity windows.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "0b97ac02-eb82-44db-af6d-da6c1fd6189b",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Surface plasmon resonance confirmed direct binding of compounds 1 and 2 to KLHDC2 with Kd values of 810 nM and 440 nM respectively, while compounds 3 and 4 did not provide robust SPR signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by SPR data in Figures 2E-F. The orthogonal validation by SPR strengthens confidence in the FP results. The failure of compounds 3 and 4 to show SPR signals is acknowledged but not fully explained, representing a limitation in understanding their binding mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "bb2ffb52-e88d-473e-aeff-e344ac698303",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structure-activity relationship studies of 53 tetrahydroquinoline analogs identified compounds 5 and 6 with improved potency (IC50 = 760 nM and 670 nM; Kd = 380 nM and 160 nM), achieved through substitution with trifluoromethyl or trifluoromethoxy groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 are supported by experimental data in Figure 3. The SAR approach is systematic and the improvements in potency (approximately 2-8 fold) are meaningful. Both FP and SPR data converge to support the improved binding affinity. The selectivity over KEAP1 is maintained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "2d1344aa-dc91-4980-a646-ef47f167c34c",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Computational docking studies predict that compound 6 binds to a lipophilic region of the SelK binding pocket, making an H-bond with Arg189, but not interacting with the diglycine-recognizing residues Arg236/Arg241, with the trifluoromethoxy group oriented toward solvent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C47 are based solely on computational docking (AutoDock Vina) without experimental validation. While the predicted binding mode is plausible and the solvent-exposed trifluoromethoxy provides a rational PROTAC design strategy, the lack of structural validation (e.g., co-crystal structure, mutagenesis) means this remains speculative. The surprising lack of interaction with Arg236/Arg241 requires experimental confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e063e6ef-88b0-4103-807a-6a197d10c851",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Three PROTAC molecules (7, 8, 9) were synthesized using JQ1 as the BRD4 ligand. Compound 8 showed potent BRD4 degradation (DC50 = 164 nM at 4h, 80 nM at 24h) with sustained activity, outperforming compound 7 (DC50 = 2.6 \u00b5M at 4h) and the inactive compound 9, and showing different kinetics compared to dBET1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C56 are supported by experimental data in Figures 4C-D using the HiBiT-BRD4 assay. The structure-activity relationship across linker geometries is clear, with the semi-rigid linker of compound 8 showing optimal performance. The comparison with dBET1 is informative, though the loss of dBET1 activity at 24h is unusual and unexplained. Technical replicates (n=3) are noted but biological replicates are not specified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "4a135a5a-ab5d-4a28-9599-8ec919fb29eb",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Compound 8 degraded endogenous BRD4 in SK-BR-3 cells (>60% at 100 nM, 94% at 10 \u00b5M after 24h), with degradation partially rescued by proteasome inhibitor MG-132, confirming a proteasome-mediated mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 are supported by western blot data in Figure 4E. The dose-dependent degradation of endogenous BRD4 validates the HiBiT results in a more physiologically relevant context. The MG-132 rescue experiment (29% remaining vs 4% in DMSO) provides mechanistic validation, though complete rescue would strengthen the conclusion. The manuscript lacks information on biological replicates for this experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "923dd8c8-bd74-4fd9-a147-ba13bb4470f5",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors claim this is the first demonstration of discovering a noncovalent, PROTAC-compatible E3 ligase ligand through affinity-based high-throughput screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 represents a priority claim that cannot be fully evaluated without comprehensive literature review. While the approach appears novel, the statement 'to our knowledge' indicates the authors have not conducted exhaustive prior art searches. The novelty claim would be strengthened by more explicit comparison with previous E3 ligand discovery methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "0cc44bb8-5dbf-4473-9faf-9ebef5ff72f9",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The binding mode of compound 6 is proposed to differ from computationally designed KLHDC2 ligands reported by other groups, which engage the diglycine recognition motif deep within the SelK binding pocket.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C72 compare the predicted binding mode to other computational designs (Scott et al., 2024; Zhou et al., 2024; Hickey et al., 2024). However, without experimental structural validation of compound 6's binding mode, this comparison remains speculative. The distinction could be important for understanding different approaches to KLHDC2 targeting but requires validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "e9c14eb6-a738-4cbd-ad47-5994a3d8cb08",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Linker geometry is critical for PROTAC activity, with the semi-rigid linker of compound 8 considerably outperforming flexible (compound 7) and rigid (compound 9) designs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is supported by the comparative degradation data for compounds 7, 8, and 9 (Figures 4C-D). The structure-activity relationship across linker types is clear and consistent with general PROTAC design principles. However, only three linker designs were tested, limiting the generalizability of conclusions about optimal linker geometry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "60bc548a-c6de-4881-a472-97b6e25cb244",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that an expanded repertoire of E3 ligands could enable degradation of broader protein targets, provide subcellular/tissue specificity, and overcome resistance mutations in current E3 ligases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 represent reasonable speculation about the potential benefits of expanding the E3 ligase toolkit, consistent with general principles in the field. These are appropriately framed as speculative ('would likely') and represent logical extensions of the work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "cd4372ed-6977-40ad-bc3f-1417f77ea63f",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript describes methodological details including library composition (354,274 compounds from four sources), protein expression systems (GST-KLHDC2 in Sf9 cells, KEAP1 in E. coli), and cell line authentication (STR profiling).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 describe methodological details that are adequately documented in the Materials and Methods section. The use of STR profiling for cell line authentication is appropriate. The protein expression and purification methods are standard and sufficiently detailed for reproduction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "b9aa77a6-5b5c-444a-8d94-f2327450ce95",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript provides background on PROTACs as heterobifunctional molecules that induce proximity-based ubiquitination and degradation, with clinical success in targeting challenging proteins like estrogen and androgen receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 represent well-established background knowledge appropriately cited (Sakamoto et al., 2001; B\u00e9k\u00e9s et al., 2022; Teng and Gray, 2023; Berkley et al., 2025). These claims provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "f3492672-45c5-425e-b495-5fd576daf53f",
+      "content_id": "efbcf01e-8a08-4b52-abfc-6909be79e312",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The tetrahydroquinoline scaffold binds KLHDC2 in a manner consistent with competing for the SelK recognition pocket, providing a novel scaffold for KLHDC2 targeting with potential utility as chemical probes and for therapeutic development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are supported by the competitive FP and SPR data. Claims C83-C84 represent reasonable conclusions based on the demonstrated PROTAC activity. Claim C85 appropriately summarizes the contribution. However, the competitive binding mechanism is inferred rather than directly demonstrated (e.g., through co-crystal structures or mutagenesis studies).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "0bd7d228-89d6-43a5-8e2d-0af2be892352",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed a high-throughput fluorescence polarization (FP) screening assay for KLHDC2 ligands, achieving Z' values of 0.81 (384-well) and 0.61 (1536-well format), and screened 354,274 compounds to identify four validated hit compounds with IC50 values in the single-digit micromolar range.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers acknowledge the successful development and execution of the high-throughput screen. Reviewer 1 states 'This was accomplished using a described FP-based high-throughput screening strategy (high Z' values in 1536 well format)' and notes the 'stringent follow-up assays.' The editor describes the data as 'solid' for demonstrating the screen. No concerns were raised about the screening methodology or hit identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "9cdafd58-51bb-44b4-af07-7275ee1ea295",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors established a KEAP1 counter-screen using a TAMRA-labeled NRF2 peptide (Kd = 22 nM) and KI-696 (IC50 = 6 nM), demonstrating that the four hit compounds showed selectivity for KLHDC2 over KEAP1 at concentrations below 20 \u00b5M.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly notes 'A strength of the study is the characterization of the interaction between candidate compounds and KLHDC2 versus related KEAP1' and states 'Both target-specific and counter-specific assays were performed.' However, Reviewer 1 also notes this is limited to in vitro context and requests cellular validation of specificity, indicating the counter-screen data itself is accepted but insufficient for full mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "b5679dfc-7f00-4f65-8485-a6c096beba3e",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Four hit compounds were identified and characterized: compounds 1 and 2 share a tetrahydroquinoline scaffold with IC50 values of 2.5 \u00b5M and 1.3 \u00b5M and Kd values of 810 nM and 440 nM by SPR, while compounds 3 and 4 are imidazopyridines with IC50 values of 3.6 \u00b5M and 2.8 \u00b5M but did not provide robust SPR signals.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'Label-free direct binding validations by SPR were used to determine binding affinity/kinetics' and 'The authors present compelling KLHDC2 binding data for their lead compounds.' The characterization of these compounds through multiple orthogonal assays (FP and SPR) is accepted without critique by all reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Structure-activity relationship studies of 53 commercially available analogs led to optimized compounds 5 and 6 with improved potency (IC50 = 760 nM and 670 nM) and binding affinity (Kd = 380 nM and 160 nM), with trifluoromethyl or trifluoromethoxy substitutions increasing potency.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes 'Optimized compounds were obtained that demonstrated improved potency and increased binding affinity by SPR' and describes the binding data as 'compelling.' Reviewer 2 acknowledges the optimization work without criticism. The SAR studies and resulting improved compounds are accepted by all reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "3c00b026-bc53-47e3-970c-3755fa52ccb9",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Computational docking studies predict that compound 6 binds to a distal lipophilic site in the SelK binding pocket, making an H-bond with Arg189 but not interacting with Arg236/Arg241, with the trifluoromethoxy group pointing to solvent for potential linker attachment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 notes 'the subsequent docking analysis revealed this moiety to be solvent-exposed. The relationship between this site of functionalization, linker selection, and the resulting binding affinity or effect on DC50 was not clear and/or could be developed further.' This indicates the docking predictions are not fully convincing or well-explained, particularly regarding how the predicted binding mode relates to the observed SAR and PROTAC activity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "74d30abd-c6f3-4e76-89c8-3699919abe19",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Three KLHDC2-JQ1 PROTACs with different linkers were synthesized and tested for BRD4 degradation in HiBiT assays, with compound 8 (semirigid linker) showing the best activity (DC50 = 164 nM at 4 hr, 80 nM at 24 hr), compound 7 showing modest activity (DC50 = 2.6 \u00b5M at 4 hr), and compound 9 showing no activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'two compounds were found to result in BRD4 degradation in cells by HiBiT degradation assay and western blot. These findings demonstrate the feasibility of these compounds for the design of PROTAC-based degraders.' Reviewer 2 notes 'Their claim that they have discovered a ligand for KLHDC2, which can be used to develop BRD4-degrading PROTACs, is well-supported by their findings from the screen, SPR, and cellular assays.' The degradation data is accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "867342d7-00d1-47a6-978a-9f6f4dcf2d53",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Compound 8 degraded endogenous BRD4 in SK-BR-3 cells (>60% at 100 nM, 94% at 10 \u00b5M after 24 hr), and this degradation was partially rescued by proteasome inhibitor MG-132, indicating a proteasome-mediated mechanism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers accept the degradation data, both the editor and Reviewer 1 raise significant concerns about mechanism validation. The editor states 'The current work would be strengthened further by confirming that the PROTAC's activity is dependent on KLHDC2.' Reviewer 1 emphasizes 'Notably, the authors do not demonstrate that the degradation induced by their PROTACs in cells is KLHDC2-dependent' and requests 'knockout/knockdown of KLHDC2, or other means, to demonstrate specificity.' The MG-132 rescue only confirms proteasome involvement, not KLHDC2 specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "74a568bc-327b-4295-b248-e68cf5338b80",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors claim this is the first demonstration that a noncovalent, PROTAC-compatible E3 ligase ligand can be discovered by affinity-based, high-throughput screening.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 2 directly contradicts this claim, stating 'Of note, prior to this paper, three other groups had also developed ligands to KLHDC2 and used them to generate active PROTACs.' While the screening approach may be novel, the claim of being 'first' to identify KLHDC2 ligands for PROTACs is not supported.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "36931391-65e0-4b82-906a-9a95421659c3",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Several other groups have used computational design to identify ligands to KLHDC2 that engage the diglycine recognition motif deep within the SelK binding pocket.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 confirms this context, noting 'prior to this paper, three other groups had also developed ligands to KLHDC2' and 'Interestingly, docking studies by Zhou suggest that their compound may bind to a different region of the KLHDC2's kelch domain.' This background information is accepted and used to contextualize the novelty of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248",
+      "content_id": "e8b86636-9bad-47bb-8495-c0b39c3e54f2",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The manuscript establishes the rationale that most PROTACs rely on only two E3 ligases (VHL and CRBN), and expanding the E3 ligase repertoire could enable broader target degradation, tissue specificity, and overcome resistance mutations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states 'This valuable study aims to advance the toolkit of small molecules used for approaches to targeted protein degradation' and 'The strength of the work lies in expanding the PROTAC reagent inventory.' Reviewer 1 notes 'The study by Zhou, H. et al. expands the E3 ligase toolkit by targeting KLHDC2 to identify ligands for PROTAC development, which has predominantly relied on VHL and CRBN.' The rationale and motivation are fully accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "89f1c1dc-5316-4d2e-a88b-c0f8bf819340",
+      "result_id": "4c47b234-5009-4671-8c92-ec42a6cfd635"
+    },
+    {
+      "claim_id": "fae25bbd-c6ac-4c1d-aac5-406a76512c30",
+      "result_id": "4c47b234-5009-4671-8c92-ec42a6cfd635"
+    },
+    {
+      "claim_id": "f3c8cb03-5196-46ae-a4e5-3fc38d5cfc34",
+      "result_id": "4c47b234-5009-4671-8c92-ec42a6cfd635"
+    },
+    {
+      "claim_id": "d85e3554-7337-45be-9983-02db13e05bb4",
+      "result_id": "4c47b234-5009-4671-8c92-ec42a6cfd635"
+    },
+    {
+      "claim_id": "de23bc1d-d4fd-40ad-a5d8-47fef628eb24",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "2436941c-a143-408c-a790-2a2751080090",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "d158c946-b0f9-4ec7-92ac-c88157dbe9a4",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "e5aa201d-e525-4ede-aad1-a3f5960fbb91",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "3fdf42cd-846b-4931-95b2-a646ff8d420f",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "24801937-58c4-44e0-a812-fdc522319c8f",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "0267c7de-ddad-4925-9668-1b5cabb63a83",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "ee4426dc-0244-45e9-8f73-7f836b8e837b",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "ed7edd08-e126-4d37-9509-8b61713c8481",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "4096c7ec-1f04-48c3-a026-7faae518ff5c",
+      "result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99"
+    },
+    {
+      "claim_id": "dc69caab-a568-420d-a9ec-30d37b455cfd",
+      "result_id": "a1cf2107-dacc-47ed-861d-7ada5b8ecd28"
+    },
+    {
+      "claim_id": "6e18fe07-205a-428a-b167-26b29f38a3a8",
+      "result_id": "a1cf2107-dacc-47ed-861d-7ada5b8ecd28"
+    },
+    {
+      "claim_id": "50c35efa-8110-4540-8731-e3c4930e1d47",
+      "result_id": "a1cf2107-dacc-47ed-861d-7ada5b8ecd28"
+    },
+    {
+      "claim_id": "1e0c97be-c92d-46ec-988d-d034a935f3b2",
+      "result_id": "a1cf2107-dacc-47ed-861d-7ada5b8ecd28"
+    },
+    {
+      "claim_id": "02899aca-6285-4d9d-ab1a-f42801be6758",
+      "result_id": "a1cf2107-dacc-47ed-861d-7ada5b8ecd28"
+    },
+    {
+      "claim_id": "407a74cc-34a1-46b1-a052-97585cb9c3d6",
+      "result_id": "4b820ea2-499d-4eb1-bdb2-f3fe7ecea901"
+    },
+    {
+      "claim_id": "f046a79e-2fa6-47cd-8520-a851e5570318",
+      "result_id": "4b820ea2-499d-4eb1-bdb2-f3fe7ecea901"
+    },
+    {
+      "claim_id": "99b555c9-7048-43c0-bfc3-1ddc2df497c3",
+      "result_id": "4b820ea2-499d-4eb1-bdb2-f3fe7ecea901"
+    },
+    {
+      "claim_id": "c54aa44c-592e-4f18-bafa-d17dab8e824f",
+      "result_id": "93ce1879-7c08-4ec7-81b2-589abdd26579"
+    },
+    {
+      "claim_id": "fb8a6f6d-0660-434e-b202-7312a3916e7f",
+      "result_id": "93ce1879-7c08-4ec7-81b2-589abdd26579"
+    },
+    {
+      "claim_id": "77c627aa-7b05-48fa-8487-06713592ea2e",
+      "result_id": "93ce1879-7c08-4ec7-81b2-589abdd26579"
+    },
+    {
+      "claim_id": "784a7d0d-fd35-4daf-9ab9-7413066308dc",
+      "result_id": "93ce1879-7c08-4ec7-81b2-589abdd26579"
+    },
+    {
+      "claim_id": "b48a4c29-930b-4239-a327-c565885b0432",
+      "result_id": "fd609a13-f654-4620-baaa-c62bf0723905"
+    },
+    {
+      "claim_id": "90ee5db7-e407-4187-a454-68990abb1a2a",
+      "result_id": "fd609a13-f654-4620-baaa-c62bf0723905"
+    },
+    {
+      "claim_id": "b5606c32-984b-4c64-aba5-552255f149d3",
+      "result_id": "fd609a13-f654-4620-baaa-c62bf0723905"
+    },
+    {
+      "claim_id": "e4d84721-b292-4855-9dc8-54acc9db15ba",
+      "result_id": "fd609a13-f654-4620-baaa-c62bf0723905"
+    },
+    {
+      "claim_id": "639dba25-d979-4098-8a21-c00bf83cbfc5",
+      "result_id": "fd609a13-f654-4620-baaa-c62bf0723905"
+    },
+    {
+      "claim_id": "36d3f197-753b-4329-abed-b5ae757f8a86",
+      "result_id": "fd609a13-f654-4620-baaa-c62bf0723905"
+    },
+    {
+      "claim_id": "16a34772-b8c9-4141-b694-d159fa7bbcc9",
+      "result_id": "fd609a13-f654-4620-baaa-c62bf0723905"
+    },
+    {
+      "claim_id": "e1b0456f-593a-4bcd-a430-513e1d413167",
+      "result_id": "0b97ac02-eb82-44db-af6d-da6c1fd6189b"
+    },
+    {
+      "claim_id": "f54ff75d-7d56-47a9-8573-905c53baae04",
+      "result_id": "0b97ac02-eb82-44db-af6d-da6c1fd6189b"
+    },
+    {
+      "claim_id": "03fbf4e2-1333-4736-afe3-1cefef545e73",
+      "result_id": "0b97ac02-eb82-44db-af6d-da6c1fd6189b"
+    },
+    {
+      "claim_id": "ff578966-da1e-4f9e-a8ca-cd09a2116d50",
+      "result_id": "bb2ffb52-e88d-473e-aeff-e344ac698303"
+    },
+    {
+      "claim_id": "ffd5c01e-55c3-413e-8aaf-b534981d6c8d",
+      "result_id": "bb2ffb52-e88d-473e-aeff-e344ac698303"
+    },
+    {
+      "claim_id": "98be05b7-1642-4e24-a975-18e524c5c4c0",
+      "result_id": "bb2ffb52-e88d-473e-aeff-e344ac698303"
+    },
+    {
+      "claim_id": "c0130d0a-8ac8-4db7-aaee-0fc925c91277",
+      "result_id": "bb2ffb52-e88d-473e-aeff-e344ac698303"
+    },
+    {
+      "claim_id": "481b1898-6255-4cba-8756-3b503c282acb",
+      "result_id": "bb2ffb52-e88d-473e-aeff-e344ac698303"
+    },
+    {
+      "claim_id": "f241f709-d764-4949-81f7-8e88b0f75f59",
+      "result_id": "bb2ffb52-e88d-473e-aeff-e344ac698303"
+    },
+    {
+      "claim_id": "5e39921c-5a17-4187-b224-af2f39259541",
+      "result_id": "bb2ffb52-e88d-473e-aeff-e344ac698303"
+    },
+    {
+      "claim_id": "18f0137c-16f6-46e4-b999-344dd4f4a387",
+      "result_id": "2d1344aa-dc91-4980-a646-ef47f167c34c"
+    },
+    {
+      "claim_id": "03a8d5b1-8f82-44a4-9123-b36c3d808af0",
+      "result_id": "2d1344aa-dc91-4980-a646-ef47f167c34c"
+    },
+    {
+      "claim_id": "0b4af72c-d770-4e12-a318-3e60b79dee54",
+      "result_id": "2d1344aa-dc91-4980-a646-ef47f167c34c"
+    },
+    {
+      "claim_id": "257c40c6-ba55-4299-9b67-390a1c117406",
+      "result_id": "2d1344aa-dc91-4980-a646-ef47f167c34c"
+    },
+    {
+      "claim_id": "a3162d44-114a-4e6a-86d1-0434128d7507",
+      "result_id": "2d1344aa-dc91-4980-a646-ef47f167c34c"
+    },
+    {
+      "claim_id": "99f80cde-e5d8-49f3-a6b3-4783e0c36559",
+      "result_id": "2d1344aa-dc91-4980-a646-ef47f167c34c"
+    },
+    {
+      "claim_id": "a66ad2d3-6ebb-4fea-ba19-93d7751dca66",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "e26a4bd1-3a72-430d-ab30-65b4bdc64233",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "e9efe200-bfa9-4546-8e0c-f07212dc7a38",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "f9f96171-cd2f-4131-8226-0224925cce4c",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "a247e5dd-aa87-414b-b749-98e77baf3d8a",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "6ba4d778-846e-478a-862d-34e432de4613",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "bc8105f5-12b8-41f7-9abb-234f35632358",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "980ae42c-9e1b-4df6-8b43-1d896d8c3526",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "50a6bec2-fba3-456e-b34f-3d12afba1565",
+      "result_id": "e063e6ef-88b0-4103-807a-6a197d10c851"
+    },
+    {
+      "claim_id": "9d295fb6-0644-45df-8773-65c4d89e6501",
+      "result_id": "4a135a5a-ab5d-4a28-9599-8ec919fb29eb"
+    },
+    {
+      "claim_id": "c6dd172c-b36e-44f1-95c6-33f35791e20e",
+      "result_id": "4a135a5a-ab5d-4a28-9599-8ec919fb29eb"
+    },
+    {
+      "claim_id": "ff2652b6-d271-4779-a807-2fa257b1ff1e",
+      "result_id": "4a135a5a-ab5d-4a28-9599-8ec919fb29eb"
+    },
+    {
+      "claim_id": "9b0f61bd-28ae-4261-a0a2-048de18fc438",
+      "result_id": "4a135a5a-ab5d-4a28-9599-8ec919fb29eb"
+    },
+    {
+      "claim_id": "36c745b4-08c5-4afe-9f08-650b549bb9b0",
+      "result_id": "923dd8c8-bd74-4fd9-a147-ba13bb4470f5"
+    },
+    {
+      "claim_id": "e3d3e917-1741-473a-a127-70386d1d7809",
+      "result_id": "0cc44bb8-5dbf-4473-9faf-9ebef5ff72f9"
+    },
+    {
+      "claim_id": "3e9f2416-1acb-41fc-ba94-d5e938196248",
+      "result_id": "0cc44bb8-5dbf-4473-9faf-9ebef5ff72f9"
+    },
+    {
+      "claim_id": "c4916f0e-2dcf-4157-ac41-8d91f2dbfe88",
+      "result_id": "0cc44bb8-5dbf-4473-9faf-9ebef5ff72f9"
+    },
+    {
+      "claim_id": "d9d935c1-ecb3-458f-8185-4de6ae54410e",
+      "result_id": "e9c14eb6-a738-4cbd-ad47-5994a3d8cb08"
+    },
+    {
+      "claim_id": "53b14579-1750-4829-b48c-36bc7bff7982",
+      "result_id": "60bc548a-c6de-4881-a472-97b6e25cb244"
+    },
+    {
+      "claim_id": "d853e113-10d5-4598-946a-23075a75c5c5",
+      "result_id": "60bc548a-c6de-4881-a472-97b6e25cb244"
+    },
+    {
+      "claim_id": "a091e3f0-1922-431f-98d3-8dd62fec86aa",
+      "result_id": "60bc548a-c6de-4881-a472-97b6e25cb244"
+    },
+    {
+      "claim_id": "83378cea-02fe-42d7-9996-ce3ca0174ce6",
+      "result_id": "cd4372ed-6977-40ad-bc3f-1417f77ea63f"
+    },
+    {
+      "claim_id": "663844ef-3611-498a-b577-0871025f225d",
+      "result_id": "cd4372ed-6977-40ad-bc3f-1417f77ea63f"
+    },
+    {
+      "claim_id": "0c849ba1-2d40-4f1f-99e3-5136c910fa3d",
+      "result_id": "cd4372ed-6977-40ad-bc3f-1417f77ea63f"
+    },
+    {
+      "claim_id": "29067dbe-0ad5-4d5a-b87a-ac3dd58b9677",
+      "result_id": "cd4372ed-6977-40ad-bc3f-1417f77ea63f"
+    },
+    {
+      "claim_id": "348c0db3-b1a3-4545-9d8f-c17112e1c674",
+      "result_id": "cd4372ed-6977-40ad-bc3f-1417f77ea63f"
+    },
+    {
+      "claim_id": "e3cb506e-cc59-4a09-9ce4-db32edec6468",
+      "result_id": "cd4372ed-6977-40ad-bc3f-1417f77ea63f"
+    },
+    {
+      "claim_id": "5d64423b-ce60-4e15-b98d-bd933d375791",
+      "result_id": "b9aa77a6-5b5c-444a-8d94-f2327450ce95"
+    },
+    {
+      "claim_id": "0ecd620e-8bd5-4da7-8da8-3140edba5d14",
+      "result_id": "b9aa77a6-5b5c-444a-8d94-f2327450ce95"
+    },
+    {
+      "claim_id": "b57e45cf-538e-463c-be72-d042bb66a180",
+      "result_id": "b9aa77a6-5b5c-444a-8d94-f2327450ce95"
+    },
+    {
+      "claim_id": "692bda7d-3264-4ed1-b544-4aeb56942dab",
+      "result_id": "b9aa77a6-5b5c-444a-8d94-f2327450ce95"
+    },
+    {
+      "claim_id": "d2b63270-74cd-45a1-b735-b65b46343a25",
+      "result_id": "f3492672-45c5-425e-b495-5fd576daf53f"
+    },
+    {
+      "claim_id": "b52e42c9-1e03-482e-9877-8cb9f17fd161",
+      "result_id": "f3492672-45c5-425e-b495-5fd576daf53f"
+    },
+    {
+      "claim_id": "a2daffd3-9688-4f90-b1af-4ac8fca3853a",
+      "result_id": "f3492672-45c5-425e-b495-5fd576daf53f"
+    },
+    {
+      "claim_id": "de3f8c34-17e1-4f7f-b5c5-a0ad7280d145",
+      "result_id": "f3492672-45c5-425e-b495-5fd576daf53f"
+    },
+    {
+      "claim_id": "5e296e40-9243-45cf-b93b-5fb8736d8ac3",
+      "result_id": "f3492672-45c5-425e-b495-5fd576daf53f"
+    },
+    {
+      "claim_id": "dc69caab-a568-420d-a9ec-30d37b455cfd",
+      "result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352"
+    },
+    {
+      "claim_id": "6e18fe07-205a-428a-b167-26b29f38a3a8",
+      "result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352"
+    },
+    {
+      "claim_id": "50c35efa-8110-4540-8731-e3c4930e1d47",
+      "result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352"
+    },
+    {
+      "claim_id": "1e0c97be-c92d-46ec-988d-d034a935f3b2",
+      "result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352"
+    },
+    {
+      "claim_id": "02899aca-6285-4d9d-ab1a-f42801be6758",
+      "result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352"
+    },
+    {
+      "claim_id": "407a74cc-34a1-46b1-a052-97585cb9c3d6",
+      "result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352"
+    },
+    {
+      "claim_id": "f046a79e-2fa6-47cd-8520-a851e5570318",
+      "result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352"
+    },
+    {
+      "claim_id": "99b555c9-7048-43c0-bfc3-1ddc2df497c3",
+      "result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352"
+    },
+    {
+      "claim_id": "fb8a6f6d-0660-434e-b202-7312a3916e7f",
+      "result_id": "9cdafd58-51bb-44b4-af07-7275ee1ea295"
+    },
+    {
+      "claim_id": "77c627aa-7b05-48fa-8487-06713592ea2e",
+      "result_id": "9cdafd58-51bb-44b4-af07-7275ee1ea295"
+    },
+    {
+      "claim_id": "784a7d0d-fd35-4daf-9ab9-7413066308dc",
+      "result_id": "9cdafd58-51bb-44b4-af07-7275ee1ea295"
+    },
+    {
+      "claim_id": "16a34772-b8c9-4141-b694-d159fa7bbcc9",
+      "result_id": "9cdafd58-51bb-44b4-af07-7275ee1ea295"
+    },
+    {
+      "claim_id": "b48a4c29-930b-4239-a327-c565885b0432",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "90ee5db7-e407-4187-a454-68990abb1a2a",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "b5606c32-984b-4c64-aba5-552255f149d3",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "e4d84721-b292-4855-9dc8-54acc9db15ba",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "639dba25-d979-4098-8a21-c00bf83cbfc5",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "36d3f197-753b-4329-abed-b5ae757f8a86",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "e1b0456f-593a-4bcd-a430-513e1d413167",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "f54ff75d-7d56-47a9-8573-905c53baae04",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "03fbf4e2-1333-4736-afe3-1cefef545e73",
+      "result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e"
+    },
+    {
+      "claim_id": "ff578966-da1e-4f9e-a8ca-cd09a2116d50",
+      "result_id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57"
+    },
+    {
+      "claim_id": "ffd5c01e-55c3-413e-8aaf-b534981d6c8d",
+      "result_id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57"
+    },
+    {
+      "claim_id": "98be05b7-1642-4e24-a975-18e524c5c4c0",
+      "result_id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57"
+    },
+    {
+      "claim_id": "c0130d0a-8ac8-4db7-aaee-0fc925c91277",
+      "result_id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57"
+    },
+    {
+      "claim_id": "481b1898-6255-4cba-8756-3b503c282acb",
+      "result_id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57"
+    },
+    {
+      "claim_id": "f241f709-d764-4949-81f7-8e88b0f75f59",
+      "result_id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57"
+    },
+    {
+      "claim_id": "5e39921c-5a17-4187-b224-af2f39259541",
+      "result_id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57"
+    },
+    {
+      "claim_id": "18f0137c-16f6-46e4-b999-344dd4f4a387",
+      "result_id": "3c00b026-bc53-47e3-970c-3755fa52ccb9"
+    },
+    {
+      "claim_id": "03a8d5b1-8f82-44a4-9123-b36c3d808af0",
+      "result_id": "3c00b026-bc53-47e3-970c-3755fa52ccb9"
+    },
+    {
+      "claim_id": "257c40c6-ba55-4299-9b67-390a1c117406",
+      "result_id": "3c00b026-bc53-47e3-970c-3755fa52ccb9"
+    },
+    {
+      "claim_id": "a3162d44-114a-4e6a-86d1-0434128d7507",
+      "result_id": "3c00b026-bc53-47e3-970c-3755fa52ccb9"
+    },
+    {
+      "claim_id": "c4916f0e-2dcf-4157-ac41-8d91f2dbfe88",
+      "result_id": "3c00b026-bc53-47e3-970c-3755fa52ccb9"
+    },
+    {
+      "claim_id": "e9efe200-bfa9-4546-8e0c-f07212dc7a38",
+      "result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19"
+    },
+    {
+      "claim_id": "f9f96171-cd2f-4131-8226-0224925cce4c",
+      "result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19"
+    },
+    {
+      "claim_id": "a247e5dd-aa87-414b-b749-98e77baf3d8a",
+      "result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19"
+    },
+    {
+      "claim_id": "6ba4d778-846e-478a-862d-34e432de4613",
+      "result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19"
+    },
+    {
+      "claim_id": "980ae42c-9e1b-4df6-8b43-1d896d8c3526",
+      "result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19"
+    },
+    {
+      "claim_id": "50a6bec2-fba3-456e-b34f-3d12afba1565",
+      "result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19"
+    },
+    {
+      "claim_id": "d9d935c1-ecb3-458f-8185-4de6ae54410e",
+      "result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19"
+    },
+    {
+      "claim_id": "9d295fb6-0644-45df-8773-65c4d89e6501",
+      "result_id": "867342d7-00d1-47a6-978a-9f6f4dcf2d53"
+    },
+    {
+      "claim_id": "c6dd172c-b36e-44f1-95c6-33f35791e20e",
+      "result_id": "867342d7-00d1-47a6-978a-9f6f4dcf2d53"
+    },
+    {
+      "claim_id": "ff2652b6-d271-4779-a807-2fa257b1ff1e",
+      "result_id": "867342d7-00d1-47a6-978a-9f6f4dcf2d53"
+    },
+    {
+      "claim_id": "9b0f61bd-28ae-4261-a0a2-048de18fc438",
+      "result_id": "867342d7-00d1-47a6-978a-9f6f4dcf2d53"
+    },
+    {
+      "claim_id": "36c745b4-08c5-4afe-9f08-650b549bb9b0",
+      "result_id": "74a568bc-327b-4295-b248-e68cf5338b80"
+    },
+    {
+      "claim_id": "e3d3e917-1741-473a-a127-70386d1d7809",
+      "result_id": "36931391-65e0-4b82-906a-9a95421659c3"
+    },
+    {
+      "claim_id": "3e9f2416-1acb-41fc-ba94-d5e938196248",
+      "result_id": "36931391-65e0-4b82-906a-9a95421659c3"
+    },
+    {
+      "claim_id": "89f1c1dc-5316-4d2e-a88b-c0f8bf819340",
+      "result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248"
+    },
+    {
+      "claim_id": "fae25bbd-c6ac-4c1d-aac5-406a76512c30",
+      "result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248"
+    },
+    {
+      "claim_id": "f3c8cb03-5196-46ae-a4e5-3fc38d5cfc34",
+      "result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248"
+    },
+    {
+      "claim_id": "d85e3554-7337-45be-9983-02db13e05bb4",
+      "result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248"
+    },
+    {
+      "claim_id": "de23bc1d-d4fd-40ad-a5d8-47fef628eb24",
+      "result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248"
+    },
+    {
+      "claim_id": "53b14579-1750-4829-b48c-36bc7bff7982",
+      "result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248"
+    },
+    {
+      "claim_id": "d853e113-10d5-4598-946a-23075a75c5c5",
+      "result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248"
+    },
+    {
+      "claim_id": "a091e3f0-1922-431f-98d3-8dd62fec86aa",
+      "result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "4bd34b2e-4d3e-49ad-b71d-b890c1d440f7",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "bb2ffb52-e88d-473e-aeff-e344ac698303",
+      "peer_result_id": "644bf7e8-d6b1-4bb2-ab95-fa1fe41eea57",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on SAR optimization claims (C37-C43). Both evaluations find the data compelling and well-supported. OpenEval notes systematic approach with 2-8 fold improvements; peer reviewers describe binding data as 'compelling' and accept the optimization work without criticism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "f898ef27-0aa6-4018-a8d7-e6aba7fad4b2",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "4a135a5a-ab5d-4a28-9599-8ec919fb29eb",
+      "peer_result_id": "867342d7-00d1-47a6-978a-9f6f4dcf2d53",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on western blot degradation data (C57-C60). OpenEval finds claims SUPPORTED with MG-132 rescue providing mechanistic validation. Peer reviewers rate UNCERTAIN, emphasizing that MG-132 only confirms proteasome involvement, not KLHDC2 specificity, and request knockout/knockdown experiments to demonstrate KLHDC2-dependent degradation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "56e348e9-2708-4333-91b3-6e0d5e8330b3",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "923dd8c8-bd74-4fd9-a147-ba13bb4470f5",
+      "peer_result_id": "74a568bc-327b-4295-b248-e68cf5338b80",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Strong disagreement on novelty claim (C61). OpenEval rates UNCERTAIN, noting 'to our knowledge' indicates incomplete prior art search. Peer reviewers rate UNSUPPORTED, directly contradicting the claim by stating 'three other groups had also developed ligands to KLHDC2 and used them to generate active PROTACs' prior to this work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "6d582554-75cb-4b81-afd9-73751472a3d2",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "a1cf2107-dacc-47ed-861d-7ada5b8ecd28",
+      "peer_result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on screening assay development (C15-C19 in OpenEval; C15-C22 in peer review). Both find the high-throughput screen well-executed with acceptable Z' values. Peer reviewers describe data as 'solid' and note 'stringent follow-up assays.' OpenEval acknowledges the modest Kd shift as reasonable.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "2220056f-b111-419e-8afe-88f1bbb55ff6",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4b820ea2-499d-4eb1-bdb2-f3fe7ecea901",
+      "peer_result_id": "0bd7d228-89d6-43a5-8e2d-0af2be892352",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on screening funnel claims (C20-C22). OpenEval finds the attrition from ~14,000 to 4 compounds appropriately stringent but notes lack of detail on criteria. Peer reviewers accept the screening methodology without concerns about hit identification process.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "d8331c57-0e3e-4325-b86c-06f619700dd7",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "93ce1879-7c08-4ec7-81b2-589abdd26579",
+      "peer_result_id": "9cdafd58-51bb-44b4-af07-7275ee1ea295",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on counter-screen design (C24-C26). Both evaluations find the KEAP1 counter-screen well-designed and the specificity data acceptable. OpenEval notes validation of primary assay specificity; peer reviewers describe this as a 'strength of the study' but note it's limited to in vitro context and request cellular validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "fa021c3f-a68d-445e-8cab-7793d769039f",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "fd609a13-f654-4620-baaa-c62bf0723905",
+      "peer_result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on hit characterization (C27-C32, C34-C36). Both find the IC50 values, selectivity data, and SPR validation compelling. OpenEval notes IC50 in expected range and >20 \u00b5M selectivity for KEAP1; peer reviewers describe the binding data as 'compelling' and accept orthogonal validation approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "cd6e45f1-4182-49ce-bdd7-106d7ac65dd9",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "0b97ac02-eb82-44db-af6d-da6c1fd6189b",
+      "peer_result_id": "b5679dfc-7f00-4f65-8485-a6c096beba3e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on SPR validation (C34-C36). Both evaluations accept the orthogonal SPR data as strengthening confidence in FP results. OpenEval notes the unexplained failure of compounds 3 and 4 in SPR; peer reviewers accept the label-free validation without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "5912f922-370e-417b-9aa3-c8b5fa9a4700",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "2d1344aa-dc91-4980-a646-ef47f167c34c",
+      "peer_result_id": "3c00b026-bc53-47e3-970c-3755fa52ccb9",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty of docking predictions (C44-C47, C68). Both rate these claims as UNCERTAIN due to lack of experimental structural validation. OpenEval notes the binding mode is 'plausible' but 'speculative' without co-crystal or mutagenesis data. Peer reviewers find the relationship between docking predictions and observed SAR 'not clear and/or could be developed further.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "d022ac68-fc9d-4395-a8d7-fb2a61eedf33",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "e063e6ef-88b0-4103-807a-6a197d10c851",
+      "peer_result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on PROTAC degradation data (C48-C56). Both find the HiBiT assay data and linker SAR well-supported. OpenEval notes clear structure-activity relationship with semi-rigid linker optimal; peer reviewers state the claim of discovering KLHDC2 ligands for PROTACs is 'well-supported by their findings from the screen, SPR, and cellular assays.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "17dcd918-8cd6-41e4-a8ed-cf01b6bbb3b0",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "e9c14eb6-a738-4cbd-ad47-5994a3d8cb08",
+      "peer_result_id": "74d30abd-c6f3-4e76-89c8-3699919abe19",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on linker optimization conclusions (C73). Both evaluations accept the structure-activity relationship across linker types. OpenEval notes clear SAR consistent with PROTAC design principles but limited to three designs; peer reviewers accept the degradation data demonstrating feasibility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "984f8934-3434-4947-9c4d-3ec15e6f76fd",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "0cc44bb8-5dbf-4473-9faf-9ebef5ff72f9",
+      "peer_result_id": "36931391-65e0-4b82-906a-9a95421659c3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on comparison to other computational designs (C70-C71). Both evaluations accept the background context that other groups developed KLHDC2 ligands with potentially different binding modes. OpenEval rates UNCERTAIN due to lack of experimental validation; peer reviewers confirm this context and note Zhou's docking suggests binding to different region.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "24e21364-4a51-4158-b409-9915f3da678d",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "4c47b234-5009-4671-8c92-ec42a6cfd635",
+      "peer_result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background/rationale claims (C1-C4). Both evaluations find the scientific context and motivation well-supported. OpenEval notes appropriate citations establishing accepted knowledge; peer reviewers accept the rationale for expanding E3 ligase toolkit and describe the study as 'valuable' for advancing targeted protein degradation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "50b4292f-6aa3-4cff-9fab-490db83c9653",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "60bc548a-c6de-4881-a472-97b6e25cb244",
+      "peer_result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on speculative benefits of E3 ligase expansion (C74-C76). Both evaluations accept these forward-looking claims as reasonable. OpenEval notes they are appropriately framed as speculative; peer reviewers describe the strength of work as 'expanding the PROTAC reagent inventory.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "6de85c35-f3a1-4709-a0b4-91b66588b35d",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "de81b24a-0331-4ec2-93b4-4840b2ff3f99",
+      "peer_result_id": "c93e1f26-8a9f-4540-9d6e-672bd82a2248",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on KLHDC2 background (C5 shared). OpenEval R2 covers extensive KLHDC2 background (C5-C14) rated SUPPORTED with multiple citations. Peer R10 includes C5 among broader rationale claims, also rated SUPPORTED. Both accept the established knowledge about KLHDC2 as E3 ligase target.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "189617c8-559a-47b4-b412-07b883f68602",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "cd4372ed-6977-40ad-bc3f-1417f77ea63f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated methodological details (C62-C67) as SUPPORTED, noting adequate documentation of cell line authentication and protein expression methods. No corresponding peer review evaluation found for these specific methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "92cc993a-6f29-48ad-b027-00daa8c5a6f3",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "b9aa77a6-5b5c-444a-8d94-f2327450ce95",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background knowledge claims (C77-C80) as SUPPORTED with appropriate citations. These provide context for PROTAC mechanisms and E3 ligase biology. No corresponding peer review evaluation found for these specific background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    },
+    {
+      "id": "80cba6f0-9f7f-4f34-a107-799c8dae7934",
+      "submission_id": "d4e9406d-e7e8-4899-8d95-956eb1e421ef",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "f3492672-45c5-425e-b495-5fd576daf53f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated summary claims (C81-C85) as SUPPORTED, noting competitive binding is inferred rather than directly demonstrated. These claims summarize the overall contribution. No corresponding peer review evaluation found for these specific summary claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:25:35.364848Z"
+    }
+  ]
+}

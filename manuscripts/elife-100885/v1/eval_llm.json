@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C41",
+      "C42",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors developed an exponential growth model for neoblast colony expansion based on three parameters: average cell cycle length (29.7 hours), symmetric renewal probability (p=0.45), and symmetric differentiation/elimination probability (q=0.1). The model assumes no memory of previous divisions and no coordination between neoblasts, yet accurately predicts colony growth dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 provide experimentally derived parameter values with appropriate methods (BrdU reanalysis, cell pair analysis, curve fitting). Claims C41-C42 and C57-C60 describe model assumptions and validation. The exponential model closely matches experimental data from multiple sources (C41), and the simplifying assumptions (no memory, no coordination) are justified by prior work (C59) and validated by experimental agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C63",
+      "C64"
+    ],
+    "result": "Inhibition of zfp-1, a fate-specifying transcription factor critical for epidermal lineage production, resulted in significantly smaller neoblast colonies at 9 and 12 days post-irradiation with growth arrest between these timepoints. Despite reduced colony size, the proportion of cycling cells (EdU+) and mitotic cells (H3P+) remained comparable to controls when normalized to colony size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 provide consistent experimental evidence with appropriate controls and normalization. The complete ablation of epidermal progenitors (C16) is demonstrated, colony size reduction is statistically significant (C17-C18), and the normalized cycling/mitotic cell proportions (C19, C21) support the interpretation that cells remain proliferative but colonies fail to expand. The established role of zfp-1 (C63-C64) provides biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Following zfp-1 inhibition, colonies contained specialized neoblasts of other lineages (intestine, tgs-1+), but showed reduced absolute numbers proportional to colony size. More zfp-1 (RNAi) animals failed to develop colonies (55%) compared to controls (25%), and fewer colonies reached \u22655 neoblasts (45% vs 75%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 provide experimental evidence that other lineages are present but not overproduced in zfp-1 (RNAi) colonies. The detection of specialized neoblasts (C22-C23) with proportional reduction (C23) and statistical analysis of colony establishment failure (C25-C26) support the conclusion that lineage suppression does not trigger compensatory mechanisms in colonies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C62",
+      "C69",
+      "C70"
+    ],
+    "result": "Computational simulations of colony growth, incorporating increased symmetric differentiation/elimination probability (q) proportional to zfp-1+ neoblast frequency, accurately recapitulated experimental observations including colony size reduction and failure rates. The simulations support a model where neoblasts independently select division outcomes without memory or coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 demonstrate that simulations match experimental data when q is increased by the known proportion of affected neoblasts. Claims C62, C69-C70 extend this to show that stochastic early elimination events explain colony failure, and that the model operates without memory or coordination assumptions. The close agreement between simulation and experiment across multiple conditions validates the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C65",
+      "C66",
+      "C71",
+      "C72"
+    ],
+    "result": "Inhibition of the intestine lineage alone (14% of progenitors) did not reduce colony size, consistent with model predictions. However, combined inhibition of intestine and foxF-1+ lineages (~25% of progenitors) resulted in significantly smaller colonies and increased colony establishment failure (52% vs 22% in controls).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 provide experimental validation of model predictions (C71-C72) that small lineages have undetectable effects while combined larger lineages show measurable impacts. The experimental design appropriately tests the model's quantitative predictions, with statistical significance demonstrated for the combined inhibition (C31) and established lineage frequencies from prior work (C65-C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C50",
+      "C51",
+      "C73",
+      "C74"
+    ],
+    "result": "The findings support a model where neoblasts select lineage identity based on a cell-intrinsic fate distribution, and once committed to a lineage, cannot switch to alternative identities within the experimental timescale. Blocking lineage differentiation incapacitates neoblasts proportional to lineage size without inducing compensatory expression of other lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 state the core findings, while C50-C51 and C73-C74 provide mechanistic interpretation supported by the experimental perturbation data. The lack of compensatory lineage production (C4, C73) and proportional neoblast incapacitation (C51) are demonstrated across multiple lineage inhibition experiments. The cell-intrinsic model (C5) is supported by simulation-experiment agreement without requiring coordination parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C52"
+    ],
+    "result": "In homeostatic (unirradiated) animals, zfp-1 inhibition led to increased cell proliferation (EdU+ nuclei) without early increase in cell death. Gene expression analysis showed downregulation of epidermal genes in neoblasts and upregulation of neural/protonephridial genes in neoblasts, but whole-tissue analysis revealed no overrepresentation of these cell types. Instead, intestinal progenitors were increased in whole tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 provide consistent evidence from multiple assays (EdU labeling, TUNEL, gene expression, in situ counting) showing differential responses in homeostasis versus colonies. The gene expression analysis (C35-C38) appropriately distinguishes neoblast-specific from whole-tissue changes, and the increased intestinal progenitors (C39) are statistically significant. Claim C52 correctly interprets this as evidence for feedback mechanisms in homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The simple cell fate decision process observed in colonies breaks down in homeostasis, likely due to feedback mechanisms. The differential response to lineage suppression in colonies versus homeostatic animals indicates that feedback mechanisms regulate neoblast proliferation differently in these contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C75-C79 synthesize the contrasting observations between colony and homeostasis experiments. The evidence for differential regulation (increased proliferation in homeostasis vs. reduced colony growth with same perturbation) is well-documented in C32-C40. The interpretation that feedback mechanisms are responsible (C6, C76, C79) is reasonable given the maintained stem cell population in homeostasis versus expansion in colonies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors hypothesize that division outcomes are guided by an innate distribution of cell fates encoded within neoblasts, modifiable by regional signals (Wnt, BMP) and injury signals (ERK). This strategy facilitates dynamic balance in cell lineage production without direct communication between neoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44 and C80-C81 are explicitly speculative hypotheses about mechanisms not directly tested in this study. While the model is consistent with the data, the specific molecular mechanisms (regional signals, injury signals) are cited from other work but not experimentally validated here. The claims about facilitating homeostasis (C80-C81) are reasonable interpretations but extend beyond the experimental evidence provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Suppression of Smed-p53, another epidermal regulator, shows similar phenotypes to zfp-1 suppression: reduced colony size but increased mitoses in homeostasis. The authors speculate that subtotal irradiation alters neoblast regulation, leading to rapid proliferation atypical for homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 accurately cite published observations about Smed-p53 that parallel the zfp-1 findings, strengthening the generalizability of the results. Claim C47 is explicitly labeled as speculation but is grounded in cited observations about neoblast depletion effects. These claims appropriately contextualize the current findings within prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C61"
+    ],
+    "result": "The findings suggest that all neoblasts in a colony are functionally equivalent (able to self-renew and divide to all cell types). If slow-cycling neoblasts emerge in colonies, their contribution to colony growth is likely negligible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by the model's success without requiring neoblast heterogeneity parameters and the observation that specialized neoblasts are present in all colonies. Claim C61 is a reasonable inference from the model's accuracy without incorporating slow-cycling cell parameters, though it acknowledges this is a suggestion rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C48",
+      "C49",
+      "C54"
+    ],
+    "result": "The manuscript establishes background knowledge about planarian neoblasts, including their pluripotency, regenerative capacity, rapid division without transit amplifying cells, lack of memory, and ability to express different fate-specifying transcription factors in successive divisions. These properties distinguish planarian stem cells from vertebrate systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C12 accurately summarize established knowledge about planarian biology with appropriate citations. Claims C48-C49 and C54 describe well-established properties of neoblasts and FSTFs that provide essential context for the study. These background claims are properly supported by the cited literature and are not contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "At 2 days post-irradiation, no colonies were detected, only isolated cells with low smedwi-1 expression likely representing dying neoblasts. By 4 days post-irradiation, surviving neoblasts established small colonies with a median of 4 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 describe temporal observations of colony establishment with appropriate imaging evidence. The interpretation of low smedwi-1+ cells as dying neoblasts (C55) is reasonable given the irradiation context, and the quantification of early colony size (C56) provides important initial conditions for the modeling.",
+    "result_type": "MINOR"
+  }
+]

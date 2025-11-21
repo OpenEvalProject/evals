@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "RUNX2 isoform II is overexpressed in OSCC and multiple other cancers, and is associated with disease progression and poor prognosis. Analysis of TCGA data shows isoform II (exon 1.1 PSI) is 1.46-fold higher in OSCC patients versus controls, while isoform I is lower. Higher isoform II correlates with advanced stage (IV vs I-III) and shorter overall survival. Similar upregulation is observed in BRCA, COAD, PRAD, and STAD. Clinical validation confirms higher isoform II/I ratios in OSCC tissues versus adjacent normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple lines of evidence including TCGA database analysis (C35-C40), clinical sample validation (C47), and extension to other cancer types (C42-C45). The statistical analyses show significant differences with appropriate p-values, and survival analysis demonstrates clinical relevance (C39, C14). The data consistently support overexpression and prognostic association across independent datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RUNX2 isoform II promotes OSCC cell proliferation in vitro and tumorigenesis in vivo. Overexpression of isoform II significantly increases proliferation in CAL 27 and SCC-9 cells, with greater effect than isoform I. Knockdown of isoform II inhibits proliferation, colony formation, and reduces tumor growth and weight in nude mice xenografts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by multiple complementary assays: cell counting (C49, C51), colony formation (C52), and in vivo xenograft experiments (C57, C58). The comparison between isoform II and isoform I (C50) strengthens the isoform-specific conclusion. Statistical significance is demonstrated across experiments with appropriate replicates. The in vivo data provides crucial validation of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C70",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "RUNX2 isoform II suppresses ferroptosis in OSCC cells. Knockdown of isoform II increases ROS production, lipid peroxidation, and induces shrunken mitochondria with vanished cristae\u2014hallmarks of ferroptosis. Conversely, overexpression suppresses these markers. Ferrostatin-1 (Fer-1) partially rescues the effects of isoform II knockdown. Isoform II overexpression increases RSL3 IC50 values while knockdown decreases them, and overexpression reduces RSL3-induced ROS and lipid peroxidation. Tumors with isoform II knockdown show increased 4-HNE staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ferroptosis suppression claim is strongly supported by multiple ferroptosis markers: ROS (C60, C62), lipid peroxidation (C61, C63), mitochondrial morphology (C64), and 4-HNE staining (C85). The pharmacological rescue with Fer-1 (C70, C76, C77) and RSL3 sensitivity experiments (C81-C84) provide mechanistic validation. The consistency across multiple assays and both gain- and loss-of-function experiments strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RUNX2 isoform II knockdown induces apoptosis and necroptosis in addition to ferroptosis. Isoform II knockdown significantly increases apoptosis in OSCC cells. Z-VAD (apoptosis inhibitor) and Nec-1 (necroptosis inhibitor) partially rescue proliferation defects and Z-VAD reduces apoptosis. The combination of Fer-1 and Z-VAD is more effective than either alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by flow cytometry apoptosis data (C55, C73) and pharmacological rescue experiments with specific inhibitors (C71, C72). The additive effect of Fer-1 and Z-VAD (C75) demonstrates that multiple cell death pathways contribute. However, the relative contribution of each pathway is not quantified, and the necroptosis data relies solely on Nec-1 rescue without direct necroptosis markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "RUNX2 isoform II directly regulates PRDX2 expression by binding to its promoter. PRDX2 is the most downregulated ferroptosis-related gene upon isoform II knockdown. Isoform II knockdown reduces PRDX2 mRNA and protein in cells and tumors, while overexpression increases PRDX2 (but isoform I does not). ChIP-qPCR demonstrates direct binding of isoform II to the PRDX2 promoter. PRDX2 overexpression partially rescues ROS, lipid peroxidation, and apoptosis induced by isoform II knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regulatory relationship is well-established through multiple approaches: expression correlation (C87-C91), direct binding evidence via ChIP-qPCR (C98), and functional rescue experiments (C100-C102). The isoform specificity (C91) strengthens the conclusion. The partial rescue by PRDX2 (C100-C102) confirms PRDX2 as a key mediator, though the incomplete rescue suggests additional mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "HOXA10 is an upstream positive regulator of RUNX2 isoform II in OSCC. HOXA10 knockdown specifically reduces isoform II expression (not isoform I) and suppresses cell proliferation, colony formation, and increases apoptosis. HOXA10 is overexpressed in OSCC tissues versus normal controls, correlates with shorter survival, and its expression positively correlates with isoform II levels in TCGA patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The upstream regulatory relationship is supported by knockdown experiments showing isoform-specific effects (C105, C106), correlation analysis (C113), and consistent expression patterns in clinical samples (C110-C112). The functional consequences of HOXA10 knockdown (C107-C109) parallel those of isoform II knockdown, supporting the pathway. The prior literature citation (C104) provides mechanistic precedent in mouse cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "HOXA10 inhibits ferroptosis and apoptosis through the RUNX2 isoform II/PRDX2 pathway. HOXA10 knockdown decreases PRDX2 and GPX4 expression, increases ROS and lipid peroxidation, and these effects are partially rescued by Fer-1, Z-VAD, or Nec-1. Overexpression of isoform II or PRDX2 rescues the proliferation defects, apoptosis, ROS, and lipid peroxidation caused by HOXA10 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pathway is well-supported by systematic rescue experiments showing that downstream components (isoform II, PRDX2) can rescue HOXA10 knockdown phenotypes (C126-C134). The parallel effects on PRDX2 and GPX4 (C115, C116) and ferroptosis markers (C117, C118) are consistent with the proposed mechanism. The pharmacological rescue experiments (C119-C125) provide additional validation. The partial rescue indicates PRDX2 is a key but not exclusive mediator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "PRDX2 knockdown reduces tumor growth and weight in nude mice xenografts, similar to isoform II knockdown effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo data for PRDX2 knockdown (C92, C93) parallels the isoform II knockdown results (C57, C58), supporting PRDX2 as a functional mediator of isoform II's oncogenic effects. The xenograft experiments provide crucial in vivo validation of the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Isoform II overexpression has no effect on OSCC cell migration or invasion, while isoform I overexpression inhibits migration and invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects on migration/invasion between isoforms II and I (C53, C54) are supported by wound healing and transwell assays. This finding distinguishes the functional roles of the two isoforms and suggests isoform II's oncogenic role is primarily through proliferation/survival rather than metastasis. However, only overexpression was tested; knockdown effects on migration/invasion are not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Overexpression of isoform II or isoform I has no obvious effect on cellular apoptosis of OSCC under basal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by flow cytometry data (C56). This finding is important as it shows that while isoform II knockdown increases apoptosis (C55), overexpression alone is not sufficient to further suppress basal apoptosis. This suggests isoform II maintains survival under stress conditions rather than actively suppressing basal apoptosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Isoform II knockdown causes mitochondrial elongation, potentially through suppression of FIS1 expression and deficiency in mitochondrial fission. Oxygen consumption rates are lower in isoform II-knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mitochondrial elongation phenotype is documented (C66), and FIS1 downregulation is shown (C67). However, the mechanistic link between isoform II, FIS1, and mitochondrial morphology is speculative (C67, C68). The reduced OCR (C69) is consistent with mitochondrial dysfunction but doesn't establish causality. Additional experiments (FIS1 rescue, direct measurement of fission/fusion dynamics) would be needed to confirm the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "RUNX2 isoform II does not regulate TFRC expression or cellular iron transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result is supported by RT-PCR, western blot (C95), and IHC data (C96) showing no effect of isoform II knockdown on TFRC. This finding is important as it narrows the mechanism by which isoform II regulates ferroptosis, suggesting it acts through antioxidant pathways (PRDX2, GPX4) rather than iron metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "RUNX2 isoform II regulates GPX4 expression. Knockdown decreases GPX4 mRNA and protein, while overexpression increases GPX4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regulation of GPX4 by isoform II is supported by RT-PCR and western blot data (C156, C157). This finding complements the PRDX2 regulation and suggests isoform II controls multiple antioxidant pathways. However, whether this is direct transcriptional regulation (like PRDX2) or indirect is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims about ferroptosis: it is an iron-dependent programmed cell death characterized by lipid peroxidation and ROS accumulation, plays roles in tumor suppression including in HNSCC/OSCC, and can overcome drug resistance. Ferroptosis has extrinsic pathways (via system xc-, TF, LTF) and intrinsic pathways (via GPX4 blockade).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by citations to the literature (C1, C2, C15, C17, C18, C20-C22) and general knowledge in the field. They provide appropriate context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background claims about RUNX2 and OSCC: RUNX2 has two isoforms from alternative promoters with distinct N-termini, is critical for osteogenesis, promotes metastasis/invasion in multiple cancers including HNSCC. OSCC is a common malignancy with 50-60% 5-year survival despite treatment advances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are supported by citations to prior literature and provide context for the study. The RUNX2 isoform structure (C3, C30, C31) is established knowledge confirmed by the schematic in Figure 1A. The cancer-related claims (C24-C29, C32-C34) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Background claims from prior literature about ferroptosis regulation (p53, BAP1, xCT, CAV-1), PRDX2 function, RUNX2 expression in tumors, HOXA10 roles, and isoform expression patterns in other cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriately cited background claims from prior literature that provide context for the discussion. They support the rationale for the study and help interpret the findings but are not novel results from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C154",
+      "C155",
+      "C158"
+    ],
+    "result": "Summary/conclusion claims: RUNX2 isoform II knockdown induces apoptosis and can bind to PRDX2 promoter to inhibit ferroptosis. HOXA10 knockdown inhibits proliferation and promotes apoptosis/ferroptosis through suppressing isoform II. OSCC cells upregulate isoform II to inhibit ferroptosis/apoptosis through the HOXA10/isoform II/PRDX2 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are summary statements that integrate the findings from the study. They are supported by the collective evidence from the experimental results described in other claim groups. C158 represents the main conclusion of the paper and is well-supported by the totality of the data.",
+    "result_type": "MAJOR"
+  }
+]

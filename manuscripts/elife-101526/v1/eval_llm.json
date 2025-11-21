@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C101",
+      "C102"
+    ],
+    "result": "The 1972 ROSLA policy in the UK mandated an additional year of schooling for individuals born after September 1, 1957, with near 100% compliance. The policy increased formal qualifications, income, and cognition in the general population, though the UK Biobank sample shows only ~10% were affected (vs. 25% in the general population) due to healthy volunteer bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C40, C101-C102 establish ROSLA as a well-documented natural experiment with high compliance and demonstrated behavioral effects. The characterization of the policy, its implementation, and differential impact in UK Biobank vs. general population is supported by multiple citations and data (Figure 1\u2014figure supplement 2, Supplementary file 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Using fuzzy local-linear regression discontinuity with MSE-optimized bandwidths (N>30,000, average effective N=5124), the study found no evidence of an effect from an additional year of education on any of six preregistered global neuroimaging measures (total SA, average CT, normalized TBV, mean wFA, WMh, normalized CSF volume; all p's>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C46 describe the primary causal analysis using appropriate RD methodology with large sample sizes and MSE-optimized bandwidths. The null findings are consistently reported across all global measures with proper statistical testing (p>0.05), supported by Figure 1 and Supplementary file 2. The robustness to missing data imputation strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Regional analyses found no effect of an additional year of education on cortical thickness or surface area across 66 cortical regions (average N=5080 and 5392 respectively), weighted mean fractional anisotropy across 27 white matter tracks (mean N=4766), or volume of 18 subcortical regions (mean N=5174), all p'sFDR >0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 extend the null findings to regional analyses with substantial sample sizes and appropriate FDR correction for multiple comparisons. The consistency of null results across multiple brain regions and modalities (Figure 2\u2014figure supplement 1) strengthens the overall conclusion of no detectable causal effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Bayesian local randomization analysis comparing participants born in August vs. September 1957 (n\u2248230) and expanded to a 5-month window (n\u22481200) provided strong evidence in favor of the null hypothesis for all six global neuroimaging measures (BF01 ranging from 11.63 to 18.21 with normal prior mean=0, sd=1), robust across different prior specifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C68 describe a complementary analytical approach that converges with the primary RD analysis. The Bayesian framework provides quantitative evidence for the null hypothesis (BF01>10 for all measures), and sensitivity analyses across different priors (Figure 3\u2014figure supplement 1, Supplementary files 4 and 6) demonstrate robustness. The expansion to larger windows increases power while maintaining null findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C69",
+      "C90"
+    ],
+    "result": "Validation tests confirmed ROSLA as a valid natural experiment: no evidence of manipulation around the cutoff (Tq=-0.72, p=0.47), no associations with placebo outcomes (neuroimaging covariates) except the deterministically related 'summer' variable, consistent across both 1- and 5-month window analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C69, C90 establish the internal validity of the natural experiment through standard RD validation procedures. The density test, placebo outcome tests (Supplementary files 1, 5, 7), and consistency with prior literature (Davies et al., 2018; Clark and Royer, 2010, 2013; Barcellos et al., 2018, 2023) provide strong evidence for design validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Correlational analysis in the same participants showed weak to extreme evidence for associations between educational attainment and surface area (BF10=2.3 in 1-month window, BF10=41.7 in 5-month window) and CSF volume (BF10=80.7 in 5-month window), contrasting with null causal findings and demonstrating sensitivity to brain-behavioral associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 demonstrate that the null causal findings are not due to lack of statistical sensitivity, as correlational analyses in the same sample detect associations. This contrast between causal and correlational approaches (Figure 3, Supplementary file 6) is methodologically important and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Post hoc replication across eight additional 10-month cohorts spaced 2 years apart indicated the preregistered associational effect on CSF was likely a false positive, while the association with surface area remained robust across replication cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 describe important post hoc analyses that test the replicability of the correlational findings. The failure to replicate the CSF association but consistent replication of the SA association (Figure 3\u2014figure supplement 3) provides valuable information about which correlational findings are robust, though this was not preregistered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study finds converging evidence against a causal effect of education on long-term structural neuroimaging outcomes, with null results across imaging modalities (structural MRI, DTI), different regions (cortical, subcortical, white matter), and analysis strategies (continuity-based RD, Bayesian local randomization), while demonstrating sensitivity to detect observational associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 synthesize the main findings. The convergence of null results across multiple analytical approaches, brain regions, and imaging modalities, combined with demonstrated sensitivity to correlational effects, provides strong evidence for the absence of detectable long-term causal effects of an additional year of education on brain structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The null neuroimaging findings contrast with established causal effects of education on intelligence, suggesting neural manifestations may be at a resolution not detectable with conventional MRI. The expansion-renormalization theory is proposed as a potential explanation: initial macro-scale changes may have been detectable immediately post-ROSLA but renormalized to micro-scale changes over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C106 present speculative interpretations of the null findings. While the contrast with behavioral effects (C97, supported by citations) is valid, the proposed mechanisms (C98, C103-C106) are speculative and not directly tested. The comparison to short-term intervention studies (C99) raises valid questions but doesn't resolve the discrepancy. Alternative explanations are plausible but unverified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The 46-year interval between ROSLA and neuroimaging offers both strengths and weaknesses: while it could allow effects to fade (C108), aging theories predict cumulative protective effects (C109-C110). The design is well-powered to test aging-related 'brain reserve' theories, and findings align with a recent longitudinal study showing education does not affect the rate of brain aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111 discuss temporal aspects of the study design. The characterization of strengths/weaknesses is reasonable, but whether 46 years is 'too long' (C108) versus 'particularly well-powered' (C110) for detecting effects remains uncertain. The alignment with Nyberg et al. 2021 (C111) provides some support, but the interpretation depends on untested assumptions about the time course of educational effects on brain structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study demonstrates that correlational associations between education and brain structure (SA, CSF) do not reflect causal effects, emphasizing the need for caution in attributing causation in non-causal designs. The findings suggest complex pathways and recommend multipronged approaches combining deep phenotyping, longitudinal imaging, and gene-by-environment models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 draw appropriate methodological conclusions from the contrast between causal and correlational findings. The caution about inferring causation from correlational designs (C113) is well-supported by the data. The recommendations for future research (C118) are reasonable given the findings, though somewhat speculative. The characterization of environmental causes as small and additive (C117) is supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The UK Biobank has healthy volunteer bias with only ~10% affected by ROSLA (vs. 25% in general population), limiting external validity. However, natural experimental design protects against threats to internal validity from selection bias. Results represent a 'local' average treatment effect for UK compliers aged 15-16 in 1973.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C125 appropriately characterize study limitations and the scope of inference. The healthy volunteer bias is well-documented (citations in C70, C119), and the differential impact rate is supported by data (C122-C123, Figure 1\u2014figure supplement 2). The discussion of internal vs. external validity tradeoffs (C71, C120, C125) and local average treatment effects (C72, C124) demonstrates appropriate understanding of RD methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C126",
+      "C127"
+    ],
+    "result": "The study reports a lack of causal evidence for long-term neural effects of an additional year of schooling in aging individuals, with findings robust across modalities, regions, and strategies. The results call into question sustained experience-dependent plasticity and have significant ramifications for theories of aging-related heterogeneity and 'brain reserve'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77, C126-C127 summarize the main conclusions. The lack of causal evidence is well-supported by the comprehensive null findings. However, the inference that results 'call into question sustained experience-dependent plasticity' (C76, C127) is somewhat strong given that the study cannot assess short-term effects and alternative explanations exist (e.g., effects below MRI resolution, expansion-renormalization). The ramifications for aging theories (C77) are appropriately noted but depend on interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior literature establishes that education is associated with beneficial health, cognitive, and neural outcomes, with correlational evidence across diverse contexts. Brain structure reorganization is proposed as a plausible mechanism, supported by lifespan theories and correlational studies. However, strong causal evidence is lacking due to ethical/practical constraints and complex confounding by sociodemographic, genetic, and selection factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 accurately summarize the state of prior literature and motivation for the study. The characterization of correlational evidence (C1-C10) is well-supported by citations. The identification of the causal inference gap (C11-C16) and confounding issues is appropriate and well-documented. This provides strong justification for the natural experiment approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27"
+    ],
+    "result": "Natural experiments with regression discontinuity designs allow causal inference in observational phenomena through exogenous assignment mechanisms. Recent econometric advances have standardized RD analysis. Natural experiments have provided robust causal evidence for education's effect on intelligence (0.14-0.35 SD) but have not been applied to cognitive neuroscience questions. The UK Biobank provides an ideal opportunity to test ROSLA's effects on brain structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23, C27 establish the methodological foundation and novelty of the study. The characterization of natural experiments and RD methodology (C17-C21) is accurate and well-cited. The evidence for causal effects on intelligence (C22) provides important context. The claim that natural experiments haven't been used in cognitive neuroscience (C23) represents a knowledge claim that appears accurate. The UK Biobank's suitability (C27) is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C128"
+    ],
+    "result": "The availability of large neuroimaging cohorts paired with econometric methods offers new avenues for studying neural effects. Causal inference represents a new tool for neuroimaging with potential to move population neuroscience from association to causation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C128 make appropriate forward-looking statements about the methodological contribution. The characterization of causal inference as a 'new tool' for neuroimaging is reasonable given the lack of prior applications (C23). However, the potential to move the field 'from association to causation' is somewhat aspirational and depends on the availability of suitable natural experiments.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C29"
+    ],
+    "result": "Analysis of experimental data from L\u00f3pez-Cruz et al., 2019 reveals that while C. elegans foraging behavior shows an exponential decay in average reorientation rate, only about half of individual worms exhibit an abrupt local-to-global search transition, with the other half showing continuous or multiple transitions. The distributions of slope differences and transition times are continuous with no clear boundary between 'deciders' and 'non-deciders'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C20-C22, and C29 collectively describe the experimental observations and are well-supported by Figure 1. The data show both the population-level exponential decay (C20, Figure 1a) and the heterogeneity in individual trajectories (C21-C22, Figure 1b-d), with continuous distributions of transition parameters (C29, Figure 1e). The subjective nature of the classification is acknowledged (C27-C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C18",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A stochastic model using the Gillespie algorithm with a continuously decaying reorientation rate parameter (M) successfully reproduces both abrupt and gradual changes in reorientation behavior observed experimentally, without requiring behavioral state switches or decision-making mechanisms. The model, parameterized only to match average population behavior, generates individual trajectories with distributions of transition parameters comparable to experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C18, C30-C32, C34-C35, C37-C41, C47-C50 describe the core modeling approach and results, which are well-supported by Figures 2b-e. The model successfully captures the diversity of experimental trajectories (Figure 2c-d) and produces similar switching dynamics (Figure 2e) despite lacking an explicit switching mechanism. The methodology is clearly described and the comparison to experimental data is quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The stochastic model demonstrates that sudden changes in reorientation rate can emerge naturally from stochastic sampling of a continuous decay process, even when the reorientation rate is constant. These abrupt changes are not due to sudden changes in the underlying model but arise from the inherent stochasticity of the behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by the modeling results shown in Figure 2f, which demonstrates that even a constant reorientation rate produces apparent sudden transitions due to stochastic sampling. This is a key mechanistic insight that explains how abrupt behavioral changes can occur without discrete state switches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Sensitivity analysis reveals that the model is robust to initial values of M (M0=1000, 100, 10) but that a binary model (M0=1) produces distinctly bimodal distributions inconsistent with experimental data. Jensen-Shannon divergence analysis confirms that continuous decline in reorientation rate is more consistent with experimental observations than discrete state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C66 describe the sensitivity analysis shown in Figure 3. The data clearly show that non-binary models (M0\u226510) produce similar distributions to experimental data, while the binary model (M0=1) produces bimodal distributions (Figure 3b) and significantly higher JSD values (Figure 3c, p<0.001). This provides strong quantitative support for continuous over discrete models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The experimental transition distribution is shifted slightly earlier compared to the model, which may be explained by pheromone-induced reorientations when worms cross tracks left by other animals during group tracking (10-15 animals tracked together), an effect that would be more pronounced early in recordings when animals are in close proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C46 identify a discrepancy between model and experiment and propose a plausible explanation based on pheromone effects (C45, supported by citations). However, this remains speculative as the dataset lacks information about pheromone track crossings (C46), and no quantitative analysis is provided to test this hypothesis. The explanation is reasonable but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The stochastic model without decision-making simplifies the dispersal strategy for C. elegans, where worms rely on a decaying signal in the absence of food rather than evidence accumulation. This strategy increases diffusion constant and search efficiency, is consistent with prior characterizations of stochastic worm behavior, and implies individual worms would exhibit population-level variability if tested repeatedly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 present the conceptual implications of the modeling results. The simplification (C67-C68) follows logically from the model's success. The efficiency claim (C69) is supported by citation to Klein et al., 2017. Consistency with prior work (C70) is well-documented with multiple citations. The implication about individual variability (C71) is a reasonable inference from the stochastic nature of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The decay parameter M can be interpreted as representing the memory timescale of the last food encounter (~10 min half-life with \u03b3=0.07 min\u207b\u00b9). The amplitude of M may correlate with food density/quality, consistent with observations that starting reorientation rate correlates with prior food density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide a biological interpretation of M with a specific calculation that is mathematically correct. Claims C75-C77 connect the model to experimental observations from L\u00f3pez-Cruz et al., 2019 about food density effects. While C75 is speculative about M rising in the presence of food, the correlation between M amplitude and food density (C76-C77) is supported by cited experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The model parameter M likely represents the combined decay of multiple neural signaling factors, including the activities of neurons AIA and ADE which redundantly suppress reorientations. These neurons receive sensory input (chemosensory to AIA, mechanosensory to ADE) that decays over time, and their output is inhibited by presynaptic glutamate binding to MGL-1 receptors. The decay in reorientations likely reflects the time-dependent decay of both sensory neuron activity and AIA/ADE suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C91 connect the phenomenological model to known neural mechanisms from L\u00f3pez-Cruz et al., 2019. The neural circuit details (C81-C88) are well-supported by citations. The interpretation that M represents multiple decaying neural factors (C78, C91) is a reasonable inference that connects the model to biological mechanisms. The logic linking sensory neuron decay to AIA/ADE activity to reorientation suppression (C89-C90) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The neural basis of M is complex, involving not only decaying sensory neuron activity but also time-dependent changes in AIA/ADE sensitivity to sensory input. Glutamatergic input is not essential, and additional signaling factors contribute. Depolarizing sensory neurons after 30 min starvation fails to rescue early reorientation rates, possibly due to decreased presynaptic release or postsynaptic receptor localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 describe the complexity of the neural mechanisms underlying M, based on observations from L\u00f3pez-Cruz et al., 2019 (C92-C95). The speculation about mechanisms (C96) is appropriately qualified. The summary (C97-C98) accurately captures the multi-level nature of the decay phenomenon. These claims provide important context for understanding what M represents biologically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Additional signaling factors including ionotropic glutamate signaling, dopamine release, and neuropeptides also influence foraging kinetics and could contribute to the decay of M. Further work is needed to reveal how reorientation kinetics emerge explicitly from underlying signaling kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by appropriate citations (Hills et al., 2004; Campbell et al., 2016). Claim C101 is appropriately speculative about which factors contribute to M. Claim C102 acknowledges the need for future work to establish explicit mechanistic connections. These claims appropriately identify limitations and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C16",
+      "C17"
+    ],
+    "result": "Abrupt behavioral changes are not necessarily indicative of abrupt changes in behavioral states, especially when not universally observed. The exponentially decaying reorientation rate emerges from averaging trajectories that don't individually conform to this curve, and abrupt changes could result from stochastic sampling of an underlying decay phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C16-C17 present the key conceptual framework and hypothesis of the paper. These are well-supported by the modeling results (Figures 2-3) which demonstrate that stochastic sampling of a continuous decay can produce apparent abrupt transitions. The logic is sound and the empirical support is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on foraging strategies: Area Restricted Search (ARS) is observed in nearly all animals, where appetitive cues increase reorientation frequency while food removal decreases it. C. elegans and D. melanogaster larvae progressively increase diffusion by decreasing reorientations, though some studies report abrupt transitions described as evidence-accumulation-based switches. Reorientations are random, follow Poisson statistics, and are analogous to stochastic molecular events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 provide background context supported by appropriate citations. These establish the biological context (C7-C12) and the stochastic nature of reorientations (C13-C15) that motivates the modeling approach. The analogy to molecular kinetics (C14-C15) is well-supported and provides the conceptual foundation for using the Gillespie algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Methodological details of prior work: L\u00f3pez-Cruz et al., 2019 tracked worms for 45 min after food removal and used the MATLAB findchangepts function to identify transitions by fitting two linear regressions. Classification as 'deciders' was based on visual assessment of slope differences, making the 50% estimate fairly subjective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C23-C28 accurately describe the methodology from L\u00f3pez-Cruz et al., 2019 and appropriately critique its subjective nature (C27-C28). This critical assessment motivates the more objective quantitative approach taken in the current study (C29). The description is accurate and the critique is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C36"
+    ],
+    "result": "Methodological precedents and observations: The Gillespie algorithm has been used to model Lotka-Volterra predator-prey dynamics. Experimental data show considerable variance in initial reorientation rates despite an average of ~1.5 events/minute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by appropriate citations demonstrating prior use of Gillespie algorithm for population dynamics. Claim C36 is supported by Figure 1a showing variance in initial rates. These provide important methodological context and justify the approach to initializing M values in the model (C37).",
+    "result_type": "MINOR"
+  }
+]

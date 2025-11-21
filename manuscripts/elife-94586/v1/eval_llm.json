@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Overflow metabolism (Warburg effect) is a well-established phenomenon where fast-proliferating cells across bacteria, fungi, and mammalian cells excrete fermentation products despite oxygen availability. Microbes use respiration when nutrients are scarce and aerobic glycolysis when nutrients are abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by extensive citations to established literature (Warburg 1924, Hanahan & Weinberg 2011, Vander Heiden et al. 2009, and multiple studies on bacteria, fungi, and mammalian cells). These are foundational background claims documenting a well-known phenomenon in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Recent experimental findings contradict prevalent explanations of overflow metabolism. While current theories hold that proteome efficiency in fermentation is consistently higher than respiration, recent measurements show the opposite for many yeast and cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by appropriate citations. C5 cites Basan et al. 2015 and Chen & Nielsen 2019 for the prevalent explanation, while C6 cites Shen et al. 2024 for contradictory experimental findings. C7 logically follows from comparing these results. This establishes the scientific puzzle the manuscript addresses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Most existing explanations of overflow metabolism assume cells optimize growth rate for a given carbon influx rate, but this assumption is questionable since the actual given factors are nutrient identity and concentration. The origin and function of overflow metabolism remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by multiple citations to existing models and reviews. C8 and C9 appropriately cite studies on optimization assumptions (Molenaar et al. 2009, Scott et al. 2010, Wang et al. 2019), while C10 cites review literature acknowledging the unresolved nature of the problem. This establishes the gap in current understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Evolutionary pressure drives unicellular organisms to optimize cellular resources for rapid growth through optimal protein allocation corresponding to elementary flux modes. Cancer cells exhibit similar pressures through disruption of growth control and immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are well-supported by citations to evolutionary biology and systems biology literature (Scott et al. 2010, Hui et al. 2015, M\u00fcller et al. 2014, Hanahan & Weinberg 2011). The connection between microbial optimization and cancer cell behavior (C15) is a reasonable inference supported by the hallmarks of cancer literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors propose that overflow metabolism can be understood through optimal protein allocation combined with enzyme catalytic rate heterogeneity. The model quantitatively explains experimental data on E. coli, yeast (Crabtree effect), and cancer cells (Warburg effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 represent the main theoretical contribution. C16 and C17 are supported by the model development throughout the manuscript. C18 is validated by quantitative agreement with E. coli data shown in Figures 1-4. C19 is supported by Figure 5 showing quantitative agreement with yeast and cancer cell data (Bartman et al. 2023, Shen et al. 2024). The model successfully explains previously contradictory observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors develop a coarse-grained metabolic model by classifying carbon sources entering upper glycolysis as Group A and organizing biomass precursors into five pools (a1, a2, b, c, d) based on entry points. The coarse-grained model (Figure 1B) is topologically identical to the full metabolic network (Figure 1A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 describe the model construction based on established metabolic network topology (Neidhardt et al. 1990, Nelson & Cox 2008). The classification scheme is clearly shown in Figure 1A-B. The topological equivalence (C22) is a direct statement about the model structure that can be verified from the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C25",
+      "C29"
+    ],
+    "result": "The model formulates normalized fluxes as products of proteomic mass fraction and substrate quality (J_i^(N) = \u03c6_i \u00b7 \u03ba_i). Nutrient quality \u03ba_A varies with nutrient type and concentration for Group A carbon sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C25, and C29 describe the mathematical formulation of the model. These are theoretical definitions that are internally consistent and follow from Michaelis-Menten enzyme kinetics. The formulation is standard for metabolic modeling and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The model identifies three independent metabolic fates (fermentation, respiration, biomass generation) with distinct proteome fractions. Growth rate is proportional to ribosomal protein fraction, and energy demand is proportional to biomass production rate in bacteria with negligible maintenance energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 establish key model assumptions supported by appropriate citations. C30-C31 cite Chen & Nielsen 2019 for metabolic fates. C33-C35 cite established cell biology (Neidhardt et al. 1990, Scott et al. 2010, Dai et al. 2017). C36-C37 cite Ebenh\u00f6h et al. 2024 and Locasale & Cantley 2010 for energy relationships. These are reasonable simplifying assumptions for bacterial metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The model predicts that the choice between respiration and fermentation is determined by comparing proteome efficiencies (\u03b5_r vs \u03b5_f), which are functions of nutrient quality. Under nutrient-poor conditions, respiration is more efficient; under rich conditions, fermentation becomes optimal. A critical nutrient quality \u03ba_A^(C) exists where efficiencies are equal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C51 present the core theoretical predictions. C39 is established biochemistry (Nelson & Cox 2008). C42-C50 follow logically from the optimization framework and Equation 4. C45 is validated by experimental parameters for E. coli, and C46 is confirmed by Basan et al. 2015 data on lactose. The existence of a critical threshold (C47-C48) follows mathematically from the monotonic increase of \u0394(\u03ba_A). This provides a qualitative explanation for aerobic glycolysis (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the homogeneous case (all cells identical), optimal protein allocation predicts a digital (step function) response of fermentation flux to growth rate. This is consistent with Molenaar et al. 2009 simulations but incompatible with the threshold-analog response observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 identify a key limitation of the homogeneous model. C52 presents the theoretical prediction (Heaviside step function). C53 correctly notes consistency with Molenaar et al. 2009. C54 identifies the incompatibility with experimental observations (Basan et al. 2015, Holms 1996). This motivates the need for incorporating heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Cell heterogeneity is ubiquitous in microbes and tumors, with significant metabolic heterogeneity in respiration/fermentation choice. Enzyme k_cat values vary considerably between cells due to varying potassium and phosphate concentrations, creating a distribution (extrinsic noise). The model assumes Gaussian distributions for k_cat values, leading to Gaussian distributions of proteome efficiencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are well-supported by extensive citations to experimental studies on heterogeneity (Ackermann 2015, Bagamery et al. 2020, Nikolic et al. 2013, Davidi et al. 2016, Garc\u00eda-Contreras et al. 2012). C60 is an explicit modeling assumption (Gaussian distribution), which is reasonable but simplifying. C61 follows as a mathematical consequence of C60. The Gaussian assumption (C60) is a limitation but is standard practice and validated by agreement with data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Incorporating enzyme heterogeneity with 25% CV (equivalent to 12% CV in critical growth rate) transforms the digital response into a threshold-analog response. The model quantitatively agrees with E. coli experimental data for fermentation and respiration fluxes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C64-C67 present the key result resolving the digital vs. analog response problem. C62 is validated by single-cell data from Wallden et al. 2016 (Appendix 1-figure 2B). C64 is a fitting parameter choice (25% CV) that is reasonable given experimental enzyme variability. C65-C66 show quantitative agreement with data in Figures 1C-D (Basan et al. 2015, Holms 1996). C67 summarizes the achievement. The 25% CV is a fitted parameter, but the resulting agreement across multiple datasets supports the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "The model successfully predicts the effects of \u03c6_Z perturbation (useless protein overexpression). For each LacZ expression level, fermentation flux shows threshold-analog response to growth rate. Scaling relations and 3D response surfaces quantitatively match experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 test the model against \u03c6_Z perturbation data. C68 correctly describes the perturbation effect (Basan et al. 2015). C69 and C71-C72 show quantitative agreement with experimental data in Figures 2A-C. The model successfully predicts behavior under this perturbation without additional fitting parameters for the response shape, strengthening confidence in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The model successfully incorporates energy dissipation (coefficient w) and predicts its effects. A notable characteristic distinguishing energy dissipation from \u03c6_Z perturbation is that fermentation flux increases despite decreasing growth rate at fixed \u03ba_A. Model predictions show good agreement with experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 test the model against energy dissipation perturbations. C73 describes the model modification. C74 shows agreement with data in Figures 3A-B (Basan et al. 2015). C75 identifies a distinguishing prediction that can be tested. The model successfully handles this perturbation type, further validating the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The model predictions for translation inhibition are generally consistent with experimental data, though systematic discrepancies arise at low translation rates. Including small maintenance energy (w_0 = 2.5 h^-1) improves agreement, consistent with maintenance energy being typically negligible for bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 address translation inhibition perturbations. C77 shows general consistency (Appendix 1-figure 2D-E). C78 honestly acknowledges discrepancies at low translation rates. C79 is supported by citations (Basan et al. 2015, Locasale & Cantley 2010). The inclusion of maintenance energy to resolve discrepancies is reasonable and the value (2.5 h^-1) is appropriately small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The model successfully predicts distinct behavior for pyruvate (non-Group A carbon source) compared to Group A sources. The critical growth rate \u03bb_C^(py) and fermentation ATP yield \u03b2_f^(py) are smaller for pyruvate, resulting in a distinctly different fermentation flux curve validated by experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 test the model's ability to handle different nutrient types. C81 correctly identifies pyruvate's entry point (Neidhardt et al. 1990, Nelson & Cox 2008). C82 describes the model structure (Figure 3E). C83 presents theoretical predictions about parameter differences. C84 shows validation by experimental data (Holms 1996, Figure 3F). This demonstrates the model's generalizability beyond Group A sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The coarse-grained model predicts enzyme allocation for individual genes in glycolysis and TCA cycle under \u03ba_A perturbation. Glycolysis enzymes show different response patterns than TCA cycle enzymes, which cannot be explained by the C-line response from simplified models. Model predictions overall match experimental data with minor discrepancies attributed to basal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 test enzyme allocation predictions. C85-C87 establish the mapping between model and genes. C88-C89 cite previous C-line models (Hui et al. 2015, You et al. 2013). C90-C91 identify a discrepancy that existing models cannot explain. C92 shows overall agreement with data (Figure 4A-B, Hui et al. 2015). C93 acknowledges minor discrepancies with reasonable explanation. The model successfully predicts differential behavior of glycolysis vs. TCA enzymes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "For \u03c6_Z perturbation, the model predicts linear responses with all positive slopes for glycolysis and TCA cycle genes, quantitatively matching experimental data. For energy dissipation, \u03c6_4 enzymes show negative slopes, consistent with experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 test enzyme allocation under different perturbations. C94-C96 show predictions for \u03c6_Z perturbation match data (Figure 4C-D, Basan et al. 2015) with no fitting parameters (Equations S120-S121). C97-C98 show energy dissipation predictions match experiments (Appendix 1-figure 3K-N). The model successfully predicts enzyme-specific responses to different perturbation types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The model extends to yeast and tumors, predicting that proteome efficiencies are increasing functions of nutrient quality, with respiration optimal under poor conditions and fermentation optimal under rich conditions. The standard picture of overflow metabolism has been observed in yeast, though tuning cancer cell growth rates in vivo remains challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 extend the model to eukaryotes. C99-C101 present theoretical predictions (Equations S170-S175). C102 cites experimental validation in yeast (van Hoek et al. 1998). C103 acknowledges experimental limitations for cancer cells. The extension is theoretically sound but relies on similar assumptions as the bacterial model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The model resolves the puzzle from Shen et al. 2024 where population-level proteome efficiency in respiration exceeds fermentation despite aerobic glycolysis. By incorporating heterogeneity, the model allows subpopulations to have higher fermentation efficiency even when population average favors respiration. With \u03c7_\u03b5r = \u03c7_\u03b5f = 0.58, the model quantitatively matches yeast and cancer cell data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 address a major contradiction in the field. C104-C105 correctly identify the puzzle from Shen et al. 2024. C106-C108 explain how heterogeneity resolves this: low nutrient quality (C107) plus heterogeneity (C108) allows fermentation in subpopulations despite population-average favoring respiration. C109 shows quantitative agreement with data (Figure 5A-B, Bartman et al. 2023, Shen et al. 2024) using CV = 0.58. The CV value is higher than for E. coli (0.25), which is reasonable given greater heterogeneity in eukaryotes, but is a fitted parameter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The model's main findings are that under nutrient-poor conditions, respiration is optimal due to higher proteome efficiency, while in rich media, fermentation becomes optimal as its efficiency increases more rapidly. Combined with heterogeneity, this quantitatively explains the threshold-analog response in overflow metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 summarize the main results. C110-C111 restate the core mechanism with reference to Figure 1E. C112 emphasizes the quantitative agreement with data (Figure 1C, Basan et al. 2015, Holms 1996). These summary claims are well-supported by the detailed results throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The cAMP-CRP system likely plays a role in sensing proteome efficiency and executing optimal strategy, though additional regulators remain to be identified. The model can be relaxed to require efficient allocation only for enzymes (not ribosomes), remaining applicable under suboptimal growth conditions where ribosome activity varies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 discuss mechanistic implementation and model extensions. C113-C114 appropriately cite evidence for cAMP-CRP involvement (Basan et al. 2015, Towbin et al. 2017) while acknowledging gaps. C115-C116 describe theoretical extensions supported by experimental observations of ribosome variability (Dai et al. 2017, Li et al. 2018, Pavlou et al. 2025). These are reasonable extensions that broaden applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The model differs from existing rationales by optimizing growth rate through protein allocation without constraining carbon influx, addressing the fact that given factors are nutrient identity and concentration, not influx rate. Cell heterogeneity is crucial for explaining the threshold-analog response and resolving contradictions with Shen et al. 2024.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 contrast the current model with existing approaches. C117 correctly characterizes existing models (Basan et al. 2015, Chen & Nielsen 2019, etc.). C118 cites appropriate references for the critique (Molenaar et al. 2009, Scott et al. 2010). C119 describes the key difference in optimization approach. C120 emphasizes heterogeneity's importance. The distinction from existing models is clearly articulated and justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "In the homogeneous case, cells would not ferment if respiration were more efficient. Incorporating enzyme heterogeneity transforms the critical growth rate from a single value to a Gaussian distribution, converting digital to threshold-analog response. The model is supported by single-cell growth rate distributions and heterogeneity patterns in E. coli, yeast, and tumors, and can be broadly applied to metabolism challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 discuss the role and validation of heterogeneity. C121 states the homogeneous prediction. C122 explains the transformation mechanism (Equation S45, Appendix 1-figure 4). C123 cites validation by single-cell data (Wallden et al. 2016) and perturbation experiments (Figures 2-4). C124 cites consistency with heterogeneity observations (Nikolic et al. 2013, Bagamery et al. 2020, Duraj et al. 2021). C125 claims broad applicability. The heterogeneity mechanism is well-supported and validated across multiple systems.",
+    "result_type": "MAJOR"
+  }
+]

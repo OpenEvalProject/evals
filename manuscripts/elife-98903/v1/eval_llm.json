@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "PDE1A is overexpressed in lung cancer tissues and cell lines compared to normal controls, and high PDE1A expression correlates with poor prognosis in lung cancer patients. Patients with high PDE1A levels show shorter overall survival and increased risk classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by immunohistochemistry data (Figure 1A), western blot analysis (Figure 1B), statistical analysis showing significant differences (p<0.0001, Figure 1C), and survival analysis data (Figures 1D-E) with appropriate citations. The correlation between PDE1A expression and poor prognosis is demonstrated through multiple independent datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "PDE1A does not significantly affect NSCLC cell proliferation. Both knockdown and overexpression of PDE1A showed no significant impact on cell proliferation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by SRB assay data shown in Figure 1\u2014figure supplement 3A-B. This negative result is important as it indicates PDE1A's effects are specific to metastasis rather than general cell growth, helping to define the mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "PDE1A knockdown suppresses migration, invasion, and EMT progression in NSCLC cells both in vitro and in vivo. Among PDE1 family members, PDE1A shows the strongest effect on migration and EMT. The PDE1 inhibitor vinpocetine also suppresses migration and EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 are well-supported by multiple complementary assays: Transwell migration/invasion assays (Figures 2A-B, 2\u2014figure supplement 1A), wound healing assays (Figures 2C-D), western blot analysis of EMT markers (Figures 2E, 2F-H), and in vivo metastasis data (Figure 2I). The consistency across multiple experimental approaches and cell lines strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "PDE1A overexpression enhances migration, invasion, and EMT progression in NSCLC cells. Highly invasive NSCLC cells express higher levels of PDE1A, and PDE1A overexpression increases pulmonary metastatic nodules in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by Transwell assays (Figures 3A-B), wound healing assays (Figure 3C), western blot analysis of EMT markers (Figure 3D), comparison of invasive vs non-invasive cells (Figures 3E-G), and in vivo metastasis data (Figure 3H). These gain-of-function experiments complement the loss-of-function data and establish a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "PDE1A promotes angiogenesis in the tumor microenvironment. NSCLC cells overexpressing PDE1A enhance HUVEC migration, while PDE1A knockdown suppresses it. The exosome release inhibitor GW4869 reverses PDE1A-induced angiogenesis, suggesting exosome-mediated mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by GSEA analysis (Figure 4A), coculture wound healing assays (Figures 4C-D), GW4869 rescue experiments (Figure 4E), and in vivo blood vessel quantification (Figure 4F). The exosome inhibitor rescue experiment provides mechanistic insight, though the direct measurement of exosome release would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The cAMP inhibitor SQ22536 failed to rescue PDE1A knockdown-induced migration suppression, suggesting that PDE1A's canonical enzymatic function (cAMP hydrolysis) is not the primary mechanism driving metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by Transwell migration assay data with SQ22536 treatment (Figure 5\u2014figure supplement 1). This negative result is important as it redirects the mechanistic investigation away from canonical PDE1A function and toward alternative mechanisms, which is explored in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "PDE1A promotes NSCLC metastasis through activation of the STAT3 signaling pathway. PDE1A overexpression increases STAT3 phosphorylation, while knockdown or vinpocetine treatment suppresses it. STAT3 inhibition reverses PDE1A-induced migration and EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 are supported by bioinformatic pathway analysis (Figures 5A-B), western blot analysis of p-STAT3 (Figures 5C-E), and rescue experiments with STAT3 inhibition (Figures 5F-I). The rescue experiments with both siRNA and pharmacological inhibitor provide strong evidence for STAT3 as a downstream mediator. However, the lack of direct PDE1A-STAT3 interaction (C50) indicates an indirect mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "PDE1A does not directly interact with STAT3, and PDE1A is primarily localized in the cytoplasm of NSCLC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by immunoprecipitation data (Figure 5J) and subcellular fractionation (Figure 5K). These negative/localization results are important as they constrain the mechanistic model and motivate the search for intermediate factors connecting PDE1A to STAT3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "PDE1A physically interacts with YTHDF2, an m6A reader protein. YTHDF2 knockdown reverses PDE1A-induced migration and STAT3 activation. YTHDF2 is overexpressed in NSCLC and correlates with poor prognosis and with PDE1A expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 are supported by GO enrichment analysis (Figure 6B), silver staining and immunoprecipitation (Figures 6C-D), rescue experiments (Figures 6E-F), expression analysis (Figure 6\u2014figure supplement 1C-D), survival analysis (Figure 6\u2014figure supplement 1E), and correlation analysis (Figure 6G). The physical interaction is well-demonstrated, and functional validation through rescue experiments is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PDE1A and YTHDF2 cooperatively destabilize SOCS2 mRNA, a negative regulator of JAK/STAT signaling. Both proteins bind SOCS2 mRNA, and PDE1A knockdown increases SOCS2 mRNA stability and expression. YTHDF2 overexpression reverses the effect of PDE1A knockdown on SOCS2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C73 are supported by RNA-protein interaction prediction (Supplementary file 5), RIP assays (Figure 7B), mRNA stability assays (Figure 7C), and qRT-PCR analysis with rescue experiments (Figure 7D). The convergence of computational prediction, direct binding assays, stability measurements, and genetic rescue experiments provides strong mechanistic evidence. However, direct demonstration of m6A modification on SOCS2 mRNA would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C80"
+    ],
+    "result": "PDE1A is proposed as a novel prognostic predictor and potential therapeutic target for metastatic NSCLC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C8, and C80 are speculative conclusions based on the correlative and mechanistic data presented. While the correlation with prognosis is demonstrated (C1-C6) and the mechanistic role in metastasis is established (C20-C31), the therapeutic potential remains untested. No drug efficacy studies or clinical validation are provided. The claims are reasonable hypotheses but require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Bioinformatic analysis suggests PDE1A is involved in cell adhesion, migration, motility, angiogenesis, and vasculature development\u2014processes critical for metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are supported by GSEA and ORA analysis (Figure 1\u2014figure supplement 2). While these are computational predictions, they are subsequently validated experimentally through migration/invasion assays (C20-C31) and angiogenesis experiments (C32-C37), providing strong support for the initial bioinformatic predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124"
+    ],
+    "result": "Background information on NSCLC epidemiology, PDEs as therapeutic targets, PDE1 family characteristics, and YTHDF2 function in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C124 provide background context supported by appropriate citations to established literature. These claims establish the rationale for the study and are appropriately referenced. They are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C91",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C123",
+      "C125"
+    ],
+    "result": "Summary claims asserting novelty and significance of the PDE1A/YTHDF2/STAT3 axis in NSCLC metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C125 are summary statements supported by the collective experimental evidence presented in the manuscript. The novelty claims regarding PDE1 in NSCLC metastasis and the PDE1A-YTHDF2 interaction appear justified based on the literature citations and experimental validation. However, the claim of being \"first evidence\" (C78, C91) should be verified against the complete literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "PDE1A may regulate exosome biogenesis and release through Ca2+/calmodulin-dependent mechanisms, contributing to angiogenesis and tumor microenvironment effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C86 combine established knowledge about PDE1 and Ca2+ signaling (C81-C83, supported by citations) with a hypothesis about PDE1A's role in exosome biology (C84, C86). While the GW4869 rescue experiment (C35, C85) supports exosome involvement in PDE1A-mediated angiogenesis, direct measurement of exosome release, characterization of exosome content, or demonstration of Ca2+ changes with PDE1A manipulation are not provided. The mechanism remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Bioinformatic analysis reveals enrichment of IL-6/JAK/STAT3 signaling pathway in PDE1A co-expressed genes, identifying it as a downstream pathway with therapeutic relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by pathway enrichment analysis (Figure 5A) and established literature (C89). The computational prediction is subsequently validated experimentally through STAT3 phosphorylation studies (C43-C49), providing strong support for this pathway identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Discussion of YTHDF2 function as an m6A reader that can both destabilize and stabilize mRNAs, with acknowledgment that the mechanism of mRNA sorting requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 combine demonstrated findings (C90, C95 supported by experimental data) with established knowledge from literature (C93-C94) and acknowledgment of mechanistic gaps (C92, C96). The dual function of YTHDF2 is appropriately cited, and the authors appropriately acknowledge limitations in understanding the sorting mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C126"
+    ],
+    "result": "The study provides potential therapeutic strategies for treating metastatic NSCLC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C102 and C126 assert that the study provides therapeutic strategies, but no actual therapeutic interventions, drug development, or clinical validation studies are presented. While the mechanistic insights could inform future therapeutic development, no concrete therapeutic strategies are demonstrated. The vinpocetine experiments (C24, C45) show proof-of-concept for PDE1 inhibition but do not constitute a therapeutic strategy for clinical application.",
+    "result_type": "MAJOR"
+  }
+]

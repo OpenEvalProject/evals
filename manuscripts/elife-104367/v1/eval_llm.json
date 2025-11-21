@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PGE2 and TNF co-stimulation induces a distinct gene expression signature (TP signature) enriched in IL-1, Notch, and neutrophil chemokine pathways in primary human monocytes. This signature is enriched in IL1\u03b2+ RA and ICI-arthritis monocytic subsets and includes 395 co-stimulated genes distinct from canonical NF-\u03baB targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 and C72-C77 collectively demonstrate the identification and characterization of the TP signature through RNAseq analysis (n=3 donors). The data show PGE2 augments TNF-induced expression of 395 genes enriched in inflammatory pathways, while suppressing 86 genes including TNF and ISGs. RT-qPCR validation (n=5 donors) confirms key findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The TP-costimulated genes recapitulate 61% of fibroblast-augmented TNF-inducible genes and highly significantly mimic the RA C1 macrophage phenotype (p<10e-9), including pathogenic gene modules related to IL-1-NF-\u03baB, Jak-STAT signaling, neutrophil chemotaxis, and Notch pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 demonstrate strong correspondence between in vitro TP stimulation and previously characterized RA pathogenic macrophage phenotypes through comparative transcriptomic analysis. The hypergeometric p-value (8.36e-128) and Monte Carlo simulation (p<10e-9) provide robust statistical support for the overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C81",
+      "C12",
+      "C13"
+    ],
+    "result": "ICI-arthritis myeloid cells contain a distinct cluster (cluster 4, 15% of cells) expressing TP-costimulated genes and PGE2 targets. These cells map primarily onto four previously defined RA synovial monocytic clusters, with TP gene expression suggestive of a new functional monocyte subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C12-C13 are supported by scRNAseq analysis of 14,110 ICI-arthritis myeloid cells from 5 synovial fluids and 2 synovial tissues. Reference mapping and gene set activity analysis demonstrate correspondence to RA clusters and identify TP-expressing subsets, though the interpretation of a 'new functional subset' (C13) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C113",
+      "C115",
+      "C116"
+    ],
+    "result": "TP signature expression in RA myeloid cells aligns most closely with the IL1B+ FCN1+ HBEGF+ cluster and is absent from IFN signature-expressing STAT1+ CXCL10+ cells, demonstrating mutually exclusive expression patterns of TP and IFN signatures in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C113, C115-C116 are supported by gene set activity analysis using AUCell on published RA scRNAseq data (Zhang et al., 2023) and the study's ICI-arthritis data. The mutually exclusive expression patterns provide in vivo validation of the in vitro findings, though reliance on reference mapping has inherent limitations acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "TP signature genes are activated by cooperation of PGE2-induced AP-1, CEBP, and NR4A family transcription factors with TNF-induced NF-\u03baB activity, as demonstrated by ATACseq analysis showing increased chromatin accessibility and TF occupancy at co-induced peaks enriched for AP-1 and CEBP motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C89-C96 are supported by integrated ATACseq analysis (n=3 donors) using complementary approaches (HOMER motif analysis, ChromVAR, TOBIAS footprinting). The data consistently show cooperation between PGE2-induced TFs (AP-1, CEBP, NR4A) and TNF-induced NF-\u03baB, with de novo enhancer formation at co-stimulated loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Selective EP2 and EP4 receptor agonists and dibutyryl-cAMP recapitulate both pro-inflammatory (augmenting IL1B, IL1A, STAT4, CXCL1) and anti-inflammatory (suppressing CXCL10) effects of PGE2, implicating cAMP signaling in both responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by RT-qPCR analysis (n=3 donors) showing that selective EP2/EP4 agonists and dibutyryl-cAMP reproduce the dichotomous effects of PGE2 on TNF-induced gene expression. This mechanistically links cAMP signaling to both pro- and anti-inflammatory outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "IFN-\u03b3 suppresses induction of AP-1, CEBP, and NR4A activity to ablate induction of IL-1, Notch, and neutrophil chemokine genes, suppressing approximately 27% of synergistically induced TP genes including IL1B, IL1A, CXCL1/2/3/5/8, and HEY1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 and C97-C99 are supported by RNAseq (n=3 donors) and RT-qPCR analysis showing IFN-\u03b3 essentially completely abolishes induction of key TP genes. The selective suppression of ~27% of TP genes while sparing others (e.g., STAT4) demonstrates specificity of the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C100",
+      "C101"
+    ],
+    "result": "IFN-\u03b3 promotes expression of distinct inflammatory genes such as TNF and T cell chemokines like CXCL10 that are suppressed by PGE2, demonstrating that IFN-\u03b3 inhibits select inflammatory pathways while promoting others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C100-C101 are supported by RNAseq data showing IFN-\u03b3 increases expression of genes suppressed by PGE2, including TNF and ISGs like CXCL10. This demonstrates opposing regulation by IFN-\u03b3 and PGE2 of different TNF-induced gene sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "IFN-\u03b3 minimally affects the TNF-induced NF-\u03baB response but regulates the PGE2 response by modulating PGE2-induced AP-1 and CEBP factors, broadly suppressing PGE2-responsive genes including those important in RA pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by interaction analysis of RNAseq data showing IFN-\u03b3 does not alter core NF-\u03baB target genes (IC4) but suppresses PGE2-induced genes. This mechanistic insight is consistent with the chromatin accessibility data showing IFN-\u03b3 suppression of AP-1 and CEBP activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "IFN-\u03b3 suppresses 72% of PGE2-induced ATACseq peaks enriched in AP-1 and CEBP motifs, inhibits PGE2-induced AP-1, NR4A1/2, NFE2L2, and MAF activity, and remodels CEBP family member expression with opposing regulation of CEBPA, CEBPD, and CEBPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 are supported by ATACseq analysis (n=3 donors) using multiple complementary approaches (HOMER, ChromVAR, TOBIAS). The data consistently show IFN-\u03b3 suppression of PGE2-induced chromatin accessibility and TF activity. The CEBP remodeling claim (C112) is somewhat speculative but supported by differential expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The opposing cross-regulation of PGE2 and IFN signaling observed in vitro is reflected in vivo by mutually exclusive expression of TP and IFN signatures in different RA and ICI-arthritis monocyte clusters, revealing a novel regulatory axis determining the balance between two distinct TNF-induced inflammatory programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 integrate in vitro mechanistic findings with in vivo scRNAseq data showing mutually exclusive TP and IFN signature expression in distinct cell clusters. This provides strong support for the physiological relevance of the regulatory axis, though causality cannot be definitively established from the correlative in vivo data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "IL-1\u03b2-expressing macrophages have been described in RA, ICI-arthritis, and pancreatic cancer and are proposed to be pathogenic. These cells express genes cooperatively induced by PGE2 and TNF signaling, but the mechanisms inducing them were not previously known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 accurately summarize prior literature and establish the knowledge gap addressed by the study. These are background claims supported by citations and represent the scientific context rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PGE2 is a lipid mediator with homeostatic and inflammatory functions that signals via EP2/EP4 receptors and cAMP to activate PKA and CREB. PGE2 has generally been considered immunosuppressive, inhibiting Th1 cells, IFN-\u03b3 production, and inflammatory genes like TNF, IL12B, and IFNB in myeloid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C50 accurately summarize established knowledge about PGE2 biology with appropriate citations. These background claims provide context for the study's findings but do not represent novel results from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Previous studies have shown that PGE2-TNF cooperation induces IL-1\u03b2+ macrophages in pancreatic cancer, that RA synovial macrophage cluster 1 is pathogenic and IL1B-high, and that this phenotype can be modeled by monocyte-fibroblast coculture with TNF in a PGE2-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 accurately summarize prior literature establishing the relevance of PGE2-TNF crosstalk in pathogenic macrophage phenotypes. These background claims with appropriate citations provide the foundation for the current study's mechanistic investigations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ICI therapy is highly effective but causes immune-related adverse events in >80% of patients, including inflammatory arthritis in ~4% that can be severe and persistent. ICI-arthritis shows similarities to RA including IL-1\u03b2-hi myeloid subsets and elevated synovial fluid levels of IL-1\u03b2, IL-6, IFN-\u03b3, and IL-17A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 accurately summarize established knowledge about ICI-arthritis with appropriate citations. These background claims establish the clinical relevance and rationale for studying ICI-arthritis myeloid cells in comparison to RA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C117",
+      "C119",
+      "C124",
+      "C130"
+    ],
+    "result": "The authors speculate that the TP signature may identify a functional monocyte subset not well captured by previous clustering, that monocyte colocalization with T cells versus fibroblasts determines IFN versus TP phenotype, and that distinct RA patient subsets may be differentially responsive to therapeutics based on fibroblast/PGE2 versus T cell/IFN-\u03b3 dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114, C117, C119, C124, C130 represent speculative interpretations and hypotheses for future testing. While these are reasonable hypotheses based on the data, they lack direct experimental validation and represent proposed models rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The discussion contextualizes findings within established knowledge about cellular sources of PGE2 (stromal cells) and IFN-\u03b3 (T cells), the role of macrophages as TNF producers in RA, and the variable efficacy of TNF, IL-6, and IL-1 blockade therapies in RA patient subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C129 accurately summarize established knowledge with appropriate citations to provide context for interpreting the study's findings. These are background claims that support the discussion's interpretation of results rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

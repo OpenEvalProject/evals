@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Low SNP density per genetic unit, resulting from high recombination rates relative to mutation rates, significantly affects IBD detection accuracy. Simulations show that P. falciparum-like genomes have ~25 SNPs/cM compared to ~1660 SNPs/cM in human-like genomes. As recombination rate increases, false negative and false positive rates increase for most IBD callers, with the exception of isoRelate which performs better at lower marker densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 are well-supported by simulation data shown in Figure 2. The inverse correlation between recombination rate and SNP density is demonstrated (C15), specific density values are provided (C16-C17), and the impact on IBD caller error rates is documented with appropriate figures (C18-C20). The conclusion about reliability (C21) follows logically from the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Baseline benchmarking shows that hmmIBD has relatively low false negative/positive error rates and less biased relatedness estimates by default, while isoRelate and human-oriented callers (hap-IBD, Refined IBD, phased IBD) exhibit high false negative rates and varying false positive rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by data in Figure 3 and Figure 3\u2014figure supplement 1. The comparison of error rates across different IBD callers is clearly documented with appropriate metrics (FN/FP rates and pairwise total IBD). The findings are consistent across the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Parameter optimization substantially improves IBD detection accuracy for human-oriented callers (hap-IBD, Refined IBD, phased IBD). For hap-IBD, optimizing the min-marker parameter to 70 dramatically reduces false negative rates and balances error rates, leading to more accurate relatedness estimates. However, hmmIBD and isoRelate show minimal improvement with parameter optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are well-supported by data in Figure 4 and supplements. The dramatic improvement in error rates and relatedness estimates after parameter optimization is clearly demonstrated for human-oriented callers (C26-C28), while the lack of improvement for hmmIBD and isoRelate is also documented (C29). The grid search methodology is described in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "For IBD-based selection signal detection, most callers capture the majority of simulated selection signals except Refined IBD (detecting only 2-3 of 14 loci). isoRelate shows increased false positives/low signal-to-noise ratios. Most callers accurately recapitulate simulated population structure, but isoRelate generates many small groups likely due to high false negative rates for short IBD segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by data in Figure 5\u2014figure supplement 1. The selection detection performance (C30-C31) and population structure inference (C32-C33) are documented with appropriate metrics (peak detection, adjusted Rand indices). The mechanistic explanation for isoRelate's poor performance (C33) is reasonable given its documented high FN rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "For IBD-based effective population size (Ne) estimation, most IBD callers produce Ne estimates with wild oscillations and significant deviations from truth for older generations, likely due to underestimation of population-level total IBD for short segments. In contrast, hmmIBD generates highly accurate Ne estimates comparable to true IBD, with relatively unbiased estimates of both Ne and population total IBD. Removing IBD segments with TMRCA < 1.5 generations can mitigate oscillation problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are well-supported by data in Figure 5 and supplements. The poor performance of most callers (C34) and superior performance of hmmIBD (C35, C37, C39) are clearly demonstrated. The mechanistic explanation involving underestimation of short IBD segments (C36) is supported by Figure 5\u2014figure supplement 2. The sensitivity of Ne estimates to IBD quality (C38) and the benefit of TMRCA filtering (C40) are appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Validation with empirical data from Southeast Asia confirms simulation findings. With optimized parameters, most callers (except Refined IBD) detect known selection signals associated with drug resistance. hmmIBD produces more realistic Ne estimates mirroring expected malaria reduction, while other callers show unrealistic oscillations. Population structure inference reveals expected continental patterns, though isoRelate generates many small groups in high-transmission African settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by empirical data in Figure 6. Known selection signals are appropriately cited (C42), and the performance differences between callers are documented (C41, C43-C45). The population structure findings (C46-C47) are consistent with prior work and the simulation results. The validation strengthens the simulation-based conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Computational efficiency analysis shows that probabilistic inference algorithms (isoRelate, Refined IBD, hmmIBD) are about two orders of magnitude slower than IBS-based or PBWT-based algorithms (hap-IBD, phased IBD) in single-thread mode. Refined IBD has the highest memory consumption, with hmmIBD being ~10 times more efficient. hmmIBD currently only supports single-thread computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by data in Figure 7 and Figure 7\u2014figure supplement 1. Runtime and memory usage comparisons are appropriately measured and documented. The limitation of hmmIBD to single-thread computation (C50) is stated as a known implementation detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study concludes that low marker density per genetic distance significantly affects IBD detection accuracy, parameter optimization enhances accuracy for Plasmodium genomes, and hmmIBD is generally recommended for IBD estimation in Plasmodium genomes when phased genotype data are available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 represent the main conclusions and are well-supported by the comprehensive simulation and empirical analyses presented throughout the manuscript. The recommendation for hmmIBD (C53) is justified by its superior performance in accuracy-sensitive analyses, particularly Ne estimation, despite computational efficiency limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Malaria poses a significant global public health challenge with 263 million cases and 597,000 deaths in 2023. Malaria reduction has slowed due to antimalarial drug resistance and lack of highly efficacious vaccines and surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 provide background context supported by WHO citation (C1) and general knowledge (C2). These are standard statements about the malaria situation and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Identity-by-descent (IBD) is an essential tool in population genomics used to estimate genetic relatedness, positive selection, effective population size, fine-scale population structure, and migration patterns. In high transmission settings, rapid decreases in genetic diversity and Ne may indicate successful malaria interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 provide background on IBD applications, all supported by appropriate citations to published research. These establish the importance and utility of IBD methods in malaria genomics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "P. falciparum genomes recombine ~70 times more frequently per unit physical distance than human genomes while sharing similar mutation rates (~10^-8 per bp per generation). This results in P. falciparum having tens of thousands of common SNPs compared to millions in humans, with per-cM SNP density potentially two orders of magnitude lower than humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 establish key genomic differences between P. falciparum and humans that motivate the study. All claims are supported by appropriate citations to published research (C9-C12) or logical inference from cited data (C13-C14). These differences are central to understanding why IBD detection may be challenging in P. falciparum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The effective population size of humans has increased rapidly in recent history while P. falciparum Ne is decreasing in regions like Southeast Asia and South America due to malaria elimination efforts. The recombination rate is 6.67\u00d710^-7 per bp per generation for P. falciparum and 1.0\u00d710^-8 for humans, with mutation rates of 1.0\u00d710^-8 for both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 provide demographic and evolutionary parameters used in simulations, all supported by appropriate citations. These parameters are essential for the simulation design and are well-established in the literature.",
+    "result_type": "MINOR"
+  }
+]

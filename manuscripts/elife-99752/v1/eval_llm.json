@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Stationary phase E. coli BW25113 and nine clinical isolates display bimodal accumulation of tachyplesin-NBD at concentrations \u226516 \u03bcg/mL, with distinct low and high accumulator subpopulations. This bimodal distribution is also observed in P. aeruginosa but not in K. pneumoniae or S. aureus. The bimodal distribution is specific to tachyplesin-NBD and not observed with other AMPs tested (arenicin-NBD, polymyxin-B-NBD, octapeptin-NBD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C29 provide comprehensive flow cytometry data showing dose-dependent bimodal accumulation patterns across multiple bacterial strains and species. The data are internally consistent, include appropriate controls (untreated cells, different AMPs), and demonstrate reproducibility across clinical isolates with diverse genetic backgrounds. The specificity to certain AMPs and bacterial species strengthens the validity of the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Low accumulators retain tachyplesin-NBD primarily on bacterial membranes, while high accumulators accumulate the peptide intracellularly. Low accumulators at 37\u00b0C exhibit fluorescence patterns similar to all cells treated at 0\u00b0C (where membrane transport is inhibited). High accumulators show significantly higher membrane-to-cell center fluorescence ratios (p<0.0001), and proteinase K treatment does not reduce fluorescence in high accumulators, confirming intracellular localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 provide multiple complementary lines of evidence (temperature controls, proteinase K digestion, microfluidics microscopy, confocal microscopy) that converge on the same conclusion about differential localization. The statistical analysis is appropriate (Mann-Whitney U test, p<0.0001), and the experimental controls (0\u00b0C treatment, proteinase K) are well-designed to distinguish membrane-bound from intracellular peptide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Low accumulators maintain membrane integrity and survive tachyplesin treatment, while high accumulators exhibit membrane damage and significantly reduced survival. Low accumulator survival is not significantly different from untreated controls, whereas high accumulator survival is significantly lower (p<0.0001). PI staining correlates strongly with tachyplesin-NBD accumulation (r\u00b2=0.70, p<0.0001), and the proportion of low accumulators correlates linearly with population survival (r\u00b2=0.98, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 demonstrate a clear mechanistic link between accumulation patterns, membrane integrity, and survival through multiple independent assays (CFU counts, PI staining, flow cytometry). The statistical analyses are robust with strong correlations and appropriate significance testing. The use of fluorescence-activated cell sorting followed by viability assays provides direct evidence linking phenotype to outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Transcriptomic analysis reveals 1,563 differentially expressed genes between low and high accumulators, organized into five distinct clusters. Low accumulators show downregulation of genes involved in protein synthesis, energy production, and gene expression (cluster 2), and upregulation of genes involved in organic substance transport (cluster 4), including efflux pump components (emrK, mdtM, mdtE, mdtF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 present comprehensive transcriptomic data with appropriate statistical methods (DESeq2, edgeR, FDR correction) and clear clustering analysis. The PCA shows distinct separation between groups, and gene ontology enrichment provides biological context. However, the authors acknowledge that these transcriptomic differences could be either causative or consequential, which is an important limitation that prevents stronger mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Low accumulators display transcriptomic and lipidomic changes consistent with multiple resistance mechanisms: downregulation of clsB (cardiolipin synthase), dramatic reduction in phosphatidylglycerol (37% to 3%), differential expression of genes associated with OMV secretion (ompA, ompC, degP, mcrB, tolA, tolB, pal downregulated; nlpA, lysS, waaC, waaF upregulated), and upregulation of peptidases and proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 integrate transcriptomic and lipidomic data to identify multiple potential resistance mechanisms. The lipidomic analysis using UHPLC-Q-TOF-MS provides quantitative evidence for membrane composition changes that align with transcriptomic predictions. The identification of genes associated with OMV secretion and proteolytic activity is supported by appropriate citations to prior literature establishing these connections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Transcription factor activity inference identifies 126 TFs with differential activity between low and high accumulators. Among the top ten TFs with higher activity in low accumulators, four regulate transport systems: Nac, EvgA, Cra, and NtrC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 use computational inference (VIPER) to predict TF activities from gene expression data, which is an indirect measure. While the analysis is methodologically sound and uses established tools, the authors explicitly state that 'further experiments should be carried out to directly measure the activity of these TFs.' Without direct experimental validation, these remain computational predictions rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Time-course analysis reveals that the entire E. coli population initially accumulates tachyplesin-NBD to high levels (median 15,000 a.u. at 15 min), but a subpopulation subsequently reduces intracellular accumulation (median 3,600 a.u. at 60 min) while the other subpopulation continues to accumulate the drug (median increasing from 15,000 to 32,000 a.u. over 120 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide critical kinetic data demonstrating that low accumulation is an induced response rather than a pre-existing phenotype. The time-course measurements are well-controlled and show clear temporal dynamics. This finding is important for distinguishing between different mechanisms of phenotypic resistance and is supported by multiple time points with consistent trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C90"
+    ],
+    "result": "Deletion of efflux pump components (\u0394acrA\u0394tolC) or quorum sensing regulators (\u0394qseB, \u0394qseB\u0394qseC) dramatically reduces or eliminates low accumulators. The \u0394qseB and \u0394qseB\u0394qseC mutants display only high accumulators, while \u0394acrA\u0394tolC shows reduced numbers of low accumulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C90 provide direct genetic evidence linking efflux systems to the low accumulator phenotype. The use of gene deletion mutants is appropriate, and the results are consistent with the known roles of AcrAB-TolC in AMP resistance (supported by citations C69). The complete elimination of low accumulators in qseBC mutants provides strong evidence for the regulatory role of this two-component system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C102"
+    ],
+    "result": "Efflux pump inhibitors sertraline (30 \u03bcg/mL) and verapamil (50 \u03bcg/mL) prevent the emergence of low accumulators. Sertraline cotreatment with tachyplesin-NBD increases both intracellular accumulation and PI-stained cells, and reduces survival by fivefold compared to tachyplesin-1 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 and C102 demonstrate that pharmacological inhibition of efflux pumps prevents the low accumulator phenotype and enhances tachyplesin efficacy. The experiments include appropriate controls (sertraline alone shows no effect on survival) and multiple readouts (accumulation, PI staining, CFU counts). However, C103 notes an important limitation: the sertraline concentration used exceeds clinically achievable plasma levels, which limits immediate translational potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Low tachyplesin-NBD accumulators display lower metabolic activity as measured by resorufin fluorescence, while high accumulators display high resorufin fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 uses resazurin reduction as a proxy for metabolic activity, but the experimental design includes CCCP to minimize efflux differences. However, CCCP disrupts multiple cellular processes beyond efflux, and the authors acknowledge that 'some variability in efflux may still persist.' The correlation between low accumulation and low metabolism is interesting but requires additional validation with alternative metabolic assays to confirm this is not an artifact of differential efflux of resorufin itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Nutrient supplementation (glucose and casamino acids) or exponential growth phase prevents the emergence of low accumulators and enhances tachyplesin efficacy. Stationary phase cells in nutrient-supplemented M9 show unimodal high accumulation (median 35,000 a.u.), and exponential phase cells show minimal low accumulators (10% vs 43% in stationary phase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 demonstrate that metabolic state influences the low accumulator phenotype. The experiments compare multiple conditions (stationary vs exponential phase, with/without nutrients) and show consistent effects on both accumulation patterns and survival. This provides important context for understanding when the phenotype emerges and suggests metabolic interventions as potential therapeutic strategies, though the authors appropriately note limitations of nutrient supplementation in clinical contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "There is a strong correlation between tachyplesin intracellular accumulation and efficacy. After initial homogeneous accumulation, tachyplesin is retained intracellularly by non-surviving bacteria and only on membranes of surviving bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 synthesize multiple lines of evidence (accumulation kinetics, localization studies, survival assays, PI staining) to establish the central finding of the paper. The correlation is supported by quantitative data (r\u00b2=0.98 between low accumulator proportion and survival, r\u00b2=0.70 between accumulation and PI staining). This represents a well-supported mechanistic model linking accumulation, localization, and outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C89",
+      "C91"
+    ],
+    "result": "This study reports the first observation of phenotypic resistance to tachyplesin within isogenic E. coli and P. aeruginosa populations, characterized by bimodal accumulation patterns. Low accumulators emerge subsequent to initial high accumulation, demonstrating upregulation of MFS, ABC, and RND efflux pumps with enhanced survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C89-C91 establish the novelty and significance of the findings. The claim of 'first observation' is supported by the absence of prior reports in the cited literature. The characterization is comprehensive, including accumulation patterns, transcriptomics, genetic validation, and survival data. The demonstration that low accumulators emerge after initial high accumulation (C91) is particularly important for establishing this as an induced response rather than pre-existing heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Transcriptomic analysis reveals upregulation of the arn operon in low accumulators, which is involved in biosynthesis and attachment of positively charged L-Ara4N to lipid-A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 identifies a specific mechanism (LPS modification) that could reduce tachyplesin binding. The transcriptomic evidence is supported by appropriate citation (Yan et al., 2007) establishing the function of the arn operon. This finding aligns with the known mechanism of AMP resistance through charge modification of the outer membrane, though direct measurement of L-Ara4N levels would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The QseBC two-component system plays an important role in controlling tachyplesin efflux. \u0394qseB\u0394qseC mutants display only high accumulators, and QseBC was previously inferred to mediate resistance to tachyplesin analogues by upregulating efflux genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 provide both genetic evidence (deletion mutants) and literature support (Yu et al., 2020) for the role of QseBC in tachyplesin resistance. The complete elimination of low accumulators in the double mutant is striking and suggests QseBC is necessary for the phenotype. However, the authors appropriately note that QseBC deletion may have pleiotropic effects beyond efflux regulation, and the mechanism may involve regulation of AcrA/TolC or other components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C23",
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background claims establishing the context for AMR, AMPs, tachyplesin properties, mechanisms of AMP action and resistance, and prior work on phenotypic resistance and efflux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C16, C23, C81-C83, C86-C88, C92-C93, C95-C98, C101, C103-C106) provide essential background and context through citations to established literature. They are appropriately referenced and accurately represent prior work. These are standard background claims that frame the research question and interpret the findings in context of existing knowledge.",
+    "result_type": "MINOR"
+  }
+]

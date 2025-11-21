@@ -1,0 +1,560 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Deep full-length single-cell RNA-sequencing of 794 cells from human fetal retinae (FW13-19) identified six major cell clusters using low-resolution Louvain clustering: one RPC/M\u00fcller glia cluster expressing LHX2, VSX2, SOX2, and SLC1A3, and five photoreceptor clusters expressing OTX2 and CRX with cluster-specific rod and cone gene expression. The immature photoreceptor precursor (iPRP) cluster intermixed with RPC/MG and was predominantly THRB+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C26 describe the experimental approach and initial clustering results. The methodology is clearly described (C1, C21), and the clustering results (C22-C26) are supported by quantitative data (794 cells, specific gene expression patterns) and visualized in figures. The findings are internally consistent and represent standard scRNA-seq analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Two rod clusters were identified as early-maturing (ER) and late-maturing (LR) rods based on differential expression of phototransduction genes (GNAT1, CNGB1, PDE6G, GNGT1, RHO). Late rods showed upregulation of GNB1, SAMD7, NT5E and downregulation of CRABP2, DCT, FABP7, with enrichment for photoreceptor and light sensing ontologies. Few rods were detected at FW13, while both ER and LR were present from FW15-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe rod maturation states with specific gene expression patterns and ontology enrichments. The age-related detection pattern (C29) corroborates prior studies. The differential expression analysis (C30) and ontology enrichment (C31) provide converging evidence for distinct rod maturation states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Cones segregated into distinct S-cone and L/M-cone clusters with differential expression of cone subtype markers (OPN1SW, THRB), previously identified S-cone genes (CCDC136, UPB1), and novel S-cone genes (MEGF10, NRXN3, ACKR3). L/M cones showed enrichment for protein translation ontologies due to increased ribosomal protein gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe cone subtype identification with specific marker genes. The identification of novel S-cone markers (C34) is supported by differential expression data, while the validation of known markers (C33) provides internal consistency. The ontology enrichment for L/M cones (C35) is mechanistically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "L/M cones segregated into early-maturing (366 cells) and late-maturing (5 cells) populations based on increased expression of cone phototransduction genes (OPN1LW, PDE6H, GUCA1C) in the latter. Late L/M cones showed upregulation of M-opsin genes, TTR, PCP4, and MYL4. Age-related differences in L/M cone maturation were observed across FW13-19 retinae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C40 describe L/M cone maturation states, but the late-maturing population consists of only 5 cells (C36), which is insufficient for robust statistical inference. While the gene expression patterns are consistent with maturation (C37, C39), the small sample size limits confidence in these findings. The age-related differences (C38) are inferred from UMAP positioning rather than direct statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Comparison with a prior 3' snRNA-seq study (Zuo et al., 2024) of ~220,000 retinal cells from pcw 8-23 revealed similar distinctions between cone/rod precursors and mature cones/rods, with many overlapping differentially expressed genes despite methodological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 provide external validation by comparing results with a large independent dataset. The consistency of findings across different methodologies (full-length vs 3' scRNA-seq) and sample sizes strengthens confidence in the identified cell states and marker genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SCENIC analysis identified cluster-specific transcription factor regulons including RPC/MG-specific (E2F2, E2F3, VSX2, PAX6), pan-photoreceptor (NEUROD1, OTX2, CRX), rod-specific (NRL), and L/M cone-specific (THRB, ISL2) regulons. Late-maturing rods and cones showed increased NRL/CRX/ATF4/LHX3 and decreased HMX1/RAX activities (p<0.0005). No S-cone-specific regulons were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 describe SCENIC regulon analysis with statistical support (p<0.0005 for regulon differences, C45). The identification of cell-type-specific regulons (C44) is consistent with known biology, and the lack of S-cone-specific regulons (C48) aligns with the default photoreceptor state hypothesis. The iPRP transitional nature (C47) is supported by regulon expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Cone and rod precursors co-expressed NRL, THRB, and RXRG RNAs, with mean NRL expression only 4.3-fold higher in ER vs LM, THRB 5.0-fold higher in LM vs LR, and RXRG 4.3-fold higher in LM vs ER. This co-expression was unexpected given the rod-specific NRL regulon activity and cone-specific THRB regulon activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 describe unexpected RNA co-expression patterns with quantitative fold-change data. The modest fold-changes (4.3-5.0-fold) contrast with the cell-type-specific regulon activities, suggesting post-transcriptional regulation. The observation is internally consistent and sets up the subsequent isoform analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Full-length scRNA-seq revealed that L/M cones preferentially express novel truncated NRL (Tr-NRL) isoforms using an alternative P2 promoter and exon 1T, predicted to encode a protein lacking the transactivation domain. The FL-NRL:Tr-NRL ratio was 2.9:1 in early rods and 2.2:1 in late rods, versus 0.67:1 in L/M cones. RNA FISH validated higher Tr-NRL exon 1T expression in cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 describe novel NRL isoforms with multiple lines of evidence: computational isoform assignment (C56-C59), read coverage analysis (C60-C61), and RNA FISH validation (C62). The convergence of short-read sequencing, read mapping, and in situ validation provides strong support for differential isoform expression between cones and rods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Long-read nanopore sequencing of 5' RACE products from 23 ER and 21 LM cells revealed multiple NRL isoforms including FL-NRL, Tr-NRL, DD10, and variants with alternative splicing. ER libraries had higher FL-NRL exon 1/2 reads while LM libraries had higher Tr-NRL exon 1T reads. Alternative splicing within exon 2 was more prevalent in LM cells (23% vs 6%, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide long-read validation of NRL isoforms with statistical support (p<0.0001 for exon 2 splicing differences, C67). The long-read data corroborates short-read findings and reveals additional complexity. The sample sizes (23 ER, 21 LM cells) are adequate for this validation approach, though larger samples would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Despite predicted Tr-NRL transcript expression in retinoblastoma cells (0.73:1 FL:Tr ratio), Tr-NRL protein was not detected by immunoblot in RB31 cells or by immunofluorescence in lentivirally transduced fetal retina cones, suggesting poor translation or instability. However, in luciferase assays, Tr-NRL suppressed FL-NRL activation of a PDE6B promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 address Tr-NRL protein expression and function. The lack of protein detection (C70-C71) despite RNA expression suggests post-transcriptional regulation (C72). The functional assay (C73) demonstrates that Tr-NRL can suppress FL-NRL when expressed, providing mechanistic insight. The convergence of negative protein detection and positive functional data is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "THRB transcript isoforms showed cell-type-specific expression, with TR\u03b22 predominating in L/M cones and TR\u03b21 in early rods. Late rods showed premature transcription termination (PTT) in introns 4 and 6 (p\u22640.001), limiting full-length TR\u03b2 expression. Long-read sequencing corroborated PTT events and revealed a novel transcription-terminating exon in TR\u03b22 transcripts. 3' UTR expression appeared independent of protein-coding sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 describe THRB isoform regulation with statistical support (p\u22640.001 for PTT, C77) and long-read validation (C79-C80). The identification of PTT as a regulatory mechanism is well-supported by converging evidence from short-read, long-read, and RACE analyses. The 3' UTR finding (C81) is novel and mechanistically interesting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "For RXRG, 5' RACE and long-read sequencing did not support differential isoform expression between cones and rods. Quantitative imaging revealed ~3.5-fold higher RXR\u03b3 protein in cones compared to rods, clarifying that RXRG expression is moderately higher in cones without cell-type-specific isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 provide a negative result for RXRG isoform differences, supported by multiple approaches (5' RACE, long-read sequencing, quantitative imaging). The protein-level validation (C84) confirms the RNA-level difference is functionally relevant. This negative finding is important for distinguishing RXRG regulation from NRL and THRB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "High-resolution clustering (level 1.6) subdivided the RPC/MG cluster into separate RPC and M\u00fcller glia populations, divided L/M cones into four subgroups (LM1-4), and split the iPRP cluster into immature cone precursors (iCPs) and immature rod precursors (iRPs). RPCs showed increased cell cycle gene expression and G2/M checkpoint/E2F target ontologies, while MG lacked these features. The study did not distinguish PRPCs from NRPCs, likely due to RPC underrepresentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 describe high-resolution clustering with validation through marker gene expression (C89-C90) and ontology enrichment (C91). The distinction between RPCs and MG is well-supported. The limitation regarding PRPC/NRPC distinction (C92) is appropriately acknowledged with a plausible explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "RPC-localized iCP and iRP cells lacked cell cycle gene expression, showed minimal RPC markers (PAX6, LHX2, VSX2), and had increased photoreceptor determinants (OTX2, CRX), consistent with being immediately post-mitotic. iCPs upregulated ONECUT1, THRB, and GNAT2, while iRPs trended toward higher NR2E3 (p=0.054). No genes were differentially expressed genome-wide (Padj<0.05), likely due to small cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 describe immediately post-mitotic photoreceptor precursors with RNA velocity support (C94) and gene expression patterns (C95-C101). The lack of genome-wide differential expression (C102) is appropriately attributed to limited statistical power. The trends in marker gene expression (C97-C98, C101) are consistent with the proposed cell identities despite not reaching strict significance thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Analysis of the Zuo et al. 3' snRNA-seq dataset revealed that cone NRPCs and earliest cone precursors (pcw 8-10) had high ONECUT1/THRB and minimal NR2E3, while rod NRPCs had high NRL/NR2E3. Early cone precursors (pcw 8-13) expressed THRB without NR2E3, and early rod precursors (pcw 10-15) expressed NR2E3 without THRB, similar to RPC-localized iCPs/iRPs in the current study. This suggests deep full-length scRNA-seq enabled more sensitive detection and improved discrimination of immature precursor states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 provide external validation through comparison with a large independent dataset. The consistency between the current study's iCP/iRP populations and early precursors in the Zuo dataset (C105-C107) supports the biological validity of these cell states. The claim of improved sensitivity (C108) is supported by the comparison but would benefit from more direct quantitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "SCENIC analysis of high-resolution clusters showed MG was best specified by PAX6 and SOX9 regulons, while RPCs were specified by E2F2 and E2F3. These regulons were low/absent in iCPs and iRPs, suggesting abrupt cell state change. RPC-localized iCPs had greater THRB regulon activity than iRPs, while iRPs had higher NRL regulon activity (p<0.05). iCPs showed higher pan-photoreceptor regulon activities (LHX3, OTX2, NEUROD1) than iRPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 describe regulon dynamics during the RPC-to-photoreceptor transition with statistical support (p<0.05, C112). The abrupt loss of RPC/MG regulons (C111) and differential activation of lineage-specific regulons (C112) provide mechanistic insight into fate commitment. The higher pan-photoreceptor regulon activity in iCPs (C113) is an interesting finding that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The iCP cluster included cells in a UMAP 'bridge region' between early cones and rods, with many cells expressing both cone markers (GNAT2, THRB) and rod markers (GNAT1, NR2E3). However, bridge region iCP cells had low NRL regulon z-scores and high THRB z-scores. RNA FISH/IF analysis showed that most cells with GNAT2/NR2E3 RNA co-expression had high RXR\u03b3, no NR2E3 protein, and outermost NBL positions, suggesting they are cone-directed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 describe a 'bridge region' with apparent cone/rod marker co-expression. The regulon analysis (C118) and RNA FISH validation (C119-C120) provide converging evidence that these cells are cone-directed despite expressing some rod marker RNAs. The integration of scRNA-seq and spatial validation strengthens this interpretation, though the biological significance of transient rod marker RNA expression in cones remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Analysis of the Zuo et al. 3' snRNA-seq dataset confirmed that earliest cone precursors were NR2E3-negative and earliest rod precursors were THRB-negative, but starting at pcw 15, later cone precursors expressed NR2E3 and later rod precursors expressed THRB. GNAT2 expression remained sparse in rod precursors at all ages. This supports the notion that cone/rod-related RNA co-expression begins in already fate-determined precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 provide temporal resolution of marker gene co-expression using an independent large dataset. The finding that co-expression occurs after initial fate determination (C125) is supported by the sequential appearance of cross-lineage markers (C121) and the spatial separation in UMAP space. This resolves the apparent contradiction from the 'bridge region' analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "iCP marker genes showed distinct expression patterns: CHRNA1 in bridge region iCP/ER cells, ONECUT1 biased to cone-directed iCPs, CTC-378H22.2 in THRB+/GNAT2+ iCPs, S100A6 widely expressed, ATOH7 in RPC-localized/bridge iCPs, and DLL3 broadly expressed. Analysis of the Zuo dataset showed these markers were most highly expressed in youngest/earliest precursors with distinct spatiotemporal patterns, suggesting spatiotemporally distinct roles in cone precursor differentiation. RNA FISH in FW12 retina confirmed highest CHRNA1 in peripheral NRL+ rods and RXR\u03b3+ cones (p<0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C136 characterize iCP marker genes with validation in an independent dataset (C132-C134) and spatial validation (C136). The distinct spatiotemporal expression patterns (C134-C135) are well-documented, though the functional significance (C135) is inferred rather than directly tested. The statistical support for CHRNA1 spatial expression (C136, p<0.005) strengthens this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "OLIG2 and LHX9 regulons were active in RPCs and in a narrow zone of ONECUT1+ iCPs positioned immediately before THRB regulon upregulation, despite sparse OLIG2 RNA expression. This indicates these regulons are active in and potentially relevant to human L/M cone fate determination in a post-mitotic iCP subpopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 identify OLIG2/LHX9 regulon activity in a specific iCP subpopulation. The discordance between regulon activity and RNA expression (C137) is interesting and suggests post-transcriptional regulation or target gene expression without high transcription factor levels. The inference of relevance to fate determination (C138) is reasonable but would benefit from functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "L/M cone clusters LM1-4 were distinguished by sequential increasing expression of ACOT7, RTN1, PDE6H, OLAH, and NPFF, but showed only subtle differences in the three highest specificity regulons (THRB, ISL2, LHX3). The lack of cluster-specific marker genes and regulons suggests LM1-4 represent different stages of a graded maturation process rather than discrete cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 describe L/M cone maturation as a continuum rather than discrete states. The sequential gene expression (C139) combined with lack of distinct regulon differences (C140) supports the graded maturation interpretation (C141). This is a reasonable conclusion from the data, though the distinction between graded and discrete processes can be subtle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Pseudotemporal trajectory analysis of iCP and L/M cone precursors identified 967 pseudotime-correlated genes (q<0.05) in seven modules, including four sequentially expressed lncRNAs (CTC-378H22.2, HOTAIRM1, RP13-143G15.4, CTD-2034I21.2). Multiplex RNA FISH in FW16 retina defined four cone maturation zones based on lncRNA expression peaks, supporting the concept that maturing L/M cones sequentially express specific lncRNAs during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 describe sequential lncRNA expression during cone maturation with computational (C142-C143) and spatial validation (C144). The convergence of pseudotime analysis and RNA FISH provides strong support for sequential lncRNA expression. The functional significance of these lncRNAs remains to be determined, but the spatial validation strengthens confidence in the developmental trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Comparison of early-maturing L/M cones and early-maturing rods identified 422 upregulated and 119 downregulated genes in cones (p<0.05, log2FC>|0.4|). Cone-enriched genes showed enrichment for translation initiation, protein localization to membrane, and MYC targets. MYCN protein was highly expressed in ARR3+ cone precursors but not NRL+ rods, and MYCN composed the seventh highest LM cone regulon specificity score. MYCN is critical to the cone precursor proliferative response to pRB loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 identify MYCN as a cone-enriched factor with potential relevance to retinoblastoma. The differential expression (C146-C147), protein validation (C148), regulon analysis (C150), and connection to prior functional studies (C149) provide converging evidence. However, C149 is based on citations rather than new data in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "SYK RNA expression increased from the iCP stage through cluster LM4 but was abolished in late-maturing cones (LM5), with minimal expression in rods. Immunohistochemistry showed high SYK protein in immature and early-maturing cones from periphery to fovea at FW16, but not in mature foveal cones at FW18. The loss of SYK with cone maturation is consistent with its absence in normal retina adjacent to retinoblastomas, implying SYK is a defining feature of the early cone precursor state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 characterize SYK expression dynamics during cone maturation with RNA and protein validation. The stage-specific expression pattern (C151-C153) is well-documented, and the comparison with retinoblastoma-adjacent tissue (C154) provides clinical relevance. The inference that SYK is a 'defining feature' is supported by the data but somewhat overstated given that it's one of many differentially expressed genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "Treatment with SYK inhibitor GS-9876 suppressed the proliferative response to pRB knockdown in fetal retina cone precursors at all concentrations from 1.0 to 5.0 \u00b5M. This is consistent with the notion that cone precursor intrinsic SYK activity contributes to the proliferative response to pRB loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156 provide functional evidence for SYK's role in pRB-deficient cone proliferation. The dose-response relationship (C155) and consistency with the expression data support the conclusion (C156). However, the authors appropriately note that genetic ablation is needed to confirm this role, as pharmacological inhibitors can have off-target effects. The result is supported but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Deep full-length sequencing enabled more precise resolution of cell states and identification of cell-type-specific regulon activities and transcript isoforms compared to prior 3' scRNA-seq studies. L/M cones preferentially express novel NRL isoforms predicted to encode truncated NRL (Tr-NRL) lacking a transactivation domain, as well as isoforms with intra-exon-2 splicing. Tr-NRL opposed FL-NRL transactivation in luciferase assays. The multipronged approach to suppress FL-NRL function while downregulating overall NRL RNA by only ~4-fold reveals complex post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 summarize the methodological advantages and NRL isoform findings. The comparison with prior studies (C157) is supported by the data presented. The NRL isoform characterization (C158-C159) is well-documented with multiple validation approaches. The functional data (C160) and mechanistic interpretation (C161) are supported, though the biological significance of Tr-NRL remains unclear given the lack of protein detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Cell-type-specific THRB transcript isoforms are generated through premature transcription termination (PTT) and 3' UTR expression in late rod precursors. PTT is widely used to govern transcription regulator expression, though PTT-shortened THRB transcripts' retinal cell specificity was not previously recognized. The expression of THRB 3' UTR sequences independent of protein-coding sequences was not previously reported and may enable additional regulation. Such 3' UTR transcripts may be misinterpreted in 3' end-counting scRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 describe THRB regulation mechanisms with appropriate contextualization of prior knowledge (C163) and novel findings (C164). The methodological caution about 3' end-counting (C165) is an important practical consideration supported by the data. The findings are well-supported by the long-read sequencing and RACE analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Deep sequencing uncovered discrete cell states distinguished by gene expression and regulon activities. Early- and late-maturing rod populations were distinguished by increased phototransduction gene expression and increased NRL/ATF4/CRX/LHX3 and decreased HMX1/RAX regulon activities in late rods. L/M cones formed an early-maturing cluster with high THRB/ISL2 regulons and a late-maturing group with decreased RAX activity. RAX regulon downregulation is consistent with decreasing RAX protein during maturation and RAX-mediated suppression of opsin promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C169 summarize the cell state characterization with regulon analysis. The findings are internally consistent and supported by the SCENIC analysis. The connection to prior knowledge about RAX function (C169) provides mechanistic context. The discrete cell states are well-defined by converging evidence from gene expression and regulon activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Trajectory analysis revealed successive expression of lncRNAs validated in developing retinal tissue. Three of these lncRNAs (HOTAIRM1, CTD-2034I21.1, and mouse ortholog of CTC-378H22.2) were previously observed in cone scRNA-seq. Their sequential expression in the absence of discrete regulon changes suggests they demarcate early L/M cone precursor substates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C172 describe lncRNA expression dynamics with validation in prior studies (C171) and spatial validation in tissue. The interpretation that lncRNAs demarcate substates (C172) is reasonable given the sequential expression pattern and lack of corresponding regulon changes. The functional significance remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "High-resolution clustering segregated immature cone precursor (iCP) and immature rod precursor (iRP) populations. RPC-localized iCP/iRP cells lacked cell-cycle genes, showed higher THRB or NRL expression/regulon activities respectively, and had RNA velocities toward distinct cone/rod populations. iCPs upregulated OTX2/NEUROD1 regulons more than iRPs. Prior droplet-based scRNA-seq did not distinguish these populations, while 3' scRNA-seq/snRNA-seq distinguished PRPC and NRPCs. Combining observations supports a model where cone/rod-fated NRPCs give rise to nascent and immature precursors (iCPs/iRPs), which transition to early- and late-maturing precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C178 describe the identification of immature precursor populations and propose a developmental model. The characterization of iCP/iRP populations (C173-C175) is well-supported by multiple analyses. The comparison with prior studies (C176-C177) appropriately contextualizes the findings. The proposed model (C178) integrates findings from multiple studies and is a reasonable synthesis, though it remains a model requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The study revealed cone and rod precursor subpopulations that co-express rod and cone genes and regulons. In both the current full-length scRNA-seq and the Zuo et al. 3' snRNA-seq analysis, the earliest cone and rod precursors lacked such co-expression, implying this property is acquired after fate determination. NR2E3 RNA was detected in more mature central retina cone precursors but not in nascent peripheral cone precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C181 describe the temporal dynamics of cross-lineage marker expression with validation in an independent dataset (C180) and spatial validation (C181). The conclusion that co-expression occurs after fate determination is well-supported by converging evidence. The biological significance of this transient co-expression remains unclear but is an interesting observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C182",
+      "C183"
+    ],
+    "result": "The early L/M cone precursors' expression of NR2E3 and NRL RNAs suggests their presence in retinoblastomas reflects normal expression in the L/M cone precursor cells of origin rather than loss of lineage fidelity. This is further supported by retinoblastoma cells' preferential expression of cone-enriched truncated NRL transcript isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C183 provide a new interpretation of retinoblastoma gene expression patterns based on the developmental findings. The logic is sound: if normal cone precursors express rod markers, then their presence in retinoblastomas doesn't necessarily indicate dedifferentiation. The isoform data (C183) provides additional support. This is an important reinterpretation of prior observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Early cone and rod precursors shared expression of neurogenic precursor markers ATOH7, DLL3, and CHRNA1, with higher expression in the cone lineage and preferential peripheral expression of ATOH7/CHRNA1. These RNAs persist in some maturing precursors, while CTC-378H22.2 more precisely marks iCPs. iCPs with velocity toward early-maturing L/M cones expressed THRB/ONECUT1 RNAs and had OLIG2 regulon activity, suggesting a role in L/M cone fate determination in post-mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C187 characterize early precursor markers and their potential roles. The expression patterns (C184-C185) are well-documented. The inference about OLIG2's role in post-mitotic fate determination (C187) is reasonable based on the expression pattern and prior knowledge, though functional validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C188",
+      "C189"
+    ],
+    "result": "Upregulation of MYC target genes was detected in cone precursors, along with upregulated MYCN RNA, protein, and regulon activity. As MYCN is required for the proliferative response to pRB loss and triggers retinoblastoma when amplified, these findings suggest increased MYCN RNA expression and regulon activity contribute to pRB-deficient cone precursor proliferation and retinoblastoma genesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C189 connect MYCN expression to retinoblastoma biology. The expression data (C188) is well-supported. The inference about contribution to retinoblastoma (C189) is reasonable based on prior functional studies, though this study doesn't provide new functional data on MYCN. The connection is logical but relies heavily on prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Cone precursors highly express SYK, an oncoprotein previously detected in retinoblastomas and RB1-null organoids but not in healthy tumor-adjacent retina. High SYK expression preceding early cone precursor maturation and its loss during late maturation implies high-level SYK expression is a retinoblastoma cell-of-origin-specific feature. The pRB-depleted cone precursors' sensitivity to a SYK inhibitor suggests native SYK expression rather than de novo induction contributes to initial proliferation, though genetic ablation is needed to confirm this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C192 identify SYK as a cone precursor-specific factor with potential relevance to retinoblastoma. The expression characterization (C190-C191) is well-supported. The functional data (C192) provides initial evidence for a role in pRB-deficient proliferation, though the authors appropriately note the need for genetic validation. The result is supported but requires additional validation to confirm the mechanism.",
+    "result_type": "MAJOR"
+  }
+]

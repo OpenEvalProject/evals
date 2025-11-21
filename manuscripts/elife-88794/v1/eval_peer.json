@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C70",
+      "C74",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C164",
+      "C232"
+    ],
+    "result": "SAVEMONEY is a computational tool that enables barcode-free multiplexing of plasmid samples for nanopore sequencing through a three-step workflow: pre-survey (to determine optimal plasmid groupings), sample submission (mixing plasmids), and post-analysis (classification, alignment, and consensus determination using Bayesian analysis with prior probability of plasmid construction error rates). The tool is implemented on Google Colab and available via GitHub and PyPI.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly acknowledge and support the core SAVEMONEY methodology. The editor states the tool 'has been convincingly validated' and is 'readily available.' Reviewer 1 notes 'the whole algorithm framework is well-designed' and that 'some real data and simulation data are utilized to support the conclusions.' Reviewer 3 confirms 'the algorithm is divided into three steps' and describes the Bayesian analysis approach without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C61",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C151",
+      "C152",
+      "C153",
+      "C231",
+      "C240"
+    ],
+    "result": "SAVEMONEY can accurately classify and deconvolve reads from plasmids differing by as little as two bases (and theoretically even one base). Experimental validation with three sets of highly similar plasmid pairs (Levenshtein distances of 1, 2, and 3) showed incorrect classification rates of 0.03-1.4% for single-base differences, dropping to 0.0074-0.0089% for two-base differences and 0.0143-0.0158% for three-base differences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'Although inserts must be different, just 2 bases difference would be enough for correct assignation,' directly supporting this key finding. Reviewer 1 acknowledges the work 'provides a guideline for sequencing multiple plasmids together' without questioning the minimum distance claims. The editor's statement that the tool is 'convincingly validated' implicitly supports these experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C83",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C139",
+      "C140",
+      "C190"
+    ],
+    "result": "SAVEMONEY enables routine multiplexing of up to six plasmids per sample when using commercial services like Plasmidsaurus (which typically provides ~200 reads per sample), maintaining high accuracy of consensus sequencing. Experimental validation with Group I (six plasmids with modest similarity sharing common vector backbones) showed successful classification with sufficient read coverage (57-165 reads per plasmid) and sharp read length distributions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly confirms 'Multiple plasmids (up to six) can be analyzed simultaneously in a single library without the need of sample barcoding.' The editor states the tool has been 'convincingly validated,' supporting the experimental results. Reviewer 1 notes the work is 'well-designed' with 'real data and simulation data' supporting conclusions, implicitly accepting the six-plasmid multiplexing capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C13",
+      "C201",
+      "C252"
+    ],
+    "result": "SAVEMONEY reduces sequencing costs to as low as $2.50 per plasmid, approximately half the cost of a single Sanger sequencing reaction (~$4-5), thereby making whole-plasmid nanopore sequencing more cost-effective than Sanger sequencing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states the algorithm 'can validate plasmid constructions by reducing sequencing costs' and notes it 'Maximizes cost-efficiency for projects that require large amounts of plasmid constructions.' The editor describes the tool as enabling 'cost-effective verification of plasmid sequences.' Reviewer 1 acknowledges the work addresses cost reduction without challenging the specific cost claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Through simulation analysis, SAVEMONEY requires a theoretical minimum of 30 reads per plasmid for reliable consensus calling. At this coverage, even in worst-case scenarios (positions with <0.7 correct base calling rate, occurring at ~0.1% frequency), the probability of incorrect base calling is <0.1%, yielding a net error probability of ~10\u207b\u2076, which is negligible for typical plasmid sizes (~10\u2074 bases).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'some real data and simulation data are utilized to support the conclusions,' acknowledging the simulation-based analysis. Reviewer 3 describes the approach without questioning the minimum read requirements. The editor's statement that the tool is 'convincingly validated' supports the simulation results. No reviewer challenges the 30-read minimum or the error probability calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C234",
+      "C235"
+    ],
+    "result": "A key limitation of SAVEMONEY is that multiple colonies from the same plasmid construction procedure cannot be mixed together because they share identical expected sequences (blueprints), preventing computational deconvolution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly identifies this as 'a major limitation in the significance of this work,' stating 'SAVEMONEY is not able to support the simultaneous analysis of multiple colonies in the same run, as compared to the barcoding-based approaches.' This directly confirms the limitation. The authors acknowledge this constraint in the manuscript, and Reviewer 1's emphasis on it as 'major' validates its significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "SAVEMONEY is compared to an existing algorithm by Mumm et al. (2023) for barcode-free plasmid multiplexing. The authors claim SAVEMONEY has advantages including: (1) use of Bayesian analysis requiring fewer reads per plasmid (vs. hundreds needed by Mumm et al.), (2) inclusion of a pre-survey step for determining optimal plasmid combinations, and (3) better suitability for users outsourcing to commercial services.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the manuscript presents these comparative claims, no reviewer explicitly validates or challenges the specific technical comparisons with the Mumm et al. algorithm. Reviewer 1 mentions 'computational efforts in ONT data debarcoding' would be valuable but does not evaluate the comparative analysis. The lack of reviewer discussion about this comparison leaves the relative advantages uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "SAVEMONEY has low computational requirements and can be executed on consumer-grade laptop computers. Benchmark tests showed processing times of 3.1 minutes on a MacBook Air (M1, 16GB RAM) and 1.8 minutes on a mini gaming PC (Ryzen 9, 64GB RAM) for deconvolving five plasmids with 653 reads. Multiprocessing features enable scalability with processing time inversely proportional to CPU cores.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes the tool is 'readily available to scientists,' implicitly supporting its accessibility and ease of use. The editor confirms the tool is 'readily available,' consistent with low computational barriers. While no reviewer explicitly discusses the benchmark data, the general acceptance of the tool's practical utility supports these performance claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "SAVEMONEY can benefit users who own nanopore sequencers by enabling further de-multiplexing after standard barcode-based sequencing, potentially allowing sequencing of more plasmid variants than available barcodes or even skipping barcode introduction entirely in some cases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly states the tool is useful for 'scaling up analysis by pooling samples within barcodes,' directly supporting the claim about additional de-multiplexing after barcoding. Reviewer 3 notes the tool 'can validate plasmid constructions by reducing sequencing costs' without restricting this to barcode-free scenarios only, implicitly supporting broader applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "SAVEMONEY produces two types of consensus outputs: 'without prior' (unbiased analysis) and 'with prior' (incorporating prior probability of plasmid construction error). The 'with prior' option increases specificity at the expense of sensitivity for error detection, analogous to manual inspection of ambiguous Sanger sequencing chromatograms. When outputs disagree at low read coverage, re-sequencing is recommended.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 describes the 'Bayesian analysis approach' used to obtain consensus sequences without questioning the dual-output strategy. The editor's statement that the tool is 'convincingly validated' supports the consensus calling methodology. While no reviewer explicitly discusses the two output types, the acceptance of the Bayesian framework implicitly supports this feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C112",
+      "C113"
+    ],
+    "result": "The pre-survey algorithm uses pairwise sequence alignments (Smith-Waterman algorithm for accuracy), calculates Levenshtein distances between plasmid pairs to create a distance matrix, performs hierarchical clustering with nearest point algorithm, and uses zero-one integer linear programming to optimally group plasmids such that similar plasmids are separated and minimum within-group distance is maximized.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'In a first step, the tool assesses which of the plasmid constructions can be mixed in a single library preparation by calculating a distance matrix between the reference plasmid and the constructions producing sequence clusters,' directly confirming the pre-survey methodology. Reviewer 1 notes the 'algorithm framework is well-designed,' supporting the technical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Analysis of nanopore sequencing quality using R10.4.1 flow cells with V14 chemistry showed that >98% of positions had correct base calling rates >0.9 with most reads showing maximum quality scores, while a small number (0.1%) of positions showed low correct rates <0.7 with 67.1% correct calling, 19.0% incorrect calling, and 13.9% deletion calling.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges 'some real data and simulation data are utilized to support the conclusions,' which includes this quality analysis. The editor's statement that the tool is 'convincingly validated' supports the empirical characterization of sequencing quality. No reviewer challenges these quality metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C243",
+      "C244",
+      "C245"
+    ],
+    "result": "A limitation of SAVEMONEY is that it calculates consensus base calling and quality scores independently for each nucleotide, not accounting for the fact that nanopore current changes are produced by 5-mer sequences. Future incorporation of models like hidden Markov models that consider neighboring nucleotides might improve base calling quality.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While no reviewer explicitly discusses this limitation, Reviewer 1's acknowledgment that the work has been 'significantly approved' after revision suggests limitations were adequately addressed. The authors' transparent discussion of this technical constraint, combined with lack of reviewer objection, indicates acceptance of this limitation and the proposed future direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C246",
+      "C247",
+      "C248",
+      "C249"
+    ],
+    "result": "There is room for improvement in the maximum number of plasmids that can be mixed. Currently, read coverage from Plasmidsaurus varies widely (hundreds to thousands). If stable coverage of \u22651000 reads could be achieved, >30 plasmids could be mixed (given the 30-read minimum per plasmid). Further improvements in nanopore base-level accuracy would enable even greater multiplexing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes the tool 'Maximizes cost-efficiency for projects that require large amounts of plasmid constructions,' supporting the potential for increased multiplexing. The editor's statement about 'scaling up analysis' aligns with future improvements in multiplexing capacity. No reviewer challenges these projections about future capabilities.",
+    "result_type": "MINOR"
+  }
+]

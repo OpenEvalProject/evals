@@ -1,0 +1,171 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors identified radiomics features that distinguish benign from malignant pancreatic lesions. After propensity score matching to remove baseline differences, 88 significant features were identified, which were reduced to 12 by Boruta algorithms and then to 4 key features by LASSO regression. These 4 features achieved an AUC of 0.911 in the test dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises critical concerns about the study design, noting that 'the CT features extracted likely differentiate solid from cystic pancreatic lesions' since benign controls were predominantly IPMNs. The reviewer states the design is 'flawed' and requests inclusion of pancreatitis and normal pancreata as controls. Additionally, Reviewer 3 requests 'an additional external validation set' for radiomics features given manual segmentation, and notes that 'more quantitative details are needed' in Figure 2 descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors used WGCNA analysis to identify EV miRNAs associated with radiomics features, focusing on low-abundance miRNAs (defined as lowest 30% CPM). The green module containing 12 hub miRNAs was identified, and by merging with 295 low-abundance miRNAs, three key miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, and hsa-miR-5695) were selected.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 identifies critical methodological concerns, stating 'The WGCNA analysis was critical to identify the EV miRNAs associated with imaging features, but the \"cut-off criteria\" for MM and GS have no clear justification.' The reviewer asks 'How were these cut-offs determined? How sensitive were the results to these cut-offs?' Reviewer 2 notes 'selection of low abundance miRNAs for developing the signature with inadequate rationale' as a weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C50"
+    ],
+    "result": "The three identified miRNAs showed significantly different expression in tumor versus healthy samples in both serum and tissue, with hsa-miR-1260b and hsa-miR-5695 being undetectable in benign samples but enriched in tumor patient serum.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 requests more details about the validation datasets, asking 'Were these pancreatic cancers all adenocarcinoma, what stage, age range, sex distribution, comorbid conditions were the cases? Were the controls all IPMNs or were there other conditions in the controls?' This lack of clarity about sample characteristics undermines confidence in the validation results. Reviewer 2 notes 'inadequate description of clinical characteristics of the enrolled samples makes the findings unconvincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The three-miRNA signature demonstrated high diagnostic accuracy across training (AUC=0.978, sensitivity=0.97, specificity=0.99), test (AUC=0.919, sensitivity=0.96, specificity=0.88), and external validation (AUC=0.897, sensitivity=0.90, specificity=0.89) datasets, outperforming CA19-9 (AUC=0.843).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the performance metrics appear strong, Reviewer 3 states 'It is still not clear what Figure 4A is illustrating as regards to model performance' and requests the authors 'state in the manuscript very clearly what they are showing in the figure.' The fundamental study design flaw identified by Reviewer 3\u2014that the signature may simply differentiate solid from cystic lesions rather than malignant from benign\u2014casts doubt on the clinical utility of these results. The editor notes 'the evidence provided for the liquid biopsy EV miRNA signature developed based on radiomics features remains incomplete.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Based on 117 predicted mRNA targets of the three miRNAs, tumors were stratified into two subtypes (C1 and C2). C2 patients showed prolonged survival (both OS and DFS), while C1 patients were older, had larger tumors, more positive lymph nodes, more perineural invasion, and advanced staging, particularly in females.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'The subtype results in figures 6 and 7 are not convincing. An association on univariate analysis is not sufficient.' The reviewer notes that 'The explanation that clinical data is not available to do a multivariable analysis indicates that the authors do not have the ability to claim that they have identified unique subtypes that have clinical relevance.' The reviewer concludes 'A thorough evaluation of the prognostic significance and the associated molecular features of these tumors is needed.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C65"
+    ],
+    "result": "C2 tumors showed significantly higher enrichment for immune cell signals (CD8 T cells, cytotoxic lymphocytes, NK cells) and more physiological immune checkpoint expression, suggesting these patients may be suitable for immunotherapy after standard treatment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3's critique of the subtype analysis applies here as well, stating the results are 'not convincing' and that univariate analysis is insufficient. The claim about immunotherapy suitability is particularly speculative given the lack of multivariable analysis. The authors acknowledge in C67 that 'using the MCP-counter algorithm for blood samples is a limitation' as it was designed for solid tissues, which further undermines confidence in the immune infiltration quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C93"
+    ],
+    "result": "C1 patients showed predicted sensitivity to several drugs including AKT inhibitor VIII, Bleomycin, Dasatinib, GNF-2, PF-562271, Refametinib, and BMS-509744, suggesting these high-risk tumors may be amenable to targeted drug interventions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "This drug sensitivity prediction is based on the C1/C2 subtype classification that Reviewer 3 found unconvincing. The reviewer's statement that the authors 'do not have the ability to claim that they have identified unique subtypes that have clinical relevance' directly undermines these therapeutic predictions. These are computational predictions from cell line data without clinical validation, making the therapeutic implications highly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C66"
+    ],
+    "result": "Functional enrichment analysis showed C1 subtype enrichment for intermediate filament organization, ribosome, and symporter activity, with activation of fatty acid metabolism and biological oxidation pathways, and inhibition of apoptosis, DNA repair, and Hippo signaling pathways, relating to poorer prognoses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "These pathway analyses are downstream of the unconvincing subtype classification. Reviewer 3's critique that the subtypes lack clinical relevance due to insufficient multivariable analysis applies to all downstream functional characterization. The causal relationship between pathway inhibition and poor prognosis is inferential and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The study enrolled 272 patients across three centers (173 from UMMD/JHC, 99 from WUH) with CT imaging, including 46 benign lesions and 127 pancreatic cancers from UMMD/JHC. Patient demographics varied by center with differences in age, sex, obesity, smoking, alcohol use, and diabetes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 states 'inadequate description of clinical characteristics of the enrolled samples makes the findings unconvincing' and notes 'drawing association of data derived from unmatched sample sets' as a weakness. Reviewer 3 requests extensive additional details about the cohorts, asking about adenocarcinoma classification, stage, age range, sex distribution, and comorbid conditions. The lack of these details prevents proper evaluation of the cohort composition and matching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C88",
+      "C89",
+      "C90",
+      "C94"
+    ],
+    "result": "The authors claim this is the first study to distinguish benign from malignant pancreatic lesions by identifying novel plasma EV microRNAs based on differential radiomics features, representing a promising non-invasive biomarker for early diagnosis and molecular subtyping with implications for precision treatment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The editor states 'the evidence provided for the liquid biopsy EV miRNA signature developed based on radiomics features remains incomplete' and notes 'key details missing and validation experiments that would better support the conclusions.' Reviewer 3's identification of the fundamental design flaw\u2014that the signature may simply distinguish solid from cystic lesions\u2014directly challenges the novelty and clinical utility claims. Reviewer 2 characterizes the study design as 'flawed,' making the broad claims about clinical promise premature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors acknowledge methodological limitations including use of MCP-counter algorithm designed for solid tissues on blood samples, and lack of enrichment for cancer cell-derived EVs, which may result in contamination from non-cancer cell background affecting cancer specificity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are limitations explicitly acknowledged by the authors themselves. The reviewers' concerns about methodology align with these acknowledged limitations, particularly Reviewer 2's note about 'incomplete description of experimental methods' and the general concern about validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2015 @@
+{
+  "submission": {
+    "id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:02:01.714529Z",
+    "updated_at": "2025-11-21T17:02:01.714529Z"
+  },
+  "content": [
+    {
+      "id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "content_type": "manuscript",
+      "content_text": "# Function and firing of the Streptomyces coelicolor contractile injection system requires the membrane protein CisA\n\n## Authors\n\n- Bastien Casu<sup>1</sup> ([ORCID: 0000-0003-3508-6804](https://orcid.org/0000-0003-3508-6804))\n- Joseph W Sallmen<sup>2</sup>\n- Peter E Haas<sup>1</sup>\n- Govind Chandra<sup>2</sup> ([ORCID: 0000-0002-7882-6676](https://orcid.org/0000-0002-7882-6676))\n- Pavel Afanasyev<sup>3</sup> ([ORCID: 0000-0002-6353-6895](https://orcid.org/0000-0002-6353-6895))\n- Jingwei Xu<sup>1</sup>\n- Martin Pilhofer<sup>1</sup> ([ORCID: 0000-0002-3649-3340](https://orcid.org/0000-0002-3649-3340)) \u2020\n- Susan Schlimpert<sup>2</sup> ([ORCID: 0000-0001-6364-8056](https://orcid.org/0000-0001-6364-8056)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Institute of Molecular Biology & Biophysics, Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n2. John Innes Centre, Department of Molecular Microbiology, Norwich Research Park Norwich United Kingdom ([ROR:055zmrh94](https://ror.org/055zmrh94))\n3. Cryo-EM Knowledge Hub, Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n4. Centre for Microbial Interactions, Norwich Research Park Norwich United Kingdom ([ROR:0062dz060](https://ror.org/0062dz060))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial contractile injection systems (CIS) are phage tail-like macromolecular complexes that mediate cell-cell interactions by injecting effector proteins into target cells. CIS from Streptomyces coelicolor (CISSc) are localized in the cytoplasm. Under stress, they induce cell death and impact the Streptomyces life cycle. It remains unknown, however, whether CISSc require accessory proteins to directly interact with the cytoplasmic membrane to function. Here, we characterize the putative membrane adaptor CisA, a conserved factor in CIS gene clusters across Streptomyces species. We show by cryo-electron tomography imaging and in vivo assays that CISSc contraction and function depend on CisA. Using single-particle cryo-electron microscopy, we provide an atomic model of the extended CISSc apparatus; however, CisA is not part of the complex. Instead, our findings show that CisA is a membrane protein with a cytoplasmic N-terminus predicted to interact with CISSc components, thereby providing a possible mechanism for mediating CISSc recruitment to the membrane and subsequent firing. Our work shows that CIS function in multicellular bacteria is distinct from type VI secretion systems and extracellular CIS, and possibly evolved due to the role CISSc play in regulated cell death.\n\n## Introduction\n\nBacteria employ different types of contractile injection systems (CIS) to mediate cell-cell interactions or cell death (Lin, 2024). CIS are evolutionarily and structurally related to contractile tails of bacteriophages and are comprised of core modules, including a baseplate, a contractile sheath, and an inner tube (Brackmann et al., 2017; Taylor et al., 2018). CIS firing is triggered by a conformational change within the baseplate (Taylor et al., 2016; B\u00f6ck et al., 2017) and results in the contraction of the sheath, which in turn propels the inner tube along with the spike tip. Tube expulsion facilitates the release of associated effector proteins into target cells or the extracellular space (Allsopp and Bernal, 2023; Coulthurst, 2019).\n\nBioinformatic analyses have shown that CISs are conserved across diverse microbial phyla, including diderm and monoderm bacteria, as well as archaea (Chen et al., 2019; Geller et al., 2021). Based on their distinct modes of action, CIS can be categorized into two main groups: intracellular type VI secretion systems (T6SS) and extracellular CIS (eCIS). T6SS are abundant among diderm bacteria and in some archaea, and they are anchored to the cytoplasmic membrane during assembly and firing (Basler et al., 2012; Durand et al., 2015; Zachs et al., 2024). A crucial component of the T6SS is the baseplate, which serves as a nucleus for T6SS assembly and mediates the binding of T6SS particles to the cytoplasmic membrane until contraction. Upon contraction, the spike and inner tube are propelled out of the cell into an adjacent cell or the medium. eCIS, on the other hand, are assembled as free-floating particles in the cytoplasm and are subsequently released into the extracellular space upon lysis of the producer cell (Xu et al., 2022; Shikuma et al., 2014; Hurst et al., 2007; Jiang et al., 2019). Following the release, eCISs attach to the surface of target cells via their tail fibers, followed by contraction and puncturing of the target cell envelope.\n\nBesides T6SS and eCIS, there is accumulating evidence of additional CIS assemblies with distinct modes of action in bacteria. For example, in multicellular cyanobacteria, CIS are anchored to the intracellular thylakoid membrane stacks via an extension of the baseplate components. These so-called \u2018thylakoidCIS\u2019 (tCIS) have been proposed to function in cell lysis and the formation of \u201cghost cells\u201d in response to stress conditions (Weiss et al., 2022). Furthermore, several recent studies reported the production of free-floating cytoplasmic CIS particles in the multicellular monoderm Streptomyces bacteria, which have been shown to modulate cellular development through presumably slightly different mechanisms (Casu et al., 2023; Vladimirov et al., 2023; Nagakubo et al., 2021; Nagakubo et al., 2023; Nagakubo et al., 2024).\n\nNotably, many Streptomyces genomes contain a class IId eCIS locus, a subtype that is structurally less well understood compared to other eCIS subtypes, such as \u2018antifeeding prophages\u2019 (AFPs) from Serratia, \u2018metamorphosis-associated contractile structures\u2019 (MACs) from Pseudoalteromonas luteoviolacea, AlgoCIS from A. machipongonensis or \u2018Photorhabdus virulence cassettes\u2019 (PVCs) from P. asymbiotica (Lin, 2024).\n\nStreptomyces are best known for producing a wide range of medically and industrially important secondary metabolites, including molecules with antimicrobial, antifungal, anticancer, or immunosuppressive properties. The production of these molecules is tightly coordinated with the Streptomyces developmental life cycle that encompasses functionally distinct filamentous cell types: vegetative hyphae that grow by tip extension and branching to scavenge for nutrients and reproductive (aerial) hyphae that eventually differentiate into chains of spores, which can then be dispersed to restart the life cycle (Schlimpert and Elliot, 2023; Fl\u00e4rdh and Buttner, 2009). Using Streptomyces coelicolor as a model organism, we and others previously demonstrated that S. coelicolor CIS (CISSc) mediate a form of regulated cell death, which influences the onset of sporulation and secondary metabolite production in response to exogenous stress and unknown cellular signals (Figure 1; Casu et al., 2023; Vladimirov et al., 2023).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig1-v1.jpg)\n\n**Figure 1.:** CISSc are assembled as free-floating particles in the cytoplasm of vegetative hyphae (Casu et al., 2023; Vladimirov et al., 2023). In response to extracellular stress and/or an unknown cellular signal, CISSc particles contract, resulting in regulated cell death (mediated by released effectors) and impacting cellular development.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Protein alignment of CisA homologs identified via reciprocal BLAST search in genomes of Streptomyces and actinomycete species previously reported to encode an eCIS class IId region. Protein sequences (n=75) were aligned with Clustal Omega and visualized using JalView. CisA domain structure is indicated on top.\n\nIt remains unclear, however, whether CISSc contraction and firing occur while the CISSc particles are free-floating in the cytoplasm or whether this depends on an interaction with the membrane. Moreover, CIS encoded in Streptomyces genomes lacks clear homologs for tail fiber components or a T6SS trans-envelope complex, raising the question of how CISSc particles could potentially interact with the cytoplasmic membrane. We and others recently noted an uncharacterized protein (Casu et al., 2023; Vladimirov et al., 2023), SCO4242, which is conserved in the majority of Streptomyces species and other Actinomycete species that carry a type IId eCIS locus (Chen et al., 2019; Geller et al., 2021; Figure 1\u2014figure supplement 1). Interestingly, SCO4242 is encoded just downstream of the baseplate components in the CISSc gene cluster, a location that usually encodes tail fibers from conventional eCIS (Xu et al., 2022; Jiang et al., 2019; Desfosses et al., 2019). We will, therefore, refer to the gene product of SCO4242 as CisA for \u2018CISSc-associated protein A\u2019. Here, we set out to assess the importance of CisA for CISSc function and its potential role as a membrane anchor.\n\n## Results\n\n### CisA is required for CISSc contraction in situ\n\nTo explore the role of CisA (SCO4242) in CISSc contraction and function, we first generated a S. coelicolor \u2206cisA null mutant. Negative stain electron microscopy (EM) imaging of CISSc particles that were purified from \u2206cisA mutant cells showed assemblies in the contracted conformation, similar to the CISSc particles purified from the wild type (WT; Figure 2a, b). Next, to examine the impact of CisA on the behavior of CISSc in situ, we imaged vegetative hyphae of the WT, the \u2206cisA mutant, and the complemented mutant (\u0394cisA/cisA+) by cryo-electron tomography (cryoET; 270 tomograms in total, n=3 experiments per strain). We previously demonstrated that CISSc contraction correlates with the cellular integrity of S. coelicolor wild-type (WT) hyphae and showed that in intact hyphae, CISSc particles are consistently observed in their extended conformation in the cytoplasm, whereas in partially lysed hyphae, the ratio of extended to contracted particles is approximately 2:1, and dead hyphae only contain fully contracted CISSc assemblies (Casu et al., 2023). Interestingly, and in contrast to the WT and the complemented cisA mutant strain (Figure 2c, e), cisA-deficient hyphae only contained CISSc particles in the extended conformation, irrespective of the cellular integrity of the hyphae (Figure 2, Figure 2\u2014figure supplement 1). Moreover, our analysis consistently showed only two CISSc conformations in intact and dead hyphae, respectively: the fully extended state (233 nm in length, 18 nm in diameter, n=100 CISSc particles) and the fully contracted state (124 nm in length, 23 nm in diameter, n=100 CISSc particles). While hyphal cell death can be caused by a range of external or internal factors, our results demonstrate that CISSc contraction is not a consequence of cell death and requires CisA in situ.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig2-v1.jpg)\n\n**Figure 2.:** (a, b) Negative-stain electron micrographs of purified CISSc particles from S. coelicolor wildtype (WT) (a) and the \u2206cisA mutant (b), show that all CISSc particles are functional and contract upon purification. Experiments were performed three times independently. Bars, 100 nm. (c\u2013e) Shown are representative images of cryo-electron tomogram slices (thickness 11 nm) of vegetative hyphae (top: intact cells; bottom: ghost cells) of S. coelicolor WT (c), \u2206cisA mutant (d), and the complemented \u2206cisA/cisA+ mutant (f). CISSc particles remain almost exclusively in an extended state (white arrowheads) in the \u2206cisA mutant, whereas in ghost cells derived from the WT and the complemented mutant, CISSc particles (black arrowheads) are mostly contracted. PG, peptidoglycan; CM, cytoplasmic membrane; Bars, 50 nm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a\u2013c) Shown are additional cryo-tomographic slices (thickness 11 nm) of S. coelicolor \u2206cisA vegetative hyphae, which were observed as \u2018Intact hyphae\u2019 (a), \u2018Partially lysed hyphae\u2019 (b) and \u2018Ghost cells\u2019 (c) Note that all visible CISSc particles (white arrowheads) are in the extended conformation. PG, peptidoglycan; CM, cytoplasmic membrane/membranes. Bars, 50 nm. (d) Shown is a quantification of CISSc assemblies per tomogram and their conformations as observed in different classes of DcisA hyphae. Almost all CISSc particles were seen in the extended conformation, indicating that sheath contraction in situ correlates with the presence of CisA. Data show the mean values and standard deviations obtained from biological triplicate experiments, with n=30 tomograms for each class of hyphae.\n\n### CryoEM structure of the extended CISSc assembly\n\nThe S. coelicolor cis gene cluster consists of 19 predicted open reading frames (accessions SCO4242-4260; Figure 3a), including genes with sequence similarities to potential CIS structural components (cis1-cis16), as well as additional genes of unknown functions (including cisA) (Casu et al., 2023; Vladimirov et al., 2023). To determine whether CisA is an integral component of CISSc, we set out to elucidate the high-resolution structure of purified CISSc particles from a non-contractile CISSc mutant (Casu et al., 2023). The purified assemblies were subjected to single-particle cryo-electron microscopy (cryoEM) for structure determination (Figure 3\u2014figure supplement 1), yielding the first high-resolution model of the CISSc in its extended conformation, which also presents the first example of a CIS IId subtype (Chen et al., 2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig3-v1.jpg)\n\n**Figure 3.:** (a) Schematic illustrating the CISSc gene cluster (adapted from Figure 1B from Casu et al., 2023). Asterisks indicate gene products that were detected by mass spectrometry analyzing crude preparations of CISSc particles (red). See also Figure 3\u2014source data 1. (b, c) Single-particle cryoEM structure of an extended CISSc assembly purified from a non-contractile CISSc mutant. Shown are the composite atomic model in surface (left) and ribbon (right) rendering (b) Subunits are color-coded according to (a), and their copy numbers in the assembly are indicated in (c). (d) Perpendicular views of the ribbon representation of the CISSc model of the cap and baseplate modules. (e) Top view (left) and side view (right) of ribbon diagrams showing the cap module of CISSc, revealing that the cap is composed of a Cis16 hexamer. (f) Ribbon diagrams showing a single baseplate wedge subunit, which is composed of two copies of Cis11 and one copy of Cis12.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Flowchart for cryoEM reconstruction of the extended CISSc particle. See Materials and methods and for details.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a\u2013f) Local resolution maps of the CISSc baseplate with C6 symmetry (a), CISSc baseplate with C3 symmetry (c), and the CISSc cap with C6 symmetry (e). (d-f) shows regions of the cryoEM density map (mesh) that were superimposed with the atomic models (ribbons and sticks), demonstrating the agreement between the observed and modeled amino acid side chains for one beta-sheet (left) and one alpha helix (right). Shown are examples of the baseplate with C6 symmetry (b), the baseplate with C3 symmetry (d), and the cap with C6 symmetry (f).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a\u2013d) Top views (left) and side views (right) of ribbon representations of the structures of CIS cap modules of Pyocin R2 (a, PDB 6U5B), PVC (b, PDB 6J0N), AFP (c, PDB 6RAP), and AlgoCIS (d, PDB 7ADZ).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (a\u2013d) Ribbon representations of the full structures (left) and the individual wedge subunit (right) of the CIS baseplate components (Cis11/12) of Pyocin R2 (a, PDB 6U5F), PVC (b, PDB 6J0F), AFP (c, PDB 6RAO), and AlgoCIS (d, PDB 7AEB).\n\nOur model shows that extended CISSc particles share the conserved eCIS architecture, including the three core modules: cap, sheath tube, and baseplate (Figure 3b). We processed the dataset using an established workflow that was previously employed to produce the atomic model for other CIS (Figure 3\u2014figure supplement 1; Xu et al., 2022; Weiss et al., 2022). The resulting maps of the baseplate and the cap reached resolutions of 3.5 and 3.4 \u00c5, respectively. The quality of the final maps from the two modules enabled de novo structural modeling (Figure 3\u2014figure supplement 2).\n\nThe final model of CISSc comprises 783 polypeptide chains that assemble into a bullet-shaped particle measuring 268 nm in length (Figure 3b, c). All analyzed particles were identical in length, consistent with our in situ data of extended CISSc particles in vegetative hyphae of WT S. coelicolor (Figure 2c\u2013e). The length of eCIS particles is often controlled by tape measure proteins (Rybakova et al., 2015). We note, however, that the corresponding gene is absent from the CISSc gene cluster. The distal end of the CISSc is capped by a tail terminator complex (Figure 3c, e). This cap comprises one protein, Cis16, forming a C6-symmetrical complex that terminates the inner tube and sheath, respectively. This minimal architecture resembles the cap complexes of PVC or Pyocin R2 CISs, but it is different from the more complex AlgoCIS from A. machipongonensis and AFP from S. entomophila (Figure 3\u2014figure supplement 3; Xu et al., 2022; Jiang et al., 2019; Desfosses et al., 2019; Ge et al., 2020). The structures of the CISSc sheath-tube module have been previously discussed, notably showing that the sheath (domains 1/2) contracts by widening and shortening, similar to other CIS (Casu et al., 2023). We found that the module consists of 61 sheath layers (Cis2-L1\u2013L61) and 60 tube layers (Cis1-L1-L60; Figure 3b, d). The baseplate module comprises a heteromeric assembly of the proteins Cis1b/7/8/9/11/12 (Figure 3b, c). The symmetry transition from the inner tube (Cis1a, C6) to the VgrG-like spike (Cis8, C3) is adapted by two layers of the tube initiators Cis1b and Cis7. The first layer of the sheath (Cis2) is bound to the conserved gp25-like protein Cis9, which connects to the baseplate \u2018wedges\u2019 composed of Cis11 and Cis12 (Figure 3b, c). Importantly, the CISSc \u2018wedges\u2019 consist of two copies of Cis11 and one copy of Cis12 (Figure 3f), resembling the baseplate of Pyocin R2(27). This is in contrast to other previously reported eCIS, whose baseplate wedge comprises only one Cis11/12 component (AlgoCIS, AFP, PVC) and a Cis11 extension forming a cage around the spike (AlgoCIS; Figure 3\u2014figure supplement 4; Xu et al., 2022; Jiang et al., 2019; Desfosses et al., 2019). Furthermore, we did not detect any structural components that resemble tail fiber proteins. This is in line with the bioinformatic analysis of the cis gene cluster (Figure 3a), suggesting the absence of conventional tail fiber genes.\n\nOut of the 19 predicted open-reading frames in the CISSc gene cluster (Figure 3a), nine encoded proteins were present in the final reconstruction, for which all atomic models were built (Figure 3b, c). However, we did not detect a density for CisA in our model, suggesting that CisA is not part of purified CISSc particles but may interact with them via a different mechanism. This finding is also in agreement with mass spectrometry results, which indicate the absence of CisA peptides from purified CISSc particles (Figure 3\u2014source data 1; Casu et al., 2023). We speculate that the purification protocol used to isolate CISSc particles for single-particle analysis may not preserve the CISSc-CisA interaction or that the interaction is too transient and only occurs under specific growth conditions. To better understand how CisA mediates CISSc function, we further characterized CisA in vivo.\n\n### CisA is a bitopic protein\n\nBioinformatic analyses (Casu et al., 2023; Vladimirov et al., 2023) and structural modeling of CisA suggest that CisA consists of a largely unstructured N-terminal region, a transmembrane segment, and a conserved C-terminal domain (CTD) that shares structural similarity to periplasmic substrate-binding domains (Figure 4a). Additional AlphaFold3 (Abramson et al., 2024) modeling using just the ordered C-terminus of CisA, including the transmembrane domain and the CTD (amino acids 285\u2013468), predicts that CisA can oligomerize into a pentamer via the CTD (Figure 4b, c). These findings suggest that CisA may exist in distinct configurations within the cell. To characterize the intracellular localization of CisA, we first generated a strain in which cisA was fused to the N-terminus of mCherry and expressed in trans from a constitutive promoter in the S. coelicolor \u0394cisA mutant. Using fluorescence light microscopy, we consistently observed a CisA-mCherry fluorescence signal along the hyphal periphery, indicative of a membrane-associated protein (Figure 4d). In contrast, no fluorescence was observed in WT hyphae carrying an empty plasmid (Figure 4e). Next, we tested if CisA is indeed localized to the membrane in vivo by performing cellular fractionation experiments. We separated soluble proteins from membrane proteins using whole cell lysates from the S. coelicolor WT or the \u0394cisA mutant that was complemented with a cisA-3xFLAG fusion expressed in trans from a constitutive promoter. Our analysis confirmed that CisA-3xFLAG co-sedimented with cell membranes, while the cytoplasmic transcription factor WhiA could only be detected in the soluble protein fraction (Figure 4f).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig4-v1.jpg)\n\n**Figure 4.:** (a) AlphaFold3 model of CisA colored in pLDDT values. CisA is predicted to contain a largely unstructured N-terminal domain, a transmembrane domain (TM), and a conserved C-terminal domain (CTD). (b) Confidence scores for the predicted oligomeric configuration of CisA. Shown are the predicted template modeling (pTM) and the predicted interface pTM scores (ipTM) obtained from n=5 predictions per CisA configuration. An ipTM score greater than 0.7 indicates a likely protein\u2013protein interaction. CisA aa 285\u2013468, including the transmembrane domain and the CTD (amino acid 285\u2013468), was used as input sequences for modeling. (c) AlphaFold3 model of a CisA (amino acids 285\u2013468) pentamer and the corresponding predicted alignment error (PAE) plot. (d, e). Representative micrographs (left panels: phase contrast, Ph3; right panel: mCherry) of strains of S. coelicolor vegetative hyphae either constitutively expressing CisA-mCherry (\u0394cisA/cisA-mcherry) in trans (d) or WT cells carrying an empty vector (e.v.) to control for background fluorescence (e). Box shows a magnified region of hyphae with CisA-mCherry accumulation in the cellular periphery. Bars, 5 \u00b5m. (f) Western blot of the cellular fractionation of samples from the S. coelicolor WT or the \u2206cisA mutant constitutively expressing a CisA-3xFLAG fusion in trans. Lysate and soluble and membrane fractions were probed for the presence of CisA-3xFLAG with an \u03b1-FLAG antibody (top). Fractionation efficiency was assessed using an \u03b1-WhiA antibody to detect the soluble transcription factor WhiA (bottom). The same volumes for each fraction were loaded and analyzed by immunoblotting. CisA-3xFLAG was detected in the lysate and the membrane fraction. Asterisks denote non-specific signals. The experiment was performed in biological duplicates, and shown is a representative image. (g, h) Experimental determination of the CisA membrane topology using the dual phoA-lacZ\u03b1 reporter in E. coli. The schematic diagram (g) depicts the four CisA constructs used in the assay and indicates the relevant amino acid (aa) deleted in the three CisA mutant derivatives. The analysis of colony coloration (h); pink coloration for cytosolic proteins and blue coloration for periplasmic proteins indicates that the CisA N-terminus is localized in the cytoplasm and the CisA C-terminus is localized to the periplasm, and this topology is dependent on the transmembrane domain (TM). E. coli strains carrying an empty reporter plasmid or reporter plasmids with the Streptomyces genes for SepH (cytoplasmic) and RsbN (periplasmic) were used as controls. Note that the expression of full-length CisA in E. coli is toxic, resulting in reduced growth and a lighter blue coloration.\n\nNext, we investigated the topology of CisA in the membrane using a dual phoA-lacZ\u03b1 reporter system in E. coli. The reporter activity can be directly visualized on indicator plates based on the complementary activities of the cytoplasmic reporter \u03b2-galactosidase LacZ (magenta coloration) and the periplasmic reporter alkaline phosphatase PhoA (blue coloration; Alexeyev and Winkler, 1999). We engineered E. coli strains that expressed a C-terminal fusion of CisA variants to the PhoA-LacZ\u03b1 reporter, including full-length CisA and CisA variants that carried either a deletion in the predicted transmembrane domain and/or the putative periplasmic domain (Figure 4g). In addition, we included three controls, including (1) cells carrying the empty reporter plasmid, resulting only in cytoplasmic \u03b2-galactosidase activity, (2) cells expressing a PhoA/LacZ fusion to the Streptomyces cytoplasmic cell division protein SepH, and (3) cells expressing a PhoA/LacZ fusion to the periplasmic domain of the Streptomyces membrane protein RsbN (Ramos-Le\u00f3n et al., 2021; Bibb et al., 2012). The results of this assay confirmed that CisA is a bitopic protein with an N-terminus (amino acids 1\u2013285) located in the cytoplasm and a C-terminus (amino acids 310\u2013468) present in the periplasm of E. coli (Figure 4h).\n\nCollectively, our results demonstrate that CisA is a membrane protein comprised of a flexible cytoplasmic N-terminal domain and a periplasmic C-terminal domain that is predicted to facilitate CisA oligomerization.\n\n### CisA is essential for the cellular function of CISSc\n\nWe previously established a fluorescence-based assay to show that the production of functional CISSc particles results in a significantly reduced viability of Streptomyces hyphae exposed to exogenous stress, including treatment with the membrane-pore forming antibiotic nisin, UV radiation, or the protonophore carbonyl cyanide 3-chlorophenylhydrazone (CCCP; Casu et al., 2023). This viability assay is based on the measurement of the ratio of two fluorescent markers, namely cytoplasmic sfGFP produced by viable intact hyphae and the membrane dye FM5-95 to detect intact as well as partially lysed hyphae. Using this assay, we tested whether CisA was essential for CISSc-mediated cell death and determined the relative viability of the WT, the \u0394cisA, and the complemented cisA (\u0394cisA/cisA+) strains expressing cytosolic sfGFP. We compared cells exposed to a sublethal concentration of nisin (1 \u00b5g/ml for 90 min) to cells not exposed to antibiotic stress. All three strains were found to express CISSc assemblies under these growth conditions (Figure 5\u2014figure supplement 1).\n\nWithout nisin stress, all three strains exhibited a similar sfGFP/FM5-95 ratio, indicating no significant difference in viability (Figure 5a, c). As previously observed (Casu et al., 2023), the viability of the WT was dramatically reduced in response to nisin stress. In contrast, the viability of \u0394cisA hyphae was unaffected by nisin stress and comparable to the viability of untreated cells. This phenotype could be completely reversed by complementing the \u0394cisA deletion in trans (Figure 5b, d). Notably, the \u0394cisA strain phenocopies CISSc knockout and non-contractile mutants we analyzed previously (Casu et al., 2023). Thus, we conclude that CisA is required for CISSc-mediated cell death in response to stress.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig5-v1.jpg)\n\n**Figure 5.:** (a-d) Light microscopy-based viability assay showing that CISSc does not mediate cell death in cisA-deficient hyphae in response to exogenous stress. Shown are representative micrographs of the WT/sfGFP, the \u2206cisA/sfGFP, and the complemented \u2206cisA/cisA+/sfGFP mutant expressing cytosolic sfGFP (indicator for live cells). Strains were grown for 48 hr and then either incubated without (a) or with (b) the membrane-disrupting antibiotic nisin (1 \u00b5g/ml nisin for 90 min). Samples were briefly vortexed to break up mycelial clumps and subsequently stained with the fluorescent membrane dye FM5-95. Bars, 10 \u00b5m. Z-stacks were taken of the samples, and the resulting relative fluorescence ratios of sfGFP to FM5-95 are shown in c, d. WT and \u2206cisA/cisA+ + cells showed a significantly higher rate of cell death in response to nisin treatment than \u2206cisA cells. There is no significant difference in the viability of the tested strains in the absence of nisin. Experiments were performed in three biological replicates, as indicated by the green, gray, and magenta data points. Black lines indicate the mean ratio derived from biological triplicate experiments (n=100 images per replicate). ns (not significant) and **** (p\u2009<\u20090.0001) were determined using a one-way ANOVA and Tukey\u2019s post-test. (e) Visualization of spore production in WT, \u2206cisA mutant, and \u2206cisA/cisA+ reveals accelerated cellular development and sporulation of the \u2206cisA mutant. Shown are representative brightfield images of surface impressions of plate-grown colonies of each strain taken at the indicated time points. Only sporulating hyphae will attach to the hydrophobic surface of the cover glass. Insets show magnified regions of the colony surface containing spores and spore chains. Bars, 50 \u00b5m. (f) Quantification of sporulation shown in (e) via counts of colony-forming units (c.f.u.). The graph shows a sixfold higher c.f.u. count at 72 h in the \u2206cisA mutant. Strains were grown on R2YE agar, and spores were harvested after 48 hr, 72 hr, and 96 hr of incubation. Data show mean \u00b1 s.d. obtained from biological triplicate experiments. ns (not significant) and **** (p\u2009<\u20090.0001) were determined using a one-way ANOVA and Tukey\u2019s post-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative negative-stain electron micrographs of purified CISSc particles from the WT/sfGFP, the \u2206cisA/sfGFP mutant, and the \u2206cisA/\u2206cisA+/sfGFP complemented mutant exposed to no stress (upper row) or 1 \u00b5g/ml nisin (lower row). No differences were observed between the overall structure of CISSc particles. These experiments were performed three independent times. Bars, 100 nm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Quantification of total actinorhodin production by the WT, the \u2206cisA mutant, and the complemented \u2206cisA/\u2206cisA+ mutant grown in R2YE medium, revealing reduced actinorhodin production in the \u2206cisA mutant. Samples were taken at the indicated time points. Actinorhodin was extracted and quantified by measuring the optical density OD640 of the culture supernatant and normalized to the wet cell pellet weight. Analyses were performed in biological triplicate experiments. The mean values and standard error are shown. ns (not significant) and **** (p\u2009<\u20090.0001) were calculated using one-way ANOVA and Tukey\u2019s post-test.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig5-figsupp3-v1.jpg)\n\nTo further test the dependence of CISSc function on CisA, we conducted additional in vivo assays. Previous studies showed that the absence of functional CISSc impacted the timely differentiation of Streptomyces hyphae into chains of spores, resulting in accelerated cellular development and reduced secondary metabolite production (Casu et al., 2023; Vladimirov et al., 2023). Here, we repeated these analyses using the WT, the \u0394cisA mutant, and the complemented mutant (\u0394cisA/cisA+). All strains consistently completed their life cycle and synthesized spores after 96 hrs of growth on solid medium (Figure 5e). Importantly, unlike the WT and the \u0394cisA/cisA+ strain, \u0394cisA mutant colonies sporulated markedly earlier (+ hr). These findings were further corroborated by quantifying the number of spores produced by each strain under the same experimental conditions (Figure 5f). Finally, we examined the effect of a cisA deletion on secondary metabolite production by quantifying the level of actinorhodin production in S. coelicolor (Malpartida and Hopwood, 1984). Compared to the WT and the complemented mutant strain (\u2206cisA/cisA+), the \u0394cisA mutant showed significantly reduced levels of actinorhodin production (Figure 5\u2014figure supplement 2). Our data therefore supports the conclusion that the cellular function of CISSc in S. coelicolor depends on CisA, and its absence impacts the timely cellular and chemical differentiation of S. coelicolor hyphae.\n\n## Discussion\n\nHere, we identify CisA as an essential membrane-associated factor that mediates the cellular function of CISSc particles in Streptomyces coelicolor. In the absence of CisA, CISSc particles are unable to contract in the cellular context (Figure 2). Similar to a CISSc deletion or non-contractile mutant (Casu et al., 2023), the deletion of cisA decreases the induction of cell death upon stress, which in turn affects cellular development and secondary metabolite production (Figure 5). The mechanistic aspects of this distinct mode of action of CISSc are discussed below.\n\nA conserved feature of all previously studied CIS is the requirement of the contractile apparatus to bind to a membrane before firing. This can be achieved in various ways, resulting in the classification of CIS into distinct modes of action. First, T6SS are anchored to the cytoplasmic membrane of the host cell by a trans-envelope complex spanning from the cytoplasm to the inner membrane, periplasm, and outer membrane (Rapisarda et al., 2019; Lien et al., 2024; Bongiovanni et al., 2024). Second, contractile phages and eCIS bind to the surface of their target cell via tail fibers, which are typically connected to the baseplate and transmit the signal for firing to the baseplate (Xu et al., 2022; Jiang et al., 2019; Ouyang et al., 2024). Third, tCIS are anchored to thylakoid membrane stacks in cyanobacteria by an extension of their baseplate (Weiss et al., 2022). Finally, and in contrast to the previously described CIS, we demonstrate that intracellular CISSc particles from Streptomyces do not contain structural components that can directly bind to the host membrane. Our data suggest that CisA is required to mediate an interaction of CISSc with the cytoplasmic membrane prior to firing (Figure 6). This interaction may occur directly through the binding of CISSc particles to the membrane protein CisA, or interaction with an as-yet unknown factor. To explore this idea, we performed an in silico prediction of protein-protein interactions between monomeric CisA and CISSc components using AlphaFold2-Multimer (McLean, 2024; Figure 6\u2014figure supplement 1a). Interestingly, this analysis identified the baseplate component Cis11 as a significant hit and possible interaction partner of CisA (Figure 6\u2014figure supplement 1b\u2013e). Importantly, such a protein-protein interaction would be consistent with our cryoEM structure (Figure 3b\u2013f), which shows a peripheral surface-exposed position of Cis11 in the baseplate complex of extended CISSc.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig6-v1.jpg)\n\n**Figure 6.:** In response to exogenous stress or an unknown cellular signal, membrane-bound CisA either directly or indirectly mediates the association of free-floating CISSc particles with the cytoplasmic membrane. This interaction triggers CISSc firing and cell death. In hyphae lacking cisA, CISSc particles mostly remain in their extended (non-contracted) state, leading to reduced hyphal cell death and, consequently, affecting the developmental life cycle of Streptomyces.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) An AlphaFold2-Multimer-based protein-protein interaction screen between monomeric CisA and the 19 gene products of the CISSc gene cluster suggests an interaction between CisA and the baseplate component Cis11. The likelihood of a protein-protein interaction was ranked based on the interface pTM (ipTM) confidence score, with an ipTM greater than 0.7 indicating a potential protein-protein interaction. (b) Zoomed-in view of the SPA-cryoEM structure of the CISSc baseplate complex (Figure 3b, d), illustrating the peripheral and surface-exposed position of Cis11. (c) The AlphaFold3 model of the CisA-Cis11 complex. The conserved C-terminal domain (CTD) of CisA is in the periplasm. (d) The AlphaFold3 predicted aligned error (%) heatmap plot of the concatenated Cis11 and CisA input sequence. (e) Zoomed-in view of the relevant side chains at the CisA-Cis11 interface.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104064/elife-104064-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) Schematic showing the CisA domain organization. Relevant amino acid (aa) positions are shown above. TM, transmembrane domain. (b) AlphaFold2-Multimer based protein-protein interaction screen between monomers of CisA and truncated versions of CisA and Cis11. The likelihood of a protein-protein interaction was ranked based on the interface pTM (ipTM) confidence score. (c, d) Predicted CisA-Cis11 complexes using truncated versions of CisA (aa 1\u2013285 and 1\u2013310) show that the largely unstructured cytosolic portion of CisA is required to interact with Cis11. (c) The AlphaFold3 predicted aligned error (%) heatmap plots of the concatenated Cis11 and truncated CisA 1\u2013285 and CisA 1\u2013310 input sequences. (d) The AlphaFold3 model of the CisA (aa1-285)-Cis11 (left) and CisA (aa1-310)-Cis11 (right) complexes.\n\nAdditional structural modeling with truncated versions of CisA in complex with Cis11 further supports the idea that the largely unstructured cytosolic portion of CisA is required to interact with Cis11 (Figure 6\u2014figure supplement 2). We have been unable to confirm a direct interaction between CisA and Cis11 because the expression of cisA is toxic in E. coli, which prevented the experimental analysis of the CisA-Cis11 interaction using co-purification approaches and bacterial two-hybrid studies. While we currently cannot exclude the possibility that the proposed CisA-Cis11 interaction involves an additional unknown factor, we did detect CisA peptides in crude purifications of CISSc from nisin-stressed cells (Figure 3\u2014source data 1). This would be consistent with a transient and/or short-lived interaction of CISSc particles with the membrane and CisA. In agreement with this idea, we rarely observed extended CISSc assemblies associated with the cytoplasmic membrane via their baseplate in WT cells (Figure 2c).\n\nWe further speculate that CisA may not only serve as a mediator for the interaction of CISSc with the cytoplasmic membrane but also as a sensor and checkpoint for inducing cell death under specific stress conditions or in response to cellular signals. Notably, protein structure searches with Foldseek (van Kempen et al., 2024) using just the conserved extra-cytoplasmic C-terminal CisA domain (amino acids 310\u2013468) suggest that this domain shares similarity with solute-binding protein domains. Thus, the C-terminal CisA domain could potentially be involved in directly or indirectly sensing stress signals. Recognition or binding of such a signal by monomeric CisA could trigger a conformational change that results in CisA oligomerization, which in turn could lead to an \u2018activated\u2019 CisA configuration that is primed to mediate the recruitment of CISSc assemblies to the cytoplasmic membrane, followed by firing.\n\nIt is conceivable that the lethal consequences of CISSc firing for the producing cell may have driven the evolution of a stepwise mechanism, involving a checkpoint that prevents self-inflicted cell death by accidental firing. Such a stepwise mechanism would ensure that the CISSc remain in a free-floating and safe state within the cytoplasm until a stress signal induces CisA-mediated CISSc contraction.\n\n## Materials and methods\n\n### Bacterial strains, plasmids, and oligonucleotides\n\nBacterial strains, plasmids, and oligonucleotides used in this study are listed in Supplementary file 1 and Supplementary file 2. Plasmids were generated using either standard restriction-ligation or assembled using the Gibson Assembly Master Mix (NEB) or In Vivo Assembly. All plasmids were verified by DNA sequencing. Escherichia coli strains were cultured in LB, SOB, or DNA medium. E. coli strains TOP10, DH5\u03b1, and NEB5\u03b1 were used to propagate plasmids and cosmids, E. coli strain BW25113/pIJ790 for recombineering cosmids and E. coli ET12567/pUZ8002 for interspecies conjugation. When required, media was supplemented with antibiotics at the following concentrations: 100 \u00b5g/ml carbenicillin, 50 \u00b5g/ml apramycin, 50 \u00b5g/ml kanamycin, 50 \u00b5g/ml hygromycin.\n\nStreptomyces coelicolor strains were cultivated in LB, TSB, TSB-YEME, or R2YE liquid medium at 30 \u00b0C in baffled flasks or flasks with springs, at 250 rpm or grown on LB, SFM, R2YE medium solidified with 1.5% (w/v) Difco agar (Chater et al., 2000). Antibiotics were added at the following concentrations: 25 \u00b5g/ml apramycin, 50 \u00b5g/ml kanamycin, 25 \u00b5g/ml hygromycin, 12.5 \u00b5g/ml nalidixic acid.\n\n### Construction of the S. coelicolor \u0394cisA mutant\n\nThe \u03bb RED homologous recombination system was used to isolate gene replacement mutations using PCR-directed mutagenesis (ReDirect) of the S. coelicolor cosmid StD8A containing the cis gene cluster (Gust et al., 2003; Gust et al., 2004). The cisA coding sequence (SCO4242) was replaced with the aac3(IV)-oriT resistance cassette from pIJ773. The mutant cosmid (pSS684) was introduced into E. coli ET12567/pUZ8002, followed by conjugation into S. coelicolor M145. Exconjugants that had successfully undergone double-homologous recombination were identified by screening for apramycin resistance and kanamycin sensitivity. The deletion of cisA was subsequently verified by PCR.\n\n### Sheath preparation of CISSc\n\nS. coelicolor strains were grown in 30 ml TSB, TSB-YEME or R2YE liquid medium for 48 hr. Cells were pelleted by centrifugation (7000 \u00d7 g, 10 min, 4 \u00b0C), resuspended in 5 ml lysis buffer (150 mM NaCl, 50 mM Tris-HCl, 0.5\u00d7CellLytic B (Sigma-Aldrich), 1% Triton X 100, 200 \u00b5g/ml lysozyme, 50 \u03bcg/ml DNAse I, pH 7.4), and incubated for 1 hr at 37 \u00b0C. Cell debris was removed by centrifugation (15,000 \u00d7 g, 15 min, 4 \u00b0C), and cleared lysates were subjected to ultra-centrifugation (150,000 \u00d7 g, 1 hr, 4 \u00b0C). Pellets were resuspended in 150 \u00b5l resuspension buffer (150 mM NaCl, 50 mM Tris-HCl, supplemented with protease inhibitor cocktail [Roche], pH 7.4). CISSc sheath preparations were analyzed by negative stain EM imaging (Ohi et al., 2004) and mass spectrometry at the Functional Genomics Center Z\u00fcrich.\n\nTo purify non-contractile CISSc particles from S. coelicolor (SS393), cleared cell lysates were subjected to ultracentrifugation using a sucrose cushion (20 \u2009mM Tris pH 8.0, 150 \u2009mM NaCl, 50 \u2009mM EDTA, 1% Triton X 100, 50% [w/v] sucrose; Casu et al., 2023). The sucrose cushion alongside 1 mm of liquid above and residual bacterial contaminants were removed by centrifugation at 15,000 \u00d7 g. Samples were then subjected to a second round of ultracentrifugation without a sucrose cushion (150,000 \u00d7 g, 1 h, 4 \u00b0C), and resulting cell pellets were resuspended in buffer (50 mM Tris, 150 mM NaCl). These crude samples were then further purified by gradient ultracentrifugation (10\u201350% continuous gradient made with BIOCOMP gradient master IP model 107 gradient forming instrument) at 100,000 \u00d7 g for 1 h using a SW55 Ti rotor. The gradient was analyzed in 11 fractions of 500 \u00b5l, which were imaged by negative stain EM. The fractions, which contained CISSc particles, were pooled and used for further experiments.\n\n### Negative stain electron microscopy\n\n4 \u00b5l of purified CISSc sheath particles were adsorbed to glow-discharged, carbon-coated copper grids (Electron Microscopy Sciences) for 60 s, washed twice with milli-Q water and stained with 2% phosphotungstic acid for 45 s. The grids were imaged at room temperature using a Thermo Fisher Scientific Morgagni transmission electron microscope (TEM) operated at 80 kV.\n\n### Mass spectrometry analysis\n\nTo confirm the presence of predicted CISSc components, isolated sheath particles were subjected to liquid chromatography\u2013mass spectrometry analysis (LC\u2013MS/MS). These experiments were conducted at the Functional Genomics Center Z\u00fcrich. First, the samples were digested with 5 \u2009\u00b5l of trypsin (100 \u2009ng/\u00b5l in 10 \u2009mM HCl) and microwaved for 30 \u2009min at 60 \u2009\u00b0C. The samples were then dried, dissolved in 20 \u2009\u00b5l ddH20 with 0.1% formic acid, diluted in 1:10, and transferred to autosampler vials for liquid chromatography with tandem mass spectrometry analysis. A total of 1 \u2009\u00b5l was injected on a nanoAcquity UPLC coupled to a Q-Exactive mass spectrometer (Thermo Fisher). Database searches were performed by using the Mascot SwissProt and tremble_streptomycetes search programs. For search results, stringent settings have been applied in Scaffold (1% protein false discovery rate, a minimum of two peptides per protein, 0.1% peptide false discovery rate). The results were visualized by Scaffold software (Proteome Software Inc, Version 4.11.1).\n\n### Protein gel electrophoresis and western blotting\n\nProtein samples were boiled at 95 \u00b0C for 5 min and separated by a 4\u201320% Mini-PROTEAN TGX Stain-Free SDS PAGE (Bio-Rad) or 12% Tris-Glycine SDS PAGE (Invitrogen) and, if required, visualized using InstantBlue Coomassie Protein Stain or ReadyBlue Protein Gel Stain (Sigma-Aldrich).\n\nFor immunoblot analysis, cells were grown in biological triplicate for 48 hr in TSB and 2 ml aliquots of each culture were pelleted and washed once with 1 x PBS. Cell pellets were resuspended in 0.4 ml of sonication buffer (20 mM Tris pH 8.0, 5 mM EDTA, 1 x EDTA-free protease inhibitors [Sigma-Aldrich]) and subjected to sonication at 4.5 micron amplitude for seven cycles of 15 s on / 15 s off. Samples were centrifuged at 17,000 \u00d7 g for 15 min at 4 \u00b0C. Protein concentration in cleared cell lysate supernatants was determined by Bradford Assay (Bio-Rad). Equivalent total protein concentrations (1 mg/ml) were assayed using the semi-dry western blot transfer. The gel was transferred to a PVDF membrane (Bio-Rad) and probed with the appropriate antibody diluted in TBS-T or using the iBIND buffer system (Thermo Fisher): Rabbit anti-FLAG ([Sigma-Aldrich] F7425, 1:2500), Rabbit anti-WhiA (Bush et al., 2013, 1:2500), and Goat Anti-Rabbit-HRP (Abcam Ab6721, 1:5000). To visualize HRP-conjugated antibodies, membranes were incubated with SuperSignal West Femto ECL solution (Thermo Fisher).\n\n### Cellular fractionation\n\nTo fractionate membrane and soluble proteins from S. coelicolor (WT, SS576), cells were grown for 48 hr in 50 ml TSB/YEME and the entire culture volume was pelleted by centrifugation. Cell pellets were resuspended in 1/10 volume of lysis buffer (0.2 M Tris-HCl, pH 8, 10 mg/mL lysozyme, and 1\u00d7EDTA-free protease inhibitors; [Roche]), incubated for 30 min at 37 \u00b0C, and then briefly cooled on ice before lysed by sonication (11x15 s on/off at 50% power at 8 microns on ice). Cell debris was removed by centrifugation at 16,000 \u00d7 g for 20 min and the supernatant was subsequently subjected to two additional rounds of centrifugation. The cleared cell lysate was subjected to ultracentrifugation for 1 hr at 150,000v\u00d7 g at 4 \u00b0C to separate the soluble proteins from membrane proteins. Sedimented membrane proteins were resuspended and washed twice in 1 volume of wash buffer (60 mM Tris-HCl, 200 mM NaCl, pH 8, 0.2 mM EDTA, and 0.2 M sucrose) at 150,000 \u00d7 g at 4 \u00b0C for 1 hr. The wash step was repeated one final time with the wash buffer containing 8 M urea to remove traces of membrane-associated proteins (Gallego-Parrilla et al., 2024). The final pellet was dissolved in 1/10 of the initial volume with wash buffer (no urea). Equi-volume amounts of fractions were mixed with 2 x SDS sample buffer and analyzed by immunoblotting.\n\n### Membrane protein topology analysis in E. coli\n\nThe coding sequence of CisA was inserted in the dual Pho-LacZ\u03b1 reporter plasmid pKTop, which encodes an E. coli alkaline phosphatase fragment PhoA22-472 fused in frame after the \u03b1-fragment of \u03b2-galactosidase LacZ\u03b14-60 (Alexeyev and Winkler, 1999). For membrane protein topology, E. coli TG1 was transformed with the pKTop and derivatives. Membrane protein topology was assayed by plating the resulting reporter strains on dual-indicator plates containing LB agar supplemented with 80 \u03bcg/ml 5-bromo-4-chloro-3-indolyl phosphate disodium salt (X-Phos; Sigma-Aldrich, RES1364C-A101X) and 100 \u03bcg/ml 6-chloro-3-indolyl-\u03b2-d-galactoside (Red-Gal; Sigma-Aldrich, B6149) as indicators, 1 mM IPTG, and 50 \u03bcg/ml kanamycin. A periplasmic or extracellular location of the reporter fusion results in higher alkaline phosphatase activity (blue color), whereas a cytosolic location of the reporter leads to higher \u03b2-galactosidase activity (magenta color). Plates were incubated for 2 days at 37 \u00b0C and then scanned.\n\n### Vitrified sample preparations\n\nFor single-particle cryoEM (SPA), the S. coelicolor non-contractile CIS particles were purified as described above and vitrified using a Vitrobot Mark IV (Thermo Fisher Scientific). 4 \u00b5l of samples were applied twice on glow-discharged 200 mesh Quantifoil copper grids (R 2/2) which were manually coated with a layer of 1 nm carbon. Grids were blotted for 5.5 s and plunge-frozen in liquid ethane-propane mix (37 %/63 %). Frozen grids were stored in liquid nitrogen until loading into the microscope.\n\nFor cryo-electron tomography (cryoET), Streptomyces cells were mixed with 10 nm Protein A conjugated colloidal gold particles (1:10 v/v, [Cytodiagnostics]) and 4 \u00b5l of the mixture was applied to a glow-discharged holey-carbon copper EM grid (R2/1 or R2/2, [Quantifoil]). The grid was automatically blotted from the backside for 4\u20136 s in a Mark IV Vitrobot by using a Teflon sheet on the front pad and plunge-frozen in a liquid ethane-propane mixture (37 %/63 %) cooled by a liquid nitrogen bath.\n\n### SPA data collection and image processing\n\n44,925 movies were collected on Titan Krios microscope (Thermo Fisher Scientific), operated at 300 keV equipped with K3 direct electron detector, operating in counting mode, and using a slit width of 20 eV on a GIF-Quantum energy filter (Gatan). The automated data collection was conducted with EPU software (Thermo Fisher Scientific) with a final pixel size of 1.065 \u00c5/pix over 40 frames with a total dose of 50 e-/\u00c52. The targeted defocus was set between \u20131.6 and \u20132.8 \u00b5m with 0.2 \u00b5m increment.\n\nMovie alignments with dose-weighting were performed in MotionCor2 software (Zheng et al., 2017) with a gain reference estimated a posteriori Afanasyev et al., 2015 followed by standard in-house pipeline of manual inspection and selection of 38,845 micrographs (Afanasyev, 2023) for further processing in cryoSPARC package v4.0.3 (Punjani et al., 2017). Due to the low concentration of particles and the presence of other contaminants in the sample, automatic particle picking appeared challenging, and we developed a CIS-specific approach for efficient picking of the cap and baseplates. In this approach, CISSc particles were manually selected as filaments (start-to-end) on 920 micrographs and used for training a crYOLO (Wagner et al., 2019) picking model (Figure 3\u2014figure supplement 1). The large size of the training set appeared essential for successful picking; we could not get rid of a large number of false-positive picks, but there were not so many false-negative picks. Then, CISSc particles were picked in crYOLO as filaments, followed by the extraction of the ends of the \u2018filaments\u2019 using the star_modif.py script (Afanasyev, 2023). Particle coordinates were imported in cryoSPARC, where 211,041 particles were extracted at a large box size of 756 pixels and binned to 64 pixels for initial 2D classification, which allowed us to separate initial particle sets corresponding to the CISSc cap (36,569 particles) and CISSc baseplate (43,087 particles; Figure 3\u2014figure supplement 1).\n\nTwo subsets of this dataset were processed separately in cryoSPARC. For the cap subset, a standard cryoSPARC single-particle processing approach was applied, including gradual iterative 2D classification rounds, followed by selection of good classes and particle re-extraction at finer sampling. The main challenge was the proper centering of the particles selected on the end of elongated filament-like objects with repeating patterns (sheath-tube module of CIS), hampering the alignments. Ab initio model generation with applied C6 symmetry was hampered by poor centering of 2D classes due to the elongated nature of the particles (Figure 3\u2014figure supplement 1). Homo-refinement with this reference was performed, followed by particle re-extraction and one more round of ab initio model generation with applied C6 symmetry (Figure 3\u2014figure supplement 1). The new 3D reconstruction appeared reliable and was used for further iterative 3D refinements (Homo-refinement and NU-refinements) accompanied by 2D classification and CTF-refinement rounds to exclude particles with wrong Euler angle assignments. The final 3.4 \u00c5 resolution map with imposed C6 symmetry resulted from 19,218 particles.\n\nThe baseplate subset was processed using the same approach, resulting in a 3D reconstruction with imposed C6 symmetry and a resolution of 3.5 \u00c5 from 22,980 particles (Figure 3\u2014figure supplement 1). The tip of the baseplate has C3 symmetry; therefore, to solve that part of the map correctly, we exported that particle stack to Relion4 (Scheres, 2012) and took advantage of 2D classification in Relion to select 18,124 particles, corresponding to the best 2D class averages. 3D refinement with relaxed symmetry resulted in a 3.8 \u00c5 3D resolution reconstruction with imposed C3 symmetry.\n\n### Cryo-electron tomography\n\nIntact Streptomyces cells were imaged by cryoET as described previously (Weiss et al., 2017). Images were recorded using a Titan Krios 300 kV microscope (Thermo Fisher Scientific) equipped with a Quantum LS imaging filter operated at a 20 eV slit width and with K3 Summit direct electron detectors (Gatan). Tilt series were collected using a bidirectional tilt scheme from \u201360 to +60\u00b0 in 2\u00b0 increments. Total dose was 130\u2013150 e-/\u00c52 and defocus was kept at \u20138 \u00b5m. Tilt series were acquired using SerialEM (Mastronarde, 2005), drift-corrected using alignframes, and reconstructed using the IMOD program suite (Kremer et al., 1996). To enhance contrast, tomograms were deconvolved with a Wiener-like filter \u2018tom_deconv\u2019 (Tegunov and Cramer, 2019).\n\n### Structural modeling of the CISSc complex\n\nThe map qualities of different modules of CISSc (cap and baseplate) allowed for de novo structural modeling (Figure 3\u2014figure supplements 1 and 2). The atomic models of SCO4243-4248, SCO4252-4253, and SCO4260 were built de novo using COOT (Emsley et al., 2010). The resulting models were iteratively refined using RosettaCM (Song et al., 1993) and real-space refinement implemented in PHENIX (Adams et al., 2010). In cases where protein domains could only be partially modeled, side chains were not assigned. Final model validation was done using MolProbity (Adams et al., 2010), and correlation between models and the corresponding maps was estimated using mtriage (Adams et al., 2010). To illustrate the complete CISSc structure, we generated a composite model by integrating symmetry-related protein subunits into a full model of the CISSc, based on the consistent CISSc length observed both in situ and in vitro (Figure 3b).\n\n### Fluorescence microscopy\n\nFluorescence-based cell viability assays were performed as described previously (Casu et al., 2023). Briefly, to produce cytoplasmic sfGFP in Streptomyces, the coding sequence for sfGFP was introduced downstream of the constitutive promoter ermE* on an integrating plasmid (pIJ10257). The plasmid was introduced by conjugation to S. coelicolor strains (SS430, SS575, SS576). An equal level of cytoplasmic sfGFP in the different strains shown in Figure 5, b was confirmed by western blotting (Figure 5\u2014figure supplement 3). Streptomyces strains were grown in 30 ml of TSB liquid culture at 30 \u00b0C with shaking at 250 rpm for 48 hr. Where appropriate, nisin was added to a final concentration of 1 \u00b5g/ml 90 min prior to imaging. One ml aliquots of each culture were vortexed for 1 min to break up mycelial clumps, centrifuged for 5 min at 15,000 x g, washed twice with 1x PBS, resuspended in 1 ml of 1x PBS containing 5 \u00b5g/ml of the red-fluorescent membrane dye FM5-95 (Invitrogen) and then incubated in the dark at room temperature for 10 min followed by two wash steps with 1 x PBS. Washed cell pellets were resuspended in a total volume of 50 \u00b5l PBS, and 10 \u00b5l of each sample was spotted onto 1% agarose pads and subsequently imaged using the Thunder imager 3D cell culture microscope (Leica). First, tile scan images were acquired using the Las X Navigator plug-in software (Leica Application Suite X, Version 3.7.4.23463), and 100 regions of interest were picked manually. Then Z-stack images were acquired using a HC PL APO 100 x objective with the following excitation wavelengths: GFP (475 nm) and TRX (555 nm). Images were processed using LasX software to apply thunder processing and maximum projection and FIJI to create segmentation and quantify the live (sfGFP)/total cells (FM5-95) area ratio (Schindelin et al., 2012). Statistical analyses were performed on data from biological triplicates (n=100 images for each experiment) using a one-way ANOVA and Tukey\u2019s post-test in GraphPad Prism 9 (Version 9.3.1).\n\nFor imaging the subcellular localization of the CIS adaptor protein in Streptomyces, cells (strain JS69 or S. coelicolor M145) were grown for 48 hr in TSB/YEME liquid medium. Two \u03bcl of each strain were spotted on 1% agarose pads made with water and subsequently imaged. Images were acquired using a Zeiss Axio Observer Z.1 inverted epifluorescence microscope fitted with a sCMOS camera (Hamamatsu Orca FLASH 4), a Zeiss Colibri 7 LED light source, and a Hamamatsu Orca Flash 4.0v3 sCMOS camera. mCherry fluorescence was detected using an excitation/emission bandwidth of 577\u2013603 nm/614\u2013659 nm. Images were collected using Zen Blue (Zeiss) and analyzed using Fiji (Schindelin et al., 2012).\n\n### Cover glass impression of Streptomyces spore chains\n\nSpore titers of relevant strains were determined by dilution plating (Casu et al., 2023). 107 colony-forming units (CFU) of S. coelicolor strains (WT, SS539, SS557) were spread onto R2YE agar plates and grown at 30 \u00b0C. Sterile glass coverslips were gently applied to the top surface of each bacterial lawn at 48 hr, 72 hr, and 96 hrs post-inoculation. Coverslips were then mounted onto glass microscope slides and imaged using a 40 x objective on a Leica Thunder Imager 3D Cell Culture. Images were processed using FIJI (Schindelin et al., 2012).\n\n### Actinorhodin production assay\n\nS. coelicolor strains (WT, SS539, SS557) were inoculated into 30 ml R2YE liquid media at a final concentration of 1.5x106 CFU/ml. Cultures were grown in baffled flasks at 30 \u00b0C overnight. Cultures were standardized to an OD450 of 0.5 and inoculated in 30 ml of fresh R2YE liquid medium. For the quantification of total actinorhodin production, 480 \u00b5l of samples were collected at the indicated time points. 120 \u00b5l of 5 M KOH was added, samples were vortexed and centrifuged at 5000 x g for 5 min. The weight of each tube was recorded. A Synergy 2 plate reader (BioTek) was used to measure the absorbance of the supernatant at 640 nm. The absorbance was normalized by the weight of the wet pellet.\n\n### Structure prediction and in silico protein-protein interaction screen\n\nCisA structural models (monomer and oligomers) and the CisA-Cis11 complex were predicted using AlphaFold3 (Abramson et al., 2024) and further processed using UCSF Chimera (Pettersen et al., 2004) or ChimeraX-1.7.1 (Goddard et al., 2018).\n\nA pairwise in silico screen for possible interactions between CisA and components encoded by the S. coelicolor cis gene cluster (SCO4242-SCO4260) was conducted using the AlphaFold2 Multimer-based LazyAF pipeline (McLean, 2024; Jumper et al., 2021; Mirdita et al., 2022). The confidence metric (ipTM) for the top model from each pairwise interaction was tabulated and visualized using Prism (Version 10.2.2) with ipTM scores >0.7, indicating a possible protein-protein interaction (O\u2019Reilly et al., 2023).\n\n### Bioinformatic analysis of CisA homologs\n\nTo identify CisA homologs, we performed a reciprocal BLAST search in 120 genomes of Streptomyces and other Actinomycete species that were previously reported to include a type IId eCIS (Chen et al., 2019; Vladimirov et al., 2023) using the closely related cisA homologue from Streptomyces albus J1074 (YP_007743954.1) as a query (72% identical to CisA from S. coelicolor). Of these 120 genomes, 75 had a reciprocal hit for CisA (Figure 1\u2014figure supplement 1\u2014source data 1). Protein sequences of CisA homologs were aligned using Clustal Omega (Madeira et al., 2024) and visualized with JalView (Version 2.11.3.3; Waterhouse et al., 2009).\n",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand Johannesburg South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104064.3.sa0](https://doi.org/10.7554/eLife.104064.3.sa0)\n\nThis valuable study provides insights into the structure and function of bacterial contractile injection systems that are present in the cytoplasm of many Streptomyces strains. A convincing high-resolution model of the structure of extended forms of the cytoplasmic contractile injection system assembly from Streptomyces coelicolor is presented, with some investigation of the membrane protein CisA in attachment of the extended assembly to the inner face of the cytoplasmic membrane and the firing of the system. The work expands the current understanding of these diverse bacterial nanomachines.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104064.3.sa1](https://doi.org/10.7554/eLife.104064.3.sa1)\n\nSummary:\n\nThe paper addresses how the S. coelicolor contractile injection system (CISSc) interacts with the membrane, how it contracts and fires, and how it affects both cell viability and differentiation, which it has been implicated to do in previous work from this group and others. The Streptomyces CIS systems have been enigmatic in the sense that they are free-floating in the cytoplasm in an extended form and are seen in contracted conformation (i.e. after having been triggered) mainly in dead and partially lysed cells, suggesting involvement in some kind of regulated cell death. So, how do the structure and function of the CISSc system compare to other types of CIS from other bacteria and phages, does it interact with the cytoplasmic membrane, how does it do that, and is the membrane interaction involved in the suggested role in stress-induced, regulated cell death? The authors address these questions by investigating the role of a membrane protein, CisA, that is encoded by a gene in the CIS gene cluster in S. coelicolor. Further, they show for the first time the structure of the assembled CISSc, purified from the cytoplasm of S. coelicolor, analysed using single-particle cryo-electron microscopy.\n\nStrengths:\n\nThe beautiful visualisation of the CIS system both by cryo-electron tomography of intact bacterial cells and by single-particle electron microscopy of purified CIS assemblies are clearly the strengths of the paper, both in terms of methods and results. Further, the paper provides genetic evidence that the membrane protein CisA is required for the contraction of the CISSc assemblies that are seen in partially lysed or ghost cells of the wild type. The conclusion that CisA is a transmembrane protein and the inferred membrane topology are well supported by experimental data. The cryo-EM data suggest that CisA is not a stable part of the extended form of the CISSc assemblies. These findings raise the question of what CisA does. Interestingly, Alphafold modelling suggests that the cytoplasmic part of CisA interacts directly with the base plate protein Cis11.\n\nWeaknesses:\n\nThe investigations of the role of CisA in function, membrane interaction, and triggering of contraction of CIS assemblies are key parts of the paper and are highlighted in the title. However, the data presented to answer these questions are partially incomplete and have some limitations.\n\nAs an example, although the modelling that suggests interaction between CisA and the base plate protein Cis11 appears compelling, the interaction has not yet been possible to test and verify experimentally. Further, it remains unclear whether or how CisA recruits the CISSc system to the membrane. Overall, the mechanism by which CisA may act on CISSc and cause firing remains largely unclear.\n\nFurther, the paper does not provide new insights into the role of the CISSc system in growth or developmental biology of streptomycetes. The assay of how CisA affects the function of the system involves monitoring stress-induced loss of viability based on loss of cytoplasmic GFP signal, as described in a previous paper. The assay looks only at single hyphal fragments released from mycelial networks or mycelial pellets, and it could have been interesting to observe effects also under other growth conditions. Similarly, the effect on the developmental life cycle is limited to showing accelerated sporulation in the CisA mutant, similar to what was previously shown for mutants lacking other parts of the system. The paper shows that CisA is needed for the observed phenotypic effects of the CISSc system, but the overall biological roles of the CISSc and CisA remain elusive.\n\nConcluding remarks:\n\nThis paper provides new insights into the structure of the unusual subclass of bacterial contractile injection systems (CIS) that is constituted by the cytoplasmically located systems found in streptomycetes. Importantly, the work also describes a membrane protein, CisA, that likely links the CISSc to the cytoplasmic membrane and is required for its function and likely its triggering. The paper will be of large interest in the field, and it will likely be the basis for further and more mechanistic and functional investigations of the Streptomyces CIS systems.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104064.3.sa2](https://doi.org/10.7554/eLife.104064.3.sa2)\n\nSummary\n\nIn this work, Casu et al. have reported the characterization of a previously uncharacterized membrane protein CisA encoded in a non-canonical contractile injection system of Streptomyces coelicolor, CISSc, which is a cytosolic CISs significantly distinct from both intracellular membrane-anchored T6SSs and extracellular CISs. The authors have presented the first high-resolution structure of the extended CISSc structure. It revealed important structural insights of the extended state of this non-canonical CIS.\n\nTo further explore how CISSc interacted with cytoplasmic membrane, they further set out to investigate a membrane protein CisA encoded in the CISSc cluster and previously hypothesized to be the membrane adaptor for CISSc; however, the structure revealed that it was not associated with CISSc. Using a fluorescence microscope and cell fractionation assay, the authors verified that CisA is indeed a membrane-associated protein. They further determined experimentally that CisA had a cytosolic N-terminal domain and a periplasmic C-terminus. The functional analysis of cisA mutant revealed that it is not required for CISSc assembly but is essential for the contraction, as a result, the deletion significantly affects CISSc-mediated cell death upon stress, timely differentiation, as well as secondary metabolite production. Although the work did not resolve the mechanistic detail how CisA interacts with CISSc structure, they used in-silico prediction of protein-protein interactions between monomeric CisA and CISSc components using Alphafold2-Multimer, which identified baseplate protein Cis11 as a potential interaction partner. Such prediction sets out a strong basis for future investigations to explore the molecular mechanistic details how CisA mediates the contraction via interactions with the CIS structural components such as Cis11. Using AlphaFold3, the authors also estimated the oligomerization state of CisA, which can be present as a pentamer. Authors further suggested that such oligomerization is mediated by the interaction of C-terminal solute-binding like domain.\n\nIn general, the work provides solid data and a strong foundation for future investigation toward understanding the mechanism of CISSc contraction, and potentially, the relation between the membrane association of CISSc, the sheath contraction and the cell death.\n\nMajor Strength:\n\nThe paper is well-structured, and the conclusion of the study is supported by solid data and careful data interpretation were presented. The authors provided strong evidence on (1) the high-resolution structure of extended CISSc determined by cryo-EM, and the subsequent comparison with known eCIS structures, which sheds light on both its similarity and different features from other subtypes of eCISs in detail; (2) the topological features of CisA using fluorescence microscopic analysis, cell fractionation and PhoA-LacZ\u03b1 reporter assays, (3) functions of CisA in CISSc-mediated cell death and secondary metabolite production, likely via the regulation of sheath contraction, (4) structural prediction of the oligomerization state of CisA and potential interaction partners of CIS structure.\n\nWeakness:\n\nDue to technical limitations, authors are not able to experimentally demonstrate the direct interaction between CisA with baseplate complex of CISSc, since they could not express cisA in E. coli due to its potential toxicity. Therefore, there is a lack of biochemical analysis of direct interaction between CisA and baseplate wedge. However, they have provided solid AlphaFold2-multimer prediction data and identified baseplate protein Cis11 as a potential interaction partner. Such predictions will guide future work towards biochemical analysis to verify such interaction.\n\nWhile there is no direct evidence showing that CisA is responsible for tethering CISSc to the membrane upon stress, and the spatial and temporal relation between membrane association and contraction remains unclear, I recognize that this is above the scope of the current work, so I would expect further investigation to address these questions in future.\n\nConclusion\n\nOverall, the work provides a valuable contribution to our understanding on the structure of a much less understood subtype of CISs, which is unique compared to both membrane-anchored T6SSs and host-membrane targeting eCISs. Authors have successfully demonstrated the role of CisA in the contraction of CISSc, along with solid and detailed analysis of the contraction state of the particles with or without CisA using cryo-ET. Using structural modeling, authors also identified the potential oligomerization state and possible interaction partner within the CIS particle.\n\nImportantly, the work serves as a strong foundation to further investigate how the sheath contraction works here. The work contributes to expanding our understanding of the diverse CIS superfamilies, with significant novelty.\n",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cfb2700d-d6c1-4838-b31a-cffe385fb5fd",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C1",
+      "claim": "CISSc are localized in the cytoplasm of Streptomyces coelicolor.",
+      "claim_type": "EXPLICIT",
+      "source": "CIS from Streptomyces coelicolor (CISSc) are localized in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by cryo-electron tomography imaging showing free-floating particles in the cytoplasm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "3b956a52-d8bc-4d55-be44-ff9f92260b83",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C2",
+      "claim": "CISSc induce cell death under stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stress, they induce cell death and impact the Streptomyces life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data from viability assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "173eec44-5296-4e2f-ae13-decfa863d6ac",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C3",
+      "claim": "CISSc contraction and function depend on CisA.",
+      "claim_type": "EXPLICIT",
+      "source": "We show by cryo-electron tomography imaging and in vivo assays that CISSc contraction and function depend on CisA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by experimental data from cryoET and functional assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "f236cdd3-31d1-4b78-a01c-ba504bf9040c",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C4",
+      "claim": "CisA is a membrane protein with a cytoplasmic N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our findings show that CisA is a membrane protein with a cytoplasmic N-terminus predicted to interact with CISSc components, thereby providing a possible mechanism for mediating CISSc recruitment to the membrane and subsequent firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by cellular fractionation experiments and topology assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "8660e94e-a6cf-48d7-bb26-bd4d0790b935",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C5",
+      "claim": "CisA is not part of the CISSc complex structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-particle cryo-electron microscopy, we provide an atomic model of the extended CISSc apparatus; however, CisA is not part of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and confirmed by the cryoEM structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "bf57dfbc-fd4c-4343-aaa2-bf9136d705ea",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C6",
+      "claim": "CIS function in multicellular bacteria is distinct from type VI secretion systems and extracellular CIS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that CIS function in multicellular bacteria is distinct from type VI secretion systems and extracellular CIS, and possibly evolved due to the role CISSc play in regulated cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "d3000071-136c-4045-a93c-47d23a1e9afe",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C7",
+      "claim": "CIS are evolutionarily and structurally related to contractile tails of bacteriophages.",
+      "claim_type": "EXPLICIT",
+      "source": "CIS are evolutionarily and structurally related to contractile tails of bacteriophages and are comprised of core modules, including a baseplate, a contractile sheath, and an inner tube (Brackmann et al., 2017; Taylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "2d4a66e8-e0a8-4a56-b3d3-6490decda716",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C8",
+      "claim": "CIS firing is triggered by a conformational change within the baseplate.",
+      "claim_type": "EXPLICIT",
+      "source": "CIS firing is triggered by a conformational change within the baseplate (Taylor et al., 2016; B\u00f6ck et al., 2017) and results in the contraction of the sheath, which in turn propels the inner tube along with the spike tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "e9f7d5b8-16f4-46ab-8cda-f5a77c627d99",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C9",
+      "claim": "T6SS are anchored to the cytoplasmic membrane during assembly and firing.",
+      "claim_type": "EXPLICIT",
+      "source": "T6SS are abundant among diderm bacteria and in some archaea, and they are anchored to the cytoplasmic membrane during assembly and firing (Basler et al., 2012; Durand et al., 2015; Zachs et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "b7c59a1f-c8d3-45b6-ba39-11ddf5e48a34",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C10",
+      "claim": "eCIS are assembled as free-floating particles in the cytoplasm and subsequently released into the extracellular space upon lysis of the producer cell.",
+      "claim_type": "EXPLICIT",
+      "source": "eCIS, on the other hand, are assembled as free-floating particles in the cytoplasm and are subsequently released into the extracellular space upon lysis of the producer cell (Xu et al., 2022; Shikuma et al., 2014; Hurst et al., 2007; Jiang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "dac5027b-0a6d-497e-9bef-6202c92a9f75",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C11",
+      "claim": "Many Streptomyces genomes contain a class IId eCIS locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, many Streptomyces genomes contain a class IId eCIS locus, a subtype that is structurally less well understood compared to other eCIS subtypes, such as 'antifeeding prophages' (AFPs) from Serratia, 'metamorphosis-associated contractile structures' (MACs) from Pseudoalteromonas luteoviolacea, AlgoCIS from A. machipongonensis or 'Photorhabdus virulence cassettes' (PVCs) from P. asymbiotica (Lin, 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "37208451-e6d6-43f6-a9f2-7eee9e105d8c",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C12",
+      "claim": "CISSc mediate a form of regulated cell death that influences the onset of sporulation and secondary metabolite production in response to exogenous stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Streptomyces coelicolor as a model organism, we and others previously demonstrated that S. coelicolor CIS (CISSc) mediate a form of regulated cell death, which influences the onset of sporulation and secondary metabolite production in response to exogenous stress and unknown cellular signals (Figure 1; Casu et al., 2023; Vladimirov et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "8d00c5b4-0526-4c95-9d56-cbae49b66946",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C13",
+      "claim": "SCO4242 (CisA) is conserved in the majority of Streptomyces species and other Actinomycete species that carry a type IId eCIS locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others recently noted an uncharacterized protein (Casu et al., 2023; Vladimirov et al., 2023), SCO4242, which is conserved in the majority of Streptomyces species and other Actinomycete species that carry a type IId eCIS locus (Chen et al., 2019; Geller et al., 2021; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with supporting citations and reference to a figure showing protein alignment.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "5c3bbd90-f3e3-4cbe-bf34-ee0f20968178",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C14",
+      "claim": "SCO4242 is encoded just downstream of the baseplate components in the CISSc gene cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SCO4242 is encoded just downstream of the baseplate components in the CISSc gene cluster, a location that usually encodes tail fibers from conventional eCIS (Xu et al., 2022; Jiang et al., 2019; Desfosses et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "81ca33a3-05b8-4555-b933-a1476c39c167",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C15",
+      "claim": "Purified CISSc particles from the \u0394cisA mutant show assemblies in the contracted conformation, similar to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative stain electron microscopy (EM) imaging of CISSc particles that were purified from \u2206cisA mutant cells showed assemblies in the contracted conformation, similar to the CISSc particles purified from the wild type (WT; Figure 2a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by negative stain EM images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "c72d02b0-46a0-4058-8ce7-94c5d2a8c5c8",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C16",
+      "claim": "In intact wild-type hyphae, CISSc particles are consistently observed in their extended conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that CISSc contraction correlates with the cellular integrity of S. coelicolor wild-type (WT) hyphae and showed that in intact hyphae, CISSc particles are consistently observed in their extended conformation in the cytoplasm, whereas in partially lysed hyphae, the ratio of extended to contracted particles is approximately 2:1, and dead hyphae only contain fully contracted CISSc assemblies (Casu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "0691dfad-6e17-44bd-8318-95f9a8296f00",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C17",
+      "claim": "cisA-deficient hyphae only contain CISSc particles in the extended conformation, irrespective of cellular integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, and in contrast to the WT and the complemented cisA mutant strain (Figure 2c, e), cisA-deficient hyphae only contained CISSc particles in the extended conformation, irrespective of the cellular integrity of the hyphae (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by cryoET images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "c9878624-c051-4b85-bd46-ef3a7db0ada5",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C18",
+      "claim": "The fully extended state of CISSc is 233 nm in length and 18 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our analysis consistently showed only two CISSc conformations in intact and dead hyphae, respectively: the fully extended state (233 nm in length, 18 nm in diameter, n=100 CISSc particles) and the fully contracted state (124 nm in length, 23 nm in diameter, n=100 CISSc particles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on measurements from cryoET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "9040703a-bcda-496d-ac9e-adbe9c584c53",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C19",
+      "claim": "The fully contracted state of CISSc is 124 nm in length and 23 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our analysis consistently showed only two CISSc conformations in intact and dead hyphae, respectively: the fully extended state (233 nm in length, 18 nm in diameter, n=100 CISSc particles) and the fully contracted state (124 nm in length, 23 nm in diameter, n=100 CISSc particles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on measurements from cryoET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "f3926fb1-6f06-45db-be04-36b0dd608e0b",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C20",
+      "claim": "CISSc contraction is not a consequence of cell death and requires CisA in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "While hyphal cell death can be caused by a range of external or internal factors, our results demonstrate that CISSc contraction is not a consequence of cell death and requires CisA in situ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the cryoET experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "234f563a-f71a-450d-845e-0424a4212e36",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C21",
+      "claim": "The S. coelicolor cis gene cluster consists of 19 predicted open reading frames.",
+      "claim_type": "EXPLICIT",
+      "source": "The S. coelicolor cis gene cluster consists of 19 predicted open reading frames (accessions SCO4242-4260; Figure 3a), including genes with sequence similarities to potential CIS structural components (cis1-cis16), as well as additional genes of unknown functions (including cisA) (Casu et al., 2023; Vladimirov et al., 2023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with supporting citations and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "860cec10-7f79-48c3-b716-509ea611fbe7",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C22",
+      "claim": "The cryoEM structure of CISSc represents the first high-resolution model of a CIS IId subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified assemblies were subjected to single-particle cryo-electron microscopy (cryoEM) for structure determination (Figure 3\u2014figure supplement 1), yielding the first high-resolution model of the CISSc in its extended conformation, which also presents the first example of a CIS IId subtype (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "3336ecf0-50a7-400d-8e8b-521bd525a765",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C23",
+      "claim": "Extended CISSc particles share the conserved eCIS architecture, including cap, sheath tube, and baseplate modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that extended CISSc particles share the conserved eCIS architecture, including the three core modules: cap, sheath tube, and baseplate (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the cryoEM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "9d32976a-2b03-4a07-a567-9d79e992d937",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C24",
+      "claim": "The baseplate and cap maps of CISSc reached resolutions of 3.5 and 3.4 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting maps of the baseplate and the cap reached resolutions of 3.5 and 3.4 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the cryoEM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "e18c8bc1-f704-4d5c-8dc5-4e39f39e4408",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C25",
+      "claim": "The final model of CISSc comprises 783 polypeptide chains that assemble into a bullet-shaped particle measuring 268 nm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model of CISSc comprises 783 polypeptide chains that assemble into a bullet-shaped particle measuring 268 nm in length (Figure 3b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section describing the final cryoEM model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "9be683e5-97f2-48bf-92d3-7490b17ce68d",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C26",
+      "claim": "All analyzed CISSc particles were identical in length.",
+      "claim_type": "EXPLICIT",
+      "source": "All analyzed particles were identical in length, consistent with our in situ data of extended CISSc particles in vegetative hyphae of WT S. coelicolor (Figure 2c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section based on cryoEM and cryoET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "10b0bd10-66cf-4e9c-b241-f0013d9b93d5",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C27",
+      "claim": "The tape measure protein gene is absent from the CISSc gene cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of eCIS particles is often controlled by tape measure proteins (Rybakova et al., 2015). We note, however, that the corresponding gene is absent from the CISSc gene cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "6600239b-c3ac-4ee7-a4bc-f64f0affd08b",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C28",
+      "claim": "The CISSc cap comprises one protein, Cis16, forming a C6-symmetrical complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This cap comprises one protein, Cis16, forming a C6-symmetrical complex that terminates the inner tube and sheath, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the cryoEM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "beab1f27-1e99-4823-b4b3-df8c6ac2953b",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C29",
+      "claim": "The CISSc cap architecture resembles the cap complexes of PVC or Pyocin R2 CISs.",
+      "claim_type": "EXPLICIT",
+      "source": "This minimal architecture resembles the cap complexes of PVC or Pyocin R2 CISs, but it is different from the more complex AlgoCIS from A. machipongonensis and AFP from S. entomophila (Figure 3\u2014figure supplement 3; Xu et al., 2022; Jiang et al., 2019; Desfosses et al., 2019; Ge et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with supporting citations and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "02a00e20-997e-4361-9334-73bb21038cc9",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C30",
+      "claim": "The CISSc sheath-tube module consists of 61 sheath layers and 60 tube layers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the module consists of 61 sheath layers (Cis2-L1\u2013L61) and 60 tube layers (Cis1-L1-L60; Figure 3b, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section describing the cryoEM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "cd3790df-fe2d-4cae-ace8-3ca69af0c3cc",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C31",
+      "claim": "The CISSc baseplate module comprises a heteromeric assembly of the proteins Cis1b/7/8/9/11/12.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseplate module comprises a heteromeric assembly of the proteins Cis1b/7/8/9/11/12 (Figure 3b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section describing the cryoEM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "0b58893f-8c6d-4f5b-8ab5-0c84b672cb09",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C32",
+      "claim": "The CISSc 'wedges' consist of two copies of Cis11 and one copy of Cis12.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the CISSc 'wedges' consist of two copies of Cis11 and one copy of Cis12 (Figure 3f), resembling the baseplate of Pyocin R2(27).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section describing the cryoEM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "7b44f636-5a70-4e4d-9ce2-9e75f3d2acad",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C33",
+      "claim": "No structural components resembling tail fiber proteins were detected in CISSc.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we did not detect any structural components that resemble tail fiber proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the cryoEM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "29c4f8f5-145d-4b46-9781-b9e5c657597f",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C34",
+      "claim": "Nine encoded proteins from the CISSc gene cluster were present in the final cryoEM reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 19 predicted open-reading frames in the CISSc gene cluster (Figure 3a), nine encoded proteins were present in the final reconstruction, for which all atomic models were built (Figure 3b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section describing the cryoEM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "c4b0e1c3-85db-4ad0-a4cf-b930984cb792",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C35",
+      "claim": "No density for CisA was detected in the cryoEM model of CISSc.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not detect a density for CisA in our model, suggesting that CisA is not part of purified CISSc particles but may interact with them via a different mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the cryoEM structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "4a86317d-e816-4610-ae8d-11b8aba5b37a",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C36",
+      "claim": "Mass spectrometry results indicate the absence of CisA peptides from purified CISSc particles.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is also in agreement with mass spectrometry results, which indicate the absence of CisA peptides from purified CISSc particles (Figure 3\u2014source data 1; Casu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with supporting data and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "cd0c9c54-4841-4f4d-9c00-343553c4650c",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C37",
+      "claim": "CisA consists of a largely unstructured N-terminal region, a transmembrane segment, and a conserved C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioinformatic analyses (Casu et al., 2023; Vladimirov et al., 2023) and structural modeling of CisA suggest that CisA consists of a largely unstructured N-terminal region, a transmembrane segment, and a conserved C-terminal domain (CTD) that shares structural similarity to periplasmic substrate-binding domains (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with supporting citations and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "15409e89-d24c-48e9-a0e3-944c0ae12460",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C38",
+      "claim": "AlphaFold3 modeling predicts that CisA can oligomerize into a pentamer via the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional AlphaFold3 (Abramson et al., 2024) modeling using just the ordered C-terminus of CisA, including the transmembrane domain and the CTD (amino acids 285\u2013468), predicts that CisA can oligomerize into a pentamer via the CTD (Figure 4b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with a supporting citation and reference to figures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "8903ceda-87ef-44ed-a59f-4a1c731cec85",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C39",
+      "claim": "CisA-mCherry fluorescence signal is consistently observed along the hyphal periphery, indicative of a membrane-associated protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fluorescence light microscopy, we consistently observed a CisA-mCherry fluorescence signal along the hyphal periphery, indicative of a membrane-associated protein (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by fluorescence microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "6d6a6693-f33d-44bc-9a2e-419c847f54f1",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C40",
+      "claim": "CisA-3xFLAG co-sedimented with cell membranes in cellular fractionation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis confirmed that CisA-3xFLAG co-sedimented with cell membranes, while the cytoplasmic transcription factor WhiA could only be detected in the soluble protein fraction (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "63a1339f-bb5d-4178-af4b-b62b4b0008cf",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C41",
+      "claim": "CisA is a bitopic protein with an N-terminus located in the cytoplasm and a C-terminus present in the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this assay confirmed that CisA is a bitopic protein with an N-terminus (amino acids 1\u2013285) located in the cytoplasm and a C-terminus (amino acids 310\u2013468) present in the periplasm of E. coli (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the dual phoA-lacZ\u03b1 reporter assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "69e55925-a752-4167-b0ea-70f323157814",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C42",
+      "claim": "CisA is comprised of a flexible cytoplasmic N-terminal domain and a periplasmic C-terminal domain that is predicted to facilitate CisA oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results demonstrate that CisA is a membrane protein comprised of a flexible cytoplasmic N-terminal domain and a periplasmic C-terminal domain that is predicted to facilitate CisA oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a summary of the CisA characterization experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "4421339a-8c09-4057-add7-7f901e3d6228",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C43",
+      "claim": "The production of functional CISSc particles results in significantly reduced viability of Streptomyces hyphae exposed to exogenous stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously established a fluorescence-based assay to show that the production of functional CISSc particles results in a significantly reduced viability of Streptomyces hyphae exposed to exogenous stress, including treatment with the membrane-pore forming antibiotic nisin, UV radiation, or the protonophore carbonyl cyanide 3-chlorophenylhydrazone (CCCP; Casu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "50850bd5-bc77-4cd7-a057-e7a9e0b6bafb",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C44",
+      "claim": "Without nisin stress, WT, \u0394cisA, and complemented strains exhibited similar sfGFP/FM5-95 ratios, indicating no significant difference in viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Without nisin stress, all three strains exhibited a similar sfGFP/FM5-95 ratio, indicating no significant difference in viability (Figure 5a, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by fluorescence microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "283c9601-ed62-43eb-a55d-07823ababb91",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C45",
+      "claim": "The viability of WT was dramatically reduced in response to nisin stress.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously observed (Casu et al., 2023), the viability of the WT was dramatically reduced in response to nisin stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "3cf6d658-0d45-4fe0-b444-ca31aa918d4f",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C46",
+      "claim": "The viability of \u0394cisA hyphae was unaffected by nisin stress and comparable to the viability of untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the viability of \u0394cisA hyphae was unaffected by nisin stress and comparable to the viability of untreated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by fluorescence microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "e401a090-26c2-4166-a054-1387d4cbfcba",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C47",
+      "claim": "The \u0394cisA phenotype could be completely reversed by complementing the \u0394cisA deletion in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype could be completely reversed by complementing the \u0394cisA deletion in trans (Figure 5b, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by fluorescence microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "75903c08-d3ca-47fb-874f-c6ad64ef7311",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C48",
+      "claim": "CisA is required for CISSc-mediated cell death in response to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that CisA is required for CISSc-mediated cell death in response to stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the viability assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "0d54cdcd-076c-4157-9c79-fcf038207ced",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C49",
+      "claim": "The absence of functional CISSc impacted the timely differentiation of Streptomyces hyphae into chains of spores, resulting in accelerated cellular development and reduced secondary metabolite production.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that the absence of functional CISSc impacted the timely differentiation of Streptomyces hyphae into chains of spores, resulting in accelerated cellular development and reduced secondary metabolite production (Casu et al., 2023; Vladimirov et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "bfd037cd-6e2f-45ce-bc41-506818e51876",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C50",
+      "claim": "\u0394cisA mutant colonies sporulated markedly earlier than WT and complemented strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, unlike the WT and the \u0394cisA/cisA+ strain, \u0394cisA mutant colonies sporulated markedly earlier (+ hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by microscopy and CFU data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "6ccb993f-c03d-4fc0-ba97-bb2b427fa6b6",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C51",
+      "claim": "The \u0394cisA mutant showed significantly reduced levels of actinorhodin production compared to WT and complemented mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the WT and the complemented mutant strain (\u2206cisA/cisA+), the \u0394cisA mutant showed significantly reduced levels of actinorhodin production (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by actinorhodin quantification data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "ba2e8d3d-2b69-4838-9bea-83a1a6562c0c",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C52",
+      "claim": "The cellular function of CISSc in S. coelicolor depends on CisA, and its absence impacts the timely cellular and chemical differentiation of S. coelicolor hyphae.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data therefore supports the conclusion that the cellular function of CISSc in S. coelicolor depends on CisA, and its absence impacts the timely cellular and chemical differentiation of S. coelicolor hyphae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the developmental and metabolite production assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "80912c23-a8b1-4e01-b9e5-5d403940926e",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C53",
+      "claim": "CisA is an essential membrane-associated factor that mediates the cellular function of CISSc particles in Streptomyces coelicolor.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify CisA as an essential membrane-associated factor that mediates the cellular function of CISSc particles in Streptomyces coelicolor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "ad6c099b-eaab-4eb7-a526-df5109b96010",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C54",
+      "claim": "In the absence of CisA, CISSc particles are unable to contract in the cellular context.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of CisA, CISSc particles are unable to contract in the cellular context (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by cryoET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "ce52a58b-21f0-4c7c-bb8f-a5ea8dd7b3c5",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C55",
+      "claim": "The deletion of cisA decreases the induction of cell death upon stress, which in turn affects cellular development and secondary metabolite production.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to a CISSc deletion or non-contractile mutant (Casu et al., 2023), the deletion of cisA decreases the induction of cell death upon stress, which in turn affects cellular development and secondary metabolite production (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion with a supporting citation and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "38f745a8-b9aa-48b9-98e5-e4735f2087b5",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C56",
+      "claim": "A conserved feature of all previously studied CIS is the requirement of the contractile apparatus to bind to a membrane before firing.",
+      "claim_type": "EXPLICIT",
+      "source": "A conserved feature of all previously studied CIS is the requirement of the contractile apparatus to bind to a membrane before firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "b62a58d6-4c41-477c-9a80-f1dd12310852",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C57",
+      "claim": "Intracellular CISSc particles from Streptomyces do not contain structural components that can directly bind to the host membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, and in contrast to the previously described CIS, we demonstrate that intracellular CISSc particles from Streptomyces do not contain structural components that can directly bind to the host membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the cryoEM structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "a01a3f07-0b26-447c-a0ce-9a847f3fa5ab",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C58",
+      "claim": "CisA is required to mediate an interaction of CISSc with the cytoplasmic membrane prior to firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that CisA is required to mediate an interaction of CISSc with the cytoplasmic membrane prior to firing (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a proposed mechanism based on the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "437924a0-7937-4fbc-955f-9059fae2c0db",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C59",
+      "claim": "AlphaFold2-Multimer analysis identified the baseplate component Cis11 as a significant hit and possible interaction partner of CisA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this analysis identified the baseplate component Cis11 as a significant hit and possible interaction partner of CisA (Figure 6\u2014figure supplement 1b\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by computational modeling data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "0da6de11-da66-4ccc-83a0-78ae4548fea8",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C60",
+      "claim": "A protein-protein interaction between CisA and Cis11 would be consistent with the cryoEM structure, which shows a peripheral surface-exposed position of Cis11 in the baseplate complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, such a protein-protein interaction would be consistent with our cryoEM structure (Figure 3b\u2013f), which shows a peripheral surface-exposed position of Cis11 in the baseplate complex of extended CISSc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as support for the proposed CisA-Cis11 interaction.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "c0602ce1-4126-4a4f-9a41-e427bae7c50a",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C61",
+      "claim": "CisA peptides were detected in crude purifications of CISSc from nisin-stressed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While we currently cannot exclude the possibility that the proposed CisA-Cis11 interaction involves an additional unknown factor, we did detect CisA peptides in crude purifications of CISSc from nisin-stressed cells (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "647be0ff-ce4c-4af7-b06b-0a2087060cb6",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C62",
+      "claim": "Extended CISSc assemblies associated with the cytoplasmic membrane via their baseplate were rarely observed in WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this idea, we rarely observed extended CISSc assemblies associated with the cytoplasmic membrane via their baseplate in WT cells (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by cryoET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "05f1b19d-342f-459d-8106-7055626cf88f",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C63",
+      "claim": "CisA may serve as a mediator for the interaction of CISSc with the cytoplasmic membrane and as a sensor and checkpoint for inducing cell death under specific stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We further speculate that CisA may not only serve as a mediator for the interaction of CISSc with the cytoplasmic membrane but also as a sensor and checkpoint for inducing cell death under specific stress conditions or in response to cellular signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "1a9ce0d5-ccbe-4c9c-bdb2-825d09a51831",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C64",
+      "claim": "The C-terminal CisA domain shares similarity with solute-binding protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, protein structure searches with Foldseek (van Kempen et al., 2024) using just the conserved extra-cytoplasmic C-terminal CisA domain (amino acids 310\u2013468) suggest that this domain shares similarity with solute-binding protein domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "dc2c1265-6b75-4b56-92af-2ebdfc6d30e8",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C65",
+      "claim": "The C-terminal CisA domain could potentially be involved in directly or indirectly sensing stress signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C-terminal CisA domain could potentially be involved in directly or indirectly sensing stress signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation based on structural similarity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "0b3e128e-95f4-442e-b13e-7df6078cb63e",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C66",
+      "claim": "Recognition or binding of a stress signal by monomeric CisA could trigger a conformational change that results in CisA oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition or binding of such a signal by monomeric CisA could trigger a conformational change that results in CisA oligomerization, which in turn could lead to an 'activated' CisA configuration that is primed to mediate the recruitment of CISSc assemblies to the cytoplasmic membrane, followed by firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "16d2eb6c-b154-4994-adfc-f9751241b015",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C67",
+      "claim": "The lethal consequences of CISSc firing for the producing cell may have driven the evolution of a stepwise mechanism involving a checkpoint that prevents self-inflicted cell death by accidental firing.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that the lethal consequences of CISSc firing for the producing cell may have driven the evolution of a stepwise mechanism, involving a checkpoint that prevents self-inflicted cell death by accidental firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation about evolutionary pressures.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "88c64385-7571-4232-9e4c-f302c1a2a542",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "claim_id": "C68",
+      "claim": "A stepwise mechanism would ensure that CISSc remain in a free-floating and safe state within the cytoplasm until a stress signal induces CisA-mediated CISSc contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a stepwise mechanism would ensure that the CISSc remain in a free-floating and safe state within the cytoplasm until a stress signal induces CisA-mediated CISSc contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation about the proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9485739d-743e-4395-82e9-4c349e4d59e5",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CisA is required for CISSc contraction in situ. In cisA-deficient hyphae, CISSc particles remain in the extended conformation regardless of cellular integrity, whereas wild-type and complemented strains show contracted particles in dead cells. This demonstrates that CISSc contraction is not a consequence of cell death but requires CisA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17, C20, and C54 are strongly supported by cryoET imaging data showing that \u0394cisA mutant hyphae contain only extended CISSc particles in both intact and lysed cells (Figure 2), while WT and complemented strains show the expected contraction in dead cells. The complementation experiment (C17) provides critical genetic validation. Sample sizes (n=100 particles, 270 tomograms total) are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The first high-resolution cryoEM structure of a CIS IId subtype reveals that extended CISSc particles comprise 783 polypeptide chains forming a 268 nm bullet-shaped assembly with conserved eCIS architecture (cap, sheath-tube, baseplate). The structure includes a C6-symmetrical Cis16 cap, 61 sheath and 60 tube layers, and a baseplate with wedges containing two Cis11 and one Cis12 copies. No tail fiber-like structures were detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C34 are well-supported by the cryoEM reconstruction achieving 3.4-3.5 \u00c5 resolution for cap and baseplate modules (C24), enabling de novo modeling. The structural characterization is comprehensive with clear identification of components and their stoichiometry. The absence of tail fibers (C33) is consistently reported across structural analysis and bioinformatics. All particles showed identical length (C26), providing internal consistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "fd966682-6b45-4cb1-b60c-f59721a5f02f",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CisA is not part of the purified CISSc complex structure. No density for CisA was detected in the cryoEM model, and mass spectrometry confirmed the absence of CisA peptides from purified CISSc particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35, and C36 are supported by convergent evidence from cryoEM structure determination (no CisA density) and mass spectrometry (no CisA peptides in purified particles). However, the authors acknowledge that the purification protocol may not preserve transient CisA-CISSc interactions (C35), which is an appropriate caveat. The detection of CisA peptides in crude preparations from stressed cells (C61) supports the transient interaction hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "cb8c3c61-2713-430c-b90d-3d0816e95669",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CisA is a bitopic membrane protein with a cytoplasmic N-terminus (aa 1-285), a transmembrane domain, and a periplasmic C-terminal domain (aa 310-468) that is predicted to facilitate oligomerization. This topology was confirmed by fluorescence microscopy, cellular fractionation, and dual reporter assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C37-C42 are well-supported by multiple complementary experimental approaches: fluorescence microscopy showing peripheral localization (C39), cellular fractionation demonstrating membrane association (C40), and dual phoA-lacZ\u03b1 reporter assays confirming bitopic topology (C41). The AlphaFold3 prediction of pentamerization (C38) is computational and requires experimental validation, but the overall membrane protein characterization is robust with appropriate controls (WhiA for fractionation, SepH/RsbN for topology).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "b62673c8-3fbe-47d4-bb82-8cf7974269dc",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CisA is required for CISSc-mediated cell death in response to stress. Without nisin stress, all strains showed similar viability, but upon nisin treatment, \u0394cisA hyphae maintained viability comparable to unstressed cells while WT showed dramatically reduced viability. Complementation fully reversed the \u0394cisA phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 are strongly supported by the fluorescence-based viability assay with appropriate controls (unstressed conditions, complementation). Statistical analysis shows significant differences (p<0.0001) between WT and \u0394cisA under stress (Figure 5d). The assay uses biological triplicates with n=100 images per replicate. The complementation experiment (C47) provides critical genetic validation that the phenotype is specifically due to cisA deletion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "39bd6d24-8096-48bb-9557-e4f4047fdc65",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The absence of functional CisA impacts cellular development and secondary metabolite production. The \u0394cisA mutant sporulated markedly earlier than WT and complemented strains and showed significantly reduced actinorhodin production, phenocopying CISSc deletion mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 and C55 are supported by developmental assays (microscopy, CFU counts) and actinorhodin quantification showing significant differences (p<0.0001) between \u0394cisA and WT/complemented strains. The experiments used biological triplicates with appropriate time course measurements. The phenotype similarity to CISSc deletion mutants (C49, C55) strengthens the conclusion that CisA is essential for CISSc function. However, the manuscript states sporulation occurred 'markedly earlier' but the specific time difference is unclear from C50.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "fa9bdda6-8d87-4dac-858d-b0a98bc01d5d",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CisA is an essential membrane-associated factor that mediates CISSc interaction with the cytoplasmic membrane prior to firing, representing a distinct mechanism from T6SS and extracellular CIS that possibly evolved due to the role of CISSc in regulated cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C58, and C6 represent the main conclusions synthesizing the experimental findings. The conclusion that CisA mediates membrane interaction (C58) is well-supported by the combination of: (1) CisA membrane localization, (2) requirement for CISSc contraction in situ, (3) absence from purified particles, and (4) lack of tail fibers in CISSc structure. The distinction from T6SS and eCIS (C6) is supported by structural and functional data. The evolutionary speculation is reasonable but remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "f12d3cf0-5991-4c2e-9bcc-0647c978164a",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AlphaFold2-Multimer analysis identified Cis11 as a potential CisA interaction partner, consistent with Cis11's peripheral surface-exposed position in the baseplate. CisA peptides were detected in crude CISSc purifications from stressed cells, and extended CISSc-membrane associations were rarely observed in WT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C62 provide suggestive but not definitive evidence for CisA-Cis11 interaction. The AlphaFold2-Multimer prediction (C59) is computational and requires experimental validation. The authors acknowledge they could not confirm direct interaction due to CisA toxicity in E. coli, preventing co-purification and two-hybrid studies. Detection of CisA peptides in crude preparations (C61) supports transient interaction but is not conclusive. The structural compatibility (C60) and rare observation of membrane-associated particles (C62) are consistent with the model but circumstantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "ed9a04d0-d1c3-4ffc-a30a-4b9f38ef6c8d",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that CisA may serve as both a membrane mediator and a stress sensor/checkpoint, with the C-terminal domain potentially sensing stress signals that trigger CisA oligomerization and CISSc recruitment. This stepwise mechanism may have evolved to prevent accidental self-inflicted cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C68 are explicitly speculative (using terms like 'speculate,' 'may,' 'could,' 'conceivable'). While the speculation is reasonable and consistent with the data (structural similarity to solute-binding domains C64, predicted oligomerization C38), these claims lack direct experimental support. The proposed mechanism of stress sensing and oligomerization-triggered recruitment (C66) is a hypothesis requiring future validation. The evolutionary argument (C67-C68) is plausible but remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "888f7046-f79e-4f91-aeef-c72a70f2914d",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CISSc are cytoplasmic particles that mediate regulated cell death in response to stress, influencing sporulation and secondary metabolite production in S. coelicolor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C12 summarize prior work (Casu et al., 2023; Vladimirov et al., 2023) that is cited and forms the foundation for the current study. The localization (C1) is confirmed by cryoET in this manuscript. The functional roles (C2, C12) are established in previous publications and validated here through the \u0394cisA phenotypes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "0ae45418-68eb-46c6-8639-12464609ee4b",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on CIS diversity and mechanisms: CIS are related to phage tails, fire via baseplate conformational changes, and include T6SS (membrane-anchored), eCIS (free-floating then released), and class IId eCIS in Streptomyces. All previously studied CIS require membrane binding before firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 and C56 represent established knowledge from the literature with appropriate citations. These provide necessary context for understanding the novelty of the current findings. The claims are well-supported by the cited references and represent accurate summaries of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "be12d518-0f23-4655-8926-e2bbffab4f39",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CisA (SCO4242) is conserved in the majority of Streptomyces and Actinomycete species carrying type IId eCIS loci and is encoded downstream of baseplate components, a location typically occupied by tail fiber genes in conventional eCIS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C14 are supported by bioinformatic analysis (Figure 1\u2014figure supplement 1 showing alignment of 75 CisA homologs) and gene cluster organization data with appropriate citations. The genomic context (C14) provides important motivation for investigating CisA's role. The reciprocal BLAST search methodology is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "89eb81ef-f547-4b33-b9ad-f71793a8b51e",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Purified CISSc particles from \u0394cisA mutant are in contracted conformation similar to WT. In situ, CISSc exists in two discrete conformational states: fully extended (233 nm length, 18 nm diameter) in intact WT hyphae and fully contracted (124 nm length, 23 nm diameter) in dead hyphae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by negative stain EM (C15) and cryoET measurements (C18-C19) with adequate sample sizes (n=100 particles for each conformation). The observation that purified \u0394cisA particles can contract (C15) while in situ particles cannot (C17) is important for understanding that CisA is required for in situ contraction specifically. The dimensional measurements (C18-C19) are precise and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "2578df2e-8af1-445f-ae4a-e7876adbf843",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The S. coelicolor cis gene cluster contains 19 predicted open reading frames, and notably lacks a tape measure protein gene typically responsible for controlling eCIS particle length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C27 are supported by bioinformatic analysis of the gene cluster with appropriate citations. The absence of a tape measure protein gene (C27) is notable given the uniform particle length observed (C26), suggesting an alternative length-determination mechanism. This is a straightforward descriptive finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "42f7c271-d289-44e3-b6c0-8c9149e6924d",
+      "content_id": "27543161-f8cc-48fa-b744-ac61c0dfeed3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Intracellular CISSc particles lack structural components that can directly bind to the host membrane, distinguishing them from previously described CIS systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by the cryoEM structure showing absence of tail fibers (C33) and the bioinformatic analysis showing no tail fiber genes (C27). This is a key negative finding that distinguishes CISSc from other CIS and motivates the investigation of CisA as an alternative membrane interaction mechanism. The conclusion is well-supported by structural and genomic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors present the first high-resolution cryoEM structure of the extended CISSc, a class IId CIS subtype. The structure reveals conserved eCIS architecture with cap, sheath-tube, and baseplate modules, comprising 783 polypeptide chains in a 268 nm bullet-shaped particle, with resolutions of 3.4-3.5 \u00c5 for cap and baseplate. Notably, no tail fiber-like structural components were detected.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly praise the structural work. Reviewer 1 calls it 'a convincing high-resolution model,' Reviewer 2 describes 'beautiful visualisation' by cryoEM as a clear strength, and Reviewer 3 states the authors 'provided strong evidence on the high-resolution structure' with 'solid data.' The structural findings are treated as a major contribution with no concerns raised about the quality or interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "80814cde-0a41-4d8f-9a5d-1e0760a3b9cf",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "CisA is characterized as a bitopic membrane protein with a cytoplasmic N-terminal domain (aa 1-285), a transmembrane segment (aa 285-310), and a periplasmic C-terminal domain (aa 310-468) that is predicted to facilitate oligomerization. This topology was demonstrated through fluorescence microscopy, cellular fractionation, and dual phoA-lacZ\u03b1 reporter assays.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly states 'The conclusion that CisA is a transmembrane protein and the inferred membrane topology are well supported by experimental data.' Reviewer 3 notes the authors 'provided strong evidence on the topological features of CisA using fluorescence microscopic analysis, cell fractionation and PhoA-LacZ\u03b1 reporter assays.' No concerns were raised about these characterization experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "9c40033a-98f9-4026-a63c-b8d22d6f2d4e",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "CisA is required for CISSc contraction in situ. In cisA-deficient hyphae, CISSc particles remain in extended conformation regardless of cellular integrity, whereas wild-type shows contraction correlated with cell death. This demonstrates that CISSc contraction is not merely a consequence of cell death but requires CisA.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 states 'the paper provides genetic evidence that the membrane protein CisA is required for the contraction of the CISSc assemblies' and calls this a strength. Reviewer 3 notes 'solid and detailed analysis of the contraction state of the particles with or without CisA using cryo-ET.' The cryoET data showing extended-only particles in \u0394cisA mutants is accepted without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "b61c02c9-e010-4695-83e7-72f7f01ffdcb",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "CisA is not part of the purified CISSc complex structure. No density for CisA was detected in the cryoEM model, and mass spectrometry confirmed the absence of CisA peptides from purified CISSc particles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly states 'The cryo-EM data suggest that CisA is not a stable part of the extended form of the CISSc assemblies' and notes this finding 'raises the question of what CisA does.' Reviewer 3 acknowledges 'the structure revealed that it was not associated with CISSc.' This finding is accepted as valid, though it creates mechanistic questions addressed elsewhere.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "e9beefc7-e42e-49a0-9b91-cdde3f6d23fa",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "CisA is required for CISSc-mediated cell death in response to stress. Viability assays show that \u0394cisA hyphae are unaffected by nisin stress (maintaining viability comparable to untreated cells), while wild-type viability is dramatically reduced. The phenotype is fully reversed by complementation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly states the authors 'provided strong evidence on functions of CisA in CISSc-mediated cell death...likely via the regulation of sheath contraction.' Reviewer 2 notes the paper 'shows that CisA is needed for the observed phenotypic effects of the CISSc system.' The functional assay data are accepted, though Reviewer 2 notes the assay 'looks only at single hyphal fragments' and 'could have been interesting to observe effects also under other growth conditions.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "c48f98f0-32d7-455d-93ee-5e50271d963c",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The absence of CisA impacts timely cellular differentiation and secondary metabolite production. The \u0394cisA mutant shows accelerated sporulation and significantly reduced actinorhodin production compared to wild-type and complemented strains, similar to phenotypes observed with CISSc deletion mutants.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 acknowledges 'the effect on the developmental life cycle' showing 'accelerated sporulation in the CisA mutant, similar to what was previously shown for mutants lacking other parts of the system.' However, the reviewer notes this 'does not provide new insights into the role of the CISSc system in growth or developmental biology of streptomycetes' and that 'the overall biological roles of the CISSc and CisA remain elusive.' The data are accepted but viewed as confirmatory rather than providing new mechanistic insight.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "c8a10fe7-dc98-414a-8940-325fde111caa",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Computational modeling suggests CisA can oligomerize into a pentamer via its C-terminal domain, and AlphaFold2-Multimer analysis identifies the baseplate component Cis11 as a potential interaction partner. This is consistent with Cis11's peripheral surface-exposed position in the baseplate, and CisA peptides were detected in crude purifications from stressed cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 states 'Alphafold modelling suggests that the cytoplasmic part of CisA interacts directly with the base plate protein Cis11' and notes this appears 'compelling,' but critically adds 'the interaction has not yet been possible to test and verify experimentally.' Reviewer 3 acknowledges 'solid AlphaFold2-multimer prediction data' but notes 'there is a lack of biochemical analysis of direct interaction between CisA and baseplate wedge' due to technical limitations. Both reviewers recognize this as predictive rather than experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose that CisA mediates CISSc recruitment to the membrane prior to firing and may serve as a sensor/checkpoint for stress-induced cell death. They speculate that the C-terminal domain's similarity to solute-binding domains could enable stress signal sensing, triggering CisA oligomerization and subsequent CISSc membrane recruitment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 explicitly states 'it remains unclear whether or how CisA recruits the CISSc system to the membrane. Overall, the mechanism by which CisA may act on CISSc and cause firing remains largely unclear.' Reviewer 3 notes 'there is no direct evidence showing that CisA is responsible for tethering CISSc to the membrane upon stress, and the spatial and temporal relation between membrane association and contraction remains unclear,' though recognizes 'this is above the scope of the current work.' The proposed mechanism is speculative and lacks direct experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "e70c6571-96c4-4515-ab9c-315ba928b884",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "CISSc are cytoplasmic contractile injection systems that mediate regulated cell death in response to stress, influencing sporulation and secondary metabolite production. In intact wild-type hyphae, CISSc particles are consistently observed in extended conformation, with contraction correlating with cellular integrity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established context from prior work that reviewers accept without challenge. Reviewer 1 notes the study 'provides insights into the structure and function of bacterial contractile injection systems that are present in the cytoplasm of many Streptomyces strains.' Reviewer 2 acknowledges this background, stating CISSc 'are free-floating in the cytoplasm in an extended form and are seen in contracted conformation...mainly in dead and partially lysed cells, suggesting involvement in some kind of regulated cell death.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "2db766bb-61be-4dcc-95c6-ef7a2c8eec9f",
+      "content_id": "b3b7573a-73df-4d51-91fc-5dec19c5938d",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "CIS function in multicellular bacteria is distinct from T6SS and extracellular CIS. Unlike previously described CIS, intracellular CISSc particles do not contain structural components that can directly bind to the host membrane, representing a unique evolutionary adaptation possibly driven by their role in regulated cell death.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states the work 'expands the current understanding of these diverse bacterial nanomachines.' Reviewer 2 notes 'This paper provides new insights into the structure of the unusual subclass of bacterial contractile injection systems (CIS) that is constituted by the cytoplasmically located systems found in streptomycetes.' Reviewer 3 emphasizes 'the work provides a valuable contribution to our understanding on the structure of a much less understood subtype of CISs, which is unique compared to both membrane-anchored T6SSs and host-membrane targeting eCISs.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "173eec44-5296-4e2f-ae13-decfa863d6ac",
+      "result_id": "9485739d-743e-4395-82e9-4c349e4d59e5"
+    },
+    {
+      "claim_id": "0691dfad-6e17-44bd-8318-95f9a8296f00",
+      "result_id": "9485739d-743e-4395-82e9-4c349e4d59e5"
+    },
+    {
+      "claim_id": "f3926fb1-6f06-45db-be04-36b0dd608e0b",
+      "result_id": "9485739d-743e-4395-82e9-4c349e4d59e5"
+    },
+    {
+      "claim_id": "ad6c099b-eaab-4eb7-a526-df5109b96010",
+      "result_id": "9485739d-743e-4395-82e9-4c349e4d59e5"
+    },
+    {
+      "claim_id": "860cec10-7f79-48c3-b716-509ea611fbe7",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "3336ecf0-50a7-400d-8e8b-521bd525a765",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "9d32976a-2b03-4a07-a567-9d79e992d937",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "e18c8bc1-f704-4d5c-8dc5-4e39f39e4408",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "9be683e5-97f2-48bf-92d3-7490b17ce68d",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "6600239b-c3ac-4ee7-a4bc-f64f0affd08b",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "beab1f27-1e99-4823-b4b3-df8c6ac2953b",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "02a00e20-997e-4361-9334-73bb21038cc9",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "cd3790df-fe2d-4cae-ace8-3ca69af0c3cc",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "0b58893f-8c6d-4f5b-8ab5-0c84b672cb09",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "7b44f636-5a70-4e4d-9ce2-9e75f3d2acad",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "29c4f8f5-145d-4b46-9781-b9e5c657597f",
+      "result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc"
+    },
+    {
+      "claim_id": "8660e94e-a6cf-48d7-bb26-bd4d0790b935",
+      "result_id": "fd966682-6b45-4cb1-b60c-f59721a5f02f"
+    },
+    {
+      "claim_id": "c4b0e1c3-85db-4ad0-a4cf-b930984cb792",
+      "result_id": "fd966682-6b45-4cb1-b60c-f59721a5f02f"
+    },
+    {
+      "claim_id": "4a86317d-e816-4610-ae8d-11b8aba5b37a",
+      "result_id": "fd966682-6b45-4cb1-b60c-f59721a5f02f"
+    },
+    {
+      "claim_id": "f236cdd3-31d1-4b78-a01c-ba504bf9040c",
+      "result_id": "cb8c3c61-2713-430c-b90d-3d0816e95669"
+    },
+    {
+      "claim_id": "cd0c9c54-4841-4f4d-9c00-343553c4650c",
+      "result_id": "cb8c3c61-2713-430c-b90d-3d0816e95669"
+    },
+    {
+      "claim_id": "15409e89-d24c-48e9-a0e3-944c0ae12460",
+      "result_id": "cb8c3c61-2713-430c-b90d-3d0816e95669"
+    },
+    {
+      "claim_id": "8903ceda-87ef-44ed-a59f-4a1c731cec85",
+      "result_id": "cb8c3c61-2713-430c-b90d-3d0816e95669"
+    },
+    {
+      "claim_id": "6d6a6693-f33d-44bc-9a2e-419c847f54f1",
+      "result_id": "cb8c3c61-2713-430c-b90d-3d0816e95669"
+    },
+    {
+      "claim_id": "63a1339f-bb5d-4178-af4b-b62b4b0008cf",
+      "result_id": "cb8c3c61-2713-430c-b90d-3d0816e95669"
+    },
+    {
+      "claim_id": "69e55925-a752-4167-b0ea-70f323157814",
+      "result_id": "cb8c3c61-2713-430c-b90d-3d0816e95669"
+    },
+    {
+      "claim_id": "4421339a-8c09-4057-add7-7f901e3d6228",
+      "result_id": "b62673c8-3fbe-47d4-bb82-8cf7974269dc"
+    },
+    {
+      "claim_id": "50850bd5-bc77-4cd7-a057-e7a9e0b6bafb",
+      "result_id": "b62673c8-3fbe-47d4-bb82-8cf7974269dc"
+    },
+    {
+      "claim_id": "283c9601-ed62-43eb-a55d-07823ababb91",
+      "result_id": "b62673c8-3fbe-47d4-bb82-8cf7974269dc"
+    },
+    {
+      "claim_id": "3cf6d658-0d45-4fe0-b444-ca31aa918d4f",
+      "result_id": "b62673c8-3fbe-47d4-bb82-8cf7974269dc"
+    },
+    {
+      "claim_id": "e401a090-26c2-4166-a054-1387d4cbfcba",
+      "result_id": "b62673c8-3fbe-47d4-bb82-8cf7974269dc"
+    },
+    {
+      "claim_id": "75903c08-d3ca-47fb-874f-c6ad64ef7311",
+      "result_id": "b62673c8-3fbe-47d4-bb82-8cf7974269dc"
+    },
+    {
+      "claim_id": "0d54cdcd-076c-4157-9c79-fcf038207ced",
+      "result_id": "39bd6d24-8096-48bb-9557-e4f4047fdc65"
+    },
+    {
+      "claim_id": "bfd037cd-6e2f-45ce-bc41-506818e51876",
+      "result_id": "39bd6d24-8096-48bb-9557-e4f4047fdc65"
+    },
+    {
+      "claim_id": "6ccb993f-c03d-4fc0-ba97-bb2b427fa6b6",
+      "result_id": "39bd6d24-8096-48bb-9557-e4f4047fdc65"
+    },
+    {
+      "claim_id": "ba2e8d3d-2b69-4838-9bea-83a1a6562c0c",
+      "result_id": "39bd6d24-8096-48bb-9557-e4f4047fdc65"
+    },
+    {
+      "claim_id": "ce52a58b-21f0-4c7c-bb8f-a5ea8dd7b3c5",
+      "result_id": "39bd6d24-8096-48bb-9557-e4f4047fdc65"
+    },
+    {
+      "claim_id": "80912c23-a8b1-4e01-b9e5-5d403940926e",
+      "result_id": "fa9bdda6-8d87-4dac-858d-b0a98bc01d5d"
+    },
+    {
+      "claim_id": "a01a3f07-0b26-447c-a0ce-9a847f3fa5ab",
+      "result_id": "fa9bdda6-8d87-4dac-858d-b0a98bc01d5d"
+    },
+    {
+      "claim_id": "bf57dfbc-fd4c-4343-aaa2-bf9136d705ea",
+      "result_id": "fa9bdda6-8d87-4dac-858d-b0a98bc01d5d"
+    },
+    {
+      "claim_id": "437924a0-7937-4fbc-955f-9059fae2c0db",
+      "result_id": "f12d3cf0-5991-4c2e-9bcc-0647c978164a"
+    },
+    {
+      "claim_id": "0da6de11-da66-4ccc-83a0-78ae4548fea8",
+      "result_id": "f12d3cf0-5991-4c2e-9bcc-0647c978164a"
+    },
+    {
+      "claim_id": "c0602ce1-4126-4a4f-9a41-e427bae7c50a",
+      "result_id": "f12d3cf0-5991-4c2e-9bcc-0647c978164a"
+    },
+    {
+      "claim_id": "647be0ff-ce4c-4af7-b06b-0a2087060cb6",
+      "result_id": "f12d3cf0-5991-4c2e-9bcc-0647c978164a"
+    },
+    {
+      "claim_id": "05f1b19d-342f-459d-8106-7055626cf88f",
+      "result_id": "ed9a04d0-d1c3-4ffc-a30a-4b9f38ef6c8d"
+    },
+    {
+      "claim_id": "1a9ce0d5-ccbe-4c9c-bdb2-825d09a51831",
+      "result_id": "ed9a04d0-d1c3-4ffc-a30a-4b9f38ef6c8d"
+    },
+    {
+      "claim_id": "dc2c1265-6b75-4b56-92af-2ebdfc6d30e8",
+      "result_id": "ed9a04d0-d1c3-4ffc-a30a-4b9f38ef6c8d"
+    },
+    {
+      "claim_id": "0b3e128e-95f4-442e-b13e-7df6078cb63e",
+      "result_id": "ed9a04d0-d1c3-4ffc-a30a-4b9f38ef6c8d"
+    },
+    {
+      "claim_id": "16d2eb6c-b154-4994-adfc-f9751241b015",
+      "result_id": "ed9a04d0-d1c3-4ffc-a30a-4b9f38ef6c8d"
+    },
+    {
+      "claim_id": "88c64385-7571-4232-9e4c-f302c1a2a542",
+      "result_id": "ed9a04d0-d1c3-4ffc-a30a-4b9f38ef6c8d"
+    },
+    {
+      "claim_id": "cfb2700d-d6c1-4838-b31a-cffe385fb5fd",
+      "result_id": "888f7046-f79e-4f91-aeef-c72a70f2914d"
+    },
+    {
+      "claim_id": "3b956a52-d8bc-4d55-be44-ff9f92260b83",
+      "result_id": "888f7046-f79e-4f91-aeef-c72a70f2914d"
+    },
+    {
+      "claim_id": "37208451-e6d6-43f6-a9f2-7eee9e105d8c",
+      "result_id": "888f7046-f79e-4f91-aeef-c72a70f2914d"
+    },
+    {
+      "claim_id": "d3000071-136c-4045-a93c-47d23a1e9afe",
+      "result_id": "0ae45418-68eb-46c6-8639-12464609ee4b"
+    },
+    {
+      "claim_id": "2d4a66e8-e0a8-4a56-b3d3-6490decda716",
+      "result_id": "0ae45418-68eb-46c6-8639-12464609ee4b"
+    },
+    {
+      "claim_id": "e9f7d5b8-16f4-46ab-8cda-f5a77c627d99",
+      "result_id": "0ae45418-68eb-46c6-8639-12464609ee4b"
+    },
+    {
+      "claim_id": "b7c59a1f-c8d3-45b6-ba39-11ddf5e48a34",
+      "result_id": "0ae45418-68eb-46c6-8639-12464609ee4b"
+    },
+    {
+      "claim_id": "dac5027b-0a6d-497e-9bef-6202c92a9f75",
+      "result_id": "0ae45418-68eb-46c6-8639-12464609ee4b"
+    },
+    {
+      "claim_id": "38f745a8-b9aa-48b9-98e5-e4735f2087b5",
+      "result_id": "0ae45418-68eb-46c6-8639-12464609ee4b"
+    },
+    {
+      "claim_id": "8d00c5b4-0526-4c95-9d56-cbae49b66946",
+      "result_id": "be12d518-0f23-4655-8926-e2bbffab4f39"
+    },
+    {
+      "claim_id": "5c3bbd90-f3e3-4cbe-bf34-ee0f20968178",
+      "result_id": "be12d518-0f23-4655-8926-e2bbffab4f39"
+    },
+    {
+      "claim_id": "81ca33a3-05b8-4555-b933-a1476c39c167",
+      "result_id": "89eb81ef-f547-4b33-b9ad-f71793a8b51e"
+    },
+    {
+      "claim_id": "c72d02b0-46a0-4058-8ce7-94c5d2a8c5c8",
+      "result_id": "89eb81ef-f547-4b33-b9ad-f71793a8b51e"
+    },
+    {
+      "claim_id": "c9878624-c051-4b85-bd46-ef3a7db0ada5",
+      "result_id": "89eb81ef-f547-4b33-b9ad-f71793a8b51e"
+    },
+    {
+      "claim_id": "9040703a-bcda-496d-ac9e-adbe9c584c53",
+      "result_id": "89eb81ef-f547-4b33-b9ad-f71793a8b51e"
+    },
+    {
+      "claim_id": "234f563a-f71a-450d-845e-0424a4212e36",
+      "result_id": "2578df2e-8af1-445f-ae4a-e7876adbf843"
+    },
+    {
+      "claim_id": "10b0bd10-66cf-4e9c-b241-f0013d9b93d5",
+      "result_id": "2578df2e-8af1-445f-ae4a-e7876adbf843"
+    },
+    {
+      "claim_id": "b62a58d6-4c41-477c-9a80-f1dd12310852",
+      "result_id": "42f7c271-d289-44e3-b6c0-8c9149e6924d"
+    },
+    {
+      "claim_id": "860cec10-7f79-48c3-b716-509ea611fbe7",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "3336ecf0-50a7-400d-8e8b-521bd525a765",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "9d32976a-2b03-4a07-a567-9d79e992d937",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "e18c8bc1-f704-4d5c-8dc5-4e39f39e4408",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "9be683e5-97f2-48bf-92d3-7490b17ce68d",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "6600239b-c3ac-4ee7-a4bc-f64f0affd08b",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "beab1f27-1e99-4823-b4b3-df8c6ac2953b",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "02a00e20-997e-4361-9334-73bb21038cc9",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "cd3790df-fe2d-4cae-ace8-3ca69af0c3cc",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "0b58893f-8c6d-4f5b-8ab5-0c84b672cb09",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "7b44f636-5a70-4e4d-9ce2-9e75f3d2acad",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "29c4f8f5-145d-4b46-9781-b9e5c657597f",
+      "result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff"
+    },
+    {
+      "claim_id": "f236cdd3-31d1-4b78-a01c-ba504bf9040c",
+      "result_id": "80814cde-0a41-4d8f-9a5d-1e0760a3b9cf"
+    },
+    {
+      "claim_id": "cd0c9c54-4841-4f4d-9c00-343553c4650c",
+      "result_id": "80814cde-0a41-4d8f-9a5d-1e0760a3b9cf"
+    },
+    {
+      "claim_id": "8903ceda-87ef-44ed-a59f-4a1c731cec85",
+      "result_id": "80814cde-0a41-4d8f-9a5d-1e0760a3b9cf"
+    },
+    {
+      "claim_id": "6d6a6693-f33d-44bc-9a2e-419c847f54f1",
+      "result_id": "80814cde-0a41-4d8f-9a5d-1e0760a3b9cf"
+    },
+    {
+      "claim_id": "63a1339f-bb5d-4178-af4b-b62b4b0008cf",
+      "result_id": "80814cde-0a41-4d8f-9a5d-1e0760a3b9cf"
+    },
+    {
+      "claim_id": "69e55925-a752-4167-b0ea-70f323157814",
+      "result_id": "80814cde-0a41-4d8f-9a5d-1e0760a3b9cf"
+    },
+    {
+      "claim_id": "173eec44-5296-4e2f-ae13-decfa863d6ac",
+      "result_id": "9c40033a-98f9-4026-a63c-b8d22d6f2d4e"
+    },
+    {
+      "claim_id": "0691dfad-6e17-44bd-8318-95f9a8296f00",
+      "result_id": "9c40033a-98f9-4026-a63c-b8d22d6f2d4e"
+    },
+    {
+      "claim_id": "f3926fb1-6f06-45db-be04-36b0dd608e0b",
+      "result_id": "9c40033a-98f9-4026-a63c-b8d22d6f2d4e"
+    },
+    {
+      "claim_id": "ad6c099b-eaab-4eb7-a526-df5109b96010",
+      "result_id": "9c40033a-98f9-4026-a63c-b8d22d6f2d4e"
+    },
+    {
+      "claim_id": "8660e94e-a6cf-48d7-bb26-bd4d0790b935",
+      "result_id": "b61c02c9-e010-4695-83e7-72f7f01ffdcb"
+    },
+    {
+      "claim_id": "c4b0e1c3-85db-4ad0-a4cf-b930984cb792",
+      "result_id": "b61c02c9-e010-4695-83e7-72f7f01ffdcb"
+    },
+    {
+      "claim_id": "4a86317d-e816-4610-ae8d-11b8aba5b37a",
+      "result_id": "b61c02c9-e010-4695-83e7-72f7f01ffdcb"
+    },
+    {
+      "claim_id": "4421339a-8c09-4057-add7-7f901e3d6228",
+      "result_id": "e9beefc7-e42e-49a0-9b91-cdde3f6d23fa"
+    },
+    {
+      "claim_id": "50850bd5-bc77-4cd7-a057-e7a9e0b6bafb",
+      "result_id": "e9beefc7-e42e-49a0-9b91-cdde3f6d23fa"
+    },
+    {
+      "claim_id": "283c9601-ed62-43eb-a55d-07823ababb91",
+      "result_id": "e9beefc7-e42e-49a0-9b91-cdde3f6d23fa"
+    },
+    {
+      "claim_id": "3cf6d658-0d45-4fe0-b444-ca31aa918d4f",
+      "result_id": "e9beefc7-e42e-49a0-9b91-cdde3f6d23fa"
+    },
+    {
+      "claim_id": "e401a090-26c2-4166-a054-1387d4cbfcba",
+      "result_id": "e9beefc7-e42e-49a0-9b91-cdde3f6d23fa"
+    },
+    {
+      "claim_id": "75903c08-d3ca-47fb-874f-c6ad64ef7311",
+      "result_id": "e9beefc7-e42e-49a0-9b91-cdde3f6d23fa"
+    },
+    {
+      "claim_id": "0d54cdcd-076c-4157-9c79-fcf038207ced",
+      "result_id": "c48f98f0-32d7-455d-93ee-5e50271d963c"
+    },
+    {
+      "claim_id": "bfd037cd-6e2f-45ce-bc41-506818e51876",
+      "result_id": "c48f98f0-32d7-455d-93ee-5e50271d963c"
+    },
+    {
+      "claim_id": "6ccb993f-c03d-4fc0-ba97-bb2b427fa6b6",
+      "result_id": "c48f98f0-32d7-455d-93ee-5e50271d963c"
+    },
+    {
+      "claim_id": "ba2e8d3d-2b69-4838-9bea-83a1a6562c0c",
+      "result_id": "c48f98f0-32d7-455d-93ee-5e50271d963c"
+    },
+    {
+      "claim_id": "15409e89-d24c-48e9-a0e3-944c0ae12460",
+      "result_id": "c8a10fe7-dc98-414a-8940-325fde111caa"
+    },
+    {
+      "claim_id": "437924a0-7937-4fbc-955f-9059fae2c0db",
+      "result_id": "c8a10fe7-dc98-414a-8940-325fde111caa"
+    },
+    {
+      "claim_id": "0da6de11-da66-4ccc-83a0-78ae4548fea8",
+      "result_id": "c8a10fe7-dc98-414a-8940-325fde111caa"
+    },
+    {
+      "claim_id": "c0602ce1-4126-4a4f-9a41-e427bae7c50a",
+      "result_id": "c8a10fe7-dc98-414a-8940-325fde111caa"
+    },
+    {
+      "claim_id": "a01a3f07-0b26-447c-a0ce-9a847f3fa5ab",
+      "result_id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf"
+    },
+    {
+      "claim_id": "647be0ff-ce4c-4af7-b06b-0a2087060cb6",
+      "result_id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf"
+    },
+    {
+      "claim_id": "05f1b19d-342f-459d-8106-7055626cf88f",
+      "result_id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf"
+    },
+    {
+      "claim_id": "1a9ce0d5-ccbe-4c9c-bdb2-825d09a51831",
+      "result_id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf"
+    },
+    {
+      "claim_id": "dc2c1265-6b75-4b56-92af-2ebdfc6d30e8",
+      "result_id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf"
+    },
+    {
+      "claim_id": "0b3e128e-95f4-442e-b13e-7df6078cb63e",
+      "result_id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf"
+    },
+    {
+      "claim_id": "cfb2700d-d6c1-4838-b31a-cffe385fb5fd",
+      "result_id": "e70c6571-96c4-4515-ab9c-315ba928b884"
+    },
+    {
+      "claim_id": "3b956a52-d8bc-4d55-be44-ff9f92260b83",
+      "result_id": "e70c6571-96c4-4515-ab9c-315ba928b884"
+    },
+    {
+      "claim_id": "37208451-e6d6-43f6-a9f2-7eee9e105d8c",
+      "result_id": "e70c6571-96c4-4515-ab9c-315ba928b884"
+    },
+    {
+      "claim_id": "c72d02b0-46a0-4058-8ce7-94c5d2a8c5c8",
+      "result_id": "e70c6571-96c4-4515-ab9c-315ba928b884"
+    },
+    {
+      "claim_id": "bf57dfbc-fd4c-4343-aaa2-bf9136d705ea",
+      "result_id": "2db766bb-61be-4dcc-95c6-ef7a2c8eec9f"
+    },
+    {
+      "claim_id": "b62a58d6-4c41-477c-9a80-f1dd12310852",
+      "result_id": "2db766bb-61be-4dcc-95c6-ef7a2c8eec9f"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "5b34df5f-41ef-4f10-8139-b51d5c782aef",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7a0dc4a4-08b3-48b0-9b9f-133b658936fc",
+      "peer_result_id": "26fcc14b-39c5-4f9d-acf6-b70d627240ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on structural characterization (C22-C34). Both evaluations find the cryoEM reconstruction at 3.4-3.5 \u00c5 resolution strongly supported. All three peer reviewers explicitly praise the structural work as 'convincing,' 'beautiful,' and 'solid,' matching OpenEval's assessment of comprehensive structural characterization with clear component identification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "c7ef76cc-4557-48a5-8f52-26f54735710e",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "9485739d-743e-4395-82e9-4c349e4d59e5",
+      "peer_result_id": "9c40033a-98f9-4026-a63c-b8d22d6f2d4e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on contraction phenotype (C3, C17, C20, C54). Both evaluations find the cryoET data showing extended-only particles in \u0394cisA mutants strongly supported. Peer reviewers note 'solid and detailed analysis' and accept the genetic evidence without challenge, matching OpenEval's assessment of adequate sample sizes and critical genetic validation through complementation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "13d09686-769c-4972-aaed-5be1c97974d2",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "cb8c3c61-2713-430c-b90d-3d0816e95669",
+      "peer_result_id": "80814cde-0a41-4d8f-9a5d-1e0760a3b9cf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on CisA membrane protein characterization (C4, C37, C39-C42). Both evaluations find the experimental evidence (fluorescence microscopy, fractionation, topology assays) well-supported. Peer reviewers explicitly state the membrane protein conclusion and topology are 'well supported by experimental data,' though OpenEval notes the AlphaFold3 pentamerization prediction (C38) requires experimental validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "7803f071-89be-4e63-bad8-43689f1cb36a",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "fd966682-6b45-4cb1-b60c-f59721a5f02f",
+      "peer_result_id": "b61c02c9-e010-4695-83e7-72f7f01ffdcb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on CisA absence from purified particles (C5, C35, C36). Both evaluations accept the cryoEM and mass spectrometry evidence showing CisA is not stably associated with extended CISSc. Peer reviewers acknowledge this finding 'raises the question of what CisA does,' matching OpenEval's note about the appropriate caveat regarding transient interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "2377dda0-e9f3-4342-8eb7-ec77f64564a1",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "b62673c8-3fbe-47d4-bb82-8cf7974269dc",
+      "peer_result_id": "e9beefc7-e42e-49a0-9b91-cdde3f6d23fa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on viability assay data (C43-C48). Both evaluations find the fluorescence-based assay with statistical analysis strongly supported. Peer reviewers note 'strong evidence' for CisA function in cell death regulation, though one reviewer suggests broader growth conditions could have been tested, while OpenEval emphasizes the critical genetic validation through complementation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "2293acc0-7d34-4959-8cb1-501aceb18e0f",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "39bd6d24-8096-48bb-9557-e4f4047fdc65",
+      "peer_result_id": "c48f98f0-32d7-455d-93ee-5e50271d963c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on developmental phenotype data (C49-C52) but different emphasis. Both accept the experimental evidence showing accelerated sporulation and phenotype similarity to CISSc deletion mutants. However, peer reviewers view this as confirmatory rather than providing new mechanistic insight into biological roles, while OpenEval notes the data are supported but unclear on specific timing differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "9e1ce594-9b7e-43ec-9e81-3121c08d19a6",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "888f7046-f79e-4f91-aeef-c72a70f2914d",
+      "peer_result_id": "e70c6571-96c4-4515-ab9c-315ba928b884",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on established background context (C1, C2, C12). Both evaluations accept these claims as well-supported prior work that forms the foundation for the current study. Peer reviewers acknowledge this background without challenge, matching OpenEval's assessment that these summarize previous publications appropriately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "60d43cd7-ada6-4237-ba06-c68dc24afb0d",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f12d3cf0-5991-4c2e-9bcc-0647c978164a",
+      "peer_result_id": "c8a10fe7-dc98-414a-8940-325fde111caa",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on uncertainty of CisA-Cis11 interaction (C59-C61). Both evaluations rate this as uncertain/not definitively proven. Peer reviewers note AlphaFold predictions are 'compelling' but 'not yet been possible to test and verify experimentally,' matching OpenEval's assessment that computational predictions require validation and evidence is suggestive but not conclusive due to technical limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "d3fe4ce5-8c33-465f-b4ac-3197090d34db",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ed9a04d0-d1c3-4ffc-a30a-4b9f38ef6c8d",
+      "peer_result_id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on speculative mechanism (C63-C66). Both evaluations recognize these claims as uncertain/speculative. Peer reviewers explicitly state 'it remains unclear whether or how CisA recruits the CISSc system' and note 'no direct evidence' for the proposed mechanism, matching OpenEval's assessment that claims are 'explicitly speculative' and lack direct experimental support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "d89066a9-6c06-4c8d-b6df-dca9271a7ee4",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "42f7c271-d289-44e3-b6c0-8c9149e6924d",
+      "peer_result_id": "2db766bb-61be-4dcc-95c6-ef7a2c8eec9f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on novelty of CISSc subtype (C57, C6). Both evaluations support the conclusion that CISSc lacks tail fibers and represents a distinct CIS subtype. Peer reviewers emphasize this 'provides a valuable contribution to our understanding' of this 'much less understood subtype,' matching OpenEval's assessment that absence of tail fibers is well-supported and distinguishes CISSc from other systems.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "ce84c580-88dd-490e-b27b-72bfb8c81dd9",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "fa9bdda6-8d87-4dac-858d-b0a98bc01d5d",
+      "peer_result_id": "2db766bb-61be-4dcc-95c6-ef7a2c8eec9f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on main conclusions (C6, C53, C58). OpenEval finds the synthesis of experimental findings supported, including CisA-mediated membrane interaction. Peer reviewers agree on the novelty and distinction from other CIS types (C6) but express uncertainty about the membrane recruitment mechanism (C58), which OpenEval addresses separately in R8.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "82dd7211-75ae-4357-b5df-e9344fa19b35",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "0ae45418-68eb-46c6-8639-12464609ee4b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated established literature context (C7-C11, C56) as supported with appropriate citations. No corresponding peer review evaluation found, though peer reviewers implicitly accept this background when discussing the work's contribution to understanding CIS diversity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "238d4c18-ee8d-4987-9dd0-81311624e1ba",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "be12d518-0f23-4655-8926-e2bbffab4f39",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated bioinformatic analysis of CisA homologs and gene cluster organization (C13, C14) as supported. No corresponding peer review evaluation found; peer reviewers did not specifically comment on the bioinformatic characterization of CisA distribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "c52c8b6b-318c-4398-af5f-c61082ef64eb",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "89eb81ef-f547-4b33-b9ad-f71793a8b51e",
+      "peer_result_id": "e70c6571-96c4-4515-ab9c-315ba928b884",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap. OpenEval evaluated purified particle contraction and dimensional measurements (C15-C19) as supported. Peer R9 addresses background context including C16 but does not specifically evaluate the purified particle experiments. The distinction between in situ and purified particle behavior is not explicitly discussed in peer reviews.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "16a4eb41-95c7-497e-9320-6787f52d56d4",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "2578df2e-8af1-445f-ae4a-e7876adbf843",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated bioinformatic findings on gene cluster composition (C21, C27) as supported, noting absence of tape measure protein gene. No corresponding peer review evaluation found; peer reviewers did not specifically comment on this genomic analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    },
+    {
+      "id": "f5b62119-b700-480e-a4ac-060a98291416",
+      "submission_id": "0d53c57e-3320-41c2-8b7a-88cab0e04754",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "fa9bdda6-8d87-4dac-858d-b0a98bc01d5d",
+      "peer_result_id": "fb43b37f-5ea8-4572-8f6e-2f49f4b814cf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Additional overlap on membrane interaction mechanism (C58). OpenEval finds CisA-mediated membrane interaction conclusion supported by convergent evidence. Peer R8 explicitly states this mechanism 'remains largely unclear' and lacks direct experimental support, representing a more cautious assessment of the mechanistic claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:02:01.714529Z"
+    }
+  ]
+}

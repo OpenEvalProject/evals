@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C95"
+    ],
+    "result": "G2Ns receiving different gustatory inputs (sweet Gr64fG2Ns vs. bitter Gr66aG2Ns) have distinct transcriptomic profiles, and metabolic state (fed vs. starved) significantly influences gene expression in both populations without altering their fundamental separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C19-C22 are well-supported by PCA analysis (Figure 1B) and differential expression analysis (Figure 1C) from bulk RNAseq data. The experimental design using trans-Tango, FACS, and RNAseq is appropriate, and the PCA clearly shows population separation with metabolic state effects. Sample sizes are documented in Supplementary file 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Gene Ontology analysis of differentially expressed genes in G2Ns under starvation revealed enrichment for nervous system development, synapse organization, sensory stimuli response, stress response, and neurotransmitter/neuropeptide signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by GO analysis shown in Figure 1\u2014figure supplement 2. The analysis appropriately uses differentially expressed genes and multiple GO databases for validation. However, these are inferential interpretations of GO enrichment rather than direct functional demonstrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "G2Ns predominantly express nicotinic acetylcholine receptor nAChRbeta1 consistent with cholinergic GRN input, but also express multiple other neurotransmitter receptors indicating integration from diverse neuronal sources. Neurotransmitter receptor expression levels do not change with metabolic state, while Gad1 and Ddc enzymes are highly expressed in both G2N populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C32-C34 are supported by RNAseq data in Figure 2A-B showing TPM values for neurotransmitter receptors and biosynthetic enzymes. The consistency with prior literature (C31) strengthens the interpretation. The lack of metabolic state effects on receptor expression is clearly stated based on the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Neuropeptide receptor expression analysis revealed EcR with slight starvation-dependent decrease and sNPF-R highly expressed with patterns similar to its ligand sNPF, which was highly expressed particularly in Gr66aG2Ns without metabolic state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by RNAseq data in Figure 2C-D. The expression patterns are clearly documented, though the functional interpretations (C35: \"possible role in adapting to food deprivation\") are speculative inferences from expression data rather than functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C98"
+    ],
+    "result": "Leucokinin (Lk) neuropeptide shows starvation-specific upregulation in Gr66aG2Ns (SELK neurons) but not in Gr64fG2Ns, validated at mRNA level by RNAseq and qPCR, and at protein level by immunohistochemistry in both SELK and LHLK neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C53-C58 are strongly supported by converging evidence from three independent methods: RNAseq (Figure 2D), qPCR (Figure 3C), and immunohistochemistry (Figure 3D-F). The dissection method explanation (C53) appropriately addresses why SELK rather than LHLK neurons were captured in RNAseq. Statistical significance is shown for qPCR and immunofluorescence quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C97"
+    ],
+    "result": "SELK neurons receive direct synaptic input from both sweet-sensing Gr64fGRNs and bitter-sensing Gr66aGRNs, representing the first identified G2N that integrates gustatory information of opposing valence (attractive and repulsive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 are exceptionally well-supported by multiple complementary techniques: trans-Tango with Lk immunostaining (Figure 4A-B), GRASP (Figure 5A, C), active-GRASP with tastant stimulation (Figure 5B, D), and BacTrace (Figure 5E). The convergence of evidence from four independent methods strongly supports the connectivity claim. The novelty claim (C67) is appropriately qualified as \"to our best knowledge.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Connectomic analysis identified DNg68 neurons as SELK candidates with 57 postsynaptic partners (mostly in SEZ with projections to pars intercerebralis containing IPCs) and 101 presynaptic partners, though limited GRN connectivity was found indicating incomplete FAFB annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C79 present connectomic analysis using FAFB dataset and BrainCircuits. While the morphological matching (Figure 6\u2014figure supplement 1) and connectivity patterns are documented, the authors acknowledge significant limitations (C75): only 5 bitter and 3 sweet GRNs identified as presynaptic to right SELK, and 1 bitter and 1 sweet to left SELK. This is far fewer than expected given the molecular data, indicating incomplete connectome annotation. The retro-Tango validation (C78-C79) provides some support but doesn't resolve the discrepancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C93"
+    ],
+    "result": "Silencing Lk neurons does not affect PER to sucrose alone but significantly reduces tolerance to caffeine-laced sweet food in 24-hour starved flies, indicating Lk neurons are required for initiating feeding on bitter-containing food during starvation. This effect requires Leucokinin neuropeptide itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C84-C89, C93 are supported by PER experiments (Figure 7B-C, Figure 7\u2014figure supplement 1). The experimental design appropriately tests multiple starvation states and caffeine concentrations. Statistical analysis using logistic regression with binomial distribution is appropriate for binary PER data. The tsh-Gal80 experiment (C88) and RNAi experiment (C89) provide important controls, though C88 shows no effect which somewhat contradicts the main finding. Sample sizes (n=30) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "In flyPAD sustained feeding assays, flies with silenced Lk neurons show slightly increased preference for higher sucrose concentration, but caffeine addition does not affect their choices, suggesting Lk neurons are not required for sustained feeding decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92, C94 are supported by flyPAD data (Figure 7E). The experimental design is appropriate for measuring sustained feeding. However, the result is somewhat negative (no effect of Lk silencing on caffeine avoidance in sustained feeding) and contrasts with the PER results. The authors appropriately acknowledge this limitation (C94). Statistical analysis using Wilcoxon Rank Sum Test is appropriate for non-parametric data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The number of postsynaptic G2Ns differs between sweet and bitter GRNs, indicating differences in information processing for different tastants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by quantification in Figure 1\u2014figure supplement 1C-D showing different numbers of trans-Tango labeled neurons for Gr64f-Gal4 vs. Gr66a-Gal4. Sample sizes are provided (n=11 and n=9 brains). This is a straightforward quantitative observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The discrepancy between RNAseq (showing Lk only in Gr66aG2Ns) and other techniques (showing SELK connectivity to both Gr64f and Gr66a GRNs) may be explained by fewer synaptic contacts between Gr64fGRNs and SELK neurons, below the detection threshold for trans-Tango labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 are speculative explanations for an important discrepancy in the data. While the explanation is plausible and cites recent findings about trans-Tango sensitivity, it remains untested. The authors appropriately present this as speculation (\"It is possible that...\") rather than established fact. This represents an important limitation that affects interpretation of the RNAseq results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Attempts to perform in vivo calcium imaging of SELK neurons were unsuccessful due to challenging anatomical location and variability in GCaMP labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 document technical limitations encountered in the study. This is appropriately reported as it explains why functional imaging data is absent. The anatomical explanation is reasonable given the ventral location of SELK neurons.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C58"
+    ],
+    "result": "Glycolytic gene expression, particularly Pgk1 and Eno1, peaks during the early-to-late RPC transition (E18/P0), coinciding with the peak of rod photoreceptor precursor differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C58 are supported by scRNA-seq data showing differential expression of glycolytic genes across developmental stages, with enrichment in early-RPC clusters. The correlation between Pgk1 expression peaks and rod photoreceptor differentiation timing is validated by both data analysis and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C59"
+    ],
+    "result": "Pten-cKO RPCs exhibit hyperproliferation and accelerated differentiation during embryonic stages (E12.5-E18.5), followed by precocious depletion of dividing RPCs by P4, ultimately resulting in fewer rod photoreceptors at P7 and P21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C59 are well-supported by immunostaining data (C2), BrdU birthdating experiments (C4), and multiple cited studies (C3, C59). The temporal progression from hyperproliferation to premature depletion is clearly demonstrated, though C3 and C59 rely heavily on prior publications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C60",
+      "C61"
+    ],
+    "result": "P0 Pten-cKO retinas show upregulation of glycolytic genes (Hk1, Gpi1, Pfkl, Aldoa, Pgk1, Pgam1, Eno1, Slc16a3) and increased glycolytic activity (elevated extracellular acidification rate and lactate levels) without changes in oxygen consumption rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9, C60-C61 are strongly supported by converging evidence from bulk RNA-seq (667 upregulated genes including glycolytic enzymes), qPCR validation, Seahorse assays, and lactate measurements. The specificity for glycolysis without affecting OXPHOS strengthens the conclusion. Statistical significance is reported for all measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C62",
+      "C63"
+    ],
+    "result": "Pharmacological inhibition of glycolysis with 2DG results in dose-dependent suppression of RPC proliferation and photoreceptor differentiation without affecting RPC survival or inducing apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by systematic BrdU incorporation assays, VSX2 and CRX immunostaining, and cleaved-caspase 3 measurements in retinal explants. The dose-dependent effects (5 mM and 10 mM 2DG) and multiple readouts (proliferation, differentiation, apoptosis) provide robust evidence. C62-C63 provide established mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Murine RPCs depend on a constant supply of glucose rather than glycogen stores to maintain proliferation, as glycogen phosphorylase inhibitor treatment does not affect RPC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by negative results from GPI treatment experiments and comparison to published data on human retinal organoids. The conclusion distinguishes murine from Xenopus RPC metabolism. However, the inference relies on absence of effect and comparison to other species, which is less direct than positive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Genetic enhancement of glycolytic flux via cytoPFKFB3 gain-of-function increases lactate levels, accelerates photoreceptor differentiation (more BrdU+ cells in ONL at P7), and promotes precocious outer segment maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by lactate assays, BrdU birthdating experiments, and rhodopsin immunostaining in cytoPFKFB3-GOF mice. The transgenic model is well-characterized (C64-C66). The phenotype phenocopies Pten-cKO effects, strengthening the glycolysis-differentiation link. Statistical significance is reported for all measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C67"
+    ],
+    "result": "Pten-cKO retinas exhibit precocious rod photoreceptor outer segment maturation (increased OS area at P7), which is blocked by in vivo 2DG treatment from P0-P7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by RNA-seq analysis of OS genes and rhodopsin immunostaining with area measurements. The rescue experiment with 2DG (C22) provides strong causal evidence linking glycolysis to OS maturation. C67 provides established context for photoreceptor glycolysis dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Intracellular pH modulation, either through lactate/H+ symporter inhibition (CNCn) or direct pH manipulation, controls RPC proliferation and photoreceptor differentiation, with higher pH (8.0) promoting both processes and lower pH (6.5) suppressing them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by systematic BrdU incorporation, p-fraction calculations, VSX2 and CRX immunostaining across different pH conditions and CNCn treatment. The pH-dependent effects are consistent and dose-responsive. C68-C72 provide mechanistic context from established literature. The pHluorin reporter data (C29) confirms pH heterogeneity in RPCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Intracellular pH varies among individual RPCs, as demonstrated by variable pHluorin signal intensity in cells with similar tdTomato expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by direct imaging of electroporated pHluorin-tdTomato reporter in retinal explants. The observation of pH heterogeneity among RPCs is consistent with the hypothesis that pH influences individual cell fate decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Wnt signaling is the most upregulated pathway in P0 Pten-cKO retinas, with Wnt pathway components (Dvl3, Apc, Gsk3b, Tcf4, Crebbp) upregulated and Id3 downregulated, and Wnt signaling appears active throughout retinal development based on Wnt7b and Lef1 expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by PANTHER pathway analysis, scRNA-seq mining, and bulk RNA-seq RPKM values. The downregulation of Id3 (C34) distinguishes this phenotype from peripheral Ctnnb1-cKO effects. C73-C75 provide supporting context from prior studies. The evidence converges to support Wnt pathway activation in Pten-cKO retinas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "\u03b2-catenin protein levels decline upon glycolysis inhibition (2DG treatment) and at low pH (6.5), establishing a link between glycolytic activity and Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by western blot analysis showing dose-dependent and pH-dependent effects on \u03b2-catenin levels. The data directly link glycolytic activity to Wnt signaling activation. Statistical significance is reported for both conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Pharmacological (FH535) and genetic (Ctnnb1-cKO) inhibition of Wnt signaling reduces RPC proliferation, photoreceptor differentiation, and outer segment maturation without affecting apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by BrdU incorporation assays, CRX and cleaved-caspase 3 immunostaining in FH535-treated explants, and rhodopsin immunostaining in Ctnnb1-cKO retinas. The convergence of pharmacological and genetic approaches strengthens the conclusion that Wnt signaling is required for these processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Sodium acetate treatment, which promotes protein acetylation including \u03b2-catenin, increases RPC proliferation in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by BrdU incorporation assays showing dose-dependent increases in proliferating RPCs with 5, 10, and 20 mM sodium acetate. This gain-of-function experiment complements the loss-of-function studies and supports the glycolysis-Wnt signaling axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "PTEN controls RPC proliferation and rod differentiation/maturation via modulating glycolysis, which in turn controls these processes through modulating intracellular pH to create a favorable environment for Wnt signaling activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 represent the main conclusions synthesizing multiple experimental findings. The pathway from PTEN \u2192 glycolysis \u2192 pHi \u2192 Wnt signaling \u2192 RPC fate is supported by converging evidence from genetic models, pharmacological interventions, pH manipulations, and molecular measurements. Each link in the pathway is experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background and context claims establishing retinal development, glycolysis basics, and prior PTEN studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C57 provide established background knowledge from cited literature. These claims set the context for the current study and are appropriately supported by multiple citations. They are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Discussion claims comparing findings to other systems and species, including chick tailbud, cardiomyocytes, cancer cells, and other developmental contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C88 are appropriately supported by cited literature and provide important context for interpreting the current findings. They highlight both conservation and species-specificity of glycolysis-Wnt signaling interactions. These are discussion points rather than primary findings.",
+    "result_type": "MINOR"
+  }
+]

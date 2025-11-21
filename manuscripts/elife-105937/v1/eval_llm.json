@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C21",
+      "C128"
+    ],
+    "result": "C-terminal GFP tagging artifactually increases emerin's secretory trafficking. The authors demonstrate that emerin's localization is sensitive to C-terminal GFP tagging (C4), which biases the protein toward lysosomal trafficking (C6), and that this trafficking is artifactually expedited by the C-terminal tag (C21, C128).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C21, and C128 are well-supported by extensive experimental data comparing C-terminally tagged, N-terminally tagged, and untagged emerin constructs across multiple cell types and expression systems. The data consistently show increased trafficking with C-terminal tags.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C96"
+    ],
+    "result": "Emerin's hydrophobic transmembrane domain (TMD) is necessary and sufficient for secretory trafficking. The authors show that emerin's TMD is particularly hydrophobic (C37), that replacing it with a less hydrophobic TMD ablates trafficking (C38, C39), that the TMD alone can traffic regardless of tag orientation (C33), and that mutating aromatic residues in the TMD reduces trafficking in a dose-dependent manner (C40, C41, C42, C43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18, C33, C37-C43, and C96 are strongly supported by systematic mutagenesis experiments, TMD swap experiments, and biophysical analysis. The data demonstrate both necessity (TMD swap) and sufficiency (TMD-only constructs) of the hydrophobic TMD for trafficking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C20",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Emerin contains a conserved RXR-type ER retention motif that limits secretory trafficking. The authors identify a QRRR motif that, when deleted or mutated to AAAA, increases trafficking to the plasma membrane (C46, C47) and decreases protein stability (C48). The LEM domain modulates accessibility of this motif (C50, C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C20, C45-C52 are well-supported by deletion and point mutation experiments showing that the RXR motif limits trafficking and that its removal increases lysosomal flux. The data on LEM domain modulation of RXR accessibility is supported by the differential behavior of \u0394LEM constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The TMD acts upstream of the RXR motif in emerin's secretory trafficking hierarchy. The authors show that the RA mutation increases surface expression of most TMD mutants except the least hydrophobic one (C53), suggesting that TMD hydrophobicity is the primary determinant (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by combinatorial mutagenesis experiments showing that RXR mutation cannot rescue trafficking when TMD hydrophobicity is too low. This establishes a clear hierarchy where TMD properties are primary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "LAP2\u03b2 shares trafficking determinants with emerin. The authors show that LAP2\u03b2 contains similar RXR motifs (C57), its TMD can traffic when the N-terminal domain is replaced (C59, C60), and mutating its RXR1 motif increases trafficking (C61), indicating conserved mechanisms (C62, C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by parallel experiments with LAP2\u03b2 constructs showing similar behavior to emerin. The data demonstrate that both proteins use hydrophobic TMDs for trafficking and RXR motifs for retention, establishing a conserved mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C129"
+    ],
+    "result": "N-terminally tagged emerin traffics at a lower rate than C-terminally tagged emerin. The authors show that N-terminal fusions are 4-5 times more abundant than C-terminal fusions (C79), are less completely relocalized to lysosomes (C80), and traffic at a much lower rate (C16, C129).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C79, C80, C81, C82, C84, C85, and C129 are well-supported by direct comparisons of N- and C-terminally tagged constructs in the DICE iPSC system. The data consistently show differential stability and trafficking rates based on tag orientation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "C-terminal tagging converts emerin from a tail-anchored to a single-pass transmembrane protein, altering its biogenesis pathway and increasing ER exit. The authors show that only lumenally tagged emerin samples ERES (C105), and this is reduced by decreasing TMD hydrophobicity (C106), suggesting that topology changes affect ER exit propensity (C104, C107, C108).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 are supported by ERES colocalization experiments and established knowledge about tail-anchored vs. single-pass protein biogenesis pathways. The data show clear differences in ERES sampling between tagged and untagged emerin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C93",
+      "C94",
+      "C95",
+      "C131"
+    ],
+    "result": "There is no conclusive evidence that untagged emerin traffics to the lysosome. The authors report no apparent differences in localization or intensity of untagged emerin mutants (C93), inability to detect untagged emerin in lysosomes after BafA1 treatment (C94), and acknowledge they cannot rule out trafficking under specific conditions (C95, C131).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17, C93, C94, C95, and C131 acknowledge the limitations of the assays used to detect untagged emerin trafficking. The authors appropriately note that negative results may reflect assay sensitivity rather than absence of trafficking, making this conclusion uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Emerin interacts with the COPI coat, but this interaction is not weakened by RXR mutation. Mass spectrometry revealed robust COPI interaction (C65), which was not reduced by the RA mutation (C66). The authors note that mouse EMD co-immunoprecipitated endogenous human EMD (C67), suggesting possible indirect interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, and C67 are supported by mass spectrometry data from FLAG-EMD immunoprecipitations. However, the unexpected lack of RXR-dependence raises questions about the mechanism that the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "U2OS cells do not require ER stress to initiate EMD-GFP trafficking, unlike C2C12 myoblasts. BafA1 alone causes EMD-GFP accumulation in lysosomal puncta in U2OS cells (C23), and WT EMD-GFP traffics while \u0394LEM does not (C24, C25), as confirmed by surface labeling (C26, C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by microscopy and flow cytometry data comparing U2OS and C2C12 cells. The data establish U2OS as a suitable model system with constitutive trafficking that doesn't require ER stress induction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "EMD-GFP trafficking patterns in iPSCs mirror those in U2OS cells and are independent of expression level. The RA mutant accumulates more at the PM (C73), the TMD mutant does not traffic (C74), and there is no difference between endogenous and overexpressed levels (C77, C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by DICE iPSC experiments comparing WT and EMD KO backgrounds. The data demonstrate that the trafficking mechanisms identified in U2OS cells are conserved and not artifacts of overexpression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "GFP-tagged emerin colocalizes with ERES at steady state, but this is not increased at 10\u00b0C, indicating lack of specific ER exit signals. Only GFP-tagged emerin, not endogenous emerin or TMD mutant, showed ERES colocalization (C86, C87, C88), and 10\u00b0C treatment did not increase this (C89, C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by temperature block experiments and colocalization analysis with SEC31. The lack of increased ERES accumulation at 10\u00b0C indicates bulk flow rather than active packaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Domain truncation experiments identify regions sufficient for trafficking. The LEM-TMD construct accumulated 10-fold more at the PM than WT (C29), and both TMD-GFP and GFP-TMD localized to ER, PM, and lysosomes (C31, C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by systematic domain deletion experiments and microscopy. The data establish which domains are necessary and sufficient for trafficking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C97"
+    ],
+    "result": "Tail-anchored proteins sort via TMD hydrophobicity along the secretory pathway. Long, hydrophobic TMDs partition to late secretory organelles (C35), while shorter, less hydrophobic TMDs remain in the ER (C36), as established in prior literature (C34, C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C36, and C97 are supported by citations to established literature. This provides the mechanistic framework for interpreting the emerin trafficking data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The hydrophobic TMDs of emerin and LAP2\u03b2 resemble PM-resident TMDs but are likely required for TRC40-mediated biogenesis. The biophysical properties resemble PM TMDs (C98), but this hydrophobicity is important for biogenesis (C99) as both are TRC40 clients (C101, C102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by biophysical analysis and citations to literature on TRC40-mediated targeting. The data reconcile the apparent paradox of ER-resident proteins with PM-like TMDs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Tag orientation influences the extent of emerin protein turnover. N-terminally FLAG-tagged emerin showed more subtle lysosomal accumulation than C-terminally GFP-tagged emerin (C70), indicating that epitope tagging and/or tag orientation affects turnover (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by comparison of FLAG and GFP-tagged constructs. This observation is consistent with the broader finding that tag orientation affects trafficking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Hydrophobic tail-anchored TMDs are readily dislocated by C-terminal tags. The authors conclude this based on their experimental data and cite warnings from prior literature about tag-induced localization artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by the comprehensive experimental data showing differential behavior of C- vs. N-terminally tagged constructs and is consistent with cited literature on tagging artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Poor correlation between emerin transcript and protein levels across tissues suggests protein-level regulation. The authors note poor correlation (C132) and infer this suggests dynamic protein-level regulation (C133).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132 and C133 are supported by citation to published data and analysis shown in supplementary figures. This observation provides context for why emerin trafficking might be physiologically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Active ER retention may play a role in INM protein targeting. The authors hypothesize that retention mechanisms bias emerin toward INM diffusion (C109, C111) and speculate about potential ER-resident binding partners like MOSPD3 (C112, C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C113 are largely speculative, based on inference from the trafficking data and limited prior literature. While plausible, these hypotheses require direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The N-terminal domains of emerin and LAP2\u03b2 limit trafficking to different extents, possibly through modulation of RXR motif accessibility. LAP2\u03b2-GFP is more retained than EMD-GFP (C114, C115), suggesting that sequences around the RXR motif influence its activity (C116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114, C115, and C116 are supported by comparative experiments with emerin and LAP2\u03b2 constructs. The data suggest context-dependent RXR activity, though the mechanism remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "RXR motifs function as ER retention/retrieval signals through COPI interaction. Prior literature establishes that RXR motifs prevent ER exit until masked by oligomerization (C117), engage COPI for retrieval (C118), interact with specific COPI subunits (C119), and can be located at various positions (C120), with Sun2 providing a precedent for INM proteins (C121, C122).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 are supported by citations to established literature. This provides the mechanistic framework for understanding emerin's RXR motif function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Endogenous emerin may be a COPI cargo. The authors speculate about indirect COPI binding through oligomerization (C123) and cite proximity biotinylation data showing emerin as the only non-Golgi protein in the gamma-COP interactome (C124, C125), suggesting endogenous emerin might be a COPI cargo (C126).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C126 involve speculation and inference from cited literature. While the proximity biotinylation data is intriguing, the functional significance and mechanism of COPI interaction remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "The experiments reveal an unanticipated connection between topology and localization of INM proteins. The authors conclude that their work reveals unexpected links between protein topology and localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 is supported by the comprehensive experimental data showing how tag orientation affects topology and consequently trafficking. This represents a novel insight into INM protein biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background on INM protein biology and targeting. The INM is an ER subdomain that sequesters transmembrane proteins (C1, C2). Tail-anchored INM proteins have poorly understood biosynthesis (C8), are inserted into the ER post-translationally (C9), must remain in the ER to reach the INM (C10), and this process repeats after mitosis (C11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C9, C10, and C11 represent established background knowledge supported by citations to literature. These provide essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C127"
+    ],
+    "result": "Prior work from the authors identified emerin as a short-lived INM protein that traffics to the lysosome via the secretory pathway. Previous studies showed emerin is short-lived (C12), C-terminally tagged emerin traffics through Golgi, PM, and lysosome during ER stress (C13, C14), and this was prevented by LEM domain deletion (C15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12, C13, C14, C15, and C127 are supported by citations to the authors' previous work. The current study revises these conclusions by showing the role of C-terminal tagging.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study employed coarse-grained molecular dynamics (CGMD) simulations of 27 structures from five different TMEM16 family members, capturing over 700 scrambling events. CGMD was chosen as it enables reaching longer time scales while retaining sufficient chemical detail to reproduce experimentally verified protein-lipid interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers across all reviews acknowledge the comprehensive nature of the CGMD approach and the large number of scrambling events captured. Reviewer 3 specifically notes 'the study demonstrates an efficient use of CGMD simulations' and that the authors 'bypass some of the sampling limitations inherent in all-atom simulations.' The editor and reviewers recognize this as a strength of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C100",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "All TMEM16 structures thin the membrane to 23 \u00c5 or less (at least 7 \u00c5 thinner than bulk), regardless of scrambling activity. Even non-scrambling, closed-groove structures elicit large membrane distortions (13-14 \u00c5 compression), while structures with dilated grooves thin the membrane an additional 3-4 \u00c5.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the membrane thinning observations. Reviewer 3 notes 'the authors observe that for scrambling-competent TMEM16 structures, there is substantial membrane thinning and groove widening' and that this 'supports the hypothesis that groove dilation lowers the energetic barrier for lipid translocation.' The finding is treated as a validated observation across reviews.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C108",
+      "C161"
+    ],
+    "result": "The majority of scrambling (>90%) occurs at the groove only when TM4 and TM6 have sufficiently separated. Most scrambling occurs when the membrane is thinned to at least 14 \u00c5 and the groove is open (TM4-TM6 distance >6 \u00c5). The major determinant of lipid scrambling is dilation of the TM4/TM6 groove.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently support this as a key finding. Reviewer 3 states 'A key contribution of this study is the finding that groove dilation plays a central role in lipid scrambling' and notes the correlation between groove opening and scrambling activity. The editor describes the data on 'comparison of scrambling competence is compelling.' This represents a central conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C66",
+      "C67",
+      "C68",
+      "C75"
+    ],
+    "result": "The simulations successfully reproduce experimentally determined membrane deformations seen in nanodiscs across both fungal and mammalian TMEM16s. The shapes of the membrane near the protein from CG simulations qualitatively match experimental densities and shapes from AAMD simulations. Simulation-derived densities crossing the bilayer are strikingly similar to lipids resolved in cryo-EM structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'They validate their simulation with a direct qualitative comparison with Cryo-EM maps' as a strength. The reviewers accept the qualitative agreement between simulations and experimental structures, treating this as validation of the computational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C91",
+      "C94",
+      "C95",
+      "C97",
+      "C163"
+    ],
+    "result": "Open-groove, Ca2+-bound structures show robust scrambling activity (nhTMEM16 4WIS: 24.4\u00b15.2 events/\u03bcs; afTMEM16 7RXG: 10.7\u00b12.9 events/\u03bcs; TMEM16K 5OC9: 8.2\u00b12.9 events/\u03bcs; TMEM16F F518H: 11.3\u00b11.6 events/\u03bcs), while closed-groove structures show negligible or no scrambling. Wild-type TMEM16F structures showed little to no scrambling.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the qualitative distinction between open and closed structures. Reviewer 3 notes 'The simulations differentiate between open and closed conformations of TMEM16 structures, with open-groove structures exhibiting increased scrambling activity, while closed-groove structures do not.' However, reviewers caution about quantitative rate comparisons with experiment (see separate result).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The simulations correctly distinguish scrambling-competent structures from non-competent scramblers, but direct comparison of simulation rates with experimental values (which are 2-3 orders of magnitude slower) should be interpreted qualitatively. Several factors contribute to faster rates in simulations, including the Martini model's increased diffusion dynamics (~4-fold), reduced energy barriers in Martini 3, and elastic network flexibility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 extensively discusses this limitation, noting 'the observed differences can mean large energetic discrepancies' and that 'the faster diffusion in simulations may lead to overestimated scrambling rates.' The reviewer states 'I would therefore read the findings qualitatively rather than quantitatively.' Reviewer 3 acknowledges in revisions that authors 'refined the discussion towards a cautionary approach in describing quantitatively the findings,' indicating this concern was partially addressed but remains a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C65",
+      "C139",
+      "C140",
+      "C141",
+      "C171",
+      "C172",
+      "C173",
+      "C176"
+    ],
+    "result": "60 scrambling events occurred outside the canonical groove, with over 90% (56/60) taking place at the dimer-dimer interface between TM3 and TM10 in mammalian TMEM16s. This interface was proposed as an alternative mechanism for lipid scrambling and may be a source for Ca2+-independent scrambling. No scrambling at the dimer cleft was observed for fungal structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor explicitly states 'the evidence for outside-the-groove scramblase activity without experimental validation is missing and is based on a limited set of observed events.' Reviewer 4 notes 'the absence of validation leaves certain claims, like alternative scrambling pathways, speculative.' Reviewer 3 acknowledges this as 'Another significant finding' but notes the events 'may provide insight' (speculative language). The limited number of events (60 total) and lack of experimental validation create uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C98",
+      "C114",
+      "C115",
+      "C116",
+      "C198"
+    ],
+    "result": "One simulation of TMEM16A initiated from a predicted ion-conductive state scrambled lipids through a lipid-lined groove at a very low rate (only two events), suggesting that ion channel-only members may have residual non-detectable scramblase activity. The low number of recorded scrambling events for TMEM16A may be consistent with the lack of experimentally measured scramblase activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly challenge this finding, but the speculative nature of the interpretation ('suggesting,' 'may have,' 'may be consistent') and the very low number of events (2) indicate this is a tentative observation rather than a strong conclusion. The claim itself acknowledges the activity would be 'non-detectable' experimentally, making it inherently uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "Only open scramblase structures have grooves fully lined by lipids (typically 2-3 lipids at any given time), with all grooves filled with water. Open scramblase structures promote scrambling with lipids experiencing a less than 1 kT free energy barrier. Scrambling occurs in an identical manner across the TMEM16 family, with lipids moving quickly through the groove (dwell times <20 ns) and scrambling events being Poisson distributed.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these mechanistic details about the scrambling process. Reviewer 3 notes the study provides 'a detailed exploration of how structural features influence scrambling activity' and that the findings align 'with previous research suggesting that the structural dynamics of the groove are critical for scrambling.' These observations are treated as validated mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Asymmetry was observed in scrambling between monomers (e.g., >80% of TMEM16K events via chain B, which had a wider groove entrance and remained more open). Hydrophobic residues at the midpoint of pathways (e.g., H/F518, W619, M522 in TMEM16F; Y366/I370/T435/L436 in TMEM16K) dynamically swing open to sporadically allow lipids through, with scrambling occurring more frequently when grooves are open.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises specific concerns about the asymmetry observation, questioning 'how the ENM applies across the dimer and if any asymmetry can be noticed in the application of restraints' and whether 'this artificially obtained from restraining the initial structure, or is the asymmetry somehow gatekeeping the scrambling mechanism.' This suggests the asymmetry finding may be a simulation artifact rather than a biological phenomenon, creating uncertainty about its validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C155"
+    ],
+    "result": "Spontaneous permeation of Na+ and Cl- ions through scramblase TMEM16 grooves and TMEM16A pore was observed (218 events total), in line with known ion-conducting capacity. The simulations are consistent with experiments showing TMEM16s show very little to no ion selectivity, with measured cation-to-anion selectivity ratios generally agreeing with experimental values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the ion permeation observations as consistent with experimental findings. Reviewer 3 notes 'In addition to lipid scrambling ability, our results are in accord with the general finding that TMEM16s show very little to no ion selectivity.' The agreement between simulated and experimental selectivity ratios is treated as validation of the simulation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Experimental scrambling assays have reported basal level scramblase activity in the absence of Ca2+ for fungal and mammalian dual-function scramblases, but it is unknown where closed-groove scrambling takes place. The simulations may be revealing aspects of Ca2+-independent scrambling in mammalian family members through out-of-the-groove events, though it is unclear whether these reflect the same closed-groove scrambling activity seen in experimental assays.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 4 explicitly states 'The weakness of the work is to fully reconcile with experimental evidence of Ca\u00b2\u207a-independent scrambling rates observed in prior studies, but this part is also challenging using coarse-grain molecular simulations.' The authors themselves acknowledge uncertainty ('it is unclear whether,' 'may be revealing'), and the limited sampling and lack of experimental validation for the proposed mechanism create substantial uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C156"
+    ],
+    "result": "The simulations correctly differentiate between open and closed conformations across the five family members, consistent with validation studies showing good qualitative agreement between in vitro and in silico lipid scrambling using the Martini 3 force field. The study is in a unique position to directly compare biophysical properties between different TMEM16 family members because simulation conditions and system setups were identical.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers recognize this as a methodological strength. Reviewer 4 notes 'The strength of this study emerges from comparative analysis of multiple structural starting points' and Reviewer 3 states the study provides 'a more comprehensive and high-throughput analysis of lipid scrambling.' The systematic comparison across family members is treated as a valuable contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C160",
+      "C162",
+      "C165",
+      "C166"
+    ],
+    "result": "Scrambling rates are generally higher with thinner membranes and wider grooves, but lipids flowing into groove vestibules heavily contribute to the observed <14 \u00c5 membrane thickness. The extremely thin membranes are likely correlated with groove opening rather than being an independent contributing factor. The importance of membrane thinning to modulating scrambling rates has yet to be determined, and other features (membrane shape, groove dynamics, residues, membrane composition) may impact rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the authors' interpretation that groove dilation is the primary determinant rather than membrane thinning per se. Reviewer 3 notes the authors 'argue that the extremely thin membranes are likely correlated with groove opening' and accepts this reasoning. The acknowledgment of additional unexplored factors is treated as appropriate scientific caution rather than a weakness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Previous all-atom simulations captured at most a handful of complete scrambling events due to timescale limitations and cannot provide rigorous statistics on scrambling rates or enable large high-throughput comparisons. The study used CGMD to circumvent sampling issues and systematically quantify lipid scrambling across family members.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes that 'the authors acknowledge the referee's view that the manuscript primarily confirms previously reported findings' regarding groove-mediated scrambling, but reviewers accept that the scale and systematic nature of the CGMD study represents an advance over previous limited AAMD studies. The methodological justification is accepted even if some findings confirm prior work.",
+    "result_type": "MINOR"
+  }
+]

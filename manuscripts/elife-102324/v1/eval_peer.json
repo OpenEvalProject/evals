@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The haemGx model captures multi-wave blood formation through a differentiation protocol involving Activin A, VEGF, FGF2, and Shh, generating sequential populations of VE-cadherin+ C-Kit+ cells (120-144h), CD41+ cells (144h), and CD45+ cells (168-216h) with cluster-like structures adjacent to endothelium.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the protocol generates hematopoietic populations but express concern about the claim of capturing multiple waves. Reviewer 2 states 'it remains unclear whether the system recapitulates sequential waves of hematopoiesis or merely reflects the progressive maturation of cells originating from a single wave.' Reviewer 3 notes improvements but states 'the claim of \"spatio-temporal accuracy\" should be more cautiously phrased.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Flow cytometry and functional assays demonstrate that haemGx generates endothelial cells (CD31+CD34+), hematopoietic cells with hemato-endothelial markers, AGM-like HSPC phenotype (CD45+ C-Kit+ Flk1-GFP+ VE-cadherin+, ~8 cells/haemGx), and >50 colony-forming cells including multipotent GEM progenitors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the phenotypic characterization but question the interpretation. Reviewer 2 states 'The identification of lymphoid or pre-HSC-like populations is primarily inferred from scRNA-seq data. The lack of robust functional validation...significantly weakens the manuscript's main claims.' Reviewer 3 notes 'The case for YS-like EMP and AGM-like HSPC precursors is reasonably made, though further functional distinctions...would strengthen the claims.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "qPCR analysis shows temporal progression of hemato-endothelial markers with bimodal Runx1 expression (144h and 216h), Myb peaking at 144h coincident with CD41+ cells, and increased Hoxa9/Hlf at 216h suggesting AGM-like HSPC. EZH2 inhibition selectively reduces CD41+ cells at 144h but not CD45+ cells at 216h, supporting two independent waves.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers question whether the data support distinct waves versus progressive maturation. Reviewer 1 critically notes 'it is evident from the UMAP provided that there is no HOXA9 expressed in either endothelium or blood cells. This argues very strongly against the proposition that AGM-type hematopoiesis is generated.' The EZH2 inhibition data is not specifically discussed by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Single-cell RNA-seq analysis identifies 12 clusters including endothelial (clusters 0, 5), CD41+ (cluster 4), and CD45+ (clusters 1, 8) populations. Gene expression analysis shows endothelial markers (Pecam, Cd34, Mecom), arterial markers (Flt1, Efnb2, Dll4), AGM-associated markers (Cd44, Sox17, Procr, Hoxa9, Hlf), and a shift from erythroid/megakaryocytic to myelo-lymphoid lineage affiliation between 144h and 216h.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the scRNA-seq data but express significant concerns about interpretation. Reviewer 1 states 'it is evident from the UMAP provided that there is no HOXA9 expressed in either endothelium or blood cells. This argues very strongly against the proposition that AGM-type hematopoiesis is generated.' Reviewer 2 notes 'the claim in line 263 that Cluster 8 (CD45\u207a cells at 192-216 h) expresses lymphoid markers is not clearly supported by the provided supplemental data.' Reviewer 3 acknowledges 'scRNA-seq re-clustering supports two hematopoietic waves with distinct marker sets' but notes 'further functional distinctions...would strengthen the claims.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Projection of haemGx scRNA-seq data onto published embryonic datasets (Hou et al., Zhu et al., Thambyrajah et al.) shows that endothelial clusters map to E8.5-E10 HE, CD41+ cells map to YS EMP and some to IAC/HE, and CD45+ cells map to IAC, LMPP, and myeloid progenitors, suggesting presence of both YS-like and AGM-like progenitors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the projection analysis as valuable but remain uncertain about the conclusions. Reviewer 2 states 'they do not test whether these cells might more closely resemble YS-derived EHT, which remains an unresolved and critical question' and concludes 'the current data do not support this conclusion and instead suggest that the system recapitulates the generation of multipotent lymphoid progenitors (MLPs) akin to those found in the YS.' Reviewer 3 notes 'Projection onto multiple embryonic reference datasets...is a valuable addition' but the interpretation remains cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Direct transplantation of dissociated haemGx cells failed to engraft, but adrenal gland implantation of intact haemGx resulted in low-level (<0.1%) BFP+ engraftment in bone marrow and spleen of 3/5 recipients at 4 weeks (erythro-myeloid) and 1 recipient at 8 weeks (lympho-myeloid), suggesting short-term progenitor activity but incomplete functional maturation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concerns about the engraftment data. The editor states 'the claim of definitive wave hematopoietic progenitors being produced in the gastruloids, and their engraftment after transplantation, would benefit from further validation.' Reviewer 2 notes 'The engraftment data presented are not particularly convincing. It is unclear why the analysis was terminated at 8 weeks post-transplant, especially given that a minimum of 12 weeks is generally required.' Reviewer 3 states 'this in vivo result remains marginal and should be interpreted with caution. Crucially, this still does not demonstrate HSC-level repopulation capacity' but acknowledges 'the revised manuscript has softened the claims accordingly, now referring to \"progenitor\" activity rather than \"pre-HSC.\"'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MNX1 overexpression in haemGx causes increased cellularity, contractile structures, and selective expansion of C-Kit+ cells at 144h. Transcriptional analysis shows distinct time-specific programs with hemogenic enrichment (GATA2, GATA1, RUNX1 targets) at 144h and cardiogenic enrichment at 216h. MNX1-OE transcriptomes enrich for haemGx HE cluster signatures and MNX1-r patient signatures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers generally accept the MNX1 overexpression effects on haemGx. Reviewer 3 states 'The MNX1 overexpression experiments are generally convincing in showing early expansion of a putative HE-to-EMP-like population and transcriptional resemblance to MNX1-r AML.' However, Reviewer 2 notes 'Given the uncertainties discussed above, the interpretability of the MNX1 overexpression study is limited' due to concerns about the underlying haemGx characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "MNX1-OE haemGx cells show serial replating capacity (>5 platings) with enrichment of C-Kit+CD31+ cells and early Ter119+ cells. RNA-seq of replated cells identifies cluster k14 with significant enrichment of MNX1-r patient signatures and cell-type signatures including endothelial cells, erythroid precursors, and mast cells. Cytospin analysis shows progression from blast-like to mast cell morphology.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not specifically critique the serial replating and transformation data. Reviewer 3 states 'The MNX1 overexpression experiments are generally convincing in showing early expansion of a putative HE-to-EMP-like population and transcriptional resemblance to MNX1-r AML. However, the evidence for transformation is still solely based on in vitro data and lacks any evidence of in vivo leukaemia engraftment.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Enforced MNX1 expression in haemGx promotes expansion and in vitro transformation of yolk sac-like erythroid-myeloid progenitors at the HE-to-hematopoietic transition, faithfully recapitulating patient transcriptional signatures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the transcriptional similarity to patients but note the lack of in vivo validation. Reviewer 3 states 'the evidence for transformation is still solely based on in vitro data and lacks any evidence of in vivo leukaemia engraftment. The ability to perturb the system would add translational value to the haemGx platform, although future studies are needed to better define transformation dynamics and leukemogenic progression.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Current in vitro models of developmental blood formation lack spatio-temporal accuracy and weakly replicate successive waves of hematopoiesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This background claim is not challenged by reviewers. Reviewer 1 acknowledges 'Gastruloids models are useful systems for studying early embryonic development' and Reviewer 2 notes 'The development of a novel in vitro system to model hematopoietic development is innovative and could potentially address important limitations of existing platforms.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims about embryonic hematopoiesis, pediatric leukemia, MNX1 biology, and gastruloid models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims from the literature are not challenged by reviewers and serve to establish the scientific context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C90"
+    ],
+    "result": "MNX1-driven leukemia represents the commonest genetic abnormality unique to the infant group, and infant AML transforms fetal liver but not adult hematopoietic cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims about infant AML are not challenged by reviewers and are supported by citations to prior literature.",
+    "result_type": "MINOR"
+  }
+]

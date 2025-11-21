@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C30"
+    ],
+    "result": "Csf2rb (CD131) mRNA expression is elevated in the distal colon of wild-type mice following DSS administration, but not in other immune-related tissues or in CD131-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C30 collectively demonstrate tissue-specific upregulation of Csf2rb in the distal colon following DSS treatment in wild-type mice, with appropriate controls showing no changes in other tissues or in CD131-deficient mice. The data from both public datasets and experimental validation provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "CD131-deficient mice are protected from DSS-induced colitis compared to wild-type mice, showing reduced body weight loss, colon shortening, tissue destruction, neutrophil infiltration, and inflammatory cytokine expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 provide comprehensive evidence across multiple disease parameters (body weight, colon length, histology, immune cell infiltration, cytokine expression) that CD131-deficient mice are protected from DSS-induced colitis. The data are internally consistent and support the conclusion that CD131 contributes to colitis pathogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Homozygous Csf2rb knock-out mice are fatal at an early stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 reports an important observation about the lethality of homozygous CD131 knockout, but provides no data on timing, mechanism, or validation. This limitation is acknowledged by the authors but raises questions about the genetic model used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The DSS-induced murine colitis model represents local rather than systemic inflammation, as blood markers of inflammation remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate that inflammatory markers (Tnf, Il1b mRNA, neutrophils) in blood are comparable between DSS-treated and control mice, supporting the interpretation of localized inflammation. This is an important characterization of the model used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "M1 macrophages and \u03b3\u03b4T cells are enriched in colonic tissues of DSS-treated wild-type mice but not CD131-deficient mice, suggesting CD131 is associated with infiltration of these cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C36 are based on computational immune cell infiltration analysis (CIBERSORT) of RNA-seq data rather than direct measurement. While the analysis shows enrichment of M1 macrophages and \u03b3\u03b4T cells, the method has inherent limitations in accuracy and the lack of direct validation (e.g., flow cytometry for these specific populations) weakens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "M1 macrophages correlate with Th1 cells, while \u03b3\u03b4T cells show multiple significant correlations with other immune cell populations in the colon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C46 report correlation analyses between computationally estimated immune cell populations. While statistically significant correlations are reported, these are based on estimated rather than measured cell populations, and correlation does not establish functional relationships. The small sample size (n appears to be ~12 based on correlation analysis) also limits confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "IBD-related and multiple immune-related pathways are enriched in wild-type mice compared to CD131-deficient mice following DSS treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 report GSEA results showing enrichment of IBD and immune pathways in wild-type mice. The analysis is appropriate for the RNA-seq data and supports the role of CD131 in immune-mediated colitis, though the specific pathways enriched are expected given the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "573 genes are differentially expressed in wild-type but not CD131-deficient mice following DSS treatment, with up-regulated genes associated with plasma membrane/synapses and down-regulated genes associated with cell cycle/DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 describe a logical intersection analysis to identify CD131-dependent genes. The GO and KEGG enrichment analyses are appropriately conducted. However, the biological relevance of some enriched terms (e.g., cholinergic synapse, progesterone-mediated oocyte maturation) to colitis pathogenesis is unclear and may reflect indirect effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Macrophages are elevated in colonic tissues of DSS-treated wild-type mice, express CD131, and contribute to colitis pathogenesis as demonstrated by macrophage depletion experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 provide strong evidence that macrophages mediate CD131's role in colitis through multiple complementary approaches: flow cytometry showing macrophage elevation and CD131 expression, macrophage depletion experiments showing protection, and TNF expression analysis. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "GM-CSF stimulation of RAW 264.7 macrophages increases Tnf expression and proliferation in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 demonstrate that GM-CSF stimulation activates macrophages in vitro, increasing inflammatory cytokine expression and proliferation. This provides mechanistic support for CD131's pro-inflammatory role, though the use of a cell line rather than primary macrophages is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Macrophages mediate the effect of CD131 on DSS-induced murine colitis, and CD131 mediates the pro-inflammatory effect of macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 synthesize the macrophage-related findings into mechanistic conclusions. The evidence from macrophage depletion, CD131 expression on macrophages, and differential responses between wild-type and CD131-deficient mice supports this bidirectional relationship, though the lack of macrophage-specific CD131 knockout limits definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "CD131 is expressed at different levels on various immune and non-immune cell types in the colon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 documents CD131 expression across multiple cell types by flow cytometry. This is important for interpreting the broader effects of CD131 deficiency, though the functional significance of CD131 on non-macrophage populations is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CD131 affects immune cell infiltration into the colon but not circulating immune cell levels, suggesting a role in chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 show that monocytes and T cells are elevated in colon but not blood of wild-type versus CD131-deficient mice, supporting a chemotaxis mechanism. This is a logical inference from the data, though direct chemotaxis assays would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CCL4, but not CCL5, is elevated in colonic tissues of DSS-treated wild-type mice compared to CD131-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 identify CCL4 as a CD131-dependent chemokine through RNA-seq analysis and qPCR validation. The consistency between RNA-seq and qPCR data strengthens this finding, though the claim that CCL4 and CCL5 are the 'only' chemotactic factors influenced by CD131 (C76) may be overstated without comprehensive analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Anti-CCL4 antibody treatment reduces macrophage and T cell infiltration and ameliorates DSS-induced colitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 demonstrate that CCL4 blockade reduces immune cell infiltration and disease severity. The data support CCL4 as a mediator of CD131's effects, though the body weight result (C81, p=0.06) is marginally non-significant and the lack of testing in CD131-deficient mice limits mechanistic certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "CCL4 mediates the effect of CD131 on chemotaxis of macrophages and T cells into the colon and on inflammatory response in DSS-induced murine colitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 synthesize the CCL4 findings into a mechanistic model. The evidence from CCL4 expression, anti-CCL4 antibody experiments, and correlation with disease parameters supports this conclusion, though the pathway connecting CD131 to CCL4 expression is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CD131 expression is elevated in inflamed UC patient tissues and correlates with endoscopic severity, histopathological severity, and macrophage/T cell infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 provide clinical validation of the mouse findings. The correlations with disease severity and immune cell infiltration are statistically significant and biologically plausible. However, the small patient cohort (n=29) and lack of correlation with most clinical parameters (Table 1) limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "CD131 is associated with endoscopic and histopathological severity of intestinal inflammation and immune cell infiltration in UC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 summarize the clinical findings. The correlations support clinical relevance, though the observational nature of the data and small sample size prevent causal conclusions. The lack of functional studies in human samples is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "CD131 and tissue-infiltrating macrophages synergistically contribute to DSS-induced murine colitis, with CD131 promoting chemotaxis through CCL4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 represent the main conclusions of the study. The evidence from CD131-deficient mice, macrophage depletion, CCL4 blockade, and clinical correlations provides strong support for this model, though the lack of macrophage-specific CD131 knockout and direct demonstration of the CD131-CCL4 pathway are limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "IBD patients with functionally intact wild-type CD131 may have better clinical responses to sargramostim treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is speculative and not directly supported by data in this study. While the authors cite evidence that CD131 mutations affect GM-CSF responses, the present study does not test sargramostim treatment or examine CD131 functional variants in patients. This represents a hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Background claims establish the context for CD131's role in IBD, including the etiology of IBD, GM-CSF/IL-3 receptor biology, prior evidence for CD131 in IBD, and relevant signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C14 and C94-C110 are primarily literature-based background claims supported by appropriate citations. These establish the scientific context and rationale for the study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Il3ra expression increases in DSS-treated colon in public datasets but could not be detected in the authors' experiments, while Csf2ra shows no change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C21 report discrepancies between public dataset analysis and the authors' experiments for receptor \u03b1 subunits. The inability to detect Il3ra (C21) and lack of Csf2ra changes (C20) despite dataset trends (C19) raises questions about technical sensitivity or biological differences between models. This limits interpretation of which receptor complexes are involved.",
+    "result_type": "MINOR"
+  }
+]

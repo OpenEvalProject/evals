@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "YEATS2 is overexpressed in head and neck cancer (HNC) and correlates with EMT, tumor grade, and metastasis. Expression was validated in patient tissues by RT-qPCR, immunoblotting, and public datasets (GSE30784, GSE9844, TCGA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from multiple independent datasets (patient samples n=8 and n=23, public microarrays, TCGA) and methods (RT-qPCR, immunoblotting, bioinformatics). The correlation with EMT gene signatures, tumor grade, and metastasis-associated genes strengthens the biological relevance. Sample sizes are modest but consistent across analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "YEATS2 silencing by shRNA leads to downregulation of 2494 genes, with enrichment of EPITHELIAL MESENCHYMAL TRANSITION and OXIDATIVE PHOSPHORYLATION pathways among downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by RNA-seq data with appropriate overrepresentation analysis. The large number of affected genes (2494 down, 2073 up) suggests YEATS2 has broad transcriptional effects. Pathway enrichment provides biological context, though the mechanism linking YEATS2 to these specific pathways requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "YEATS2 regulates EMT markers and invasive/migratory properties in HNC cells. Knockdown decreases Twist1, N-cadherin, Vimentin, invasion, and migration, while overexpression increases these phenotypes in BICR10 and SCC9 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 demonstrate consistent gain-of-function and loss-of-function phenotypes across two cell lines using multiple complementary assays (immunoblotting, Matrigel invasion, wound healing, 3D invasion). The bidirectional effects strengthen causal inference. Quantification and statistical testing appear appropriate (n=3 biological replicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "SP1 transcription factor directly regulates YEATS2 expression in HNC. SP1 is upregulated in tumors, binds to YEATS2 promoter, and its knockdown reduces YEATS2 expression and invasion, which is rescued by YEATS2 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 establish SP1 as an upstream regulator through multiple lines of evidence: promoter deletion analysis (C16), TCGA expression data (C17), knockdown experiments (C18), ChIP-qPCR (C19-C20), site-directed mutagenesis (C21), and rescue experiments (C22-C23). The mutagenesis showing ~50% reduction in activity and rescue experiments provide strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "YEATS2 expression correlates with the lysine degradation pathway in HNC. GCDH (crotonyl-CoA producing enzyme) is upregulated while ECHS1 is downregulated in tumors, and GCDH expression correlates with YEATS2 (Spearman r=0.32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 establish a metabolic connection through GSEA analysis (C24), literature support for YEATS2's affinity for crotonylation (C25), and expression analysis of pathway enzymes (C26-C28). The correlation coefficient of 0.32 (C29) is modest but statistically significant. The inverse GCDH/ECHS1 pattern suggests metabolic rewiring favoring crotonyl-CoA accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "H3K27cr histone mark is elevated in HNC tumors and regulated by both YEATS2 and GCDH. Knockdown of either factor decreases H3K27cr levels, while YEATS2 overexpression increases it. Nuclear GCDH co-localizes with H3K27cr in tumor tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 demonstrate coordinated regulation of H3K27cr by epigenetic (YEATS2) and metabolic (GCDH) factors using immunoblotting (n=23 tissues), IHC (n=8 patients), and immunofluorescence. The co-localization of nuclear GCDH with H3K27cr (C33-C34) provides spatial evidence for functional interaction. Bidirectional effects strengthen causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SPARC is a direct target of YEATS2, identified by integrating ChIP-seq, RNA-seq, and EMT gene signatures. YEATS2 binds to SPARC promoter and regulates its expression at mRNA and secreted protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 identify SPARC through rigorous multi-omics integration and validate the relationship using ChIP-qPCR (C40), RT-qPCR (C41), and immunoblotting of conditioned media (C42). The approach of intersecting three independent datasets (ChIP-seq peaks, RNA-seq downregulated genes, EMT signature) provides strong evidence for SPARC as a bona fide target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "p300 histone acetyltransferase is upregulated in HNC tumors and functions with YEATS2 as a complex. p300 binding to SPARC promoter is YEATS2-dependent, and p300 knockdown reduces SPARC expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 establish p300 as a writer enzyme recruited by YEATS2 through TCGA expression analysis (C43), ChIP-qPCR showing YEATS2-dependent p300 binding (C44), knockdown experiments (C45), and co-immunoprecipitation demonstrating physical interaction (C46). The co-IP provides direct evidence for complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "SPARC acts as a downstream effector of YEATS2 in maintaining invasive phenotype. SPARC overexpression rescues the invasion defect caused by YEATS2 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 demonstrate functional epistasis through rescue experiments. The ability of SPARC overexpression to restore invasion in YEATS2-knockdown cells provides strong evidence that SPARC mediates YEATS2's effects on invasion. This establishes SPARC as a key downstream effector rather than a parallel pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SPARC expression is specifically regulated by H3K27cr (not H3K27ac) at its promoter. Sodium crotonate treatment increases H3K27cr, SPARC expression, and invasion, but cannot rescue SPARC expression in YEATS2-knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 distinguish H3K27cr from H3K27ac using ChIP-qPCR (C49), demonstrate RNA Pol II recruitment (C50), and show substrate-level regulation with crotonate supplementation (C51-C53). The failure of crotonate to rescue YEATS2-knockdown effects (C54) demonstrates that YEATS2 is required for H3K27cr-mediated regulation, not just substrate availability. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "p300 functions as a crotonyltransferase at the SPARC promoter. p300 knockdown reduces H3K27cr levels, and p300 recruitment to SPARC is YEATS2-dependent as shown by rescue experiments in SP1-knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 establish p300's enzymatic role through ChIP-qPCR showing p300 knockdown reduces H3K27cr (C56) and rescue experiments demonstrating YEATS2-dependent p300 recruitment (C58-C59). The epistasis experiments with SP1 knockdown and YEATS2 overexpression provide strong evidence for the hierarchical relationship: SP1\u2192YEATS2\u2192p300\u2192H3K27cr\u2192SPARC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "GCDH regulates SPARC expression and H3K27cr levels at the SPARC promoter. However, GCDH and YEATS2 do not directly interact, ruling out a localized multi-protein complex model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 show GCDH affects SPARC through RT-qPCR, immunoblotting (C61), and ChIP-qPCR (C62). The negative co-IP result (C63) is important for ruling out direct protein-protein interaction, suggesting GCDH acts through substrate (crotonyl-CoA) production rather than direct recruitment. This clarifies the mechanism of metabolic-epigenetic crosstalk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SP1 transcriptionally regulates both GCDH and YEATS2 in HNC. SP1 expression correlates with GCDH, SP1 knockdown reduces GCDH levels, and SP1 shows significant occupancy on the GCDH promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 establish SP1 as a common upstream regulator of both the epigenetic (YEATS2) and metabolic (GCDH) arms of the pathway. Evidence includes TCGA correlation (C64), knockdown experiments (C65), and ChIP-qPCR (C66). This provides a unified regulatory mechanism explaining coordinate upregulation of both factors in HNC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "GCDH regulates invasive capacity of HNC cells. GCDH knockdown decreases invasion while overexpression increases invasion in BICR10 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 demonstrate bidirectional effects of GCDH on invasion using Matrigel assays. The gain-of-function and loss-of-function experiments provide strong evidence for GCDH's functional role in invasion, parallel to YEATS2's effects. This supports the model that both metabolic and epigenetic components are required for full invasive phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "YEATS2 may regulate nuclear localization of GCDH through an unknown indirect mechanism. Nuclear GCDH levels decrease in YEATS2-knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 shows decreased nuclear GCDH in YEATS2-knockdown cells by immunofluorescence, but C71 acknowledges the mechanism is unknown and speculative. While the observation is interesting, the lack of mechanistic insight and the indirect nature of the proposed regulation make this result uncertain. Additional experiments (e.g., nuclear/cytoplasmic fractionation, identification of transport machinery) would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "YEATS2 and GCDH work synergistically to maintain H3K27cr marks and regulate SPARC expression. Dual overexpression of both factors in SP1-silenced cells rescues SPARC levels more effectively than individual overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 demonstrate synergy through rescue experiments showing that dual overexpression of YEATS2 and GCDH provides greater rescue than either alone. This is strong evidence for functional cooperation between the epigenetic reader and metabolic enzyme in maintaining H3K27cr-dependent gene expression. The experimental design appropriately tests synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "YEATS2 regulates histone crotonylation genome-wide, affecting 1583 genomic locations (1533 decreased). Among 1166 promoter sites with reduced H3K27cr, 147 genes overlap with RNA-seq downregulated genes, enriched for EMT pathways and including EMT genes ERG and CREB3L2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 provide genome-wide validation through H3K27cr ChIP-seq showing extensive YEATS2-dependent crotonylation (C74-C75). The integration with RNA-seq identifies 147 genes with both reduced H3K27cr and decreased expression (C77), providing direct evidence for H3K27cr-mediated transcriptional regulation. EMT pathway enrichment (C76) and specific examples (C78) strengthen biological relevance. The global analysis confirms SPARC findings generalize to many EMT genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The YEATS domain confers unique binding properties to YEATS2, with highest affinity for histone crotonylation at H3K27 position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by citations to Zhao et al. 2016 and 2017, which are appropriate references for established biochemical properties of YEATS2. These claims provide important background knowledge justifying the focus on H3K27cr rather than other histone modifications. The claims are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior studies establish that H3K27cr promotes metastasis in colorectal cancer, SPARC mediates ECM-tumor communication and recruits immunosuppressive cells, p300-mediated crotonylation is important in development, and epigenetic-metabolic crosstalk is a cancer hallmark.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 provide relevant literature context with appropriate citations (Liao et al. 2023, Carriere et al. 2021, Sangaletti et al. 2016, Gao et al. 2024, Diehl and Muir 2020, Li et al. 2018). These claims establish the biological significance of the findings and place the work in proper context. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The upregulation of YEATS2 and GCDH contributes to EMT enhancement in HNC through global changes in EMT-favoring gene expression mediated by promoter histone crotonylation. The YEATS2-GCDH-SPARC axis is proposed as a potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is a well-supported synthesis of the study's findings, integrating the epigenetic (YEATS2, p300, H3K27cr) and metabolic (GCDH, crotonyl-CoA) components with functional outcomes (EMT, invasion). Claim C88 proposes therapeutic potential, which is reasonable given the demonstrated importance of this axis, though actual therapeutic validation would require additional studies. The conclusion is appropriately cautious ('potential therapeutic target').",
+    "result_type": "MAJOR"
+  }
+]

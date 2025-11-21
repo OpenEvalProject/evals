@@ -1,0 +1,119 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors report that VWM representations in visual cortex exhibit dynamic coding, where the neural code does not fully generalize across time points. This dynamic coding was attributed to shifts in neural coding spaces across time, particularly between encoding/early delay and late delay/retrieval periods, and was observed across multiple visual regions in all three experimental conditions (no-distractor, noise distractor, orientation distractor).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewer acknowledges the dynamic coding finding but notes an important limitation: 'Primary evidence for dynamic coding, especially in early visual cortex, appears to be related to the transition between encoding/maintenance and maintenance/recall, but the delay period representations seem overall stable.' The reviewer accepts that 'given the simulation results, the general result that representations may change in their format appears solid,' but emphasizes that 'the contribution of different trial phases remains important for considering the overall result.' This indicates the evidence is solid but the interpretation requires qualification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors demonstrate that VWM targets and sensory distractors are encoded in partially non-overlapping neural subspaces in early visual cortex. Cross-decoding analyses showed lower accuracies when training on one stimulus type and testing on another, and principal angle analyses revealed significant above-baseline angles between target and distractor subspaces in both experiments, though the separation was nominally smaller in Experiment 2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly affirms this finding, stating the analysis 'suggested a rotation of the representational subspace between distracting orientations and remembered orientations, which may help preserve simultaneous representations of both remembered and viewed stimuli.' The reviewer treats this as a key contribution of the reanalysis, noting it 'substantially goes beyond the authors' previous findings by comparing geometry of representational spaces between conditions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C45",
+      "C46"
+    ],
+    "result": "The separation between VWM and distractor coding spaces was smaller in Experiment 2 (where distractors impaired behavioral performance) compared to Experiment 1 (where distractors did not impair performance), suggesting that greater subspace separation is critical for preserving intact working memory representations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly endorses this finding as 'intriguing,' stating that 'this rotation was a bit smaller for Expt 2, in which the orientation distractor had a greater behavioral impact on the participants' behavioral working memory recall performance, suggesting that more separation between subspaces is critical for preserving intact working memory representations.' This interpretation is treated as a meaningful contribution linking neural geometry to behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C30",
+      "C31",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Decoding of target orientation was above chance across all conditions and ROIs, though accuracy was highest in no-distractor trials and lower in the presence of distractors. Cross-decoding from no-distractor to distractor trials showed reduced accuracy, but information could be recovered when training and testing within the same distractor condition, particularly in early visual areas V2 and V3AB for noise distractors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer does not raise concerns about these basic decoding results, treating them as solid evidence. The reviewer's main methodological critique concerns the conversion of 'continuous decoding metric (angular error) to % decoding accuracy,' which 'serves to obfuscate the units,' but this is about presentation rather than validity. The reviewer notes the authors 'addressed all my previous concerns' in revision, suggesting acceptance of the decoding findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The authors found no significant difference in VWM coding format between orientation distractor and no-distractor trials, leading them to suggest that the sensory distractor occupies a distinct coding space while the target's coding space remains consistent across conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer does not challenge this interpretation and treats it as consistent with the overall finding of subspace separation. This interpretation is implicit in the reviewer's summary that 'distracting orientations and remembered orientations' occupy rotated subspaces, which aligns with the authors' claim that the target space remains stable while the distractor occupies a separate space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors speculate that layer-specific coding differences might explain their findings, with sensory distractors potentially residing in middle cortical layers (bottom-up pathway) while VWM representations occupy superficial and deep layers (feedback pathway).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer does not critique this speculative interpretation and treats it as a reasonable mechanistic explanation grounded in prior anatomical and functional evidence. The reviewer's acceptance is implicit in the lack of challenge to this discussion point, and it aligns with the reviewer's positive assessment that the study uses 'innovative and useful approach for understanding how neural representations are transformed to support cognition.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors employed periodic support vector regression (pSVR) for orientation decoding, cluster-based permutation testing for statistical significance, and principal component analysis with principal angle metrics to quantify neural subspace alignment and dynamic coding across time points.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer initially raised a methodological concern about 'converting a continuous decoding metric (angular error) to % decoding accuracy,' but notes in the revised version that 'the authors have addressed all my previous concerns,' indicating acceptance of the methodological approach. The reviewer also positively evaluates the 'simulations testing whether dynamic codes can be explained purely by changes in data SNR' as 'an important contribution.'",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In vitro kinase assays combined with mass spectrometry-based phosphoproteomics identified hundreds of CMK-1 substrates, including TAX-6/CnA phosphorylated at S443 within its conserved regulatory domain. The substrate specificity matches the mammalian CaMK consensus motif \u03a6XRXX(S/T)XXX\u03a6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C39-C44 provide converging experimental evidence from multiple in vitro kinase assays (peptide library, protein library, and purified TAX-6) demonstrating CMK-1 phosphorylates TAX-6 at S443. The consensus motif validation (C39) and structural conservation (C44) strengthen the findings. The experimental design includes appropriate controls (kinase-dead mutant, no ATP).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CMK-1 activity is necessary and sufficient to promote thermo-nociceptive adaptation. Loss-of-function mutants lack adaptation while gain-of-function mutants show enhanced adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 present genetic evidence from both loss-of-function (cmk-1(ok287)) and gain-of-function (cmk-1(syb1633)) mutants showing opposing effects on adaptation. The data include appropriate wild-type controls and statistical significance is reported. The bidirectional genetic manipulation provides strong support for the necessity and sufficiency claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Both pharmacological inhibition and genetic overactivation of calcineurin signaling block thermo-nociceptive adaptation. Cyclosporin A treatment and tax-6(gf) mutants both impair adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 demonstrate that calcineurin signaling requires precise regulation for adaptation. The pharmacological approach (C49) avoids the spontaneous reversal phenotype seen in loss-of-function mutants, and the gain-of-function genetic data (C51) provides complementary evidence. Both manipulations produce similar adaptation defects, supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CMK-1 and TAX-6/CnA signaling interact through multiple antagonistic pathways to regulate thermo-nociceptive adaptation. Joint down-regulation restores adaptation, while tax-6(gf) is epistatic to cmk-1(gf), and CMK-1 overactivation can bypass calcineurin inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 present a systematic genetic interaction analysis using double mutants and combined pharmacological/genetic manipulations. The epistasis experiments (C56, C57, C58) and rescue of adaptation by joint inhibition (C53) support a complex regulatory network rather than a simple linear pathway. The data are internally consistent and support the proposed model in Figure 3D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "CMK-1 acts primarily in AFD thermosensory neurons and secondarily in ASER neurons to promote thermo-nociceptive adaptation. AFD neurons are dispensable for naive heat responses but required for adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 use cell-specific rescue experiments with multiple promoters to map CMK-1 function. The strongest rescue is with ttx-1p (AFD-specific, C63), with partial rescue by gcy-5p (ASER, C63). Genetic ablation and neurotransmission blocking experiments (C65, C66) confirm AFD's specific role in adaptation but not naive responses. The convergent evidence from rescue and ablation approaches strongly supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TAX-6/CnA overactivation in FLP neurons and glr-1-expressing interneurons (particularly RIM, and secondarily AVA/AVD/AVE) increases naive heat responsiveness and inhibits adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 use cell-specific overexpression of tax-6(gf) to map sites of action. Multiple promoters targeting different neuron types show that mec-3p (FLP) affects naive responses (C69, C70), while glr-1p interneurons affect adaptation (C71, C72). Further dissection with more specific promoters identifies RIM as primary and AVA/AVD/AVE as secondary loci (C73, C74). The systematic approach provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C85"
+    ],
+    "result": "CMK-1 and TAX-6/CnA act in distinct cell types, suggesting the in vitro phosphorylation may not directly underlie the behavioral phenotype. Instead, opposing effects arise from distributed circuit-level roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C11, and C85 present the authors' interpretation that reconciles the in vitro phosphorylation data with the cell-specific localization findings. The inference is logical given that CMK-1 acts primarily in AFD/ASER (C7, C64) while TAX-6 acts in FLP and interneurons (C8, C72-C74). The circuit-level antagonism model is well-supported by the genetic interaction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "The CMK-1 substrate datasets likely contain both true in vivo substrates and false positives, with expected biases toward abundant proteins. There is minimal overlap with previous in silico predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 provide a critical assessment of the phosphoproteomics data. The authors acknowledge limitations including potential false positives (C76, C77), detection biases (C78), and low overlap between methods (C80, C82). The GO enrichment for abundant proteins (C79) supports the bias concern. This transparent discussion of limitations is appropriate and the conclusions are well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The S443 phosphorylation site on TAX-6/CnA was previously shown to be phosphorylated by mammalian CaMKII in vitro, and CnA can be phosphorylated by multiple kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C84 accurately cite prior work showing that the same conserved region of calcineurin A can be phosphorylated by CaMKII and other kinases in vitro. This provides important context for the current findings and is properly attributed to previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "CMK-1 and TAX-6/CnA expression patterns largely overlap and both are activated by calcium signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 state background knowledge about the expression and activation of these proteins. While not directly demonstrated in this study, these are well-established facts in the field that provide important context for interpreting the potential relevance of the phosphorylation event in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Adaptation still occurs when both CMK-1 and TAX-6/CnA are concomitantly inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is directly supported by the experimental data in Figure 3A (referenced in C53) showing that cmk-1(lf) mutants treated with Cyclosporin A adapt like wild type. This key observation supports the model that these pathways regulate rather than execute the adaptation process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Previous studies established that CMK-1 works in FLP neurons for persistent heat stimulation, that FLP and AFD have different response properties (tonic vs. phasic), and that CMK-1 mediates AFD calcium adaptation to innocuous temperature changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 accurately summarize relevant prior work that provides context for the current findings. The citations are appropriate and the distinctions between FLP (tonic, C90) and AFD (phasic, C91) neurons help explain why different stimulation protocols might engage different neurons. This background is essential for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Overactive TAX-6 in FLP increases naive responses, while overactive TAX-6 in RIM or AVA/AVD/AVE increases naive responses but enhances responses after repeated stimulation, suggesting experience-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 synthesize the cell-specific overexpression data to highlight differential effects depending on neuron type and experience. The inference that calcineurin's impact depends on past experience (C97) is reasonable given the contrasting effects in different neuron types shown in Figure 5A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "AVA/AVD/AVE neurons promote reversal responses, while RIM neuron activity can either up- or down-regulate reversals depending on context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98 and C99 cite established knowledge about these interneurons' roles in reversal behavior. The citations are appropriate and this background is important for interpreting the cell-specific manipulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Cell-autonomous TAX-6 overactivation in interneurons blocks adaptation regardless of CMK-1 activity level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by the observation that tax-6(gf) is epistatic to cmk-1(gf) (C56) and that glr-1p::tax-6(gf) expression blocks adaptation (C71). This suggests TAX-6 activity in interneurons acts as a dominant gate controlling adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background knowledge establishing that CMK-1 regulates thermal nociception in C. elegans, that nociceptive plasticity is important for pain management, that C. elegans is a valid model for studying nociception, and that calcineurin is a conserved Ca2+/calmodulin-activated phosphatase involved in various physiological processes including nociception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C38 present background information and prior knowledge that contextualizes the study. These claims are properly cited and accurately represent the state of the field. They establish the rationale for the study and the relevance of the model system.",
+    "result_type": "MINOR"
+  }
+]

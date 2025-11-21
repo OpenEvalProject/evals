@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C25",
+      "C26"
+    ],
+    "result": "The new version of qFit-ligand integrates RDKit's ETKDG conformer generator for stochastic conformational sampling, which greatly enriches low-energy conformations of small molecules and macrocycles compared to the prior iterative sampling approach.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this methodological improvement. One reviewer states the authors 'provide a clear and systematic description of the improvements made to the code, most notably the implementation of a different conformer generator algorithm centered around RDKit.' The editor notes 'solid evidence of improved capabilities through careful validation against the previous version, particularly in expanding ligand sampling within conformational space.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C27",
+      "C28",
+      "C29",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The new qFit-ligand improves fit to electron density (RSCC and EDIAm metrics) and reduces torsional strain relative to both deposited single-conformer models and the prior version of qFit-ligand across the development dataset, with the majority of structures showing improvements in these metrics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these performance improvements but characterize them as modest. One reviewer notes the approach 'yields modest improvements in the strain of the proposed conformers (meaning that more physically reasonable conformations are generated than with the \"old\" qFit-ligand) and real space correlation of the model with the experimental electron density maps.' Another reviewer states 'the demonstrated performance gains are modest' as a weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Based on synthetic dataset analysis, qFit-ligand performs most effectively with map resolutions better than 2.0 \u00c5 and has an occupancy detection limit around 30%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer expresses significant concern about these operational limits: 'The procedure presented in this manuscript exhibits limitations in low-resolution electron density maps (lower than 2.0 \u00c5) and low-occupancy scenarios. Considering that the maps used to establish the operational bounds of qFit-ligand were synthetically generated, it's likely that the resolution cutoff will be even stricter when applied to real-world data.' This suggests the claimed limits may be optimistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In an unbiased dataset of structures not used for development, qFit-ligand models showed enhanced RSCC in 79.8% and higher EDIAm in 80.6% of structures, with 55.3% showing reduced torsional strain. The algorithm produced single conformers in 46.0%, two conformers in 35.7%, and three conformers in 18.3% of cases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these unbiased dataset results, which provide validation beyond the development set. The editor notes 'solid evidence of improved capabilities through careful validation against the previous version,' implicitly accepting the unbiased dataset findings as part of this validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The new qFit-ligand can now model macrocycles (which the prior version could not handle), improving RSCC in 69.9% of macrocycle structures, with 58.3% showing higher EDIAm values and 57.5% exhibiting lower strain compared to deposited models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this capability expansion. One reviewer states 'the authors expand the scope of ligands that can be treated, most notably allowing for multi conformer modeling of macrocyclic compounds.' The editor highlights 'expanding ligand sampling within conformational space' and notes practical utility for 'macrocyclic compound modeling.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "qFit-ligand was extended to work with PanDDA-modified density maps from fragment screening experiments. In the fragment dataset, only 9 of 20 structures showed good RMSD (<0.5 \u00c5) to deposited conformers, with about a third adopting completely different binding poses that the algorithm failed to capture. Despite this, 17 structures had higher RSCC and 15 had higher EDIAm in qFit models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly discuss the fragment screening results, but one reviewer raises a related concern about 'sensitivity to initial ligand placement' and notes 'ambiguous cases are quite common, for example with flat ligands with a few substituents sticking out.' The manuscript's own data showing failure in approximately half the fragment cases suggests limitations that align with reviewer concerns about initial placement accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "qFit-ligand was extended to work with single-particle cryo-EM density maps. In all four cryo-EM structures tested, the algorithm identified a second conformation and improved RSCC (by up to 0.1), EDIAm (by up to 0.2), and strain (decreased by up to 2.3 kcal/mol) compared to single-conformer models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this extension without challenge. The editor notes the work has 'practical utility for challenging applications, including... crystallographic drug fragment screening' (implicitly accepting the cryo-EM extension as part of expanded capabilities). One reviewer states the manuscript 'represents a needed improvement of our collective ability to model small-molecule binding to macromolecules based on cryo-EM and X-ray crystallography.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C67"
+    ],
+    "result": "In a high-strain dataset of deposited structures with elevated ligand strain, qFit-ligand modeled 75.4% with a single conformer but still improved RSCC in 53.4%, EDIAm in 81.2%, and reduced strain in 66.5% of structures even without modeling alternative conformers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these high-strain dataset results. The improvements in fit metrics even with single conformers support the claim that the new sampling method produces more physically reasonable conformations, which reviewers acknowledge as 'modest improvements in the strain of the proposed conformers.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "qFit-ligand is limited by its reliance on an initial single-conformer structure, which introduces bias toward the starting model. The algorithm performs best with subtle conformational changes (torsion angle variations or minor translational shifts) and struggles with dramatic conformational heterogeneity such as 180\u00b0 flip ligand conformations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer explicitly raises this concern: 'The accuracy of initial placement may be critical. At the same time, in my experience ambiguous cases are quite common, for example with flat ligands with a few substituents sticking out or with ligands with highly mobile tails. There remain some questions regarding sensitivity to initial ligand placement, which individual users should check for.' This directly supports the manuscript's acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Approximately one-third of macrocycle datasets failed in standard preparation or post-refinement pipelines due to ligand parameterization issues, with many failures stemming from problematic ligand restraint files. This resulted in 19.33% of structures being removed before qFit analysis and additional failures during strain calculation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these technical difficulties with macrocycles. The high failure rate is consistent with the acknowledged complexity of macrocycle modeling and does not undermine the claim that qFit-ligand can now handle macrocycles (which the prior version could not), though it highlights ongoing challenges in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "qFit-ligand operates on up to five CPU cores with typical runtimes for most ligands (70.6%) being less than 10 minutes. There is a strong correlation (Pearson correlation coefficient of 0.75) between ligand size and runtime.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these performance characteristics. One reviewer notes the manuscript 'provides a thorough analysis' and another states it is 'well written,' implicitly accepting the methodological details including computational performance metrics.",
+    "result_type": "MINOR"
+  }
+]

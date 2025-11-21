@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Chronic hypoxia (7% O2 for 28 days) induced cognitive and motor dysfunction in mice, accompanied by hippocampal damage, neurodegeneration, and reduced dendritic spine density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent behavioral assays (Y-maze, novel object recognition, open-field tests) consistently demonstrate functional deficits (C1-C6), corroborated by histological evidence of neuronal damage (Nissl, FJB, Golgi staining; C7-C11). The convergence of behavioral and structural findings provides strong support for hypoxia-induced neurological impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Single-nucleus RNA sequencing revealed that chronic hypoxia significantly upregulated hemoglobin subunit mRNA expression in non-neuronal brain cells and increased intercellular communication intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "snRNA-seq data (C13-C15) identifies 13 cell types and demonstrates consistent hemoglobin upregulation across multiple non-neuronal cell types, with endothelial cells showing the highest number of DEGs (C14). CellChat analysis provides quantitative evidence for increased intercellular communication (C17). The multi-cell-type pattern supports the interpretation of a common hypoxic response mechanism (C16, C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Chronic hypoxia increased brain EV secretion and altered EV cargo, with significant upregulation of hemoglobin mRNA and RNA metabolism pathways, while energy metabolism pathways were downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EVs are properly characterized by multiple orthogonal methods (TEM, western blot, NTA; C21-C24), meeting ISEV guidelines. EVs-RNA-seq identifies 2257 DEGs with hemoglobin mRNA significantly upregulated (C26-C27), consistent with snRNA-seq findings. Pathway analysis showing upregulated RNA metabolism and downregulated energy metabolism (C28-C29) is supported by GSEA demonstrating mitochondrial impairment (C32), providing mechanistic insight into cellular stress responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Combined snRNA-seq and EVs-RNA-seq analysis revealed that endothelial cells showed the greatest increase in EV secretion after hypoxia, and hemoglobin mRNA was present in EVs from non-neuronal cells but not neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integrated computational approach (CIBERSORTx deconvolution) successfully identifies cellular sources of EVs (C33), demonstrating endothelial cells as the primary contributors. RT-qPCR validation confirms hemoglobin mRNA enrichment in EVs (C35) with cell-type specificity (C36). GO analysis supports hemoglobin-related pathways across multiple cell types (C37), strengthening the interpretation of a coordinated non-neuronal response (C38-C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C56"
+    ],
+    "result": "Hypoxia induced hemoglobin protein accumulation specifically in neurons despite hemoglobin mRNA being primarily transcribed in non-neuronal cells, suggesting EV-mediated transfer from non-neuronal cells to neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial discordance between mRNA (non-neuronal; C41-C42) and protein (neuronal; C46-C47) localization is demonstrated by orthogonal methods (snRNA-seq, RT-qPCR, western blot, immunofluorescence; C40-C44). Co-localization with neuronal marker Map2 (C46) provides cellular specificity. This pattern strongly supports EV-mediated intercellular transfer (C48-C49, C56), though direct visualization of transfer in vivo would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Chronic hypoxia significantly reduced mitochondrial complex I and IV protein levels and complex I activity in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot quantification demonstrates significant decreases in both mitochondrial complex markers (C52-C53), validated by functional complex I activity assay (C54). The convergence of protein expression and enzymatic activity data provides strong evidence for mitochondrial dysfunction (C55), consistent with the energy metabolism pathway downregulation observed in EVs-RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In vitro hypoxia (1% O2 for 8 hours) induced mitochondrial dysfunction in neuronal cells and stimulated hemoglobin transcription and EV release specifically in endothelial cells but not neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro model recapitulates key in vivo findings: endothelial cells upregulate HBA1 mRNA and increase EV secretion at 8h (C64, C66), while neurons show no hemoglobin transcription (C65) but exhibit mitochondrial damage (C61-C62). Multiple viability assays (CCK-8, LDH, MitoTracker, JC-1) provide convergent evidence for neuronal mitochondrial dysfunction (C57-C63). The cell-type-specific responses validate the in vivo observations and establish a tractable experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Endothelial cell-conditioned medium from hypoxic conditions increased hemoglobin levels in neurons and improved neuronal mitochondrial homeostasis and viability under hypoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EV uptake is demonstrated by confocal microscopy (C68), and safety controls confirm no toxicity from conditioned medium alone (C69). The conditioned medium increases both hemoglobin mRNA and protein in neurons (C70-C73) and rescues mitochondrial dysfunction (improved mitochondrial number, membrane potential, and cell viability; C74-C76). The dose-response relationship and multiple functional readouts provide strong evidence for a protective effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "EC-derived EVs carrying hemoglobin mRNA were taken up by primary neurons, increased neuronal hemoglobin expression, and protected against hypoxia-induced mitochondrial dysfunction and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Validation in primary neurons strengthens the SH-SY5Y cell line findings. EV uptake (C77), hemoglobin upregulation (C78), and mitochondrial protection (C79-C80) are consistently observed. PI/Hoechst staining demonstrates functional neuroprotection against cell death (C81). The reproducibility across two neuronal systems (cell line and primary culture) enhances confidence in the biological relevance of the findings (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "EV depletion and HBA1 RNAi experiments demonstrated that the neuroprotective effects of endothelial cell-conditioned medium require EVs containing hemoglobin mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Loss-of-function experiments provide critical mechanistic validation. EV depletion abolishes both hemoglobin transfer (C83) and neuroprotective effects (C84). HBA1 RNAi in endothelial cells similarly eliminates hemoglobin transfer (C85) and protection (C86). These complementary approaches establish necessity and specificity, strongly supporting the conclusion that EV-mediated hemoglobin mRNA transfer is the operative mechanism (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Neuroglobin (Ngb) showed consistently low expression levels across brain cell types before and after hypoxia, contrasting with hemoglobin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "snRNA-seq analysis demonstrates that Ngb does not respond to hypoxia in this model (C51), distinguishing it from hemoglobin's robust upregulation. This negative control strengthens the specificity of the hemoglobin findings, though the biological significance of Ngb's lack of response is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Hypoxia enhances EVs-mediated intercellular communication in the brain, as supported by prior literature and the current study's findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by both cited literature (C88) and the study's own snRNA-seq/EVs-RNA-seq data (C89). However, this represents confirmatory evidence rather than a novel discovery, as the phenomenon has been previously reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The chronic hypoxia model (7% O2 for 28 days) was designed to mimic systemic hypoxia-induced multi-organ damage observed in various clinical conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model rationale is clearly stated (C90) and the behavioral/histological phenotypes validate that the model induces brain pathology. However, the claim about mimicking specific diseases is aspirational rather than validated, as disease-specific biomarkers or comparative analyses with human conditions are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The literature presents conflicting evidence on hemoglobin's role in the brain, with some studies suggesting protective functions and others indicating neurotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors accurately summarize the controversial literature on brain hemoglobin (C91-C92). Their in vitro findings support a protective role under acute hypoxia (C93), though they acknowledge the in vivo complexity. This contextualizes their work within existing knowledge but represents literature review rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors speculate that hemoglobin may become pathological through \u03b1-synuclein-mediated phosphorylation, leading to cytoplasmic retention and loss of mitochondrial protective function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors cite evidence for hemoglobin-\u03b1-synuclein aggregates in PD (C94) and their own prior work on hypoxia-induced \u03b1-synuclein phosphorylation (C95), the proposed mechanism (C96) is explicitly speculative with no experimental validation. This hypothesis requires future testing and cannot be evaluated as supported or unsupported based on presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "This study identified a novel 'mutual aid' mechanism of exosomal hemoglobin transfer in brain hypoxia responses and provides a potential therapeutic perspective for hypoxia-related brain diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study successfully demonstrates EV-mediated hemoglobin transfer from non-neuronal cells to neurons (C97) and establishes its functional significance through comprehensive in vivo and in vitro experiments (C98). However, the claim of providing a 'novel interventional perspective' (C99) is aspirational, as no therapeutic intervention is tested and translation to human disease remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Background claims establish that the brain is highly oxygen-dependent, hypoxia contributes to neurological diseases, hemoglobin exists in brain neurons with context-dependent functions, and EVs mediate intercellular communication in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C100-C110) represent well-established background knowledge supported by appropriate citations. They provide necessary context for the study but do not constitute novel findings. The authors accurately represent the literature to motivate their research questions.",
+    "result_type": "MINOR"
+  }
+]

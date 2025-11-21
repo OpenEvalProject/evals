@@ -1,0 +1,187 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Microfluidic channels containing sediment-mimicking obstacles were created based on micro-CT reconstructions of sediment from Gro\u00dfer Zernsee lake. The sediment was characterized as 61% sand and 39% water with a mean particle diameter of 46 \u03bcm (classified as silt) and mean water gap size of 43 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15, C68-C71 provide comprehensive methodological details and characterization data for the sediment and microfluidic channel construction. The \u03bcCT imaging (1.56 \u03bcm resolution), statistical analysis of particle sizes and water gaps, and channel fabrication are well-documented with supporting figures and consistent measurements across 2D and 3D analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C18",
+      "C19"
+    ],
+    "result": "Swimming throughput of magnetotactic bacteria through obstacle channels was highest at the intermediate field strength of 50 \u03bcT (physiological Earth field strength), with lower throughput at both 0 \u03bcT and 500 \u03bcT. This non-monotonic dependence on field strength was observed in channels with both cylindrical and irregularly shaped pillars, but not in channels without obstacles where throughput increased monotonically with field strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18-C22 collectively demonstrate the key experimental finding with appropriate controls. The non-monotonic relationship is statistically significant (Mann-Whitney test, p<0.001 for 500 \u03bcT vs 50 \u03bcT reduction; p=0.028 for 0 vs 50 \u03bcT increase), and the control experiment without obstacles confirms that the effect is specific to obstacle navigation. The consistency across different pillar geometries strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C26",
+      "C28",
+      "C29"
+    ],
+    "result": "An active Brownian particle model with dipolar alignment and obstacle interactions was developed to simulate bacterial swimming, with the surface torque parameter \u03b1 calibrated to \u03b1=0.2 \u03bcm by matching sliding distances along obstacles between simulations and experiments. The model reproduced experimental observations of bacterial sliding behavior along obstacle surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C29 describe a well-parameterized computational model. The single free parameter (\u03b1) was systematically calibrated using experimental sliding distance distributions (Figure 4), providing quantitative validation. The model appropriately captures the key physics of magnetotactic bacterial motion, though one limitation is noted: bacteria appeared slower while sliding in experiments, which was neglected in simulations (C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41"
+    ],
+    "result": "Simulations revealed that channel geometry organizes bacterial trajectories into 'natural paths,' but overlapping obstacles create traps requiring transient swimming against the magnetic field for escape. Increasing field strength has opposing effects: enhanced alignment and faster directed motion versus increased susceptibility to trapping. At 500 \u03bcT, no bacteria crossed the channel within simulation time, while intermediate fields (50 \u03bcT) showed optimal throughput, reproducing the experimental non-monotonic behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38, C41 provide a mechanistic explanation for the experimental observations through extensive simulations across 10 different channel geometries. The simulations quantitatively reproduce the non-monotonic throughput behavior and identify the physical mechanism (trapping vs. alignment trade-off). The agreement between simulations and experiments validates both the model and the mechanistic interpretation, though some discrepancy exists at B=0 attributed to different initial conditions (C42-C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Simulations showed lower throughput and variability than experiments at zero magnetic field, which was attributed to different initial conditions: all bacteria starting simultaneously in simulations versus continuous entry from the inlet in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C43 identify a discrepancy and propose an explanation, but this remains speculative without direct testing. The proposed mechanism (initial condition differences) is plausible but not validated experimentally or through modified simulations. This represents a limitation in the model-experiment agreement that could affect interpretation of results at weak fields.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Escape from symmetric traps follows approximately exponential time distributions with exponential dependence on both magnetic field strength and trap depth, analogous to thermal escape from potential wells despite the non-thermal origin of fluctuations from active particle-wall interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 demonstrate quantitative characterization of trap escape dynamics with appropriate statistical analysis. The analogy to Kramers escape theory is well-supported by the exponential distributions observed in simulations (Figure 7), and the comparison to thermal-like behavior in active particle sedimentation (C47) provides theoretical context. The distinction that fluctuations arise from wall interactions rather than thermal noise is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C8"
+    ],
+    "result": "Experimental validation of trapping was achieved by monitoring bacterial density in a corner trap at 500 \u03bcT, then reducing field strength to 50 \u03bcT and 0 \u03bcT. Bacterial density decreased after each field reduction, directly confirming that bacteria were trapped and could escape when field strength was lowered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C50-C52 provide direct experimental evidence for the trapping mechanism predicted by simulations. The sequential field reduction experiment (Figure 8) is well-designed to test the hypothesis, and the observed density reductions upon field reduction provide clear support for field-dependent trapping. This validates a key prediction of the computational model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C9",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study hypothesizes that magnetotactic bacteria have evolved magnetic properties adapted to the geomagnetic field to balance movement and orientation in crowded environments. This requires that magnetic field interaction not be too dominant, allowing transient swimming against the field for trap escape, which may constrain bacterial magnetic moments and explain observed sub-100% alignment at Earth field strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7, C9, C53-C56 present an evolutionary hypothesis based on the experimental and simulation findings. While the mechanistic observations (trapping at high fields, inefficiency at low fields) are well-supported, the evolutionary interpretation remains speculative. The supporting citation (C56) about sub-100% alignment provides correlative evidence but does not establish causation. This is appropriately framed as a hypothesis requiring further testing across multiple species and evolutionary contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The ability to swim against magnetic field direction is important for both trap escape (requiring only transient opposition) and magneto-aerotactic band formation (requiring extended opposition). Direction reversals, which are rare in M. gryphiswaldense under confinement and not induced by wall collisions, may be less important for trap escape than for band formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 appropriately contextualize the findings within broader magnetotactic bacterial behavior, distinguishing between transient and sustained swimming against the field. The citations to prior work (C57, C60) support the claims about band formation and reversal behavior. The distinction between mechanisms for different behavioral contexts is logical and well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Magnetotactic bacteria naturally inhabit micro-oxic sedimentary environments near the oxic-anoxic transition zone. While hopping between traps is a generic feature of active motion in porous media, escape in magnetotactic bacteria uniquely depends on magnetic field strength and wall interactions in addition to intrinsic swimming properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C61-C64 provide appropriate biological and physical context for the study. The habitat description is supported by citations (C61), and the distinction between generic active particle behavior and the specific case of magnetotactic bacteria (C63-C64) is well-articulated. This contextualizes why magnetic field strength is a critical parameter for this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "M. gryphiswaldense MSR-1 was cultured with pyruvate as carbon source and enriched for North-seeking bacteria (approximately 80% of final population), which swim with the North pole of their magnet forward in the oxic experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide clear methodological details for bacterial culture and selection. The enrichment procedure and resulting population composition are explicitly stated, and the explanation of swimming orientation in oxic conditions (C67) is consistent with known magnetotactic bacterial behavior. These details are important for reproducibility and interpretation of directional swimming results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2129 @@
+{
+  "submission": {
+    "id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:44:27.404838Z",
+    "updated_at": "2025-11-21T17:44:27.404838Z"
+  },
+  "content": [
+    {
+      "id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "content_type": "manuscript",
+      "content_text": "# Evolutionary and functional analyses reveal a role for the RHIM in tuning RIPK3 activity across vertebrates\n\n## Authors\n\n- Elizabeth J Fay<sup>1</sup> ([ORCID: 0000-0003-1712-757X](https://orcid.org/0000-0003-1712-757X))\n- Kolya Isterabadi<sup>1</sup>\n- Charles M Rezanka<sup>1</sup>\n- Jessica Le<sup>1</sup>\n- Matthew D Daugherty<sup>1</sup> ([ORCID: 0000-0002-4879-9603](https://orcid.org/0000-0002-4879-9603)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology, School of Biological Sciences, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nReceptor interacting protein kinases (RIPK) RIPK1 and RIPK3 play important roles in diverse innate immune pathways. Despite this, some RIPK1/3-associated proteins are absent in specific vertebrate lineages, suggesting that some RIPK1/3 functions are conserved, while others are more evolutionarily labile. Here, we perform comparative evolutionary analyses of RIPK1\u20135 and associated proteins in vertebrates to identify lineage-specific rapid evolution of RIPK3 and RIPK1 and recurrent loss of RIPK3-associated proteins. Despite this, diverse vertebrate RIPK3 proteins are able to activate NF-\u03baB and cell death in human cells. Additional analyses revealed a striking conservation of the RIP homotypic interaction motif (RHIM) in RIPK3, as well as other human RHIM-containing proteins. Interestingly, diversity in the RIPK3 RHIM can tune activation of NF-\u03baB while retaining the ability to activate cell death. Altogether, these data suggest that NF-\u03baB activation is a core, conserved function of RIPK3, and the RHIM can tailor RIPK3 function to specific needs within and between species.\n\n## Introduction\n\nReceptor interacting protein kinase 3 (RIPK3) and the closely related kinase RIPK1 have critical roles in mediating cell death and inflammatory signaling (Newton, 2015). Downstream of signals from innate immune receptors like Z-DNA binding protein 1 (ZBP1) and tumor necrosis factor receptor 1 (TNFR1), RIPK3, and RIPK1 interact via their shared RIP homotypic interaction motif (RHIM) to form amyloid-like aggregates (Wu et al., 2021), leading to their autophosphorylation and activation of additional effector proteins to carry out their innate immune functions. For example, RIPK3 can phosphorylate MLKL to activate highly inflammatory programmed necrotic cell death (necroptosis) (Sun et al., 2012), RIPK1/3 can engage caspase-8 (CASP8) to activate apoptotic caspases (Wang et al., 2008; Mandal et al., 2014), or RIPK1/3 can activate the pro-survival and pro-inflammatory transcription factor NF-\u03baB (Meylan et al., 2004; Moriwaki et al., 2014). Several factors are known to impact the outcome of RIPK1/3 activation, such as the activating signal and caspase activity (Newton, 2015; Orozco and Oberst, 2017). Altogether, RIPK3 and RIPK1 are central to determining cell fate downstream of various innate immune stimuli.\n\nLike many innate immune proteins, RIPK3 is evolutionarily dynamic in vertebrates. Phylogenomic analyses of a small number of species from different vertebrate clades suggest that RIPK3 and the associated proteins ZBP1 and MLKL have been lost in some vertebrate lineages, including birds, carnivores, and marsupials (Dondelinger et al., 2016; \u00c1gueda-Pinto et al., 2021). In addition, RIPK3, RIPK1, MLKL, and ZBP1 are known to interact with viral proteins (Harris et al., 2015; Croft et al., 2018; Wagner et al., 2015; Muscolino et al., 2021; Huang et al., 2015; Liu et al., 2018) and have been shown to be evolving under recurrent positive selection in both primates and bats (Palmer et al., 2021; Cariou et al., 2022), a hallmark of host proteins that directly interact with viral proteins (Daugherty and Malik, 2012). Despite the known evolutionary divergence of RIPK3 in vertebrates, most of what is known about their activation and regulation is from studies conducted in humans and mice. Even between humans and mice, there are known differences in the roles of specific genes in the regulation of NF-\u03baB, suggesting this pathway can be tailored to the distinct environments of different species (Zhang et al., 2017). These differences likely extend beyond humans and mice and likely include RIPK1/RIPK3-mediated activation of NF-\u03baB. Furthermore, RIPK1 and RIPK3 are part of a larger family of RIPKs, including RIPK2, RIPK4, and ANKK1/RIPK5, which, with the exception of RIPK5, are known to activate NF-\u03baB in various cellular contexts (Cuny and Degterev, 2021; Eng et al., 2021; Lv et al., 2022). The degree to which these other RIP kinases and their interacting partners have diversified across vertebrates is unknown.\n\nHere, we use evolutionary and functional approaches to characterize the diversification of RIPK3-mediated activation of NF-\u03baB. We identified RIPK1- and RHIM-mediated activation of NF-\u03baB by diverse vertebrate RIPK3 proteins, as well as distinct mechanisms of RIPK3-mediated activation of NF-\u03baB. Phylogenetic and phylogenomic analyses of RIPK1\u20135 and several key associated proteins revealed the dynamic evolution of RIPK3 and RIPK1. In addition to observing the loss of RIPK3 and necroptosis-associated proteins in some vertebrate lineages, we identify changes in regulatory features\u2014including catalytic sites and CASP cleavage sites\u2014in RIPK3 and RIPK1 in specific mammalian lineages that may affect their function. Intriguingly, we found that the RHIM domain of RIPK3 and RIPK1, as well as other RHIM-containing proteins, is highly conserved in vertebrates and in a non-vertebrate RIPK1 protein. Consistent with this strong conservation of the RHIM domain, we found that RIPK1 proteins from diverse vertebrates, and even a non-vertebrate RIPK1, are able to activate NF-\u03baB, suggesting that activation of this inflammatory response is a conserved function of RIPK3, RIPK1, and potentially other RHIM-containing proteins in vertebrates. Altogether, these data suggest that activation of NF-\u03baB is the ancestral and conserved feature of RIPK3 and RIPK1, while other functions such as necroptosis are more evolutionarily labile and rapidly evolving, likely as a response to evolutionary pressure from pathogens.\n\n## Results\n\n### Comparative evolutionary analysis of RIPK1\u20135\n\nTo understand the evolution and diversification of RIPK function, we first wished to compare the functions of human RIPKs. There are canonically four RIPKs in humans, RIPK1\u20134. ANKK1 is a close paralog of RIPK4 and has therefore been denoted as RIPK5. Additional proteins have also been described as RIPK proteins, including DSTYK, LRRK1, and LRRK2, but these proteins are phylogenetically distinct and will therefore not be considered here (Lv et al., 2022). The shared domain architecture of RIPK1\u20135 includes a conserved N-terminal kinase domain, an extended disordered intermediate domain, and distinct protein interaction domains at the C-terminus that can include a death domain (DD), RHIM, caspase activation and recruitment domain (CARD), or ankyrin repeats (Figure 1A). Human RIPK1\u20134 activate NF-\u03baB, albeit through different mechanisms, including differential dependence on endogenous RIPK1 and kinase activity (Figure 1\u2014figure supplements 1\u20133). Interestingly, despite its close homology to RIPK4, RIPK5 did not activate NF-\u03baB. Altogether, these data highlight NF-\u03baB as a shared function of RIPK1\u20134.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig1-v1.jpg)\n\n**Figure 1.:** (A) Domain structures of human RIP kinases. RHIM = RIP homotypic interaction motif, DD = death domain, CARD = caspase activation and recruitment domain, ANK = ankyrin repeats. (B) Positive selection analysis of RIPK1\u20135 in the indicated mammalian order. Input sequences and PAML p-values can be found in Supplementary files 1 and 2. Images of model species were generated using BioRender.com. (C) Heat map showing the percentage of species within a clade that have the indicated protein. The clades and the number of species within each clade are indicated on the left. Complete lists of proteins and species in each group can be found in Supplementary files 4 and 5. Lancelet species were not queried for all proteins and are not included in this graph.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Human V5-RIPK1\u20135 proteins were transfected into WT (A\u2013C) or RIPK1 KO (C) HEK293T cells, along with NF-\u03baB firefly luciferase and control renilla luciferase reporter plasmids (see Materials and methods), and NF-\u03baB activity was measured at 18 hr post-transfection. (A) Human RIPK1\u20135 activation of NF-\u03baB in WT 293T cells. (B) Activation of NF-\u03baB by catalytically active versus kinase-mutant RIPK1\u20135 in WT HEK293T cells. (C) Activation of NF-\u03baB by RIPK1\u20135 in WT versus RIPK1 KO HEK293T cells. Data are representative of 3 independent experiments with n=3\u20136 biological replicates per group. Data were analyzed using one-way ANOVA with Dunnett\u2019s multiple comparisons test (A) or two-way ANOVA with \u0160id\u00e1k\u2019s multiple comparisons test (B, C). ns = not significant, ***=p<0.001, ****=p<0.0001.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) WT and RIPK1 KO HEK293T cells were treated with 5000 U IFN-\u03b1 for 24 hr or 160 ng/mL TNF\u03b1 for 6 hr, and expression of RIPK1 protein was analyzed by western blot using the indicated antibodies. Untreated cells were used as a negative control. Cells were transfected with V5-RIPK1 as a positive control. (B) Genomic DNA was isolated from WT HEK293T (top) or RIPK1 KO HEK293T (bottom) cells, and the target region of exon 5 of RIPK1 was amplified and analyzed by Sanger sequencing. Nucleotide numbers indicate genomic location.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** WT (A) and RIPK1 KO (B) HEK293T cells were transfected with WT or kinase mutant V5-RIPK1\u20135. Protein expression was analyzed at 18 hr post-transfection by western blot using the indicated antibodies.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Delineation between CASP8 and CASP10 as determined by phylogeny (see Materials and methods). (B) Presence of RIPK2 and RIPK2B in vertebrates. Accession numbers for proteins analyzed, and list of species can be found in Supplementary files 3 and 4.\n\nWe next wished to perform comparative evolutionary analyses of RIPK1\u20135 in vertebrates to determine which RIPKs might be undergoing functional divergence. We first analyzed RIPK1\u20135 in four distinct mammalian clades to determine whether there was evidence of recurrent positive selection, which can be a hallmark of host-pathogen interactions and can drive functional diversification. Notably, we only found evidence for positive selection acting on RIPK1 and RIPK3 (Figure 1B, Supplementary files 1 and 2). Interestingly, RIPK1 and RIPK3 are not uniformly evolving under positive selection in all mammalian clades analyzed. For instance, in primates, RIPK3 is evolving under strong positive selection, while RIPK1 is not, consistent with previous data (Palmer et al., 2021; Cariou et al., 2022). In contrast, ungulate RIPK3 does not show evidence for positive selection, whereas ungulate RIPK1 does. These data indicate that among RIPK1\u20135, only RIPK1 and RIPK3 genes have undergone recurrent positive selection, and that RIPK1 and RIPK3 may have faced different selective pressures across distinct mammalian lineages.\n\nIn addition to evolving under positive selection in primates and bats (Palmer et al., 2021), RIPK3, ZBP1, and MLKL are known to be lost in some vertebrate lineages (Dondelinger et al., 2016). However, it is unknown if other RIPK and RIPK-associated proteins are similarly lost. We therefore performed phylogenomic analysis on 489 vertebrate species for the presence or absence of RIPK1\u20135 and several key RIPK-associated proteins (Figure 1C, Supplementary files 4 and 5). Due to the difficulty in discerning whether a gene absence in an individual species is due to true gene loss or incomplete genome assembly, we focused on multispecies patterns of gene loss within and between vertebrate lineages. Given that NF-\u03baB is broadly present in many vertebrate and non-vertebrate species, including horseshoe crab (Wang et al., 2006), Drosophila melanogaster (Hetru and Hoffmann, 2009), and cnidarians and bivalves (reviewed in Williams and Gilmore, 2020), we analyzed proteins associated with other RIPK functions. We first confirmed the loss of necroptosis-associated proteins that has been previously reported (Dondelinger et al., 2016): RIPK3 and ZBP1 in birds; RIPK3, ZBP1, and MLKL in marsupials; MLKL in carnivores. In addition, we found that ZBP1 is absent in all fish species, suggesting that this protein, and ZBP1-mediated necroptosis, arose only during tetrapod evolution.\n\nWe then analyzed RIPK1 and its associated proteins. RIPK1 is found nearly every vertebrate genome queried, and clear RIPK1 homologs were identified in several non-vertebrate species, including zebra mussel (Dreissena polymorpha), several additional spiralia species, and lancelet species in the genus Branchiostoma (accession numbers in Supplementary file 4). RIPK1 homologs\u2014defined as proteins with a homologous N-terminal kinase domain and a C-terminal RHIM tetrad and DD\u2014were not found in tunicates, echinoderms, cnidarians, nematodes, arthropods, or amoeba. Additional RIPK-like proteins have been found in other non-vertebrate species, including a RIPK1/2-like protein in Drosophila and other protostomes (Dondelinger et al., 2016), although these proteins were not considered here due to minimal sequence similarity to the human RIP kinase domains and our focus on vertebrate RIP kinases. We also identified CASP8, a known regulator of RIPK1, and its closest homolog, CASP10. Due to the similar domain structure of CASP8 and CASP10, we only identified whether a species has a single CASP8/10 protein, two distinct CASP8/10 proteins as determined by phylogeny (see Materials and methods), or none. At least one copy of CASP8/10 is found in most vertebrate genomes. Two copies, presumably marking the delineation between CASP8 and CASP10, began in tetrapod, coinciding with the emergence of ZBP1. This may reflect the role of CASP8 in regulating ZBP1, and duplication of this caspase allowed for the specialized function of CASP8 (Rodriguez et al., 2022). We also confirmed the loss of CASP10 in some rodents (Eckhart et al., 2008) (see Figure 1\u2014figure supplement 4A for CASP8/10 breakdown), revealing that suborder Myomorpha (\u2018mouse-like\u2019) and Castorimorpha (\u2018beaver-like\u2019) rodents have lost CASP10, whereas Sciuromorpha (\u2018squirrel-like\u2019) and Hystricomorpha (\u2018porcupine-like\u2019) rodents have retained CASP10. Finally, we found that FADD and TRIF are well conserved in all vertebrates.\n\nWe also analyzed the phylogenomic distribution of RIPK2, -4, and -5 and their associated proteins. RIPK2 and its associated protein NOD1 are found in most vertebrates (Cuny and Degterev, 2021; Eng et al., 2021). Intriguingly, we observed a second paralog of RIPK2, which we call RIPK2B, in many vertebrates but lost in therian (live-bearing) mammals (Figure 1\u2014figure supplement 4B). NOD2 is present in lamprey and fish, but absent in birds, reptiles, and some amphibians, including some of the same species that contain RIPK2B. While RIPK2B retains both the kinase domain and CARD, there may be distinct regulatory mechanisms, specifically those related to NOD2, compared to RIPK2. RIPK4 is present in jawed vertebrates. IRF6, the only known phosphorylation target of RIPK4 (Cuny and Degterev, 2021; Eng et al., 2021), emerged prior to RIPK4 and has been lost in many vertebrate species, particularly in carnivores, cetaceans, and ungulates. RIPK5, which has no known function and no known interacting proteins, has been lost in several lineages, including monotremes and lagomorphs. Overall, our analyses revealed that RIPK1 and RIPK3 are evolutionarily distinct from other RIP kinases, and the recurrent loss of some RIPK1/3-associated necroptosis proteins (ZBP1, MLKL, CASP8) and RIPK3 suggests that these proteins may have functions tailored to the needs of specific vertebrate lineages.\n\n### Diverse vertebrate RIPK3 proteins activate NF-\u03baB\n\nOur analyses revealed dynamic evolution of RIPK3 in vertebrates, including signatures of positive selection in multiple mammalian clades and recurrent loss of RIPK3 and its associated proteins. We hypothesized that this rapid RIPK3 evolution may have resulted in different functions of RIPK3 in different vertebrate lineages. We therefore tested the ability of RIPK3 proteins from diverse vertebrates, ranging from 23% to 63% sequence identity to humans (Figure 2A, Figure 2\u2014figure supplement 1), to activate NF-\u03baB in human cells. We included two mammalian species that retain all necroptosis proteins (mouse, Mus musculus; pig, Sus scrofa), a mammalian species lacking a necroptosis protein (cat, Felis catus), reptilian species that do (turtle, Chelonia mydas) and do not (lizard, Anolis carolinensis) retain all necroptosis proteins (Supplementary file 7), and sea lamprey (Petromyzon marinus) as our most distal vertebrate relative to humans. To our surprise, among all vertebrates tested, only pig and sea lamprey RIPK3 failed to activate NF-\u03baB in human cells (Figure 2B). This striking conservation of function indicates that NF-\u03baB activation has remained intact despite lineage-specific RIPK3 divergence and loss of interacting partners. We then analyzed whether, like human RIPK3 (Figure 1\u2014figure supplement 1C; Yatim et al., 2015), other vertebrate RIPK3 proteins require RIPK1 to activate NF-\u03baB by repeating experiments in RIPK1 KO cells. Interestingly, while mammalian RIPK3 activation is dependent on RIPK1, both lizard and turtle RIPK3 activate NF-\u03baB independently of RIPK1 (Figure 2B). These results indicate that the requirements for NF-\u03baB activation by RIPK3 are species-specific.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig2-v1.jpg)\n\n**Figure 2.:** (A) Percent similarity of RIPK3 from the indicated species compared to humans. (B) RIPK3 proteins were transfected into WT or RIPK1 KO HEK293T cells, along with NF-\u03baB firefly luciferase and control renilla luciferase reporter plasmids (see Materials and methods), and NF-\u03baB activity was measured at 18 hr post-transfection. (C) RIPK3 proteins were transfected into HEK293T cells with and without human ZBP1 and MLKL. At 18 hr post-transfection, cells were stained using the ReadyProbe Cell Viability kit, and fluorescence was measured using a plate reader. Species shown are mouse (M. musculus), cat (F. catus), pig (S. scrofa), lizard (A. carolinensis), turtle (C. mydas), and lamprey (P. marinus). Data are representative of 3\u20135 independent experiments with n=3\u20136 replicates per group. Data were analyzed using two-way ANOVA with \u0160id\u00e1k\u2019s multiple comparisons test. ns = not significant, ****=p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** WT or RIPK1 KO HEK293T cells were transfected with the indicated protein. Protein expression was analyzed at 18 hr post-transfection by western blot using the indicated antibodies.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** WT and RIPK1 KO cells were transfected with the indicated plasmids, and cell death was analyzed by ReadyProbes assay at 18 hr post-transfection. RM = RHIM mutant, KM = kinase mutant. Data indicative of 1\u20132 independent experiments with n=3 biological replicates per group. Data were analyzed by two-way ANOVA with \u0160id\u00e1k\u2019s multiple comparisons test. ****=p<0.0001.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** RIPK3 sequences from carnivore species highlighting the catalytic site in the kinase domain. Residue numbers refer to the human sequence. Carnivore species include dog (Canis lupus familiaris), ferret (Mustela putorius furo), bear (Ursus americanus), lynx (Lynx canadensis), tiger (Panthera tigris), lion (Panthera leo), cat (F. catus), cheetah (Acinonyx jubatus).\n\nFinally, we tested whether another function of RIPK3, activation of ZBP1- and MLKL-dependent cell death (Figure 2\u2014figure supplement 2), is also conserved. Most mammalian RIPK3 proteins were able to activate cell death using human ZBP1 and MLKL (Figure 2C). This included pig RIPK3, which is unable to activate NF-\u03baB, suggesting that activation of cell death and NF-\u03baB by RIPK3 proteins has been separated in a species-specific manner. Likewise, we observed that cat RIPK3 can activate NF-\u03baB but fails to activate cell death. Based on this observation, we analyzed the sequences of carnivore RIPK3 proteins and found that feline RIPK3 has mutated kinase catalytic residue (Figure 2\u2014figure supplement 3), explaining the loss of cell death activation by cat RIPK3. Outside of mammals, only lizard RIPK3 was able to activate cell death, despite the ability of both lizard and turtle RIPK3 to activate NF-\u03baB, further suggesting that these functions of RIPK3 have distinct, species-specific requirements.\n\n### Conservation of the RHIM sequence determines RIPK3 activation of NF-\u03baB\n\nThe conservation of NF-\u03baB activation by RIPK3 proteins that share as little as 24% sequence identity and are up to >300 million years diverged (Benton and Donoghue, 2007) suggests some regions of the protein are likely highly conserved. To identify such regions, we returned to our positive selection analyses. While we identified rapidly evolving sites throughout the primate RIPK3, there was a cluster of sites in and around the C-terminal RHIM (Figure 3, Supplementary file 5), which is a known region of interaction between RIPK1 and RIPK3 and RIPK3 homooligomerization (Wu et al., 2021; Sun et al., 2002). Intriguingly, despite multiple rapidly evolving sites within the RHIM, a core tetrad (VQVG) is not rapidly evolving. Similarly, the core tetrads of bat and carnivore RIPK3 are not rapidly evolving (Figure 3B). Furthermore, the RIPK3 core RHIM tetrad is highly conserved across vertebrates (Figure 3C). This is despite the loss of other functional motifs in specific lineages, including the loss of the RIPK3 catalytic site in felines (Figure 2\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig3-v1.jpg)\n\n**Figure 3.:** (A) Residues evolving under positive selection as identified using PAML and FUBAR (see Materials and methods) in primate RIPK3 and the primate RIPK3 RHIM domain mapped on to the human sequence. (B) Residues evolving under positive selection in bat and carnivore RIPK3, mapped on to the Sturnira hondurensis and F. catus sequences, respectively. (C) Alignments of the RIPK3 RHIM across diverse vertebrates. Residue numbers refer to the human sequence. (D\u2013E) Mammalian (D) and nonmammalian (E) RIPK3 proteins were transfected into WT HEK293T cells along with NF-\u03baB firefly luciferase and control renilla luciferase reporter plasmids (see Materials and methods). NF-\u03baB activity was measured at 18 hr post-transfection. Species shown are mouse (M. musculus), cat (F. catus), pig (S. scrofa), lizard (A. carolinensis), turtle (C. mydas), and lamprey (P. marinus). Data are representative of 3\u20135 independent experiments with n=3\u20136 replicates per group. Data were analyzed using two-way ANOVA with \u0160id\u00e1k\u2019s multiple comparisons test. ns = not significant, ****=p<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The indicated RIPK3 proteins were transfected into WT or RIPK1 KO HEK293T cells, along with NF-\u03baB firefly luciferase and control renilla luciferase reporter plasmids (see Materials and methods), and NF-\u03baB activity was measured at 18 hr post-transfection. Data are representative of 2 independent experiments with n=4\u20136 biological replicates per group. Data were analyzed using two-way ANOVA with Tukey\u2019s multiple comparison test. ns = not significant, *p<0.05, ***p <0.001, ****p<0.0001.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** WT HEK293T cells were transfected with the indicated V5-RIPK3 protein. Protein expression was analyzed at 18 hr post-transfection by western blot using the indicated antibodies. WT = wild-type, KM = kinase mutant.\n\nWe therefore tested whether this conserved RHIM tetrad was responsible for activation of NF-kB by diverse vertebrate RIPK3s. We mutated the RIPK3 RHIM core tetrad (V/I-Q-V/I-G to AAAA) in our panel of vertebrate RIPK3 proteins and tested the ability of these proteins to activate NF-kB in human cells. Mutation of human, mouse, and cat RIPK3 RHIMs reduced activation of NF-\u03baB as expected (Figure 3D, Figure 2\u2014figure supplement 1). Surprisingly, despite activating independently of RIPK1 (Figure 2B), activation of NF-\u03baB by lizard and turtle RIPK3 remains dependent on the RHIM (Figure 3E, left) and independent of RIPK3 kinase activity (Figure 3\u2014figure supplements 1 and 2). These data support that reptile RIPK3 activates NF-\u03baB through a distinct mechanism from mammalian RIPK3, but one that is still highly dependent on the RHIM core tetrad. Interestingly, while analyzing RHIM domains of nonhuman RIPK3, we observed that the sea lamprey RHIM diverges from the canonical V/I-Q-V/I-G tetrad and instead contains TQIG (Figure 3C). To determine if this was responsible for the limited activation of NF-\u03baB by sea lamprey RIPK3, we mutated this motif to IQIG and observed an increase in NF-\u03baB activation (Figure 3E, right). Altogether, these data indicate that NF-\u03baB activation is a conserved function of RIPK3 that requires conservation of the core RHIM tetrad but allows for substantial sequence divergence elsewhere in the protein.\n\n### NF-\u03baB activation is a shared function of RHIM-containing proteins and can be tuned by the RHIM\n\nGiven that activation of NF-\u03baB by RIPK3 is dependent on the RHIM, we hypothesized that the core RHIM tetrad and activation of NF-\u03baB would be broadly conserved across all RHIM-containing proteins, including RIPK1, ZBP1, and TRIF. We found that the RIPK1 RHIM is highly conserved in vertebrates and in RIPK1-like proteins found in zebra mussel, Lingula species, and multiple lancelet species (Figure 4A). Human RIPK1 is known to activate NF-\u03baB independently of its RHIM through polyubiquitination of the intermediate domain (Li et al., 2006; Ea et al., 2006). However, the strong conservation of the RHIM domain tetrad sequence (V/I-Q-V/I-G) of RIPK1 across species led us to hypothesize that RHIM-mediated activation of NF-\u03baB by RIPK1 is also conserved. We therefore tested a diverse panel of metazoan RIPK1 proteins in our NF-\u03baB assay. To avoid the effects of both kinase activity and kinase-mediated interactions (Delanghe et al., 2020), we generated RIPK1 C-terminus (RIPK1CT) proteins from diverse species that do (mouse, pig) and do not (cat, lizard, lamprey, zebra mussel) retain all necroptosis proteins (Figure 4\u2014figure supplement 1). Both WT and RHIM mutant human RIPK1CT activate NF-\u03baB to the same extent as full-length RIPK1 (Figure 4\u2014figure supplement 2), validating our use of this system to characterize RIPK1 functions independent of the kinase domain. Diverse vertebrate RIPK1CT proteins activate NF-\u03baB independent of endogenous RIPK1 (Figure 4\u2014figure supplement 3), consistent with our hypothesis that NF-\u03baB activation is an ancestral and conserved function of these proteins. However, like RIPK3, the specific sequence requirements for RIPK1-mediated NF-\u03baB activation varied by species. Specifically, mutation of the RHIM domain does not affect activation of NF-\u03baB by mammalian proteins, including human, mouse, cat, and pig (Figure 4B, left). In contrast, mutation of the RHIM domain attenuated or completely prevented the ability of non-mammalian (lizard, sea lamprey, and zebra mussel) RIPK1CT to activate NF-\u03baB (Figure 4B, right).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig4-v1.jpg)\n\n**Figure 4.:** (A) Alignment of RIPK1 RHIM across diverse vertebrates. Residue numbers refer to the human sequence. Lancelet species is Branchiostoma floridae. (B) Diverse vertebrate RIPK1CT proteins were transfected into HEK293T cells along with NF-\u03baB firefly luciferase and control renilla luciferase reporter plasmids (see Materials and methods), and NF-\u03baB activity was measured at 18 hr post-transfection. (C) Alignment of ZBP1 RHIMs across diverse vertebrates. Residue numbers refer to the human sequence. (D) Activation of NF-\u03baB by WT and RHIM mutant ZBP1 proteins. (E) NF-\u03baB activation by human RIPK3 with the indicated RHIM tetrad variant. (F) Human RIPK3 proteins with the indicated RHIM tetrad variants were transfected into HEK293T cells with MLKL (gray circles) or MLKL and ZBP1 (orange squares), and viability was measured at 18 hr post-transfection. Data are representative of 2\u20135 independent experiments with n=3\u20136 replicates per group. Data were analyzed using two-way ANOVA with \u0160id\u00e1k\u2019s multiple comparisons test (A, D), one-way ANOVA with Tukey\u2019s multiple comparisons test (E), or two-way ANOVA with Tukey\u2019s multiple comparisons test (F). ns = not significant, ****=p<0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** WT or RIPK1 KO HEK293T cells were transfected with the indicated protein. Protein expression was analyzed at 18 hr post-transfection by western blot using the indicated antibodies.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Schematic of RIPK1CT compared to full-length RIPK1. (B) WT and RHIM mutant RIPK1 full length and RIPK1CT were transfected into HEK293T cells along with Dual-Glo plasmids (see Materials and methods). NF-\u03baB activation was analyzed at 18 hr post-transfection. Data were analyzed using one-way ANOVA with Tukey\u2019s multiple comparison test. ns = not significant.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** WT and RIPK1 KO HEK293T cells were transfected with the indicated RIPK1CT along with Dual-Glo plasmids (see Materials and methods). NF-\u03baB activation was analyzed at 18 hr post-transfection. Data are representative of 3 independent experiments with 3\u20136 biological replicates per group. Data were analyzed using two-way ANOVA with \u0160id\u00e1k\u2019s multiple comparisons test. ns = not significant, *=p<0.05, **=p<0.01.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) TRIF sequences from vertebrate species highlighting the RHIM core tetrad. Residue numbers refer to the human sequence. Vertebrate species shown include mouse (M. musculus), pig (S. scrofa), cat (F. catus), lizard (A. carolinensis), frog (Xenopus laevis), fish (Danio rerio), and lamprey (P. marinus). (B\u2013C) WT (B\u2013C) and RIPK1 KO (C) HEK293T cells were transfected with the indicated plasmids along with Dual-Glo plasmids (see Materials and methods). NF-\u03baB activation was analyzed at 18 hr post-transfection. Data are representative of 3 independent experiments with 3 biological replicates per group. Data were analyzed using a t-test (B) or a two-way ANOVA with \u0160id\u00e1k\u2019s multiple comparisons test (C). ns = not significant, *=p<0.05.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** The indicated human RIPK3 RHIM tetrad variants were transfected into HEK293T cells along with NF-\u03baB firefly luciferase and control renilla luciferase reporter plasmids (see Materials and methods), and NF-\u03baB activity was measured at 18 hr post-transfection. Data were analyzed using one-way ANOVA with Tukey\u2019s multiple comparisons test. **=p<0.01, ****=p<0.0001. Data are representative of 2 independent experiments with n=5\u20136 biological replicates per group.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/102301/elife-102301-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** WT HEK293T cells were transfected with the indicated V5-RIPK3 protein. Protein expression was analyzed at 18 hr post-transfection by western blot using the indicated antibodies.\n\nOther than RIPK1 and RIPK3, only two other human proteins contain a RHIM domain, TRIF and ZBP1. The TRIF RHIM and the first RHIM of ZBP1 are also highly conserved in mammals and some other tetrapods, whereas the second RHIM of ZBP1 diverges even within mammals (Figure 4C, Figure 4\u2014figure supplement 4A). We then tested for RHIM dependence of NF-\u03baB activation by human TRIF and ZBP1. As described previously (Rebsamen et al., 2009), ZBP1 activates NF-\u03baB in a RHIM- and RIPK1-dependent manner (Figure 4D). Consistent with our evolutionary prediction, only the first RHIM tetrad is required for NF-\u03baB activation by ZBP1 (Figure 4D). Conversely, mutation of the TRIF RHIM domain does not affect activation of NF-\u03baB, and activation is only moderately reduced in RIPK1 KO cells (Figure 4\u2014figure supplement 4B and C), likely due to the TIR domain in TRIF that is known to mediate its innate immune signaling (Nanson et al., 2019).\n\nFinally, due to the central role of the core tetrad of the RHIM domain, we tested the plasticity of RHIM function with regard to sequence divergence. In our phylogenetic analyses of RIPK3, we identified several species in which the RHIM core tetrad has diverged, particularly outside of tetrapods, including tetrads that have diverged from the conserved motif (V/I-Q-V/I-G) at only a single residue (Supplementary file 8). To test for functional differences, we inserted these naturally occurring RHIM tetrads into human RIPK3 and characterized the ability to activate NF-\u03baB and cell death. We included tetrads found in rodents, bats, eulipotyphlans, reptiles, and fish (VQFG), amphibians and fish (LQIG, VQSG), fish (CQIG), and sea lamprey (TQIG). Interestingly, while most tested variants activate NF-\u03baB compared to the inactive RIPK3 RHIM mutant (AAAA tetrad), albeit lower than the WT (VQVG) tetrad, TQIG and VQSG did not activate NF-\u03baB (Figure 4E, Figure 4\u2014figure supplements 5 and 6). These data suggest that, while there is some plasticity in the RHIM tetrad, not all residues are functional. All tetrad variants were able to activate ZBP1-dependent cell death similar to WT RIPK3 (Figure 4F), further revealing the separation of RIPK3-mediated NF-\u03baB activation from cell death activation. These differences may be due to differential amyloid structures formed during heterooligomerization of the RIPK1 RHIM and RIPK3 RHIM versus homooligomerization of RIPK3 (Wu et al., 2021). Altogether, these data suggest that diversity in the RIPK3 RHIM domain may tune activation of NF-\u03baB and tailor RIPK3 function to the specific needs of species.\n\n## Discussion\n\nActivation of NF-\u03baB is critical to both the innate and adaptive immune response in humans and mice (Zhang et al., 2017) and is a deeply conserved pathway in many metazoans (Wang et al., 2006; Hetru and Hoffmann, 2009; Williams and Gilmore, 2020). Despite this deep conservation of NF-\u03baB signaling, differences in the function and regulation of NF-\u03baB-associated proteins between mice and humans have been identified (Zhang et al., 2017), suggesting that this functionally well-conserved pathway can be adapted to different species. These data indicate that broader phylogenetic analysis of the genes and functions that are associated with NF-\u03baB signaling is needed to understand immune responses across species, including those that harbor pathogens that pose a zoonotic threat to humans. Importantly, the approach used here can be applied to other NF-\u03baB-associated proteins and to other innate immune pathways to better define species-specific immune responses.\n\nHere, we apply broad phylogenetic and functional sampling to the RIP kinase family of NF-\u03baB activators. Using a phylogenomic approach, we identified widespread conservation of RIPK1, RIPK2, and RIPK4 and their associated proteins within vertebrates. We also show conservation of activation of NF-\u03baB signaling by RIPK1 and RIPK3 across diverse vertebrate species that is largely reliant on the highly conserved core tetrad of the RHIM domains found in both proteins. This striking conservation of RIPK1- and RIPK3-mediated activation of NF-\u03baB, from species that span >500 million years of vertebrate evolution, underscores the core functionality of RIP kinases as NF-\u03baB activating proteins. Despite this conservation of NF-\u03baB activation, we also observed lineage-specific changes in RIPK presence or mechanisms of NF-\u03baB activation. For instance, we observed recurrent gene loss of RIPK3 and RIPK5 throughout the vertebrate phylogeny and discovered a second paralog of RIPK2 in many non-mammalian vertebrate species (RIPK2B). In addition, although RIPK3-mediated activation of NF-\u03baB is highly dependent on RIPK1 across diverse mammals, RIPK3 activation of NF-\u03baB in reptiles is independent of RIPK1. Activation of NF-\u03baB is part of the antiviral immune response and is known to be antagonized by viruses across a range of species, including vertebrates and non-vertebrates (Albarnaz et al., 2022; Gonzalez Lopez Ledesma et al., 2023; Palmer et al., 2019). This antagonism could result in the adaptation of NF-\u03baB-associated proteins, including RIP kinases, leading to lineage-specific mechanisms of activation that are tailored to the specific contexts within and between species.\n\nThe most striking differences in RIPK-associated genes and functions are those involved in necroptosis. Necroptosis is highly inflammatory, and the associated proteins must therefore be tightly regulated, as it could be a cause of immunopathology during infection. Despite this, necroptosis has been shown to be important for the response to several viruses (Koehler et al., 2021; Balachandran and Rall, 2020; Shubina et al., 2020). It is hypothesized that necroptosis, defined by RIPK3-mediated activation of MLKL, arose in vertebrates (Dondelinger et al., 2016; Tummers and Green, 2022). Interestingly, we find that two critical regulators of necroptosis, CASP8 and ZBP1, are only found in tetrapods, suggestive of an additional innovation within the necroptosis pathway during the divergence of tetrapods. Moreover, consistent with previous observations (Dondelinger et al., 2016; \u00c1gueda-Pinto et al., 2021), we observe a large number of necroptosis-associated gene losses, while also discovering important functional motifs in necroptosis proteins in distinct tetrapod lineages. These data support a model where necroptosis has been constructed as an important facet of the innate immune response in some tetrapods, but is not universal and has been deconstructed in species where the immunopathologic effects outweigh the benefits.\n\nThere have been several hypotheses to explain the loss of necroptosis-associated proteins in specific vertebrate lineages, such as diet (e.g. carnivores) or behavior (e.g. torpor in reptiles) (Dondelinger et al., 2016). While the cause of a specific instance of gene loss is difficult to identify, it is clear that gene loss can provide an evolutionary tool for adaptation (Albalat and Ca\u00f1estro, 2016). For example, caspases, which are key regulators of both immunologically silent apoptosis and inflammatory pyroptosis, differ greatly across mammals, with lineage-specific caspase repertoires including both loss and gain of novel caspases (Eckhart et al., 2008). Even within a single mammalian order, homologous caspases have been found to serve different functions in response to pathogens (Devant et al., 2021). This type of lineage-specific innovation likely exists for necroptosis, and gene loss could be a cause or a result of adaptations. Indeed, differences in MLKL activation by RIPK3 across species have been identified (Tanzer et al., 2016), which may be the result of additional diverse regulatory mechanisms for necroptosis even among species with an intact pathway. Strikingly, despite the lack of a complete necroptosis pathway in some lineages (cat, turtle, lamprey), our functional data indicate that RIPK3 retains the ability to activate NF-\u03baB. Activation of NF-\u03baB could therefore represent the ancestral function of RIPK3, and it has been co-opted to activate necroptosis in vertebrates.\n\nThe RHIM core tetrad was previously known to be conserved between humans and mice (Riebeling et al., 2022). Here, we expand this analysis and identify striking conservation of the RIPK3, RIPK1, ZBP1, and TRIF RHIM domains across most vertebrates. Additional RHIM-containing proteins have been identified in non-vertebrate animals and in fungi (Kajava et al., 2014). Interestingly, the RHIM proteins found in fruit fly and fungi are known to be involved in antibacterial defense and cell death, respectively, suggesting that RHIM-mediated interactions may be an ancient mechanism of innate immunity. While activation of NF-\u03baB by all tested nonhuman RIPK3 proteins was highly dependent on the RHIM domain, only non-mammalian RIPK1CT proteins required the RHIM for maximal NF-\u03baB activation. These species (lizard, lamprey, and zebra mussel) also lack ZBP1, with lamprey and zebra mussel predating the emergence of ZBP1 in tetrapods. Necroptosis may have driven the evolution of RHIM-independent activation of NF-\u03baB by RIPK1. This may have also shaped RHIM-dependent functions of RIPK3 across vertebrates, as the RHIM tetrad is much less conserved in fish compared to tetrapods, and insertion of these tetrad variants into human RIPK3 alters its function. Virus antagonism has also likely played a role in the evolution of RIPK3 and RIPK1 function. For example, vaccinia virus E3 prevents Z-DNA sensing by ZBP1 (Koehler et al., 2021), human cytomegalovirus UL36 promotes MLKL degradation, and poxviruses encode an MLKL homolog to prevent RIPK3-mediated activation of host MLKL (Petrie et al., 2019). Conservation of the RHIM domain may be a way to retain some RIPK3/RIPK1 innate immune functions in the face of such antagonism. However, several viruses have taken advantage of this conservation and encode RHIM-containing proteins to prevent RHIM-dependent functions (Tummers and Green, 2022; Riebeling et al., 2022). Intriguingly, several of these mechanisms are known to be species-specific and differ between humans and mice (Muscolino et al., 2021; Huang et al., 2015). These data support a model where viruses and host necroptosis are engaged in a molecular arms race that has shaped the function of RIPK3 and RIPK1 across vertebrate species.\n\nAltogether, our combined phylogenetic and functional approaches reveal both conservation and a striking lack of conservation in vertebrate RIPKs and their associated proteins and functions. Such characteristics are common hallmarks of pathways that are required for the innate immune response to pathogens, but are under constant evolutionary pressure to innovate to avoid pathogen antagonism. The strong conservation of NF-\u03baB activation by RIPK1 across species is consistent with the model in which RIPK1 function is central to determining cell fate downstream of TNF and TLR signaling (Clucas and Meier, 2023). Moreover, because some pathogens have evolved strategies to inhibit CASP8, RIPK3- and RIPK1-mediated necroptosis is activated as a secondary cell death strategy when CASP8 is inhibited (Remick et al., 2023). This places both RIPK3 and RIPK1, critical regulators of necroptosis, at the center of determining cell fate during pathogen infection. The divergence of RIPK3 and RIPK1 across vertebrates identified here, as well as the previous finding that these proteins are evolving under positive selection (\u00c1gueda-Pinto et al., 2021; Palmer et al., 2021; Cariou et al., 2022), reveals that pathogens are likely the driving force behind the lineage-specific regulatory mechanisms or functions of these proteins across species that we observe here. Thus, the functional divergence identified in our work highlights the evolutionary innovation that can arise in innate signaling pathways across diverse species and underscores the importance of considering natural diversity when characterizing the innate immune response to pathogens. Our work provides a model for further study on the diversity of innate immune proteins, protein families, and pathways across vertebrate and non-vertebrate species.\n\n## Materials and methods\n\n### Positive selection analysis\n\nPositive selection analysis was performed using three independent methods as we have done previously (Tsu et al., 2023; Stevens et al., 2022). Nucleotide sequences from the indicated mammalian clade that aligned to full-length human RIPK1\u20135 were downloaded from NCBI and aligned using ClustalOmega (Sievers et al., 2011). Maximum likelihood (ML) tests were performed with codeml in the PAML software suite (Yang, 2007). For PAML, aligned sequences were subjected to ML tests using NS sites models disallowing (M7) or allowing (M8) positive selection. The reported p-values were calculated using a chi-squared test on twice the difference of the log likelihood (lnL) values between the two models using 2 degrees of freedom. We confirmed convergence of lnL values by performing each analysis using two starting omega (dN/dS) values (0.4 and 1.5). Codons evolving under positive selection from PAML analyses have a posterior probability greater than 0.90 using native empirical Bayes (NEB) and Bayes empirical Bayes (BEB) analysis and the F61 codon frequency model. The same nucleotide alignments were used as input for FUBAR (Fast, Unconstrained Bayesian AppRoximation) (Murrell et al., 2013) and MEME (Mixed Effects Model of Evolution) (Murrell et al., 2012) using the DataMonkey server (Weaver et al., 2018). In both cases, default parameters were used, and codons with a signature of positive selection with a p-value of <0.01 are reported. Accession numbers for input sequences, PAML p-values, and sites identified can be found in Supplementary files 1\u20133.\n\n### Gene loss analysis\n\nGene loss analysis was completed by first building phylogenetic trees for each protein of interest. Phylogenetic trees were generated for RIPK1\u20135 using previously described methods (Fu et al., 2012). Briefly, the kinase domains from human RIPK1 (NP_001341859.1), RIPK2 (NP_003812.1), RIPK3 (NP_006862.2), RIPK4 (NP_065690.2), and RIPK5 (NP_848605.1) were used to query the RefSeq protein database using BLASTp with an e-value cutoff of 2e-26 (Altschul et al., 1997). While LRRK1 and LRRK2 share kinase homology with RIPK1\u20135 and are sometimes known as RIPK6 and -7 (Lv et al., 2022), they have a distinct domain structure and function compared to RIPK1\u20135 and will therefore not be considered as RIP kinases for the purposes of this study. The five resulting sequence lists were consolidated to a single list of unique sequences using Geneious software. These sequences were then aligned using Clustal Omega (Sievers et al., 2011) with two refinement iterations implemented in Geneious software. Following alignment, we filtered sequences based on alignment of an N-terminal kinase domain to human RIPK kinase domains and the presence of a C-terminal domain. Proteins with additional N-terminal domains, proteins lacking homology to human kinase domains, and proteins lacking C-terminal domains were removed. Using the aligned and filtered vertebrate RIPK sequences (4550 sequences in total), a tree was built using FastTree (Price et al., 2009; Price et al., 2010) implemented using Geneious. Vertebrate MAPKK7 sequences were used as an outgroup to help isolate RIP kinases from similar, but distinct, kinases. Using this tree, we were able to identify and extract bona fide RIP kinases. The extracted sequences were again aligned using Clustal Omega and filtered using the criteria above. A second tree was generated using FastTree. From this tree, we extracted individual sequence lists for RIPK1\u20135 to determine which vertebrate species did or did not have each RIPK. This method was repeated for MLKL, TRIF, FADD, CASP8 and 10, NOD 1 and 2, and IRF6. The list of species and lists of accession numbers for each protein can be found in Supplementary files 4 and 5. A list of outgroups used for each analyzed protein can be found in Supplementary file 6.\n\n### Plasmids and constructs\n\nCoding sequences for human RIPK1 (Addgene #78834), human RIPK2 (ORFeome ID #4886), human RIPK3 (Addgene #78804), mouse RIPK1 (Addgene #115341), and mouse RIPK3 (Addgene #78805) were cloned into apcDNA5/FRT/TO backbone (Invitrogen, Carlsbad, CA, USA) with an N-terminal V5 tag and linker using Gibson Assembly (New England Biolabs, Ipswich, MA, USA). Human RIPK4 (NP_065690.2) and RIPK5 (NP_848605.1), and nonhuman RIPK1 C-termini (cat, XP_023109490.2; pig, XP_003128209.1; chicken, NP_989733.3; lizard, XP_003224434.1; lamprey, XP_032813622.1; zebra mussel, XP_052232845.1) and RIPK3 (cat, XP_003987615.3; pig, XP_001927459.3; lizard, XP_003223896.2; turtle, XP_037771912.1; lamprey, XP_032816533.1) homologues were ordered from Twist Biosciences (San Francisco, CA, USA) and were cloned along with RHIM mutants targeting the core tetrad into the pcDNA5/FRT/TO backbone (Invitrogen, Carlsbad, CA, USA) with an N-terminal V5 tag and linker using Gibson Assembly (New England Biolabs, Ipswich, MA, USA). Kinase mutants for human proteins RIPK1 (D138N), RIPK2 (D146N), RIPK3 (D142N), RIPK4 (D143N), and RIPK5 (D145N), and RHIM mutants for RIPK1 (IQIG542AAAA) and RIPK3 (VQVG461AAAA) were generated using Gibson Assembly. A list of primers used is found in Supplementary file 9.\n\n### Cell culture and transient transfections\n\nHEK293T cells (obtained from ATCC) and the generated HEK293T RIPK1 KO cells were maintained at a low passage number to maintain less than 1 year since purchase, acquisition, or generation. Both cell lines were grown in complete media containing DMEM (Gibco, Carlsbad, CA, USA), 10% FBS (Peak Serum, Wellington, CO, USA), and 1% penicillin/streptomycin (Gibco, Carlsbad, CA, USA). A day prior to transfection, HEK293T and RIPK1 KO cells were seeded into 24-well plates with 500 \u00b5L complete media or 96-well plates with 80 \u00b5L complete media. Cells were transiently transfected with 500 ng total DNA and 1.5 \u00b5L of TransIT-X2 (Mirus Bio, Madison, WI, USA) in 100 \u00b5L Opti-MEM (Gibco, Carlsbad, CA, USA) for a 24-well plate or 100 ng DNA and 0.3 \u00b5L TransIT-X2 in 10 \u00b5L Opti-MEM for a 96-well plate. DNA and TransIT-X2 were incubated at room temperature for 25\u201330 min, then added dropwise to the appropriate well. Cells were harvested or analyzed at 18\u201322 hr post-transfection. Cell lines are routinely confirmed to be mycoplasma-free by PCR analysis (using ATCC product #30-1012K). HEK293T cells were authenticated by STR analysis (SBP Genomics Core, La Jolla, CA, USA).\n\n### Generation of knockout cell lines\n\nRIPK1 knockout HEK293T cells were generated using CRISPR/Cas9 as previously described (Stevens et al., 2022; Tsu et al., 2021). Briefly, plasmids were generated in order to produce lentivirus-like particles containing the CRISPR/Cas9 machinery and guide RNA targeting exon 5 (ENSE00003586162) of RIPK1. The protocol for the molecular cloning of this plasmid was adapted from Feng Zhang (Sanjana et al., 2014) using the transfer plasmid pLB-Cas9 (gift from Feng Zhang, Addgene plasmid # 52962). We designed the gRNA target sequence using the web tool CHOPCHOP (Labun et al., 2019), available at https://chopchop.cbu.uib.no/, and synthesized oligonucleotides from Integrated DNA Technologies (San Diego, CA, USA). The synthesized oligonucleotide pair was phosphorylated and annealed using T4 Polynucleotide Kinase (NEB M0201S) with T4 Ligation Buffer (NEB). Duplexed oligonucleotides were ligated into dephosphorylated and BsmBI-digested pLB-Cas9 using the Quick Ligase kit (NEB M2200S) to generate transfer plasmid with RIPK1 guide sequence. To generate lentivirus-like particles, this transfer plasmid was transfected alongside two packaging plasmids, pMD2.G (gift from Didier Trono, Addgene plasmid # 12259) and psPAX2 (gift from Didier Trono, Addgene plasmid # 12260), into HEK293T cells with a 1:1:1 stoichiometry. Forty-eight hours post-transfection, supernatant was harvested and syringe-filtered (0.45 \u03bcm). Supernatant containing sgRNA-encoding lentivirus-like particles was then used to transduce HEK293T cells. Transduced cells were cultured in growth media for 48 hr, then cultured in growth media supplemented with 1 \u00b5g/mL puromycin for 72 hr. Using limiting dilution in 96-well plates, the monoclonal cell line was then obtained. RIPK1 knockout was confirmed by Sanger sequencing and by western blot using an \u03b1-RIPK1 antibody.\n\n### NF-\u03baB and IFN luciferase reporter assays\n\nTo quantify NF-\u03baB and IFN activation, we used the Dual-Glo Luciferase Assay System E2920 (Promega, USA). WT or RIPK1 KO HEK293T cells were seeded in a white 96-well plate and transfected with firefly luciferase fused to either the NF-\u03baB response element (pGL4.32, Promega) or the human IFN-beta promoter (IFN-Beta-pGL3, Addgene #102597), renilla luciferase fused to herpes simplex virus thymidine kinase promoter (pTK-Renilla, Thermo Scientific), and the indicated RIPK. Firefly luciferase was used as the primary reporter with renilla luciferase being a normalization control. Eighteen to 24 hr after transfection, Dual-Glo Luciferase Assay Reagent was added to each transfected well as well as three to six untransfected wells to serve as a negative control. Following a 10 min incubation, the firefly luciferase signal was measured using a BioTek Cytation imaging reader with Gen5 software (Agilent Technologies, San Diego, CA, USA). Then, Dual-Glo Stop & Glo reagent was added to each well. Following a 10 min incubation, the renilla luciferase signal was measured. The background luminescence signal from the buffer-treated untransfected conditions was subtracted from other conditions, firefly values were normalized to renilla values, and all samples were normalized to the empty vector control condition. Values are reported as NF-\u03baB activity (firefly/renilla).\n\n### Cell death assay\n\nCell viability was measured using the ReadyProbes Cell Viability Imaging Kit, Blue/Green (Thermo Fisher Scientific). HEK293T cells were seeded in 80 \u00b5L of DMEM+/+ (see \u2018Cell culture and transient transfections\u2019) in a clear 96-well plate and transfected with the indicated plasmids or a vector control. Eighteen hours post-transfection, cells were stained using NucBlue Live reagent, which stains all nuclei, and NucGreen Dead reagent, which stains only dead cells. A 2\u00d7 concentrated mix (4 drops/mL of each dye) was made and added to wells to 1\u00d7 concentration. Cells were incubated for 20 min at room temperature. Fluorescence for NucBlue (DAPI, excitation 377/20, emission 447/20) and NucGreen (GFP, excitation 469/20, emission 525/20) was read using a BioTek Cytation imaging reader with Gen5 software (Agilent Technologies, San Diego, CA, USA). Unstained wells were read and used as controls for background fluorescence. GFP values were normalized to DAPI values, and all samples were normalized to the vector control condition. Values are reported as cytotoxicity (GFP/DAPI).\n\n### Immunoblotting and antibodies\n\nEighteen to 22 hr post-transfection, cells were washed with 1\u00d7 PBS and lysed with boiling 1\u00d7 NuPAGE LDS sample buffer containing 5% \u03b2-mercaptoethanol at room temperature for 5 min and then at 98\u00b0C for 7\u201310 min. Lysates were separated by SDS-PAGE (4\u201315% Bis-Tris gel; Life Technologies, San Diego, CA, USA) with 1\u00d7 MOPS buffer (Life Technologies, San Diego, CA, USA). Proteins were transferred onto a nitrocellulose membrane (Life Technologies, San Diego, CA, USA) and blocked with PBS-T containing 5% bovine serum albumin (BSA) (Spectrum, New Brunswick, NJ, USA). Membranes were incubated with the indicated rabbit primary antibodies diluted with 5% BSA and PBS-T at 1:1000 overnight at 4\u00b0C (\u03b1-V5 clone D3H8Q, \u03b1-GAPDH clone 14C10, \u03b1-RIPK1 clone E8S7U XP, \u03b1-RIPK2 clone D10B11, \u03b1-RIPK3 clone E1Z1D, \u03b1-RIPK4 #12636; Cell Signaling Technology, Danvers, MA, USA). Membranes were rinsed three times with PBS-T, incubated with HRP-conjugated rabbit secondary antibody diluted at 1:10,000 with 5% BSA and PBS-T for 30 min at room temperature, and developed with SuperSignal West Pico PLUS Chemiluminescent Substrate (Thermo Fisher Scientific, Carlsbad, CA, USA).\n\n### Statistical analysis\n\nStatistical analyses were completed using GraphPad Prism 10 software. Tests were performed as indicated. Error bars were calculated using SEM.\n",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dario Riccardo Valenzano, Leibniz Institute on Aging Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.102301.3.sa0](https://doi.org/10.7554/eLife.102301.3.sa0)\n\nThis important study provides compelling evidence for the evolutionary diversification and conserved NF\u03baB-inducing function of RHIM-containing RIP kinase proteins across animal lineages, combining thorough bioinformatic analysis with functional assays in human cells. The findings are of broad interest to immunologists and evolutionary biologists, though some novel observations would benefit from deeper conceptual integration.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.102301.3.sa1](https://doi.org/10.7554/eLife.102301.3.sa1)\n\nSummary:\n\nBy combining bioinformatical and experimental approaches, the authors address the question why several vertebrate lineages lack specific genes of the necroptosis pathway, or those that regulate the interplay between apoptosis and necroptosis. The lack of such genes was already known from previous publications, but the current manuscript provides a more in-depth analysis and also uses experiments in human cells to address the question of functionality of the remaining genes and pathways. A particular focus is placed on RIPK3/RIPK1 and their dual roles in inducing NFkB and/or necroptosis.\n\nStrengths:\n\nThe well documented bioinformatical analyses provide a comprehensive data basis of the presence/absence of RIP-kinases, other RHIM proteins, apoptosis signaling proteins (FADD,CASP8,CASP10) and some other genes involved in these pathway. Several of these genes are known to be missing in certain animal lineages, which raises the question why their canonical binding partners are present in these species. By expressing several such proteins (both wildtype and mutants destroying particular interaction regions) in human cells, the authors succeed in establishing a general role of RIPK3 and RIPK1 in NFkB activation. This function appears to be better conserved and more universal than the necroptotic function of the RHIM proteins. The authors also scrutinize the importance of the kinase function and RHIM integrity for these separate functionalities.\n\nWeaknesses:\n\nA weakness of the presented study is the experimental restriction to human HEK293 cells. There are several situations where the functionality of proteins from distant organisms (like lampreys or even mussels) in human cells is not necessarily indicative of their function in native context. In some cases, these problems are addressed by co-expressing potential interaction partners, but not all of these experiments are really informative. However, I agree with the authors that it is not possible to perform all the experiments in native cells, and that comparing all proteins in the same (human) cell type allows for a better comparison.\n\nThe conclusions drawn by the authors are supported by convincing evidence. I have no doubts that this study will be very useful for future studies addressing the evolution of necroptosis and its regulation by NFkB and apoptosis.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.102301.3.sa2](https://doi.org/10.7554/eLife.102301.3.sa2)\n\nIn this study, the authors employ both computational and experimental methods to reveal functional conservation of RIP family kinases and associated proteins in animals, with particular focus on mammals and other major groups of vertebrates. The bionformatic part of the work involves genomic data from diverse animal groups, providing insightful data on loss and duplications patterns for RIP and other necroptosis-related genes, and positive selection signals for RIPK1/3 genes in certain mammalian clades. These findings are then extensively used for selecting species and RHIM tetrad candidates for further experiments, in which the authors demonstrate different modes of functional conservation for RIPK proteins in necroptosis and NF-kB signaling across vertebrate species.\n\nAs an only major drawback, I would mention several important findings which the authors make in the course of their research but do not pursue further in the experimental part of the paper. These include:\n\n\u2022 An additional copy for RIPK2 (RIPK2B) found in monotremes and non-mammalian vertebrates and its functions;\n\n\u2022 The entire diversity of RHIM functional tetrad variants; of particular interest here are IQFG and IQLG tetrads specific for bats, which are known to harbor human-affecting viruses and were demonstrated to have their RIPK1/3 genes under positive selection in this study;\n\n\u2022 Functions and involvement of RIPK3 protein in NF-kB pathway in lampreys;\n\n\u2022 The mode of NF-kB activation in non-mammalian species retaining ZBP1 copies.\n\nFurther elucidation of some or all of these points in the experimental part would facilitate conceptualizing the paper's numerous findings, which otherwise might appear insufficiently scrutinized. On the other hand, I agree that at least some of them require separate studies to be elucidated in. Given the importance of the results presented in this paper, I believe these points will be further addressed in future works.\n",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "44a54e8f-fd6d-4526-9b29-3e316e11b8ba",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C1",
+      "claim": "RIPK1 and RIPK3 play important roles in diverse innate immune pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor interacting protein kinases (RIPK) RIPK1 and RIPK3 play important roles in diverse innate immune pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the broader scientific literature and the subsequent findings in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "58a6c77a-4118-48f4-9841-697d257e8fb0",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C2",
+      "claim": "Some RIPK1/3-associated proteins are absent in specific vertebrate lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, some RIPK1/3-associated proteins are absent in specific vertebrate lineages, suggesting that some RIPK1/3 functions are conserved, while others are more evolutionarily labile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenomic analysis data presented in Figure 1C and discussed throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "3b4b33c6-a953-415c-bf25-e6b93844f5d9",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C3",
+      "claim": "RIPK3 and RIPK1 undergo lineage-specific rapid evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we perform comparative evolutionary analyses of RIPK1\u20135 and associated proteins in vertebrates to identify lineage-specific rapid evolution of RIPK3 and RIPK1 and recurrent loss of RIPK3-associated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by positive selection analysis shown in Figure 1B and discussed in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "dfb14606-9bce-4c11-858b-c9145bc25b48",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C4",
+      "claim": "Diverse vertebrate RIPK3 proteins are able to activate NF-\u03baB and cell death in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, diverse vertebrate RIPK3 proteins are able to activate NF-\u03baB and cell death in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "ace48a93-6045-457c-813d-ebf0d78ba18b",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C5",
+      "claim": "The RIP homotypic interaction motif (RHIM) in RIPK3 is strikingly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional analyses revealed a striking conservation of the RIP homotypic interaction motif (RHIM) in RIPK3, as well as other human RHIM-containing proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "bc4e6e8a-6ea2-4856-856b-3285ece8bc78",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C6",
+      "claim": "Diversity in the RIPK3 RHIM can tune activation of NF-\u03baB while retaining the ability to activate cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, diversity in the RIPK3 RHIM can tune activation of NF-\u03baB while retaining the ability to activate cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "887a51e9-79f4-4dc9-8635-10711cb84ca2",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C7",
+      "claim": "NF-\u03baB activation is a core, conserved function of RIPK3.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data suggest that NF-\u03baB activation is a core, conserved function of RIPK3, and the RHIM can tailor RIPK3 function to specific needs within and between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing NF-\u03baB activation by diverse vertebrate RIPK3 proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "4cb0ee3b-aeca-41ec-9e43-2fdd808d22a7",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C8",
+      "claim": "RIPK3 and RIPK1 interact via their shared RHIM to form amyloid-like aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of signals from innate immune receptors like Z-DNA binding protein 1 (ZBP1) and tumor necrosis factor receptor 1 (TNFR1), RIPK3, and RIPK1 interact via their shared RIP homotypic interaction motif (RHIM) to form amyloid-like aggregates (Wu et al., 2021), leading to their autophosphorylation and activation of additional effector proteins to carry out their innate immune functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "f51cfdbd-fba0-4880-9dce-a13365d7f5d7",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C9",
+      "claim": "RIPK3 can phosphorylate MLKL to activate necroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, RIPK3 can phosphorylate MLKL to activate highly inflammatory programmed necrotic cell death (necroptosis) (Sun et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sun et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "6964a23c-5012-468e-8ba3-fa211033f391",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C10",
+      "claim": "RIPK1/3 can engage caspase-8 to activate apoptotic caspases.",
+      "claim_type": "EXPLICIT",
+      "source": "RIPK1/3 can engage caspase-8 (CASP8) to activate apoptotic caspases (Wang et al., 2008; Mandal et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2008 and Mandal et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "dc9d18ed-d830-4934-82dc-9eba8df6b587",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C11",
+      "claim": "RIPK1/3 can activate the pro-survival and pro-inflammatory transcription factor NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "or RIPK1/3 can activate the pro-survival and pro-inflammatory transcription factor NF-\u03baB (Meylan et al., 2004; Moriwaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Meylan et al., 2004 and Moriwaki et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "4d62022b-a9a3-477b-b9fd-a8728bc6b086",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C12",
+      "claim": "RIPK3 is evolutionarily dynamic in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Like many innate immune proteins, RIPK3 is evolutionarily dynamic in vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic and evolutionary analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "90bccda1-3aab-4f0f-914b-e20b78505987",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C13",
+      "claim": "RIPK3 and associated proteins ZBP1 and MLKL have been lost in some vertebrate lineages, including birds, carnivores, and marsupials.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenomic analyses of a small number of species from different vertebrate clades suggest that RIPK3 and the associated proteins ZBP1 and MLKL have been lost in some vertebrate lineages, including birds, carnivores, and marsupials (Dondelinger et al., 2016; \u00c1gueda-Pinto et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dondelinger et al., 2016 and \u00c1gueda-Pinto et al., 2021, and confirmed by data in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "0d513906-1cbb-4ff1-9fc9-3b3a28cafde0",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C14",
+      "claim": "RIPK3, RIPK1, MLKL, and ZBP1 interact with viral proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, RIPK3, RIPK1, MLKL, and ZBP1 are known to interact with viral proteins (Harris et al., 2015; Croft et al., 2018; Wagner et al., 2015; Muscolino et al., 2021; Huang et al., 2015; Liu et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "909e3ac4-b6c4-4d43-8bad-83c1ad74da4a",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C15",
+      "claim": "RIPK3, RIPK1, MLKL, and ZBP1 are evolving under recurrent positive selection in primates and bats.",
+      "claim_type": "EXPLICIT",
+      "source": "and have been shown to be evolving under recurrent positive selection in both primates and bats (Palmer et al., 2021; Cariou et al., 2022), a hallmark of host proteins that directly interact with viral proteins (Daugherty and Malik, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Palmer et al., 2021, Cariou et al., 2022, and Daugherty and Malik, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "d2edbba7-fff7-4956-8ec4-ff85ed1fe6bf",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C16",
+      "claim": "There are known differences between humans and mice in the roles of specific genes in the regulation of NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "Even between humans and mice, there are known differences in the roles of specific genes in the regulation of NF-\u03baB, suggesting this pathway can be tailored to the distinct environments of different species (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "7ab68194-fa8e-4f77-9ba7-b55ff4cf2ed5",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C17",
+      "claim": "RIPK1 and RIPK3 are part of a larger family of RIPKs, including RIPK2, RIPK4, and ANKK1/RIPK5.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, RIPK1 and RIPK3 are part of a larger family of RIPKs, including RIPK2, RIPK4, and ANKK1/RIPK5, which, with the exception of RIPK5, are known to activate NF-\u03baB in various cellular contexts (Cuny and Degterev, 2021; Eng et al., 2021; Lv et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cuny and Degterev, 2021, Eng et al., 2021, and Lv et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "784808ac-c549-4ce9-958a-67cc55337005",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C18",
+      "claim": "Human RIPK1\u20134 activate NF-\u03baB through different mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Human RIPK1\u20134 activate NF-\u03baB, albeit through different mechanisms, including differential dependence on endogenous RIPK1 and kinase activity (Figure 1\u2014figure supplements 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplements 1\u20133.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "7b7b7eb8-2651-4bf7-a966-bf13ef4d7cf6",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C19",
+      "claim": "RIPK5 does not activate NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite its close homology to RIPK4, RIPK5 did not activate NF-\u03baB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "fae3e32e-1daf-4336-83c6-6a907c6ca6d5",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C20",
+      "claim": "Only RIPK1 and RIPK3 show evidence of recurrent positive selection among RIPK1\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we only found evidence for positive selection acting on RIPK1 and RIPK3 (Figure 1B, Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by positive selection analysis data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "708aea25-e0ba-4c34-9509-98d20e6e17d4",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C21",
+      "claim": "In primates, RIPK3 is evolving under strong positive selection, while RIPK1 is not.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in primates, RIPK3 is evolving under strong positive selection, while RIPK1 is not, consistent with previous data (Palmer et al., 2021; Cariou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1B and citations to Palmer et al., 2021 and Cariou et al., 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "99c2f862-e70c-4186-ad94-03596b1e90b2",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C22",
+      "claim": "In ungulates, RIPK3 does not show evidence for positive selection, whereas RIPK1 does.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ungulate RIPK3 does not show evidence for positive selection, whereas ungulate RIPK1 does.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "6db2dc3e-6735-4ba2-b12e-02e03c26d90a",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C23",
+      "claim": "RIPK3, ZBP1, and MLKL are lost in birds.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed the loss of necroptosis-associated proteins that has been previously reported (Dondelinger et al., 2016): RIPK3 and ZBP1 in birds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C and citation to Dondelinger et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "ee1489db-947e-496e-aba2-2e1aa0e51c5b",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C24",
+      "claim": "RIPK3, ZBP1, and MLKL are lost in marsupials.",
+      "claim_type": "EXPLICIT",
+      "source": "RIPK3, ZBP1, and MLKL in marsupials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "32a62996-a43d-495f-b339-4ea84a7a1010",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C25",
+      "claim": "MLKL is lost in carnivores.",
+      "claim_type": "EXPLICIT",
+      "source": "MLKL in carnivores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "a886d662-0d93-4821-9dd9-adf932cad862",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C26",
+      "claim": "ZBP1 is absent in all fish species.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that ZBP1 is absent in all fish species, suggesting that this protein, and ZBP1-mediated necroptosis, arose only during tetrapod evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "c5c956a8-b7db-435a-8552-07b307f9645e",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C27",
+      "claim": "RIPK1 is found in nearly every vertebrate genome queried.",
+      "claim_type": "EXPLICIT",
+      "source": "RIPK1 is found nearly every vertebrate genome queried",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "fadee8b5-a034-429b-9aaf-8c447a1d30db",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C28",
+      "claim": "Clear RIPK1 homologs were identified in several non-vertebrate species, including zebra mussel, several spiralia species, and lancelet species.",
+      "claim_type": "EXPLICIT",
+      "source": "and clear RIPK1 homologs were identified in several non-vertebrate species, including zebra mussel (Dreissena polymorpha), several additional spiralia species, and lancelet species in the genus Branchiostoma (accession numbers in Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "01ef5b8b-db38-4a3a-adde-2f167a8a9a45",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C29",
+      "claim": "At least one copy of CASP8/10 is found in most vertebrate genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "At least one copy of CASP8/10 is found in most vertebrate genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "24b5b7a7-1d26-4d7a-90e7-603f4e1bb6fa",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C30",
+      "claim": "Two copies of CASP8/10 began in tetrapods, coinciding with the emergence of ZBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Two copies, presumably marking the delineation between CASP8 and CASP10, began in tetrapod, coinciding with the emergence of ZBP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C and Figure 1\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "2a7bda58-6fd0-4007-a933-45f117411d8a",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C31",
+      "claim": "Suborder Myomorpha and Castorimorpha rodents have lost CASP10, whereas Sciuromorpha and Hystricomorpha rodents have retained CASP10.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed the loss of CASP10 in some rodents (Eckhart et al., 2008) (see Figure 1\u2014figure supplement 4A for CASP8/10 breakdown), revealing that suborder Myomorpha ('mouse-like') and Castorimorpha ('beaver-like') rodents have lost CASP10, whereas Sciuromorpha ('squirrel-like') and Hystricomorpha ('porcupine-like') rodents have retained CASP10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1\u2014figure supplement 4A and citation to Eckhart et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "2d730a1a-3ecc-41c5-a819-5b1e7a050748",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C32",
+      "claim": "FADD and TRIF are well conserved in all vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that FADD and TRIF are well conserved in all vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "31582669-3df7-4361-a501-c7e03e00679a",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C33",
+      "claim": "A second paralog of RIPK2, called RIPK2B, exists in many vertebrates but is lost in therian mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we observed a second paralog of RIPK2, which we call RIPK2B, in many vertebrates but lost in therian (live-bearing) mammals (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "ebe97684-1284-4ec0-9b3f-250e9ce6a26c",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C34",
+      "claim": "NOD2 is present in lamprey and fish, but absent in birds, reptiles, and some amphibians.",
+      "claim_type": "EXPLICIT",
+      "source": "NOD2 is present in lamprey and fish, but absent in birds, reptiles, and some amphibians, including some of the same species that contain RIPK2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "b9db78bb-89d9-4dbc-a3ef-267daa4ded53",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C35",
+      "claim": "RIPK4 is present in jawed vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "RIPK4 is present in jawed vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "09136750-4448-423b-a5ea-50fe6e036ea3",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C36",
+      "claim": "IRF6 emerged prior to RIPK4 and has been lost in many vertebrate species, particularly in carnivores, cetaceans, and ungulates.",
+      "claim_type": "EXPLICIT",
+      "source": "IRF6, the only known phosphorylation target of RIPK4 (Cuny and Degterev, 2021; Eng et al., 2021), emerged prior to RIPK4 and has been lost in many vertebrate species, particularly in carnivores, cetaceans, and ungulates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "23197a9a-9042-4067-ab3a-40a004d22a30",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C37",
+      "claim": "RIPK5 has been lost in several lineages, including monotremes and lagomorphs.",
+      "claim_type": "EXPLICIT",
+      "source": "RIPK5, which has no known function and no known interacting proteins, has been lost in several lineages, including monotremes and lagomorphs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "fd6f3790-dd8d-4633-b0b1-5c28b420ff38",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C38",
+      "claim": "Among all vertebrates tested, only pig and sea lamprey RIPK3 failed to activate NF-\u03baB in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, among all vertebrates tested, only pig and sea lamprey RIPK3 failed to activate NF-\u03baB in human cells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "5e82e0a4-4362-4f33-908d-c1f3e2a99848",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C39",
+      "claim": "Mammalian RIPK3 activation is dependent on RIPK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while mammalian RIPK3 activation is dependent on RIPK1, both lizard and turtle RIPK3 activate NF-\u03baB independently of RIPK1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "bca1b7b4-1616-4be5-8db6-0568c8f04b91",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C40",
+      "claim": "Lizard and turtle RIPK3 activate NF-\u03baB independently of RIPK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while mammalian RIPK3 activation is dependent on RIPK1, both lizard and turtle RIPK3 activate NF-\u03baB independently of RIPK1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "639e4653-e7ef-4c7b-aa8b-639cedb7002f",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C41",
+      "claim": "Most mammalian RIPK3 proteins were able to activate cell death using human ZBP1 and MLKL.",
+      "claim_type": "EXPLICIT",
+      "source": "Most mammalian RIPK3 proteins were able to activate cell death using human ZBP1 and MLKL (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "c5cf4a7f-a89f-4f69-9e4e-9338bf99c98e",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C42",
+      "claim": "Pig RIPK3 is unable to activate NF-\u03baB but can activate cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "This included pig RIPK3, which is unable to activate NF-\u03baB, suggesting that activation of cell death and NF-\u03baB by RIPK3 proteins has been separated in a species-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "e8e878cf-94c1-42ba-bab8-471d8d88b4a0",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C43",
+      "claim": "Cat RIPK3 can activate NF-\u03baB but fails to activate cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we observed that cat RIPK3 can activate NF-\u03baB but fails to activate cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "1aeae01e-f647-4dd1-a809-11bba60ddde9",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C44",
+      "claim": "Feline RIPK3 has a mutated kinase catalytic residue.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this observation, we analyzed the sequences of carnivore RIPK3 proteins and found that feline RIPK3 has mutated kinase catalytic residue (Figure 2\u2014figure supplement 3), explaining the loss of cell death activation by cat RIPK3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis data in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "c0669466-20eb-4f4e-8267-b2455c54aa78",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C45",
+      "claim": "Only lizard RIPK3 was able to activate cell death among non-mammalian vertebrates tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside of mammals, only lizard RIPK3 was able to activate cell death, despite the ability of both lizard and turtle RIPK3 to activate NF-\u03baB, further suggesting that these functions of RIPK3 have distinct, species-specific requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "f7dd6e60-0bac-47e8-953b-b45c0670828c",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C46",
+      "claim": "There is a cluster of rapidly evolving sites in and around the C-terminal RHIM of primate RIPK3.",
+      "claim_type": "EXPLICIT",
+      "source": "While we identified rapidly evolving sites throughout the primate RIPK3, there was a cluster of sites in and around the C-terminal RHIM (Figure 3, Supplementary file 5), which is a known region of interaction between RIPK1 and RIPK3 and RIPK3 homooligomerization (Wu et al., 2021; Sun et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by positive selection analysis data in Figure 3A and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "818fed3e-a240-4cef-b15d-38795c99dca3",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C47",
+      "claim": "The core RHIM tetrad (VQVG) in primate RIPK3 is not rapidly evolving.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, despite multiple rapidly evolving sites within the RHIM, a core tetrad (VQVG) is not rapidly evolving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by positive selection analysis data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "7f821347-7c97-4889-b5cb-c0200b14b42c",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C48",
+      "claim": "The core tetrads of bat and carnivore RIPK3 are not rapidly evolving.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the core tetrads of bat and carnivore RIPK3 are not rapidly evolving (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by positive selection analysis data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "97774a48-4f7a-4650-965c-f8013e17dcf7",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C49",
+      "claim": "The RIPK3 core RHIM tetrad is highly conserved across vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the RIPK3 core RHIM tetrad is highly conserved across vertebrates (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "aed4fdab-57ac-4e6d-bf44-24a6adb0526d",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C50",
+      "claim": "Mutation of the RIPK3 RHIM core tetrad reduced activation of NF-\u03baB in human, mouse, and cat RIPK3.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of human, mouse, and cat RIPK3 RHIMs reduced activation of NF-\u03baB as expected (Figure 3D, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "9530f079-d0e1-4361-b386-528cb380d437",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C51",
+      "claim": "Activation of NF-\u03baB by lizard and turtle RIPK3 is dependent on the RHIM despite being independent of RIPK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, despite activating independently of RIPK1 (Figure 2B), activation of NF-\u03baB by lizard and turtle RIPK3 remains dependent on the RHIM (Figure 3E, left) and independent of RIPK3 kinase activity (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 3E and Figure 3\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "eeac3f59-6d71-4ff8-8f09-3eafcf3f13db",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C52",
+      "claim": "The sea lamprey RHIM diverges from the canonical V/I-Q-V/I-G tetrad and contains TQIG.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while analyzing RHIM domains of nonhuman RIPK3, we observed that the sea lamprey RHIM diverges from the canonical V/I-Q-V/I-G tetrad and instead contains TQIG (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "d540bafc-f5e0-4033-9f9d-c78a43005f23",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C53",
+      "claim": "Mutating the sea lamprey RIPK3 RHIM from TQIG to IQIG increases NF-\u03baB activation.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if this was responsible for the limited activation of NF-\u03baB by sea lamprey RIPK3, we mutated this motif to IQIG and observed an increase in NF-\u03baB activation (Figure 3E, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "550e454c-1bfc-4cdd-a45c-cba149ee6cee",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C54",
+      "claim": "The RIPK1 RHIM is highly conserved in vertebrates and in RIPK1-like proteins found in zebra mussel, Lingula species, and multiple lancelet species.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the RIPK1 RHIM is highly conserved in vertebrates and in RIPK1-like proteins found in zebra mussel, Lingula species, and multiple lancelet species (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "dbc98973-318a-4be5-b142-3257210689e8",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C55",
+      "claim": "Diverse vertebrate RIPK1CT proteins activate NF-\u03baB independent of endogenous RIPK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse vertebrate RIPK1CT proteins activate NF-\u03baB independent of endogenous RIPK1 (Figure 4\u2014figure supplement 3), consistent with our hypothesis that NF-\u03baB activation is an ancestral and conserved function of these proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "238f2982-c27b-4818-9ce3-44805e7a100a",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C56",
+      "claim": "Mutation of the RHIM domain does not affect activation of NF-\u03baB by mammalian RIPK1CT proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, mutation of the RHIM domain does not affect activation of NF-\u03baB by mammalian proteins, including human, mouse, cat, and pig (Figure 4B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "49909404-454f-4dce-90f8-38eb2d9d1f02",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C57",
+      "claim": "Mutation of the RHIM domain attenuated or completely prevented the ability of non-mammalian RIPK1CT to activate NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mutation of the RHIM domain attenuated or completely prevented the ability of non-mammalian (lizard, sea lamprey, and zebra mussel) RIPK1CT to activate NF-\u03baB (Figure 4B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "073d729d-fa62-4e7f-b1e1-4034d9df28aa",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C58",
+      "claim": "The first RHIM of ZBP1 is highly conserved in mammals and some other tetrapods, whereas the second RHIM diverges even within mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The TRIF RHIM and the first RHIM of ZBP1 are also highly conserved in mammals and some other tetrapods, whereas the second RHIM of ZBP1 diverges even within mammals (Figure 4C, Figure 4\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "57d0d595-6590-4859-b512-0d74b440a076",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C59",
+      "claim": "ZBP1 activates NF-\u03baB in a RHIM- and RIPK1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "As described previously (Rebsamen et al., 2009), ZBP1 activates NF-\u03baB in a RHIM- and RIPK1-dependent manner (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4D and citation to Rebsamen et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "62393929-66e3-4474-a5a7-d5e41876f8d7",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C60",
+      "claim": "Only the first RHIM tetrad of ZBP1 is required for NF-\u03baB activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our evolutionary prediction, only the first RHIM tetrad is required for NF-\u03baB activation by ZBP1 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "1387bf34-cb13-45d0-8615-b2374d0e785e",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C61",
+      "claim": "Mutation of the TRIF RHIM domain does not affect activation of NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mutation of the TRIF RHIM domain does not affect activation of NF-\u03baB, and activation is only moderately reduced in RIPK1 KO cells (Figure 4\u2014figure supplement 4B and C), likely due to the TIR domain in TRIF that is known to mediate its innate immune signaling (Nanson et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4\u2014figure supplement 4B and C and citation to Nanson et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "52448b6a-a463-4754-b006-dbea5ada1268",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C62",
+      "claim": "Most naturally occurring RHIM tetrad variants activate NF-\u03baB compared to the inactive RIPK3 RHIM mutant, albeit lower than the WT tetrad.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while most tested variants activate NF-\u03baB compared to the inactive RIPK3 RHIM mutant (AAAA tetrad), albeit lower than the WT (VQVG) tetrad, TQIG and VQSG did not activate NF-\u03baB (Figure 4E, Figure 4\u2014figure supplements 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4E and Figure 4\u2014figure supplements 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "84be5a47-5cdf-4f15-b952-8e033dab49c8",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C63",
+      "claim": "TQIG and VQSG RHIM tetrad variants did not activate NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while most tested variants activate NF-\u03baB compared to the inactive RIPK3 RHIM mutant (AAAA tetrad), albeit lower than the WT (VQVG) tetrad, TQIG and VQSG did not activate NF-\u03baB (Figure 4E, Figure 4\u2014figure supplements 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "d1c0791e-b875-4d58-a209-9ad65bb86b08",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C64",
+      "claim": "All RHIM tetrad variants were able to activate ZBP1-dependent cell death similar to WT RIPK3.",
+      "claim_type": "EXPLICIT",
+      "source": "All tetrad variants were able to activate ZBP1-dependent cell death similar to WT RIPK3 (Figure 4F), further revealing the separation of RIPK3-mediated NF-\u03baB activation from cell death activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "577116f9-53f3-4ae7-908b-52a9bab27559",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C65",
+      "claim": "NF-\u03baB is a deeply conserved pathway in many metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of NF-\u03baB is critical to both the innate and adaptive immune response in humans and mice (Zhang et al., 2017) and is a deeply conserved pathway in many metazoans (Wang et al., 2006; Hetru and Hoffmann, 2009; Williams and Gilmore, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2006, Hetru and Hoffmann, 2009, and Williams and Gilmore, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "dbf08e97-3946-4fba-a94b-5cac4d3fd8f0",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C66",
+      "claim": "Necroptosis is hypothesized to have arisen in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "It is hypothesized that necroptosis, defined by RIPK3-mediated activation of MLKL, arose in vertebrates (Dondelinger et al., 2016; Tummers and Green, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dondelinger et al., 2016 and Tummers and Green, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "8400f83f-662e-4402-bab2-2c11a200ce54",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C67",
+      "claim": "Two critical regulators of necroptosis, CASP8 and ZBP1, are only found in tetrapods.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that two critical regulators of necroptosis, CASP8 and ZBP1, are only found in tetrapods, suggestive of an additional innovation within the necroptosis pathway during the divergence of tetrapods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic data in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "888fc019-56b1-4380-8879-a8c90b4dc10b",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C68",
+      "claim": "The RHIM core tetrad was previously known to be conserved between humans and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The RHIM core tetrad was previously known to be conserved between humans and mice (Riebeling et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Riebeling et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "2ec29002-1c0b-4745-8a93-ade327b4ff98",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C69",
+      "claim": "RHIM-containing proteins have been identified in non-vertebrate animals and in fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional RHIM-containing proteins have been identified in non-vertebrate animals and in fungi (Kajava et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kajava et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "1dc56cd9-7cae-46f2-bfc0-1a9229cff114",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C70",
+      "claim": "RHIM proteins found in fruit fly and fungi are involved in antibacterial defense and cell death, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the RHIM proteins found in fruit fly and fungi are known to be involved in antibacterial defense and cell death, respectively, suggesting that RHIM-mediated interactions may be an ancient mechanism of innate immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knowledge from the literature and leads to an inference about ancient mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "692f9e4a-66bc-460a-8ac6-53e4c15ef81e",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C71",
+      "claim": "Vaccinia virus E3 prevents Z-DNA sensing by ZBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, vaccinia virus E3 prevents Z-DNA sensing by ZBP1 (Koehler et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Koehler et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "64e5b8e1-1df7-4f87-be73-b7d226c8b6b6",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C72",
+      "claim": "Human cytomegalovirus UL36 promotes MLKL degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "human cytomegalovirus UL36 promotes MLKL degradation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knowledge from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "09d04358-675c-453c-8489-6f7623ef4573",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C73",
+      "claim": "Poxviruses encode an MLKL homolog to prevent RIPK3-mediated activation of host MLKL.",
+      "claim_type": "EXPLICIT",
+      "source": "and poxviruses encode an MLKL homolog to prevent RIPK3-mediated activation of host MLKL (Petrie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Petrie et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "c8a68752-a2da-499c-a301-6cad11c2230f",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C74",
+      "claim": "Several viral mechanisms targeting RIPK3/RIPK1 are known to be species-specific and differ between humans and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, several of these mechanisms are known to be species-specific and differ between humans and mice (Muscolino et al., 2021; Huang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Muscolino et al., 2021 and Huang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "7121d0bc-6084-499e-9551-07d704c61e7f",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C75",
+      "claim": "RIPK1 function is central to determining cell fate downstream of TNF and TLR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong conservation of NF-\u03baB activation by RIPK1 across species is consistent with the model in which RIPK1 function is central to determining cell fate downstream of TNF and TLR signaling (Clucas and Meier, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Clucas and Meier, 2023 and inference from the data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "ed5e7679-fc3c-4dbc-970b-300bfc80403a",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "claim_id": "C76",
+      "claim": "Some pathogens have evolved strategies to inhibit CASP8, leading to activation of RIPK3- and RIPK1-mediated necroptosis as a secondary cell death strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, because some pathogens have evolved strategies to inhibit CASP8, RIPK3- and RIPK1-mediated necroptosis is activated as a secondary cell death strategy when CASP8 is inhibited (Remick et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Remick et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b3ded606-d278-4c56-923d-15cd2ec875ae",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Among RIPK1\u20135, only RIPK1 and RIPK3 show evidence of recurrent positive selection in vertebrates, with lineage-specific patterns: RIPK3 evolves under positive selection in primates but not ungulates, while RIPK1 shows the opposite pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18\u2013C22 are supported by experimental data (Figure 1\u2014figure supplements 1\u20133) and positive selection analysis (Figure 1B, Supplementary files 1 and 2). The statistical methods (PAML, FUBAR, MEME) are appropriate for detecting positive selection, and the lineage-specific patterns are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "8c626bb8-dd09-409a-a971-7b7dbc010870",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenomic analysis across 489 vertebrate species reveals recurrent loss of necroptosis-associated proteins (RIPK3, ZBP1, MLKL) in specific lineages, emergence of ZBP1 and CASP8/10 duplication in tetrapods, identification of RIPK2B paralog lost in therian mammals, and widespread conservation of RIPK1, FADD, and TRIF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C13, C23\u2013C37 are supported by comprehensive phylogenomic data (Figure 1C, Figure 1\u2014figure supplement 4, Supplementary files 4 and 5). The analysis covers 489 species and uses appropriate phylogenetic methods. The patterns of gene loss and conservation are clearly documented, though the authors acknowledge difficulty distinguishing true gene loss from incomplete genome assembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Diverse vertebrate RIPK3 proteins (23\u201363% identity to human) activate NF-\u03baB in human cells, with species-specific requirements: mammalian RIPK3 requires RIPK1, while reptilian RIPK3 does not. Cell death activation is separable from NF-\u03baB activation, as pig RIPK3 activates cell death but not NF-\u03baB, while cat RIPK3 (with mutated kinase) activates NF-\u03baB but not cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38\u2013C45 are supported by experimental data (Figure 2B, 2C, Figure 2\u2014figure supplements 1\u20133). The luciferase reporter assays and cell death assays are appropriate. The identification of the mutated kinase catalytic residue in feline RIPK3 provides mechanistic insight. Statistical analysis (two-way ANOVA) is appropriate for the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The RHIM core tetrad (VQVG) in RIPK3 is highly conserved across vertebrates despite rapid evolution of surrounding residues. Mutation of the RHIM tetrad abolishes NF-\u03baB activation in mammalian and reptilian RIPK3. The sea lamprey RHIM diverges (TQIG), and mutating it to IQIG increases NF-\u03baB activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C46\u2013C53 are supported by positive selection analysis (Figure 3A, 3B, Supplementary file 5), sequence alignments (Figure 3C), and functional data (Figure 3D, 3E, Figure 3\u2014figure supplements 1 and 2). The conservation of the core tetrad despite surrounding rapid evolution is striking and well-documented. The functional validation through mutagenesis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "a978cd16-6bae-4b63-9dff-eb8d8d3c8fa3",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The RIPK1 RHIM is highly conserved across vertebrates and non-vertebrate species. Diverse vertebrate RIPK1CT proteins activate NF-\u03baB independently of endogenous RIPK1. However, RHIM dependence differs: mammalian RIPK1CT does not require the RHIM for NF-\u03baB activation, while non-mammalian RIPK1CT (lizard, lamprey, zebra mussel) requires the RHIM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54\u2013C57 are supported by sequence alignments (Figure 4A) and functional data (Figure 4B, Figure 4\u2014figure supplements 1\u20133). The use of RIPK1CT constructs is well-justified to avoid kinase-mediated effects. The species-specific RHIM dependence is clearly demonstrated with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "ed620679-d1ce-4eb4-b9d0-b88af4ba0514",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among RHIM-containing proteins, the first RHIM of ZBP1 is highly conserved and required for NF-\u03baB activation, while the second RHIM diverges. TRIF RHIM is conserved but not required for NF-\u03baB activation, likely due to its TIR domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58\u2013C61 are supported by sequence alignments (Figure 4C, Figure 4\u2014figure supplement 4A) and functional data (Figure 4D, Figure 4\u2014figure supplement 4B and C). The differential conservation and functional requirements of the two ZBP1 RHIMs are clearly demonstrated. The explanation for TRIF's RHIM-independence is reasonable and supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "c8d22009-2904-4aa7-8603-d70fe6570e39",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Naturally occurring RHIM tetrad variants show differential ability to activate NF-\u03baB (most variants activate, but TQIG and VQSG do not), while all variants retain ability to activate cell death, demonstrating that RHIM diversity can tune NF-\u03baB activation while preserving cell death function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C62\u2013C64 are supported by experimental data (Figure 4E, 4F, Figure 4\u2014figure supplements 5 and 6). The systematic testing of naturally occurring RHIM variants is well-designed. The separation of NF-\u03baB and cell death activation functions is clearly demonstrated with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "dbea3b3b-80c8-40c2-b3a2-b39ff329e0e7",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NF-\u03baB activation is a core, conserved function of RIPK3 across vertebrates. NF-\u03baB is deeply conserved in metazoans, while necroptosis arose in vertebrates, with critical regulators CASP8 and ZBP1 emerging only in tetrapods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C65\u2013C67 are supported by the collective experimental and phylogenomic data presented throughout the manuscript. The inference that NF-\u03baB activation is the ancestral function is reasonable given the conservation data. The phylogenomic evidence for tetrapod-specific emergence of CASP8 and ZBP1 is clear (Figure 1C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "15e2d24c-a669-4701-9815-099bb22675ab",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RIPK1 and RIPK3 play important roles in diverse innate immune pathways, including necroptosis, apoptosis, and NF-\u03baB activation. These proteins interact with viral proteins and evolve under positive selection in primates and bats. RIPK3 is evolutionarily dynamic in vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8\u2013C17 are background claims supported by citations to prior literature and confirmed by the current study's data. These establish the context for the manuscript's findings and are well-supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "c16dbe7c-74c1-4726-9521-bdff1d717609",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has established RHIM conservation between humans and mice, identified RHIM proteins in non-vertebrates and fungi involved in immunity, documented viral antagonism of necroptosis proteins, and shown species-specific differences in viral mechanisms. RIPK1 function is central to cell fate determination downstream of TNF and TLR signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68\u2013C76 are background claims supported by citations to prior literature. These provide context for interpreting the current findings and are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "a812d54b-7b23-4bf0-9a94-10ed46510a95",
+      "content_id": "5e5d9a8d-c331-4c4c-a8d1-58a756cf59ad",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RIPK3 and RIPK1 undergo lineage-specific rapid evolution in vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is supported by positive selection analysis (Figure 1B, Supplementary files 1 and 2) showing evidence of recurrent positive selection in multiple mammalian lineages with lineage-specific patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "20f10e41-30a1-4641-9e00-9517cd35a3c8",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors present comprehensive phylogenomic analyses documenting the presence and absence of RIPK1-5 and associated proteins (ZBP1, MLKL, CASP8/10, FADD, TRIF, NOD2, IRF6) across vertebrate lineages. They confirm previously reported losses (RIPK3/ZBP1/MLKL in birds, marsupials, and carnivores) and report novel findings including ZBP1 absence in all fish, CASP8/10 duplication in tetrapods, a RIPK2B paralog lost in therian mammals, and various lineage-specific gene losses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'The well documented bioinformatical analyses provide a comprehensive data basis of the presence/absence of RIP-kinases, other RHIM proteins, apoptosis signaling proteins.' Reviewer 2 notes the work provides 'insightful data on loss and duplications patterns for RIP and other necroptosis-related genes.' The editor describes the bioinformatic analysis as 'thorough.' No concerns are raised about these phylogenomic findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "2072f0de-10c5-4bcc-b0e8-f2a0416c7661",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors identify lineage-specific positive selection acting on RIPK1 and RIPK3, with RIPK3 under strong positive selection in primates but not ungulates, while RIPK1 shows the opposite pattern. Among RIPK1-5, only RIPK1 and RIPK3 show evidence of recurrent positive selection.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly mentions 'positive selection signals for RIPK1/3 genes in certain mammalian clades' as part of the findings. Reviewer 1 does not challenge these evolutionary analyses. The editor's summary does not raise concerns about the positive selection data. The findings are presented with supporting data in Figure 1B.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrate that diverse vertebrate RIPK3 proteins activate NF-\u03baB in human cells, with only pig and lamprey RIPK3 failing to do so. They show mammalian RIPK3 requires RIPK1 for NF-\u03baB activation while lizard and turtle RIPK3 function independently of RIPK1. The study reveals species-specific separation of RIPK3 functions, with pig RIPK3 activating cell death but not NF-\u03baB, and cat RIPK3 showing the opposite pattern.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states 'the authors succeed in establishing a general role of RIPK3 and RIPK1 in NFkB activation' but notes 'A weakness of the presented study is the experimental restriction to human HEK293 cells. There are several situations where the functionality of proteins from distant organisms (like lampreys or even mussels) in human cells is not necessarily indicative of their function in native context.' This caveat creates uncertainty about whether the observed activities reflect native functions, particularly for evolutionarily distant species.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "6ad6284f-805c-416a-91ff-e4d5e4f77cfc",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors show that most mammalian RIPK3 proteins activate cell death using human ZBP1 and MLKL in human cells. They identify a mutated kinase catalytic residue in feline RIPK3 that explains cat RIPK3's inability to activate cell death despite retaining NF-\u03baB activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While Reviewer 1 acknowledges the authors 'scrutinize the importance of the kinase function and RHIM integrity for these separate functionalities,' the same reviewer's concern about 'experimental restriction to human HEK293 cells' and that 'functionality of proteins from distant organisms...in human cells is not necessarily indicative of their function in native context' applies to these cell death experiments. The mechanistic explanation for cat RIPK3 is supported by sequence data but the functional assays carry the same caveats.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "a9f1a1d6-7cd9-4cb7-9dc5-7be16fd12643",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors demonstrate striking conservation of the RIPK3 RHIM domain across vertebrates, particularly the core VQVG tetrad. Despite identifying rapidly evolving sites in and around the RHIM in primates, bats, and carnivores, the core tetrad itself is not rapidly evolving in any lineage examined.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor's summary explicitly states the study provides 'compelling evidence for the evolutionary diversification and conserved NF\u03baB-inducing function of RHIM-containing RIP kinase proteins.' Reviewer 1 notes the authors document 'a striking conservation of the RIP homotypic interaction motif (RHIM)' without raising concerns. Reviewer 2 does not challenge these conservation findings. The data are presented in multiple figures (3A-C) showing sequence alignments and positive selection analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "d53e68aa-3030-4ff1-9d71-87da05fef230",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors demonstrate that diversity in the RIPK3 RHIM can tune NF-\u03baB activation while retaining cell death activation. RHIM mutations reduce NF-\u03baB activation in mammalian RIPK3, and even RIPK1-independent lizard/turtle RIPK3 remain RHIM-dependent for NF-\u03baB activation. They show the sea lamprey TQIG variant has reduced activity that increases when mutated to IQIG, and that most naturally occurring RHIM variants activate NF-\u03baB (except TQIG and VQSG), while all variants retain cell death activation ability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1's concern about 'experimental restriction to human HEK293 cells' applies directly to these functional experiments. While Reviewer 1 acknowledges the authors 'scrutinize the importance of...RHIM integrity for these separate functionalities,' the caveat that results 'in human cells is not necessarily indicative of their function in native context' creates uncertainty about whether the observed tuning effects reflect native biology, particularly for the lamprey and other distant species.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "3cf7576c-0602-44c7-a6c2-ad7659d0d47b",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors show the RIPK1 RHIM is highly conserved across vertebrates and even in non-vertebrate RIPK1-like proteins. They demonstrate that diverse vertebrate RIPK1 C-terminal fragments activate NF-\u03baB independently of endogenous RIPK1, but RHIM mutations have differential effects: no effect in mammalian RIPK1 but attenuation or complete loss of activity in non-mammalian (lizard, lamprey, mussel) RIPK1.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1's general concern about 'experimental restriction to human HEK293 cells' and that 'functionality of proteins from distant organisms...in human cells is not necessarily indicative of their function in native context' applies to these RIPK1 experiments. While the conservation data are well-supported, the functional differences between mammalian and non-mammalian RIPK1 observed in human cells may not reflect native functions, particularly for evolutionarily distant species like lamprey and mussel.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "faacf256-666b-456a-9bb9-76ebc2bf09fa",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors show differential conservation of ZBP1's two RHIMs (first highly conserved, second divergent) and TRIF RHIM conservation. They demonstrate that only ZBP1's first RHIM is required for NF-\u03baB activation, while TRIF RHIM mutation does not affect NF-\u03baB activation, likely due to its TIR domain.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings on ZBP1 and TRIF are presented with sequence alignments and functional data. Reviewer 1 does not challenge these specific findings. The ZBP1 result is noted as 'Consistent with our evolutionary prediction' by the authors, and reviewers do not dispute this. While Reviewer 1's general concern about human cell experiments applies, these particular findings about domain requirements are more mechanistic and less subject to species-specific interpretation issues.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "e1e71afa-0bf9-4e67-9f90-d0333af8b42a",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors demonstrate that human RIPK1-4 activate NF-\u03baB through different mechanisms with differential dependence on endogenous RIPK1 and kinase activity, while RIPK5 does not activate NF-\u03baB despite close homology to RIPK4.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings are presented in supplementary figures and are not challenged by reviewers. Reviewer 1 acknowledges the comprehensive analysis of RIP kinases. The RIPK5 negative result is consistent with its lack of known function mentioned in the manuscript. These are straightforward functional characterizations in the native human system.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "9b517271-08bb-4b34-974f-d3f3f177239a",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors identify a second paralog of RIPK2, called RIPK2B, present in many vertebrates but lost in therian mammals.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 explicitly identifies this as 'An additional copy for RIPK2 (RIPK2B) found in monotremes and non-mammalian vertebrates and its functions' as one of 'several important findings which the authors make in the course of their research but do not pursue further in the experimental part of the paper.' This indicates the finding is noted but incompletely characterized, creating uncertainty about its functional significance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "cf97bffa-95b5-4bb9-ac35-84b9c67aaf68",
+      "content_id": "b2488475-ec08-416e-9621-ff94ee548df6",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors report that two critical regulators of necroptosis, CASP8 and ZBP1, are only found in tetrapods, suggesting an innovation in the necroptosis pathway during tetrapod divergence.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This phylogenomic finding is supported by the presence/absence data in Figure 1C. Reviewer 2 does not list this among the findings requiring further experimental pursuit, and Reviewer 1 does not challenge it. The inference about tetrapod innovation is reasonable given the phylogenetic distribution, though reviewers do not explicitly comment on this specific claim.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "784808ac-c549-4ce9-958a-67cc55337005",
+      "result_id": "b3ded606-d278-4c56-923d-15cd2ec875ae"
+    },
+    {
+      "claim_id": "7b7b7eb8-2651-4bf7-a966-bf13ef4d7cf6",
+      "result_id": "b3ded606-d278-4c56-923d-15cd2ec875ae"
+    },
+    {
+      "claim_id": "fae3e32e-1daf-4336-83c6-6a907c6ca6d5",
+      "result_id": "b3ded606-d278-4c56-923d-15cd2ec875ae"
+    },
+    {
+      "claim_id": "708aea25-e0ba-4c34-9509-98d20e6e17d4",
+      "result_id": "b3ded606-d278-4c56-923d-15cd2ec875ae"
+    },
+    {
+      "claim_id": "99c2f862-e70c-4186-ad94-03596b1e90b2",
+      "result_id": "b3ded606-d278-4c56-923d-15cd2ec875ae"
+    },
+    {
+      "claim_id": "58a6c77a-4118-48f4-9841-697d257e8fb0",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "90bccda1-3aab-4f0f-914b-e20b78505987",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "6db2dc3e-6735-4ba2-b12e-02e03c26d90a",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "ee1489db-947e-496e-aba2-2e1aa0e51c5b",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "32a62996-a43d-495f-b339-4ea84a7a1010",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "a886d662-0d93-4821-9dd9-adf932cad862",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "c5c956a8-b7db-435a-8552-07b307f9645e",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "fadee8b5-a034-429b-9aaf-8c447a1d30db",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "01ef5b8b-db38-4a3a-adde-2f167a8a9a45",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "24b5b7a7-1d26-4d7a-90e7-603f4e1bb6fa",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "2a7bda58-6fd0-4007-a933-45f117411d8a",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "2d730a1a-3ecc-41c5-a819-5b1e7a050748",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "31582669-3df7-4361-a501-c7e03e00679a",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "ebe97684-1284-4ec0-9b3f-250e9ce6a26c",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "b9db78bb-89d9-4dbc-a3ef-267daa4ded53",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "09136750-4448-423b-a5ea-50fe6e036ea3",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "23197a9a-9042-4067-ab3a-40a004d22a30",
+      "result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870"
+    },
+    {
+      "claim_id": "dfb14606-9bce-4c11-858b-c9145bc25b48",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "fd6f3790-dd8d-4633-b0b1-5c28b420ff38",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "5e82e0a4-4362-4f33-908d-c1f3e2a99848",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "bca1b7b4-1616-4be5-8db6-0568c8f04b91",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "639e4653-e7ef-4c7b-aa8b-639cedb7002f",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "c5cf4a7f-a89f-4f69-9e4e-9338bf99c98e",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "e8e878cf-94c1-42ba-bab8-471d8d88b4a0",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "1aeae01e-f647-4dd1-a809-11bba60ddde9",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "c0669466-20eb-4f4e-8267-b2455c54aa78",
+      "result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2"
+    },
+    {
+      "claim_id": "ace48a93-6045-457c-813d-ebf0d78ba18b",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "f7dd6e60-0bac-47e8-953b-b45c0670828c",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "818fed3e-a240-4cef-b15d-38795c99dca3",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "7f821347-7c97-4889-b5cb-c0200b14b42c",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "97774a48-4f7a-4650-965c-f8013e17dcf7",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "aed4fdab-57ac-4e6d-bf44-24a6adb0526d",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "9530f079-d0e1-4361-b386-528cb380d437",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "eeac3f59-6d71-4ff8-8f09-3eafcf3f13db",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "d540bafc-f5e0-4033-9f9d-c78a43005f23",
+      "result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f"
+    },
+    {
+      "claim_id": "550e454c-1bfc-4cdd-a45c-cba149ee6cee",
+      "result_id": "a978cd16-6bae-4b63-9dff-eb8d8d3c8fa3"
+    },
+    {
+      "claim_id": "dbc98973-318a-4be5-b142-3257210689e8",
+      "result_id": "a978cd16-6bae-4b63-9dff-eb8d8d3c8fa3"
+    },
+    {
+      "claim_id": "238f2982-c27b-4818-9ce3-44805e7a100a",
+      "result_id": "a978cd16-6bae-4b63-9dff-eb8d8d3c8fa3"
+    },
+    {
+      "claim_id": "49909404-454f-4dce-90f8-38eb2d9d1f02",
+      "result_id": "a978cd16-6bae-4b63-9dff-eb8d8d3c8fa3"
+    },
+    {
+      "claim_id": "073d729d-fa62-4e7f-b1e1-4034d9df28aa",
+      "result_id": "ed620679-d1ce-4eb4-b9d0-b88af4ba0514"
+    },
+    {
+      "claim_id": "57d0d595-6590-4859-b512-0d74b440a076",
+      "result_id": "ed620679-d1ce-4eb4-b9d0-b88af4ba0514"
+    },
+    {
+      "claim_id": "62393929-66e3-4474-a5a7-d5e41876f8d7",
+      "result_id": "ed620679-d1ce-4eb4-b9d0-b88af4ba0514"
+    },
+    {
+      "claim_id": "1387bf34-cb13-45d0-8615-b2374d0e785e",
+      "result_id": "ed620679-d1ce-4eb4-b9d0-b88af4ba0514"
+    },
+    {
+      "claim_id": "bc4e6e8a-6ea2-4856-856b-3285ece8bc78",
+      "result_id": "c8d22009-2904-4aa7-8603-d70fe6570e39"
+    },
+    {
+      "claim_id": "52448b6a-a463-4754-b006-dbea5ada1268",
+      "result_id": "c8d22009-2904-4aa7-8603-d70fe6570e39"
+    },
+    {
+      "claim_id": "84be5a47-5cdf-4f15-b952-8e033dab49c8",
+      "result_id": "c8d22009-2904-4aa7-8603-d70fe6570e39"
+    },
+    {
+      "claim_id": "d1c0791e-b875-4d58-a209-9ad65bb86b08",
+      "result_id": "c8d22009-2904-4aa7-8603-d70fe6570e39"
+    },
+    {
+      "claim_id": "887a51e9-79f4-4dc9-8635-10711cb84ca2",
+      "result_id": "dbea3b3b-80c8-40c2-b3a2-b39ff329e0e7"
+    },
+    {
+      "claim_id": "577116f9-53f3-4ae7-908b-52a9bab27559",
+      "result_id": "dbea3b3b-80c8-40c2-b3a2-b39ff329e0e7"
+    },
+    {
+      "claim_id": "dbf08e97-3946-4fba-a94b-5cac4d3fd8f0",
+      "result_id": "dbea3b3b-80c8-40c2-b3a2-b39ff329e0e7"
+    },
+    {
+      "claim_id": "8400f83f-662e-4402-bab2-2c11a200ce54",
+      "result_id": "dbea3b3b-80c8-40c2-b3a2-b39ff329e0e7"
+    },
+    {
+      "claim_id": "44a54e8f-fd6d-4526-9b29-3e316e11b8ba",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "4cb0ee3b-aeca-41ec-9e43-2fdd808d22a7",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "f51cfdbd-fba0-4880-9dce-a13365d7f5d7",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "6964a23c-5012-468e-8ba3-fa211033f391",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "dc9d18ed-d830-4934-82dc-9eba8df6b587",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "4d62022b-a9a3-477b-b9fd-a8728bc6b086",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "0d513906-1cbb-4ff1-9fc9-3b3a28cafde0",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "909e3ac4-b6c4-4d43-8bad-83c1ad74da4a",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "d2edbba7-fff7-4956-8ec4-ff85ed1fe6bf",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "7ab68194-fa8e-4f77-9ba7-b55ff4cf2ed5",
+      "result_id": "15e2d24c-a669-4701-9815-099bb22675ab"
+    },
+    {
+      "claim_id": "888fc019-56b1-4380-8879-a8c90b4dc10b",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "2ec29002-1c0b-4745-8a93-ade327b4ff98",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "1dc56cd9-7cae-46f2-bfc0-1a9229cff114",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "692f9e4a-66bc-460a-8ac6-53e4c15ef81e",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "64e5b8e1-1df7-4f87-be73-b7d226c8b6b6",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "09d04358-675c-453c-8489-6f7623ef4573",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "c8a68752-a2da-499c-a301-6cad11c2230f",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "7121d0bc-6084-499e-9551-07d704c61e7f",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "ed5e7679-fc3c-4dbc-970b-300bfc80403a",
+      "result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609"
+    },
+    {
+      "claim_id": "3b4b33c6-a953-415c-bf25-e6b93844f5d9",
+      "result_id": "a812d54b-7b23-4bf0-9a94-10ed46510a95"
+    },
+    {
+      "claim_id": "58a6c77a-4118-48f4-9841-697d257e8fb0",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "90bccda1-3aab-4f0f-914b-e20b78505987",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "6db2dc3e-6735-4ba2-b12e-02e03c26d90a",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "ee1489db-947e-496e-aba2-2e1aa0e51c5b",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "32a62996-a43d-495f-b339-4ea84a7a1010",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "a886d662-0d93-4821-9dd9-adf932cad862",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "c5c956a8-b7db-435a-8552-07b307f9645e",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "fadee8b5-a034-429b-9aaf-8c447a1d30db",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "01ef5b8b-db38-4a3a-adde-2f167a8a9a45",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "24b5b7a7-1d26-4d7a-90e7-603f4e1bb6fa",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "2a7bda58-6fd0-4007-a933-45f117411d8a",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "2d730a1a-3ecc-41c5-a819-5b1e7a050748",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "31582669-3df7-4361-a501-c7e03e00679a",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "ebe97684-1284-4ec0-9b3f-250e9ce6a26c",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "b9db78bb-89d9-4dbc-a3ef-267daa4ded53",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "09136750-4448-423b-a5ea-50fe6e036ea3",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "23197a9a-9042-4067-ab3a-40a004d22a30",
+      "result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8"
+    },
+    {
+      "claim_id": "3b4b33c6-a953-415c-bf25-e6b93844f5d9",
+      "result_id": "2072f0de-10c5-4bcc-b0e8-f2a0416c7661"
+    },
+    {
+      "claim_id": "fae3e32e-1daf-4336-83c6-6a907c6ca6d5",
+      "result_id": "2072f0de-10c5-4bcc-b0e8-f2a0416c7661"
+    },
+    {
+      "claim_id": "708aea25-e0ba-4c34-9509-98d20e6e17d4",
+      "result_id": "2072f0de-10c5-4bcc-b0e8-f2a0416c7661"
+    },
+    {
+      "claim_id": "99c2f862-e70c-4186-ad94-03596b1e90b2",
+      "result_id": "2072f0de-10c5-4bcc-b0e8-f2a0416c7661"
+    },
+    {
+      "claim_id": "dfb14606-9bce-4c11-858b-c9145bc25b48",
+      "result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73"
+    },
+    {
+      "claim_id": "887a51e9-79f4-4dc9-8635-10711cb84ca2",
+      "result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73"
+    },
+    {
+      "claim_id": "fd6f3790-dd8d-4633-b0b1-5c28b420ff38",
+      "result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73"
+    },
+    {
+      "claim_id": "5e82e0a4-4362-4f33-908d-c1f3e2a99848",
+      "result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73"
+    },
+    {
+      "claim_id": "bca1b7b4-1616-4be5-8db6-0568c8f04b91",
+      "result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73"
+    },
+    {
+      "claim_id": "c5cf4a7f-a89f-4f69-9e4e-9338bf99c98e",
+      "result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73"
+    },
+    {
+      "claim_id": "e8e878cf-94c1-42ba-bab8-471d8d88b4a0",
+      "result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73"
+    },
+    {
+      "claim_id": "c0669466-20eb-4f4e-8267-b2455c54aa78",
+      "result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73"
+    },
+    {
+      "claim_id": "639e4653-e7ef-4c7b-aa8b-639cedb7002f",
+      "result_id": "6ad6284f-805c-416a-91ff-e4d5e4f77cfc"
+    },
+    {
+      "claim_id": "1aeae01e-f647-4dd1-a809-11bba60ddde9",
+      "result_id": "6ad6284f-805c-416a-91ff-e4d5e4f77cfc"
+    },
+    {
+      "claim_id": "ace48a93-6045-457c-813d-ebf0d78ba18b",
+      "result_id": "a9f1a1d6-7cd9-4cb7-9dc5-7be16fd12643"
+    },
+    {
+      "claim_id": "f7dd6e60-0bac-47e8-953b-b45c0670828c",
+      "result_id": "a9f1a1d6-7cd9-4cb7-9dc5-7be16fd12643"
+    },
+    {
+      "claim_id": "818fed3e-a240-4cef-b15d-38795c99dca3",
+      "result_id": "a9f1a1d6-7cd9-4cb7-9dc5-7be16fd12643"
+    },
+    {
+      "claim_id": "7f821347-7c97-4889-b5cb-c0200b14b42c",
+      "result_id": "a9f1a1d6-7cd9-4cb7-9dc5-7be16fd12643"
+    },
+    {
+      "claim_id": "97774a48-4f7a-4650-965c-f8013e17dcf7",
+      "result_id": "a9f1a1d6-7cd9-4cb7-9dc5-7be16fd12643"
+    },
+    {
+      "claim_id": "bc4e6e8a-6ea2-4856-856b-3285ece8bc78",
+      "result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230"
+    },
+    {
+      "claim_id": "aed4fdab-57ac-4e6d-bf44-24a6adb0526d",
+      "result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230"
+    },
+    {
+      "claim_id": "9530f079-d0e1-4361-b386-528cb380d437",
+      "result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230"
+    },
+    {
+      "claim_id": "eeac3f59-6d71-4ff8-8f09-3eafcf3f13db",
+      "result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230"
+    },
+    {
+      "claim_id": "d540bafc-f5e0-4033-9f9d-c78a43005f23",
+      "result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230"
+    },
+    {
+      "claim_id": "52448b6a-a463-4754-b006-dbea5ada1268",
+      "result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230"
+    },
+    {
+      "claim_id": "84be5a47-5cdf-4f15-b952-8e033dab49c8",
+      "result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230"
+    },
+    {
+      "claim_id": "d1c0791e-b875-4d58-a209-9ad65bb86b08",
+      "result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230"
+    },
+    {
+      "claim_id": "550e454c-1bfc-4cdd-a45c-cba149ee6cee",
+      "result_id": "3cf7576c-0602-44c7-a6c2-ad7659d0d47b"
+    },
+    {
+      "claim_id": "dbc98973-318a-4be5-b142-3257210689e8",
+      "result_id": "3cf7576c-0602-44c7-a6c2-ad7659d0d47b"
+    },
+    {
+      "claim_id": "238f2982-c27b-4818-9ce3-44805e7a100a",
+      "result_id": "3cf7576c-0602-44c7-a6c2-ad7659d0d47b"
+    },
+    {
+      "claim_id": "49909404-454f-4dce-90f8-38eb2d9d1f02",
+      "result_id": "3cf7576c-0602-44c7-a6c2-ad7659d0d47b"
+    },
+    {
+      "claim_id": "073d729d-fa62-4e7f-b1e1-4034d9df28aa",
+      "result_id": "faacf256-666b-456a-9bb9-76ebc2bf09fa"
+    },
+    {
+      "claim_id": "57d0d595-6590-4859-b512-0d74b440a076",
+      "result_id": "faacf256-666b-456a-9bb9-76ebc2bf09fa"
+    },
+    {
+      "claim_id": "62393929-66e3-4474-a5a7-d5e41876f8d7",
+      "result_id": "faacf256-666b-456a-9bb9-76ebc2bf09fa"
+    },
+    {
+      "claim_id": "1387bf34-cb13-45d0-8615-b2374d0e785e",
+      "result_id": "faacf256-666b-456a-9bb9-76ebc2bf09fa"
+    },
+    {
+      "claim_id": "784808ac-c549-4ce9-958a-67cc55337005",
+      "result_id": "e1e71afa-0bf9-4e67-9f90-d0333af8b42a"
+    },
+    {
+      "claim_id": "7b7b7eb8-2651-4bf7-a966-bf13ef4d7cf6",
+      "result_id": "e1e71afa-0bf9-4e67-9f90-d0333af8b42a"
+    },
+    {
+      "claim_id": "31582669-3df7-4361-a501-c7e03e00679a",
+      "result_id": "9b517271-08bb-4b34-974f-d3f3f177239a"
+    },
+    {
+      "claim_id": "8400f83f-662e-4402-bab2-2c11a200ce54",
+      "result_id": "cf97bffa-95b5-4bb9-ac35-84b9c67aaf68"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "0fe27b12-8e5d-49e8-88d1-14d4d42390d5",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870",
+      "peer_result_id": "20f10e41-30a1-4641-9e00-9517cd35a3c8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on phylogenomic claims C2, C13, C23-C37. Both evaluations find the comprehensive presence/absence analysis of RIP kinases and RHIM proteins well-supported. OpenEval and peer reviewers both rate as SUPPORTED with no concerns raised about the bioinformatic methodology or findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "4cc25c69-39bc-4b24-a880-3dbadf0d03b9",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a978cd16-6bae-4b63-9dff-eb8d8d3c8fa3",
+      "peer_result_id": "3cf7576c-0602-44c7-a6c2-ad7659d0d47b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address RIPK1 RHIM dependence claims C54-C57. OpenEval finds these SUPPORTED based on functional data. Peer review rates as UNCERTAIN due to Reviewer 1's concern that experiments in human HEK293 cells may not reflect native function for evolutionarily distant species like lamprey and mussel.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "abfbcfdd-3658-453f-ae31-93e71e9d6a85",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "ed620679-d1ce-4eb4-b9d0-b88af4ba0514",
+      "peer_result_id": "faacf256-666b-456a-9bb9-76ebc2bf09fa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap on ZBP1 and TRIF findings C58-C61. Both evaluations find these SUPPORTED. Peer reviewers note these mechanistic findings about domain requirements are less subject to species-specific interpretation issues despite general concerns about heterologous expression.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "c968f997-359f-44c6-a784-30f8ffc4df7f",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2",
+      "peer_result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address feline RIPK3 and NF-\u03baB activation claims C4, C38-C40, C42-C43, C45. OpenEval finds these SUPPORTED. Peer review rates as UNCERTAIN, with Reviewer 1 noting that while the general role is established, experimental restriction to human HEK293 cells means functionality of distant organisms' proteins may not reflect native context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "485ec189-b451-428f-bd5b-0ec72f40aa98",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f",
+      "peer_result_id": "a9f1a1d6-7cd9-4cb7-9dc5-7be16fd12643",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address RHIM tetrad conservation claims C5, C46-C49. OpenEval finds SUPPORTED based on positive selection analysis and sequence data. Peer review also rates as SUPPORTED, with editor noting 'compelling evidence' and reviewers not challenging the conservation findings despite rapid evolution in surrounding regions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "6ee07fc3-d97b-4d5e-9387-fe4ee3e2ce2b",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "b3ded606-d278-4c56-923d-15cd2ec875ae",
+      "peer_result_id": "2072f0de-10c5-4bcc-b0e8-f2a0416c7661",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address positive selection in RIPK genes, with overlap on C20-C22. OpenEval covers broader set C18-C22 and finds SUPPORTED. Peer review addresses C3, C20-C22 and also finds SUPPORTED, with Reviewer 2 explicitly mentioning positive selection signals as part of the findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "3cef2ad0-7c21-4990-a020-beb1890c471e",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "c8d22009-2904-4aa7-8603-d70fe6570e39",
+      "peer_result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address RHIM variant functional tuning claims C6, C62-C64. OpenEval finds SUPPORTED based on systematic testing of natural variants. Peer review rates as UNCERTAIN due to concerns that effects observed in human cells may not reflect native biology, particularly for distant species.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "f052b0b4-83b5-4c0a-af7f-3fd4cf606bf5",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a812d54b-7b23-4bf0-9a94-10ed46510a95",
+      "peer_result_id": "2072f0de-10c5-4bcc-b0e8-f2a0416c7661",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address positive selection in RIPK genes (C3). OpenEval finds SUPPORTED based on Figure 1B and supplementary files showing lineage-specific patterns. Peer review also finds SUPPORTED, with Reviewer 2 explicitly noting positive selection signals in certain mammalian clades.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "86eddb47-3039-4b83-92d5-20cc7bfbeb4f",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0c6c108d-afe4-4cd5-b43b-83d3824fb46f",
+      "peer_result_id": "d53e68aa-3030-4ff1-9d71-87da05fef230",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on RHIM functional claims C50-C53. OpenEval R4 addresses tetrad conservation and finds SUPPORTED. Peer R6 addresses these claims along with C6, C62-C64 on functional tuning, rating as UNCERTAIN due to heterologous expression concerns for distant species.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "ea78c70b-f9ed-454f-a1fe-cfa752b25c8e",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b3ded606-d278-4c56-923d-15cd2ec875ae",
+      "peer_result_id": "e1e71afa-0bf9-4e67-9f90-d0333af8b42a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on C18-C19 regarding RIPK4 and RIPK5 characterization. OpenEval R1 groups these with other positive selection findings and rates SUPPORTED. Peer R9 addresses these specifically as straightforward functional characterizations in native human system, also rated SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "0e503f97-4c25-4d88-a01e-a824ec2a84f1",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "296e0fea-f7fa-4946-a59b-4f5cae0518b2",
+      "peer_result_id": "6ad6284f-805c-416a-91ff-e4d5e4f77cfc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on cell death claims C41, C44. OpenEval finds SUPPORTED based on experimental data. Peer review rates as UNCERTAIN, applying the same heterologous expression caveat - functional assays in human cells may not reflect native context for distant organisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "524eabdb-ff7c-4d07-8996-828248068628",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "dbea3b3b-80c8-40c2-b3a2-b39ff329e0e7",
+      "peer_result_id": "cf97bffa-95b5-4bb9-ac35-84b9c67aaf68",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address tetrapod-specific emergence of CASP8 and ZBP1 (C67). OpenEval finds SUPPORTED based on phylogenomic evidence in Figure 1C. Peer review also finds SUPPORTED, noting the phylogenetic distribution supports this inference though not explicitly commented on.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "b5948c87-1f1a-4122-a830-933058c497ac",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "dbea3b3b-80c8-40c2-b3a2-b39ff329e0e7",
+      "peer_result_id": "ca1744da-e804-4d6d-9ba3-0cb0dc2c8e73",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap on C7 regarding ancestral NF-\u03baB function. OpenEval finds SUPPORTED based on collective data. Peer R3 addresses C7 along with other functional claims, rating as UNCERTAIN due to heterologous expression concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "ad7f7761-0c08-42c5-890d-1d94bbb9c011",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "8c626bb8-dd09-409a-a971-7b7dbc010870",
+      "peer_result_id": "9b517271-08bb-4b34-974f-d3f3f177239a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap on C33 regarding RIPK2B in monotremes. OpenEval finds phylogenomic claim SUPPORTED as part of comprehensive analysis. Peer review rates as UNCERTAIN, with Reviewer 2 noting this as an important finding not pursued experimentally, creating uncertainty about functional significance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "4d1ed973-2e3e-4969-a2ea-b389d0284061",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "15e2d24c-a669-4701-9815-099bb22675ab",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R9 addresses background claims C1, C8-C17 establishing context from prior literature, rating as SUPPORTED. No corresponding peer review evaluation found for these background/contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    },
+    {
+      "id": "53f67f97-5c4e-4af2-86da-15d4de7efe73",
+      "submission_id": "fb9b6a5f-835e-4f9c-8e0d-6348a2a0ee70",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "c16dbe7c-74c1-4726-9521-bdff1d717609",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R10 addresses background claims C68-C76 from prior literature providing interpretive context, rating as SUPPORTED. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:44:27.404838Z"
+    }
+  ]
+}

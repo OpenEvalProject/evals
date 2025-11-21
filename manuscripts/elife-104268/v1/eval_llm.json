@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The manuscript provides extensive background on Wag31 as a mycobacterial cytoskeletal protein with known roles in cell shape maintenance, polar elongation, and cell division. These claims establish the prior knowledge context for the study, citing that Wag31 is essential, localizes to poles and septum, recruits the ACCase complex, and affects peptidoglycan synthesis when depleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by citations to prior literature (C13-C32, C101-C103) and represent established knowledge in the field. The authors appropriately cite previous work and accurately represent the known functions of Wag31 and related proteins. This background provides necessary context for the novel findings presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C92"
+    ],
+    "result": "Depletion of Wag31 causes cells to transition from rod to round morphology and leads to dramatic accumulation of intracellular lipid inclusions (ILIs). The manuscript reports that ~36% of cells become round, with an intermediate bulged morphology observed, and that 85% of Wag31-depleted cells contain more than 5 ILIs compared to 2-3 in wildtype cells. Cell viability drops by 2 log-fold at 12 hours post-depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 and C92 are well-supported by SEM and TEM imaging data (Figure 1) with quantification. The morphological changes are documented with appropriate microscopy techniques, and the ILI quantification is performed on sufficient cell numbers (250 cells for Msm and \u0394wag31-ATc, 185 for \u0394wag31+ATc). The CFU data provides statistical support for the survival defect with appropriate replication and statistical testing (two-way ANOVA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C104",
+      "C105"
+    ],
+    "result": "Both depletion and overexpression of Wag31 lead to lipid accumulation as detected by BODIPY staining. Wag31 depletion causes the highest BODIPY fluorescence, while overexpression results in bulged cells with 'donut-like' lipid aggregates. The manuscript notes that even wildtype cells contain some ILIs (2-3), suggesting these may be normal cellular structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C104-C105 are supported by BODIPY staining and quantification (Figure 2a-d). The imaging shows clear differences between conditions, and the quantification (Figure 2c,d) includes appropriate statistical analysis. The observation that wildtype cells contain some ILIs (C104-C105) is documented in TEM images, though the functional interpretation (C105) is speculative but reasonably inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Lipidomics analysis reveals that native Wag31 levels are critical for lipid homeostasis. Wag31 depletion causes significant accumulation of unsaturated diacylglycerols (3-5 fold), very long chain phosphatidylethanolamines (5-32 fold), and free fatty acids (1.7-4 fold), while reducing cardiolipins (3-fold). Wag31 overexpression specifically increases alpha-mycolic acids (2-fold) without affecting other lipid classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C42-C46 are well-supported by comprehensive LC-MS lipidomics data (Figure 2e-h, Figure 2\u2014figure supplement 1). The analysis includes six biological replicates with appropriate normalization to internal standards and cell number. The heatmaps and quantification clearly show the differential effects of Wag31 depletion versus overexpression on lipid composition. The methodology is described in sufficient detail for reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Wag31 interactome analysis identifies 116 novel protein partners, predominantly membrane-associated proteins involved in lipid metabolism, cell wall synthesis, and division. The interactome includes known partners (AccA3, AccD5, Rne) as validation, and novel partners MurG, SepIVA, and Msm2092 were validated by pulldown assays. Wag31 interacts more with IMD proteins than PM-CW proteins, suggesting a role in coordinating membrane-localized processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47-C54, C106-C111 are supported by MS/MS analysis of immunoprecipitation samples with biological quadruplets (Figure 3, Figure 3\u2014figure supplement 1-2). The validation of three novel interactors by pulldown (C48) strengthens confidence in the dataset. The localization analysis (C53-C54) appropriately uses published data (Zhu et al., 2021) for classification. However, the mechanistic interpretations (C110-C111) are speculative hypotheses rather than demonstrated facts, though reasonably inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C56",
+      "C94",
+      "C120"
+    ],
+    "result": "Purified Wag31 preferentially binds cardiolipin (CL)-containing liposomes but not phosphatidylglycerol (PG) or phosphatidylethanolamine (PE) liposomes, as demonstrated by PLiMAP assays. The binding reveals SDS-resistant higher-order oligomers of membrane-bound Wag31. The preferential binding to CL over PG indicates the interaction is not solely charge-based.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C55-C56, C94, C120 are well-supported by PLiMAP assays (Figure 4a-b) using purified protein and defined liposome compositions. The fluorescence-based detection clearly shows preferential CL binding and higher-order oligomer formation. The comparison between CL and PG (both anionic lipids) provides strong evidence that binding specificity is not charge-dependent (C120). The experiments are performed with appropriate controls and the methodology is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C98",
+      "C100",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The N-terminal DivIVA-domain of Wag31 is responsible for membrane binding and tethering activity. The K20A point mutation shows marginal binding defect but marked oligomerization defect, while deletion of the entire N-terminal (\u0394N) causes significant defects in both binding and oligomerization. Residual binding of Wag31\u0394N suggests the C-terminus may also contribute to membrane binding, distinguishing Wag31 from B. subtilis DivIVA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C57-C62, C68-C69, C98, C100, C112-C116 are supported by PLiMAP assays with Wag31 mutants (Figure 4c-d, Figure 5e). The differential effects of K20A versus \u0394N mutations provide strong evidence for separable binding and oligomerization functions (C68). The observation of residual binding in Wag31\u0394N (C62, C114) is clearly shown in the data, though the interpretation of C-terminal contribution is inferential. The comparison to B. subtilis DivIVA (C112-C116) appropriately cites prior work and the speculation about functional differences is reasonable but not experimentally tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Wag31 functions as a membrane tether, clustering CL-containing liposomes into bright fluorescent foci. PE liposomes that do not bind Wag31 show no clustering. Wag31\u0394N shows severe tethering defects, while Wag31K20A shows marked tethering defects despite marginal binding defects. The clustering behavior is consistent with the structural model of Wag31 as a long rod-shaped tetramer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67, C117-C119 are well-supported by tethering assays with fluorescent liposomes (Figure 4e-g). The microscopy clearly shows liposome clustering with Wag31 but not with PE liposomes (negative control) or with mutants. The particle intensity analysis (Figure 4g) provides quantification from two independent experiments. The correlation with the structural model (C117-C118) appropriately cites prior work and the inference is reasonable, though the exact mechanism of tethering is not structurally resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C93",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Cardiolipin (CL) localizes to poles and septum in wildtype mycobacteria, as detected by NAO staining. Both depletion and overexpression of Wag31 cause mislocalization of CL - depletion leads to redistribution to cytosol and cell perimeter, while overexpression causes 'donut-like' foci in the cytosol. CL microdomains at poles are known to be important hubs for protein localization and activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75, C93, C95-C97 are supported by NAO staining and line profile analysis (Figure 5a-d). The imaging clearly shows polar localization in wildtype and mislocalization upon Wag31 perturbation. The line profile quantification (N=100 cells) provides rigorous analysis of CL distribution. The interpretation that NAO primarily reports CL localization (C93, C95) is reasonable given NAO's higher affinity for CL (C72, cited) and Wag31's preferential CL binding (C94), though some contribution from other anionic lipids cannot be excluded. The functional importance of CL microdomains (C96-C97) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C76",
+      "C77"
+    ],
+    "result": "The DivIVA-domain-deleted Wag31 mutant (Wag31\u0394N) shows defects in liposome tethering in vitro and non-polar CL localization in vivo, causing lethality. Complementation with wildtype Wag31 or Wag31K20A rescues viability and rod morphology, while Wag31\u0394N fails to rescue, behaving like Wag31 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C76-C77 are supported by multiple complementary experiments: tethering assays (Figure 4f-g), NAO staining (Figure 6c-d), CFU enumeration (Figure 5f), and morphology analysis (Figure 5g). The complementation experiments include appropriate controls and are performed with biological replicates and statistical analysis (two-way RM ANOVA). The data clearly show that Wag31\u0394N cannot rescue the depletion phenotype, establishing the essentiality of the N-terminal domain for cell survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Complementation experiments demonstrate that tethering activity is required for maintaining lipid homeostasis and CL localization. Wildtype Wag31 fully restores lipid levels and CL localization, Wag31K20A partially restores both (attributed to limited tethering activity), while Wag31\u0394N shows elevated lipid levels and mislocalized CL similar to Wag31 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by BODIPY staining (Figure 6a-b) and NAO staining (Figure 6c-d) of complementation strains. The quantification includes N=100 cells with appropriate statistical analysis (one-way ANOVA). The correlation between tethering capacity (from in vitro assays) and phenotypic rescue provides strong evidence for the functional importance of tethering. The interpretation that Wag31K20A's partial rescue is due to limited tethering (C82) is a reasonable inference connecting the in vitro and in vivo data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C99"
+    ],
+    "result": "The C-terminal coiled-coil domain of Wag31 mediates protein-protein interactions. Wag31\u0394C (lacking C-terminus) fails to interact with partner proteins (MurG, SepIVA, Msm2092, AccA3), while Wag31\u0394N (lacking N-terminus) retains all interactions. Together, the N-terminal and C-terminal domains have distinct functions - membrane tethering and protein interactions respectively - that are both crucial for cell shape, lipid homeostasis, and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C84-C89, C99 are supported by His-pulldown experiments with domain deletion mutants (Figure 7). The experiments test multiple interactors with appropriate controls (MmpS5 as non-interactor). The clear differential behavior of Wag31\u0394C versus Wag31\u0394N provides strong evidence for domain-specific functions. The synthesis that both domains are essential for cellular functions (C89) is well-supported by the combination of in vitro biochemical data and in vivo complementation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C90",
+      "C91"
+    ],
+    "result": "The manuscript proposes a model where membrane tethering 'licenses' Wag31 to form scaffolds that orchestrate protein-lipid and protein-protein interactions necessary for mycobacterial growth and survival. The model suggests that loss of tethering causes CL mislocalization, which negatively impacts membrane-localized processes globally, leading to loss of cell shape and viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C90-C91 represent the authors' integrative model synthesizing all experimental findings. While these are interpretive claims rather than direct observations, they are well-supported by the totality of evidence: (1) Wag31 binds and tethers CL membranes, (2) the N-terminal mediates tethering while C-terminal mediates protein interactions, (3) loss of tethering causes CL mislocalization, lipid dysregulation, and lethality, and (4) Wag31 interacts with membrane proteins involved in lipid metabolism and cell wall synthesis. The model provides a coherent mechanistic framework, though some aspects remain to be tested experimentally.",
+    "result_type": "MAJOR"
+  }
+]

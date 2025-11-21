@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A virtual reality (VR) system was developed and validated that presents visual stimuli on an LCD screen at 120 fps with automatic feeders delivering rewards at virtual impact points. The system elicits turn decisions that are statistically indistinguishable from those elicited by real falling objects in all measured aspects including accuracy, latency, and kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C65 collectively demonstrate that the VR system meets all four stated requirements and produces decisions equivalent to real conditions. Statistical comparisons (C59-C63) show no significant differences (p>0.05) between virtual and real conditions across multiple parameters. Critical control experiments (C55-C57) confirm decisions are based solely on screen motion, not feeder positions or other cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "Adult archerfish successfully reprogrammed their highspeed decision to a new non-ballistic rule after training with deflected trajectories. After more than 1750 presentations over 55 days, fish turned toward the new deflected virtual impact points rather than ballistic ones, even when only initial motion was shown and feeders were spatially offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48, C66-C80 provide converging evidence for reprogramming. Training data (C71-C74) show systematic error reduction over time with maintained response characteristics. Critical tests with only initial motion shown and offset feeders (C75-C76) demonstrate the decision was based on the new rule, not visual feedback or feeder positions. Statistical tests confirm turns minimized error to deflected VIPs (p>0.1) but not to ballistic VIPs or feeders (p\u22640.005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "After reprogramming to the deflected rule, fish immediately generalized to untrained conditions including novel height levels, prey sizes, and speed levels without additional training. Turns were accurate from the first presentations at untrained conditions with no improvement trend, ruling out simple lookup table mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C81-C94 demonstrate immediate generalization across multiple untrained dimensions. Statistical analyses (C84-C86, C89, C91-C92) show turns minimized error to appropriate deflected VIPs at novel conditions (p>0.07) but not to predictions based on ballistics or training-height substitution (p<0.001). The absence of learning curves (C83) and maintained response characteristics (C87, C93) support genuine abstraction rather than memorization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The decision circuit can simultaneously operate on two distinct rules, using ballistic predictions for triangular objects and deflected predictions for disk-shaped objects. Individual fish demonstrated this dual-rule capability with equivalent accuracy and response characteristics for both object types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C95-C105 demonstrate simultaneous dual-rule operation. After training with both object types, fish turned to ballistic VIPs for triangles and deflected VIPs for disks (C98-C99, p<0.05). Critical tests with only initial motion shown (C100) confirmed shape-based rule selection. Individual fish analysis (C103-C104) rules out group-level explanations, showing all three top contributors used both rules with equivalent accuracy (p>0.1) and variance (p=0.966).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Shape information needed to select between rules can be extracted during the brief decision phase after motion onset, without requiring prior information. Decisions remained accurate when shape was revealed only at motion onset rather than 2 seconds before.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 show rule selection does not require prior information. When shape was revealed only at motion onset, decisions remained appropriate to the correct VIPs (p>0.4) with error distributions statistically indistinguishable from conditions with 2s prior shape information (p=0.269, C107). This demonstrates rule selection occurs within the <100ms decision window.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C79",
+      "C110",
+      "C115",
+      "C120",
+      "C147"
+    ],
+    "result": "The archerfish highspeed decision lacks a speed-accuracy tradeoff both before and after reprogramming, with decisions made in less than 100ms. This provides a counterexample to the view that highspeed decisions necessarily lack flexibility and rely on simplifying heuristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C79, C110, C115, C120, C147 establish the absence of speed-accuracy tradeoff. Statistical analyses (C79) show no significant correlation between error magnitude and response latency in reprogrammed decisions (p>0.3, R\u00b2<0.005). Combined with demonstrated flexibility (reprogramming, generalization, dual-rule operation), this challenges the prevailing view that highspeed decisions must be inflexible (C3, C22-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Archerfish turn toward virtual ballistic impact points calculated from initial prey motion even when prey does not actually fall, demonstrating the decision circuit maps initial motion parameters to appropriate turn angles based on ballistic trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 establish the baseline ballistic mapping behavior that forms the foundation for the reprogramming experiments. Prior work (Rossel et al., 2002) demonstrated fish turn to calculated virtual impact points when prey slides rather than falls, with consistent findings across lab and wild populations. This provides the critical baseline showing the decision was initially tuned to ballistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The prevailing view in the field is that highspeed decisions that lack speed-accuracy tradeoffs achieve speed through simplifying heuristics that work for common conditions but lack flexibility for variable conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C12, C21-C25 establish the theoretical framework and prevailing view that the study challenges. These claims are supported by multiple citations to established literature (Chittka et al., 2009; Gladwell, 2005; Gigerenzer, 2007; Collett and Land, 1978) and represent the consensus view that motivates the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Multiple examples across species demonstrate rapid decisions without speed-accuracy tradeoffs, including rat odor discrimination (~300ms), archerfish prey interception, human visual categorization (20-40ms), and baseball hitting decisions (~70ms visual processing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 provide empirical examples supporting the existence of rapid decisions without speed-accuracy tradeoffs. Each claim is supported by appropriate citations to peer-reviewed literature. These examples establish that the phenomenon exists across diverse species and sensory modalities, providing context for the archerfish study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Male hoverflies use a hardwired rapid interception strategy based on fixed assumptions about female speed, size, and male acceleration. When challenged with objects deviating from these assumptions, they make predictable errors, exemplifying a fast but inflexible decision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe the hoverfly interception behavior as a canonical example of an inflexible highspeed decision. This is well-supported by citation to Collett and Land (1978) and serves as a useful contrast to the archerfish findings. The hoverfly example illustrates the type of hardwired, inflexible system the authors initially expected to find in archerfish.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Archerfish use predictive C-starts to intercept falling prey, initiating turns in as little as 40ms based on initial prey motion (speed, height, direction). These are among the fastest C-starts known in fish, faster than Olympic sprinter reaction times, and are crucial for outcompeting other surface-feeding fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 establish the biological context and characteristics of archerfish hunting behavior. These claims are well-supported by multiple citations to prior work (Schlegel and Schuster, 2008; Rossel et al., 2002; Schuster, 2023; Rischawy et al., 2015) and provide essential background for understanding the decision system being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The authors initially hypothesized that the archerfish decision circuit might be hardwired to ballistics through genetic or early developmental mechanisms, though initial errors could potentially be corrected during approach trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 present the authors' initial hypotheses that motivated the study. These are clearly labeled as hypotheses/speculation and represent reasonable predictions based on prior observations (C45) showing consistent ballistic responses across all tested fish. The hypotheses provide important context for why the reprogramming results are surprising.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C122"
+    ],
+    "result": "The cognitive aspects demonstrated (generalization, abstraction, dual-rule operation) are not unique to archerfish and have been shown in other species. What is surprising is finding these features in a decision made at reflex-like speed (<100ms) without speed-accuracy tradeoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 provide important context for interpreting the significance of the findings. The authors appropriately acknowledge that individual cognitive features are not novel (supported by citations C117-C119), but emphasize that the combination of these features with reflex-like speed is unexpected. This framing is well-supported and helps clarify the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The assumption that reflex speed implies reduced complexity may be analogous to the now-challenged assumption that smaller brains have reduced cognitive capacity. Evidence from insects and other small-brained animals demonstrates sophisticated cognitive abilities despite minimal neural resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 draw an analogy between brain size and processing speed as potential constraints on cognitive complexity. This analogy is well-supported by extensive citations to literature on insect cognition (Chittka and Niven, 2009; Giurfa, 2013; Roussel et al., 2012) and provides a useful conceptual framework for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Archerfish predictive C-starts share kinematics with escape C-starts and are among the fastest C-starts in fish. The motor circuits are likely restricted to hindbrain circuits organized around the Mauthner neuron, though other hindbrain neurons are needed for precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 provide neurobiological context for the decision system. These claims are well-supported by citations to prior work (W\u00f6hl and Schuster, 2007; Korn and Faber, 2005; Machnik et al., 2018a,b; Hecker et al., 2020) and help explain how a 'functional minibrain' might implement the observed cognitive flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The study analyzed six fish that reached homogeneous performance levels. While individual learning speeds may vary, demonstrating reprogramming in even one fish illustrates the circuit's potential capabilities. The possibility of observational or social learning remains unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 address potential limitations regarding sample size and individual variation. The authors appropriately acknowledge these limitations while defending their approach with a reasonable analogy (C134). The acknowledgment of unexplored possibilities (C137) is appropriately speculative and suggests future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors hypothesize that decision flexibility evolved due to competition with other surface-feeding fish and the need to handle prey of varying sizes that fall with different trajectories due to air resistance. Hardwired ballistic-only responses would produce errors for larger prey requiring time-costly corrections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C146 present ecological hypotheses for why flexibility might have evolved. While the competitive context is supported by citation (C140: Rischawy et al., 2015), the specific evolutionary scenario is explicitly speculative (C146: 'clearly without proof'). The physics of air resistance affecting larger prey (C143) is sound, but direct evidence that wild archerfish encounter prey with systematically different falling patterns is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The findings raise questions about whether highspeed decision flexibility is widespread, what factors drive speed-accuracy tradeoffs in most decisions, and suggest potential technological applications for rapid flexible decision-making systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 appropriately identify future research directions and potential applications arising from the findings. These are clearly framed as open questions and possibilities rather than established conclusions, which is appropriate for a discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Experiments used six adult archerfish in a 1m\u00d71m\u00d70.6m tank with an LCD monitor (120 fps) presenting stimuli with 0.96 Michelson contrast. Ballistic trajectories moved at 1.775 m/s for 243ms; deflected trajectories changed direction by 39.8\u00b0 after 116ms. Only first-responding fish were analyzed to avoid social influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C164 describe methodological details that are clearly stated and internally consistent. The experimental parameters are precisely specified with appropriate units and measurements. The decision to analyze only first responders (C162) is well-justified given the group context requirement (C161).",
+    "result_type": "MINOR"
+  }
+]

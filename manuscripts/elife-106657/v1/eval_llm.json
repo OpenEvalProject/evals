@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C34",
+      "C35",
+      "C50",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "END-seq efficiently captures 5\u2032 chromosome termini as unidirectional C-rich strand reads, with the vast majority (65-78% in human cells, up to 90% in mouse spleen) terminating in the canonical ATC-5\u2032 sequence. This method is unbiased, applicable to telomeres of any length, and shows specificity for telomeres over other repetitive sequences like centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 provide strong experimental evidence from multiple cell lines and species showing consistent C-rich strand bias and ATC-5\u2032 terminal sequences. The control experiment (C50) validates specificity, and the methodological claims (C34-C35, C59-C63) are well-supported by the data presented throughout the manuscript. The consistency across multiple biological replicates and cell types strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C51"
+    ],
+    "result": "T7 exonuclease treatment randomizes the 5\u2032 telomeric termini, disrupting the canonical ATC-5\u2032 sequence bias and validating END-seq's ability to detect terminal sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is directly supported by experimental data (Figure 1F) showing altered distribution after T7 treatment, with KL divergence analysis indicating extreme divergence from untreated samples. The enzymatic properties of T7 (C51) are well-established, and the experimental design appropriately tests the hypothesis that END-seq detects true terminal sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C3",
+      "C39"
+    ],
+    "result": "POT1 depletion in human cells significantly reduces the canonical ATC-5\u2032 terminal sequence, demonstrating POT1's critical role in regulating 5\u2032 end processing in both telomerase-positive and ALT-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C39 are supported by END-seq data from POT1-depleted HeLa and U2OS cells (Figures 1F, 3G), showing consistent reduction in canonical termini. The KL divergence analysis indicates significant changes, and the findings align with previously published work. Multiple shRNA constructs were tested, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C52",
+      "C53"
+    ],
+    "result": "In mouse embryonic stem cells, POT1a depletion dramatically alters 5\u2032 termini (reducing canonical ends from ~70-85% to ~25%), while POT1b depletion has no effect, revealing distinct functional roles for the two POT1 paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are strongly supported by END-seq data from genetically defined mouse ESC lines (Figure 2A-B). The use of CRISPR-engineered cell lines with controlled depletion of POT1a and/or POT1b provides rigorous experimental design. Quantitative KL divergence analysis (C52-C53) supports the conclusions, and findings align with recent literature (Tesmer et al., 2023).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C2",
+      "C36"
+    ],
+    "result": "ALT-positive cells maintain canonical telomeric terminal sequences with the same ATC-5\u2032 bias (44-57% across three cell lines) observed in non-ALT cells, indicating conserved end-processing mechanisms across mammalian cells regardless of telomere maintenance pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by END-seq data from three ALT cell lines (G292, SAOS2, U2OS) across 11 biological replicates (Figure 3A-D). The consistency of C-rich strand bias (82-98%) and canonical terminal sequences across ALT and non-ALT cells provides strong evidence for claims C2 and C36. Multiple replicates strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C4",
+      "C38"
+    ],
+    "result": "POT1 depletion in ALT-positive U2OS cells induces DNA damage response (53BP1 foci) and dramatically alters 5\u2032 termini, demonstrating that terminal 5\u2032 end regulation occurs independently of the telomere elongation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by immunofluorescence data (Figure 3E-F) showing increased 53BP1 foci, consistent with POT1's known role. Claim C24 is supported by END-seq data (Figure 3G) showing altered terminal sequences upon POT1 depletion. The inference that 5\u2032 end regulation is independent of elongation mechanism (C4, C38) is logically sound given the similarity between ALT and non-ALT responses to POT1 depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C45"
+    ],
+    "result": "Variant telomeric repeats (VTRs) occur at similar frequencies (~1.93%) in the terminal portions of ALT and non-ALT cells, but are enriched in internal telomeric regions of ALT cells (3.8% in S1-END-seq vs 1.93% in END-seq).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C45 are supported by quantitative analysis of VTR frequencies in the first 30 nucleotides of END-seq and S1-END-seq reads (Figure 3\u2014figure supplement 1E, Figure 4\u2014figure supplement 1H). The comparison between terminal and internal regions provides insight into VTR distribution, though the biological significance requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C40",
+      "C57",
+      "C58"
+    ],
+    "result": "S1-END-seq reveals that ALT-positive cells contain frequent regions of single-stranded DNA within telomeres, with similar frequencies of G-rich and C-rich reads (C/G ratio 0.4-0.58), while ALT-negative cells show only C-rich reads (C/G ratio 0.98-0.99), providing a diagnostic marker for ALT status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C40 are strongly supported by S1-END-seq data from multiple ALT-positive and ALT-negative cell lines (Figure 4B, Figure 4\u2014figure supplement 1E). The distinct C/G strand ratios provide quantitative evidence for ssDNA presence in ALT cells. Claims C57-C58 regarding diagnostic utility are supported by the clear distinction between cell types, though clinical validation would strengthen this application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C44"
+    ],
+    "result": "The C/G strand ratio in S1-END-seq data distinguishes ALT-negative (0.98-0.99) from ALT-positive (0.4-0.58) cells, with ALT-positive cells estimated to contain a minimum of 3-5 single-stranded DNA regions per chromosome end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 is well-supported by quantitative data. However, the estimates in C30 and C44 (3 vs 5 ssDNA regions) are based on mathematical modeling from C/G ratios, which involves assumptions about the relationship between strand ratios and ssDNA region numbers. The manuscript presents different estimates (C30: minimum of 3; C44: at least 5), creating some uncertainty. The modeling approach is reasonable but would benefit from independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "BLM-deficient U2OS cells show reduced ssDNA levels (C/G ratio 0.7) compared to BLM-proficient cells (C/G ratio 0.55), but TRF1-FokI-induced DSBs restore ssDNA levels in BLM-deficient cells, demonstrating that ssDNA accumulation is tightly linked to active ALT processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by S1-END-seq data (Figure 4D, 4H) and ssTelo FISH (Figure 4E-F). The TRF1-FokI rescue experiment (C32, C48) provides strong evidence that DSBs can induce ssDNA formation. The conclusion that ssDNA is linked to ALT activity (C33, C49) is well-supported. Claims C46-C47 about BLM function are supported by multiple citations, though C47 includes speculation about replication fidelity that is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Cells can be readily classified as ALT-positive or ALT-negative based on S1-cuts within telomeric reads detected by S1-END-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by the clear distinction in S1-END-seq patterns between ALT and non-ALT cells (Figure 4B). The C/G strand ratio provides a quantitative metric for classification. However, the claim of 'readily classified' would be strengthened by testing on a larger panel of cell lines and establishing formal classification thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C54",
+      "C55"
+    ],
+    "result": "The observed single-stranded telomeric DNA in ALT cells may arise from R-loops, D-loops, i-loops, and extrachromosomal C-circles, aligning with previous indirect evidence from RPA staining and native FISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is explicitly speculative ('may arise from'), appropriately qualified by the authors. Claims C43, C54, and C55 accurately cite previous indirect evidence. However, the current study does not directly determine the source of ssDNA, and the authors acknowledge this limitation. The speculation is reasonable given known ALT features, but definitive identification of ssDNA sources requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C37",
+      "C56"
+    ],
+    "result": "Background claims about telomere biology, cancer statistics, and enzymatic activities establish the context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C5-C11, C37, C56) represent well-established knowledge in telomere biology and cancer research, appropriately supported by citations to primary literature and reviews. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

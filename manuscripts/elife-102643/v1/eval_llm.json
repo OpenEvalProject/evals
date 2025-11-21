@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C88",
+      "C89"
+    ],
+    "result": "The study collected GPS tracking data from 146 feral pigs (61 females, 85 males) across 11 populations in Queensland and New South Wales between 2017-2023, yielding 139,940 location fixes. Recording intervals differed between states (30 min for QLD, 1 hr for NSW), with sample sizes varying substantially across populations (n=2 to n=31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C88-C89 provide clear documentation of the dataset characteristics including sample sizes, temporal coverage, and recording intervals. The data collection is straightforward and well-documented, though the unequal sample sizes and different recording intervals across populations represent acknowledged limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "To address potential underestimation of contacts due to coarse temporal resolution (>30 min), the authors applied continuous-time movement models (CTMMs) to interpolate GPS trajectories at 5-minute intervals for both NSW and QLD datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe a methodological approach to improve contact detection, supported by appropriate citations (Yang et al., 2023; Calabrese, 2016). This preprocessing step is critical for the subsequent network analyses and is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Dyads were classified as belonging to the same sounder if home range overlap exceeded 50%, and to different sounders if overlap was below 50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 describe the operational definition for within-sounder vs. between-sounder classification, supported by citation to Gabor et al., 1999. While this threshold is somewhat arbitrary, it is based on prior literature and provides a consistent classification scheme.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Comparison of network structures across spatial thresholds (2m, 5m, 350m) revealed that average local transitivity and edge density increased with larger thresholds, while mean distance showed minimal variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe threshold sensitivity analyses with clear patterns. The finding that network connectivity increases with larger spatial thresholds is expected and validates the methodological approach. The results are supported by visual evidence in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Indirect contact networks (5m threshold, 5-day window) showed slightly higher average local transitivity, edge density, and global transitivity compared to direct contact networks (5m threshold, 5-minute window).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 reports expected differences between direct and indirect networks, with indirect networks allowing more connections due to the extended temporal window. This finding is logical and supported by Figure 3\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Network analysis revealed sex-based differences in node-level measures: males had significantly higher betweenness (1.62\u00d7 greater than females) and were positively associated with betweenness in indirect networks (p<0.05), while females showed significantly higher strength in direct networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 report statistically significant sex differences in network metrics supported by Table 1 and Figure 2-3. The Wilcoxon rank-sum tests are appropriate for comparing these measures. The finding that males have higher betweenness while females have higher strength is biologically plausible given known feral pig social structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Females exhibited higher strength in direct networks due to greater group cohesion within sounders, while males showed higher betweenness in indirect networks, indicating their role in connecting independent groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 provide biological interpretation of the network metrics, supported by appropriate citations (Spencer et al., 2005; Farine and Whitehead, 2015). The interpretations are consistent with the quantitative findings and known feral pig social behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Home range overlap within dyads was greatest during summer, followed by autumn, though this seasonal difference was not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 report a non-significant trend in seasonal home range overlap. The lack of statistical significance is appropriately acknowledged, and the result is supported by Figure 4. This finding contrasts with the significant seasonal effects on contact rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The majority of direct contacts (96%) and indirect contacts (69%) occurred between animals from the same sounder. Most indirect contact observations occurred during winter, with the fewest during summer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 provide descriptive statistics on contact patterns. The high proportion of within-sounder contacts is expected given feral pig social structure. However, C42 appears to contradict later findings about summer having the highest contact rates, suggesting this may refer to raw observation counts rather than rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Direct contact rates were significantly higher within sounders than between sounders (p<0.001) and varied by dyad sex composition. Female-female dyads had 1.4\u00d7 higher contact rates than male-male dyads overall (p<0.001) and 1.56\u00d7 higher within sounders. Between sounders, sex effects were not significant, but contacts were more frequent in summer and winter compared to autumn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 report results from linear mixed-effects models with appropriate statistical tests and p-values. The findings are supported by Table 2 and Figure 5a. The pattern of higher within-sounder contacts and sex-specific differences is biologically plausible and statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "For indirect contacts, male-male and female-male dyads had significantly lower contact rates than female-female dyads (p<0.001). Contact rates were significantly higher in summer compared to autumn (p<0.001), with summer showing the highest frequency between sounders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 report indirect contact patterns with appropriate statistical support from Table 2 and Figure 5b. The seasonal pattern showing summer peaks is consistent across multiple analyses and represents a key finding for disease transmission modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Mean contact rates between sounders were generally lower than within sounders. Within sounders, the highest mean contact occurred between female dyads, with Arcadia (QLD) and Booligal (NSW) populations showing higher contact rates that increased over years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe population-specific patterns supported by Figure 6. The temporal increase in contact rates at specific sites is interesting but may reflect changes in sample size or collar deployment rather than true behavioral changes. This limitation is not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "The predominance of female-female contacts within sounders is explained by sounder composition (mainly adult females, sub-adults, and juveniles) and females' reduced daily travel distances (3.6 km vs. 4.9 km for males). Higher within-sounder contact rates suggest disease could spread rapidly within sounders but more slowly between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C70-C71 integrate findings with biological context supported by multiple citations. The inference about disease spread rates (C71) is logical given the contact rate data, though it remains a prediction rather than directly tested. The explanation for sex differences is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Contact rates varied dynamically across seasons, with summer showing the highest rates. This suggests that virus incursions in summer would have greater impact on feral pig populations and require more resources for outbreak control compared to autumn incursions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 report seasonal dynamics supported by statistical analyses and make reasonable inferences about disease management implications. The comparison to wild boar studies (Yang et al., 2021) provides validation. However, C75-C76 are predictions that would require modeling or empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C80",
+      "C96"
+    ],
+    "result": "The higher betweenness of males suggests they play a crucial role in disease transmission between sounders, indicating that targeting adult males in control programs could help limit disease outbreaks by disrupting inter-group transmission pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C80, C96 make management recommendations based on network metrics. While the betweenness findings are robust, the inference that removing males would effectively limit outbreaks requires additional modeling or empirical validation. The recommendation does not account for potential behavioral compensation by remaining animals (mentioned in C64) or the relative importance of within- vs. between-sounder transmission for different pathogens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study had important limitations including highly variable sample sizes across populations (some with only 2 individuals), and one population (Gebar) located on a small island which may bias network measures due to limited space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 appropriately acknowledge study limitations. The small sample sizes in some populations (e.g., Nap Nap with n=2) severely limit the ability to detect contacts and calculate meaningful network metrics for those sites. The island population represents a potential confound for generalizing findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "This study represents the first analysis of feral pig contact networks and social behavior in Australia, providing novel insights for this geographic region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 asserts the novelty of this work for Australia. Given the citations to prior work being exclusively from the USA and Europe (C14, C23-C26), and explicit statements that such data were unavailable for Australia (C15, C26), this claim of regional novelty appears justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Feral pigs pose significant global threats to biodiversity (54 countries, >600 species imperiled, 14 extinctions) and cause substantial economic damage ($120 billion annually in the US) through agricultural impacts including water quality degradation, ground rooting, predation, and crop consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide background context supported by appropriate citations. However, the $120 billion figure (C2) from Pimental 2007 appears potentially outdated and may warrant verification, as this seems extraordinarily high even for cumulative annual damage across all invasive species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Feral pigs serve as reservoir hosts for multiple diseases of economic and public health significance. In Australia, where diseases like FMD, ASF, and CSF are exotic, potential incursions could cost $50 billion (FMD) to $2.5 billion (ASF). Australian feral pigs also carry zoonotic pathogens including Brucella suis, Leptospira interrogans, Coxiella burnetii, and Japanese encephalitis virus, maintaining significant spillover threats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 establish the disease risk context with appropriate citations. The economic estimates (C8-C9) provide strong motivation for the study. The zoonotic pathogen list (C10) is well-documented with multiple citations. The inference about persistent threats (C11) is reasonable given the documented pathogen presence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Australia has developed the AADIS model for ASF and FMD, but its performance depends on accurate feral pig contact rate parameters. Current AADIS parameters are derived from European studies, with Australian-specific contact rate data remaining unavailable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 establish the knowledge gap this study addresses. The reliance on European data for Australian disease models (C14) represents a clear limitation that justifies the current work. This provides strong motivation for obtaining Australia-specific contact rate estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Estimating disease spread requires knowledge of contact rates, which are affected by social structure and spatial distribution. Continuous-time movement modeling (CTMM) improves contact detection by accounting for spatial autocorrelation. Understanding animal movement is critical for disease transmission modeling, but contact rate data for feral pigs remain limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide theoretical and methodological background supported by appropriate citations. The epidemiological framework (C16) and importance of movement data (C19) are well-established. The gap in feral pig contact rate knowledge (C20) motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Previous studies in Poland, USA, Germany, and Italy have characterized feral pig/wild boar social structure and contact rates, finding sex-dependent associations, solitary dominant males, female-dominated sounders, and distance-dependent contact rates (reduced beyond 2-4 km). However, such analyses have not been conducted for Australian feral pigs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 review relevant prior work with appropriate citations, establishing both what is known from other regions and the gap for Australia (C26). This effectively contextualizes the current study and provides comparison points for the Australian data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Direct contact (physical contact between infected and susceptible pigs) is the primary transmission route for diseases like ASF and FMD, though indirect transmission can occur as ASF remains viable for up to 5 days at 25\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 provide disease transmission context. The viability data for ASF (C67) is appropriately cited and justifies the 5-day window used for indirect contact definition. This establishes the biological relevance of the contact metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C73"
+    ],
+    "result": "The current study's findings differ from some prior work: a US study found no sex effect on contact rates, while the current study found significant sex effects. However, the finding of distance-dependent contact rates between sounders aligns with European studies, though sex effects on between-sounder associations differ from European findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C72-C73 appropriately compare current findings to prior literature, noting both consistencies and discrepancies. These comparisons are valuable for contextualizing the results, though the reasons for geographic differences remain unclear and could reflect true biological variation or methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Intensive population control can alter spatial behavior of surviving animals, potentially increasing transmission risk. Previous research on four of the study populations found home range was not affected by season.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide relevant context from prior work. C64 raises an important caveat about management interventions potentially backfiring (Ham et al., 2019). C65 references prior work on the same populations (Wilson et al., 2023a), providing continuity with previous research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The research was conducted under appropriate ethical approvals from NSW Department of Primary Industries (ORA 21-24-003) and University of New England Animal Ethics Committee (AEC 16-115, AEC 20-023, AEC 22-056).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 document ethical approvals. This is standard reporting and indicates the research was conducted with appropriate oversight.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2238 @@
+{
+  "submission": {
+    "id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:15:33.268680Z",
+    "updated_at": "2025-11-21T17:15:33.268680Z"
+  },
+  "content": [
+    {
+      "id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "content_type": "manuscript",
+      "content_text": "# The triad interaction of ULK1, ATG13, and FIP200 is required for ULK complex formation and autophagy\n\n## Authors\n\n- Yutaro Hama<sup>1</sup> ([ORCID: 0000-0002-7190-4547](https://orcid.org/0000-0002-7190-4547))\n- Yuko Fujioka<sup>1</sup> ([ORCID: 0000-0002-6905-0669](https://orcid.org/0000-0002-6905-0669))\n- Hayashi Yamamoto<sup>3</sup> ([ORCID: 0000-0002-2831-1463](https://orcid.org/0000-0002-2831-1463))\n- Noboru Mizushima<sup>3</sup> ([ORCID: 0000-0002-6258-6444](https://orcid.org/0000-0002-6258-6444))\n- Nobuo Noda<sup>1</sup> ([ORCID: 0000-0002-6940-8069](https://orcid.org/0000-0002-6940-8069)) \u2020\n\n### Affiliations\n\n1. Institute for Genetic Medicine, Hokkaido University Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))\n2. Institute of Microbial Chemistry Tokyo Japan\n3. Department of Biochemistry and Molecular Biology, Graduate School of Medicine, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n4. Department of Molecular Oncology, Nippon Medical School, Institute for Advanced Medical Sciences Tokyo Japan ([ROR:00krab219](https://ror.org/00krab219))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn mammals, autophagosome formation, a central event in autophagy, is initiated by the ULK complex comprising ULK1/2, FIP200, ATG13, and ATG101. However, the structural basis and mechanism underlying the ULK complex assembly have yet to be fully clarified. Here, we predicted the core interactions organizing the ULK complex using AlphaFold, which proposed that the intrinsically disordered region of ATG13 engages the bases of the two UBL domains in the FIP200 dimer via two phenylalanines and also binds the tandem microtubule-interacting and transport domain of ULK1, thereby yielding the 1:1:2 stoichiometry of the ULK1\u2013ATG13\u2013FIP200 complex. We validated the predicted interactions by point mutations and demonstrated direct triad interactions among ULK1, ATG13, and FIP200 in vitro and in cells, wherein each interaction was additively important for autophagic flux. These results indicate that the ULK1\u2013ATG13\u2013FIP200 triadic interaction is crucial for autophagosome formation and provides a structural basis and insights into the regulation mechanism of autophagy initiation in mammals.\n\n## Introduction\n\nMacroautophagy (hereafter autophagy) is an intracellular degradation system delivering cytoplasmic components to the lysosome via autophagosomes (Mizushima and Komatsu, 2011). Autophagy contributes to intracellular quality control by degrading defective proteins and organelles, such as polyubiquitinated proteins and damaged mitochondria. Alternatively, autophagy is induced by starvation as an adaptation mechanism. These physiological roles of autophagy are associated with various diseases, including cancer and neurodegenerative disorders (Mizushima and Levine, 2020). Therefore, understanding and controlling autophagy in clinical contexts is essential.\n\nAutophagosome formation is performed by the evolutionarily conserved autophagy-related (ATG) proteins, which form several functional units to act directly on autophagosome formation (Nakatogawa, 2020). Among them, the Atg1/ULK complex is critical in initiating autophagosome formation by organizing the formation site where all the functional units, such as ATG9 vesicles and ATG8 conjugation system, colocalize (Hama et al., 2023; Kannangara et al., 2021; Kishi-Itakura et al., 2014; Ren et al., 2023; Suzuki et al., 2001; Yamamoto et al., 2012; Zhou et al., 2021). In mammals, the ULK complex includes ULK1/2, ATG13, ATG101, and RB1CC1/FIP200 (Mizushima, 2010; Wong et al., 2013). Structural and functional analysis has made considerable progress in the yeast counterpart, the Atg1 complex, whose core comprises Atg1 (ULK1/2 homolog), Atg13, and Atg17 (remote homolog of FIP200) (Fujioka et al., 2014; Li et al., 2014 Lin and Hurley, 2016; Noda, 2024; Ragusa et al., 2012). Crystallographic analyses have unveiled the detailed interaction mode of Atg13 with Atg1 and Atg17 and the mechanism of the Atg1 complex organization (Fujioka et al., 2014). Moreover, structure-based in vitro and in vivo functional analyses have revealed that the Atg1 complex undergoes liquid\u2013liquid phase separation to organize the autophagosome formation site on the vacuolar membrane to initiate autophagy (Fujioka et al., 2020). However, structural and functional analyses of the mammalian ULK complex lag behind that of the yeast Atg1 complex, and structural information on the interactions comprising the core of the ULK complex has long been limited to low-resolution electron microscopy (EM) data (Shi et al., 2020). A recent preprint reported the cryo-EM structures of the human ULK1 core complex and the supercomplex between the ULK1 core complex and the class III phosphatidylinositol 3-kinase complex 1 at 4.2\u20136.84 \u00c5 resolution, which discovered the unprecedented interaction between these two critical complexes working at autophagy initiation (Chen et al., 2023). Moreover, the local resolution of 3.35 \u00c5 enabled them to resolve the ULK1-mediated interactions in the ULK1 core complex. However, not all of the interactions that construct the ULK1 core complex have been perfectly resolved. Recently, calcium transients on the endoplasmic reticulum surface were proposed to trigger the liquid\u2013liquid phase separation of FIP200 to organize the autophagosome formation site, thereby initiating autophagy (Zheng et al., 2022). However, the lack of structural information makes elucidating the molecular mechanisms underlying these events challenging.\n\nThis study predicted the structure of the ULK1\u2013ATG13\u2013FIP200 complex using the AlphaFold2 multimer (Evans et al., 2021), which unveiled the detailed interactions between ATG13 and FIP200, ATG13 and ULK1, and ULK1 and FIP200. In vitro and in vivo mutational analysis confirmed all the predicted interactions, which were demonstrated to be important for autophagy. Furthermore, we found that the FIP200\u2013ATG13 and ULK1\u2013ATG13 interactions partially complement each other for autophagy initiation. These findings establish the mechanism of ULK complex formation and provide a structural basis for understanding the ULK complex phase separation and regulation mechanism of autophagy in the mammalian context.\n\n## Results\n\n### Structural prediction of the ULK1\u2013ATG13\u2013FIP200 complex identifies FIP200-interacting residues in ATG13\n\nPrevious studies reported that the C-terminal region of ULK1 and the C-terminal intrinsically disordered region of ATG13 bind to the N-terminal region of the FIP200 homodimer and that the stoichiometry of the ULK1\u2013ATG13\u2013FIP200 complex is 1:1:2 (Alers et al., 2011; Ganley et al., 2009; Hieke et al., 2015; Hosokawa et al., 2009; Jung et al., 2009; Papinski and Kraft, 2016; Shi et al., 2020; Wallot-Hieke et al., 2018). However, the structural details underlying the ULK complex assembly, particularly the role of the intrinsically disordered region of ATG13, remain elusive. To understand the mechanism of the ULK complex formation, we predicted the structure of the FIP200 [1\u2013634 amino acids (aa)] dimer complexed with ATG13 (isoform c, 363\u2013517 aa) and ULK1 (801\u20131050 aa) (underlined regions in Figure 1A) by AlphaFold2 with the AlphaFold-Multimer option, during which the appropriateness of the regions chosen for our predictions as interaction interfaces was further corroborated by AlphaFold2 models of full-length ATG13 with full-length ULK1 and of full-length ATG13 with the FIP200 (residues 1\u2013634) dimer (Figure 1\u2014figure supplement 1). Figure 1B depicts the predicted overall structure of the ULK1\u2013ATG13\u2013FIP200 complex, with flexible FIP200 loop regions that received low pLDDT scores omitted for clarity. The overall structure is consistent with the low-resolution cryo-EM model reported previously (Shi et al., 2020), including the C-shape of the FIP200 dimer and the binding of one molecule each of ATG13 and ULK1 to the FIP200 dimer, resulting in the 1:1:2 stoichiometry of the ULK1\u2013ATG13\u2013FIP200 complex. The two FIP200 molecules are named FIP200A and FIP200B, where FIP200A is the one close to ULK1. Extensive interactions were predicted between the four molecules, with a buried surface area of 3658 \u00c52 for FIP200A\u2013FIP200B, 2195 \u00c52 for FIP200A\u2013ATG13, 1966 \u00c52 for FIP200B\u2013ATG13, 2140 \u00c52 for ATG13\u2013ULK1, and 1681 \u00c52 for FIP200A\u2013ULK1. No interaction was observed between FIP200B and ULK1. One ATG13 molecule binds to the FIP200 dimer through the interaction of residues 365\u2013398 and 394\u2013482 with FIP200B and FIP200A, respectively, resulting in a 1:2 stoichiometry of the ATG13\u2013FIP200 complex.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig1-v1.jpg)\n\n**Figure 1.:** (A) Domain architecture of ULK1, ATG13, and FIP200. Regions used for the AlphaFold2 complex prediction are underlined. (B) Structure of the ULK1\u2013ATG13\u2013FIP200 core complex predicted by AlphaFold2. Flexible loop regions in FIP200 were removed from the figure for clarity. N and C indicate N- and C-terminal regions, respectively. (C) Close-up view of the interactions between ATG13 and FIP200. The bottom panels represent the surface model of FIP200 with the coloring based on the electrostatic potentials (blue and red indicate positive and negative potentials, respectively). (D) Isothermal titration calorimetry (ITC) results obtained by titration of MBP-ATG13 (363\u2013517 aa) WT or FIP3A mutant into an FIP200 (1\u2013634 aa) solution. (E) Effect of the ATG13 FIP3A mutation on the FIP200 interaction in vivo. ATG13 KO HeLa cells stably expressing FLAG-tagged ATG13 WT or FIP3A were immunoprecipitated with an anti-FLAG antibody and detected with anti-FIP200, anti-ULK1, and anti-FLAG antibodies. (F) Relative amounts of precipitated FIP200 in (E) were calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey\u2019s multiple comparisons test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) AlphaFold2 model of the full-length ULK1\u2013ATG13 complex. (B) AlphaFold2 model of the full-length ATG13 complexed with the homodimer of FIP200 (1\u2013634). (C) Predicted aligned error (PAE) plot of (A) (left), (B) (middle), and (D) (right). (D) Structure of the ULK1\u2013ATG13\u2013FIP200 core complex with flexible loops. (E) The structure in (D), color-coded by pLDDT values. (F) Cryo-EM structures of the ULK1\u2013ATG13\u2013FIP200 core complex.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** SDS\u2013PAGE of recombinant proteins used for isothermal titration calorimetry (ITC) and in vitro pull-down experiments. Protein bands were stained with Coomassie Brilliant Blue.\n\nWe compared our AlphaFold2 prediction model with the cryo-EM structures reported as a preprint recently (Chen et al., 2023). For the ULK1\u2013ATG13\u2013FIP200 complex, PDB entries 8SOI, 8SRM, and 8SQZ have global resolutions of 4.2, 4.46, and 5.85 \u00c5, respectively, and employ different ATG13 segments (residues 462\u2013517, 450\u2013517, and 363\u2013517) (Figure 1\u2014figure supplement 1F). Despite these differences, all three cryo-EM models contain only the MIM region of ATG13 (residues 462\u2013517). The ULK1 and FIP200 regions used also vary slightly, but are essentially the same as those we used for our AlphaFold2 calculations. In every structure, FIP200 forms a C-shaped dimer whose overall architecture resembles our AlphaFold2 model. While the C-shape opening angle differs among the structures, this variation is consistent with reports that FIP200 can adopt multiple conformations (Shi et al., 2020). The mode of ULK1 binding to FIP200 is likewise fundamentally conserved (a detailed comparison is given below). The main difference among the three structures is their stoichiometry: ULK1:ATG13:FIP200 is 1:1:2 in 8SOI, whereas it is 2:2:2 in the other two entries. In our AlphaFold2 model, ATG13 residues 365\u2013390 bind one FIP200 protomer, and residues 442\u2013472 bind the equivalent region of the second protomer, accounting for an ATG13:FIP200 stoichiometry of 1:2. Consequently, a 2:2 stoichiometry is not inconsistent when only the MIM segment of ATG13 is present. Conversely, PDB 8SQZ uses the same ATG13 segment (residues 363\u2013517) as our AlphaFold2 calculations yet displays an ATG13:FIP200 stoichiometry of 2:2. Because this stoichiometry is observed only after the complex has been mixed with PI3KC3-C1 (Chen et al., 2023), some additional regulatory mechanism by PI3KC1-C1 is presumably involved, although its details remain unclear.\n\nPrevious studies using hydrogen\u2013deuterium exchange coupled to mass spectrometry identified three regions (M1\u2013M3) in ATG13 responsible for FIP200 binding (Shi et al., 2020). Among these sites, the side chain of Phe377 in M1 and Phe453 in M3 was deeply inserted into the hydrophobic pockets formed at the base of UBL domains (Figure 1C). Direct interaction between FIP200 (1\u2013634) and Atg13 (363\u2013517) was confirmed by isothermal titration calorimetry (ITC) with a KD value of 6.6 \u03bcM, which was severely attenuated by alanine substitution at these three phenylalanine sites (F377A, F394A, F453A; FIP3A) (Figure 1D, Figure 1\u2014figure supplement 2). Furthermore, the ATG13FIP3A mutant expressed in ATG13 KO cells displayed a significantly reduced coprecipitation rate of the endogenous FIP200 (Figure 1E, F). These results confirm that ATG13 and FIP200 interact with each other via the residues predicted by AlphaFold2 in vitro and in vivo.\n\n### ULK1 and ATG13 interact via MIT\u2013MIM interaction similar to yeast Atg1\u2013Atg13\n\nNext, we focused on the interaction between ULK1 and ATG13. We previously determined the crystal structure of the yeast Atg1\u2013Atg13 complex, which revealed that the tandem microtubule-interacting and transport (MIT) domains in Atg1 bind to the tandem MIT-interacting motifs (MIMs) of ATG13 (Figure 2A, right; Fujioka et al., 2014). The predicted structure of the ULK1\u2013ATG13 complex (Figure 2A, left) was quite similar to that of the yeast Atg1\u2013Atg13 complex and to the cryo-EM structures of the ULK1\u2013ATG13 portion of the ULK1 core complex (Figure 2A, middle). The assembly is stabilized by two sets of the ULK1MIT1\u2013ATG13MIM(C) and ULK1MIT2\u2013ATG13MIM(N) interactions (Figure 2A). Phe470 of ATG13MIM(N) and Phe512 of ATG13MIM(C) were inserted into the hydrophobic pocket of ULK1MIT2 and ULK1MIT1, respectively (Figure 2B). Direct interaction between ULK1 (636\u20131050) and Atg13 (363\u2013517) was confirmed by ITC with a KD value of 0.34 \u03bcM, which was severely attenuated by alanine substitution at these two phenylalanine sites (F470A, F512A; ULK2A) (Figure 2C, Figure 1\u2014figure supplement 2). In ATG13 KO cells, the ULK1 expression level was significantly reduced, suggesting that the lack of ATG13 severely destabilized ULK1. This mirrors the ATG13-mediated stabilization of ATG101, another component of the ULK complex (Suzuki et al., 2015). The exogenous expression of ATG13WT, but not of the ATG13ULK2A mutant, rescued the endogenous ULK1 expression (Figure 2D, E), indicating that the ULK2A mutation in ATG13 attenuates the ATG13\u2013ULK1 interaction in vivo. These observations confirm that, like the yeast Atg1\u2013Atg13 interaction, the ULK1\u2013ATG13 interaction is mediated by MIT\u2013MIM contacts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig2-v1.jpg)\n\n**Figure 2.:** (A) AlphaFold2 model of the ULK1\u2013ATG13 moiety of the ULK1\u2013ATG13\u2013FIP200 core complex in Figure 1B (left), Cryo-EM structure of the ULK1\u2013ATG13 moiety of the ULK1\u2013ATG13\u2013FIP200 core complex (PDB 8SOI), and crystal structure of the yeast Atg1\u2013Atg13 complex (right, PDB 4P1N). (B) Close-up view of the interactions between ATG13MIM(N) and ULK1MIT2 and between ATG13MIM(C) and ULK1MIT1 (right). (C) Isothermal titration calorimetry (ITC) results obtained by titration of MBP-ULK1 (636\u20131050 aa) into a solution of WT or ULK2A mutant of MBP-ATG13 (363\u2013517 aa). Due to weak binding, the KD value for the ULK2A mutant was not accurately determined. (D) Effect of the ATG13\u2013FIP3A mutation on endogenous ULK1 levels in vivo. WT or ATG13 KO HeLa cells stably expressing FLAG-tagged ATG13 WT or ULK2A mutant were lysed, and indicated proteins were detected by immunoblotting using anti-FIP200, anti-ULK1, and anti-FLAG antibodies. (E) Relative amounts of ULK1 in (D) were normalized with \u03b2-actin and calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey\u2019s multiple comparisons test.\n\n### Direct interaction between ULK1 and FIP200 is essential for autophagy\n\nAlthough AlphaFold2 predicted the direct interaction between ULK1 and FIP200 over a reasonably large contact area (1681 \u00c52) and similar interaction was observed in cryo-EM structures (Figure 3A, B; Chen et al., 2023), a previous study reported that ULK1 required ATG13\u2013ATG101 for FIP200 binding in vitro (Shi et al., 2020). ULK1MIT1 and ULK1MIT2 interact directly with FIP200, with the Leu967 of ULK1MIT1 and Phe997 of ULK1MIT2 inserted on the hydrophobic groove of FIP200 (Figure 3A, B). Although we failed to measure the affinity between ULK1 and FIP200 by ITC due to aggregation upon their mixing, an in vitro pull-down assay indicated that ULK1 directly interacted with FIP200, which was significantly attenuated by the FIP2A (L967A, F997A) mutation (Figure 3C, D). Consistently, the ULK1FIP2A mutant lost the interaction with FIP200 while partially retaining the interaction with ATG13 in cells (Figure 3E, F). We confirmed that the ULK1FIP2A mutant retains substantial affinity with ATG13 in vitro by ITC (Figure 3\u2014figure supplement 1). These results confirm the direct ULK1\u2013FIP200 interaction in vitro and in vivo. Our results establish the mode of the three independent interactions within the ULK complex, ATG13\u2013FIP200, ATG13\u2013ULK1, and ULK1\u2013FIP200, operating both in vitro and in vivo.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig3-v1.jpg)\n\n**Figure 3.:** (A) Structure of the ULK1\u2013FIP200 moiety of the ULK1\u2013ATG13\u2013FIP200 core complex in Figure 1B. The right panel represents the surface model of FIP200 with coloring based on the electrostatic potentials (blue and red indicate positive and negative potentials, respectively). Dotted squares indicate the regions displayed in (B). (B) Close-up view of the interactions between ULK1MIT1 and FIP200 (top) and between ULK1MIT2 and FIP200 (bottom). Left and right indicate AlphaFold2 and cryo-EM (PDB 8SOI) models. (C) In vitro pull-down assay between GST-ULK1 (636\u20131050 aa) WT or FIP2A mutant with MBP-FIP200 (1\u2013634 aa). (D) Relative amounts of precipitated MBP-FIP200 in (C) were calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey\u2019s multiple comparisons test. (E) Effect of the ULK1 FIP2A mutation on the FIP200 interaction in vivo. Ulk1,2 DKO mouse embryonic fibroblasts (MEFs) stably expressing FLAG-tagged ULK1 WT or FIP2A mutant were immunoprecipitated with an anti-FLAG antibody and detected with anti-FIP200, anti-ATG13, and anti-FLAG antibodies. (F) Relative amounts of precipitated FIP200 (left) and ATG13 (right) in (E) were calculated. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey\u2019s multiple comparisons test. (G) Halo-LC3 processing assay of ULK1 FIP2A-expressing cells. Ulk1,2 DKO MEFs stably expressing Halo-LC3 and FLAG-tagged ULK1 WT or FIP2A mutant were labeled for 15 min with 100 nm tetramethylrhodamine (TMR)-conjugated Halo ligand and incubated in starvation medium for 1 hr. Cell lysates were subjected to in-gel fluorescence detection. (H) Halo processing rate in (G). The band intensity of processed Halo and Halo-LC3 in each cell line was quantified, and the relative cleavage rate was calculated as FLAG-ULK1 WT-expressing cells as 1. Solid bars indicate the means, and dots indicate the data from three independent experiments. Data were statistically analyzed using Tukey\u2019s multiple comparisons test. (I) Colocalization of FLAG-ULK1 WT or FIP2A mutant with FIP200. Ulk1,2 DKO MEFs stably expressing FLAG-tagged ULK1 WT or FIP2A mutant were immunostained with anti-FLAG and anti-FIP200 antibodies. Scale bar, 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** ITC results obtained by titration of MBP-ULK1 (636\u20131050 aa) FIP2A mutant into a solution of WT MBP-ATG13 (363\u2013517 aa). Although the KD value for the ULK2A mutant was not determined precisely; these data indicate that the mutant retains substantial affinity for ATG13.\n\nTo investigate the physiological importance of the ULK1\u2013FIP200 interaction, we assessed autophagy flux using the Halo-LC3 processing assay (Rudinskiy et al., 2022; Yim et al., 2022). Ulk1,2 DKO mouse embryonic fibroblasts (MEFs) expressing FLAG-tagged wild-type ULK1 produce a stronger band of cleaved Halo than cells which do not express ULK1. The intensity of this cleaved Halo band corresponds to the amount of Halo-LC3 delivered to lysosomes in an autophagy-dependent manner. Ulk1,2 DKO MEFs expressing the ULK1FIP2A mutant had partially but significantly reduced processed Halo bands upon starvation compared to ULK1WT-expressing cells, confirming that the direct ULK1\u2013FIP200 interaction is crucial, although partially, for autophagy activity (Figure 3G, H). This partial phenotype would be due to an indirect interaction between ULK1 and FIP200 via ATG13, which was supported by the observation that the ULK1FIP2A mutant colocalized with FIP200 in cells, although less efficiently than ULK1WT (Figure 3I).\n\n### Triadic ULK1\u2013ATG13\u2013FIP200 interactions are critical for autophagic flux\n\nWe compared the autophagic flux of impaired ATG13\u2013ULK1 and ATG13\u2013FIP200 interactions to confirm the hypothesis that indirect triadic complexes are functional for autophagy. We generated knock-in (KI) cell lines that included ATG13FIP3A, ATG13ULK2A, and ATG13FU5A (F377A, F394A, F453A, F470A, F512A; FU5A) followed by a 3xFLAG-tag in the genomic ATG13 locus of HeLa cells (Figure 4A, B). Since overexpressed ATG13-FLAG is more than 20-fold higher than its endogenous level, the mutation significance can be evaluated at more physiological expression levels using the KI cell lines (Figure 4\u2014figure supplement 1A, B). The ATG13FIP3A and ATG13ULK2A KI cells displayed partial colocalization with FIP200, whereas the ATG13FU5A KI cells displayed scarce colocalization with FIP200 (Figure 4C). Next, we expressed Halo-LC3 in these KI cells and performed a Halo processing assay. Cleaved Halo was partially reduced in ATG13FIP3A and ATG13ULK2A KI cells compared to ATG13WT cells. In contrast, cleaved Halo in ATG13FU5A KI cells was almost equivalent to that in the knockout cells (Figure 4D, E). Note that ATG13WT KI cells show a ~25% reduction in cleaved Halo compared to WT HeLa cells, suggesting that FLAG-tag KI only partially affects autophagic flux. These results suggest that ATG13\u2013ULK1 and ATG13\u2013FIP200 bindings complement each other in autophagy function and that ULK1, ATG13, and FIP200 directly bind to each other to organize the robust ULK complex.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic representation of the CRISPR\u2013Cas9-mediated KI strategy of ATG13 mutations with FLAG tag. The C-terminally FLAG-tagged coding sequence after exon 14 of ATG13 with or without FIP3A, ULK2A, or FU5A mutations were knocked in exon 14 of the Homo sapiens ATG13 locus. As the KI cassette expresses NeoR under the hPGK1 promoter, clones that were successfully knocked in were selected by G418. Cas9-gRNA-targeted sites in the exon 14 of H. sapiens ATG13 locus are displayed in dark blue. The homology arm for KI is presented in magenta, and the ATG13 CDS and mutations in red and cyan, respectively. NeoR is displayed in brown. Scale bar, 0.5 kilobase pair (kb). (B) Immunoblot of ATG13-FLAG KI cell lines. WT, ATG13 KO, and indicated KI HeLa cells were lysed, and indicated proteins were detected by immunoblotting using anti-FIP200, anti-ULK1, and anti-FLAG antibodies. (C) Colocalization of endogenous levels of ATG13-FLAG mutants with FIP200. Indicated KI cell lines were cultured in the starvation medium for 1 hr and immunostained with anti-FLAG and anti-FIP200 antibodies. Scale bar, 10 \u03bcm. (D) Halo-LC3 processing assay of ATG13-FLAG KI cell lines. WT, ATG13 KO and KI HeLa cell lines were labeled for 15 min with 100 nm tetramethylrhodamine (TMR)-conjugated Halo ligand and incubated in starvation medium for 1 hr. Cell lysates were subjected to in-gel fluorescence detection. (E) Halo processing rate in (D). The band intensity of processed Halo and Halo-LC3 in each cell line was quantified, and the relative cleavage rate was calculated as WT HeLa cells as 1. Solid bars indicate the means, and dots indicate the data from three independent experiments. Data were statistically analyzed using Tukey\u2019s multiple comparisons test. (F) Schematic depiction of the difference between the mammalian ULK complex and the yeast Atg1 complex. Mammalian ATG13 binds to two FIP200s within the same FIP200 dimer, contributing to the stability of one ULK complex. Conversely, budding yeast Atg13 binds to two Atg17s within a different Atg17 dimer, allowing for endlessly repeated Atg13\u2013Atg17 interactions. ATG101 in the ULK complex and Atg31-29 in the Atg1 complex are omitted for simplicity. ATG13/Atg13 is shown in yellow, ULK1/Atg1 in magenta, and FIP200/Atg17 in green. Black lines represent interactions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101531/elife-101531-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Comparison of ATG13 expression level. WT, ATG13 KO stably expressing ATG13-FLAG, and ATG13-FLAG KI HeLa cells were lysed, and indicated proteins were detected by immunoblotting using anti-ATG13, anti-FIP200, anti-ULK1, and anti-\u03b2-actin antibodies. (B) Relative amounts of ATG13 in (A) were calculated as WT HeLa cells as 1. Solid bars indicate the means, and dots indicate the data from three independent experiments. Differences were statistically analyzed using Tukey\u2019s multiple comparisons test. (C) Colocalization of ATG9A and FIP200 in ATG13-FLAG KI cells. Indicated KI cell lines expressing ATG9A-HA were cultured in the starvation medium for 1 hr and immunostained with anti-FLAG, anti-FIP200, and anti-p62 antibodies. Scale bar, 10 \u03bcm. (D) ULK1-dependent phosphorylation of ATG14 in ATG13-FLAG KI cell lines. WT, ATG13 KO and KI HeLa cell lines cultured in the starvation medium for 1 hr. Indicated proteins were detected by immunoblotting using anti-ATG14 phospho-S29, anti-ATG14, and anti-\u03b2-actin antibodies. (E) ATG14 phosphorylation rate in (D). The band intensity of p-ATG14 and ATG14 in each cell line was quantified, and the phosphorylation rate was calculated as WT HeLa cells as 1. Solid bars indicate the means, and dots indicate the data from three independent experiments. Data were statistically analyzed using Tukey\u2019 s multiple comparisons test.\n\nFinally, we investigated how disrupting the ULK complex leads to impaired autophagy. One well-established function of the ULK complex is to recruit ATG9 vesicles (Ren et al., 2023). These vesicles serve as an upstream platform for the PI3KC3-C1, providing the substrate for phosphoinositide generation (Holzer et al., 2024). To clarify how our mutations impact this step, we starved ATG13 mutant KI cells and observed ATG9A localization. Unexpectedly, even in ATG13FU5A KI cells, where ATG13 is almost completely dissociated from the ULK complex, ATG9A still colocalized with FIP200 (Figure 4\u2014figure supplement 1C). Since these puncta also overlapped with p62, it is likely that p62 bodies recruit both FIP200 and ATG9 vesicles (Hama et al., 2023). Therefore, it is apparently difficult to assess the autophagosome formation-associated recruitment of the ATG9 vesicles using the present KI cell lines. Another key function of the ULK complex is the ULK1-dependent phosphorylation of ATGs, and phosphorylation of ATG14 at Ser29 is known to be particularly critical (Park et al., 2016; Wold et al., 2016). In ATG13FIP3A and ATG13FU5A KI cells, ATG14 phosphorylation was significantly reduced, indicating decreased ULK1 activity (Figure 4\u2014figure supplement 1D, E). Notably, in ATG13 KO cells, ATG14 phosphorylation became almost undetectable, though the underlying mechanism remains to be fully investigated. Altogether, these data point to reduced ULK1 activity as a key factor explaining the autophagy deficiency observed in ATG13FU5A KI cells.\n\n## Discussion\n\nThe interaction mechanism of ULK1\u2013ATG13\u2013FIP200, the core of the ULK complex, has been extensively studied (Alers et al., 2011; Chen et al., 2023; Ganley et al., 2009; Hieke et al., 2015; Hosokawa et al., 2009; Jung et al., 2009; Papinski and Kraft, 2016; Shi et al., 2020). However, most of these studies either lacked structural context or, when structural analyses were performed, they were not adequately validated by functional assays in both in vitro and in vivo settings, leaving our understanding of the interaction mechanism still limited. In this study, AlphaFold2-based point mutational analysis provides solid evidence for the direct ULK1\u2013ATG13, ATG13\u2013FIP200, and ULK1\u2013FIP200 bindings in vitro and in vivo. Additionally, the triadic interaction is complementary in the cell.\n\nRegarding the importance of triadic interactions for the molecular function of the ULK complex, we observed their partial significance for ULK1 kinase activity against ATG14, a component of PI3KC3-C1, in our assays (Figure 4\u2014figure supplement 1D, E). This observation is consistent with recent work showing that FIP200 interacts with the PI3KC3-C1 (Chen et al., 2023). In contrast, we were unable to evaluate autophagosome formation-associated recruitment of the ATG9 vesicles in our ATG13 KI cell lines (Figure 4\u2014figure supplement 1C). However, given the direct interaction between ATG13 and ATG9A, it is likely that recruitment fails in ATG13FU5A KI cells. In the future, recruitment should be reevaluated under conditions that prevent p62 body-mediated recruitment, such as a penta-receptor KO genetic background.\n\nOne major structural difference between the mammalian ULK complex we predicted here and the yeast Atg1 complex is that one ATG13 binds to two FIP200s within the same FIP200 dimer in mammals, whereas one Atg13 binds to two Atg17s in the distinct Atg17 dimers in yeast (Figure 4F). The latter binding mode of Atg13 bridges Atg17 dimers to each other to form a higher-order assemblage (Yamamoto et al., 2016), which is considered to be the Atg1 complex\u2019s phase separation mechanism (Fujioka et al., 2020). Conversely, ATG13 cannot bridge FIP200 dimers to each other and thus cannot induce a higher-order assemblage of the ULK complex, which necessitates another mechanism for phase separation. A recent study reported that calcium transients on the endoplasmic reticulum surface trigger FIP200 phase separation (Zheng et al., 2022); however, the detailed mechanisms are unresolved. Further studies are required to elucidate the mechanisms of phase separation in organizing the autophagosome formation sites in mammals.\n\nIn addition to Atg17, budding and fission yeasts have Atg11 as a closer homolog of FIP200 (Kim et al., 2001; Li et al., 2014; Pan et al., 2020; Sun et al., 2013; Yorimitsu and Klionsky, 2005). Atg11 and Atg17 interact with Atg1 and Atg13, respectively, whereas Atg11\u2013Atg13 and Atg17\u2013Atg1 interactions have not been reported. Arabidopsis thaliana, which belongs to the Archaeplastida group, a supergroup distant from Opisthokonta (including yeasts and mammals), also has Atg1, Atg13, and Atg11 (Burki et al., 2020; Li et al., 2014). The A. thaliana Atg11 interacts with Atg13 but not with Atg1 (Li et al., 2014). The triadic interaction of Atg1/ULK1, ATG13, and Atg11/Atg17/FIP200 has not been reported for any species other than mammals. This triadic interaction is likely beneficial for cells that form the complicated cellular communities that comprise the metazoans. The most likely physiological significance is the fine-tuning of tissue-specific autophagic activity. Consistent with this idea, several splicing variants of ATG13 are present in vertebrates (Alers et al., 2014; Hieke et al., 2015; Jung et al., 2009). In humans, at least five splicing variants are known, including the isoform 3 lacking the C-terminal ULK1-binding site (MIMs, Figure 2A; Alers et al., 2014; Jung et al., 2009). The avian Atg13 has seven splicing variants, some lacking parts of the FIP200 interaction site (Alers et al., 2014; Hieke et al., 2015). This study found that a single disruption of the FIP200\u2013ATG13 or ULK1\u2013ATG13 interaction results in a partial reduction of autophagy activity (Figure 4D). In the individual context, the tissue- and organ-specific fine-tuning of the autophagy activity may occur by regulating the expression amount and ratio of splicing variants that lack some of the triad interactions. Generating KI mice with the point mutations identified in this study might help investigate the significance of the triadic binding at the individual level.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>ULK1</td>\n      <td>NCBI Reference Sequence</td>\n      <td>NM_003565.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>ATG13 (isoform c)</td>\n      <td>Hosokawa et al., 2009</td>\n      <td>NM_001142673.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>RB1CC1/FIP200 (isoform 2)</td>\n      <td>Hara et al., 2008</td>\n      <td>NM_001083617.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>ATG9A</td>\n      <td>Kishi-Itakura et al., 2014</td>\n      <td>NM_001077198.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Rattus norvegicus)</td>\n      <td>MAP1LC3B</td>\n      <td>Yim et al., 2022</td>\n      <td>NM_022867.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (Escherichia coli)</td>\n      <td>BL21 (DE3)</td>\n      <td>Novagen</td>\n      <td>69450</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK293T</td>\n      <td>RIKEN</td>\n      <td>RCB2202</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HeLa</td>\n      <td>RIKEN</td>\n      <td>RCB0007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Ulk1 Ulk2 DKO MEF</td>\n      <td>Cheong et al., 2011</td>\n      <td>Kindly provided by Craig B, Thompson</td>\n      <td>Established from C57BL/6 mice</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>ATG13 KO HeLa</td>\n      <td>Hama et al., 2023</td>\n      <td>WM1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>ATG13-3xFLAG KI HeLa</td>\n      <td>This study</td>\n      <td>13FWTKI14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>ATG13-3xFLAG FIP3A KI HeLa</td>\n      <td>This study</td>\n      <td>13FF3AKI12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>ATG13-3xFLAG ULK2A KI HeLa</td>\n      <td>This study</td>\n      <td>13FU2AKI12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>ATG13-3xFLAG FU5A KI HeLa</td>\n      <td>This study</td>\n      <td>13FFU5AKI24</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-FIP200</td>\n      <td>Proteintech</td>\n      <td>17250-1-AP</td>\n      <td>1:1000 for WB, 1:500 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-ATG13</td>\n      <td>Cell Signaling Technology</td>\n      <td>#13273</td>\n      <td>1:1000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-ULK1</td>\n      <td>Cell Signaling Technology</td>\n      <td>#8054S</td>\n      <td>1:500 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-ATG14 p-Ser29</td>\n      <td>Cell Signaling Technology</td>\n      <td>#92340</td>\n      <td>1:1000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-ATG14</td>\n      <td>Proteintech</td>\n      <td>24412-1-AP</td>\n      <td>1:1000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig polyclonal anti-p62</td>\n      <td>PROGEN</td>\n      <td>GP62-C</td>\n      <td>1:500 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-FLAG</td>\n      <td>MBL</td>\n      <td>M185-7</td>\n      <td>1:1000 for WB, 1:500 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-HA</td>\n      <td>MBL</td>\n      <td>M180-3</td>\n      <td>1:500 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-\u03b2-actin</td>\n      <td>Sigma-Aldrich</td>\n      <td>A2228</td>\n      <td>1:10,000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP-conjugated mouse monoclonal anti-DDDDK tag</td>\n      <td>MBL</td>\n      <td>M185-7</td>\n      <td>1:2000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP-conjugated mouse monoclonal anti-rabbit IgG</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>111-035-144</td>\n      <td>1:10,000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP-conjugated mouse monoclonal anti-mouse IgG</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>111-035-003</td>\n      <td>1:10,000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488-conjugated polyclonal anti-mouse IgG</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A-11029</td>\n      <td>1:2000 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 555-conjugated polyclonal anti-rabbit IgG</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A-31572</td>\n      <td>1:2000 for IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 647-conjugated polyclonal anti-pig IgG</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A-21450</td>\n      <td>1:2000 for IF</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b</td>\n      <td>Novagen</td>\n      <td>69661</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX-6P-1</td>\n      <td>Cytiva</td>\n      <td>28954648</td>\n      <td>Figure 3C</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b-MBP-ULK1 (636\u20131050 aa)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Figure 2C</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b-MBP-ULK1FIP2A (636\u20131050 aa)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b-MBP-ATG13 (363\u2013517 aa)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Figures 1D, 2C, Figure 1\u2014figure supplement 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b-MBP-ATG13FIP3A (363\u2013517 aa)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Figure 1D</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b-MBP-ATG13ULK2A (363\u2013517 aa)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Figure 2C</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b-MBP-FIP200 (1\u2013634 aa)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Figures 1D and 3C</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX6p-1-GST-ULK1 (636\u20131050 aa)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Figure 3C</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX6p-1-GST-ULK1FIP2A (636\u20131050 aa)</td>\n      <td>This study</td>\n      <td></td>\n      <td>Figure 3C</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMRX-IP-3xFLAG-ULK1</td>\n      <td>This study</td>\n      <td>YHE134</td>\n      <td>Figure 3E, G</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMRX-IP-3xFLAG-ULK1FIP2A</td>\n      <td>This study</td>\n      <td>YHE141</td>\n      <td>Figure 3E, G</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMRX-IP-ATG13-3xFLAG</td>\n      <td>This study</td>\n      <td>YHE103</td>\n      <td>Figures 1D, 2D, Figure 4\u2014figure supplement 1A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMRX-IP-ATG13FIP3A-3xFLAG</td>\n      <td>This study</td>\n      <td>YHE116</td>\n      <td>Figure 1D</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMRX-IP-ATG13ULK2A-3xFLAG</td>\n      <td>This study</td>\n      <td>YHE144</td>\n      <td>Figure 2D</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMRX-IP-ATG13FU5A-3xFLAG</td>\n      <td>This study</td>\n      <td>YHE180</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMRX-IP-ATG9A-3xHA</td>\n      <td>This study</td>\n      <td>YHE218</td>\n      <td>Figure 4\u2014figure supplement 1C</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCG-gag-pol</td>\n      <td>Kindly provided by Teruhiko Yasui</td>\n      <td></td>\n      <td>For packaging retrovirus for stable gene expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCG-VSV-G</td>\n      <td>Kindly provided by Teruhiko Yasui</td>\n      <td></td>\n      <td>For packaging retrovirus for stable gene expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PX458-gATG13 exon14</td>\n      <td>This study</td>\n      <td>YHC49</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKnockIn</td>\n      <td>This study</td>\n      <td>YHC3</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKnockIn-ATG13 exon14-ATG13 (347\u2013517 aa)\u20133xFLAG</td>\n      <td>This study</td>\n      <td>YHC50</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKnockIn-ATG13 exon14-ATG13FIP3A (347\u2013517 aa)\u20133xFLAG</td>\n      <td>This study</td>\n      <td>YHC51</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKnockIn-ATG13 exon14-ATG13ULK2A (347\u2013517 aa)\u20133xFLAG</td>\n      <td>This study</td>\n      <td>YHC52</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKnockIn-ATG13 exon14-ATG13FU5A (347\u2013517 aa)\u20133xFLAG</td>\n      <td>This study</td>\n      <td>YHC53</td>\n      <td>Figure 4</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>PrimeSTAR Max DNA Polymerase</td>\n      <td>Takara Bio</td>\n      <td>R045A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>NEBuilder HiFi DNA Assembly Master Mix</td>\n      <td>New England Biolabs</td>\n      <td>E2621X</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FuGENE HD</td>\n      <td>Promega</td>\n      <td>VPE2311</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HaloTag TMR Ligand</td>\n      <td>Promega</td>\n      <td>G8251</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Digitonin</td>\n      <td>Sigma-Aldrich</td>\n      <td>D141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polybrane</td>\n      <td>Sigma-Aldrich</td>\n      <td>H9268</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Puromycin</td>\n      <td>Sigma-Aldrich</td>\n      <td>P8833</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Blasticidin</td>\n      <td>Fujifilm Wako Pure Chemical Corporation</td>\n      <td>022-18713</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>G-418</td>\n      <td>Fujifilm Wako Pure Chemical Corporation</td>\n      <td>074-06801</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Anti-FLAG M2 affinity gel</td>\n      <td>Sigma-Aldrich</td>\n      <td>A2220</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4% paraformaldehyde</td>\n      <td>Fujifilm Wako Pure Chemical Corporation</td>\n      <td>163-20145</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Amylose Resin High Flow</td>\n      <td>New England Biolabs</td>\n      <td>E8022L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bio-Scale Mini Bio-Gel P-6 desalting column</td>\n      <td>Bio-Rad Laboratories</td>\n      <td>7325304</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>COSMOGEL GST-Accept</td>\n      <td>NACALAI TESQUE</td>\n      <td>09277-14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HiLoad 26/600 Superdex 200 pg</td>\n      <td>Cytiva</td>\n      <td>28989336</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>One Step CBB</td>\n      <td>BIO CRAFT</td>\n      <td>CBB-1000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>AlphaFold2 v2.3</td>\n      <td>Jumper et al., 2021</td>\n      <td></td>\n      <td>Structural prediction was done using AlphaFold2 v2.3</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MicroCal PEAQ-ITC analysis software</td>\n      <td>Malvern Panalytical Ltd</td>\n      <td></td>\n      <td>Integration and fitting of ITC were done using MicroCal PEAQ-ITC analysis software</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji-ImageJ</td>\n      <td>https://imagej.net/Fiji/Downloads</td>\n      <td></td>\n      <td>Image analysis was done using Fiji-ImageJ and plugins</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Illustrator</td>\n      <td>Adobe</td>\n      <td></td>\n      <td>Images were mounted using these softwares</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 9</td>\n      <td>GraphPad Prism</td>\n      <td></td>\n      <td>Graphs and statistical tests were done using GraphPad Prism</td>\n    </tr>\n  </tbody>\n</table>\n\n### Structural prediction using AlphaFold2 with the AlphaFold-Multimer mode\n\nStructure was predicted using AlphaFold2 v2.3 installed on a local computer (Sunway Technology Co, Ltd) (Jumper et al., 2021). The predictions were run using the AlphaFold-Multimer mode (Evans et al., 2021), with five models and a single seed per model, and default multiple sequence alignment generation using the MMSeqs2 server (Mirdita et al., 2022; Mirdita et al., 2019). The unrelaxed predicted models were subjected to an Amber relaxation procedure, and the relaxed model with the highest confidence based on predicted LDDT scores was selected as the best model and used for figure preparation (Jumper et al., 2021). Structural figures were prepared using PyMOL (http://www.pymol.org/pymol). The model is available in ModelArchive (https://modelarchive.org/) with the accession code ma-jz53c.\n\n### Cell culture\n\nHeLa cells and MEFs were cultured in Dulbecco\u2019s modified Eagle medium (DMEM) (043-30085; Fujifilm Wako Pure Chemical Corporation) supplemented with 10% fetal bovine serum (FBS) (172012; Sigma-Aldrich) in a 5% CO2 incubator at 37\u00b0C. Cells were washed twice with phosphate-buffered saline (PBS) and incubated in amino acid-free DMEM (048-33575; Fujifilm Wako Pure Chemical Corporation) without FBS for starvation. HeLa and HEK293T cells were authenticated and validated by STR profiling by RIKEN. ATG13 KO HeLa cells (Hama et al., 2023) and Ulk1 Ulk2 double knockout MEFs (Cheong et al., 2011) were described previously. Ulk1 Ulk2 double knockout MEFs were originally derived from C57BL/6 mouse embryos and provided by an external researcher. The mammalian cell lines were routinely confirmed to be free of mycoplasma contamination by fluorescence microscopy.\n\n### Plasmids for mammalian cells\n\nPlasmids for stable expression were generated as follows: DNA fragments encoding human ULK1 (NM_003565.4), ATG13 (Hosokawa et al., 2009), and ATG9A (Itakura et al., 2012) were inserted into the retroviral plasmid pMRX-IP (puromycin-resistant marker) (Kitamura et al., 2003; Saitoh et al., 2003) with a 3 \u00d7 FLAG or 3 \u00d7 HA epitope tag. Site-directed mutagenesis was used to introduce ATG13FIP3A, ATG13ULK2A, ATG13FU5A, and ULK1FIP2A mutations. pMRXIB-HaloTag7-ratLC3B was described previously (Yim et al., 2022). Plasmids for ATG13 KI were generated as follows: sgRNAs targeting the exon 14 of ATG13 (5\u2032-GGCCTCCCCTCACGATGTCT-3\u2032) were inserted into the BpiI site of PX458 [pSpCas9(BB)-2A-GFP; Addgene #48138]. Donor plasmids for ATG13 KI were generated as follows: 500 base-pair (bp) and 682 bp homology arms were amplified from the genomic ATG13 locus around exon 14 and inserted to flank the KI cassettes (described in Figure 4A) in the donor plasmid (pKnockIn). The coding sequence of 3xFLAG-tagged ATG13 with or without FIP3A, ULK2A, or FU5A mutations was amplified from stable expression plasmids (described above) and inserted just behind the 5\u2032 homology arm.\n\n### Stable expression in HeLa cells by retroviral infection\n\nHEK293T cells were transfected with the retroviral plasmid with pCG-gag-pol and pCG-VSV-G (a gift from Dr. T. Yasui, National Institutes of Biomedical Innovation, Health and Nutrition) using FuGENE HD (E2311; Promega) for 4 hr in Opti-MEM (31985-070; Gibco). After cell cultivation for 2 days in DMEM, the retrovirus-containing medium was harvested, filtered through a 0.45-\u00b5m filter unit (Ultrafree-MC; Millipore), and added to HeLa cells or MEFs with 8 \u03bcg/ml polybrene (H9268; Sigma-Aldrich). After 24 hr, 2 \u03bcg/ml puromycin (P8833; Sigma-Aldrich) or 2.5 \u03bcg/ml blasticidin (022-18713; Fujifilm Wako Pure Chemical Corporation) was used to select the stable transformants.\n\n### Plasmids for protein preparation\n\nTo construct the expression plasmid encoding an N-terminal maltose-binding protein (MBP) followed by an HRV3C protease site, the genes were amplified by PCR and cloned into the pET15b vector. The genes were amplified by PCR and cloned into the pET15b-MBP vector for the plasmids encoding N-terminal MBP-tagged ULK1, ATG13, and FIP200. Similarly, for the plasmids encoding N-terminal glutathione S-transferase (GST)-tagged ULK1, the genes were amplified by PCR and cloned into the pGEX6p-1 vector. The NEBuilder HiFi DNA Assembly Master Mix (New England BioLabs) was used to assemble the PCR fragments. PCR-mediated site-directed mutagenesis was used to introduce the mutations that led to the specified amino acid substitutions. All constructs were sequenced to confirm their identities.\n\n### Protein expression and purification\n\nE. coli BL21 (DE3) cells were used to express all recombinant proteins. After cell lysis, MBP-FIP200 (1\u2013634) was purified by affinity chromatography using Amylose Resin High Flow (New England Biolabs). Next, MBP was cleaved with the human rhinovirus 3C protease. The eluates were then desalted with 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl utilizing a Bio-Scale Mini Bio-Gel P-6 desalting column (Bio-Rad Laboratories). Subsequently, the cleaved MBP was removed by reapplying FIP200 (1\u2013634) to an Amylose Resin High Flow column. For the pull-down assay, MBP-FIP200 (1\u2013634) eluted from the amylose resin continued to be purified on a HiLoad 26/60 Superdex 200 PG column eluted with 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl.\n\nAffinity chromatography with Amylose Resin High Flow (New England Biolabs) was used to purify the MBP-ATG13 (363\u2013517) and MBP-ULK1 (636\u20131050) proteins. They were further purified on a HiLoad 26/60 Superdex 200 PG column and eluted with a buffer containing 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl. Similarly, GST-ULK1 (636\u20131050) underwent initial purification using a GST-accept resin (Nacalai Tesque, 09277-14). This step was followed by further purification on a HiLoad 26/60 Superdex 200 PG column using the same elution buffer as above.\n\n### In vitro pull-down assay\n\nPurified proteins were incubated with GST-accept beads (Nacalai Tesque) at 4\u00b0C for 30 min. The beads were washed three times with PBS, and proteins were eluted with 10 mM glutathione in 50 mM Tris-HCl (pH 8.0). SDS\u2013PAGE was used to separate the samples, and protein bands were detected by One Step CBB (BIO CRAFT).\n\n### Isothermal titration calorimetry\n\nThe binding of FIP200 (1\u2013634) to MBP-ATG13 (363\u2013517) and MBP-ATG13 (363\u2013517) to MBP-ULK1 (636\u20131050) was measured by ITC, with a MICROCAL PEAQ-ITC calorimeter (Malvern) and stirring at 750 rpm at 25\u00b0C. All proteins were prepared in a solution of 20 mM Tris-HCl, pH 8.0, and 150 mM NaCl. The titration of MBP-ATG13 (363\u2013517) with FIP200 (1\u2013634) involved 18 injections of 2 \u03bcl of the MBP-ATG13 (363\u2013517) solution (229 \u03bcM) at 150-s intervals into a sample cell containing 300 \u03bcl of FIP200 (1\u2013634) (4 \u03bcM). The titration of MBP-ULK1 (636\u20131050) with MBP-ATG13 (363\u2013517) involved 18 injections of 2 \u03bcl of the MBP-ULK1 (636\u20131050) WT at 232 \u03bcM or FIP2A mutant at 172 \u03bcM at 150-s intervals into a sample cell containing 300 \u03bcl of MBP-ATG13 (363\u2013517) at 22.9 or 20.0 \u03bcM, respectively. The isotherm was integrated and fitted with the one-side-binding model of the Malvern MicroCal PEAQ-ITC analysis software. The error of each parameter indicates the fitting error.\n\n### Generation of KI cell lines\n\nHeLa cells were transfected with the PX458-based plasmid expressing sgRNA for the ATG13 gene and donor plasmids using FuGENE HD (E2311; Promega). One day after transfection, the KI cells were selected with 1 mg/ml G418 for 14 days. After single clones were isolated, clones positive for the FLAG tag and negative for wild-type ATG13 were screened by immunoblotting.\n\n### Preparation of whole-cell lysates and immunoblotting\n\nHeLa cells were lysed with 0.2% n-octyl-\u03b2-D-dodecyl maltoside in lysis buffer [50 mM Tris-HCl (pH 7.5), 150 mM NaCl, 1 mM EDTA, EDTA-free protease inhibitor cocktail (04080; Nacalai Tesque)] for 15 min on ice. After centrifugation at 20,000 \u00d7 g for 15 min at 4\u00b0C, the supernatants were mixed with 20% volumes of 6 \u00d7 SDS\u2013PAGE sample buffer. The samples were subjected to SDS\u2013PAGE and transferred to Immobilon-P PVDF membranes (IPVH00010; EMD Millipore). The primary antibodies used for immunoblotting were rabbit polyclonal antibodies against FIP200 (17250-1-AP; ProteinTech), ATG13 (13273; Cell Signaling), ULK1 (8054; Cell Signaling), ATG14 p-Ser29 (#92340; Cell Signaling), ATG14 (24412-1-AP; ProteinTech), and mouse monoclonal antibody against FLAG (F1804; Sigma-Aldrich) and \u03b2-actin (A2228; Sigma-Aldrich). Horseradish peroxidase (HRP)-conjugated anti-rabbit IgG (111-035-144; Jackson ImmunoResearch) was used as a secondary antibody. The HRP-conjugated mouse monoclonal antibody against DDDDK-tag (M185-7; MBL) was used for FLAG tag detection. Immobilon Western Chemiluminescent HRP Substrate (P90715; EMD Millipore) was used to visualize the signals detected by an image analyzer (ImageQuant LAS 4000; Cytiva). Fiji software (ImageJ; National Institutes of Health) was used to adjust contrast and brightness and quantify the signals (Schindelin et al., 2012).\n\n### Immunoprecipitation\n\nCells were lysed with 1% 3-[(3-cholamidopropyl)-dimethylammonium]-1-propanesulfonate (CHAPS) in lysis buffer and centrifuged at 20,000 \u00d7 g for 15 min. The supernatants were incubated with anti-FLAG M2 affinity gel (A2220; Sigma-Aldrich) for 1 hr at 4\u00b0C with gentle rotation. The beads were washed three times in washing buffer (20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 1 mM EDTA, and 0.5% CHAPS), and the proteins were eluted with the SDS\u2013PAGE sample buffer.\n\n### Immunostaining and fluorescence microscopy\n\nCells were grown on segmented cover glass (SCC-002; Matsunami Glass IND.), washed with PBS, and fixed with 4% paraformaldehyde (163-20145; Fujifilm Wako Pure Chemical Corporation) in PBS for 10 min. The cells were permeabilized with 50 \u00b5g/ml digitonin in PBS for 5 min and blocked with 3% BSA in PBS for 30 min. Primary antibodies in PBS and 3% BSA were added, and samples were incubated for 1 hr at room temperature. Cells were washed five times with PBS, incubated with secondary antibodies in PBS with 3% BSA for 1 hr at room temperature, and washed five times with PBS. Rabbit polyclonal antibodies against FIP200 (17250-1-AP; ProteinTech) and mouse monoclonal antibodies against FLAG (F1804; Sigma-Aldrich) HA (M180-3, MBL) and guinea pig antibody against p62 (GP62-C; PROGEN) were used as primary antibodies for immunostaining. Alexa Fluor 488-conjugated anti-mouse IgG (also cross-adsorbed to rabbit IgG and rat IgG) (A-11029; Thermo Fisher Scientific), Alexa Fluor 555-conjugated anti-rabbit IgG (also cross-adsorbed to mouse IgG) (A-31572; Thermo Fisher Scientific), and Alexa Fluor 647-conjugated anti-guinea pig (A21450; Thermo Fisher Scientific) were used as secondary antibodies. Cells were observed under a confocal microscope (ECLIPSE Ti2; Nikon).\n\n### Halo-LC3 processing assay\n\nCells were treated with 100 nM tetramethylrhodamine (TMR)-conjugated HaloTag ligand (G8251, Promega) for 15 min. After washing twice with PBS, cells were cultured in the starvation medium for 1 hr and lysed as described above. Proteins were separated by SDS\u2013PAGE, and in-gel TMR fluorescence was detected using a fluorescent imaging system (Odyssey M; Li-COR).\n\n### Statistical analysis\n\nGraphPad Prism 9 software (GraphPad Software) was used for statistical analyses. The statistical methods are described in each figure legend.\n",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Li Yu, https://ror.org/03cve4549 Tsinghua University Beijing China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.101531.3.sa0](https://doi.org/10.7554/eLife.101531.3.sa0)\n\nBuilding on previous structural studies, this work provides valuable new insights into the architecture of the autophagy initiation complex, comprising ULK1, ATG13, and FIP200. The authors present their findings with solid supporting evidence, making this study a significant contribution to the autophagy field.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101531.3.sa1](https://doi.org/10.7554/eLife.101531.3.sa1)\n\nIn this study, Hama et al. investigated the molecular regulatory mechanisms underlying the formation of the ULK1 complex in mammalian cells. Their results showed that in mammalian cells, ULK1, ATG13, and FIP200 form a complex with a stoichiometry of 1:1:2. These predicted interaction regions were validated through both in vivo and in vitro experiments, providing deeper insight into the molecular basis of ULK1 complex assembly in mammalian cells.\n\nThe revised manuscript has addressed the majority of my concerns, and I have no further questions. Overall, this is a solid and impactful study that significantly advances our understanding of how the ULK1 complex is formed.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101531.3.sa2](https://doi.org/10.7554/eLife.101531.3.sa2)\n\nSummary:\n\nThis is important work that helps to uncover how the process of autophagy is initiated - via structural analyses of the initiating ULK1 complex. High resolution structural details and a mechanistic insight of this complex have been lacking and understanding how it assembles and functions is a major goal of a field that impacts many aspects of cell and disease biology. While we know components of the ULK1 complex are essential for autophagy, how they physically interact is far from clear. The work presented makes use of AlphaFold2 to structurally predict interaction sites between the different subunits of the ULK1 complex (namely ULK1, ATG13 and FIP200). Importantly, the authors go on to experimentally validate that these predicted sites are critical for complex formation by using site-directed mutagenesis and then go on to show that the three-way interaction between these components is necessary to induce autophagy in cells.\n\nStrengths:\n\nThe data are very clear. Each binding interface of ATG13 (ATG13 with FIP300/ATG13 with ULK1) is confirmed biochemically with ITC and IP experiments from cells. Likewise, IP experiments with ULK1 and FIP200 also validate interaction domains. A real strength of the work is in the analyses of the consequences of disrupting ATG13's interactions in cells. The authors make CRISPR KI mutations of the binding interface point mutants. This is not a trivial task and is the best approach as everything is monitored under endogenous conditions. Using these cells the authors show that ATG13's ability to interact with both ULK1 and FIP200 is essential for a full autophagy response.\n\nWeaknesses:\n\nI think a main weakness here is the failure to acknowledge and compare results with an earlier preprint that shows essentially the same thing (https://doi.org/10.1101/2023.06.01.543278). Arguably, this earlier work is much stronger from a structural point of view as it relies not only on AlphaFold2 but also actual experimental structural determinations (and takes the mechanisms of autophagy activation further by providing evidence for a super complex between the ULK1 and VPS34 complexes). That is not to say that this work is not important, as in the least it independently helps to build a consensus for ULK1 complex structure. Another weakness is that the downstream \"functional\" consequences of disrupting the ULK1 complex are only minimally addressed. The authors perform a Halotag-LC3 autophagy assay, which essentially monitors the endpoint of the process. There are a lot of steps in between, knowledge of which could help with mechanistic understanding. Not in the least is the kinase activity of ULK1 - how is this altered by disrupting its interactions with ATG13 and/or FIP200?\n\nUpdate:\n\nI feel the authors have addressed my concerns in their revised manuscript\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101531.3.sa3](https://doi.org/10.7554/eLife.101531.3.sa3)\n\nIn this study, the authors employed the protein complex structure prediction tool AlphaFold-Multimer to obtain a predicted structure of the protein complex composed of ULK1-ATG13-FIP200 and validated the structure using mutational analysis. This complex plays a central role in the initiation of autophagy in mammals. The results obtained in this study reveal extensive binary interactions between ULK1 and ATG13, between ULK1 and FIP200, and between ATG13 and FIP200, and pinpoint the critical residues at each interaction interface. Mutating these critical residues led to the loss of binary interactions. Interestingly, the authors showed that the ATG13-ULK1 interaction and the ATG13-FIP200 interaction are partially redundant for maintaining the complex. The experimental data presented by the authors are of high quality and convincing. The revised manuscript offers enhanced details about the prediction procedure and results, along with additional experimental findings, significantly increasing the scientific value of this paper.\n",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6d188a5d-01fe-43dc-8255-eebf772fcd6c",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C1",
+      "claim": "In mammals, autophagosome formation is initiated by the ULK complex comprising ULK1/2, FIP200, ATG13, and ATG101.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, autophagosome formation, a central event in autophagy, is initiated by the ULK complex comprising ULK1/2, FIP200, ATG13, and ATG101.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations throughout the manuscript to established literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "35fb6305-e80d-450a-aa4e-1ae80004226f",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C2",
+      "claim": "AlphaFold predicted that the intrinsically disordered region of ATG13 engages the bases of the two UBL domains in the FIP200 dimer via two phenylalanines.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we predicted the core interactions organizing the ULK complex using AlphaFold, which proposed that the intrinsically disordered region of ATG13 engages the bases of the two UBL domains in the FIP200 dimer via two phenylalanines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational prediction using AlphaFold2 as described in the methods and results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "6f61105a-fc0e-49ef-ba79-7fde78940a58",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C3",
+      "claim": "ATG13 binds the tandem microtubule-interacting and transport domain of ULK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we predicted the core interactions organizing the ULK complex using AlphaFold, which proposed that the intrinsically disordered region of ATG13 engages the bases of the two UBL domains in the FIP200 dimer via two phenylalanines and also binds the tandem microtubule-interacting and transport domain of ULK1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on AlphaFold2 predictions and validated by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "fdb70159-41fc-4cef-b4e0-5abbb3638d98",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C4",
+      "claim": "The stoichiometry of the ULK1\u2013ATG13\u2013FIP200 complex is 1:1:2.",
+      "claim_type": "EXPLICIT",
+      "source": "thereby yielding the 1:1:2 stoichiometry of the ULK1\u2013ATG13\u2013FIP200 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural predictions and prior literature (Alers et al., 2011; Ganley et al., 2009; Hieke et al., 2015; Hosokawa et al., 2009; Jung et al., 2009; Papinski and Kraft, 2016; Shi et al., 2020; Wallot-Hieke et al., 2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "18a0c91b-c066-4143-b90c-7b3febc37cd3",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C5",
+      "claim": "Each interaction among ULK1, ATG13, and FIP200 is additively important for autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the predicted interactions by point mutations and demonstrated direct triad interactions among ULK1, ATG13, and FIP200 in vitro and in cells, wherein each interaction was additively important for autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mutational analysis and Halo-LC3 processing assays shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "d824251e-3083-4d41-8467-4c026596f911",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C6",
+      "claim": "The ULK1\u2013ATG13\u2013FIP200 triadic interaction is crucial for autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the ULK1\u2013ATG13\u2013FIP200 triadic interaction is crucial for autophagosome formation and provides a structural basis and insights into the regulation mechanism of autophagy initiation in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental validation of predicted interactions and their functional importance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "9113c4cf-77f6-49d3-8274-2a454dba9703",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C7",
+      "claim": "Autophagy contributes to intracellular quality control by degrading defective proteins and organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy contributes to intracellular quality control by degrading defective proteins and organelles, such as polyubiquitinated proteins and damaged mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the autophagy field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "dbb612a9-c986-4ba3-8fc0-78caf1884f4e",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C8",
+      "claim": "Autophagy is induced by starvation as an adaptation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, autophagy is induced by starvation as an adaptation mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is well-established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "c203b916-6556-4937-9726-8eccdd3e94c7",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C9",
+      "claim": "Autophagy is associated with various diseases, including cancer and neurodegenerative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "These physiological roles of autophagy are associated with various diseases, including cancer and neurodegenerative disorders (Mizushima and Levine, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mizushima and Levine, 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "6589b040-14bc-498a-987f-ff98ba32b453",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C10",
+      "claim": "The Atg1/ULK complex is critical in initiating autophagosome formation by organizing the formation site.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the Atg1/ULK complex is critical in initiating autophagosome formation by organizing the formation site where all the functional units, such as ATG9 vesicles and ATG8 conjugation system, colocalize (Hama et al., 2023; Kannangara et al., 2021; Kishi-Itakura et al., 2014; Ren et al., 2023; Suzuki et al., 2001; Yamamoto et al., 2012; Zhou et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "cc26e408-2168-48b2-8f72-b28cafbee391",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C11",
+      "claim": "In mammals, the ULK complex includes ULK1/2, ATG13, ATG101, and RB1CC1/FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the ULK complex includes ULK1/2, ATG13, ATG101, and RB1CC1/FIP200 (Mizushima, 2010; Wong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mizushima, 2010 and Wong et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "6ef6c605-67aa-448c-b299-b228f42ddab6",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C12",
+      "claim": "The yeast Atg1 complex core comprises Atg1, Atg13, and Atg17.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and functional analysis has made considerable progress in the yeast counterpart, the Atg1 complex, whose core comprises Atg1 (ULK1/2 homolog), Atg13, and Atg17 (remote homolog of FIP200) (Fujioka et al., 2014; Li et al., 2014 Lin and Hurley, 2016; Noda, 2024; Ragusa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "8c603b45-89c2-4bd6-be9b-d465906d23f9",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C13",
+      "claim": "Crystallographic analyses have unveiled the detailed interaction mode of Atg13 with Atg1 and Atg17.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallographic analyses have unveiled the detailed interaction mode of Atg13 with Atg1 and Atg17 and the mechanism of the Atg1 complex organization (Fujioka et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fujioka et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "08379086-2374-4c82-bb8f-9692b8c69b73",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C14",
+      "claim": "The Atg1 complex undergoes liquid\u2013liquid phase separation to organize the autophagosome formation site on the vacuolar membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, structure-based in vitro and in vivo functional analyses have revealed that the Atg1 complex undergoes liquid\u2013liquid phase separation to organize the autophagosome formation site on the vacuolar membrane to initiate autophagy (Fujioka et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fujioka et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "7a017b81-fffe-4a99-8081-e7e1de98b981",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C15",
+      "claim": "Structural information on the interactions comprising the core of the ULK complex has long been limited to low-resolution electron microscopy data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, structural and functional analyses of the mammalian ULK complex lag behind that of the yeast Atg1 complex, and structural information on the interactions comprising the core of the ULK complex has long been limited to low-resolution electron microscopy (EM) data (Shi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "f28dfedc-b3d4-4a1d-9065-669b911bf060",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C16",
+      "claim": "A recent preprint reported the cryo-EM structures of the human ULK1 core complex at 4.2\u20136.84 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent preprint reported the cryo-EM structures of the human ULK1 core complex and the supercomplex between the ULK1 core complex and the class III phosphatidylinositol 3-kinase complex 1 at 4.2\u20136.84 \u00c5 resolution, which discovered the unprecedented interaction between these two critical complexes working at autophagy initiation (Chen et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "2ecb9892-0881-4fb5-bb86-5ccb616bc590",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C17",
+      "claim": "Calcium transients on the endoplasmic reticulum surface trigger the liquid\u2013liquid phase separation of FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, calcium transients on the endoplasmic reticulum surface were proposed to trigger the liquid\u2013liquid phase separation of FIP200 to organize the autophagosome formation site, thereby initiating autophagy (Zheng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zheng et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "e80bc546-7aff-4eec-b74a-c3b90e792e94",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C18",
+      "claim": "The C-terminal region of ULK1 and the C-terminal intrinsically disordered region of ATG13 bind to the N-terminal region of the FIP200 homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported that the C-terminal region of ULK1 and the C-terminal intrinsically disordered region of ATG13 bind to the N-terminal region of the FIP200 homodimer and that the stoichiometry of the ULK1\u2013ATG13\u2013FIP200 complex is 1:1:2 (Alers et al., 2011; Ganley et al., 2009; Hieke et al., 2015; Hosokawa et al., 2009; Jung et al., 2009; Papinski and Kraft, 2016; Shi et al., 2020; Wallot-Hieke et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "e5a42109-ed37-49c2-8519-d6cb2e02822d",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C19",
+      "claim": "The overall structure predicted by AlphaFold2 is consistent with the low-resolution cryo-EM model reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structure is consistent with the low-resolution cryo-EM model reported previously (Shi et al., 2020), including the C-shape of the FIP200 dimer and the binding of one molecule each of ATG13 and ULK1 to the FIP200 dimer, resulting in the 1:1:2 stoichiometry of the ULK1\u2013ATG13\u2013FIP200 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between AlphaFold2 prediction and prior cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "9824f0ef-87f9-47dc-ac0f-87afcfd9f581",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C20",
+      "claim": "The buried surface area between FIP200A and FIP200B is 3658 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive interactions were predicted between the four molecules, with a buried surface area of 3658 \u00c52 for FIP200A\u2013FIP200B, 2195 \u00c52 for FIP200A\u2013ATG13, 1966 \u00c52 for FIP200B\u2013ATG13, 2140 \u00c52 for ATG13\u2013ULK1, and 1681 \u00c52 for FIP200A\u2013ULK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the AlphaFold2 predicted structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "59300149-314e-40fb-9203-7d707841eb23",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C21",
+      "claim": "The buried surface area between FIP200A and ATG13 is 2195 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive interactions were predicted between the four molecules, with a buried surface area of 3658 \u00c52 for FIP200A\u2013FIP200B, 2195 \u00c52 for FIP200A\u2013ATG13, 1966 \u00c52 for FIP200B\u2013ATG13, 2140 \u00c52 for ATG13\u2013ULK1, and 1681 \u00c52 for FIP200A\u2013ULK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the AlphaFold2 predicted structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "67caa39e-a76f-458a-b0f8-0bd265fafec2",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C22",
+      "claim": "The buried surface area between FIP200B and ATG13 is 1966 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive interactions were predicted between the four molecules, with a buried surface area of 3658 \u00c52 for FIP200A\u2013FIP200B, 2195 \u00c52 for FIP200A\u2013ATG13, 1966 \u00c52 for FIP200B\u2013ATG13, 2140 \u00c52 for ATG13\u2013ULK1, and 1681 \u00c52 for FIP200A\u2013ULK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the AlphaFold2 predicted structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "70cd134b-2098-4b73-b84f-de730a313030",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C23",
+      "claim": "The buried surface area between ATG13 and ULK1 is 2140 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive interactions were predicted between the four molecules, with a buried surface area of 3658 \u00c52 for FIP200A\u2013FIP200B, 2195 \u00c52 for FIP200A\u2013ATG13, 1966 \u00c52 for FIP200B\u2013ATG13, 2140 \u00c52 for ATG13\u2013ULK1, and 1681 \u00c52 for FIP200A\u2013ULK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the AlphaFold2 predicted structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "eee3190f-8596-4e6a-84bf-e4efb7ec530b",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C24",
+      "claim": "The buried surface area between FIP200A and ULK1 is 1681 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive interactions were predicted between the four molecules, with a buried surface area of 3658 \u00c52 for FIP200A\u2013FIP200B, 2195 \u00c52 for FIP200A\u2013ATG13, 1966 \u00c52 for FIP200B\u2013ATG13, 2140 \u00c52 for ATG13\u2013ULK1, and 1681 \u00c52 for FIP200A\u2013ULK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the AlphaFold2 predicted structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "5896ba94-cf09-4d9e-8661-04546ccc34de",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C25",
+      "claim": "No interaction was observed between FIP200B and ULK1.",
+      "claim_type": "EXPLICIT",
+      "source": "No interaction was observed between FIP200B and ULK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the AlphaFold2 predicted structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "d9c617b6-b64b-4b56-9bfb-a7bc0d04b230",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C26",
+      "claim": "One ATG13 molecule binds to the FIP200 dimer through the interaction of residues 365\u2013398 and 394\u2013482 with FIP200B and FIP200A, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "One ATG13 molecule binds to the FIP200 dimer through the interaction of residues 365\u2013398 and 394\u2013482 with FIP200B and FIP200A, respectively, resulting in a 1:2 stoichiometry of the ATG13\u2013FIP200 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the AlphaFold2 predicted structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "85189425-ef64-4d1d-ad3e-f047bae58362",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C27",
+      "claim": "The stoichiometry of the ATG13\u2013FIP200 complex is 1:2.",
+      "claim_type": "EXPLICIT",
+      "source": "One ATG13 molecule binds to the FIP200 dimer through the interaction of residues 365\u2013398 and 394\u2013482 with FIP200B and FIP200A, respectively, resulting in a 1:2 stoichiometry of the ATG13\u2013FIP200 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the AlphaFold2 predicted structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "cd46524c-86dc-40db-91b8-b4a6214b6f62",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C28",
+      "claim": "Hydrogen\u2013deuterium exchange coupled to mass spectrometry identified three regions (M1\u2013M3) in ATG13 responsible for FIP200 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using hydrogen\u2013deuterium exchange coupled to mass spectrometry identified three regions (M1\u2013M3) in ATG13 responsible for FIP200 binding (Shi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "acc08565-4c2e-4241-a8c4-343943cc7fb8",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C29",
+      "claim": "The side chain of Phe377 in M1 and Phe453 in M3 is deeply inserted into the hydrophobic pockets formed at the base of UBL domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these sites, the side chain of Phe377 in M1 and Phe453 in M3 was deeply inserted into the hydrophobic pockets formed at the base of UBL domains (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C based on the AlphaFold2 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "217a5d36-6e1e-476e-b9d1-e27efb613167",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C30",
+      "claim": "Direct interaction between FIP200 (1\u2013634) and Atg13 (363\u2013517) was confirmed by isothermal titration calorimetry with a KD value of 6.6 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct interaction between FIP200 (1\u2013634) and Atg13 (363\u2013517) was confirmed by isothermal titration calorimetry (ITC) with a KD value of 6.6 \u03bcM, which was severely attenuated by alanine substitution at these three phenylalanine sites (F377A, F394A, F453A; FIP3A) (Figure 1D, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ITC experiments shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "eebdfdf3-dce4-4a59-8aa8-73ead900e6c2",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C31",
+      "claim": "The FIP3A mutation (F377A, F394A, F453A) severely attenuates the interaction between FIP200 and ATG13.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct interaction between FIP200 (1\u2013634) and Atg13 (363\u2013517) was confirmed by isothermal titration calorimetry (ITC) with a KD value of 6.6 \u03bcM, which was severely attenuated by alanine substitution at these three phenylalanine sites (F377A, F394A, F453A; FIP3A) (Figure 1D, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ITC experiments shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "1046ff30-0d63-4d91-9c12-66e338e7b3ef",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C32",
+      "claim": "The ATG13FIP3A mutant expressed in ATG13 KO cells displayed a significantly reduced coprecipitation rate of the endogenous FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the ATG13FIP3A mutant expressed in ATG13 KO cells displayed a significantly reduced coprecipitation rate of the endogenous FIP200 (Figure 1E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoprecipitation experiments shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "88d1dfbb-96f8-4fab-ad3d-5e13506c21a2",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C33",
+      "claim": "The predicted structure of the ULK1\u2013ATG13 complex is similar to that of the yeast Atg1\u2013Atg13 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted structure of the ULK1\u2013ATG13 complex (Figure 2A, left) was quite similar to that of the yeast Atg1\u2013Atg13 complex and to the cryo-EM structures of the ULK1\u2013ATG13 portion of the ULK1 core complex (Figure 2A, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of structures shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "7c664108-5fc2-4d13-af43-d1da515819e2",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C34",
+      "claim": "The crystal structure of the yeast Atg1\u2013Atg13 complex revealed that the tandem MIT domains in Atg1 bind to the tandem MIMs of ATG13.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously determined the crystal structure of the yeast Atg1\u2013Atg13 complex, which revealed that the tandem microtubule-interacting and transport (MIT) domains in Atg1 bind to the tandem MIT-interacting motifs (MIMs) of ATG13 (Figure 2A, right; Fujioka et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Fujioka et al., 2014 and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "feeaaa6d-57f9-47b1-b5ee-1bb64db82f7b",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C35",
+      "claim": "The ULK1\u2013ATG13 assembly is stabilized by two sets of the ULK1MIT1\u2013ATG13MIM(C) and ULK1MIT2\u2013ATG13MIM(N) interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly is stabilized by two sets of the ULK1MIT1\u2013ATG13MIM(C) and ULK1MIT2\u2013ATG13MIM(N) interactions (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the AlphaFold2 structure shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "ebf8a707-b57e-4b0d-8738-e724ac0ba15f",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C36",
+      "claim": "Phe470 of ATG13MIM(N) and Phe512 of ATG13MIM(C) are inserted into the hydrophobic pocket of ULK1MIT2 and ULK1MIT1, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Phe470 of ATG13MIM(N) and Phe512 of ATG13MIM(C) were inserted into the hydrophobic pocket of ULK1MIT2 and ULK1MIT1, respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B based on the AlphaFold2 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "942fa36b-56e3-45a8-966e-8c61a3d670e0",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C37",
+      "claim": "Direct interaction between ULK1 (636\u20131050) and Atg13 (363\u2013517) was confirmed by ITC with a KD value of 0.34 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct interaction between ULK1 (636\u20131050) and Atg13 (363\u2013517) was confirmed by ITC with a KD value of 0.34 \u03bcM, which was severely attenuated by alanine substitution at these two phenylalanine sites (F470A, F512A; ULK2A) (Figure 2C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ITC experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "44f67ee5-ae43-40d7-9c40-b47b9cb5c376",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C38",
+      "claim": "The ULK2A mutation (F470A, F512A) severely attenuates the interaction between ULK1 and ATG13.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct interaction between ULK1 (636\u20131050) and Atg13 (363\u2013517) was confirmed by ITC with a KD value of 0.34 \u03bcM, which was severely attenuated by alanine substitution at these two phenylalanine sites (F470A, F512A; ULK2A) (Figure 2C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ITC experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "3a6ff20e-6867-42a2-80c4-516e86c45104",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C39",
+      "claim": "In ATG13 KO cells, the ULK1 expression level was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In ATG13 KO cells, the ULK1 expression level was significantly reduced, suggesting that the lack of ATG13 severely destabilized ULK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by immunoblotting experiments shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "3cab4591-c5be-41ea-9071-20eb95e86a9c",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C40",
+      "claim": "The lack of ATG13 severely destabilizes ULK1.",
+      "claim_type": "EXPLICIT",
+      "source": "In ATG13 KO cells, the ULK1 expression level was significantly reduced, suggesting that the lack of ATG13 severely destabilized ULK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ULK1 levels are reduced in ATG13 KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "79625a6b-0d16-4dd0-b81d-7ce28cf47e6b",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C41",
+      "claim": "ATG13 mediates stabilization of ATG101.",
+      "claim_type": "EXPLICIT",
+      "source": "This mirrors the ATG13-mediated stabilization of ATG101, another component of the ULK complex (Suzuki et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Suzuki et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "0fb08fa5-d24e-423d-b5dc-b20efe87f517",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C42",
+      "claim": "The exogenous expression of ATG13WT, but not of the ATG13ULK2A mutant, rescued the endogenous ULK1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The exogenous expression of ATG13WT, but not of the ATG13ULK2A mutant, rescued the endogenous ULK1 expression (Figure 2D, E), indicating that the ULK2A mutation in ATG13 attenuates the ATG13\u2013ULK1 interaction in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblotting experiments shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "d929d7f4-9d8c-4de9-9ab4-0f203c325a51",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C43",
+      "claim": "The ULK2A mutation in ATG13 attenuates the ATG13\u2013ULK1 interaction in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The exogenous expression of ATG13WT, but not of the ATG13ULK2A mutant, rescued the endogenous ULK1 expression (Figure 2D, E), indicating that the ULK2A mutation in ATG13 attenuates the ATG13\u2013ULK1 interaction in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the rescue experiments shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "45900c0d-a314-424e-865f-0bafb9faf5c0",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C44",
+      "claim": "Like the yeast Atg1\u2013Atg13 interaction, the ULK1\u2013ATG13 interaction is mediated by MIT\u2013MIM contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations confirm that, like the yeast Atg1\u2013Atg13 interaction, the ULK1\u2013ATG13 interaction is mediated by MIT\u2013MIM contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the structural and functional data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "2c730ad1-bf32-4248-9bcb-f3c9733021c8",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C45",
+      "claim": "AlphaFold2 predicted direct interaction between ULK1 and FIP200 over a contact area of 1681 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Although AlphaFold2 predicted the direct interaction between ULK1 and FIP200 over a reasonably large contact area (1681 \u00c52) and similar interaction was observed in cryo-EM structures (Figure 3A, B; Chen et al., 2023)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on AlphaFold2 predictions and comparison with cryo-EM structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "6a9e080a-c69d-4220-b3f7-34031b601ab4",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C46",
+      "claim": "A previous study reported that ULK1 required ATG13\u2013ATG101 for FIP200 binding in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Although AlphaFold2 predicted the direct interaction between ULK1 and FIP200 over a reasonably large contact area (1681 \u00c52) and similar interaction was observed in cryo-EM structures (Figure 3A, B; Chen et al., 2023), a previous study reported that ULK1 required ATG13\u2013ATG101 for FIP200 binding in vitro (Shi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "af455823-e7ae-400b-b6cf-27af6ed05835",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C47",
+      "claim": "ULK1MIT1 and ULK1MIT2 interact directly with FIP200, with Leu967 of ULK1MIT1 and Phe997 of ULK1MIT2 inserted on the hydrophobic groove of FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "ULK1MIT1 and ULK1MIT2 interact directly with FIP200, with the Leu967 of ULK1MIT1 and Phe997 of ULK1MIT2 inserted on the hydrophobic groove of FIP200 (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and B based on the AlphaFold2 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "ca60454c-41d9-4a50-8762-675802f7aa10",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C48",
+      "claim": "An in vitro pull-down assay indicated that ULK1 directly interacted with FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we failed to measure the affinity between ULK1 and FIP200 by ITC due to aggregation upon their mixing, an in vitro pull-down assay indicated that ULK1 directly interacted with FIP200, which was significantly attenuated by the FIP2A (L967A, F997A) mutation (Figure 3C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pull-down assays shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "f2e8d1e0-912c-4b95-afc0-775a46179404",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C49",
+      "claim": "The FIP2A mutation (L967A, F997A) significantly attenuates the interaction between ULK1 and FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we failed to measure the affinity between ULK1 and FIP200 by ITC due to aggregation upon their mixing, an in vitro pull-down assay indicated that ULK1 directly interacted with FIP200, which was significantly attenuated by the FIP2A (L967A, F997A) mutation (Figure 3C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pull-down assays shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "348bb599-c6bb-4bb4-95fc-950560012721",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C50",
+      "claim": "The ULK1FIP2A mutant lost the interaction with FIP200 while partially retaining the interaction with ATG13 in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the ULK1FIP2A mutant lost the interaction with FIP200 while partially retaining the interaction with ATG13 in cells (Figure 3E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoprecipitation experiments shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "47caddb9-ac9f-4f3e-b870-8d6573ade1a6",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C51",
+      "claim": "The ULK1FIP2A mutant retains substantial affinity with ATG13 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the ULK1FIP2A mutant retains substantial affinity with ATG13 in vitro by ITC (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ITC experiments shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "377cc70f-ffa1-4069-8d8a-25597f0e81ff",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C52",
+      "claim": "Three independent interactions exist within the ULK complex: ATG13\u2013FIP200, ATG13\u2013ULK1, and ULK1\u2013FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm the direct ULK1\u2013FIP200 interaction in vitro and in vivo. Our results establish the mode of the three independent interactions within the ULK complex, ATG13\u2013FIP200, ATG13\u2013ULK1, and ULK1\u2013FIP200, operating both in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the structural and functional data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "24d0a434-b3f4-4fc2-b93f-02eafb2c3b2a",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C53",
+      "claim": "Ulk1,2 DKO MEFs expressing the ULK1FIP2A mutant had partially but significantly reduced processed Halo bands upon starvation compared to ULK1WT-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ulk1,2 DKO MEFs expressing the ULK1FIP2A mutant had partially but significantly reduced processed Halo bands upon starvation compared to ULK1WT-expressing cells, confirming that the direct ULK1\u2013FIP200 interaction is crucial, although partially, for autophagy activity (Figure 3G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Halo-LC3 processing assays shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "c3b76279-6f8e-414a-8cf8-e15774c1bd19",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C54",
+      "claim": "The direct ULK1\u2013FIP200 interaction is crucial, although partially, for autophagy activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ulk1,2 DKO MEFs expressing the ULK1FIP2A mutant had partially but significantly reduced processed Halo bands upon starvation compared to ULK1WT-expressing cells, confirming that the direct ULK1\u2013FIP200 interaction is crucial, although partially, for autophagy activity (Figure 3G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the Halo-LC3 processing assays shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "8a7436b0-b7ee-4821-9c25-6f206b92f239",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C55",
+      "claim": "The partial phenotype of the ULK1FIP2A mutant is due to an indirect interaction between ULK1 and FIP200 via ATG13.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial phenotype would be due to an indirect interaction between ULK1 and FIP200 via ATG13, which was supported by the observation that the ULK1FIP2A mutant colocalized with FIP200 in cells, although less efficiently than ULK1WT (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the colocalization data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "1ca5cbec-7157-4262-9a1a-c0114e30f984",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C56",
+      "claim": "The ULK1FIP2A mutant colocalized with FIP200 in cells, although less efficiently than ULK1WT.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial phenotype would be due to an indirect interaction between ULK1 and FIP200 via ATG13, which was supported by the observation that the ULK1FIP2A mutant colocalized with FIP200 in cells, although less efficiently than ULK1WT (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence microscopy shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "0b49a349-8e1d-48cf-a606-7101a13925e8",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C57",
+      "claim": "ATG13FIP3A and ATG13ULK2A KI cells displayed partial colocalization with FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATG13FIP3A and ATG13ULK2A KI cells displayed partial colocalization with FIP200, whereas the ATG13FU5A KI cells displayed scarce colocalization with FIP200 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence microscopy shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "657be521-0eaa-48e0-83e6-3278bb53cdaa",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C58",
+      "claim": "ATG13FU5A KI cells displayed scarce colocalization with FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATG13FIP3A and ATG13ULK2A KI cells displayed partial colocalization with FIP200, whereas the ATG13FU5A KI cells displayed scarce colocalization with FIP200 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence microscopy shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "57825b72-fd0a-481d-878d-236a632e5bb4",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C59",
+      "claim": "Cleaved Halo was partially reduced in ATG13FIP3A and ATG13ULK2A KI cells compared to ATG13WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleaved Halo was partially reduced in ATG13FIP3A and ATG13ULK2A KI cells compared to ATG13WT cells. In contrast, cleaved Halo in ATG13FU5A KI cells was almost equivalent to that in the knockout cells (Figure 4D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Halo-LC3 processing assays shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "612bc4d1-25bc-413a-98d6-e3340bc31573",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C60",
+      "claim": "Cleaved Halo in ATG13FU5A KI cells was almost equivalent to that in the knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleaved Halo was partially reduced in ATG13FIP3A and ATG13ULK2A KI cells compared to ATG13WT cells. In contrast, cleaved Halo in ATG13FU5A KI cells was almost equivalent to that in the knockout cells (Figure 4D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Halo-LC3 processing assays shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "a6375f02-981c-42a2-b179-06f63e4b2bdf",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C61",
+      "claim": "ATG13WT KI cells show a ~25% reduction in cleaved Halo compared to WT HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that ATG13WT KI cells show a ~25% reduction in cleaved Halo compared to WT HeLa cells, suggesting that FLAG-tag KI only partially affects autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the Halo-LC3 processing assays shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "f2d5f57a-3e87-4a38-8ae2-df15722e48af",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C62",
+      "claim": "FLAG-tag KI only partially affects autophagic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that ATG13WT KI cells show a ~25% reduction in cleaved Halo compared to WT HeLa cells, suggesting that FLAG-tag KI only partially affects autophagic flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ATG13WT KI cells show reduced cleaved Halo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "713d3039-e0f3-47c8-824d-db9bb39f64b9",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C63",
+      "claim": "ATG13\u2013ULK1 and ATG13\u2013FIP200 bindings complement each other in autophagy function.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ATG13\u2013ULK1 and ATG13\u2013FIP200 bindings complement each other in autophagy function and that ULK1, ATG13, and FIP200 directly bind to each other to organize the robust ULK complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the functional assays with mutant KI cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "8e8238c3-5058-407f-a0b8-e606634ee5e9",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C64",
+      "claim": "ULK1, ATG13, and FIP200 directly bind to each other to organize the robust ULK complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ATG13\u2013ULK1 and ATG13\u2013FIP200 bindings complement each other in autophagy function and that ULK1, ATG13, and FIP200 directly bind to each other to organize the robust ULK complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the structural and functional data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "ed0629b9-18dc-4459-94dc-4a3b53447700",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C65",
+      "claim": "In ATG13FU5A KI cells, ATG9A still colocalized with FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, even in ATG13FU5A KI cells, where ATG13 is almost completely dissociated from the ULK complex, ATG9A still colocalized with FIP200 (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence microscopy shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "6a1b4ea6-660d-4133-9352-b75cec8d5cc3",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C66",
+      "claim": "p62 bodies recruit both FIP200 and ATG9 vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these puncta also overlapped with p62, it is likely that p62 bodies recruit both FIP200 and ATG9 vesicles (Hama et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the colocalization data and supported by citation to Hama et al., 2023.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "ef444f36-d357-4120-ae16-7eb4e0f6c7df",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C67",
+      "claim": "Phosphorylation of ATG14 at Ser29 is critical for autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Another key function of the ULK complex is the ULK1-dependent phosphorylation of ATGs, and phosphorylation of ATG14 at Ser29 is known to be particularly critical (Park et al., 2016; Wold et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Park et al., 2016 and Wold et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "903b9d10-467c-4775-b773-c09e7e7ba4d1",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C68",
+      "claim": "In ATG13FIP3A and ATG13FU5A KI cells, ATG14 phosphorylation was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In ATG13FIP3A and ATG13FU5A KI cells, ATG14 phosphorylation was significantly reduced, indicating decreased ULK1 activity (Figure 4\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblotting shown in Figure 4\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "ddbdcab9-c819-42aa-b79e-d7b5aec34ede",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C69",
+      "claim": "Reduced ULK1 activity is a key factor explaining the autophagy deficiency observed in ATG13FU5A KI cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data point to reduced ULK1 activity as a key factor explaining the autophagy deficiency observed in ATG13FU5A KI cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the ATG14 phosphorylation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "eeda9b31-d7ec-4d89-8f9e-7fb061f17d52",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C70",
+      "claim": "One major structural difference between the mammalian ULK complex and the yeast Atg1 complex is that one ATG13 binds to two FIP200s within the same FIP200 dimer in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "One major structural difference between the mammalian ULK complex we predicted here and the yeast Atg1 complex is that one ATG13 binds to two FIP200s within the same FIP200 dimer in mammals, whereas one Atg13 binds to two Atg17s in the distinct Atg17 dimers in yeast (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from comparison of the structures shown in Figure 4F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "50989cf5-6ce8-493e-8e80-04ad19905ac5",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C71",
+      "claim": "In yeast, one Atg13 binds to two Atg17s in distinct Atg17 dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "One major structural difference between the mammalian ULK complex we predicted here and the yeast Atg1 complex is that one ATG13 binds to two FIP200s within the same FIP200 dimer in mammals, whereas one Atg13 binds to two Atg17s in the distinct Atg17 dimers in yeast (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on prior knowledge of the yeast Atg1 complex structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "2240d889-4426-43f0-98fa-26dfc8bb2d22",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C72",
+      "claim": "The binding mode of Atg13 bridges Atg17 dimers to each other to form a higher-order assemblage in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter binding mode of Atg13 bridges Atg17 dimers to each other to form a higher-order assemblage (Yamamoto et al., 2016), which is considered to be the Atg1 complex's phase separation mechanism (Fujioka et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yamamoto et al., 2016 and Fujioka et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "5f24080a-2910-44e1-a3cb-0cded8c43832",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C73",
+      "claim": "ATG13 cannot bridge FIP200 dimers to each other and thus cannot induce a higher-order assemblage of the ULK complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ATG13 cannot bridge FIP200 dimers to each other and thus cannot induce a higher-order assemblage of the ULK complex, which necessitates another mechanism for phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural differences between mammalian and yeast complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "832ea432-ab3f-486d-8b60-b5329266560a",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C74",
+      "claim": "The triadic interaction of Atg1/ULK1, ATG13, and Atg11/Atg17/FIP200 has not been reported for any species other than mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The triadic interaction of Atg1/ULK1, ATG13, and Atg11/Atg17/FIP200 has not been reported for any species other than mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on review of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "f1b1f27b-41e5-440e-a6f6-10dff0645727",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C75",
+      "claim": "The triadic interaction is likely beneficial for cells that form the complicated cellular communities that comprise the metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "This triadic interaction is likely beneficial for cells that form the complicated cellular communities that comprise the metazoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the evolutionary significance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "1798111e-6acf-49fa-bb3e-698e46555056",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C76",
+      "claim": "The most likely physiological significance of the triadic interaction is the fine-tuning of tissue-specific autophagic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The most likely physiological significance is the fine-tuning of tissue-specific autophagic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the physiological role.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "7558da7d-40b9-4b19-8c15-155d6eae3da1",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C77",
+      "claim": "Several splicing variants of ATG13 are present in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, several splicing variants of ATG13 are present in vertebrates (Alers et al., 2014; Hieke et al., 2015; Jung et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Alers et al., 2014, Hieke et al., 2015, and Jung et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "3612728b-b308-4467-bade-17cf66c2f7ae",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C78",
+      "claim": "In humans, at least five splicing variants of ATG13 are known, including isoform 3 lacking the C-terminal ULK1-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, at least five splicing variants are known, including the isoform 3 lacking the C-terminal ULK1-binding site (MIMs, Figure 2A; Alers et al., 2014; Jung et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Alers et al., 2014 and Jung et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "a0fcbeda-9844-4346-ae04-a60a434c14ab",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C79",
+      "claim": "The avian Atg13 has seven splicing variants, some lacking parts of the FIP200 interaction site.",
+      "claim_type": "EXPLICIT",
+      "source": "The avian Atg13 has seven splicing variants, some lacking parts of the FIP200 interaction site (Alers et al., 2014; Hieke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Alers et al., 2014 and Hieke et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "957d44a4-926d-4f2e-a056-5164ff3b9915",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C80",
+      "claim": "A single disruption of the FIP200\u2013ATG13 or ULK1\u2013ATG13 interaction results in a partial reduction of autophagy activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This study found that a single disruption of the FIP200\u2013ATG13 or ULK1\u2013ATG13 interaction results in a partial reduction of autophagy activity (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the Halo-LC3 processing assays shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "bd586217-976f-4396-8efe-a4d94e14639b",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "claim_id": "C81",
+      "claim": "Tissue- and organ-specific fine-tuning of autophagy activity may occur by regulating the expression amount and ratio of splicing variants that lack some of the triad interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the individual context, the tissue- and organ-specific fine-tuning of the autophagy activity may occur by regulating the expression amount and ratio of splicing variants that lack some of the triad interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the regulatory mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AlphaFold2 predicted the structure of the ULK1\u2013ATG13\u2013FIP200 complex with 1:1:2 stoichiometry, showing that ATG13 engages both FIP200 protomers via phenylalanine residues and binds ULK1's tandem MIT domains. The predicted structure is consistent with prior low-resolution cryo-EM data and reveals extensive buried surface areas between the four molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The AlphaFold2 predictions (C2, C3, C4, C19\u2013C27) are internally consistent and align with prior structural data (C19). The buried surface area calculations (C20\u2013C24) provide quantitative support for the predicted interactions. The 1:1:2 stoichiometry (C4, C27) is consistent with prior literature and the structural model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "a18b9a6f-0719-4258-8622-343775eaadfa",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ATG13\u2013FIP200 interaction is mediated by three phenylalanine residues (F377, F394, F453) in ATG13 that insert into hydrophobic pockets at the base of FIP200's UBL domains. This interaction was validated by ITC (KD = 6.6 \u03bcM) and disrupted by the FIP3A mutation both in vitro and in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural prediction (C29) is validated by direct binding measurements via ITC (C30) and functional disruption by point mutations in vitro (C31) and in cells (C32). The convergence of computational, biophysical, and cellular evidence strongly supports this interaction mode.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ULK1\u2013ATG13 interaction is mediated by MIT\u2013MIM contacts similar to the yeast Atg1\u2013Atg13 complex. Two phenylalanine residues (F470, F512) in ATG13's MIM motifs insert into hydrophobic pockets of ULK1's tandem MIT domains, with a measured KD of 0.34 \u03bcM that is severely attenuated by the ULK2A mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural similarity to the yeast complex (C33, C34) is supported by prior crystallographic data. The predicted interaction mode (C35, C36) is validated by ITC measurements (C37) and mutational analysis (C38). The conclusion that MIT\u2013MIM contacts mediate this interaction (C44) is well-supported by converging structural and biochemical evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "12224222-2375-49d6-b83b-4129d4cd1f72",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ATG13 stabilizes ULK1 in cells, as evidenced by reduced ULK1 levels in ATG13 KO cells. This stabilization depends on the ATG13\u2013ULK1 interaction, since the ULK2A mutation in ATG13 fails to rescue ULK1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation that ULK1 levels are reduced in ATG13 KO cells (C39) and rescued by wild-type but not ULK2A mutant ATG13 (C42) provides strong evidence for ATG13-mediated stabilization (C40, C43). This mirrors the known ATG13-mediated stabilization of ATG101 (C41), providing additional support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "97a62266-2a9c-41cb-aa10-603c5138af46",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ULK1 and FIP200 interact directly via contacts between ULK1's MIT domains and FIP200's hydrophobic groove, involving residues L967 and F997. This interaction was demonstrated by pull-down assays and cellular co-immunoprecipitation, and is disrupted by the FIP2A mutation while retaining ATG13 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The direct ULK1\u2013FIP200 interaction is supported by AlphaFold2 predictions and cryo-EM structures (C45), despite conflicting with one prior report (C46). The interaction is validated by pull-down assays (C48) and cellular co-IP (C50), with specific residues identified (C47). The FIP2A mutation disrupts FIP200 binding while maintaining ATG13 interaction (C49, C50, C51), establishing three independent interactions within the complex (C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "3828891d-d99d-4f97-8f30-ad6151aac762",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The direct ULK1\u2013FIP200 interaction is partially but significantly important for autophagy activity. The ULK1FIP2A mutant shows reduced autophagic flux compared to wild-type, but retains partial activity due to indirect ULK1\u2013FIP200 interaction via ATG13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Halo-LC3 processing assay (C53) demonstrates that disrupting the direct ULK1\u2013FIP200 interaction reduces but does not abolish autophagy activity (C54). The partial phenotype is explained by indirect interaction via ATG13 (C55), supported by colocalization data (C56). The functional importance is clearly demonstrated, though the partial phenotype indicates redundancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "213eb47b-c6ef-4822-9784-5521d269360d",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The ATG13\u2013FIP200 and ATG13\u2013ULK1 interactions complement each other in autophagy function. Single disruptions (FIP3A or ULK2A) partially reduce autophagic flux, while simultaneous disruption (FU5A) nearly abolishes it, demonstrating that the triadic interaction is crucial for robust ULK complex formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The knock-in cell experiments (C57\u2013C60) demonstrate additive effects of disrupting individual interactions, with the double mutant (FU5A) showing near-complete loss of function. The FLAG-tag control (C61, C62) appropriately accounts for potential artifacts. The conclusion that the interactions complement each other (C63, C64, C80) is strongly supported by the dose-dependent functional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "dc2a9067-f97e-4886-8f5c-8ad09cd5f3c5",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In ATG13FU5A KI cells where ATG13 is dissociated from the ULK complex, ATG9A still colocalizes with FIP200, likely due to p62 body-mediated recruitment of both FIP200 and ATG9 vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The colocalization observation (C65) is clearly demonstrated, but the interpretation that p62 bodies recruit both components (C66) is speculative and based on inference from colocalization with p62. The authors acknowledge this limitation and suggest that evaluation under conditions preventing p62 body-mediated recruitment would be needed to assess autophagosome formation-associated recruitment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "1dc672a8-2b66-403d-89aa-2551b24fe618",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Disruption of the triadic ULK complex interactions reduces ULK1 kinase activity, as evidenced by decreased ATG14 phosphorylation at Ser29 in ATG13FIP3A and ATG13FU5A KI cells. This reduced ULK1 activity is a key factor explaining the autophagy deficiency in these mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The importance of ATG14 Ser29 phosphorylation is established by prior work (C67). The observation that this phosphorylation is reduced in mutant cells (C68) provides a mechanistic link between complex disruption and autophagy deficiency (C69). However, the complete loss of ATG14 phosphorylation in ATG13 KO cells remains unexplained, suggesting additional complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "b9b560f7-d9a7-4c32-a5e1-d310d3a528b6",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A major structural difference between the mammalian ULK complex and the yeast Atg1 complex is that mammalian ATG13 binds two FIP200s within the same dimer, whereas yeast Atg13 bridges distinct Atg17 dimers. This difference means mammalian ATG13 cannot induce higher-order assemblage through bridging, necessitating alternative phase separation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural comparison (C70, C71) is based on the AlphaFold2 model and prior knowledge of the yeast complex structure. The functional consequence regarding bridging and higher-order assemblage (C72, C73) is a logical inference from the structural differences. This represents a significant mechanistic distinction between the mammalian and yeast systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "03debbca-ecf5-4698-93dc-60b46788ae5c",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The triadic interaction among ULK1, ATG13, and FIP200 is unique to mammals and may enable tissue-specific fine-tuning of autophagy activity through regulation of ATG13 splicing variants that lack some interaction sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The uniqueness of the triadic interaction to mammals (C74) is stated based on literature review. The existence of multiple ATG13 splicing variants (C77\u2013C79) is well-documented. However, the proposed physiological significance for tissue-specific regulation (C75, C76, C81) is speculative and not directly tested. While the hypothesis is reasonable given the partial phenotypes of single mutations (C80), experimental validation in vivo would be required to support this regulatory model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "5ca8e906-21a4-4ecb-ab12-48268f703975",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge establishing the composition and function of the ULK/Atg1 complex in autophagy initiation, the state of structural knowledge prior to this study, and prior biochemical characterization of the mammalian ULK complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge in the field, supported by appropriate citations to prior literature. They provide necessary context for the current work but do not constitute novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "efd5c0d8-da13-4a0f-b5c5-dade9af76aee",
+      "content_id": "f887e78c-deb1-4703-8064-88c2cc462f6b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The triadic interaction among ULK1, ATG13, and FIP200 is crucial for autophagosome formation, with each interaction being additively important for autophagic flux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C5, C6) are well-supported by the collective experimental evidence from the mutational analysis and functional assays described in other claim groups. They represent the main conclusions of the study and are appropriately supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "79acc75a-da34-4e8d-8dc6-72d004f660f6",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "AlphaFold2 predicted the structure of the ULK1\u2013ATG13\u2013FIP200 complex with 1:1:2 stoichiometry, showing that ATG13 engages both FIP200 UBL domains via phenylalanines and binds ULK1's tandem MIT domains. The predicted structure is consistent with prior low-resolution cryo-EM data and shows extensive buried surface areas between the components.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple reviewers explicitly affirm the structural predictions. Reviewer 3 states the work 'makes use of AlphaFold2 to structurally predict interaction sites' and notes 'the data are very clear.' Reviewer 4 confirms 'the results obtained in this study reveal extensive binary interactions' and calls the data 'of high quality and convincing.' The editor notes the work 'provides valuable new insights into the architecture' with 'solid supporting evidence.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "3e608937-20c3-4c81-96ad-e9edee4085ff",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The ATG13\u2013FIP200 interaction is mediated by three phenylalanines (F377, F394, F453) that insert into hydrophobic pockets at the base of FIP200's UBL domains. ITC confirmed direct binding with KD = 6.6 \u03bcM, and the FIP3A mutation severely attenuates this interaction both in vitro and in cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly states 'Each binding interface of ATG13 (ATG13 with FIP300/ATG13 with ULK1) is confirmed biochemically with ITC and IP experiments from cells.' Reviewer 4 notes the authors 'pinpoint the critical residues at each interaction interface' and that 'mutating these critical residues led to the loss of binary interactions.' No concerns are raised about these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The ULK1\u2013ATG13 interaction is mediated by MIT\u2013MIM contacts similar to the yeast Atg1\u2013Atg13 complex, with two phenylalanines (F470, F512) inserted into hydrophobic pockets of ULK1's MIT domains. ITC confirmed binding with KD = 0.34 \u03bcM, and the ULK2A mutation severely attenuates this interaction. ATG13 stabilizes ULK1 expression in cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 confirms 'Each binding interface of ATG13 (ATG13 with FIP300/ATG13 with ULK1) is confirmed biochemically with ITC and IP experiments from cells.' Reviewer 4 states the work 'reveal[s] extensive binary interactions between ULK1 and ATG13' and the 'experimental data presented by the authors are of high quality and convincing.' The structural similarity to yeast is noted without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "ULK1 directly interacts with FIP200 via MIT domain contacts (L967, F997), as demonstrated by pull-down assays and cellular IP experiments. The FIP2A mutation significantly attenuates this interaction. Three independent binary interactions (ATG13\u2013FIP200, ATG13\u2013ULK1, ULK1\u2013FIP200) comprise the ULK complex.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 states 'IP experiments with ULK1 and FIP200 also validate interaction domains' and confirms the work 'establish[es] the mode of the three independent interactions within the ULK complex.' Reviewer 4 notes the authors 'reveal extensive binary interactions between ULK1 and ATG13, between ULK1 and FIP200, and between ATG13 and FIP200.' No concerns are raised about the direct ULK1\u2013FIP200 interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "1d36e86c-d167-457d-90b9-1a82f0773c8d",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Each binary interaction within the ULK complex is additively important for autophagic flux. CRISPR knock-in mutations disrupting single interactions (FIP3A, ULK2A, FIP2A) show partial reduction in autophagy, while disrupting both ATG13 interactions (FU5A) nearly abolishes autophagy. The triadic interaction is crucial for autophagosome formation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 highlights this as 'a real strength of the work' noting 'the authors make CRISPR KI mutations of the binding interface point mutants' and 'show that ATG13's ability to interact with both ULK1 and FIP200 is essential for a full autophagy response.' Reviewer 4 states 'the authors showed that the ATG13-ULK1 interaction and the ATG13-FIP200 interaction are partially redundant for maintaining the complex.' The functional data are called 'convincing' and 'of high quality.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "41395ba7-168f-408c-971f-d6c2e8f4824c",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "ATG14 phosphorylation at Ser29 is significantly reduced in ATG13FIP3A and ATG13FU5A KI cells, indicating decreased ULK1 kinase activity. Reduced ULK1 activity is a key factor explaining autophagy deficiency in ATG13FU5A KI cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 initially raised concerns about ULK1 kinase activity ('how is this altered by disrupting its interactions with ATG13 and/or FIP200?') but in the update states 'I feel the authors have addressed my concerns in their revised manuscript,' indicating the phosphorylation data adequately address this question. No other reviewers challenge these findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "245af01a-5fa3-4517-90e5-88a8be9a64b1",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "In ATG13FU5A KI cells where ATG13 is dissociated from the ULK complex, ATG9A still colocalizes with FIP200, likely because p62 bodies recruit both FIP200 and ATG9 vesicles independently.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is presented as supplementary data and is not specifically discussed by reviewers. The lack of reviewer comment combined with overall positive assessments of the data quality suggests implicit acceptance of this observation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "1bf03038-5d5d-4aed-b843-9359014bd5c7",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "A major structural difference between mammalian and yeast complexes is that one ATG13 binds to two FIP200s within the same dimer in mammals, whereas in yeast one Atg13 bridges distinct Atg17 dimers. This difference means ATG13 cannot induce higher-order assemblage of the mammalian ULK complex as it does in yeast.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes the work 'provides valuable new insights into the architecture of the autophagy initiation complex' building on previous studies. Reviewer 3 acknowledges the work 'independently helps to build a consensus for ULK1 complex structure' in comparison to yeast. The structural comparison is accepted without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "734740bd-b663-4887-8472-fc95b31cf134",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The triadic interaction of ULK1, ATG13, and FIP200 is unique to mammals and may enable fine-tuning of tissue-specific autophagic activity through regulation of ATG13 splicing variants that lack some interaction sites. Several splicing variants exist in vertebrates, including human isoforms lacking ULK1- or FIP200-binding sites.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are largely speculative about physiological significance and evolutionary implications. While reviewers do not challenge the existence of splicing variants (which is cited literature), they do not explicitly endorse the speculative interpretations about tissue-specific regulation. The claims about 'likely beneficial' effects and 'most likely physiological significance' are presented without experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "f5b1858d-700e-4e04-9987-3224f78244d8",
+      "content_id": "bf0d4de7-6ec6-4250-a9ca-067ca51f76cc",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "ATG13WT KI cells show ~25% reduction in cleaved Halo compared to wild-type HeLa cells, suggesting that FLAG-tag knock-in only partially affects autophagic flux.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This technical observation about the KI system is presented as a control and is not challenged by reviewers. Reviewer 3 praises the CRISPR KI approach as 'not a trivial task and is the best approach as everything is monitored under endogenous conditions,' implicitly accepting the technical limitations noted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "35fb6305-e80d-450a-aa4e-1ae80004226f",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "6f61105a-fc0e-49ef-ba79-7fde78940a58",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "fdb70159-41fc-4cef-b4e0-5abbb3638d98",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "e5a42109-ed37-49c2-8519-d6cb2e02822d",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "9824f0ef-87f9-47dc-ac0f-87afcfd9f581",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "59300149-314e-40fb-9203-7d707841eb23",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "67caa39e-a76f-458a-b0f8-0bd265fafec2",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "70cd134b-2098-4b73-b84f-de730a313030",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "eee3190f-8596-4e6a-84bf-e4efb7ec530b",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "5896ba94-cf09-4d9e-8661-04546ccc34de",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "d9c617b6-b64b-4b56-9bfb-a7bc0d04b230",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "85189425-ef64-4d1d-ad3e-f047bae58362",
+      "result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831"
+    },
+    {
+      "claim_id": "acc08565-4c2e-4241-a8c4-343943cc7fb8",
+      "result_id": "a18b9a6f-0719-4258-8622-343775eaadfa"
+    },
+    {
+      "claim_id": "217a5d36-6e1e-476e-b9d1-e27efb613167",
+      "result_id": "a18b9a6f-0719-4258-8622-343775eaadfa"
+    },
+    {
+      "claim_id": "eebdfdf3-dce4-4a59-8aa8-73ead900e6c2",
+      "result_id": "a18b9a6f-0719-4258-8622-343775eaadfa"
+    },
+    {
+      "claim_id": "1046ff30-0d63-4d91-9c12-66e338e7b3ef",
+      "result_id": "a18b9a6f-0719-4258-8622-343775eaadfa"
+    },
+    {
+      "claim_id": "88d1dfbb-96f8-4fab-ad3d-5e13506c21a2",
+      "result_id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135"
+    },
+    {
+      "claim_id": "7c664108-5fc2-4d13-af43-d1da515819e2",
+      "result_id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135"
+    },
+    {
+      "claim_id": "feeaaa6d-57f9-47b1-b5ee-1bb64db82f7b",
+      "result_id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135"
+    },
+    {
+      "claim_id": "ebf8a707-b57e-4b0d-8738-e724ac0ba15f",
+      "result_id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135"
+    },
+    {
+      "claim_id": "942fa36b-56e3-45a8-966e-8c61a3d670e0",
+      "result_id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135"
+    },
+    {
+      "claim_id": "44f67ee5-ae43-40d7-9c40-b47b9cb5c376",
+      "result_id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135"
+    },
+    {
+      "claim_id": "45900c0d-a314-424e-865f-0bafb9faf5c0",
+      "result_id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135"
+    },
+    {
+      "claim_id": "3a6ff20e-6867-42a2-80c4-516e86c45104",
+      "result_id": "12224222-2375-49d6-b83b-4129d4cd1f72"
+    },
+    {
+      "claim_id": "3cab4591-c5be-41ea-9071-20eb95e86a9c",
+      "result_id": "12224222-2375-49d6-b83b-4129d4cd1f72"
+    },
+    {
+      "claim_id": "79625a6b-0d16-4dd0-b81d-7ce28cf47e6b",
+      "result_id": "12224222-2375-49d6-b83b-4129d4cd1f72"
+    },
+    {
+      "claim_id": "0fb08fa5-d24e-423d-b5dc-b20efe87f517",
+      "result_id": "12224222-2375-49d6-b83b-4129d4cd1f72"
+    },
+    {
+      "claim_id": "d929d7f4-9d8c-4de9-9ab4-0f203c325a51",
+      "result_id": "12224222-2375-49d6-b83b-4129d4cd1f72"
+    },
+    {
+      "claim_id": "2c730ad1-bf32-4248-9bcb-f3c9733021c8",
+      "result_id": "97a62266-2a9c-41cb-aa10-603c5138af46"
+    },
+    {
+      "claim_id": "6a9e080a-c69d-4220-b3f7-34031b601ab4",
+      "result_id": "97a62266-2a9c-41cb-aa10-603c5138af46"
+    },
+    {
+      "claim_id": "af455823-e7ae-400b-b6cf-27af6ed05835",
+      "result_id": "97a62266-2a9c-41cb-aa10-603c5138af46"
+    },
+    {
+      "claim_id": "ca60454c-41d9-4a50-8762-675802f7aa10",
+      "result_id": "97a62266-2a9c-41cb-aa10-603c5138af46"
+    },
+    {
+      "claim_id": "f2e8d1e0-912c-4b95-afc0-775a46179404",
+      "result_id": "97a62266-2a9c-41cb-aa10-603c5138af46"
+    },
+    {
+      "claim_id": "348bb599-c6bb-4bb4-95fc-950560012721",
+      "result_id": "97a62266-2a9c-41cb-aa10-603c5138af46"
+    },
+    {
+      "claim_id": "47caddb9-ac9f-4f3e-b870-8d6573ade1a6",
+      "result_id": "97a62266-2a9c-41cb-aa10-603c5138af46"
+    },
+    {
+      "claim_id": "377cc70f-ffa1-4069-8d8a-25597f0e81ff",
+      "result_id": "97a62266-2a9c-41cb-aa10-603c5138af46"
+    },
+    {
+      "claim_id": "24d0a434-b3f4-4fc2-b93f-02eafb2c3b2a",
+      "result_id": "3828891d-d99d-4f97-8f30-ad6151aac762"
+    },
+    {
+      "claim_id": "c3b76279-6f8e-414a-8cf8-e15774c1bd19",
+      "result_id": "3828891d-d99d-4f97-8f30-ad6151aac762"
+    },
+    {
+      "claim_id": "8a7436b0-b7ee-4821-9c25-6f206b92f239",
+      "result_id": "3828891d-d99d-4f97-8f30-ad6151aac762"
+    },
+    {
+      "claim_id": "1ca5cbec-7157-4262-9a1a-c0114e30f984",
+      "result_id": "3828891d-d99d-4f97-8f30-ad6151aac762"
+    },
+    {
+      "claim_id": "0b49a349-8e1d-48cf-a606-7101a13925e8",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "657be521-0eaa-48e0-83e6-3278bb53cdaa",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "57825b72-fd0a-481d-878d-236a632e5bb4",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "612bc4d1-25bc-413a-98d6-e3340bc31573",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "a6375f02-981c-42a2-b179-06f63e4b2bdf",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "f2d5f57a-3e87-4a38-8ae2-df15722e48af",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "713d3039-e0f3-47c8-824d-db9bb39f64b9",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "8e8238c3-5058-407f-a0b8-e606634ee5e9",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "957d44a4-926d-4f2e-a056-5164ff3b9915",
+      "result_id": "213eb47b-c6ef-4822-9784-5521d269360d"
+    },
+    {
+      "claim_id": "ed0629b9-18dc-4459-94dc-4a3b53447700",
+      "result_id": "dc2a9067-f97e-4886-8f5c-8ad09cd5f3c5"
+    },
+    {
+      "claim_id": "6a1b4ea6-660d-4133-9352-b75cec8d5cc3",
+      "result_id": "dc2a9067-f97e-4886-8f5c-8ad09cd5f3c5"
+    },
+    {
+      "claim_id": "ef444f36-d357-4120-ae16-7eb4e0f6c7df",
+      "result_id": "1dc672a8-2b66-403d-89aa-2551b24fe618"
+    },
+    {
+      "claim_id": "903b9d10-467c-4775-b773-c09e7e7ba4d1",
+      "result_id": "1dc672a8-2b66-403d-89aa-2551b24fe618"
+    },
+    {
+      "claim_id": "ddbdcab9-c819-42aa-b79e-d7b5aec34ede",
+      "result_id": "1dc672a8-2b66-403d-89aa-2551b24fe618"
+    },
+    {
+      "claim_id": "eeda9b31-d7ec-4d89-8f9e-7fb061f17d52",
+      "result_id": "b9b560f7-d9a7-4c32-a5e1-d310d3a528b6"
+    },
+    {
+      "claim_id": "50989cf5-6ce8-493e-8e80-04ad19905ac5",
+      "result_id": "b9b560f7-d9a7-4c32-a5e1-d310d3a528b6"
+    },
+    {
+      "claim_id": "2240d889-4426-43f0-98fa-26dfc8bb2d22",
+      "result_id": "b9b560f7-d9a7-4c32-a5e1-d310d3a528b6"
+    },
+    {
+      "claim_id": "5f24080a-2910-44e1-a3cb-0cded8c43832",
+      "result_id": "b9b560f7-d9a7-4c32-a5e1-d310d3a528b6"
+    },
+    {
+      "claim_id": "832ea432-ab3f-486d-8b60-b5329266560a",
+      "result_id": "03debbca-ecf5-4698-93dc-60b46788ae5c"
+    },
+    {
+      "claim_id": "f1b1f27b-41e5-440e-a6f6-10dff0645727",
+      "result_id": "03debbca-ecf5-4698-93dc-60b46788ae5c"
+    },
+    {
+      "claim_id": "1798111e-6acf-49fa-bb3e-698e46555056",
+      "result_id": "03debbca-ecf5-4698-93dc-60b46788ae5c"
+    },
+    {
+      "claim_id": "7558da7d-40b9-4b19-8c15-155d6eae3da1",
+      "result_id": "03debbca-ecf5-4698-93dc-60b46788ae5c"
+    },
+    {
+      "claim_id": "3612728b-b308-4467-bade-17cf66c2f7ae",
+      "result_id": "03debbca-ecf5-4698-93dc-60b46788ae5c"
+    },
+    {
+      "claim_id": "a0fcbeda-9844-4346-ae04-a60a434c14ab",
+      "result_id": "03debbca-ecf5-4698-93dc-60b46788ae5c"
+    },
+    {
+      "claim_id": "bd586217-976f-4396-8efe-a4d94e14639b",
+      "result_id": "03debbca-ecf5-4698-93dc-60b46788ae5c"
+    },
+    {
+      "claim_id": "6d188a5d-01fe-43dc-8255-eebf772fcd6c",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "9113c4cf-77f6-49d3-8274-2a454dba9703",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "dbb612a9-c986-4ba3-8fc0-78caf1884f4e",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "c203b916-6556-4937-9726-8eccdd3e94c7",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "6589b040-14bc-498a-987f-ff98ba32b453",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "cc26e408-2168-48b2-8f72-b28cafbee391",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "6ef6c605-67aa-448c-b299-b228f42ddab6",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "8c603b45-89c2-4bd6-be9b-d465906d23f9",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "08379086-2374-4c82-bb8f-9692b8c69b73",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "7a017b81-fffe-4a99-8081-e7e1de98b981",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "f28dfedc-b3d4-4a1d-9065-669b911bf060",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "2ecb9892-0881-4fb5-bb86-5ccb616bc590",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "e80bc546-7aff-4eec-b74a-c3b90e792e94",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "cd46524c-86dc-40db-91b8-b4a6214b6f62",
+      "result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975"
+    },
+    {
+      "claim_id": "18a0c91b-c066-4143-b90c-7b3febc37cd3",
+      "result_id": "efd5c0d8-da13-4a0f-b5c5-dade9af76aee"
+    },
+    {
+      "claim_id": "d824251e-3083-4d41-8467-4c026596f911",
+      "result_id": "efd5c0d8-da13-4a0f-b5c5-dade9af76aee"
+    },
+    {
+      "claim_id": "35fb6305-e80d-450a-aa4e-1ae80004226f",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "6f61105a-fc0e-49ef-ba79-7fde78940a58",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "fdb70159-41fc-4cef-b4e0-5abbb3638d98",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "e5a42109-ed37-49c2-8519-d6cb2e02822d",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "9824f0ef-87f9-47dc-ac0f-87afcfd9f581",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "59300149-314e-40fb-9203-7d707841eb23",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "67caa39e-a76f-458a-b0f8-0bd265fafec2",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "70cd134b-2098-4b73-b84f-de730a313030",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "eee3190f-8596-4e6a-84bf-e4efb7ec530b",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "5896ba94-cf09-4d9e-8661-04546ccc34de",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "d9c617b6-b64b-4b56-9bfb-a7bc0d04b230",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "85189425-ef64-4d1d-ad3e-f047bae58362",
+      "result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6"
+    },
+    {
+      "claim_id": "acc08565-4c2e-4241-a8c4-343943cc7fb8",
+      "result_id": "3e608937-20c3-4c81-96ad-e9edee4085ff"
+    },
+    {
+      "claim_id": "217a5d36-6e1e-476e-b9d1-e27efb613167",
+      "result_id": "3e608937-20c3-4c81-96ad-e9edee4085ff"
+    },
+    {
+      "claim_id": "eebdfdf3-dce4-4a59-8aa8-73ead900e6c2",
+      "result_id": "3e608937-20c3-4c81-96ad-e9edee4085ff"
+    },
+    {
+      "claim_id": "1046ff30-0d63-4d91-9c12-66e338e7b3ef",
+      "result_id": "3e608937-20c3-4c81-96ad-e9edee4085ff"
+    },
+    {
+      "claim_id": "88d1dfbb-96f8-4fab-ad3d-5e13506c21a2",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "7c664108-5fc2-4d13-af43-d1da515819e2",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "feeaaa6d-57f9-47b1-b5ee-1bb64db82f7b",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "ebf8a707-b57e-4b0d-8738-e724ac0ba15f",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "942fa36b-56e3-45a8-966e-8c61a3d670e0",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "44f67ee5-ae43-40d7-9c40-b47b9cb5c376",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "3a6ff20e-6867-42a2-80c4-516e86c45104",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "3cab4591-c5be-41ea-9071-20eb95e86a9c",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "79625a6b-0d16-4dd0-b81d-7ce28cf47e6b",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "0fb08fa5-d24e-423d-b5dc-b20efe87f517",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "d929d7f4-9d8c-4de9-9ab4-0f203c325a51",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "45900c0d-a314-424e-865f-0bafb9faf5c0",
+      "result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7"
+    },
+    {
+      "claim_id": "2c730ad1-bf32-4248-9bcb-f3c9733021c8",
+      "result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93"
+    },
+    {
+      "claim_id": "6a9e080a-c69d-4220-b3f7-34031b601ab4",
+      "result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93"
+    },
+    {
+      "claim_id": "af455823-e7ae-400b-b6cf-27af6ed05835",
+      "result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93"
+    },
+    {
+      "claim_id": "ca60454c-41d9-4a50-8762-675802f7aa10",
+      "result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93"
+    },
+    {
+      "claim_id": "f2e8d1e0-912c-4b95-afc0-775a46179404",
+      "result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93"
+    },
+    {
+      "claim_id": "348bb599-c6bb-4bb4-95fc-950560012721",
+      "result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93"
+    },
+    {
+      "claim_id": "47caddb9-ac9f-4f3e-b870-8d6573ade1a6",
+      "result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93"
+    },
+    {
+      "claim_id": "377cc70f-ffa1-4069-8d8a-25597f0e81ff",
+      "result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93"
+    },
+    {
+      "claim_id": "18a0c91b-c066-4143-b90c-7b3febc37cd3",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "d824251e-3083-4d41-8467-4c026596f911",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "24d0a434-b3f4-4fc2-b93f-02eafb2c3b2a",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "c3b76279-6f8e-414a-8cf8-e15774c1bd19",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "8a7436b0-b7ee-4821-9c25-6f206b92f239",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "1ca5cbec-7157-4262-9a1a-c0114e30f984",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "0b49a349-8e1d-48cf-a606-7101a13925e8",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "657be521-0eaa-48e0-83e6-3278bb53cdaa",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "57825b72-fd0a-481d-878d-236a632e5bb4",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "612bc4d1-25bc-413a-98d6-e3340bc31573",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "713d3039-e0f3-47c8-824d-db9bb39f64b9",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "8e8238c3-5058-407f-a0b8-e606634ee5e9",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "957d44a4-926d-4f2e-a056-5164ff3b9915",
+      "result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d"
+    },
+    {
+      "claim_id": "903b9d10-467c-4775-b773-c09e7e7ba4d1",
+      "result_id": "41395ba7-168f-408c-971f-d6c2e8f4824c"
+    },
+    {
+      "claim_id": "ddbdcab9-c819-42aa-b79e-d7b5aec34ede",
+      "result_id": "41395ba7-168f-408c-971f-d6c2e8f4824c"
+    },
+    {
+      "claim_id": "ed0629b9-18dc-4459-94dc-4a3b53447700",
+      "result_id": "245af01a-5fa3-4517-90e5-88a8be9a64b1"
+    },
+    {
+      "claim_id": "6a1b4ea6-660d-4133-9352-b75cec8d5cc3",
+      "result_id": "245af01a-5fa3-4517-90e5-88a8be9a64b1"
+    },
+    {
+      "claim_id": "eeda9b31-d7ec-4d89-8f9e-7fb061f17d52",
+      "result_id": "1bf03038-5d5d-4aed-b843-9359014bd5c7"
+    },
+    {
+      "claim_id": "50989cf5-6ce8-493e-8e80-04ad19905ac5",
+      "result_id": "1bf03038-5d5d-4aed-b843-9359014bd5c7"
+    },
+    {
+      "claim_id": "2240d889-4426-43f0-98fa-26dfc8bb2d22",
+      "result_id": "1bf03038-5d5d-4aed-b843-9359014bd5c7"
+    },
+    {
+      "claim_id": "5f24080a-2910-44e1-a3cb-0cded8c43832",
+      "result_id": "1bf03038-5d5d-4aed-b843-9359014bd5c7"
+    },
+    {
+      "claim_id": "832ea432-ab3f-486d-8b60-b5329266560a",
+      "result_id": "734740bd-b663-4887-8472-fc95b31cf134"
+    },
+    {
+      "claim_id": "f1b1f27b-41e5-440e-a6f6-10dff0645727",
+      "result_id": "734740bd-b663-4887-8472-fc95b31cf134"
+    },
+    {
+      "claim_id": "1798111e-6acf-49fa-bb3e-698e46555056",
+      "result_id": "734740bd-b663-4887-8472-fc95b31cf134"
+    },
+    {
+      "claim_id": "7558da7d-40b9-4b19-8c15-155d6eae3da1",
+      "result_id": "734740bd-b663-4887-8472-fc95b31cf134"
+    },
+    {
+      "claim_id": "3612728b-b308-4467-bade-17cf66c2f7ae",
+      "result_id": "734740bd-b663-4887-8472-fc95b31cf134"
+    },
+    {
+      "claim_id": "a0fcbeda-9844-4346-ae04-a60a434c14ab",
+      "result_id": "734740bd-b663-4887-8472-fc95b31cf134"
+    },
+    {
+      "claim_id": "bd586217-976f-4396-8efe-a4d94e14639b",
+      "result_id": "734740bd-b663-4887-8472-fc95b31cf134"
+    },
+    {
+      "claim_id": "a6375f02-981c-42a2-b179-06f63e4b2bdf",
+      "result_id": "f5b1858d-700e-4e04-9987-3224f78244d8"
+    },
+    {
+      "claim_id": "f2d5f57a-3e87-4a38-8ae2-df15722e48af",
+      "result_id": "f5b1858d-700e-4e04-9987-3224f78244d8"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "533a1384-0858-4449-85ef-b98e061041d2",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "ab0d0bb6-b3d8-4dd8-85db-2932eba13831",
+      "peer_result_id": "79acc75a-da34-4e8d-8dc6-72d004f660f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on AlphaFold2 structural predictions (C2-C4, C19-C27). Both evaluations find the structural models, buried surface area calculations, and 1:1:2 stoichiometry well-supported. Peer reviewers explicitly praise the clarity and quality of structural data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "9b97b32e-4960-47c8-ab6f-33b6f0625481",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a18b9a6f-0719-4258-8622-343775eaadfa",
+      "peer_result_id": "3e608937-20c3-4c81-96ad-e9edee4085ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on ATG13-ULK1 interaction validation (C29-C32). Both evaluations confirm that structural predictions are validated by ITC, point mutations, and cellular assays. Peer reviewers explicitly note the biochemical confirmation and identification of critical residues.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "4beb1dce-dbbb-4064-8a1a-3d76d10136cb",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "d60ee049-fe45-4a2b-8cf9-d6cfc306c135",
+      "peer_result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on ATG13-FIP200 interaction and MIT-MIM contacts (C33-C38, C44). OpenEval focuses on structural similarity to yeast and validation by ITC/mutations. Peer review (R3) combines this with ULK1 stabilization claims (C39-C43), confirming biochemical validation and high data quality across all ATG13 interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "2f0f96b9-5f01-4e14-9ec8-df77697b0530",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "12224222-2375-49d6-b83b-4129d4cd1f72",
+      "peer_result_id": "bc94877b-ab76-4eb2-9f68-3e93ffb1aeb7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses ULK1 stabilization by ATG13 (C39-C43) as a separate result. Peer review R3 groups this with broader ATG13 interaction validation, confirming the extensive binary interactions. Both find the evidence convincing, though organized differently.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "6f718124-7386-4700-b1db-5005705a111a",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "97a62266-2a9c-41cb-aa10-603c5138af46",
+      "peer_result_id": "8100c506-c7a7-4bc0-8b33-79c1d65cef93",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on direct ULK1-FIP200 interaction (C45-C52). Both evaluations accept the AlphaFold2 predictions, pull-down assays, and cellular co-IP data. Peer reviewers explicitly confirm the extensive binary interactions and note no concerns about this finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "7e495fba-bd6d-4a7a-8f78-269919d9350e",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "3828891d-d99d-4f97-8f30-ad6151aac762",
+      "peer_result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address functional consequences of disrupting interactions (C53-C56), but peer review R5 combines this with broader functional data (C5-C6, C57-C64, C80). OpenEval finds partial phenotype well-explained by redundancy. Peer reviewers praise the CRISPR KI approach and find functional data convincing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "3265c8c6-e239-4a1f-9b8a-97d6778d0616",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "213eb47b-c6ef-4822-9784-5521d269360d",
+      "peer_result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on additive effects of mutations and complementary interactions (C57-C64, C80). OpenEval emphasizes dose-dependent effects and FLAG-tag controls (C61-C62). Peer review highlights this as a strength, noting the CRISPR KI approach demonstrates partial redundancy of ATG13-ULK1 and ATG13-FIP200 interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "e66967cc-50a9-4698-bece-4e5e9141593f",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "dc2a9067-f97e-4886-8f5c-8ad09cd5f3c5",
+      "peer_result_id": "245af01a-5fa3-4517-90e5-88a8be9a64b1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on colocalization observation (C65-C66), but both express caution. OpenEval rates as UNCERTAIN, noting the interpretation about p62 body recruitment is speculative. Peer review implicitly accepts through lack of challenge, but this finding is supplementary and not extensively discussed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "60c6ad2b-6aff-465f-a6ac-6caeb2c56502",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "1dc672a8-2b66-403d-89aa-2551b24fe618",
+      "peer_result_id": "41395ba7-168f-408c-971f-d6c2e8f4824c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address ATG14 Ser29 phosphorylation (C68-C69). OpenEval finds the mechanistic link supported but notes unexplained complexity. Peer review R6 indicates initial concerns about ULK1 kinase activity were addressed in revision, suggesting acceptance of phosphorylation data. OpenEval also addresses C67 not covered by peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "3f82f847-b001-42bc-9f1d-a66c326ecaa7",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b9b560f7-d9a7-4c32-a5e1-d310d3a528b6",
+      "peer_result_id": "1bf03038-5d5d-4aed-b843-9359014bd5c7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on structural comparison with yeast (C70-C73). Both evaluations accept the structural differences and functional consequences regarding bridging and higher-order assemblage. Peer reviewers note the work builds consensus for ULK1 complex structure compared to yeast.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "3a60e226-5b6d-4d4e-90d2-64d2b96e78b1",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "03debbca-ecf5-4698-93dc-60b46788ae5c",
+      "peer_result_id": "734740bd-b663-4887-8472-fc95b31cf134",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on UNCERTAIN evaluation of physiological significance claims (C74-C79, C81). Both note that while splicing variants exist (documented in literature), the proposed tissue-specific regulation is speculative without experimental validation. Neither evaluation challenges the facts but both question interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "d167d6b7-99f7-487a-b2b5-faebb6a39dbc",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "efd5c0d8-da13-4a0f-b5c5-dade9af76aee",
+      "peer_result_id": "1d36e86c-d167-457d-90b9-1a82f0773c8d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses summary claims C5-C6 separately, finding them well-supported by collective evidence. Peer review R5 integrates these claims with functional data (C53-C64, C80), praising the overall demonstration that ATG13's dual interactions are essential for full autophagy response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "0dad1305-d66a-47a6-8b18-2a65cb315d6f",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "213eb47b-c6ef-4822-9784-5521d269360d",
+      "peer_result_id": "f5b1858d-700e-4e04-9987-3224f78244d8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on FLAG-tag control observations (C61-C62). OpenEval includes these as technical controls in functional analysis. Peer review R10 implicitly accepts these technical limitations, with Reviewer 3 praising the CRISPR KI approach while acknowledging its constraints.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    },
+    {
+      "id": "1f90b636-cfc5-4da1-adf2-bb41400da47a",
+      "submission_id": "bc72ef7c-84b2-4601-844f-bacf18f133ee",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "5ca8e906-21a4-4ecb-ab12-48268f703975",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval separately evaluates background/context claims (C1, C7-C18, C28) as supported by literature citations. Peer review does not separately address these established knowledge claims, focusing instead on novel findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:15:33.268680Z"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C24",
+      "C26",
+      "C42",
+      "C43"
+    ],
+    "result": "The central finding is that in E-PV-SOM recurrently connected networks, SOM-mediated modulation can simultaneously increase neuronal gain and network stability when recurrent feedback connections are present, disentangling the typical inverse relationship between these properties. This effect depends critically on circuit connectivity and network state.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this core finding. Reviewer 1 states the paper provides 'convincing evidence that the interplay of these inhibitory circuits can separately control network gain and stability.' Reviewer 2 notes the authors provide 'compelling evidence that the existence of multiple interneuron classes can explain the counterintuitive finding that inhibitory modulation can increase the gain of the excitatory cell population while also increasing the stability.' Reviewer 3 acknowledges this as 'potentially interesting consequences for cortical computation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The authors demonstrate that just two network motifs determine the sign of changes in E rates following SOM modulation: a disinhibitory component (SOM\u2192PV\u2192E and PV\u2192PV connections) and an inhibitory component (SOM\u2192E connections).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly praises this contribution, stating the paper sheds 'light on two opposing circuit motifs involved in the canonical E-PV-SOM circuitry - namely, direct inhibition (SOM -> E) vs disinhibition (SOM -> PV -> E).' The reviewers do not challenge this analytical simplification or the identification of these motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In feedforward SOM modulation of the E-PV circuit (without recurrent feedback to SOM), network gain is largest for high E rates and low PV rates, while stability is highest for large PV and low E rates, resulting in an inverse relationship where high gain accompanies low stability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges this finding, noting 'the thorough investigation of how changes in the connectivity structure affect the gain-stability relationship is a major strength of this work.' No reviewer challenges the inverse relationship in feedforward configurations, and Reviewer 1 confirms the paper provides 'convincing evidence' for the interplay of inhibitory circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C59"
+    ],
+    "result": "The authors demonstrate through simulations with noisy inputs that their main findings from linearized analysis hold in stochastically-driven regimes, including that adding feedback from PV to SOM with negative SOM modulation increases both stability and gain.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly praises this extension: 'While the fixed-point analysis has potentially substantial limitations for understanding cortical computations away from the steady-state, the authors used simulations to verify that their main findings hold in the stochastically-driven regime that more closely reflects the dynamics observed in in vivo neuroscience experiments.' Reviewer 1 also notes 'the addition of numerical simulations to extend the conclusions beyond the linear range of network behavior are also quite helpful.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C41",
+      "C53"
+    ],
+    "result": "The authors show that changing synaptic weights has non-intuitive effects on network gain and stability, with PV self-coupling having large effects on both properties while SOM self-coupling has minimal effect. Small changes in synaptic strength can switch the sign of how SOM modulation affects rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly highlights this as a strength: 'The thorough investigation of how changes in the connectivity structure affect the gain-stability relationship is a major strength of this work. It provides an opportunity to understand when and why gain and stability will or will not both increase together.' No reviewer challenges these specific findings about synaptic weight effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C57"
+    ],
+    "result": "Tuning curve changes following SOM modulation depend on the underlying network configuration and can differ largely in their components, with specific connectivity patterns producing different combinations of additive, subtractive, multiplicative, and divisive changes across populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 acknowledges the authors 'link SOM modulation in different connectivity regimes to versatile computations in visual processing in simple models.' Reviewer 2 notes the work 'provides a nice bridge to the experimental literature, where different gain-stability relationships are reported from different studies.' No reviewer challenges the tuning curve analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors cite experimental evidence showing variable effects of SOM modulation on E neuron activity across different cortical areas and layers, including both increases and decreases in E neuron activity depending on context.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are cited experimental findings used to motivate the study. Reviewer 2 notes the work 'provides a nice bridge to the experimental literature' and no reviewer challenges the accuracy of these cited experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C62"
+    ],
+    "result": "The model uses key differentiating features where PV neurons inhibit other PV neurons while SOM neurons do not, PV neurons receive external input while SOM neurons receive modulatory input, and neurons have expansive nonlinear transfer functions described by a power law.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly praises the model design: 'The simplified and abstracted mathematical model has the benefit of facilitating our understanding of this puzzling phenomenon. It is not easy to find the right balance between biologically-detailed models vs simple but mathematically tractable ones, and I think the authors struck an excellent balance in this study.' No reviewer challenges the model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C46",
+      "C47",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors discuss biological justifications for their model structure, including that E and PV neurons receive similar inputs allowing PV to track E activity, that SOM neurons lack self-inhibition allowing high gain for modulatory signals, and that the E-PV-SOM circuit is best characterized in superficial layers of sensory neocortex though connectivity varies across brain regions and layers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While no reviewer directly challenges these biological interpretations, Reviewer 3 raises a significant concern about biological relevance: 'A general weakness of the paper is a lack of direct comparison to biological parameters or experiments. How different experiments can be reconciled by the results obtained here, and what new circuit mechanisms can be revealed?' This suggests the biological grounding, while not refuted, is insufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Network gain depends on firing rates of E, PV, and SOM neurons at the moment of stimulus presentation, such that any change in input to the circuit can affect response gain, consistent with experimental evidence linking inhibitory firing rates and behavioral state to gain modifications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation is presented as following from the model analysis and is consistent with cited experimental work. No reviewer challenges this claim, and it aligns with Reviewer 2's comment that the work 'provides a nice bridge to the experimental literature.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The study acknowledges as a limitation that the linearization approach only allows investigation of circuit dynamics close to a stable network state, though the authors confirm results hold with noisy inputs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges both the limitation and the mitigation: 'While the fixed-point analysis has potentially substantial limitations for understanding cortical computations away from the steady-state, the authors used simulations to verify that their main findings hold in the stochastically-driven regime.' Reviewer 2 also notes 'it would be worthwhile to study this effect in chaotic and/or oscillatory regimes' as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors establish foundational context that synaptic inhibition maintains network stability and modulates neuronal gain, that single inhibitory class models show inverse gain-stability relationships, and that cortical inhibition is diverse with molecularly distinguished PV and SOM classes having distinct circuit positions and functional roles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by extensive citations. Reviewer 1 acknowledges 'this is an important issue as these two inhibitory pathways have largely been studied in isolation,' confirming the foundational premise. No reviewer challenges these background statements.",
+    "result_type": "MINOR"
+  }
+]

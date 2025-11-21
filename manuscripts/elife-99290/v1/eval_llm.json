@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "VWM representations in visual cortex exhibit dynamic coding, characterized by temporal shifts in neural coding spaces. Temporal cross-decoding analysis revealed that VWM codes did not fully generalize across time points, with dynamic coding clusters found in all three experimental conditions (no-distractor, noise distractor, orientation distractor). Neural subspace analysis confirmed these dynamics were due to shifts in coding spaces across time, with significant above-baseline principal angles between early and late delay periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C23, C25-C29, C32-C35 provide converging evidence from multiple complementary analyses (temporal cross-decoding and neural subspace analysis) demonstrating dynamic coding of VWM. Statistical testing with appropriate corrections (cluster permutation tests, FDR correction) supports the findings. Simulation controls (C32) rule out SNR artifacts as an alternative explanation. The consistency across methods and conditions strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "VWM targets and feature-matching sensory distractors are encoded in partially separable neural subspaces. In Experiment 1, significant above-baseline principal angles (p=0.0297) indicated non-overlapping coding spaces between target and distractor. In Experiment 2, where distractors impaired behavioral performance, the separation was reduced (p<0.001 but nominally smaller angle), suggesting that subspace overlap relates to behavioral interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C36-C40 demonstrate separable coding spaces using neural subspace analysis with appropriate statistical testing. The comparison between experiments with different behavioral outcomes (C45, C46) provides critical context linking neural separation to behavior. Cross-decoding analyses (C37) corroborate the subspace findings. The convergence of evidence from multiple analyses supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C51"
+    ],
+    "result": "Sensory distractors alter VWM coding format in early visual regions. Decoding accuracy was higher in no-distractor trials compared to distractor trials across most ROIs. Decoders trained on no-distractor trials did not generalize well to noise distractor trials in most regions, but training on distractor trials recovered information in V2 and V3AB, indicating a changed VWM format during distraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C41-C44, C51 demonstrate distractor effects on VWM coding through systematic cross-decoding analyses with appropriate statistical testing (cluster permutation tests, pairwise comparisons). The finding that within-condition decoders recover information that cross-condition decoders miss (C43) provides strong evidence for format changes. The pattern is consistent across multiple ROIs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Experiment 2 showed nominally lower decoding accuracies across all conditions compared to Experiment 1, with some ROIs showing chance-level target information during the delay period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 report straightforward comparisons between experiments. The authors appropriately note these differences and limit further temporal dynamics analysis of Experiment 2 due to reduced signal. This is a methodologically sound decision given the data quality issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors propose that dynamic coding and stable non-overlapping coding spaces work together to multiplex perception and VWM within visual areas, potentially through layer-specific mechanisms where distractors occupy middle layers while VWM occupies superficial and deep layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C57 are primarily speculative interpretations (marked as SPECULATION/INFERENCE in evidence types). While the speculation is grounded in prior literature on cortical layers (C14-C18, C53), the current study lacks layer-specific measurements to directly test these hypotheses. The proposed mechanisms are plausible but require additional empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript reviews established prior work on VWM, dynamic coding, and neural multiplexing mechanisms, providing context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C21 accurately summarize prior literature with appropriate citations. These background claims establish the scientific context and are supported by the cited references. No misattributions or inaccuracies in the literature review are apparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Behavioral differences between experiments relate to distractor effects on VWM recall, with Experiment 1 showing no behavioral deficit from orientation distractors while Experiment 2 showed impaired recall with flickering orientation distractors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 accurately report behavioral findings from the original Rademaker et al. 2019 study and cite relevant prior work on perception-VWM interactions. These behavioral differences provide critical context for interpreting the neural findings, particularly the relationship between subspace separation and behavioral performance (C5, C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study reanalyzed fMRI data from two experiments with appropriate sample sizes (6 and 7 participants) using a delayed-estimation VWM task with various distractor conditions, acquired with high temporal resolution (TR=800ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C58-C66 accurately describe the experimental design and data acquisition parameters. The reanalysis approach is clearly documented. Sample sizes are modest but typical for high-resolution fMRI studies. The experimental design is appropriate for testing the stated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The analysis employed rigorous methods including voxel selection based on reliable responses, periodic support vector regression (pSVR) for orientation decoding, cluster-based permutation testing, and principal component analysis for neural subspace identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 describe methodologically sound analytical approaches. The voxel selection procedure (C67) appropriately ensures reliable responses. The pSVR method (C68-C69) is suitable for circular orientation data. Statistical testing with cluster-based permutation tests and FDR correction (C70) controls for multiple comparisons. The neural subspace methods (C72-C73) follow established frameworks with appropriate cross-validation.",
+    "result_type": "MINOR"
+  }
+]

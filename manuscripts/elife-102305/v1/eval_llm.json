@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Cardiac fibroblasts (FBs) exhibit a spatiotemporal developmental pattern during mouse heart development from E11.5 to P3. FBs first appear in the atrioventricular canal (AVC) and valves at E11.5-E12.5, then progressively populate the ventricular walls and atria by E13.5-E15.5, and finally colonize the ventricular septum by E15.5-E16.5, with this pattern maintained through postnatal stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are well-supported by RNA staining data (PLISH and RNAscope) showing Col1a1 expression patterns across multiple developmental stages (Figure 1A and supplements). The temporal and spatial progression is consistently documented with appropriate imaging evidence, and the developmental sequence is logically inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Each cardiac FB directly contacts approximately one vascular endothelial cell (Vas_EC) and four cardiomyocytes (CMs) at E17.5 and P3, suggesting physical proximity that may facilitate intercellular signaling during heart development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by quantitative analysis of RNA staining data (Figure 1C-D) showing spatial relationships between cell types. However, the quantification is performed on 2D sections which may underestimate true 3D contacts, and the functional inference about signaling (C12) is speculative though reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Single-cell RNA-seq analysis identified four distinct FB subpopulations in developing mouse hearts: valve interstitial cells (expressing Hapln1), endothelial-derived FBs (expressing Cdh5/Tie1), neural crest-derived FBs (expressing Sox10/Phox2b), and epicardial-derived chamber FBs (expressing Tcf21). All subpopulations showed cells in all cell cycle phases, indicating active proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 are supported by scRNA-seq analysis of 18 developmental stages with appropriate clustering, differential gene expression, and marker gene identification (Figure 1\u2014figure supplement 3). The lineage assignments are based on established marker genes, though some assignments (C16-C18) are appropriately qualified as inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "RNA in situ hybridization validated the spatial localization of FB subpopulations: Hapln1+ cells in valves, Cdh5+/Col1a1+ cells at vessel-chamber boundaries, and Sox10+/Col1a1+ cells in both outflow tract vessels and coronary vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by RNA in situ hybridization data (Figure 1\u2014figure supplement 3F) showing co-localization of markers. The observation of Sox10+/Col1a1+ cells in coronary vessels (C23) extends previous findings and is appropriately presented as a novel observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Cell-cell interaction analysis of scRNA-seq data revealed that FBs exhibit the strongest interaction strength among cardiac cell types, with the collagen pathway being the predominant signaling pathway from FBs to both ventricular cardiomyocytes (Ven_CM) and vascular endothelial cells (Vas_EC). Additional ECM proteins including laminin, Ptn, MK, Fn1, and Thbs were also identified as FB-secreted signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 are supported by CellChat and CellPhoneDB analysis of scRNA-seq data (Figure 2A-C). The computational predictions are appropriate for the data type, though they represent predicted rather than experimentally validated interactions. The consistency with prior literature (C30) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Collagen deposition during heart development, visualized by collagen hybridizing peptide (CHP) staining, largely parallels FB development. Collagen is present in the epicardium at all stages and progressively accumulates in the AVC, ventricular walls, septum, and atria, forming stripe patterns by P3. Early collagen at E11.5 in ventricular chambers likely derives from non-FB sources such as endocardial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are supported by CHP staining data across multiple developmental stages (Figure 2D). The temporal correlation between collagen deposition and FB development is well-documented. The inference about non-FB collagen sources at E11.5 (C33) is logical given the absence of chamber FBs at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Five groups of extracellular matrix (ECM) genes display stage- and chamber-specific expression patterns in cardiac FBs: G1 (early stages, including Slit2, Wnt5a, Col13a1), G2 (LV/RV from E14.5, including Col5a1, Col6a1/a2, Adamts13/14), G3 (LA/RA, including Col12a1, Adamts1/4, Fn1), G4 (LA/LV/RV at late neonatal stages, including Col4a4/a5/a6, Ntn4), and G5 (universal expression, including Col1a1, Col1a2, Postn).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by clustering analysis of ECM gene expression in scRNA-seq data from both CD1 and C57BL/6 mice (Figure 2\u2014figure supplements 2-4). The identification of five distinct expression patterns is data-driven and reproducible across mouse strains, strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Collagen pathway interactions between FBs and CMs/ECs are enriched at most developmental stages in mice. Analysis of human embryonic heart scRNA-seq data shows strong FB interactions with other cardiac cell types, with collagen as the top pathway in FB-VasEC but not FB-VenCM interactions, suggesting partially conserved but not identical mechanisms between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by stage-specific ligand-receptor analysis in mouse and human scRNA-seq data (Figure 2\u2014figure supplement 5, Figure 2E). The species comparison is appropriate, though the difference in FB-VenCM collagen signaling between mouse and human (C48) warrants further investigation as noted by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Pdgfra-CreER mice show superior labeling efficiency for cardiac FBs compared to Postn-CreER mice. At E17.5 after tamoxifen administration at E13.5, Pdgfra-CreER; Rosa-mTmG mice labeled a significant proportion of cells in both valves and heart chambers, while Postn-CreER mice showed only sparse labeling in valves and septum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by scRNA-seq expression analysis (Figure 3\u2014figure supplement 1A) and lineage tracing experiments (Figure 3A, Figure 3\u2014figure supplement 1B). The comparative assessment provides clear justification for using Pdgfra-CreER for subsequent ablation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "FB ablation at E10.5 using Pdgfra-CreER; Rosa-DTA mice results in complete embryonic lethality by E13.5, indicating that FBs play an essential role in early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by the ablation experiment showing 100% lethality of ablated embryos. However, the broad conclusion about FB essentiality (C55) should be tempered as the lethality could result from ablation of Pdgfra+ cells beyond just FBs, or from severe developmental disruption rather than a specific FB function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "FB ablation at E13.5 (analyzed at E16.5) results in smaller embryos but similar-sized hearts, with reduced endothelial cell density, thinner LV compact myocardium, elevated LV trabecular/compact ratio, and reduced ventricular (but not atrial) cell proliferation, indicating impaired ventricular development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by morphological analysis, CD31 staining, myocardium thickness measurements, and pHH3 proliferation assays (Figure 3B-D, Figure 3\u2014figure supplement 2). TUNEL staining confirms successful ablation (C57). The chamber-specific effects are well-documented, though sample sizes are modest (n=2-7 hearts).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "FB ablation with one dose of tamoxifen at E15.5 (analyzed at E18.5) shows no obvious embryo/heart size differences but reveals atrial defects (large holes), thinner LV compact myocardium, increased RV trabecular/compact ratio, and no change in cell proliferation, indicating subtle defects in both ventricles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by morphological analysis, CD31 staining, and myocardium measurements (Figure 3\u2014figure supplement 4A-F). The milder phenotype compared to E13.5 ablation suggests stage-dependent FB functions. However, the sample size is small (n=2 hearts per condition), limiting statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "FB ablation with three doses of tamoxifen at E15.5-E17.5 (analyzed at E18.5) produces smaller embryos and hearts, near-complete loss of chamber Col1a1 expression, significantly reduced endothelial cell density, proportional reduction in both LV compact and trabecular myocardium thickness, and impaired ventricular cell proliferation, demonstrating that FBs play important roles in embryonic heart development at all analyzed stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are supported by comprehensive morphological, molecular, and cellular analyses (Figure 3E-G, Figure 3\u2014figure supplement 3-4). The high ablation efficiency is confirmed by Col1a1 loss (C71). The proportional myocardium reduction (C75) is an interesting observation. The broad conclusion (C77) is justified by consistent defects across multiple ablation time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Single-cell RNA-seq of control and FB-ablated hearts at E16.5 and E18.5 identified eight cell types and confirmed effective FB ablation with significantly reduced FB percentages. Four FB subpopulations were identified: valve-fb, neural_crest_fb, main_fb, and a dying_fb population exclusively from ablated samples expressing cell death genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by scRNA-seq analysis with appropriate quality control, cell type annotation, and clustering (Figure 4A-E, Figure 4\u2014figure supplement 1). The identification of dying_fb exclusively in ablated samples (C82) validates the ablation approach and provides insight into the cell death process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Ablated ventricular cardiomyocytes (Ven_CMs) at E16.5 show slightly increased G1 phase cells, upregulation of genes associated with heart development and cell proliferation, and downregulation of genes related to cell maturation including mitochondrial function and metabolism, indicating delayed or impaired CM maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by cell cycle analysis, differential gene expression, and gene ontology analysis of scRNA-seq data (Figure 4G-I). The interpretation that ablated CMs are less mature is reasonable based on the gene expression patterns, though direct functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Vascular endothelial cells (Vas_EC) in ablated hearts at E16.5 exhibit upregulated genes primarily involved in immune response pathways including interferon production, interleukin-27 signaling, NLRP3 inflammasome assembly, and responses to exogenous dsRNA, indicating a strong immune response following FB ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by differential gene expression and gene ontology analysis (Figure 4K-L). The immune response could reflect either a response to cell death (DTA-induced) or loss of FB-derived signals. The authors appropriately note this ambiguity in the discussion, suggesting this warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The collagen pathway consistently ranks as the top signaling pathway from main_fb to Vas_EC and Ven_CM in both control and ablated samples. Collagen deposition is dramatically reduced in ablated hearts, and NicheNet analysis predicts collagen (with four different ligands) as a major regulator of differentially expressed genes in Ven_CMs, along with TGF-beta, IGF, and BMP pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by CellChat analysis, CHP staining, and NicheNet regulatory prediction (Figure 5A-C). The convergence of multiple computational approaches and experimental validation (collagen staining) strengthens these findings. However, these are predictive analyses requiring experimental validation of specific ligand-receptor pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "NicheNet analysis predicted several FB-derived ligands regulating differentially expressed genes in Vas_EC, including Hbegf (DTA pathway-related), Il33 (inflammation-associated), Wnt ligands (Wnt11, Wnt4, Wnt5b), and collagen Col4a6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by NicheNet regulatory analysis (Figure 5D, Figure 5\u2014figure supplement 1B). The identification of Hbegf is particularly interesting as it may relate to the DTA ablation mechanism itself. These predictions require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Dying fibroblasts (dying_fb) show altered signaling compared to normal FBs, with downregulation of IGF, EphA, Tenascin, and collagen pathways, and upregulation of EGF, BMP, VEGF, and FGF pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by CellChat pathway analysis comparing dying_fb to normal FB populations (Figure 5E, Figure 5\u2014figure supplement 2). These findings provide insight into signaling changes during FB death, though the functional consequences remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Collagen and other ECM proteins serve critical structural roles in heart development that contribute to the phenotypes observed in FB-ablated hearts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by established knowledge of ECM protein functions and the observed phenotypes. However, this is largely a statement of general principle rather than a specific finding from this study. The relative contributions of structural versus signaling functions of collagen remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "FB ablation with one dose of tamoxifen at P1 (analyzed at P4) shows no obvious heart differences overall but reveals atrial defects (thinner, segmented atrial wall) by CD31 staining, with no changes in ventricular myocardium thickness, trabecular/compact ratios, or cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by morphological analysis, CD31 staining, myocardium measurements, and pHH3 staining (Figure 6\u2014figure supplement 1). The findings are consistent with a recent study (C96), strengthening the conclusions. The atrial-specific defect (C97) is notable but sample size is small (n=2-4 hearts).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "FB ablation with three doses of tamoxifen at P1-P3 (analyzed at P4) shows no obvious heart morphology differences but reduced endothelial cell density in both ventricles, no changes in chamber thickness or cell proliferation, and sparser collagen with loss of stripe patterns in the septum while retaining some stripe-patterned collagen in ventricular free walls (likely from pre-ablation FB production).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are supported by morphological analysis, CD31 staining, myocardium measurements, pHH3 staining, and CHP staining (Figure 6A-E). The interpretation that residual collagen derives from pre-ablation FBs (C105) is reasonable given collagen's stability. Sample size is adequate (n=4 hearts per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Long-term FB ablation (tamoxifen at P3-P5, analyzed at P17) results in approximately two-thirds mortality, with surviving mice showing reduced size, heart rate, and body weight but similar heart/body ratio and preserved cardiac function (EF and FS) despite reduced organ sizes across multiple tissues (heart, lung, brain, kidney, liver).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by survival analysis, morphological measurements, and echocardiography (Figure 6F-I, Figure 6\u2014figure supplement 3A). The preserved cardiac function despite systemic growth defects (C110) is a striking finding. However, the surviving mice may represent a selected population with partial ablation or compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Collagen levels in ablated hearts at P17-P18 show no clear reduction or pattern change compared to P4, suggesting potential collagen expression compensation at later stages after FB ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 are based on CHP staining comparison between P4 and P17-P18 (Figure 6E, Figure 6\u2014figure supplement 2). However, C112 is explicitly speculative ('suggests potential compensation'). Alternative explanations include collagen stability, production by other cell types, or incomplete ablation in surviving mice. Further investigation is needed to distinguish these possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Lungs from FB-ablated mice at P18 show reduced collagen levels and larger empty spaces compared to controls, suggesting that FBs play a crucial role in the growth of multiple tissues during the neonatal phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by collagen staining of lung tissue (Figure 6\u2014figure supplement 3B) and the multi-organ size reductions (C109). The broad conclusion about FB roles in multiple tissues (C114) is reasonable given the systemic phenotype, though the mechanism (direct FB effects vs. secondary consequences) remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Background claims establishing prior knowledge about cardiac fibroblasts, heart development, cell ablation systems, and ECM functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C131 are background statements supported by appropriate literature citations. These establish the context for the current study and are accurately represented based on the cited references.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C17",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The proposed recurrent spiking neural network model, using predictive learning rules that minimize probability mismatches between stimulus-evoked and internally driven activities, successfully self-organizes stimulus-specific cell assemblies. The model automatically segments statistically salient events in temporal input (chunking) without pre-assigned assemblies, with feedforward synapses strengthening for preferred stimuli, inhibitory connections growing within assemblies, and recurrent connections forming assembly-specific structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C17, and C23-C26 collectively demonstrate the core mechanism and outcomes of the model through computational simulations shown in Figures 1-2. The model successfully implements predictive learning across all synapse types, generates cell assemblies without preconfiguration, and shows appropriate synaptic weight modifications consistent with the learning principle. The results are internally consistent and well-documented through multiple simulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C35",
+      "C36",
+      "C40",
+      "C47"
+    ],
+    "result": "The model's spontaneous activity exhibits high within-assembly correlation but no between-assembly correlation, with spontaneous reactivation driven primarily by within-assembly recurrent connections rather than sequential activation between assemblies. The model spontaneously replays learned cell assemblies with relative frequencies proportional to their activation probabilities during learning, with population activities of assemblies encoding occurrence probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C35-C36, C40, and C47 are well-supported by simulation data in Figures 2-4. The correlation structure (Figure 2e), elimination experiments (Figure 4\u2014figure supplement 1), and sequence training results (Figure 4\u2014figure supplement 4) provide converging evidence that the mechanism differs fundamentally from Markovian transition models and relies on within-assembly dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The network accurately encodes stimulus occurrence probabilities through assembly activity ratios. When stimulus probabilities vary, the neuronal firing rate and size of cell assemblies scale with probability ratios, with the assembly activity ratio (total firing rate ratio) showing surprisingly accurate linear scaling with stimulus probability ratios. This holds even for overlapping input patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are strongly supported by systematic simulations shown in Figure 3 and supplements. The linear relationship between assembly activity ratios and stimulus probabilities (Figure 3e) is quantitatively demonstrated across multiple probability ratios and stimulus configurations, including overlapping patterns (Figure 3\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Within-assembly recurrent connections encode biases in probabilistic sensory experiences. The normalized excitatory incoming weights within assemblies approximate the empirical probabilities of stimuli in both balanced (50-vs-50) and biased (30-vs-70) cases, with distributions of incoming synaptic strengths differing between assemblies according to their activation probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by detailed analysis of synaptic weight distributions in Figure 4c-d. The quantitative match between normalized excitatory weights and stimulus probabilities provides a mechanistic explanation for how probabilities are encoded in network structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Inhibitory synaptic plasticity (G-connections) is crucial for maintaining learned cell-assembly representations during spontaneous activity. Without plastic inhibitory synapses, only a single highly active assembly forms and the network exhibits unstable dynamics. Continuous tuning of within-assembly inhibition through G-plasticity is required to maintain cell-assembly structure and keep prediction errors small after stimulus termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are well-supported by control experiments in Figure 4\u2014figure supplements 2-3. The comparison between fixed and plastic inhibitory connections, and between control and truncated models, provides clear evidence for the necessity of ongoing inhibitory plasticity in maintaining stable learned representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The network can learn conditional prior distributions when receiving inputs through different pathways. In a two-subnetwork architecture, the model self-organized four cell assemblies responding to four stimuli, with assemblies in one subnetwork varying their firing rates approximately in proportion to conditional probabilities when driven by stimuli to the other subnetwork.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by simulations in Figure 4\u2014figure supplement 6. The model successfully learns and reproduces conditional probability distributions (e.g., P(S3|S1) = 1/3 vs. P(S4|S1) = 2/3), demonstrating the mechanism's applicability to hierarchical Bayesian computation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The model replicates behavioral biases in monkey perceptual decision-making without parameter fine-tuning. When trained with motion stimuli at different frequency ratios (50:50 vs. 80:20), the model's psychometric curves almost perfectly match experimental data from monkeys, with biases emerging from biased spontaneous firing rates of self-organized cell assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are strongly supported by comparison with experimental data in Figure 5. The model reproduces both unbiased and biased decision behaviors without curve fitting, and the mechanistic explanation through spontaneous activity biases is consistent with the model's core principles. However, the authors acknowledge alternative mechanisms cannot be excluded (C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C62"
+    ],
+    "result": "In a biologically realistic model with distinct excitatory and inhibitory populations (DL model), two inhibitory pathways emerge with different computational roles. Path 1 provides within-assembly inhibition for decorrelation, while path 2 provides between-assembly inhibition for competition. Both pathways are necessary for robust learning, as models with only one inhibitory path rarely succeed in encoding all stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 and C62 are well-supported by simulations in Figure 7 and supplements. The DL model successfully replicates the nDL model's performance while obeying Dale's law, and the division of labor between inhibitory pathways is clearly demonstrated through connectivity analysis and ablation studies (Figure 7\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The learning rule predicts the emergence of two types of inhibitory connections with different computational roles, and this emergence is crucial for robust learning of an optimal internal model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by the results from both the simplified model (Figure 6) and the elaborate DL model (Figure 7). The prediction is validated through simulations showing that both inhibitory connection types are necessary for successful learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C18",
+      "C19",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "The model contrasts with previous models that encode statistical structure into Markovian transition patterns among cell assemblies. Instead, cell assemblies store replay probabilities primarily in within-assembly network structure, generating stochastic reactivation solely through within-assembly connections without relying on ordered sequential sampling or transition dynamics between assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C18-C19, C88, C90-C91 are supported by simulation results and comparative analysis. The lack of strong between-assembly excitatory connections (Figure 2c, Figure 4\u2014figure supplement 1) and the absence of stereotyped sequential transitions (Figure 4\u2014figure supplement 4) provide evidence for this mechanistic distinction from prior models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The model predicts a novel intracellular homeostatic process (variable h) that regulates neuronal dynamic range according to subthreshold activity history. This process avoids trivial solutions by homeostatically regulating intrinsic excitability and cooperates with within-assembly recurrent inputs to generate spontaneous replay, enhancing sampling without relying on inter-assembly recurrences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by model design and simulations in Figures 1-2 and Figure 4\u2014figure supplement 5. The homeostatic mechanism is mathematically defined (Equations 6-8) and its role is demonstrated through simulations, though the authors acknowledge no direct experimental evidence exists for this specific mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "The model adopts a single predictive learning principle for plasticity of both excitatory and inhibitory synapses. Inhibitory synaptic plasticity plays a crucial role in learning accurate internal models by maintaining excitation-inhibition balance and decorrelating cell-assembly activities, with the model modifying both excitatory and inhibitory recurrent connections to reproduce appropriate statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 and C78 are supported by the model formulation (Equations 9-18) and simulation results throughout Figures 2-7. The unified learning principle and the crucial role of inhibitory plasticity are demonstrated across multiple network architectures and tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C20",
+      "C94",
+      "C95"
+    ],
+    "result": "The spontaneous activity of the model replicates behavioral biases of monkeys performing perceptual decision making, with the model trained on decision-making tasks replicating both unbiased and biased behaviors without parameter fine-tuning. The difference in spontaneous firing rates of cell assemblies is sufficient to explain these behavioral biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C20, C94-C95 are supported by simulations in Figure 5 comparing model outputs to experimental data from Hanks et al., 2011. The quantitative match between model and experimental psychometric curves without curve fitting provides strong support, though alternative mechanisms are acknowledged (C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C92",
+      "C93"
+    ],
+    "result": "The model is claimed to be the first to perform all necessary steps (stimulus segmentation, cell assembly generation, and probabilistic replay) for encoding an optimal environmental model into spontaneous network activity. It differs from previous Hebbian-based models by introducing plasticity at all synapse types and not requiring preconfigured cell-assembly memberships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80, C92-C93 make strong novelty claims based on comparisons with prior work. While the model does demonstrate these capabilities through simulations, the claim of being \"the first\" (C79) is difficult to verify without exhaustive literature review. The comparisons with specific prior models (C80, C92-C93) are supported by citations but represent the authors' interpretation of the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Unlike STDP which requires mechanisms to keep synaptic weights finite due to sensitivity to spike timing, the proposed learning rule does not suffer instability because it induces potentiation or depression according to prediction error sign calculated independently within each postsynaptic neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by the mathematical formulation of the learning rules (Equations 12-18) and the stability of learned networks demonstrated throughout the simulations. The comparison with STDP is supported by citations (C82) and the model's demonstrated stability provides evidence for C83.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Background claims about brain function and prior experimental evidence: The brain constructs optimal internal models of environmental probabilistic structure, spontaneous activity cycles through previously experienced patterns with experienced probabilities, and replay activities provide prior information for hierarchical Bayesian computation. Experimental evidence from cat and ferret visual cortex supports these concepts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C12, C72-C74 represent established background knowledge supported by multiple citations to prior experimental and theoretical work. These provide the scientific context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior computational work on neural probabilistic computation and learning: Recent studies suggest cortical neurons can implement complex computations through soma-dendrite interactions, various network models have been proposed for sampling and sequence learning, but previous models did not clarify how networks learn spontaneous replay of probabilistic sensory experiences. The current work builds on predictive learning hypotheses from prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13-C16 accurately represent prior computational neuroscience work as supported by appropriate citations. These claims establish the gap in prior work that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C96",
+      "C97",
+      "C99"
+    ],
+    "result": "Interpretive and speculative conclusions: Interactions between intracellular processes and recurrent network dynamics may be more crucial for learning cognitive behaviors than previously thought. Alternative mechanisms for behavioral biases cannot be excluded. Spontaneous replay may support hierarchical modeling and knowledge generalization during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C96-C97, C99 represent interpretations and speculations beyond what is directly demonstrated. While consistent with the model results, these broader implications require additional experimental validation. C96 appropriately acknowledges uncertainty about alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C81",
+      "C89",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "Connections to experimental neuroscience and machine learning: The model's inhibitory path 2 resembles interpyramidal inhibitory connections observed experimentally. Prior studies used multiple plasticity rules for cell assembly maintenance. Previous computational models learned Markovian statistics. Memory replay has been studied in machine intelligence. Sleep is required for transitive inference tasks in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C81, C89, C98, C100-C101 accurately represent findings from cited experimental and computational studies, providing context for interpreting the current model's predictions and relating them to known neuroscience and machine learning concepts.",
+    "result_type": "MINOR"
+  }
+]

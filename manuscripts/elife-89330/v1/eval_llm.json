@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "Behavioral responses (POR) to odorants increased with repetition and stabilized after ~5 trials. Counterintuitively, intensity-dependent differences in behavioral responses became statistically significant only after adaptation had set in (later trials), indicating that locusts are better able to behaviorally differentiate stimulus intensity after adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C26-C30, C87-C88, and C91 collectively demonstrate that behavioral responses increase with repetition and that intensity discrimination improves in later trials. The data in Figure 1 and Figure 1\u2014figure supplement 3 show clear statistical support (p\u22640.05) for these findings across multiple odorants with appropriate sample sizes (n=33-64 locusts per odorant).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Adaptation altered responses of individual projection neurons (PNs) in the antennal lobe in complex ways. While most PN responses reduced with repetition, some neurons showed increased activity or changes in temporal firing patterns. These changes were highly repeatable across different blocks of trials, indicating that adaptation effects in neural circuits are consistent and reliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31-C32, and C68-C71 are well-supported by electrophysiological data shown in Figure 2. The raster plots demonstrate diverse adaptation patterns across neurons, and Figure 2c explicitly shows repeatability of these changes across blocks. The consistency of adaptation patterns supports the reliability claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Individual neuron adaptation patterns partially support the vesicle depletion model (R\u00b2=0.48-0.56) but are not simply a function of response strength. Neurons that adapted heavily at high intensity did not necessarily adapt similarly at low intensity (R\u00b2=0.08-0.21), indicating that adaptation in individual neurons is a function of both odor identity and intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by the correlation analyses in Figure 2e-f. The moderate R\u00b2 values for vesicle depletion and poor correlations across intensities provide quantitative evidence for the complexity of adaptation mechanisms. However, the R\u00b2 values are modest, suggesting vesicle depletion explains only part of the variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Both adaptation (stimulus repetition) and intensity decrements resulted in an overall reduction in ensemble spiking activities across neurons. The total PN ensemble spike counts decreased due to both factors, creating a potential ambiguity in interpreting neural responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C37-C39 are clearly supported by the PSTHs and spike count data in Figure 3. The data show that both adaptation and intensity reduction lead to decreased ensemble activity, establishing the computational challenge that the paper addresses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Despite overall reduction in spiking activity, information about odor identity and intensity was robustly maintained by ensemble neural responses in an adaptation-invariant manner. Neural response trajectories systematically reduced in length with repetition but maintained their direction, indicating that the combination of activated neurons was preserved. Different intensities of the same odorant generated trajectories that subtly varied in direction, allowing intensity information to be encoded independently of adaptation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C40-C48, and C82-C85 are strongly supported by converging evidence from multiple analyses: trajectory analysis (Figure 4), correlation analysis (Figure 5a), hierarchical clustering (Figure 5b), and classification analysis (Figure 5\u2014figure supplement 1). The high within-intensity correlations and successful classification across all trials provide robust quantitative support for adaptation-invariant encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C49",
+      "C86"
+    ],
+    "result": "Information about odor intensity can be preserved in an adaptation-invariant manner, and adaptation refines odor codes by making them more efficient (same information represented with fewer spikes). This represents a method of optimizing neural representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C49, and C86 represent the main conclusion of the paper, synthesizing the behavioral and neural findings. The conclusion is well-supported by the combined evidence from Figures 1-5 showing that intensity information is preserved despite reduced spike counts. The efficiency argument is logically sound given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Neural responses decreased with repetition while behavioral responses increased, showing a negative correlation between neural suppression and behavioral enhancement. Notably, similar neural spike counts (last trial high-intensity vs. first trial low-intensity) produced markedly different behavioral responses, indicating that POR probability is not simply a function of total spike count.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by the regression analysis in Figure 6 showing negative correlations (R\u00b2=0.2-0.79) between spike counts and p(POR) across trials. The observation about similar spike counts producing different behaviors (C52-C53) is supported by comparing Figures 1 and 3, though this comparison could be more explicitly quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Catch-trial experiments demonstrated that adaptation-induced changes are at least partially odor-specific and not global, non-specific changes. When a chemically distinct deviant stimulus (iaa) was presented after hex adaptation, neural responses recovered to unadapted levels. However, cross-adaptation occurred with chemically similar stimuli (apple). In both cases, ensemble responses to the catch stimulus maintained their characteristic identity. Behaviorally, catch stimuli reset responses to first-trial levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are supported by the catch-trial data in Figure 7. The neural recovery for iaa (C55-C56) and cross-adaptation for apple (C57) are clearly shown in Figure 7b. The preservation of stimulus identity (C58-C60) is supported by correlation analysis in Figure 7c. Behavioral reset (C61) is shown in Figure 7f. The specificity conclusion (C62-C63) is well-justified by these converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C89",
+      "C90"
+    ],
+    "result": "The probability of palp-opening response (p(POR)) was used as an indicator for stimulus perception. Baseline p(POR) without olfactory stimuli was negligible, and paraffin oil (solvent control) evoked only weak PORs. The increases in behavioral responses with repetition were driven by olfactory stimuli, not mechanical components of stimulus delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C89-C90 establish the validity of the behavioral assay. The control experiments with paraffin oil (Figure 1\u2014figure supplement 2) showing minimal responses provide appropriate negative controls. The inference that olfactory stimuli drive the response (C90) is well-supported by the comparison with solvent controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Methodological details: 161 PNs from 40 locusts were recorded using 16-channel silicon probes. Two datasets were collected (80 PNs for hex/oct; 81 PNs for iaa/bza). Odorants were diluted to 1% or 0.1% v/v in paraffin oil. Stimuli were 4s pulses with 60s inter-stimulus intervals and 15min reset windows between blocks. Spike sorting used conservative statistical principles, and data were analyzed using tensor decomposition and dimensionality reduction approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C118 provide methodological details that are clearly stated and appropriately documented. The methods are sufficiently detailed for reproducibility, including equipment specifications, stimulus parameters, and analysis approaches. The 15min reset window (C105-C106) is justified by citation to prior work showing short-term memory duration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims about sensory adaptation: Neural responses reduce upon repetition to allow attention to novel cues and increase system efficiency. Adaptation is key to survival and occurs on multiple timescales (hours-days for long-term; milliseconds-minutes for short-term). In olfaction, prominent adaptation mechanisms include vesicle depletion and lateral inhibition. Odor intensity information is important for navigation and behavioral responses, as some odorants switch valence with intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C22 represent established knowledge from prior literature, appropriately cited throughout. These provide necessary context for the study but are not novel findings. The citations appear appropriate and comprehensive for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C93",
+      "C95",
+      "C98"
+    ],
+    "result": "Discussion of prior work on adaptation: Stable representations are key for stimulus recognition, and intensity variations may need to be filtered out or preserved depending on context. Prior work in locusts and mice shows adaptation occurs in antennal lobe/olfactory bulb circuitry. Adaptation has been implicated in various computations (high-pass filtering, sparse coding, optimal representations) and can stabilize odor identity recognition. However, adaptation introduces ambiguity where absolute response strength becomes unreliable for indicating stimulus strength. The anticorrelation between neural suppression and behavioral enhancement (repetition priming) is established in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C72-C80, C93, C95, C98 represent discussion of prior literature with appropriate citations. These contextualize the current findings within existing knowledge. The claims accurately represent cited work and provide appropriate framing for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C96"
+    ],
+    "result": "Several neurons responded preferentially during lower concentration exposures but not at higher intensity, and antennal lobe responses in later trials were not sharpened by pruning out weaker responses. This indicates that the combinatorial code is not simply based on recruitment of additional neurons at higher intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C96 are supported by data in Figure 5\u2014figure supplement 2. These observations refine the understanding of how intensity is encoded, showing that the relationship between intensity and neural recruitment is more complex than simple monotonic increases. This supports the main conclusion about combinatorial encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C97"
+    ],
+    "result": "Speculative claims: Adaptation could potentially alter perceived intensity of recurring or related odorants. The weakening of response strength could potentially lead to sparser responses in downstream mushroom body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92 and C97 are explicitly speculative (C92 presents an alternative explanation; C97 discusses potential downstream effects). These are reasonable hypotheses but lack direct experimental support in the current study. They appropriately identify directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Response variations to repetitions of the same stimulus were unpredictable and inconsistent across intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C6 states that adaptation patterns are 'unpredictable,' but this contradicts C32 and C70 which show that changes are 'highly repeatable' across blocks. The poor correlation across intensities (C34) shows inconsistency across intensities, but within a given intensity, patterns are repeatable. The claim as stated is too strong and not fully supported by the data.",
+    "result_type": "MAJOR"
+  }
+]

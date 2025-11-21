@@ -1,0 +1,485 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "PIM1 and PIM2 kinases are rapidly induced following TCR engagement in CD8 T cells. PIM1 protein is strongly induced within 3 hours and sustained at 24 hours, while PIM2 appears at 9 hours and is also sustained. This induction occurs at both protein and mRNA levels, with Pim1 and Pim2 mRNA being very lowly expressed in naive cells and strongly upregulated by immune activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by quantitative proteomics and RNAseq data from multiple experimental systems (OT1 cells with cognate peptide and polyclonal activation with \u03b1CD3/\u03b1CD28). The temporal dynamics are clearly documented in Figure 1A-C, and the data are consistent with published datasets (Marchingo et al., 2020; Spinelli et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Pim1 and Pim2 are the major PIM kinases in T cells, with Pim3 showing minimal expression. Pim3 mRNA is expressed at very low levels in naive and activated CD8 T cells, and PIM3 protein is not detected by mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by both RNAseq and proteomics data showing low/absent Pim3 expression (Figure 1C, Supplementary file 1). This is consistent with previous literature (Mikkers et al., 2004; Fox et al., 2005), providing converging evidence for the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Pim dKO mice have normal proportions of peripheral T cells in spleens, but reduced total numbers of T cells and splenocytes compared to wild-type mice. This reduction is attributed to the smaller body size of Pim dKO mice rather than specific immune defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by flow cytometry data (Figure 1\u2014figure supplement 1A-C) and are consistent with previous reports in Pim dKO mice on different genetic backgrounds. The inference about body size (C16) is reasonable given the data distribution across cell types and literature precedent, though direct body weight measurements are not shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "PIM kinases are dispensable for TCR and CD28-driven T cell activation. Pim dKO T cells show normal increases in cell size, upregulation of activation markers (CD25, CD44, CD71), IFN\u03b3 production, and proliferation over 3 days. High-resolution proteomics of >7000 proteins revealed no substantial differences in protein content or proteome composition between activated WT and Pim dKO T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 are strongly supported by multiple orthogonal approaches: flow cytometry for phenotypic markers (Figure 1D-E), CTV proliferation assays (Figure 1F, J), and comprehensive proteomics analysis (Figure 1G-H, Supplementary file 1). The conclusion (C23) is a reasonable inference from the collective data showing no substantial functional or molecular differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30"
+    ],
+    "result": "The current study contradicts previous reports about PIM kinase and mTORc1 interactions in T cell activation. Unlike Fox et al. (2005), the authors find no impact of Pim1/Pim2-deficiency on naive T cell survival in IL-7 plus rapamycin, and no differential effect of rapamycin on TCR-driven proliferation in Pim dKO versus WT cells, providing no evidence that mTORc1 substitutes for PIM kinase loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C30 are supported by experimental data (Figure 1I-J) that directly test the hypotheses from prior work. The discrepancy with Fox et al. (2005) is clearly documented. However, the reasons for the discrepancy are not explored (different genetic backgrounds, culture conditions, etc.), which limits mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "IL-2 and IL-15 upregulate and sustain PIM1 and PIM2 expression in antigen-primed CD8 T cells. Previous work has shown that PIM kinases mediate IL-15-induced proliferation of gut intraepithelial lymphocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by western blot data (Figure 2A) and literature citations. C33 is a citation of prior work (James et al., 2021) and is appropriately attributed. The data provide context for investigating PIM kinase function in cytokine-driven T cell differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In IL-15, WT CD8 T cells show robust proliferation (~90-fold expansion between days 2-6), while Pim dKO cells show a moderate proliferative disadvantage (~4-fold difference by day 6). However, Pim1/Pim2-deficiency does not affect IL-15's ability to sustain CD8 T cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by cell counting and viability data (Figure 2C-D). The proliferative disadvantage is modest but reproducible. The lack of viability defect suggests the proliferation difference is not due to increased cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Pim1/Pim2-deficiency has minimal impact on IL-15-driven transcriptional programs in CD8 T cells. RNAseq quantified ~14,000 RNA, with 381 differentially expressed (FC >1.5, q<0.05), but only 72 were substantially expressed protein-coding mRNA. Expression of key memory cell genes (Sell, Ccr7, S1pr1, Tcf7, Foxo1, Foxo3, Klf2, Id3) was not decreased, with small increases in Klf2, Id3, and Ccr7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by comprehensive RNAseq analysis (Figure 2E-G, Supplementary file 2). The filtering approach to identify substantially expressed protein-coding genes is appropriate. The data convincingly show that PIM kinases do not control IL-15-driven transcriptional programs for memory differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "PIM kinases do not drive IL-15-mediated metabolic or differentiation programs in antigen-primed CD8 T cells. Proteomics analysis of ~6900 proteins showed no major changes between WT and Pim dKO IL-15 expanded cells, including indistinguishable mitochondrial proteome composition, despite IL-15's known role in mitochondrial remodeling and prior reports of PIM kinase effects on mitochondria in other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are strongly supported by comprehensive proteomics data (Figure 2H-J, Supplementary file 3). The mitochondrial analysis is particularly important given the known role of IL-15 in mitochondrial remodeling (C47) and prior reports of PIM effects on mitochondria (C48). The conclusion (C49) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PIM1 protein levels are considerably higher in IL-2 versus IL-15 expanded CD8 T cells. Pim dKO cells respond normally to IL-2 for STAT5 phosphorylation and CD25 expression. In IL-2, WT cells show ~270-fold expansion (days 2-6), while Pim dKO cells show a very mild proliferative disadvantage (~2-fold difference) without viability defects. Activation markers CD44 and CD71 are similar between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 are supported by proteomics (Figure 3A), flow cytometry (Figure 3B-C, F), and cell counting data (Figure 3D-E). The differential PIM1 expression in IL-2 vs IL-15 (C50) provides important context for the subsequent functional analyses. The mild proliferative defect in IL-2 contrasts with the more pronounced effect in IL-15.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "IL-2 maintained Pim dKO CTL show distinct phenotypic differences from WT: they sustain higher CD62L expression (while WT downregulate it) and are smaller and less granular based on flow cytometry scatter properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by flow cytometry data (Figure 3F-G). The sustained CD62L expression in Pim dKO cells is a consistent and striking phenotype that suggests altered trafficking properties. The reduced size/granularity (C58) is consistent with subsequent proteomics findings of reduced protein content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Proteomics analysis of day 6 IL-2 cultured CTL quantified ~6900 proteins and revealed a small decrease in total protein mass in Pim dKO cells. 513 proteins were downregulated and 33 upregulated (FC >1.5, q<0.05). Despite these changes, Pim dKO cells maintain an effector CTL transcription factor profile (high TBX21, low TCF1) and effector-like mitochondrial proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by comprehensive proteomics data (Figure 4A-C, Figure 4\u2014figure supplement 1, Supplementary file 4). The data show that while Pim dKO cells have quantitative proteome differences, they retain core effector characteristics. This is important for interpreting the functional significance of PIM kinase loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Pim dKO CTL have reduced expression of key metabolic and effector proteins including glucose transporters (SLC2A1, SLC2A3), fatty acid/cholesterol biosynthesis enzymes (SCD2, HMGCS1, MVK, IDI1, FDPS, FDFT1, SQLE), and cytolytic effector molecules (granzymes, perforin, IFN\u03b3, TNF\u03b1). These findings are confirmed by flow cytometry and recapitulated by acute treatment with pan-PIM kinase inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are strongly supported by proteomics data (Figure 4D-H, Supplementary file 4), orthogonal flow cytometry validation (Figure 4I), and pharmacological inhibitor experiments (Figure 4\u2014figure supplement 2). The convergence of genetic and pharmacological approaches strengthens the conclusions. The biological significance is enhanced by citations establishing the importance of these proteins for T cell function (C66-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The proteome changes in Pim dKO CTL share features with mTORc1 inhibition, including increased PDCD4 and decreased cholesterol biosynthesis enzymes and effector molecules. mTORc1 activity in CTL is known to be sensitive to glucose availability, suggesting a potential mechanistic link through reduced glucose transporter expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by comparison with published data on mTORc1 inhibition (Hukelmann et al., 2016; Howden et al., 2019) and literature on mTORc1 glucose sensitivity (Rolf et al., 2013). This provides important mechanistic context, though the causal relationship is not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Pim1/Pim2-deficiency modestly reduces mTORc1 activity in IL-2 maintained CD8 T cells, as shown by reduced phosphorylation of S6K T389 and S6 S235/236. However, Pim dKO cells retain the ability to phosphorylate S6 in response to phorbol esters and calcium ionophores (RSK-mediated pathway).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by western blot (Figure 6A) and flow cytometry data (Figure 6B). The specificity for mTORc1-dependent phosphorylation (C75) versus RSK-mediated phosphorylation (C76) is demonstrated by appropriate controls. The modest reduction in mTORc1 activity provides a mechanistic link to the proteome changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "CD62L (Sell) mRNA expression is increased in IL-2 maintained Pim dKO CTL, along with increased expression of the transcription factor Klf2 and its targets Ccr7 and S1pr1. This is consistent with prior work showing that glucose limitation or mTORc1 inhibition prevents CD62L downregulation during IL-2-induced CTL differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by RNAseq data (Figures 5B, 6C-D) and literature citations (Sinclair et al., 2008; Finlay et al., 2012). The transcriptional mechanism through KLF2 (C79) is based on established knowledge and is consistent with the coordinate upregulation of KLF2 target genes. This provides a mechanistic explanation for the sustained CD62L protein expression observed in C57.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "PIM kinases are required for normal reprogramming of CTL trafficking. CD62L, CCR7, and S1PR1 control T cell homing to secondary lymphoid tissue, and their loss during activation redirects effector cells to peripheral tissues. Pim dKO CTL, but not WT CTL, retain substantial capacity to home to secondary lymphoid organs (lymph nodes and spleen) after adoptive transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by adoptive transfer experiments (Figure 6E) and established knowledge of homing receptor function (C82-C84, supported by literature). The in vivo functional consequence (C85) directly demonstrates that the molecular changes in homing receptor expression translate to altered trafficking behavior. This is a key functional validation of the molecular findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "PIM kinases show selective roles in CD8 T cell differentiation: they have no effect on antigen receptor/co-stimulation programs, very little impact on IL-15-driven programs in memory cells, but are required for IL-2 programming of effector CD8 T cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 represent the major conclusions synthesized from the comprehensive dataset. They are well-supported by the collective evidence from proteomics, RNAseq, and functional assays across different stimulation conditions. The context-dependent function of PIM kinases is a key insight of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "IL-2 controls essential cytolytic effector and metabolic programs in CTL and is important for anti-viral immunity and cancer immunotherapy. PIM kinases mediate IL-2 control of glucose transporters, lipid metabolic enzymes, and key cytolytic proteins (granzymes A and B) in effector CD8 T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C90 is supported by literature citation and represents established knowledge. C91 is an inference from the proteomics data showing reduced expression of these proteins in Pim dKO CTL. The claim is well-supported, though the term 'mediate' implies a direct mechanistic role that may be more complex than simple transcriptional control, as shown by the mRNA/protein discordance data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PIM kinases control protein expression primarily through regulation of protein translation rather than transcription. Loss of PIM kinase activity reduces protein synthesis rates in CTL (shown by OPP incorporation), though the reduction is modest. This mechanism has been reported previously in other cell types and explains the discordance between mRNA and protein changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by the combined RNAseq/proteomics analysis showing mRNA/protein discordance (C92) and OPP incorporation assays demonstrating reduced protein synthesis (C93, Figure 5M). The modest magnitude (C94) is acknowledged and contextualized with literature showing that modest changes can be functionally significant. Prior reports in other systems (C95) provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Reduced protein synthesis in PIM kinase-deficient cells could result from reduced mTORc1 activity combined with increased expression of the translational repressor PDCD4. Additionally, protein synthesis is energetically demanding, and reduced glucose transporter expression would limit glucose availability to fuel protein production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C96 is a reasonable inference from the data showing reduced mTORc1 activity (C74-C75) and increased PDCD4 (C124). C97 is established biological knowledge. Together, these provide a plausible mechanistic model, though the relative contributions of each factor are not quantified. The model is consistent with all available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "PIM kinases are required for IL-2 to fully repress expression of lymph node homing receptors (CD62L, CCR7, S1PR1) in effector CD8 T cells. These molecules control T cell homing to secondary lymphoid tissue, and IL-2 normally induces their downregulation to redirect effector cells away from lymphoid tissues. IL-2 maintained Pim dKO effector T cells retain the capacity to home to secondary lymphoid tissues in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 synthesize the molecular findings (increased homing receptor expression) with functional validation (adoptive transfer) and established knowledge of receptor function (C99-C100). The conclusion that PIM kinases mediate IL-2 repression of the naive trafficking program (C101) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Loss of PIM kinases does not cause IL-2 differentiated effector T cells to fully switch to a memory phenotype. Pim dKO CTL do not re-express key memory markers (TCF7, IL-7 receptor), lack a memory mitochondrial proteome, and cluster more closely with IL-2 WT CTL than IL-15 CTL by PCA. Thus, Pim1/Pim2-deficiency prevents optimal effector differentiation without causing full memory conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by proteomics and RNAseq data (Supplementary files 2 and 6, Figure 5\u2014figure supplement 1). The PCA analysis (C105) provides quantitative support for the conclusion. This is an important clarification that the lymph node homing phenotype does not reflect complete memory differentiation, addressing a potential alternative interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Pan-PIM kinase inhibitors are in development as anti-cancer drugs, and it has been suggested that PIM inhibitors might be used to generate more stem-memory-like CD8 T cells for cancer immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by literature citations (Chatterjee et al., 2019; Clements and Warfel, 2022) and represent the translational context for the study. These claims establish the clinical relevance of understanding PIM kinase function in T cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "PIM kinases show selective function for IL-2 versus IL-15 in conventional CD8 T cells, contrasting with their role in intestinal IEL where they direct IL-15 control of metabolic programming. In IEL, IL-15 alone strongly induces PIM expression, whereas in conventional CD8 T cells, IL-15 does not sustain high PIM levels. High PIM expression alone is not predictive of functional importance, as shown by high PIM levels in TCR-activated cells without functional impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 synthesize the current findings with prior work (James et al., 2021) to explain apparent discrepancies. The differential PIM expression in IL-15 conditions (C112) is supported by proteomics data (Figure 3A). The insight about expression levels not predicting function (C113) is an important conceptual point supported by the TCR activation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "PIM kinases are required to maximally stimulate mTORc1 activity in IL-2 expanded CTL, contradicting prior suggestions that mTORc1 compensates for PIM kinase deficiency. This examination reveals cell context-dependent regulatory roles for PIM kinases rather than universal functions across all T cell stimulation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C114 is supported by western blot and flow cytometry data (Figure 6A-B) showing reduced mTORc1 activity in Pim dKO cells. C115 is a well-justified synthesis of the findings showing differential PIM kinase requirements across TCR, IL-15, and IL-2 conditions. This represents an important conceptual advance in understanding PIM kinase biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "RNAseq of IL-2 expanded CTL quantified ~14,000 RNA with 223 decreased and 155 increased by Pim1/Pim2 deficiency (FC >1.5, q<0.05). Some protein changes (perforin, Granzymes C-G, K) corresponded to mRNA changes, but striking examples showed protein decreases without mRNA changes (Granzymes A and B, glucose transporters SLC2A1 and SLC2A3). ~75% of proteins with changed expression showed no strong mRNA changes (FC <1.2), and only 17 of ~500 decreased proteins showed corresponding mRNA decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 are supported by parallel RNAseq and proteomics analysis (Figure 5A-G, Supplementary files 6-7). The quantitative analysis of mRNA/protein concordance is rigorous and clearly demonstrates post-transcriptional regulation. This is a key mechanistic finding that explains how PIM kinases control effector function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Multiple lines of evidence support PIM kinase control of protein translation: small reduction in ribosome content scaling with total protein reduction, increased translational repressor PDCD4 (confirmed by flow cytometry and underpinned by mRNA), increased PDCD4 after 24hr PIM inhibitor treatment, decreased EIF4A1, and approximate halving of the EIF4A1:PDCD4 ratio. PDCD4 inhibits translation by binding EIF4A1 in a 2:1 ratio. 24hr treatment with PIM inhibitors caused quantitative reduction in protein synthesis rates (OPP incorporation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130 provide converging evidence for the translational control mechanism through multiple approaches: proteomics (Figure 5H-L), flow cytometry validation (Figure 5J), pharmacological inhibition (Figure 4\u2014figure supplement 2F), and direct protein synthesis measurement (Figure 5M). The mechanistic model involving PDCD4 and EIF4A1 is supported by established knowledge (C127) and quantitative data (C128). This is a comprehensive mechanistic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "CD8 T cells express ~200 Serine/Threonine kinases. PIM kinases are constitutively active, with their signaling participation dictated by regulated protein expression. PIM1 and PIM2 have little expression in naive T cells but are induced by TCR activation, costimulation, and are direct transcriptional targets of JAK/STAT pathways downstream of diverse cytokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 are supported by literature citations and represent established knowledge that provides important context for the study. These claims are consistent with the experimental data showing regulated PIM expression in response to different stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Prior work has reported various roles for PIM kinases in T cells: mild reduction in proliferation with sub-optimal TCR/IL-2 stimulation, control of survival pathways in naive T cells with mTORc1, promotion of stemness/memory transcription factors (Bcl6, Tcf7) upon deletion, maintenance of memory T cell survival, and prevention of mTORc1 activation and IEL proliferation in response to IL-15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 accurately cite prior literature and provide important context for interpreting the current findings. These claims establish the existing knowledge base and highlight areas of agreement and disagreement with the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "PIM kinases have clinical relevance: elevated expression in autoimmune conditions (rheumatoid arthritis, uveitis, coeliac disease) with proposed therapeutic inhibition; PIM inhibitors in cancer clinical trials (not effective as monotherapy); studies showing PIM inhibition reduces PD-L1 on tumor cells/macrophages; but PIM inhibition is generally inhibitory for T cell activation, proliferation, and effector activities, potentially diminishing anti-tumor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 are supported by literature citations and represent the translational context and clinical implications of the work. These claims establish why understanding PIM kinase function in T cells is important for therapeutic development, highlighting both potential benefits and risks of PIM inhibition.",
+    "result_type": "MINOR"
+  }
+]

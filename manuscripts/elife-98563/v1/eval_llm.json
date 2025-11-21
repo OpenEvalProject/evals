@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C66"
+    ],
+    "result": "POm provides robust and equal-amplitude synaptic input to D1-SPNs, D2-SPNs, and PV interneurons in the striatum, with PV interneurons showing significantly shorter latency to maximum PSP amplitude compared to SPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C39-C41, and C66 collectively demonstrate that POm provides strong synaptic connections to all three striatal cell types examined. The electrophysiological data show statistically similar PSP amplitudes across cell types (C40, p=0.4835) but significantly shorter latency in PV cells (C41, p<0.0001). The experimental design includes appropriate controls (sequential patching, Figure 1\u2014figure supplement 1) and statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "POm-striatal synapses exhibit short-term synaptic depression across all cell types, with PV interneurons showing milder depression during train stimulation compared to D1- and D2-SPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by paired-pulse ratio and train stimulation experiments. While PPR showed no significant differences between cell types (C42, p=0.0688), train stimulation revealed significantly milder depression in PV interneurons compared to both SPN types (C44, p=0.0184 and p=0.0481). The data are consistent with known properties of synaptic plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Mice rapidly learned the whisker-based tactile discrimination task, achieving expert performance in an average of 7.6\u00b10.51 sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by behavioral data showing increased Hit rate and decreased FA rate across training (Figure 2E). The expert criterion (Hit Rate \u22650.80 and FA Rate \u22640.30 for two consecutive sessions) is clearly defined and consistently applied. Sample size (n=5) is modest but adequate for behavioral studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "POm-striatal axonal calcium activity significantly increased across learning phases (Shaping to Expert) but regressed to baseline levels during the Reward session, as measured by both maximum amplitude and auROC values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are well-supported by fiber photometry data with appropriate statistical analyses (repeated measures ANOVA, p<0.0001 for both measures). The regression to baseline during the Reward session (C49, C51) provides important control evidence that the signal is not simply reward-related. The use of two complementary measures (amplitude and auROC) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "POm-striatal calcium activity and pupil dilation are tightly correlated but decouple during the presentation time window, with pupil dilation lagging POm activity by approximately 250ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by simultaneous recording of calcium signals and pupil dynamics (Figure 3A, G, H). The temporal relationship is quantified through cross-correlation analysis. The findings are consistent with prior literature (Petty et al., 2021; La Terra et al., 2022), providing validation. However, the manuscript could benefit from more detailed statistical analysis of the correlation strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "POm-striatal calcium activity remains consistent between Go and NoGo texture presentations, indicating that these projections do not encode texture-specific sensory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by two-way ANOVA showing significant main effect of behavioral time point (p<0.0001) but not texture type (p=0.5549) on calcium amplitude (C55). The consistency of calcium signals across texture types (C54) contrasts with divergent licking and pupil responses, strengthening the interpretation that POm-striatal signals are not sensory-specific (C56-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "POm-striatal calcium activity remains consistent across different trial outcomes (Hit, Miss, FA, CR), suggesting these projections do not encode outcome-specific information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by analysis showing calcium activity consistency across trial outcomes (Figure 3M-P, 3Q) despite outcome-dependent differences in licking and pupil dynamics. The main effect of trial outcome was significant (p=0.0231), but post-hoc comparisons only showed differences between specific Shaping conditions, not across learning phases, supporting the interpretation of outcome-independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Optogenetic inhibition of POm-striatal axons during learning significantly delayed acquisition of expert performance (12.5 vs 7.4-7.6 sessions) and slowed reaction times, with decreased overall responding bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by optogenetic manipulation experiments with appropriate controls (No Stim and FP cohorts). The JAWS cohort required significantly more sessions (p=0.0041, C60), showed slower RTs (p=0.0124, C62), and decreased bias (p=0.0351, C61). The causal interpretation (C63) is reasonable given the experimental design, though the sample size (n=4 JAWS mice) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C64"
+    ],
+    "result": "POm-striatal inputs provide a behaviorally relevant arousal-related signal that may prime striatal circuitry for efficient integration of subsequent choice-related inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11 and C64 represent interpretations of the experimental data. While C10 is reasonably supported by the photometry and optogenetic results showing arousal-related activation and behavioral necessity, the 'priming' hypothesis (C11, C64) is speculative. The manuscript acknowledges this with 'may prime' language. Direct evidence for priming (e.g., demonstrating enhanced responses to subsequent inputs) is not provided, making this interpretation uncertain despite being plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims about POm anatomy, connectivity, and function in the whisker system are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C24 represent well-established anatomical and functional knowledge about POm, supported by extensive citations to prior literature. These provide appropriate context for the current study. The authors correctly cite relevant work and accurately represent the state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background claims about striatal anatomy, cell types, and inputs are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C38 represent established knowledge about striatal circuitry and inputs, appropriately supported by citations. These provide necessary context for understanding the significance of POm-striatal projections and comparison with other thalamic inputs (particularly Pf). The literature review is comprehensive and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Discussion claims about POm input timing, comparison to cortical inputs, and PV-mediated GABAergic signaling mechanisms are supported by current data and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 integrate current findings with prior literature to support mechanistic interpretations. C65 is supported by citations, C66 by current data and comparison to Lee et al. 2019, and C67-C71 by recent literature on striatal GABA signaling (particularly Day et al., 2024). These claims appropriately contextualize the findings within existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Discussion claims about POm inputs, inhibitory gating mechanisms, and behavioral state relationships are supported by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 provide important context from prior literature about POm regulation and behavioral correlates. These are appropriately cited and accurately represent the referenced work. The integration of these concepts helps explain the arousal-related findings in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Discussion claims comparing POm to Pf thalamus, describing POm-cortical projections, and noting POm heterogeneity are supported by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C93 provide important comparative context (POm vs Pf) and acknowledge POm heterogeneity and complexity. These are well-supported by citations and help frame the limitations and future directions of the work. The acknowledgment of potential signal contamination from cortical axons (C93) and POm heterogeneity (C89-C92) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

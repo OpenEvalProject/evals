@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors employed molecular dynamics (MD) simulations using AlphaFold and crystal structures for WT and R47H variants of sTREM2 and TREM2, parameterized with CHARMM36 force field, and conducted docking and binding free energy calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C58 describe the computational methodology in detail, including structure preparation, force field parameters, simulation conditions, and analysis methods. These are standard, well-established computational approaches that are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The R47H mutation stabilizes an open CDR2 loop conformation in both IgR47H and sTREM2R47H, while WT constructs show more stochastic loop opening. The stalk domain in sTREM2WT delays CDR2 loop opening by approximately 200 ns compared to IgWT, suggesting the stalk stabilizes the closed-loop state through intramolecular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by extensive MD simulation data across multiple replicates (6 per construct) with different protonation states. The CDR2 loop distance measurements (Figure 2A, Figure 2\u2014figure supplement 1A) and RMSD/RMSF analyses provide converging evidence for differential loop dynamics between WT and R47H variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The partial stalk domain has a dual role in modulating Ig-like domain dynamics: it slightly reduces residue-level fluctuations in sTREM2WT-Ig compared to IgWT, while substantially increasing fluctuations in sTREM2R47H-Ig, particularly in the CDR2 loop region (residues 70-80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by RMSF analysis (Figure 2B) averaged across six replicates for each construct. The differential effects of the stalk on WT versus R47H variants are clearly demonstrated through quantitative fluctuation measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The partial stalk domain of sTREM2 consistently interacts with the Ig-like domain, with increased interaction frequency at Surface 1 in sTREM2R47H compared to sTREM2WT. The stalk also interacts with residues 20-35, a region adjacent to Surface 2, which the authors term 'Expanded Surface 2'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by fractional occupancy analysis (Figure 2E-F) showing stalk-Ig domain interactions. The identification of 'Expanded Surface 2' is based on simulation data, though the functional significance of this newly defined region requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In WT systems, phospholipids (PLs) bind primarily to the CDR2 loop and hydrophobic tip, with SOPS showing higher occupancy at Surface 1 and SOPC at the hydrophobic tip. In sTREM2WT, PL binding shifts to the newly defined 'Expanded Surface 2' when Surface 1 is occupied by the stalk, and the stalk itself serves as an additional binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 are supported by fractional occupancy analysis (Figure 3A-D) averaged across multiple simulations (5-7 per system). The differential binding patterns between IgWT and sTREM2WT, and between SOPS and SOPC, are clearly demonstrated. However, the functional significance of 'Expanded Surface 2' binding requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "SOPS/IgWT complexes exhibit the most favorable binding free energy among WT systems, with PLs directly engaging the CDR2 loop. In sTREM2WT, both SOPS and SOPC bind most favorably to Expanded Surface 2, and PL binding perturbs stalk/Ig-like domain interactions, indicating competitive binding between PLs and the stalk for Surface 1 access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by MM-PBSA binding free energy calculations and RMSF analysis (Figure 3E-H, Figure 3\u2014figure supplement 1). The competitive binding mechanism is inferred from multiple lines of evidence including occupancy patterns and stalk dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Entropic contributions (-T\u0394S) to binding are positive across all systems, with higher values for SOPS models than SOPC models, suggesting SOPS binding is more enthalpically driven with greater 'snugness' of binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 are based on Interaction Entropy calculations (Figure 3\u2014figure supplement 2I), but the authors acknowledge large standard deviations and lack of statistical significance for most comparisons. The interpretation of 'snugness' is speculative and the functional implications are unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Some PL/TREM2 complexes undergo rapid conformational changes in the CDR2 loop during simulations, suggesting the CDR2 loop may function as a dynamically responsive element during ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is supported by RMSD and RMSF data (Figure 3\u2014figure supplement 1), but C94 is speculative. The authors acknowledge that experimental studies are needed to clarify the functional significance of CDR2 loop remodeling and the conditions under which it occurs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In R47H variants, PLs show broadly similar binding patterns to the Ig-like domain regardless of stalk presence or PL charge, predominantly occupying the CDR2 loop and Surface 1. This uniformity suggests R47H diminishes the ability to distinguish between different brain-derived ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by fractional occupancy analysis (Figure 4A-D) showing loss of differential binding patterns in R47H variants compared to WT. The inference about impaired ligand discrimination is reasonable based on the simulation data, though experimental validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "R47H variants show markedly reduced PL binding to the hydrophobic tip and Expanded Surface 2, but increased binding to Surface 1 and enhanced binding to the stalk of sTREM2R47H. This suggests the stalk domain may 'rescue' ligand binding deficiencies caused by disease-associated mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by fractional occupancy analysis comparing R47H and WT systems. Claim C105 is a reasonable inference from the data showing compensatory stalk binding in R47H variants, though the 'rescue' mechanism is speculative and requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Binding free energy analyses show sTREM2 and TREM2 bind PS more favorably than PC across all models, but no significant difference between WT and R47H variants for PS binding. SOPS binding in R47H models shows higher entropic contributions than SOPC. These results suggest reduced ligand affinity alone does not fully account for R47H-associated signaling deficits, and differences in binding are driven by accessibility and binding patterns rather than affinity alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 are supported by MM-PBSA calculations (Figure 4I) and Interaction Entropy analysis (Figure 3\u2014figure supplement 2I). The lack of significant binding free energy differences between WT and R47H for PS contrasts with prior experimental findings, which the authors acknowledge. The inference about mechanisms beyond affinity is reasonable but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The CDR2 loop in IgR47H remains stably open regardless of PL binding, whereas in IgWT it undergoes dynamic opening and closing. This suggests R47H may hinder the CDR2 loop's ability to respond adaptively to ligand binding, potentially disrupting physiological TREM2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by simulation data (Figure 4\u2014figure supplement 1) showing differential loop dynamics. Claim C114 is a reasonable inference but remains speculative without experimental validation of the functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The flexible stalk domain of sTREM2 serves as the molecular basis for differential ligand binding between sTREM2 and TREM2 by modulating Ig-like domain dynamics and altering accessibility of binding sites. A novel 'Expanded Surface 2' binding site emerges due to competitive stalk binding, and the stalk itself functions as a ligand binding site with increased binding in R47H variants, potentially rescuing dysfunctional ligand binding. R47H-induced dysfunction results from both diminished ligand binding due to restricted CDR2 loop motions and impaired ligand discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 represent the main conclusions of the study and are supported by extensive simulation data including CDR2 loop dynamics, fractional occupancy analyses, binding free energy calculations, and RMSF/RMSD measurements across multiple replicates. The identification of 'Expanded Surface 2' and the proposed 'rescue' mechanism are novel findings, though experimental validation is needed to confirm functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Loss-of-function in sTREM2 and TREM2 occurs through changes in ligand binding patterns and loss of ligand discrimination capacity, which may hinder TREM2-DAP12 signaling and lead to impaired microglial responses including reduced lipid uptake, diminished A\u03b2 plaque clearance, and potential chronic microglial over-activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C120 are largely speculative and based on inference from simulation data combined with citations to prior research. While the proposed mechanisms are plausible, they lack direct experimental support and represent hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Treatment with TREM2-targeting antibodies that bind the stalk may compromise sTREM2 function. The study's assumption that the Ig-like domain represents membrane-bound TREM2 is a limitation, as is the use of individual soluble PLs rather than co-presented ligands as would occur in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 represent acknowledged limitations and speculations about therapeutic implications. The authors appropriately recognize these constraints on their computational model and the need for more biologically representative simulations.",
+    "result_type": "MINOR"
+  }
+]

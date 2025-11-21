@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C36",
+      "C37",
+      "C84",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "ADPT employs a hybrid CNN-Transformer architecture with skip connections, utilizing ResNet50 for shallow feature extraction, transformer modules for global context, and outputs including confidence heatmaps, location refinement, and low-resolution semantic segmentation (LRSS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C36-C37, C84, C102-C110 collectively describe ADPT's architecture design with appropriate technical detail and citations to foundational works (ResNet, CNN, Transformer). The architecture is clearly illustrated in Figure 1D and methodologically justified for animal pose estimation with limited training data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "ADPT significantly reduces tracking drift compared to DeepLabCut and SLEAP on mouse datasets, successfully detecting all 16 body parts with lower drift percentages and RMSE, particularly excelling at challenging body parts like the tip tail due to its transformer-based ability to learn long-range dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, C44-C50 are supported by quantitative results in Figures 2A-E showing significantly lower drift percentages and RMSE for ADPT compared to baseline methods. The explanation regarding transformer's advantage for long-range dependencies (C47-C48) is theoretically sound and consistent with the observed superior performance on tail tracking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ADPT demonstrates robustness across different individuals and video backgrounds, showing significantly lower drift percentages than DeepLabCut and SLEAP, with ANOVA analyses revealing that ADPT has lesser susceptibility to individual animal and background factors compared to competing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by experimental results in Figure 3A-D with appropriate statistical analysis (one-way ANOVA). The ANOVA results properly assess the independence of drift from confounding factors, demonstrating ADPT's robustness. However, the claim of 'slight susceptibility' (C54) could benefit from more precise quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "ADPT's anti-drift performance generalizes across species (Drosophila, mice, macaques, monkeys), remaining unaffected by similar objects (humans) in the scene while DeepLabCut and SLEAP exhibited tracking drift, though ADPT showed slight drift in more complex experimental setups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C56-C59 are supported by cross-species validation results shown in Figures 4 and 5, with appropriate dataset citations. The acknowledgment of limitations in complex scenarios (C58) demonstrates scientific honesty. The cross-species validation strengthens generalizability claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "On public benchmark datasets (single fly and OMS macaque datasets), ADPT achieved superior accuracy metrics (92.8% mAP on fly, better RMSE on OMS) compared to DeepLabCut and SLEAP, particularly excelling at tail tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C65-C68 are supported by quantitative results in Figure 5B, G, H with appropriate evaluation metrics (mAP, RMSE). The use of public benchmark datasets enables fair comparison. Statistical significance is reported with p-values. The performance advantages are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C70",
+      "C71"
+    ],
+    "result": "Ablation studies demonstrate that both the LRSS module and transformer architecture contribute to ADPT's performance, improving average accuracy by 0.2-0.4% on the fly dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63, C70-C71 are supported by ablation study results in Figure 5C and E. The improvements are modest (0.2-0.4%) but consistent. The ablation studies properly isolate the contribution of individual components, though the small magnitude of improvement raises questions about practical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "ADPT achieves acceptable performance with only 350 annotated images in simple laboratory environments, demonstrating data efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by data efficiency analysis in Figure 5D showing the relationship between training data size and accuracy. However, 'acceptable performance' is subjectively defined without a clear threshold, and the qualification 'in simple laboratory environments' limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C69"
+    ],
+    "result": "ADPT demonstrates computational efficiency with inference speed of 90\u00b14 fps, faster than DeepLabCut (44\u00b12 fps) and comparable to SLEAP (106\u00b14 fps), making it suitable for real-time analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C69 are supported by inference speed measurements on 1288x964 resolution mouse videos. The speeds are reported with standard deviations. However, hardware specifications and batch size during inference should be clearly stated for reproducibility. The claim of 'real-time' suitability depends on application requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "ADPT achieved 86.54% average PCK score on the StanfordExtra dog dataset, demonstrating generalizability to non-laboratory animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by quantitative evaluation on the StanfordExtra dataset with appropriate PCK metric. The breakdown by body part (legs: 85.54%, tail: 79.89%, ears: 88.61%, face: 95%) provides useful detail. However, comparison with baseline methods on this dataset would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C73"
+    ],
+    "result": "ADPT achieved 93.16% identification accuracy for 10 unmarked mice using LRSS with identity information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C73 are supported by quantitative results in Figure 7B showing a confusion matrix with 93.16% accuracy. The experimental design using LRSS for identity recognition is clearly described. However, details about the diversity of mice appearances and potential confounding factors would strengthen the evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C74",
+      "C75"
+    ],
+    "result": "For freely interacting unmarked mice, ADPT achieved 90.36% identity recognition accuracy without temporal post-processing, which improved to 99.72% with temporal identity correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C74-C75 are supported by experimental results in Figure 7C. The dramatic improvement from 90.36% to 99.72% with temporal correction is impressive. However, the temporal correction method should be described in more detail, and it's unclear whether this post-processing contradicts the 'end-to-end' claim made elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "On homecage social mice with real-world training data, ADPT outperformed DeepLabCut and SLEAP with 15% improvement in pose estimation accuracy and 5-10\u00d7 improvement in tracking accuracy (RMSE: 15.8\u00b10.59 pixels vs. 113.19\u00b142.75 for DLC and 94.76\u00b11.95 for SLEAP), with Body Affinity Fields (BAF) contributing 0.4 pixels improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C76-C81 are supported by quantitative results in Figure 8C-F with appropriate error bars. The improvements are substantial and statistically significant. The ablation study for BAF (C81) properly isolates its contribution. The use of real-world training data (not synthetic mix-up data) strengthens the practical validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "On the marmoset dataset, ADPT achieved competitive accuracy (6.14\u00b10.19 pixels under DLC metrics, 7.02\u00b10.11 pixels under SLEAP metrics) compared to DeepLabCut (6.63\u00b10.09 pixels) and SLEAP (11.39\u00b10.31 pixels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by quantitative evaluation on the marmoset dataset. ADPT shows comparable performance to DLC and superior performance to SLEAP. However, the manuscript doesn't provide detailed analysis of this dataset, and it's unclear why ADPT's advantage is less pronounced here compared to other datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Body Affinity Fields (BAF) were created (inspired by Part Affinity Fields) and used together with LRSS to distinguish and identify individuals in multi-animal tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 describe a methodological innovation with appropriate citation to the inspirational work (Cao et al., 2021). The method is illustrated in Figure 6H and its contribution is validated through ablation study (C81). The approach is technically sound for associating body parts with identities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C86"
+    ],
+    "result": "ADPT's end-to-end network structure is more computationally efficient than multi-stage methods (SIPEC, Social Behavior Atlas) because it only needs to calculate one model loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35 and C86 make efficiency claims based on architectural reasoning (single loss vs. multi-stage) with appropriate citations. However, no direct computational comparison (training time, memory usage, inference speed) with SIPEC or Social Behavior Atlas is provided. The inference speed comparison with DLC and SLEAP (C69) doesn't directly validate this claim about multi-stage methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "ADPT's CNN-transformer structure significantly reduces model parameters and requires fewer training data samples compared to purely attention-based networks (ViT), making it particularly suitable for data-limited applications like animal behavior analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 make architectural efficiency claims with citations to ViT and related works. While the data efficiency is demonstrated (C62), no quantitative comparison of model parameters with ViT or other purely attention-based methods is provided. The claim about 'significantly reduces' parameters needs empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "ADPT training used 190 epochs with 10 warm-up epochs, batch size 8, AdamW optimizer with weight decay 1e-4, warmup cosine decay learning rate schedule (1e-5 to 1e-3 to 1e-5), RMSE loss for heatmaps/refinement, sparse categorical cross-entropy for LRSS, early stopping after 30 plateau epochs, implemented in Python 3.9 with TensorFlow 2.9.1, with DeepLabCut 2.2.1 and SLEAP 1.2.9 used for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C120 provide comprehensive methodological details for training configuration and implementation. These details are essential for reproducibility. The comparison setup with DLC and SLEAP is appropriately described with version numbers and configuration adjustments for fair comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Multiple datasets were used for evaluation: custom mouse dataset (440 images, 16 keypoints, 95:5 split), custom monkey dataset (3488 images, 17 keypoints, 95:5 split), single fly dataset (1500 frames, 32 keypoints, 1200/150/150 split), OMS macaque dataset (5000 selected from 195,228 images, 13 keypoints, 40:60 split), StanfordExtra dog dataset (12,000 images, 24 keypoints, 85:15 split), homecage social mice (1200 images, 960\u00d7540 resolution), and marmoset dataset (5316 images, 15 keypoints).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C121-C129 provide comprehensive dataset descriptions with appropriate citations. The diversity of datasets (different species, skeletal complexities, resolutions) strengthens the generalizability claims. Dataset splits and sizes are clearly specified. However, more details about annotation quality control and inter-annotator reliability would strengthen the evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Deep learning methods have advanced animal pose estimation but suffer from tracking drift that affects downstream analyses (gait analysis, behavior classification, individual identification), with current state-of-the-art methods (DeepLabCut, SLEAP) lacking effective strategies to avoid drift, severely jeopardizing the reliability and repeatability of ethological studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C17 establish the problem context with appropriate citations to prior work. These claims accurately represent the state of the field and the motivation for ADPT. The citations support the characterization of existing methods and their limitations. This provides solid justification for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Three existing strategies to eliminate tracking drift have limitations: (1) human refinement is inefficient for millions of frames, (2) signal processing filters remove high-frequency behaviors like grooming or tremor, and (3) linear dynamic models (Keypoint-Moseq, adaptive Kalman filter) perform poorly on continuous long-duration drifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 accurately characterize existing drift mitigation strategies with appropriate citations. The limitations are logically reasoned (C19) or supported by citations (C20-C22). However, C23 lacks empirical support in this manuscript\u2014no direct comparison with Keypoint-Moseq or adaptive Kalman filter is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CNN-based methods (DeepLabCut, SLEAP, DeepPoseKit) have limited working memory causing tracking drift, while Transformer-based methods are more efficient at capturing global features and have achieved state-of-the-art in human pose estimation, but animal pose estimation faces challenges due to indistinct body structures (fur) and limited annotated datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 provide theoretical justification for ADPT's architecture with appropriate citations. The characterization of CNN limitations (C24-C25) and Transformer advantages (C26-C27) is supported by cited literature. The challenges specific to animal pose estimation (C28-C29) are accurately described and motivate the hybrid CNN-Transformer approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Multi-animal pose estimation and identity recognition tasks are more difficult than single-animal pose estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by citations to Agezo and Berman, 2022; Lauer et al., 2022; Han et al., 2024. This is a reasonable characterization of task difficulty that is generally accepted in the field. The successful application of ADPT to these harder tasks strengthens the contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "ADPT's architecture achieves higher accuracy in tracking poses frame by frame with less drifts or misses compared to existing methods (Lauer et al., 2022; Pereira et al., 2022).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is a summary statement supported by the comprehensive experimental results throughout the manuscript (Figures 2-8) with appropriate citations to comparison methods. This represents the main conclusion of the work and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Behavior structures indicate disease developments, genetic mutations, and drug effects, but current behavioral resolution (module level) is insufficient for finer studies like decoding millisecond neural recordings, while neural decoding of speech and vision has advanced but pose decoding remains challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 establish the broader scientific context and potential impact of improved pose estimation with appropriate citations. These claims accurately represent the state of related fields and motivate the importance of ADPT's improvements. The discussion of limitations in current behavioral resolution (C90) is well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "ADPT has potential applications including high-resolution pose quantification for neural decoding, improved 3D gait reconstruction with fewer cameras, and finer behavior resolution for drug screening beyond MoSeq's syllable level, with widespread applications due to solving anti-drift from the beginning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C99 are speculative about future applications and potential impact. While these are reasonable extrapolations based on ADPT's demonstrated capabilities, they lack direct empirical support in this manuscript. Claims C93-C95, C98 are explicitly speculative. These represent discussion points rather than validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Positional encoding occupies more GPU memory with increasing image size, and conditional positional encoding could be a solution for high-resolution frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 states a known limitation of transformer architectures, while C101 proposes a speculative solution with citation to Chu et al., 2021. These represent acknowledged limitations and potential future improvements rather than validated results. No empirical data on memory usage or conditional positional encoding is provided.",
+    "result_type": "MINOR"
+  }
+]

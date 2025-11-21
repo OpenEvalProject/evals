@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C90",
+      "C91",
+      "C165"
+    ],
+    "result": "A pretrained brain age model (SFCN) generalized well to Singaporean elderly participants but required finetuning for children. The pretrained model showed high correlation and low MAE in elderly datasets (EDIS and SLABS) but poor performance in children (GUSTO), which improved substantially after finetuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C90, C91, and C165 are directly supported by the prediction accuracy data in Figure 2, showing high correlations (r>0.73) and low MAE in elderly with the pretrained model, but poor correlation (r=0.54) in children that improved dramatically after finetuning (r=0.94). The characterization of the training data (C43) and model selection (C41, C42) provide methodological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C61",
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C73",
+      "C117",
+      "C130",
+      "C131",
+      "C166",
+      "C167"
+    ],
+    "result": "The rate of change in brain age gap (BAG) was associated with future executive function in both elderly and children, independent of baseline BAG. However, the direction of association was opposite: negative in elderly (faster BAG increase associated with worse decline) and positive in children (faster BAG increase associated with better performance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C117, C130, C131, C166, and C167 are supported by regression analyses in Figures 3 and 4, showing significant associations between rate of BAG change and executive function in both populations after controlling for baseline BAG and other covariates (C65, C71). The specificity to executive function (C66) and lack of associations with the pretrained model in children (C73) are also documented. The opposite directions are clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C88",
+      "C141",
+      "C153",
+      "C155"
+    ],
+    "result": "Saliency map analyses revealed distinct age-dependent features contributing to brain age prediction. In elderly, lateral ventricles and frontal areas were most important, while in children, white matter and posterior regions dominated. This posterior-to-anterior pattern from childhood to elderly was consistent across datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C88, and C153 are directly supported by the saliency map analyses in Figure 5, which show clear differences between elderly (C74-C78, C141) and children (C79-C84). The consistency across elderly datasets (C74, C75) and the posterior-to-anterior developmental pattern (C155) are visually evident in the figures. The specific anatomical contributions are quantified in the relative contribution plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In children, finetuning produced distinct age groups and revealed increasing variance in brain age predictions with age, consistent with the 'brain maintenance' account of aging. The variance was lowest at 4.5 years and increased steadily, suggesting that early-life factors dominate initially but different developmental rates lead to increasing variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C100, C103 are supported by Figure 2 and Figure 2\u2014figure supplement 1, showing the variance pattern. The interpretation as brain maintenance (C104) is supported by citation to prior work. Claims C101 and C102 about the greater change in children compared to elderly are supported by comparing the correlation between pretrained and finetuned predictions (C51). The inference about stable factors and ongoing changes (C105) follows logically from the variance pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C52"
+    ],
+    "result": "Baseline BAG showed broad negative associations with baseline cognition in elderly (EDIS), consistent with prior literature. In the longitudinal SLABS sample, baseline BAG showed weak associations with future cognitive decline that did not survive multiple comparison correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C107, C108, and C109 are supported by regression analyses in Appendix 3 tables and Figure 3A-B. The associations in EDIS were significant across multiple domains after correction, while SLABS showed trends that did not survive correction, matching prior work (C109). This validates the model in a cross-sectional context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "No significant cross-sectional associations were found between baseline BAG and cognition at 4.5 years old in children. This may be because brain age variability is lowest at this age, or more complex models may be needed. The lack of longitudinal cognitive data in GUSTO limited the analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 identifies a gap in the literature, while C112 is supported by Figure 2\u2014figure supplement 1. However, the explanations offered (C113, C114) are speculative, and the authors acknowledge the limitation of missing longitudinal cognitive data (C115). The lack of associations could be due to multiple factors, making the interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C11",
+      "C12",
+      "C170",
+      "C171"
+    ],
+    "result": "The study provides novel evidence for age-dependent generalizability of brain age models to non-Caucasian populations and demonstrates that longitudinal changes in brain age, independent of baseline, predict future executive function in healthy participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 assert novelty based on the authors' literature review, which is supported by the lack of prior work cited on these specific questions. Claims C11, C12, C170, and C171 summarize the implications, which follow logically from the demonstrated generalizability (Result 1) and longitudinal associations (Result 2). The novelty claims are reasonable given the specific combination of non-Caucasian populations, age groups, and longitudinal design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The success of the pretrained model in elderly can be attributed to similar aging patterns between Singaporean and Caucasian populations and abundant training data in this age range. Poor performance in children may reflect both population differences and imbalanced training data (only 147 participants \u22645 years old).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by citation, and C93 is a reasonable inference from consistent results across EDIS and SLABS. Claims C94 and C97 about training data are supported by citation to the original model paper. The observation that predictions clustered around 10 years (C98) is supported by Figure 2A, and the inference about imbalanced distribution (C99) is reasonable. Claims C95 and C96 about population differences are speculative but supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The findings suggest that early-life factors influence cross-sectional brain age but are not the only influence throughout the lifespan. Longitudinal changes in brain age capture ongoing developmental and aging processes that relate to executive function, while baseline brain age may reflect past factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C120 are supported by citations to prior work. The interpretation that longitudinal changes capture ongoing processes (C128, C129) is supported by the association findings (Result 2). The speculation about early-life factors (C122, C123) and developmental rates (C124, C125) is reasonable given the variance patterns (Result 4). The interpretation about baseline vs. longitudinal measures (C127) is speculative but consistent with the data showing stronger associations for rate of change than baseline.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The opposite directions of association between BAG change and cognition in children vs. elderly may reflect normal developmental gains vs. age-related decline. Faster BAG increase in children may indicate accelerated maturation, while slower BAG increase in elderly may reflect brain maintenance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by citations showing conflicting prior reports. The uniqueness of examining longitudinal change (C133) is valid. The interpretation linking findings to known cognitive trajectories (C134, C135) is supported by citations. The comparison to prior work on white matter (C136, C137) is supported by citation. However, the mechanistic interpretations (C138, C139) are speculative, though reasonable given the data and prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "In elderly, the importance of lateral ventricles, fornix, and frontal/subcortical regions aligns with prior research on aging. The fornix was the strongest contributor, possibly reflecting hippocampal atrophy. Frontostriatal circuits may underlie the association between BAG and executive function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C141 are supported by comparison to prior work (citations) and Figure 5. The methodological note about edge detection (C142, C143) is reasonable. Claims C144-C146 are supported by the saliency maps and citations to aging literature. The speculation about fornix and hippocampus (C147) is reasonable given anatomical connections. Prior work on fornix (C148, C149) is supported by citations. The interpretation about frontostriatal circuits (C150, C151, C152) is speculative but supported by citations and consistent with the executive function associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "In children, there was increased importance of white matter (especially posterior regions) and brainstem, with a posterior-to-anterior pattern compared to elderly. This aligns with known developmental trajectories and may underlie associations with executive function development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 are directly supported by Figure 5 showing clear differences between children and elderly. The consistency across elderly datasets (C154) validates that differences are not artifacts. The comparison to prior work on white matter (C158) and brainstem (C160) is supported by citations. The speculation about mechanisms (C159) is reasonable given the associations found and is supported by citations to developmental literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Study limitations include: (1) salient features in children were inconsistent with the pretrained model, (2) finetuning slightly improved performance in elderly suggesting suboptimal pretrained performance, (3) lack of testing in other non-Caucasian populations, and (4) limited age range (only early and late life).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by Figure 5\u2014figure supplement 1C showing inconsistent features with the pretrained model in children. Claim C161 is a reasonable inference from the slight improvements with finetuning in elderly. Claims C162, C163, and C164 are straightforward acknowledgments of study limitations. These are appropriately identified limitations that affect generalizability and completeness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The introduction establishes the context for brain age research, including its utility for understanding aging and cognition, the advantages of deep learning approaches, limitations of current models (primarily Caucasian, cross-sectional data), and gaps in longitudinal studies relating brain age changes to cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide background context supported by citations to prior work (C13-C36) and characterizations of the field (C1-C4, C20-C27). The identified gaps (C2, C4, C27, C34, C37, C40) are assertions based on literature review that motivate the study. While some are speculative (C39), they are appropriately framed and supported by citations. This background appropriately sets up the study rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C116",
+      "C168",
+      "C169"
+    ],
+    "result": "The study concludes that increased brain age in early life indicates more mature development (especially white matter and posterior areas), while increased brain age in late life suggests greater degeneration (especially lateral ventricles and frontal areas). Longitudinal measurements may help separate stable factors from ongoing changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168 and C169 are reasonable conclusions integrating the saliency map findings (Result 3) with the association findings (Result 2). Claim C116 about inhibition is supported by citation. Claim C106 is a reasonable speculation about the utility of longitudinal measurements given the variance patterns observed. These conclusions appropriately synthesize the main findings.",
+    "result_type": "MAJOR"
+  }
+]

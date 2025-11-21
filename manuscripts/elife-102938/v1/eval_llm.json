@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C120",
+      "C122",
+      "C125",
+      "C127"
+    ],
+    "result": "The study uses a computational model of the crustacean pyloric network consisting of three neurons (PD, LP, PY) connected by seven chemical synapses (glutamatergic and cholinergic), with each neuron modeled using Hodgkin-Huxley equations and nine ionic currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, C120, C122, C125, and C127 collectively describe the model architecture with appropriate citations to prior work (Prinz et al., 2004; Liu et al., 1998; Golowasch et al., 1999). The model structure is clearly defined and builds on established computational neuroscience methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C19",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "One hundred degenerate models of the pyloric network were generated using a genetic algorithm to optimize a cost function, producing models with different maximal conductances but similar pyloric activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C19, C129-C132, C139-C142 describe the model generation procedure with sufficient methodological detail. The use of genetic algorithms with 1000 individuals over 300 generations is clearly specified, and the approach is based on prior work (Alonso and Marder, 2019, 2020). The computational cost is noted as several hours per model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "The 100 models display pyloric rhythms consistent with experimental measurements, with maximal conductances distributed over wide ranges (non-normally distributed, p<0.05), while output features are normally distributed (p>0.05) and similar across models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C37-C38, C39-C40, C42 present statistical characterization of the model database with appropriate tests (Shapiro-Wilk). The t-SNE visualizations (Figure 2C, 2F) support the claim that conductances cluster while features do not. Statistical tests are properly reported with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C51"
+    ],
+    "result": "Two models with similar network activity show different underlying ionic current contributions (degeneracy), as visualized through currentscapes, leading to differential sensitivities to perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C49, C51 describe degeneracy in the models with visual evidence from Figure 3. The currentscape analysis shows clear differences in current contributions (e.g., KCa, IMI, IKd) between models A and B despite similar output. The inference that different current contributions lead to differential sensitivities (C51) is logical but requires validation from subsequent perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "The robustness of intrinsic versus synaptic conductances was compared by independently perturbing each set over a range of 0-100% deviation from control values, simulating 1000 parameter sets per variation range, and classifying outputs using a random forest classifier across all 100 models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56, C58, C60-C61 describe the perturbation methodology clearly. The approach of varying conductances by \u03b4\u2208[0,1] with 1000 samples per \u03b4 value is well-defined. The use of random forest classification (Ho, 1995) is appropriate and properly cited. The independent perturbation of intrinsic vs. synaptic conductances enables direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C65"
+    ],
+    "result": "Individual models show different sensitivities to conductance changes, with robustness decreasing as perturbation magnitude increases, but all models are consistently more sensitive to intrinsic than synaptic conductance perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C65 present the main finding supported by Figure 4 showing sensitivity curves for 10 models. The consistent separation between intrinsic (blue) and synaptic (red) curves across all models supports the conclusion. Statistical analysis in subsequent claims (C69-C82) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Sigmoid fits to sensitivity curves show that synaptic curves have significantly larger midpoint parameters (p<0.001), different width parameters (p<0.001), and larger areas under the curves (p<0.001), indicating greater robustness to synaptic perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 provide quantitative analysis with appropriate statistical tests (Shapiro-Wilk, Student's t-test) and clear reporting of p-values and r\u00b2 values (0.98 for both). The sigmoid fitting approach is reasonable, though the choice of brute force optimization over gradient-based methods is not justified. The interpretation that larger midpoint and area indicate greater robustness is logical and well-supported by the data in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "PCA analysis shows that sensitivity curves vary predominantly along a single dimension (97.6% variance in first component), with intrinsic and synaptic curves having significantly different eigenvalue distributions (p<0.05) but approximable by the same sigmoid with opposite signs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 present PCA analysis with clear reporting of variance explained (97.6%) and statistical tests. The finding that one component captures most variance indicates the curves are similar in shape but differ in magnitude/direction. The interpretation that curves can be approximated by flipped sigmoids is consistent with the eigenvalue distributions having opposite mean signs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C90",
+      "C91",
+      "C94",
+      "C97",
+      "C174",
+      "C178"
+    ],
+    "result": "2D projections of conductance space show that pyloric activity regions (G_P) are larger for synaptic than intrinsic conductances, with model-specific differences in sensitivity (e.g., Model A more sensitive to LP cell perturbations, Model B more robust to synaptic changes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C90-C91, C94, C97, C174, C178 describe visualization of conductance space with supporting evidence from Figure 6. The quantitative area calculations (e.g., PD=0.58, LP=0.50 for intrinsic vs. 0.62-0.94 for synaptic in Model A) support the conclusion. The observation that Model B has larger synaptic regions is consistent with its flatter sensitivity curve in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C144",
+      "C150",
+      "C151",
+      "C153",
+      "C154",
+      "C155",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "A random forest classifier (500 trees, max depth=4) was trained on 1200 manually labeled traces to classify pyloric vs. non-pyloric activity based on duty cycle and phase features, achieving \u226595% accuracy on selected models with 2-3% misclassification rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144, C150-C151, C153-C170 describe the classification methodology in detail. The manual labeling with expert input (C161), training set size (1200 traces, C163), and validation by manual checking of thousands of traces (C167) support the classifier's reliability. The acknowledged limitations (C153, C169-C170) regarding burst detection errors and 2-3% misclassification rate demonstrate appropriate transparency. The selection criterion of \u226595% accuracy (C166, C168) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C25"
+    ],
+    "result": "Network activity features are quantified by measuring burst phases relative to PD onset, with duty cycle standard deviations capturing irregularity, and perturbations can alter network speed and phases while maintaining similar patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23, C25 describe feature extraction methods with visual support from Figure 1B and 1D. The use of PD burst onset as a reference point is standard practice. The observation that synaptic perturbations can slow the network while maintaining pattern (C25) is demonstrated in Figure 1D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Historical focus on synaptic plasticity in learning has led to underestimation of intrinsic conductance roles in network dynamics, though central pattern generator researchers have recognized the importance of intrinsic currents; systematic sensitivity analyses comparing intrinsic and synaptic conductances have not been previously performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide historical context with extensive citations. The characterization of the field's focus on synaptic plasticity (C10-C11) and the gap in systematic sensitivity analyses (C17) appropriately motivate the study. The citations support the claims about both the historical emphasis on synapses and the awareness of intrinsic currents in CPG research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Understanding which circuit parameter changes most influence function is critical for neuroscience; intrinsic excitability changes during development and neuromodulation are well-documented, and even modest intrinsic conductance changes can cause major alterations in neuronal dynamics due to time scale effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 provide biological context with appropriate citations (Baccaglini and Spitzer, 1977; McCormick et al., multiple papers; Desai et al., 1999a,b). The examples of Rohan-Beard cells (C104) and thalamic neurons (C105) are well-established. The argument that intrinsic changes affect time scales (C108) is logical and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study may underestimate intrinsic conductance influence by selecting restricted solutions; results are expected to generalize to brain regions with plateau/oscillatory properties but may differ in cortical/hippocampal regions; the inhibitory nature of STG synapses may affect generalizability to excitatory circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C119 discuss limitations and generalizability. The acknowledgment that the study may underestimate intrinsic effects (C109) is appropriate self-criticism. However, the predictions about generalizability (C110, C111, C115, C119) are speculative without supporting data. The discussion of inhibitory vs. excitatory synapses (C112-C116) raises valid concerns about generalizability, but the speculation that excitatory circuits might show different results (C115) is not tested. The suggestion for future work in cortical/hippocampal circuits (C117) is reasonable but indicates the current results' limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Alternative approaches to hand-tuning models include database methods (evaluating all parameter combinations) and cost function optimization using genetic algorithms, which has been successfully applied to temperature-robust models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe methodological alternatives with appropriate citations (Prinz et al., 2003b, 2004; Alonso and Marder, 2019, 2020). These provide context for the chosen approach and demonstrate it builds on established methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C171"
+    ],
+    "result": "Sensitivity curves were quantitatively analyzed by fitting sigmoid functions using brute force optimization of midpoint and width parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C171 describes the curve fitting methodology. While brute force optimization is computationally expensive, it is appropriate for the 2-parameter sigmoid fit. The method is clearly described in the Methods section with the error function defined in Equation 12.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The study leverages the stereotyped motor patterns of the crustacean pyloric rhythm to assess circuit stability to conductance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 describes the study's approach with supporting citations (Maynard, 1972; Selverston, 1976). The pyloric rhythm's stereotyped nature makes it an appropriate model system for robustness analysis.",
+    "result_type": "MINOR"
+  }
+]

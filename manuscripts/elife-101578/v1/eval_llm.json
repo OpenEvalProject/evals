@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C31",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "HCMV infection causes widespread reorganization of human chromatin accessibility in both fibroblasts and retinal epithelial cells at 48 hours post-infection, with tens of thousands of regions showing altered accessibility in a largely cell-type-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C30, C31, C49-C51 are supported by high-quality ATAC-seq data with strong QC metrics (FRiP >0.5, TSS enrichment >30), biological replicates showing tight clustering, and differential analysis identifying 38,651 closed and 49,003 opened peaks in fibroblasts. The cell-type specificity is demonstrated by comparison between fibroblasts and retinal epithelial cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HCMV infection substantially alters chromatin looping interactions, with 90,198 loops lost and 44,045 new loops gained in infected fibroblasts compared to uninfected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by HiChIP data with appropriate quality metrics (67% valid interaction pairs in uninfected, 52% in infected; 82-92% overlap with H3K27ac ChIP-seq peaks). The differential loop analysis was validated across multiple FDR cutoffs and with downsampling controls, demonstrating robustness of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Chromatin regions that close upon HCMV infection are specifically enriched for TEAD transcription factor binding motifs and depleted of CTCF motifs in both fibroblasts and retinal epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 and C58-C62 are supported by systematic motif enrichment analysis of differentially accessible chromatin regions using a modified HOMER approach with CisBP database. The enrichment patterns are consistent across two independent cell types, strengthening the conclusion that TEAD sites are specifically targeted by HCMV infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C64",
+      "C68",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "TEAD1 genomic binding is substantially depleted upon HCMV infection, with losses strongly coinciding with losses in chromatin accessibility (9.1-fold enrichment), chromatin looping (2.1-fold enrichment), and H3K27ac levels (6.1-fold enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C64, C68, C70-C72 are supported by high-quality ChIP-seq data (strong motif enrichment, appropriate FRiP scores) showing dramatic reduction in TEAD1 peaks (75,554 to 17,567) and statistically significant co-occurrence with other chromatin features (all adjusted p-values <10^-190). The integrative analysis across multiple data types provides strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "HCMV infection alters expression of 2,352 human genes, with strong enrichment for developmental pathways including Hippo, WNT, and TGF-beta signaling, and specific downregulation of TEAD1 among TEAD family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80, C82 are supported by RNA-seq data with appropriate quality metrics and differential expression analysis (FDR <0.01, 2-fold cutoff). The pathway enrichment analysis shows statistically significant enrichment for developmental pathways, and the specific 3.7-fold reduction in TEAD1 (adjusted p-value 1.9\u00d710^-29) among TEAD family members is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C46",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "HCMV infection perturbs Hippo signaling through reduction of TEAD1 activity, with TEAD1 positioned at the top of a regulatory hierarchy affecting multiple developmental pathways, as evidenced by concordant loss of TEAD1 binding, H3K27ac marks, and chromatin looping at key Hippo pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C46, C73-C75 are supported by integrative analysis across multiple genomic datasets showing coordinated changes in TEAD1 binding, chromatin accessibility, H3K27ac, and looping at specific loci (e.g., FRMD6, RASSF2). The pathway enrichment analysis and identification of genes with extensive TEAD1-binding loss events (Table 1) provide strong evidence for the hierarchical model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C42",
+      "C70"
+    ],
+    "result": "HCMV infection reduces TEAD1 activity through extensive closing of chromatin normally occupied by TEAD1, with 9.1-fold enrichment of TEAD1 occupancy losses at sites that become inaccessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C42, C70 are supported by integrative analysis of ATAC-seq and ChIP-seq data showing statistically significant co-occurrence (adjusted p-value 1.4\u00d710^-215). The mechanism is directly demonstrated through comparison of chromatin accessibility and TEAD1 binding patterns before and after infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C43",
+      "C88",
+      "C89",
+      "C90",
+      "C95",
+      "C96"
+    ],
+    "result": "HCMV infection reduces TEAD1 activity through reduction of YAP1 and phosphorylated YAP1 protein levels (1.8-fold and 1.5-fold respectively), with decreased nuclear localization of both YAP1 and pYAP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C43, C88-C90, C95-C96 are supported by Western blot data from biological triplicates showing statistically significant reductions (p<0.03 for YAP1, p<0.0005 for pYAP1) and nuclear/cytoplasmic fractionation experiments. The inference that pYAP1 reduction is a direct function of YAP1 reduction (C90) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C44",
+      "C82",
+      "C92"
+    ],
+    "result": "HCMV infection reduces TEAD1 activity through reduction of TEAD1 transcript (3.7-fold, adjusted p-value 1.9\u00d710^-29) and protein levels (3.7-fold, p<0.0009), with TEAD1 being the only TEAD family member significantly affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C44, C82, C92 are supported by both RNA-seq and Western blot data from biological replicates showing concordant reductions at transcript and protein levels. The specificity for TEAD1 among TEAD family members is clearly demonstrated by RNA-seq data comparing all four TEAD genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C45",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "HCMV infection reduces TEAD1 activity through altered splicing leading to exclusion of TEAD1 exon 6, which disrupts the intramolecular interaction between TEAD1's DNA-binding domain and YAP1-interacting domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C45, C98, C101 are supported by RNA-seq alternative splicing analysis using AltAnalyze and validated by RT-PCR. The functional consequence (C100) is supported by citation to prior literature (Choi et al., 2022) rather than direct demonstration in this study, but the splicing change itself is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C47",
+      "C48",
+      "C102",
+      "C103",
+      "C113",
+      "C148"
+    ],
+    "result": "TEAD1-binding loss events are specifically enriched at genetic risk loci associated with ear (lobe attachment) and eye (optic cup area) development phenotypes, with enrichment replicating across multiple GWAS studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C47-C48, C102-C103, C113, C148 are supported by GWAS enrichment analysis using the RELI algorithm with appropriate statistical criteria (corrected p<0.01, >2-fold enrichment, specificity for loss events). The enrichment replicates across multiple independent GWAS for two phenotypes, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Classic TEAD1 target genes THBS1 and CCN1 show substantial protein-level downregulation upon HCMV infection, with THBS1 undetectable and CCN1 reduced over threefold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by Western blot data showing dramatic reduction of TEAD1 target proteins. This provides functional validation of the TEAD1 activity reduction at the level of downstream target gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C69",
+      "C93"
+    ],
+    "result": "HCMV infection causes substantial reduction in H3K27ac peaks (110,308 to 66,644) and global H3K27ac levels (1.9-fold reduction), suggesting widespread impact on enhancer functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C69, C93 are supported by H3K27ac ChIP-seq data and Western blot analysis. However, the p-value for global H3K27ac reduction (p<0.19) does not reach statistical significance, weakening this specific claim. The ChIP-seq peak reduction is more robustly supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "CTCF binding remains largely unchanged with HCMV infection, with similar numbers of peaks in uninfected (54,697) and infected (57,936) cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by CTCF ChIP-seq data showing minimal change in total peak numbers. This serves as an important control demonstrating specificity of the chromatin changes to TEAD1 rather than global disruption of all transcription factor binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Loss of TEAD1 binding might have a strong impact on enhancer functionality based on correlation with H3K27ac reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is explicitly speculative ('suggesting') and based on correlation rather than direct functional demonstration. While the correlation between TEAD1 loss and H3K27ac reduction is well-documented, causality and functional impact on enhancer activity would require additional experiments such as enhancer reporter assays or CRISPR perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "HCMV infection causes diminished inclusion of an upstream intronic region approximately 90 bases upstream of TEAD1 exon 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by alternative splicing analysis of RNA-seq data. However, the functional significance of this splicing change is not explored, and it receives minimal discussion compared to the exon 6 skipping event.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "All categories of chromatin regions in fibroblasts (unchanged, closed, and opened with infection) are highly enriched for AP-1 motifs, reflecting the ubiquitous role of AP-1 transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by motif enrichment analysis and citations to prior literature. This serves as an internal control showing that the analysis can detect expected enrichments and that some transcription factor families are not specifically targeted by HCMV.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "The connection between HCMV-induced TEAD1 changes and ear/eye phenotypes is supported by prior literature showing HCMV's role in hearing impairment and eye development, Hippo signaling's role in these processes, and specific changes at the THBS1 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109, C111-C112 integrate the current findings with extensive prior literature to provide biological context for the GWAS enrichment results. The convergence of multiple lines of evidence (GWAS enrichment, prior HCMV phenotypes, Hippo pathway roles, specific gene changes) strengthens the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "HCMV employs multiple interrelated molecular mechanisms to diminish TEAD1 activity, resulting in substantial alteration of gene expression including targets of Hippo and other developmental pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 represent the integrative conclusion of the study, synthesizing findings from multiple experimental approaches. The conclusion is well-supported by the convergent evidence from ATAC-seq, ChIP-seq, HiChIP, RNA-seq, Western blots, and RT-PCR. However, the causal relationships and relative contributions of each mechanism are not quantitatively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "Many viruses likely target a single molecule through multiple mechanisms, based on evolutionary principles and examples from HPV and poxviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C137 is explicitly speculative ('it is likely') and represents a general hypothesis extrapolated from the current findings and limited examples. While the reasoning is plausible, this represents a hypothesis for future testing rather than a supported conclusion from the current data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Ultraslow (<0.05 Hz) 5-HT oscillations are present in hippocampal CA1 during both NREM and WAKE states, with significantly greater power during NREM (NREM/WAKE ratio = 1.21 \u00b1 0.028). These oscillations show asymmetric waveforms with steeper/shorter rising phases and flatter/longer falling phases. The GRAB5-HT3.0 sensor was validated using fluoxetine, which significantly elevated fluorescence compared to saline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C32-C42 are well-supported by experimental data from 6 mice (12 sessions) using validated methodology. The fluoxetine validation (C33-C34) confirms sensor sensitivity. Power spectral analysis (C38-C40) demonstrates significant ultraslow oscillations with appropriate statistical testing. Waveform asymmetry (C41-C42) is documented with statistical significance. However, the small sample size (n=6 mice) and lack of independent replication are limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "A custom CNN model for ripple detection achieved F1 = 81.5% on testing data, outperforming standard Butterworth filter (68%) and prior CNN methods (65%). The model successfully distinguished ripples from non-ripple fast oscillations and movement artifacts, with detected events showing expected log-normal distributions of duration and power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C128-C131 demonstrate rigorous methodological development. The CNN approach addresses known limitations of spectral filtering methods. Performance metrics are clearly reported with appropriate comparisons. The analysis of missed ripples (C130-C131) shows the model's slight bias toward falling phase detection did not affect fundamental conclusions. However, the testing set appears limited (2 hours from 2 mice), and cross-validation across different experimental conditions is not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C132"
+    ],
+    "result": "Hippocampal ripples occur preferentially during the falling phase of ultraslow 5-HT oscillations in both NREM and WAKE states, with stronger coupling in NREM (p < 0.0001). Ripple clusters (\u226510 ripples, IRI \u22643s) span from shortly after the 5-HT peak to the trough. Mean phase angles were similar between states (NREM: 101.1\u00b0, WAKE: 99.6\u00b0), though WAKE showed greater session-level variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C51-C61 present converging evidence from multiple analytical approaches (ripple-triggered averaging, phase analysis, IRI distributions, cluster extraction). Statistical testing with GLMMs appropriately accounts for hierarchical data structure. The 0.01-0.06 Hz frequency band showed strongest coupling (C132). However, the relationship is correlative, not causal. The empirical definition of ripple clusters (C52) may introduce bias, though results are consistent across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Higher power ripples concentrate near the peak of ultraslow 5-HT oscillations specifically during NREM, but not WAKE. Ripple frequency was highest during the falling phase, while ripple duration showed no clear phase preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C62-C65 reveal state-dependent differences in ripple properties relative to 5-HT phase. The NREM-specific concentration of high-power ripples near the peak (C62) contrasts with the general falling-phase preference for ripple occurrence, suggesting functional heterogeneity. Statistical support is provided through GLMMs. However, the biological significance of these differences and their relationship to memory consolidation remain speculative without behavioral correlates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Hippocampal-cortical coherence was strongest during the rising phase of ultraslow 5-HT oscillations in both NREM and WAKE, with significant differences in theta, slow gamma, fast gamma, and HFO bands, but not delta. Power analysis showed increased falling-phase power for all bands in NREM, while gamma bands deviated from this pattern in WAKE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C74-C81 demonstrate phase-dependent modulation of inter-areal communication. The frequency-specific effects (C77) and state-dependent patterns (C79-C81) are well-documented with appropriate statistics. The inference that 5-HT gates hippocampal-cortical communication (C78) is reasonable but remains correlative. The contralateral recording scheme (hippocampus in one hemisphere, cortex in the other) is justified by citations but may not fully capture ipsilateral dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Microarousals (MAs) and intracranial EMG (icEMG) peaks were most prevalent during the rising phase of ultraslow 5-HT oscillations. MAs occurred shortly before the 5-HT peak, and icEMG differences between rising and falling phases were significant in both NREM and WAKE, with stronger effects in NREM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 and C66-C73 present evidence for arousal-related activity during the rising phase. However, there is a critical inconsistency in C68, which states both 'significant preference for the falling phase' and 'much more likely on the rising phase.' This contradiction undermines confidence in the MA phase analysis. The icEMG results (C70-C72) are more consistent and well-supported. The inference that rising phase constitutes a 'heightened arousal substate' (C73) is reasonable but requires resolution of the MA inconsistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Units with specific phase preference for the rising phase of ultraslow 5-HT oscillations represented a significant, though less numerous, group compared to units with falling phase preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by data in Figure 5\u2014figure supplement 2, showing that both rising-phase and falling-phase preferring units exist. This provides cellular-level evidence that the network can distinguish oscillation phases. However, the analysis is limited to 3 mice with 64, 59, and 30 units respectively. Cell-type identification (pyramidal vs. interneuron) is mentioned but not rigorously validated, limiting mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C83",
+      "C84",
+      "C88",
+      "C89"
+    ],
+    "result": "Ultraslow 5-HT oscillations delineate substates within NREM and WAKE that potentially temporally segregate internal memory consolidation processes (falling phase, ripple-associated) from arousal-related functions (rising phase). These substates operate according to similar principles in both behavioral states, suggesting 5-HT oscillations are a fundamental rhythm structuring brain activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11 and C83-C84 represent the manuscript's central conclusion, integrating findings across multiple measures. The evidence for phase-dependent segregation of activity types is strong (ripples vs. arousal markers). However, the functional interpretation regarding memory consolidation (C11) is speculative without behavioral memory tasks or causal manipulations. Claims C88-C89 about 'same principles' across states and 'fundamental rhythm' are inferences that, while plausible, extend beyond the correlative data. The study demonstrates temporal organization but not functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C121"
+    ],
+    "result": "The relationship between 5-HT and ripple incidence shows an inverted-U dose-response curve across behavioral states (peak at intermediate NREM levels) and phase-dependent dynamics within states (falling phase preference). Preliminary hippocampal slice experiments confirmed dose-dependent effects: low concentration (5 \u00b5M) 5-HT increased ripple incidence, while high concentration (50 \u00b5M) decreased it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 and C121 integrate in vivo observations with in vitro validation. The inverted-U relationship across states (C107) is clearly shown in Figure 6. The slice experiments (C108, C121) provide important mechanistic support, though described as 'preliminary' with limited methodological detail. The interpretation that dynamics matter more than absolute levels at ultraslow timescales (C106) is reasonable but remains inferential. The slice data use standard ripple detection methods, contrasting with the CNN approach in vivo, which may affect comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The asymmetry observed in ultraslow 5-HT oscillations (steeper/shorter rising phase) is unlikely to be an artifact of the GRAB5-HT3.0 sensor's kinetic properties (rise time 0.25s, decay time 1.39s), as similar asymmetries have been observed in dorsal raphe neuron firing and in fast-scan cyclic voltammetry measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 address an important methodological concern about sensor artifacts. The reasoning is sound: the sensor's kinetics (sub-second) are much faster than the ultraslow oscillations (16.7-100s periods), and independent evidence from other techniques supports biological asymmetry. However, the argument could be strengthened with direct comparison of sensor kinetics to observed waveform features or computational modeling of expected sensor effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The contralateral recording scheme (5-HT sensor in right hippocampus, silicon probe in left hippocampus) is justified by bilateral synchrony of ripples, dentate spikes, ultraslow EEG oscillations, and the bilateral symmetry of the 5-HT system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C127 provide justification for the contralateral approach based on prior literature. While the cited evidence supports bilateral synchrony of various phenomena, this does not guarantee that local 5-HT dynamics in one hemisphere perfectly reflect those in the contralateral hemisphere. The assumption that local 5-HT oscillations are bilaterally synchronized is not directly tested. Ipsilateral recordings would provide stronger evidence, though practical constraints are acknowledged. This limitation should be considered when interpreting the strength of 5-HT-ripple coupling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior literature establishes that 5-HT levels change with behavioral states (highest in WAKE, intermediate in NREM, lowest in REM), that 5-HT has been causally linked to state changes (though with controversy), and that NREM contains substates delineated by ultraslow oscillations of sigma power and noradrenaline. Ultraslow oscillations have been observed in DRN population activity and dentate gyrus 5-HT levels during NREM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C12-C23 accurately summarize relevant prior work, providing appropriate context for the current study. The citations appear appropriate, and the authors acknowledge controversies (e.g., wake-promoting vs. sleep-promoting roles of 5-HT, C14-C15). The speculation that 5-HT may distinguish pro-arousal and pro-memory substates (C23) is clearly marked as such. This background effectively motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Prior studies using optogenetic activation and pharmacological interventions to manipulate 5-HT have limitations including non-physiological activation patterns, regional non-specificity, and dose-response complexity. Multiple neuromodulators likely determine brain states in a combinatorial manner, making it difficult to isolate the causal role of 5-HT oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C109-C115 provide critical evaluation of prior causal studies and acknowledge limitations of the current correlative approach. The discussion of methodological issues (systemic vs. local effects, phasic vs. tonic release, dose-dependent effects) is sophisticated and well-supported by citations. The acknowledgment that many neuromodulators act combinatorially (C115) appropriately tempers causal interpretations. This represents thoughtful scientific reasoning about the challenges of establishing causality in neuromodulator research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Prior studies have demonstrated causal effects of 5-HT on ripple incidence, microarousal frequency, sensory gating (which is subserved by inter-areal coherence), and movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 cite prior causal studies to support the plausibility that observed correlations may reflect causal relationships. The citations appear appropriate. However, the claim that 'sensory gating is subserved by inter-areal coherence' (C119) is stated as fact based on a single citation, when the relationship between coherence and sensory gating may be more complex. This is a minor overstatement but does not fundamentally undermine the argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C90"
+    ],
+    "result": "Ultraslow 5-HT oscillations are more prominent during NREM than WAKE, potentially due to WAKE's requirement to integrate external signals. However, ultraslow oscillations during WAKE have been shown to explain fluctuations in behavioral performance and arousal, and similar oscillations have been observed in medial entorhinal cortex neurons across movement and immobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 and C90 provide context for why oscillations differ between states and cite relevant prior work on ultraslow rhythms during waking. The speculation about external signal integration (C86) is appropriately marked as such. The integration with entorhinal cortex findings (C90) strengthens the argument that ultraslow rhythms are a general organizing principle. However, the functional significance of weaker WAKE oscillations remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Theoretical work suggests feedback circuits can enable temporal differentiation on slow timescales, potentially allowing the hippocampal network to sense the direction of 5-HT change. Combinations of different neuromodulators (e.g., ACh, Oxt) with temporal shifts could help distinguish rising from falling phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 propose mechanisms for how the network might distinguish oscillation phases. The theoretical work on temporal differentiation (C91) is appropriately cited, but the application to ultraslow 5-HT oscillations is speculative. The suggestion about neuromodulator combinations (C92) is plausible given the cited evidence of temporally shifted ACh and Oxt oscillations, but remains hypothetical without direct testing. These are reasonable hypotheses for future work but lack empirical support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The rising phase of 5-HT oscillations is associated with arousal-related functions including higher coherence (which correlates with arousal and behavioral performance), microarousals (which maintain connection to the external world), and movement-related activity. This may gate hippocampal-cortical communication to reduce sensory interference during memory consolidation in the falling phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C104 integrate current findings with prior literature to propose a functional model. The associations with arousal markers are well-supported by the data. However, the functional interpretation about 'gating' communication (C94) and reducing interference during memory consolidation (C95) is speculative without behavioral memory tasks or causal manipulations. The cited prior work (C96-C104) supports the plausibility of these functions but does not directly test them in the context of ultraslow 5-HT oscillations. This represents a reasonable hypothesis requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Reduction of 5-HT1a receptors in dentate gyrus reduced ultraslow oscillation power, and psilocin (5-HT2a agonist) decreased NREM episode length and increased brief awakenings, suggesting 5-HT signaling can modulate ultraslow oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 cite prior studies showing that manipulating 5-HT signaling affects ultraslow rhythms. These provide some support for a causal role of 5-HT, though the effects are indirect (receptor manipulation rather than direct 5-HT measurement) and the mechanisms remain unclear. The interpretation that psilocin's effects on NREM episode length suggest effects on ultraslow oscillations (C123) is reasonable but inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Methodological details: Male C57BL/6J mice (2-6 months) were used; AAV9-hSyn-5HT3.0 (250 nl) was injected at 1.3 mm depth; mice recovered for 3 weeks; fluoxetine (10 mg/kg) is an SSRI that acutely increases hippocampal 5-HT; icEMG correlates highly with traditional EMG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 provide essential methodological details that are clearly stated and appropriately referenced. The use of male mice only (C134) is a limitation for generalizability. The fluoxetine dose and its effects (C137) are well-established. The icEMG validation (C133) appropriately acknowledges this as a proxy measure. These details are sufficient for replication attempts.",
+    "result_type": "MINOR"
+  }
+]

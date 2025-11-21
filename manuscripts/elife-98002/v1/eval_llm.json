@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CTB injection into retrosplenial cortex (RSP) specifically labels claustrum (CLA) neurons along the rostrocaudal axis. The labeled CLARSP neurons show spatial overlap across different RSP injection sites, with the caudal injection site labeling the most cells. CLARSP neurons align with the parvalbumin-rich CLA core and show varying density along the rostrocaudal axis, with peak density around 1 mm rostral to bregma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 provide converging anatomical evidence from retrograde tracing, immunohistochemistry, and quantitative cell counting. The methodology is well-validated with appropriate controls (C15), and the findings are consistent across multiple mice (n=3) with quantitative measurements provided (C21). The spatial distribution patterns are documented with both qualitative and quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Electrophysiological characterization reveals six distinct CLA cell types: two excitatory (E1, E2) and four inhibitory (HR, FS, LT, IR) subtypes. E1 and E2 differ in spike amplitude adaptation patterns and afterdepolarization properties. Inhibitory subtypes show distinct firing patterns and morphological features. Importantly, no cell type is exclusive to the CLARSP module, suggesting efferent connectivity is not subtype-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C40 are supported by extensive electrophysiological recordings (n=540 neurons) with quality controls specified. Unsupervised clustering validates inhibitory subtypes (silhouette score=0.853), while excitatory subtypes are distinguished by specific features. Morphological data (n=134 reconstructions) corroborates the classification. The conclusion about non-exclusive projection patterns (C39-C40) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A subset of inhibitory neurons in the CLA project to RSP, representing 23% of inhibitory subtypes and 5% of total CLA neurons. These inhibitory projection neurons were confirmed through multiple labeling approaches including genetic markers and immunohistochemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by converging evidence from retrograde labeling, genetic markers (Nkx2.1-Cre;Ai9), and immunohistochemistry validation. The quantification is clear (C35) and the finding is independently confirmed through GABA immunostaining (C36). This represents a novel and well-validated observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Intraclaustral connectivity shows that CLARSP neurons preferentially target non-CLARSP neurons rather than other CLARSP neurons. While 69.5% of CLA neurons respond to CLARSP stimulation, only a small subset of CLARSP neurons themselves are responsive. Both excitatory and inhibitory cell types receive CLARSP input, with no statistically significant differences between cell types, suggesting organization by projection target rather than cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 are supported by optogenetic mapping experiments with appropriate controls for monosynaptic connections (3-12ms latency window). The sample size is adequate (n=46 neurons), and statistical testing is appropriate (Fisher Exact test with Bonferroni correction, C47). The interpretation about cross-modular connectivity (C48-C49) is a reasonable inference from the differential response rates between CTB+ and CTB- neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Voltage-sensitive dye imaging reveals bidirectional glutamatergic transmission along the rostrocaudal axis of the CLA. Electrical stimulation produces traveling waves of depolarization (10-15ms duration) that are abolished by glutamate receptor blockade, supporting functional excitatory connectivity within the CLA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by voltage-sensitive dye imaging experiments (n=28 recordings from 13 animals) with appropriate pharmacological controls (DNQX+APV). The bidirectional nature is demonstrated by stimulation from both rostral and caudal poles. The temporal properties and pharmacological sensitivity provide strong evidence for glutamatergic transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cortical inputs to the CLA are organized into dorsoventral modules, with frontal cortices (ORB, ACAa) projecting both medially/laterally and dorsally/ventrally. CLARSP neurons preferentially respond to frontal cortical inputs, while non-CLARSP neurons show stronger responses to secondary visual cortex than previously reported for primary sensory cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by anatomical tracing (n=3 mice per injection site, 24 mice total) and optogenetic mapping experiments. The modular organization is confirmed by fluorescence imaging and response probability measurements. The comparison with previous studies (C56) is appropriately cited. The finding of strong visual responses is surprising but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Individual CLA neurons integrate inputs from multiple cortical areas, particularly between frontal regions for CLARSP neurons. E2 and FS cell types are highly integrative, with E2 neurons being the most likely to project to RSP. Cell type identity and projection target influence the likelihood of dual-responsiveness to cortical inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by dual-color optogenetic experiments (n=259 cells) with appropriate controls for opsin cross-talk. The measured integration probability exceeds expected probability by 26% (ratio=1.26\u00b10.12), indicating non-random integration. Cell-type specific differences are well-documented. However, C61 is speculative and appropriately qualified as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "CLA axons differentially innervate cortical layers in downstream targets, with ACA receiving relatively even innervation across layers and more deep layer innervation than RSP for both excitation and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by in vitro optogenetic experiments with voltage-clamp recordings across cortical layers (n=49 cells in ACA, n=43 in RSP). The layer-specific differences are documented with both anatomical (fluorescence) and physiological (PSC) data. The findings confirm and extend previous work as appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In vivo calcium imaging reveals that 47% of CLA axons respond to sensory stimuli, with 96% showing multisensory response patterns. Somatosensory stimuli evoke the most responses among unimodal stimuli (18.8%), while the combination of all three stimuli activates the largest proportion of axons (20.7%). Notably, 35% of responsive axons are exclusively activated by multimodal stimuli. Response probability and magnitude vary significantly by stimulus type but remain stable across experimental sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 are supported by extensive in vivo calcium imaging (78 recordings, 1364 axons, 4 animals) with appropriate statistical analyses (Mann-Whitney U tests with multiple comparison correction, Kruskal-Wallis tests). The quantitative findings are precise and consistent. The stability across sessions (C73, r=0.21, p=0.32) and modulation by stimulus type (C74-C75, p<1e-9) are well-documented. The high proportion of multimodal responses is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Chronic CLARSP silencing using TetTox effectively reduces synaptic output (validated in vitro) but does not affect home cage behavior, anxiety tests, or reversal learning. However, CLARSP silencing specifically impairs sensitivity to multimodal stimuli (p=0.001) in a conditioning task while sparing responses to unimodal stimuli, and reduces poke latencies across trial types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by comprehensive behavioral testing with appropriate controls (sham group, n=12 vs TetTox n=16). The TetTox efficacy is validated in vitro (C76, p=0.0003). The multimodal-specific deficit is statistically robust (C80, two-way ANOVA with Sidak correction, p=0.001) while unimodal responses are preserved (C81). The interpretation (C82) is appropriately qualified as a suggestion. However, the lack of effects in other tasks (C77-C78) raises questions about the specificity and generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The claustrum is highly interconnected with cortex and has been implicated in various functions including sleep, saliency detection, multisensory integration, and task engagement. Its projections are organized into connectivity-defined modules with preferential targeting of prefrontal and midline regions, and cortical inputs activate feed-forward inhibition via local interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 are background claims supported by appropriate citations to prior literature. These establish the context for the current study and are generally accepted in the field. The claims are properly attributed to previous work and provide necessary background for interpreting the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study demonstrates that CLA neurons communicate across projection-defined modules with differential cortical innervation, individual neurons integrate multiple cortical inputs in a cell-type and projection-specific manner (particularly for frontal inputs), CLA axons respond to both unimodal and multimodal sensory stimuli in vivo, and chronic silencing specifically reduces sensitivity to multimodal stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 represent the main conclusions of the study and are supported by the comprehensive experimental evidence detailed in the other claim groups. Each conclusion is backed by multiple lines of evidence using complementary techniques (anatomy, electrophysiology, optogenetics, imaging, behavior). The integration of these findings provides strong support for the overall conclusions about CLA function in multisensory integration.",
+    "result_type": "MAJOR"
+  }
+]

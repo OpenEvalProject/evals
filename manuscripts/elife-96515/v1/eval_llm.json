@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "AAV-5-hSyn1-eArch3.0 injection in hippocampal CA1 results in significant expression of fluorescent-tagged terminals in RSC, with high density in superficial layers II\u2013III and deeper layer V, forming beads-on-a-string structures typical of synaptic terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide converging anatomical evidence from fluorescence microscopy showing successful viral transduction and axonal projection patterns. The observations are consistent with prior work (Ferreira-Fernandes et al., 2019) and provide necessary validation that the optogenetic manipulation targets the intended circuit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "In baseline DNMP sessions without light delivery, eArch+ and CTRL animals showed no differences in behavioral performance across three sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by statistical analysis (GLMM, p=0.212) demonstrating no baseline differences between groups. This is a critical control establishing that differences observed during illumination are due to optogenetic manipulation rather than pre-existing group differences or effects of surgical implants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Optogenetic activation of eArch3.0 in hippocampal terminals within RSC during the test phase of DNMP significantly impaired performance in eArch+ animals compared to controls, with decreased accuracy in both illuminated (TI) and non-illuminated (NI) trials relative to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 collectively demonstrate the primary behavioral effect with appropriate statistical support (p=0.006 for overall performance; p<0.001, p=0.02, p=0.008 for specific comparisons). The finding that both TI and NI trials show impairment in eArch+ but not CTRL animals rules out non-specific light effects and suggests prolonged synaptic disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The behavioral impairment caused by eArch activation is not due to light alone and outlasts the illumination period, affecting subsequent non-illuminated trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by the observation that CTRL animals show no light-induced deficits and by statistical evidence (p=0.015) that illuminated trials reduce performance in subsequent trials in eArch+ animals. This finding is consistent with cited literature on prolonged optogenetic effects (Robinson et al., 2017; El-Gaby et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "eArch+ animals show significantly impaired error correction, with higher probability of consecutive errors in illuminated sessions compared to CTRL animals, while this difference is absent in baseline sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by statistical analysis (p<0.001 for illuminated sessions, p=0.172 for baseline). The finding that eArch+ animals fail to correct errors after reward omission suggests disruption of action-outcome association processing, though the mechanistic interpretation (C50) involves some inference beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The effects of eArch activation persist for up to three trials (approximately 3 minutes) after illumination, with significant performance impairments when illumination occurred 1-3 trials prior, but not 4 trials prior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 provide temporal characterization of the prolonged effect with statistical support (p=0.01, p=0.033, p=0.036 for T-1 through T-3; p=0.078 for T-4; p=0.023 for two consecutive non-illuminated trials). The temporal estimate relies on reasonable assumptions about inter-trial intervals (~20s), making the ~3 minute duration estimate well-founded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C62"
+    ],
+    "result": "eArch+ animals spend less time at the choice point compared to CTRL animals, specifically during correct trials in both illuminated and non-illuminated conditions, suggesting hastier decision-making processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C62 are supported by statistical analysis (p=0.02 overall; p=0.008 and p=0.045 for NI and TI correct trials). The interpretation that reduced time reflects hastier decisions (C59, C62) is reasonable given the correlation with increased errors, though alternative explanations (e.g., motor effects) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C60"
+    ],
+    "result": "Optogenetic silencing of hippocampal inputs to RSC impairs spatial working memory retrieval, decreases performance, and hastens decision-making, possibly via disruption of synaptic mechanisms conveying contextual and episodic information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C60 summarize the main findings which are well-supported by the experimental data. However, the mechanistic interpretation in C60 about specific synaptic mechanisms is speculative and goes beyond what the behavioral data alone can demonstrate. The causal link between hippocampal-RSC communication and working memory is established, but the precise mechanisms remain uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C45"
+    ],
+    "result": "eArch3.0 activation causes both immediate hyperpolarization and prolonged synaptic suppression through pH-dependent mechanisms that reduce vesicle release for several minutes, challenging the notion of millisecond-precise optogenetic control at synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 accurately cite established literature (Krol et al., 2019; Miao et al., 2015; El-Gaby et al., 2016; Mahn et al., 2016) describing eArch mechanisms. Claim C45 is a reasonable inference from the current behavioral data showing prolonged effects. However, the authors did not directly measure synaptic physiology in their preparation, so the mechanistic link is inferred rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Previous work (Robinson et al., 2017) demonstrated that optogenetic silencing during working memory tasks can affect subsequent non-illuminated trials through synaptic plasticity mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 accurately describe findings from Robinson et al., 2017, providing important context for interpreting the prolonged effects observed in the current study. This represents appropriate citation of relevant prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C46",
+      "C47",
+      "C61"
+    ],
+    "result": "The introduction establishes the theoretical framework for working memory, spatial cognition, RSC function, hippocampal-RSC connectivity, and the rationale for using optogenetics and the DNMP task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide background knowledge and cite appropriate literature to establish context. Claims C1-C5, C11-C17 draw on established neuroscience; C18-C20 cite the authors' prior work; C21 is explicitly stated as a hypothesis; C22-C24 appropriately describe the DNMP task and optogenetics; C46-C47 cite learning theory; C61 cites the authors' previous work. All are appropriately supported by citations or represent standard knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The methods describe the experimental subjects, housing conditions, apparatus, surgical procedures, viral vectors, behavioral protocol, and optogenetic stimulation parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C78 provide methodological details that appear complete and appropriate for the experimental design. Sample sizes (8 per group), viral titers, behavioral parameters, and illumination timing are specified. The estimate of illumination duration (C77) is based on reasonable calculation from measured animal speed.",
+    "result_type": "MINOR"
+  }
+]

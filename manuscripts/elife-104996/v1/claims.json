@@ -1,0 +1,1391 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The primate brain is highly interconnected between and within brain areas, including areas involved in sensory processing.",
+    "claim_type": "EXPLICIT",
+    "source": "The primate brain is highly interconnected between and within brain areas. This includes areas involved in sensory processing (Felleman and Van Essen, 1991).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Felleman and Van Essen, 1991",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Most computational models of brain activity in response to external natural stimuli do not take the recurrent architecture of brain networks into account.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, most computational models of brain activity in response to external natural stimuli do not take the recurrent architecture of brain networks into account.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on review of existing literature and modeling approaches",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Encoding models often rely on simple input/output relationships such as general linear models in fMRI.",
+    "claim_type": "EXPLICIT",
+    "source": "'Encoding' models often rely on simple input/output relationships such as general linear models in fMRI (Friston et al., 1995), or temporal response functions (TRFs) in EEG/MEG (Lalor and Foxe, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to established methods in the field",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Functional connectivity is often measured as instantaneous linear correlations when analyzing fMRI activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Interactions between brain areas are captured often just as instantaneous linear correlations that are referred to as 'functional connectivity' when analyzing fMRI activity (Greicius et al., 2003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Greicius et al., 2003",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Instantaneous correlation measures do not capture time delays inherent in recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these measures of instantaneous correlation do not capture time delays inherent in recurrent connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on logical inference about the limitations of instantaneous correlation measures",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Granger-causality formalism can establish directed connectivity by taking temporal precedence into account with recurrent models.",
+    "claim_type": "EXPLICIT",
+    "source": "By taking temporal precedence into account with recurrent models, the 'Granger-causality' formalism can establish directed 'connectivity'. This has been used to analyze both fMRI and electrical activity (Friston et al., 2013; Haufe et al., 2013; Pellegrini et al., 2023; Seth et al., 2015; Sheikhattar et al., 2018; Soleimani et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to prior work using Granger-causality",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "A portion of functional connectivity is preserved between rest and stimulus conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "A general observation of these studies is that a portion of the functional connectivity is preserved between rest and stimulus conditions, while some aspects are altered by the perceptual task (Betti et al., 2013; Demirta\u015f et al., 2019), sometimes showing increased connectivity during the stimulus (Vanderwal et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to multiple studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "An external stimulus can drive multiple brain areas and thus induce correlations between these areas.",
+    "claim_type": "EXPLICIT",
+    "source": "This should be no surprise, given that an external stimulus can drive multiple brain areas and thus induce correlations between these areas (Cole et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation and logical reasoning",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Removing stimulus-induced correlations by controlling for a common cause is standard practice in statistical modeling and causal inference.",
+    "claim_type": "EXPLICIT",
+    "source": "Removing such stimulus-induced correlations by controlling for a common cause is standard practice in statistical modeling and causal inference (Pearl, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Pearl, 2013",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "In studies that focus on functional connectivity in neuroscience, stimulus-induced correlations are often ignored when analyzing the correlation structure of neural signals.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in studies that focus on functional connectivity in neuroscience, stimulus-induced correlations are often ignored when analyzing the correlation structure of neural signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on review of neuroscience literature practices",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Dynamic causal modeling allows input to modulate functional connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "A notable exception is 'dynamic causal modeling' (Friston et al., 2003). In this modeling approach, the 'input' can modulate functional connectivity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Friston et al., 2003",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Correlation structure changes with task states in active behavioral tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "This is particularly important in the context of active behavioral tasks, where the common finding is that correlation structure changes with task states (Gonzalez-Castillo and Bandettini, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Gonzalez-Castillo and Bandettini, 2018",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Variability across trials in motor cortex is due to intrinsic noise which is linearly superimposed on a common response in both hemispheres.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, fMRI shows that variability across trials in motor cortex is due to an intrinsic 'noise' which is linearly superimposed on a common response in both hemispheres due to a simple motor action (Fox et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Fox et al., 2006",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Stimulus-response variability in the visual cortex has been attributed to variability of the ongoing dynamic.",
+    "claim_type": "EXPLICIT",
+    "source": "Stimulus\u2013response variability in the visual cortex has been attributed to variability of the ongoing dynamic (Arieli et al., 1996; Buzsaki, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Arieli et al., 1996 and Buzsaki, 2006",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Some studies show that correlations of spiking activity between different recording locations are largely unaffected by visual stimulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Some studies of electrical recordings from the visual cortex show that correlations of spiking activity between different recording locations are largely unaffected by visual stimulation (Fiser et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Fiser et al., 2004",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Other studies show that visual input affects local correlation in the visual cortex and across the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, other studies show that visual input affects local correlation in the visual cortex (Gray et al., 1989; Ito et al., 2020; Nauhaus et al., 2009) and across the brain (Roelfsema et al., 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The VARX model is well established in the field of linear systems and econometrics.",
+    "claim_type": "EXPLICIT",
+    "source": "A mathematical model that implements this is the vector-autoregressive model with external input (VARX). This model is well established in the field of linear systems (Ljung, 1999) and econometrics (Hamilton, 2020), where it is used to capture intrinsic dynamics in the presence of an external input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Ljung, 1999 and Hamilton, 2020",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The VARX model is an extension of the VAR model that is routinely used to establish Granger-causality in neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "The VARX model is an extension of the VAR model that is routinely used to establish 'Granger-causality' in neuroscience (cited above).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on established knowledge and prior citations",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Linear systems are routinely used for event-related fMRI analysis and encoding models.",
+    "claim_type": "EXPLICIT",
+    "source": "While linear systems are an inadequate model of neuronal dynamics, they remain an important tool to understand neural representations because of their conceptual simplicity. They are routinely used for event-related fMRI analysis but also for 'encoding models' to link nonlinear features of continuous stimuli to neural responses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on established practices in neuroscience",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Linear models have been used to analyze responses to video in fMRI, to speech in EEG, and to audio in intracranial EEG.",
+    "claim_type": "EXPLICIT",
+    "source": "They have been used to analyze responses to video in fMRI (Naselaris et al., 2011), to speech in EEG (Di Liberto et al., 2015) or to audio in intracranial EEG (Holdgraf et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to multiple studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The recurrent connections observed during rest are only minimally altered by watching videos.",
+    "claim_type": "EXPLICIT",
+    "source": "Our main finding is that the recurrent connections observed during rest are only minimally altered by watching videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main finding from the study's data analysis",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The brain's response to naturalistic stimulus appears to be substantially shaped by the same intrinsic dynamic of the brain observed during rest.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, the brain's response to naturalistic stimulus appears to be substantially shaped by the same intrinsic dynamic of the brain observed during rest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main finding from the study's data analysis",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Accounting for external input removes spurious connections in the VARX model.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, accounting for the external input removes spurious 'connections'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on comparison of VAR and VARX models in the data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The number of significant recurrent connections drops when adding inputs to the model.",
+    "claim_type": "EXPLICIT",
+    "source": "However, they vary systematically in the number of significant recurrent connections A (those with p < 0.0001, Figure 1D), which drops when adding inputs (median = \u22127.3 \u00d7 10\u20134, p < 0.0001, N = 26, Wilcoxon).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test on data from 26 recording sessions",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The effect sizes R significantly decrease in the VARX model compared to VAR model.",
+    "claim_type": "EXPLICIT",
+    "source": "The effect sizes R also significantly decrease in the VARX model (Figure 1E, median = \u22122.2 \u00d7 10\u20135, p < 0.0001, N = 26, Wilcoxon).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test on data from 26 recording sessions",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Removing any of the input features increased the effect size of recurrent connections compared to a model with all features.",
+    "claim_type": "EXPLICIT",
+    "source": "Removing any of the input features increased the effect size of recurrent connections compared to a model with all features (Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Based on analysis shown in supplementary figure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Effect size monotonically decreases with each feature added to the VARX model.",
+    "claim_type": "EXPLICIT",
+    "source": "Effect size monotonically decreases with each feature added (Figure 1F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Based on cumulative feature addition analysis shown in Figure 1F",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Adding film cuts significantly reduces the strength of recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "Decreases of effect size are significant when adding film cuts (\u0394R = \u22123.6 \u00d7 10\u20136, p < 0.0001, N = 26, FDR correction, \u0251 = 0.05)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test on data from 26 recording sessions",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Adding the sound envelope significantly reduces the strength of recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "and the sound envelope (\u0394R = \u22123.59 \u00d7 10\u20136, p = 0.002, N = 26, FDR correction, \u0251 = 0.05).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test on data from 26 recording sessions",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The number of significant recurrent connections in A was significantly reduced during movie watching compared to rest.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of significant recurrent connections in A was significantly reduced during movie watching compared to rest (Figure 2C, fixed effect of stimulus: beta = \u20133.8 \u00d7 10\u20133, t(88) = \u20133.9, p < 0.001)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Mixed-effects model analysis on data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The effect size of recurrent connections is significantly reduced during movie watching compared to rest.",
+    "claim_type": "EXPLICIT",
+    "source": "as is the effect size (Figure 2D, fixed effect of stimulus: beta = \u20132.5 \u00d7 10\u20134, t(88) = \u20134.1, p < 0.001).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Mixed-effects model analysis on data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The total response H of fixation onset is significantly stronger than the feed-forward effect B.",
+    "claim_type": "EXPLICIT",
+    "source": "We see that the total response H of fixation onset is significantly stronger (Figure 3C, median\u0394 = 1.5 \u00d7 10\u20134, p < 0.0001, N = 23, Wilcoxon)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Statistical test on data from 23 patients",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The total response H of fixation onset is significantly longer than the feed-forward effect B.",
+    "claim_type": "EXPLICIT",
+    "source": "and longer than the feed-forward effect B (Figure 3D, median\u0394 = 10.9 ms, p = 0.0002, N = 23, Wilcoxon).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Statistical test on data from 23 patients",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The total response of the brain to external inputs is dominated by the intrinsic dynamics of the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that the total response of the brain to these external inputs is dominated by the intrinsic dynamics of the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inference drawn from the comparison of B and H responses",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "More sparse recurrent connectivity is found for BHA as compared to LFP.",
+    "claim_type": "EXPLICIT",
+    "source": "Generally, we find a more sparse recurrent connectivity for BHA as compared to LFP (compare Figures 1 and 2 with Figure 1\u2014figure supplement 2 and Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Comparison of results across different signal types shown in figures",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Taking the extrinsic input into account removed stimulus-induced recurrent connections in BHA.",
+    "claim_type": "EXPLICIT",
+    "source": "Namely, taking the extrinsic input into account removed stimulus-induced recurrent connections (Figure 1\u2014figure supplement 2)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Analysis of BHA data shown in supplementary figure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The fraction of significant channels decreases during movie watching compared to rest in BHA.",
+    "claim_type": "EXPLICIT",
+    "source": "the fraction of significant channels decreases during movie watching compared to rest (Figure 2\u2014figure supplement 2)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Analysis of BHA data shown in supplementary figure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Responses to the stimulus are stronger and more prolonged when separately modeling the effect of recurrent connectivity in BHA.",
+    "claim_type": "EXPLICIT",
+    "source": "and responses to the stimulus are stronger and more prolonged when separately modeling the effect of recurrent connectivity (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Analysis of BHA data shown in supplementary figure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "There is a drop in power in the theta/alpha band during movie watching across all electrodes in LFP.",
+    "claim_type": "EXPLICIT",
+    "source": "In this example, we see a drop in power in the theta/alpha band (5\u201311 Hz) during movie watching across all electrodes (Appendix 1\u2014figure 1A, dotted lines).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Observation from example data shown in appendix figure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "For BHA, there is a drop in power relative to the overall BHA signals for some channels during movie watching.",
+    "claim_type": "EXPLICIT",
+    "source": "When analyzing BHA, we find no difference in the power of the innovation process between movie and rest, but we do find a drop in power relative to the overall BHA signals for some channels (Figure 4B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Analysis of BHA data shown in Figure 4B",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Channels with a drop in relative power coincide with channels that responded to the external stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "These channels seem to coincide with channels that responded to the external stimuli, that is channels with a significant effect in B (Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Observation from comparison of Figure 4A and 4B",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Relative power drops for nearly all patients in responsive channels.",
+    "claim_type": "EXPLICIT",
+    "source": "If we take for each patient the median relative power for responsive channels (median among those with p < 0.0001), then we find that relative power drops for nearly all patients (Figure 4D, Wilcoxon rank sum test, p = 8.8 \u00d7 10\u20137, N = 26).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Statistical test on data from 26 patients",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Cortical areas showing more outgoing connections have higher T1w/T2w ratio, which are located lower on the cortical hierarchy.",
+    "claim_type": "EXPLICIT",
+    "source": "We used a mixed-effects model and found that cortical areas showing more outgoing connections (R-RT>0) have higher T1w/T2w ratio, which are located lower on the cortical hierarchy (t(533) = 2.62, p = 0.009, Figure 5C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Mixed-effects model analysis on data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The intrinsic dynamic enhances and prolongs the neural responses to scene cuts, eye movements, and sounds.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that the intrinsic dynamic enhances and prolongs the neural responses to scene cuts, eye movements, and sounds.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings from the study",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Failing to account for extrinsic inputs leads to spurious recurrent connections that govern the intrinsic dynamic.",
+    "claim_type": "EXPLICIT",
+    "source": "Failing to account for these extrinsic inputs leads to spurious recurrent connections that govern the intrinsic dynamic.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings from the study",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The recurrent connectivity during rest is reduced during movie watching.",
+    "claim_type": "EXPLICIT",
+    "source": "We also find that the recurrent connectivity during rest is reduced during movie watching.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings from the study",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "An external stimulus can reduce intrinsic noise.",
+    "claim_type": "EXPLICIT",
+    "source": "The model shows that an external stimulus can reduce intrinsic noise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings from the study",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Sensory areas have mostly outward connections, whereas higher-order brain areas have mostly incoming connections.",
+    "claim_type": "EXPLICIT",
+    "source": "It also shows that sensory areas have mostly outward, whereas higher-order brain areas have mostly incoming connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings from the study",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The response to an external audiovisual stimulus can largely be attributed to the intrinsic dynamic of the brain, already observed during rest.",
+    "claim_type": "EXPLICIT",
+    "source": "We conclude that the response to an external audiovisual stimulus can largely be attributed to the intrinsic dynamic of the brain, already observed during rest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Main conclusion drawn from the study's findings",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The intrinsic dynamic had reduced recurrent connectivity during the movie stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "We also found that the intrinsic dynamic had reduced recurrent connectivity and weaker intrinsic variability during the movie stimulus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings from the Discussion",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The intrinsic dynamic had weaker intrinsic variability during the movie stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "We also found that the intrinsic dynamic had reduced recurrent connectivity and weaker intrinsic variability during the movie stimulus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings from the Discussion",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The duration and magnitude of responses to extrinsic input are in large part a result of the intrinsic dynamic of the recurrent brain network.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest that the duration and magnitude of responses to extrinsic input are in large part a result of the intrinsic dynamic of the recurrent brain network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary interpretation of results",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The stimulus features used capture a substantial amount of variance across the brain in intracranial EEG.",
+    "claim_type": "EXPLICIT",
+    "source": "From our prior work (Nentwich et al., 2023), we know that the stimulus features we included here capture a substantial amount of variance across the brain in intracranial EEG.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Reference to prior published work by the authors",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Adding semantic features could have further reduced shared variance and consequently further reduced average recurrent connectivity in the model.",
+    "claim_type": "EXPLICIT",
+    "source": "Arguably, however, the video stimuli had rich semantic information that was not captured by the low-level features used here. Adding such semantic features could have further reduced shared variance, and consequently further reduced average recurrent connectivity in the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculation about potential effects of additional features",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "In fMRI, functional connectivity during movies is stronger than during rest.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in fMRI, the conclusion seems to be that functional connectivity during movies is stronger than during rest (Vanderwal et al., 2017), which likely results from stimulus-induced correlations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on citation to prior work and inference about mechanism",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The VARX model can remove some of the effects of stimuli, revealing that average recurrent connectivity may be reduced rather than increased during stimulus processing.",
+    "claim_type": "EXPLICIT",
+    "source": "The VARX model can remove some of the effects of these stimuli, revealing that average recurrent connectivity may be reduced rather than increased during stimulus processing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Interpretation of the study's findings",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Reduced functional connectivity has previously been observed within the visual cortex when a visual stimulus is presented.",
+    "claim_type": "EXPLICIT",
+    "source": "Reduced functional connectivity has previously been observed within the visual cortex when a visual stimulus is presented (Nauhaus et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Nauhaus et al., 2009",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The role of the initial responses B is to shape the input to be processed by the existing intrinsic dynamic.",
+    "claim_type": "EXPLICIT",
+    "source": "Arguably then, the role of the initial responses B is to shape the input to be processed by the existing intrinsic dynamic.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Interpretation based on the study's findings",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Learning of a stimulus representation consists in learning a mapping of the external stimulus to an existing intrinsic dynamic of the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "In this view, learning of a stimulus representation consists in learning a mapping of the external stimulus to an existing intrinsic dynamic of the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Interpretation consistent with Buzs\u00e1ki's theoretical framework",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Correlations in lower frequencies reach over longer distances compared to correlations in higher frequencies.",
+    "claim_type": "EXPLICIT",
+    "source": "This may be expected because correlations in lower frequencies (that dominate LFPs) reach over longer distances compared to correlations in higher frequencies (e.g. Muller et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Muller et al., 2016",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "BHA has been linked to a mixture of neuronal firing and dendritic currents.",
+    "claim_type": "EXPLICIT",
+    "source": "BHA has been linked to a mixture of neuronal firing and dendritic currents (Leszczy\u0144ski et al., 2020), in contrast to LFP, which is thought to originate from widespread dendritic currents.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Leszczy\u0144ski et al., 2020",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "For both LFP and BHA, modeling the intrinsic dynamic removed spurious recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the observed differences in sparsity, for both LFP and BHA, we found that modeling the intrinsic dynamic removed spurious recurrent connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings across both signal types",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "For both LFP and BHA, the duration and strength of stimulus responses can be largely attributed to the recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "We also found for both LFP and BHA that the duration and strength of stimulus responses can be largely attributed to the recurrent connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings across both signal types",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Response variability is due to variability of intrinsic activity.",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with the notion that response variability is due to variability of intrinsic activity (Arieli et al., 1996), which is found to decrease across the brain with the onset of an external stimulus (Churchland et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Noise quenching has been associated with increased attention.",
+    "claim_type": "EXPLICIT",
+    "source": "This type of noise quenching has been associated with increased attention (Arazi et al., 2019) and improved visual discrimination performance (Arazi et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "When the input injects additional power, nonlinear gain adaptation implicitly reduces the contribution of the intrinsic noise to the total power.",
+    "claim_type": "EXPLICIT",
+    "source": "When the input injects additional power, this nonlinear gain adaptation implicitly reduces the contribution of the intrinsic noise to the total power.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explanation of mechanism based on gain adaptation model",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "In scalp EEG, noise quenching is associated with an overall drop in power with the stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "In scalp EEG, noise quenching is associated with a similar overall drop in power with the stimulus (Arazi et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Arazi et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Quenching of neural variability was found to reduce correlation between brain areas for fMRI and neural spiking.",
+    "claim_type": "EXPLICIT",
+    "source": "This quenching of neural variability was also found to reduce correlation between brain areas for fMRI and neural spiking (Ito et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Ito et al., 2020",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Both fMRI and neural spiking correlated with BHA.",
+    "claim_type": "EXPLICIT",
+    "source": "Both fMRI and neural spiking correlated with BHA (Mukamel et al., 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Mukamel et al., 2005",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Film cuts dominate the response in the BHA across the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, we included film cuts as features, as we had previously demonstrated that they dominate the response in the BHA across the brain (Nentwich et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Reference to prior published work by the authors",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The traditional VAR model has been used extensively in neuroscience to establish directed Granger causal connections.",
+    "claim_type": "EXPLICIT",
+    "source": "The traditional VAR model has been used extensively in neuroscience to establish directed 'Granger causal' connections (Barnett and Seth, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Barnett and Seth, 2014",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "VAR model implementations do not specifically account for an external input.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these model implementations do not specifically account for an external input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on review of VAR model literature",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "One approach to account for task effects is to first model the task-evoked responses and then compute functional connectivity on the residuals.",
+    "claim_type": "EXPLICIT",
+    "source": "One approach is to first model the task-evoked responses, equivalent to estimating B alone, and then compute the conventional 'functional connectivity', i.e. the correlation matrix, on the residuals e(t) (Fair et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Fair et al., 2007",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Some methods estimate task-related functional connectivity by correlating multiple B estimates over time windows.",
+    "claim_type": "EXPLICIT",
+    "source": "Others suggested estimating B in multiple time windows and then estimating 'task-related functional connectivity' by correlating the multiple B over time windows (Rissman et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Rissman et al., 2004",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Dynamic causal modeling includes intrinsic and extrinsic effects A and B similar to the VARX model.",
+    "claim_type": "EXPLICIT",
+    "source": "A more principled modeling approach is 'dynamic causal modeling' (DCM) (Friston et al., 2003) and extensions thereof (Ryali et al., 2011). Similar to the VARX model, DCM includes intrinsic and extrinsic effects A and B.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to DCM literature",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "DCM modeling is limited to first-order dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the modeling is limited to first-order dynamics (i.e. na = nb = 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on knowledge of DCM model structure",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "DCM includes a multiplicative interaction of extrinsic input on the connectivity A, which does not exist in the VARX model.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the DCM includes a multiplicative interaction of extrinsic input x(t) on the connectivity A, which does not exist in the VARX model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison of model structures",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The VARX model assumes that the neural activity is directly observable, which allows for fast ordinary least squares estimation.",
+    "claim_type": "EXPLICIT",
+    "source": "A practical advantage of the VARX model is the assumption that the neural activity is directly observed. Instead, many existing models assume an error in the observations, which triggers computationally intensive estimation algorithms, typically the expectation maximization algorithm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison of computational approaches",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The study analyzed up to 300 channels per patient across the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, here we have analyzed up to 300 channels per patient across the brain, which would be prohibitive with DCM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the study's data analysis",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The VARX estimate of connectivity shows a correlation of 0.70 with DTI structural connectivity in a simulated whole-brain model.",
+    "claim_type": "EXPLICIT",
+    "source": "We find a correlation of diffusion tensor imaging (DTI) structural connectivity used in a model with a VARX estimate of 0.70.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Result from validation analysis using simulated data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The VARX model correlation of 0.70 with structural connectivity is considered relatively large compared to other studies.",
+    "claim_type": "EXPLICIT",
+    "source": "That is considered a relatively large value compared to other studies that attempt to recover DTI connectivity from the correlation structure of fMRI activity (Honey et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison with prior work cited",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Fixation onsets are tightly correlated in time with saccade onsets.",
+    "claim_type": "EXPLICIT",
+    "source": "We used fixation onsets as external input, but it should be noted that they are tightly correlated in time with saccade onsets (there is only about a 30 ms jitter between the two, depending on saccade amplitude).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on knowledge of eye movement timing",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Fixation onsets can have acausal components due to neural activity leading up to the saccade.",
+    "claim_type": "EXPLICIT",
+    "source": "Including them as external input is a modeling choice we have made here, but it is important to acknowledge that fixation onsets can therefore have 'acausal' components (Nentwich et al., 2023). By 'acausal', we mean a fixation-locked response that precedes the fixation onset and is due to the neural activity leading up to the saccade and subsequent fixation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explanation based on prior work and understanding of neural timing",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The correlation between average incoming/outgoing connections and cortical hierarchy is not significant when normalizing for the number of electrodes in each region.",
+    "claim_type": "EXPLICIT",
+    "source": "The correlation between the average incoming and outgoing connections and cortical hierarchy (Figure 5) is not significant when normalizing for the number of electrodes in each region of interest.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Additional analysis mentioned as a caveat",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Regions in the temporal lobe with a large number of electrodes might drive the correlation with cortical hierarchy.",
+    "claim_type": "EXPLICIT",
+    "source": "Regions in the temporal lobe with a large number of electrodes might drive this correlation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculation about potential confound in the analysis",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The study found a small but significant decrease in recurrent connectivity when watching movies.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the brain's response to the audiovisual stimuli appears to be substantially shaped by its endogenous dynamics. The model revealed a small but significant decrease in recurrent connectivity when watching movies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of main findings",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "A reduction in intrinsic variance during the extrinsic stimulus was observed, which may be the result of neuronal gain adaptation.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we observed a reduction in intrinsic variance during the extrinsic stimulus, which may be the result of neuronal gain adaptation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of findings with proposed mechanism",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The study analyzed LFP data on all available recordings, movies, and resting state for N = 26 recording sessions.",
+    "claim_type": "EXPLICIT",
+    "source": "We analyze LFP data on all available recordings, movies, and resting state for all N = 26 recording sessions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the dataset analyzed",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Extrinsic inputs included film cuts, motion, fixation onset, fixation novelty, the sound envelope, and acoustic edges.",
+    "claim_type": "EXPLICIT",
+    "source": "As extrinsic inputs, we included film cuts, motion, fixation onset, fixation novelty, the sound envelope, and acoustic edges.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the model inputs",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The VARX model achieved a Spearman correlation of 0.69 with true structural connectivity in simulated data.",
+    "claim_type": "EXPLICIT",
+    "source": "The true connectivity matrix from DTI (Figure 7A) is similar to the effect size estimate for the recurrent connections (Figure 7B). Following Honey et al., 2009 we compare the two as a scatter plot (Figure 7C) and observe a Spearman correlation of 0.69.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Result from validation analysis shown in Figure 7",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The sparse-inverse covariance method achieved a Spearman correlation of 0.52 with structural connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "For comparison, we also used the sparse-inverse covariance method to recover connectivity from the correlation matrix (functional connectivity). This method is considered state-of-the-art as it is more sensitive than other methods in detecting structural connections (Smith et al., 2011) and uses the graphical lasso algorithm (Chen, 2023). The resulting connectivity estimate (Figure 7D) only achieves a Spearman correlation of 0.52.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Result from comparison method shown in Figure 7",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The study analyzed intracranial EEG from N = 26 recording sessions with a total of 5093 recording channels.",
+    "claim_type": "EXPLICIT",
+    "source": "We analyzed intracranial EEG and simultaneous eye-tracking data recorded from patients (N = 26 recordings, mean age 38.69 years, age range 19\u201359 years, 11 females, Appendix 2\u2014table 1) during rest and while they watched various video clips. Four out of 22 individual patients underwent two implantations and recordings at different times, resulting in a total of 26 recording sessions with a total of 5093 recording channels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the dataset",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The video clips included animations with speech, an animated short film, documentaries of macaques, abstract animations, and resting state recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "The video clips included animations with speech ('Despicable Me', two different clips, 10 min each, in English and Hungarian), an animated short film with a mostly visual narrative and music, shown twice ('The Present', 4.3 min), and three clips of documentaries of macaques ('Monkey', 5 min each, without sound) (Nentwich et al., 2023). In addition to the clips from the previous analysis, we included a movie clip of abstract animations ('Inscapes', 10 min) (Vanderwal et al., 2015), and an eyes-open resting state with maintained fixation ('Resting state', 5 min), and eyes-closed resting state ('Eyes Closed Rest', 5 min).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of experimental stimuli",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Up to 64.7 min of data was recorded for each patient.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, we recorded up to 64.7 min of data for each patient (Appendix 2\u2014table 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of data collection",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "BHA is the power of the signal bandpass filtered between 70 and 150 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "BHA is the power of the signal bandpass filtered between 70 and 150 Hz.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Definition of BHA signal processing",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Analysis was performed on both LFP and BHA signals after downsampling to 60 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "We perform analysis on both signals after downsampling to 60 Hz.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of data processing",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Fixation novelty is computed as the Euclidean distance between features of a convolutional neural network computed on pre- and post-fixation image patches.",
+    "claim_type": "EXPLICIT",
+    "source": "Fixation novelty is computed as the Euclidean distance between features of a convolutional neural network computed on pre- and post-fixation image patches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of feature extraction method",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Acoustic edges are peaks in the derivative of the sound envelope, representing rapid changes in the input.",
+    "claim_type": "EXPLICIT",
+    "source": "Acoustic edges are peaks in the derivative of the sound envelope, representing rapid changes in the input (Forseth et al., 2020; Oganian and Chang, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of feature extraction with citations",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The models were fitted using L2-norm regularization with regularization parameter \u03bb = 0.3.",
+    "claim_type": "EXPLICIT",
+    "source": "The models were fitted to data with the MATLAB version of the publicly available VARX code (Parra et al., 2025) using conventional L2-norm regularization. The corresponding regularization parameter was set to \u03bb = 0.3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of model fitting procedure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Filters of 600ms length were used for inputs in the VARX and mTRF models.",
+    "claim_type": "EXPLICIT",
+    "source": "For all analyses, we use filters of 600ms length for inputs (nb = 36 samples for VARX models, L = 36 samples for mTRF models).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of model parameters",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Delays for connections between channels were set to 100 ms for both LFP and BHA signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Delays for connections between channels are set to 100 ms (na = 6 samples) for both LFP and BHA signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of model parameters",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Increasing the number of delays na increases estimated effect size R.",
+    "claim_type": "EXPLICIT",
+    "source": "Increasing the number of delays na, increases estimated effect size R (Appendix 3\u2014figure 1A, B)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Result from parameter exploration shown in appendix",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Larger values of na lead to fewer significant connections.",
+    "claim_type": "EXPLICIT",
+    "source": "however, larger values lead to fewer significant connections (Appendix 3\u2014figure 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Result from parameter exploration shown in appendix",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

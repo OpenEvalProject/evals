@@ -1,0 +1,2581 @@
+{
+  "submission": {
+    "id": "31306088-eec1-4e04-8408-43f0fd491e41",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:26:46.841857Z",
+    "updated_at": "2025-11-21T16:26:46.841857Z"
+  },
+  "content": [
+    {
+      "id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "content_type": "manuscript",
+      "content_text": "# Human multiethnic radiogenomics reveals low-abundancy microRNA signature in plasma-derived extracellular vesicles for early diagnosis and molecular subtyping of pancreatic cancer\n\n## Authors\n\n- Jianying Xu<sup>1</sup> ([ORCID: 0009-0007-1924-8400](https://orcid.org/0009-0007-1924-8400))\n- Wenjie Shi<sup>2</sup> ([ORCID: 0009-0001-7345-579X](https://orcid.org/0009-0001-7345-579X))\n- Yi Zhu<sup>3</sup>\n- Chao Zhang<sup>4</sup>\n- Julia Nagelschmitz<sup>2</sup>\n- Maximilian Doelling<sup>2</sup>\n- Sara Al-Madhi<sup>2</sup>\n- Ujjwal Mukund Mahajan<sup>1</sup>\n- Maciej Pech<sup>5</sup>\n- Georg Rose<sup>6</sup>\n- Roland Siegfried Croner<sup>2</sup>\n- Guoliang Zheng<sup>7</sup> \u2020\n- Christoph Kahlert<sup>8</sup> ([ORCID: 0000-0003-4124-7918](https://orcid.org/0000-0003-4124-7918)) \u2020\n- Ulf Dietrich Kahlert<sup>2</sup> ([ORCID: 0000-0002-6021-1841](https://orcid.org/0000-0002-6021-1841)) \u2020\n\n### Affiliations\n\n1. Department of Medicine II, Hospital of the LMU Munich Germany\n2. Molecular and Experimental Surgery, Clinic for General-, Visceral -, Vascular- and Transplantation Surgery, Medical Faculty and University Hospital Magdeburg, Otto-von-Guericke University Magdeburg Germany ([ROR:03m04df46](https://ror.org/03m04df46))\n3. Department of Gastroenterological Surgery, The Affiliated Hospital of Jiaxing University Jiaxing China ([ROR:00j2a7k55](https://ror.org/00j2a7k55))\n4. Department of Radiology, The First Affiliated Hospital of Wannan Medical College Wannan China ([ROR:037ejjy86](https://ror.org/037ejjy86))\n5. Clinic for Radiology and Nuclear Medicine, University Hospital Magdeburg Magdeburg Germany ([ROR:03m04df46](https://ror.org/03m04df46))\n6. Research Campus Stimulate, Otto von Guericke University Magdeburg Magdeburg Germany ([ROR:00ggpsq73](https://ror.org/00ggpsq73))\n7. Department of Gastric Surgery, Cancer Hospital of China Medical University (Liaoning Cancer Hospital and Institute) Shenyang China ([ROR:05d659s21](https://ror.org/05d659s21))\n8. Department of General, Visceral and Transplantation Surgery, Heidelberg University Hospital Heidelberg Germany ([ROR:013czdx64](https://ror.org/013czdx64))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPancreatic cancer (PC) is a highly aggressive malignancy in humans, where early diagnosis significantly improves patient outcomes. However, effective methods for accurate and early detection remain limited. In this multiethnic study involving human subjects, we developed a liquid biopsy signature based on extracellular vesicle (EV)-derived microRNAs (miRNAs) linked to radiomics features extracted from patients\u2019 tumor imaging. We integrated eight datasets containing clinical records, imaging data of benign and malignant pancreatic lesions, and small RNA sequencing data from plasma-derived EVs of PC patients. Radiomics features were extracted and analyzed using the limma package, with feature selection conducted via the Boruta algorithm and model construction through Least Absolute Shrinkage and Selection Operator regression. Radiomics-related low-abundance EV miRNAs were identified via weighted gene co-expression network analysis and validated for diagnostic accuracy using 10 machine-learning algorithms. Three key EV miRNAs were found to robustly distinguish malignant from benign lesions. Subsequent molecular clustering of these miRNAs and their predicted targets identified two PC subtypes, with distinct survival profiles and therapeutic responses. Specifically, one cluster was associated with prolonged overall survival and higher predicted sensitivity to immunotherapy, while the other indicated high-risk tumors potentially amenable to targeted drug interventions. This radiogenomic EV miRNA signature in human plasma represents a promising non-invasive biomarker for early diagnosis and molecular subtyping of PC, with potential implications for precision treatment strategies.\n\n## Introduction\n\nPancreatic cancer (PC) is one of the most lethal tumors having a poor prognosis, and patients suffering from this disease show one of the lowest 5-year overall survival rates of all cancer patients, with approximately 13%. One of the main reasons for this dismissal prognosis is the lack of a proper early detection possibility, resulting in late diagnosing often in advanced, metastatic stage (Bamankar and Londhe, 2023).\n\nThe detection and diagnosis of PC, of which approximately 90% are classified as pancreatic ductal adenocarcinoma (PDAC), currently relies primarily on modalities of medical imaging, such as computed tomography (CT), magnetic resonance imaging, positron emission tomography, and transabdominal ultrasonography (Wang et al., 2021). The most common biomarker considered for PDAC differential diagnosis is elevated blood abundancy of carbohydrate antigen 19-9 (CA19-9) and carcinoembryonic antigen, though these are only used as prognostic markers and not effective for screening or early diagnosis (Bestari et al., 2024). Nowadays, new markers based on liquid biopsy such as microRNA are discerned and might pose as promising tools for early detection of PDAC. MicroRNAs (miRNAs) are non-coding RNAs that target genes and regulate their expression by inhibiting mRNA translation or enhancing their degradation (Rashid et al., 2024). Currently, extracellular vesicles (EVs) are gaining attention as disease-specific markers since they carry the material of their secreting cells and are therefore considered to contain tumor-derived elements, showcasing their molecular fingerprint (Bamankar and Londhe, 2023). It has been shown multiple times that miRNA derived from small EVs play a role in differentiation and metastasis of cancer (Mok et al., 2024; Min et al., 2019). The rapidly developing field of data mining and analytical techniques provides new insights and makes the discovery of relevant key players more feasible. Numerous miRNAs have been described using co-expression network analysis that might be applied as diagnostic or prognostic biomarker, for patient stratification or disease recurrence (Tiwari et al., 2024).\n\nBenefiting from interdisciplinary advances in artificial intelligence, the integration of machine learning and genomics has led to breakthroughs in the early diagnosis and classification of tumors. For example, we used machine-learning algorithms to assist in the development of a three-serum miRNA signature that effectively provides early warning of premalignant PC (Shi et al., 2024). Another model, based on machine-learning algorithms, focuses on the immune subtypes of triple-negative breast cancer, offering critical insights for identifying patients who may benefit from immunotherapy (Chen et al., 2021). In the current study, we employed radiogenomics technology, another product of interdisciplinary collaboration between medicine and engineering. This novel approach integrates the quantification of image features from CT or magnetic resonance imaging, which are then correlated with genomic signatures and allows for a non-invasive prediction of molecular characteristics (Cas\u00e0 et al., 2022). Such as, claim to be able to predict the occurrence of p53 mutations using CT images by radiogenomic analysis and hence make a statement on the prognosis (Iwatate et al., 2020).\n\nIn the present study, we aim to develop a liquid biopsy signature of EV-derived miRNA based on the radiogenomic analysis of CT images derived from ethically diverse backgrounds and interrogating small RNA-seq data of plasma-derived total EVs, in order to advance the diagnostic possibilities and the molecular subtyping of PDAC.\n\n## Results\n\n### Enrolled population and baseline information for CT images and EV miRNA\n\nA total of 272 patients enrolled in this study providing CT imaging, including 173 in UMMD and JHC center while 99 in WUH center. In the UMMD and JHC center, also including 46 pancreatic benign lesion and 127 PC CT images. Most pancreatic patients in this center are older with obesity, but less smoking or alcohol and less with diabetes. For the WUH center, most PC patients are female and also have a high incidence of older age and obesity. The DUH provides the patients with EV miRNAs, EV mRNAs data, and follow-up information. About 82.5% (52/63) patients are older, and 34 patients are female. The clinical characteristics of the data cohorts are summarized in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/103737/elife-103737-fig1-v1.jpg)\n\n**Figure 1.:** The intergroup comparisons were performed using the chi-square test.The * means p less than 0.05, ** means p less than 0.01, and ***means p less than 0.001.\n\n### Different expression radiomic features between pancreatic benign lesions and aggressive tumors\n\nBefore the analysis, we conduct the propensity score matching (PSM) procedure to match the benign and aggressive tumor from DUH to JHC, respectively, according to age. After the match, we found both center baseline differences were removed (Figure 2A). Then the difference expression radiomics features was conducted, the results indicate that a total of n = 88 significant features demonstrate differences between groups (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/103737/elife-103737-fig2-v1.jpg)\n\n**Figure 2.:** The different radiomic features between the benign lesions and PDAC patients\u2019 computed tomography (CT) images (B) Twelve most important radiomic features differentiating between the benign pancreatic lesion and PDAC patients\u2019 CT images identified by the Boruta algorithms (C) Four radiomic features were selected by Least Absolute Shrinkage and Selection Operator (LASSO) regression to build model signature (D, E). Applying the four radiomic features related signature in image analysis shows high accuracy in predicting the PDAC manifestation in the WUH test dataset (F).\n\n### Four important radiomic features were selected to build a related signature\n\nWe use Boruta algorithms to select the important features, and the results show that a total of 12 features were identified (Figure 2\u2014source data 1), which is more than shadow features. In addition, after inputting the above features into Lasso regression (LR) algorithms, we found that four features are listed as key features (Figure 2D). Based on the LR model with regression coefficient and feature expression, we build a four radiomics feature-related signature and validate the prediction ability in WUH center data, revealing a signature accuracy of prediction efficiency (area under the curve [AUC] = 0.911) (Figure 2E, F).\n\n### Three EV miRNAs are associated with radiomic features\n\nAfter the radiomics signature was built, each patient presented an individual risk score, and we split patients into high- and low-risk patients, according to the median value of risk score. We use weighted gene co-expression network analysis (WGCNA) to connect the EV miRNA data and two imaging-featured patient risk groups. According to the WGCNA analysis, the green module was identified as the key module and includes 12 hub co-expressed miRNAs. The number of low-abundance miRNAs calculated was n = 295. Merging both results, three miRNAs are identified (hsa-miR-1260b, hsa-miR-151a-3p, and hsa-miR-5695) and selected for subsequent alignment with associated radiomic features (Figure 3A\u2013C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/103737/elife-103737-fig3-v1.jpg)\n\n**Figure 3.:** The number of low-abundance miRNAs in the entire EVseq dataset cohort is n = 295 (B) Out of those low-abundance miRNAs, n = 12 present matching candidates differentially expressed in high-risk group patients. Alignment to our radiomics feature parameters identified three core miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, and hsa-miR-5695) (C) The three key miRNAs show significantly different expression levels in tumor conditions, both for serum (D\u2013F) and tissue (G\u2013I) The Wilcoxon test was used to compare differences between two groups.\n\n### Expression validation of three EV miRNAs\n\nWe use serum and tissue samples to validate the expression of three hub EV miRNAs, and the results show that compared with healthy serum samples, these three miRNAs are enriched in tumor patient serum samples. Interestingly, this correlation of upregulation in tumor conditions was also true when comparing tumor tissue with non-tumor tissue (Figure 3D\u2013I).\n\n### Three EV miRNAs predicted PC with high accuracy\n\nWe use seven machine-learning combos to train and test the ability of three EV miRNA levels to predict tumor manifestation and clinical course of patient. The results show that in the GBM-default (cut-off = 0.75) model, three EV miRNAs show a high accuracy to predict the PC with the training accuracy of 0.978 with AUC = 0.978, and two test dataset accuracies are 0.923 with AUC = 0.919, and 0.871 with AUC = 0.857, respectively. Then, we choose the GBM model for the extended validation by our hospital data (MUH) and GSE109319. Before this procedure, we use the combat package to remove the batch effect allowing the merge of the two datasets. The results of the extended dataset validation via GBM further highlight the high diagnostic accuracy of the three EV miRNAs (accuracy = 0.894, and AUC = 0.897) (Figure 4), while the CA19-9 predict AUC is 0.843 (95% CI, 0.762\u20130.924).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/103737/elife-103737-fig4-v1.jpg)\n\n**Figure 4.:** The best machine-learning algorithms are GBM (cut-off: 0.75) (A). Three miRNAs\u2019 prediction ability of the training dataset (GSE10106817) in the GBM model is 0.978 (B). Three miRNAs\u2019 prediction ability of the test dataset (GSE113486 and GSE112264) in the GBM model is 0.919 and 0.857, respectively (C, D). Data distribution before removal of batch effect of our center data and GSE109319 dataset (E). Data distribution after removing batch effect of our center and GSE109319 dataset (F). Three extracellular vesicle (EV) miRNAs\u2019 prediction ability to identify cancer of our center data and GSE109319 in GBM model is 0.897 (G).\n\n### Identification of two molecular subtypes of PDAC with significant clinical predictive value\n\nAfter predicting molecular targets of three miRNAs, we obtain a number of 117 mRNA shared candidate targets (Figure 5\u2014source data 1). Stratifying the tumors according to the level of expression of those allows the differentiation of tumors in the cluster into two subtypes termed Cluster 1 (C1) and C2 (Figure 5\u2014source data 2). The survival analysis shows that compared with C1, the C2 patients feature a prolonged survival outcome, no matter in overall survival time (OS) or disease free survival time (DFS) (Figure 5B, C). In addition, analyzing the relationship with clinical factors of patients, we also found the C1 subtype patients are older in age and carry bigger tumor sizes and higher number of tumor cell positive lymph nodes (Figure 5D\u2013F), when compared with C2 subtype patients. We also demonstrate C1 patients are particularly aggressive in female patients, featuring a high number of tumors containing perineural invasion (PNI) and advanced pathological tumor staging (Figure 5G\u2013I).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/103737/elife-103737-fig5-v1.jpg)\n\n**Figure 5.:** Patients of the C1 with a poor outcome in OS and DFS (B, C). C1 subtype patients are characterized by older age and bigger average tumor size, higher number of tumor cell positive lymph nodes as compared to C2 patients (D\u2013F). C1 patients are predominantly female, have tumors with pathological classification marks of perineural invasion/ PNI and advanced tumor stage (G\u2013I).Survival analysis was performed using the log-rank test. Differences in continuous variables between groups were assessed using the Wilcoxon rank-sum test, while differences in categorical variables were analyzed using the chi-square test.\n\n### C2 patients with high immune infiltration and positive with immune checkpoints\n\nTesting for gene signatures that indicate immune cell existence, we show that C2 tumors are significantly more enriched for immune cell signals, including those for CD8 T cells, cytotoxic lymphocytes, and NK cells (Figure 6A, B). In addition, samples of patients of that subtype also show a more physiological expression signature in terms of immune checkpoints as compared to C1 tumors (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/103737/elife-103737-fig6-v1.jpg)\n\n**Figure 6.:** Commonly known immune checkpoints are also higher expressed in C2 subtypes (C) Aligning in vitro drug sensitivity and expression data from the GDSC database to subtype signature predicts that tumors of C1 patients might be more sensitive to AKT INHIBITOR VIII, Bleomycin, Dasatinib, GNF-2, PF-562271, Refametinib, ans BMS-509744 as C2 subtypes (D-J).The Wilcoxon test was used to compare differences between two groups.\n\n### Prediction of drug sensitivity of C1 patients\n\nWe use Genomics of Drug Sensitivity in Cancer (GDSC) data to merge cell line response data and expression data with expression signals in C1 and C2 tumors. This analysis indicated that C1 patients may benefit from therapy with FDA-approved AKT inhibitor VIII, Bleomycin, Dasatinib, GNF-2, PF-562271, Refametinib, and BMS-509744 (Figure 6D).\n\n### Functional annotation and pathway enrichment for the C1 subtype\n\nGO functional enrichment analysis indicated that the C1 subtype is enriched for intermediate filament organization, GOCC ribosome, as well as GOMF symporter activity (Figure 7A, B). Pathway enrichment analysis showed that the C1 subtype was activated with the Reactome fatty acids, Reactome diseases of metabolism, as well as Reactome biological oxidations pathways, and may be inhibited with Reactome apoptosis, Reactome DNA repair, and Reactome signaling by Hippo pathways (Figure 7C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/103737/elife-103737-fig7-v1.jpg)\n\n**Figure 7.:** Pathway enrichment analysis showed that the C1 subtype was activated with the Reactome fatty acids, Reactome diseases of metabolism, as well as Reactome biological oxidations pathways, and may be inhibited with Reactome apoptosis, Reactome DNA repair, and Reactome signaling by Hippo pathways (D\u2013I).\n\n## Discussion\n\nUsing multicenter radiomics of Asian and Western world patients, we identified three plasma total EV fraction microRNAs that demonstrated strong predictive performance and prognostic value, offering new insights for non-invasive early diagnosis and prognosis of PC. This study is the first to distinguish between benign lesions and PC by identifying novel and significant plasma EV microRNAs based on differential radiomics features. We focused on low-abundance microRNAs, which are often overlooked in routine RNA sequencing analyses. These three microRNA candidates were validated across multiple cohorts, achieving excellent predictive performance in both testing and external validation sets. Additionally, these microRNAs demonstrated prognostic value, potentially aiding in treatment selection.\n\nPC remains one of the most lethal diseases, with insufficient early detection methods and limited treatment options (Halbrook et al., 2023; Fahrmann et al., 2021). This study aimed to develop a liquid biopsy nucleic acid diagnostic test based on EV-derived microRNA using radiogenomic analysis to enhance diagnostic accuracy and molecular subtyping of PDAC. By focusing on imaging features to distinguish benign lesions from PC, we identified underlying genetic factors contributing to these differences. Unlike previous studies on serum microRNA (Wei et al., 2020; Shams et al., 2020), our research identified three microRNAs through radiomics that reflect tumor-specific changes rather than systemic variations. Additionally, our findings reveal relationships between imaging features and tumor biology, improving diagnostic accuracy and offering a more comprehensive tool for early detection and personalized disease management.\n\nAlthough numerous studies have reported on microRNA sequencing results (Yang et al., 2021), highly abundant microRNAs often mask the signals of many others that are present at very low abundance during routine analysis. Furthermore, if a microRNA is associated with tumor development, it is likely to be in low abundance during early detection and may even be undetectable in benign lesions. In our study, after identifying 12 microRNAs related to radiomic differences, we further defined three (hsa-miR-1260b, hsa-miR-151a-3p, and hsa-miR-5695) of them as being of low abundance. These microRNAs showed significantly higher expression in PC blood than in non-malignant cancer patients\u2019 plasma, with hsa-miR-1260b and hsa-miR-5695 undetectable in PC samples. The model based on these three microRNAs demonstrated strong performance in the training group (AUC, 0.978; sensitivity, 0.97; specificity, 0.99), testing group (AUC, 0.919; sensitivity, 0.96; specificity, 0.88), and external testing group (AUC, 0.897; sensitivity, 0.90; specificity, 0.89).\n\nPrevious studies on microRNAs as diagnostic biomarkers for PC vs healthy controls report AUCs of 0.78\u20130.96 and sensitivities of 0.62\u20130.88 (Yang et al., 2021), but many lack external validation (Liu et al., 2012; Wang, 2020). One case\u2013control study identified two diagnostic panels based on microRNA expression (index I: 4 microRNAs; AUC, 0.86; sensitivity, 0.85; specificity, 0.64; index II: 10 microRNAs; AUC, 0.93; sensitivity, 0.85; specificity, 0.85) (Schultz et al., 2014). Our study achieved similar performance using only three microRNAs, making it more practical for clinical application.\n\nTo the best of our knowledge, hitherto, none of the three identified microRNAs have been reported in the context of diagnostic biomarkers in PC. Moreover, to our knowledge, hsa-miR-5695 has only indirectly been linked to breast carcinogenesis (S\u00f8kilde et al., 2019) and subtypes of metastatic prostate cancer (Watahiki et al., 2011), while hsa-miR-1260b has been implicated in promoting tumorigenesis in lung cancer (Kim et al., 2021), breast cancer (Park et al., 2022), sarcoma (Morita et al., 2020), and prostate cancer (Hirata et al., 2014). Interestingly, in a screen of microRNAs that are differentially expressing in total plasma fraction of patients suffering from intraductal papillary mucinous neoplasm (IPMN) as compared to non-diseased controls, hsa-miR-1260b was identified as one of the top upregulated signals in plasma of IPMN cases (Permuth-Wey et al., 2015). Our work further enforces the potential of hsa-miR-1260b abundance in plasma to detect onset of abnormal pancreas genesis. Exosomal hsa-miR-151a-3p has emerged as a potential novel biomarker for predicting bone metastasis in lung cancer (Zhao et al., 2023). A very recent report of results of a multicenter trial in Asian participants also identified circulating 2\u2032-O-methylated form of hsa-miR-151a-3p is upregulated in total fraction of plasma of PDAC patients compared to those derived from healthy donors or patients with chronic pancreatitis (Yang et al., 2024). Focusing on EV fraction, our results verify the potential of this newly discovered biomarker in PC blood diagnosis.\n\nPC currently has only two standard systemic treatments with limited efficacy, and the patient population responsive to immunotherapy and targeted therapy remains unclear (Neoptolemos et al., 2018). Therefore, we explored the prognostic value of these microRNAs, which allowed for patient stratification. Patients classified as C2 had better prognoses, with higher immune cell infiltration and more immune checkpoint expression, suggesting they may be suitable for immunotherapy after standard treatment. In contrast, patients classified as C1 had poorer prognoses, related to inhibited pathways such as DNA repair and apoptosis.\n\nThe findings suggest potential for developing kits for early detection and treatment stratification and highlight these three candidates for further exploration. However, despite thorough matching of imaging, genomic, and clinical data, biases may still exist. Additionally, using the Microenvironment Cell Populations-counter (MCP-counter) algorithm for blood samples is a limitation of our study, as it was originally designed for solid tissues, which may affect the accuracy of cell population quantification in the blood. Furthermore, when validating the three microRNAs in tissue, the sample size of paracancerous tissue was limited. Lastly, since our EV purification did not use measures to enrich for cancer cell-derived EVs such as CD147 membrane presenting amplitude (Ko et al., 2023), we cannot exclude contamination of our miRNA data due to signals from non-cancer cell background, which might impact the cancer specificity of our proposed blood test. Moreover, our data is based on OMICS data acquisition. Real-world application of our proposed test would benefit from proofing the predictability and sensitivity of the miRNAs by targeted methods, such as RT-qPCR or CRISPR/Cas diagnostics and in prospective, multicenter trials. In addition, we acknowledge the absence of third-phase validation results, which will limit application in the clinical practice.\n\n## Materials and methods\n\n### Data resources and pre-analytics preparation\n\nA total of four hospitals and four public datasets, comprising a total of eight datasets enrolled in this study, University Hospital Magdeburg in Germany (UMMD), and Jiaxing Hospital Center, China (JHC), provided enhanced CT images of 46 IPMN patients and 127 PC patients as training dataset. For test datasets, CT data resource from Wanan Medical University Hospital (WUH) with 27 PB patients and 72 PC patients. University Hospital Dresden, Germany (DUH) center provides miRNA and mRNA seq data from total plasma EVs of PDAC patients with associated clinical follow information, including 20 benign pancreatic disease patients and 63 PC patients. The four public serum miRNA sequence data containing PC and healthy control (HC) were GSE106817 (2759 PC vs.115 HC), GSE113486 (40 PC vs.100HC), GSE112264 (50 PC vs.41 HC), and GSE109319 (24 PC vs. 21 HC). All CT images were acquired using a 64-slice multidetector spiral CT scanner, with a standard slice thickness of 1.0\u20131.5 mm and a reconstruction interval of 1 mm. All PC patients underwent a standard pancreatic protocol triphasic contrast-enhanced CT examination. For radiomics analysis, images from the portal venous phase were selected due to their consistent clarity in delineating pancreatic tumor boundaries and surrounding vasculature. To ensure data consistency, all imaging data underwent preprocessing, including resampling, intensity normalization of grayscale values, and N4 bias field correction to address potential low-frequency signal inhomogeneities. We use the PSM method to match the benign and tumor patients from DUH to UMMD and JHC according to age factor. Afterward, we constructed a new matrix including CT images, EV miRNAs, mRNAs, and patients\u2019 clinical follow-up information. The workflow is schematically depicted in Figure 8. Ethical approval to conduct the study for UMMD and DUH after approval by the local Institutional Review Board/ethics committee (UMMD 46/22; 30/01 with amendment 43/14; DUH: EK76032013). Written informed consent from the patients was obtained pre-operatively with the disclosure of research purpose.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/103737/elife-103737-fig8-v1.jpg)\n\n**Figure 8.:** The use of radiomics to aid finding novel extracellular vesicle (EV)-charged miRNAs to allow pancreatic ductal adenocarcinoma (PDAC) diagnostics.\n\n### EV isolation and RNA sequencing\n\nDetails on the protocols for EV isolation including presentation of optical and molecular characteristics of isolated vesicles proofing high-quality isolation performance have been described previously by our groups (Han et al., 2023).\n\nEV isolation using ultracentrifugation: 500 \u03bcl plasma samples were thawed and mixed with 500 \u03bcl phosphate-buffered saline (PBS). The diluted plasma samples were filtered with 0.2-\u03bcm filter and subjected to ultracentrifugation at 100,000 \u00d7 g, 2 hr, 4\u00b0C in a ultracentrifuge (Sorvall MX150 +\u2009micro-ultracentrifuge, Thermo Scientific, Darmstadt, Germany). The supernatant was removed and the pellet was washed once with ice-cold PBS (Gibco, Carlsbad, California, USA) and ultracentrifuged again at 100,000 \u00d7 g, 2 hr, 4\u00b0C. The resulting pellet was resuspended in 100 \u03bcl PBS and transferred to Vivaspin 500 filtration (100,000 MWCO, Sartorius, G\u00f6ttingen, Germany) for centrifugation at 15,000 \u00d7 g, 45 min. The concentrated EVs were stored at \u221220 \u00b0C until further use for EV characterization.\n\nEV isolation using the precipitation method: 550 \u03bcl plasma samples were thawed and first centrifuged at 2000 \u00d7 g for 20 min. The supernatant was subjected to another round of centrifugation at 10,000 \u00d7 g for 20 min. After the second round of centrifugation, 500 \u03bcl supernatant was mixed with 250 \u03bcl PBS, vortexed, and added with 150 \u03bcl Exosome Precipitation Reagent. The mixture was incubated at room temperature for 10 min and centrifuged at 10,000 \u00d7 g for 5 min. After removing the supernatant completely, the pellet was resuspended with 500 \u00b5l PBS and concentrated with Vivaspin 500 filtration (100,000 MWCO, Sartorius, G\u00f6ttingen, Germany) by centrifugation at 15,000 \u00d7 g, 45 min. The resulting EVs were stored at \u221220\u00b0C until further use for EV characterization.\n\n### RNA sequencing\n\nThe eluted EV RNAs were first analyzed for their integrity and concentration using Agilent Fragment Analyzer 5200 with DNF-472 High Sensitivity RNA Analysis Kit, 15 nt (Agilent Technologies, Santa Clara, California, United States). A range of 1 ng to 2 \u03bcg RNA was used for complementary DNA synthesis as a preparation for EV RNA sequencing (RNA-seq) libraries with SMARTer smRNA-Seq Kit for Illumina (Takara Bio Inc, Mountain View, California, USA) and were sequenced on an Illumina sequencing platform (NextSeq 500/550 Mid Output Kit v2, San Diego, California, USA) with run configurations of single read, read 1:51 cycles, index 1:8 cycles, index 2:8 cycles and an average of 3.7 million reads per sample.\n\nRaw reads were first converted from bcl to fastq format using bcl2fastq (v2.20.0.4.422) and subsequently filtered using FastQ Screen to remove potential contaminations by microorganisms or artifacts due to technical issues. The reads were mapped to a phase II reference genome of the 1000 Genomes Project.\n\n### Radiomics Feature Extraction and different features analysis\n\nWe use 3DSlice soft (http://www.slicer.org/) to mark pancreatic benign and PC in CT images as mask and use original figure as reference. Subsequently, we use Python (Version 3.8) software to extract radiomics features, respectively. Afterward, we use the limma package analysis to conduct different feature analysis to identify the significant features between benign and cancer (Ritchie et al., 2015). The p-value \u22640.05 was defined as statistically significant.\n\n### Feature selection and radiomics-related signature model build\n\nAfter obtaining the different features, to avoid multicollinearity of the data, we conduct the dimensionality reduction analysis by Boruta algorithms and LR model. First, the Boruta algorithms will calculate the importance of each feature, and if importance is more than shadow feature, it will be selected as an important feature. Then, input the above important feature into the LR model. The features were selected as significant if the model penalty coefficients were minimized. After selection by machine-learning algorithms, we calculate the regression coefficient of each feature in the LR model. After that, by combining the feature expression to build the signature model in order to predict the images status from large amounts of imaging data. The model formula is listed below. Each regression coefficient of the features is multiplied by its corresponding feature expression level, and then these products are summed. The resulting sum is the risk score. The model validation was tested with applying the WUH center CT dataset, whereas the AUC of the receiver operating characteristic curve was used to evaluate the predictability of the model.\n\n### Definition and identification of low-abundance EV-derived miRNA transcripts\n\nLow-abundance miRNAs are defined as the EV miRNAs with the lowest 30% Counts Per Million (CPM) value across all samples. First, we calculate the CPM value for each miRNA across all samples using the edgeR function (Robinson et al., 2010). Then, the non-zero miRNAs with CPM values ranked in the lowest 30% of all samples were selected and defined as low-abundance miRNAs.\n\n### WGCNA analysis to identify imaging feature-related EV miRNAs\n\nAccording to the radiomics signature, patients will be split into low and high-risk groups. Low-risk classification means images have a high percentage of feature parameters from benign images, while high risk is more likely to become cancer-featuring images. To explore the correlation between the above groups and EV miRNAs, we conduct the WGCNA analysis. The soft-thresholding power of WGCNA was automatically defined by the model, which was then assisting in calculating the expression correlation with (1) a given miRNA to obtain gene significance (GS) and (2) of module membership (MM) with miRNAs to obtain MM. Based on the cut-off criteria (|MM| >0.5 and |GS| >0.1), we obtain the significant miRNAs related to low- and high-risk images, respectively.\n\n### Hub EV miRNAs identify and validate in serum and tissue levels\n\nWe merge WGCNA results and low-abundance EV miRNAs to identify the candidate hub miRNAs, then we use GSE109319 to validate this EV miRNAs\u2019 different expression between healthy participants and PADC patients in serum level. In addition, we also validate this EV miRNAs different expression between pancreatic tissue of healthy individuals and PADC tissues in TCGA sample cohort.\n\n### Screening the best models to aid hub EV miRNAs in blood-based diagnosis\n\nWe collect serum dataset from GSE106817, GSE113486, GSE112264, our hospital center (UMMD), and GSE109319 dataset to perform this procedure. First, the GSE106817 as a training dataset, GSE113486 and GSE112264 are used as independent test datasets. Then we use ten machine-learning algorithms (Gradient Boosting Machine [GBM], KNN, Lasso, XGBoost, ENR, SVM, LR, RR, StepWise, and QDA) composition to select the best model for prediction. After selection based on highest performance values, we apply our hospital (UMMD) dataset and GSE109319 to validate the model accuracy for ability of clinical prediction.\n\n### Common candidate target mRNAs of hub EV miRNAs\n\nTo discover the candidate regulation mechanisms of hub EV miRNAs, we use miRPathDB v2.0 database (https://mpd.bioinf.uni-sb.de/overview.html) to predict the candidate target mRNAs of hub EV miRNAs. Subsequently, we select the pass experiment validation mRNAs from the evidence column, as candidate targets of each miRNA. Then, we explore candidate targets of above which were regulated by these three miRNAs at the same time. Finally, we merge the above targets and DHU patient\u2019s mRNA sequence to identify the final shared mRNAs which were regulated by three miRNAs at the same time and for the future analysis.\n\n### Cluster of shared target mRNAs and survival analysis between different clusters\n\nWe use the R package ConsensusClusterPlus to perform the cluster analysis of common target mRNAs and rank the best cluster results according to the Consensus value output received. Afterward, we also analyze the survival difference between identified subtypes by R package survival. OS and DFS were used as event endpoints.\n\n### Clustering of tumor subtype with clinical factors\n\nTo explore the clinical value of each subtype, we analyze the relationship between the subtypes and important clinical factors, such as age, tumor size, and number of positive lymph nodes. We also discover the distribution of sex, PNI, and tumor stage in the different subtypes.\n\n### Characterization of immune cell infiltration properties and immune checkpoint activation in each tumor subtype\n\nWe use the MCP-counter algorithms to calculate immune cell infiltration of each sample and calculate the difference in the two tumor subtypes for each immune cell type separately. We also conduct the relationship between the subtypes and immune checkpoint activation to predict the candidate subtype that could benefit from the immune checkpoint inhibitors.\n\n### Potential drug sensitivity for each subtype\n\nWe download drug sensitivity data of molecular characterized cell lines to FDA approved, clinical drugs from GDSC database https://www.cancerrxgene.org/, and then use pRRophetic package to estimate the drug sensitivity of the two discovered subtypes.\n\n### Functional enrichment analysis and pathway prediction\n\nTo explore the biological function difference in Biological Process, Cellular Component, and Molecular Function, we conduct the Gene Set Enrichment Analysis. We also use this method to analyze the pathway enrichment difference between the two subtypes. Cluster profile package performs this operation and sets p-value \u22640.05 as significant enrichment results.\n\n### Statistics\n\nRadiomics features were extracted and analyzed using the limma package, which applies linear modeling and empirical Bayes moderation suitable for high-dimensional imaging data with multiple comparisons. Feature selection was conducted via the Boruta algorithm to robustly identify all relevant predictors, and an LASSO (Least Absolute Shrinkage and Selection Operator) regression model was built for radiogenomic signature development and validation due to its suitability for high-dimensional and potentially collinear variables. To identify miRNAs correlated with radiomics features, we performed WGCNA, which is appropriate for detecting modules of co-expressed genes across large datasets. Diagnostic performance of candidate miRNAs was assessed using ten different machine-learning classifiers, including random forest and support vector machines, allowing for robust cross-validation. For comparisons between groups (e.g., benign vs. malignant), t-tests or non-parametric alternatives were applied depending on data distribution, assessed via Shapiro\u2013Wilk normality test. Survival differences between molecular subtypes were evaluated using Kaplan\u2013Meier analysis with log-rank tests, and multivariate Cox proportional hazards models were used to adjust for confounding clinical variables.\n\n### Materials availability statement\n\nAll data generated from this study, if not included in this article, are available from the corresponding authors on reasonable request. The code could be obtained from https://bioconductor.org/packages/release/bioc/html/limma.html.\n",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anirban Maitra, University of Texas MD Anderson Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.103737.3.sa0](https://doi.org/10.7554/eLife.103737.3.sa0)\n\nThe authors attempt to identify which patients with benign lesions will progress to cancer using a liquid biomarker. Although the study is valuable, the evidence provided for the liquid biopsy EV miRNA signature developed based on radiomics features remains incomplete. There remain key details missing and validation experiments that would better support the conclusions of the study.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103737.3.sa1](https://doi.org/10.7554/eLife.103737.3.sa1)\n\nSummary:\n\nThe study aimed to develop a liquid biopsy EV miRNA signature associated with radiomics features for early diagnosis of pancreatic cancer. Flawed study design and inadequate description of clinical characteristics of the enrolled samples makes the findings unconvincing.\n\nStrengths:\n\nThe concept of developing EV miRNA signature associated with disease relevant radiomics features is a strength.\n\nWeaknesses:\n\nThere are many weaknesses in this manuscript, which include drawing association of data derived from unmatched sample sets, selection of low abundance miRNAs for developing the signature with inadequate rationale, incomplete description of experimental methods and confusing statements in the text.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103737.3.sa2](https://doi.org/10.7554/eLife.103737.3.sa2)\n\nSummary:\n\nThis study investigates a low abundance microRNA signature in extracellular vesicles to subtype pancreatic cancer and for early diagnosis. In this revision, there remain several major and minor issues.\n\nStrengths:\n\nThe authors did a comprehensive job with numerous analyses of moderately sized cohorts to describe the clinical and translational significance of their miRNA signature.\n\nWeaknesses:\n\nThe weaknesses of the study largely revolve around a lack of clarity about the methodology used and the validation of their findings.\n\n(1) The WGCNA analysis was critical to identify the EV miRNAs associated with imaging features, but the \"cut-off criteria\" for MM and GS have no clear justification. How were these cut-offs determined? How sensitive were the results to these cut-offs?\n\n(2) The authors now clarify that patients for the sub-study on differentiating early stage from benign pancreatic lesions were matched by age and that the benign pancreatic lesions were predominantly IPMNs. This scientific design is flawed. The CT features extracted likely differentiate solid from cystic pancreatic lesions, and the miRNA signature is doing the same. The authors need to incorporate the following benign controls into their imaging analysis and their EV miRNA analysis: pancreatitis and normal pancreata.\n\n(3) For the radiomics features, the authors should include an additional external validation set to better support the ability to use these features reproducibly, especially given that the segmentation was manual and reliant on specific people.\n\n(4) The DF selection process still lacks cited references as originally requested in the first review.\n\n(5) In Figure 2, more quantitative details are needed in the manuscript. The reviewers failed to incorporate this and only responded in their rebuttal. Add details to the manuscript as originally requested.\n\n(6) It is still not clear what Figure 4A is illustrating as regards to model performance. The authors need to state in the manuscript very clearly what they are showing in the figure and what the modules represent.\n\n(7) Figure 5 and the descriptions for the public serum miRNA datasets need more details. Were these pancreatic cancers all adenocarcinoma, what stage, age range, sex distribution, comorbid conditions were the cases? Were the controls all IPMNs or were there other conditions in the controls?\n\n(8) The subtype results in figures 6 and 7 are not convincing. An association on univariate analysis is not sufficient. The explanation that clinical data is not available to do a multivariable analysis indicates that the authors do not have the ability to claim that they have identified unique subtypes that have clinical relevance. A thorough evaluation of the prognostic significance and the associated molecular features of these tumors is needed.\n\nSummary:\n\nThere remain key details and validation experiments to better support the conclusions of the study.\n",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2c02ab6d-5a40-4d27-9925-445c5009ea94",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C1",
+      "claim": "Pancreatic cancer (PC) is one of the most lethal tumors with a poor prognosis, and patients show one of the lowest 5-year overall survival rates of all cancer patients, with approximately 13%.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic cancer (PC) is one of the most lethal tumors having a poor prognosis, and patients suffering from this disease show one of the lowest 5-year overall survival rates of all cancer patients, with approximately 13%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a specific survival statistic (13%) that represents established knowledge in oncology literature, though no direct citation is provided in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "db0d714a-3f6e-4762-9fdd-30ef2c46a1e0",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C2",
+      "claim": "One of the main reasons for the poor prognosis of pancreatic cancer is the lack of proper early detection possibility, resulting in late diagnosis often in advanced, metastatic stage.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main reasons for this dismissal prognosis is the lack of a proper early detection possibility, resulting in late diagnosing often in advanced, metastatic stage (Bamankar and Londhe, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bamankar and Londhe, 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "579a9d12-02e0-44bc-895c-45fea8c578ed",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C3",
+      "claim": "Approximately 90% of pancreatic cancers are classified as pancreatic ductal adenocarcinoma (PDAC).",
+      "claim_type": "EXPLICIT",
+      "source": "The detection and diagnosis of PC, of which approximately 90% are classified as pancreatic ductal adenocarcinoma (PDAC), currently relies primarily on modalities of medical imaging, such as computed tomography (CT), magnetic resonance imaging, positron emission tomography, and transabdominal ultrasonography (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wang et al., 2021, which provides the classification statistic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "6eaa8ca6-d020-4428-9ff8-753c8c2ccc50",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C4",
+      "claim": "The detection and diagnosis of PC currently relies primarily on modalities of medical imaging, such as computed tomography (CT), magnetic resonance imaging, positron emission tomography, and transabdominal ultrasonography.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection and diagnosis of PC, of which approximately 90% are classified as pancreatic ductal adenocarcinoma (PDAC), currently relies primarily on modalities of medical imaging, such as computed tomography (CT), magnetic resonance imaging, positron emission tomography, and transabdominal ultrasonography (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "8fe22826-1efb-49f9-a0a5-9ec86be931a0",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C5",
+      "claim": "The most common biomarker considered for PDAC differential diagnosis is elevated blood abundance of carbohydrate antigen 19-9 (CA19-9) and carcinoembryonic antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common biomarker considered for PDAC differential diagnosis is elevated blood abundancy of carbohydrate antigen 19-9 (CA19-9) and carcinoembryonic antigen, though these are only used as prognostic markers and not effective for screening or early diagnosis (Bestari et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bestari et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "a9693009-3537-4659-a2fc-ffb40f583c98",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C6",
+      "claim": "CA19-9 and carcinoembryonic antigen are only used as prognostic markers and not effective for screening or early diagnosis of PDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common biomarker considered for PDAC differential diagnosis is elevated blood abundancy of carbohydrate antigen 19-9 (CA19-9) and carcinoembryonic antigen, though these are only used as prognostic markers and not effective for screening or early diagnosis (Bestari et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bestari et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "dc6f1a9e-6cd1-44b2-aa64-f19959a5a9af",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C7",
+      "claim": "MicroRNAs (miRNAs) are non-coding RNAs that target genes and regulate their expression by inhibiting mRNA translation or enhancing their degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "MicroRNAs (miRNAs) are non-coding RNAs that target genes and regulate their expression by inhibiting mRNA translation or enhancing their degradation (Rashid et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rashid et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "699be923-eb22-4979-b98b-9e32cbccb867",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C8",
+      "claim": "Extracellular vesicles (EVs) carry the material of their secreting cells and are considered to contain tumor-derived elements, showcasing their molecular fingerprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, extracellular vesicles (EVs) are gaining attention as disease-specific markers since they carry the material of their secreting cells and are therefore considered to contain tumor-derived elements, showcasing their molecular fingerprint (Bamankar and Londhe, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bamankar and Londhe, 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "e391e3ac-14b5-4723-9127-bd75bdd39f7b",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C9",
+      "claim": "miRNA derived from small EVs play a role in differentiation and metastasis of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown multiple times that miRNA derived from small EVs play a role in differentiation and metastasis of cancer (Mok et al., 2024; Min et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mok et al., 2024 and Min et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "4bae6f77-2c2e-4bbb-bb3d-1b149810e620",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C10",
+      "claim": "Numerous miRNAs have been described using co-expression network analysis that might be applied as diagnostic or prognostic biomarker, for patient stratification or disease recurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous miRNAs have been described using co-expression network analysis that might be applied as diagnostic or prognostic biomarker, for patient stratification or disease recurrence (Tiwari et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tiwari et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "94537f7c-535d-4a91-b8cd-62c082b7a2b4",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C11",
+      "claim": "A three-serum miRNA signature was developed using machine-learning algorithms that effectively provides early warning of premalignant PC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we used machine-learning algorithms to assist in the development of a three-serum miRNA signature that effectively provides early warning of premalignant PC (Shi et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shi et al., 2024, which describes the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "46b14f59-7e3b-46b7-ae39-966bf3d14c2d",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C12",
+      "claim": "A model based on machine-learning algorithms focuses on the immune subtypes of triple-negative breast cancer, offering critical insights for identifying patients who may benefit from immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Another model, based on machine-learning algorithms, focuses on the immune subtypes of triple-negative breast cancer, offering critical insights for identifying patients who may benefit from immunotherapy (Chen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "896469a5-1ad5-4d9b-8ae6-3bcc7a52d255",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C13",
+      "claim": "Radiogenomics technology integrates the quantification of image features from CT or magnetic resonance imaging, which are then correlated with genomic signatures and allows for a non-invasive prediction of molecular characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "This novel approach integrates the quantification of image features from CT or magnetic resonance imaging, which are then correlated with genomic signatures and allows for a non-invasive prediction of molecular characteristics (Cas\u00e0 et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cas\u00e0 et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "545c76f8-bafd-464a-8010-bf8de7620038",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C14",
+      "claim": "Radiogenomic analysis can predict the occurrence of p53 mutations using CT images and hence make a statement on the prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such as, claim to be able to predict the occurrence of p53 mutations using CT images by radiogenomic analysis and hence make a statement on the prognosis (Iwatate et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Iwatate et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "115f6554-3d16-46fb-ad9d-0ac2d5efe951",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C15",
+      "claim": "A total of 272 patients enrolled in this study providing CT imaging, including 173 in UMMD and JHC center while 99 in WUH center.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 272 patients enrolled in this study providing CT imaging, including 173 in UMMD and JHC center while 99 in WUH center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents data from the study's patient enrollment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "335f3515-3e7d-4dd4-b253-8ecd24586619",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C16",
+      "claim": "In the UMMD and JHC center, 46 pancreatic benign lesion and 127 PC CT images were included.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UMMD and JHC center, also including 46 pancreatic benign lesion and 127 PC CT images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents data from the study's patient enrollment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "cda39f29-e887-4619-8f17-1b283e7847f1",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C17",
+      "claim": "Most pancreatic patients in UMMD and JHC center are older with obesity, but less smoking or alcohol and less with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most pancreatic patients in this center are older with obesity, but less smoking or alcohol and less with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents demographic data from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "c5729b66-407f-423b-b90b-be600b5c3f86",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C18",
+      "claim": "For the WUH center, most PC patients are female and also have a high incidence of older age and obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "For the WUH center, most PC patients are female and also have a high incidence of older age and obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents demographic data from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "0bd02e7a-890c-432c-af69-039abb2cf35e",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C19",
+      "claim": "About 82.5% (52/63) patients in the DUH cohort are older, and 34 patients are female.",
+      "claim_type": "EXPLICIT",
+      "source": "About 82.5% (52/63) patients are older, and 34 patients are female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents demographic data from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "ccc35232-fd1a-496f-bf33-b60910b6297f",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C20",
+      "claim": "After propensity score matching (PSM), both center baseline differences were removed.",
+      "claim_type": "EXPLICIT",
+      "source": "After the match, we found both center baseline differences were removed (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "0b89b442-9719-431c-a7b4-619e84ba3d24",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C21",
+      "claim": "A total of n = 88 significant features demonstrate differences between benign lesions and aggressive tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Then the difference expression radiomics features was conducted, the results indicate that a total of n = 88 significant features demonstrate differences between groups (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by radiomics analysis results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "dc21c937-f4a6-44ff-b355-93e7f85188e4",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C22",
+      "claim": "A total of 12 features were identified as important features by Boruta algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "We use Boruta algorithms to select the important features, and the results show that a total of 12 features were identified (Figure 2\u2014source data 1), which is more than shadow features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by feature selection analysis using Boruta algorithms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "aefd82e3-76d2-4b91-8526-d4bb02e0119b",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C23",
+      "claim": "Four features were selected as key features by Lasso regression (LR) algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, after inputting the above features into Lasso regression (LR) algorithms, we found that four features are listed as key features (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LASSO regression analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "84bed5f8-495f-4ded-bad1-d08e726be505",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C24",
+      "claim": "The four radiomics feature-related signature shows high accuracy in predicting PDAC manifestation in the WUH test dataset with an area under the curve (AUC) of 0.911.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the LR model with regression coefficient and feature expression, we build a four radiomics feature-related signature and validate the prediction ability in WUH center data, revealing a signature accuracy of prediction efficiency (area under the curve [AUC] = 0.911) (Figure 2E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by validation results shown in Figure 2E and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "816c45ba-ab28-4ad9-9f53-e81a6a9f1267",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C25",
+      "claim": "The green module was identified as the key module by WGCNA analysis and includes 12 hub co-expressed miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the WGCNA analysis, the green module was identified as the key module and includes 12 hub co-expressed miRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by WGCNA analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "1a6fe3cb-a11b-4238-8071-06787c7169ca",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C26",
+      "claim": "The number of low-abundance miRNAs calculated was n = 295.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of low-abundance miRNAs calculated was n = 295.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents data from miRNA abundance analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "e9076d4e-961b-4fb9-83a7-eec0669c0e00",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C27",
+      "claim": "Three miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, and hsa-miR-5695) were identified by merging WGCNA results and low-abundance miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Merging both results, three miRNAs are identified (hsa-miR-1260b, hsa-miR-151a-3p, and hsa-miR-5695) and selected for subsequent alignment with associated radiomic features (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis results shown in Figure 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "0d679b77-91b6-4634-a254-a0a739a61e28",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C28",
+      "claim": "The three key miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, and hsa-miR-5695) show significantly different expression levels in tumor conditions compared to healthy samples in serum.",
+      "claim_type": "EXPLICIT",
+      "source": "We use serum and tissue samples to validate the expression of three hub EV miRNAs, and the results show that compared with healthy serum samples, these three miRNAs are enriched in tumor patient serum samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by validation experiments comparing tumor and healthy serum samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "8d2d4feb-c6d8-4c05-a84c-f57ef443363d",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C29",
+      "claim": "The three key miRNAs show upregulation in tumor tissue compared to non-tumor tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this correlation of upregulation in tumor conditions was also true when comparing tumor tissue with non-tumor tissue (Figure 3D\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by tissue validation results shown in Figure 3D-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "2279ed7f-fb5b-4d0a-84f3-abf1ae48eb65",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C30",
+      "claim": "In the GBM-default (cut-off = 0.75) model, three EV miRNAs show high accuracy to predict PC with training accuracy of 0.978 and AUC = 0.978.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that in the GBM-default (cut-off = 0.75) model, three EV miRNAs show a high accuracy to predict the PC with the training accuracy of 0.978 with AUC = 0.978, and two test dataset accuracies are 0.923 with AUC = 0.919, and 0.871 with AUC = 0.857, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by machine learning model performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "5e4c2080-ee78-47c1-9fdd-13c93294f8f5",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C31",
+      "claim": "The three EV miRNAs achieved test dataset accuracies of 0.923 with AUC = 0.919, and 0.871 with AUC = 0.857 in two independent test datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that in the GBM-default (cut-off = 0.75) model, three EV miRNAs show a high accuracy to predict the PC with the training accuracy of 0.978 with AUC = 0.978, and two test dataset accuracies are 0.923 with AUC = 0.919, and 0.871 with AUC = 0.857, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by machine learning model performance data on test datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "67f2d808-ba34-4396-865e-8f75945a669d",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C32",
+      "claim": "The extended dataset validation via GBM shows high diagnostic accuracy of the three EV miRNAs with accuracy = 0.894 and AUC = 0.897.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the extended dataset validation via GBM further highlight the high diagnostic accuracy of the three EV miRNAs (accuracy = 0.894, and AUC = 0.897) (Figure 4), while the CA19-9 predict AUC is 0.843 (95% CI, 0.762\u20130.924).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by extended validation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "cda140aa-3a83-4646-8d63-8c84dc070953",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C33",
+      "claim": "The CA19-9 predict AUC is 0.843 (95% CI, 0.762\u20130.924).",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the extended dataset validation via GBM further highlight the high diagnostic accuracy of the three EV miRNAs (accuracy = 0.894, and AUC = 0.897) (Figure 4), while the CA19-9 predict AUC is 0.843 (95% CI, 0.762\u20130.924).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative analysis with the standard biomarker CA19-9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "27be23bf-10f8-4bdf-9c31-2f76ea73980e",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C34",
+      "claim": "A total of 117 mRNA shared candidate targets were obtained after predicting molecular targets of three miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "After predicting molecular targets of three miRNAs, we obtain a number of 117 mRNA shared candidate targets (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by target prediction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "2853fcdf-0fe8-41f1-8ccb-10397df0ae52",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C35",
+      "claim": "Tumors can be stratified into two subtypes termed Cluster 1 (C1) and C2 based on the expression level of the 117 mRNA targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Stratifying the tumors according to the level of expression of those allows the differentiation of tumors in the cluster into two subtypes termed Cluster 1 (C1) and C2 (Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by clustering analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "bb0f7131-682e-4889-99d4-54bf8efaeeaa",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C36",
+      "claim": "C2 patients feature prolonged survival outcome compared with C1, in both overall survival time (OS) and disease free survival time (DFS).",
+      "claim_type": "EXPLICIT",
+      "source": "The survival analysis shows that compared with C1, the C2 patients feature a prolonged survival outcome, no matter in overall survival time (OS) or disease free survival time (DFS) (Figure 5B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival analysis results shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "90abd241-37ad-442f-a87f-1105302ce958",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C37",
+      "claim": "C1 subtype patients are older in age and carry bigger tumor sizes and higher number of tumor cell positive lymph nodes compared with C2 subtype patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, analyzing the relationship with clinical factors of patients, we also found the C1 subtype patients are older in age and carry bigger tumor sizes and higher number of tumor cell positive lymph nodes (Figure 5D\u2013F), when compared with C2 subtype patients.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by clinical correlation analysis shown in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "beef3c59-0310-4082-85be-47cbeafae155",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C38",
+      "claim": "C1 patients are particularly aggressive in female patients, featuring a high number of tumors containing perineural invasion (PNI) and advanced pathological tumor staging.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate C1 patients are particularly aggressive in female patients, featuring a high number of tumors containing perineural invasion (PNI) and advanced pathological tumor staging (Figure 5G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by clinical correlation analysis shown in Figure 5G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "e2c5fec2-a04c-49af-95fd-2b8d38ada018",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C39",
+      "claim": "C2 tumors are significantly more enriched for immune cell signals, including those for CD8 T cells, cytotoxic lymphocytes, and NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing for gene signatures that indicate immune cell existence, we show that C2 tumors are significantly more enriched for immune cell signals, including those for CD8 T cells, cytotoxic lymphocytes, and NK cells (Figure 6A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immune cell infiltration analysis shown in Figure 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "a2a4b941-6dd7-4084-b1c5-76cb7567a189",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C40",
+      "claim": "C2 subtype samples show a more physiological expression signature in terms of immune checkpoints as compared to C1 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, samples of patients of that subtype also show a more physiological expression signature in terms of immune checkpoints as compared to C1 tumors (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immune checkpoint expression analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "5dd5c4e6-83b0-47be-b93b-543a77f7ea67",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C41",
+      "claim": "C1 patients might be more sensitive to AKT INHIBITOR VIII, Bleomycin, Dasatinib, GNF-2, PF-562271, Refametinib, and BMS-509744 compared to C2 subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We use Genomics of Drug Sensitivity in Cancer (GDSC) data to merge cell line response data and expression data with expression signals in C1 and C2 tumors. This analysis indicated that C1 patients may benefit from therapy with FDA-approved AKT inhibitor VIII, Bleomycin, Dasatinib, GNF-2, PF-562271, Refametinib, and BMS-509744 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by drug sensitivity prediction analysis using GDSC data, shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "022efd58-537c-464a-ad49-1d6f3fa3b1bb",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C42",
+      "claim": "The C1 subtype is enriched for intermediate filament organization, GOCC ribosome, as well as GOMF symporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "GO functional enrichment analysis indicated that the C1 subtype is enriched for intermediate filament organization, GOCC ribosome, as well as GOMF symporter activity (Figure 7A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO functional enrichment analysis shown in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "c42a7312-2d32-4ff4-9f77-95857cc31a79",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C43",
+      "claim": "The C1 subtype was activated with the Reactome fatty acids, Reactome diseases of metabolism, as well as Reactome biological oxidations pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway enrichment analysis showed that the C1 subtype was activated with the Reactome fatty acids, Reactome diseases of metabolism, as well as Reactome biological oxidations pathways, and may be inhibited with Reactome apoptosis, Reactome DNA repair, and Reactome signaling by Hippo pathways (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway enrichment analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "e604ad3d-7965-4095-825f-eb4f8986771b",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C44",
+      "claim": "The C1 subtype may be inhibited with Reactome apoptosis, Reactome DNA repair, and Reactome signaling by Hippo pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway enrichment analysis showed that the C1 subtype was activated with the Reactome fatty acids, Reactome diseases of metabolism, as well as Reactome biological oxidations pathways, and may be inhibited with Reactome apoptosis, Reactome DNA repair, and Reactome signaling by Hippo pathways (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway enrichment analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "ac0b9b3d-b581-492d-9d24-4c34945bb853",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C45",
+      "claim": "This study is the first to distinguish between benign lesions and PC by identifying novel and significant plasma EV microRNAs based on differential radiomics features.",
+      "claim_type": "EXPLICIT",
+      "source": "This study is the first to distinguish between benign lesions and PC by identifying novel and significant plasma EV microRNAs based on differential radiomics features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim asserts a novel contribution of the study based on the authors' assessment of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "a828f60f-122f-4865-9d7c-66511480116c",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C46",
+      "claim": "Low-abundance microRNAs are often overlooked in routine RNA sequencing analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on low-abundance microRNAs, which are often overlooked in routine RNA sequencing analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on general knowledge about RNA sequencing practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "45a638f8-95a0-41c5-95db-676ccd6f8360",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C47",
+      "claim": "PC remains one of the most lethal diseases, with insufficient early detection methods and limited treatment options.",
+      "claim_type": "EXPLICIT",
+      "source": "PC remains one of the most lethal diseases, with insufficient early detection methods and limited treatment options (Halbrook et al., 2023; Fahrmann et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Halbrook et al., 2023 and Fahrmann et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "8b54a29e-cda6-409c-b514-e5920df36f87",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C48",
+      "claim": "Highly abundant microRNAs often mask the signals of many others that are present at very low abundance during routine analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although numerous studies have reported on microRNA sequencing results (Yang et al., 2021), highly abundant microRNAs often mask the signals of many others that are present at very low abundance during routine analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on general knowledge about RNA sequencing and signal detection, with a citation to Yang et al., 2021 for context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "7ad5f5b7-9ece-464d-b34e-4886ff1d30f5",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C49",
+      "claim": "If a microRNA is associated with tumor development, it is likely to be in low abundance during early detection and may even be undetectable in benign lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if a microRNA is associated with tumor development, it is likely to be in low abundance during early detection and may even be undetectable in benign lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about tumor-associated biomarkers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "000e8819-b400-4322-95f6-580b1c268bc5",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C50",
+      "claim": "hsa-miR-1260b and hsa-miR-5695 were undetectable in PC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "These microRNAs showed significantly higher expression in PC blood than in non-malignant cancer patients' plasma, with hsa-miR-1260b and hsa-miR-5695 undetectable in PC samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents data from the study's expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "36766196-3f77-40f2-950b-1f3c697e34b1",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C51",
+      "claim": "The model based on three microRNAs demonstrated strong performance in the training group with AUC of 0.978, sensitivity of 0.97, and specificity of 0.99.",
+      "claim_type": "EXPLICIT",
+      "source": "The model based on these three microRNAs demonstrated strong performance in the training group (AUC, 0.978; sensitivity, 0.97; specificity, 0.99), testing group (AUC, 0.919; sensitivity, 0.96; specificity, 0.88), and external testing group (AUC, 0.897; sensitivity, 0.90; specificity, 0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents performance metrics from the study's diagnostic model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "c2685c61-7767-42aa-86cf-ae801fb1c170",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C52",
+      "claim": "The model based on three microRNAs demonstrated strong performance in the testing group with AUC of 0.919, sensitivity of 0.96, and specificity of 0.88.",
+      "claim_type": "EXPLICIT",
+      "source": "The model based on these three microRNAs demonstrated strong performance in the training group (AUC, 0.978; sensitivity, 0.97; specificity, 0.99), testing group (AUC, 0.919; sensitivity, 0.96; specificity, 0.88), and external testing group (AUC, 0.897; sensitivity, 0.90; specificity, 0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents performance metrics from the study's diagnostic model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "9403b6c4-8d2c-4ed1-ac51-6e9ce21a6c3b",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C53",
+      "claim": "The model based on three microRNAs demonstrated strong performance in the external testing group with AUC of 0.897, sensitivity of 0.90, and specificity of 0.89.",
+      "claim_type": "EXPLICIT",
+      "source": "The model based on these three microRNAs demonstrated strong performance in the training group (AUC, 0.978; sensitivity, 0.97; specificity, 0.99), testing group (AUC, 0.919; sensitivity, 0.96; specificity, 0.88), and external testing group (AUC, 0.897; sensitivity, 0.90; specificity, 0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents performance metrics from the study's diagnostic model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "d06408db-3fc8-4806-af0f-e232d33c5bba",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C54",
+      "claim": "Previous studies on microRNAs as diagnostic biomarkers for PC vs healthy controls report AUCs of 0.78\u20130.96 and sensitivities of 0.62\u20130.88.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on microRNAs as diagnostic biomarkers for PC vs healthy controls report AUCs of 0.78\u20130.96 and sensitivities of 0.62\u20130.88 (Yang et al., 2021), but many lack external validation (Liu et al., 2012; Wang, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yang et al., 2021, Liu et al., 2012, and Wang, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "7b1e12eb-061a-42da-a4cd-9b638135e7a6",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C55",
+      "claim": "Many previous microRNA biomarker studies lack external validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on microRNAs as diagnostic biomarkers for PC vs healthy controls report AUCs of 0.78\u20130.96 and sensitivities of 0.62\u20130.88 (Yang et al., 2021), but many lack external validation (Liu et al., 2012; Wang, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Liu et al., 2012 and Wang, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "bb59c97c-e552-4c18-a7cd-715f0d3a908e",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C56",
+      "claim": "One case\u2013control study identified two diagnostic panels based on microRNA expression: index I with 4 microRNAs (AUC, 0.86; sensitivity, 0.85; specificity, 0.64) and index II with 10 microRNAs (AUC, 0.93; sensitivity, 0.85; specificity, 0.85).",
+      "claim_type": "EXPLICIT",
+      "source": "One case\u2013control study identified two diagnostic panels based on microRNA expression (index I: 4 microRNAs; AUC, 0.86; sensitivity, 0.85; specificity, 0.64; index II: 10 microRNAs; AUC, 0.93; sensitivity, 0.85; specificity, 0.85) (Schultz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Schultz et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "f3fe2ccb-8e46-4f8e-8948-df8be217e4b5",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C57",
+      "claim": "None of the three identified microRNAs (hsa-miR-1260b, hsa-miR-151a-3p, hsa-miR-5695) have been reported in the context of diagnostic biomarkers in PC.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, hitherto, none of the three identified microRNAs have been reported in the context of diagnostic biomarkers in PC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "62b6199f-8af6-4e61-9dc0-834246f1aa83",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C58",
+      "claim": "hsa-miR-5695 has only indirectly been linked to breast carcinogenesis and subtypes of metastatic prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to our knowledge, hsa-miR-5695 has only indirectly been linked to breast carcinogenesis (S\u00f8kilde et al., 2019) and subtypes of metastatic prostate cancer (Watahiki et al., 2011), while hsa-miR-1260b has been implicated in promoting tumorigenesis in lung cancer (Kim et al., 2021), breast cancer (Park et al., 2022), sarcoma (Morita et al., 2020), and prostate cancer (Hirata et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to S\u00f8kilde et al., 2019 and Watahiki et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "9f4235eb-03fe-46a5-abe4-3fe62a6e9dd3",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C59",
+      "claim": "hsa-miR-1260b has been implicated in promoting tumorigenesis in lung cancer, breast cancer, sarcoma, and prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to our knowledge, hsa-miR-5695 has only indirectly been linked to breast carcinogenesis (S\u00f8kilde et al., 2019) and subtypes of metastatic prostate cancer (Watahiki et al., 2011), while hsa-miR-1260b has been implicated in promoting tumorigenesis in lung cancer (Kim et al., 2021), breast cancer (Park et al., 2022), sarcoma (Morita et al., 2020), and prostate cancer (Hirata et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2021, Park et al., 2022, Morita et al., 2020, and Hirata et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "72f112a9-d2b2-4845-b9dc-48d098b2f1ac",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C60",
+      "claim": "hsa-miR-1260b was identified as one of the top upregulated signals in plasma of IPMN cases compared to non-diseased controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in a screen of microRNAs that are differentially expressing in total plasma fraction of patients suffering from intraductal papillary mucinous neoplasm (IPMN) as compared to non-diseased controls, hsa-miR-1260b was identified as one of the top upregulated signals in plasma of IPMN cases (Permuth-Wey et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Permuth-Wey et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "83ef151d-77f0-454c-85e6-972d0aafef7c",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C61",
+      "claim": "Exosomal hsa-miR-151a-3p has emerged as a potential novel biomarker for predicting bone metastasis in lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomal hsa-miR-151a-3p has emerged as a potential novel biomarker for predicting bone metastasis in lung cancer (Zhao et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhao et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "11e09f51-e51d-46a9-9036-e71e5867e8c1",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C62",
+      "claim": "Circulating 2\u2032-O-methylated form of hsa-miR-151a-3p is upregulated in total fraction of plasma of PDAC patients compared to those derived from healthy donors or patients with chronic pancreatitis.",
+      "claim_type": "EXPLICIT",
+      "source": "A very recent report of results of a multicenter trial in Asian participants also identified circulating 2\u2032-O-methylated form of hsa-miR-151a-3p is upregulated in total fraction of plasma of PDAC patients compared to those derived from healthy donors or patients with chronic pancreatitis (Yang et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yang et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "88982087-9a2b-4586-888b-c9edf8c81e8c",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C63",
+      "claim": "PC currently has only two standard systemic treatments with limited efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "PC currently has only two standard systemic treatments with limited efficacy, and the patient population responsive to immunotherapy and targeted therapy remains unclear (Neoptolemos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Neoptolemos et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "58d5eff9-9b61-46b0-84d1-20dbca46c893",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C64",
+      "claim": "The patient population responsive to immunotherapy and targeted therapy in PC remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "PC currently has only two standard systemic treatments with limited efficacy, and the patient population responsive to immunotherapy and targeted therapy remains unclear (Neoptolemos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Neoptolemos et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "4b44de30-43cc-4b89-8920-dc3d223e82d8",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C65",
+      "claim": "Patients classified as C2 had better prognoses, with higher immune cell infiltration and more immune checkpoint expression, suggesting they may be suitable for immunotherapy after standard treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients classified as C2 had better prognoses, with higher immune cell infiltration and more immune checkpoint expression, suggesting they may be suitable for immunotherapy after standard treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim combines data analysis results with inference about treatment implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "c28010a7-304d-4dcb-a19f-61e7b626a4bc",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C66",
+      "claim": "Patients classified as C1 had poorer prognoses, related to inhibited pathways such as DNA repair and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, patients classified as C1 had poorer prognoses, related to inhibited pathways such as DNA repair and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim combines data analysis results with inference about pathway activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "8722ff9f-9b74-4d8f-9aaa-6181b4ad2206",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C67",
+      "claim": "Using the MCP-counter algorithm for blood samples is a limitation of the study, as it was originally designed for solid tissues, which may affect the accuracy of cell population quantification in the blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, using the Microenvironment Cell Populations-counter (MCP-counter) algorithm for blood samples is a limitation of our study, as it was originally designed for solid tissues, which may affect the accuracy of cell population quantification in the blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a methodological limitation based on knowledge of the MCP-counter algorithm's design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "39ccb720-ee61-411e-abcc-23d43026a121",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C68",
+      "claim": "The EV purification did not use measures to enrich for cancer cell-derived EVs such as CD147 membrane presenting amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, since our EV purification did not use measures to enrich for cancer cell-derived EVs such as CD147 membrane presenting amplitude (Ko et al., 2023), we cannot exclude contamination of our miRNA data due to signals from non-cancer cell background, which might impact the cancer specificity of our proposed blood test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a methodological limitation with a citation to Ko et al., 2023.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "ae4b1190-d755-4d1a-bbc1-2bc30c83334b",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C69",
+      "claim": "Contamination of miRNA data due to signals from non-cancer cell background cannot be excluded, which might impact the cancer specificity of the proposed blood test.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, since our EV purification did not use measures to enrich for cancer cell-derived EVs such as CD147 membrane presenting amplitude (Ko et al., 2023), we cannot exclude contamination of our miRNA data due to signals from non-cancer cell background, which might impact the cancer specificity of our proposed blood test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about potential limitations of the methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "3caee863-2e55-43e0-abb5-e450d7309f59",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C70",
+      "claim": "All CT images were acquired using a 64-slice multidetector spiral CT scanner, with a standard slice thickness of 1.0\u20131.5 mm and a reconstruction interval of 1 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "All CT images were acquired using a 64-slice multidetector spiral CT scanner, with a standard slice thickness of 1.0\u20131.5 mm and a reconstruction interval of 1 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the imaging acquisition protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "01750066-9850-47de-b4ce-a882b5785157",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C71",
+      "claim": "All PC patients underwent a standard pancreatic protocol triphasic contrast-enhanced CT examination.",
+      "claim_type": "EXPLICIT",
+      "source": "All PC patients underwent a standard pancreatic protocol triphasic contrast-enhanced CT examination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the imaging protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "4c30fffd-2b73-4a42-8174-8905d409d52f",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C72",
+      "claim": "For radiomics analysis, images from the portal venous phase were selected due to their consistent clarity in delineating pancreatic tumor boundaries and surrounding vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "For radiomics analysis, images from the portal venous phase were selected due to their consistent clarity in delineating pancreatic tumor boundaries and surrounding vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methodological choice for image selection based on imaging characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "1a251e40-bd89-4241-9a52-fe28a9b96185",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C73",
+      "claim": "All imaging data underwent preprocessing, including resampling, intensity normalization of grayscale values, and N4 bias field correction to address potential low-frequency signal inhomogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure data consistency, all imaging data underwent preprocessing, including resampling, intensity normalization of grayscale values, and N4 bias field correction to address potential low-frequency signal inhomogeneities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the preprocessing steps applied to the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "fc06bc62-ca64-4a6f-995f-377f10849864",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C74",
+      "claim": "Low-abundance miRNAs are defined as the EV miRNAs with the lowest 30% Counts Per Million (CPM) value across all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-abundance miRNAs are defined as the EV miRNAs with the lowest 30% Counts Per Million (CPM) value across all samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim defines the operational definition used in the study for low-abundance miRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "46387a7c-b2d7-4458-adfc-11a4795b6a3d",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C75",
+      "claim": "The soft-thresholding power of WGCNA was automatically defined by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The soft-thresholding power of WGCNA was automatically defined by the model, which was then assisting in calculating the expression correlation with (1) a given miRNA to obtain gene significance (GS) and (2) of module membership (MM) with miRNAs to obtain MM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methodological approach for WGCNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "e904895c-edcc-4137-b400-5d051e9e389a",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C76",
+      "claim": "Based on the cut-off criteria (|MM| >0.5 and |GS| >0.1), significant miRNAs related to low- and high-risk images were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the cut-off criteria (|MM| >0.5 and |GS| >0.1), we obtain the significant miRNAs related to low- and high-risk images, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the cut-off criteria used for identifying significant miRNAs in WGCNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "ed105e65-2103-43e2-8f16-581660a9a0de",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C77",
+      "claim": "Ten machine-learning algorithms (GBM, KNN, Lasso, XGBoost, ENR, SVM, LR, RR, StepWise, and QDA) were used to select the best model for prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Then we use ten machine-learning algorithms (Gradient Boosting Machine [GBM], KNN, Lasso, XGBoost, ENR, SVM, LR, RR, StepWise, and QDA) composition to select the best model for prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the machine learning approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "1deedc61-7891-427f-bd33-4692ed42a44f",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C78",
+      "claim": "The miRPathDB v2.0 database was used to predict the candidate target mRNAs of hub EV miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "To discover the candidate regulation mechanisms of hub EV miRNAs, we use miRPathDB v2.0 database (https://mpd.bioinf.uni-sb.de/overview.html) to predict the candidate target mRNAs of hub EV miRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the database used for target prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "9924b576-f4d8-4597-aecc-a86ba9302543",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C79",
+      "claim": "The R package ConsensusClusterPlus was used to perform the cluster analysis of common target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the R package ConsensusClusterPlus to perform the cluster analysis of common target mRNAs and rank the best cluster results according to the Consensus value output received.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the clustering method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "f8b1795b-a138-4cfb-9337-7da65e92c1f6",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C80",
+      "claim": "The MCP-counter algorithms were used to calculate immune cell infiltration of each sample.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the MCP-counter algorithms to calculate immune cell infiltration of each sample and calculate the difference in the two tumor subtypes for each immune cell type separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the method used for immune cell infiltration analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "bd80f3fb-582f-462c-b412-100fd6ab8a6c",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C81",
+      "claim": "Drug sensitivity data of molecular characterized cell lines to FDA approved clinical drugs were downloaded from GDSC database.",
+      "claim_type": "EXPLICIT",
+      "source": "We download drug sensitivity data of molecular characterized cell lines to FDA approved, clinical drugs from GDSC database https://www.cancerrxgene.org/, and then use pRRophetic package to estimate the drug sensitivity of the two discovered subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data source for drug sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "c7ab346f-e4cd-4822-9118-de4205dd246d",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C82",
+      "claim": "The pRRophetic package was used to estimate the drug sensitivity of the two discovered subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We download drug sensitivity data of molecular characterized cell lines to FDA approved, clinical drugs from GDSC database https://www.cancerrxgene.org/, and then use pRRophetic package to estimate the drug sensitivity of the two discovered subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the method used for drug sensitivity prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "3febc242-611c-4efd-9828-c8c5b9f67241",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C83",
+      "claim": "Gene Set Enrichment Analysis was conducted to explore the biological function difference in Biological Process, Cellular Component, and Molecular Function.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the biological function difference in Biological Process, Cellular Component, and Molecular Function, we conduct the Gene Set Enrichment Analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the method used for functional enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "73b94159-3fe0-421d-b20e-0879e1043bf8",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C84",
+      "claim": "The Cluster profile package was used to perform functional enrichment analysis with p-value \u22640.05 set as significant enrichment results.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster profile package performs this operation and sets p-value \u22640.05 as significant enrichment results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the software and statistical threshold used for enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "e4a26f9e-187d-4b65-9d6f-44e07189c4d2",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C85",
+      "claim": "Radiomics features were extracted and analyzed using the limma package, which applies linear modeling and empirical Bayes moderation suitable for high-dimensional imaging data with multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Radiomics features were extracted and analyzed using the limma package, which applies linear modeling and empirical Bayes moderation suitable for high-dimensional imaging data with multiple comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the statistical method used for radiomics feature analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "aeb7154c-b259-4232-9308-e53f2562e0ce",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C86",
+      "claim": "Survival differences between molecular subtypes were evaluated using Kaplan\u2013Meier analysis with log-rank tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Survival differences between molecular subtypes were evaluated using Kaplan\u2013Meier analysis with log-rank tests, and multivariate Cox proportional hazards models were used to adjust for confounding clinical variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the statistical method used for survival analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "272f5c31-ab86-40a9-8f0b-0e39a49b50b2",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C87",
+      "claim": "Multivariate Cox proportional hazards models were used to adjust for confounding clinical variables in survival analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Survival differences between molecular subtypes were evaluated using Kaplan\u2013Meier analysis with log-rank tests, and multivariate Cox proportional hazards models were used to adjust for confounding clinical variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the statistical method used for adjusting survival analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "765eff68-f06e-46d9-aa88-f46a7fd88a95",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C88",
+      "claim": "The study developed a liquid biopsy signature based on extracellular vesicle (EV)-derived microRNAs (miRNAs) linked to radiomics features extracted from patients' tumor imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "In this multiethnic study involving human subjects, we developed a liquid biopsy signature based on extracellular vesicle (EV)-derived microRNAs (miRNAs) linked to radiomics features extracted from patients' tumor imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main methodological approach of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "0098a90a-a63b-4638-8c6f-00451df38e75",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C89",
+      "claim": "The study integrated eight datasets containing clinical records, imaging data of benign and malignant pancreatic lesions, and small RNA sequencing data from plasma-derived EVs of PC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We integrated eight datasets containing clinical records, imaging data of benign and malignant pancreatic lesions, and small RNA sequencing data from plasma-derived EVs of PC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data integration approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "dff47723-9ec0-4dbe-8055-e10c1ab175df",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C90",
+      "claim": "Three key EV miRNAs were found to robustly distinguish malignant from benign lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Three key EV miRNAs were found to robustly distinguish malignant from benign lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "d1f6677b-22cf-4ab2-9282-9fe247a11905",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C91",
+      "claim": "Molecular clustering of the three miRNAs and their predicted targets identified two PC subtypes with distinct survival profiles and therapeutic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent molecular clustering of these miRNAs and their predicted targets identified two PC subtypes, with distinct survival profiles and therapeutic responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "478f1254-23bc-4427-abd4-382c7837398e",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C92",
+      "claim": "One cluster was associated with prolonged overall survival and higher predicted sensitivity to immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, one cluster was associated with prolonged overall survival and higher predicted sensitivity to immunotherapy, while the other indicated high-risk tumors potentially amenable to targeted drug interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings about one of the identified subtypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "69d8f30e-779c-4d00-9b9b-d5a57c9d0fcd",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C93",
+      "claim": "The other cluster indicated high-risk tumors potentially amenable to targeted drug interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, one cluster was associated with prolonged overall survival and higher predicted sensitivity to immunotherapy, while the other indicated high-risk tumors potentially amenable to targeted drug interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings about one of the identified subtypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "6cb10f7c-8552-4028-9d46-2c32085c9ce2",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "claim_id": "C94",
+      "claim": "This radiogenomic EV miRNA signature in human plasma represents a promising non-invasive biomarker for early diagnosis and molecular subtyping of PC, with potential implications for precision treatment strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "This radiogenomic EV miRNA signature in human plasma represents a promising non-invasive biomarker for early diagnosis and molecular subtyping of PC, with potential implications for precision treatment strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the authors' interpretation of the significance of their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "85afb4f9-50de-441a-83cb-99bc7851b441",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study enrolled 272 patients across multiple centers with CT imaging data (173 from UMMD/JHC, 99 from WUH) and 83 patients from DUH with EV miRNA data. After propensity score matching for age, baseline differences between centers were removed, enabling integrated analysis of imaging and molecular data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 provide clear cohort descriptions with specific patient numbers and demographic characteristics. The use of PSM (C20) to address baseline differences is methodologically sound and appropriately documented with reference to Figure 2A, strengthening the validity of subsequent cross-center comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "9ef98565-618e-4c6b-bc5c-0632df70c07a",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Radiomics analysis identified 88 differentially expressed features between benign and malignant pancreatic lesions. Feature selection using Boruta algorithms identified 12 important features, which were further reduced to 4 key features via LASSO regression. The resulting 4-feature radiomics signature achieved high predictive accuracy (AUC=0.911) in an independent test dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 describe a systematic feature selection pipeline with appropriate dimensionality reduction methods (Boruta, LASSO). The validation in an independent test cohort (WUH) with AUC=0.911 demonstrates robust predictive performance. The methodology is well-documented with references to figures and source data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "6c3c24a0-b977-450a-ab90-e6c52715219b",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Integration of radiomics-based patient risk stratification with EV miRNA expression data via WGCNA identified three low-abundance miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, hsa-miR-5695) associated with imaging features. Low-abundance was defined as the lowest 30% CPM values, yielding 295 candidates, of which 12 were in the key WGCNA module.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 and C74-C76 describe a novel radiogenomic integration approach linking imaging features to molecular signatures. The operational definition of low-abundance miRNAs (C74) is clearly stated, and the WGCNA methodology with specific cutoff criteria (|MM|>0.5, |GS|>0.1) is appropriate for identifying co-expressed modules. The convergence on 3 miRNAs from multiple analytical streams is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "46a754de-102a-4535-9731-3c284032c213",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The three identified miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, hsa-miR-5695) showed significantly elevated expression in tumor patient serum compared to healthy controls, with similar upregulation observed in tumor tissue versus non-tumor tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 provide experimental validation of the three candidate miRNAs in both serum and tissue samples, with statistical significance demonstrated. The consistency across both sample types strengthens the biological relevance of these biomarkers, though the manuscript notes limited sample size for paracancerous tissue validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A diagnostic model based on the three EV miRNAs achieved high predictive accuracy across multiple datasets: training set (AUC=0.978, sensitivity=0.97, specificity=0.99), two independent test sets (AUC=0.919 and 0.857), and extended validation (AUC=0.897). This performance exceeded the standard biomarker CA19-9 (AUC=0.843).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 and C51-C53 demonstrate robust diagnostic performance with validation across multiple independent cohorts. The use of 10 machine learning algorithms (C77) to select the optimal model (GBM) is methodologically sound. The comparison to CA19-9 (C33) provides clinical context, showing superior performance. However, the high training accuracy (0.978) raises potential concerns about overfitting despite good test performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "4fc9a009-a9de-4db2-bad6-428d881e9225",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Target prediction identified 117 shared mRNA targets of the three miRNAs, which enabled stratification of tumors into two molecular subtypes (C1 and C2). C2 patients showed significantly better survival outcomes (OS and DFS), while C1 patients were characterized by older age, larger tumors, more positive lymph nodes, higher rates of perineural invasion, and advanced staging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 describe a biologically-informed molecular subtyping approach based on predicted miRNA targets. The survival differences (C36) are statistically significant with appropriate Kaplan-Meier analysis. Clinical correlations (C37-C38) are well-documented with references to figures. The use of miRPathDB for target prediction (C78) and ConsensusClusterPlus for clustering (C79) represents standard methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "de024d8d-bd22-4a55-af03-7a00eba14742",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "C2 tumors showed significantly higher immune cell infiltration (CD8 T cells, cytotoxic lymphocytes, NK cells) and more physiological immune checkpoint expression compared to C1 tumors, suggesting potential suitability for immunotherapy after standard treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C40 present immune profiling data using MCP-counter algorithms (C80), but the authors acknowledge this is a significant limitation as MCP-counter was designed for solid tissues, not blood samples (C67). The inference about immunotherapy suitability (C65) is speculative and not directly validated. The immune characterization requires validation with methods appropriate for blood samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "a09d2e6b-7788-4afa-92fb-2860ba4c1ad1",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Drug sensitivity prediction using GDSC data suggested that C1 patients might be more sensitive to seven FDA-approved drugs including AKT inhibitor VIII, Bleomycin, Dasatinib, GNF-2, PF-562271, Refametinib, and BMS-509744 compared to C2 patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C41 presents drug sensitivity predictions based on computational analysis using pRRophetic package (C82) and GDSC cell line data (C81). However, these are in silico predictions without experimental validation in patient samples or clinical data. The inference that C1 patients \"may benefit\" represents speculation requiring prospective validation. The methodology is appropriate for hypothesis generation but insufficient to support clinical recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "8bf449a6-5032-4444-ad67-b5d8e7258466",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Functional enrichment analysis revealed that C1 subtype tumors were enriched for intermediate filament organization, ribosome components, and symporter activity, with activation of fatty acid metabolism and biological oxidation pathways, and potential inhibition of apoptosis, DNA repair, and Hippo signaling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 describe comprehensive functional enrichment analysis using GSEA (C83) with appropriate statistical thresholds (p\u22640.05, C84). The pathway analysis provides biological context for the poor prognosis of C1 patients (C66), linking molecular signatures to known cancer hallmarks. The methodology is standard and results are clearly presented with references to Figure 7.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "02f908a3-757d-4961-a048-2424db11716e",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "This study represents the first radiogenomic approach to identify plasma EV miRNA biomarkers for pancreatic cancer by integrating CT imaging features with molecular data across eight datasets. Three novel low-abundance miRNAs were identified that distinguish benign from malignant lesions and enable molecular subtyping with distinct survival profiles and therapeutic implications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C57, and C88-C91 describe the study's novel contributions. The integration of radiomics with EV miRNA profiling (C88-C89) represents a methodologically innovative approach. The claim of novelty (C45, C57) appears supported by literature review, though C57 acknowledges this is based on the authors' knowledge. The identification of three miRNAs (C90) and their use for subtyping (C91) is well-documented. However, C94's characterization as \"promising\" for clinical application is aspirational given acknowledged limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "1df88767-1075-4a32-8e80-b26fc486b97c",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study focused on low-abundance miRNAs, which are often masked by highly abundant miRNAs in routine sequencing and may be undetectable in benign lesions but elevated in early cancer. Two of the three identified miRNAs (hsa-miR-1260b and hsa-miR-5695) were undetectable in benign samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C48-C49 provide biological rationale for focusing on low-abundance miRNAs, based on established knowledge about RNA-seq limitations. Claim C50 presents data showing two miRNAs were undetectable in benign samples, supporting the early detection potential. However, there is an apparent contradiction: C50 states these miRNAs were \"undetectable in PC samples\" which contradicts C28-C29 showing elevation in tumor samples. This appears to be a textual error in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "a486cc9a-88b3-44b2-b40c-ff49ba7c3083",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous microRNA biomarker studies for pancreatic cancer reported AUCs of 0.78-0.96 and sensitivities of 0.62-0.88, but many lacked external validation. One prior study identified diagnostic panels with 4 miRNAs (AUC=0.86) or 10 miRNAs (AUC=0.93).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 provide appropriate contextualization of the current study's performance relative to prior work, with proper citations. The comparison highlights that the current 3-miRNA panel achieves similar or better performance with fewer biomarkers, supporting clinical practicality. The criticism of prior studies lacking external validation (C55) is substantiated by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "b5bee17f-aa70-4232-af90-23b82bddf919",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Literature review revealed that hsa-miR-5695 has been linked to breast and prostate cancer, hsa-miR-1260b has been implicated in multiple cancers including lung, breast, sarcoma, and prostate, and was previously identified as upregulated in IPMN plasma. hsa-miR-151a-3p has been reported as a biomarker for lung cancer bone metastasis and was recently found upregulated in PDAC plasma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 provide comprehensive literature context for the three identified miRNAs with appropriate citations. The prior identification of hsa-miR-1260b in IPMN (C60) and hsa-miR-151a-3p in PDAC (C62) supports the biological plausibility of these biomarkers for pancreatic pathology, though C57 correctly notes they haven't been specifically reported as diagnostic biomarkers for PC in the exact context of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "ac49e81b-a7e4-470d-8c43-5a683e7d095c",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study has methodological limitations including use of MCP-counter algorithm on blood samples (designed for solid tissues), lack of cancer cell-specific EV enrichment (e.g., CD147), and potential contamination from non-cancer cell background that may affect cancer specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 represent appropriate acknowledgment of study limitations. The recognition that MCP-counter may not be optimal for blood samples (C67) is important for interpreting immune infiltration results. The lack of cancer-specific EV enrichment (C68-C69) is a significant limitation that could affect specificity, though the strong diagnostic performance suggests this may not be a major confounding factor. These honest assessments strengthen the manuscript's credibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "5a14deda-06bc-4508-8f13-1f70ddd10890",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CT imaging was standardized using 64-slice scanners with 1.0-1.5mm slice thickness, triphasic contrast-enhanced protocol, and portal venous phase selection for radiomics analysis. Preprocessing included resampling, intensity normalization, and N4 bias field correction. Radiomics features were analyzed using limma package with linear modeling and empirical Bayes moderation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 and C85 describe comprehensive imaging acquisition and preprocessing protocols that are appropriate for radiomics analysis. The standardization across centers (C70-C71), rational phase selection (C72), and preprocessing steps (C73) address key technical requirements for reproducible radiomics. The use of limma for high-dimensional data analysis (C85) is methodologically sound and well-suited for the data type.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "bb996564-99e6-41c1-938d-d261b5ef44d5",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Survival analysis employed Kaplan-Meier analysis with log-rank tests for comparing subtypes, and multivariate Cox proportional hazards models to adjust for confounding clinical variables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 describe appropriate statistical methods for survival analysis. The combination of Kaplan-Meier for visualization and Cox models for adjustment is standard practice. However, the manuscript does not specify which clinical variables were included in the multivariate models or present the adjusted results, which limits full evaluation of potential confounding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "079dc5f6-cb89-4e0a-99c6-12096e11adab",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Pancreatic cancer has poor prognosis with ~13% 5-year survival, primarily due to lack of early detection leading to late-stage diagnosis. Approximately 90% are PDAC, currently diagnosed via medical imaging (CT, MRI, PET, ultrasound). Existing biomarkers CA19-9 and CEA are prognostic but not effective for screening or early diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 and C47 provide well-established background information about pancreatic cancer with appropriate citations. These claims accurately represent current knowledge about PC epidemiology, diagnostic challenges, and biomarker limitations. The statistics and clinical context are consistent with oncology literature and properly support the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "2d8b7c5a-0eb3-40fe-a596-89a9a9dbf395",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "MicroRNAs regulate gene expression by inhibiting mRNA translation or enhancing degradation. Extracellular vesicles carry tumor-derived molecular fingerprints and EV-derived miRNAs play roles in cancer differentiation and metastasis. Co-expression network analysis has identified numerous miRNAs as potential diagnostic or prognostic biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 provide accurate background on miRNA biology and EV function with appropriate citations. These claims establish the biological rationale for investigating EV miRNAs as biomarkers and the use of network analysis approaches. The information is well-established in the literature and properly contextualizes the study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "08dbbede-6b12-4ff6-891f-0f26380d43c3",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Machine learning has been successfully applied to develop diagnostic signatures, including a three-serum miRNA signature for premalignant PC and immune subtype classification for triple-negative breast cancer. Radiogenomics integrates imaging features with genomic signatures for non-invasive molecular prediction, including p53 mutation prediction from CT images.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 provide relevant precedents for the study's methodological approach with appropriate citations, including the authors' prior work (C11). These examples establish the feasibility and utility of machine learning for biomarker development and radiogenomic approaches for molecular prediction, supporting the rationale for the current study's integrated approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "7e1b0969-a61b-4664-bf9a-0a35e7f63e69",
+      "content_id": "3d85bf16-dee8-4aa1-ac07-a57e2b3aaa20",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Pancreatic cancer currently has only two standard systemic treatments with limited efficacy, and the patient population responsive to immunotherapy and targeted therapy remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 accurately describe current treatment limitations for PC with appropriate citation (Neoptolemos et al., 2018). This information provides important clinical context for the study's goal of molecular subtyping to guide treatment selection, though the citation is from 2018 and treatment landscape may have evolved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "2f0cf56c-008a-464b-a67c-bfedb4c7302c",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors identified radiomics features that distinguish benign from malignant pancreatic lesions. After propensity score matching to remove baseline differences, 88 significant features were identified, which were reduced to 12 by Boruta algorithms and then to 4 key features by LASSO regression. These 4 features achieved an AUC of 0.911 in the test dataset.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 raises critical concerns about the study design, noting that 'the CT features extracted likely differentiate solid from cystic pancreatic lesions' since benign controls were predominantly IPMNs. The reviewer states the design is 'flawed' and requests inclusion of pancreatitis and normal pancreata as controls. Additionally, Reviewer 3 requests 'an additional external validation set' for radiomics features given manual segmentation, and notes that 'more quantitative details are needed' in Figure 2 descriptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "1a3d966a-8940-4c80-bda3-5f0f1004db77",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors used WGCNA analysis to identify EV miRNAs associated with radiomics features, focusing on low-abundance miRNAs (defined as lowest 30% CPM). The green module containing 12 hub miRNAs was identified, and by merging with 295 low-abundance miRNAs, three key miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, and hsa-miR-5695) were selected.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 identifies critical methodological concerns, stating 'The WGCNA analysis was critical to identify the EV miRNAs associated with imaging features, but the \"cut-off criteria\" for MM and GS have no clear justification.' The reviewer asks 'How were these cut-offs determined? How sensitive were the results to these cut-offs?' Reviewer 2 notes 'selection of low abundance miRNAs for developing the signature with inadequate rationale' as a weakness.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "3ff5d6c5-eca0-48af-8a06-12513956b3f7",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The three identified miRNAs showed significantly different expression in tumor versus healthy samples in both serum and tissue, with hsa-miR-1260b and hsa-miR-5695 being undetectable in benign samples but enriched in tumor patient serum.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 requests more details about the validation datasets, asking 'Were these pancreatic cancers all adenocarcinoma, what stage, age range, sex distribution, comorbid conditions were the cases? Were the controls all IPMNs or were there other conditions in the controls?' This lack of clarity about sample characteristics undermines confidence in the validation results. Reviewer 2 notes 'inadequate description of clinical characteristics of the enrolled samples makes the findings unconvincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "f9d86998-c5be-49a0-94a8-a56714e798c9",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The three-miRNA signature demonstrated high diagnostic accuracy across training (AUC=0.978, sensitivity=0.97, specificity=0.99), test (AUC=0.919, sensitivity=0.96, specificity=0.88), and external validation (AUC=0.897, sensitivity=0.90, specificity=0.89) datasets, outperforming CA19-9 (AUC=0.843).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the performance metrics appear strong, Reviewer 3 states 'It is still not clear what Figure 4A is illustrating as regards to model performance' and requests the authors 'state in the manuscript very clearly what they are showing in the figure.' The fundamental study design flaw identified by Reviewer 3\u2014that the signature may simply differentiate solid from cystic lesions rather than malignant from benign\u2014casts doubt on the clinical utility of these results. The editor notes 'the evidence provided for the liquid biopsy EV miRNA signature developed based on radiomics features remains incomplete.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "71571604-e942-4f42-97cf-6133251c60a1",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Based on 117 predicted mRNA targets of the three miRNAs, tumors were stratified into two subtypes (C1 and C2). C2 patients showed prolonged survival (both OS and DFS), while C1 patients were older, had larger tumors, more positive lymph nodes, more perineural invasion, and advanced staging, particularly in females.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 3 explicitly states 'The subtype results in figures 6 and 7 are not convincing. An association on univariate analysis is not sufficient.' The reviewer notes that 'The explanation that clinical data is not available to do a multivariable analysis indicates that the authors do not have the ability to claim that they have identified unique subtypes that have clinical relevance.' The reviewer concludes 'A thorough evaluation of the prognostic significance and the associated molecular features of these tumors is needed.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "b3b750fb-9f4a-4774-9f64-777e33161125",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "C2 tumors showed significantly higher enrichment for immune cell signals (CD8 T cells, cytotoxic lymphocytes, NK cells) and more physiological immune checkpoint expression, suggesting these patients may be suitable for immunotherapy after standard treatment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 3's critique of the subtype analysis applies here as well, stating the results are 'not convincing' and that univariate analysis is insufficient. The claim about immunotherapy suitability is particularly speculative given the lack of multivariable analysis. The authors acknowledge in C67 that 'using the MCP-counter algorithm for blood samples is a limitation' as it was designed for solid tissues, which further undermines confidence in the immune infiltration quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "09d9f42c-30f2-4bf1-883f-0f117bf697ea",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "C1 patients showed predicted sensitivity to several drugs including AKT inhibitor VIII, Bleomycin, Dasatinib, GNF-2, PF-562271, Refametinib, and BMS-509744, suggesting these high-risk tumors may be amenable to targeted drug interventions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "This drug sensitivity prediction is based on the C1/C2 subtype classification that Reviewer 3 found unconvincing. The reviewer's statement that the authors 'do not have the ability to claim that they have identified unique subtypes that have clinical relevance' directly undermines these therapeutic predictions. These are computational predictions from cell line data without clinical validation, making the therapeutic implications highly speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "f1fbd815-dce1-4be3-80ee-dede3876fef7",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Functional enrichment analysis showed C1 subtype enrichment for intermediate filament organization, ribosome, and symporter activity, with activation of fatty acid metabolism and biological oxidation pathways, and inhibition of apoptosis, DNA repair, and Hippo signaling pathways, relating to poorer prognoses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "These pathway analyses are downstream of the unconvincing subtype classification. Reviewer 3's critique that the subtypes lack clinical relevance due to insufficient multivariable analysis applies to all downstream functional characterization. The causal relationship between pathway inhibition and poor prognosis is inferential and not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "66dd475f-223f-405a-be37-ff9c1a91cb67",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The study enrolled 272 patients across three centers (173 from UMMD/JHC, 99 from WUH) with CT imaging, including 46 benign lesions and 127 pancreatic cancers from UMMD/JHC. Patient demographics varied by center with differences in age, sex, obesity, smoking, alcohol use, and diabetes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 states 'inadequate description of clinical characteristics of the enrolled samples makes the findings unconvincing' and notes 'drawing association of data derived from unmatched sample sets' as a weakness. Reviewer 3 requests extensive additional details about the cohorts, asking about adenocarcinoma classification, stage, age range, sex distribution, and comorbid conditions. The lack of these details prevents proper evaluation of the cohort composition and matching.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "e11720b5-7425-40c1-abb5-7798211bd37b",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors claim this is the first study to distinguish benign from malignant pancreatic lesions by identifying novel plasma EV microRNAs based on differential radiomics features, representing a promising non-invasive biomarker for early diagnosis and molecular subtyping with implications for precision treatment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "The editor states 'the evidence provided for the liquid biopsy EV miRNA signature developed based on radiomics features remains incomplete' and notes 'key details missing and validation experiments that would better support the conclusions.' Reviewer 3's identification of the fundamental design flaw\u2014that the signature may simply distinguish solid from cystic lesions\u2014directly challenges the novelty and clinical utility claims. Reviewer 2 characterizes the study design as 'flawed,' making the broad claims about clinical promise premature.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "36726fff-3438-47ea-889c-a342c2186f9a",
+      "content_id": "8e451a2e-8cf5-436e-ac0e-316dda8aa4c8",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors acknowledge methodological limitations including use of MCP-counter algorithm designed for solid tissues on blood samples, and lack of enrichment for cancer cell-derived EVs, which may result in contamination from non-cancer cell background affecting cancer specificity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are limitations explicitly acknowledged by the authors themselves. The reviewers' concerns about methodology align with these acknowledged limitations, particularly Reviewer 2's note about 'incomplete description of experimental methods' and the general concern about validation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "115f6554-3d16-46fb-ad9d-0ac2d5efe951",
+      "result_id": "85afb4f9-50de-441a-83cb-99bc7851b441"
+    },
+    {
+      "claim_id": "335f3515-3e7d-4dd4-b253-8ecd24586619",
+      "result_id": "85afb4f9-50de-441a-83cb-99bc7851b441"
+    },
+    {
+      "claim_id": "cda39f29-e887-4619-8f17-1b283e7847f1",
+      "result_id": "85afb4f9-50de-441a-83cb-99bc7851b441"
+    },
+    {
+      "claim_id": "c5729b66-407f-423b-b90b-be600b5c3f86",
+      "result_id": "85afb4f9-50de-441a-83cb-99bc7851b441"
+    },
+    {
+      "claim_id": "0bd02e7a-890c-432c-af69-039abb2cf35e",
+      "result_id": "85afb4f9-50de-441a-83cb-99bc7851b441"
+    },
+    {
+      "claim_id": "ccc35232-fd1a-496f-bf33-b60910b6297f",
+      "result_id": "85afb4f9-50de-441a-83cb-99bc7851b441"
+    },
+    {
+      "claim_id": "0b89b442-9719-431c-a7b4-619e84ba3d24",
+      "result_id": "9ef98565-618e-4c6b-bc5c-0632df70c07a"
+    },
+    {
+      "claim_id": "dc21c937-f4a6-44ff-b355-93e7f85188e4",
+      "result_id": "9ef98565-618e-4c6b-bc5c-0632df70c07a"
+    },
+    {
+      "claim_id": "aefd82e3-76d2-4b91-8526-d4bb02e0119b",
+      "result_id": "9ef98565-618e-4c6b-bc5c-0632df70c07a"
+    },
+    {
+      "claim_id": "84bed5f8-495f-4ded-bad1-d08e726be505",
+      "result_id": "9ef98565-618e-4c6b-bc5c-0632df70c07a"
+    },
+    {
+      "claim_id": "816c45ba-ab28-4ad9-9f53-e81a6a9f1267",
+      "result_id": "6c3c24a0-b977-450a-ab90-e6c52715219b"
+    },
+    {
+      "claim_id": "1a6fe3cb-a11b-4238-8071-06787c7169ca",
+      "result_id": "6c3c24a0-b977-450a-ab90-e6c52715219b"
+    },
+    {
+      "claim_id": "e9076d4e-961b-4fb9-83a7-eec0669c0e00",
+      "result_id": "6c3c24a0-b977-450a-ab90-e6c52715219b"
+    },
+    {
+      "claim_id": "fc06bc62-ca64-4a6f-995f-377f10849864",
+      "result_id": "6c3c24a0-b977-450a-ab90-e6c52715219b"
+    },
+    {
+      "claim_id": "46387a7c-b2d7-4458-adfc-11a4795b6a3d",
+      "result_id": "6c3c24a0-b977-450a-ab90-e6c52715219b"
+    },
+    {
+      "claim_id": "e904895c-edcc-4137-b400-5d051e9e389a",
+      "result_id": "6c3c24a0-b977-450a-ab90-e6c52715219b"
+    },
+    {
+      "claim_id": "0d679b77-91b6-4634-a254-a0a739a61e28",
+      "result_id": "46a754de-102a-4535-9731-3c284032c213"
+    },
+    {
+      "claim_id": "8d2d4feb-c6d8-4c05-a84c-f57ef443363d",
+      "result_id": "46a754de-102a-4535-9731-3c284032c213"
+    },
+    {
+      "claim_id": "2279ed7f-fb5b-4d0a-84f3-abf1ae48eb65",
+      "result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f"
+    },
+    {
+      "claim_id": "5e4c2080-ee78-47c1-9fdd-13c93294f8f5",
+      "result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f"
+    },
+    {
+      "claim_id": "67f2d808-ba34-4396-865e-8f75945a669d",
+      "result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f"
+    },
+    {
+      "claim_id": "cda140aa-3a83-4646-8d63-8c84dc070953",
+      "result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f"
+    },
+    {
+      "claim_id": "36766196-3f77-40f2-950b-1f3c697e34b1",
+      "result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f"
+    },
+    {
+      "claim_id": "c2685c61-7767-42aa-86cf-ae801fb1c170",
+      "result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f"
+    },
+    {
+      "claim_id": "9403b6c4-8d2c-4ed1-ac51-6e9ce21a6c3b",
+      "result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f"
+    },
+    {
+      "claim_id": "ed105e65-2103-43e2-8f16-581660a9a0de",
+      "result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f"
+    },
+    {
+      "claim_id": "27be23bf-10f8-4bdf-9c31-2f76ea73980e",
+      "result_id": "4fc9a009-a9de-4db2-bad6-428d881e9225"
+    },
+    {
+      "claim_id": "2853fcdf-0fe8-41f1-8ccb-10397df0ae52",
+      "result_id": "4fc9a009-a9de-4db2-bad6-428d881e9225"
+    },
+    {
+      "claim_id": "bb0f7131-682e-4889-99d4-54bf8efaeeaa",
+      "result_id": "4fc9a009-a9de-4db2-bad6-428d881e9225"
+    },
+    {
+      "claim_id": "90abd241-37ad-442f-a87f-1105302ce958",
+      "result_id": "4fc9a009-a9de-4db2-bad6-428d881e9225"
+    },
+    {
+      "claim_id": "beef3c59-0310-4082-85be-47cbeafae155",
+      "result_id": "4fc9a009-a9de-4db2-bad6-428d881e9225"
+    },
+    {
+      "claim_id": "1deedc61-7891-427f-bd33-4692ed42a44f",
+      "result_id": "4fc9a009-a9de-4db2-bad6-428d881e9225"
+    },
+    {
+      "claim_id": "9924b576-f4d8-4597-aecc-a86ba9302543",
+      "result_id": "4fc9a009-a9de-4db2-bad6-428d881e9225"
+    },
+    {
+      "claim_id": "e2c5fec2-a04c-49af-95fd-2b8d38ada018",
+      "result_id": "de024d8d-bd22-4a55-af03-7a00eba14742"
+    },
+    {
+      "claim_id": "a2a4b941-6dd7-4084-b1c5-76cb7567a189",
+      "result_id": "de024d8d-bd22-4a55-af03-7a00eba14742"
+    },
+    {
+      "claim_id": "4b44de30-43cc-4b89-8920-dc3d223e82d8",
+      "result_id": "de024d8d-bd22-4a55-af03-7a00eba14742"
+    },
+    {
+      "claim_id": "f8b1795b-a138-4cfb-9337-7da65e92c1f6",
+      "result_id": "de024d8d-bd22-4a55-af03-7a00eba14742"
+    },
+    {
+      "claim_id": "5dd5c4e6-83b0-47be-b93b-543a77f7ea67",
+      "result_id": "a09d2e6b-7788-4afa-92fb-2860ba4c1ad1"
+    },
+    {
+      "claim_id": "bd80f3fb-582f-462c-b412-100fd6ab8a6c",
+      "result_id": "a09d2e6b-7788-4afa-92fb-2860ba4c1ad1"
+    },
+    {
+      "claim_id": "c7ab346f-e4cd-4822-9118-de4205dd246d",
+      "result_id": "a09d2e6b-7788-4afa-92fb-2860ba4c1ad1"
+    },
+    {
+      "claim_id": "022efd58-537c-464a-ad49-1d6f3fa3b1bb",
+      "result_id": "8bf449a6-5032-4444-ad67-b5d8e7258466"
+    },
+    {
+      "claim_id": "c42a7312-2d32-4ff4-9f77-95857cc31a79",
+      "result_id": "8bf449a6-5032-4444-ad67-b5d8e7258466"
+    },
+    {
+      "claim_id": "e604ad3d-7965-4095-825f-eb4f8986771b",
+      "result_id": "8bf449a6-5032-4444-ad67-b5d8e7258466"
+    },
+    {
+      "claim_id": "c28010a7-304d-4dcb-a19f-61e7b626a4bc",
+      "result_id": "8bf449a6-5032-4444-ad67-b5d8e7258466"
+    },
+    {
+      "claim_id": "3febc242-611c-4efd-9828-c8c5b9f67241",
+      "result_id": "8bf449a6-5032-4444-ad67-b5d8e7258466"
+    },
+    {
+      "claim_id": "73b94159-3fe0-421d-b20e-0879e1043bf8",
+      "result_id": "8bf449a6-5032-4444-ad67-b5d8e7258466"
+    },
+    {
+      "claim_id": "ac0b9b3d-b581-492d-9d24-4c34945bb853",
+      "result_id": "02f908a3-757d-4961-a048-2424db11716e"
+    },
+    {
+      "claim_id": "f3fe2ccb-8e46-4f8e-8948-df8be217e4b5",
+      "result_id": "02f908a3-757d-4961-a048-2424db11716e"
+    },
+    {
+      "claim_id": "765eff68-f06e-46d9-aa88-f46a7fd88a95",
+      "result_id": "02f908a3-757d-4961-a048-2424db11716e"
+    },
+    {
+      "claim_id": "0098a90a-a63b-4638-8c6f-00451df38e75",
+      "result_id": "02f908a3-757d-4961-a048-2424db11716e"
+    },
+    {
+      "claim_id": "dff47723-9ec0-4dbe-8055-e10c1ab175df",
+      "result_id": "02f908a3-757d-4961-a048-2424db11716e"
+    },
+    {
+      "claim_id": "d1f6677b-22cf-4ab2-9282-9fe247a11905",
+      "result_id": "02f908a3-757d-4961-a048-2424db11716e"
+    },
+    {
+      "claim_id": "6cb10f7c-8552-4028-9d46-2c32085c9ce2",
+      "result_id": "02f908a3-757d-4961-a048-2424db11716e"
+    },
+    {
+      "claim_id": "a828f60f-122f-4865-9d7c-66511480116c",
+      "result_id": "1df88767-1075-4a32-8e80-b26fc486b97c"
+    },
+    {
+      "claim_id": "8b54a29e-cda6-409c-b514-e5920df36f87",
+      "result_id": "1df88767-1075-4a32-8e80-b26fc486b97c"
+    },
+    {
+      "claim_id": "7ad5f5b7-9ece-464d-b34e-4886ff1d30f5",
+      "result_id": "1df88767-1075-4a32-8e80-b26fc486b97c"
+    },
+    {
+      "claim_id": "000e8819-b400-4322-95f6-580b1c268bc5",
+      "result_id": "1df88767-1075-4a32-8e80-b26fc486b97c"
+    },
+    {
+      "claim_id": "d06408db-3fc8-4806-af0f-e232d33c5bba",
+      "result_id": "a486cc9a-88b3-44b2-b40c-ff49ba7c3083"
+    },
+    {
+      "claim_id": "7b1e12eb-061a-42da-a4cd-9b638135e7a6",
+      "result_id": "a486cc9a-88b3-44b2-b40c-ff49ba7c3083"
+    },
+    {
+      "claim_id": "bb59c97c-e552-4c18-a7cd-715f0d3a908e",
+      "result_id": "a486cc9a-88b3-44b2-b40c-ff49ba7c3083"
+    },
+    {
+      "claim_id": "62b6199f-8af6-4e61-9dc0-834246f1aa83",
+      "result_id": "b5bee17f-aa70-4232-af90-23b82bddf919"
+    },
+    {
+      "claim_id": "9f4235eb-03fe-46a5-abe4-3fe62a6e9dd3",
+      "result_id": "b5bee17f-aa70-4232-af90-23b82bddf919"
+    },
+    {
+      "claim_id": "72f112a9-d2b2-4845-b9dc-48d098b2f1ac",
+      "result_id": "b5bee17f-aa70-4232-af90-23b82bddf919"
+    },
+    {
+      "claim_id": "83ef151d-77f0-454c-85e6-972d0aafef7c",
+      "result_id": "b5bee17f-aa70-4232-af90-23b82bddf919"
+    },
+    {
+      "claim_id": "11e09f51-e51d-46a9-9036-e71e5867e8c1",
+      "result_id": "b5bee17f-aa70-4232-af90-23b82bddf919"
+    },
+    {
+      "claim_id": "8722ff9f-9b74-4d8f-9aaa-6181b4ad2206",
+      "result_id": "ac49e81b-a7e4-470d-8c43-5a683e7d095c"
+    },
+    {
+      "claim_id": "39ccb720-ee61-411e-abcc-23d43026a121",
+      "result_id": "ac49e81b-a7e4-470d-8c43-5a683e7d095c"
+    },
+    {
+      "claim_id": "ae4b1190-d755-4d1a-bbc1-2bc30c83334b",
+      "result_id": "ac49e81b-a7e4-470d-8c43-5a683e7d095c"
+    },
+    {
+      "claim_id": "3caee863-2e55-43e0-abb5-e450d7309f59",
+      "result_id": "5a14deda-06bc-4508-8f13-1f70ddd10890"
+    },
+    {
+      "claim_id": "01750066-9850-47de-b4ce-a882b5785157",
+      "result_id": "5a14deda-06bc-4508-8f13-1f70ddd10890"
+    },
+    {
+      "claim_id": "4c30fffd-2b73-4a42-8174-8905d409d52f",
+      "result_id": "5a14deda-06bc-4508-8f13-1f70ddd10890"
+    },
+    {
+      "claim_id": "1a251e40-bd89-4241-9a52-fe28a9b96185",
+      "result_id": "5a14deda-06bc-4508-8f13-1f70ddd10890"
+    },
+    {
+      "claim_id": "e4a26f9e-187d-4b65-9d6f-44e07189c4d2",
+      "result_id": "5a14deda-06bc-4508-8f13-1f70ddd10890"
+    },
+    {
+      "claim_id": "aeb7154c-b259-4232-9308-e53f2562e0ce",
+      "result_id": "bb996564-99e6-41c1-938d-d261b5ef44d5"
+    },
+    {
+      "claim_id": "272f5c31-ab86-40a9-8f0b-0e39a49b50b2",
+      "result_id": "bb996564-99e6-41c1-938d-d261b5ef44d5"
+    },
+    {
+      "claim_id": "2c02ab6d-5a40-4d27-9925-445c5009ea94",
+      "result_id": "079dc5f6-cb89-4e0a-99c6-12096e11adab"
+    },
+    {
+      "claim_id": "db0d714a-3f6e-4762-9fdd-30ef2c46a1e0",
+      "result_id": "079dc5f6-cb89-4e0a-99c6-12096e11adab"
+    },
+    {
+      "claim_id": "579a9d12-02e0-44bc-895c-45fea8c578ed",
+      "result_id": "079dc5f6-cb89-4e0a-99c6-12096e11adab"
+    },
+    {
+      "claim_id": "6eaa8ca6-d020-4428-9ff8-753c8c2ccc50",
+      "result_id": "079dc5f6-cb89-4e0a-99c6-12096e11adab"
+    },
+    {
+      "claim_id": "8fe22826-1efb-49f9-a0a5-9ec86be931a0",
+      "result_id": "079dc5f6-cb89-4e0a-99c6-12096e11adab"
+    },
+    {
+      "claim_id": "a9693009-3537-4659-a2fc-ffb40f583c98",
+      "result_id": "079dc5f6-cb89-4e0a-99c6-12096e11adab"
+    },
+    {
+      "claim_id": "45a638f8-95a0-41c5-95db-676ccd6f8360",
+      "result_id": "079dc5f6-cb89-4e0a-99c6-12096e11adab"
+    },
+    {
+      "claim_id": "dc6f1a9e-6cd1-44b2-aa64-f19959a5a9af",
+      "result_id": "2d8b7c5a-0eb3-40fe-a596-89a9a9dbf395"
+    },
+    {
+      "claim_id": "699be923-eb22-4979-b98b-9e32cbccb867",
+      "result_id": "2d8b7c5a-0eb3-40fe-a596-89a9a9dbf395"
+    },
+    {
+      "claim_id": "e391e3ac-14b5-4723-9127-bd75bdd39f7b",
+      "result_id": "2d8b7c5a-0eb3-40fe-a596-89a9a9dbf395"
+    },
+    {
+      "claim_id": "4bae6f77-2c2e-4bbb-bb3d-1b149810e620",
+      "result_id": "2d8b7c5a-0eb3-40fe-a596-89a9a9dbf395"
+    },
+    {
+      "claim_id": "94537f7c-535d-4a91-b8cd-62c082b7a2b4",
+      "result_id": "08dbbede-6b12-4ff6-891f-0f26380d43c3"
+    },
+    {
+      "claim_id": "46b14f59-7e3b-46b7-ae39-966bf3d14c2d",
+      "result_id": "08dbbede-6b12-4ff6-891f-0f26380d43c3"
+    },
+    {
+      "claim_id": "896469a5-1ad5-4d9b-8ae6-3bcc7a52d255",
+      "result_id": "08dbbede-6b12-4ff6-891f-0f26380d43c3"
+    },
+    {
+      "claim_id": "545c76f8-bafd-464a-8010-bf8de7620038",
+      "result_id": "08dbbede-6b12-4ff6-891f-0f26380d43c3"
+    },
+    {
+      "claim_id": "88982087-9a2b-4586-888b-c9edf8c81e8c",
+      "result_id": "7e1b0969-a61b-4664-bf9a-0a35e7f63e69"
+    },
+    {
+      "claim_id": "58d5eff9-9b61-46b0-84d1-20dbca46c893",
+      "result_id": "7e1b0969-a61b-4664-bf9a-0a35e7f63e69"
+    },
+    {
+      "claim_id": "ccc35232-fd1a-496f-bf33-b60910b6297f",
+      "result_id": "2f0cf56c-008a-464b-a67c-bfedb4c7302c"
+    },
+    {
+      "claim_id": "0b89b442-9719-431c-a7b4-619e84ba3d24",
+      "result_id": "2f0cf56c-008a-464b-a67c-bfedb4c7302c"
+    },
+    {
+      "claim_id": "dc21c937-f4a6-44ff-b355-93e7f85188e4",
+      "result_id": "2f0cf56c-008a-464b-a67c-bfedb4c7302c"
+    },
+    {
+      "claim_id": "aefd82e3-76d2-4b91-8526-d4bb02e0119b",
+      "result_id": "2f0cf56c-008a-464b-a67c-bfedb4c7302c"
+    },
+    {
+      "claim_id": "84bed5f8-495f-4ded-bad1-d08e726be505",
+      "result_id": "2f0cf56c-008a-464b-a67c-bfedb4c7302c"
+    },
+    {
+      "claim_id": "816c45ba-ab28-4ad9-9f53-e81a6a9f1267",
+      "result_id": "1a3d966a-8940-4c80-bda3-5f0f1004db77"
+    },
+    {
+      "claim_id": "1a6fe3cb-a11b-4238-8071-06787c7169ca",
+      "result_id": "1a3d966a-8940-4c80-bda3-5f0f1004db77"
+    },
+    {
+      "claim_id": "e9076d4e-961b-4fb9-83a7-eec0669c0e00",
+      "result_id": "1a3d966a-8940-4c80-bda3-5f0f1004db77"
+    },
+    {
+      "claim_id": "fc06bc62-ca64-4a6f-995f-377f10849864",
+      "result_id": "1a3d966a-8940-4c80-bda3-5f0f1004db77"
+    },
+    {
+      "claim_id": "46387a7c-b2d7-4458-adfc-11a4795b6a3d",
+      "result_id": "1a3d966a-8940-4c80-bda3-5f0f1004db77"
+    },
+    {
+      "claim_id": "e904895c-edcc-4137-b400-5d051e9e389a",
+      "result_id": "1a3d966a-8940-4c80-bda3-5f0f1004db77"
+    },
+    {
+      "claim_id": "0d679b77-91b6-4634-a254-a0a739a61e28",
+      "result_id": "3ff5d6c5-eca0-48af-8a06-12513956b3f7"
+    },
+    {
+      "claim_id": "8d2d4feb-c6d8-4c05-a84c-f57ef443363d",
+      "result_id": "3ff5d6c5-eca0-48af-8a06-12513956b3f7"
+    },
+    {
+      "claim_id": "000e8819-b400-4322-95f6-580b1c268bc5",
+      "result_id": "3ff5d6c5-eca0-48af-8a06-12513956b3f7"
+    },
+    {
+      "claim_id": "2279ed7f-fb5b-4d0a-84f3-abf1ae48eb65",
+      "result_id": "f9d86998-c5be-49a0-94a8-a56714e798c9"
+    },
+    {
+      "claim_id": "5e4c2080-ee78-47c1-9fdd-13c93294f8f5",
+      "result_id": "f9d86998-c5be-49a0-94a8-a56714e798c9"
+    },
+    {
+      "claim_id": "67f2d808-ba34-4396-865e-8f75945a669d",
+      "result_id": "f9d86998-c5be-49a0-94a8-a56714e798c9"
+    },
+    {
+      "claim_id": "cda140aa-3a83-4646-8d63-8c84dc070953",
+      "result_id": "f9d86998-c5be-49a0-94a8-a56714e798c9"
+    },
+    {
+      "claim_id": "36766196-3f77-40f2-950b-1f3c697e34b1",
+      "result_id": "f9d86998-c5be-49a0-94a8-a56714e798c9"
+    },
+    {
+      "claim_id": "c2685c61-7767-42aa-86cf-ae801fb1c170",
+      "result_id": "f9d86998-c5be-49a0-94a8-a56714e798c9"
+    },
+    {
+      "claim_id": "9403b6c4-8d2c-4ed1-ac51-6e9ce21a6c3b",
+      "result_id": "f9d86998-c5be-49a0-94a8-a56714e798c9"
+    },
+    {
+      "claim_id": "27be23bf-10f8-4bdf-9c31-2f76ea73980e",
+      "result_id": "71571604-e942-4f42-97cf-6133251c60a1"
+    },
+    {
+      "claim_id": "2853fcdf-0fe8-41f1-8ccb-10397df0ae52",
+      "result_id": "71571604-e942-4f42-97cf-6133251c60a1"
+    },
+    {
+      "claim_id": "bb0f7131-682e-4889-99d4-54bf8efaeeaa",
+      "result_id": "71571604-e942-4f42-97cf-6133251c60a1"
+    },
+    {
+      "claim_id": "90abd241-37ad-442f-a87f-1105302ce958",
+      "result_id": "71571604-e942-4f42-97cf-6133251c60a1"
+    },
+    {
+      "claim_id": "beef3c59-0310-4082-85be-47cbeafae155",
+      "result_id": "71571604-e942-4f42-97cf-6133251c60a1"
+    },
+    {
+      "claim_id": "e2c5fec2-a04c-49af-95fd-2b8d38ada018",
+      "result_id": "b3b750fb-9f4a-4774-9f64-777e33161125"
+    },
+    {
+      "claim_id": "a2a4b941-6dd7-4084-b1c5-76cb7567a189",
+      "result_id": "b3b750fb-9f4a-4774-9f64-777e33161125"
+    },
+    {
+      "claim_id": "4b44de30-43cc-4b89-8920-dc3d223e82d8",
+      "result_id": "b3b750fb-9f4a-4774-9f64-777e33161125"
+    },
+    {
+      "claim_id": "5dd5c4e6-83b0-47be-b93b-543a77f7ea67",
+      "result_id": "09d9f42c-30f2-4bf1-883f-0f117bf697ea"
+    },
+    {
+      "claim_id": "69d8f30e-779c-4d00-9b9b-d5a57c9d0fcd",
+      "result_id": "09d9f42c-30f2-4bf1-883f-0f117bf697ea"
+    },
+    {
+      "claim_id": "022efd58-537c-464a-ad49-1d6f3fa3b1bb",
+      "result_id": "f1fbd815-dce1-4be3-80ee-dede3876fef7"
+    },
+    {
+      "claim_id": "c42a7312-2d32-4ff4-9f77-95857cc31a79",
+      "result_id": "f1fbd815-dce1-4be3-80ee-dede3876fef7"
+    },
+    {
+      "claim_id": "e604ad3d-7965-4095-825f-eb4f8986771b",
+      "result_id": "f1fbd815-dce1-4be3-80ee-dede3876fef7"
+    },
+    {
+      "claim_id": "c28010a7-304d-4dcb-a19f-61e7b626a4bc",
+      "result_id": "f1fbd815-dce1-4be3-80ee-dede3876fef7"
+    },
+    {
+      "claim_id": "115f6554-3d16-46fb-ad9d-0ac2d5efe951",
+      "result_id": "66dd475f-223f-405a-be37-ff9c1a91cb67"
+    },
+    {
+      "claim_id": "335f3515-3e7d-4dd4-b253-8ecd24586619",
+      "result_id": "66dd475f-223f-405a-be37-ff9c1a91cb67"
+    },
+    {
+      "claim_id": "cda39f29-e887-4619-8f17-1b283e7847f1",
+      "result_id": "66dd475f-223f-405a-be37-ff9c1a91cb67"
+    },
+    {
+      "claim_id": "c5729b66-407f-423b-b90b-be600b5c3f86",
+      "result_id": "66dd475f-223f-405a-be37-ff9c1a91cb67"
+    },
+    {
+      "claim_id": "0bd02e7a-890c-432c-af69-039abb2cf35e",
+      "result_id": "66dd475f-223f-405a-be37-ff9c1a91cb67"
+    },
+    {
+      "claim_id": "ac0b9b3d-b581-492d-9d24-4c34945bb853",
+      "result_id": "e11720b5-7425-40c1-abb5-7798211bd37b"
+    },
+    {
+      "claim_id": "765eff68-f06e-46d9-aa88-f46a7fd88a95",
+      "result_id": "e11720b5-7425-40c1-abb5-7798211bd37b"
+    },
+    {
+      "claim_id": "0098a90a-a63b-4638-8c6f-00451df38e75",
+      "result_id": "e11720b5-7425-40c1-abb5-7798211bd37b"
+    },
+    {
+      "claim_id": "dff47723-9ec0-4dbe-8055-e10c1ab175df",
+      "result_id": "e11720b5-7425-40c1-abb5-7798211bd37b"
+    },
+    {
+      "claim_id": "6cb10f7c-8552-4028-9d46-2c32085c9ce2",
+      "result_id": "e11720b5-7425-40c1-abb5-7798211bd37b"
+    },
+    {
+      "claim_id": "8722ff9f-9b74-4d8f-9aaa-6181b4ad2206",
+      "result_id": "36726fff-3438-47ea-889c-a342c2186f9a"
+    },
+    {
+      "claim_id": "39ccb720-ee61-411e-abcc-23d43026a121",
+      "result_id": "36726fff-3438-47ea-889c-a342c2186f9a"
+    },
+    {
+      "claim_id": "ae4b1190-d755-4d1a-bbc1-2bc30c83334b",
+      "result_id": "36726fff-3438-47ea-889c-a342c2186f9a"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "51ec9b0f-6af5-4af9-871a-184dfa4fcd4e",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6c3c24a0-b977-450a-ab90-e6c52715219b",
+      "peer_result_id": "1a3d966a-8940-4c80-bda3-5f0f1004db77",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the radiogenomic integration and WGCNA methodology (C25-C27, C74-C76). OpenEval finds the approach methodologically sound with appropriate cutoff criteria. Peer reviewers (R3) critically question the lack of justification for MM and GS cutoffs, asking how they were determined and their sensitivity. Reviewer 2 also notes inadequate rationale for selecting low-abundance miRNAs. Major disagreement on methodological rigor.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "b6a97dbe-fa2d-4181-b5f9-a0712329fd2d",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "ac49e81b-a7e4-470d-8c43-5a683e7d095c",
+      "peer_result_id": "36726fff-3438-47ea-889c-a342c2186f9a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address study limitations (C67-C69). OpenEval acknowledges these as appropriate self-recognition of limitations that strengthen credibility. Peer reviewers agree these are valid limitations, with concerns aligning with the acknowledged issues about MCP-counter use and lack of cancer-specific EV enrichment. Strong agreement on limitation recognition.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "c2498543-dd46-4ee1-b876-0d01cf39b9d7",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "c4bdaaef-a445-4da6-92ae-0671f332fe7f",
+      "peer_result_id": "f9d86998-c5be-49a0-94a8-a56714e798c9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate diagnostic performance claims (C30-C33, C51-C53). OpenEval finds robust validation with good performance, noting only potential overfitting concerns. Peer reviewers express fundamental doubts about clinical utility, with R3 stating the signature may simply differentiate solid from cystic lesions rather than malignant from benign, and requesting clarity on Figure 4A. Editor notes evidence remains incomplete. Significant disagreement on validity of performance claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "00fa0e7d-4e2a-4429-a86d-4fe27d370662",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "85afb4f9-50de-441a-83cb-99bc7851b441",
+      "peer_result_id": "66dd475f-223f-405a-be37-ff9c1a91cb67",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address cohort descriptions (C15-C19, with R1 also covering C20). OpenEval finds cohort descriptions clear with appropriate PSM methodology. Peer reviewers (R2, R3) find clinical characteristics inadequately described, requesting extensive additional details about adenocarcinoma classification, stage, age, sex distribution, and comorbidities. Disagreement on adequacy of cohort characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "27092fd9-23d6-442f-9ab2-b2e9a031e067",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9ef98565-618e-4c6b-bc5c-0632df70c07a",
+      "peer_result_id": "2f0cf56c-008a-464b-a67c-bfedb4c7302c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate feature selection and radiomics methodology (C21-C24, with peer R1 also covering C20). OpenEval finds the systematic pipeline well-documented with robust validation. Peer reviewer R3 identifies a fundamental design flaw, stating CT features likely differentiate solid from cystic lesions since benign controls were predominantly IPMNs, calling the design 'flawed' and requesting additional controls and external validation. Major disagreement on study design validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "0f31a9f9-e02c-49ce-9bc6-d46642887b70",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "de024d8d-bd22-4a55-af03-7a00eba14742",
+      "peer_result_id": "b3b750fb-9f4a-4774-9f64-777e33161125",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate immune profiling claims (C39-C40, C65). OpenEval rates as UNCERTAIN, acknowledging MCP-counter limitations for blood samples and that immunotherapy inferences are speculative. Peer reviewers rate as UNSUPPORTED, with R3 finding subtype analysis unconvincing and noting univariate analysis is insufficient for clinical relevance claims. Agreement that evidence is inadequate, with peer review more critical.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "1d2ec008-c4e8-4866-a7fb-acfcdce3ba87",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "4fc9a009-a9de-4db2-bad6-428d881e9225",
+      "peer_result_id": "71571604-e942-4f42-97cf-6133251c60a1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate molecular subtyping claims (C34-C38, with OpenEval also covering C78-C79). OpenEval finds the approach biologically-informed with significant survival differences and appropriate methodology. Peer reviewer R3 explicitly states the subtype results are 'not convincing,' noting univariate analysis is insufficient and that lack of multivariable analysis means authors cannot claim clinically relevant subtypes. Strong disagreement on subtype validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "ef6b2f19-ebe2-43ad-9a7b-31e6f62b93ab",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "02f908a3-757d-4961-a048-2424db11716e",
+      "peer_result_id": "e11720b5-7425-40c1-abb5-7798211bd37b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate novelty and clinical promise claims (C45, C88-C91, C94). OpenEval finds the radiomics-EV miRNA integration methodologically innovative and well-documented, though notes C94's clinical promise is aspirational. Peer reviewers rate as UNSUPPORTED, with editor stating evidence is incomplete, R3 identifying fundamental design flaws, and R2 calling the design flawed, making broad clinical claims premature. Major disagreement on novelty and clinical utility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "7982f222-501d-4925-aebd-72b67b6676b7",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "46a754de-102a-4535-9731-3c284032c213",
+      "peer_result_id": "3ff5d6c5-eca0-48af-8a06-12513956b3f7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate experimental validation of miRNAs (C28-C29, with peer R3 also covering C50). OpenEval finds validation demonstrates statistical significance and biological relevance across serum and tissue. Peer reviewers request more details about validation datasets (cancer types, stages, demographics, control composition), with R2 noting inadequate clinical characteristics make findings unconvincing. Disagreement on adequacy of validation documentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "6a09194e-60f8-4f8a-bb6e-a8c1c8e8cd7e",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "8bf449a6-5032-4444-ad67-b5d8e7258466",
+      "peer_result_id": "f1fbd815-dce1-4be3-80ee-dede3876fef7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate pathway enrichment analysis (C42-C44, C66). OpenEval finds the GSEA methodology standard and appropriate with clear presentation. Peer reviewers rate as UNSUPPORTED because the pathway analyses are downstream of unconvincing subtype classification, with R3's critique about insufficient multivariable analysis applying to all functional characterization. Disagreement stems from different assessments of upstream subtyping validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "cc3b93e1-88f7-49e5-8369-cba5d3d81d4e",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a09d2e6b-7788-4afa-92fb-2860ba4c1ad1",
+      "peer_result_id": "09d9f42c-30f2-4bf1-883f-0f117bf697ea",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate drug sensitivity predictions (C41, with OpenEval also covering C81-C82 and peer R7 covering C93). OpenEval rates as UNCERTAIN, noting these are in silico predictions without experimental validation, appropriate for hypothesis generation but insufficient for clinical recommendations. Peer reviewers rate as UNSUPPORTED, emphasizing predictions are based on unconvincing subtype classification and lack clinical validation. Agreement that evidence is inadequate for clinical claims, with peer review more critical.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "e51c0a52-b24d-49a7-bf85-36d599c8fb6a",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "1df88767-1075-4a32-8e80-b26fc486b97c",
+      "peer_result_id": "3ff5d6c5-eca0-48af-8a06-12513956b3f7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R11 addresses biological rationale for low-abundance miRNAs (C46, C48-C50) and finds it well-supported, though notes a textual error in C50. Peer R3 addresses validation details for the same miRNAs (C28-C29, C50), requesting more information about sample characteristics. Limited overlap in focus, but both touch on validation aspects of the identified miRNAs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "744f9b23-a6aa-4244-98bc-350e6cfbe0ed",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "a486cc9a-88b3-44b2-b40c-ff49ba7c3083",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates contextualization relative to prior work (C54-C56), finding appropriate comparisons with proper citations. No corresponding peer review evaluation found for these specific claims about literature comparison.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "6d7686cb-82eb-49ae-9785-0fcef558b4d8",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "b5bee17f-aa70-4232-af90-23b82bddf919",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature context for the three identified miRNAs (C58-C62), finding comprehensive support with appropriate citations demonstrating biological plausibility. No corresponding peer review evaluation found for these specific literature contextualization claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "34451951-9e39-45ed-8f02-8951bca65ebe",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "5a14deda-06bc-4508-8f13-1f70ddd10890",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates imaging acquisition and preprocessing protocols (C70-C73, C85), finding them appropriate for radiomics analysis with proper standardization. No corresponding peer review evaluation found for these specific technical imaging methodology claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "b2e2ee20-de5b-49c9-be81-2c8d4edae1bc",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "bb996564-99e6-41c1-938d-d261b5ef44d5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates statistical methods for survival analysis (C86-C87), finding them appropriate though noting lack of detail about multivariable model variables. No corresponding peer review evaluation found, though peer concerns about multivariable analysis in R5 are related.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "3750f48a-a388-40a1-96bd-d6f4af1de1d8",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "079dc5f6-cb89-4e0a-99c6-12096e11adab",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background information about pancreatic cancer (C1-C6, C47), finding well-established context with appropriate citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "f93fe559-d2e4-4b37-9d4d-bef42c386806",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "2d8b7c5a-0eb3-40fe-a596-89a9a9dbf395",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background on miRNA biology and EV function (C7-C10), finding accurate context with appropriate citations. No corresponding peer review evaluation found for these biological background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "9fefd7a2-8863-48cf-8430-4dda0246a75f",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "08dbbede-6b12-4ff6-891f-0f26380d43c3",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological precedents (C11-C14), finding relevant citations that support the study's approach. No corresponding peer review evaluation found for these methodological precedent claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    },
+    {
+      "id": "bd6c6797-13a2-4feb-8e20-bddd6e24993e",
+      "submission_id": "31306088-eec1-4e04-8408-43f0fd491e41",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "7e1b0969-a61b-4664-bf9a-0a35e7f63e69",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates treatment limitation context (C63-C64), finding accurate description with appropriate citation, though noting the 2018 citation may not reflect current treatment landscape. No corresponding peer review evaluation found for these treatment context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:26:46.841857Z"
+    }
+  ]
+}

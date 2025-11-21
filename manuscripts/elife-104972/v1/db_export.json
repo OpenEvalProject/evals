@@ -1,0 +1,2644 @@
+{
+  "submission": {
+    "id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:32:14.959594Z",
+    "updated_at": "2025-11-21T16:32:14.959594Z"
+  },
+  "content": [
+    {
+      "id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "content_type": "manuscript",
+      "content_text": "# A stochastic explanation for observed local-to-global foraging states in Caenorhabditis elegans\n\n## Authors\n\n- Andrew Margolis<sup>1</sup> ([ORCID: 0009-0006-9817-7147](https://orcid.org/0009-0006-9817-7147))\n- Andrew Gordus<sup>1</sup> ([ORCID: 0000-0002-5550-0286](https://orcid.org/0000-0002-5550-0286)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n2. David Geffen School of Medicine, University of California Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))\n3. Solomon H. Snyder Department of Neuroscience, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAbrupt changes in behavior can often be associated with changes in underlying behavioral states. When placed off food, the foraging behavior of C. elegans can be described as a change between an initial local-search behavior characterized by a high rate of reorientations, followed by a global-search behavior characterized by sparse reorientations. This is commonly observed in individual worms, but when numerous worms are characterized, only about half appear to exhibit this behavior. We propose an alternative model that predicts both abrupt and continuous changes to reorientation that do not rely on behavioral states. This model is inspired by molecular dynamics modeling that defines the foraging reorientation rate as a decaying parameter. By stochastically sampling from the time interval probability distribution defined by this rate, both abrupt and gradual changes to reorientation rates can occur, matching experimentally observed results. Crucially, this model does not depend on behavioral states or information accumulation. Even though abrupt behavioral changes do occur, they are not necessarily indicative of abrupt changes in behavioral states, especially when abrupt changes are not universally observed in the population.\n\n## Introduction\n\nThe search for food in the absence of informative sensory cues is an essential animal behavior (Reiss and Rankin, 2021). A foraging strategy that is observed in nearly all animals is the Area Restricted Search (ARS) (Dorfman et al., 2022). In ARS, animals randomly forage for food (Codling et al., 2008), but appetitive sensory cues (like an encounter with food) will cause the animal to restrict their search area by reorienting more frequently, thus increasing the likelihood of food encounters. Conversely, when removed from food, animals will decrease their reorientation rate to increase dispersal (Reiss and Rankin, 2021; Klein et al., 2017). Caenorhabditis elegans and Drosophila melanogaster larvae appear to progressively increase their diffusion constant while foraging off of food by decreasing their rates of reorientation (Klein et al., 2017). However, in separate studies (L\u00f3pez-Cruz et al., 2019; Calhoun et al., 2014), individual worms appear to make an abrupt change from a high to low rate of reorientation. This behavior has been described as a switch from a local to global search strategy that relies on evidence accumulation to trigger the behavioral switch (Calhoun et al., 2014).\n\nA central challenge with defining these possible state transitions is the stochastic nature of the behavior itself. Reorientations are random and follow Poisson statistics (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009). This is very similar to the temporal behavior of individual molecules in solution (Singh et al., 2022). Individual molecules defined by the same reaction kinetics can stochastically produce long or short time intervals between reaction events, not because one molecule is inherently faster than the other, but because they are stochastically sampling from the same probability distribution. The diversity of times between individual worm reorientations is very similar to this. The exponentially decaying reorientation rate emerges from the average of trajectories that do not necessarily conform to this curve individually. However, even those that produce abrupt switches in reorientation rates could still emerge from a simple exponential decay strategy. Since reorientations occur stochastically, the abrupt changes in reorientation rates could simply be the result of stochastic sampling of an underlying decay phenomenon (Srivastava et al., 2009). Here, we show that a simple, stochastic model that does not rely on switches in behavioral state is sufficient to reproduce the reorientation kinetics observed in experimental data.\n\n## Results\n\n### Local-to-global behavioral transitions are inconsistently observed\n\nIn L\u00f3pez-Cruz et al., 2019, the foraging behaviors of individual worms were tracked for 45 min after being removed from food. As observed previously (Klein et al., 2017), the reorientation rate from this study followed an exponential decay (Figure 1a). It was reported that roughly half the worms appeared to make a sudden single switch from local to global search as observed in Calhoun et al., 2014, however, the other half appeared to produce no discernible change in search strategy or exhibited multiple switches (Figure 1b\u2013d). Whether or not a worm performed a single decision was defined in L\u00f3pez-Cruz et al., 2019 by fitting individual reorientation data to two lines using the MATLAB function findchangepts (Figure 1b; Killick et al., 2012). This function divides each trace into two regions that are defined by minimizing the sum of the residual squared error of two local linear regressions. The location of the transition point is varied until the total residual error attains a minimum (Figure 1b). A large change in slope indicates a sudden change in reorientation rate, and the intersection between the two lines determines the decision time (L\u00f3pez-Cruz et al., 2019; Figure 1b). A worm was identified as making a sudden local-to-global foraging switch based on visually assessing the magnitude of the slope difference, therefore, the conclusion that 50% of the worms produced a single transition is fairly subjective. To evaluate this property more objectively, we assessed the distributions of slope differences (s1-s2) and transition times to see whether two densities were clearly distinguishable. The resulting distributions for the experimental data were continuous, with no clear boundary between deciders and non-deciders (Figure 1e).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104972/elife-104972-fig1-v1.jpg)\n\n**Figure 1.:** (a) Average experimental population reorientation rate (black line) in a rolling 2 min window. Blue bins represent probability of observed reorientation rate. (b) Abrupt transitions were identified by performing two linear regressions on observed reorientation curves. Transition times (trans) were defined by the intersection of the regressions (dashed line). The slopes of the two regressions are s1 and s2. (c) An example of an experimental reorientation curve with an abrupt reorientation transition (marked by vertical line). (d) An example of an experimental reorientation curve that lacked an abrupt reorientation transition. (e) Distribution of slope differences and transition times from regressions fit to the experimental data. Individual data points are individual reorientation data for each worm. Insets are individual examples of experimental cumulative reorientation curves. Number of worms (N)=1631. Dashed line represents the median slope difference. All data curated from L\u00f3pez-Cruz et al., 2019.\n\nWhy do some worms appear to make a decision, while others do not? In aggregate, the reorientation rate decays (Figure 1a). Despite the population average conforming to a gradual decay, individual trajectories produce a wide diversity of trajectories which sometimes conform to an apparent drop in reorientation rate (Figure 1c), while others do not (Figure 1d). If the worms are executing a decision, this would seem to indicate only a fraction of the worms decide to switch from local to global foraging strategies, while others use a different strategy. An alternative hypothesis is that sudden changes in reorientation are random events that do not occur due to an underlying change in strategy, but because of the inherently random nature of the behavior itself (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009).\n\n### A stochastic model generates abrupt and gradual changes in search strategy\n\nWe tested this hypothesis by modeling individual worms by stochastic sampling of a decaying reorientation rate with the Gillespie algorithm (Figure 2a), a common strategy used to model the kinetics of individual molecules (Gillespie, 1977). With this strategy, the time between chemical events is modeled by randomly sampling from the time-interval distributions defined by the reaction rates. Although the algorithm was originally developed to model discrete molecular events based on known kinetic parameters, it can be used to generate time trajectories for any discrete events when the kinetics are known. A behavioral example of this is the Lotka-Volterra predator-prey competition model where predator and prey populations fluctuate out of phase due to predation. Stochastic fluctuations of predator and prey populations can be modeled using the Gillespie algorithm (Palombi et al., 2020; Reichenbach et al., 2006; Constable and McKane, 2015).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104972/elife-104972-fig2-v1.jpg)\n\n**Figure 2.:** (a) Outline of the Gillespie algorithm. Step 1: Two random numbers (r1 and r2) are drawn from a uniform distribution [0,1]. Step 2: The time interval for a new event (\u03c4) is randomly assigned based on the total propensities (a0) and r1. Step 3: The event i (either a decay of M (M\u2190M-1) or a new reorientation (\u03a9\u2190\u03a9+1)) at t + \u03c4 is determined by the probability (P(i)) of the event i occurring. This probability is determined by the relative propensity (ai/a0) of the event i. (b) (Top) The parameters \u03b1, \u03b2, and \u03b3 are assigned based on fitting a decay curve (red) to the observed average reorientation rate (blue). Dashed lines are + and \u2013 standard deviation. (Bottom) Average model population reorientation rate (black line) in a rolling 2 min window. Red bins represent the probability of observed reorientation rate. N=1631, \u03b1=1.49 min\u20131, \u03b2=0.1937 min\u20131, \u03b3=0.11 min\u20131. (c) (Top) An example of a modeled abrupt reorientation transition. (Bottom) An example of a modeled reorientation curve that lacked an abrupt reorientation transition. Red data are cumulative reorientations and orange data are M. (d) Distribution of slope differences and transition times from regressions fit to the experimental (blue) and modeled (red) data. Individual data points are individual reorientation data for experimental (blue) or in silico (red) worms. Insets are individual examples of experimental and modeled cumulative reorientation curves. Dashed line represents the median experimental slope difference. (e) Examples of experimental (blue) and modeled (red) cumulative reorientation curves for individual worms, with similar stochastic dynamics. For each example drawn from experiments (blue), the in silico worm with the highest correlation from N=1631 iterations is shown (red). Sudden changes in rate are indicated with arrows. M for each example is shown in orange. (f) Examples of modeled data when the reorientation rate is constant ($\\alpha$=1.5). Sudden changes in rate are indicated with arrows.\n\nExperimentally, reorientation rate is measured as the number of reorientation events that occurred in an observational window. However, these are discrete stochastic events, so we can describe them in terms of propensity, i.e., the probability of observing a transitional event in an infinitesimal time interval dt (in this case, a reorientation) is:\n\n$$\n\\frac{dP(\u03a9+1,t)}{dt}=a_{1}P(\u03a9,t)\n$$\n\nHere, \u03a9 is cumulative reorientation number,  P(\u03a9 + 1, t) is the probability of observing \u03a9 + 1 cumulative reorientations at time t (i.e. the probability of observing the number of reorientations advance from \u03a9 to \u03a9 + 1), and a1 is the propensity for this event to occur, i.e., the likelihood that a particular reaction will occur in the next infinitesimal time interval. In bulk chemical kinetics, this is analogous to the rate of the reaction. Observationally, the frequency of reorientations observed decays over time. This means that the propensity is not constant, so we can define the propensity as decaying in time:\n\n$$\na_{1}=\\alphae^{\u2212\\gammat}+\\beta\n$$\n\nWhere \u03b1 + \u03b2 is the initial propensity at t=0, and \u03b2 is the propensity at t = \u221e.\n\nThe propensities for the Gillespie algorithm are state-dependent; the algorithm is modeling discrete events based on the current state of the system. A time-varying propensity implies it is coupled to a state variable that is changing in time. Since the propensity a1 decays exponentially, it implies it is coupled to a first-order decay process. We can model this decay as the reorientation propensity coupled to a decaying factor (M):\n\n$$\n\\frac{dP(M\u22121,t)}{dt}=a_{2}P(M,t)\n$$\n\nWhere the propensity of this event (a2) is a first-order decay:\n\n$$\na_{2}=\u2212\\gammaM\n$$\n\nSince M is a first-order decay process, when integrated, the M observed at time t is:\n\n$$\nM(t)=M(0)e^{\u2212\\gammat}\n$$\n\nWe can couple the probability of observing a reorientation to this decay by redefining a1 as:\n\n$$\na_{1}=\\frac{\\alpha}{M_{0}}M+\\beta\n$$\n\nIn this way, the propensity a1 is explicitly tied to the state M, which is decaying, so that now:\n\n$$\n\\frac{dP(\u03a9+1,t)}{dt}=(\\alphae^{\u2212\\gammat}+\\beta)P(\u03a9,t)\n$$\n\nA critical detail should be noted. While reorientations are modeled as discrete events, the amount of M at time t=0 is chosen to be large (M0 \u2190 1,000), so that over the timescale of 40 minutes, the decay in M is practically continuous. This ensures that sudden changes in reorientation rate are not due to sudden changes in M, but due to the inherent stochasticity of reorientations.\n\nTo model both processes, we can create the master equation:\n\n$$\n\\frac{dP(\u03a9,M,t)}{dt}=a_{1}P(\u03a9\u22121,M,t)\u2212a_{1}P(\u03a9,M,t)+a_{2}P(\u03a9,M+1,t)\u2212a_{2}P(\u03a9,M,t)\n$$\n\nSince these are both Poisson processes, the probability density function for a state change i (\u03a9+1: i=1, M-1: i=2) occurring at time t is:\n\n$$\nP(t|a_{i})=a_{i}e^{\u2212a_{i}t}\n$$\n\nThe probability that a state change will not occur for propensity ai in time interval \u03c4 is:\n\n$$\nP(t>\\tau|a_{i})=\\int_{\\tau}^{\u221e}P(t|a_{i})dt=e^{\u2212a_{i}\\tau}\n$$\n\nThe probability that no state changes will occur for ALL propensities in this time interval is:\n\n$$\nP(t>\\tau|a_{1})P(t>\\tau|a_{2})=\\prodie^{\u2212a_{i}\\tau}=exp[\u2212\\tau\\sumia_{i}]\n$$\n\nWe can draw a random number (r1 \u2208 [0,1]) that represents the probability of no events in time interval \u03c4, so that this time interval can be assigned by rearranging Equation 11:\n\n$$\n\\tau\u2190\\frac{\u2212ln(r_{1})}{a_{0}}\n$$\n\nwhere:\n\n$$\na_{0}=\\sumia_{i}\n$$\n\nThis is the time interval for any event (\u03a9+1 or M-1) happening at t + \u03c4. The probability of which event occurs is proportional to its propensity:\n\n$$\nP(eventi)=\\frac{a_{i}}{a_{0}}\n$$\n\nWe can draw a second number (r2 \u2208 [0,1]) that represents this probability, so that which event occurs at time t + \u03c4 is determined by the smallest n that satisfies:\n\n$$\nr_{2}\u22c5a_{0}\\leq\\sumi=1na_{i}\n$$\n\nso that:\n\n$$\neventi\u2190min{n|r_{2}\u22c5a_{0}\\leq\\sumi=1na_{i}}\n$$\n\nFor example, if the propensity a1 is 10% of a0 at time t, then there is a 10% chance that the resulting reaction will occur at time t. The elegant efficiency of the Gillespie algorithm is twofold. First, it models all transitions simultaneously, not separately. Second, it provides floating-point time resolution. Rather than drawing a random number, and using a cumulative probability distribution of interval times to decide whether an event occurs at discrete steps in time, the Gillespie algorithm uses this distribution to draw the interval time itself. The time resolution of the prior approach is limited by step size, whereas the Gillespie algorithm\u2019s time resolution is limited by the floating-point precision of the random number that is drawn.\n\nIn this way, the Gillespie algorithm enables the simultaneous modeling of numerous reactions in parallel with machine-precision time resolution. To ensure the reorientation rate itself is a smooth decay, a large value of M is used to approximate a continuous function. The underlying assumptions are:\n\nIn our approach, we fit the exponential curve in Equation 2 to the average reorientation rate from the experimental data from L\u00f3pez-Cruz (L\u00f3pez-Cruz et al., 2019; Figure 2b), and then used these parameters (\u03b1, \u03b2, \u03b3) to model 1631 individual worms (the same number of animals in the experimental data). Even though the initial average rates of reorientation are ~1.5 events/minute, there is considerable variance in observed initial rates (Figure 1a). To address this variance, starting values of M were assigned based on randomly drawing a rate from the observed experimental rates at t=0, and adjusting M so that the starting rate for that in silico worm j matched the initial rate of the randomly drawn experimental worm:\n\n$$\nM_{j}\u2190\\frac{M_{0}(r\u2212\\beta)}{\\alpha}\n$$\n\nwhere r is an initial rate randomly drawn from the experimental data.\n\nIn silico reorientation curves generated produced single-transition and multi/absent transition curves, as observed experimentally (Figure 2c). When plotted along with the experimental data, the in silico data produced a distribution of linear regression parameters comparable to the experimental worms (Figure 2d). The simulation was able to produce individual trajectories that demonstrated switching behavior, despite the lack of a switching mechanism in the model (Equations 2 and 3). Furthermore, our model demonstrated a continuum of switching to non-switching behavior that was observed in experimental results (Figure 2d).\n\nThe experimental transition distribution was shifted slightly earlier, however, it is important to note that the experimental data were drawn from experiments where 10\u201315 animals were tracked together. Collisions occurred, but were excluded from analysis, and so would not contribute to this observation. However, in addition to collisions, animals also reorient in response to pheromones when they cross the tracks left by other animals, which is more likely early in the recording when the animals are in close proximity (Hong et al., 2017; Dal Bello et al., 2021). This, in turn, may contribute to a higher initial rate early in the experimental observations, which would delay the observed decay in reorientations. Since this dataset does not have information about when and where worms crossed pheromone tracks from other animals, this effect cannot be excluded.\n\nThis exception aside, modeling worm foraging behavior with a simple exponential decay of reorientations was sufficient to capture most experimentally observed dynamics, both switch and non-switch-like. Sudden switches between fast and slow reorientation rates were observed in both the experimental and modeled data (Figure 2e), despite the model not relying on a switch strategy, and the decay in M being continuous. Sometimes the experimental data produced switch-like behavior (Figure 2e, upper left panel), while other times the reorientation rate appeared to be constant (Figure 2e, lower right panel). The stochastic model produced reorientation data with similar dynamics, despite not relying on a decision paradigm.\n\nIt is important to emphasize that the model was not explicitly designed to match the sudden changes in reorientation rates observed in the experimental data. Kinetic parameters were simply chosen to match the average population behavior. Sudden changes in reorientation rate were not due to sudden changes in the underlying model; stochastic behavior naturally produces sudden bunching of random events. Even if the reorientation rate is set to a constant value, stochastic sampling will still produce sudden changes in rate, even though the rate has no time-dependence (Figure 2f).\n\n### Discrete changes in M are inconsistent with experimental data\n\nA large initial value for M0 (M0=1000) was initially chosen to ensure a smooth change in reorientation rate, so that sudden changes in reorientation number were not necessarily due to sudden changes in M. To test how sensitive the model was to stochastic changes in M, the initial value of M was tested at M0=1000, 100, 10, or 1. On average, all values of M0 were sufficient to reproduce the average reorientation decay observed in experimental data (Figure 3a). The distributions of transition times and slope differences were also comparable for M0=1000, 100, or 10, indicating that the model is not particularly sensitive to initial values of M0.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104972/elife-104972-fig3-v1.jpg)\n\n**Figure 3.:** (a) Average reorientation rates for experiments (blue), and models where M0=1000 (red), M0=100 (plum), M0=10 (magenta), or M0=1 (cyan). Dashed lines indicate standard deviation. (b) Distribution of slope differences and transition times from regressions fit to the experimental data (blue), and models where M0=1000 (red), M0=100 (plum), M0=10 (magenta), or M0=1 (cyan). Number of worms for both experiment and models (N)=1631. Dashed line represents the median slope difference for the experimental data. (c) The Jensen-Shannon divergence between the experimental distribution for slope difference and transition time in (b), and the distributions generated from models where M0=1,000 (red), M0=100 (plum), M0=10 (magenta), or M0=1 (cyan). Twenty distributions were generated for each M0 model. Quartiles represented by box and whiskers. P-values calculated using Tukey\u2019s range test: <0.001: ***.\n\nHowever, despite producing a similar average decay in reorientation rates, the distribution of slope differences was distinctly bimodal for M0=1 (Figure 3b). This was not surprising, since when M0=1, the model is by definition a two-state system. Either the worm has a reorientation rate of \u03b1+\u03b2 (M=1), or a reorientation rate of \u03b2 (M=0). The probability of switching from M=1 to M=0 increases with a timescale of \u03b3 (\u03b3=0.11 min\u20131). The bimodal slope and transition time distributions for M0=1 were distinctly different from those observed for the experimental or M0=1000, 100, 10 models.\n\nSince the slope and transition time distributions were generated from a recursive algorithm rather than a purely analytical model, the model distribution for these metrics was compared to the experimental distribution using the Jensen-Shannon divergence (JSD):\n\n$$\nJSD(P||Q)=\\frac{1}{2}D(P||M)+\\frac{1}{2}D(Q||M)\n$$\n\nwhere D is the Kullback-Leibler divergence:\n\n$$\nD(P\u2016Q)=\\sumxP(x)ln\u2061(\\frac{P(x)}{Q(x)})\n$$\n\nand P(x) and Q(x) are the two probability distributions being compared. M(x) is a mixture distribution of P and Q. This metric provides a useful, parameter-free measure for comparing distributions using mutual information. A short distance between two distributions indicates they are more similar than two distributions separated by a longer distance.\n\nTo compare how similar the different models (M0=1000, 100, 10, 1) compared to the experimental distribution of transition times and slope differences, we ran the model twenty times for each M0, and calculated the JSD between the model and experimental distributions (Figure 3c). The non-binary models (M0\u2260 1) all produced comparable distances, but the binary models (M0=1) were significantly more distant than the rest, indicating this model was more dissimilar than the others when compared to the experimental data. A continuous decline in reorientation rate is more consistent with experimental observations than a discrete change in reorientation rate.\n\n## Discussion\n\nThe lack of a decision simplifies the dispersal strategy for C. elegans. Rather than relying on the accumulation of evidence to make a discrete decision, the worm relies on a decaying signal in the absence of food that drives the reorientation rate. This strategy increases the diffusion constant of the worm, and ensures a more efficient search strategy to find food (Klein et al., 2017). The stochastic nature of this search is consistent with prior characterizations of worm behavior and neuronal dynamics (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009), and implies that any individual worm would exhibit all the variability of the population if allowed to perform this task multiple times. We consider this to be a null model: simple stochastic models should be sufficient to explain observable stochastic behaviors.\n\nThe decay in M can be considered the memory timescale of the last food encounter. With an observed \u03b3 of 0.07 min\u20131, this would mean a memory \u03c41/2 of ~10 min. In principle, M should rise in the presence of food to increase the reorientation rate, on a timescale that is not addressed here. In L\u00f3pez-Cruz et al., 2019, the starting reorientation rate correlated with food density prior to food removal, which would be consistent with the amplitude of M correlating with food density/quality. The reliance of the reorientation rate while foraging for food on a decaying factor (M) implies that the rate is influenced by a signaling factor which decays in time. It is well established that the reorientation rate is influenced by numerous signaling factors and is the basis of the biased random walk that drives taxis in shallow gradients (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009).\n\nA decay in reorientation rate, rather than a sudden change, is consistent with observations made by L\u00f3pez-Cruz et al., 2019. They found that the neurons AIA and ADE redundantly suppress reorientations, and that silencing either one was sufficient to restore the large number of reorientations during early foraging. This implies that the timescale of the variable M may represent the timescales of AIA and ADE activities. AIA and ADE synapse onto several neurons that drive reorientations (L\u00f3pez-Cruz et al., 2019; Gray et al., 2005), and their output was inhibited over long timescales (tens of minutes) by presynaptic glutamate binding to MGL-1, a slow G-protein coupled receptor expressed in AIA and ADE. Their results support a model where sensory neurons suppress the synaptic output of AIA and ADE, which in turn leads to a large number of reorientations early in foraging. As time passes, glutamatergic input from the sensory neurons decreases, which leads to disinhibition of AIA and ADE and a subsequent suppression of reorientations.\n\nThe sensory inputs into AIA and ADE are sequestered into two separate circuits, with AIA receiving chemosensory input and ADE receiving mechanosensory input. Since the suppression of either AIA or ADE is sufficient to increase reorientations, the decay in reorientations is likely due to the suppression of both of these neurons decaying in time. This correlates with an observed decrease in sensory neuron activity as well, so the timescale of reorientation decay could be tied to the timescale of sensory neuron activity, which in turn is influencing the timescale of AIA/ADE reorientation suppression. This implies that our factor \u2018M\u2019 is likely the sum of several different sensory inputs decaying in time.\n\nThe molecular basis of which sensory neuron signaling factors contribute to decreased AIA and ADE activity is made more complicated by the observation that the glutamatergic input provided by the sensory neurons was not essential, and that additional factors besides glutamate contribute to the signaling to AIA and ADE. In addition to this, it is not simply the sensory neuron activity that decays in time, but also the sensitivity of AIA and ADE to sensory neuron input that decays in time. Simply depolarizing sensory neurons after the animals had starved for 30 min was insufficient to rescue the reorientation rates observed earlier in the foraging assay. This observation could be due to decreased presynaptic vesicle release and/or decreased receptor localization on the postsynaptic side.\n\nIn summary, there are two neuronal properties that appear to be decaying in time. One is sensory neuron activity, and the other is decreased potentiation of presynaptic input onto AIA and ADE. Our factor \u2018M\u2019 is a phenomenological manifestation of these numerous decaying factors. Altered ionotropic glutamate signaling and dopamine release also influence foraging kinetics (Hills et al., 2004), as well as neuropeptides (Campbell et al., 2016). The signaling factor M could be the result of one or all of these factors decaying in time. Further work will be needed to reveal how the kinetics of reorientations emerge explicitly from these underlying signaling kinetics.\n",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Douglas Portman, University of Rochester United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104972.4.sa0](https://doi.org/10.7554/eLife.104972.4.sa0)\n\nThis valuable paper uses a quantitative modeling approach to explore a well-studied transition in motor behavior in the nematode C. elegans. The authors provide convincing evidence that this transition, which has been interpreted as a two-state behavior, can instead be described as a process whose parameters are smoothly modulated within a single state. This finding provides insight into the relationships between latent internal states and observable behavioral states, and suggests that relatively simple neuronal mechanisms can drive behavioral sequences that appear more complex.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104972.4.sa1](https://doi.org/10.7554/eLife.104972.4.sa1)\n\nThis paper concerns mechanisms of foraging behavior in C. elegans. Upon removal from food, C. elegans first executes a stereotypical local search behavior in which it explores a small area by executing many random, undirected reversals and turns called \"reorientations.\" If the worm fails to \ufb01nd food, it transitions to a global search in which it explores larger areas by suppressing reorientations and executing long forward runs (Hills et al., 2004). At the population level, reorientation rate declines gradually. Nevertheless, about 50% of individual worms appear to exhibit an abrupt transition between local and global search, which is evident as a discrete transition from high to low reorientation rate (Lopez-Cruz et al., 2019). This observation has given rise to the hypothesis that local and global search correspond to separate internal states with the possibility of sudden transitions between them (Calhoun et al., 2014). The objective of the paper is to demonstrate that is not necessary to posit distinct internal states to account for discrete transitions from high to low reorientation rate. On the contrary, discrete transitions can occur simply because of the stochastic nature of the reorientation behavior itself.\n\nMajor strengths and weaknesses of the methods and results\n\nThe model was not explicitly designed to match the sudden, stable changes in reorientation rates observed in the experimental data from individual worms. Kinetic parameters were simply chosen to match the average population behavior. Nevertheless, many sudden stable changes in reorientation rates occurred. This is a strong argument that apparent state changes can arise as an epiphenomenon of stochastic processes.\n\nThe new stochastic model is more parsimonious than reorientation-state change model because it posits one state rather than two.\n\nA prominent feature of the empirical data is that 50% of the worms exhibit a single (apparent) state change and the rest show either no state changes or multiple state changes. Does the model reproduce these proportions? This obvious question was not addressed.\n\nThere is no obvious candidate for the neuronal basis of the decaying factor M. The authors speculate that decreasing sensory neuron activity might be the correlate of M but then provide contradictory evidence that seems to undermine that hypothesis. The absence of a plausible neuronal correlate of M weakens the case for the model.\n\nAppraisal of whether the authors achieved their aims, and whether the results support their conclusions\n\nThe authors have made a convincing case that is not necessary to posit distinct internal states to account for discrete transitions from high to low reorientation rate. On the contrary, discrete transitions can occur simply because of the stochastic nature of the reorientation behavior itself.\n\nImpact of the work on the field, and the utility of the methods and data to the community\n\nPosting hidden internal states to explain behavioral sequences is gaining acceptance in behavioral neuroscience. The likely impact of the paper is to establish a compelling example of how statistical reasoning can reduce the number of hidden states to achieve models that are more parsimonious.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104972.4.sa2](https://doi.org/10.7554/eLife.104972.4.sa2)\n\nSummary:\n\nIn this study, the authors build a statistical model that stochastically samples from a time-interval distribution of reorientation rates. The form of the distribution is extracted from a large array of behavioral data, is then used to describe not only the dynamics of individual worms (including the inter-individual variability in behavior), but also the aggregate population behavior. The authors note that the model does not require any assumptions about behavioral state transitions, or evidence accumulation, as has been done previously, but rather that the stochastic nature of behavior is \"simply the product of stochastic sampling from an exponential function\".\n\nStrengths:\n\nThis model provides a strong juxtaposition to other foraging models in the worm. Rather than evoking a behavioral transition function (that might arise from a change in internal state or the activity of a cell type in the network), or evidence accumulation (which again maps onto a cell type, or the activity of a network) - this model explains behavior via the stochastic sampling of a function of an exponential decay. The underlying model and the dynamics being simulated, as well as the process of stochastic sampling are well described, and the model fits the exponential function (equation 1) to data on a large array of worms exhibiting diverse behaviors (1600+ worms from Lopez-Cruz et al). The work of this study can explain or describe the inter-individual diversity of worm behavior across a large population. The model is also able to capture two aspects of the reorientations, including the dynamics (to switch or not to switch) and the kinetics (slow vs fast reorientations). The authors also work to compare their model to a few others including the Levy walk (whose construction arises from a Markov process) to a simple exponential distribution, all of which have been used to study foraging and search behaviors.\n\nWeaknesses:\n\nThe weaknesses are one of framework, which may nonetheless stir discussion and motivate new ideas based on these results.\n\nFirst, the examples the authors cite where a Gillespie algorithm is used to sample from a distribution, be it the kinetics associated with chemical dynamics, or a Lotka-Volterra Competition Model, there are underlying processes that govern the evolution of the dynamics, and thus the sampling from distributions. In one of their references for instance, the stochasticity arises from the birth and death rates, thereby influencing the genetic drift in the model. In these examples, the process governing the dynamics (and thus generating the distributions from which one samples) are distinct from the behavior being studied. In this manuscript, the distribution being sampled from is the exponential decay function of the reorientation rate. That the model performs well, and matches the data is commendable, but it is unclear how that could not be the case if the underlying function generating the distribution was fit to the data.\n\nThe second weakness is related to the first, in that absent an underlying mechanism or framework, one is left wondering what insight the model provides. Stochastic sampling a function generated by fitting the data to produce stochastic behavior is where one ends up in this framework. But if that is the case, what do we learn about how the foraging is happening. The authors suggest that the decay parameter M can be considered a memory timescale, which offers some suggestion, but then go on to say that the \"physical basis of M can come from multiple sources\". Here is where one is left for want: Molecular dynamics models that generate distributions can point to certain properties of the model, such as the binding kinetics (on and off rates, etc.) as explanations for the mechanisms generating the distributions, and therefore point to how a change in the biology affects the stochasticity of the process. It is unclear how this model provides such a connection.\n\nThe authors provide possible roadmaps, but where they lead and how to relate that back to testable mechanistic studies remains unclear. Weighing the significance of the finding relative to the weaknesses appears to depend on how one feels about the possible mechanisms the authors identify in their responses.\n",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "42071ca1-e811-41f0-81f8-24d30aad118c",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C1",
+      "claim": "When placed off food, the foraging behavior of C. elegans can be described as a change between an initial local-search behavior characterized by a high rate of reorientations, followed by a global-search behavior characterized by sparse reorientations.",
+      "claim_type": "EXPLICIT",
+      "source": "When placed off food, the foraging behavior of C. elegans can be described as a change between an initial local-search behavior characterized by a high rate of reorientations, followed by a global-search behavior characterized by sparse reorientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about observed C. elegans behavior that is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1c57fd29-7cb3-41f5-9948-61c0e27e3998",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C2",
+      "claim": "Only about half of C. elegans worms appear to exhibit the local-to-global search behavior transition when numerous worms are characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "This is commonly observed in individual worms, but when numerous worms are characterized, only about half appear to exhibit this behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by observations from the experimental data analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "56997145-c994-4192-b0ea-7b02b68e199b",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C3",
+      "claim": "A stochastic model that defines foraging reorientation rate as a decaying parameter can predict both abrupt and continuous changes to reorientation without relying on behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose an alternative model that predicts both abrupt and continuous changes to reorientation that do not rely on behavioral states. This model is inspired by molecular dynamics modeling that defines the foraging reorientation rate as a decaying parameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis and model proposed by the authors, which is tested through computational modeling.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "5a4db5ee-494d-4f95-b846-7e6117952629",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C4",
+      "claim": "Stochastically sampling from the time interval probability distribution defined by a decaying reorientation rate can produce both abrupt and gradual changes to reorientation rates, matching experimentally observed results.",
+      "claim_type": "EXPLICIT",
+      "source": "By stochastically sampling from the time interval probability distribution defined by this rate, both abrupt and gradual changes to reorientation rates can occur, matching experimentally observed results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0a0a2704-aeb6-43ec-93a8-cda5a63aeb0a",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C5",
+      "claim": "The stochastic model does not depend on behavioral states or information accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, this model does not depend on behavioral states or information accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key feature of the proposed model as stated by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d4ad3923-80b5-487a-bd17-fc2beec0a286",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C6",
+      "claim": "Abrupt behavioral changes are not necessarily indicative of abrupt changes in behavioral states, especially when abrupt changes are not universally observed in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though abrupt behavioral changes do occur, they are not necessarily indicative of abrupt changes in behavioral states, especially when abrupt changes are not universally observed in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "e2582ff3-e7a1-421e-8633-a3c7a732e2be",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C7",
+      "claim": "Area Restricted Search (ARS) is a foraging strategy observed in nearly all animals.",
+      "claim_type": "EXPLICIT",
+      "source": "A foraging strategy that is observed in nearly all animals is the Area Restricted Search (ARS) (Dorfman et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dorfman et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "367f9650-14a8-4c55-85f3-287010b93b45",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C8",
+      "claim": "In Area Restricted Search, animals randomly forage for food, but appetitive sensory cues cause the animal to restrict their search area by reorienting more frequently.",
+      "claim_type": "EXPLICIT",
+      "source": "In ARS, animals randomly forage for food (Codling et al., 2008), but appetitive sensory cues (like an encounter with food) will cause the animal to restrict their search area by reorienting more frequently, thus increasing the likelihood of food encounters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Codling et al., 2008 and represents established knowledge about ARS.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0f973ce2-a78c-4260-8103-b3671b292e97",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C9",
+      "claim": "When removed from food, animals decrease their reorientation rate to increase dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, when removed from food, animals will decrease their reorientation rate to increase dispersal (Reiss and Rankin, 2021; Klein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Reiss and Rankin, 2021 and Klein et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "59efd04c-9365-465d-91f5-b4574e4c1c6d",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C10",
+      "claim": "Caenorhabditis elegans and Drosophila melanogaster larvae progressively increase their diffusion constant while foraging off of food by decreasing their rates of reorientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans and Drosophila melanogaster larvae appear to progressively increase their diffusion constant while foraging off of food by decreasing their rates of reorientation (Klein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Klein et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1c35d24a-965e-465e-a70f-eb07ca4e84f2",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C11",
+      "claim": "Individual C. elegans worms appear to make an abrupt change from a high to low rate of reorientation in separate studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in separate studies (L\u00f3pez-Cruz et al., 2019; Calhoun et al., 2014), individual worms appear to make an abrupt change from a high to low rate of reorientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to L\u00f3pez-Cruz et al., 2019 and Calhoun et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "5efb8a79-bf40-4113-b62a-bbe3293969f2",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C12",
+      "claim": "The abrupt change in reorientation behavior has been described as a switch from a local to global search strategy that relies on evidence accumulation to trigger the behavioral switch.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior has been described as a switch from a local to global search strategy that relies on evidence accumulation to trigger the behavioral switch (Calhoun et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Calhoun et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "92e424bd-4f62-4984-bc66-701a8df7294f",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C13",
+      "claim": "Reorientations in C. elegans are random and follow Poisson statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Reorientations are random and follow Poisson statistics (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "8c2faf6f-0838-46dc-aaa1-90256b2318c4",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C14",
+      "claim": "The stochastic nature of reorientations is very similar to the temporal behavior of individual molecules in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "This is very similar to the temporal behavior of individual molecules in solution (Singh et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Singh et al., 2022 and represents an analogy drawn by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "86466ba2-8331-4f51-b99c-fe777b209124",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C15",
+      "claim": "Individual molecules defined by the same reaction kinetics can stochastically produce long or short time intervals between reaction events due to stochastic sampling from the same probability distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual molecules defined by the same reaction kinetics can stochastically produce long or short time intervals between reaction events, not because one molecule is inherently faster than the other, but because they are stochastically sampling from the same probability distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from chemical kinetics used as an analogy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "358f42dd-5d99-4754-9ab6-3fb47c1e0db2",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C16",
+      "claim": "The exponentially decaying reorientation rate emerges from the average of trajectories that do not necessarily conform to this curve individually.",
+      "claim_type": "EXPLICIT",
+      "source": "The exponentially decaying reorientation rate emerges from the average of trajectories that do not necessarily conform to this curve individually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the stochastic nature of the behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "7086a426-9105-46b6-b7dc-07e64a925b1c",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C17",
+      "claim": "Abrupt changes in reorientation rates could be the result of stochastic sampling of an underlying decay phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "Since reorientations occur stochastically, the abrupt changes in reorientation rates could simply be the result of stochastic sampling of an underlying decay phenomenon (Srivastava et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors, with a citation to Srivastava et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "32f38fb2-8f69-4b9f-bd23-bf6026de0308",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C18",
+      "claim": "A simple, stochastic model that does not rely on switches in behavioral state is sufficient to reproduce the reorientation kinetics observed in experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that a simple, stochastic model that does not rely on switches in behavioral state is sufficient to reproduce the reorientation kinetics observed in experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "4713649f-3d6d-4ebf-b527-ef91f65f5bb8",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C19",
+      "claim": "In L\u00f3pez-Cruz et al., 2019, the foraging behaviors of individual worms were tracked for 45 min after being removed from food.",
+      "claim_type": "EXPLICIT",
+      "source": "In L\u00f3pez-Cruz et al., 2019, the foraging behaviors of individual worms were tracked for 45 min after being removed from food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "66f1b417-9f12-49f6-808c-af1b8a9e71f4",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C20",
+      "claim": "The reorientation rate from L\u00f3pez-Cruz et al., 2019 followed an exponential decay.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed previously (Klein et al., 2017), the reorientation rate from this study followed an exponential decay (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1a and a citation to Klein et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "7f0e5e06-e0bc-4869-a95e-10d79f7a4fa6",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C21",
+      "claim": "Roughly half the worms appeared to make a sudden single switch from local to global search as observed in Calhoun et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that roughly half the worms appeared to make a sudden single switch from local to global search as observed in Calhoun et al., 2014, however, the other half appeared to produce no discernible change in search strategy or exhibited multiple switches (Figure 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1b-d and a citation to Calhoun et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "e0a621b3-80dd-48d1-8f56-087c28d5bda4",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C22",
+      "claim": "The other half of worms appeared to produce no discernible change in search strategy or exhibited multiple switches.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that roughly half the worms appeared to make a sudden single switch from local to global search as observed in Calhoun et al., 2014, however, the other half appeared to produce no discernible change in search strategy or exhibited multiple switches (Figure 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "53e67d44-0bc0-4a36-a062-a201faba618b",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C23",
+      "claim": "Whether or not a worm performed a single decision was defined in L\u00f3pez-Cruz et al., 2019 by fitting individual reorientation data to two lines using the MATLAB function findchangepts.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether or not a worm performed a single decision was defined in L\u00f3pez-Cruz et al., 2019 by fitting individual reorientation data to two lines using the MATLAB function findchangepts (Figure 1b; Killick et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology used in L\u00f3pez-Cruz et al., 2019, with a citation to Killick et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "bd80b289-c333-4c08-95fd-263c3432ab62",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C24",
+      "claim": "The findchangepts function divides each trace into two regions that are defined by minimizing the sum of the residual squared error of two local linear regressions.",
+      "claim_type": "EXPLICIT",
+      "source": "This function divides each trace into two regions that are defined by minimizing the sum of the residual squared error of two local linear regressions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the findchangepts function works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "fda0e761-48c5-4971-b89b-24f7e36c0b5a",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C25",
+      "claim": "The location of the transition point is varied until the total residual error attains a minimum.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the transition point is varied until the total residual error attains a minimum (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the optimization process of the findchangepts function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "72cf6f41-8e28-43ff-b383-70131fd32f7c",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C26",
+      "claim": "A large change in slope indicates a sudden change in reorientation rate, and the intersection between the two lines determines the decision time.",
+      "claim_type": "EXPLICIT",
+      "source": "A large change in slope indicates a sudden change in reorientation rate, and the intersection between the two lines determines the decision time (L\u00f3pez-Cruz et al., 2019; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the interpretation of the findchangepts results as used in L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "50140c36-c9ba-4e0f-927c-a9abba0f6861",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C27",
+      "claim": "A worm was identified as making a sudden local-to-global foraging switch based on visually assessing the magnitude of the slope difference.",
+      "claim_type": "EXPLICIT",
+      "source": "A worm was identified as making a sudden local-to-global foraging switch based on visually assessing the magnitude of the slope difference, therefore, the conclusion that 50% of the worms produced a single transition is fairly subjective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subjective nature of the classification method used in L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0b62115f-cb12-4e80-bba3-4724c2053ebd",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C28",
+      "claim": "The conclusion that 50% of the worms produced a single transition is fairly subjective.",
+      "claim_type": "EXPLICIT",
+      "source": "A worm was identified as making a sudden local-to-global foraging switch based on visually assessing the magnitude of the slope difference, therefore, the conclusion that 50% of the worms produced a single transition is fairly subjective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment by the authors of the methodology used in prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "150b656f-3a03-4288-a2e3-473d47a7d95d",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C29",
+      "claim": "The distributions of slope differences (s1-s2) and transition times for the experimental data were continuous, with no clear boundary between deciders and non-deciders.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting distributions for the experimental data were continuous, with no clear boundary between deciders and non-deciders (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "f3c4a840-b7f8-4184-82f7-6ad9c8d60b3d",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C30",
+      "claim": "The Gillespie algorithm is a common strategy used to model the kinetics of individual molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this hypothesis by modeling individual worms by stochastic sampling of a decaying reorientation rate with the Gillespie algorithm (Figure 2a), a common strategy used to model the kinetics of individual molecules (Gillespie, 1977).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Gillespie, 1977.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1728d22b-f6ef-436e-be73-ede6b5bb9687",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C31",
+      "claim": "With the Gillespie algorithm, the time between chemical events is modeled by randomly sampling from the time-interval distributions defined by the reaction rates.",
+      "claim_type": "EXPLICIT",
+      "source": "With this strategy, the time between chemical events is modeled by randomly sampling from the time-interval distributions defined by the reaction rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the Gillespie algorithm works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "792769e2-3a49-4c91-b506-25c22e81de87",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C32",
+      "claim": "The Gillespie algorithm can be used to generate time trajectories for any discrete events when the kinetics are known.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the algorithm was originally developed to model discrete molecular events based on known kinetic parameters, it can be used to generate time trajectories for any discrete events when the kinetics are known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the applicability of the Gillespie algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "ce941672-706b-4354-b1db-83dc13a2f105",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C33",
+      "claim": "Stochastic fluctuations of predator and prey populations in the Lotka-Volterra model can be modeled using the Gillespie algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic fluctuations of predator and prey populations can be modeled using the Gillespie algorithm (Palombi et al., 2020; Reichenbach et al., 2006; Constable and McKane, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Palombi et al., 2020, Reichenbach et al., 2006, and Constable and McKane, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "17fb3286-afd3-4f25-98d3-36f9f933d2d9",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C34",
+      "claim": "The parameters \u03b1, \u03b2, and \u03b3 were assigned based on fitting a decay curve to the observed average reorientation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In our approach, we fit the exponential curve in Equation 2 to the average reorientation rate from the experimental data from L\u00f3pez-Cruz (L\u00f3pez-Cruz et al., 2019; Figure 2b), and then used these parameters (\u03b1, \u03b2, \u03b3) to model 1631 individual worms (the same number of animals in the experimental data).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology used to parameterize the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "34a3ac8d-8b0e-4cc0-8dfd-784748c048d4",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C35",
+      "claim": "1631 individual worms were modeled, the same number of animals in the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "In our approach, we fit the exponential curve in Equation 2 to the average reorientation rate from the experimental data from L\u00f3pez-Cruz (L\u00f3pez-Cruz et al., 2019; Figure 2b), and then used these parameters (\u03b1, \u03b2, \u03b3) to model 1631 individual worms (the same number of animals in the experimental data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size used in the modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "cc42e9da-4497-43d5-a9e0-3becd95fe182",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C36",
+      "claim": "There is considerable variance in observed initial reorientation rates even though the initial average rates are ~1.5 events/minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the initial average rates of reorientation are ~1.5 events/minute, there is considerable variance in observed initial rates (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "ae828a46-f852-4638-b3f8-c3ffee7af859",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C37",
+      "claim": "Starting values of M were assigned based on randomly drawing a rate from the observed experimental rates at t=0, and adjusting M so that the starting rate for that in silico worm matched the initial rate of the randomly drawn experimental worm.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this variance, starting values of M were assigned based on randomly drawing a rate from the observed experimental rates at t=0, and adjusting M so that the starting rate for that in silico worm j matched the initial rate of the randomly drawn experimental worm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for initializing the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0200eb7d-b50f-406e-b69a-47b96432ae76",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C38",
+      "claim": "In silico reorientation curves generated produced single-transition and multi/absent transition curves, as observed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico reorientation curves generated produced single-transition and multi/absent transition curves, as observed experimentally (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "a3a5afa9-09f0-4f24-9912-bc6ec4006558",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C39",
+      "claim": "The in silico data produced a distribution of linear regression parameters comparable to the experimental worms.",
+      "claim_type": "EXPLICIT",
+      "source": "When plotted along with the experimental data, the in silico data produced a distribution of linear regression parameters comparable to the experimental worms (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "55eb3a53-4edd-4afc-a5e7-c8fe14c27a1e",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C40",
+      "claim": "The simulation was able to produce individual trajectories that demonstrated switching behavior, despite the lack of a switching mechanism in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation was able to produce individual trajectories that demonstrated switching behavior, despite the lack of a switching mechanism in the model (Equations 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the modeling study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1c811184-8ea4-4ca4-8194-5790c3fb5293",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C41",
+      "claim": "The model demonstrated a continuum of switching to non-switching behavior that was observed in experimental results.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our model demonstrated a continuum of switching to non-switching behavior that was observed in experimental results (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "727fbce9-d993-4e63-94ac-541744340e46",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C42",
+      "claim": "The experimental transition distribution was shifted slightly earlier compared to the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental transition distribution was shifted slightly earlier, however, it is important to note that the experimental data were drawn from experiments where 10\u201315 animals were tracked together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the difference between experimental and model data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "8f87cddc-ac0f-4b0b-811d-09742a5fdce8",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C43",
+      "claim": "In the experimental data, 10-15 animals were tracked together.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental transition distribution was shifted slightly earlier, however, it is important to note that the experimental data were drawn from experiments where 10\u201315 animals were tracked together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "837f4d6b-b94e-40fb-8eff-bb959d7afe35",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C44",
+      "claim": "Collisions occurred in the experiments but were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Collisions occurred, but were excluded from analysis, and so would not contribute to this observation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0e21c395-35c3-41e5-bacd-d0df8a3bb610",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C45",
+      "claim": "Animals reorient in response to pheromones when they cross the tracks left by other animals, which is more likely early in the recording when the animals are in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in addition to collisions, animals also reorient in response to pheromones when they cross the tracks left by other animals, which is more likely early in the recording when the animals are in close proximity (Hong et al., 2017; Dal Bello et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hong et al., 2017 and Dal Bello et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "7f304d22-0953-43eb-a285-faa047dc92be",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C46",
+      "claim": "Pheromone track crossing may contribute to a higher initial rate early in the experimental observations, which would delay the observed decay in reorientations.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, may contribute to a higher initial rate early in the experimental observations, which would delay the observed decay in reorientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how pheromone effects could influence the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "52fdd60b-eac7-450f-9e00-bcc753588f79",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C47",
+      "claim": "Modeling worm foraging behavior with a simple exponential decay of reorientations was sufficient to capture most experimentally observed dynamics, both switch and non-switch-like.",
+      "claim_type": "EXPLICIT",
+      "source": "This exception aside, modeling worm foraging behavior with a simple exponential decay of reorientations was sufficient to capture most experimentally observed dynamics, both switch and non-switch-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d2c35cfe-89e2-4acc-a24e-3a366d68d599",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C48",
+      "claim": "Sudden switches between fast and slow reorientation rates were observed in both the experimental and modeled data.",
+      "claim_type": "EXPLICIT",
+      "source": "Sudden switches between fast and slow reorientation rates were observed in both the experimental and modeled data (Figure 2e), despite the model not relying on a switch strategy, and the decay in M being continuous.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "953641b0-9581-4acc-8178-3b5fd0acf254",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C49",
+      "claim": "The model does not rely on a switch strategy, and the decay in M is continuous.",
+      "claim_type": "EXPLICIT",
+      "source": "Sudden switches between fast and slow reorientation rates were observed in both the experimental and modeled data (Figure 2e), despite the model not relying on a switch strategy, and the decay in M being continuous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes key features of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "e74dc1d7-f078-49ff-8df4-187e701c3582",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C50",
+      "claim": "The stochastic model produced reorientation data with similar dynamics to experimental data, despite not relying on a decision paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic model produced reorientation data with similar dynamics, despite not relying on a decision paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "85a38eea-dc4a-4f2b-9a1a-5d71d609bf5d",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C51",
+      "claim": "The model was not explicitly designed to match the sudden changes in reorientation rates observed in the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to emphasize that the model was not explicitly designed to match the sudden changes in reorientation rates observed in the experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "772556e8-a065-4db4-a871-20ecd1dda9b6",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C52",
+      "claim": "Kinetic parameters were simply chosen to match the average population behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic parameters were simply chosen to match the average population behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "af548fc5-d001-44d4-9b75-efb4d5651303",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C53",
+      "claim": "Sudden changes in reorientation rate were not due to sudden changes in the underlying model; stochastic behavior naturally produces sudden bunching of random events.",
+      "claim_type": "EXPLICIT",
+      "source": "Sudden changes in reorientation rate were not due to sudden changes in the underlying model; stochastic behavior naturally produces sudden bunching of random events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key insight from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "50aa8895-597f-4b11-af5b-af0c0ee6172e",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C54",
+      "claim": "Even if the reorientation rate is set to a constant value, stochastic sampling will still produce sudden changes in rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if the reorientation rate is set to a constant value, stochastic sampling will still produce sudden changes in rate, even though the rate has no time-dependence (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1e04ed2c-adb8-40b5-b689-7d03e3e8bb16",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C55",
+      "claim": "A large initial value for M0 (M0=1000) was initially chosen to ensure a smooth change in reorientation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "A large initial value for M0 (M0=1000) was initially chosen to ensure a smooth change in reorientation rate, so that sudden changes in reorientation number were not necessarily due to sudden changes in M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the modeling choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "bdc523a6-5e12-4034-ac12-660e090c45ad",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C56",
+      "claim": "All values of M0 (1000, 100, 10, or 1) were sufficient to reproduce the average reorientation decay observed in experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, all values of M0 were sufficient to reproduce the average reorientation decay observed in experimental data (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "07ac2c6e-3f45-4723-8111-bcdc1a99e62a",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C57",
+      "claim": "The distributions of transition times and slope differences were comparable for M0=1000, 100, or 10.",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions of transition times and slope differences were also comparable for M0=1000, 100, or 10, indicating that the model is not particularly sensitive to initial values of M0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d7526978-b428-4f0c-8a30-8cbd95dc1cdd",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C58",
+      "claim": "The model is not particularly sensitive to initial values of M0 (for M0=1000, 100, or 10).",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions of transition times and slope differences were also comparable for M0=1000, 100, or 10, indicating that the model is not particularly sensitive to initial values of M0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "320eadcd-2b4d-4182-87be-bb63ce7a3af9",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C59",
+      "claim": "The distribution of slope differences was distinctly bimodal for M0=1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite producing a similar average decay in reorientation rates, the distribution of slope differences was distinctly bimodal for M0=1 (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "2251c544-7907-4b4e-860e-f48a0dcab1d2",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C60",
+      "claim": "When M0=1, the model is by definition a two-state system.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not surprising, since when M0=1, the model is by definition a two-state system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "bd7701e2-b995-4f9b-bfee-863363546497",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C61",
+      "claim": "In the M0=1 model, either the worm has a reorientation rate of \u03b1+\u03b2 (M=1), or a reorientation rate of \u03b2 (M=0).",
+      "claim_type": "EXPLICIT",
+      "source": "Either the worm has a reorientation rate of \u03b1+\u03b2 (M=1), or a reorientation rate of \u03b2 (M=0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the two-state nature of the M0=1 model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "a238e25f-9659-441f-b489-79df2a9f8eaf",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C62",
+      "claim": "The probability of switching from M=1 to M=0 increases with a timescale of \u03b3 (\u03b3=0.11 min\u20131).",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of switching from M=1 to M=0 increases with a timescale of \u03b3 (\u03b3=0.11 min\u20131).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dynamics of the M0=1 model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "7bee8d6b-dc00-4241-85e5-0366b5f0a71f",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C63",
+      "claim": "The bimodal slope and transition time distributions for M0=1 were distinctly different from those observed for the experimental or M0=1000, 100, 10 models.",
+      "claim_type": "EXPLICIT",
+      "source": "The bimodal slope and transition time distributions for M0=1 were distinctly different from those observed for the experimental or M0=1000, 100, 10 models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "34a09d41-d3fa-4477-a281-67449b2242be",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C64",
+      "claim": "The non-binary models (M0\u22601) all produced comparable Jensen-Shannon divergence distances to the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-binary models (M0\u2260 1) all produced comparable distances, but the binary models (M0=1) were significantly more distant than the rest, indicating this model was more dissimilar than the others when compared to the experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Jensen-Shannon divergence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "6ef3cdee-0c7a-4b0a-8889-bcc06038c73a",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C65",
+      "claim": "The binary models (M0=1) were significantly more distant than the non-binary models when compared to the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-binary models (M0\u2260 1) all produced comparable distances, but the binary models (M0=1) were significantly more distant than the rest, indicating this model was more dissimilar than the others when compared to the experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Jensen-Shannon divergence analysis shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "98543352-8ff0-491b-8dea-23f197c55635",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C66",
+      "claim": "A continuous decline in reorientation rate is more consistent with experimental observations than a discrete change in reorientation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "A continuous decline in reorientation rate is more consistent with experimental observations than a discrete change in reorientation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0703d7aa-58af-4957-bf1a-746938161fc8",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C67",
+      "claim": "The lack of a decision simplifies the dispersal strategy for C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of a decision simplifies the dispersal strategy for C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "c324b88d-d9fa-49ba-ba9b-d947c346bb6f",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C68",
+      "claim": "Rather than relying on the accumulation of evidence to make a discrete decision, the worm relies on a decaying signal in the absence of food that drives the reorientation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than relying on the accumulation of evidence to make a discrete decision, the worm relies on a decaying signal in the absence of food that drives the reorientation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the proposed alternative mechanism based on the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "922189cf-fa22-4243-9759-78d92665d049",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C69",
+      "claim": "The decaying signal strategy increases the diffusion constant of the worm, and ensures a more efficient search strategy to find food.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy increases the diffusion constant of the worm, and ensures a more efficient search strategy to find food (Klein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Klein et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "4c7751c7-b8f8-43f9-a749-e0f09975a9fe",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C70",
+      "claim": "The stochastic nature of the search is consistent with prior characterizations of worm behavior and neuronal dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic nature of this search is consistent with prior characterizations of worm behavior and neuronal dynamics (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "4bba66e5-45d6-43af-951f-83f833ad7250",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C71",
+      "claim": "Any individual worm would exhibit all the variability of the population if allowed to perform the foraging task multiple times.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic nature of this search is consistent with prior characterizations of worm behavior and neuronal dynamics (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009), and implies that any individual worm would exhibit all the variability of the population if allowed to perform this task multiple times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the stochastic nature of the behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "dc5f5a31-d7b3-4061-85b5-b8a49403b6ea",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C72",
+      "claim": "Simple stochastic models should be sufficient to explain observable stochastic behaviors (null model).",
+      "claim_type": "EXPLICIT",
+      "source": "We consider this to be a null model: simple stochastic models should be sufficient to explain observable stochastic behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a philosophical statement about the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "b604f4f3-b058-4688-abdd-343c5e19968e",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C73",
+      "claim": "The decay in M can be considered the memory timescale of the last food encounter.",
+      "claim_type": "EXPLICIT",
+      "source": "The decay in M can be considered the memory timescale of the last food encounter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of what M represents biologically.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "8e8f59b3-dce6-4507-bfee-d98d7afb2984",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C74",
+      "claim": "With an observed \u03b3 of 0.07 min\u20131, the memory timescale \u03c41/2 is ~10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "With an observed \u03b3 of 0.07 min\u20131, this would mean a memory \u03c41/2 of ~10 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the fitted parameter \u03b3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "aa7fe961-5aea-4e33-b420-d2373a1e32ec",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C75",
+      "claim": "In principle, M should rise in the presence of food to increase the reorientation rate, on a timescale that is not addressed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, M should rise in the presence of food to increase the reorientation rate, on a timescale that is not addressed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how M would behave in the presence of food.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "473fa452-e43a-421e-a5c7-3202fd450b5f",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C76",
+      "claim": "In L\u00f3pez-Cruz et al., 2019, the starting reorientation rate correlated with food density prior to food removal.",
+      "claim_type": "EXPLICIT",
+      "source": "In L\u00f3pez-Cruz et al., 2019, the starting reorientation rate correlated with food density prior to food removal, which would be consistent with the amplitude of M correlating with food density/quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "16cbb4a7-c8c6-4a9f-b6c1-9e335c6e88ae",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C77",
+      "claim": "The amplitude of M correlating with food density/quality would be consistent with the observation that starting reorientation rate correlated with food density prior to food removal.",
+      "claim_type": "EXPLICIT",
+      "source": "In L\u00f3pez-Cruz et al., 2019, the starting reorientation rate correlated with food density prior to food removal, which would be consistent with the amplitude of M correlating with food density/quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the model to experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "a80300c5-07d3-4f15-9972-592e360d6a48",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C78",
+      "claim": "The reliance of the reorientation rate while foraging for food on a decaying factor (M) implies that the rate is influenced by a signaling factor which decays in time.",
+      "claim_type": "EXPLICIT",
+      "source": "The reliance of the reorientation rate while foraging for food on a decaying factor (M) implies that the rate is influenced by a signaling factor which decays in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model in biological terms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "ba7fc4fe-f522-4876-bb4c-cccaf90d32e4",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C79",
+      "claim": "It is well established that the reorientation rate is influenced by numerous signaling factors and is the basis of the biased random walk that drives taxis in shallow gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that the reorientation rate is influenced by numerous signaling factors and is the basis of the biased random walk that drives taxis in shallow gradients (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "24dda395-a977-4261-924c-cd5adc8bd435",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C80",
+      "claim": "A decay in reorientation rate, rather than a sudden change, is consistent with observations made by L\u00f3pez-Cruz et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "A decay in reorientation rate, rather than a sudden change, is consistent with observations made by L\u00f3pez-Cruz et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the model to experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "a461e7de-25da-496d-8faa-979000ef7b16",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C81",
+      "claim": "The neurons AIA and ADE redundantly suppress reorientations.",
+      "claim_type": "EXPLICIT",
+      "source": "They found that the neurons AIA and ADE redundantly suppress reorientations, and that silencing either one was sufficient to restore the large number of reorientations during early foraging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "98f1ef2b-bf69-4b8a-bcab-973d326e63bd",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C82",
+      "claim": "Silencing either AIA or ADE was sufficient to restore the large number of reorientations during early foraging.",
+      "claim_type": "EXPLICIT",
+      "source": "They found that the neurons AIA and ADE redundantly suppress reorientations, and that silencing either one was sufficient to restore the large number of reorientations during early foraging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "46d669d2-eeea-4130-9ea5-d911f88abd0c",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C83",
+      "claim": "The timescale of the variable M may represent the timescales of AIA and ADE activities.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the timescale of the variable M may represent the timescales of AIA and ADE activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the model to neuronal mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d25df21c-6f53-4ac8-9c89-f8fb0ee98a5f",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C84",
+      "claim": "AIA and ADE synapse onto several neurons that drive reorientations.",
+      "claim_type": "EXPLICIT",
+      "source": "AIA and ADE synapse onto several neurons that drive reorientations (L\u00f3pez-Cruz et al., 2019; Gray et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to L\u00f3pez-Cruz et al., 2019 and Gray et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1f493ee7-4c6c-4497-89f4-5b6811795e34",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C85",
+      "claim": "The output of AIA and ADE was inhibited over long timescales (tens of minutes) by presynaptic glutamate binding to MGL-1, a slow G-protein coupled receptor expressed in AIA and ADE.",
+      "claim_type": "EXPLICIT",
+      "source": "AIA and ADE synapse onto several neurons that drive reorientations (L\u00f3pez-Cruz et al., 2019; Gray et al., 2005), and their output was inhibited over long timescales (tens of minutes) by presynaptic glutamate binding to MGL-1, a slow G-protein coupled receptor expressed in AIA and ADE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "11ff95a0-03be-4da1-ba3d-b45e535cb0bd",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C86",
+      "claim": "Sensory neurons suppress the synaptic output of AIA and ADE, which leads to a large number of reorientations early in foraging.",
+      "claim_type": "EXPLICIT",
+      "source": "Their results support a model where sensory neurons suppress the synaptic output of AIA and ADE, which in turn leads to a large number of reorientations early in foraging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model supported by results from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "7611e6c4-32e4-4c56-9fec-ea951257aee9",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C87",
+      "claim": "As time passes, glutamatergic input from the sensory neurons decreases, which leads to disinhibition of AIA and ADE and a subsequent suppression of reorientations.",
+      "claim_type": "EXPLICIT",
+      "source": "As time passes, glutamatergic input from the sensory neurons decreases, which leads to disinhibition of AIA and ADE and a subsequent suppression of reorientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model supported by L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "cc23ca0c-7d4d-4326-b72f-6d52c0f44b9c",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C88",
+      "claim": "The sensory inputs into AIA and ADE are sequestered into two separate circuits, with AIA receiving chemosensory input and ADE receiving mechanosensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensory inputs into AIA and ADE are sequestered into two separate circuits, with AIA receiving chemosensory input and ADE receiving mechanosensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the neural circuit organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "7dad62c2-88d2-47bc-bff5-0c90d19fa20d",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C89",
+      "claim": "Since the suppression of either AIA or ADE is sufficient to increase reorientations, the decay in reorientations is likely due to the suppression of both of these neurons decaying in time.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the suppression of either AIA or ADE is sufficient to increase reorientations, the decay in reorientations is likely due to the suppression of both of these neurons decaying in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the redundant function of AIA and ADE.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d469f46b-992f-429d-96ee-405b3c3022e8",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C90",
+      "claim": "The timescale of reorientation decay could be tied to the timescale of sensory neuron activity, which in turn is influencing the timescale of AIA/ADE reorientation suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlates with an observed decrease in sensory neuron activity as well, so the timescale of reorientation decay could be tied to the timescale of sensory neuron activity, which in turn is influencing the timescale of AIA/ADE reorientation suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting multiple levels of the neural mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "6512ee6b-93b2-4aaa-aa37-24b01c53864b",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C91",
+      "claim": "The factor 'M' is likely the sum of several different sensory inputs decaying in time.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that our factor 'M' is likely the sum of several different sensory inputs decaying in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of what M represents biologically.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0f993d9e-8839-49fa-b4ea-6ac296209b88",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C92",
+      "claim": "The glutamatergic input provided by the sensory neurons was not essential for AIA/ADE signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis of which sensory neuron signaling factors contribute to decreased AIA and ADE activity is made more complicated by the observation that the glutamatergic input provided by the sensory neurons was not essential, and that additional factors besides glutamate contribute to the signaling to AIA and ADE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1ed22cd8-63d8-4686-bcc8-1f1b2dc503f0",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C93",
+      "claim": "Additional factors besides glutamate contribute to the signaling to AIA and ADE.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis of which sensory neuron signaling factors contribute to decreased AIA and ADE activity is made more complicated by the observation that the glutamatergic input provided by the sensory neurons was not essential, and that additional factors besides glutamate contribute to the signaling to AIA and ADE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "3060fb69-fec0-4475-84cd-1356aab0c573",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C94",
+      "claim": "It is not simply the sensory neuron activity that decays in time, but also the sensitivity of AIA and ADE to sensory neuron input that decays in time.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this, it is not simply the sensory neuron activity that decays in time, but also the sensitivity of AIA and ADE to sensory neuron input that decays in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the complexity of the neural mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "466c969b-0546-45f0-bfdc-106c7cd37a72",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C95",
+      "claim": "Simply depolarizing sensory neurons after the animals had starved for 30 min was insufficient to rescue the reorientation rates observed earlier in the foraging assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Simply depolarizing sensory neurons after the animals had starved for 30 min was insufficient to rescue the reorientation rates observed earlier in the foraging assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from L\u00f3pez-Cruz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0f87bb04-5f74-463c-8189-1b12850bf2c3",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C96",
+      "claim": "The observation that depolarizing sensory neurons after 30 min starvation was insufficient to rescue reorientation rates could be due to decreased presynaptic vesicle release and/or decreased receptor localization on the postsynaptic side.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation could be due to decreased presynaptic vesicle release and/or decreased receptor localization on the postsynaptic side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d0e80827-399c-46ee-8f99-312f7f555667",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C97",
+      "claim": "There are two neuronal properties that appear to be decaying in time: sensory neuron activity and decreased potentiation of presynaptic input onto AIA and ADE.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, there are two neuronal properties that appear to be decaying in time. One is sensory neuron activity, and the other is decreased potentiation of presynaptic input onto AIA and ADE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the neural mechanisms discussed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "81a2d826-b50e-4a9b-967d-ed537a8e6dd8",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C98",
+      "claim": "The factor 'M' is a phenomenological manifestation of numerous decaying factors including sensory neuron activity and AIA/ADE sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our factor 'M' is a phenomenological manifestation of these numerous decaying factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of what M represents in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "42d32ae8-c1b8-4e52-a9a6-0e4740e75939",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C99",
+      "claim": "Altered ionotropic glutamate signaling and dopamine release influence foraging kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Altered ionotropic glutamate signaling and dopamine release also influence foraging kinetics (Hills et al., 2004), as well as neuropeptides (Campbell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hills et al., 2004 and Campbell et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "868419ac-0870-4698-b7b5-3e6d26b8142d",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C100",
+      "claim": "Neuropeptides influence foraging kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Altered ionotropic glutamate signaling and dopamine release also influence foraging kinetics (Hills et al., 2004), as well as neuropeptides (Campbell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Campbell et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "539f21a5-74e4-46e2-8199-6f1b646c400a",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C101",
+      "claim": "The signaling factor M could be the result of one or all of glutamate signaling, dopamine release, and neuropeptides decaying in time.",
+      "claim_type": "EXPLICIT",
+      "source": "The signaling factor M could be the result of one or all of these factors decaying in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about what M represents biologically.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "52bcfa3d-54a9-4f55-a76a-6ae95c8df2f7",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "claim_id": "C102",
+      "claim": "Further work will be needed to reveal how the kinetics of reorientations emerge explicitly from underlying signaling kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Further work will be needed to reveal how the kinetics of reorientations emerge explicitly from these underlying signaling kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "955b092b-151c-43da-a7e5-3c2d5da85d75",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Analysis of experimental data from L\u00f3pez-Cruz et al., 2019 reveals that while C. elegans foraging behavior shows an exponential decay in average reorientation rate, only about half of individual worms exhibit an abrupt local-to-global search transition, with the other half showing continuous or multiple transitions. The distributions of slope differences and transition times are continuous with no clear boundary between 'deciders' and 'non-deciders'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C20-C22, and C29 collectively describe the experimental observations and are well-supported by Figure 1. The data show both the population-level exponential decay (C20, Figure 1a) and the heterogeneity in individual trajectories (C21-C22, Figure 1b-d), with continuous distributions of transition parameters (C29, Figure 1e). The subjective nature of the classification is acknowledged (C27-C28).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "c3fed42a-5200-4b78-900a-8c91d6e27516",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A stochastic model using the Gillespie algorithm with a continuously decaying reorientation rate parameter (M) successfully reproduces both abrupt and gradual changes in reorientation behavior observed experimentally, without requiring behavioral state switches or decision-making mechanisms. The model, parameterized only to match average population behavior, generates individual trajectories with distributions of transition parameters comparable to experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C18, C30-C32, C34-C35, C37-C41, C47-C50 describe the core modeling approach and results, which are well-supported by Figures 2b-e. The model successfully captures the diversity of experimental trajectories (Figure 2c-d) and produces similar switching dynamics (Figure 2e) despite lacking an explicit switching mechanism. The methodology is clearly described and the comparison to experimental data is quantitative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "2e380809-78f9-40f1-bc89-f6ed93841801",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The stochastic model demonstrates that sudden changes in reorientation rate can emerge naturally from stochastic sampling of a continuous decay process, even when the reorientation rate is constant. These abrupt changes are not due to sudden changes in the underlying model but arise from the inherent stochasticity of the behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by the modeling results shown in Figure 2f, which demonstrates that even a constant reorientation rate produces apparent sudden transitions due to stochastic sampling. This is a key mechanistic insight that explains how abrupt behavioral changes can occur without discrete state switches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sensitivity analysis reveals that the model is robust to initial values of M (M0=1000, 100, 10) but that a binary model (M0=1) produces distinctly bimodal distributions inconsistent with experimental data. Jensen-Shannon divergence analysis confirms that continuous decline in reorientation rate is more consistent with experimental observations than discrete state changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C66 describe the sensitivity analysis shown in Figure 3. The data clearly show that non-binary models (M0\u226510) produce similar distributions to experimental data, while the binary model (M0=1) produces bimodal distributions (Figure 3b) and significantly higher JSD values (Figure 3c, p<0.001). This provides strong quantitative support for continuous over discrete models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "28c69bd6-1d0a-4ee1-9159-e0c866202387",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The experimental transition distribution is shifted slightly earlier compared to the model, which may be explained by pheromone-induced reorientations when worms cross tracks left by other animals during group tracking (10-15 animals tracked together), an effect that would be more pronounced early in recordings when animals are in close proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C46 identify a discrepancy between model and experiment and propose a plausible explanation based on pheromone effects (C45, supported by citations). However, this remains speculative as the dataset lacks information about pheromone track crossings (C46), and no quantitative analysis is provided to test this hypothesis. The explanation is reasonable but unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "4adc5d75-9ad1-429f-9abd-c29e39103a65",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The stochastic model without decision-making simplifies the dispersal strategy for C. elegans, where worms rely on a decaying signal in the absence of food rather than evidence accumulation. This strategy increases diffusion constant and search efficiency, is consistent with prior characterizations of stochastic worm behavior, and implies individual worms would exhibit population-level variability if tested repeatedly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 present the conceptual implications of the modeling results. The simplification (C67-C68) follows logically from the model's success. The efficiency claim (C69) is supported by citation to Klein et al., 2017. Consistency with prior work (C70) is well-documented with multiple citations. The implication about individual variability (C71) is a reasonable inference from the stochastic nature of the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "f46c04ff-8d31-419f-a0a3-1b1a51f72ca5",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The decay parameter M can be interpreted as representing the memory timescale of the last food encounter (~10 min half-life with \u03b3=0.07 min\u207b\u00b9). The amplitude of M may correlate with food density/quality, consistent with observations that starting reorientation rate correlates with prior food density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 provide a biological interpretation of M with a specific calculation that is mathematically correct. Claims C75-C77 connect the model to experimental observations from L\u00f3pez-Cruz et al., 2019 about food density effects. While C75 is speculative about M rising in the presence of food, the correlation between M amplitude and food density (C76-C77) is supported by cited experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model parameter M likely represents the combined decay of multiple neural signaling factors, including the activities of neurons AIA and ADE which redundantly suppress reorientations. These neurons receive sensory input (chemosensory to AIA, mechanosensory to ADE) that decays over time, and their output is inhibited by presynaptic glutamate binding to MGL-1 receptors. The decay in reorientations likely reflects the time-dependent decay of both sensory neuron activity and AIA/ADE suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C91 connect the phenomenological model to known neural mechanisms from L\u00f3pez-Cruz et al., 2019. The neural circuit details (C81-C88) are well-supported by citations. The interpretation that M represents multiple decaying neural factors (C78, C91) is a reasonable inference that connects the model to biological mechanisms. The logic linking sensory neuron decay to AIA/ADE activity to reorientation suppression (C89-C90) is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "91e91196-f5bb-4734-bb74-ba4711be8567",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The neural basis of M is complex, involving not only decaying sensory neuron activity but also time-dependent changes in AIA/ADE sensitivity to sensory input. Glutamatergic input is not essential, and additional signaling factors contribute. Depolarizing sensory neurons after 30 min starvation fails to rescue early reorientation rates, possibly due to decreased presynaptic release or postsynaptic receptor localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C98 describe the complexity of the neural mechanisms underlying M, based on observations from L\u00f3pez-Cruz et al., 2019 (C92-C95). The speculation about mechanisms (C96) is appropriately qualified. The summary (C97-C98) accurately captures the multi-level nature of the decay phenomenon. These claims provide important context for understanding what M represents biologically.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "61292e00-8f87-4a71-85cd-e1acf13918b9",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Additional signaling factors including ionotropic glutamate signaling, dopamine release, and neuropeptides also influence foraging kinetics and could contribute to the decay of M. Further work is needed to reveal how reorientation kinetics emerge explicitly from underlying signaling kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 are supported by appropriate citations (Hills et al., 2004; Campbell et al., 2016). Claim C101 is appropriately speculative about which factors contribute to M. Claim C102 acknowledges the need for future work to establish explicit mechanistic connections. These claims appropriately identify limitations and future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "35767455-b473-446c-b90d-85919da34d29",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Abrupt behavioral changes are not necessarily indicative of abrupt changes in behavioral states, especially when not universally observed. The exponentially decaying reorientation rate emerges from averaging trajectories that don't individually conform to this curve, and abrupt changes could result from stochastic sampling of an underlying decay phenomenon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C16-C17 present the key conceptual framework and hypothesis of the paper. These are well-supported by the modeling results (Figures 2-3) which demonstrate that stochastic sampling of a continuous decay can produce apparent abrupt transitions. The logic is sound and the empirical support is strong.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "173b778c-35cc-4938-a537-6d920708a59f",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on foraging strategies: Area Restricted Search (ARS) is observed in nearly all animals, where appetitive cues increase reorientation frequency while food removal decreases it. C. elegans and D. melanogaster larvae progressively increase diffusion by decreasing reorientations, though some studies report abrupt transitions described as evidence-accumulation-based switches. Reorientations are random, follow Poisson statistics, and are analogous to stochastic molecular events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C15 provide background context supported by appropriate citations. These establish the biological context (C7-C12) and the stochastic nature of reorientations (C13-C15) that motivates the modeling approach. The analogy to molecular kinetics (C14-C15) is well-supported and provides the conceptual foundation for using the Gillespie algorithm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details of prior work: L\u00f3pez-Cruz et al., 2019 tracked worms for 45 min after food removal and used the MATLAB findchangepts function to identify transitions by fitting two linear regressions. Classification as 'deciders' was based on visual assessment of slope differences, making the 50% estimate fairly subjective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C23-C28 accurately describe the methodology from L\u00f3pez-Cruz et al., 2019 and appropriately critique its subjective nature (C27-C28). This critical assessment motivates the more objective quantitative approach taken in the current study (C29). The description is accurate and the critique is fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "2546a328-b7ce-419c-bb58-aa01956192a4",
+      "content_id": "44a898f1-3245-45ee-b5f5-b7a5d3f8f1cc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological precedents and observations: The Gillespie algorithm has been used to model Lotka-Volterra predator-prey dynamics. Experimental data show considerable variance in initial reorientation rates despite an average of ~1.5 events/minute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by appropriate citations demonstrating prior use of Gillespie algorithm for population dynamics. Claim C36 is supported by Figure 1a showing variance in initial rates. These provide important methodological context and justify the approach to initializing M values in the model (C37).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "8791d09c-2596-4c38-9bce-ffcba799d5c0",
+      "content_id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors characterize the heterogeneity in C. elegans foraging behavior, showing that while the population-level reorientation rate follows an exponential decay, only about half of individual worms exhibit an abrupt transition from local to global search, with the other half showing no discernible change or multiple switches. The distributions of slope differences and transition times are continuous with no clear boundary between 'deciders' and 'non-deciders'.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge this heterogeneity as a key observation. Reviewer 1 states 'about 50% of individual worms appear to exhibit an abrupt transition between local and global search' and notes this is 'a prominent feature of the empirical data.' The editor confirms the authors 'provide convincing evidence' about this behavioral transition. No reviewer challenges these observational claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd",
+      "content_id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors propose and test a stochastic model using the Gillespie algorithm that defines reorientation rate as a decaying parameter. This model, parameterized only to match average population behavior, successfully reproduces both abrupt and gradual changes in individual reorientation rates without relying on behavioral state switches or evidence accumulation. The model demonstrates that sudden changes in reorientation rate can arise from stochastic sampling alone, even when the underlying decay in M is continuous.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers affirm the core modeling result. The editor states the authors 'provide convincing evidence that this transition...can instead be described as a process whose parameters are smoothly modulated within a single state.' Reviewer 1 calls it 'a strong argument that apparent state changes can arise as an epiphenomenon of stochastic processes' and confirms 'the authors have made a convincing case.' Reviewer 2 acknowledges 'the model performs well, and matches the data' and that it 'can explain or describe the inter-individual diversity of worm behavior.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "f8920129-a075-4922-95e9-3ddde9d646d2",
+      "content_id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors test model sensitivity to the initial value M0, showing that non-binary models (M0=1000, 100, 10) all reproduce experimental distributions comparably, while the binary model (M0=1) produces distinctly bimodal distributions significantly more dissimilar to experimental data. This supports that a continuous decline in reorientation rate is more consistent with experimental observations than a discrete two-state change.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these model comparison results. Reviewer 1 explicitly states 'the new stochastic model is more parsimonious than reorientation-state change model because it posits one state rather than two,' implicitly accepting the evidence against the binary model. The editor's statement that the transition 'can instead be described as a process whose parameters are smoothly modulated within a single state' aligns with this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "632b5036-6cd2-4716-82e6-3df0745640f2",
+      "content_id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors conclude that C. elegans foraging relies on a decaying signal in the absence of food that drives reorientation rate, rather than evidence accumulation for discrete decisions. This stochastic strategy is consistent with prior characterizations of worm behavior and implies any individual worm would exhibit all population variability if tested multiple times.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this interpretation. The editor notes the finding 'suggests that relatively simple neuronal mechanisms can drive behavioral sequences that appear more complex.' Reviewer 1 states the authors 'have made a convincing case that is not necessary to posit distinct internal states' and that 'discrete transitions can occur simply because of the stochastic nature of the reorientation behavior itself.' No reviewer disputes these mechanistic conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4",
+      "content_id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors interpret the decay parameter M as representing a memory timescale of the last food encounter (~10 min half-life) and suggest it is a phenomenological manifestation of multiple decaying signaling factors. They speculate M could arise from glutamate signaling, dopamine release, and/or neuropeptides, and may represent the timescales of AIA and ADE neuronal activities.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express significant concern about the biological interpretation of M. Reviewer 1 states 'there is no obvious candidate for the neuronal basis of the decaying factor M' and notes 'the absence of a plausible neuronal correlate of M weakens the case for the model.' Reviewer 2 emphasizes 'absent an underlying mechanism or framework, one is left wondering what insight the model provides' and questions 'what do we learn about how the foraging is happening.' While reviewers accept the model's descriptive power, they find the mechanistic interpretation uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3",
+      "content_id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors discuss neural mechanisms from L\u00f3pez-Cruz et al. 2019, describing how AIA and ADE neurons redundantly suppress reorientations through glutamatergic signaling via MGL-1 receptors, with both sensory neuron activity and AIA/ADE sensitivity decaying over time. They note the complexity that glutamatergic input is not essential and additional factors contribute to signaling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 specifically critiques this discussion, noting the authors 'speculate that decreasing sensory neuron activity might be the correlate of M but then provide contradictory evidence that seems to undermine that hypothesis.' This directly references the complexity around glutamatergic signaling not being essential (C92-C93) and the failure of sensory neuron depolarization to rescue reorientation rates (C95). The reviewer finds this 'contradictory evidence' problematic for establishing a clear neuronal basis for M.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "77b250c0-5df2-4e7f-a4c9-4a048e35dd1b",
+      "content_id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors note a slight earlier shift in experimental transition distribution compared to the model and attribute this to pheromone-mediated reorientations when worms cross tracks left by other animals during group tracking (10-15 animals together), which would delay the observed decay in reorientations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this explanation for the minor discrepancy between model and experimental data. This is treated as a methodological consideration rather than a fundamental issue with the model's validity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87",
+      "content_id": "306ab850-533a-4f7c-87b6-503bb4378129",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors describe their modeling methodology using the Gillespie algorithm to stochastically sample from a decaying reorientation rate, fitting parameters to the average experimental reorientation rate from 1631 worms and initializing individual worm starting values by randomly drawing from observed experimental initial rates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 states 'the underlying model and the dynamics being simulated, as well as the process of stochastic sampling are well described.' However, Reviewer 2 raises a conceptual concern that 'the distribution being sampled from is the exponential decay function of the reorientation rate' which was 'fit to the data,' questioning 'how that could not be the case' that it matches. This is more a philosophical concern about circularity than a rejection of the methodology itself.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "42071ca1-e811-41f0-81f8-24d30aad118c",
+      "result_id": "955b092b-151c-43da-a7e5-3c2d5da85d75"
+    },
+    {
+      "claim_id": "1c57fd29-7cb3-41f5-9948-61c0e27e3998",
+      "result_id": "955b092b-151c-43da-a7e5-3c2d5da85d75"
+    },
+    {
+      "claim_id": "66f1b417-9f12-49f6-808c-af1b8a9e71f4",
+      "result_id": "955b092b-151c-43da-a7e5-3c2d5da85d75"
+    },
+    {
+      "claim_id": "7f0e5e06-e0bc-4869-a95e-10d79f7a4fa6",
+      "result_id": "955b092b-151c-43da-a7e5-3c2d5da85d75"
+    },
+    {
+      "claim_id": "e0a621b3-80dd-48d1-8f56-087c28d5bda4",
+      "result_id": "955b092b-151c-43da-a7e5-3c2d5da85d75"
+    },
+    {
+      "claim_id": "150b656f-3a03-4288-a2e3-473d47a7d95d",
+      "result_id": "955b092b-151c-43da-a7e5-3c2d5da85d75"
+    },
+    {
+      "claim_id": "56997145-c994-4192-b0ea-7b02b68e199b",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "5a4db5ee-494d-4f95-b846-7e6117952629",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "0a0a2704-aeb6-43ec-93a8-cda5a63aeb0a",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "32f38fb2-8f69-4b9f-bd23-bf6026de0308",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "f3c4a840-b7f8-4184-82f7-6ad9c8d60b3d",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "1728d22b-f6ef-436e-be73-ede6b5bb9687",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "792769e2-3a49-4c91-b506-25c22e81de87",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "17fb3286-afd3-4f25-98d3-36f9f933d2d9",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "34a3ac8d-8b0e-4cc0-8dfd-784748c048d4",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "ae828a46-f852-4638-b3f8-c3ffee7af859",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "0200eb7d-b50f-406e-b69a-47b96432ae76",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "a3a5afa9-09f0-4f24-9912-bc6ec4006558",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "55eb3a53-4edd-4afc-a5e7-c8fe14c27a1e",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "1c811184-8ea4-4ca4-8194-5790c3fb5293",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "52fdd60b-eac7-450f-9e00-bcc753588f79",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "d2c35cfe-89e2-4acc-a24e-3a366d68d599",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "953641b0-9581-4acc-8178-3b5fd0acf254",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "e74dc1d7-f078-49ff-8df4-187e701c3582",
+      "result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516"
+    },
+    {
+      "claim_id": "85a38eea-dc4a-4f2b-9a1a-5d71d609bf5d",
+      "result_id": "2e380809-78f9-40f1-bc89-f6ed93841801"
+    },
+    {
+      "claim_id": "772556e8-a065-4db4-a871-20ecd1dda9b6",
+      "result_id": "2e380809-78f9-40f1-bc89-f6ed93841801"
+    },
+    {
+      "claim_id": "af548fc5-d001-44d4-9b75-efb4d5651303",
+      "result_id": "2e380809-78f9-40f1-bc89-f6ed93841801"
+    },
+    {
+      "claim_id": "50aa8895-597f-4b11-af5b-af0c0ee6172e",
+      "result_id": "2e380809-78f9-40f1-bc89-f6ed93841801"
+    },
+    {
+      "claim_id": "1e04ed2c-adb8-40b5-b689-7d03e3e8bb16",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "bdc523a6-5e12-4034-ac12-660e090c45ad",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "07ac2c6e-3f45-4723-8111-bcdc1a99e62a",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "d7526978-b428-4f0c-8a30-8cbd95dc1cdd",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "320eadcd-2b4d-4182-87be-bb63ce7a3af9",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "2251c544-7907-4b4e-860e-f48a0dcab1d2",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "bd7701e2-b995-4f9b-bfee-863363546497",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "a238e25f-9659-441f-b489-79df2a9f8eaf",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "7bee8d6b-dc00-4241-85e5-0366b5f0a71f",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "34a09d41-d3fa-4477-a281-67449b2242be",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "6ef3cdee-0c7a-4b0a-8889-bcc06038c73a",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "98543352-8ff0-491b-8dea-23f197c55635",
+      "result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49"
+    },
+    {
+      "claim_id": "727fbce9-d993-4e63-94ac-541744340e46",
+      "result_id": "28c69bd6-1d0a-4ee1-9159-e0c866202387"
+    },
+    {
+      "claim_id": "8f87cddc-ac0f-4b0b-811d-09742a5fdce8",
+      "result_id": "28c69bd6-1d0a-4ee1-9159-e0c866202387"
+    },
+    {
+      "claim_id": "837f4d6b-b94e-40fb-8eff-bb959d7afe35",
+      "result_id": "28c69bd6-1d0a-4ee1-9159-e0c866202387"
+    },
+    {
+      "claim_id": "0e21c395-35c3-41e5-bacd-d0df8a3bb610",
+      "result_id": "28c69bd6-1d0a-4ee1-9159-e0c866202387"
+    },
+    {
+      "claim_id": "7f304d22-0953-43eb-a285-faa047dc92be",
+      "result_id": "28c69bd6-1d0a-4ee1-9159-e0c866202387"
+    },
+    {
+      "claim_id": "0703d7aa-58af-4957-bf1a-746938161fc8",
+      "result_id": "4adc5d75-9ad1-429f-9abd-c29e39103a65"
+    },
+    {
+      "claim_id": "c324b88d-d9fa-49ba-ba9b-d947c346bb6f",
+      "result_id": "4adc5d75-9ad1-429f-9abd-c29e39103a65"
+    },
+    {
+      "claim_id": "922189cf-fa22-4243-9759-78d92665d049",
+      "result_id": "4adc5d75-9ad1-429f-9abd-c29e39103a65"
+    },
+    {
+      "claim_id": "4c7751c7-b8f8-43f9-a749-e0f09975a9fe",
+      "result_id": "4adc5d75-9ad1-429f-9abd-c29e39103a65"
+    },
+    {
+      "claim_id": "4bba66e5-45d6-43af-951f-83f833ad7250",
+      "result_id": "4adc5d75-9ad1-429f-9abd-c29e39103a65"
+    },
+    {
+      "claim_id": "dc5f5a31-d7b3-4061-85b5-b8a49403b6ea",
+      "result_id": "4adc5d75-9ad1-429f-9abd-c29e39103a65"
+    },
+    {
+      "claim_id": "b604f4f3-b058-4688-abdd-343c5e19968e",
+      "result_id": "f46c04ff-8d31-419f-a0a3-1b1a51f72ca5"
+    },
+    {
+      "claim_id": "8e8f59b3-dce6-4507-bfee-d98d7afb2984",
+      "result_id": "f46c04ff-8d31-419f-a0a3-1b1a51f72ca5"
+    },
+    {
+      "claim_id": "aa7fe961-5aea-4e33-b420-d2373a1e32ec",
+      "result_id": "f46c04ff-8d31-419f-a0a3-1b1a51f72ca5"
+    },
+    {
+      "claim_id": "473fa452-e43a-421e-a5c7-3202fd450b5f",
+      "result_id": "f46c04ff-8d31-419f-a0a3-1b1a51f72ca5"
+    },
+    {
+      "claim_id": "16cbb4a7-c8c6-4a9f-b6c1-9e335c6e88ae",
+      "result_id": "f46c04ff-8d31-419f-a0a3-1b1a51f72ca5"
+    },
+    {
+      "claim_id": "a80300c5-07d3-4f15-9972-592e360d6a48",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "ba7fc4fe-f522-4876-bb4c-cccaf90d32e4",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "24dda395-a977-4261-924c-cd5adc8bd435",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "a461e7de-25da-496d-8faa-979000ef7b16",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "98f1ef2b-bf69-4b8a-bcab-973d326e63bd",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "46d669d2-eeea-4130-9ea5-d911f88abd0c",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "d25df21c-6f53-4ac8-9c89-f8fb0ee98a5f",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "1f493ee7-4c6c-4497-89f4-5b6811795e34",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "11ff95a0-03be-4da1-ba3d-b45e535cb0bd",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "7611e6c4-32e4-4c56-9fec-ea951257aee9",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "cc23ca0c-7d4d-4326-b72f-6d52c0f44b9c",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "7dad62c2-88d2-47bc-bff5-0c90d19fa20d",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "d469f46b-992f-429d-96ee-405b3c3022e8",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "6512ee6b-93b2-4aaa-aa37-24b01c53864b",
+      "result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422"
+    },
+    {
+      "claim_id": "0f993d9e-8839-49fa-b4ea-6ac296209b88",
+      "result_id": "91e91196-f5bb-4734-bb74-ba4711be8567"
+    },
+    {
+      "claim_id": "1ed22cd8-63d8-4686-bcc8-1f1b2dc503f0",
+      "result_id": "91e91196-f5bb-4734-bb74-ba4711be8567"
+    },
+    {
+      "claim_id": "3060fb69-fec0-4475-84cd-1356aab0c573",
+      "result_id": "91e91196-f5bb-4734-bb74-ba4711be8567"
+    },
+    {
+      "claim_id": "466c969b-0546-45f0-bfdc-106c7cd37a72",
+      "result_id": "91e91196-f5bb-4734-bb74-ba4711be8567"
+    },
+    {
+      "claim_id": "0f87bb04-5f74-463c-8189-1b12850bf2c3",
+      "result_id": "91e91196-f5bb-4734-bb74-ba4711be8567"
+    },
+    {
+      "claim_id": "d0e80827-399c-46ee-8f99-312f7f555667",
+      "result_id": "91e91196-f5bb-4734-bb74-ba4711be8567"
+    },
+    {
+      "claim_id": "81a2d826-b50e-4a9b-967d-ed537a8e6dd8",
+      "result_id": "91e91196-f5bb-4734-bb74-ba4711be8567"
+    },
+    {
+      "claim_id": "42d32ae8-c1b8-4e52-a9a6-0e4740e75939",
+      "result_id": "61292e00-8f87-4a71-85cd-e1acf13918b9"
+    },
+    {
+      "claim_id": "868419ac-0870-4698-b7b5-3e6d26b8142d",
+      "result_id": "61292e00-8f87-4a71-85cd-e1acf13918b9"
+    },
+    {
+      "claim_id": "539f21a5-74e4-46e2-8199-6f1b646c400a",
+      "result_id": "61292e00-8f87-4a71-85cd-e1acf13918b9"
+    },
+    {
+      "claim_id": "52bcfa3d-54a9-4f55-a76a-6ae95c8df2f7",
+      "result_id": "61292e00-8f87-4a71-85cd-e1acf13918b9"
+    },
+    {
+      "claim_id": "d4ad3923-80b5-487a-bd17-fc2beec0a286",
+      "result_id": "35767455-b473-446c-b90d-85919da34d29"
+    },
+    {
+      "claim_id": "358f42dd-5d99-4754-9ab6-3fb47c1e0db2",
+      "result_id": "35767455-b473-446c-b90d-85919da34d29"
+    },
+    {
+      "claim_id": "7086a426-9105-46b6-b7dc-07e64a925b1c",
+      "result_id": "35767455-b473-446c-b90d-85919da34d29"
+    },
+    {
+      "claim_id": "e2582ff3-e7a1-421e-8633-a3c7a732e2be",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "367f9650-14a8-4c55-85f3-287010b93b45",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "0f973ce2-a78c-4260-8103-b3671b292e97",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "59efd04c-9365-465d-91f5-b4574e4c1c6d",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "1c35d24a-965e-465e-a70f-eb07ca4e84f2",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "5efb8a79-bf40-4113-b62a-bbe3293969f2",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "92e424bd-4f62-4984-bc66-701a8df7294f",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "8c2faf6f-0838-46dc-aaa1-90256b2318c4",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "86466ba2-8331-4f51-b99c-fe777b209124",
+      "result_id": "173b778c-35cc-4938-a537-6d920708a59f"
+    },
+    {
+      "claim_id": "4713649f-3d6d-4ebf-b527-ef91f65f5bb8",
+      "result_id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3"
+    },
+    {
+      "claim_id": "53e67d44-0bc0-4a36-a062-a201faba618b",
+      "result_id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3"
+    },
+    {
+      "claim_id": "bd80b289-c333-4c08-95fd-263c3432ab62",
+      "result_id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3"
+    },
+    {
+      "claim_id": "fda0e761-48c5-4971-b89b-24f7e36c0b5a",
+      "result_id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3"
+    },
+    {
+      "claim_id": "72cf6f41-8e28-43ff-b383-70131fd32f7c",
+      "result_id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3"
+    },
+    {
+      "claim_id": "50140c36-c9ba-4e0f-927c-a9abba0f6861",
+      "result_id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3"
+    },
+    {
+      "claim_id": "0b62115f-cb12-4e80-bba3-4724c2053ebd",
+      "result_id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3"
+    },
+    {
+      "claim_id": "ce941672-706b-4354-b1db-83dc13a2f105",
+      "result_id": "2546a328-b7ce-419c-bb58-aa01956192a4"
+    },
+    {
+      "claim_id": "cc42e9da-4497-43d5-a9e0-3becd95fe182",
+      "result_id": "2546a328-b7ce-419c-bb58-aa01956192a4"
+    },
+    {
+      "claim_id": "42071ca1-e811-41f0-81f8-24d30aad118c",
+      "result_id": "8791d09c-2596-4c38-9bce-ffcba799d5c0"
+    },
+    {
+      "claim_id": "1c57fd29-7cb3-41f5-9948-61c0e27e3998",
+      "result_id": "8791d09c-2596-4c38-9bce-ffcba799d5c0"
+    },
+    {
+      "claim_id": "66f1b417-9f12-49f6-808c-af1b8a9e71f4",
+      "result_id": "8791d09c-2596-4c38-9bce-ffcba799d5c0"
+    },
+    {
+      "claim_id": "7f0e5e06-e0bc-4869-a95e-10d79f7a4fa6",
+      "result_id": "8791d09c-2596-4c38-9bce-ffcba799d5c0"
+    },
+    {
+      "claim_id": "e0a621b3-80dd-48d1-8f56-087c28d5bda4",
+      "result_id": "8791d09c-2596-4c38-9bce-ffcba799d5c0"
+    },
+    {
+      "claim_id": "150b656f-3a03-4288-a2e3-473d47a7d95d",
+      "result_id": "8791d09c-2596-4c38-9bce-ffcba799d5c0"
+    },
+    {
+      "claim_id": "56997145-c994-4192-b0ea-7b02b68e199b",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "5a4db5ee-494d-4f95-b846-7e6117952629",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "0a0a2704-aeb6-43ec-93a8-cda5a63aeb0a",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "d4ad3923-80b5-487a-bd17-fc2beec0a286",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "32f38fb2-8f69-4b9f-bd23-bf6026de0308",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "0200eb7d-b50f-406e-b69a-47b96432ae76",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "a3a5afa9-09f0-4f24-9912-bc6ec4006558",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "55eb3a53-4edd-4afc-a5e7-c8fe14c27a1e",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "1c811184-8ea4-4ca4-8194-5790c3fb5293",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "52fdd60b-eac7-450f-9e00-bcc753588f79",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "d2c35cfe-89e2-4acc-a24e-3a366d68d599",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "953641b0-9581-4acc-8178-3b5fd0acf254",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "e74dc1d7-f078-49ff-8df4-187e701c3582",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "85a38eea-dc4a-4f2b-9a1a-5d71d609bf5d",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "772556e8-a065-4db4-a871-20ecd1dda9b6",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "af548fc5-d001-44d4-9b75-efb4d5651303",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "50aa8895-597f-4b11-af5b-af0c0ee6172e",
+      "result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd"
+    },
+    {
+      "claim_id": "bdc523a6-5e12-4034-ac12-660e090c45ad",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "07ac2c6e-3f45-4723-8111-bcdc1a99e62a",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "d7526978-b428-4f0c-8a30-8cbd95dc1cdd",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "320eadcd-2b4d-4182-87be-bb63ce7a3af9",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "2251c544-7907-4b4e-860e-f48a0dcab1d2",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "bd7701e2-b995-4f9b-bfee-863363546497",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "a238e25f-9659-441f-b489-79df2a9f8eaf",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "7bee8d6b-dc00-4241-85e5-0366b5f0a71f",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "34a09d41-d3fa-4477-a281-67449b2242be",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "6ef3cdee-0c7a-4b0a-8889-bcc06038c73a",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "98543352-8ff0-491b-8dea-23f197c55635",
+      "result_id": "f8920129-a075-4922-95e9-3ddde9d646d2"
+    },
+    {
+      "claim_id": "0703d7aa-58af-4957-bf1a-746938161fc8",
+      "result_id": "632b5036-6cd2-4716-82e6-3df0745640f2"
+    },
+    {
+      "claim_id": "c324b88d-d9fa-49ba-ba9b-d947c346bb6f",
+      "result_id": "632b5036-6cd2-4716-82e6-3df0745640f2"
+    },
+    {
+      "claim_id": "922189cf-fa22-4243-9759-78d92665d049",
+      "result_id": "632b5036-6cd2-4716-82e6-3df0745640f2"
+    },
+    {
+      "claim_id": "4c7751c7-b8f8-43f9-a749-e0f09975a9fe",
+      "result_id": "632b5036-6cd2-4716-82e6-3df0745640f2"
+    },
+    {
+      "claim_id": "4bba66e5-45d6-43af-951f-83f833ad7250",
+      "result_id": "632b5036-6cd2-4716-82e6-3df0745640f2"
+    },
+    {
+      "claim_id": "dc5f5a31-d7b3-4061-85b5-b8a49403b6ea",
+      "result_id": "632b5036-6cd2-4716-82e6-3df0745640f2"
+    },
+    {
+      "claim_id": "b604f4f3-b058-4688-abdd-343c5e19968e",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "8e8f59b3-dce6-4507-bfee-d98d7afb2984",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "aa7fe961-5aea-4e33-b420-d2373a1e32ec",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "473fa452-e43a-421e-a5c7-3202fd450b5f",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "16cbb4a7-c8c6-4a9f-b6c1-9e335c6e88ae",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "a80300c5-07d3-4f15-9972-592e360d6a48",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "46d669d2-eeea-4130-9ea5-d911f88abd0c",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "6512ee6b-93b2-4aaa-aa37-24b01c53864b",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "81a2d826-b50e-4a9b-967d-ed537a8e6dd8",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "539f21a5-74e4-46e2-8199-6f1b646c400a",
+      "result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4"
+    },
+    {
+      "claim_id": "a461e7de-25da-496d-8faa-979000ef7b16",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "98f1ef2b-bf69-4b8a-bcab-973d326e63bd",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "d25df21c-6f53-4ac8-9c89-f8fb0ee98a5f",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "1f493ee7-4c6c-4497-89f4-5b6811795e34",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "11ff95a0-03be-4da1-ba3d-b45e535cb0bd",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "7611e6c4-32e4-4c56-9fec-ea951257aee9",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "cc23ca0c-7d4d-4326-b72f-6d52c0f44b9c",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "7dad62c2-88d2-47bc-bff5-0c90d19fa20d",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "d469f46b-992f-429d-96ee-405b3c3022e8",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "0f993d9e-8839-49fa-b4ea-6ac296209b88",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "1ed22cd8-63d8-4686-bcc8-1f1b2dc503f0",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "3060fb69-fec0-4475-84cd-1356aab0c573",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "466c969b-0546-45f0-bfdc-106c7cd37a72",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "0f87bb04-5f74-463c-8189-1b12850bf2c3",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "d0e80827-399c-46ee-8f99-312f7f555667",
+      "result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3"
+    },
+    {
+      "claim_id": "727fbce9-d993-4e63-94ac-541744340e46",
+      "result_id": "77b250c0-5df2-4e7f-a4c9-4a048e35dd1b"
+    },
+    {
+      "claim_id": "8f87cddc-ac0f-4b0b-811d-09742a5fdce8",
+      "result_id": "77b250c0-5df2-4e7f-a4c9-4a048e35dd1b"
+    },
+    {
+      "claim_id": "837f4d6b-b94e-40fb-8eff-bb959d7afe35",
+      "result_id": "77b250c0-5df2-4e7f-a4c9-4a048e35dd1b"
+    },
+    {
+      "claim_id": "0e21c395-35c3-41e5-bacd-d0df8a3bb610",
+      "result_id": "77b250c0-5df2-4e7f-a4c9-4a048e35dd1b"
+    },
+    {
+      "claim_id": "7f304d22-0953-43eb-a285-faa047dc92be",
+      "result_id": "77b250c0-5df2-4e7f-a4c9-4a048e35dd1b"
+    },
+    {
+      "claim_id": "f3c4a840-b7f8-4184-82f7-6ad9c8d60b3d",
+      "result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87"
+    },
+    {
+      "claim_id": "1728d22b-f6ef-436e-be73-ede6b5bb9687",
+      "result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87"
+    },
+    {
+      "claim_id": "792769e2-3a49-4c91-b506-25c22e81de87",
+      "result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87"
+    },
+    {
+      "claim_id": "ce941672-706b-4354-b1db-83dc13a2f105",
+      "result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87"
+    },
+    {
+      "claim_id": "17fb3286-afd3-4f25-98d3-36f9f933d2d9",
+      "result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87"
+    },
+    {
+      "claim_id": "34a3ac8d-8b0e-4cc0-8dfd-784748c048d4",
+      "result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87"
+    },
+    {
+      "claim_id": "cc42e9da-4497-43d5-a9e0-3becd95fe182",
+      "result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87"
+    },
+    {
+      "claim_id": "ae828a46-f852-4638-b3f8-c3ffee7af859",
+      "result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "a489573f-351b-433d-99d5-50b90bbdeff1",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "955b092b-151c-43da-a7e5-3c2d5da85d75",
+      "peer_result_id": "8791d09c-2596-4c38-9bce-ffcba799d5c0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both OpenEval and peer reviewers support the observational claims about heterogeneity in worm behavior (C1, C2, C20-C22, C29). Peer reviewers explicitly acknowledge this as a 'key observation' and 'prominent feature of the empirical data.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "85caec93-57d6-47b1-9d88-90791bf37da7",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "c3fed42a-5200-4b78-900a-8c91d6e27516",
+      "peer_result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on core modeling results (C3-C5, C18, C38-C41, C47-C50). Both find the model well-supported and convincing. OpenEval emphasizes quantitative fit to data; peer reviewers confirm the model 'performs well' and 'matches the data,' though Reviewer 2 raises a philosophical concern about potential circularity in fitting.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "67f25cff-8975-4c55-b54f-3cbd5061941c",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2e380809-78f9-40f1-bc89-f6ed93841801",
+      "peer_result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the key mechanistic insight about stochastic sampling producing apparent transitions (C51-C54). OpenEval finds this well-supported by Figure 2f; peer reviewers accept this as 'a strong argument that apparent state changes can arise as an epiphenomenon of stochastic processes.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d839d794-3b3a-44a7-8b4a-bc080c209075",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "d26eebd1-5d2d-4541-91a4-0ca2d7b30f49",
+      "peer_result_id": "f8920129-a075-4922-95e9-3ddde9d646d2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on model comparison results (C56-C66). Both support the conclusion that non-binary models outperform binary models. OpenEval cites quantitative evidence (JSD values, p<0.001); peer reviewers implicitly accept this by endorsing the single-state model over two-state alternatives.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "0ab88bb5-6876-4fe8-a211-d51ab5a5635a",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "28c69bd6-1d0a-4ee1-9159-e0c866202387",
+      "peer_result_id": "77b250c0-5df2-4e7f-a4c9-4a048e35dd1b",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Perfect agreement. Both rate claims about pheromone effects (C42-C46) as uncertain/speculative. OpenEval notes the explanation is 'reasonable but unvalidated'; peer reviewers treat this as a methodological consideration without challenging it.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "d05dc946-aee7-401a-9948-0b790d143b03",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4adc5d75-9ad1-429f-9abd-c29e39103a65",
+      "peer_result_id": "632b5036-6cd2-4716-82e6-3df0745640f2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both support the conceptual implications (C67-C72) about simplification and mechanistic parsimony. OpenEval finds these logically follow from model success; peer reviewers explicitly endorse that 'simple neuronal mechanisms can drive behavioral sequences that appear more complex.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "c7f6c36a-d849-4558-873a-c39ad5ed3373",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "f46c04ff-8d31-419f-a0a3-1b1a51f72ca5",
+      "peer_result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement. OpenEval supports the biological interpretation of M (C73-C77) as reasonable and mathematically correct. Peer reviewers express uncertainty, stating 'there is no obvious candidate for the neuronal basis of the decaying factor M' and that this 'weakens the case for the model.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "82ade0ff-e2bc-494c-9770-586f1152ca49",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "4584fdb4-08de-4e7d-9e3d-10cdbb334422",
+      "peer_result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on neural mechanism claims (C78-C91). OpenEval finds the connection to neural circuits from L\u00f3pez-Cruz et al. well-supported and reasonable. Peer reviewers find this uncertain, noting 'contradictory evidence' that undermines the hypothesis linking M to sensory neuron activity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "09fd9bf3-c9d1-4169-8fce-338d226031f5",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "91e91196-f5bb-4734-bb74-ba4711be8567",
+      "peer_result_id": "1fbc7f05-948e-4e2e-8593-b490dd86a9d3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on complexity of neural mechanisms (C92-C98). OpenEval supports these as providing important context about multi-level decay. Peer reviewers specifically critique this discussion, finding the evidence about glutamatergic signaling and sensory neuron depolarization 'contradictory' and problematic.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "5534d2d3-510d-4529-bb69-e0cddbe83cd6",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "61292e00-8f87-4a71-85cd-e1acf13918b9",
+      "peer_result_id": "bf7617ea-eb9a-4968-af4c-bfd0da1703e4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on limitations and future directions (C99-C102, with C101 shared). OpenEval supports these as appropriately identifying limitations. Peer reviewers express stronger concern, questioning 'what insight the model provides' absent an underlying mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "8dcb689f-10df-420f-beae-abfda7482b85",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "35767455-b473-446c-b90d-85919da34d29",
+      "peer_result_id": "187c63cb-0447-4d5d-b3cc-b7c46c6f04dd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on conceptual framework (C6, C16-C17). OpenEval finds the hypothesis well-supported by modeling results. Peer reviewers affirm this, with the editor stating authors 'provide convincing evidence' for the single-state interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "eddd896d-2e00-4492-b539-251a77eaf354",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "173b778c-35cc-4938-a537-6d920708a59f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports background and context claims (C7-C15) about biological context and stochastic reorientations. No corresponding peer review evaluation found; reviewers did not specifically address these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "3e2f4c8b-8907-4576-8f29-1168c0b2a5d9",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "6d595d3d-3d79-4995-a71b-ec73d9a3d5c3",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports methodological description and critique (C19, C23-C28) of L\u00f3pez-Cruz et al. classification approach. No corresponding peer review evaluation found; reviewers did not specifically address these methodological critiques.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "16df6603-866e-4b79-8c59-d199625fbff7",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "2546a328-b7ce-419c-bb58-aa01956192a4",
+      "peer_result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on methodological justification (C33, C36). OpenEval supports these as providing important context for the Gillespie algorithm approach. Peer reviewers find the methodology 'well described' but raise conceptual concerns about circularity in the fitting process.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    },
+    {
+      "id": "9289b1a9-3a40-4c12-b9c1-8341984987ac",
+      "submission_id": "6d3ce113-8c0d-40d9-a57c-e953b4f23073",
+      "comparison_id": "CMP15",
+      "openeval_result_id": null,
+      "peer_result_id": "1c359ca7-569c-480d-8e73-e0ff9e9b1a87",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MINOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers evaluate methodological claims (C30-C32, C34-C35, C37) about the Gillespie algorithm implementation. While OpenEval R2 includes these claims, peer R8 specifically focuses on methodology description, finding it well-described but questioning potential circularity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:14.959594Z"
+    }
+  ]
+}

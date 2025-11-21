@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors formed a multi-lab collaboration across 10 laboratories using standardized behavioral tasks and Neuropixels probes to repeatedly target the same brain regions (secondary visual areas, hippocampus, and thalamus) in mice performing a decision-making task, generating 121 experimental replicates. They developed a common histological and data processing pipeline including new quality-control criteria called RIGOR that are claimed to be applicable beyond this dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm this is 'an important contribution to the field' and praise the 'well-motivated large-scale collaboration' that 'allowed systematic assessment of lab-to-lab reproducibility.' The standardized approach and dataset generation are not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C87",
+      "C89"
+    ],
+    "result": "After applying RIGOR quality control measures, basic electrophysiological features including neuronal yield, firing rate, and LFP power were reproducible across laboratories, with permutation tests showing no significant lab effects for most features (except spike amplitude in VISa/am). Lab identity could not be decoded from electrophysiological features using a Random Forest classifier.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state the work provides 'convincing evidence that basic electrophysiology features...were fairly reproducible across labs with proper preprocessing.' The editor notes 'compelling evidence' for reproducibility of these basic features. No reviewer challenges these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "The proportions of cells modulated by single decision-making variables (stimulus, choice) were reproducible for many tests and brain regions, but sometimes failed to reproduce in some regions, particularly thalamic areas. Reproducibility of the full distribution of firing rate modulations was tenuous and failed in thalamic regions for some tests, with failures driven by outlier labs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the paper 'better reflects where reproducibility is affected when using common, simple...analyses' after revisions. The finding that single-neuron functional properties show mixed reproducibility is accepted as part of the contribution showing 'where reproducibility is affected.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Tests that considered a neuron's full response profile (using PCA-based embeddings and decoding analyses) were more robust than single-variable tests. Brain region identity was significantly decodable from single-neuron response profiles, while laboratory identity was not significantly decodable, though some labs showed partial segregation in embedding space and 7/10 labs differed significantly when considering all neurons together.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers state the work provides 'convincing evidence that...single-neuron functional properties...were fairly reproducible across labs with proper preprocessing.' The finding that more complex analyses are more robust is part of the accepted contribution showing the paper 'better reflects where reproducibility is affected when using...more complex analyses.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C134",
+      "C137"
+    ],
+    "result": "Probe targeting showed substantial variability with a mean displacement of 104 \u03bcm from planned coordinates (targeting variability) and 356 \u03bcm when measured from histology (geometrical variability). Permutation testing showed no significant lab-dependent effects (p=0.19 for geometrical variability, p=0.45 for angle). The resolution of probe insertion targeting is approximately 360 \u03bcm, which must be taken into account when planning insertions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly note that 'variability in electrode targeting was a source of some differences between datasets' and accept this as a key finding. One reviewer specifically highlights that Figure 3-Figure Supplement 1 showing probe depth adjustments is 'immensely informative for the field' and provides 'solid evidence' for the importance of this preprocessing step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C126"
+    ],
+    "result": "Twelve exclusion criteria were implemented for quality control, including RIGOR criteria (yield, noise, LFP power, qualitative visual assessment, and single unit metrics) and IBL-specific criteria (behavior and session number). Of 121 sessions recorded, 39 were excluded, retaining 82 sessions for analysis. Reproducibility was enhanced by these rigorous QC metrics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm that 'proper preprocessing' and quality control enhanced reproducibility. One reviewer notes 'the suggestions outlined in the paper for streamlining preprocessing pipelines and quality metrics will provide general guidance for the field.' The RIGOR framework and its contribution are accepted, though reviewers request additional discussion comparing it to existing approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C43"
+    ],
+    "result": "A multi-task neural network (MTNN) encoding model was developed that accurately predicts observed firing rates and slightly outperforms GLMs. Movement covariates had the highest unique contribution to model performance, while lab and session IDs had close to zero effect sizes, indicating that within-lab and between-lab random effects are small and comparable.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the MTNN analysis as part of the 'host of state-of-the-art analyses' performed on the dataset. The finding that lab effects are minimal after accounting for covariates supports the overall reproducibility conclusion and is not challenged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Population-level decoding analyses showed no statistically significant differences in mean decoding scores across labs for any region or variable (one-way ANOVA). Region identity could be accurately determined from decoding scores and unit counts, while lab identity was less decodable with F1 scores near chance, indicating that decodability of task variables from populations remains comparable across labs after accounting for neuron numbers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state the work provides 'convincing evidence that...population-level decoding were fairly reproducible across labs with proper preprocessing.' The editor notes 'compelling evidence' for reproducibility of population-level analyses. These findings are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C143"
+    ],
+    "result": "High LFP power in dentate gyrus (DG) was used to guide physiology-to-histology alignment of probe positions. A centralized histology and registration pipeline was used to assign each recording site to anatomical locations based on registration of histological probe trajectories to the Allen CCF and electrophysiological features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer specifically notes that Figure 3-Figure Supplement 1 showing 'how much probe depth is adjusted by using electrophysiological features such as LFP power' is 'immensely informative for the field' and highlights this 'should be a critical step in preprocessing pipelines.' The centralized histology approach is accepted as part of the standardization that enhanced reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Spatial position and waveform characteristics of neurons showed minor but significant relationships to firing rates and task modulation, but accounted for only small amounts of variability (2-4% in most regions). High-firing neurons in LP, PO, and DG had different spike characteristics compared to other neurons, while in VISa/am and CA1, only spatial position contributed to firing rate differences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These analyses are part of the accepted investigation into sources of variability. Reviewers do not challenge these findings, which support the conclusion that 'neither spatial position within a region nor waveform characteristics account for very much variability in neural activity.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C59"
+    ],
+    "result": "The Allen CCF and stereotaxic coordinate systems are slightly offset, with a mean angle difference of 7.5 degrees from planned angles. This offset has been resolved in a corrected atlas and can now be easily accounted for by any lab.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer specifically requests that 'this paper could recommend software tools, procedures, or code to do trajectory planning that accounts for this' offset. The finding itself is accepted, and the reviewer's comment indicates it is seen as an important practical contribution that needs better implementation guidance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C45",
+      "C14",
+      "C44",
+      "C13",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The study demonstrates that electrophysiology experiments are vulnerable to lack of reproducibility, but standardization of procedures and QC metrics can help mitigate this problem. The authors offer recommendations including standardized protocols for data collection and processing, methods to account for variability in electrode targeting, and rigorous data quality metrics such as RIGOR.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm the overall conclusion. The editor states the work provides 'compelling evidence' for reproducibility with proper preprocessing. Reviewers note 'the suggestions outlined in the paper...will provide general guidance for the field' and that the work is 'well-positioned' to discuss quality control approaches, though they request additional discussion of advantages and disadvantages of different QC approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The RIGOR quality-control criteria are claimed to be applicable to datasets beyond the current study. The full dataset is shared openly along with analysis tools, and the analyses required significant improvements in data architecture, visualization, spike sorting, histology image analysis, and video analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accept the RIGOR framework as a contribution, one reviewer notes the need for 'explicit discussion' about 'benchmarking the automated metrics to manual curation' and states 'a thorough comparison of automated metrics against a careful, large, manually-curated dataset, is an important benchmarking step for future studies.' Another reviewer requests discussion 'comparing/contrasting the use of the RIGOR framework with existing spike sorting statistics,' noting the work 'does not currently do so.' This indicates uncertainty about the generalizability claims without further validation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11"
+    ],
+    "result": "Human skin and underlying tissues are viscoelastic, meaning deformation depends on both current force and recent loading history, with deformation changes lagging force changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C11 establish the viscoelastic nature of skin tissue based on established knowledge and are consistent with the experimental observations presented throughout the manuscript. These foundational claims are well-supported by the literature and the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Variations in loading history affect fingertip deformation, as evidenced by contactor position and path differences between regular and irregular stimulation sequences, with variability persisting throughout the loading cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C31-C49 are well-supported by contactor position data shown in Figures 2-4. The quantitative measurements of variability (20-fold at protraction onset, 7-fold during plateau, 4-fold at retraction end) provide strong evidence. The consistency across neuron types (C49) rules out confounding from experimental variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Variation in preceding loading affected neurons' signaling of force direction, with increased firing rate variability during irregular sequences most evident during force protraction (2-fold for FA-1, 2-fold for SA-1, 70% for SA-2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, and C39-C43 are strongly supported by neural recording data in Figures 3-4. The quantified increases in firing rate variability are statistically significant and consistent across neuron types, though with different magnitudes. The parallel between mechanical and neural variability (C38, C50) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Neuronal firing is determined by fingertip deformation rather than applied force itself, with models incorporating position-velocity interactions best predicting neural responses (R\u00b2=0.75 for FA-1, 0.88 for SA-1, 0.91 for SA-2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C79-C82 are supported by regression analysis in Figure 5. The two-way interaction model significantly outperformed simpler models, and the importance of position-velocity interactions suggests that current deformation state modulates responses to deformation changes. However, the varying prediction accuracy across neurons and types indicates complexity not fully captured by contactor behavior alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "Individual neurons showed heterogeneous responses to loading history: most signaled current force direction, but a minority signaled preceding direction or mixed information. Information about current direction was reduced in irregular sequences, while information about preceding direction was present during early protraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C20, and C53-C62 are supported by information-theoretic analysis in Figure 6. The classification of neurons into current, previous, and mixed categories is data-driven and statistically validated. The reduction in information transmission about current direction (50% for FA-1/SA-1, 20% for SA-2) is significant and demonstrates the impact of viscoelastic history.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SA-2 neurons with ongoing activity between loadings signaled information about the fingertip's viscoelastic state even when unloaded, with population activity tracking fingertip deformation state throughout interstimulus periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21-C22, and C66-C71 are supported by data in Figures 7-8. The population analysis using multidimensional scaling and Procrustes alignment demonstrates good correspondence between SA-2 activity and contactor position. The clustering patterns according to preceding force direction during interstimulus periods provide strong evidence for continuous signaling of viscoelastic state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C102"
+    ],
+    "result": "Tactile neurons at the population level signal continuous information about the fingertip's viscoelastic deformation state shaped by both recent history and current loading, with effects most prominent during force protraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C72-C75, and C102 represent the main conclusions of the study and are well-supported by the combined evidence from mechanical measurements, neural recordings, regression analysis, and information theory. The convergence of multiple analytical approaches strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The observed heterogeneity between neurons of the same type is expected given their distributed transduction sites and sensitivity to local stresses, with mechanical anisotropy from collagen fiber strands likely playing a crucial role. This diversity might enhance information collection by the neuronal population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 are interpretive and speculative. While C76 is a reasonable inference supported by citations, C77 is explicitly speculative about the role of collagen fiber anisotropy, and C78 is speculation about functional benefits. These claims lack direct experimental support in the current study, though they are consistent with cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The impact of stimulation history was more pronounced in FA-1 and SA-1 compared to SA-2 neurons, potentially due to differences in their sensitivity to surface deformations versus bulk tissue deformations, with partial slippages particularly affecting FA-1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91 are supported by data in Figures 4A and 6A showing differential effects across neuron types. The interpretation regarding different sensitivities (C84-C86) is well-supported by citations. However, the explanation involving partial slips (C88-C89) is more speculative, though consistent with cited literature. The regression analysis results (C90-C91) support the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "SA-2 neurons continuously measure stresses in collagen fiber strands and are tailored to encode slow viscoelastic events. They could help keep the brain updated about mechanical state of body parts and aid in computing motor commands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C99 mix well-supported interpretations (C92-C95, supported by citations and consistent with data) with speculation about functional roles (C96, C99). Claims C97-C98 cite supporting evidence from other studies. However, the functional claims about aiding motor control are speculative and not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The influence of fingertip viscoelasticity on task performance has not been systematically investigated. Information about viscoelastic state could potentially aid the brain in managing effects on tactile coding and fingertip actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 accurately describe gaps in the literature. Claims C103-C105 are speculative about potential functional roles and neural processing mechanisms. These are reasonable hypotheses but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Viscoelastic deformability of fingertips plays a pivotal role in supporting finger functions, and the viscoelastic memory effect on tactile signaling can be perceived as a by-product of optimization within biological constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are well-established knowledge about fingertip function. Claim C109 is a speculative interpretation about evolutionary optimization but is a reasonable perspective given the demonstrated functional importance of viscoelasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C27"
+    ],
+    "result": "First-order tactile neurons provide information about fingertip forces by signaling local tissue deformations. The relationship between forces and neural signaling is complex due to fingertip geometry and material properties. Loading history might influence neural responses due to viscoelasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 and C27 establish background knowledge and hypotheses. These are well-supported by citations to prior literature and represent established understanding in the field. Claim C10 is a hypothesis that is subsequently tested and supported by the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The study recorded from 60 FA-1, 73 SA-1, and 41 SA-2 neurons with widely distributed receptive fields in 33 healthy adults using established microneurography techniques. The experimental protocol involved regular and irregular sequences of force stimuli at physiologically relevant frequencies and magnitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C110-C122 describe the methods and sample characteristics. These are direct reports of the experimental procedures and are well-documented. The methods are appropriate and well-justified by citations to prior work. The exclusion of FA-2 neurons (C122) is justified by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Forces were applied in five directions (normal and 20\u00b0 off-normal in four tangential directions) with standardized temporal profiles (125ms protraction, 250ms plateau at 4N, 125ms retraction, 250ms interstimulus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe the stimulus parameters and are directly supported by the experimental protocol and illustrated in Figure 1B. These parameters are well-justified as physiologically relevant by citations.",
+    "result_type": "MINOR"
+  }
+]

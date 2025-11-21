@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C80",
+      "C85",
+      "C86",
+      "C91"
+    ],
+    "result": "The authors developed a reinforcement learning approach for turbulent odor navigation using interpretable olfactory features (odor intensity and sparsity) extracted from temporal traces, with no spatial information beyond orientation relative to mean flow. Features are defined as moving averages over a temporal memory window and discretized into olfactory states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42, C80, C85-C86, and C91 collectively describe the methodological framework. The approach is clearly defined with explicit feature engineering (moving averages of intensity and sparsity), discretization procedures (percentile-based thresholds), and the use of temporal memory. The method is implemented and tested as shown in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C141",
+      "C235",
+      "C236",
+      "C237",
+      "C238"
+    ],
+    "result": "An optimal memory exists that minimizes encounters with the 'void state' (no odor detection). This optimal memory scales with the blank time in turbulent plumes and emerges from a trade-off: short memories trigger unnecessary recovery within the plume, while long memories delay recovery after accidentally exiting the plume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C141, and C235-C238 are supported by Figure 2A-B showing performance metrics as a function of memory, with a clear optimum at T*=20. The mechanistic explanation (trade-off between ignoring short blanks vs. prompt recovery from long blanks) is demonstrated through spatial distributions of void states at different memory values (Figure 2C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C145",
+      "C149",
+      "C150",
+      "C151",
+      "C239",
+      "C240"
+    ],
+    "result": "Adaptive memory, set equal to the most recent blank experienced along the agent's path, achieves near-optimal performance without requiring prior information about odor statistics. This confirms that memory should match the blank time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C145, C149-C151, C239-C240 are supported by Figure 3C showing adaptive memory performance approaching optimal fixed memory performance. Figure 3A-B demonstrates the fluctuating nature of adaptive memory and its relationship to blank time statistics. The approach successfully avoids reliance on prior information while maintaining performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C126",
+      "C202"
+    ],
+    "result": "Q-learning agents successfully learn to navigate to odor sources using only olfactory states, without spatial maps or odor models. Learning is demonstrated by continuously improving cumulative reward over training episodes, with all performance metrics plateauing at near-optimal values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120, C126, and C202 are supported by Figure 1D showing convergence of four performance metrics (cumulative reward, fraction success, reward|success, normalized time) over 100,000 training episodes. The plateau in all metrics indicates achievement of a nearly optimal policy. The approach's reliance solely on olfactory states is a core design feature validated by successful navigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C160",
+      "C161",
+      "C167",
+      "C168",
+      "C214",
+      "C215",
+      "C220"
+    ],
+    "result": "Agents learn to surge upwind in non-void states and recover by casting crosswind when odor is absent. The learned recovery strategy resembles casting behavior in flying insects and outperforms heuristic recovery strategies. Macroscopically, all agents surge upwind when detecting odor and recover when memory is empty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C160-C161, C167-C168, C214-C215, and C220 are supported by Figure 3D showing superior performance of learned recovery, and Figure 4 showing spatial distributions and policies. The learned recovery involves initial upwind surge (6\u00b12 steps) followed by crosswind casting (Figure 4\u2014figure supplement 2, Table 1), resembling insect behavior cited in C161.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C177",
+      "C178"
+    ],
+    "result": "Optimal agents with learned recovery limit void state encounters to a narrow band (26% of agents) at the plume edge, from which they quickly recover. This suggests temporal odor features effectively predict plume exit and points to an intimate connection between temporal predictions and spatial navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C177-C178 are supported by Figure 4 showing spatial distribution of void states concentrated at plume edges for learned recovery (26%) versus more dispersed distributions for heuristic recoveries (40-46%). The inference about temporal-spatial connection (C54-C55) is reasonable given the spatial localization of void states, though this remains somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C192",
+      "C193",
+      "C194",
+      "C199",
+      "C200"
+    ],
+    "result": "The optimal strategy generalizes robustly across six distinct turbulent environments with different Reynolds numbers, sparsity levels, and geometries. In the most intermittent environment (Env 6), 91% of agents succeed with trajectories less than twice the shortest path. Performance degrades in non-native environments but remains high, suggesting minor tuning may enable adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C192-C194, C199-C200 are supported by Figure 5 showing performance across six environments. Quantitative results (C199: 91% success in Env 6) are explicitly stated. Figure 5B demonstrates maintained high success rates across environments despite degradation. The suggestion about fine-tuning (C57, C194) is appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C131",
+      "C135",
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "With instantaneous memory (T=1), agents frequently activate recovery within the plume due to pervasive void states. Increasing memory reduces voids within the plume and smooths olfactory states, but excessively long memory delays recovery after accidentally exiting the plume. The delay is linear with memory for backtracking recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131, C135, C137-C138, C140 are supported by Figure 2C showing spatial distributions of void states at different memory values (T=1, 20, 50) and example trajectories. The linear relationship between delay and memory (C140) is supported by Figure 2\u2014figure supplement 1 and the mechanistic explanation in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C165",
+      "C176",
+      "C196",
+      "C197",
+      "C219"
+    ],
+    "result": "Among heuristic recoveries, circling is second-best and privileges success rate over speed. Brownian and cast-and-surge recoveries show lowest performance. Cast-and-surge effectiveness depends critically on cast width and surge length parameters; arbitrary parameters yield poor performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165, C176, C196-C197, C219 are supported by Figure 3D and Figure 4 comparing recovery strategies. The observation about cast-and-surge parameter sensitivity (C197, C219) is supported by the poor performance of the fixed-parameter implementation tested, though this doesn't contradict literature using optimized parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C222",
+      "C223"
+    ],
+    "result": "The learned policies show considerable redundancy in non-void olfactory states, suggesting potential for state space reduction. However, drastically reducing to a single non-void state degrades performance, indicating multiple states are necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C170, C222-C223 are supported by Figure 4 showing similar upwind actions across many non-void states, and Figure 5\u2014figure supplement 1 demonstrating performance degradation with single non-void state. The suggestion for optimization (C223) is appropriately framed as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The learned recovery strategy includes downwind actions to avoid overshooting the source, but cannot recover the plume from positions beyond the source due to predominantly sideways casting. Recovery trajectories start with 6\u00b12 upwind steps, then cast crosswind with minimal downwind action, mixing exploitation (surge) and exploration (cast).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C174, C179-C181 are supported by Figure 4 showing policy details and Figure 4\u2014figure supplement 2 with Table 1 quantifying recovery behavior. The characterization of learned recovery as mixing surge and cast is well-supported by the data, though the inference about plume-specific dependence (C174) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C107",
+      "C283"
+    ],
+    "result": "Agents within turbulent plumes experience intermittent odor traces switching between whiffs and blanks. Turbulent plumes are full of holes, so void states occur both within and outside the plume. Only a thin core region has intermittency >66%, while challenging edge regions have <33% intermittency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C107, C283 are supported by Figure 1A-B showing odor snapshots and time traces, and Figure 1C showing intermittency distributions. The characterization of turbulent odor as intermittent is fundamental to the problem and well-documented in cited literature. Quantitative intermittency values (C283) match Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The stimulus-response algorithm avoids computational burden by not requiring spatial maps or prior odor information, needing only orientation relative to mean flow. However, agents must start within the plume; far from the source, they remain in void state and cannot recover unless previously detecting odor. Map-based approaches can navigate from larger distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C204, C207-C210 accurately describe advantages and limitations of the approach. The limitation (requiring plume proximity) is inherent to the map-free design and acknowledged by the authors. Comparison to map-based approaches (C209-C210) is supported by citations to POMDP work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C221"
+    ],
+    "result": "Navigation in turbulent plumes requires handling both odor presence and absence by alternating strategies: prolonged absence triggers void state and recovery, while odor detections prompt upwind surge. Blanks shorter than sensing memory are ignored, allowing response to earlier detections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C213, C221 describe the core algorithmic strategy supported by the overall results. The two-strategy approach (surge vs. recovery) is demonstrated throughout Figures 2-4. The mechanism of ignoring short blanks through temporal memory is central to the optimal memory result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C101",
+      "C105",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors trained tabular episodic Q-learning by placing agents at random locations within the plume at episode start. The optimal policy maximizes cumulative reward, which corresponds to reaching the source as fast as possible since reward is only positive at the source. Test agents were evaluated from ~43,000 admissible locations (where odor is non-zero at least once).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C101, C105, C127-C128 describe the training and evaluation methodology. These are straightforward methodological details consistent with standard Q-learning and clearly described in Materials and Methods. The number of test locations (43,000) is explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Six test environments were created with distinct characteristics: Environment 1 (native training), Environment 2 (sparser via higher detection threshold), Environments 3-4 (near surface, less fluctuation), Environment 5 (lower Re, different turbulence generation), Environment 6 (higher Re, longer domain, smaller source, more sparse). Bulk environments represent conditions far from substrate; surface environments represent near-surface conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C189 describe the test environments shown in Figure 5A and detailed in Materials and Methods. These are factual descriptions of the simulation parameters and geometries used for generalization testing. The characterization of what conditions they represent is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "Bacterial cells navigate chemical gradients using temporal concentration changes despite lacking spatial perception. Larger organisms cannot follow gradients because turbulence breaks odors into sparse pockets. Turbulent plumes distort, expand, and dilute as they travel from the source, with odor intensity and blank patterns depending on distance from release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C69, C71-C72 describe established background knowledge supported by multiple citations (Berg 1975; Murlis et al. 1992; Falkovich et al. 2001; Celani et al. 2014; etc.). These are well-established facts in the field providing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C216",
+      "C217"
+    ],
+    "result": "Backtracking behavior has been observed in ants, tsetse flies, and cockroaches, and previously used in computational models. Casting is a well-studied computational strategy observed in flying insects. Cast-and-surge also emerges in algorithms using odor models for Bayesian updates or policy optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117, C216-C217 describe prior observations from the literature, supported by multiple citations (Wystrach et al. 2013; Torr 1988; Baker 1990; David et al. 1983; Vergassola et al. 2007; etc.). These provide biological and computational context for the recovery strategies tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252",
+      "C253"
+    ],
+    "result": "Living systems display memory in olfactory search. In insects, temporal scales associated with memory can be measured: loss of plume contact triggers casting with a delay; odor detection elicits upwind surges outlasting the odor by seconds; timing of previous encounters biases navigation in walking flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C248-C253 describe biological observations from cited literature (Verano et al. 2023; Card\u00e9 2021; Kuenen & Card\u00e9 1994; Kathman et al. 2024; Demir et al. 2020). These provide biological context for the memory mechanisms studied and suggest experimental directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C27",
+      "C30",
+      "C33",
+      "C218",
+      "C231",
+      "C247"
+    ],
+    "result": "Several open questions remain in the field: which turbulent odor features animals use for navigation; how chemosensation and spatial perception couple; whether map-free sequential decision-making is possible; whether casting is learned or hardwired; how different memory forms relate to spatial perception; and how algorithms handle odor presence vs. absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, C27, C30, C33, C218, C231, C247 identify knowledge gaps and open questions. These are appropriately framed as uncertainties in the field and motivate the current work. The authors acknowledge what remains unknown or untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C254",
+      "C255",
+      "C256",
+      "C259",
+      "C266",
+      "C268"
+    ],
+    "result": "The authors propose several experimental approaches to test their ideas: using optogenetics or virtual reality to measure memory as a function of odor history; tracking casting onset to monitor memory; comparing mouse navigation in light vs. dark to test spatial perception needs; using operant conditioning to initiate search before odor detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C254-C256, C259, C266, C268 propose future experiments but provide no data or validation. These are speculative suggestions for how to test the computational findings in biological systems. While reasonable proposals, they remain untested hypotheses rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C277",
+      "C278",
+      "C285",
+      "C286",
+      "C287",
+      "C288",
+      "C289",
+      "C290"
+    ],
+    "result": "Simulations used Schmidt number Sc=1 (appropriate for air, not water), with expected weak dependence since Batchelor and Kolmogorov scales are below source size. Data from direct numerical simulations of Navier-Stokes equations using second-order finite difference schemes, Adams-Bashforth for convection, Crank-Nicolson for diffusion, implemented in GPU-parallelized Fortran.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C191, C277-C278, C285-C290 describe simulation parameters and numerical methods. These are factual descriptions of the computational approach, with appropriate citations (Viola et al. 2023; Rigolli et al. 2022a-c). The expectation of weak Schmidt number dependence (C191) is supported by citations to relevant physics literature.",
+    "result_type": "MINOR"
+  }
+]

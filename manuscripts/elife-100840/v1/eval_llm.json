@@ -1,0 +1,460 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C46",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "A multi-lab collaboration was established in which 10 laboratories repeatedly targeted Neuropixels probes to the same brain location (spanning secondary visual areas, hippocampus, and thalamus) in mice performing a decision-making task, generating 121 experimental replicates from 78 adult C57BL/6 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C30-C31, C46, and C156-C158 collectively describe the experimental design, including the multi-lab nature, standardized targeting coordinates, number of replicates, and animal subjects. These are straightforward methodological descriptions that are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C126"
+    ],
+    "result": "A standardized data processing pipeline with quality control criteria (RIGOR) was developed and applied, resulting in 82 of 121 sessions being retained for analysis after exclusions based on hardware failures, histology issues, and various quality metrics, yielding 5,312 neurons for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C62-C76, C126 describe the development and application of quality control criteria. The exclusion counts are specific and add up correctly (121 total \u2192 82 analyzed), and the RIGOR criteria are clearly defined in Table 1. The claim that QC enhanced reproducibility (C126) is supported by subsequent analyses showing improved reproducibility after QC application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C134",
+      "C137"
+    ],
+    "result": "Probe targeting exhibited substantial variability, with a mean displacement of 104 \u00b5m from planned coordinates (targeting variability) and 356 \u00b5m when measured from histology (geometrical variability), plus a 7.5-degree mean angular displacement. This variability was not significantly different across laboratories (p=0.19 for position, p=0.45 for angle) and establishes a targeting resolution limit of approximately 360 \u00b5m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61, C134, C137 present quantitative measurements of targeting variability with specific values and statistical tests. The permutation tests show no significant lab-to-lab differences, supporting the conclusion that variability is inherent to the targeting procedure rather than lab-specific. The measurements are internally consistent and the conclusion about ~360 \u00b5m resolution is appropriately derived from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "After applying RIGOR quality control measures, basic electrophysiological features (neuronal yield, firing rate, LFP power) were reproducible across laboratories, with only spike amplitude in VISa/am showing significant lab differences. A Random Forest classifier could identify brain regions but not lab identity from these features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C86-C89 report findings from permutation tests (Figure 3d) and decoding analyses (Figure 3e). The statistical tests are appropriate, and the single exception (spike amplitude in VISa/am) is clearly noted. The inability to decode lab identity while successfully decoding brain region provides strong evidence for reproducibility of these basic features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "The proportions of neurons modulated by single decision-making variables were reproducible for many tests and brain regions, but sometimes failed to reproduce in some regions, particularly in thalamic areas. These failures were driven by outlier labs rather than systematic differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C92, C94-C95 describe findings from task-modulation analyses (Figure 4). The mixed reproducibility is clearly documented, with specific examples of failures (e.g., VISa/am stimulus onset, thalamic regions). The identification of outlier labs as the source of failures (C95) is supported by visual inspection of the data (Figure 4d) showing specific lab differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Analyses considering neurons' full response profiles (via PCA-based dimensionality reduction) were more robust than single-variable tests. While regional differences were clearly detectable, 7/10 labs showed significant differences when considering all neurons, but only 6/40 lab-region pairs showed significant differences, and controlling for cell numbers reduced these differences further.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C96-C102 describe the PCA-based analysis (Figure 5). The finding that full-profile analyses are more robust (C41) is supported by the comparison with single-variable tests. The KS test results are specific and appropriately qualified, noting that controlling for cell numbers (C102) reduced significant differences, which is an important methodological consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Spatial position within brain regions and spike waveform characteristics explained minimal variability in neural activity. High-firing neurons showed some spatial clustering and waveform differences in some regions (LP, PO, DG), but linear regression models explained only 2-5% of firing rate variability across regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109, C111 describe spatial and waveform analyses (Figure 6). The low R\u00b2 values (2-5%) from linear regression are clearly stated and support the conclusion that these factors account for minimal variability. The regional differences in whether spatial position or waveform features contribute are appropriately documented with specific examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Using reduced-rank regression encoding models, brain region identity was significantly decodable from single-neuron response profiles (macro F1=0.35, p<0.0001), while lab identity was not significantly decodable (macro F1=0.14, p=0.325). Lab decoding remained near chance when applied to individual regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 report decoding analysis results (Figure 7) with specific F1 scores and p-values. The contrast between successful region decoding and failed lab decoding provides strong evidence for reproducibility of neural response profiles across labs. The region-specific analysis (C114) appropriately controls for potential confounds from unequal region distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A multi-task neural network (MTNN) accurately predicted neural firing rates and showed that lab and session IDs had close to zero effect sizes in leave-one-out analysis, indicating that within-lab and between-lab random effects are small and comparable. Movement covariates as a group had the highest unique contribution to model performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 describe the MTNN analysis (Figure 8). The model's predictive accuracy is demonstrated (C115-C116), and the leave-one-out analysis (C120) provides strong evidence that lab identity contributes minimally to neural variability when other covariates are accounted for. The finding about movement covariates (C119) is clearly shown in Figure 8e.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Population-level decoding of task variables showed no statistically significant differences in mean decoding scores across labs (one-way ANOVA, \u03b1=0.01). Region identity could be accurately decoded from decoding scores and unit counts, while lab identity was less decodable with F1 scores near chance, indicating comparable decodability across labs after accounting for neuron numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 describe population decoding analyses (Figure 9). The ANOVA results (C121) and subsequent decoding analyses (C122-C123) are appropriately conducted with multiple comparison correction. The conclusion that task variable decodability is comparable across labs after accounting for neuron numbers (C124) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The neuron yield of the IBL dataset was comparable to two external datasets (Steinmetz et al., 2019 and Siegle et al., 2021) when using identical spike sorting and QC metrics. A two-way ANOVA showed no significant effect of dataset origin (p=0.31) but a significant effect of brain region (p<10\u207b\u00b9\u2077). Qualitative assessment by blinded raters found no systematic quality differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe validation analyses comparing the IBL dataset to external datasets (Figure 1f and supplements). The use of identical spike sorting and QC metrics is critical for fair comparison. The ANOVA results are clearly stated, and the qualitative assessment by blinded raters (C52) provides additional validation. This establishes that the IBL data quality is comparable to published datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The dentate gyrus (DG) is characterized by high LFP power spectral density, which was used to guide physiology-to-histology alignment. This elevated LFP power band was visible in all recordings at the same depth when aligned to the DG-thalamus boundary, with variability in extent explained by variable DG thickness and targeting variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe the use of LFP features for alignment (Figure 3b and supplements). The characteristic high LFP power in DG is well-established in the literature (C77 cites three papers). The observation that this feature is visible in all recordings (C79) and the explanation for variability (C80) are supported by the visualizations in Figure 3b and Figure 3\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Several probe trajectories missed their targets in deeper brain regions (LP, PO) despite the lack of significant lab-dependent effects in targeting. These off-target trajectories tended to have both large displacement from target coordinates and unfavorable probe angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe observations from Figure 3c and relate them to the targeting analysis in Figure 2. The observation that some trajectories missed deeper targets despite no systematic lab differences is important for understanding the limits of reproducibility. The characterization of off-target trajectories (C82) provides insight into the causes of targeting failures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In bilateral recordings, whether within-animal or across-animal variance was larger depended on the electrophysiological feature. For example, neuronal yield of VISa/am was more variable within subjects than across, while noise (AP band RMS) was more variable across animals than within.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe findings from bilateral recording analysis (Figure 3\u2014figure supplement 3). This analysis provides important context for interpreting variability, showing that some sources of variability are animal-specific while others are not. The specific examples (C84-C85) illustrate the feature-dependent nature of this variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The temporal dynamics of session-averaged neural activity were similar across labs in VISa/am, CA1, and DG, but more variable in LP and PO, as shown in peri-event time histograms (PETHs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 describe observations from PETHs in Figure 4c-d. The regional differences in reproducibility are clearly visible in the figure, with tighter clustering of lab-averaged responses in cortical and hippocampal regions compared to thalamic regions. This provides visual evidence for differential reproducibility across brain regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C44",
+      "C45"
+    ],
+    "result": "Despite standardizing procedures, some experimental outcomes were highly variable. Variability in electrode targeting and limited statistical power of single-neuron tests hindered reproducibility, but standardization and quality control metrics enhanced reproducibility. The study concludes that electrophysiology experiments are vulnerable to lack of reproducibility, but standardization and QC can mitigate this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 and C44-C45 represent the main conclusions of the study. These are well-supported by the collective evidence from targeting analyses (Figure 2), task-modulation analyses (Figure 4), power analyses (Figure 4\u2014figure supplement 2), and the demonstration that QC improves reproducibility (Figure 3). The conclusions are appropriately nuanced, acknowledging both vulnerabilities and solutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study demonstrates that reproducibility is attainable for many features measured during a standardized perceptual decision task and offers recommendations including: (1) standardized protocols for data collection and processing, (2) methods to account for variability in electrode targeting, and (3) rigorous data quality metrics such as RIGOR. These recommendations are urgently needed as neuroscience moves toward increasingly large and complex datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125 and C151-C155 summarize the study's conclusions and recommendations. These are well-supported by the demonstrated improvements in reproducibility with standardization (multiple figures) and the development of the RIGOR criteria (Table 1). The recommendations are practical and directly derived from the study's findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior to this study, reproducibility had not been systematically assessed within the context of electrophysiological recordings during cognitive behaviors, particularly across separate individual laboratories. The resulting dataset of 121 experimental replicates is unique for evaluating reproducibility, and answering this question is critical since most neuroscience data is collected in small, individual laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, C26-C27 establish the motivation and novelty of the study. While C2 is an inference about the state of the field, it is reasonable given the lack of cited prior work on systematic multi-lab reproducibility assessment in this context. The claim about dataset uniqueness (C7) is supported by the scale and design of the study. The importance statement (C27) is a reasonable assertion about the structure of neuroscience research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Reproducibility challenges are well-documented in biological and psychological sciences, including systems neuroscience. Examples include variability in findings about preplay, place field persistence, and STDP in nematodes. Understanding sources of variability can facilitate reproducibility improvements. Recent efforts in electrophysiology show that standardization and QC can yield reproducible results within single organizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 provide background on reproducibility challenges in neuroscience, supported by multiple citations. The examples (C19-C22) are appropriately cited, and the STDP example (C22) illustrates how identifying sources of variability can improve reproducibility. The statements about recent standardization efforts (C24-C25) are supported by citations to de Vries et al., 2020 and Siegle et al., 2021.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The authors previously demonstrated that standardized protocols can lead to highly reproducible behavior in mice by training 140 mice in 7 laboratories in a simple binary visually driven decision task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe prior work by the same group (Aguillon-Rodriguez et al., 2021). This provides important context for the current study, showing that behavioral reproducibility was established before moving to electrophysiological reproducibility. The citation is appropriate and the claims are straightforward descriptions of prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The RIGOR quality-control criteria are applicable to datasets beyond the current study. The full dataset and analysis tools are shared openly. The analyses required significant improvements in data architecture, visualization, spike sorting, histology image analysis, and video analysis, addressing major gaps in existing toolsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C147-C150 describe the broader impact and technical contributions of the study. The claim that RIGOR is applicable beyond this study (C34) is reasonable given that most criteria are general (Table 1). The data and code sharing (C147) is verifiable. The technical improvements (C148-C150) are documented in the methods and cited papers (Banga et al., 2022; Birman et al., 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Other fields have successfully adopted standardization guidelines, including neuroimaging (best practices), genomics (MIAME standard), and autophagy. A large-scale effort in C. elegans aging studies successfully replicated average lifespan curves across three labs through standardization, though individual worm variability persisted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 provide examples from other fields to support the value of standardization. Each example is appropriately cited. The C. elegans example (C132-C133) is particularly relevant as it shows both the success and limitations of standardization, paralleling the findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C136",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C145",
+      "C146"
+    ],
+    "result": "The source of geometrical variance in probe placement could be due to discrepancies between skull landmarks and brain anatomy. The Allen CCF and stereotaxic coordinate systems are slightly offset, which has been resolved in a corrected atlas. Collecting structural MRI data could reduce targeting error but is infeasible for most labs. Small differences in probe location may explain conflicting results in other studies. Reliance on stereotaxic coordinates without histological registration may explain prior reproducibility issues. Centralizing histology likely reduces variance, though the extent of additional variability from individual lab implementations remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136, C139-C142, C145-C146 are largely speculative or inferential. While the offset between CCF and stereotaxic systems (C139) is supported by the data and has been corrected (C140), many other claims are hypotheses about causes of variability (C136) or speculation about impacts (C141-C142, C145-C146). These are reasonable inferences but lack direct experimental support within this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "A centralized histology and registration pipeline was used to assign recording sites to anatomical locations based on histological probe trajectories and electrophysiological features. This differs from previous approaches that relied on stereotaxic coordinates alone without specified exclusion criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 describe the histological approach and contrast it with prior work. The centralized pipeline is well-documented in the methods. The contrast with prior approaches (C144) is supported by citations to multiple papers that used stereotaxic coordinates alone. This highlights an important methodological advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C15"
+    ],
+    "result": "Understanding brain function relies on the collective work of many labs generating reproducible results. Reproducibility is a cornerstone of the scientific method, requiring that a given sequence of experimental methods leads to comparable results across laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C15 are statements of established scientific principles. These are general knowledge claims that provide context for the study's motivation. They are uncontroversial and widely accepted in the scientific community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Reproducibility is operationally defined as a lack of systematic across-lab differences, where the distribution of within-lab observations is comparable to the distribution of across-lab observations, such that a data analyst would be unable to determine in which lab a particular observation was measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 defines the operational definition of reproducibility used throughout the study. This is a clear, testable definition that is consistently applied in the permutation tests and other analyses. The definition is appropriate for the study's goals and is implemented correctly in the statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "A multi-task neural network encoding model was developed that allows nonlinear interactions between variables. Within-lab random effects captured by this model were comparable to between-lab random effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 describe the MTNN model and its key finding (Figure 8). The model architecture is clearly described in the methods, and the finding that within-lab and between-lab effects are comparable (C43) is directly shown in the leave-one-out analysis (Figure 8e). This provides strong evidence for reproducibility when accounting for multiple covariates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The repeated site was selected because it encompasses brain regions implicated in visual decision-making, including visual area a/am, dentate gyrus (DG), CA1, and lateral posterior (LP) and posterior (PO) thalamic nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 explains the rationale for target location selection, supported by citations to prior literature on each region's role in visual decision-making. This is a reasonable justification for the choice of recording location.",
+    "result_type": "MINOR"
+  }
+]

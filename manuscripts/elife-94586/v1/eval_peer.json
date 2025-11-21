@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors propose that overflow metabolism arises from optimal protein allocation combined with enzyme heterogeneity. The model predicts that proteome efficiency in respiration versus fermentation depends on nutrient quality, with a critical threshold where cells switch from respiration (nutrient-poor) to fermentation (nutrient-rich) as the optimal growth strategy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers affirm the model's qualitative and quantitative explanatory power. Reviewer 1 states the model 'successfully explain[s] the origins of Overflow Metabolism, both qualitatively and quantitatively' and notes 'This counterintuitive result qualitatively explains Overflow Metabolism.' Reviewer 2 describes the study as 'valuable' and notes the model is 'convincing enough to align with experimental observations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C67",
+      "C122"
+    ],
+    "result": "The model incorporates cell heterogeneity in enzyme catalytic rates (modeled as Gaussian distributions) to transform the digital response predicted by homogeneous models into a threshold-analog response. This heterogeneity converts a step-function fermentation flux into the gradual threshold-analog relationship observed experimentally in overflow metabolism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly affirms this result: 'Quantitative agreement is achieved through the analysis of the heterogeneity of the metabolic status within a cell population. By introducing heterogeneity, the critical growth rate is assumed to follow a Gaussian distribution over the cell population, resulting in accordance with experimental data for E. coli.' Reviewer 2 notes the model 'provides a key aspect on cell-to-cell variability on general metabolic response.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C69",
+      "C71",
+      "C72",
+      "C74",
+      "C77",
+      "C84",
+      "C92",
+      "C96",
+      "C98"
+    ],
+    "result": "The model quantitatively agrees with E. coli experimental data across multiple perturbations including nutrient variation (\u03baA), useless protein expression (\u03c6Z), energy dissipation, translation inhibition, and different carbon sources (pyruvate). Model predictions match fermentation/respiration fluxes and enzyme allocation patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 confirms extensive validation: 'The obtained model is extensively tested through perturbations: (1) Introduction of overexpression of useless proteins; (2) Studying energy dissipation; (3) Analysis of the impact of translation inhibition... (4) Alteration of nutrient categories of carbon sources using pyruvate. All model perturbations results are corroborated by E. coli experimental results.' The reviewer notes the model 'aligns well with experimental data, lending credibility to the findings.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model predicts distinct enzyme allocation patterns for glycolysis versus TCA cycle enzymes under different perturbations. Under \u03baA perturbation, glycolysis and TCA enzymes show different responses that cannot be explained by simplified C-line models. Under \u03c6Z perturbation, all slopes are positive, while under energy dissipation, TCA enzymes (\u03c64) show negative slopes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 does not explicitly critique these enzyme allocation predictions, and the overall statement that 'All model perturbations results are corroborated by E. coli experimental results' implicitly includes these findings. The model predictions are stated to match experimental data from Hui et al., 2015 and Basan et al., 2015.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The model is extended to yeast and cancer cells, providing a quantitative explanation for the Crabtree and Warburg effects. Critically, the model resolves the puzzle that population-level proteome efficiency in respiration exceeds that in fermentation (Shen et al., 2024) by incorporating heterogeneity, allowing subpopulations to favor fermentation even when average efficiency favors respiration.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly notes that in the revised version 'the extension of results from bacteria to yeast and cancer is substantiated by a literature base' and that the previous weakness 'has been treated in this current version, where the authors discuss in much more detail and give references supporting this generalization.' Reviewer 1 confirms the model provides quantitative agreement with yeast and cancer data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C104",
+      "C105"
+    ],
+    "result": "Recent experimental findings (Shen et al., 2024) show that measured proteome efficiency in respiration is higher than in fermentation for many yeast and cancer cells, contradicting prevalent explanations that assume fermentation efficiency is consistently higher.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this experimental finding from the literature. Reviewer 1 acknowledges the model addresses this puzzle, and Reviewer 2's concern about generalization to yeast and cancer was resolved in the revision, implicitly accepting the empirical basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The model's heterogeneity predictions are supported by single-cell growth rate distributions in E. coli and align with observed non-genetic metabolic heterogeneity in E. coli, S. cerevisiae, and tumor cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 confirms the model results are 'in accordance with experimental data for E. coli' and notes consistency with 'observed distributions of single-cell growth rates.' Reviewer 2 emphasizes the model 'provides a key aspect on cell-to-cell variability' though notes 'The potential source of metabolic or proteomic heterogeneity of individual cells remains an open question to be studied.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "A systematic discrepancy arises in the translation inhibition model when the translation rate is low.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This limitation is acknowledged in the manuscript but not discussed by reviewers. The claim represents a recognized boundary condition of the model rather than a fundamental challenge to its validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The cAMP-CRP system plays a role in sensing proteome efficiency and executing optimal metabolic strategy, though this system alone is insufficient and additional regulators remain to be identified.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these mechanistic claims, which are supported by literature citations. Reviewer 2 notes 'How individual cells adjust their metabolic strategies also requires future study of the underlying mechanisms,' acknowledging this as an open question rather than a weakness of the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The model differs from existing approaches by optimizing growth rate through protein allocation without constraining carbon influx, and incorporates cell heterogeneity as crucial for explaining both the threshold-analog response and resolving the Shen et al. puzzle.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 affirms the model's novel approach, stating it 'effectively uses modeling techniques typical of Physics to address complex problems in Biology, demonstrating the potential of interdisciplinary approaches to yield novel insights.' The incorporation of heterogeneity is explicitly validated as achieving 'accordance with experimental data.'",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Two independent eIF2A knockout HeLa cell lines were generated using CRISPR/Cas9, targeting different exons. The absence of eIF2A protein was confirmed by immunoblotting and genotyping, with reduced eIF2A mRNA levels likely due to nonsense-mediated decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe the generation and validation of eIF2A knockout cell lines. The experimental approach is clearly described, and validation is shown through multiple methods (immunoblotting in Figure 1A, genotyping in Figure 1\u2014figure supplement 1A, and mRNA quantification in Figure 1\u2014figure supplement 1B), providing strong evidence for successful knockout generation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C56"
+    ],
+    "result": "eIF2A knockout HeLa cells show no defect in cellular proliferation rates or global translation, as measured by proliferation assays, OPP incorporation, and polysome profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C56 are supported by multiple complementary assays shown in Figures 1B-F. The proliferation data (Figure 1B), OPP incorporation (Figures 1C-D), and polysome profiles (Figures 1E-F) all consistently show no significant differences between control and eIF2A knockout cells, providing robust evidence for the lack of effect on global translation and proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C100",
+      "C101"
+    ],
+    "result": "In HeLa cells, eIF2A is predominantly cytosolic with some nuclear localization, and this distribution is not affected by stress treatments including tunicamycin or sodium arsenite. Stress treatments also do not alter overall eIF2A protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 and C100-C101 are supported by subcellular fractionation data (Figure 1\u2014figure supplement 1C-D), immunofluorescence of overexpressed eIF2A (Figure 1\u2014figure supplement 1E), and western blot analysis of eIF2A levels under various stress conditions (Figure 1\u2014figure supplement 1F-G). The data consistently show cytosolic predominance and lack of stress-induced changes, though the immunofluorescence uses overexpressed tagged protein which may not fully reflect endogenous behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C103"
+    ],
+    "result": "Overexpression of eIF2A does not cause significant changes in global translation rates as measured by OPP incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C103 are supported by OPP incorporation data shown in Figure 1\u2014figure supplement 1H-I. The data show no significant difference in global translation upon eIF2A overexpression, contradicting the hypothesis that elevated eIF2A levels suppress translation in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C72",
+      "C73",
+      "C75",
+      "C105"
+    ],
+    "result": "Ribosome profiling of control and eIF2A knockout HeLa cells identified only 15 genes (plus eIF2A itself) with altered translation efficiency, indicating eIF2A has minimal impact on mRNA translation under non-stressed conditions. This is substantially fewer affected transcripts than observed for other translation factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62, C66, C72-C73, C75, and C105 are supported by ribosome profiling data shown in Figures 2 and 2\u2014figure supplements. The data show high reproducibility (Figure 2\u2014figure supplement 1A), proper quality metrics (Figure 2\u2014figure supplement 1B-C), and identification of only 15 significantly changed genes (Figure 2A). The comparison to other translation factors (C63-C65) provides important context. Analysis with anota2seq (Figure 2\u2014figure supplement 2C) confirms the lack of translationally affected transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Validation of ribosome profiling candidates by immunoblotting and luciferase reporters revealed that most identified genes are likely false positives, with only CCND3 showing reduced protein levels in one knockout clone but not the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by western blot validation (Figures 2B-D) and luciferase reporter assays (Figure 2E, Figure 2\u2014figure supplement 2A). The validation experiments show that most candidates do not validate, and even CCND3 only shows an effect in one of two knockout clones, suggesting the ribosome profiling hits are enriched for false positives. This is a critical validation that strengthens the conclusion of minimal eIF2A impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Translation of reporters with a short 5'UTR or EMCV IRES is not affected by loss of eIF2A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by luciferase reporter data in Figure 2\u2014figure supplement 2D. These reporters test whether eIF2A affects translation when the ribosome is positioned directly at the start codon, and the lack of effect suggests eIF2A does not function in codon-dependent tRNA delivery in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "eIF2A does not contribute significantly to uORF translation in HeLa cells. Analysis of endogenous uORFs by ribosome profiling and testing of synthetic uORF reporters showed no significant eIF2A-dependent effects, though transcripts with AUG-initiated uORFs showed a very slight increase in translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 and C114-C116 are supported by metagene analysis of uORF footprints (Figure 3\u2014figure supplement 1A-B), translation efficiency analysis (Figure 3\u2014figure supplement 1C), and luciferase reporter assays (Figure 3A, Figure 3\u2014figure supplement 1D). The very slight increase in translation efficiency for AUG-initiated uORFs (C79, log2 fold change of -0.03 vs -0.05) is statistically significant but biologically minimal and in the opposite direction of what would be expected if eIF2A were required for uORF translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "HEK293T-H2-Kb eIF2A knockout cells show no defects in proliferation or global translation, and direct detection of uORF peptide production reveals no eIF2A-dependent changes for either AUG or near-cognate initiated uORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by proliferation data (Figure 3\u2014figure supplement 1E), polysome profiles (Figure 3\u2014figure supplement 1F-G), and flow cytometry detection of SIINFEKL peptide presentation (Figure 3D). The SIINFEKL assay is a particularly strong approach as it directly measures uORF peptide production rather than inferring it from main ORF translation. The lack of effect across multiple uORF start codons strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Under integrated stress response conditions (tunicamycin or sodium arsenite treatment), eIF2A knockout cells show similar translation suppression, stress granule formation, eIF2\u03b1 phosphorylation, and induction of ISR target genes (ATF4, PPP1R15B, IFRD1) compared to control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by polysome profiles under stress (Figure 4\u2014figure supplement 1A-B), stress granule quantification (Figure 4\u2014figure supplement 1C-D), western blot for eIF2\u03b1 phosphorylation (Figure 4\u2014figure supplement 1E), and luciferase reporter assays for ISR target genes (Figure 4A). The data consistently show that eIF2A is not required for the integrated stress response, contradicting the hypothesis that eIF2A acts as a backup for eIF2 during stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C111",
+      "C112"
+    ],
+    "result": "Ribosome profiling under tunicamycin treatment identified 12 mRNAs with blunted induction in eIF2A knockout cells, but direct comparison of translation efficiency between knockout and control cells in the stressed condition revealed no significantly affected transcripts. Luciferase reporters of the 12 candidates showed no impaired induction in knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 and C111-C112 are supported by ribosome profiling data under tunicamycin treatment (Figures 4B, 4C, Figure 4\u2014figure supplement 2A-D). The key finding is that while 12 transcripts show differential induction between conditions, direct comparison in the stressed state shows no eIF2A-dependent changes (Figure 4\u2014figure supplement 2B). The failure of 5'UTR reporters to recapitulate the effect (Figure 4C) suggests these are likely false positives or that effects depend on sequences outside the 5'UTR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Under tunicamycin treatment, eIF2A knockout cells show no significant changes in uORF translation based on metagene profiles, translation efficiency analysis of uORF-containing transcripts, or synthetic uORF reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by metagene analysis of uORF footprints under tunicamycin (Figure 4\u2014figure supplement 3A-B), translation efficiency analysis (Figure 4\u2014figure supplement 3C), and luciferase reporter assays (Figure 4\u2014figure supplement 3D). The minor faster transition from initiation to elongation noted in C96 is in the opposite direction of what would be expected if eIF2A were required for uORF translation. Together with the non-stressed data, this strongly argues against a role for eIF2A in uORF translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "No compensatory increase in translation of other initiation factors that can potentially deliver tRNAs was detected in eIF2A knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is supported by data in Figure 4\u2014figure supplement 4 showing no changes in translation of alternative initiation factors (eIF2D, DENR, EIF2S1-3). This addresses a potential confounding explanation for the lack of phenotype and strengthens the conclusion that eIF2A is not required for translation initiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C137"
+    ],
+    "result": "The authors conclude that eIF2A plays a minor or no role in regulating translation initiation in human HeLa and HEK293T cells, based on the totality of evidence from multiple complementary approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C137 represent the main conclusion of the study. This conclusion is well-supported by the comprehensive set of experiments including: knockout cell generation and validation, proliferation assays, global translation measurements (OPP, polysomes), transcriptome-wide ribosome profiling in both normal and stressed conditions, validation by western blot and luciferase reporters, direct uORF peptide detection, and analysis of ISR target gene induction. The consistency across multiple independent approaches and cell types provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The findings are consistent with recent reports showing minimal effects of eIF2A loss in yeast and human HEK293T cells, suggesting the lack of impact on translation is not cell-type specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 appropriately contextualize the current findings with recent literature (Gaikwad et al., 2024; Ichihara et al., 2021). The comparison strengthens the conclusion by showing consistency across different experimental systems and organisms. The citation to Ichihara et al., 2021 showing only 1-4 affected mRNAs in HEK293T cells is particularly relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C127",
+      "C131"
+    ],
+    "result": "The authors speculate that eIF2A may play a role in RNA trafficking or mRNA decay rather than translation initiation, and acknowledge that eIF2A might have functions in other cell types not tested in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125, C127, and C131 are speculative statements about potential alternative functions of eIF2A and limitations of the study. These are appropriately presented as speculation and limitations rather than conclusions. The speculation about RNA trafficking/decay is reasonable given the RNA-binding domain (C124) and synthetic lethality with eIF4E (C126), but no direct evidence is provided in this study.",
+    "result_type": "MINOR"
+  }
+]

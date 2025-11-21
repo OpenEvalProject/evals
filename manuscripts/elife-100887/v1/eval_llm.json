@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cell cycle, DNA damage and repair, and metabolism pathways are dysregulated in RPLS. RNA sequencing identified 1354 DEGs between RPLS tumors and normal tissues, with proliferation-associated pathways enriched in tumors and metabolism-related pathways enriched in normal controls. Functional annotation of 497 prognostic genes (associated with both OS and DFS) showed significant enrichment of cell cycle, DNA damage and repair, and metabolism-related pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 provide converging evidence from DEG analysis (C33-C35), prognostic gene identification (C36-C37), and functional annotation (C38) that collectively support the dysregulation of these pathways in RPLS (C39). The data is internally consistent and based on appropriate bioinformatic analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "RPLS patients can be divided into two molecular subgroups (G1 and G2) with distinct pathway enrichment, clinical features, and outcomes. G1 shows elevated metabolism pathway scores, better survival (OS and DFS), lower aggressive pathological composition, lower MDM2 and Ki67 expression, larger tumor size, higher TME levels, and fewer surgeries compared to G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 collectively demonstrate a coherent molecular and clinical characterization of two RPLS subgroups using ssGSEA pathway scoring and t-SNE clustering. The survival differences (C40), pathway enrichment patterns (C41-C42), and clinical/pathological features (C43-C48) are internally consistent and supported by appropriate statistical analyses shown in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "DEG analysis between G1 and G2 identified 1258 downregulated genes (112 protective) and 754 upregulated genes (28 aggressive), with enrichment in cell cycle regulation and metabolism pathways consistent with the original pathway analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe DEG analysis between the two subgroups that is consistent with the pathway-based classification. The enrichment analysis (C51) validates the biological coherence of the G1/G2 classification by showing consistency with earlier results (C5, C38-C39).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "NMF-based reclassification of RPLS patients into C1 and C2 clusters recapitulates the G1/G2 classification. C1 is associated with metabolic processes while C2 is associated with cell cycle and DNA damage/repair, with similar clinical features and outcomes as G1/G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 demonstrate that an independent clustering method (NMF) reproduces the biological and clinical features of the original G1/G2 classification. The consistency between classifications (C60) strengthens confidence in the biological validity of the two-subtype model. However, the claim about Ki67 (C58) appears contradictory to C45, requiring clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C71",
+      "C72"
+    ],
+    "result": "LEP and PTTG1 were identified as representative biomarkers of C1 and C2 clusters, respectively. A two-gene panel achieved high accuracy (AUC>0.99) in replicating RPLS classification using machine learning algorithms, with LEP and PTTG1 showing negative correlation and the resulting Cluster_L/H classification matching well with C1/C2 and G1/G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C71-C72 describe the identification and validation of a simplified two-biomarker classification system. The extremely high AUC values (>0.99) across multiple algorithms (C62) and consistency with prior classifications (C71) support the utility of these biomarkers. However, such high AUC values in the training cohort raise concerns about potential overfitting that require independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Patients classified as high-risk (Cluster_H) using the LEP/PTTG1 logistic regression model showed worse OS and DFS, enrichment of DNA repair and cell cycle pathways, more aggressive pathological composition, higher MDM2 and Ki67 levels, marginally increased surgery times, and smaller tumor sizes compared to low-risk (Cluster_L) patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 demonstrate that the simplified biomarker-based classification recapitulates the molecular and clinical features of the original clustering. The data is internally consistent, though the marginal significance for surgery times (C68) and the reversal of tumor size association (C70 vs C46) warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "In an external validation cohort (GSE30929), the high-risk group exhibited significantly worse DRFS and a higher proportion of high-grade histology compared to the low-risk group, consistent with the training cohort findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide external validation of the LEP/PTTG1 classification system in an independent liposarcoma cohort. The consistency with training cohort results strengthens the generalizability of the findings, though the external cohort includes non-RPLS liposarcomas which may limit direct comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In the IHC validation cohort (n=241), the high-risk group had worse OS and DFS, more surgery times, and more aggressive pathological composition compared to the low-risk group, but no difference in tumor size was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 demonstrate successful validation of the LEP/PTTG1 classification in a large independent cohort using IHC. The survival differences (C75) and clinical features (C76-C77) are consistent with the training cohort, though the lack of tumor size difference (C78) contrasts with some training cohort findings and requires explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Nomograms incorporating the risk score with clinical features achieved predictive abilities (AUC) of 0.743-0.788 for 1-, 2-, and 3-year OS and DFS in the validation cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 describe the development of prognostic nomograms with moderate predictive accuracy. The AUC values are reasonable for clinical prediction models, though substantially lower than the biomarker classification alone (C62), suggesting the biomarkers add value beyond standard clinical features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C31",
+      "C32",
+      "C106"
+    ],
+    "result": "The study performed RNA sequencing on 88 RPLS patients (training cohort) and validated findings in 241 RPLS patients (validation cohort), representing the largest gene expression landscape assembled for RPLS. The cohorts were well-matched for baseline characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C26, C31-C32, C106 describe the study design and cohort characteristics. The sample sizes are substantial for a rare disease, and the lack of significant differences between cohorts (C106) supports the validity of the validation approach. The claim of being the 'largest' landscape (C25) is difficult to verify without comprehensive literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C27"
+    ],
+    "result": "RPLS patients can be divided into two distinct molecular subtypes characterized by unique molecular signatures, tumor microenvironment, clinical features, and outcomes, with cell cycle, DNA damage and repair, and metabolism identified as the most aberrant biological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C27 represent the central finding of the study. These claims are well-supported by the comprehensive molecular and clinical characterization presented in multiple result groups above. The consistency across different clustering methods and validation in independent cohorts strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "A simplified RPLS classification based on LEP and PTTG1 demonstrated high accuracy (AUC>0.99), with LEP+/PTTG1- patients showing lower aggressive pathological composition, fewer surgeries, and better OS (HR=0.41, p<0.001) and DFS (HR=0.60, p=0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 summarize the key clinical findings from the biomarker-based classification. These are supported by the detailed analyses in other result groups, though the extremely high AUC (C7) and the specific HR values (C10-C11) require verification against the detailed results presented in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Traditional pathological classification has limitations for surgical decision-making in RPLS cases where patients exhibit favorable histological features but poor prognoses, highlighting the pivotal role of molecular subtyping in guiding individualized treatment strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29 represent important clinical implications inferred from the molecular classification results. However, these claims are not directly demonstrated by specific examples of histologically favorable but molecularly high-risk patients. The inference is reasonable but would benefit from explicit case examples or quantitative analysis of discordance between histological and molecular classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C104"
+    ],
+    "result": "The simplified RPLS classification system based on LEP and PTTG1 was validated through IHC assays in a larger cohort, establishing a dichotomous classification system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C104 describe the validation methodology. The IHC validation in 241 patients (detailed in other result groups) provides strong support for the clinical applicability of the classification system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "LEP is an important regulator of metabolism and immune function, has been identified as a metabolic reprogramming agent in melanoma, and improves immunotherapeutic effects through multiple mechanisms. These biological functions provide mechanistic explanation for the metabolism pathway enrichment, better prognosis, and higher TME levels in the LEP+ subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 synthesize prior literature on LEP biology to provide mechanistic context for the observed associations. The citations support the biological functions described (C86-C91), and the inference connecting these functions to the LEP+ subgroup characteristics (C92) is reasonable, though the mechanistic link remains correlative rather than causally demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "PTTG1 regulates sister chromatid separation and is linked to genetic instability, tumor progression, and poor prognosis across multiple cancer types. These biological functions provide mechanistic explanation for the cell cycle/DNA damage pathway enrichment, worse prognosis, and more aggressive features in the PTTG1+ subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 synthesize prior literature on PTTG1 biology to provide mechanistic context. The citations support the biological functions and prognostic associations in other cancers (C93-C99), and the inference connecting these to the PTTG1+ subgroup characteristics (C100) is reasonable, though mechanistic validation in RPLS is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The G2 subgroup's aggressive features are consistent with prior tumor classifications. While TCGA previously divided dedifferentiated liposarcoma into subtypes, those patients were of mixed anatomical origin, providing limited guidance for RPLS. This study reports the first clinically applicable RPLS molecular classification based on RNA sequencing and IHC validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 contextualize the current findings within prior literature. The consistency with other tumor classifications (C81) and the limitations of prior liposarcoma studies (C82-C84) are appropriately cited. The claim of being 'first clinically applicable' (C85) is reasonable given the IHC validation, though 'first' claims are difficult to verify comprehensively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "The study presented a comprehensive gene expression landscape of RPLS, categorized RPLS into metabolism and cell cycle subtypes, identified LEP and PTTG1 as key biomarkers, and established an approach that enables precise guidance for surgeons in adjusting treatment strategies for histologically favorable but prognostically challenging RPLS cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 accurately summarize the study's main findings and are supported by the detailed results. However, C105's claim about enabling 'precise guidance for surgeons' represents a prospective clinical application that has not been demonstrated in this study. While the classification system has been validated, its actual impact on surgical decision-making and patient outcomes remains to be established in prospective clinical trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "RPLS is a critical malignancy with poor molecular characterization, few biomarkers, high recurrence rates, and unsatisfactory outcomes despite surgical and adjuvant therapies. While precision medicine has improved outcomes in other cancers, few molecular biomarkers and targeted therapies are available for RPLS, with existing biomarkers (CDK4, MDM2, AURK4, CCNDBP1) being poorly validated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C24 establish the clinical and scientific context for the study. These claims are appropriately supported by citations to prior literature and represent accurate characterization of the state of the field. The claims provide clear rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "In the validation cohort, the IHC scores of LEP and PTTG1 were 1.62 (0.820) and 0.830 (0.75), respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 provides descriptive statistics for the IHC validation cohort. These values are straightforward descriptive data from the validation cohort analysis.",
+    "result_type": "MINOR"
+  }
+]

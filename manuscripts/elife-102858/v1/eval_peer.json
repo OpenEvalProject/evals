@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C29"
+    ],
+    "result": "The model is built on four phenomenological rules: (1) free water volume changes driven by osmotic imbalance while remaining volume changes proportionally to protein production, (2) osmoregulation governed by intracellular protein density, (3) cell-wall synthesis regulated by turgor pressure feedback, and (4) intracellular crowding slowing biochemical reactions with complete cessation at a critical protein density threshold. The model also divides cytoplasmic volume into free and bound components.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly acknowledge and accept the model's phenomenological framework. Reviewer 1 states the model 'assumes simple phenomenological rules' and lists all four core assumptions without critique. Reviewer 2 notes 'the level of coarse-graining and the assumptions and limitations of the model have been well described, providing a convincing foundation for making predictions.' No reviewer challenges these foundational assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The model predicts steady-state properties including constant turgor pressure and reduced growth rate with increasing external osmolarity, with growth rate reduction attributed to free water loss and intracellular crowding. The model predicts a critical external osmolarity above which growth is completely inhibited and establishes a universal relationship between normalized growth rate and normalized internal osmotic pressure that fits data from bacteria and yeast.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states the model 'successfully reproduced the overall trend (steady state behavior for many of them)' across multiple organisms. Reviewer 2 notes the model provides 'important insights' and that predictions align 'well with experimental data from diverse organisms.' The universal relationship fitting multiple species data is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C97",
+      "C98"
+    ],
+    "result": "The model demonstrates that osmoregulation and cell-wall synthesis regulation enable adaptation to wide osmolarity ranges and prevent plasmolysis. Mutant cells without osmoregulation cannot grow even at mildly elevated osmolarity, while mutants without cell-wall synthesis regulation grow faster than wild-type but cannot maintain turgor pressure and are prone to plasmolysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes the model 'make experimentally testable predictions regarding mutant behavior' without expressing doubt. Reviewer 2 states the model has 'well described' assumptions providing 'a convincing foundation for making predictions.' The mutant predictions (C46 consistent with Brewster et al., 1993; C98 proposed for experimental validation) are treated as logical extensions of the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C99"
+    ],
+    "result": "The model predicts non-monotonic dynamics following osmotic shocks, with osmoresponse split into shock and adaptation periods. After hyperosmotic shock, protein density initially increases then decreases, with the timescale set by doubling time. Growth rate approaches steady state non-monotonically via spiral trajectories in phase space.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states the model 'successfully reproduced the overall trend...dynamics for S. pombe' and notes consistency with experimental observations (C63 references Rojas et al., 2014). The phase space analysis and timescale separation are accepted as part of the model's analytical strength, with Reviewer 1 noting the model 'provides analytical expressions of the parameter dependencies and an understanding of the dynamics through the phase space.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C78",
+      "C101"
+    ],
+    "result": "The model predicts a supergrowth phase following hypoosmotic shock, with growth rate peaks occurring ~25 minutes post-shock. This phenomenon is driven by cell-wall synthesis regulation: high turgor pressure induces rapid cell-wall synthesis, which relaxes pressure and enables faster growth. Unwalled cells do not exhibit supergrowth, confirming cell-wall synthesis regulation is crucial. Growth rate peaks increase with shock amplitude.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly validates this finding: 'The prediction of a rapid increase in growth rate on osmotic shock is experimentally validated using fission yeast.' Reviewer 1 states the model 'predicts non-trivial behavior such as the fast cell growth just after the hypoosmotic shock, which is consistent with experimental observation.' The mechanistic explanation and role of cell-wall regulation are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C82",
+      "C86",
+      "C87",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "The model successfully recapitulates experimental observations from Knapp et al. 2019 on oscillatory osmotic shocks in S. pombe, including supergrowth phase, increasing protein/dry-mass density during perturbation, and growth rate peaks ~20 min after oscillation removal. Predicted growth rate peaks versus period length and number of periods quantitatively match experimental data without additional fitting. The model also predicts equivalence between infinitely long periodic shocks and constant shocks, and explains the non-monotonic amplitude dependence with a critical jamming threshold.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 emphasizes this as strong validation: the model 'successfully reproduced the overall trend...dynamics for S. pombe' and notes 'As a strong support of our theory, the predicted growth rate peaks quantitatively agree with the experimental data without additional fitting.' Reviewer 2 states 'They validate their model predictions...experimentally using fission yeast.' The quantitative agreement without further fitting (C82, C100) is highlighted as particularly convincing evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C108",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The model is acknowledged as coarse-grained, neglecting molecular details of gene expression regulation, osmolyte export, interaction between biomass and osmolyte production, memory effects, and membrane tension effects. The framework assumes instantaneous cellular state-dependent regulation rather than incorporating temporal memory.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly addresses this: 'The coarse-grained nature of the model is the strength of the model in terms of its generality. However, it does not consider various regulations at the molecular level. Hence, certain adaptation features are not considered in the current version of the model. The updated manuscript discusses the pros and cons of the current approach.' Reviewer 2 notes 'the level of coarse-graining and the assumptions and limitations of the model have been well described.' Both reviewers accept these limitations as reasonable trade-offs for generality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "By leveraging timescale separation, the model facilitates analytical and numerical analysis of process interactions during cellular adaptation, offering a valuable tool for understanding microbial osmoresponse and developing predictive models for behaviors under osmotic stress.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'Mathematically, the model provides analytical expressions of the parameter dependencies and an understanding of the dynamics through the phase space without being buried in the detail. This theory can serve as a base to discuss the universality and diversity of microbial osmoresponse.' Reviewer 2 notes the model 'can potentially apply to a wide range of microbes, providing important insights that would be of interest to the wider community studying the regulation of cell size and mechanics.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establish that microorganisms transition between environments with different osmolarities, respond via turgor pressure changes and osmoregulation, experience intracellular crowding effects on physiology, can adapt to broad osmolarity ranges with decreasing growth rates, and exhibit non-monotonic growth dynamics including supergrowth phases as observed in S. pombe experiments by Knapp et al. 2019.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background/contextual claims establishing the biological phenomena the model addresses. No reviewer challenges these established observations, which are well-supported by the extensive citations provided. Reviewers focus their evaluation on the model's ability to explain these phenomena rather than questioning the phenomena themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C44"
+    ],
+    "result": "Experimental measurements show cell-wall strain remains approximately constant as external osmolarity increases, suggesting constant turgor pressure independent of external osmolarity. Osmoadaptation capability depends on growth media, presumably due to variations in metabolic fluxes and gene expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These experimental observations from literature (C37-38 from Misra et al. 2013, Rojas et al. 2014; C44 from multiple sources) are cited to support model assumptions. Reviewers do not challenge these literature-based claims. Reviewer 2 notes the model assumptions are 'well described, providing a convincing foundation,' implicitly accepting the experimental basis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Model predictions are consistent with growth rate peaks after hypoosmotic shock observed in B. subtilis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This cross-species validation is mentioned as consistent with Rojas et al. 2017 data. While not extensively discussed by reviewers, it falls under Reviewer 1's statement that the model 'successfully reproduced the overall trend' across 'various microorganisms (E. coli, B. subtils, S. cerevisiae, S. pombe).' The consistency with B. subtilis data supports the model's generality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C144",
+      "C145",
+      "C146",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C156",
+      "C159"
+    ],
+    "result": "Supporting mechanistic details include experimental evidence for turgor pressure inducing cell-wall synthesis through multiple mechanisms, cytoplasm resembling crowded colloidal suspensions with reduced biomolecule mobility, crowding effects on biochemical processes, steady-state homeostasis requirements, and rapid water flux timescales after osmotic shock.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are detailed mechanistic claims supporting the model framework, all backed by literature citations. Reviewers accept the model's mechanistic basis without challenging these specific details. Reviewer 2's statement that assumptions are 'well described, providing a convincing foundation' encompasses acceptance of this mechanistic grounding.",
+    "result_type": "MINOR"
+  }
+]

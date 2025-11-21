@@ -1,0 +1,1487 @@
+{
+  "submission": {
+    "id": "a150be37-c687-4478-8910-87038964554e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:36:48.428190Z",
+    "updated_at": "2025-11-21T17:36:48.428190Z"
+  },
+  "content": [
+    {
+      "id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "content_type": "manuscript",
+      "content_text": "# Dynamical mechanisms of growth-feedback effects on adaptive gene circuits\n\n## Authors\n\n- Ling-Wei Kong<sup>1</sup> ([ORCID: 0000-0002-8921-1642](https://orcid.org/0000-0002-8921-1642))\n- Wenjia Shi<sup>2</sup>\n- Xiao-Jun Tian<sup>3</sup>\n- Ying-Cheng Lai<sup>1</sup> ([ORCID: 0000-0002-0723-733X](https://orcid.org/0000-0002-0723-733X)) \u2020\n\n### Affiliations\n\n1. School of Electrical, Computer and Energy Engineering, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))\n2. Department of Physics, Xi\u2019an University of Technology Xi'an China ([ROR:01zzmf129](https://ror.org/01zzmf129))\n3. School of Biological and Health Systems Engineering, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))\n4. Department of Physics, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe successful integration of engineered gene circuits into host cells remains a significant challenge in synthetic biology due to circuit\u2013host interactions, such as growth feedback, where the circuit influences cell growth and vice versa. Understanding the dynamics of circuit failures and identifying topologies resilient to growth feedback are crucial for both fundamental and applied research. Utilizing transcriptional regulation circuits with adaptation as a paradigm, we systematically study more than 400 topological structures and uncover various categories of failures. Three dynamical mechanisms of circuit failures are identified: continuous deformation of the response curve, strengthened or induced oscillations, and sudden switching to coexisting attractors. Our extensive computations also uncover a scaling law between a circuit robustness measure and the strength of growth feedback. Despite the negative effects of growth feedback on the majority of circuit topologies, we identify several circuits that maintain optimal performance as designed, a feature important for applications.\n\n## Introduction\n\nIn biomedical science and engineering, artificially designed gene circuits are anticipated to play an ever-increasing role in disease diagnosis and therapy (Riglar and Silver, 2018; Sedighi et al., 2019; Xia et al., 2019). Gene circuits also show great potential in various applications such as microbiome modulation (Foo et al., 2017; Lee et al., 2018) and biological containment (Gomaa et al., 2014; Caliando and Voigt, 2015). While most gene circuits are designed to function after they are inserted or embedded into host cells, the interactions between the circuit and the host environment are generally extremely complex and can lead to undesired effects that were not present in the original, isolated circuit (Tan et al., 2009; Ceroni et al., 2015; Borkowski et al., 2016; Ceroni et al., 2018; Darlington et al., 2018a; Darlington et al., 2018b; Kheir Gouda et al., 2019; Zhang et al., 2021; Zhang et al., 2020; Melendez-Alvarez et al., 2021). Understanding the interactions and identifying the circuit topological structures that can withstand the interactions and thrive in the host are thus of fundamental importance, requiring interdisciplinary efforts among systems and synthetic biology, metabolic engineering, nonlinear dynamics, and complex systems.\n\nTypical circuit\u2013host interactions include metabolic burden, cell growth, and resource relocation or competition, among which growth feedback is the most common type of circuit\u2013host interaction between the circuit gene expressions and cell growth. More specifically, a synthetic gene circuit embedded in a host cell possesses an intrinsic coupling mechanism: the circuit affects cell growth and the growth in turn modifies the gene expressions in the circuit (Klumpp et al., 2009; Klumpp and Hwa, 2014; Boo et al., 2019; Scott et al., 2010; Ray et al., 2016) \u2013 the so-called growth feedback. Studies have shown that the growth-mediated feedback can endow a synthetic gene circuit with various emergent properties, such as innate growth bistability (Deris et al., 2013). For example, a non-cooperative positive autoregulation system, when coupled with growth feedback, gains increased effective cooperativity, thereby resulting in bistability (Tan et al., 2009; Nevozhay et al., 2012). In another example, toxin cooperativity can be induced in multiple toxin\u2013antitoxin systems by growth-mediated feedback (Feng et al., 2014). The number of steady states in one gene circuit also depends on growth feedback and resource availability (McBride and Del Vecchio, 2020; Melendez-Alvarez and Tian, 2022). In general, growth feedback acts to hamper the forward engineering of the circuit functions by introducing modes of nonmodularity and reducing the predictability of the circuit components in an in vivo context. While various phenomena caused by growth feedback were studied with desirable or undesirable effects on the functions of the gene circuits, a systemic picture is lacking on what effects growth feedback can have on the gene circuits, including failures.\n\nA recent study has revealed that growth feedback can have drastically different effects on congruent circuits with distinct topologies (Zhang et al., 2020). In particular, the dynamical behaviors of two bistable synthetic memory circuits were studied: a self-activation switch incorporating positive autoregulation and a toggle switch incorporating double-negative regulatory motifs. It was found that growth-feedback impacts both circuits but with quite different manifestations. For the toggle switch, memory can be retained and the circuit tends to be refractory toward growth feedback. However, for the self-activation switch, growth feedback leads to memory loss. While these results indicate that the circuit topology can play a significant role in the circuit functions when growth feedback is present, they were obtained through two specific circuit topologies. Since a particular function of the gene circuit can often be achieved by a finite set of core topologies, it is of fundamental interest to identify the most robust topologies in response to growth feedback. The so-identified optimal topologies can then be used to construct synthetic gene circuits capable of maintaining the essential functions to meet the design goals under the fluctuating growth conditions of the host cell. A systematic study of the interplay between the gene circuit topology and growth feedback is needed.\n\nAdaptation is an important and widely studied functionality of gene circuits, which is defined as the ability of the system to respond to environmental changes and to return to the basal or near-basal state after some time (Knox et al., 1986; Tyson et al., 2003; Friedlander and Brenner, 2009; Ferrell, 2016). Previously, it was found that certain circuits possess biochemical adaptation (Ma et al., 2009) if they contain at least one of the two architectural classes: an incoherent feed-forward loop (IFFL) with a proportion node and a negative feedback loop (NFBL) with a buffering node. A number of synthetic gene circuits were proposed or constructed to achieve adaptation (Kim et al., 2014; Briat et al., 2016; Aoki et al., 2019). Quite recently, a design principle for circuits with four genes was uncovered for simultaneously achieving noise attenuation and adaptation: the circuit must have a sequential assembly structure (Qiao et al., 2019). However, these existing adaptation studies did not include any growth-feedback mechanism.\n\nIn this paper, we conduct a comprehensive computational study to uncover and understand the effects of growth feedback on the gene circuits. Specifically, we focus on a type of transcriptional regulation circuit designed for adaptation. There are 425 possible circuit structures (identified by previous research; Shi et al., 2017), and we study all of them to simulate and test their response under different levels of growth feedback. Altogether, $2\\times10^{5}$ sets of circuit parameters are randomly sampled for each structure. Our results reveal a vast number of cases where growth feedback has a detrimental effect on circuit function ($1.3\\times10^{5}$ cases in total) with varying response curves and dynamical behaviors. To gain a more intuitive overall picture, we classify these cases into several distinct categories based on the circuits\u2019 dynamic behavior. We then systemically summarize the dynamical mechanism behind these growth-induced circuit malfunctions. To quantify circuit adaptation in the presence of growth feedback, we propose a robustness measure that enables us to identify an optimal group of circuits that exhibit a high level of robustness against growth feedback, making them particularly promising for real-world implementation. The motifs associated with this optimal group are found through machine learning. We also obtain a scaling law governing the dependence of this measure on the level of growth feedback and provide a mathematical analysis to gain insights into the underpinnings of the scaling law. The take-home message is that, in spite of the negative effects of growth feedback in the majority of the circuits, there exists a small set of circuits that are still able to deliver optimal performance as designed, which is promising for real-world implementation.\n\n## Results\n\n### A systemic search of functional failures due to growth feedback\n\nAdaptation is referred to as the ability of a gene circuit to respond to changes in input and then to return to the pre-stimulus output level, even when the input change persists (Ma et al., 2009). More precisely, with an input signal switched from a lower value $I_{1}$ to a higher value $I_{2}$, as demonstrated in Figure 1b, a circuit with functional adaptation should have the following response-curve criteria: (1) precision \u2013 the final state $O_{2}$ should be close to the initial state $O_{1}$, (2) sensitivity \u2013 there should be a relatively high $|O_{peak}|$ in response to the change in the input, and (3) the system should reach equilibrium within a reasonable relaxation time. A three-node gene circuit can achieve adaptation (Ma et al., 2009), with one node receiving the input (node A), another node realizing various regulatory roles (node B), and a third node outputting the response (node C). A representative circuit topology is shown inside the red dashed box in Figure 1a. We restrict our study of the class of transcriptional regulatory networks (TRNs) with the AND logic. We fix node A as the input node, and node C as the output node.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89170/elife-89170-fig1-v1.jpg)\n\n**Figure 1.:** (a) A representative three-gene circuit (inside the dashed red box) and its dynamical interplay with host-cell growth. Arrows with triangular ends and round ends denote activating and inhibiting regulations, respectively. Altogether, there are 16,038 possible three-node topologies, with 425 topologies capable of adaptation. (b) An example of the circuit input and output signals. The input is an idealized step function of currents $I_{1}$ and $I_{2}$ before and after the jump, respectively. The output signal is a response of the circuit to the step function. The features of the output signal, as characterized by three key quantities characterizing the signal: $O_{1}$, $O_{2}$, and $O_{peak}$, can be used to determine if the circuit has succeeded or failed in its intended function.\n\nPrevious research identified 425 different three-node TRN network topologies that can achieve adaptation in the absence of growth feedback (Shi et al., 2017), providing the base of our computational study. These topologies can be classified into two families based on the core topology: networks with an NFBL and networks with an incoherent IFFL (Shi et al., 2017). More specifically, there are 206 network topologies in the NFBL family. All of these NFBL topologies have an NFBL for node B. This NFBL can be formed by the loop from node B to A and back to B (such as the circuit shown in Figure 1a), by node B to C and back to B, or by a longer route, from node B to A and then to C and back to B. There is always a self-activation link from B to B in all these 206 NFBL networks. There are 219 network topologies in the IFFL family. All of them have two feed-forward pathways from the input node A to the output node C. One pathway goes from node A to C directly, while the other involves node B in the middle. One of the pathways is activating while the other one is inhibitory. We use these 425 network topologies from the study (Shi et al., 2017), avoiding redundancy with established results. Due to the unique focus of our research on the effects of growth feedback and the need to evaluate quantitative ratios of robust circuits among all functional ones, we have chosen to use a 20-fold increase in the number of random parameter sets for each network topology compared to the simulations in Shi et al., 2017. This approach makes it computationally prohibitive to scan all possible 16,038 three-node circuits. We carefully follow the settings in Shi et al., 2017, which also analyzed TRNs with the AND logic as in this paper. Detailed descriptions of our simulation experiments are provided in the Model section. To make our results more convincing, we have adopted a set of adaptation criteria that are stricter than those used in Shi et al., 2017. Consequently, the ratio of adaptive circuits is somewhat lower in our study, with 4 out of the 425 network topologies not demonstrating adaptation. The specific structures of these 425 network topologies can be found in our GitHub repository (link provided in Data availability).\n\nIn our work, we use a parameter $k_{g}$ to control the strength of growth feedback, which is a parameter determining the maximal growth rate of the host cells, as mathematically explained in Model description. With all the other parameters fixed, a larger $k_{g}$ implies a faster cell growth rate and a stronger impact of growth feedback. To investigate the effect of growth feedback on these circuits, we systematically simulate the response of the 425 network topologies under a switch in the input signal. A three-node gene circuit subject to growth feedback has a large number of parameters, which determine the properties of the regulation links within the circuit and the circuit dynamics. For each topology, we randomly sample 2 \u00d7 105 trials of circuit parameters. Altogether, our study involves analyzing approximately $8.5\\times10^{7}$ different circuits. We find that among these trials, only about 1.5 \u00d7 105 meet the adaptation criterion in the absence of growth feedback. For these functional trials, we vary the growth-feedback parameter $k_{g}$ with a series of values, and find that the majority of trials (1.3 \u00d7 105 trials, about 87%) lose their adaptation in the interval of $k_{g}\\in(0,1)$, while only 13% of trials remain functional at $k_{g}=1.0$.\n\n### A systemic classification of functional failures due to growth feedback\n\nAn essential step toward understanding the detrimental or even destructive effects of growth feedback on circuit functioning is to identify the distinct failure scenarios. Our extensive simulations have yielded a comprehensive picture of these scenarios, as shown in Figure 2. Overall, we have identified six failure scenarios that encompass more than 99.6% of the $1.3\\times10^{5}$ failing cases we collect. The first level of classification distinguishes between failures that occur continuously or abruptly as the growth-feedback strength $k_{g}$ increases. In a continuous failure, the response curve deforms continuously as $k_{g}$ increases, as exemplified in Figure 2a\u2013c. In an abrupt failure, the response curve exhibits a sudden change as $k_{g}$ increases through a critical value, as illustrated in Figure 2d\u2013f. At the next classification level, we further divide the failures into three types of continuous failures and three types of abrupt failures.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89170/elife-89170-fig2-v1.jpg)\n\n**Figure 2.:** This study identifies six computationally detectable categories of failures based on the criterion of functional adaptation that the circuit violates as the effect of growth feedback becomes stronger. (a) Type-I and (b) type-II failures correspond to the cases where the precision criterion or sensitivity criterion is violated in a continuous fashion as the growth-feedback strength $k_{g}$ increases, respectively. (c) Type-III and (d) type-IV failures occur when the circuits lose adaptation due to growth-feedback-induced oscillation, either continuously or abruptly, as $k_{g}$ increases, respectively. The abrupt changes in type-IV are caused by bifurcations, mostly a saddle-node bifurcation of cycles or an infinite-period bifurcation. For instance, the case shown in (d) undergoes an infinite-period bifurcation. (e) Type-V and (f) type-VI failures are when the circuits lose adaptation due to an abrupt change in $O_{1}$ or $O_{2}$ as $k_{g}$ increases, respectively, which are caused by bistability or multistability in the systems. Trials that are not categorized under these six classifications or fall into multiple categories constitute less than 0.4% of all cases (see text for more details and discussions about each failure class). The insets around the pie chart provide exemplary response curves of the circuits in each failure scenario. Each inset shows the concentration of the output node $C$ versus time with two values of the growth-feedback strength $k_{g}$, one below and another above the failure threshold, for the specific failure scenario. In each case, the input is switched from state $I_{1}$ to $I_{2}$ at the time indicated by the red vertical dashed line.\n\nThe three types of continuous failures, denoted as types I\u2013III as illustrated in Figure 2a\u2013c, are determined according to the specific quantitative criteria in the response curve that the circuits violate. Type-I continuous failures, as shown in Figure 2a, are associated with the violation of the precision criterion. A circuit is deemed as precise if a change in the input signal (e.g., from $I_{1}$ to $I_{2}$) generates two opposite dynamical effects in the circuit that cancel each other out after a transient and return the final output to the original state, that is $O_{2}\u2248O_{1}$. For example, in some networks (e.g., the network in Figure 1a), an increase in the input signal $I$ will result in an increase in the concentration of gene $A$ and a reduction in the concentration of gene $B$. As both genes regulate the output gene $C$ with the respective activation links, for proper system parameter values, the two effects will cancel each other out, resulting in $O_{2}\u2248O_{1}$. Type-I continuous failures constitute the largest failure category among all possible circuit topologies, suggesting that the exact cancellation is fragile and the loss of precision is the most common dynamical mechanism behind growth-feedback-induced failures.\n\nOur simulations reveal that an exact cancellation between the two opposite sources at $k_{g}=0$ prevents an exact cancellation at any other values of $k_{g}$. That is, the set of circuit parameter values leading to perfect precision, in general, depends on the value of $k_{g}$ (see Appendix 5 for more details). The implication is that, for fixed circuit parameter values, achieving high precision under growth feedback ($k_{g}>0$) is difficult if the circuit is precise in the absence of growth feedback ($k_{g}=0$).\n\nType-II continuous failures are characterized by a continuous change in the peak of the response curve, denoted as $O_{peak}$, as $k_{g}$ increases, eventually falling below a threshold, as shown in Figure 2b. This type of failure can make it challenging for downstream circuits to detect the peak signal, hindering information transmission in the larger system. Type-II failures are the second most common type of failure observed in our simulations. The occurrence of a high peak in the response curve requires a significant transient deviation from the final equilibrium point. In the presence of growth feedback, the transient behavior changes, which can further alter the peak height $O_{peak}$.\n\nType-III and type-IV failures arise due to growth-feedback-induced oscillations, while type-V and type-VI failures are caused by bistability or multistability. To provide a more detailed understanding of these different failure scenarios, we discuss the two mechanisms, respectively, in the sections of Growth-feedback-induced oscillations and Bistability or multistability.\n\n### Growth-feedback-induced oscillations\n\nAs demonstrated by the light green and yellow slices of the pie chart in Figure 2, a considerable portion (17%) of the circuit failures are caused by growth-feedback-induced oscillations. Growth-feedback perturbations can easily change the system from the adaptive domain to the oscillation domain in these cases. Our program classifies oscillation-mediated failures into two categories: continuous (type-III) and discontinuous failures (type-IV). Type-III failures are the results of either (1) a gradual increase in the oscillation amplitude or (2) a gradual increase in the transient lifetime of damped oscillations. In the first case, an isolated circuit has already exhibited oscillations with small amplitudes in its gene concentrations with relatively weak growth feedback. As the feedback is strengthened with a larger value of $k_{g}$, the oscillations are intensified with a larger amplitude, leading to a circuit failure. In the second case, there is damped oscillation for small $k_{g}$ with a relatively short transient time before approaching an equilibrium. After strengthening the growth feedback, the damping weakens and the oscillation\u2019s amplitude cannot be reduced to the threshold within the time limit, as exemplified in Figure 2c.\n\nThe second category of growth-feedback-induced oscillation is type-IV, where oscillations emerge suddenly as the growth-feedback strength increases through a critical point. The sudden emergence of oscillations can be caused by a bifurcation or a transition into a basin of a limit-cycle attractor. A random sampling of the type-IV failure cases reveals that most of them are caused by either a saddle-node bifurcation of cycles (Strogatz, 2018) or an infinite-period bifurcation (Strogatz, 2018). In the former case, a pair of stable and unstable limit cycles suddenly emerge together. In the latter case, when observed from the opposite direction (i.e., with a decreasing $k_{g}$ crossing the threshold), the oscillation in the system spends a longer and longer time around a node on the limit cycle. This node finally becomes a stable fixed point at the bifurcation point, and the oscillation period approaches infinity. One example of type-IV oscillation-mediated failures caused by an infinite-period bifurcation is shown in Figure 2d. In our simulations, most of the cases where there are saddle-node bifurcations of cycles are categorized as type-III failures because, prior to the bifurcation point, the system can be oscillating near the ghost cycle (Strogatz, 2018) for a long time exceeding the criterion for relaxation time, though that ghost cycle is not an attractor but only a transient in the system. More details on these two types of bifurcations in our simulated circuits can be found in Appendix 7.\n\nOur results indicate that for various circuit topologies, the dynamic mechanisms leading to failures can differ, resulting in significantly different fractions of failure types among different networks. For instance, the fractions of failures caused by growth-induced oscillations can vary dramatically among all the topologies, as demonstrated in Figure 3a, where each data point represents a specific network topology. The fraction of failures caused by growth-induced oscillations can range from approximately zero to about 80%. A particular example of two different networks is presented in Figure 3b1, b2, both of which share the same minimal topology required for adaptation (Shi et al., 2017) \u2013 the circuit\u2019s core function. Despite differing by only one link, the proportions of failures with unique mechanisms are quite distinct, as illustrated in Figure 3c1, c2. Notably, for the network in Figure 3b1, almost half of the failures result from oscillations, while hardly any oscillation-mediated failures occur for the network in Figure 3b2. The explanation is that, although the difference lies in only a single link, this link determines whether an oscillation-correlated motif exists within the network. Previously, three classes of motifs capable of supporting persistent oscillations were discussed (Nov\u00e1k and Tyson, 2008), such as the \u2018delayed negative-feedback loop\u2019 in Figure 3b1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89170/elife-89170-fig3-v1.jpg)\n\n**Figure 3.:** (a) There are significant variations across network topologies in the fraction of circuit failures attributable to growth-feedback-induced oscillations (types III and IV). Some topologies exhibit virtually no oscillation-related malfunctions, while others experience about 80% of failures caused by growth-induced oscillations. Network topologies containing any oscillation-supporting motifs (discussed in the main text) are represented by red triangles, while the rest are shown as blue circles. The majority of red data points have higher fractions of oscillation-related failures compared to the blue ones, mainly due to the presence of oscillation-supporting motifs. To reduce fluctuations in the results, only circuit topologies with over 200 failed trials are included. (b1, b2) A pair of network topologies that differ by only one link (from node C to B). (c1, c2) The distinct topologies in (b1, b2) leading to different distributions of failure mechanisms. The topology in (b1) primarily experiences growth-induced oscillation as the major failure mechanism, while the one in (b2) has barely any trials with growth-feedback-induced oscillations.\n\nGenerally, the circuit dynamics depend sensitively on the structure, but oscillations specifically require an NFBL with time delay (Nov\u00e1k and Tyson, 2008). Since there are no explicit time-delayed terms in the dynamical equations in our model, one of the two types of motifs \u2013 an intermediate node in the path of the NFBL or an additional positive feedback loop \u2013 is necessary to induce time delay (Nov\u00e1k and Tyson, 2008). For network topologies with a high ratio of functional failures caused by oscillations, both motifs are observed, especially the former type. For the network in Figure 3b1, the three links: A \u2192 C, C $\u22a3$ B, and B \u2192 A, together constitute an NFBL, making the circuit more susceptible to oscillatory behaviors. For the circuit in Figure 3b2, no such NFBL exists. Figure 3a summarizes the total number of failed trials and the ratio of oscillation-induced failures for each network topology. The network topologies that contain one of the motifs for oscillation as discussed in Nov\u00e1k and Tyson, 2008 are marked in red, while the networks that do not consist of any of them are marked in blue. Note that all the networks with relatively high ratios of oscillation-induced failures (e.g., ratio >0.2) include an oscillation-correlated motif. Details about these oscillation-correlated motifs are discussed in Appendix 6.\n\nWe conclude that, for a network with an oscillation-correlated motif, even if it is functional at some parameter values, the potential of oscillatory behaviors can be triggered by growth feedback. As a result, networks without these motifs can be safer choices to avoid too many failures cases due to oscillations. Note that this relationship is not absolute. As shown in Figure 3, even the networks represented by blue dots that have no oscillation-correlated motifs can still have oscillation-induced failures (with small ratios). The complexity of the scenario makes it challenging to find general and relatively simple rules that connect circuit topology to the circuit\u2019s robustness.\n\n### Bistability or multistability\n\nIn this section, we describe the dynamical mechanisms behind type-V and type-VI failures, which in total take up about 14% of all the circuit failures. These failures are abrupt, meaning that the response curve undergoes an abrupt change at a certain critical value of $k_{g}$ from a desirable curve of adaptation. Type-V and type-VI failures correspond to an abrupt change in $O_{1}$ and $O_{2}$, respectively. Both types of failures are closely related to bistability or multistability.\n\nBistability and multistability are common phenomena in nonlinear systems. Bistability refers to the situations where two stable attractors coexist in the phase space simultaneously. Multistability describes a similar coexisting phenomenon of attractors, but with more than two attractors. With bistability or multistability in the target dynamical system, the system trajectory may end up in any one of these stable attractors, depending on the initial state of the system evolution. The entire phase space can thus be separated into two or more basins of attraction. Each basin of attraction corresponds to an attractor and consists of all the initial states that eventually lead the system to the attractor. The boundary boundaries separate two different basins of attraction. A close pair of initial states but at different sides of a basin boundary lead the system to different attractors.\n\nIn our simulations, we observe bistability in most of the circuit topologies (377 out of 425 circuit topologies). While multistability has also been observed, it is relatively rare. Considering that both bistability and multistability impact the circuits similarly, our subsequent discussions will primarily focus on bistability, which can be straightforwardly extended to multistability. It is highly unusual for both attracting basins to exhibit the desired functional behavior simultaneously. This is because they are located in different regions of the system phase space, and accommodating both would impose overly stringent constraints on the circuit. After all, having one basin functional is already rare enough with a random sampling of circuit parameters. As a result, functional adaptation is typically found in only one of the basins, with adaptation being lost in the other, and the circuit is functional only locally in its phase space, rather than on a global scale. A drifting system parameter, such as $k_{g}$, can alter the dynamics of the gene circuit. In a situation with bistability, such a change in the system dynamics can modify the shape and position of the basin of attraction and the basin boundary. Consider an initial state close to a basin boundary. With the deformation caused by a drifting parameter, the boundary may shift across the initial state, leading to a sudden switching of the system\u2019s final attractor. If the basin before the parameter change is functional and the basin after is not, this leads to a growth-feedback-induced failure. The crossing of the basin boundary dictates that the system\u2019s final state will abruptly change from one attractor to another. This type of failure can be classified as a switching type of failure.\n\nAn example of bistability-related failures is shown in Figure 2e, where in the upper panel, the circuit enters into the functional region after an initial transient. In the lower panel, the circuit enters into another region that does not have adaptability, and the circuit does not respond to the switching of the input signal. Figure 4a, b illustrates how the basin structure of the circuit changes significantly with different values of $k_{g}$. The functional basin is in yellow and it shrinks greatly with an increasing $k_{g}$. Note that the phase space is four-dimensional, so only a two-dimensional slice is shown. For a bistability/multistability-induced type-V failure where $O_{1}$ is switched, the boundary of the functional basin crosses the initial state. For a type-VI failure, the simultaneous movement of both $O_{1}$ and the basin boundary under input $I_{2}$ results in $O_{1}$ crossing the basin boundary of $O_{2}$ states.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89170/elife-89170-fig4-v1.jpg)\n\n**Figure 4.:** (a, b) Basin structure of the circuit shown in Figure 2e (with type-V failure) for input $I_{1}$ with different levels of growth feedback, for growth-feedback strength $k_{g}=0.05$ (weak) and $k_{g}=0.97$ (relatively strong). The coordinates $A_{0}$ and $B_{0}$ are the initial values of nodes A and B, respectively, corresponding to a two-dimensional slice of the entire four-dimensional phase space by fixing $C=0.1$ and $N=10^{\u22123}$. The color bar indicates the equilibrium value of node C before the input switch, which is $O_{1}(C)$. There is bistability in both cases, as there are two basins of attraction. The yellow region is the functional basin that has adaptation, while the blue region is a non-functional basin without adaptation. The relative size of the blue non-functional region with larger $k_{g}$ in this case is significantly larger and includes the initial state of the system ($A_{0}=B_{0}=0.1$), causing a type-V circuit failure. (c) Diagram of $O_{2}(C)$ from the circuit in Figure 2f with a type-VI failure. Prior to a threshold value of $k_{g}\u22480.012$, one higher stable value of $O_{2}(C)$ exists. After this threshold, the state suddenly switches to a lower $O_{2}(C)$ one. Note that this abrupt change is not caused by a bifurcation. Instead, it is caused by $O_{1}$ continuously changing with respect to $k_{g}$ crossing a basin boundary of $O_{2}$.\n\nOne might expect bifurcations to play an important role in many type-V and type-VI failures. However, in our simulations, failures precisely at the bifurcation point are not observed. This is because the bifurcation points under consideration, such as fold bifurcations, are where one of the attraction basins diminishes to zero. For a failure to occur exactly at the bifurcation point, the initial condition would need to coincide precisely with the infinitesimally small basin just before it vanishes. More realistically, failures almost always largely precede the exact bifurcation point. They happen while the basin is still contracting and the basin boundary crosses the initial condition or $O_{1}$. An example is shown in Figure 4b, where bistability persists, yet the lighter orange basin with a larger $O_{1}(C)$ cannot be reached as the boundary shifts away from the initial condition $A_{0}$ and $B_{0}$. As another example, in Figure 4c from a different circuit, the higher $O_{2}(C)$ state disappears at $k_{g}\u22480.012$ and switches to a lower $O_{2}(C)$, but this point is not a bifurcation. It is the point where the stable $O_{1}$ continuously crosses the basin boundary of $O_{2}$.\n\n### Circuit robustness and optimal topology\n\nTo quantify a circuit\u2019s robustness against growth feedback, we introduce two metrics: $Q$-value and $R$-value. We track the number of remaining functional trials for each network for various $k_{g}$ values (starting from $k_{g}=0$), denoted as $Q(k_{g})$. This measure extends the concept of $Q$-values in Ma et al., 2009 by accommodating non-zero values of $k_{g}$. To characterize the circuit robustness, we define the survival ratio $R(k_{g})$ as $R(k_{g}=k)=Q(k_{g}=k)/Q(k_{g}=0)$. This ratio represents the fraction of random circuit realizations that maintain functionality under growth feedback with a strength of $k_{g}$.\n\nNote that each $Q(k_{g})$ or $R(k_{g})$ is defined for a specific network topology in a suitable parameter space. A high value of $R(k_{g})$ indicates that a large fraction of the randomly sampled circuit parameters is functional despite cell growth with any strength no larger than $k_{g}$, indicating that the topology is more robust against growth feedback. Because of the detrimental effects of growth feedback, $R(k_{g})$ decreases monotonically with respect to $k_{g}$.\n\nTo justify the utility of $R(k_{g})$, we test the circuit topologies employed in a previous work (Zhang et al., 2020), where two relatively simple network topologies were used for a comparison study in terms of their ability to resist growth feedback and remain functional. Our evaluation of $R(k_{g})$ for the two topologies has yielded results that are consistent with those in Zhang et al., 2020, as discussed in Appendix 2. To illustrate our results in a concrete way, we set $k_{g}=0.6$ and calculate the ratio $R(k_{g}=0.6)$ for different network topologies.\n\nOur computations have revealed a set of eight circuit topologies with optimal performance as characterized by high values of both $Q(k_{g}=0)$ and $R(k_{g})$, as indicated by the set of orange points in Figure 5a. The optimal circuits form a family as their topologies exhibit a high level of similarity with one other. In particular, all eight circuits in this family share a common set of links (motif), as shown in Figure 5b. The combination of these common links is one of the minimal topologies with perfect adaptation in a three regulatory logic (Shi et al., 2017) and is critical for the circuit to be functionally adaptable. The only difference among the circuits in this family is the links from node C. While an inhibition link from node C can be important to achieving a value of $R(k_{g})$, as discussed below, the eight optimal circuit topologies do not contain any such inhibition link from node C. The role of this particular link will be further studied in our analysis of the results in Figure 6. This also explains why the family has eight members, as follows. Each link from C has two options: either the link does not appear, or it appears as an activation link. As there are three possible links from C (C to A, C to B, and C to C), there are altogether eight (23) topologies within this optimal family, according to the simulation results in Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89170/elife-89170-fig5-v1.jpg)\n\n**Figure 5.:** The circuits both have a large volume of the functional region in the parameter space in the absence of growth feedback as characterized by a large value of $Q(k_{g}=0)$ and are robust against growth feedback with a high value of $R(k_{g})$. (a) Values of $Q(k_{g}=0)$ and $R(k_{g}=0.6)$ from all the 425 network topologies, where each data point corresponds to a topology. The family of optimal topologies is represented by the orange data points, including eight network topologies. (b) The set of links (motif) shared by this family of circuits. The combination of these links is also one of the minimal topologies with perfect adaptation in three regulatory logic (Shi et al., 2017).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89170/elife-89170-fig6-v1.jpg)\n\n**Figure 6.:** There are three groups of circuits, each displaying strong topological similarities within, exhibit distinct levels of robustness against growth feedback as measured by the characterizing quantity $R$. (a) Robustness measure $R(k_{g}=0.6)$ versus $Q(k_{g}=0)$ for all 425 network topologies. Circuits are color/shape-coded into three groups (green triangles, blue circles, and red diamonds) based on the rules defined in the text. The three groups of topologies display distinct levels of $R(k_{g}=0.6)$ values, signifying a strong correlation between circuit robustness and topology. Only circuits with $Q(k_{g}=0)>300$ are shown to reduce fluctuations arising from random parameter sampling. What is demonstrated is the case of an intermediate level of growth feedback with $k_{g}=0.6$ (a different value of $k_{g}$ has no significant effect on the results \u2013 see Figure 7). The topologies associated with the green triangles have a high level of robustness, which can be regarded as an optimal group and is more prevalent than the optimal group identified in Figure 5. (b) Histogram of $R(k_{g}=0.6)$ the same color legends as in (a). Three distinct peaks emerge, each associated with a group of circuit topologies. (c) The shared network motif among all networks in the green group, which is highly correlated with the optimal minimal network shown in Figure 5b, but without the link B $\u2192$ B, which is necessary for the negative feedback loop (NFBL) family of networks to have adaptation (Shi et al., 2017). (d) Effects of burden $b$ for the three groups of networks, where the abscissa is the effective term of burden in the formula of growth rate Equation 12. The circuits in the red group have larger values of $1/(1+\u27e8b\u27e9)$, suggesting that a heavier burden yields a stronger effect of the growth feedback for the red group. (e) A multilayer perceptron (MLP) for identifying the crucial connections that determine the robustness of the circuits. The circuit topology serves as the input, where 1, 0, and \u20131 represent activation, null, and inhibition links, respectively. The output is a predicted robustness measure, denoted as $R^$. To encourage the neural network to select as few links as possible for predicting $R^$, a l\u20131 regularization term, $\\beta||W_{in}||$, is incorporated into the loss function alongside the fidelity error $||R^\u2212R||$. As a result, the feed-forward process eliminates information about the links that have little impact on circuit robustness since the corresponding $W_{in}$ entries automatically optimize to values close to zero. (f) Results from an ensemble of 50 MLPs, each trained with distinct initial values. Shown is the average importance of each of the nine links, which is determined by the weights in $W_{in}$ \u2013 see Appendix 8. The top four links with the highest importance correspond to the four links used to classify the three peaks in panel (b).\n\nHow can we quickly determine if a three-gene regulatory network with a given topology can be robust against growth feedback? Is there any structural feature of the circuit that can be used to estimate if a high value of $R(k_{g})$ can be achieved? To gain insights, we observe that the histogram in Figure 6b has three peaks about low, moderate, and relatively high values of $R$, respectively. Computations reveal certain \u2018shared topological similarity\u2019 (or motif) within each peak. Thus, each peak corresponds to a group of similar network topologies that simultaneously have a similar level of $R$. This observation suggests a correlation between the network topology and robustness against growth feedback. For convenience, we refer to these three groups of networks by the colors presented in Figure 6. For instance, the group with the highest $R$ the green triangles in Figure 6a, d is called the green group, and the group with the lowest $R$ (the red diamonds in Figure 6a, d) is the red group.\n\nTo better distinguish the three groups, we introduce two binary variables, $B_{1}$ and $B_{2}$. For each network, $B_{1}=1$ if the network contains the motif in Figure 6c, and $B_{1}=0$ otherwise. Then, for each network, an additional binary variable is set to be $B_{2}=1$ if there is an inhibition link from the output node C, and $B_{2}=0$ otherwise. We find that a linear combination of the two binary variables, $B_{S}=B_{1}\u2212B_{2}$, can characterize the circuit topology and robustness against growth feedback. In particular, the three possible cases $B_{S}=0,1,$ or \u20131 correspond to the three peaks in Figure 6b. This result suggests that the motif shown in Figure 6c is beneficial for robustness, while an inhibition link from the output node C is detrimental. It is the balancing act of these two factors that determines the overall circuit robustness.\n\nThe discovery of this three-peak structure and the corresponding topological similarity within each peak is facilitated with the use of machine learning. In particular, we consider a simple type of artificial neural network called multilayer perceptron (MLP), where we train it to predict the $R$ value from the input of the network topology through a small hidden layer with only two nodes, as demonstrated in Figure 6e. This bottleneck structure in the hidden layer plus the $l$\u20131 regularization imposed on the input matrix $W_{in}$ forces the MLP to extract low-dimensional features from the input topology to estimate $R$. In our tests, the MLP designed this way automatically assigns different levels of weights to the input information of different links. Over an ensemble of 50 MLPs trained with different random initial values, the ranking of average importance is shown in Figure 6f. The top four links are the four links used to categorize the three peaks.\n\nThe results in Figure 6 is for $k_{g}=0.6$. However, we find that different values of $k_{g}$ lead to essentially the same ranking of $R(k_{g})$ among the circuit topologies, as illustrated in Figure 7.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/89170/elife-89170-fig7-v1.jpg)\n\n**Figure 7.:** From the left to the right, the four columns are for (a1, a2) $k_{g}=0.2$, (b1, b2) $k_{g}=0.4$, (c1, c2) $k_{g}=0.6$, and (d1, d2) $k_{g}=0.8$, respectively. The legends are the same as in Figure 6a, b. For different levels of growth feedback, the distribution of the robustness measure exhibits three distinct peaks that occur at approximately the same locations on the $R$ axis. The implication is that the division of the circuit topologies into three groups in terms of the robustness measure can be revealed by examining the circuit functions at a single value of the growth-feedback strength.\n\nThree remarks on our categorizing rules based on the two extracted featured motifs are in order.\n\nFirst, the shared motif for the green group is strikingly similar to the optimal minimal network in Figure 5b (the orange group). The sole distinction lies in the self-activation link of node B. This specific link plays a crucial role. Every network in the NFBL family depends on this link to achieve adaptation (Shi et al., 2017). However, for circuits within the IFFL family, this link is not a necessity for adaptivity. Missing this link makes the motif in Figure 6c no longer a minimal network for adaptation, and a circuit containing this motif may either belong to the NFBL or the IFFL family. We have thus identified two optimal groups: the green group with optimal robustness $R$ and the orange group with both the optimal robustness $R$ and the largest functional volume $Q(k_{g}=0)$ in the absence of growth feedback. The orange group is a subset of the green group, with an additional requirement for $Q(k_{g}=0)$.\n\nSecond, the shared motif for the red group is also exactly the group of all circuits containing an inhibition link from node C to B, denoted as C $\u22a3$ B. These two different definitions are in fact equivalent: all networks with $Q(k_{g}=0)>300$ that contain C $\u22a3$ A or C $\u22a3$ C also contain the motif in Figure 6c, yielding $B_{S}=0$, and belong to the blue group.\n\nThird, the three circuit groups in Figure 6 are not correlated with the categories used in previous research on circuit functionalities without growth feedback (Ma et al., 2009; Shi et al., 2017). These studies classified adaptive networks into NFBL and IFFL families. Each family contains a few minimal topologies with or without some additional other motifs, and the two families have distinct minimal functional topologies. The minimal topology acts as the backbone for supporting circuit functionality. We find that, when growth feedback is present, the prior classification scheme and the underlying minimal topologies become less relevant. Circuits belonging to the NFBL family are spread across all three levels of $R(k_{g})$ in Figure 6b, as are the circuits from the IFFL family. A robust circuit can be part of either family, just as a fragile circuit can belong to both. We give that: (1) the topological motifs determining circuit functionality robustness and (2) the motifs deciding whether a circuit belongs to the NFBL or IFFL family are independent. To quantify this irrelevance, we calculate the point biserial correlation between $R(k_{g}=0.6)$ and a binary variable determining the family to which the circuit belongs. The resulting correlation is merely 0.1, suggesting hardly any correlations. A further illustration and quantification of this irrelevance can be found in Appendix 4.\n\nWhat are the reason and mechanism behind the phenomenological set of circuit categories? Especially, it is desired to understand why the shared motif for the green group is beneficial for circuit robustness, and why the shared motif for the red group is harmful for robustness. It is challenging to find straightforward explanations given the complexity of the problem (see Discussion section). Certain insights are as follows. We find that the average node concentrations at the equilibrium for the network topologies in the red group are consistently smaller than those in the blue group. This difference is reflected in the value of burdens $b$. In particular, according to Equation 12, the cell growth rate is proportional to the term $1/(1+b)$ under the same level of growth feedback. Figure 6d shows the average burden $\u27e8b\u27e9$ for each network topology, demonstrating that the values of the term $1/(1+\u27e8b\u27e9)$ for the circuits in the red group are larger than the values in the blue group. As a result, for the same value of $k_{g}$, the growth feedback effectively received by the circuits in the red group is stronger than that of the blue group circuits. Further support is provided by the results from the limit $J\u2192\u221e$ (Appendix 3). In this limit, the burden $b$ does not affect the strength of the growth feedback. As a result, the $R$ values of the red group significantly overlap with those of the blue group, suggesting that the distinctively low values of $R$ for the red group be a result of the burden with finite $J$. We also find that the existence of the shared motif for the red group has a stronger correlation to the motif necessary for growth-feedback-induced oscillations. All circuits with oscillation type of failures taking up more than 20% of failures belong to the red group. This correlation can result in further fragility of the red group circuits.\n\n### Scaling law quantifying the effect of growth feedback on gene circuits\n\nA comprehensive way to understand the effects of growth feedback on gene circuits is through scaling laws, an approach commonly employed in statistical and nonlinear physics. Does a scaling law exist that characterizes quantitatively how growth feedback affects the circuit functioning? Through a systematic computational analysis of the circuit robustness, we have uncovered a scaling law that governs how the robustness measure $R(k_{g})$ deteriorates as growth feedback is strengthened, as shown in Figure 8, where the blue curve is the result averaging over all the 425 network topologies. The three other curves represent circuit topologies that have a relatively high, moderate, and low value $R$ among the 425 topologies tested, to demonstrate that this scaling behavior is generic. These three topologies are the highest $Q(k_{g}=0)$ topology in each of the three groups shown in Figures 6 and 7. As growth feedback is strengthened, the number of circuit topologies that can maintain functioning decreases (or, equivalently, the number of failed circuits increases). The decreasing behavior of $R(k_{g})$ with $k_{g}$ tends to be slower than exponential [e.g., $exp\u2061(\u2212\\betak_{g})$ with $\\beta>0$ being a constant].\n\n![Figure 8.](https://cdn.elifesciences.org/articles/89170/elife-89170-fig8-v1.jpg)\n\n**Figure 8.:** Scaling law governing the circuit robustness measure $R(k_{g})$.The blue curve is the average result of all the 425 network topologies. The other three curves represent circuits with different robustness levels: high (Circuit No. 98), moderate (Circuit No. 3), and low (Circuit No. 28) values of $R$, to demonstrate that this scaling behavior is generic. Each of these three circuit topologies is selected from one of the three groups illustrated in Figures 6 and 7, and they have the highest $Q(k_{g}=0)$ value within their respective groups.\n\nA general theoretical argument for the scaling law is unavailable. However, if we simplify the system by setting the parameter $J$ in Equation 12 to be large so the burden $b(t)$ is much smaller than one, we are able to argue that the scaling law is approximately given by\n\n$$\nR(k_{g})\u223cexp\u2061(\u2212\\betak_{g}^{\\lambda}),\n$$\n\nwhere $\\beta>0$ and $0<\\lambda<1$ are two specific constants that depend on the network topology, and the typical value of $\\lambda$ is about 0.6. The exponential scaling is assumed, given its memorylessness. That is, there is no special zero point of $k_{g}$, for the reason that a certain level of $k_{g}$ is mathematically equivalent to a larger $d_{x}$, as discussed below.\n\nThe quantity $R(k_{g})$ is a simple and straightforward measure characterizing the detrimental effect of growth feedback on gene circuits. We carry out a semi-quantitative analysis of this quantity and the effect of $k_{g}$ on it. The circuit dynamical equations, Equations 9\u201312 can be simplified by substituting Equation 14 into them to cancel the $dN/dt$ terms, leading to\n\n$$\n\\frac{dA}{dt}=v_{A}\\frac{I^{n_{IA}}}{I^{n_{IA}}+K_{IA}^{n_{IA}}}\u2212(d_{A}+k_{g}\\frac{1}{1+b})A,\n$$\n\n\n\n$$\n\\frac{dB}{dt}=v_{B}\\frac{A^{n_{AB}}}{A^{n_{AB}}+K_{AB}^{n_{AB}}}\u2212(d_{B}+k_{g}\\frac{1}{1+b})B,\n$$\n\n\n\n$$\n\\frac{dC}{dt}=v_{C}\\frac{A^{n_{AC}}}{A^{n_{AC}}+K_{AC}^{n_{AC}}}\\frac{K_{BC}^{n_{BC}}}{B^{n_{BC}}+K_{BC}^{n_{BC}}}\u2212(d_{C}+k_{g}\\frac{1}{1+b})C.\n$$\n\nCompared with the equations without growth feedback Equations 6\u20138, we see that introducing growth feedback is equivalent to adding a variable $k_{g}/(1+b)$ to the degradation terms for each node. Intuitively, the value $Q$ of a network topology measures the volume of the functional region $M$ in the parameter space, which is also a function of $k_{g}$. We thus have that $R(k_{g}=k)$ is the volume of the intersection between $M(k_{g}=k)$ and $M(k_{g}=0)$ divided by the volume of $M(k_{g}=0)$:\n\n$$\nR(k_{g}=k)=V(M(k_{g}=k)\u2229M(k_{g}=0))/V(M(k_{g}=0)),\n$$\n\nwhere $V(M)$ is the volume of $M$.\n\nThe picture can be further simplified if we assume the burden $b$ is approximately a constant within a range of $k_{g}$. Since growth feedback contributes to an additional term in degradation $d_{x}$, strengthening the feedback is equivalent to increasing all three quantities $d_{x}$ together. Consequently, as $k_{g}$ increases, the high dimensional region $M$ does not deform, but simply translates in the negative direction in all dimensions of degradation $d_{x}$ in the parameter space. That is, as growth feedback becomes stronger, it becomes more difficult for the circuit to maintain it functioning.\n\n## Discussion\n\nWhen a synthetic gene circuit is introduced into a host cell, an inherent coupling arises wherein the gene circuit affects cell growth and cell growth in turn alters the circuit gene expression (Klumpp et al., 2009; Klumpp and Hwa, 2014). Due to the fundamental nonlinearity in the gene network and in the cell growth dynamics, the interaction is generally quite complicated. To understand this interaction so as to identify the circuit topologies that can withstand the interaction and maintaining the intended circuit functions is one of the most challenging problems in synthetic biology.\n\nPrevious studies showed that growth-mediated feedback can endow synthetic gene circuits with various emergent properties. In general, growth feedback tends to negatively impact the intended function the circuit is designed for. There was preliminary evidence that the effects of growth feedback depend strongly on the circuit topology (Zhang et al., 2020). For a particular circuit function, while the vast majority of the topologies would fall under growth feedback, a handful still exists that is adaptable to maintain its designed functions.\n\nIdentifying the \u2018optimal\u2019 topologies that are most robust against growth feedback is fundamental to constructing synthetic gene circuits that can survive, adapt, and function as designed in the fluctuating growth environment of the host cells.\n\nThe main contribution of this paper is a systematic computational study of three-gene circuits with adaptation to uncover and understand the detrimental effects of growth feedback on gene circuits and to identify optimal groups of topologies. Without growth feedback, there are 425 possible topologies with functional adaptation. A vast majority of these circuit topologies fail in their functions under growth feedback, and our computations have revealed, for the first time, six distinct main failure categories covering more than 99% of the cases. From a dynamical point of view, there are three mechanisms by which growth feedback can deprive the circuit of its ability to adapt: (1) continuous deformation of the response curve, (2) strengthened or induced oscillations, and (3) sudden switching to coexisting attractors (also summarized in Box 1). By introducing a robustness measure to quantify circuit adaptation in the presence of growth feedback, we uncover a general scaling law characterizing the detrimental effect of growth feedback on the circuit functioning in a quantitative manner. We identify an optimal group of circuits with high robustness and key subsets of links associated with this group that play a critical role in sustaining circuit function in host cells. Taken together, to design a functional gene circuit, growth feedback must be taken into account, as the same circuit designed with perfect functions without the feedback can behave quite differently when the feedback is present. Our study has provided unprecedentedly quantitative insights into the interplay between gene circuit topology and growth feedback, unlocking the dynamical mechanism of growth-induced failures and providing guidance to better design practically applicable synthetic gene circuits.\n\nA unique finding is that growth feedback can induce or strengthen oscillations in gene circuits designed for adaptation. Such oscillations can often destroy the circuit functionality. In a recent experimental study, a similar phenomenon was observed in gene circuits designed for self-activation (Melendez-Alvarez et al., 2021). These results suggest that growth-feedback-induced oscillation may be a general dynamical mechanism that can negatively affect the robustness of gene circuits. In addition, our study has shown that growth feedback has a highly sensitive dependence on the circuit topology: even a small structural differences between two circuits designed for the same function can result in drastically different outcomes under growth feedback. For example, Figure 3 demonstrates that a link critical for an oscillation-supporting motif can significantly affect the robustness of the circuit against growth feedback. It can thus be quite useful to identify failure-related motifs so that they can be avoided when designing a gene circuit.\n\nFrom a broad point of view, our study has yielded basic insights into the fundamental topology\u2013function relationships in gene circuits. Examples include how circuit topology affects circuit robustness against growth feedback and whether a circuit topology contains motifs supporting a specific type of growth-induced failure, such as oscillation-related malfunctions. However, searching for and understanding the interplay between circuit topology and dynamical behaviors remain to be a challenge, for the following five reasons.\n\nFirst, the two relevant questions are whether a circuit topology supports adaptation and whether the circuit is robust against growth feedback or is susceptible to a specific type of growth-induced failures. While our study focused on the latter, the former is important. Addressing both questions to identify and analyze all possible scenarios is infeasible at the present, due to the complex parameter space of the circuits. To make our study feasible, we focused on the cases where the circuit satisfies all the requirements for adaptation in the absence of growth feedback. These cases may occupy a small region in the entire parameter space of the circuit. For each circuit topology, the uncovered function failures due to growth feedback are thus limited to relatively small parameter regions. Second, most network topologies studied have dense connections among the three nodes (only about 20% of the networks have fewer than six connections). As a result, different motifs can overlap with each other, blocking or enhancing the function of each other. The dense connections thus pose a difficulty in identifying the motifs accurately. Third, for a particular class of failures, competition among different failure types may arise. For instance, a circuit with oscillation-supporting motifs may not have a high fraction of oscillation-induced failures because it also contains the motif for bistability, leading to a large fraction of failures due to the bistability-induced malfunctions. Fourth, due to the necessity to set a threshold in the relaxation time, transient behaviors can arise. In many failure cases caused by oscillations, the oscillatory behavior is not stable and the circuit will eventually approach a fixed point. However, time scales should be taken into account. The transient behaviors can make the network topologies without the necessary motif for sustained oscillations exhibit oscillation-induced failures. Fifth, growth feedback acts as additional feedback loops within the circuit, potentially complicating the circuit dynamics and adding more links to the circuit topology. These extra links in the integrated topology might give rise to an oscillation-related motif. However, our simulations have shown that the impact of this additional oscillation motif, introduced by growth feedback, tends to be weak (Appendix 3).\n\nAlthough the primary focus of this paper is on how growth feedback can undermine an originally adaptive circuit and how to design circuits that are robust against such feedback, our simulated dataset reveals instances where growth feedback can benefit the circuit within certain ranges. Specifically, we identified 2092 circuits across 306 different topologies where adaption, lost at an intermediate level of growth feedback, is restored at higher levels. This is 1.4% of all circuits tested. We anticipate that additional circuits exhibiting this loss-and-recovery behavior exist, as our sampling of six discrete levels of $k_{g}$ (0, 0.2, 0.4, 0.6, 0.8, 1.0) might have overlooked numerous cases. This result again suggests the possible advantages of growth feedback in gene circuits (Tan et al., 2009; Nevozhay et al., 2012; Deris et al., 2013; Feng et al., 2014; Melendez-Alvarez and Tian, 2022). A comprehensive study into how growth feedback can endow or enhance adaption in circuits would require entirely different approaches for sampling circuit parameters and selecting candidate network topologies, demanding significantly high computational costs. Given that this topic extends beyond the scope of the current paper, we leave this matter to future research.\n\nOur study focuses on scenarios where random noises are ignored. Realistically, gene circuits are subjected to diverse types of noise, which can complicate their predictable behavior and design. These noises can originate externally from a noisy input signal $I$, or intrinsically, directly affecting the circuit components. Further, these noises can be classified based on various mechanisms that cause them (Colin et al., 2017; Sartori and Tu, 2011). And with different mechanisms, each type of noise can be characterized by different attributes such as frequency, amplitude, and noise color. These variances can lead to different impacts on the circuits, potentially necessitating unique mechanisms or designs for the attenuation of each category (Sartori and Tu, 2011; Qiao et al., 2019). Given the extensive complexity and the need for thorough investigation, these noise-related challenges are beyond the scope of this paper and require a series of future studies.\n\nIn our paper, we consider dilution due to cell growth as the dominant factor of growth feedback. Here, we compared the adaptive circuits under no-growth conditions and their ability to maintain their adaptive behaviors after dilution into a fresh medium, which mediated a significant dilution to the circuits. This is based on our previous work Zhang et al., 2020. However, growth feedback is inherently complex (Klumpp et al., 2009). For instances, an increased growth rate can change protein synthesis rate (Hintsche and Klumpp, 2013; Scott and Hwa, 2023), and cell growth rates can affect the distribution of protein expression in cell populations (Kheir Gouda et al., 2019). In our paper, we concentrate on a simplified model with dilution, which we consider to have captured the dominant factor. The dynamic roles of the dilution and growth-affected production rate should be analogous, given that they both act as inhibitory factors arising from cell growth. Incorporating the impact of growth rate on protein synthesis into our model would offer a more comprehensive analysis, a task beyond the scope of this paper but presenting an intriguing opportunity for future research to address the complexities of growth feedback.\n\nIn Appendix 1, we extend our analysis to four-gene circuits with over 2000 functional failure trials. A remarkable finding is that the failure scenarios for these four-gene circuits are the same as the categories for three-gene circuits (summarized in 1), indicating that the growth-feedback-induced failure mechanisms identified in our work are general. The focus of our study on small gene circuits is driven by their current relevance in synthetic biology. The primary reason is that even modest sized circuits, when introduced to a host, can provoke unintended and often uncontrollable outcomes due to competition and interactions in the form of growth feedback. Additionally, resource competition within the host cell can arise, where circuit genes compete for limited resources, adversely affecting the dynamics of the circuit. Consequently, larger gene circuits encounter more challenges due to these complexities. Indeed, the state-of-the-art synthetic gene circuits typically involve only three to four genes, a realm where the implications of growth feedback have been insufficiently understood until now. Our work aims to bridge this knowledge gap.\n\nIt is possible that, in the future, synthetic biology may use larger and more complex circuits. To uncover and understand the failure mechanisms as well as to identify circuits that are resilient to growth feedback, machine learning can be used. For example, recurrent neural networks have recently been used to identify circuit topologies appropriate for a specified desired function (Shen et al., 2021), and reinforcement learning tackle the combinatorial optimization problem (Bello and Pham, 2016; Mazyavkina et al., 2021) of pinpointing the optimal circuit topologies. Furthermore, automated differentiation (Hiscock, 2019; Kong, 2022) can be exploited to locate optimal network parameters, which can be efficient for larger circuits with a high-dimensional parameter space. In spite of these works, to study the effects of growth feedback and resource competition among numerous genes in larger circuits remains to be a formidable challenge. Our work providing a comprehensive picture of the failure mechanisms induced by growth feedback represents a step forward in this field.\n\n## Model\n\n### Model description\n\nWe restrict our study to the class of TRNs with the AND logic. In order not to overwhelm readers with too many terms and parameters, we first describe a partial model (an isolated circuit without growth feedback) before introducing the complete model that we study in this work. For an isolated circuit without any growth feedback, and with the topology specified inside the red dashed box in Figure 1a, the dynamical equations are\n\n$$\n\\frac{dA}{dt}=v_{A}\\frac{I^{n_{IA}}}{I^{n_{IA}}+K_{IA}^{n_{IA}}}\\frac{B^{n_{BA}}}{B^{n_{BA}}+K_{BA}^{n_{BA}}}\u2212d_{A}A,\n$$\n\n\n\n$$\n\\frac{dB}{dt}=v_{B}\\frac{K_{AB}^{n_{AB}}}{A^{n_{AB}}+K_{AB}^{n_{AB}}}\u2212d_{B}B,\n$$\n\n\n\n$$\n\\frac{dC}{dt}=v_{C}\\frac{A^{n_{AC}}}{A^{n_{AC}}+K_{AC}^{n_{AC}}}\\frac{B^{n_{BC}}}{B^{n_{BC}}+K_{BC}^{n_{BC}}}\u2212d_{C}C,\n$$\n\nwhere the dynamical variables $A$, $B$, and $C$ are the concentrations of each protein (node). The notations are as follows. Let $x$ and $y$ be two arbitrary nodes. The quantity $v_{x}$ is the maximal production rate of gene $x$, $d_{x}$ is the degradation rate of gene $x$, $dx/dt$ is its time derivative of the concentration, and $n_{xy}$ and $K_{xy}$ are the coefficients in the Hill function for a transcriptional regulation from gene $x$ to $y$.\n\nWhen growth-mediated feedback is present, the dynamical equations of the three-node circuits are modified to\n\n$$\n\\frac{dA}{dt}=v_{A}\\frac{I^{n_{IA}}}{I^{n_{IA}}+K_{IA}^{n_{IA}}}\\frac{B^{n_{BA}}}{B^{n_{BA}}+K_{BA}^{n_{BA}}}\u2212d_{A}A\u2212\\frac{dN}{dt}\\frac{1}{N}A\n$$\n\n\n\n$$\n\\frac{dB}{dt}=v_{B}\\frac{K_{AB}^{n_{AB}}}{A^{n_{AB}}+K_{AB}^{n_{AB}}}\u2212d_{B}B\u2212\\frac{dN}{dt}\\frac{1}{N}B,\n$$\n\n\n\n$$\n\\frac{dC}{dt}=v_{C}\\frac{A^{n_{AC}}}{A^{n_{AC}}+K_{AC}^{n_{AC}}}\\frac{B^{n_{BC}}}{B^{n_{BC}}+K_{BC}^{n_{BC}}}\u2212d_{C}C\u2212\\frac{dN}{dt}\\frac{1}{N}C,\n$$\n\n\n\n$$\n\\frac{dN}{dt}=k_{g}\\frac{1}{1+b(t)}(1\u2212\\frac{N}{N_{0}})N,\n$$\n\n\n\n$$\nb(t)=\\frac{A+B+C}{J},\n$$\n\nwhere the additional dynamical variable $N$ denotes the density of the host cells, $k_{g}$ is a parameter controlling the maximal growth rate of the host cells, $J$ is a parameter reflecting how this three-node gene circuit contributes to the burden. Equations 9\u201313 are the dynamical equations we actually use for simulating the circuit dynamics.\n\nThe growth of $N$ is under the regulatory action of two sources: by itself following the logistic equation with the environmental capacity $N_{0}$ and by the burden $b$ that represents the competence from the metabolism of the gene circuit. To make the computations feasible, we focus our analysis on the exponential growth phase so that $N_{0}\u226bN$. The equation governing the growth of the cell numbers, Equation 12, can then be rewritten as\n\n$$\n\\frac{dN}{dt}=k_{g}\\frac{1}{1+b(t)}N,\n$$\n\nwhere the dilution rate $dN/dt$ is regulated only by the burden $b(t)$ of the gene circuit. While cell growth is inhibited by the metabolism of the gene circuit, the circuit is also regulated by the growth of $N$ that dilutes the concentration of circuit nodes with increasing cell volume. This dilution is reflected by the additional terms $\u2212(x/N)(dN/dt)$ in Equations 9\u201311.\n\nIt is useful to clarify the meaning of the degradation parameter $d_{x}$ and its relationship to growth feedback. While degradation and growth-feedback terms have the same sign in the regulatory equations, $d_{x}$ may include a constant dilution. We assume that $d_{x}$ represents the sum of all the degradation effects in cells that are distinct from growth feedback. For instance, degradation tags, especially in the ssrA tagging systems (Gottesman et al., 1998), are often used in synthetic gene circuits to increase the degradation rate and thus increase the time scale of the whole system (Elowitz and Leibler, 2000; Fung et al., 2005; Stricker et al., 2008; O\u2019Brien et al., 2012).\n\n### Numerical simulations of circuit dynamics\n\nWe use the fourth-order Runge\u2013Kutta method to numerically integrate the dynamical equations of the gene circuits, with the integration step as $t_{step}=0.05$. The dynamical equations we use are similar to Equations 9\u201313 but with different topologies. All the initial states of $A$, $B$, and $C$ are taken to be 0.1. The input signal is initially $I_{0}=0.06$ and then switched to $I_{1}=0.6$. The simulation codes can be found in our GitHub repository (link provided in Code availability). The simulation results can be found in our OSF repository (link provided in Data availability).\n\nTo achieve the desired adaptation, the circuit\u2019s output should reach a steady state before and after the input signal is switched. The values of $O_{1}$ and $O_{2}$ can be determined as the output signal associated with the steady states. However, realistically, it is not necessary for the circuit to reach an exact equilibrium. From a computational perspective, the system\u2019s state is almost always asymptotically approaching that exact equilibrium but not actually reaching it. As we are simulating the dynamical process of the circuit, setting a condition such as $dA/dt=dB/dt=dC/dt=0$ to determine $O_{1}$ or $O_{2}$ is not meaningful. From a more biological perspective, relatively small drifting or oscillations in the circuit should not harm the circuit functionality and are acceptable. Therefore, we define a \u2018relatively steady state\u2019 where, within a time block of $t_{block}=200$, the standard deviation of the time series of each node $x(t)$ satisfies: $std(x)<1\\times10^{\u22124}$ and $std(x)/mean(x)<0.05$. To further guarantee that the circuit is actually in the \u2018relatively steady state\u2019, two successive time blocks satisfying the standard deviation requirements are needed. The quantities $O_{1}$ or $O_{2}$ are then defined as the respective mean values of the output signal in that last time block $t_{block}$.\n\n### Numerical criteria for functional adaptation and failure types\n\nWe introduce four criteria to determine if a circuit has functional adaptation, and the failure types. The codes implementing these criteria are available in our GitHub repository, with the link provided in Code availability. The failure type results for all circuits tested are available in our OSF repository, with the link provided in Data availability. An additional note is provided in the README file of our GitHub repository for further guidance on generating pie charts similar to Figure 2 for any network topology or subset of topologies.\n\n#### Precision\n\nThe basic requirement of adaptation is that the output remains the same when is input is switched from one state to another, that is, $O_{2}$ should be close to $O_{1}$ in Figure 1b. Specifically, we set the precision criterion to be $|(O_{2}\u2212O_{1})/O_{1}|<0.1$.\n\n#### Sensitivity\n\nThe circuit is also required to respond to the switch of the input signal with a high peak. This ability of the circuit is named sensitivity. We introduce two types of sensitivity: relative and absolute, with the respective criteria $O_{peak}/O_{1}>0.5$ and $O_{peak}>0.1$. Only the circuits meeting both criteria are regarded as having achieved the required sensitivity.\n\nThe need to use the two different criteria simultaneously can be justified, as follows. Given the variety of network topologies and a large number of system parameters, there is a vast diversity in the circuit dynamics and the values of $O_{1}$. When $O_{1}$ is small, a peak that satisfies the relative sensitivity criterion alone can still be difficult to observe. If the absolute criterion is used alone for a circuit with a large $O_{1}$ value, the peak may be negligible in comparison with $O_{1}$, making its observation practically difficult. It is thus necessary to combine the two criteria so that the cases of small and large values of $O_{1}$ can be dealt with on the same footing.\n\n#### Oscillations and relaxation time\n\nAn ideal gene circuit should be able to respond and adapt within a reasonable time scale. We set an upper bound of evolution time $t_{max}=4,000$. If the system cannot reach the \u2018relatively steady state\u2019 within this time, it is regarded as non-functional. According to our results, a circuit exceeds our relaxation time upper bound almost always due to oscillations.\n\n#### Continuous or abrupt failures\n\nWe categorize failures into continuous failures and abrupt switching, as exemplified in Figure 2. After determining the circuit\u2019s critical $k_{g}$ value for a circuit, we calculate the changes in $O_{1}$ and $O_{2}$ both before and after this critical point to evaluate if the change is continuous or not across the critical value. More specifically, taking $O_{1}$ as an example, we calculate the $O_{1}$ values before and after the critical value, $O_{1,before}$ and $O_{1,after}$. Then, for each gene A, B, and C, we calculate their changes in $O_{1,before}$ and $O_{1,after}$. Taking gene A as an example, if $O_{1,before}(A)>0.001$, then a relative difference $|O_{1,after}(A)\u2212O_{1,before}(A)|/O_{1,before}(A)>0.05$ is considered as abrupt. If $O_{1,before}(A)<0.001$, the relative difference is not reliable as when $A$ approaches zero, it can be observed as $A\u224810^{\u221210}$ or $A\u224810^{\u221212}$, depending on the rather arbitrary time window. So in this case, when $O_{1,before}(A)<0.001$, we use a criterion based on the absolute difference $|O_{1,after}(A)\u2212O_{1,before}(A)|>0.01$. If any of the genes have abrupt switching, then the entire failure is considered as an abrupt switching.\n\n### Details of parameter space sampling\n\nA three-node gene circuit subject to growth feedback has a large number of parameters. Let $L$ be the number of links among the three nodes (excluding the input link). The total number of parameters is $2\u22c53+2(L+1)=(2L+8)$. The values of these parameters determine the properties of the regulation links within the circuit and, as a result, the circuit dynamics. The circuit parameters are randomly generated by the Latin hypercube sampling method (Iman, 1980) using the function \u2018lhsdesign\u2019 in Matlab. The parameters are sampled uniformly either on a logarithmic or a linear scale. The sampling ranges of the parameters are: $v_{x}\\in[10^{\u22121},10^{1}]$ (sampled in logarithmic scale), $d_{x}\\in[10^{\u22122},1]$ (sampled in logarithmic scale), $n_{xy}\\in[1,4]$ (sampled in linear scale), and $K_{xy}\\in[10^{\u22123},1]$ (sampled in logarithmic scale).\n\n### Code availability\n\nAll computer codes can be found at GitHub (copy archived at Kong, 2025).\n",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mariana G\u00f3mez-Schiavon, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89170.3.sa0](https://doi.org/10.7554/eLife.89170.3.sa0)\n\nThe paper presents valuable computational findings on how growth feedback affects the performance of synthetic gene circuits designed for adaptive responses. By systematically analyzing over four hundred circuit topologies, the authors provide solid evidence for their conclusions on failure mechanisms and design features that enhance robustness against growth dynamics. While the study's significance and rigor are somewhat constrained by its reliance on previously published network topologies, these results are highly relevant for advancing the engineering of gene circuits in various applications.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89170.3.sa1](https://doi.org/10.7554/eLife.89170.3.sa1)\n\nEngineered artificial gene regulatory networks (\"circuits\") have a wide range of applications, but their design is often hindered by unforeseen interactions between the host and circuit processes. This manuscript employs computational modeling to investigate how growth feedback influences the performance of synthetic gene circuits capable of adaptation. By analyzing 425 hypothetical circuits previously identified as achieving nearly perfect adaptation (Ma et al., 2009; Shi et al., 2017), the authors introduce growth feedback into their models using additional terms in ordinary differential equations. Their simulations reveal that growth feedback can disrupt adaptation dynamics in diverse ways but also identify core motifs that ensure robust performance under such conditions. Additionally, they establish a scaling law linking circuit robustness to the strength of growth feedback. The findings have important implications for synthetic biology, where host-circuit interactions frequently compromise desired behaviors, and for systems biology, by advancing the understanding of network motif dynamics. The authors' classification schemes will be highly valuable to the community, offering a framework for addressing growth-related challenges in circuit design.\n\nStrengths\n\n- A detailed investigation into the reasons for adaptation failure upon the introduction of cell growth was conducted, distinguishing this work from other studies of functional screening in gene regulatory network topologies. The comprehensiveness of the analysis is particularly noteworthy.\n\n- Approaches for assessing robustness, such as the survival ratio Q, were employed, providing tools that may be applicable to a broad range of network topologies beyond adaptation. The scaling law derived from these approaches is both novel and insightful.\n\n- A thorough numerical analysis of three gene regulatory networks exhibiting adaptation was performed. For each of the 425 topologies analyzed, approximately 2e5 circuits were sampled using Latin hypercube sampling, ensuring robust coverage of the parameter space. Among these, 1.5e5 circuits were identified as showing adaptation and subsequently subjected to further analysis, yielding approximately 350 parametric designs per topology for deeper investigation.\n\n- The systematic approach and depth of the analysis position this study as a significant contribution to the understanding of gene regulatory networks and their response to growth feedback. The combination of detailed investigation, novel robustness metrics, and rigorous computational techniques enhances the impact of this work within the field.\n\nWeaknesses\n\n- The study focuses exclusively on a preselected set of 425 topologies previously shown to achieve adaptation, limiting the exploration of whether growth feedback could enable adaptation in circuits not inherently adaptive. While the authors have discussed and justified this choice, the focus restricts the generality of the conclusions, as the potential for growth feedback to induce adaptation in non-adaptive circuits remains unaddressed. The analysis includes scenarios where higher growth feedback restores adaptation in circuits that lose it at intermediate levels, but further elaboration on the implications for circuit design would strengthen the impact. The numerical framework and parameter choices align well with established methods, and an overview of the selected topologies has been provided. However, offering detailed information in supplementary materials or a public repository would further enhance the paper's accessibility and reproducibility.\n\n- The model fails to capture the influence of protein levels on growth. To ensure accurate modeling of protein-level effects on growth, the b(t) term should be scaled appropriately, similar to Tan et al. Nature Chemical Biology 5:842-848 (2009).\n\n- The authors propose bistability or multistability as the primary mechanisms behind different types of adaptation failure, explaining why the failures do not occur precisely at bifurcation points. They argue that their ODE simulations provide evidence for oscillation-related bifurcations, and an included appendix explores this phenomenon further, detailing how it can be observed in their results. While the authors choose not to apply semi-analytic methods, such as numerical continuation and eigenvalue analysis, to validate the existence of bifurcations, their approach offers valuable insights into the underlying dynamics of adaptation failures.\n\n- The analysis in this work is carried out exclusively in a deterministic regime, as the focus is on scenarios where the effects of noise are assumed to be minimal. This approach is justified, and the authors acknowledge the complexity of extending their analysis to include stochasticity, which they suggest as an avenue for future research. The discussion has been expanded to address the potential impact of noise, its handling, and the assumptions underlying its exclusion. It is important to note, however, that noise can significantly alter system behavior-for instance, stabilizing trajectories and removing oscillations, as shown in prior studies (e.g., 10.1016/j.cels.2016.01.004). Additionally, variability in experimental implementations may influence the dynamics beyond what is predicted in deterministic models. These factors should be considered when interpreting the results.\n",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a78cf707-887c-4279-b9d6-87e7ef2955e8",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C1",
+      "claim": "The successful integration of engineered gene circuits into host cells remains a significant challenge in synthetic biology due to circuit\u2013host interactions, such as growth feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The successful integration of engineered gene circuits into host cells remains a significant challenge in synthetic biology due to circuit\u2013host interactions, such as growth feedback, where the circuit influences cell growth and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field, supported by the broader context of the manuscript and citations throughout the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "459ee6ce-b809-496a-a267-aaaf5ce397fd",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C2",
+      "claim": "Growth feedback is a mechanism where the circuit affects cell growth and the growth in turn modifies the gene expressions in the circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, a synthetic gene circuit embedded in a host cell possesses an intrinsic coupling mechanism: the circuit affects cell growth and the growth in turn modifies the gene expressions in the circuit (Klumpp et al., 2009; Klumpp and Hwa, 2014; Boo et al., 2019; Scott et al., 2010; Ray et al., 2016) \u2013 the so-called growth feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "e2ad591e-c54e-4f20-8646-524269fa91bb",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C3",
+      "claim": "Growth-mediated feedback can endow a synthetic gene circuit with various emergent properties, such as innate growth bistability.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have shown that the growth-mediated feedback can endow a synthetic gene circuit with various emergent properties, such as innate growth bistability (Deris et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "8cbed149-aa4c-44f1-8997-349cd7d60f31",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C4",
+      "claim": "A non-cooperative positive autoregulation system, when coupled with growth feedback, gains increased effective cooperativity, thereby resulting in bistability.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a non-cooperative positive autoregulation system, when coupled with growth feedback, gains increased effective cooperativity, thereby resulting in bistability (Tan et al., 2009; Nevozhay et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "71eb7ff1-b48e-4781-8cfc-eae3bf82f765",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C5",
+      "claim": "Toxin cooperativity can be induced in multiple toxin\u2013antitoxin systems by growth-mediated feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "In another example, toxin cooperativity can be induced in multiple toxin\u2013antitoxin systems by growth-mediated feedback (Feng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "e610eae6-bfc2-49d8-8475-118f0ff7fb70",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C6",
+      "claim": "The number of steady states in one gene circuit depends on growth feedback and resource availability.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of steady states in one gene circuit also depends on growth feedback and resource availability (McBride and Del Vecchio, 2020; Melendez-Alvarez and Tian, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "c8d104ac-3143-40c7-a412-cdb52e21e83a",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C7",
+      "claim": "Growth feedback can have drastically different effects on congruent circuits with distinct topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has revealed that growth feedback can have drastically different effects on congruent circuits with distinct topologies (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "8f9f2e75-2a03-44ad-be72-f87094d2d8e3",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C8",
+      "claim": "For the toggle switch, memory can be retained and the circuit tends to be refractory toward growth feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "For the toggle switch, memory can be retained and the circuit tends to be refractory toward growth feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to a prior study (Zhang et al., 2020) mentioned in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "6fcb1c54-1a41-413b-b348-dd547ecc8b87",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C9",
+      "claim": "For the self-activation switch, growth feedback leads to memory loss.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the self-activation switch, growth feedback leads to memory loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to a prior study (Zhang et al., 2020) mentioned in the preceding sentences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "358ed2da-e4a7-4e87-a012-21bbea178b04",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C10",
+      "claim": "Adaptation is defined as the ability of the system to respond to environmental changes and to return to the basal or near-basal state after some time.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptation is an important and widely studied functionality of gene circuits, which is defined as the ability of the system to respond to environmental changes and to return to the basal or near-basal state after some time (Knox et al., 1986; Tyson et al., 2003; Friedlander and Brenner, 2009; Ferrell, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "e8fba42c-a052-46a7-acb4-1fdd4cf8750f",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C11",
+      "claim": "Certain circuits possess biochemical adaptation if they contain at least one of two architectural classes: an incoherent feed-forward loop (IFFL) with a proportion node and a negative feedback loop (NFBL) with a buffering node.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, it was found that certain circuits possess biochemical adaptation (Ma et al., 2009) if they contain at least one of the two architectural classes: an incoherent feed-forward loop (IFFL) with a proportion node and a negative feedback loop (NFBL) with a buffering node.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "422e26d7-99f3-4a5b-b816-8fac14f6bfd8",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C12",
+      "claim": "A design principle for circuits with four genes was uncovered for simultaneously achieving noise attenuation and adaptation: the circuit must have a sequential assembly structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Quite recently, a design principle for circuits with four genes was uncovered for simultaneously achieving noise attenuation and adaptation: the circuit must have a sequential assembly structure (Qiao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "dd8bbe60-6d96-44dd-83a7-fa7880be23a9",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C13",
+      "claim": "There are 425 possible circuit structures capable of adaptation among three-node transcriptional regulation circuits with AND logic.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 425 possible circuit structures (identified by previous research; Shi et al., 2017), and we study all of them to simulate and test their response under different levels of growth feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research that identified these structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "ef7a63cf-3499-4226-8490-840dc3b2e6fa",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C20",
+      "claim": "Type-I continuous failures are associated with the violation of the precision criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Type-I continuous failures, as shown in Figure 2a, are associated with the violation of the precision criterion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a classification based on the computational results and illustrated in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "53f3c233-34ef-4b3a-8d0c-8aa46c62ec82",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C21",
+      "claim": "Type-I continuous failures constitute the largest failure category among all possible circuit topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Type-I continuous failures constitute the largest failure category among all possible circuit topologies, suggesting that the exact cancellation is fragile and the loss of precision is the most common dynamical mechanism behind growth-feedback-induced failures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis, as shown in the pie chart in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "b1d0def3-59ec-4113-9566-281111919598",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C25",
+      "claim": "Type-II failures are the second most common type of failure observed in the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Type-II failures are the second most common type of failure observed in our simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis, as shown in the pie chart in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "8e072bb2-c303-4f7c-876a-0f015e8582a8",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C26",
+      "claim": "A considerable portion (17%) of the circuit failures are caused by growth-feedback-induced oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated by the light green and yellow slices of the pie chart in Figure 2, a considerable portion (17%) of the circuit failures are caused by growth-feedback-induced oscillations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational analysis, as shown in the pie chart in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "76bb05ff-2e12-4315-8949-05296ce9acc7",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C27",
+      "claim": "Type-III and type-IV failures arise due to growth-feedback-induced oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Type-III and type-IV failures arise due to growth-feedback-induced oscillations, while type-V and type-VI failures are caused by bistability or multistability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification based on the computational results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "69edeeec-fb1c-445b-b1c9-e6d7f7aaf483",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C28",
+      "claim": "Type-V and type-VI failures are caused by bistability or multistability.",
+      "claim_type": "EXPLICIT",
+      "source": "Type-III and type-IV failures arise due to growth-feedback-induced oscillations, while type-V and type-VI failures are caused by bistability or multistability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification based on the computational results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "391442b5-8c7c-4f41-a10a-5ddef0b13ddb",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C29",
+      "claim": "Most type-IV failure cases are caused by either a saddle-node bifurcation of cycles or an infinite-period bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "A random sampling of the type-IV failure cases reveals that most of them are caused by either a saddle-node bifurcation of cycles (Strogatz, 2018) or an infinite-period bifurcation (Strogatz, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis of type-IV failures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "8d662c3f-b33c-4a9e-bf16-5b38422181b1",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C30",
+      "claim": "The fractions of failures caused by growth-induced oscillations can vary dramatically among different network topologies, ranging from approximately zero to about 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of failures caused by growth-induced oscillations can range from approximately zero to about 80%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis, as illustrated in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "7e6f0e25-c5e9-417c-bff1-302692691778",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C31",
+      "claim": "Network topologies containing oscillation-supporting motifs have higher fractions of oscillation-related failures compared to those without such motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Network topologies containing any oscillation-supporting motifs (discussed in the main text) are represented by red triangles, while the rest are shown as blue circles. The majority of red data points have higher fractions of oscillation-related failures compared to the blue ones, mainly due to the presence of oscillation-supporting motifs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational analysis, as illustrated in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "96bcb828-1f0b-4655-a297-608f2c6d0fad",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C32",
+      "claim": "Bistability is observed in most of the circuit topologies (377 out of 425 circuit topologies).",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, we observe bistability in most of the circuit topologies (377 out of 425 circuit topologies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational simulations performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "61edc167-9e2b-406c-bcab-5b8982d08530",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C33",
+      "claim": "Multistability has been observed but is relatively rare compared to bistability.",
+      "claim_type": "EXPLICIT",
+      "source": "While multistability has also been observed, it is relatively rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational simulations performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "00e2ed30-94b4-4748-8763-54f65e0e42d6",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C35",
+      "claim": "All eight optimal circuits share a common set of links (motif), as shown in Figure 5b.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, all eight circuits in this family share a common set of links (motif), as shown in Figure 5b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational analysis, as illustrated in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "87c31f6e-3bc4-4409-9b12-0b5106c8f16a",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C36",
+      "claim": "The combination of the common links in the optimal circuits is one of the minimal topologies with perfect adaptation in a three regulatory logic.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of these common links is one of the minimal topologies with perfect adaptation in a three regulatory logic (Shi et al., 2017) and is critical for the circuit to be functionally adaptable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "03436329-8605-4537-b281-db2f43f160b8",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C37",
+      "claim": "The eight optimal circuit topologies do not contain any inhibition link from node C.",
+      "claim_type": "EXPLICIT",
+      "source": "The eight optimal circuit topologies do not contain any such inhibition link from node C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis of the optimal circuits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "cb917aea-35a1-48c7-8ccd-58225013a76a",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C42",
+      "claim": "The motif shown in Figure 6c is beneficial for robustness, while an inhibition link from the output node C is detrimental.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the motif shown in Figure 6c is beneficial for robustness, while an inhibition link from the output node C is detrimental.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the computational analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "1fd1ec05-3026-4a03-b062-8e7beb6f2964",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C44",
+      "claim": "The shared motif for the green group is strikingly similar to the optimal minimal network in Figure 5b, with the sole distinction being the self-activation link of node B.",
+      "claim_type": "EXPLICIT",
+      "source": "The shared motif for the green group is strikingly similar to the optimal minimal network in Figure 5b (the orange group). The sole distinction lies in the self-activation link of node B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational analysis comparing the motifs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "9dd9b469-2cde-4125-a5de-919a61caf50a",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C45",
+      "claim": "Every network in the NFBL family depends on the self-activation link of node B to achieve adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Every network in the NFBL family depends on this link to achieve adaptation (Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "ae344d81-1c65-413c-a8cd-c0a2271706c9",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C46",
+      "claim": "For circuits within the IFFL family, the self-activation link of node B is not a necessity for adaptivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for circuits within the IFFL family, this link is not a necessity for adaptivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge from prior research on IFFL circuits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "06c37078-a837-42ec-973e-d6ec1968e4bc",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C47",
+      "claim": "The average node concentrations at the equilibrium for the network topologies in the red group are consistently smaller than those in the blue group.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the average node concentrations at the equilibrium for the network topologies in the red group are consistently smaller than those in the blue group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "bb78ee29-4416-41bd-9d80-28cdd472d54b",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C49",
+      "claim": "All circuits with oscillation type of failures taking up more than 20% of failures belong to the red group.",
+      "claim_type": "EXPLICIT",
+      "source": "All circuits with oscillation type of failures taking up more than 20% of failures belong to the red group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "79bcd99f-b619-4521-9c50-a80dca6426f7",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C55",
+      "claim": "Growth feedback can induce or strengthen oscillations in gene circuits designed for adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "A unique finding is that growth feedback can induce or strengthen oscillations in gene circuits designed for adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "72e54daf-cc4a-4fab-a16d-f364bb56639b",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C56",
+      "claim": "Growth-feedback-induced oscillation may be a general dynamical mechanism that can negatively affect the robustness of gene circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that growth-feedback-induced oscillation may be a general dynamical mechanism that can negatively affect the robustness of gene circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the computational results and comparison with experimental studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "baa09adb-43c9-4df5-80c2-888d4e893f93",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C57",
+      "claim": "Growth feedback has a highly sensitive dependence on the circuit topology.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our study has shown that growth feedback has a highly sensitive dependence on the circuit topology: even a small structural differences between two circuits designed for the same function can result in drastically different outcomes under growth feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "cd697965-1eea-4a73-9d69-6f99a5d73116",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C58",
+      "claim": "2092 circuits across 306 different topologies exhibit loss-and-recovery behavior where adaptation, lost at an intermediate level of growth feedback, is restored at higher levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we identified 2092 circuits across 306 different topologies where adaption, lost at an intermediate level of growth feedback, is restored at higher levels. This is 1.4% of all circuits tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "c2517c6a-d370-4568-896b-843660f56360",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C59",
+      "claim": "The failure scenarios for four-gene circuits are the same as the categories for three-gene circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "A remarkable finding is that the failure scenarios for these four-gene circuits are the same as the categories for three-gene circuits (summarized in 1), indicating that the growth-feedback-induced failure mechanisms identified in our work are general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational analysis extended to four-gene circuits, as discussed in Appendix 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "aaebe1b9-e881-4f9a-b918-2b08fbc3ac4c",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C63",
+      "claim": "There are 16,038 possible three-node topologies in total.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, there are 16,038 possible three-node topologies, with 425 topologies capable of adaptation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1a caption.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "c766da36-dd60-4d13-bf8e-acac4bc04f40",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C64",
+      "claim": "There are 206 network topologies in the NFBL family.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, there are 206 network topologies in the NFBL family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research that classified the topologies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "26e88465-c35a-4c5f-b148-b9ab70f537c1",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C65",
+      "claim": "There are 219 network topologies in the IFFL family.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 219 network topologies in the IFFL family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research that classified the topologies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "784d7868-9d74-4b04-95be-0db7d0aa4e07",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C66",
+      "claim": "The ratio of adaptive circuits is somewhat lower in this study compared to Shi et al., 2017, due to stricter adaptation criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "To make our results more convincing, we have adopted a set of adaptation criteria that are stricter than those used in Shi et al., 2017. Consequently, the ratio of adaptive circuits is somewhat lower in our study, with 4 out of the 425 network topologies not demonstrating adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological differences between this study and prior work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "37ca9418-4112-44d3-9839-cabe2573bdb0",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "claim_id": "C67",
+      "claim": "4 out of the 425 network topologies do not demonstrate adaptation in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the ratio of adaptive circuits is somewhat lower in our study, with 4 out of the 425 network topologies not demonstrating adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that growth feedback\u2014where synthetic gene circuits affect cell growth and vice versa\u2014can produce emergent properties such as bistability, altered cooperativity, and topology-dependent effects on circuit memory. These findings motivate the current study's systematic investigation of growth feedback effects on adaptive circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 accurately summarize established knowledge from cited prior work about growth feedback mechanisms and their diverse effects on gene circuits. These claims provide appropriate context and are well-supported by multiple citations to peer-reviewed research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "29ef0fca-dbd5-41b4-a4c2-e893a52ff5c4",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior research has defined adaptation in gene circuits and identified architectural requirements (IFFL with proportion node or NFBL with buffering node) and design principles (sequential assembly for noise attenuation) for achieving adaptation, though without considering growth feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 accurately represent established definitions and design principles from cited prior work. The claims appropriately note that previous adaptation studies did not include growth feedback, setting up the novelty of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "0adc0960-8b96-48ae-bd47-bdcb26715dd2",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study analyzes 425 three-node transcriptional regulation circuit topologies with AND logic capable of adaptation (from 16,038 possible topologies), comprising 206 NFBL and 219 IFFL family networks. Using stricter adaptation criteria than prior work, 4 of these 425 topologies failed to demonstrate adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C63-C67 establish the computational scope and are supported by citation to prior topology identification work (Shi et al., 2017) and the authors' own simulations. The methodological choice to use stricter criteria is transparently documented, though the specific criteria differences are not detailed in these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "720c185b-33a6-4cf7-ba6e-558d87225dc8",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study identifies six main failure categories covering >99% of growth-feedback-induced circuit failures: Type-I (precision violation, 49% of failures), Type-II (sensitivity violation, 19%), Types III-IV (oscillation-induced, 17% total), and Types V-VI (bistability/multistability-induced, 14% total). Type-I failures are the most common, while oscillation-related failures constitute a considerable portion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C28 present a systematic classification of failure modes based on computational analysis of ~8.5\u00d710^7 circuits. The percentages sum appropriately and are illustrated in Figure 2. The classification scheme is clearly defined with specific criteria, though the claim that >99% are covered leaves ~1% unaccounted for.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "4fc5a4ce-7710-41bd-a5ec-6aa79b74bba0",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Type-IV oscillation failures are predominantly caused by saddle-node bifurcations of cycles or infinite-period bifurcations. The fraction of oscillation-induced failures varies dramatically across topologies (0-80%), with networks containing oscillation-supporting motifs (NFBLs with time delay) exhibiting higher fractions of oscillation-related failures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 provide mechanistic insights into oscillation-induced failures supported by computational analysis and bifurcation theory (cited to Strogatz, 2018). Figure 3 demonstrates the topology-dependence and correlation with oscillation-supporting motifs. The random sampling approach for C29 is appropriate but not quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "47c180e6-f1d8-4a40-ac05-cf0883f5a5f6",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bistability is observed in most circuit topologies (377 of 425), while multistability is relatively rare. These phenomena underlie Type-V and Type-VI failures through basin boundary shifts as growth feedback strength changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 report clear observational results from simulations with specific counts. The high prevalence of bistability (89%) is notable and well-documented. The connection to failure mechanisms is illustrated in Figure 4 showing basin structure changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "662d11d0-5cf4-4aed-8673-8f7f23dac009",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Eight optimal circuit topologies with high robustness against growth feedback share a common motif (Figure 5b) that represents one of the minimal topologies for perfect adaptation. These optimal circuits notably lack any inhibition link from output node C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 identify a specific optimal family with shared structural features. The identification is based on computational analysis of Q and R values (Figure 5a). The connection to minimal adaptive topologies is supported by citation to Shi et al., 2017. The absence of C inhibition links is a clear structural observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "45c71f6f-1859-47de-94d7-25b821f2e64a",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The motif in Figure 6c (similar to optimal minimal network but lacking B self-activation) is beneficial for robustness, while inhibition from output node C is detrimental. The self-activation link of node B is essential for NFBL family adaptation but not for IFFL family circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C44-C46 identify key structural determinants of robustness through computational analysis and comparison across circuit families. The distinction between NFBL and IFFL requirements is supported by citation to prior work (Shi et al., 2017). The beneficial/detrimental effects are inferred from the three-peak structure in Figure 6b.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "66e0bff9-1f25-4cb0-81bf-8bff63e921f1",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Red group network topologies (low robustness) have consistently lower average node concentrations at equilibrium than blue group topologies, resulting in larger 1/(1+\u27e8b\u27e9) values and effectively stronger growth feedback. All circuits with >20% oscillation-type failures belong to the red group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C49 connect circuit topology to burden and oscillation susceptibility through computational analysis. Figure 6d supports the burden relationship. The correlation between red group membership and oscillation failures is clearly stated, though the mechanistic explanation involves multiple factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "825cfb59-b580-4430-832c-c655df523435",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Growth feedback can induce or strengthen oscillations in adaptive gene circuits, potentially representing a general mechanism that negatively affects circuit robustness. Growth feedback effects show high sensitivity to circuit topology, where small structural differences can produce drastically different outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 present major conclusions from the computational study. C55 is directly supported by the data showing 17% of failures are oscillation-related. C56 appropriately qualifies the generality claim with 'may be' and references experimental support. C57 is demonstrated throughout (e.g., Figure 3 showing single-link differences).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "407db1b0-9b91-473f-a58f-3d2c9ca6eb29",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A small subset of circuits (2092 across 306 topologies, 1.4% of all tested) exhibit loss-and-recovery behavior where adaptation is lost at intermediate growth feedback levels but restored at higher levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 reports a specific non-monotonic phenomenon with precise counts. The authors acknowledge this may be an underestimate due to discrete sampling of kg values. This finding suggests growth feedback can have beneficial effects in certain parameter regimes, contrasting with the predominantly negative effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "0db4036a-d0cd-4241-b175-21752126e40a",
+      "content_id": "4336af0d-fd93-419f-b29b-abd527f7e350",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Analysis of four-gene circuits reveals the same failure categories as three-gene circuits, suggesting the identified growth-feedback-induced failure mechanisms are general across circuit sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 extends findings to four-gene circuits based on analysis in Appendix 1. While the claim of identical failure categories is stated, the limited detail provided in the main text about the four-gene analysis (sample size, topology coverage, parameter sampling) makes it difficult to fully assess the strength of this generalization. The inference of generality is reasonable but would benefit from more extensive validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The manuscript establishes the context and significance of growth feedback in synthetic gene circuits, defining it as a bidirectional coupling mechanism where circuits affect cell growth and vice versa, and citing prior work showing various emergent properties including bistability, cooperativity, and topology-dependent effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge this foundational context, with both reviews affirming that 'growth feedback influences the performance of synthetic gene circuits' and that 'host-circuit interactions frequently compromise desired behaviors.' The reviewers accept these background claims without critique, treating them as established knowledge that motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "c9ccd90c-b836-4101-a4ee-b24474190896",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The study analyzes 425 three-node circuit topologies previously identified as capable of adaptation (from 16,038 total possible topologies), comprising 206 NFBL and 219 IFFL family networks, using stricter adaptation criteria than prior work which resulted in 4 topologies not demonstrating adaptation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the comprehensive analysis of the 425 preselected topologies but express concern that 'the study focuses exclusively on a preselected set of 425 topologies previously shown to achieve adaptation, limiting the exploration of whether growth feedback could enable adaptation in circuits not inherently adaptive.' They note this 'restricts the generality of the conclusions' and request 'detailed information in supplementary materials or a public repository' to enhance reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "e222939f-4653-46db-af40-6592c2bf90bb",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The computational analysis identifies Type-I continuous failures (precision criterion violations) as the largest failure category (49%), followed by Type-II failures (19%) as the second most common, demonstrating that loss of precision is the most common mechanism behind growth-feedback-induced failures.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers praise 'a detailed investigation into the reasons for adaptation failure upon the introduction of cell growth' and note 'the comprehensiveness of the analysis is particularly noteworthy.' The classification scheme is described as 'highly valuable to the community, offering a framework for addressing growth-related challenges in circuit design,' indicating acceptance of these failure categorizations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "84d1c7e0-937c-41b2-bd65-62b99332816e",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Growth feedback induces or strengthens oscillations in 17% of circuit failures (Type-III and Type-IV), with oscillation-related failure fractions varying dramatically (0-80%) across topologies. Topologies containing oscillation-supporting motifs show higher oscillation-related failures, and this represents a general dynamical mechanism negatively affecting circuit robustness.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the oscillation findings but raise methodological concerns, noting 'the authors choose not to apply semi-analytic methods, such as numerical continuation and eigenvalue analysis, to validate the existence of bifurcations.' They also emphasize that 'noise can significantly alter system behavior\u2014for instance, stabilizing trajectories and removing oscillations' and that 'the analysis is carried out exclusively in a deterministic regime,' suggesting the oscillation conclusions may be incomplete without considering stochastic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "89b5d158-73eb-4c05-9563-aa7ff929e816",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Bistability is observed in most circuit topologies (377 out of 425), while multistability is relatively rare. Type-V and Type-VI failures are caused by bistability or multistability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the bistability/multistability findings as part of the comprehensive failure classification, noting 'the authors propose bistability or multistability as the primary mechanisms behind different types of adaptation failure.' While they mention the lack of semi-analytic validation methods, they acknowledge 'their approach offers valuable insights into the underlying dynamics of adaptation failures.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Eight optimal circuit topologies share a common motif (one of the minimal topologies for perfect adaptation) that is beneficial for robustness, while inhibition links from output node C are detrimental. The green group's shared motif differs from the optimal only in the self-activation link of node B, which is essential for NFBL family adaptation but not for IFFL family circuits.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the identification of 'core motifs that ensure robust performance under such conditions' and note the study 'identify[ies] core motifs that ensure robust performance.' The systematic identification of design features is treated as a key contribution, with no specific critiques of these structural findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "2e5d4fc8-d0e2-411c-87ed-bd04ed0ecfe3",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Network topologies in the red group (with oscillation-supporting motifs) have consistently smaller average node concentrations at equilibrium than the blue group, and all circuits with oscillation failures exceeding 20% belong to the red group.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings are part of the comprehensive topology analysis that reviewers praise for its 'systematic approach and depth.' The correlation between motif structure and oscillation propensity is accepted as part of the 'detailed investigation' that 'distinguishes this work from other studies.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "679d6996-5f28-41fc-a8eb-d2ed5aab744f",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Growth feedback shows highly sensitive dependence on circuit topology, where small structural differences result in drastically different outcomes. Additionally, 2092 circuits (1.4%) across 306 topologies exhibit loss-and-recovery behavior where adaptation is lost at intermediate growth feedback levels but restored at higher levels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these findings as part of the comprehensive analysis, noting 'the analysis includes scenarios where higher growth feedback restores adaptation in circuits that lose it at intermediate levels.' However, they suggest 'further elaboration on the implications for circuit design would strengthen the impact,' indicating acceptance but requesting deeper discussion.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "abc60071-0e67-4db5-a61e-7a941a1db8fc",
+      "content_id": "6694d95f-c376-4b81-b14d-99b0adeea2d7",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The failure scenarios for four-gene circuits match the categories identified for three-gene circuits, indicating that the growth-feedback-induced failure mechanisms are general across different circuit complexities.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this generalization as part of the study's contribution to understanding 'network motif dynamics' and do not raise concerns about the extension to four-gene circuits. The finding supports the broader applicability of the classification framework that reviewers describe as 'highly valuable to the community.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a78cf707-887c-4279-b9d6-87e7ef2955e8",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "459ee6ce-b809-496a-a267-aaaf5ce397fd",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "e2ad591e-c54e-4f20-8646-524269fa91bb",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "8cbed149-aa4c-44f1-8997-349cd7d60f31",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "71eb7ff1-b48e-4781-8cfc-eae3bf82f765",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "e610eae6-bfc2-49d8-8475-118f0ff7fb70",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "c8d104ac-3143-40c7-a412-cdb52e21e83a",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "8f9f2e75-2a03-44ad-be72-f87094d2d8e3",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "6fcb1c54-1a41-413b-b348-dd547ecc8b87",
+      "result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d"
+    },
+    {
+      "claim_id": "358ed2da-e4a7-4e87-a012-21bbea178b04",
+      "result_id": "29ef0fca-dbd5-41b4-a4c2-e893a52ff5c4"
+    },
+    {
+      "claim_id": "e8fba42c-a052-46a7-acb4-1fdd4cf8750f",
+      "result_id": "29ef0fca-dbd5-41b4-a4c2-e893a52ff5c4"
+    },
+    {
+      "claim_id": "422e26d7-99f3-4a5b-b816-8fac14f6bfd8",
+      "result_id": "29ef0fca-dbd5-41b4-a4c2-e893a52ff5c4"
+    },
+    {
+      "claim_id": "dd8bbe60-6d96-44dd-83a7-fa7880be23a9",
+      "result_id": "0adc0960-8b96-48ae-bd47-bdcb26715dd2"
+    },
+    {
+      "claim_id": "aaebe1b9-e881-4f9a-b918-2b08fbc3ac4c",
+      "result_id": "0adc0960-8b96-48ae-bd47-bdcb26715dd2"
+    },
+    {
+      "claim_id": "c766da36-dd60-4d13-bf8e-acac4bc04f40",
+      "result_id": "0adc0960-8b96-48ae-bd47-bdcb26715dd2"
+    },
+    {
+      "claim_id": "26e88465-c35a-4c5f-b148-b9ab70f537c1",
+      "result_id": "0adc0960-8b96-48ae-bd47-bdcb26715dd2"
+    },
+    {
+      "claim_id": "784d7868-9d74-4b04-95be-0db7d0aa4e07",
+      "result_id": "0adc0960-8b96-48ae-bd47-bdcb26715dd2"
+    },
+    {
+      "claim_id": "37ca9418-4112-44d3-9839-cabe2573bdb0",
+      "result_id": "0adc0960-8b96-48ae-bd47-bdcb26715dd2"
+    },
+    {
+      "claim_id": "ef7a63cf-3499-4226-8490-840dc3b2e6fa",
+      "result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8"
+    },
+    {
+      "claim_id": "53f3c233-34ef-4b3a-8d0c-8aa46c62ec82",
+      "result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8"
+    },
+    {
+      "claim_id": "b1d0def3-59ec-4113-9566-281111919598",
+      "result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8"
+    },
+    {
+      "claim_id": "8e072bb2-c303-4f7c-876a-0f015e8582a8",
+      "result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8"
+    },
+    {
+      "claim_id": "76bb05ff-2e12-4315-8949-05296ce9acc7",
+      "result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8"
+    },
+    {
+      "claim_id": "69edeeec-fb1c-445b-b1c9-e6d7f7aaf483",
+      "result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8"
+    },
+    {
+      "claim_id": "391442b5-8c7c-4f41-a10a-5ddef0b13ddb",
+      "result_id": "4fc5a4ce-7710-41bd-a5ec-6aa79b74bba0"
+    },
+    {
+      "claim_id": "8d662c3f-b33c-4a9e-bf16-5b38422181b1",
+      "result_id": "4fc5a4ce-7710-41bd-a5ec-6aa79b74bba0"
+    },
+    {
+      "claim_id": "7e6f0e25-c5e9-417c-bff1-302692691778",
+      "result_id": "4fc5a4ce-7710-41bd-a5ec-6aa79b74bba0"
+    },
+    {
+      "claim_id": "96bcb828-1f0b-4655-a297-608f2c6d0fad",
+      "result_id": "47c180e6-f1d8-4a40-ac05-cf0883f5a5f6"
+    },
+    {
+      "claim_id": "61edc167-9e2b-406c-bcab-5b8982d08530",
+      "result_id": "47c180e6-f1d8-4a40-ac05-cf0883f5a5f6"
+    },
+    {
+      "claim_id": "00e2ed30-94b4-4748-8763-54f65e0e42d6",
+      "result_id": "662d11d0-5cf4-4aed-8673-8f7f23dac009"
+    },
+    {
+      "claim_id": "87c31f6e-3bc4-4409-9b12-0b5106c8f16a",
+      "result_id": "662d11d0-5cf4-4aed-8673-8f7f23dac009"
+    },
+    {
+      "claim_id": "03436329-8605-4537-b281-db2f43f160b8",
+      "result_id": "662d11d0-5cf4-4aed-8673-8f7f23dac009"
+    },
+    {
+      "claim_id": "cb917aea-35a1-48c7-8ccd-58225013a76a",
+      "result_id": "45c71f6f-1859-47de-94d7-25b821f2e64a"
+    },
+    {
+      "claim_id": "1fd1ec05-3026-4a03-b062-8e7beb6f2964",
+      "result_id": "45c71f6f-1859-47de-94d7-25b821f2e64a"
+    },
+    {
+      "claim_id": "9dd9b469-2cde-4125-a5de-919a61caf50a",
+      "result_id": "45c71f6f-1859-47de-94d7-25b821f2e64a"
+    },
+    {
+      "claim_id": "ae344d81-1c65-413c-a8cd-c0a2271706c9",
+      "result_id": "45c71f6f-1859-47de-94d7-25b821f2e64a"
+    },
+    {
+      "claim_id": "06c37078-a837-42ec-973e-d6ec1968e4bc",
+      "result_id": "66e0bff9-1f25-4cb0-81bf-8bff63e921f1"
+    },
+    {
+      "claim_id": "bb78ee29-4416-41bd-9d80-28cdd472d54b",
+      "result_id": "66e0bff9-1f25-4cb0-81bf-8bff63e921f1"
+    },
+    {
+      "claim_id": "79bcd99f-b619-4521-9c50-a80dca6426f7",
+      "result_id": "825cfb59-b580-4430-832c-c655df523435"
+    },
+    {
+      "claim_id": "72e54daf-cc4a-4fab-a16d-f364bb56639b",
+      "result_id": "825cfb59-b580-4430-832c-c655df523435"
+    },
+    {
+      "claim_id": "baa09adb-43c9-4df5-80c2-888d4e893f93",
+      "result_id": "825cfb59-b580-4430-832c-c655df523435"
+    },
+    {
+      "claim_id": "cd697965-1eea-4a73-9d69-6f99a5d73116",
+      "result_id": "407db1b0-9b91-473f-a58f-3d2c9ca6eb29"
+    },
+    {
+      "claim_id": "c2517c6a-d370-4568-896b-843660f56360",
+      "result_id": "0db4036a-d0cd-4241-b175-21752126e40a"
+    },
+    {
+      "claim_id": "a78cf707-887c-4279-b9d6-87e7ef2955e8",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "459ee6ce-b809-496a-a267-aaaf5ce397fd",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "e2ad591e-c54e-4f20-8646-524269fa91bb",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "8cbed149-aa4c-44f1-8997-349cd7d60f31",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "71eb7ff1-b48e-4781-8cfc-eae3bf82f765",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "e610eae6-bfc2-49d8-8475-118f0ff7fb70",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "c8d104ac-3143-40c7-a412-cdb52e21e83a",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "8f9f2e75-2a03-44ad-be72-f87094d2d8e3",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "6fcb1c54-1a41-413b-b348-dd547ecc8b87",
+      "result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0"
+    },
+    {
+      "claim_id": "358ed2da-e4a7-4e87-a012-21bbea178b04",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "e8fba42c-a052-46a7-acb4-1fdd4cf8750f",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "422e26d7-99f3-4a5b-b816-8fac14f6bfd8",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "dd8bbe60-6d96-44dd-83a7-fa7880be23a9",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "aaebe1b9-e881-4f9a-b918-2b08fbc3ac4c",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "c766da36-dd60-4d13-bf8e-acac4bc04f40",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "26e88465-c35a-4c5f-b148-b9ab70f537c1",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "784d7868-9d74-4b04-95be-0db7d0aa4e07",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "37ca9418-4112-44d3-9839-cabe2573bdb0",
+      "result_id": "c9ccd90c-b836-4101-a4ee-b24474190896"
+    },
+    {
+      "claim_id": "ef7a63cf-3499-4226-8490-840dc3b2e6fa",
+      "result_id": "e222939f-4653-46db-af40-6592c2bf90bb"
+    },
+    {
+      "claim_id": "53f3c233-34ef-4b3a-8d0c-8aa46c62ec82",
+      "result_id": "e222939f-4653-46db-af40-6592c2bf90bb"
+    },
+    {
+      "claim_id": "b1d0def3-59ec-4113-9566-281111919598",
+      "result_id": "e222939f-4653-46db-af40-6592c2bf90bb"
+    },
+    {
+      "claim_id": "8e072bb2-c303-4f7c-876a-0f015e8582a8",
+      "result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e"
+    },
+    {
+      "claim_id": "76bb05ff-2e12-4315-8949-05296ce9acc7",
+      "result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e"
+    },
+    {
+      "claim_id": "391442b5-8c7c-4f41-a10a-5ddef0b13ddb",
+      "result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e"
+    },
+    {
+      "claim_id": "8d662c3f-b33c-4a9e-bf16-5b38422181b1",
+      "result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e"
+    },
+    {
+      "claim_id": "7e6f0e25-c5e9-417c-bff1-302692691778",
+      "result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e"
+    },
+    {
+      "claim_id": "79bcd99f-b619-4521-9c50-a80dca6426f7",
+      "result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e"
+    },
+    {
+      "claim_id": "72e54daf-cc4a-4fab-a16d-f364bb56639b",
+      "result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e"
+    },
+    {
+      "claim_id": "69edeeec-fb1c-445b-b1c9-e6d7f7aaf483",
+      "result_id": "89b5d158-73eb-4c05-9563-aa7ff929e816"
+    },
+    {
+      "claim_id": "96bcb828-1f0b-4655-a297-608f2c6d0fad",
+      "result_id": "89b5d158-73eb-4c05-9563-aa7ff929e816"
+    },
+    {
+      "claim_id": "61edc167-9e2b-406c-bcab-5b8982d08530",
+      "result_id": "89b5d158-73eb-4c05-9563-aa7ff929e816"
+    },
+    {
+      "claim_id": "00e2ed30-94b4-4748-8763-54f65e0e42d6",
+      "result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7"
+    },
+    {
+      "claim_id": "87c31f6e-3bc4-4409-9b12-0b5106c8f16a",
+      "result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7"
+    },
+    {
+      "claim_id": "03436329-8605-4537-b281-db2f43f160b8",
+      "result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7"
+    },
+    {
+      "claim_id": "cb917aea-35a1-48c7-8ccd-58225013a76a",
+      "result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7"
+    },
+    {
+      "claim_id": "1fd1ec05-3026-4a03-b062-8e7beb6f2964",
+      "result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7"
+    },
+    {
+      "claim_id": "9dd9b469-2cde-4125-a5de-919a61caf50a",
+      "result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7"
+    },
+    {
+      "claim_id": "ae344d81-1c65-413c-a8cd-c0a2271706c9",
+      "result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7"
+    },
+    {
+      "claim_id": "06c37078-a837-42ec-973e-d6ec1968e4bc",
+      "result_id": "2e5d4fc8-d0e2-411c-87ed-bd04ed0ecfe3"
+    },
+    {
+      "claim_id": "bb78ee29-4416-41bd-9d80-28cdd472d54b",
+      "result_id": "2e5d4fc8-d0e2-411c-87ed-bd04ed0ecfe3"
+    },
+    {
+      "claim_id": "baa09adb-43c9-4df5-80c2-888d4e893f93",
+      "result_id": "679d6996-5f28-41fc-a8eb-d2ed5aab744f"
+    },
+    {
+      "claim_id": "cd697965-1eea-4a73-9d69-6f99a5d73116",
+      "result_id": "679d6996-5f28-41fc-a8eb-d2ed5aab744f"
+    },
+    {
+      "claim_id": "c2517c6a-d370-4568-896b-843660f56360",
+      "result_id": "abc60071-0e67-4db5-a61e-7a941a1db8fc"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "0dcd0177-417a-46dc-8a12-c7daeef23e98",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "3b9f38e7-0a71-4051-86a6-2d977f3b1d6d",
+      "peer_result_id": "acc48841-9d77-4a78-9f25-81f2bccb5fe0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C1-C9. Both OpenEval and peer reviewers find these background claims about growth feedback mechanisms well-supported by prior literature and treat them as established knowledge motivating the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "0ae146d6-230c-4b19-a2e2-aa7510d62375",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "29ef0fca-dbd5-41b4-a4c2-e893a52ff5c4",
+      "peer_result_id": "c9ccd90c-b836-4101-a4ee-b24474190896",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claims C10-C12. OpenEval finds these definitional claims supported. Peer reviewers group C10-C12 with C13, C63-C67 and express uncertainty about the preselected topology approach, requesting more detail for reproducibility and noting limitations on generality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "0ed360db-4d5e-494d-ac71-67b44dc2ed51",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0adc0960-8b96-48ae-bd47-bdcb26715dd2",
+      "peer_result_id": "c9ccd90c-b836-4101-a4ee-b24474190896",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C13, C63-C67 regarding computational scope and topology selection. OpenEval finds the approach supported with transparent documentation. Peer reviewers express uncertainty, concerned that focusing on preselected adaptive topologies limits exploration and generality of conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "16914473-cd6c-4124-a3ff-75cfaa1aca19",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8",
+      "peer_result_id": "e222939f-4653-46db-af40-6592c2bf90bb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on claims C20, C21, C25 regarding failure mode classification. OpenEval supports the systematic classification of ~8.5\u00d710^7 circuits. Peer reviewers also support these categorizations, praising the comprehensiveness and describing the framework as 'highly valuable to the community.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "6bd76fbc-d891-4f15-b3ec-a5c31435f3be",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8",
+      "peer_result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claims C26, C27 (failure categories). OpenEval supports the classification scheme. Peer reviewers group these with oscillation claims (C29-C31, C55-C56) and express uncertainty due to lack of semi-analytic validation methods and absence of stochastic analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "5be0d3a7-3d0f-4b5b-8f5b-e52565c3bb2a",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "720c185b-33a6-4cf7-ba6e-558d87225dc8",
+      "peer_result_id": "89b5d158-73eb-4c05-9563-aa7ff929e816",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C28 (bistability/multistability). OpenEval supports the classification. Peer reviewers accept bistability findings as part of comprehensive failure classification, though they note lack of semi-analytic validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "58d7dafe-44fb-475a-9823-3cf2926ee8a5",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "4fc5a4ce-7710-41bd-a5ec-6aa79b74bba0",
+      "peer_result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address oscillation-induced failures (C29-C31). OpenEval finds mechanistic insights supported by computational analysis and bifurcation theory. Peer reviewers express uncertainty, raising concerns about lack of semi-analytic validation and deterministic-only analysis that ignores stochastic effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "3dd568c6-f3b0-4603-b3e2-3855e68e2d78",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "47c180e6-f1d8-4a40-ac05-cf0883f5a5f6",
+      "peer_result_id": "89b5d158-73eb-4c05-9563-aa7ff929e816",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address bistability claims C32-C33. OpenEval supports the observational results showing 89% bistability prevalence. Peer reviewers also support these findings as part of the comprehensive failure classification, acknowledging bistability as a primary mechanism despite methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "f0cee723-fa51-47dc-b876-200dfc28cf7f",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "662d11d0-5cf4-4aed-8673-8f7f23dac009",
+      "peer_result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address optimal circuit family identification (C35-C37). OpenEval supports the structural features identified through computational analysis. Peer reviewers explicitly praise identification of 'core motifs that ensure robust performance' with no specific critiques of these structural findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "8fd02f61-7664-4eeb-928e-b94610544e88",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "45c71f6f-1859-47de-94d7-25b821f2e64a",
+      "peer_result_id": "5186f9f5-7bc2-4856-9d3e-52112ad9d9d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address structural determinants of robustness (C42, C44-C46). OpenEval supports the distinction between NFBL and IFFL requirements. Peer reviewers praise the systematic identification of design features as a key contribution, treating these structural findings as supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "e9a5454d-1b75-4aff-aaa4-07fece346ae0",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "66e0bff9-1f25-4cb0-81bf-8bff63e921f1",
+      "peer_result_id": "2e5d4fc8-d0e2-411c-87ed-bd04ed0ecfe3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C47, C49 regarding topology-burden-oscillation relationships. OpenEval supports the computational analysis connecting circuit topology to failure susceptibility. Peer reviewers accept these findings as part of the praised comprehensive topology analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "9f1e5e3b-4108-4a70-977f-5a4876cb2a07",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "825cfb59-b580-4430-832c-c655df523435",
+      "peer_result_id": "84d1c7e0-937c-41b2-bd65-62b99332816e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claims C55-C56 (major conclusions about oscillations). OpenEval supports these conclusions. Peer reviewers express uncertainty about oscillation findings due to methodological concerns (lack of semi-analytic validation, deterministic-only analysis).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "aaf48010-e3e1-442f-bb46-7ed88154f16d",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "825cfb59-b580-4430-832c-c655df523435",
+      "peer_result_id": "679d6996-5f28-41fc-a8eb-d2ed5aab744f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claim C57 (topology sensitivity). OpenEval supports this finding demonstrated throughout the analysis. Peer reviewers accept it as part of comprehensive analysis but suggest further elaboration on design implications would strengthen impact.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "60badeb5-7ab4-4d36-acc2-3c362d5a17a9",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "407db1b0-9b91-473f-a58f-3d2c9ca6eb29",
+      "peer_result_id": "679d6996-5f28-41fc-a8eb-d2ed5aab744f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address non-monotonic phenomenon (C58). OpenEval supports the specific finding with acknowledgment of potential underestimation. Peer reviewers accept this finding but request further elaboration on implications for circuit design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    },
+    {
+      "id": "125aebe4-564f-4132-b93e-31b82cce3988",
+      "submission_id": "a150be37-c687-4478-8910-87038964554e",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "0db4036a-d0cd-4241-b175-21752126e40a",
+      "peer_result_id": "abc60071-0e67-4db5-a61e-7a941a1db8fc",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address generalization to four-gene circuits (C59). OpenEval expresses uncertainty due to limited detail about the four-gene analysis in main text. Peer reviewers support this generalization, accepting it as contributing to broader applicability of the classification framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:36:48.428190Z"
+    }
+  ]
+}

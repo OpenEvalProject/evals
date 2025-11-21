@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Ray-trace optical simulations predicted that aspherical corrective lenses designed using iterative optimization (Strehl ratio >0.8 criterion) would increase the diffraction-limited FOV radius by 3.50\u00d7 and 3.35\u00d7 for 6.4 mm and 8.8 mm GRIN rods, respectively, with improved PSF regularity at off-axis positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation methodology is clearly described with appropriate optical design criteria (Mar\u00e9chal criterion, Strehl ratio threshold of 0.8). The claims are internally consistent and supported by Figure 1 showing simulated PSFs and Strehl ratio distributions. The iterative optimization approach and specific lens profiles are documented in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Aspherical corrective lenses were successfully fabricated using 3D two-photon lithography microprinting to create prototypes, followed by PDMS molding for rapid, cost-effective replication onto glass coverslips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fabrication methodology is well-documented with SEM images (Figure 2A-B) confirming lens structure and a clear molding workflow (Figure 2C). The authors report ~90% yield for molding and 100% assembly success (n=27), providing quantitative validation of the manufacturing process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Experimental characterization using subresolved fluorescent films demonstrated that corrected microendoscopes maintained more homogeneous FWHM values across extended FOV, with measured effective FOV radius increases of 2.17\u00d7 (6.4 mm) and 1.53\u00d7 (8.8 mm), corresponding to 4.7\u00d7 and 2.3\u00d7 area enlargements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental measurements (Figure 3A-D, Table 1) provide quantitative validation with appropriate replicates (n=3-4 microendoscopes). The use of subresolved films (~300 nm thickness) is appropriate for PSF characterization. The measured improvements are somewhat lower than simulated predictions (2.17\u00d7 vs 3.50\u00d7 for 6.4 mm), which the authors acknowledge and explain through multiple factors including emission aberrations and experimental variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "In fixed brain slices expressing jGCaMP7f, corrected microendoscopes clearly resolved neuronal somata and processes in lateral FOV portions that appeared dim, aberrated, and barely detectable with uncorrected microendoscopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 4 provides direct visual comparison showing improved cellular resolution across the FOV with corrected microendoscopes. The same tissue region was imaged with both probe types, providing an appropriate within-sample control. The qualitative improvement is evident, though quantitative metrics would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Synthetic calcium imaging data, generated using anatomical parameters from mouse olfactory cortex and jGCaMP8f biophysics, demonstrated that corrected microendoscopes enabled detection of more ROIs with high SNR (>15) and extended the maximal radial distance for high-SNR detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation framework is well-designed with biologically realistic parameters (cell size, density from Suzuki & Bekkers 2010, 2011; indicator kinetics from Zhang et al. 2023). Statistical comparisons using Mann-Whitney U tests show significant differences (Figure 5B,E,C,F, p<0.05 to p<0.001, n=13-15 simulated experiments). The ground truth comparison is a strength of this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Analysis of synthetic calcium data using GLM-based purity metrics showed that corrected microendoscopes reduced artificial correlations between adjacent neurons, maintained higher purity indices across radial distances (significantly smaller slope), and improved correlation with ground truth signals, indicating reduced signal cross-contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GLM analysis provides rigorous quantification of source mixing (Figure 6). Statistical tests appropriately use permutation tests for non-normal distributions (p<10^-10 for slope comparisons). The purity index methodology is sound and the results are consistent across both microendoscope lengths. The connection between improved PSF and reduced cross-contamination is logically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In vivo two-photon calcium imaging in awake mice using 8.8 mm corrected microendoscopes in olfactory cortex showed constant peak SNR across FOV, no dependence of adjacent neuron pairwise correlation on radial distance (slope not significantly different from zero, p=0.089), and distance-dependent decrease in correlation for all neuron pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo validation (Figure 8, n=240 neurons from 6 FOVs) provides appropriate statistical analysis using linear regression and permutation tests. The finding that adjacent neuron correlation is independent of radial distance (p=0.089) supports the claim of reduced artificial correlation from improved optics. The distance-dependent decrease in all-pair correlation (p=2\u00d710^-5) is biologically plausible and consistent with known olfactory cortex connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Experimental measurements of optical performance generally agreed with simulation predictions, though measured PSFs were larger than simulated PSFs, likely due to emission aberrations, consideration of only first-order aberrations in simulations, and experimental variability not captured in modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge discrepancies between simulation and experiment (C89-C91) and provide plausible explanations. The simulations modeled excitation PSFs while measurements included emission, which is a valid limitation. The transparency about model limitations and experimental-theoretical agreement strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The improvement in spatial resolution was attributed exclusively to the corrective lens, as uncorrected controls included glass coverslips that partially compensate for GRIN aberrations, suggesting that comparison to bare GRIN lenses would show even greater improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design appropriately includes glass coverslips in both corrected and uncorrected conditions (C93), isolating the effect of the corrective lens. The citation to Murray & Levene 2012 (C94) supports the claim that coverslips provide partial correction. The speculation about greater improvement vs. bare GRIN lenses (C95) is reasonable but appropriately framed as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The extended FOV achieved by aberration correction was characterized by a curved focal plane, meaning cells at different radial positions were at different axial positions, with peripheral cells closer to the microendoscope front end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a direct consequence of the optical design and is supported by the simulation data (Figure 1\u2014figure supplement 2). The authors transparently acknowledge this characteristic, which is important for interpreting imaging results. The curved focal plane is a trade-off inherent to the correction approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The improved optical performance (increased high-SNR ROIs, reduced source mixing, stable purity) is essential for unbiased characterization of neuronal population codes, as artificial correlations from source mixing would bias estimates of neuron-to-neuron communication and inflate redundant over synergistic correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The logical argument connecting optical performance to population coding analysis is sound and supported by citations (Ecker et al. 2010, Panzeri et al. 2022). The claims about bias from artificial correlations (C102-C103) are well-reasoned. While the population coding implications are somewhat speculative, they are appropriately framed and logically follow from the demonstrated improvements in signal quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Long corrected microendoscopes offer advantages over alternative aberration correction methods (adaptive optics, plano-convex lenses) by providing ready-to-use correction without microscope hardware/software modifications, no temporal resolution limitations, and compatibility with portable microscopes, though previous 3D microprinting methods were limited to <4.1 mm GRIN lenses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with alternative methods is well-supported by appropriate citations (C32-C39). The claimed advantages (C114-C115) are logical consequences of the built-in correction approach. The identification of the gap in prior work (C41-C42) appropriately motivates the current study. The claims are appropriately framed as advantages rather than absolute superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "GRIN lenses have intrinsic optical aberrations that severely degrade imaging performance by distorting PSF, enlarging excitation volume, and reducing SNR and spatial resolution especially in lateral FOV portions, with effects particularly relevant for long (>6 mm) GRIN lenses needed for deep brain imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about GRIN lens limitations are well-established in the literature and supported by multiple citations (Bortoletto et al. 2011, Lee & Yun 2011, Wang & Ji 2012, 2013, Antonini et al. 2020). The claims accurately represent prior knowledge and appropriately motivate the need for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The improved optical characteristics of corrected microendoscopes enhance olfactory cortex research by enabling: (1) better decoding of ensemble information, (2) exploration of individual mouse differences, (3) improved cell segmentation and motion correction in awake/behaving mice, and (4) facilitated cell tracking in chronic imaging experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about research implications (C108-C113) are logical extensions of the demonstrated improvements and are appropriately supported by citations where relevant (Harris et al. 2016, Brondi et al. 2020, Berners-Lee et al. 2023). The claims are framed as capabilities enabled by the technology rather than as demonstrated results, which is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The developed corrected microendoscopes (6.4 mm and 8.8 mm length, 500 \u03bcm diameter) provide a unique combination of high homogeneous optical properties, minimal invasiveness, and ready-to-use implementation that will improve 2P imaging in deep brain areas of mice and larger mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specifications (C88) are clearly documented in Table 2. The claimed combination of features (C117-C118) is supported by the experimental validation. The forward-looking claim about impact on larger mammals (C119) is appropriately framed as a prediction and supported by relevant citations, though actual validation in these species would be needed.",
+    "result_type": "MAJOR"
+  }
+]

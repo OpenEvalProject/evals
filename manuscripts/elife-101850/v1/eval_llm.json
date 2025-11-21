@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C61",
+      "C63",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C93",
+      "C96"
+    ],
+    "result": "The study uses a biophysically detailed cortical network model of rat non-barrel somatosensory cortex (nbS1) comprising 211,712 neurons in 2.4 mm\u00b3 of tissue with diverse excitatory cell morphologies, conductances distributed across electrical compartments, and thalamic input from VPM and POm fibers. The model is based on juvenile rats (P14-16) and represents improvements over prior models in anatomical and physiological properties, though it uses mixed data sources due to limitations in available high-quality data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C61, C63, C64, C67-C69 provide consistent descriptions of the model architecture, input protocols, and improvements over prior work with appropriate citations. Claims C93 and C96 acknowledge limitations regarding developmental stage and data sources. The model specifications are clearly documented with references to validation figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C80",
+      "C81",
+      "C94",
+      "C97"
+    ],
+    "result": "The calcium-based plasticity model implements the calcium-control hypothesis where NMDA receptors serve as the molecular substrate for Hebbian coincidence detection, with depolarization-induced calcium entrance into postsynaptic dendrites driving changes in synaptic efficacy. The model makes several assumptions including 1 mM extracellular magnesium concentration representative of in vivo conditions, excludes 8% of L6 pyramidal cells that only fire bursts, makes L4 spiny stellate connections non-plastic due to non-NMDA dependent plasticity, and does not include inhibitory plasticity, neuromodulation, or several other mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 establish the theoretical foundation with appropriate citations to prior work. Claims C80-C81, C94, and C97 clearly document model assumptions and exclusions with justifications. The limitations are transparently acknowledged, though some assumptions (e.g., Mg\u00b2\u207a concentration) lack direct validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C17",
+      "C100",
+      "C101",
+      "C102",
+      "C60"
+    ],
+    "result": "The calcium-based plasticity rule promotes network stability during 10 minutes of simulated in vivo-like activity, with excitatory firing rates remaining stable throughout the simulation. Unlike simple STDP rules that lead to exploding firing rates without homeostatic mechanisms, calcium-based rules do not necessarily destabilize networks. The model demonstrates that network scale, biorealistic connection probabilities, low in vivo-like rates, and the calcium-based plasticity model all contribute to stability, with the rule evolving over-excitable networks toward lower excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C17, C100-C102, and C60 are mutually consistent and supported by comparisons to STDP controls (C16) and theoretical literature. Figure 2C provides direct evidence of firing rate stability. The comparison to prior theoretical work (C100-C101) appropriately contextualizes the findings. The claim about homeostatic-like behavior (C60) is supported by the synchronous-to-asynchronous transition data (C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C104"
+    ],
+    "result": "Control simulations demonstrate that STDP rules induce continuous changes without stabilization, and that calcium-based plasticity can convert synchronous (unstable) network activity to asynchronous activity within one minute of biological time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C104 are directly supported by Figure 2E (pink line) and Figure 2F with references to supplementary figures. These control experiments strengthen the main stability findings by demonstrating both what doesn't work (STDP) and the corrective capacity of the calcium-based rule.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C33",
+      "C132"
+    ],
+    "result": "Plasticity acted sparsely and specifically during simulated evoked activity, with approximately 7% of synapses undergoing long-term plasticity in 10 minutes, affecting below 18% of connections across the network. Depression was more common than potentiation at both connection and synapse levels, with Layer 5 pyramidal cells contributing mostly to basal dendrite changes and Layer 6 pyramidal cells to apical changes. The mean peak AMPA conductance decreased minimally (-2 pS), and 60% of potentiation and 40% of depression crossing the unstable fixed-point occurred within the first minute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C18, C20-C22, C25, C33, and C132 provide consistent quantitative descriptions of plasticity sparsity with specific percentages and references to figures (3A1, 3B1-B2, 3C1-C2, 3D2). The layer-specific patterns (C21) and temporal dynamics (C25) are well-documented. The summary claim C132 accurately reflects the detailed findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Potentiation dominated in amplitude while depression counteracted it in frequency, leading to stable firing rates without explicit homeostatic terms. Plastic changes were non-random and stimulus-specific: random Poisson spikes without spatio-temporal structure reduced plasticity by 25%, the plasticity model is not strictly Hebbian (postsynaptic firing alone could change efficacy though presynaptic release was required for most changes), layer-to-layer pathway specificity differed from random controls, and there was strong overexpression of simplices in the subgraph of changing connections with maximal simplex dimension exceeding chance by two.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C26, C28-C31 demonstrate non-random, structured plasticity through multiple lines of evidence: control simulations (C26, Figure 3\u2014figure supplement 1), comparison to random controls (C29, Figure 4A2-A3), and topological analysis (C30-C31, Figure 4B). The balance between potentiation and depression (C8) is supported by the stability results. The non-Hebbian nature (C28) is appropriately qualified with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "The propensity of plastic changes increased as pairwise firing rates increased, consistent with previous modeling insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is directly supported by Figure 3A2 and citations to prior modeling work (Litwin-Kumar and Doiron, 2014; Graupner et al., 2016). This establishes a rate-dependence baseline that is later refined by showing that rate alone is insufficient (C39).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C110",
+      "C111"
+    ],
+    "result": "Functional assemblies were activated in all stimulus repetitions with 3-4 assemblies remaining active for 190\u00b130 ms. Within assemblies, up to 13.8% of synapses depressed (vs. 5% overall) and up to 5.2% potentiated (vs. 2% overall), with synapses across assemblies undergoing more changes than within assemblies. Co-firing in a Hebbian cell assembly is a better predictor of plastic changes than just firing at high rates, with cells that fire together more than expected having three times higher chances of changing synaptic efficacy. Early assemblies are stimulus-specific while late assemblies are non-specific and participate in all assembly sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40, C110-C111 form a coherent narrative about assembly-specific plasticity supported by Figures 5B-F and rate-based controls (Figure 5G). The quantitative claim of 3x higher probability (C40) is supported by the comparison between assembly synapses and rate-matched controls. The functional distinction between early and late assemblies (C110-C111) is supported by their composition and connectivity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C113",
+      "C114"
+    ],
+    "result": "Clustered synapses within early and middle assemblies were unlikely to undergo plastic changes, while non-clustered within-assembly synapses were most likely to change across all assemblies. However, clustered within-assembly synapses that did change depressed to a significantly smaller degree than other categories. Cross-assembly synapses that were spatially clustered were likely initiated as fully depressed and had high chances of potentiation. These stable early assemblies can function as a stable backbone amid ongoing plasticity, with synapses between assemblies more likely to change, especially if clustered on postsynaptic dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C113-C114 describe complex interactions between spatial clustering and assembly membership supported by Figures 6C-D and supplementary figures with statistical tests (two-way ANOVA). The contrasting patterns for within- vs. cross-assembly clustered synapses (C41-C44) are well-documented. The interpretive claims about stable backbones (C113) and enhanced cross-assembly plasticity (C114) are reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "Network-level metrics predict plasticity: the indegree of pre- and postsynaptic neurons predicts plastic changes, k-edge indegree (number of k-simplices innervating a connection) increases probability of change across dimensions, connections with highest k-edge indegree tend toward potentiation while lowest favor depression, and high k-edge indegree predicts higher connection strength in both the model and MICrONS dataset. Within assembly subgraphs, probability of changes only increased with k-edge indegree for the presented pattern or late assemblies. Simplex motifs innervating cells predict assembly membership, and pattern-indegree (number of VPM fibers from a pattern innervating a neuron) also predicts connection changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50, C118-C120, C122 establish k-edge indegree as a novel predictor of plasticity with validation in MICrONS data (C49, Figure 7D). The comparable network properties between model and MICrONS (C119) support the validity of the comparison. The pattern-specificity within assembly subgraphs (C50) is well-documented in Figure 7E2. The connection to assembly membership (C118) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C124",
+      "C125",
+      "C131"
+    ],
+    "result": "After plasticity, firing rates decreased slightly while spike correlations remained stable, with effects more pronounced in deeper layers. The highest correlations both before and after plasticity were found in the most central edges (highest edge participation in high-dimensional simplices), a prediction verified in the MICrONS dataset. Correlations of connected neuron pairs decreased slightly following the firing rate decrease. The most central connections of the network drive correlated activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C124-C125, C131 describe functional consequences of plasticity with validation in MICrONS data (C53, Figure 8B2). The relationship between edge centrality and correlations (C52) is supported by both model and experimental data. The layer-specific effects (C125) add important detail. The prediction-validation cycle (C131) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C134"
+    ],
+    "result": "While assemblies remained fairly stable, they became more stimulus-specific and reliable: an early assembly responding to patterns B and E split into two stimulus-specific assemblies after plasticity, assembly sequences became more reliable with significant increases in Hamming similarity for most patterns, but single-cell spike time reliability slightly decreased. This demonstrates that plasticity can contribute to emergence of robust population codes with unreliable neurons, making circuit responses more distinct between stimuli (increased specificity) but less distinct for a given stimulus (increased reliability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59, C134 describe a key finding about population-level coding supported by Figures 8C-E with statistical tests (Kruskal-Wallis). The assembly splitting (C54) provides concrete evidence of increased specificity. The contrast between assembly-level and single-cell reliability (C57) is particularly important and well-documented. The interpretive claims (C58-C59) are well-supported by the data and represent important computational insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "While prior work (Markram and Tsodyks, 1996) showed redistribution of synaptic efficacy at the single connection level in vitro, this study found network-level redistribution under in vivo-like conditions that maintained spike correlations globally while enhancing stimulus-specificity and reliability of subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 appropriately contextualize the findings relative to prior work with proper citations and figure references (Figure 8A-D, 8F). The distinction between connection-level and network-level redistribution is important and well-supported. The summary (C130) accurately captures the main functional outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Pattern C elicited the strongest response while pattern H elicited the weakest, and patterns H and I had the most similar responses because they share 66% of VPM fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 describe stimulus-response relationships with clear mechanistic explanation (fiber overlap) and reference to Figure 2A. These findings validate that the model responds appropriately to input structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The simulations required an estimated 12 million core hours and were always repeated at least three times to assess qualitative consistency of results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 document computational requirements and replication practices with reference to Figure 4\u2014figure supplement 1. This establishes the scale of the computational effort and addresses reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Assembly detection used 20 ms time bins with significance determined by the 95th percentile of 100 shuffled controls. The MICrONS dataset (electron microscopic reconstruction) with 60,048 classified neurons was used for validation, with eight calcium-imaging sessions (at least 1000 neurons per session, 85% co-registered) providing functional data from 243 neurons/session on average (1817 unique neurons total). Spike time reliability was calculated using cosine similarities of mean-centered, smoothed spike times (1ms bins, 10ms Gaussian kernel).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C86-C87, C89-C92 provide detailed methodological descriptions with appropriate citations. The MICrONS dataset specifications are clearly documented. The methods are sufficiently detailed for replication and the selection criteria for imaging sessions are justified by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C133",
+      "C135",
+      "C136"
+    ],
+    "result": "Adding biological complexity allowed reduction in the number of explicitly modeled mechanisms. The model and detailed instructions are open-sourced. Plastic changes were largely determined by anatomical structure of synaptic connectivity and its relation to functional units (co-firing assemblies, clustered synapses, common innervation, central edges). The model is not designed to solve specific tasks but represents sensory cortex learning stimulus features in an unsupervised manner, with demonstration of stimulus-specificity and increased reliability providing crucial validation that results have implications for learning beyond just describing biophysical processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99, C133, C135-C136 provide important context about modeling philosophy and interpretation. The claim about reducing explicit mechanisms (C98) is supported by the stability results without homeostatic terms. Open-sourcing (C99) supports reproducibility. The summary of determinants (C133) accurately reflects the findings. The clarifications about task-free learning (C135) and validation importance (C136) are appropriate interpretive statements.",
+    "result_type": "MINOR"
+  }
+]

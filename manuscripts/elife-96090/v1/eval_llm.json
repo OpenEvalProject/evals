@@ -1,0 +1,500 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study enrolled 223 men comprising 63 controls with proven paternity and 160 men with reproductive disorders (58 MFI, 46 RPL partners, 26 UI partners). Mean ages were 40.1\u00b18 years for controls and 37\u00b14.8 years for study participants, with no significant ethnic differences between groups (p=0.38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 provide clear demographic data with appropriate sample sizes and statistical comparisons. The cohort composition is well-defined and ethnicity analysis shows proper statistical testing. These descriptive statistics form a solid foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Men with reproductive disorders showed significantly higher rates of abnormal semen parameters compared to controls, with the study group representing 85% of high DNA fragmentation cases, 85% of elevated ROS cases, and 79% of oligospermia cases. The MFI group exhibited the most severe abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 present consistent findings showing enrichment of abnormal parameters in the study group. Table 1 provides statistical support with appropriate p-values. The data successfully validates the study design by confirming that the study group exhibits expected reproductive abnormalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C58",
+      "C59",
+      "C60",
+      "C65"
+    ],
+    "result": "Hierarchical clustering of 7,998,565 high-quality sequencing reads identified three major microbiota clusters at the genus level: Cluster 1 (Streptococcus-dominant, 23.8%), Cluster 2 (Prevotella-dominant, 24.4%), and Cluster 3 (Lactobacillus/Gardnerella-dominant, 35.9%/35.6%). Cluster 2 showed significantly higher richness (p<0.001), diversity (p<0.001), and bacterial load (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32, C58-C60, C65 describe robust clustering analysis with objective statistical methods (silhouette scores) and appropriate statistical testing. Figure 1 provides clear visual support. The identification of three clusters is methodologically sound and represents a major finding about seminal microbiota structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C136"
+    ],
+    "result": "Species-level clustering analysis revealed poor silhouette scores and lack of robust species-specific clusters, suggesting that seminal microbiota may result from transient colonization rather than stable species-level communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C136 appropriately use silhouette score analysis to demonstrate lack of species-level structure. The interpretation of transient colonization is reasonable given the contrast with genus-level clustering, though it remains somewhat speculative. The negative finding is important for understanding seminal microbiota ecology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Co-occurrence network analysis identified five major bacterial communities with distinct interaction patterns. Community 1 showed co-occurrence between Gardnerella vaginalis and Lactobacillus iners, consistent with Cluster 3 composition. Communities 3 and 4 exhibited high connectivity including anti-co-occurrence patterns among Staphylococcus, Peptoniphilus, Corynebacterium, and Prevotella species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 describe appropriate network analysis using SparCC algorithm with clear visualization in Figure 2. The identification of co-occurrence patterns provides ecological insights complementary to clustering analysis. The agreement between network communities and hierarchical clusters strengthens both findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C61",
+      "C63",
+      "C66",
+      "C138"
+    ],
+    "result": "Overall bacterial composition, richness, diversity, and load showed no significant associations with patient groups (control, MFI, RPL, UI) or with seminal parameters, sperm DNA fragmentation, or ROS levels. Global perturbation of seminal microbiota is not associated with male reproductive disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C61, C63, C66, C138 consistently report negative findings across multiple comparisons. While negative results, they are important for establishing that global microbiota features do not differentiate fertility status. The lack of association is clearly stated and appropriately interpreted as a major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Several bacterial genera showed associations (p<0.05) with sperm parameters: increased DNA fragmentation correlated positively with Porphyromonas and Varibaculum and negatively with Cutibacterium and Finegoldia; ROS was positively associated with Lactobacillus (driven by L. iners, p=0.04) and negatively with Corynebacterium; Corynebacterium was positively associated with semen volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C54 report multiple associations at p<0.05 but none survived FDR correction (Table 2). Without multiple testing correction, these associations may be spurious. The authors acknowledge this limitation (C93) but still report these findings. These should be considered hypothesis-generating rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C62",
+      "C67",
+      "C100",
+      "C101"
+    ],
+    "result": "Flavobacterium genus was significantly associated with abnormal semen quality (q=0.02) and abnormal sperm morphology (q=0.01), surviving FDR correction. An unidentified Flavobacterium species showed similar associations (q=0.01). Flavobacterium was present in 36.28% of samples with mean relative abundance of 1.15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C62, C67, C100-C101 report the only associations surviving multiple testing correction, supported by Figure 3 and Tables 2-3. The statistical rigor (FDR correction) and consistency across genus and species levels provide strong evidence. This represents the most robust microbiota-parameter association in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C137"
+    ],
+    "result": "Lactobacillus enrichment was associated with lower incidence of elevated seminal ROS, primarily driven by L. iners. This provides evidence for an association between Lactobacillus abundance and normal seminal parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120, C137 report associations that did not survive FDR correction (Table 2-3). While the species-level analysis identifying L. iners is informative, the lack of statistical significance after multiple testing correction limits confidence. The conclusion in C137 may overstate the strength of evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Increased sperm DNA fragmentation was associated with Varibaculum enrichment, consistent with previous reports of increased Varibaculum in infertile men.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C125 report an association that did not survive FDR correction. While consistency with prior literature (C125) provides some support, the lack of statistical significance after multiple testing correction means this finding requires validation. The agreement with Veneruso et al. 2023 is noted but insufficient alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Known genitourinary pathogens (Chlamydia, Ureaplasma, Neisseria, Mycoplasma, Escherichia) were observed but at prevalence <25%, below the threshold for inclusion in regression modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 appropriately report the presence but low prevalence of known pathogens. The 25% prevalence threshold for regression modeling is a reasonable methodological choice to ensure statistical power. This negative finding is important for interpreting the overall results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C153",
+      "C154"
+    ],
+    "result": "The study incorporated stringent contamination controls including three negative control swabs and computational decontamination, removing 94 ASVs classified as contaminants. This addresses the known issue that 50-70% of bacterial reads in low-biomass samples may be environmental contaminants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74, C153-C154 describe appropriate contamination control measures critical for low-biomass microbiome studies. The use of negative controls and computational decontamination (decontam package) represents best practices. This methodological rigor strengthens confidence in the microbiota findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C155",
+      "C156"
+    ],
+    "result": "The study used objective statistical methods (silhouette scores with Ward's linkage and Jensen-Shannon distance) to determine the optimal number of microbial clusters, maximizing mean silhouette score.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C155-C156 describe appropriate and objective clustering methodology. The use of silhouette scores to determine cluster number is superior to arbitrary choices made in some prior studies. This methodological improvement over previous work is clearly stated and justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C134",
+      "C135"
+    ],
+    "result": "The three-cluster structure (Streptococcus, Prevotella, Lactobacillus-dominant) is consistent with earlier studies, suggesting certain compositional characteristics of seminal microbiota may be conserved across populations. Multiple studies indicate Prevotella- or Lactobacillus-dominated microbiota, suggesting stability at genus level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C134-C135 appropriately compare findings to prior literature (Hou 2013, Weng 2014, Baud 2019). The consistency across studies despite methodological differences supports the robustness of genus-level clustering. The inference about conservation across populations is reasonable but requires validation in diverse cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The presence of penile skin commensals (Streptococcus, Corynebacterium, Staphylococcus) and female genital tract bacteria (Gardnerella, Lactobacillus) in semen suggests transient colonization, possibly through sexual intercourse. Sample contamination during collection remains possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 provide reasonable interpretation of bacterial origins supported by appropriate citations. The identification of skin and vaginal commensals is consistent with transient colonization. However, C81 and C85 are appropriately cautious, acknowledging these remain hypotheses requiring validation through longitudinal or partner studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Flavobacterium are gram-negative, physiologically diverse aerobes with complex taxonomic history. While widely distributed environmentally and pathogenic in fish, human infections are rare. The genus has undergone extensive reclassification, with many species moved to other genera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C117 provide comprehensive background on Flavobacterium taxonomy and pathogenicity, well-supported by appropriate citations. This contextualizes the finding of Flavobacterium association with abnormal semen. The taxonomic complexity is important for interpreting the 'unidentified species' finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Previous semen microbiota studies have been limited by small sample sizes and lack of consensus on compositional structure or biological relevance. Many failed to consider multiple testing correction, likely leading to spurious associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C91-C93 provide appropriate critical assessment of prior literature, supported by multiple citations. The identification of methodological limitations (small samples, lack of multiple testing correction) justifies the current study's design. This establishes the rationale for the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Prior studies reported conflicting findings: Veneruso et al. found decreased diversity in infertile patients while Lundy et al. found increased diversity. Lundy et al. reported inverse association between Prevotella and sperm concentration, not replicated in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 accurately cite contradictory findings from prior studies and note non-replication of specific associations. This highlights the inconsistency in the field and strengthens the importance of the current larger study. The failure to replicate Lundy's Prevotella finding is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Methodological differences between studies, including abstinence time and sample processing time, have been shown to impact semen microbiological composition, potentially explaining heterogeneous results across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 identify important sources of variability supported by citation to Yao et al. 2020. This provides reasonable explanation for inconsistent findings across studies. The study controlled abstinence time (3-7 days) and processing time (<60 min), addressing these variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Study limitations include single-institution design with limited ethnic diversity, lack of female partner microbiota testing, lack of paired seminal/urinary samples, and missing covariates like smoking status. Geographic variability in seminal microbiota cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128, C131-C133 provide appropriate acknowledgment of study limitations. These are genuine constraints that affect generalizability and mechanistic interpretation. The authors appropriately note these limitations without overstating their impact on the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Universal primers used in NGS may not be truly universal and may anneal variably to specific bacteria, potentially causing over-detection, under-detection, or non-detection of some taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 acknowledge a fundamental limitation of 16S rRNA sequencing supported by appropriate citations. This is an inherent technical limitation affecting all similar studies. The acknowledgment demonstrates appropriate scientific caution about the completeness of microbiota detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The Flavobacterium-semen quality association warrants further exploration and may offer therapeutic potential. Larger multicenter studies and mechanistic investigations are required to establish causal links between semen microbiota and male fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 provide appropriate forward-looking statements based on the study findings. The call for larger studies and mechanistic work is justified given the correlational nature of the current findings. The suggestion of therapeutic potential for Flavobacterium reduction is appropriately cautious (C141: 'may').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C157"
+    ],
+    "result": "The study employed standardized methods including 3-7 day abstinence, sterile collection after penile cleaning, WHO 2010 guidelines for semen analysis, validated assays for ROS and DNA fragmentation, qPCR for bacterial load, and Benjamini-Hochberg FDR correction (q<0.05) for multiple testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C152, C157 describe appropriate and well-validated methodologies. The use of WHO guidelines, validated assays, and proper statistical corrections demonstrates methodological rigor. The FDR correction is particularly important given the multiple comparisons inherent in microbiome studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Baud et al. (2023) studied 65 couples and found male microbiota more diverse than female (90% Lactobacillus-dominant), with intra-personal male samples more similar than inter-personal samples, and minimal male-to-female microbiota transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 accurately summarize findings from Baud et al. 2023, providing important context about couple microbiota dynamics. This prior work supports the interpretation of transient colonization and highlights the complexity of seminal microbiota origins. The summary is accurate based on the citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Prior studies found Lactobacillus enrichment associated with normal seminal parameters (especially morphology), though one study reported associations with asthenospermia or oligoasthenospermia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 accurately cite contradictory findings about Lactobacillus from prior literature. This provides context for the current study's findings about Lactobacillus and ROS. The conflicting reports highlight the need for larger, well-controlled studies like the current one.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "This is the largest study to date investigating seminal microbiota in patients with diverse adverse reproductive outcomes (UI, MFI, RPL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by the sample size (n=223) being larger than cited prior studies and the inclusion of multiple reproductive disorder types. While 'largest to date' claims require comprehensive literature knowledge, the sample size and scope appear to justify this statement based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Study participants were asymptomatic of urinary tract infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is an important inclusion criterion that distinguishes this study from investigations of symptomatic infections. This is clearly stated and important for interpreting the Flavobacterium findings in context of the literature on Flavobacterium UTIs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background context establishes declining sperm counts (2.6% annually since 2000), male factor contributing to ~50% of infertility cases, limited therapeutic options, the role of genitourinary infections and ROS in male infertility, and the limitations of culture-based methods leading to adoption of NGS approaches with inconsistent results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide appropriate background supported by relevant citations. These establish the rationale for investigating seminal microbiota using NGS in reproductive disorders. The progression from established knowledge (C1-C7) through methodological limitations (C8) to current state (C9-C11) is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "In contrast to semen, the vaginal microbiota shows reproducible species-level clusters reflecting mutualistic host-microbe relationships that have co-evolved over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 provide appropriate comparison to vaginal microbiota supported by citations to Pruski et al. 2021 and France et al. 2020. This contrast helps interpret the lack of species-level clustering in semen and supports the transient colonization hypothesis. The comparison is scientifically valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "L. iners is a common member of the cervicovaginal niche.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is well-established knowledge supported by citation to MacIntyre et al. 2017. This contextualizes the finding of L. iners in semen and supports the hypothesis of microbiota transfer during sexual intercourse. The statement is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "A small subset of bacteria may be associated with changes in seminal parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 appropriately summarizes the finding that while global microbiota features show no associations, specific taxa (particularly Flavobacterium) do show associations. This nuanced conclusion accurately reflects the mixed findings and is appropriately cautious.",
+    "result_type": "MINOR"
+  }
+]

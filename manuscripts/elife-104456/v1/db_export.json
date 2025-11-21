@@ -1,0 +1,1855 @@
+{
+  "submission": {
+    "id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:08:18.010771Z",
+    "updated_at": "2025-11-21T16:08:18.010771Z"
+  },
+  "content": [
+    {
+      "id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "content_type": "manuscript",
+      "content_text": "# A neural network model that generates salt concentration memory-dependent chemotaxis in Caenorhabditis elegans\n\n## Authors\n\n- Masakatsu Hironaka<sup>1</sup> ([ORCID: 0009-0005-0194-7102](https://orcid.org/0009-0005-0194-7102))\n- Tomonari Sumi<sup>1</sup> ([ORCID: 0000-0002-4230-5908](https://orcid.org/0000-0002-4230-5908)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry, Faculty of Science, Okayama University Okayama Japan ([ROR:02pc6pc55](https://ror.org/02pc6pc55))\n2. Research Institute for Interdisciplinary Science, Okayama University Okayama Japan ([ROR:02pc6pc55](https://ror.org/02pc6pc55))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA neuroanatomical minimal network model was revisited to elucidate the mechanism of salt concentration memory-dependent chemotaxis observed in Caenorhabditis elegans. C. elegans memorizes the salt concentration during cultivation, manifesting a pronounced taste preference for this concentration. The right-side head sensory neuron, designated ASER, exhibits a response to a decrease in salt concentration. The basal level of glutamate transmission from ASER has been demonstrated to transiently increase and decrease when the current environmental salt concentrations are lower and higher, respectively, than that during previous cultivation. Given the sensitivity of excitatory/inhibitory glutamate receptors expressed on the postsynaptic AIY interneurons, it can be anticipated that the ASER\u2013AIY synaptic transmission will undergo a reversal due to alterations in the basal glutamate release. The neural network, derived from the hypothesis, reproduced the salt concentration memory-dependent preference behavior and revealed that the circuit downstream of ASE functions as a module that is responsible for salt klinotaxis.\n\n## Introduction\n\nIt is a fundamental biological principle that all animals have evolved the ability to efficiently access the optimal food patches or nesting sites for survival. This ability is achieved by the animals temporarily memorizing the intensity of sensory cues (e.g., temperature, concentration of substances, etc.) that coincide with the favorable environmental conditions they have previously experienced. The neural system should determine a preferred direction based on both the previously memorized sensory information and the change in the stimulus intensity currently received by the sensory neurons, and regulate the motor neurons to efficiently direct the animal to the optimal location in the real time. However, the precise mechanisms by which the intensity of experienced sensory stimuli is memorized or encoded in the neural system and the favorable direction is varied as a function of those sensory cues remain unclear for a considerable number of sensory stimuli.\n\nThe nematode Caenorhabditis elegans has been demonstrated to exhibit chemotaxis to sodium chloride, a phenomenon termed salt chemotaxis (Ward, 1973). In the context of salt chemotaxis, the amphid taste neurons ASE play a crucial role in sensing the concentration of NaCl (Bargmann and Horvitz, 1991). These sensory neurons, which consist of two morphologically symmetric neurons on the left (ASEL) and the right (ASER), are essential for the detection of alterations in the concentration of NaCl. These neurons exhibit a functional asymmetry in which the ASER is depolarized by decreases in salt concentration, whereas the ASEL responds to increases (Suzuki et al., 2008).\n\nTwo distinct behavioral strategies that direct C. elegans toward a favorable NaCl concentration during salt chemotaxis have been characterized by an analysis of the migratory behaviors exhibited by the organism (Iino and Yoshida, 2009; Pierce-Shimomura et al., 1999). The first is klinokinesis, which is also referred to as the pirouette. In this strategy, the frequency of redirecting turns is increased when the current direction of locomotion is determined to be unfavorable in relation to the gradient of salt concentration and decreased when it is determined to be favorable (Kunitomo et al., 2013; Pierce-Shimomura et al., 1999). The second strategy is referred to as klinotaxis or weathervane. In this behavioral strategy, C. elegans exhibits a continuous turning behavior in a direction that is favorable based on the gradient of salt concentration perpendicular to the direction of locomotion (Iino and Yoshida, 2009; Kunitomo et al., 2013). Furthermore, the salt concentration preferred by C. elegans is demonstrated to depend on the difference in salt concentration between the pre-assay culture (Ccult) and the current environment on the test plate (Ctest). In the presence of food, if the previously cultivated salt concentration is higher than the current environmental concentrations (Ccult > Ctest), the preferred salt concentrations are demonstrated to become higher than the current concentrations (Kunitomo et al., 2013). Conversely, if the previously cultivated salt concentration is lower than the current concentrations (Ccult < Ctest), the preferred salt concentrations are demonstrated to become lower than the current ambient concentrations (Kunitomo et al., 2013).\n\nThe neural circuit mechanism underlying such salt concentration memory-dependent chemotaxis has been intensively investigated, particularly in the context of klinokinesis (Hiroki et al., 2022; Sato et al., 2021). The interneuron postsynaptic to the ASER, AIB, which is involved in the behavior of klinokinesis (i.e., the redirecting turn), exhibits a bidirectional response to changes in NaCl concentration in the current environment, dependent on the previously experienced NaCl concentration (Sato et al., 2021). The bidirectional neural responses have been demonstrated to be mediated by a change in the basal level of glutamate neurotransmitter released from the ASER (Sato et al., 2021). The alteration in the basal glutamate transmission results in a bidirectional response of the postsynaptic AIB due to the distinct sensitivities of the excitatory glutamate receptor GLR-1 and the inhibitory glutamate receptor AVR-14, which are expressed on the AIB (Hiroki et al., 2022). These findings demonstrate that the reversal of the redirecting turn behaviors in klinokinesis is attributed to the synaptic plasticity between ASER and AIB neurons, which is altered by cultivated salt concentration. In contrast, the salt concentration memory-dependent mechanism underlying another NaCl chemotaxis, klinotaxis, remains largely unexplored.\n\nC. elegans has 302 neurons, all of which have been fully mapped on its connectome (Cook et al., 2019; White et al., 1986). Although its neural network is relatively simple compared to other multicellular organisms, C. elegans exhibits a wide range of behaviors, including locomotion, foraging, feeding, touch withdrawal, and taxis involving smell, taste, and temperature (Bargmann, 1993; de Bono and Maricq, 2005). C. elegans is, therefore, an ideal organism for the detailed investigation of the relationship between neural connectivity and behavior. However, despite these advances in the connectome, the neural connectivity alone is insufficient for a comprehensive understanding of the neural circuit mechanisms underlying behavior. The integration of neural connectivity information with neurophysiological and behavioral observations is essential for adequately simulating the dynamic interactions within neural networks.\n\nA number of neural network models have been proposed to address this issue (Appleby, 2012; Chen et al., 2022; Dunn et al., 2004; Ferr\u00e9e et al., 1996; Ferr\u00e9e and Lockery, 1999; Izquierdo and Beer, 2013; Izquierdo and Lockery, 2010; Izquierdo et al., 2015; Matsumoto et al., 2024; Soh et al., 2018). A neural network model has been developed based on the neuroanatomical minimal network circuit (see Figure 1), which has been demonstrated to reproduce salt klinotaxis (Izquierdo and Beer, 2013). The neuroanatomical minimal model is an extension of a previously proposed sensory-motor model that omits interneurons (Izquierdo and Lockery, 2010). After the presentation of the model (Izquierdo and Beer, 2013), a neurophysiological discovery regarding the synaptic connections between AIY and AIZ interneurons was reported (Li et al., 2014). Specifically, it was demonstrated that the AIY plays a crucial role in initiating the curving turn by forming an inhibitory synapse with the AIZ (Li et al., 2014). Indeed, it was observed that the inhibitory synaptic transmission is induced when the Cl\u2212 ion channel of the acetylcholine (ACh) neurotransmitter receptor, ACC-2, on the postsynaptic AIZ is activated by the ACh neurotransmitter released from the presynaptic AIY (Li et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig1-v1.jpg)\n\n**Figure 1.:** The white circles represent chemosensory neurons, the gray circles represent interneurons, and the black circles denote motor neurons. The black and green connections between neurons represent the chemical synaptic connections and electrical gap junctions, respectively. The minimal circuit was derived from the C. elegans connectome, with two constraints applied as described in the text (Izquierdo and Beer, 2013).\n\nIn the present study, the electrophysiological parameters involved in the neuroanatomical minimal network model (Izquierdo and Beer, 2013) were re-examined by constraining the AIY\u2013AIZ synaptic transmission to be inhibitory (Li et al., 2014). An evolutionary algorithm with the abovementioned constraints was used to extensively search the parameters within the model and optimize the behavioral performance of the model for salt klinotaxis of C. elegans cultivated at a NaCl concentration higher than the current environmental concentrations (Ccult > Ctest) in the presence of food. The most optimized model indicated that the ASER is connected to the postsynaptic AIY interneurons via an inhibitory synaptic transmission. The validity of the resulting network was corroborated by the experimental observation that the excitation of the ASER in response to a decrease in NaCl was synchronized with that of the AIZ (Matsumoto et al., 2024). Specifically, the synchrony of the excitation of the ASER and AIZ (Matsumoto et al., 2024) taken together with the experimentally identified inhibitory synaptic transmission between the AIY and AIZ revealed that the ASER\u2013AIY synaptic connections should be inhibitory, which was consistent with the network obtained from the most optimized model. It was then hypothesized that the ASER\u2013AIY inhibitory synaptic connections are altered to become excitatory due to a decrease in the baseline release of glutamate from the ASER when individuals are cultured under Ccult < Ctest. This is due to the substantial difference in the sensitivity of excitatory/inhibitory glutamate receptors expressed on the postsynaptic AIY interneurons. It was postulated that this reversal would result in a reversal of the salt preference behavior observed in klinotaxis. The most optimized model in which solely the ASER\u2013AIY inhibitory synaptic connections were replaced with an excitatory connection, demonstrated a preference for a lower NaCl concentration than the current concentrations, as expected. Finally, the most optimized model was used to investigate the impact of the experimentally suggested reduced activity of the SMB motor neurons in the absence of food on klinotaxis behavior.\n\n## Results\n\n### An evolutionary algorithm discovered a highly chemotaxis-performing network that reproduced the experimentally observed pattern of neuronal activity\n\nTwo types of extensive evolutionary searches for the electrophysiological parameters of the neuroanatomical minimal network model were performed by optimizing a chemotaxis index (CI). The first approach was a conventional evolutionary search without additional neurophysiological constraints, as had been employed previously (Izquierdo and Beer, 2013). The second evolutionary search was conducted with the constraint that the AIY\u2013AIZ synaptic connections be inhibitory (Li et al., 2014). In these genetic algorithms, the networks evolved in chemotaxis assays where conical shapes were employed as salt concentration profiles (Equation A15). In contrast, the CI for optimized networks was evaluated using a Gaussian shape of salt concentration profile (Equation A16), which mimics the salt concentration gradients observed in laboratory tests of chemotaxis in C. elegans (Ferr\u00e9e and Lockery, 1999; Ward, 1973). The CI values for the most optimized networks with and without the neurophysiological constraints were 0.877 and 0.855, respectively, as shown in Figure 2. These values were found to be comparable to those reported in the previous study (Izquierdo and Beer, 2013). The difference between these CI values is slight, while the model optimized with the constraints exhibits a marginally accelerated attainment of the salt concentration peak, as shown by the trajectories. The slightly higher chemotaxis performance observed in the constrained model is not essentially attributed to the introduction of the AIY\u2013AIZ synaptic constraints but rather depends on the specific individuals selected from the optimized individuals obtained from the evolutionary algorithm. In fact, even when the AIY\u2013AIZ constraints are taken into consideration, the model retains a significant degree of freedom to reproduce salt klinotaxis due to the presence of a substantial parameter space. Consequently, the impact of the AIY\u2013AIZ constraints on the optimization of the CI is expected to be negligible.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig2-v1.jpg)\n\n**Figure 2.:** The highest-performing network models, with and without the AIY\u2013AIZ connections constrained to be inhibitory, were placed at the initial position, 4.5 cm away from the salt gradient peak, at 10 different angles of worm orientation, and allowed to move freely for 250 s. The salt concentrations were represented by a Gaussian distribution. The color of the trace represents the passage of time. (a) The highest-CI network model that evolved without any constraints. The CI is 0.855, with a standard deviation of 0.006. (b) The highest-CI network model that evolved with the constraint that the AIY\u2013AIZ connection be inhibitory. The CI is 0.877, with a standard deviation of 0.002. The insets provide an enlarged view of the sinusoidal locomotion and turning processes.\n\nThe locomotion trajectories of the most optimized network with the constraints are depicted for the cases in which the model worm was oriented at ten different angles at the initial position (Figure 2b; see also Video 1). For comparison, the trajectories of the most optimized network without the constraints are also depicted in Figure 2a. These trajectories show that both the model worms rapidly turned in the direction of the steepest gradient. These model worms exhibited the salt preference behavior in klinotaxis that were consistent with the experimental observations (Iino and Yoshida, 2009) and previous simulation studies (Chen et al., 2022; Izquierdo and Beer, 2013; Izquierdo and Lockery, 2010).\n\n![Video 1.](https://cdn.elifesciences.org/articles/104456/elife-104456-video1.mp4.jpg)\n\nSubsequently, in order to determine how the signal arising from alterations in salt concentration was transmitted through the neural circuit to regulate motor systems, we examined the impact of step changes in salt concentration of varying magnitude with different sign on the neurotransmitter release $z_{i}$ (defined by Equation A5) from each neuron. Figure 3a, b presents the sign and strength of the weight of the synaptic connection, $w_{ij}$, in the unconstrained and constrained most optimized models employed in this analysis, respectively. Figure 3c, d illustrates the results of the analysis of $z_{i}$ for the most optimized networks where the additional neurophysiological constraints are not considered and are considered, respectively. It is noted that $z_{i}$ differs from the membrane potential $y_{i}$ as a consequence of the influence of the bias term $\\theta_{i}$ in Equation A5. Moreover, the neuronal activities involved in signal transmission across chemical synapses are primarily detected through $z_{i}$. In contrast, $y_{i}$ correlates with the neuronal activity that are involved in gap junction connections, which can be observed experimentally through an increase in intracellular Ca2+ concentration. As illustrated in Figure 3b, the evolutionary search with the constraints successfully yielded the network with inhibitory AIY\u2013AIZ synaptic connections as the most optimized model. Coincidentally, the evolutionary search without the constraints also yielded the network with inhibitory AIY\u2013AIZ synaptic connections as the most optimized model (Figure 3a). However, this is an incidental finding, as the unconstrained evolutionary search also yielded high-CI networks with excitatory AIY\u2013AIZ synaptic connections, which were analogous to the network that had been presented as a representative model presented in the previous study (Izquierdo and Beer, 2013). A noteworthy distinction between Figure 3a and b is that the ASER\u2013AIY synaptic connections in the constrained model are inhibitory (Figure 3b) whereas those in the unconstrained model are excitatory (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig3-v1.jpg)\n\n**Figure 3.:** The most optimized neural network circuits without (a) and with (b) the constraints. The blue arrow and the red blunt arrow indicate an excitatory and an inhibitory synaptic connection, respectively. The green connections represent electrical gap junctions. The color intensity of these connections indicates the strength of the synaptic connections. (c) The neurotransmitter release, $z_{i}$, from each neuron in the most optimized network without the constraints is illustrated as a response to step changes in the salt concentration. The responses to positive and negative step changes in the salt concentration are represented by the colors blue and red, respectively. (d) The illustration is the same as (c), but the outcome was obtained from the most optimized network with the constraints. In both (c) and (d), the black horizontal line represents the level of the bias term, $\\theta_{i}$, in the interneurons and motor neurons. In both (c) and (d), the turning angle $\\phi$, as defined by Equation A13a (see Figure 8b), is illustrated in the second panel from the bottom. In order to identify the direction of the sweep of the head sensory neurons upon introducing step changes in salt concentration, it is necessary to confirm the ideal sinusoidal trajectory of the model worm in the absence of sensory input. This is illustrated in the lowest panel from the bottom in (c, d).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The most optimized neural circuits developed without (a) and with (b) the constraints mentioned in the text. For purposes of reference, the same as in Figure 3a, b are shown again. (c, d) The neurotransmitter release, $z_{i}$, from each neuron in the network (a, b) in response to step changes in salt concentration of positive (blue) and negative (red) is shown in (c, d), respectively, along with the signaling through the chemical synaptic connection and the electrical gap junction. The $z_{i}$ s shown herein are the same as those shown in Figure 3c, d. (e, f) The membrane potential $y_{i}$ that was observed in the network (a, b) is shown in (e, f), respectively. In (c\u2013f), the blue (red) arrow and the blue (red) line with an ending in a filled circle show the excitatory and inhibitory synaptic transmission, respectively, in response to positive (negative) step changes in salt concentration. The blue (red) bidirectional arrow indicates gap junction signal transmission, in response to positive (negative) step changes in salt concentration.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Blocking electrical gap junctions significantly has a marked effect on neurotransmitter release $z_{i}$ and the resulting turning angle $\\phi$.The most optimized neural circuits without (a) and with (b) the constraints. With the exception of the gap junctions that have been blocked, all other parameters remain consistent with those illustrated in Figure 3.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The changes in the turning angles $\\phi$ in response to step changes in the salt concentration of positive and negative at the time half a cycle later than those shown in Figure 3.The results obtained from the most optimized neural circuits without and with the constraints are shown in (a, b), respectively. With the exception of the timing of the step changes in salt concentration, all other conditions are identical to those depicted in Figure 3.\n\nRelated to these, the signal transmissions between the neurons that are involved in the neural circuit for klinotaxis have been investigated using calcium imaging techniques (Matsumoto et al., 2024). As the salt concentration decreased, the activity of the salt-sensing neuron ASER increased, resulting in an observed activation pattern of the interneuron AIZ that was synchronized with the activation of ASER. As illustrated by the red patterns of $z_{i}$ in Figure 3d, the constrained model exhibited a depolarization of AIZ interneurons as the signal output from ASER increased during a decrease in the salt concentration. This indicates that the model reproduces the pattern of neuronal activity observed in the experiments. In contrast, the unconstrained model exhibited an inverse activity pattern of AIZs, namely, a hyperpolarization of AIZs, in response to a decrease in the salt concentration (Figure 3c). Nevertheless, the CI performance in the unconstrained model was as high as that in the constrained model. It is therefore essential to consider not only the connectome but also the available neurophysiological information in order to identify potential neural circuits that are consistent with the actual worm among the high-CI networks obtained by the evolutionary search. The inhibitory connections between ASER and AIYs are essential for synchronizing the activation of AIZs with the activity of ASER, provided that the AIY\u2013AIZ connections are inhibitory, as has been identified through experiments. (Li et al., 2014; Matsumoto et al., 2024). The biochemical mechanism and neurophysiological significance of the ASER\u2013AIY inhibitory connections will be discussed in detail in a subsequent section.\n\n### The model worm turns to move toward higher salinity based on the concentration gradient normal to its direction of movement\n\nNext, it was investigated how the most optimized model with the constraints reaches the peak of the salt gradient during klinotaxis. To elucidate the mechanism of klinotaxis, the curving rate was examined in relation to the bearing (Figure 4a). The curving rate, as defined in Figure 4b, was introduced to quantify the behavior of worms during klinotaxis (Iino and Yoshida, 2009). The bearing is defined in Figure 9 and described in detail in Bearing in Methods. The positive correlation between the curving rate and the bearing, as illustrated in Figure 4a, indicates that the model worm continuously turns in the direction of the steepest increase in salt concentration (see Figure 9). It is, next, necessary to reveal how the model worm determines the direction of its turn in order to increase the salt concentration as it moves. The positive correlation between the curving rate and the normal gradient of the salt concentration, as illustrated in Figure 4c, indicates that the model worm is able to sense the concentration gradient normal to the travel direction and thus turn in the direction that increases the salt concentration. These results are consistent with the mechanism that will be proposed later, which indicates that the model worms efficiently sense a slight concentration gradient normal to the direction of travel based on a change in salt concentration with sweeping of the head sensory neurons due to the undulating motions and utilize this information to turn in the correct direction. Figure 4d illustrates the positive and negative components of curving rate, as well as the average of these components, as a function of the translational gradient of salt concentration. The translational gradient is defined in Normal and translational salt concentration gradient in Methods. The positive and negative components of the curving rate are, respectively, sampled from the trajectory during leftward turns (as illustrated in Figure 4b) and rightward turns, respectively. The average of the positive and negative components of the curving rate was close to zero regardless of the translational gradient, due to the symmetry between the dorsal and ventral regions of the model worm. In contrast, the magnitude of the positive and negative components of the curving rate increased as the translational gradient varied from positive to negative. This indicates that, when the translational gradient is negatively large, the model worm regulates the direction of movement with a large positive or negative curving rate based on the normal gradient. Conversely, when the translational gradient is positive, the worm fine-tunes the direction of movement with a small positive or negative curving rate, which is determined by the normal gradient.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig4-v1.jpg)\n\n**Figure 4.:** (a) The curving rate as a function of the bearing. (b) The definitions of the curving rate and the normal direction of translational movement, which are utilized in the klinotaxis analysis, are illustrated. (c) The curving rate as a function of the normal gradient of salt concentration. (d) The positive (red) and negative (blue) components of the curving rate as a function of the translational gradient of salt concentration. The black dots represent the mean value of the two components. In the analysis, the salt concentration profile was modeled with a Gaussian distribution. All the error bars represent the standard deviation.\n\n### The minimal neural circuits transmit the signals from the sensory input to the motor systems via both the chemical and electrical connections\n\nNext, focusing on the most optimized network with the constraints (Li et al., 2014; Matsumoto et al., 2024), the signaling pathways in response to step changes in salt concentration are discussed in detail. Changes in the $z_{ON}$ signal from the ASEL are transmitted to the AIYL via the excitatory connection (Figure 3d). The signals indicating increases in $z_{i}$ from the AIYL are transmitted to the AIZL via the inhibitory connection between AIYL and AIZL displayed in Figure 3b, resulting in a hyperpolarization of the membrane potential $y_{i}$ in the AIZL (see Figure 3\u2014figure supplement 1f). The hyperpolarization signals in the AIZL are transmitted to the AIZR via the gap junction (Figure 3\u2014figure supplement 1d, f, Figure 3d). This is because the neuron dynamics via gap junctions results from the equilibration of the membrane potential yi of two neurons connected by gap junctions rather than the zi. The signals indicating decreases in $z_{i}$ from the AIZR are transmitted to the SMBDR and SMBVR via the excitatory connection (Figure 3d). Note that the oscillatory components $z_{i}^{OSC}$, as defined by Equations A10a and A10b, are introduced into the SMBD and SMBV, respectively. Consequently, the baseline components of $z_{i}$ from the SMBDR and SMBVR are shifted by half a cycle from each other (see the right side of the fourth and third panels from the bottom in Figure 3d). The discrepancies between the $z_{i}$ values from the SMBD and SMBV neurons (see Equation A13a) result in an increase in the turning angle $\\phi$ relative to its ideal oscillatory component (black line), as illustrated on the left side of the second panel from the bottom in Figure 3d. The implications of the changes in $\\phi$ will be discussed later.\n\nChanges in the $z_{OFF}$ signal from the ASER are transmitted to the AIYL via the inhibitory connection (Figure 3d). The signals indicating decreases in $z_{i}$ from the AIYL are transmitted to the AIZL via the inhibitory connection displayed in Figure 3b, resulting in a depolarization of the membrane potential $y_{i}$ in the AIZL (Figure 3d). The signals of the depolarization in the AIZL are transferred to the AIZR via the gap junction (see Figure 3\u2014figure supplement 1d, f, Figure 3d). The signals indicating increases in $z_{i}$ from the AIZR are transmitted to the SMBDR and SMBVR via the excitatory connection (Figure 3d). The disparities between the $z_{i}$ values from the SMBD and SMBV neurons (see Equation A13a) result in a decrease in the turning angle $\\phi$ relative to its ideal oscillatory component (black line), as illustrated on the right side of the second panel from the bottom in Figure 3d. It is remarkable that although the signaling pathway in the most optimized network without the constraints (Figure 3, Figure 3\u2014figure supplement 1) is largely different from that with the constraints, the regulatory mechanisms of $\\phi$ exhibited by these networks are analogous. This is evident from a comparison of the second panels from the bottom in Figure 3c, d. As illustrated by the analysis of these signaling pathways, the transmission of signals via electrical gap junctions plays a crucial role in both the neural circuits. Indeed, it was observed in those neural circuits that blocking the gap junctions led to significant changes in neurotransmitter release $z_{i}$ and resulted in changes in the turning angle $\\phi$ (see Figure 3\u2014figure supplement 2).\n\n### The turning direction is regulated based on both the direction of sweep of the head sensory neurons due to the sinusoidal motion of the worm and the timing of sensory signal input\n\nIt was then analyzed how changes in $\\phi$ in response to step changes in salt concentration caused the worm to move in the correct direction. From the sinusoidal trajectory of the model worm (the left side of the first panel from the bottom in Figure 3d), it can be observed that the head sensory neurons sweep toward the positive y-axis direction during step increases in $z_{ON}$ occurred. This corresponds to a situation where the salt concentrations on the positive side of the y-axis are greater than those on the negative side. The turning angle $\\phi$ is increased from its ideal oscillatory component to a value close to zero, causing the model worm to deviate from the ideal sinusoidal trajectory and gradually turn toward higher salt concentrations. Conversely, in the case of step increases in $z_{OFF}$, the head sensory neurons sweep toward the positive y-axis direction, as illustrated in the right lowest panel of Figure 3d. This corresponds to a situation where the salt concentrations on the positive side of the y-axis are lower than those on the negative side. The turning angle $\\phi$ is reduced from its ideal oscillatory component to be a more negative value, allowing the model worm to turn faster than the ideal sinusoidal trajectory and thus reach higher salt concentrations with greater efficiency. As illustrated by the second panel from the bottom in Figure 3c, the most optimized network without the constraints also uses a similar regulatory mechanism of $\\phi$ to efficiently reach the peak of the salt gradient. To verify the applicability of the elucidated regulatory mechanism of $\\phi$ to other situations, the changes in $\\phi$ in response to step increases in $z_{ON}$ and $z_{OFF}$ that were delayed by half of the cycle were examined as a further representative case. This ensured that the regulatory mechanism was operating as intended (see Figure 3\u2014figure supplement 3). These observations demonstrate that the change in $\\phi$ relative to its ideal oscillatory component is properly regulated based on the direction of the sensory neuron sweeps at the time of receiving ON and OFF signals via the sensory neurons. The regulatory mechanism of $\\phi$ was found to be essentially identical to that reported in the previous studies (Chen et al., 2022; Izquierdo and Beer, 2013; Izquierdo and Lockery, 2010). It is remarkable that this regulatory mechanism derived via the optimization of the CI has been observed in the context of chemotaxis in Drosophila larvae chemotaxis (Wystrach et al., 2016) and phototaxis in zebrafish (Wolf et al., 2017). The principle of operation, in which the dependence of motor responses to sensory inputs on the phase of motor oscillation, therefore, may serve as a convergent solution for taxis and navigation across species.\n\n### Modifications in the basal glutamate release from the ASER have the potential to elicit bidirectional responses from the postsynaptic AIY\n\nThe neural networks generated by the evolutionary algorithm using the CI (Equation A17) as the fitness function exhibited klinotaxis, with the model worm turning to move toward higher salt concentrations. This salt preference behavior is consistent with the chemotaxis observed in well-fed individuals cultivated at a higher salt concentration than the current environmental concentrations (Ccult > Ctest). Conversely, experimental observations have shown that well-fed individuals that are cultivated at a lower salt concentration than the current environment (Ccult < Ctest) exhibit the opposite salt preference behavior (Kunitomo et al., 2013). However, the neural circuit mechanism underlying the reversal of preference behavior in klinotaxis remains unclear.\n\nThe reversal of chemotaxis, which depends on the cultivated environmental salt concentration, has been investigated in detail with respect to klinokinesis (Hiroki et al., 2022; Sato et al., 2021). The interneuron postsynaptic to the ASER, AIB, which is involved in the behavior of klinokinesis, exhibits the bidirectional responses to changes in salt concentration in the current environment, depending on the cultivated salt concentration (Sato et al., 2021). The bidirectional responses of the AIB are found to be attributed to a change in the basal level of glutamate neurotransmitter released from the ASER (Sato et al., 2021). Specifically, the differential sensitivities of the excitatory glutamate receptor GLR-1 and the inhibitory glutamate receptor AVR-14, which are expressed on the AIB, result in the bidirectional response of the postsynaptic AIB depending on the changes in the basal level of glutamate release from the ASER (Hiroki et al., 2022). The GLR-1 is a glutamate-gated cation channel, whereas the AVR-14 is a glutamate-gated chloride anion channel. In addition, the sensitivity of GLR-1 (EC50 5 mM) is several tens of times lower than that of the AVR-14 (EC50 0.2 mM) (Hiroki et al., 2022). Consequently, the synaptic transmission between the ASER and AIB is excitatory and inhibitory, respectively, when the basal level of glutamate release from the ASER is high and low. In addition, the biochemical mechanism of the change in the basal level of glutamate neurotransmitter released from the ASER was also elucidated. When the cultivated salt concentration exceeds the current environmental concentrations (Ccult > Ctest), the basal glutamate release from the ASER is enhanced by the phosphorylation of UNC-64/Syntaxin 1A at Ser65 through the protein kinase C (PKC-1) signaling pathway (Hiroki et al., 2022). Conversely, in the case of Ccult < Ctest, the basal glutamate release is decreased as a consequence of the reduced PKC-1 activity (Hiroki et al., 2022). The AIB and the neurons further downstream of the AIB show the salt concentration memory-dependent bidirectional responses that correlate with the reversal of the salt preference behavior in klinokinesis (pirouettes). These observations suggest that the reversal of salt preference behavior in klinokinesis is attributed to the synaptic plasticity, which varies from the excitatory to inhibitory synaptic connections between ASER and AIB.\n\nGiven those experimental findings, we propose a potential mechanism that may underlie the salt concentration memory-dependent reversal of preferential behavior in klinotaxis. At least two glutamate receptors, the inhibitory glutamate-gated chloride anion channel GLC-3 (Ohnishi et al., 2011) and the excitatory metabotropic glutamate receptor MGL-1 (Kang and Avery, 2009), have been demonstrated to be expressed in the AIY, the postsynaptic interneuron to the ASER. The EC50 for GLC-3 has been reported to be 1.9 mM (Horoszok et al., 2001), while the EC50 for MGL-1 is not available in the literature. On the other hand, the EC50 for the C. elegans homolog of MGL-1, MGL-2, has been reported to be 9 \u00b5M (Tharmalingam et al., 2012). The sensitivity of MGL-2 is ~200 times higher than that of GLC-3, suggesting that the sensitivity of MGL-1 may also be sufficiently higher than that of GLC-3. In the case of Ccult > Ctest, if the basal level of glutamate release from the ASER is nearly comparable to the level of EC50 for the GLC-3, the activity of MGL-1 is saturated so that the MGL-1 does not contribute to a change in the membrane potential of the AIY upon the depolarization of the ASER (for more details regarding the release of internal Ca2+ from the endoplasmic reticulum, see, e.g., the reference on a metabotropic acetylcholine receptor; Sumi and Harada, 2023). Thus, an inhibitory synaptic transmission between the ASER and the AIY results from the influx of Cl\u2212 into the cytosol of the AIY via the GLC-3 upon depolarization of the ASER due to a decrease in salt concentration. Conversely, in the case of Ccult < Ctest, when the basal level of glutamate release from the ASER is sufficiently lower than the level of EC50 for the GLC-3 but still nearly comparable to the level of EC50 for the MGL-1, the synaptic transmissions between the ASER and the AIY become excitatory as a result of the Ca2+ release from the endoplasmic reticulum, which is mediated by the activation of MGL-1 (Ashida et al., 2019; Shidara et al., 2013). A similar increase in Ca2+ in the AIY was also observed in a previous study on a thermotaxis in C. elegans (Ohnishi et al., 2011; Ohta and Kuhara, 2013), although the precise mechanism remains unclear. On the other hand, it is noteworthy that the biochemical mechanism proposed here does not contradict the ASER\u2013AIY inhibitory connections, as identified in the most optimized network with the constraints.\n\n### Synaptic plasticity between ASER and AIY results in the reversal of salt preference behavior in klinotaxis\n\nIn light of the above argument, we investigated the impact of the salt concentration memory-dependent synaptic plasticity between ASER and AIY on the salt preference behavior in klinotaxis. To this end, we used the most optimized network with the constraints, in which we varied the synaptic connections between ASER and AIY from inhibitory to excitatory. Figure 5a, b illustrates the network model with the inhibitory (equivalent to Figure 3b) and excitatory connections, respectively. The intermediate states between Figure 5a and b are illustrated in Figure 5\u2014figure supplement 1. Figure 5c shows the curving rates obtained from the most optimized network with the inhibitory (Figure 5a) and excitatory (Figure 5b) connections as a function of the normal gradient of salt concentration. For comparison, the curving rate obtained from the ninth intermediate connection (see #9 in Figure 5\u2014figure supplement 1), which is derived by introducing an increment of 1.5 in the synaptic weight $w_{ji}$ between ASER and AIY at each step, is also presented in Figure 5c (also shown as #9 in Figure 5\u2014figure supplement 2). Note that the most optimized model with the inhibitory connections (see Figure 5a, also shown as #0 in Figure 5\u2014figure supplement 1) is considered as an individual that is well fed and cultivated at a higher salt concentration than the current environment. The curving rate was varied from an increasing trend function with increasing the normal concentration gradient to a function with a decreasing trend (Figure 5c, see also Figure 5\u2014figure supplement 2) when the weight of the ASER\u2013AIY synaptic connection $w_{ji}$ was increased from a negative (inhibitory) to a positive (excitatory) value. These findings are consistent with the experimental observation shown in Figure 5d, indicating that the most optimized network with the constraints, of which only the inhibitory connections between ASER and AIY were replaced by excitatory connections (Figure 5b), can reproduce the salt preference behavior of a well-fed individual cultivated at a lower salt concentration than the current environment.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig5-v1.jpg)\n\n**Figure 5.:** In the most optimized neural circuit with the constraints, it was postulated that the synaptic connections between ASER and AIY would be altered from (a) inhibitory connections to (b) excitatory connections when the cultivated salt concentration was replaced from (a) a higher to (b) a lower concentration than the current environment. The figure shown in (a) is identical to Figure 3b and #0 of Figure 5\u2014figure supplement 1. (c) The curving rates obtained from the networks illustrated in (a) and (b) (corresponding to #0 and #15 in Figure 5\u2014figure supplements 1 and 2, respectively), are presented as a function of the normal gradient of salt concentration. In addition, the curving rate obtained from the neural circuit with an intermediate nature in the neural circuit between those shown in (a, b) (corresponding to #9 in Figure 5\u2014figure supplements 1 and 2) is also presented. (d) The curving rates as a function of the normal gradient of salt concentration, which were experimentally determined when the cultivated salt concentration was higher (black) and lower (red) than the current environment (Kunitomo et al., 2013). The case in which the cultivated salt concentration was close to the current environmental concentration (50 mM) is also shown in green. (e) The analysis presented here is identical to Figure 3d, except that the ASER-AIY inhibitory connections in the most optimized model with the constraints have been replaced with excitatory connections as illustrated in b.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The weight of the ASER\u2013AIY synaptic connection, $w_{ji}$, in the most optimized network with the constraints is increased from a negative value (inhibitory connection) to a positive value (excitatory connection) by introducing an increment of 1.5 to $w_{ji}$ at each step.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** As the weight of the ASER\u2013AIY synaptic connection $w_{ji}$ is increased from negative (inhibitory connection) to positive (excitatory connection) in the most optimized network with the constraints by introducing an increment of 1.5 to $w_{ji}$ at each step, the curving rate is varied from an increasing function with an increasing normal gradient of salt concentration to a function that shows a decreasing trend.The curving rate shown in the #0, #9, and #15 is also shown as that for the inhibitory, intermediate, and excitatory connections, respectively, in Figure 5c.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The changes in the turning angles $\\phi$ in response to step changes in the salt concentration of positive and negative at the timing half a cycle later than those shown in Figure 5e.The changes in $\\phi$ in response to step increases in $z_{ON}$ and $z_{OFF}$ at the timing of half a cycle later ensured that the regulation mechanism of $\\phi$ discussed in the text (Figure 5e) was maintained.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (a) For purposes of comparison, the same trajectories depicted in Figure 2b are presented, again. (b) The trajectories given by the network depicted in Figure 5b, wherein the inhibitory connections between the ASER and AIY in the most optimized model with the constraints have been substituted with excitatory connections. The majority of the trajectories exhibited a directionality that was opposite to the peak of the salt concentration gradient. However, a subset showed a trajectory where the worm proceeded toward the peak of the gradient and passed it without any discernible response.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** For purposes of reference, those shown in Figure 5a, b are presented again in (a) and (b), respectively. (c) The neurotransmitter release $z_{i}$ in response to step changes in the salt concentration of positive (blue) and negative (red) for the most optimized circuit with the constraints shown in (a), is shown together with the signal transmissions through the chemical synaptic connections and electrical gap junctions. (d) The same as (c) is shown, except that the inhibitory connections between the ASER and AIY are replaced with the excitatory connections, as shown in (b). The $z_{i}$ shown in (c) and (d) are the same as those shown in Figures 3d and 5e, respectively. (e, f) The membrane potentials $y_{i}$ resulting in $z_{i}$, as illustrated in (c) and (d), are shown in (e) and (d), respectively. In (c-f), the blue (red) arrow and the blue (red) line with an ending in a filled circle indicate the excitatory and inhibitory synaptic connections, respectively, in response to step changes in the salt concentration of positive (negative). The blue (red) bidirectional arrow indicates the transmission via gap junctions, in response to positive (negative) step changes in salt concentration.\n\nA similar analysis to that displayed in Figure 3d is presented in Figure 5e, with the exception that the inhibitory connections between ASER and AIY have been replaced by the excitatory connections as illustrated in Figure 5b. Note that the changes in $z_{i}$ and $\\phi$ in response to step changes in $z_{ON}$ (depicted in blue) observed in the neurons further downstream of the ASEL are fully identical to those illustrated in Figure 3d, as the synaptic connections between ASEL and AIY remain unaltered. The direction of changes in $z_{i}$ and $\\phi$ in response to step changes in $z_{OFF}$, as indicated in red, accords with that of $z_{i}$ and $\\phi$ in response to step changes in $z_{ON}$, as shown in blue (Figure 5e). This observation indicates that even when either $z_{OFF}$ or $z_{ON}$ increases during a head sweep, the $\\phi$ is varied from its ideal oscillatory component to zero. This causes the model worm diverging from the ideal sinusoidal trajectory and gradually turning in the direction of the head sweep that occurred during the ON or OFF signal. More specifically, the model worm gradually turns in the direction of either the lower or higher side of the salt concentration upon receiving the OFF or ON signal, respectively (see both the first and second panels from the bottom in Figure 5, Figure 5\u2014figure supplement 3). Nevertheless, as evidenced by the curving rate in Figure 5c, the model worm clearly shows a preference for lower salt concentrations in klinotaxis. Therefore, the behavior of turning to lower salt concentrations upon increasing $z_{OFF}$ should play a more decisive role in the reversal of the salt preference behavior than the behavior of turning toward higher salt concentrations upon increasing $z_{ON}$. Indeed, as illustrated in Figure 5\u2014figure supplement 4b, the majority of trajectories yielded by the neural circuit shown in Figure 5b demonstrated that the worm model turned to move in the opposite direction of the peak of the salt concentration gradient (see also Video 2). However, a subset exhibited a slight curve toward the gradient peak, which then proceeded straight and passed without any discernible response (Figure 5\u2014figure supplement 4b and Video 2). These behaviors can be interpreted in terms of the changes in the turning angle \u03c6 in response to step increases in $z_{ON}$ and $z_{OFF}$ (Figure 5, Figure 5\u2014figure supplement 3). In the case of step increases in $z_{OFF}$ as illustrated in the second right panel from the bottom in Figure 5e, the turning angle \u03c6 is increased from its ideal oscillatory component to a value close to zero, causing the model worm to deviate from the ideal sinusoidal trajectory and gradually turn toward lower salt concentrations. On the other hand, in the case of step increases in $z_{ON}$ as illustrated in the second left panel from the bottom in Figure 5e, the turning angle \u03c6 is again increased from its ideal oscillatory component to a value close to zero, causing the model worm to deviate from the ideal sinusoidal trajectory and gradually turn toward higher salt concentrations. The behaviors that are consistent with these analyses are observed in the trajectory illustrated in Figure 5\u2014figure supplement 4b. For a detailed analysis of signal transmission through chemical synaptic connections and electrical gap junctions related to these behaviors, Figure 5\u2014figure supplement 5 is presented. In summary, the reversal of salt preference behavior in klinotaxis of a well-fed individual cultivated at a lower salt concentration than the current concentrations can be primarily attributed to the change in synaptic connections between ASER and AIY from inhibitory to excitatory connections.\n\n![Video 2.](https://cdn.elifesciences.org/articles/104456/elife-104456-video2.mp4.jpg)\n\n### Inhibition of SMB activity results in a dispersal behavior that favors starving individuals in their search food\n\nFor C. elegans, finding food and dwelling at the food source are essential survival strategies. In the absence of food, the release of dopamine from PDE neurons is suppressed, the AVK interneurons, which make inhibitory connections with the PDE, in turn results in the release of FLP-1 neuropeptides (Oranth et al., 2018). As a result, the FLP-1 neuropeptides inhibit SMB motor neurons (Oranth et al., 2018), which, in conjunction with the reversal of starvation-induced klinokinesis (Kunitomo et al., 2013), may result in the dispersal behavior observed in starved individuals. The dispersal behavior of starved individuals, which is necessary for searching distant food, has been reported to manifest as alterations in salt preference behavior in klinotaxis as well as klinokinesis (Kunitomo et al., 2013). In particular, the salt concentration memory-dependent preference behavior observed in well-fed individuals (see Figure 5d) is markedly suppressed in starved individuals, as illustrated in Figure 6a (Kunitomo et al., 2013). This implies that in order to efficiently reach distant food sources, the worm suppresses turning and tends to move in a straight line. Given the above neurophysiological findings, we investigated the impact of inhibiting SMB activity on the salt preference behavior in klinotaxis. To this end, we employed the neural circuits in which the ASER\u2013AIY transmission was inhibitory, excitatory, and intermediate between the two, that is, the three circuits that yielded the results shown in Figure 5c. Figure 6b shows that the inhibition of the SMB activity by reducing the strength of synaptic connections between AIZ and SMB resulted in the suppression of salt preference behavior, which is consistent with the experimental observations presented in Figure 6a. Moreover, the inhibition of SMB function through the reduction of bias terms in the SMB motor neurons resulted in the suppression of the salt preference behavior (see Figure 6\u2014figure supplement 1b), which is a comparable result to that shown in Figure 6b and is also consistent with the experimental data presented in Figure 6a or Figure 6\u2014figure supplement 1a; Kunitomo et al., 2013. A comparison of Figure 6c, d (or Figure 6\u2014figure supplement 1c, d) with Figure 5\u2014figure supplement 4a, b, respectively, showed that the neural circuit models, in which the SMB functions were suppressed, yielded weak spreading behaviors (see also Video 3).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig6-v1.jpg)\n\n**Figure 6.:** (a) The curving rates as a function of the normal gradient of salt concentration that were experimentally observed in starved individuals cultivated at a salt concentration higher, comparable, and lower than the current environment (Kunitomo et al., 2013). (b) The curving rates as a function of the normal gradient of salt concentration that were obtained from the neural circuits that yielded the results in Figure 5c, except that here the synaptic connections between AIZ and SMB and the self-connections of SMB were multiplied by 0.9 to inhibit the SMB activity. (c) The trajectories of the model worm obtained by inhibiting the SMB activity in the most optimized network, where the ASER\u2013AIY connections remained inhibitory, as shown in Figure 5a (or #0 of Figure 5\u2014figure supplement 1). (d) The trajectories of the model worm obtained by inhibiting the SMB activity in the most optimized network, where the ASER\u2013AIY connections were altered to be excitatory, as shown in Figure 5b (or #15 of Figure 5\u2014figure supplement 1).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The inhibition of SMB activity by reducing the bias term $\\theta_{SMB}$ has the effect of suppressing the salt memory-dependent preference behavior observed in klinotaxis, similar to that illustrated in Figure 6b.(a) For purposes of comparison, the same experimental data on the curving rate as presented in Figure 6a is provided here again. The figures shown in (b\u2013d) are the same as shown in Figure 6b\u2013d, respectively, except that in the most optimized models depicted in Figure 5c, the bias terms for the SMB motor neurons were reduced, rather than the synaptic connections between AIZ and SMB being weakened as was done in Figure 6.\n\n![Video 3.](https://cdn.elifesciences.org/articles/104456/elife-104456-video3.mp4.jpg)\n\n## Discussion\n\nIn the present study, the neuroanatomical minimal network model was revisited to optimize the electrophysiological parameters using the evolutionary algorithm, where it is important to note that the AIY\u2013AIZ connections were constrained to be inhibitory, as elucidated by experiments (Li et al., 2014). The most optimized network, constrained by the abovementioned conditions, successfully reproduced the synchronization of the ASER and AIZ activation patterns observed experimentally in well-fed individuals cultivated at a higher salt concentration than the current environment (Matsumoto et al., 2024). The inhibitory synaptic connections between ASER and AIY were found to be essential for the synchronization of ASER and AIZ activation patterns, as demonstrated in the most optimized network. The mechanism of the ASER\u2013AIY inhibitory connections can be interpreted based on the expression of two glutamate receptors on the AIY, the postsynaptic interneuron of the ASER (Ohnishi et al., 2011): the inhibitory glutamate-gated chloride anion channel GLC-3 and the excitatory metabotropic glutamate receptor MGL-1 (Kang and Avery, 2009). Based on the EC50 values for GLC-3 (Horoszok et al., 2001) and MGL-2 (Tharmalingam et al., 2012), the C. elegans homolog of MGL-1, the sensitivity of MGL-1 to glutamate is expected to be sufficiently higher than that of GLC-3. Given these facts, it can be proposed that if the basal level of glutamate release from the ASER is close to the EC50 for GLC-3, the influx of Cl\u2212 into the cytosol of the AIY via the activation of the GLC-3 upon glutamate release from the ASER due to a decrease in the salt concentration will result in the inhibitory synaptic transmission between the ASER and the AIY. It is remarkable that the inhibitory connections derived from these biochemical arguments are consistent with the abovementioned neurophysiological conclusion, which has been demonstrated by the most optimized network with the constraints. The argument presented here is also supported by evidence that a similar inhibitory synaptic transmission to the AIY due to the influx of Cl\u2212 via the GLC-3, which is activated by glutamate signals from the AFD sensory neurons, has been demonstrated in the context of thermotaxis in C. elegans (Ohnishi et al., 2011).\n\nIn the previous studies on the salt concentration memory-dependent bidirectional regulation of klinokinesis (i.e., pirouettes), it was demonstrated that the basal level of glutamate release from the ASER either increased or decreased when well-fed individuals were cultivated at either a higher or lower salt concentration than the current environment, respectively (Hiroki et al., 2022; Sato et al., 2021). In light of the experimental findings on klinokinesis and the differential sensitivities of the inhibitory GLC-3 and excitatory MGL-1 that are expressed on the postsynaptic AIY interneurons of the ASER involved in klinotaxis, we proposed a hypothesized mechanism of the salt concentration memory-dependent bidirectional regulation of the preferential behaviors observed in klinotaxis. Specifically, when the well-fed individuals are cultivated at a lower salt concentration than the current environment, and the basal glutamate release from the ASER becomes sufficiently lower than the EC50 for GLC-3 but still nearly comparable to the EC50 for MGL-1, the ASER\u2013AIY inhibitory connections are thought to be altered to become excitatory. This is due to the Ca2+ release from the endoplasmic reticulum into the cytosol, which is mediated by the activation of MGL-1. The most optimized network, in which the ASER\u2013AIY inhibitory connections were replaced with excitatory ones, successfully reproduced the reversal of salt preference behavior in klinotaxis that had been previously observed (Kunitomo et al., 2013; see Figure 5c, d). These findings indicate that the salt concentration memory is encoded as a basal level of glutamate release from the ASER. This memory is then decoded by the difference in the sensitivity of the glutamate-gated inhibitory channel GLC-3 (Ohnishi et al., 2011) and the excitatory metabotropic glutamate receptor MGL-1 (Kang and Avery, 2009), which are expressed on the AIY. The sensory input from the ASER regarding a reduction in salt concentration is transmitted to the AIY as either an inhibitory or an excitatory signal, depending on the decoded memory. The signaling from the ASER to the AIY is therefore regulated by synaptic plasticity arising from alterations in the basal glutamate release from the ASER. This regulatory process enables the reproduction of salt concentration memory-dependent reversal of preference behavior in klinotaxis, despite the remaining neurons further downstream of the ASER not undergoing alterations and simply functioning as a modular circuit to transmit the received signals to the motor systems. Consequently, the sensorimotor circuit allows a simple and efficient bidirectional regulation of salt preference behavior in klinotaxis.\n\nFor individuals experiencing starvation, the expansion of dispersal behaviors is a crucial survival strategy to acquire and dwell distant food sources. Indeed, such behavioral changes have also been observed in the context of salt preference behaviors in klinotaxis (Kunitomo et al., 2013). It is therefore necessary to ascertain how the worm\u2019s neural network regulates the behavioral strategies in the presence or absence of food. In the absence of food, the PDE neurons do not release dopamine, which causes AVK interneurons that form inhibitory connections with the PDE to release FLP-1 neuropeptides that inhibit SMB motor neurons. This has been postulated to contribute to the dispersal behavior observed in starved individuals (Oranth et al., 2018). Therefore, the impact of inhibiting SMB activity on salt preference behavior in klinotaxis was investigated. The most optimized network, in which the strength of the synaptic connections between AIZ and SMB was reduced to suppress SMB activity, while the remainder remained unchanged, showed the suppression of salt preference behavior in klinotaxis (Figure 6b), as observed in the experiments (Kunitomo et al., 2013; Figure 6a). These findings indicate that the worms are capable of efficiently switching between dwelling and dispersing behaviors by activating or inhibiting only the most downstream motor neurons in the sensorimotor circuit of klinotaxis depending on the presence or absence of food.\n\nThe principle of operation, in which the dependence of motor responses to sensory inputs on the phase of motor oscillation, appears to be a convergent solution for taxis and navigation across species. In fact, analogous mechanisms have been postulated in the context of chemotaxis in Drosophila larvae chemotaxis (Wystrach et al., 2016) and phototaxis in zebrafish (Wolf et al., 2017). Consequently, the synaptic reversal mechanism highlighted in this study offers the framework for understanding how the behaviors that are adaptive to the environment are embedded within sensorimotor systems and how experience shapes these neural circuits across species.\n\n### Limitations of the study\n\nThe modeling of ASE sensory neurons does not include either the all-or-none depolarization characteristic of the ASEL or the hyperpolarization characteristic of the ASER in response to step increases in salt concentration (Suzuki et al., 2008). As a result, a comprehensive understanding of the specific roles played by each the ASEL and ASER could not be achieved. In the present study, the oscillator components of the SMB are not intrinsically generated by an oscillator circuit but are instead externally imposed via $z_{i}^{OSC}$. Furthermore, the complex and context-dependent responses of ASER (Luo et al., 2014) were not taken into consideration. It should be acknowledged as a limitation of this study that these omitted factors may interact with circuit dynamics in ways that are not captured by the current simplified implementation. The available data on synaptic transmission between the AIZ and the SMB, as well as the available information on the activation pattern of the SMB in response to changes in salt concentration, were insufficient to perform the evolutionary search of parameters involving the SMB with the application of appropriate constraints. Consequently, a comprehensive investigation of the role of the SMB in the regulation of the turning direction was hindered by these limitations.\n\n## Methods\n\nIn the present study, a neuroanatomical minimal network model developed by Izquierdo and Beer, 2013 was employed as the basis for the modeling. The neuroanatomical minimal circuit was derived from the connectome by applying two constraints (Izquierdo and Beer, 2013). The first constraint is to minimize the path length between ASE and SMB cells, resulting in a minimum number of three. Since two neurons can be connected by one or more chemical synapses or electrical connections, the total number of neuronal connections was defined as the number of contacts. The second step is to eliminate the interneurons that are connected by neuronal connections other than those with the maximum number of contacts (Oshio, 2003). It is noteworthy that the two interneurons, AIY (Kocabas et al., 2012) and AIZ (Iino and Yoshida, 2009), which have been experimentally shown to be involved in klinotaxis, are included in the resulting minimal network. The primary difference between our model and the neuroanatomical minimal network model is that our modeling constrains the synaptic transmissions between AIY and AIZ to be inhibitory, as experimentally demonstrated (Li et al., 2014). A review of the model and computational details is provided in the following section.\n\n### Modeling of sensory neuron signaling\n\nSynaptic transmissions from the chemosensory neurons to interneurons were modeled for the ON (ASEL) and OFF (ASER) sensory neurons, respectively, as an instantaneous function of a coarse-grained time derivative of the recent history of NaCl concentration, $z$ (Izquierdo and Beer, 2013):\n\n$$\nz\u2261\\frac{100}{N}\\int_{t\u2212N}^{t}dtC(t)\u2212\\frac{100}{M}\\int_{t\u2212(N+M)}^{t\u2212N}dtC(t),\n$$\n\n\n\n$$\nz_{ON}=\u00a0{z(z>0)0(otherwise),\n$$\n\n\n\n$$\nz_{OFF}=\u00a0{\u00a0\u2212z(z<0)0(otherwise),\n$$\n\nwhere $c(t)$ is the salt concentration at time t, and N and M are the durations of the first and second half intervals, respectively, over which the concentration is averaged. The factor of 100 in Equation A1 was introduced to convert z to values that were more readily amenable to analysis. The ASEL is the ON cell, where the strength of neurotransmitter release $z_{ON}$ increases in response to an increase in $c(t)$. Conversely, the ASER is the OFF cell, with $z_{OFF}$ increasing in response to a decrease in $c(t)$ (Suzuki et al., 2008; see Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig7-v1.jpg)\n\n### Modeling of interneurons\n\nThe modeling of interneurons used current-based synaptic transmissions as follows Izquierdo and Beer, 2013:\n\n$$\n\\tau_{i}\\frac{dy_{i}}{dt}=\u2212y_{i}+\\sumjw_{ji}z_{j}+\\sumkg_{ki}(y_{k}\u2212y_{i})+I_{i}^{IN},\u00a0\u00a0\u00a0(g_{ki}>0),\n$$\n\nwhere $y_{i}$ represents the membrane potential relative to the resting potential of zero, $\\tau_{i}$ is the time constant, the first sum represents the input current from chemical synapses, and the second sum represents the input current from electrical synapses. In the first sum, the weight $w_{ji}$ represents the strength of the synaptic connection, and $z_{j}$ is considered as the strength of neurotransmitter release, as represented by\n\n$$\nz_{i}=\\sigma(y_{i}+\\theta_{i}),\n$$\n\nwith the following sigmoid function:\n\n$$\n\\sigma(x)=1/(1+\u00a0e^{\u2212x})\n$$\n\n$\\theta_{i}$ in Equation A5 represents the bias term that shifts the range of sensitivity associated with neurotransmitter release. In the second sum of Equation A3, $g_{ki}$ represents the conductance of the electrical gap junction, with $g_{ki}>0$. The fourth term $I_{i}^{IN}$ in Equation A3 represents the input current from the chemosensory neurons. This is given by\n\n$$\nI_{i}^{IN}={w_{i}^{ON}z_{ON}+w_{i}^{OFF}z_{OFF}(i=AIYLorAIYR)0(otherwise),\n$$\n\nwhere $w_{i}^{ON}$ and $w_{i}^{OFF}$ are the strengths of the synaptic connections between interneuron i and the ASEL and ASER sensory neurons, respectively.\n\n### Modeling of neck motor neurons\n\nNeck motor neurons were modeled in a manner analogous to that employed for interneurons, except for the inclusion of self-connections (Izquierdo and Beer, 2013):\n\n$$\n\\tau_{i}\\frac{dy_{i}}{dt}=\u2212y_{i}+\\sumjw_{ji}z_{j}+I_{i}^{MN},\n$$\n\nwhere the second term represents the input current from chemical synapses, as described in Equation A5. The third term represents a constitutive input current from an oscillatory component,\n\n$$\nI_{i}^{MN}=w_{OSC}z_{i}^{OSC},\n$$\n\nwhere $w_{OSC}$ represents the strength of the connection with the oscillatory component and $z_{i}^{OSC}$ represents the strength of neurotransmitter release from the oscillatory component. Since the dorsal motor and ventral motor neurons receive a constitutive out-of-phase oscillatory input from the motor systems, respectively, it was postulated that modeling $z_{i}^{OSC}$ would be achieved by using a sinusoidal function for the dorsal and ventral motor neurons, respectively:\n\n$$\nz_{SMBDL}^{OSC}=z_{SMBDR}^{OSC}=sin(2\\pit/T),\n$$\n\n\n\n$$\nz_{SMBVL}^{OSC}=z_{SMBVR}^{OSC}=sin(2\\pit/T+\\pi),\n$$\n\nwhere $T$ represents the duration of a one cycle of sinusoidal motion on agar, which was estimated to be 4.2 s (Ferr\u00e9e and Lockery, 1999).\n\nTo reduce the total number of parameters included in the model, in accordance with the neuroanatomical minimal network model (Izquierdo and Beer, 2013), the following constraints were introduced with respect to the second term on the right-hand side in Equation A8 for the dorsal and ventral motor neurons on the left and right sides, respectively:\n\n$$\nw_{AIZL,SMBDL}=w_{AIZL,SMBVL},\\theta_{SMBDL}=\\theta_{SMBVL},\n$$\n\n\n\n$$\nw_{AIZR,SMBDR}=w_{AIZR,SMBVR},\\theta_{SMBDR}=\\theta_{SMBVR},\n$$\n\nThese parameters are constrained to be symmetric between the dorsal and ventral motor neurons on the left and right sides, respectively. As discussed in the previous studies (Izquierdo and Beer, 2013; Izquierdo and Lockery, 2010), a neuron is considered unistable if a self-connection is presented and the weight $w_{i}^{self}$ is less than 4. This allows the motor neuron with such a self-connection $(w_{i}^{self}<4)$ to respond smoothly to different changes in salt concentration. Similarly, the above symmetry constraints were also applied to the weight $w_{i}^{self}$ for the self-connections:\n\n$$\nw_{SMBDL}^{self}=w_{SMBVL}^{self}\n$$\n\n\n\n$$\nw_{SMBDR}^{self}=w_{SMBVR}^{self},\n$$\n\n### Worm model\n\nThe worm model was constructed using the neuroanatomical minimal network model as the basis for modeling worm locomotion (Izquierdo and Beer, 2013). The locomotion of the worm was modeled as the movement of a single point (rx, ry) at a constant velocity v (Figure 8a). The angle of the direction of motion \u03bc relative to the x-axis was measured with counterclockwise being positive (Figure 8b). The model involves two assumptions regarding the locomotion mechanism. The first is that the length of the neck muscles is proportional to the strength of neurotransmitter release from the neck motor neurons (Figure 8a). The second is that the turning angle $\\phi$ (Figure 8b) is proportional to the difference in the length of the neck muscles. According to these assumptions, the equation of motion governing the angle of movement direction \u03bc is given by\n\n$$\n\\phi=\u00a0\\frac{d\\mu}{dt}=\u00a0w_{NMJ}(\\sumi_{D}z_{i_{D}}\u2212\\sumi_{V}z_{i_{V}}),\n$$\n\n\n\n$$\nz_{i_{D}}=\\sigma(y_{i_{D}}+\u00a0\\theta_{i_{D}})\n$$\n\n\n\n$$\nz_{i_{V}}=\\sigma(y_{i_{V}}+\u00a0\\theta_{i_{V}})\n$$\n\n![Figure 8.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig8-v1.jpg)\n\n**Figure 8.:** (a) The body of the worm, consisting only of the idealized head and neck regions of C. elegans. The worm model was represented as a point (rx, ry), located at the center of the boundary between the head and neck regions of the model. The \u03bc represents the angle between the velocity vector v and the positive x-axis. In this context, a counterclockwise angle is considered positive. The dorsal (gray) and ventral (black) motor neuron pairs receive an out-of-phase constitutive oscillatory input from the motor systems, respectively. (b) Changes in the direction of locomotion. In the interval between time steps i \u22121 and i, the orientation of the velocity vector undergoes a change of the turning angle \u03c6i. The gray arc represents the path of the worm.\n\nThe summations in Equation A13a are performed over the indices $i_{D}\\in{SMBDL,SMBDR}$ and $i_{V}\\inSMBVL, SMBVR$, respectively. The $w_{NMJ}$ represents the strength of the connection from motor neurons to muscles. In Equation 13b, Equation 13c, $y_{i_{D}}$ and $y_{i_{V}}$ represent the membrane potential of the dorsal and ventral neck motor neurons, respectively, and $\\theta_{i_{D}}$ and $\\theta_{i_{V}}$ represent the bias terms that shift the sensitivity of the neurotransmitter release in the dorsal and ventral neck motor neurons, respectively. $z_{i_{D}}$ and $z_{i_{V}}$ represent the strength of neurotransmitter release from the dorsal and ventral neck motor neurons, respectively.\n\nThe position (rx, ry) of the model worm is updated by the following equation:\n\n$$\nv\u2192t=\\frac{dr_{x}}{dt},\\frac{dr_{y}}{dt}=(vcos\u2061\\mut,vsin\u2061(\\mu(t))),\n$$\n\nwhere $v$ is a constant velocity of 0.022 cm/s (Ferr\u00e9e and Lockery, 1999). The present model does not explicitly consider the kinematic mechanism that is responsible for generating the forward thrust due to the oscillatory motion of the worm. However, it is a matter of experimental observation that the locomotion of real worms never occurs without the thrust generated by undulations (Gray and Lissmann, 1964). In order to impose this constraint on the motion of the worm model, the fitness of the individuals that do not exhibit undulations was reduced, thus excluding such individuals from the search performed by the evolutionary algorithm (see also Evaluation of fitness).\n\n### Numerical integration\n\nEquations A4, A8, A13a, and A14 were solved using the Euler integration with a time step of 0.01 s for the evolution of the network parameters and the evaluation of the chemotaxis behavior for evolved individuals. On the other hand, a time step of 0.001 s was used in the simulations that displayed the trajectories.\n\n### Modeling of salt concentration\n\nThe salt concentrations observed during a typical salt chemotaxis assay have a Gaussian distribution (Ward, 1973). However, in the context of evolutionary algorithms, however, Gaussian gradients are problematic because the local steepness depends on the distance from the gradient peak. To circumvent this problem, conical gradients with randomly varying steepness were implemented in each simulation throughout the evolutionary process. Salt concentrations are proportional to the Euclidean distance from the gradient peak $(x_{peak},y_{peak})$,\n\n$$\nc(t)=\\alpha\\sqrt{(r_{x}(t)\u2212x_{peak})^{2}+(r_{y}(t)\u2212y_{peak})^{2}},(\\alpha<0)\n$$\n\nwhere $\\alpha$ is the slope of the gradient. Conversely, a Gaussian distribution was used to evaluate the chemotaxis behavior of most optimized individuals:\n\n$$\nC(t)=\u00a0C_{0}e^{\u2212\\frac{(r_{x}(t)\u2212x_{peak})^{2}+(r_{y}(t)\u00a0\u2212\u00a0y_{peak})^{2}}{2\\lambda^{2}}},\n$$\n\nwhere  $C_{0}$ = 1.0 (mM) and  $\\lambda$ = 1.61 (cm) were employed (Ferr\u00e9e and Lockery, 1999; Ward, 1973).\n\n### Evolutionary algorithm\n\nA genetic algorithm (Back, 1996) was used to evolve the following parameters of the model (Izquierdo and Beer, 2013) in the ranges given in brackets: $w_{NMJ}$ in Equation A13a [1, 3]; all the biases $\\theta$ [\u221215, 15]; the weights $w_{ji}$, $w_{i}^{ON}$ in Equation A7, $w_{i}^{OFF}$ in Equation A7, and $w_{i}^{self}$ in Equation A12a [\u221215, 15]; $w_{OSC}$ in Equation A9 [0, 15], $N$ and $M$ in Equation A1 [0.1, 4.2]; the weight of gap junction $g_{ki}$ in Equation A4 [0, 2.5] (Olivares et al., 2018). In the present study, the genetic algorithm was executed 100 times to obtain 100 optimal networks. The following is a description of a single iteration of the genetic algorithm:\n\nThe 100 iterations of this genetic algorithm were performed to generate the ensemble of the 100 best performing individuals. The generated top 100 individuals were ranked based on the CI value.\n\n### Evaluation of fitness\n\nThe fitness of the individuals generated during the evolutionary algorithm was evaluated by performing the simulations with the chemotaxis assays. At the beginning of each simulation, the model worm was placed at the origin $(x,y)=(0.0,0.0)$ with an initial orientation randomized over the range $[0.0,2\\pi]$ and motor neuron activations were randomized over the range $[0,1]$. The gradient steepness $\\alpha$ in Equation A15 was randomized over the range $[\u22120.38,\u22120.01]$ (Izquierdo and Beer, 2013). Fitness was quantified as the CI, defined as the time average of the distance to the peak of the gradient at $(x_{peak},y_{peak})=(4.5,0.0)$,\n\n$$\nCI=1\u00a0\u2212\u00a0\\frac{1}{T_{sim}}\\int_{0}^{T_{sim}}\\frac{h(t)}{h(0)}dt,\n$$\n\nwhere $h(t)$ is the Euclidean distance from the peak,\n\n$$\nh(t)=\u00a0\\sqrt{(r_{x}(t)\u2212x_{peak})^{2}+(r_{y}(t)\u00a0\u2212\u00a0y_{peak})^{2}}\n$$\n\n$h0$ is the initial distance of the worm from the salt peak, namely, 4.5 cm, and $T_{sim}$ is the total simulated assay time. $T_{sim}$ was set to 500 s in the evolutionary algorithm and 1000 s in the evaluation of the CI value for the individuals obtained. For simplicity, negative CI values were set to zero. The fitness of an individual generated during the evolutionary algorithm was determined as the averaged CI values over 50 trials, in which the gradient steepness $\\alpha$ of the salt concentration in Equation A15 was randomly chosen in the range of [\u22120.38,\u20130.01] and the orientation of the worm at the starting point (0.0, 0.0) was randomized (Izquierdo and Beer, 2013). To ensure the survival of individuals moving in an undulating manner, the CI value was reduced when sinusoidal movements were not present. Specifically, the sign of the turning angle $\\phi$ was checked at 1/4 and 3/4 cycles within each period, and if they had the same sign, the CI value was reduced by 0.008 each time as a penalty.\n\n### Analysis of the salt preference behavior in klinotaxis\n\nIn the calculation of the quantities that were used to characterize the klinotaxis behavior, that is, curving rate, bearing, and salt concentration gradients, the coordinates of the trajectory for the first three cycles of the worm\u2019s sinusoidal locomotion were not used because the time derivative of the NaCl concentration history in Equation A1 could not be precisely determined around the starting point, thus affecting the locomotion. The ensemble average of these quantities was determined by performing 100,000 sets of the simulation with a simulation time of $T_{sim}=200s$. The Gaussian distribution of the salt concentration given by Equation A16 was used in the analysis of the salt preference behavior in klinotaxis.\n\n### Curving rate\n\nCurving rate is also called turning bias (Izquierdo and Beer, 2013). The coordinates at three points over six cycles, namely, zero, $2n\\pi$, and $4n\\pi$, where $n$ is three, were used to calculate the vectors from the start point to the midpoint $r2n\\pi$ (see Figure 9) and from the midpoint to the end point $r(4n\\pi)$. The turning angle over the six cycles $\\phi4n\\pi$ was calculated using $r2n\\pi$ and $r4n\\pi$, with counterclockwise being positive (see also Figure 8b, although the time interval between the vectors is different). The locomotion distance $d4n\\pi$ was estimated from the sum of $r2n\\pi$ and $r4n\\pi$. The curving rate was determined by $\\phi(4n\\pi)/d(4n\\pi)$.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/104456/elife-104456-fig9-v1.jpg)\n\n**Figure 9.:** Orientation vectors used in the analysis of sinusoidal locomotion. Undulations occur in the x\u2013y plane. The white circles represent the start and end points of n-cycles of locomotion, where n was set to three throughout the analysis of the worm\u2019s locomotion characteristics.\n\n### Bearing\n\nThe bearing was determined as the angular difference between the vector of translational movement defined by $r2n\\pi$ introduced above and the vector from the current position to the peak of the salt concentration gradient with counterclockwise being positive (see Figure 9).\n\n### Normal and translational salt concentration gradient\n\nThe normal gradient of salt concentration was calculated from the difference in salt concentration between the position shifted by 0.001 cm toward the left perpendicular to the direction of the worm movement and the current position. The translational gradient of salt concentration was calculated from the difference in salt concentration between the position shifted by 0.001 cm toward the direction of the worm movement and the current position.\n\n### Code availability\n\nFull details of the methods to perform the simulations and the input data have been provided in the main text. The newly developed codes for the simulations and data analysis have been made publicly available on GitHub (copy archived at Hironaka and Sumi, 2025).\n",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Albert Cardona, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104456.3.sa0](https://doi.org/10.7554/eLife.104456.3.sa0)\n\nWith a computational analysis of a neuroanatomical network model in C. elegans, this valuable work investigates the synaptic mechanism for memory-dependent klinotaxis, i.e., salt concentration chemotaxis. By incorporating experimental data altering the ASER neuron's basal glutamate release into their model, the authors demonstrate the possibility of a transition between excitatory and inhibitory signaling at the ASER-AIY synapse, depending on environmental and cultivated salt concentrations. These solid findings offer a proposal for how synaptic plasticity plays a role in sensorimotor navigation, and will be of interest to worm biologists and theoretical neuroscientists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104456.3.sa1](https://doi.org/10.7554/eLife.104456.3.sa1)\n\nSummary:\n\nThis study explores how a simple sensorimotor circuit in the nematode C. elegans enables it to navigate salt gradients based on past experiences. Using computational simulations and previously described neural connections, the study demonstrates how a single neuron, ASER, can change its signaling behavior in response to different salt conditions, with which the worm is able to \"remember\" prior environments and adjust its navigation toward \"preferred\" salinity accordingly.\n\nStrengths:\n\nThe key novelty and strength of this paper is the explicit demonstration of computational neurobehavioral modeling and evolutionary algorithms to elucidate the synaptic plasticity in a minimal neural circuit that is sufficient to replicate memory-based chemotaxis. In particular, with changes in ASER's glutamate release and sensitivity of downstream neurons, the ASER neuron adjusts its output to be either excitatory or inhibitory depending on ambient salt concentration, enabling the worm to navigate toward or away from salt gradients based on prior exposure to salt concentration.\n\nWeaknesses:\n\nWhile the model successfully replicates some behaviors observed in previous experiments, some key assumptions of the work still need to be verified by biological validation of further experiments.\n\nComments on revisions:\n\nThank you for the authors' response. The revision and their response have substantially addressed my concerns.\n",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6036792b-226d-48cb-b148-d1b0375bdee7",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C1",
+      "claim": "C. elegans has 302 neurons, all of which have been fully mapped on its connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans has 302 neurons, all of which have been fully mapped on its connectome (Cook et al., 2019; White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Cook et al., 2019; White et al., 1986) that documented the complete neural connectome of C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "9513016c-398e-49ec-a012-209fd0a168ba",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C2",
+      "claim": "C. elegans exhibits chemotaxis to sodium chloride, a phenomenon termed salt chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "The nematode Caenorhabditis elegans has been demonstrated to exhibit chemotaxis to sodium chloride, a phenomenon termed salt chemotaxis (Ward, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ward, 1973, which documented salt chemotaxis behavior in C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "d5f33673-e757-4c42-81db-3e1c192e1757",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C3",
+      "claim": "The amphid taste neurons ASE play a crucial role in sensing the concentration of NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of salt chemotaxis, the amphid taste neurons ASE play a crucial role in sensing the concentration of NaCl (Bargmann and Horvitz, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bargmann and Horvitz, 1991, which identified the role of ASE neurons in NaCl sensing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "6b9eec50-76e3-4a2f-82b7-45b6e440a682",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C4",
+      "claim": "ASE sensory neurons consist of two morphologically symmetric neurons on the left (ASEL) and the right (ASER).",
+      "claim_type": "EXPLICIT",
+      "source": "These sensory neurons, which consist of two morphologically symmetric neurons on the left (ASEL) and the right (ASER), are essential for the detection of alterations in the concentration of NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text describing the anatomical structure of ASE neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "2f09c1dd-4bba-45fb-a272-208a12b0d68c",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C5",
+      "claim": "ASER is depolarized by decreases in salt concentration, whereas ASEL responds to increases.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons exhibit a functional asymmetry in which the ASER is depolarized by decreases in salt concentration, whereas the ASEL responds to increases (Suzuki et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Suzuki et al., 2008, which characterized the functional asymmetry of ASEL and ASER neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "aeb2a4d4-16c9-46e9-8f65-b1b4d64189d4",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C6",
+      "claim": "Two distinct behavioral strategies direct C. elegans toward a favorable NaCl concentration during salt chemotaxis: klinokinesis and klinotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Two distinct behavioral strategies that direct C. elegans toward a favorable NaCl concentration during salt chemotaxis have been characterized by an analysis of the migratory behaviors exhibited by the organism (Iino and Yoshida, 2009; Pierce-Shimomura et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Iino and Yoshida, 2009 and Pierce-Shimomura et al., 1999, which characterized these behavioral strategies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "fa345b5a-5fad-43e8-99bf-e95120605f73",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C7",
+      "claim": "In klinokinesis, the frequency of redirecting turns is increased when the current direction of locomotion is determined to be unfavorable and decreased when it is determined to be favorable.",
+      "claim_type": "EXPLICIT",
+      "source": "In this strategy, the frequency of redirecting turns is increased when the current direction of locomotion is determined to be unfavorable in relation to the gradient of salt concentration and decreased when it is determined to be favorable (Kunitomo et al., 2013; Pierce-Shimomura et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kunitomo et al., 2013 and Pierce-Shimomura et al., 1999, which described klinokinesis behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "cf52a5a6-f33b-4b27-b9fe-563c38b63ccd",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C8",
+      "claim": "In klinotaxis, C. elegans exhibits a continuous turning behavior in a direction that is favorable based on the gradient of salt concentration perpendicular to the direction of locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In this behavioral strategy, C. elegans exhibits a continuous turning behavior in a direction that is favorable based on the gradient of salt concentration perpendicular to the direction of locomotion (Iino and Yoshida, 2009; Kunitomo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Iino and Yoshida, 2009 and Kunitomo et al., 2013, which described klinotaxis behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "56c9e651-a245-43f9-b441-7bf70c5caa4b",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C9",
+      "claim": "When well-fed individuals are cultivated at a higher salt concentration than the current environment (Ccult > Ctest), the preferred salt concentrations become higher than the current concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of food, if the previously cultivated salt concentration is higher than the current environmental concentrations (Ccult > Ctest), the preferred salt concentrations are demonstrated to become higher than the current concentrations (Kunitomo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kunitomo et al., 2013, which demonstrated salt concentration memory-dependent preference behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "47382bd8-0daf-4054-881b-e899a5cee2eb",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C10",
+      "claim": "When well-fed individuals are cultivated at a lower salt concentration than the current environment (Ccult < Ctest), the preferred salt concentrations become lower than the current ambient concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, if the previously cultivated salt concentration is lower than the current concentrations (Ccult < Ctest), the preferred salt concentrations are demonstrated to become lower than the current ambient concentrations (Kunitomo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kunitomo et al., 2013, which demonstrated salt concentration memory-dependent preference behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "87ac8d98-ee9d-4a8d-a765-3150e22ea737",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C11",
+      "claim": "The interneuron AIB, postsynaptic to ASER, exhibits a bidirectional response to changes in NaCl concentration dependent on the previously experienced NaCl concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The interneuron postsynaptic to the ASER, AIB, which is involved in the behavior of klinokinesis (i.e., the redirecting turn), exhibits a bidirectional response to changes in NaCl concentration in the current environment, dependent on the previously experienced NaCl concentration (Sato et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sato et al., 2021, which characterized the bidirectional response of AIB neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "bd288609-115c-437b-87d8-a6cdf87ae268",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C12",
+      "claim": "The bidirectional neural responses of AIB are mediated by a change in the basal level of glutamate neurotransmitter released from ASER.",
+      "claim_type": "EXPLICIT",
+      "source": "The bidirectional neural responses have been demonstrated to be mediated by a change in the basal level of glutamate neurotransmitter released from the ASER (Sato et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sato et al., 2021, which demonstrated the mechanism of bidirectional responses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "b318ec0e-8ba0-42f1-9be6-c83e6d7df2b3",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C13",
+      "claim": "The alteration in basal glutamate transmission results in a bidirectional response of postsynaptic AIB due to the distinct sensitivities of the excitatory glutamate receptor GLR-1 and the inhibitory glutamate receptor AVR-14.",
+      "claim_type": "EXPLICIT",
+      "source": "The alteration in the basal glutamate transmission results in a bidirectional response of the postsynaptic AIB due to the distinct sensitivities of the excitatory glutamate receptor GLR-1 and the inhibitory glutamate receptor AVR-14, which are expressed on the AIB (Hiroki et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hiroki et al., 2022, which elucidated the mechanism of bidirectional responses involving glutamate receptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "7d622559-b323-4f0a-8fc3-d2fe2273596f",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C14",
+      "claim": "AIY plays a crucial role in initiating the curving turn by forming an inhibitory synapse with AIZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it was demonstrated that the AIY plays a crucial role in initiating the curving turn by forming an inhibitory synapse with the AIZ (Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Li et al., 2014, which demonstrated the inhibitory synaptic connection between AIY and AIZ.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "2893b36b-27eb-491a-bd78-9628171f92c8",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C15",
+      "claim": "The inhibitory synaptic transmission from AIY to AIZ is induced when the Cl\u2212 ion channel of the acetylcholine receptor ACC-2 on postsynaptic AIZ is activated by ACh released from presynaptic AIY.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was observed that the inhibitory synaptic transmission is induced when the Cl\u2212 ion channel of the acetylcholine (ACh) neurotransmitter receptor, ACC-2, on the postsynaptic AIZ is activated by the ACh neurotransmitter released from the presynaptic AIY (Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Li et al., 2014, which characterized the mechanism of inhibitory synaptic transmission.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "4a106d8a-c67b-4fa8-bfe0-be271d78f728",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C16",
+      "claim": "The most optimized model with constraints had a chemotaxis index (CI) of 0.877.",
+      "claim_type": "EXPLICIT",
+      "source": "The CI values for the most optimized networks with and without the neurophysiological constraints were 0.877 and 0.855, respectively, as shown in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from the evolutionary algorithm optimization presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "e2d4434a-720a-49a7-a3a7-33fa0e3b01de",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C17",
+      "claim": "The most optimized model without constraints had a chemotaxis index (CI) of 0.855.",
+      "claim_type": "EXPLICIT",
+      "source": "The CI values for the most optimized networks with and without the neurophysiological constraints were 0.877 and 0.855, respectively, as shown in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from the evolutionary algorithm optimization presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "b221fb67-fbf4-4e66-a6da-50e21cbd2388",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C18",
+      "claim": "The constrained model exhibited a marginally accelerated attainment of the salt concentration peak compared to the unconstrained model.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between these CI values is slight, while the model optimized with the constraints exhibits a marginally accelerated attainment of the salt concentration peak, as shown by the trajectories.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of trajectories shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "2491d1a2-4b12-45b3-a18f-e37d2517d997",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C19",
+      "claim": "The evolutionary search with constraints successfully yielded a network with inhibitory AIY\u2013AIZ synaptic connections as the most optimized model.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 3b, the evolutionary search with the constraints successfully yielded the network with inhibitory AIY\u2013AIZ synaptic connections as the most optimized model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the network structure shown in Figure 3b resulting from the evolutionary algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "4b50875a-0890-4369-8f49-0a5ac11652e5",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C20",
+      "claim": "The ASER\u2013AIY synaptic connections in the constrained model are inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "A noteworthy distinction between Figure 3a and b is that the ASER\u2013AIY synaptic connections in the constrained model are inhibitory (Figure 3b) whereas those in the unconstrained model are excitatory (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the network structure shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "d3a3542f-3c3b-46f6-9184-043a699070ed",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C21",
+      "claim": "The ASER\u2013AIY synaptic connections in the unconstrained model are excitatory.",
+      "claim_type": "EXPLICIT",
+      "source": "A noteworthy distinction between Figure 3a and b is that the ASER\u2013AIY synaptic connections in the constrained model are inhibitory (Figure 3b) whereas those in the unconstrained model are excitatory (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the network structure shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "dde7e0c8-cc0e-4ebe-b450-5dc7ac2d06c3",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C23",
+      "claim": "The constrained model reproduces the pattern of neuronal activity observed in experiments where ASER and AIZ activation are synchronized.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the model reproduces the pattern of neuronal activity observed in the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison between model results (Figure 3d) and experimental observations cited from Matsumoto et al., 2024.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "c27a271d-6832-493f-9085-17c5caafad1f",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C24",
+      "claim": "The unconstrained model exhibited a hyperpolarization of AIZs in response to a decrease in salt concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the unconstrained model exhibited an inverse activity pattern of AIZs, namely, a hyperpolarization of AIZs, in response to a decrease in the salt concentration (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the neurotransmitter release patterns shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "c7cd3ff2-4d3e-4f22-839d-4f05d5c6dd10",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C25",
+      "claim": "The positive correlation between the curving rate and the bearing indicates that the model worm continuously turns in the direction of the steepest increase in salt concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive correlation between the curving rate and the bearing, as illustrated in Figure 4a, indicates that the model worm continuously turns in the direction of the steepest increase in salt concentration (see Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis of curving rate versus bearing shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "180d3a7f-9080-4403-89db-d4e1a7c85a84",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C26",
+      "claim": "The positive correlation between the curving rate and the normal gradient of salt concentration indicates that the model worm is able to sense the concentration gradient normal to the travel direction and thus turn in the direction that increases the salt concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive correlation between the curving rate and the normal gradient of the salt concentration, as illustrated in Figure 4c, indicates that the model worm is able to sense the concentration gradient normal to the travel direction and thus turn in the direction that increases the salt concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis of curving rate versus normal gradient shown in Figure 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "5e0f99d8-4b74-45d8-a2c1-2fcf349d27bb",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C27",
+      "claim": "When the basal level of glutamate release from ASER is nearly comparable to the EC50 for GLC-3, the activity of MGL-1 is saturated so that MGL-1 does not contribute to a change in the membrane potential of AIY upon depolarization of ASER.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Ccult > Ctest, if the basal level of glutamate release from the ASER is nearly comparable to the level of EC50 for the GLC-3, the activity of MGL-1 is saturated so that the MGL-1 does not contribute to a change in the membrane potential of the AIY upon the depolarization of the ASER (for more details regarding the release of internal Ca2+ from the endoplasmic reticulum, see, e.g., the reference on a metabotropic acetylcholine receptor; Sumi and Harada, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from known receptor properties and supported by a citation to Sumi and Harada, 2023.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "9952d03d-1988-4ebe-b6d2-5430186a1efe",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C28",
+      "claim": "When the basal level of glutamate release from ASER is sufficiently lower than the EC50 for GLC-3 but nearly comparable to the EC50 for MGL-1, the synaptic transmissions between ASER and AIY become excitatory as a result of Ca2+ release from the endoplasmic reticulum mediated by activation of MGL-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in the case of Ccult < Ctest, when the basal level of glutamate release from the ASER is sufficiently lower than the level of EC50 for the GLC-3 but still nearly comparable to the level of EC50 for the MGL-1, the synaptic transmissions between the ASER and the AIY become excitatory as a result of the Ca2+ release from the endoplasmic reticulum, which is mediated by the activation of MGL-1 (Ashida et al., 2019; Shidara et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from receptor properties and supported by citations to Ashida et al., 2019 and Shidara et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "37b6efb6-dc99-466f-8602-a21f81d93b8d",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C30",
+      "claim": "The most optimized network with constraints, in which only the inhibitory connections between ASER and AIY were replaced by excitatory connections, can reproduce the salt preference behavior of a well-fed individual cultivated at a lower salt concentration than the current environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the experimental observation shown in Figure 5d, indicating that the most optimized network with the constraints, of which only the inhibitory connections between ASER and AIY were replaced by excitatory connections (Figure 5b), can reproduce the salt preference behavior of a well-fed individual cultivated at a lower salt concentration than the current environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of model results (Figure 5c) with experimental data (Figure 5d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "82305b8f-48a6-4194-9ef5-6a833484a9b2",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C31",
+      "claim": "The inhibition of SMB activity by reducing the strength of synaptic connections between AIZ and SMB resulted in the suppression of salt preference behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6b shows that the inhibition of the SMB activity by reducing the strength of synaptic connections between AIZ and SMB resulted in the suppression of salt preference behavior, which is consistent with the experimental observations presented in Figure 6a.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis shown in Figure 6b and comparison with experimental data in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "8f82ea7f-b470-452d-a8e8-e8185e7bca6b",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C32",
+      "claim": "The inhibition of SMB function through the reduction of bias terms in the SMB motor neurons resulted in the suppression of the salt preference behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the inhibition of SMB function through the reduction of bias terms in the SMB motor neurons resulted in the suppression of the salt preference behavior (see Figure 6\u2014figure supplement 1b), which is a comparable result to that shown in Figure 6b and is also consistent with the experimental data presented in Figure 6a or Figure 6\u2014figure supplement 1a; Kunitomo et al., 2013.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis shown in Figure 6\u2014figure supplement 1b and comparison with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "31a96448-6ce2-4336-a1f9-38b6e69b8be0",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C33",
+      "claim": "The inhibitory synaptic connections between ASER and AIY are essential for synchronizing the activation of AIZs with the activity of ASER, provided that the AIY\u2013AIZ connections are inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory connections between ASER and AIYs are essential for synchronizing the activation of AIZs with the activity of ASER, provided that the AIY\u2013AIZ connections are inhibitory, as has been identified through experiments. (Li et al., 2014; Matsumoto et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model results and supported by citations to Li et al., 2014 and Matsumoto et al., 2024.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "782c1425-95e1-46e6-bcf5-dbb73d148d87",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C34",
+      "claim": "The salt concentration memory is encoded as a basal level of glutamate release from ASER.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the salt concentration memory is encoded as a basal level of glutamate release from the ASER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model results and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "616d1726-eaa5-4254-80c5-f50102cd76b1",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C35",
+      "claim": "The memory encoded as basal glutamate release is decoded by the difference in the sensitivity of the glutamate-gated inhibitory channel GLC-3 and the excitatory metabotropic glutamate receptor MGL-1 expressed on AIY.",
+      "claim_type": "EXPLICIT",
+      "source": "This memory is then decoded by the difference in the sensitivity of the glutamate-gated inhibitory channel GLC-3 (Ohnishi et al., 2011) and the excitatory metabotropic glutamate receptor MGL-1 (Kang and Avery, 2009), which are expressed on the AIY.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from receptor properties and supported by citations to Ohnishi et al., 2011 and Kang and Avery, 2009.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "7ffc04ef-7ca2-464b-ba98-7ddd0f81b657",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C36",
+      "claim": "The circuit downstream of ASE functions as a module that is responsible for salt klinotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural network, derived from the hypothesis, reproduced the salt concentration memory-dependent preference behavior and revealed that the circuit downstream of ASE functions as a module that is responsible for salt klinotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model results showing that downstream neurons do not undergo alterations and simply transmit signals.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "79419456-6e61-4795-b5a3-7ac48cb7198f",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C37",
+      "claim": "The sensorimotor circuit allows a simple and efficient bidirectional regulation of salt preference behavior in klinotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the sensorimotor circuit allows a simple and efficient bidirectional regulation of salt preference behavior in klinotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model results showing synaptic plasticity at ASER-AIY enables bidirectional regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "33e631c2-8b86-48da-a063-810dcb41c257",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C38",
+      "claim": "The worms are capable of efficiently switching between dwelling and dispersing behaviors by activating or inhibiting only the most downstream motor neurons in the sensorimotor circuit of klinotaxis depending on the presence or absence of food.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the worms are capable of efficiently switching between dwelling and dispersing behaviors by activating or inhibiting only the most downstream motor neurons in the sensorimotor circuit of klinotaxis depending on the presence or absence of food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model results showing SMB inhibition suppresses salt preference behavior.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "85889b47-85c8-4433-b9ce-72195e11b6a7",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C39",
+      "claim": "The principle of operation, in which the dependence of motor responses to sensory inputs on the phase of motor oscillation, appears to be a convergent solution for taxis and navigation across species.",
+      "claim_type": "EXPLICIT",
+      "source": "The principle of operation, in which the dependence of motor responses to sensory inputs on the phase of motor oscillation, appears to be a convergent solution for taxis and navigation across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from observations in multiple species and supported by citations to studies in Drosophila and zebrafish.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "eb1d5f6d-2a94-4344-8cbc-38d82af97714",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C40",
+      "claim": "Analogous mechanisms to the regulatory mechanism of turning angle have been postulated in the context of chemotaxis in Drosophila larvae and phototaxis in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, analogous mechanisms have been postulated in the context of chemotaxis in Drosophila larvae chemotaxis (Wystrach et al., 2016) and phototaxis in zebrafish (Wolf et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wystrach et al., 2016 and Wolf et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "e6bdfd0e-5787-40c7-8ab7-14d80ccfd0e4",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C41",
+      "claim": "The basal level of glutamate release from ASER either increased or decreased when well-fed individuals were cultivated at either a higher or lower salt concentration than the current environment, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the previous studies on the salt concentration memory-dependent bidirectional regulation of klinokinesis (i.e., pirouettes), it was demonstrated that the basal level of glutamate release from the ASER either increased or decreased when well-fed individuals were cultivated at either a higher or lower salt concentration than the current environment, respectively (Hiroki et al., 2022; Sato et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hiroki et al., 2022 and Sato et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "a42c46c9-6d36-44b5-9c28-57614facfda6",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C42",
+      "claim": "When the cultivated salt concentration exceeds the current environmental concentrations (Ccult > Ctest), the basal glutamate release from ASER is enhanced by the phosphorylation of UNC-64/Syntaxin 1A at Ser65 through the protein kinase C (PKC-1) signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "When the cultivated salt concentration exceeds the current environmental concentrations (Ccult > Ctest), the basal glutamate release from the ASER is enhanced by the phosphorylation of UNC-64/Syntaxin 1A at Ser65 through the protein kinase C (PKC-1) signaling pathway (Hiroki et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hiroki et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "0e06ebf8-0af0-40a3-9810-a6b3ffef6dab",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C43",
+      "claim": "In the case of Ccult < Ctest, the basal glutamate release is decreased as a consequence of the reduced PKC-1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in the case of Ccult < Ctest, the basal glutamate release is decreased as a consequence of the reduced PKC-1 activity (Hiroki et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hiroki et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "d27e5d36-1e2d-4b6b-890f-bd4c2aad8911",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C44",
+      "claim": "The EC50 for GLC-3 has been reported to be 1.9 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "The EC50 for GLC-3 has been reported to be 1.9 mM (Horoszok et al., 2001), while the EC50 for MGL-1 is not available in the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Horoszok et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "9b7b1bcd-633e-46c3-ba52-e8068be27b71",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C45",
+      "claim": "The EC50 for the C. elegans homolog of MGL-1, MGL-2, has been reported to be 9 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the EC50 for the C. elegans homolog of MGL-1, MGL-2, has been reported to be 9 \u00b5M (Tharmalingam et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tharmalingam et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "c2abbc8b-6427-43bc-ab9a-a72ab4d90e08",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C46",
+      "claim": "The sensitivity of MGL-2 is ~200 times higher than that of GLC-3.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity of MGL-2 is ~200 times higher than that of GLC-3, suggesting that the sensitivity of MGL-1 may also be sufficiently higher than that of GLC-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculation from reported EC50 values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "fcfa2ec6-11cf-4738-9f2e-d3d998a8022d",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C47",
+      "claim": "At least two glutamate receptors are expressed in AIY: the inhibitory glutamate-gated chloride anion channel GLC-3 and the excitatory metabotropic glutamate receptor MGL-1.",
+      "claim_type": "EXPLICIT",
+      "source": "At least two glutamate receptors, the inhibitory glutamate-gated chloride anion channel GLC-3 (Ohnishi et al., 2011) and the excitatory metabotropic glutamate receptor MGL-1 (Kang and Avery, 2009), have been demonstrated to be expressed in the AIY, the postsynaptic interneuron to the ASER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ohnishi et al., 2011 and Kang and Avery, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "07e28785-d016-40d5-8672-cd9183f11c87",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C48",
+      "claim": "GLR-1 is a glutamate-gated cation channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLR-1 is a glutamate-gated cation channel, whereas the AVR-14 is a glutamate-gated chloride anion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about receptor properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "e6668eac-ac7b-49c1-9d65-e8c023906a73",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C49",
+      "claim": "AVR-14 is a glutamate-gated chloride anion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLR-1 is a glutamate-gated cation channel, whereas the AVR-14 is a glutamate-gated chloride anion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about receptor properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "a1cd07c6-beae-4c50-acd7-48b45d3eb782",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C50",
+      "claim": "The sensitivity of GLR-1 (EC50 5 mM) is several tens of times lower than that of AVR-14 (EC50 0.2 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the sensitivity of GLR-1 (EC50 5 mM) is several tens of times lower than that of the AVR-14 (EC50 0.2 mM) (Hiroki et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hiroki et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "6a1a85b9-c79d-45c0-856f-d5e3ffb692a5",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C51",
+      "claim": "In the absence of food, the PDE neurons do not release dopamine, which causes AVK interneurons that form inhibitory connections with the PDE to release FLP-1 neuropeptides that inhibit SMB motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of food, the PDE neurons do not release dopamine, which causes AVK interneurons that form inhibitory connections with the PDE to release FLP-1 neuropeptides that inhibit SMB motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about the neural pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "a27e6835-9095-4e84-803a-0dee57d5223c",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C52",
+      "claim": "The release of FLP-1 neuropeptides that inhibit SMB motor neurons has been postulated to contribute to the dispersal behavior observed in starved individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been postulated to contribute to the dispersal behavior observed in starved individuals (Oranth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Oranth et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "c8adcde2-d5e7-4ab9-8680-192d2356c368",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C53",
+      "claim": "The neuroanatomical minimal circuit was derived from the connectome by applying two constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuroanatomical minimal circuit was derived from the connectome by applying two constraints (Izquierdo and Beer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Izquierdo and Beer, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "442f7517-d589-4ed9-a026-11aa556775ae",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C54",
+      "claim": "The first constraint is to minimize the path length between ASE and SMB cells, resulting in a minimum number of three.",
+      "claim_type": "EXPLICIT",
+      "source": "The first constraint is to minimize the path length between ASE and SMB cells, resulting in a minimum number of three.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological constraint used in deriving the minimal circuit.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "b9e30b46-dc08-46c4-a93c-95714647637a",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C55",
+      "claim": "The second step is to eliminate the interneurons that are connected by neuronal connections other than those with the maximum number of contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The second step is to eliminate the interneurons that are connected by neuronal connections other than those with the maximum number of contacts (Oshio, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological constraint and is supported by a citation to Oshio, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "53ee41f5-234c-472f-a185-16b3ac3953df",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C56",
+      "claim": "The two interneurons AIY and AIZ, which have been experimentally shown to be involved in klinotaxis, are included in the resulting minimal network.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the two interneurons, AIY (Kocabas et al., 2012) and AIZ (Iino and Yoshida, 2009), which have been experimentally shown to be involved in klinotaxis, are included in the resulting minimal network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kocabas et al., 2012 and Iino and Yoshida, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "5e310ad5-4dde-495f-b99f-32e17ff6355b",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "claim_id": "C57",
+      "claim": "A similar inhibitory synaptic transmission to AIY due to the influx of Cl\u2212 via GLC-3, which is activated by glutamate signals from the AFD sensory neurons, has been demonstrated in the context of thermotaxis in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The argument presented here is also supported by evidence that a similar inhibitory synaptic transmission to the AIY due to the influx of Cl\u2212 via the GLC-3, which is activated by glutamate signals from the AFD sensory neurons, has been demonstrated in the context of thermotaxis in C. elegans (Ohnishi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ohnishi et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4e3bf77d-f21a-494f-a183-5798e8e32290",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An evolutionary algorithm with constraints requiring inhibitory AIY-AIZ connections yielded a neural network model with a chemotaxis index (CI) of 0.877, marginally outperforming the unconstrained model (CI = 0.855). The constrained model successfully produced inhibitory AIY-AIZ synaptic connections and exhibited marginally accelerated attainment of the salt concentration peak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 provide convergent evidence from the evolutionary algorithm optimization showing that the constrained model achieves high chemotaxis performance (CI = 0.877) and successfully incorporates the experimentally-validated inhibitory AIY-AIZ connections. The trajectory data in Figure 2 supports the marginally improved performance, though the difference is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "09656734-4d14-458f-9fce-75dd7bd8d03e",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The constrained model exhibits inhibitory ASER-AIY synaptic connections, while the unconstrained model shows excitatory connections at this synapse. The constrained model reproduces experimentally observed synchronized activation of ASER and AIZ neurons, whereas the unconstrained model shows inverse AIZ activity patterns. Inhibitory ASER-AIY connections are essential for synchronizing AIZ activation with ASER activity when AIY-AIZ connections are inhibitory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C23-C24, and C33 collectively demonstrate that the constrained model's inhibitory ASER-AIY connections are necessary to reproduce experimental observations (Matsumoto et al., 2024) of synchronized ASER-AIZ activation. The unconstrained model's failure to reproduce this pattern (C24) despite similar CI performance validates the importance of incorporating neurophysiological constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "046b22b3-f7c1-42dd-9dc5-fdba68097a75",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model worm exhibits klinotaxis by continuously turning toward higher salt concentrations based on sensing the concentration gradient normal to its travel direction. Positive correlations between curving rate and both bearing and normal gradient support this mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by quantitative analysis shown in Figure 4a,c demonstrating positive correlations between curving rate and both bearing and normal gradient. These correlations provide evidence that the model implements klinotaxis through gradient sensing perpendicular to the direction of movement, consistent with experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "30ce1a36-f783-42ba-8f79-49a0e45cf5e3",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose a mechanism for bidirectional ASER-AIY synaptic plasticity based on differential sensitivity of glutamate receptors GLC-3 (EC50 = 1.9 mM) and MGL-1 (estimated high sensitivity based on MGL-2 homolog EC50 = 9 \u00b5M) expressed on AIY. When basal glutamate is near GLC-3 EC50, MGL-1 saturates and transmission is inhibitory; when basal glutamate is lower, MGL-1 mediates excitatory transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C27-C28 and C44-C47 present a mechanistic hypothesis based on receptor properties and EC50 values from the literature. However, the EC50 for MGL-1 is not directly measured (C44), and the inference from MGL-2 (C45-C46) introduces uncertainty. The mechanism is plausible and supported by analogy to thermotaxis (C57), but lacks direct experimental validation of MGL-1 properties and the proposed switching mechanism in the salt chemotaxis context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Replacing inhibitory ASER-AIY connections with excitatory connections in the constrained model reproduces salt preference behavior observed when worms are cultivated at lower salt concentrations than the current environment. This demonstrates that salt concentration memory is encoded as basal glutamate release from ASER and decoded by differential receptor sensitivities on AIY, enabling bidirectional regulation through synaptic plasticity while downstream circuits function as a modular klinotaxis system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C34-C37 are supported by model simulations (Figure 5c) that match experimental data (Figure 5d) showing reversed salt preference when ASER-AIY connections are switched from inhibitory to excitatory. The model successfully reproduces bidirectional behavior through a single synaptic change, supporting the encoding/decoding mechanism. However, the underlying biochemical mechanism (C27-C28) remains hypothetical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "90fa84b2-b784-454b-9b71-796b05524a7f",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Inhibition of SMB motor neuron activity, either by reducing synaptic connection strength from AIZ or by reducing bias terms, suppresses salt preference behavior in the model, consistent with experimental observations in starved worms. This indicates worms can switch between dwelling and dispersing behaviors by modulating only the most downstream motor neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 and C38 are supported by model simulations (Figure 6b and supplement 1b) showing suppression of salt preference behavior upon SMB inhibition, matching experimental data (Figure 6a). Two independent methods of SMB inhibition produce consistent results, strengthening the conclusion. The inference about behavioral switching (C38) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "81d1495f-6291-45e1-90d4-715bd1b86be9",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The regulatory mechanism where motor responses to sensory inputs depend on the phase of motor oscillation appears to be a convergent solution for taxis and navigation across species, with analogous mechanisms observed in Drosophila larvae chemotaxis and zebrafish phototaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by citations to studies in other species (Wystrach et al., 2016; Wolf et al., 2017) demonstrating similar phase-dependent sensorimotor coupling. The comparative analysis across species provides evidence for convergent evolution of this control principle, though the claim is primarily based on literature synthesis rather than new experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "77469713-77af-4dc0-8ed6-4577778c88fd",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior work demonstrated that basal glutamate release from ASER increases when worms are cultivated at higher salt concentrations (Ccult > Ctest) through PKC-1-mediated phosphorylation of UNC-64/Syntaxin 1A, and decreases when cultivated at lower concentrations (Ccult < Ctest) due to reduced PKC-1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 accurately cite prior experimental work (Hiroki et al., 2022; Sato et al., 2021) establishing the biochemical mechanism of activity-dependent changes in basal glutamate release. These are well-established findings from the literature that provide the foundation for the current modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "c70a9003-3a3b-4f01-a7c4-0887ab827ce8",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "C. elegans has 302 fully mapped neurons and exhibits salt chemotaxis mediated by ASE sensory neurons (ASEL and ASER), which show functional asymmetry with ASER responding to decreases and ASEL to increases in salt concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately cite well-established facts about C. elegans neurobiology from the literature (Cook et al., 2019; White et al., 1986; Ward, 1973; Bargmann and Horvitz, 1991; Suzuki et al., 2008). These provide essential background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "7a3ae3f9-4867-425c-9f6b-e4dc39e3d70f",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "C. elegans uses two behavioral strategies for salt chemotaxis (klinokinesis and klinotaxis), and exhibits salt concentration memory-dependent preference behavior where preferred concentrations depend on cultivation history relative to current environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 accurately cite established behavioral observations from the literature (Iino and Yoshida, 2009; Pierce-Shimomura et al., 1999; Kunitomo et al., 2013). These provide the behavioral context that the model aims to explain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "b3203ad3-bfe6-4b1e-ab22-4021b3ab4d89",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work on klinokinesis demonstrated that AIB interneurons exhibit bidirectional responses to salt concentration changes mediated by changes in basal glutamate release from ASER, with the response determined by differential sensitivities of GLR-1 and AVR-14 receptors on AIB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 accurately cite prior experimental work (Sato et al., 2021; Hiroki et al., 2022) on the klinokinesis circuit. This provides important precedent for the proposed mechanism in klinotaxis, though it involves different downstream neurons (AIB vs AIY).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "daa78593-4bf0-4a80-adb3-b2a548a12ce7",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AIY initiates curving turns through inhibitory synaptic transmission to AIZ, mediated by activation of the Cl\u2212 channel ACC-2 on AIZ by acetylcholine released from AIY.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 accurately cite experimental findings (Li et al., 2014) that established the inhibitory nature of AIY-AIZ connections. This neurophysiological constraint was crucial for the constrained evolutionary algorithm approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "b4dbcbb2-8a03-4d80-ae54-f57325625433",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "GLR-1 is a glutamate-gated cation channel and AVR-14 is a glutamate-gated chloride channel, with GLR-1 sensitivity (EC50 5 mM) being several tens of times lower than AVR-14 (EC50 0.2 mM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 cite established receptor properties (Hiroki et al., 2022) that are relevant for understanding bidirectional synaptic responses in the klinokinesis circuit. These provide context for the proposed analogous mechanism in klinotaxis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "e6d06325-72b6-440f-9158-e0a146ae2625",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In the absence of food, PDE neurons do not release dopamine, causing AVK interneurons to release FLP-1 neuropeptides that inhibit SMB motor neurons, contributing to dispersal behavior in starved individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 cite prior work (Oranth et al., 2018) establishing the neural pathway linking food sensing to SMB motor neuron regulation. This provides the biological basis for the model's simulation of starvation effects on chemotaxis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "244018c7-9010-4e67-a1c2-58fc9427a6cf",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The neuroanatomical minimal circuit was derived from the connectome by minimizing path length between ASE and SMB (minimum of three) and eliminating interneurons not connected by maximum contacts, resulting in a circuit that includes experimentally validated klinotaxis interneurons AIY and AIZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 describe the methodological approach for deriving the minimal circuit (Izquierdo and Beer, 2013; Oshio, 2003) and note that it includes experimentally validated neurons (Kocabas et al., 2012; Iino and Yoshida, 2009). This validates the circuit selection approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "2b8a9263-8834-4ed4-b985-391b2768ce5b",
+      "content_id": "21671540-f7b5-443d-b01e-ffc500884526",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Similar inhibitory synaptic transmission to AIY via GLC-3 activated by glutamate from AFD sensory neurons has been demonstrated in C. elegans thermotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 cites experimental evidence (Ohnishi et al., 2011) of analogous inhibitory transmission in a different sensory context (thermotaxis), providing supporting evidence for the proposed mechanism in salt chemotaxis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "4be3db10-56bf-4041-ac33-d2b67ef2d759",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The evolutionary algorithm optimization yielded two models (constrained and unconstrained) with similar chemotaxis indices (0.877 vs 0.855). The constrained model successfully produced inhibitory AIY\u2013AIZ connections and inhibitory ASER\u2013AIY connections, while the unconstrained model had excitatory ASER\u2013AIY connections.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers affirm the computational modeling approach and its findings. The editor states the work 'demonstrates the possibility of a transition between excitatory and inhibitory signaling at the ASER-AIY synapse,' and the anonymous reviewer highlights 'the explicit demonstration of computational neurobehavioral modeling and evolutionary algorithms' as a key strength. No concerns were raised about these optimization results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "cb511cb0-d81a-4fe6-9661-d704533fb905",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The constrained model reproduced experimentally observed neuronal activity patterns where ASER and AIZ activation are synchronized, while the unconstrained model exhibited inverse AIZ activity (hyperpolarization instead of depolarization in response to salt concentration decreases).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept these findings as part of the model's successful replication of experimental observations. The editor notes the work 'demonstrates the possibility of a transition' in signaling, and the anonymous reviewer states 'the model successfully replicates some behaviors observed in previous experiments.' The comparison between constrained and unconstrained models is treated as valid evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "abffd7b6-0707-40e9-be22-fc4e32f435dc",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The model worm exhibits klinotaxis behavior, continuously turning toward increasing salt concentration, as evidenced by positive correlations between curving rate and both bearing angle and normal gradient of salt concentration.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept the model's ability to reproduce klinotaxis behavior. The editor describes the work as investigating 'the synaptic mechanism for memory-dependent klinotaxis,' and the anonymous reviewer notes the model 'demonstrates how a single neuron, ASER, can change its signaling behavior' to enable navigation. No concerns were raised about the klinotaxis analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "0e77d35d-2e11-4f81-bed3-2b8461585d53",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The model proposes that salt concentration memory is encoded as basal glutamate release from ASER and decoded by differential sensitivity of GLC-3 (inhibitory) and MGL-1 (excitatory) receptors on AIY, with receptor saturation states determining whether ASER\u2013AIY transmission is inhibitory or excitatory depending on cultivation history.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge this as a key proposal, the anonymous reviewer explicitly notes 'some key assumptions of the work still need to be verified by biological validation of further experiments.' The editor describes these as 'solid findings' that 'offer a proposal,' suggesting acceptance of the computational demonstration but implicit recognition that experimental validation is needed for the mechanistic claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "fd98eb7f-e99e-49a6-bd3e-b4fe4a471b16",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The optimized network with excitatory ASER\u2013AIY connections (replacing inhibitory ones) successfully reproduced salt preference behavior of well-fed individuals cultivated at lower salt concentrations than the test environment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept this as part of the model's successful replication of memory-dependent behavior. The editor notes the authors 'demonstrate the possibility of a transition between excitatory and inhibitory signaling,' and the anonymous reviewer states the model enables the worm to 'navigate toward or away from salt gradients based on prior exposure.' This bidirectional regulation is treated as a validated finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "92d7ae4b-ecd9-4feb-941a-6742cd1d4b13",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Inhibition of SMB motor neuron activity (either through reduced synaptic connections or reduced bias terms) suppressed salt preference behavior, indicating that worms can switch between dwelling and dispersing behaviors by modulating only the most downstream motor neurons.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept these findings as part of the model's demonstration of behavioral regulation. The anonymous reviewer notes the model shows 'how a simple sensorimotor circuit... enables it to navigate salt gradients,' and no concerns were raised about the SMB inhibition results. The consistency with experimental data (Figure 6a) is implicitly accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "4f406271-0ca4-4346-b10b-4a15219561f6",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The model reveals that inhibitory ASER\u2013AIY connections are essential for synchronizing AIZ activation with ASER activity, that the circuit downstream of ASE functions as a klinotaxis module, and that this architecture enables simple and efficient bidirectional regulation of salt preference behavior.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers affirm these mechanistic insights. The editor describes the findings as 'solid' and notes they 'offer a proposal for how synaptic plasticity plays a role in sensorimotor navigation.' The anonymous reviewer highlights 'the explicit demonstration of... synaptic plasticity in a minimal neural circuit' as a key strength. These circuit-level conclusions are treated as valid contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "8e275d0b-3d73-4d99-8a0f-9fdd96d36687",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The principle of motor response dependence on motor oscillation phase appears to be a convergent solution for taxis and navigation across species, with analogous mechanisms observed in Drosophila chemotaxis and zebrafish phototaxis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not challenge this comparative claim. The editor notes the findings 'will be of interest to worm biologists and theoretical neuroscientists,' implicitly accepting the broader relevance. The anonymous reviewer does not raise concerns about the cross-species comparison, and the claim is supported by citations to published work.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "content_id": "ce205751-7873-434a-aa5a-961dd7992f75",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about C. elegans neurobiology, salt chemotaxis behavior, neural circuit anatomy, receptor properties, and methodological approaches for deriving the minimal circuit from the connectome.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are not questioned by reviewers and serve as the established foundation for the study. The editor and anonymous reviewer both accept the biological context and prior experimental findings as valid starting points. The anonymous reviewer notes the study uses 'previously described neural connections,' affirming acceptance of the anatomical and physiological background.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4a106d8a-c67b-4fa8-bfe0-be271d78f728",
+      "result_id": "4e3bf77d-f21a-494f-a183-5798e8e32290"
+    },
+    {
+      "claim_id": "e2d4434a-720a-49a7-a3a7-33fa0e3b01de",
+      "result_id": "4e3bf77d-f21a-494f-a183-5798e8e32290"
+    },
+    {
+      "claim_id": "b221fb67-fbf4-4e66-a6da-50e21cbd2388",
+      "result_id": "4e3bf77d-f21a-494f-a183-5798e8e32290"
+    },
+    {
+      "claim_id": "2491d1a2-4b12-45b3-a18f-e37d2517d997",
+      "result_id": "4e3bf77d-f21a-494f-a183-5798e8e32290"
+    },
+    {
+      "claim_id": "4b50875a-0890-4369-8f49-0a5ac11652e5",
+      "result_id": "09656734-4d14-458f-9fce-75dd7bd8d03e"
+    },
+    {
+      "claim_id": "d3a3542f-3c3b-46f6-9184-043a699070ed",
+      "result_id": "09656734-4d14-458f-9fce-75dd7bd8d03e"
+    },
+    {
+      "claim_id": "dde7e0c8-cc0e-4ebe-b450-5dc7ac2d06c3",
+      "result_id": "09656734-4d14-458f-9fce-75dd7bd8d03e"
+    },
+    {
+      "claim_id": "c27a271d-6832-493f-9085-17c5caafad1f",
+      "result_id": "09656734-4d14-458f-9fce-75dd7bd8d03e"
+    },
+    {
+      "claim_id": "31a96448-6ce2-4336-a1f9-38b6e69b8be0",
+      "result_id": "09656734-4d14-458f-9fce-75dd7bd8d03e"
+    },
+    {
+      "claim_id": "c7cd3ff2-4d3e-4f22-839d-4f05d5c6dd10",
+      "result_id": "046b22b3-f7c1-42dd-9dc5-fdba68097a75"
+    },
+    {
+      "claim_id": "180d3a7f-9080-4403-89db-d4e1a7c85a84",
+      "result_id": "046b22b3-f7c1-42dd-9dc5-fdba68097a75"
+    },
+    {
+      "claim_id": "5e0f99d8-4b74-45d8-a2c1-2fcf349d27bb",
+      "result_id": "30ce1a36-f783-42ba-8f79-49a0e45cf5e3"
+    },
+    {
+      "claim_id": "9952d03d-1988-4ebe-b6d2-5430186a1efe",
+      "result_id": "30ce1a36-f783-42ba-8f79-49a0e45cf5e3"
+    },
+    {
+      "claim_id": "d27e5d36-1e2d-4b6b-890f-bd4c2aad8911",
+      "result_id": "30ce1a36-f783-42ba-8f79-49a0e45cf5e3"
+    },
+    {
+      "claim_id": "9b7b1bcd-633e-46c3-ba52-e8068be27b71",
+      "result_id": "30ce1a36-f783-42ba-8f79-49a0e45cf5e3"
+    },
+    {
+      "claim_id": "c2abbc8b-6427-43bc-ab9a-a72ab4d90e08",
+      "result_id": "30ce1a36-f783-42ba-8f79-49a0e45cf5e3"
+    },
+    {
+      "claim_id": "fcfa2ec6-11cf-4738-9f2e-d3d998a8022d",
+      "result_id": "30ce1a36-f783-42ba-8f79-49a0e45cf5e3"
+    },
+    {
+      "claim_id": "37b6efb6-dc99-466f-8602-a21f81d93b8d",
+      "result_id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5"
+    },
+    {
+      "claim_id": "782c1425-95e1-46e6-bcf5-dbb73d148d87",
+      "result_id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5"
+    },
+    {
+      "claim_id": "616d1726-eaa5-4254-80c5-f50102cd76b1",
+      "result_id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5"
+    },
+    {
+      "claim_id": "7ffc04ef-7ca2-464b-ba98-7ddd0f81b657",
+      "result_id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5"
+    },
+    {
+      "claim_id": "79419456-6e61-4795-b5a3-7ac48cb7198f",
+      "result_id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5"
+    },
+    {
+      "claim_id": "82305b8f-48a6-4194-9ef5-6a833484a9b2",
+      "result_id": "90fa84b2-b784-454b-9b71-796b05524a7f"
+    },
+    {
+      "claim_id": "8f82ea7f-b470-452d-a8e8-e8185e7bca6b",
+      "result_id": "90fa84b2-b784-454b-9b71-796b05524a7f"
+    },
+    {
+      "claim_id": "33e631c2-8b86-48da-a063-810dcb41c257",
+      "result_id": "90fa84b2-b784-454b-9b71-796b05524a7f"
+    },
+    {
+      "claim_id": "85889b47-85c8-4433-b9ce-72195e11b6a7",
+      "result_id": "81d1495f-6291-45e1-90d4-715bd1b86be9"
+    },
+    {
+      "claim_id": "eb1d5f6d-2a94-4344-8cbc-38d82af97714",
+      "result_id": "81d1495f-6291-45e1-90d4-715bd1b86be9"
+    },
+    {
+      "claim_id": "e6bdfd0e-5787-40c7-8ab7-14d80ccfd0e4",
+      "result_id": "77469713-77af-4dc0-8ed6-4577778c88fd"
+    },
+    {
+      "claim_id": "a42c46c9-6d36-44b5-9c28-57614facfda6",
+      "result_id": "77469713-77af-4dc0-8ed6-4577778c88fd"
+    },
+    {
+      "claim_id": "0e06ebf8-0af0-40a3-9810-a6b3ffef6dab",
+      "result_id": "77469713-77af-4dc0-8ed6-4577778c88fd"
+    },
+    {
+      "claim_id": "6036792b-226d-48cb-b148-d1b0375bdee7",
+      "result_id": "c70a9003-3a3b-4f01-a7c4-0887ab827ce8"
+    },
+    {
+      "claim_id": "9513016c-398e-49ec-a012-209fd0a168ba",
+      "result_id": "c70a9003-3a3b-4f01-a7c4-0887ab827ce8"
+    },
+    {
+      "claim_id": "d5f33673-e757-4c42-81db-3e1c192e1757",
+      "result_id": "c70a9003-3a3b-4f01-a7c4-0887ab827ce8"
+    },
+    {
+      "claim_id": "6b9eec50-76e3-4a2f-82b7-45b6e440a682",
+      "result_id": "c70a9003-3a3b-4f01-a7c4-0887ab827ce8"
+    },
+    {
+      "claim_id": "2f09c1dd-4bba-45fb-a272-208a12b0d68c",
+      "result_id": "c70a9003-3a3b-4f01-a7c4-0887ab827ce8"
+    },
+    {
+      "claim_id": "aeb2a4d4-16c9-46e9-8f65-b1b4d64189d4",
+      "result_id": "7a3ae3f9-4867-425c-9f6b-e4dc39e3d70f"
+    },
+    {
+      "claim_id": "fa345b5a-5fad-43e8-99bf-e95120605f73",
+      "result_id": "7a3ae3f9-4867-425c-9f6b-e4dc39e3d70f"
+    },
+    {
+      "claim_id": "cf52a5a6-f33b-4b27-b9fe-563c38b63ccd",
+      "result_id": "7a3ae3f9-4867-425c-9f6b-e4dc39e3d70f"
+    },
+    {
+      "claim_id": "56c9e651-a245-43f9-b441-7bf70c5caa4b",
+      "result_id": "7a3ae3f9-4867-425c-9f6b-e4dc39e3d70f"
+    },
+    {
+      "claim_id": "47382bd8-0daf-4054-881b-e899a5cee2eb",
+      "result_id": "7a3ae3f9-4867-425c-9f6b-e4dc39e3d70f"
+    },
+    {
+      "claim_id": "87ac8d98-ee9d-4a8d-a765-3150e22ea737",
+      "result_id": "b3203ad3-bfe6-4b1e-ab22-4021b3ab4d89"
+    },
+    {
+      "claim_id": "bd288609-115c-437b-87d8-a6cdf87ae268",
+      "result_id": "b3203ad3-bfe6-4b1e-ab22-4021b3ab4d89"
+    },
+    {
+      "claim_id": "b318ec0e-8ba0-42f1-9be6-c83e6d7df2b3",
+      "result_id": "b3203ad3-bfe6-4b1e-ab22-4021b3ab4d89"
+    },
+    {
+      "claim_id": "7d622559-b323-4f0a-8fc3-d2fe2273596f",
+      "result_id": "daa78593-4bf0-4a80-adb3-b2a548a12ce7"
+    },
+    {
+      "claim_id": "2893b36b-27eb-491a-bd78-9628171f92c8",
+      "result_id": "daa78593-4bf0-4a80-adb3-b2a548a12ce7"
+    },
+    {
+      "claim_id": "07e28785-d016-40d5-8672-cd9183f11c87",
+      "result_id": "b4dbcbb2-8a03-4d80-ae54-f57325625433"
+    },
+    {
+      "claim_id": "e6668eac-ac7b-49c1-9d65-e8c023906a73",
+      "result_id": "b4dbcbb2-8a03-4d80-ae54-f57325625433"
+    },
+    {
+      "claim_id": "a1cd07c6-beae-4c50-acd7-48b45d3eb782",
+      "result_id": "b4dbcbb2-8a03-4d80-ae54-f57325625433"
+    },
+    {
+      "claim_id": "6a1a85b9-c79d-45c0-856f-d5e3ffb692a5",
+      "result_id": "e6d06325-72b6-440f-9158-e0a146ae2625"
+    },
+    {
+      "claim_id": "a27e6835-9095-4e84-803a-0dee57d5223c",
+      "result_id": "e6d06325-72b6-440f-9158-e0a146ae2625"
+    },
+    {
+      "claim_id": "c8adcde2-d5e7-4ab9-8680-192d2356c368",
+      "result_id": "244018c7-9010-4e67-a1c2-58fc9427a6cf"
+    },
+    {
+      "claim_id": "442f7517-d589-4ed9-a026-11aa556775ae",
+      "result_id": "244018c7-9010-4e67-a1c2-58fc9427a6cf"
+    },
+    {
+      "claim_id": "b9e30b46-dc08-46c4-a93c-95714647637a",
+      "result_id": "244018c7-9010-4e67-a1c2-58fc9427a6cf"
+    },
+    {
+      "claim_id": "53ee41f5-234c-472f-a185-16b3ac3953df",
+      "result_id": "244018c7-9010-4e67-a1c2-58fc9427a6cf"
+    },
+    {
+      "claim_id": "5e310ad5-4dde-495f-b99f-32e17ff6355b",
+      "result_id": "2b8a9263-8834-4ed4-b985-391b2768ce5b"
+    },
+    {
+      "claim_id": "4a106d8a-c67b-4fa8-bfe0-be271d78f728",
+      "result_id": "4be3db10-56bf-4041-ac33-d2b67ef2d759"
+    },
+    {
+      "claim_id": "e2d4434a-720a-49a7-a3a7-33fa0e3b01de",
+      "result_id": "4be3db10-56bf-4041-ac33-d2b67ef2d759"
+    },
+    {
+      "claim_id": "b221fb67-fbf4-4e66-a6da-50e21cbd2388",
+      "result_id": "4be3db10-56bf-4041-ac33-d2b67ef2d759"
+    },
+    {
+      "claim_id": "2491d1a2-4b12-45b3-a18f-e37d2517d997",
+      "result_id": "4be3db10-56bf-4041-ac33-d2b67ef2d759"
+    },
+    {
+      "claim_id": "4b50875a-0890-4369-8f49-0a5ac11652e5",
+      "result_id": "4be3db10-56bf-4041-ac33-d2b67ef2d759"
+    },
+    {
+      "claim_id": "d3a3542f-3c3b-46f6-9184-043a699070ed",
+      "result_id": "4be3db10-56bf-4041-ac33-d2b67ef2d759"
+    },
+    {
+      "claim_id": "dde7e0c8-cc0e-4ebe-b450-5dc7ac2d06c3",
+      "result_id": "cb511cb0-d81a-4fe6-9661-d704533fb905"
+    },
+    {
+      "claim_id": "c27a271d-6832-493f-9085-17c5caafad1f",
+      "result_id": "cb511cb0-d81a-4fe6-9661-d704533fb905"
+    },
+    {
+      "claim_id": "c7cd3ff2-4d3e-4f22-839d-4f05d5c6dd10",
+      "result_id": "abffd7b6-0707-40e9-be22-fc4e32f435dc"
+    },
+    {
+      "claim_id": "180d3a7f-9080-4403-89db-d4e1a7c85a84",
+      "result_id": "abffd7b6-0707-40e9-be22-fc4e32f435dc"
+    },
+    {
+      "claim_id": "5e0f99d8-4b74-45d8-a2c1-2fcf349d27bb",
+      "result_id": "0e77d35d-2e11-4f81-bed3-2b8461585d53"
+    },
+    {
+      "claim_id": "9952d03d-1988-4ebe-b6d2-5430186a1efe",
+      "result_id": "0e77d35d-2e11-4f81-bed3-2b8461585d53"
+    },
+    {
+      "claim_id": "782c1425-95e1-46e6-bcf5-dbb73d148d87",
+      "result_id": "0e77d35d-2e11-4f81-bed3-2b8461585d53"
+    },
+    {
+      "claim_id": "616d1726-eaa5-4254-80c5-f50102cd76b1",
+      "result_id": "0e77d35d-2e11-4f81-bed3-2b8461585d53"
+    },
+    {
+      "claim_id": "37b6efb6-dc99-466f-8602-a21f81d93b8d",
+      "result_id": "fd98eb7f-e99e-49a6-bd3e-b4fe4a471b16"
+    },
+    {
+      "claim_id": "82305b8f-48a6-4194-9ef5-6a833484a9b2",
+      "result_id": "92d7ae4b-ecd9-4feb-941a-6742cd1d4b13"
+    },
+    {
+      "claim_id": "8f82ea7f-b470-452d-a8e8-e8185e7bca6b",
+      "result_id": "92d7ae4b-ecd9-4feb-941a-6742cd1d4b13"
+    },
+    {
+      "claim_id": "33e631c2-8b86-48da-a063-810dcb41c257",
+      "result_id": "92d7ae4b-ecd9-4feb-941a-6742cd1d4b13"
+    },
+    {
+      "claim_id": "31a96448-6ce2-4336-a1f9-38b6e69b8be0",
+      "result_id": "4f406271-0ca4-4346-b10b-4a15219561f6"
+    },
+    {
+      "claim_id": "7ffc04ef-7ca2-464b-ba98-7ddd0f81b657",
+      "result_id": "4f406271-0ca4-4346-b10b-4a15219561f6"
+    },
+    {
+      "claim_id": "79419456-6e61-4795-b5a3-7ac48cb7198f",
+      "result_id": "4f406271-0ca4-4346-b10b-4a15219561f6"
+    },
+    {
+      "claim_id": "85889b47-85c8-4433-b9ce-72195e11b6a7",
+      "result_id": "8e275d0b-3d73-4d99-8a0f-9fdd96d36687"
+    },
+    {
+      "claim_id": "eb1d5f6d-2a94-4344-8cbc-38d82af97714",
+      "result_id": "8e275d0b-3d73-4d99-8a0f-9fdd96d36687"
+    },
+    {
+      "claim_id": "6036792b-226d-48cb-b148-d1b0375bdee7",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "9513016c-398e-49ec-a012-209fd0a168ba",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "d5f33673-e757-4c42-81db-3e1c192e1757",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "6b9eec50-76e3-4a2f-82b7-45b6e440a682",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "2f09c1dd-4bba-45fb-a272-208a12b0d68c",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "aeb2a4d4-16c9-46e9-8f65-b1b4d64189d4",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "fa345b5a-5fad-43e8-99bf-e95120605f73",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "cf52a5a6-f33b-4b27-b9fe-563c38b63ccd",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "56c9e651-a245-43f9-b441-7bf70c5caa4b",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "47382bd8-0daf-4054-881b-e899a5cee2eb",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "87ac8d98-ee9d-4a8d-a765-3150e22ea737",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "bd288609-115c-437b-87d8-a6cdf87ae268",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "b318ec0e-8ba0-42f1-9be6-c83e6d7df2b3",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "7d622559-b323-4f0a-8fc3-d2fe2273596f",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "2893b36b-27eb-491a-bd78-9628171f92c8",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "e6bdfd0e-5787-40c7-8ab7-14d80ccfd0e4",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "a42c46c9-6d36-44b5-9c28-57614facfda6",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "0e06ebf8-0af0-40a3-9810-a6b3ffef6dab",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "d27e5d36-1e2d-4b6b-890f-bd4c2aad8911",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "9b7b1bcd-633e-46c3-ba52-e8068be27b71",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "c2abbc8b-6427-43bc-ab9a-a72ab4d90e08",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "fcfa2ec6-11cf-4738-9f2e-d3d998a8022d",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "07e28785-d016-40d5-8672-cd9183f11c87",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "e6668eac-ac7b-49c1-9d65-e8c023906a73",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "a1cd07c6-beae-4c50-acd7-48b45d3eb782",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "6a1a85b9-c79d-45c0-856f-d5e3ffb692a5",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "a27e6835-9095-4e84-803a-0dee57d5223c",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "c8adcde2-d5e7-4ab9-8680-192d2356c368",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "442f7517-d589-4ed9-a026-11aa556775ae",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "b9e30b46-dc08-46c4-a93c-95714647637a",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "53ee41f5-234c-472f-a185-16b3ac3953df",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    },
+    {
+      "claim_id": "5e310ad5-4dde-495f-b99f-32e17ff6355b",
+      "result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "75f4cbf6-9fc1-4304-9039-7be45264456c",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "4e3bf77d-f21a-494f-a183-5798e8e32290",
+      "peer_result_id": "4be3db10-56bf-4041-ac33-d2b67ef2d759",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the evolutionary algorithm optimization results (C16-C19). OpenEval provides detailed quantitative assessment (CI = 0.877), while peer reviewers affirm the computational modeling approach more broadly. Peer review also includes C20-C21 in this evaluation, which OpenEval addresses separately in R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "dcda0bc2-c9e3-4e49-8313-4efccb5e9655",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "09656734-4d14-458f-9fce-75dd7bd8d03e",
+      "peer_result_id": "cb511cb0-d81a-4fe6-9661-d704533fb905",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the constrained model's ability to reproduce experimental observations (C23-C24). OpenEval emphasizes the necessity of inhibitory ASER-AIY connections and includes additional claims (C20-C21, C33) about synchronized activation patterns. Peer review focuses more narrowly on the comparison between constrained and unconstrained models.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "1d1f4d3d-b180-4e5b-8d9f-ae0748e0fa79",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "046b22b3-f7c1-42dd-9dc5-fdba68097a75",
+      "peer_result_id": "abffd7b6-0707-40e9-be22-fc4e32f435dc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on klinotaxis mechanism (C25-C26). Both evaluations support the quantitative correlations between curving rate and gradient sensing. OpenEval provides specific reference to Figure 4a,c, while peer review accepts the model's ability to reproduce klinotaxis behavior without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "4416625b-e225-4004-a876-673c8c1c6a81",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "30ce1a36-f783-42ba-8f79-49a0e45cf5e3",
+      "peer_result_id": "0e77d35d-2e11-4f81-bed3-2b8461585d53",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations express uncertainty about the mechanistic hypothesis (C27-C28). OpenEval identifies specific concerns about indirect EC50 inference (C44-C47) and lack of direct experimental validation. Peer review similarly notes 'key assumptions still need to be verified by biological validation,' though also includes C34-C35 which OpenEval addresses in R5.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "cec7ae98-1869-48cc-8d63-5b40beb470f5",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5",
+      "peer_result_id": "fd98eb7f-e99e-49a6-bd3e-b4fe4a471b16",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the bidirectional behavior regulation (C30). OpenEval provides detailed analysis of the ASER-AIY synaptic switching mechanism (C34-C37) with reference to Figure 5c-d. Peer review accepts the bidirectional navigation capability more generally. OpenEval notes the underlying biochemical mechanism remains hypothetical.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "ea488279-3ca4-40a2-9df4-7600a44b4fbe",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5",
+      "peer_result_id": "0e77d35d-2e11-4f81-bed3-2b8461585d53",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on C34-C35 regarding synaptic transition mechanism. OpenEval (R5) supports these claims as part of the encoding/decoding mechanism with simulation evidence. Peer review (R4) expresses uncertainty, noting need for biological validation of key assumptions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "38ddcef8-6e70-4725-aba0-960ff9b1b89e",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7430c7cc-502f-4d1b-b7fc-53a436e721c5",
+      "peer_result_id": "4f406271-0ca4-4346-b10b-4a15219561f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on C36-C37 regarding synaptic plasticity role. OpenEval (R5) supports these as part of the bidirectional behavior mechanism. Peer review (R7) affirms these mechanistic insights as 'solid findings' and highlights synaptic plasticity demonstration as a key strength.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "1040de18-6497-4020-a287-21fc72b507fd",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "90fa84b2-b784-454b-9b71-796b05524a7f",
+      "peer_result_id": "92d7ae4b-ecd9-4feb-941a-6742cd1d4b13",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on SMB inhibition results (C31-C32, C38). Both evaluations support the model's demonstration of suppressed salt preference behavior matching experimental data. OpenEval emphasizes consistency across two independent inhibition methods (Figure 6b and supplement 1b). Peer review accepts these as valid demonstrations of behavioral regulation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "310dfa70-13a2-4c2a-8ae0-f9f9848c9956",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "81d1495f-6291-45e1-90d4-715bd1b86be9",
+      "peer_result_id": "8e275d0b-3d73-4d99-8a0f-9fdd96d36687",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on cross-species comparison (C39-C40). Both evaluations support the claim of convergent evolution of phase-dependent sensorimotor coupling. OpenEval notes this is based on literature synthesis rather than new experimental data. Peer review implicitly accepts the broader relevance without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "19e0895d-ab7c-40c6-a7f8-0304df0aa5b2",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "09656734-4d14-458f-9fce-75dd7bd8d03e",
+      "peer_result_id": "4f406271-0ca4-4346-b10b-4a15219561f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on C33 regarding synchronized ASER-AIZ activation. OpenEval (R2) includes this as evidence for the necessity of inhibitory connections. Peer review (R7) addresses this as part of broader mechanistic insights about synaptic plasticity in the circuit.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "367ba5e8-c423-4222-8d63-04f1aefd87d5",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "77469713-77af-4dc0-8ed6-4577778c88fd",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the biochemical mechanism background (C41-C43). OpenEval specifically cites these as well-established findings from Hiroki et al. 2022 and Sato et al. 2021. Peer review groups these with other background claims as accepted foundation, noting the study uses 'previously described neural connections.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "1797d54f-b5fc-45f4-b063-cc8b9a2eb3d7",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "c70a9003-3a3b-4f01-a7c4-0887ab827ce8",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the C. elegans neurobiology background (C1-C5). OpenEval cites these as well-established facts providing essential context. Peer review accepts these as unquestioned foundation for the study, grouping them with extensive additional background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "fa63f7e7-ac9d-4bf5-95ab-4dfa3450547d",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "7a3ae3f9-4867-425c-9f6b-e4dc39e3d70f",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the behavioral observations background (C6-C10). OpenEval cites these as established behavioral context from literature. Peer review groups these with other background claims as accepted starting points without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "7954319a-deb1-4cdd-8778-3f9650fcf404",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "b3203ad3-bfe6-4b1e-ab22-4021b3ab4d89",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the klinokinesis circuit background (C11-C13). OpenEval notes these provide precedent for the proposed mechanism. Peer review accepts these as part of the established biological foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "3ab9e6bd-c590-42ab-a53c-1760b5754513",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "daa78593-4bf0-4a80-adb3-b2a548a12ce7",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the AIY-AIZ inhibitory connection background (C14-C15). OpenEval emphasizes this as crucial neurophysiological constraint for the evolutionary algorithm. Peer review accepts this as part of the anatomical and physiological background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "435e7d06-cca6-4222-9f13-b8d41f73c57c",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "b4dbcbb2-8a03-4d80-ae54-f57325625433",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the receptor properties background (C48-C50). OpenEval notes these provide context for the proposed analogous mechanism. Peer review groups these with other background claims as accepted foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "c141f6b9-62da-4ae8-ac14-5f47ec9551b0",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "e6d06325-72b6-440f-9158-e0a146ae2625",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the food sensing pathway background (C51-C52). OpenEval cites this as biological basis for starvation effects simulation. Peer review accepts this as part of the established foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "029ba876-7b84-4f35-a040-77f6e4d56ff5",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "244018c7-9010-4e67-a1c2-58fc9427a6cf",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the minimal circuit derivation methodology (C53-C56). OpenEval validates the circuit selection approach. Peer review accepts the use of 'previously described neural connections' as valid starting point.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    },
+    {
+      "id": "1359a807-cd80-451f-967c-e6f2fda8246c",
+      "submission_id": "3316d820-bd9c-40d3-8ba8-92b7ac714ec9",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "2b8a9263-8834-4ed4-b985-391b2768ce5b",
+      "peer_result_id": "d93e2335-841f-4b0f-ab6b-5a46723dbcc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the thermotaxis analogy background (C57). OpenEval cites this as supporting evidence for the proposed mechanism. Peer review groups this with other background claims as accepted foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:08:18.010771Z"
+    }
+  ]
+}

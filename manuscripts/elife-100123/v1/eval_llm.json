@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C20",
+      "C21",
+      "C27"
+    ],
+    "result": "The authors argue that the standard quasi-static approximation used in EEG analysis is inadequate because it incorrectly assumes time-independent electric fields. While the approximation correctly neglects magnetic field time-dependence (C19), it unjustifiably eliminates the displacement current term, which is essential for modeling brain electrical activity (C20, C21). This theoretical critique forms the foundation for their WETCOW model and SPECTRE method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C20, C21, and C27 collectively present a coherent theoretical argument supported by citations to prior work (C19, C20) and mathematical reasoning. The authors demonstrate that the quasi-static approximation's elimination of time-dependent electric fields is not justified by the physics of biological tissues, even though EM wave propagation effects are negligible. This theoretical foundation is internally consistent and properly referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The WETCOW theory predicts the existence of weakly evanescent transverse cortical waves that propagate throughout the brain volume, particularly along tissue boundaries and perpendicular to fiber directions. These waves arise from tissue anisotropy and inhomogeneity (C11, C33) and have an inverse frequency-wavelength relationship allowing brain-wide propagation (C34). The theory purportedly explains diverse phenomena including extracellular spiking, signal synchronization, and neuronal avalanches (C37-C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The WETCOW theory is presented primarily through theoretical derivations and citations to the authors' own prior work (C37-C39). While the mathematical framework appears internally consistent, the experimental validation of WETCOW waves as distinct physical entities is limited. The claims about explaining diverse brain phenomena (C37-C39) rely entirely on self-citations without independent experimental confirmation in this manuscript. The theory requires more rigorous experimental validation beyond the authors' own publications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C85",
+      "C87",
+      "C92",
+      "C93"
+    ],
+    "result": "The SPECTRE method solves the inverse EEG problem by inverting a dynamical wave equation (C92) using a pseudo-spectral computational approach that incorporates tissue properties at every voxel (C44, C93) without requiring predefined dipole sources or surface meshes (C43). This approach can reconstruct time-dependent electric field potentials throughout the brain volume (C45) with greater flexibility than traditional source localization methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 and C85-C93 describe the computational methodology of SPECTRE with internal consistency. The pseudo-spectral approach is well-established in computational physics, and the authors clearly distinguish their method from traditional source localization. The computational efficiency claims (C94, C97) provide concrete performance metrics. However, the method's validity ultimately depends on whether the underlying WETCOW model accurately represents brain electrodynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SPECTRE reconstructions from simultaneous EEG/fMRI visual task data show spatial distributions similar to fMRI in the 0-1 Hz frequency band (C50), with high correlations in inferior brain regions (C53) but weaker correlations in superior regions possibly due to fMRI distortions (C54). SPECTRE achieves higher spatial resolution than fMRI without geometric distortions (C51, C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C54 are supported by visual comparisons (Figure 1) and quantitative correlation data (Figure 3). The correlation coefficients show regional variation consistent with known fMRI artifacts. The single-subject analysis is appropriate given individual variability. However, the comparison is limited to low-frequency bands where fMRI is most sensitive, and the claim of 'higher spatial resolution' (C51) is somewhat circular since SPECTRE inherits resolution from the anatomical MRI template used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In a simultaneous EEG/fMRI attention paradigm, SPECTRE detected expected alpha-band modulations in occipital cortex (C55, C56) and frontal cortex (C57) with consistent anatomical localization across subjects (C58). Correlation coefficients between SPECTRE and fMRI in defined ROIs ranged from 0.70-0.84 (C59, C60). SPECTRE identified additional activations in frontal, temporal, and auditory cortex not detected by fMRI (C61, C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are supported by data in Figures 4-6 and cited literature on attention paradigms. The alpha-band modulations are well-established phenomena, and the correlation coefficients provide quantitative validation. The detection of activations not seen in fMRI (C61, C62) is plausible given fMRI's known limitations in certain brain regions. However, without independent verification (e.g., from intracranial recordings in these regions), these additional activations remain suggestive rather than definitively validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C65"
+    ],
+    "result": "Validation using intracranial EEG from epilepsy patients demonstrated that SPECTRE reconstructions from surface electrodes accurately reflect the spatial localization of deep electric fields. Statistical analysis across 44 events in 5 subjects showed high correlations between full-array and surface-only reconstructions, with significant differences only when comparing deep-only to surface-only sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by rigorous statistical analysis (Figure 9) showing that surface-based SPECTRE reconstructions correlate highly with full intracranial array reconstructions. The t-tests demonstrate that full-surface correlations are statistically indistinguishable from full-deep correlations (p=0.24), while deep-surface correlations differ significantly. This provides strong evidence that SPECTRE can reconstruct deep electrical activity from surface measurements. The use of epilepsy patients with known seizure foci provides ground truth for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "SPECTRE analysis of a gambling task in 500 subjects revealed activation in key regions of the brain's reward circuit, including frontal cortex, anterior cingulate, accumbens, and amygdala (C73, C75, C76), consistent with known reward circuitry from prior fMRI studies (C68, C69). Deactivations were observed in supplementary motor cortex and parietal regions (C74). Statistical significance was established at p<10^-8 (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by data in Figures 11-13 showing activation patterns consistent with established reward circuitry literature (C66-C72). The large sample size (500 subjects) and rigorous statistical analysis (p<10^-8) strengthen the findings. The activated regions align with prior fMRI studies of reward processing. However, the authors acknowledge that traditional statistical methods may underestimate significance due to SPECTRE's incorporation of spatiotemporal clustering (C78, C79), which complicates interpretation of p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "SPECTRE retains EEG's high temporal/frequency resolution (C3) while achieving spatial resolution comparable to or better than fMRI (C4). The method can interrogate specific frequency bands (C108) and identified robust activations not detectable with fMRI alone (C111), as validated through multiple experimental paradigms (C110).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C108, C110, C111 are supported by the validation studies presented. The temporal resolution claim (C3) is inherent to EEG data. The spatial resolution claims (C4) are demonstrated through comparisons with fMRI showing similar or superior localization. The detection of activations not seen in fMRI (C111) is shown in Figures 6-7. However, the claim of 'better than fMRI' spatial resolution should be qualified\u2014SPECTRE's resolution is limited by the anatomical MRI template and electrode density, not fundamentally superior to fMRI in all cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "SPECTRE differs fundamentally from traditional source localization methods, which solve Poisson's equation for static dipole sources (C82, C83, C84, C90, C91) rather than inverting dynamical wave equations (C92). SPECTRE demonstrates superior computational efficiency, processing high-resolution data in minutes with modest memory requirements (C94, C97), while attempts to run comparable analyses with LoretaKey1 failed due to memory limitations (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C88-C92 accurately characterize the fundamental differences between SPECTRE and source localization methods, supported by appropriate citations. The computational efficiency claims (C94, C96, C97) are supported by concrete performance data. However, the comparison with LoretaKey1 (C96) is somewhat unfair\u2014the authors attempted to use far more dipoles than the software was designed for. A more appropriate comparison would use LoretaKey1 with its standard configuration, though this would still highlight fundamental methodological differences rather than just computational efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104"
+    ],
+    "result": "fMRI measures blood oxygenation changes (C99) related to metabolism and hemodynamics (C100) rather than direct electrical activity, and its spatial-temporal dynamics do not correspond exactly to electrical activity patterns (C101). fMRI suffers from geometric distortions, signal loss near air-tissue interfaces (C103), and artifacts from physiological variations (C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 accurately describe well-established characteristics and limitations of fMRI, supported by appropriate citations (C99, C104). These are not novel findings but provide important context for understanding why SPECTRE and fMRI may show different activation patterns. The characterization of fMRI limitations is fair and well-documented in the neuroimaging literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "SPECTRE successfully reconstructed the brain's reward circuit from EEG data during a gambling task (C112), demonstrating broad applicability to any EEG study (C113). The method offers practical advantages over fMRI in terms of cost, portability, and ease of use (C114, C115), with potential for democratizing neuroimaging worldwide (C117).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 are supported by the reward circuit data and represent reasonable conclusions about SPECTRE's potential applications. The practical advantages of EEG over fMRI (C114, C115) are well-established. The claim about democratization of medicine (C117) is somewhat speculative but reasonable given EEG's lower cost and greater accessibility. However, SPECTRE still requires high-resolution anatomical MRI data for optimal performance, which may limit accessibility in resource-poor settings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C24",
+      "C26"
+    ],
+    "result": "The manuscript provides historical and theoretical background on brain electrical activity, including the neuron doctrine (C15), action potentials (C16), traveling waves (C17), and properties of Maxwell's equations in biological tissues (C19, C22, C24, C26). These claims establish context for the WETCOW theory and SPECTRE method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19, C22, C24, C26 are well-established facts from neuroscience and physics, appropriately cited where relevant. These provide necessary background but are not novel contributions. The characterization of the quasi-static approximation's consequences (C24, C26) is mathematically correct and helps motivate the need for the WETCOW model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The conductivity tensor in brain tissue is closely related to but not identical to the diffusion tensor (C47), often assumed to share the same eigenvectors (C48) with a strong linear relationship between eigenvalues (C49). This relationship allows SPECTRE to estimate tissue electrical properties from anatomical MRI without requiring diffusion MRI data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 accurately describe the established relationship between conductivity and diffusion tensors in brain tissue, which is well-documented in the literature. This is important methodological context explaining how SPECTRE can operate without diffusion MRI data, though the authors acknowledge that incorporating dMRI data could improve conductivity tensor estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Statistical significance determination in SPECTRE using traditional methods may underestimate activation significance (C78) because the EFD method inherently incorporates spatiotemporal clustering (C79). Statistical analysis was performed using standard AFNI tools (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 raise an important methodological concern about interpreting statistical significance in SPECTRE. The authors acknowledge that their probabilistic framework treats spatially and temporally coherent patterns as more probable, which could affect traditional statistical inference. However, they do not provide a clear alternative framework for assessing significance. This creates uncertainty about how to properly interpret p-values from SPECTRE analyses and whether the reported statistical significance (e.g., p<10^-8 in C80) is comparable to traditional neuroimaging studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "There is a long-standing belief that subcortical electrical activity cannot be detected from scalp EEG due to volume conduction limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 accurately represents a widely held view in the EEG community, supported by citation to Nunez et al., 1997. This provides important context for the significance of SPECTRE's claimed ability to reconstruct deep brain activity.",
+    "result_type": "MINOR"
+  }
+]

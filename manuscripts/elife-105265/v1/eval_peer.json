@@ -1,0 +1,90 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C40",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56"
+    ],
+    "result": "Using the large-scale SGA dataset of yeast colony growth rates, the authors demonstrate that the Product neutrality function better predicts double-mutant fitnesses than Additive or Minimum neutrality functions across a broad range of fitness defects, with the Product function showing minimal systematic bias (median residual -0.8% vs -16.8% and 9.8% for Minimum and Additive functions at 72% single-mutant fitness).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states the study 'confirmed that the product function outperformed other neutral functions in predicting double-mutant fitness, showing no bias between negative and positive epistatic interactions' and found the approach 'innovative.' The editor notes the authors 'reach the valuable conclusion that the product function is a good null model.' Reviewer 1 acknowledges this as a 'Strength' stating 'confirmation that the product function provides a more reliable prediction of double-mutant fitness compared to other neutral functions is valuable.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C54",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors use the Scott-Hwa bacterial growth model to provide mechanistic explanation for Product neutrality, showing that growth-optimizing feedback coupling metabolic and translational sectors leads to Product neutrality function fitting better than Additive or Minimum functions, and that without this feedback, the Minimum neutrality function would apply instead.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 1 explicitly challenges this result, stating 'there is no valid justification for linking these two systems' and that 'the Scott-Hwa model heavily rely on specific molecular mechanisms, such as ppGpp-mediated regulation...Yeast cells lack this regulatory mechanism, making it inappropriate to directly apply bacterial growth models to yeast.' Reviewer 1 further criticizes that 'using such a narrow model to explore the mechanistic origin of product neutrality observed on a genome-wide scale appears to be inappropriate.' The editor notes 'the justification of some assumptions is incomplete.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C54"
+    ],
+    "result": "The authors analyze the Weisse model (a more complex bacterial growth model) and show that the Product neutrality function generally describes mutational results better than alternatives, with parameter pairs involving transport, metabolism, and transcription following Product neutrality even more closely than the Scott-Hwa model, and deviations driven by nonlinear Michaelis-Menten kinetics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 1 explicitly challenges the applicability of the Weisse model to yeast, stating 'In the original paper by Weisse et al. (PNAS, 2015), however, the model parameters were fitted solely to experimental data from E. coli, and the model's applicability to yeast was never assessed.' Reviewer 1 concludes 'for neither the Scott-Hwa model nor the Weisse model has it been demonstrated that the entire model quantitatively fits experimental data from yeast' and that 'Arguments based on either the Scott-Hwa model or the Weisse model fail to account for the generality of product neutrality across diverse genetic perturbations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The authors claim that observations from bacterial models, including that cellular ribosome fraction increases with growth rate, are generic and also seen in yeast S. cerevisiae, supporting the applicability of bacterial growth models to yeast.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 1 explicitly rejects this justification, stating 'A positive correlation between growth rate and RNA/protein ratio, often observed in yeast, supports only a limited portion of either model, and does not constitute validation of the models as a whole.' Reviewer 1 further notes that 'in most viable yeast deletion mutants with reduced growth rates, the expression of ribosomal proteins remained largely unchanged, contrary to the predictions of the Scott-Hwa model,' demonstrating experimental evidence contradicting the model predictions.",
+    "result_type": "MAJOR"
+  }
+]

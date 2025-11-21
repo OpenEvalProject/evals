@@ -1,0 +1,2596 @@
+{
+  "submission": {
+    "id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:23:22.656882Z",
+    "updated_at": "2025-11-21T16:23:22.656882Z"
+  },
+  "content": [
+    {
+      "id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "content_type": "manuscript",
+      "content_text": "# A tight relationship between BOLD fMRI activation/deactivation and increase/decrease in single neuron responses in human association cortex\n\n## Authors\n\n- Marie-Alph\u00e9e Laurent<sup>1</sup> ([ORCID: 0000-0001-6585-7257](https://orcid.org/0000-0001-6585-7257)) \u2020\n- Corentin Jacques<sup>1</sup>\n- Xiaoqian Yan<sup>2</sup>\n- Pauline Jurczynski<sup>3</sup>\n- Sophie Colnat-Coulbois<sup>1</sup>\n- Louis Maillard<sup>1</sup>\n- Steven Le Cam<sup>3</sup>\n- Radu Ranta<sup>3</sup>\n- Benoit R Cottereau<sup>6</sup> ([ORCID: 0000-0002-2624-7680](https://orcid.org/0000-0002-2624-7680))\n- Laurent Koessler<sup>1</sup>\n- Jacques Jonas<sup>1</sup>\n- Bruno Rossion<sup>1</sup> ([ORCID: 0000-0002-1845-3935](https://orcid.org/0000-0002-1845-3935)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 de Lorraine, CNRS, IMoPA Nancy France ([ROR:04vfs2w97](https://ror.org/04vfs2w97))\n2. Fudan University, Institute of Science and Technology for Brain-Inspired Intelligence Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))\n3. Universit\u00e9 de Lorraine, CNRS, CRAN Nancy France ([ROR:04vfs2w97](https://ror.org/04vfs2w97))\n4. Universit\u00e9 de Lorraine, CHRU-Nancy, Service de Neurochirurgie Nancy France ([ROR:04vfs2w97](https://ror.org/04vfs2w97))\n5. Universit\u00e9 de Lorraine, CHRU-Nancy, Service de Neurologie Nancy France ([ROR:04vfs2w97](https://ror.org/04vfs2w97))\n6. Centre de Recherche Cerveau et Cognition, Universit\u00e9 Toulouse 3 Paul Sabatier, CNRS Toulouse France ([ROR:02v6kpv12](https://ror.org/02v6kpv12))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe relationship between Blood-Oxygen-Level-Dependent (BOLD) responses in functional magnetic resonance imaging (fMRI) and increases or decreases in neural firing rate across human brain regions, especially the association cortex, remains largely unknown. Here, we contrast direct measures of neuronal activity in two adjacent brain regions of the fusiform gyrus (FG) associated with fMRI increases (lateral FG portion) or decreases (medial FG portion) of the same category-selective neural activity. In both individual brains tested across multiple recording sessions, a frequency-tagging stimulation objectively identified a substantial proportion (about 70%) of face-selective neurons. While single units recorded in the lateral FG showed a selective increase to faces, neurons localized in the medial FG decreased spiking activity selectively to faces. Beyond a relative reduction to faces compared to non-face objects, about a third of the single neurons found in the medial FG showed genuine suppression of baseline spiking activity upon presentation of a face. These observations clarify the nature of face-selective neural activity in the human brain, which can be expressed both as increases and active suppressions of spiking activity and, more generally, shed light on the physiological basis of the fMRI signal.\n\n## Introduction\n\nFunctional magnetic resonance imaging (fMRI) has revolutionized our understanding of human brain function. While animal studies have characterized Blood-Oxygenation-Level-Dependent (BOLD) fMRI activation as a correlate of local synaptic activity (Logothetis et al., 2001; Bartolo et al., 2011), the cellular mechanisms of deactivation (negative BOLD signals) remain unknown. Since BOLD activity relies on contrasts between (two) conditions of interest, fMRI deactivations have been attributed to various causes, that is (relative) decreases in neuronal activity (Shmuel et al., 2006; Devor et al., 2008; Boorman et al., 2010), (relative) increases in neural activity (without concomitant compensation by cerebral blood flow [CBF] increase; Schridde et al., 2008), or hemodynamic contributions (\u2018blood stealing\u2019; Harel et al., 2002). However, notwithstanding recent evidence of fMRI deactivation associated with electrocorticographic alpha power decrease in the human visual cortex (Fracasso et al., 2022), most studies have been carried out in animal models and primary sensory or motor regions. Therefore, the relationship between BOLD responses and increases or decreases in neuronal firing rate across human brain regions, especially the association cortex, remains unknown.\n\nHere, thanks to a unique opportunity to record fMRI and spiking activity in neighboring populations of neurons of the same region of the association cortex, we shed light on the nature of the relationship between category-selective activity recorded at macroscopic and cellular scales. Specifically, two patients with refractory epilepsy (P1, P2) were implanted with hybrid macro-microelectrodes in their fusiform gyrus, a hominoid-specific cortical structure (Weiner and Zilles, 2016) that is critically involved in face recognition (Cohen et al., 2019). While microelectrodes recording single-unit activity located in the lateral portion of P1\u2019s middle fusiform gyrus (MidFG) (i.e., in cytoarchitectonic area FG4; Lorenz et al., 2017), a region known to elicit larger BOLD activity to faces than non-face objects (\u2018Fusiform Face Area\u2019, FFA; Kanwisher et al., 1997), in P2 they fell in the medial MidFG portion (FG3), in which lower BOLD responses to faces than objects are typically observed (Pelphrey et al., 2003; Kanwisher, 2017; Gao et al., 2018). By recording face-selective neural responses both in spiking activity and fMRI signals (independent sessions) in the same brains and in two neighboring regions, we tested the hypothesis of a systematic relationship between the two types of signals. In particular, we hypothesized that fMRI deactivations to faces were associated with a majority of face-selective decreases in spiking activity.\n\n## Results\n\nIn both MidFG regions sampled, robust differential activity to natural images of faces vs. non-face categories was objectively recorded with a similar well-validated frequency-tagging paradigm in fMRI (Figure 1A) and microelectrode electrophysiological recordings (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104779/elife-104779-fig1-v1.jpg)\n\n**Figure 1.:** In both cases, the same variable natural non-face images alternate at a 6 Hz rate (1 fixation/image). (A) During a 405 s fMRI run, a \u2018mini-burst\u2019 of 7 images of variable faces (purple: \u2018F\u2019) alternating with 6 non-face object images (orange: \u2018O\u2019) is presented every 9 s (0.111 Hz). A full run is composed of 44 cycles (3 s shown here). (B) During intracerebral recordings, variable face images are inserted periodically every fifth image (1.2 Hz). Each recording includes two 70 s stimulation sequences (3 s shown here). With both recording methods (and EEG; Rossion et al., 2015), this paradigm provides robust population-level face-selective activity devoid of low-level sensory confounds at the tagged frequencies. Here it is applied to single and multi-unit recording activity in the human fusiform gyrus.\n\n### fMRI category-selective responses\n\nFigure 2A and D illustrate the category-selective regions identified with fMRI, on axial, coronal, and sagittal slices in both participants (Z > 3.1; p < 0.001), relative to the microelectrodes location. Fast Fourier Transform (FFT) of the BOLD response time courses is used to define face-selective voxels in the frequency domain (0.111 Hz; Gao et al., 2018). BOLD frequency spectra at each voxel are transformed into Z-scores, which can either be positive (higher response to face than non-face stimuli, i.e., BOLD signal increase) or negative (lower response to faces than non-face stimuli, i.e., BOLD signal decrease).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104779/elife-104779-fig2-v1.jpg)\n\n**Figure 2.:** (A), (D) Significant face-selective activations (hot colors) and deactivations (cold colors) on axial, coronal, and sagittal slices (Z > 3.1; p < 0.001). The estimated location of the microelectrode (green circle) falls in left MidFG activation in P1 and right MidFG deactivation in P2. (B), (E) Representative raster plots of two face-selective single-units (SU) showing activity increase in P1 and decrease in P2 to faces, respectively. The representative face-selective SU in panel E also exhibits a high increase in firing rate to the general visual stimulation at 6 Hz. Each line corresponds to a 1 s epoch time-locked to the onset of a face (at 0 s), from a 140 s of recording. SU waveforms are shown in the upper-right corners. (C), (F) Average time courses of all face-selective SU identified (N = 45 across 4 sessions in P1, N = 99 across 7 sessions in P2; Z > 2.32, p < 0.01), showing response increase to faces in P1 and decrease to faces in P2. Note that the average time courses are computed on notch-filtered data to remove the general visual response at 6 Hz and harmonics (see Materials and methods).\n\nAs expected, faces elicited larger BOLD responses than non-face objects in the lateral MidFG, but lower responses in the medial MidFG (Pelphrey et al., 2003; Gao et al., 2018). Microwires in P1 (estimated Talairach location \u221240, \u201346, \u201319; Figure 2A) fell in the lateral MidFG face-selective region: the Fusiform Face Area (\u2018FFA\u2019, peak coordinate: \u221235, \u201351, \u201318; Quian Quiroga et al., 2023), while microwires in P2 (29, \u221241, \u221212; Figure 2D) were located in the medial MidFG, an unprecedented sampled region with lower (deactivated) BOLD signal for faces.\n\n### Cellular category-selective responses\n\nRecordings of category-selective spiking activity in P1 and P2 took place over up to 11 days, with single units detected on 7 microwires per session. Across all independent sessions (i.e., on different half-days), we recorded 245 units (N = 206 single-units, SU and N = 39 multi-units, MU; pooled over 4 sessions for P1 and 7 sessions for P2) firing to variable pictures of faces and objects. Following FFT, common visual responses to faces and objects were identified at the base frequency rate and harmonics (6, 12, and 18 Hz) while face-selective responses were measured at the specific face-stimulation frequency and harmonics (i.e., 1.2, 2.4, 3.6, and 4.8 Hz; Figure 1B; Rossion et al., 2015; Jonas et al., 2016). Despite a brief recording time for each unit (2 sequences of 70 s), only a small proportion of single neurons failed to respond (i.e., no significant base rate response: N = 10/62, 16.1% in P1; N = 17/144 11.8% in P2; all Z < 1.64, all ps < 0.05; and no difference between participants, p = 0.54, Pearson\u2019s \u03c7\u00b2). Among all visually responsive neurons, we found a very high proportion of face-selective neurons (p < 0.05) in both activated and deactivated MidFG regions (P1: 98.1%; N = 51/52; P2: 86.6%; N = 110/127). Even at a more conservative threshold (p < 0.01), strong face-selectivity is observed (P1: 86.5%; N = 45/52; P2: 77.9%; N = 99/127; no difference between the two individuals, p = 0.27, Pearson\u2019s \u03c7\u00b2 test).\n\nWe then determined whether face-selective single neurons (p < 0.01) recorded in activated or deactivated face-selective regions exhibited different types of responses to faces relative to non-face objects. While the vast majority of face-selective neurons in the lateral MidFG (P1) showed a significant relative increase in spike rate to faces (88.9% increases [N = 40/45] vs 11.1% decreases [N = 5/45]; Figure 2B and C), most neurons in the medial MidFG (P2) showed significant relative spike rate decrease to faces (95.9% decreases [N = 95/99] vs 4.1% increases [N = 4/99]; Figure 2E and F). While the mean onset response latency did not differ between increases and decreases (118.2 ms vs. 127.3 ms, respectively; p > 0.05, two-tailed percentile bootstrap; Figure 2C and F), a significantly lower response (i.e., absolute average firing rate) was found for decreases than increases ([130\u2013300 ms]; 3.69 spikes/s for increases, ranging from 0.99 to 7.42 spikes/s; \u20132.73 spikes/s for decreases, ranging from \u20130.44 to \u20139.67 spikes/s; t-test p < 0.01). A final noteworthy observation is that, among the 95 single units showing a reduced firing rate to faces (P2), 34 lacked a significant general visual response (at 6 Hz +12 Hz; i.e., 34.3%; N = 21, 22.1% when only first 6 Hz harmonic considered, ps >0.01). Beyond a mere relative reduction to faces compared to non-face objects, responses of such \u2018face-exclusive\u2019 single neurons therefore appear to reflect genuine suppression of baseline spiking activity upon presentation of a face.\n\n## Discussion\n\nAlthough BOLD signals correlate better with local field potentials (LFP) than spikes on a trial-by-trial basis (Logothetis et al., 2001), positive correlations have been observed between SU and BOLD in human (Mukamel et al., 2005; Nir et al., 2007) and non-human primates (Goense and Logothetis, 2008). Here, thanks to a unique combination of fMRI and microelectrode recordings in the same individual human brains, we report a striking correspondence between increases/decreases in BOLD activity and (SU) neuronal firing, in two neighboring areas of the human association cortex. By showing that the sign of the BOLD signal fluctuation during visual stimulation matches the sign of SU activity, our findings shed light on the physiology of BOLD signals, revealing in particular that BOLD decreases can be due to relative, or absolute (or a combination of both), spike suppression in the human brain. Such transient spikes suppression could be due to suppression/reduction of synaptic inputs to the recorded neuron(s) or to inhibitory inputs to the neuron(s). While differential recordings in the same hemisphere(s) and individual brains would have been optimal, our results are unlikely to be due to differences between the two individuals or hemispheres reported, for two reasons. First, notwithstanding the right hemisphere\u2019s dominance in human face recognition (Jonas et al., 2016; Kanwisher, 2017; Gao et al., 2018), the same contrasted pattern of BOLD activation/deactivation for faces in the lateral/medial portions of the fusiform gyrus, respectively, has been systematically observed across hemispheres (Pelphrey et al., 2003; Figure 2). Second, while a larger number of single units was found for P2 than P1 recordings, the proportions of face-selective units did not differ between the two individuals tested.\n\nUntil now, the cellular basis of the relative BOLD decrease to faces in the medial portion of the fusiform gyrus, attributed to a smaller increase to faces relative to non-face objects or an absence of response to faces (Kanwisher, 2017), has remained somewhat of a mystery. Neurons showing suppression of activity to faces have been reported in the monkey inferior temporal cortex (Salehi et al., 2020), including inside face-selective cortical regions (Tsao et al., 2006; Bell et al., 2011). However, both the lack of reported BOLD deactivation to faces in the monkey brain and of a fusiform gyrus in non-hominoid primates Weiner and Zilles, 2016 have prevented single-unit recordings in macaque monkeys to address this issue. Here, our neurophysiological recordings in humans suggest that faces do not only elicit a strong decrease of neuronal activity relative to non-face objects in the medial MidFG, but a genuine suppression of baseline spiking activity in a substantial proportion of the units recorded. Thus, beyond contributing to clarifying the physiological basis of the fMRI signal, our study sheds light on the nature of face-selective neural activity in the human brain, which can be expressed both as increase and active suppression of spiking activity. Inhibitory cellular activity is thought to play an important balancing role in maintaining stable function of cortical circuits (Vogels et al., 2011) and has been shown to play a key role in cortical category selectivity (Wang et al., 2000). Further direct recordings in the human association cortex will be necessary to determine the functional relevance (i.e., relationship to visual recognition behavior) and the cellular mechanisms (linked to cyto- and myelo-architecture; Lorenz et al., 2017) underlying these category-selective (excitatory and) inhibitory neuronal activities.\n\n## Materials and methods\n\n### Participants\n\nThe study included two right-handed participants (two males, aged 23 and 46) who were patients undergoing clinical intracerebral evaluation with depth electrodes (SEEG; Talairach and Bencaud, 1973) for refractory partial epilepsy in the Epilepsy Unit of the University Hospital of Nancy, France, in 2019 (P1) and 2023 (P2). The participants gave written informed consent to participate in the study (REUNIE, 2015-A01951-48), which was approved by a national ethical committee (CPP Est III, N\u00b016.02.01).\n\n### Intracerebral recordings acquisition\n\nElectrophysiological data were recorded from Behnke-Fried hybrid micro-macro electrodes (Ad-Tech Medical Instrument). Intracerebral depth electrodes were stereotactically implanted within the participant\u2019s brains to delineate their seizure onset zone for clinical purposes. Electrode implantation sites were determined based on non-invasive data collected during the early stages of the investigation and were verified by CT scan fused with a pre-operative T1-weighted MRI. The present report focuses on recordings from the macro-microelectrodes, i.e., electrodes with macro-contacts modified to include 8 recording microwires and one reference, protruding about 3\u20134 mm beyond the tip of the macro-electrode (Ad-Tech Medical; see Salado et al., 2018 for details about the macroelectrode implantation procedure). The macro-microelectrodes targeted the left (P1) and the right (P2) MidFG.\n\nThe microwires\u2019 signals were recorded at a 30 kHz sampling rate, using a 256-channel amplifier (BlackRock Microsystems), and recording activity was band-pass filtered (0.3\u20137500 Hz). Here, we report microelectrode data recorded during 3 days (8 sequences performed in P1) and 11 days (14 sequences performed in P2). These differences across participants were due to the clinical context in which the experiment took place. Participants were tested individually and seated at 80 cm from the computer screen.\n\n### Microwires localization in the individual anatomy\n\nThe exact position of each contact from the micro-macro electrode relative to the individual brain anatomy was determined in each participant\u2019s brain by coregistrating the post-operative CT scan with a T1-weighted MRI of the patient. The microwires\u2019 coordinates were estimated at approximately 4 mm from the tip of the macroelectrode. In addition, the location of microwires relative to fMRI-defined face-selective regions was determined by having all participants perform an fMRI face localizer a few months after the SEEG procedure, using an fMRI version of the frequency-tagging paradigm providing high SNR and reliability (Gao et al., 2018). After fMRI scanning, estimated microelectrode coordinates were rendered into the T1-weighted MRI co-registered and normalized to ACPC space with the functional Z-score map, using MRIcroGL for visualization. The location of the microelectrodes was also defined in relation to the boundaries of the cytoarchitectonic areas FG2/FG4 and FG1/FG3 (Rosenke et al., 2018).\n\n### Stimuli\n\nStimuli were selected from a large pool of 200 to 218 non-face object images and 45 to 48 face images (as in e.g., Jonas et al., 2016), presented in grayscale or color sequences. Each image contained an unsegmented object or face near the center, varying significantly in size, viewpoint, lighting conditions, and background (Figure 1). Images were equalized for mean pixel luminance and contrast, but low-level visual cues associated with the two categories (faces and objects) remained highly variable, naturally minimizing the contribution of low-level visual cues to the face-selective neural responses (Rossion et al., 2015).\n\n### Face localizer paradigms\n\nA well-validated Fast Periodic Visual Stimulation (FPVS) face localizer paradigm was performed to define face-selective neural activity. Highly variable natural images of faces were embedded periodically within a rapid 6 Hz stream of object images. In the fMRI version (from Gao et al., 2018; also, Laurent et al., 2023), mini-face blocks (\u2018bursts\u2019) were presented for 2.167 s every 9 s to account for the sluggishness of the BOLD response (i.e., F = 1/9 = 0.111 Hz). Each mini-block consisted of a set of seven face images alternated with six non-face object images to avoid category adaptation and maximize the contrast between faces and objects (Figure 1A). Each fMRI sequence lasted 405 s and contained 44 cycles of face bursts (including a 4.5 s baseline at both the beginning and end of each sequence, respectively). During intracerebral recordings, highly variable natural images of faces were inserted periodically every fifth image (i.e., face-selective frequency at 1.2 Hz = 6/5 Hz) as usually performed (Figure 1B; Rossion et al., 2015; Jonas et al., 2016). A stimulation sequence lasted 70 s, including 66 s of stimulation at full contrast flanked by 2 s of fade-in and fade-out, with gradual increases and decreases in contrast, respectively. All images were presented with a sinusoidal stimulation contrast to provide a smooth transition between successive images. Participants were unaware of the periodicity of the faces. During both fMRI and intracerebral recordings, participants stared at a small black cross presented at the center of the stimuli and detected rare brief nonperiodic color changes (70\u201310 times per sequence for fMRI/iEEG respectively, for 500 ms) of the fixation cross (black to red). The experiments were conducted using MATLAB for P1 and Java 8 for P2.\n\n### Electrophysiology: spike sorting\n\nSpike detection and sorting/clustering were carried out using an automatic algorithm, based on a Bayesian approach (Le Cam et al., 2023). Neurons were classified into clusters based on (1) non-causal band-pass (300\u20136000 Hz) filtering, (2) Median Absolute Deviation-based spike detection, and (3) artifact removal consisting of removing bounces and events common to more than 3 microwires. The sorted clusters were visually reviewed and classified into single-units (SU) or multi-units (MU) based on their spike shape, variance, inter-spike interval distribution, and the presence of a refractory period. In all the sessions held by the two participants, 299 SU and 62 MU were identified. Across all independent sessions (i.e., recorded on different half-days), 206 SU and 39 MU were retained for analyses (P1: N = 62 SU, N = 13 MU; P2: N = 144 SU, N = 26 MU). An average of 2 units per contact was isolated.\n\n### Electrophysiology: frequency-domain and time-domain analyses\n\nAnalyses were performed using the free software Letswave 6, running on MATLAB R2022a. Signal processing and frequency-domain analyses were similar to previous SEEG studies (Jonas et al., 2016; Hagen et al., 2020), except they were applied to the sorted MU/SU raster trains rather than raw SEEG voltage fluctuations. A discrete Fast Fourier Transform (FFT) was applied to the spike trains, and the resulting amplitude spectrum was cut into 1 Hz segments centered on the face-selective frequency and its three additional harmonics (i.e., 1.2 Hz, 2.4 Hz, 3.6 Hz, and 4.8 Hz), as well as on the base stimulation frequency and its harmonics (i.e., 6 Hz and 12 Hz). The amplitude of these FFT segments was summed and transformed into a Z-score computed as the difference between the amplitude at the target frequency bin and the mean amplitude of 20 surrounding bins (10 on each side) divided by the standard deviation of amplitudes in the corresponding 20 bins. SNR spectra were also calculated as the ratio between the amplitude at each frequency bin and the average of the corresponding 20 surrounding bins (11 on each side, excluding the 2 bins directly adjacent to the bin of interest). A cluster (SU or MU) was considered as showing a significant response for faces and classified as \u2018face-selective\u2019 if the Z-score at the target frequency bin exceeded 1.64 (i.e., p < 0.05 one-tailed). To isolate face-selective responses from responses to non-face objects in the time domain (as in Figure 2C and F), a FFT notch filter (filter width = 0.05 Hz) was then applied to the 70 s single or multi-units spike trains to remove the general visual response at 6 Hz and two additional harmonics (i.e., 12 and 18 Hz). To account for the sinusoidal modulation of contrast, the face onset time was shifted forward by 33 ms (~1/5 of a 6 Hz cycle duration). This delay was estimated by comparing SEEG responses to sequences presented with sinewave or squarewave (i.e., abrupt) contrast modulation of visual stimulation. The onset of face-selective response was delayed by 30\u201335 ms for sinusoidal visual stimulation, which corresponds to 4 screen refresh frames (33 ms) and 35% of the full contrast. The spike trains of each identified cluster were then segmented into 1 s segments around face onset, and the resulting epochs were temporally smoothed (20 ms time window) and averaged. The net average spike rate was calculated by subtracting each sequence\u2019s mean baseline spike rate in a [-0.166\u20130 s] time window relative to face onset. Finally, the latency was computed as the time point at which net firing crossed the baseline +/-2.58 s.d. value (i.e., p < 0.01, two-tailed percentile bootstrap) for at least 30 ms, as described in Jacques et al., 2022.\n\n### fMRI acquisition\n\nThe two participants were scanned at the CHRU-Nancy, with a 3T Siemens Magnetom Prisma system (Siemens Medical System, Erlangen, Germany) with a 64-channel head-neck coil. Anatomical images were collected using a high-resolution T1-weighted magnetization-prepared gradient-echo image (MP-RAGE) sequence (192 sagittal slices, TR = 2300 ms, TE = 2.6 ms; flip angle (FA)=9\u00b0, field of view (FOV) = 256 \u00d7 256). Functional images were collected with a T2*-weighted simultaneous multi-slice echo planar imaging (SMS EPI) sequence (TR = 1500 ms, TE = 30 ms, FA = 72\u00b0, FOV = 240 \u00d7 240 mm2, voxel size = 2.5 mm isotropic, matrix size = 96 \u00d7 96 for sequences done in 2019 or matrix size = 80 \u00d7 80 for sequences done in 2022, interleaved), which acquired 44 oblique-axial slices covering the entire temporal and occipital lobes. The total duration of each sequence (run) for P1 (tested in 2019) was 333 s, including 9 s of dummy scans (222 TRs). The total duration of each run for P2 (tested in 2022) was 405 s including 9 s of dummy scans (270 TRs). Images were back-projected onto a projection screen by an MRI-compatible LCD projector. The participants observed the sequences through a mirror placed within the FR head coil. The images subtended a viewing angle of 8\u00b0 \u00d7 8\u00b0 (33.4 cm \u00d7 33.4 cm) at a viewing distance of 240 cm. Three fMRI sequences were performed for each patient, who was scanned 6\u20138 weeks after the microelectrode recordings.\n\n### fMRI analyses\n\nAs in Laurent et al., 2023, the volumes of each run were first rigidly realigned with each other, and a mean functional image of the runs was computed for co-registration with the anatomical image, using SPM12. The volumes were also spatially smoothed with a Gaussian kernel of 2 mm (FWHM; i.e., full width at half maximum). The functional runs were averaged across runs in the volumetric space. Then, a Fourier analysis was performed using the FFT function in MATLAB without windowing. The FFT was applied to the entire BOLD response time course, and the amplitude spectrum was directly derived from the Fourier transform coefficients. Amplitudes at the face stimulation frequency (i.e., at F = 0.111 Hz) were converted into Z-scores, using the mean and standard deviation of the amplitude at neighboring frequencies (see Gao et al., 2018 for details). The relative activations and deactivations of the neural responses at the face stimulation frequency were defined by the phase of the BOLD response. For each individual, the histogram of phase values (20 bins) of all the voxels with a Z-score > 3.1 and with a positive phase value was calculated. The phase value of the histogram bin that has the largest number was used as the center phase (\u03c6) to define all the voxels with their phase values within \u03c6\u2009\u00b1\u2009\u03c0/2 as activations (+sign) and voxels with their phase values outside of this window as deactivations (\u2212 sign). These signs were then applied to Z-score maps to obtain the final response map.\n",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian B\u00fcchel, University Medical Center Hamburg-Eppendorf Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104779.3.sa0](https://doi.org/10.7554/eLife.104779.3.sa0)\n\nThis valuable short paper is an ingenious use of clinical patient data to address an issue in imaging neuroscience. The authors clarify the role of face-selectivity in human fusiform gyrus by measuring both BOLD fMRI and depth electrode recordings in the same individuals; furthermore, by comparing responses in different brain regions in the two patients, they suggested that the suppression of blood oxygenation is associated with a decrease in local neural activity. The methods are solid and provide a rare dataset of potentially general importance.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104779.3.sa1](https://doi.org/10.7554/eLife.104779.3.sa1)\n\nSummary:\n\nMeasurement of BOLD MR imaging has regularly found regions of the brain that show reliable suppression of BOLD responses during specific experimental testing conditions. These observations are to some degree unexplained, in comparison with more usual association between activation of the BOLD response and excitatory activation of the neurons (most tightly linked to synaptic activity) in the same brain location. This paper finds two patients whose brains were tested with both non-invasive functional MRI and with invasive insertion of electrodes, which allowed the direct recording of neuronal activity. The electrode insertions were made within the fusiform gyrus, which is known to process information abouit faces, in a clinical search for the sites of intractable epilepsy in each patient. The simple observation is that the electrode location in one patient showed activation of the BOLD response and activation of neuronal firing in response to face stimuli. This is the classical association. The other patient showed an informative and different pattern of responses. In this person, the electrode location showed a suppression of the BOLD response to face stimuli and, most interestingly, an associated suppression of neuronal activity at the electrode site.\n\nStrengths:\n\nWhilst these results are not by themselves definitive, they add an important piece of evidence to a long-standing discussion about the origins of the BOLD response. The observation of decreased neuronal activation associated with negative BOLD is interesting because, at various times, exactly the opposite association has been predicted. It has been previously argued that if synaptic mechanisms of neuronal inhibition are responsible for the suppression of neuronal firing, then it would be reasonable\n\nWeaknesses:\n\nThe chief weakness of the paper is that the results may be unique in a slightly awkward way. The observation of positive BOLD and neuronal activation is made at one brain site in one patient, while the complementary observation of negative BOLD and neuronal suppression actually derives from the other patient. Showing both effects in both patients would make a much stronger paper.\n\nComments on revisions:\n\nThe material on lines 165-175 should not be left hidden away in the Methods section. This should be highlighted in the Discussion as a limitation of the current study and an issue that could be improved upon in future studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104779.3.sa2](https://doi.org/10.7554/eLife.104779.3.sa2)\n\nSummary:\n\nThis is a short and straightforward paper describing BOLD fMRI and depth electrode measurements from two regions of the fusiform gyrus that show either higher or lower BOLD responses to faces vs. objects (which I will call face-positive and face-negative regions). In these regions, which were studied separately in two patients undergoing epilepsy surgery, spiking activity increased for faces relative to objects in the face-positive region and decreased for faces relative to objects in the face-negative region. Interestingly, about 30% of neurons in the face-negative region did not respond to objects and decreased their responses below baseline in response to faces (absolute suppression).\n\nStrengths:\n\nThese patient data are valuable, with many recording sessions and neurons from human face-selective regions, and the methods used for comparing face and object responses in both fMRI and electrode recordings were robust and well-established. The finding of absolute suppression could clarify the nature of face selectivity in human fusiform gyrus, since previous fMRI studies of the face-negative region could not distinguish whether face < object responses came from absolute suppression, or just relatively lower but still positive responses to faces vs. objects.\n\nWeaknesses:\n\nThe authors claim that the results tell us about both (1) face-selectivity in the fusiform gyrus, and (2) the physiological basis of the BOLD signal. However, I would like to see more of the data that supports the first claim included in the paper.\n\nThe authors report that ~30% of neurons showed absolute suppression, but those data are not shown separately from the neurons that only show relative reductions. It is difficult to evaluate the absolute suppression claim from the short assertion in the text alone (lines 105-106), although this is a critical claim in the paper.\n\nComments on revisions:\n\nThe authors have provided a figure showing one example neuron that shows absolute suppression in their response to reviewers; I would recommend including a similar panel in one of the paper figures showing data averaged across all neurons classified as showing absolute suppression.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104779.3.sa3](https://doi.org/10.7554/eLife.104779.3.sa3)\n\nSummary:\n\nIn this paper the authors conduct two experiments an fMRI experiment and intracranial recordings of neurons in two patients P1 and P2. In both experiments, they employ a SSVEP paradigm in which they show images at a fast rate (e.g. 6Hz) and then they show face images at a slower rate (e.g. 1.2Hz), where the rest of the images are a variety of object images. In the first patient, they record from neurons over a region in the mid fusiform gyrus that is face-selective and in the second patient, they record neurons from a region more medially that is not face selective (it responds more strongly to objects than faces). Results find similar selectivity between the electrophysiology data and the fMRI data in that the location which shows higher fMRI to faces also finds face-selective neurons and the location which finds preference to non faces also shows non face preferring neurons.\n\nStrengths:\n\nThe data is important in that it shows that there is a relationship between category selectivity measured from electrophysiology data and category-selective from fMRI. The data is unique as it contains a lot of single and multiunit recordings (245 units) from the human fusiform gyrus - which the authors point out - is a humanoid specific gyrus.\n\nWeaknesses:\n\nMy major concerns are two-fold:(i) There is a paucity of data; Thus, more information (results and methods) is warranted; and in particular there is no comparison between the fMRI data and the SEEG data.\n\n(ii) One main claim of the paper is that there is evidence for suppressed responses to faces in the non-face selective region. That is, the reduction in activation to faces in the non-face selective region is interpreted as a suppression in the neural response and consequently the reduction in fMRI signal is interpreted as suppression. However, the SSVEP paradigm has no baseline (it alternates between faces and objects) and therefore it cannot distinguish between lower firing rate to faces vs suppression of response to faces.\n\n(1) Additional data: the paper has 2 figures: figure 1 which shows the experimental design and figure 2 which presents data, the latter shows one example neuron raster plot from each patient and group average neural data from each patient. In this reader's opinion this is insufficient data to support the conclusions of the paper. The paper will be more impactful if the researchers would report the data more comprehensively.\n\n(a) There is no direct comparison between the fMRI data and the SEEG data, except for a comparison of the location of the electrodes relative to the statistical parametric map generated from a contrast (Fig 2a,d). It will be helpful to build a model linking between the neural responses to the voxel response in the same location - i.e., estimate from the electrophysiology data the fMRI data (e.g. Logothetis & Wandell, 2004)\n\n(b) More comprehensive analyses of the SSVEP neural data: It will be helpful to show the results of the frequency analyses of the SSVEP data for all neurons to show that there are significant visual responses and significant face responses. It will be also useful to compare and quantify the magnitude of the face responses compared to the visual responses.\n\n(c) The neuron shown in E shows cyclical responses tied to the onset of the stimuli, is this the visual response? If so, why is there an increase in the firing rate of the neuron before the face stimulus is shown in time 0? The neuron's data seems different than the average response across neurons; This raises a concern about interpreting the average response across neurons in panel F which seems different than the single neuron responses\n\n(d) Related to (c) it would be useful to show raster plots of all neurons and quantify if the neural responses within a region are homogeneous or heterogeneous. This would add data relating the single neuron response to the population responses measured from fMRI. See also Nir 2009.\n\n(e) When reporting group average data (e.g., Fig 2C,F) it is necessary to show standard deviation of the response across neurons.\n\n(f) Is it possible to estimate the latency of the neural responses to face and object images from the phase data? If so, this will add important information on the timing of neural responses in the human fusiform gyrus to face and object images.\n\n(g) Related to (e) In total the authors recorded data from 245 units (some single units and some multiunits) and they found that both in the face and nonface selective most of the recoded neurons exhibited face -selectivity, which this reader found confusing: They write \" Among all visually responsive neurons, we 87 found a very high proportion of face-selective neurons (p < 0.05) in both activated 88 and deactivated MidFG regions (P1: 98.1%; N = 51/52; P2: 86.6%; N = 110/127)'. Is the face selectivity in P1 an increase in response to faces and P2 a reduction in response to faces or in both it's an increase in response to faces\n\n(1) Additional methods(a) it is unclear if the SSVEP analyses of neural responses were done on the spikes or the raw electrical signal. If the former, how is the SSVEP frequency analysis done on discrete data like action potentials?(b) it is unclear why the onset time was shifted by 33ms; one can measure the phase of the response relative to the cycle onset and use that to estimate the delay between the onset of a stimulus and the onset of the response. Adding phase information will be useful.\n\n(2) Interpretation of suppression:\n\nThe SSVEP paradigm alternates between 2 conditions: faces and objects and has no baseline; In other words, responses to faces are measured relative to the baseline response to objects so that any region that contains neurons that have a lower firing rate to faces than objects is bound to show a lower response in the SSVEP signal. Therefore, because the experiment does not have a true baseline (e.g. blank screen, with no visual stimulation) this experimental design cannot distinguish between lower firing rate to faces vs suppression of response to faces.The strongest evidence put forward for suppression is the response of non-visual neurons that was also reduced when patients looked at faces, but since these are non-visual neurons, it is unclear how to interpret the responses to faces.\n\nComments on revisions:\n\nIn the revision, the authors added information and answered several of the main questions. Several points remain unanswered because the authors would like to publish a short format paper here, and suggest that answering these questions is outside the scope of the paper. The authors would like to leave some of the more detailed analyses for a subsequent longer paper.\n",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89164483-f4c8-4818-b987-69445655542c",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C1",
+      "claim": "The relationship between Blood-Oxygen-Level-Dependent (BOLD) responses in functional magnetic resonance imaging (fMRI) and increases or decreases in neural firing rate across human brain regions, especially the association cortex, remains largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between Blood-Oxygen-Level-Dependent (BOLD) responses in functional magnetic resonance imaging (fMRI) and increases or decreases in neural firing rate across human brain regions, especially the association cortex, remains largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific knowledge regarding BOLD-neural firing relationships in human association cortex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "ba32408a-1690-4a16-af4e-c5e784710923",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C2",
+      "claim": "Animal studies have characterized Blood-Oxygenation-Level-Dependent (BOLD) fMRI activation as a correlate of local synaptic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While animal studies have characterized Blood-Oxygenation-Level-Dependent (BOLD) fMRI activation as a correlate of local synaptic activity (Logothetis et al., 2001; Bartolo et al., 2011), the cellular mechanisms of deactivation (negative BOLD signals) remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Logothetis et al., 2001 and Bartolo et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "8a4e2c68-47a2-4a4f-99e0-a2f156e09ba2",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C3",
+      "claim": "The cellular mechanisms of deactivation (negative BOLD signals) remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "While animal studies have characterized Blood-Oxygenation-Level-Dependent (BOLD) fMRI activation as a correlate of local synaptic activity (Logothetis et al., 2001; Bartolo et al., 2011), the cellular mechanisms of deactivation (negative BOLD signals) remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the current state of knowledge regarding negative BOLD signals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "cbb2a129-7597-493c-8f98-248afe9b7dcb",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C4",
+      "claim": "fMRI deactivations have been attributed to (relative) decreases in neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since BOLD activity relies on contrasts between (two) conditions of interest, fMRI deactivations have been attributed to various causes, that is (relative) decreases in neuronal activity (Shmuel et al., 2006; Devor et al., 2008; Boorman et al., 2010), (relative) increases in neural activity (without concomitant compensation by cerebral blood flow [CBF] increase; Schridde et al., 2008), or hemodynamic contributions ('blood stealing'; Harel et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shmuel et al., 2006; Devor et al., 2008; Boorman et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "544a90ed-63ed-4f88-8723-0fcb7681dba1",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C5",
+      "claim": "fMRI deactivations have been attributed to (relative) increases in neural activity without concomitant compensation by cerebral blood flow increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Since BOLD activity relies on contrasts between (two) conditions of interest, fMRI deactivations have been attributed to various causes, that is (relative) decreases in neuronal activity (Shmuel et al., 2006; Devor et al., 2008; Boorman et al., 2010), (relative) increases in neural activity (without concomitant compensation by cerebral blood flow [CBF] increase; Schridde et al., 2008), or hemodynamic contributions ('blood stealing'; Harel et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schridde et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "81ee1a68-9186-46e3-8bf9-4512f24096ed",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C6",
+      "claim": "fMRI deactivations have been attributed to hemodynamic contributions ('blood stealing').",
+      "claim_type": "EXPLICIT",
+      "source": "Since BOLD activity relies on contrasts between (two) conditions of interest, fMRI deactivations have been attributed to various causes, that is (relative) decreases in neuronal activity (Shmuel et al., 2006; Devor et al., 2008; Boorman et al., 2010), (relative) increases in neural activity (without concomitant compensation by cerebral blood flow [CBF] increase; Schridde et al., 2008), or hemodynamic contributions ('blood stealing'; Harel et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Harel et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "d3ba28ef-524b-478b-849f-aed88d712c35",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C7",
+      "claim": "fMRI deactivation is associated with electrocorticographic alpha power decrease in the human visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, notwithstanding recent evidence of fMRI deactivation associated with electrocorticographic alpha power decrease in the human visual cortex (Fracasso et al., 2022), most studies have been carried out in animal models and primary sensory or motor regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fracasso et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "06363972-2dd6-461b-adf4-974e1d7345cb",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C8",
+      "claim": "Most studies on BOLD deactivation have been carried out in animal models and primary sensory or motor regions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, notwithstanding recent evidence of fMRI deactivation associated with electrocorticographic alpha power decrease in the human visual cortex (Fracasso et al., 2022), most studies have been carried out in animal models and primary sensory or motor regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the distribution of prior research on BOLD deactivation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "fa2c303e-d793-469a-8285-71449d9f669a",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C9",
+      "claim": "Two patients with refractory epilepsy (P1, P2) were implanted with hybrid macro-microelectrodes in their fusiform gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, two patients with refractory epilepsy (P1, P2) were implanted with hybrid macro-microelectrodes in their fusiform gyrus, a hominoid-specific cortical structure (Weiner and Zilles, 2016) that is critically involved in face recognition (Cohen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental subjects and procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "865416a7-f16d-4969-99b6-5d412dfeab06",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C10",
+      "claim": "The fusiform gyrus is a hominoid-specific cortical structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, two patients with refractory epilepsy (P1, P2) were implanted with hybrid macro-microelectrodes in their fusiform gyrus, a hominoid-specific cortical structure (Weiner and Zilles, 2016) that is critically involved in face recognition (Cohen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weiner and Zilles, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "4a1b8434-1004-48e2-aa32-c040b6597c3e",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C11",
+      "claim": "The fusiform gyrus is critically involved in face recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, two patients with refractory epilepsy (P1, P2) were implanted with hybrid macro-microelectrodes in their fusiform gyrus, a hominoid-specific cortical structure (Weiner and Zilles, 2016) that is critically involved in face recognition (Cohen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "9535a3cf-9fe4-41b9-84dc-22249e72ab13",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C12",
+      "claim": "Microelectrodes recording single-unit activity in P1 were located in the lateral portion of the middle fusiform gyrus (MidFG) in cytoarchitectonic area FG4.",
+      "claim_type": "EXPLICIT",
+      "source": "While microelectrodes recording single-unit activity located in the lateral portion of P1's middle fusiform gyrus (MidFG) (i.e., in cytoarchitectonic area FG4; Lorenz et al., 2017), a region known to elicit larger BOLD activity to faces than non-face objects ('Fusiform Face Area', FFA; Kanwisher et al., 1997), in P2 they fell in the medial MidFG portion (FG3), in which lower BOLD responses to faces than objects are typically observed (Pelphrey et al., 2003; Kanwisher, 2017; Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of electrode location with citation to Lorenz et al., 2017 for cytoarchitectonic area.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "8a0af933-6ad2-4487-8539-33d4b0cd5cf0",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C13",
+      "claim": "The lateral portion of the middle fusiform gyrus (area FG4) is a region known to elicit larger BOLD activity to faces than non-face objects ('Fusiform Face Area', FFA).",
+      "claim_type": "EXPLICIT",
+      "source": "While microelectrodes recording single-unit activity located in the lateral portion of P1's middle fusiform gyrus (MidFG) (i.e., in cytoarchitectonic area FG4; Lorenz et al., 2017), a region known to elicit larger BOLD activity to faces than non-face objects ('Fusiform Face Area', FFA; Kanwisher et al., 1997), in P2 they fell in the medial MidFG portion (FG3), in which lower BOLD responses to faces than objects are typically observed (Pelphrey et al., 2003; Kanwisher, 2017; Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kanwisher et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "c6810644-fcbd-4869-81b7-b20f705065aa",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C14",
+      "claim": "Microelectrodes in P2 fell in the medial MidFG portion (FG3).",
+      "claim_type": "EXPLICIT",
+      "source": "While microelectrodes recording single-unit activity located in the lateral portion of P1's middle fusiform gyrus (MidFG) (i.e., in cytoarchitectonic area FG4; Lorenz et al., 2017), a region known to elicit larger BOLD activity to faces than non-face objects ('Fusiform Face Area', FFA; Kanwisher et al., 1997), in P2 they fell in the medial MidFG portion (FG3), in which lower BOLD responses to faces than objects are typically observed (Pelphrey et al., 2003; Kanwisher, 2017; Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of electrode location in P2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "58b19e32-68c3-40a4-93a6-58b54aae775a",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C15",
+      "claim": "The medial MidFG portion (FG3) typically shows lower BOLD responses to faces than objects.",
+      "claim_type": "EXPLICIT",
+      "source": "While microelectrodes recording single-unit activity located in the lateral portion of P1's middle fusiform gyrus (MidFG) (i.e., in cytoarchitectonic area FG4; Lorenz et al., 2017), a region known to elicit larger BOLD activity to faces than non-face objects ('Fusiform Face Area', FFA; Kanwisher et al., 1997), in P2 they fell in the medial MidFG portion (FG3), in which lower BOLD responses to faces than objects are typically observed (Pelphrey et al., 2003; Kanwisher, 2017; Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pelphrey et al., 2003; Kanwisher, 2017; Gao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "0fb1579d-a7fd-4078-9e90-4827248a19eb",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C16",
+      "claim": "Robust differential activity to natural images of faces vs. non-face categories was objectively recorded with a frequency-tagging paradigm in fMRI in both MidFG regions sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "In both MidFG regions sampled, robust differential activity to natural images of faces vs. non-face categories was objectively recorded with a similar well-validated frequency-tagging paradigm in fMRI (Figure 1A) and microelectrode electrophysiological recordings (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental finding supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "557af5f2-7096-48e3-8c83-782981c14113",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C17",
+      "claim": "Robust differential activity to natural images of faces vs. non-face categories was objectively recorded with a frequency-tagging paradigm in microelectrode electrophysiological recordings in both MidFG regions sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "In both MidFG regions sampled, robust differential activity to natural images of faces vs. non-face categories was objectively recorded with a similar well-validated frequency-tagging paradigm in fMRI (Figure 1A) and microelectrode electrophysiological recordings (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental finding supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "17b2c2f7-539b-48fb-9cdb-7ea52356bdfe",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C18",
+      "claim": "Faces elicited larger BOLD responses than non-face objects in the lateral MidFG.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, faces elicited larger BOLD responses than non-face objects in the lateral MidFG, but lower responses in the medial MidFG (Pelphrey et al., 2003; Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental finding supported by citations to Pelphrey et al., 2003; Gao et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "f23ef9be-38ee-476c-8d00-644c6f6b9953",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C19",
+      "claim": "Faces elicited lower BOLD responses than non-face objects in the medial MidFG.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, faces elicited larger BOLD responses than non-face objects in the lateral MidFG, but lower responses in the medial MidFG (Pelphrey et al., 2003; Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental finding supported by citations to Pelphrey et al., 2003; Gao et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "0a94fc1f-0e08-4f0e-aaad-66e92314f47e",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C20",
+      "claim": "Microwires in P1 (estimated Talairach location \u221240, \u201346, \u201319) fell in the lateral MidFG face-selective region: the Fusiform Face Area ('FFA', peak coordinate: \u221235, \u201351, \u201318).",
+      "claim_type": "EXPLICIT",
+      "source": "Microwires in P1 (estimated Talairach location \u221240, \u201346, \u201319; Figure 2A) fell in the lateral MidFG face-selective region: the Fusiform Face Area ('FFA', peak coordinate: \u221235, \u201351, \u201318; Quian Quiroga et al., 2023), while microwires in P2 (29, \u221241, \u221212; Figure 2D) were located in the medial MidFG, an unprecedented sampled region with lower (deactivated) BOLD signal for faces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Anatomical localization data with citation to Quian Quiroga et al., 2023 and reference to Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "3cec189f-b38c-46a2-98b3-37b7920f89a2",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C21",
+      "claim": "Microwires in P2 (29, \u221241, \u221212) were located in the medial MidFG, an unprecedented sampled region with lower (deactivated) BOLD signal for faces.",
+      "claim_type": "EXPLICIT",
+      "source": "Microwires in P1 (estimated Talairach location \u221240, \u201346, \u201319; Figure 2A) fell in the lateral MidFG face-selective region: the Fusiform Face Area ('FFA', peak coordinate: \u221235, \u201351, \u201318; Quian Quiroga et al., 2023), while microwires in P2 (29, \u221241, \u221212; Figure 2D) were located in the medial MidFG, an unprecedented sampled region with lower (deactivated) BOLD signal for faces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Anatomical localization data with reference to Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "a1c95252-9a70-420f-aec3-603a4921be65",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C22",
+      "claim": "Recordings of category-selective spiking activity in P1 and P2 took place over up to 11 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings of category-selective spiking activity in P1 and P2 took place over up to 11 days, with single units detected on 7 microwires per session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "2c6549f9-112a-4e30-b228-afaee2c27cb0",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C23",
+      "claim": "Single units were detected on 7 microwires per session.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings of category-selective spiking activity in P1 and P2 took place over up to 11 days, with single units detected on 7 microwires per session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "f0f3c052-2107-4665-b215-c57f4a310c0a",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C24",
+      "claim": "Across all independent sessions, 245 units were recorded (N = 206 single-units, SU and N = 39 multi-units, MU; pooled over 4 sessions for P1 and 7 sessions for P2).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all independent sessions (i.e., on different half-days), we recorded 245 units (N = 206 single-units, SU and N = 39 multi-units, MU; pooled over 4 sessions for P1 and 7 sessions for P2) firing to variable pictures of faces and objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "b6db63f1-a76c-4c8f-af1e-25a16e52b1eb",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C25",
+      "claim": "Only a small proportion of single neurons failed to respond (i.e., no significant base rate response: N = 10/62, 16.1% in P1; N = 17/144 11.8% in P2).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a brief recording time for each unit (2 sequences of 70 s), only a small proportion of single neurons failed to respond (i.e., no significant base rate response: N = 10/62, 16.1% in P1; N = 17/144 11.8% in P2; all Z < 1.64, all ps < 0.05; and no difference between participants, p = 0.54, Pearson's \u03c7\u00b2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "92002d68-e484-4d53-9a69-53285ab1944a",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C26",
+      "claim": "There was no difference between participants in the proportion of neurons that failed to respond (p = 0.54, Pearson's \u03c7\u00b2).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a brief recording time for each unit (2 sequences of 70 s), only a small proportion of single neurons failed to respond (i.e., no significant base rate response: N = 10/62, 16.1% in P1; N = 17/144 11.8% in P2; all Z < 1.64, all ps < 0.05; and no difference between participants, p = 0.54, Pearson's \u03c7\u00b2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison between participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "ed4601c1-bd4d-4a28-9def-9f14173e96c7",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C27",
+      "claim": "A very high proportion of face-selective neurons (p < 0.05) was found in both activated and deactivated MidFG regions (P1: 98.1%; N = 51/52; P2: 86.6%; N = 110/127).",
+      "claim_type": "EXPLICIT",
+      "source": "Among all visually responsive neurons, we found a very high proportion of face-selective neurons (p < 0.05) in both activated and deactivated MidFG regions (P1: 98.1%; N = 51/52; P2: 86.6%; N = 110/127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "5b4cf3ac-91a5-4b05-bca8-4235f4d74adf",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C28",
+      "claim": "At a more conservative threshold (p < 0.01), strong face-selectivity is observed (P1: 86.5%; N = 45/52; P2: 77.9%; N = 99/127).",
+      "claim_type": "EXPLICIT",
+      "source": "Even at a more conservative threshold (p < 0.01), strong face-selectivity is observed (P1: 86.5%; N = 45/52; P2: 77.9%; N = 99/127; no difference between the two individuals, p = 0.27, Pearson's \u03c7\u00b2 test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "915e0e11-f4da-41a2-8010-a43df8b77caa",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C29",
+      "claim": "There was no difference between the two individuals in face-selectivity at the p < 0.01 threshold (p = 0.27, Pearson's \u03c7\u00b2 test).",
+      "claim_type": "EXPLICIT",
+      "source": "Even at a more conservative threshold (p < 0.01), strong face-selectivity is observed (P1: 86.5%; N = 45/52; P2: 77.9%; N = 99/127; no difference between the two individuals, p = 0.27, Pearson's \u03c7\u00b2 test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison between individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "eb3aed66-a097-4fca-aea6-215c3fbf5cc1",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C30",
+      "claim": "The vast majority of face-selective neurons in the lateral MidFG (P1) showed a significant relative increase in spike rate to faces (88.9% increases [N = 40/45] vs 11.1% decreases [N = 5/45]).",
+      "claim_type": "EXPLICIT",
+      "source": "While the vast majority of face-selective neurons in the lateral MidFG (P1) showed a significant relative increase in spike rate to faces (88.9% increases [N = 40/45] vs 11.1% decreases [N = 5/45]; Figure 2B and C), most neurons in the medial MidFG (P2) showed significant relative spike rate decrease to faces (95.9% decreases [N = 95/99] vs 4.1% increases [N = 4/99]; Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative experimental data with reference to Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "1f6efb00-cf45-4430-a54a-3e035f2f098b",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C31",
+      "claim": "Most neurons in the medial MidFG (P2) showed significant relative spike rate decrease to faces (95.9% decreases [N = 95/99] vs 4.1% increases [N = 4/99]).",
+      "claim_type": "EXPLICIT",
+      "source": "While the vast majority of face-selective neurons in the lateral MidFG (P1) showed a significant relative increase in spike rate to faces (88.9% increases [N = 40/45] vs 11.1% decreases [N = 5/45]; Figure 2B and C), most neurons in the medial MidFG (P2) showed significant relative spike rate decrease to faces (95.9% decreases [N = 95/99] vs 4.1% increases [N = 4/99]; Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative experimental data with reference to Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "2104bcc3-3437-40e3-bef6-9dd53d57db21",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C32",
+      "claim": "The mean onset response latency did not differ between increases and decreases (118.2 ms vs. 127.3 ms, respectively; p > 0.05, two-tailed percentile bootstrap).",
+      "claim_type": "EXPLICIT",
+      "source": "While the mean onset response latency did not differ between increases and decreases (118.2 ms vs. 127.3 ms, respectively; p > 0.05, two-tailed percentile bootstrap; Figure 2C and F), a significantly lower response (i.e., absolute average firing rate) was found for decreases than increases ([130\u2013300 ms]; 3.69 spikes/s for increases, ranging from 0.99 to 7.42 spikes/s; \u20132.73 spikes/s for decreases, ranging from \u20130.44 to \u20139.67 spikes/s; t-test p < 0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of latencies with reference to Figure 2C and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "6a5032a6-4e75-4e69-844d-491aeadc17fa",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C33",
+      "claim": "A significantly lower response (i.e., absolute average firing rate) was found for decreases than increases ([130\u2013300 ms]; 3.69 spikes/s for increases, ranging from 0.99 to 7.42 spikes/s; \u20132.73 spikes/s for decreases, ranging from \u20130.44 to \u20139.67 spikes/s; t-test p < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "While the mean onset response latency did not differ between increases and decreases (118.2 ms vs. 127.3 ms, respectively; p > 0.05, two-tailed percentile bootstrap; Figure 2C and F), a significantly lower response (i.e., absolute average firing rate) was found for decreases than increases ([130\u2013300 ms]; 3.69 spikes/s for increases, ranging from 0.99 to 7.42 spikes/s; \u20132.73 spikes/s for decreases, ranging from \u20130.44 to \u20139.67 spikes/s; t-test p < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of firing rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "d1d34a2e-ce48-4d01-8be7-f976d279c3b1",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C34",
+      "claim": "Among the 95 single units showing a reduced firing rate to faces (P2), 34 lacked a significant general visual response (at 6 Hz +12 Hz; i.e., 34.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "A final noteworthy observation is that, among the 95 single units showing a reduced firing rate to faces (P2), 34 lacked a significant general visual response (at 6 Hz +12 Hz; i.e., 34.3%; N = 21, 22.1% when only first 6 Hz harmonic considered, ps >0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e148318e-b08b-4b44-9a1e-551c0c6f8503",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C35",
+      "claim": "Responses of 'face-exclusive' single neurons reflect genuine suppression of baseline spiking activity upon presentation of a face.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond a mere relative reduction to faces compared to non-face objects, responses of such 'face-exclusive' single neurons therefore appear to reflect genuine suppression of baseline spiking activity upon presentation of a face.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data based on the observation that some neurons lack general visual response but show face-selective decreases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "fd9000fd-637a-438d-96e5-d1333e249717",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C36",
+      "claim": "BOLD signals correlate better with local field potentials (LFP) than spikes on a trial-by-trial basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although BOLD signals correlate better with local field potentials (LFP) than spikes on a trial-by-trial basis (Logothetis et al., 2001), positive correlations have been observed between SU and BOLD in human (Mukamel et al., 2005; Nir et al., 2007) and non-human primates (Goense and Logothetis, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Logothetis et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e65dad45-dbd8-488b-a351-f2fe21bd3b2f",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C37",
+      "claim": "Positive correlations have been observed between SU and BOLD in human.",
+      "claim_type": "EXPLICIT",
+      "source": "Although BOLD signals correlate better with local field potentials (LFP) than spikes on a trial-by-trial basis (Logothetis et al., 2001), positive correlations have been observed between SU and BOLD in human (Mukamel et al., 2005; Nir et al., 2007) and non-human primates (Goense and Logothetis, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mukamel et al., 2005; Nir et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "51759b5d-8c4b-4a34-8645-d70604692e5d",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C38",
+      "claim": "Positive correlations have been observed between SU and BOLD in non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Although BOLD signals correlate better with local field potentials (LFP) than spikes on a trial-by-trial basis (Logothetis et al., 2001), positive correlations have been observed between SU and BOLD in human (Mukamel et al., 2005; Nir et al., 2007) and non-human primates (Goense and Logothetis, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goense and Logothetis, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "8f70b693-d764-478b-8e6e-98a4c18fda98",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C39",
+      "claim": "There is a striking correspondence between increases/decreases in BOLD activity and (SU) neuronal firing, in two neighboring areas of the human association cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, thanks to a unique combination of fMRI and microelectrode recordings in the same individual human brains, we report a striking correspondence between increases/decreases in BOLD activity and (SU) neuronal firing, in two neighboring areas of the human association cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the main experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "5d9243cc-3cf6-483e-9600-8b2cdd62cf91",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C40",
+      "claim": "The sign of the BOLD signal fluctuation during visual stimulation matches the sign of SU activity.",
+      "claim_type": "EXPLICIT",
+      "source": "By showing that the sign of the BOLD signal fluctuation during visual stimulation matches the sign of SU activity, our findings shed light on the physiology of BOLD signals, revealing in particular that BOLD decreases can be due to relative, or absolute (or a combination of both), spike suppression in the human brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the main experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "c066d527-bd21-469c-bf48-42f4a818888c",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C41",
+      "claim": "BOLD decreases can be due to relative, or absolute (or a combination of both), spike suppression in the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "By showing that the sign of the BOLD signal fluctuation during visual stimulation matches the sign of SU activity, our findings shed light on the physiology of BOLD signals, revealing in particular that BOLD decreases can be due to relative, or absolute (or a combination of both), spike suppression in the human brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "4aede154-9beb-4c6b-a946-b37846a088a7",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C42",
+      "claim": "Transient spikes suppression could be due to suppression/reduction of synaptic inputs to the recorded neuron(s) or to inhibitory inputs to the neuron(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Such transient spikes suppression could be due to suppression/reduction of synaptic inputs to the recorded neuron(s) or to inhibitory inputs to the neuron(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for the observed spike suppression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "dc95b4ae-3395-455c-91be-3a3b624e0973",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C43",
+      "claim": "The same contrasted pattern of BOLD activation/deactivation for faces in the lateral/medial portions of the fusiform gyrus has been systematically observed across hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "First, notwithstanding the right hemisphere's dominance in human face recognition (Jonas et al., 2016; Kanwisher, 2017; Gao et al., 2018), the same contrasted pattern of BOLD activation/deactivation for faces in the lateral/medial portions of the fusiform gyrus, respectively, has been systematically observed across hemispheres (Pelphrey et al., 2003; Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Pelphrey et al., 2003 and reference to Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "11754abb-276f-49b0-a121-91d92acf055f",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C44",
+      "claim": "The right hemisphere shows dominance in human face recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "First, notwithstanding the right hemisphere's dominance in human face recognition (Jonas et al., 2016; Kanwisher, 2017; Gao et al., 2018), the same contrasted pattern of BOLD activation/deactivation for faces in the lateral/medial portions of the fusiform gyrus, respectively, has been systematically observed across hemispheres (Pelphrey et al., 2003; Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jonas et al., 2016; Kanwisher, 2017; Gao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "6681ddf3-9206-4081-be68-bcaae51ef039",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C45",
+      "claim": "The proportions of face-selective units did not differ between the two individuals tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, while a larger number of single units was found for P2 than P1 recordings, the proportions of face-selective units did not differ between the two individuals tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison between individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "83e74609-3858-40ac-96f8-2ccc8c022121",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C46",
+      "claim": "Neurons showing suppression of activity to faces have been reported in the monkey inferior temporal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons showing suppression of activity to faces have been reported in the monkey inferior temporal cortex (Salehi et al., 2020), including inside face-selective cortical regions (Tsao et al., 2006; Bell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Salehi et al., 2020; Tsao et al., 2006; Bell et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "25b4a769-ad41-40a5-a5e9-2b8442556977",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C47",
+      "claim": "There is a lack of reported BOLD deactivation to faces in the monkey brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both the lack of reported BOLD deactivation to faces in the monkey brain and of a fusiform gyrus in non-hominoid primates Weiner and Zilles, 2016 have prevented single-unit recordings in macaque monkeys to address this issue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of knowledge in monkey research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "704b0f36-060a-4cef-9832-848aa03ddb59",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C48",
+      "claim": "Non-hominoid primates lack a fusiform gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both the lack of reported BOLD deactivation to faces in the monkey brain and of a fusiform gyrus in non-hominoid primates Weiner and Zilles, 2016 have prevented single-unit recordings in macaque monkeys to address this issue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weiner and Zilles, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "3fe44965-9ae7-40dd-b3e9-8d62eb7e4305",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C49",
+      "claim": "Faces elicit a strong decrease of neuronal activity relative to non-face objects in the medial MidFG.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our neurophysiological recordings in humans suggest that faces do not only elicit a strong decrease of neuronal activity relative to non-face objects in the medial MidFG, but a genuine suppression of baseline spiking activity in a substantial proportion of the units recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "a2eb409d-5190-4748-a115-6101b9d5adaa",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C50",
+      "claim": "Faces elicit a genuine suppression of baseline spiking activity in a substantial proportion of the units recorded in the medial MidFG.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our neurophysiological recordings in humans suggest that faces do not only elicit a strong decrease of neuronal activity relative to non-face objects in the medial MidFG, but a genuine suppression of baseline spiking activity in a substantial proportion of the units recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "4e2e294f-b29a-4069-9673-8d0608e84387",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C51",
+      "claim": "Face-selective neural activity in the human brain can be expressed both as increase and active suppression of spiking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, beyond contributing to clarifying the physiological basis of the fMRI signal, our study sheds light on the nature of face-selective neural activity in the human brain, which can be expressed both as increase and active suppression of spiking activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings and their interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "8f2af105-3ae4-43f7-a4b7-84a78e196382",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C52",
+      "claim": "Inhibitory cellular activity is thought to play an important balancing role in maintaining stable function of cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory cellular activity is thought to play an important balancing role in maintaining stable function of cortical circuits (Vogels et al., 2011) and has been shown to play a key role in cortical category selectivity (Wang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vogels et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "3a5069db-4d14-468d-9dc7-de12fa3547a4",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C53",
+      "claim": "Inhibitory cellular activity has been shown to play a key role in cortical category selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory cellular activity is thought to play an important balancing role in maintaining stable function of cortical circuits (Vogels et al., 2011) and has been shown to play a key role in cortical category selectivity (Wang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "424496e3-a10d-4546-838c-6e6708af9a46",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C54",
+      "claim": "The study included two right-handed participants (two males, aged 23 and 46) who were patients undergoing clinical intracerebral evaluation with depth electrodes (SEEG) for refractory partial epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "The study included two right-handed participants (two males, aged 23 and 46) who were patients undergoing clinical intracerebral evaluation with depth electrodes (SEEG; Talairach and Bencaud, 1973) for refractory partial epilepsy in the Epilepsy Unit of the University Hospital of Nancy, France, in 2019 (P1) and 2023 (P2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "a4caf64e-bf5c-4fb6-a80a-016f03bc4803",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C55",
+      "claim": "The participants gave written informed consent to participate in the study (REUNIE, 2015-A01951-48).",
+      "claim_type": "EXPLICIT",
+      "source": "The participants gave written informed consent to participate in the study (REUNIE, 2015-A01951-48), which was approved by a national ethical committee (CPP Est III, N\u00b016.02.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ethical approval and consent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "446faa9e-70b9-4618-9d13-dd8b834141b1",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C56",
+      "claim": "The study was approved by a national ethical committee (CPP Est III, N\u00b016.02.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The participants gave written informed consent to participate in the study (REUNIE, 2015-A01951-48), which was approved by a national ethical committee (CPP Est III, N\u00b016.02.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "7edb331e-3ad8-4464-bf00-e7e28d3a01b1",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C57",
+      "claim": "Electrophysiological data were recorded from Behnke-Fried hybrid micro-macro electrodes (Ad-Tech Medical Instrument).",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological data were recorded from Behnke-Fried hybrid micro-macro electrodes (Ad-Tech Medical Instrument).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of recording equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "1226c525-fcbb-4fd5-8ecb-88b9cf2dc56e",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C58",
+      "claim": "Electrode implantation sites were determined based on non-invasive data collected during the early stages of the investigation and were verified by CT scan fused with a pre-operative T1-weighted MRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrode implantation sites were determined based on non-invasive data collected during the early stages of the investigation and were verified by CT scan fused with a pre-operative T1-weighted MRI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of electrode localization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "361f0d3e-b2ca-4666-9d5d-4cef95f93ad7",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C59",
+      "claim": "The macro-microelectrodes are electrodes with macro-contacts modified to include 8 recording microwires and one reference, protruding about 3\u20134 mm beyond the tip of the macro-electrode.",
+      "claim_type": "EXPLICIT",
+      "source": "The present report focuses on recordings from the macro-microelectrodes, i.e., electrodes with macro-contacts modified to include 8 recording microwires and one reference, protruding about 3\u20134 mm beyond the tip of the macro-electrode (Ad-Tech Medical; see Salado et al., 2018 for details about the macroelectrode implantation procedure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of electrode design with citation to Salado et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e8d40880-8c66-4ffb-a3f4-411d19355cb1",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C60",
+      "claim": "The microwires' signals were recorded at a 30 kHz sampling rate, using a 256-channel amplifier (BlackRock Microsystems), and recording activity was band-pass filtered (0.3\u20137500 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The microwires' signals were recorded at a 30 kHz sampling rate, using a 256-channel amplifier (BlackRock Microsystems), and recording activity was band-pass filtered (0.3\u20137500 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of recording parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "410371a7-dbbb-42f8-833c-0f54618f76cd",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C61",
+      "claim": "Microelectrode data were recorded during 3 days (8 sequences performed in P1) and 11 days (14 sequences performed in P2).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report microelectrode data recorded during 3 days (8 sequences performed in P1) and 11 days (14 sequences performed in P2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data collection timeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "6757a375-efc6-4110-a346-e00bb0eeb9a7",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C62",
+      "claim": "Participants were tested individually and seated at 80 cm from the computer screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were tested individually and seated at 80 cm from the computer screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "3352ec72-672a-4023-803f-dec1ae2a01e4",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C63",
+      "claim": "The exact position of each contact from the micro-macro electrode relative to the individual brain anatomy was determined by coregistrating the post-operative CT scan with a T1-weighted MRI of the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact position of each contact from the micro-macro electrode relative to the individual brain anatomy was determined in each participant's brain by coregistrating the post-operative CT scan with a T1-weighted MRI of the patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of localization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "82882865-aba7-4d8b-8e4a-cb84c2cb3794",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C64",
+      "claim": "The microwires' coordinates were estimated at approximately 4 mm from the tip of the macroelectrode.",
+      "claim_type": "EXPLICIT",
+      "source": "The microwires' coordinates were estimated at approximately 4 mm from the tip of the macroelectrode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of coordinate estimation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "8cda7dfb-9561-48bf-9a22-cbdc6fd6a67f",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C65",
+      "claim": "All participants performed an fMRI face localizer a few months after the SEEG procedure, using an fMRI version of the frequency-tagging paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the location of microwires relative to fMRI-defined face-selective regions was determined by having all participants perform an fMRI face localizer a few months after the SEEG procedure, using an fMRI version of the frequency-tagging paradigm providing high SNR and reliability (Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure with citation to Gao et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "b06b6916-98c1-4f06-8542-eab098cd3842",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C66",
+      "claim": "Stimuli were selected from a large pool of 200 to 218 non-face object images and 45 to 48 face images.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli were selected from a large pool of 200 to 218 non-face object images and 45 to 48 face images (as in e.g., Jonas et al., 2016), presented in grayscale or color sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stimulus set with citation to Jonas et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "4ab6896e-73db-4dcf-9382-0f24fcd2df7f",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C67",
+      "claim": "Images were equalized for mean pixel luminance and contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were equalized for mean pixel luminance and contrast, but low-level visual cues associated with the two categories (faces and objects) remained highly variable, naturally minimizing the contribution of low-level visual cues to the face-selective neural responses (Rossion et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stimulus preparation with citation to Rossion et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "79352701-c4aa-4cb3-bd8d-f14d19b3072a",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C68",
+      "claim": "Low-level visual cues associated with the two categories (faces and objects) remained highly variable, naturally minimizing the contribution of low-level visual cues to the face-selective neural responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were equalized for mean pixel luminance and contrast, but low-level visual cues associated with the two categories (faces and objects) remained highly variable, naturally minimizing the contribution of low-level visual cues to the face-selective neural responses (Rossion et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of stimulus design rationale with citation to Rossion et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "386a97d1-99f0-485f-9a6c-55475d6d0beb",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C69",
+      "claim": "In the fMRI version, mini-face blocks ('bursts') were presented for 2.167 s every 9 s to account for the sluggishness of the BOLD response.",
+      "claim_type": "EXPLICIT",
+      "source": "In the fMRI version (from Gao et al., 2018; also, Laurent et al., 2023), mini-face blocks ('bursts') were presented for 2.167 s every 9 s to account for the sluggishness of the BOLD response (i.e., F = 1/9 = 0.111 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI paradigm design with citations to Gao et al., 2018 and Laurent et al., 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "c7e8f7ce-8ea1-4794-a24b-9cb30cfd0b74",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C70",
+      "claim": "Each fMRI sequence lasted 405 s and contained 44 cycles of face bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "Each fMRI sequence lasted 405 s and contained 44 cycles of face bursts (including a 4.5 s baseline at both the beginning and end of each sequence, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI sequence parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "2e160ddb-1a45-4938-9dc7-eef071cbdc32",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C71",
+      "claim": "During intracerebral recordings, highly variable natural images of faces were inserted periodically every fifth image (i.e., face-selective frequency at 1.2 Hz = 6/5 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "During intracerebral recordings, highly variable natural images of faces were inserted periodically every fifth image (i.e., face-selective frequency at 1.2 Hz = 6/5 Hz) as usually performed (Figure 1B; Rossion et al., 2015; Jonas et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of intracerebral recording paradigm with citations to Rossion et al., 2015 and Jonas et al., 2016, and reference to Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "571b31b1-f50c-4198-9b74-d4ae0e8d3274",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C72",
+      "claim": "A stimulation sequence lasted 70 s, including 66 s of stimulation at full contrast flanked by 2 s of fade-in and fade-out.",
+      "claim_type": "EXPLICIT",
+      "source": "A stimulation sequence lasted 70 s, including 66 s of stimulation at full contrast flanked by 2 s of fade-in and fade-out, with gradual increases and decreases in contrast, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stimulation sequence parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "a0287cd0-805d-4c5d-8078-c314703c9f43",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C73",
+      "claim": "All images were presented with a sinusoidal stimulation contrast to provide a smooth transition between successive images.",
+      "claim_type": "EXPLICIT",
+      "source": "All images were presented with a sinusoidal stimulation contrast to provide a smooth transition between successive images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of stimulus presentation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "59eb622c-6ca1-4c2a-9488-ee5c5d369dc9",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C74",
+      "claim": "Participants were unaware of the periodicity of the faces.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were unaware of the periodicity of the faces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of participant awareness during experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "67e4fa9d-c223-45b4-8332-bf2ae7ed7378",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C75",
+      "claim": "During both fMRI and intracerebral recordings, participants stared at a small black cross presented at the center of the stimuli and detected rare brief nonperiodic color changes of the fixation cross.",
+      "claim_type": "EXPLICIT",
+      "source": "During both fMRI and intracerebral recordings, participants stared at a small black cross presented at the center of the stimuli and detected rare brief nonperiodic color changes (70\u201310 times per sequence for fMRI/iEEG respectively, for 500 ms) of the fixation cross (black to red).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of task performed by participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "f19e214a-81a5-483b-b740-0a2963f45923",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C76",
+      "claim": "Spike detection and sorting/clustering were carried out using an automatic algorithm, based on a Bayesian approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike detection and sorting/clustering were carried out using an automatic algorithm, based on a Bayesian approach (Le Cam et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of spike sorting method with citation to Le Cam et al., 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e09ebec7-b96b-490e-946c-47fef095a441",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C77",
+      "claim": "The sorted clusters were visually reviewed and classified into single-units (SU) or multi-units (MU) based on their spike shape, variance, inter-spike interval distribution, and the presence of a refractory period.",
+      "claim_type": "EXPLICIT",
+      "source": "The sorted clusters were visually reviewed and classified into single-units (SU) or multi-units (MU) based on their spike shape, variance, inter-spike interval distribution, and the presence of a refractory period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of unit classification criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "30626e9c-5d06-4cc2-ae22-42d9c85dd433",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C78",
+      "claim": "In all the sessions held by the two participants, 299 SU and 62 MU were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In all the sessions held by the two participants, 299 SU and 62 MU were identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative data on identified units.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "dcc3eb49-d203-4ad2-997e-d26565140343",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C79",
+      "claim": "An average of 2 units per contact was isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "An average of 2 units per contact was isolated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative data on unit isolation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "4814648e-4bc4-43a2-a93c-ce8ad56ab905",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C80",
+      "claim": "A discrete Fast Fourier Transform (FFT) was applied to the spike trains.",
+      "claim_type": "EXPLICIT",
+      "source": "A discrete Fast Fourier Transform (FFT) was applied to the spike trains, and the resulting amplitude spectrum was cut into 1 Hz segments centered on the face-selective frequency and its three additional harmonics (i.e., 1.2 Hz, 2.4 Hz, 3.6 Hz, and 4.8 Hz), as well as on the base stimulation frequency and its harmonics (i.e., 6 Hz and 12 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of frequency-domain analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "77f5cd37-7922-4119-97e0-9de4a765533d",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C81",
+      "claim": "A cluster (SU or MU) was considered as showing a significant response for faces and classified as 'face-selective' if the Z-score at the target frequency bin exceeded 1.64 (i.e., p < 0.05 one-tailed).",
+      "claim_type": "EXPLICIT",
+      "source": "A cluster (SU or MU) was considered as showing a significant response for faces and classified as 'face-selective' if the Z-score at the target frequency bin exceeded 1.64 (i.e., p < 0.05 one-tailed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical criterion for face-selectivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "7bd08bd9-7471-45dd-9903-668ce036aefb",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C82",
+      "claim": "The face onset time was shifted forward by 33 ms (~1/5 of a 6 Hz cycle duration) to account for the sinusoidal modulation of contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for the sinusoidal modulation of contrast, the face onset time was shifted forward by 33 ms (~1/5 of a 6 Hz cycle duration).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of temporal correction applied to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "35f17a29-dae6-4b2e-a1c4-51d6a5b424f6",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C83",
+      "claim": "The onset of face-selective response was delayed by 30\u201335 ms for sinusoidal visual stimulation compared to squarewave stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This delay was estimated by comparing SEEG responses to sequences presented with sinewave or squarewave (i.e., abrupt) contrast modulation of visual stimulation. The onset of face-selective response was delayed by 30\u201335 ms for sinusoidal visual stimulation, which corresponds to 4 screen refresh frames (33 ms) and 35% of the full contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental comparison to estimate temporal delay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "98ecd9fd-216d-4058-8773-bbdf36cf4084",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C84",
+      "claim": "The latency was computed as the time point at which net firing crossed the baseline +/-2.58 s.d. value (i.e., p < 0.01, two-tailed percentile bootstrap) for at least 30 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the latency was computed as the time point at which net firing crossed the baseline +/-2.58 s.d. value (i.e., p < 0.01, two-tailed percentile bootstrap) for at least 30 ms, as described in Jacques et al., 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of latency computation method with citation to Jacques et al., 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "a3860364-e659-474d-8ab5-18c1328feff9",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C85",
+      "claim": "The two participants were scanned at the CHRU-Nancy, with a 3T Siemens Magnetom Prisma system with a 64-channel head-neck coil.",
+      "claim_type": "EXPLICIT",
+      "source": "The two participants were scanned at the CHRU-Nancy, with a 3T Siemens Magnetom Prisma system (Siemens Medical System, Erlangen, Germany) with a 64-channel head-neck coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI scanning equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "bdee1f7b-47fc-445b-a0db-739453a45b4c",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C86",
+      "claim": "Anatomical images were collected using a high-resolution T1-weighted magnetization-prepared gradient-echo image (MP-RAGE) sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical images were collected using a high-resolution T1-weighted magnetization-prepared gradient-echo image (MP-RAGE) sequence (192 sagittal slices, TR = 2300 ms, TE = 2.6 ms; flip angle (FA)=9\u00b0, field of view (FOV) = 256 \u00d7 256).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of anatomical imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "93c57783-3d56-4760-8187-3dc8f3c91443",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C87",
+      "claim": "Functional images were collected with a T2*-weighted simultaneous multi-slice echo planar imaging (SMS EPI) sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional images were collected with a T2*-weighted simultaneous multi-slice echo planar imaging (SMS EPI) sequence (TR = 1500 ms, TE = 30 ms, FA = 72\u00b0, FOV = 240 \u00d7 240 mm2, voxel size = 2.5 mm isotropic, matrix size = 96 \u00d7 96 for sequences done in 2019 or matrix size = 80 \u00d7 80 for sequences done in 2022, interleaved), which acquired 44 oblique-axial slices covering the entire temporal and occipital lobes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of functional imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "0a11ac09-59ab-42c0-a0e9-70ef77abff6b",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C88",
+      "claim": "The total duration of each sequence (run) for P1 (tested in 2019) was 333 s, including 9 s of dummy scans (222 TRs).",
+      "claim_type": "EXPLICIT",
+      "source": "The total duration of each sequence (run) for P1 (tested in 2019) was 333 s, including 9 s of dummy scans (222 TRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI sequence duration for P1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "638a15d7-460c-4041-b827-3e503df64b71",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C89",
+      "claim": "The total duration of each run for P2 (tested in 2022) was 405 s including 9 s of dummy scans (270 TRs).",
+      "claim_type": "EXPLICIT",
+      "source": "The total duration of each run for P2 (tested in 2022) was 405 s including 9 s of dummy scans (270 TRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI sequence duration for P2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "da754858-694b-4838-922d-41e795e55cf1",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C90",
+      "claim": "The images subtended a viewing angle of 8\u00b0 \u00d7 8\u00b0 (33.4 cm \u00d7 33.4 cm) at a viewing distance of 240 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "The images subtended a viewing angle of 8\u00b0 \u00d7 8\u00b0 (33.4 cm \u00d7 33.4 cm) at a viewing distance of 240 cm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of visual stimulus parameters during fMRI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "21af5b22-aa80-461c-9f29-e8dd751df835",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C91",
+      "claim": "Three fMRI sequences were performed for each patient, who was scanned 6\u20138 weeks after the microelectrode recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Three fMRI sequences were performed for each patient, who was scanned 6\u20138 weeks after the microelectrode recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI data collection timeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e1c855cf-b890-4d8c-8267-9961be512a44",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C92",
+      "claim": "The volumes of each run were first rigidly realigned with each other, and a mean functional image of the runs was computed for co-registration with the anatomical image, using SPM12.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Laurent et al., 2023, the volumes of each run were first rigidly realigned with each other, and a mean functional image of the runs was computed for co-registration with the anatomical image, using SPM12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI preprocessing with citation to Laurent et al., 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "f20c21bd-5dc9-4fe0-bf12-e9521d8f2011",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C93",
+      "claim": "The volumes were spatially smoothed with a Gaussian kernel of 2 mm (FWHM).",
+      "claim_type": "EXPLICIT",
+      "source": "The volumes were also spatially smoothed with a Gaussian kernel of 2 mm (FWHM; i.e., full width at half maximum).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI preprocessing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "29b4a5e4-f315-4187-967f-943c50934c66",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C94",
+      "claim": "A Fourier analysis was performed using the FFT function in MATLAB without windowing.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, a Fourier analysis was performed using the FFT function in MATLAB without windowing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "1725258d-31df-4c98-bff1-ac694683c478",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C95",
+      "claim": "Amplitudes at the face stimulation frequency (i.e., at F = 0.111 Hz) were converted into Z-scores, using the mean and standard deviation of the amplitude at neighboring frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplitudes at the face stimulation frequency (i.e., at F = 0.111 Hz) were converted into Z-scores, using the mean and standard deviation of the amplitude at neighboring frequencies (see Gao et al., 2018 for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI analysis method with citation to Gao et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "5cda57a9-c98a-47c9-9727-8e346a343282",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C96",
+      "claim": "The relative activations and deactivations of the neural responses at the face stimulation frequency were defined by the phase of the BOLD response.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative activations and deactivations of the neural responses at the face stimulation frequency were defined by the phase of the BOLD response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of method for determining activation vs. deactivation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "05038a8c-c804-42a0-a592-df7e84f80746",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C97",
+      "claim": "About 70% of neurons were face-selective in both individual brains tested across multiple recording sessions.",
+      "claim_type": "IMPLICIT",
+      "source": "In both individual brains tested across multiple recording sessions, a frequency-tagging stimulation objectively identified a substantial proportion (about 70%) of face-selective neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative summary of face-selectivity findings from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "d82467f8-8a7a-455c-bef0-1aa7aca0fc8d",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C98",
+      "claim": "Single units recorded in the lateral FG showed a selective increase to faces.",
+      "claim_type": "EXPLICIT",
+      "source": "While single units recorded in the lateral FG showed a selective increase to faces, neurons localized in the medial FG decreased spiking activity selectively to faces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main experimental finding from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "6e40f9bf-cf84-45e4-81c0-6487e45ab9fb",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C99",
+      "claim": "Neurons localized in the medial FG decreased spiking activity selectively to faces.",
+      "claim_type": "EXPLICIT",
+      "source": "While single units recorded in the lateral FG showed a selective increase to faces, neurons localized in the medial FG decreased spiking activity selectively to faces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main experimental finding from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "b00520c7-87e4-4898-8c4c-af8bcf111ee8",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C100",
+      "claim": "About a third of the single neurons found in the medial FG showed genuine suppression of baseline spiking activity upon presentation of a face.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond a relative reduction to faces compared to non-face objects, about a third of the single neurons found in the medial FG showed genuine suppression of baseline spiking activity upon presentation of a face.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative summary of suppression findings from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "da823e7d-9c0b-4c68-a63d-fa2a6541f75d",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C101",
+      "claim": "The frequency-tagging paradigm provides robust population-level face-selective activity devoid of low-level sensory confounds at the tagged frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "With both recording methods (and EEG; Rossion et al., 2015), this paradigm provides robust population-level face-selective activity devoid of low-level sensory confounds at the tagged frequencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about the properties of the paradigm with citation to Rossion et al., 2015 and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "4d956ac6-76b2-4967-b6d8-51740464fe32",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C102",
+      "claim": "Fast Fourier Transform (FFT) of the BOLD response time courses is used to define face-selective voxels in the frequency domain (0.111 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Fast Fourier Transform (FFT) of the BOLD response time courses is used to define face-selective voxels in the frequency domain (0.111 Hz; Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI analysis method with citation to Gao et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "736f9c78-49fa-4bc7-8e5c-5d2b86a64f95",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C103",
+      "claim": "BOLD frequency spectra at each voxel are transformed into Z-scores, which can either be positive (higher response to face than non-face stimuli, i.e., BOLD signal increase) or negative (lower response to faces than non-face stimuli, i.e., BOLD signal decrease).",
+      "claim_type": "EXPLICIT",
+      "source": "BOLD frequency spectra at each voxel are transformed into Z-scores, which can either be positive (higher response to face than non-face stimuli, i.e., BOLD signal increase) or negative (lower response to faces than non-face stimuli, i.e., BOLD signal decrease).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of how BOLD activation and deactivation are defined.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "6f5cee4c-ffea-4fc7-81ee-b0359deffea7",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C104",
+      "claim": "The estimated location of the microelectrode falls in left MidFG activation in P1.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated location of the microelectrode (green circle) falls in left MidFG activation in P1 and right MidFG deactivation in P2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of electrode location relative to fMRI activation, with reference to Figure 2A and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e0534047-4294-407d-8556-5833198e8f5a",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C105",
+      "claim": "The estimated location of the microelectrode falls in right MidFG deactivation in P2.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated location of the microelectrode (green circle) falls in left MidFG activation in P1 and right MidFG deactivation in P2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of electrode location relative to fMRI deactivation, with reference to Figure 2A and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "f7bb7051-8cb0-47b1-90cb-adbcc488e16f",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C106",
+      "claim": "The representative face-selective SU in P2 exhibits a high increase in firing rate to the general visual stimulation at 6 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The representative face-selective SU in panel E also exhibits a high increase in firing rate to the general visual stimulation at 6 Hz.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of a specific neuron's response pattern with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "3e80da08-c4ee-46a2-8bae-0ab48ef850c7",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "claim_id": "C107",
+      "claim": "The average time courses are computed on notch-filtered data to remove the general visual response at 6 Hz and harmonics.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the average time courses are computed on notch-filtered data to remove the general visual response at 6 Hz and harmonics (see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of data processing method with reference to Figure 2C and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the current state of knowledge regarding BOLD-neural firing relationships, noting that while animal studies have characterized BOLD activation as correlating with synaptic activity, the cellular mechanisms of BOLD deactivation remain unknown, and most prior studies have been conducted in animal models or primary sensory/motor regions rather than human association cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 accurately summarize the state of prior knowledge with appropriate citations. The claims correctly identify gaps in understanding (C1, C3) and cite relevant prior work (C2, C4-C7). This provides appropriate context for the current study's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "6e1d88a8-8087-4ef6-911a-322ad73712fa",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two epilepsy patients were implanted with hybrid macro-microelectrodes in the fusiform gyrus, with P1's electrodes in the lateral MidFG (FFA region showing BOLD activation to faces) and P2's in the medial MidFG (region showing BOLD deactivation to faces). Electrode locations were verified by CT/MRI coregistration and fMRI localization performed months after recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C21 and C54-C65 provide detailed methodological information about participants, electrode placement, and localization procedures. The methods are clearly described with appropriate technical details, though the temporal gap between electrophysiology and fMRI (6-8 weeks, C91) introduces potential variability that is not fully addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "35634383-4ba3-4126-8a12-e1c44c78ea8e",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A frequency-tagging paradigm was used to objectively identify face-selective activity in both fMRI (faces presented at 0.111 Hz) and microelectrode recordings (faces at 1.2 Hz), with stimuli equalized for luminance and contrast but maintaining variable low-level features to minimize confounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C66-C75 describe a well-validated experimental paradigm with appropriate controls for low-level visual confounds. The frequency-tagging approach provides objective quantification of face-selectivity. However, the different stimulation frequencies between fMRI (0.111 Hz) and electrophysiology (1.2 Hz) could introduce methodological differences not fully addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "89f3ef22-8621-4248-9794-5d7eb5e0805c",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "fMRI results showed that faces elicited larger BOLD responses than objects in lateral MidFG (P1) but lower BOLD responses in medial MidFG (P2), with microelectrode locations falling within these activation and deactivation regions respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C102-C105 report clear fMRI findings consistent with prior literature (cited appropriately). The spatial correspondence between electrode locations and fMRI activation/deactivation patterns is demonstrated, though precision of electrode localization (estimated at ~4mm from macroelectrode tip, C64) introduces some spatial uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Across 11 days of recording with 7 microwires per session, 245 units (206 single-units, 39 multi-units) were recorded across both patients. Spike sorting used a Bayesian algorithm with visual review, and face-selectivity was determined using FFT analysis with Z-score threshold of 1.64 (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 and C76-C84 describe appropriate spike sorting and analysis methods with clear statistical criteria. The use of automated sorting with visual review (C76-C77) is standard practice. However, the brief recording time per unit (2\u00d770s, C25) is acknowledged as a limitation, and stability of unit identity across the 11-day recording period is not explicitly addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "4f956cb4-598f-431f-8736-01a43fb1f542",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A very high proportion of visually responsive neurons showed face-selectivity in both regions: 98.1% (51/52) in P1 and 86.6% (110/127) in P2 at p<0.05, with 86.5% and 77.9% respectively at the more conservative p<0.01 threshold. No significant difference in face-selectivity proportions was found between participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 and C97 report remarkably high proportions of face-selective neurons with appropriate statistical testing. The consistency across participants (C29) strengthens the findings. However, the extraordinarily high percentages (>85%) raise questions about potential selection bias in electrode placement or analysis criteria that are not fully addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "801d2eb7-8715-4b70-8161-632111570f94",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Face-selective neurons in lateral MidFG (P1) predominantly showed increased firing to faces (88.9% increases vs 11.1% decreases), while neurons in medial MidFG (P2) predominantly showed decreased firing to faces (95.9% decreases vs 4.1% increases).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 and C98-C99 report the central finding with clear quantitative data and strong effect sizes. The striking correspondence between BOLD signal direction and single-unit response direction is well-documented in Figure 2. This represents a key novel contribution linking fMRI and electrophysiology in human association cortex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e23325de-ff88-4ed4-9e0b-b2a75a89699c",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Response onset latencies did not differ significantly between increases and decreases (118.2 ms vs 127.3 ms, p>0.05), but absolute firing rates differed significantly (3.69 spikes/s for increases vs -2.73 spikes/s for decreases, p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 provide important temporal characterization of the responses. The similar latencies suggest comparable processing stages, while the different magnitudes are expected. Statistical tests are appropriate, though the specific bootstrap method details could be more explicit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "9bac8585-9ccc-4575-9ec5-c97f9f7b7c59",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Among neurons showing reduced firing to faces in P2, 34.3% (34/95) lacked significant general visual response, indicating genuine suppression of baseline spiking activity rather than merely relative reduction compared to objects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35, C50, and C100 identify an important subpopulation showing absolute rather than relative suppression. This strengthens the interpretation that BOLD deactivation can reflect genuine neural suppression. However, the criterion for 'lack of general visual response' (no significance at 6Hz+12Hz) could be influenced by statistical power given the brief recording duration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "f97bb39e-6ea2-4b32-9b52-ad3e9ad1d233",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates a striking correspondence between BOLD signal direction (activation/deactivation) and single-unit firing direction (increase/decrease) in human association cortex, revealing that BOLD decreases can result from relative or absolute spike suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 synthesize the main findings with appropriate context from prior literature. The correspondence between BOLD and single-unit signals is clearly demonstrated across two brain regions in the same individuals. This represents a significant advance in understanding BOLD physiology, though the n=2 sample size limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "8ebf5757-9c67-4bee-93d8-89932751cf38",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Transient spike suppression could be due to suppression/reduction of synaptic inputs or inhibitory inputs to the recorded neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 offers mechanistic speculation about the source of spike suppression. While these are plausible mechanisms, the current data cannot distinguish between them. This represents appropriate speculation for future work but is not directly supported by the presented evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "20561be7-a004-46bd-b688-7b7e23d3ee7b",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The contrasted pattern of BOLD activation/deactivation in lateral/medial fusiform gyrus has been systematically observed across hemispheres in prior work, and the proportions of face-selective units did not differ between the two participants despite differences in total unit numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 address potential concerns about hemispheric differences and individual variability. The consistency with prior literature (C43) and between participants (C45) strengthens confidence in the findings despite the small sample size and different hemispheres sampled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "788cea4f-17f3-4a1f-8a6c-8f5e37d26746",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "While face-suppressed neurons have been reported in monkey inferior temporal cortex, the lack of BOLD deactivation to faces in monkeys and absence of fusiform gyrus in non-hominoid primates has prevented comparable studies. The current findings reveal that face-selective activity in human brain can be expressed as both increases and active suppression of spiking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 appropriately contextualize the findings within comparative neuroscience. The citations to monkey studies are appropriate (C46), and the limitations of animal models for this question are correctly identified (C47-C48). The conclusion about dual expression of face-selectivity (C51) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "93174b13-7aad-46f3-a803-65cb466464fa",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Inhibitory cellular activity plays important roles in maintaining stable cortical circuit function and cortical category selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 cite relevant prior work on inhibitory function with appropriate references. These provide theoretical context for interpreting the observed suppression, though they represent background knowledge rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "b6998fa2-0f38-4d11-8638-a4599fb174ba",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "fMRI data were acquired on a 3T Siemens Prisma scanner with standard sequences, preprocessed using SPM12 with 2mm smoothing, and analyzed using FFT to identify face-selective responses at 0.111 Hz, with activation/deactivation determined by BOLD response phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C96 provide comprehensive fMRI methods. The acquisition parameters are standard and appropriate. The analysis approach using FFT and phase to determine activation/deactivation direction is well-established. However, the 6-8 week gap between electrophysiology and fMRI (C91) could introduce variability not fully accounted for in the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "90710d7a-a422-433c-8901-d649a10edffd",
+      "content_id": "128d8008-00ab-47b9-ae98-e55df1e26d24",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A representative face-selective neuron in P2 showed high firing rate increase to general visual stimulation at 6 Hz, with average time courses computed on notch-filtered data to remove the general visual response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 describe specific analysis details for isolating face-selective responses from general visual responses. The notch-filtering approach is appropriate for separating these components, though this also means the reported face-selective responses are relative to the general visual response baseline.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221",
+      "content_id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study demonstrates a striking correspondence between BOLD signal changes and single-unit neuronal firing in two fusiform gyrus regions: lateral MidFG (P1) showed increased BOLD and increased neuronal firing to faces, while medial MidFG (P2) showed decreased BOLD and decreased neuronal firing to faces. This indicates that BOLD decreases can reflect spike suppression in human association cortex.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledged this as an important observation but expressed concern about the study design. One reviewer noted 'the observation of positive BOLD and neuronal activation is made at one brain site in one patient, while the complementary observation of negative BOLD and neuronal suppression actually derives from the other patient. Showing both effects in both patients would make a much stronger paper.' Another reviewer raised concerns about the SSVEP paradigm lacking a true baseline, making it difficult to distinguish between lower firing rates versus genuine suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "d66b9715-2825-4fbe-b106-f238e7a7f3e8",
+      "content_id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "About one-third (34.3%) of neurons in the medial MidFG showing reduced firing to faces lacked a significant general visual response, indicating genuine suppression of baseline spiking activity upon face presentation rather than merely relative reduction compared to objects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers found this claim critical but insufficiently supported. One reviewer stated 'The authors report that ~30% of neurons showed absolute suppression, but those data are not shown separately from the neurons that only show relative reductions. It is difficult to evaluate the absolute suppression claim from the short assertion in the text alone.' Another reviewer questioned the interpretation, noting 'because the experiment does not have a true baseline (e.g. blank screen, with no visual stimulation) this experimental design cannot distinguish between lower firing rate to faces vs suppression of response to faces.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "0d00c157-ccfb-47ee-a943-1522d7435a22",
+      "content_id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Using frequency-tagging paradigms, the study found robust face-selective differential activity in both fMRI and electrophysiology, with very high proportions of face-selective neurons in both activated (P1: 86.5-98.1%) and deactivated (P2: 77.9-86.6%) MidFG regions, representing about 70% of neurons overall.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the face-selectivity findings without challenge. One reviewer noted 'the methods used for comparing face and object responses in both fMRI and electrode recordings were robust and well-established.' The editor described the methods as 'solid' and the dataset as 'valuable' with 'potentially general importance.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "d5aaadff-6a13-49a8-ba89-bde65cabce71",
+      "content_id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "fMRI localization confirmed that faces elicited larger BOLD responses in lateral MidFG (P1) but lower BOLD responses in medial MidFG (P2), with microelectrode locations falling within these respective activation and deactivation regions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not question the fMRI localization findings. One reviewer summarized: 'The electrode location in one patient showed activation of the BOLD response and activation of neuronal firing in response to face stimuli...The other patient showed...a suppression of the BOLD response to face stimuli.' The anatomical correspondence was accepted as demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "fc8e7b4f-6b0e-42d6-a2bc-ec64294809f7",
+      "content_id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The mean onset response latency did not differ between neuronal increases and decreases (118.2 ms vs. 127.3 ms, p > 0.05), but the absolute average firing rate was significantly lower for decreases than increases (\u22122.73 vs. 3.69 spikes/s, p < 0.01).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these latency and firing rate comparisons. The findings were presented as supporting data for the main results and were not questioned in the reviews.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "21daa346-657b-461c-9c06-99ebcde0b121",
+      "content_id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Across 245 units recorded (206 single-units, 39 multi-units) over multiple sessions, only a small proportion failed to respond (16.1% in P1, 11.8% in P2), with no significant differences between participants in response proportions or face-selectivity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged the dataset as valuable. One reviewer noted 'The data is unique as it contains a lot of single and multiunit recordings (245 units) from the human fusiform gyrus.' Another stated 'These patient data are valuable, with many recording sessions and neurons from human face-selective regions.' The quantitative findings were not challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "1b2ebe95-718f-4e33-bdb8-1a7d6823580b",
+      "content_id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Two epilepsy patients were implanted with hybrid macro-microelectrodes in fusiform gyrus: P1's electrodes were in lateral MidFG (FG4/FFA region), while P2's were in medial MidFG (FG3), representing an unprecedented sampling of a face-deactivated region.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the experimental setup and patient characteristics. The editor described it as 'an ingenious use of clinical patient data' and reviewers noted the value of the recordings. One reviewer suggested highlighting the limitation that 'both effects' were not shown 'in both patients' but did not dispute the anatomical localization claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e18da685-049b-4f6e-8255-c84a4062548c",
+      "content_id": "62448c3b-24a6-441e-aec1-79c0563929ec",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The contrasted pattern of BOLD activation/deactivation for faces in lateral/medial fusiform gyrus has been systematically observed across hemispheres, despite right hemisphere dominance in face recognition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge this contextual claim about the broader literature. It was presented as established knowledge supported by citations and used to justify the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "89164483-f4c8-4818-b987-69445655542c",
+      "result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf"
+    },
+    {
+      "claim_id": "ba32408a-1690-4a16-af4e-c5e784710923",
+      "result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf"
+    },
+    {
+      "claim_id": "8a4e2c68-47a2-4a4f-99e0-a2f156e09ba2",
+      "result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf"
+    },
+    {
+      "claim_id": "cbb2a129-7597-493c-8f98-248afe9b7dcb",
+      "result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf"
+    },
+    {
+      "claim_id": "544a90ed-63ed-4f88-8723-0fcb7681dba1",
+      "result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf"
+    },
+    {
+      "claim_id": "81ee1a68-9186-46e3-8bf9-4512f24096ed",
+      "result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf"
+    },
+    {
+      "claim_id": "d3ba28ef-524b-478b-849f-aed88d712c35",
+      "result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf"
+    },
+    {
+      "claim_id": "06363972-2dd6-461b-adf4-974e1d7345cb",
+      "result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf"
+    },
+    {
+      "claim_id": "fa2c303e-d793-469a-8285-71449d9f669a",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "865416a7-f16d-4969-99b6-5d412dfeab06",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "4a1b8434-1004-48e2-aa32-c040b6597c3e",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "9535a3cf-9fe4-41b9-84dc-22249e72ab13",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "8a0af933-6ad2-4487-8539-33d4b0cd5cf0",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "c6810644-fcbd-4869-81b7-b20f705065aa",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "58b19e32-68c3-40a4-93a6-58b54aae775a",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "0a94fc1f-0e08-4f0e-aaad-66e92314f47e",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "3cec189f-b38c-46a2-98b3-37b7920f89a2",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "424496e3-a10d-4546-838c-6e6708af9a46",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "a4caf64e-bf5c-4fb6-a80a-016f03bc4803",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "446faa9e-70b9-4618-9d13-dd8b834141b1",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "7edb331e-3ad8-4464-bf00-e7e28d3a01b1",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "1226c525-fcbb-4fd5-8ecb-88b9cf2dc56e",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "361f0d3e-b2ca-4666-9d5d-4cef95f93ad7",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "e8d40880-8c66-4ffb-a3f4-411d19355cb1",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "410371a7-dbbb-42f8-833c-0f54618f76cd",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "6757a375-efc6-4110-a346-e00bb0eeb9a7",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "3352ec72-672a-4023-803f-dec1ae2a01e4",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "82882865-aba7-4d8b-8e4a-cb84c2cb3794",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "8cda7dfb-9561-48bf-9a22-cbdc6fd6a67f",
+      "result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa"
+    },
+    {
+      "claim_id": "0fb1579d-a7fd-4078-9e90-4827248a19eb",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "557af5f2-7096-48e3-8c83-782981c14113",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "b06b6916-98c1-4f06-8542-eab098cd3842",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "4ab6896e-73db-4dcf-9382-0f24fcd2df7f",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "79352701-c4aa-4cb3-bd8d-f14d19b3072a",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "386a97d1-99f0-485f-9a6c-55475d6d0beb",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "c7e8f7ce-8ea1-4794-a24b-9cb30cfd0b74",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "2e160ddb-1a45-4938-9dc7-eef071cbdc32",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "571b31b1-f50c-4198-9b74-d4ae0e8d3274",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "a0287cd0-805d-4c5d-8078-c314703c9f43",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "59eb622c-6ca1-4c2a-9488-ee5c5d369dc9",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "67e4fa9d-c223-45b4-8332-bf2ae7ed7378",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "da823e7d-9c0b-4c68-a63d-fa2a6541f75d",
+      "result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e"
+    },
+    {
+      "claim_id": "17b2c2f7-539b-48fb-9cdb-7ea52356bdfe",
+      "result_id": "89f3ef22-8621-4248-9794-5d7eb5e0805c"
+    },
+    {
+      "claim_id": "f23ef9be-38ee-476c-8d00-644c6f6b9953",
+      "result_id": "89f3ef22-8621-4248-9794-5d7eb5e0805c"
+    },
+    {
+      "claim_id": "4d956ac6-76b2-4967-b6d8-51740464fe32",
+      "result_id": "89f3ef22-8621-4248-9794-5d7eb5e0805c"
+    },
+    {
+      "claim_id": "736f9c78-49fa-4bc7-8e5c-5d2b86a64f95",
+      "result_id": "89f3ef22-8621-4248-9794-5d7eb5e0805c"
+    },
+    {
+      "claim_id": "6f5cee4c-ffea-4fc7-81ee-b0359deffea7",
+      "result_id": "89f3ef22-8621-4248-9794-5d7eb5e0805c"
+    },
+    {
+      "claim_id": "e0534047-4294-407d-8556-5833198e8f5a",
+      "result_id": "89f3ef22-8621-4248-9794-5d7eb5e0805c"
+    },
+    {
+      "claim_id": "a1c95252-9a70-420f-aec3-603a4921be65",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "2c6549f9-112a-4e30-b228-afaee2c27cb0",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "f0f3c052-2107-4665-b215-c57f4a310c0a",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "b6db63f1-a76c-4c8f-af1e-25a16e52b1eb",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "92002d68-e484-4d53-9a69-53285ab1944a",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "f19e214a-81a5-483b-b740-0a2963f45923",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "e09ebec7-b96b-490e-946c-47fef095a441",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "30626e9c-5d06-4cc2-ae22-42d9c85dd433",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "dcc3eb49-d203-4ad2-997e-d26565140343",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "4814648e-4bc4-43a2-a93c-ce8ad56ab905",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "77f5cd37-7922-4119-97e0-9de4a765533d",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "7bd08bd9-7471-45dd-9903-668ce036aefb",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "35f17a29-dae6-4b2e-a1c4-51d6a5b424f6",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "98ecd9fd-216d-4058-8773-bbdf36cf4084",
+      "result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25"
+    },
+    {
+      "claim_id": "ed4601c1-bd4d-4a28-9def-9f14173e96c7",
+      "result_id": "4f956cb4-598f-431f-8736-01a43fb1f542"
+    },
+    {
+      "claim_id": "5b4cf3ac-91a5-4b05-bca8-4235f4d74adf",
+      "result_id": "4f956cb4-598f-431f-8736-01a43fb1f542"
+    },
+    {
+      "claim_id": "915e0e11-f4da-41a2-8010-a43df8b77caa",
+      "result_id": "4f956cb4-598f-431f-8736-01a43fb1f542"
+    },
+    {
+      "claim_id": "05038a8c-c804-42a0-a592-df7e84f80746",
+      "result_id": "4f956cb4-598f-431f-8736-01a43fb1f542"
+    },
+    {
+      "claim_id": "eb3aed66-a097-4fca-aea6-215c3fbf5cc1",
+      "result_id": "801d2eb7-8715-4b70-8161-632111570f94"
+    },
+    {
+      "claim_id": "1f6efb00-cf45-4430-a54a-3e035f2f098b",
+      "result_id": "801d2eb7-8715-4b70-8161-632111570f94"
+    },
+    {
+      "claim_id": "d82467f8-8a7a-455c-bef0-1aa7aca0fc8d",
+      "result_id": "801d2eb7-8715-4b70-8161-632111570f94"
+    },
+    {
+      "claim_id": "6e40f9bf-cf84-45e4-81c0-6487e45ab9fb",
+      "result_id": "801d2eb7-8715-4b70-8161-632111570f94"
+    },
+    {
+      "claim_id": "2104bcc3-3437-40e3-bef6-9dd53d57db21",
+      "result_id": "e23325de-ff88-4ed4-9e0b-b2a75a89699c"
+    },
+    {
+      "claim_id": "6a5032a6-4e75-4e69-844d-491aeadc17fa",
+      "result_id": "e23325de-ff88-4ed4-9e0b-b2a75a89699c"
+    },
+    {
+      "claim_id": "d1d34a2e-ce48-4d01-8be7-f976d279c3b1",
+      "result_id": "9bac8585-9ccc-4575-9ec5-c97f9f7b7c59"
+    },
+    {
+      "claim_id": "e148318e-b08b-4b44-9a1e-551c0c6f8503",
+      "result_id": "9bac8585-9ccc-4575-9ec5-c97f9f7b7c59"
+    },
+    {
+      "claim_id": "a2eb409d-5190-4748-a115-6101b9d5adaa",
+      "result_id": "9bac8585-9ccc-4575-9ec5-c97f9f7b7c59"
+    },
+    {
+      "claim_id": "b00520c7-87e4-4898-8c4c-af8bcf111ee8",
+      "result_id": "9bac8585-9ccc-4575-9ec5-c97f9f7b7c59"
+    },
+    {
+      "claim_id": "fd9000fd-637a-438d-96e5-d1333e249717",
+      "result_id": "f97bb39e-6ea2-4b32-9b52-ad3e9ad1d233"
+    },
+    {
+      "claim_id": "e65dad45-dbd8-488b-a351-f2fe21bd3b2f",
+      "result_id": "f97bb39e-6ea2-4b32-9b52-ad3e9ad1d233"
+    },
+    {
+      "claim_id": "51759b5d-8c4b-4a34-8645-d70604692e5d",
+      "result_id": "f97bb39e-6ea2-4b32-9b52-ad3e9ad1d233"
+    },
+    {
+      "claim_id": "8f70b693-d764-478b-8e6e-98a4c18fda98",
+      "result_id": "f97bb39e-6ea2-4b32-9b52-ad3e9ad1d233"
+    },
+    {
+      "claim_id": "5d9243cc-3cf6-483e-9600-8b2cdd62cf91",
+      "result_id": "f97bb39e-6ea2-4b32-9b52-ad3e9ad1d233"
+    },
+    {
+      "claim_id": "c066d527-bd21-469c-bf48-42f4a818888c",
+      "result_id": "f97bb39e-6ea2-4b32-9b52-ad3e9ad1d233"
+    },
+    {
+      "claim_id": "4aede154-9beb-4c6b-a946-b37846a088a7",
+      "result_id": "8ebf5757-9c67-4bee-93d8-89932751cf38"
+    },
+    {
+      "claim_id": "dc95b4ae-3395-455c-91be-3a3b624e0973",
+      "result_id": "20561be7-a004-46bd-b688-7b7e23d3ee7b"
+    },
+    {
+      "claim_id": "11754abb-276f-49b0-a121-91d92acf055f",
+      "result_id": "20561be7-a004-46bd-b688-7b7e23d3ee7b"
+    },
+    {
+      "claim_id": "6681ddf3-9206-4081-be68-bcaae51ef039",
+      "result_id": "20561be7-a004-46bd-b688-7b7e23d3ee7b"
+    },
+    {
+      "claim_id": "83e74609-3858-40ac-96f8-2ccc8c022121",
+      "result_id": "788cea4f-17f3-4a1f-8a6c-8f5e37d26746"
+    },
+    {
+      "claim_id": "25b4a769-ad41-40a5-a5e9-2b8442556977",
+      "result_id": "788cea4f-17f3-4a1f-8a6c-8f5e37d26746"
+    },
+    {
+      "claim_id": "704b0f36-060a-4cef-9832-848aa03ddb59",
+      "result_id": "788cea4f-17f3-4a1f-8a6c-8f5e37d26746"
+    },
+    {
+      "claim_id": "3fe44965-9ae7-40dd-b3e9-8d62eb7e4305",
+      "result_id": "788cea4f-17f3-4a1f-8a6c-8f5e37d26746"
+    },
+    {
+      "claim_id": "4e2e294f-b29a-4069-9673-8d0608e84387",
+      "result_id": "788cea4f-17f3-4a1f-8a6c-8f5e37d26746"
+    },
+    {
+      "claim_id": "8f2af105-3ae4-43f7-a4b7-84a78e196382",
+      "result_id": "93174b13-7aad-46f3-a803-65cb466464fa"
+    },
+    {
+      "claim_id": "3a5069db-4d14-468d-9dc7-de12fa3547a4",
+      "result_id": "93174b13-7aad-46f3-a803-65cb466464fa"
+    },
+    {
+      "claim_id": "a3860364-e659-474d-8ab5-18c1328feff9",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "bdee1f7b-47fc-445b-a0db-739453a45b4c",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "93c57783-3d56-4760-8187-3dc8f3c91443",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "0a11ac09-59ab-42c0-a0e9-70ef77abff6b",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "638a15d7-460c-4041-b827-3e503df64b71",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "da754858-694b-4838-922d-41e795e55cf1",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "21af5b22-aa80-461c-9f29-e8dd751df835",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "e1c855cf-b890-4d8c-8267-9961be512a44",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "f20c21bd-5dc9-4fe0-bf12-e9521d8f2011",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "29b4a5e4-f315-4187-967f-943c50934c66",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "1725258d-31df-4c98-bff1-ac694683c478",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "5cda57a9-c98a-47c9-9727-8e346a343282",
+      "result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba"
+    },
+    {
+      "claim_id": "f7bb7051-8cb0-47b1-90cb-adbcc488e16f",
+      "result_id": "90710d7a-a422-433c-8901-d649a10edffd"
+    },
+    {
+      "claim_id": "3e80da08-c4ee-46a2-8bae-0ab48ef850c7",
+      "result_id": "90710d7a-a422-433c-8901-d649a10edffd"
+    },
+    {
+      "claim_id": "8f70b693-d764-478b-8e6e-98a4c18fda98",
+      "result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221"
+    },
+    {
+      "claim_id": "5d9243cc-3cf6-483e-9600-8b2cdd62cf91",
+      "result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221"
+    },
+    {
+      "claim_id": "c066d527-bd21-469c-bf48-42f4a818888c",
+      "result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221"
+    },
+    {
+      "claim_id": "d82467f8-8a7a-455c-bef0-1aa7aca0fc8d",
+      "result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221"
+    },
+    {
+      "claim_id": "6e40f9bf-cf84-45e4-81c0-6487e45ab9fb",
+      "result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221"
+    },
+    {
+      "claim_id": "eb3aed66-a097-4fca-aea6-215c3fbf5cc1",
+      "result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221"
+    },
+    {
+      "claim_id": "1f6efb00-cf45-4430-a54a-3e035f2f098b",
+      "result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221"
+    },
+    {
+      "claim_id": "d1d34a2e-ce48-4d01-8be7-f976d279c3b1",
+      "result_id": "d66b9715-2825-4fbe-b106-f238e7a7f3e8"
+    },
+    {
+      "claim_id": "e148318e-b08b-4b44-9a1e-551c0c6f8503",
+      "result_id": "d66b9715-2825-4fbe-b106-f238e7a7f3e8"
+    },
+    {
+      "claim_id": "a2eb409d-5190-4748-a115-6101b9d5adaa",
+      "result_id": "d66b9715-2825-4fbe-b106-f238e7a7f3e8"
+    },
+    {
+      "claim_id": "b00520c7-87e4-4898-8c4c-af8bcf111ee8",
+      "result_id": "d66b9715-2825-4fbe-b106-f238e7a7f3e8"
+    },
+    {
+      "claim_id": "0fb1579d-a7fd-4078-9e90-4827248a19eb",
+      "result_id": "0d00c157-ccfb-47ee-a943-1522d7435a22"
+    },
+    {
+      "claim_id": "557af5f2-7096-48e3-8c83-782981c14113",
+      "result_id": "0d00c157-ccfb-47ee-a943-1522d7435a22"
+    },
+    {
+      "claim_id": "ed4601c1-bd4d-4a28-9def-9f14173e96c7",
+      "result_id": "0d00c157-ccfb-47ee-a943-1522d7435a22"
+    },
+    {
+      "claim_id": "5b4cf3ac-91a5-4b05-bca8-4235f4d74adf",
+      "result_id": "0d00c157-ccfb-47ee-a943-1522d7435a22"
+    },
+    {
+      "claim_id": "05038a8c-c804-42a0-a592-df7e84f80746",
+      "result_id": "0d00c157-ccfb-47ee-a943-1522d7435a22"
+    },
+    {
+      "claim_id": "17b2c2f7-539b-48fb-9cdb-7ea52356bdfe",
+      "result_id": "d5aaadff-6a13-49a8-ba89-bde65cabce71"
+    },
+    {
+      "claim_id": "f23ef9be-38ee-476c-8d00-644c6f6b9953",
+      "result_id": "d5aaadff-6a13-49a8-ba89-bde65cabce71"
+    },
+    {
+      "claim_id": "6f5cee4c-ffea-4fc7-81ee-b0359deffea7",
+      "result_id": "d5aaadff-6a13-49a8-ba89-bde65cabce71"
+    },
+    {
+      "claim_id": "e0534047-4294-407d-8556-5833198e8f5a",
+      "result_id": "d5aaadff-6a13-49a8-ba89-bde65cabce71"
+    },
+    {
+      "claim_id": "2104bcc3-3437-40e3-bef6-9dd53d57db21",
+      "result_id": "fc8e7b4f-6b0e-42d6-a2bc-ec64294809f7"
+    },
+    {
+      "claim_id": "6a5032a6-4e75-4e69-844d-491aeadc17fa",
+      "result_id": "fc8e7b4f-6b0e-42d6-a2bc-ec64294809f7"
+    },
+    {
+      "claim_id": "f0f3c052-2107-4665-b215-c57f4a310c0a",
+      "result_id": "21daa346-657b-461c-9c06-99ebcde0b121"
+    },
+    {
+      "claim_id": "b6db63f1-a76c-4c8f-af1e-25a16e52b1eb",
+      "result_id": "21daa346-657b-461c-9c06-99ebcde0b121"
+    },
+    {
+      "claim_id": "92002d68-e484-4d53-9a69-53285ab1944a",
+      "result_id": "21daa346-657b-461c-9c06-99ebcde0b121"
+    },
+    {
+      "claim_id": "6681ddf3-9206-4081-be68-bcaae51ef039",
+      "result_id": "21daa346-657b-461c-9c06-99ebcde0b121"
+    },
+    {
+      "claim_id": "fa2c303e-d793-469a-8285-71449d9f669a",
+      "result_id": "1b2ebe95-718f-4e33-bdb8-1a7d6823580b"
+    },
+    {
+      "claim_id": "9535a3cf-9fe4-41b9-84dc-22249e72ab13",
+      "result_id": "1b2ebe95-718f-4e33-bdb8-1a7d6823580b"
+    },
+    {
+      "claim_id": "c6810644-fcbd-4869-81b7-b20f705065aa",
+      "result_id": "1b2ebe95-718f-4e33-bdb8-1a7d6823580b"
+    },
+    {
+      "claim_id": "0a94fc1f-0e08-4f0e-aaad-66e92314f47e",
+      "result_id": "1b2ebe95-718f-4e33-bdb8-1a7d6823580b"
+    },
+    {
+      "claim_id": "3cec189f-b38c-46a2-98b3-37b7920f89a2",
+      "result_id": "1b2ebe95-718f-4e33-bdb8-1a7d6823580b"
+    },
+    {
+      "claim_id": "424496e3-a10d-4546-838c-6e6708af9a46",
+      "result_id": "1b2ebe95-718f-4e33-bdb8-1a7d6823580b"
+    },
+    {
+      "claim_id": "dc95b4ae-3395-455c-91be-3a3b624e0973",
+      "result_id": "e18da685-049b-4f6e-8255-c84a4062548c"
+    },
+    {
+      "claim_id": "11754abb-276f-49b0-a121-91d92acf055f",
+      "result_id": "e18da685-049b-4f6e-8255-c84a4062548c"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "27e988ad-5ff8-419e-99fa-fffec273cb99",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "9bac8585-9ccc-4575-9ec5-c97f9f7b7c59",
+      "peer_result_id": "d66b9715-2825-4fbe-b106-f238e7a7f3e8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address absolute suppression claims (C34, C35, C50, C100). OpenEval finds these claims SUPPORTED, noting they strengthen the interpretation of BOLD deactivation reflecting neural suppression, though acknowledging potential statistical power limitations. Peer reviewers rate this UNCERTAIN, stating the data are 'insufficiently supported' and not shown separately, and questioning whether the experimental design can distinguish lower firing rates from genuine suppression without a true baseline.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "b08005d7-1353-4ad7-8924-1bafa0ce8b45",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "e23325de-ff88-4ed4-9e0b-b2a75a89699c",
+      "peer_result_id": "fc8e7b4f-6b0e-42d6-a2bc-ec64294809f7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate temporal characterization claims (C32, C33). OpenEval rates SUPPORTED with appropriate statistical tests, though noting bootstrap method details could be more explicit. Peer reviewers also rate SUPPORTED without challenge, accepting these as supporting data for main results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "667faa71-ed1e-422a-ba5c-3959eaa2afd3",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "801d2eb7-8715-4b70-8161-632111570f94",
+      "peer_result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the central finding of BOLD-neural correspondence (C30, C31, C98, C99). OpenEval rates SUPPORTED, calling this a 'key novel contribution' with strong effect sizes. Peer reviewers rate UNCERTAIN, expressing concern that positive BOLD/activation was shown in one patient while negative BOLD/suppression was in the other patient, and questioning the lack of true baseline in the SSVEP paradigm.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "6cc53af5-38cc-4a75-b1e4-90571f243013",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "f97bb39e-6ea2-4b32-9b52-ad3e9ad1d233",
+      "peer_result_id": "16557d74-f923-4a2b-9ab3-eccdaf4ea221",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R10 synthesizes main findings (C36-C41) including claims C39, C40, C41 which overlap with peer R1. OpenEval rates SUPPORTED despite n=2 limitation. Peer R1 addresses overlapping claims C39, C40, C41 (plus C98, C99, C30, C31) but rates UNCERTAIN due to design concerns about showing both effects in both patients.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "e8b56b0e-3aa0-4851-b25c-aacd6ac633ee",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "89f3ef22-8621-4248-9794-5d7eb5e0805c",
+      "peer_result_id": "d5aaadff-6a13-49a8-ba89-bde65cabce71",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate fMRI localization findings (C18, C19, C102-C105). OpenEval rates SUPPORTED, noting consistency with prior literature though acknowledging spatial uncertainty from electrode localization. Peer reviewers also rate SUPPORTED, accepting the anatomical correspondence as demonstrated without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "2355cdff-9825-4db8-95f1-9a336d719ad2",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4f956cb4-598f-431f-8736-01a43fb1f542",
+      "peer_result_id": "0d00c157-ccfb-47ee-a943-1522d7435a22",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address face-selectivity findings. OpenEval R6 covers C27-C29, C97 and rates SUPPORTED but questions the extraordinarily high percentages (>85%) and potential selection bias. Peer R3 covers C16, C17, C27, C28, C97 and rates SUPPORTED, describing methods as 'robust and well-established' and the dataset as 'valuable' without expressing concerns about the high percentages.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "c82a2a6e-ff7f-41c5-b2e3-9207eb922de5",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "20561be7-a004-46bd-b688-7b7e23d3ee7b",
+      "peer_result_id": "e18da685-049b-4f6e-8255-c84a4062548c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address hemispheric differences and broader literature context (C43, C44). OpenEval R12 also includes C45 and rates SUPPORTED, noting consistency strengthens findings despite small sample. Peer R8 rates SUPPORTED, accepting this as established knowledge used to justify study design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "50f1a911-9545-4387-915f-fb2ed8022151",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "3f5a16d2-4b22-48e9-967c-4e149e7fbc25",
+      "peer_result_id": "21daa346-657b-461c-9c06-99ebcde0b121",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address spike sorting and recording methods. OpenEval R5 covers C22-C26, C76-C84 and rates SUPPORTED with standard practices, though noting brief recording time and unaddressed stability concerns. Peer R6 covers C24, C25, C26, C45 and rates SUPPORTED, acknowledging the dataset as 'valuable' with 'many recording sessions and neurons' without challenging quantitative findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "de497739-c21c-4dee-847e-3dd77855b536",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "6e1d88a8-8087-4ef6-911a-322ad73712fa",
+      "peer_result_id": "1b2ebe95-718f-4e33-bdb8-1a7d6823580b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address participant and methodological setup. OpenEval R2 covers extensive methods (C9-C21, C54-C65) and rates SUPPORTED with clear descriptions, though noting temporal gap concerns. Peer R7 covers subset (C9, C12, C14, C20, C21, C54) and rates SUPPORTED, describing it as 'ingenious use of clinical patient data' and noting value of recordings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "1cc51fdc-0976-45ec-ac9c-a41737b0ab77",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "35634383-4ba3-4126-8a12-e1c44c78ea8e",
+      "peer_result_id": "0d00c157-ccfb-47ee-a943-1522d7435a22",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address experimental paradigm. OpenEval R3 covers C16, C17, C66-C75, C101 and rates SUPPORTED, noting well-validated paradigm but questioning frequency differences between fMRI and electrophysiology. Peer R3 covers C16, C17, C27, C28, C97 and rates SUPPORTED, accepting methods as 'robust and well-established.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "96de3433-e676-4cfc-af81-b8b7f92df1c3",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "f9ecd246-e609-4b07-a375-bbda71a6bfbf",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R1 evaluates prior knowledge and background claims (C1-C8), rating them SUPPORTED as accurately summarizing the state of knowledge with appropriate citations. No corresponding peer review evaluation found for these background/introduction claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "be69e8d1-c53a-4fff-a3d0-7ccdfbd0a755",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "8ebf5757-9c67-4bee-93d8-89932751cf38",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R11 addresses mechanistic speculation about spike suppression sources (C42), rating it UNCERTAIN as plausible but not directly supported by presented evidence. No corresponding peer review evaluation found for this speculative claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "67b26f53-268e-4fbc-9e56-0e3f6afb0a45",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "788cea4f-17f3-4a1f-8a6c-8f5e37d26746",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R13 evaluates comparative neuroscience context (C46-C51), rating SUPPORTED with appropriate citations to monkey studies and limitations of animal models. No corresponding peer review evaluation found for these comparative/contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "6416241c-11b3-466d-aefa-e38b3375d955",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "93174b13-7aad-46f3-a803-65cb466464fa",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R14 addresses prior work on inhibitory function (C52, C53), rating SUPPORTED as relevant background knowledge with appropriate references. No corresponding peer review evaluation found for these background citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "cb682969-7ddf-4bf8-a13d-229a1cc49406",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "b6998fa2-0f38-4d11-8638-a4599fb174ba",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R15 evaluates comprehensive fMRI methods (C85-C96), rating SUPPORTED with standard acquisition parameters and well-established analysis approaches, though noting 6-8 week gap concerns. No corresponding peer review evaluation found for these detailed fMRI methodology claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    },
+    {
+      "id": "3d9cebf9-73b5-45b3-a755-7a32be2cfa75",
+      "submission_id": "f6a671c5-cf36-4c3f-b900-9da7451cbe62",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "90710d7a-a422-433c-8901-d649a10edffd",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R16 addresses specific analysis details for isolating face-selective responses (C106, C107), rating SUPPORTED with appropriate notch-filtering approach. No corresponding peer review evaluation found for these specific analysis methodology claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:23:22.656882Z"
+    }
+  ]
+}

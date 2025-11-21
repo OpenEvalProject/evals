@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes the phylogenetic relationships and divergence times among the studied species: percomorphs (medaka and cichlids) and ostariophysi (zebrafish) diverged ~240 million years ago, medaka and cichlids diverged ~100 million years ago, and the cichlid species studied diverged within the past 3 million years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These phylogenetic timing claims (C1-C3) are all supported by appropriate citations to published phylogenetic studies (Betancur-R et al., 2017; Ronco et al., 2021). The authors correctly cite established phylogenetic literature to contextualize their comparative study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Different species begin feeding at different developmental stages: cichlid larvae started feeding at 12-14 days post-fertilization (dpf), while medaka started feeding at approximately 10 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These developmental timing observations (C6, C7) are directly reported from the authors' experimental observations and are used to stage-match larvae across species for comparative analysis. The data appear straightforward and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Larval fish species exhibit diverse swimming patterns: medaka and A. burtoni swim continuously with a 'gliding' style, L. ocellatus and N. multifasciatus show intermittent swimming with long rest periods, and L. attenuatus displays intermediate behavior. Medaka exhibited significantly longer behavioral syllables than cichlids (p<0.01), while N. multifasciatus had significantly shorter syllables than other cichlids (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are well-supported by direct video observations and quantitative analysis shown in Figure 1. The statistical comparisons use appropriate bootstrap tests with stated significance levels. The behavioral descriptions are consistent with the presented data and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "All four cichlid species converge their eyes during prey capture, but medaka do not. Gaussian mixture modeling showed that two-component models fit cichlid eye convergence data better than single-component models, while medaka eye convergence was best fit by a single distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are strongly supported by both qualitative observations (videos) and quantitative statistical modeling (Gaussian mixture models with BIC comparison) shown in Figure 3A-B. The methodology is appropriate and the conclusions are well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Cichlid species show distinct hunting strategies: L. attenuatus spent ~25% of time hunting with longer hunt durations, A. burtoni initiated hunts at high rates but with shorter durations, while L. ocellatus and N. multifasciatus spent <10% of time hunting. Despite these differences, all three species consumed prey at similar rates (~1 artemia/minute).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 are supported by quantitative analysis with appropriate statistical tests (Mann-Whitney U with Bonferroni correction) shown in Figure 3C-G. The data clearly demonstrate species-specific hunting strategies, though the similar consumption rates despite different hunting patterns is intriguing and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cichlids center prey within a strike zone during hunting: prey become increasingly localized to the near-central visual field over time, with cichlids initiating capture at various distances (up to 15 mm) but converging eyes when prey are ~5 mm away, ultimately positioning prey in a central strike zone ~1-2 mm away at capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 are well-supported by detailed prey tracking analysis shown in Figure 4. The kernel density estimates and statistical analyses (bootstrap tests) appropriately demonstrate the progressive centering of prey. The methodology for tracking prey trajectories is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Tail pose dynamics are similarly low-dimensional across all species studied, with three principal components explaining >90% variance. The PCs correspond to a harmonic series with PC1 capturing 'turniness' and PCs 2-3 capturing tail oscillations, and these first three PCs are similar across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by appropriate PCA analysis shown in Figure 5A-C. The finding that tail kinematics occupy a common low-dimensional space across species is well-demonstrated and enables cross-species comparison. The methodology follows established approaches from prior zebrafish studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Cichlids exhibit a broader behavioral repertoire during hunting than zebrafish, including behaviors preferentially performed during prey capture, hovering in place, tail coiling into S-shapes (capture springs), and post-strike maneuvers like spitting and backward swimming. Cichlid captures often occur in two phases involving pharyngeal jaws.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by clustering analysis (Figure 5F-G) and direct video observations. The identification of novel behaviors not present in zebrafish is well-documented through both quantitative kinematic analysis and qualitative descriptions with video evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Medaka capture prey laterally with a side-swing behavior rather than centrally, which is distinct from cichlids. Cichlids have at least two kinematically distinct capture strikes: a slower attack swim and a faster capture spring, both similar across cichlid species but distinct from the medaka side-swing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by clustering analysis of capture strikes (Figure 5H-K) showing clear separation between medaka and cichlid strike kinematics. The identification of two distinct cichlid strike types is well-demonstrated through kinematic analysis and comparison to zebrafish literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C48",
+      "C49",
+      "C102",
+      "C103"
+    ],
+    "result": "The rate of heading change during prey approach was significantly greater in medaka than in L. attenuatus (p<0.001), consistent with cichlids using binocular cues (like binocular disparity) while medaka may employ a monocular strategy (like motion parallax) to determine prey distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the heading change data (C45) is statistically significant and shown in Figure 5N, the mechanistic interpretation (C48, C49, C102, C103) remains speculative. The authors appropriately use cautious language ('consistent with', 'may employ'), but direct evidence for the specific depth perception mechanisms is lacking. Additional experiments (e.g., monocular occlusion, depth perception assays) would be needed to definitively support the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Cichlids share the same general hunting strategy as zebrafish (striking at prey in a binocular strike zone with converged eyes), but have a broader behavioral repertoire. In contrast, medaka deploy a fundamentally different strategy, striking at prey laterally in the monocular visual field with a side-swing behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C46, C47, C52-C54) appropriately synthesize the experimental findings presented throughout the manuscript. The conclusions are well-supported by the convergence of multiple lines of evidence including eye movements, prey positioning, and strike kinematics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C88",
+      "C89",
+      "C90",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose that different hunting strategies may reflect different depth perception mechanisms: medaka may judge distance predominantly by motion parallax (requiring continuous swimming and lateral prey positioning), while cichlids and zebrafish may use binocular cues (requiring intermittent swimming with pauses to sample binocular disparity). Natural selection may have favored co-evolution of locomotor and oculomotor adaptations based on the dominant distance measurement mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While this is an interesting and plausible hypothesis (C55, C88-C90, C104-C107), it remains largely speculative. The behavioral observations are consistent with this interpretation, but alternative explanations are not thoroughly explored. The authors appropriately use speculative language ('may', 'suggests'), but the claims would require additional experimental validation (e.g., manipulating visual cues, testing depth perception directly) to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Different cichlid species employ distinct hunting strategies: L. attenuatus shows persistent active hunting with frequent and long-duration hunts, A. burtoni shows active hunting with high-rate short-duration hunts, while L. ocellatus and N. multifasciatus employ sit-and-wait predation strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These characterizations (C72-C75) appropriately synthesize the quantitative data from Figure 3 into ecological interpretations. The classifications into 'active hunting' vs 'sit-and-wait' strategies are reasonable given the observed patterns of hunting frequency, duration, and time spent hunting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The number of behavioral syllables identified ranged from 11 (L. ocellatus) to 32 (A. burtoni) across species. Species with more clusters (LA and AB with 29-32) performed more hunting sequences than LO or NM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is directly supported by the clustering analysis results. Claim C81 appropriately notes the correlation between cluster number and hunting frequency, though the authors correctly acknowledge this could reflect either undersampling of less active hunters or genuine differences in behavioral repertoire.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C115",
+      "C116"
+    ],
+    "result": "L. attenuatus often initiated prey capture when artemia were already centered in the visual field, likely due to restarting hunts on recently expelled prey (spitting behavior). The function of spitting is unclear but might indicate prey are too large to swallow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation (C76) is supported by Figure 4A-D. The explanation linking this to spitting behavior (C115) is a reasonable inference given the documented spitting behavior. The speculation about prey size (C116) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Hovering behavior in cichlids may serve to keep animals in place during hunting (preventing movement by convection currents or breaking forward momentum) or allow pauses between sensorimotor decisions while keeping the tail motile. Hovering is also present in some adult cichlids using lateral line for prey detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The functional explanations for hovering (C82, C83) are speculative and not directly tested. The comparison to adult cichlids (C84) is appropriately cited but doesn't validate the proposed functions for larval hovering. These remain plausible but untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The cichlid capture spring shares structural similarities with the zebrafish S-strike, differing primarily in timescale (hundreds vs. tens of milliseconds). The zebrafish S-strike may represent an accelerated capture spring, or vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinematic similarity (C85) is supported by the comparative analysis in Figure 5. The evolutionary relationship (C86, C87) is appropriately presented as speculative, acknowledging uncertainty about the direction of evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Medaka have behavioral syllables similar to cichlid and zebrafish hunting bouts (J-turns, approach swims, slow swims). Although medaka eyes don't converge, there is sometimes slight nasalward rotation of the ipsilateral eye during side swings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by clustering analysis (Figure 5H). The observation of slight ipsilateral eye rotation (C94) is documented in Figure 5I, though its functional significance remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Eye convergence is not always a hallmark of prey capture in fish larvae, and multiple kinematically distinct capture swims exist. The authors speculate that ocular vergence and swim kinematics may coevolve, with these strategies potentially present in a common teleost ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The empirical observations (C109, C110) are well-supported by the data. The evolutionary speculation (C111, C112) is appropriately tentative and acknowledges the need for broader taxonomic sampling to distinguish ancestral conservation from convergent evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Comparative evidence suggests the teleost brain employs cues from both vision and lateral line sensory modalities when available, but eye movements are a poor predictor of the dominance of vision in prey capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference (C99, C100) is reasonably supported by the comparative evidence from zebrafish, cavefish, and the current study. The decoupling of eye convergence from visual dependence is demonstrated across multiple species with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C117"
+    ],
+    "result": "The authors propose that comparing neural circuitry across these species could identify evolvable circuit nodes and genetic loci underlying prey localization strategies. They emphasize that detailed quantitative behavioral description is an important first step toward understanding neural mechanisms and ecological relationships. Broader species sampling could distinguish ancestral conservation from convergent evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These forward-looking statements (C113, C114, C117) appropriately contextualize the study's contributions and identify important future directions. They are reasonable perspectives given the current findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Participants successfully learned two categorization rules with equal familiarity and precision, and performed the maintenance and categorization tasks with matched difficulty during fMRI scanning. A boundary effect was observed only in the categorization task, confirming task compliance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide converging behavioral evidence from both learning and fMRI sessions. Statistical tests confirm equal rule acquisition (C19-C20), matched task difficulty (C21-C22), and the expected boundary effect specific to categorization (C23-C24), all supported by appropriate figures and statistical analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Enhanced stimulus representation in EVC tracked demands for precise WM maintenance (higher in maintenance than categorization), while enhanced stimulus representation in sPCS tracked demands for active WM control (higher in categorization than maintenance). IPS showed significant but non-differential stimulus representation across tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 describe the primary fMRI findings across three ROIs using IEM analysis. The differential patterns are well-documented with statistical support (Figure 2C, Figure 2\u2014source data 1) and multiple control analyses (Figure 2\u2014figure supplements). The interpretations (C27, C32) logically follow from the data patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Stimulus representation strength in sPCS predicted behavioral accuracy exclusively for the categorization task throughout the memory delay, while EVC and IPS representations predicted behavior in both tasks (EVC during early delay; IPS during early delay for maintenance and throughout for categorization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 present brain-behavior correlation analyses supported by Figure 3 and statistical data. The selective predictive relationship between sPCS stimulus representation and categorization performance (C35) is particularly well-documented and strengthens the functional interpretation of sPCS involvement in active control (C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Experiment 2 (fixed rule) replicated the main patterns from Experiment 1 (flexible rules) in EVC and IPS, but showed earlier emergence of differential stimulus representation in sPCS. A significant interaction between experiments and epochs confirmed that reduced control demand shifted the timing of frontal stimulus enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe the comparison between Experiments 1 and 2, supported by Figure 4 and mixed ANOVA results (F(1,46)=7.43, p=0.009). The temporal shift in sPCS differential representation with varying control demands provides strong evidence for the flexibility hypothesis, though the interpretation (C42) appropriately acknowledges this as consistent with expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Category information was decodable across ROIs in both experiments, but abstract category representation (after removing stimulus-related signals) was only evident in Experiment 2 (fixed rule), particularly in sPCS. This suggests a tradeoff between stimulus and category representations in frontal cortex depending on control demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 present category decoding results with appropriate controls for stimulus similarity (orthogonal rule decoding). The abstract category index analysis (Figure 5D) and LMEM results (Figure 5\u2014figure supplement 2) converge to support the tradeoff interpretation (C47), though this remains somewhat inferential. The statistical support is adequate (ps < 0.044 for category decoding; p=0.034 for sPCS difference).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "RNN simulations demonstrated that preserving stimulus information at the output stage (RNN2) replicated human fMRI patterns, including enhanced stimulus representation in the anterior module during categorization and increased abstract category representation in fixed-rule models. RNN2 showed higher similarity to human data than RNN1, particularly in the frontal-equivalent module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 present comprehensive RNN modeling results supported by Figures 6 and 7. The key finding that RNN2 (with stimulus preservation at output) better matches human data than RNN1 is well-documented through multiple analyses (stimulus decoding, abstract category, RSA). The interpretation (C55-C56) that flexible control demands high-fidelity stimulus representation is appropriately framed as a suggestion. The observation about training efficiency (C57) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Stimulus representation persisted in EVC during categorization despite reduced strength compared to maintenance, and remained predictive of behavior in both tasks. This supports the sensorimotor recruitment hypothesis for precise visual information maintenance and is consistent with primate electrophysiology and computational modeling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 synthesize the EVC findings and place them in the context of existing literature. The data support (C61-C62) is solid from the main results. The interpretation regarding sensorimotor recruitment (C63) is reasonable given the data, and the comparisons to prior work (C65-C67) are appropriately cited. The speculation about boundary comparison (C64) is clearly marked as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "sPCS in frontal cortex showed enhanced stimulus representation that increased with WM control demands and predicted performance exclusively for categorization. This pattern was specific to sPCS compared to other frontal regions (iPCS, IFS, MFG), possibly due to the orientation stimulus used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 summarize the sPCS findings and their specificity. The main results (C68, C74-C75) are well-supported by the data presented. The comparison to other frontal ROIs (C76) is documented in Figure 5\u2014figure supplement 3. The speculation about stimulus-type specificity (C77) is appropriately hedged and supported by citations to prior work showing sPCS involvement in orientation WM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The dynamic tradeoff between high-dimensional stimulus and low-dimensional category representations in frontal cortex aligns with theoretical frameworks of cognitive flexibility. When control demands decreased (Experiment 2), stimulus representation decreased while category representation increased, suggesting flexible coding strategies for resource allocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 integrate the findings with cognitive flexibility theory. The empirical support for the tradeoff (C81-C82) comes from the comparison between experiments. The RNN results (C85) provide mechanistic support. The theoretical framing (C79-C80, C86-C87) is appropriately speculative and well-cited. The interpretation is logical given the data, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study demonstrates that stimulus representations in visual and frontal cortices serve distinct functional roles in WM, with flexible reconfiguration based on task demands. This provides a unified framework reconciling debates about cortical contributions to WM and supporting cognitive flexibility through preserved stimulus information at output stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C97-C100 represent the main conclusions synthesizing all findings. These are well-supported by the convergent evidence from fMRI (differential representations across ROIs, brain-behavior correlations, tradeoff between stimulus and category) and RNN modeling (output structure effects). The claim to reconcile debates (C7, C100) is justified given the comprehensive nature of the findings, though some aspects remain interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The differential patterns between frontal and parietal cortex reflect differences in the origin of cognitive functions, with sPCS potentially serving as the source region for enhanced stimulus representation and stimulus-category tradeoff, embedded within a dynamic reconfiguration along the cortical hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 present interpretations about the functional organization and source of effects. While the data show differential patterns across ROIs, the claims about sPCS as a 'source region' (C90) and the hierarchical reconfiguration (C91) are largely inferential. The current data do not directly test causal relationships or information flow between regions, making these interpretations plausible but not definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Discrepancies exist between RNN and fMRI results, including more widespread abstract category decoding in RNNs and weaker stimulus decoding differences in the EVC-equivalent module of RNN2. These may reflect higher signal sensitivity in RNNs or the need for additional model complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 acknowledge limitations in the RNN-fMRI correspondence. The discrepancies are documented (C92, C94) and potential explanations are offered (C93, C96). The IEM analysis on RNN data (C95, Figure 6\u2014figure supplement 1) provides additional nuance. This honest assessment of model limitations strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study addresses the controversial role of stimulus representation in visual and frontal cortices during WM by proposing that changes in representation reflect flexible reconfiguration of coding strategies in response to varied WM functions, with predictions about enhancement in frontal cortex for active control and in visual cortex for precise maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 establish the background, motivation, and hypotheses. The background claims (C1-C2, C8-C14) are well-supported by appropriate citations. The main hypothesis (C15) and specific predictions (C16-C18) are clearly stated and logically derived from prior work. These provide the foundation for the experimental work and are appropriately framed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C83",
+      "C84",
+      "C88"
+    ],
+    "result": "The findings are contextualized within existing literature on sensorimotor recruitment, frontal cortex involvement in WM, and neurophysiological studies in primates, showing both consistencies and resolutions of apparent contradictions in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C88 (selected) provide literature context for interpreting the results. These are appropriately cited and accurately represent prior findings. The comparisons help position the current work within the field and support the claim that the study helps reconcile debates. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  }
+]

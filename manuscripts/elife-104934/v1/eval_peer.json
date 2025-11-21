@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C64"
+    ],
+    "result": "The authors manually curated 7498 antigen-antibody complex entries from over 32,000 PDB structures, encompassing 16 antibody fragment types across 14 species, with Fab fragments (71.98%) and human antibodies (60.95%) being most prevalent. A significant increase in entries occurred during 2021-2023, accounting for approximately 45% of the total.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge the database contains 7498 manually curated entries and recognize the manual curation effort as solid methodology. The first reviewer states 'The methodology presented for this data curation is solid,' and the second reviewer confirms 'The authors have performed a manual curation of antibody-antigen complexes from the Protein Data Bank.' No concerns were raised about these statistical claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53",
+      "C54",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors identified and corrected numerous annotation errors from PDB that had been propagated to SAbDab, including species mislabeling (e.g., 7WRL), resolution errors (e.g., 1NSN), chain misidentification (e.g., 3KS0, 5EBW), and mutation annotation errors (e.g., 6BFT). Each entry was manually checked to identify annotation problems.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly validated the error correction claims. The second reviewer states 'I have personally verified some of the examples presented by the authors, and found that SAbDab appears to fix the mistakes related to mis-identification of antibody chains, but not other annotations,' confirming errors in 7WRL and 1NSN. The first reviewer identifies 'the potentially most significant contribution of this database is the manual data curation to fix errors present in the PDB entries.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C46",
+      "C47",
+      "C56",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "AACDB provides comprehensive paratope and epitope annotations using two methods: \u0394SASA (>1 \u0172 threshold) and atom distance (<6 \u00c5 cutoff), enabling standardized benchmarking for interface prediction tools. Naccess V2.1.1 and Bio.PDB were used to calculate SASA values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the interface annotation as useful, the second reviewer expresses skepticism about \u0394SASA utility: 'I am, however, not convinced of the utility of *change* in SASA as a useful metric for identifying interacting residues, beyond what is already identified via pairwise distances.' The reviewer notes that approximating unbound structures by computationally removing binding partners is a limitation. The third reviewer simply states 'they have added two methods to estimate paratope-epitope interfaces' without critical evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "The authors developed a standardized splitting procedure for PDB files containing multiple antibody-antigen complexes, creating separate entries for each unique antibody-antigen pair (e.g., 1AHW split into BAC and DEF; 6OGE into CBA and EDA). Anti-idiotypic complexes receive special treatment with partner antibodies treated as dual-chain antigens.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The second reviewer acknowledges 'the splitting of the pdb files is a valuable contribution as it standardizes the distribution of antibody-antigen complexes,' but raises important concerns about biological context: 'one should not ignore the potentially stabilizing effect that the binding of one antibody has on the complex' and notes that 'some antigens occur naturally as homomultimers' which are not preserved in the current splitting approach. This represents a methodological limitation that affects interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C42",
+      "C43",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "AACDB integrates antibody developability data (325 entries linked to DOTAD) and drug target information (3733 antigens identified in DrugBank using >90% identity threshold), providing INN and clinical trial information for therapeutic antibodies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge these integrations without criticism. The third reviewer explicitly notes 'The database is also cross-linked to other databases that contain information relevant to antibody developability and therapeutic applications' as a strength. No concerns were raised about the integration methodology or thresholds used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C50",
+      "C51",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "AACDB provides a web interface with search functionality, 3D visualization (using PV WebGL-based viewer), and download capabilities in multiple formats. The interface includes a Help page with tutorials and is built using HTML, JavaScript, CSS, Bootstrap (frontend) and PHP with MySQL (backend).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge the usability of the interface. The first reviewer states 'Sequences, structures, and annotations can be easily downloaded from the AACDB website,' and the second reviewer confirms 'Sequences, structures and annotations can be very easily downloaded from the AACDB website.' The third reviewer notes 'they have produced a web interface capable of effective visualisation and of summarising the key useful information in one page.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "AACDB's data processing pipeline supports mmCIF files, converting them to PDB format when necessary for compatibility with Naccess software, which does not support .cif input.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this technical capability. The first reviewer notes this as a feature 'not provided by other antigen-antibody complex databases,' and no concerns were raised about the file format handling or conversion process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "AACDB currently only includes antigen proteins >50 amino acids in length, excluding peptides, nucleic acids, and haptens. Future iterations will expand to include these diverse antigen classes and incorporate literature-validated affinity data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The second reviewer explicitly identifies this as a limitation: 'AACDB only contains entries with protein-based antigens of at most 50 amino-acids in length. This excludes non-protein-based antigens, such as carbohydrate- and nucleotide-based, as well as short peptide antigens.' The third reviewer also notes 'The database does not import all the experimental information from PDB and contains only complexes with large protein targets' as a weakness. The limitation is acknowledged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "AACDB provides raw \u0394SASA and distance values for all annotated residues, allowing users to dynamically filter data using custom thresholds (e.g., selecting 5 \u00c5 instead of 6 \u00c5).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This flexibility is not explicitly discussed by reviewers but is consistent with their acknowledgment of the database's utility and download capabilities. No concerns were raised about data accessibility or filtering options.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The authors acknowledge that despite best efforts, the database may not capture all antigen-antibody complexes due to resource limitations, and that eliminating all errors in manual curation is challenging.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these limitations as inherent to manual curation efforts. The second reviewer notes the absence of binding affinity data as a limitation but does not challenge the authors' acknowledgment of incompleteness. The overall positive reception suggests reviewers view the acknowledged limitations as reasonable.",
+    "result_type": "MINOR"
+  }
+]

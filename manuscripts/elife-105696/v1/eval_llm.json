@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors developed a chemical genetics approach using aryl sulfonamide compounds (ASCs) that selectively block NaV1.2 and NaV1.6 channels containing a YW motif, combined with knock-in mice harboring YW\u2192SR mutations that render channels insensitive to ASC binding. GNE-4076 exhibits high potency for wildtype NaV1.2 (IC50 = 5.1 nM) and NaV1.6 (IC50 = 184 nM), with 365-fold and 475-fold reductions in potency for SR mutants, respectively. The YW\u2192SR mutations do not substantially alter channel biophysical properties, and 200 nM GNE-4076 effectively blocks wildtype but not mutant channels in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C31 collectively demonstrate a well-validated chemical genetics tool. The dose-response data (C23-C26), biophysical characterization (C27-C28), and nucleated patch experiments (C29-C31) provide converging evidence that the approach enables selective, acute, and reversible manipulation of individual NaV isoforms. The control experiments with dual SR/SR mice confirm specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The YW\u2192SR mutations in Scn8a/2aSR/SR mice cause a hyperpolarization of AP threshold compared to wildtype, likely due to small changes in NaV1.6 voltage dependence of activation. However, peak dV/dt is unaffected, and GNE-4076 application does not further alter threshold or peak dV/dt in either wildtype or mutant neurons at baseline, indicating minimal drug binding without marked depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by electrophysiological measurements and are consistent with the biophysical characterization showing ~2 mV hyperpolarization in NaV1.6 activation/inactivation curves (C28). The lack of GNE-4076 effects at baseline validates the state-dependent binding mechanism and confirms that the tool does not substantially perturb resting neuronal properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Compartmental modeling predicts that progressive reduction of NaV1.6 depolarizes AP threshold and decreases dV/dt throughout the entire AP rising phase, while NaV1.2 reduction has no effect on threshold or initial AP velocity but impairs backpropagation-related components including peak dV/dt and peak AP membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe computational predictions that are later validated by empirical observations (C38-C42). The modeling is based on established channel distributions and provides testable hypotheses. Sensitivity analysis (Figure 2\u2014figure supplement 1) demonstrates robustness of the threshold predictions across different AIS configurations, though dV/dt predictions are more variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Selective pharmacological block of NaV1.6 depolarizes AP threshold by 5.8 \u00b1 0.7 mV, while NaV1.2 block has no effect on threshold (\u0394 Vm: \u22120.1 \u00b1 0.2 mV). The dV/dt at the AIS inflection point is affected only by NaV1.6 block, whereas the dV/dt at the AIS max is affected by block of either isoform. These findings indicate that AP initiation occurs in an NaV1.6-rich region under control conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide strong empirical validation of the compartmental model predictions (C35-C37). The selective effects on different AP components align with known channel distributions and are supported by detailed phase plane analysis. The measurements are quantitative with appropriate statistical comparisons, and the interpretation (C40) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Acute NaV1.2 block paradoxically increases AP output and depolarizes afterhyperpolarization voltage, while NaV1.6 block decreases AP output. Block of both channels also decreases AP output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 represent a major finding that is counterintuitive but well-supported by the data in Figure 4. The paradoxical increase in excitability with NaV1.2 block is consistent with prior conditional knockout studies (C76) but now demonstrated acutely, eliminating concerns about compensatory changes. The opposing effects of blocking each isoform are clearly demonstrated and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "During prolonged spiking at ~15 Hz, wildtype neurons treated with GNE-4076 exhibit progressive threshold depolarization and decrements in instantaneous frequency and peak dV/dt throughout the stimulus, demonstrating use-dependent suppression of neuronal firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate the use-dependent properties of ASC block during physiological activity levels. The data in Figures 5C-D show clear progressive effects over 10 seconds of stimulation. The control experiments with Scn8a/2aSR/SR mice confirm that the effects are due to channel block rather than off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Selective NaV1.6 block during prolonged activity depolarizes threshold and reduces AP frequency and peak dV/dt to levels observed in wildtype cells with dual block. Selective NaV1.2 block does not affect threshold or instantaneous frequency but decreases peak dV/dt. This indicates that AP threshold and instantaneous frequency are more sensitive to NaV1.6 antagonism, while peak somatic dV/dt can be affected by antagonism of either isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 dissect the individual contributions of each isoform during use-dependent block. The data in Figure 6 clearly demonstrate differential effects, with NaV1.6 block recapitulating most effects of dual block. The interpretation (C54-C55) is well-supported by the quantitative comparisons across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "During seizure-like activity (~30 Hz), wildtype cells exposed to GNE-4076 show marked accommodation, returning to baseline firing rates. NaV1.6 block alone produces less dramatic accommodation, while selective NaV1.2 block is not appreciably different from untreated controls and some cells remain hyperactive during recovery. This suggests that use-dependent pharmacology targeting NaV1.2 and NaV1.6 may be most beneficial if designed for higher potency at NaV1.6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 demonstrate the therapeutic potential of isoform-selective ASCs in seizure-like conditions. The data in Figure 7 show clear differential effects during high-frequency activity, with NaV1.6 block being more effective at tempering hyperexcitability. The conclusion (C60) is appropriately cautious ('may be most beneficial') and supported by the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors conclude that acute blockade of NaV1.6 decreases AP output while NaV1.2 blockade increases it, and that NaV1.6 block is more effective at tempering seizure-like activity. They suggest that pharmacology tuned to preferentially block NaV1.6 over NaV1.2 in a use-dependent manner may be useful as an anti-epileptic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 summarize the main conclusions of the study. These are well-supported by the comprehensive experimental data (C43-C60). The therapeutic speculation (C64) is appropriately framed as a possibility ('may be useful') and is grounded in the experimental findings, though it acknowledges that further validation would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors discuss that APs initiate in the NaV1.6-enriched distal AIS (~35-50 \u03bcm from soma), and that inhibition of NaV1.6 alone alters AP initiation. Forward propagation is supported almost exclusively by NaV1.6, while backpropagation recruits both isoforms. Acute NaV1.2 block does not cause backpropagation failures but reduces the velocity of the AIS component, suggesting that proximal AIS-localized NaV1.2 aids in boosting backpropagating APs but is dispensable for recruitment of somatic NaV channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 integrate the current findings with prior literature to provide a comprehensive model of isoform-specific contributions to AP propagation. The discussion is well-supported by the experimental data (particularly C38-C42, C70-C71) and appropriately cites prior work. The conclusion about NaV1.2 being dispensable for somatic recruitment (C73) is appropriately qualified to the specific cell type studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors propose that dendritic NaV1.2 provides local inward current that boosts dendritic excitability and recruits voltage-gated calcium channels, but also recruits dendritically localized potassium channels that contribute to AP repolarization. Conditional knockout of NaV1.2 paradoxically increases AP output, and the authors demonstrate that identical increases in excitability can be observed with acute NaV1.2 block, indicating that effects are due purely to the interplay between dendritic NaV1.2 and KV channels without requiring compensatory changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 provide a mechanistic explanation for the paradoxical increase in excitability with NaV1.2 block. The key advance is demonstrating that acute block (C77) recapitulates the effects of conditional knockout (C76), ruling out compensatory mechanisms. This is supported by the data in Figure 4 and strengthens the interpretation from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors note that knockout of NaV1.6 results in compensatory increases in NaV1.2 expression in the AIS, with NaV1.2 occupying the entire AIS rather than just the proximal region. They demonstrate that acute NaV1.6 block reduces AP output with increased threshold, and propose that changes in threshold can be used as a biomarker to assess whether drugs are interacting with NaV1.6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 discuss the advantages of acute pharmacological manipulation over genetic approaches. The proposal that threshold changes indicate NaV1.6 interaction (C82) is a useful practical application supported by the clear differential effects on threshold (C38-C39). This is appropriately framed as a tool for assessing drug specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors discuss that compounds similar to GNE-4076 are effective at suppressing seizures in ex vivo and in vivo models, and that NaV1.6-preferring ASCs show promise in protecting from seizures. They suggest that preferential block of NaV1.6 would be beneficial in multiple sodium channelopathy conditions, including those associated with channel loss, since network hyperexcitability is ultimately dictated by NaV1.6 function in the AIS of excitatory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 place the current findings in the context of prior therapeutic studies. The citations to prior work (C83-C85) support the therapeutic potential, and the speculation about broader applications (C86) is appropriately cautious ('it may be that') and grounded in the mechanistic understanding developed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors conclude that ASCs exhibit activity-dependent binding, with the binding pocket hidden in closed channels and on/off-rate kinetics resulting in accumulation of block primarily in highly active neurons. They propose that ASCs are biased to suppress prolonged, high-frequency activity, including seizure-like activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 summarize the mechanism and functional consequences of ASC activity dependence. This is well-supported by the experimental data in Figures 3, 5, 6, and 7, which demonstrate progressive block during activity and preferential effects during high-frequency firing. The comparison to closed-loop intervention approaches is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors provide background on NaV channel expression and localization in mature neocortical pyramidal cells, noting that NaV1.2 and NaV1.6 are differentially localized across compartments, with NaV1.6 predominating in the distal AIS and axon, and NaV1.2 enriched in the proximal AIS and dendrites. They note that genetic manipulations result in compensatory changes in channel expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 establish the foundational knowledge from prior literature that motivates the study. These are well-supported by appropriate citations and represent established findings in the field. This background is essential for understanding the rationale for developing the chemical genetics approach.",
+    "result_type": "MINOR"
+  }
+]

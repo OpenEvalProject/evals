@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior work has established that growth feedback\u2014where synthetic gene circuits affect cell growth and vice versa\u2014can produce emergent properties such as bistability, altered cooperativity, and topology-dependent effects on circuit memory. These findings motivate the current study's systematic investigation of growth feedback effects on adaptive circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 accurately summarize established knowledge from cited prior work about growth feedback mechanisms and their diverse effects on gene circuits. These claims provide appropriate context and are well-supported by multiple citations to peer-reviewed research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior research has defined adaptation in gene circuits and identified architectural requirements (IFFL with proportion node or NFBL with buffering node) and design principles (sequential assembly for noise attenuation) for achieving adaptation, though without considering growth feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 accurately represent established definitions and design principles from cited prior work. The claims appropriately note that previous adaptation studies did not include growth feedback, setting up the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study analyzes 425 three-node transcriptional regulation circuit topologies with AND logic capable of adaptation (from 16,038 possible topologies), comprising 206 NFBL and 219 IFFL family networks. Using stricter adaptation criteria than prior work, 4 of these 425 topologies failed to demonstrate adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C63-C67 establish the computational scope and are supported by citation to prior topology identification work (Shi et al., 2017) and the authors' own simulations. The methodological choice to use stricter criteria is transparently documented, though the specific criteria differences are not detailed in these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study identifies six main failure categories covering >99% of growth-feedback-induced circuit failures: Type-I (precision violation, 49% of failures), Type-II (sensitivity violation, 19%), Types III-IV (oscillation-induced, 17% total), and Types V-VI (bistability/multistability-induced, 14% total). Type-I failures are the most common, while oscillation-related failures constitute a considerable portion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 present a systematic classification of failure modes based on computational analysis of ~8.5\u00d710^7 circuits. The percentages sum appropriately and are illustrated in Figure 2. The classification scheme is clearly defined with specific criteria, though the claim that >99% are covered leaves ~1% unaccounted for.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Type-IV oscillation failures are predominantly caused by saddle-node bifurcations of cycles or infinite-period bifurcations. The fraction of oscillation-induced failures varies dramatically across topologies (0-80%), with networks containing oscillation-supporting motifs (NFBLs with time delay) exhibiting higher fractions of oscillation-related failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide mechanistic insights into oscillation-induced failures supported by computational analysis and bifurcation theory (cited to Strogatz, 2018). Figure 3 demonstrates the topology-dependence and correlation with oscillation-supporting motifs. The random sampling approach for C29 is appropriate but not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Bistability is observed in most circuit topologies (377 of 425), while multistability is relatively rare. These phenomena underlie Type-V and Type-VI failures through basin boundary shifts as growth feedback strength changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 report clear observational results from simulations with specific counts. The high prevalence of bistability (89%) is notable and well-documented. The connection to failure mechanisms is illustrated in Figure 4 showing basin structure changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Eight optimal circuit topologies with high robustness against growth feedback share a common motif (Figure 5b) that represents one of the minimal topologies for perfect adaptation. These optimal circuits notably lack any inhibition link from output node C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 identify a specific optimal family with shared structural features. The identification is based on computational analysis of Q and R values (Figure 5a). The connection to minimal adaptive topologies is supported by citation to Shi et al., 2017. The absence of C inhibition links is a clear structural observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The motif in Figure 6c (similar to optimal minimal network but lacking B self-activation) is beneficial for robustness, while inhibition from output node C is detrimental. The self-activation link of node B is essential for NFBL family adaptation but not for IFFL family circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44-C46 identify key structural determinants of robustness through computational analysis and comparison across circuit families. The distinction between NFBL and IFFL requirements is supported by citation to prior work (Shi et al., 2017). The beneficial/detrimental effects are inferred from the three-peak structure in Figure 6b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C49"
+    ],
+    "result": "Red group network topologies (low robustness) have consistently lower average node concentrations at equilibrium than blue group topologies, resulting in larger 1/(1+\u27e8b\u27e9) values and effectively stronger growth feedback. All circuits with >20% oscillation-type failures belong to the red group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C49 connect circuit topology to burden and oscillation susceptibility through computational analysis. Figure 6d supports the burden relationship. The correlation between red group membership and oscillation failures is clearly stated, though the mechanistic explanation involves multiple factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Growth feedback can induce or strengthen oscillations in adaptive gene circuits, potentially representing a general mechanism that negatively affects circuit robustness. Growth feedback effects show high sensitivity to circuit topology, where small structural differences can produce drastically different outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 present major conclusions from the computational study. C55 is directly supported by the data showing 17% of failures are oscillation-related. C56 appropriately qualifies the generality claim with 'may be' and references experimental support. C57 is demonstrated throughout (e.g., Figure 3 showing single-link differences).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "A small subset of circuits (2092 across 306 topologies, 1.4% of all tested) exhibit loss-and-recovery behavior where adaptation is lost at intermediate growth feedback levels but restored at higher levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 reports a specific non-monotonic phenomenon with precise counts. The authors acknowledge this may be an underestimate due to discrete sampling of kg values. This finding suggests growth feedback can have beneficial effects in certain parameter regimes, contrasting with the predominantly negative effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Analysis of four-gene circuits reveals the same failure categories as three-gene circuits, suggesting the identified growth-feedback-induced failure mechanisms are general across circuit sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 extends findings to four-gene circuits based on analysis in Appendix 1. While the claim of identical failure categories is stated, the limited detail provided in the main text about the four-gene analysis (sample size, topology coverage, parameter sampling) makes it difficult to fully assess the strength of this generalization. The inference of generality is reasonable but would benefit from more extensive validation.",
+    "result_type": "MAJOR"
+  }
+]

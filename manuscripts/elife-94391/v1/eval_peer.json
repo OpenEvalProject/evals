@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C44",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors developed a level-set-based meshing scheme that transforms raw cell geometry data into a time-evolving embryonic surface with static markers at each timepoint, enabling strain rate computation without cellular segmentation and tracking. Validation shows that relative displacement between cellular junctions and their markers remains under 8% on average and is independent of the number of particles used.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly acknowledge this methodological contribution as a strength. Reviewer 1 states 'the combination of various tools allows the authors to obtain a quantitative description of the developing embryo without the necessity of identifying fiducial markers' and notes 'visual inspection shows that their method works well.' Reviewer 2 emphasizes 'the strength of this method lies in its ability to quantitatively analyze the deformation of the entire embryo without the requirement for cellular segmentation and tracking.' The editor confirms the method allows 'quantitative analysis of developmental processes without cell segmentation and tracking.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The strain rate tensor field is computed from the velocity field and decomposed into eigenvalues and eigenvectors. A scalar strain rate field derived from the eigenvalues remarkably mirrors well-known features of ascidian development, including endoderm invagination at the vegetal pole, synchronized cell divisions in the animal pole, and neural plate zippering.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the strain rate computation and its biological correspondence without critique. The editor notes the authors 'obtain convincing evidence' from their method. Reviewer 1 confirms 'visual inspection shows that their method works well' and that the quantification 'allows for an unbiased identification of different morphogenetic phases.' The correspondence with known biological features is implicitly validated through the reviewers' acceptance of the subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C35",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C90"
+    ],
+    "result": "Spherical harmonics decomposition in space identifies principal dynamical modes of morphogenesis. The analysis reveals that sporadic deformations from cell divisions (captured by Y\u2081\u2080) dominate morphological activity and are restricted to the animal pole during endoderm invagination, while other localized, slower processes (captured by Y\u2080\u2080) occur simultaneously at the vegetal pole.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the spherical harmonics decomposition and its biological interpretation. Reviewer 1 notes the method successfully provides 'a quantitative description of the developing embryo' and 'allows for an unbiased identification of different morphogenetic phases.' The editor confirms the method is 'a pipeline combining several methods' that works effectively. No reviewer challenges the spherical harmonics analysis or its interpretation regarding cell divisions and tissue deformations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C91",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Wavelet decomposition in time produces spatiotemporal scalograms (heatmaps) that automatically identify key developmental processes and stages. The f\u2080\u2080(t) scalogram reveals two major phases matching gastrulation and neurulation timelines, separated by a transition phase, with concentric gradients depicting increasing morphodynamics within each phase.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The wavelet analysis and its biological interpretation are accepted by all reviewers. The editor explicitly states the authors 'obtain convincing evidence that ascidian gastrulation is a two-step process.' Reviewer 1 confirms the method 'allows for an unbiased identification of different morphogenetic phases' including 'clear indications for gastrulation and neurulation.' Reviewer 2 notes 'the results obtained by the pipeline reflected the developmental stages of ascidian embryos.' No concerns are raised about the wavelet methodology or its interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C99",
+      "C100",
+      "C102",
+      "C104",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The method identifies and distinguishes gastrulation and neurulation phases, recovers the two-step endoderm invagination sequence (apical constriction followed by apicobasal shortening) originally described by Sherrard et al., captures patterns of cellular divisions, and identifies a novel distinctive stage called 'blastophore closure' that follows endoderm invagination and precedes neurulation. The method clearly distinguishes between short-scale division events and low-frequency tissue-wide deformations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central biological finding that all reviewers explicitly endorse. The editor states the authors 'obtain convincing evidence that ascidian gastrulation is a two-step process.' Reviewer 1 confirms they 'find clear indications for gastrulation and neurulation and identify two sub-phases of gastrulation, namely, endoderm invagination and blastophore closure.' The recovery of the two-step invagination sequence validates the method against prior work (Sherrard et al., 2010), and the identification of blastophore closure represents a novel contribution that reviewers accept without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "In a MEK kinase-inhibited mutant embryo with disrupted endoderm invagination, the f\u2081\u2080(t) heatmap shows constant low morphological activity at the vegetal pole, confirming the absence of drastic cell deformations that normally drive invagination. The second phase in the mutant coincides with the major wave of cell divisions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept the mutant analysis as part of the overall validation of the method. The editor's statement that the authors 'obtain convincing evidence' encompasses the mutant data. No reviewer raises concerns about the mutant analysis or its interpretation. The mutant serves as a negative control demonstrating that the method can detect the absence of expected morphogenetic processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C36",
+      "C134",
+      "C135"
+    ],
+    "result": "The workflow is fully automated, providing an unprecedented hands-off approach that compresses developmental information into single images (scalograms) that capture the essence of morphogenesis. The spherical harmonics decomposition represents the first comprehensive time series-based description of morphogenesis and unleashes signal processing tools for developmental studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently emphasize the methodological advantages. Reviewer 1 highlights 'the combination of various tools allows the authors to obtain a quantitative description' and notes the quantification 'allows for an unbiased identification of different morphogenetic phases.' Reviewer 2 states 'this manuscript proposes a pipeline of analyses combining various methods' with strength in 'its ability to quantitatively analyze the deformation of the entire embryo.' The editor confirms it is 'a pipeline combining several methods, allowing quantitative analysis of developmental processes.' The automation and compression aspects are implicitly validated through acceptance of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Traditional approaches to morphogenesis analysis are time-consuming, unfit for scale, lack standardization and a firm foundation, and rely on qualitative observation that is vulnerable to misinterpretation when morphogenetic events overlap in space and time. These methods are not automated and do not scale.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept this motivation for the new method by endorsing the methodological advances. The editor's characterization of the work as 'important' and of 'interest to a broad range of developmental biologists' validates the need for improved quantitative methods. Reviewer 1's emphasis on obtaining results 'without the necessity of identifying fiducial markers' and Reviewer 2's focus on analysis 'without the requirement for cellular segmentation and tracking' confirm the limitations of traditional approaches that the new method addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C131",
+      "C136",
+      "C139"
+    ],
+    "result": "The method has limitations: the level-set scheme produces Lagrangian particle approximations only under small deformation assumptions, requiring high temporal sampling rates; strain rate accuracy depends on both spatial and temporal sampling; discriminating significant spherical harmonics from noise is challenging; and harmonic interpretability depends on embryo alignment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge methodological complexity but do not challenge the stated limitations. Reviewer 1 notes 'the explanation of the method is hard to follow, unless the reader is already familiar with concepts like level-set methods or wavelet transforms,' which implicitly validates the technical challenges. Reviewer 2 states 'the mathematics behind this method is not straightforward to understand' and notes 'the value of this method will be understood as analyses of real data using this method accumulate,' accepting that there are inherent complexities and limitations to be worked through.",
+    "result_type": "MINOR"
+  }
+]

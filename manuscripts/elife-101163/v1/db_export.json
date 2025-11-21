@@ -1,0 +1,2519 @@
+{
+  "submission": {
+    "id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:33:15.111920Z",
+    "updated_at": "2025-11-21T17:33:15.111920Z"
+  },
+  "content": [
+    {
+      "id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "content_type": "manuscript",
+      "content_text": "# Human brain ancestral barcodes\n\n## Authors\n\n- Darryl Shibata<sup>1</sup> ([ORCID: 0000-0002-4567-1639](https://orcid.org/0000-0002-4567-1639)) \u2020\n\n### Affiliations\n\n1. Department of Pathology, University of Southern California, Keck School of Medicine Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDynamic CpG methylation \u2018barcodes\u2019 were read from 15,000\u201321,000 single cells from three human male brains. To overcome sparse sequencing coverage, the barcode had ~31,000 rapidly fluctuating X-chromosome CpG sites (fCpGs), with at least 500 covered sites per cell and at least 30 common sites between cell pairs (average of ~48). Barcodes appear to start methylated and record mitotic ages because excitatory neurons and glial cells that emerge later in development were less methylated. Barcodes are different between most cells, with average pairwise differences (PWDs) of ~0.5 between cells. About 10 cell pairs per million were more closely related with PWDs <0.05. Barcodes appear to record ancestry and reconstruct trees where more related cells had similar phenotypes, albeit some pairs had phenotypic differences. Inhibitory neurons showed more evidence of tangential migration than excitatory neurons, with related cells in different cortical regions. fCpG barcodes become polymorphic during development and can distinguish between thousands of human cells.\n\n## Introduction\n\nCell lineages outline tissue development. Complete fate maps are possible by direct observation for small organisms such as C. elegans, but various elegant experimental fate markers are employed for larger tissues and longer time intervals (McKenna and Gagnon, 2019). For human tissues, prior experimental manipulations are impractical, and genomic alterations are employed. Somatic mutations mark subclones and their fates can be reconstructed with DNA sequencing. Recent advances in single-cell technologies potentially allow fate map reconstruction at single-cell resolution.\n\nHere, we show how fCpG DNA methylation (Gabbutt et al., 2022) could be used as dynamic barcodes to study human brain development using single-cell epigenomes annotated with their locations and phenotypes (Tian et al., 2023). DNA methylation patterns are usually copied between cell divisions, but replication errors are much higher compared to base replication, allowing for more differences between daughter cells. DNA methylation modulates expression and their patterns can be used to infer cell phenotypes (Tian et al., 2023; Loyfer et al., 2023), but most fCpG sites are present outside of genes or in unexpressed genes. Criteria for our fCpG barcode are as follows: (1) a defined initial pattern in a progenitor cell; (2) polymorphic changes upon cell division; (3) adequate polymorphism to distinguish between most cells; and (4) capability to record ancestry.\n\nThe brain has several features that facilitate barcode development and validation. Foremost, there is extensive single-cell methylation data, with thousands of cells annotated by locations and phenotypes (Tian et al., 2023). Although billions of cells are present in an adult brain, lineage trees are compact because growth is largely prenatal. The brain also allows for serial \u2018stopwatch\u2019 barcode sampling because development roughly follows a caudal to rostral pattern, and groups of neurons characteristically stop dividing and differentiate at different times and locations (Stiles and Jernigan, 2010). Brainstem neurons emerge early (Fan et al., 2020) and their barcodes should most resemble the initial progenitor state, whereas the stopwatch runs longer for excitatory neurons that appear later in development. To facilitate presentation, barcode performance is summarized as follows: The brain fCpG barcode initializes as predominately methylated in the progenitor cell and becomes polymorphic with more diverse barcodes in excitatory neurons that emerge later in development. The barcode becomes sufficiently polymorphic to uniquely distinguish between most sampled brain cells, and barcoded cells organize into lineage trees.\n\n## Results\n\n### fCpG barcode identification\n\nBarcode development was limited by the sparse single-cell data (Tian et al., 2023), with <5% of CpG sites sequenced, often with only a single read. Sparse coverage was mitigated with X-chromosome fCpG sites because only a single read can infer a binary (0, 1) state in male individuals. Autosomal CpG sites require at least 2 reads to infer three possible states (0, 0.5, 1). The X-chromosome also simplifies the identification of polymorphic fCpGs because many neurons have different binary states if average methylation is between 0.25 and 0.75 in bulk WGBS adult male neurons reference data (Loyfer et al., 2023).\n\nCpG sites (N ~116,000), with average methylation between 0.25 and 0.75 in bulk neurons from seven males (Loyfer et al., 2023), were further filtered by discarding more stable CpG sites with average methylation less than 0.2 or more than 0.8 for all cells, inhibitory neurons, and excitatory neurons in brain H02. The ~79,000 CpGs were further filtered to remove sites with average methylation less than 0.3 or greater than 0.7 in brain H01, and ~31,000 fCpG sites were used for analysis.\n\nfCpG site methylation appears neutral because they are predominately intergenic, with 16% within genes or promoters (Supplementary file 1). Epigenomes from 15,434\u201321,836 cells were downloaded from three male brains with a general criterion of allc.tsv.gz file sizes 90 mb or larger (Table 1). Neurons were preferentially sampled, whereas glial cells were sometimes excluded (Supplementary file 2). Analyzed cells had at least 500 fCpGs (average ~1100), with pairwise distances (PWDs) calculated between cell pairs when at least 30 fCpGs were comparable (average ~48 fCpGs per cell pair). Each cell, annotated by its provided phenotype and location, is characterized by its fCpG methylation level and its PWDs from other cells. A PWD of 0 is a perfect match and 0.5 indicates randomization. fCpG methylation was variable between cells with averages of ~58% for all three brains (Figure 1A). The 73\u2013197 million possible cell pair comparisons revealed polymorphic barcodes with average PWDs of ~0.47 between cells (Figure 1B).\n\n**Table 1.**\n Brain data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>brain</th>\n      <th>age</th>\n      <th>cells</th>\n      <th>ave fCpG per cell</th>\n      <th>ave Meth per cell</th>\n      <th>ave PWD between cell pairs</th>\n      <th>cell pairs per million</th>\n      <th>fCpG per pair</th>\n      <th>closely related pairs (PWD &lt;0.05)</th>\n      <th>closely related pairs per million</th>\n      <th>fCpG per nearest neighbor pair*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>H01</td>\n      <td>42y</td>\n      <td>21,836</td>\n      <td>1170</td>\n      <td>0.58</td>\n      <td>0.47</td>\n      <td>197</td>\n      <td>51</td>\n      <td>1385</td>\n      <td>7.0</td>\n      <td>35</td>\n    </tr>\n    <tr>\n      <td>H02</td>\n      <td>29y</td>\n      <td>16,161</td>\n      <td>1128</td>\n      <td>0.58</td>\n      <td>0.47</td>\n      <td>99</td>\n      <td>48</td>\n      <td>743</td>\n      <td>7.5</td>\n      <td>34</td>\n    </tr>\n    <tr>\n      <td>H04</td>\n      <td>58y</td>\n      <td>15,434</td>\n      <td>1060</td>\n      <td>0.58</td>\n      <td>0.47</td>\n      <td>73</td>\n      <td>45</td>\n      <td>1078</td>\n      <td>14.8</td>\n      <td>35</td>\n    </tr>\n    <tr>\n      <td colspan=\"11\">between brains</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">H02-H01</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.47</td>\n      <td>281</td>\n      <td>49</td>\n      <td>785</td>\n      <td>2.8</td>\n      <td>35</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">H02-H04</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.47</td>\n      <td>178</td>\n      <td>46</td>\n      <td>653</td>\n      <td>3.7</td>\n      <td>34</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">H04-H01</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.47</td>\n      <td>254</td>\n      <td>47</td>\n      <td>943</td>\n      <td>3.7</td>\n      <td>35</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 1.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig1-v1.jpg)\n\n**Figure 1.:** (A) Barcode methylation was variable between cells with averages ~50% (B) Most cells had different barcodes with average pairwise differences (PWDs) ~0.5.\n\n### fCpG barcodes initialize methylated and change with cell division\n\nfCpG barcode patterns were similar between the brains, and data are presented for H01, with H02 and H04 presented in supplemental figures. Methylation was variable between cells of the same type and average methylation was highest in the pons (PN) and thalamus (THM), intermediate for other inhibitory neurons, and lowest for excitatory neurons, glial cells, and cerebellar cells (Figure 2A). Outer layer cortical excitatory neurons (L2_3) that are made later during development were less methylated than inner cortical excitatory neurons (L4_6) that appear earlier. Predominantly methylated individual fCpG sites were common in subcortical neurons (PN, THM), less frequent in other inhibitory neurons, and rare in excitatory neurons (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig2-v1.jpg)\n\n**Figure 2.:** (A) Average barcode methylation was higher in the brainstem and inhibitory neurons. Barcode methylation was lower for excitatory neurons, cerebellar, and glial cells. Notably, average methylation was lower for outer cortical (L2_3) compared to earlier appearing inner (L4_6) cortical excitatory neurons. Abbreviations are as in reference 3, with L2_3 all outer and L4_6 all inner cortical excitatory neurons, and NN are non-neuronal cells other than ASC, OPC, and ODC. (B) Most fCpGs appear to start methylated in a progenitor because nearly all individual fCpGs are methylated in inhibitory neurons in the subcortex (PN, THM, MSN). Many fCpGs in inhibitory neurons (pvalb, sst) are still predominately methylated. Few fCpGs in excitatory neurons that differentiate later in development are fully methylated. Glial cells that also emerge late in development, and hippocampal cells that may divide postnatally had variable methylation with both highly methylated and unmethylated fCpGs. (C) Barcodes are assumed to become fixed when their cells stop dividing and differentiate. Therefore, barcode methylation levels can indicate when neurons emerge during development, and can be correlated with a cartoon of physical caudal to rostral brain development. The x-axis indicates the barcode methylation of individual cells and is assumed to roughly correlate with calendar time. The y-axis indicates the cumulative proportion of cells of each type present at each methylation level. A value of 0 indicates that cells of given type are not yet present and a value of 1 indicates the adult content of this cell type has been reached. At the start of development, inhibitory neurons (PN) in the pons with highly methylated barcodes appear first. More inhibitory neurons, made in the ganglionic eminences, appear and reach their final adult contents before many cortical excitatory neurons and glial cells appear. Notably, barcode methylation indicates many lower cortical layer neurons appear earlier in life relative to outer cortical neurons that reach adult levels late in development. Brain contents inferred by adult barcodes may differ from actual neonatal brains because neurons that die during development are not sampled in adult brains.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Barcode methylation for different cell types ASC OPC ODC mature (B) Barcode methylation versus final adult brain content indicates that inhibitory neurons appear first and reach their adult levels before excitatory or glial cells.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Barcode methylation for different cell types (B) Barcode methylation versus final adult brain content indicates that inhibitory neurons appear first and reach their adult levels before excitatory or glial cells.\n\nThe methylation hierarchy is consistent with a barcode initialized with predominately methylated fCpGs in a brain progenitor cell. Barcodes become progressively demethylated and are fixed when their cells stop dividing and differentiate, which occurs at different times and places during brain development. Barcodes for each cell type had a range of methylation (Figure 2A), consistent with synchronous development rather than a strict stepwise process. Very simplistically, the hindbrain with mature neurons (Fan et al., 2020) forms early in development, followed by inhibitory neurons in the ganglionic eminences, and then excitatory neurons and glial cells in the cortex. Barcode methylation follows this temporal development and reconstructs when specific neuron types start to appear and reach their adult contents (Figure 2C). For example, after barcodes change from ~100 to~70% methylated, most adult brainstem (PN) and inhibitory neurons are present but excitatory neurons are fewer, with very few adult outer layer (L2_3) neurons. Outer excitatory and glial progenitor cells are present (Eze et al., 2021), but their barcodes continue to demethylate until they stop dividing and differentiate later in development. This stopwatch-like pattern, with more demethylated barcodes in later appearing cell types, was present in all three adult brains.\n\n### fCpG barcodes are polymorphic\n\nA progenitor cell barcode is assumed to become increasingly polymorphic with subsequent divisions. This pattern was observed, with average barcode PWDs lowest in brainstem cells (PN), intermediate between other inhibitory neurons, and highest for excitatory neurons (Figure 3A). Most cells had different barcodes, with an overall average PWD of ~0.47 (Figure 1B). Cells of the same phenotype were more similar with lower average PWDs (Figure 3A and B), suggesting they are more related to each other and have common progenitors.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig3-v1.jpg)\n\n**Figure 3.:** (A) Most cells had different barcodes with average pairwise differences (PWDs) between cell pairs of ~0.5. Cell pairs of the same phenotype had different barcodes but were on average more related to each other. (B) Heatmap showing that cells of the same phenotype are more related. (C) Cells that emerge early in development are more related and more methylated. Closely related nearest neighbors (PWD <0.05) are numerically more common for more methylated cell types.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pairwise differences (PWDs) between cells of the same type. (B) PWDs between cell types (order of cell types is the same as in \u2018A\u2019).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Pairwise differences (PWDs) between cells of the same type.(B) PWDs between cell types (order of cell types is the same as in \u2018A\u2019).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Average methylation is displayed for each brain tumor sample. PA=pilocytic astrocytoma, GSE44684, 145 fCpGs covered; MB=medulloblastoma, GSE193646, 434f CpGs covered; MB=medulloblastoma, GSE63669, 883 fCpGs covered; GBM=glioblastoma multiforme, GSE109399, 1,138 fCpGs covered; Gliomas=various gliomas, GSE248471, 1,138 fCpGs covered. Includes both male and female tumors.\n\nThe human brain has billions of cells and relatively few cells were sampled from each region. Consistent with sparse sampling, cell pairs with nearly identical barcodes and smaller PWDs (<0.05) were rare. To help distinguish between ancestry and chance, cells within and between brains were compared (Table 1). Closely related cell pairs were ~2.9 times more frequent within a brain (average ~9.8 per million) compared to between brains (average ~3.4 per million). Closely related cells had fewer matching fCpG sites (~35 compared to ~48 for all cell pairs) and were more common early in development when barcodes are more methylated (Figure 3C), indicating that lower barcode complexity favors matching. Overall, fCpG barcodes are sufficiently polymorphic to distinguish between most adult brain cells.\n\n### Brain lineage trees\n\nIt should be possible to reconstruct human brain development if barcodes record ancestry. fCpG barcodes from ~1000 brain cells with different phenotypes yield trees with a standard phylogeny software that resemble caudal to rostral development (Figure 4). The trees are rooted by a progenitor with a fully methylated barcode, and branches progressively yield brainstem neurons (PN), a subset of excitatory lower (L4_6) neurons, thalamic neurons (THM), inhibitory neurons, cerebellar cells, and glial cells. Excitatory neurons branch last, and hippocampal neurons (CA, DG) that may divide postnatally (Gage, 2002) were at the terminus. Cells are generally grouped by phenotype, with some early appearing excitatory neurons admixed among inhibitory neurons. Similar trees were observed for H02 and H04, albeit with less separation between inhibitory and excitatory neurons for H04 (Figure 4A). Barcode lineage trees are largely consistent with expected sequential neuronal differentiation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig4-v1.jpg)\n\n**Figure 4.:** (A) Barcodes from 960 cells form trees using IQtree (Nguyen et al., 2015) that are rooted by a fully methylated progenitor, and generally follow caudal to rostral brain development, with sequential branching of inhibitory neurons, cerebellar neurons, and excitatory neurons, with hippocampal neurons furthest from the start. Trees are similar between the brains, with H04 inferring less distance between inhibitory and excitatory lineages. The trees illustrate the ability to produce phylogenies with IQtree, but the phylogenies are limited by sparse cell sampling and that barcodes may be similar by chance. The degree of confidence was generally low, with bootstrap branch support typically less than 15%. (B) H01 tree with labeled cell types. Neuron types generally clustered by phenotypes with closely branching excitatory and inhibitory neurons more common earlier in development. (C) H01 tree with labeled cell locations. Related inhibitory and excitatory neurons can be found in different parts of the brain FC = frontal (red), TC = temporal, OC = occipital (blue), PC = parietal, HIP = hippocampus (orange), cere = cerebellum (yellow), SC = subcortical (black). (D) H01 tree with ~2853 cortical excitatory neurons has more evidence of localized radial migration because related neurons are more often found in the same cortical region. Excitatory neurons cluster by subtype, and closely related lower and upper excitatory neurons were still few. (E) H01 tree with ~2847 cortical inhibitory neurons still retains evidence of tangential migration with related neurons scattered throughout the cortex. Inhibitory neurons cluster by subtype with switching between some closely related pairs.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Ancestral tree with 1001 cells rooted at a fully methylated progenitor shows sequential branching with excitatory, then brain stem, inhibitory and cerebellar neurons, then glial cells, and finally excitatory neurons with hippocampal neurons at the end. (B) Related cells colocalize for brain stem, cerebellar, and hippocampal neurons. Inhibitory neurons are more scattered. Excitatory neurons are also scattered with some localization within the cortex.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Ancestral tree with 1033 cells rooted at a fully methylated progenitor shows sequential branching with excitatory, then brain stem, inhibitory and cerebellar neurons, then glial cells, and finally excitatory neurons with hippocampal neurons at the end. (B) Related cells colocalize for brain stem, cerebellar, and hippocampal neurons. Inhibitory neurons are more scattered. Excitatory neurons are also scattered with some localization within the cortex.\n\n### Cell lineage fidelity and cortical migration\n\nUncertain for mouse and human development is whether inhibitory and excitatory neurons originate from shared or distinct progenitors (Tian et al., 2023; Bandler et al., 2022; Delgado et al., 2022). Barcodes could potentially record neuronal differentiation patterns and lineage fidelity can be quantified by comparing most closely related cells or nearest neighbor cell pairs with PWDs <0.05. The approach remains speculative due to several factors: the absence of direct experimental validation, limited experimental cell sampling, and the possibility that barcode similarities may arise by chance rather than reflecting true biological relationships. Lineage fidelity was high (>90%) for inhibitory neurons (Figure 5A). Excitatory lineage fidelity was slightly lower, indicating that some excitatory and inhibitory neurons may share common progenitors (Delgado et al., 2022). Lineage trees indicate common progenitors are present earlier in development, and excitatory neurons that appear later do not have many closely related inhibitory neighbors (Figure 4B). The barcodes documented the known switching between inhibitory neuron subtypes (Figure 5B). Hindbrain, excitatory, and non-neuronal cells had more subtype lineage fidelity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig5-v1.jpg)\n\n**Figure 5.:** (A) Inhibitory neurons have higher lineage fidelity because nearest neighbor pairs (pairwise difference, PWD <0.05) were nearly always both inhibitory neurons. Excitatory neurons had slightly less lineage fidelity because a nearest neighbor was more often an inhibitory neuron. Data are for all three brains. (B) Nearest neighbor inhibitory neuron pairs often had subtype differences. More lineage fidelity was generally present for subcortical and excitatory neurons. Numbers indicate percent lineage subtype fidelity. (C) Nearest neighbor inhibitory and excitatory neuron pairs showed evidence of tangential migration because they were found in different cortical regions. The data indicate greater evidence of inhibitory neuron tangential migration than for excitatory neurons. However, the extent of migration is uncertain because of sparse sampling and because barcodes may be similar by chance. Data are for all three brains. (D) Nearest neighbor neurons were scattered in the cortex. Numbers indicate percent location fidelity. (NonC = non-cortical location, Paleo = paleocortex).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Lineage cell type fidelity between nearest neighbor pairs (pairwise difference, PWD <0.05). Numbers on the right (percentage) indicate how often a closely related cells has the same cell phenotype (B) Location fidelity between nearest neighbor pairs (PWD <0.05). Numbers on the right (percentage) indicate how often a closely related cell is located in the same cortical region. NonC indicates the closely related cell was found outside the cortex.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/101163/elife-101163-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Lineage cell type fidelity between nearest neighbor pairs (pairwise difference, PWD <0.05). Numbers on the right (percentage) indicate how often a closely related cells has the same cell phenotype (B) Location fidelity between nearest neighbor pairs (PWD <0.05). Numbers on the right (percentage) indicate how often a closely related cell is located in the same cortical region. NonC indicates the closely related cell was found outside the cortex.\n\nBarcodes can also potentially infer migration because their neurons are annotated by their adult locations. Daughter cells with similar barcodes could be sampled from the same region, or from different regions if migration occurred. Trees (Figure 4C) indicate that most neurons sampled from the brainstem and hippocampal regions are related and localized to their respective regions. Inhibitory neurons were scattered throughout the cortex, consistent with their differentiation in the ganglionic eminences and subsequent tangential migration to the cortex. Nearest neighbor inhibitory cortical neuron pairs were found in the same cortical region ~25% of the time (Figure 5C and D). Nearest neighbor excitatory neuron pairs were also scattered throughout the cortex, but less than inhibitory neurons, and were in the same cortical region ~50% of the time. The barcode data indicate more inhibitory rather than excitatory neuron tangential migration, but the extent of migration is uncertain due to sparse sampling and because barcodes can match by chance.\n\nThe poor ability to detect localized excitatory neuron radial cortical migration with ~1000 cell whole brain trees (Figure 4C) may reflect that sparse sampling is unlikely to include multiple neurons from the same small clonal region that originated from common subventricular progenitors (radial unit hypothesis Rakic, 1988). Greater localized excitatory neuron migration was seen when trees were reconstructed with more (~2800) neurons, while inhibitory neurons still showed scattered tangential migration (Figure 4D). Neurons of the same subtype were still more related. Hence, lineage trees appear to increase their resolution with more cells, albeit related lower and upper excitatory neuron pairs were still uncommon, which may reflect the unlikely chance of sampling very small radial clonal units.\n\n## Discussion\n\nfCpG barcodes are potential markers of somatic cell ancestry and not cell type classifiers, although cells of the same phenotype are often related because they originate from common progenitors (see new Supplement for fuller discussion). Dynamic barcodes would be useful to study human tissues, but testing their performance is difficult. Ideally, samples obtained at different times would document how they change. The brain facilitates barcode validation because it periodically stores neurons that stop recording at relatively defined times and locations (McKenna and Gagnon, 2019; Finlay and Darlington, 1995). Specific neuron subsets recovered from the adult brain allow for sampling through time and before birth.\n\nThis serial sampling strategy facilitated fCpG barcode validation. The barcode appeared to start predominantly methylated in multiple individuals and became sufficiently polymorphic to distinguish between thousands of neurons. Barcode changes appear to represent replication errors because they reconstruct lineage trees roughly consistent with caudal to rostral brain development. Barcode methylation may indicate when different neurons that survive to adulthood appear in the neonatal brain (Figure 2C).\n\nThe current barcode indicates that most inhibitory and excitatory neurons have relatively distinct progenitors, consistent with the lineage dendrograms reconstructed with neuron-specific methylation of the same data (Tian et al., 2023). There was also evidence for common inhibitory and excitatory progenitors (Delgado et al., 2022), primarily for earlier emerging excitatory neurons. Tangential migration was also detected, manifested by inhibitory neurons with closely related barcodes in different cortical regions. Tangential excitatory neuron migration was also detected, albeit related excitatory neurons were more localized than inhibitory neurons. Tangential migration is also seen with sequencing studies that find neurons with specific mutations in multiple brain regions (Lodato et al., 2015; Breuss et al., 2022; Chung et al., 2024; Evrony et al., 2015).\n\nfCpGs more efficiently distinguish between cells than mutations due to higher replication error rates. Although average methylation decreases with time, both demethylation and remethylation are likely because fully demethylated neurons were not observed, and balanced fluctuating methylation is inferred in other tissues when CpG sites are ~50% methylated in bulk tissues (Gabbutt et al., 2022). More adult divisions in brain cancers did not saturate the barcode with average fCpG methylation ~50% (Figure 3\u2014figure supplement 3). Fluctuating methylation complicates lineage tracing but backmutations can be modeled for ancestral reconstructions. Lineage resolution could be improved by combining mutations and fCpGs.\n\nWeaknesses of this study include very sparse cell sampling and lack of uniform CpG site comparisons between neurons. Like many human fate marker studies, it is difficult to independently verify accuracy. Interpretation of the barcodes relies on several untested assumptions, including relatively constant error rates between fCpG sites and through aging, neutrality, and a predominately fully methylated start in the progenitor cell. Epigenetic remodeling occurs after progenitors stop dividing (Ciceri et al., 2024), which could erase ancestral barcode information. However, neurons of the same type were both closely and remotely related, indicating that such epigenetic remodeling does not systematically alter the fCpG sites. In addition, fCpG barcodes appear to be relatively stable through aging (new Supplement). Inferred lineage trees (Figure 4) had relatively low statistical support for their branches and are presented to demonstrate that the barcodes are readily organized into trees with a commonly used phylogeny software.\n\nTechnical improvements such as targeted bisulfite sequencing of a limited number of informative fCpGs could lead to more consistent coverage and less expensive sequencing of more neurons. Single-cell measurements of small numbers of fCpGs, and snMCode cell type-specific CpG sites (Tian et al., 2023), could efficiently reconstruct human brain lineages, although back changes add complexity. A barcode of 100 fCpGs has enough complexity (2100 or ~1 \u00d7 1030) to potentially distinguish between most excitatory neurons, with less resolution early in development when cells are inherently more related.\n\nThe analysis of more brains can verify that a fCpG barcode starts predominately methylated in most individuals. A common initialized state could facilitate standardized human fate maps and comparisons between individuals. Many polymorphisms linked to brain abnormalities such as autism are in neuronal proliferation, migration, and maturation pathways (Pan et al., 2019), and this preliminary survey indicates lineage heterogeneity between individuals (Figure 4A). fCpG barcodes have been applied to the intestines, endometrium, and blood (Gabbutt et al., 2022), and could be found for multiple other tissue types, helping to unravel human development and aging.\n\n## Methods\n\n### Brain single-cells\n\nSingle-cells with their annotations and methylation at each fCpG site were read from single-cell files downloaded from GEO (GSE215353) and supplemental files from reference (Tian et al., 2023). Lists of fCpG sites and data summarized for the Figures are in Supplementary file 2. The cells and methylation at the fCpG sites are in Supplementary file 3 and Supplementary file 4; Supplementary file 5. PWDs were calculated between all cell pairs with at least 30 matching fCpG sites, with PWD data matrices in Supplementary file 6. Additional details and data in response to the Reviewers are provided in the Appendix.\n\n### Iqtree\n\nIQtree (Nguyen et al., 2015) tree was downloaded and run on a server with 64 cpus and 32 GB of memory. The model (GTR2 + FO + G4) accounts for backmutation and binary data with missing values. Bootstraps were 1,000 per tree with 3000 iterations for whole brain (~1000 cells) trees and 1000 iterations for inhibitory or excitatory (~2,800 neurons) trees. Trees (.treefile) were displayed with FigTree (http://tree.bio.ed.ac.uk/software/figtree/) with truncation of long branches (generally fewer than 10) for display purposes. The cells used for the trees are in Supplementary file 6.\n",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Genevieve Konopka, University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.101163.3.sa0](https://doi.org/10.7554/eLife.101163.3.sa0)\n\nThis study presents a valuable conceptual approach that cell lineage can be determined using methylation data. However, the evidence supporting the claims of the author remains incomplete after revision. If clarified further as described in the reviews, this approach could be of broad interest to neuroscientists and developmental biologists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101163.3.sa1](https://doi.org/10.7554/eLife.101163.3.sa1)\n\nSummary:\n\nIn this manuscript, Shibata describes a method to assess rapidly fluctuating CpG sites (fCpGs) from single-cell methylation sequencing (sc-MeSeq) data. Assuming that fCpGs are largely consistent over time with changes induced by inheritable events during replication, the author infers lineage relationships in available brain-derived sc-MeSeq. Supplementing current lineage tracing through genomic and mitochondrial mosaic variants is an interesting concept that could supplement current work or allow additional lineage analysis in existing data.\n\nHowever, the author failed to convincingly show the power of fCpG analysis to determine lineages in the human brain. While the correlation with cellular division and distinction of cell types appears plausible and strong, the application to detect specific lineages is less convincing. Aspects of this might be due to a lack of clarity in presentation and erroneous use of developmental concepts. However, without addressing these problems it is challenging for a reader to come to the same conclusions as the author.\n\nOn the flip side, this novel application of fCpGs will allow the re-use of existing sc-MeSeq to infer additional features that were previously unavailable, once the biological relevance has been further elucidated.\n\nStrengths:\n\n\u2022 Novel re-analysis application of methylation data to infer the status of fCpGs and the use as a lineage marker\n\n\u2022 Application of this method to an innovative existing data set to benchmark this framework against existing developmental knowledge\n\nWeaknesses:\n\n\u2022 Inconsistent or erroneous use of neurodevelopmental concepts which hinders appropriate interpretation of the results.\n\n\u2022 Somewhat confusing presentation at times which makes it hard to judge the value of this novel approach.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101163.3.sa2](https://doi.org/10.7554/eLife.101163.3.sa2)\n\nSummary:\n\nCell lineage tracing necessitates continuous visible tracking or permanent molecular markers that daughter cells inherit from their progenitors. To successfully trace cell lineages, it is essential to generate and detect sufficient new markers during each cell division. Thus, molecular cell lineages have been predominantly studied with stably inherited genetic markers in animal models and somatic DNA mutations in the human brain. DNA methylation is unstable across cell divisions and differentiation, and is hardly called barcodes. The use of \"Human Brain Barcodes\" in the title and across the whole paper lacks convincing evidence - it is questionable that CpG methylation is always stably inherited by daughter cells.\n\nStrengths:\n\nAnalysis of DNA methylation.\n\nWeaknesses:\n\nThe unstable nature of CpG methylation would introduce significant problems in inferring the true cell lineage. To establish DNA methylation as a means for lineage tracing, it is necessary to test whether the DNA methylation patterns can faithfully track cell lineages with in vitro differentiated & visibly tracked cell lineages.\n\nThe unreliable CpG methylation status also raises the question of what the \"Barcodes\" refer to in the title and across this study. Barcodes should be stable in principle and not dynamic across cell generations, as defined in the Reference #1. The CRISPR/Cas9 mutable barcodes or the somatic mutations may be considered barcodes, but the reviewer is not convinced that the \"dynamic\" CpG methylation fits the \"barcodes\" terminology. This problem is even more concerning in the last section of the results, where CpG status fluctuates in post-mitotic cells.\n\nThe manuscript frequently states assumptions in a tone of conclusions and interprets results without rejecting alternative hypotheses. For example, the title \"Human Brain Barcodes\" should be backed with solid supporting evidence. For another example, the author assumed that the early-formed brain stem would resemble progenitors better and have a higher average methylation level than the forebrain - however, this difference in DNA methylation status could well reflect cell-type-specific gene expression instead of cell lineage progression.\n\nOther points:\n\n(1) The conclusion that excitatory neurons undergo tangential migration is unclear - how far away did the author mean for the tangential direction? Lateral dispersion is known, but it is hard to believe that the excitatory neurons travel across different brain regions. More importantly, how would the author interpret shared or divergent methylation for the same cell type across different brain regions?\n\n(2) The sparsity and resolution of the single-cell DNA methylation data. The methylation status is detected in only a small fraction (~500/31,000 = 1.6%) of fCpGs per cell, with only 48 common sites identified between cell pairs. Given that the human genome contains over 28 million CpG sites, it is important to evaluate whether these fCpGs are truly representative.\n\n(3) While focusing on the X-chromosome may simplify the identification of polymorphic fCpGs, the confidence in determining its methylation status (0 or 1) is questionable when a CpG site is covered by only one read.\n",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2468f029-3be6-4970-847d-3847c441c628",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C1",
+      "claim": "Dynamic CpG methylation 'barcodes' were read from 15,000\u201321,000 single cells from three human male brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic CpG methylation 'barcodes' were read from 15,000\u201321,000 single cells from three human male brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the number of cells analyzed from three brains, which is supported by the data presented in Table 1 showing 21,836, 16,161, and 15,434 cells for H01, H02, and H04 respectively.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "24230158-ce6c-4306-b654-7c65a8169569",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C2",
+      "claim": "The barcode had ~31,000 rapidly fluctuating X-chromosome CpG sites (fCpGs).",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome sparse sequencing coverage, the barcode had ~31,000 rapidly fluctuating X-chromosome CpG sites (fCpGs), with at least 500 covered sites per cell and at least 30 common sites between cell pairs (average of ~48).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the filtering process that resulted in ~31,000 fCpG sites used for analysis, with specific coverage criteria per cell.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "fcbb0d98-7c6f-481f-9b1f-15cdc2545196",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C3",
+      "claim": "Barcodes appear to start methylated and record mitotic ages because excitatory neurons and glial cells that emerge later in development were less methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Barcodes appear to start methylated and record mitotic ages because excitatory neurons and glial cells that emerge later in development were less methylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2A and 2B, which demonstrate higher methylation in early-appearing neurons (PN, THM) and lower methylation in later-appearing excitatory neurons and glial cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "2b9dfb00-9ff4-4b11-9224-f5652ad80828",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C4",
+      "claim": "Average pairwise differences (PWDs) between cells were ~0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Barcodes are different between most cells, with average pairwise differences (PWDs) of ~0.5 between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 shows average PWD values of 0.47 for all three brains, and Figure 1B displays the distribution of PWDs centered around 0.5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "bb2d4ffe-c71b-4727-be8b-a8e63423b203",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C5",
+      "claim": "About 10 cell pairs per million were more closely related with PWDs <0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "About 10 cell pairs per million were more closely related with PWDs <0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 shows closely related pairs per million ranging from 7.0 to 14.8, with an average around 10 per million.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "317e2115-9e4c-46df-bb4b-2a6d375a6231",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C6",
+      "claim": "Inhibitory neurons showed more evidence of tangential migration than excitatory neurons, with related cells in different cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory neurons showed more evidence of tangential migration than excitatory neurons, with related cells in different cortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5C and 5D show that nearest neighbor inhibitory neuron pairs were found in the same cortical region ~25% of the time, while excitatory neurons were co-localized ~50% of the time, indicating more tangential migration for inhibitory neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "f20e5485-b950-4b31-885f-c920c7d5dd75",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C7",
+      "claim": "fCpG barcodes become polymorphic during development and can distinguish between thousands of human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "fCpG barcodes become polymorphic during development and can distinguish between thousands of human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript demonstrates that barcodes from 15,000-21,000 cells show sufficient polymorphism with average PWDs of ~0.47, indicating most cells have unique barcodes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "0647c3ba-8475-4995-bd19-cb7705824698",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C8",
+      "claim": "DNA methylation replication errors are much higher compared to base replication.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation patterns are usually copied between cell divisions, but replication errors are much higher compared to base replication, allowing for more differences between daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about DNA methylation replication error rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "81b7e859-9495-4896-8c4f-d058b02a9bb8",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C9",
+      "claim": "Most fCpG sites are present outside of genes or in unexpressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation modulates expression and their patterns can be used to infer cell phenotypes (Tian et al., 2023; Loyfer et al., 2023), but most fCpG sites are present outside of genes or in unexpressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supplementary file 1 indicates that 16% of fCpG sites are within genes or promoters, implying 84% are outside genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "8548be82-073c-4f14-a35c-60a817a6b019",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C10",
+      "claim": "Brain growth is largely prenatal.",
+      "claim_type": "EXPLICIT",
+      "source": "Although billions of cells are present in an adult brain, lineage trees are compact because growth is largely prenatal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about brain development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "2510204c-c599-42c6-92a0-c592f6923c11",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C11",
+      "claim": "Brain development roughly follows a caudal to rostral pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain also allows for serial 'stopwatch' barcode sampling because development roughly follows a caudal to rostral pattern, and groups of neurons characteristically stop dividing and differentiate at different times and locations (Stiles and Jernigan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Stiles and Jernigan, 2010, and is consistent with established developmental biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "c939f693-b5cf-41bf-961f-fba7b5e25968",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C12",
+      "claim": "Brainstem neurons emerge early during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Brainstem neurons emerge early (Fan et al., 2020) and their barcodes should most resemble the initial progenitor state, whereas the stopwatch runs longer for excitatory neurons that appear later in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fan et al., 2020, and is consistent with the barcode methylation data showing higher methylation in brainstem neurons.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "910a8dbd-3f3b-4dd9-955f-49da6bc221cb",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C13",
+      "claim": "The brain fCpG barcode initializes as predominately methylated in the progenitor cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain fCpG barcode initializes as predominately methylated in the progenitor cell and becomes polymorphic with more diverse barcodes in excitatory neurons that emerge later in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2B shows that nearly all individual fCpGs are methylated in early-appearing inhibitory neurons in the subcortex (PN, THM, MSN), supporting the inference of a methylated starting state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "1e2a4f5c-7a02-4200-a820-2cf01e10b0f5",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C14",
+      "claim": "Single-cell methylation data has sparse coverage with <5% of CpG sites sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Barcode development was limited by the sparse single-cell data (Tian et al., 2023), with <5% of CpG sites sequenced, often with only a single read.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical limitation of the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "1ac90153-30a7-4f3d-84f2-221e8158944c",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C15",
+      "claim": "X-chromosome fCpG sites require only a single read to infer a binary state in male individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Sparse coverage was mitigated with X-chromosome fCpG sites because only a single read can infer a binary (0, 1) state in male individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the biological knowledge that males have only one X chromosome, so methylation state is binary rather than requiring multiple reads to determine heterozygosity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "a2854f17-d7ff-45c2-83c7-fd6895e4c3b9",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C16",
+      "claim": "Autosomal CpG sites require at least 2 reads to infer three possible states (0, 0.5, 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Autosomal CpG sites require at least 2 reads to infer three possible states (0, 0.5, 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the biological knowledge that autosomal chromosomes are diploid, requiring assessment of both alleles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "560e5e2f-2bfc-4ce8-9c62-8b1985570b60",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C17",
+      "claim": "CpG sites with average methylation between 0.25 and 0.75 in bulk neurons are likely polymorphic.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-chromosome also simplifies the identification of polymorphic fCpGs because many neurons have different binary states if average methylation is between 0.25 and 0.75 in bulk WGBS adult male neurons reference data (Loyfer et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the logic that intermediate methylation levels in bulk samples indicate heterogeneity at the single-cell level.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "8adff2eb-ab81-4dca-b839-ef6f3b8ed8d5",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C18",
+      "claim": "Approximately 116,000 CpG sites had average methylation between 0.25 and 0.75 in bulk neurons from seven males.",
+      "claim_type": "EXPLICIT",
+      "source": "CpG sites (N ~116,000), with average methylation between 0.25 and 0.75 in bulk neurons from seven males (Loyfer et al., 2023), were further filtered by discarding more stable CpG sites with average methylation less than 0.2 or more than 0.8 for all cells, inhibitory neurons, and excitatory neurons in brain H02.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the initial filtering step in the barcode development process using reference data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "bc8eb9be-014c-48d5-b3a9-adcbb2a780e2",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C19",
+      "claim": "fCpG site methylation appears neutral because they are predominately intergenic.",
+      "claim_type": "EXPLICIT",
+      "source": "fCpG site methylation appears neutral because they are predominately intergenic, with 16% within genes or promoters (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The inference of neutrality is based on the observation that 84% of fCpG sites are outside genes or promoters, suggesting they are not under strong selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "60d7b122-ed49-4370-b706-f46b6c212e0b",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C20",
+      "claim": "Analyzed cells had at least 500 fCpGs with an average of ~1100.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzed cells had at least 500 fCpGs (average ~1100), with pairwise distances (PWDs) calculated between cell pairs when at least 30 fCpGs were comparable (average ~48 fCpGs per cell pair).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 shows average fCpG per cell ranging from 1060 to 1170, consistent with the stated average of ~1100.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "ce50a71b-c9de-4649-9620-45ed9fde76f9",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C21",
+      "claim": "Average fCpG methylation was ~58% for all three brains.",
+      "claim_type": "EXPLICIT",
+      "source": "fCpG methylation was variable between cells with averages of ~58% for all three brains (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 1 shows average methylation per cell of 0.58 for all three brains, and Figure 1A displays this distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "b9e1f002-a3a3-433f-b8e3-e66de7e9c859",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C22",
+      "claim": "Average methylation was highest in the pons (PN) and thalamus (THM).",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation was variable between cells of the same type and average methylation was highest in the pons (PN) and thalamus (THM), intermediate for other inhibitory neurons, and lowest for excitatory neurons, glial cells, and cerebellar cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A shows violin plots with PN and THM having the highest methylation levels among all cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "dee46678-7fd5-458c-82b2-82f38d9e1c78",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C23",
+      "claim": "Outer layer cortical excitatory neurons (L2_3) that are made later during development were less methylated than inner cortical excitatory neurons (L4_6) that appear earlier.",
+      "claim_type": "EXPLICIT",
+      "source": "Outer layer cortical excitatory neurons (L2_3) that are made later during development were less methylated than inner cortical excitatory neurons (L4_6) that appear earlier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2A shows L2_3 neurons with lower methylation than L4_6 neurons, consistent with the known developmental timeline where outer layers form after inner layers.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "5936ec42-4ac0-4c58-9192-28c93a8ede1a",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C24",
+      "claim": "Predominantly methylated individual fCpG sites were common in subcortical neurons (PN, THM), less frequent in other inhibitory neurons, and rare in excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Predominantly methylated individual fCpG sites were common in subcortical neurons (PN, THM), less frequent in other inhibitory neurons, and rare in excitatory neurons (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2B shows histograms of individual fCpG methylation states for different cell types, demonstrating this pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "7a18a4f7-ef48-4b83-b6b7-e1c6031eb832",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C25",
+      "claim": "Barcodes become fixed when their cells stop dividing and differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Barcodes are assumed to become fixed when their cells stop dividing and differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the mechanism of methylation changes occurring during DNA replication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "9c71e94c-6a19-4c87-b82c-df7bb6634e24",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C26",
+      "claim": "The hindbrain with mature neurons forms early in development, followed by inhibitory neurons in the ganglionic eminences, and then excitatory neurons and glial cells in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Very simplistically, the hindbrain with mature neurons (Fan et al., 2020) forms early in development, followed by inhibitory neurons in the ganglionic eminences, and then excitatory neurons and glial cells in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fan et al., 2020, and represents established knowledge of brain development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "dc616fc0-a6dc-4082-bc0e-d24eb4cbb578",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C27",
+      "claim": "Average barcode PWDs were lowest in brainstem cells (PN), intermediate between other inhibitory neurons, and highest for excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A progenitor cell barcode is assumed to become increasingly polymorphic with subsequent divisions. This pattern was observed, with average barcode PWDs lowest in brainstem cells (PN), intermediate between other inhibitory neurons, and highest for excitatory neurons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3A shows violin plots of PWDs for different cell types, demonstrating this pattern of increasing PWD with developmental time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "1e6d58ff-4644-447b-ad11-55fa40f792b1",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C28",
+      "claim": "Cells of the same phenotype were more similar with lower average PWDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells of the same phenotype were more similar with lower average PWDs (Figure 3A and B), suggesting they are more related to each other and have common progenitors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3B shows a heatmap where cells of the same phenotype cluster together with lower PWDs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "4d894372-ff9d-4df3-9805-3a5a680912d6",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C29",
+      "claim": "Closely related cell pairs were ~2.9 times more frequent within a brain compared to between brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Closely related cell pairs were ~2.9 times more frequent within a brain (average ~9.8 per million) compared to between brains (average ~3.4 per million).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 shows closely related pairs per million averaging 9.8 within brains (7.0, 7.5, 14.8) and 3.4 between brains (2.8, 3.7, 3.7), supporting this calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "6ac06c51-1b26-4a76-9a22-835a28f88c7c",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C30",
+      "claim": "Closely related cells had fewer matching fCpG sites (~35 compared to ~48 for all cell pairs).",
+      "claim_type": "EXPLICIT",
+      "source": "Closely related cells had fewer matching fCpG sites (~35 compared to ~48 for all cell pairs) and were more common early in development when barcodes are more methylated (Figure 3C), indicating that lower barcode complexity favors matching.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 1 shows fCpG per nearest neighbor pair averaging 34-35, while fCpG per pair for all comparisons averages 45-51.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "aaa46ed3-3af5-448f-88ac-e4e91e46c661",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C31",
+      "claim": "fCpG barcodes from ~1000 brain cells with different phenotypes yield trees that resemble caudal to rostral development.",
+      "claim_type": "EXPLICIT",
+      "source": "fCpG barcodes from ~1000 brain cells with different phenotypes yield trees with a standard phylogeny software that resemble caudal to rostral development (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4 shows phylogenetic trees constructed from barcode data that show sequential branching consistent with known developmental patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "64965c61-ccd2-4a7f-aa82-acc28db12ddc",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C32",
+      "claim": "The trees are rooted by a progenitor with a fully methylated barcode.",
+      "claim_type": "EXPLICIT",
+      "source": "The trees are rooted by a progenitor with a fully methylated barcode, and branches progressively yield brainstem neurons (PN), a subset of excitatory lower (L4_6) neurons, thalamic neurons (THM), inhibitory neurons, cerebellar cells, and glial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows trees rooted at a fully methylated progenitor, which is an assumption used to orient the tree based on the inferred starting state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "42a4bca4-1810-4352-9c34-72067246255f",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C33",
+      "claim": "Hippocampal neurons (CA, DG) that may divide postnatally were at the terminus of the trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory neurons branch last, and hippocampal neurons (CA, DG) that may divide postnatally (Gage, 2002) were at the terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows hippocampal neurons at the end of the tree branches, consistent with citation to Gage, 2002, about postnatal neurogenesis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "48cdc1d3-b159-4c3b-8348-a290952c4fc9",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C34",
+      "claim": "Bootstrap branch support in the trees was typically less than 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "The trees illustrate the ability to produce phylogenies with IQtree, but the phylogenies are limited by sparse cell sampling and that barcodes may be similar by chance. The degree of confidence was generally low, with bootstrap branch support typically less than 15%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the phylogenetic analysis, indicating low statistical confidence in specific branch relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "c210614f-0149-4df9-bd4d-c9900ccec225",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C35",
+      "claim": "Inhibitory neurons have higher lineage fidelity (>90%) than excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage fidelity was high (>90%) for inhibitory neurons (Figure 5A). Excitatory lineage fidelity was slightly lower, indicating that some excitatory and inhibitory neurons may share common progenitors (Delgado et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5A shows that nearest neighbor pairs of inhibitory neurons were nearly always both inhibitory neurons, while excitatory neurons had more mixed nearest neighbors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "13d8dbd5-8812-463d-a941-b16cbcae3a7e",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C36",
+      "claim": "The barcodes documented switching between inhibitory neuron subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The barcodes documented the known switching between inhibitory neuron subtypes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5B shows that nearest neighbor inhibitory neuron pairs often had subtype differences, indicating lineage relationships between different inhibitory subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "4371f8f6-3a30-451a-8ce3-93a0ffbc496e",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C37",
+      "claim": "Nearest neighbor inhibitory cortical neuron pairs were found in the same cortical region ~25% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearest neighbor inhibitory cortical neuron pairs were found in the same cortical region ~25% of the time (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5C and 5D show location fidelity data for nearest neighbor pairs, with inhibitory neurons showing lower same-region localization than excitatory neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "bcdf7cba-1be6-4fbd-90d4-b9b8cf02890e",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C38",
+      "claim": "Nearest neighbor excitatory neuron pairs were in the same cortical region ~50% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearest neighbor excitatory neuron pairs were also scattered throughout the cortex, but less than inhibitory neurons, and were in the same cortical region ~50% of the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5C and 5D show that excitatory neurons had approximately twice the location fidelity of inhibitory neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "f3a19801-6fbd-472c-a6ef-433eab700dbb",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C39",
+      "claim": "Greater localized excitatory neuron migration was seen when trees were reconstructed with more (~2800) neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater localized excitatory neuron migration was seen when trees were reconstructed with more (~2800) neurons, while inhibitory neurons still showed scattered tangential migration (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4D shows a tree with ~2853 cortical excitatory neurons demonstrating more evidence of localized radial migration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "defd433c-c853-4fe3-aa87-2bf0c880e57d",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C40",
+      "claim": "Related lower and upper excitatory neuron pairs were uncommon.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, lineage trees appear to increase their resolution with more cells, albeit related lower and upper excitatory neuron pairs were still uncommon, which may reflect the unlikely chance of sampling very small radial clonal units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on the analysis of trees with more neurons, with the interpretation that sparse sampling limits detection of small clonal units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "5ccefbe6-51e8-4e96-b5f9-e790f17ba200",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C41",
+      "claim": "fCpG barcodes are potential markers of somatic cell ancestry and not cell type classifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "fCpG barcodes are potential markers of somatic cell ancestry and not cell type classifiers, although cells of the same phenotype are often related because they originate from common progenitors (see new Supplement for fuller discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual distinction made by the authors about the purpose and interpretation of the barcode system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "575c07a9-b7e9-4999-a099-88ddb460f920",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C42",
+      "claim": "The brain periodically stores neurons that stop recording at relatively defined times and locations.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain facilitates barcode validation because it periodically stores neurons that stop recording at relatively defined times and locations (McKenna and Gagnon, 2019; Finlay and Darlington, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to McKenna and Gagnon, 2019, and Finlay and Darlington, 1995, describing the developmental biology of the brain.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "12bf0f1b-2457-4c4c-aa69-23526c6771df",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C43",
+      "claim": "Barcode methylation may indicate when different neurons that survive to adulthood appear in the neonatal brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Barcode methylation may indicate when different neurons that survive to adulthood appear in the neonatal brain (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2C shows a correlation between barcode methylation levels and the developmental timeline of different neuron types, supporting this inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "cea1903a-beaf-40e8-ac23-9b8aef583957",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C44",
+      "claim": "Most inhibitory and excitatory neurons have relatively distinct progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The current barcode indicates that most inhibitory and excitatory neurons have relatively distinct progenitors, consistent with the lineage dendrograms reconstructed with neuron-specific methylation of the same data (Tian et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the high lineage fidelity observed in Figure 5A and is consistent with previous analysis of the same dataset.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "0359bc8d-f5fb-47ee-9045-676af7fe1f29",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C45",
+      "claim": "There was evidence for common inhibitory and excitatory progenitors, primarily for earlier emerging excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also evidence for common inhibitory and excitatory progenitors (Delgado et al., 2022), primarily for earlier emerging excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observation that some excitatory neurons had inhibitory nearest neighbors, particularly earlier in development, as shown in the lineage trees.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "2b6d1587-5776-4a10-b3e6-e0a27fb86778",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C46",
+      "claim": "Tangential migration is seen with sequencing studies that find neurons with specific mutations in multiple brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Tangential migration is also seen with sequencing studies that find neurons with specific mutations in multiple brain regions (Lodato et al., 2015; Breuss et al., 2022; Chung et al., 2024; Evrony et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies that have documented tangential migration using somatic mutations as lineage markers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "7f6ba64f-6809-4fdb-b986-c9b2427abe6e",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C47",
+      "claim": "fCpGs more efficiently distinguish between cells than mutations due to higher replication error rates.",
+      "claim_type": "EXPLICIT",
+      "source": "fCpGs more efficiently distinguish between cells than mutations due to higher replication error rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known higher error rate of DNA methylation replication compared to base replication, allowing for more rapid accumulation of differences.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "e03c0dfa-fe4b-4783-a76f-8900de2d8a5c",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C48",
+      "claim": "Fully demethylated neurons were not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Although average methylation decreases with time, both demethylation and remethylation are likely because fully demethylated neurons were not observed, and balanced fluctuating methylation is inferred in other tissues when CpG sites are ~50% methylated in bulk tissues (Gabbutt et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on the data shown in Figure 1A and Figure 2A, where no neurons show complete demethylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "0620525e-2a18-4abc-90d7-17fdd0df1015",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C49",
+      "claim": "More adult divisions in brain cancers did not saturate the barcode with average fCpG methylation remaining ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "More adult divisions in brain cancers did not saturate the barcode with average fCpG methylation ~50% (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3\u2014figure supplement 3 shows brain tumor samples with average methylation around 50%, indicating the barcode does not become fully demethylated even with many additional divisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "d87787f6-fe1f-4ca2-a09d-c3d438640754",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C50",
+      "claim": "Fluctuating methylation complicates lineage tracing but backmutations can be modeled for ancestral reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluctuating methylation complicates lineage tracing but backmutations can be modeled for ancestral reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration based on the use of the GTR2 model in IQtree that accounts for backmutation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "52d0a3ac-f562-4bdb-a5d3-bccd819eac78",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C51",
+      "claim": "Lineage resolution could be improved by combining mutations and fCpGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage resolution could be improved by combining mutations and fCpGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future methodological improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "ab00c408-740b-4511-8b44-585490cf0caa",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C52",
+      "claim": "Interpretation of the barcodes relies on several untested assumptions, including relatively constant error rates between fCpG sites and through aging, neutrality, and a predominately fully methylated start in the progenitor cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Interpretation of the barcodes relies on several untested assumptions, including relatively constant error rates between fCpG sites and through aging, neutrality, and a predominately fully methylated start in the progenitor cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly acknowledge these assumptions as limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "6f5db3f8-58f8-49b8-a3d3-91717579bd50",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C53",
+      "claim": "Epigenetic remodeling occurs after progenitors stop dividing.",
+      "claim_type": "EXPLICIT",
+      "source": "Epigenetic remodeling occurs after progenitors stop dividing (Ciceri et al., 2024), which could erase ancestral barcode information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ciceri et al., 2024, and represents a potential confounding factor.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "f8b15e2f-7633-4ca5-91bb-c8b1ba33b52f",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C54",
+      "claim": "Neurons of the same type were both closely and remotely related, indicating that epigenetic remodeling does not systematically alter the fCpG sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neurons of the same type were both closely and remotely related, indicating that such epigenetic remodeling does not systematically alter the fCpG sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that cells of the same type show a range of PWDs, suggesting the barcode signal is preserved despite potential remodeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "8e704576-d2c5-4c1b-9552-23480b75e04d",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C55",
+      "claim": "A barcode of 100 fCpGs has enough complexity (2^100 or ~1 \u00d7 10^30) to potentially distinguish between most excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A barcode of 100 fCpGs has enough complexity (2100 or ~1 \u00d7 1030) to potentially distinguish between most excitatory neurons, with less resolution early in development when cells are inherently more related.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical calculation based on the combinatorial complexity of binary states.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "d0a6722d-3920-4605-8b8b-240ea9f47dfb",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C56",
+      "claim": "Many polymorphisms linked to brain abnormalities such as autism are in neuronal proliferation, migration, and maturation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Many polymorphisms linked to brain abnormalities such as autism are in neuronal proliferation, migration, and maturation pathways (Pan et al., 2019), and this preliminary survey indicates lineage heterogeneity between individuals (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Pan et al., 2019, and the observation of differences in tree structure between individuals shown in Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "b4976abe-d00a-4057-ac67-e00a5cb6a75b",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C57",
+      "claim": "fCpG barcodes have been applied to the intestines, endometrium, and blood.",
+      "claim_type": "EXPLICIT",
+      "source": "fCpG barcodes have been applied to the intestines, endometrium, and blood (Gabbutt et al., 2022), and could be found for multiple other tissue types, helping to unravel human development and aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gabbutt et al., 2022, describing previous applications of the fCpG barcode approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "9617c660-828b-4119-a876-23ea68895bf4",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C58",
+      "claim": "Single-cell files were downloaded from GEO (GSE215353) and supplemental files from Tian et al., 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cells with their annotations and methylation at each fCpG site were read from single-cell files downloaded from GEO (GSE215353) and supplemental files from reference (Tian et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "4be8734f-5f3f-448e-8641-9eb919648f0a",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C59",
+      "claim": "PWDs were calculated between all cell pairs with at least 30 matching fCpG sites.",
+      "claim_type": "EXPLICIT",
+      "source": "PWDs were calculated between all cell pairs with at least 30 matching fCpG sites, with PWD data matrices in Supplementary file 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological criterion for pairwise comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "782cd656-e1bf-4006-b9e1-d1d8c2a93d47",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C60",
+      "claim": "IQtree was run on a server with 64 cpus and 32 GB of memory.",
+      "claim_type": "EXPLICIT",
+      "source": "IQtree (Nguyen et al., 2015) tree was downloaded and run on a server with 64 cpus and 32 GB of memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational resources used for phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "6bcec37b-1fda-4a02-b398-a5506ce65e68",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C61",
+      "claim": "The model (GTR2 + FO + G4) accounts for backmutation and binary data with missing values.",
+      "claim_type": "EXPLICIT",
+      "source": "The model (GTR2 + FO + G4) accounts for backmutation and binary data with missing values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phylogenetic model used in IQtree analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "0624e067-5250-48cb-854b-58d8088df8ef",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C62",
+      "claim": "Bootstraps were 1,000 per tree with 3000 iterations for whole brain (~1000 cells) trees and 1000 iterations for inhibitory or excitatory (~2,800 neurons) trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Bootstraps were 1,000 per tree with 3000 iterations for whole brain (~1000 cells) trees and 1000 iterations for inhibitory or excitatory (~2,800 neurons) trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bootstrap parameters used for assessing tree confidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "4bd3b26b-baca-4fe3-840c-d9b7b6522cfe",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C63",
+      "claim": "Epigenomes from 15,434\u201321,836 cells were downloaded from three male brains with a general criterion of allc.tsv.gz file sizes 90 mb or larger.",
+      "claim_type": "EXPLICIT",
+      "source": "Epigenomes from 15,434\u201321,836 cells were downloaded from three male brains with a general criterion of allc.tsv.gz file sizes 90 mb or larger (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criterion based on file size as a proxy for data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "42266528-cb72-47cf-b8aa-e9518c34fef4",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C64",
+      "claim": "Neurons were preferentially sampled, whereas glial cells were sometimes excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons were preferentially sampled, whereas glial cells were sometimes excluded (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a sampling bias in the dataset used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "0426586f-8409-49b6-86c5-808c3a740765",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C65",
+      "claim": "A PWD of 0 is a perfect match and 0.5 indicates randomization.",
+      "claim_type": "EXPLICIT",
+      "source": "A PWD of 0 is a perfect match and 0.5 indicates randomization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the interpretation of the PWD metric used throughout the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "a624c409-63d2-4fb8-adf0-07d4a54c810d",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C66",
+      "claim": "The 73\u2013197 million possible cell pair comparisons revealed polymorphic barcodes with average PWDs of ~0.47 between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The 73\u2013197 million possible cell pair comparisons revealed polymorphic barcodes with average PWDs of ~0.47 between cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Table 1 shows the number of cell pairs per million (73-197 million total) and average PWDs of 0.47 for all three brains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "f6243e7d-dd69-4c94-9f7c-b903ca3412f7",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C67",
+      "claim": "Barcodes for each cell type had a range of methylation, consistent with asynchronous development rather than a strict stepwise process.",
+      "claim_type": "EXPLICIT",
+      "source": "Barcodes for each cell type had a range of methylation (Figure 2A), consistent with synchronous development rather than a strict stepwise process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A shows violin plots with wide distributions of methylation within each cell type, supporting the inference of asynchronous development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "e556ccc1-4c69-42cb-96db-2e3e4406d52f",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C68",
+      "claim": "After barcodes change from ~100 to ~70% methylated, most adult brainstem (PN) and inhibitory neurons are present but excitatory neurons are fewer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, after barcodes change from ~100 to~70% methylated, most adult brainstem (PN) and inhibitory neurons are present but excitatory neurons are fewer, with very few adult outer layer (L2_3) neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of Figure 2C, which shows the cumulative proportion of different cell types at different methylation levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "fe059d07-5df6-44e3-9304-763b0d1f378f",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C69",
+      "claim": "Outer excitatory and glial progenitor cells are present early but their barcodes continue to demethylate until they stop dividing and differentiate later in development.",
+      "claim_type": "EXPLICIT",
+      "source": "Outer excitatory and glial progenitor cells are present (Eze et al., 2021), but their barcodes continue to demethylate until they stop dividing and differentiate later in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that outer layer neurons have lower methylation, combined with citation to Eze et al., 2021, about progenitor cell presence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "5edebf22-10d2-44af-a14c-db3addc7f44e",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C70",
+      "claim": "This stopwatch-like pattern, with more demethylated barcodes in later appearing cell types, was present in all three adult brains.",
+      "claim_type": "EXPLICIT",
+      "source": "This stopwatch-like pattern, with more demethylated barcodes in later appearing cell types, was present in all three adult brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2\u2014figure supplements 1 and 2 show similar patterns for H02 and H04 as described for H01.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "cf0220f6-575b-40fc-ac11-69df941dc328",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C71",
+      "claim": "Cells of the same phenotype are more related to each other and have common progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells of the same phenotype were more similar with lower average PWDs (Figure 3A and B), suggesting they are more related to each other and have common progenitors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that same-phenotype cells have lower PWDs, which is consistent with shared ancestry.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "058e587b-944a-47dd-93af-c16b3fe2b7e0",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C72",
+      "claim": "Lower barcode complexity favors matching by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Closely related cells had fewer matching fCpG sites (~35 compared to ~48 for all cell pairs) and were more common early in development when barcodes are more methylated (Figure 3C), indicating that lower barcode complexity favors matching.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference that some closely related pairs may be false positives due to chance matching when barcode complexity is lower.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "2eb0ef5c-d371-44b7-8894-0676ff2d9d09",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C73",
+      "claim": "Trees are similar between the brains, with H04 inferring less distance between inhibitory and excitatory lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar trees were observed for H02 and H04, albeit with less separation between inhibitory and excitatory neurons for H04 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4A shows three trees with generally similar structure but some individual variation, particularly for H04.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "74c23efa-3413-492e-99b0-30bbb7bf1b3b",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C74",
+      "claim": "Cells are generally grouped by phenotype in the lineage trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells are generally grouped by phenotype, with some early appearing excitatory neurons admixed among inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4B shows that neurons of the same type tend to cluster together in the tree, with some exceptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "62f5500a-b981-472c-9b0e-3ded37a5813d",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C75",
+      "claim": "Most neurons sampled from the brainstem and hippocampal regions are related and localized to their respective regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Trees (Figure 4C) indicate that most neurons sampled from the brainstem and hippocampal regions are related and localized to their respective regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4C shows that neurons from these regions cluster together in the tree and are color-coded to the same locations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "13930a8e-8a92-4e0d-bbaa-7a8e5b04df1d",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C76",
+      "claim": "Inhibitory neurons were scattered throughout the cortex, consistent with their differentiation in the ganglionic eminences and subsequent tangential migration to the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory neurons were scattered throughout the cortex, consistent with their differentiation in the ganglionic eminences and subsequent tangential migration to the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4C shows inhibitory neurons with related barcodes in different cortical regions, consistent with known developmental biology of inhibitory neuron migration.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "8280f8e4-0c93-4cd5-887b-2cf76b1c7a83",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C77",
+      "claim": "The extent of migration is uncertain due to sparse sampling and because barcodes can match by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "The barcode data indicate more inhibitory rather than excitatory neuron tangential migration, but the extent of migration is uncertain due to sparse sampling and because barcodes can match by chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly acknowledge this limitation in interpreting the migration data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "4a9b8b21-fa9e-4a57-a5ab-8434aa2dfd1f",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C78",
+      "claim": "The poor ability to detect localized excitatory neuron radial cortical migration with ~1000 cell whole brain trees may reflect that sparse sampling is unlikely to include multiple neurons from the same small clonal region.",
+      "claim_type": "EXPLICIT",
+      "source": "The poor ability to detect localized excitatory neuron radial cortical migration with ~1000 cell whole brain trees (Figure 4C) may reflect that sparse sampling is unlikely to include multiple neurons from the same small clonal region that originated from common subventricular progenitors (radial unit hypothesis Rakic, 1988).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the radial unit hypothesis and the observation that more localized migration is detected with more cells.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "8646ca56-619b-4fa5-9ac7-546b3593ea0c",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C79",
+      "claim": "Neurons of the same subtype were more related.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons of the same subtype were still more related.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the trees shown in Figure 4D and 4E where neurons cluster by subtype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "f76c3e6a-602e-48d7-84ec-35c0c69e1b3d",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C80",
+      "claim": "Lineage trees appear to increase their resolution with more cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, lineage trees appear to increase their resolution with more cells, albeit related lower and upper excitatory neuron pairs were still uncommon, which may reflect the unlikely chance of sampling very small radial clonal units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing trees with ~1000 cells versus ~2800 cells, showing improved detection of localized migration with more cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "a40f6445-0532-41c3-900f-57bae071949e",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C81",
+      "claim": "Testing barcode performance is difficult because ideally samples obtained at different times would document how they change.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic barcodes would be useful to study human tissues, but testing their performance is difficult. Ideally, samples obtained at different times would document how they change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration about the challenges of validating dynamic barcodes in human tissues.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "ef94c408-5332-4478-b815-ae42084199b9",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C82",
+      "claim": "Specific neuron subsets recovered from the adult brain allow for sampling through time and before birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific neuron subsets recovered from the adult brain allow for sampling through time and before birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the key insight that enables barcode validation by using neurons that differentiated at different developmental times.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "6f343506-024b-4c16-bed4-d4214fad0eed",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C83",
+      "claim": "The barcode appeared to start predominantly methylated in multiple individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This serial sampling strategy facilitated fCpG barcode validation. The barcode appeared to start predominantly methylated in multiple individuals and became sufficiently polymorphic to distinguish between thousands of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the consistent pattern observed across all three brains showing high methylation in early-appearing neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "ecc9edf7-cf15-4d49-96b4-8aadcd172ace",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C84",
+      "claim": "Barcode changes appear to represent replication errors because they reconstruct lineage trees roughly consistent with caudal to rostral brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "Barcode changes appear to represent replication errors because they reconstruct lineage trees roughly consistent with caudal to rostral brain development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that trees constructed from barcode data match expected developmental patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "7a8a7a91-9717-47e0-aa14-7691c803a9d5",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C85",
+      "claim": "The current barcode is consistent with lineage dendrograms reconstructed with neuron-specific methylation of the same data.",
+      "claim_type": "EXPLICIT",
+      "source": "The current barcode indicates that most inhibitory and excitatory neurons have relatively distinct progenitors, consistent with the lineage dendrograms reconstructed with neuron-specific methylation of the same data (Tian et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison to previous analysis of the same dataset provides independent validation of the findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "795a4100-ccf7-4c29-9b35-1a73ff2f35d3",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C86",
+      "claim": "Lineage trees indicate common progenitors for some inhibitory and excitatory neurons are present earlier in development.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage trees indicate common progenitors are present earlier in development, and excitatory neurons that appear later do not have many closely related inhibitory neighbors (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the tree structure showing mixed inhibitory and excitatory neurons primarily in earlier branches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "94566a69-987a-43af-b269-faddb2451a08",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C87",
+      "claim": "Hindbrain, excitatory, and non-neuronal cells had more subtype lineage fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hindbrain, excitatory, and non-neuronal cells had more subtype lineage fidelity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5B shows higher percentages of subtype fidelity for these cell types compared to inhibitory neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "88ba0dc9-b40d-4460-ae47-00e96ac78f07",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C88",
+      "claim": "The approach remains speculative due to several factors: the absence of direct experimental validation, limited experimental cell sampling, and the possibility that barcode similarities may arise by chance rather than reflecting true biological relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach remains speculative due to several factors: the absence of direct experimental validation, limited experimental cell sampling, and the possibility that barcode similarities may arise by chance rather than reflecting true biological relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly acknowledge these limitations of the lineage fidelity analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "6b860aee-15c6-4a84-ae92-2a4ee29795cf",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C89",
+      "claim": "Balanced fluctuating methylation is inferred in other tissues when CpG sites are ~50% methylated in bulk tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Although average methylation decreases with time, both demethylation and remethylation are likely because fully demethylated neurons were not observed, and balanced fluctuating methylation is inferred in other tissues when CpG sites are ~50% methylated in bulk tissues (Gabbutt et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gabbutt et al., 2022, describing the behavior of fCpGs in other tissues.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "db271bc6-090c-4dd9-a37c-75a323347f2b",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C90",
+      "claim": "Targeted bisulfite sequencing of a limited number of informative fCpGs could lead to more consistent coverage and less expensive sequencing of more neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Technical improvements such as targeted bisulfite sequencing of a limited number of informative fCpGs could lead to more consistent coverage and less expensive sequencing of more neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future technical improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "7cf40f92-96cf-469c-b911-58685603abda",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C91",
+      "claim": "A common initialized state could facilitate standardized human fate maps and comparisons between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "A common initialized state could facilitate standardized human fate maps and comparisons between individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion about potential applications if the methylated starting state is confirmed in more individuals.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "b21f6263-0082-455e-8f6c-be645aeae34e",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "claim_id": "C92",
+      "claim": "This preliminary survey indicates lineage heterogeneity between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Many polymorphisms linked to brain abnormalities such as autism are in neuronal proliferation, migration, and maturation pathways (Pan et al., 2019), and this preliminary survey indicates lineage heterogeneity between individuals (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4A shows differences in tree structure between the three brains, particularly for H04.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "070210e4-04f2-4e9b-a947-f5ba7873248e",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed single-cell methylation data from 15,000-21,000 cells across three human male brains, using ~31,000 X-chromosome fCpG sites as barcodes, with cells having at least 500 covered fCpG sites and cell pairs sharing at least 30 common sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C20, C58, C63, and C64 are well-supported by Table 1 and the Methods section, which provide specific cell counts, fCpG site numbers, and data sources. The filtering criteria and data acquisition methods are clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The fCpG barcode initializes as predominantly methylated in progenitor cells and progressively demethylates during development, with early-appearing neurons (brainstem, inhibitory) showing higher methylation than later-appearing neurons (excitatory, glial), creating a developmental 'stopwatch' that records when different cell types emerge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C13, C22-C26, C43, C67-C70 are strongly supported by Figures 2A-C showing the methylation hierarchy across cell types that matches known developmental timing. The pattern is consistent across all three brains (Figure 2 supplements 1-2), and the interpretation aligns with established developmental biology (C11, C12, C26).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "cb103b96-4563-4e9a-9155-90b22934c246",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The fCpG barcodes are sufficiently polymorphic to distinguish between most cells, with average pairwise differences (PWDs) of ~0.47 between cells and only ~10 closely related pairs per million (PWD <0.05). Cells of the same phenotype show lower PWDs, suggesting common ancestry, and closely related pairs are ~2.9 times more frequent within brains than between brains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C7, C21, C27-C30, and C66 are well-supported by quantitative data in Table 1 and Figures 1B and 3A-C. The within-brain vs. between-brain comparison (C29) provides evidence that low PWDs reflect biological relatedness rather than random chance, though the authors acknowledge sparse sampling limitations (C30, C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "939c3ec8-407c-46c7-b57c-efd17b182641",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Phylogenetic trees constructed from ~1000 cells using IQtree show sequential branching patterns consistent with caudal-to-rostral brain development, with brainstem neurons appearing first, followed by inhibitory neurons, cerebellar cells, glial cells, and finally excitatory neurons with hippocampal neurons at the terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C34, C73-C75, and C84 describe trees that qualitatively match expected developmental patterns (Figure 4), but the authors explicitly acknowledge very low bootstrap support (<15%, C34), sparse sampling limitations, and the possibility of chance similarities. The trees demonstrate feasibility but lack statistical confidence for specific branch relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lineage fidelity analysis shows that inhibitory neurons have >90% lineage fidelity (nearest neighbors are also inhibitory), while excitatory neurons show slightly lower fidelity, suggesting most inhibitory and excitatory neurons have distinct progenitors with some evidence for common progenitors earlier in development. The barcodes also document known switching between inhibitory neuron subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35, C36, C44, C45, C79, C85-C88 are supported by data in Figure 5A-B showing differential lineage fidelity patterns. However, the authors explicitly acknowledge this approach is speculative due to lack of experimental validation, sparse sampling, and potential for chance matches (C88). The consistency with prior analysis of the same data (C85) provides some validation, but independent confirmation is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Inhibitory neurons show more evidence of tangential migration than excitatory neurons, with nearest neighbor pairs found in the same cortical region ~25% of the time for inhibitory neurons versus ~50% for excitatory neurons. Trees with more cells (~2800) show improved detection of localized excitatory neuron radial migration, though related lower and upper layer pairs remain uncommon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C37-C40, C76-C78, and C80 are supported by location fidelity data in Figures 4C-D and 5C-D. The differential migration patterns are consistent with known developmental biology (C76). However, the authors explicitly acknowledge uncertainty due to sparse sampling and potential chance matches (C77), and the inability to detect radial clonal units may reflect sampling limitations rather than biological reality (C78, C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study overcame sparse single-cell methylation coverage (<5% of CpG sites) by focusing on X-chromosome fCpG sites in male individuals, where a single read can infer binary methylation state. Sites were selected based on intermediate bulk methylation (0.25-0.75) indicating polymorphism, and are predominantly intergenic (84%), suggesting neutral evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 describe the methodological rationale for barcode design. The logic is sound: X-chromosome hemizygosity in males (C15) simplifies state inference compared to diploid autosomes (C16), and intermediate bulk methylation (C17-C18) indicates single-cell heterogeneity. The intergenic location (C19, Supplementary file 1) supports neutrality, though this assumption remains untested (C52).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "f016c608-1b68-46bd-88ea-2c43ea29404b",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "fCpGs distinguish between cells more efficiently than mutations due to higher methylation replication error rates. Methylation appears to fluctuate bidirectionally (both demethylation and remethylation) rather than proceeding unidirectionally to complete demethylation, as evidenced by the absence of fully demethylated neurons and ~50% methylation in brain tumors despite many additional divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 and C89 are supported by the observation that no fully demethylated neurons were found (C48, Figures 1A, 2A) and brain tumors maintain ~50% methylation (C49, Figure 3-supplement 3). The inference of bidirectional fluctuation is consistent with prior work on fCpGs in other tissues (C89, Gabbutt et al. 2022). This complicates lineage reconstruction but can be modeled (C50, C61).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "3bc98b8a-1326-4c45-b0be-607349c56756",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The barcode interpretation relies on several untested assumptions including constant error rates, neutrality, and a fully methylated starting state. While epigenetic remodeling after differentiation could erase barcode information, the observation that neurons of the same type show a range of relatedness suggests the fCpG sites are not systematically altered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 represent an honest assessment of limitations. The authors explicitly acknowledge untested assumptions (C52) and potential confounding by post-differentiation remodeling (C53, Ciceri et al. 2024). The counter-evidence that same-type neurons show variable PWDs (C54) is logical but indirect. These limitations are appropriately disclosed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "746a438c-3978-436c-a77d-33ea4947fd5a",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study leverages established knowledge about brain development and DNA methylation, including that brain growth is largely prenatal, development follows caudal-to-rostral patterns, brainstem neurons emerge early, and DNA methylation has higher replication error rates than base replication. Tangential migration has been documented in prior sequencing studies using somatic mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12, C42, and C46 cite established knowledge from the literature (Stiles and Jernigan 2010, Fan et al. 2020, McKenna and Gagnon 2019, Finlay and Darlington 1995, Lodato et al. 2015, Breuss et al. 2022, Chung et al. 2024, Evrony et al. 2015). These provide the biological context for interpreting the barcode data and are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss the conceptual framework, validation strategy, and future applications of fCpG barcodes. They emphasize that barcodes mark ancestry rather than cell type, describe how the brain's developmental biology enables validation through 'serial sampling' of neurons that differentiated at different times, note preliminary evidence of inter-individual lineage heterogeneity, and suggest technical improvements and applications to other tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C55-C57, C81-C83, C90-C92 represent conceptual discussion and future directions. The distinction between ancestry markers and cell type classifiers (C41) is important for interpretation. The validation strategy using neurons as temporal samples (C81-C83) is a key insight. Suggestions for improvement (C90) and applications (C57, C91) are reasonable speculation. Inter-individual variation (C92, Figure 4A) is preliminary but documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "fab6df0e-9f43-4350-877e-713794380dd2",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological details for phylogenetic analysis include calculating PWDs between cell pairs with \u226530 matching fCpG sites, using IQtree with the GTR2+FO+G4 model to account for backmutation and missing data, running 1000 bootstraps with 3000 iterations for whole-brain trees and 1000 iterations for cell-type-specific trees, and interpreting PWD=0 as perfect match and PWD=0.5 as randomization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 and C65 provide clear methodological details that enable reproducibility. The choice of phylogenetic model (C61) is appropriate for binary data with backmutation. The PWD metric definition (C65) is standard. Computational resources are specified (C60). These methods are adequately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "471cb13e-0790-451c-bf05-9e10699a9ad4",
+      "content_id": "f90eda14-0a71-40c2-8629-37602d1151ed",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors suggest that lineage resolution could be improved by combining mutations and fCpGs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is a reasonable speculation for future work. Combining complementary markers (mutations with low error rates but accumulating unidirectionally, and fCpGs with high error rates but fluctuating) could provide improved resolution. This is presented as a suggestion rather than a tested result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "ae427911-2ddd-4920-934d-c2e87b7e1529",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study analyzed 15,000-21,000 single cells from three human male brains using ~31,000 X-chromosome fCpG sites as barcodes. The approach leveraged X-chromosome sites to overcome sparse single-cell methylation sequencing coverage (<5% of CpG sites), with cells having at least 500 covered fCpG sites and cell pairs sharing at least 30 common sites.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises significant concerns about data sparsity and representativeness, noting that 'methylation status is detected in only a small fraction (~500/31,000 = 1.6%) of fCpGs per cell, with only 48 common sites identified between cell pairs' and questions 'whether these fCpGs are truly representative' given the genome contains over 28 million CpG sites. Reviewer 2 also questions 'the confidence in determining methylation status (0 or 1) when a CpG site is covered by only one read' for X-chromosome sites. These methodological concerns about coverage and reliability are not adequately addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors claim that fCpG barcodes become polymorphic during development through DNA methylation replication errors, starting from a predominantly methylated progenitor state and becoming fixed when cells stop dividing. They argue these sites are neutral (predominantly intergenic) and can distinguish between thousands of cells more efficiently than mutations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 2 fundamentally challenges the conceptual foundation, stating 'DNA methylation is unstable across cell divisions and differentiation, and is hardly called barcodes' and that 'the use of \"Human Brain Barcodes\" in the title and across the whole paper lacks convincing evidence.' The reviewer emphasizes that 'barcodes should be stable in principle and not dynamic across cell generations' and that 'the unstable nature of CpG methylation would introduce significant problems in inferring the true cell lineage.' The editor notes 'the evidence supporting the claims of the author remains incomplete.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "0cf57334-01e8-4027-80c5-b73f15ef8965",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors claim barcodes start methylated and record mitotic ages, with early-appearing neurons (PN, THM) showing higher methylation and later-appearing excitatory neurons and glial cells showing lower methylation. They interpret this as a 'stopwatch-like' pattern where barcode methylation indicates when different neurons appear during development.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 challenges the interpretation, stating 'the author assumed that the early-formed brain stem would resemble progenitors better and have a higher average methylation level than the forebrain - however, this difference in DNA methylation status could well reflect cell-type-specific gene expression instead of cell lineage progression.' Reviewer 1 notes 'inconsistent or erroneous use of neurodevelopmental concepts which hinders appropriate interpretation of the results.' The alternative hypothesis of cell-type-specific methylation patterns versus developmental timing is not adequately ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "d0205416-0504-4291-8975-3fd06d261c23",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors constructed phylogenetic trees from ~1000 cells that they claim resemble caudal to rostral brain development, with sequential branching of brainstem neurons, inhibitory neurons, excitatory neurons, and hippocampal neurons. However, bootstrap support was typically less than 15%.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states 'the application to detect specific lineages is less convincing' and notes 'without addressing these problems it is challenging for a reader to come to the same conclusions as the author.' The authors themselves acknowledge 'the degree of confidence was generally low, with bootstrap branch support typically less than 15%' and that 'phylogenies are limited by sparse cell sampling and that barcodes may be similar by chance.' The low statistical confidence undermines the reliability of the inferred developmental patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "9e517634-4627-4f5d-ada9-7b2c5b57b405",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors claim inhibitory neurons show more tangential migration than excitatory neurons, with related inhibitory neuron pairs found in the same cortical region ~25% of the time versus ~50% for excitatory neurons. They interpret scattered inhibitory neurons as evidence of tangential migration from ganglionic eminences.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 questions the migration findings, asking 'how far away did the author mean for the tangential direction? Lateral dispersion is known, but it is hard to believe that the excitatory neurons travel across different brain regions.' The reviewer also asks 'how would the author interpret shared or divergent methylation for the same cell type across different brain regions?' The authors themselves acknowledge 'the extent of migration is uncertain due to sparse sampling and because barcodes can match by chance.' These limitations and alternative interpretations are not adequately addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "b370beb2-f372-4192-9231-9fd463910e2e",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors claim high lineage fidelity (>90%) for inhibitory neurons and evidence for both distinct progenitors for most inhibitory and excitatory neurons, as well as some common progenitors primarily for earlier emerging excitatory neurons. They document switching between inhibitory neuron subtypes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The authors themselves acknowledge 'the approach remains speculative due to several factors: the absence of direct experimental validation, limited experimental cell sampling, and the possibility that barcode similarities may arise by chance rather than reflecting true biological relationships.' Reviewer 2's fundamental concerns about methylation stability as a lineage marker apply to these lineage fidelity claims. Reviewer 1 notes the need for 'further elucidation' of 'biological relevance.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors claim that methylation both demethylates and remethylates (fluctuates) rather than proceeding unidirectionally, as fully demethylated neurons were not observed and brain tumors maintained ~50% methylation. They argue epigenetic remodeling does not systematically alter fCpG sites because neurons of the same type were both closely and remotely related.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 2 emphasizes that 'the unstable nature of CpG methylation would introduce significant problems in inferring the true cell lineage' and notes 'this problem is even more concerning in the last section of the results, where CpG status fluctuates in post-mitotic cells.' The claim that fluctuating methylation can still serve as a reliable lineage marker contradicts the fundamental requirement for stable inheritance. The evidence that neurons of the same type show variable relatedness could equally support the interpretation that methylation patterns are unreliable for lineage tracing.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "26b027db-cebe-4331-b6bf-80dd0b11f241",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors report average pairwise differences (PWDs) of ~0.5 between cells, with about 10 closely related cell pairs per million (PWD <0.05). They show PWDs were lowest in brainstem cells, intermediate in inhibitory neurons, and highest in excitatory neurons. Closely related pairs were more frequent within brains than between brains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges 'the correlation with cellular division and distinction of cell types appears plausible and strong.' These descriptive statistics about methylation patterns and their correlation with cell types are accepted by reviewers, though the interpretation of what these patterns mean for lineage relationships remains contested.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors suggest future improvements including combining mutations with fCpGs, targeted sequencing, and potential applications to other tissues and comparisons between individuals. They propose the brain's developmental pattern allows validation by sampling neurons that differentiated at different times.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are speculative suggestions for future work and methodological considerations. Reviewer 1 notes 'this novel application of fCpGs will allow the re-use of existing sc-MeSeq to infer additional features that were previously unavailable, once the biological relevance has been further elucidated.' The editor states the approach 'could be of broad interest to neuroscientists and developmental biologists' if clarified further. These forward-looking statements are not directly challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019",
+      "content_id": "b5876a12-f7f1-4c9a-a262-d094065f37c9",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The manuscript presents established knowledge about brain development, DNA methylation biology, and references to prior studies on tangential migration and developmental patterns. These include statements about prenatal brain growth, caudal to rostral development, and the timing of different neuron populations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature or basic biological facts. However, Reviewer 1 notes 'inconsistent or erroneous use of neurodevelopmental concepts' suggesting some of these established concepts may be misapplied in the interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2468f029-3be6-4970-847d-3847c441c628",
+      "result_id": "070210e4-04f2-4e9b-a947-f5ba7873248e"
+    },
+    {
+      "claim_id": "24230158-ce6c-4306-b654-7c65a8169569",
+      "result_id": "070210e4-04f2-4e9b-a947-f5ba7873248e"
+    },
+    {
+      "claim_id": "60d7b122-ed49-4370-b706-f46b6c212e0b",
+      "result_id": "070210e4-04f2-4e9b-a947-f5ba7873248e"
+    },
+    {
+      "claim_id": "9617c660-828b-4119-a876-23ea68895bf4",
+      "result_id": "070210e4-04f2-4e9b-a947-f5ba7873248e"
+    },
+    {
+      "claim_id": "4bd3b26b-baca-4fe3-840c-d9b7b6522cfe",
+      "result_id": "070210e4-04f2-4e9b-a947-f5ba7873248e"
+    },
+    {
+      "claim_id": "42266528-cb72-47cf-b8aa-e9518c34fef4",
+      "result_id": "070210e4-04f2-4e9b-a947-f5ba7873248e"
+    },
+    {
+      "claim_id": "fcbb0d98-7c6f-481f-9b1f-15cdc2545196",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "910a8dbd-3f3b-4dd9-955f-49da6bc221cb",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "b9e1f002-a3a3-433f-b8e3-e66de7e9c859",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "dee46678-7fd5-458c-82b2-82f38d9e1c78",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "5936ec42-4ac0-4c58-9192-28c93a8ede1a",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "7a18a4f7-ef48-4b83-b6b7-e1c6031eb832",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "9c71e94c-6a19-4c87-b82c-df7bb6634e24",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "12bf0f1b-2457-4c4c-aa69-23526c6771df",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "f6243e7d-dd69-4c94-9f7c-b903ca3412f7",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "e556ccc1-4c69-42cb-96db-2e3e4406d52f",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "fe059d07-5df6-44e3-9304-763b0d1f378f",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "5edebf22-10d2-44af-a14c-db3addc7f44e",
+      "result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f"
+    },
+    {
+      "claim_id": "2b9dfb00-9ff4-4b11-9224-f5652ad80828",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "bb2d4ffe-c71b-4727-be8b-a8e63423b203",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "f20e5485-b950-4b31-885f-c920c7d5dd75",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "ce50a71b-c9de-4649-9620-45ed9fde76f9",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "dc616fc0-a6dc-4082-bc0e-d24eb4cbb578",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "1e6d58ff-4644-447b-ad11-55fa40f792b1",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "4d894372-ff9d-4df3-9805-3a5a680912d6",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "6ac06c51-1b26-4a76-9a22-835a28f88c7c",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "a624c409-63d2-4fb8-adf0-07d4a54c810d",
+      "result_id": "cb103b96-4563-4e9a-9155-90b22934c246"
+    },
+    {
+      "claim_id": "aaa46ed3-3af5-448f-88ac-e4e91e46c661",
+      "result_id": "939c3ec8-407c-46c7-b57c-efd17b182641"
+    },
+    {
+      "claim_id": "64965c61-ccd2-4a7f-aa82-acc28db12ddc",
+      "result_id": "939c3ec8-407c-46c7-b57c-efd17b182641"
+    },
+    {
+      "claim_id": "42a4bca4-1810-4352-9c34-72067246255f",
+      "result_id": "939c3ec8-407c-46c7-b57c-efd17b182641"
+    },
+    {
+      "claim_id": "48cdc1d3-b159-4c3b-8348-a290952c4fc9",
+      "result_id": "939c3ec8-407c-46c7-b57c-efd17b182641"
+    },
+    {
+      "claim_id": "2eb0ef5c-d371-44b7-8894-0676ff2d9d09",
+      "result_id": "939c3ec8-407c-46c7-b57c-efd17b182641"
+    },
+    {
+      "claim_id": "74c23efa-3413-492e-99b0-30bbb7bf1b3b",
+      "result_id": "939c3ec8-407c-46c7-b57c-efd17b182641"
+    },
+    {
+      "claim_id": "62f5500a-b981-472c-9b0e-3ded37a5813d",
+      "result_id": "939c3ec8-407c-46c7-b57c-efd17b182641"
+    },
+    {
+      "claim_id": "ecc9edf7-cf15-4d49-96b4-8aadcd172ace",
+      "result_id": "939c3ec8-407c-46c7-b57c-efd17b182641"
+    },
+    {
+      "claim_id": "c210614f-0149-4df9-bd4d-c9900ccec225",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "13d8dbd5-8812-463d-a941-b16cbcae3a7e",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "cea1903a-beaf-40e8-ac23-9b8aef583957",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "0359bc8d-f5fb-47ee-9045-676af7fe1f29",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "8646ca56-619b-4fa5-9ac7-546b3593ea0c",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "7a8a7a91-9717-47e0-aa14-7691c803a9d5",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "795a4100-ccf7-4c29-9b35-1a73ff2f35d3",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "94566a69-987a-43af-b269-faddb2451a08",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "88ba0dc9-b40d-4460-ae47-00e96ac78f07",
+      "result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08"
+    },
+    {
+      "claim_id": "317e2115-9e4c-46df-bb4b-2a6d375a6231",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "4371f8f6-3a30-451a-8ce3-93a0ffbc496e",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "bcdf7cba-1be6-4fbd-90d4-b9b8cf02890e",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "f3a19801-6fbd-472c-a6ef-433eab700dbb",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "defd433c-c853-4fe3-aa87-2bf0c880e57d",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "13930a8e-8a92-4e0d-bbaa-7a8e5b04df1d",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "8280f8e4-0c93-4cd5-887b-2cf76b1c7a83",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "4a9b8b21-fa9e-4a57-a5ab-8434aa2dfd1f",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "f76c3e6a-602e-48d7-84ec-35c0c69e1b3d",
+      "result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b"
+    },
+    {
+      "claim_id": "1e2a4f5c-7a02-4200-a820-2cf01e10b0f5",
+      "result_id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019"
+    },
+    {
+      "claim_id": "1ac90153-30a7-4f3d-84f2-221e8158944c",
+      "result_id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019"
+    },
+    {
+      "claim_id": "a2854f17-d7ff-45c2-83c7-fd6895e4c3b9",
+      "result_id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019"
+    },
+    {
+      "claim_id": "560e5e2f-2bfc-4ce8-9c62-8b1985570b60",
+      "result_id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019"
+    },
+    {
+      "claim_id": "8adff2eb-ab81-4dca-b839-ef6f3b8ed8d5",
+      "result_id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019"
+    },
+    {
+      "claim_id": "bc8eb9be-014c-48d5-b3a9-adcbb2a780e2",
+      "result_id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019"
+    },
+    {
+      "claim_id": "7f6ba64f-6809-4fdb-b986-c9b2427abe6e",
+      "result_id": "f016c608-1b68-46bd-88ea-2c43ea29404b"
+    },
+    {
+      "claim_id": "e03c0dfa-fe4b-4783-a76f-8900de2d8a5c",
+      "result_id": "f016c608-1b68-46bd-88ea-2c43ea29404b"
+    },
+    {
+      "claim_id": "0620525e-2a18-4abc-90d7-17fdd0df1015",
+      "result_id": "f016c608-1b68-46bd-88ea-2c43ea29404b"
+    },
+    {
+      "claim_id": "d87787f6-fe1f-4ca2-a09d-c3d438640754",
+      "result_id": "f016c608-1b68-46bd-88ea-2c43ea29404b"
+    },
+    {
+      "claim_id": "6b860aee-15c6-4a84-ae92-2a4ee29795cf",
+      "result_id": "f016c608-1b68-46bd-88ea-2c43ea29404b"
+    },
+    {
+      "claim_id": "ab00c408-740b-4511-8b44-585490cf0caa",
+      "result_id": "3bc98b8a-1326-4c45-b0be-607349c56756"
+    },
+    {
+      "claim_id": "6f5db3f8-58f8-49b8-a3d3-91717579bd50",
+      "result_id": "3bc98b8a-1326-4c45-b0be-607349c56756"
+    },
+    {
+      "claim_id": "f8b15e2f-7633-4ca5-91bb-c8b1ba33b52f",
+      "result_id": "3bc98b8a-1326-4c45-b0be-607349c56756"
+    },
+    {
+      "claim_id": "0647c3ba-8475-4995-bd19-cb7705824698",
+      "result_id": "746a438c-3978-436c-a77d-33ea4947fd5a"
+    },
+    {
+      "claim_id": "81b7e859-9495-4896-8c4f-d058b02a9bb8",
+      "result_id": "746a438c-3978-436c-a77d-33ea4947fd5a"
+    },
+    {
+      "claim_id": "8548be82-073c-4f14-a35c-60a817a6b019",
+      "result_id": "746a438c-3978-436c-a77d-33ea4947fd5a"
+    },
+    {
+      "claim_id": "2510204c-c599-42c6-92a0-c592f6923c11",
+      "result_id": "746a438c-3978-436c-a77d-33ea4947fd5a"
+    },
+    {
+      "claim_id": "c939f693-b5cf-41bf-961f-fba7b5e25968",
+      "result_id": "746a438c-3978-436c-a77d-33ea4947fd5a"
+    },
+    {
+      "claim_id": "575c07a9-b7e9-4999-a099-88ddb460f920",
+      "result_id": "746a438c-3978-436c-a77d-33ea4947fd5a"
+    },
+    {
+      "claim_id": "2b6d1587-5776-4a10-b3e6-e0a27fb86778",
+      "result_id": "746a438c-3978-436c-a77d-33ea4947fd5a"
+    },
+    {
+      "claim_id": "5ccefbe6-51e8-4e96-b5f9-e790f17ba200",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "8e704576-d2c5-4c1b-9552-23480b75e04d",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "d0a6722d-3920-4605-8b8b-240ea9f47dfb",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "b4976abe-d00a-4057-ac67-e00a5cb6a75b",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "a40f6445-0532-41c3-900f-57bae071949e",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "ef94c408-5332-4478-b815-ae42084199b9",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "6f343506-024b-4c16-bed4-d4214fad0eed",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "db271bc6-090c-4dd9-a37c-75a323347f2b",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "7cf40f92-96cf-469c-b911-58685603abda",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "b21f6263-0082-455e-8f6c-be645aeae34e",
+      "result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6"
+    },
+    {
+      "claim_id": "4be8734f-5f3f-448e-8641-9eb919648f0a",
+      "result_id": "fab6df0e-9f43-4350-877e-713794380dd2"
+    },
+    {
+      "claim_id": "782cd656-e1bf-4006-b9e1-d1d8c2a93d47",
+      "result_id": "fab6df0e-9f43-4350-877e-713794380dd2"
+    },
+    {
+      "claim_id": "6bcec37b-1fda-4a02-b398-a5506ce65e68",
+      "result_id": "fab6df0e-9f43-4350-877e-713794380dd2"
+    },
+    {
+      "claim_id": "0624e067-5250-48cb-854b-58d8088df8ef",
+      "result_id": "fab6df0e-9f43-4350-877e-713794380dd2"
+    },
+    {
+      "claim_id": "0426586f-8409-49b6-86c5-808c3a740765",
+      "result_id": "fab6df0e-9f43-4350-877e-713794380dd2"
+    },
+    {
+      "claim_id": "52d0a3ac-f562-4bdb-a5d3-bccd819eac78",
+      "result_id": "471cb13e-0790-451c-bf05-9e10699a9ad4"
+    },
+    {
+      "claim_id": "2468f029-3be6-4970-847d-3847c441c628",
+      "result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529"
+    },
+    {
+      "claim_id": "24230158-ce6c-4306-b654-7c65a8169569",
+      "result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529"
+    },
+    {
+      "claim_id": "1e2a4f5c-7a02-4200-a820-2cf01e10b0f5",
+      "result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529"
+    },
+    {
+      "claim_id": "1ac90153-30a7-4f3d-84f2-221e8158944c",
+      "result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529"
+    },
+    {
+      "claim_id": "60d7b122-ed49-4370-b706-f46b6c212e0b",
+      "result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529"
+    },
+    {
+      "claim_id": "9617c660-828b-4119-a876-23ea68895bf4",
+      "result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529"
+    },
+    {
+      "claim_id": "4bd3b26b-baca-4fe3-840c-d9b7b6522cfe",
+      "result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529"
+    },
+    {
+      "claim_id": "f20e5485-b950-4b31-885f-c920c7d5dd75",
+      "result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba"
+    },
+    {
+      "claim_id": "0647c3ba-8475-4995-bd19-cb7705824698",
+      "result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba"
+    },
+    {
+      "claim_id": "910a8dbd-3f3b-4dd9-955f-49da6bc221cb",
+      "result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba"
+    },
+    {
+      "claim_id": "bc8eb9be-014c-48d5-b3a9-adcbb2a780e2",
+      "result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba"
+    },
+    {
+      "claim_id": "7a18a4f7-ef48-4b83-b6b7-e1c6031eb832",
+      "result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba"
+    },
+    {
+      "claim_id": "5ccefbe6-51e8-4e96-b5f9-e790f17ba200",
+      "result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba"
+    },
+    {
+      "claim_id": "7f6ba64f-6809-4fdb-b986-c9b2427abe6e",
+      "result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba"
+    },
+    {
+      "claim_id": "ab00c408-740b-4511-8b44-585490cf0caa",
+      "result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba"
+    },
+    {
+      "claim_id": "fcbb0d98-7c6f-481f-9b1f-15cdc2545196",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "910a8dbd-3f3b-4dd9-955f-49da6bc221cb",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "b9e1f002-a3a3-433f-b8e3-e66de7e9c859",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "dee46678-7fd5-458c-82b2-82f38d9e1c78",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "5936ec42-4ac0-4c58-9192-28c93a8ede1a",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "12bf0f1b-2457-4c4c-aa69-23526c6771df",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "f6243e7d-dd69-4c94-9f7c-b903ca3412f7",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "e556ccc1-4c69-42cb-96db-2e3e4406d52f",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "fe059d07-5df6-44e3-9304-763b0d1f378f",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "5edebf22-10d2-44af-a14c-db3addc7f44e",
+      "result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965"
+    },
+    {
+      "claim_id": "aaa46ed3-3af5-448f-88ac-e4e91e46c661",
+      "result_id": "d0205416-0504-4291-8975-3fd06d261c23"
+    },
+    {
+      "claim_id": "64965c61-ccd2-4a7f-aa82-acc28db12ddc",
+      "result_id": "d0205416-0504-4291-8975-3fd06d261c23"
+    },
+    {
+      "claim_id": "42a4bca4-1810-4352-9c34-72067246255f",
+      "result_id": "d0205416-0504-4291-8975-3fd06d261c23"
+    },
+    {
+      "claim_id": "48cdc1d3-b159-4c3b-8348-a290952c4fc9",
+      "result_id": "d0205416-0504-4291-8975-3fd06d261c23"
+    },
+    {
+      "claim_id": "2eb0ef5c-d371-44b7-8894-0676ff2d9d09",
+      "result_id": "d0205416-0504-4291-8975-3fd06d261c23"
+    },
+    {
+      "claim_id": "74c23efa-3413-492e-99b0-30bbb7bf1b3b",
+      "result_id": "d0205416-0504-4291-8975-3fd06d261c23"
+    },
+    {
+      "claim_id": "ecc9edf7-cf15-4d49-96b4-8aadcd172ace",
+      "result_id": "d0205416-0504-4291-8975-3fd06d261c23"
+    },
+    {
+      "claim_id": "317e2115-9e4c-46df-bb4b-2a6d375a6231",
+      "result_id": "9e517634-4627-4f5d-ada9-7b2c5b57b405"
+    },
+    {
+      "claim_id": "4371f8f6-3a30-451a-8ce3-93a0ffbc496e",
+      "result_id": "9e517634-4627-4f5d-ada9-7b2c5b57b405"
+    },
+    {
+      "claim_id": "bcdf7cba-1be6-4fbd-90d4-b9b8cf02890e",
+      "result_id": "9e517634-4627-4f5d-ada9-7b2c5b57b405"
+    },
+    {
+      "claim_id": "f3a19801-6fbd-472c-a6ef-433eab700dbb",
+      "result_id": "9e517634-4627-4f5d-ada9-7b2c5b57b405"
+    },
+    {
+      "claim_id": "13930a8e-8a92-4e0d-bbaa-7a8e5b04df1d",
+      "result_id": "9e517634-4627-4f5d-ada9-7b2c5b57b405"
+    },
+    {
+      "claim_id": "8280f8e4-0c93-4cd5-887b-2cf76b1c7a83",
+      "result_id": "9e517634-4627-4f5d-ada9-7b2c5b57b405"
+    },
+    {
+      "claim_id": "c210614f-0149-4df9-bd4d-c9900ccec225",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "13d8dbd5-8812-463d-a941-b16cbcae3a7e",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "cea1903a-beaf-40e8-ac23-9b8aef583957",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "0359bc8d-f5fb-47ee-9045-676af7fe1f29",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "8646ca56-619b-4fa5-9ac7-546b3593ea0c",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "7a8a7a91-9717-47e0-aa14-7691c803a9d5",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "795a4100-ccf7-4c29-9b35-1a73ff2f35d3",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "94566a69-987a-43af-b269-faddb2451a08",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "88ba0dc9-b40d-4460-ae47-00e96ac78f07",
+      "result_id": "b370beb2-f372-4192-9231-9fd463910e2e"
+    },
+    {
+      "claim_id": "e03c0dfa-fe4b-4783-a76f-8900de2d8a5c",
+      "result_id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976"
+    },
+    {
+      "claim_id": "0620525e-2a18-4abc-90d7-17fdd0df1015",
+      "result_id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976"
+    },
+    {
+      "claim_id": "d87787f6-fe1f-4ca2-a09d-c3d438640754",
+      "result_id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976"
+    },
+    {
+      "claim_id": "6f5db3f8-58f8-49b8-a3d3-91717579bd50",
+      "result_id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976"
+    },
+    {
+      "claim_id": "f8b15e2f-7633-4ca5-91bb-c8b1ba33b52f",
+      "result_id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976"
+    },
+    {
+      "claim_id": "6b860aee-15c6-4a84-ae92-2a4ee29795cf",
+      "result_id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976"
+    },
+    {
+      "claim_id": "2b9dfb00-9ff4-4b11-9224-f5652ad80828",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "bb2d4ffe-c71b-4727-be8b-a8e63423b203",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "ce50a71b-c9de-4649-9620-45ed9fde76f9",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "dc616fc0-a6dc-4082-bc0e-d24eb4cbb578",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "1e6d58ff-4644-447b-ad11-55fa40f792b1",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "4d894372-ff9d-4df3-9805-3a5a680912d6",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "6ac06c51-1b26-4a76-9a22-835a28f88c7c",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "a624c409-63d2-4fb8-adf0-07d4a54c810d",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "058e587b-944a-47dd-93af-c16b3fe2b7e0",
+      "result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241"
+    },
+    {
+      "claim_id": "52d0a3ac-f562-4bdb-a5d3-bccd819eac78",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "8e704576-d2c5-4c1b-9552-23480b75e04d",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "b4976abe-d00a-4057-ac67-e00a5cb6a75b",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "a40f6445-0532-41c3-900f-57bae071949e",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "ef94c408-5332-4478-b815-ae42084199b9",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "6f343506-024b-4c16-bed4-d4214fad0eed",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "db271bc6-090c-4dd9-a37c-75a323347f2b",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "7cf40f92-96cf-469c-b911-58685603abda",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "b21f6263-0082-455e-8f6c-be645aeae34e",
+      "result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4"
+    },
+    {
+      "claim_id": "0647c3ba-8475-4995-bd19-cb7705824698",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "81b7e859-9495-4896-8c4f-d058b02a9bb8",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "8548be82-073c-4f14-a35c-60a817a6b019",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "2510204c-c599-42c6-92a0-c592f6923c11",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "c939f693-b5cf-41bf-961f-fba7b5e25968",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "a2854f17-d7ff-45c2-83c7-fd6895e4c3b9",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "560e5e2f-2bfc-4ce8-9c62-8b1985570b60",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "8adff2eb-ab81-4dca-b839-ef6f3b8ed8d5",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "9c71e94c-6a19-4c87-b82c-df7bb6634e24",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "575c07a9-b7e9-4999-a099-88ddb460f920",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "2b6d1587-5776-4a10-b3e6-e0a27fb86778",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "d0a6722d-3920-4605-8b8b-240ea9f47dfb",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    },
+    {
+      "claim_id": "0426586f-8409-49b6-86c5-808c3a740765",
+      "result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2ee6b3de-8988-49d7-9532-95b6b02767b5",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "b686b4f8-28fc-4e4e-baa5-0e984c021f08",
+      "peer_result_id": "b370beb2-f372-4192-9231-9fd463910e2e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C35, C36, C44, C45, C79, C85-C88) on lineage fidelity findings. Both evaluations rate as UNCERTAIN and acknowledge the speculative nature due to lack of experimental validation and sparse sampling. OpenEval notes consistency with prior analysis provides some validation, while peer review emphasizes fundamental concerns about methylation stability as a lineage marker.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "bb82cc21-a036-478d-b70e-2642f22359a6",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "939c3ec8-407c-46c7-b57c-efd17b182641",
+      "peer_result_id": "d0205416-0504-4291-8975-3fd06d261c23",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "High claim overlap (C31-C34, C73, C74, C84) on phylogenetic tree construction. Both evaluations rate as UNCERTAIN and cite the same limitation: very low bootstrap support (<15%). OpenEval emphasizes trees demonstrate feasibility despite lacking statistical confidence, while peer review states 'the application to detect specific lineages is less convincing' and questions whether readers can reach the same conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "2a95dd04-0ecc-4cf3-94c1-746f25981766",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f",
+      "peer_result_id": "0cf57334-01e8-4027-80c5-b73f15ef8965",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Strong claim overlap (C3, C13, C22-C24, C43, C67-C70) on methylation hierarchy across cell types. OpenEval rates SUPPORTED based on consistent patterns across brains matching developmental timing. Peer review rates UNCERTAIN, challenging the interpretation by proposing alternative hypothesis that methylation differences reflect cell-type-specific gene expression rather than lineage progression, which is not adequately ruled out.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "190437d2-7829-4c88-822c-8cc45016b73b",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "cb103b96-4563-4e9a-9155-90b22934c246",
+      "peer_result_id": "26b027db-cebe-4331-b6bf-80dd0b11f241",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "High claim overlap (C4, C5, C21, C27-C30, C66) on within-brain vs. between-brain PWD comparisons. OpenEval rates SUPPORTED, viewing quantitative data as evidence that low PWDs reflect biological relatedness. Peer review rates SUPPORTED, with Reviewer 1 acknowledging 'correlation with cellular division and distinction of cell types appears plausible and strong.' Both accept the descriptive statistics, though interpretation of lineage meaning differs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "f57c5e56-9a02-49cc-bf79-158b6299b90d",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "1b343f8c-5757-4a4b-94e7-94f6819fa0e6",
+      "peer_result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong claim overlap (C55, C57, C81-C83, C90-C92) on future directions and conceptual discussion. Both rate SUPPORTED. OpenEval views these as reasonable speculation and important insights. Peer review accepts these forward-looking statements, with editor noting approach 'could be of broad interest' once biological relevance is further elucidated. Neither directly challenges these speculative suggestions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "7e3becb0-f4a6-46fa-8cb2-cf9dff044c00",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "c96bb88c-22e1-46ce-bb39-fb16d7cf057b",
+      "peer_result_id": "9e517634-4627-4f5d-ada9-7b2c5b57b405",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Good claim overlap (C6, C37-C39, C76, C77) on location fidelity and migration patterns. Both rate UNCERTAIN. OpenEval notes consistency with known developmental biology but acknowledges sparse sampling and chance match concerns. Peer review questions the biological plausibility of excitatory neurons traveling across brain regions and asks how to interpret shared/divergent methylation for same cell types across regions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "04607581-0331-4e1d-9e47-ecbcd868efe1",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "070210e4-04f2-4e9b-a947-f5ba7873248e",
+      "peer_result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Good claim overlap (C1, C2, C20, C58, C63) on data acquisition and filtering methods. OpenEval rates SUPPORTED, viewing Table 1 and Methods as providing clear documentation. Peer review rates UNCERTAIN, raising significant concerns about data sparsity (only 1.6% of fCpGs detected per cell, 48 common sites between pairs), representativeness, and reliability of methylation status determination from single reads on X-chromosome.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "ab82ca74-0201-4027-bee9-886aa9ca9456",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f016c608-1b68-46bd-88ea-2c43ea29404b",
+      "peer_result_id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Moderate claim overlap (C48-C50, C89) on bidirectional methylation fluctuation. OpenEval rates SUPPORTED, viewing evidence of no fully demethylated neurons and tumor data as supporting bidirectional fluctuation that can be modeled. Peer review rates UNSUPPORTED, emphasizing that 'unstable nature of CpG methylation would introduce significant problems in inferring true cell lineage' and that fluctuating methylation contradicts fundamental requirement for stable inheritance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "55b1e744-3278-48de-8735-58e34e18f0b1",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "746a438c-3978-436c-a77d-33ea4947fd5a",
+      "peer_result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Moderate claim overlap (C8-C12, C42, C46) on established literature and developmental biology context. Both rate SUPPORTED as these represent cited knowledge from literature. However, peer review notes 'inconsistent or erroneous use of neurodevelopmental concepts' suggesting these established concepts may be misapplied in interpreting results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "b75a7b5f-d0f2-483f-b675-3a1a96481aa4",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019",
+      "peer_result_id": "ae427911-2ddd-4920-934d-c2e87b7e1529",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap (C14, C15) on X-chromosome hemizygosity rationale. OpenEval rates SUPPORTED, viewing the logic as sound for simplifying state inference. Peer review (within R1) questions 'confidence in determining methylation status (0 or 1) when a CpG site is covered by only one read' for X-chromosome sites, raising methodological concerns about reliability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "d4b98459-4775-4718-ab19-0ebc740ffc29",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "3bc98b8a-1326-4c45-b0be-607349c56756",
+      "peer_result_id": "37d25ce0-55a0-4c7b-a4f0-669fbc2ed976",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Small overlap (C53, C54) on limitations and confounding factors. OpenEval rates SUPPORTED as honest assessment of limitations, noting untested assumptions and potential post-differentiation remodeling confounds. Peer review (within R7) rates UNSUPPORTED, using these same limitations as evidence that methylation patterns are fundamentally unreliable for lineage tracing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "4d0eb618-98fd-49f4-b036-d24a623c7ce9",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ca97bc43-2a99-455d-ab0f-d7bb1f71fb5f",
+      "peer_result_id": "d2421c90-0a87-44ef-9ea0-f5f368c8a2ba",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Minimal overlap (C13, C25) but both address core conceptual validity. OpenEval rates methylation hierarchy findings SUPPORTED. Peer review rates UNSUPPORTED, fundamentally challenging the conceptual foundation: 'DNA methylation is unstable across cell divisions and differentiation, and is hardly called barcodes' and 'use of Human Brain Barcodes in the title lacks convincing evidence.' Editor notes 'evidence supporting claims remains incomplete.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "0ce98bf1-98bd-4991-9c20-796bd4fa9b8c",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "471cb13e-0790-451c-bf05-9e10699a9ad4",
+      "peer_result_id": "ecc08f1b-0fda-4f1e-93bf-c2399f8290b4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Single claim overlap (C51) on combining complementary markers. Both rate SUPPORTED. OpenEval views this as reasonable speculation for future work combining mutations and fCpGs. Peer review accepts this as forward-looking suggestion not directly challenged.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "074828de-39d7-48ed-a653-69ae11d3030c",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "fab6df0e-9f43-4350-877e-713794380dd2",
+      "peer_result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Single claim overlap (C65) on PWD metric definition. OpenEval rates SUPPORTED as standard methodology enabling reproducibility. Peer review accepts this as basic methodological fact within broader context of established knowledge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "2d7c9bea-6339-477d-947d-e47996604011",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "1b1521d4-e9bd-4202-8a53-6b2d6d0fd019",
+      "peer_result_id": "2de27d55-a8e0-41fb-aae2-8dee0c96b019",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Small overlap (C16-C18) on intermediate bulk methylation indicating heterogeneity. OpenEval rates SUPPORTED as sound methodological rationale. Peer review accepts these as basic biological facts but notes potential misapplication of neurodevelopmental concepts in interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    },
+    {
+      "id": "49ba556c-6d20-4f84-8197-bfcc712c934e",
+      "submission_id": "3c9db48e-baa2-41c6-94f9-ac5a1713ba50",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "fab6df0e-9f43-4350-877e-713794380dd2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological details (C59-C62, C65) as SUPPORTED, noting clear documentation of phylogenetic model choice, computational resources, and PWD metric definition. No corresponding focused peer review evaluation of these specific methodological claims, though methods are implicitly accepted in peer review discussions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:33:15.111920Z"
+    }
+  ]
+}

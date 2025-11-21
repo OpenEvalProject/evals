@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors constructed a phage-displayed synthetic nanobody library using DNA templates from a yeast display library (McMahon et al., 2018). The library features constant framework regions with position-specific variations in three CDRs, including CDR3 regions of varying lengths (7, 11, or 15 residues). The library achieved 2.4\u00d710^10 transformants with 10^13 phage particles per aliquot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22, C23, C26-C32, C89-C90 collectively describe the library construction methodology and results. The experimental data (transformant count, phage particle count) and design features (CDR randomization, framework conservation) are clearly documented with appropriate citations and methodological detail. The library diversity claim is directly supported by the transformant count.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C86",
+      "C87"
+    ],
+    "result": "Eight Drosophila secreted proteins (CARPB, Mip, Sgsf, Nesfatin-1, Miple1, Amn, CG9849, CG13965) were produced as antigens using S2 cells with a dual-module expression vector. The vector includes an inducible metallothionein promoter, BiP signal peptide, FLAG-tag, hIgG Fc domain for purification, and a GFP-T2A-PuroR cassette for selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40, C86-C87 describe the antigen production system with clear methodological detail. The vector design is well-documented with rationale for each component (inducible promoter to prevent toxicity, signal peptide for secretion, tags for detection/purification). The experimental protocol is described in sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C88"
+    ],
+    "result": "Phage display screening identified nanobodies against five of eight target antigens: 5 for CARPB, 7 for Nesfatin-1, 2 for Mip, 1 for CG9849, and 2 for Amn. ELISA signals increased after 2-3 rounds of selection, with CARPB and Nesfatin-1 showing specific signals even in polyclonal populations. Selection stringency was increased across rounds by reducing antigen amounts and increasing wash cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50, C88 describe the screening results with quantitative data shown in figures. The progressive enrichment is demonstrated by ELISA (C42), and specific binding is validated by comparison to negative control (mCherry-hIgG). The identification of multiple nanobodies for 5/8 antigens supports the versatility claim (C50), though the 62.5% success rate is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C76",
+      "C77"
+    ],
+    "result": "The screening failed to identify nanobodies against three antigens (Sgsf, Miple1, CG13965), indicating limitations of the current library and screening platform that require further improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C76-C77 honestly report negative results. The 62.5% success rate (5/8 antigens) is clearly documented, and the authors appropriately acknowledge this as a limitation requiring further optimization. This transparent reporting strengthens the overall credibility of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C83",
+      "C84",
+      "C85",
+      "C92"
+    ],
+    "result": "AlphaFold-Multimer predictions of the CARPB-NbCARPB-1H complex showed high ipTM and LIS scores, with low PAE values at the interaction interface. The predicted structure revealed specific interactions between NbCARPB-1H CDRs and both N-terminal (residues 24-52) and C-terminal (residues 276-277) regions of CARPB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C83-C85, C92 describe computational structural predictions with appropriate metrics (ipTM, LIS, PAE). The methodology is properly cited and the criteria for defining contact interfaces are clearly stated (PAE <12, distance <8\u00c5). However, these are computational predictions without experimental validation (e.g., mutagenesis, crystallography), which limits confidence in the specific residue interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Four antigens (CARPB, Mip, Nesfatin-1, CG9849) were successfully displayed on cell surfaces and recognized by their corresponding nanobody-displaying phages. Purified monovalent nanobodies also recognized membrane-tethered antigens, confirming specific binding independent of multivalent presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe cell surface binding validation with appropriate negative controls (Nb.b201, Nb127D01). The demonstration that monovalent nanobodies bind (C59) is important for ruling out avidity effects from multivalent phage display. However, one antigen (Amn) failed to display on the cell surface, which is noted but not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "NbMip-4G showed specific immunostaining of enteroendocrine cells in Drosophila adult gut, consistent with known Mip expression patterns. The signal disappeared upon Mip RNAi knockdown, confirming antibody specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C62-C65 demonstrate successful application of NbMip-4G in immunostaining with appropriate validation. The consistency with prior RNA-seq data (C63, citing Guo et al., 2019) and loss of signal upon RNAi knockdown (C64-C65) provide strong evidence for specificity. This represents a key validation of the nanobodies' utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "NbMip-4G detected Mip protein in adult fly hemolymph by immunoblotting, with clear reduction in Mip mutant and RNAi knockdown samples compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 demonstrate successful application in immunoblotting with appropriate genetic controls (Mip1 mutant, RNAi knockdown). The reduction in signal in loss-of-function conditions validates specificity. This complements the immunostaining results and demonstrates versatility of the nanobody.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "AlphaFold-Multimer prediction of the Mip-NbMip-4G complex revealed that NbMip-4G primarily interacts with a helical segment of Mip (residues 42-62), with interacting residues predominantly located within the CDRs of NbMip-4G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 describe computational structural predictions for the Mip-NbMip-4G complex. While the predictions are consistent with expected CDR-mediated binding, these remain computational models without experimental structural validation. The functional validation (immunostaining, immunoblotting) provides indirect support but does not confirm the specific residue interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The phage display library has 100-fold higher diversity than the yeast display library (10^10 vs 10^8), potentially increasing the likelihood of identifying high-affinity binders. The phage screening platform offers simpler selection steps and faster turnaround compared to yeast display, making it a more cost-effective solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 compare the phage and yeast platforms. The diversity comparison (C70) is supported by experimental data (2.4\u00d710^10 transformants). The operational advantages (C72-C73) are reasonable inferences based on the elimination of MACS/FACS requirements. However, the claim that higher diversity 'potentially increases' high-affinity binder identification (C71) remains speculative without direct comparison data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Some identified nanobodies (e.g., Nesfatin-1 nanobodies) only showed binding in ELISA but failed to recognize membrane-tethered antigens, possibly due to low affinity. Further optimization through increased library diversity, improved screening strategy, antigen quality improvement, or affinity maturation might increase success rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80 acknowledge limitations and propose potential improvements. While the observation that some nanobodies only work in ELISA (C79) is supported by data, the explanations (low affinity) and proposed solutions (C78, C80) are speculative. These represent reasonable hypotheses for future work but lack experimental validation in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C75"
+    ],
+    "result": "The phage-displayed synthetic library has been made openly available for non-profit use to democratize access and address limited accessibility to high-quality synthetic libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C75 state that the library is openly available for non-profit use. This is clearly stated in both the abstract and discussion. While the actual mechanism for distribution is not detailed in the manuscript, the commitment to open access is explicit and represents an important contribution to the field.",
+    "result_type": "MAJOR"
+  }
+]

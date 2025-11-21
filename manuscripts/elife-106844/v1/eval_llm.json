@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes that current PROTAC development relies predominantly on two E3 ligases (VHL and CRBN), while other reported E3 ligases have limitations including poorly understood mechanisms and incomplete target degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by appropriate citations to the literature (Buckley et al., 2012; Winter et al., 2015; Ishida and Ciulli, 2021). These claims establish the scientific context and motivation for the study, representing accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "KLHDC2 is characterized as a promising E3 ligase for PROTAC development based on its role in the C-end degron pathway, high-affinity binding to SelK peptide (Kd <10 nM), favorable performance in unbiased screens, and demonstrated utility in peptide-based PROTACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 are well-supported by multiple citations to prior work (B\u00e9k\u00e9s et al., 2022; Pilcher et al., 2025; Rusnac et al., 2018; Poirson et al., 2024; R\u00f6th et al., 2023; Kim et al., 2023). These claims accurately represent established knowledge about KLHDC2 and provide strong rationale for targeting this E3 ligase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A fluorescence polarization assay was developed and optimized for high-throughput screening, achieving a TAMRA-SelK peptide Kd of 25 nM for KLHDC2, with unlabeled peptide IC50 of 55 nM, and robust Z' values (0.81 in 384-well, 0.61 in 1536-well format).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by experimental data shown in Figures 1B-E. The Z' values (0.81 and 0.61) indicate acceptable to excellent assay quality for high-throughput screening. The modest shift in Kd from literature (3.4 nM to 25 nM) is reasonable given the TAMRA label addition and is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "High-throughput screening of 354,274 compounds yielded approximately 14,000 primary hits, which were triaged to 51 dose-responsive compounds, ultimately identifying four validated hit compounds with IC50 values in the single-digit micromolar range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by the screening funnel shown in Figure 1G and described in the methods. The attrition from ~14,000 to 51 to 4 compounds represents appropriate stringency. However, the manuscript lacks detail on the criteria used for compound attrition (removal of fluorophores and quenchers), which could affect reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A KEAP1-based counter-screen was established using a TAMRA-NRF2 peptide (Kd = 22 nM), validated with KI-696 (IC50 = 6 nM), and demonstrated specificity by showing no inhibition by SelK peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by experimental data in Figure 1\u2014figure supplement 1 and Figure 1C. The counter-screen is well-designed to control for nonspecific Kelch domain binders. The lack of cross-reactivity between SelK peptide and KEAP1 validates the specificity of the primary assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Four hit compounds were characterized: compounds 1 and 2 (tetrahydroquinoline scaffold) with IC50 values of 2.5 \u00b5M and 1.3 \u00b5M, and compounds 3 and 4 (imidazopyridines) with IC50 values of 3.6 \u00b5M and 2.8 \u00b5M. All four showed selectivity for KLHDC2 over KEAP1 (<20 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by experimental data in Figures 2C-D and Figure 2\u2014figure supplement 1. The IC50 values are in the expected range for screening hits. The selectivity data (>20 \u00b5M for KEAP1) demonstrates specificity, though the manuscript would benefit from testing at higher concentrations to establish true selectivity windows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Surface plasmon resonance confirmed direct binding of compounds 1 and 2 to KLHDC2 with Kd values of 810 nM and 440 nM respectively, while compounds 3 and 4 did not provide robust SPR signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by SPR data in Figures 2E-F. The orthogonal validation by SPR strengthens confidence in the FP results. The failure of compounds 3 and 4 to show SPR signals is acknowledged but not fully explained, representing a limitation in understanding their binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Structure-activity relationship studies of 53 tetrahydroquinoline analogs identified compounds 5 and 6 with improved potency (IC50 = 760 nM and 670 nM; Kd = 380 nM and 160 nM), achieved through substitution with trifluoromethyl or trifluoromethoxy groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by experimental data in Figure 3. The SAR approach is systematic and the improvements in potency (approximately 2-8 fold) are meaningful. Both FP and SPR data converge to support the improved binding affinity. The selectivity over KEAP1 is maintained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C68",
+      "C69"
+    ],
+    "result": "Computational docking studies predict that compound 6 binds to a lipophilic region of the SelK binding pocket, making an H-bond with Arg189, but not interacting with the diglycine-recognizing residues Arg236/Arg241, with the trifluoromethoxy group oriented toward solvent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C47 are based solely on computational docking (AutoDock Vina) without experimental validation. While the predicted binding mode is plausible and the solvent-exposed trifluoromethoxy provides a rational PROTAC design strategy, the lack of structural validation (e.g., co-crystal structure, mutagenesis) means this remains speculative. The surprising lack of interaction with Arg236/Arg241 requires experimental confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Three PROTAC molecules (7, 8, 9) were synthesized using JQ1 as the BRD4 ligand. Compound 8 showed potent BRD4 degradation (DC50 = 164 nM at 4h, 80 nM at 24h) with sustained activity, outperforming compound 7 (DC50 = 2.6 \u00b5M at 4h) and the inactive compound 9, and showing different kinetics compared to dBET1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 are supported by experimental data in Figures 4C-D using the HiBiT-BRD4 assay. The structure-activity relationship across linker geometries is clear, with the semi-rigid linker of compound 8 showing optimal performance. The comparison with dBET1 is informative, though the loss of dBET1 activity at 24h is unusual and unexplained. Technical replicates (n=3) are noted but biological replicates are not specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Compound 8 degraded endogenous BRD4 in SK-BR-3 cells (>60% at 100 nM, 94% at 10 \u00b5M after 24h), with degradation partially rescued by proteasome inhibitor MG-132, confirming a proteasome-mediated mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by western blot data in Figure 4E. The dose-dependent degradation of endogenous BRD4 validates the HiBiT results in a more physiologically relevant context. The MG-132 rescue experiment (29% remaining vs 4% in DMSO) provides mechanistic validation, though complete rescue would strengthen the conclusion. The manuscript lacks information on biological replicates for this experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The authors claim this is the first demonstration of discovering a noncovalent, PROTAC-compatible E3 ligase ligand through affinity-based high-throughput screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 represents a priority claim that cannot be fully evaluated without comprehensive literature review. While the approach appears novel, the statement 'to our knowledge' indicates the authors have not conducted exhaustive prior art searches. The novelty claim would be strengthened by more explicit comparison with previous E3 ligand discovery methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The binding mode of compound 6 is proposed to differ from computationally designed KLHDC2 ligands reported by other groups, which engage the diglycine recognition motif deep within the SelK binding pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 compare the predicted binding mode to other computational designs (Scott et al., 2024; Zhou et al., 2024; Hickey et al., 2024). However, without experimental structural validation of compound 6's binding mode, this comparison remains speculative. The distinction could be important for understanding different approaches to KLHDC2 targeting but requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Linker geometry is critical for PROTAC activity, with the semi-rigid linker of compound 8 considerably outperforming flexible (compound 7) and rigid (compound 9) designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the comparative degradation data for compounds 7, 8, and 9 (Figures 4C-D). The structure-activity relationship across linker types is clear and consistent with general PROTAC design principles. However, only three linker designs were tested, limiting the generalizability of conclusions about optimal linker geometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors speculate that an expanded repertoire of E3 ligands could enable degradation of broader protein targets, provide subcellular/tissue specificity, and overcome resistance mutations in current E3 ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 represent reasonable speculation about the potential benefits of expanding the E3 ligase toolkit, consistent with general principles in the field. These are appropriately framed as speculative ('would likely') and represent logical extensions of the work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The manuscript describes methodological details including library composition (354,274 compounds from four sources), protein expression systems (GST-KLHDC2 in Sf9 cells, KEAP1 in E. coli), and cell line authentication (STR profiling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 describe methodological details that are adequately documented in the Materials and Methods section. The use of STR profiling for cell line authentication is appropriate. The protein expression and purification methods are standard and sufficiently detailed for reproduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript provides background on PROTACs as heterobifunctional molecules that induce proximity-based ubiquitination and degradation, with clinical success in targeting challenging proteins like estrogen and androgen receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 represent well-established background knowledge appropriately cited (Sakamoto et al., 2001; B\u00e9k\u00e9s et al., 2022; Teng and Gray, 2023; Berkley et al., 2025). These claims provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The tetrahydroquinoline scaffold binds KLHDC2 in a manner consistent with competing for the SelK recognition pocket, providing a novel scaffold for KLHDC2 targeting with potential utility as chemical probes and for therapeutic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by the competitive FP and SPR data. Claims C83-C84 represent reasonable conclusions based on the demonstrated PROTAC activity. Claim C85 appropriately summarizes the contribution. However, the competitive binding mechanism is inferred rather than directly demonstrated (e.g., through co-crystal structures or mutagenesis studies).",
+    "result_type": "MAJOR"
+  }
+]

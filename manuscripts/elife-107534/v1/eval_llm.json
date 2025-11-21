@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors characterize the temporal sequence and cellular dynamics of leg regeneration in Parhyale hawaiensis through continuous live imaging. Regeneration proceeds through distinct phases: wound closure with scab formation (0-24 hpa), epithelial migration and detachment (1-3.5 days), cell proliferation and morphogenesis with podomere boundary formation, and late-stage differentiation. The timing varies (3-10 days total), with variation primarily in the early wound closure phase, and systemic factors appear to influence regeneration speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 collectively describe a comprehensive temporal characterization of leg regeneration supported by extensive live imaging data (Figures 2-4, Videos 1-2). The sequential phases are well-documented with specific timing, the variation in regeneration speed is quantified (Figure 3), and the correlation between early phase duration and overall speed is demonstrated (C20, Figure 3\u2014figure supplement 1). The observations are internally consistent and supported by multiple independent recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Apoptosis occurs during regeneration, visualized as bright pyknotic nuclei that fragment and are engulfed by phagocytes. This occurs both in live-imaged legs and in control legs not subjected to imaging, indicating it is a natural part of regeneration rather than solely photodamage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 demonstrate that apoptosis is a feature of normal regeneration. C24 describes the morphological appearance in live imaging (Figure 2F), while C25 provides critical control data (Figure 2\u2014figure supplement 2) showing apoptosis in non-imaged legs, ruling out photodamage as the sole cause. The quantification in Figure 2\u2014figure supplement 2 strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C48",
+      "C107",
+      "C108"
+    ],
+    "result": "Cell tracking efficiency is depth-dependent, with high confidence tracking in the upper 30 \u03bcm but reduced performance in deeper tissue layers. This limitation is due to poor image quality at depth, exacerbated by constraints on light exposure needed to minimize photodamage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C48 describe the depth-dependent tracking limitation, supported by data in Figure 5. Claims C107-C108 provide mechanistic explanation for this limitation. The characterization is honest about technical constraints and is supported by quantitative assessment of tracking performance at different depths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Optimization of imaging parameters reveals that improving z-resolution (at the expense of xy resolution or image quality) is the preferred strategy when considering proofreading effort. Doubling z-resolution improves detection especially in deeper layers, while doubling temporal resolution improves linking but requires substantially more proofreading. Deconvolution and denoising did not improve tracking performance under tested conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C115-C119 present a systematic optimization study with clear methodology (Table 1A, 1B). The analysis appropriately balances multiple metrics (detection, linking, proofreading effort) and acknowledges trade-offs. The conclusion that z-resolution improvement is optimal for practical use (C28) is well-justified by the data. The negative result for deconvolution/denoising (C30) is appropriately reported with the caveat 'under the settings tested.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors developed a method to combine live imaging with post-hoc immunostaining and hybridization chain reaction (HCR) in situ hybridization to identify cell types in regenerated legs. The HCR method overcomes the cuticular permeability barrier that prevented conventional in situ hybridization in adult legs, representing the first successful application of in situ hybridization in this tissue. Stained cells can be identified in live recordings and tracked backward in time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 describe a significant methodological advance. The technical challenge (C34) and previous partial solution (C35) provide context. The adaptation of HCR (C36-C37) is demonstrated with specific markers (Figure 6\u2014figure supplement 1), and the novelty is clearly stated (C38). The integration with live imaging (C39, Figure 6A, A') enables retrospective cell fate determination (C40), which is a key capability for lineage analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "As proof-of-principle for combined live imaging and HCR, the authors tracked the origins of spineless-expressing cells in the distal carpus. These cells originate from widely dispersed epidermal progenitors that undergo 0-2 divisions and generate mostly spineless-expressing progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 demonstrate the integrated method's utility. C41 provides comparative context from Drosophila, C42 shows similar expression pattern in Parhyale (Figure 7\u2014figure supplement 1), and C43-C44 present lineage analysis results (Figure 7, Figure 7\u2014figure supplement 1). The data directly support the claims about progenitor distribution and division patterns, validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The imaging method has good survival rates: approximately 85% of animals survive the mounting and imaging procedure, and 80% of imaged legs regenerate normally, with 20% showing damage or arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide quantitative assessment of method success rates with specific numbers (18/21 animals survive; 30/37 legs regenerate normally). These data are essential for evaluating the method's practicality and demonstrate that the approach is viable despite the long imaging duration and light exposure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors present an integrated method for studying leg regeneration comprising: (1) long-term live imaging optimized to minimize photodamage while maintaining cellular resolution, (2) post-imaging fixation and in situ staining for cell fate identification, and (3) computer-assisted cell tracking to determine lineages. This extends previous work by imaging the entire regeneration process and integrating in situ staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C86-C87 describe the overall methodological contribution. The three components are each demonstrated in the manuscript: live imaging (Figures 2-3, Videos 1-2), in situ staining (Figures 6-7), and cell tracking (Figures 5, 7). The optimization for photodamage vs. tracking efficiency is systematically addressed (Table 1). The extension beyond previous work (C86-C87) is clearly articulated and demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "A 'backtracking' function was added to the Elephant cell tracking software, allowing users to select cells of interest and obtain predictions on their progenitors moving backward in time. This is particularly useful when cells can be identified by molecular markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe a specific software enhancement that addresses the practical challenge of tracking in large datasets (C109-C110). The functionality is clearly described and its utility is demonstrated in the spineless lineage analysis (C43-C44, Figure 7). The implementation is documented in the Methods and code is made available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Parhyale hawaiensis enables imaging the entire process of leg regeneration at single-cell resolution, providing unique opportunities to identify progenitors, their commitment, locations, division patterns, and behaviors. Combined with embryonic leg imaging, it allows comparison of regeneration and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 summarize the system's capabilities demonstrated throughout the manuscript. C45 is supported by the complete imaging datasets (Figures 2-3, Videos 1-2), C46 is demonstrated by the spineless lineage analysis (Figure 7), and C47 references previous embryonic imaging work (Wolff et al., 2018) to highlight comparative potential. These are appropriate summary statements of demonstrated and potential capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Image quality could be improved with higher numerical aperture objectives, stronger signals, and longer exposures, but these come with trade-offs in photodamage. Light-sheet microscopy would be preferable but is incompatible with the current mounting method. The described confocal method is currently the most robust approach for Parhyale leg regeneration imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 provide balanced discussion of limitations and alternatives. C49-C50 acknowledge standard imaging trade-offs, C51-C52 identify an ideal alternative (light-sheet) but explain the technical incompatibility, and C53 appropriately concludes that the current method is optimal given constraints. This is honest assessment of methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "There is currently a lack of fluorescent markers for identifying cell types during live imaging. Until such markers are developed, the in situ labeling approaches provide an efficient alternative for identifying cell fates at the end of imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 identify a current limitation and the workaround solution. This is an honest acknowledgment that the method requires post-hoc identification rather than real-time cell type visualization. The in situ approach (C31-C40) is presented as a practical interim solution, which is reasonable given the demonstrated success with HCR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Live imaging of regeneration faces unique challenges compared to embryonic development: adult animals are mobile and require food/respiration (limiting anaesthesia), regeneration takes days-weeks (increasing photodamage risk), and larger specimen size constrains mounting and imaging. Previous approaches in other systems used either short-term anaesthesia (<1 day) or intermittent imaging (12-24h intervals), each with limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C65-C79 provide comprehensive context for the technical challenges, supported by extensive citations to prior work. These claims establish why the Parhyale system and the developed method represent advances over existing approaches. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Parhyale hawaiensis has emerged as a promising regeneration model system. Its key advantage for live imaging is the ability to immobilize regenerating legs for long periods without anaesthesia by gluing the transparent, sturdy chitinous exoskeleton to a coverslip. Previous work achieved 2-3 day continuous imaging of key regeneration events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 establish the system's advantages and prior achievements, all supported by appropriate citations. C81-C84 explain the unique feature (cuticle as both immobilization device and imaging window) that enables the approach. C85 provides context for the current work's extension beyond previous 2-3 day imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study objectives are to image entire leg regeneration with sufficient resolution for 3D cell tracking, determine cell identities and molecular signatures, and ultimately enable identification of progenitors for each cell type with complete genealogies and characterization of molecular transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 clearly state the study's goals. C88-C89 describe immediate objectives that are achieved in the manuscript (demonstrated by the imaging data and spineless lineage analysis). C90 appropriately frames the long-term goal that this work enables but does not fully achieve. This is honest framing of current achievements vs. future potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Leg regeneration in adult Parhyale takes 3-10 days. Previous work showed 20-minute intervals are sufficient for tracking, requiring ~360 image stacks over 5 days for complete recording. The major challenge is balancing spatial/temporal resolution needs against photodamage, as increased resolution improves tracking but increases light exposure and tissue damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 establish the imaging requirements and core challenge. C91-C92 are supported by citations to prior work, C93 is a straightforward calculation, and C94-C95 articulate the fundamental trade-off that motivates the optimization study (Table 1). These provide clear rationale for the methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The imaging approach uses confocal microscopy (widely established and stable for long-term 3D acquisition) on transgenic animals expressing H2B-mRFPruby under heat-shock control. To minimize photodamage, long-wavelength excitation is used, high-fluorescence individuals are selected, and laser power is minimized. Heat shocks induce/maintain fluorescence. Optimized scanning parameters (2.06 \u03bcs/pixel with 2\u00d7 averaging or 1.03 \u03bcs/pixel with 4\u00d7 averaging) provide sufficient image quality for tracking. Most animals regenerate in 5-10 days under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C106 describe the detailed imaging methodology. The choices are well-justified: confocal for stability (C96-C97), H2B-mRFPruby for long-wavelength imaging (C98-C99), heat-shock for inducible expression (C100-C101), and optimized scanning parameters determined empirically (C104, Figure 2\u2014figure supplement 1). The regeneration timing (C105) is consistent with earlier claims (C18-C19, Figure 3). The methodology is thoroughly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Complete regeneration datasets are large (15-30 z-slices \u00d7 300-700 timepoints \u2248 10,000 images), making manual tracking and proofreading very laborious. The initial Elephant implementation generated predictions over entire stacks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 quantify the data scale challenge that motivates the backtracking function (C112-C114). The numbers are consistent with the described imaging parameters (C104-C105) and provide clear justification for computational assistance and the focused backtracking approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C90"
+    ],
+    "result": "Combined with appropriate cell-type-specific markers, the method may enable description of cell lineages for every regenerated cell type in the limb, including identification of progenitors, complete genealogies, and molecular/cell state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64 and C90 describe potential future capabilities. While the method demonstrates proof-of-principle with spineless (C41-C44), achieving comprehensive lineage mapping for all cell types requires: (1) developing markers for all ~15 cell types (C33), (2) tracking cells throughout the entire tissue volume (currently limited in deeper layers, C27, C48), and (3) extensive data collection and analysis. The potential is plausible given the demonstrated capabilities, but significant additional work is required. The use of 'may' (C64) appropriately indicates this is prospective.",
+    "result_type": "MAJOR"
+  }
+]

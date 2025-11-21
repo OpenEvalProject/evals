@@ -1,0 +1,2793 @@
+{
+  "submission": {
+    "id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:32:48.246226Z",
+    "updated_at": "2025-11-21T16:32:48.246226Z"
+  },
+  "content": [
+    {
+      "id": "b55d81f1-408e-42e6-857a-113306041074",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "content_type": "manuscript",
+      "content_text": "# PA28\u03b3 promotes the malignant progression of tumor by elevating mitochondrial function via C1QBP\n\n## Authors\n\n- Jiongke Wang<sup>1</sup> ([ORCID: 0000-0003-0326-6376](https://orcid.org/0000-0003-0326-6376))\n- Yujie Shi<sup>1</sup>\n- Ying Wang<sup>1</sup>\n- Yingqiang Shen<sup>1</sup>\n- Huan Liu<sup>3</sup>\n- Silu Sun<sup>1</sup>\n- Yimei Wang<sup>1</sup>\n- Xikun Zhou<sup>3</sup> ([ORCID: 0000-0001-6768-2382](https://orcid.org/0000-0001-6768-2382))\n- Yu Zhou<sup>1</sup>\n- Xin Zeng<sup>1</sup> \u2020\n- Jing Li<sup>1</sup> ([ORCID: 0000-0001-5173-0781](https://orcid.org/0000-0001-5173-0781)) \u2020\n- Qianming Chen<sup>1</sup>\n\n### Affiliations\n\n1. State Key Laboratory of Oral Diseases & National Center for Stomatology & National Clinical Research Center for Oral Diseases & Research Unit of Oral Carcinogenesis and Management & Chinese Academy of Medical Sciences, West China Hospital of Stomatology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))\n2. Department of Stomatology, The First Affiliated Hospital with Nanjing Medical University Nanjing China ([ROR:04py1g812](https://ror.org/04py1g812))\n3. State Key Laboratory of Biotherapy and Cancer Center, West China Hospital, Sichuan University and Collaborative Innovation Center for Biotherapy Chengdu China ([ROR:007mrxy13](https://ror.org/007mrxy13))\n\n\u2020 Corresponding author\n\n## Abstract\n\nProteasome activator 28\u03b3 (PA28\u03b3) plays a critical role in malignant progression of various tumors, however, its role and regulation are not well understood. Here, using oral squamous cell carcinoma (OSCC) as the main research model, and combining co-immunoprecipitation (Co-IP), proximity ligation assays (PLA), AlphaFold 3-based molecular docking, and truncation constructs, we discovered that PA28\u03b3 interacted with complement 1q binding protein (C1QBP). This interaction is dependent on the C1QBP N-terminus (aa 1\u2013167) rather than the known functional domain. Point mutation in C1QBP (T76A/G78N) disrupting predicted hydrogen bonding with PA28\u03b3-D177 significantly reduced their binding. Notably, we found that PA28\u03b3 enhances C1QBP protein stability in OSCC. Functionally, PA28\u03b3 and C1QBP co-localized in mitochondria, promoting fusion (via upregulation of OPA1, MFN1/2), respiratory complex expression, oxidative phosphorylation (OXPHOS), ATP production, and ROS generation. Crucially, PA28\u03b3-enhanced OSCC cell migration, invasion, and proliferation in vitro were dependent on C1QBP. In vivo, orthotopic OSCC models showed Pa28\u03b3 overexpression increased tumor growth and elevated C1qbp levels, correlating with elevated ATP and ROS. Using transgenic Psme3-/- mice and subcutaneous tumor grafts, we confirmed that silencing of Pa28\u03b3 suppresses tumor growth, reduces C1qbp levels, and dampens mitochondrial metabolism\u2014specifically in knockout hosts. Clinically, PA28\u03b3 and C1QBP expression were positively correlated during oral carcinogenesis and in metastatic OSCC tissues across cohorts. High co-expression predicted poor prognosis in OSCC patients. Thus, PA28\u03b3 stabilizes C1QBP via N-terminal interaction to drive mitochondrial OXPHOS and tumor progression, highlighting its potential as a therapeutic target.\n\n## Introduction\n\nPA28\u03b3, also known as REG\u03b3 or PSME3, is a well-known non-ATP-dependent proteasome regulator. PA28\u03b3 is overexpressed in several malignant tumors, including thyroid, colon, and breast cancer, and is significantly associated with poor prognosis (Mao et al., 2008; Stadtmueller and Hill, 2011). By regulating the stability of key components in various complex signaling pathways, PA28\u03b3 influences the biological behavior of tumor cells. For instance, PA28\u03b3 interacts with both MDM2 and p53 proteins and facilitates their physical interaction, which promotes ubiquitination and MDM2-dependent proteasomal degradation of p53 and inhibits apoptosis after DNA damage (Zhang and Zhang, 2008). Our previous studies revealed that the expression level of PA28\u03b3 in OSCC cancer nest tissues is positively correlated with patient prognosis (Li et al., 2015; Liu et al., 2018). However, its role and regulation are not well understood.\n\nOSCC is the most common oral and maxillofacial malignant tumor (Siegel et al., 2023; Sung et al., 2021). The pathogenic factors of OSCC include smoking, alcohol consumption, and viral infections, such as human papillomavirus (HPV). Therapies for OSCC include surgery, radiotherapy, chemotherapy, and immunotherapy. Despite the rapid development of imaging, surgery, radiotherapy, and immunotherapy in recent years, along with the emphasis on personalized treatment and multidisciplinary cooperation in the treatment of OSCC, the overall survival rate of OSCC patients has not significantly improved (Peres et al., 2019). The main reasons for unsatisfactory treatment efficacy include invasion of surrounding tissue, early lymph node metastasis, and a tendency toward recurrence (Lindemann et al., 2018). Metabolic reprogramming is a crucial characteristic of tumors, closely associated with malignant behaviors such as tumor growth, invasion, metastasis, and immune escape (Ohshima and Morii, 2021). Current research on metabolic reprogramming in OSCC primarily focused on the mechanism of glycolytic metabolism and metabolic shift from glycolysis to oxidative phosphorylation (OXPHOS) of oral squamous cell carcinoma, which lays the groundwork for novel therapeutic interventions to counteract OSCC (Chen et al., 2024; Zhang et al., 2020). Understanding the molecular events that lead to the occurrence and development of OSCC can aid in developing new tumor-targeted therapies, which hold significant clinical application potential.\n\nThe complement 1q binding protein (C1QBP) is a crucial protein for maintaining mitochondrial function, particularly in mitochondrial OXPHOS (Ghebrehiwet et al., 2019; Wang et al., 2022). OXPHOS is essential for the production of adenosine triphosphate (ATP), which is necessary for tumor development. C1QBP has been shown to play a significant role in cancer progression, as influencing tumor growth, invasion, and metastasis (Bai et al., 2019; Hou et al., 2022; Vendramin et al., 2018). Due to these roles, C1QBP presents a promising therapeutic target for various tumors, including melanoma, breast cancer, and colorectal cancer (Matsumoto and Bay, 2021). In OSCC, enhanced mitochondrial OXPHOS function might also be linked to malignant tumor progression (Vyas et al., 2021; Xiao et al., 2021; Zhu et al., 2021), although the underlying mechanism remains unclear.\n\nIn this study, we discovered that PA28\u03b3 interacts with C1QBP and that PA28\u03b3 can stabilize C1QBP. This interaction enhances OXPHOS and promotes the growth, migration, and invasion of OSCC cells. Additionally, the expression of PA28\u03b3 and C1QBP is increased and positively correlated in OSCC. Therefore, PA28\u03b3 and C1QBP are potential targets for the treatment and prognosis of cancer. In our knowledge, it is the first study to describe the undiscovered role of PA28\u03b3 in promoting the malignant progression of OSCC by elevating mitochondrial function, providing new clinical insights for the treatment of OSCC.\n\n## Results\n\n### PA28\u03b3 interacts with and stabilizes C1QBP\n\nTo explore how PA28\u03b3 promotes OSCC progression, we conducted a gene\u2012gene interaction analysis using the GeneMANIA database. This analysis identified C1QBP as a significant gene within the interaction network, with the protein-coding gene of PSME3 also playing a key role in the C1QBP interaction network (Figure 1\u2014figure supplement 1A, B). Subsequently, pull-down and coimmunoprecipitation analysis demonstrated that both endogenous and exogenous PA28\u03b3 and C1QBP could bind to each other (Figure 1A, B; Figure 1\u2014figure supplement 1C, D). Moreover, proximity ligation assay (PLA) revealed a close proximity between PA28\u03b3 and C1QBP in cells, thereby suggesting a potential interaction between the two proteins (Figure 1C). Then, we developed four OSCC cell lines with stable overexpression of PA28\u03b3 using a Flag-PA28\u03b3-expressing lentivirus and observed that the protein level of C1QBP was higher in these cell lines compared to control cells (Figure 1D). Notably, PA28\u03b3 upregulated C1QBP protein levels in a dose-dependent manner (Figure 1E). To determine whether the upregulated C1QBP was due to increased stability, cells were pretreated with cycloheximide (CHX) to inhibit protein synthesis. As a result, in the presence of PA28\u03b3, C1QBP exhibited a significantly lower turnover rate compared to the control group (Figure 1F). In addition, PA28\u03b3 stabilized C1QBP in the absence and presence of a proteasome inhibitor MG-132 (Figure 1\u2014figure supplement 1E), whereas the inhibitor alone did not stabilize C1QBP. Furthermore, AlphaFold 3-based structural modeling predicted that the PA28\u03b3-C1QBP interaction could be mediated by the N-terminal region of C1QBP (amino acid residues 1\u2013167), rather than the known functional domain (amino acids 168\u2013213) that bind to mitochondrial antiviral proteins (Peerschke et al., 2020; Xu et al., 2009; Figure 1\u2014figure supplement 1F-I). Results from a pull-down analysis of the PA28\u03b3 interaction with full-length and truncated C1QBP proteins are consistent with this prediction (Figure 1G-I). In addition, we performed energy minimization to refine the structural model for PA28\u03b3-C1QBP complex, and used the refined model to reveal potential interactions between the two proteins. The results suggest that the T76 and G78 residues in C1QBP would form hydrogen bonds with the D177 residue in PA28\u03b3 (Figure 1\u2014figure supplement 1J). Consistently, co-immunoprecipitation analysis demonstrated that mutations that would disrupt these hydrogen bonds (T76A and G78N) significantly reduced the binding of C1QBP to PA28\u03b3 (Figure 1J). Therefore, our results illustrated that PA28\u03b3 could interact with C1QBP, in a manner dependent on the N-terminus of C1QBP, and that PA28\u03b3 could stabilize C1QBP.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig1-v1.jpg)\n\n**Figure 1.:** (A, B) The interaction between endogenous PA28\u03b3 and C1QBP in HSC-3 cells was verified via immunoprecipitation (IP). (C) Proximity ligation assay (PLA) image of UM1 cells shows the interaction between C1QBP and PA28\u03b3 in both cytoplasm and nucleus (red fluorescence, scale bar=5\u03bcm). (D) Western blot analysis of C1QBP in four oral squamous cell carcinoma (OSCC) cell lines with PA28\u03b3 overexpression. (E) Western blot analysis of C1QBP in 293T cells transfected with increasing doses of Flag-PA28\u03b3. (F) 293T cells transfected with Flag-C1QBP with or without Myc-PA28\u03b3 were treated with cycloheximide (CHX) (100 \u03bcg/ml) for the indicated periods of time. Quantification of Flag-C1QBP levels relative to tubulin levels is shown (the data are representative of one experiment with three independent biological replicates, *p<0.05). (G) Full-length C1QBP and truncation with deletion of functional domains. (H) Pull-down of 293T cells transfected with Myc-PA28\u03b3 and full-length Flag-C1QBP or truncation mutants of functional domains for 36 hr. (I) 293T cells transfected with Flag-C1QBP 94-282 with or without Myc-PA28\u03b3 were treated with CHX (100 \u03bcg/ml) for the indicated periods of time. (J) IP of 293T cells transfected with Flag-C1QBP wild-type or mutations (T76A and G78N) for 48 hr.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) The gene network of PSME3 and C1QBP in the GeneMANIA database. (C, D) The interaction between exogenous PA28\u03b3 and C1QBP in 293T cells was verified via pull-down. (E) 293T cells transfected with Vector or Flag-PA28\u03b3 were treated with MG-132 (10\u03bcM) for the indicated periods of time. (F-I) The prediction of interactions between PA28\u03b3 and truncated C1QBP with AlphaFold 3. (J) The prediction of interactions between PA28\u03b3 and C1QBP wild-type or mutations with AlphaFold 3.\n\n### PA28\u03b3 and C1QBP colocalize in mitochondria and affect mitochondrial functions\n\nTo further investigate the physical interaction between PA28\u03b3 and C1QBP, we conducted an immunofluorescence (IF) assay in two OSCC cell lines, as shown, these two proteins were colocalized in the mitochondria (Figure 2A). Remarkably, transmission electron microscopy (TEM) images revealed fewer mitochondrial vacuoles and higher mitochondrial ridge density in PA28\u03b3-overexpressing cells compared to control cells (Figure 2B, Figure 2\u2014figure supplement 1A). IF analysis also showed increased mitochondrial lengths and areas in the PA28\u03b3-overexpressing cells (Figure 2C, D). Following that, we conducted a Cell Mito Stress Test to measure the oxygen consumption rate (OCR) (Figure 2E, F). The results indicated significantly higher basal respiration, maximal OCRs, and ATP production in PA28\u03b3-overexpressing cells compared to control cells (Figure 2G-I; Figure 2\u2014figure supplement 1B-D). Considering that mitochondria are the primary site for ROS generation and that ROS play a crucial role in carcinogenesis, we measured ROS levels in OSCC cells. Consistently, ROS levels were significantly higher in PA28\u03b3-overexpressing cells (Figure 2J, Figure 2\u2014figure supplement 1E). In addition, experiments conducted in PA28\u03b3-sh OSCC cells yielded opposite results, further confirming these conclusions (Figure 2\u2014figure supplement 1F-K).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig2-v1.jpg)\n\n**Figure 2.:** (A) Confocal image of immunofluorescence (IF) in two oral squamous cell carcinoma (OSCC) cell lines (scale bar=5\u03bcm). (B) Transmission electron microscopy (TEM) images of PA28\u03b3-overexpressing and control UM1 cells (scale bar=2\u03bcm). (C) Representative confocal images of mitochondria in two OSCC cell lines (scale bar=5\u03bcm). (D) The area and mean branch length of mitochondria in two OSCC cell lines were measured by ImageJ (the data are presented as the mean \u00b1 SD of three independent experiments; **p<0.01, ***p<0.001, and ****p<0.0001). (E, F) Oxygen consumption rates (OCRs) of PA28\u03b3-overexpressing and control UM1 and HN12 cells were plotted using a Cell Mito Stress Test Kit (the data are presented as the means \u00b1 SDs of three independent experiments). (G-I) Basal OCRs, maximal OCRs, and ATP production of PA28\u03b3-overexpressing and control UM1 cells measured by the Cell Mito Stress Test (the data are presented as the means \u00b1 SDs of three independent experiments, **p<0.01). (J) ROS generation in PA28\u03b3-overexpressing and control UM1 cells (the data are presented as the means \u00b1 SDs of three independent experiments; *p<0.05).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Transmission electron microscopy (TEM) images of PA28\u03b3-overexpressing and control HN12 cells (scale bar=2\u03bcm). (B-D) Basal oxygen consumption rate (OCRs), maximal OCRs, and ATP production of PA28\u03b3-overexpressing and control HN12 cells measured by the cell Mito Stress Test (the data are presented as the means \u00b1 SDs of 3 independent experiments; ****p<0.0001). (E) ROS generation in PA28\u03b3-overexpressing and control HN12 cells (the data are presented as the means \u00b1 SDs of three independent experiments; **p<0.01). (F) Western blot analysis of PA28\u03b3-sh and control UM1 cells. (G) TEM images of PA28\u03b3-sh and control UM1 cells (scale bar=2\u03bcm). (H) OCRs of PA28\u03b3-sh and control UM1 cells were plotted using a Cell Mito Stress Test Kit (the data are presented as the means \u00b1 SDs of three independent experiments). (I-K) Basal OCRs, maximal OCRs, and ATP production of PA28\u03b3-sh and control UM1 cells measured by the Cell Mito Stress Test (the data are presented as the means \u00b1 SDs of three independent experiments; **p<0.01, ***p<0.001, and ****p<0.0001).\n\nTo demonstrate the carcinogenic abilities of PA28\u03b3 and C1QBP, we injected 4MOSC2 cells, a mouse OSCC line, with or without Pa28\u03b3 overexpression under the surface of the tongue in C57BL/6 mice (Figure 3\u2014figure supplement 1A). After 10 days of normal feeding, the tumors in the Pa28\u03b3-overexpressing groups were significantly larger than those in the control group. Furthermore, via immunohistochemical (IHC) staining revealed that PA28\u03b3 overexpression upregulates C1QBP in vivo (Figure 3A-C). Consistent with the in vitro experiments, ATP production and ROS generation were significantly increased (Figure 3D, E). Additionally, analysis of OSCC xenograft tumor tissue in nude mice revealed that PA28\u03b3\u2019s regulation of C1QBP in OSCC cells is independent of the immune system (Figure 3\u2014figure supplement 1B, C). In addition, we established stable Pa28\u03b3-silenced B16 cells, a mouse melanoma cell line, and found that the level of C1qbp protein was decreased in Pa28\u03b3-silenced B16 cells (Figure 3\u2014figure supplement 1D). Cells with or without Pa28\u03b3 silencing were grafted into the flanks of Psme3-/- and Psme3+/+ C57BL/6 mice by subcutaneous injection (Figure 3\u2014figure supplement 1E). Remarkably, the tumors derived from the silenced Pa28\u03b3 cells in Psme3-/- mice were smaller than those in the other groups (Figure 3F-H). The trend of ATP and ROS was consistent with tumor size (Figure 3I, J), and the protein levels of C1qbp in the tumors were also reduced in the Pa28\u03b3-silenced groups (Figure 3K). Collectively, these data suggest that PA28\u03b3, which co-localizes with C1QBP in mitochondria, may involve in regulating mitochondrial morphology and function.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative images of H&E staining and immunohistochemical (IHC) staining of C1qbp of tongue sections from mice (n=3, scale bar=100\u03bcm). (B) Quantification of the sectional area in tumors from the Pa28\u03b3-overexpressing and control groups (n=3; the data are presented as the means \u00b1 SDs of three samples; *p<0.05). (C) Comparison of the immunoreactive scores (IRSs) of C1qbp antibody staining in the Pa28\u03b3-overexpressing and control groups (n=3, the data are presented as the means \u00b1 SDs; *p<0.05). (D, E) Quantification of ATP production and ROS levels in tumors from the Pa28\u03b3-overexpressing and control groups (n=3; the data are presented as the means \u00b1 SDs of three samples; *p<0.05, ***p<0.001, ****p<0.0001). (F) Images of the tumors in different groups at the endpoint (n=6, scale bar=1cm). (G-J) The volume, weight, ATP, and ROS of tumors in different groups at the endpoint (n=6; the data are presented as the means \u00b1 SDs of three independent experiments; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). (K) Western blot analysis of tumors in different groups.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Diagram of an allogeneic orthotopic transplantation tumor mouse model. (B) Representative immunohistochemical (IHC) images of C1QBP antibody staining in Pa28\u03b3-overexpressing and control nude mice (n=6, scale bar=200\u03bcm). (C) immunoreactive scores (IRSs) of C1QBP antibody staining in the Pa28\u03b3-overexpressing and control nude mice (n=6, the data are presented as the means \u00b1 SDs; *p<0.05). (D) Western blot analysis of PA28\u03b3-silenced and control B16 cells. (E) Diagram of subcutaneous transplantation tumor mouse model.\n\n### PA28\u03b3 regulates mitochondrial OXPHOS by upregulating C1QBP\n\nDue to the results of targeted metabolomics analysis by mass spectrometry (Figure 4\u2014figure supplement 1A, B), it was found that PA28\u03b3 may affect the biological behavior and function of OSCC by influencing metabolism. Therefore, we explored the protein levels of the mitochondrial respiratory chain complex, C1QBP, and other mitochondrial functional proteins. We found that the levels of C1QBP, complex I and IV proteins, as well as OPA1, MFN1, and MFN2 proteins, were upregulated in PA28\u03b3-overexpressing OSCC cells (Figure 4A, B, Figure 4\u2014figure supplement 1C, D), suggesting that the effect of PA28\u03b3 on the levels of these mitochondrial fusion factors is mediated by C1QBP via a molecular mechanism that is currently unknown. These increases could be reversed by C1QBP silencing in PA28\u03b3-overexpressing OSCC cells (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig4-v1.jpg)\n\n**Figure 4.:** (A, B) Western blot analysis of PA28\u03b3-overexpressing and control UM1 and 4MOSC2 cells. (C) Western blot analysis of PA28\u03b3-overexpressing oral squamous cell carcinoma (OSCC) cells transfected with siNC or siC1QBP. (D) OCRs of C1QBP-silenced and control PA28\u03b3-overexpressing UM1 and 4MOSC2 cells (the data are presented as the means \u00b1 SDs of three independent experiments). (E-H) Cell migration, invasion and proliferation in control, C1QBP-silenced, PA28\u03b3-overexpressing and PA28\u03b3-overexpressing + C1QBP-silenced UM1 cells (scale bar=100\u03bcm, the data are presented as the means \u00b1 SDs of three independent experiments; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) Heatmap differential metabolites and KEGG enrichment analysis in the PA28\u03b3-overexpressing and control HN12 cells. (C, D) Western blot analysis of PA28\u03b3-overexpressing and control HN12 cells. (E-G) Basal oxygen consumption rates (OCRs), maximal OCRs, and ATP production of C1QBP-silenced and control PA28\u03b3-overexpressing UM1 and 4MOSC2 cells measured by the Cell Mito Stress Test (data are presented as the mean \u00b1 SD of three independent experiments, ****p<0.0001).\n\nConsistent with this, the OCRs of C1QBP-silenced PA28\u03b3-overexpressing OSCC cells were markedly lower than those of control cells (Figure 4D, Figure 4\u2014figure supplement 1E-G). Subsequently, we constructed a series of experiments to detect the biological behavior of control and PA28\u03b3-overexpressing OSCC cells with or without C1QBP silencing. C1QBP knockdown significantly attenuated the migration, invasive, and proliferation capabilities previously augmented by PA28\u03b3 overexpression (Figure 4E-H). These data suggest that PA28\u03b3 enhances mitochondrial OXPHOS function through C1QBP.\n\n### C1QBP expression was positively associated with PA28\u03b3 expression and was associated with a worse prognosis in patients with OSCC or SKCM\n\nTo determine the correlation between PA28\u03b3 and C1QBP, IHC staining was performed in the clinical cohort of oral mucosa carcinogenesis. The results showed that both C1QBP and PA28\u03b3 were notably upregulated during the progression of oral mucosa carcinogenesis (Figure 5A, B, Figure 5\u2014figure supplement 1A), and the levels of PA28\u03b3 and C1QBP were positively related (Figure 5C). Similarly, both C1QBP and PA28\u03b3 were upregulated in metastatic OSCC tissues (Figure 5D, E, Figure 5\u2014figure supplement 1B), and the levels of PA28\u03b3 and C1QBP were consistently positively correlated in OSCC cohort (Figure 5F). Notably, consistent with our previous findings on PA28\u03b3 (Li et al., 2015), C1QBP or combining PA28\u03b3 and C1QBP could be a negative predator in our multicenter OSCC clinical cohort (Figure 5G, H), TCGA HNSC database (Figure 5I, J), and TCGA SKCM database (Figure 5\u2014figure supplement 1C, D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig5-v1.jpg)\n\n**Figure 5.:** (A) Representative immunohistochemical (IHC) staining of PA28\u03b3 and C1QBP in normal (n=8), OPMD (n=13) and OSCC (n=45) samples (scale bar=200\u03bcm). (B) Comparison of the immunoreactive scores (IRSs) of C1QBP between the normal, OPMD, and OSCC groups (the data are presented as the means \u00b1 SDs; *p<0.05, **p<0.01, ****p<0.0001). (C) Spearman correlation analysis was used to test the correlation between PA28\u03b3 and C1QBP in normal, OPMD, and OSCC tissues (p<0.0001, r=0.8227). (D) Representative IHC staining of PA28\u03b3 and C1QBP in non-metastatic (n=27) and metastatic (n=18) OSCC patients (scale bar=200\u03bcm). (E) Comparison of the immunoreactive scores (IRSs) of C1QBP in the non-metastatic and metastatic OSCC groups (the data are presented as the means \u00b1 SDs; *p<0.05). (F) Spearman correlation analysis was used to test the correlation between PA28\u03b3 and C1QBP in OSCC tissues (p<0.0001, r=0.6977). (G) Kaplan\u2013Meier analysis of the protein expression of C1QBP in our multicenter OSCC clinical cohort (n=295, P=0.0480). (H) Kaplan\u2013Meier analysis of both low or high protein expression of C1QBP and PA28\u03b3 in our multicenter OSCC clinical cohort (n=295, p=0.0100). (I) Kaplan\u2013Meier analysis of the protein expression of C1QBP in The Cancer Genome Atlas (TCGA) (HNSC) database (n=259, p=0.025). (J) Kaplan\u2013Meier analysis of both low or high protein expression of C1QBP and PA28\u03b3 in TCGA HNSC database (n=259, p=0.033).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Comparison of the immunoreactive scores (IRSs) of PA28\u03b3 between the normal (n=8), OPMD (n=13), and OSCC (n=45) groups (the data are presented as the means \u00b1 SDs; *p<0.05, **p<0.01, ****p<0.0001). (B) Comparison of the IRSs of PA28\u03b3 in the nonmetastatic (n=27) and metastatic (n=18) oral squamous cell carcinoma (OSCC) groups (the data are presented as the means \u00b1 SDs; *p<0.05). (C) Kaplan\u2013Meier analysis of the protein expression of C1QBP in The Cancer Genome Atlas (TCGA) skin cutaneous melanoma (SKCM) database (n=229, p=0.061). (D) Kaplan\u2013Meier analysis of both low or high protein expression of C1QBP and PA28\u03b3 in TCGA SKCM database (n=229, p=0.047).\n\n## Discussion\n\nMetabolic reprogramming is one of the hallmarks of malignant tumors and is related to the malignant biological behavior of tumors (Faubert et al., 2020; Hanahan, 2022; Tsai et al., 2023; Xia et al., 2021). The metabolic phenotype of tumor cells differs from that of normal cells and dynamically changes during tumor progression. OSCC is a common head and neck malignancy that is still a growing global health problem (Johnson et al., 2020). The development of OSCC is a complex and multifaceted process in which metabolic reprogramming appears to be important (Liu et al., 2023). However, the mechanism of metabolic reprogramming remains unclear. Excitingly, we found the evidence that PA28\u03b3 interacts with and stabilizes C1QBP. We speculate that aberrantly accumulated C1QBP enhances the function of mitochondrial OXPHOS and leads to the production of additional ATP and ROS by activating the expression and function of OPA1, MNF1, MFN2, and mitochondrial respiratory chain complex proteins. This process results in mitochondrial fusion and malignant tumor progression (Figure 6). Our study highlights the underlying mechanism by which PA28\u03b3 participates in the regulation of OXPHOS by upregulating C1QBP in OSCC.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/101244/elife-101244-fig6-v1.jpg)\n\n**Figure 6.:** PA28\u03b3 can interact with and stabilize C1QBP, which can activate the expression and function of OPA1, MNF1, MFN2, and mitochondrial respiratory chain complex proteins, resulting in enhanced mitochondrial oxidative phosphorylation (OXPHOS), mitochondrial fusion, and malignant tumor progression.\n\nC1QBP is also called gClqR, p32, p33, and HABP1, can be distributed inside cells, on the cell surface, and can also be secreted extracellularly (Egusquiza-Alvarez and Robles-Flores, 2022). Within cells, C1QBP is primarily located in the mitochondria. The key functions of mitochondrial C1QBP include maintaining OXPHOS, supplying energy to cells, and achieving homeostasis of mitochondrial metabolism (Ghebrehiwet et al., 2019; Wang et al., 2022). C1QBP is highly expressed in cells that require a large amount of energy, such as the heart, skeletal muscle, testis, ovary, small intestine, and colon (Feichtinger et al., 2017). Sufficient energy is essential for cancer development, and C1QBP promotes malignant behaviors such as tumor invasion and metastasis by enhancing OXPHOS function in various cancers (Raschdorf et al., 2021; Wang et al., 2022). However, there are no reports on the expression and functions of C1QBP in OSCC. In our study, we found the evidence that PA28\u03b3 interacts with and stabilizes C1QBP. As a proteasome activator, PA28\u03b3 usually affects the development of tumors by regulating the stability of various important proteins. For example, PA28\u03b3 can promote the degradation of p53, p21 leading to cancer progression (Liu et al., 2010). In addition, PA28\u03b3 can also play as a non-degradome role in tumor angiogenesis. For example, PA28\u03b3 can regulate the activation of NF-\u03baB to promote the secretion of IL-6 and CCL2 in OSCC cells, thus promoting the angiogenesis of endothelial cells (Liu et al., 2018). However, the function of mitochondrial PA28\u03b3 may differ from that of nuclear PA28\u03b3 (Mao et al., 2008). Our study reveals that PA28\u03b3 interacts with C1QBP and stabilizes C1QBP at the protein level. Therefore, we speculate that the binding sites of PA28\u03b3 and C1QBP may mask the specific post-translational modification sites of C1QBP and inhibit its degradation. For example, the transcriptional coactivator p300 interacts with Smad7 by acetylating two lysine residues in its N-terminus, which stabilize Smad7 and protect it from TGF\u03b2-induced degradation (Gr\u00f6nroos et al., 2002). Overall, the specific mechanism involved in the interaction between PA28\u03b3 and C1QBP still needs further exploration.\n\nConsidering that C1QBP is a vital protein for maintaining mitochondrial metabolism (Tian et al., 2023), we further investigated the function underlying the malignant progression of OSCC through the interaction between PA28\u03b3 and C1QBP in vitro and in vivo. PA28\u03b3 and C1QBP colocalized in the mitochondria, and the stabilization of C1QBP by PA28\u03b3 enhanced mitochondrial function and OXPHOS. This enhancement is crucial for ATP production, and ATP is the primary energy currency of cellular metabolism. Therefore, PA28\u03b3\u2019s regulation of OXPHOS may impact cellular energy metabolism. PA28\u03b3 has been reported to activate the mTORC1 signaling pathway in hepatocellular carcinoma cells to promote glycolysis and inhibit OXPHOS (Yao et al., 2021). These findings contrast with our study, potentially due to organ heterogeneity or the complexity of metabolic reprogramming.\n\nIn the tissue microenvironment of oral lichen planus, a potentially malignant oral disorder, PA28\u03b3 in epithelial cells can regulate T cell differentiation (Wang et al., 2024), while PA28\u03b3 in CAFs is involved in the crosstalk between stromal cells and tumor cells (Li et al., 2024). This suggests that PA28\u03b3 may interact with the tumor immune microenvironment. Our phenotypically similar OSCC xenograft tumor models in both immunocompetent and nude mice indicate that the regulation of mitochondrial OXPHOS by PA28\u03b3 localized in tumor cell mitochondria does not entirely depend on the immune system (Wang et al., 2019).\n\nFurthermore, our study reveals that PA28\u03b3 can regulate C1QBP and influence mitochondrial morphology and function by enhancing the expression of OPA1, MFN1, MFN2, and the mitochondrial respiratory complex. Mitochondrial fusion, crucial for oxidative metabolism and cell proliferation, is regulated by MFN1, MFN2, and OPA1. The first two fuse with the outer mitochondrial membrane, while the last fuses with the inner mitochondrial membrane (Westermann, 2010). OPA1 is an essential inner mitochondrial membrane protein with multiple functions, including regulating mitochondrial fusion, cristae morphology, mtDNA stability, and interacting with the mitochondrial respiratory chain to regulate OXPHOS (Del Dotto et al., 2018).\n\nFinally, we analyzed the expression patterns and significance of PA28\u03b3 and C1QBP in a clinical cohort. PA28\u03b3 and C1QBP were negatively correlated with prognosis in the OSCC clinical cohort. Notably, some studies have shown that OXPHOS is upregulated in various tumors, with some advanced tumors preferring OXPHOS metabolically (Ohshima and Morii, 2021; Qiu et al., 2023). OXPHOS activity is associated with the recurrence of OSCC (Noh et al., 2023). Additionally, the enhancement of OXPHOS and ATP production by ROS proto-oncogene 1, which localizes to mitochondria in OSCC, promotes the OSCC invasion (Noh et al., 2023; Grimm et al., 2014). These findings are consistent with our results. Our study not only explains the mechanisms and signaling networks underlying the oncogenic potential of PA28\u03b3 but also contributes to understanding the possible mechanisms involved in OSCC metabolic reprogramming.\n\nIn summary, we found that PA28\u03b3 could interact with C1QBP and stabilize C1QBP. This enhances the function of OXPHOS, leading to increased production of ATP and ROS by increasing the expression and function of OPA1, MNF1, MFN2, and the mitochondrial respiratory chain complex. This process promotes mitochondrial fusion and malignant tumor progression. The expression of PA28\u03b3 and C1QBP was increased and positively correlated in OSCC. High expression of PA28\u03b3 and C1QBP was correlated with poor prognosis in OSCC patients, indicating that both proteins, in particular their molecular interactions, could serve as potential targets for the treatment and prognosis of OSCC.\n\n## Materials and methods\n\n### Patients and follow-up\n\nOur study included four cohorts. The first cohort included eight normal controls, 13 patients with oral potentially malignant disorder (OPMD), and 45 patients with OSCC (Appendix 1\u2014table 1). These patients visited the West China Hospital of Stomatology in 2021. The normal tissues were obtained from patients who underwent maxillofacial plastic surgery. The second cohort for survival analysis included 295 patients diagnosed with primary OSCC tumors who visited West China Hospital of Stomatology, Peking University Hospital of Stomatology, and Guangdong Provincial Stomatological Hospital from 2005 to 2009 (Appendix 1\u2014table 2). None of the patients had cancer in other organs. These patients received regular follow-up for 1\u2013133 months after the operation. The protocol of this study was approved by the ethics committee of the West China Hospital of Stomatology (Approval number: WCHSIRB-D-2020\u2013046). All patients included in the study had signed informed consent forms and agreed to use their information for academic exchange and publication while protecting their privacy. The third cohort, comprising 518 patients with head and neck squamous cell carcinoma (HNSCC), was obtained from The Cancer Genome Atlas (TCGA) database (Appendix 1\u2014table 3). The last cohort, comprising 458 patients with skin cutaneous melanoma (SKCM), was obtained from TCGA database (Appendix 1\u2014table 4).\n\n### Laboratory experiments\n\nAll animal studies were approved by the Animal Care and Use Committee for the State Key Laboratory of Oral Diseases (Approval number: WCHSIRB-D-2022\u2013032) in compliance with the Guide for the updated Animal Research: Reporting of In Vivo Experiments (ARRIVE) 2.0 guidelines. The sample size for animal experiments is estimated based on existing research and empirical data, minimizing animal use while ensuring experimental validity. Other methods are detailed in the Appendix, including cell culture and cell-related experiments, animal models, mitochondrial function detection, western blot/immunoprecipitation assays, hematoxylin and eosin (H&E) staining, and immunohistochemistry.\n\n### Statistical analysis\n\nThe data were analyzed using GraphPad Prism software version 8.0. The statistical data are expressed as the mean \u00b1 standard deviation (SD). Chi-square and Fisher exact tests, Spearman correlation tests, Wilcoxon rank-sum tests, one-way ANOVA, and Student\u2019s t-tests were used to analyze the data. The Kaplan\u2012Meier method was used for survival analysis, and the log-rank test was used to evaluate the prognostic value of C1QBP in OSCC patients. The data are shown as the mean \u00b1 standard error, and a value of p<0.05 was considered to indicate statistical significance: p<0.05*, p<0.01**, p<0.001***, and p<0.0001****. Each experiment was repeated three times.\n",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sameh Ali, Children's Cancer Hospital Egypt Egypt\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.101244.5.sa0](https://doi.org/10.7554/eLife.101244.5.sa0)\n\nThis manuscript determines how PA28g, a proteasome regulator that is overexpressed in tumors, and C1QBP, a mitochondrial protein for maintaining oxidative phosphorylation that plays a role in tumor progression, interact in tumor cells to promote their growth, migration and invasion. Additional experiments and analyses that supported the theoretical models for the interaction have been performed in response to the reviews. The overall findings and conceptual framework are important and the evidence is solid. A logical extrapolation of this work is to test the C1QBP mutants using functional assays to determine whether the mutations can decrease the protein stability mediated by the interaction with PA28g.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101244.5.sa1](https://doi.org/10.7554/eLife.101244.5.sa1)\n\nSummary:\n\nThe authors tried to determine how PA28g functions in oral squamous cell carcinoma (OSCC) cells. They hypothesized it may act through metabolic reprogramming in the mitochondria.\n\nStrengths:\n\nThey found that the genes of PA28g and C1QBP are in an overlapping interaction network after an analysis of a genome database. They also found that the two proteins interact in coimmunoprecipitation and pull-down assays using the lysate from OSCC cells with or without expression of the exogenous genes. They used truncated C1QBP proteins to map the interaction site to the N-terminal 167 residues of C1QBP protein. They observed the levels of the two proteins are positively correlated in the cells. They provided evidence for the colocalization of the two proteins in the mitochondria and the effect on mitochondrial form and function in vitro and in vivo OSCC models, and the correlation of the protein expression with the prognosis of cancer patients.\n\nComments on revision:\n\nThe third revision added data from two point mutations of C1QBP that would disrupt a hydrogen bond network with PA28g protein. As one would expect from the structural models obtained with AlphaFold, the interaction between the two proteins as detected by co-immunoprecipitation of cell lysate was reduced by both mutations. Therefore, the theoretical models for the interaction were supported by the experimental data. Moving forward, the home run experiments would be to test the C1QBP mutants in functional assays to determine whether the mutations can decrease the protein stability afforded by the interaction with PA28g, which in turn decrease the effect of PA28g on mitochondria and tumor cells via C1QBP. Success of these experiments will conclude this manuscript that presents a novel finding for tumor cell biology which could be a launch pad for therapeutic intervention of tumor development.\n",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cefa01fd-9c28-44ca-bb4d-000f96b03957",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C1",
+      "claim": "PA28\u03b3 plays a critical role in malignant progression of various tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteasome activator 28\u03b3 (PA28\u03b3) plays a critical role in malignant progression of various tumors, however, its role and regulation are not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general assertion about PA28\u03b3's role in tumors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "d05e39c8-9bc9-49c5-b904-9ae7b67a6ccc",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C2",
+      "claim": "PA28\u03b3 interacts with complement 1q binding protein (C1QBP).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using oral squamous cell carcinoma (OSCC) as the main research model, and combining co-immunoprecipitation (Co-IP), proximity ligation assays (PLA), AlphaFold 3-based molecular docking, and truncation constructs, we discovered that PA28\u03b3 interacted with complement 1q binding protein (C1QBP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The interaction is demonstrated through multiple experimental techniques including Co-IP, PLA, and molecular docking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "6d4ceb8e-1e3a-4fd0-b05b-0df2c65558ed",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C3",
+      "claim": "The PA28\u03b3-C1QBP interaction is dependent on the C1QBP N-terminus (aa 1\u2013167) rather than the known functional domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction is dependent on the C1QBP N-terminus (aa 1\u2013167) rather than the known functional domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by truncation construct experiments and AlphaFold 3 predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3ce5c96a-5897-4384-8866-87fdd494f861",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C4",
+      "claim": "Point mutation in C1QBP (T76A/G78N) disrupting predicted hydrogen bonding with PA28\u03b3-D177 significantly reduced their binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutation in C1QBP (T76A/G78N) disrupting predicted hydrogen bonding with PA28\u03b3-D177 significantly reduced their binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through co-immunoprecipitation analysis of mutant constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5483a231-f1b5-4519-92ca-f3471b3937e5",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C5",
+      "claim": "PA28\u03b3 enhances C1QBP protein stability in OSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that PA28\u03b3 enhances C1QBP protein stability in OSCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cycloheximide chase experiments showing reduced C1QBP turnover in the presence of PA28\u03b3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "9e1f614d-41e5-496c-8ed9-032de9f869d6",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C6",
+      "claim": "PA28\u03b3 and C1QBP co-localized in mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, PA28\u03b3 and C1QBP co-localized in mitochondria, promoting fusion (via upregulation of OPA1, MFN1/2), respiratory complex expression, oxidative phosphorylation (OXPHOS), ATP production, and ROS generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through immunofluorescence assays showing colocalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "d6b5c1a5-24d4-4899-8c4c-80b295dbaa66",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C7",
+      "claim": "PA28\u03b3 and C1QBP promote mitochondrial fusion via upregulation of OPA1, MFN1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, PA28\u03b3 and C1QBP co-localized in mitochondria, promoting fusion (via upregulation of OPA1, MFN1/2), respiratory complex expression, oxidative phosphorylation (OXPHOS), ATP production, and ROS generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Western blot analysis shows increased levels of OPA1, MFN1, and MFN2 in PA28\u03b3-overexpressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "8b23ab77-0508-49e8-9cf3-c6e03e15569b",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C8",
+      "claim": "PA28\u03b3 and C1QBP promote respiratory complex expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, PA28\u03b3 and C1QBP co-localized in mitochondria, promoting fusion (via upregulation of OPA1, MFN1/2), respiratory complex expression, oxidative phosphorylation (OXPHOS), ATP production, and ROS generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Western blot analysis shows increased levels of respiratory complex proteins in PA28\u03b3-overexpressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "4404721c-ba98-4145-b2d3-60be2e6cc3a2",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C9",
+      "claim": "PA28\u03b3 and C1QBP promote oxidative phosphorylation (OXPHOS).",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, PA28\u03b3 and C1QBP co-localized in mitochondria, promoting fusion (via upregulation of OPA1, MFN1/2), respiratory complex expression, oxidative phosphorylation (OXPHOS), ATP production, and ROS generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cell Mito Stress Test measurements show increased basal respiration, maximal OCR, and ATP production in PA28\u03b3-overexpressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "9002ae34-d2fd-4059-9c2c-6a1f7e532453",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C10",
+      "claim": "PA28\u03b3 and C1QBP promote ATP production.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, PA28\u03b3 and C1QBP co-localized in mitochondria, promoting fusion (via upregulation of OPA1, MFN1/2), respiratory complex expression, oxidative phosphorylation (OXPHOS), ATP production, and ROS generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ATP measurements show significantly higher levels in PA28\u03b3-overexpressing cells and tumors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "46092132-7eaf-45f8-84f3-01c7cf83ec09",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C11",
+      "claim": "PA28\u03b3 and C1QBP promote ROS generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, PA28\u03b3 and C1QBP co-localized in mitochondria, promoting fusion (via upregulation of OPA1, MFN1/2), respiratory complex expression, oxidative phosphorylation (OXPHOS), ATP production, and ROS generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ROS measurements show significantly higher levels in PA28\u03b3-overexpressing cells and tumors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "13bfc704-9675-48a5-b0de-0cf48716806a",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C12",
+      "claim": "PA28\u03b3-enhanced OSCC cell migration, invasion, and proliferation in vitro are dependent on C1QBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, PA28\u03b3-enhanced OSCC cell migration, invasion, and proliferation in vitro were dependent on C1QBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "C1QBP knockdown significantly attenuated the migration, invasive, and proliferation capabilities previously augmented by PA28\u03b3 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0ace5a89-82ac-44a7-8038-a03e8896b397",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C13",
+      "claim": "Pa28\u03b3 overexpression increased tumor growth in orthotopic OSCC models.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, orthotopic OSCC models showed Pa28\u03b3 overexpression increased tumor growth and elevated C1qbp levels, correlating with elevated ATP and ROS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Tumor size measurements and H&E staining show larger tumors in Pa28\u03b3-overexpressing groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "57862bda-2778-48b7-89f8-bcb95b9513ee",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C14",
+      "claim": "Pa28\u03b3 overexpression elevated C1qbp levels in orthotopic OSCC models.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, orthotopic OSCC models showed Pa28\u03b3 overexpression increased tumor growth and elevated C1qbp levels, correlating with elevated ATP and ROS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "IHC staining shows increased C1qbp levels in Pa28\u03b3-overexpressing tumors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3ca039b9-3871-4259-bf8f-c7ce264b2cbc",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C15",
+      "claim": "Pa28\u03b3 overexpression in orthotopic OSCC models correlates with elevated ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, orthotopic OSCC models showed Pa28\u03b3 overexpression increased tumor growth and elevated C1qbp levels, correlating with elevated ATP and ROS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ATP measurements in tumor tissues show significantly higher levels in Pa28\u03b3-overexpressing groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "1d2a5b7d-ba52-4ce5-87e3-5d8d0d38b345",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C16",
+      "claim": "Pa28\u03b3 overexpression in orthotopic OSCC models correlates with elevated ROS.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, orthotopic OSCC models showed Pa28\u03b3 overexpression increased tumor growth and elevated C1qbp levels, correlating with elevated ATP and ROS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ROS measurements in tumor tissues show significantly higher levels in Pa28\u03b3-overexpressing groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "e41f7f3f-62b8-4fd0-95be-b9d0894b63b4",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C17",
+      "claim": "Silencing of Pa28\u03b3 suppresses tumor growth in Psme3-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using transgenic Psme3-/- mice and subcutaneous tumor grafts, we confirmed that silencing of Pa28\u03b3 suppresses tumor growth, reduces C1qbp levels, and dampens mitochondrial metabolism\u2014specifically in knockout hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Tumor volume and weight measurements show smaller tumors in Pa28\u03b3-silenced groups in Psme3-/- mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0437aac5-a2dd-462b-a542-0d3686f1b695",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C18",
+      "claim": "Silencing of Pa28\u03b3 reduces C1qbp levels in Psme3-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using transgenic Psme3-/- mice and subcutaneous tumor grafts, we confirmed that silencing of Pa28\u03b3 suppresses tumor growth, reduces C1qbp levels, and dampens mitochondrial metabolism\u2014specifically in knockout hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Western blot analysis shows reduced C1qbp protein levels in Pa28\u03b3-silenced tumors in Psme3-/- mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "99240e4f-3c9d-4e08-91a2-a1f90d70046a",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C19",
+      "claim": "Silencing of Pa28\u03b3 dampens mitochondrial metabolism in Psme3-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using transgenic Psme3-/- mice and subcutaneous tumor grafts, we confirmed that silencing of Pa28\u03b3 suppresses tumor growth, reduces C1qbp levels, and dampens mitochondrial metabolism\u2014specifically in knockout hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ATP and ROS measurements show reduced levels in Pa28\u03b3-silenced tumors in Psme3-/- mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "f764220b-400f-4bc8-ba0b-a4099ad42e20",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C20",
+      "claim": "PA28\u03b3 and C1QBP expression are positively correlated during oral carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, PA28\u03b3 and C1QBP expression were positively correlated during oral carcinogenesis and in metastatic OSCC tissues across cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Spearman correlation analysis shows positive correlation (p<0.0001, r=0.8227) between PA28\u03b3 and C1QBP in normal, OPMD, and OSCC tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2af2f045-6688-4884-ad99-8f591eecdbbd",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C21",
+      "claim": "PA28\u03b3 and C1QBP expression are positively correlated in metastatic OSCC tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, PA28\u03b3 and C1QBP expression were positively correlated during oral carcinogenesis and in metastatic OSCC tissues across cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Spearman correlation analysis shows positive correlation (p<0.0001, r=0.6977) between PA28\u03b3 and C1QBP in OSCC tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "20639dfc-bb74-47bb-978d-be5bcd69dcb9",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C22",
+      "claim": "High co-expression of PA28\u03b3 and C1QBP predicted poor prognosis in OSCC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "High co-expression predicted poor prognosis in OSCC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Kaplan-Meier analysis shows that high co-expression of PA28\u03b3 and C1QBP is associated with worse survival in OSCC patients (p=0.0100).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "ec594169-0a6f-4c0b-acc1-01b315598f38",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C23",
+      "claim": "PA28\u03b3 is overexpressed in several malignant tumors, including thyroid, colon, and breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "PA28\u03b3 is overexpressed in several malignant tumors, including thyroid, colon, and breast cancer, and is significantly associated with poor prognosis (Mao et al., 2008; Stadtmueller and Hill, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "13d57c4e-dbdb-42d2-a3de-cffa486b237a",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C24",
+      "claim": "PA28\u03b3 overexpression is significantly associated with poor prognosis in several malignant tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "PA28\u03b3 is overexpressed in several malignant tumors, including thyroid, colon, and breast cancer, and is significantly associated with poor prognosis (Mao et al., 2008; Stadtmueller and Hill, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "21151057-a127-4e84-bc76-2d5f133fa10d",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C25",
+      "claim": "PA28\u03b3 interacts with both MDM2 and p53 proteins and facilitates their physical interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, PA28\u03b3 interacts with both MDM2 and p53 proteins and facilitates their physical interaction, which promotes ubiquitination and MDM2-dependent proteasomal degradation of p53 and inhibits apoptosis after DNA damage (Zhang and Zhang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "01ed8398-895c-4378-9b5e-3b4814e4a165",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C26",
+      "claim": "PA28\u03b3 promotes ubiquitination and MDM2-dependent proteasomal degradation of p53.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, PA28\u03b3 interacts with both MDM2 and p53 proteins and facilitates their physical interaction, which promotes ubiquitination and MDM2-dependent proteasomal degradation of p53 and inhibits apoptosis after DNA damage (Zhang and Zhang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "a1c1b5f1-3cee-453c-97a8-0956d38f39b5",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C27",
+      "claim": "PA28\u03b3 inhibits apoptosis after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, PA28\u03b3 interacts with both MDM2 and p53 proteins and facilitates their physical interaction, which promotes ubiquitination and MDM2-dependent proteasomal degradation of p53 and inhibits apoptosis after DNA damage (Zhang and Zhang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "beb72e56-62d5-43ce-a812-381b34d7c6f5",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C28",
+      "claim": "The expression level of PA28\u03b3 in OSCC cancer nest tissues is positively correlated with patient prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies revealed that the expression level of PA28\u03b3 in OSCC cancer nest tissues is positively correlated with patient prognosis (Li et al., 2015; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5ef9841f-8cde-4cea-a179-8094cfba4d1b",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C29",
+      "claim": "OSCC is the most common oral and maxillofacial malignant tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "OSCC is the most common oral and maxillofacial malignant tumor (Siegel et al., 2023; Sung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to epidemiological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "389431d6-af72-4bed-b26a-6794d004fb3f",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C30",
+      "claim": "The pathogenic factors of OSCC include smoking, alcohol consumption, and viral infections, such as human papillomavirus (HPV).",
+      "claim_type": "EXPLICIT",
+      "source": "The pathogenic factors of OSCC include smoking, alcohol consumption, and viral infections, such as human papillomavirus (HPV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about OSCC risk factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "d8a8295a-b76d-4128-a903-d78cd5fdfd11",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C31",
+      "claim": "Therapies for OSCC include surgery, radiotherapy, chemotherapy, and immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Therapies for OSCC include surgery, radiotherapy, chemotherapy, and immunotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about OSCC treatment modalities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "d934bc8b-5108-4fe4-913c-b2e5d0dcd045",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C32",
+      "claim": "The overall survival rate of OSCC patients has not significantly improved despite advances in treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the rapid development of imaging, surgery, radiotherapy, and immunotherapy in recent years, along with the emphasis on personalized treatment and multidisciplinary cooperation in the treatment of OSCC, the overall survival rate of OSCC patients has not significantly improved (Peres et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "22a5236a-a0e2-4477-be5e-18601e88cbe7",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C33",
+      "claim": "The main reasons for unsatisfactory treatment efficacy in OSCC include invasion of surrounding tissue, early lymph node metastasis, and a tendency toward recurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "The main reasons for unsatisfactory treatment efficacy include invasion of surrounding tissue, early lymph node metastasis, and a tendency toward recurrence (Lindemann et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "6b3228c2-b8df-48ac-89c0-316e061b29ae",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C34",
+      "claim": "Metabolic reprogramming is a crucial characteristic of tumors, closely associated with malignant behaviors such as tumor growth, invasion, metastasis, and immune escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic reprogramming is a crucial characteristic of tumors, closely associated with malignant behaviors such as tumor growth, invasion, metastasis, and immune escape (Ohshima and Morii, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "a292e485-4fb7-4b58-a8ac-3ca76eae4e42",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C35",
+      "claim": "C1QBP is a crucial protein for maintaining mitochondrial function, particularly in mitochondrial OXPHOS.",
+      "claim_type": "EXPLICIT",
+      "source": "The complement 1q binding protein (C1QBP) is a crucial protein for maintaining mitochondrial function, particularly in mitochondrial OXPHOS (Ghebrehiwet et al., 2019; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "a5a66a92-e330-4b35-a266-aa622b4e7565",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C36",
+      "claim": "OXPHOS is essential for the production of adenosine triphosphate (ATP), which is necessary for tumor development.",
+      "claim_type": "EXPLICIT",
+      "source": "OXPHOS is essential for the production of adenosine triphosphate (ATP), which is necessary for tumor development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellular metabolism and tumor biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "022f05b9-4024-45bd-9dc6-81977b5945fa",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C37",
+      "claim": "C1QBP plays a significant role in cancer progression, influencing tumor growth, invasion, and metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "C1QBP has been shown to play a significant role in cancer progression, as influencing tumor growth, invasion, and metastasis (Bai et al., 2019; Hou et al., 2022; Vendramin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "c92497b7-6212-45d5-bdbd-c4b3c4d8f2a7",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C38",
+      "claim": "C1QBP presents a promising therapeutic target for various tumors, including melanoma, breast cancer, and colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to these roles, C1QBP presents a promising therapeutic target for various tumors, including melanoma, breast cancer, and colorectal cancer (Matsumoto and Bay, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2a50bb55-99be-4765-acea-75d55473fe3a",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C39",
+      "claim": "Enhanced mitochondrial OXPHOS function might be linked to malignant tumor progression in OSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "In OSCC, enhanced mitochondrial OXPHOS function might also be linked to malignant tumor progression (Vyas et al., 2021; Xiao et al., 2021; Zhu et al., 2021), although the underlying mechanism remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0fb080c9-29c2-4cd6-aa2d-5dab956b1216",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C40",
+      "claim": "Both endogenous and exogenous PA28\u03b3 and C1QBP can bind to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, pull-down and coimmunoprecipitation analysis demonstrated that both endogenous and exogenous PA28\u03b3 and C1QBP could bind to each other (Figure 1A, B; Figure 1\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through pull-down and co-immunoprecipitation experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5ba32b02-a7d9-46d7-90b5-f0536e68f972",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C41",
+      "claim": "Proximity ligation assay revealed a close proximity between PA28\u03b3 and C1QBP in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, proximity ligation assay (PLA) revealed a close proximity between PA28\u03b3 and C1QBP in cells, thereby suggesting a potential interaction between the two proteins (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through PLA experiments shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "f3c642b3-9082-44d6-b92b-c2e40ede4f60",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C42",
+      "claim": "The protein level of C1QBP is higher in PA28\u03b3-overexpressing OSCC cell lines compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we developed four OSCC cell lines with stable overexpression of PA28\u03b3 using a Flag-PA28\u03b3-expressing lentivirus and observed that the protein level of C1QBP was higher in these cell lines compared to control cells (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Western blot analysis shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5e32f5ad-005d-4ce0-81ac-0ec21ddbac8b",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C43",
+      "claim": "PA28\u03b3 upregulates C1QBP protein levels in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, PA28\u03b3 upregulated C1QBP protein levels in a dose-dependent manner (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Western blot analysis with increasing doses of PA28\u03b3 shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "1c8ce7d9-9d3b-44ec-81d4-7e12e9250c6f",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C44",
+      "claim": "In the presence of PA28\u03b3, C1QBP exhibits a significantly lower turnover rate compared to the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether the upregulated C1QBP was due to increased stability, cells were pretreated with cycloheximide (CHX) to inhibit protein synthesis. As a result, in the presence of PA28\u03b3, C1QBP exhibited a significantly lower turnover rate compared to the control group (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through cycloheximide chase experiments shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "ac9fedd7-2a10-431a-8bee-61e77a6bf98d",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C45",
+      "claim": "PA28\u03b3 stabilizes C1QBP in the absence and presence of a proteasome inhibitor MG-132.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PA28\u03b3 stabilized C1QBP in the absence and presence of a proteasome inhibitor MG-132 (Figure 1\u2014figure supplement 1E), whereas the inhibitor alone did not stabilize C1QBP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through experiments with MG-132 treatment shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "8590fab0-e8c1-461e-88b0-c2dd39e9ca73",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C46",
+      "claim": "AlphaFold 3-based structural modeling predicted that the PA28\u03b3-C1QBP interaction could be mediated by the N-terminal region of C1QBP (amino acid residues 1\u2013167).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, AlphaFold 3-based structural modeling predicted that the PA28\u03b3-C1QBP interaction could be mediated by the N-terminal region of C1QBP (amino acid residues 1\u2013167), rather than the known functional domain (amino acids 168\u2013213) that bind to mitochondrial antiviral proteins (Peerschke et al., 2020; Xu et al., 2009; Figure 1\u2014figure supplement 1F-I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational modeling using AlphaFold 3 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "6568f39e-3293-44bb-b274-89e00bf93478",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C47",
+      "claim": "Pull-down analysis of PA28\u03b3 interaction with full-length and truncated C1QBP proteins is consistent with AlphaFold 3 predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from a pull-down analysis of the PA28\u03b3 interaction with full-length and truncated C1QBP proteins are consistent with this prediction (Figure 1G-I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through pull-down experiments with truncated constructs shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "52646933-4beb-4c0e-a8f2-0904887e36c9",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C48",
+      "claim": "The T76 and G78 residues in C1QBP form hydrogen bonds with the D177 residue in PA28\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we performed energy minimization to refine the structural model for PA28\u03b3-C1QBP complex, and used the refined model to reveal potential interactions between the two proteins. The results suggest that the T76 and G78 residues in C1QBP would form hydrogen bonds with the D177 residue in PA28\u03b3 (Figure 1\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational modeling with energy minimization shown in the figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "385b99f4-d13b-4ba0-996c-7eb996943f9b",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C49",
+      "claim": "Mutations that disrupt hydrogen bonds (T76A and G78N) significantly reduce the binding of C1QBP to PA28\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, co-immunoprecipitation analysis demonstrated that mutations that would disrupt these hydrogen bonds (T76A and G78N) significantly reduced the binding of C1QBP to PA28\u03b3 (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through co-immunoprecipitation experiments with mutant constructs shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "e41e8506-53ec-4990-b400-a16f88fbee18",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C50",
+      "claim": "PA28\u03b3-overexpressing cells have fewer mitochondrial vacuoles and higher mitochondrial ridge density compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, transmission electron microscopy (TEM) images revealed fewer mitochondrial vacuoles and higher mitochondrial ridge density in PA28\u03b3-overexpressing cells compared to control cells (Figure 2B, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through TEM imaging shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "49d1a28a-f6f1-45fb-b62a-c994600b54e3",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C51",
+      "claim": "PA28\u03b3-overexpressing cells show increased mitochondrial lengths and areas.",
+      "claim_type": "EXPLICIT",
+      "source": "IF analysis also showed increased mitochondrial lengths and areas in the PA28\u03b3-overexpressing cells (Figure 2C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunofluorescence analysis and quantification shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0f097f79-6906-4177-90c1-7a3760d4093a",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C52",
+      "claim": "PA28\u03b3-overexpressing cells have significantly higher basal respiration compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated significantly higher basal respiration, maximal OCRs, and ATP production in PA28\u03b3-overexpressing cells compared to control cells (Figure 2G-I; Figure 2\u2014figure supplement 1B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Cell Mito Stress Test measurements shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "ab1313bc-a02e-4c0c-983b-160546cd067f",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C53",
+      "claim": "PA28\u03b3-overexpressing cells have significantly higher maximal OCRs compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated significantly higher basal respiration, maximal OCRs, and ATP production in PA28\u03b3-overexpressing cells compared to control cells (Figure 2G-I; Figure 2\u2014figure supplement 1B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Cell Mito Stress Test measurements shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "6635f740-25b6-4ead-8ce6-8c40e39240a2",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C54",
+      "claim": "PA28\u03b3-overexpressing cells have significantly higher ATP production compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated significantly higher basal respiration, maximal OCRs, and ATP production in PA28\u03b3-overexpressing cells compared to control cells (Figure 2G-I; Figure 2\u2014figure supplement 1B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Cell Mito Stress Test measurements shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3ef76da9-28ef-4c95-93a7-48f303e61fb3",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C55",
+      "claim": "ROS levels are significantly higher in PA28\u03b3-overexpressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, ROS levels were significantly higher in PA28\u03b3-overexpressing cells (Figure 2J, Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through ROS measurements shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "28abcfce-20f8-40bd-ad76-c13bc92621d1",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C56",
+      "claim": "Experiments in PA28\u03b3-sh OSCC cells yielded opposite results to PA28\u03b3 overexpression experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, experiments conducted in PA28\u03b3-sh OSCC cells yielded opposite results, further confirming these conclusions (Figure 2\u2014figure supplement 1F-K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through experiments with PA28\u03b3 knockdown cells shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2071e0fa-4a9a-4666-b98d-ef145a6b2e9b",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C57",
+      "claim": "The levels of C1QBP, complex I and IV proteins, as well as OPA1, MFN1, and MFN2 proteins, are upregulated in PA28\u03b3-overexpressing OSCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the levels of C1QBP, complex I and IV proteins, as well as OPA1, MFN1, and MFN2 proteins, were upregulated in PA28\u03b3-overexpressing OSCC cells (Figure 4A, B, Figure 4\u2014figure supplement 1C, D), suggesting that the effect of PA28\u03b3 on the levels of these mitochondrial fusion factors is mediated by C1QBP via a molecular mechanism that is currently unknown.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Western blot analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2c9b86c5-c4be-4e5c-a107-e5e0675e27e6",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C58",
+      "claim": "The effect of PA28\u03b3 on the levels of mitochondrial fusion factors is mediated by C1QBP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the levels of C1QBP, complex I and IV proteins, as well as OPA1, MFN1, and MFN2 proteins, were upregulated in PA28\u03b3-overexpressing OSCC cells (Figure 4A, B, Figure 4\u2014figure supplement 1C, D), suggesting that the effect of PA28\u03b3 on the levels of these mitochondrial fusion factors is mediated by C1QBP via a molecular mechanism that is currently unknown.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that C1QBP silencing reverses the effects of PA28\u03b3 overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5d07d896-3df7-40ab-b882-ee2443900c99",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C59",
+      "claim": "C1QBP silencing reverses the increases in mitochondrial proteins caused by PA28\u03b3 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "These increases could be reversed by C1QBP silencing in PA28\u03b3-overexpressing OSCC cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Western blot analysis of PA28\u03b3-overexpressing cells with C1QBP knockdown shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "1e15f1c3-d348-4bb3-a428-b726d2f862a5",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C60",
+      "claim": "The OCRs of C1QBP-silenced PA28\u03b3-overexpressing OSCC cells are markedly lower than those of control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the OCRs of C1QBP-silenced PA28\u03b3-overexpressing OSCC cells were markedly lower than those of control cells (Figure 4D, Figure 4\u2014figure supplement 1E-G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Cell Mito Stress Test measurements shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "e389db4b-7901-4134-bb6a-5e666f8f832e",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C61",
+      "claim": "C1QBP knockdown significantly attenuates the migration capabilities previously augmented by PA28\u03b3 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "C1QBP knockdown significantly attenuated the migration, invasive, and proliferation capabilities previously augmented by PA28\u03b3 overexpression (Figure 4E-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through migration assays shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "f28fa7a2-a701-4b5b-b20a-6093c657aea5",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C62",
+      "claim": "C1QBP knockdown significantly attenuates the invasive capabilities previously augmented by PA28\u03b3 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "C1QBP knockdown significantly attenuated the migration, invasive, and proliferation capabilities previously augmented by PA28\u03b3 overexpression (Figure 4E-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through invasion assays shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "458c32fa-dd0e-4793-a103-0ccdd0bab8ac",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C63",
+      "claim": "C1QBP knockdown significantly attenuates the proliferation capabilities previously augmented by PA28\u03b3 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "C1QBP knockdown significantly attenuated the migration, invasive, and proliferation capabilities previously augmented by PA28\u03b3 overexpression (Figure 4E-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through proliferation assays shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "44235f6a-cba7-4b80-b56a-484b8f148ea5",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C64",
+      "claim": "Both C1QBP and PA28\u03b3 are notably upregulated during the progression of oral mucosa carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that both C1QBP and PA28\u03b3 were notably upregulated during the progression of oral mucosa carcinogenesis (Figure 5A, B, Figure 5\u2014figure supplement 1A), and the levels of PA28\u03b3 and C1QBP were positively related (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through IHC staining in clinical cohorts shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3848bc21-5474-46fa-b971-826fa73081c4",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C65",
+      "claim": "Both C1QBP and PA28\u03b3 are upregulated in metastatic OSCC tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, both C1QBP and PA28\u03b3 were upregulated in metastatic OSCC tissues (Figure 5D, E, Figure 5\u2014figure supplement 1B), and the levels of PA28\u03b3 and C1QBP were consistently positively correlated in OSCC cohort (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through IHC staining in clinical cohorts shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "8952e2be-18e7-4458-95ff-ffb8a7e96900",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C66",
+      "claim": "C1QBP is a negative predictor in the multicenter OSCC clinical cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, consistent with our previous findings on PA28\u03b3 (Li et al., 2015), C1QBP or combining PA28\u03b3 and C1QBP could be a negative predator in our multicenter OSCC clinical cohort (Figure 5G, H), TCGA HNSC database (Figure 5I, J), and TCGA SKCM database (Figure 5\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Kaplan-Meier survival analysis shown in the figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0b611784-f7de-4324-9193-14bd4c0a4ac1",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C67",
+      "claim": "Combining PA28\u03b3 and C1QBP is a negative predictor in the multicenter OSCC clinical cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, consistent with our previous findings on PA28\u03b3 (Li et al., 2015), C1QBP or combining PA28\u03b3 and C1QBP could be a negative predator in our multicenter OSCC clinical cohort (Figure 5G, H), TCGA HNSC database (Figure 5I, J), and TCGA SKCM database (Figure 5\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Kaplan-Meier survival analysis shown in the figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "b8e207fc-b26b-4b89-9531-6377a76e45a4",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C68",
+      "claim": "C1QBP is a negative predictor in TCGA HNSC database.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, consistent with our previous findings on PA28\u03b3 (Li et al., 2015), C1QBP or combining PA28\u03b3 and C1QBP could be a negative predator in our multicenter OSCC clinical cohort (Figure 5G, H), TCGA HNSC database (Figure 5I, J), and TCGA SKCM database (Figure 5\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Kaplan-Meier survival analysis of TCGA data shown in the figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2759d32f-62bb-42f0-9ff7-f42b9c55ad24",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C69",
+      "claim": "Combining PA28\u03b3 and C1QBP is a negative predictor in TCGA HNSC database.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, consistent with our previous findings on PA28\u03b3 (Li et al., 2015), C1QBP or combining PA28\u03b3 and C1QBP could be a negative predator in our multicenter OSCC clinical cohort (Figure 5G, H), TCGA HNSC database (Figure 5I, J), and TCGA SKCM database (Figure 5\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Kaplan-Meier survival analysis of TCGA data shown in the figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "76aef210-93c8-4757-be75-8909a18f7775",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C70",
+      "claim": "Combining PA28\u03b3 and C1QBP is a negative predictor in TCGA SKCM database.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, consistent with our previous findings on PA28\u03b3 (Li et al., 2015), C1QBP or combining PA28\u03b3 and C1QBP could be a negative predator in our multicenter OSCC clinical cohort (Figure 5G, H), TCGA HNSC database (Figure 5I, J), and TCGA SKCM database (Figure 5\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Kaplan-Meier survival analysis of TCGA data shown in the figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "e5eb599e-6785-40c0-8a17-093dd5ae4b48",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C71",
+      "claim": "The metabolic phenotype of tumor cells differs from that of normal cells and dynamically changes during tumor progression.",
+      "claim_type": "EXPLICIT",
+      "source": "The metabolic phenotype of tumor cells differs from that of normal cells and dynamically changes during tumor progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tumor metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "58d45b1d-ae88-47e7-9fe4-b749be87453a",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C72",
+      "claim": "The development of OSCC is a complex and multifaceted process in which metabolic reprogramming appears to be important.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of OSCC is a complex and multifaceted process in which metabolic reprogramming appears to be important (Liu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "7bafff0c-2226-4d8c-9d63-c47f843fca16",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C73",
+      "claim": "PA28\u03b3 can interact with and stabilize C1QBP, which can activate the expression and function of OPA1, MNF1, MFN2, and mitochondrial respiratory chain complex proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "PA28\u03b3 can interact with and stabilize C1QBP, which can activate the expression and function of OPA1, MNF1, MFN2, and mitochondrial respiratory chain complex proteins, resulting in enhanced mitochondrial oxidative phosphorylation (OXPHOS), mitochondrial fusion, and malignant tumor progression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study, supported by multiple experiments throughout the manuscript and illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "98681b87-300c-4560-abb1-0887358e3d1b",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C74",
+      "claim": "Enhanced mitochondrial OXPHOS, mitochondrial fusion, and malignant tumor progression result from PA28\u03b3-C1QBP interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "PA28\u03b3 can interact with and stabilize C1QBP, which can activate the expression and function of OPA1, MNF1, MFN2, and mitochondrial respiratory chain complex proteins, resulting in enhanced mitochondrial oxidative phosphorylation (OXPHOS), mitochondrial fusion, and malignant tumor progression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study, supported by multiple experiments throughout the manuscript and illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "65e6f160-1b3f-48fb-b22d-799709287794",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C75",
+      "claim": "C1QBP is also called gClqR, p32, p33, and HABP1.",
+      "claim_type": "EXPLICIT",
+      "source": "C1QBP is also called gClqR, p32, p33, and HABP1, can be distributed inside cells, on the cell surface, and can also be secreted extracellularly (Egusquiza-Alvarez and Robles-Flores, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "11d57cd1-a375-461a-93b2-ffb7b9aac5f1",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C76",
+      "claim": "C1QBP can be distributed inside cells, on the cell surface, and can also be secreted extracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "C1QBP is also called gClqR, p32, p33, and HABP1, can be distributed inside cells, on the cell surface, and can also be secreted extracellularly (Egusquiza-Alvarez and Robles-Flores, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0b8b1dbf-a50b-4d42-b1cd-d4756719482e",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C77",
+      "claim": "Within cells, C1QBP is primarily located in the mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Within cells, C1QBP is primarily located in the mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C1QBP localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "aec59d29-3133-4895-b361-3fd185cce279",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C78",
+      "claim": "The key functions of mitochondrial C1QBP include maintaining OXPHOS, supplying energy to cells, and achieving homeostasis of mitochondrial metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The key functions of mitochondrial C1QBP include maintaining OXPHOS, supplying energy to cells, and achieving homeostasis of mitochondrial metabolism (Ghebrehiwet et al., 2019; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2ea63869-18d9-4a2b-95ff-6ecf681bfbe7",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C79",
+      "claim": "C1QBP is highly expressed in cells that require a large amount of energy, such as the heart, skeletal muscle, testis, ovary, small intestine, and colon.",
+      "claim_type": "EXPLICIT",
+      "source": "C1QBP is highly expressed in cells that require a large amount of energy, such as the heart, skeletal muscle, testis, ovary, small intestine, and colon (Feichtinger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5ec77987-2138-4754-ae65-48f16292a806",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C80",
+      "claim": "C1QBP promotes malignant behaviors such as tumor invasion and metastasis by enhancing OXPHOS function in various cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Sufficient energy is essential for cancer development, and C1QBP promotes malignant behaviors such as tumor invasion and metastasis by enhancing OXPHOS function in various cancers (Raschdorf et al., 2021; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "85f1f8c9-d0ac-4f3a-89ab-2022ec9f49e4",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C81",
+      "claim": "PA28\u03b3 usually affects the development of tumors by regulating the stability of various important proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As a proteasome activator, PA28\u03b3 usually affects the development of tumors by regulating the stability of various important proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PA28\u03b3 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "a8f9ad8e-2905-4e09-a969-72e88a18ac18",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C82",
+      "claim": "PA28\u03b3 can promote the degradation of p53, p21 leading to cancer progression.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PA28\u03b3 can promote the degradation of p53, p21 leading to cancer progression (Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "7a9041f7-d7f8-4e60-90ad-4eea60895fec",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C83",
+      "claim": "PA28\u03b3 can regulate the activation of NF-\u03baB to promote the secretion of IL-6 and CCL2 in OSCC cells, thus promoting the angiogenesis of endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PA28\u03b3 can also play as a non-degradome role in tumor angiogenesis. For example, PA28\u03b3 can regulate the activation of NF-\u03baB to promote the secretion of IL-6 and CCL2 in OSCC cells, thus promoting the angiogenesis of endothelial cells (Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "48c50710-256f-49fc-8f4c-24188411a920",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C84",
+      "claim": "The function of mitochondrial PA28\u03b3 may differ from that of nuclear PA28\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the function of mitochondrial PA28\u03b3 may differ from that of nuclear PA28\u03b3 (Mao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0cd42d5a-3c1f-4f6d-96b7-a67362010671",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C85",
+      "claim": "The binding sites of PA28\u03b3 and C1QBP may mask the specific post-translational modification sites of C1QBP and inhibit its degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we speculate that the binding sites of PA28\u03b3 and C1QBP may mask the specific post-translational modification sites of C1QBP and inhibit its degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed stabilization of C1QBP by PA28\u03b3.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "d64d8898-4e14-47b2-ba22-8b0486a374bf",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C86",
+      "claim": "The transcriptional coactivator p300 interacts with Smad7 by acetylating two lysine residues in its N-terminus, which stabilize Smad7 and protect it from TGF\u03b2-induced degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the transcriptional coactivator p300 interacts with Smad7 by acetylating two lysine residues in its N-terminus, which stabilize Smad7 and protect it from TGF\u03b2-induced degradation (Gr\u00f6nroos et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited as an example of how protein interactions can stabilize proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2d7a1cfa-de87-4796-9ca7-96c7e5343b25",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C87",
+      "claim": "PA28\u03b3 has been reported to activate the mTORC1 signaling pathway in hepatocellular carcinoma cells to promote glycolysis and inhibit OXPHOS.",
+      "claim_type": "EXPLICIT",
+      "source": "PA28\u03b3 has been reported to activate the mTORC1 signaling pathway in hepatocellular carcinoma cells to promote glycolysis and inhibit OXPHOS (Yao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "81a58169-e313-4a48-a27e-afc473e3dabc",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C88",
+      "claim": "The findings in hepatocellular carcinoma contrast with the current study, potentially due to organ heterogeneity or the complexity of metabolic reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings contrast with our study, potentially due to organ heterogeneity or the complexity of metabolic reprogramming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the discrepancy between studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "e3068ed2-24ae-444f-bf71-e6c35e244f1b",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C89",
+      "claim": "PA28\u03b3 in epithelial cells can regulate T cell differentiation in the tissue microenvironment of oral lichen planus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tissue microenvironment of oral lichen planus, a potentially malignant oral disorder, PA28\u03b3 in epithelial cells can regulate T cell differentiation (Wang et al., 2024), while PA28\u03b3 in CAFs is involved in the crosstalk between stromal cells and tumor cells (Li et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "74162ab4-fd21-4330-8ff6-9a65ca2c07f5",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C90",
+      "claim": "PA28\u03b3 in CAFs is involved in the crosstalk between stromal cells and tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tissue microenvironment of oral lichen planus, a potentially malignant oral disorder, PA28\u03b3 in epithelial cells can regulate T cell differentiation (Wang et al., 2024), while PA28\u03b3 in CAFs is involved in the crosstalk between stromal cells and tumor cells (Li et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "1d522a48-4504-41ed-adf9-f802c1655392",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C91",
+      "claim": "The regulation of mitochondrial OXPHOS by PA28\u03b3 localized in tumor cell mitochondria does not entirely depend on the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Our phenotypically similar OSCC xenograft tumor models in both immunocompetent and nude mice indicate that the regulation of mitochondrial OXPHOS by PA28\u03b3 localized in tumor cell mitochondria does not entirely depend on the immune system (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that similar effects are seen in both immunocompetent and immunodeficient mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "71d8ac39-3619-4922-83ed-2eb6b84ee58d",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C92",
+      "claim": "Mitochondrial fusion is crucial for oxidative metabolism and cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial fusion, crucial for oxidative metabolism and cell proliferation, is regulated by MFN1, MFN2, and OPA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mitochondrial biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "4cb4a3a7-fc2d-405c-bb0a-981aa2e193a3",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C93",
+      "claim": "Mitochondrial fusion is regulated by MFN1, MFN2, and OPA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial fusion, crucial for oxidative metabolism and cell proliferation, is regulated by MFN1, MFN2, and OPA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mitochondrial biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3d2ebca1-7c64-41be-bcfb-894e7b2984ce",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C94",
+      "claim": "MFN1 and MFN2 fuse with the outer mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The first two fuse with the outer mitochondrial membrane, while the last fuses with the inner mitochondrial membrane (Westermann, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "1b672147-77e7-4d80-8610-46ba759fe52d",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C95",
+      "claim": "OPA1 fuses with the inner mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The first two fuse with the outer mitochondrial membrane, while the last fuses with the inner mitochondrial membrane (Westermann, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "8b2a4925-7376-48f7-a2f2-a08fbc7001ee",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C96",
+      "claim": "OPA1 is an essential inner mitochondrial membrane protein with multiple functions, including regulating mitochondrial fusion, cristae morphology, mtDNA stability, and interacting with the mitochondrial respiratory chain to regulate OXPHOS.",
+      "claim_type": "EXPLICIT",
+      "source": "OPA1 is an essential inner mitochondrial membrane protein with multiple functions, including regulating mitochondrial fusion, cristae morphology, mtDNA stability, and interacting with the mitochondrial respiratory chain to regulate OXPHOS (Del Dotto et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "bcad5176-83a3-4bcd-a103-49b06e37e1df",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C97",
+      "claim": "OXPHOS is upregulated in various tumors, with some advanced tumors preferring OXPHOS metabolically.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, some studies have shown that OXPHOS is upregulated in various tumors, with some advanced tumors preferring OXPHOS metabolically (Ohshima and Morii, 2021; Qiu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0fd0aa33-8a00-461a-af88-4f7bd2801875",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C98",
+      "claim": "OXPHOS activity is associated with the recurrence of OSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "OXPHOS activity is associated with the recurrence of OSCC (Noh et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "ca8d3231-bcd4-4e25-bf00-d2751c8fa132",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C99",
+      "claim": "The enhancement of OXPHOS and ATP production by ROS proto-oncogene 1, which localizes to mitochondria in OSCC, promotes OSCC invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the enhancement of OXPHOS and ATP production by ROS proto-oncogene 1, which localizes to mitochondria in OSCC, promotes the OSCC invasion (Noh et al., 2023; Grimm et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "37f65160-4101-40e7-bed0-bbac6a86e442",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C100",
+      "claim": "High expression of PA28\u03b3 and C1QBP is correlated with poor prognosis in OSCC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of PA28\u03b3 and C1QBP was correlated with poor prognosis in OSCC patients, indicating that both proteins, in particular their molecular interactions, could serve as potential targets for the treatment and prognosis of OSCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through survival analysis in clinical cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "b439d3bd-c4fc-45b5-88e4-02edbc0f9f2f",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C101",
+      "claim": "PA28\u03b3 and C1QBP could serve as potential targets for the treatment and prognosis of OSCC.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of PA28\u03b3 and C1QBP was correlated with poor prognosis in OSCC patients, indicating that both proteins, in particular their molecular interactions, could serve as potential targets for the treatment and prognosis of OSCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation with poor prognosis and the mechanistic findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "617fc132-9b41-4cf7-b452-5a7cd93eb320",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "claim_id": "C102",
+      "claim": "This is the first study to describe the undiscovered role of PA28\u03b3 in promoting the malignant progression of OSCC by elevating mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "In our knowledge, it is the first study to describe the undiscovered role of PA28\u03b3 in promoting the malignant progression of OSCC by elevating mitochondrial function, providing new clinical insights for the treatment of OSCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PA28\u03b3 physically interacts with C1QBP through the N-terminal region (aa 1-167) of C1QBP, with specific hydrogen bonding between C1QBP residues T76/G78 and PA28\u03b3 residue D177. This interaction was demonstrated through Co-IP, PLA, AlphaFold 3 modeling, truncation constructs, and point mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple orthogonal experimental approaches (C2, C40, C41) confirm the physical interaction. Computational predictions (C46, C48) are validated by experimental data from truncation constructs (C3, C47) and point mutations (C4, C49). The convergence of computational and experimental evidence strongly supports this molecular interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "67e67ffe-a069-4917-ab6f-5cd8efd0a6cc",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PA28\u03b3 stabilizes C1QBP protein by reducing its turnover rate, as demonstrated by dose-dependent upregulation and cycloheximide chase experiments showing reduced degradation in the presence of PA28\u03b3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The protein stabilization is demonstrated through multiple complementary approaches: dose-response (C43), protein turnover assays (C44), and proteasome inhibitor experiments (C45). The data consistently show that PA28\u03b3 increases C1QBP protein levels through enhanced stability rather than increased synthesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5b96067a-e828-4f0f-9fc8-96af20a96ace",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PA28\u03b3 and C1QBP colocalize in mitochondria and promote mitochondrial fusion through upregulation of OPA1, MFN1, and MFN2, as well as respiratory complex proteins. This results in altered mitochondrial morphology with increased mitochondrial length and area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Colocalization is demonstrated by immunofluorescence (C6), morphological changes by TEM and IF (C50, C51), and molecular changes by Western blot (C7, C8, C57). The rescue experiments with C1QBP knockdown (C59) provide critical evidence that these effects are mediated through C1QBP, establishing causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PA28\u03b3 overexpression enhances mitochondrial oxidative phosphorylation (OXPHOS), ATP production, and ROS generation in OSCC cells, with opposite effects observed upon PA28\u03b3 knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional consequences are demonstrated through direct measurements of oxygen consumption rates (C52, C53), ATP levels (C54), and ROS (C55). The bidirectional effects with both overexpression and knockdown (C56) strengthen the causal relationship between PA28\u03b3 and mitochondrial metabolic function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "07d51ad1-9620-439b-8c90-0678eb605e48",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PA28\u03b3-enhanced OSCC cell migration, invasion, and proliferation are dependent on C1QBP, as demonstrated by rescue experiments showing that C1QBP knockdown reverses the oncogenic effects of PA28\u03b3 overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dependency on C1QBP is rigorously demonstrated through rescue experiments (C61-C63) showing that C1QBP silencing abolishes PA28\u03b3-mediated enhancement of malignant behaviors. The metabolic dependency is also shown through OCR measurements (C60). This establishes C1QBP as a critical mediator of PA28\u03b3's oncogenic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "fe199449-88fa-4a95-8c46-2dda3f353b2e",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In orthotopic OSCC mouse models, Pa28\u03b3 overexpression increases tumor growth, elevates C1qbp protein levels, and correlates with increased ATP and ROS in tumor tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vivo validation demonstrates that the in vitro findings translate to tumor growth in a physiologically relevant model. Tumor size measurements (C13), IHC for C1qbp (C14), and biochemical measurements of ATP and ROS (C15, C16) provide convergent evidence for the functional significance of the PA28\u03b3-C1QBP axis in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "4236f1b2-a1fc-4663-a5c3-d90f83e8443e",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In Psme3-/- transgenic mice with subcutaneous tumor grafts, Pa28\u03b3 silencing suppresses tumor growth, reduces C1qbp levels, and dampens mitochondrial metabolism specifically in knockout hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The use of genetic knockout mice provides strong evidence for the specificity of PA28\u03b3's effects. The observation that effects are specific to knockout hosts (C17-C19) demonstrates that the tumor cell-intrinsic PA28\u03b3 is responsible for the observed phenotypes, ruling out host-derived PA28\u03b3 contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "a9a21d21-bd7b-497b-a4c7-fbfc930bc37d",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PA28\u03b3 and C1QBP expression are positively correlated during oral carcinogenesis progression (from normal to OPMD to OSCC) and in metastatic versus non-metastatic OSCC tissues across multiple clinical cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The clinical correlation is demonstrated through IHC analysis of multiple patient cohorts with strong statistical significance (r=0.8227, p<0.0001 for carcinogenesis; r=0.6977, p<0.0001 for OSCC). The consistency across different clinical contexts (progression and metastasis) strengthens the clinical relevance of the PA28\u03b3-C1QBP relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "High co-expression of PA28\u03b3 and C1QBP predicts poor prognosis in OSCC patients across multiple independent cohorts (multicenter OSCC cohort, TCGA HNSC, and TCGA SKCM databases).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The prognostic value is validated across multiple independent patient cohorts with statistical significance (p=0.0100 for OSCC, p=0.033 for HNSC, p=0.047 for SKCM). The consistency across different cancer types and cohorts provides robust evidence for the clinical significance of PA28\u03b3-C1QBP co-expression as a prognostic biomarker.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2cd2c219-f8cc-476c-a6d8-cd9f9f6e2a9d",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study proposes that PA28\u03b3-C1QBP interaction drives tumor progression through enhanced mitochondrial OXPHOS and fusion, suggesting these proteins as potential therapeutic targets for OSCC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative conclusion is supported by the convergence of molecular (interaction and stabilization), functional (mitochondrial metabolism), cellular (migration/invasion/proliferation), in vivo (tumor growth), and clinical (correlation and prognosis) data. While the therapeutic potential (C101) is inferred rather than directly tested, the mechanistic understanding and clinical correlations provide a strong rationale.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3421d8f4-a5f1-4864-a6cd-0a87456d89f0",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that PA28\u03b3 binding may mask post-translational modification sites on C1QBP to prevent its degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is explicitly stated as speculation (C85) without direct experimental evidence. While the stabilization effect is well-documented, the specific molecular mechanism (masking of PTM sites) remains hypothetical and would require additional experiments such as PTM mapping and mutagenesis studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5780c669-6052-43a9-a467-e19d82b120c4",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PA28\u03b3's regulation of mitochondrial OXPHOS in tumor cells does not entirely depend on the immune system, as similar effects are observed in both immunocompetent and nude mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between immunocompetent and immunodeficient mouse models (C91) provides evidence that the metabolic effects are tumor cell-intrinsic. However, the claim states 'does not entirely depend' which is appropriately cautious, as it doesn't rule out some immune contribution. The experimental design adequately addresses this question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "00cd85dd-4960-425e-b575-cce0087b22b0",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PA28\u03b3 plays a critical role in malignant progression of various tumors including OSCC, with expression positively correlated with poor prognosis, as established by prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by citations to prior literature (C23, C24) and the authors' previous work (C28). While these are background claims rather than novel findings, they are appropriately cited and provide context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "97825295-84b1-4f94-91d7-69db619b5ef4",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has established that PA28\u03b3 regulates tumor development through multiple mechanisms including p53/MDM2 interactions, p21 degradation, and NF-\u03baB-mediated angiogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are appropriately cited background claims (C25-C27, C82-C83) that establish the known functions of PA28\u03b3. They provide important context for understanding how the current findings add to existing knowledge about PA28\u03b3's diverse roles in cancer.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "e9d5ac09-8801-425e-9c49-15c683f3417b",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "OSCC is a common malignancy with known risk factors (smoking, alcohol, HPV) and treatment challenges, where metabolic reprogramming plays an important role in tumor progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established background claims about OSCC epidemiology, risk factors, and treatment challenges, appropriately supported by citations (C29, C32-C34). They provide necessary clinical context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "C1QBP is a crucial mitochondrial protein that maintains OXPHOS function and plays significant roles in cancer progression across multiple tumor types, as established by prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims about C1QBP's known functions and roles in cancer are appropriately cited (C35, C37, C38, C76, C78-C80) and provide essential context for understanding why C1QBP is a relevant interaction partner for PA28\u03b3 in the context of tumor metabolism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "59f84a04-aacc-49a7-932c-28da4e2931b4",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Enhanced mitochondrial OXPHOS function is linked to malignant tumor progression in OSCC and other cancers, with OXPHOS activity associated with OSCC recurrence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations to prior literature (C39, C72, C97-C99) and establish the rationale for investigating OXPHOS in OSCC. They provide important context showing that OXPHOS enhancement, rather than just glycolysis, is relevant to cancer progression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "63d472fd-6d37-49ef-8404-c896ebb89e98",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background information on tumor metabolic phenotypes, PA28\u03b3's general mechanism of action, and the roles of mitochondrial fusion proteins (MFN1, MFN2, OPA1) in cellular metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established facts about cellular metabolism and mitochondrial biology, appropriately cited where relevant (C94-C96). They provide necessary background for interpreting the experimental findings but are not novel contributions of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "ecffd721-36eb-42b2-b97b-93eea8e42570",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Discussion of PA28\u03b3's context-dependent functions, including differences between mitochondrial and nuclear PA28\u03b3, contrasting findings in hepatocellular carcinoma, and roles in immune regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims appropriately discuss prior work (C84, C86, C87, C89, C90) and acknowledge discrepancies with other studies (C88). The discussion of context-dependent effects is important for interpreting the current findings but represents synthesis of prior work rather than novel experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "5f140f96-7cad-4b9d-b84c-c839cfd98bb0",
+      "content_id": "b55d81f1-408e-42e6-857a-113306041074",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors claim this is the first study to describe PA28\u03b3's role in promoting OSCC malignant progression by elevating mitochondrial function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the specific mechanism linking PA28\u03b3 to mitochondrial OXPHOS via C1QBP appears novel, the claim of being 'the first' is difficult to verify without comprehensive literature review. The novelty lies in the mechanistic connection rather than the individual components, which have been studied separately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "67bb3d2b-fe84-4289-8adf-28f082f04f39",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "PA28\u03b3 physically interacts with C1QBP through the N-terminal region (aa 1-167) of C1QBP, with specific hydrogen bonding between C1QBP residues T76/G78 and PA28\u03b3 residue D177. This interaction was validated through Co-IP, PLA, AlphaFold 3 modeling, truncation constructs, and point mutations that disrupt predicted hydrogen bonds.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers explicitly affirm this result, stating that 'the theoretical models for the interaction were supported by the experimental data' and noting that 'the interaction between the two proteins as detected by co-immunoprecipitation of cell lysate was reduced by both mutations.' The editor confirms 'additional experiments and analyses that supported the theoretical models for the interaction have been performed.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "7b12dc30-13e1-4603-aca5-2d126cf517f2",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "PA28\u03b3 enhances C1QBP protein stability in OSCC cells, as demonstrated by dose-dependent upregulation of C1QBP protein levels and reduced C1QBP turnover in cycloheximide chase experiments, independent of proteasome inhibition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers acknowledge this finding as part of the overall evidence, noting that the authors 'observed the levels of the two proteins are positively correlated in the cells.' The reviewer suggests future experiments to test whether mutations 'can decrease the protein stability afforded by the interaction with PA28\u03b3,' implicitly accepting the current stability data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3c7d24b6-c94d-4007-a718-ef23a93e7fb9",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "PA28\u03b3 and C1QBP colocalize in mitochondria and promote mitochondrial fusion through upregulation of OPA1, MFN1/2, and respiratory complex proteins, resulting in altered mitochondrial morphology with increased mitochondrial length, area, and ridge density.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers affirm this result, stating the authors 'provided evidence for the colocalization of the two proteins in the mitochondria and the effect on mitochondrial form and function in vitro and in vivo OSCC models.' This is treated as solid evidence supporting the overall conceptual framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "c7be1075-611d-4893-b9dd-988094f470f2",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "PA28\u03b3 overexpression enhances mitochondrial oxidative phosphorylation (OXPHOS), ATP production, and ROS generation in OSCC cells, as measured by significantly increased basal respiration, maximal OCR, ATP levels, and ROS levels. PA28\u03b3 knockdown produces opposite effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers explicitly support this finding, noting the authors 'provided evidence for the colocalization of the two proteins in the mitochondria and the effect on mitochondrial form and function in vitro and in vivo OSCC models.' The editor confirms 'the overall findings and conceptual framework are important and the evidence is solid.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "8f73669e-1bdd-4253-ad6c-15f7c8449951",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "PA28\u03b3-enhanced OSCC cell migration, invasion, and proliferation are dependent on C1QBP, as C1QBP knockdown reverses the increases in mitochondrial proteins, OCR, and malignant cellular behaviors caused by PA28\u03b3 overexpression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept this dependency relationship as part of the overall mechanism. The reviewer suggests future experiments to 'test the C1QBP mutants in functional assays to determine whether the mutations can decrease...the effect of PA28\u03b3 on mitochondria and tumor cells via C1QBP,' indicating acceptance of the current C1QBP dependency data while suggesting further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "4e2fa7a9-52be-4851-84f9-9877052d5d18",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "In vivo orthotopic OSCC models show that Pa28\u03b3 overexpression increases tumor growth and elevates C1qbp levels, ATP, and ROS. Conversely, Pa28\u03b3 silencing in Psme3-/- mice suppresses tumor growth, reduces C1qbp levels, and dampens mitochondrial metabolism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers affirm this result, stating the authors 'provided evidence for the colocalization of the two proteins in the mitochondria and the effect on mitochondrial form and function in vitro and in vivo OSCC models.' The in vivo data is treated as solid supporting evidence for the overall mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "38bc028e-8384-4f40-b37b-af7c8ac18da1",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Clinically, PA28\u03b3 and C1QBP expression are positively correlated during oral carcinogenesis and in metastatic OSCC tissues across multiple cohorts. High co-expression of PA28\u03b3 and C1QBP predicts poor prognosis in OSCC patients and in TCGA HNSC and SKCM databases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers acknowledge this clinical correlation, noting the authors 'provided evidence...for the correlation of the protein expression with the prognosis of cancer patients.' This is treated as solid supporting evidence for the clinical relevance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "dd687368-0646-4e56-99f3-88f2c5c31c68",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The overall mechanistic model proposes that PA28\u03b3 interacts with and stabilizes C1QBP, which activates expression and function of OPA1, MFN1, MFN2, and mitochondrial respiratory chain complex proteins, resulting in enhanced mitochondrial OXPHOS, mitochondrial fusion, and malignant tumor progression. PA28\u03b3 and C1QBP could serve as potential therapeutic targets for OSCC.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states 'the overall findings and conceptual framework are important and the evidence is solid.' The reviewer concludes this 'presents a novel finding for tumor cell biology which could be a launch pad for therapeutic intervention of tumor development,' affirming both the mechanism and therapeutic potential.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "3259fe7e-f14e-47cb-bed1-87751832cb6f",
+      "content_id": "4141f47e-85cd-4d4d-a926-0c560b54e64c",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims establish that PA28\u03b3 plays a critical role in malignant progression of various tumors and is associated with poor prognosis; C1QBP is crucial for maintaining mitochondrial OXPHOS function and plays a significant role in cancer progression; and OSCC is a common malignancy with poor survival despite treatment advances.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are not explicitly discussed by reviewers but are implicitly accepted as established context. The reviewers focus on evaluating the novel experimental findings rather than questioning the background literature, indicating acceptance of this foundational knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d05e39c8-9bc9-49c5-b904-9ae7b67a6ccc",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "6d4ceb8e-1e3a-4fd0-b05b-0df2c65558ed",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "3ce5c96a-5897-4384-8866-87fdd494f861",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "0fb080c9-29c2-4cd6-aa2d-5dab956b1216",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "5ba32b02-a7d9-46d7-90b5-f0536e68f972",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "8590fab0-e8c1-461e-88b0-c2dd39e9ca73",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "6568f39e-3293-44bb-b274-89e00bf93478",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "52646933-4beb-4c0e-a8f2-0904887e36c9",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "385b99f4-d13b-4ba0-996c-7eb996943f9b",
+      "result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5"
+    },
+    {
+      "claim_id": "5483a231-f1b5-4519-92ca-f3471b3937e5",
+      "result_id": "67e67ffe-a069-4917-ab6f-5cd8efd0a6cc"
+    },
+    {
+      "claim_id": "f3c642b3-9082-44d6-b92b-c2e40ede4f60",
+      "result_id": "67e67ffe-a069-4917-ab6f-5cd8efd0a6cc"
+    },
+    {
+      "claim_id": "5e32f5ad-005d-4ce0-81ac-0ec21ddbac8b",
+      "result_id": "67e67ffe-a069-4917-ab6f-5cd8efd0a6cc"
+    },
+    {
+      "claim_id": "1c8ce7d9-9d3b-44ec-81d4-7e12e9250c6f",
+      "result_id": "67e67ffe-a069-4917-ab6f-5cd8efd0a6cc"
+    },
+    {
+      "claim_id": "ac9fedd7-2a10-431a-8bee-61e77a6bf98d",
+      "result_id": "67e67ffe-a069-4917-ab6f-5cd8efd0a6cc"
+    },
+    {
+      "claim_id": "9e1f614d-41e5-496c-8ed9-032de9f869d6",
+      "result_id": "5b96067a-e828-4f0f-9fc8-96af20a96ace"
+    },
+    {
+      "claim_id": "d6b5c1a5-24d4-4899-8c4c-80b295dbaa66",
+      "result_id": "5b96067a-e828-4f0f-9fc8-96af20a96ace"
+    },
+    {
+      "claim_id": "8b23ab77-0508-49e8-9cf3-c6e03e15569b",
+      "result_id": "5b96067a-e828-4f0f-9fc8-96af20a96ace"
+    },
+    {
+      "claim_id": "e41e8506-53ec-4990-b400-a16f88fbee18",
+      "result_id": "5b96067a-e828-4f0f-9fc8-96af20a96ace"
+    },
+    {
+      "claim_id": "49d1a28a-f6f1-45fb-b62a-c994600b54e3",
+      "result_id": "5b96067a-e828-4f0f-9fc8-96af20a96ace"
+    },
+    {
+      "claim_id": "2071e0fa-4a9a-4666-b98d-ef145a6b2e9b",
+      "result_id": "5b96067a-e828-4f0f-9fc8-96af20a96ace"
+    },
+    {
+      "claim_id": "5d07d896-3df7-40ab-b882-ee2443900c99",
+      "result_id": "5b96067a-e828-4f0f-9fc8-96af20a96ace"
+    },
+    {
+      "claim_id": "4404721c-ba98-4145-b2d3-60be2e6cc3a2",
+      "result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc"
+    },
+    {
+      "claim_id": "9002ae34-d2fd-4059-9c2c-6a1f7e532453",
+      "result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc"
+    },
+    {
+      "claim_id": "46092132-7eaf-45f8-84f3-01c7cf83ec09",
+      "result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc"
+    },
+    {
+      "claim_id": "0f097f79-6906-4177-90c1-7a3760d4093a",
+      "result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc"
+    },
+    {
+      "claim_id": "ab1313bc-a02e-4c0c-983b-160546cd067f",
+      "result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc"
+    },
+    {
+      "claim_id": "6635f740-25b6-4ead-8ce6-8c40e39240a2",
+      "result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc"
+    },
+    {
+      "claim_id": "3ef76da9-28ef-4c95-93a7-48f303e61fb3",
+      "result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc"
+    },
+    {
+      "claim_id": "28abcfce-20f8-40bd-ad76-c13bc92621d1",
+      "result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc"
+    },
+    {
+      "claim_id": "13bfc704-9675-48a5-b0de-0cf48716806a",
+      "result_id": "07d51ad1-9620-439b-8c90-0678eb605e48"
+    },
+    {
+      "claim_id": "2c9b86c5-c4be-4e5c-a107-e5e0675e27e6",
+      "result_id": "07d51ad1-9620-439b-8c90-0678eb605e48"
+    },
+    {
+      "claim_id": "5d07d896-3df7-40ab-b882-ee2443900c99",
+      "result_id": "07d51ad1-9620-439b-8c90-0678eb605e48"
+    },
+    {
+      "claim_id": "1e15f1c3-d348-4bb3-a428-b726d2f862a5",
+      "result_id": "07d51ad1-9620-439b-8c90-0678eb605e48"
+    },
+    {
+      "claim_id": "e389db4b-7901-4134-bb6a-5e666f8f832e",
+      "result_id": "07d51ad1-9620-439b-8c90-0678eb605e48"
+    },
+    {
+      "claim_id": "f28fa7a2-a701-4b5b-b20a-6093c657aea5",
+      "result_id": "07d51ad1-9620-439b-8c90-0678eb605e48"
+    },
+    {
+      "claim_id": "458c32fa-dd0e-4793-a103-0ccdd0bab8ac",
+      "result_id": "07d51ad1-9620-439b-8c90-0678eb605e48"
+    },
+    {
+      "claim_id": "0ace5a89-82ac-44a7-8038-a03e8896b397",
+      "result_id": "fe199449-88fa-4a95-8c46-2dda3f353b2e"
+    },
+    {
+      "claim_id": "57862bda-2778-48b7-89f8-bcb95b9513ee",
+      "result_id": "fe199449-88fa-4a95-8c46-2dda3f353b2e"
+    },
+    {
+      "claim_id": "3ca039b9-3871-4259-bf8f-c7ce264b2cbc",
+      "result_id": "fe199449-88fa-4a95-8c46-2dda3f353b2e"
+    },
+    {
+      "claim_id": "1d2a5b7d-ba52-4ce5-87e3-5d8d0d38b345",
+      "result_id": "fe199449-88fa-4a95-8c46-2dda3f353b2e"
+    },
+    {
+      "claim_id": "e41f7f3f-62b8-4fd0-95be-b9d0894b63b4",
+      "result_id": "4236f1b2-a1fc-4663-a5c3-d90f83e8443e"
+    },
+    {
+      "claim_id": "0437aac5-a2dd-462b-a542-0d3686f1b695",
+      "result_id": "4236f1b2-a1fc-4663-a5c3-d90f83e8443e"
+    },
+    {
+      "claim_id": "99240e4f-3c9d-4e08-91a2-a1f90d70046a",
+      "result_id": "4236f1b2-a1fc-4663-a5c3-d90f83e8443e"
+    },
+    {
+      "claim_id": "f764220b-400f-4bc8-ba0b-a4099ad42e20",
+      "result_id": "a9a21d21-bd7b-497b-a4c7-fbfc930bc37d"
+    },
+    {
+      "claim_id": "2af2f045-6688-4884-ad99-8f591eecdbbd",
+      "result_id": "a9a21d21-bd7b-497b-a4c7-fbfc930bc37d"
+    },
+    {
+      "claim_id": "44235f6a-cba7-4b80-b56a-484b8f148ea5",
+      "result_id": "a9a21d21-bd7b-497b-a4c7-fbfc930bc37d"
+    },
+    {
+      "claim_id": "3848bc21-5474-46fa-b971-826fa73081c4",
+      "result_id": "a9a21d21-bd7b-497b-a4c7-fbfc930bc37d"
+    },
+    {
+      "claim_id": "20639dfc-bb74-47bb-978d-be5bcd69dcb9",
+      "result_id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1"
+    },
+    {
+      "claim_id": "8952e2be-18e7-4458-95ff-ffb8a7e96900",
+      "result_id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1"
+    },
+    {
+      "claim_id": "0b611784-f7de-4324-9193-14bd4c0a4ac1",
+      "result_id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1"
+    },
+    {
+      "claim_id": "b8e207fc-b26b-4b89-9531-6377a76e45a4",
+      "result_id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1"
+    },
+    {
+      "claim_id": "2759d32f-62bb-42f0-9ff7-f42b9c55ad24",
+      "result_id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1"
+    },
+    {
+      "claim_id": "76aef210-93c8-4757-be75-8909a18f7775",
+      "result_id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1"
+    },
+    {
+      "claim_id": "37f65160-4101-40e7-bed0-bbac6a86e442",
+      "result_id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1"
+    },
+    {
+      "claim_id": "7bafff0c-2226-4d8c-9d63-c47f843fca16",
+      "result_id": "2cd2c219-f8cc-476c-a6d8-cd9f9f6e2a9d"
+    },
+    {
+      "claim_id": "98681b87-300c-4560-abb1-0887358e3d1b",
+      "result_id": "2cd2c219-f8cc-476c-a6d8-cd9f9f6e2a9d"
+    },
+    {
+      "claim_id": "b439d3bd-c4fc-45b5-88e4-02edbc0f9f2f",
+      "result_id": "2cd2c219-f8cc-476c-a6d8-cd9f9f6e2a9d"
+    },
+    {
+      "claim_id": "0cd42d5a-3c1f-4f6d-96b7-a67362010671",
+      "result_id": "3421d8f4-a5f1-4864-a6cd-0a87456d89f0"
+    },
+    {
+      "claim_id": "1d522a48-4504-41ed-adf9-f802c1655392",
+      "result_id": "5780c669-6052-43a9-a467-e19d82b120c4"
+    },
+    {
+      "claim_id": "cefa01fd-9c28-44ca-bb4d-000f96b03957",
+      "result_id": "00cd85dd-4960-425e-b575-cce0087b22b0"
+    },
+    {
+      "claim_id": "ec594169-0a6f-4c0b-acc1-01b315598f38",
+      "result_id": "00cd85dd-4960-425e-b575-cce0087b22b0"
+    },
+    {
+      "claim_id": "13d57c4e-dbdb-42d2-a3de-cffa486b237a",
+      "result_id": "00cd85dd-4960-425e-b575-cce0087b22b0"
+    },
+    {
+      "claim_id": "beb72e56-62d5-43ce-a812-381b34d7c6f5",
+      "result_id": "00cd85dd-4960-425e-b575-cce0087b22b0"
+    },
+    {
+      "claim_id": "21151057-a127-4e84-bc76-2d5f133fa10d",
+      "result_id": "97825295-84b1-4f94-91d7-69db619b5ef4"
+    },
+    {
+      "claim_id": "01ed8398-895c-4378-9b5e-3b4814e4a165",
+      "result_id": "97825295-84b1-4f94-91d7-69db619b5ef4"
+    },
+    {
+      "claim_id": "a1c1b5f1-3cee-453c-97a8-0956d38f39b5",
+      "result_id": "97825295-84b1-4f94-91d7-69db619b5ef4"
+    },
+    {
+      "claim_id": "a8f9ad8e-2905-4e09-a969-72e88a18ac18",
+      "result_id": "97825295-84b1-4f94-91d7-69db619b5ef4"
+    },
+    {
+      "claim_id": "7a9041f7-d7f8-4e60-90ad-4eea60895fec",
+      "result_id": "97825295-84b1-4f94-91d7-69db619b5ef4"
+    },
+    {
+      "claim_id": "5ef9841f-8cde-4cea-a179-8094cfba4d1b",
+      "result_id": "e9d5ac09-8801-425e-9c49-15c683f3417b"
+    },
+    {
+      "claim_id": "389431d6-af72-4bed-b26a-6794d004fb3f",
+      "result_id": "e9d5ac09-8801-425e-9c49-15c683f3417b"
+    },
+    {
+      "claim_id": "d8a8295a-b76d-4128-a903-d78cd5fdfd11",
+      "result_id": "e9d5ac09-8801-425e-9c49-15c683f3417b"
+    },
+    {
+      "claim_id": "d934bc8b-5108-4fe4-913c-b2e5d0dcd045",
+      "result_id": "e9d5ac09-8801-425e-9c49-15c683f3417b"
+    },
+    {
+      "claim_id": "22a5236a-a0e2-4477-be5e-18601e88cbe7",
+      "result_id": "e9d5ac09-8801-425e-9c49-15c683f3417b"
+    },
+    {
+      "claim_id": "6b3228c2-b8df-48ac-89c0-316e061b29ae",
+      "result_id": "e9d5ac09-8801-425e-9c49-15c683f3417b"
+    },
+    {
+      "claim_id": "a292e485-4fb7-4b58-a8ac-3ca76eae4e42",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "a5a66a92-e330-4b35-a266-aa622b4e7565",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "022f05b9-4024-45bd-9dc6-81977b5945fa",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "c92497b7-6212-45d5-bdbd-c4b3c4d8f2a7",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "65e6f160-1b3f-48fb-b22d-799709287794",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "11d57cd1-a375-461a-93b2-ffb7b9aac5f1",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "0b8b1dbf-a50b-4d42-b1cd-d4756719482e",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "aec59d29-3133-4895-b361-3fd185cce279",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "2ea63869-18d9-4a2b-95ff-6ecf681bfbe7",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "5ec77987-2138-4754-ae65-48f16292a806",
+      "result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb"
+    },
+    {
+      "claim_id": "2a50bb55-99be-4765-acea-75d55473fe3a",
+      "result_id": "59f84a04-aacc-49a7-932c-28da4e2931b4"
+    },
+    {
+      "claim_id": "58d45b1d-ae88-47e7-9fe4-b749be87453a",
+      "result_id": "59f84a04-aacc-49a7-932c-28da4e2931b4"
+    },
+    {
+      "claim_id": "bcad5176-83a3-4bcd-a103-49b06e37e1df",
+      "result_id": "59f84a04-aacc-49a7-932c-28da4e2931b4"
+    },
+    {
+      "claim_id": "0fd0aa33-8a00-461a-af88-4f7bd2801875",
+      "result_id": "59f84a04-aacc-49a7-932c-28da4e2931b4"
+    },
+    {
+      "claim_id": "ca8d3231-bcd4-4e25-bf00-d2751c8fa132",
+      "result_id": "59f84a04-aacc-49a7-932c-28da4e2931b4"
+    },
+    {
+      "claim_id": "e5eb599e-6785-40c0-8a17-093dd5ae4b48",
+      "result_id": "63d472fd-6d37-49ef-8404-c896ebb89e98"
+    },
+    {
+      "claim_id": "85f1f8c9-d0ac-4f3a-89ab-2022ec9f49e4",
+      "result_id": "63d472fd-6d37-49ef-8404-c896ebb89e98"
+    },
+    {
+      "claim_id": "71d8ac39-3619-4922-83ed-2eb6b84ee58d",
+      "result_id": "63d472fd-6d37-49ef-8404-c896ebb89e98"
+    },
+    {
+      "claim_id": "4cb4a3a7-fc2d-405c-bb0a-981aa2e193a3",
+      "result_id": "63d472fd-6d37-49ef-8404-c896ebb89e98"
+    },
+    {
+      "claim_id": "3d2ebca1-7c64-41be-bcfb-894e7b2984ce",
+      "result_id": "63d472fd-6d37-49ef-8404-c896ebb89e98"
+    },
+    {
+      "claim_id": "1b672147-77e7-4d80-8610-46ba759fe52d",
+      "result_id": "63d472fd-6d37-49ef-8404-c896ebb89e98"
+    },
+    {
+      "claim_id": "8b2a4925-7376-48f7-a2f2-a08fbc7001ee",
+      "result_id": "63d472fd-6d37-49ef-8404-c896ebb89e98"
+    },
+    {
+      "claim_id": "48c50710-256f-49fc-8f4c-24188411a920",
+      "result_id": "ecffd721-36eb-42b2-b97b-93eea8e42570"
+    },
+    {
+      "claim_id": "d64d8898-4e14-47b2-ba22-8b0486a374bf",
+      "result_id": "ecffd721-36eb-42b2-b97b-93eea8e42570"
+    },
+    {
+      "claim_id": "2d7a1cfa-de87-4796-9ca7-96c7e5343b25",
+      "result_id": "ecffd721-36eb-42b2-b97b-93eea8e42570"
+    },
+    {
+      "claim_id": "81a58169-e313-4a48-a27e-afc473e3dabc",
+      "result_id": "ecffd721-36eb-42b2-b97b-93eea8e42570"
+    },
+    {
+      "claim_id": "e3068ed2-24ae-444f-bf71-e6c35e244f1b",
+      "result_id": "ecffd721-36eb-42b2-b97b-93eea8e42570"
+    },
+    {
+      "claim_id": "74162ab4-fd21-4330-8ff6-9a65ca2c07f5",
+      "result_id": "ecffd721-36eb-42b2-b97b-93eea8e42570"
+    },
+    {
+      "claim_id": "617fc132-9b41-4cf7-b452-5a7cd93eb320",
+      "result_id": "5f140f96-7cad-4b9d-b84c-c839cfd98bb0"
+    },
+    {
+      "claim_id": "d05e39c8-9bc9-49c5-b904-9ae7b67a6ccc",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "6d4ceb8e-1e3a-4fd0-b05b-0df2c65558ed",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "3ce5c96a-5897-4384-8866-87fdd494f861",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "0fb080c9-29c2-4cd6-aa2d-5dab956b1216",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "5ba32b02-a7d9-46d7-90b5-f0536e68f972",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "8590fab0-e8c1-461e-88b0-c2dd39e9ca73",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "6568f39e-3293-44bb-b274-89e00bf93478",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "52646933-4beb-4c0e-a8f2-0904887e36c9",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "385b99f4-d13b-4ba0-996c-7eb996943f9b",
+      "result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39"
+    },
+    {
+      "claim_id": "5483a231-f1b5-4519-92ca-f3471b3937e5",
+      "result_id": "7b12dc30-13e1-4603-aca5-2d126cf517f2"
+    },
+    {
+      "claim_id": "f3c642b3-9082-44d6-b92b-c2e40ede4f60",
+      "result_id": "7b12dc30-13e1-4603-aca5-2d126cf517f2"
+    },
+    {
+      "claim_id": "5e32f5ad-005d-4ce0-81ac-0ec21ddbac8b",
+      "result_id": "7b12dc30-13e1-4603-aca5-2d126cf517f2"
+    },
+    {
+      "claim_id": "1c8ce7d9-9d3b-44ec-81d4-7e12e9250c6f",
+      "result_id": "7b12dc30-13e1-4603-aca5-2d126cf517f2"
+    },
+    {
+      "claim_id": "ac9fedd7-2a10-431a-8bee-61e77a6bf98d",
+      "result_id": "7b12dc30-13e1-4603-aca5-2d126cf517f2"
+    },
+    {
+      "claim_id": "9e1f614d-41e5-496c-8ed9-032de9f869d6",
+      "result_id": "3c7d24b6-c94d-4007-a718-ef23a93e7fb9"
+    },
+    {
+      "claim_id": "d6b5c1a5-24d4-4899-8c4c-80b295dbaa66",
+      "result_id": "3c7d24b6-c94d-4007-a718-ef23a93e7fb9"
+    },
+    {
+      "claim_id": "8b23ab77-0508-49e8-9cf3-c6e03e15569b",
+      "result_id": "3c7d24b6-c94d-4007-a718-ef23a93e7fb9"
+    },
+    {
+      "claim_id": "e41e8506-53ec-4990-b400-a16f88fbee18",
+      "result_id": "3c7d24b6-c94d-4007-a718-ef23a93e7fb9"
+    },
+    {
+      "claim_id": "49d1a28a-f6f1-45fb-b62a-c994600b54e3",
+      "result_id": "3c7d24b6-c94d-4007-a718-ef23a93e7fb9"
+    },
+    {
+      "claim_id": "2071e0fa-4a9a-4666-b98d-ef145a6b2e9b",
+      "result_id": "3c7d24b6-c94d-4007-a718-ef23a93e7fb9"
+    },
+    {
+      "claim_id": "4404721c-ba98-4145-b2d3-60be2e6cc3a2",
+      "result_id": "c7be1075-611d-4893-b9dd-988094f470f2"
+    },
+    {
+      "claim_id": "9002ae34-d2fd-4059-9c2c-6a1f7e532453",
+      "result_id": "c7be1075-611d-4893-b9dd-988094f470f2"
+    },
+    {
+      "claim_id": "46092132-7eaf-45f8-84f3-01c7cf83ec09",
+      "result_id": "c7be1075-611d-4893-b9dd-988094f470f2"
+    },
+    {
+      "claim_id": "0f097f79-6906-4177-90c1-7a3760d4093a",
+      "result_id": "c7be1075-611d-4893-b9dd-988094f470f2"
+    },
+    {
+      "claim_id": "ab1313bc-a02e-4c0c-983b-160546cd067f",
+      "result_id": "c7be1075-611d-4893-b9dd-988094f470f2"
+    },
+    {
+      "claim_id": "6635f740-25b6-4ead-8ce6-8c40e39240a2",
+      "result_id": "c7be1075-611d-4893-b9dd-988094f470f2"
+    },
+    {
+      "claim_id": "3ef76da9-28ef-4c95-93a7-48f303e61fb3",
+      "result_id": "c7be1075-611d-4893-b9dd-988094f470f2"
+    },
+    {
+      "claim_id": "28abcfce-20f8-40bd-ad76-c13bc92621d1",
+      "result_id": "c7be1075-611d-4893-b9dd-988094f470f2"
+    },
+    {
+      "claim_id": "13bfc704-9675-48a5-b0de-0cf48716806a",
+      "result_id": "8f73669e-1bdd-4253-ad6c-15f7c8449951"
+    },
+    {
+      "claim_id": "2c9b86c5-c4be-4e5c-a107-e5e0675e27e6",
+      "result_id": "8f73669e-1bdd-4253-ad6c-15f7c8449951"
+    },
+    {
+      "claim_id": "5d07d896-3df7-40ab-b882-ee2443900c99",
+      "result_id": "8f73669e-1bdd-4253-ad6c-15f7c8449951"
+    },
+    {
+      "claim_id": "1e15f1c3-d348-4bb3-a428-b726d2f862a5",
+      "result_id": "8f73669e-1bdd-4253-ad6c-15f7c8449951"
+    },
+    {
+      "claim_id": "e389db4b-7901-4134-bb6a-5e666f8f832e",
+      "result_id": "8f73669e-1bdd-4253-ad6c-15f7c8449951"
+    },
+    {
+      "claim_id": "f28fa7a2-a701-4b5b-b20a-6093c657aea5",
+      "result_id": "8f73669e-1bdd-4253-ad6c-15f7c8449951"
+    },
+    {
+      "claim_id": "458c32fa-dd0e-4793-a103-0ccdd0bab8ac",
+      "result_id": "8f73669e-1bdd-4253-ad6c-15f7c8449951"
+    },
+    {
+      "claim_id": "0ace5a89-82ac-44a7-8038-a03e8896b397",
+      "result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18"
+    },
+    {
+      "claim_id": "57862bda-2778-48b7-89f8-bcb95b9513ee",
+      "result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18"
+    },
+    {
+      "claim_id": "3ca039b9-3871-4259-bf8f-c7ce264b2cbc",
+      "result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18"
+    },
+    {
+      "claim_id": "1d2a5b7d-ba52-4ce5-87e3-5d8d0d38b345",
+      "result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18"
+    },
+    {
+      "claim_id": "e41f7f3f-62b8-4fd0-95be-b9d0894b63b4",
+      "result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18"
+    },
+    {
+      "claim_id": "0437aac5-a2dd-462b-a542-0d3686f1b695",
+      "result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18"
+    },
+    {
+      "claim_id": "99240e4f-3c9d-4e08-91a2-a1f90d70046a",
+      "result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18"
+    },
+    {
+      "claim_id": "f764220b-400f-4bc8-ba0b-a4099ad42e20",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "2af2f045-6688-4884-ad99-8f591eecdbbd",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "20639dfc-bb74-47bb-978d-be5bcd69dcb9",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "44235f6a-cba7-4b80-b56a-484b8f148ea5",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "3848bc21-5474-46fa-b971-826fa73081c4",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "8952e2be-18e7-4458-95ff-ffb8a7e96900",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "0b611784-f7de-4324-9193-14bd4c0a4ac1",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "b8e207fc-b26b-4b89-9531-6377a76e45a4",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "2759d32f-62bb-42f0-9ff7-f42b9c55ad24",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "76aef210-93c8-4757-be75-8909a18f7775",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "37f65160-4101-40e7-bed0-bbac6a86e442",
+      "result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1"
+    },
+    {
+      "claim_id": "7bafff0c-2226-4d8c-9d63-c47f843fca16",
+      "result_id": "dd687368-0646-4e56-99f3-88f2c5c31c68"
+    },
+    {
+      "claim_id": "98681b87-300c-4560-abb1-0887358e3d1b",
+      "result_id": "dd687368-0646-4e56-99f3-88f2c5c31c68"
+    },
+    {
+      "claim_id": "b439d3bd-c4fc-45b5-88e4-02edbc0f9f2f",
+      "result_id": "dd687368-0646-4e56-99f3-88f2c5c31c68"
+    },
+    {
+      "claim_id": "cefa01fd-9c28-44ca-bb4d-000f96b03957",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "ec594169-0a6f-4c0b-acc1-01b315598f38",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "13d57c4e-dbdb-42d2-a3de-cffa486b237a",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "beb72e56-62d5-43ce-a812-381b34d7c6f5",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "5ef9841f-8cde-4cea-a179-8094cfba4d1b",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "389431d6-af72-4bed-b26a-6794d004fb3f",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "d8a8295a-b76d-4128-a903-d78cd5fdfd11",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "d934bc8b-5108-4fe4-913c-b2e5d0dcd045",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "22a5236a-a0e2-4477-be5e-18601e88cbe7",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "6b3228c2-b8df-48ac-89c0-316e061b29ae",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "a292e485-4fb7-4b58-a8ac-3ca76eae4e42",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "a5a66a92-e330-4b35-a266-aa622b4e7565",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "022f05b9-4024-45bd-9dc6-81977b5945fa",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "c92497b7-6212-45d5-bdbd-c4b3c4d8f2a7",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    },
+    {
+      "claim_id": "2a50bb55-99be-4765-acea-75d55473fe3a",
+      "result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f0e1345b-c8ac-4a54-9f43-5220588a2791",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a5ec0bdf-dcad-482c-b500-c9e7bbc72ba5",
+      "peer_result_id": "67bb3d2b-fe84-4289-8adf-28f082f04f39",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on PA28\u03b3-C1QBP interaction claims (C2, C3, C4, C40, C41, C46, C47, C48, C49). Both evaluations find the evidence SUPPORTED, with OpenEval emphasizing convergence of computational and experimental approaches, while peer reviewers explicitly affirm that 'theoretical models for the interaction were supported by the experimental data.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "c72cf1b1-f05a-4f46-b0c1-a85f8f72b206",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "67e67ffe-a069-4917-ab6f-5cd8efd0a6cc",
+      "peer_result_id": "7b12dc30-13e1-4603-aca5-2d126cf517f2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on protein stabilization claims (C5, C42, C43, C44, C45). Both evaluations find the evidence SUPPORTED. OpenEval highlights multiple complementary approaches demonstrating enhanced stability, while peer reviewers acknowledge the positive correlation and implicitly accept the stability data by suggesting future mutation experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "0c055c56-b4b7-4faf-9896-2fc9c3e12fc2",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "5b96067a-e828-4f0f-9fc8-96af20a96ace",
+      "peer_result_id": "3c7d24b6-c94d-4007-a718-ef23a93e7fb9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on colocalization and mitochondrial effects (C6, C7, C8, C50, C51, C57). Both evaluations find the evidence SUPPORTED. OpenEval includes C59 (rescue experiments) while peer review does not explicitly mention it. Both emphasize the solid evidence for colocalization and mitochondrial morphological/molecular changes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "64454418-bd76-4325-9e60-040749aa7835",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "8ff5ad12-fc41-43f3-80e6-8ba0a790ffdc",
+      "peer_result_id": "c7be1075-611d-4893-b9dd-988094f470f2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on mitochondrial functional consequences (C9, C10, C11, C52, C53, C54, C55, C56). Both evaluations find the evidence SUPPORTED. OpenEval emphasizes direct measurements and bidirectional effects, while peer reviewers affirm the evidence for 'effect on mitochondrial form and function' as solid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "23277139-25fd-4c2d-b2d5-630919cb27da",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "07d51ad1-9620-439b-8c90-0678eb605e48",
+      "peer_result_id": "8f73669e-1bdd-4253-ad6c-15f7c8449951",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on C1QBP dependency claims (C12, C58, C59, C60, C61, C62, C63). Both evaluations find the evidence SUPPORTED. OpenEval emphasizes rescue experiments establishing C1QBP as critical mediator, while peer reviewers accept the dependency relationship and suggest future validation with mutants.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "324b4988-231a-41c2-b92d-6f765fccba15",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "fe199449-88fa-4a95-8c46-2dda3f353b2e",
+      "peer_result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on in vivo validation (C13, C14, C15, C16). Both evaluations find the evidence SUPPORTED. OpenEval focuses on these specific tumor growth and biochemical measurements, while peer review R6 also includes C17, C18, C19 (knockout mouse specificity) in their broader affirmation of in vivo evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "391b23f5-3882-475a-be19-fc1df3551131",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "4236f1b2-a1fc-4663-a5c3-d90f83e8443e",
+      "peer_result_id": "4e2fa7a9-52be-4851-84f9-9877052d5d18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R7 addresses knockout mouse specificity (C17, C18, C19) separately as SUPPORTED, while peer review R6 groups these with broader in vivo validation (C13-C19). Both find the evidence solid, but OpenEval distinguishes the specificity demonstration from general in vivo effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "181ee1ef-c700-4abb-8912-b9bfa0b0ecab",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a9a21d21-bd7b-497b-a4c7-fbfc930bc37d",
+      "peer_result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on clinical correlation. OpenEval R8 focuses on IHC correlation (C20, C21, C64, C65) as SUPPORTED, while peer review R7 encompasses broader clinical findings including prognostic value (C20-C22, C64-C70, C100). Both affirm clinical relevance but peer review groups correlation and prognosis together.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "1e8647d4-9a71-413c-8510-5d94b593c24a",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "1f0b2077-ecca-4623-bdf2-55ae8a620fd1",
+      "peer_result_id": "38bc028e-8384-4f40-b37b-af7c8ac18da1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on prognostic value. OpenEval R9 focuses specifically on prognostic validation across cohorts (C22, C66-C70, C100) as SUPPORTED, while peer review R7 groups this with clinical correlation (C20-C22, C64-C70, C100). Both find the clinical evidence solid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "36b383e5-6006-4886-a958-289cc7e19445",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "2cd2c219-f8cc-476c-a6d8-cd9f9f6e2a9d",
+      "peer_result_id": "dd687368-0646-4e56-99f3-88f2c5c31c68",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on integrative conclusions and therapeutic potential (C73, C74, C101). Both evaluations find the evidence SUPPORTED. OpenEval notes therapeutic potential is inferred rather than directly tested, while peer reviewers affirm the 'overall findings and conceptual framework' and describe it as 'a launch pad for therapeutic intervention.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "540a7e8a-72ef-4717-bf67-5f4cb3bdfe0c",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "3421d8f4-a5f1-4864-a6cd-0a87456d89f0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies C85 (PTM masking mechanism) as UNCERTAIN due to lack of direct experimental evidence, noting it is explicitly speculative. No corresponding peer review evaluation found addressing this specific mechanistic speculation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "6c19550f-1045-4777-adbf-f0e830060426",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "5780c669-6052-43a9-a467-e19d82b120c4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates C91 (tumor cell-intrinsic effects) as SUPPORTED, noting the comparison between immunocompetent and immunodeficient models. No corresponding peer review evaluation specifically addresses this claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "fd4f3c17-cf3c-4958-b9e8-a83e649686b2",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "00cd85dd-4960-425e-b575-cce0087b22b0",
+      "peer_result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R13 addresses background claims about PA28\u03b3 (C1, C23, C24, C28) as SUPPORTED with appropriate citations. Peer review R9 implicitly accepts these and other background claims (C1, C23, C24, C28-C39) without explicit discussion, focusing on novel findings instead.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "98e02da5-b9bf-4310-9742-488b342a955a",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "97825295-84b1-4f94-91d7-69db619b5ef4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims about PA28\u03b3 functions (C25, C26, C27, C82, C83) as SUPPORTED with appropriate citations. No corresponding peer review evaluation explicitly addresses these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "2f105ac9-7f85-4465-a19e-c37bd36f375e",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "e9d5ac09-8801-425e-9c49-15c683f3417b",
+      "peer_result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R15 addresses OSCC background claims (C29-C34) as SUPPORTED. Peer review R9 implicitly accepts broader background claims (C1, C23, C24, C28-C39) including these, without explicit discussion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "60b3404b-2e59-4b98-9f9e-366f3915ebf3",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "3808992b-8d5b-46dd-b0f8-99e536d4bbbb",
+      "peer_result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R16 addresses C1QBP background claims (C35-C38, C75-C80) as SUPPORTED. Peer review R9 implicitly accepts some of these (C35-C38) as part of broader background context without explicit evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "817a9897-61f5-47db-a2f1-ac70fd37eb08",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "59f84a04-aacc-49a7-932c-28da4e2931b4",
+      "peer_result_id": "3259fe7e-f14e-47cb-bed1-87751832cb6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R17 addresses OXPHOS background claims (C39, C72, C97-C99) as SUPPORTED. Peer review R9 implicitly accepts C39 as part of broader background context without explicit discussion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "94d06422-10ab-445e-8377-ca547c32eb1b",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "63d472fd-6d37-49ef-8404-c896ebb89e98",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates general metabolism background claims (C71, C81, C92-C96) as SUPPORTED. No corresponding peer review evaluation explicitly addresses these established biological facts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "a1814df7-8233-4bc2-abcb-c9bea97b9348",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "ecffd721-36eb-42b2-b97b-93eea8e42570",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates discussion of prior work and context-dependent effects (C84, C86-C90) as SUPPORTED. No corresponding peer review evaluation explicitly addresses these discussion points.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    },
+    {
+      "id": "be9f090e-2c34-4529-8742-74260e2b4199",
+      "submission_id": "25cc175c-c66b-4ffa-9c8a-d382c0528359",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "5f140f96-7cad-4b9d-b84c-c839cfd98bb0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates novelty claim (C102) as UNCERTAIN, noting difficulty in verifying 'first' claims without comprehensive literature review. No corresponding peer review evaluation explicitly addresses this novelty claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:32:48.246226Z"
+    }
+  ]
+}

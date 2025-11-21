@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors identified two ICD-associated subtypes (ICD-high and ICD-low) in bladder cancer patients through unsupervised clustering of 34 ICD-related genes. The ICD-high group showed significantly longer survival (p=0.039), higher tumor mutational burden, and elevated immune microenvironment activation compared to the ICD-low group.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the establishment of ICD-related subtypes and their association with survival and immune infiltration as a strength. The reviewer noted 'the establishment of an ICD-related gene risk model based on publicly available datasets (TCGA and GEO)' provides useful clinical guidance, though they characterized the evidence as 'potential but weak.' The clustering and survival associations are accepted but within the context of methodological limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The ICD-high group exhibited higher immune infiltration scores, increased levels of CD8+ T cells and activated CD4+ memory T cells, elevated expression of immune checkpoint genes (PDCD1, CTLA4, LAG3, etc.), and higher HLA gene expression. However, these immune cells appeared to be in a state of functional exhaustion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised significant concerns about the immune infiltration analyses, noting that 'immune infiltration analyses based primarily on bulk RNA-Seq data have inherent methodological limitations, such as inability to distinguish cell subsets accurately.' They recommended that 'incorporation of robust single-cell sequencing would significantly enhance the reliability of these findings.' The interpretation of immune exhaustion is accepted conceptually but the evidence strength is questioned due to methodological constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C106"
+    ],
+    "result": "The ICD-high group showed better outcomes when treated with PD1-targeted therapy (alone or combined with CTLA4), but significantly worse outcomes without immunotherapy. This demonstrates that targeting PD-1 is crucial for improving prognosis in ICD-high patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledged these findings as 'intriguing' but expressed reservations, stating that 'conclusions regarding differences in immunotherapy response rates between patient subgroups...remain based on retrospective database analyses with relatively limited demographic and clinical detail.' They emphasized that 'future prospective studies or more detailed patient characterization would be required to robustly confirm these associations.' The associations are noted but require stronger validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C101",
+      "C103"
+    ],
+    "result": "A risk-scoring model was constructed using four ICD-related genes (CALR, IFNB1, IFNG, IL1R1) through LASSO regression. The model was validated across TCGA-BLCA and GSE13507 datasets, showing that high-risk patients had significantly shorter survival times (p<0.05) in both cohorts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers recognized this as a major strength, noting 'the establishment of an ICD-related gene risk model based on publicly available datasets (TCGA and GEO) and further validated through tissue arrays' provides clinical guidance. They also acknowledged 'the integration of multi-dimensional data (gene expression, mutation burden, immune infiltration, and treatment responses) strengthens the clinical applicability of the model.' However, they characterized the clinical guidance as 'potential but weak,' indicating acceptance with reservations about strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TP53, TTN, KMT2D, MUC16, and ARID1A were the most frequently mutated genes in both risk groups. TMB did not differ between risk groups, but high TMB was associated with longer survival (p<0.001), with the best prognosis in low-risk + high TMB patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mutation and TMB findings are presented as part of the multi-dimensional data integration that reviewers acknowledged strengthens the model. No specific concerns were raised about the mutation analysis or TMB associations, suggesting implicit acceptance of these supporting findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Individual gene expression analysis showed that patients with low CALR and IL1R1 expression had better prognosis, while those with high IFNB1 and IFNG expression had better prognosis. These associations were validated in tissue arrays.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the validation through tissue arrays as a strength, noting the model was 'further validated through tissue arrays and preliminary single-cell RNA sequencing data.' The consistency between datasets and tissue validation supports these prognostic associations, though within the context of overall 'potential but weak clinical guidance.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The risk score was associated with advanced disease stage and grade, showed moderate predictive performance (AUC 0.630-0.651 for 1-5 year survival), and served as an independent prognostic factor (p<0.001). Higher risk scores were seen in advanced stages with significant survival differences across most subgroups.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These clinical associations are part of the multi-dimensional validation that reviewers acknowledged. The independent prognostic value and stage associations support the model's clinical applicability, which reviewers noted as a strength despite calling for 'further refinement and validation of the predictive models' to enhance impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C102"
+    ],
+    "result": "The high-risk group showed significantly lower immune scores, reduced anti-tumor immune cell infiltration (CD8+ T cells, activated CD4+ memory T cells), and lower immune pathway activity. Risk scores negatively correlated with anti-tumor immune cells but positively correlated with immunosuppressive cells, indicating weaker anti-tumor immune function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised methodological concerns about immune infiltration analyses, stating they are 'based primarily on bulk RNA-Seq data' with 'inherent methodological limitations.' While the correlations are noted, reviewers emphasized that 'incorporation of robust single-cell sequencing would significantly enhance the reliability of these findings,' indicating the evidence is accepted but with significant reservations about its strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Drug sensitivity analysis showed the high-risk group had higher sensitivity to sorafenib, epothilone B, docetaxel, and others, but increased resistance to lenalidomide, sunitinib, gefitinib, methotrexate, and camptothecin.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers specifically questioned the drug sensitivity findings, noting that 'the unexpected correlations between ICD-related genes and various targeted therapies need further mechanistic validation.' They cautioned that 'the observed relationships may reflect indirect associations rather than direct biological relevance, which warrants cautious interpretation.' This indicates significant uncertainty about the biological meaning of these associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Without immunotherapy, there was no significant survival difference between risk groups. However, with at least one form of immunotherapy, the low-risk group had significantly higher response rates than the high-risk group.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted these immunotherapy response findings as 'intriguing' but emphasized they 'remain based on retrospective database analyses with relatively limited demographic and clinical detail.' They stated that 'future prospective studies or more detailed patient characterization would be required to robustly confirm these associations,' indicating the findings are preliminary and require stronger validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C77"
+    ],
+    "result": "Immunofluorescence validation showed CALR expression was higher in tumor tissues than normal tissues (consistent with TCGA data), while IL1R1, IFNB1, and IFNG showed no significant differences. Tissue array validation confirmed high-risk patients had significantly shorter survival.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the tissue-based validation as a strength, noting the model was 'further validated through tissue arrays.' The consistency between computational predictions and experimental validation in tissues supports these findings, though reviewers noted the overall clinical guidance remains 'potential but weak.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C98"
+    ],
+    "result": "The risk score showed significant positive correlation with immune suppression markers (CD39, CD8+LAG3+ exhaustion) and negative correlation with CD8+ T cell infiltration, but no correlation with tumor volume or T-stage. This indicates higher risk scores are strongly linked to immune suppression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While these correlations with immune markers are presented, reviewers' concerns about 'immune infiltration analyses based primarily on bulk RNA-Seq data' with 'inherent methodological limitations' apply here as well. The tissue microarray correlations provide some validation, but reviewers emphasized the need for 'robust single-cell sequencing' to enhance reliability, suggesting uncertainty about the strength of these associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C100"
+    ],
+    "result": "Single-cell sequencing analysis revealed CALR is expressed in nearly all TME cells, IL1R1 is mainly expressed in tumor-associated fibroblasts and endothelial cells (linked to immunosuppression), and IFNG/IFNB1 are minimally expressed primarily by T lymphocytes. This suggests cancer-associated fibroblasts play a crucial role in remodeling the immune microenvironment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the inclusion of 'preliminary single-cell RNA sequencing data' as part of the validation, though they noted it was preliminary. The single-cell analysis addresses one of their key concerns about bulk RNA-seq limitations. While they emphasized that future studies should 'incorporate robust single-cell sequencing,' the preliminary data provided is accepted as supporting evidence for cell-type-specific expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims about bladder cancer epidemiology, classification, treatment approaches, immunotherapy approvals and response rates, ICD mechanisms, and the lack of conclusive evidence for ICD-based therapies in BLCA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are standard background claims supported by citations to published literature. Reviewers did not question these foundational statements, and they provide accepted context for the study rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C104",
+      "C105"
+    ],
+    "result": "Discussion and interpretation claims about the biological roles of the four genes, the relationship between immune cell quantity and function, the importance of immune exhaustion, and how the risk model categorizes patients based on immune infiltration patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns about interpretation, noting that 'the ICD-related gene set includes many genes broadly associated with immune activation rather than specifically ICD' and that 'clearly distinguishing ICD-specific versus general immune-response genes in future studies would help clarify biological implications.' This suggests uncertainty about whether the observed associations are specifically related to ICD or reflect broader immune processes. The mechanistic interpretations are accepted as plausible but require clearer biological validation.",
+    "result_type": "MINOR"
+  }
+]

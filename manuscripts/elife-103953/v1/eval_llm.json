@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Trastuzumab-resistant HER2-positive breast cancer patients exhibit distinct amino acid metabolic patterns, particularly elevated plasma cystine levels and increased SLC7A11 expression. Metabolomic analysis of patient plasma identified 203 differentially abundant metabolites, with pathway enrichment showing reduced glycine/serine/threonine and cysteine/methionine metabolism in resistant patients. Transcriptomic analysis of the I-SPY2 trial revealed dysregulated amino acid metabolism genes in non-pCR patients, with SLC7A11 specifically upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide converging evidence from both metabolomics (patient plasma samples) and transcriptomics (I-SPY2 trial) demonstrating altered amino acid metabolism in trastuzumab-resistant patients. The metabolomic data (C15-C17) shows specific changes in amino acid abundances, while transcriptomic data (C18-C20) confirms dysregulation at the gene expression level, with SLC7A11 identified as a key differentially expressed gene. The multi-omics approach strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Trastuzumab-resistant JIMT1 cells display distinct cysteine metabolism compared to sensitive SKBR3 cells, characterized by upregulated SLC7A11 and GSS, downregulated GPX4 and GSR, higher cysteine uptake and intracellular levels, but lower GSH/GSSG ratio. Multi-omics analysis identified widespread metabolic differences (416 hydrophilic and 958 lipophilic metabolites) and transcriptomic changes (9,158 genes), with joint pathway analysis highlighting aberrant glutathione metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 provide comprehensive multi-omics characterization of cysteine metabolism differences between resistant and sensitive cell lines. The metabolomic data (C21-C22), transcriptomic data (C23-C24), integrated pathway analysis (C25), and functional validation (C26) collectively support the conclusion of distinct cysteine metabolism in resistant cells. The consistency across multiple data types and experimental approaches strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Targeting cysteine metabolism through SLC7A11/GPX4 inhibition or cysteine starvation induces ferroptosis in HER2-positive breast cancer cells, with JIMT1 showing greater sensitivity to pharmacological inhibitors but tolerance to cysteine starvation. Trastuzumab treatment decreases SLC7A11 expression and cystine uptake, and combination with erastin or cysteine starvation synergistically enhances ferroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 demonstrate that disrupting cysteine metabolism induces ferroptosis through multiple complementary approaches: genetic knockdown (C27), pharmacological inhibition (C28, C30-C31), and nutrient deprivation (C29-C30). The differential sensitivity between cell lines (C28-C29, C31) and synergistic effects with trastuzumab (C32-C34) are well-documented with lipid peroxidation measurements. The mechanistic link between trastuzumab-mediated SLC7A11 downregulation and enhanced ferroptosis sensitivity is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In vivo xenograft studies demonstrate that combining trastuzumab with either erastin or cysteine starvation effectively inhibits tumor growth in trastuzumab-resistant JIMT1 models without significant toxicity. Cysteine starvation combined with trastuzumab uniquely increases tumor-infiltrating NK cells, though NK cell activation and functional markers remain unchanged. Immunohistochemistry confirms upregulation of ferroptosis markers (MDA, 4-HNE) in combination treatment groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide in vivo validation of the therapeutic strategy with appropriate controls and multiple endpoints. Tumor growth inhibition (C35), safety assessment (C36), immune cell analysis (C37-C38), and ferroptosis marker validation (C39) collectively support the efficacy of combination therapy. However, the lack of NK cell functional changes (C38) despite increased infiltration (C37) suggests incomplete understanding of the immune mechanism, though this does not undermine the primary tumor growth inhibition result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Epigenetic analysis reveals that H3K4me3, but not H3K27me3, is enriched at the SLC7A11 promoter in trastuzumab-resistant JIMT1 cells. Inhibiting ASH2L, a COMPASS complex subunit, reduces global and SLC7A11-specific H3K4me3 levels, decreases SLC7A11 expression and cysteine uptake, and increases lipid peroxidation and ferroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 establish a clear mechanistic link between H3K4me3 modification and SLC7A11 expression through ChIP-seq analysis (C40-C43) and functional validation via ASH2L knockdown (C44-C45). The specificity of H3K4me3 enrichment at the SLC7A11 promoter in resistant cells, combined with the functional consequences of reducing this modification, provides strong evidence for epigenetic regulation of cysteine metabolism. The cascade from histone modification to gene expression to metabolic phenotype to ferroptosis is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "DNA methylation analysis shows decreased CpG methylation at the SLC7A11 promoter in JIMT1 compared to SKBR3 cells. CRISPR-based targeted methylation using dCas9-DNMT3A successfully increases methylation at the SLC7A11 promoter, reduces SLC7A11 expression and cysteine uptake, and induces lipid peroxidation and ferroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 demonstrate DNA methylation as a regulatory mechanism for SLC7A11 expression through genome-wide analysis (C46-C48) and functional validation using CRISPR-based epigenetic editing (C49-C50). The use of dCas9-DNMT3A with targeted sgRNAs provides strong causal evidence that increased promoter methylation directly suppresses SLC7A11 expression and induces ferroptosis. The validation by MeDIP-qPCR (C49) confirms successful targeted methylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Integrated multi-omics analysis identifies aberrant cysteine metabolism as a key feature of trastuzumab-resistant HER2-positive breast cancer. The study demonstrates that increased H3K4me3 and decreased DNA methylation enhance SLC7A11 transcription and cystine uptake, and that targeting this pathway through SLC7A11 inhibition or cysteine starvation synergizes with trastuzumab to induce ferroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 summarize the main findings of the study, which are well-supported by the comprehensive experimental evidence presented in the manuscript. The integration of metabolomics, transcriptomics, and epigenomics (C70) successfully identifies cysteine metabolism alterations (C71), the therapeutic strategy is validated both in vitro and in vivo (C72), and the epigenetic mechanisms are clearly established (C73-C74). The convergence of multiple lines of evidence across different experimental approaches strongly supports these summary claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study utilized a well-characterized patient cohort of 26 trastuzumab-resistant and 26 sensitive HER2-positive breast cancer patients, with blood samples collected before treatment. Cell line experiments employed authenticated JIMT1 and SKBR3 cell lines from ATCC, verified by STR profiling and tested negative for mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe the study materials and quality control measures. The patient cohort definition (C75) follows established criteria for trastuzumab resistance, sample collection timing (C76) is appropriate for baseline metabolic profiling, and cell line authentication (C77-C78) meets standard requirements. These methodological details support the validity of the experimental system, though the relatively small patient cohort size (n=26 per group) could be noted as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims establish that HER2-positive breast cancer represents 15-20% of cases, HER2 overexpression drives cancer progression, trastuzumab is the foundational treatment, approximately 50% of patients develop resistance, and resistance mechanisms include HER2 mutation, epitope variation, compensatory pathway activation, and tumor heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-established facts in the field, supported by appropriate citations to published literature. These background claims provide necessary context for the study but do not represent novel findings. The citations appear appropriate and the claims accurately reflect current understanding of HER2-positive breast cancer and trastuzumab resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims establish that metabolic reprogramming is a cancer hallmark, various metabolic pathways modulate cancer cell function, different breast cancer subtypes have distinct metabolic patterns, and targeting metabolism may enhance treatment efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 provide established background on cancer metabolism, supported by appropriate citations. These are well-accepted concepts in cancer biology that provide rationale for the study's focus on metabolic alterations in trastuzumab resistance. Claim C9 involves some speculation about therapeutic potential, but is appropriately framed and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establish that epigenetic modifications play crucial roles in cancer development and drug resistance, including alterations in chromatin structure, DNA methylation, and histone modifications. Specific examples include COMPASS complex inactivation in breast cancer tumorigenesis and aberrant DNA methylation in drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 provide established background on epigenetic regulation in cancer, supported by appropriate citations. These claims set up the rationale for investigating epigenetic mechanisms in trastuzumab resistance. The citations appear appropriate and the claims accurately reflect current understanding of epigenetic contributions to cancer progression and drug resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Background claims establish that cysteine is obtained from diet, protein catabolism, and transsulfuration; cystine is imported by SLC7A11; GSH biosynthesis protects against ferroptosis; and targeting the cysteine/GSH/GPX4 axis induces ferroptosis in various cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide established biochemical and cell biological background on cysteine metabolism and ferroptosis, supported by appropriate recent citations. These are well-accepted concepts that provide necessary context for interpreting the study's findings. The claims accurately reflect current understanding of cysteine metabolism and its role in ferroptosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Background claims establish that HER2 inhibition impairs redox homeostasis, tumor cells may adapt through antioxidant pathways, trastuzumab's anti-tumor effects rely on NK cell-mediated ADCC, and ferroptosis may activate PUMA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide relevant background connecting HER2 inhibition to metabolic stress and immune mechanisms, supported by appropriate citations. Claims C56 and C58 involve some speculation (indicated by 'might'), but are appropriately framed and supported by literature. These claims help contextualize the study's findings regarding combination therapy and immune effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Background claims establish that H3K4me3 and H3K27me3 modifications are important for gene expression, MLL mutations and H3K4me3 alterations contribute to tumor initiation, H3K27me3 modulates chemotherapy tolerance in TNBC, combination with H3K27me3 demethylation inhibitors prevents persister cell proliferation, and KDM6A targeting inhibits JIMT1 growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide relevant background on histone modifications in cancer, supported by appropriate citations including prior work on JIMT1 cells. Claim C60 involves some speculation about tumor initiation mechanisms, but is appropriately framed. These claims establish precedent for investigating histone modifications in trastuzumab resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Background claims establish that cancers feature abnormal DNA methylation patterns, dysregulated methylation contributes to breast cancer tumorigenesis and drug resistance, trastuzumab-resistant breast cancer shows hypermethylation-mediated gene silencing, and aberrant DNMT expression correlates with endocrine therapy resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide relevant background on DNA methylation in cancer and drug resistance, supported by appropriate citations. These claims establish precedent for investigating DNA methylation changes in trastuzumab resistance and provide context for the study's findings regarding SLC7A11 promoter methylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The study proposes that increased H3K4me3 may interact with DNMT3A-DNMT3L, and that crosstalk between histone modification and DNA methylation may have collaborative effects on cysteine metabolism in trastuzumab-resistant breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 are speculative proposals about potential epigenetic crosstalk mechanisms. While C68 is supported by a citation showing H3K4me3-DNMT3A interaction, C69 extends this to propose collaborative effects on cysteine metabolism without direct experimental validation of this interaction in the study. The manuscript presents evidence for both H3K4me3 and DNA methylation independently regulating SLC7A11, but does not experimentally demonstrate their interaction or collaborative effects. This remains a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  }
+]

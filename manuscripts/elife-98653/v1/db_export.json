@@ -1,0 +1,2398 @@
+{
+  "submission": {
+    "id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:19:00.218962Z",
+    "updated_at": "2025-11-21T16:19:00.218962Z"
+  },
+  "content": [
+    {
+      "id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "content_type": "manuscript",
+      "content_text": "# Sub-type specific connectivity between CA3 pyramidal neurons may underlie their sequential activation during sharp waves\n\n## Authors\n\n- Rosanna P Sammons<sup>1</sup> ([ORCID: 0000-0001-9167-9263](https://orcid.org/0000-0001-9167-9263))\n- Stefano Masserini<sup>2</sup> ([ORCID: 0009-0002-6672-0660](https://orcid.org/0009-0002-6672-0660))\n- Laura Moreno Velasquez<sup>1</sup> ([ORCID: 0000-0001-9735-0039](https://orcid.org/0000-0001-9735-0039))\n- Verjinia D Metodieva<sup>1</sup> ([ORCID: 0000-0003-1942-5140](https://orcid.org/0000-0003-1942-5140))\n- Gaspar Cano<sup>2</sup> ([ORCID: 0000-0003-2076-1547](https://orcid.org/0000-0003-2076-1547))\n- Andrea Sannio<sup>1</sup> ([ORCID: 0009-0005-0259-2411](https://orcid.org/0009-0005-0259-2411))\n- Marta Orlando<sup>1</sup> ([ORCID: 0000-0002-9017-0251](https://orcid.org/0000-0002-9017-0251))\n- Nikolaus Maier<sup>1</sup> ([ORCID: 0000-0001-5203-0736](https://orcid.org/0000-0001-5203-0736))\n- Richard Kempter<sup>2</sup> ([ORCID: 0000-0002-5344-2983](https://orcid.org/0000-0002-5344-2983))\n- Dietmar Schmitz<sup>1</sup> ([ORCID: 0000-0003-2741-5241](https://orcid.org/0000-0003-2741-5241)) \u2020\n\n### Affiliations\n\n1. Charit\u00e9-Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Neuroscience Research Center Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n2. Institute for Theoretical Biology, Department of Biology, Humboldt-Universit\u00e4t zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))\n3. Bernstein Center for Computational Neuroscience Berlin Germany ([ROR:05ewdps05](https://ror.org/05ewdps05))\n4. Charit\u00e9-Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Einstein Center for Neurosciences Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n5. German Center for Neurodegenerative Diseases (DZNE) Berlin Germany ([ROR:043j0f473](https://ror.org/043j0f473))\n6. Max-Delbr\u00fcck Center for Molecular Medicine in the Helmholtz Association Berlin Germany ([ROR:04p5ggc03](https://ror.org/04p5ggc03))\n7. Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, NeuroCure Cluster of Excellence Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe CA3 region of the hippocampus is the major site of sharp wave initiation, and a brain region crucially involved in learning and memory. Highly recurrent connectivity within its excitatory network is thought to underlie processes involved in memory formation. Recent work has indicated that distinct subpopulations of pyramidal neurons within this region may contribute differently to network activity, including sharp waves, in CA3. Exactly how these contributions may arise is not yet known. Here, we disentangle the local connectivity between two distinct CA3 cell types in mice: thorny and athorny pyramidal cells. We find an asymmetry in the connectivity between these two populations, with athorny cells receiving strong input from both athorny and thorny cells. Conversely, the thorny cell population receives very little input from the athorny population. Computational modeling suggests that this connectivity scheme may determine the sequential activation of these cell types during large network events such as sharp waves.\n\n## Introduction\n\nThe hippocampus is one of the most studied brain regions in neuroscience. Since the study of patient H.M., the hippocampus has been established as an essential brain region for the formation of new memories (Scoville and Milner, 1957). In the decades following, a plethora of research has revealed insights into how the hippocampus contributes to memory processing. One hallmark of hippocampal activity that underlies memory formation is the sharp wave-ripple complex (SPW-R). SPW-Rs are large network events characterised by the synchronous discharge of huge numbers of hippocampal pyramidal (CA3) neurons (the sharp wave, SPW), followed by oscillatory activity downstream in the CA1 (ripple). During non-REM sleep, SPW-Rs essentially replay a compressed version of neural sequences that occurred during events preceding sleep (Wilson and McNaughton, 1994; Lee and Wilson, 2002). It is thought that these SPW-Rs play a key role in memory consolidation. Despite extensive research, the full cellular mechanisms underlying the initiation and propagation of SPW events are still not fully resolved.\n\nThe CA3 region in the hippocampus is considered the main generator of SPWs (Buzs\u00e1ki, 1986). While inhibition is proposed to be instrumental in SPW generation, recent evidence has suggested that a subclass of pyramidal neurons may also play a pivotal role (Hunt et al., 2018). Diversity among pyramidal neuron populations is often overlooked when considering the role of these cells within neuronal circuits. Despite reports of variation within the pyramidal population in the hippocampus (Bilkey and Schwartzkroin, 1990; Fitch et al., 1989), much more attention has been paid to the heterogeneity of interneurons. However, several studies have reported functional and morphological heterogeneity within the pyramidal CA3 cell population (Bilkey and Schwartzkroin, 1990; Sun et al., 2017; Marissal et al., 2012; Lee et al., 2015). Attention is now turning to this rich assortment of pyramidal cells, and recent efforts have begun to tease apart the distinct roles of these sub-types in functional circuits (Cembrowski and Spruston, 2019; Soltesz and Losonczy, 2018; Valero and de la Prida, 2018). A recent study described two distinct sub-types of CA3 pyramidal neurons, differentiated by the presence or absence of complex spine structures called thorny excrescences (the post-synaptic site of input coming from mossy fibres of the dentate gyrus granule cells) (Hunt et al., 2018). The study showed that cells lacking these thorny excrescences, termed athorny pyramids, fire before thorny pyramids during SPWs (Hunt et al., 2018). Therefore, it is proposed that athorny cells play an important role in SPW initiation and, in turn, in memory processing in CA3. However, it is unknown how these two sub-types of pyramidal neuron are embedded in the local microcircuit. We have previously shown that CA3 pyramidal cells connect to each other at a high rate (8.8%) (Sammons et al., 2024). Here, we investigate the local sub-type specific connectivity between thorny and athorny CA3 pyramids and find a distinct asymmetry. When implementing this asymmetry into a computational model, we find that sub-type specific connectivity is crucial for the distinct firing times of athorny and thorny cells during SPWs.\n\n## Results\n\nTo examine the connectivity between thorny and athorny pyramidal cells in CA3, we performed whole-cell patch clamp recordings from up to eight cells simultaneously. Cells were post hoc classified as thorny or athorny using biocytin labelling and confocal microscopy to determine the presence or absence of thorny excrescences (Figure 1A). In total, we recorded from 348 CA3 pyramids across the length of the CA3 (CA3a: 20 cells, CA3b: 274 cells, CA3c: 54 cells). Of these 348 pyramids, 229 were thorny and 119 were athorny (Figure 1B). We measured the distance from the soma to the first branch on the apical dendrite and found that thorny cells branched significantly closer to the soma than athorny cells (Figure 1C; median [IQR] for thorny: 12.5 [20.9] \u00b5m, athorny: 51.4 [38.0] \u00b5m; $p<0.001$, Mann-Whitney-U test). Furthermore, we found that athorny cells tended to be located deeper in the pyramidal layer, towards the stratum oriens. Meanwhile, thorny cells were found throughout the deep-superficial axis of the pyramidal cell layer (Figure 1D, median [IQR] for thorny: 28 [32] \u00b5m, athorny: 12 [14] \u00b5m, $p<0.001$, Mann-Whitney-U test). These results resemble findings from Marissal et al., 2012 who observed similar differences in soma location and primary apical dendritic length between early and late born CA3 neurons, suggesting that thorny and athorny neurons may be developmentally distinct. We further found differences in maximum firing rate, rheobase and input resistance between thorny and athorny cells, but not in resting membrane potential (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left, image of seven pyramidal neurons recorded simultaneously and filled with biocytin to reveal thorny and athorny morphologies. Right, the magenta box contains a typical example of a thorny CA3 pyramid, gray boxes show close-ups of regions with thorns; yellow box shows a typical athorny pyramidal neuron. Scale bar in left image 100 \u00b5m, in magenta/yellow boxed insets 20 \u00b5m, in gray boxed insets 5 \u00b5m. (B) Proportion of thorny and athorny cells in total recorded pyramidal neurons. (C) Distance from soma to the first branch point for thorny (T) and athorny (A) CA3 pyramidal neurons. (Di) Location of thorny and athorny cell somata across the deep-superficial axis of the pyramidal layer. N numbers for each group shown above boxplots in parentheses. (Dii) Schematic depicting the distribution of thorny and athorny pyramids in the deep-superficial axis of the CA3 pyramidal layer.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Significance calculated using Mann-Whitney U and corrected for multiple comparisons. ***$p<0.001$ *$p<0.05$; For thorny n=185; for athorny n = 103.\n\nNext, we looked at connection rates between these two pyramidal neuron populations. In our whole-cell patch clamp recordings, each cell was stimulated to elicit 4 action potentials, and post-synaptic traces were examined for potential synaptic coupling. We found a high rate of connectivity (15%) between athorny cells (Figure 2Ai), and from thorny onto athorny cells (11%; Figure 2Aii). Thorny cells connected to each other at a rate of 8% (Figure 2Aiii). Meanwhile, connections from athorny onto thorny cells were the least common, occurring at a rate of 4% (Figure 2Aiv). The overall rate of connectivity (65/734 = 8.9%) corresponds well to our previously reported high level of connectivity within the general CA3 pyramidal population (8.8%) (Sammons et al., 2024). We saw reciprocal connections between athorny-athorny pairs (2 reciprocally connected pairs; 4/92 connections = 4%) and thorny-thorny (2 reciprocally connected pairs; 4/362 connections = 1%) pairs of neurons. Synaptic connections were strongest amongst athorny-athorny cells, although no statistically significant differences were present across connection types (Figure 2B, median [IQR] amplitudes for athorny-athorny: 1.08 [0.56] mV; ii, thorny-athorny: 0.88 [1.03] mV; iii, thorny-thorny: 0.57 [0.55] mV; iv, athorny-thorny: 0.66 [0.25] mV; p = 0.370, Kruskal-Wallis test). EPSPs across all connection types had latencies below 3 ms (with the exception of a single connection between two athorny cells which had a latency of 3.58 ms) indicating that identified connections were monosynaptic (Figure 2C). We further looked at the failure rate of each synapse type. Athorny-athorny synapses had the lowest failure rate, although no statistical difference was observed between groups (Figure 2D, median [IQR] failure rate for athorny-athorny: 11.5 [20.5]%, thorny-athorny: 33.0 [36.2]%, thorny-thorny: 21.0 [36.3]%, athorny-thorny: 12.0 [47.5]%, p = 0.729, Kruskal-Wallis test). Additionally, we looked at synaptic dynamics to determine if synapse types had different plasticity qualities. Connections from thorny onto athorny neurons showed significantly more synaptic depression than athorny-athorny connections (Figure 2E; p = 0.008,  Kruskal-Wallis followed by Dunn\u2019s post hoc with Bonferroni correction; all other comparisons $p>0.05$).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig2-v1.jpg)\n\n**Figure 2.:** (A) Connection probabilities (conn. prob.) and example connections: i, from A to A cells (A\u2192A); ii, T\u2192A; iii, T\u2192T; iv, A\u2192T. Scalebars for presynaptic action potentials, 40 mV; for postsynaptic responses, 0.5 mV. (B) Histograms of synaptic amplitudes of the different connection types. Dashed lines represent median values and shaded areas interquartile ranges. (C) Latency of different synaptic connection types, individual points show single connection values. (D) Failure rates of the different synaptic connection types. (E) Short-term plasticity dynamics of different synaptic connection types. Synaptic amplitudes are normalised to the first EPSP in the train of 4 and plotted as mean \u00b1 s.e.m. N numbers for groups shown above plots in parentheses.\n\nTo determine the overall impact of each connection type within the local network, we calculated the synaptic product. This metric takes into account connection probability (Figure 3Ai), connection strength (Figure 3Aii), and size of the presynaptic population (Figure 3Aiii), thereby giving an estimate of how large the input onto the particular cell type is for any given presynaptic population. Thorny-athorny connections show the highest synaptic product, followed by athorny-athorny connections (Figure 3Aiv). Together, our results demonstrate a strong pattern of input onto athorny neurons and much weaker input onto thorny cells, particularly from the athorny sub-population (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig3-v1.jpg)\n\n**Figure 3.:** (Ai) Matrix showing connection rates between the four combinations of connection types, ii, matrix showing mean connection strength for the four connection types, iii, proportion of each cell type found in the CA3 pyramidal population, iv, matrix showing the synaptic product, calculated as the product of the matrices in i and ii multiplied by the presynaptic population size shown in iii. (B) Schematic depicting the connections between the two pyramidal cell types in the CA3, line colour is coded by connection impact.\n\nDuring SPW events, athorny (A) cells have been reported to fire before thorny (T) cells, suggesting that activity propagates in this direction (Hunt et al., 2018). Therefore, it might appear surprising that both connectivity and synaptic product present the opposite asymmetry, with low values for athorny-thorny (A\u2192T) and high values for thorny-athorny (T\u2192A) connections. To understand what dynamics can be expected based on this microcircuit architecture, we constructed a model network in which T and A neurons are connected according to the experimentally observed connections (Figure 4A). In addition to the two pyramidal cell populations, we included two classes of interneurons that have been suggested to play fundamental roles in SPW generation: PV+ basket cells (B), which are active during SPWs, and a putative class of anti-SPW interneurons (C), which fire outside SPWs, keeping the other populations inhibited (Evangelista et al., 2020). Strong reciprocal coupling between the two inhibitory populations gives rise to a bistability between a SPW state and a non-SPW state, and the network alternates between these two states due to adaptation in pyramidal cells (Figure 4Bi), as proposed by Levenstein et al., 2019 as the driving mechanism of SPWs. We tuned model parameters (see Materials and methods) such that the SPW event incidence is \u22481/s (with stochastic onsets driven by finite-size fluctuations) and the average event duration is \u224880 ms (Figure 4Bi).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig4-v1.jpg)\n\n**Figure 4.:** (A) Network scheme. (Bi) Firing rates before, during, and after a sharp wave-ripple complex (SPW). Inset: low-pass filtered estimate of the LFP over a longer window of 10 s. ii, Spike raster plot of a representative sample of each neuron type. iii, Relative increment of the average adaptive currents received by each population with respect to a 200 ms baseline before the event. (C) Effects of varying each connectivity from its default value, marked by a black dashed line and dot. Continuous gold/magenta lines indicate the peak time of each population rate (with the peak of A always plotted at 0), while dashed ones represent the time at which the rate equals 25% of the respective peak. The peak size for each connectivity value is color-coded. In these simulations, the synaptic strengths of all the excitatory-to-excitatory synapses were up- or down-scaled by a common factor, in order to obtain SPW events with a comparable size (measured based on the activity of B interneurons, see Materials and Methods). Insets: firing trace of each population averaged over many events, for particular connectivity values highlighted by the gray arrows.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** These curves (colored solid lines) are compared to experimental data (black dots) from Hunt et al., 2018 for A and T neurons, and from Fidzinski et al., 2015 for B neurons. Dashed lines represent transient firing. Insets: example of firing patterns displayed by the different neurons in response to the specific current values marked by vertical gray lines in the main figure.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Same as Figure 4, but excitatory\u2013to\u2013excitatory synapses are subject to short-term synaptic depression; for details, see Materials and methods. The model dynamics and the effects of excitatory-to-excitatory connections are qualitatively analogous.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Same as Figure 4, but several parameters of thorny and athorny cells are sampled from Gaussian distributions centered around their mean, with a standard deviation based on the data in Figures 2B\u2013C\u20131 (see Materials and methods). Compared to the results with the basic model, here peaks tend to be more spread out in time; however, increasing the A\u2192A or decreasing the A\u2192T connectivity still increases the delay between the peaks.\n\nIn our simulations, a SPW event starts when B cells suppress enough C cells to disinhibit pyramidal neurons. Among the two pyramidal cell populations, A cells subsequently emit a larger number of early spikes, due to a lower rheobase (documented by Hunt et al., 2018, Linaro et al., 2022, and our own data (Figure 1\u2014figure supplement 1)) and a steeper f-I curve (Hunt et al., 2018; Linaro et al., 2022). These initial spikes recruit many further A cells, due to the high A\u2192A connectivity, but only a few T cells, due to the low A\u2192T connectivity. On the other hand, A cells drive the growth of B cells, which in turn inhibit T cells (Figure 4Bi\u2013ii): as a result, A cells have a net inhibitory effect on T cells, which get initially suppressed and can only start firing when the activity of A cells decreases, due to a surge in adaptation (Figure 4Biii). Because T cells are also adaptive, their firing rate also reaches a peak and decreases, ending the SPW event. Together, these dynamics result in clearly distinct peaks of A and T population activities, with an average delay of 29 ms between the peaks (Figure 4Bi\u2013ii). This long delay matches the data by Hunt et al., 2018, which would be hard to explain if T cells were directly recruited by A cells, with monosynaptic latencies shorter than three milliseconds (Figure 2C).\n\nA key ingredient for these dynamics is that the proportion between the A\u2192T and A\u2192A connectivity is such that A has a net inhibitory effect on T, resulting in a long delay between the peaks. We confirm this intuition by varying each of the four connectivities in the model and find that a decreased A\u2192A (Figure 4Ci) or increased A\u2192T (Figure 4Cii) connectivity would indeed prevent the initial suppression of T cells, as activity would build up together in both populations, resulting in almost simultaneous peaks. On the contrary, further increasing A\u2192A or decreasing A\u2192T would more strongly suppress T cells, which could only fire after most A cells have adapted and fallen silent, with delays even over 100 ms. For particularly low A\u2192T connectivities, we even observe two separate A peaks, since the delay becomes so long that A cells partially recover from adaptation by the end of the SPW (Figure 4Cii, left inset). Analogously, connections from T neurons determine whether these provide net excitation or inhibition to A neurons. However, albeit affecting the relative size of the A and T peaks, such connections on their own cannot prevent the early activation of the A population, which depends on single-neuron parameters. Therefore, connections from T cells play a role only in the second part of an event (Figure 4Ciii and Civ). The model dynamics and the effects of excitatory-to-excitatory connectivities qualitatively remain unaltered if we include in the model the experimentally observed short-term depression and variability of synapses (Figure 4\u2014figure supplements 2 and 3).\n\nTo test whether the described relationship between connectivity and delay holds across the parameter space, we explore the six possible combinations of the connectivities examined so far. We find that long delays are consistently found when A\u2192A is large (Figure 5A1,2,3) and when A\u2192T is small (Figure 5A3,4,5), provided that delays do not become so long that population T does not activate at all. Specifically, varying A\u2192T and T\u2192A together offers a good overview of the possible combinations of cooperative and competitive interactions between the two populations (Figure 5A5). If these connectivities were both high, then there would be no competition and the populations would reach their peaks at approximately the same time (top right corner). Conversely, if both connectivities were low, either population could potentially suppress the other. This winner-takes-all competition would be won by the athorny cells because of their earlier activation due to their intrinsic properties (bottom left corner). When A\u2192T is low and T\u2192A is high (bottom right corner), matching experimental conditions, only A can suppress T, resulting in the long delay, while when A\u2192T is high and T\u2192A is low, A is suppressed by T, after nevertheless displaying some early activity. Afterwards, there may or may not be a later peak for the A neurons, after T neurons have adapted. This is why, in the top left corner of Figure 5A5, there can either be a positive or long negative delay, depending on whether the first (small) or second (absent, for some parameters) A peak is taken into account.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig5-v1.jpg)\n\n**Figure 5.:** Average delay between the athorny and the thorny peak, as a function of two connectivity parameters (pairs of excitatory-to-excitatory connections in (A), pairs involving inhibitory connections in (B)). In each simulation, the connectivity rates were varied from their default value (marked by a white dot), while all the excitatory-to-excitatory synaptic strengths were scaled, as in Figure 4, in order to obtain sharp waves with a comparable size. Data points are plotted only if both populations exceed a lower threshold on the firing rate; otherwise, they are grayed out. The same simulations as in (A), but with a different scaling, are reported in Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Same as Figure 5A, but the size of sharp wave-ripple complex (SPW) events is maintained by up- or down-scaling of a common factor the synaptic strengths of A\u2192B and T\u2192B synapses, which in Figure 5B were found to be little relevant for the delay between the peaks. The main results are consistent between the two scalings, except that here it is easier to appreciate that T\u2192T is little relevant for the peak delay, which in Figure 5A appears less clean due to the simultaneous scaling of all the excitatory-to-excitatory conductances.\n\n**Table 1.**\n Single neuron parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Athorny (A)</th>\n      <th>Thorny (T)</th>\n      <th>PV+- Basket (B)</th>\n      <th>Anti-SPW (C)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Population size</td>\n      <td>2700</td>\n      <td>5300</td>\n      <td>150</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>C\\begin{document}$  C$\\end{document}</td>\n      <td>[pF]</td>\n      <td>200</td>\n      <td>200</td>\n      <td>100</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>gL\\begin{document}$  g_{L}$\\end{document}</td>\n      <td>[nS]</td>\n      <td>8</td>\n      <td>11</td>\n      <td>8</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>EL\\begin{document}$  E_{L}$\\end{document}</td>\n      <td>[mV]</td>\n      <td>\u201360</td>\n      <td>\u201370</td>\n      <td>\u201355</td>\n      <td>\u201357</td>\n    </tr>\n    <tr>\n      <td>Vthr\\begin{document}$  V_{thr}$\\end{document}</td>\n      <td>[mV]</td>\n      <td>\u201348</td>\n      <td>\u201344</td>\n      <td>\u201340</td>\n      <td>\u201340</td>\n    </tr>\n    <tr>\n      <td>Vreset\\begin{document}$  V_{reset}$\\end{document}</td>\n      <td>[mV]</td>\n      <td>\u201342</td>\n      <td>\u201346</td>\n      <td>\u201357</td>\n      <td>\u201352</td>\n    </tr>\n    <tr>\n      <td>a\\begin{document}$  a$\\end{document}</td>\n      <td>[nS]</td>\n      <td>4</td>\n      <td>0</td>\n      <td>6</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td>b\\begin{document}$  b$\\end{document}</td>\n      <td>[pA]</td>\n      <td>85</td>\n      <td>150</td>\n      <td>25</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>\u03c4u\\begin{document}$\\tau_{u}$\\end{document}</td>\n      <td>[ms]</td>\n      <td>200</td>\n      <td>200</td>\n      <td>50</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>\u03c4ref\\begin{document}$\\tau_{ref}$\\end{document}</td>\n      <td>[ms]</td>\n      <td>3</td>\n      <td>3</td>\n      <td>3</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>\u0394T\\begin{document}$  \\Delta_{T}$\\end{document}</td>\n      <td>[mV]</td>\n      <td>2.5</td>\n      <td>2.5</td>\n      <td>2.5</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td>Iext\\begin{document}$  I_{ext}$\\end{document}</td>\n      <td>[pA]</td>\n      <td>140</td>\n      <td>285</td>\n      <td>180</td>\n      <td>160</td>\n    </tr>\n  </tbody>\n</table>\n\nThe arguments presented so far assume the existence of indirect inhibitory pathways through the B interneurons, which become dominant in case the direct excitatory pathways are weak. How strong do these pathways need to be for T neurons to be initially suppressed, causing two distinct peaks to emerge? To address this question, we varied pairs of connectivity rates to and from B interneurons (B\u2192A, B\u2192T, A\u2192B, and T\u2192B \u2014 Figure 5B, 9-14) and combinations thereof with the relevant connections among excitatory neurons (A\u2192A in Figure 5B, 1-4 and A\u2192T in Figure 5B, 5-8). In this analysis, it clearly emerges that connections to the B interneurons have only a minor effect on the delay, while connections from the B interneurons are as important as the excitatory connections outlined above. Although the actual values of the inhibitory connectivities are unknown, these simulations demonstrate that there is a broad, clearly distinct, region of the parameter space that supports a long delay between the peaks of A and T. In addition, we see that B interneurons optimally contribute to the suppression of T when they primarily target T (Figure 5B, fourth row and third column) rather than A (Figure 5B, third row and fourth column). Interestingly, in the examples in Figure 4 the B\u2192T connections are weaker than B\u2192A ones (total connection strengths are displayed graphically in Figure 4A). The fact that the long delay nevertheless emerges is due to the measured asymmetric connectivity between the two excitatory populations, in particular the low connectivity from A to T neurons. In conclusion, modeling shows that not only can T cells activate after A cells even if the A\u2192T connectivity is low, but such a low connectivity is also crucial to explain the delay seen in the data by Hunt et al., 2018 and in our model.\n\n## Discussion\n\nOur work combines electrophysiology and computational modeling to determine connectivity patterns within the local CA3 excitatory network and to show how these rules could govern the timing of excitatory subpopulation activation during sharp wave events.\n\nWe corroborate previous findings that a subset of CA3 pyramidal cells appears to lack thorny excrescences typical of mossy fiber inputs, and thus, the population can be divided into thorny and athorny neurons (Hunt et al., 2018). Moreover, we find that the connectivity between these classes is distinctly asymmetric, with athorny cells receiving ample input from themselves and thorny cells, but thorny cells receiving sparse inputs from athorny pyramids. Though classified by location in the pyramidal layer (deep and superficial) rather than thorny or athorny, two other groups have recently reported similar findings using two different experimental methods (Watson et al., 2024; Layous et al., 2025). Both studies report superficial neurons frequently innervating themselves and deep CA3 pyramids and much less frequent connectivity from deep to superficial cells. Together with our data showing that athorny cells tend to be located deeper in the pyramidal layer, these results reflect a similar pattern of asymmetric connectivity.\n\nOur modeling shows that asymmetric connectivity is crucial for SPW events to have two distinct peaks with only partially overlapping activity for the two pyramidal populations, matching the data by Hunt et al., 2018. The long delay (tens of milliseconds) in our model is explained by the ambivalent role of athorny neurons, which on the one hand switch the network to the SPW state, but on the other hand initially disynaptically suppress the thorny neurons. The switch to the SPW state occurs because PV+ basket cells take over from anti-SPW interneurons, a putative class proposed by Evangelista et al., 2020 to explain the paradoxical triggering of SPWs by in vitro stimulation of PV+ basket cells (Schlingloff et al., 2014). Although their existence in CA3 still needs to be demonstrated, an interneuron class with similar properties was identified in CA1 (Dudok et al., 2021). During a SPW, the initial suppression of thorny neurons occurs through the shared pool of PV+ basket cells. The long delay that we observed in our model does not require special asymmetries in the connectivity between the interneurons and the pyramidal populations, given the measured values of excitatory connectivity. However, at least some baseline connectivity from athorny to basket and from basket to thorny neurons is required for the proposed disynaptic inhibition to exist. More detailed data on the interneuron connectivity would further deepen our understanding of subpopulation timing and other aspects of the initiation and propagation of SPW-ripple complexes.\n\nThe further functional relevance of these two cell populations remains unclear. The CA3 pyramidal population has two developmentally distinct groups \u2014 early-born and late-born cells (Marissal et al., 2012). These developmentally distinct subpopulations have been shown to exhibit functionally different roles in memory encoding, with late-born cells recruited earlier in the encoding process than early-born cells (Kveim et al., 2024). Currently, it is not known whether thorny and athorny cells might map onto the two developmentally distinct populations. However, certain features of early- and late-born neurons are suggestive of an overlap with athorny and thorny cells, respectively. Early-born neurons tend to be located closer to the stratum oriens and have longer primary apical dendrites (Marissal et al., 2012), reminiscent of our findings on athorny cells. Moreover, modulation of thorn density has been reported through excessive training in spatial memory tasks and chemically via steroid hormones (G\u00f3mez-Padilla et al., 2020; Hatanaka et al., 2009; Tsurugizawa et al., 2005). However, it is unclear whether modulation may result in the complete transition of thorny neurons to athorny cells or growth of thorns in previously athorny neurons.\n\nThe present work extends our existing knowledge of how the local excitatory network in the CA3 region is organized. In line with recent evidence that the CA3 pyramidal population is non-homogeneous, we find that connectivity between these pyramids is asymmetric across subpopulations. Our modeling work shows that this asymmetry is key in maintaining the separation of peak firing between the two populations, thorny and athorny, during sharp wave events.\n\n## Materials and methods\n\n### Electrophysiology\n\n#### Slice preparation\n\nMice (C57/Bl6n, bred in-house and originating from Charles River, P25+, average age: P40, both sexes) were decapitated following isoflurane anesthesia. Brains were removed and transferred to ice-cold, sucrose-based artificial cerebrospinal fluid (sACSF) containing (in mM) 50 NaCl, 150 sucrose, 25 NaHCO3, 2.5 KCl, 1 NaH2PO4, 0.5 CaCl2, 7.0 MgCl2, 10 glucose, saturated with 95% O2, 5% CO2, pH 7.4. Slices (400 \u00b5m) were cut in a horizontal plane on a vibratome (VT1200S; Leica) and stored in an interface chamber at 32\u201334 \u00b0C. Slices were perfused at a rate of \u223c1 ml/min with artificial cerebrospinal fluid (ACSF) containing (in mM) 119 NaCl, 26 NaHCO3, 10 glucose, 2.5 KCl, 2.5 CaCl2, 1.3 MgCl2, 1 NaH2PO4, and continuously oxygenated with carbogen. Slices were allowed to recover for at least 1.5 hr after preparation before they were transferred into the recording chamber.\n\n#### Connectivity\n\nRecordings were performed in ACSF at 32\u201334\u00b0C in a submerged-type recording chamber. Cells in the CA3 were identified using infrared differential contrast microscopy (BX51WI, Olympus). We performed somatic whole-cell patch-clamp recordings (pipette resistance 3\u20135 M\u03a9) of up to eight cells simultaneously. One cell was stimulated with a train of four action potentials at 20 Hz, elicited by 2\u20133 ms long current injections of 1.5\u20134 nA. For characterization to confirm the targeting of pyramidal cells, increasing steps of current were injected (1 s, increment: 50 pA). In some cells, a hyperpolarizing or depolarizing holding current was applied to keep the membrane potential at -60 mV. The intracellular solution contained (in mM) 135 potassium-gluconate, 6.0 KCl, 2.0 MgCl2, 0.2 EGTA, 5.0 Na2-phosphocreatine, 2.0 Na2-ATP, 0.5 Na2-GTP, 10 HEPES buffer, and 0.2% biocytin. The pH was adjusted to 7.2 with KOH. Recordings were performed using Multiclamp 700B amplifiers (Molecular Devices). Signals were filtered at 6 kHz, sampled at 20 kHz and digitized at 16 bit resolution using the Digidata 1550 and pClamp 10.7 (Molecular Devices). A subset of the data (n = 238 out of 348 cells) was published in a separate study (Sammons et al., 2024).\n\n#### Data analysis \u2014 connectivity\n\nCells with a membrane potential less negative than \u221250 mV and a series resistance higher than 30 M\u03a9 were discarded. The connectivity screen underwent a quality control step such that only sweeps were kept if presynaptic action potentials reversed above 0 mV and the membrane potential did not deviate by more than 10% within a sweep or with reference to the first sweep. Synaptic connections were identified when there was a postsynaptic potential corresponding to presynaptic stimulation in the averaged trace of 40\u201350 sweeps. A baseline period (2 ms) just prior to stimulation and the averaged postsynaptic peak during the first action potential was used for the analysis of EPSP amplitudes and synaptic delays. Only pairs in which the first postsynaptic peak was clearly discernible were used for analysis. To analyze short-term plasticity dynamics, postsynaptic traces were deconvolved as described by Richardson and Silberberg, 2008. The time constant, $\\tau$, was set to 55 ms and the deconvolved trace was low-pass filtered. Subsequent evoked EPSP peaks were normalized to the first evoked EPSP in the trace. Synaptic dynamics were compared across connection types by comparing the ratio of the first and fourth EPSPs across groups. Failure rate was calculated by dividing the number of sweeps in which an EPSP was observed by the total number of sweeps. This value was calculated for each of the possible four EPSPs corresponding to the four presynaptic action potentials, and then a total sum for each cell was taken. For all boxplots, boxes cover quartiles and whiskers show entire distribution of data excluding outliers, which are shown additionally as filled black circles and considered to be 1.5 x interquartile range. In Figure 2C and D all data points are shown as coloured, filled circles. Statistics were carried out in Python using the scipy stats module, with a significance level set to 0.05. Data were first checked for normality using the Shapiro-Wilk test. Subsequently, non-parametric tests were performed as appropriate and the Bonferroni correction method was applied to account for multiple comparisons. Raw data used to create Figures 1\u20143 is available on FigShare at https://doi.org/10.6084/m9.figshare.29390549.v1.\n\n#### Data analysis \u2014 immunohistochemistry and neuroanatomy of principal cells\n\nAfter recording, slices were transferred into a fixative solution containing 4% paraformaldehyde in 0.1 M phosphate buffer. Biocytin labelling was revealed by incubating slices in streptavidin conjugated to Alexa 488 (diluted 1:500) overnight in a solution of PBS containing 2.5% normal goat serum and 1% Triton. The slices were then mounted in Mowiol (Sigma-Aldrich). Image stacks of specimens were imaged on an Olympus BX61 FV1000 confocal microscope. Images were taken using a \u00d720 objective with a pixel size of 0.62 \u00b5m and a z-step size of 1 \u00b5m. The morphology of the pyramidal neurons was scored as \u2018thorny\u2019 or \u2018athorny\u2019 based on the presence or absence of thorny excrescences, respectively. Each cell was scored by at least three independent investigators to ensure that in ambiguous cases a consensus was reached. Location of cells relative to the stratum oriens was measured in Fiji (Schindelin et al., 2012) using the line tool and drawing a perpendicular line from the base of the cell soma to the estimated edge of the pyramidal layer at the side of the stratum oriens.\n\n### Computational model\n\n#### Model equations\n\nNeurons are modeled as adaptive exponential (AdEx) integrate-and-fire neurons (Brette and Gerstner, 2005). This level of complexity (two dynamic variables: voltage and adaptation) is necessary to capture the diverse firing patterns of different neural populations. In addition, neuronal adaptation has been proposed as the main mechanism governing the alternation between SPW and non-SPW states (Levenstein et al., 2019). In the AdEx model, the membrane potential $V_{i}$ of each neuron $i$ evolves according to the equation\n\n$$\nCV\u02d9_{i}(t)=\u2212g_{L}(V_{i}(t)\u2212E_{L})+g_{L}\u0394_{T}exp\u2061(\\frac{V_{i}(t)\u2212V_{T}}{\u0394_{T}})\u2212u_{i}(t)+I_{ext}+I_{syn}(t)\n$$\n\nwhere $C$ is the membrane capacitance, $E_{L}$ is the resting potential, $g_{L}$ is the leak conductance, and $V_{T}$ is the threshold potential. Slightly above this threshold, the membrane potential escapes from the basin of attraction of $E_{L}$ and begins an exponential upswing with a slope $\u0394_{T}$. As soon as the upswing reaches a conventional value $V_{stop}$, a spike is emitted and $V_{i}$ is reset to a value $V_{reset}$ and fixed there for a refractory time $\\tau_{ref}$. Neurons receive an internal feedback inhibition $u_{i}(t)$, representing an adaptive current, which evolves according to\n\n$$\n\\tau_{u}u\u02d9_{i}(t)=\u2212u_{i}(t)+a(V_{i}(t)\u2212E_{L})\n$$\n\nin which $a$ is the voltage-coupling of adaptation and $\\tau_{u}$ is its timescale. Upon spiking, $u$ is increased by an amount $b$ (spike-triggered adaptation). Neurons receive a constant external input $I_{ext}$ and a synaptic current $I_{syn}(t)=\\sumJg_{i}^{J}(t)(V_{i}(t)\u2212E_{rev}^{J})$, where $E_{rev}^{J}$ is the reversal potential for the neurotransmitter used by the pre-synaptic population $J$, and $g_{i}^{J}(t)$ is the total synaptic conductance received from the neurons in population $J$, which obeys\n\n$$\ng\u02d9_{i}^{J}(t)=\u2212\\frac{g_{i}^{J}}{\\tau_{d}^{J}}+\\sumf,j\\delta(t\u2212t_{j}^{f}\u2212\\tau_{l})p_{IJ}w_{IJ},\n$$\n\nwhere $\\tau_{d}^{J}$ is the synaptic decay constant for population $J$, and $\\tau_{l}$ is the synaptic latency. The contribution of each pre-synaptic spike at time $t_{j}^{f}$ is determined by a connection probability $p_{IJ}\\in[0,1]$ and a weight $w_{IJ}$. In the model variant with short-term synaptic depression, for each pair of connected excitatory neurons $i$ and $j$ in populations $I$ and $J$, the weight $w_{IJ}$ is scaled by an efficacy factor $e_{ij}$, which follows its own dynamics:\n\n$$\ne\u02d9_{ij}=\\frac{1\u2212e_{ij}}{\\tau_{dep}}\u2212\\sumf\\delta(t\u2212t_{j}^{f})e_{ij}\u03b7_{dep},\n$$\n\nwhere $\\tau_{dep}$ is the time constant of synaptic depression and $\u03b7_{dep}$ is the depression rate. In the model variant with heterogeneous parameters, the synaptic weights $w_{ij}$ between excitatory neurons $j$ and $i$ are sampled from a distribution with mean $w_{IJ}$ and standard deviation $\\frac{1}{4}w_{IJ}$. The synaptic latencies between excitatory neurons are sampled from a distribution with mean $\\tau_{l}$ and standard deviation $\\frac{1}{4}\\tau_{l}$, while the resting potential of excitatory neurons has standard deviation $\\frac{1}{20}E_{L}$ and their leak conductance has standard deviation $\\frac{1}{4}E_{L}$.\n\n### Single neuron parameters\n\nWe consider four different neural populations: thorny pyramids (T), athorny pyramids (A), PV+-basket cells (B), and anti-SPW interneurons (C). The latter are modeled as CCK+-basket cells. For each population, parameters were chosen in order to be close to the single-neuron physiology. For A and T neurons, we follow the main figures and supplementary data by Hunt et al., 2018 and Linaro et al., 2022, since they performed detailed single-neuron physiological characterization of the two neuron types. Namely, athorny neurons were shown to have a higher input resistance, a higher resting potential, and a lower firing threshold than their thorny counterparts, and both kinds have a high reset potential. In particular, we reset athorny neurons above the threshold, because this is how the AdEx model produces bursting (Naud et al., 2008), a feature that has been reported in this cell type (Hunt et al., 2018). Our parameters result in a lower rheobase for athorny than for thorny neurons (Hunt et al., 2018, Linaro et al., 2022, Figure 1\u2014figure supplement 1). Interneuron parameters were based on data from CA3, if available (Fidzinski et al., 2015; Pelkey et al., 2017), or otherwise from other hippocampal subfields (Ledri et al., 2012; Pawelzik et al., 2002; Tricoire et al., 2011).\n\nThe parameters of adaptation cannot be directly compared to physiological values, because this variable summarizes a multitude of different currents, each with its own size and timescale (Benda, 2021). Therefore, we firstly aimed at reproducing the f-I curves of different neurons, when available (Figure 4\u2014figure supplement 1). Thorny and athorny f-I curves were compared to those measured by Linaro et al., 2022, while for PV+- basket cells we used CA3 data from Fidzinski et al., 2015. In addition, the large spike-coupling $b$ and long timescale $\\tau_{u}$ of pyramidal adaptation allow to reproduce the strong firing rate accommodation typical of these cells (Storm, 1990; Hunt et al., 2018), while these parameters are smaller in A and especially B cells, which can sustain a high firing rate without significant accommodation (Pelkey et al., 2017). In the AdEx model, if the voltage-coupling $a$ is strong enough, spiking happens through a Hopf bifurcation, which is responsible for phenomena like transient spiking and class 2 behaviour (Touboul and Brette, 2008). Therefore, we set this parameter to 0 for thorny cells, in which these behaviours are absent, and to a higher value for athorny cells, which seem to exhibit transient spiking for intermediate values of a constant input (Hunt et al., 2018), and for interneurons. In particular, for B cells, we could reproduce the discontinuity around 15 Hz typical of fast-spiking interneurons (Gerstner et al., 2014). Neuronal parameters and their values are summarized in Table 1.\n\n### Network parameters\n\nEach population size is based on an estimation of its representation in a 400-\u00b5m-thick CA3 slice, according to the quantitative assessment by Bezaire and Soltesz, 2013. Pyramidal neurons are divided into thorny and athorny according to the 66\u201334% ratio that we determined experimentally. The background currents $I_{ext}$ are constant and correspond to the non-transient rheobase $\u03c1$, plus 10%, with the exception of population A, which receives +40% because it is responsible for keeping the other neurons inhibited for most of the time. This assumption is reasonable, since CCK+- basket cells \u2018receive a far less efficient local excitatory drive, but are exposed to modulatory effects of extrinsic inputs (Freund, 2003).\u2019\n\nNeurons are connected to each other with a probability $p_{IJ}$, depending on the pre- and post-synaptic population $J$ and $I$. For excitatory-to-excitatory connections, these probabilities have the values that we assessed experimentally. For the other connections, the existent literature is too inconsistent to derive coherent conclusions (Guly\u00e1s et al., 1993; Maccaferri et al., 2000; M\u00e1ty\u00e1s et al., 2004; Bezaire and Soltesz, 2013; Campanac et al., 2013; Kohus et al., 2016; Pelkey et al., 2017; Dudok et al., 2021): therefore, in order to minimize the number of assumptions not based on solid evidence, they were all given the same probability 0.2.\n\nExcitatory-to-excitatory synaptic weights were all set to 0.2 nS, since differences in EPSP sizes were not found to be significant (Figure 2C). These values correspond to an EPSP size of 0.1 mV, which is lower than the ones measured experimentally, but compensates for the fact that they directly affect the (somatic) membrane potential of the post-synaptic neurons neurons and that connections are homogeneous. The weights involving population C were chosen in order to satisfy the basic requirements for bistability and disinhibition dynamics: the search for the bistable region of the parameter space was guided by the insights previously obtained in the bifurcation analysis of a three-population model of CA3 (Evangelista et al., 2020). Although our model has one more population, we found that the basic requirements are the same: pyramidal cells need to more strongly excite interneurons B and to be more strongly inhibited by interneurons C. In addition, populations C and B need to have strong inhibitory couplings between each other. For firing rate requirements, we assumed, following Evangelista et al., 2020, that C neurons fire \u223c10 spikes/s in non-SPW states and are almost silent during SPWs. These choices are assumptions on population C, which still need to be tested experimentally. For the connections between B neurons and pyramidal cells, the main criterion was to balance the effect of the strong recurrent excitation, in order to achieve a realistic firing rate for pyramidal neurons and B cells themselves during SPWs. For B neurons, we based on estimates on 5\u201310 spikes/s in the non-SPW periods and fast spiking at 50\u201370 during SPWs (Klausberger and Somogyi, 2008; Lapray et al., 2012; Varga et al., 2012; H\u00e1jos et al., 2013). Pyramidal neurons are almost silent (0\u20131 spikes/s) in non-SPW periods and fire on average 10\u201320 spikes/s in SPW events (Klausberger and Somogyi, 2008; Lapray et al., 2012; H\u00e1jos et al., 2013; English et al., 2014). In order to satisfy these requirements, inhibitory weights needed to be about one order of magnitude larger than excitatory ones, which is partially in accordance with the hippocampal interneuron literature mentioned above, and partially necessary because not all kinds of interneurons are included in the network. The resulting non-SPW activity of our pyramidal populations is 0.4 spikes/s for T cells and 0.4 spikes/s for A cells.\n\nRegarding the other synaptic parameters, all the latencies were set to 1 ms, glutamatergic and GABAergic reversal potentials have the typical values of 0 mV and \u201370 mV, respectively, and the former are assumed to be twice as fast as the latter (Geiger et al., 1995; Bartos et al., 2002). Network parameters are summarized in Table 2.\n\n**Table 2.**\n Network parameters.Parameter adjustments for the model variants with short-term synaptic depression and heterogeneity are reported in Supplementary file 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>From A</th>\n      <th>From T</th>\n      <th>From B</th>\n      <th>From C</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pAI\\begin{document}$  p_{AI}$\\end{document}</td>\n      <td></td>\n      <td>15%</td>\n      <td>11%</td>\n      <td>20%</td>\n      <td>20%</td>\n    </tr>\n    <tr>\n      <td>pTI\\begin{document}$  p_{TI}$\\end{document}</td>\n      <td></td>\n      <td>4%</td>\n      <td>8%</td>\n      <td>20%</td>\n      <td>20%</td>\n    </tr>\n    <tr>\n      <td>pBI\\begin{document}$  p_{BI}$\\end{document}</td>\n      <td></td>\n      <td>20%</td>\n      <td>20%</td>\n      <td>20%</td>\n      <td>20%</td>\n    </tr>\n    <tr>\n      <td>pCI\\begin{document}$  p_{CI}$\\end{document}</td>\n      <td></td>\n      <td>20%</td>\n      <td>20%</td>\n      <td>20%</td>\n      <td>20%</td>\n    </tr>\n    <tr>\n      <td>wAI\\begin{document}$  w_{AI}$\\end{document}</td>\n      <td>[nS]</td>\n      <td>0.2</td>\n      <td>0.2</td>\n      <td>2.15</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>wTI\\begin{document}$  w_{TI}$\\end{document}</td>\n      <td>[nS]</td>\n      <td>0.2</td>\n      <td>0.2</td>\n      <td>0.8</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>wBI\\begin{document}$  w_{BI}$\\end{document}</td>\n      <td>[nS]</td>\n      <td>0.7</td>\n      <td>0.5</td>\n      <td>6</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>wCI\\begin{document}$  w_{CI}$\\end{document}</td>\n      <td>[nS]</td>\n      <td>0.1</td>\n      <td>0.05</td>\n      <td>5</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>\u03c4d\\begin{document}$  \\tau_{d}$\\end{document}</td>\n      <td>[ms]</td>\n      <td>2</td>\n      <td>2</td>\n      <td>4</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Erev\\begin{document}$  E_{rev}$\\end{document}</td>\n      <td>[mV]</td>\n      <td>0</td>\n      <td>0</td>\n      <td>\u201370</td>\n      <td>\u201370</td>\n    </tr>\n    <tr>\n      <td>\u03c4l\\begin{document}$  \\tau_{l}$\\end{document}</td>\n      <td>[ms]</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\n### Network activity\n\nSPW events are identified based on the current flowing from B cells to the excitatory ones, which is thought to represent most of the LFP signal observed in the stratum pyramidale. This signal is low-pass filtered up to 5 Hz, in order to cover the whole duration of an event. In this signal, peaks higher than 50 pA are regarded as SPWs. The beginning and end of the events are defined as the times at which the low-pass-filtered LFP crosses the value $\\frac{1}{2}(L_{p}\u2212L_{0})$, where $L_{p}$ is the LFP peak of each event and $L_{0}$ is a baseline value. Within each sharp wave, we record the peak timing of the firing rate of both the athorny and the thorny populations. In case a single population presents two peaks that are more than 50 ms apart, they are recorded as separate peaks and only the first one is used for the statistics in Figure 5 and Figure 5\u2014figure supplement 1.\n\nWhen varying connectivities as in Figures 4 and 5, we up- or down-scale the synaptic strength $w_{IJ}$ of all the four excitatory-to-excitatory connections by a common factor, in order to still obtain sharp waves with a similar average size of the LFP peak (\u00b110 pA). Since the LFP peak is estimated based on the current flowing from the B interneurons, this criterion is not biased toward either pyramidal population. In Figure 5\u2014figure supplement 1, we repeat the simulations in Figure 5A, but this time the scaling is done with the synaptic strength of the A\u2192B and T\u2192B connections, which are highly relevant for the sharp wave size, but in Figure 5B were found to be little relevant for the timing of the peaks.\n",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Katalin Toth, University of Ottawa Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98653.3.sa0](https://doi.org/10.7554/eLife.98653.3.sa0)\n\nThis study represents valuable findings on the asymmetric connectivity pattern of two different types of CA3 pyramidal cell types showing that while athorny cells receive strong inputs from all other cell types, thorny cells receive weaker inputs from athorny neurons. Computational modeling is used to evaluate the impact of this connectivity scheme on the sequential activation of different cell types during sharp wave ripples. The evidence combining experimental and computational modelling approaches convincingly supports the authors' claims regarding the network mechanisms underlying the temporal sequences of neuronal activity during sharp-waves.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98653.3.sa1](https://doi.org/10.7554/eLife.98653.3.sa1)\n\nSummary:\n\nThe hippocampal CA3 region is generally considered to be the primary site of initiation of sharp wave ripples-highly synchronous population events involved in learning and memory-although the precise mechanism remains elusive. A recent study revealed that CA3 comprises two distinct pyramidal cell populations: thorny cells that receive mossy fiber input from the dentate gyrus, and athorny cells that do not. That study also showed that it is athorny cells in particular which play a key role in sharp wave initiation. In the present work, Sammons, Masserini and colleagues expand on this by examining the connectivity probabilities among and between thorny and athorny cells. Using whole-cell patch clamp recordings, they find an asymmetrical connectivity pattern, with athorny cells receiving the most synaptic connections from both athorny and thorny cells, and thorny cells receiving fewer.\n\nThe authors then use a spiking network model to show how this assymmetrical connectivity is consistent with a preferential role of athorny cells in sharp wave initiation. Essentially, thorny and athorny cells are put into a winner-takes-all scenario in which athorny cells always win initially. Thorny cells can only become active after athorny cells decrease their firing rate due to adaptation, leading to a delay between the activation of athorny and thorny cells. As far as I understand, the initial victory of athorny cells in the winner-takes-all is doubly determined: it is both due to their intrinsic properties (lower rheobase and steeper f-I curve), and due to the bias in connectivity towards them. It appears to me that either of these two mechanisms (i.e., different intrinsic properties and symmetrical self- and cross-connections, or the same intrinsic properties and asymmetrical connectivity) would suffice to explain the sequential activation of the two cell types. From a theoretician's perspective, this overdetermination is not very elegant, but biology often isn't...\n\nStrengths:\n\nThe authors provide independent validation of some of the findings by Hunt et al. (2018) concerning the distinction between thorny and athorny pyramidal cells in CA3 and advance our understanding of their differential integration in CA3 microcircuits. The properties of excitatory connections among and between thorny and athorny cells described by the authors will be key in understanding CA3 functions including, but not limited to, sharp wave initiation.\n\nAs stated in the paper, the modeling results lend support to the idea that the increased excitatory connectivity towards athorny cells plays an important role in causing them to fire before thorny cells in sharp waves. More generally, the model adds to an expanding pool of models of sharp wave ripples which should prove useful in guiding and interpreting experimental research.\n",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6fe9898b-53ab-4e63-b80f-13fe71d37f25",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C1",
+      "claim": "The CA3 region of the hippocampus is the major site of sharp wave initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The CA3 region of the hippocampus is the major site of sharp wave initiation, and a brain region crucially involved in learning and memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about CA3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "3a810ec1-7feb-408f-a3dc-e57cef0c164e",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C2",
+      "claim": "The CA3 region is crucially involved in learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The CA3 region of the hippocampus is the major site of sharp wave initiation, and a brain region crucially involved in learning and memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about CA3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "62daa59d-aff3-4296-a734-b3cb8bb67426",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C3",
+      "claim": "Highly recurrent connectivity within the CA3 excitatory network is thought to underlie processes involved in memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Highly recurrent connectivity within its excitatory network is thought to underlie processes involved in memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "80d511ca-e3a1-4bc5-8743-03f1bcbc8cc9",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C4",
+      "claim": "Distinct subpopulations of pyramidal neurons within CA3 may contribute differently to network activity, including sharp waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has indicated that distinct subpopulations of pyramidal neurons within this region may contribute differently to network activity, including sharp waves, in CA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from recent work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "2025509a-1efe-4b60-a30c-03a19ea62de3",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C5",
+      "claim": "There is an asymmetry in the connectivity between thorny and athorny CA3 pyramidal cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we disentangle the local connectivity between two distinct CA3 cell types in mice: thorny and athorny pyramidal cells. We find an asymmetry in the connectivity between these two populations, with athorny cells receiving strong input from both athorny and thorny cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "13af4732-b6bb-42f8-b07c-805dfd7671fd",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C6",
+      "claim": "Athorny cells receive strong input from both athorny and thorny cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find an asymmetry in the connectivity between these two populations, with athorny cells receiving strong input from both athorny and thorny cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "afcb8003-93c3-4c88-8c6d-c9a8c631ab8d",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C7",
+      "claim": "The thorny cell population receives very little input from the athorny population.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the thorny cell population receives very little input from the athorny population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "4828b901-3f05-41b3-8939-de14d481cec8",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C8",
+      "claim": "The connectivity scheme between thorny and athorny cells may determine the sequential activation of these cell types during sharp waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modeling suggests that this connectivity scheme may determine the sequential activation of these cell types during large network events such as sharp waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from computational modeling presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "b2fa4586-d009-4734-b112-8c928dbabad2",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C9",
+      "claim": "The hippocampus has been established as an essential brain region for the formation of new memories since the study of patient H.M.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the study of patient H.M., the hippocampus has been established as an essential brain region for the formation of new memories (Scoville and Milner, 1957).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding in neuroscience supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "82b15457-7483-4ec2-a133-26d8ae0768ca",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C10",
+      "claim": "Sharp wave-ripple complexes (SPW-Rs) are large network events characterised by the synchronous discharge of huge numbers of hippocampal CA3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW-Rs are large network events characterised by the synchronous discharge of huge numbers of hippocampal pyramidal (CA3) neurons (the sharp wave, SPW), followed by oscillatory activity downstream in the CA1 (ripple).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of SPW-Rs based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "6d0eaa1c-7172-40c3-8700-05577e32ac01",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C11",
+      "claim": "During non-REM sleep, SPW-Rs essentially replay a compressed version of neural sequences that occurred during events preceding sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "During non-REM sleep, SPW-Rs essentially replay a compressed version of neural sequences that occurred during events preceding sleep (Wilson and McNaughton, 1994; Lee and Wilson, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "d4bd5d04-e4e7-4974-a953-829ef0ff126e",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C12",
+      "claim": "SPW-Rs play a key role in memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that these SPW-Rs play a key role in memory consolidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "d6b9965d-0fd9-48ab-a37e-38dc36123ea6",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C13",
+      "claim": "The CA3 region in the hippocampus is considered the main generator of SPWs.",
+      "claim_type": "EXPLICIT",
+      "source": "The CA3 region in the hippocampus is considered the main generator of SPWs (Buzs\u00e1ki, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "01a1d54f-e436-4e64-9afa-23c787c317e6",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C14",
+      "claim": "Inhibition is proposed to be instrumental in SPW generation.",
+      "claim_type": "EXPLICIT",
+      "source": "While inhibition is proposed to be instrumental in SPW generation, recent evidence has suggested that a subclass of pyramidal neurons may also play a pivotal role (Hunt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposal in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "6dc05da8-d9c9-4654-b450-4657a028e982",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C15",
+      "claim": "A subclass of pyramidal neurons may play a pivotal role in SPW generation.",
+      "claim_type": "EXPLICIT",
+      "source": "While inhibition is proposed to be instrumental in SPW generation, recent evidence has suggested that a subclass of pyramidal neurons may also play a pivotal role (Hunt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to recent evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "d766144b-d272-485e-925a-5629a882cb45",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C16",
+      "claim": "Diversity among pyramidal neuron populations is often overlooked when considering the role of these cells within neuronal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Diversity among pyramidal neuron populations is often overlooked when considering the role of these cells within neuronal circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "14f9ef29-442e-4783-8a23-c9c796fc0f1f",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C17",
+      "claim": "Several studies have reported functional and morphological heterogeneity within the pyramidal CA3 cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several studies have reported functional and morphological heterogeneity within the pyramidal CA3 cell population (Bilkey and Schwartzkroin, 1990; Sun et al., 2017; Marissal et al., 2012; Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "6cc66949-f76c-4937-81b7-d83c3bd603f1",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C18",
+      "claim": "Two distinct sub-types of CA3 pyramidal neurons are differentiated by the presence or absence of complex spine structures called thorny excrescences.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study described two distinct sub-types of CA3 pyramidal neurons, differentiated by the presence or absence of complex spine structures called thorny excrescences (the post-synaptic site of input coming from mossy fibres of the dentate gyrus granule cells) (Hunt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "d0256142-e929-43a4-b9b5-26f1d466bd2a",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C19",
+      "claim": "Thorny excrescences are the post-synaptic site of input coming from mossy fibres of the dentate gyrus granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study described two distinct sub-types of CA3 pyramidal neurons, differentiated by the presence or absence of complex spine structures called thorny excrescences (the post-synaptic site of input coming from mossy fibres of the dentate gyrus granule cells) (Hunt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a definition of thorny excrescences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "27bae6e0-9dfa-437e-b4ec-afb6862cafc3",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C20",
+      "claim": "Cells lacking thorny excrescences, termed athorny pyramids, fire before thorny pyramids during SPWs.",
+      "claim_type": "EXPLICIT",
+      "source": "The study showed that cells lacking these thorny excrescences, termed athorny pyramids, fire before thorny pyramids during SPWs (Hunt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "7e3a9d23-982f-4a45-812d-d43baa0d4eb6",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C21",
+      "claim": "Athorny cells play an important role in SPW initiation and, in turn, in memory processing in CA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is proposed that athorny cells play an important role in SPW initiation and, in turn, in memory processing in CA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposal based on previous findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "cd39fe23-8606-45ca-afed-a9c6417ff776",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C22",
+      "claim": "CA3 pyramidal cells connect to each other at a high rate (8.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that CA3 pyramidal cells connect to each other at a high rate (8.8%) (Sammons et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "36f68923-6928-431c-b99a-1b0a5b823871",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C23",
+      "claim": "Sub-type specific connectivity is crucial for the distinct firing times of athorny and thorny cells during SPWs.",
+      "claim_type": "EXPLICIT",
+      "source": "When implementing this asymmetry into a computational model, we find that sub-type specific connectivity is crucial for the distinct firing times of athorny and thorny cells during SPWs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational modeling in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "8a45ce93-d18a-4ca1-86d5-f5fe1f81fe92",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C24",
+      "claim": "348 CA3 pyramids were recorded across the length of the CA3.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we recorded from 348 CA3 pyramids across the length of the CA3 (CA3a: 20 cells, CA3b: 274 cells, CA3c: 54 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "662bba59-62d5-4c91-92ee-98f6544cc05b",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C25",
+      "claim": "Of the 348 pyramids recorded, 229 were thorny and 119 were athorny.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 348 pyramids, 229 were thorny and 119 were athorny (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the experimental data and is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "5f9bc0fa-92d0-4299-9209-36051e0199ee",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C27",
+      "claim": "Athorny cells tended to be located deeper in the pyramidal layer, towards the stratum oriens.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that athorny cells tended to be located deeper in the pyramidal layer, towards the stratum oriens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "06888d7c-1668-4221-a39c-98ad2bc263c9",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C29",
+      "claim": "The findings on soma location and primary apical dendritic length resemble findings from Marissal et al., 2012 who observed similar differences between early and late born CA3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results resemble findings from Marissal et al., 2012 who observed similar differences in soma location and primary apical dendritic length between early and late born CA3 neurons, suggesting that thorny and athorny neurons may be developmentally distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous research supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "9a20a73a-5023-4e1d-9489-ce0c623479d1",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C30",
+      "claim": "Thorny and athorny neurons may be developmentally distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "These results resemble findings from Marissal et al., 2012 who observed similar differences in soma location and primary apical dendritic length between early and late born CA3 neurons, suggesting that thorny and athorny neurons may be developmentally distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on comparison to previous research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "6a0de811-0604-4167-8304-23e820e80256",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C31",
+      "claim": "There are differences in maximum firing rate, rheobase and input resistance between thorny and athorny cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found differences in maximum firing rate, rheobase and input resistance between thorny and athorny cells, but not in resting membrane potential (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "61539268-1c34-4655-92c8-16c093758742",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C32",
+      "claim": "There is no difference in resting membrane potential between thorny and athorny cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found differences in maximum firing rate, rheobase and input resistance between thorny and athorny cells, but not in resting membrane potential (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "1a4af826-e204-4ab2-9a33-1a17a6abbb27",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C33",
+      "claim": "There is a high rate of connectivity (15%) between athorny cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a high rate of connectivity (15%) between athorny cells (Figure 2Ai), and from thorny onto athorny cells (11%; Figure 2Aii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data shown in Figure 2Ai.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "aa19e1c3-0355-4488-9514-06040d2e6639",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C34",
+      "claim": "There is a connectivity rate of 11% from thorny onto athorny cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a high rate of connectivity (15%) between athorny cells (Figure 2Ai), and from thorny onto athorny cells (11%; Figure 2Aii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data shown in Figure 2Aii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "280fd9ba-dbfe-4632-9184-0332f6af710a",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C35",
+      "claim": "Thorny cells connected to each other at a rate of 8%.",
+      "claim_type": "EXPLICIT",
+      "source": "Thorny cells connected to each other at a rate of 8% (Figure 2Aiii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data shown in Figure 2Aiii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "5393fe1b-bbc0-4d17-99b2-1d035159a938",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C36",
+      "claim": "Connections from athorny onto thorny cells were the least common, occurring at a rate of 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, connections from athorny onto thorny cells were the least common, occurring at a rate of 4% (Figure 2Aiv).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data shown in Figure 2Aiv.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "2defa563-ffe4-4ff9-a8ef-f5079bf0f385",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C37",
+      "claim": "The overall rate of connectivity (8.9%) corresponds well to the previously reported high level of connectivity within the general CA3 pyramidal population (8.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall rate of connectivity (65/734 = 8.9%) corresponds well to our previously reported high level of connectivity within the general CA3 pyramidal population (8.8%) (Sammons et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous work by the authors supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "700c66e9-a1cc-4b06-a9b5-79a887b62ef1",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C38",
+      "claim": "There were 2 reciprocally connected pairs of athorny-athorny neurons (4/92 connections = 4%).",
+      "claim_type": "EXPLICIT",
+      "source": "We saw reciprocal connections between athorny-athorny pairs (2 reciprocally connected pairs; 4/92 connections = 4%) and thorny-thorny (2 reciprocally connected pairs; 4/362 connections = 1%) pairs of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "14e7d827-5113-4842-b02a-fb6cfc57b25c",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C39",
+      "claim": "There were 2 reciprocally connected pairs of thorny-thorny neurons (4/362 connections = 1%).",
+      "claim_type": "EXPLICIT",
+      "source": "We saw reciprocal connections between athorny-athorny pairs (2 reciprocally connected pairs; 4/92 connections = 4%) and thorny-thorny (2 reciprocally connected pairs; 4/362 connections = 1%) pairs of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "a35c25f9-2b73-4a81-ad04-bfb42c344067",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C40",
+      "claim": "Synaptic connections were strongest amongst athorny-athorny cells, although no statistically significant differences were present across connection types.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic connections were strongest amongst athorny-athorny cells, although no statistically significant differences were present across connection types (Figure 2B, median [IQR] amplitudes for athorny-athorny: 1.08 [0.56] mV; ii, thorny-athorny: 0.88 [1.03] mV; iii, thorny-thorny: 0.57 [0.55] mV; iv, athorny-thorny: 0.66 [0.25] mV; p = 0.370, Kruskal-Wallis test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data with statistical analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "32c5c5e6-2c99-48ba-828b-17197d72b670",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C41",
+      "claim": "EPSPs across all connection types had latencies below 3 ms (with the exception of a single connection between two athorny cells which had a latency of 3.58 ms) indicating that identified connections were monosynaptic.",
+      "claim_type": "EXPLICIT",
+      "source": "EPSPs across all connection types had latencies below 3 ms (with the exception of a single connection between two athorny cells which had a latency of 3.58 ms) indicating that identified connections were monosynaptic (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data with interpretation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "81c96690-9404-4de2-9756-98cea302000f",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C42",
+      "claim": "Athorny-athorny synapses had the lowest failure rate, although no statistical difference was observed between groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Athorny-athorny synapses had the lowest failure rate, although no statistical difference was observed between groups (Figure 2D, median [IQR] failure rate for athorny-athorny: 11.5 [20.5]%, thorny-athorny: 33.0 [36.2]%, thorny-thorny: 21.0 [36.3]%, athorny-thorny: 12.0 [47.5]%, p = 0.729, Kruskal-Wallis test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data with statistical analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "88c46919-a039-4ba4-aa06-3d99a2516933",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C44",
+      "claim": "Thorny-athorny connections show the highest synaptic product, followed by athorny-athorny connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Thorny-athorny connections show the highest synaptic product, followed by athorny-athorny connections (Figure 3Aiv).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of experimental data shown in Figure 3Aiv.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "315679b1-c2e9-4051-83de-9f47174ffd31",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C45",
+      "claim": "The results demonstrate a strong pattern of input onto athorny neurons and much weaker input onto thorny cells, particularly from the athorny sub-population.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results demonstrate a strong pattern of input onto athorny neurons and much weaker input onto thorny cells, particularly from the athorny sub-population (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the experimental findings shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "904b858c-a7fd-47ba-b0f0-1fb6ff28d756",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C46",
+      "claim": "During SPW events, athorny (A) cells have been reported to fire before thorny (T) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During SPW events, athorny (A) cells have been reported to fire before thorny (T) cells, suggesting that activity propagates in this direction (Hunt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "b97b42b9-0a10-4e48-ab87-e6e68a3dd597",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C47",
+      "claim": "The model network includes two classes of interneurons: PV+ basket cells (B), which are active during SPWs, and a putative class of anti-SPW interneurons (C), which fire outside SPWs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the two pyramidal cell populations, we included two classes of interneurons that have been suggested to play fundamental roles in SPW generation: PV+ basket cells (B), which are active during SPWs, and a putative class of anti-SPW interneurons (C), which fire outside SPWs, keeping the other populations inhibited (Evangelista et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "a4147025-ba98-432e-9ece-f1a6fa5fc3a2",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C48",
+      "claim": "Strong reciprocal coupling between the two inhibitory populations gives rise to a bistability between a SPW state and a non-SPW state.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong reciprocal coupling between the two inhibitory populations gives rise to a bistability between a SPW state and a non-SPW state, and the network alternates between these two states due to adaptation in pyramidal cells (Figure 4Bi), as proposed by Levenstein et al., 2019 as the driving mechanism of SPWs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the computational model with a citation to previous work and shown in Figure 4Bi.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "da7d8893-50a6-4b27-b948-6479dc8247c6",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C49",
+      "claim": "The network alternates between SPW and non-SPW states due to adaptation in pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong reciprocal coupling between the two inhibitory populations gives rise to a bistability between a SPW state and a non-SPW state, and the network alternates between these two states due to adaptation in pyramidal cells (Figure 4Bi), as proposed by Levenstein et al., 2019 as the driving mechanism of SPWs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the computational model with a citation to previous work and shown in Figure 4Bi.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "b48d34f2-a31d-4286-ae08-f9bfbdbf4957",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C50",
+      "claim": "Model parameters were tuned such that the SPW event incidence is \u22481/s and the average event duration is \u224880 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We tuned model parameters (see Materials and methods) such that the SPW event incidence is \u22481/s (with stochastic onsets driven by finite-size fluctuations) and the average event duration is \u224880 ms (Figure 4Bi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the computational model parameters shown in Figure 4Bi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "0c868ad2-7508-42cc-9d0a-9bc53015a809",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C51",
+      "claim": "In the model simulations, A cells emit a larger number of early spikes due to a lower rheobase and a steeper f-I curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the two pyramidal cell populations, A cells subsequently emit a larger number of early spikes, due to a lower rheobase (documented by Hunt et al., 2018, Linaro et al., 2022, and our own data (Figure 1\u2014figure supplement 1)) and a steeper f-I curve (Hunt et al., 2018; Linaro et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model with citations to previous research and the authors' own data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "1f111fa6-3872-4cca-8eda-104d10354a4d",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C52",
+      "claim": "Initial spikes from A cells recruit many further A cells, due to the high A\u2192A connectivity, but only a few T cells, due to the low A\u2192T connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These initial spikes recruit many further A cells, due to the high A\u2192A connectivity, but only a few T cells, due to the low A\u2192T connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "11b6f7d3-60e9-4c8e-ac4c-40e370667822",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C53",
+      "claim": "A cells drive the growth of B cells, which in turn inhibit T cells, resulting in A cells having a net inhibitory effect on T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, A cells drive the growth of B cells, which in turn inhibit T cells (Figure 4Bi\u2013ii): as a result, A cells have a net inhibitory effect on T cells, which get initially suppressed and can only start firing when the activity of A cells decreases, due to a surge in adaptation (Figure 4Biii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model shown in Figure 4Bi-ii and 4Biii.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "401a3f37-248e-4e7c-af76-40b8be010ac5",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C54",
+      "claim": "T cells get initially suppressed and can only start firing when the activity of A cells decreases, due to a surge in adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, A cells drive the growth of B cells, which in turn inhibit T cells (Figure 4Bi\u2013ii): as a result, A cells have a net inhibitory effect on T cells, which get initially suppressed and can only start firing when the activity of A cells decreases, due to a surge in adaptation (Figure 4Biii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model shown in Figure 4Bi-ii and 4Biii.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "5dea7df9-2f2f-454d-8523-199f77d989dd",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C55",
+      "claim": "The model dynamics result in clearly distinct peaks of A and T population activities, with an average delay of 29 ms between the peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these dynamics result in clearly distinct peaks of A and T population activities, with an average delay of 29 ms between the peaks (Figure 4Bi\u2013ii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model shown in Figure 4Bi-ii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "566b550b-c945-4b3b-9816-32e2095a6ef9",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C56",
+      "claim": "The long delay between A and T peaks matches the data by Hunt et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "This long delay matches the data by Hunt et al., 2018, which would be hard to explain if T cells were directly recruited by A cells, with monosynaptic latencies shorter than three milliseconds (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison to previous research with a citation and reference to the authors' own data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "118fc659-d677-44eb-a7b8-e71b05c50396",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C57",
+      "claim": "A decreased A\u2192A or increased A\u2192T connectivity would prevent the initial suppression of T cells, resulting in almost simultaneous peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm this intuition by varying each of the four connectivities in the model and find that a decreased A\u2192A (Figure 4Ci) or increased A\u2192T (Figure 4Cii) connectivity would indeed prevent the initial suppression of T cells, as activity would build up together in both populations, resulting in almost simultaneous peaks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model shown in Figure 4Ci and 4Cii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "e90eb08c-f00e-4f2b-afff-2a02f377e804",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C58",
+      "claim": "Further increasing A\u2192A or decreasing A\u2192T would more strongly suppress T cells, which could only fire after most A cells have adapted and fallen silent, with delays even over 100 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, further increasing A\u2192A or decreasing A\u2192T would more strongly suppress T cells, which could only fire after most A cells have adapted and fallen silent, with delays even over 100 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "2a0d47cd-5041-4b1d-9c25-f27b86938a8a",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C59",
+      "claim": "Connections from T neurons determine whether these provide net excitation or inhibition to A neurons, but cannot prevent the early activation of the A population.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, connections from T neurons determine whether these provide net excitation or inhibition to A neurons. However, albeit affecting the relative size of the A and T peaks, such connections on their own cannot prevent the early activation of the A population, which depends on single-neuron parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "9a413344-a76e-4e5e-8c5e-b9e37afe9924",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C60",
+      "claim": "The model dynamics and the effects of excitatory-to-excitatory connectivities qualitatively remain unaltered if short-term depression and variability of synapses are included in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The model dynamics and the effects of excitatory-to-excitatory connectivities qualitatively remain unaltered if we include in the model the experimentally observed short-term depression and variability of synapses (Figure 4\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model shown in Figure 4\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "9462f613-2794-4cd5-8165-c8e8112be3a2",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C61",
+      "claim": "Long delays are consistently found when A\u2192A is large and when A\u2192T is small.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that long delays are consistently found when A\u2192A is large (Figure 5A1,2,3) and when A\u2192T is small (Figure 5A3,4,5), provided that delays do not become so long that population T does not activate at all.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "e0b0d6ed-3899-4840-90eb-591d27b7b716",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C62",
+      "claim": "Connections to the B interneurons have only a minor effect on the delay, while connections from the B interneurons are as important as the excitatory connections.",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, it clearly emerges that connections to the B interneurons have only a minor effect on the delay, while connections from the B interneurons are as important as the excitatory connections outlined above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "9da19fc5-0ecd-4aae-9bf6-323cac8d3340",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C63",
+      "claim": "B interneurons optimally contribute to the suppression of T when they primarily target T rather than A.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we see that B interneurons optimally contribute to the suppression of T when they primarily target T (Figure 5B, fourth row and third column) rather than A (Figure 5B, third row and fourth column).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "466ea830-479e-4415-98d6-41cc66bc5f6b",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C64",
+      "claim": "Not only can T cells activate after A cells even if the A\u2192T connectivity is low, but such a low connectivity is also crucial to explain the delay seen in the data by Hunt et al., 2018 and in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, modeling shows that not only can T cells activate after A cells even if the A\u2192T connectivity is low, but such a low connectivity is also crucial to explain the delay seen in the data by Hunt et al., 2018 and in our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational modeling with a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "eb8a02d2-b26d-4b8a-8665-5f02135b57da",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C65",
+      "claim": "The connectivity between thorny and athorny classes is distinctly asymmetric, with athorny cells receiving ample input from themselves and thorny cells, but thorny cells receiving sparse inputs from athorny pyramids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that the connectivity between these classes is distinctly asymmetric, with athorny cells receiving ample input from themselves and thorny cells, but thorny cells receiving sparse inputs from athorny pyramids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "e808ac65-2a84-422d-bede-a35a86fae8fc",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C66",
+      "claim": "Two other groups have recently reported similar findings using two different experimental methods, classifying cells by location in the pyramidal layer (deep and superficial) rather than thorny or athorny.",
+      "claim_type": "EXPLICIT",
+      "source": "Though classified by location in the pyramidal layer (deep and superficial) rather than thorny or athorny, two other groups have recently reported similar findings using two different experimental methods (Watson et al., 2024; Layous et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to recent research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "01646895-cc91-4575-bfce-fc6e042e6d8b",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C67",
+      "claim": "Both studies report superficial neurons frequently innervating themselves and deep CA3 pyramids and much less frequent connectivity from deep to superficial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both studies report superficial neurons frequently innervating themselves and deep CA3 pyramids and much less frequent connectivity from deep to superficial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "fb0eaaca-a775-40d3-8c31-60899804191f",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C68",
+      "claim": "Asymmetric connectivity is crucial for SPW events to have two distinct peaks with only partially overlapping activity for the two pyramidal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modeling shows that asymmetric connectivity is crucial for SPW events to have two distinct peaks with only partially overlapping activity for the two pyramidal populations, matching the data by Hunt et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational modeling with a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "213c07bd-6341-4ffb-be26-084ff34eb34f",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C69",
+      "claim": "The long delay (tens of milliseconds) in the model is explained by the ambivalent role of athorny neurons, which on the one hand switch the network to the SPW state, but on the other hand initially disynaptically suppress the thorny neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The long delay (tens of milliseconds) in our model is explained by the ambivalent role of athorny neurons, which on the one hand switch the network to the SPW state, but on the other hand initially disynaptically suppress the thorny neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation from the computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "b553c57e-957e-44d3-9f6b-f59fd026dd50",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C70",
+      "claim": "The switch to the SPW state occurs because PV+ basket cells take over from anti-SPW interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The switch to the SPW state occurs because PV+ basket cells take over from anti-SPW interneurons, a putative class proposed by Evangelista et al., 2020 to explain the paradoxical triggering of SPWs by in vitro stimulation of PV+ basket cells (Schlingloff et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation from the computational modeling with citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "8c1e89be-0751-447d-ac5b-3f36735f0c16",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C71",
+      "claim": "An interneuron class with similar properties to anti-SPW interneurons was identified in CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their existence in CA3 still needs to be demonstrated, an interneuron class with similar properties was identified in CA1 (Dudok et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "093d75eb-c93d-4d2d-a9de-b74303f946b9",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C72",
+      "claim": "During a SPW, the initial suppression of thorny neurons occurs through the shared pool of PV+ basket cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During a SPW, the initial suppression of thorny neurons occurs through the shared pool of PV+ basket cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation from the computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "c1165228-e233-4ed4-b6fe-6f0b240ecc75",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C73",
+      "claim": "The long delay observed in the model does not require special asymmetries in the connectivity between the interneurons and the pyramidal populations, given the measured values of excitatory connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The long delay that we observed in our model does not require special asymmetries in the connectivity between the interneurons and the pyramidal populations, given the measured values of excitatory connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "c0f80cd5-214b-4441-8c9f-e273e0b0ef49",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C74",
+      "claim": "At least some baseline connectivity from athorny to basket and from basket to thorny neurons is required for the proposed disynaptic inhibition to exist.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at least some baseline connectivity from athorny to basket and from basket to thorny neurons is required for the proposed disynaptic inhibition to exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "9a7b307e-1c44-40eb-b468-d1b1e96ffc3a",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C75",
+      "claim": "The CA3 pyramidal population has two developmentally distinct groups \u2014 early-born and late-born cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The CA3 pyramidal population has two developmentally distinct groups \u2014 early-born and late-born cells (Marissal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "0d7647e3-7c1a-4c56-8ea3-9d6ac1fa3329",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C76",
+      "claim": "Developmentally distinct subpopulations have been shown to exhibit functionally different roles in memory encoding, with late-born cells recruited earlier in the encoding process than early-born cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These developmentally distinct subpopulations have been shown to exhibit functionally different roles in memory encoding, with late-born cells recruited earlier in the encoding process than early-born cells (Kveim et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "d9c2e0a3-2987-4724-9185-d2bd2671712e",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C77",
+      "claim": "Early-born neurons tend to be located closer to the stratum oriens and have longer primary apical dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Early-born neurons tend to be located closer to the stratum oriens and have longer primary apical dendrites (Marissal et al., 2012), reminiscent of our findings on athorny cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research and compared to the authors' findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "fc5b1269-6b43-4df5-a3bc-ccfcd2831d05",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C78",
+      "claim": "Modulation of thorn density has been reported through excessive training in spatial memory tasks and chemically via steroid hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, modulation of thorn density has been reported through excessive training in spatial memory tasks and chemically via steroid hormones (G\u00f3mez-Padilla et al., 2020; Hatanaka et al., 2009; Tsurugizawa et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "5e59db9d-a43f-476e-b2ea-da67588b2c70",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C79",
+      "claim": "Connectivity between CA3 pyramids is asymmetric across subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with recent evidence that the CA3 pyramidal population is non-homogeneous, we find that connectivity between these pyramids is asymmetric across subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "bb1f5d5c-15a6-43d0-afe6-58c785bc105d",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C80",
+      "claim": "The asymmetry in connectivity is key in maintaining the separation of peak firing between the two populations, thorny and athorny, during sharp wave events.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modeling work shows that this asymmetry is key in maintaining the separation of peak firing between the two populations, thorny and athorny, during sharp wave events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "955c60c2-122b-4296-b39b-220eca272437",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C81",
+      "claim": "Mice used in the study were C57/Bl6n, bred in-house and originating from Charles River, P25+, average age: P40, both sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice (C57/Bl6n, bred in-house and originating from Charles River, P25+, average age: P40, both sexes) were decapitated following isoflurane anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "125f91c0-2c58-4435-947c-649ddb017ab8",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C82",
+      "claim": "Slices (400 \u00b5m) were cut in a horizontal plane on a vibratome.",
+      "claim_type": "EXPLICIT",
+      "source": "Slices (400 \u00b5m) were cut in a horizontal plane on a vibratome (VT1200S; Leica) and stored in an interface chamber at 32\u201334 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "f6ae0004-6dbd-49a2-bde7-95daa38db23b",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C83",
+      "claim": "Recordings were performed in ACSF at 32\u201334\u00b0C in a submerged-type recording chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were performed in ACSF at 32\u201334\u00b0C in a submerged-type recording chamber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "51fcdb4c-c477-4469-9238-80b648e30eb0",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C84",
+      "claim": "Somatic whole-cell patch-clamp recordings of up to eight cells were performed simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed somatic whole-cell patch-clamp recordings (pipette resistance 3\u20135 M\u03a9) of up to eight cells simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "a7402960-078a-4af2-8898-7a4ccd708ddd",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C85",
+      "claim": "A subset of the data (n = 238 out of 348 cells) was published in a separate study.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of the data (n = 238 out of 348 cells) was published in a separate study (Sammons et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data usage with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "2ad0a70b-a73a-41fd-bf25-4a9dfc9cacfa",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C86",
+      "claim": "Cells with a membrane potential less negative than \u221250 mV and a series resistance higher than 30 M\u03a9 were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with a membrane potential less negative than \u221250 mV and a series resistance higher than 30 M\u03a9 were discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "aba293e2-9bd2-4dba-8022-138c8087f5c7",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C87",
+      "claim": "Neurons are modeled as adaptive exponential (AdEx) integrate-and-fire neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons are modeled as adaptive exponential (AdEx) integrate-and-fire neurons (Brette and Gerstner, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "6208290a-fbf7-413c-b5b5-c10b112ec84b",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C88",
+      "claim": "The AdEx model level of complexity (two dynamic variables: voltage and adaptation) is necessary to capture the diverse firing patterns of different neural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This level of complexity (two dynamic variables: voltage and adaptation) is necessary to capture the diverse firing patterns of different neural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the model choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "4fb21388-c081-4747-ab41-f7ff7fea66ac",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C89",
+      "claim": "Neuronal adaptation has been proposed as the main mechanism governing the alternation between SPW and non-SPW states.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, neuronal adaptation has been proposed as the main mechanism governing the alternation between SPW and non-SPW states (Levenstein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "ae97bb4a-0a53-4e5a-b762-ea9fe913d689",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C90",
+      "claim": "For A and T neurons, model parameters were chosen to be close to the single-neuron physiology following Hunt et al., 2018 and Linaro et al., 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "For A and T neurons, we follow the main figures and supplementary data by Hunt et al., 2018 and Linaro et al., 2022, since they performed detailed single-neuron physiological characterization of the two neuron types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model parameters with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "9baa81bd-808b-4ba0-b02d-400d611ffd6f",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C91",
+      "claim": "Athorny neurons were shown to have a higher input resistance, a higher resting potential, and a lower firing threshold than their thorny counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, athorny neurons were shown to have a higher input resistance, a higher resting potential, and a lower firing threshold than their thorny counterparts, and both kinds have a high reset potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from previous research used to inform the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "a7b168c3-3a6e-44c6-95ad-ba0a01326734",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C92",
+      "claim": "Model parameters result in a lower rheobase for athorny than for thorny neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our parameters result in a lower rheobase for athorny than for thorny neurons (Hunt et al., 2018, Linaro et al., 2022, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result of the computational model with citations and reference to the authors' data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "486c37bc-d03e-4de4-b79c-b6ba99fb14a9",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C93",
+      "claim": "Interneuron parameters were based on data from CA3, if available, or otherwise from other hippocampal subfields.",
+      "claim_type": "EXPLICIT",
+      "source": "Interneuron parameters were based on data from CA3, if available (Fidzinski et al., 2015; Pelkey et al., 2017), or otherwise from other hippocampal subfields (Ledri et al., 2012; Pawelzik et al., 2002; Tricoire et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model parameters with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "1e21393b-6423-467e-a10a-ffe7244e8992",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C94",
+      "claim": "Each population size is based on an estimation of its representation in a 400-\u00b5m-thick CA3 slice, according to the quantitative assessment by Bezaire and Soltesz, 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "Each population size is based on an estimation of its representation in a 400-\u00b5m-thick CA3 slice, according to the quantitative assessment by Bezaire and Soltesz, 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model parameters with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "7c2196f8-ed92-4b07-b991-a889842139e1",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C95",
+      "claim": "Pyramidal neurons are divided into thorny and athorny according to the 66\u201334% ratio that was determined experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyramidal neurons are divided into thorny and athorny according to the 66\u201334% ratio that we determined experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model parameters based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "bbaa1b5c-e7bd-4849-9c7d-e6bc7c003009",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C96",
+      "claim": "For excitatory-to-excitatory connections, the probabilities have the values that were assessed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "For excitatory-to-excitatory connections, these probabilities have the values that we assessed experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model parameters based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "a9122aa3-1273-4295-ad87-53220464f11f",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "claim_id": "C97",
+      "claim": "SPW events are identified based on the current flowing from B cells to the excitatory ones, which is thought to represent most of the LFP signal observed in the stratum pyramidale.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW events are identified based on the current flowing from B cells to the excitatory ones, which is thought to represent most of the LFP signal observed in the stratum pyramidale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model analysis method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a1e53151-5116-45ef-9d30-fb7251355e87",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study characterized morphological and electrophysiological differences between thorny and athorny CA3 pyramidal neurons. From 348 recorded CA3 pyramids, 229 were thorny and 119 were athorny. Athorny cells were located deeper in the pyramidal layer and had longer primary apical dendrites, resembling developmental differences reported by Marissal et al., 2012, suggesting these cell types may be developmentally distinct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C32 provide converging morphological and electrophysiological evidence characterizing thorny vs. athorny neurons. The sample size is substantial (348 cells), statistical tests are appropriate (Mann-Whitney U), and findings are consistent with prior literature (C29). The comparison to developmental studies (C29-C30) is appropriately presented as suggestive rather than definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "f838d746-7529-454e-bbca-d77247783eff",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study identified asymmetric connectivity patterns between thorny and athorny CA3 pyramidal neurons. Athorny-to-athorny connections occurred at 15%, thorny-to-athorny at 11%, thorny-to-thorny at 8%, and athorny-to-thorny at only 4%. The overall connectivity rate (8.9%) matched previously reported values. Connection strengths, latencies (<3 ms indicating monosynaptic connections), and failure rates were characterized across connection types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 present the core experimental finding of asymmetric connectivity with appropriate statistical analysis. The connectivity measurements are based on simultaneous whole-cell recordings from up to 8 cells, providing direct evidence. Latency measurements (C41) support the monosynaptic nature of connections. The consistency with prior work (C37) strengthens confidence in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "e8426a96-77c7-4fab-8635-398523684785",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Synaptic product analysis, incorporating connection probability, strength, and presynaptic population size, revealed that athorny neurons receive strong input from both thorny and athorny populations, while thorny neurons receive much weaker input, particularly from athorny cells. This demonstrates distinctly asymmetric connectivity between the two CA3 pyramidal subpopulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45, C65, C79 synthesize the connectivity data into a coherent picture of asymmetric network organization. The synaptic product metric appropriately integrates multiple experimental measurements (connection probability, strength, population size) to estimate functional impact. This analysis directly supports the main experimental conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "fb903978-56f3-477c-84ce-df2e71041e82",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two recent independent studies using different experimental methods reported similar asymmetric connectivity patterns in CA3, with superficial neurons (corresponding to athorny cells based on location) frequently innervating themselves and deep pyramids, but much less frequent connectivity from deep to superficial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 appropriately cite convergent evidence from independent laboratories using different methodologies (Watson et al., 2024; Layous et al., 2025). This cross-validation strengthens confidence in the asymmetric connectivity finding, though the correspondence between deep/superficial and thorny/athorny classifications requires the additional anatomical data from C27.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "59f3ab77-76fc-4902-8757-9dfb754e36cc",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A computational model incorporating the experimentally measured asymmetric connectivity reproduced the sequential activation of athorny then thorny neurons during sharp wave events. The model includes PV+ basket cells and anti-SPW interneurons, with bistability between SPW and non-SPW states driven by pyramidal cell adaptation. Athorny cells fire first due to lower rheobase, recruit other athorny cells via high A\u2192A connectivity, and disynaptically suppress thorny cells via basket cells, resulting in a 29 ms delay between population peaks matching experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C56 describe a mechanistically detailed computational model that successfully reproduces key experimental observations (29 ms delay matching Hunt et al., 2018). The model is based on established neuron models (AdEx) with parameters drawn from literature and the authors' own data. The proposed disynaptic inhibition mechanism provides a plausible explanation for the long delay that would be difficult to explain by direct excitation alone (C56).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Systematic variation of connectivity parameters in the model revealed that low A\u2192T and high A\u2192A connectivity are crucial for producing the long delay between athorny and thorny peak firing. Decreasing A\u2192A or increasing A\u2192T connectivity resulted in simultaneous peaks, while further increasing A\u2192A or decreasing A\u2192T produced even longer delays. Connections from basket interneurons were as important as excitatory connections, while connections to basket cells had minor effects. The model dynamics remained qualitatively similar when including short-term depression and synaptic variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 present a thorough parameter exploration demonstrating the robustness and necessity of the asymmetric connectivity for the observed dynamics. The systematic variation of connectivity parameters (Figure 5) maps out the parameter space and identifies the critical features. The robustness to additional biological details (C60) strengthens the model's validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The computational modeling demonstrates that the experimentally measured asymmetric connectivity is crucial for determining the sequential activation of athorny and thorny cells during sharp waves. The mechanism involves athorny neurons switching the network to the SPW state while simultaneously disynaptically suppressing thorny neurons through PV+ basket cells, explaining the tens-of-milliseconds delay observed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C23, C68-C74, C80 synthesize the modeling results into mechanistic conclusions linking connectivity to function. The model provides a testable mechanistic explanation for how asymmetric connectivity produces sequential activation. However, the model relies on the existence of anti-SPW interneurons in CA3, which remains to be experimentally demonstrated (C71), introducing some uncertainty about the complete mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "3ee8c0f1-a43f-40d6-9a5c-096ac73c2f66",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study discusses potential relationships between thorny/athorny classification and developmental origin. Early-born CA3 neurons are located deeper and have longer apical dendrites (similar to athorny cells), and developmentally distinct populations show different roles in memory encoding. Thorn density can be modulated by training and hormones, though whether this results in complete cell-type transitions is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C78, C30 appropriately discuss potential connections to developmental studies and functional implications, but these remain speculative. The morphological similarities between athorny cells and early-born neurons (C77) are suggestive but not definitive. The functional implications (C76) and plasticity of thorns (C78) are cited from other work but their relationship to the current findings requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "f04d2cc1-fd83-44a5-8847-c3216b5d3151",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The experimental methods involved whole-cell patch-clamp recordings from up to 8 CA3 pyramidal neurons simultaneously in 400 \u03bcm horizontal hippocampal slices from P40 C57/Bl6n mice. Quality control criteria excluded cells with membrane potential less negative than -50 mV or series resistance above 30 M\u03a9. A subset of data (238/348 cells) was previously published.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C86 describe standard and appropriate electrophysiological methods. The simultaneous recording from up to 8 cells is technically demanding but well-established for connectivity studies. Quality control criteria (C86) are reasonable. The transparency about data reuse (C85) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The computational model used adaptive exponential integrate-and-fire (AdEx) neurons to capture diverse firing patterns and adaptation dynamics. Model parameters for athorny and thorny neurons were based on detailed physiological characterization from Hunt et al., 2018 and Linaro et al., 2022. Interneuron parameters were drawn from CA3 data when available or other hippocampal regions. Population sizes were based on estimates from Bezaire and Soltesz, 2013, with the 66-34% thorny-athorny ratio from experimental data. Excitatory-to-excitatory connection probabilities used experimentally measured values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C97 describe appropriate modeling choices with parameters grounded in experimental literature and the authors' own data. The AdEx model is well-suited for capturing adaptation (C88-C89), which is central to the proposed mechanism. The systematic use of literature values for parameters that were not directly measured (C90-C94) is appropriate, though it introduces some uncertainty about parameter interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about the hippocampus, CA3, sharp wave-ripple complexes, and pyramidal neuron heterogeneity. Key prior findings include: CA3 as the main SPW generator, SPW-Rs' role in memory consolidation through replay, the existence of thorny and athorny CA3 pyramidal subtypes, athorny cells firing before thorny cells during SPWs, and high recurrent connectivity (8.8%) within CA3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22, C46 appropriately cite established knowledge and prior findings from the literature. These background claims are well-supported by citations to seminal and recent work. The characterization of the field's understanding provides appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "c2c35057-c8c8-4663-b4f2-caea9ab4093b",
+      "content_id": "ba13cfc6-2026-4375-a078-ee31d0a764b5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Recent work has indicated that distinct subpopulations of pyramidal neurons within CA3 may contribute differently to network activity, including sharp waves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 accurately represents recent findings in the field and is supported by appropriate citations. This provides direct motivation for the current study's focus on subpopulation-specific connectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "acb80380-3356-4815-ba42-7924d56bb7b3",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors report asymmetric connectivity between thorny and athorny CA3 pyramidal cells, with athorny cells receiving strong input from both athorny (15%) and thorny (11%) cells, while thorny cells receive weaker input from athorny cells (4%) and moderate input from other thorny cells (8%). This asymmetry demonstrates a strong pattern of input onto athorny neurons and much weaker input onto thorny cells, particularly from the athorny sub-population.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm these findings. The first reviewer states the study shows 'valuable findings on the asymmetric connectivity pattern' and that 'athorny cells receive strong inputs from all other cell types, thorny cells receive weaker inputs from athorny neurons.' The second reviewer confirms the authors 'find an asymmetrical connectivity pattern, with athorny cells receiving the most synaptic connections from both athorny and thorny cells, and thorny cells receiving fewer,' and notes these findings 'will be key in understanding CA3 functions.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The computational model demonstrates that the asymmetric connectivity scheme determines the sequential activation of athorny and thorny cells during sharp wave events. The model shows athorny cells fire before thorny cells with an average delay of 29 ms, matching experimental data from Hunt et al., 2018. This sequential activation is explained by athorny cells initially suppressing thorny cells through disynaptic inhibition via PV+ basket cells, with thorny cells only firing after athorny cell activity decreases due to adaptation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly support the modeling results. The first reviewer states 'the evidence combining experimental and computational modelling approaches convincingly supports the authors' claims regarding the network mechanisms underlying the temporal sequences of neuronal activity during sharp-waves.' The second reviewer notes 'the modeling results lend support to the idea that the increased excitatory connectivity towards athorny cells plays an important role in causing them to fire before thorny cells in sharp waves' and that the model 'adds to an expanding pool of models of sharp wave ripples.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "47f86835-d8e9-4582-b381-4b5b22b846ae",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Systematic variation of connectivity parameters in the model reveals that decreased A\u2192A or increased A\u2192T connectivity prevents initial suppression of thorny cells, resulting in simultaneous peaks, while long delays are consistently found when A\u2192A is large and A\u2192T is small. Connections from basket interneurons are as important as excitatory connections, with basket cells optimally contributing to thorny cell suppression when they primarily target thorny rather than athorny cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not explicitly critique these detailed modeling predictions. The first reviewer's statement that the evidence 'convincingly supports' the network mechanisms and the second reviewer's affirmation that 'the modeling results lend support' to the connectivity-based explanation implicitly accept these mechanistic details as part of the overall supported model framework.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "602f8d15-f328-4d32-a3e1-f9c994f2255c",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors recorded from 348 CA3 pyramidal cells (229 thorny, 119 athorny) and characterized morphological and physiological differences between cell types. Athorny cells were located deeper in the pyramidal layer toward stratum oriens and showed differences in maximum firing rate, rheobase, and input resistance compared to thorny cells, but no difference in resting membrane potential.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly validates these findings, stating 'The authors provide independent validation of some of the findings by Hunt et al. (2018) concerning the distinction between thorny and athorny pyramidal cells in CA3.' The first reviewer's overall assessment that the study represents 'valuable findings' implicitly accepts the experimental characterization. No concerns are raised about the cell classification or physiological measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "e20414d3-fb15-429a-8033-cd89ff3b6e02",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Detailed synaptic properties show reciprocal connections between athorny-athorny pairs (4%) and thorny-thorny pairs (1%), with synaptic connections strongest among athorny-athorny cells (though not statistically significant). EPSPs had latencies below 3 ms indicating monosynaptic connections, and athorny-athorny synapses had the lowest failure rate (though not statistically significant). Thorny-athorny connections showed the highest synaptic product.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not raise concerns about these detailed synaptic measurements. The second reviewer's statement that 'The properties of excitatory connections among and between thorny and athorny cells described by the authors will be key in understanding CA3 functions' encompasses acceptance of these detailed connection properties as part of the overall connectivity findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "fd550e8a-bbf0-42d3-a7f0-b34edd78031e",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Two other groups recently reported similar findings using different experimental methods, classifying cells by location in the pyramidal layer (deep and superficial) rather than thorny or athorny. Both studies report superficial neurons frequently innervating themselves and deep CA3 pyramids with much less frequent connectivity from deep to superficial cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not challenge this comparison to other recent work. The second reviewer's acknowledgment that the authors 'advance our understanding of their differential integration in CA3 microcircuits' implicitly accepts the contextualization of findings within the broader literature, including these convergent results from other groups.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "b64e18d8-8b06-4581-9914-ede7bd0b8b5d",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The model explains the long delay between athorny and thorny cell activation through the ambivalent role of athorny neurons, which switch the network to the SPW state via PV+ basket cells taking over from anti-SPW interneurons, but simultaneously disynaptically suppress thorny neurons through the shared pool of PV+ basket cells. This mechanism does not require special asymmetries in interneuron-pyramidal connectivity given the measured excitatory connectivity values.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept the mechanistic explanation without challenge. The first reviewer's statement that the evidence 'convincingly supports the authors' claims regarding the network mechanisms' encompasses this disynaptic inhibition mechanism. The second reviewer notes the model shows 'how this assymmetrical connectivity is consistent with a preferential role of athorny cells in sharp wave initiation,' accepting the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "afee92a8-4bc5-4d75-88ac-7f02b03c1c90",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The findings on soma location and primary apical dendritic length resemble findings from Marissal et al., 2012 on early and late-born CA3 neurons, suggesting thorny and athorny neurons may be developmentally distinct. The CA3 pyramidal population has two developmentally distinct groups with functionally different roles in memory encoding, and early-born neurons tend to be located closer to stratum oriens with longer primary apical dendrites. Thorn density can be modulated through training and steroid hormones.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not challenge these developmental and functional interpretations. The second reviewer's statement that the authors 'advance our understanding of their differential integration in CA3 microcircuits' implicitly accepts the developmental context and functional implications discussed by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "948c86a4-4017-4950-86bf-3537a26d2500",
+      "content_id": "5f346723-466b-4bb8-b3a4-4d610cf7c84d",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The model dynamics and effects of excitatory-to-excitatory connectivities remain qualitatively unaltered when experimentally observed short-term depression and synaptic variability are included in the model.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not raise concerns about model robustness. The first reviewer's assessment that the evidence 'convincingly supports' the claims and the second reviewer's statement that 'the model adds to an expanding pool of models of sharp wave ripples' implicitly accept the model's robustness to these biological details.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8a45ce93-d18a-4ca1-86d5-f5fe1f81fe92",
+      "result_id": "a1e53151-5116-45ef-9d30-fb7251355e87"
+    },
+    {
+      "claim_id": "662bba59-62d5-4c91-92ee-98f6544cc05b",
+      "result_id": "a1e53151-5116-45ef-9d30-fb7251355e87"
+    },
+    {
+      "claim_id": "5f9bc0fa-92d0-4299-9209-36051e0199ee",
+      "result_id": "a1e53151-5116-45ef-9d30-fb7251355e87"
+    },
+    {
+      "claim_id": "06888d7c-1668-4221-a39c-98ad2bc263c9",
+      "result_id": "a1e53151-5116-45ef-9d30-fb7251355e87"
+    },
+    {
+      "claim_id": "9a20a73a-5023-4e1d-9489-ce0c623479d1",
+      "result_id": "a1e53151-5116-45ef-9d30-fb7251355e87"
+    },
+    {
+      "claim_id": "6a0de811-0604-4167-8304-23e820e80256",
+      "result_id": "a1e53151-5116-45ef-9d30-fb7251355e87"
+    },
+    {
+      "claim_id": "61539268-1c34-4655-92c8-16c093758742",
+      "result_id": "a1e53151-5116-45ef-9d30-fb7251355e87"
+    },
+    {
+      "claim_id": "1a4af826-e204-4ab2-9a33-1a17a6abbb27",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "aa19e1c3-0355-4488-9514-06040d2e6639",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "280fd9ba-dbfe-4632-9184-0332f6af710a",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "5393fe1b-bbc0-4d17-99b2-1d035159a938",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "2defa563-ffe4-4ff9-a8ef-f5079bf0f385",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "700c66e9-a1cc-4b06-a9b5-79a887b62ef1",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "14e7d827-5113-4842-b02a-fb6cfc57b25c",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "a35c25f9-2b73-4a81-ad04-bfb42c344067",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "32c5c5e6-2c99-48ba-828b-17197d72b670",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "81c96690-9404-4de2-9756-98cea302000f",
+      "result_id": "f838d746-7529-454e-bbca-d77247783eff"
+    },
+    {
+      "claim_id": "88c46919-a039-4ba4-aa06-3d99a2516933",
+      "result_id": "e8426a96-77c7-4fab-8635-398523684785"
+    },
+    {
+      "claim_id": "315679b1-c2e9-4051-83de-9f47174ffd31",
+      "result_id": "e8426a96-77c7-4fab-8635-398523684785"
+    },
+    {
+      "claim_id": "eb8a02d2-b26d-4b8a-8665-5f02135b57da",
+      "result_id": "e8426a96-77c7-4fab-8635-398523684785"
+    },
+    {
+      "claim_id": "5e59db9d-a43f-476e-b2ea-da67588b2c70",
+      "result_id": "e8426a96-77c7-4fab-8635-398523684785"
+    },
+    {
+      "claim_id": "e808ac65-2a84-422d-bede-a35a86fae8fc",
+      "result_id": "fb903978-56f3-477c-84ce-df2e71041e82"
+    },
+    {
+      "claim_id": "01646895-cc91-4575-bfce-fc6e042e6d8b",
+      "result_id": "fb903978-56f3-477c-84ce-df2e71041e82"
+    },
+    {
+      "claim_id": "b97b42b9-0a10-4e48-ab87-e6e68a3dd597",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "a4147025-ba98-432e-9ece-f1a6fa5fc3a2",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "da7d8893-50a6-4b27-b948-6479dc8247c6",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "b48d34f2-a31d-4286-ae08-f9bfbdbf4957",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "0c868ad2-7508-42cc-9d0a-9bc53015a809",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "1f111fa6-3872-4cca-8eda-104d10354a4d",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "11b6f7d3-60e9-4c8e-ac4c-40e370667822",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "401a3f37-248e-4e7c-af76-40b8be010ac5",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "5dea7df9-2f2f-454d-8523-199f77d989dd",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "566b550b-c945-4b3b-9816-32e2095a6ef9",
+      "result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc"
+    },
+    {
+      "claim_id": "118fc659-d677-44eb-a7b8-e71b05c50396",
+      "result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573"
+    },
+    {
+      "claim_id": "e90eb08c-f00e-4f2b-afff-2a02f377e804",
+      "result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573"
+    },
+    {
+      "claim_id": "2a0d47cd-5041-4b1d-9c25-f27b86938a8a",
+      "result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573"
+    },
+    {
+      "claim_id": "9a413344-a76e-4e5e-8c5e-b9e37afe9924",
+      "result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573"
+    },
+    {
+      "claim_id": "9462f613-2794-4cd5-8165-c8e8112be3a2",
+      "result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573"
+    },
+    {
+      "claim_id": "e0b0d6ed-3899-4840-90eb-591d27b7b716",
+      "result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573"
+    },
+    {
+      "claim_id": "9da19fc5-0ecd-4aae-9bf6-323cac8d3340",
+      "result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573"
+    },
+    {
+      "claim_id": "466ea830-479e-4415-98d6-41cc66bc5f6b",
+      "result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573"
+    },
+    {
+      "claim_id": "4828b901-3f05-41b3-8939-de14d481cec8",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "36f68923-6928-431c-b99a-1b0a5b823871",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "fb0eaaca-a775-40d3-8c31-60899804191f",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "213c07bd-6341-4ffb-be26-084ff34eb34f",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "b553c57e-957e-44d3-9f6b-f59fd026dd50",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "093d75eb-c93d-4d2d-a9de-b74303f946b9",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "c1165228-e233-4ed4-b6fe-6f0b240ecc75",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "c0f80cd5-214b-4441-8c9f-e273e0b0ef49",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "bb1f5d5c-15a6-43d0-afe6-58c785bc105d",
+      "result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd"
+    },
+    {
+      "claim_id": "9a7b307e-1c44-40eb-b468-d1b1e96ffc3a",
+      "result_id": "3ee8c0f1-a43f-40d6-9a5c-096ac73c2f66"
+    },
+    {
+      "claim_id": "0d7647e3-7c1a-4c56-8ea3-9d6ac1fa3329",
+      "result_id": "3ee8c0f1-a43f-40d6-9a5c-096ac73c2f66"
+    },
+    {
+      "claim_id": "d9c2e0a3-2987-4724-9185-d2bd2671712e",
+      "result_id": "3ee8c0f1-a43f-40d6-9a5c-096ac73c2f66"
+    },
+    {
+      "claim_id": "fc5b1269-6b43-4df5-a3bc-ccfcd2831d05",
+      "result_id": "3ee8c0f1-a43f-40d6-9a5c-096ac73c2f66"
+    },
+    {
+      "claim_id": "9a20a73a-5023-4e1d-9489-ce0c623479d1",
+      "result_id": "3ee8c0f1-a43f-40d6-9a5c-096ac73c2f66"
+    },
+    {
+      "claim_id": "955c60c2-122b-4296-b39b-220eca272437",
+      "result_id": "f04d2cc1-fd83-44a5-8847-c3216b5d3151"
+    },
+    {
+      "claim_id": "125f91c0-2c58-4435-947c-649ddb017ab8",
+      "result_id": "f04d2cc1-fd83-44a5-8847-c3216b5d3151"
+    },
+    {
+      "claim_id": "f6ae0004-6dbd-49a2-bde7-95daa38db23b",
+      "result_id": "f04d2cc1-fd83-44a5-8847-c3216b5d3151"
+    },
+    {
+      "claim_id": "51fcdb4c-c477-4469-9238-80b648e30eb0",
+      "result_id": "f04d2cc1-fd83-44a5-8847-c3216b5d3151"
+    },
+    {
+      "claim_id": "a7402960-078a-4af2-8898-7a4ccd708ddd",
+      "result_id": "f04d2cc1-fd83-44a5-8847-c3216b5d3151"
+    },
+    {
+      "claim_id": "2ad0a70b-a73a-41fd-bf25-4a9dfc9cacfa",
+      "result_id": "f04d2cc1-fd83-44a5-8847-c3216b5d3151"
+    },
+    {
+      "claim_id": "aba293e2-9bd2-4dba-8022-138c8087f5c7",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "6208290a-fbf7-413c-b5b5-c10b112ec84b",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "4fb21388-c081-4747-ab41-f7ff7fea66ac",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "ae97bb4a-0a53-4e5a-b762-ea9fe913d689",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "9baa81bd-808b-4ba0-b02d-400d611ffd6f",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "a7b168c3-3a6e-44c6-95ad-ba0a01326734",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "486c37bc-d03e-4de4-b79c-b6ba99fb14a9",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "1e21393b-6423-467e-a10a-ffe7244e8992",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "7c2196f8-ed92-4b07-b991-a889842139e1",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "bbaa1b5c-e7bd-4849-9c7d-e6bc7c003009",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "a9122aa3-1273-4295-ad87-53220464f11f",
+      "result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a"
+    },
+    {
+      "claim_id": "6fe9898b-53ab-4e63-b80f-13fe71d37f25",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "3a810ec1-7feb-408f-a3dc-e57cef0c164e",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "62daa59d-aff3-4296-a734-b3cb8bb67426",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "b2fa4586-d009-4734-b112-8c928dbabad2",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "82b15457-7483-4ec2-a133-26d8ae0768ca",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "6d0eaa1c-7172-40c3-8700-05577e32ac01",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "d4bd5d04-e4e7-4974-a953-829ef0ff126e",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "d6b9965d-0fd9-48ab-a37e-38dc36123ea6",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "01a1d54f-e436-4e64-9afa-23c787c317e6",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "6dc05da8-d9c9-4654-b450-4657a028e982",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "d766144b-d272-485e-925a-5629a882cb45",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "14f9ef29-442e-4783-8a23-c9c796fc0f1f",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "6cc66949-f76c-4937-81b7-d83c3bd603f1",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "d0256142-e929-43a4-b9b5-26f1d466bd2a",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "27bae6e0-9dfa-437e-b4ec-afb6862cafc3",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "7e3a9d23-982f-4a45-812d-d43baa0d4eb6",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "cd39fe23-8606-45ca-afed-a9c6417ff776",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "904b858c-a7fd-47ba-b0f0-1fb6ff28d756",
+      "result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2"
+    },
+    {
+      "claim_id": "80d511ca-e3a1-4bc5-8743-03f1bcbc8cc9",
+      "result_id": "c2c35057-c8c8-4663-b4f2-caea9ab4093b"
+    },
+    {
+      "claim_id": "2025509a-1efe-4b60-a30c-03a19ea62de3",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "13af4732-b6bb-42f8-b07c-805dfd7671fd",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "afcb8003-93c3-4c88-8c6d-c9a8c631ab8d",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "1a4af826-e204-4ab2-9a33-1a17a6abbb27",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "aa19e1c3-0355-4488-9514-06040d2e6639",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "280fd9ba-dbfe-4632-9184-0332f6af710a",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "5393fe1b-bbc0-4d17-99b2-1d035159a938",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "2defa563-ffe4-4ff9-a8ef-f5079bf0f385",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "315679b1-c2e9-4051-83de-9f47174ffd31",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "eb8a02d2-b26d-4b8a-8665-5f02135b57da",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "5e59db9d-a43f-476e-b2ea-da67588b2c70",
+      "result_id": "acb80380-3356-4815-ba42-7924d56bb7b3"
+    },
+    {
+      "claim_id": "4828b901-3f05-41b3-8939-de14d481cec8",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "36f68923-6928-431c-b99a-1b0a5b823871",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "904b858c-a7fd-47ba-b0f0-1fb6ff28d756",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "a4147025-ba98-432e-9ece-f1a6fa5fc3a2",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "da7d8893-50a6-4b27-b948-6479dc8247c6",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "b48d34f2-a31d-4286-ae08-f9bfbdbf4957",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "0c868ad2-7508-42cc-9d0a-9bc53015a809",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "1f111fa6-3872-4cca-8eda-104d10354a4d",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "11b6f7d3-60e9-4c8e-ac4c-40e370667822",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "401a3f37-248e-4e7c-af76-40b8be010ac5",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "5dea7df9-2f2f-454d-8523-199f77d989dd",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "566b550b-c945-4b3b-9816-32e2095a6ef9",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "466ea830-479e-4415-98d6-41cc66bc5f6b",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "fb0eaaca-a775-40d3-8c31-60899804191f",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "bb1f5d5c-15a6-43d0-afe6-58c785bc105d",
+      "result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3"
+    },
+    {
+      "claim_id": "118fc659-d677-44eb-a7b8-e71b05c50396",
+      "result_id": "47f86835-d8e9-4582-b381-4b5b22b846ae"
+    },
+    {
+      "claim_id": "e90eb08c-f00e-4f2b-afff-2a02f377e804",
+      "result_id": "47f86835-d8e9-4582-b381-4b5b22b846ae"
+    },
+    {
+      "claim_id": "2a0d47cd-5041-4b1d-9c25-f27b86938a8a",
+      "result_id": "47f86835-d8e9-4582-b381-4b5b22b846ae"
+    },
+    {
+      "claim_id": "9462f613-2794-4cd5-8165-c8e8112be3a2",
+      "result_id": "47f86835-d8e9-4582-b381-4b5b22b846ae"
+    },
+    {
+      "claim_id": "e0b0d6ed-3899-4840-90eb-591d27b7b716",
+      "result_id": "47f86835-d8e9-4582-b381-4b5b22b846ae"
+    },
+    {
+      "claim_id": "9da19fc5-0ecd-4aae-9bf6-323cac8d3340",
+      "result_id": "47f86835-d8e9-4582-b381-4b5b22b846ae"
+    },
+    {
+      "claim_id": "8a45ce93-d18a-4ca1-86d5-f5fe1f81fe92",
+      "result_id": "602f8d15-f328-4d32-a3e1-f9c994f2255c"
+    },
+    {
+      "claim_id": "662bba59-62d5-4c91-92ee-98f6544cc05b",
+      "result_id": "602f8d15-f328-4d32-a3e1-f9c994f2255c"
+    },
+    {
+      "claim_id": "5f9bc0fa-92d0-4299-9209-36051e0199ee",
+      "result_id": "602f8d15-f328-4d32-a3e1-f9c994f2255c"
+    },
+    {
+      "claim_id": "6a0de811-0604-4167-8304-23e820e80256",
+      "result_id": "602f8d15-f328-4d32-a3e1-f9c994f2255c"
+    },
+    {
+      "claim_id": "61539268-1c34-4655-92c8-16c093758742",
+      "result_id": "602f8d15-f328-4d32-a3e1-f9c994f2255c"
+    },
+    {
+      "claim_id": "700c66e9-a1cc-4b06-a9b5-79a887b62ef1",
+      "result_id": "e20414d3-fb15-429a-8033-cd89ff3b6e02"
+    },
+    {
+      "claim_id": "14e7d827-5113-4842-b02a-fb6cfc57b25c",
+      "result_id": "e20414d3-fb15-429a-8033-cd89ff3b6e02"
+    },
+    {
+      "claim_id": "a35c25f9-2b73-4a81-ad04-bfb42c344067",
+      "result_id": "e20414d3-fb15-429a-8033-cd89ff3b6e02"
+    },
+    {
+      "claim_id": "32c5c5e6-2c99-48ba-828b-17197d72b670",
+      "result_id": "e20414d3-fb15-429a-8033-cd89ff3b6e02"
+    },
+    {
+      "claim_id": "81c96690-9404-4de2-9756-98cea302000f",
+      "result_id": "e20414d3-fb15-429a-8033-cd89ff3b6e02"
+    },
+    {
+      "claim_id": "88c46919-a039-4ba4-aa06-3d99a2516933",
+      "result_id": "e20414d3-fb15-429a-8033-cd89ff3b6e02"
+    },
+    {
+      "claim_id": "e808ac65-2a84-422d-bede-a35a86fae8fc",
+      "result_id": "fd550e8a-bbf0-42d3-a7f0-b34edd78031e"
+    },
+    {
+      "claim_id": "01646895-cc91-4575-bfce-fc6e042e6d8b",
+      "result_id": "fd550e8a-bbf0-42d3-a7f0-b34edd78031e"
+    },
+    {
+      "claim_id": "213c07bd-6341-4ffb-be26-084ff34eb34f",
+      "result_id": "b64e18d8-8b06-4581-9914-ede7bd0b8b5d"
+    },
+    {
+      "claim_id": "b553c57e-957e-44d3-9f6b-f59fd026dd50",
+      "result_id": "b64e18d8-8b06-4581-9914-ede7bd0b8b5d"
+    },
+    {
+      "claim_id": "093d75eb-c93d-4d2d-a9de-b74303f946b9",
+      "result_id": "b64e18d8-8b06-4581-9914-ede7bd0b8b5d"
+    },
+    {
+      "claim_id": "c1165228-e233-4ed4-b6fe-6f0b240ecc75",
+      "result_id": "b64e18d8-8b06-4581-9914-ede7bd0b8b5d"
+    },
+    {
+      "claim_id": "c0f80cd5-214b-4441-8c9f-e273e0b0ef49",
+      "result_id": "b64e18d8-8b06-4581-9914-ede7bd0b8b5d"
+    },
+    {
+      "claim_id": "06888d7c-1668-4221-a39c-98ad2bc263c9",
+      "result_id": "afee92a8-4bc5-4d75-88ac-7f02b03c1c90"
+    },
+    {
+      "claim_id": "9a20a73a-5023-4e1d-9489-ce0c623479d1",
+      "result_id": "afee92a8-4bc5-4d75-88ac-7f02b03c1c90"
+    },
+    {
+      "claim_id": "9a7b307e-1c44-40eb-b468-d1b1e96ffc3a",
+      "result_id": "afee92a8-4bc5-4d75-88ac-7f02b03c1c90"
+    },
+    {
+      "claim_id": "0d7647e3-7c1a-4c56-8ea3-9d6ac1fa3329",
+      "result_id": "afee92a8-4bc5-4d75-88ac-7f02b03c1c90"
+    },
+    {
+      "claim_id": "d9c2e0a3-2987-4724-9185-d2bd2671712e",
+      "result_id": "afee92a8-4bc5-4d75-88ac-7f02b03c1c90"
+    },
+    {
+      "claim_id": "fc5b1269-6b43-4df5-a3bc-ccfcd2831d05",
+      "result_id": "afee92a8-4bc5-4d75-88ac-7f02b03c1c90"
+    },
+    {
+      "claim_id": "9a413344-a76e-4e5e-8c5e-b9e37afe9924",
+      "result_id": "948c86a4-4017-4950-86bf-3537a26d2500"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c9ab9901-232b-40f6-883a-2a366eaa8098",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "fb903978-56f3-477c-84ce-df2e71041e82",
+      "peer_result_id": "fd550e8a-bbf0-42d3-a7f0-b34edd78031e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C66-C67. Both evaluations support the comparison to convergent findings from other laboratories (Watson et al., 2024; Layous et al., 2025). OpenEval notes the cross-validation strengthens confidence, while peer reviewers implicitly accept this contextualization within broader literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "55a3adee-dfdb-494f-84b5-0361dc82ce84",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3ee8c0f1-a43f-40d6-9a5c-096ac73c2f66",
+      "peer_result_id": "afee92a8-4bc5-4d75-88ac-7f02b03c1c90",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Strong agreement on claims C30, C75-C78 regarding developmental and functional implications. Both evaluations rate these as SUPPORTED, though OpenEval is more cautious, noting these connections remain speculative and require further investigation, while peer reviewers accept them without explicit challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "0618f60e-855f-4883-a5f9-8943b61872f3",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573",
+      "peer_result_id": "47f86835-d8e9-4582-b381-4b5b22b846ae",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C57-C59, C61-C63 regarding parameter exploration and model robustness. Both evaluations support these findings. OpenEval provides detailed assessment of systematic parameter variation, while peer reviewers implicitly accept these mechanistic details as part of the overall supported model framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "0ca869a4-13f2-4f44-9a4f-35a4d0e8a7df",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "a1e53151-5116-45ef-9d30-fb7251355e87",
+      "peer_result_id": "602f8d15-f328-4d32-a3e1-f9c994f2255c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C24-C25, C27, C31-C32 characterizing thorny vs. athorny neurons. Both evaluations support these morphological and electrophysiological findings. OpenEval emphasizes substantial sample size and appropriate statistics, while peer reviewers explicitly validate these as independent confirmation of Hunt et al. (2018) findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "c6489612-43b8-455d-924f-1d0b015f9626",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "59f3ab77-76fc-4902-8757-9dfb754e36cc",
+      "peer_result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on computational modeling claims C48-C56. Both evaluations support the model's ability to reproduce experimental observations. OpenEval details the mechanistic plausibility of disynaptic inhibition, while peer reviewers affirm the model 'convincingly supports' network mechanisms and adds to sharp wave ripple models.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "b3149e17-6c7c-4e6f-8011-13f729c43a59",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd",
+      "peer_result_id": "b64e18d8-8b06-4581-9914-ede7bd0b8b5d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on mechanistic claims C69-C70, C72-C74 linking connectivity to function. Both evaluations support these findings. OpenEval notes uncertainty about anti-SPW interneurons in CA3, while peer reviewers accept the disynaptic inhibition mechanism without challenge as part of convincingly supported network mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "a86f3914-cc8c-4034-a9d7-4e48a5d7f856",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "f838d746-7529-454e-bbca-d77247783eff",
+      "peer_result_id": "acb80380-3356-4815-ba42-7924d56bb7b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on core connectivity findings C33-C37. Both evaluations support the asymmetric connectivity pattern. OpenEval emphasizes direct evidence from simultaneous recordings and appropriate statistics, while peer reviewers explicitly affirm 'valuable findings on the asymmetric connectivity pattern' that will be key to understanding CA3 functions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "c1229522-f617-46ea-9bff-fb2c8a438c74",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f838d746-7529-454e-bbca-d77247783eff",
+      "peer_result_id": "e20414d3-fb15-429a-8033-cd89ff3b6e02",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on detailed synaptic measurements C38-C42. Both evaluations support these findings. OpenEval highlights latency measurements supporting monosynaptic connections, while peer reviewers encompass these detailed connection properties in their acceptance of overall connectivity findings as key to understanding CA3 functions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "223b5ac0-82bd-4f29-a521-9cc9ef106e52",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "e8426a96-77c7-4fab-8635-398523684785",
+      "peer_result_id": "acb80380-3356-4815-ba42-7924d56bb7b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on synthesis of connectivity data C44-C45, C65, C79. Both evaluations support the asymmetric network organization. OpenEval emphasizes the synaptic product metric integrating multiple measurements, while peer reviewers explicitly affirm the asymmetrical connectivity pattern findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "90e875e6-009b-4d1d-9f28-6cbbd7e4e44d",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d1f4f2ab-b7af-4c8d-b2dc-1aed34bbc573",
+      "peer_result_id": "948c86a4-4017-4950-86bf-3537a26d2500",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on model robustness claim C60. Both evaluations support robustness to additional biological details. OpenEval explicitly notes this strengthens model validity, while peer reviewers implicitly accept robustness through their overall assessment that evidence 'convincingly supports' the claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "14daa26b-3b80-4eba-878f-01b28779814e",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "3ecb0c84-e8cb-4c46-9a45-a4249ffe6dbd",
+      "peer_result_id": "fb7b300a-46a1-4459-b5e4-b847f6ab7dc3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on mechanistic conclusions C8, C23, C68, C80 linking connectivity to sequential activation. Both evaluations support these claims. OpenEval provides detailed assessment with caveat about anti-SPW interneurons, while peer reviewers affirm modeling results support the connectivity-based explanation for athorny cells firing before thorny cells.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "2cd95b9f-ffdb-4d17-b0ac-f664790115e3",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "f04d2cc1-fd83-44a5-8847-c3216b5d3151",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated methodological claims C81-C86 regarding electrophysiological methods, finding them appropriate and well-established. No corresponding peer review evaluation found for these specific methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "2d1a6b7f-48fe-4fb1-9b51-00c9c5ccb35c",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "31a78fe3-2a16-4f70-8bde-e88b6d955e4a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated modeling methodology claims C87-C97, finding parameter choices appropriate and grounded in literature. No corresponding peer review evaluation found for these specific modeling parameter details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "4585b27e-655c-4436-b02e-09c671574cee",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "7ee43b37-e7ac-45b5-8924-ff56a09c37e2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background and literature context claims C1-C3, C9-C22, C46, finding them well-supported by citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    },
+    {
+      "id": "0c5a7e46-8788-48fd-a248-9a8903296984",
+      "submission_id": "13e4cbf7-fc54-4ba5-afce-1cf911cbe3a1",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "c2c35057-c8c8-4663-b4f2-caea9ab4093b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claim C4 regarding recent field findings as supported and providing direct motivation for the study. No corresponding peer review evaluation found for this specific motivational claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:19:00.218962Z"
+    }
+  ]
+}

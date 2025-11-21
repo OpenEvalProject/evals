@@ -1,0 +1,1992 @@
+{
+  "submission": {
+    "id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:13:08.955927Z",
+    "updated_at": "2025-11-21T17:13:08.955927Z"
+  },
+  "content": [
+    {
+      "id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "content_type": "manuscript",
+      "content_text": "# Tissue-resident memory CD4+ T cells are sustained by site-specific levels of self-renewal and continuous replacement\n\n## Authors\n\n- Jodie Chandler<sup>1</sup>\n- M Elise Bullock<sup>2</sup> ([ORCID: 0000-0002-7876-4938](https://orcid.org/0000-0002-7876-4938))\n- Arpit C Swain<sup>2</sup>\n- Cayman Williams<sup>1</sup> ([ORCID: 0000-0002-0518-1379](https://orcid.org/0000-0002-0518-1379))\n- Christiaan H van Dorp<sup>2</sup> ([ORCID: 0000-0002-7504-9947](https://orcid.org/0000-0002-7504-9947))\n- Benedict Seddon<sup>1</sup> ([ORCID: 0000-0003-4352-3373](https://orcid.org/0000-0003-4352-3373)) \u2020\n- Andrew J Yates<sup>2</sup> ([ORCID: 0000-0003-4606-4483](https://orcid.org/0000-0003-4606-4483)) \u2020\n\n### Affiliations\n\n1. Institute of Immunity and Transplantation, Division of Infection and Immunity, UCL, Royal Free Hospital London United Kingdom ([ROR:01ge67z96](https://ror.org/01ge67z96))\n2. Department of Pathology and Cell Biology, Columbia University Irving Medical Center New York United States ([ROR:01esghr10](https://ror.org/01esghr10))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTissue-resident memory T cells (TRM) protect from repeat infections within organs and barrier sites. The breadth and duration of such protection are defined at minimum by three quantities: the rate at which new TRM are generated from precursors, their rate of self-renewal, and their rate of loss through death, egress, or differentiation. Quantifying these processes individually is challenging. Here we combine genetic fate mapping tools and mathematical models to untangle these basic homeostatic properties of CD4+ TRM in the skin and gut lamina propria (LP) of healthy adult mice. We show that CD69+CD4+ TRM in skin reside for \u223c24 days and self-renew more slowly, such that clones halve in size approximately every 5 weeks, and approximately 2% of cells are replaced daily from precursors. CD69+CD4+ TRM in LP have shorter residencies (\u223c14 days) and are maintained largely by immigration (4\u20136% per day). We also find evidence that the continuous replacement of CD69+CD4+ TRM at both sites derives from circulating effector-memory CD4+ T cells, in skin possibly via a local CD9\u2212 intermediate. Our approach maps the ontogeny of CD4+ TRM in skin and LP and exposes their dynamic and distinct behaviours, with continuous seeding and erosion potentially impacting the duration of immunity at these sites.\n\n## Introduction\n\nResident memory T cells (TRM) provide immune surveillance and protection in tissues throughout the body (Szabo et al., 2019), but the mechanisms by which they are maintained are not well understood. Conventional CD4+ and CD8+ TRM in mice and humans are not intrinsically long-lived, but appear to self-renew slowly as assessed by readouts of cell division such Ki67 expression or BrdU incorporation, at levels that vary across tissues (Gebhardt et al., 2009; Watanabe et al., 2015; Park et al., 2018; Strobl et al., 2020; Divito et al., 2020; Christo et al., 2021). After infection or immune challenge, the numbers of elicited TRM may also be sustained by influx from precursor populations, although the extent to which this occurs is unclear and is likely also cell subset- and tissue-dependent. For example, in the lung there is evidence both for (Zammit et al., 2006; Ely et al., 2006; Sl\u00fctter et al., 2017; Van Braeckel-Budimir et al., 2018; Takamura and Kohlmeier, 2019) and against (Takamura et al., 2016; Bullock et al., 2024, van Dorp et al., 2025) ongoing recruitment of new TRM following respiratory virus infections. Within skin, TRM may be renewed or supplemented slowly from precursors in the setting of graft-versus-host disease (Divito et al., 2020), and from circulating central memory TCM or effector memory TEM following infection or sensitisation (Gaide et al., 2015; Matos et al., 2022). In the small intestine, however, resident CD4+ and CD8+ TRM appear to persist for months to years with slow self-renewal without appreciable influx (Bartolom\u00e9-Casado et al., 2019; Bartolom\u00e9-Casado et al., 2021).\n\nThe dynamics of production and loss of TRM in the steady state are even less well understood, and measuring these processes is important for several reasons. The balance of loss and self-renewal defines the persistence of clonal populations and hence the duration of protective immunity. Further, while self-renewal can at best preserve clonal diversity within a tissue site, any supplementation or replacement by immigrant TRM will perturb the local TCR repertoire. In particular, any significant influx into TRM niches in the absence of overt infection may be a competitive force, potentially reducing the persistence of TRM previously established in response to infection or challenge.\n\nThe kinetics of circulating memory T cells have been quantified extensively in both mice and humans using dye dilution assays (Choo et al., 2010), deuterium labelling (Westera et al., 2013; Westera et al., 2015; Costa Del Amo et al., 2018; Baliu-Piqu\u00e9 et al., 2019; Baliu-Piqu\u00e9 et al., 2018, van den Berg et al., 2021), and BrdU labelling, either alone (Younes et al., 2011; Ganusov and De Boer, 2013) or in combination with fate reporters (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024) or T cell receptor excision circles (den Braber et al., 2012). Using mathematical models to interpret these data, these studies identified rates of production, cellular lifespans, and signatures of heterogeneity in turnover. Modelling has also established evidence for continuous replenishment of circulating memory CD4+ T cells from precursors throughout life in specific-pathogen-free mice, driven by a combination of environmental, commensal, and self antigens (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024). Quantification of TRM dynamics has to date been restricted largely to measuring the net persistence of CD8+ TRM following infection in mice in a variety of tissues (Morris et al., 2019; Wijeyesinghe et al., 2021). Far less is known regarding CD4+ TRM, which typically outnumber their CD8+ counterparts (Szabo et al., 2019), and there have been very few attempts to dissect the kinetics of either subset (Bullock et al., 2024, van Dorp et al., 2025).\n\nIn general, measuring these basic parameters in isolation is challenging, partly due to their sensitivity to assumptions made in the models (De Boer and Perelson, 2013), but also because division-linked labelling alone may not distinguish in situ cell division and the supplementation of a population from labelled precursors. These issues can be addressed by modelling different readouts of cell fate simultaneously (Bains et al., 2009; den Braber et al., 2012; Costa Del Amo et al., 2018; De Boer and Yates, 2023; Bullock et al., 2024).\n\nWith these challenges in mind, here we integrated data from two independent inducible fate reporter systems to study CD4+ TRM homeostasis in mice. Each system allows one to track the fates of defined populations of cells and their descendants. One labels all CD4+ T cell subsets at any given moment, which effectively provides an age \u2018timestamp\u2019. The other labels cells that are dividing during a given time window. In combination, these systems allowed us to establish a quantitative model of the basal homeostatic properties of CD4+ TRM within the skin and the lamina propria (LP) of the small intestine in healthy mice. In particular, we could unpick the contributions of self renewal and de novo cell production that underpin their maintenance, and explore their relationships to circulating T cell subsets.\n\n## Results\n\n### Combining cell fate reporters and models to measure TRM replacement, loss, and self-renewal\n\nTo study the homeostatic dynamics of tissue-resident CD4+ memory T cells in healthy mice, we used in concert two genetic fate mapping tools in which cohorts of peripheral T cells and their offspring can be induced to express permanent fluorescent markers (Figure 1A). These reporter strains were previously used separately to study the turnover of naive and circulating memory T and B cells (Verheijen et al., 2020; Lukas et al., 2023; Bullock et al., 2024). In the Ki67mCherry-CreERT Rosa26RcagYFP system, henceforth Ki67-DIVN, fluorescent reporters are linked to the expression of Ki67, a nuclear protein expressed during cell division and for 3\u20134 days afterwards (Gossel et al., 2017; Miller et al., 2018). Specifically, these mice express both a Ki67-mCherry fusion protein and inducible CreERT from the Mki67 locus, together with a Rosa26RcagYFP Cre reporter construct. Treatment of mice with tamoxifen therefore induces YFP in cells expressing high levels of Ki67, and YFP is then stably expressed by these cells and their offspring. Expression of Ki67-fused mCherry gives a constitutive live readout of Ki67 expression, independent of tamoxifen treatment and YFP expression. In the second fate reporter, CD4CreERT Rosa26RmTom mice (Cd4-FR), the Cre reporter is constructed such that cells expressing CD4 during tamoxifen treatment permanently and heritably express the fluorescent reporter mTomato (mTom).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104278/elife-104278-fig1-v1.jpg)\n\n**Figure 1.:** (A) Ki67 and CD4 reporter constructs. (B) Schematic of a simple mathematical model of TRM homeostasis at steady state. New cells enter a TRM subset in skin or LP (the \u2018target\u2019 population) from a precursor population at rate \u03b8 (cells per unit time). YFP and mTom expression among immigrant cells is assumed to be that of the precursor population in bulk. We considered three possibilities for the Ki67 expression levels among new immigrants: a \u2018quiescent\u2019 mode (all Ki67low), \u2018neutral\u2019 recruitment (Ki67high frequency identical to that of the precursor), or \u2018division-linked\u2019 (all recruited cells Ki67high). The target cells are assumed to be a kinetically homogeneous population that self-renews at average rate $\u03c1$, such that their mean interdivision time is $1/\u03c1$. Cells are also lost through death, differentiation or tissue egress at total rate $\\delta$, implying a mean residence time of $1/\\delta$. The combination of these processes determines the time courses of frequencies of YFP+ and mTom+ cells with the target population. (C) Experimental design.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104278/elife-104278-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Gating strategy for CD4+ subsets in lymph nodes, LP, and skin. (B) Tissue-localised CD4+ EM subsets defined by protection from short-term in vivo labelling.\n\nIn a closed population of cells at steady state, self-renewal must be balanced by loss and so, following tamoxifen treatment, the frequencies of cells expressing YFP or mTom within any such population would remain constant. Therefore, any decline in the frequency of either reporter among TRM after treatment must derive from the influx of label-negative cells from an upstream (precursor) population. In the Ki67-DIVN mice, these will be descendants of cells that were not dividing at the time of tamoxifen treatment; in the Cd4-FR mice, labelled CD4+ cells will slowly be replaced by the descendants of those generated in the thymus after treatment. The shape of this decline will be determined by the combination of the net loss rate of TRM from the tissue (through death, egress, or differentiation, offset by any self-renewal) and the label content of immigrant TRM (Figure 1B). To refer to the persistence of individual TRM cells, we will use the term \u2018residence time\u2019 rather than \u2018lifespan\u2019 to reflect the multiple potential mechanisms of loss from tissues.\n\nTo quantify these processes, we treated cohorts of both reporter mice, aged between 4 and 15 weeks, with a single 2 mg pulse of tamoxifen (Figure 1C). Over 9-week (Ki67 reporter) and 57-week (CD4 reporter) chase periods, we measured the frequencies of labelled cells among antigen-experienced CD4+ T cell subsets isolated from skin and the LP of the small intestine, and within circulating naive and memory T cell subsets derived from lymph nodes (Figure 1\u2014figure supplement 1A). By combining these frequencies with measures of Ki67 expression and describing the resulting set of time series with simple mathematical models, we aimed to estimate the basic parameters underlying TRM kinetics.\n\n### CD4+ TRM in skin and lamina propria are continuously replaced from precursors\n\nWe considered two populations within both skin and LP, identified as tissue-localised by virtue of their protection from short-term in vivo labelling (\u2018Methods\u2019 and Figure 1\u2014figure supplement 1B). One was effector-memory (EM) phenotype (CD4+CD44hi CD62Llo) T cells in bulk, which we studied in order to gain the broadest possible picture of memory T cell dynamics at these sites. We also considered the subset of these cells that expressed CD69, a canonical marker of CD4+ T cell residency across multiple tissues (Szabo et al., 2019). We saw no significant changes with mouse age in the numbers of either population within skin (Figure 2A, $p>0.67$) or LP (Figure 2B, $p>0.39$). There were also no significant changes in any of these quantities with time since tamoxifen treatment ($p>0.24$). We therefore assumed that the skin- and LP-localised T cell subsets we considered were at, or close to, homeostatic equilibrium during the chase period. For brevity, we refer to tissue-localised CD4+CD44hiCD62Llo T cells in bulk as EM, and their CD69+ subset as TRM.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104278/elife-104278-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Numbers of CD4+ effector-memory (EM) phenotype and CD4+CD69+ T cells recovered from (A) ear skin and (B) LP in the small intestine, against mouse age. p-values are derived from Spearman rank correlation on data from the Cd4-FR and Ki67-DIVN strains combined. (C) Observed (points), best-fit model trajectories (black lines), and 95% credible intervals (grey envelopes) of the frequencies of mTom+ and YFP+ CD4+ T cell subsets within skin and LP, and the proportions of YFP+ and YFP\u2212 cells that expressed Ki67, with time since tamoxifen treatment. Shaded rectangles indicate the 5-day period over which reporter expression was being induced; data from these periods were not used in fitting. (D) Frequencies of mTom+ and YFP+ cells within lymph node CD4+ T cell subsets, and within CD4+CD44+CD69\u2212 T cells in skin and LP. Overlaid are the empirical descriptions of these trajectories from the best-fitting model in which that population was identified as a precursor (Appendix 1 section \u2018Model fitting\u2018); grey envelopes are 95% credible intervals. (The naive and CM in lymph nodes, and CD69\u2212 cells in LP, were never identified as favoured precursors.) Number of Cd4-FR mice: 36; number of Ki67-DIVN mice: 31.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104278/elife-104278-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Prior distributions of all parameters were truncated lognormal distributions and here are shown as kernel-smoothed samples. Truncation limits: self-renewal rate \u03c1 \u2208 (0, 1); loss rate \u03b4 \u2208 (\u03c1, 5); rate of loss of Ki67 \u2208 (0.2, 0.5); daily influx as fraction of population size \u2208 (0.005, 0.1). The Ki67 loss rate was informed by our previous estimates (Bullock et al., 2024; Gossel et al., 2017). The constraint \u03c1 < \u03b4 ensures that the population is at a steady state. Upper bounds on division and loss rates translate to minimum interdivision and residence times of 24 h and 4.8 h, respectively; the upper bound on the division rate was informed by Ki67 levels observed in tissues (see Appendix 1 section \u2018Prior distributions of parameters\u2019).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104278/elife-104278-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** In cases where the best-fit (black) curves are not visible, they are closely overlaid by the blue curves (second-ranked model). Note that because each model was fitted to six timecourses simultaneously, and fractional observations were logittransformed to normalise residuals, apparently small visual differences in fits can nevertheless lead to substantial differences in model support.\n\nDuring the first few days after tamoxifen treatment, YFP and mTom expression increased continuously within the skin and LP subsets (Figure 2C), as well as among CD4+ naive (CD44lo CD62Lhi), central memory (TCM, CD44hi CD62Lhi), and effector memory (TEM, CD44hi CD62Llo) T cells recovered from lymph nodes (Figure 2D). These initial increases were driven in part by the intracellular dynamics of the induction of the fluorescent reporters. We therefore began our analyses at day 5 post-treatment, by which time induction was considered complete and the subsequent trajectories of label frequencies reflected only the dynamic processes of cell production and loss. A key observation was that mTom expression within the skin and LP subsets then declined slowly (roughly seven- to eight-fold over the course of a year, Figure 2C), indicating immediately that these populations were being continuously replaced from precursors. Early in the chase period YFP+ TRM expressed Ki67 at higher levels than YFP\u2212 cells, as expected, but Ki67 expression in the two populations converged at later times. We return to the interpretation of these kinetics below.\n\nWe then investigated the extent to which the simple model illustrated in Figure 1B could explain these trajectories. Given the observation of continued recruitment, any time variation in the label content of TRM precursors might leave an imprint on the label kinetics of skin or LP TRM themselves and thereby help us identify their developmental pathways. We reasoned that plausible TRM precursors were LN-derived CD4+ naive, TCM or TEM; we also considered the possibilities that CD69\u2212 cells within skin and LP are the direct precursors of the local CD69+ populations. Therefore, we used empirical functions to describe the time courses of the frequencies of YFP+ and mTom+ cells within these populations (Figure 2D) and used these to represent the label composition of cells entering the tissue subsets.\n\nFor each tissue subset (\u2018target\u2019) and precursor pair, we fitted the model simultaneously to six time courses; the frequencies of (i) YFP expression and (ii) mTom expression among target cells, the proportions of Ki67high cells among (iii) YFP+ and (iv) YFP\u2212 target cells, and the (v) YFP and (vi) mTom expression kinetics within the precursor (\u2018Methods\u2019 and Appendix 1). For each precursor/target pair, we considered three modes of influx \u2013 one in which new immigrant TRM are Ki67low (\u2018quiescent\u2019 recruitment); another in which their Ki67 expression directly reflects that of the precursor (\u2018neutral\u2019 recruitment); and a third in which immigrants have recently divided (Ki67high), perhaps through an antigen-driven process (\u2018division-linked\u2019 recruitment).\n\n### Skin and LP CD4+ TRM have similar residence times but exhibit distinct contributions of replacement and self-renewal\n\nFor each combination of target population, potential precursor, and potential mode of recruitment, we were able to estimate rates of influx, mean residence times, and mean interdivision times for the target population (Figure 3 and Appendix 1\u2014table 1; prior and posterior distributions of the parameters of the best-fitting models are shown in Figure 2\u2014figure supplement 1). The mean residence times of both EM and TRM within skin and LP were \u223c3 weeks and 2 weeks, respectively. The means of production of new cells differed at the two sites, however. In skin, around 2% of both populations were replaced daily by influx, comparable to the rates of constitutive replacement of circulating memory CD4+ T cell subsets (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024), and EM and TRM self-renewed every 6 and 7 weeks, respectively. In contrast, within LP these subsets divided less often (every 7\u20139 weeks) and relied on higher levels of recruitment (4\u20136% per day) for their maintenance.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104278/elife-104278-fig3-v1.jpg)\n\n**Figure 3.:** Violin plots indicate the posterior distributions of parameters. Black points and bars; best (maximum a posteriori) estimates and 95% credible intervals. For each population (target) in skin or LP, potential precursors were from lymph nodes, CD4+ naive, central memory and effector memory T cells (N, EM, and CM); and for CD4+ TRM, CD69+ TRM within the same tissue. For each precursor/target pair, we considered three potential levels of Ki67 expression on immigrant cells (L-R; orange, red, and blue violin plots). \u2018High\u2019, the division-linked model (new cells enter as Ki67high); \u2018Int\u2019, neutral model (Ki67 expression among new cells mirrors that of the precursor); and \u2018Low\u2019, the quiescent model (new cells enter as Ki67low). Shaded regions highlight the parameter estimates derived from the favoured model (precursor and Ki67 levels on immigration) for each target (Figure 4A).\n\nFrom these basic quantities, we could derive several other important measures of TRM behaviour. First, the balance of the rates of loss ($\\delta$) and self-renewal ($\u03c1$) defines the persistence of a cohort of T cells, which is distinct from the lifespan of its constituent cells (Costa Del Amo et al., 2018; De Boer and Yates, 2023). Specifically, the quantity $ln\u2061(2)/(\\delta\u2212\u03c1)$ is the average time taken for a cohort and their descendents to halve in number. While we studied polyclonal populations here, this quantity applies equally well to measuring the persistence of a TCR clonotype, so we refer to it as a clonal half life (Bullock et al., 2024). The substantial rates of self-renewal in skin led to clonal half lives of just over a month. The lower levels of self-renewal and higher levels of replacement in LP resulted in shorter clonal half lives of approximately 2 weeks.\n\nImportantly, our estimates of these quantities depended to varying degrees on the choice of precursor and mode of recruitment (Figure 3). For example, intuitively, given the observed level of Ki67 within each target population, the greater the levels of Ki67 within newly recruited cells, the less must derive from self-renewal within the tissue; hence, if one assumes that recruitment is division-linked, estimated division rates are reduced. Similarly, as discussed above, the label content of the precursor influences the net loss rate of label in the target, which was most clearly reflected in the loss of mTom+ cells over the longer chase period (Figure 2C and D). For example, mTom was lost most rapidly within naive CD4+ T cells (Figure 2D) due to the influx of label-negative cells from the thymus. Models in which naive T cells were the direct precursor of TRM therefore predicted greater clonal persistence within tissues.\n\nWe saw very little decline in YFP expression levels during the 2-month chase period (Figure 2C) due in part to the sustained levels of YFP within the putative precursor populations (Figure 2D), which \u2018topped up\u2019 YFP-expressing TRM. As a result, YFP kinetics within the tissues were not strongly informative regarding rates of replacement. However, the rate of convergence of Ki67 within YFP+ and YFP\u2212 cells (Figure 2C) put clear constraints on the duration of Ki67 expression, which at approximately 3 days (Figure 3) was consistent with previous estimates. This quantity in turn was informative for estimating rates of self-renewal. Further, the observed convergence of Ki67 expresssion within these two subsets is consistent with the assumption of homogeneity in the rates of division and loss within skin and LP.\n\n### CD4+ CD69+ TRM within LP likely derive predominantly from circulating TEM in lymph nodes, while those in skin may derive from a CD69\u2212 intermediate\n\nTo more precisely quantify the kinetics of each target population, we assessed the relative support for each combination of precursor and mode of recruitment (Figure 4A). Each of these weights summarises the magnitude and uncertainty of a model\u2019s out-of-sample prediction error of the label kinetics within the target population (\u2018Methods\u2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/104278/elife-104278-fig4-v1.jpg)\n\n**Figure 4.:** (A) For each target population with skin and LP (CD4+ EM bulk and CD4+CD69+ T cells), we calculated the relative support for alternative pathways and modes of recruitment using LOO-IC weights (\u2018Methods\u2019). For potential precursors, N, CM, and EM refer to naive, TCM, and TEM in lymph nodes; for CD69+ targets we also considered CD69\u2212 cells within the same tissue as a possible precursor. As described in the text, for each precursor/target pair, there were three potential submodels relating to the possible levels of Ki67 on newly recruited cells. Model weights sum to 1 for each target population, with the width of each arrow reflecting a model\u2019s degree of support. (B) Schematics of the most strongly supported pathways of development of CD4+CD69+ TRM in skin and LP, with approximate values of key kinetic parameters (Figure 3 and Appendix 1\u2014table 1).\n\nWe found that the data were quite strongly informative regarding the immediate ancestors of tissue subsets. From the candidate set of models, the weighting strongly favoured lymph-node-derived EM as the closest precursor to CD4+ EM within both skin and LP. However, within skin, local CD69\u2212 cells were the favoured precursor to CD69+ TRM. The evidence was generally more equivocal regarding the mode in which cells are recruited into skin and LP, although for skin we saw substantial evidence (66% of model support) for a division-linked transition from CD69\u2212 to CD69+ cells. Figure 4B summarises the developmental trajectories and kinetics of TRM in skin and LP that were supported most strongly by our analyses. Parameter estimates and credible intervals for these models are highlighted with vertical shaded regions in Figure 3 and are detailed in Appendix 1\u2014table 1. Visual differences between models are shown in Figure 2\u2014figure supplement 2, where for each target population we overlay the fits from top-ranked, second-ranked, and lowest-ranked models.\n\n### Validation of residence times using Ki67 expression directly\n\nAs a consistency check, when a population is at or close to steady state, bounds on the mean residence time of cells can be estimated using only the measured frequency of Ki67 within the target population, and the daily rate of replacement (Appendix 1 section \u2018Estimating average cell residence times using Ki67\u2019). In skin, both EM and TRM are replaced at the rate of 2% per day and have Ki67 expression frequencies of around 0.15 (Figure 2C). The approximation then yields residence times in the range 22\u201328 days, depending on whether immigrant TRM are Ki67low or Ki67high, respectively. In LP, with 5.5% daily replacement and Ki67 frequencies of around 0.07, we estimate residence times of 14\u201325 days. Both estimates are in good agreement with those from the model fitting. Further validation of these results, and dissection of the kinetics, might be achieved by manipulating cell trafficking, although this would potentially impact multiple processes at once. For example, treating mice with the sphingosine 1-phosphate receptor agonist FTY720 would block tissue ingress and egress. This would leave self-renewal as the only means of TRM production and would also remove the component of the loss rate that is due to cells leaving the tissue. In principle, one could then gain estimates of the intrinsic lifespan of TRM, rather than their tissue residence time. However, parameter estimation would then require accurate measurements of cell numbers within the tissue.\n\n## Discussion\n\nOur analysis indicates that CD4+ TRM are not intrinsically long-lived, but instead are sustained by both self-renewal and supplementation from circulating precursors. By combining fate reporting methods with mathematical models, we also showed that it is possible to separately quantify the processes that underlie their persistence. We saw quite distinct contributions of recruitment and self-renewal of both subsets within skin and LP. The basis of this difference is unclear, but we speculate that the large antigenic burden within the small intestine drives the higher levels of TRM recruitment and clonal erosion within the LP. We showed that estimates of these quantities depend on the identity of the immediate precursor, whose label kinetics propagate downstream into the population of interest, and the extent of any cell division that occurs around the time of differentiation or ingress. However, by using easily interpretable mathematical models we were able to measure the support for different pathways and modes of recruitment into each subset.\n\nThe schematic in Figure 1B illustrates a hypothetical example in which the frequency of YFP-expressing cells within a precursor declines. This trend is then reflected downstream in the target. However, in our experiments the kinetics of YFP in most of the putative precursors were quite flat (Figure 2D). As noted above, these kinetics were likely due largely to the continued influx of new cells into circulating memory subsets, in turn likely from naive precursors (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024). These had increasing levels of YFP (Figure 2D, left panel) deriving from thymocytes that were dividing rapidly during treatment. YFP levels among naive T cells were also probably sustained to an extent by low-level residual labelling of thymic progenitors (Lukas et al., 2023). YFP expression was therefore not cleanly \u2018washed out\u2019 in the periphery. The data from the labelling of CD4-expressing cells were more informative for dissecting turnover; mTom+ cells were clearly diluted out of all peripheral populations by the descendants of mTom\u2212 thymocytes.\n\nIn these reporter mice, YFP and mTom were induced quickly in all subsets to different degrees; therefore, our inferences regarding precursor\u2013target relationships were not informed by the initial levels of label in each. (For example, imagine a rapidly dividing target fed by a slowly dividing precursor; initially, YFP levels in the target would be higher than those in the precursor.) The hierarchy of levels of label in different subsets would be informative if one expects targets to begin with no label at all; for instance, in the busulfan chimeric mouse system (Hogan et al., 2015) new, thymically derived \u2018labelled\u2019 (donor) cells progressively infiltrate replete \u2018unlabelled\u2019 (host) populations. In that case, one can immediately reject certain differentiation pathways by examining the sequence of accrual of donor cells in different subsets. In the systems we use here, information regarding lineage relationships is contained instead in the trends in YFP and mTom frequencies after treatment because precursor kinetics must leave an imprint on the target (Figure 1B). This information is particularly useful if two populations exhibit opposing trajectories \u2013 they are then unlikely to be immediately related.\n\nOn a technical note, in general one can reduce experimental variation by comparing quantities derived from the same individual. We showed previously that in some situations exploiting the within-mouse grouping of observations can reduce uncertainty and refine parameter estimates when modelling cell dynamics (Yates et al., 2007). We were not able to take this approach here, however, because the frequency of cells expressing YFP or mTom within a given subset in a particular mouse depends on the accumulated history of label in that subset\u2019s precursor. We were unable to identify these trajectories for each animal, so we were obliged to use population averages (Figure 2D). To mitigate any biases this averaging might introduce, we fitted these empirical functions simultaneously with the models of label kinetics in the targets. This conservative strategy propagated the uncertainty in the precursor trajectories into our conclusions.\n\nOur analysis was rooted in the observation that all CD4+ T cell subsets within these tissues were at steady state. This dynamic equilibrium dictates that immigration of new cells must be accompanied by loss of existing ones. In the SPF mice studied here, these dynamic populations are likely specific for self or commensal antigens that are continuously expressed. It is possible that residence and interdivision times are distinct for TRM that might not be replenished long-term from precursors, such as those generated in acute infections. Further, our simple model can explain the stable maintenance of TRM numbers in healthy skin and LP without needing to invoke the concept of a homeostatic niche, such as a competitive limit to cell densities. In this model, any increase or decrease in the rate of influx into a tissue will simply lead to a new equilibrium at higher or lower cell densities, respectively. Indeed repeated vaccinia virus challenges can drive progressive increases in the number of virus-specific CD8+ TRM in skin that are detectable for months (Jiang et al., 2012), and heterologous challenges appear not to erode pre-existing LCMV-specific CD8+ TRM (Wijeyesinghe et al., 2021). However, whether the same flexibility manifests among CD4+ TRM following repeated challenges is unclear.\n\nOur goal here was to assess the support for external replenishment of effector-memory-like CD4+ T cells in bulk and the dominant CD69+ TRM subset. We found evidence that CD69+CD4+ TRM in skin derive at least in part from a local CD69\u2212 precursor. With richer phenotyping of tissue-localised cells, we could in principle use labelling trajectories to define more fine-grained differentiation pathways. One issue is that accurate measurement of label frequencies becomes more difficult as one resolves TRM into smaller subsets; indeed, we saw that label kinetics within the small CD69\u2212 populations were relatively noisy. Another issue is that label kinetics operate on the timescales of the net loss rate of cell populations \u2013 death and onward differentiation, balanced by self-renewal. More frequent sampling would be required to resolve more transitory intermediates. Nevertheless, our study clearly exposes the highly dynamic nature of CD4+ TRM, sustained throughout life by both self-renewal and continued influx from precursors. This tissue-specific influx, particularly if there are competitive limits to TRM occupancy, may contribute to the differential longevity of immunity at different barrier sites.\n\n## Methods\n\n### Reporter mouse strains\n\nKi67mCherry-CreERT Rosa26RcagYFP (Ki67-DIVN) and CD4CreERT Rosa26RmTom (Cd4-FR) mice have been described previously (Bullock et al., 2024). Experimental Ki67-DIVN mice were homozygous for indicated mutations at both the Ki67 and Rosa26 loci. Experimental Cd4-FR mice were heterozygous for the indicated mutations at both the Cd4 and Rosa26 loci. Tamoxifen (Sigma) was diluted to 20 mg/mL in corn oil (Fisher Scientific) and 100 \u03bcl (2 mg) was administered to mice via oral feeding on day 0. Ki67-DIVN mice were injected with 2 \u00b5g Thy1.2-BV510 (53-2.1) (BioLegend) 3 min prior to sacrifice to label T cells in the circulation. This protocol typically achieves >99% staining of circulating cells (Anderson et al., 2014), and less than 3% of cells recovered from our tissue samples were label positive (Figure 1\u2014figure supplement 1B), supporting the assumption of very low rates of false-positive and false-negative events. Mice were subsequently taken down at specified timepoints post tamoxifen treatment for organ collection. All mice were bred in the Comparative Biology Unit of the Royal Free UCL campus and at Charles River laboratories, Manston, UK. Animal experiments were performed according to institutional guidelines and Home Office regulations under project licence PP2330953.\n\n### Cell preparation\n\nAll peripheral lymph nodes (LNs), the small intestine (SI), and ear skin were taken from mice and processed into single-cell suspensions. LNs were mashed through two pieces of fine gauze in a Petri dish and washed with complete RPMI (Thermo Fisher) supplemented with 5% FCS (Thermo Fisher) (cRPMI). Cells were resuspended in cold PBS and counted using the CASY counter (Cambridge Bioscience). Peyer\u2019s patches were excised from the antimesenteric side of the SI before being opened longitudinally and SI contents scraped out. SI pieces were placed in 20 mL pre-warmed extraction media (cRPMI + 10 mM HEPES [Thermo Fisher] +5 mM EDTA [Sigma]+1 mM DTT [Abcam]) and incubated in 37 \u00b0C shaking incubator for 30 min at 200 rpm. Cells were filtered over 70 \u03bcm cell strainer (supernatant containing intra-epithelial lymphocytes not used), and SI pieces were placed in cold cRPMI supplemented with 10 mM HEPES and allowed to settle. The supernatant was carefully poured off and SI pieces were finely minced, added to 20 mL pre-warmed digestion media (RPMI + 10% FCS + 1.5 mg/mL collagenase VIII [Sigma]) and incubated in 37 \u00b0C shaking incubator for 30 min at 200 rpm. After digestion, cells were passed through 70 \u03bcm cell strainer and washed with cRPMI + 10 mM HEPES. The resulting cell suspension contains cells from the LP of the SI. Ear skin was excised and separated into dorsal and ventral sides. Skin was finely minced, added to 4 mL digestion buffer cRPMI + 50 mM HEPES + 37.5 \u03bcg/mL Liberase TL [Merck] + 3.125 mg/mL collagenase IV [Thermo Fisher] +1 mg/mL DNAse I [Merck] and incubated in 37 \u00b0C shaking incubator for 2 h at 200 rpm. Cells were filtered over 70 \u03bcm cell strainer and washed through with cRPMI.\n\n### Flow cytometry\n\nAll cells isolated from skin and LP, and 5 \u00d7 106 LN cells were stained for analysis by flow cytometry. Cells were stained in 100 \u03bcl PBS with combinations of CD8\u03b1-BUV395 (53-6.7), CD25-BUV395 (PC61), CD62L-BUV737 (MEL-14), TCR\u03b3\u03b4-BV421 (GL3), CD103-BV786 (M290) (all BD Biosciences); CD25-BV650 (PC61), CD103-BV421 (2E7), CD8\u03b1-BV570 (53-6.7), TCR\u03b3\u03b4-BV605 (GL3), NK1.1-BV650 (PK136), CD44-BV785 (IM7), CD45.1-BV605 (A20), CD4-BV711 (RM4-5), CD8b.2-APC (53-5.8) (all BioLegend); TCR\u03b2-PerCPCy5.5 (104) (Cambridge Bioscience); CD44-APCef780 (IM7) (eBioscience); and CD3-APCef780 (2C11), CD3-biotin (145-2C11), CD69-PeCy7 (H1.2F3), CD45.2-AF700 (104), nearIR live/dead, blue live/dead, yellow live/dead (all Thermo Fisher). Cells were fixed for 20 min with IC fix (Invitrogen) and washed twice in FACS buffer (PBS + 0.1% BSA). Flow cytometric analysis was performed on either a Cytek Aurora spectral flow cytometer or a conventional BD LSR-Fortessa and analysed using FlowJo software (Treestar).\n\n### Cell count calculations\n\nCell numbers in LN were calculated by dividing the event count in a target population by the event count of live cells, multiplied by the total live cells in LN prep determined by CASY counter. Sizes of LP and skin populations were calculated using AccuCount (Spherotech) counting beads that were spiked into the sample prior to acquisition, as per the manufacturer\u2019s instructions.\n\n### Mathematical modelling and statistical analysis\n\nWe fitted simultaneously the mathematical model illustrated in Figure 1B and described in Appendix 1 sections \u2018The kinetics of mTom expression derived from Cd4-FR mice\u2019 and \u2018Modelling the label trajectories derived from Ki67-DIVN mice\u2019, to the timecourses of frequencies of YFP+, Ki67high in YFP+, Ki67high in YFP\u2212, and mTom+ cells in the target populations; and empirical descriptor functions describing the trajectories of the frequencies of YFP+ and mTom+ cells within precursor populations (all data shown in Figure 2C). We used a Bayesian estimation approach using Python and Stan (Stan Development Team, 2024) to perform these model fits. Code and data used to perform model fitting, details of the prior distributions for parameters, and figure generation notebooks are available at https://github.com/elisebullock/CD4TRM; copy archived at Bullock, 2025. Models were ranked based on the information criteria estimated using the Leave-One-Out (LOO) cross validation method (Vehtari et al., 2017). See Appendix 1 for full details.\n",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gabrielle T Belz, University of Queensland Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104278.3.sa0](https://doi.org/10.7554/eLife.104278.3.sa0)\n\nThis article provides a compelling and rigorous quantitative analysis of the turnover and maintenance of CD4+ tissue-resident memory T cell clones, in the skin and the lamina propria. It provides a fundamental advance in our understanding of CD4 T cell regulation. Interestingly, in both tissues, maintenance involves an influx from progenitors on the time scale of months. The evidence that is based on fate mapping and mathematical inference is strong, although open questions on the interpretation of the Ki67-based fate mapping remain.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104278.3.sa1](https://doi.org/10.7554/eLife.104278.3.sa1)\n\nSummary:\n\nCompelling and clearly described work that combines two elegant cell fate reporter strains with mathematical modelling to describe the kinetics of CD4+ TRM in mice. The aim is to investigate the cell dynamics underlying maintenance of CD4+TRM.\n\nThe main conclusions are that (1) CD4+ TRM are not intrinsically long-lived (2) even clonal half lives are short: 1 month for TRM in skin, even shorter (12 days) for TRM in lamina propria (3) TRM are maintained by self-renewal and circulating precursors.\n\nStrengths:\n\n(1) Very clearly and succinctly written. Though in some places too succinctly! See suggestions below for areas I think could benefit from more detail.\n\n(2) Powerful combination of mouse strains and modelling to address questions that are hard to answer with other approaches.\n\n(3) The modelling of different modes of recruitment (quiescent, neutral, division linked) is extremely interesting and often neglected (for simpler neutral recruitment).\n\nComments on revised version: This reviewer is satisfied with the author responses and the changes made in the manuscript.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104278.3.sa2](https://doi.org/10.7554/eLife.104278.3.sa2)\n\nThis manuscript addresses a fundamental problem of immunology - the persistence mechanisms of tissue-resident memory T cells (TRMs). It introduces a novel quantitative methodology, combining the in vivo tracing of T cell cohorts with rigorous mathematical modeling and inference. Interestingly, the authors show that immigration plays a key role for maintaining CD4+ TRM populations in both skin and lamina propria (LP), with LP TRMs being more dependent on immigration than skin TRMs. This is an original and potentially impactful manuscript.\n\nComments on revised version: This reviewer is satisfied with the author responses and the changes made in the manuscript.\n",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a47b9088-c6a5-499b-ba47-fd3705e38800",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C1",
+      "claim": "Tissue-resident memory T cells (TRM) protect from repeat infections within organs and barrier sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-resident memory T cells (TRM) protect from repeat infections within organs and barrier sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that is part of established scientific knowledge about TRM function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "911be316-14a2-41d4-90e5-b169b165c895",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C2",
+      "claim": "CD69+CD4+ TRM in skin reside for approximately 24 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CD69+CD4+ TRM in skin reside for \u223c24 days and self-renew more slowly, such that clones halve in size approximately every 5 weeks, and approximately 2% of cells are replaced daily from precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from fate mapping experiments and mathematical modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "be3c494e-8037-4e5e-9df8-ddcc4ffc5a08",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C3",
+      "claim": "CD69+CD4+ TRM in skin self-renew such that clones halve in size approximately every 5 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CD69+CD4+ TRM in skin reside for \u223c24 days and self-renew more slowly, such that clones halve in size approximately every 5 weeks, and approximately 2% of cells are replaced daily from precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from mathematical modeling of the experimental fate mapping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "a185edd0-0a53-4ff1-a420-8be8c8fece23",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C4",
+      "claim": "Approximately 2% of CD69+CD4+ TRM cells in skin are replaced daily from precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CD69+CD4+ TRM in skin reside for \u223c24 days and self-renew more slowly, such that clones halve in size approximately every 5 weeks, and approximately 2% of cells are replaced daily from precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the mathematical modeling of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "a9ec885f-d689-4499-bf5a-decd8f772909",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C5",
+      "claim": "CD69+CD4+ TRM in LP have shorter residencies of approximately 14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "CD69+CD4+ TRM in LP have shorter residencies (\u223c14 days) and are maintained largely by immigration (4\u20136% per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data and modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "b9ec6566-de53-4cde-a4cd-3bee4ed30285",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C6",
+      "claim": "CD69+CD4+ TRM in LP are maintained largely by immigration at 4-6% per day.",
+      "claim_type": "EXPLICIT",
+      "source": "CD69+CD4+ TRM in LP have shorter residencies (\u223c14 days) and are maintained largely by immigration (4\u20136% per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the mathematical modeling of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8a755af8-3f05-45ec-b19c-8cb9539635c8",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C7",
+      "claim": "The continuous replacement of CD69+CD4+ TRM at both sites derives from circulating effector-memory CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find evidence that the continuous replacement of CD69+CD4+ TRM at both sites derives from circulating effector-memory CD4+ T cells, in skin possibly via a local CD9\u2212 intermediate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model comparison analysis showing which precursor populations best explain the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "83debaf1-af72-4281-b872-82696eeafc62",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C8",
+      "claim": "In skin, CD69+CD4+ TRM replacement possibly occurs via a local CD69\u2212 intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find evidence that the continuous replacement of CD69+CD4+ TRM at both sites derives from circulating effector-memory CD4+ T cells, in skin possibly via a local CD9\u2212 intermediate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from model comparison showing CD69\u2212 cells as the favored precursor in skin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "a9cbc1ee-fc5d-4c01-b3be-bceab9c5f5ba",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C9",
+      "claim": "Conventional CD4+ and CD8+ TRM in mice and humans are not intrinsically long-lived.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional CD4+ and CD8+ TRM in mice and humans are not intrinsically long-lived, but appear to self-renew slowly as assessed by readouts of cell division such Ki67 expression or BrdU incorporation, at levels that vary across tissues (Gebhardt et al., 2009; Watanabe et al., 2015; Park et al., 2018; Strobl et al., 2020; Divito et al., 2020; Christo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "cfc1c367-0fd9-48de-ae3a-fedb573b7b38",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C10",
+      "claim": "TRM appear to self-renew slowly as assessed by readouts of cell division such as Ki67 expression or BrdU incorporation, at levels that vary across tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional CD4+ and CD8+ TRM in mice and humans are not intrinsically long-lived, but appear to self-renew slowly as assessed by readouts of cell division such Ki67 expression or BrdU incorporation, at levels that vary across tissues (Gebhardt et al., 2009; Watanabe et al., 2015; Park et al., 2018; Strobl et al., 2020; Divito et al., 2020; Christo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "f46304ac-4073-4eeb-89b6-4a15ae1c627b",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C11",
+      "claim": "In the lung there is evidence both for and against ongoing recruitment of new TRM following respiratory virus infections.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the lung there is evidence both for (Zammit et al., 2006; Ely et al., 2006; Sl\u00fctter et al., 2017; Van Braeckel-Budimir et al., 2018; Takamura and Kohlmeier, 2019) and against (Takamura et al., 2016; Bullock et al., 2024, van Dorp et al., 2025) ongoing recruitment of new TRM following respiratory virus infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes conflicting findings from multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "dd6ed63c-acaf-4d21-b890-d16fed207f28",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C12",
+      "claim": "Within skin, TRM may be renewed or supplemented slowly from precursors in the setting of graft-versus-host disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Within skin, TRM may be renewed or supplemented slowly from precursors in the setting of graft-versus-host disease (Divito et al., 2020), and from circulating central memory TCM or effector memory TEM following infection or sensitisation (Gaide et al., 2015; Matos et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "caad4b9d-9740-4085-a345-406ce6631320",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C13",
+      "claim": "Skin TRM may be renewed from circulating central memory TCM or effector memory TEM following infection or sensitisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Within skin, TRM may be renewed or supplemented slowly from precursors in the setting of graft-versus-host disease (Divito et al., 2020), and from circulating central memory TCM or effector memory TEM following infection or sensitisation (Gaide et al., 2015; Matos et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "0dda204d-77fd-4b7b-958d-187e174f5b85",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C14",
+      "claim": "In the small intestine, resident CD4+ and CD8+ TRM appear to persist for months to years with slow self-renewal without appreciable influx.",
+      "claim_type": "EXPLICIT",
+      "source": "In the small intestine, however, resident CD4+ and CD8+ TRM appear to persist for months to years with slow self-renewal without appreciable influx (Bartolom\u00e9-Casado et al., 2019; Bartolom\u00e9-Casado et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "17747541-c43b-4c06-bfc6-21f9a2340e2a",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C15",
+      "claim": "The balance of loss and self-renewal defines the persistence of clonal populations and hence the duration of protective immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The balance of loss and self-renewal defines the persistence of clonal populations and hence the duration of protective immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between cellular dynamics and immunity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "d4d015fc-9627-483f-9f3b-cd653363a9a5",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C16",
+      "claim": "Self-renewal can at best preserve clonal diversity within a tissue site.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, while self-renewal can at best preserve clonal diversity within a tissue site, any supplementation or replacement by immigrant TRM will perturb the local TCR repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the effects of different cellular processes on diversity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "33b50c0a-8e55-4b82-ad6b-d4976f4e47a4",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C17",
+      "claim": "Any supplementation or replacement by immigrant TRM will perturb the local TCR repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, while self-renewal can at best preserve clonal diversity within a tissue site, any supplementation or replacement by immigrant TRM will perturb the local TCR repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the effects of immigration on TCR diversity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "4ab038b9-15e7-4e0c-857a-c4f40928929a",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C18",
+      "claim": "Any significant influx into TRM niches in the absence of overt infection may be a competitive force, potentially reducing the persistence of TRM previously established in response to infection or challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, any significant influx into TRM niches in the absence of overt infection may be a competitive force, potentially reducing the persistence of TRM previously established in response to infection or challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential competitive effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "484fd34b-6596-49c5-b26c-4c354acec2bf",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C19",
+      "claim": "Ki67 is a nuclear protein expressed during cell division and for 3-4 days afterwards.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Ki67mCherry-CreERT Rosa26RcagYFP system, henceforth Ki67-DIVN, fluorescent reporters are linked to the expression of Ki67, a nuclear protein expressed during cell division and for 3\u20134 days afterwards (Gossel et al., 2017; Miller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies characterizing Ki67 expression kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "4bf6cd13-da1f-433b-bf5f-749950f633a8",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C23",
+      "claim": "The skin- and LP-localised T cell subsets considered were at, or close to, homeostatic equilibrium during the chase period.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore assumed that the skin- and LP-localised T cell subsets we considered were at, or close to, homeostatic equilibrium during the chase period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of significant changes in cell numbers over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "150d470f-df70-44db-8fa1-3bc6af291381",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C24",
+      "claim": "mTom expression within the skin and LP subsets declined slowly, roughly seven- to eight-fold over the course of a year.",
+      "claim_type": "EXPLICIT",
+      "source": "A key observation was that mTom expression within the skin and LP subsets then declined slowly (roughly seven- to eight-fold over the course of a year, Figure 2C), indicating immediately that these populations were being continuously replaced from precursors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "beb3db98-afef-4060-a8e4-39415fadcd94",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C25",
+      "claim": "The decline in mTom expression indicates that skin and LP T cell populations were being continuously replaced from precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "A key observation was that mTom expression within the skin and LP subsets then declined slowly (roughly seven- to eight-fold over the course of a year, Figure 2C), indicating immediately that these populations were being continuously replaced from precursors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observed decline in mTom expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "7486cd6b-030a-4245-83b9-5e29d2e1050a",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C26",
+      "claim": "Early in the chase period YFP+ TRM expressed Ki67 at higher levels than YFP\u2212 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Early in the chase period YFP+ TRM expressed Ki67 at higher levels than YFP\u2212 cells, as expected, but Ki67 expression in the two populations converged at later times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "b729411a-6bab-4729-bb4b-a855188ddd90",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C27",
+      "claim": "Ki67 expression in YFP+ and YFP\u2212 TRM populations converged at later times.",
+      "claim_type": "EXPLICIT",
+      "source": "Early in the chase period YFP+ TRM expressed Ki67 at higher levels than YFP\u2212 cells, as expected, but Ki67 expression in the two populations converged at later times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "a4a514c7-9bbe-4de6-b183-b0ff5c2e686f",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C28",
+      "claim": "The mean residence times of both EM and TRM within skin were approximately 3 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean residence times of both EM and TRM within skin and LP were \u223c3 weeks and 2 weeks, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the mathematical modeling of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "3225cfc1-3275-4021-9be3-64c48f9dc242",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C29",
+      "claim": "The mean residence times of both EM and TRM within LP were approximately 2 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean residence times of both EM and TRM within skin and LP were \u223c3 weeks and 2 weeks, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the mathematical modeling of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "08ac8fd4-2685-447d-8f06-bf42c71830a4",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C30",
+      "claim": "In skin, around 2% of both EM and TRM populations were replaced daily by influx.",
+      "claim_type": "EXPLICIT",
+      "source": "In skin, around 2% of both populations were replaced daily by influx, comparable to the rates of constitutive replacement of circulating memory CD4+ T cell subsets (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024), and EM and TRM self-renewed every 6 and 7 weeks, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the mathematical modeling of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "d22899ca-ca07-4d17-9524-019987e2c3fc",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C31",
+      "claim": "The rate of replacement of skin TRM is comparable to the rates of constitutive replacement of circulating memory CD4+ T cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "In skin, around 2% of both populations were replaced daily by influx, comparable to the rates of constitutive replacement of circulating memory CD4+ T cell subsets (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024), and EM and TRM self-renewed every 6 and 7 weeks, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous studies cited in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "98b01f77-b823-440e-9733-08a861714df2",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C32",
+      "claim": "Skin EM self-renewed every 6 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In skin, around 2% of both populations were replaced daily by influx, comparable to the rates of constitutive replacement of circulating memory CD4+ T cell subsets (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024), and EM and TRM self-renewed every 6 and 7 weeks, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the mathematical modeling of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "e1274f57-67bc-4812-bfd6-e88b95f8a4ec",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C33",
+      "claim": "Skin TRM self-renewed every 7 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In skin, around 2% of both populations were replaced daily by influx, comparable to the rates of constitutive replacement of circulating memory CD4+ T cell subsets (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024), and EM and TRM self-renewed every 6 and 7 weeks, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the mathematical modeling of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "7e3d0911-c8c5-49fe-ae85-22448b1f6ff4",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C34",
+      "claim": "Within LP, EM and TRM divided less often (every 7-9 weeks) compared to skin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, within LP these subsets divided less often (every 7\u20139 weeks) and relied on higher levels of recruitment (4\u20136% per day) for their maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the mathematical modeling of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "61bfc077-67bf-491c-9e93-9e00061c223f",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C35",
+      "claim": "LP EM and TRM relied on higher levels of recruitment (4-6% per day) for their maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, within LP these subsets divided less often (every 7\u20139 weeks) and relied on higher levels of recruitment (4\u20136% per day) for their maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the mathematical modeling of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "3487df0c-9531-40d9-bf0f-10bbed890a41",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C36",
+      "claim": "The substantial rates of self-renewal in skin led to clonal half lives of just over a month.",
+      "claim_type": "EXPLICIT",
+      "source": "The substantial rates of self-renewal in skin led to clonal half lives of just over a month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the mathematical modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8fe1709e-5ca4-45d5-adeb-f04bb791f1dc",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C37",
+      "claim": "The lower levels of self-renewal and higher levels of replacement in LP resulted in shorter clonal half lives of approximately 2 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower levels of self-renewal and higher levels of replacement in LP resulted in shorter clonal half lives of approximately 2 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the mathematical modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "ee7d57dc-5963-4a8e-88f4-e05e6c8714ff",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C38",
+      "claim": "The duration of Ki67 expression was approximately 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "This quantity in turn was informative for estimating rates of self-renewal. Further, the observed convergence of Ki67 expresssion within these two subsets is consistent with the assumption of homogeneity in the rates of division and loss within skin and LP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the modeling of Ki67 convergence kinetics and is consistent with previous estimates mentioned in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "79ffb096-42cb-4c0d-abbe-ff724e4fa252",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C39",
+      "claim": "The observed convergence of Ki67 expression within YFP+ and YFP\u2212 subsets is consistent with the assumption of homogeneity in the rates of division and loss within skin and LP.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the observed convergence of Ki67 expresssion within these two subsets is consistent with the assumption of homogeneity in the rates of division and loss within skin and LP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed data pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "0d8e84aa-a88e-4460-b8e2-7a9e7be5f697",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C40",
+      "claim": "Lymph-node-derived EM was strongly favoured as the closest precursor to CD4+ EM within both skin and LP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the data were quite strongly informative regarding the immediate ancestors of tissue subsets. From the candidate set of models, the weighting strongly favoured lymph-node-derived EM as the closest precursor to CD4+ EM within both skin and LP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model comparison analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "64b8f9e1-05cb-491f-b50a-4f35a63bf345",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C41",
+      "claim": "Within skin, local CD69\u2212 cells were the favoured precursor to CD69+ TRM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within skin, local CD69\u2212 cells were the favoured precursor to CD69+ TRM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model comparison analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "2929898e-102e-4e49-9a70-f483fd310126",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C42",
+      "claim": "There was substantial evidence (66% of model support) for a division-linked transition from CD69\u2212 to CD69+ cells in skin.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence was generally more equivocal regarding the mode in which cells are recruited into skin and LP, although for skin we saw substantial evidence (66% of model support) for a division-linked transition from CD69\u2212 to CD69+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "c15b8f3d-3c1e-4755-8bed-dab5a8465039",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C43",
+      "claim": "Using Ki67 expression frequency and daily replacement rate, residence times in skin were estimated to be in the range 22-28 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In skin, both EM and TRM are replaced at the rate of 2% per day and have Ki67 expression frequencies of around 0.15 (Figure 2C). The approximation then yields residence times in the range 22\u201328 days, depending on whether immigrant TRM are Ki67low or Ki67high, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation calculation using an independent method based on Ki67 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "9b5d002d-0b18-4ed4-abe9-3ab21c2af746",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C44",
+      "claim": "Using Ki67 expression frequency and daily replacement rate, residence times in LP were estimated to be 14-25 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In LP, with 5.5% daily replacement and Ki67 frequencies of around 0.07, we estimate residence times of 14\u201325 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation calculation using an independent method based on Ki67 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8dea4387-787f-4915-8a20-32c3f53f1f74",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C45",
+      "claim": "The residence time estimates from Ki67-based approximation are in good agreement with those from the model fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "Both estimates are in good agreement with those from the model fitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between two different analytical approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "5c4ccec6-b7cb-4bf3-998e-d80b77214321",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C46",
+      "claim": "CD4+ TRM are not intrinsically long-lived, but instead are sustained by both self-renewal and supplementation from circulating precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that CD4+ TRM are not intrinsically long-lived, but instead are sustained by both self-renewal and supplementation from circulating precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the combined experimental and modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8330a0c5-a91f-44d3-be4b-dedee8d59bc7",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C47",
+      "claim": "There are distinct contributions of recruitment and self-renewal of both subsets within skin and LP.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw quite distinct contributions of recruitment and self-renewal of both subsets within skin and LP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results comparing the two tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "03e68b9d-ecae-4412-b9fb-b28a771114f5",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C48",
+      "claim": "The large antigenic burden within the small intestine may drive the higher levels of TRM recruitment and clonal erosion within the LP.",
+      "claim_type": "EXPLICIT",
+      "source": "The basis of this difference is unclear, but we speculate that the large antigenic burden within the small intestine drives the higher levels of TRM recruitment and clonal erosion within the LP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences between tissues.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "d57b0f34-8f5e-4e44-8b5f-fce6940d2af4",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C49",
+      "claim": "YFP levels among naive T cells were probably sustained to an extent by low-level residual labelling of thymic progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "YFP levels among naive T cells were also probably sustained to an extent by low-level residual labelling of thymic progenitors (Lukas et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "72aeaf85-6477-406a-bce1-e5a6e44e71bc",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C50",
+      "claim": "All CD4+ T cell subsets within skin and LP tissues were at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis was rooted in the observation that all CD4+ T cell subsets within these tissues were at steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental observations of stable cell numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "a8ac967a-f3af-4b39-b75b-5ea587770ef6",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C51",
+      "claim": "Dynamic equilibrium dictates that immigration of new cells must be accompanied by loss of existing ones.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynamic equilibrium dictates that immigration of new cells must be accompanied by loss of existing ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the concept of steady state.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "73aa2eb8-6223-45f2-8940-931311d3204c",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C52",
+      "claim": "The dynamic populations studied are likely specific for self or commensal antigens that are continuously expressed in SPF mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SPF mice studied here, these dynamic populations are likely specific for self or commensal antigens that are continuously expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental context and known biology of SPF mice.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "f69c83b0-13de-4cd6-a7ba-42143d41d228",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C53",
+      "claim": "Residence and interdivision times may be distinct for TRM that are not replenished long-term from precursors, such as those generated in acute infections.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that residence and interdivision times are distinct for TRM that might not be replenished long-term from precursors, such as those generated in acute infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential differences in other contexts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8be89755-1fb2-46c3-bc8c-3bb1a70f0d18",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C54",
+      "claim": "The simple model can explain the stable maintenance of TRM numbers in healthy skin and LP without needing to invoke the concept of a homeostatic niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our simple model can explain the stable maintenance of TRM numbers in healthy skin and LP without needing to invoke the concept of a homeostatic niche, such as a competitive limit to cell densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "4ab0028f-06fc-460e-b7f0-41c71ae92557",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C55",
+      "claim": "Any increase or decrease in the rate of influx into a tissue will simply lead to a new equilibrium at higher or lower cell densities, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, any increase or decrease in the rate of influx into a tissue will simply lead to a new equilibrium at higher or lower cell densities, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "87135ab9-d4c6-45e5-a2a7-1e6e5a081ec2",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C56",
+      "claim": "Repeated vaccinia virus challenges can drive progressive increases in the number of virus-specific CD8+ TRM in skin that are detectable for months.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed repeated vaccinia virus challenges can drive progressive increases in the number of virus-specific CD8+ TRM in skin that are detectable for months (Jiang et al., 2012), and heterologous challenges appear not to erode pre-existing LCMV-specific CD8+ TRM (Wijeyesinghe et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "b972d623-6746-4414-8a07-8f060bef0d3e",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C57",
+      "claim": "Heterologous challenges appear not to erode pre-existing LCMV-specific CD8+ TRM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed repeated vaccinia virus challenges can drive progressive increases in the number of virus-specific CD8+ TRM in skin that are detectable for months (Jiang et al., 2012), and heterologous challenges appear not to erode pre-existing LCMV-specific CD8+ TRM (Wijeyesinghe et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "b181b808-7be3-479d-a003-959a5e69dc36",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C58",
+      "claim": "Whether the same flexibility manifests among CD4+ TRM following repeated challenges is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether the same flexibility manifests among CD4+ TRM following repeated challenges is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "e0b590bd-1bec-46a9-8abe-f6542b940e87",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C59",
+      "claim": "CD69+CD4+ TRM in skin derive at least in part from a local CD69\u2212 precursor.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence that CD69+CD4+ TRM in skin derive at least in part from a local CD69\u2212 precursor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "7126ac55-e293-4bb9-9f44-087512a798ca",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C60",
+      "claim": "The highly dynamic nature of CD4+ TRM is sustained throughout life by both self-renewal and continued influx from precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our study clearly exposes the highly dynamic nature of CD4+ TRM, sustained throughout life by both self-renewal and continued influx from precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the combined experimental and modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "18db4b3e-3ea7-411c-8957-c05c5441bc9b",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C61",
+      "claim": "Tissue-specific influx, particularly if there are competitive limits to TRM occupancy, may contribute to the differential longevity of immunity at different barrier sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This tissue-specific influx, particularly if there are competitive limits to TRM occupancy, may contribute to the differential longevity of immunity at different barrier sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "c44b4f10-eee4-4cd4-8523-237b3e6fa694",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C62",
+      "claim": "Ki67-DIVN mice express both a Ki67-mCherry fusion protein and inducible CreERT from the Mki67 locus, together with a Rosa26RcagYFP Cre reporter construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, these mice express both a Ki67-mCherry fusion protein and inducible CreERT from the Mki67 locus, together with a Rosa26RcagYFP Cre reporter construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the genetic construct used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "08aed5e2-46a2-43e9-81d0-830b2e389e26",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C63",
+      "claim": "Treatment of Ki67-DIVN mice with tamoxifen induces YFP in cells expressing high levels of Ki67, and YFP is then stably expressed by these cells and their offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of mice with tamoxifen therefore induces YFP in cells expressing high levels of Ki67, and YFP is then stably expressed by these cells and their offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the fate reporter system.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "6cae0e4d-21ad-4e6d-bf32-717f5c2772bf",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C64",
+      "claim": "Expression of Ki67-fused mCherry gives a constitutive live readout of Ki67 expression, independent of tamoxifen treatment and YFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Ki67-fused mCherry gives a constitutive live readout of Ki67 expression, independent of tamoxifen treatment and YFP expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the reporter system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "ea806636-d60b-4b37-98ca-e248f88624a2",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C65",
+      "claim": "In CD4CreERT Rosa26RmTom mice, cells expressing CD4 during tamoxifen treatment permanently and heritably express the fluorescent reporter mTomato.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second fate reporter, CD4CreERT Rosa26RmTom mice (Cd4-FR), the Cre reporter is constructed such that cells expressing CD4 during tamoxifen treatment permanently and heritably express the fluorescent reporter mTomato (mTom).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the second fate reporter system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "4e704fef-b605-4a3d-8362-444b1ec564f5",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C66",
+      "claim": "Less than 3% of cells recovered from tissue samples were positive for in vivo Thy1.2 labeling, supporting the assumption of very low rates of false-positive and false-negative events.",
+      "claim_type": "EXPLICIT",
+      "source": "This protocol typically achieves >99% staining of circulating cells (Anderson et al., 2014), and less than 3% of cells recovered from our tissue samples were label positive (Figure 1\u2014figure supplement 1B), supporting the assumption of very low rates of false-positive and false-negative events.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of the tissue localization method using experimental data and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "973d003f-25f1-49db-94b8-ee143391ca5c",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C67",
+      "claim": "CD4+ TRM typically outnumber their CD8+ counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Far less is known regarding CD4+ TRM, which typically outnumber their CD8+ counterparts (Szabo et al., 2019), and there have been very few attempts to dissect the kinetics of either subset (Bullock et al., 2024, van Dorp et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "423c982a-9c83-4612-ba42-7a4cc2aa04dc",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C68",
+      "claim": "There have been very few attempts to dissect the kinetics of CD4+ or CD8+ TRM subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Far less is known regarding CD4+ TRM, which typically outnumber their CD8+ counterparts (Szabo et al., 2019), and there have been very few attempts to dissect the kinetics of either subset (Bullock et al., 2024, van Dorp et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "2ce1190d-d4ec-48c2-b0fe-1eac7e11fea5",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C69",
+      "claim": "Division-linked labelling alone may not distinguish in situ cell division and the supplementation of a population from labelled precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, measuring these basic parameters in isolation is challenging, partly due to their sensitivity to assumptions made in the models (De Boer and Perelson, 2013), but also because division-linked labelling alone may not distinguish in situ cell division and the supplementation of a population from labelled precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about methodological challenges supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "6f0bb0bd-9eb4-447d-a340-417625d8c745",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C70",
+      "claim": "These issues can be addressed by modelling different readouts of cell fate simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "These issues can be addressed by modelling different readouts of cell fate simultaneously (Bains et al., 2009; den Braber et al., 2012; Costa Del Amo et al., 2018; De Boer and Yates, 2023; Bullock et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous methodological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "6f72140f-e3a2-4cd7-a560-1d3422bc5ded",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C71",
+      "claim": "Modelling has established evidence for continuous replenishment of circulating memory CD4+ T cells from precursors throughout life in specific-pathogen-free mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelling has also established evidence for continuous replenishment of circulating memory CD4+ T cells from precursors throughout life in specific-pathogen-free mice, driven by a combination of environmental, commensal, and self antigens (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "409adcae-81d5-45e4-a2cc-7c89d985f4c2",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "claim_id": "C72",
+      "claim": "Continuous replenishment of circulating memory CD4+ T cells is driven by a combination of environmental, commensal, and self antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelling has also established evidence for continuous replenishment of circulating memory CD4+ T cells from precursors throughout life in specific-pathogen-free mice, driven by a combination of environmental, commensal, and self antigens (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CD69+CD4+ TRM in skin have a mean residence time of ~24 days (~3 weeks), are replaced at ~2% per day from precursors, self-renew every 6-7 weeks, and have clonal half-lives of just over a month.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C28, C30, C32-C33, and C36 collectively describe the kinetic parameters of skin TRM derived from mathematical modeling of dual fate-mapping data (Figure 2C, Figure 3). The convergence of independent validation using Ki67 expression (C43, C45) and the consistency across multiple analytical approaches strongly support these quantitative estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8acaa0da-c575-4cb5-9ddb-e564a279f795",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CD69+CD4+ TRM in lamina propria have shorter residence times (~14 days, ~2 weeks), are maintained largely by immigration at 4-6% per day, divide less frequently (every 7-9 weeks), and have shorter clonal half-lives of ~2 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C29, C34-C35, and C37 describe LP TRM kinetics from the same modeling framework applied to skin. The estimates are internally consistent, validated by independent Ki67-based calculations (C44, C45), and show clear tissue-specific differences from skin TRM, supporting the robustness of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "f5e09c6b-aa17-4b04-a3f0-a6242f733019",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CD69+CD4+ TRM in both skin and LP derive from circulating effector-memory T cells, with skin TRM likely developing via a local CD69\u2212 intermediate through a division-linked transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C40-C42, and C59 describe precursor relationships identified through model comparison analysis (Figure 4A). The model weighting approach (LOO-IC) provides quantitative support for these developmental pathways, with lymph node EM strongly favored as precursor to tissue EM, and CD69\u2212 cells favored as precursors to CD69+ TRM in skin (66% model support for division-linked transition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "f9c2549e-3460-4500-9360-f4cdcf155ab2",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CD4+ TRM are not intrinsically long-lived but are sustained by both self-renewal and supplementation from circulating precursors, with distinct contributions of these processes in skin versus LP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 and C60 represent the main conclusions synthesizing the quantitative findings. These are well-supported by the comprehensive kinetic data (C2-C6, C28-C37), the model comparison results (C40-C42), and the convergence of multiple analytical approaches (C43-C45). The tissue-specific differences are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "a2555174-babc-4191-b473-faf28da01732",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CD4+ T cell subsets in skin and LP were at homeostatic steady state during the chase period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C50 describe the steady-state assumption underlying the modeling. This is supported by the lack of significant changes in cell numbers with mouse age (Figure 2A-B, p>0.39) or time since tamoxifen treatment (p>0.24), providing empirical justification for the equilibrium assumption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "d7d39ae0-81b1-4549-af91-a86203432389",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "mTom expression within skin and LP CD4+ T cell subsets declined slowly (7-8 fold over one year), indicating continuous replacement from precursors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 describe a key observation from the Cd4-FR experiments (Figure 2C). The slow decline in mTom+ cells directly demonstrates ongoing replacement, as a closed population at steady state would maintain constant label frequencies. This observation is fundamental to the subsequent modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "d0b0af4c-b98f-4b64-adfc-907b02abf086",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ki67 expression in YFP+ and YFP\u2212 TRM populations converged over time, with Ki67 expression duration estimated at ~3 days, consistent with homogeneous rates of division and loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 describe observed Ki67 convergence kinetics (Figure 2C), while C38-C39 interpret these findings. The ~3-day Ki67 duration estimate is consistent with prior literature (C19) and the convergence pattern supports the model assumption of kinetic homogeneity within each tissue subset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "115ebdc0-3f8e-4f55-8d5a-ce1dad48ae35",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Independent validation using Ki67 expression frequencies and replacement rates yielded residence time estimates of 22-28 days for skin and 14-25 days for LP, in good agreement with model fitting results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 describe an independent validation approach using a simpler approximation method. The agreement between this method and the full model fitting (C28-C29) provides strong cross-validation of the residence time estimates and increases confidence in the modeling framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "55d45dd3-e05f-4121-8ec5-b1eefe22fcf1",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The rate of replacement of skin TRM (~2% per day) is comparable to rates of constitutive replacement of circulating memory CD4+ T cell subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 compares the estimated skin TRM replacement rate to previously published rates for circulating memory cells (Gossel et al., 2017; Hogan et al., 2019; Bullock et al., 2024). This comparison is appropriate and the similarity suggests common regulatory mechanisms, though the claim relies on the accuracy of both current and cited estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "0b4a28c5-5003-49ae-90f0-c3747e8dd5be",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Ki67-DIVN and Cd4-FR reporter systems enable tracking of dividing cells and CD4+ T cells, respectively, with their descendants through heritable fluorescent markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 describe the genetic reporter systems used. These are established tools previously characterized (Bullock et al., 2024; Gossel et al., 2017; Miller et al., 2018) and the descriptions are consistent with known mechanisms of Cre-lox recombination and tamoxifen-inducible systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "bd5100d2-a689-4da9-aad6-d62b5f0bdbb9",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Less than 3% of cells recovered from tissue samples were positive for in vivo Thy1.2 labeling, validating the tissue localization approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 provides validation of the tissue localization method. The low frequency of labeled cells in tissues (<3%) compared to high labeling efficiency in circulation (>99%, Anderson et al., 2014) demonstrates effective discrimination between tissue-resident and circulating cells, supporting the validity of the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "278efe6f-09a1-418d-a627-473de8c9650b",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The large antigenic burden within the small intestine may drive higher levels of TRM recruitment and clonal erosion in LP compared to skin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C48 is explicitly speculative ('we speculate') and proposes a mechanistic explanation for observed tissue differences. While the speculation is reasonable given the known antigenic environment of the gut, no direct evidence is provided to test this hypothesis. The claim appropriately acknowledges uncertainty ('The basis of this difference is unclear').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "72ef9c27-87ce-4ae6-95ce-984adad54344",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mathematical model explains stable TRM maintenance without invoking homeostatic niches, predicting that changes in influx rates lead to new equilibria at different cell densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C54-C55 describe properties and predictions of the mathematical model. C51 is a logical consequence of steady-state dynamics. C54-C55 represent model-based inferences that are mathematically sound given the model structure, though experimental validation of these predictions (e.g., through perturbation experiments) would strengthen support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "26c0d6bf-1982-4b86-b570-7eb5ce84e445",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tissue-specific influx may contribute to differential longevity of immunity at different barrier sites, particularly if there are competitive limits to TRM occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 is speculative ('may contribute') and conditional ('particularly if'). While the observed tissue-specific differences in influx rates (C30, C35) and clonal half-lives (C36-C37) provide a basis for this hypothesis, no direct evidence is presented linking these kinetic differences to immunity duration or demonstrating competitive limits to TRM occupancy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "7f921830-3d85-459f-a195-73e1d5a58129",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background context on TRM biology, prior studies of TRM dynamics, and methodological approaches for studying cell kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C19, C67-C72 provide literature context and are supported by appropriate citations. These establish the knowledge gaps (C67-C68), methodological challenges (C69), and prior findings that motivate the current study. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "ae3387c5-11fc-4971-a6cd-a562f11ad99e",
+      "content_id": "d1bb721e-933d-4b79-958c-2428da33fc02",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of potential confounding factors, alternative contexts, and limitations of the findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C52-C53, C56-C58 acknowledge limitations and discuss alternative scenarios. C49 and C52 make reasonable inferences about the experimental system. C53 appropriately notes that findings may differ in other contexts (acute infections). C56-C57 cite relevant prior work on CD8+ TRM, while C58 acknowledges gaps in knowledge about CD4+ TRM. These represent appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors quantified residence times, self-renewal rates, and daily replacement rates for CD69+ CD4+ TRM in skin and lamina propria (LP). In skin, TRM reside for ~24 days, self-renew every 5-7 weeks, and ~2% are replaced daily from precursors. In LP, TRM have shorter residencies (~14 days), divide less often (every 7-9 weeks), and rely more heavily on immigration (4-6% per day).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm these findings as compelling and rigorous. The editor states the evidence is 'strong' and reviewers describe the work as 'compelling' with 'powerful combination of mouse strains and modelling.' No concerns were raised about these quantitative kinetic parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "aa8b062d-89df-4d67-9ce2-4b1bd6966b80",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors used model comparison to identify precursor populations for tissue TRM. They found that lymph-node-derived EM was strongly favored as the precursor to CD4+ EM in both tissues, while in skin, local CD69- cells were the favored precursor to CD69+ TRM, with substantial evidence (66%) for a division-linked transition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the methodology and conclusions. One reviewer specifically highlights 'the modelling of different modes of recruitment (quiescent, neutral, division linked) is extremely interesting and often neglected.' The editor notes the evidence is 'strong' based on 'mathematical inference.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "db2aa9ff-a7de-402a-b6a6-167c1753baf4",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors conclude that CD4+ TRM are not intrinsically long-lived but are sustained throughout life by both self-renewal and continued influx from circulating precursors, with distinct contributions of these processes in skin versus LP.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is identified as a main conclusion by reviewers who describe it as 'compelling' and 'clearly described.' The editor states this provides 'a fundamental advance in our understanding of CD4 T cell regulation' and that 'immigration plays a key role for maintaining CD4+ TRM populations.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "6cb09966-d7b5-48c4-8d65-6ed7e0bd3e00",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors observed that mTom expression in skin and LP subsets declined slowly (seven- to eight-fold over a year), indicating continuous replacement from precursors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this observation as part of the strong evidence base. The editor notes the evidence is 'based on fate mapping and mathematical inference' and is 'strong,' with no concerns raised about this key observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "fe973c76-0e0d-4b2c-ab1d-ffb9945a3470",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors observed that Ki67 expression in YFP+ TRM was initially higher than YFP- cells but converged at later times, which is consistent with homogeneity in division and loss rates. This convergence was used to estimate Ki67 expression duration (~3 days).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor explicitly states 'open questions on the interpretation of the Ki67-based fate mapping remain,' indicating uncertainty about this aspect of the methodology despite the overall strong evidence. Reviewers did not challenge the findings but the editor's comment suggests interpretive caution.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8526be3d-e477-4946-8535-588edd43d935",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors validated their model-derived residence time estimates using an independent Ki67-based approximation method, finding good agreement between the two approaches (22-28 days for skin, 14-25 days for LP).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers praise the 'rigorous quantitative analysis' and 'powerful combination' of approaches. While the editor notes 'open questions on the interpretation of the Ki67-based fate mapping,' the validation itself is not challenged and the agreement between methods strengthens the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "4e8fb319-8860-40c2-943d-eb3a34e201b5",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors assumed that skin and LP-localized T cell subsets were at homeostatic equilibrium during the chase period based on stable cell numbers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this assumption as part of the rigorous analysis. No concerns were raised about the steady-state assumption, which is fundamental to the modeling approach that reviewers describe as 'compelling.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "1226a781-7418-47aa-b95b-1b9c6c2b4608",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors speculate about mechanisms and implications, including that antigenic burden may drive higher LP recruitment, that the populations studied likely respond to self/commensal antigens, and that tissue-specific influx may affect immunity duration at different sites.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these speculative statements, which are appropriately framed as interpretations and possibilities. The editor describes the work as providing 'a fundamental advance' suggesting the interpretive framework is accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "982e45f2-169a-4389-87fa-9b8e1ef15408",
+      "content_id": "bd560d08-6ddf-44e1-8940-f231fd232923",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors describe the technical features of their Ki67-DIVN and CD4-FR fate reporter systems, including validation that <3% of tissue cells were positive for in vivo Thy1.2 labeling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the mouse strains as 'elegant' and the combination as 'powerful.' The editor notes 'open questions on the interpretation' but does not challenge the technical validity of the reporter systems themselves.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "911be316-14a2-41d4-90e5-b169b165c895",
+      "result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2"
+    },
+    {
+      "claim_id": "be3c494e-8037-4e5e-9df8-ddcc4ffc5a08",
+      "result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2"
+    },
+    {
+      "claim_id": "a185edd0-0a53-4ff1-a420-8be8c8fece23",
+      "result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2"
+    },
+    {
+      "claim_id": "a4a514c7-9bbe-4de6-b183-b0ff5c2e686f",
+      "result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2"
+    },
+    {
+      "claim_id": "08ac8fd4-2685-447d-8f06-bf42c71830a4",
+      "result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2"
+    },
+    {
+      "claim_id": "98b01f77-b823-440e-9733-08a861714df2",
+      "result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2"
+    },
+    {
+      "claim_id": "e1274f57-67bc-4812-bfd6-e88b95f8a4ec",
+      "result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2"
+    },
+    {
+      "claim_id": "3487df0c-9531-40d9-bf0f-10bbed890a41",
+      "result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2"
+    },
+    {
+      "claim_id": "a9ec885f-d689-4499-bf5a-decd8f772909",
+      "result_id": "8acaa0da-c575-4cb5-9ddb-e564a279f795"
+    },
+    {
+      "claim_id": "b9ec6566-de53-4cde-a4cd-3bee4ed30285",
+      "result_id": "8acaa0da-c575-4cb5-9ddb-e564a279f795"
+    },
+    {
+      "claim_id": "3225cfc1-3275-4021-9be3-64c48f9dc242",
+      "result_id": "8acaa0da-c575-4cb5-9ddb-e564a279f795"
+    },
+    {
+      "claim_id": "7e3d0911-c8c5-49fe-ae85-22448b1f6ff4",
+      "result_id": "8acaa0da-c575-4cb5-9ddb-e564a279f795"
+    },
+    {
+      "claim_id": "61bfc077-67bf-491c-9e93-9e00061c223f",
+      "result_id": "8acaa0da-c575-4cb5-9ddb-e564a279f795"
+    },
+    {
+      "claim_id": "8fe1709e-5ca4-45d5-adeb-f04bb791f1dc",
+      "result_id": "8acaa0da-c575-4cb5-9ddb-e564a279f795"
+    },
+    {
+      "claim_id": "8a755af8-3f05-45ec-b19c-8cb9539635c8",
+      "result_id": "f5e09c6b-aa17-4b04-a3f0-a6242f733019"
+    },
+    {
+      "claim_id": "0d8e84aa-a88e-4460-b8e2-7a9e7be5f697",
+      "result_id": "f5e09c6b-aa17-4b04-a3f0-a6242f733019"
+    },
+    {
+      "claim_id": "64b8f9e1-05cb-491f-b50a-4f35a63bf345",
+      "result_id": "f5e09c6b-aa17-4b04-a3f0-a6242f733019"
+    },
+    {
+      "claim_id": "2929898e-102e-4e49-9a70-f483fd310126",
+      "result_id": "f5e09c6b-aa17-4b04-a3f0-a6242f733019"
+    },
+    {
+      "claim_id": "e0b590bd-1bec-46a9-8abe-f6542b940e87",
+      "result_id": "f5e09c6b-aa17-4b04-a3f0-a6242f733019"
+    },
+    {
+      "claim_id": "5c4ccec6-b7cb-4bf3-998e-d80b77214321",
+      "result_id": "f9c2549e-3460-4500-9360-f4cdcf155ab2"
+    },
+    {
+      "claim_id": "8330a0c5-a91f-44d3-be4b-dedee8d59bc7",
+      "result_id": "f9c2549e-3460-4500-9360-f4cdcf155ab2"
+    },
+    {
+      "claim_id": "7126ac55-e293-4bb9-9f44-087512a798ca",
+      "result_id": "f9c2549e-3460-4500-9360-f4cdcf155ab2"
+    },
+    {
+      "claim_id": "4bf6cd13-da1f-433b-bf5f-749950f633a8",
+      "result_id": "a2555174-babc-4191-b473-faf28da01732"
+    },
+    {
+      "claim_id": "72aeaf85-6477-406a-bce1-e5a6e44e71bc",
+      "result_id": "a2555174-babc-4191-b473-faf28da01732"
+    },
+    {
+      "claim_id": "150d470f-df70-44db-8fa1-3bc6af291381",
+      "result_id": "d7d39ae0-81b1-4549-af91-a86203432389"
+    },
+    {
+      "claim_id": "beb3db98-afef-4060-a8e4-39415fadcd94",
+      "result_id": "d7d39ae0-81b1-4549-af91-a86203432389"
+    },
+    {
+      "claim_id": "7486cd6b-030a-4245-83b9-5e29d2e1050a",
+      "result_id": "d0b0af4c-b98f-4b64-adfc-907b02abf086"
+    },
+    {
+      "claim_id": "b729411a-6bab-4729-bb4b-a855188ddd90",
+      "result_id": "d0b0af4c-b98f-4b64-adfc-907b02abf086"
+    },
+    {
+      "claim_id": "ee7d57dc-5963-4a8e-88f4-e05e6c8714ff",
+      "result_id": "d0b0af4c-b98f-4b64-adfc-907b02abf086"
+    },
+    {
+      "claim_id": "79ffb096-42cb-4c0d-abbe-ff724e4fa252",
+      "result_id": "d0b0af4c-b98f-4b64-adfc-907b02abf086"
+    },
+    {
+      "claim_id": "c15b8f3d-3c1e-4755-8bed-dab5a8465039",
+      "result_id": "115ebdc0-3f8e-4f55-8d5a-ce1dad48ae35"
+    },
+    {
+      "claim_id": "9b5d002d-0b18-4ed4-abe9-3ab21c2af746",
+      "result_id": "115ebdc0-3f8e-4f55-8d5a-ce1dad48ae35"
+    },
+    {
+      "claim_id": "8dea4387-787f-4915-8a20-32c3f53f1f74",
+      "result_id": "115ebdc0-3f8e-4f55-8d5a-ce1dad48ae35"
+    },
+    {
+      "claim_id": "d22899ca-ca07-4d17-9524-019987e2c3fc",
+      "result_id": "55d45dd3-e05f-4121-8ec5-b1eefe22fcf1"
+    },
+    {
+      "claim_id": "c44b4f10-eee4-4cd4-8523-237b3e6fa694",
+      "result_id": "0b4a28c5-5003-49ae-90f0-c3747e8dd5be"
+    },
+    {
+      "claim_id": "08aed5e2-46a2-43e9-81d0-830b2e389e26",
+      "result_id": "0b4a28c5-5003-49ae-90f0-c3747e8dd5be"
+    },
+    {
+      "claim_id": "6cae0e4d-21ad-4e6d-bf32-717f5c2772bf",
+      "result_id": "0b4a28c5-5003-49ae-90f0-c3747e8dd5be"
+    },
+    {
+      "claim_id": "ea806636-d60b-4b37-98ca-e248f88624a2",
+      "result_id": "0b4a28c5-5003-49ae-90f0-c3747e8dd5be"
+    },
+    {
+      "claim_id": "4e704fef-b605-4a3d-8362-444b1ec564f5",
+      "result_id": "bd5100d2-a689-4da9-aad6-d62b5f0bdbb9"
+    },
+    {
+      "claim_id": "03e68b9d-ecae-4412-b9fb-b28a771114f5",
+      "result_id": "278efe6f-09a1-418d-a627-473de8c9650b"
+    },
+    {
+      "claim_id": "a8ac967a-f3af-4b39-b75b-5ea587770ef6",
+      "result_id": "72ef9c27-87ce-4ae6-95ce-984adad54344"
+    },
+    {
+      "claim_id": "8be89755-1fb2-46c3-bc8c-3bb1a70f0d18",
+      "result_id": "72ef9c27-87ce-4ae6-95ce-984adad54344"
+    },
+    {
+      "claim_id": "4ab0028f-06fc-460e-b7f0-41c71ae92557",
+      "result_id": "72ef9c27-87ce-4ae6-95ce-984adad54344"
+    },
+    {
+      "claim_id": "18db4b3e-3ea7-411c-8957-c05c5441bc9b",
+      "result_id": "26c0d6bf-1982-4b86-b570-7eb5ce84e445"
+    },
+    {
+      "claim_id": "a47b9088-c6a5-499b-ba47-fd3705e38800",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "a9cbc1ee-fc5d-4c01-b3be-bceab9c5f5ba",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "cfc1c367-0fd9-48de-ae3a-fedb573b7b38",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "f46304ac-4073-4eeb-89b6-4a15ae1c627b",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "dd6ed63c-acaf-4d21-b890-d16fed207f28",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "caad4b9d-9740-4085-a345-406ce6631320",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "0dda204d-77fd-4b7b-958d-187e174f5b85",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "17747541-c43b-4c06-bfc6-21f9a2340e2a",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "d4d015fc-9627-483f-9f3b-cd653363a9a5",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "33b50c0a-8e55-4b82-ad6b-d4976f4e47a4",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "4ab038b9-15e7-4e0c-857a-c4f40928929a",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "484fd34b-6596-49c5-b26c-4c354acec2bf",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "973d003f-25f1-49db-94b8-ee143391ca5c",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "423c982a-9c83-4612-ba42-7a4cc2aa04dc",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "2ce1190d-d4ec-48c2-b0fe-1eac7e11fea5",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "6f0bb0bd-9eb4-447d-a340-417625d8c745",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "6f72140f-e3a2-4cd7-a560-1d3422bc5ded",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "409adcae-81d5-45e4-a2cc-7c89d985f4c2",
+      "result_id": "7f921830-3d85-459f-a195-73e1d5a58129"
+    },
+    {
+      "claim_id": "d57b0f34-8f5e-4e44-8b5f-fce6940d2af4",
+      "result_id": "ae3387c5-11fc-4971-a6cd-a562f11ad99e"
+    },
+    {
+      "claim_id": "73aa2eb8-6223-45f2-8940-931311d3204c",
+      "result_id": "ae3387c5-11fc-4971-a6cd-a562f11ad99e"
+    },
+    {
+      "claim_id": "f69c83b0-13de-4cd6-a7ba-42143d41d228",
+      "result_id": "ae3387c5-11fc-4971-a6cd-a562f11ad99e"
+    },
+    {
+      "claim_id": "87135ab9-d4c6-45e5-a2a7-1e6e5a081ec2",
+      "result_id": "ae3387c5-11fc-4971-a6cd-a562f11ad99e"
+    },
+    {
+      "claim_id": "b972d623-6746-4414-8a07-8f060bef0d3e",
+      "result_id": "ae3387c5-11fc-4971-a6cd-a562f11ad99e"
+    },
+    {
+      "claim_id": "b181b808-7be3-479d-a003-959a5e69dc36",
+      "result_id": "ae3387c5-11fc-4971-a6cd-a562f11ad99e"
+    },
+    {
+      "claim_id": "911be316-14a2-41d4-90e5-b169b165c895",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "be3c494e-8037-4e5e-9df8-ddcc4ffc5a08",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "a185edd0-0a53-4ff1-a420-8be8c8fece23",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "a9ec885f-d689-4499-bf5a-decd8f772909",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "b9ec6566-de53-4cde-a4cd-3bee4ed30285",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "a4a514c7-9bbe-4de6-b183-b0ff5c2e686f",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "3225cfc1-3275-4021-9be3-64c48f9dc242",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "08ac8fd4-2685-447d-8f06-bf42c71830a4",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "98b01f77-b823-440e-9733-08a861714df2",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "e1274f57-67bc-4812-bfd6-e88b95f8a4ec",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "7e3d0911-c8c5-49fe-ae85-22448b1f6ff4",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "61bfc077-67bf-491c-9e93-9e00061c223f",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "3487df0c-9531-40d9-bf0f-10bbed890a41",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "8fe1709e-5ca4-45d5-adeb-f04bb791f1dc",
+      "result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d"
+    },
+    {
+      "claim_id": "8a755af8-3f05-45ec-b19c-8cb9539635c8",
+      "result_id": "aa8b062d-89df-4d67-9ce2-4b1bd6966b80"
+    },
+    {
+      "claim_id": "0d8e84aa-a88e-4460-b8e2-7a9e7be5f697",
+      "result_id": "aa8b062d-89df-4d67-9ce2-4b1bd6966b80"
+    },
+    {
+      "claim_id": "64b8f9e1-05cb-491f-b50a-4f35a63bf345",
+      "result_id": "aa8b062d-89df-4d67-9ce2-4b1bd6966b80"
+    },
+    {
+      "claim_id": "2929898e-102e-4e49-9a70-f483fd310126",
+      "result_id": "aa8b062d-89df-4d67-9ce2-4b1bd6966b80"
+    },
+    {
+      "claim_id": "e0b590bd-1bec-46a9-8abe-f6542b940e87",
+      "result_id": "aa8b062d-89df-4d67-9ce2-4b1bd6966b80"
+    },
+    {
+      "claim_id": "5c4ccec6-b7cb-4bf3-998e-d80b77214321",
+      "result_id": "db2aa9ff-a7de-402a-b6a6-167c1753baf4"
+    },
+    {
+      "claim_id": "8330a0c5-a91f-44d3-be4b-dedee8d59bc7",
+      "result_id": "db2aa9ff-a7de-402a-b6a6-167c1753baf4"
+    },
+    {
+      "claim_id": "7126ac55-e293-4bb9-9f44-087512a798ca",
+      "result_id": "db2aa9ff-a7de-402a-b6a6-167c1753baf4"
+    },
+    {
+      "claim_id": "150d470f-df70-44db-8fa1-3bc6af291381",
+      "result_id": "6cb09966-d7b5-48c4-8d65-6ed7e0bd3e00"
+    },
+    {
+      "claim_id": "beb3db98-afef-4060-a8e4-39415fadcd94",
+      "result_id": "6cb09966-d7b5-48c4-8d65-6ed7e0bd3e00"
+    },
+    {
+      "claim_id": "7486cd6b-030a-4245-83b9-5e29d2e1050a",
+      "result_id": "fe973c76-0e0d-4b2c-ab1d-ffb9945a3470"
+    },
+    {
+      "claim_id": "b729411a-6bab-4729-bb4b-a855188ddd90",
+      "result_id": "fe973c76-0e0d-4b2c-ab1d-ffb9945a3470"
+    },
+    {
+      "claim_id": "ee7d57dc-5963-4a8e-88f4-e05e6c8714ff",
+      "result_id": "fe973c76-0e0d-4b2c-ab1d-ffb9945a3470"
+    },
+    {
+      "claim_id": "79ffb096-42cb-4c0d-abbe-ff724e4fa252",
+      "result_id": "fe973c76-0e0d-4b2c-ab1d-ffb9945a3470"
+    },
+    {
+      "claim_id": "c15b8f3d-3c1e-4755-8bed-dab5a8465039",
+      "result_id": "8526be3d-e477-4946-8535-588edd43d935"
+    },
+    {
+      "claim_id": "9b5d002d-0b18-4ed4-abe9-3ab21c2af746",
+      "result_id": "8526be3d-e477-4946-8535-588edd43d935"
+    },
+    {
+      "claim_id": "8dea4387-787f-4915-8a20-32c3f53f1f74",
+      "result_id": "8526be3d-e477-4946-8535-588edd43d935"
+    },
+    {
+      "claim_id": "4bf6cd13-da1f-433b-bf5f-749950f633a8",
+      "result_id": "4e8fb319-8860-40c2-943d-eb3a34e201b5"
+    },
+    {
+      "claim_id": "72aeaf85-6477-406a-bce1-e5a6e44e71bc",
+      "result_id": "4e8fb319-8860-40c2-943d-eb3a34e201b5"
+    },
+    {
+      "claim_id": "03e68b9d-ecae-4412-b9fb-b28a771114f5",
+      "result_id": "1226a781-7418-47aa-b95b-1b9c6c2b4608"
+    },
+    {
+      "claim_id": "73aa2eb8-6223-45f2-8940-931311d3204c",
+      "result_id": "1226a781-7418-47aa-b95b-1b9c6c2b4608"
+    },
+    {
+      "claim_id": "f69c83b0-13de-4cd6-a7ba-42143d41d228",
+      "result_id": "1226a781-7418-47aa-b95b-1b9c6c2b4608"
+    },
+    {
+      "claim_id": "18db4b3e-3ea7-411c-8957-c05c5441bc9b",
+      "result_id": "1226a781-7418-47aa-b95b-1b9c6c2b4608"
+    },
+    {
+      "claim_id": "c44b4f10-eee4-4cd4-8523-237b3e6fa694",
+      "result_id": "982e45f2-169a-4389-87fa-9b8e1ef15408"
+    },
+    {
+      "claim_id": "08aed5e2-46a2-43e9-81d0-830b2e389e26",
+      "result_id": "982e45f2-169a-4389-87fa-9b8e1ef15408"
+    },
+    {
+      "claim_id": "6cae0e4d-21ad-4e6d-bf32-717f5c2772bf",
+      "result_id": "982e45f2-169a-4389-87fa-9b8e1ef15408"
+    },
+    {
+      "claim_id": "ea806636-d60b-4b37-98ca-e248f88624a2",
+      "result_id": "982e45f2-169a-4389-87fa-9b8e1ef15408"
+    },
+    {
+      "claim_id": "4e704fef-b605-4a3d-8362-444b1ec564f5",
+      "result_id": "982e45f2-169a-4389-87fa-9b8e1ef15408"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "bddff7df-796e-4cea-86ad-0f8eaed5eee7",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f5e09c6b-aa17-4b04-a3f0-a6242f733019",
+      "peer_result_id": "aa8b062d-89df-4d67-9ce2-4b1bd6966b80",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on precursor relationships (C7, C40-C42, C59). Both evaluations find the model comparison approach and LOO-IC methodology compelling and well-supported. OpenEval emphasizes quantitative support while peer reviewers highlight the novelty of modeling different recruitment modes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "85046e87-8506-4a86-9204-b0bf6fbc50d2",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f9c2549e-3460-4500-9360-f4cdcf155ab2",
+      "peer_result_id": "db2aa9ff-a7de-402a-b6a6-167c1753baf4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on main conclusions (C46-C47, C60). Both evaluations strongly support these synthesis claims. OpenEval notes convergence of multiple analytical approaches, while peer reviewers describe it as 'a fundamental advance' with 'compelling' evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "40037ee1-b693-4241-8d3a-c054638eafae",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "a2555174-babc-4191-b473-faf28da01732",
+      "peer_result_id": "4e8fb319-8860-40c2-943d-eb3a34e201b5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on steady-state assumption (C23, C50). Both evaluations support the empirical justification based on lack of age-related changes. Peer reviewers accept this as part of the rigorous analysis without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "77d65868-fdae-4429-9f1a-402d0ed3242b",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "d7d39ae0-81b1-4549-af91-a86203432389",
+      "peer_result_id": "6cb09966-d7b5-48c4-8d65-6ed7e0bd3e00",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on key observation from Cd4-FR experiments (C24-C25). Both evaluations support this fundamental observation of slow decline in mTom+ cells. OpenEval emphasizes its importance for subsequent modeling, peer reviewers accept it as strong evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "e3fb0526-f800-4eee-9306-660cd377d065",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d0b0af4c-b98f-4b64-adfc-907b02abf086",
+      "peer_result_id": "fe973c76-0e0d-4b2c-ab1d-ffb9945a3470",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on Ki67 convergence kinetics (C26-C27, C38-C39). OpenEval finds these claims SUPPORTED with consistency to prior literature, but peer reviewers express UNCERTAINTY with editor noting 'open questions on the interpretation of the Ki67-based fate mapping remain.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "36bfdc3d-84f4-48d1-bddd-6ae4216cf797",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "115ebdc0-3f8e-4f55-8d5a-ce1dad48ae35",
+      "peer_result_id": "8526be3d-e477-4946-8535-588edd43d935",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on independent validation approach (C43-C45). Both evaluations support the Ki67-based validation despite editor's note about 'open questions' on Ki67 interpretation. The agreement between methods is seen as strengthening conclusions by both evaluations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "00734e14-3ac3-43ae-834c-94f2875b18db",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "debba138-b8f8-4b71-b8fc-5f0d8147e4d2",
+      "peer_result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on skin TRM kinetic parameters (C2-C4, C28, C30, C32-C33, C36). OpenEval emphasizes convergence with Ki67 validation, peer reviewers describe evidence as 'compelling' and 'rigorous' with no concerns raised. Peer review R1 also includes LP TRM claims that OpenEval separates into R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "880f3dbc-13e2-42c7-9f55-c50d1a3bfd1e",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "8acaa0da-c575-4cb5-9ddb-e564a279f795",
+      "peer_result_id": "0dd20cab-ee7d-4dee-bfa8-1c6c5fcef09d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on LP TRM kinetic parameters (C5-C6, C29, C34-C35, C37). OpenEval separates LP TRM analysis from skin TRM, while peer reviewers group all kinetic parameters together in R1. Both find the tissue-specific differences well-supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "6c9d44c3-8caa-494b-8a66-7ab77b0fee76",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0b4a28c5-5003-49ae-90f0-c3747e8dd5be",
+      "peer_result_id": "982e45f2-169a-4389-87fa-9b8e1ef15408",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on genetic reporter systems (C62-C65). OpenEval emphasizes established characterization in prior literature, peer reviewers describe mouse strains as 'elegant' and 'powerful.' OpenEval R10 includes C62-C65, peer R9 also includes C66.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "f85e7c46-2680-41a5-aa05-d958cf7d3243",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "bd5100d2-a689-4da9-aad6-d62b5f0bdbb9",
+      "peer_result_id": "982e45f2-169a-4389-87fa-9b8e1ef15408",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on tissue localization validation (C66). OpenEval supports the discrimination between tissue-resident and circulating cells, peer reviewers accept technical validity. OpenEval separates C66 into R11, while peer reviewers group it with reporter systems in R9.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "62a36e95-0fc7-42b6-aed6-b5cf1578c9d7",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "278efe6f-09a1-418d-a627-473de8c9650b",
+      "peer_result_id": "1226a781-7418-47aa-b95b-1b9c6c2b4608",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Difference in evaluation stringency for speculation (C48). OpenEval rates as UNCERTAIN noting it is explicitly speculative without direct evidence, while peer reviewers rate SUPPORTED, accepting appropriately framed interpretations. Peer R8 groups multiple speculative claims together.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "c0a986bc-1187-4c39-98d7-c81a9cd74d80",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "26c0d6bf-1982-4b86-b570-7eb5ce84e445",
+      "peer_result_id": "1226a781-7418-47aa-b95b-1b9c6c2b4608",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Difference in evaluation stringency for speculation (C61). OpenEval rates as UNCERTAIN noting conditional nature and lack of direct evidence linking kinetics to immunity duration, while peer reviewers rate SUPPORTED as part of accepted interpretive framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "ca71ccee-a784-4102-9f4b-be69ef4289ea",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "ae3387c5-11fc-4971-a6cd-a562f11ad99e",
+      "peer_result_id": "1226a781-7418-47aa-b95b-1b9c6c2b4608",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on limitations and alternative scenarios (C52-C53 overlap). OpenEval groups broader set of limitation claims (C49, C52-C53, C56-C58) as SUPPORTED, peer reviewers group speculative statements (C48, C52-C53, C61) as SUPPORTED, both accepting appropriate scientific caution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "d0e8b838-bac2-415b-bc98-c33b4edd7957",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "55d45dd3-e05f-4121-8ec5-b1eefe22fcf1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates comparison to published rates (C31) as SUPPORTED with appropriate citation context. No corresponding peer review evaluation found for this specific comparison claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "00041317-025d-4f06-9297-4e35bcf9404a",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "72ef9c27-87ce-4ae6-95ce-984adad54344",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates mathematical model properties and predictions (C51, C54-C55) as SUPPORTED with note that experimental validation would strengthen support. No corresponding peer review evaluation found for these specific model-based inferences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    },
+    {
+      "id": "8a7dd633-3ed0-4a58-8c37-8bfb3d591057",
+      "submission_id": "17450f9f-ef9c-4324-9cb8-3d22cc4dfe48",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "7f921830-3d85-459f-a195-73e1d5a58129",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature context and background claims (C1, C9-C19, C67-C72) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:13:08.955927Z"
+    }
+  ]
+}

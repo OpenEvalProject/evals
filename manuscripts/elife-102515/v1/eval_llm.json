@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "scRNA-seq analysis of NEPs from injured neonatal cerebella reveals a transient increase in ROS-related gene expression and stress response pathways at P2 (24 hours post-injury), which diminishes at later timepoints (P3+5). Gliogenic-NEPs show upregulation of genes associated with DNA damage, p53 pathway, and ROS metabolic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C51 collectively demonstrate through scRNA-seq data (Figure 1) that injury induces a transient transcriptional response in NEPs, particularly gliogenic-NEPs, with significant upregulation of ROS-related genes (Cdkn1a, Phlda3, Ass1, Bax) and enrichment of GO terms related to ROS signaling at P2. The temporal dynamics showing decline at P3+5 are well-documented. Statistical significance (adjusted p-value\u22640.05) and appropriate differential expression analysis support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Bulk ATAC-seq analysis reveals that injury induces major chromatin accessibility changes in NEPs at P2, with 1168 differentially open regions. These regions show enrichment for transcription factor binding motifs associated with ROS signaling (JUN/AP1, FOXO3) and include accessible regions near ROS-responsive genes Cdkn1a and Phlda3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by ATAC-seq data (Figure 1I-K) showing significant chromatin remodeling with statistical significance (adjusted p-value<0.05). The motif enrichment analysis provides mechanistic insight into ROS-mediated transcriptional regulation. The concordance between chromatin accessibility and gene expression (C53) strengthens the findings, though the authors note not all accessible regions correspond to differentially expressed genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Flow cytometry and TUNEL staining confirm a transient increase in ROS levels specifically at P2 (24 hours post-injury) that correlates temporally with peak GCP cell death in the EGL. ROS levels return to baseline by P3 and P5, and mitochondrial mass is reduced at P2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C56-C60 are well-supported by multiple orthogonal measurements (Figure 2): MitoSOX flow cytometry shows significant ROS increase at P2 (p=0.0005, n\u226510), TUNEL staining demonstrates peak cell death at P2 in EGL (p=0.0040, n=4), and MitoTracker shows reduced mitochondrial mass at P2 (p=0.0005, n\u226510). The temporal correlation between ROS spike and cell death is convincing. Appropriate statistical tests and sample sizes strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The mCAT transgenic mouse model, which ubiquitously expresses human mitochondrial catalase, successfully reduces the injury-induced ROS spike at P2 without affecting baseline ROS levels, GCP cell death, or microglial infiltration to the EGL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C67-C71, C99-C101 are supported by immunohistochemistry confirming mCAT expression (Figure 4A-B) and flow cytometry showing selective reduction of injury-induced ROS at P2 (p=0.0163, n\u22658) while maintaining baseline levels in nonIR conditions. The specificity of the effect (no change in cell death or microglia density at P2-P3) validates the model. However, the global nature of mCAT expression limits cell-type-specific interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Reduction of ROS in mCAT mice leads to impaired cerebellar regeneration, with significantly reduced cerebellar size at P30 compared to control IR mice. The growth defect becomes apparent by P12 and is significant by P30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C72-C75 demonstrate the functional consequence of ROS reduction through cerebellar area measurements (Figure 4G-L). The P30 size reduction is statistically significant (p=0.0040, n\u22656), and temporal analysis shows progressive divergence from controls starting at P12. This establishes ROS as functionally required for full regeneration. The long-term outcome measure strengthens causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "mCAT mice show impaired adaptive reprogramming at P5, with significantly reduced density of CFP+ cells (BgL-derived NEPs) in the EGL and reduced NEP density in the BgL compared to control IR mice. By P8, control mice recover EGL thickness while mCAT IR mice remain deficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by quantitative analysis (Figure 5) showing significant reductions in CFP+ cell density in EGL at P5 (p=0.0002, n=4) and NEP density in BgL (p=0.0010, n\u22655) in mCAT IR mice. The temporal dynamics (similar defects at P5, divergence by P8) indicate a specific disruption of the P5 replenishment step. The inference that BgL-NEPs have a 'blunted response' (C80) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C92"
+    ],
+    "result": "mCAT IR mice show reduced density of IBA1+ microglia/macrophages in the white matter at P5 compared to control IR mice, suggesting ROS influences microglial recruitment or expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C92 are supported by quantification showing significantly lower IBA1+ cell density in WM of mCAT IR mice at P5 (p=0.0012, n\u22653) (Figure 6A-F). This is consistent with literature showing ROS can trigger immune cell recruitment. However, the mechanism (recruitment vs. proliferation vs. survival) is not determined, and the effect is transient (not observed at P8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C93",
+      "C102",
+      "C103"
+    ],
+    "result": "Pharmacological depletion of microglia using PLX5622 reduces NEP recruitment to the EGL at P5 but does not affect EGL thickness at P5 or long-term cerebellar size at P30, suggesting microglia play a limited role in one step of adaptive reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C83-C88, C93, C102-C103 are supported by PLX treatment experiments (Figure 6) showing effective microglia depletion (p=0.0015 and p=0.0059), reduced CFP+ cell density in EGL at P5 (p=0.0008, n=5), but no change in EGL thickness at P5 or cerebellar area at P30. The lack of long-term effect despite acute defect suggests compensatory mechanisms. The conclusion of 'preliminary evidence' and 'limited role' is appropriately cautious. However, C86 showing unchanged SOX2+ cells in BgL suggests microglia don't affect NEP expansion, only migration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "GFAP expression in cerebellar astrocytes follows a specific developmental timeline, first appearing in white matter astrocytes at P2, then in IGL astrocytes and Bergmann glia at P5. Injury accelerates GFAP upregulation in all astrocyte populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by immunohistochemistry (Figure 3A-H) showing the temporal and spatial pattern of GFAP expression across development and after injury. The observation that injury causes premature upregulation is well-documented (n=4 mice/stage). This provides important context for understanding the neonatal glial response to injury.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Microglial density in the white matter increases between P2 and P3 during normal development and is maintained at P5. After injury, microglia density increases ~3-fold in the EGL at P2 but not at P3 or P5, with no change in WM density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by IBA1+ cell quantification (Figure 3I-N) showing developmental increase in WM microglia and injury-induced recruitment to EGL at P2 (p=0.0331, n=4). The spatial and temporal specificity of the microglial response is well-characterized. This establishes the microglial dynamics during the regenerative period.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C94",
+      "C104"
+    ],
+    "result": "A transient increase in ROS signaling after cerebellar injury is critical for adaptive reprogramming and full recovery of cerebellar growth, acting as a key stimulator of the NEP regenerative response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91, C94, C104 represent the main conclusions synthesizing the scRNA-seq, ATAC-seq, flow cytometry, and mCAT mouse data. The evidence collectively demonstrates: (1) transient ROS increase at P2, (2) transcriptional/epigenetic ROS response in NEPs, (3) impaired regeneration when ROS is reduced, and (4) specific defects in adaptive reprogramming steps. The causal link is established through the mCAT loss-of-function model. The conclusion is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C97"
+    ],
+    "result": "ROS likely acts as an alarm signal shortly after injury, and neonatal microglia may be anti-inflammatory and pro-regenerative in contrast to adult microglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90 and C97 are explicitly speculative interpretations ('likely', 'may be', 'perhaps') based on the timing of ROS increase and differences between neonatal and adult responses. While consistent with the data and supported by citations to adult brain injury literature, these remain hypotheses requiring direct testing. The authors appropriately present these as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C98"
+    ],
+    "result": "Neonatal astrocytes respond to injury differently than adult astrocytes, with delayed GFAP upregulation, and these differences in glial responses likely contribute to the permissiveness of the neonatal cerebellum to regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C98 are supported by the GFAP expression data (Figure 3) showing delayed upregulation compared to immediate adult response (cited from Burda and Sofroniew, 2014). The inference that these differences contribute to regenerative capacity is reasonable but not directly tested. The comparison to adult responses relies on literature rather than direct experimental comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The neonatal mouse cerebellum shows remarkable regenerative potential upon injury at birth, wherein BgL-NEPs undergo adaptive reprogramming through multiple sequential stages to replenish granule cell progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13, C32-C34 describe established knowledge from prior work (Wojcinski et al., 2017, Bayin et al., 2021, Bayin et al., 2018; Altman and Anderson, 1971) that provides the foundation for the current study. These are well-cited and form the basis for investigating the role of ROS in this regenerative process. This is background context rather than a novel finding of this manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2091 @@
+{
+  "submission": {
+    "id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:48:43.595437Z",
+    "updated_at": "2025-11-21T16:48:43.595437Z"
+  },
+  "content": [
+    {
+      "id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "content_type": "manuscript",
+      "content_text": "# Pu.1/Spi1 dosage controls the turnover and maintenance of microglia in zebrafish and mammals\n\n## Authors\n\n- Yi Wu<sup>1</sup> ([ORCID: 0000-0002-9907-9403](https://orcid.org/0000-0002-9907-9403))\n- Weilin Guo<sup>2</sup> ([ORCID: 0000-0001-6620-2762](https://orcid.org/0000-0001-6620-2762))\n- Haoyue Kuang<sup>3</sup> ([ORCID: 0000-0001-6843-1788](https://orcid.org/0000-0001-6843-1788))\n- Xiaohai Wu<sup>3</sup> ([ORCID: 0000-0002-2569-9239](https://orcid.org/0000-0002-2569-9239))\n- Thi Huong Trinh<sup>2</sup> ([ORCID: 0000-0002-8799-8760](https://orcid.org/0000-0002-8799-8760))\n- Yuexin Wang<sup>3</sup>\n- Shizheng Zhao<sup>1</sup> ([ORCID: 0000-0002-9859-7559](https://orcid.org/0000-0002-9859-7559))\n- Zilong Wen<sup>2</sup> ([ORCID: 0000-0002-4260-7682](https://orcid.org/0000-0002-4260-7682))\n- Tao Yu<sup>1</sup> ([ORCID: 0000-0001-6017-4852](https://orcid.org/0000-0001-6017-4852)) \u2020\n\n### Affiliations\n\n1. Biomedical Research Institute, Shenzhen Peking University-the Hong Kong University of Science and Technology Medical Center Shenzhen China ([ROR:03kkjyb15](https://ror.org/03kkjyb15))\n2. Division of Life Science, The Hong Kong University of Science and Technology Hong Kong China ([ROR:00q4vv597](https://ror.org/00q4vv597))\n3. Greater Bay Biomedical Innocenter, Shenzhen Bay Laboratory Shenzhen China ([ROR:00sdcjz77](https://ror.org/00sdcjz77))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicroglia are brain-resident macrophages playing pivotal roles in central nervous system (CNS) development and homeostasis. Yet, the cellular and molecular basis governing microglia maintenance remains largely unknown. Here, by utilizing a visible conditional knockout allele of pu.1/spi1b gene (the master regulator for microglia/macrophage lineage development) to generate mosaic microglia populations in adult zebrafish, we show that while pu.1-deficient microglia are immediately viable, they are less competitive, and chronically eliminated through Tp53-mediated cell competition. Interestingly, when conditionally inactivating Pu.1 in adult spi-b (the orthologue of mouse Spi-b) null mutants, microglia are rapidly depleted via apoptosis, suggesting that Pu.1 and Spi-b regulate microglia maintenance in a dosage-dependent manner. The dosage-dependent regulation of microglia maintenance by PU.1/SPI1 is evolutionarily conserved in mice, as shown by conditionally inactivating single and both Spi1 alleles in microglia, respectively. Collectively, our study reveals the conserved cellular and molecular mechanisms controlling microglia turnover and maintenance in teleosts and mammals.\n\n## Introduction\n\nMicroglia, the crucial immune cells residing in the central nervous system (CNS), have a profound impact on the maintenance of CNS homeostasis, as they not only function as scavengers to facilitate the removal of invading pathogens or damaged tissues, but also actively regulate neurogenesis, synaptic pruning and neuronal activity (Colonna and Butovsky, 2017; Gomez-Nicola and Perry, 2015). It is, therefore, not surprising that the dysfunction of microglia is closely linked with the occurrence and progression of many neurodegenerative disorders (Glass et al., 2010; Li et al., 2012; Prinz et al., 2011), thus making it a promising therapeutic target in the prevention and treatment of these diseases.\n\nIn mice, fate-mapping methods revealed that, unlike other glia cells with neuroectoderm origin, microglia in adults originate from yolk-sac (YS)-derived primitive macrophages, which colonize the developing brain rudiment during early embryogenesis (Ginhoux et al., 2010; Schulz et al., 2012). Whether microglia in adult mammals were contributed by monocyte-derived microglia precursors had long been a debate until the establishment of the parabiosis assay (Ajami et al., 2007). It is now well accepted that under physiological conditions, microglia in mice are maintained locally by self-renewal throughout the lifespan. In accordance with this concept, the microglia population was found to be rapidly reconstituted by resident cells after genetic or pharmacological ablation of microglia (Bruttger et al., 2015; Elmore et al., 2014). However, when estimating the physiological turnover rate of microglia via different methods such as 3H-thymidine/BrdU/EdU incorporation, Ki67 staining or two-photon live imaging, different studies yielded distinct or even contradictory results i.e., the estimated microglia turnover rate ranging from 0.13 to 0.8% (Askew et al., 2017; F\u00fcger et al., 2017; Lawson et al., 1992; Tay et al., 2017), which indicated that microglia in adult mice (~2 years lifespan) were either long-lived without replenishment or replenished for several times during the whole lifespan of the animals. Nonetheless, these studies have reached the consensus that in adult mice, all microglia have the proliferation capability and there are no putative microglia precursors existing to proliferate asymmetrically and continuously to contribute to the microglia pool. Moreover, microglia proliferation had been shown to be spatially and temporally coupled with apoptosis to maintain the homeostasis of their population (Askew et al., 2017), which indicates that not only proliferating microglia locate near the dying microglia, but also newborn microglia manifest a higher frequency of apoptosis. However, whether this phenomenon is for the quality control of microglia or has any other physiological relevance remains unclear. In addition, as a fraction of newborn microglia underwent apoptosis and did not contribute to microglia homeostasis, previously calculated proliferation rates might potentially overestimate the true turnover rate of microglia. Collectively, although these studies give some insights into the understanding of microglia turnover and maintenance, our knowledge about the underlying cellular and molecular mechanisms are still limited.\n\nPU.1 (encoded by the SPI1 gene), the founding member of the spleen focus forming virus proviral integration oncogene (SPI) subfamily of the E-twenty six (ETS) family transcription factor, is one of the best-characterized regulators governing the development of macrophage lineage (McKercher et al., 1996; Scott et al., 1994). Disruption of PU.1 in mice causes early lethality of the embryos and complete absence of macrophages (McKercher et al., 1996; Scott et al., 1994), including microglia in the brain (Kierdorf et al., 2013). Interestingly, the SPI1 expression level was found to remain at a high level in microglia after their terminal differentiation (Walton et al., 2000), implying that PU.1 also regulates the cellular behaviors and functions of microglia in the sophisticated CNS environment. Indeed, Chromatin immunoprecipitation (ChIP)-Seq analysis with microglia cell line BV2 cells revealed thousands of PU.1 targets (Satoh et al., 2014). Accordingly, silencing of PU.1 by siRNA in mixed human glial culture led to the reduced viability of microglia and decreased phagocytosis of amyloid-beta (A\u03b242) (Smith et al., 2013). However, as a previous study reported that inactivating either 1 copy or 2 copies of SPI1 by fusing PU.1 with cytoplasm-retaining estrogen receptor (ER) had no effect on the viability of alveolar macrophages (Karpurapu et al., 2011), whether PU.1 indeed regulated the survival and maintenance of microglia in the in-vivo conditions remained to be further investigated. Moreover, human SNPs that altered SPI1 expression level were reported to be associated with Alzheimer\u2019s disease (AD) pathogenesis (Cao et al., 2022; Huang et al., 2017). A recent study showed that conditional inactivation or pharmacological inhibition of PU.1 in the AD mouse model ameliorated neuroinflammation, prevented microgliosis, and improved cognitive performance (Ralvenius et al., 2023). Although the reduction of microglia number was considered as a result of the amelioration of neuroinflammation, whether PU.1 directly regulated microglia survival and maintenance to prevent the propagation of neuroinflammation in diseased conditions deserves to be carefully revisited. SPI-B, another member in the mammalian SPI subfamily, has been shown to be dispensable for the development of the macrophage lineage (Su et al., 1997). Yet, its involvement in the regulation of microglia turnover and maintenance remains to be investigated.\n\nOwing to the genetic amenability and the feasibility for live imaging and lineage tracing, zebrafish has been adopted as an ideal model for the study of microglia development and function (Hughes and Appel, 2020; Iyer et al., 2022; Li et al., 2012; Peri and N\u00fcsslein-Volhard, 2008). Zebrafish microglia are highly conserved with their mammalian counterparts in terms of morphology, molecular signatures, development-regulatory genetic networks, as well as functions (Xu et al., 2015; Yu et al., 2017). Different from the single origin of mouse microglia, zebrafish microglia were shown to arise from two distinct sources, i.e., the rostral blood island (RBI), equivalent of mouse YS for primitive myelopoiesis, and the aorta-gonad-mesonephros (AGM) region for hematopoietic stem cell (HSC) initiation. The RBI microglia colonize the developing brain during early embryogenesis, but are gradually replenished by AGM adult microglia (Xu et al., 2015). Further study revealed that this dynamic shift of microglia pool is controlled by Il34-Csf1ra signaling-dictated cell competition (Yu et al., 2023). Yet, when the microglia pool is established in adult zebrafish, the molecular mechanisms underlying their turnover and maintenance remain incompletely understood. Moreover, although Pu.1 (also called Spi1b in zebrafish, Ensembl:ENSDARG00000000767) and its paralogue Spi-b (also called Spi1a, Ensembl:ENSDARG00000067797), the zebrafish orthologues of mammalian PU.1 and SPI-B, were shown to be indispensable for microglia early development of both origins in zebrafish (Xu et al., 2015; Yu et al., 2017), their functions in the survival and maintenance of microglia in adult animals have not been established.\n\nIn the present study, via the condition knockout strategy to generate a mosaic microglia population in adult zebrafish and mice, we revealed that the turnover and maintenance of microglia is evolutionarily conserved and regulated by Pu.1/Spi1 dosage from teleosts to mammals.\n\n## Results\n\n### Adult microglia in zebrafish undergo rapid turnover and random proliferation to replenish and maintain their pool\n\nPrevious studies have shown that there are two major subtypes of myeloid cells, i.e., ccl34b.1+ + and ccl34b.1-ccl19a.1+ brain-resident dendritic cells (+) in adult zebrafish brain (Wu et al., 2020; Zhou et al., 2023). To monitor the turnover and maintenance of microglia in adult zebrafish brain, we employed the microglia-specific TgBAC(ccl34b.1:eGFP) transgenic reporter line (Wu et al., 2020) and performed EdU pulse-chase experiment, a similar strategy with that in the mouse to determine microglia turnover (Askew et al., 2017; Tay et al., 2017). As a single dose of EdU injection might under-estimate the microglia turnover rate, we intraperitoneally injected EdU into adult TgBAC(ccl34b.1:eGFP) fish for either 1, 3, or 5 consecutive days. We then collected the fish brain at 1 day post-injection (dpi) for cryosection and co-staining of eGFP, Lcp1 (a pan leukocyte marker expressed in both microglia and DCs), EdU, and DAPI, in which ccl34b.1-eGFP+Lcp1+ cells are microglia and ccl34b.1-eGFP-Lcp1+ cells represent DCs (Figure 1A). Quantification results showed that, while a single dose of EdU pulse labeled 1.892 \u00b1 0.234% microglia, the EdU incorporation rate for microglia after three or five doses of EdU pulses increased almost linearly (Figure 1B, green bars). Based on these data, the estimated microglia turnover rate (daily) is ~2.6% (total EdU incorporation rate divided by the times of EdU-pulses) (Figure 1C, green bars). On the other hand, the EdU incorporation rate for the DCs was much lower (Figure 1B\u2013C, red bars), suggesting that the DCs in the brain are relatively steady with a very low turnover rate.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram shows the workflow of EdU pulse experiment in adult TgBAC(ccl34b.1:eGFP) zebrafish and the representative images of proliferating microglia (ccl34b.1-eGFP+ Lcp1+EdU+) and dendritic cells (DCs) (ccl34b.1-eGFP-Lcp1+EdU+) in the midbrain. (B) Quantification of the EdU incorporation proportions in microglia and dendritic cells (DCs) with different dosages of EdU pulses. (n=4 for each group) (C) The daily turnover rate of microglia and DCs was calculated by dividing the EdU incorporation rate with EdU pulses. (D) Schematic diagram shows the experimental setup for EdU-BrdU double-pulse in adult wild-type fish and the representative images show two BrdU+ microglia with or without EdU incorporation. (E) Comparison of BrdU incorporation proportions in EdU+eGFP+ and EdU-eGFP+ microglia (n=6). n.s.=not significant, p>0.05.\n\nPreviously, via the EdU/BrdU dual-pulse assay, Tay et al., 2017 have shown that microglia in adult mouse brain proliferate randomly during homeostasis and no putative microglia precursors have been identified accordingly. To clarify whether there might be putative microglial precursors that continuously proliferate to contribute to microglia turnover in zebrafish, we employed a similar strategy, in which adult wild-type (WT) fish were injected with a single dose of EdU followed with five daily BrdU pulses to determine the BrdU proliferation rate of EdU+ and EdU- microglia (Figure 1D, upper panel). Quantification results showed that the BrdU incorporation rates were comparable between EdU+ and EdU- microglia pools (Figure 1D\u2013E). These data strongly suggest that, similar to mammals (Tay et al., 2017), microglia in adult zebrafish randomly undergo proliferation and there are no well-defined microglial precursors that continuously proliferate to replenish and maintain the microglia pool.\n\n### Generation and characterization of the visible conditional knockout allele pu.1KI\n\nTo elucidate the molecular mechanisms underlying microglia turnover and maintenance, we focused on the Ets family transcription factor PU.1/SPI1, which had been shown to be a master regulator for macrophage/microglia development in fish and mammals (McKercher et al., 1996; Scott et al., 1994; Yu et al., 2017). Because macrophages/microglia development is completely blocked at early development in pu.1-null zebrafish mutants (Yu et al., 2017), we decided to generate a visible pu.1 conditional knockout allele pu.1KI to study the role of Pu.1 in microglia maintenance via the Non-homologous end joining (NHEJ)-mediated knock-in method (Figure 2A, Figure 2\u2014figure supplement 1A; Li et al., 2015). As shown in Figure 2A, the knock-in DNA fragment consisted of loxP, pu.1 exon 4\u20136 followed by the self-cleaving P2A sequence-conjugated eGFP, and a splicing-acceptor site SpA2 followed by the P2A-DsRed. In addition, the 3\u2019 downstream sequence of the pu.1 gene (gray box) was added to the 3\u2019 end of each fluorescent protein to ensure efficient termination of RNA transcription and proper expression of the fluorescent proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic diagrams show the generation of pu.1KI allele and the principle for pu.1 visible conditional knockout. Briefly, the donor plasmid, which contains: (1) the sgRNA target sequence in pu.1 intron 3~4; (2) the loxP-flanked pu.1 coding sequence (exon 4-6) followed by P2A-eGFP; (3) the splicing acceptor site followed by P2A-DsRed sequence was knocked into the endogenous pu.1 locus via non-homologous end joining (NHEJ) to generate pu.1KI. In principle, the splicing event occurring between E3 and E4 in pu.1KI would produce intact Pu.1 and eGFP concurrently. After Cre-mediated recombination, removal of pu.1 E4-6 and splicing of P2A-DsRed sequence in pu.1CKO allele leads to the disruption of Pu.1 and fluorescent color change. (B) Co-staining of anti-eGFP and anti-Pu.1 antibodies on the yolk sac (YS) of 21-hpf pu.1KI embryos. (C) Fluorescent imaging of the optic tectum (OT) region of 3-dpf pu.1KI;Tg(mpeg1:LRLG) embryos. (D) Co-staining of anti-eGFP and anti-Lcp1 antibodies on the midbrain cross section of adult pu.1KI fish. (E) Neutral red staining of pu.1KI/+ and pu.1KI/\u0394839 embryos at 3 dpf. (F) Quantification of NR+ microglia in pu.1KI/+ (n=13) and pu.1 KI/\u0394839 (n=9) embryos at 3 dpf. (G) Fluorescent imaging of the YS region of 30-hpf pu.1KI/CKO embryos. (H) Chromogram of cDNA sequence from wildtype and pu.1CKO embryos shows the precise splicing of pu.1 E4 and P2A-DsRed cassette to pu.1 E3. (I) Neutral red staining of pu.1CKO/+ and pu.1CKO/\u0394839 embryos at 3 dpf. (J) Quantification of NR+ microglia in pu.1CKO/+ (n=8) and pu.1CKO/\u0394839 embryos at 3 dpf (n=14). n.s.=not significant, p>0.05; ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Summary of the efficiency for the generation and screening of pu.1KI. (B) Gel image shows the amplified 5\u2018- and 3\u2019-junction of the donor plasmid integration site in pu.1KI allele. (C) Summary of the genomic DNA sequences of the 5\u2019- and 3\u2019-junction in pu.1KI allele from different F0 founders. (D) Quantitative RT-PCR shows the relative expression of DsRed and pu.1 from pu.1CKO allele.\n\nThree different founders were obtained. PCR and deep sequencing analysis of F1 embryos confirmed the correct integration of donor DNA fragment in the pu.1 locus (Figure 2\u2014figure supplement 1B\u2013C). Since the knock-in pu.1KI allele would generate intact Pu.1 and eGFP concurrently (Figure 2A), we predicted the expression pattern of eGFP, which presumably represents the expression of the knock-in Pu.1, should completely overlap with the endogenous Pu.1. Indeed, co-staining of eGFP and Pu.1 antibodies revealed a perfect overlap of the eGFP+ cells and Pu.1+ cells in pu.1KI/+ embryos (Figure 2B), suggesting that the pu.1KI allele recapitulates the expression of endogenous pu.1. Further studies suggested that pu.1KI-eGFP efficiently labels embryonic microglia, and both microglia and DCs in adult, as revealed by the co-localization of pu.1KI-eGFP and macrophage-specific reporter line Tg(mpeg1:LRLG) at 3 dpf, and by the co-staining of eGFP and Lcp1 antibodies on the brain sections of adult pu.1KI/+ fish, respectively (Figure 2C and D). To further confirm functional intactness of the pu.1KI allele, we crossed the pu.1KI fish with the pu.1\u0394839 mutants to examine if the pu.1KI allele is capable of rescuing the microglia phenotype. Indeed, quantification of microglia number revealed no difference between the pu.1\u0394839/KI and pu.1\u0394839/+ embryos (Figure 2E and F), indicating that the pu.1KI allele functionally recapitulates the endogenous pu.1.\n\nTo test whether the Cre-mediated excision occurs correctly in the pu.1KI allele, we injected Cre mRNA into the pu.1KI embryos at one-cell stage. The injected embryos were raised to adulthood (pu.1CKO fish) and crossed with the pu.1KI fish to generate pu.1CKO/KI fish. As illustrated in Figure 2A, the Cre-mediated excision should remove the E4-6-P2A-eGFP cassette and allow the proper splicing of the splicing-acceptor site SpA2 and joining of the P2A-DsRed with exon 3 (Figure 2A), leading to the induction of DsRed expression. Indeed, fluorescent imaging of the pu.1CKO/KI embryos revealed robust DsRed (pu.1CKO allele) signals perfectly overlapping with the eGFP (pu.1KI allele) signals (Figure 2G), suggesting the correct DNA excision and RNA splicing in the pu.1CKO allele. This conclusion was further validated by sequencing analysis of the pu.1CKO transcripts (Figure 2H). Since the endogenous pu.1 exons were not replaced, but instead they were separated far away from the upstream exons by donor plasmid, we performed quantitative RT-PCR analysis of pu.1CKO/CKO embryos to determine the possible expression of the endogenous pu.1 exons in pu.1CKO allele. The result showed that the relative expression of endogenous pu.1 exons is around 1\u20132% in comparison with that of DsRed expression (Figure 2\u2014figure supplement 1D), suggesting that expression of pu.1 is largely abolished in pu.1CKO allele. To phenotypically characterize pu.1CKO allele, and to avoid incomplete inactivation of Pu.1 function in downstream microglia tracing experiments, which may occur when using two pu.1KI alleles due to the lower CreER recombination efficiency in zebrafish compared to mice, we outcrossed the pu.1CKO fish with the pu.1\u0394839 null mutants. As anticipated, the development of embryonic microglia was completely blocked in the pu.1CKO/\u0394839 embryos (Figure 2I and J), a phenotype recapitulating the defect of the pu.1\u0394839 homozygous mutants (Yu et al., 2017). These data demonstrate that the pu.1KI allele works very well and serves as a useful tool to explore the role of Pu.1 in adult microglia survival and maintenance.\n\n### Pu.1 and Spi-b regulate the turnover and maintenance of microglia in a dosage-dependent manner\n\nTo investigate the role of Pu.1 in the survival and maintenance of microglia in adult zebrafish, we crossed the pu.1KI fish with the leukocyte-specific Tg(coro1a:CreER) line and the pu.1\u0394839 mutants to generate pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish. We then intraperitoneally injected three doses of 4-OHT into these adult fish and collected the brain samples at 2 dpi and 8 dpi for the quantification of microglia number after cryo-section and eGFP/DsRed immuno-staining (Figure 3A, upper panel). As shown in Figure 3A (lower panel), DsRed+ cells were readily detected in the brains of both pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 8 dpi. Quantification of the number and proportion of DsRed+ cells at 2 dpi and 8 dpi revealed no difference between pu.1KI/\u0394839;Tg(coro1a:CreER) mutant fish and pu.1KI/+;Tg(coro1a:CreER) control siblings (Figure 3B\u2013C). Similarly, conditional knockout of pu.1 in embryonic microglia also showed no effect on microglial survival (Figure 3\u2014figure supplement 1), which contrasts to the elimination of microglia during early development by global knockout of pu.1 due to Pu.1\u2019s essential role in myeloid lineage specification. In addition, we also found that the number and proportion of microglia (ccl34b.1-eGFP+ Lcp1+) and DCs (ccl34b.1-eGFP-Lcp1+) were comparable between pu.1\u0394839/\u0394839;TgBAC(ccl34b.1:eGFP) null mutants and pu.1\u0394839/+;TgBAC(ccl34b.1:eGFP) siblings (Figure 3\u2014figure supplement 2). These data suggest that Pu.1 is not required for the survival of microglia and DCs. We reasoned that the survival of pu.1-deficient microglia is likely attributed to the presence of spi-b (the paralogue of pu.1 in zebrafish, also called spi1a), which has been shown to play a compensatory role for Pu.1 in microglia early development (Yu et al., 2017). Indeed, conditional inactivation of Pu.1 in the spi-b\u0394232/\u0394232 null mutants led to a rapid depletion of microglia by apoptosis within several days (Figure 3\u2014figure supplements 3 and 4), indicating that Pu.1 and Spi-b act redundantly to regulate the survival of microglia.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig3-v1.jpg)\n\n**Figure 3.:** (A) The experimental setup for pu.1 conditional knockout in adult zebrafish and the representative images of midbrain cross section of pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 8 days post 4-OHT injection (dpi). (B) Quantification of the number of DsRed+ microglia on the midbrain cross section of pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 2 dpi (n=3) and 8 dpi (n=4). (C) Quantification of the proportion of DsRed+ microglia on the midbrain cross section of pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 2 dpi (n=3) and 8 dpi (n=4). (D) The experimental setup for pu.1 conditional knockout in adult zebrafish and the representative images of midbrain cross section of pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 3 months post 4-OHT injection (mpi). (E) Quantification of the number of DsRed+ microglia on the midbrain cross section of pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 1 mpi (n=3) and 3 mpi (n=4). (F) Quantification of the proportion of DsRed+ microglia on the midbrain cross section of pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 1 mpi (n=3) and 3 mpi (n=4). n.s.=not significant, p>0.05; **p<0.01; ****p<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematics of 4-OHT treatment for pu.1KI/WT Tg(coro1a:CreER) and pu.1KI/\u0394839 Tg(coro1a:CreER) at embryonic stage. (B) Representative images of DsRed+ microglia in pu.1KI/WT and pu.1KI/\u0394839 at 5 dpf.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative images show the co-staining of eGFP and Lcp1 antibodies on the midbrain cross section of adult pu.1\u0394839/+;TgBAC(ccl34b.1:eGFP) and pu.1\u0394839/\u0394839;TgBAC(ccl34b.1:eGFP) fish. eGFP+ cells represent microglia, whereas eGFP-Lcp1+ cells are dendritic cells (DCs). (B) Quantification of the number of eGFP+ microglia and eGFP-Lcp1+ DCs on the midbrain cross section of adult pu.1\u0394839/+;TgBAC(ccl34b.1:eGFP) (n=6) and pu.1\u0394839/\u0394839;TgBAC(ccl34b.1:eGFP) (n=5) fish. n.s.=not significant, p>0.05.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) The experimental setup for pu.1 conditional knockout in adult spi-b\u0394232/\u0394232 mutants and the representative images of the midbrain cross section of adult pu.1KI/+;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) and pu.1KI/\u0394839;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) fish at 2 dpi and 8 dpi. The white arrow indicates microglia with blebbing morphology. (B\u2013C) Quantification of the number (B) and percentage (C) of DsRed+ microglia in adult pu.1KI/+;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) and pu.1KI/\u0394839;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) fish at 2 and 8 dpi (n=3 for all groups). (D) The experimental setup for pu.1 conditional knockout in spi-b\u0394232/\u0394232 mutant embryos and the representative images show the DsRed +microglia in pu.1KI/+;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) and pu.1KI/\u0394839;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) embryos at 3 and 5 dpf. (E) Quantification of the number of DsRed +microglia in pu.1KI/+;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) and pu.1KI/\u0394839;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) embryos at 3 and 5 dpf after 4-OHT treatment from 48 to 60 hpf. (pu.1KI/+;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) n=4 and 6 for 3 and 5 dpf, respectively. pu.1KI/\u0394839;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) n=8 for both 3 and 5 dpf) n.s.=not significant, p>0.05;***p<0.001;****p<0.0001.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Time-lapse live imaging shows the blebbing and fragmentation of DsRed+ microglia between 3 dpf and 5 dpf in pu.1KI/\u0394839;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) embryos treated with 4-OHT from 48 hpf to 60 hpf. The blue arrows indicate the formation of apoptotic cell bodies. (B) Fluorescent live imaging of Annexin V, DsRed and eGFP signals in 4-dpf pu.1KI/+;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) and pu.1KI/\u0394839;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) embryos treated with 4-OHT from 48 hpf to 60 hpf and subjected to brain injection of Annexin V-647. (C) Quantification of DsRed+Annexin+ microglia in (B). (pu.1KI/+;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) n=11, pu.1KI/\u0394839;spi-b\u0394232/\u0394232;Tg(coro1a:CreER) n=12) ***p<0.001.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Representative images of the retina cross section of adult pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 3 mpi. (B) Quantification of the percentage of DsRed+ microglia in the retina of adult pu.1KI/+;Tg(coro1a:CreER) (n=4) and pu.1KI/\u0394839;Tg(coro1a:CreER) (n=4) fish at 3 mpi. (C) Representative images of the spinal cord cross section of adult pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 3 mpi. (D) Quantification of the percentage of DsRed+ microglia in the spinal cord of adult pu.1KI/+;Tg(coro1a:CreER) (n=4) and pu.1KI/\u0394839;Tg(coro1a:CreER) (n=4) fish at 3 mpi. **p<0.01; ****p<0.0001.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) Representative images showing different morphology of microglia (ccl34b.1-eGFP+Lcp1+) and DCs (ccl34b.1-eGFP-Lcp1+) in two midbrain regions of TgBAC(ccl34b.1:eGFP) fish. The amoeboid and ramified cells were indicated accordingly. (B) Quantification of the proportion of microglia (ccl34b.1-eGFP+Lcp1+) (n=3) and DCs (n=3) (ccl34b.1-eGFP-Lcp1+) in total amoeboid and ramified Lcp1+ cells in the midbrain of TgBAC(ccl34b.1:eGFP) fish. (C) Quantification of the number of DsRed+ microglia and dendritic cells (DCs) on the midbrain cross section of pu.1KI/+;Tg(coro1a:CreER) (n=4) and pu.1KI/\u0394839;Tg(coro1a:CreER) (n=4) fish at 3 mpi by amoeboid and ramified morphologies. (D) Quantification of the proportion of DsRed+ microglia and DCs on the midbrain cross section of pu.1KI/+;Tg(coro1a:CreER) (n=4) and pu.1KI/\u0394839;Tg(coro1a:CreER) (n=4) fish at 3 mpi by amoeboid and ramified morphologies. **p<0.01; ***p<0.001;****p<0.0001.\n\nTo further investigate whether Pu.1 deficiency might have a long-term effect on the turnover and maintenance of microglia, we traced pu.1-deficient DsRed+ cells to 1 month post-injection (mpi), and 3 mpi after conditionally inactivating Pu.1 in adult pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish (Figure 3D, upper panel). Intriguingly, we found that the number and proportion of DsRed+ cells in the midbrains of the pu.1KI/\u0394839;Tg(coro1a:CreER) fish began to decline at 1 mpi and were further reduced, becoming significantly lower than that in pu.1KI/+;Tg(coro1a:CreER) fish by 3 mpi (Figure 3E\u2013F). Likewise, the number and proportion of DsRed+ cells in the retina and spinal cord were also significantly reduced in the pu.1KI/\u0394839;Tg(coro1a:CreER) fish by 3 mpi (Figure 3\u2014figure supplement 5). Since microglia are the major population of the coro1a+ cells in the brain and spinal cord and the exclusive population in the retina (Wu et al., 2020), the reduction of DsRed+ cells in the pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 1 mpi and 3 mpi are mainly attributed to the loss of microglia. Based on the amoeboid and ramified morphology, microglia and DCs could be distinguished with about 90% accuracy (Figure 3\u2014figure supplement 6A\u2013B). Thus, to further confirm above conclusion, we quantified microglia and DCs separately in 3-mpi pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish. As anticipated, pu.1-deficient microglia were significantly reduced at 3 mpi (Figure 3\u2014figure supplement 6C\u2013D). These results suggest that, although pu.1 is dispensable for the immediate survival of microglia (Figure 3B\u2013C), it is essential for the turnover and long-term maintenance of microglia in adult zebrafish, which could not be fully compensated by spi-b.\n\n### pu.1-deficient microglia in mosaic condition were eliminated by cell competition\n\nGiven the fact that pu.1-deficient microglia are gradually eliminated in mosaic condition (Figure 3E\u2013F), but their number remains relatively normal in pu.1\u0394839 null mutants (Yu et al., 2017), we reasoned that the elimination of the pu.1-deficient microglia in mosaic condition is likely attributed to the cell competition between pu.1-deficient DsRed+ microglia and their neighboring eGFP+ sibling cells harboring WT pu.1. To test this hypothesis, we compared the cell death and proliferation rates of microglia by TUNEL and BrdU incorporation assays in both conditions, respectively. To determine the cell death and proliferation rates of pu.1-deficient microglia in mosaic condition, we treated the adult pu.1KI/\u0394839;Tg(coro1a:CreER) fish with 4-OHT to inactivate Pu.1. At 26 dpi, the 4-OHT-treated fish were then injected with five doses (one dose daily) of BrdU and the brain samples were collected 1 day later for TUNEL and BrdU staining, respectively (Figure 4A). Quantification results showed that the percentage of TUNEL+DsRed+ microglia (pu.1-deficient cells) in the brains of the pu.1KI/\u0394839;Tg(coro1a:CreER) fish was significantly higher than that of TUNEL+eGFP+ cells (Figure 4B). In this assay, the 4-OHT-treated pu.1KI/+;Tg(coro1a:CreER) fish were included as the control, and as expected, the percentages of TUNEL+ cells in the DsRed+ and eGFP+ microglia pools in control fish were comparable (Figure 4B). In parallel, we also found that the BrdU incorporation rates of pu.1-deficient microglia (DsRed+) in the 4-OHT-treated pu.1KI/\u0394839;Tg(coro1a:CreER) fish was significantly lower than that of eGFP+ cells (Figure 4C), while the BrdU incorporation rates of DsRed+ cells and eGFP+ cells in the control pu.1KI/+;Tg(coro1a:CreER) fish was comparable (Figure 4C). These results indicate that conditional inactivation of Pu.1 in adult zebrafish leads to the impairment of cell proliferation and accelerated cell death of microglia in mosaic condition. To estimate the cell death and proliferation rates of microglia in pu.1-null mutants, we utilized a similar strategy via pulsing the adult pu.1\u0394839/+;TgBAC(ccl34b.1:eGFP) or pu.1\u0394839/\u0394839;TgBAC(ccl34b.1:eGFP) fish with five doses of BrdU (daily) and collecting the brain samples at 1 day later for TUNEL and BrdU staining, respectively (Figure 4D). As shown in Figure 4E, the percentage of TUNEL+ccl34b.1-eGFP+ microglia showed no difference between pu.1\u0394839/\u0394839 mutants and pu.1\u0394839/+ siblings, demonstrating that the intrinsic viability of pu.1-deficient microglia in the null mutants was largely unaffected. Similarly, the proliferation capability (as indicated by BrdU incorporation rate) of pu.1-deficient microglia in the null mutants remained normal as well in comparison with control siblings (Figure 4F). Collectively, these results strongly suggest that the chronic elimination of pu.1-deficient DsRed+ microglia is indeed caused by cell competition, which only occurs in the mosaic condition when the eGFP+ microglia harboring a single copy of pu.1 are present.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig4-v1.jpg)\n\n**Figure 4.:** (A) The experimental setup for BrdU incorporation and TUNEL assays in adult pu.1KI/+;Tg(coro1a:CreER) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 1 mpi. (B) Quantification of the percentage of TUNEL+ cells in eGFP+ and DsRed+ microglia in pu.1KI/+;Tg(coro1a:CreER) (n=4) and pu.1KI/\u0394839;Tg(coro1a:CreER) (n=5) fish at 1 mpi. (C) Quantification of the percentage of BrdU+ cells in eGFP+ and DsRed+ microglia in adult pu.1KI/+;Tg(coro1a:CreER) (n=4) and pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 1 mpi. (D) The experimental setup for BrdU incorporation and TUNEL assays in adult pu.1\u0394839/+;TgBAC(ccl34b.1:eGFP) and pu.1\u0394839/\u0394839;TgBAC(ccl34b.1:eGFP) fish. (E) Quantification of the percentage of TUNEL+eGFP+ microglia in adult pu.1\u0394839/+;TgBAC(ccl34b.1:eGFP) and pu.1\u0394839/\u0394839;TgBAC(ccl34b.1:eGFP) fish. (F) Quantification of the percentage of BrdU+eGFP+ microglia in adult pu.1\u0394839/+;TgBAC(ccl34b.1:eGFP) (n=6) and pu.1\u0394839/\u0394839;TgBAC(ccl34b.1:eGFP) (n=5) fish. n.s.=not significant, p>0.05; *p<0.05; **p<0.01.\n\n### The out-competition of pu.1-deficient microglia in mosaic condition is mediated by Tp53\n\nTo uncover the key downstream targets that mediate the out-competition of pu.1-deficient DsRed+ microglia in mosaic condition, we manually picked DsRed+ and eGFP+ microglia from the 4-OHT-treated pu.1KI/\u0394839;Tg(coro1a:CreER) fish at 3 mpi and performed transcriptomic analysis (Figure 5A). To minimize the contamination of DCs, we manually picked 3\u20135 DsRed+ or eGFP+ cells from the brain suspension of 3-mpi pu.1KI/\u0394839;Tg(coro1a:CreER) fish in each tube for cDNA library construction and RNAseq. Samples with strong expression of microglia-related genes and faint DC-related genes were chosen for further analysis (Figure 5\u2014figure supplement 1A). Among the differentially expressed genes (DEGs), the tumor suppressor gene tp53 was one of the top-targeted genes robustly upregulated in pu.1-deficient DsRed+ microglia (Figure 5B-C, Figure 5\u2014figure supplement 1B). Interestingly, recent studies have revealed that, in addition to regulating cell cycle arrest and apoptosis in DNA damage response (Ou and Schumacher, 2018; Vaddavalli and Schumacher, 2022), Tp53 is also involved in cell competition regulation in both hematopoietic and non-hemopoietic tissues (Bondar and Medzhitov, 2010; Zhang et al., 2017). Hence, we speculated that the cell competition-mediated chronic elimination of pu.1-deficient microglia was likely dependent on Tp53. To support this hypothesis, we conditionally inactivated Pu.1 to generate mosaic microglia populations in the tp53-deficient mutant background and asked if loss of Tp53 could rescue the microglia phenotype (Figure 5D, upper panel). Indeed, results showed that the number of pu.1-deficient DsRed+ microglia in the 4-OHT-treated pu.1KI/\u0394839;tp53-/-;Tg(coro1a:CreER) fish was significantly restored compared with pu.1KI/\u0394839;Tg(coro1a:CreER) control fish (Figure 5D\u2013F). Collectively, these results demonstrate that the chronic elimination of pu.1-deficient microglia in mosaic condition is mediated, at least in part, by the elevation of Tp53 activity, which leads to the reduced proliferation and excessive death of these microglia.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig5-v1.jpg)\n\n**Figure 5.:** (A) The experimental setup for the isolation of eGFP+ and DsRed+ microglia from pu.1KI/\u0394839;Tg(coro1a:CreER) adult brain at 3 mpi for transcriptomic analysis. (B) The volcano plot of differentially expressed genes (DEG) between eGFP+ and DsRed+ microglia at 3 mpi. (C) Relative expression of tp53 in eGFP+ (n=3) and DsRed+ (n=3) microglia at 3 mpi by transcripts per million (TPM). (D) The experimental setup for pu.1 conditional knockout in wild-type and tp53-/- adult zebrafish, and the representative images of midbrain cross section of pu.1KI/\u0394839;Tg(coro1a:CreER) and pu.1KI/\u0394839;tp53-/-;Tg(coro1a:CreER) fish at 3 mpi. (E) Quantification of the number of DsRed+, eGFP+, and total (DsRed + eGFP) microglia in pu.1KI/\u0394839;Tg(coro1a:CreER) (n=7) and pu.1KI/\u0394839;tp53-/-;Tg(coro1a:CreER) (n=6) fish at 3 mpi. (F) Quantification of the proportion of DsRed+ microglia in pu.1KI/\u0394839;Tg(coro1a:CreER) (n=7) and pu.1KI/\u0394839;tp53-/-;Tg(coro1a:CreER) (n=6) fish at 90 dpi. n.s.=not significant, p>0.05; *p<0.05.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Relative expression of ccl34b.1 normalized by ccl19a.1 in the picked samples for RNA-seq analysis. (B) Transcripts per million (TPM) heatmap of the top 50 differentially expressed genes in eGFP+ and Dsred+ microglia. Values in the heatmap are centered and scaled in the row direction. The red color represents high expression, while the blue color represents low expression.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Three Pu.1 binding sites (GAGGAA) located on the antisense strand from position \u20131423 to \u20131418, \u20131098 to \u20131093, and \u20131047 to \u20131042 relative to the transcriptional start site of tp53 were indicated by red box.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Relative expression of csf1ra in eGFP+ (n=3) and DsRed+ (n=3) microglia at 3 mpi by transcripts per million (TPM).\n\n### Dosage-dependent regulation of microglia maintenance by PU.1 is evolutionarily conserved from zebrafish to mice\n\nThe above data have demonstrated that the long-term maintenance of microglia in adult zebrafish is regulated by Pu.1 in a dosage-dependent manner. We next wondered whether this mechanism is evolutionarily conserved from teleosts to mammals. To address this issue, we first examined the expression of Spi1/Pu.1 (Ensembl: ENSMUSG00000002111) and Spi-b (Ensembl: ENSMUSG00000008193) in adult murine microglia. Quantitative RT-PCR revealed that in contrast to the robust expression of Spi1, Spi-b was barely detectable in microglia (Figure 6\u2014figure supplement 1A). It appears that Spi-b has acquired lineage-specific roles during evolution and becomes absent in murine microglia. We, therefore, only focused on Spi1 and generated a Spi1Fl allele, in which the exon 2 of Spi1 gene is flanked by loxP (Figure 6\u2014figure supplement 1B\u2013C). The Spi1Fl mice were then crossed with the Cx3cr1CreER-YFP strain (referred to as Cx3cr1CreER hereafter) (Yona et al., 2013) to generate Spi1Fl/+;Cx3cr1CreER and Spi1Fl/Fl;Cx3cr1CreER mice for conditional PU.1 inactivation study (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig6-v1.jpg)\n\n**Figure 6.:** (A) The experimental setup for Spi1 conditional knockout in adult mice. (B) Representative images of IBA1 and DAPI co-staining in the cortex, hippocampus, and thalamus of Spi1Fl/+;Cx3cr1CreER and Spi1Fl/Fl;Cx3cr1CreER mice at 7 dpi. (C) Quantification of the density of IBA1+ microglia in the cortex, hippocampus, and thalamus of Spi1Fl/+;Cx3cr1CreER (n=3) and Spi1Fl/Fl;Cx3cr1CreER (n=3) mice at 7 dpi. (D) The experimental setup for conditional knockout of Spi1 in Spi1Fl/+;Cx3cr1CreER mice, and the subsequent PCR detection and T-clone quantification of Spi1Fl and Spi1KO alleles in sorted YFP+ microglia. (E) Gel image shows the relative intensity of amplified DNA bands of Spi1Fl and Spi1KO alleles in microglia sorted from Spi1Fl/+;Cx3cr1CreER mice at different stages post-tamoxifen (TAM) injection. (F) Quantification of the percentage of Spi1KO allele at 3 dpi (n=4) and 3.5 mpi (n=4) by T-clone assay. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105788/elife-105788-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Quantitative RT-PCR result shows the relative expression of Spi1 (n=3) and Spi-b (n=3) (normalized to Gapdh expression) in sorted microglia from adult mouse brain. (B) Schematic diagram shows the genomic loci of Spi1WT, Spi1Fl, and Spi1KO alleles, respectively. (C) Gel image shows the genotyping result of Spi1WT and Spi1Fl alleles (The image has been updated in the version of record). (D) Representative images of IBA1 and DAPI co-staining in the cortex, hippocampus, and thalamus regions of adult Spi1Fl+/;Cx3cr1CreER and Spi1Fl/ Fl;Cx3cr1CreERmice without tamoxifen (TAM) injection. (E) Quantification of the density (number) of IBA1+ microglia in the cortex, hippocampus, and thalamus regions of adult Spi1Fl/+;Cx3cr1CreER (n=5) and Spi1Fl/Fl;Cx3cr1CreER (n=4) mice. n.s.=not significant, p>0.05. *p<0.05.\n\nTo investigate whether microglia maintenance in adult mice requires PU.1, we intraperitoneally injected tamoxifen (TAM) (Askew et al., 2017) into the Spi1Fl/+;Cx3cr1CreER and Spi1Fl/Fl;Cx3cr1CreER mice, and collected the brain samples at 7 dpi for cryo-section and IBA1 staining (Figure 6A, upper panel). As expected, without TAM, the number of the IBA1+ microglia showed no difference in the brain of Spi1Fl/+;Cx3cr1CreER and Spi1Fl/Fl;Cx3cr1CreER mice (Figure 6\u2014figure supplement 1D\u2013E). However, after TAM injection, the number of the IBA1+ microglia in Spi1Fl/Fl;Cx3cr1CreER mice were drastically reduced compared to that in Spi1Fl/+;Cx3cr1CreER mice (Figure 6A\u2013C), suggesting that PU.1 is indeed required for the survival of adult microglia, which is similar to the double depletion of pu.1 and spi-b in zebrafish (Figure 3\u2014figure supplement 4). To further explore whether partial loss of PU.1 activity could reduce the competitiveness of microglia and impairs the long-term maintenance of microglia in mice, we intraperitoneally injected sub-dosage of TAM into adult Spi1Fl/+;Cx3cr1CreER mice to generate mosaic microglia populations for long-term tracing. To quantify the proportion of Spi1KO/+ microglia and Spi1Fl/+ microglia, we sorted YFP+ microglia from TAM-injected Spi1Fl/+;Cx3cr1CreER mice at 3 dpi and 3.5 mpi, the timeline similar to previous research in zebrafish. Then we amplified Spi1KO and Spi1Fl alleles in the gDNA pool by PCR for T-clone quantification (Figure 6D). As shown in Figure 6E\u2013F, while the percentage of Spi1KO/+ microglia was comparable to Spi1Fl/+ microglia at 3 dpi, it was dramatically reduced by 3.5 mpi, suggesting that removal of a single copy of Spi1 leads to the chronic elimination of Spi1KO/+ microglia, which appears to occur only in the presence of the WT Spi1Fl/+ microglia, as Spi1 heterozygous mice show no difference in the viability of tissue resident macrophages (Karpurapu et al., 2011). Collectively, these results indicate that the dosage-dependent cell competition-mediated regulation of microglia maintenance by SPI1/PU.1 is evolutionarily conserved from teleosts to mammals.\n\n## Discussion\n\nIn the present study, to explore the role of Pu.1 in microglia survival and maintenance, we established a visible conditional knockout pu.1KI allele in zebrafish via the non-homologous end joining (NHEJ)-mediated knock-in method. Although conditional inactivation of targeted genes has been reported by several independent studies (Li et al., 2015; Li et al., 2019; Shin et al., 2023), it has not been widely applied in zebrafish, possibly due to the difficulty or low efficiency to generate loxP-flanked alleles. Compared to homologous recombination (HR), NHEJ-mediated knock-in of reporter gene has been shown to display 10-fold higher efficiency (Auer et al., 2014; Li et al., 2015). In our case, the germline transmission to F1 generation for pu.1KI allele is around 15% (Figure 2\u2014figure supplement 1). Meanwhile, in our investigation, we noted that the efficiency of Cre-mediated excision of loxP sites at the pu.1 locus in zebrafish (Figure 3) appears much lower than that in mouse (Figure 6). Although it remains to be further validated whether this observation is a general phenomenon, it does highlight the necessity and significance of chimera study of interested genes. In our pu.1KI allele, the expression of DsRed directly indicates Cre-mediated excision and helps us distinguish the mutant cells from their sibling cells, which serves as a good example for chimera study in the future. Moreover, our knock-in allele can also be simply regarded as a loxP-flanked fluorescent reporter line, which not only facilitates the labeling of cells that express the gene of interest, but also can be used in combination with the LEGO-IR system (Xu et al., 2015) to trace the fate of these cells. Thus, due to the high integration efficiency of donor DNA fragment and the multifaceted applications of the labeling strategy, we anticipated that our knock-in system would be a powerful tool and broadly adopted in the fields of genetics, developmental biology and cell biology for the chimeric study of interested genes and fate mapping of interested cells in the future.\n\nVia EdU pulse-chase labeling assay, we found that the daily turnover rate of microglia in adult zebrafish is about 2.5%, much higher than that reported in mice and human (Lopez-Atalaya et al., 2018). These disparities might be explained by several reasons. First, in our calculation of microglia turnover rate, we did not factor in the unknown cell cycle length of zebrafish microglia. It is possible that the duration of microglia proliferation in zebrafish is much shorter than that in mice. If microglia proliferation takes less than 24 hr in zebrafish, then the calculated daily turnover rate of 2.5% may be overestimated. Second, it is well recognized that zebrafish manifest much stronger regeneration capability than mammals. As such, differentiated cells, like cardiomyocytes and hair cells in zebrafish are in general more proliferative than those in mammals (Chen et al., 2019; Marques et al., 2019). In this regard, microglia in zebrafish might be pre-coded both genetically and epigenetically to be more proliferative. Finally, microglia turnover could potentially be affected by the distinct efferocytotic burdens via the lysosome pathway, as lysosome has been known to be a convergent point for many biological process, including metabolism, cellular senescence, DNA repair, ER stress and even apoptosis (Franco-Ju\u00e1rez et al., 2022; Perera and Zoncu, 2016). Indeed, efferocytosis of apoptotic cells has previously been shown to elicit NOX2 assembly and promote ROS production (Yvan-Charvet et al., 2010), which in turn triggers cell death via induction of lysosome damage (Patra et al., 2023; Wang et al., 2018). The more regenerative environment in zebrafish might be accompanied by higher frequency of cell death, which could lead to an increase in efferocytotic burdens of microglia, thereby accelerating the turnover of microglia. Further studies will be required to clarify this issue.\n\nOur results revealed that the survival and maintenance of microglia are highly sensitive to the dosage of PU.1/SPI1 in both teleosts and mammals. Interestingly, a previous study reported that hetero- or homozygosity of PU/ER(T) allele, in which the ER ligand binding domain-G525R is fused with the full-length PU.1 to block its nuclear translocation, showed no effect on the viability of alveolar macrophages (Karpurapu et al., 2011). This contradictory result might potentially result from the leakiness of ER, which was incapable to fully retain PU.1 in cytoplasm. A recent work found that conditional inactivation of PU.1 by feeding the animals with tamoxifen-containing diet in the Alzheimer\u2019s disease model CK-p25 mice led to a 33% reduction in microglia number at their young ages. Although the authors considered prevention of microgliosis as a result of the amelioration of neuroinflammation (Ralvenius et al., 2023), our data implies that reduction in microglia could also been interpreted by the direct involvement of PU.1 in microglia survival and maintenance, as our data clearly demonstrate that conditional ablation of the PU.1 in mice or Pu.1/Spi-b in zebrafish leads to the rapid depletion of microglia in the brain (Figure 6; Figure 3\u2014figure supplement 4). As PU.1 is a master regulator that controls the expression of series of genes required for macrophage/microglia development (Satoh et al., 2014), rapid death of Spi1-null microglia might probably be caused by the orchestration of multiplex factors, including the downregulation of colony-stimulating factor 1 receptor (Csf1r) (the essential regulator controlling the survival and maintenance of microglia in both mice and zebrafish) (Elmore et al., 2014; Yu et al., 2023), the loss of anti-apoptotic genes, such as BCL2A1 (Jenal et al., 2010), and absence of other genes that maintain the integrity of cells. Intriguingly, differing from the rapid death of microglia after complete inactivation of PU.1 or Pu.1/Spi-b, microglia with a partial loss of PU.1 or Pu.1 are chronically eliminated only in the mosaic condition via cell competition, in which the microglia with WT Spi1 or a single copy of pu.1 are present (Figures 3 and 6). Moreover, we further showed that the chronic elimination of pu.1-deficient microglia in zebrafish is mediated by Tp53-dependent cell competition, which has been shown to depend on the relative level of Tp53 in competing cells (Bondar and Medzhitov, 2010; Zhang et al., 2017). A previous study by Tschan et al has shown that PU.1 attenuates the transcriptional activity of the p53 tumor suppressor family through direct binding to the DNA-binding and/or the oligomerization domains of p53/p73 proteins (Tschan et al., 2008). Via in-silico analysis of tp53 promoter region in zebrafish, we also found three PU.1 binding sequences (GAGGAA) located on antisense strand from position \u20131047 to \u20131042, \u20131098 to \u20131093, and \u20131423 to \u20131418 relative to the transcriptional start site of the tp53 promoter (Figure 5\u2014figure supplement 2). These observations indicate that Pu.1 might regulate the activity of P53 through direct protein-protein or protein-DNA interactions. Previously, we have shown that the level of csf1ra, the zebrafish orthologue of mammalian Csf1r, is highly associated with the fitness of microglia and regulates the turnover and maintenance of microglia via cell competition (Yu et al., 2023). During the process of investigation, we also wondered whether the cell competition between pu.1-deficient microglia and pu.1-sufficient microglia relied on Csf1ra. However, in contrast to the robust upregulation of p53 in pu.1-deficient microglia, the decrease of csf1ra was not observed (Figure 5\u2014figure supplement 3). In summary, our findings suggest that the dosage of PU.1/Pu.1 may serve as a checkpoint to determine the fitness of microglia. It will be of great interest to explore the upstream events that modulate SPI1/pu.1 expression during microglia turnover.\n\n## Materials and methods\n\n### Zebrafish\n\nZebrafish were maintained according to standard protocol as described previously (Westerfield, 2000). AB wild-type, pu.1\u0394839 (Yu et al., 2017), spi-b\u0394232 (Yu et al., 2017), tp53M214K (Berghmans et al., 2005), pu.1KI (short for pu.1KI-eGFP, shz4Tg), pu.1CKO (short for pu.1KI-DsRed, shz5Tg), TgBAC(ccl34b.1:eGFP) (Wu et al., 2020),Tg(coro1a:CreERT2)sz101tg, Tg(mpeg1:loxP-DsRedx-loxP-eGFP, shorted as LRLG)hkz015t (Xu et al., 2016) were used in this study.\n\n### Mouse strains\n\nSpi1Fl (No.T010980, purchased from GemPharmatech Co., Ltd) and Cx3cr1CreER-EYFP (Stock No. 021160) (Yona et al., 2013) were used in this study. All animal experiments and procedures were approved by the Ethics Committee for the Welfare of Laboratory Animals in Shenzhen PKU-HKUST Medical Center (reference number for approval: 2022\u20131166).\n\n### Generation of pu.1KI allele\n\nDonor plasmid was modified based on the reported Th-KI plasmid (Li et al., 2015). In brief, DNA fragments containing pu.1 exon 4 to exon 6 and the 3\u2019 downstream fragment were cloned from cDNA and genomic DNA libraries, respectively, and inserted into the plasmid containing P2A-eGFP, P2A-Dsred and loxP elements. sgRNA was designed in the intron 3~4 of pu.1 with the online website CRISPRscan (https://www.crisprscan.org/). It was transcribed by the MEGAshortscript Kit (AM1354, Invitrogen) from PCR product which was amplified following reported protocol (Vejnar et al., 2016). Then, Cas9 mRNA (700 ng/\u03bcl), sgRNA (70 ng/\u03bcl), and donor plasmid (15 ng/\u03bcl) were mixed and injected into zebrafish embryos at one-cell stage. Embryos with eGFP signal were selected at 3 dpf and raised to adulthood for germline transmission. Adult F0 fish were crossed with wild-type fish to generate F1 and eGFP+ F1 were selected. The 5\u2019- and 3\u2019-junctions of the donor plasmid integration site were amplified from the genomic DNA of F1 embryos and sent for sequencing. The primers used for 5\u2019 junction are 5\u2019-GATCTATCGACCACCAATGGAG-3\u2019 and 5\u2019-GCCATAGTGTGCATTCTCAGG-3\u2019 and for 3\u2019 junction are 5\u2019-GTTGTAAAACGACGGCCAG-3\u2019 and 5\u2019-GAGTGTAGTGCTCATTCAAGC-3\u2019.\n\n### Cryo-section\n\nAdult fish were anesthetized on ice. The tissue was dissected and fixed in 4% PFA at 4\u2103 overnight. After being washed with phosphate-buffered saline (PBS) at room temperature for 1 day, the tissues were dehydrated with 30% sucrose at 4\u2103 overnight, then soaked in coagulating solution (optimal cutting temperature compound, OCT) and subjected to cryosection with 30 \u03bcm thickness.\n\n### EdU and BrdU incorporation assays, TUNEL staining, and immunostaining\n\nEdU and BrdU incorporation assays were conducted as previously reported (Yu et al., 2023). In brief, EdU (A10044, Invitrogen) or BrdU (B5002, Sigma-Aldrich) was dissolved in PBS to the final concentration of 10 mg/ml. 5 \u03bcl EdU or BrdU was intraperitoneally (i.p.) injected into adult zebrafish each time. Brain samples were dissected at 1 day post-injection and fixed in 4% PFA for cryosection.\n\nEdU detection was conducted with (Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 647 dye, Invitrogen, C10340) according to the manufacturer\u2019s instructions. For BrdU detection, samples were treated with 2 M HCl for half an hour and then stained with the BrdU antibody. TUNEL staining was performed with TUNEL BrightGreen Apoptosis Detection Kit (A112, Vazyme) according to the manufacturer\u2019s instructions. Antibody staining was performed after EdU/BrdU and TUNEL detection. Primary antibodies used in this study were mouse anti-BrdU (11170376001, Roche), goat anti-GFP (ab6658, Abcam), rabbit anti-DsRed (632496, Clontech), rabbit anti-Lcp1 (Jin et al., 2009), rabbit anti-Pu.1 (Jin et al., 2012) and rabbit anti-IBA1 (019\u201319741, FUJIFILM Wako) antibodies.\n\n### Tamoxifen injection\n\n4-Hydroxytamoxifen (4-OHT, H7904, Sigma) was dissolved in ethanol to final concentration of 10 mM. For adult fish, 1 \u03bcl 4-OHT was i.p. injected into each fish three times. For adult mice, tamoxifen (T5648, Sigma) was dissolved in corn oil to final concentration of 20 mg/ml and i.p. injected into the mice with 35 mg/kg (sub-dosage) or 150 mg/kg (overdosage).\n\n### Neutral red staining\n\nNeutral red staining was performed as previously described (Herbomel et al., 2001).\n\n### Cy5-Annexin V treatment\n\nAnnexin V-Cy5 Reagent (1013, Biovision) solution was directly injected into brain ventricle of 3 dpf larva and immediately imaged by confocal microscope.\n\n### Imaging\n\nFluorescent signals from live reporter lines or immunostaining were imaged under a Leica SP8 confocal microscope or a Zeiss LSM980 confocal microscope. The objectives HC PL APO 203/0.70 DRY (Leica) and Plan-Apochromat \u00d720/0.8 M27 (Zeiss) were used in this study.\n\n### cDNA preparation and RNA-seq\n\nCell suspensions were prepared as previously described (Yu et al., 2017). Cells of interest were manually picked under the fluorescent microscope (Nikon Ti-S) equipped with the micro-manipulator (NT-88-V3, Nikon). Subsequently, picked cells were transferred by the glass needle to lysis buffer (mainly including Triton X-100 and RNase inhibitor) for thorough vortexing. Then the cell lysate was used for reverse transcription and amplification with the Smart-Seq2 method (Picelli et al., 2014) to generate the cDNA library. cDNA was sent to Novogene Company for Illumina sequencing with an average depth of 6\u00d7106 raw reads per sample. Reads were aligned to the Zebrafish Genome Assembly GRCz11 using the STAR (Spliced Transcripts Alignment to a Reference). Original counts were calculated with featureCounts package. DEGs were identified with the DESeq2 package. TPM (transcripts per million) are used to measure gene expression levels by normalization of counts. Samples with strong expression of microglia-related genes and faint DC-related genes were chosen for further analysis. TPM of top 50 up- and down-regulated genes were used to generate a heat map. TPM values in the heatmap were centered and scaled in the row direction. Noted that across all experimental groups subjected to RNA-seq analysis, the ccl34b.1/ccl19a.1 expression ratios exceeded 5. Although residual DC contamination in the RNA-seq data cannot be entirely ruled out, we believed that microglia were the major population we analyzed in the RNA-seq.\n\n### Mouse microglia isolation\n\nAdult mice brain was dissected and cut into small pieces. They were dissociated into single-cell suspensions with Adult Brain Dissociation Kit (130-107-677, Miltenyi Biotec) according to the manufacturer\u2019s instructions. Then, Myelin Removal Beads II (130-96-733, Miltenyi Biotec) were used to remove myelin debris from single-cell suspensions. YFP+ microglia were sorted from suspensions by FACS Aria IIIu. The sorted microglia were lysed by proteinase K to extract DNA or TRIzol to extract RNA.\n\n### TA clone assay\n\nSpi1Fl and Spi1KO alleles were amplified by PCR from the genomic DNA. The common forward primer was 5\u2019-GCATCGCATTGTCTGAGTAGGT-3. The reverse primers were 5\u2019-AAATCTGCCTGGGTGACCTTC-3\u2019 for Spi1Fl and 5\u2019-ACACAACGGGTTCTTCTGTTAG-3\u2019 for Spi1KO. The PCR products for Spi1Fl and Spi1KO alleles were 248 bp and 129 bp, respectively. PCR products were ligated to pUCm-T vector (B522211, Sangon) with Blunt/TA Ligase Master Mix (M0367S, NEB) according to the manufacturer\u2019s instructions. The clones containing ligated plasmids were amplified with M13F (5\u2019-GTTGTAAAACGACGGCCAG-3\u2019) and M13R (5\u2019-CAGGAAACAGCTATGAC-3\u2019). The PCR products for Spi1Fl and Spi1KO alleles were 437 bp and 315 bp, respectively. Clones of Spi1Fl and Spi1KO alleles were distinguished by the size of PCR products.\n\n### Quantitative PCR\n\ncDNA was synthesized from extracted RNA with SuperScript III Reverse Transcriptase kit (18080093, Invitrogen). Quantitative PCR was performed with iTaq Universal SYBR Green Supermix (1725121, Bio-Rad) on a CFX96 Dx Instrument (Bio-Rad) and analyzed using the \u0394\u0394Ct method. The following primers were used to determine the expression of DsRed and pu.1 from pu.1CKO allele: DsRed, 5\u2019-GATCTATCGACCACCAATGGAG-3\u2019 (pu.1-161FP)/ 5\u2019-GCCGTTCACGGAGCCCTCCAT-3\u2019 (DsRed-72RP); pu.1, 5\u2019-GATCTATCGACCACCAATGGAG-3\u2019 (pu.1-161FP)/ 5\u2019-CGCATGTAGTGACTGCACGC-3\u2019 (pu.1-357RP). The following primers were used to determine the expression of Spi1 and Spi-b in mouse microglia: Gapdh, 5\u2019-TGTGTCCGTCGTGGATCTGA-3\u2019/5\u2019-TTGCTGTTGAAGTCGCAGGAG-3\u2019; Spi1, 5\u2019- GAGGTGTCTGATGGAGAAGCTG-3\u2019/5\u2019-ACCCACCAGATGCTGTCCTTCA-3\u2019; Spi-b, 5\u2019- AGGAGTCTTCTACGACCTGGAC-3\u2019/5\u2019-GGAGTGGCTAAAGGCAGCAGTA-3\u2019.\n\n### Quantification and statistics\n\nThe number of microglia in embryos were quantified manually, and then genotyped to prevent bias. For the experiment with adults, fish were genotyped first and then numbered without gender bias for downstream 4-OHT injection, brain sample collection, cryo-section, and immunostaining experiments. For microglia number quantification, 3 representative slices from anterior, middle and posterior of the midbrain of numbered fish were chosen for further manual counting with the same criteria. For EdU/BrdU or TUNEL experiments, at least six representative slices from anterior, middle and posterior of the midbrain were chosen for calculation. The number of EdU/BrdU+ or TUNEL+ microglia/DCs from the slices were counted and then divided by the total number of microglia/DCs to calculate the ratio.\n\nAdult mice were genotyped first and then only males were chosen for the downstream experiments. Female mice were excluded to avoid variability associated with estrous cycle-dependent hormonal changes, which are known to influence microglial behavior (Habib and Beyer, 2015). For statistics, cortex, hippocampus, and thalamus on the slices of mouse brain were chosen for microglia density quantification. The number of microglia and region of interest were calculated with Imaris 9.9 software to determine the density.\n\nStatistical analyses are performed with GraphPad Prism 9.5.1. F-test was first used to check the variances of two groups. If the variances of two groups were not significantly different (p>0.05), Student\u2019s t-test was performed. If the variances of the two groups were significantly different (p<0.05), t-test with Welch\u2019s correction was performed. A result was considered significant if p<0.05. Values represent mean \u00b1 standard deviation of the mean.\n",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Harini Iyer, Howard Hughes Medical Institute, University of Illinois at Urbana-Champaign United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.105788.3.sa0](https://doi.org/10.7554/eLife.105788.3.sa0)\n\nThis study presents valuable findings on the regulation of survival and maintenance of brain-resident immune cells called microglia. Using compelling and sophisticated genetic tools, the authors demonstrate a gene dosage-dependent mechanism using which microglia are eliminated. This research on cell competition and survival will be of broad interest to the cell biology community.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105788.3.sa1](https://doi.org/10.7554/eLife.105788.3.sa1)\n\nSummary:\n\nThe article entitled \"Pu.1/Spi1 dosage controls the turnover and maintenance of microglia in zebrafish and mammals\" by Wu et al., identifies a role for the master myeloid developmental regulator Pu.1 in the maintenance of microglial populations in the adult. Using a non-homologous end joining knock-in strategy, the authors generated a pu.1 conditional allele in zebrafish, which reports wildtype expression of pu.1 with EGFP and truncated expression of pu.1 with DsRed after Cre mediated recombination. When crossed to existing pu.1 and spi-b mutants, this approach allowed the authors to target a single allele for recombination and induce homozygous loss-of-function microglia in adults. This identified that although there is no short-term consequence to loss of pu.1, microglia lacking any functional copy of pu.1 are depleted over the course of months, even when spi-b is fully functional. The authors go on to identify reduced proliferation, increased cell death, and higher expression of tp53 in the pu.1 deficient microglia, as compared to the wildtype EGFP+ microglia. To extend these findings to mammals, the authors generated a conditional Pu.1 allele in mice and performed similar analyses, finding that loss of a single copy of Pu.1 resulted in similar long-term loss of Pu.1-deficient microglia. The conclusions of this paper are overall well supported by the data.\n\nStrengths:\n\nThe genetic approaches here for visualizing recombination status of an endogenous allele are very clever, and by comparing the turnover of wildtype and mutant cells in the same animal the authors can make very convincing arguments about the effect of chronic loss of pu.1. Likely this phenotype would be either very subtle or non-existent without the point of comparison and competition with the wildtype cells.\n\nUsing multiple species allows for more generalizable results, and shows conservation of the phenomena at play.\n\nThe demonstration of changes to proliferation and cell death in concert with higher expression of tp53 is compelling evidence for the authors argument.\n\nWeaknesses:\n\nThis paper is very strong. It would benefit from further investigating the specific relationship between pu.1 and tp53 specifically. Does pu.1 interact with the tp53 locus? Specific molecular analysis of this interaction would strengthen the mechanistic findings.\n\nRecommendations for the authors It would be useful to investigate the relationship between pu.1 and tp53. The data presented here show that pu.1 deficient cells have higher expression of tp53, but this could be an indirect effect. However, since pu.1 has known DNA binding motifs, it would be worthwhile to investigate if there are any direct interactions between pu.1 and the tp53 locus -- does pu.1 directly bind and repress tp53 expression? This could be directly investigated with Cut & Run or an EMSA.\n\nThe paper would likely also benefit from more in-depth discussion of the relationship of the zebrafish alleles and their relationship to mammalian Pu.1 -- as presented here, the authors are implicitly arguing that zebrafish pu.1 and spi-b are both more closely related to mammalian Pu.1 than to mammalian Spi-b. Clear argument, perhaps backed up by sequence alignment and homology matching, would help readers, especially those less familiar with zebrafish genome duplications.\n\nComments on Revised Version (from BRE):\n\nThe authors performed in silico analyses to support a regulatory relationship between Pu.1 and Tp53. They identified three putative Pu.1 binding sites within the zebrafish tp53 promoter region. Furthermore, they cite prior evidence demonstrating a similar interaction between PU.1 and members of the P53 family through direct DNA binding.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105788.3.sa2](https://doi.org/10.7554/eLife.105788.3.sa2)\n\nSummary:\n\nIn the presented work by Wu et al. the authors investigate the role of the transcription factor Pu.1 in the survival and maintenance of microglia, the tissue resident macrophage population in the brain. To this end they generated a sophisticated new conditional pu.1 allele in zebrafish using CRISPR mediated genome editing which allows visual detection of expression of the mutant allele through a switch from GFP to dsRed after Cre-mediated recombination. Using EdU pulse-chase labelling, they first estimate the daily turnover rate of microglia in the adult zebrafish brain which was found to be higher than rates previously estimated for mice and humans. After conditional deletion of pu.1 in coro1a positive cells, they do not find a difference in microglia number at 2 and 8 days or 1 month post injection of Tamoxifen. However, at 3 month post injection, a strong decrease in mutant microglia could be detected. While no change in microglia number was detected at 1mpi, an increase in apoptotic cells and decreased proliferation as observed. RNA-seq analysis of WT and mutant microglia revealed an upregulation of tp53, which was shown to play a role in the depletion of pu.1 mutant microglia as deletion in tp53-/- mutants did not lead to a decrease in microglia number at 3mpi. Through analysis of microglia number in pU.1 mutants, the authors further show that the depletion of microglia in the conditional mutants is dependent on the presence of WT microglia. To show that the phenomenon is conserved between species, similar experiments were also performed in mice.\n\nThis work expands on previous in vitro studies using primary human microglia. The majority of conclusions are well supported by the data, addition of controls and experimental details would strengthen the conclusions and rigor of the paper.\n\nStrengths:\n\nGeneration of an elegantly designed conditional pu.1 allele in zebrafish that allows for the visual detection of expression of the knockout allele.\n\nThe combination of analysis of pu.1 function in two model systems, zebrafish and mouse, strengthens the conclusions of the paper.\n\nConfirmation of the functional significance of the observed upregulation of tp53 in mutant microglia through double mutant analysis provides some mechanistic insight.\n\nWeaknesses:\n\n(1) The presented RNA-Seq analysis of mutant microglia is underpowered and details on how the data was analyzed is missing. Only 9-15 cells were analyzed in total (3 pools of 3-5 cells each). Further the variability in relative gene expression of ccl35b.1, which was used as a quality control and inclusion criterion to define pools consisting of microglia, is extremely high (between ~4 and ~1600, Fig. S7A).\n\n(2) The authors conclude that the reduction of microglia observed in the adult brain after cKO of pu.1 in the spi-b mutant background is due to apoptosis (Lines 213-215). However, they only provide evidence of apoptosis in 3-5 dpf embryos, a stage at which loss of pu.1 alone does lead to a complete loss of microglia (Fig.2E). A control of pu.1 KI/d839 mutants treated with 4-OHT should be added to show that this effect is indeed dependent on the loss of spi-b. In addition, experiments should be performed to show apoptosis in the adult brain after cKO of pu.1 in spi-b mutants as there seems to be a difference in requirement of pu.1 in embryonic and adult stages.\n\nComments on Revised Version (from BRE):\n\nThe authors have elaborated on the details of the RNA-Seq procedure and clarified the distinct phenotypes observed with global versus condition pu.1 knockout. In addition, the authors' proposed collaborative relationship between Pu.1 and Spi-b has been expanded in the revised manuscript. The authors have addressed all the minor concerns raised by the reviewer.\n",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "62da1782-cd06-4620-935f-43f3305f44bb",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C1",
+      "claim": "Microglia are brain-resident macrophages playing pivotal roles in central nervous system (CNS) development and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Microglia are brain-resident macrophages playing pivotal roles in central nervous system (CNS) development and homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by the citation of review articles (Colonna and Butovsky, 2017; Gomez-Nicola and Perry, 2015) in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "3606e2ed-5506-456a-b3de-6e921ab749cd",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C2",
+      "claim": "pu.1-deficient microglia are immediately viable in adult zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that while pu.1-deficient microglia are immediately viable, they are less competitive, and chronically eliminated through Tp53-mediated cell competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by conditional knockout experiments showing no immediate loss of microglia at 2 and 8 days post-injection (Figure 3B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "f3bef174-c0e9-418d-af50-e475a5b5cd06",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C3",
+      "claim": "pu.1-deficient microglia are less competitive and chronically eliminated through Tp53-mediated cell competition.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that while pu.1-deficient microglia are immediately viable, they are less competitive, and chronically eliminated through Tp53-mediated cell competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by long-term tracing experiments showing reduction at 1 and 3 months (Figure 3E-F) and rescue experiments in tp53-/- background (Figure 5D-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "c28a4d2b-1c5d-4cd5-a375-223119b0b332",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C4",
+      "claim": "Conditional inactivation of Pu.1 in adult spi-b null mutants leads to rapid depletion of microglia via apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when conditionally inactivating Pu.1 in adult spi-b (the orthologue of mouse Spi-b) null mutants, microglia are rapidly depleted via apoptosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments showing microglia depletion in pu.1KI/\u0394839;spi-b\u0394232/\u0394232 fish (Figure 3\u2014figure supplement 3) and Annexin V staining (Figure 3\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "c917e553-7b02-4d9e-ad83-169b2cfd040c",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C5",
+      "claim": "Pu.1 and Spi-b regulate microglia maintenance in a dosage-dependent manner in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that Pu.1 and Spi-b regulate microglia maintenance in a dosage-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential effects of single versus double gene inactivation on microglia survival (Figure 3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "01b29662-50bf-4bc4-89ce-056b44d2988f",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C6",
+      "claim": "The dosage-dependent regulation of microglia maintenance by PU.1/SPI1 is evolutionarily conserved in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The dosage-dependent regulation of microglia maintenance by PU.1/SPI1 is evolutionarily conserved in mice, as shown by conditionally inactivating single and both Spi1 alleles in microglia, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by conditional knockout experiments in mice showing similar dosage-dependent effects (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "bb562bfa-fe58-49d0-945c-42b9a566197d",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C7",
+      "claim": "The daily turnover rate of microglia in adult zebrafish is approximately 2.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these data, the estimated microglia turnover rate (daily) is ~2.6% (total EdU incorporation rate divided by the times of EdU-pulses) (Figure 1C, green bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from EdU pulse-chase experiments with 1, 3, or 5 consecutive days of EdU injection (Figure 1B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "e8f2eb1f-8ace-4c49-bcb6-3adcf038affa",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C8",
+      "claim": "Microglia in adult zebrafish randomly undergo proliferation with no well-defined microglial precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly suggest that, similar to mammals (Tay et al., 2017), microglia in adult zebrafish randomly undergo proliferation and there are no well-defined microglial precursors that continuously proliferate to replenish and maintain the microglia pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by EdU-BrdU double-pulse assay showing comparable BrdU incorporation rates between EdU+ and EdU- microglia (Figure 1D-E).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "2be00b65-6752-45a6-8833-d81d01f7af97",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C9",
+      "claim": "The EdU incorporation rate for dendritic cells in zebrafish brain is much lower than for microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the EdU incorporation rate for the DCs was much lower (Figure 1B\u2013C, red bars), suggesting that the DCs in the brain are relatively steady with a very low turnover rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by quantification of EdU incorporation in DCs versus microglia (Figure 1B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "06da74ad-f983-4027-afdd-a57cdb30e38f",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C10",
+      "claim": "The pu.1KI allele recapitulates the expression of endogenous pu.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, co-staining of eGFP and Pu.1 antibodies revealed a perfect overlap of the eGFP+ cells and Pu.1+ cells in pu.1KI/+ embryos (Figure 2B), suggesting that the pu.1KI allele recapitulates the expression of endogenous pu.1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunostaining showing co-localization of eGFP and Pu.1 (Figure 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "e8e74d14-9bba-48af-981c-2c7bd501732a",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C11",
+      "claim": "The pu.1KI allele is functionally intact and can rescue the microglia phenotype of pu.1\u0394839 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quantification of microglia number revealed no difference between the pu.1\u0394839/KI and pu.1\u0394839/+ embryos (Figure 2E and F), indicating that the pu.1KI allele functionally recapitulates the endogenous pu.1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by neutral red staining showing comparable microglia numbers (Figure 2E-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "3e7123d4-5437-46fe-a733-b817271e31bb",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C12",
+      "claim": "Cre-mediated excision occurs correctly in the pu.1KI allele to generate the pu.1CKO allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fluorescent imaging of the pu.1CKO/KI embryos revealed robust DsRed (pu.1CKO allele) signals perfectly overlapping with the eGFP (pu.1KI allele) signals (Figure 2G), suggesting the correct DNA excision and RNA splicing in the pu.1CKO allele.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by fluorescent imaging and sequencing analysis (Figure 2G-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "98228bb7-1204-4310-8219-5094fff3047b",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C13",
+      "claim": "The pu.1CKO allele phenotypically recapitulates the pu.1\u0394839 null mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, the development of embryonic microglia was completely blocked in the pu.1CKO/\u0394839 embryos (Figure 2I and J), a phenotype recapitulating the defect of the pu.1\u0394839 homozygous mutants (Yu et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by neutral red staining showing absence of microglia in pu.1CKO/\u0394839 embryos (Figure 2I-J).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "668fae9d-259d-454d-954e-3e7adf4ba177",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C14",
+      "claim": "Pu.1 is not required for the immediate survival of microglia in adult zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the number and proportion of DsRed+ cells at 2 dpi and 8 dpi revealed no difference between pu.1KI/\u0394839;Tg(coro1a:CreER) mutant fish and pu.1KI/+;Tg(coro1a:CreER) control siblings (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification of DsRed+ microglia at 2 and 8 days post-injection (Figure 3B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "2b354702-2fb1-486c-b8dc-c7ac2f1021c0",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C15",
+      "claim": "Pu.1 is essential for the long-term maintenance of microglia in adult zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that, although pu.1 is dispensable for the immediate survival of microglia (Figure 3B\u2013C), it is essential for the turnover and long-term maintenance of microglia in adult zebrafish, which could not be fully compensated by spi-b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by significant reduction of DsRed+ microglia at 1 and 3 months post-injection (Figure 3E-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "cf98a7fa-8b98-44cc-9f65-d48291ec4613",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C16",
+      "claim": "The number and proportion of microglia and DCs are comparable between pu.1\u0394839/\u0394839 null mutants and pu.1\u0394839/+ siblings in adult zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also found that the number and proportion of microglia (ccl34b.1-eGFP+ Lcp1+) and DCs (ccl34b.1-eGFP-Lcp1+) were comparable between pu.1\u0394839/\u0394839;TgBAC(ccl34b.1:eGFP) null mutants and pu.1\u0394839/+;TgBAC(ccl34b.1:eGFP) siblings (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunostaining and quantification (Figure 3\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "8fba80e0-af65-4c69-b64a-475d273f2051",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C17",
+      "claim": "The percentage of TUNEL+ cells in pu.1-deficient DsRed+ microglia is significantly higher than in eGFP+ microglia in mosaic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification results showed that the percentage of TUNEL+DsRed+ microglia (pu.1-deficient cells) in the brains of the pu.1KI/\u0394839;Tg(coro1a:CreER) fish was significantly higher than that of TUNEL+eGFP+ cells (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by TUNEL staining and quantification at 1 month post-injection (Figure 4B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "f6174b6c-3a54-4132-b773-2e2aff05ff97",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C18",
+      "claim": "The BrdU incorporation rate of pu.1-deficient DsRed+ microglia is significantly lower than that of eGFP+ microglia in mosaic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we also found that the BrdU incorporation rates of pu.1-deficient microglia (DsRed+) in the 4-OHT-treated pu.1KI/\u0394839;Tg(coro1a:CreER) fish was significantly lower than that of eGFP+ cells (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by BrdU incorporation assay at 1 month post-injection (Figure 4C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "ea8d59d2-9ff2-4331-b468-e5b501ab4f44",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C19",
+      "claim": "The percentage of TUNEL+ microglia shows no difference between pu.1\u0394839/\u0394839 mutants and pu.1\u0394839/+ siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4E, the percentage of TUNEL+ccl34b.1-eGFP+ microglia showed no difference between pu.1\u0394839/\u0394839 mutants and pu.1\u0394839/+ siblings, demonstrating that the intrinsic viability of pu.1-deficient microglia in the null mutants was largely unaffected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by TUNEL staining in pu.1 null mutants (Figure 4E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "c65d646a-f646-4dda-b162-ed01efe8d1a7",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C20",
+      "claim": "The proliferation capability of pu.1-deficient microglia in null mutants remains normal compared to control siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the proliferation capability (as indicated by BrdU incorporation rate) of pu.1-deficient microglia in the null mutants remained normal as well in comparison with control siblings (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by BrdU incorporation assay in pu.1 null mutants (Figure 4F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "45989be0-0233-432f-9daf-09838211a037",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C21",
+      "claim": "The chronic elimination of pu.1-deficient microglia is caused by cell competition that only occurs in mosaic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results strongly suggest that the chronic elimination of pu.1-deficient DsRed+ microglia is indeed caused by cell competition, which only occurs in the mosaic condition when the eGFP+ microglia harboring a single copy of pu.1 are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential effects in mosaic versus null mutant conditions (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "d75e3476-73ca-41c3-be62-be8aea3e8fa9",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C22",
+      "claim": "tp53 is one of the top-targeted genes robustly upregulated in pu.1-deficient DsRed+ microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the differentially expressed genes (DEGs), the tumor suppressor gene tp53 was one of the top-targeted genes robustly upregulated in pu.1-deficient DsRed+ microglia (Figure 5B-C, Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RNA-seq analysis comparing eGFP+ and DsRed+ microglia (Figure 5B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "d3195e96-b387-4e95-a065-487c16a2e827",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C23",
+      "claim": "Loss of Tp53 can rescue the microglia phenotype caused by conditional inactivation of Pu.1 in mosaic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, results showed that the number of pu.1-deficient DsRed+ microglia in the 4-OHT-treated pu.1KI/\u0394839;tp53-/-;Tg(coro1a:CreER) fish was significantly restored compared with pu.1KI/\u0394839;Tg(coro1a:CreER) control fish (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by rescue experiments in tp53-/- background (Figure 5D-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "76ac07a1-4ca8-4be0-b988-8aa9aa3ee733",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C24",
+      "claim": "The chronic elimination of pu.1-deficient microglia in mosaic condition is mediated by the elevation of Tp53 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results demonstrate that the chronic elimination of pu.1-deficient microglia in mosaic condition is mediated, at least in part, by the elevation of Tp53 activity, which leads to the reduced proliferation and excessive death of these microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq showing tp53 upregulation and rescue experiments in tp53-/- background (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "f806b504-164f-4124-a0e5-48d717082a2c",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C25",
+      "claim": "Spi1 expression is robust in adult murine microglia while Spi-b is barely detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative RT-PCR revealed that in contrast to the robust expression of Spi1, Spi-b was barely detectable in microglia (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative RT-PCR analysis of sorted mouse microglia (Figure 6\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "ac133caa-5a83-49ce-a649-86a58d1610c5",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C26",
+      "claim": "PU.1 is required for the survival of adult microglia in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after TAM injection, the number of the IBA1+ microglia in Spi1Fl/Fl;Cx3cr1CreER mice were drastically reduced compared to that in Spi1Fl/+;Cx3cr1CreER mice (Figure 6A\u2013C), suggesting that PU.1 is indeed required for the survival of adult microglia",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by conditional knockout experiments in mice showing microglia depletion (Figure 6A-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "bead020d-f069-4dea-8fb7-8cbbd64021ad",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C27",
+      "claim": "Removal of a single copy of Spi1 leads to chronic elimination of Spi1KO/+ microglia in mice in mosaic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6E\u2013F, while the percentage of Spi1KO/+ microglia was comparable to Spi1Fl/+ microglia at 3 dpi, it was dramatically reduced by 3.5 mpi, suggesting that removal of a single copy of Spi1 leads to the chronic elimination of Spi1KO/+ microglia",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by T-clone quantification of Spi1KO and Spi1Fl alleles at different timepoints (Figure 6E-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "e8e78c3e-511f-4af5-8def-0adacd9cf532",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C28",
+      "claim": "The dosage-dependent cell competition-mediated regulation of microglia maintenance by SPI1/PU.1 is evolutionarily conserved from teleosts to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that the dosage-dependent cell competition-mediated regulation of microglia maintenance by SPI1/PU.1 is evolutionarily conserved from teleosts to mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by similar dosage-dependent effects observed in both zebrafish and mice (Figures 3 and 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "faf632e4-6e0e-4127-8d34-4e96f811f3b0",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C29",
+      "claim": "Microglia dysfunction is closely linked with the occurrence and progression of many neurodegenerative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "It is, therefore, not surprising that the dysfunction of microglia is closely linked with the occurrence and progression of many neurodegenerative disorders (Glass et al., 2010; Li et al., 2012; Prinz et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature on microglia and neurodegeneration.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "d2fb25b5-86d5-415c-af7a-0814d5890510",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C30",
+      "claim": "Microglia in adult mice originate from yolk-sac (YS)-derived primitive macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, fate-mapping methods revealed that, unlike other glia cells with neuroectoderm origin, microglia in adults originate from yolk-sac (YS)-derived primitive macrophages, which colonize the developing brain rudiment during early embryogenesis (Ginhoux et al., 2010; Schulz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to fate-mapping studies in mice.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "c9b96ddf-38e6-45d6-87cc-6c1161c1d331",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C31",
+      "claim": "Under physiological conditions, microglia in mice are maintained locally by self-renewal throughout the lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "It is now well accepted that under physiological conditions, microglia in mice are maintained locally by self-renewal throughout the lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by parabiosis assays and other studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "78776284-21d8-4f68-a0b9-cd17d1944e90",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C32",
+      "claim": "The microglia population is rapidly reconstituted by resident cells after genetic or pharmacological ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this concept, the microglia population was found to be rapidly reconstituted by resident cells after genetic or pharmacological ablation of microglia (Bruttger et al., 2015; Elmore et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on microglia repopulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "efdcae3d-3282-417d-a1cd-dab8c65efadc",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C33",
+      "claim": "Estimated microglia turnover rates in adult mice range from 0.13 to 0.8% based on different methods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when estimating the physiological turnover rate of microglia via different methods such as 3H-thymidine/BrdU/EdU incorporation, Ki67 staining or two-photon live imaging, different studies yielded distinct or even contradictory results i.e., the estimated microglia turnover rate ranging from 0.13 to 0.8% (Askew et al., 2017; F\u00fcger et al., 2017; Lawson et al., 1992; Tay et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies using different methodologies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "ecff1c69-d3cd-48ee-9089-ad28436454e8",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C34",
+      "claim": "In adult mice, all microglia have proliferation capability and there are no putative microglia precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, these studies have reached the consensus that in adult mice, all microglia have the proliferation capability and there are no putative microglia precursors existing to proliferate asymmetrically and continuously to contribute to the microglia pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consensus view from multiple studies in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "c7d7b976-2192-4a4f-b83f-6d1773122ad3",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C35",
+      "claim": "Microglia proliferation is spatially and temporally coupled with apoptosis to maintain population homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, microglia proliferation had been shown to be spatially and temporally coupled with apoptosis to maintain the homeostasis of their population (Askew et al., 2017), which indicates that not only proliferating microglia locate near the dying microglia, but also newborn microglia manifest a higher frequency of apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Askew et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "97d65df8-f809-4fe3-8737-3a8c9ae76949",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C36",
+      "claim": "PU.1 is the founding member of the SPI subfamily of the ETS family transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "PU.1 (encoded by the SPI1 gene), the founding member of the spleen focus forming virus proviral integration oncogene (SPI) subfamily of the E-twenty six (ETS) family transcription factor, is one of the best-characterized regulators governing the development of macrophage lineage (McKercher et al., 1996; Scott et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to foundational studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "68d0095f-8588-4e5e-a251-f807a867e2a7",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C37",
+      "claim": "Disruption of PU.1 in mice causes early lethality and complete absence of macrophages including microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of PU.1 in mice causes early lethality of the embryos and complete absence of macrophages (McKercher et al., 1996; Scott et al., 1994), including microglia in the brain (Kierdorf et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on PU.1 knockout mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "a3ab84ed-ce2f-406e-882f-b29abe7f8fdb",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C38",
+      "claim": "SPI1 expression level remains high in microglia after their terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the SPI1 expression level was found to remain at a high level in microglia after their terminal differentiation (Walton et al., 2000), implying that PU.1 also regulates the cellular behaviors and functions of microglia in the sophisticated CNS environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Walton et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "a19c5f37-887e-45eb-8064-6291371bf1bc",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C39",
+      "claim": "ChIP-Seq analysis with BV2 cells revealed thousands of PU.1 targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Chromatin immunoprecipitation (ChIP)-Seq analysis with microglia cell line BV2 cells revealed thousands of PU.1 targets (Satoh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Satoh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "4f03ef95-1f4d-4cc5-9647-53506be2e46c",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C40",
+      "claim": "Silencing of PU.1 by siRNA in mixed human glial culture led to reduced viability of microglia and decreased phagocytosis of A\u03b242.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, silencing of PU.1 by siRNA in mixed human glial culture led to the reduced viability of microglia and decreased phagocytosis of amyloid-beta (A\u03b242) (Smith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "a5f14476-3eec-49d2-8860-cb6e26b541dc",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C41",
+      "claim": "Inactivating either 1 or 2 copies of SPI1 by fusing PU.1 with cytoplasm-retaining estrogen receptor had no effect on the viability of alveolar macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as a previous study reported that inactivating either 1 copy or 2 copies of SPI1 by fusing PU.1 with cytoplasm-retaining estrogen receptor (ER) had no effect on the viability of alveolar macrophages (Karpurapu et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Karpurapu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "1efe9cba-b328-405b-a01d-105afad68634",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C42",
+      "claim": "Human SNPs that altered SPI1 expression level are associated with Alzheimer's disease pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, human SNPs that altered SPI1 expression level were reported to be associated with Alzheimer's disease (AD) pathogenesis (Cao et al., 2022; Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to genetic association studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "04d1f588-a945-4352-96df-6b436a2043df",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C43",
+      "claim": "Conditional inactivation or pharmacological inhibition of PU.1 in AD mouse model ameliorated neuroinflammation, prevented microgliosis, and improved cognitive performance.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that conditional inactivation or pharmacological inhibition of PU.1 in the AD mouse model ameliorated neuroinflammation, prevented microgliosis, and improved cognitive performance (Ralvenius et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ralvenius et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "7b99fa28-cf58-41dc-89c5-fae72edae232",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C44",
+      "claim": "SPI-B is dispensable for the development of the macrophage lineage in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "SPI-B, another member in the mammalian SPI subfamily, has been shown to be dispensable for the development of the macrophage lineage (Su et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Su et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "33e22013-6f23-4574-b40e-62df3b950098",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C45",
+      "claim": "Zebrafish microglia are highly conserved with their mammalian counterparts in morphology, molecular signatures, development-regulatory genetic networks, and functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish microglia are highly conserved with their mammalian counterparts in terms of morphology, molecular signatures, development-regulatory genetic networks, as well as functions (Xu et al., 2015; Yu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to comparative studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "9ded4f7b-99e2-49a9-af2e-41e2d6f998e7",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C46",
+      "claim": "Zebrafish microglia arise from two distinct sources: the rostral blood island (RBI) and the aorta-gonad-mesonephros (AGM) region.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from the single origin of mouse microglia, zebrafish microglia were shown to arise from two distinct sources, i.e., the rostral blood island (RBI), equivalent of mouse YS for primitive myelopoiesis, and the aorta-gonad-mesonephros (AGM) region for hematopoietic stem cell (HSC) initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "d8fc0fe2-4e5c-49bf-8de2-c108880bf524",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C47",
+      "claim": "RBI microglia colonize the developing brain during early embryogenesis but are gradually replenished by AGM adult microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "The RBI microglia colonize the developing brain during early embryogenesis, but are gradually replenished by AGM adult microglia (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "b47c561e-e80d-4f34-a80a-9e11d16e4c7e",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C48",
+      "claim": "The dynamic shift of microglia pool in zebrafish is controlled by Il34-Csf1ra signaling-dictated cell competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Further study revealed that this dynamic shift of microglia pool is controlled by Il34-Csf1ra signaling-dictated cell competition (Yu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "ee3f4929-b8cb-456e-b73d-08df000be8a5",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C49",
+      "claim": "Pu.1 and Spi-b are indispensable for microglia early development of both origins in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although Pu.1 (also called Spi1b in zebrafish, Ensembl:ENSDARG00000000767) and its paralogue Spi-b (also called Spi1a, Ensembl:ENSDARG00000067797), the zebrafish orthologues of mammalian PU.1 and SPI-B, were shown to be indispensable for microglia early development of both origins in zebrafish (Xu et al., 2015; Yu et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on zebrafish microglia development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "bbbef8a8-ca9b-44d8-8eca-27d7bbcc5117",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C50",
+      "claim": "There are two major subtypes of myeloid cells in adult zebrafish brain: ccl34b.1+ microglia and ccl34b.1-ccl19a.1+ brain-resident dendritic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that there are two major subtypes of myeloid cells, i.e., ccl34b.1+ + and ccl34b.1-ccl19a.1+ brain-resident dendritic cells (+) in adult zebrafish brain (Wu et al., 2020; Zhou et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wu et al., 2020 and Zhou et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "5743e2c4-0be3-4752-8670-180264fed061",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C51",
+      "claim": "The germline transmission efficiency to F1 generation for pu.1KI allele is around 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, the germline transmission to F1 generation for pu.1KI allele is around 15% (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as an observation from the generation of the pu.1KI allele (Figure 2\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "3119ac66-e78b-4e0b-baf1-ab687d7bdee8",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C52",
+      "claim": "The efficiency of Cre-mediated excision of loxP sites at the pu.1 locus in zebrafish appears much lower than that in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, in our investigation, we noted that the efficiency of Cre-mediated excision of loxP sites at the pu.1 locus in zebrafish (Figure 3) appears much lower than that in mouse (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed by comparing recombination efficiency between zebrafish and mouse experiments (Figures 3 and 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "ae11312c-160d-41eb-a239-7ffdcf77ac6f",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C53",
+      "claim": "The daily turnover rate of microglia in adult zebrafish is much higher than that reported in mice and human.",
+      "claim_type": "EXPLICIT",
+      "source": "Via EdU pulse-chase labeling assay, we found that the daily turnover rate of microglia in adult zebrafish is about 2.5%, much higher than that reported in mice and human (Lopez-Atalaya et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on EdU incorporation data (Figure 1) and comparison with published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "e28e9dbe-c3b8-46cf-a760-c377cfcb5be3",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C54",
+      "claim": "Zebrafish manifest much stronger regeneration capability than mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it is well recognized that zebrafish manifest much stronger regeneration capability than mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "2ce9f153-f706-41ab-b5d2-9abcf1fd725f",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C55",
+      "claim": "Differentiated cells like cardiomyocytes and hair cells in zebrafish are more proliferative than those in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, differentiated cells, like cardiomyocytes and hair cells in zebrafish are in general more proliferative than those in mammals (Chen et al., 2019; Marques et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on zebrafish regeneration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "bdf5a0dd-603e-4483-84e7-9a4150c36f1d",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C56",
+      "claim": "Efferocytosis of apoptotic cells elicits NOX2 assembly and promotes ROS production.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, efferocytosis of apoptotic cells has previously been shown to elicit NOX2 assembly and promote ROS production (Yvan-Charvet et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yvan-Charvet et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "4d2b0deb-90d4-4078-b7e0-47384973e679",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C57",
+      "claim": "ROS triggers cell death via induction of lysosome damage.",
+      "claim_type": "EXPLICIT",
+      "source": "which in turn triggers cell death via induction of lysosome damage (Patra et al., 2023; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on ROS and lysosome damage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "66a16301-7685-4f4c-8e89-0d800683c514",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C58",
+      "claim": "Rapid death of Spi1-null microglia might be caused by orchestration of multiple factors including downregulation of Csf1r.",
+      "claim_type": "EXPLICIT",
+      "source": "As PU.1 is a master regulator that controls the expression of series of genes required for macrophage/microglia development (Satoh et al., 2014), rapid death of Spi1-null microglia might probably be caused by the orchestration of multiplex factors, including the downregulation of colony-stimulating factor 1 receptor (Csf1r) (the essential regulator controlling the survival and maintenance of microglia in both mice and zebrafish) (Elmore et al., 2014; Yu et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on known PU.1 targets and functions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "18d21d5f-838b-45ce-b114-f4c5eafe941c",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C59",
+      "claim": "PU.1 attenuates the transcriptional activity of the p53 tumor suppressor family through direct binding to the DNA-binding and/or oligomerization domains of p53/p73 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study by Tschan et al has shown that PU.1 attenuates the transcriptional activity of the p53 tumor suppressor family through direct binding to the DNA-binding and/or the oligomerization domains of p53/p73 proteins (Tschan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tschan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "85901791-a3b5-4458-a68f-5786c4cfc018",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C60",
+      "claim": "Three PU.1 binding sequences (GAGGAA) are located on the antisense strand of the tp53 promoter in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Via in-silico analysis of tp53 promoter region in zebrafish, we also found three PU.1 binding sequences (GAGGAA) located on antisense strand from position \u20131047 to \u20131042, \u20131098 to \u20131093, and \u20131423 to \u20131418 relative to the transcriptional start site of the tp53 promoter (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in-silico analysis (Figure 5\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "8b0bbdc3-dae4-4103-bd01-10b7670a564f",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C61",
+      "claim": "Pu.1 might regulate the activity of P53 through direct protein-protein or protein-DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that Pu.1 might regulate the activity of P53 through direct protein-protein or protein-DNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the presence of PU.1 binding sites in tp53 promoter and previous studies on PU.1-p53 interactions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "4d39f8f4-c521-4ee5-a8b9-c1248422321c",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C62",
+      "claim": "The decrease of csf1ra was not observed in pu.1-deficient microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to the robust upregulation of p53 in pu.1-deficient microglia, the decrease of csf1ra was not observed (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RNA-seq analysis (Figure 5\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "f6ee49f2-c082-4173-8b3a-844f66780fd1",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C63",
+      "claim": "The dosage of PU.1/Pu.1 may serve as a checkpoint to determine the fitness of microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings suggest that the dosage of PU.1/Pu.1 may serve as a checkpoint to determine the fitness of microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "f253883a-25cd-4bbd-994f-c7180c7de4a2",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C64",
+      "claim": "Tp53 is involved in cell competition regulation in both hematopoietic and non-hemopoietic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent studies have revealed that, in addition to regulating cell cycle arrest and apoptosis in DNA damage response (Ou and Schumacher, 2018; Vaddavalli and Schumacher, 2022), Tp53 is also involved in cell competition regulation in both hematopoietic and non-hemopoietic tissues (Bondar and Medzhitov, 2010; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on Tp53 and cell competition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "036ce755-f5b3-4606-8699-f9fd3b1b2de0",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C65",
+      "claim": "Tp53-dependent cell competition depends on the relative level of Tp53 in competing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we further showed that the chronic elimination of pu.1-deficient microglia in zebrafish is mediated by Tp53-dependent cell competition, which has been shown to depend on the relative level of Tp53 in competing cells (Bondar and Medzhitov, 2010; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on Tp53-dependent cell competition.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "1b323836-63e1-465b-8b6c-cbb5d5a37f1f",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C66",
+      "claim": "The level of csf1ra is highly associated with the fitness of microglia and regulates their turnover and maintenance via cell competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we have shown that the level of csf1ra, the zebrafish orthologue of mammalian Csf1r, is highly associated with the fitness of microglia and regulates the turnover and maintenance of microglia via cell competition (Yu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "e29c2fb0-1e73-4b5a-b29a-41c1a4ad8711",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C67",
+      "claim": "Conditional inactivation of pu.1 in embryonic microglia showed no effect on microglial survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, conditional knockout of pu.1 in embryonic microglia also showed no effect on microglial survival (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by 4-OHT treatment at embryonic stage (Figure 3\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "9bd946f3-6fe0-4f17-8e47-a2710def77b7",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C68",
+      "claim": "Microglia and DCs can be distinguished with about 90% accuracy based on amoeboid and ramified morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the amoeboid and ramified morphology, microglia and DCs could be distinguished with about 90% accuracy (Figure 3\u2014figure supplement 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by morphological analysis (Figure 3\u2014figure supplement 6A-B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "59186ca2-7e6c-4e62-afb8-e3812d042d84",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C69",
+      "claim": "pu.1-deficient microglia were significantly reduced at 3 months post-injection based on morphological distinction.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, pu.1-deficient microglia were significantly reduced at 3 mpi (Figure 3\u2014figure supplement 6C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification of microglia and DCs separately based on morphology (Figure 3\u2014figure supplement 6C-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "a557cc98-6535-4873-821e-30f7605999bb",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C70",
+      "claim": "The number and proportion of DsRed+ cells in the retina and spinal cord were significantly reduced in pu.1KI/\u0394839;Tg(coro1a:CreER) fish by 3 months post-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the number and proportion of DsRed+ cells in the retina and spinal cord were also significantly reduced in the pu.1KI/\u0394839;Tg(coro1a:CreER) fish by 3 mpi (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification in retina and spinal cord (Figure 3\u2014figure supplement 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "4ec15b38-cc30-485d-8c27-7672ffac423e",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C71",
+      "claim": "Microglia are the major population of coro1a+ cells in the brain and spinal cord and the exclusive population in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Since microglia are the major population of the coro1a+ cells in the brain and spinal cord and the exclusive population in the retina (Wu et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "62e58e56-ebc6-4029-8067-fa228c73c322",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C72",
+      "claim": "Spi-b has acquired lineage-specific roles during evolution and becomes absent in murine microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that Spi-b has acquired lineage-specific roles during evolution and becomes absent in murine microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Spi-b is barely detectable in mouse microglia (Figure 6\u2014figure supplement 1A).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "e661a022-d961-4f0d-94c7-a2a9c1fac3c6",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C73",
+      "claim": "Without tamoxifen, the number of IBA1+ microglia showed no difference in the brain of Spi1Fl/+;Cx3cr1CreER and Spi1Fl/Fl;Cx3cr1CreER mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, without TAM, the number of the IBA1+ microglia showed no difference in the brain of Spi1Fl/+;Cx3cr1CreER and Spi1Fl/Fl;Cx3cr1CreER mice (Figure 6\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by IBA1 staining in mice without tamoxifen treatment (Figure 6\u2014figure supplement 1D-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "bbb3b0fb-d26e-40f3-90d9-847256112e51",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C74",
+      "claim": "Conditional inactivation of PU.1 in mice is similar to double depletion of pu.1 and spi-b in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after TAM injection, the number of the IBA1+ microglia in Spi1Fl/Fl;Cx3cr1CreER mice were drastically reduced compared to that in Spi1Fl/+;Cx3cr1CreER mice (Figure 6A\u2013C), suggesting that PU.1 is indeed required for the survival of adult microglia, which is similar to the double depletion of pu.1 and spi-b in zebrafish (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of phenotypes in mice and zebrafish (Figures 6A-C and Figure 3\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "63549f2d-4d02-4d0a-920c-0417bb9e21ec",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C75",
+      "claim": "Spi1 heterozygous mice show no difference in the viability of tissue resident macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "which appears to occur only in the presence of the WT Spi1Fl/+ microglia, as Spi1 heterozygous mice show no difference in the viability of tissue resident macrophages (Karpurapu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Karpurapu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "0ffa4da4-d106-43a1-98cf-a1e3b21a8ed1",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C76",
+      "claim": "NHEJ-mediated knock-in of reporter gene displays 10-fold higher efficiency compared to homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to homologous recombination (HR), NHEJ-mediated knock-in of reporter gene has been shown to display 10-fold higher efficiency (Auer et al., 2014; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies comparing NHEJ and HR efficiency.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "9f926bb0-274e-413e-ba0c-396b0fa8458b",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "claim_id": "C77",
+      "claim": "Lysosome is a convergent point for many biological processes including metabolism, cellular senescence, DNA repair, ER stress and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, microglia turnover could potentially be affected by the distinct efferocytotic burdens via the lysosome pathway, as lysosome has been known to be a convergent point for many biological process, including metabolism, cellular senescence, DNA repair, ER stress and even apoptosis (Franco-Ju\u00e1rez et al., 2022; Perera and Zoncu, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to reviews on lysosome function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "daf7c574-d7bc-4f58-9e4a-41b09ad69f5c",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Adult zebrafish microglia undergo rapid turnover (~2.6% daily) with random proliferation and no specialized precursor cells, while dendritic cells show much lower turnover rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 are well-supported by EdU pulse-chase experiments (Figure 1B-C) and EdU-BrdU double-pulse assays (Figure 1D-E). The calculated turnover rate is based on linear EdU incorporation across multiple time points, and the absence of precursors is demonstrated by comparable BrdU incorporation between EdU+ and EdU- microglia populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "1bc760cc-37c7-4fbf-b9b8-6a101073ca4b",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The pu.1KI allele is a functional knock-in that recapitulates endogenous pu.1 expression and can be converted to a conditional knockout (pu.1CKO) allele via Cre-mediated excision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by multiple lines of evidence including co-localization studies (Figure 2B), rescue experiments (Figure 2E-F), fluorescent imaging and sequencing of Cre-mediated excision (Figure 2G-H), and phenotypic validation (Figure 2I-J). The allele design and validation are comprehensive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "825f2da8-223b-4d97-a4aa-c518aac21620",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pu.1 is not required for immediate survival of microglia in adult zebrafish but is essential for their long-term maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C14, C15, and C67 are supported by time-course experiments showing no immediate loss at 2-8 days post-injection (Figure 3B-C, Figure 3\u2014figure supplement 1) but significant reduction at 1-3 months (Figure 3E-F). The temporal distinction between immediate viability and long-term maintenance is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "de1ad4c5-62f2-45ab-837d-9837524742a5",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pu.1 and Spi-b regulate microglia maintenance in a dosage-dependent manner in zebrafish, with double knockout leading to rapid apoptotic depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are supported by experiments showing rapid microglia depletion in pu.1/spi-b double mutants (Figure 3\u2014figure supplements 3-4) with Annexin V staining confirming apoptosis. The dosage-dependent effect is demonstrated by comparing single versus double gene inactivation outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "1c0c8b58-8026-40e2-980c-a6428e569d37",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "pu.1-deficient microglia are eliminated via cell competition in mosaic conditions but not in null mutant backgrounds, showing increased apoptosis and decreased proliferation only when competing with pu.1-sufficient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 are well-supported by comparing mosaic (Figure 4B-C) versus null mutant conditions (Figure 4E-F). The differential effects on TUNEL and BrdU incorporation between the two conditions provide strong evidence for cell competition as the mechanism of elimination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "e21575dd-2d6b-4f73-b8d8-1d5db09532d3",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The chronic elimination of pu.1-deficient microglia in mosaic conditions is mediated by Tp53-dependent cell competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by RNA-seq showing tp53 upregulation in pu.1-deficient microglia (Figure 5B-C) and rescue experiments demonstrating restoration of pu.1-deficient microglia numbers in tp53-/- background (Figure 5D-F). The mechanistic link between Pu.1 loss, Tp53 elevation, and cell competition is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "267145df-bc77-432c-bdce-e0c77ca2b769",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The dosage-dependent regulation of microglia maintenance by PU.1/SPI1 is evolutionarily conserved from zebrafish to mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C25-C28 are supported by parallel experiments in mice showing Spi-b is barely detectable (Figure 6\u2014figure supplement 1A), complete Spi1 knockout causes rapid microglia depletion (Figure 6A-C), and heterozygous Spi1 loss leads to chronic elimination in mosaic conditions (Figure 6E-F). The conservation of dosage-dependent mechanisms is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "32392434-7abe-459a-8f10-9d38750493ed",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "pu.1-deficient microglia are specifically reduced in multiple CNS regions including brain, retina, and spinal cord at 3 months post-injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C68-C71 are supported by quantification in multiple CNS regions (Figure 3\u2014figure supplements 2, 5, 6) showing consistent reduction of pu.1-deficient microglia. The morphological distinction between microglia and DCs (90% accuracy) provides additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "8ef4aef7-5e20-473b-a02e-606df6ce59a3",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The NHEJ-mediated knock-in method achieves ~15% germline transmission efficiency for the pu.1KI allele, though Cre-mediated excision efficiency appears lower in zebrafish than in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C76 are supported by reported germline transmission rates (Figure 2\u2014figure supplement 1) and comparative observations between zebrafish and mouse experiments. The technical observations are well-documented though the lower Cre efficiency in zebrafish requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "da0db08b-52f9-4340-a0c8-439a7481430a",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The daily turnover rate of microglia in adult zebrafish (~2.5%) is much higher than in mice and humans, potentially due to zebrafish's enhanced regenerative capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 is supported by EdU data (Figure 1), but the comparison to mice/humans and the proposed explanation (C54-C55) are speculative. The authors acknowledge that the calculation does not account for cell cycle length, which could lead to overestimation. The mechanistic explanation for species differences requires additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "219a35e9-00b8-4eaf-9a1a-f470ad31475c",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pu.1 may regulate Tp53 activity through direct protein-protein or protein-DNA interactions, as evidenced by PU.1 binding sites in the tp53 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 are based on in-silico analysis (Figure 5\u2014figure supplement 2) and prior literature (C59), but lack direct experimental validation of the proposed interactions. While the presence of PU.1 binding sites is demonstrated, functional validation through ChIP, reporter assays, or co-immunoprecipitation is needed to confirm the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "43526eac-12bd-4c7f-88bf-0600a0488a11",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Unlike previous findings with csf1ra, the decrease of csf1ra was not observed in pu.1-deficient microglia despite its known role in microglia fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C66 are supported by RNA-seq data (Figure 5\u2014figure supplement 3) showing no change in csf1ra expression. This negative result is important for distinguishing the Tp53-mediated mechanism from the previously described csf1ra-mediated cell competition pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "63994e06-939d-4dfa-9f00-c41c242ba87a",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PU.1/Pu.1 dosage may serve as a checkpoint for microglia fitness, with rapid death of Spi1-null microglia potentially caused by multiple factors including Csf1r downregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58 and C63 are largely speculative interpretations based on the overall findings. While the dosage-dependent effects are well-demonstrated, the specific molecular mechanisms underlying rapid death in complete knockouts remain unclear. The proposed role of Csf1r downregulation is not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "108e52bd-27b5-4926-9d03-bab30b8536e4",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context regarding microglia biology, PU.1 function, and cell competition mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C29-C50, C64-C65, C72-C75, C77 represent established knowledge from the literature, properly cited and contextualized. These claims provide the scientific foundation for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "d6c915ab-fb2e-485d-82e1-ce9d377a7d9b",
+      "content_id": "3ecf9b5a-9a1f-4b44-8241-85f4fca2a87c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Efferocytosis-induced ROS production may contribute to microglia turnover through lysosome damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C57 are cited from prior literature but presented as a speculative mechanism to explain differences in microglia turnover rates between species. This hypothesis is not directly tested in the current study and requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "3b67f40d-9e18-45eb-a310-e11c0bf5c096",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors estimate the daily turnover rate of microglia in adult zebrafish at approximately 2.6% using EdU pulse-chase labeling, finding that microglia randomly undergo proliferation with no well-defined precursors, and that dendritic cells have a much lower turnover rate.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly acknowledges 'Using EdU pulse-chase labelling, they first estimate the daily turnover rate of microglia in the adult zebrafish brain which was found to be higher than rates previously estimated for mice and humans.' No concerns were raised about these findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "887528e7-2583-4a82-bb3c-8971c57a4c0e",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors generated and validated a pu.1 knock-in allele (pu.1KI) that recapitulates endogenous pu.1 expression and function, and a conditional knockout allele (pu.1CKO) that phenotypically mimics the null mutant after Cre-mediated recombination.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 praises the 'non-homologous end joining knock-in strategy' and notes the approach 'allowed the authors to target a single allele for recombination.' Reviewer 3 describes the allele as 'elegantly designed' and notes it 'allows for the visual detection of expression of the knockout allele.' Both reviewers affirm the genetic tool's validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "cb6c084d-8ba8-4878-8a2b-ffbbe054983f",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrate that pu.1-deficient microglia are immediately viable in adult zebrafish (no loss at 2 and 8 days post-injection) but are essential for long-term maintenance, with significant reduction at 1 and 3 months post-injection.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'This identified that although there is no short-term consequence to loss of pu.1, microglia lacking any functional copy of pu.1 are depleted over the course of months.' Reviewer 3 confirms 'they do not find a difference in microglia number at 2 and 8 days or 1 month post injection of Tamoxifen. However, at 3 month post injection, a strong decrease in mutant microglia could be detected.' Both reviewers accept these findings without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "0429551b-89d3-406f-946a-e37a38ffdd35",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors show that in mosaic conditions, pu.1-deficient microglia exhibit increased apoptosis and decreased proliferation compared to wildtype cells, but in null mutant conditions (without wildtype competitors), pu.1-deficient microglia show normal viability and proliferation, indicating cell competition drives the elimination.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes 'by comparing the turnover of wildtype and mutant cells in the same animal the authors can make very convincing arguments about the effect of chronic loss of pu.1. Likely this phenotype would be either very subtle or non-existent without the point of comparison and competition with the wildtype cells.' Reviewer 3 confirms 'the authors further show that the depletion of microglia in the conditional mutants is dependent on the presence of WT microglia.' Both reviewers affirm the cell competition mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "a2d9688f-430c-4ddc-886b-99a3e9d42ed1",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors identify tp53 as robustly upregulated in pu.1-deficient microglia by RNA-seq, and demonstrate that loss of Tp53 rescues the microglia depletion phenotype in mosaic conditions, indicating Tp53-mediated cell competition drives chronic elimination.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'The demonstration of changes to proliferation and cell death in concert with higher expression of tp53 is compelling evidence for the authors argument.' Reviewer 3 notes 'Confirmation of the functional significance of the observed upregulation of tp53 in mutant microglia through double mutant analysis provides some mechanistic insight.' Both reviewers accept the tp53 findings, though Reviewer 1 suggests further mechanistic investigation would strengthen the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "6ea1ee79-0785-45d5-9c01-1f1941e56e6b",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors show that conditional inactivation of Pu.1 in adult spi-b null mutants leads to rapid microglia depletion via apoptosis, suggesting Pu.1 and Spi-b regulate microglia maintenance in a dosage-dependent manner in zebrafish.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 raises a significant concern: 'they only provide evidence of apoptosis in 3-5 dpf embryos, a stage at which loss of pu.1 alone does lead to a complete loss of microglia (Fig.2E). A control of pu.1 KI/d839 mutants treated with 4-OHT should be added to show that this effect is indeed dependent on the loss of spi-b. In addition, experiments should be performed to show apoptosis in the adult brain after cKO of pu.1 in spi-b mutants.' The BRE notes the authors 'clarified the distinct phenotypes observed with global versus condition pu.1 knockout,' suggesting partial resolution but indicating initial uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "a7f0f2fc-c7fc-4d20-9d1d-7da429b3f89e",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors demonstrate that dosage-dependent regulation of microglia maintenance by PU.1/SPI1 is evolutionarily conserved in mice, with conditional inactivation of both Spi1 alleles causing rapid depletion and removal of a single copy leading to chronic elimination in mosaic conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes 'To extend these findings to mammals, the authors generated a conditional Pu.1 allele in mice and performed similar analyses, finding that loss of a single copy of Pu.1 resulted in similar long-term loss of Pu.1-deficient microglia.' Reviewer 3 states 'The combination of analysis of pu.1 function in two model systems, zebrafish and mouse, strengthens the conclusions of the paper.' Both reviewers affirm the conservation of the mechanism across species.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "1402c87e-6121-46e5-9b20-f7c1da8b6a3e",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors identify three PU.1 binding sequences in the zebrafish tp53 promoter through in-silico analysis and propose that Pu.1 might regulate P53 activity through direct protein-protein or protein-DNA interactions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 initially requested investigation of the pu.1-tp53 relationship, asking 'does pu.1 directly bind and repress tp53 expression?' The BRE notes 'The authors performed in silico analyses to support a regulatory relationship between Pu.1 and Tp53. They identified three putative Pu.1 binding sites within the zebrafish tp53 promoter region. Furthermore, they cite prior evidence demonstrating a similar interaction between PU.1 and members of the P53 family through direct DNA binding.' This indicates the authors addressed the concern with computational and literature-based evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "2630580f-e52e-4ae0-a986-abe02087be8c",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors show that Spi1 expression is robust in adult murine microglia while Spi-b is barely detectable, suggesting Spi-b has acquired lineage-specific roles during evolution and becomes absent in murine microglia.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 suggests 'The paper would likely also benefit from more in-depth discussion of the relationship of the zebrafish alleles and their relationship to mammalian Pu.1.' The BRE notes 'the authors' proposed collaborative relationship between Pu.1 and Spi-b has been expanded in the revised manuscript,' indicating the authors addressed this concern. No reviewer challenges the expression data itself.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "f101eb54-40dc-4553-9e48-42704989e753",
+      "content_id": "ee65f7ac-b399-43c6-b097-bf606615e1f7",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors present RNA-seq analysis showing tp53 upregulation in pu.1-deficient microglia, based on 3 pools of 3-5 cells each (9-15 cells total).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 raises a methodological concern: 'The presented RNA-Seq analysis of mutant microglia is underpowered and details on how the data was analyzed is missing. Only 9-15 cells were analyzed in total (3 pools of 3-5 cells each). Further the variability in relative gene expression of ccl35b.1, which was used as a quality control and inclusion criterion to define pools consisting of microglia, is extremely high (between ~4 and ~1600, Fig. S7A).' The BRE notes 'The authors have elaborated on the details of the RNA-Seq procedure,' suggesting the concern was partially addressed but the initial critique indicates uncertainty about the robustness of the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bb562bfa-fe58-49d0-945c-42b9a566197d",
+      "result_id": "daf7c574-d7bc-4f58-9e4a-41b09ad69f5c"
+    },
+    {
+      "claim_id": "e8f2eb1f-8ace-4c49-bcb6-3adcf038affa",
+      "result_id": "daf7c574-d7bc-4f58-9e4a-41b09ad69f5c"
+    },
+    {
+      "claim_id": "2be00b65-6752-45a6-8833-d81d01f7af97",
+      "result_id": "daf7c574-d7bc-4f58-9e4a-41b09ad69f5c"
+    },
+    {
+      "claim_id": "06da74ad-f983-4027-afdd-a57cdb30e38f",
+      "result_id": "1bc760cc-37c7-4fbf-b9b8-6a101073ca4b"
+    },
+    {
+      "claim_id": "e8e74d14-9bba-48af-981c-2c7bd501732a",
+      "result_id": "1bc760cc-37c7-4fbf-b9b8-6a101073ca4b"
+    },
+    {
+      "claim_id": "3e7123d4-5437-46fe-a733-b817271e31bb",
+      "result_id": "1bc760cc-37c7-4fbf-b9b8-6a101073ca4b"
+    },
+    {
+      "claim_id": "98228bb7-1204-4310-8219-5094fff3047b",
+      "result_id": "1bc760cc-37c7-4fbf-b9b8-6a101073ca4b"
+    },
+    {
+      "claim_id": "3606e2ed-5506-456a-b3de-6e921ab749cd",
+      "result_id": "825f2da8-223b-4d97-a4aa-c518aac21620"
+    },
+    {
+      "claim_id": "668fae9d-259d-454d-954e-3e7adf4ba177",
+      "result_id": "825f2da8-223b-4d97-a4aa-c518aac21620"
+    },
+    {
+      "claim_id": "2b354702-2fb1-486c-b8dc-c7ac2f1021c0",
+      "result_id": "825f2da8-223b-4d97-a4aa-c518aac21620"
+    },
+    {
+      "claim_id": "e29c2fb0-1e73-4b5a-b29a-41c1a4ad8711",
+      "result_id": "825f2da8-223b-4d97-a4aa-c518aac21620"
+    },
+    {
+      "claim_id": "c28a4d2b-1c5d-4cd5-a375-223119b0b332",
+      "result_id": "de1ad4c5-62f2-45ab-837d-9837524742a5"
+    },
+    {
+      "claim_id": "c917e553-7b02-4d9e-ad83-169b2cfd040c",
+      "result_id": "de1ad4c5-62f2-45ab-837d-9837524742a5"
+    },
+    {
+      "claim_id": "8fba80e0-af65-4c69-b64a-475d273f2051",
+      "result_id": "1c0c8b58-8026-40e2-980c-a6428e569d37"
+    },
+    {
+      "claim_id": "f6174b6c-3a54-4132-b773-2e2aff05ff97",
+      "result_id": "1c0c8b58-8026-40e2-980c-a6428e569d37"
+    },
+    {
+      "claim_id": "ea8d59d2-9ff2-4331-b468-e5b501ab4f44",
+      "result_id": "1c0c8b58-8026-40e2-980c-a6428e569d37"
+    },
+    {
+      "claim_id": "c65d646a-f646-4dda-b162-ed01efe8d1a7",
+      "result_id": "1c0c8b58-8026-40e2-980c-a6428e569d37"
+    },
+    {
+      "claim_id": "45989be0-0233-432f-9daf-09838211a037",
+      "result_id": "1c0c8b58-8026-40e2-980c-a6428e569d37"
+    },
+    {
+      "claim_id": "d75e3476-73ca-41c3-be62-be8aea3e8fa9",
+      "result_id": "e21575dd-2d6b-4f73-b8d8-1d5db09532d3"
+    },
+    {
+      "claim_id": "d3195e96-b387-4e95-a065-487c16a2e827",
+      "result_id": "e21575dd-2d6b-4f73-b8d8-1d5db09532d3"
+    },
+    {
+      "claim_id": "76ac07a1-4ca8-4be0-b988-8aa9aa3ee733",
+      "result_id": "e21575dd-2d6b-4f73-b8d8-1d5db09532d3"
+    },
+    {
+      "claim_id": "01b29662-50bf-4bc4-89ce-056b44d2988f",
+      "result_id": "267145df-bc77-432c-bdce-e0c77ca2b769"
+    },
+    {
+      "claim_id": "f806b504-164f-4124-a0e5-48d717082a2c",
+      "result_id": "267145df-bc77-432c-bdce-e0c77ca2b769"
+    },
+    {
+      "claim_id": "ac133caa-5a83-49ce-a649-86a58d1610c5",
+      "result_id": "267145df-bc77-432c-bdce-e0c77ca2b769"
+    },
+    {
+      "claim_id": "bead020d-f069-4dea-8fb7-8cbbd64021ad",
+      "result_id": "267145df-bc77-432c-bdce-e0c77ca2b769"
+    },
+    {
+      "claim_id": "e8e78c3e-511f-4af5-8def-0adacd9cf532",
+      "result_id": "267145df-bc77-432c-bdce-e0c77ca2b769"
+    },
+    {
+      "claim_id": "cf98a7fa-8b98-44cc-9f65-d48291ec4613",
+      "result_id": "32392434-7abe-459a-8f10-9d38750493ed"
+    },
+    {
+      "claim_id": "9bd946f3-6fe0-4f17-8e47-a2710def77b7",
+      "result_id": "32392434-7abe-459a-8f10-9d38750493ed"
+    },
+    {
+      "claim_id": "59186ca2-7e6c-4e62-afb8-e3812d042d84",
+      "result_id": "32392434-7abe-459a-8f10-9d38750493ed"
+    },
+    {
+      "claim_id": "a557cc98-6535-4873-821e-30f7605999bb",
+      "result_id": "32392434-7abe-459a-8f10-9d38750493ed"
+    },
+    {
+      "claim_id": "4ec15b38-cc30-485d-8c27-7672ffac423e",
+      "result_id": "32392434-7abe-459a-8f10-9d38750493ed"
+    },
+    {
+      "claim_id": "5743e2c4-0be3-4752-8670-180264fed061",
+      "result_id": "8ef4aef7-5e20-473b-a02e-606df6ce59a3"
+    },
+    {
+      "claim_id": "3119ac66-e78b-4e0b-baf1-ab687d7bdee8",
+      "result_id": "8ef4aef7-5e20-473b-a02e-606df6ce59a3"
+    },
+    {
+      "claim_id": "0ffa4da4-d106-43a1-98cf-a1e3b21a8ed1",
+      "result_id": "8ef4aef7-5e20-473b-a02e-606df6ce59a3"
+    },
+    {
+      "claim_id": "ae11312c-160d-41eb-a239-7ffdcf77ac6f",
+      "result_id": "da0db08b-52f9-4340-a0c8-439a7481430a"
+    },
+    {
+      "claim_id": "e28e9dbe-c3b8-46cf-a760-c377cfcb5be3",
+      "result_id": "da0db08b-52f9-4340-a0c8-439a7481430a"
+    },
+    {
+      "claim_id": "2ce9f153-f706-41ab-b5d2-9abcf1fd725f",
+      "result_id": "da0db08b-52f9-4340-a0c8-439a7481430a"
+    },
+    {
+      "claim_id": "85901791-a3b5-4458-a68f-5786c4cfc018",
+      "result_id": "219a35e9-00b8-4eaf-9a1a-f470ad31475c"
+    },
+    {
+      "claim_id": "8b0bbdc3-dae4-4103-bd01-10b7670a564f",
+      "result_id": "219a35e9-00b8-4eaf-9a1a-f470ad31475c"
+    },
+    {
+      "claim_id": "18d21d5f-838b-45ce-b114-f4c5eafe941c",
+      "result_id": "219a35e9-00b8-4eaf-9a1a-f470ad31475c"
+    },
+    {
+      "claim_id": "4d39f8f4-c521-4ee5-a8b9-c1248422321c",
+      "result_id": "43526eac-12bd-4c7f-88bf-0600a0488a11"
+    },
+    {
+      "claim_id": "1b323836-63e1-465b-8b6c-cbb5d5a37f1f",
+      "result_id": "43526eac-12bd-4c7f-88bf-0600a0488a11"
+    },
+    {
+      "claim_id": "66a16301-7685-4f4c-8e89-0d800683c514",
+      "result_id": "63994e06-939d-4dfa-9f00-c41c242ba87a"
+    },
+    {
+      "claim_id": "f6ee49f2-c082-4173-8b3a-844f66780fd1",
+      "result_id": "63994e06-939d-4dfa-9f00-c41c242ba87a"
+    },
+    {
+      "claim_id": "62da1782-cd06-4620-935f-43f3305f44bb",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "faf632e4-6e0e-4127-8d34-4e96f811f3b0",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "d2fb25b5-86d5-415c-af7a-0814d5890510",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "c9b96ddf-38e6-45d6-87cc-6c1161c1d331",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "78776284-21d8-4f68-a0b9-cd17d1944e90",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "efdcae3d-3282-417d-a1cd-dab8c65efadc",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "ecff1c69-d3cd-48ee-9089-ad28436454e8",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "c7d7b976-2192-4a4f-b83f-6d1773122ad3",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "97d65df8-f809-4fe3-8737-3a8c9ae76949",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "68d0095f-8588-4e5e-a251-f807a867e2a7",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "a3ab84ed-ce2f-406e-882f-b29abe7f8fdb",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "a19c5f37-887e-45eb-8064-6291371bf1bc",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "4f03ef95-1f4d-4cc5-9647-53506be2e46c",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "a5f14476-3eec-49d2-8860-cb6e26b541dc",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "1efe9cba-b328-405b-a01d-105afad68634",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "04d1f588-a945-4352-96df-6b436a2043df",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "7b99fa28-cf58-41dc-89c5-fae72edae232",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "33e22013-6f23-4574-b40e-62df3b950098",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "9ded4f7b-99e2-49a9-af2e-41e2d6f998e7",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "d8fc0fe2-4e5c-49bf-8de2-c108880bf524",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "b47c561e-e80d-4f34-a80a-9e11d16e4c7e",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "ee3f4929-b8cb-456e-b73d-08df000be8a5",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "bbbef8a8-ca9b-44d8-8eca-27d7bbcc5117",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "f253883a-25cd-4bbd-994f-c7180c7de4a2",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "036ce755-f5b3-4606-8699-f9fd3b1b2de0",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "62e58e56-ebc6-4029-8067-fa228c73c322",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "e661a022-d961-4f0d-94c7-a2a9c1fac3c6",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "bbb3b0fb-d26e-40f3-90d9-847256112e51",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "63549f2d-4d02-4d0a-920c-0417bb9e21ec",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "9f926bb0-274e-413e-ba0c-396b0fa8458b",
+      "result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4"
+    },
+    {
+      "claim_id": "bdf5a0dd-603e-4483-84e7-9a4150c36f1d",
+      "result_id": "d6c915ab-fb2e-485d-82e1-ce9d377a7d9b"
+    },
+    {
+      "claim_id": "4d2b0deb-90d4-4078-b7e0-47384973e679",
+      "result_id": "d6c915ab-fb2e-485d-82e1-ce9d377a7d9b"
+    },
+    {
+      "claim_id": "bb562bfa-fe58-49d0-945c-42b9a566197d",
+      "result_id": "3b67f40d-9e18-45eb-a310-e11c0bf5c096"
+    },
+    {
+      "claim_id": "e8f2eb1f-8ace-4c49-bcb6-3adcf038affa",
+      "result_id": "3b67f40d-9e18-45eb-a310-e11c0bf5c096"
+    },
+    {
+      "claim_id": "2be00b65-6752-45a6-8833-d81d01f7af97",
+      "result_id": "3b67f40d-9e18-45eb-a310-e11c0bf5c096"
+    },
+    {
+      "claim_id": "06da74ad-f983-4027-afdd-a57cdb30e38f",
+      "result_id": "887528e7-2583-4a82-bb3c-8971c57a4c0e"
+    },
+    {
+      "claim_id": "e8e74d14-9bba-48af-981c-2c7bd501732a",
+      "result_id": "887528e7-2583-4a82-bb3c-8971c57a4c0e"
+    },
+    {
+      "claim_id": "3e7123d4-5437-46fe-a733-b817271e31bb",
+      "result_id": "887528e7-2583-4a82-bb3c-8971c57a4c0e"
+    },
+    {
+      "claim_id": "98228bb7-1204-4310-8219-5094fff3047b",
+      "result_id": "887528e7-2583-4a82-bb3c-8971c57a4c0e"
+    },
+    {
+      "claim_id": "3606e2ed-5506-456a-b3de-6e921ab749cd",
+      "result_id": "cb6c084d-8ba8-4878-8a2b-ffbbe054983f"
+    },
+    {
+      "claim_id": "668fae9d-259d-454d-954e-3e7adf4ba177",
+      "result_id": "cb6c084d-8ba8-4878-8a2b-ffbbe054983f"
+    },
+    {
+      "claim_id": "2b354702-2fb1-486c-b8dc-c7ac2f1021c0",
+      "result_id": "cb6c084d-8ba8-4878-8a2b-ffbbe054983f"
+    },
+    {
+      "claim_id": "8fba80e0-af65-4c69-b64a-475d273f2051",
+      "result_id": "0429551b-89d3-406f-946a-e37a38ffdd35"
+    },
+    {
+      "claim_id": "f6174b6c-3a54-4132-b773-2e2aff05ff97",
+      "result_id": "0429551b-89d3-406f-946a-e37a38ffdd35"
+    },
+    {
+      "claim_id": "ea8d59d2-9ff2-4331-b468-e5b501ab4f44",
+      "result_id": "0429551b-89d3-406f-946a-e37a38ffdd35"
+    },
+    {
+      "claim_id": "c65d646a-f646-4dda-b162-ed01efe8d1a7",
+      "result_id": "0429551b-89d3-406f-946a-e37a38ffdd35"
+    },
+    {
+      "claim_id": "45989be0-0233-432f-9daf-09838211a037",
+      "result_id": "0429551b-89d3-406f-946a-e37a38ffdd35"
+    },
+    {
+      "claim_id": "d75e3476-73ca-41c3-be62-be8aea3e8fa9",
+      "result_id": "a2d9688f-430c-4ddc-886b-99a3e9d42ed1"
+    },
+    {
+      "claim_id": "d3195e96-b387-4e95-a065-487c16a2e827",
+      "result_id": "a2d9688f-430c-4ddc-886b-99a3e9d42ed1"
+    },
+    {
+      "claim_id": "76ac07a1-4ca8-4be0-b988-8aa9aa3ee733",
+      "result_id": "a2d9688f-430c-4ddc-886b-99a3e9d42ed1"
+    },
+    {
+      "claim_id": "c28a4d2b-1c5d-4cd5-a375-223119b0b332",
+      "result_id": "6ea1ee79-0785-45d5-9c01-1f1941e56e6b"
+    },
+    {
+      "claim_id": "c917e553-7b02-4d9e-ad83-169b2cfd040c",
+      "result_id": "6ea1ee79-0785-45d5-9c01-1f1941e56e6b"
+    },
+    {
+      "claim_id": "01b29662-50bf-4bc4-89ce-056b44d2988f",
+      "result_id": "a7f0f2fc-c7fc-4d20-9d1d-7da429b3f89e"
+    },
+    {
+      "claim_id": "ac133caa-5a83-49ce-a649-86a58d1610c5",
+      "result_id": "a7f0f2fc-c7fc-4d20-9d1d-7da429b3f89e"
+    },
+    {
+      "claim_id": "bead020d-f069-4dea-8fb7-8cbbd64021ad",
+      "result_id": "a7f0f2fc-c7fc-4d20-9d1d-7da429b3f89e"
+    },
+    {
+      "claim_id": "e8e78c3e-511f-4af5-8def-0adacd9cf532",
+      "result_id": "a7f0f2fc-c7fc-4d20-9d1d-7da429b3f89e"
+    },
+    {
+      "claim_id": "85901791-a3b5-4458-a68f-5786c4cfc018",
+      "result_id": "1402c87e-6121-46e5-9b20-f7c1da8b6a3e"
+    },
+    {
+      "claim_id": "8b0bbdc3-dae4-4103-bd01-10b7670a564f",
+      "result_id": "1402c87e-6121-46e5-9b20-f7c1da8b6a3e"
+    },
+    {
+      "claim_id": "f806b504-164f-4124-a0e5-48d717082a2c",
+      "result_id": "2630580f-e52e-4ae0-a986-abe02087be8c"
+    },
+    {
+      "claim_id": "62e58e56-ebc6-4029-8067-fa228c73c322",
+      "result_id": "2630580f-e52e-4ae0-a986-abe02087be8c"
+    },
+    {
+      "claim_id": "d75e3476-73ca-41c3-be62-be8aea3e8fa9",
+      "result_id": "f101eb54-40dc-4553-9e48-42704989e753"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "875d0936-5329-4b42-9548-4f22a2083555",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "daf7c574-d7bc-4f58-9e4a-41b09ad69f5c",
+      "peer_result_id": "3b67f40d-9e18-45eb-a310-e11c0bf5c096",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C7-C9 regarding microglia turnover rate measurements using EdU pulse-chase experiments. Both evaluations find the evidence SUPPORTED with no concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "25896ba5-cc24-46c0-a256-94e36db5a571",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "1bc760cc-37c7-4fbf-b9b8-6a101073ca4b",
+      "peer_result_id": "887528e7-2583-4a82-bb3c-8971c57a4c0e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C10-C13 regarding the conditional allele design and validation. Both evaluations find the genetic tool SUPPORTED, with peer reviewers praising it as 'elegantly designed' and OpenEval noting 'comprehensive' validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "22f55860-1cd5-4ccb-a92b-e7982b2b55e6",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "825f2da8-223b-4d97-a4aa-c518aac21620",
+      "peer_result_id": "cb6c084d-8ba8-4878-8a2b-ffbbe054983f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C2, C14-C15 regarding temporal dynamics of microglia loss. Both evaluations find SUPPORTED evidence for no immediate loss but significant long-term reduction. OpenEval additionally includes C67 in this evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "43bb9420-8fcb-4457-89be-dba990e85c5a",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "1c0c8b58-8026-40e2-980c-a6428e569d37",
+      "peer_result_id": "0429551b-89d3-406f-946a-e37a38ffdd35",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C17-C21 regarding cell competition mechanism. Both evaluations find the evidence SUPPORTED, with peer reviewers noting the mosaic comparison provides 'very convincing arguments' and OpenEval highlighting the differential effects between mosaic and null conditions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "45e1d3f2-8088-4565-b404-2316aa165bac",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "e21575dd-2d6b-4f73-b8d8-1d5db09532d3",
+      "peer_result_id": "a2d9688f-430c-4ddc-886b-99a3e9d42ed1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C22-C24 regarding tp53 upregulation and rescue experiments. Both evaluations find the evidence SUPPORTED, though Reviewer 1 suggests further mechanistic investigation would strengthen the paper.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "794b6c59-971b-4680-87b6-681c4ce11f93",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "de1ad4c5-62f2-45ab-837d-9837524742a5",
+      "peer_result_id": "6ea1ee79-0785-45d5-9c01-1f1941e56e6b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C4-C5 regarding pu.1/spi-b double mutants. OpenEval finds evidence SUPPORTED based on embryonic data and Annexin V staining. Peer reviewers express UNCERTAINTY, requesting additional controls and adult brain apoptosis data, though the BRE notes partial resolution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "6e78f858-999b-4500-9d0c-342cb15f20e4",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "267145df-bc77-432c-bdce-e0c77ca2b769",
+      "peer_result_id": "a7f0f2fc-c7fc-4d20-9d1d-7da429b3f89e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C6, C26-C28 regarding conservation of mechanisms in mice. Both evaluations find the evidence SUPPORTED. OpenEval additionally includes C25 in this evaluation, while peer reviewers emphasize the cross-species validation strengthens conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "0108d6c8-4efe-469c-b759-2c44ce48fd2d",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "219a35e9-00b8-4eaf-9a1a-f470ad31475c",
+      "peer_result_id": "1402c87e-6121-46e5-9b20-f7c1da8b6a3e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial agreement on claims C60-C61 regarding pu.1-tp53 regulatory relationship. OpenEval finds evidence UNCERTAIN due to lack of direct experimental validation. Peer reviewers initially requested investigation but accepted in silico analyses and literature evidence as SUPPORTED, indicating the authors addressed concerns during revision.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "3426e586-814f-4754-bdfa-c54606493f6d",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "e21575dd-2d6b-4f73-b8d8-1d5db09532d3",
+      "peer_result_id": "f101eb54-40dc-4553-9e48-42704989e753",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address C22 (tp53 upregulation) but focus on different aspects. OpenEval evaluates the overall tp53 mechanism as SUPPORTED. Peer reviewers express UNCERTAINTY specifically about RNA-Seq methodology (underpowered analysis, high variability), though the BRE notes authors elaborated on procedures.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "cde09ba2-1888-4668-987d-78de487b210d",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "267145df-bc77-432c-bdce-e0c77ca2b769",
+      "peer_result_id": "2630580f-e52e-4ae0-a986-abe02087be8c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address C25 (Spi-b expression in mice) but with different emphases. OpenEval finds the expression data SUPPORTED as part of broader conservation claims. Peer reviewers find it SUPPORTED and note the authors expanded discussion of Pu.1/Spi-b relationship in revision.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "5c4738b6-a62e-4a03-a63c-85da2e3046fd",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "32392434-7abe-459a-8f10-9d38750493ed",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C16, C68-C71 regarding regional CNS quantification and morphological validation SUPPORTED. No corresponding peer review evaluation found addressing these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "8cbd6159-f030-4987-82aa-16167bf07ab2",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "8ef4aef7-5e20-473b-a02e-606df6ce59a3",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C51-C52, C76 regarding germline transmission rates and technical observations SUPPORTED. No corresponding peer review evaluation found addressing these technical details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "cdc62f0a-3b9f-4893-a76b-52eb0e47682a",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "da0db08b-52f9-4340-a0c8-439a7481430a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C53-C55 regarding turnover rate comparisons and species differences UNCERTAIN due to speculative explanations and methodological limitations. No corresponding peer review evaluation found addressing these specific interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "74b11ddd-91c1-4d16-89f6-072a4eddc0d6",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "43526eac-12bd-4c7f-88bf-0600a0488a11",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C62, C66 regarding unchanged csf1ra expression SUPPORTED as important negative control distinguishing mechanisms. No corresponding peer review evaluation found addressing this specific finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "fc91ccf6-d206-4e93-a1a6-89d6f48e0968",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "63994e06-939d-4dfa-9f00-c41c242ba87a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C58, C63 regarding molecular mechanisms in complete knockouts UNCERTAIN due to speculative interpretations and lack of direct testing. No corresponding peer review evaluation found addressing these mechanistic claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "cf967925-8627-4a6c-bdac-d91dbd696c08",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "108e52bd-27b5-4926-9d03-bab30b8536e4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies claims C1, C29-C50, C64-C65, C72-C75, C77 as SUPPORTED literature-based background knowledge. No corresponding peer review evaluation found, as these represent established context rather than novel findings requiring validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    },
+    {
+      "id": "28945756-2172-46f3-b1b4-599a2c725ce4",
+      "submission_id": "935c57cc-9dda-4feb-bf14-4cf3b74158ae",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "d6c915ab-fb2e-485d-82e1-ce9d377a7d9b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C56-C57 regarding speculative mechanisms for species differences in turnover rates UNCERTAIN, noting they are cited but not directly tested. No corresponding peer review evaluation found addressing this specific hypothesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:48:43.595437Z"
+    }
+  ]
+}

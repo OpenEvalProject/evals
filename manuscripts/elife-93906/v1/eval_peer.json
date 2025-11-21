@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C110",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study developed a one-pot scRNA-seq approach for eQTL mapping by pooling ~4,500 F2 yeast segregants, performing single scRNA-seq run, using HMM for genotype inference from low-coverage data (~0.2\u00d7 coverage), and applying DISCERN imputation to address dropouts in expression profiles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly acknowledge the successful development and demonstration of the one-pot scRNA-seq method. Reviewer 1 states the authors 'have successfully demonstrated their stated goal of developing, and illustrating the benefit of, a one-pot scRNA-seq experiment and analysis for eQTL mapping.' The editor describes it as a 'rigorous new method' that 'shows promise for improving the efficiency of genotype-to-phenotype mapping in yeast, providing convincing evidence for its efficacy.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The HMM-based genotype inference method accurately infers genotypes from extremely low sequencing depth (0.1-0.2\u00d7 coverage), improving mean R\u00b2 from 0.59 (read mapping alone) to 0.73 after HMM correction, and increasing strain recovery from 58.6% to 65.7% with re-estimated parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the genotype inference approach without raising concerns. Reviewer 1 notes the authors 'used a Hidden Markov Model (HMM) to infer genotypes and then identify the most likely known lineage genotype from the original dataset' as part of addressing technical challenges. The successful validation is implicitly accepted as the reviewers focus on downstream applications rather than questioning this foundational method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C72"
+    ],
+    "result": "DISCERN imputation effectively denoises expression data, with reconstructed expression showing mean R\u00b2=50.0% correlation to original data and the first PC explaining 99.6% of variance. Denoising increases genotype-expression interaction contribution and decreases model residuals by up to 8%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the imputation approach or its effectiveness. The editor describes the method as 'rigorous' and reviewers accept the technical solutions for addressing scRNA-seq challenges. Reviewer 1 acknowledges the authors addressed 'the sparsity of genotype data in the expression profiling' and 'several technical challenges associated with scRNAseq,' implicitly accepting the DISCERN solution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The scRNA-seq approach replicates previous QTL mapping results: batch 1 scRNA-seq identified 29 QTL compared to 31 from bulk barcoded approach, with similar heritability estimates and non-significant difference in effect sizes (p=0.29). Similarity scores show 86.2% agreement between methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the validation against previous results without criticism. The editor notes the study 'identifies several new biological insights that build upon the field of genotype-to-phenotype mapping.' Reviewer 2 explicitly 'appreciate[s]' the comparison showing the method doesn't require normalization for culture-to-culture variation, implicitly validating the replication of previous findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C108",
+      "C109"
+    ],
+    "result": "Variance partitioning reveals that only 0.69% of phenotype variation is explained exclusively by gene expression independent of genotype, while 47.8% is explained by shared genotype-expression-phenotype components and 20.9% by genotype alone. Residuals represent ~30% of fitness variation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 acknowledges this as 'a novel finding' but raises significant caveats: '(1) the particular point will perhaps only be interesting to a small slice of the eQTL research community; (2) the authors provide no statistical controls/error estimate or independent validation of the variance partitioning analysis in Figure 3.' The lack of statistical validation and limited broader impact create uncertainty about the robustness of these specific quantitative estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C76",
+      "C77",
+      "C78",
+      "C101"
+    ],
+    "result": "Gene expression is highly heritable with genotype explaining 75.7% of overall expression variance and 35.4% at individual gene level (significantly higher than previous 30.0% estimate, p<2.2e-16). Highly heritable genes are enriched for carbohydrate catabolism and biosynthetic processes, while low heritability genes are enriched for cell cycle functions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these heritability findings without challenge. Reviewer 1 states the study 'seeks to address the question of how quantitative trait variation and expression variation are related' and notes the authors successfully demonstrated their approach. The comparison to previous estimates and functional enrichments are treated as confirmatory evidence supporting the method's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C29",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The increased scale enabled detection of median 21 eQTL per gene (almost 4\u00d7 higher than previous studies), identifying more regulatory hotspots and new biological processes (DNA metabolism, nutrient response). Power analysis shows linear relationship between sample size and detection (R\u00b2=0.95).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly notes the study 'identifies several new biological insights that build upon the field of genotype-to-phenotype mapping.' Reviewers accept the increased detection power as a benefit of the approach. Reviewer 1 acknowledges 'the use of scRNAseq is likely to dramatically increase the statistical power of such studies,' supporting the claim of enhanced detection capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C103"
+    ],
+    "result": "eQTL hotspots correlate with fitness QTL (Spearman \u03c1=0.33, p=5.21e-5), with high-effect QTL genes (MKT1, HAP1, IRA2, VPS70) located in regulatory hotspots. For 35.1% of genes, eQTL effects correlate with fitness effects, and most detected eQTL were previously shown to be QTL.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accept the general findings, Reviewer 2 notes a critical limitation: 'the authors don't seem to use the single-cell growth/fitness estimates for anything else, as Figure 4 uses loci mapped to growth from a previously published, standard culture-by-culture approach.' This suggests the correlation analysis relies on external fitness data rather than fully leveraging the single-cell approach's capabilities, creating uncertainty about whether this represents a true advantage of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C104",
+      "C105"
+    ],
+    "result": "Trans-regulation has larger aggregate effects than cis-regulation: all genes are affected by at least one trans-regulatory locus, and while individual cis-eQTL have stronger effects, cumulative trans-eQTL effects are comparable. Trans-eQTLs have 2\u00d7 higher odds of affecting fitness than cis-eQTL (p=0.01).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the cis/trans comparison findings. The editor highlights this as a key contribution, noting the study 'highlighted the larger aggregate effect of trans-regulation compared to cis-regulation' in the abstract summary. Reviewer 1 acknowledges the study addresses 'how quantitative trait variation and expression variation are related,' accepting the trans-regulation findings as part of this central question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Comparison with Albert et al. 2018 bulk RNA-seq shows the scRNA-seq approach provides superior detection: in bulk data, QTL had lower odds of being in eQTL hotspots (OR=0.72, p=0.50 non-significant), while in scRNA-seq data, QTL have 2\u00d7 higher odds of being in hotspots.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept this comparative advantage. Reviewer 2 acknowledges 'the authors don't need to normalize for culture-to-culture variation the way standard bulk methods do,' recognizing a key advantage over bulk approaches. The demonstration of superior performance relative to previous methods supports the claimed improvement in detection power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C102"
+    ],
+    "result": "The multidimensional dataset enabled recapitulation of decades of GPM results while revealing new associations, allowing estimation of transcriptome heritability and demonstrating that gene expression contributes significantly to phenotypic variation in the strain collection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes this as a 'useful study' that 'identifies several new biological insights that build upon the field of genotype-to-phenotype mapping.' Reviewer 1 confirms the authors 'successfully demonstrated their stated goal' and that the approach addresses 'how quantitative trait variation and expression variation are related,' accepting the broad claims about recapitulating and extending previous work.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2161 @@
+{
+  "submission": {
+    "id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:42:38.983892Z",
+    "updated_at": "2025-11-21T17:42:38.983892Z"
+  },
+  "content": [
+    {
+      "id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "content_type": "manuscript",
+      "content_text": "# A suite of selective pressures supports the maintenance of alleles of a Drosophila immune peptide\n\n## Authors\n\n- Sarah R Mullinax<sup>1</sup>\n- Andrea M Darby<sup>2</sup>\n- Anjali Gupta<sup>3</sup> ([ORCID: 0000-0002-5717-543X](https://orcid.org/0000-0002-5717-543X))\n- Patrick Chan<sup>1</sup>\n- Brittny R Smith<sup>1</sup>\n- Robert L Unckless<sup>1</sup> ([ORCID: 0000-0001-8586-7137](https://orcid.org/0000-0001-8586-7137)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biosciences, University of Kansas Lawrence United States ([ROR:001tmjg57](https://ror.org/001tmjg57))\n2. Department of Entomology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))\n3. Department of Ecology and Evolutionary Biology, University of Kansas Lawrence United States ([ROR:001tmjg57](https://ror.org/001tmjg57))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe innate immune system provides hosts with a crucial first line of defense against pathogens. While immune genes are often among the fastest evolving genes in the genome, in Drosophila, antimicrobial peptides (AMPs) are notable exceptions. Instead, AMPs may be under balancing selection, such that over evolutionary timescales, multiple alleles are maintained in populations. In this study, we focus on the Drosophila AMP Diptericin A, which has a segregating amino acid polymorphism associated with differential survival after infection with the Gram-negative bacteria Providencia rettgeri. Diptericin A also helps control opportunistic gut infections by common Drosophila gut microbes, especially those of Lactobacillus plantarum. In addition to genotypic effects on gut immunity, we also see strong sex-specific effects that are most prominent in flies without functional diptericin A. To further characterize differences in microbiomes between different diptericin genotypes, we used 16S metagenomics to look at the microbiome composition. We used both lab-reared and wild-caught flies for our sequencing and looked at overall composition as well as the differential abundance of individual bacterial families. Overall, we find flies that are homozygous for one allele of diptericin A are better equipped to survive a systemic infection from P. rettgeri, but in general have a shorter lifespans after being fed common gut commensals. Our results suggest a possible mechanism for the maintenance of genetic variation of diptericin A through the complex interactions of sex, systemic immunity, and the maintenance of the gut microbiome.\n\n## Introduction\n\nAn effective immune response is essential for organisms to protect themselves from pathogens. However, an excessive immune response causes damage to self either directly (autoimmunity, cytokine storms) or through dysbiosis via disruption of the composition of beneficial microflora (Miyauchi et al., 2023; Wang et al., 2020; Badinloo et al., 2018; Fajgenbaum and June, 2020). The dynamic suite of microbes that hosts face necessitates initiating a robust systemic immune response, avoiding self-harm, and maintaining a beneficial microbiome. The challenge of maintaining a balanced immune response is exacerbated because the threat of microorganisms is contextual; thus, the immune system must distinguish harmful vs. beneficial microbes in each context (Thaiss et al., 2016; Shi et al., 2017). For example, an ingested microbe may be harmless or even beneficial as a food source in the digestive tract, but, when in circulation, that same microbe may prove harmful to the organism (Brown et al., 2012). One consequence of balancing a robust innate immune system is that it may lead to the maintenance of genetic polymorphism in genes that encode for proteins intimately involved in the immune response (Bagnicka et al., 2010; Pierce et al., 2021). Such patterns of maintained polymorphisms contrast the standard coevolutionary arms race model where hosts and pathogens continually adapt to each other, leading to rapid evolutionary change in immune genes (Anderson et al., 2010; Carrillo-Bustamante et al., 2015; Marques and Carthew, 2007). Though the coevolutionary arms race model appears apt in many cases, the case for the adaptive maintenance of alleles, balancing selection in the broad sense, on genes involved in the immune defense stems from a more nuanced view of the delicate interplay of systemic immunity, life history traits, and the beneficial microbiome (Liston et al., 2021; Koenig et al., 2019).\n\nBalancing selection is the general term for the adaptive maintenance of multiple alleles in a population. In contrast to the evolutionary arms race model, natural variation in many immune genes is maintained by balancing selection (Chapman et al., 2019; Aguilar et al., 2004; Ferrer-Admetlla et al., 2008; Tennessen and Blouin, 2008). The inference of balancing selection from molecular population genetic data is difficult, especially when genes are small and in areas of high recombination. Nonetheless, several examples of balancing selection exist, many of which involve small effector proteins of the innate immune system (Tennessen and Blouin, 2008; Unckless et al., 2016; Chapman et al., 2016; Padhi and Verghese, 2008).\n\nBalancing selection on immune genes is likely to involve allelic benefits that are only conditionally beneficial. One way that an allele could be conditionally beneficial is if there is specificity between pathogen and allele (Sommer, 2005) such that allele A better protects against pathogen 1 and allele B better protects against pathogen 2: pathogen specificity hypothesis. Another way that an allele can be conditionally beneficial in the context of immune defense is if resistance alleles are costly in the absence of infection. In this case, allele A better protects against both pathogen 1 and pathogen 2, but in the absence of infection, allele A is costly for its host (Williams et al., 2005). This cost could be energetic or through autoimmune-like damage: autoimmune hypothesis. In reality, there is likely a continuum between these alternative hypotheses.\n\nInvertebrates lack an adaptive immune system, so the delicate balance between systemic and gut immunity is achieved only through adjustments to the innate immune response (Ryu et al., 2010). It is therefore important to understand how invertebrates optimize their systemic immune response with as little detriment to their beneficial gut microbiota as possible.\n\nThough first characterized for its role in systemic immunity, the (IMD) pathway is also the main NF-\u03baB immune pathway in the gut and contributes to the maintenance of the microbiome and protection from gut infections (Lhocine et al., 2008; Bosco-Drayon et al., 2012; Broderick et al., 2014). To date, there is little research into how individual AMPs help maintain a healthy microbiome composition in the fly, let alone how allelic variation may affect microbiome composition (Hanson and Lemaitre, 2020; Marra et al., 2021). The standard gut microbiome of lab-reared Drosophila melanogaster consists of two prominent bacterial genera: Lactobacillus and Acetobacter (Broderick et al., 2014). Both genera are easily cultured in the lab, and the Drosophila gut can easily be manipulated, making it a good model to study the effects of immune gene variation on microbiome composition and how microbiome composition can, in turn, influence host fitness.\n\nAntimicrobial peptides (AMPs) are a critical part of the innate immune system that act as broad-spectrum antimicrobials, combating bacteria, fungi, and viruses. In the coevolutionary arms race model, AMPs are on the front lines: directly interacting with microbes. AMPs have also been demonstrated to have critical roles in other physiological functions, e.g., dysregulation of AMPs has been connected to diseases such as atopic dermatitis and Alzheimer\u2019s disease (Wang et al., 2020; Ong et al., 2002; Rieg et al., 2005). AMPs also contribute to the aging process, where the immune system becomes more active as organisms age to compensate for a decline in its effectiveness. However, this leads to cytotoxicity that in turn shortens lifespan (Badinloo et al., 2018).\n\nIn Drosophila, AMPs play a crucial role in both managing systemic infections and in the maintenance of the gut microbiota (Buchon et al., 2014). AMPs, however, appear to evolve more slowly than most immune gene families (Clark et al., 2007; Jiggins and Kim, 2007; Sackton et al., 2007; Obbard et al., 2009). One explanation for this perceived lack of adaptive evolution is that Drosophila AMPs\u2019 genetic variation is maintained adaptively through balancing selection (Chapman et al., 2019; Comeron, 2014; Unckless and Lazzaro, 2016; Perlmutter et al., 2024), where different selective pressures favor different alleles. Naturally occurring allelic variation in AMP loci is sometimes associated with variability in pathogen resistance (Unckless et al., 2016; Lazzaro et al., 2004; Smith et al., 2023; Hanson et al., 2023a). Diptericin A (hereon referred to as diptericin or Dpt) is one of the canonical effector genes of the Drosophila immune deficiency (IMD) pathway and is generally associated with defense against Gram-negative bacterial infection (Tanji et al., 2007; Broderick, 2016).\n\nIn both D. melanogaster and Drosophila simulans, an amino acid polymorphism at the 69th residue of the mature 83-residue Diptericin peptide segregates in most populations surveyed (Unckless et al., 2016). In both species, this polymorphism is due to a point mutation that changes the ancestral serine (S) allele to arginine (R), but the two species use different codons for arginine. Unckless et al., 2016, found a significant difference in survival based on diptericin genotype after systemic infection with the Gram-negative bacteria, Providencia rettgeri, a natural pathogen of D. melanogaster. The study used inbred fly lines and found homozygous serine flies have a better survival rate 5 days post infection (~60%) than homozygous arginine flies (~20%) or flies with a premature stop codon in diptericin (0%). Later work by Hanson et al. took a more general approach to AMP specificity and found that Diptericin plays a disproportionate role in response to infection with P. rettgeri (Hanson et al., 2019aHanson et al., 2019a). What remains unclear, however, is why this presumably deleterious arginine allele persists in populations of two different species. We hypothesize that it either protects against a different suite of pathogens or it is beneficial in the absence of infection through some life history trade-off.\n\nThis study aimed to test two hypotheses about the maintenance of genetic variation in Diptericin. First, different Diptericin alleles might protect against different pathogens \u2013 we refer to this as the pathogen specificity hypothesis. It would be supported if the arginine allele were to be associated with higher survival than the serine allele in some infections, since the serine allele is already clearly more protective against P. rettgeri (Unckless et al., 2016; Hanson et al., 2023a). In contrast, flies with the serine allele might be generally better at surviving infection, but this may have a cost to the organism. We refer to this as the autoimmune hypothesis, where a protective immune allele is associated with a trade-off that is costly in the absence of infection. We test whether there are trade-offs between systemic immunity and other life history traits \u2013 particularly traits related to the gut microbiome utilizing genetically controlled lines for Diptericin alleles generated by CRISPR/Cas9 editing. Flies were systemically infected with a panel of six different bacteria, and homozygous serine flies had a better 5-day survival with each bacterium. We then used axenic and gnotobiotic flies to look at the lifespan of flies since AMP overexpression and microbial proliferation are commonly observed in aging flies (Arias-Rojas and Iatsenko, 2022; Badinloo et al., 2018; Shit et al., 2022; Hanson and Lemaitre, 2023b). Lactobacillus plantarum is harmful to female flies with nonfunctional diptericin, while homozygous arginine flies poly-associated with L. plantarum and Arctocephalus tropicalis had a longer lifespan than homozygous serine flies. In this way, we found evidence for a trade-off between the ability to fight systemic infection and the ability to control opportunistic gut infections.\n\n## Results\n\n### A single amino acid change drastically influences survival after infection\n\nUnckless et al., 2016, found that in inbred lines from the Drosophila Genetic Reference Panel (DGRP), flies homozygous for serine as position 69 of the mature Diptericin peptide survive systemic infection with P. rettgeri much better than those homozygous for the arginine peptide at the same position. This experiment showed only an association between immune defense and the serine/arginine polymorphism since these inbred lines were on several different genetic backgrounds. To control genetic background, we used CRISPR/Cas9 genome editing to create both an arginine allele (single nucleotide change, dptS69R) and multiple null alleles (1 or 3 base pair deletions, \u0394dpt flies), as well as control dptS69 (serine at position 69 of the mature peptide) in diptericin (Figure 1\u2014figure supplement 1A, Supplementary file 1). The phenotype for our CRISPR/Cas9-edited flies showed striking similarity to the inbred lines. In systemic infection challenges with P. rettgeri, dptS69 flies are better protected from infection than dptS69R flies (p=5.42e-08) and \u0394dpt flies (p=6.46e-09, Figure 1A). Remarkably, for inbred lines and CRISPR/Cas9-edited lines, survival for 5 days post infection with P. rettgeri for the serine allele lines is 50\u201360%, with the arginine allele is 10\u201320%, and less than 5% for null alleles.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig1-v1.jpg)\n\n**Figure 1.:** Survival after systemic immunity challenge with the following bacteria: (A) P. rettgeri, (B) Staphylococcus succinus, (C) Enterococcus faecalis, (D) Lysinibacillus fusiformis Strain Juneja, (E) Lactococcus lactis, and (F) Serratia marcescens. Each graph represents the combined results of three different infection dates of at least 20 males of each genotype for each date (at least 60 total). Significance is relative to dptS69 (red line) using Cox proportional hazards regression model. *p<0.05, **p<0.01, ***p<0.001. Each sample n>60 per genotype.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Alignment of CRISPR/Cas9 genome-edited lines. CRISPR/Cas9 genome-edited lines aligned to consensus sequence. Genotype/line name is indicated on the left-hand side of the figure. (B) Crossing schematic for CRISPR cleanup. A modified Bloomington stock # 7198 was used for CRISPR injections. The line contained CyO/Kruppel balanced on the second chromosome, and serrate/Dichaete balanced on the third chromosome. Our version, 7198A4, was provided by Stuart Macdonald and has the DSPR (King et al., 2012) A4 line\u2019s X chromosome instead of the w[*] from the original 7198.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Systemic infections were repeated with females and males. (A) P. rettgeri and (B) E. faecalis are normal systemic infection bacteria in Drosophila. (C) L. plantarum was used to test differences in systemic based on sex based on the results from gnotobiotic longevity. Each sample n>60 per genotype.\n\nWe next challenged the CRISPR/Cas9-edited flies with systemic infection using multiple other Gram-positive and Gram-negative bacteria to determine whether the arginine allele (dptS69R) protects against some infections better than the serine allele. Such a finding would support the hypothesis that allelic variation is maintained by different alleles providing specific protection against different microbes. However, the differential response to systemic infection with P. rettgeri at an OD600=0.1, as described above, remains the largest difference in immune response between Dpt genotypes. DptS69 flies survived better than dptS69R flies for all systemic infections tested (Figure 1, Supplementary file 1). In the Gram-positive bacterial infections (E. faecalis, S. succinus, L. fusiformis, and L. lactis), dptS69R flies had lower survival than that of \u0394dpt or imd- (null allele for the Imd gene) flies (Figure 1B\u2013E). The only systemic infection where dpt genotype did not seem to matter was S. marcescens, where all flies survive infection well except for imd-, which die very quickly (Figure 1F).\n\nWe also tested if males and females showed differences in systemic immunity based on genotype for P. rettgeri, E. faecalis, and L. plantarum infections (Figure 1\u2014figure supplement 2, Supplementary file 3). Generally, the Dpt genotypes have qualitatively similar survival patterns between males and females when infected with P. rettgeri. Females showed lower survival compared to males after systemic infection with E. faecalis (p=0.0003). Higher male survival post infection was observed previously for both E. faecalis and P. rettgeri, with differences ascribed to the Toll pathway (Duneau et al., 2017).\n\nOverall, flies with the dptS69 allele are better equipped to survive a systemic bacterial infection than dptS69R flies, though this is most pronounced for P. rettgeri. Of the six bacteria tested, there was no case where dptS69R flies survived the infection better than dptS69 flies. These results do not support the hypothesis that alleles are maintained to better combat different pathogens.\n\n### Diptericin genotype affects the lifespan of mono- and poly-associated gnotobiotically reared flies\n\nAlthough our survey of systemic infections was not exhaustive, we did not find any instances where dptS69R flies were better able to fight infection, so we turned our attention to the role of Dpt in gut microbiome maintenance and immunity. The gut microbiome influences several life history traits in Drosophila and other organisms (Ding et al., 2019; Ludington and Ja, 2020; Erkosar and Leulier, 2014; Macke et al., 2017). To dissect how diptericin genotype influences microbiome maintenance, we manipulated the microbiota in CRISPR/Cas9 flies and measured longevity and bacterial load. We began with the longevity of axenically reared flies, since it represents a baseline survival without the presence of microbes. Flies with functional copies of diptericin (dptS69 or dptS69R) did not differ in lifespan for either sex (pgenotype=0.3762), and \u0394dpt lines show a similar lifespan. However, there was a difference in overall lifespan between the sexes among the CRISPR genome-edited lines (psex=1.04e-6). In dptS69 or \u0394dpt, female flies have a longer lifespan than male flies, as observed generally for D. melanogaster previously (Lints et al., 2009). In contrast, imd- male flies have a much longer lifespan than any of the other lines tested (Figure 2A \u2013 axenic row, Supplementary file 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig2-v1.jpg)\n\n**Figure 2.:** (A) Survival plots for axenic flies and gnotobiotic flies mono-associated with L. plantarum or poly-associated with L. plantarum and A. tropicalis. Each curve represents 60 flies from 3 replicates of 20 flies. Significance is shown in comparison to SS (red line) using the model Lifespan~(Genotype*Sex)/Vial + Block. (B) Mean lifespan was plotted against each sex and separated by bacterial association. Axenic flies have no bacterial association. Each point for each sex in a combination of 3 separate trials of 20 flies for a total of 60 flies. These interaction plots only have mean lifespan and thus are useful for seeing all the data at a glance. Error bars are mean plus or minus the standard error of the mean. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Survival plots of all bacteria. Dpt null lines have been separated into the two lines used, 1 base pair deletion and 3 bp deletion.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Female flies eat more food (as measured by blue dye ingestion) than males, but genotype also influences feeding. Each genotype has more than 100 individuals per treatment per sex. Control refers to no added media, LB media is the addition of sterile MB, and P. rettgeri is the addition of P. rettgeri at a concentration of OD600=15 (\u00b11). Absorbance was measured at 630 nm. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.\n\nWe next tested the influence of Diptericin genotype on mono-associations with standard constituents of the Drosophila gut microbiome. We found multiple sex effects when axenically reared flies were fed L. plantarum, L. brevis, or A. tropicalis (Figure 2A and B, Figure 2\u2014figure supplement 1). Flies that were fed L. plantarum show the most striking differences. Male flies continued to show similar lifespans to each other, but female \u0394dpt and female imd- flies both succumbed quickly post-feeding, indicating functional Diptericin is important for gut immunity against opportunistic L. plantarum in females.\n\nWe also fed axenic flies P. rettgeri, which does not readily cause gut infection, to axenically reared flies. Recall that after systemic infection, dptS69 flies are more resistant to P. rettgeri than dptS69R flies (Figure 1A). After mono-association, however, we see no significant difference between the two genotypes with P. rettgeri in either sex (p=0.612, Figure 2B). There is also no significant difference between the \u0394dpt and lines with functional Diptericin (Figure 2B, Figure 2\u2014figure supplement 1). Surprisingly, however, the null allele for Imd again shows a significant effect on survival in a sex-specific manner: null Imd females die much earlier, and null Imd males survive much longer when fed P. rettgeri.\n\nSome of the sex-specific differences in survival after mono-association with bacteria may be driven by intrinsic differences in feeding rates between the sexes (and potentially genotypes as well) (Wu et al., 2020). To determine whether the differences in male and female survival and load were due in part to differences in feeding rates, we performed a feeding rate assay with blue dye mixed with media (Luria-Bertani broth) or P. rettgeri (OD600=15.0). We noted that females did eat more in a single hour of feeding, but that there was also an effect of diptericin genotype (with null flies eating less, Figure 2\u2014figure supplement 2). Thus, it is possible that differences in longevity after mono-association are due to different rates of exposure to those bacteria because of different feeding rates.\n\nWe next looked at how poly-associations with bacteria affected lifespan. First, we fed flies a 1:1 mixture of L. plantarum and A. tropicalis, two common gut microbes found in lab-reared and wild-caught flies (Wong et al., 2011; Bost et al., 2018). We found that female \u0394dpt and imd- flies had a much shorter lifespan than flies with functional Diptericin (Figure 2A and B). This is the same pattern observed in mono-association with L. plantarum. However, we observe that the diptericin genotype influences survival when poly-associated with L. plantarum and A. tropicalis. DptS69R female flies live longer than dptS69 female flies (Figure 2A and B; p=0.00782). This is the opposite of systemic infections, where dptS69 flies always survived better than dptS69R flies, and may indicate a trade-off between defense against systemic and gut immunity.\n\nIn poly-association with 1:1 L. plantarum and P. rettgeri, we observe many of the same patterns as in the poly-association with L. plantarum and A. tropicalis. Again, female \u0394dpt and imd- flies have a shorter lifespan than female dptS69 and dptS69R flies (Figure 2B), and dpt genotype is associated with lifespan. DptS69R females have a longer lifespan than dptS69 flies (p=0.000198, Figure 2B).\n\nGiven the genotypic and sex effects on survival after oral association with L. plantarum, we also looked at sex differences after systemically infecting conventionally reared flies with L. plantarum. We saw no difference in survival between the sexes, as observed for systemic infections with E. faecalis or P. rettgeri, and saw no difference between \u0394dpt lines and lines with functional Diptericin, as observed for axenic flies mono-associated with L. plantarum (Figure 1\u2014figure supplement 2). This could indicate that Diptericin plays different roles for systemic and gut immunity in relation to L. plantarum in each sex. Further, dptS69 male flies survived better than dptS69R male flies (p=0.00438), in line with observations from other systemic infections in males (Figure 1).\n\nOverall, we found a role of both specific diptericin genotype (serine vs. arginine) and the presence of functional copies of diptericin for survival after introducing common gut microbes in controlled conditions. Most striking was the sexually dimorphic role of both Dpt and Imd-, with females being much more sensitive to genotype than males.\n\n### Gnotobiotic fly bacterial load\n\nGiven the differences in survival among sexes and genotype for different gnotobiotic associations with bacteria, we determined whether bacterial load after associations also was different among sexes and genotypes. To assess the influence of genotype on the immune response of aging flies, we studied how well common gut bacteria colonized the gut over 20 days, representing ~20\u201333% of D. melanogaster\u2019s normal lab lifespan (Giannakou and Partridge, 2007; Biteau et al., 2011). We generated gnotobiotic flies by feeding specific bacteria for 2 days and observed the bacterial load 2, 10, and 20 days post feeding.\n\nWhen specifically looking at mono-association with L. plantarum, we observe that bacterial load differences between genotypes occur within the first 2 days post feeding but begin to disappear by day 20 (pgenotype(day2)=2.6e-5, pgenotype(day20)=0.709, Figure 3A, Figure 3\u2014figure supplement 1). Note that in the first 2 days, the flies were raised on microbe-contaminated media, but after 2 days were moved onto sterile food and then transferred to new sterile food every 3 days. This corroborates what we saw in the longevity data in females. Within the first 15 days, a large proportion of \u0394dpt female flies died, and we observed a higher bacterial load in these flies, especially on day 2 post feeding (Figure 2). By day 20, differences in bacterial load in females disappeared. Note that there is inherent sampling bias, as only the flies able to survive until day 20 are sampled at that time point. In the case of imd- flies, no females survived until day 20; hence, there is no data for imd- flies on day 20 (Figure 3A, Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig3-v1.jpg)\n\n**Figure 3.:** Two-day-old flies were placed on food seeded with a bacterial suspension of each bacteria at an OD600 of 15. Each point for each sex is from 3 separate trials of 2 samples of 3 flies each for a total of 6 samples per point. (A) Mono-associations where each plot represents a different condition, (B) poly-associations where each row plots both the P. rettgeri and L. plantarum load from the same flies but were plated on LB and De Man, Rogosa, and Sharpe (MRS), respectively. Error bars are mean plus or minus the standard error of the mean.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** All bacteria were plated on De Man, Rogosa, and Sharpe (MRS) media except for P. rettgeri, which was plated on LB media to grow colonies. Significance can be found in Supplementary file 5. Individual points represent a pool of 3 flies. There is no imd- female bar for L. plantarum on day 20 because all female flies had died at this time point. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The flies were co-fed with L. plantarum and P. rettgeri and plated on De Man, Rogosa, and Sharpe (MRS) and LB, respectively, to select for the different bacteria. There is no imd- female bar on day 20 because all flies had died at this time point. Significance can be found in Supplementary file 6. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.\n\nP. rettgeri is the only canonical systemic pathogen we included in our gnotobiotic study, and the patterns based on genotype were different between systemic infection and the gnotobiotic oral infection data. When flies were fed P. rettgeri, we saw a range of bacterial loads, from zero colonies to bacterial load levels on par with common gut bacteria. We also observed a genotype effect between dptS69 and dptS69R on day 10 and 20 post feeding in males (pgenotype(day10)=0.0044, pgenotype(day20)=0.0004, model only included dptS69 and dptS69R, Supplementary file 5). In both instances, bacterial load in dptS69R flies is higher than in dptS69 flies. This may indicate that dptS69 flies are better equipped to deal with both systemic and oral infection from P. rettgeri. Whether this is due to a greater ability of dptS69 flies to withstand the effects of infection (tolerance) by P. rettgeri remains a question. It is also important to note that P. rettgeri establishes poorly in the gut of wildtype flies (personal observation), which may explain the noisy results for mono-associations after oral infection.\n\nA range of bacterial loads was also observed when flies were poly-associated with L. plantarum and P. rettgeri (Figure 3B, Figure 3\u2014figure supplement 2). There were no statistically significant differences between dptS69 and dptS69R bacterial for this poly-association (Supplementary file 6). In fact, there were no significant differences between any of the P. rettgeri bacterial loads; however, L. plantarum does show differences on day 2 post feeding (p=7.97e-6). These differences are mainly between flies with nonfunctional diptericin (imd- and \u0394dpt) and flies with functional diptericin. Both \u0394dpt and imd- flies had higher bacterial load than dptS69 and dptS69R flies on day 2 post feeding, which may be an indication of the reason both these lines quickly succumb to feeding with L. plantarum, at least in the context of the poly-association with P. rettgeri.\n\nWe observed larger differences in bacterial load shortly after feeding with bacteria, and those differences became less by day 20 post feeding. We did not see any differences in P. rettgeri load when mono-associated or when part of a poly-association, indicating the flies respond differently to the same pathogen when introduced systemically or orally.\n\n### Evidence for life history trade-offs mediated by diptericin genotype\n\nProteins involved in a robust immune response may have pleiotropic effects on other traits either because of a direct interaction with that trait or because of inherent costs of immune defense (self-damage, energy expenditure, etc.) (Viney et al., 2005; Sadd and Siva-Jothy, 2006; Lin et al., 2018). We examined three life history traits (desiccation stress survival, starvation stress survival, and uninfected longevity) to determine whether Dpt genotype had such pleiotropic effects.\n\nThe ability to survive desiccation stress is an important life history trait for wild Drosophila survival (Gibbs, 2002; Wang, 2017). When subjecting our male CRISPR/Cas9 flies to desiccation, we observe conventionally reared flies succumb faster to desiccation stress than axenically reared flies (Figure 4A, pgenotype<2e-16). In conventionally reared males, dptS69 flies have similar desiccation resistance to dptS69R flies (p=0.917). However, dptS69 flies survive desiccation stress better than dptS69R flies when reared axenically (pgenotype=0.04126). We also compared Drosophila OreR and W1118 (both homozygous for the serine allele of Diptericin) to the dptS69 line (Figure 4\u2014figure supplement 1, Supplementary file 7). Unsurprisingly, despite the same diptericin genotype, all 3 lines show dramatically different desiccation resistance. Therefore, diptericin genotype plays limited, if any, role in variation in desiccation resistance, as all 3 wildtype lines were derived from different genetic backgrounds.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig4-v1.jpg)\n\n**Figure 4.:** (A) Conventionally and axenically reared male flies desiccation resistance (N>90 for each line apart from \u0394dpt line). There is no significance between dptS69 (red line) and other genotypes. (B) Conventionally and axenically reared male flies starvation resistance (N>90 for each line apart from \u0394dpt line). (C) Female and male lifespan for conventionally reared flies. N>93 for each line and sex. Significance is shown in relation to dptS69 (red line). Note that axenic longevity is shown in Figure 2. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** OreR and W1118 are standard D. melanogaster lab stocks. They are both homozygous serine but have different resistance to desiccation stress than dptS69.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** OreR and W1118 are standard D. melanogaster lab stocks. They are both homozygous serine but have different resistance to starvation stress than dptS69.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Two \u0394dpt lines were used. One with a 1 base pair deletion and the other with a 3 base pair deletion. These lines were combined for ease of viewing in Figure 4C. Heterozygotes were made with reciprocal crosses.\n\nWe next looked at the effect of genetic variation in diptericin on male ability to survive under starvation stress. As with desiccation resistance, we found axenically reared flies survive starvation stress better than conventionally reared flies (Figure 4B, Figure 4\u2014figure supplement 2, ptreatment<2e-16). However, unlike the desiccation stress conditions, both conventionally reared and axenically reared dptS69R flies survive starvation stress longer than dptS69 flies (conventional: pgenotype<2e-16, axenic: pgenotype<2e-16). In conventionally reared flies, there is no difference in survival between dptS69 flies and \u0394dpt flies (Figure 4B, Supplementary file 8). However, in axenically reared flies, \u0394dpt flies have an intermediate survival phenotype between dptS69 and dptS69R flies. This may suggest an interaction between functional diptericin and the microbiome that influences starvation.\n\nFinally, we looked at the overall longevity of female and male conventionally reared flies (in the absence of any infection or other significant selection pressure). Female flies have a longer lifespan than males (Figure 4C, Figure 4\u2014figure supplement 3, psex=5.80e-13) regardless of dpt genotype. In males, dptS69 flies had a significantly longer lifespan than male dptS69R flies (mean of 60.3 days for dptS69 and 54.1 days for dptS69R, p=0.0072), but not in female flies (mean of 61.9 days for dptS69 and 59.0 days for dptS69R, p=0.6434). However, in axenically reared flies, only female dptS69 flies have a longer lifespan than male dptS69R flies. Interestingly, the female flies with the longest lifespan have nonfunctional Diptericin (Figure 4C, \u0394dpt line and imd- line, Supplementary file 9). Males lacking functional Diptericin show the same effect, but to a lesser extent. These results provide evidence that, in the presence of a standard gut microbiota, both Dpt and a functional Imd pathway may decrease longevity. This is consistent with others who found downregulation of NF-\u03baB pathways and AMPs increased lifespan in Drosophila (Lin et al., 2018; Khor and Cai, 2020), but the fact that flies with Dpt null alleles alone are sufficient to increase lifespan is noteworthy.\n\n### Diptericin\u2019s influence on gut microbial diversity\n\nTo determine whether Diptericin genotype influences the composition of the bacterial community in the gut, we sequenced amplicons of 16S ribosomal rRNA in conventionally reared lab flies under two different rearing conditions: flies reared in standard Drosophila vials, and the progeny of the cross between dptS69 and dptS69R flies reared in cages for more than two generations. The vials may capture the long-term impact of genotype on microbiota but make ruling out stochastic changes in communities difficult. The cages ensure identical microbiota during development, but do not allow gradual effects of genotype on microbiota to accumulate. First, we found flies that were co-reared in cages had similar microbiomes, with no discernible differences by the alpha diversity metric, Shannon diversity (p=0.5239, Figure 5A). On the other hand, the microbiomes of flies reared in vials were distinctly different overall compared to the microbiomes of flies reared in the cages (p<0.001, Figure 5B). However, the differences between genotypes were still minimal in the vial-reared flies, and vial may be a large factor in differences between lines. There were 2 dptS69R lines used, and even though these are the same genotype and genetic background, there was a significant difference between the 2 lines (Figure 5B). This difference is likely due to the within-vial drift in gut microbiome communities (Wong et al., 2013), which we attempted to control for using flies of different genotypes reared in the same cage (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig5-v1.jpg)\n\n**Figure 5.:** (A) Shannon diversity of flies co-reared in cages. (B) Shannon diversity of individual genotypes reared in vials. (C) Bray-Curtis dissimilarity of wild-caught flies. (D) Differential abundance of Morganellaceae in wild-caught flies. Different letters show significance based on post hoc Tukey\u2019s test, p<0.05. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.\n\nThe lab is a controlled environment that allows for excellent control of variables but does not replicate the conditions found in nature. Thus, we looked at the microbiomes of wild-caught flies collected from the decaying fruit of an apple orchard. We found flies with homozygous for dptS69R, homozygous for dptS69, and heterozygous genotypes at our collection location (Supplementary file 10). Out of the 955 D. melanogaster flies successfully genotyped, only 20 flies homozygous for dptS69R were identified. All 20 homozygous dptS69R flies were profiled along with 36 each of dptS69 homozygous flies and heterozygous flies for a total of 92 flies profiled (amplicon sequences of both Dpt and 16S rRNA are in Supplementary file 2).\n\nWe found that dpt genotype does not affect the overall composition of the microbiome of wild-caught flies based on Shannon diversity (alpha diversity) and Bray-Curtis dissimilarity (beta diversity) (Figure 5C). However, when looking at the differential abundance of individual bacterial families, there are differences based on genotype. We tested the specific association between diptericin genotype and normalized counts from nine microbial families. Most intriguing is the difference in abundance of Morganellaceae family reads since P. rettgeri belongs to this family. Heterozygous and homozygous serine flies have a slightly higher abundance than homozygous arginine flies (Figure 5D), but these differences were not significant.\n\nOverall, our results for associations between Dpt genotype and gut microbiome in both lab and wild flies are weak. Such associations may require much larger sample sizes if the effects are small \u2013 particularly given the noisy phenotype in the wild. Alternatively, the influence of Dpt genotype on gut microbiome diversity may be specific to developmental life stages or microbes that are relatively rare in these populations.\n\n## Discussion\n\nThe adaptive maintenance of multiple alleles of a single gene has been posited for nearly a century (Fisher, 1930; Ford et al., 1940; Dobzhansky, 1950; Cain and Sheppard, 1954; Dobzhansky, 1970), and evidence for its pervasiveness continues to grow (Hedrick and Thomson, 1983; Subramaniam and Rausher, 2000; Koskella and Lively, 2009; Leffler et al., 2013; Delph and Kelly, 2014; Lee et al., 2021). However, there are relatively few cases where we understand the adaptive benefits of both alleles (sickle cell anemia and malaria resistance being the best studied example [Piel et al., 2010]). In this study, we generated CRISPR/Cas9 genome-edited flies of different diptericin genotypes to investigate mechanisms of maintenance of allelic variation in AMPs. This allowed us to specifically study a single amino acid change on an otherwise genetically controlled background. Overall, we found evidence that dptS69 flies survive systemic infection better, while dptS69R flies survive some opportunistic gut infections better. Thus, more robust defense against systemic infection appears to interfere with maintaining a balanced gut microbiota \u2013 this trade-off may result in natural populations maintaining both alleles. Importantly, we note that while our results are consistent with the adaptive maintenance of alleles in natural populations, these lab assays do not prove the adaptive value of different alleles in the field.\n\nSystemic infections with P. rettgeri in CRISPR/Cas9 genome-edited lines confirmed the amino acid polymorphism in Diptericin as the basis for the difference in immune response of flies with different diptericin genotypes previously hypothesized via an association study (Unckless et al., 2016). Surprisingly, dptS69 flies had a higher survival 5 days post infection than dptS69R flies in all systemic infections tested. This may mean either that the serine allele provides improved defense against all the tested systemic infections, or that alterations to other aspects of fly physiology (notably the gut microbiota) could predispose arginine flies to poorer survival. It is also possible that some of diptericin\u2019s influence on survival is mediated by changes in the microbiome. We did not perform systemic infections on axenically reared flies, but if Dpt genotype influences the microbiome, which in turn influences survival after infection with other pathogens, Dpt should not influence survival after systemic infection if flies are reared axenically.\n\nOur study also reveals an important role of Diptericin in preventing opportunistic gut infections by common gut microbes. This is especially evident when looking at lifespan after associating axenic flies with L. plantarum in both mono- and poly-association contexts. In both sexes, dptS69R flies have a longer lifespan than dptS69 flies, and this effect is enhanced in poly-association with L. plantarum and A. tropicalis. Other studies have posited a role for individual AMPs in the maintenance of gut microbes in Drosophila (Marra et al., 2021), but this appears to be the first example linking a functional copy of a single AMP to survival differences.\n\nOne of our most striking and unexpected results was the distinct sex differences in longevity after association with common gut bacteria. Furthermore, fly genotype plays a significant role in these differences. After association with L. plantarum, imd- females had the shortest mean survival, while imd- males had the longest mean survival. The effect for \u0394dpt was similar: females had much shorter average survival than the other two dpt alleles, but the three alleles showed equivalent longevity in males. While the imd- sexual dimorphism is relatively consistent across experiments with different microbes, the \u0394dpt effect seems to be more limited to associations involving L. plantarum. This result not only highlights the importance of using both sexes in microbiome research, but also confirms that functional Diptericin is important for D. melanogaster gut health. There is a growing body of literature on the effects of sexual dimorphisms in immune response, but it is lacking for sexual dimorphisms in gut immunity, and our findings only emphasize the need to fill this gap (Drosophila immunity sexual dimorphisms reviewed in Belmonte et al., 2020; also see Shianiou et al., 2023). Our feeding assay provides some evidence that the differences between male and female survival after exposure to microbes are due to the amount of food (and therefore the number of microbes) consumed, but these differences should be examined in much more detail. More generally, the sex by genotype effect suggests a likely explanation for the maintenance of genetic variation: different fitness effects of alleles in the different sexes (Connallon and Clark, 2014). Note that while our study focuses on the serine/arginine polymorphism, at least six null alleles of dpt segregate in natural populations of D. melanogaster, and the frequency of those nulls shows clinal variation in both North America and Africa (Hanson et al., 2019b); thus, the nulls are likely maintained selectively too.\n\nFinally, we note that we have framed our argument in terms of balancing selection in the broad sense because we are agnostic as to the population dynamics upon which these different selective pressures might act. For example, it may be that some populations are disproportionately infected by P. rettgeri or other microbes for which the serine allele is favored, while other populations are relatively pathogen-free and the arginine allele is favored. This scenario is partly supported by the evidence of clinal patterns in allele frequency in Africa and (to a lesser extent) North America (Hanson et al., 2019a). Similarly, these selective pressures could vary temporally. On the other hand, these pressures could act all in one population where serine is favored in infected individuals, and the arginine allele is favored in uninfected individuals.\n\nHerein, we highlight three main roles of Diptericin in Drosophila: (1) Diptericin genotype influences systemic immune defense; (2) in certain conditions, Diptericin genotype influences gut immunity; and (3) Diptericin has sex-specific effects in the gut. These results highlight the need for individuals and populations to modulate the immune system to balance systemic and gut immunity, and how the different needs of females and males complicate this balance. The dramatic differences in survival of males and females in response to oral infection by common gut bacteria underline the importance of looking at both sexes when examining the maintenance of genetic diversity, as balancing selection may be caused by sexual dimorphism. Overall, our results suggest that a complex interaction between sex, environmental context (starvation, pathogen exposure \u2013 both systemic and oral), and genotype may contribute to the long-term maintenance of immune alleles.\n\n## Materials and methods\n\n### Drosophila lines and rearing\n\nConventionally reared flies were maintained in a 23\u00b0C incubator with a 12 hr light:12 hr dark schedule on a cornmeal-molasses-yeast diet 64.3 g/L cornmeal, 79.7 mL/L molasses, 35.9 g/L yeast, 8 g/L agar, 15.4 mL of food acid mix (50 mL phosphoric acid + 418 mL propionic acid + 532 mL deionized water) and 1 g/L Tegosept. We used CRISPR/Cas9 genome editing to modify the diptericin A gene. Briefly, DNA coding for guide RNA was inserted into the pUS-BbsI plasmid (Supplementary file 1). A single-stranded donor DNA (120 bp) containing the desired edit (to change from serine to arginine) and a silent mutated PAM site was synthesized by IDT (Coralville, IA, USA). The plasmid and ssODN were then injected into Bloomington stock #55821, which expresses Cas9 driven by the vasa promoter, by Genetivision, Inc (Houston, TX, USA). Individual flies developed from the injected embryos were collected and crossed with a modified version of Bloomington stock # 7198 (a line with CyO/Kruppel balanced on the second chromosome, and serrate/Dichaete balanced on the third chromosome). Our version, 7198A4, was provided by Stuart Macdonald and has the DSPR (King et al., 2012) A4 line\u2019s X chromosome instead of the w[*] from the original 7198. The F1s were collected and again individually crossed with 7198A4 for F2 crosses, yielding individuals with a homozygous second chromosome representing one of the chromosomes carried by the original injected embryo. The Dpt gene was sequenced from the F2 cross progeny to determine whether edits occurred. This yielded several classes of alleles including homozygous serine dpt (wildtype, dptS69), homozygous arginine dpt (dptS69R), and dpt null (\u0394dpt, refers to lines with either 1 or 3 base pair deletion) (Figure 1\u2014figure supplement 1A). Balancers were removed, and lines were moved into the same genetic background through a series of crosses as shown in Figure 1\u2014figure supplement 1B. An imd- line was used as an IMD pathway negative control, but note that this line was from a completely different genetic background from the rest of the lines.\n\n### Axenic fly preparation\n\nMicrobe-free (axenic) lines were generated by first washing embryos in a 10% bleach solution to dissolve the chorion for 2 min. The embryos were then washed in 70% ethanol for 30 s and water for another 30 s, then transferred to autoclaved molasses food (see above). Some embryos from each treatment were placed onto De Man, Rogosa, and Sharpe (MRS) agar plates and incubated at 30\u00b0C for 48 hr to check that they did not contain viable microbes. Axenic lines were continuously checked for the presence of contaminating microbes (every three to four generations) by homogenizing flies and plating the homogenate on MRS agar.\n\nAxenically and gnotobiotically (see below) reared flies were maintained in an incubator that was isolated from conventionally reared flies. The incubator was kept at 23\u00b0C with a 12 hr light:12 hr dark schedule. Axenic and gnotobiotic flies were kept on the same molasses diet that had been autoclaved before dispensing into autoclaved vials. Axenic and gnotobiotic flies were only handled inside a sterile hood (Baker SG 400, The Baker Company Inc, Sanford, ME, USA).\n\n### Bacterial strains\n\nThe following bacteria were used for systemic infection assays: P. rettgeri (Juneja and Lazzaro, 2009), Providencia burhodegraneria Strain B (Juneja and Lazzaro, 2009), E. faecalis (Juneja and Lazzaro, 2009), S. marcescens (Lazzaro et al., 2004), L. fusiformis Strain Juneja (Smith and Unckless, 2018), and S. succinus (isolated from wild Drosophila, Unckless lab). Bacteria were grown from glycerol stocks on LB plates at 37\u00b0C overnight.\n\nThe following bacteria were used in gnotobiotic experiments: L. plantarum, L. brevis, A. tropicalis. All these strains were isolated from plating conventionally reared flies on MRS agar in the Unckless lab at the University of Kansas. Individual colonies from plated fly homogenate were grown overnight in MRS for DNA isolation. Bacterial species were identified using Sanger sequencing with the 16S rRNA region primers 27F (AGAGTTTGATCCTGGCTCAG) and 1492R (CGGTTACCTTGTTACGACTT). We also utilized the same P. rettgeri as described for systemic infection.\n\n### Survival assays\n\nFor systemic infections, individual colonies of bacteria were picked and grown in 2 mL LB broth shaking overnight at 37\u00b0C. Bacterial suspensions were then diluted or concentrated to OD600=0.1 for P. rettgeri, OD600=10 for S. succinus, OD600=1.5 for E. faecalis, OD600=3.5 for L. fusiformis, OD600=1.0 for L. lactis, and OD600=4.0 for S. marcescens. L. plantarum was grown in 5 mL MRS at 30\u00b0C overnight and was concentrated to OD600=10 for systemic infections. To induce systemic infection, 5\u20139 days of age, conventionally reared flies were pricked in the thorax with a needle dipped in a bacterial suspension (Khalil et al., 2015). Infections were done in triplicate with at least 20 flies for each replicate per line for a total of 60 flies per genotype per condition. Flies were incubated at 23\u00b0C with a 12 hr light:12 hr dark schedule, and survival was tracked daily for 5 days post infection.\n\n### Gnotobiotic longevity\n\nAxenically reared flies were collected within 24 hr of eclosion. Flies were then kept on sterile food for 2 days before sorting for longevity experiments. To begin longevity experiments, flies were separated into groups of 10 individuals of each sex and put onto sterile food seeded with 50 \u00b5L of bacterial suspension at an OD600 of 15\u00b11. For each replicate, we used 2 vials of 10 flies each per sex per line for a total of 20 flies for each sex per genotype for a total of 60 flies across all replicates. Flies were allowed to feed in the inoculated vials for 3 days before being transferred to uninoculated sterile food vials. Flies were flipped to new sterile media every 4\u20135 days for the remainder of the experiment. Surviving flies were counted every 1\u20133 days until all flies were dead.\n\n### Gnotobiotic bacterial load\n\nTo determine whether microbes became established in the gut, we homogenized flies during and after the exposure and plated the homogenate. We measured bacterial load by inoculating flies in the same manner as gnotobiotic longevity. Flies were separated into groups of 5 females and 5 males per vial. For 2-day experiments, flies were kept on the seeded food for the entire experiment. For 10- and 20-day experiments, flies were allowed to feed on the seeded food for 3 days before being transferred to sterile food. Flies continued to be transferred to new sterile media every 3\u20134 days until days 10 or 20 post feeding. After the experimental (2-, 10-, or 20-day) time period, flies were surface-sterilized by washing in 70% ethanol followed by molecular grade water. Flies were separated by sex, and three individuals were homogenized together in 300 \u00b5L of sterile 1\u00d7 PBS, and the homogenate was plated on the appropriate media using a Whitley WASP Touch spiral plater (Don Whitley Scientific, UK). When there were not 3 flies still alive, then all remaining flies of a sex were used and squished in 100 \u00b5L of 1\u00d7 PBS per fly collected instead of 300 \u00b5L to keep all samples the same concentration per fly. Counts were adjusted accordingly.\n\n### Feeding rate assays\n\nTo measure the amount of food and bacteria consumed by males and females of different genotypes, we made food containing blue dye by adding 11.2 g FCF blue dye (Erioglaucine disodium salt) per liter of food. We used newly eclosed flies (1\u20132 days post eclosion/14 days post oviposition) and separated sexes (in sterile conditions) and kept flies at a density of 10 flies/vial in fresh food vials. We held these flies in incubators for 1 day, so they would recover from the stress of anesthesia during sexing. To introduce bacteria (or control media) into the food, we pipetted 50 \u00b5L of suspension or LB at an OD600 of 15 (\u00b11) into each vial and allowed the suspension to absorb into the food for 30\u201340 min by keeping the vials open inside a sterile hood. We next added the experimental flies and allowed them to feed for 1 hr. After 1 hr, we anesthetized the flies on ice, then rinsed in ethanol and sterile water. Flies were homogenized in 300 \u00b5L of 1\u00d7 PBS with a glass bead (maximum speed for 4 min). The homogenate was centrifuged at 14,000 RPM for 4 min, and 200 \u00b5L of the supernatant was used to measure absorbance at 630 nm. Absorbance differences were analyzed using the natural log of absorbance as the response variable with genotype, sex, genotype by sex interaction, and block as independent variables. Due to the blocking structure of the experiment, each treatment (no media control, LB control, P. rettgeri) was analyzed separately.\n\n### Desiccation\n\nDesiccation survival assays were performed on dptS69 and dptS69R adult males 4\u20137 days post eclosion in conventionally and axenically reared flies. Ten males were placed into an empty vial and closed off with a cotton plug. Each genotype had 5 vials for a total of 50 flies per line per rearing condition in each replicate. The flugs were topped with silica gel (Fisher, #S684) and sealed with parafilm to prevent any moisture from entering the vials. Vials were kept at 24\u00b0C on 12 hr day/night cycles. Survival was measured by counting flies hourly until the entire population died. This was repeated once more with 50 flies per line per rearing condition in each trial for a total of 100 flies, with the exception of the \u0394dpt line, which in total only had 30 flies per condition in total across trials.\n\n### Starvation\n\nStarvation survival assays were performed on dptS69 and dptS69R adult males 4\u20137 days after eclosion for axenically and conventionally reared flies. Ten males were placed into a vial with autoclaved starvation media (1% agar). The 1% agar was used to starve flies of nutrition but not desiccate them. Vials were kept at 24\u00b0C on 12 hr day/night cycles. Survival was measured by counting surviving flies at three 8 hr intervals (8 am, 4 pm, and 12 am) until all flies died. This was repeated twice more for a total of 3 trials with at least 40 flies per line per rearing condition in each trial for a total of at least 120 flies.\n\n### 16S sequencing\n\nFlies were reared in the lab in two distinct ways for 16S rRNA sequencing of conventionally reared flies. First, flies were taken from vials of individual genotypes. This allows for any moderate effects of fly genotype to equilibrate over time. Second, flies were taken from cages that were started with heterozygous diptericin flies. These cages were started with the F1 progeny from crosses of dptS69 and dptS69R flies and allowed to continue for three discrete generations before flies were collected for 16S rRNA sequencing. This ensures that the genotypes are exposed to the same microbes, and any differences in microbiome are due to genetic differences manifest in that generation.\n\nWe isolated DNA from individual flies using Gentra PureGene Tissue DNA Isolation Kit (QIAGEN #158388, QIAGEN, Germantown, MD, USA) following the manufacturer\u2019s instructions. DNA pellets were rehydrated in 10 \u03bcL DNA hydration solution. Flies from cage populations were genotyped by using the dpt_cw primer pair (Supplementary file 1) followed by a restriction enzyme digest using enzymes that cut DNA sequences for arginine (BccI, NEB # R0704S) or serine (AluI, NEB # R0137S).\n\nDNA concentration was measured with Qubit fluorimeter (Invitrogen). Ten flies from each inbred CRISPR genome-edited line (5 females and 5 males from dptS69, dptS69R, dptS69R-2) (a second homozygous arginine line from CRISPR/Cas9 genome editing), and \u0394dpt (1 base pair deletion) and 10 flies of each genotype from the cage population (5 females and 5 males of SS, SR, RR genotypes) were each brought to a DNA concentration of 5 ng/\u03bcL. Libraries were prepped in accordance with the 16S Metagenomic Sequencing Library Preparation protocol from Illumina for the 16S V3/V4 region. Sequencing was performed on the Illumina MiSeq platform using v.3 300 bp paired-end reads. Library preparation and sequencing were performed at the University of Kansas Genome Sequencing Core (Lawrence, KS, USA).\n\nWild flies were collected from decaying apples and pears in an apple orchard in Kansas City, KS, USA (3341N 139th St, Kansas City, KS 66109, USA). Flies were immediately transported back to the lab and sorted by species on CO2 and frozen at \u201320\u00b0C. DNA was extracted from individual flies using Gentra PureGene Cell & Tissue DNA Isolation Kit (QIAGEN #158388). The samples were tested for species (D. simulans vs. D. melanogaster), Wolbachia status, and Dpt genotype using primers listed in Supplementary file 1 . Collections are summarized in Supplementary file 10. Libraries were prepped in the same manner as the conventionally reared flies.\n\n### 16S bioinformatic analysis\n\nDemultiplexed reads were processed with QIIME2, v.2019.10 (Bolyen et al., 2019). Primers were removed from 5\u2019 ends with Cutadapt using default parameters (Martin, 2011). Reads were de-noised and trimmed for quality with Divisive Amplicon Denoising Algorithm (DADA2) within the QIIME2 bioinformatics pipeline (Callahan et al., 2016). Forward and reverse reads were truncated at 280 bp and 245 bp, respectively. The remaining ASV table was exported from QIIME2 for further processing in R (R Development Core Team, 2021). Taxonomy was assigned to the ASV table using SILVA 16S rRNA gene reference database, v.138 (Quast et al., 2013; Yilmaz et al., 2014; Gl\u00f6ckner et al., 2017). Reads assigned to genus level Wolbachia (a Drosophila endosymbiont) and kingdom level Eukaryota were removed from further analysis. We also removed reads not observed at least three times in at least 10 samples. Then, conventionally reared flies were rarefied to 17,066 reads, while wild flies were rarefied to 10,771 reads.\n\nAll statistical analysis of 16S data was performed in R (4.1.2) using the Phyloseq (McMurdie and Holmes, 2013) package and ggplot2 (Wickham et al., 2019) package for visualization. The CRISPR and cage population data were analyzed separately. For each population, alpha diversity was estimated using Shannon diversity in Phyloseq using the estimate_richness() function. Bray-Curtis dissimilarity was calculated to look at overall patterns of microbiome composition in Phyloseq using the ordinate() function. Significance was determined at \u03b1=0.05. Fixed effects models were fit with the package lme4 (Bates et al., 2015) with the fixed effects genotype + sex + genotype*sex. When necessary, p-values were adjusted for multiple comparisons using the FDR correction method.\n\n### Statistical analysis\n\nR (v.4.1.2) was used to run statistical analyses. Survival data were plotted using the R package survminer (Kassambara et al., 2021). The analysis was performed using the Cox proportional hazards regression model in R (Therneau, 2009). For longevity, significance was determined using the model: Lifespan~(Genotype*Sex)/Vial + Block. For gnotobiotic bacterial load, significance was determined using the model: Colonies.mL~(Genotype)*Sex + Block.\n\n### Material availability statement\n\nAll edited Drosophila lines and microbes are available from the authors upon request.\n",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bruno Lemaitre, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90638.3.sa0](https://doi.org/10.7554/eLife.90638.3.sa0)\n\nThis valuable study investigates evolutionary aspects around a single amino acid polymorphism, known to be under long-term balancing selection, in an immune peptide of Drosophila melanogaster. Using alleles with different substitutions, the investigators demonstrate that while one allele provides better survival after systemic infections by a bacterial pathogen, the alternative allele endows its carriers with a longer lifespan under certain conditions. The authors suggest that these contrasting fitness effects of the two alleles contribute to balancing their long-term evolutionary fate. While the work is very interesting, the strength of the provided evidence is still incomplete, and the study would benefit from more rigorous approaches.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90638.3.sa1](https://doi.org/10.7554/eLife.90638.3.sa1)\n\nSummary:\n\nIn this manuscript, Unckless and colleagues address the issue of the maintenance of genetic diversity of the gene diptericin A, which encodes an antimicrobial peptide in the model organism Drosophila melanogaster. This is an important question as the maintenance of different alleles in wild populations is not known.\n\nStrengths:\n\nThe data indicate that flies homozygous for the dptA S69 allele are better protected against some bacteria. By contrast, male flies homozygous for the R69 allele resist better to starvation than flies homozygous for the S69 allele. This provides an element of explanation.\n\nWeaknesses:\n\n(1) Some of the results are difficult to understand. The observation that R69 die more than the null Dpt mutant and the wild-type is strange. This could be due to background effect. The fact that the second chromosome was not isogenized after the CRISPR change is an issue. This issue may take too much time to fix, but should be acknowledged. The existence of background effect and the multiple tested conditions that may lead to the obtention of results that may not be reproduced in other contexts/labs.\n\n(2) Some lifespans are rather short and often in disagreement with other studies (Leulier, Iatsenko but also Hanson/Lemaitre). There are also disagreements inside the article itself for instance between Fig4C and 2A. This should be mentioned.\n\n(3) The shape of many lifespan analysis with abrupt decline contrast with classical lifespan studies, suggesting technical problems.\n",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "362c2520-efb2-41fe-b032-78a6c23fbe69",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C1",
+      "claim": "Diptericin A has a segregating amino acid polymorphism at the 69th residue of the mature 83-residue peptide in D. melanogaster and D. simulans.",
+      "claim_type": "EXPLICIT",
+      "source": "In both D. melanogaster and Drosophila simulans, an amino acid polymorphism at the 69th residue of the mature 83-residue Diptericin peptide segregates in most populations surveyed (Unckless et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Unckless et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "93b94de9-68aa-48ee-9fd0-941cca5f9e92",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C2",
+      "claim": "The amino acid polymorphism in Diptericin A is due to a point mutation that changes the ancestral serine (S) allele to arginine (R).",
+      "claim_type": "EXPLICIT",
+      "source": "In both species, this polymorphism is due to a point mutation that changes the ancestral serine (S) allele to arginine (R), but the two species use different codons for arginine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Unckless et al., 2016 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "63736811-b979-4664-b2c9-8ef97265f354",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C3",
+      "claim": "Homozygous serine flies have better survival rate 5 days post infection with P. rettgeri (~60%) than homozygous arginine flies (~20%) or flies with a premature stop codon in diptericin (0%).",
+      "claim_type": "EXPLICIT",
+      "source": "The study used inbred fly lines and found homozygous serine flies have a better survival rate 5 days post infection (~60%) than homozygous arginine flies (~20%) or flies with a premature stop codon in diptericin (0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Unckless et al., 2016 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "a8e8cf7d-4d03-4738-ac5c-1239776c9c00",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C5",
+      "claim": "CRISPR/Cas9 genome editing was used to create arginine allele (dptS69R), null alleles (\u0394dpt), and control serine allele (dptS69) in diptericin.",
+      "claim_type": "EXPLICIT",
+      "source": "To control genetic background, we used CRISPR/Cas9 genome editing to create both an arginine allele (single nucleotide change, dptS69R) and multiple null alleles (1 or 3 base pair deletions, \u0394dpt flies), as well as control dptS69 (serine at position 69 of the mature peptide) in diptericin (Figure 1\u2014figure supplement 1A, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental methods performed in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "2edfbbf8-9b9d-4d7d-919b-9a957fe1e941",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C6",
+      "claim": "In systemic infection challenges with P. rettgeri, dptS69 flies are better protected from infection than dptS69R flies (p=5.42e-08) and \u0394dpt flies (p=6.46e-09).",
+      "claim_type": "EXPLICIT",
+      "source": "In systemic infection challenges with P. rettgeri, dptS69 flies are better protected from infection than dptS69R flies (p=5.42e-08) and \u0394dpt flies (p=6.46e-09, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance values and reference to Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "b1d5631b-2efe-498c-8cf4-35ad20a3f57c",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C7",
+      "claim": "For both inbred lines and CRISPR/Cas9-edited lines, survival for 5 days post infection with P. rettgeri is 50-60% for serine allele lines, 10-20% for arginine allele lines, and less than 5% for null alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, for inbred lines and CRISPR/Cas9-edited lines, survival for 5 days post infection with P. rettgeri for the serine allele lines is 50\u201360%, with the arginine allele is 10\u201320%, and less than 5% for null alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summarizes experimental data from both inbred and CRISPR lines",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "62fff0dc-6173-4a31-a6a3-fa3ac4c1d13f",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C8",
+      "claim": "DptS69 flies survived better than dptS69R flies for all systemic infections tested.",
+      "claim_type": "EXPLICIT",
+      "source": "DptS69 flies survived better than dptS69R flies for all systemic infections tested (Figure 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1 and Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "09cbc376-b38e-4d57-8fc0-8d2187784e8f",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C9",
+      "claim": "In Gram-positive bacterial infections (E. faecalis, S. succinus, L. fusiformis, and L. lactis), dptS69R flies had lower survival than \u0394dpt or imd- flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Gram-positive bacterial infections (E. faecalis, S. succinus, L. fusiformis, and L. lactis), dptS69R flies had lower survival than that of \u0394dpt or imd- (null allele for the Imd gene) flies (Figure 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "72524807-95d4-4268-9336-b395cda140e9",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C10",
+      "claim": "For S. marcescens systemic infection, dpt genotype did not affect survival except for imd- flies which die very quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "The only systemic infection where dpt genotype did not seem to matter was S. marcescens, where all flies survive infection well except for imd-, which die very quickly (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "336f0493-6303-4d76-9b31-71c4dae853e0",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C11",
+      "claim": "Females showed lower survival compared to males after systemic infection with E. faecalis (p=0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "Females showed lower survival compared to males after systemic infection with E. faecalis (p=0.0003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical significance value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "502ca83e-a1ec-4bb3-876f-a2fc78e61812",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C12",
+      "claim": "Higher male survival post infection was observed previously for both E. faecalis and P. rettgeri, with differences ascribed to the Toll pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher male survival post infection was observed previously for both E. faecalis and P. rettgeri, with differences ascribed to the Toll pathway (Duneau et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duneau et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "ae2365cf-495c-4dcf-8b0c-3931d6a6a8e1",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C13",
+      "claim": "Flies with functional copies of diptericin (dptS69 or dptS69R) did not differ in lifespan for either sex in axenic conditions (pgenotype=0.3762).",
+      "claim_type": "EXPLICIT",
+      "source": "Flies with functional copies of diptericin (dptS69 or dptS69R) did not differ in lifespan for either sex (pgenotype=0.3762), and \u0394dpt lines show a similar lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical significance value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "990fbb47-ca01-4e3a-acaf-3ca2c2c1d0f9",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C14",
+      "claim": "There was a difference in overall lifespan between the sexes among the CRISPR genome-edited lines in axenic conditions (psex=1.04e-6).",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was a difference in overall lifespan between the sexes among the CRISPR genome-edited lines (psex=1.04e-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical significance value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "d1ce0710-8837-4d8d-b424-fc08b3896c95",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C15",
+      "claim": "In dptS69 or \u0394dpt lines, female flies have a longer lifespan than male flies in axenic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In dptS69 or \u0394dpt, female flies have a longer lifespan than male flies, as observed generally for D. melanogaster previously (Lints et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Lints et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "491b5f72-5f27-42c6-8a8d-ed6944795343",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C16",
+      "claim": "Imd- male flies have a much longer lifespan than any of the other lines tested in axenic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, imd- male flies have a much longer lifespan than any of the other lines tested (Figure 2A \u2013 axenic row, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "b15aee11-a537-44ef-83f6-bff04ba42f75",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C17",
+      "claim": "After mono-association with L. plantarum, female \u0394dpt and female imd- flies both succumbed quickly post-feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies that were fed L. plantarum show the most striking differences. Male flies continued to show similar lifespans to each other, but female \u0394dpt and female imd- flies both succumbed quickly post-feeding, indicating functional Diptericin is important for gut immunity against opportunistic L. plantarum in females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and inference about the role of Diptericin",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "d134ae11-2268-42aa-b6a8-94e28814e0b9",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C18",
+      "claim": "Functional Diptericin is important for gut immunity against opportunistic L. plantarum in females.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies that were fed L. plantarum show the most striking differences. Male flies continued to show similar lifespans to each other, but female \u0394dpt and female imd- flies both succumbed quickly post-feeding, indicating functional Diptericin is important for gut immunity against opportunistic L. plantarum in females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing differential survival of \u0394dpt and imd- females",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "684fbbda-636b-4a4e-bb1a-31c5b3c14659",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C19",
+      "claim": "After mono-association with P. rettgeri, there is no significant difference in survival between dptS69 and dptS69R genotypes in either sex (p=0.612).",
+      "claim_type": "EXPLICIT",
+      "source": "After mono-association, however, we see no significant difference between the two genotypes with P. rettgeri in either sex (p=0.612, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "cc4b4f04-d5c6-4aa6-8dde-62f496fe1d9e",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C20",
+      "claim": "Null Imd females die much earlier when fed P. rettgeri, while null Imd males survive much longer.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, the null allele for Imd again shows a significant effect on survival in a sex-specific manner: null Imd females die much earlier, and null Imd males survive much longer when fed P. rettgeri.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing sex-specific survival patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "14e2a08f-874a-4e29-8642-f27ff2631be6",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C21",
+      "claim": "Females eat more in a single hour of feeding than males.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that females did eat more in a single hour of feeding, but that there was also an effect of diptericin genotype (with null flies eating less, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "6cfa227c-8d85-46f5-99b4-61cf300f247d",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C22",
+      "claim": "Diptericin genotype affects feeding rate, with null flies eating less.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that females did eat more in a single hour of feeding, but that there was also an effect of diptericin genotype (with null flies eating less, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "e6b117c0-5deb-4cbf-9d75-e0be48a806f5",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C23",
+      "claim": "Female \u0394dpt and imd- flies had a much shorter lifespan than flies with functional Diptericin when poly-associated with L. plantarum and A. tropicalis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that female \u0394dpt and imd- flies had a much shorter lifespan than flies with functional Diptericin (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "44d49257-ad52-4be4-9e44-2280c61f3eae",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C24",
+      "claim": "DptS69R female flies live longer than dptS69 female flies when poly-associated with L. plantarum and A. tropicalis (p=0.00782).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observe that the diptericin genotype influences survival when poly-associated with L. plantarum and A. tropicalis. DptS69R female flies live longer than dptS69 female flies (Figure 2A and B; p=0.00782).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "736a9a88-f663-4f8b-b0c1-b60cda8547d9",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C25",
+      "claim": "The longer lifespan of dptS69R female flies compared to dptS69 female flies in poly-association with L. plantarum and A. tropicalis may indicate a trade-off between defense against systemic and gut immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the opposite of systemic infections, where dptS69 flies always survived better than dptS69R flies, and may indicate a trade-off between defense against systemic and gut immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of systemic infection and poly-association data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "add5d486-680a-4b49-9a98-5e33200b56e8",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C26",
+      "claim": "In poly-association with L. plantarum and P. rettgeri, female \u0394dpt and imd- flies have a shorter lifespan than female dptS69 and dptS69R flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In poly-association with 1:1 L. plantarum and P. rettgeri, we observe many of the same patterns as in the poly-association with L. plantarum and A. tropicalis. Again, female \u0394dpt and imd- flies have a shorter lifespan than female dptS69 and dptS69R flies (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "73bfd4ba-8331-4e5c-90ec-56b47fd42936",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C27",
+      "claim": "DptS69R females have a longer lifespan than dptS69 flies when poly-associated with L. plantarum and P. rettgeri (p=0.000198).",
+      "claim_type": "EXPLICIT",
+      "source": "DptS69R females have a longer lifespan than dptS69 flies (p=0.000198, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "3b6ac5c0-db7e-4b6f-8c36-76af87960d04",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C28",
+      "claim": "There was no difference in survival between the sexes after systemic infection with L. plantarum in conventionally reared flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw no difference in survival between the sexes, as observed for systemic infections with E. faecalis or P. rettgeri, and saw no difference between \u0394dpt lines and lines with functional Diptericin, as observed for axenic flies mono-associated with L. plantarum (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "f8d23654-1785-438a-b883-be2cc67c02e1",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C29",
+      "claim": "DptS69 male flies survived better than dptS69R male flies after systemic infection with L. plantarum (p=0.00438).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, dptS69 male flies survived better than dptS69R male flies (p=0.00438), in line with observations from other systemic infections in males (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "1ec07a51-a73c-4177-b4a0-d3b11862b4ac",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C30",
+      "claim": "Bacterial load differences between genotypes in L. plantarum mono-association occur within the first 2 days post feeding but begin to disappear by day 20 (pgenotype(day2)=2.6e-5, pgenotype(day20)=0.709).",
+      "claim_type": "EXPLICIT",
+      "source": "When specifically looking at mono-association with L. plantarum, we observe that bacterial load differences between genotypes occur within the first 2 days post feeding but begin to disappear by day 20 (pgenotype(day2)=2.6e-5, pgenotype(day20)=0.709, Figure 3A, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance values and reference to Figure 3A and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "7bb92a8d-082d-491a-ba16-a2334d0cbf87",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C31",
+      "claim": "There is a genotype effect between dptS69 and dptS69R on P. rettgeri bacterial load on day 10 and 20 post feeding in males (pgenotype(day10)=0.0044, pgenotype(day20)=0.0004).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a genotype effect between dptS69 and dptS69R on day 10 and 20 post feeding in males (pgenotype(day10)=0.0044, pgenotype(day20)=0.0004, model only included dptS69 and dptS69R, Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical significance values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "d26f6ee2-9f3a-4300-b68d-e455e411c07f",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C32",
+      "claim": "Bacterial load in dptS69R flies is higher than in dptS69 flies on day 10 and 20 post feeding with P. rettgeri in males.",
+      "claim_type": "EXPLICIT",
+      "source": "In both instances, bacterial load in dptS69R flies is higher than in dptS69 flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data described in the preceding sentence",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "5b6ce6c6-2402-4deb-af0f-4995216e24f4",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C33",
+      "claim": "P. rettgeri establishes poorly in the gut of wildtype flies.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that P. rettgeri establishes poorly in the gut of wildtype flies (personal observation), which may explain the noisy results for mono-associations after oral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on personal observation by the authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "9a30e690-a369-4864-bb89-911ad27ee6bc",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C34",
+      "claim": "There were no statistically significant differences between dptS69 and dptS69R bacterial load for poly-association with L. plantarum and P. rettgeri.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no statistically significant differences between dptS69 and dptS69R bacterial for this poly-association (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Supplementary file 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "bf6d954d-03bd-4593-aeba-31935c8c01f1",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C35",
+      "claim": "L. plantarum shows differences in bacterial load on day 2 post feeding in poly-association with P. rettgeri (p=7.97e-6).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, there were no significant differences between any of the P. rettgeri bacterial loads; however, L. plantarum does show differences on day 2 post feeding (p=7.97e-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical significance value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "f4e41f09-d0ea-4e58-9a3b-119918cd9d26",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C36",
+      "claim": "Both \u0394dpt and imd- flies had higher L. plantarum bacterial load than dptS69 and dptS69R flies on day 2 post feeding in poly-association with P. rettgeri.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences are mainly between flies with nonfunctional diptericin (imd- and \u0394dpt) and flies with functional diptericin. Both \u0394dpt and imd- flies had higher bacterial load than dptS69 and dptS69R flies on day 2 post feeding, which may be an indication of the reason both these lines quickly succumb to feeding with L. plantarum, at least in the context of the poly-association with P. rettgeri.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and inference about the cause of mortality",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "c3cfca90-4deb-470d-8796-1a6f6b922ce3",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C37",
+      "claim": "When subjecting male CRISPR/Cas9 flies to desiccation, conventionally reared flies succumb faster to desiccation stress than axenically reared flies (pgenotype<2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "When subjecting our male CRISPR/Cas9 flies to desiccation, we observe conventionally reared flies succumb faster to desiccation stress than axenically reared flies (Figure 4A, pgenotype<2e-16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "5b79a8f6-b8fc-4889-a858-829c28160f64",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C38",
+      "claim": "In conventionally reared males, dptS69 flies have similar desiccation resistance to dptS69R flies (p=0.917).",
+      "claim_type": "EXPLICIT",
+      "source": "In conventionally reared males, dptS69 flies have similar desiccation resistance to dptS69R flies (p=0.917).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical significance value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "aa8f959e-8162-4978-9eb3-fda12d455f17",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C39",
+      "claim": "DptS69 flies survive desiccation stress better than dptS69R flies when reared axenically (pgenotype=0.04126).",
+      "claim_type": "EXPLICIT",
+      "source": "However, dptS69 flies survive desiccation stress better than dptS69R flies when reared axenically (pgenotype=0.04126).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical significance value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "a3489773-5b8b-4e18-b1b3-bc1b8558110b",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C40",
+      "claim": "Axenically reared flies survive starvation stress better than conventionally reared flies (ptreatment<2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "As with desiccation resistance, we found axenically reared flies survive starvation stress better than conventionally reared flies (Figure 4B, Figure 4\u2014figure supplement 2, ptreatment<2e-16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 4B and Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "4adebad8-83d0-4364-891f-8393f95eb9d9",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C41",
+      "claim": "Both conventionally reared and axenically reared dptS69R flies survive starvation stress longer than dptS69 flies (conventional: pgenotype<2e-16, axenic: pgenotype<2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the desiccation stress conditions, both conventionally reared and axenically reared dptS69R flies survive starvation stress longer than dptS69 flies (conventional: pgenotype<2e-16, axenic: pgenotype<2e-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical significance values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "cb6d37d5-65b1-4a2d-9819-5ea4fc7795c1",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C42",
+      "claim": "In conventionally reared flies, there is no difference in starvation survival between dptS69 flies and \u0394dpt flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In conventionally reared flies, there is no difference in survival between dptS69 flies and \u0394dpt flies (Figure 4B, Supplementary file 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B and Supplementary file 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "0e7e51e7-b580-4ff2-b2cc-4e5b6624e21b",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C43",
+      "claim": "In axenically reared flies, \u0394dpt flies have an intermediate starvation survival phenotype between dptS69 and dptS69R flies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in axenically reared flies, \u0394dpt flies have an intermediate survival phenotype between dptS69 and dptS69R flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "3ad22fa9-b318-4122-aa30-26f55dbff029",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C44",
+      "claim": "Female flies have a longer lifespan than males in conventionally reared flies (psex=5.80e-13) regardless of dpt genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Female flies have a longer lifespan than males (Figure 4C, Figure 4\u2014figure supplement 3, psex=5.80e-13) regardless of dpt genotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 4C and Figure 4\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "4e40a8c7-3e90-4be8-91d3-3f5d12307b39",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C45",
+      "claim": "In conventionally reared males, dptS69 flies had a significantly longer lifespan than male dptS69R flies (mean of 60.3 days for dptS69 and 54.1 days for dptS69R, p=0.0072).",
+      "claim_type": "EXPLICIT",
+      "source": "In males, dptS69 flies had a significantly longer lifespan than male dptS69R flies (mean of 60.3 days for dptS69 and 54.1 days for dptS69R, p=0.0072), but not in female flies (mean of 61.9 days for dptS69 and 59.0 days for dptS69R, p=0.6434).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with mean values and statistical significance values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "f187d236-63f4-4b12-9d84-29f1298f0a6b",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C46",
+      "claim": "In conventionally reared females, there is no significant difference in lifespan between dptS69 and dptS69R flies (mean of 61.9 days for dptS69 and 59.0 days for dptS69R, p=0.6434).",
+      "claim_type": "EXPLICIT",
+      "source": "In males, dptS69 flies had a significantly longer lifespan than male dptS69R flies (mean of 60.3 days for dptS69 and 54.1 days for dptS69R, p=0.0072), but not in female flies (mean of 61.9 days for dptS69 and 59.0 days for dptS69R, p=0.6434).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with mean values and statistical significance values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "09a94150-2a77-4f03-97f8-9986763d7012",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C47",
+      "claim": "In conventionally reared flies, female flies with the longest lifespan have nonfunctional Diptericin (\u0394dpt line and imd- line).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the female flies with the longest lifespan have nonfunctional Diptericin (Figure 4C, \u0394dpt line and imd- line, Supplementary file 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C and Supplementary file 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "99f5af9c-7850-4b0a-ae0c-bc5097263b51",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C48",
+      "claim": "Males lacking functional Diptericin show increased lifespan, but to a lesser extent than females.",
+      "claim_type": "EXPLICIT",
+      "source": "Males lacking functional Diptericin show the same effect, but to a lesser extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data described in the context",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "40ed87aa-9231-417d-93fb-d022b2879256",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C49",
+      "claim": "In the presence of a standard gut microbiota, both Dpt and a functional Imd pathway may decrease longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide evidence that, in the presence of a standard gut microbiota, both Dpt and a functional Imd pathway may decrease longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing increased longevity in \u0394dpt and imd- flies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "b9f8eebf-2a5f-4890-9394-32453cee82a0",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C50",
+      "claim": "Downregulation of NF-\u03baB pathways and AMPs increased lifespan in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with others who found downregulation of NF-\u03baB pathways and AMPs increased lifespan in Drosophila (Lin et al., 2018; Khor and Cai, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lin et al., 2018 and Khor and Cai, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "f38f2265-7596-415c-9fe9-fb1fe777da45",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C51",
+      "claim": "Flies that were co-reared in cages had similar microbiomes, with no discernible differences by Shannon diversity (p=0.5239).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found flies that were co-reared in cages had similar microbiomes, with no discernible differences by the alpha diversity metric, Shannon diversity (p=0.5239, Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "ec2dc27a-6359-4a39-8c5a-0a71631078d6",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C52",
+      "claim": "The microbiomes of flies reared in vials were distinctly different overall compared to the microbiomes of flies reared in the cages (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the microbiomes of flies reared in vials were distinctly different overall compared to the microbiomes of flies reared in the cages (p<0.001, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical significance value and reference to Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "eeb033ba-2220-46d4-8952-f0bcb0b0cd79",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C53",
+      "claim": "There was a significant difference between the 2 dptS69R lines used in vial-reared flies.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 2 dptS69R lines used, and even though these are the same genotype and genetic background, there was a significant difference between the 2 lines (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "b300505e-a0d5-4c9d-9894-c846379ddb3e",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C54",
+      "claim": "The difference between the 2 dptS69R lines is likely due to within-vial drift in gut microbiome communities.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference is likely due to the within-vial drift in gut microbiome communities (Wong et al., 2013), which we attempted to control for using flies of different genotypes reared in the same cage (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental design and supported by citation to Wong et al., 2013",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "f1e47887-077e-48e2-9a63-905561b6a069",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C55",
+      "claim": "Dpt genotype does not affect the overall composition of the microbiome of wild-caught flies based on Shannon diversity and Bray-Curtis dissimilarity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that dpt genotype does not affect the overall composition of the microbiome of wild-caught flies based on Shannon diversity (alpha diversity) and Bray-Curtis dissimilarity (beta diversity) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "8bf3122c-7b39-4a0b-9b4d-1093ab7b13c0",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C56",
+      "claim": "Heterozygous and homozygous serine flies have a slightly higher abundance of Morganellaceae family reads than homozygous arginine flies, but these differences were not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterozygous and homozygous serine flies have a slightly higher abundance than homozygous arginine flies (Figure 5D), but these differences were not significant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "61f2dd3d-9f6b-4ea7-9826-6b2232c2144e",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C57",
+      "claim": "P. rettgeri belongs to the Morganellaceae family.",
+      "claim_type": "EXPLICIT",
+      "source": "Most intriguing is the difference in abundance of Morganellaceae family reads since P. rettgeri belongs to this family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established taxonomic knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "0e5b2cd6-aee0-4e83-be08-0272b280a2a4",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C58",
+      "claim": "The innate immune system provides hosts with a crucial first line of defense against pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "The innate immune system provides hosts with a crucial first line of defense against pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "6ff72625-6d6d-4b1d-b848-69b3141d4faa",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C59",
+      "claim": "Immune genes are often among the fastest evolving genes in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "While immune genes are often among the fastest evolving genes in the genome, in Drosophila, antimicrobial peptides (AMPs) are notable exceptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "217cda36-423b-4563-b821-035827f0cb47",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C60",
+      "claim": "In Drosophila, antimicrobial peptides (AMPs) are notable exceptions to the pattern of rapid evolution of immune genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While immune genes are often among the fastest evolving genes in the genome, in Drosophila, antimicrobial peptides (AMPs) are notable exceptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge and citations in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "ddaf737a-baaf-4912-b7a6-ed20ee52d5fa",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C61",
+      "claim": "AMPs may be under balancing selection, such that over evolutionary timescales, multiple alleles are maintained in populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, AMPs may be under balancing selection, such that over evolutionary timescales, multiple alleles are maintained in populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from population genetic patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "c937b6d3-4bed-44e5-bc2e-6f6fa3285f35",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C62",
+      "claim": "Diptericin A helps control opportunistic gut infections by common Drosophila gut microbes, especially those of Lactobacillus plantarum.",
+      "claim_type": "EXPLICIT",
+      "source": "Diptericin A also helps control opportunistic gut infections by common Drosophila gut microbes, especially those of Lactobacillus plantarum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "d844d209-7a94-43e5-a3de-05fe89edd0a5",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C63",
+      "claim": "There are strong sex-specific effects on gut immunity that are most prominent in flies without functional diptericin A.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to genotypic effects on gut immunity, we also see strong sex-specific effects that are most prominent in flies without functional diptericin A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "64147668-3600-4c11-ac8b-1dc35ef836ee",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C64",
+      "claim": "Flies that are homozygous for one allele of diptericin A are better equipped to survive a systemic infection from P. rettgeri.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find flies that are homozygous for one allele of diptericin A are better equipped to survive a systemic infection from P. rettgeri, but in general have a shorter lifespans after being fed common gut commensals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "5d03c38d-664c-41f4-a67d-b56de93f2d1c",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C65",
+      "claim": "Flies homozygous for the serine allele of diptericin A in general have shorter lifespans after being fed common gut commensals.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find flies that are homozygous for one allele of diptericin A are better equipped to survive a systemic infection from P. rettgeri, but in general have a shorter lifespans after being fed common gut commensals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "cb056da9-1849-4f82-bdf0-4fc1fe150b80",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C66",
+      "claim": "A possible mechanism for the maintenance of genetic variation of diptericin A is through the complex interactions of sex, systemic immunity, and the maintenance of the gut microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest a possible mechanism for the maintenance of genetic variation of diptericin A through the complex interactions of sex, systemic immunity, and the maintenance of the gut microbiome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental results presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "7aecbd0a-36ed-4bee-9047-6cb219fb6521",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C67",
+      "claim": "An excessive immune response causes damage to self either directly (autoimmunity, cytokine storms) or through dysbiosis via disruption of the composition of beneficial microflora.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an excessive immune response causes damage to self either directly (autoimmunity, cytokine storms) or through dysbiosis via disruption of the composition of beneficial microflora (Miyauchi et al., 2023; Wang et al., 2020; Badinloo et al., 2018; Fajgenbaum and June, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Miyauchi et al., 2023; Wang et al., 2020; Badinloo et al., 2018; Fajgenbaum and June, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "9942239f-485a-4dc5-91b8-797a3cf7fefb",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C68",
+      "claim": "The immune system must distinguish harmful vs. beneficial microbes in each context.",
+      "claim_type": "EXPLICIT",
+      "source": "The challenge of maintaining a balanced immune response is exacerbated because the threat of microorganisms is contextual; thus, the immune system must distinguish harmful vs. beneficial microbes in each context (Thaiss et al., 2016; Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Thaiss et al., 2016; Shi et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "19188968-e892-45c1-84eb-df5938c8516c",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C69",
+      "claim": "An ingested microbe may be harmless or even beneficial as a food source in the digestive tract, but when in circulation, that same microbe may prove harmful to the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an ingested microbe may be harmless or even beneficial as a food source in the digestive tract, but, when in circulation, that same microbe may prove harmful to the organism (Brown et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brown et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "7cb3c8dd-2140-4dcb-9605-2371de84c4f4",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C70",
+      "claim": "Balancing a robust innate immune system may lead to the maintenance of genetic polymorphism in genes that encode for proteins intimately involved in the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "One consequence of balancing a robust innate immune system is that it may lead to the maintenance of genetic polymorphism in genes that encode for proteins intimately involved in the immune response (Bagnicka et al., 2010; Pierce et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bagnicka et al., 2010; Pierce et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "b5bece56-df60-49ab-a8fc-f644ab4e2ae7",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C71",
+      "claim": "Natural variation in many immune genes is maintained by balancing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the evolutionary arms race model, natural variation in many immune genes is maintained by balancing selection (Chapman et al., 2019; Aguilar et al., 2004; Ferrer-Admetlla et al., 2008; Tennessen and Blouin, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chapman et al., 2019; Aguilar et al., 2004; Ferrer-Admetlla et al., 2008; Tennessen and Blouin, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "c2d1f86f-8385-42b9-90dc-452044273a96",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C72",
+      "claim": "The inference of balancing selection from molecular population genetic data is difficult, especially when genes are small and in areas of high recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The inference of balancing selection from molecular population genetic data is difficult, especially when genes are small and in areas of high recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge in population genetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "3a0fd31b-699a-4ba9-b6bd-81cf00474e83",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C73",
+      "claim": "Several examples of balancing selection exist, many of which involve small effector proteins of the innate immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, several examples of balancing selection exist, many of which involve small effector proteins of the innate immune system (Tennessen and Blouin, 2008; Unckless et al., 2016; Chapman et al., 2016; Padhi and Verghese, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tennessen and Blouin, 2008; Unckless et al., 2016; Chapman et al., 2016; Padhi and Verghese, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "1734a8af-24e0-4e07-8fdc-ac65eb71d1f1",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C74",
+      "claim": "Invertebrates lack an adaptive immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Invertebrates lack an adaptive immune system, so the delicate balance between systemic and gut immunity is achieved only through adjustments to the innate immune response (Ryu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge and supported by citation to Ryu et al., 2010",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "40cb7a79-c3c3-4c9b-b893-8d3eb601295a",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C75",
+      "claim": "The IMD pathway is the main NF-\u03baB immune pathway in the gut and contributes to the maintenance of the microbiome and protection from gut infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Though first characterized for its role in systemic immunity, the (IMD) pathway is also the main NF-\u03baB immune pathway in the gut and contributes to the maintenance of the microbiome and protection from gut infections (Lhocine et al., 2008; Bosco-Drayon et al., 2012; Broderick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lhocine et al., 2008; Bosco-Drayon et al., 2012; Broderick et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "37875427-a9a3-4f1e-a40b-88adbbdb3fac",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C76",
+      "claim": "The standard gut microbiome of lab-reared Drosophila melanogaster consists of two prominent bacterial genera: Lactobacillus and Acetobacter.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard gut microbiome of lab-reared Drosophila melanogaster consists of two prominent bacterial genera: Lactobacillus and Acetobacter (Broderick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Broderick et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "e43a6ce2-a6fd-40c3-8ae8-6de498f260ae",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C77",
+      "claim": "AMPs are a critical part of the innate immune system that act as broad-spectrum antimicrobials, combating bacteria, fungi, and viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Antimicrobial peptides (AMPs) are a critical part of the innate immune system that act as broad-spectrum antimicrobials, combating bacteria, fungi, and viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "879f20b9-b330-4cb1-8ddc-867451581b6e",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C78",
+      "claim": "Dysregulation of AMPs has been connected to diseases such as atopic dermatitis and Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPs have also been demonstrated to have critical roles in other physiological functions, e.g., dysregulation of AMPs has been connected to diseases such as atopic dermatitis and Alzheimer's disease (Wang et al., 2020; Ong et al., 2002; Rieg et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2020; Ong et al., 2002; Rieg et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "ea0320f9-f868-4517-be07-f12cf19feb61",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C79",
+      "claim": "AMPs contribute to the aging process, where the immune system becomes more active as organisms age to compensate for a decline in its effectiveness, leading to cytotoxicity that shortens lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPs also contribute to the aging process, where the immune system becomes more active as organisms age to compensate for a decline in its effectiveness. However, this leads to cytotoxicity that in turn shortens lifespan (Badinloo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Badinloo et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "5de074e2-90db-42ca-b508-b6a5fb5ab90b",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C80",
+      "claim": "In Drosophila, AMPs play a crucial role in both managing systemic infections and in the maintenance of the gut microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, AMPs play a crucial role in both managing systemic infections and in the maintenance of the gut microbiota (Buchon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buchon et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "fac5f945-84f2-4a0d-8b25-56cfc9535fbc",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C81",
+      "claim": "Drosophila AMPs appear to evolve more slowly than most immune gene families.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPs, however, appear to evolve more slowly than most immune gene families (Clark et al., 2007; Jiggins and Kim, 2007; Sackton et al., 2007; Obbard et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Clark et al., 2007; Jiggins and Kim, 2007; Sackton et al., 2007; Obbard et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "a283e3cb-0471-4c24-b3a1-70937bf875ac",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C82",
+      "claim": "One explanation for the perceived lack of adaptive evolution in Drosophila AMPs is that their genetic variation is maintained adaptively through balancing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation for this perceived lack of adaptive evolution is that Drosophila AMPs' genetic variation is maintained adaptively through balancing selection (Chapman et al., 2019; Comeron, 2014; Unckless and Lazzaro, 2016; Perlmutter et al., 2024), where different selective pressures favor different alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chapman et al., 2019; Comeron, 2014; Unckless and Lazzaro, 2016; Perlmutter et al., 2024",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "ac9cc24e-5e91-4d23-9509-32a4dc1eab7b",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C83",
+      "claim": "Naturally occurring allelic variation in AMP loci is sometimes associated with variability in pathogen resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally occurring allelic variation in AMP loci is sometimes associated with variability in pathogen resistance (Unckless et al., 2016; Lazzaro et al., 2004; Smith et al., 2023; Hanson et al., 2023a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Unckless et al., 2016; Lazzaro et al., 2004; Smith et al., 2023; Hanson et al., 2023a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "74fb15fb-24d0-4830-86b9-2937b94a96b0",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C84",
+      "claim": "Diptericin A is one of the canonical effector genes of the Drosophila immune deficiency (IMD) pathway and is generally associated with defense against Gram-negative bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Diptericin A (hereon referred to as diptericin or Dpt) is one of the canonical effector genes of the Drosophila immune deficiency (IMD) pathway and is generally associated with defense against Gram-negative bacterial infection (Tanji et al., 2007; Broderick, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tanji et al., 2007; Broderick, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "c536bf1c-895c-41ab-b232-3efb43e7c0ac",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C85",
+      "claim": "At least six null alleles of dpt segregate in natural populations of D. melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that while our study focuses on the serine/arginine polymorphism, at least six null alleles of dpt segregate in natural populations of D. melanogaster, and the frequency of those nulls shows clinal variation in both North America and Africa (Hanson et al., 2019b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hanson et al., 2019b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "990086fc-1121-4b15-baa9-4fe056ed92e5",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C86",
+      "claim": "The frequency of null alleles of dpt shows clinal variation in both North America and Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that while our study focuses on the serine/arginine polymorphism, at least six null alleles of dpt segregate in natural populations of D. melanogaster, and the frequency of those nulls shows clinal variation in both North America and Africa (Hanson et al., 2019b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hanson et al., 2019b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "3a001548-9ba3-4249-aaf9-e982d480afdc",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C87",
+      "claim": "The null alleles of dpt are likely maintained selectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that while our study focuses on the serine/arginine polymorphism, at least six null alleles of dpt segregate in natural populations of D. melanogaster, and the frequency of those nulls shows clinal variation in both North America and Africa (Hanson et al., 2019b); thus, the nulls are likely maintained selectively too.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of clinal variation in null allele frequencies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "7f4f9196-34fd-47d9-9c21-38b8627e9bd7",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C88",
+      "claim": "Evidence of clinal patterns in allele frequency exists in Africa and (to a lesser extent) North America.",
+      "claim_type": "EXPLICIT",
+      "source": "This scenario is partly supported by the evidence of clinal patterns in allele frequency in Africa and (to a lesser extent) North America (Hanson et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hanson et al., 2019a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "e88a5a24-088d-4e04-9ca2-5e4a2631289c",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "claim_id": "C89",
+      "claim": "AMP overexpression and microbial proliferation are commonly observed in aging flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used axenic and gnotobiotic flies to look at the lifespan of flies since AMP overexpression and microbial proliferation are commonly observed in aging flies (Arias-Rojas and Iatsenko, 2022; Badinloo et al., 2018; Shit et al., 2022; Hanson and Lemaitre, 2023b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arias-Rojas and Iatsenko, 2022; Badinloo et al., 2018; Shit et al., 2022; Hanson and Lemaitre, 2023b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "79e412de-e62c-40a5-847a-8ebb584844e9",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 genome editing confirmed that the serine allele (dptS69) provides significantly better protection against systemic P. rettgeri infection than the arginine allele (dptS69R) or null alleles (\u0394dpt), with survival rates of 50-60%, 10-20%, and <5% respectively. This pattern was consistent across both inbred and CRISPR-edited lines, and dptS69 flies survived better than dptS69R flies for all systemic infections tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 provide strong experimental evidence with appropriate controls (CRISPR-edited lines on controlled genetic background), statistical significance values, and consistency across multiple experimental approaches. The results replicate prior findings from inbred lines (C7), strengthening the conclusion that the amino acid polymorphism causally affects survival.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "52021ebd-0299-433b-869c-a5ddf924c63e",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In systemic infections with Gram-positive bacteria (E. faecalis, S. succinus, L. fusiformis, L. lactis), dptS69R flies showed lower survival than \u0394dpt or imd- flies, while S. marcescens infection showed no genotype effect except for imd- flies. Sex-specific differences were observed with E. faecalis, where females had lower survival than males.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 are supported by experimental data with appropriate statistical tests and references to figures. The unexpected finding that dptS69R performs worse than null alleles in some Gram-positive infections is notable and well-documented. Sex differences are appropriately contextualized with prior literature (C12).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "0993eb93-f9b3-4e7f-a0cc-7c8ffdd31867",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In axenic conditions, flies with functional diptericin (dptS69 or dptS69R) showed no difference in lifespan between genotypes, but significant sex differences were observed. Female flies generally lived longer than males in dptS69 and \u0394dpt lines, while imd- males had exceptionally long lifespans compared to all other lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by experimental data with statistical significance values. The findings establish baseline survival in the absence of microbes, which is essential for interpreting subsequent gnotobiotic experiments. The unusual longevity of imd- males is well-documented and provides important context for understanding immune pathway costs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "ce64401a-66cb-4763-b739-d5b88a12e1e3",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "After mono-association with L. plantarum, female \u0394dpt and imd- flies died rapidly, indicating functional Diptericin is important for gut immunity against L. plantarum in females. In contrast, P. rettgeri mono-association showed no genotype differences, but imd- flies showed sex-specific effects with females dying earlier and males surviving longer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are supported by experimental data showing striking sex-by-genotype interactions. The inference that functional Diptericin is important for gut immunity (C18) is reasonable given the rapid mortality of \u0394dpt and imd- females. However, the mechanism remains unclear and alternative explanations (e.g., feeding rate differences noted in C21-C22) are not fully ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "747087a1-f658-4848-b4ad-9d930acc97df",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Females consumed more food than males in a single hour of feeding, and diptericin genotype affected feeding rate, with null flies eating less.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are supported by experimental data shown in Figure 2\u2014figure supplement 2. This finding is important for interpreting survival differences after oral bacterial exposure, as differential feeding could confound genotype effects. However, the feeding assay was limited to a single hour and may not reflect long-term feeding behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "4506c8bd-99c6-4c39-ba1c-d416fca9ebb7",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In poly-association experiments with L. plantarum and either A. tropicalis or P. rettgeri, female \u0394dpt and imd- flies had shorter lifespans than flies with functional Diptericin. Notably, dptS69R females lived longer than dptS69 females in both poly-association conditions, opposite to the pattern observed in systemic infections, suggesting a trade-off between systemic and gut immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 provide strong evidence for a genotype-by-context interaction, with dptS69R being disadvantageous for systemic infection but advantageous for gut immunity. The statistical significance values support the findings. The inference of a trade-off (C25) is reasonable but remains speculative without direct mechanistic evidence. The consistency across two different poly-association conditions strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "c5001b31-16b4-4d86-8ad0-af48b17eeed1",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Systemic infection with L. plantarum in conventionally reared flies showed no sex differences in survival and no difference between \u0394dpt and functional Diptericin lines. However, dptS69 males survived better than dptS69R males, consistent with other systemic infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by experimental data with statistical significance values. The contrast between systemic and oral L. plantarum infections highlights context-dependent effects of Diptericin. However, the lack of difference between \u0394dpt and functional lines in systemic L. plantarum infection is surprising and not fully explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "b451d924-ebfe-4271-bebe-e8996a549f65",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bacterial load measurements showed that genotype differences in L. plantarum colonization occurred within 2 days post-feeding but disappeared by day 20. For P. rettgeri, dptS69R males had higher bacterial loads than dptS69 males on days 10 and 20, though P. rettgeri establishes poorly in wildtype fly guts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by experimental data with statistical significance values. The temporal dynamics of bacterial load differences are informative. However, the high variability in P. rettgeri colonization (C33) and the disappearance of genotype effects by day 20 (C30) suggest sampling bias (only surviving flies are measured) and complicate interpretation. The authors acknowledge these limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "b0a5c262-1b8b-46f0-aeeb-e4e2ed102330",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In poly-association with L. plantarum and P. rettgeri, there were no significant differences in P. rettgeri bacterial load between dptS69 and dptS69R flies. However, L. plantarum showed differences on day 2, with \u0394dpt and imd- flies having higher bacterial loads than dptS69 and dptS69R flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by experimental data. The finding that only L. plantarum (not P. rettgeri) shows genotype-dependent differences in poly-association is consistent with the survival data. The inference that higher L. plantarum loads explain rapid mortality (C36) is reasonable but remains correlative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "225e567b-1572-46f1-a531-72265b1e4c56",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Conventionally reared flies succumbed faster to desiccation stress than axenically reared flies. In conventionally reared males, dptS69 and dptS69R flies showed similar desiccation resistance, but in axenic conditions, dptS69 flies survived better than dptS69R flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by experimental data with statistical significance values. The microbiome-dependent effect on desiccation resistance is interesting, though the mechanism is unclear. The authors appropriately note that genetic background has large effects on desiccation resistance (comparing to OreR and W1118), suggesting diptericin genotype plays a limited role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "1bbc4bb6-7d26-4707-84c9-36d49e5b8049",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Axenically reared flies survived starvation stress better than conventionally reared flies. In both rearing conditions, dptS69R flies survived starvation longer than dptS69 flies. In conventionally reared flies, dptS69 and \u0394dpt flies showed no difference, but in axenic flies, \u0394dpt flies had intermediate survival between dptS69 and dptS69R.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by experimental data with highly significant p-values. The consistent advantage of dptS69R in starvation resistance across both rearing conditions is notable and suggests a potential cost of the dptS69 allele. The intermediate phenotype of \u0394dpt in axenic conditions (C43) suggests complex interactions between functional Diptericin and the microbiome.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "4e59ad4e-b070-48c5-be14-963d5994321b",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In conventionally reared flies, females lived longer than males overall. Male dptS69 flies had significantly longer lifespans than dptS69R males, but no difference was observed in females. Notably, female flies with nonfunctional Diptericin (\u0394dpt and imd-) had the longest lifespans, with males showing a similar but weaker effect, suggesting that functional Diptericin and the Imd pathway may decrease longevity in the presence of gut microbiota.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 are supported by experimental data with statistical significance values. The finding that loss of Diptericin or Imd increases longevity in conventionally reared flies is striking and consistent with prior literature (C50). However, the mechanism remains unclear\u2014it could be due to reduced immune activation, altered microbiome composition, or other pleiotropic effects. The sex-specific effects add complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "be577d8b-08e0-4d9c-aafa-f279621946b9",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Lab-reared flies co-reared in cages showed similar microbiomes with no genotype differences by Shannon diversity. However, flies reared in separate vials showed distinct differences from cage-reared flies, and even two dptS69R lines of the same genotype differed significantly, likely due to within-vial drift in microbiome communities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by experimental data with statistical significance values. The experimental design appropriately attempts to control for microbiome drift by using cage-reared flies. The finding that vial-rearing introduces substantial variation (C52-C54) highlights the challenges of studying genotype effects on microbiome composition and appropriately tempers conclusions about genotype effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "e239eee3-f152-4137-a0cc-3a6c2678a58c",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In wild-caught flies, dpt genotype did not affect overall microbiome composition based on Shannon diversity and Bray-Curtis dissimilarity. Heterozygous and homozygous serine flies showed slightly higher abundance of Morganellaceae (the family containing P. rettgeri) than homozygous arginine flies, but differences were not statistically significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by experimental data shown in Figure 5C-D. The lack of significant genotype effects on wild microbiomes is appropriately reported. The authors acknowledge that effects may be small and require larger sample sizes, or may be specific to certain life stages or rare microbes. The non-significant trend in Morganellaceae abundance (C56) is interesting but should not be over-interpreted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "a4a7c8b6-6d89-4ec2-809d-2b53f89c58c7",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work established that Diptericin A has a segregating amino acid polymorphism at position 69 (serine vs. arginine) in D. melanogaster and D. simulans, and that homozygous serine flies survive P. rettgeri infection better than arginine or null flies in inbred lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 accurately summarize prior work from Unckless et al., 2016, providing essential context for the current study. These claims are appropriately cited and establish the motivation for using CRISPR to test causality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "b98c3ae2-f94a-418b-84dd-21d1c1788aec",
+      "content_id": "7e53953e-5d33-4ac8-a26c-3278019b7e63",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study concludes that Diptericin A helps control opportunistic gut infections (especially L. plantarum) with strong sex-specific effects, that dptS69 flies are better at surviving systemic infections but have shorter lifespans after gut commensal exposure, and that genetic variation may be maintained through complex interactions of sex, systemic immunity, and gut microbiome maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 represent the main conclusions of the study and are well-supported by the experimental data presented. The evidence for trade-offs between systemic and gut immunity (C64-C65) is strong, particularly the opposite effects of dptS69 vs. dptS69R in systemic vs. poly-association contexts. The proposed mechanism for balancing selection (C66) is a reasonable inference but remains speculative without direct evidence from natural populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "3653414d-a746-4fbc-b0a3-4e7cf8c441e9",
+      "content_id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Using CRISPR/Cas9 genome editing to create dptS69, dptS69R, and \u0394dpt alleles, the authors demonstrate that dptS69 flies survive systemic bacterial infections better than dptS69R flies across multiple pathogens (P. rettgeri, E. faecalis, S. succinus, L. fusiformis, L. lactis). Notably, dptS69R flies showed lower survival than even null \u0394dpt flies in Gram-positive infections.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the data showing S69 allele provides better systemic infection survival but express concern about the 'strange' observation that R69 flies die more than null mutants. The reviewer attributes this potentially to 'background effect' and notes that 'the second chromosome was not isogenized after the CRISPR change,' which 'is an issue' that undermines confidence in the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "1f03cbc4-6633-473b-a1a3-dc6c59392306",
+      "content_id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "In gut immunity assays using mono- and poly-association with gut bacteria, female \u0394dpt and imd- flies succumbed quickly to L. plantarum feeding. Surprisingly, dptS69R females lived longer than dptS69 females in poly-association conditions (p=0.00782 with L. plantarum + A. tropicalis; p=0.000198 with L. plantarum + P. rettgeri), opposite to the systemic infection results.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge this as providing 'an element of explanation' for allele maintenance, they raise concerns about technical issues. The reviewer notes 'some lifespans are rather short and often in disagreement with other studies' and points to 'disagreements inside the article itself for instance between Fig4C and 2A.' The 'shape of many lifespan analysis with abrupt decline contrast with classical lifespan studies, suggesting technical problems.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "1c942f78-bfe9-4b7e-b91c-4f3ea4098503",
+      "content_id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "In starvation stress assays, dptS69R flies survived longer than dptS69 flies in both conventionally reared (p<2e-16) and axenically reared conditions (p<2e-16). In conventionally reared males, dptS69 flies had significantly longer lifespan than dptS69R flies (60.3 vs 54.1 days, p=0.0072).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge this finding as a strength, stating 'male flies homozygous for the R69 allele resist better to starvation than flies homozygous for the S69 allele. This provides an element of explanation' for the maintenance of genetic diversity. No concerns were raised about these specific starvation resistance data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "69012367-7b96-4f0b-aacf-1f76035e4dec",
+      "content_id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "In conventionally reared flies, females with nonfunctional Diptericin (\u0394dpt and imd- lines) had the longest lifespan, with males showing the same effect to a lesser extent. The authors infer that both Dpt and a functional Imd pathway may decrease longevity in the presence of standard gut microbiota.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not directly challenge this finding, they raise concerns about lifespan measurements throughout the study. The reviewer notes 'some lifespans are rather short and often in disagreement with other studies (Leulier, Iatsenko but also Hanson/Lemaitre)' and mentions 'the shape of many lifespan analysis with abrupt decline contrast with classical lifespan studies, suggesting technical problems,' which casts doubt on all lifespan-related conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "55c96a53-6d87-412d-9696-93268282838f",
+      "content_id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Bacterial load measurements showed genotype-dependent differences in L. plantarum colonization within the first 2 days post-feeding that disappeared by day 20. For P. rettgeri, dptS69R flies had higher bacterial loads than dptS69 flies on days 10 and 20 in males. In poly-association, \u0394dpt and imd- flies had higher L. plantarum loads on day 2.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not directly comment on bacterial load data, but their concerns about technical issues with lifespan assays and the observation that results may be context-dependent ('multiple tested conditions that may lead to the obtention of results that may not be reproduced in other contexts/labs') suggest uncertainty about the robustness of these measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "c65d4dc4-f7a7-4f97-9540-637a6e80df7a",
+      "content_id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "In desiccation stress assays, conventionally reared dptS69 and dptS69R males showed similar resistance (p=0.917), but when reared axenically, dptS69 flies survived better than dptS69R flies (p=0.04126).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not specifically comment on desiccation data, but their general concern about 'background effect' and 'multiple tested conditions' that may affect reproducibility applies to these context-dependent phenotypes. The microbiome-dependent nature of the phenotype adds complexity that reviewers implicitly question.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "0c06c62d-9b3c-4b2e-ae49-ffe839b65eae",
+      "content_id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Microbiome analysis showed that co-reared flies in cages had similar microbiomes with no differences in Shannon diversity (p=0.5239), while vial-reared flies differed significantly from cage-reared flies (p<0.001). In wild-caught flies, dpt genotype did not affect overall microbiome composition, though heterozygous and homozygous serine flies showed slightly higher (non-significant) abundance of Morganellaceae family reads.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not directly comment on microbiome data. However, their concerns about 'background effect' and the observation that 'the existence of background effect and the multiple tested conditions may lead to the obtention of results that may not be reproduced in other contexts/labs' suggests skepticism about the robustness of these findings, particularly given the acknowledged within-vial drift issues.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "da53f825-2007-4d1f-ac09-ea6bfc76c92d",
+      "content_id": "bf4eb287-d512-4ac5-a5a1-b5d96282f06f",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The study reveals strong sex-specific effects on immunity and survival. Females showed lower survival than males after E. faecalis infection (p=0.0003), and sex-specific patterns were observed with Imd null flies. Females ate more than males, and sex-specific effects were most prominent in flies without functional diptericin A.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not specifically address the sex-specific findings. However, their general concerns about technical issues ('shape of many lifespan analysis with abrupt decline contrast with classical lifespan studies') and potential background effects apply to these results. The complexity of sex-genotype interactions may contribute to reviewer uncertainty about reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a8e8cf7d-4d03-4738-ac5c-1239776c9c00",
+      "result_id": "79e412de-e62c-40a5-847a-8ebb584844e9"
+    },
+    {
+      "claim_id": "2edfbbf8-9b9d-4d7d-919b-9a957fe1e941",
+      "result_id": "79e412de-e62c-40a5-847a-8ebb584844e9"
+    },
+    {
+      "claim_id": "b1d5631b-2efe-498c-8cf4-35ad20a3f57c",
+      "result_id": "79e412de-e62c-40a5-847a-8ebb584844e9"
+    },
+    {
+      "claim_id": "62fff0dc-6173-4a31-a6a3-fa3ac4c1d13f",
+      "result_id": "79e412de-e62c-40a5-847a-8ebb584844e9"
+    },
+    {
+      "claim_id": "09cbc376-b38e-4d57-8fc0-8d2187784e8f",
+      "result_id": "52021ebd-0299-433b-869c-a5ddf924c63e"
+    },
+    {
+      "claim_id": "72524807-95d4-4268-9336-b395cda140e9",
+      "result_id": "52021ebd-0299-433b-869c-a5ddf924c63e"
+    },
+    {
+      "claim_id": "336f0493-6303-4d76-9b31-71c4dae853e0",
+      "result_id": "52021ebd-0299-433b-869c-a5ddf924c63e"
+    },
+    {
+      "claim_id": "502ca83e-a1ec-4bb3-876f-a2fc78e61812",
+      "result_id": "52021ebd-0299-433b-869c-a5ddf924c63e"
+    },
+    {
+      "claim_id": "ae2365cf-495c-4dcf-8b0c-3931d6a6a8e1",
+      "result_id": "0993eb93-f9b3-4e7f-a0cc-7c8ffdd31867"
+    },
+    {
+      "claim_id": "990fbb47-ca01-4e3a-acaf-3ca2c2c1d0f9",
+      "result_id": "0993eb93-f9b3-4e7f-a0cc-7c8ffdd31867"
+    },
+    {
+      "claim_id": "d1ce0710-8837-4d8d-b424-fc08b3896c95",
+      "result_id": "0993eb93-f9b3-4e7f-a0cc-7c8ffdd31867"
+    },
+    {
+      "claim_id": "491b5f72-5f27-42c6-8a8d-ed6944795343",
+      "result_id": "0993eb93-f9b3-4e7f-a0cc-7c8ffdd31867"
+    },
+    {
+      "claim_id": "b15aee11-a537-44ef-83f6-bff04ba42f75",
+      "result_id": "ce64401a-66cb-4763-b739-d5b88a12e1e3"
+    },
+    {
+      "claim_id": "d134ae11-2268-42aa-b6a8-94e28814e0b9",
+      "result_id": "ce64401a-66cb-4763-b739-d5b88a12e1e3"
+    },
+    {
+      "claim_id": "684fbbda-636b-4a4e-bb1a-31c5b3c14659",
+      "result_id": "ce64401a-66cb-4763-b739-d5b88a12e1e3"
+    },
+    {
+      "claim_id": "cc4b4f04-d5c6-4aa6-8dde-62f496fe1d9e",
+      "result_id": "ce64401a-66cb-4763-b739-d5b88a12e1e3"
+    },
+    {
+      "claim_id": "14e2a08f-874a-4e29-8642-f27ff2631be6",
+      "result_id": "747087a1-f658-4848-b4ad-9d930acc97df"
+    },
+    {
+      "claim_id": "6cfa227c-8d85-46f5-99b4-61cf300f247d",
+      "result_id": "747087a1-f658-4848-b4ad-9d930acc97df"
+    },
+    {
+      "claim_id": "e6b117c0-5deb-4cbf-9d75-e0be48a806f5",
+      "result_id": "4506c8bd-99c6-4c39-ba1c-d416fca9ebb7"
+    },
+    {
+      "claim_id": "44d49257-ad52-4be4-9e44-2280c61f3eae",
+      "result_id": "4506c8bd-99c6-4c39-ba1c-d416fca9ebb7"
+    },
+    {
+      "claim_id": "736a9a88-f663-4f8b-b0c1-b60cda8547d9",
+      "result_id": "4506c8bd-99c6-4c39-ba1c-d416fca9ebb7"
+    },
+    {
+      "claim_id": "add5d486-680a-4b49-9a98-5e33200b56e8",
+      "result_id": "4506c8bd-99c6-4c39-ba1c-d416fca9ebb7"
+    },
+    {
+      "claim_id": "73bfd4ba-8331-4e5c-90ec-56b47fd42936",
+      "result_id": "4506c8bd-99c6-4c39-ba1c-d416fca9ebb7"
+    },
+    {
+      "claim_id": "3b6ac5c0-db7e-4b6f-8c36-76af87960d04",
+      "result_id": "c5001b31-16b4-4d86-8ad0-af48b17eeed1"
+    },
+    {
+      "claim_id": "f8d23654-1785-438a-b883-be2cc67c02e1",
+      "result_id": "c5001b31-16b4-4d86-8ad0-af48b17eeed1"
+    },
+    {
+      "claim_id": "1ec07a51-a73c-4177-b4a0-d3b11862b4ac",
+      "result_id": "b451d924-ebfe-4271-bebe-e8996a549f65"
+    },
+    {
+      "claim_id": "7bb92a8d-082d-491a-ba16-a2334d0cbf87",
+      "result_id": "b451d924-ebfe-4271-bebe-e8996a549f65"
+    },
+    {
+      "claim_id": "d26f6ee2-9f3a-4300-b68d-e455e411c07f",
+      "result_id": "b451d924-ebfe-4271-bebe-e8996a549f65"
+    },
+    {
+      "claim_id": "5b6ce6c6-2402-4deb-af0f-4995216e24f4",
+      "result_id": "b451d924-ebfe-4271-bebe-e8996a549f65"
+    },
+    {
+      "claim_id": "9a30e690-a369-4864-bb89-911ad27ee6bc",
+      "result_id": "b0a5c262-1b8b-46f0-aeeb-e4e2ed102330"
+    },
+    {
+      "claim_id": "bf6d954d-03bd-4593-aeba-31935c8c01f1",
+      "result_id": "b0a5c262-1b8b-46f0-aeeb-e4e2ed102330"
+    },
+    {
+      "claim_id": "f4e41f09-d0ea-4e58-9a3b-119918cd9d26",
+      "result_id": "b0a5c262-1b8b-46f0-aeeb-e4e2ed102330"
+    },
+    {
+      "claim_id": "c3cfca90-4deb-470d-8796-1a6f6b922ce3",
+      "result_id": "225e567b-1572-46f1-a531-72265b1e4c56"
+    },
+    {
+      "claim_id": "5b79a8f6-b8fc-4889-a858-829c28160f64",
+      "result_id": "225e567b-1572-46f1-a531-72265b1e4c56"
+    },
+    {
+      "claim_id": "aa8f959e-8162-4978-9eb3-fda12d455f17",
+      "result_id": "225e567b-1572-46f1-a531-72265b1e4c56"
+    },
+    {
+      "claim_id": "a3489773-5b8b-4e18-b1b3-bc1b8558110b",
+      "result_id": "1bbc4bb6-7d26-4707-84c9-36d49e5b8049"
+    },
+    {
+      "claim_id": "4adebad8-83d0-4364-891f-8393f95eb9d9",
+      "result_id": "1bbc4bb6-7d26-4707-84c9-36d49e5b8049"
+    },
+    {
+      "claim_id": "cb6d37d5-65b1-4a2d-9819-5ea4fc7795c1",
+      "result_id": "1bbc4bb6-7d26-4707-84c9-36d49e5b8049"
+    },
+    {
+      "claim_id": "0e7e51e7-b580-4ff2-b2cc-4e5b6624e21b",
+      "result_id": "1bbc4bb6-7d26-4707-84c9-36d49e5b8049"
+    },
+    {
+      "claim_id": "3ad22fa9-b318-4122-aa30-26f55dbff029",
+      "result_id": "4e59ad4e-b070-48c5-be14-963d5994321b"
+    },
+    {
+      "claim_id": "4e40a8c7-3e90-4be8-91d3-3f5d12307b39",
+      "result_id": "4e59ad4e-b070-48c5-be14-963d5994321b"
+    },
+    {
+      "claim_id": "f187d236-63f4-4b12-9d84-29f1298f0a6b",
+      "result_id": "4e59ad4e-b070-48c5-be14-963d5994321b"
+    },
+    {
+      "claim_id": "09a94150-2a77-4f03-97f8-9986763d7012",
+      "result_id": "4e59ad4e-b070-48c5-be14-963d5994321b"
+    },
+    {
+      "claim_id": "99f5af9c-7850-4b0a-ae0c-bc5097263b51",
+      "result_id": "4e59ad4e-b070-48c5-be14-963d5994321b"
+    },
+    {
+      "claim_id": "40ed87aa-9231-417d-93fb-d022b2879256",
+      "result_id": "4e59ad4e-b070-48c5-be14-963d5994321b"
+    },
+    {
+      "claim_id": "b9f8eebf-2a5f-4890-9394-32453cee82a0",
+      "result_id": "4e59ad4e-b070-48c5-be14-963d5994321b"
+    },
+    {
+      "claim_id": "f38f2265-7596-415c-9fe9-fb1fe777da45",
+      "result_id": "be577d8b-08e0-4d9c-aafa-f279621946b9"
+    },
+    {
+      "claim_id": "ec2dc27a-6359-4a39-8c5a-0a71631078d6",
+      "result_id": "be577d8b-08e0-4d9c-aafa-f279621946b9"
+    },
+    {
+      "claim_id": "eeb033ba-2220-46d4-8952-f0bcb0b0cd79",
+      "result_id": "be577d8b-08e0-4d9c-aafa-f279621946b9"
+    },
+    {
+      "claim_id": "b300505e-a0d5-4c9d-9894-c846379ddb3e",
+      "result_id": "be577d8b-08e0-4d9c-aafa-f279621946b9"
+    },
+    {
+      "claim_id": "f1e47887-077e-48e2-9a63-905561b6a069",
+      "result_id": "e239eee3-f152-4137-a0cc-3a6c2678a58c"
+    },
+    {
+      "claim_id": "8bf3122c-7b39-4a0b-9b4d-1093ab7b13c0",
+      "result_id": "e239eee3-f152-4137-a0cc-3a6c2678a58c"
+    },
+    {
+      "claim_id": "61f2dd3d-9f6b-4ea7-9826-6b2232c2144e",
+      "result_id": "e239eee3-f152-4137-a0cc-3a6c2678a58c"
+    },
+    {
+      "claim_id": "362c2520-efb2-41fe-b032-78a6c23fbe69",
+      "result_id": "a4a7c8b6-6d89-4ec2-809d-2b53f89c58c7"
+    },
+    {
+      "claim_id": "93b94de9-68aa-48ee-9fd0-941cca5f9e92",
+      "result_id": "a4a7c8b6-6d89-4ec2-809d-2b53f89c58c7"
+    },
+    {
+      "claim_id": "63736811-b979-4664-b2c9-8ef97265f354",
+      "result_id": "a4a7c8b6-6d89-4ec2-809d-2b53f89c58c7"
+    },
+    {
+      "claim_id": "c937b6d3-4bed-44e5-bc2e-6f6fa3285f35",
+      "result_id": "b98c3ae2-f94a-418b-84dd-21d1c1788aec"
+    },
+    {
+      "claim_id": "d844d209-7a94-43e5-a3de-05fe89edd0a5",
+      "result_id": "b98c3ae2-f94a-418b-84dd-21d1c1788aec"
+    },
+    {
+      "claim_id": "64147668-3600-4c11-ac8b-1dc35ef836ee",
+      "result_id": "b98c3ae2-f94a-418b-84dd-21d1c1788aec"
+    },
+    {
+      "claim_id": "5d03c38d-664c-41f4-a67d-b56de93f2d1c",
+      "result_id": "b98c3ae2-f94a-418b-84dd-21d1c1788aec"
+    },
+    {
+      "claim_id": "cb056da9-1849-4f82-bdf0-4fc1fe150b80",
+      "result_id": "b98c3ae2-f94a-418b-84dd-21d1c1788aec"
+    },
+    {
+      "claim_id": "a8e8cf7d-4d03-4738-ac5c-1239776c9c00",
+      "result_id": "3653414d-a746-4fbc-b0a3-4e7cf8c441e9"
+    },
+    {
+      "claim_id": "2edfbbf8-9b9d-4d7d-919b-9a957fe1e941",
+      "result_id": "3653414d-a746-4fbc-b0a3-4e7cf8c441e9"
+    },
+    {
+      "claim_id": "b1d5631b-2efe-498c-8cf4-35ad20a3f57c",
+      "result_id": "3653414d-a746-4fbc-b0a3-4e7cf8c441e9"
+    },
+    {
+      "claim_id": "62fff0dc-6173-4a31-a6a3-fa3ac4c1d13f",
+      "result_id": "3653414d-a746-4fbc-b0a3-4e7cf8c441e9"
+    },
+    {
+      "claim_id": "09cbc376-b38e-4d57-8fc0-8d2187784e8f",
+      "result_id": "3653414d-a746-4fbc-b0a3-4e7cf8c441e9"
+    },
+    {
+      "claim_id": "b15aee11-a537-44ef-83f6-bff04ba42f75",
+      "result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306"
+    },
+    {
+      "claim_id": "d134ae11-2268-42aa-b6a8-94e28814e0b9",
+      "result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306"
+    },
+    {
+      "claim_id": "e6b117c0-5deb-4cbf-9d75-e0be48a806f5",
+      "result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306"
+    },
+    {
+      "claim_id": "44d49257-ad52-4be4-9e44-2280c61f3eae",
+      "result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306"
+    },
+    {
+      "claim_id": "736a9a88-f663-4f8b-b0c1-b60cda8547d9",
+      "result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306"
+    },
+    {
+      "claim_id": "add5d486-680a-4b49-9a98-5e33200b56e8",
+      "result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306"
+    },
+    {
+      "claim_id": "73bfd4ba-8331-4e5c-90ec-56b47fd42936",
+      "result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306"
+    },
+    {
+      "claim_id": "4adebad8-83d0-4364-891f-8393f95eb9d9",
+      "result_id": "1c942f78-bfe9-4b7e-b91c-4f3ea4098503"
+    },
+    {
+      "claim_id": "0e7e51e7-b580-4ff2-b2cc-4e5b6624e21b",
+      "result_id": "1c942f78-bfe9-4b7e-b91c-4f3ea4098503"
+    },
+    {
+      "claim_id": "4e40a8c7-3e90-4be8-91d3-3f5d12307b39",
+      "result_id": "1c942f78-bfe9-4b7e-b91c-4f3ea4098503"
+    },
+    {
+      "claim_id": "09a94150-2a77-4f03-97f8-9986763d7012",
+      "result_id": "69012367-7b96-4f0b-aacf-1f76035e4dec"
+    },
+    {
+      "claim_id": "99f5af9c-7850-4b0a-ae0c-bc5097263b51",
+      "result_id": "69012367-7b96-4f0b-aacf-1f76035e4dec"
+    },
+    {
+      "claim_id": "40ed87aa-9231-417d-93fb-d022b2879256",
+      "result_id": "69012367-7b96-4f0b-aacf-1f76035e4dec"
+    },
+    {
+      "claim_id": "1ec07a51-a73c-4177-b4a0-d3b11862b4ac",
+      "result_id": "55c96a53-6d87-412d-9696-93268282838f"
+    },
+    {
+      "claim_id": "7bb92a8d-082d-491a-ba16-a2334d0cbf87",
+      "result_id": "55c96a53-6d87-412d-9696-93268282838f"
+    },
+    {
+      "claim_id": "d26f6ee2-9f3a-4300-b68d-e455e411c07f",
+      "result_id": "55c96a53-6d87-412d-9696-93268282838f"
+    },
+    {
+      "claim_id": "bf6d954d-03bd-4593-aeba-31935c8c01f1",
+      "result_id": "55c96a53-6d87-412d-9696-93268282838f"
+    },
+    {
+      "claim_id": "f4e41f09-d0ea-4e58-9a3b-119918cd9d26",
+      "result_id": "55c96a53-6d87-412d-9696-93268282838f"
+    },
+    {
+      "claim_id": "5b79a8f6-b8fc-4889-a858-829c28160f64",
+      "result_id": "c65d4dc4-f7a7-4f97-9540-637a6e80df7a"
+    },
+    {
+      "claim_id": "aa8f959e-8162-4978-9eb3-fda12d455f17",
+      "result_id": "c65d4dc4-f7a7-4f97-9540-637a6e80df7a"
+    },
+    {
+      "claim_id": "f38f2265-7596-415c-9fe9-fb1fe777da45",
+      "result_id": "0c06c62d-9b3c-4b2e-ae49-ffe839b65eae"
+    },
+    {
+      "claim_id": "ec2dc27a-6359-4a39-8c5a-0a71631078d6",
+      "result_id": "0c06c62d-9b3c-4b2e-ae49-ffe839b65eae"
+    },
+    {
+      "claim_id": "f1e47887-077e-48e2-9a63-905561b6a069",
+      "result_id": "0c06c62d-9b3c-4b2e-ae49-ffe839b65eae"
+    },
+    {
+      "claim_id": "8bf3122c-7b39-4a0b-9b4d-1093ab7b13c0",
+      "result_id": "0c06c62d-9b3c-4b2e-ae49-ffe839b65eae"
+    },
+    {
+      "claim_id": "336f0493-6303-4d76-9b31-71c4dae853e0",
+      "result_id": "da53f825-2007-4d1f-ac09-ea6bfc76c92d"
+    },
+    {
+      "claim_id": "cc4b4f04-d5c6-4aa6-8dde-62f496fe1d9e",
+      "result_id": "da53f825-2007-4d1f-ac09-ea6bfc76c92d"
+    },
+    {
+      "claim_id": "14e2a08f-874a-4e29-8642-f27ff2631be6",
+      "result_id": "da53f825-2007-4d1f-ac09-ea6bfc76c92d"
+    },
+    {
+      "claim_id": "d844d209-7a94-43e5-a3de-05fe89edd0a5",
+      "result_id": "da53f825-2007-4d1f-ac09-ea6bfc76c92d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "957c3c94-4fa8-4937-be50-33d77ad05ad0",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "79e412de-e62c-40a5-847a-8ebb584844e9",
+      "peer_result_id": "3653414d-a746-4fbc-b0a3-4e7cf8c441e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C5-C8 regarding systemic infection survival with CRISPR-edited lines. OpenEval finds the evidence strong and SUPPORTED with appropriate controls. Peer reviewers express UNCERTAINTY, concerned about the 'strange' observation that R69 flies die more than null mutants and attribute this to potential 'background effect' since 'the second chromosome was not isogenized after the CRISPR change.' This represents a significant disagreement on experimental design adequacy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "c632a5ad-c01e-4ad1-9583-bf0e7158d4cd",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "4506c8bd-99c6-4c39-ba1c-d416fca9ebb7",
+      "peer_result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C23-C27 regarding genotype-by-context interactions and trade-offs between systemic and gut immunity. OpenEval finds the evidence SUPPORTED with strong statistical significance. Peer reviewers are UNCERTAIN, noting this provides 'an element of explanation' but raising concerns about 'rather short' lifespans, 'disagreements inside the article itself' (e.g., between Fig4C and 2A), and 'abrupt decline' patterns suggesting 'technical problems.' Major disagreement on data quality and reliability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "caea81c2-f0a0-4368-a60c-98b95e40b7c3",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1bbc4bb6-7d26-4707-84c9-36d49e5b8049",
+      "peer_result_id": "1c942f78-bfe9-4b7e-b91c-4f3ea4098503",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate starvation resistance claims (C41, C43, C45). OpenEval finds the data SUPPORTED with highly significant p-values and notes the consistent advantage of dptS69R. Peer reviewers also find this SUPPORTED, explicitly acknowledging it as a strength that 'provides an element of explanation' for genetic diversity maintenance. This represents strong agreement between evaluations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "c6413faf-efa2-4e59-b403-07a251856fc9",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "4e59ad4e-b070-48c5-be14-963d5994321b",
+      "peer_result_id": "69012367-7b96-4f0b-aacf-1f76035e4dec",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address longevity claims C47-C49 in conventionally reared flies. OpenEval finds the data SUPPORTED with highly significant p-values, noting the striking finding that loss of Diptericin increases longevity. Peer reviewers express UNCERTAINTY, not directly challenging the finding but raising general concerns about lifespan measurements being 'rather short,' in 'disagreement with other studies,' and showing 'abrupt decline' patterns suggesting 'technical problems.' Disagreement on data quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "87c0eaba-3c13-42a7-8d48-f3e20f8b853a",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "ce64401a-66cb-4763-b739-d5b88a12e1e3",
+      "peer_result_id": "1f03cbc4-6633-473b-a1a3-dc6c59392306",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate gut immunity claims (C17-C18 overlap with R2's broader scope). OpenEval finds evidence SUPPORTED for sex-by-genotype interactions and gut immunity importance, though notes mechanism remains unclear. Peer reviewers' UNCERTAINTY about lifespan data quality and technical issues applies to these claims as well, representing disagreement on reliability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "1eb2f4f8-f64a-4e9d-b256-b1fdfa94d20b",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "b451d924-ebfe-4271-bebe-e8996a549f65",
+      "peer_result_id": "55c96a53-6d87-412d-9696-93268282838f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address bacterial load dynamics (C30-C32, C35-C36). OpenEval finds claims SUPPORTED despite acknowledging high variability and sampling bias concerns. Peer reviewers express UNCERTAINTY, not directly commenting on bacterial load data but raising concerns about technical issues with lifespan assays and context-dependent results that 'may not be reproduced in other contexts/labs.' Implicit disagreement on robustness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "bcf661eb-edb9-48a4-b152-39c43cec6fe8",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "225e567b-1572-46f1-a531-72265b1e4c56",
+      "peer_result_id": "c65d4dc4-f7a7-4f97-9540-637a6e80df7a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate desiccation resistance claims C38-C39. OpenEval finds the data SUPPORTED with statistical significance, noting the microbiome-dependent effect. Peer reviewers express UNCERTAINTY, not specifically commenting on desiccation but applying general concerns about 'background effect' and 'multiple tested conditions' affecting reproducibility. Disagreement on the reliability of context-dependent phenotypes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "e131f8fc-6234-423b-b779-b889015a227d",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "e239eee3-f152-4137-a0cc-3a6c2678a58c",
+      "peer_result_id": "0c06c62d-9b3c-4b2e-ae49-ffe839b65eae",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address microbiome composition claims (C51-C52, C55-C56). OpenEval finds the data SUPPORTED and appropriately acknowledges lack of significant genotype effects. Peer reviewers express UNCERTAINTY, not directly commenting on microbiome data but raising concerns about 'background effect' and reproducibility across 'contexts/labs,' particularly given within-vial drift issues. Implicit disagreement on robustness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "1640c77b-9293-4fbc-8c7f-2a359aaad116",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "52021ebd-0299-433b-869c-a5ddf924c63e",
+      "peer_result_id": "3653414d-a746-4fbc-b0a3-4e7cf8c441e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap (C9 only). OpenEval finds C9-C12 SUPPORTED regarding Gram-positive infections and the unexpected dptS69R performance. Peer reviewers' UNCERTAINTY about R69 flies dying more than null mutants (R1) relates to this unexpected finding, suggesting concern about the biological interpretation and potential background effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "f7cfc824-2f0d-445d-8c88-5c9af3773134",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "747087a1-f658-4848-b4ad-9d930acc97df",
+      "peer_result_id": "da53f825-2007-4d1f-ac09-ea6bfc76c92d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap (C21 only). OpenEval finds feeding rate data (C21-C22) SUPPORTED as important for interpreting survival differences. Peer reviewers' general UNCERTAINTY about sex-specific findings and technical issues (R8) may apply, though they don't specifically address feeding behavior.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "798fb6b9-541f-4e5c-9673-8cefb83a9596",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "b0a5c262-1b8b-46f0-aeeb-e4e2ed102330",
+      "peer_result_id": "55c96a53-6d87-412d-9696-93268282838f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap (C35-C36). OpenEval finds bacterial load differences in poly-association SUPPORTED, noting correlation with mortality. Peer reviewers' UNCERTAINTY about bacterial load measurements and context-dependent reproducibility applies to these claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "8a2ce98d-39a7-4af2-bef8-1a0d9dc89099",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "be577d8b-08e0-4d9c-aafa-f279621946b9",
+      "peer_result_id": "0c06c62d-9b3c-4b2e-ae49-ffe839b65eae",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap (C51-C52). OpenEval finds microbiome experimental design SUPPORTED, appropriately noting vial-rearing variation. Peer reviewers' UNCERTAINTY about background effects and reproducibility concerns apply to these microbiome methodology claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "0737c4f1-58e1-4667-b765-b31ff80b0a29",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "0993eb93-f9b3-4e7f-a0cc-7c8ffdd31867",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C13-C16 regarding baseline survival in axenic conditions SUPPORTED with appropriate statistical significance. No corresponding peer review evaluation found for these specific claims about germ-free fly longevity and imd- male phenotypes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "030de663-ba50-4197-a96b-352491c2fa21",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "c5001b31-16b4-4d86-8ad0-af48b17eeed1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C28-C29 regarding L. plantarum infection context-dependent effects SUPPORTED with statistical significance. No corresponding peer review evaluation found for these specific systemic vs. oral infection comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "5a23d567-8ccf-4568-8500-184f831675d3",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "a4a7c8b6-6d89-4ec2-809d-2b53f89c58c7",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C1-C3 SUPPORTED as accurate summaries of prior work from Unckless et al., 2016, providing essential context. No corresponding peer review evaluation found for these background/citation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    },
+    {
+      "id": "29851fc2-0af3-4560-ab62-7272698e7e9c",
+      "submission_id": "ddbf386d-c25f-4b04-9780-4980f21b06f8",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "b98c3ae2-f94a-418b-84dd-21d1c1788aec",
+      "peer_result_id": "da53f825-2007-4d1f-ac09-ea6bfc76c92d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap (C63 only). OpenEval finds main conclusions C62-C66 SUPPORTED, noting trade-off evidence is strong though balancing selection mechanism remains speculative. Peer reviewers' UNCERTAINTY about sex-specific findings and technical issues (R8) may apply to the broader conclusions about sex-dependent effects mentioned in C63.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:42:38.983892Z"
+    }
+  ]
+}

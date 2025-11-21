@@ -1,0 +1,582 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "During zebrafish hair cell development, numerous small ribbon precursors are initially distributed throughout the cell body at early and intermediate stages. As development progresses, these precursors decrease in number and become localized to the base of the cell, forming fewer, larger ribbons at late and mature stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C38, C39, C47-C53 collectively demonstrate a clear developmental progression of ribbon localization and number using live imaging and quantification (Figure 1). The staging methodology based on kinocilium height (C48) provides a systematic framework, and the quantitative data (C51-C53) show statistically significant changes in ribbon number and location across developmental stages. The imaging data directly supports the temporal and spatial dynamics described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Microtubule networks in zebrafish lateral-line hair cells are polarized with plus ends growing toward the presynaptic active zone at the cell base. The microtubule network is highly acetylated and extends along the apical-basal axis, with 80% of EB3-GFP tracks (marking growing plus ends) directed toward the cell base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C55, C58-C63 are well-supported by immunostaining data showing acetylated microtubules (C55, Figure 2\u2014figure supplement 1) and live imaging of EB3-GFP dynamics (C60-C63, Figure 2). The quantification of EB3-GFP track directionality (C63: 80% toward base, n=7 neuromasts, 33 hair cells, 2598 tracks) provides robust statistical support. The use of EB3-GFP as a plus-end marker is validated by prior literature (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Ribbon precursors exhibit directed motion along microtubules toward the presynaptic active zone. Tracking analyses reveal that while the majority of ribbons show confined motion (79.8% with \u03b1<1), a significant subset (20.2%) exhibits directional motion (\u03b1>1). Of tracks with displacement >1 \u00b5m, 45.8% moved toward the cell base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41, C64-C75 are supported by extensive timelapse imaging and quantitative tracking analyses (Figure 3). The use of mean squared displacement (MSD) analysis with \u03b1 values provides a rigorous framework for classifying motion types (C69-C70). The displacement analysis (C71-C75) complements the MSD data. Sample sizes are adequate (n=10 neuromasts, 40 hair cells, 203 tracks). The observation of bidirectional movement (C67, C72-C73) and microtubule switching (C68) adds biological complexity consistent with dynamic transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C94",
+      "C144",
+      "C145",
+      "C146",
+      "C170",
+      "C171"
+    ],
+    "result": "Microtubule disruption via nocodazole treatment interferes with ribbon motion, fusion, and normal synapse formation. Long-term nocodazole treatment (16 hr) resulted in significantly more ribbon precursors per cell, smaller average ribbon size, and fewer complete synapses. Short-term treatment (30 min to 4 hr) reduced directional ribbon motion and increased ribbon numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43, C76-C82, C94, C144-C146, C170-C171 are supported by both short-term and long-term pharmacological experiments with nocodazole (Figures 4, 6, 7). The immunostaining data (C76-C82, Figure 4) shows significant effects on microtubule stability, ribbon number, size, and synapse formation with appropriate statistical tests (n=15 neuromasts). The live imaging experiments (C94, C144, C170-C171, Figures 6-7) demonstrate acute effects on ribbon dynamics. The convergence of multiple experimental approaches strengthens the conclusion that intact microtubules are required for normal ribbon formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C95",
+      "C98",
+      "C102",
+      "C103",
+      "C104",
+      "C112",
+      "C163"
+    ],
+    "result": "Microtubule stabilization via taxol treatment had minimal effects on ribbon number, size, or synapse formation compared to controls. However, taxol treatment shifted the distribution of \u03b1 values toward higher values in directionally moving ribbons, suggesting increased velocity on stabilized microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86, C95, C98, C102-C104, C112, C163 are supported by pharmacological experiments with taxol (Figures 4\u2014figure supplement 2, 6, 7\u2014figure supplement 1, 8). While taxol successfully stabilized microtubules (C83, C95), it did not significantly alter ribbon numbers, sizes, or synapse counts (C85-C86, C98). The subtle effect on \u03b1 values (C103-C104, C163) is statistically significant and biologically interpretable as increased transport velocity on stabilized tracks. The contrast with nocodazole effects suggests microtubule dynamics are more critical than absolute stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C129",
+      "C151"
+    ],
+    "result": "Loss of the kinesin motor Kif1aa results in fewer complete synapses and more ribbon precursors per hair cell, with an overall reduction in ribbon size. At 3 dpf, kif1aa mutants had similar hair cell numbers but significantly fewer synapses (p=0.014) and more ribbons/precursors (p=0.024) compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93, C129, C151 are supported by immunostaining analysis of kif1aa germline mutants (Figure 5). The mutant is predicted to be null with a stop codon in the motor domain (C89, Figure 5\u2014figure supplement 1). The quantification shows statistically significant effects on synapse number and ribbon/precursor counts (C92-C93, n=13 neuromasts). The phenotype is consistent across zebrafish and mouse models (C129), suggesting a conserved mechanism. Prior work (C90) validates the functional importance of Kif1aa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C131",
+      "C132",
+      "C137"
+    ],
+    "result": "Ribbon precursors undergo fusion on microtubules during development. Fusion events occur between smaller precursors at the cell apex and between larger precursors near the cell base, with an average of 1.7 fusion events per neuromast observed in 30-70 min timelapses. The resulting fused ribbons are larger than the individual precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42, C107-C110, C131-C132, C137 are supported by direct observation in timelapse imaging (Figure 8, Figure 8\u2014figure supplement 1). The fusion events are clearly documented with examples showing precursors coming together and remaining fused (C108, Figure 8A-B). The quantification (C110: average 1.7 fusions, max 5 per neuromast, n=27 neuromasts) provides statistical context. The observation that fusion occurs on adjacent microtubules (C132) links this process to the microtubule network. The qualitative observation of increased area post-fusion (C109) is reasonable given imaging limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C113",
+      "C133",
+      "C140",
+      "C147"
+    ],
+    "result": "Ribbon fusion requires intact microtubules and the kinesin motor Kif1aa. Nocodazole treatment reduced fusion events from 1.7 to 0.4 per neuromast (p=0.023), and kif1aa F0 crispants showed similarly reduced fusion (0.6 events per neuromast, p=0.018). Taxol treatment did not affect fusion frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C113, C133, C140, C147 are supported by quantification of fusion events under different conditions (Figure 8). The statistical comparisons show significant reductions in fusion with nocodazole (C111) and in kif1aa mutants (C113), while taxol had no effect (C112). The convergence of pharmacological and genetic approaches strengthens the conclusion. The finding that Kif1aa is required for fusion but not for directional transport (C147, C152) suggests a specific role in facilitating precursor interactions on microtubules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C170"
+    ],
+    "result": "Short-term microtubule destabilization with nocodazole (30 min, 500 nM) significantly reduces directional ribbon motion. The proportion of tracks with \u03b1>1 was significantly reduced (p=0.007), and the proportion of tracks with displacement >1 \u00b5m was also reduced (p=0.004) compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101, C170 are supported by MSD and displacement analyses of ribbon tracking after acute nocodazole treatment (Figure 7). The statistical tests show significant reductions in both measures of directional motion (C100: p=0.007, C101: p=0.004, n=7 neuromasts). This acute effect complements the longer-term phenotypes and directly demonstrates that microtubules are required for active ribbon transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C152"
+    ],
+    "result": "Loss of Kif1aa does not significantly impact the directional movement of ribbon precursors along microtubules. In kif1aa F0 crispants, the proportion of tracks with displacement >1 \u00b5m (p=0.71) and the proportion with \u03b1>1 (p=0.70) were not significantly different from controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C152 are supported by tracking analyses in kif1aa F0 crispants (Figure 7). The lack of significant differences in both MSD (C106) and displacement (C105) analyses, despite clear synaptic defects (C151), suggests that another motor can compensate for Kif1aa in transport but not in fusion. The F0 crispant approach is validated by genotyping (Figure 6\u2014figure supplement 1), showing robust genomic cutting. This result is somewhat unexpected but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Ribbon transport along microtubule networks is conserved between zebrafish and mice. In both species, microtubules are acetylated, ribbons associate with and move along microtubules (majority showing confinement, subset showing directed motion), and microtubule destabilization reduces directed motion and fusion. Both Kif1a/kif1aa mutants show reduced ribbon size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C118-C125, C128-C130 synthesize findings from the current zebrafish study with the companion mouse paper (Voorn et al., 2024). The parallel observations across species (C118-C125) strengthen the conclusion of a conserved mechanism. The similar phenotypes in Kif1a/kif1aa mutants (C129) and the convergent effects of nocodazole (C124, C128) support conservation. However, the evaluation relies partially on cited work (C116-C117, C120, C126) that is not fully detailed here, introducing some uncertainty about the mouse data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The myo6b:riba-TagRFP transgenic line reliably labels ribbons and ribbon precursors without impacting cell numbers, synapse counts, or ribbon size. This transgene is suitable for live imaging studies of ribbon dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by validation experiments comparing wild-type and transgenic fish (Figure 1\u2014figure supplement 1). The quantification shows no significant differences in hair cell number (p=0.728), synapse number (p=0.283), or ribbon area (p=0.392) between wild-type and Riba-TagRFP fish (n=12 neuromasts each). This validation is essential for interpreting all subsequent live imaging experiments and is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C29"
+    ],
+    "result": "Ribbon precursors associate with microtubules in living zebrafish hair cells, similar to observations in mouse IHCs using electron microscopy. This association is visible in live imaging with YFP-tubulin and Riba-TagRFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C29 are supported by live imaging showing ribbon precursors in close proximity to microtubules (Figure 1F-G, yellow arrows). The observation in zebrafish (C54) is consistent with prior EM studies in mice (C29, Michanski et al., 2019). While the resolution of light microscopy cannot definitively prove direct molecular association, the consistent spatial relationship across multiple cells and the functional data (transport, fusion) support a functional association.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Tyrosinated microtubules (marking destabilized microtubules) were not observed in pLL hair cells outside the kinocilium, but were present in surrounding tissues including zebrafish skin, pLL nerve terminals, and supporting cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by immunostaining with tyrosinated-\u03b1-tubulin antibodies (Figure 2\u2014figure supplement 1D-F). The absence of tyrosinated tubulin in hair cell soma (C56) contrasts with the presence of acetylated tubulin (C55), suggesting a predominantly stable microtubule network in hair cells. The positive staining in other tissues (C57) serves as an internal control for antibody specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "In kif1aa F0 crispants, there was no change in the total number of Riba-TagRFP puncta per cell over 3-4 hr compared to uninjected controls (p=0.427).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by live imaging quantification (Figure 6\u2014figure supplement 2, n=12 control and 11 kif1aa F0 crispant neuromasts). This result contrasts with the long-term phenotype at 3 dpf (C93) where kif1aa mutants have more ribbons/precursors. The difference may reflect acute vs. chronic effects or compensatory mechanisms over time. The F0 crispant genotyping (Figure 6\u2014figure supplement 1) validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Short-term nocodazole treatment (3-4 hr, 500 nM) led to a significant increase in the total number of Riba-TagRFP puncta per hair cell compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by live imaging quantification (Figure 6G, p=0.013, n=9 nocodazole and 8 DMSO neuromasts). This acute increase in ribbon/precursor number is consistent with the long-term nocodazole effects (C79, C144) and suggests that disrupting microtubules rapidly impairs the normal reduction in precursor number that occurs during development, likely by blocking fusion and/or transport to degradation sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Despite microtubule disruption with nocodazole, some ribbons still show directed motion and some synapses continue to form. At the doses used (100-500 nM), not all microtubules were disrupted, particularly the stable apical population, which could support residual ribbon mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174 acknowledge limitations in the nocodazole experiments. The observation that some ribbons still move (C172) is documented in the tracking data (Figures 4, 7). The incomplete microtubule disruption (C173) is supported by imaging showing residual apical microtubules (Figure 4\u2014figure supplement 1F-G, asterisks). The speculation about residual mobility (C174) is reasonable given the data, though alternative mechanisms are also discussed (C175-C179).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Ribbon synapses in sensory cells of the retina and inner ear are critical for hearing, balance, and vision. These synapses feature a presynaptic ribbon composed primarily of Ribeye, which scaffolds synaptic vesicles at the active zone. Disruption of ribbon synapses or key components (Ribeye, Bassoon, Piccolino) is linked to sensory dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C10, C13-C17 provide established background knowledge about ribbon synapses, supported by multiple citations to prior literature. These claims set the context for the study but do not represent new findings. The evidence type is primarily CITATION and KNOWLEDGE, indicating these are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C30"
+    ],
+    "result": "Prior work in fixed tissues led to the hypothesis that small ribbon precursors migrate to the active zone and fuse to form larger ribbons, but direct evidence for these dynamic processes during ribbon formation had not been demonstrated before this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C30 accurately describe the state of knowledge prior to this study. The hypothesis from fixed tissue studies (C11, C30) is supported by citations, and the gap in direct evidence (C12) justifies the current live imaging approach. These claims establish the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "In neurons, precursor vesicles containing Piccolo and Bassoon are transported along microtubules to the presynaptic active zone by kinesin motors (anterograde) and cytoplasmic dynein (retrograde). Recent work suggests KIF1A may transport active zone components. Ribbon precursors in photoreceptors and IHCs contain Ribeye, Bassoon, and Piccolino.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 provide relevant background on microtubule-based transport in neurons and ribbon precursor composition, supported by multiple citations. These establish the conceptual framework for investigating similar mechanisms in ribbon synapse formation. The evidence is primarily from prior literature (CITATION, KNOWLEDGE).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C44"
+    ],
+    "result": "Ribbon synapse formation occurs over different timescales in different systems: E18-P14 in mouse IHCs vs. 12-18 hr in zebrafish hair cells. Early development features many small ribbon precursors throughout the cell, likely formed via Ribeye self-aggregation. As development progresses, ribbons enlarge, localize to the active zone, and synapse number is refined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28, C44 provide comparative developmental context, supported by citations to prior work. These claims establish that zebrafish hair cells are a tractable model for studying ribbon formation due to their rapid development (C24, C44). The general developmental progression (C25-C28) is well-established and provides the framework for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The zebrafish lateral line is a sensory system for detecting water movements, consisting of neuromasts (clusters of hair cells) along the fish surface. Hair cells emerge at 2 dpf and the system matures by 5 dpf. Zebrafish transparency and transgenic lines enable in vivo imaging of ribbon formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe the zebrafish lateral line system and justify its use as a model for studying ribbon formation. These are established facts about zebrafish biology (C31-C34) and the advantages of the system for live imaging (C35-C36), supported by citations. This provides essential context for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C139"
+    ],
+    "result": "Ribbons share features with biomolecular condensates formed by liquid-liquid phase separation (LLPS). FRAP studies show Ribeye is highly mobile within ribbons and can exchange with the surrounding environment. Ribeye contains intrinsically disordered sequences, a feature of condensate-forming molecules. Some biomolecular condensates are transported along microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136, C138-C139 draw parallels between ribbons and biomolecular condensates, supported by citations to prior work on ribbon dynamics (C135-C136) and condensate properties (C134, C139). The intrinsically disordered regions in Ribeye (C138) support the condensate model. These claims provide a conceptual framework for understanding ribbon fusion but do not represent new experimental findings in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Prior work on stress granule condensates found that dynamic microtubules promote fusion of small cytoplasmic granules into larger ones. Stress granules slide along microtubules, and this movement may facilitate fusion through pushing or pulling forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 cite prior work on stress granules (Chernov et al., 2009) to provide a precedent for microtubule-dependent condensate fusion. This supports the interpretation of ribbon fusion on microtubules but does not represent new data. The parallel is conceptually useful for understanding the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Given that Kif1aa loss does not eliminate ribbon transport, another kinesin motor may function in precursor transport. Kif3a has been shown to interact with Ribeye in pulldown assays and is expressed in pLL hair cells, supporting cells, and afferent neurons. Both Kif1aa and Kif3a may be competent to transport developing ribbons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C156 propose that Kif3a may compensate for Kif1aa in ribbon transport. While Kif3a-Ribeye interaction (C154) and kif3a expression (C155) are supported by citations, the speculation that Kif3a transports ribbons (C156) lacks direct experimental evidence. This is a reasonable hypothesis (C153) based on the data showing transport persists in kif1aa mutants (C152), but requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "A subset of ribbon precursors (20.8%) moved apically, which could be due to a subpopulation of microtubules with plus ends growing apically (20.4% of EB3-GFP tracks) or to retrograde motors transporting precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C158 are supported by the tracking data (C157: displacement analysis, C158: EB3-GFP analysis). The speculation about retrograde motors (C159) is reasonable given the bidirectional movement but lacks direct evidence. The observation of apical movement is well-documented, and the proposed explanations are plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Ribbons show directed motion indicative of motor-mediated transport, though with lower \u03b1 values than canonical axonal transport (which approaches \u03b1=2). The relatively lower \u03b1 values likely arise from the highly dynamic nature of microtubules in hair cells. Taxol stabilization increased \u03b1 values toward those of canonical transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 interpret the MSD analysis results in the context of known motor-driven transport. The comparison to axonal transport (C161, supported by citations) provides context for the observed \u03b1 values. The interpretation that dynamic microtubules reduce \u03b1 values (C162) is reasonable, and the taxol experiment (C163, Figure 7\u2014figure supplement 1) provides experimental support for this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Adaptor proteins link cargo to motor proteins in neurons. Kif1a transports Rab3-positive synaptic vesicle precursors via the adaptor DENN/MADD. Since ribbon precursors are decorated with synaptic vesicles, these vesicles may contain adaptors that couple ribbons to kinesin motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C164-C168 provide background on adaptor proteins and synaptic vesicle transport in neurons, supported by citations. The speculation that synaptic vesicles on ribbon precursors contain adaptors (C169) is reasonable given the precedent in neurons but lacks direct experimental evidence. This is a plausible hypothesis requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Alternative mechanisms for residual ribbon mobility after nocodazole treatment could include actin or intermediate filaments, or diffusion followed by capture at the active zone. Actin and Myosin6 have been implicated in ribbon synapse formation and function in mice. Bassoon could anchor ribbons at the active zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C179 propose alternative mechanisms for ribbon mobility, supported by citations to prior work on actin (C176-C177) and Bassoon (C179). However, these are speculations (C175, C178) about mechanisms not directly tested in this study. The proposals are reasonable given the incomplete effects of nocodazole but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Prior work showed that spontaneous calcium activity impacts ribbon formation in pLL hair cells by loading calcium into mitochondria, regulating NAD+/NAD(H) levels. Blocking presynaptic or mitochondrial calcium results in higher NAD+, larger ribbons, fewer synapses, and retention of precursors. Spontaneous activity is well-documented in developing sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C185 summarize prior work from the same lab on spontaneous activity and ribbon formation, supported by citations (Sheets et al., 2012; Wong et al., 2019). These provide context for potential regulatory mechanisms but do not represent new findings in this study. The background on spontaneous activity (C181-C182) is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Spontaneous calcium activity may influence ribbon formation by stabilizing microtubules or facilitating movement to the active zone, or by promoting ribbon fusion. Calcium is important for microtubule stability in yeast and promotes microtubule entry into active dendritic spines. Elevated calcium can promote fusion of condensates. Protein condensate formation is influenced by cellular environment including ion concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C192 speculate about how spontaneous calcium activity might influence the microtubule-dependent processes described in this study. While the background on calcium effects (C186-C187, C190-C191) is supported by citations, the specific proposals for ribbon formation (C188-C189, C192) are speculations not tested experimentally. These are reasonable hypotheses for future work but lack direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Post-translational modifications can impact condensate formation and LLPS. Prior work indicated that NAD+/NAD(H) via a binding domain on Ribeye impacts ribbon formation. NAD+/NADH levels could modify Ribeye to facilitate condensate formation or fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C193-C195 propose that NAD+/NADH could regulate ribbon formation through effects on Ribeye. While prior work on NAD+/NADH and ribbon formation (C194, Wong et al., 2019) is cited, the specific mechanism involving condensate formation/fusion (C195) is speculation. The general principle about post-translational modifications (C193) is established, but the specific application to ribbons requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Synapse formation in mouse IHCs occurs over a longer timescale (E18-P14) than in zebrafish (12-18 hr), with initial synaptogenesis occurring embryonically and refinement/pruning postnatally. The companion paper focused on ribbon mobility during postnatal synapse pruning, showing ribbons may detach, traffic locally, and fuse to nearby active zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 provide context from the companion mouse study (Voorn et al., 2024). The timescale comparison (C114-C115) is factual. The description of the companion paper's focus (C116-C117) is based on citation. While this provides important comparative context, the evaluation relies on the cited work's quality, which cannot be fully assessed here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "In mice, many ribbon fusion events were balanced by divisions (ribbons separating), while ribbon divisions were not prevalent in zebrafish hair cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 compare fusion/division dynamics between mice and zebrafish. The mouse observation (C126) is from the companion paper (citation). The zebrafish observation (C127) is from this study's data. The difference could reflect biological variation, developmental stage differences, or technical limitations in detecting transient divisions in the faster zebrafish system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "While more than one kinesin motor protein is capable of transporting ribbon precursors, it is predominantly Kif1aa that mediates fusion along microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C150 synthesizes the findings that Kif1aa is not required for transport (C152) but is required for fusion (C147). This interpretation is supported by the data (Figures 7-8) and provides a mechanistic explanation for the kif1aa mutant phenotype. The inference that another motor handles transport is reasonable given the data.",
+    "result_type": "MINOR"
+  }
+]

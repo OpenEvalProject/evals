@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C21",
+      "C22",
+      "C23",
+      "C73",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Heron is a Python-based platform that allows researchers to design and run experimental pipelines using a Knowledge Graph representation that mirrors their mental schema. The platform supports integration of complex software and hardware combinations across different machines and operating systems, targets experimenters without deep technical expertise, and is open source under an MIT license.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the paper as 'valuable' and states that the authors 'convincingly demonstrate Heron's utility and effectiveness in the context of behavioral experiments.' The anonymous reviewer affirms that 'the software has a solid design that seems to be functionally reliable and useful under many conditions, demonstrated by a number of sophisticated experimental setups' and notes that concerns from the initial review have been addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Heron implements three types of Nodes (Sources, Transforms, and Sinks) in an actor-based model where each Node runs two processes (com and worker), and the system can distribute Nodes across different machines. When not running, Heron acts as a Graph designer; when running, it becomes a director managing (Number of Nodes) \u00d7 2 + 4 processes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly states that 'the software has a solid design that seems to be functionally reliable and useful under many conditions' and acknowledges the actor-based model implementation. No concerns are raised about the architectural design or process management claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Heron's code is organized into three main folders (Communications, GUI, and Operations) with specific structures for Node implementation. All messages are numpy arrays or Python dictionaries, the system has no message buffering, and Heron provides templates and GUI-based tools for creating new Nodes following specific file structures and function requirements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer notes that 'the software is well documented' and that 'the authors pay special attention to documenting the usage of the software and setting up experiments.' The reviewer describes the software as having 'a solid design' without raising concerns about the technical implementation details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C70",
+      "C71",
+      "C72",
+      "C120"
+    ],
+    "result": "The Probabilistic Reversal Learning experiment demonstrates how Heron's Knowledge Graph implementation serves as self-documentation, making it easy for non-developers to understand experimental logic. The experiment uses four Nodes and was conducted with four male C57/BL6 mice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly identifies as a strength that 'the knowledge graph serves as a self-documentation of the logic of the experiment, enhancing the readability and reproducibility of the experiment.' This directly supports the claim that Heron's implementation aids understanding for non-developers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C68",
+      "C69",
+      "C123"
+    ],
+    "result": "The Fetching experiment demonstrates Heron's ability to coordinate complex hardware across heterogeneous computing environments. The pipeline utilizes two physically separate machines, three operating systems, and four different Python environments to monitor rodents performing a cotton bud retrieval task using multiple cameras and deep learning algorithms with specific hardware requirements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer highlights as a key strength that 'the experiment can be executed in a distributed fashion across multiple machines that each has different operating system or computing environment, such that the experiment can take advantage of hardware that sometimes can only work on a specific computer/OS, a commonly seen issue nowadays.' The editor notes the software is 'tailored for workflows that require coordinating many logical steps across interconnected hardware components with heterogeneous computing environments.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C79",
+      "C80",
+      "C81",
+      "C86",
+      "C87"
+    ],
+    "result": "The rats playing computer games experiment demonstrates Heron's computational performance and CPU optimization capabilities. The 15-node Graph initially hit 100% CPU load, but optimization by pinning processes to specific cores reduced this to 80%. The experiment integrated a Unity game engine using C# and 0MQ for communication, implementing a complex multi-stage behavioral task.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer acknowledges that 'the software has a solid design that seems to be functionally reliable and useful under many conditions, demonstrated by a number of sophisticated experimental setups.' No concerns are raised about the performance claims or the complexity of the experimental implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Heron provides tools for time-aligning data packets across distributed Nodes using logging mechanisms and external clock sources. In the demonstrated example, synchronization achieved 0.02% frame loss (56 frames out of 216,300) between camera capture and video saving, despite having no message buffering capability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer does not raise concerns about the synchronization capabilities or the reported frame loss data. The demonstration of precise timing across distributed systems aligns with the reviewer's acknowledgment that the software 'seems to be functionally reliable and useful under many conditions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C118"
+    ],
+    "result": "Heron allows on-the-fly parameter updates through the GUI during experiment execution ('experimenter in the loop'), offers flexibility in Node implementation without imposing strong assumptions about experimental structure, and enables users to work at their preferred level of abstraction limited primarily by their Python knowledge.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly lists as a strength that 'the GUI can also be used as an experiment control panel for users to control/update parameters on the fly.' The reviewer also notes that 'users supply their own Python code for node execution that is supposed to be more friendly to those who do not have a strong programming background,' supporting the flexibility claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript positions Heron relative to existing frameworks including MATLAB Simulink, LabVIEW, Bonsai, EPypes, ROS, pyControl, Bpod, and Autopilot, noting that hybrid visual-textual programming approaches have educational benefits for beginner programmers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer acknowledges that 'the software answers the need of experimentalists, particularly in the field of behavioral science, to deal with the diversity of hardware' without questioning the comparison to existing tools. The positioning relative to other frameworks is accepted implicitly through the reviewer's assessment of Heron's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C92"
+    ],
+    "result": "Heron has been tested on multiple operating systems (Windows 10/11, Linux Ubuntu, MacOS, Raspberry Pi 4) and leverages Python's extensive library ecosystem and 0MQ's multi-language bindings for cross-platform compatibility and versatile message passing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer notes as a strength that 'the software is light-weight and open-source, provides a clean and easy-to-use GUI' and acknowledges the distributed execution capabilities without raising concerns about platform compatibility claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C113",
+      "C114",
+      "C119"
+    ],
+    "result": "Heron's design supports community development through repository separation, many-to-many Node connectivity, and GUI-based network configuration. The platform has a learning curve of 'a few hours' and is hosted on GitHub (Heron-Repositories organization) with the goal of becoming a collaborative, multi-developer project.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer states that the software 'is well documented' and 'can also be widely adopted in many other experimental settings,' supporting the community-oriented design. The reviewer's comment that concerns from initial review have been addressed suggests acceptance of the platform's accessibility and documentation claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes the problem context by arguing that translation from mental schema to code makes design iteration practically impossible, and positions Knowledge Graphs and programming paradigms (like object-oriented programming) as efforts to bridge the gap between human cognition and machine implementation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states that the software 'addresses a growing need among experimentalists for flexible and scalable solutions,' implicitly accepting the problem framing. The reviewer acknowledges that Heron helps experimentalists 'design experimental pipelines and implement them in a way that is closely aligned with their mental schemata,' supporting the motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C78",
+      "C93",
+      "C94",
+      "C95",
+      "C121",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "Additional implementation details and context including user requirements (intermediate Python proficiency), ethical approvals, animal housing conditions, current system limitations (com processes must run on Heron machine), planned future developments (headless Graph execution), and the origin of Heron's name (Hero of Alexandria).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological and contextual details are not specifically discussed by reviewers but are implicitly accepted as part of the overall 'well documented' software package. The reviewer's statement that 'the authors have addressed my concerns from the initial review' suggests acceptance of these supporting details.",
+    "result_type": "MINOR"
+  }
+]

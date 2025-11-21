@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C141",
+      "C235",
+      "C236",
+      "C237",
+      "C238"
+    ],
+    "result": "The authors demonstrate that an optimal memory length exists for olfactory navigation in turbulent plumes. This optimal memory minimizes the occurrence of the 'void state' and emerges from a trade-off: short memories trigger unnecessary recovery within the plume, while long memories delay recovery after accidentally exiting the plume. The optimal memory scales with and matches the typical blank time dictated by turbulence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding, with one stating 'The authors find that there is an optimal memory length over which an agent should ignore blanks in the odor to discriminate whether the agent is still inside the plume or outside of it.' Another reviewer notes 'It is striking that the conclusions are similar to those obtained in a recent study using a different computational approach (finite state controllers), and lends confidence to the conclusions about the existence of an optimal memory duration.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C145",
+      "C149",
+      "C150",
+      "C151",
+      "C239",
+      "C240"
+    ],
+    "result": "The authors propose an adaptive memory strategy that sets memory equal to the most recent blank experienced along the agent's path. This adaptive memory approach nears optimal performance despite turbulent fluctuations and enables successful navigation across distinct environments without requiring prior information about odor statistics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding without challenge. One reviewer highlights 'A key innovation is the introduction of a small set of interpretable olfactory states based on moving averages of odor intensity and sparsity, coupled with an adaptive temporal memory.' The approach is treated as a novel contribution that successfully addresses the problem of avoiding prior information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C126",
+      "C202",
+      "C211",
+      "C212",
+      "C220",
+      "C221"
+    ],
+    "result": "Q-learning agents successfully learn to navigate to the odor source by responding solely to olfactory states without spatial maps or prior knowledge of odor plumes. The learned strategy involves surging upwind when odor is detected and activating recovery strategies during prolonged odor absence, with short blanks being ignored by responding to stimuli experienced prior to the blank.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the core finding, stating 'The strength of evidence is compelling, presenting a novel approach to understanding optimal representations for navigation in stochastic sensory environments.' One reviewer notes 'Overall I found the approach taken by the authors to be clear and convincing.' The learned strategies are accepted as successfully achieving navigation without spatial information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C214",
+      "C215",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "When allowed to learn the recovery strategy (rather than using fixed heuristics), agents develop an even more efficient approach that resembles crosswind casting observed in flying insects. This learned recovery limits the void state to a narrow region outside the plume and involves an initial surge followed by crosswind casting with little downwind action.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding and note its biological relevance. One reviewer states 'The learned strategies show parallels to observed animal behaviors, such as upwind surging and crosswind casting.' Another reviewer suggests future work could 'explore under which conditions various recovery strategies are optimal and whether they can predict the strategies of real animals in different environments,' indicating acceptance of the current findings while proposing extensions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C56",
+      "C57",
+      "C49"
+    ],
+    "result": "The optimal navigation strategy demonstrates robustness and generalization across six distinct turbulent environments with different Reynolds numbers, sparsity levels, and spatial structures. Although performance degrades in non-native environments, agents with adaptive memory remain highly successful at finding the source, suggesting that baseline strategies learned in one environment can transfer to others with minor tuning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the generalization results, with one stating 'The approach generalizes well to different environments and effectively handles the intermittency of turbulent odors.' Another notes 'The authors provide a comprehensive performance analysis of their algorithm across a range of environments and recovery strategies, demonstrating the versatility of the approach.' The robustness findings are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C80",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors develop a reinforcement learning approach using interpretable olfactory features (moving averages of odor intensity and sparsity) with no spatial information beyond the ability to orient relative to mean flow. The temporal memory window is explicitly defined and connects naturally to the physics of turbulent odors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise this methodological contribution. One states 'A key innovation is the introduction of a small set of interpretable olfactory states based on moving averages of odor intensity and sparsity, coupled with an adaptive temporal memory.' Another notes 'The use of numerical simulations to generate realistic turbulent fluid dynamics sets this paper apart from studies that rely on idealized or static plumes.' The interpretability is treated as a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C50",
+      "C51",
+      "C53",
+      "C177",
+      "C178"
+    ],
+    "result": "Across all recovery strategies, agents learn to surge upwind when detecting odor within their memory and to recover when memory is empty. Optimal agents with learned recovery limit void state encounters to a narrow band at the plume edge (26% of agents), compared to 40-46% for heuristic recoveries, enabling quick plume recovery and improved performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these behavioral findings without challenge. The learned behaviors are discussed as paralleling 'observed animal behaviors, such as upwind surging and crosswind casting' by one reviewer. The spatial localization of void states to the plume edge is treated as evidence that 'the temporal odor features we considered effectively predict when the agent is exiting the plume.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C165",
+      "C196",
+      "C197",
+      "C200",
+      "C219"
+    ],
+    "result": "Among heuristic recovery strategies, circling is the second-best and generalizes well to less intermittent surface environments, while Brownian and cast-and-surge recoveries show the lowest performance. The width of casts and length of surges are crucial parameters, as hard-wired cast-and-surge with arbitrary parameters shows poor performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the comparative analysis of recovery strategies. One notes 'The paper provides a thorough analysis of different recovery strategies when an agent loses the odor trail, offering insights into the trade-offs between various approaches.' The finding about parameter sensitivity is accepted as explaining why some strategies underperform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "The algorithm assumes known mean wind direction for orienting allocentric movements (up, down, left, right). In reality, animals rely on local flow measurements using sensory organs rather than direct mean flow knowledge, and bridging this gap requires further work.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly raises this limitation, noting 'the gridworld navigation algorithm has an implicit allocentric representation, since movement can be in one of four allocentric directions (up, down, left, right), and wind direction is defined in these coordinates.' The reviewer suggests 'Future studies might ask if an agent can learn the strategy without a known wind direction if it can only go left/right/forward/back/turn (in egocentric coordinates).' This indicates the assumption is recognized but its impact on biological relevance is questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C223"
+    ],
+    "result": "The olfactory state representation shows considerable redundancy that could potentially be reduced to lower computational cost. However, drastically reducing to a single non-void state degrades performance, suggesting some level of state complexity is necessary.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly asks about this issue: 'Is there a minimal representation of odor for efficient navigation? The authors suggest that the number of olfactory states could potentially be reduced to reduce computational cost. They show that reducing the number of olfactory states to 1 dramatically reduces performance.' The reviewer suggests 'In the future it would be interesting to identify optimal internal representations of odor for navigation and to compare these to those found in real olfactory systems,' indicating this remains an open question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C263"
+    ],
+    "result": "The stimulus-response algorithm requires agents to start within or near the odor plume, as agents far from the source remain mostly in the void state and can only recover if they have previously detected odor or are right outside the plume. In contrast, map-based approaches can navigate from larger distances by using odor absence as informative.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this limitation without challenge. The authors explicitly acknowledge it, and reviewers do not dispute the characterization. One reviewer notes the approach is 'more biologically plausible for animals navigating exclusively using olfactory signals,' implicitly accepting that the limitation is offset by other advantages in biological realism for certain scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C95",
+      "C96"
+    ],
+    "result": "The problem is formulated as a discrete Markov Decision Process using a gridworld with discrete actions, and agents are trained using tabular episodic Q-learning starting from random locations within the plume.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer identifies this as both a strength and limitation: 'Using tabular Q-learning is both a strength and a limitation. It's simple and interpretable, making it easier to analyze the learned strategies, but the discrete action space seems somewhat unnatural. In real-world biological systems, actions (like movement) are continuous rather than discrete. Additionally, the ground-frame actions may not map naturally to how animals navigate odor plumes (e.g. insects often navigate based on their own egocentric frame).' This indicates the methodological choice is accepted but its biological relevance is questioned.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Drice is the major executioner caspase expressed in adult Drosophila brains, with highest expression in antennal lobes, particularly in olfactory receptor neurons (ORNs). Expression patterns are consistent between males and females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by Western blot data (Figure 1B), immunohistochemistry (Figures 1C, 1D), and neuron-type-specific knockdown experiments. The data consistently demonstrate Drice as the predominant executioner caspase in adult brains with specific regional and cellular localization patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Proximity labeling identified 158 Drice-proximal proteins enriched in plasma membrane, synaptic vesicles, postsynaptic membranes, and adherens junctions, suggesting Drice localizes primarily to cell membrane compartments rather than cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by LC-MS/MS analysis (Figure 1G, Supplementary file 1) and GO analysis (Figure 1H, Supplementary file 2). The enrichment of membrane-associated proteins among Drice-proximal proteins provides strong evidence for membrane localization, though C7 is an inference from the GO analysis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Drice is specifically proximal to Fasciclin 3 isoform G (Fas3G) in ORNs. Among all Fas3 isoforms, only Fas3G was identified in proximity labeling experiments and shows preferential enrichment regardless of expression level. AlphaFold2-Multimer predictions support isoform-specific interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 are well-supported by multiple complementary approaches: immunohistochemistry (Figures 2A-B), LC-MS/MS (Figure 1G), AlphaFold2-Multimer predictions (C10-C11), Western blots of proximity-labeled proteins (Figures 2F-G), and overexpression experiments. The convergence of computational predictions and experimental validation provides strong evidence for Fas3G-specific proximity to Drice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Drice and Fas3G are proximate but do not statically interact, and Fas3 isoforms are not caspase substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by co-immunoprecipitation experiments (Figure 2\u2014figure supplement 2A) showing no static interaction and apoptosis induction experiments (Figure 2\u2014figure supplement 2B) showing no cleavage of Fas3 isoforms. These negative results appropriately distinguish proximity from stable interaction and substrate relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "MASCaT (Gal4-Manipulated Area Specific CaspaseTracker/CasExpress) enables highly sensitive, cell-type-specific detection of caspase activity near the plasma membrane. The system detected caspase activity in neurons, particularly in optic lobes and age-dependent activation in antennal lobes and Or42b neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by validation experiments in S2 cells (Figure 3B) and adult brains (Figures 3C-D). The system successfully detected caspase activity patterns consistent with previous reports using CaspaseTracker/CasExpress, providing validation. The technical innovation addresses a genuine limitation of existing reporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Dronc induces catalytic-dependent cell death in Or42b neurons. Dcp-1 induced complete cell loss while Drice did not, suggesting Drice requires an initiator caspase for activation whereas Dcp-1 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by cell number quantification experiments (Figures 4A-B) comparing wild-type and catalytically inactive caspases. The differential effects of executioner caspases provide evidence for distinct activation requirements, though C23 is an inference that could benefit from additional mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Fas3G overexpression promotes non-lethal caspase activation in Or42b neurons without inducing apoptosis. Co-expression with Drice enhances activation, and Diap-1 co-expression suppresses it, indicating dependence on core apoptotic machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are well-supported by cell survival assays (Figures 4C-D) and MASCaT-based caspase activity detection (Figures 4F-I). The combination of no cell loss with increased caspase activity, synergistic enhancement with Drice, and Diap-1-mediated suppression provides strong evidence for non-lethal caspase activation dependent on apoptotic machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "While Fas3G is not essential for basal endogenous caspase activation in Or42b neurons, its overexpression enhances non-lethal caspase activation. Drice localization to ORN axons is not strictly dependent on Fas3G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by Fas3G knockdown experiments (Figure 4\u2014figure supplement 1C-D) showing no effect on basal activity and imaging (Figure 4\u2014figure supplement 1E) showing Fas3G-independent Drice localization. The integration of loss-of-function and gain-of-function data appropriately distinguishes essential versus modulatory roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Fas3G overexpression increases Dronc expression and brings Dronc into proximity with Fas3G. Dronc activity is required for Fas3G-facilitated non-lethal caspase activation, but Dronc inhibition does not alter Drice-Fas3G proximity, suggesting the inactive Drice proform is primarily proximal to Fas3G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are well-supported by immunohistochemistry (Figure 5A), proximity labeling (Figure 5B), MASCaT detection with Dronc manipulation (Figures 5C-D), and proximity labeling with Dronc inhibition (Figure 5E). The data coherently demonstrate a mechanism where Fas3G induces Dronc expression and recruitment without affecting pre-existing Drice-Fas3G proximity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The non-lethal caspase activation driven by Fas3G overexpression is orchestrated by Fas3G-induced Dronc expression, bringing Dronc into proximity with Fas3G and enabling caspase activation near the plasma membrane without causing cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 integrate multiple lines of evidence from previous results (cell survival data, Dronc expression, proximity labeling, and functional requirements). The proposed mechanism is well-supported by the convergence of data showing differential outcomes between direct Dronc overexpression (lethal) and Fas3G-mediated Dronc induction (non-lethal).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Apple cider vinegar (ACV) excites Or42b neuron-innervated glomeruli. Or42b neurons undergo age-dependent caspase activation and cell death that reduces attraction behavior, which is restored by caspase inhibition in aged but not young flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by citations to prior work (Semmelhack and Wang, 2009; Chihara et al., 2014). These claims establish the biological context for the behavioral experiments but rely entirely on prior published work rather than new data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Fas3G overexpression has a dual function: it enhances attraction behavior while triggering non-lethal caspase activation that suppresses attraction. Inhibiting Fas3G-facilitated caspase activation with DroncDN strongly promotes attraction to ACV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by two-choice preference assays (Figures 6A-C) under different experimental conditions. The data show that Fas3G overexpression alone maintains or slightly enhances attraction, while blocking caspase activation in Fas3G-overexpressing neurons significantly increases attraction, supporting the dual function model. The behavioral phenotypes are consistent with the proposed opposing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Subcellularly restricted caspase activation mediated by caspase-proximal proteins is a mechanism regulating non-lethal caspase function. Executioner caspases are pre-compartmentalized in specific subcellular domains (plasma membrane of axons), and neighboring proteins determine the 'hotspot' for non-lethal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 represent integrative conclusions drawn from the experimental findings. The evidence from proximity labeling (membrane protein enrichment), localization studies, and functional experiments with Fas3G collectively support the model of subcellularly restricted caspase activation. These are well-reasoned inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Combining TurboID-mediated identification of proximal proteins of executioner caspases will facilitate identification of non-lethal components and broaden understanding of non-lethal caspase activation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is a methodological conclusion supported by the successful identification of Fas3G as a regulator through the TurboID approach. The claim appropriately discusses future applications of the methodology demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Non-lethal caspase activation may antagonize neuronal excitability promoted by Fas3G and regulate synaptic pools and neuronal activity in a reversible manner without killing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 are speculative hypotheses based on comparison to L1CAM function in mice (C53) and recent caspase-3 findings in synaptic terminals (C54). While the behavioral data are consistent with these hypotheses, direct mechanistic evidence for effects on neuronal excitability or synaptic pools is not provided. These remain plausible but unvalidated mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Suppressing neuronal activity with non-lethal reversible caspase activation is beneficial for decision-making under varying physiological conditions. Regulating caspase-proximal proteins enables non-lethal activation not achieved by direct caspase manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by the comparison of outcomes from Fas3G overexpression (non-lethal, reversible) versus direct caspase overexpression (lethal). The functional advantages are reasonably inferred from the experimental findings and biological context, though the decision-making benefits are somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Fas3G overexpression might activate Dronc expression through the ecdysone or Hippo signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is speculative, based on known pathways that regulate Dronc expression but without experimental validation in this study. The authors appropriately acknowledge this as an open question requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Cell adhesion molecule-mediated subcellularly restricted caspase activation is likely conserved among species, as evidenced by NCAM-caspase interactions in mammals and non-lethal caspase-9/Apaf-1-dependent caspase-3 activation in mouse olfactory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by citations to prior work on NCAM (Westphal et al., 2010) and mouse olfactory neurons (Ohsawa et al., 2010). The inference of evolutionary conservation is reasonable given the structural and functional similarities between Fas3 and mammalian cell adhesion molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Executioner caspases are pre-compartmentalized in proximity to specific proteins prior to activation, poised for initiator caspase approach. The axonal 'hotspot' may inhibit neuronal activity and avoid cell death by localizing caspase activity, especially during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is well-supported by experimental findings showing inactive Drice proximity to Fas3G and subsequent Dronc recruitment. Claim C61 is more speculative regarding dual functions but is a reasonable inference from the experimental findings and biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Tissue-preferentially expressed proteins that interact with apoptosis regulators participate in apoptosis sensitization. Identifying modulators of context-dependent apoptotic pathways will aid in understanding precise molecular regulation of CDPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by citation to recent work (Luck et al., 2020) and represent reasonable inferences about the implications of the current findings for understanding cell- and tissue-type-specific CDPs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Alternative splicing regulates Fas3 isoforms with distinct, non-substitutable functions during neuronal development. Alternative splicing may diversify not only proteins themselves but also their interaction networks to regulate module-dependent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citation to prior work (Li et al., 2020). Claim C65 is a well-reasoned inference from the experimental findings showing isoform-specific proximity to Drice, extending the concept of alternative splicing beyond protein diversification to interaction network diversification.",
+    "result_type": "MINOR"
+  }
+]

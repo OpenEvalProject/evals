@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors developed a gut contractile organoid from chicken embryonic hindgut muscle layer that self-organizes into spheroids with periodic contractions. The organoid forms specifically in Neurobasal medium with Matrigel substrate, with cells organizing into clusters by day 3 and spherical structures by day 5, displaying rhythmic contractions with intervals of 13.3-19.6 seconds (days 3-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C20-C25 provide converging evidence for organoid development and characterization. The culture conditions are systematically tested (C20-C23), temporal progression is documented (C21-C22, C24), and contraction dynamics are quantitatively measured (C25). The data are supported by figures and quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The organoid contains ICCs (c-Kit+/\u03b1SMA-) located internally and SMCs (c-Kit-/\u03b1SMA+) located peripherally, with minimal ENS contribution. At day 3, peripheral cells are ICC/SMC progenitors (c-Kit+/\u03b1SMA+), which segregate by day 5 into distinct ICC and SMC populations. N-cadherin is expressed in ICCs but not SMCs, potentially mediating cell segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 provide comprehensive immunostaining evidence for cell type identification and spatial organization. The temporal progression from progenitors to differentiated cells is documented (C26-C29), multiple markers confirm cell identity (C30-C32), and functional validation with tetrodotoxin confirms minimal ENS contribution (C33-C34). The N-cadherin data (C36-C37) support a segregation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C5",
+      "C64"
+    ],
+    "result": "Ca2+ transients are highly coordinated within and between cell types in the organoid. Ca2+ oscillations are synchronous among SMCs (C39), among ICCs (C40), and between ICCs and SMCs (C41). ICC Ca2+ peaks precede SMC peaks by 700 ms on average (C42), suggesting directional signaling from ICCs to SMCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide quantitative GCaMP imaging data demonstrating coordinated Ca2+ dynamics. The 700 ms latency (C42) is measured from 104 peaks across 14 organoids, providing robust statistical support. The spatial organization of the organoid enables clear identification of cell types during live imaging, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C6",
+      "C66",
+      "C67"
+    ],
+    "result": "Gap junction inhibitors (CBX, 18\u03b2-GA) have limited effects on overall organoid contraction rhythm and Ca2+ synchronization within cell types (SMC-SMC, ICC-ICC), but specifically abolish the preceding Ca2+ peak in ICCs relative to SMCs. This suggests gap junctions partially mediate ICC-to-SMC signaling but are not essential for overall rhythm maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide pharmacological evidence with appropriate controls (C44). The specific effect on ICC-SMC latency (C45) while maintaining overall synchronization (C43, C66) is well-documented. However, the discrepancy between CBX and 18\u03b2-GA effects (noted in supplementary data) suggests complexity in gap junction contribution that requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C7",
+      "C75"
+    ],
+    "result": "Blebbistatin (myosin II inhibitor) abolishes organoid contractions in a dose-dependent manner and eliminates Ca2+ transients in both SMCs and ICCs. This suggests mechanical feedback from SMC contraction to ICC pacemaking activity, though direct effects on non-muscle myosin II in ICCs cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C50 provide compelling pharmacological evidence, with reversibility demonstrated (C48). However, the interpretation of mechanical feedback (C50, C75) remains speculative because blebbistatin could directly affect ICCs through non-muscle myosin II inhibition, as acknowledged by the authors. Alternative mechanisms are not ruled out, and the causal relationship between SMC contraction and ICC rhythm requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C76"
+    ],
+    "result": "Nifedipine (L-type Ca2+ channel blocker) completely abolishes organoid contractions and erases Ca2+ transients in ICCs, with partial recovery after washout. Since L-type Ca2+ channels are expressed in SMCs, this supports the notion of SMC-to-ICC feedback signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 provide pharmacological evidence consistent with the blebbistatin results. The effect on ICC Ca2+ transients when targeting SMC channels (C76) supports feedback signaling. However, the interpretation relies on the assumption that Nifedipine specifically targets SMCs, and potential off-target effects on ICCs are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Two organoids with different oscillatory rhythms synchronize their Ca2+ transients upon fusion within 24 hours, with a 'pause' in oscillation during the fusion process. This demonstrates the ability of ICCs to adjust their rhythm to neighboring cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide direct observational evidence of rhythm synchronization during organoid fusion. The out-of-phase to in-phase transition is documented with Ca2+ imaging (C54-C55). The 'pause' phenomenon (C56) is intriguing but not mechanistically explained. The interpretation of ICC rhythm adjustment (C86) is reasonable but somewhat speculative (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C8",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "SMCs mediate rhythm coordination between spatially separated organoids. In a three-well hydrogel system without connecting channels, SMCs that migrated to cover the hydrogel surface enabled Ca2+ synchronization among three organoids. This synchronization was not affected by gap junction inhibitors, revealing a novel gap junction-independent role for SMCs in rhythm coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide experimental evidence from a well-designed hydrogel system. The identification of surface-covering cells as SMCs (C59) is confirmed by immunostaining. The synchronization coinciding with SMC coverage (C60) and insensitivity to gap junction inhibitors (C61) support a novel mechanism. However, the exact mechanism of SMC-mediated coordination remains unclear and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The organoid contains two ICC subtypes: central multipolar ICC-MY and peripheral ICC-IM that line beneath SMCs. The authors propose a signaling pathway where ICC-MY signals to ICC-IM, which then signals to SMCs partly through gap junctions, consistent with proposed but unproven sequences in intact mammalian gut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C84 provide morphological interpretation based on literature comparisons (C81-C82). However, the ICC subtype identification relies on morphology and location rather than specific markers. The proposed signaling sequence (C83) is speculative and based on indirect evidence from gap junction experiments. Direct demonstration of ICC-MY to ICC-IM to SMC signaling is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The gut contractile organoid represents a simplified model system composed of a minimum number of cell types (ICCs and SMCs with few ENS cells) sufficient for rhythmic contractions, enabling high-resolution cellular analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 accurately summarize the organoid's characteristics as demonstrated throughout the manuscript. The simplified composition is well-documented (C2, C33-C34) and represents a strength for mechanistic studies. This is a valid interpretation of the model's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Previous studies using ICC- and SMC-specific transgenic mice showed ICC Ca2+ signals preceded SMC signals with a latency of 56\u00b114 ms, which is shorter than the 700 ms observed in the current organoid system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 accurately cites prior work (Baker et al., 2021) for comparison. The difference in latency times between studies is noted but not fully explained. This could reflect differences between ICC subtypes (ICC-SM vs ICC-MY), species (mouse vs chicken), or temporal resolution of imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The role of gap junctions in gut motility is controversial in the literature, with variable contributions across different gastrointestinal regions. The authors propose that gap junctions may be important for rhythm initiation but other mechanisms (e.g., mechanical feedback) may maintain established rhythms, analogous to cardiac muscle cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 accurately summarize literature controversies and propose a reasonable hypothesis (C71) supported by analogy to cardiac muscle (C72). This contextualizes the current findings within existing debates. However, the proposed temporal model (gap junctions for initiation, other mechanisms for maintenance) remains speculative and requires direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "ICCs lack contractile ability because thick myosin fibers necessary for contraction are found only in SMCs, not in ICCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 cite multiple structural studies supporting the absence of thick myosin fibers in ICCs. This is established knowledge in the field and provides important context for interpreting the blebbistatin and Nifedipine results. The inference that ICCs lack contractile ability (C74) is reasonable based on structural evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors draw an analogy to Drosophila motor neuron development, where feedback from muscle contractions regulates neuronal oscillatory activity. They speculate that similar feedback from SMCs to ICCs may stabilize ICC pacemaking during early gut development, consistent with their previous observations of OPW pattern refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C80 provide an interesting conceptual framework by analogy to neural circuit development (C78). The speculation about SMC-to-ICC feedback stabilizing pacemaking (C79) is consistent with the current findings but remains unproven. The connection to previous work on OPW confinement (C80) is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction establishes background knowledge about gut peristalsis, including the roles of ENS, ICCs, and SMCs, the embryonic gut as a model system, and previous work on ICC pacemaking and cell culture methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C19 accurately summarize established knowledge and cite appropriate literature. These provide necessary context for the current work. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  }
+]

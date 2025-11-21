@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study profiled ten low-grade SiNET samples from eight patients and one small intestine adenocarcinoma control using single-cell or single-nuclei RNA-seq with 10x Chromium, yielding 29,198 cells after quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C43 describe the experimental design and data generation. The methods are clearly documented with appropriate sample sizes, technical details, and quality control procedures. The inclusion of both fresh and frozen samples with different processing methods is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cell type annotation identified neuroendocrine cells and six types of tumor microenvironment cells (T cells, B/plasma cells, macrophages, fibroblasts, endothelial cells, epithelial cells) that correspond to TME cell types commonly detected in other cancers, with considerable variation in cell type proportions between tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 describe cell type identification and compositional analysis. The annotation is based on established marker genes and validated against pan-cancer datasets (C47). The authors appropriately acknowledge potential technical confounders (C51) while noting no clear bias was observed (C52). The compositional variability is well-documented in Figure 1E.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Twenty-six genes consistently upregulated in NE cells across most tumors define a SiNET-specific transcriptomic signature that is preferentially expressed in small intestine NETs compared to pancreatic and rectal NETs, includes known markers (CHGA, CHGB, TPH1), and is enriched for neuroendocrine functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 describe the common NE signature. The signature is validated in an independent bulk RNA-seq dataset (C54, C58), includes established markers (C56-C57), and shows appropriate functional enrichment (C59). The statistical threshold (adjusted p<0.001) and validation approach support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "SiNETs separate into two distinct subtypes based on NE cell gene expression: an epithelial-like subtype (3/8 tumors) with upregulation of epithelial markers including EPCAM and KRT8, and a neuronal-like subtype (5/8 tumors) with upregulation of neuronal genes including NAV3, RYR2, and CACNA1A/B, validated in an independent bulk RNA-seq cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C60-C75 describe the major finding of two SiNET subtypes. The classification is supported by multiple lines of evidence: pattern analysis (C60-C63), global expression clustering (C64), differential expression (C65, C67), signature scoring (C68-C71), and validation in 81 bulk samples with comparable proportions (C73-C74). The inclusion of both fresh and frozen samples in the epithelial-like subtype (C66) addresses technical confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Fibroblasts in SiNET8 show three subpopulations including antigen-presenting CAFs expressing MHC-II genes and a novel subpopulation distinguished by upregulation of four ABC transporters (ABCA6, ABCA8, ABCA9, ABCA10), also detected in SiNET3 and SiNET5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 describe fibroblast heterogeneity. The identification of ABC transporter-expressing CAFs is novel (C80) and reproduced across multiple samples (C81). However, the functional interpretation (C82) is speculative. The characterization is well-supported by differential expression and comparison to established CAF signatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Endothelial cells in SiNET5 and SiNET2 contain a subpopulation mapping to the poorly characterized Endo2 signature previously detected primarily in lung and skin tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe endothelial heterogeneity. The finding is based on comparison to established pan-cancer signatures (C84) and is reproducible across two samples (C85). The characterization is appropriate though the biological significance remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "B cells in SiNET2 include a proliferating subpopulation distinguished by upregulation of cell cycle genes (MKI67, TOP2A, CDK1), with cell cycle markers expressed more highly in B cells than in all other cell types including malignant NE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 describe B cell proliferation in SiNET2. The identification is based on canonical cell cycle markers and differential expression analysis. This observation motivates the broader cell cycle analysis across all samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Neuroendocrine cells in SiNETs are largely non-proliferative (0.246% cycling on average), considerably lower than other cancer types and lower than all other cell types in the SiNET ecosystem, with proliferation associated with the tumor microenvironment rather than NE cells, consistent across both fresh and frozen samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C89-C98 describe the surprising finding of minimal NE cell proliferation. The result is well-supported by cell cycle analysis across multiple samples, comparison to other cancer types including the SiAdeno control (C90), and consistency across technical platforms (C97-C98). The low proliferation (0.246%) contrasts sharply with the SiAdeno control (~13%) and challenges conventional expectations for cancer cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In bulk RNA-seq data of 81 SiNET samples, cell cycle signatures correlate positively with B cell markers and to a lesser degree with T cell markers, but not with NE markers, supporting the broader relevance of the single-cell proliferation findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 provide independent validation of the proliferation patterns in bulk data. The correlation analysis appropriately validates the single-cell findings in a larger cohort, though the authors acknowledge that the signal may be diluted in bulk samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Two of three tumors with high B cell proliferation had high germinal center scores, suggesting germinal centers may partially explain B cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 address a potential confounding explanation for B cell proliferation. The analysis is appropriate, though the inconsistent association (2/3 tumors) indicates germinal centers are not the complete explanation. This supports the subsequent investigation of alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "All epithelial-like SiNETs had high B/plasma cell proliferation while all neuronal-like SiNETs had low B/plasma cell proliferation, suggesting unique features of the epithelial-like subtype may drive B/plasma cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C106-C108 describe the perfect association between subtype and B cell proliferation. The 100% concordance across samples is striking and supports a mechanistic link, though the causal inference (C108) remains speculative without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "MIF shows extreme differential expression between subtypes (high in epithelial-like, absent in neuronal-like), is uniquely upregulated across all cell types in epithelial-like tumors, and is a known regulator of B cell proliferation, supporting its potential causal role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C109-C115 identify MIF as a candidate mechanism. The evidence includes: extreme differential expression (C110), unique pan-cellular upregulation (C111-C112), and established biological function (C114-C115). However, the causal link to B cell proliferation (C113) remains speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Epithelial-like SiNETs show increased B/plasma cell cycling without increased cell numbers, suggesting proliferation is balanced by high cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 provide an important observation about B cell dynamics. The inference of high cell death (C153) is logical given high proliferation without increased numbers, though direct measurement of cell death would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C154",
+      "C155",
+      "C156",
+      "C158"
+    ],
+    "result": "MIF-CD74 interaction may constitute a relevant therapeutic target for epithelial-like SiNETs, with inhibitors already developed and tested in solid tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C154-C156, C158 propose a therapeutic strategy. While MIF inhibitors exist (C156), the therapeutic relevance for SiNETs (C155, C158) is speculative. The authors appropriately acknowledge uncertainty (C154), but no functional validation or mechanistic experiments support targeting this pathway. This represents a hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "A mixed lung LCNEC tumor contains malignant neuroendocrine cells, squamous cells, and intermediate populations including progenitor cells expressing stemness markers (PBX1, PROX1, MSI2, TCF4, HES6), with high proliferation across all malignant populations except senescent squamous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C116-C129 describe the mixed tumor analysis. The identification of intermediate populations with stemness markers is well-supported by expression analysis and comparison to established developmental regulators. However, this is an N-of-1 analysis, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C130",
+      "C131",
+      "C145",
+      "C146",
+      "C161"
+    ],
+    "result": "The progenitor population with intermediate expression of both lineage programs and stemness factors is consistent with bipotent progenitors potentially explaining mixed tumor histology, though additional MiNENs would need profiling to confirm generality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C130-C131, C145-C146, C161 propose a progenitor cell model for MiNENs. While the intermediate population is well-characterized, the interpretation as bipotent progenitors (C130, C145) is speculative. The authors appropriately acknowledge this is an N-of-1 analysis requiring validation (C131, C146). The hypothesis is plausible but not definitively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Despite low-grade SiNETs having a known low mitotic index, malignant NE cells appear less proliferative than non-malignant cells, potentially confounding pathological Ki67 counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 contextualize the proliferation findings. The observation challenges conventional expectations (C134) and raises important questions about Ki67 interpretation (C136). The speculation about Ki67 confounding is reasonable but would require validation with matched histopathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Multiple potential explanations for tumor growth despite low NE proliferation include: abnormally low death/abnormal migration, treatment effects, spatial/temporal restriction of proliferation, or hidden stem/progenitor populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C141 propose alternative explanations for the low proliferation paradox. All are speculative (marked as SPECULATION in evidence_type) and represent hypotheses for future investigation rather than supported conclusions. The authors appropriately present these as possibilities requiring further study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C147"
+    ],
+    "result": "Proliferative stem/progenitor cells have been described in other cancers including oligodendroglioma, and may also exist in SiNETs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C143, C147 draw parallels to other cancer types. While the oligodendroglioma example is well-cited (C143), the extension to SiNETs (C147) is speculative. This represents a hypothesis rather than a demonstrated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The minimal NE cell proliferation supports the hypothesis that SiNETs may be driven by tumor microenvironment effects rather than intrinsic NE cell alterations, with epithelial-like SiNETs showing extremely high MIF levels that may create a unique inflammatory TME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 propose a TME-driven oncogenesis model. The inference that low NE proliferation supports TME effects (C149) is logical given the data. The high MIF expression in epithelial-like tumors is well-documented (C150), though the functional consequences (C151) remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C157",
+      "C159",
+      "C160"
+    ],
+    "result": "Single-cell profiling revealed two SiNET subtypes differing in NE profiles and B cell proliferation, both sharing minimal NE cell proliferation, raising questions about tumor initiation, growth, and the role of TME cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157, C159-C160 summarize the main findings. The two subtypes are well-supported by multiple analyses, and the minimal NE proliferation is consistently observed. The questions raised (C160) are appropriate given the unexpected findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background on NETs and SiNETs including their occurrence, clinical features, grading systems, genetic characteristics, and the phenomenon of mixed neuroendocrine non-neuroendocrine neoplasms (MiNEN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C37 provide background information supported by appropriate citations. These establish the context and rationale for the study, describing established knowledge about NET biology, SiNET characteristics, and the poorly understood nature of MiNENs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "A recent study profiled NETs by scRNA-seq but had limited SiNET samples (n=2) with enrichment of immune cells and limited NE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 provides context for the current study by citing a recent related work. This appropriately positions the current study as providing more comprehensive SiNET profiling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C144"
+    ],
+    "result": "In the mixed LCNEC, high proliferation is observed across all malignant components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C144 describes proliferation patterns in the mixed tumor. This is well-supported by cell cycle analysis shown in Figure 5D and contrasts with the low proliferation in SiNET NE cells.",
+    "result_type": "MINOR"
+  }
+]

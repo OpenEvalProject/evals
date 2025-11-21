@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Age-associated changes in peripheral blood myeloid cells do not correlate with changes in bone marrow HSC and progenitor frequencies. Myeloid cells in peripheral blood increase progressively from 6 months onward, while HSC frequency increases rapidly until 12 months then plateaus, GMP remains stable, and CMP decreases with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by longitudinal data in Figure 1A-C showing temporal patterns across multiple age groups. The discordance between peripheral blood and bone marrow compartments is clearly demonstrated, challenging the hypothesis that myeloid-biased HSC clones drive age-associated myeloid bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Hoxb5 specifically marks LT-HSCs in aged mice. Only Hoxb5+ HSCs from 2-year-old mice maintain long-term reconstitution capacity through primary and secondary transplantation, while Hoxb5- HSCs fail to sustain hematopoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are supported by transplantation data in Figure 2 showing selective long-term engraftment from Hoxb5+ cells. This validates Hoxb5 as a functional marker for LT-HSCs in aged mice, establishing a critical tool for subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Aged LT-HSCs show similar myeloid output kinetics in primary and secondary transplantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by Figure 2G showing comparable myeloid proportions across serial transplantations. This suggests that if myeloid-biased clones exist in aged LT-HSCs, their expansion had already plateaued by 2 years of age.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C85"
+    ],
+    "result": "Young and aged LT-HSCs exhibit equivalent differentiation potential when co-transplanted into the same recipients. The myeloid lineage output and reconstitution ratios are comparable across all lineages throughout the observation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 and C85 are strongly supported by competitive co-transplantation data in Figure 3B-D. The direct comparison within the same recipient eliminates environmental confounders and demonstrates that aged LT-HSCs do not exhibit intrinsic myeloid bias, contradicting the clonal expansion hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Aged bulk-HSCs exhibit myeloid-skewed differentiation compared to young bulk-HSCs in competitive transplantation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by Figure 3\u2014figure supplement 1B-D showing differential lineage output between young and aged bulk-HSCs. This confirms previous literature findings and establishes a contrast with the LT-HSC results, suggesting heterogeneity within the bulk-HSC compartment drives the myeloid bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C86"
+    ],
+    "result": "Aged LT-HSCs and ST-HSCs do not show significant myeloid gene enrichment by transcriptomic analysis. Aged bulk-HSCs show a non-significant trend toward myeloid gene enrichment using shared gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C86 are supported by RNA-seq and GSEA data in Figure 4F-G. The lack of myeloid gene enrichment in purified LT-HSCs and ST-HSCs, contrasted with a trend in bulk-HSCs, supports the hypothesis that compositional changes rather than intrinsic transcriptional reprogramming drive myeloid bias. However, the authors acknowledge gene set inconsistencies (C57-C58) which introduce some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Approximately 80% of genes in published myeloid/lymphoid gene sets are not shared across studies, with most genes appearing in only a single gene set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by Venn diagram analysis in Figure 4D-E. This finding highlights significant reproducibility issues in the field and justifies the authors' approach of using only shared genes for GSEA, though it also raises questions about the robustness of prior transcriptomic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ST-HSCs lose self-renewal capacity after transplantation, and the apparent lymphoid bias in ST-HSC recipients is due to persistence of memory T cells rather than ongoing lymphopoiesis. ST-HSC recipients lack donor HSCs in bone marrow and show predominantly memory T cell phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C53-C55 are well-supported by data in Figure 5B-F showing lymphoid dominance, memory T cell phenotypes, and absence of donor HSCs in bone marrow. This reinterpretation of ST-HSC function is critical for the authors' model, though it relies heavily on inference from absence of HSCs and memory phenotype rather than direct lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The ratio of ST-HSC to LT-HSC within the bulk-HSC compartment decreases with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by Figure 5\u2014figure supplement 1 showing age-associated changes in LT-HSC and ST-HSC frequencies. This observation is central to the authors' model linking compositional changes to myeloid bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C60",
+      "C87"
+    ],
+    "result": "Manipulating the LT-HSC:ST-HSC ratio in young donor cells recapitulates age-associated myeloid bias. Recipients receiving a 5:5 ratio (mimicking aged mice) show significantly more myeloid cells by 16 weeks compared to a 2:8 ratio (mimicking young mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26, C60, and C87 are strongly supported by reconstitution experiments in Figure 6B-D. This is a key result demonstrating that altering the LT:ST ratio is sufficient to produce myeloid bias without requiring myeloid-biased clones. However, the magnitude of myeloid bias achieved (30.8%) is less than observed in naturally aged mice (49.0%), suggesting additional factors contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C88"
+    ],
+    "result": "Young LT-HSCs transplanted into aged recipients produce more myeloid cells than in young recipients, but bone marrow progenitor frequencies (CMP, GMP, CLP) remain similar between young and aged recipients, suggesting minimal impact of the aged bone marrow niche on HSC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 and C88 are supported by Figure 7C-F. The finding that bone marrow progenitors are unchanged despite increased peripheral myeloid bias suggests the bone marrow niche is not the primary driver. However, the sample size is limited (n=8 for bone marrow analysis from surviving mice), and the authors acknowledge this contrasts with some prior studies (Pinho et al., 2018; Ergen et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C75",
+      "C83",
+      "C89"
+    ],
+    "result": "Aged thymi and spleens show significantly reduced donor cell frequencies compared to young recipients, indicating impaired lymphoid maturation in aged secondary lymphoid organs. This extramedullary dysfunction contributes to myeloid-biased hematopoiesis by reducing mature lymphocyte production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C75, C83, and C89 are supported by immunofluorescence and flow cytometry data in Figure 7G-J. The reduced donor cells in aged lymphoid organs, combined with unchanged bone marrow progenitors, provides strong evidence for an extramedullary contribution to myeloid bias. However, the mechanism (impaired maturation vs. migration defect) cannot be definitively distinguished from the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The apparent lineage bias in post-transplant peripheral blood is regulated by heterogeneity in self-renewal capacity rather than multipotency. ST-HSCs lose self-renewal earlier than LT-HSCs, and their apparent lymphoid bias reflects memory cell persistence rather than intrinsic differentiation preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by combined observations from Figures 2, 5, and prior work (Chen et al., 2016). This represents a conceptual reframing of HSC heterogeneity, though it relies on inference from multiple indirect observations rather than direct single-cell lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C84"
+    ],
+    "result": "The altered LT-HSC:ST-HSC ratio is the primary HSC-intrinsic mechanism driving age-related myeloid-biased hematopoiesis, rather than selective expansion of myeloid-biased clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C84 represent the central conclusion, supported by the combined evidence from ratio manipulation experiments (Figure 6), co-transplantation showing equivalent LT-HSC differentiation (Figure 3), and lack of myeloid gene enrichment in LT-HSCs (Figure 4). This is a major conceptual advance, though the authors acknowledge limitations including small sample sizes and the need for single-cell validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background claims establishing prior knowledge and context from the literature regarding HSC aging, myeloid bias, and existing hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C81 (excluding those already grouped) represent literature citations and established knowledge. These are appropriately cited and provide necessary context for the study. They are not primary results of this work but support the rationale and interpretation.",
+    "result_type": "MINOR"
+  }
+]

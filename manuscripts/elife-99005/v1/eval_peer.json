@@ -1,0 +1,186 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The model was designed with three functional layers (inter-leg phase coordinator, trajectory generator, and optimal controller interfacing with leg dynamics) inspired by the hierarchical anatomical organization of the fly nervous system. Each leg is modular with its own dynamics, controller, and trajectory generator, with inter-leg coordination accomplished solely through the phase coordinator.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor and reviewers describe the model as having a 'sensible' and 'modular architecture' with 'divisions inspired by the fly nervous system.' Reviewer 1 notes the model 'separates motor control at three levels of abstraction' and acknowledges this hierarchical design. No concerns were raised about the model architecture itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The model generates 3D walking kinematics that resemble real fly data, with simulated time series matching the mean, frequency, and pseudo-triangular shape of fly data. Mean differences between real and simulated joint angles were less than 6 degrees, comparable to tracking uncertainty. However, simulated amplitudes were generally smaller and trajectories more regular than real data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises significant concerns, stating 'the reviewer cannot conclude that the kinematics match real fly walking kinematics' and notes 'the range of motion of several joints is 30% too small compared to the animal (Figure 2B).' Reviewer 1 notes the KS score uses 'only the first two PCA modes that cumulatively account for less than 50% of the variance' and questions whether remaining information can be ignored. While the editor calls the evidence 'convincing,' these methodological concerns about kinematic matching remain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model maintains realistic walking in the presence of external perturbations despite being trained only on perturbation-free data. The combination of trajectory generator and optimal controller, using proprioceptive feedback, enables the model to compensate for perturbations. Joint angle trajectories recovered after perturbations ended, with larger perturbations leading to lower kinematic similarity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 acknowledges 'their model was not trained to reproduce animal responses to perturbations, but it successfully rejects small perturbations and continues to operate stably.' Reviewer 1 states the model 'convincingly show[s]' robustness results and notes 'realistic simulations under a range of prediction intervals, perturbations, and motor delays generating realistic walking trajectories support this claim.' The editor describes the evidence as 'convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C86",
+      "C87"
+    ],
+    "result": "The model maintains robust walking only within physiological ranges of sensorimotor delays (approximately 30 ms motor delay and 10 ms sensory delay). Beyond these ranges, the model cannot maintain realistic walking during perturbations. These delay values are strikingly close to measured values from Drosophila, suggesting the fly locomotor control system operates close to the temporal limit for detecting and responding to perturbations. Robust locomotion was constrained by cumulative sensorimotor delay rather than specific values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states the authors 'convincingly show that the sensory and motor delays present in the fly nervous system are the maximum allowable for robustness to unexpected perturbations' but notes 'it is unclear if this comparison is meaningful in the context of the model's simplifying assumptions.' Reviewer 3 expresses concern that 'the complexity of the system obscures the results' and questions whether 'the instability is due to the many, many moving parts within the model' rather than delays per se. The editor calls the study 'valuable' and evidence 'convincing,' but the methodological concerns about model simplifications affecting quantitative delay predictions remain unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The optimal controller compensates for motor delays by predicting future dynamics. The model was sensitive to prediction horizon, working best when the prediction horizon matched the motor delay. When prediction horizon was less than motor delay, the model ceased walking. This suggests future predictions are crucial for compensating for motor delays, and the authors propose fly motor circuits may encode predictions of future joint positions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 questions whether 'the elements the authors introduced reflect the structure or function of the fly's nervous system,' specifically noting 'the reviewer is not sure what evidence exists that suggests the fly ventral nerve cord functions as an optimal controller.' While Reviewer 1 acknowledges 'the model proposes a crucial role in future predictions to ensure robust walking trajectories,' the biological plausibility of the optimal control framework remains questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Robust walking in the presence of external perturbations emerges from a local controller combined with a trajectory generator trained only on perturbation-free data. The model did not include adaptation because compensation emerges as a property of a tuned controller with feedback. The layered model breaks down multi-legged locomotion into three sub-problems (delayed control, joint kinematic generation, inter-leg coordination), suggesting fast, robust locomotion could be maintained locally with minimal plasticity in central circuits.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 describes this as 'a novel framework' and notes 'the modular architecture of the framework provides opportunities to make testable predictions.' The editor describes the 'hierarchical control model' as 'sensible.' No specific concerns were raised about this emergent property of the model, though Reviewer 3's general concern about model complexity may apply.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The dynamics model did not allow dynamical coupling between legs through body mechanics, and did not consider explicit leg-ground contact interactions. Interactions with the ground were implicitly taken into account by trajectories learned by the neural network. The model's goal was to mimic kinematic trajectories (motion control), not to compute ground contact forces.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly acknowledges 'the control and dynamics model makes some simplifying assumptions about Drosophila physics/physiology' including that 'the model does not incorporate ground contact forces and inertial effects of the fly's body.' Reviewer 1 notes 'it is not clear how these simplifying assumptions would affect some of the quantitative results' but the authors' acknowledgment of these limitations is accepted. The editor notes the model has 'varying degrees of biological realism.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The model is trained on high-resolution 3D joint angle data from walking flies made possible by new deep learning-based computer vision tools. The multi-layered architecture allows the data-driven model to generalize to new scenarios (large delays and perturbations) without retraining. The model's robustness deteriorates when sensorimotor delays exceed physiological range, suggesting fly sensorimotor control circuits operate close to temporal limits.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes 'their model is trained using a huge dataset of animal data, which is a strength.' Reviewer 1 acknowledges the model 'generate[s] new, testable hypotheses' and that it successfully generalizes despite simplifying assumptions. The editor describes the study as 'valuable' with 'convincing' evidence for the main conclusions about delay limits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that sensory and motor delays establish a fundamental tradeoff between speed and robustness of fly walking. The model predicts walking robustness decreases as delays increase at the same perturbation magnitude. This could be experimentally tested by altering conduction velocities through temperature manipulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the work 'can be of interest to the Drosophila community' and 'to experimentalists in generating testable hypotheses for novel discoveries.' The editor notes the model 'will serve as a well-grounded starting point for future studies.' The proposed experimental tests are presented as logical extensions of the model predictions, though not yet validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In the model, which does not include limb compliance or other biomechanical adaptations, the fly effectively overcomes perturbations using only proprioceptive feedback. The authors hypothesize that removing proprioceptive feedback would impair an insect's ability to sustain locomotion following external perturbations, though the need for proprioception may be reduced when biomechanical mechanisms are present.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'the model proposes a crucial role in future predictions to ensure robust walking trajectories against external perturbations and motor delay' and acknowledges this as a strength. Reviewer 3's results are 'consistent with the literature, that sensorimotor delays destabilize movements.' The hypothesis about proprioception is presented as a testable prediction arising from the model.",
+    "result_type": "MINOR"
+  }
+]

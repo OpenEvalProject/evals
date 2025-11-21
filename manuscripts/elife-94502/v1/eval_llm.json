@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C104",
+      "C105",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The first exon of GPR1-AS overlaps with a MER21C LTR retrotransposon that inserted in the common ancestor of Euarchontoglires. This MER21C element is present in primates, rabbits, and most rodents, though highly degenerate in mouse, rat, and hamster where it is not recognized by standard RepeatMasker analysis but is detectable through multiple genome alignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C56-C66, C104-C105, and C129-C132 collectively demonstrate through comparative genomic analysis, phylogenetic reconstruction, and sequence alignment that the MER21C insertion occurred in Euarchontoglires and is conserved across species with varying degrees of sequence divergence. The data from Figures 1, 2, 4, and supplementary figures provide strong computational and comparative evidence for this evolutionary event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C91",
+      "C96"
+    ],
+    "result": "ZDBF2 exhibits biallelic expression in non-Euarchontoglire mammals (cattle and tammar wallaby) but shows paternal-specific imprinted expression in Euarchontoglires (humans, mice, rhesus macaques, and rabbits). This pattern correlates with the presence/absence of oocyte-methylated germline DMRs at the GPR1-AS locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C51-C55, C91, and C96 are supported by allele-specific expression analysis via Sanger sequencing (Figure 3) and whole-genome bisulfite sequencing data showing germline DMRs in species with imprinting but not in species without imprinting. The experimental evidence directly demonstrates the correlation between MER21C presence and ZDBF2 imprinting status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "GPR1-AS transcripts are detectable in placental tissues using deep directional RNA-seq but are difficult to detect with conventional non-directional RNA-seq. GPR1-AS orthologs were identified in primates and rabbits but not in cows, pigs, or opossums, with expression restricted to placental lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 and C122-C125 are supported by RNA-seq analysis from multiple species (Figures 1, 2) showing that directional RNA-seq with sufficient depth (\u226550 million reads) is required to detect GPR1-AS. The tissue-specific expression pattern and species distribution align with the presence of MER21C elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Despite substantial sequence divergence, the first exon of mouse Liz exhibits promoter activity comparable to or greater than human GPR1-AS in reporter assays. Common transcription factor binding motifs (ELF1/ELF2) and species-specific motifs (TFAP2C in humans, ZSCAN4C in mice) were identified that may regulate GPR1-AS/Liz expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by dual luciferase reporter assays (Figure 5\u2014figure supplement 2) and computational motif analysis (Figure 5B-D). The functional data demonstrate that despite low sequence similarity (46% identity to consensus MER21C), the mouse Liz promoter retains transcriptional activity. However, C72 is speculative about the functional role of these transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C138"
+    ],
+    "result": "GPR1-AS expression begins at the 8-cell stage in human preimplantation embryos, coinciding with MER21C activation and downregulation of the MER21C-binding repressor ZNF789 at the 4-cell stage. This timing suggests GPR1-AS activation occurs during a permissive transcriptional window in early embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 and C138 are supported by analysis of public RNA-seq data from human preimplantation embryos (Figure 6 and supplements). The temporal correlation between ZNF789 downregulation, MER21C activation, and GPR1-AS appearance provides strong evidence for the proposed regulatory mechanism, though the causal relationship remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The first exons of human GPR1-AS and mouse Liz exhibit similar epigenomic patterns including H3K4me3 enrichment in sperm, H3K27ac in pluripotent cells, and H3K9me3 repressive marks. However, species-specific differences in transcription factor binding (TFAP2C vs ZSCAN4C) suggest divergent regulatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are supported by ChIP-Atlas database analysis (Figure 7\u2014figure supplement 1) showing conserved epigenomic features despite sequence divergence. The data demonstrate functional conservation of the MER21C-derived promoter across species, though C89 acknowledges uncertainty about species-specific regulatory differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C92",
+      "C106",
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "ZDBF2 imprinting emerged in Euarchontoglires via MER21C insertion at the GPR1 locus, establishing GPR1-AS/Liz as LTR-initiated transcripts (LITs) that drive lineage-specific imprinting through post-fertilization activation rather than germline methylation establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C92, C106, C117-C118, and C121 represent the central conclusion integrating multiple lines of evidence: phylogenetic distribution of MER21C, correlation with imprinting status, functional promoter activity, and developmental timing. The convergence of comparative genomics, expression analysis, and epigenomic data strongly supports this evolutionary model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C55"
+    ],
+    "result": "The regulatory region driving GPR1-AS transcripts originated in the common ancestor of Euarchontoglires, and ZDBF2 imprinting is restricted to mammals within this group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C55 are directly supported by the distribution of GPR1-AS orthologs across species (Figures 1-2) and the biallelic expression of ZDBF2 in non-Euarchontoglire mammals (Figure 3). This represents a clear phylogenetic boundary for the imprinting mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "GPR1-AS/Liz represents a distinct class of LTR-initiated transcripts (LITs) that activate after fertilization, contrasting with previously described LITs that activate during oogenesis. Both mechanisms establish lineage-specific imprinting through LTR-driven transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are supported by comparison with prior work on oocyte-specific LITs (citations to Brind'Amour et al., 2018; Bogutz et al., 2019) and the developmental timing data showing post-fertilization activation of GPR1-AS. This establishes GPR1-AS as a mechanistically distinct but conceptually related example of LTR-driven imprinting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C119",
+      "C120"
+    ],
+    "result": "Comparative analysis combining RepeatMasker annotation with multiple genome alignments was critical for identifying the highly degenerate MER21C relic in mouse. This methodological approach could enable discovery of additional functional LTR relics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 and C119-C120 describe the methodological insight that emerged from this study. The successful identification of the mouse MER21C relic only through comparative analysis (Figure 4\u2014figure supplements) validates this approach, though C108 is speculative about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "ZDBF2 is a paternally expressed imprinted gene regulated by a unique two-DMR system involving a germline DMR in the GPR1 intron and a secondary DMR upstream of ZDBF2. The germline DMR controls GPR1-AS expression, which in turn establishes the secondary DMR that maintains imprinting in somatic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 describe established background knowledge about ZDBF2 imprinting supported by multiple prior studies (Kobayashi et al., 2009-2013; Duffi\u00e9 et al., 2014; Greenberg et al., 2017). This provides the mechanistic context for understanding the evolutionary origin investigated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Genomic imprinting is regulated by epigenetic mechanisms including DNA methylation at germline DMRs and involves species-specific patterns. Transposable elements, particularly LTRs, can drive establishment of lineage-specific imprinting through various mechanisms including transcription-dependent methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C43 provide established background on genomic imprinting mechanisms, species-specificity, and the role of transposable elements. These are well-supported by citations to prior literature and establish the conceptual framework for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "ZDBF2 affects growth through feeding behavior rather than direct developmental effects. The ZDBF2 gene is present in all vertebrates but only imprinted in Euarchontoglires, contrasting with other LTR-derived imprinted genes like PEG10/PEG11 that are essential for placentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C93-C95 provide context about ZDBF2 function and compare it to other LTR-derived imprinted genes. These are supported by citations to prior work and help frame the evolutionary significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Transposable elements are normally repressed by KRAB-ZFPs and epigenetic mechanisms but are activated during maternal-to-zygotic transition. Some elements, including LTRs, have been co-opted as regulatory elements for embryonic genes. GPR1-AS represents a novel example of post-fertilization LTR activation driving imprinting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 describe the general biology of transposable element regulation and co-option, supported by prior literature, and position GPR1-AS as a novel example of this phenomenon. The integration with the current findings is logical and well-supported.",
+    "result_type": "MINOR"
+  }
+]

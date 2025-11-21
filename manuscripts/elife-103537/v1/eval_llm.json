@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Most p53 isoforms show minimal to no transcriptional activity compared to wild-type p53. Only \u039440p53\u03b1 and \u039440p53\u03b2 showed slight transactivation capacity (100-200 fold below wtp53), while \u0394133 and \u0394160 isoforms showed no activity regardless of C-terminus. Expression levels varied significantly among isoforms, with \u03b2-isoforms expressed more strongly than \u03b1-isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 are well-supported by luciferase reporter assay data shown in Figure 2A-C and supplementary figures. The experiments used appropriate controls (wtp53, R175H mutant, titration series) and multiple promoters (pBDS-2, Mdm2, p21). Statistical analysis (one-way ANOVA) was performed with n=3 replicates. The expression level differences were confirmed by Western blot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Only wtp53 and \u039440p53\u03b1 bind DNA with high affinity in pulldown assays. All other isoforms lack DNA binding due to missing functional DBD, OD, or both. SPR measurements confirmed that \u039440p53\u03b2 has ~280-fold lower affinity than DBD-OD constructs, comparable to isolated p53 DBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by DNA pulldown assays (Figure 2E) and SPR measurements (Figure 2F). The experiments used appropriate controls (p53R175H mutant) and multiple DNA response elements (p21, PUMA). SPR data provides quantitative affinity measurements with proper fitting and confidence intervals. The conclusion that most isoforms behave like mutant p53 is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "E6 degradation assays demonstrate that only isoforms with intact, properly folded DBDs are degraded by HPV E6. wtp53 was completely degraded, while structural mutants (V157F) and isoforms with truncated DBDs (TAp53\u03c8, TA\u0394p53\u03b1, \u0394133, \u0394160) showed resistance to degradation, indicating improper DBD folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C56 are supported by E6 degradation assay data (Figure 3B) with appropriate controls (wtp53, R175H, V157F, R273H mutants). The interpretation that resistance to E6 degradation indicates improper folding is consistent with established knowledge about E6-p53 interaction (C46-C48 supported by citations). Statistical analysis was performed (n=3, one-way ANOVA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The pAB240 antibody, which recognizes unfolded p53 DBD, efficiently immunoprecipitated structural mutants (R175H, V157F) and all \u0394133, \u0394160 isoforms, as well as p53\u03c8 and TA\u0394p53\u03b1, indicating these isoforms have unfolded or misfolded DBDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by conformation-specific IP data (Figure 3C). The pAB240 antibody specificity for unfolded p53 is established (C57 supported by citation to Schmieg and Simmons, 1993). The experimental design is appropriate with proper controls, and statistical analysis was performed (n=3, one-way ANOVA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "DARPin G4 pulldown assays confirm that only wtp53 and \u039440p53 variants contain fully folded DBDs. The G4 DARPin pulled down wtp53, R273H, and R175H (with lower efficiency in cell lysates), but not V157F or any \u0394133 isoforms, p53\u03c8, or TA\u0394p53\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by DARPin pulldown data from both RRL (Figure 3D) and H1299 cells (Figure 3E). The experiments used appropriate controls and the temperature-dependent difference in R175H pulldown efficiency is explained. The conclusion (C64-C65) that only wtp53 and \u039440p53 variants have fully folded DBDs is a reasonable inference from the combined E6, pAB240, and DARPin data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Multiple complementary assays demonstrate aggregation propensity of p53 isoforms. TANGO algorithm predicted novel aggregation-prone regions in TAp53\u03c8 and p53\u03b3. Analytical SEC showed tetrameric states for wtp53, R273H, and \u039440p53\u03b1, while \u03b3-isoforms and \u0394133/\u0394160 isoforms with \u03b2/\u03b3 C-termini displayed strong aggregation. Native PAGE and solubility assays confirmed that \u0394133 and \u0394160 isoforms are largely insoluble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 are supported by multiple independent methods: in silico prediction (Figure 4A-C), analytical SEC (Figure 4D), native PAGE (Figure 4E), and solubility assays (Figure 4F). The convergence of results from different techniques strengthens the conclusions. However, the TANGO prediction (C69) is computational and requires experimental validation, which is partially provided by the ThT assay (C82-C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Thioflavin T fluorescence assays demonstrate that the \u03b3-peptide binds ThT while the \u03b2-peptide does not, confirming high aggregation propensity of the \u03b3-C-terminus in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by ThT fluorescence data (Figure 4G) with appropriate controls (buffer only). Statistical analysis was performed (n=3, one-way ANOVA). The conclusion that \u03b3-C-terminus has high aggregation propensity (C84) is a reasonable inference from the ThT binding data, though the extrapolation from peptide to full-length protein behavior should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Aggregation of p53 isoforms is concentration-dependent and modulated by chaperones. \u0394133p53\u03b1,\u03b2 remained soluble when expressed under a minimal promoter (reduced expression), but treatment with HSP70/HSP90 inhibitors increased the insoluble fraction, demonstrating that aggregation depends on expression level exceeding chaperone capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by solubility assays with reduced expression (Figure 4\u2014figure supplement 3) and chaperone inhibitor treatments. The experiments provide direct evidence for concentration-dependent aggregation and chaperone involvement. However, the threshold level mentioned in C86 is not quantitatively defined, making this a qualitative rather than quantitative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Co-immunoprecipitation with endogenous HSC/HSP70 shows differential chaperone interaction among p53 isoforms. Strong signals were detected for p53V157F, \u039440p53\u03b3, \u0394133\u03b1,\u03b2,\u03b3, TAp53\u03c8, and TA\u0394p53, while wtp53, \u039440p53\u03b1, \u039440p53\u03b2, and p53R273H showed only weak interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by co-IP data (Figure 5A) with appropriate controls. The pattern of chaperone interaction correlates with the aggregation propensity data, strengthening the interpretation. Statistical analysis was performed (n=3). The conclusion that weak signals indicate lack of accessible hydrophobic patches is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Expression of aggregation-prone p53 isoforms induces cellular stress response. Luciferase reporter assays with HSP70 promoter showed strong activation by \u03b3-C-terminus isoforms and all \u0394133p53 versions. The \u03b3-C-terminus fused to Scarlet induced activity, while \u03b2-C-terminus did not. Mutations in hydrophobic residues of \u03b3-C-terminus (Y327A, L330A, L334A, L336A) abolished this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by luciferase reporter assays with HSP70 promoter (Figure 5B) and HSE promoter (Figure 5C). The use of Scarlet fusion proteins and mutational analysis provides strong evidence that the \u03b3-C-terminus hydrophobic nature drives the stress response. Statistical analysis was performed (n=3, one-way ANOVA). The conclusion (C98) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Mass spectrometry-based proteomics reveals differential chaperone interactions. All tested isoforms interact with a common set of chaperone proteins, but \u0394133\u03b1, \u0394133\u03b2, and TAp53\u03b3 show proximity to many more proteins involved in binding un-/misfolded proteins compared to TAp53\u03b2 and \u039440p53\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by TurboID-based mass spectrometry data (Figure 5D, Supplementary file 1). The experimental design is appropriate with proper controls (unbiotinylated lysates). Quality control metrics (Figure 5\u2014figure supplement 2) show good reproducibility. The filtering for chaperone-related terms is clearly described. However, proximity labeling captures transient and indirect interactions, so these should be interpreted as potential rather than direct interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Peptide-level mass spectrometry analysis demonstrates that \u0394133p53\u03b1 can form mixed tetramers with wild-type p53 through its intact oligomerization domain, while \u0394133p53\u03b2, TAp53\u03b2, and TAp53\u03b3 do not interact with wtp53 via oligomerization. This enables \u0394133p53\u03b1 to act dominantly negative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by targeted peptide analysis from mass spectrometry (Figure 5E-G). The detection of wtp53-specific peptides (aa 102-110) in \u0394133p53\u03b1 samples but not in \u0394133p53\u03b2 samples provides direct evidence for hetero-oligomerization. The interpretation is consistent with the structural features of these isoforms (\u0394133p53\u03b1 has full OD, \u0394133p53\u03b2 does not). However, the dominant negative effect (C104) is inferred rather than directly demonstrated in functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Co-expression studies demonstrate that p53 isoforms can inhibit wtp53 activity through different mechanisms. Cancer mutants and all \u03b1-isoforms strongly inhibited wtp53, with \u039440p53\u03b1 acting via promoter squelching. Isoforms incapable of forming tetramers showed no inhibitory effect. TA\u0394p53\u03b1 lacks inhibitory effect due to cytoplasmic localization (missing NLS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by luciferase reporter assays (Figure 6A) with appropriate controls. The distinction between hetero-oligomerization and promoter squelching mechanisms is well-supported. The explanation for TA\u0394p53\u03b1 (C109) is supported by citation to Chan and Poon, 2007. Statistical analysis was performed (n=3, one-way ANOVA). The mechanistic interpretations are reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "p53 isoforms differentially inhibit p73 activity. \u039440p53\u03b1 strongly inhibited TAp73\u03b1 via promoter squelching (not mixed tetramers, confirmed by R273H mutant inability to inhibit). \u0394133 isoforms showed intermediate inhibition of TAp73\u03b1, which was strongly reduced with TAp73\u03b2, suggesting co-aggregation via the \u03b1-C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by luciferase reporter assays with TAp73\u03b1 (Figure 6B) and TAp73\u03b2 (Figure 6C). The use of R273H mutant to distinguish promoter squelching from hetero-oligomerization is appropriate. The differential effect on TAp73\u03b1 vs TAp73\u03b2 provides evidence for \u03b1-C-terminus-mediated co-aggregation. Statistical analysis was performed (n=3, one-way ANOVA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Co-immunoprecipitation experiments reveal interaction patterns between p53 isoforms and p53 family members. \u039440p53\u03b1 interacted strongly with wtp53 and cancer mutants via OD. \u0394133p53\u03b1 showed interactions with all three p53 variants, weakest with wtp53. \u0394133p53\u03b2 showed strongest interaction with p53R175H. For p63 and p73, interactions were primarily via co-aggregation through \u03b1-C-termini, confirmed by reduced interaction with V603D/V586D mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C124 are supported by co-IP data (Figure 6F) with multiple p53, p63, and p73 variants. The use of aggregation-reducing mutations (V603D in p63, V586D in p73) to confirm co-aggregation mechanism is appropriate. The experiments distinguish between OD-mediated hetero-oligomerization and aggregation-mediated interactions. However, co-IP experiments show association but do not definitively prove direct physical interaction vs. co-aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors conclude that high-affinity DNA binding requires both folded DBD and OD, with only \u039440p53\u03b1 meeting these requirements. Other isoforms lack functional domains and increase cellular stress through unfolded states and hydrophobic patches. Below certain expression levels, chaperones maintain solubility, but above threshold levels, isoforms accumulate as insoluble aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 represent the authors' main conclusions, well-supported by the comprehensive experimental data presented throughout the manuscript. The conclusion integrates results from transcriptional activity assays, DNA binding studies, folding assessments, aggregation analyses, and chaperone interaction studies. The threshold-dependent aggregation (C136-C137) is directly demonstrated by the promoter strength and chaperone inhibitor experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C143",
+      "C147"
+    ],
+    "result": "The authors conclude that p53 isoforms can inactivate p53 family members through multiple mechanisms: forming inactive hetero-complexes with wtp53 (\u0394133p53\u03b1, \u0394160p53\u03b1), direct co-aggregation with \u03b1-isoforms of p63/p73 (\u0394133p53\u03b1,\u03b2,\u03b3 and \u0394160p53\u03b1,\u03b2,\u03b3), or promoter squelching (\u039440p53\u03b1). Expression of most isoforms can have severe, concentration-dependent detrimental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140, C143, C147 summarize the mechanistic conclusions supported by the functional assays (Figures 6A-E) and co-IP experiments (Figure 6F). The three distinct mechanisms (hetero-oligomerization, co-aggregation, promoter squelching) are each supported by specific experimental evidence. However, the statement about 'detrimental effects' and 'correlation with cancer' (C143-C144) relies more on literature citations than direct experimental evidence in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes background on p53 family biology, including p53's role as the most mutated protein in cancer, its structural domains (DBD, TAD, OD), the existence of p63/p73 isoforms, and the identification of p53 isoforms. The authors propose that many observed effects of p53 isoforms can be attributed to co-aggregation with wtp53 and other cellular factors, noting the lack of comprehensive biochemical characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 are primarily background knowledge supported by appropriate citations. The structural and functional information about p53 (C1-C6, C15-C16) is well-established. The comparison to p63/p73 isoforms (C7-C8, C11) is appropriately cited. The proposal about co-aggregation (C20) is the authors' hypothesis that the subsequent experiments test. The claim about p53 isoforms and cancer metastasis (C10) is noted as a proposal from literature, appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript describes the structural features of 14 identified p53 isoforms, created by alternative translation start sites (\u039440p53, \u0394133p53, \u0394160p53) and alternative C-termini (\u03b1, \u03b2, \u03b3). The \u039440p53 variants lack TAD1 but contain wild-type DBD and OD, while \u0394133 and \u0394160 isoforms lack complete TAD and parts of DBD. Only \u03b1-C-terminus contains full OD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 describe the structural organization of p53 isoforms, supported by appropriate citations (C22-C23) and illustrated in Figure 1. This is established knowledge about isoform structure that provides necessary context for the experimental work. The structural descriptions are consistent with the experimental design and interpretations throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The p53 DBD contains aggregation-prone peptide sequences normally hidden in the folded structure but exposed upon unfolding. Similar mechanisms occur in p63, where SAM domain mutations or frameshift mutations expose aggregation-prone peptides, causing AEC syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide background on aggregation mechanisms in p53 family proteins, supported by appropriate citations (Wang and Fersht, 2015 for C66; Russo et al., 2018 and McGrath et al., 2001 for C67-C68). This establishes the conceptual framework for investigating aggregation propensity of p53 isoforms and is consistent with the authors' previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The discussion contextualizes p53 isoforms by describing established biological functions of p63 and p73 isoforms: \u0394Np63\u03b1 in chromatin organization in epithelial basal cells, TAp63\u03b1 in oocyte genetic quality maintenance, and p73 in neuronal development, ciliated cell development, and tumor suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are background information supported by appropriate citations (Yang et al., 1998; Kouwenhoven et al., 2015 for C125; Deutsch et al., 2011; Suh et al., 2006 for C126; Marshall et al., 2016; Logotheti et al., 2022 for C127). This provides important context for comparing p53 isoforms to the better-characterized p63/p73 isoforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The discussion establishes that p53 isoforms (except \u039440p53\u03b1) contain only partial DBD and/or OD domains. Based on the cooperative nature of protein folding, the authors predict these truncated domains are largely unfolded and incapable of normal cellular function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 combine structural description (C128, established fact) with a prediction based on protein folding principles (C129-C130). The prediction (C130) is a reasonable inference from established protein folding theory and is subsequently validated by the experimental data presented in the manuscript. This represents appropriate application of biophysical principles to generate testable hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The discussion contextualizes findings with prior literature, noting that TA\u0394p53\u03b1 aggregates and requires nuclear translocation for dominant negative effects, that deletion of unstructured domains impairs p53 function, and that previous studies have shown aggregation behavior of various isoforms. The authors conclude that effects of p53 isoform overexpression should be interpreted based on aggregation propensity and chaperone system overload.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C157 integrate the current findings with prior literature through appropriate citations (Garc\u00eda-Alai et al., 2008; Chan and Poon, 2007; Dyson and Wright, 2025; Horikawa et al., 2014; Lei et al., 2019; Arsic et al., 2021; Xu et al., 2011; Wang and Fersht, 2015). The final conclusion (C157) appropriately synthesizes the experimental findings. The comparison to point mutations (C156) is a reasonable inference that strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "The authors predict that \u039440p53\u03b2 will have the least detrimental effect (being essentially an isolated DBD), while \u039440p53\u03b3 can aggregate and co-aggregate due to the hydrophobic \u03b3-C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are reasonable inferences from the experimental data showing that \u039440p53\u03b2 has a folded DBD but lacks OD, while \u039440p53\u03b3 shows aggregation behavior. The prediction about relative effects is consistent with the aggregation data (Figure 4) and chaperone interaction data (Figure 5). However, these are predictions about relative severity rather than directly measured outcomes.",
+    "result_type": "MINOR"
+  }
+]

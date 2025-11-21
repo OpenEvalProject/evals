@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study measured two reproductive traits (early brood and egg-laying onset) in 180 genetically identical C. elegans worms in a shared environment and performed single-individual transcriptomics on each worm. The experimental design included controlled environmental perturbations (parental age and early-life temperature) to distinguish between gene expression noise and known environmental sources of variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C26, and C122-C127 collectively describe a well-designed experimental approach with appropriate sample size (n=180), quality control metrics (85.8% mapping rate, 5.8M reads average), and exclusion criteria (6% attrition). The experimental design appropriately controls for genetic variation while introducing controlled environmental perturbations to distinguish sources of gene expression variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "448 genes were significantly associated with early brood and 11 genes with egg-laying onset (ELO) using a linear mixed model that accounted for biological replicate but was agnostic to environmental history. The associations were confirmed not to be driven by mutations arising during the experiment, with very low variant rates observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 and C128-C131 provide strong statistical evidence with appropriate multiple testing correction (Bonferroni p<0.05) and validation that genetic variants are not confounding the results (homozygous variant rate 2.21\u00d710\u207b\u2078, heterozygous 9.86\u00d710\u207b\u2077). The modeling approach appropriately accounts for biological replicate as a random effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Effect size analysis revealed that early brood was partially driven by parental age but not temperature, while ELO was affected by both. Gene expression effects on traits were quantified using standardized beta coefficients (\u03b2\u2081 for total effect, \u03b2\u2082 for effect independent of environmental history), showing that some variation was driven by environmental history while other variation represented noise independent of known environmental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 describe a rigorous path analysis approach that appropriately decomposes sources of variation. The median effect sizes (\u03b2\u2081=0.38, \u03b2\u2082=0.23 for early brood; \u03b2\u2081=0.35, \u03b2\u2082=0.31 for ELO) are substantial and biologically meaningful. The finding that \u03b2\u2082<\u03b2\u2081 consistently supports the interpretation that environmental history contributes to but does not fully explain the associations. Statistical significance is appropriately assessed with Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "186 genes were differentially expressed due to parental age and 2 genes due to early-life temperature. 140 of the 186 parental age genes overlapped with the 448 early brood-associated genes, suggesting parental age partially accounts for gene expression changes associated with early brood. 43 genes showed both environmental and noise-driven variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe appropriate differential expression analysis using negative binomial mixed models. The substantial overlap (140/186 genes) between parental age-affected genes and early brood-associated genes provides strong evidence for the role of environmental history. The identification of 43 genes with both sources of variation demonstrates the complexity of gene expression regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Gene Ontology enrichment analysis revealed that enriched terms for the 448 early brood-associated genes were enriched in either the noise group or parental age group in a mutually exclusive manner. Parental age terms involved mitochondrial regulation, while noise terms included cytoskeleton organization and female gamete generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 describe appropriate GO enrichment analysis with reasonable statistical thresholds (q<0.01). The mutually exclusive enrichment pattern between noise and parental age groups supports distinct regulatory mechanisms. However, C48 and C50 are somewhat speculative interpretations that go beyond the direct enrichment findings, though they are reasonable inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Principal component analysis showed that gene expression PCs explained reproductive trait variation substantially better than randomized data. Only 7 PCs explained 55% of early brood variation and 28 PCs explained 56% of ELO variation, demonstrating that whole transcriptomes are viable for trait prediction in isogenic C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 describe appropriate PCA analysis with proper controls (randomized phenotype data). The inflection point approach for determining optimal PC number is reasonable. The high R\u00b2 values (0.55-0.56) with relatively few PCs provide strong evidence for predictive power. The conclusion (C57) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Multiple regression analysis identified small gene sets that were highly predictive of reproductive traits. Maximum predictive power occurred with only 4 genes for early brood (R\u00b2 difference of 0.433) and 7 genes for ELO (R\u00b2 difference of 0.195), demonstrating that small gene sets can be highly informative for trait prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe a stepwise multiple regression approach that appropriately compares to randomized data. The finding that very few genes (4-7) provide substantial predictive power is striking and well-supported. However, this approach may be prone to overfitting, which is addressed in subsequent validation analyses (C62-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Cross-validation approaches confirmed the predictive power of gene expression profiles. Train-test split analysis showed median R\u00b2 of 0.55 (range 0.36-0.73) for early brood and 0.26 (range 0.07-0.49) for ELO using 10-gene sets. Elastic net regression with leave-one-out cross-validation yielded R\u00b2 of 0.53 for early brood and 0.47 for ELO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 describe rigorous validation using two independent approaches (train-test split and elastic net with LOOCV) that appropriately address overfitting concerns. The consistency between methods strengthens confidence in the results. The substantial variance explained (approximately half for early brood, quarter to half for ELO) is impressive for genetically identical individuals in a shared environment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNAi experiments demonstrated that predictive genes causally affect early brood in 5 of 7 tested cases. Dose-response experiments with puf-5 and puf-7 showed that RNAi dose corresponds to effect size on brood, confirming that mRNA level differences causally affect the trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 provide strong experimental validation of causality through RNAi knockdown. The 5/7 success rate is substantial, and the dose-response relationship (C71-C72) provides compelling evidence for a causal, quantitative relationship between mRNA levels and phenotype. The use of appropriate controls (empty vector) and statistical analysis (linear mixed models) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Analysis of chromatin domains and tissue specificity revealed that germline genes are positively associated with early brood regardless of chromatin environment, while regulated somatic genes (marked with H3K27me3) are strongly negatively associated with brood. Somatic genes marked with H3K27me3 are particularly predictive and exhibit higher expression variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 and C100-C103 describe appropriate two-way ANOVA analysis with post hoc tests showing significant interaction between chromatin domain and tissue. The statistical analysis is rigorous and the biological interpretation is reasonable. The finding that H3K27me3-marked somatic genes are both more variable and more predictive is particularly interesting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C106",
+      "C107"
+    ],
+    "result": "Predictive genes for both reproductive traits were strongly enriched for being in regulated chromatin domains (marked with H3K27me3) compared to randomly selected gene sets. Genes with the most unexplained expression variation across individuals were also more likely to be in regulated domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 and C106-C107 describe appropriate enrichment analysis using Kolmogorov-Smirnov tests with proper controls (randomly selected gene sets from the same background). The enrichment for H3K27me3-marked genes among both predictive genes and highly variable genes is consistent and well-supported. C88 appropriately cites prior work supporting this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C90",
+      "C92",
+      "C109"
+    ],
+    "result": "The chromatin environment of predictive genes was enriched for H3K27 trimethylation, suggesting that chromatin structure may underlie gene expression variation between individuals. A proposed model suggests that regulated genes marked with H3K27me3 are more subject to inter-individual variation than genes marked with H3K36me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C90, and C92 are supported by the enrichment data, but C11, C92, and C109 are speculative interpretations about mechanism. While the enrichment for H3K27me3 is well-established, the causal role of chromatin structure in driving expression variation is not directly tested. The authors appropriately acknowledge this limitation (C93) and note that whether chromatin mark levels themselves vary is unknown. This represents a reasonable hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C12",
+      "C19"
+    ],
+    "result": "Hundreds of genes showed expression variation strongly associated with reproductive traits, with some variation dependent on historical environment and some random. These non-genetic differences in gene expression are both highly predictive and causal in shaping reproductive traits, demonstrating that stochastic differences can be strongly predictive when analyzed through gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C12, and C19 represent the main conclusions of the study and are well-supported by the collective evidence from association analysis (C27-C28), effect size decomposition (C35-C41), prediction analysis (C52-C67), and causal validation (C68-C74). The integration of correlative and causal evidence provides strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The mechanisms generating gene expression differences across individuals remain unknown. For noise genes, whether differences are driven by extrinsic factors (e.g., microenvironmental differences) or intrinsic factors (e.g., stochastic transcription) is unclear, though both are expected to contribute based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 appropriately acknowledge limitations and uncertainties in the study. C93 and C94 correctly identify gaps in mechanistic understanding. C95 is a reasonable speculation about potential extrinsic sources, and C96 appropriately cites literature on transcriptional stochasticity. These represent honest assessments of what the study does and does not demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C104",
+      "C105"
+    ],
+    "result": "Given that C. elegans has an invariant somatic cell lineage but can exhibit germline cell number differences, and that H3K27me3-marked somatic genes are most variable and predictive, cell number differences are unlikely to be the major driver of gene expression differences. Single-cell RNA-seq at the individual level is not currently technically feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 appropriately cite prior work on C. elegans biology. C104 is a reasonable inference from the combination of invariant somatic lineage and the finding that somatic genes are most predictive. C105 correctly identifies a technical limitation. The logic is sound, though alternative explanations (e.g., germline cell number variation contributing to some effects) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C110",
+      "C111"
+    ],
+    "result": "C. elegans genes fall into two chromatin domains: regulated domains marked by H3K27me3 (expressed at specific developmental stages) and active domains marked by H3K36me3 (broadly expressed including germline). These marks are generally mutually exclusive and robust across development. Prior work shows regulated genes have higher coefficient of variation and increased expression is not associated with changes in histone modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 and C110-C111 appropriately cite established knowledge about C. elegans chromatin biology from multiple prior studies. These provide essential context for interpreting the current findings and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "GWAS approaches have limited predictive power for complex traits with environmental components, and environmental inputs cannot be controlled in humans. Model organism studies have been valuable but typically use bulk populations or few individuals. Recent technological advances enable individual transcriptomic profiling, revealing that genetically identical individuals differ in gene expression, but effects on fitness-related phenotypes remain largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C13-C25 provide appropriate background context supported by citations to prior literature. These claims accurately represent the state of the field and identify the gap that the current study addresses. The characterization of GWAS, TWAS, and EWAS limitations is fair and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The approach enables understanding of non-genetic variation and provides an avenue for high-throughput phenotyping-by-transcriptomics. It can be applied directly to developmental traits but must be used indirectly for time-to-death traits. Given the role of non-genetic factors in human disease, identifying molecular drivers of variation may advance precision medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C114 appropriately cite prior work on lifespan prediction. C115-C117 are reasonable speculations about future applications but are not directly tested. C118-C119 represent conclusions about the utility of the approach that are supported by the study findings. C120-C121 are speculative extensions to human medicine that, while reasonable, go beyond what the C. elegans data directly demonstrate. These represent appropriate discussion of implications but require validation in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Multiple small sets of genes were highly predictive of reproductive traits, explaining on average over half of variation in early brood and over a quarter in ELO. Manipulation of mRNA levels of predictive genes identified causal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are high-level summaries of major findings that are well-supported by the detailed analyses in C52-C74. These represent accurate summaries of the predictive and causal validation work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C34",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior work showed maternal age affects vitellogenin expression to impact progeny phenotypes. The current findings suggest aberrant expression of regulated genes may have negative consequences for reproduction, or that appropriate regulation promotes reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C34 appropriately cites prior work. Claims C85-C86 are speculative interpretations of the finding that regulated somatic genes are negatively associated with brood. While reasonable hypotheses, these interpretations are not directly tested and represent one of multiple possible explanations for the observed pattern.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C37",
+      "C38",
+      "C39",
+      "C41"
+    ],
+    "result": "An extended ICIER computational model demonstrates that uORF translation dampens CDS translational variability, with buffering capacity increasing proportionally with uORF translation efficiency, length, and number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational modeling is well-described with clear parameter specifications (C37-C41). The simulations systematically vary key parameters and demonstrate consistent buffering effects across multiple model configurations (C6-C9). The model extensions address limitations of the original ICIER framework by incorporating bidirectional dissociation and downstream CDS effects (C38-C39). However, the model remains theoretical and requires biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "High-throughput sequencing generated ~786 million reads from D. simulans across developmental stages, identifying 18,412 conserved canonical uORFs and species-specific uORFs in both D. melanogaster and D. simulans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data generation is well-documented with appropriate sample sizes and developmental coverage (C48-C49). The uORF annotation methodology is clearly described with specific numbers reported (C50-C52). The matched developmental stages between species enable direct comparison. The sequencing depth appears adequate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Conserved uORFs show higher translation efficiency than species-specific uORFs, with dominant uORFs exhibiting greater conservation and smaller interspecific TE changes than other translated uORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analyses are statistically significant with appropriate tests (C53-C54). The comparison of conserved vs. non-conserved uORFs shows consistent patterns (C55-C57). The dominant uORF analysis includes proper randomization controls (C63) and multiple lines of evidence (C64-C65). However, the causal relationship between conservation and function requires additional experimental validation beyond correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "uORFs buffer interspecific translational divergence, with uORFs showing significantly larger TE changes than their corresponding CDSs between D. melanogaster and D. simulans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The positive correlation between uORF and CDS TE is statistically significant (C66). The differential TE analysis identifies substantial numbers of changing features (C68-C69). The key finding that uORF TE changes exceed CDS changes is supported by appropriate statistical testing (C70). However, the authors acknowledge that lower read counts for uORFs limit statistical power, which is appropriately noted but may underestimate the true extent of buffering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Genes with translated uORFs exhibit significantly reduced coefficient of variation in CDS translation efficiency across developmental stages, demonstrating developmental buffering within and between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CV comparisons show consistent patterns across multiple comparisons (C76-C78). The reciprocal analysis between species strengthens the conclusion. The within-species analysis provides additional support. However, the analysis does not control for potential confounders such as gene expression level, which could influence CV measurements independently of uORF presence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CRISPR-Cas9 knockout of the bicoid uORF increases CDS translation, causes widespread transcriptional changes, and results in reduced hatching rates, fecundity, and starvation resistance, with effects more pronounced at elevated temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design includes two independent mutant lines and appropriate controls (C84). Multiple complementary assays support increased translation (C85-C86). The transcriptional changes are extensive and enriched for Bcd targets (C87-C89). The phenotypic effects are statistically significant and consistent across mutants (C90-C95). The reciprocal crosses confirm maternal effects (C92-C93). However, the authors acknowledge that traditional rescue experiments were not performed, which would provide stronger evidence that phenotypes are specifically due to uORF deletion rather than off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105"
+    ],
+    "result": "uORF-mediated translational buffering is conserved in primates, with longer uORFs showing stronger buffering effects on CDS translation between humans and macaques and within human populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The primate analysis identifies substantial numbers of uORFs (C96-C98). The patterns mirror those in Drosophila with conserved uORFs showing higher TE (C99-C100). The correlations are statistically significant (C101). The length-dependent buffering effect is consistent with the model (C102). The human population analysis provides within-species validation (C105). The consistency across distantly related clades strengthens the generality of the findings.",
+    "result_type": "MAJOR"
+  }
+]

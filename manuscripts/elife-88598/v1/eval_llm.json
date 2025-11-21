@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C55",
+      "C60",
+      "C103",
+      "C104"
+    ],
+    "result": "Brief (30-second) optogenetic stimulation of aIPg neurons, but not pC1d neurons alone, is sufficient to induce a persistent aggressive internal state lasting at least 10 minutes in female Drosophila. This persistent state is detectable after a 10-minute delay following stimulation cessation, using comparable optogenetic stimulus strengths across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C34-C37, and C55 are directly supported by behavioral data in Figure 2 using the sliding-door assay, which controls for social feedback during stimulation. The experimental design (C103, C104) ensures comparable conditions across cell types. The finding that aIPg alone produces persistent aggression while pC1d does not represents a key differential result with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C35",
+      "C38",
+      "C39",
+      "C62",
+      "C71",
+      "C72",
+      "C75",
+      "C76"
+    ],
+    "result": "Co-stimulation of pC1d and pC1e neurons produces persistent aggression, while stimulation of pC1d alone produces only time-locked aggression. This represents an emergent synergistic property, as pC1e stimulation alone does not evoke aggression, revealing a key modulatory role for pC1e in maintaining persistent aggressive states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35, C38, C39, and C62 are supported by behavioral data in Figure 2 showing that pC1d+e co-stimulation produces persistent aggression while pC1d alone does not. Claims C71-C72 confirm prior findings from Deutsch et al., 2020. The inference of synergy (C7, C76) and pC1e's modulatory role (C75) are well-justified given that pC1e alone produces no aggression (C5, C43) but is required for persistence when combined with pC1d.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In mixed-pair assays with wild-type targets, aIPg and pC1d+e stimulation produce persistent aggression lasting minutes, which is longer than previously reported. The duration of persistent aggression is influenced by fly density, with even modest increases in density extending persistence, suggesting social encounter frequency as an external modulator of aggression duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by Figure 2\u2014figure supplement 1 data. The density effect (C47-C48) is supported by Figure 2\u2014figure supplement 2, showing extended persistence at higher densities. The comparison with prior work (C44-C45) is appropriately contextualized with the known effect of density on social behaviors (C46). However, the density experiments lack detailed statistical analysis and sample size information in the supplementary figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C54",
+      "C56",
+      "C64",
+      "C69",
+      "C70",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Neither aIPg nor pC1d neurons exhibit persistent neural activity following optogenetic stimulation. Calcium imaging shows that neural responses in both cell types are time-locked to the stimulation period, with decay time constants (tau) ranging from 5-20 seconds, regardless of whether stimulation is brief (30 seconds) or prolonged (300 seconds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C51-C52, C54, and C64 are directly supported by calcium imaging data in Figure 4 and Figure 4\u2014figure supplement 1. The quantitative tau measurements (C87-C90) provide specific decay kinetics. The mismatch between behavioral persistence (>10 minutes) and neural activity duration (<20 seconds) is clearly demonstrated. The imaging was performed in head-fixed preparations, which may differ from freely behaving conditions, but the experimental design is appropriate for addressing the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C49",
+      "C50",
+      "C63"
+    ],
+    "result": "Inactivation of pC1d neurons using Kir2.1 does not suppress aIPg-induced persistent aggression, indicating that pC1d-aIPg recurrent connectivity is not required for maintaining the persistent aggressive state. This epistasis experiment argues against a model where persistent aggression depends on feedback from pC1d to aIPg neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C49 are supported by behavioral epistasis data in Figure 3 and Figure 3\u2014figure supplement 1. The inference that pC1d-aIPg recurrent connectivity is not required (C11, C50, C63) is well-justified by the epistasis results. However, the manuscript notes that differences between control and pC1d>Kir2.1 during the stimulation periods were not significant, which could indicate incomplete silencing or that pC1d activity during stimulation is also not critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C57",
+      "C58",
+      "C59",
+      "C68"
+    ],
+    "result": "The persistent aggressive internal state is maintained by mechanisms other than persistent neuronal activity in aIPg or pC1d neurons, or recurrent connectivity between these cell types. The data suggest that persistent behavior is likely regulated by downstream neurons that transform the output of aIPg or pC1d+e neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C57-C58 are well-supported inferences from the combined behavioral and imaging data showing no persistent activity despite persistent behavior, and no requirement for pC1d-aIPg connectivity. The speculation about downstream mechanisms (C59) is reasonable given the data, though it remains untested. The hypothesis about recurrent connectivity (C68) was appropriately tested and ruled out by the imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C53",
+      "C65",
+      "C66",
+      "C67",
+      "C78",
+      "C79",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Connectomic analysis reveals that aIPg, pC1d, and pC1e neurons have both unique and shared downstream targets. aIPg neurons form strong reciprocal connections with both pC1d and pC1e, as well as among themselves (392 synapses), while pC1d and pC1e form relatively few synapses with each other. Common downstream targets include SMP054 and SMP312 neurons, with SMP054 receiving visual input that may indicate the presence of another fly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C53, C65-C67, C78-C79, C91-C95 are supported by connectomic data from the hemibrain dataset shown in Figure 1 and Figure 1\u2014figure supplement 2. The quantitative synapse counts are provided. The inference about visual input indicating another fly's presence (C95) is reasonable based on the circuit architecture. However, the functional significance of these connections remains to be tested behaviorally, as noted for SMP054 (C96-C97).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior studies by Deutsch et al., 2020 and Schretter et al., 2020 independently identified pC1d and pC1e neurons as promoting female aggression, but used different experimental conditions (target sex, stimulation parameters, genetic tools) that limited direct comparison and left unresolved questions about individual cell type contributions to persistent aggression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C33 accurately summarize prior work and its limitations, supported by appropriate citations and Figure 1\u2014figure supplement 1. The authors correctly identify that Deutsch et al., 2020 could not determine individual roles of pC1d vs. pC1e (C24-C25) due to using a driver labeling both cell types, and that Schretter et al., 2020 could not definitively conclude about persistent internal states (C31) due to experimental design. This contextualizes the current study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The results provide evidence for distinct classes of neurons controlling aggression in a time-locked versus persistent manner, with aIPg capable of promoting persistent aggression independently of pC1d activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are well-supported inferences from the combined behavioral data showing differential effects of aIPg vs. pC1d stimulation, and the epistasis experiments showing aIPg can function independently. This represents an important conceptual advance in understanding aggression circuit organization, though the biological significance of this distinction remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "pC1e receives distinct inputs possibly indicating the presence of another fly, and its function resembles that of male pCd neurons in regulating persistence of internal states without directly evoking aggression. However, pCd neurons are a distinct cell type from pC1d and pC1e.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is an inference from connectomic data in Figure 1\u2014figure supplement 2 showing visual inputs to pC1e. The comparison to male pCd neurons (C80) is supported by citation to Jung et al., 2020 and is a reasonable functional analogy. The clarification that pCd is distinct from pC1d/pC1e (C81) is important for avoiding confusion. These claims appropriately contextualize the findings within broader aggression circuit organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The persistence of aggressive states could be regulated by additional mechanisms not tested in this study, including neuropeptide modulation (aIPg produces sNPF), prior experience, or attractor dynamics. Neuropeptides can act over timescales appropriate for persistent aggressive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C86 are speculative statements about possible mechanisms, appropriately supported by citations to relevant literature. The claim about aIPg producing sNPF (C83) is supported by citation to prior RNA profiling. However, these mechanisms remain untested in the current study. While these are reasonable hypotheses for future work, they do not constitute results of the current manuscript and should be considered speculative discussion points rather than supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C105"
+    ],
+    "result": "The behavioral analysis used a JAABA classifier for head butting and shoving with 80% true positive and 83.3% true negative framewise performance. The genetic driver lines were previously characterized and show similar expression levels across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 describe the behavioral analysis methods, with classifier performance documented in Table 1. Claim C105 about driver line characterization is supported by citation to Schretter et al., 2020. These methodological details are important for evaluating the reliability of behavioral measurements, though the classifier performance shows ~17-20% error rates that could affect quantitative comparisons.",
+    "result_type": "MINOR"
+  }
+]

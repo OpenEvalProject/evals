@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes that cortical inhibition is diverse with distinct interneuron classes, and that in single-inhibitory-class models, network stabilization and gain control work in opposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by extensive citations to prior literature and represent established knowledge in the field. These claims provide the foundational context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "In E-PV-SOM recurrently connected networks, SOM-mediated modulation can lead to simultaneous increases in neuronal gain and network stability, with the impact depending critically on circuit connectivity and network state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 represent the main findings demonstrated through mathematical analysis (Figures 5, 6) and simulations. The linearization framework and numerical simulations with noise both support these conclusions, showing that recurrent feedback onto SOM neurons can disentangle the inverse relationship between gain and stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The model uses specific architectural features (PV self-inhibition, differential input patterns) and nonlinear transfer functions, with the sign of E rate changes following SOM modulation determined by two network motifs reflecting inhibitory and disinhibitory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 describe the model architecture and analytical framework. The mathematical derivation (Equations 10-15, Figure 1C) clearly demonstrates how the infinite sum of synaptic pathways simplifies to two key motifs. The model choices are justified by experimental literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Experimental studies show contradictory effects of SOM modulation on E neuron activity across different cortical regions and layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately cite experimental findings from different studies showing opposite effects of SOM modulation. These citations are used to motivate the theoretical investigation of circuit parameters that determine the sign of modulation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In networks without recurrent feedback to SOM, network gain is largest for high E and low PV rates, stability is highest for high PV and low E rates, resulting in an inverse relationship where feedforward SOM modulation cannot simultaneously increase both gain and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are directly supported by the analysis in Figure 3 and Figure 4. The mathematical framework (Equation 2) and heatmap visualizations clearly demonstrate this inverse relationship in feedforward circuits. The logic is sound and follows from the linearization analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C43"
+    ],
+    "result": "Adding recurrent connections from E or PV neurons onto SOM neurons allows network gain and stability to change in the same direction following SOM modulation, thereby disentangling the inverse relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26, and C43 are supported by Figures 5 and Figure 5\u2014figure supplement 1, showing that feedback connections enable simultaneous increases in gain and stability. The mechanism is explained through changes in the underlying rate-dependent heatmaps. Figure 5\u2014figure supplement 2 confirms robustness across SOM firing rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C59"
+    ],
+    "result": "The results hold in stochastically forced networks with noisy inputs, confirming that the findings do not depend solely on linearization around fixed points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C59 are supported by Figure 6, which demonstrates that the key findings (inverse relationship in feedforward circuits, disentangling with feedback) persist when the network receives large-amplitude noise. This addresses a potential limitation of the linearization approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C41",
+      "C53"
+    ],
+    "result": "Synaptic weight strengths have complex, often non-intuitive effects on network gain and stability, with PV self-coupling having large effects while SOM self-coupling has minimal effects, and small changes in weights potentially switching the sign of modulation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C41, and C53 are supported by the systematic analysis in Figure 7 and Figure 7\u2014figure supplement 1. The results show how different synaptic weights affect gain and stability in both non-ISN and ISN regimes, with detailed parameter sweeps demonstrating the complexity of these relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C57"
+    ],
+    "result": "Tuning curve changes following SOM modulation depend on network configuration and can involve different combinations of additive/subtractive and multiplicative/divisive components, with experimental observations in auditory cortex consistent with strong E-to-SOM feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C57 are supported by Figure 8, which systematically characterizes tuning curve changes across different network configurations. The connection to experimental data (Phillips and Hasenstaub, 2016) provides validation, though the model makes specific predictions about circuit connectivity underlying observed tuning changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The division of labor between PV and SOM neurons follows from circuit symmetries: E and PV neurons receive similar inputs allowing PV to track E activity for stability, while SOM neurons lack self-inhibition enabling high gain for modulatory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 synthesize experimental observations (well-cited) with theoretical insights from the model. The logic connecting circuit structure to functional roles is sound, though C36-C37 involve inference beyond direct experimental evidence. The argument is compelling but represents interpretation of the modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "PV firing rate strongly modulates both gain and stability in opposing directions, and network gain depends on the firing rates of all populations at stimulus presentation, consistent with experimental evidence linking inhibitory activity and behavioral state to gain modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C42, C44-C45 are supported by Figures 3-5 showing rate-dependent effects. The connection to experimental literature (Ferguson and Cardin, 2020) is appropriate. The observation that gain depends on network state at stimulus presentation is a clear prediction from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Short-term synaptic dynamics differ between connections, with E-to-SOM synapses showing facilitation rather than the typical depression, and prolonged E activation recruiting SOM activity through this facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 accurately cite experimental literature on short-term plasticity. These are well-established findings used to discuss potential extensions of the model. The citations are appropriate and the claims are factually correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PV neurons target soma and proximal dendrites while SOM neurons target distal dendrites of E neurons, with dendritic inhibition gating burst responses and controlling synaptic plasticity, suggesting SOM neurons modulate both cortical response and learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are well-supported by experimental citations. C50 involves inference about SOM's role in learning based on cited work on dendritic inhibition and plasticity. The logic is sound though the learning role is speculative and not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The E-PV-SOM circuit is best characterized in superficial layers of sensory neocortex, but connectivity patterns vary across brain regions and cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are factual statements supported by appropriate citations. These claims contextualize where the model is most applicable and acknowledge regional/laminar variability, which is important for interpreting the generalizability of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C60"
+    ],
+    "result": "The study uses linearization which limits analysis to dynamics near stable states, and does not explicitly model VIP neurons which form disinhibitory pathways to SOM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C60 acknowledge limitations of the modeling approach. C58 correctly identifies linearization as a limitation, though C59 shows results hold with noise. C60 notes the absence of VIP neurons, which is a reasonable simplification but limits the model's completeness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C65",
+      "C67"
+    ],
+    "result": "The model uses power-law transfer functions, defines stability based on eigenvalues of the Jacobian (stable if all real parts negative), and the stability measure ignores oscillatory dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C65, C67 accurately describe methodological choices. These are standard approaches in dynamical systems analysis. C67 appropriately notes that the stability measure focuses on growth/decay rates and not oscillations, which is a limitation but clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Recent advances in optogenetics and interneuron characterization have revealed circuit complexity, with inhibition implicated in multiple functions including activity suppression, gain control, and preventing runaway activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide historical and functional context, all well-supported by appropriate citations. These establish the background for why understanding diverse inhibition is important and what functions need to be explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "There is evidence for reverse labor assignment where PV neurons can modulate gain and SOM neurons can provide stability through suppressing E neuron activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 cite experimental evidence that challenges a strict division of labor. These are appropriately cited and acknowledged as complicating the simple picture, adding nuance to the discussion.",
+    "result_type": "MINOR"
+  }
+]

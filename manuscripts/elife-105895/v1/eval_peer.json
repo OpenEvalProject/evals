@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C40",
+      "C42",
+      "C63",
+      "C141"
+    ],
+    "result": "The authors performed long timescale (10 \u03bcs) atomistic MD simulations at 750 mV to directly observe voltage-induced activation transitions of the Core-MT BK channel construct, including VSD movements, pore opening, and ion conductance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the value and soundness of the simulation approach. Reviewer 1 states the 'prolonged timescale and high voltage of the simulation allow apparent equilibration in the voltage-sensor domain (VSD) conformational changes and at least partial opening of the pore.' Reviewer 2 notes 'the methodologies used in this work are sound' and the editor describes the study as 'valuable.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C56",
+      "C57",
+      "C60",
+      "C83",
+      "C84"
+    ],
+    "result": "The simulations show that S4 helix vertical displacement is modest (~3 \u00c5), while R210 and R213 guanidinium groups move upward by ~8-10 \u00c5 through side chain snorkeling, with significant lateral movements accompanying the vertical displacement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support these findings. Reviewer 1 notes the results 'support previous conclusions based on functional and structural data and MD simulations that the voltage-sensor domain (VSD) of Slo1 undergoes limited conformational changes compared to Kv channels.' Reviewer 2 states 'the substantial movements of the R210 and R213 side chains occur nearly simultaneously to the S6 movement' as an 'intriguing observation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C43",
+      "C86",
+      "C90",
+      "C145",
+      "C146"
+    ],
+    "result": "The predicted VSD movements from simulations are in strong agreement with recent Cryo-EM structural studies of mutant BK channels with constitutively activated VSDs, though the Cryo-EM structures show smaller movements likely due to absence of membrane voltage.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge consistency with structural data. Reviewer 1 states 'The results support previous conclusions based on functional and structural data and MD simulations' and notes consistency with 'recent experimental and MD simulation results by Carrasquel-Ursulaez et al.,2022.' The authors' explanation for differences (absence of voltage in Cryo-EM) is not challenged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Free energy analysis yielded a total gating charge of ~0.44-0.45 e per VSD, consistent with experimental range of 0.48-0.65 e, with R210 and R213 accounting for ~97% of the total gating charge.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm these quantitative results. Reviewer 1 states the study 'predicts gating charge movement comparable in magnitude to experimental results' and notes 'gating charge calculations further indicate that R213 and R210 in S4 are the main contributors.' Reviewer 2 confirms 'the authors estimate that R210 and R213 contribute 0.25 and 0.19 elementary charges per residue to the gating current, which is roughly consistent with estimates based on electrophysiological measurements.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C143",
+      "C144"
+    ],
+    "result": "The protein significantly remodels the local electric field, creating large gradients in both vertical and lateral directions, allowing R210 and R213 to effectively sense a voltage change of ~500 mV despite modest S4 movements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly praises this analysis, stating the study extends previous work by 'showing how the electric field distribution across the VSD is altered in resting and activated states' and noting 'the presence of a locally focused electric field' as consistent with recent experimental results. No reviewer challenges these electrostatic calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C72"
+    ],
+    "result": "The pore opening transition involved sharp decrease in RMSD from open state (from ~4.5 to ~2.7 \u00c5) around 4-5 \u03bcs, with S6 helix tilting increasing by ~15\u00b0, pore diameter doubling from ~10 to ~20 \u00c5, accompanied by rehydration and K+ conductance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes 'the timescale of simulations was likely insufficient to achieve a fully open state as supported by differences in the degree of pore expansion in replicate simulations, which are also smaller than observed in Ca-bound open structures of the full-length channel.' This indicates the pore opening is partial rather than complete, though the observed transitions are accepted as real.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The single-channel conductance estimated from simulations (~1.5 pS) is much lower than experimental value (~220 pS for Core-MT), which is attributed to known limitations of classical force fields that underestimate conductance by about one order of magnitude.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly identifies this as a limitation, stating 'single channel conductance is underestimated by at least an order of magnitude, as in previous studies of other K+ channels. These quantitative discrepancies suggest that MD simulations may not yet be sufficiently advanced to provide insight into mechanisms underlying the extraordinarily large conductance of BK channels.' The authors' explanation is noted but the limitation remains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C47",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C133",
+      "C134",
+      "C135",
+      "C140",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "S4 movement is coupled to pore opening through a non-canonical pathway involving the tightly packed S4-S5-S6 interface, with S5 playing a central mediating role as shown by dynamic community analysis, coupling pathway analysis, and information flow analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 acknowledges these analyses as 'useful predictions extending beyond what has been experimentally tested' but notes 'inferences regarding coupling pathways and interactions in the fully open voltage-activated channel may be only partially supported and therefore incomplete' due to use of truncated channel and incomplete opening. The analyses are accepted as informative but with caveats about completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C70",
+      "C71",
+      "C162"
+    ],
+    "result": "The Core-MT construct used in simulations lacks the C-terminal gating ring (CTD) but retains voltage gating, though it has ~30% lower single-channel conductance than full-length BK channels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this as an appropriate experimental design choice with known limitations. Reviewer 1 notes 'a truncated channel (lacking the C-terminal gating ring) was used for simulations, which is known to have reduced single channel conductance and electromechanical coupling compared to the full-length channel.' Reviewer 2 states 'the authors provide a strong rationale for their use of the truncated channel.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C93"
+    ],
+    "result": "Control simulations at 300 mV show that the activated VSD state remains stable, indicating the observed vertical S4 movement is not an artifact of the high voltage (750 mV) used in main simulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control experiment is not explicitly discussed by reviewers, but the overall methodology is described as 'sound' by Reviewer 2, and no concerns are raised about the use of high voltage. The validation approach appears accepted implicitly through approval of the overall methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C117",
+      "C118",
+      "C122"
+    ],
+    "result": "Steered MD simulations show that pulling on R210 and R213 guanidinium tips alone can readily drive pore opening (observed in 2 out of 4 simulations), supporting their dominant roles in voltage sensing and gating.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly praises this validation approach, stating the study extends previous work by 'testing the hypothesis that R213 and R210 are the primary gating charges by steered MD simulations.' No concerns are raised about this supplementary analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C154",
+      "C155",
+      "C156",
+      "C160"
+    ],
+    "result": "The voltage gating mechanism of BK channels is distinct from canonical Kv channels, with these distinct features intimately related to the non-domain-swapped TM topology, and may be relevant to other non-domain-swapped ion channels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly supports this conclusion, stating the findings 'provide support for a \"helix-packing\" mechanism of voltage gating in the so-called \"non-domain-swapped\" voltage-gated K channels.' The editor notes the findings 'provide a solid basis for understanding voltage-gating mechanisms in this class of channels.'",
+    "result_type": "MAJOR"
+  }
+]

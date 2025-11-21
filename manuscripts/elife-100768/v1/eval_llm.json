@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C82"
+    ],
+    "result": "Filaments of F. draycotensis move in curved and straight trajectories interspersed with reorientation or reversal events. Under agar, filaments move within visible 'tracks' that confine movement and dictate reversal frequency, with reversals occurring primarily at track ends. On glass, movement is less constrained with both reversals and reorientations occurring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28-C31, C33-C34, and C82 are well-supported by phase contrast microscopy observations shown in Figures 1 and 2, including time-lapse videos. The track structure under agar and its role in confining movement is clearly documented with visual evidence and quantitative analysis of reversal positions relative to track ends (Figure 1B showing ~70% of reversals within measurement error of track ends).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C85"
+    ],
+    "result": "Reversals are characterized by deceleration-acceleration dynamics with a long-tailed distribution of dwell times. Most reversals occur within a few seconds, but some involve substantially longer stationary periods. Leading and trailing filament ends show similar dwell times, indicating rapid, coordinated reversals without delays across the filament.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35, C39-C42, and C85 are strongly supported by quantitative analysis of over 1700 reversal events across 65 filaments (Figure 2C). The long-tailed distribution is clearly shown, and the comparison of leading vs. trailing end dwell times (Figure 2\u2014figure supplement 3) demonstrates the lack of propagation delay. Speed profiles during reversals (Figure 2A-B) confirm the deceleration-acceleration pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C36",
+      "C37",
+      "C38",
+      "C48",
+      "C84"
+    ],
+    "result": "Mean filament speeds are approximately 0.5-1 \u03bcm/s and show a relatively uniform distribution against filament length on agar, with a weak positive correlation on glass. This indicates that all or a fixed proportion of cells in a filament contribute to propulsive force generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C36-C38, C48, and C84 are supported by experimental measurements from 65 filaments on agar (Figure 2C) and 86 filaments on glass (Figure 2\u2014figure supplement 2). The inference that all/most cells contribute to propulsion (C9, C38, C48) is logically sound based on the physics of drag and propulsion, though the slight discrepancy between stated speeds (~1 \u03bcm/s in abstract vs. ~0.5 \u03bcm/s in results) should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "On agar, reversal frequency is inversely proportional to filament length (and track length), while on glass, reversal frequency is independent of filament length and narrowly distributed. This supports the interpretation that tracks on agar dictate reversal frequency, while on glass, filaments have an intrinsic reversal frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by experimental data shown in Figure 1\u2014figure supplement 1 (agar) and Figure 2\u2014figure supplement 4 (glass). The correlations between reversal frequency, track length, and filament length on agar are clearly demonstrated, as is the lack of correlation on glass. The interpretation is logically consistent with the track confinement model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C86"
+    ],
+    "result": "A biophysical model implementing cells as beads connected by springs, with mechano-sensing and memory-based control of propulsive force direction, successfully recapitulates experimental observations of filament movement and reversals both with and without external force fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 and C86 describe the model structure and its capabilities. The model is clearly described in the Materials and methods section with mathematical equations, and simulation results (Figure 3B, Figure 3\u2014figure supplements 1-2) demonstrate that it can reproduce key experimental observations including reversal dynamics and dwell time distributions. The model assumptions are reasonable given the experimental constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C87"
+    ],
+    "result": "Model simulations predict that high cell-to-cell coupling and memory parameters are required for filaments to achieve rapid, coordinated reversals. When these parameters are reduced, reversals become erratic with opposing cellular force directions. The mechano-sensing creates a mechanical signal that propagates across the filament to sustain coordinated reversals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C56-C62, and C87 are supported by systematic parameter exploration shown in Figure 3C-D, which demonstrates the sensitivity of reversal efficiency (M) and synchronization (S) to coupling and memory parameters. The mechanistic explanation of how reversals propagate through mechano-sensing (C56-C58) is a reasonable interpretation of the model dynamics, though it remains a computational prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "For the majority of filaments observed experimentally, the number of observed reversals matches closely with the expected number calculated from an idealized model, consistent with high cell-to-cell coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by experimental data shown in Figure 3\u2014figure supplement 4, which shows good agreement between observed and expected reversals for most filaments. This provides experimental support for the model prediction that filaments operate with high cell-to-cell coupling. However, one outlier is noted, and the analysis is limited to agar conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C64",
+      "C88"
+    ],
+    "result": "TIRF microscopy reveals that cells within a filament remain highly coordinated during reversals, with cell movement staying synchronized in terms of both speed and direction throughout the reversal process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C64, and C88 are supported by TIRF microscopy observations tracking individual cells during reversals (Figure 4A-C, Figure 4\u2014video 1). The position and speed data for individual cells (Figure 4B-C) clearly demonstrate maintained coordination during reversals, with the inset in Figure 4B showing normalized distance traveled by each cell revealing high synchronization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C69",
+      "C89",
+      "C103"
+    ],
+    "result": "TIRF microscopy reveals membrane-bound protein complexes localized near cell poles that move in helical trajectories, demonstrating that filament translation is fully coupled with rotation along the long axis. This indicates either helical force generation or a screw-like structure coupling rotation and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C69, C89, and C103 are strongly supported by TIRF microscopy tracking of protein complexes (Figure 4D-F, Figure 4\u2014video 1). The angle distribution (mean 21.2\u00b0, Figure 4E) and strong correlation between angular and linear speed (R=0.87, Figure 4F) from 391 trajectories across 11 filaments provide quantitative evidence for rotation-translation coupling. The inference about helical force generation or screw-like structure (C69) is reasonable but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Fluorescent staining with Concanavalin A reveals a helical pattern of slime along the filament axis. Time-lapse TIRF and SEM imaging suggest that slime forms a tubular structure surrounding filaments, fixed in position relative to filament movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by multiple imaging modalities: fluorescence microscopy showing helical patterns (Figure 4\u2014figure supplement 1), time-lapse TIRF showing protein complexes moving through the fluorescence pattern (Figure 4\u2014video 2), and SEM images showing collapsed tube-like structures (Figure 4\u2014figure supplement 2). However, the interpretation that slime is 'fixed in position' (C71) is somewhat speculative and based on inference from the videos.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Cellular speeds show steep acceleration immediately after reversals, a characteristic observed in all TIRF-imaged filaments. In some filaments, leading cells appear to initiate reversal earlier than trailing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is well-supported by speed measurements in Figure 4B-C showing consistent post-reversal acceleration across all TIRF observations. Claim C74 is more tentative, supported by observations in 'a few filaments' (Figure 4\u2014figure supplement 3, Figure 4\u2014video 3), indicating this is not a universal phenomenon but does occur in some cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C75",
+      "C90"
+    ],
+    "result": "Longer filaments (>400 \u03bcm) readily undergo buckling and can form plectonemes where buckled regions twist upon themselves. Almost all observed cases of plectoneme formation involved filaments longer than 400 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C75, and C90 are supported by experimental observations documented in Figure 4\u2014figure supplement 4 and Figure 5. The length threshold of 400 \u03bcm is based on 61 observed cases of buckling/plectoneme formation. The visual evidence in Figure 5 and associated videos clearly shows the buckling and twisting dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C91"
+    ],
+    "result": "During plectoneme formation, cellular coordination is disrupted, with filament ends moving at different speeds and reversing independently. This de-coordination correlates with buckling and plectoneme formation, and appears to resolve when plectonemes resolve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 and C91 are supported by detailed tracking analysis of a representative filament shown in Figure 5B and Figure 5\u2014video 1. The position and speed data clearly show initial coordination, loss of coordination during plectoneme formation (with independent reversals), and restoration of coordination upon resolution. The correlation between plectoneme formation and de-coordination (C79, C91) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C117"
+    ],
+    "result": "Plectonemes can be dragged and entangle other filaments, a process that could be relevant for initiating aggregation of multiple filaments. De-coordination of cellular forces can lead to plectoneme formation that entangles filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by observations in Figure 5\u2014video 3 showing plectonemes entangling other filaments. Claims C81 and C117 about relevance to aggregation are speculative but reasonable hypotheses based on the observations. The connection between de-coordination and plectoneme formation (C117) is supported by the data in Figure 5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The authors hypothesize that plectoneme formation dynamics are linked with loss of sensory coupling among cells and de-coordination of propulsive force directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is explicitly stated as a hypothesis by the authors. While the correlation between plectoneme formation and de-coordination is well-documented (C79, C91), the mechanistic link to 'loss of sensory coupling' is speculative and not directly tested. This remains a plausible hypothesis requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model's implementation of mechano-sensing is supported by the presence of mechano-sensory proteins in cyanobacteria. F. draycotensis harbors MscS protein sequences and genes for type IV pili, both implicated in mechano-sensing in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 provide biological plausibility for the model's mechano-sensing assumption. C95 is supported by citation to prior work (Johnson et al., 2021), C96 by the authors' sequence analysis, and C97 by citations about type IV pili. The inference that these factors 'suggest the possibility' of mechano-sensing (C98) is reasonable but remains indirect evidence. Direct experimental demonstration of mechano-sensing in F. draycotensis is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The 1D model successfully captures reversal events and dwell times but has limitations. Future development should expand to 2D/3D to better represent rotational and elastic bending forces. The current model requires length-dependent cellular memory to reproduce length-independent reversal frequency on glass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C99-C102 accurately describe the model's scope, capabilities, and limitations. C100 is supported by the successful reproduction of key experimental features (Figures 3, Figure 3\u2014figure supplements 1-2). C102 is supported by Figure 3\u2014figure supplements 5-7 showing the parameter dependence required. These are honest assessments of model limitations and appropriate suggestions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "While rotation and surface fibrillar arrays have been noted in other gliding cyanobacteria, the rotation-translation coupling was not previously quantified. The observations suggest that propulsive force generation may involve helical tracks with either motor complexes or pili moving across them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by citations to prior work noting the novelty of the quantification in this study. Claim C106 is a reasonable hypothesis based on the rotation-translation coupling data and comparisons to single-celled gliding bacteria, but remains speculative. The hypothesis appropriately acknowledges alternative mechanisms (motor complexes vs. pili).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors hypothesize that membrane-bound protein complexes observed in TIRF are associated with light sensing, as their tracking always coincided with filament reversals. The 473 nm excitation laser may also act as a sensory signal for reversals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is an observation from TIRF experiments, but the sample size and statistical rigor are not specified. Claims C112-C113 are explicitly stated as hypotheses/speculations. The coincidence of protein complex tracking with reversals could have alternative explanations (e.g., the complexes are simply visible during all movements, not specifically triggering reversals). This requires further experimental validation with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background context on cyanobacteria, gliding motility, and molecular mechanisms. Cyanobacteria are key biogeochemical contributors; filamentous species display gliding motility enabling phototaxis and aggregation. Molecular mechanisms involve membrane protein complexes, slime secretion, surface fibrils, and type IV pili, but dynamics of coordination remain poorly characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C15-C27 provide background context supported by extensive citations to prior literature. These are well-established facts about cyanobacteria biology and gliding motility mechanisms. Claims C26-C27 about poor characterization of dynamics represent the knowledge gap this study addresses and are reasonable assessments of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Cells in a filament remain physically linked during motion and must exert mechanical forces on each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is a self-evident physical constraint based on the multicellular filamentous structure. This is a reasonable starting assumption for the biophysical model and requires no additional experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Prior work on Nostoc species indicates pili-based propulsion, though whether this species shows rotation or fibrillar arrays is unclear. Photoresponse has been shown in several gliding cyanobacteria, but quantitative single-filament analysis is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by citations to prior research and represent accurate assessments of the current state of knowledge in related species. These provide context for the novelty of the current study's quantitative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "Gliding motility in filamentous cyanobacteria is associated with aggregate formation, which is relevant for physiological functions. Loss of motility results in loss of aggregates in F. draycotensis cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 and C118 are supported by citations to prior work on F. draycotensis (Duxbury et al., 2022) and Trichodesmium (Kessler et al., 2020). These provide biological context for the importance of understanding motility dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors advocate for coupling molecular studies with detailed motion dynamics analysis, as quantification can constrain and test different models. Gliding motility may be underpinned by different mechanisms in phylogenetically diverse bacteria, and molecular approaches alone have limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 represent the authors' perspective on research approaches and are reasonable arguments supported by the demonstrated utility of their quantitative approach. These are methodological recommendations rather than empirical claims, and are well-justified by the study's results.",
+    "result_type": "MINOR"
+  }
+]

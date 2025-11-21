@@ -1,0 +1,1870 @@
+{
+  "submission": {
+    "id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:17:08.962633Z",
+    "updated_at": "2025-11-21T17:17:08.962633Z"
+  },
+  "content": [
+    {
+      "id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "content_type": "manuscript",
+      "content_text": "# Neural dynamics of visual working memory representation during sensory distraction\n\n## Authors\n\n- Jonas Karolis Degutis<sup>1</sup> ([ORCID: 0009-0003-8682-3920](https://orcid.org/0009-0003-8682-3920)) \u2020\n- Simon Weber<sup>1</sup> ([ORCID: 0000-0002-8440-1156](https://orcid.org/0000-0002-8440-1156))\n- Joram Soch<sup>1</sup> ([ORCID: 0000-0002-8879-5666](https://orcid.org/0000-0002-8879-5666))\n- John-Dylan Haynes<sup>1</sup> ([ORCID: 0000-0003-1786-6954](https://orcid.org/0000-0003-1786-6954))\n\n### Affiliations\n\n1. Bernstein Center for Computational Neuroscience Berlin and Berlin Center for Advanced Neuroimaging, Charit\u00e9 Universit\u00e4tsmedizin Berlin, Corporate member of the Freie Universit\u00e4t Berlin, Humboldt-Universit\u00e4t zu Berlin, and Berlin Institute of Health Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n2. Max Planck School of Cognition Munich Germany ([ROR:01hhn8329](https://ror.org/01hhn8329))\n3. Department of Psychology, Humboldt-Universit\u00e4t zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))\n4. Research Training Group 'Extrospection' and Berlin School of Mind and Brain, Humboldt-Universit\u00e4t zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))\n5. Institute of Psychology, Otto von Guericke University Magdeburg Germany ([ROR:00ggpsq73](https://ror.org/00ggpsq73))\n6. Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))\n7. German Center for Neurodegenerative Diseases Bonn Germany ([ROR:043j0f473](https://ror.org/043j0f473))\n8. Collaborative Research Center 'Volition and Cognitive Control', Technische Universit\u00e4t Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))\n9. Research Cluster of Excellence 'Science of Intelligence', Technische Universit\u00e4t Berlin Berlin Germany ([ROR:03v4gjf40](https://ror.org/03v4gjf40))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent studies have provided evidence for the concurrent encoding of sensory percepts and visual working memory (VWM) contents across visual areas; however, it has remained unclear how these two types of representations are concurrently present. Here, we reanalyzed an open-access fMRI dataset where participants memorized a sensory stimulus while simultaneously being presented with sensory distractors. First, we found that the VWM code in several visual regions did not fully generalize between different time points, suggesting a dynamic code. A more detailed analysis revealed that this was due to shifts in coding spaces across time. Second, we collapsed neural signals across time to assess the degree of interference between VWM contents and sensory distractors, specifically by testing the alignment of their encoding spaces. We find that VWM and feature-matching sensory distractors are encoded in coding spaces that do not fully overlap, but the separation decreases when distractors negatively impact behavioral performance in recalling the target. Together, these results indicate a role of dynamic coding and temporally stable coding spaces in helping multiplex perception and VWM within visual areas.\n\n## Introduction\n\nTo successfully achieve behavioral goals, humans rely on the ability to remember, update, and ignore information. Visual working memory (VWM) allows for a brief maintenance of visual stimuli that are no longer present within the environment (Curtis and D\u2019Esposito, 2003; Goldman Rakic, 1995; D\u2019Esposito and Postle, 2015). Previous studies have revealed that the contents of VWM are present throughout multiple visual areas, starting from V1 (Fuster and Alexander, 1971; Harrison and Tong, 2009; Christophel et al., 2012; Ester et al., 2015; Rademaker et al., 2019; Rademaker et al., 2019; Riggall and Postle, 2012; Serences et al., 2009; Christophel et al., 2017; Curtis and Sprague, 2021). These findings raised the question of how areas that are primarily involved in visual perception can also maintain VWM information without interference between the two contents. Recent studies that had participants remember a stimulus while simultaneously being presented with sensory stimuli during the delay period have found supporting evidence that both VWM contents and sensory percepts are multiplexed in occipital and parietal regions (Rademaker et al., 2019; Iamshchinina et al., 2021a; Bettencourt and Xu, 2016). However, the mechanism employed to segregate bottom-up visual input from VWM contents remains poorly understood.\n\nOne proposed mechanism to achieve the separation between sensory and memory representations is dynamic coding (Stokes et al., 2020; Stokes, 2015; Stroud et al., 2024): the change of the population code encoding VWM representations across time. Recent work has shown that the format of VWM might not be as persistent and stable throughout the delay as previously thought (Miller et al., 2018; Sreenivasan et al., 2014a). Frontal regions display dynamic population coding across the delay during the maintenance of category (Meyers et al., 2008) and spatial contents in the absence of interference (Murray et al., 2017; Spaak et al., 2017), and also show dynamic recoding of the memoranda after sensory distraction (Parthasarathy et al., 2017; Parthasarathy et al., 2019). The visual cortex in humans displays dynamic coding of contents during high load trials (Sreenivasan et al., 2014b) and during a spatial VWM task (Li and Curtis, 2023). However, it is not yet clear whether dynamic coding of VWM might help evade sensory distraction in human visual areas.\n\nAnother line of evidence suggests that perception could potentially be segregated from VWM representations using stable nonoverlapping coding spaces (Lorenc et al., 2021). For example, evidence from neuroanatomy indicates that the sensory bottom-up visual pathway primarily projects to the cytoarchitectonic Layer 4 in V1, while feedback projections culminate in superficial and deep layers of the cortex (Felleman and Van Essen, 1991). Functional results are in line with neuroanatomy by showing that VWM signals preferentially activate the superficial and deep layers in humans (Lawrence et al., 2018) and nonhuman primates (van Kerkoerle et al., 2017), while perceptual signals are more prevalent in the middle layers (Lawrence et al., 2019). In addition to laminar separation, regional multiplexing of multiple items could potentially rely on rotated representations, as seen in memory and sensory representations orthogonally coded in the auditory cortex (Libby and Buschman, 2021) and in the storage of a sequence of multiple spatial locations in the prefrontal cortex (PFC) (Xie et al., 2022). Nonoverlapping orthogonal representations have also been seen in both humans and trained recurrent neural networks as a way of segregating attended and unattended VWM representations (Wan et al., 2022; Wan et al., 2023; van Loon et al., 2018).\n\nHere, we investigated whether the concurrent presence of VWM and sensory information is compatible with predictions offered by dynamic coding or by stable nonaligned coding spaces. For this, we reanalyzed an open-access fMRI dataset by Rademaker et al., 2019, where participants performed a delayed-estimation VWM task with and without sensory distraction. To investigate dynamic coding, we employed a temporal cross-decoding analysis that assessed how well the multivariate code encoding VWM generalizes from one time point to another (Spaak et al., 2017; Stokes et al., 2013; Degutis et al., 2023; Anders et al., 2011), and a temporal neural subspace analysis that examined a sensitive way of looking at alignment of neural populations coding for VWM at different time points. To assess the nonoverlapping coding hypothesis, we used neural subspaces (Murray et al., 2017; Li and Curtis, 2023; Libby and Buschman, 2021) to see whether temporally stable representations of the VWM target and the sensory distractor are coded in separable neural populations. Finally, we examined the multivariate VWM code changes during distractor trials when compared to the no-distractor VWM format.\n\n## Results\n\n### Temporal cross-decoding in distractor and no-distractor trials\n\nIn the previously published study (Rademaker et al., 2019). two groups of participants completed two VWM experiments where on a given trial they were asked to remember an orientation of a grating, which they had to then recall at the end of the trial. In the first experiment, the delay period was either left blank (no-distractor) or a noise or randomly oriented grating distractor was presented (Figure 1a). To investigate the dynamics of the VWM code, we examined how the multivariate pattern of activity encoding VWM memoranda changed across the duration of the delay period. To do so, we ran a temporal cross-decoding analysis where we trained a decoder (periodic support vector regression [pSVR], see Weber et al., 2024) on the target orientation, separately for each time point and tested on all time points in turn in a cross-validated fashion. If the information encoding VWM memoranda were to have the same code, the trained decoder would generalize to other time points, indicated by similar decoding accuracies on the diagonal and off-diagonal elements of the matrix. However, if the code exhibited dynamic properties, despite information about the memoranda being present (above-chance decoding on the diagonal of the matrix), both off-diagonal elements corresponding to a given on-diagonal element would have lower decoding accuracies (Figure 1b). Such off-diagonal elements are considered an indication of a dynamic code.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig1-v1.jpg)\n\n**Figure 1.:** (a) On each trial, an oriented grating was presented for 0.5 s followed by a delay period of 13 s (Rademaker et al., 2019). In a third of the trials, a noise distractor was presented for 11 s during the middle of the delay; in another third, another orientation grating was presented; one-third of trials had no-distractor during the delay. (b) Illustration of dynamic coding elements. An off-diagonal element had to have a lower decoding accuracy compared to both corresponding diagonal elements (see Methods for details). (c) Temporal generalization of the multivariate code encoding VWM representations in three conditions across occipital and parietal regions. Across-participant mean temporal cross-decoding of no-distractor trials. Black outlines: matrix elements showing above-chance decoding (cluster-based permutation test; p<0.05). Blue outlines with dots: dynamic coding elements; parts of the cross-decoding matrix where the multivariate code fails to generalize (off-diagonal elements having lower decoding accuracy than their corresponding two diagonal elements; conjunction between two cluster-based permutation tests; p<0.05). (d) Same as c, but noise distractor trials. (e) Same as c, but orientation distractor trials. (f) Dynamicism index; the proportion of dynamic coding elements across time. High values indicate a dynamic non-generalizing code, while low values indicate a generalizing code. Time indicates the time elapsed since the onset of the delay period.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) On each trial, an oriented grating was presented for 0.5 s followed by a delay period of 13 s. In a third of the trials, a naturalistic distractor was presented for 11 s during the middle of the delay; in another third, a flickering orientation grating was presented; one-third of trials had no-distractor during the delay. (b) Temporal generalization of the multivariate code encoding visual working memory (VWM) representations in three conditions across occipital and parietal regions. Across-participant mean temporal cross-decoding of no-distractor trials. Black outlines: matrix elements showing above-chance decoding (cluster-based permutation test; p<0.05). Blue outlines with dots: dynamic coding elements; parts of the cross-decoding matrix where the multivariate code fails to generalize (off-diagonal elements having lower decoding accuracy than their corresponding two diagonal elements; conjunction between two cluster-based permutation tests; p<0.05). (c) Same as b, but noise distractor trials. Dynamic coding elements depicted in red. (d) Same as c, but orientation distractor trials. (e) Decoding accuracy (feature continuous accuracy [FCA]) across time for train and test on no-distractor trials (purple), train and test on naturalistic distractor trials (dark green), and train and test on flickering orientation distractor trials (light green). Horizontal lines indicate clusters where there is a difference between two time courses (all clusters p<0.05; nonparametric cluster permutation test, see color code on the right).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Signal-to-noise ratio (SNR)-dependent decoding accuracy, obtained from simulated voxel responses. SNR decreases from left to right (training axis) and bottom to top (testing axis). (b) SNR-dependent decoding accuracy, obtained from no-distractor data from Experiment 1. SNR first decreases and then increases in both training and test axes. (c) SNR-dependent decoding accuracy, obtained from noise distractor data from Experiment 1. SNR first decreases and then increases in both training and test axes.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Top: Experiment 1. Number of voxels (left) and proportion of voxels selected in a region of interest (ROI) (right). Error bars indicate SEM across participants. Bottom: same as top, but for Experiment 2.\n\nWe ran the temporal cross-decoding analysis in the first of two experiments for the three VWM delay conditions: no-distractor, noise distractor, and orientation distractor (feature-matching distractor). First, we examined each element of the cross-decoding matrix to test whether decoding accuracies were above chance. In all three conditions and throughout all regions of interest (ROIs), we found clusters where decoding was above chance (Figure 1c\u2013e, black outline; nonparametric cluster permutation test against null; all clusters p<0.05) from as early as 4 s after the onset of the delay period. We found that decoding on the diagonal was highest during no-distractor compared to noise and orientation distractor trials in most ROIs (Figure 4a).\n\nSecond, we examined off-diagonal elements to assess whether there was any indication that they reflected a non-generalizing dynamic code (see Methods for full details). Despite a high degree of temporal generalization, we found dynamic coding clusters in all three conditions. Some degree of dynamic coding was observed in all ROIs but LO2 in the noise distractor and no-distractor trials, while it was only present in V1, V2, V3, V4, and IPS in the orientation distractor condition (Figure 1c\u2013e, blue outline). The difference between noise and orientation distractor conditions could not be explained by the amount of information present in each ROI, as the decoding accuracy of the diagonal was similar across all ROIs in both the noise and orientation distractor conditions (Figure 4a). We saw a nominally larger number of dynamic coding elements in V1, V2, and V3AB during the noise distractor condition and in V3 during the no-distractor condition (Figure 1).\n\nTo qualitatively compare the amount of dynamic coding in the three conditions across the delay period, we calculated a dynamicism index (Spaak et al., 2017; Figure 1e; see Methods), which measured the multivariate code\u2019s uniqueness at each time point; more precisely, the proportion of dynamic elements corresponding to each diagonal element. High values indicate dynamic code, and low values indicate a generalizing code. Across all conditions, most dynamic elements occurred between the encoding and early delay periods (4\u20138 s), and the late delay and retrieval (14.4\u201316.8 s). Interestingly, during the noise distractor trials in V1, we also saw dynamic coding during the middle of the delay period; the multivariate code not only changed during the onset and offset of the noise stimulus, but also during its presentation and throughout the extent of the delay.\n\nWe also ran the same temporal cross-decoding analysis on the second experiment from Rademaker et al., 2019. Participants performed the same type of VWM task with three conditions: a blank delay (no-distractor), a naturalistic distractor, and a flickering orientation distractor (Figure 1\u2014figure supplement 1a). The decoding accuracies across all conditions, including the no-distractor condition, were nominally lower in the second experiment compared to the first. In some ROIs, the information about the target was not present during the delay period (chance decoding on the diagonal; Figure 1\u2014figure supplement 1b\u2013d). Similarly to the first experiment\u2019s orientation trials, the flickering orientation condition did not exhibit high levels of dynamic coding of the target (Figure 1\u2014figure supplement 1b\u2013d). Due to the decreased amount of target information present across time points in the two distractor conditions (Figure 1\u2014figure supplement 1e), we do not further investigate the temporal dynamics of VWM storage in the second experiment.\n\nWe conducted several simulations to investigate whether changes in signal-to-noise ratio (SNR) could lead to dynamic coding clusters in our temporal cross-decoding analyses. This could occur if a decoder trained at one SNR fails to generalize to another, because each may rely on different features within the data. Specifically, we varied the added noise level in either a simulated dataset of voxel responses or the empirical results from V1 in the no-distractor or noise distractor trials in the first experiment. We then trained on a given noise level and tested on all other noise levels, corresponding to the temporal cross-decoding analysis. We see an absence of dynamic elements in the SNR cross-decoding matrix, as the decoding accuracy more strongly depends on the training data rather than test data. This results in some off-diagonal values in the decoding matrix that are higher, rather than smaller, than corresponding on-diagonal elements (Figure 1\u2014figure supplement 2a). In the second and third simulations, we used empirical data. To follow the initial decrease and subsequent increase in decoding accuracy found in most ROIs (Figure 4a), we initially decreased and then increased the SNR in the train and test axes of the matrix (Figure 1\u2014figure supplement 2). Similarly to the first simulation, the cross-decoding matrix lacked dynamic elements, with the decoding accuracy of most off-diagonal elements exceeding their corresponding on-diagonal elements (Figure 1\u2014figure supplement 2b and c). These simulations indicate that SNR differences are unlikely to give rise to dynamic coding clusters.\n\n### Dynamics of VWM neural subspaces across time\n\nThe temporal cross-decoding analysis of the first experiment revealed more dynamic coding in the early visual cortex primarily during the early and late delay phase and more generalized coding throughout the delay in higher-order regions. To understand the nature of these effects in more detail, we conducted a separate series of analyses that directly assessed the neural subspaces in which the orientations were encoded and how these potentially changed across time. Specifically, we followed a previous methodological framework (Li and Curtis, 2023) and applied a principal component analysis (PCA) to the high-dimensional activity patterns at each time point to identify the two axes that explained maximal variance across orientations (see Figure 2 and Methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig2-v1.jpg)\n\n**Figure 2.:** (a) Schematic illustration of the neural subspace analysis. A given data matrix (voxels \u00d7 orientation bins) was subjected to a principal components analysis (PCA), and the first two dimensions were used to define a neural subspace onto which a left-out test data matrix was projected. This resulted in a matrix of two coordinates for each orientation bin and was visualized (see right). The x and y axes indicate the first two principal components. Each color depicts an angular bin. (b) Schematic illustration of the calculation of an above-baseline principal angle (aPA). A principal angle (PA) is the angle between the 2D PCA-based neural subspaces (as in a) for two different time points t1, t2. A small angle would indicate alignment of coding spaces; an angle of above-baseline would indicate a shift in the coding space. The aPA is the angle for a comparison between two time points (t1, t2) minus the angle between cross-validated pairs of the same time points. (c) Each row shows a projection that was estimated for one of two time ranges (middle and late delay) and then applied to all time points (using independent, split-half cross-validated data). Opacity increases from early to late time points. For visualization purposes, the subspaces were estimated on a participant-aggregated region of interest (ROI) (Li and Curtis, 2023). The axes represent the first two principal components, with labels indicating the percent of total explained variance. Figure 2\u2014figure supplement 1 depicts the same projections as neural trajectories. (d) aPA between all pairwise time point comparisons (nonparametric permutation test against null; FDR-corrected p<0.05) averaged across 1000 split-half iterations. Corresponding p-values can be found in Supplementary file 1, table S1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Same as Figure 2c, but the time dimension is on the z axis.\n\nFirst, we visualized the consistency of the neural subspaces across time. For this, we computed low-dimensional 2D neural subspaces for a given time point and projected left-out data from six time points during the delay onto this subspace (Li and Curtis, 2023; Libby and Buschman, 2021). A projection of data from a single time point resulted in four orientation bin values placed within the subspace (Figure 2a, colored circles indicate orientation). Considering projected data from all time points, if the VWM code were generalizing, we would see a clustering of orientation points in a subspace; however, if orientation points were scattered around the neural subspace, this would show a non-generalizing code.\n\nWe examined the projections in a combined ROI spanning V1-V3AB aggregated across participants. We projected left-out data from all six time point bins onto subspaces generated from the early (7.2 s), middle (12 s), and late (16.8 s) time point data for each of the three conditions. Overall, the results showed generalization across time with some exceptions (Figure 2c, Figure 2\u2014figure supplement 1). The clustering of orientation bins in the no-distractor condition was most pronounced (Figure 4a). In contrast, the noise distractor trials showed a resemblance of some degree of dynamic coding, as seen by less variance explained by early time points projected onto the middle subspace and the early and middle time points projected onto the late subspace (Figure 2, Figure 2\u2014figure supplement 1).\n\nTo quantify the visualized changes, we measured the alignment between each pair of subspaces by calculating the above-baseline principal angle (aPA) (Figure 2b) within the combined V1-V3AB ROI. The aPA measures the alignment between the 2D subspaces encoding the VWM representations: the higher the angle, the smaller the alignment between two subspaces and an indication of a changed neural coding space. Unlike in the projection of data from time points, the aPA was calculated participant-wise. Using a split-half approach, we measured the aPA between each split-pair of subspaces and subtracted the angles measured within each of the subspaces, with the latter acting as a null baseline.\n\nAll three conditions showed significant aPAs (Figure 2d; cyan stars; permutation test; p<0.05, FDR-corrected). Corresponding to the results from the cross-decoding analysis, the early (4.8 s) and late (16.8 s) delay subspaces showed the highest number of significant pairwise aPAs in all conditions, with noise distractor trials having all pairwise aPAs, including the early and late subspaces, being significant. The three conditions each had two significant aPAs between time points in the middle of the delay period.\n\n### Alignment between distractor and target subspaces in orientation distractor trials\n\nNext, we assessed any similarity in encoding between the memorized orientation targets and the orientation distractors by focusing on those trials where both occurred. First, we examined whether the encoding of the sensory distractor in the first experiment is stable across its entire presentation duration (1.5\u201312.5 s after target onset) using the same approach as for the VWM target (Figure 1e). We found stable coding of the distractor in all ROIs with only a few dynamic elements in V2 and V3 (Figure 3\u2014figure supplement 1). We then assessed whether the sensory distractor had a similar code to the VWM target by examining whether the multivariate code across time generalizes from the target to the distractor and vice versa. When cross-decoded, the sensory distractor (Figure 3\u2014figure supplement 1c) and target orientation (Figure 3\u2014figure supplement 1b) had lower decoding accuracies in the early visual cortex compared to when trained and tested on the same label type, indicative of a non-generalizing code. Such a difference was not seen in higher-order visual regions, as the decoding of the sensory distractor was low to begin with (Figure 3\u2014figure supplement 1a\u2013c).\n\nSince we found minimal dynamics in the encoding of the distractor (Figure 3\u2014figure supplement 1a) and target (Figure 1e) in the first experiment, we focused on temporally stable neural subspaces that encoded the target and sensory distractor. We computed stable neural subspaces where we disregarded the temporal variance by averaging across the whole delay period and binned the trials based on either the target orientation (Figure 3a, left subpanel) or the distractor orientation (Figure 3a, right subpanel). We then projected left-out data binned based on the target (Figure 3a, green quadrilateral) or the distractor (Figure 3a, gray quadrilateral). This projection provided us with both a baseline (as when training and testing on the same label) and a cross-generalization. Unsurprisingly, the target subspace explained the left-out target data well (Figure 3a, left subpanel, green quadrilateral); however, the target subspace explained less variance of the left-out distractor data (Figure 3a, left subpanel, gray quadrilateral), as qualitatively seen from the smaller spread of the sensory distractor orientations. A similar but less pronounced dissociation between projections was seen in the distractor subspace (Figure 3a, left, quadrilateral in green) with the distractor subspace better explaining the left-out distractor data. We quantified the difference between the target and distractor subspaces and found a significant aPA between them (p=0.0297, one-tailed nonparametric permutation test; Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig3-v1.jpg)\n\n**Figure 3.:** (a) Left: projection of left-out target (green) and sensory distractor (gray) onto an orientation VWM target neural subspace. Right: same as left, but the projections are onto the sensory distractor subspace. The axes represent the first two principal components, with labels indicating the percent of total explained variance. (b) Principal angle between the sensory distractor and orientation VWM target subspaces (p=0.0297, one-tailed permutation test of sample mean), averaged across 1000 split-half iterations. Error bars indicate SEM across participants. (c) Same as a, but for flickering orientation distractor trials in the second experiment. (d) Same as b, but for flickering orientation distractor trials in the second experiment (p<0.001, one-tailed permutation test of sample mean). The same figure for individual regions of interest (ROIs) can be seen in Figure 3\u2014figure supplement 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Across-participant mean temporal cross-decoding of the sensory distractor. Black outlines: matrix elements showing above-chance decoding (cluster-based permutation test; p<0.05). Blue outlines with dots: dynamic coding element (conjunction between two cluster-based permutation tests; p<0.05). (b) Same as a, but the decoder was trained on the target and tested on the sensory distractor in orientation visual working memory (VWM) trials. (c) Same as a, but trained on the sensory distractor and tested on the target.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Across-participant mean temporal cross-decoding of the sensory distractor. Black outlines: matrix elements showing above-chance decoding (cluster-based permutation test; p<0.05). Red outlines with dots: dynamic coding element (conjunction between two cluster-based permutation tests; p<0.05). (b) Same as a, but the decoder was trained on the target and tested on the sensory distractor in orientation visual working memory (VWM) trials. (c) Same as a, but trained on the sensory distractor and tested on the target.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Experiment 1. Left: projection of left-out target (green) and sensory distractor (gray) onto an orientation visual working memory (VWM) target neural subspace. Right: same as left, but the projections are onto the sensory distractor subspace. (b) Experiment 2. Same as a, but for flickering orientation distractor trials. (c) Experiment 1. Principal angle between the sensory distractor and orientation VWM target subspaces in each ROI (from V1 to LO2: p=0.019, 0.045, 0.034, 0.034, 0.109, 0.045, 0, 0.034; one-tailed permutation test of sample mean, FDR-corrected), averaged across 1000 split-half iterations. Error bars indicate SEM across participants. (d) Experiment 2. Same as c but for flickering orientation distractor trial (from V1 to LO2: p=0.078, 0, 0, 0.078, 0.263, 0.214, 0.177, 0.263; one-tailed permutation test of sample mean, FDR-corrected).\n\nWe ran the same analyses on the flickering orientation distractor trials in the second experiment, in which the flickering distractor trials negatively impacted target recall compared to the no-distractor trials (Rademaker et al., 2019). Similarly to the first experiment, we find reliable temporal cross-decoding of the distractor (Figure 3\u2014figure supplement 2a) and a non-generalizing code when trained and tested on the target and distractor, respectively, and vice versa (Figure 3\u2014figure supplement 2b and c). As the target (Figure 1\u2014figure supplement 1c) and distractor (Figure 3\u2014figure supplement 2a) displayed limited coding dynamics, we also computed stable neural subspaces of the target and distractor. As in the first experiment, the target subspace explained the left-out target data well (Figure 3b, left subpanel, green quadrilateral); however, the same subspace explained the left-out distractor better than in the first experiment (Figure 3a, left subpanel, gray quadrilateral), as seen from the larger overlap between the projected distractor and target quadrilaterals. Similarly, there was a large overlap between the projections in the distractor subspace (Figure 3b, right subpanel). The aPA was significant (p<0.001, one-tailed nonparametric permutation test; Figure 3d), but nominally smaller than in the first experiment. The results from the first and second experiments provide evidence for the presence of separable stable neural subspaces that might enable the multiplexing of VWM and perception across the extent of the delay period, and the separation of these subspaces is impacted by behavioral performance.\n\n### Impact of distractors on VWM multivariate code\n\nTo further assess the impact of distractors on the available VWM information, we examined the decoding accuracies of distractor and no-distractor trials across time in the first experiment. Decoding accuracy was higher in the no-distractor trials compared to both orientation and noise distractor trials across all ROIs, but IPS (Figure 4a, red and blue lines, p<0.05, cluster permutation test) across several stages of the delay period. To further assess how distractors affected the delay period information, we increased sensitivity by collapsing across it, because time courses were comparable in all conditions (Figure 4a). To assess to which degree VWM encoding generalized from no-distractor to distractor trials, we trained a decoder on no-distractor trials and tested it on both types of distractor trials (Figure 4b noise- and orientation-cross). We expressed the decoding accuracy of each distractor condition as a proportion of the decoding accuracy in the no-distractor condition. Values close to one indicate comparable information, while values below one mean the decoder does not generalize well. We found that the cross-decoding accuracies were significantly lower than the no-distractor in all ROIs but V4 (in both noise and orientation) and LO2 (only noise). Thus, in most areas, the decoder did not generalize well from the no-distractor to distractor conditions. However, the total amount of information in distractor trials was generally slightly lower (Figure 4a). Thus, we also compared the generalization to a decoder trained and tested on the same distractor condition (Figure 4b noise- and orientation-within), which might thus be able to extract more information. We found that indeed information was recovered in areas V2 and V3AB in the noise distractor condition (Figure 4b, pairwise permutation test). Thus, there was more information in the noise distractor condition, but it was not accessible to a decoder trained only on no-distractor trials. Additionally, a temporal cross-decoding analysis where all training time points were no-distractor trials had less dynamic coding in early visual regions (Figure 4\u2014figure supplement 1) when compared to the temporal cross-decoding matrix when trained and tested on noise distractor trials (Figure 1d). These results indicate a change in the VWM format between the noise distractor and no-distractor trials.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig4-v1.jpg)\n\n**Figure 4.:** (a) Decoding accuracy (feature continuous accuracy [FCA]) across time for train and test on no-distractor trials (purple), train and test on noise distractor trials (dark green), and train and test on orientation distractor trials (light green). Horizontal lines indicate clusters where there is a difference between two time courses (all clusters p<0.05; nonparametric cluster permutation test, see color code on the right). (b) Decoding accuracy as a proportion of no-distractor decoding estimated on the averaged delay period (4\u201316.8 s). Nonparametric permutation tests compared the decoding accuracy of each analysis to the no-distractor decoding baseline (indicated as a dashed line) and between a decoder trained and tested on distractor trials (noise- or orientation-within) and a decoder trained on no-distractor trials and tested on distractor trials (noise- or orientation-cross). FDR-corrected across regions of interest (ROIs). *p<0.05, ***p<0.001. Corresponding p-values can be found in Supplementary file 1, table S2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Across-participant mean temporal cross-decoding of noise distractor trials when trained on no-distractor trials. (b) Same as a, but orientation distractor trials trained on no-distractor trials.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99290/elife-99290-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Decoding accuracy as a proportion of no-distractor decoding estimated on the averaged delay period (4\u201316.8 s). Nonparametric permutation tests compared the decoding accuracy of each analysis to the no-distractor decoding baseline (indicated as a dashed line) and between a decoder trained and tested on distractor trials (noise- or orientation-within) and a decoder trained on no-distractor trials and tested on distractor trials (noise- or orientation-cross). FDR-corrected across regions of interest (ROIs). *p<0.05, **p<0.01, ***p<0.001. Corresponding p-values can be found in Supplementary file 1, table S3.\n\nWe find a similar pattern of results in the second experiment\u2019s naturalistic distractor condition, where there is a recovery of information in V3 and LO2 and LO1 in the flickering orientation distractor condition (Figure 4\u2014figure supplement 2).\n\n## Discussion\n\nWe examined the dynamics of VWM with and without distractors and explored the impact of sensory distractors on the coding spaces of VWM contents in visual areas by reanalyzing previously published data (Rademaker et al., 2019). In two experiments, participants completed a task during which they had to maintain an orientation stimulus in VWM. In the first experiment, the delay period either had no-distractor, an orientation distractor, or a noise distractor. The second experiment had either no-distractor, flickering orientation distractor, or naturalistic distractor trials. We assessed two potential mechanisms that could help concurrently maintain the superimposed sensory and memory representations. First, we examined whether changes were observable in the multivariate code for memory contents across time, which we term dynamic coding. For this, we used two different analyses: temporal cross-classification and a direct assessment of angles between coding spaces. We found evidence for dynamic coding in all conditions of the first experiment, but there were differences in these dynamics between conditions and regions. Dynamic coding was most pronounced during the noise distractor trials in early visual regions. Second, we assessed the complementary question of temporally stable coding spaces. We computed the stable neural subspaces by averaging across the delay period and saw that coding of the VWM target and concurrent sensory distractors occurred in different stable neural subspaces. This overlap was less pronounced in the second experiment where the flickering orientation distractor impacted behavioral performance when recalling the memory target (Rademaker et al., 2019). Finally, we observed that the format of the multivariate VWM code during the noise distraction differs from the VWM code when distractors were not present.\n\nDynamic encoding of VWM contents has been repeatedly examined before. Temporal cross-decoding analyses have been used in a number of nonhuman primate electrophysiology and human fMRI studies (Stokes et al., 2020; Spaak et al., 2017; Parthasarathy et al., 2017; Sreenivasan et al., 2014b; Li and Curtis, 2023; Degutis et al., 2023; Cavanagh et al., 2018). Spaak et al., 2017, found dynamic coding in the nonhuman primate PFC during a spatial VWM task. They observed a change in the multivariate code between different stages; specifically, a first shift between the encoding and maintenance periods, and also a second shift between the maintenance and retrieval periods. The initial transformation between the encoding and maintenance periods might recode the percept of the target into a stable VWM representation, whereas the second might transform the stable memoranda into a representation suited for initiation of motor output. A similar dynamic coding pattern was also observed in human visual regions using neuroimaging (Li and Curtis, 2023). In this study, in all three conditions, we find a comparable pattern of results, where the multivariate code changes between the early delay and middle delay, and middle delay and late delay periods.\n\nWhen noise distractors are added to the delay period, we find evidence of additional coding shifts in V1 during the middle of the delay. Previous research in nonhuman primates has shown that the presentation of a distractor induces a change in multivariate encoding for VWM in lateral PFC (lPFC) (Parthasarathy et al., 2017). More precisely, a lack of generalization was observed between the population code encoding VWM before the presentation of a distractor (first half of the delay) and after its presentation (the second half). Additionally, continuous shifts in encoding have been observed in the extrastriate cortex throughout the extent of the delay period when decoding multiple remembered items at high VWM load (Sreenivasan et al., 2014b). The dynamic code has been interpreted to enable multiplexing of representations when the visual cortex is overloaded by the maintenance of multiple stimuli at once. Future research could examine how properties of the distractor and of the target stimulus could interact to lead to dynamic coding. One intriguing hypothesis is that distractors that perturb the activity of feature channels that are used to encode VWM representations induce changes in its coding space over time. It is important to note that in the first experiment, the activation of the encoded target features was highest for the noise stimulus. Thus, the shared spatial frequencies between the noise distractor and the VWM contents potentially contribute to a more pronounced dynamic coding effect.\n\nIn a complementary analysis, we directly assessed subspaces in which orientations were encoded in VWM. We defined the subspaces for three different time windows: early, middle, and late. We find no evidence that the identity of orientations is confusable across time, e.g., we do not observe 45\u00b0 at one given time point being recoded as 90\u00b0 from a different time point. Such dynamics have been previously observed in the rotation of projected angles within a fixed neural subspace (Libby and Buschman, 2021; Wan et al., 2022) Rather, we find a decreased generalization between neural subspaces at different time points, as previously observed in a spatial VWM task (Li and Curtis, 2023). These results suggest that the temporal dynamics across the VWM trial periods are driven by changes in the coding subspace of VWM. We do observe a preservation of the topology of the projected angles, as more similar angles remained closer together (e.g. the bin containing 45\u00b0 was always closer to the bin containing 0\u00b0 and 90\u00b0). Such a topology has been seen in V4 during a color perception task (Brouwer and Heeger, 2009).\n\nWe also find evidence that the VWM contents are encoded in a different way depending on whether a noise distractor is presented or not. The decoder trained on no-distractor trials does not generalize well, presumably because it fails to fully access all the information present in noise distractor trials. If the decoders are trained directly on the distractor conditions, the VWM-related information is much higher. Additionally, we see that the code generalizes better across time when training on no-distractor trial time points and testing on noise distractor trials. This may imply that by training our decoder on the no-distractor trials, we are able to uncover an underlying stable population code encoding VWM in noise distractor trials. Consistent with this finding, Murray et al., 2017, demonstrated that subspaces derived on the delay period could still generalize to the more dynamic encoding and retrieval periods, albeit not perfectly.\n\nInterestingly, we found limited dynamic coding in the orientation distractor condition; primarily a change in the code between the early delay and middle delay periods was observed. Nonetheless, we find distinct temporally stable coding spaces in which sensory distractors and memory targets are encoded. These results correspond to prior research demonstrating a rotated format between perception and memory representations (Libby and Buschman, 2021), attended and unattended VWM representations in both humans and recurrent-neural networks trained on a 2-back VWM (Wan et al., 2022) and serial retro-cueing tasks (Wan et al., 2023; Piwek et al., 2023). Additionally, similar rotational dynamics have been observed between multiple spatial VWM locations stored in the nonhuman primate lPFC (Xie et al., 2022). Considering the consistency of these results across different paradigms, we speculate that separate coding spaces might be a general mechanism of how feature-matching items can be concurrently multiplexed within visual regions. With growing evidence of the relationship between VWM capacity and neural resources available within the visual cortex (Cohen et al., 2014; Franconeri et al., 2013; Sprague et al., 2014), further research could examine the number of feature-matching items that can be stored in nonaligned coding spaces.\n\nIn this study, the first experiment did not yield a behavioral deficit in the feature-matching orientation distractor trials, while the second experiment impacted target recall in the feature-matching flickering orientation trials (Rademaker et al., 2019). There is evidence from behavioral and neural studies that show interactions between perception and VWM: feature-matching distractors behaviorally bias retrieved VWM contents (Rademaker et al., 2015; Mallett et al., 2020); VWM representations influence perception (Teng and Kravitz, 2019; Kang et al., 2011; Gayet et al., 2013; Gayet et al., 2017); neural visual VWM representations in the early visual cortices are biased toward distractors (Lorenc et al., 2018); and the fidelity of VWM neural representations within the visual cortex negatively correlates with behavioral errors when recalling VWM during a sensory distraction task (Hallenbeck et al., 2021). In cases where a distractor does induce a drop in recall accuracy or biases the recalled VWM target, VWM and the sensory distractor neural subspaces might overlap more, as we see in the second experiment. However, it remains to be seen whether the degree of change or rotation between subspaces correlates with trial-to-trial behavior.\n\nTo our surprise, we did not observe a significant difference in the coding format of VWM between orientation distractor and no-distractor trials. Our initial expectation was that the VWM coding might undergo changes due to the target representation avoiding the distractor stimulus. However, the presence of a generalizing code between no-distractor and orientation distractor trials both in the first and second experiments, along with the nonaligned coding spaces between the target and distractor in both orientation trials, suggests an alternative explanation. We suggest that the sensory distractor stimulus occupies a distinct coding space throughout its presentation during the delay, while the coding space of the target remains the same in both orientation and no-distractor trials. Layer-specific coding differences in perception and VWM might explain these findings (Lawrence et al., 2018; Lawrence et al., 2019; Iamshchinina et al., 2021b). Specifically, the sensory distractor neural subspace might predominantly reside in the bottom-up middle layers of early visual cortices, while the neural subspace encoding VWM might primarily occupy the superficial and deep layers.\n\nWe provide evidence for two types of mechanisms found in visual areas during the presence of both VWM and sensory distractors. First, our findings show dynamic coding of VWM within the human visual cortex during sensory distraction and indicate that such activity is present not only within the lPFC. Second, we find that VWM and feature-matching sensory distractors are encoded in shifted coding spaces, but the overlap between these subspaces increases in trials that negatively affect recall fidelity. Considering previous findings, we posit that different coding spaces within the same region might be a more general mechanism of segregating feature-matching stimuli. In sum, these results provide possible mechanisms of how VWM and perception are concurrently present within visual areas.\n\n## Methods\n\n### Participants, stimuli, procedure, and preprocessing\n\nThe following section is a brief explanation of parts of the methods covered in Rademaker et al., 2019. Readers may refer to that paper for details. We reanalyzed data from Experiments 1 and 2.\n\nIn Experiment 1, six participants performed two tasks while in the scanner: a VWM task and a perceptual localizer task. In the perceptual localizer task, either a donut-shaped or a circle-shaped grating was presented in 9 s blocks. The participants had to respond whenever the grating dimmed. There was a total of 20 donut-shaped and 20 circle-shaped gratings in one run. Participants completed a total of 15\u201317 runs.\n\nThe visual VWM task began with the presentation of a colored 100% valid cue, which indicated the type of trial: no-distractor, orientation distractor, or noise distractor. Following the cue, the target orientation grating was presented centrally for 500 ms, followed by a 13 s delay period. In the trials with the distractor, a stimulus of the same shape and size as the target grating was presented centrally for 11 s in the middle of the delay period (Figure 1a). The orientation and noise distractors reversed contrast at 4 Hz. At the end of the delay, a probe stimulus bar appeared at a random orientation. The participants had to align the bar to the target orientation and had to respond in 3 s. The orientations for the VWM sample were pseudorandomly chosen from six orientation bins, each consisting of 30 orientations. The orientation distractor and sample were counterbalanced in order not to have the same orientation presented as a distractor. Each run consisted of four trials of each condition. Across three sessions, participants completed 27 runs of the task, resulting in a total of 108 trials per condition.\n\nIn Experiment 2, seven participants performed the same type of VWM task with three trial types: no-distractor, flickering orientation distractor, and a naturalistic (gazebo or face) distractor (Figure 1\u2014figure supplement 1a). The memory target presentation was the same as in Experiment 1. However, unlike Experiment 1, where distractors exhibited contrast reversals, the distractors in Experiment 2 alternated between being displayed on and off at 4 Hz. In the naturalistic distractor condition, a full set of 22 unique face images or 22 unique gazebo images was presented in a randomly shuffled sequence. In the flickering grating distractor condition, 22 gratings were shown, each sharing the same orientation but with a randomly assigned phase. As in Experiment 1, the orientations of both the target and distractor gratings were pseudorandomly drawn from six predefined orientation bins.\n\nThe data were acquired using a simultaneous multi-slice EPI sequence with a TR of 800 ms, TE of 35 ms, flip angle of 52\u00b0, and isotropic voxels of 2 mm. The data were preprocessed using FreeSurfer and FSL, and time series were z-scored across time for each voxel.\n\n### Voxel selection\n\nWe used the same ROIs as in Rademaker et al., 2019, which were derived using retinotopic mapping. In contrast to the original study, we reduced the size of our ROIs by selecting voxels that reliably responded to both the donut-shaped orientation perception task and the no-distractor VWM task. To select reliably activating voxels, we calculated four tuning functions for each voxel: two from the perceptual localizer and two from the no-distractor VWM task. The tuning functions spanned the continuous feature space in bins of 30\u00b0. Thus, to calculate the tuning functions, we ran a split-half analysis using stratified sampling where we binned all trials into six bins (of 30\u00b0). For both halves, tuning functions were estimated using a GLM that included six orientation regressors (one for each bin) and assumed an additive noise component independent and identically distributed across trials. We calculated Pearson\u2019s correlations between the no-distractor memory and the perception tuning functions across the six parameter estimates extracted from the GLM, thus generating one memory-memory and one perception-perception correlation coefficient for each voxel.\n\nThe same analysis was additionally performed 1000 times on randomly permuted orientation labels to generate a null distribution for each participant and each ROI. These distributions were used to check for the reliability of voxel activation to perception and no-distractor VWM. After performing Fisher\u2019s z-transformation on the correlations, we selected voxels that had a value above the 75th percentile of the null distributions in both the memory-memory and perception-perception correlations. This population of voxels was then used for all subsequent analyses. IPS included reliable voxels from retinotopically derived IPS0, IPS1, and IPS2. The number and proportion of voxels selected for each experiment is seen in Figure 1\u2014figure supplement 3.\n\n### Periodic support vector regression\n\nWe used pSVR to predict the target orientation from the multivariate BOLD activity (Weber et al., 2024). PSVR uses a regression approach to estimate the sine and cosine components of a given orientation independently and therefore accounts for the circular nature of stimuli. To have a proper periodic function, orientation labels from the range [0\u00b0, 180\u00b0) were projected into the range [0, 2\u03c0).\n\nWe used the support vector regression algorithm using a nonlinear radial basis function kernel implemented in LIBSVM (Chang and Lin, 2011) for orientation decoding. Specifically, sine and cosine components of the presented orientations were predicted based on multivariate fMRI signals from a set of voxels at specific time points within a trial (see Temporal cross-decoding). In each cross-validation fold, we rescaled the training data voxel activation into the range [0, 1] and applied the training data parameters to rescale the test data. For each participant, we had a total of three iterations in our cross-validation, where we trained on two-thirds (i.e. two sessions) and tested on one-third of the data (i.e. the left-out session). We selected three iterations to mitigate training and test data leakage (see Temporal cross-decoding).\n\nAfter pSVR-based analysis, reconstructed orientations were obtained by plugging the predicted sine and cosine components into the four-quadrant inverse tangent:\n\n$$\n\\theta_{p}=atan2(x_{p},y_{p})\n$$\n\nwhere xp and yp are pSVR outputs in the test set. Prediction accuracy was measured as the trial-wise absolute angular deviation between predicted orientation and actual orientation:\n\n$$\n\u0394x=|(\\theta\u2212\\theta_{p})_{circ}|\n$$\n\nwhere \u03b8 is the labeled orientation and \u03b8p is the predicted orientation. This measure was then transformed into a trial-wise feature continuous accuracy (FCA) (Pilly and Seitz, 2009) as follows:\n\n$$\nFCA=\\frac{\\pi\u2212\u0394x}{\\pi}\u22c5100\n$$\n\nThe final across-trial accuracy was the mean of the trial-wise FCAs. Mean FCA was calculated across predicted orientations from all test sets after cross-validation was complete. The FCA is an equivalent measurement to standard accuracy measured in decoding analyses falling into the range between 0% and 100% but extended to the continuous domain. In the case of random guessing, the expected angular deviation is \u03c0/2, resulting in chance-level FCA at 50%.\n\n### Temporal cross-decoding\n\nTo determine the underlying stability of the VWM code, we ran a temporal cross-decoding analysis using pSVR (Figure 1). We trained on data from a given time point and then predicted orientations for all time points, using the presented targets as labels. We trained on two-thirds of the trials per iteration and tested on the left-out third. Training and test data were never taken from the same trials, both when testing on the same and different time points.\n\nWe used a cluster-based approach to test for significance for above-chance decoding clusters (Maris and Oostenveld, 2007) To determine whether the size of the cluster of the above-chance values was significantly larger than chance, we calculated a summed t-value for each cluster. We then generated a null distribution by randomly permuting the sign of the estimated above-chance accuracy (each FCA value was subtracted by 50%, such that 0 corresponds to chance level) of all components within the temporal cross-decoding matrix. We calculated the summed t-value for the largest randomly occurring above-chance cluster. This procedure was repeated 1000 times to estimate a null distribution. The empirical summed t-value of each cluster was then compared to the null distribution to determine significance (p<0.05; without control of multiple cluster comparisons).\n\nDynamic coding clusters were defined as elements within the temporal cross-decoding matrix, where the multivariate code at a given time point did not fully generalize to another time point; in other words, an off-diagonal element was significantly smaller in accuracy compared to its two corresponding on-diagonal elements (aij < aii and aij < ajj, Figure 1b). In order to test for the significance of these clusters, we ran two cluster permutation tests as done in previous studies to define dynamic clusters (Spaak et al., 2017; Li and Curtis, 2023). In each test, we subtracted one or the other corresponding diagonal elements from the off-diagonal elements (aij \u2013 aii and aij \u2013 ajj). We then ran the same sign permutation test as for the above-chance decoding cluster for both comparisons. An off-diagonal element was deemed dynamic if both tests were significant (p<0.05), and both corresponding diagonal elements were part of the above-chance decoding cluster.\n\nFollowing Spaak et al., 2017, we also computed the dynamicism index as a proportion of elements across time that were dynamic. Specifically, we calculated the proportion of (off-diagonal) dynamic elements corresponding to a diagonal time point in both columns (corresponding to the test time points) and rows (corresponding to the train time points) of the temporal cross-decoding matrix.\n\n### Temporal cross-decoding simulations\n\nTo address the possibility that the dynamic clusters in the temporal cross-decoding analysis might arise as a result of the decoder picking up on different features within the signal as a function of the SNR, we ran three temporal cross-decoding simulations where the train and test data had varying levels of SNR.\n\nIn the first simulation, we created a dataset of 200 voxels that had a sine or cosine response function to orientations between 1\u00b0 and 180\u00b0, the same orientations as the remembered target. A circular shift was applied to each voxel to vary preferred (or maximal) responses of each simulated voxel. This resulted in a dataset that captured the neural population\u2019s response to all orientations. We then assessed the decoding performance under different SNR conditions during training and testing. In total, we ran seven iterations of the simulation, which correspond to the number of subjects in the second experiment. For each iteration, we randomly selected 108 responses from the full set of 180 for training, and then independently sampled another 108 from the same full set for testing. This ensured that the same orientation could appear in both sets, consistent with the structure of the original experiment. To increase variability, the selected trials differed in each iteration. Random white noise was applied to the data, and thus the SNR was independently scaled according to the specified levels for train and test data. We then use the same pSVR decoder as in the temporal cross-decoding analysis to train and test. We plot the SNR cross-decoding matrix as temporal decoding matrices (Figure 1\u2014figure supplement 2a).\n\nThe second and third simulations were conducted to investigate whether increased noise levels would induce the decoder to rely on different features of the no-distractor and noise distractor data from the first experiment. We used empirical data from the primary visual cortex (V1) under the no-distractor and noise distractor conditions for the second and third simulations, respectively. Data from time points 5.6\u20138.8 s after stimulus onset (Figure 1c, V1) were averaged across five TRs. As in the first simulation, SNR was systematically manipulated by adding white noise. Additionally, to see whether the initial decrease in SNR and subsequent increase (as seen first during the delay and increase during the response period) would result in dynamic coding clusters, we initially increased and subsequently decreased the amplitude of added noise. The same pSVR decoder was used to train and test on the data in a cross-validated fashion with different levels of added noise. We plot the cross-decoding matrix as in the first simulation (Figure 1\u2014figure supplement 2b and c).\n\n### Neural subspaces\n\nWe adapted the method from Li and Curtis, 2023, to calculate two-dimensional neural subspaces encoding VWM information at a given time point. To do so, we used PCA. To maximize power, we binned trial-wise fMRI activations into four equidistant bins of 45\u00b0 and averaged the signal across all trials within a bin (Figure 2a). The data matrix \u03a7 was defined as a \u03c1\u00d7\u03c5 matrix, where \u03c1=4 was the four orientation bins, and \u03c5 was the number of voxels. We mean-centered the columns (i.e. each voxel) of the data matrix.\n\nThis analysis focused on the time points from 4 s to 17.6 s after delay onset. The first TRs were not used since the temporal cross-decoding results showed no above-chance decoding. We averaged across every three TRs leading to six nonoverlapping temporal bins resulting in six \u03a7 matrices. We calculated the principal components using eigen decomposition of the covariance matrix for each \u03a7 and defined the matrix V using the two largest eigenvalues as a \u03c5\u00d72 matrix, resulting in six neural subspaces, one for each nonoverlapping temporal bin.\n\n### Neural subspaces across time\n\nFor visualization purposes, we used three out of the total of six neural subspaces from the following time points: early (7.2 s), middle (12 s), and late (16.8 s). Following the aforementioned procedure, these subspaces were calculated on half of the trials, as we projected the left-out data onto the subspaces. The left-out data were binned into six temporal bins between 4 s and 17.6 s after target onset with no overlap, just like in the calculation of the six subspaces. The projection resulted in a \u03c1\u00d72 matrix \u03a1 for each projected time bin (resulting in a total of six \u03a1 matrices). We use distinct colors to plot the temporal trajectories of each orientation bin across time in a 2D subspace flattened (Figure 2c) and not flattened (Figure 2\u2014figure supplement 1) across the time dimension. Importantly, the visualization analysis was done on a combined participant-aggregated V1-V3AB region, which included all reliable voxels across the four regions and all six participants (see Voxel selection).\n\nTo measure the alignment between coding spaces at different times, we calculated an aPA between all subspaces (Figure 2c). We used the MATLAB function subspace for an implementation of the method proposed by Bj\u00f6rck and Golub, 1973, to measure the angle between two V matrices. This provided us with a possible principal angle between 0\u00b0 and 90\u00b0; the higher the angle, the larger the difference between the two subspaces. To avoid overfitting and as in the visualization analysis, we used a split-half approach to compute the aPA between subspaces. Half of the binned trials were used to calculate Vi,A and Vj,A, and half for Vi,B Vj,B, where A and B refer to the two halves of the split, and i and j refer to the two time bins compared. For significance testing, the within-subspace angle (the angle between two splits of the data within a given temporal bin [i.e. Vi,A and Vi,B]) was subtracted from the between-subspace PA (the angle between two different temporal bins [e.g. Vi,A and Vj,B]). Unlike the visualization analysis, the PA was calculated per participant 1000 times using different splits of the data on a combined V1-V3AB region that included the reliable voxels across the four regions (see Voxel selection). The final aPA value was an average across all iterations for each participant.\n\n### Sensory distractor and orientation VWM target neural subspaces\n\nFor the orientation VWM target and sensory distractor neural subspace, we followed the aforementioned subspace analysis, but instead of calculating subspaces on six temporal bins, we averaged across the 4\u201317.6 s delay period and calculated a single subspace. As in the previous analysis, we split the orientation VWM trials in half. We then binned the trials either based on the target orientation or the sensory distractor. For visualization purposes, we projected the left-out data averaged based on the sensory distractor and the target onto subspaces derived from both the sensory distractor and target subspaces. As in the previous visualization, the analysis was run on a participant-aggregated V1-V3AB region.\n\nTo calculate the aPA, we had the following subspaces: VTarget,A, VDist,A, VTarget,B, and VDist,B, where the subspaces were calculated on trials binned either based on the target orientation or the sensory distractor. The aPA was calculated by subtracting the within-subspace angle (VTarget,A and VTarget,B, VDist,A and VDist,B) from the sensory distractor and working memory angle (VTarget,A and VDist,B, VTarget,B and VDist,A). The split-half aPA analysis was performed 1000 times, and the final value was an average across these iterations for each participant.\n",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "25a26394-c490-4fe6-806a-a98d9456e88e",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gui Xue, https://ror.org/022k4wk35 Beijing Normal University Beijing China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99290.4.sa0](https://doi.org/10.7554/eLife.99290.4.sa0)\n\nThis important study reports a reanalysis of one experiment of a previously-published report to characterize the dynamics of neural population codes during visual working memory in the presence of distracting information. This paper presents solid evidence that working memory representations are dynamic and distinct from sensory representations of intervening distractions. This research will be of interest to cognitive neuroscientists working on the neural bases of visual perception and memory.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99290.4.sa1](https://doi.org/10.7554/eLife.99290.4.sa1)\n\nSummary:\n\nIn this study, the authors re-analyzed a public dataset (Rademaker et al, 2019, Nature Neuroscience) which includes fMRI and behavioral data recorded while participants held an oriented grating in visual working memory (WM) and performed a delayed recall task at the end of an extended delay period. In that experiment, participants were pre-cued on each trial as to whether there would be a distracting visual stimulus presented during the delay period (filtered noise or randomly-oriented grating). In this manuscript, the authors focused on identifying whether the neural code in retinotopic cortex for remembered orientation was 'stable' over the delay period, such that the format of the code remained the same, or whether the code was dynamic, such that information was present, but encoded in an alternative format. They identify some timepoints - especially towards the beginning/end of the delay - where the multivariate activation pattern fails to generalize to other timepoints, and interpret this as evidence for a dynamic code. Additionally, the authors compare the representational format of remembered orientation in the presence vs absence of a distracting stimulus, averaged over the delay period. This analysis suggested a 'rotation' of the representational subspace between distracting orientations and remembered orientations, which may help preserve simultaneous representations of both remembered and viewed stimuli. Intriguingly, this rotation was a bit smaller for Expt 2, in which the orientation distractor had a greater behavioral impact on the participants' behavioral working memory recall performance, suggesting that more separation between subspaces is critical for preserving intact working memory representations.\n\nStrengths:\n\n(1) Direct comparisons of coding subspaces/manifolds between timepoints, task conditions, and experiments is an innovative and useful approach for understanding how neural representations are transformed to support cognition\n\n(2) Re-use of existing dataset substantially goes beyond the authors' previous findings by comparing geometry of representational spaces between conditions and timepoints, and by looking explicitly for dynamic neural representations\n\n(3) Simulations testing whether dynamic codes can be explained purely by changes in data SNR are an important contribution, as this rules out a category of explanations for the dynamic coding results observed\n\nWeaknesses:\n\n(1) Primary evidence for 'dynamic coding', especially in early visual cortex, appears to be related to the transition between encoding/maintenance and maintenance/recall, but the delay period representations seem overall stable, consistent with some previous findings. However, given the simulation results, the general result that representations may change in their format appears solid, though the contribution of different trial phases remains important for considering the overall result.\n\n(2) Converting a continuous decoding metric (angular error) to \"% decoding accuracy\" serves to obfuscate the units of the actual results. Decoding precision (e.g., sd of decoding error histogram) would be more interpretable and better related to both the previous study and behavioral measures of WM performance.\n\nComments on revised version:\n\nThe authors have addressed all my previous concerns.\n",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a2fd07e9-4325-43e4-9420-ee7901cd098c",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C1",
+      "claim": "Recent studies have provided evidence for the concurrent encoding of sensory percepts and visual working memory (VWM) contents across visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have provided evidence for the concurrent encoding of sensory percepts and visual working memory (VWM) contents across visual areas",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "c95311a2-ae95-4f72-89fb-ba8df1552ed2",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C2",
+      "claim": "The VWM code in several visual regions did not fully generalize between different time points, suggesting a dynamic code.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that the VWM code in several visual regions did not fully generalize between different time points, suggesting a dynamic code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on temporal cross-decoding analysis results presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "34cb4f97-b0ab-4c71-b9fe-c57d18d453f7",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C3",
+      "claim": "The lack of generalization of VWM code across time points was due to shifts in coding spaces across time.",
+      "claim_type": "EXPLICIT",
+      "source": "A more detailed analysis revealed that this was due to shifts in coding spaces across time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on neural subspace analysis results presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "523876e2-b510-431d-a641-80c9e4774e03",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C4",
+      "claim": "VWM and feature-matching sensory distractors are encoded in coding spaces that do not fully overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that VWM and feature-matching sensory distractors are encoded in coding spaces that do not fully overlap",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on neural subspace alignment analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "301c816f-debd-427a-a43e-77d96cb92d87",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C5",
+      "claim": "The separation between VWM and distractor coding spaces decreases when distractors negatively impact behavioral performance in recalling the target.",
+      "claim_type": "EXPLICIT",
+      "source": "but the separation decreases when distractors negatively impact behavioral performance in recalling the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of neural subspace alignment between experiments with different behavioral outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "8f1416f5-7b27-4553-b778-0f43a1437675",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C6",
+      "claim": "Visual working memory (VWM) allows for a brief maintenance of visual stimuli that are no longer present within the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual working memory (VWM) allows for a brief maintenance of visual stimuli that are no longer present within the environment (Curtis and D'Esposito, 2003; Goldman Rakic, 1995; D'Esposito and Postle, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "ae394520-1e88-4dbb-bf66-b7fe51e5b30f",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C7",
+      "claim": "The contents of VWM are present throughout multiple visual areas, starting from V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have revealed that the contents of VWM are present throughout multiple visual areas, starting from V1 (Fuster and Alexander, 1971; Harrison and Tong, 2009; Christophel et al., 2012; Ester et al., 2015; Rademaker et al., 2019; Rademaker et al., 2019; Riggall and Postle, 2012; Serences et al., 2009; Christophel et al., 2017; Curtis and Sprague, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "d2926f0d-fea3-4d9e-8911-4be87a881658",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C8",
+      "claim": "Both VWM contents and sensory percepts are multiplexed in occipital and parietal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies that had participants remember a stimulus while simultaneously being presented with sensory stimuli during the delay period have found supporting evidence that both VWM contents and sensory percepts are multiplexed in occipital and parietal regions (Rademaker et al., 2019; Iamshchinina et al., 2021a; Bettencourt and Xu, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "3c5c05b3-1bf2-4d41-85be-258aabd4b64f",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C9",
+      "claim": "Dynamic coding is the change of the population code encoding VWM representations across time.",
+      "claim_type": "EXPLICIT",
+      "source": "One proposed mechanism to achieve the separation between sensory and memory representations is dynamic coding (Stokes et al., 2020; Stokes, 2015; Stroud et al., 2024): the change of the population code encoding VWM representations across time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "54b7a800-d3e2-43f7-bc64-6c09a3900806",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C10",
+      "claim": "Frontal regions display dynamic population coding across the delay during the maintenance of category and spatial contents in the absence of interference.",
+      "claim_type": "EXPLICIT",
+      "source": "Frontal regions display dynamic population coding across the delay during the maintenance of category (Meyers et al., 2008) and spatial contents in the absence of interference (Murray et al., 2017; Spaak et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "5a6d0c79-bbad-4714-827d-c8497bdb7695",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C11",
+      "claim": "Frontal regions show dynamic recoding of the memoranda after sensory distraction.",
+      "claim_type": "EXPLICIT",
+      "source": "and also show dynamic recoding of the memoranda after sensory distraction (Parthasarathy et al., 2017; Parthasarathy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "33877498-0360-4eba-96d3-032fab25222c",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C12",
+      "claim": "The visual cortex in humans displays dynamic coding of contents during high load trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The visual cortex in humans displays dynamic coding of contents during high load trials (Sreenivasan et al., 2014b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "a60e4df3-29ae-4cb8-ae74-4ab34f7cb812",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C13",
+      "claim": "The visual cortex in humans displays dynamic coding during a spatial VWM task.",
+      "claim_type": "EXPLICIT",
+      "source": "and during a spatial VWM task (Li and Curtis, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "ee64b7ab-d21e-4e01-b42f-1ddfb6127d40",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C14",
+      "claim": "The sensory bottom-up visual pathway primarily projects to the cytoarchitectonic Layer 4 in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, evidence from neuroanatomy indicates that the sensory bottom-up visual pathway primarily projects to the cytoarchitectonic Layer 4 in V1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to neuroanatomical evidence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "c7fa49f3-be87-4ba3-bef2-f19f8b2037c6",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C15",
+      "claim": "Feedback projections culminate in superficial and deep layers of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "while feedback projections culminate in superficial and deep layers of the cortex (Felleman and Van Essen, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to neuroanatomical evidence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "20924750-923c-4759-8904-14ed6e30e54d",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C16",
+      "claim": "VWM signals preferentially activate the superficial and deep layers in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional results are in line with neuroanatomy by showing that VWM signals preferentially activate the superficial and deep layers in humans (Lawrence et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to functional neuroimaging research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "db023f8c-9587-451e-a168-1d022d2aa0bf",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C17",
+      "claim": "VWM signals preferentially activate the superficial and deep layers in nonhuman primates.",
+      "claim_type": "EXPLICIT",
+      "source": "and nonhuman primates (van Kerkoerle et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to nonhuman primate research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "2af85198-5c75-4fb8-837e-f58834359f67",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C18",
+      "claim": "Perceptual signals are more prevalent in the middle layers.",
+      "claim_type": "EXPLICIT",
+      "source": "while perceptual signals are more prevalent in the middle layers (Lawrence et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to functional neuroimaging research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "c7606225-c994-4660-bdd2-9486f67d7607",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C19",
+      "claim": "Memory and sensory representations are orthogonally coded in the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "regional multiplexing of multiple items could potentially rely on rotated representations, as seen in memory and sensory representations orthogonally coded in the auditory cortex (Libby and Buschman, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "ec5ed23b-9fe2-4490-9295-1319e248c149",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C20",
+      "claim": "A sequence of multiple spatial locations is stored in the prefrontal cortex (PFC) using rotated representations.",
+      "claim_type": "EXPLICIT",
+      "source": "and in the storage of a sequence of multiple spatial locations in the prefrontal cortex (PFC) (Xie et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "cee7faf4-a00b-407a-8496-d3aadb56a775",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C21",
+      "claim": "Nonoverlapping orthogonal representations segregate attended and unattended VWM representations in both humans and trained recurrent neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonoverlapping orthogonal representations have also been seen in both humans and trained recurrent neural networks as a way of segregating attended and unattended VWM representations (Wan et al., 2022; Wan et al., 2023; van Loon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "a0157bf9-41d2-4995-a517-6c030917a9c4",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C22",
+      "claim": "In Experiment 1, participants memorized a sensory stimulus while simultaneously being presented with sensory distractors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first experiment, the delay period was either left blank (no-distractor) or a noise or randomly oriented grating distractor was presented (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "b0ec4ce4-3d59-4a46-90e5-2521fa887fec",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C23",
+      "claim": "Decoding accuracies were above chance in all three conditions from as early as 4 s after the onset of the delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three conditions and throughout all regions of interest (ROIs), we found clusters where decoding was above chance (Figure 1c\u2013e, black outline; nonparametric cluster permutation test against null; all clusters p<0.05) from as early as 4 s after the onset of the delay period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical testing of decoding results shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "fe03a46f-2b32-4586-8732-687b966d479a",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C24",
+      "claim": "Decoding on the diagonal was highest during no-distractor compared to noise and orientation distractor trials in most ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that decoding on the diagonal was highest during no-distractor compared to noise and orientation distractor trials in most ROIs (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of decoding accuracies across conditions shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "a6cd34c2-78d6-4c20-9dc0-c63762d4bd6e",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C25",
+      "claim": "Dynamic coding clusters were found in all three conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a high degree of temporal generalization, we found dynamic coding clusters in all three conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of temporal cross-decoding matrices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "07610211-18d3-4edb-8dd2-a4bab2e7e973",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C26",
+      "claim": "Some degree of dynamic coding was observed in all ROIs but LO2 in the noise distractor and no-distractor trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Some degree of dynamic coding was observed in all ROIs but LO2 in the noise distractor and no-distractor trials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of dynamic coding elements across ROIs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "db3d0a86-214e-43f6-9eaf-bb91eb78b78d",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C27",
+      "claim": "Dynamic coding was only present in V1, V2, V3, V4, and IPS in the orientation distractor condition.",
+      "claim_type": "EXPLICIT",
+      "source": "while it was only present in V1, V2, V3, V4, and IPS in the orientation distractor condition (Figure 1c\u2013e, blue outline).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of dynamic coding elements shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "eb569a2c-6d40-41a0-9b8c-9f347477b164",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C28",
+      "claim": "Most dynamic elements occurred between the encoding and early delay periods (4\u20138 s), and the late delay and retrieval (14.4\u201316.8 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all conditions, most dynamic elements occurred between the encoding and early delay periods (4\u20138 s), and the late delay and retrieval (14.4\u201316.8 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the dynamicism index across time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "350e19c8-a5f6-4041-bf89-c24c651709af",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C29",
+      "claim": "During the noise distractor trials in V1, dynamic coding occurred during the middle of the delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, during the noise distractor trials in V1, we also saw dynamic coding during the middle of the delay period; the multivariate code not only changed during the onset and offset of the noise stimulus, but also during its presentation and throughout the extent of the delay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the dynamicism index in V1 during noise distractor trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "e9bee22f-5d51-455e-99a1-573df38ef51e",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C30",
+      "claim": "The decoding accuracies across all conditions were nominally lower in the second experiment compared to the first.",
+      "claim_type": "EXPLICIT",
+      "source": "The decoding accuracies across all conditions, including the no-distractor condition, were nominally lower in the second experiment compared to the first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of decoding results between experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "8c2243fd-9cbe-4fe1-9df1-fd7c44461f3c",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C31",
+      "claim": "In some ROIs in Experiment 2, the information about the target was not present during the delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "In some ROIs, the information about the target was not present during the delay period (chance decoding on the diagonal; Figure 1\u2014figure supplement 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on decoding results shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "f692316d-49f6-4e35-908f-708b86072b7e",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C32",
+      "claim": "SNR differences are unlikely to give rise to dynamic coding clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations indicate that SNR differences are unlikely to give rise to dynamic coding clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on simulation results testing the effect of SNR on dynamic coding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "608af722-268d-4cc8-b2e0-52028f87c70e",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C33",
+      "claim": "All three conditions showed significant above-baseline principal angles (aPAs).",
+      "claim_type": "EXPLICIT",
+      "source": "All three conditions showed significant aPAs (Figure 2d; cyan stars; permutation test; p<0.05, FDR-corrected).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical testing of principal angles shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "702aaee1-c307-4ad4-a340-1280288e3062",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C34",
+      "claim": "The early (4.8 s) and late (16.8 s) delay subspaces showed the highest number of significant pairwise aPAs in all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Corresponding to the results from the cross-decoding analysis, the early (4.8 s) and late (16.8 s) delay subspaces showed the highest number of significant pairwise aPAs in all conditions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of pairwise principal angles across time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "878e4d88-4fee-4731-afce-3b3bfb83e6fc",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C35",
+      "claim": "Noise distractor trials had all pairwise aPAs, including the early and late subspaces, being significant.",
+      "claim_type": "EXPLICIT",
+      "source": "with noise distractor trials having all pairwise aPAs, including the early and late subspaces, being significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of pairwise principal angles in noise distractor trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "61bc61a9-94d2-4e45-a3cc-4b89fe57a9c8",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C36",
+      "claim": "Stable coding of the distractor was found in all ROIs with only a few dynamic elements in V2 and V3.",
+      "claim_type": "EXPLICIT",
+      "source": "We found stable coding of the distractor in all ROIs with only a few dynamic elements in V2 and V3 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on temporal cross-decoding analysis of the distractor shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "d30fa45c-1726-4fa5-9b53-1b6929d7ebce",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C37",
+      "claim": "When cross-decoded, the sensory distractor and target orientation had lower decoding accuracies in the early visual cortex compared to when trained and tested on the same label type.",
+      "claim_type": "EXPLICIT",
+      "source": "When cross-decoded, the sensory distractor (Figure 3\u2014figure supplement 1c) and target orientation (Figure 3\u2014figure supplement 1b) had lower decoding accuracies in the early visual cortex compared to when trained and tested on the same label type, indicative of a non-generalizing code.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on cross-decoding analysis between target and distractor shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "3c61e382-8a43-4638-afe7-7a396bb7e63c",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C38",
+      "claim": "A significant above-baseline principal angle was found between the target and distractor subspaces in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the difference between the target and distractor subspaces and found a significant aPA between them (p=0.0297, one-tailed nonparametric permutation test; Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical testing of principal angles shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "57c1f433-9ce3-494c-80af-9c92e802f906",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C39",
+      "claim": "The above-baseline principal angle between target and distractor subspaces was significant in Experiment 2 (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The aPA was significant (p<0.001, one-tailed nonparametric permutation test; Figure 3d), but nominally smaller than in the first experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical testing of principal angles shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "5130563e-990e-4895-8892-9b98280635fe",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C40",
+      "claim": "The above-baseline principal angle was nominally smaller in Experiment 2 than in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The aPA was significant (p<0.001, one-tailed nonparametric permutation test; Figure 3d), but nominally smaller than in the first experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of principal angles between experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "b08a7291-bf5b-44b3-8cb9-41db77b5337e",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C41",
+      "claim": "Decoding accuracy was higher in the no-distractor trials compared to both orientation and noise distractor trials across all ROIs, but IPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding accuracy was higher in the no-distractor trials compared to both orientation and noise distractor trials across all ROIs, but IPS (Figure 4a, red and blue lines, p<0.05, cluster permutation test) across several stages of the delay period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical comparison of decoding accuracies shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "d4f89d5f-5d7e-4779-8107-c196964c5758",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C42",
+      "claim": "The cross-decoding accuracies from no-distractor to distractor trials were significantly lower than the no-distractor in all ROIs but V4 (in both noise and orientation) and LO2 (only noise).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cross-decoding accuracies were significantly lower than the no-distractor in all ROIs but V4 (in both noise and orientation) and LO2 (only noise).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical comparison of cross-decoding accuracies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "884f0ea1-9158-4fa8-8754-8c5811e98287",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C43",
+      "claim": "Information was recovered in areas V2 and V3AB in the noise distractor condition when the decoder was trained and tested on the same distractor condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that indeed information was recovered in areas V2 and V3AB in the noise distractor condition (Figure 4b, pairwise permutation test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical comparison of decoding accuracies shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "5131a870-342a-4304-93d5-7e739c616cbb",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C44",
+      "claim": "A temporal cross-decoding analysis where all training time points were no-distractor trials had less dynamic coding in early visual regions when compared to the temporal cross-decoding matrix when trained and tested on noise distractor trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a temporal cross-decoding analysis where all training time points were no-distractor trials had less dynamic coding in early visual regions (Figure 4\u2014figure supplement 1) when compared to the temporal cross-decoding matrix when trained and tested on noise distractor trials (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of dynamic coding patterns between different training conditions shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "2801b34f-1836-4b2a-b01d-646b2db3fd2d",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C45",
+      "claim": "The first experiment did not yield a behavioral deficit in the feature-matching orientation distractor trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, the first experiment did not yield a behavioral deficit in the feature-matching orientation distractor trials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to behavioral results from the original study (Rademaker et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "755946f7-2f72-49bc-b049-dd16bd0307e2",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C46",
+      "claim": "The second experiment impacted target recall in the feature-matching flickering orientation trials.",
+      "claim_type": "EXPLICIT",
+      "source": "while the second experiment impacted target recall in the feature-matching flickering orientation trials (Rademaker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to behavioral results from the original study (Rademaker et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "e65eb138-19d4-4dcb-9301-82059c371e52",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C47",
+      "claim": "Feature-matching distractors behaviorally bias retrieved VWM contents.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence from behavioral and neural studies that show interactions between perception and VWM: feature-matching distractors behaviorally bias retrieved VWM contents (Rademaker et al., 2015; Mallett et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "acbb8b05-c59d-473b-91b6-32912e61fbcd",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C48",
+      "claim": "VWM representations influence perception.",
+      "claim_type": "EXPLICIT",
+      "source": "VWM representations influence perception (Teng and Kravitz, 2019; Kang et al., 2011; Gayet et al., 2013; Gayet et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "165e7136-3cc6-4460-866c-d33b9e76d26f",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C49",
+      "claim": "Neural visual VWM representations in the early visual cortices are biased toward distractors.",
+      "claim_type": "EXPLICIT",
+      "source": "neural visual VWM representations in the early visual cortices are biased toward distractors (Lorenc et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "ad62d634-8cfb-40a2-bb1d-41f62af4f689",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C50",
+      "claim": "The fidelity of VWM neural representations within the visual cortex negatively correlates with behavioral errors when recalling VWM during a sensory distraction task.",
+      "claim_type": "EXPLICIT",
+      "source": "and the fidelity of VWM neural representations within the visual cortex negatively correlates with behavioral errors when recalling VWM during a sensory distraction task (Hallenbeck et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "98f17f89-56f1-46e0-af9f-5070cac2b542",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C51",
+      "claim": "There was no significant difference in the coding format of VWM between orientation distractor and no-distractor trials.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, we did not observe a significant difference in the coding format of VWM between orientation distractor and no-distractor trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on cross-decoding analysis between conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "6d06738b-5534-472e-b38e-aee50142c501",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C52",
+      "claim": "The sensory distractor stimulus occupies a distinct coding space throughout its presentation during the delay, while the coding space of the target remains the same in both orientation and no-distractor trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the sensory distractor stimulus occupies a distinct coding space throughout its presentation during the delay, while the coding space of the target remains the same in both orientation and no-distractor trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results based on the observed patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "0fed4153-0c78-49a8-8470-510837792de1",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C53",
+      "claim": "Layer-specific coding differences in perception and VWM might explain the findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Layer-specific coding differences in perception and VWM might explain these findings (Lawrence et al., 2018; Lawrence et al., 2019; Iamshchinina et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations to prior research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "564c1e2f-ea85-472a-8ec1-61480370379f",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C54",
+      "claim": "The sensory distractor neural subspace might predominantly reside in the bottom-up middle layers of early visual cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the sensory distractor neural subspace might predominantly reside in the bottom-up middle layers of early visual cortices",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on prior knowledge of cortical layer organization.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "913fd950-301a-4965-bc5d-c7af5987c001",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C55",
+      "claim": "The neural subspace encoding VWM might primarily occupy the superficial and deep layers.",
+      "claim_type": "EXPLICIT",
+      "source": "while the neural subspace encoding VWM might primarily occupy the superficial and deep layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on prior knowledge of cortical layer organization.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "99e3043c-3a91-48fc-b156-a6e9dbad9975",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C56",
+      "claim": "Dynamic coding and temporally stable coding spaces play a role in helping multiplex perception and VWM within visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate a role of dynamic coding and temporally stable coding spaces in helping multiplex perception and VWM within visual areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "ac8c44cf-0f67-4a8a-8263-6f1a49036e69",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C57",
+      "claim": "Different coding spaces within the same region might be a more general mechanism of segregating feature-matching stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering previous findings, we posit that different coding spaces within the same region might be a more general mechanism of segregating feature-matching stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization based on the study's findings and prior research.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "61fb9366-433d-4dfa-867b-bb5a668c5a52",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C58",
+      "claim": "Six participants completed Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In Experiment 1, six participants performed two tasks while in the scanner: a VWM task and a perceptual localizer task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "cae7be27-9242-4d68-8923-080d97a36a68",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C59",
+      "claim": "Seven participants completed Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "In Experiment 2, seven participants performed the same type of VWM task with three trial types: no-distractor, flickering orientation distractor, and a naturalistic (gazebo or face) distractor (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "77d58bac-1782-4beb-82c7-43b1a807fdad",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C60",
+      "claim": "The target orientation grating was presented centrally for 500 ms in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the cue, the target orientation grating was presented centrally for 500 ms, followed by a 13 s delay period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "b993ec11-10c3-4bdb-a6fc-abceb36abfa9",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C61",
+      "claim": "The delay period was 13 s in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the cue, the target orientation grating was presented centrally for 500 ms, followed by a 13 s delay period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "7495d69e-148e-4501-81a9-1475054845f2",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C62",
+      "claim": "In trials with the distractor in Experiment 1, a stimulus was presented centrally for 11 s in the middle of the delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "In the trials with the distractor, a stimulus of the same shape and size as the target grating was presented centrally for 11 s in the middle of the delay period (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "821a72a9-7726-43ec-a984-394bb977ad2b",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C63",
+      "claim": "The orientation and noise distractors reversed contrast at 4 Hz in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation and noise distractors reversed contrast at 4 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "8dc6de0f-9eb6-4210-8aba-786870ce5828",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C64",
+      "claim": "Participants completed 27 runs of the task in Experiment 1, resulting in a total of 108 trials per condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Across three sessions, participants completed 27 runs of the task, resulting in a total of 108 trials per condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "54083f5a-9b50-4f67-b7ed-cbe89c0e8500",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C65",
+      "claim": "In Experiment 2, the distractors alternated between being displayed on and off at 4 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike Experiment 1, where distractors exhibited contrast reversals, the distractors in Experiment 2 alternated between being displayed on and off at 4 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "50597394-e83d-4b24-bcd8-08c32293222f",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C66",
+      "claim": "The data were acquired using a simultaneous multi-slice EPI sequence with a TR of 800 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The data were acquired using a simultaneous multi-slice EPI sequence with a TR of 800 ms, TE of 35 ms, flip angle of 52\u00b0, and isotropic voxels of 2 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MRI acquisition parameters from the reanalyzed dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "12a78d9a-ae02-4ea8-b44a-dd880be4864d",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C67",
+      "claim": "Voxels were selected that reliably responded to both the donut-shaped orientation perception task and the no-distractor VWM task.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the original study, we reduced the size of our ROIs by selecting voxels that reliably responded to both the donut-shaped orientation perception task and the no-distractor VWM task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the voxel selection procedure used in the current analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "08fee9ca-ad84-4d1e-994f-94091f7791d9",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C68",
+      "claim": "Periodic support vector regression (pSVR) was used to predict the target orientation from the multivariate BOLD activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We used pSVR to predict the target orientation from the multivariate BOLD activity (Weber et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the decoding method used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "c21f0ea3-c8f8-4e8e-9d71-0b8d77f9175f",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C69",
+      "claim": "PSVR uses a regression approach to estimate the sine and cosine components of a given orientation independently.",
+      "claim_type": "EXPLICIT",
+      "source": "PSVR uses a regression approach to estimate the sine and cosine components of a given orientation independently and therefore accounts for the circular nature of stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach of pSVR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "dd9fafbc-de14-4d16-a948-6e607667295e",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C70",
+      "claim": "A cluster-based approach was used to test for significance for above-chance decoding clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a cluster-based approach to test for significance for above-chance decoding clusters (Maris and Oostenveld, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical testing approach used in the analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "c9514332-4e21-4383-bd63-2cae8d5b9771",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C71",
+      "claim": "Dynamic coding clusters were defined as elements where the multivariate code at a given time point did not fully generalize to another time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic coding clusters were defined as elements within the temporal cross-decoding matrix, where the multivariate code at a given time point did not fully generalize to another time point; in other words, an off-diagonal element was significantly smaller in accuracy compared to its two corresponding on-diagonal elements (aij < aii and aij < ajj, Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This defines the operational definition of dynamic coding used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "c160901a-d0ef-4e76-a1fa-7c361d2fb82f",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C72",
+      "claim": "Principal component analysis (PCA) was applied to the high-dimensional activity patterns at each time point to identify the two axes that explained maximal variance across orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we followed a previous methodological framework (Li and Curtis, 2023) and applied a principal component analysis (PCA) to the high-dimensional activity patterns at each time point to identify the two axes that explained maximal variance across orientations (see Figure 2 and Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the neural subspace analysis method used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "c8e69325-3efa-466f-856d-5e701e38f19a",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "claim_id": "C73",
+      "claim": "The above-baseline principal angle (aPA) measures the alignment between the 2D subspaces encoding the VWM representations.",
+      "claim_type": "EXPLICIT",
+      "source": "The aPA measures the alignment between the 2D subspaces encoding the VWM representations: the higher the angle, the smaller the alignment between two subspaces and an indication of a changed neural coding space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the aPA metric used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "VWM representations in visual cortex exhibit dynamic coding, characterized by temporal shifts in neural coding spaces. Temporal cross-decoding analysis revealed that VWM codes did not fully generalize across time points, with dynamic coding clusters found in all three experimental conditions (no-distractor, noise distractor, orientation distractor). Neural subspace analysis confirmed these dynamics were due to shifts in coding spaces across time, with significant above-baseline principal angles between early and late delay periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C23, C25-C29, C32-C35 provide converging evidence from multiple complementary analyses (temporal cross-decoding and neural subspace analysis) demonstrating dynamic coding of VWM. Statistical testing with appropriate corrections (cluster permutation tests, FDR correction) supports the findings. Simulation controls (C32) rule out SNR artifacts as an alternative explanation. The consistency across methods and conditions strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "0417b7ef-db22-4fa9-97af-48ee176b57bb",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "VWM targets and feature-matching sensory distractors are encoded in partially separable neural subspaces. In Experiment 1, significant above-baseline principal angles (p=0.0297) indicated non-overlapping coding spaces between target and distractor. In Experiment 2, where distractors impaired behavioral performance, the separation was reduced (p<0.001 but nominally smaller angle), suggesting that subspace overlap relates to behavioral interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C36-C40 demonstrate separable coding spaces using neural subspace analysis with appropriate statistical testing. The comparison between experiments with different behavioral outcomes (C45, C46) provides critical context linking neural separation to behavior. Cross-decoding analyses (C37) corroborate the subspace findings. The convergence of evidence from multiple analyses supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sensory distractors alter VWM coding format in early visual regions. Decoding accuracy was higher in no-distractor trials compared to distractor trials across most ROIs. Decoders trained on no-distractor trials did not generalize well to noise distractor trials in most regions, but training on distractor trials recovered information in V2 and V3AB, indicating a changed VWM format during distraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C41-C44, C51 demonstrate distractor effects on VWM coding through systematic cross-decoding analyses with appropriate statistical testing (cluster permutation tests, pairwise comparisons). The finding that within-condition decoders recover information that cross-condition decoders miss (C43) provides strong evidence for format changes. The pattern is consistent across multiple ROIs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "0b5083e3-b83b-4720-bbd3-67421bc0d6c2",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Experiment 2 showed nominally lower decoding accuracies across all conditions compared to Experiment 1, with some ROIs showing chance-level target information during the delay period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 report straightforward comparisons between experiments. The authors appropriately note these differences and limit further temporal dynamics analysis of Experiment 2 due to reduced signal. This is a methodologically sound decision given the data quality issues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "bad93d92-1112-460b-a329-126f1418ad4c",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that dynamic coding and stable non-overlapping coding spaces work together to multiplex perception and VWM within visual areas, potentially through layer-specific mechanisms where distractors occupy middle layers while VWM occupies superficial and deep layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C57 are primarily speculative interpretations (marked as SPECULATION/INFERENCE in evidence types). While the speculation is grounded in prior literature on cortical layers (C14-C18, C53), the current study lacks layer-specific measurements to directly test these hypotheses. The proposed mechanisms are plausible but require additional empirical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "f44e86e2-d694-45c8-9346-7c062d0c6d75",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript reviews established prior work on VWM, dynamic coding, and neural multiplexing mechanisms, providing context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C21 accurately summarize prior literature with appropriate citations. These background claims establish the scientific context and are supported by the cited references. No misattributions or inaccuracies in the literature review are apparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "8f460ba0-dea2-4faa-a03c-d52c921436b5",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Behavioral differences between experiments relate to distractor effects on VWM recall, with Experiment 1 showing no behavioral deficit from orientation distractors while Experiment 2 showed impaired recall with flickering orientation distractors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 accurately report behavioral findings from the original Rademaker et al. 2019 study and cite relevant prior work on perception-VWM interactions. These behavioral differences provide critical context for interpreting the neural findings, particularly the relationship between subspace separation and behavioral performance (C5, C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study reanalyzed fMRI data from two experiments with appropriate sample sizes (6 and 7 participants) using a delayed-estimation VWM task with various distractor conditions, acquired with high temporal resolution (TR=800ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C58-C66 accurately describe the experimental design and data acquisition parameters. The reanalysis approach is clearly documented. Sample sizes are modest but typical for high-resolution fMRI studies. The experimental design is appropriate for testing the stated hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "e1ca9833-919c-40e1-b699-fe74047cfaab",
+      "content_id": "15e66826-bc25-4dec-8313-0bf3d4e8d012",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The analysis employed rigorous methods including voxel selection based on reliable responses, periodic support vector regression (pSVR) for orientation decoding, cluster-based permutation testing, and principal component analysis for neural subspace identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 describe methodologically sound analytical approaches. The voxel selection procedure (C67) appropriately ensures reliable responses. The pSVR method (C68-C69) is suitable for circular orientation data. Statistical testing with cluster-based permutation tests and FDR correction (C70) controls for multiple comparisons. The neural subspace methods (C72-C73) follow established frameworks with appropriate cross-validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "ca33dd91-f0a5-4c61-b153-daac8e742444",
+      "content_id": "25a26394-c490-4fe6-806a-a98d9456e88e",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors report that VWM representations in visual cortex exhibit dynamic coding, where the neural code does not fully generalize across time points. This dynamic coding was attributed to shifts in neural coding spaces across time, particularly between encoding/early delay and late delay/retrieval periods, and was observed across multiple visual regions in all three experimental conditions (no-distractor, noise distractor, orientation distractor).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The reviewer acknowledges the dynamic coding finding but notes an important limitation: 'Primary evidence for dynamic coding, especially in early visual cortex, appears to be related to the transition between encoding/maintenance and maintenance/recall, but the delay period representations seem overall stable.' The reviewer accepts that 'given the simulation results, the general result that representations may change in their format appears solid,' but emphasizes that 'the contribution of different trial phases remains important for considering the overall result.' This indicates the evidence is solid but the interpretation requires qualification.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "8cb4bfa7-fed6-4853-b135-d2b17793484c",
+      "content_id": "25a26394-c490-4fe6-806a-a98d9456e88e",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors demonstrate that VWM targets and sensory distractors are encoded in partially non-overlapping neural subspaces in early visual cortex. Cross-decoding analyses showed lower accuracies when training on one stimulus type and testing on another, and principal angle analyses revealed significant above-baseline angles between target and distractor subspaces in both experiments, though the separation was nominally smaller in Experiment 2.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer explicitly affirms this finding, stating the analysis 'suggested a rotation of the representational subspace between distracting orientations and remembered orientations, which may help preserve simultaneous representations of both remembered and viewed stimuli.' The reviewer treats this as a key contribution of the reanalysis, noting it 'substantially goes beyond the authors' previous findings by comparing geometry of representational spaces between conditions.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "59c9b275-bdb4-4ef8-88bf-0c276d657088",
+      "content_id": "25a26394-c490-4fe6-806a-a98d9456e88e",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The separation between VWM and distractor coding spaces was smaller in Experiment 2 (where distractors impaired behavioral performance) compared to Experiment 1 (where distractors did not impair performance), suggesting that greater subspace separation is critical for preserving intact working memory representations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer explicitly endorses this finding as 'intriguing,' stating that 'this rotation was a bit smaller for Expt 2, in which the orientation distractor had a greater behavioral impact on the participants' behavioral working memory recall performance, suggesting that more separation between subspaces is critical for preserving intact working memory representations.' This interpretation is treated as a meaningful contribution linking neural geometry to behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "5577d98e-aaf6-472d-b065-52074344ef07",
+      "content_id": "25a26394-c490-4fe6-806a-a98d9456e88e",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Decoding of target orientation was above chance across all conditions and ROIs, though accuracy was highest in no-distractor trials and lower in the presence of distractors. Cross-decoding from no-distractor to distractor trials showed reduced accuracy, but information could be recovered when training and testing within the same distractor condition, particularly in early visual areas V2 and V3AB for noise distractors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer does not raise concerns about these basic decoding results, treating them as solid evidence. The reviewer's main methodological critique concerns the conversion of 'continuous decoding metric (angular error) to % decoding accuracy,' which 'serves to obfuscate the units,' but this is about presentation rather than validity. The reviewer notes the authors 'addressed all my previous concerns' in revision, suggesting acceptance of the decoding findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "ec4d9ce3-9dc2-4ee9-9f4c-5d032f9074a3",
+      "content_id": "25a26394-c490-4fe6-806a-a98d9456e88e",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors found no significant difference in VWM coding format between orientation distractor and no-distractor trials, leading them to suggest that the sensory distractor occupies a distinct coding space while the target's coding space remains consistent across conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer does not challenge this interpretation and treats it as consistent with the overall finding of subspace separation. This interpretation is implicit in the reviewer's summary that 'distracting orientations and remembered orientations' occupy rotated subspaces, which aligns with the authors' claim that the target space remains stable while the distractor occupies a separate space.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "e0c808cc-98d8-4378-9f4b-515a82bbbcf2",
+      "content_id": "25a26394-c490-4fe6-806a-a98d9456e88e",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors speculate that layer-specific coding differences might explain their findings, with sensory distractors potentially residing in middle cortical layers (bottom-up pathway) while VWM representations occupy superficial and deep layers (feedback pathway).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer does not critique this speculative interpretation and treats it as a reasonable mechanistic explanation grounded in prior anatomical and functional evidence. The reviewer's acceptance is implicit in the lack of challenge to this discussion point, and it aligns with the reviewer's positive assessment that the study uses 'innovative and useful approach for understanding how neural representations are transformed to support cognition.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "78b8825b-20d5-46cc-ab5d-10265e8db8e9",
+      "content_id": "25a26394-c490-4fe6-806a-a98d9456e88e",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors employed periodic support vector regression (pSVR) for orientation decoding, cluster-based permutation testing for statistical significance, and principal component analysis with principal angle metrics to quantify neural subspace alignment and dynamic coding across time points.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer initially raised a methodological concern about 'converting a continuous decoding metric (angular error) to % decoding accuracy,' but notes in the revised version that 'the authors have addressed all my previous concerns,' indicating acceptance of the methodological approach. The reviewer also positively evaluates the 'simulations testing whether dynamic codes can be explained purely by changes in data SNR' as 'an important contribution.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c95311a2-ae95-4f72-89fb-ba8df1552ed2",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "34cb4f97-b0ab-4c71-b9fe-c57d18d453f7",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "b0ec4ce4-3d59-4a46-90e5-2521fa887fec",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "a6cd34c2-78d6-4c20-9dc0-c63762d4bd6e",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "07610211-18d3-4edb-8dd2-a4bab2e7e973",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "db3d0a86-214e-43f6-9eaf-bb91eb78b78d",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "eb569a2c-6d40-41a0-9b8c-9f347477b164",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "350e19c8-a5f6-4041-bf89-c24c651709af",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "f692316d-49f6-4e35-908f-708b86072b7e",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "608af722-268d-4cc8-b2e0-52028f87c70e",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "702aaee1-c307-4ad4-a340-1280288e3062",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "878e4d88-4fee-4731-afce-3b3bfb83e6fc",
+      "result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7"
+    },
+    {
+      "claim_id": "523876e2-b510-431d-a641-80c9e4774e03",
+      "result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb"
+    },
+    {
+      "claim_id": "301c816f-debd-427a-a43e-77d96cb92d87",
+      "result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb"
+    },
+    {
+      "claim_id": "61bc61a9-94d2-4e45-a3cc-4b89fe57a9c8",
+      "result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb"
+    },
+    {
+      "claim_id": "d30fa45c-1726-4fa5-9b53-1b6929d7ebce",
+      "result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb"
+    },
+    {
+      "claim_id": "3c61e382-8a43-4638-afe7-7a396bb7e63c",
+      "result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb"
+    },
+    {
+      "claim_id": "57c1f433-9ce3-494c-80af-9c92e802f906",
+      "result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb"
+    },
+    {
+      "claim_id": "5130563e-990e-4895-8892-9b98280635fe",
+      "result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb"
+    },
+    {
+      "claim_id": "fe03a46f-2b32-4586-8732-687b966d479a",
+      "result_id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7"
+    },
+    {
+      "claim_id": "b08a7291-bf5b-44b3-8cb9-41db77b5337e",
+      "result_id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7"
+    },
+    {
+      "claim_id": "d4f89d5f-5d7e-4779-8107-c196964c5758",
+      "result_id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7"
+    },
+    {
+      "claim_id": "884f0ea1-9158-4fa8-8754-8c5811e98287",
+      "result_id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7"
+    },
+    {
+      "claim_id": "5131a870-342a-4304-93d5-7e739c616cbb",
+      "result_id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7"
+    },
+    {
+      "claim_id": "98f17f89-56f1-46e0-af9f-5070cac2b542",
+      "result_id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7"
+    },
+    {
+      "claim_id": "e9bee22f-5d51-455e-99a1-573df38ef51e",
+      "result_id": "0b5083e3-b83b-4720-bbd3-67421bc0d6c2"
+    },
+    {
+      "claim_id": "8c2243fd-9cbe-4fe1-9df1-fd7c44461f3c",
+      "result_id": "0b5083e3-b83b-4720-bbd3-67421bc0d6c2"
+    },
+    {
+      "claim_id": "6d06738b-5534-472e-b38e-aee50142c501",
+      "result_id": "bad93d92-1112-460b-a329-126f1418ad4c"
+    },
+    {
+      "claim_id": "0fed4153-0c78-49a8-8470-510837792de1",
+      "result_id": "bad93d92-1112-460b-a329-126f1418ad4c"
+    },
+    {
+      "claim_id": "564c1e2f-ea85-472a-8ec1-61480370379f",
+      "result_id": "bad93d92-1112-460b-a329-126f1418ad4c"
+    },
+    {
+      "claim_id": "913fd950-301a-4965-bc5d-c7af5987c001",
+      "result_id": "bad93d92-1112-460b-a329-126f1418ad4c"
+    },
+    {
+      "claim_id": "99e3043c-3a91-48fc-b156-a6e9dbad9975",
+      "result_id": "bad93d92-1112-460b-a329-126f1418ad4c"
+    },
+    {
+      "claim_id": "ac8c44cf-0f67-4a8a-8263-6f1a49036e69",
+      "result_id": "bad93d92-1112-460b-a329-126f1418ad4c"
+    },
+    {
+      "claim_id": "a2fd07e9-4325-43e4-9420-ee7901cd098c",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "8f1416f5-7b27-4553-b778-0f43a1437675",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "ae394520-1e88-4dbb-bf66-b7fe51e5b30f",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "d2926f0d-fea3-4d9e-8911-4be87a881658",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "3c5c05b3-1bf2-4d41-85be-258aabd4b64f",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "54b7a800-d3e2-43f7-bc64-6c09a3900806",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "5a6d0c79-bbad-4714-827d-c8497bdb7695",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "33877498-0360-4eba-96d3-032fab25222c",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "a60e4df3-29ae-4cb8-ae74-4ab34f7cb812",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "ee64b7ab-d21e-4e01-b42f-1ddfb6127d40",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "c7fa49f3-be87-4ba3-bef2-f19f8b2037c6",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "20924750-923c-4759-8904-14ed6e30e54d",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "db023f8c-9587-451e-a168-1d022d2aa0bf",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "2af85198-5c75-4fb8-837e-f58834359f67",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "c7606225-c994-4660-bdd2-9486f67d7607",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "ec5ed23b-9fe2-4490-9295-1319e248c149",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "cee7faf4-a00b-407a-8496-d3aadb56a775",
+      "result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75"
+    },
+    {
+      "claim_id": "2801b34f-1836-4b2a-b01d-646b2db3fd2d",
+      "result_id": "8f460ba0-dea2-4faa-a03c-d52c921436b5"
+    },
+    {
+      "claim_id": "755946f7-2f72-49bc-b049-dd16bd0307e2",
+      "result_id": "8f460ba0-dea2-4faa-a03c-d52c921436b5"
+    },
+    {
+      "claim_id": "e65eb138-19d4-4dcb-9301-82059c371e52",
+      "result_id": "8f460ba0-dea2-4faa-a03c-d52c921436b5"
+    },
+    {
+      "claim_id": "acbb8b05-c59d-473b-91b6-32912e61fbcd",
+      "result_id": "8f460ba0-dea2-4faa-a03c-d52c921436b5"
+    },
+    {
+      "claim_id": "165e7136-3cc6-4460-866c-d33b9e76d26f",
+      "result_id": "8f460ba0-dea2-4faa-a03c-d52c921436b5"
+    },
+    {
+      "claim_id": "ad62d634-8cfb-40a2-bb1d-41f62af4f689",
+      "result_id": "8f460ba0-dea2-4faa-a03c-d52c921436b5"
+    },
+    {
+      "claim_id": "a0157bf9-41d2-4995-a517-6c030917a9c4",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "61fb9366-433d-4dfa-867b-bb5a668c5a52",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "cae7be27-9242-4d68-8923-080d97a36a68",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "77d58bac-1782-4beb-82c7-43b1a807fdad",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "b993ec11-10c3-4bdb-a6fc-abceb36abfa9",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "7495d69e-148e-4501-81a9-1475054845f2",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "821a72a9-7726-43ec-a984-394bb977ad2b",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "8dc6de0f-9eb6-4210-8aba-786870ce5828",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "54083f5a-9b50-4f67-b7ed-cbe89c0e8500",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "50597394-e83d-4b24-bcd8-08c32293222f",
+      "result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32"
+    },
+    {
+      "claim_id": "12a78d9a-ae02-4ea8-b44a-dd880be4864d",
+      "result_id": "e1ca9833-919c-40e1-b699-fe74047cfaab"
+    },
+    {
+      "claim_id": "08fee9ca-ad84-4d1e-994f-94091f7791d9",
+      "result_id": "e1ca9833-919c-40e1-b699-fe74047cfaab"
+    },
+    {
+      "claim_id": "c21f0ea3-c8f8-4e8e-9d71-0b8d77f9175f",
+      "result_id": "e1ca9833-919c-40e1-b699-fe74047cfaab"
+    },
+    {
+      "claim_id": "dd9fafbc-de14-4d16-a948-6e607667295e",
+      "result_id": "e1ca9833-919c-40e1-b699-fe74047cfaab"
+    },
+    {
+      "claim_id": "c9514332-4e21-4383-bd63-2cae8d5b9771",
+      "result_id": "e1ca9833-919c-40e1-b699-fe74047cfaab"
+    },
+    {
+      "claim_id": "c160901a-d0ef-4e76-a1fa-7c361d2fb82f",
+      "result_id": "e1ca9833-919c-40e1-b699-fe74047cfaab"
+    },
+    {
+      "claim_id": "c8e69325-3efa-466f-856d-5e701e38f19a",
+      "result_id": "e1ca9833-919c-40e1-b699-fe74047cfaab"
+    },
+    {
+      "claim_id": "c95311a2-ae95-4f72-89fb-ba8df1552ed2",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "34cb4f97-b0ab-4c71-b9fe-c57d18d453f7",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "a6cd34c2-78d6-4c20-9dc0-c63762d4bd6e",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "07610211-18d3-4edb-8dd2-a4bab2e7e973",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "db3d0a86-214e-43f6-9eaf-bb91eb78b78d",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "eb569a2c-6d40-41a0-9b8c-9f347477b164",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "350e19c8-a5f6-4041-bf89-c24c651709af",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "f692316d-49f6-4e35-908f-708b86072b7e",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "608af722-268d-4cc8-b2e0-52028f87c70e",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "702aaee1-c307-4ad4-a340-1280288e3062",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "878e4d88-4fee-4731-afce-3b3bfb83e6fc",
+      "result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444"
+    },
+    {
+      "claim_id": "523876e2-b510-431d-a641-80c9e4774e03",
+      "result_id": "8cb4bfa7-fed6-4853-b135-d2b17793484c"
+    },
+    {
+      "claim_id": "61bc61a9-94d2-4e45-a3cc-4b89fe57a9c8",
+      "result_id": "8cb4bfa7-fed6-4853-b135-d2b17793484c"
+    },
+    {
+      "claim_id": "d30fa45c-1726-4fa5-9b53-1b6929d7ebce",
+      "result_id": "8cb4bfa7-fed6-4853-b135-d2b17793484c"
+    },
+    {
+      "claim_id": "3c61e382-8a43-4638-afe7-7a396bb7e63c",
+      "result_id": "8cb4bfa7-fed6-4853-b135-d2b17793484c"
+    },
+    {
+      "claim_id": "57c1f433-9ce3-494c-80af-9c92e802f906",
+      "result_id": "8cb4bfa7-fed6-4853-b135-d2b17793484c"
+    },
+    {
+      "claim_id": "5130563e-990e-4895-8892-9b98280635fe",
+      "result_id": "8cb4bfa7-fed6-4853-b135-d2b17793484c"
+    },
+    {
+      "claim_id": "301c816f-debd-427a-a43e-77d96cb92d87",
+      "result_id": "59c9b275-bdb4-4ef8-88bf-0c276d657088"
+    },
+    {
+      "claim_id": "5130563e-990e-4895-8892-9b98280635fe",
+      "result_id": "59c9b275-bdb4-4ef8-88bf-0c276d657088"
+    },
+    {
+      "claim_id": "2801b34f-1836-4b2a-b01d-646b2db3fd2d",
+      "result_id": "59c9b275-bdb4-4ef8-88bf-0c276d657088"
+    },
+    {
+      "claim_id": "755946f7-2f72-49bc-b049-dd16bd0307e2",
+      "result_id": "59c9b275-bdb4-4ef8-88bf-0c276d657088"
+    },
+    {
+      "claim_id": "b0ec4ce4-3d59-4a46-90e5-2521fa887fec",
+      "result_id": "5577d98e-aaf6-472d-b065-52074344ef07"
+    },
+    {
+      "claim_id": "fe03a46f-2b32-4586-8732-687b966d479a",
+      "result_id": "5577d98e-aaf6-472d-b065-52074344ef07"
+    },
+    {
+      "claim_id": "e9bee22f-5d51-455e-99a1-573df38ef51e",
+      "result_id": "5577d98e-aaf6-472d-b065-52074344ef07"
+    },
+    {
+      "claim_id": "8c2243fd-9cbe-4fe1-9df1-fd7c44461f3c",
+      "result_id": "5577d98e-aaf6-472d-b065-52074344ef07"
+    },
+    {
+      "claim_id": "b08a7291-bf5b-44b3-8cb9-41db77b5337e",
+      "result_id": "5577d98e-aaf6-472d-b065-52074344ef07"
+    },
+    {
+      "claim_id": "d4f89d5f-5d7e-4779-8107-c196964c5758",
+      "result_id": "5577d98e-aaf6-472d-b065-52074344ef07"
+    },
+    {
+      "claim_id": "884f0ea1-9158-4fa8-8754-8c5811e98287",
+      "result_id": "5577d98e-aaf6-472d-b065-52074344ef07"
+    },
+    {
+      "claim_id": "5131a870-342a-4304-93d5-7e739c616cbb",
+      "result_id": "5577d98e-aaf6-472d-b065-52074344ef07"
+    },
+    {
+      "claim_id": "98f17f89-56f1-46e0-af9f-5070cac2b542",
+      "result_id": "ec4d9ce3-9dc2-4ee9-9f4c-5d032f9074a3"
+    },
+    {
+      "claim_id": "6d06738b-5534-472e-b38e-aee50142c501",
+      "result_id": "ec4d9ce3-9dc2-4ee9-9f4c-5d032f9074a3"
+    },
+    {
+      "claim_id": "0fed4153-0c78-49a8-8470-510837792de1",
+      "result_id": "e0c808cc-98d8-4378-9f4b-515a82bbbcf2"
+    },
+    {
+      "claim_id": "564c1e2f-ea85-472a-8ec1-61480370379f",
+      "result_id": "e0c808cc-98d8-4378-9f4b-515a82bbbcf2"
+    },
+    {
+      "claim_id": "913fd950-301a-4965-bc5d-c7af5987c001",
+      "result_id": "e0c808cc-98d8-4378-9f4b-515a82bbbcf2"
+    },
+    {
+      "claim_id": "08fee9ca-ad84-4d1e-994f-94091f7791d9",
+      "result_id": "78b8825b-20d5-46cc-ab5d-10265e8db8e9"
+    },
+    {
+      "claim_id": "c21f0ea3-c8f8-4e8e-9d71-0b8d77f9175f",
+      "result_id": "78b8825b-20d5-46cc-ab5d-10265e8db8e9"
+    },
+    {
+      "claim_id": "dd9fafbc-de14-4d16-a948-6e607667295e",
+      "result_id": "78b8825b-20d5-46cc-ab5d-10265e8db8e9"
+    },
+    {
+      "claim_id": "c9514332-4e21-4383-bd63-2cae8d5b9771",
+      "result_id": "78b8825b-20d5-46cc-ab5d-10265e8db8e9"
+    },
+    {
+      "claim_id": "c160901a-d0ef-4e76-a1fa-7c361d2fb82f",
+      "result_id": "78b8825b-20d5-46cc-ab5d-10265e8db8e9"
+    },
+    {
+      "claim_id": "c8e69325-3efa-466f-856d-5e701e38f19a",
+      "result_id": "78b8825b-20d5-46cc-ab5d-10265e8db8e9"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "95ebf092-3109-4dcd-86c0-f24bf391a89e",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "c84197e1-e5c7-4c64-b8c5-63286e26a3a7",
+      "peer_result_id": "ca33dd91-f0a5-4c61-b153-daac8e742444",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate dynamic coding claims (C2, C3, C25-C29, C32-C35) but reach different conclusions. OpenEval finds the evidence SUPPORTED with converging evidence from multiple analyses and appropriate statistical controls. Peer reviewer rates UNCERTAIN, acknowledging the finding is 'solid' but emphasizing that dynamic coding primarily occurs at trial phase transitions rather than during stable delay periods, requiring qualification of the interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "5125df2c-3bee-4106-9417-001f50981da4",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb",
+      "peer_result_id": "8cb4bfa7-fed6-4853-b135-d2b17793484c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on separable coding spaces (C4, C36-C40). Both rate SUPPORTED. OpenEval emphasizes convergence across multiple analyses with appropriate statistical testing. Peer reviewer explicitly affirms the subspace rotation finding as a key contribution that 'substantially goes beyond' previous work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "5bae509c-38ed-46ae-9dbf-78584e34ad7b",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "e1ca9833-919c-40e1-b699-fe74047cfaab",
+      "peer_result_id": "78b8825b-20d5-46cc-ab5d-10265e8db8e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on methodological approaches (C68-C73). Both rate SUPPORTED. OpenEval describes methods as 'methodologically sound' with appropriate statistical controls. Peer reviewer initially raised concerns about metric conversion but notes authors 'addressed all my previous concerns' and praises simulation controls as 'an important contribution.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "ce55a02c-1868-4c49-96be-749299d85723",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7",
+      "peer_result_id": "5577d98e-aaf6-472d-b065-52074344ef07",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate distractor effects on VWM coding (C24, C41-C44) and rate SUPPORTED. OpenEval emphasizes systematic cross-decoding analyses with appropriate statistics. Peer reviewer accepts the decoding findings as solid evidence, with concerns limited to presentation choices rather than validity. Peer R4 also covers experiment comparison claims (C23, C30, C31) that OpenEval addresses separately in R4.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "fdde024a-5517-48ea-a885-f88edb2b8b9a",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "8f460ba0-dea2-4faa-a03c-d52c921436b5",
+      "peer_result_id": "59c9b275-bdb4-4ef8-88bf-0c276d657088",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address behavioral findings (C45, C46) and rate SUPPORTED. OpenEval notes these provide critical context for interpreting neural findings. Peer reviewer finds the link between subspace separation and behavioral performance 'intriguing' and treats it as a meaningful contribution. Peer R3 also evaluates neural-behavioral links (C5, C40) that OpenEval addresses in R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "51430fcf-c7fb-4582-a8ed-39fc48489250",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "0417b7ef-db22-4fa9-97af-48ee176b57bb",
+      "peer_result_id": "59c9b275-bdb4-4ef8-88bf-0c276d657088",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on neural-behavioral relationship (C5, C40). Both rate SUPPORTED. OpenEval includes these claims in broader evaluation of separable coding spaces. Peer reviewer specifically highlights the finding that smaller rotation in Experiment 2 correlates with greater behavioral impact, treating this as a key insight linking neural geometry to behavior.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "a85a1054-b79a-4f3a-94fa-0772f17bbf7a",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "bad93d92-1112-460b-a329-126f1418ad4c",
+      "peer_result_id": "e0c808cc-98d8-4378-9f4b-515a82bbbcf2",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate layer-specific mechanistic speculation (C53-C55). OpenEval rates UNCERTAIN, noting speculation is plausible but lacks direct layer-specific measurements for validation. Peer reviewer rates SUPPORTED, treating the interpretation as reasonable and grounded in prior evidence, with no explicit challenge to the speculative nature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "09319809-393a-4e7a-a367-2ffe3cd905ac",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "bad93d92-1112-460b-a329-126f1418ad4c",
+      "peer_result_id": "ec4d9ce3-9dc2-4ee9-9f4c-5d032f9074a3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap on speculative claims (C52). OpenEval rates C52-C57 as UNCERTAIN due to lack of direct empirical validation of layer-specific mechanisms. Peer reviewer rates C51-C52 as SUPPORTED, treating the interpretation of stable target space as consistent with subspace separation findings without challenging the speculative aspects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "257537c3-dcb4-48d2-bdc4-9cdbe9fa5a32",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "5cca1452-f570-4833-ae9d-7ee71b6f4df7",
+      "peer_result_id": "ec4d9ce3-9dc2-4ee9-9f4c-5d032f9074a3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C51 (stable target space interpretation). OpenEval includes C51 in SUPPORTED evaluation of distractor effects. Peer reviewer also rates SUPPORTED, treating it as consistent with overall subspace separation findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "b2a07a07-1cd2-4cbf-8277-6272e5cc7564",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "0b5083e3-b83b-4720-bbd3-67421bc0d6c2",
+      "peer_result_id": "5577d98e-aaf6-472d-b065-52074344ef07",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate experiment comparison claims (C30, C31) and rate SUPPORTED. OpenEval notes the methodologically sound decision to limit temporal analysis due to data quality. Peer reviewer does not raise concerns about these comparisons, treating them as solid evidence within the broader evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "a8af8198-a7f9-4dcb-a1f4-d1a4e6343fcc",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "f44e86e2-d694-45c8-9346-7c062d0c6d75",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature review claims (C1, C6-C21) as SUPPORTED, finding accurate summaries with appropriate citations and no misattributions. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    },
+    {
+      "id": "eb9a2067-ba14-4dbd-9927-7ed210254320",
+      "submission_id": "40169b20-5033-4cd4-b1dd-0e018cca3ae1",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "03f4a735-bee1-4ea4-848e-76b6a9ca8f32",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates experimental design and data acquisition claims (C22, C58-C66) as SUPPORTED, noting appropriate design for testing hypotheses and typical sample sizes for high-resolution fMRI. No corresponding peer review evaluation found for these methodological description claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:17:08.962633Z"
+    }
+  ]
+}

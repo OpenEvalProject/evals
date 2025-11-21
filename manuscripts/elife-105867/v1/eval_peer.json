@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors used scRNA-seq and scATAC-seq to identify and characterize rV2 cell populations along pseudotemporal axes representing GABAergic and glutamatergic differentiation lineages. Selector TF genes (Tal1, Gata2, Gata3, Vsx1, Vsx2, Lhx4) were strongly expressed at the lineage bifurcation point, and open chromatin features reflected gene expression patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praised the 'high quality of the datasets' and noted that the authors 'use an extensive set of computational approaches to identify temporal patterns of chromatin accessibility, TF motif binding activities (footprints), gene expression.' The integration of scRNA-seq and scATAC-seq data to place cells in pseudotemporal order is accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors identified candidate cis-regulatory elements (cCREs) at the Tal1, Gata2, Gata3, and Vsx2 loci through scATAC-seq feature analysis, showing temporal patterns of accessibility that correlate with gene expression. Many identified cCREs overlap with previously characterized enhancers, and distinct regulatory elements may be responsible for activation versus maintenance of selector TF expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers stated that 'state of the art computational methods were convincingly implemented to identify candidate regulatory elements' and that the work provides 'predictions about upstream regulators, candidate accessible CREs, and DNA binding motifs.' The identification of cCREs and their temporal dynamics is accepted as a core contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The identified chromatin features show significant sequence conservation compared to introns and exons, consistent with a regulatory role. Previously characterized enhancers of Tal1, Gata2, Gata3, and Vsx2 largely overlap with the identified scATAC-seq features (63.6-100%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted the 'high quality of the datasets' and the convincing implementation of computational methods. The conservation analysis and overlap with known enhancers support the validity of the identified regulatory elements, and no concerns were raised about these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Footprinting analysis identified common and distinct TF binding patterns at selector gene cCREs, including binding sites for Kr-like TFs, bHLH TFs, E2A, Ebf, E2F, NF-1, Pbx, Sox, and various HD TFs. Common regulators of GABAergic selectors include 21 TFs in CO1-2 and 22 TFs in GA1-2, with TFs associated with cell cycle exit predominant in common precursors and autoregulation network TFs active later. Distinct regulators include Lhx1 and En2 for GABAergic and Lhx4, Shox2, and Nhlh2 for glutamatergic lineages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged that the authors 'use an extensive set of computational approaches to identify temporal patterns of chromatin accessibility, TF motif binding activities (footprints)' and that 'their conclusions and predictions are largely well supported.' The footprinting analysis is treated as a valid method for predicting upstream regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CUT&Tag experiments validated TF binding predictions from footprinting analysis. Tal1, Gata2, and Gata3 binding at Tal1 cCREs was confirmed, as was partial confirmation of Insm1 and Ebf1 binding. Overall comparison showed strong bias towards the same features between footprinting and CUT&Tag (5.3-25.9% overlap), with footprints tending to localize toward the center of CUT&Tag peaks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted the use of 'a combination of single-cell and bulk sequencing data, prediction and validation' as a strength. The CUT&Tag data is treated as validation of the footprinting predictions, and no concerns were raised about the concordance between methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In situ hybridization validated the expression of candidate upstream regulators (Insm1, Sox4, E2f1, Ebf1, Tead2) in the ventricular zone of ventrolateral r1 at E12.5, overlapping with Tal1 expression. Quantitative analysis showed that Insm1, E2f1, and Tead2 expression peaks slightly closer to the ventricular surface than Tal1, while Ebf1 follows Tal1 closely but is expressed earlier, consistent with a role in initiating Tal1 expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer specifically noted that 'Insm1, Sox4, E2f1, Ebf1 and Tead2 TFs might be the strongest upstream candidates for future testing of Tal1 activation given the extensive analyses of their spatiotemporal expression patterns relative to Tal1, presented in Fig 4.' This indicates acceptance of the in situ validation and its interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ChromVAR analysis showed that accessible genomic regions in rV2 cells are enriched in Sox, NeuroD1, and Nfia/b/x TF-binding motifs, and that Nhlh1/2, NeuroD2, Bhlhe22, Ebf1-3, Pou3f4, and Lhx5 motifs are accessible in common precursors preceding Gata2/3 and Tal1 motif accessibility. For Tal1, Gata2, and Gata3, accessibility at most TFBSs closely follows TF RNA expression, with the TAL1.H12CORE.0.P.B motif showing the most GABAergic-specific activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted the 'extensive set of computational approaches' and that 'many of the TFs with footprints in selector gene cCREs had a genome-wide activity pattern consistent with a regulatory function.' The ChromVAR analysis is treated as supporting evidence for the regulatory network predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors identified 3948 Tal1, 780 Gata2, and 721 Gata3 target genes using integrated evidence from footprints, TFBS conservation, and CUT&Tag. Tal1 targets are expressed in both GABAergic and glutamatergic neurons, while Gata2 and Gata3 targets are overexpressed in GABAergic precursors. Target genes with proximal selector TF-bound features (0-5 kb) show the most cell-type-specific patterns. Common targets of all three GABAergic selectors include autoregulatory and GATA co-factor network genes (Gata2, Tal1, Zfpm1, Lmo1), while GABAergic phenotype genes (Gad1, Gad2, Slc32a1) are regulated by Gata2 and Gata3.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers stated that 'the authors have achieved their aim of making predictions about upstream and downstream selector TF regulatory networks' and that 'their conclusions and predictions are largely well supported.' The target gene analysis is treated as a valid prediction of downstream effectors, though reviewers note it has not been experimentally tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C103"
+    ],
+    "result": "The authors propose that Nkx6-1 directly regulates the spatial expression pattern of selector TFs but is not sufficient for their expression, which requires cell cycle exit. TFs E2f1, Ebf1, and Insm1 temporally control selector TFs and connect their expression to cell cycle exit, suggesting that mechanisms guiding neurogenesis also contribute to selector TF activation and neuronal phenotype adoption.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted that 'their conclusions and predictions are largely well supported' and specifically highlighted the analysis of upstream regulators including E2f1, Ebf1, and Insm1. The mechanistic interpretation linking cell cycle exit to selector TF activation is accepted as a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose that autoregulation is a prominent feature of Tal1, Gata2, and Gata3 control in the developing brain, with these TFs working together (potentially as a physical complex involving Lmo1) to maintain their expression through positive feedback. They also propose cross-regulation between GABAergic and glutamatergic selector genes, with negative feedback ensuring robust selector TF expression patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers stated that the authors 'predict auto- and cross-regulatory interactions for maintenance of selector expression' and that 'their conclusions and predictions are largely well supported.' The autoregulatory and cross-regulatory mechanisms are accepted as reasonable predictions based on the binding data and prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors conclude that combinatorial function of Tal1, Gata2, and Gata3 is important for adopting GABAergic identity, with differences in target gene specificity: Tal1 activity is less biased toward GABAergic genes than Gata2 and Gata3. The selector TFs regulate not only subtype-specific genes but also genes expressed more broadly, suggesting their function extends beyond neurotransmitter phenotype to overall cellular function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted that 'the work clearly illustrates the daunting gene regulatory complexity likely at play in controlling rV2 transmitter fate' and that the authors' conclusions about combinatorial regulation are 'largely well supported.' The interpretation of target gene data is accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors' primary conclusions are that Tal1, Gata2, and Gata3 genes are activated by highly similar mechanisms connected to regional patterning, cell cycle exit, and neuronal differentiation; that after activation they are linked by auto- and cross-regulation as well as interactions with glutamatergic TFs; and that GABAergic neuron genes are under combinatorial control of these three TFs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers stated that 'the authors have achieved their aim of making predictions about upstream and downstream selector TF regulatory networks; their conclusions and predictions are largely well supported.' These core conclusions are treated as the main contributions of the study and are accepted by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The authors speculate that variants in genomic regions important for gene regulation during brainstem neuron differentiation could lead to altered brain development and predisposition to neuropsychiatric disorders.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the work 'may also contribute to understanding of neuropsychiatric traits and disorders,' this speculative claim about human disease relevance is not directly evaluated. One reviewer noted 'the study does not go as far as to experimentally test the transcription factor network,' indicating the work remains at the prediction stage.",
+    "result_type": "MINOR"
+  }
+]

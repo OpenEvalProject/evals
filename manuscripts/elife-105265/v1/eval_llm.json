@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C47",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The SGA dataset contains over 20 million single- and double-mutant budding yeast strains with measured colony growth rates. Fitness was defined as growth rate normalized to wild-type, with mutations from gene deletions, temperature-sensitive alleles, and hypomorphic mutants grown on rich media where mutations generally decrease fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C47, C50-C52 provide a comprehensive description of the SGA dataset that is well-supported by citations and direct statements. The dataset characteristics are clearly documented and the experimental conditions are appropriately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "Three neutrality functions were defined to predict double-mutant fitness: Product (fitness is product of single-mutant fitnesses), Additive (differences sum), and Minimum (fitness equals least fit single mutant). The Product neutrality function is commonly assumed for yeast proliferation and should predict most double-mutant fitnesses since randomly selected genes are unlikely to interact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C41-C49 establish the theoretical framework for neutrality functions with clear definitions supported by citations. The reasoning about gene specificity (C44-C46) provides logical justification for why the Product function should work, though this is more conceptual than empirical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C55",
+      "C56"
+    ],
+    "result": "Analysis of the SGA dataset shows the Product neutrality function better predicts double-mutant fitnesses than Additive or Minimum functions across a broad range of fitness defects. At 72% maximum single-mutant fitness, median residuals were -0.8% (Product), -16.8% (Minimum), and 9.8% (Additive), with interquartile ranges of 8-10%. This holds for essential and nonessential genes across different temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14, C55-C56 present quantitative empirical results with specific numerical values and are supported by data analysis shown in figures. The consistency across different experimental conditions (C12) strengthens the finding. However, the substantial interquartile range (C11) indicates significant variation remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C57",
+      "C58"
+    ],
+    "result": "For gene pairs in different GO biological processes, the Product neutrality function accurately describes typical interactions while Additive and Minimum functions show large systematic residuals. Gene pairs within the same biological process show significantly larger residuals and more deviations from the Product function, consistent with the expectation that mutations in the same process are more likely to interact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C57-C58 demonstrate that the Product function works best for inter-process gene pairs, which is the appropriate use case for a neutrality function. The observation that intra-process pairs deviate more (C17-C18) is logically consistent and supported by appendix figures, validating the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Colony growth follows a biphasic pattern with exponential then linear phases. The linear colony expansion rate is proportional to the square root of exponential growth rate, arising because growth is dominated by cells at the colony border in rich nutrients. This mathematical relationship means fitnesses based on colony expansion rates are equivalent to single-cell exponential growth rates from the Product neutrality function perspective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 provide the theoretical bridge between colony-based measurements and single-cell growth models. C19 is supported by citation, C20-C22 explain the mechanism, and C23 derives the mathematical equivalence. The logic is sound and the mathematical derivation shown in the text is correct, validating the use of growth models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C53",
+      "C54"
+    ],
+    "result": "The Scott-Hwa bacterial growth model, which defines growth from metabolic and translational sectors in a linear pathway with growth-optimizing feedback, shows the Product neutrality function fits better than Additive or Minimum functions. This arises from feedback regulation ensuring equal flux through all sectors. Without this feedback, the model would follow a Minimum neutrality function. The model's observations are generic and also seen in S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30, C53-C54 present computational modeling results that mechanistically explain the Product function. The model structure is clearly described (C24-C25), the computational results support the Product function (C27), and the mechanistic explanation via feedback (C28-C29) is logical. The counterfactual analysis (C30) strengthens the causal interpretation. Citation support for applicability to yeast (C53) validates the model choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C59",
+      "C60"
+    ],
+    "result": "The Product neutrality function does not accurately predict fitnesses for beneficial mutations in the Scott-Hwa model. With beneficial mutations, growth-optimizing feedback causes proteomic resources to be reallocated to accelerate other processes, leading to compound effects where double-mutant fitnesses exceed predictions from all three neutrality functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C59-C60 identify an important limitation of the Product function for beneficial mutations, supported by appendix figure analysis (C31). The mechanistic explanation (C59-C60) is consistent with the model's feedback mechanism. This is appropriately noted as a boundary condition for the model's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The Wei\u00dfe model, which incorporates nutrient intake, transcription, competitive mRNA-ribosome binding, and translation with four protein types, shows the Product neutrality function is generally better than Additive or Minimal functions. Parameter pairs involving translation follow the Scott-Hwa model closely, while pairs involving transport, metabolism, and transcription follow the Product function even more closely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 present analysis of a more complex growth model. The model structure is clearly described (C32-C33), computational results support the Product function (C34), and the differential behavior of parameter pairs (C35-C36) is supported by figures. This demonstrates the Product function emerges from multiple mechanistic frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C39"
+    ],
+    "result": "In the Wei\u00dfe model, deviations from the Product neutrality function are governed by the inverse of the Michaelis-Menten constant for transcription rate as a function of cellular energy. These deviations can be driven by nonlinear effects emerging from Michaelis-Menten kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C39 identify the mechanistic source of deviations from the Product function through analytical approximation. The identification of the specific parameter \u03b3 (C37) and the general principle about nonlinear kinetics (C39) are supported by data and inference. This provides mechanistic insight into when the Product function is expected to deviate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Previous work by Mani et al. (2008) showed the Product neutrality function better predicts double-mutant fitnesses than Additive and Minimum neutrality functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 accurately represents prior work through citation. This establishes the historical context for the current study and shows the authors are building on established findings with newer, more extensive data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Decades of cell biological and structural biological analysis have identified specific functions for many genes and their associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is a general knowledge statement about the state of the field that is uncontroversial and well-established. It provides context for why most gene pairs should not interact.",
+    "result_type": "MINOR"
+  }
+]

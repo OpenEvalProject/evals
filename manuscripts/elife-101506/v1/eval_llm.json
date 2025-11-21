@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Historical context establishes that neuronal spiking encodes information about stimuli and that neurons organize into anatomically distinct regions with functional specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide well-established historical context supported by appropriate citations to foundational neuroscience literature (Adrian and Bronk 1928, McCulloch and Pitts 1943, Lettvin et al. 1959, Cajal, Brodmann, Penfield). These are background claims that accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The null hypothesis that anatomy has minimal impact on neuronal activity is supported by computational models showing that complex information processing can occur without strict anatomical organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 establish the null hypothesis through appropriate citations and logical inference. The claims accurately represent established knowledge about artificial neural networks and computational neuroscience (C7-C10 supported by citations; C6, C9 are reasonable inferences).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "There are conceptual reasons why neurons might embed anatomical information in their spiking, including genetic identity transmission, neurodevelopmental requirements, multimodal integration, and stereotyped brain anatomy within species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 provide theoretical motivation for the study through appropriate citations (C11-C13) and established knowledge (C14). These claims logically justify investigating whether anatomical information is embedded in spike trains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work demonstrates that neural activity varies by region at the population level, with gradual changes across anatomical landscapes influenced by synaptic weights, autocorrelation timescales, and connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 accurately summarize prior literature with appropriate citations (Siegle et al. 2021, Elston 2007, Chaudhuri et al. 2015, Murray et al. 2014, Maunsell and van Essen 1983, G\u0103m\u0103nu\u0163 et al. 2018, Harris et al. 2019). These establish the state of knowledge regarding population-level anatomical differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study uses the Allen Institute Visual Coding dataset comprising high-density Neuropixels recordings from head-fixed mice presented with visual stimuli, with quality control criteria applied to select well-isolated units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe the dataset and methods with appropriate detail. The quality control criteria (ISI violations < 0.5, amplitude cutoff < 0.1, presence ratio > 0.9, firing rate > 0.1 Hz) are standard and clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Unsupervised dimensionality reduction methods (PCA) show low adjusted rand index values for anatomical clustering, while supervised methods (LDA) show greater alignment, suggesting potential for supervised approaches to extract anatomical information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by the ARI values shown in Figure 1C and Figure 1\u2014figure supplement 1. The low ARI values across 24 combinations of tasks and methods (C30) and the improved performance with LDA (C31) are clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Logistic regression models using 14 standard spiking metrics achieve above-chance but modest classification of anatomical location, with performance varying by task and metric ordering being task-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are well-supported by Figure 2 data showing balanced accuracy values with error bars. The task-dependent ordering (C34-C35) is demonstrated with statistical analysis (Spearman correlations with p-values). The combined metrics improve performance (C36) as shown in confusion matrices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Multi-layer perceptrons (MLPs) trained on ISI distributions and concatenated PSTHs outperform logistic regression, while averaged PSTHs show reduced performance, suggesting anatomical information requires precise spike timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by Figure 3A showing balanced accuracy comparisons across methods. The inference that precise spike timing is necessary (C41) is reasonable given the performance differences between concatenated and averaged PSTHs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "MLP sensitivity increases monotonically with input data duration up to 1800 seconds, suggesting anatomical information is temporally distributed rather than concentrated in brief signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by Figure 3B showing sensitivity curves that continue to increase at 1800s. This suggests anatomical information accumulates over time, though the mechanism (distributed signal vs. noisy short signal) remains ambiguous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Feature importance analysis reveals that specific ISI time windows are differentially important for classifying different brain regions, with statistically significant differences in ISI distribution properties (mean, variance, slope) across regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by Figure 3C-E showing feature importance analysis and statistical comparisons. The region-specific ISI windows (C45-C46) and statistical differences (C47) are clearly demonstrated with appropriate visualizations and statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Brain region classification is most effective using ISI distributions (65.29% balanced accuracy), while structure-level classification benefits from concatenated PSTHs, with visual cortical structures showing best performance when stimulus information is included (38.35%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by specific balanced accuracy values with error bars shown in Figure 3A. The differential effectiveness of ISI distributions vs. concatenated PSTHs for different spatial scales is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Visuocortical structure information is distributed across multiple stimulus variants, though some stimuli carry more predictive value than others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by feature importance analysis shown in Figure 3F-G, demonstrating that information is distributed across stimuli but with differential contributions. The permutation-based feature importance method is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Hippocampal and thalamic structure classification shows similar improvements with concatenated PSTHs despite these structures not being primarily visual, suggesting anatomical information is embedded in temporal response patterns independent of visual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by balanced accuracy values showing improvements for hippocampal (44.16% vs 41.72%) and thalamic (43.25% vs 39.15%) structures. The observation that non-visual structures benefit from visual stimulus-aligned PSTHs is intriguing and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Inductive models (trained on separate animals) perform above chance in 7/8 conditions and match transductive models for ISI-based tasks, but show reduced performance for PSTH-based tasks, suggesting ISI-based anatomical information generalizes across animals while stimulus-response patterns are more animal-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by Figure 4A showing statistical comparisons between inductive and transductive models. The differential generalization of ISI vs. PSTH features is a key finding, though the inference about animal-specificity (C56) requires the assumption that other factors don't explain the difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Spatial smoothing across neighboring electrodes dramatically improves classification accuracy across all tasks (e.g., brain regions: 65.10% to 89.47%), suggesting classification errors are stochastically distributed rather than reflecting shared noise among neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by substantial improvements in balanced accuracy shown in Figure 4\u2014figure supplements 1-2. The inference that errors are stochastic (C62) is reasonable given the effectiveness of smoothing, though alternative explanations aren't fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "A hierarchical inductive model with smoothing achieves 46.91% balanced accuracy across 19 anatomical labels, with only 5 of 250 possible cross-regional errors occurring above chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by Figure 4C showing the confusion matrix and balanced accuracy. The low rate of cross-regional errors demonstrates the effectiveness of the hierarchical approach, though 46.91% accuracy still indicates substantial room for improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Binary classification of primary visual cortex (VISp) versus secondary visual areas (VISs) achieves high accuracy (79.98-91.02%), suggesting the computational differentiability of murine visual cortex is primarily at the level of primary versus secondary rather than among individual secondary areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by Figure 5B and reanalysis of 6-structure data. The high sensitivity for VISs (96%) and VISp (94.4%) supports the conclusion that primary/secondary is the meaningful distinction, though this may reflect biological reality or methodological limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cortical layer classification achieves robust performance (62.59% smoothed balanced accuracy) with similar performance between transductive and inductive models, with ISI distributions outperforming concatenated PSTHs, though layer IV shows the poorest classification (28% sensitivity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by Figure 5C-D and reported balanced accuracy values. The poor performance for layer IV (C72) is notable and may reflect genuine biological properties or technical challenges in distinguishing this layer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "MLPs generalize across stimulus conditions (drifting gratings, naturalistic movies, spontaneous activity) with performance far above chance in nearly all train/test pairings, though within-stimulus models outperform across-stimulus models, and visuocortical superstructure classification fails when trained on drifting gratings and tested on other stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by Figure 6 showing MCC values across all train/test combinations. The high MCC for brain regions (0.90) and the specific failure mode for visuocortical superstructures (C75) are clearly demonstrated. Statistical comparison in Figure 6\u2014figure supplement 1 supports C77.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Models trained on Allen Institute data successfully predict anatomical location in independently collected Steinmetz et al. data, with brain regions classified at 80-81% accuracy, though visuocortical structures show poor cross-laboratory transfer (28% accuracy) while hippocampal, thalamic structures and cortical layers transfer well (40-70% accuracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by Figure 7B showing balanced accuracy across Steinmetz animals and confusion matrices in Figure 7C-D. The successful cross-laboratory generalization for most tasks is a strong result, though the failure for visuocortical structures (C80) suggests either biological variability or methodological differences between labs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Machine learning models can predict neuronal anatomical location from spike timing alone across multiple brain regions, stimulus conditions, animals, and laboratories, with anatomical information enriched in specific ISI windows and stimulus responses, demonstrating a fundamental and generalizable principle of neural organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 and C82-C84 represent the main conclusions of the study, supported by the comprehensive experimental results. The generalization across animals (C21, C83) and laboratories (C21, C84) is particularly strong evidence. However, the claim of a 'fundamental principle' (C84) is somewhat speculative given the modest accuracy for some tasks and the failure of visuocortical structure classification to generalize across labs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Prior literature establishes anatomical differences in the brain at multiple levels (gene expression, connectivity, neuronal variability, intrinsic timescale, firing rate distributions), though these are typically characterized at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 accurately summarize prior literature with appropriate citations. These provide important context for interpreting the current results, distinguishing population-level statistics from single-neuron classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ISI distributions may encapsulate intrinsic anatomical properties conserved across animals, potentially including cell types, ion channel compositions, local circuit motifs, or homeostatic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is an inference from the generalization results, while C91-C93 are explicitly speculative (supported by citations but not tested). The proposed mechanisms are plausible but not directly demonstrated. Additional experiments would be needed to determine which factors contribute to the observed ISI-based anatomical signatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Neuronal response variability correlates among nearby neurons and is influenced by local connectivity and cognitive factors like attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 accurately represent prior literature with appropriate citations (Smith and Kohn 2008, Smith and Sommer 2013, Rosenbaum et al. 2017, Ruff and Cohen 2014). This provides context for interpreting why PSTH-based features may not generalize as well across animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The difficulty in classifying individual secondary visual areas reflects prior findings of functional differences across mouse visual areas, with the primary/secondary distinction being most reliable and laminar organization potentially playing a more fundamental role than areal boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 integrate prior literature (C96 with appropriate citations) with the current results. The inference about laminar organization (C98) is reasonable given the better layer classification compared to area classification, though alternative explanations aren't fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Despite evidence for functional specialization of mouse higher visual areas, the computational properties of neurons in different visual areas may be largely indistinguishable based on spike timing alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 accurately cites prior literature, but C100 is speculative. The poor classification of individual secondary visual areas could reflect genuine biological similarity or methodological limitations (insufficient features, sample size, or model complexity). The authors acknowledge this ambiguity but lean toward a biological interpretation without definitive evidence.",
+    "result_type": "MAJOR"
+  }
+]

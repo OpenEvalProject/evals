@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C22",
+      "C23",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "PointTree uses a constrained Gaussian clustering method to partition foreground regions into columnar regions, each belonging to a single neurite, achieving 71.4-91.7% separation of densely distributed neurites compared to 25.0% for skeleton-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 describe the constrained Gaussian clustering methodology, C62, C64-C65 provide mathematical implementation details, and C22-C23 provide quantitative validation from Figure 2B. The method is well-documented with both algorithmic details and experimental validation showing substantial improvement over existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The Minimal Information Flow Tree (MIFT) model suppresses cumulative reconstruction errors during fusion, maintaining f1-scores above 0.79 after two fusions, while reconstructions without MIFT drop to f1-scores below 0.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 establish the MIFT principle with validation on 195/208 branches (C20), and C29-C32 demonstrate its effectiveness during fusion with quantitative data from Figure 5B. The statistical validation and fusion experiments provide strong converging evidence for error suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C34",
+      "C35"
+    ],
+    "result": "PointTree achieves 80% average f1-score for long-range axonal reconstruction across hundreds of GBs of data, with precision above 85-90% and recall/f1-score above 80-85% depending on dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24, C34, and C35 provide consistent quantitative performance metrics supported by Figures 3B, 6E, and Table 1. The results are validated across multiple datasets (8 neurons in one dataset, 14 in another) with appropriate ground truth comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C25"
+    ],
+    "result": "Current skeleton-based methods achieve only 30-40% f1-scores on densely distributed neurite reconstruction from smaller datasets (few hundred MBs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C25 are directly supported by comparative data in Figure 3B showing performance of APP2, neuTube, NGPST, PHDF, and MOST methods. The comparison provides appropriate baseline for evaluating PointTree's improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PointTree demonstrates robust performance across different imaging modalities and SNR levels, achieving 91.0-93.3% f1-scores across LSM (SNR=5.01), fMOST (SNR=8.68), and HD-fMOST (SNR=11.4) data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 provide detailed quantitative results for three imaging systems with different SNR characteristics (n=25 for each), supported by Figure 4A. The consistent high performance across varying SNR levels demonstrates robustness, though higher SNR does correlate with slightly better performance as expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PointTree reconstruction speed is faster than imaging speed, requiring approximately 44 minutes for 254 image blocks and 60 minutes for 821 image blocks (512\u00d7512\u00d7512 voxels each).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 provide specific timing data from Table 2, and C38 makes the inference about speed relative to imaging. The timing data is concrete and the inference is reasonable, though direct comparison to imaging speed would strengthen the claim. The non-linear scaling with data volume (C37) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "PointTree employs a 0-1 assignment model (Lapjv algorithm) to establish connections between columnar regions, followed by region growing for skeleton extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 establish the appropriateness of the 0-1 assignment model with citations, C68 specifies the algorithm used, and C69 describes skeleton extraction. The methodology is well-documented with appropriate citations and mathematical formulation in the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Even with ideal segmentation using deep learning, skeleton-based methods still exhibit significant reconstruction errors in densely distributed regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by Figure 1\u2014figure supplement 1 showing that segmentation alone is insufficient. This motivates the need for PointTree's point assignment approach rather than skeleton-based methods, providing important context for the methodological innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "PointTree uses UNet3D for segmentation with specific training parameters (Adam optimizer, learning rate 3e-4, batch size 1, L1 loss) on 40 image blocks (20 per dataset, split between dense and sparse neurites), with a threshold of 0.5 for foreground classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 provide comprehensive methodological details for the segmentation network. The parameters are standard and appropriate for 3D segmentation tasks. The training data composition (C59-C60) balancing dense and sparse regions is reasonable, though more details on validation set and training convergence would strengthen reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "PointTree requires less than 1 GB of labeled training data for reconstructions spanning hundreds to thousands of GBs, with labeling taking only a few hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C45 describe training data requirements but lack quantitative validation. While the claim that labeling is 'negligible' compared to reconstruction time is reasonable, no data is provided on actual labeling time, inter-annotator variability, or how training data size affects performance. The claim needs empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PointTree has three main limitations: errors from weak signal neurites not being identified, connection errors from rule-based methods, and incorrect splitting of axons with sharp turns due to MIFT's smoothness assumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 acknowledge specific limitations of the method. C50 is supported by Figure 1\u2014figure supplement 3 showing examples of sharp turns. The authors appropriately identify weaknesses, though quantification of how frequently these errors occur would strengthen the assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "PointTree can be applied to any skeleton tracking-based application scenario and effectively eliminate dense signal interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C46 makes a broad generalization about applicability to 'any skeleton tracking-based application' without providing evidence beyond neuronal reconstruction. The claim is speculative and would require validation on other application domains (e.g., blood vessel tracking, fiber tracking) to be supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Single-neuron axonal projection reconstruction is scientifically important but currently requires intensive manual labor in terabyte-scale data, with densely distributed axons and error accumulation being major unsolved challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C9 establish the biological importance and technical challenges of the problem, supported by multiple citations to relevant literature. These claims provide appropriate context and motivation for the work, though they represent background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C15",
+      "C16"
+    ],
+    "result": "Current reconstruction methods struggle with densely distributed axons, with local approaches suffering from signal interference and global approaches making erroneous connections, requiring substantial human intervention for long-range reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C12, C15-C16 characterize limitations of existing methods with appropriate citations including the BigNeuron project (C10). The characterization is supported by comparative results throughout the manuscript and provides context for PointTree's innovations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "PointTree addresses mutual interference among densely distributed neurites through point set assignment and cumulative errors through MIFT, enabling accurate long-range reconstruction and significantly enhancing whole-brain reconstruction efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 summarize the main contributions and are supported by the detailed results presented in other claim groups. These represent high-level conclusions drawn from the experimental validation, appropriately synthesizing the work's impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "PointTree operates on image foregrounds where segmented neurites have a fixed radius approximately equal to three voxels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 describes a technical constraint of the method. This is a reasonable assumption for the imaging modalities tested, though it may limit applicability to neurites with highly variable diameters. The constraint is clearly stated and appropriate for the datasets used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Animal experiments were ethically approved and involved AAV viral injections in mouse brain regions (VPM nucleus and motor area) with imaging performed 21 days post-injection using CSFT and HD-fMOST systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe experimental procedures with appropriate ethical approval (C51) and standard protocols for viral tracing. The methods are adequately described with citations to imaging systems, though more details on animal numbers and biological replicates would strengthen reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The testing dataset for long-range reconstruction consists of an 11226\u00d78791\u00d71486 voxel image block containing axons from eight neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 describes the test dataset used for validation in Figure 6. The dataset size and neuron number are clearly specified, providing appropriate scale for evaluating long-range reconstruction performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Reconstruction performance is evaluated using precision, recall, and f1-score metrics as defined in Quan et al., 2016.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 describes the evaluation metrics with appropriate citation. These are standard metrics for reconstruction evaluation, and the mathematical definitions are provided in the Methods section. The choice of metrics is appropriate and well-established in the field.",
+    "result_type": "MINOR"
+  }
+]

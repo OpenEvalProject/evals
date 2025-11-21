@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors generated a conditional Orc2 knockout mouse model by flanking exons 6 and 7 with loxP sites. Cre-mediated recombination deletes these exons, resulting in a frameshift that eliminates the AAA+ and WH domains essential for ORC2 function. The floxed allele does not impair ORC2 function as evidenced by normal Mendelian ratios in breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe the design and validation of the Orc2 conditional knockout construct. The breeding data (C31) and molecular characterization (C33-C36) provide strong evidence that the floxed allele is functional and that Cre-mediated deletion produces a non-functional ORC2 protein. The design is well-documented and the logic is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C46"
+    ],
+    "result": "Embryonic deletion of Orc2 using Sox2-Cre is lethal by E7.5, while hemizygous Orc2+/\u0394 embryos are viable at expected frequencies, demonstrating that Orc2 is essential for early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by breeding data in Table 1 showing complete absence of Orc2\u0394/\u0394 embryos after E7.5 and near-expected numbers of heterozygotes. This establishes the essential nature of Orc2 in early development and validates the knockout system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C5"
+    ],
+    "result": "ORC2 is required for proliferation of mouse embryo fibroblasts (MEFs). Adeno-Cre infection of Orc2f/f MEFs results in efficient deletion of Orc2 exons 6-7 and loss of detectable ORC2 protein by day 5, leading to impaired proliferation. Surviving cells after 15 days express ORC2, suggesting selection for cells that escaped deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 are well-supported by genotyping (Figure 1E), Western blot (Figure 1F), and proliferation data (Figure 1G-H). The reappearance of ORC2 protein at day 15 (C44) and the inference that non-deleted cells take over (C45) is a reasonable interpretation. This establishes that ORC2 is essential for MEF proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Hepatocyte-specific deletion of Orc2 using Alb-Cre produces viable and fertile mice. One allele of Alb-Cre is sufficient for efficient deletion, and Orc2 deletion in hepatocytes does not impair viability, though there is partial lethality with two copies of Alb-Cre possibly due to Cre toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are supported by breeding data (Figure 2A-B) showing viable Alb+/--Orc2f/f mice. The inference that one Alb-Cre allele is sufficient (C52) and that deletion doesn't impair viability (C53) is well-supported. The speculation about Cre toxicity (C54) is appropriately cited to prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ORC2 protein is significantly decreased in hepatocytes from Alb+/--Orc2f/f mice, while other ORC subunits and CDC6 remain unchanged. MCM2 and MCM3 are decreased by 50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by Western blot data in Figure 2C-D. The consistent depletion of ORC2 across all five mice (C55) and the selective decrease in MCM2/MCM3 (C57) are clearly documented. This establishes the molecular consequences of Orc2 deletion in hepatocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Alb-Orc2f/f mice have smaller body weights in both sexes, with liver size and liver-to-body weight ratio significantly smaller only in females. Elevated circulating liver enzymes suggest some impairment of liver function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by data in Figure 2E-G and Figure 2\u2014figure supplement 1. The sex-specific differences in liver size (C59) and the elevated liver enzymes (C60) are clearly documented. The inference of liver function impairment (C61) is reasonable based on the enzyme data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C7"
+    ],
+    "result": "Orc2 deletion in hepatocytes leads to larger nuclei and increased endoreduplication. Flow cytometry shows decreased 4n and increased 16n DNA content, with the effect more pronounced in EYFP-positive cells. This demonstrates that hepatocytes can endoreduplicate in vivo without ORC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are strongly supported by histology (Figure 2H-K) and flow cytometry data (Figure 3B-G). The increased nuclear size and shift to higher ploidy states are clearly documented. The conclusion that Orc2 deletion promotes endoreduplication (C65) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C6"
+    ],
+    "result": "Primary hepatocytes from Alb-Cre+/- Orc2f/f mice show >90% deletion efficiency and significantly decreased ORC2 protein. EYFP-positive cells can incorporate EdU, though total EdU incorporation is reduced to ~30% of wild-type levels, demonstrating that hepatocytes can replicate DNA in culture without detectable ORC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by genotyping (Figure 4B), Western blot (Figure 4B), and EdU incorporation data (Figure 4C-D). The key finding that EYFP+ cells (with Orc2 deletion) can incorporate EdU (C68) is clearly shown. The 30% reduction in EdU+ nuclei (C69) is documented, and the conclusion (C70) is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "During liver regeneration after partial hepatectomy, Orc2-deleted livers regenerate to similar liver-to-body weight ratios as wild-type despite having ~50% fewer nuclei. Nearly 100% of hepatocytes are EYFP-positive, and 30% incorporate EdU, demonstrating DNA synthesis in the absence of ORC2. Paired EdU-positive nuclei suggest some cells can complete mitosis. Nuclei are significantly larger in Orc2-deleted hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C81 are strongly supported by data in Figure 5. The liver regeneration capacity (C74), high EYFP penetrance (C77), EdU incorporation (C78), and paired nuclei suggesting mitosis (C79-C80) are all documented. This is a key result showing DNA replication without ORC2 during liver regeneration in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C8"
+    ],
+    "result": "Double knockout (DKO) of Orc1 and Orc2 in hepatocytes produces viable mice with both ORC1 and ORC2 proteins significantly decreased. Female DKO mice are more severely affected with smaller livers and ~50% lethality in the first month, while males are less affected. DKO hepatocytes show increased polyploidization and larger nuclei, demonstrating that hepatocytes can endoreduplicate during normal development even without two ORC subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C94 are supported by Western blots (Figure 6D-E), body/liver weight measurements (Figure 6F), histology (Figure 6G-H), and flow cytometry (Figure 6I). The sex-specific differences (C87-C88, C94) and the survival of DKO mice with extensive endoreduplication (C93) are well-documented. This is a major finding extending the single knockout results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C9"
+    ],
+    "result": "During liver regeneration after partial hepatectomy, DKO mice show similar body weights and liver-to-body weight ratios as wild-type. Nearly 100% of hepatocytes are EYFP-positive with depleted ORC1 and ORC2, yet 15% of nuclei incorporate EdU\u2014a higher percentage than in wild-type regenerating livers. This demonstrates that endoreduplication during liver regeneration can occur without two ORC subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 are strongly supported by data in Figure 7. The successful liver regeneration in DKO mice (C96), high EYFP penetrance (C99), EdU incorporation (C100), and the paradoxical increase in EdU+ nuclei compared to WT (C101) are all documented. This is a key result showing DNA replication without ORC1 and ORC2 during regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Based on calculations of liver size and nuclear density, the authors estimate that Orc2-deleted and male DKO livers underwent at least 18 cell divisions since E9.5, with 15 divisions occurring after gene deletion. After 6 divisions to dilute protein to <1.5%, at least 9 more rounds of replication occurred. Paired EdU-positive nuclei in regenerating livers suggest some cells underwent complete mitosis even after 15 rounds of division post-deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C125 involve calculations and inferences about cell divisions based on liver size and nuclear counts (Table 2). While the logic is reasonable, the calculations rely on several assumptions: (1) the starting number of hepatoblasts at E9.5, (2) the timing of Cre-mediated deletion, (3) the rate of protein dilution, and (4) the absence of compensatory mechanisms. The paired nuclei observation (C125) is suggestive but not definitive proof of mitosis. The conclusion that mitotic replication is not completely eliminated (C124) is plausible but requires more direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Female DKO livers appear more sensitive to ORC depletion than males, with fewer cell divisions and smaller liver size. The authors speculate this may be due to androgens stimulating hepatocyte division/hypertrophy or sex-specific differences in the epigenetic functions of ORC subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128 document the sex-specific phenotypic differences, which are well-supported by the data. However, the mechanistic explanations (C129-C133) are speculative. While the citations to prior work on testosterone levels (C129) and sex-specific gene expression (C130) are appropriate, the proposed mechanisms (C131, C133) are not tested in this study. This remains an interesting observation requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Livers with Orc2 or Orc1+Orc2 deletion undergo endoreduplication more easily during development and regeneration. Since endoreduplication uses the same biochemical mechanisms as normal S phase (as evidenced by cyclin E/CDK and MCM2-7 oscillations), the persistence and acceleration of endoreduplication without ORC1 and ORC2 suggests an alternative mechanism for MCM2-7 loading. The acceleration with double knockout makes it unlikely that a makeshift ORC-like complex is responsible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C141 synthesize the endoreduplication findings and draw mechanistic conclusions. The increased endoreduplication is well-documented (C134-C135). The premise that endoreduplication uses the same initiation mechanisms as normal replication (C136-C139) is supported by cited literature. The inference that an alternative MCM2-7 loading mechanism exists (C140) is logical given the data. The argument against a makeshift ORC complex (C141) is reasonable given the double knockout results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The premature induction of endoreduplication observed in both Orc1 and Orc2 deletion studies may be explained by earlier mitotic arrest due to G2 DNA damage checkpoints activated by incomplete genome licensing and replication in the absence of ORC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C144 propose a mechanism for the increased endoreduplication. While C142 correctly cites the prior Orc1 study showing similar results, the mechanistic explanation (C143-C144) is speculative and not directly tested. The hypothesis about G2 checkpoint activation is plausible but requires experimental validation through checkpoint marker analysis or genetic manipulation of checkpoint pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Incomplete deletion of Orc2 or Orc1 genes is unlikely to explain the DNA replication observed, because in vitro experiments show 100% EYFP positivity and undetectable ORC2 protein yet only 30% EdU incorporation. In vivo regeneration experiments show nearly 100% EYFP positivity, undetectable ORC proteins, yet 15-35% EdU incorporation and near-normal liver size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 address a critical alternative explanation. The high EYFP penetrance, undetectable ORC proteins by Western blot, and substantial EdU incorporation provide strong evidence against incomplete deletion as the explanation. However, the Western blot detection limit should be acknowledged\u2014very low levels of protein (<1-5%) might not be detectable but could potentially be functional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Liver function tests show some impairment in Orc2-deleted livers, but the cause cannot yet be attributed to decreased cell number or excess endoreduplication because ORC subunits have known roles in epigenetic gene regulation. Future experiments are needed to determine if liver pathology is secondary to epigenetic dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 appropriately acknowledge the liver dysfunction (supported by Figure 2\u2014figure supplement 1) while recognizing the limitation that the mechanism is unclear. The citation to ORC's epigenetic role (C149) is appropriate, and the statement about future work (C150) is reasonable. This is an honest assessment of the data's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "Deletion of Orc2 or Orc1+Orc2 in hepatocytes does not consistently change levels of other ORC subunits, CDC6, or MCM2-7 subunits, suggesting that compensatory upregulation of these proteins is unlikely to explain how hepatocytes license origins without the ORC holocomplex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 are supported by Western blot data in Figures 2D and 6E. The lack of consistent compensatory changes in other replication proteins strengthens the argument for an alternative mechanism. However, the inconsistent changes in ORC3 and MCM2/3 (C85-C86) suggest some complexity that isn't fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C11"
+    ],
+    "result": "The hepatocyte studies demonstrate that primary cells, like cancer cell lines, can load sufficient MCM2-7 to replicate DNA in the absence of detectable ORC holocomplex. This shows that the ability to bypass ORC requirement is not unique to cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 and C11 represent the main conclusion of the paper. The data from hepatocytes (primary cells) showing DNA replication without detectable ORC2 (or ORC1+ORC2) strongly support this conclusion. The comparison to cancer cell lines is appropriate given the prior literature. This is the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "In cancer cells with Orc1, Orc2, or Orc5 deletion, near-normal levels of MCM2-7 loading occur and 60% of replication origins remain at the same sites as in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156 cite prior work (Shibata et al., 2024) to provide context for the current findings. These claims are appropriately attributed to prior publications and help frame the significance of the hepatocyte results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C157"
+    ],
+    "result": "While it is impossible to completely rule out that very small amounts of ORC protein persist and are sufficient for MCM2-7 loading, this is becoming progressively unlikely given the accumulated evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C157 appropriately acknowledges a fundamental limitation of the study\u2014the inability to prove absolute absence of ORC protein. The statement that this is \"becoming progressively unlikely\" is a fair assessment given the multiple lines of evidence (Western blots, high Cre penetrance, extensive cell divisions). This is an honest and scientifically appropriate caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Based on published estimates of liver cell density and embryonic cell numbers, the authors calculate that normal liver development requires at least 20 rounds of diploid cell division from ~2000 hepatoblasts at E9.5 to ~200 million hepatocytes in the adult liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 present calculations based on cited literature values. The logic is straightforward: starting with 2000 cells and reaching 200 million requires ~17 doublings (2^17 = 131,072; 2^18 = 262,144), so 20 rounds is a reasonable estimate accounting for some cell loss. The calculations are appropriately documented in Table 2.",
+    "result_type": "MINOR"
+  }
+]

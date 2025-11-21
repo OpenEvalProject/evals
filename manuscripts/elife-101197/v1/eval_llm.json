@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C91"
+    ],
+    "result": "Xist RNA localizes beyond the Xi to approximately 100 autosomal genes in both ES cells and MEFs. CHART-seq experiments with appropriate controls (sense probes, male cells) demonstrate that Xist binds to discrete, sharp peaks on autosomes beginning at day 4 of differentiation, with binding sites disproportionately located in promoter regions. Only ~10% of CHART-seq reads mapped to the X chromosome at day 7, with hundreds of significant autosomal peaks identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C29-C41, and C91 collectively provide strong experimental evidence from CHART-seq with multiple controls (sense probes, male cells, input DNA) and biological replicates. The PCA analysis (C30) confirms distinct signals, and peak calling with IDR analysis demonstrates reproducibility. The quantitative finding of ~100 autosomal targets is consistently supported across multiple time points and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C53",
+      "C54",
+      "C55",
+      "C93"
+    ],
+    "result": "Xist autosomal target genes are unified by their active chromatin status and are relatively depleted for Polycomb marks. Xist preferentially binds to actively expressed genes on autosomes, with genes within 10 kb of Xist binding sites showing the highest Xist levels. ChIP-seq analysis reveals lower coverage of H3K27me3 and H2AK119ub within 10 kb versus 50 kb neighborhoods of Xist binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C53-C55, and C93 are supported by integrated CHART-seq, RNA-seq, and ChIP-seq data. The characterization of target genes by expression quintiles (C53) and distance-dependent analysis (C54) provide quantitative support. The Polycomb depletion finding (C55) is based on ChIP-seq data and is consistent with cited studies, though it contrasts with human XIST findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C56",
+      "C58",
+      "C60",
+      "C94",
+      "C95"
+    ],
+    "result": "Xist binding is associated with partial down-modulation of autosomal gene expression without full silencing. Among ~100 target genes, male cells show significantly greater expression than female cells, with down-modulation especially evident on days 4 and 7 of ES cell differentiation. Unlike on the Xi, Xist binding does not lead to complete silencing and does not spread beyond the target gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C56, C58, C60, C94-C95 are supported by RNA-seq comparisons between male and female cells, and across differentiation time points. The partial repression phenotype is consistently observed and distinguished from complete silencing on the Xi. Statistical significance is demonstrated through Wilcoxon rank sum tests, though the magnitude of repression appears modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C15",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C61",
+      "C62",
+      "C64",
+      "C102"
+    ],
+    "result": "Repeat B is required for Xist localization to autosomal genes and their regulation. Deletion of RepB reduces autosomal binding without increasing it despite loss of Xi binding, and perturbs autosomal down-regulation. The number of autosomal targets remains similar in \u0394RepB cells, but binding intensity decreases and repression is blunted, demonstrating that RepB is crucial for Xist's in-trans function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C15, C46-C52, C57, C61-C62, C64, and C102 are supported by integrated CHART-seq and RNA-seq analysis of \u0394RepB cells. The key observation that loss of Xi binding does not increase autosomal binding (C47) argues against simple diffusion and supports programmed targeting. The consistency across multiple time points and the specificity at day 0 (C62) strengthen the conclusion about RepB's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Overexpressing Xist in transgenic ES cells leads to autosomal gene suppression. Transcriptomic analysis of two independent transgenic lines showed significant suppression of both X-linked genes and autosomal Xist targets compared to doxycycline-treated wildtype cells, while non-targets showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C65-C68 are supported by RNA-seq analysis of two independent transgenic cell lines from a published study. The use of independent lines and appropriate controls (doxycycline-treated WT cells, non-target genes) strengthens the conclusion. The fact that these data were generated by other investigators adds credibility to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C103"
+    ],
+    "result": "Treatment with the Xist inhibitor X1 leads to loss of autosomal suppression and can disrupt autosomal Xist binding. X1 treatment resulted in significant upregulation of autosomal targets and reduction of H3K27me3 marks at target genes, while non-targets showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C16, C69-C76, and C103 are supported by RNA-seq and ChIP-seq analysis of X1-treated cells. The parallel effects on X-linked and autosomal genes (C70-C71) and the specificity for targets versus non-targets (C73, C75) provide strong evidence. The consistency with the known mechanism of X1 blocking RepA's recruitment of PRC2 (C74) adds mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Xist continues to bind autosomal genes in post-XCI somatic cells (MEFs), but this binding does not overtly impact gene expression. CHART-seq demonstrates autosomal binding in WT MEFs with similar promoter preference as in ES cells. However, RNA-seq analysis of \u0394RepB and \u0394RepE MEFs showed no significant changes in expression of Xi genes or autosomal target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C90 are supported by CHART-seq and RNA-seq data from MEFs, including \u0394RepB and \u0394RepE mutants. The lack of transcriptomic changes (C83, C87) is corroborated by reanalysis of two published datasets (C88). The contrast between ES cells and MEFs regarding functional consequences is clearly demonstrated, though the authors acknowledge they cannot exclude subtle changes below significance thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Randomly selected autosomal genes without Xist binding serve as appropriate negative controls, showing no significant differences in Polycomb enrichment or gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by control analysis of 100 randomly selected non-target genes shown in supplementary figures. This control is essential for demonstrating specificity of the observed effects to Xist-bound genes and strengthens the overall conclusions about Xist function on autosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Gene Ontology analysis of Xist autosomal target genes did not yield statistically significant enrichment for specific biological processes, but examination reveals diverse functions including cancer development, transcription regulation, amino acid transport, and RNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 accurately report the results of GO analysis and provide examples of target gene functions. The lack of significant GO enrichment is honestly reported, and the diverse functions are documented. However, this negative result limits biological interpretation of why these specific genes are targeted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Xist-bound autosomal genes on day 14 of ES cell differentiation did not demonstrate significant changes in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by RNA-seq analysis shown in supplementary figures. This temporal specificity (effects at days 4 and 7 but not day 14) is important for understanding the dynamics of Xist-mediated autosomal regulation during differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The current mouse study findings differ from a recent human study in several key aspects: mouse Xist shows narrow binding regions versus broad regions in human cells, mouse shows binding in post-XCI MEFs versus no binding beyond stem cells in human, and mouse shows Polycomb depletion at targets versus positive correlation with PRC2 marks in human.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 accurately compare the current findings with a cited human study (Dror et al., 2024). The authors appropriately acknowledge these differences and suggest they may arise from methodological differences (CHART vs RAP-seq) or species differences. This comparative analysis is important for contextualizing the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Xist binding to autosomes is specifically programmed rather than a consequence of random diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is a conclusion supported by the \u0394RepB experiments (C47, C102) showing that loss of Xi binding does not increase autosomal binding, and the X1 inhibitor experiments (C103) showing specific regulation. The logic is sound: if binding were due to random diffusion after Xi saturation, \u0394RepB should increase autosomal binding, but the opposite is observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C44",
+      "C45",
+      "C77"
+    ],
+    "result": "Background claims about XCI, Xist function, and prior observations of Xist diffusion under select circumstances establish the context and motivation for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C17-C28, C44-C45, and C77 represent established knowledge from the field, supported by multiple citations. These background claims are accurately stated and appropriately cited, providing necessary context for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  }
+]

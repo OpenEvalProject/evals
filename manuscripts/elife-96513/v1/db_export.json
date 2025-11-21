@@ -1,0 +1,1724 @@
+{
+  "submission": {
+    "id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T18:15:42.167544Z",
+    "updated_at": "2025-11-21T18:15:42.167544Z"
+  },
+  "content": [
+    {
+      "id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "content_type": "manuscript",
+      "content_text": "# Hidden GPCR structural transitions addressed by multiple walker supervised molecular dynamics (mwSuMD)\n\n## Authors\n\n- Giuseppe Deganutti<sup>1</sup> ([ORCID: 0000-0001-8780-2986](https://orcid.org/0000-0001-8780-2986)) \u2020\n- Ludovico Pipito<sup>1</sup> ([ORCID: 0000-0002-1824-7541](https://orcid.org/0000-0002-1824-7541))\n- Roxana Maria Rujan<sup>1</sup> ([ORCID: 0000-0002-4335-3338](https://orcid.org/0000-0002-4335-3338))\n- Tal Weizmann<sup>1</sup>\n- Peter Griffin<sup>1</sup> ([ORCID: 0000-0003-0966-800X](https://orcid.org/0000-0003-0966-800X))\n- Antonella Ciancetta<sup>2</sup>\n- Stefano Moro<sup>3</sup>\n- Christopher Arthur Reynolds<sup>1</sup> ([ORCID: 0000-0001-9267-5141](https://orcid.org/0000-0001-9267-5141)) \u2020\n\n### Affiliations\n\n1. Centre for Health and Life Sciences, Coventry University Coventry United Kingdom ([ROR:01tgmhj36](https://ror.org/01tgmhj36))\n2. Dipartimento di Scienze Chimiche, Farmaceutiche ed Agrarie, University of Ferrara Ferrara Italy ([ROR:041zkgm14](https://ror.org/041zkgm14))\n3. Molecular Modeling Section (MMS), Dipartimento di Scienze del Farmaco, University of Padua via Marzolo Padova Italy ([ROR:00240q980](https://ror.org/00240q980))\n4. School of Life Sciences, University of Essex, Wivenhoe Park Colchester United Kingdom ([ROR:02nkf1q06](https://ror.org/02nkf1q06))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe structural basis for the pharmacology of human G protein-coupled receptors (GPCRs), the most abundant membrane proteins and the target of about 35% of approved drugs, is still a matter of intense study. What makes GPCRs challenging to study is the inherent flexibility and the metastable nature of interaction with extra- and intracellular partners that drive their effects. Here, we present a molecular dynamics (MD) adaptive sampling algorithm, namely multiple walker supervised molecular dynamics (mwSuMD), to address complex structural transitions involving GPCRs without energy input. We first report the binding and unbinding of the vasopressin peptide from its receptor V2. Successively, we present the complete transition of the glucagon-like peptide-1 receptor (GLP-1R) from inactive to active, agonist and Gs-bound state, and the guanosine diphosphate (GDP) release from Gs. To our knowledge, this is the first time the whole sequence of events leading from an inactive GPCR to the GDP release is simulated without any energy bias. We demonstrate that mwSuMD can address complex binding processes intrinsically linked to protein dynamics out of reach of classic MD.\n\n## Introduction\n\nSupervised molecular dynamics (Cuzzolin et al., 2016; Deganutti et al., 2020b) (SuMD) is an efficient adaptive sampling technique for studying ligand-receptor binding and unbinding pathways; here, we present the multiple walker enhancement (mwSuMD) to study a significantly wider range of structural transitions relevant to the drug design. We validated the method by applying it to G protein-coupled receptors (GPCRs), since their inherent flexibility is essential to their function and because these are the most abundant family of membrane receptors in eukaryotes (de Mendoza et al., 2014) and the target for more than one-third of drugs approved for human use (Sriram and Insel, 2018).\n\nVertebrate GPCRs are subdivided into five subfamilies (Rhodopsin or class A, Secretin or class B, Glutamate or class C, Adhesion, and Frizzled/Taste2) according to function and sequence (Schi\u00f6th and Fredriksson, 2005; G protein-coupled receptors, 2019). X-ray and cryo-electron microscopy (cryo-EM) show that GPCRs possess seven transmembrane (TM) helices connected by three extracellular loops (ECLs) and three intracellular loops (ICLs), with an extended and structured N-terminal extracellular domain (ECD) in all subtypes, but class A. The primary function of GPCRs is transducing extracellular chemical signals into the cytosol by binding and activating four G protein families (Gs/olf, Gi/o, G12/13, and Gq/11) responsible for decreasing (Gi/o) or increasing (Gs/olf) cyclic adenosine-3\u2019,5\u2019-monophosphate, and generating inositol-1,4,5-triphosphate and diacylglycerol to increase Ca2+ intracellular levels (Gq) (Syrovatkina et al., 2016).\n\nMany aspects of GPCR pharmacology remain elusive: e.g., the structural determinants of the selectivity displayed toward specific G proteins or the ability of certain agonists to drive a preferred intracellular signaling pathway over others (i.e. functional selectivity or bias) (Tan et al., 2018). GPCRs are challenging proteins to characterize experimentally due to their inherent flexibility and the transitory nature of the complexes formed with extracellular and intracellular effectors. Importantly, agonists can allosterically modify the receptor selectivity profile by imprinting unique intracellular conformations from the orthosteric binding site. The mechanism behind these phenomena is one of the outstanding questions in the GPCR field (Flock et al., 2017).\n\nMolecular dynamics (MD) is a powerful computational methodology that predicts the movement and interactions of (bio)molecules in systems of variable complexity, at atomic detail. However, classic MD sampling is limited to the microsecond or, in the best conditions, the millisecond time scale (Hollingsworth and Dror, 2018; Durrant and McCammon, 2011). For this reason, different algorithms have been designed to speed up the simulation of rare events such as ligand (un)binding and conformational transitions. Among the most popular and effective ones are metadynamics (Bussi and Laio, 2020) and path collective variables metadynamics (D\u2019Amore et al., 2024), accelerated MD (aMD) (Hamelberg et al., 2004), and Gaussian-accelerated MD (GaMD) (Miao et al., 2015), which introduce an energy potential to overcome the energy barriers preventing the complete exploration of the free energy surface, thus de facto bias the simulation. Energetically unbiased MD protocols, on the other hand, comprise weighted ensemble MD (Zuckerman and Chong, 2017), swarms approach (Fleetwood et al., 2020), AdaptiveGoal (Lovera et al., 2019), and SuMD (Cuzzolin et al., 2016; Sabbadin and Moro, 2014), which have largely been applied to (unbinding) small molecules, peptides, and small proteins (Cuzzolin et al., 2016; Sabbadin and Moro, 2014; Deganutti et al., 2021a; Dong et al., 2020; Deganutti et al., 2021c; Cary et al., 2022). Since SuMD is optimized for (un)bindings, we have designed mwSuMD to address more complex conformational transitions and protein-protein associations. GPCRs preferentially couple to very few G proteins out of 23 possible counterparts (Flock et al., 2017; Wall et al., 2022). It is increasingly accepted that dynamic and transient interactions determine whether the encounter between a GPCR and a G protein results in productive or unproductive coupling (Culhane et al., 2022). MD simulations are considered a useful orthogonal tool for providing working hypotheses and rationalizing existing data on G protein selectivity. However, so far, it has not delivered as expected. Attempts have usually employed energetically biased simulations, have been confined to the G\u03b1 subunit, or considered a preformed GPCR:G protein complex (Wall et al., 2022; Mattedi et al., 2020; Miao and McCammon, 2018; Mafi et al., 2023).\n\nFirst, we validated mwSuMD on the nonapeptide arginine vasopressin (AVP) by simulating binding (dynamic docking) and unbinding paths from the vasopressin 2 receptor (V2R). Dynamic docking, although more computationally demanding than standard molecular docking, provides insights into the binding mode of ligands in a fully hydrated and flexible environment. Moreover, it informs about binding paths and the complete mechanism of formation leading to an intermolecular complex, delivering in the context of binding kinetics Guo et al., 2017 and structure-kinetics relationship studies (Guo et al., 2015). We then studied the class B1 GPCR glucagon-like peptide-1 receptor (GLP-1R) activation by the small molecule PF06882961. GLP-1R is a validated target in type 2 diabetes and probably the best-characterized class B1 GPCR from a structural perspective. GLP-1R is the only class B1 receptor with structurally characterized non-peptidic orthosteric agonists, which makes it a model system for studying the druggability of the entire B1 subfamily. After GLP-1R agonist binding and activation, the coupling of Gs and the release of guanosine diphosphate (GDP), the rate-limiting step of the G protein activation, was simulated for the first time using an energy-unbiased method.\n\nThese results demonstrate the usefulness of mwSuMD for illuminating the molecular events involved in GPCR function.\n\n## Results\n\n### Short mwSuMD time windows improve the AVP dynamic docking prediction\n\nAVP is an endogenous hormone (Figure 1a) that mediates antidiuretic effects on the kidney by signaling through three class A GPCR subtypes: V1a and V1b receptors activate phospholipases via Gq/11, while the V2R activates adenylyl cyclase by interacting with Gs (Birnbaumer, 2000) and is a therapeutic target for hyponatremia, hypertension, and incontinence (Ball, 2007). AVP is amphipathic and in the bound state interacts with both polar and hydrophobic V2R residues located on TM helices and ECLs (Figure 1b). Although AVP presents an intramolecular C1-C6 disulfide bond that limits the backbone\u2019s overall conformational flexibility, it has many rotatable bonds, making dynamic docking complicated (Gioia et al., 2017). We compared the performance of mwSuMD to the parent algorithm SuMD in reconstructing the experimental V2R:AVP complex using different settings, simulating a total of 92 binding events (Table 1). As a reference, the AVP root mean square deviation (RMSD) during a classic (unsupervised) equilibrium MD simulation of the X-ray AVP:V2R complex was 3.80\u00b10.52 \u00c5 (Figure 1\u2014figure supplement 1). SuMD (Cuzzolin et al., 2016; Sabbadin and Moro, 2014) produced a minimum RMSD to the cryo-EM complex of 4.28 \u00c5, with most of the replicas (i.e. distribution\u2019s mode) having an RMSD close to 10 \u00c5 (Figure 1\u2014figure supplement 2a). mwSuMD, with the same settings (Figure 1\u2014figure supplement 2b, Table 1) in terms of time window duration (600 ps), metric supervised (the distance between AVP and V2R), and acceptance method (slope) produced slightly more precise results (i.e. distribution\u2019s mode RMSD = 7.90 \u00c5) but similar accuracy (minimum RMSD = 4.60 \u00c5). Supervising the AVP RMSD to the experimental complex rather than the distance (Figure 1\u2014figure supplement 2c) and using the SMscore (Equation 1) as the acceptance method (Figure 1\u2014figure supplement 2d) worsened the prediction. Supervising distance and RMSD at the same time (Figure 1\u2014figure supplement 2e), employing the DMscore (Equation 2), recovered accuracy (minimum RMSD = 4.60 \u00c5) but not precision (distribution mode RMSD = 12.40 \u00c5). Interestingly, decreasing the time window duration from 600 ps to 100 ps impaired the SuMD ability to predict the experimental complex (Figure 1a), but enhanced mwSuMD accuracy and precision (Figure 1b\u2013d). The combination of RMSD as the supervised metric and SMscore produced the best results in terms of minimum RMSD and distribution mode RMSD, 3.85 \u00c5 and 4.40 \u00c5, respectively (Figure 1d, Video 1), in agreement with the AVP deviations in the equilibrium MD simulation of the X-ray AVP:V2R complex (Figure 1\u2014figure supplement 1). These results confirm the inherent complexity of reproducing the AVP:V2R complex via dynamic docking and suggest that short time windows can improve mwSuMD performance on this system. However, it is necessary to know the final bound state to employ the RMSD as the supervised metric, while the distance is required to dynamically dock ligands with unknown bound conformation as previously reported (Cuzzolin et al., 2016; Wall et al., 2022). Both distance and RMSD-based simulations delivered insights into the binding path and the residues involved along the recognition route. For example, mwSuMD pinpointed V2R residues E184ECL2, P298ECL3, and E303ECL3 (Figure 2a) as involved during AVP binding, although not in contact with the ligand in the orthosteric complex. None of them are yet characterized through mutagenesis studies according to the GPCRdb (Isberg et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig1-v1.jpg)\n\n**Figure 1.:** (a) Chemical structure and (b) binding more within the V2R orthosteric binding site; AVP is represented in orange stick, while V2R is in white ribbon and gray stick. For each set of settings (c\u2013f) the root mean square deviation (RMSD) of AVP C\u03b1 atoms to the cryo-electron microscopy (cryo-EM) structure 7DW9 is reported during the time course of each SuMD (c) or mwSuMD (d\u2013f) replica alongside the RMSD values distribution and the snapshot corresponding to the lowest RMSD values (AVP from the cryo-EM structure 7DW9 is in a cyan stick representation, while AVP from simulations is in a tan stick representation). A complete description of the simulation settings is reported in Table 1 and the Methods section. The dashed red line indicates the AVP RMSD during a classic (unsupervised) equilibrium MD simulation of the X-ray AVP:V2R complex (Figure 1\u2014figure supplement 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The average AVP root mean square deviation (RMSD) (computed on the C\u03b1 atoms) after stabilization of the system (second half of the trajectory) is indicated. AVP, arginine vasopressin; V2R, vasopressin 2 receptor.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** For each set of settings (a-e), the RMSD of AVP C\u03b1 atoms to the cryo-EM structure 7DW9 is reported during the time course of each SuMD (a) or mwSuMD (b-e) replica, alongside the RMSD values distribution and the snapshot corresponding to the lowest RMSD (AVP from the cryo EM structure 7DW9 is in a cyan stick representation, while AVP from simulations is in a tan stick representation). A complete description of the simulation settings is reported in Table 1 and the Methods section. The dashed red line indicates the AVP RMSD during a classic (unsupervised) equilibrium MD simulation of the X-ray AVP:V2R complex (Figure 1\u2014figure supplement 1).\n\n**Table 1.**\n Summary of all the simulations performed and the settings employed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>System</th>\n      <th># Replicas</th>\n      <th>TWduration</th>\n      <th># Walkers</th>\n      <th>Metric</th>\n      <th>Acceptance</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>V2R:AVPcomplex</td>\n      <td>1 classic MD</td>\n      <td>500 ns</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td rowspan=\"9\">V2R:AVPbinding</td>\n      <td>9 (SuMD)</td>\n      <td>600 ps</td>\n      <td>N/A</td>\n      <td>Distance</td>\n      <td>Slope</td>\n    </tr>\n    <tr>\n      <td>10 (mwSuMD)</td>\n      <td>600 ps</td>\n      <td>3</td>\n      <td>Distance</td>\n      <td>Slope</td>\n    </tr>\n    <tr>\n      <td>11 (mwSuMD)</td>\n      <td>600 ps</td>\n      <td>3</td>\n      <td>RMSD</td>\n      <td>Slope</td>\n    </tr>\n    <tr>\n      <td>8 (mwSuMD)</td>\n      <td>600 ps</td>\n      <td>3</td>\n      <td>Distance</td>\n      <td>SMscore</td>\n    </tr>\n    <tr>\n      <td>9 (mwSuMD)</td>\n      <td>600 ps</td>\n      <td>3</td>\n      <td>Distance and RMSD</td>\n      <td>DMscore</td>\n    </tr>\n    <tr>\n      <td>12 (mwSuMD)</td>\n      <td>100 ps</td>\n      <td>10</td>\n      <td>Distance and RMSD</td>\n      <td>DMscore</td>\n    </tr>\n    <tr>\n      <td>11 (mwSuMD)</td>\n      <td>100 ps</td>\n      <td>10</td>\n      <td>Distance</td>\n      <td>SMscore</td>\n    </tr>\n    <tr>\n      <td>11 (mwSuMD)</td>\n      <td>100 ps</td>\n      <td>10</td>\n      <td>RMSD</td>\n      <td>SMscore</td>\n    </tr>\n    <tr>\n      <td>10 (SuMD)</td>\n      <td>100 ps</td>\n      <td>N/A</td>\n      <td>Distance</td>\n      <td>Slope</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">V2R:AVPunbinding</td>\n      <td>5 (SuMD)</td>\n      <td>100 ps</td>\n      <td>N/A</td>\n      <td>Distance</td>\n      <td>Slope</td>\n    </tr>\n    <tr>\n      <td>5 (mwSuMD)</td>\n      <td>100 ps</td>\n      <td>10</td>\n      <td>Distance</td>\n      <td>SMscore</td>\n    </tr>\n    <tr>\n      <td>\u03b22 AR:Gs proteinbinding</td>\n      <td>3 (mwSuMD)</td>\n      <td>100 ps</td>\n      <td>5</td>\n      <td>Distance and RMSD</td>\n      <td>DMscore</td>\n    </tr>\n    <tr>\n      <td>A1R:Gi binding</td>\n      <td>1 (mwSuMD)</td>\n      <td>100 ps</td>\n      <td>3</td>\n      <td>RMSD</td>\n      <td>SMscore</td>\n    </tr>\n    <tr>\n      <td>GLP-1R:PF06882961</td>\n      <td>1 (mwSuMD)</td>\n      <td>100 ps</td>\n      <td>5</td>\n      <td>Distance or RMSD (or a combination)</td>\n      <td>SMscoreor DMscore</td>\n    </tr>\n    <tr>\n      <td>GLP-1R:Gs protein binding</td>\n      <td>3 (mwSuMD)</td>\n      <td>200 ps</td>\n      <td>3</td>\n      <td>Distance or RMSD</td>\n      <td>SMscoreor DMscore</td>\n    </tr>\n    <tr>\n      <td>Gs AHD opening</td>\n      <td>1 (mwSuMD)</td>\n      <td>100 ps</td>\n      <td>3</td>\n      <td>Distance</td>\n      <td>SMscore</td>\n    </tr>\n    <tr>\n      <td>GLP-1R:GsGDP unbinding</td>\n      <td>3</td>\n      <td>50 ps</td>\n      <td>5</td>\n      <td>Distance</td>\n      <td>SMscore</td>\n    </tr>\n  </tbody>\n</table>\n\n_N/A: not applicable; SuMD was not performed._\n\n![Figure 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig2-v1.jpg)\n\n**Figure 2.:** Vasopressin 2 receptor (V2R) residues involved in mwSuMD simulations of AVP. (a) Binding (dynamic docking); (b) unbinding simulations. (c) Dissociation of AVP from V2R. The root mean square deviation (RMSD) of AVP to the initial bound state is reported during the time course of five replicas of SuMD and mwSuMD, respectively.\n\n![Video 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-video1.mp4.jpg)\n\n**Video 1.:** Two-view of the mwSuMD replica better reproducing the AVP:V2R experimental complex. Left side: V2R is represented in white quick surface, while AVP is in transparent quick surface and green stick; right side: V2R is represented in white ribbon and cyan stick, while AVP is a green stick. The bound AVP conformation from PDB 7DW9 is reported as a reference in transparent orange ribbon and stick.\n\nFurther to binding, an SuMD approach was previously employed to reconstruct the unbinding path of ligands from several GPCRs (Deganutti et al., 2020b; Atanasio et al., 2020). We assessed mwSuMD\u2019s capability to simulate AVP unbinding from V2R. Five mwSuMD and five SuMD replicas were collected using 100 ps time windows (Table 1). Overall, mwSuMD outperformed SuMD in terms of time required to complete a dissociation (Figure 2c, Video 2), producing dissociation paths almost 10 times faster than SuMD. Such rapidity in dissociating inherently produces a limited sampling of metastable states along the pathway, which can be compensated by seeding classic (unsupervised) MD simulations from configurations extracted from the unbinding pathway (Deganutti et al., 2021b; Deganutti et al., 2020a). Here, the V2R residues involved during the dissociation were comparable to the binding (Figure 2a and b), although ECL2 and ECL3 were slightly more involved during the association than the dissociation, in analogy with other class A and B GPCRs (Dong et al., 2020; Deganutti et al., 2021b).\n\n![Video 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-video2.mp4.jpg)\n\n**Video 2.:** Two-view of the five mwSuMD replicas performed. Left side: V2R is represented in white quick surface, while AVP is in transparent quick surface and green stick; right side: V2R is represented in white ribbon and cyan stick, while AVP is a green stick.\n\n### PF06882961 binding and GLP-1R activation\n\nThe GLP-1R has been captured by cryo-EM in both the inactive and the active (Gs-bound) conformations and in complex with either peptide or non-peptide agonists (Zhao et al., 2020; Kawai et al., 2020; Ma et al., 2020; Zhang et al., 2020; Cong et al., 2021; Cong et al., 2022b). In the inactive GLP-1R, residues forming the binding site for the non-peptide agonist PF06882961 are dislocated and scattered due to the structural reorganization of the transmembrane domain (TMD) and ECD (Figure 3\u2014figure supplement 1a) that occurs on activation. Moreover, GLP-1R in complex with GLP-1 or different agonists present distinct structural features, even among structurally related ligands (Figure 3\u2014figure supplement 1b and c). This complicates the scenario and suggests divergent recognition mechanisms among different agonists. We simulated the binding of PF06882961, reaching an RMSD to its bound conformation in 7LCJ of 3.79\u00b10.83 \u00c5 (computed on the second half of the merged trajectory, superimposing on GLP-1R C\u03b1 atoms of TMD residues 150\u2013390), using multistep supervision on different system metrics (Figure 3) to model the structural hallmark of GLP-1R activation (Videos 3 and 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig3-v1.jpg)\n\n**Figure 3.:** Each panel reports the root mean square deviation (RMSD) to the position of the ligand in the active state (top panel) or a GLP-1R structural element over the time course (all but ECL3 converging to the active state). ECD: extracellular domain; TM: transmembrane helix; ECL: extracellular loop. The mwSuMD simulation was performed with four different settings over 1 \u00b5s in total. The red dashed lines show the initial RMSD value for reference.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) PF06882961 binding site in the apo and holo GLP-1R. In the apo GLP-1R (left transparent ribbon) the residues forming the binding site of the NPA PF06882961 are scattered due to the different conformation of the receptor. (b, c) NPAs stabilize divergent GLP-1R active conformations: (a) Different orientations of TM2, ECL1, and TM3; (b) divergent conformations of extracellular domain (ECD), ECL3, and TM7; (c) interaction fingerprint of NPAs (TT-OAD2, CHU-128, and PF06882911) and the endogenous agonist peptide GLP-1. Red bars indicate interactions with distinct residues in the GLP-1R.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Rotation of TM6 during glucagon-like peptide-1 receptor (GLP-1R) activation simulated by multiple walker supervised molecular dynamics (mwSuMD). The angle was measured as the dihedral formed by the backbone alpha carbon atoms T353, I357, T362, and I366. The angle values of the inactive and active cryo-electron microscopy (cryo-EM) structures are reported as references; (b) PF06882961 MM-GBSA binding energy during Gs binding; (d) guanosine diphosphate (GDP) MM-GBSA binding energy during Gs binding.\n\n![Video 3.](https://cdn.elifesciences.org/articles/96513/elife-96513-video3.mp4.jpg)\n\n**Video 3.:** The first and last frames of the PF06882961 binding simulations have been interpolated to produce a smoothed representative transition.\n\n![Video 4.](https://cdn.elifesciences.org/articles/96513/elife-96513-video4.mp4.jpg)\n\n**Video 4.:** PF06882961 is represented in cyan van der Waals spheres, while GLP-1R is orange ribbon; the GLP-1R experimental active conformation is reported in transparent green ribbon as reference.\n\nSeveral metrics were supervised consecutively. First, the distance between PF06882961 and the TMD as well as the RMSD of the ECD to the active state (stage 1); second, the RMSD of ECD and ECL1 to the active state (stage 2); third, the RMSD of PF06882961 and ECL3 to the active state (stage 3); lastly, only the RMSD of TM6 (residues I345-F367, C\u03b1 atoms) to the active state (stage 4). The combination of these supervisions produced a conformational transition of GLP-1R toward the active state (Figure 3, Video 4). Noteworthy, mwSuMD, like any other CV-based technique, requires some knowledge of the simulated system. The sequence of these supervisions was arbitrary and does not necessarily reflect the right order of the steps involved in GLP-1R activation. This kind of planned multistep approach is feasible when the end-point receptor inactive and active structures are available, and the inherent flexibility of different domains is known. In class B GPCRs, the ECD is the most dynamic substructure, followed by the ECL1 and ECL3, which display high plasticity during ligand binding (Dong et al., 2020; Cong et al., 2022a). For this reason, we first supervised these elements of GLP-1R, leaving the bottleneck of activation, TM6 outward movement, as the last step. However, the protocol employed can be tweaked to study how each conformational transition takes place and influences the receptor domains. Structural elements not directly supervised, such as TM1 or TM7, were influenced by the movement of supervised helixes or loops and therefore displayed an RMSD reduction to the active state. For example, the supervision of ECL3 (stage 3) and TM6 (stage 4) facilitated the spontaneous rearrangement of the ECD to an active-like conformation after the ECD had previously experienced transient high flexibility during stages 2 and 3 (Figure 3). These results suggest a concerted conformational transition for ECD and ECL1 during the binding of PF06882961 and an allosteric effect between ECL3 and the bottom of TM6. While the intracellular polar interactions were destabilized by the ECL3 transition to an active-like conformation (stages 2 and 3), the outward movement of TM6 (stage 4) did not favor the closure of ECL3 toward PF06882961, which appears to be driven by direct interactions between the ligand and R3105.40 or R3807.35. Interestingly, the mwSuMD simulation during stage 4 (TM6 supervision) sampled a counterclockwise helix rotation (Figure 3\u2014figure supplement 2a) consistent with the GLP-1R cryo-EM structures in the active, Gs-coupled state (Zhang et al., 2020; Zhang et al., 2021).\n\nIt is worth noting that 6LN2, the only inactive GLP-1R structure available complete with the ECD, was stabilized and solved with an antibody bound to the ECD. This strategy might have forced the ECD into a closed conformation that engages the EC vestibule of GLP-1R and possibly restrained the whole TMD in an altered conformation that deviates from the physiological conditions. This might explain why the RMSD of the TMD elements monitored during the simulation rarely reach values lower than 3 \u00c5 or 4 \u00c5.\n\nDuring the supervision of ECL3 and PF06882961 (stage 3), we observed a loosening of the intracellular polar interactions that stabilize GLP-1R TM6 in the inactive state. As a result, the subsequent supervision of TM6 (residues I345-F367, C\u03b1 atoms) rapidly produced the outward movement of TM6 toward the active state, in the last step of the mwSuMD simulation (stage 4). A more detailed analysis revealed that the central polar network, which is pivotal for mediating GLP-1 signaling (Wootten et al., 2016), and the residues at the TM6 kink level adopted active-like conformations during the final stage of the simulation (Figure 4a). In particular, the central polar network (E3646.53, H3636.52, and Q3947.49) experienced side chain rearrangements (Figure 4b) while extensive TM6 kink dislocation occurred at L3606.49, P3586.48, L3576.47, and I3576.46 (Figure 4c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig4-v1.jpg)\n\n**Figure 4.:** (a) Root mean square deviation (RMSD) to the active state GLP-1R (7LCI) of the residues forming the central polar network (magenta) and TM6 kink (orange) during mwSuMD of receptor activation; at the end of the simulations minimum values were reached (dashed square). (b) The position of the polar network within the core of transmembrane domain (TMD) (left-hand panel) and comparison between inactive, active, and mwSuMD final states for the side chains of the residues forming of the polar network. (c) The position of the TM6 kink (right-hand panel) and comparison between inactive, active, and mwSuMD final states for the side chains of the residues forming the TM6 kink.\n\n### Gs protein binding to GLP-1R and GDP release\n\nWe then focused on simulating the Gs binding to GLP-1R, after activation, without energy input. For this purpose, we first tested the binding between the prototypical class A receptor \u03b22 adrenoreceptor (\u03b22 AR) and the stimulatory G protein (Gs) (Video 5, Figure 5\u2014figure supplement 1a and b) by supervising the distance between Gs helix 5 (\u03b15) and \u03b22 AR as well as the RMSD of the intracellular end of TM6 to the fully active state of the receptor (see Supplementary Methods). During two out of three replicas, both G\u03b1 and G\u03b2 achieved distance values close to 5 \u00c5 (minimum RMSD = 3.94 \u00c5 and 3.96 \u00c5 respectively), in good agreement with the reference (the \u03b22 AR:Gs complex, PDB 3SN6, Figure 5\u2014figure supplement 1c). A possible pitfall is that G proteins bear potential palmitoylation and myristoylation sites that anchor the inactive trimer to the plasma membrane (Linder et al., 1993; Zhang et al., 2004), de facto restraining possible binding paths to the receptor. To address this point and test different conditions, we prepared the adenosine A1 receptor (A1R) and its principal effector, the inhibitory G protein (Gi) considering the Gi\u03b1 residue C3 and G\u03b3 residue C65 as palmitoylated and geranylgeranylated respectively and hence inserted in the membrane. Recently, the Gi binding to A1R was simulated by combining the biased methods GaMD with SuMD (Li et al., 2022) but without considering membrane-anchoring posttranslational modifications. Both classic (unsupervised) and mwSuMD simulations were performed on this system for comparison (Video 6, Figure 5\u2014figure supplement 1d). In about 50 ns of mwSuMD, the Gi\u03b1 subunit engaged its intracellular binding site on A1R and formed a complex in good agreement with the cryo-EM structure (PDB 6D9H, RMSD \u2248 5 \u00c5). For comparison, 1 \u03bcs of cMD did not produce a productive engagement as the Gi\u03b1 remained at RMSD values >40 \u00c5 (Figure 5\u2014figure supplement 1d), suggesting the effectiveness of mwSuMD in sampling G protein binding rare events without the input of energy. The membrane anchoring affected the overall Gi binding and the final complex, which was rotated compared to the experimental structure due to the lipidation of Gi\u03b1 and G\u03b3 (Figure 5\u2014figure supplement 1e).\n\n![Video 5.](https://cdn.elifesciences.org/articles/96513/elife-96513-video5.mp4.jpg)\n\n**Video 5.:** The inactive Gs (G\u03b1 subunit in orange, G\u03b2 subunit in green, and G\u03b3 subunit in yellow) recognizes \u03b22AR (black ribbon) bound to epinephrine (van der Waals spheres). The experimental \u03b22AR:Gs cryo-EM complex is reported in white ribbon for reference.\n\n![Video 6.](https://cdn.elifesciences.org/articles/96513/elife-96513-video6.mp4.jpg)\n\n**Video 6.:** The Gi (G\u03b1 subunit in magenta, G\u03b2 subunit in green, and G\u03b3 subunit in yellow) recognizes A1R (blue ribbon) bound to adenosine (not shown). The experimental A1R:Gi cryo-EM complex is reported in transparent ribbon for reference.\n\nEncouraged by results obtained on Gs and Gi binding to \u03b22 AR and A1R (Figure 5\u2014figure supplement 1), we extracted the GLP-1R active conformation described above and simulated the Gs binding to its intracellular side. Starting from the inactive, membrane-anchored Gs, we performed three independent mwSuMD replicas by supervising the distance between Gs helix \u03b15 and GLP-1R residues located at the intracellular binding interface (Figure 5a and e). All three mwSuMD replicas showed the Gs approaching GLP-1R, with two out of three reaching an RMSD of the Gs\u03b1 subunit close to or less than 10 \u00c5, compared to the experimental complex 7LCI (Figure 5e). Replica 2, in particular, reproduced the cryo-EM GLP-1R:Gs complex with RMSD values to 7LCI of 7.59\u00b11.58 \u00c5, 12.15\u00b12.13 \u00c5, and 13.73\u00b12.24 \u00c5 for G\u03b1, G\u03b2, and G\u03b3, respectively. Such values do not support convergence with the static experimental structure but are not far from the RMSDs measured in our previous simulations of GLP-1R in complex with Gs and GLP-1 (Deganutti et al., 2022) (G\u03b1=6.18 \u00b1 2.40 \u00c5; G\u03b2=7.22 \u00b1 3.12 \u00c5; G\u03b3=9.30 \u00b1 3.65 \u00c5), which indicates overall higher flexibility of G\u03b2 and G\u03b3 compared to G\u03b1, which acts as a sort of fulcrum bound to GLP-1R.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig5-v1.jpg)\n\n**Figure 5.:** (a\u2013d) Sequence of simulated events during the multiple walker supervised molecular dynamics (mwSuMD) Gs:GLP-1R simulations. (e) Root mean square deviation (RMSD) of Gs\u03b1 to the experimental GLP-1R:Gs complex (PDB 7LCJ) during three mwSuMD replicas; the RMSD to the experiential bound conformation (7LCJ) during the second part of Replica 2 (red dashed line) is reported for each Gs subunit. RMSDs were computed on G\u03b1 residues 11\u201343 and 205\u2013394 to the experimental structure 7LCI after superimposition on GLP-1R residues 140\u2013240 C\u03b1 atoms. (f) RMSD of the \u03b1G-\u03b14 loop (purple), the distance between K3426.31 and D323G\u03b1 (salmon), and the distance between guanosine diphosphate (GDP) and D295G\u03b1 (green) during Gs binding, alpha-helical domain (AHD) opening and GDP dissociation; (g) and (h) comparison between states extracted from before and after AHD opening. Before AHD opening (a), GLP-1R ICL3 interacted with D323G\u03b1 and D295G\u03b1 interacted with GDP; after AHD opening (b) and \u03b1G-\u03b14 loop reorganization (curved red arrow), \u03b1G and D295G\u03b1 moved away from GDP (straight red arrow), destabilizing its binding to Gs.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Root mean square deviation (RMSD) of Gs\u03b1 to the experimental complex (PDB 3NS6) during three multiple walker supervised molecular dynamics (mwSuMD) replicas; (b) RMSD of Gs\u03b2 to the experimental complex (PDB 3NS6) during three mwSuMD replicas; (c) superposition of the experimental Gs:\u03b22 AR complex (transparent ribbon) and the MD frame with the lowest Gs\u03b1 RMSD (3.94 \u00c5); (d) RMSD of Gi\u03b1 (residues 243\u2013355) to the A1R experimental complex (PDB 6D9H) during an mwSuMD simulation (red, magnified in the box) and a 1000-ns-long classic MD simulation (black); (e) two-view superposition of the experimental Gi:A1R complex (transparent ribbon) and the MD frame with the lowest Gi\u03b1 RMSD (4.82 \u00c5).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Bound (white, 6EG8) and dissociated (green, mwSuMD) GDP is shown as a stick representation.\n\nAccording to the model of G protein activation, the G protein binding has the effect of allosterically stabilizing the orthosteric agonist in complex with the receptor (Deganutti et al., 2022) and destabilizing the GDP bound to G\u03b1, triggering its release and exchange with guanosine triphosphate (Gregorio et al., 2017), upon opening of the G protein alpha-helical domain (AHD). Following this model, PF06882961 and GDP were respectively stabilized and destabilized during the simulated Gs association (Figure 3\u2014figure supplement 2b and c). The analysis of atomic contacts along the binding path of Gs to GLP-1R highlights a few persistent interactions not observed in the equilibrium MD simulations of GLP-1R:Gs cryo-EM complexes Deganutti et al., 2022; e.g., we propose the hidden interaction between D3446.33 and R385\u03b15 to be important for Gs coupling (Appendix 1\u2014table 1), which would explain the GLP-1 EC50 reduction upon mutation of position 344 to Ala (Yuan et al., 2023).\n\nExtending Replica 2, we further investigated the Gs activation mechanism by supervising the opening of the Gs AHD, which is considered a necessary step to allow GDP release from the Ras-like domain (Dror et al., 2015). We first easily obtained the opening of AHD (Figure 5b) and successively supervised the GDP unbinding in a further three replicas, seeded after the AHD opening. In one of these three mwSuMD simulations, the nucleotide dissociated from Gs (Figure 5d). Video 7 shows the full Gs binding, AHD opening, and GDP release. mwSuMD suggested several structural changes as implicated in GDP dissociation (Figure 5f\u2013h): (i) the AHD opening; (ii) the conformational change of \u03b1G-\u03b14 loop (residues A303G\u03b1-P332G\u03b1), in concert with a loosening of interactions between D323G\u03b1 and K3426.31, and (iii) the rupture of the hydrogen bond between GDP and D295G\u03b1 triggered by the movement of \u03b1G away from the GDP binding site (Figure 5f). The involvement of \u03b1G through the \u03b1G-\u03b14 during the release of GDP from Gs is supported by hydrogen/deuterium exchange experiments (Du et al., 2019), while the role of D275G\u03b1 has been probed with functional assays on the Gi isoform mutant D272G\u03b1iA (Ham et al., 2021). Moreover, a similar \u03b1G behavior was recently suggested by MD simulations of the Gs binding pathway to \u03b22 AR (Batebi et al., 2024). We also note that the \u03b1G-\u03b14 loop length and amino acidic composition diverge among G protein isoforms, further suggesting a role in G protein selectivity consistent with the hypothesis that, in different G proteins, distinct domains of the G\u03b1 subunit could be responsible for receptor selectivity (Glukhova et al., 2018). However, a more subtle allosteric communication through internal structural elements like the \u03b22-\u03b23 strands, prompted by \u03b15 tilting, could have weakened GDP phosphate binding as previously suggested by other groups (Sun et al., 2018; Kaya et al., 2016; Flock et al., 2015). Interestingly, no significant conformational changes of the \u03b26-\u03b15 loop happened before or during the GDP dissociation, suggesting that its conformational change as captured in the nucleotide-free GLP-1R:Gs complex (Figure 5\u2014figure supplement 2) occurs after the GDP release as a result of the loss of binding stabilization, rather than being an initiator of the GDP dissociation.\n\n![Video 7.](https://cdn.elifesciences.org/articles/96513/elife-96513-video7.mp4.jpg)\n\n**Video 7.:** The Gs protein binds GLP-1R (light grey) in complex with PF06882961 (stick representation) before the alpha-helical domain opens and allows GDP release from Gs\u03b1. The Gs\u03b1 subunit is yellow, G\u03b2 is dark gray, and G\u03b3 is orange.\n\n## Discussion\n\nClassic MD simulations sample phase space with an efficiency that depends on the energy barrier between neighboring minima. Processes like (un)binding and protein activation require the system to overcome numerous energy barriers, some creating bottlenecks that slow the transition down to the millisecond, or second, time scale. To reduce some of these limits, we have developed and tested on complex structural events characterizing GPCRs, an energetically unbiased adaptive sampling algorithm, namely mwSuMD, which is based on traditional SuMD, while drawing on parallel multiple replica methods (Dickson and Brooks, 2014; Sugita and Okamoto, 1999).\n\nOur simulations propose that remarkable predictivity can be obtained with distance-driven mwSuMD, as demonstrated by the lowest deviation from the experimental AVP:V2R complex. The dissociation of AVP from V2R was simulated much more rapidly by mwSuMD than by SuMD, suggesting it is an efficient tool for studying the dissociation of ligands from GPCRs. This is due to the more extensive sampling obtainable by seeding multiple parallel short simulations instead of a single simulation for batch.\n\nmwSuMD performed similarly to SuMD for the dynamic docking of AVP to V2R when time windows of 600 ps were employed. Time windows of 100 ps remarkably improved mwSuMD. Usually, dynamic docking is performed to either predict the geometry of complexes or sample the binding path of an already-known intermolecular complex, or both. The RMSD of AVP to the experimental coordinates as the supervised metric produced the best results. Consequently, the RMSD should be the metric of choice to study the binding path of well-known intermolecular complexes. The distance, on the other hand, is necessary when limited structural information about the binding mode is available. In the absence of structural information regarding the final bound state, it is possible to sample numerous binding events employing mwSuMD and evaluate the final bound states rank by applying end-point free energy binding methods like the molecular mechanics energies combined with the Poisson-Boltzmann or generalized Born and surface area continuum solvation (MM/PBSA and MM/GBSA [Wang et al., 2019]) models.\n\nWe increased the complexity of binding simulations by considering GLP-1R and the non-peptide agonist PF06882961. Using mwSuMD, we obtained a binding of PF06882961 in good agreement with the cryo-EM structure, followed by an active-like conformational transition of GLP-1R. The choice of the metrics supervised was driven by the structural data available (Zhang et al., 2020) and extensive preparatory MD simulations. However, binding routes are possible from either the bulk solvent or the membrane (Deganutti et al., 2021b; Stanley et al., 2016; Bokoch et al., 2018). These results show the power of the mwSuMD method, indicating that future applications could include ligand binding from the membrane, or alternative apo receptor conformations to improve the sampling for more difficult receptors.\n\nmwSuMD enabled us to simulate the Gs binding to the active GLP-1R and the subsequent GDP release. Our results suggest a concerted effect on GDP binding produced by AHD opening, \u03b1G-\u03b14 loop rearrangement, and \u03b1G shift away from the GDP site. The full rotation and elongation of \u03b15 as in cryo-EM structures would occur after the GDP release, supporting the role of hidden, metastable interactions as the driving force of G protein coupling and selectivity, as per recent work on GLP-1R (Yuan et al., 2023).\n\nWe stress that a complete understanding of a complex molecular event like G protein coupling requires the collection of numerous G protein binding paths and GDP dissociation events. mwSuMD is designed to yield a mechanistic description of structural events. For this reason, it integrates well with mutagenesis and kinetics experiments. We note that mwSuMD trajectories, since they describe the sequential states along a transition pathway, can represent a precious backbone for further MD sampling aimed at quantifying or predicting the kinetics of the transition. Approaches such as path collective variable metadynamics (Alba Ort\u00edz et al., 2019), Markov state models (Husic and Pande, 2018), or machine learning models (Kokh et al., 2019; P\u00e9rez et al., 2018) can be informed by mwSuMD. We will address these novel opportunities created by mwSuMD in future work.\n\nIn summary, we showcased the applicability domain of mwSuMD to key, but scarcely understood, aspects of GPCR structural biology, pharmacology, and drug design hitherto unaddressed by unbiased simulations. Given the generality and simplicity of its implementation, we anticipate that mwSuMD can be employed to study a wide range of structural phenomena characterizing both membrane and cytosolic proteins. mwSuMD is an ongoing project updated on https://github.com/pipitoludovico/mwSuMD_multiEngine (copy archived at Pipit\u00f2, 2025) and, in the recent implementation, can exploit ACEMD (Harvey et al., 2009), NAMD (Phillips et al., 2005), GROMACS (Berendsen et al., 1995), and OPENMM (Eastman et al., 2017) as graphic processing units (GPU)-based MD engines while offering the option to run also on CPUs.\n\n## Methods\n\n### mwSuMD protocol\n\nThe SuMD is an adaptive sampling method (Deganutti and Moro, 2017) based on a tabu-like algorithm for speeding up the simulation of binding events between small molecules (or peptides [Salmaso et al., 2017; Bower et al., 2018]) and proteins (Cuzzolin et al., 2016; Sabbadin and Moro, 2014) without the introduction of any energetic bias. Briefly, during SuMD, a series of short unbiased MD simulations are performed, and after each simulation, the distances between the centers of mass (or the geometrical centers) of the ligand and the predicted binding site (collected at regular time intervals) are fitted to a linear function. If the resulting slope is negative (showing progress toward the target), the next simulation step starts from the last set of coordinates and velocities, otherwise, the simulation is restarted by randomly assigning the atomic velocities.\n\nmwSuMD is designed to increase the sampling from a specific configuration by seeding user-decided parallel replicas (walkers) rather than one short simulation as per SuMD. Since one replica for each batch of walkers is always considered productive, mwSuMD gives more control than SuMD on the total wall-clock time used for a simulation. On the flip side, to maximize mwSuMD, it is optimal to assign one walker per GPU, requiring multiple GPUs to be effective. However, modern multi-threaded GPUs can still employ mwSuMD with a smaller cost in GPU performance. In the implementation for ACEMD used in this work, mwSuMD needs as input the initial coordinates of the system as a pdb file, the coordinates, and the atomic velocities of the system from the equilibration stage, the topology file of the system, and all the necessary force field parameters. The user can decide to supervise one (X) or two metrics (X\u2019, X\u2019\u2019) of the simulated system over short simulations seeded in batches, called walkers. In the former case, either the slope of the linear function interpolating the metric values or a score can be adopted to decide whether to continue the mwSuMD simulation. When the user decides to supervise two metrics, a specific score is used. In the present work, distances between centroids, RMSDs, or the number of atomic contacts between two selections were supervised (Table 1). The choice of the metrics is system and problem-dependent, as the RMSD is most useful when the final state is known, while the distance is required when the target state is unknown; details on the scores are given below. The decision to restart or continue mwSuMD after any short simulation is postponed until all the walkers of a batch are collected. The best short simulation is selected and extended by seeding the same number of walkers, with the same duration as the step before.\n\nFor each walker, the score for the supervision of a single metric (SMscore) is computed as the square root of the product between the metric value in the last frame (Xlast frame) and the average metric value over the short simulation (X\u0305):\n\n$$\nSMscore=\\sqrt{X_{lastframe}\u2217X\u00af}\n$$\n\nIf the metric is set to decrease (e.g. binding or dimerization) the walker with the lowest SMscore is continued, otherwise (e.g. unbinding or outward opening of domains), the walker with the highest score is continued. Using the SMscore rather than the slope should give more weight to the final state of each short simulation, as it is the starting point for the successive batch of simulations. Considering the average of the metric should favor short simulations consistently evolving in the desired direction along the metric.\n\nIf both X\u2019 and X\u2019\u2019 are set to increase during the mwSuMD simulations, the score for the supervision of two metrics (DMscore) on each walker is computed as follows:\n\n$$\nDMscore=((\\frac{X_{lastframe}^{\u2032}}{X\u00af_{batchwalkers}^{\u2032}}\u22121)+(\\frac{X_{lastframe}^{\u2032\u2032}}{X\u00af_{batchwalkers}^{\u2032\u2032}}\u22121))\u2217100\n$$\n\nwhere X\u2019last frame and X\u2019\u2019last frame are the metrics values in the last frame, while X\u0305\u2019batch walkers and X\u0305\u2019\u2019batch walkers represent the average value of the two metrics over all the walkers in the batch. Subtracting the value 1 to the metric ratio ensures that if one of the two metrics from the last frame (X\u2019last frame or X\u2019\u2019last frame) is equal to the average (X\u0305\u2019\u2019batch walkers or X\u0305\u2019\u2019batch walkers), then that metric addend is null, and DMscore depends only on the remaining metric. If any of the two metrics is set to decrease, then the corresponding component in Equation 2 is multiplied by \u20131 to maintain a positive score. Considering the average value of the two metrics over all the walkers rather than only over the considered walker should be more representative of the system evolution along the defined metric. In other words, the information about the metric is taken from all the walkers to better describe the evolution of the system.\n\nThe DMScore is designed to preserve some degree of independence between the two metrics supervised. Indeed, if the variation of one of them slows down and gets close to zero, the other metric is still able to drive the system\u2019s evolution. It should be noted that DMScore works at its best if the two metrics have similar variations over time, as in the case of distance and RMSD (both of which are distance-based). Notably, differently from SuMD, when a walker is extended by seeding a new batch of short simulations and the remaining walkers are stopped, the atomic velocities are not reassigned. This allows the simulations to be as short as a few picoseconds if desired, without introducing artifacts due to the thermostat latency to reach the target temperature (usually up to 10\u201320 ps when a simulation is restarted, reassigning the velocities of the atoms).\n\nThe current implementation of mwSuMD is for Python3 and exploits MDAnalysis (Michaud-Agrawal et al., 2011) and MDTRaj (McGibbon et al., 2015) modules.\n\n### Force field, ligands parameters, and general systems preparation\n\nThe CHARMM36 (Huang and MacKerell, 2013; Huang et al., 2017) /CGenFF 3.0.1 (Vanommeslaeghe and MacKerell, 2012; Vanommeslaeghe et al., 2012; Yu et al., 2012) force field combination was employed in this work. Initial ligand force field, topology, and parameter files were obtained from the ParamChem webserver (Vanommeslaeghe and MacKerell, 2012). Restrained electrostatic potential (Woods and Chappelle, 2000) partial charges were assigned to all the non-peptidic small molecules but adrenaline and GDP using Gaussian09 (HF/6-31G* level of theory) and AmberTools20.\n\nSix systems were prepared for MD (Table 1). Hydrogen atoms were added using the pdb2pqr (Dolinsky et al., 2004) and propka (Olsson et al., 2011) software (considering a simulated pH of 7.0); the protonation of titratable side chains was checked by visual inspection. The resulting receptors were separately inserted in a 1-palmitoyl-2-oleyl-sn-glycerol-3-phosphocholine (POPC) bilayer (previously built by using the VMD Membrane Builder plugin 1.1, Membrane Plugin, Version 1.1, at http://www.ks.uiuc.edu/Research/vmd/plugins/membrane/), through an insertion method (Sommer, 2013). Receptor orientation was obtained by superposing the coordinates on the corresponding structure retrieved from the OPM database (Lomize et al., 2006). Lipids overlapping the receptor TM helical bundle were removed and TIP3P water molecules (Jorgensen et al., 1983) were added to the simulation box employing the VMD Solvate plugin 1.5 (Solvate Plugin, Version 1.5. at https://www.ks.uiuc.edu/Research/vmd/plugins/solvate/). Finally, overall charge neutrality was reached by adding Na+/Cl- counterions up to the final concentration of 0.150 M, using the VMD Autoionize plugin 1.3 (Autoionize Plugin, Version 1.3. at https://www.ks.uiuc.edu/Research/vmd/plugins/autoionize/).\n\n### System equilibration and general MD settings\n\nThe MD engine ACEMD3 (Harvey et al., 2009) was employed for both the equilibration and productive simulations. The equilibration was achieved in isothermal-isobaric conditions (NPT) using the Berendsen barostat (Berendsen et al., 1984) (target pressure 1 atm) and the Langevin thermostat (Loncharich et al., 1992) (target temperature 300 K) with low damping of 1 ps\u20131. For the equilibration (integration time step of 2 fs): first, clashes between protein and lipid atoms were reduced through 1500 conjugate-gradient minimization steps, then a positional constraint of 1 kcal mol\u20131 \u00c5\u20132 on all heavy atoms was gradually released over different time windows: 2 ns for lipid phosphorus atoms, 60 ns for protein atoms other than alpha carbon atoms, 80 ns for alpha carbon atoms; a further 20 ns of equilibration was performed without any positional constraints.\n\nProductive trajectories (Table 1) were computed with an integration time step of 4 fs in the canonical ensemble (NVT). The target temperature was set at 300 K, using a thermostat damping of 0.1 ps\u20131; the M-SHAKE algorithm (Forester and Smith, 1998; Kr\u00e4utler et al., 2001) was employed to constrain the bond lengths involving hydrogen atoms. The cutoff distance for electrostatic interactions was set at 9 \u00c5, with a switching function applied beyond 7.5 \u00c5. Long-range Coulomb interactions were handled using the particle mesh Ewald summation method (Essmann et al., 1995) by setting the mesh spacing to 1.0 \u00c5.\n\n### Vasopressin binding simulations\n\nThe V2R in complex with vasopressin (AVP) and the Gs protein (Zhou et al., 2021) was retrieved from the Protein Data Bank (Berman et al., 2000) (PDB 7DW9). The Gs was removed from the system and the missing residues on ECL2 (G185-G189) were modeled from scratch using Modeller 9.19 (Fiser and Sali, 2003), considering the solution with the lowest DOPE score out of 10 conformations produced. AVP was placed away from V2R in the extracellular bulk and the resulting system was prepared for MD simulations and equilibrated as reported above.\n\nDuring SuMD simulations, the distance between the centroids of AVP residues C1-Q4 (backbone and side chains), anticipated to bind deep into V2R, and the V2R residues lining the peptide binding site Q96, Q174, Q291, and L312 (C\u03b1 atoms only) was supervised over time windows of 600 ps or 100 ps (Table 1). mwSuMD simulations considered the same distance, the RMSD of AVP residues C1-Q4 to the experimental bound complex, or the combination of the two during time windows of 600 ps (3 walkers) or 100 ps (10 walkers) (Table 1). Slope, SMscore, or DMscore (see Methods section mwSuMD protocol) was used in the different mwSuMD replicas performed (Table 1). Simulations were stopped after 300 ns (time window duration = 600 ps) or 50 ns (time window duration = 100 ps) of total SuMD or mwSuMD simulation time.\n\n### Vasopressin unbinding simulations\n\nThe V2R:AVP complex was prepared for MD simulations and equilibrated as reported above. During both SuMD and mwSuMD simulations (Table 1), the distance between the centroids of AVP residues C1-Q4 (backbone and side chains) and V2R residues Q96, Q174, Q291, and L312 (C\u03b1 atoms only) was supervised over time windows of 100 ps (10 walkers seeded for mwSuMD simulations). Replicas were stopped when the AVP-V2R distance reached 40 \u00c5.\n\n### GLP-1R:PF06882961 binding simulations\n\nThe inactive GLP-1R was retrieved from the Protein Data Bank (Berman et al., 2000) (PDB 6LN2) (Wu et al., 2020). Fab and the intracellular negative allosteric modulator were removed, and missing residues in the stalk (129\u2013134) and ICL2 (256\u2013263) were modeled with Modeller 9.19, considering the solutions with the lowest DOPE score out of 10 conformations produced. The PF06882961 initial conformation was extracted from the complex with the fully active GLP-1R (Zhang et al., 2021) (PDB 7LCJ) and placed away from GLP-1R in the extracellular bulk. The resulting system was prepared for MD simulations and equilibrated as reported above. CGenFF dihedral force field parameters of PF06882961 with the highest penalties (dihedrals NG2R51-CG321-CG3C41-CG3C41 [penalty = 143.5] and NG2R51-CG321-CG3C41-OG3C51 [penalty = 152.4]) were optimized (Figure 6a) employing Gaussian09 (geometric optimization and dihedral scan at HF/6-31g(d) level of theory) and the VMD force field toolkit plugin (Mayne et al., 2013).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/96513/elife-96513-fig6-v1.jpg)\n\n**Figure 6.:** (a) Potential energy surface derived from the scan of the PF06882961 rotatable bond through which the dihedrals NG2R51-CG321-CG3C41-CG3C41 (penalty = 143.5) and NG2R51-CG321-CG3C41-OG3C51 (penalty = 152.4) pass. The curve obtained from the original CGenFF parameters (red) was optimized (blue) to resemble the energy profile from quantum-mechanics computations at the HF/6-31g(d) level of theory (black). (b) Distances between glucagon-like peptide-1 receptor (GLP-1R) key residues E1381.33 and W214ECL1 (black), H3636.52 and F3907.45 (blue) and Q47ECD and S310ECL2 (red) during 8 \u03bcs of classic molecular dynamics (MD); (c) positions of the three couples of residues reported as two-side views.\n\nFour classic MD replicas, for a total of 8 \u03bcs, were performed on the inactive receptor (prepared for MD simulations and equilibrated as reported above) to assess the possible binding path to the receptor TMD and therefore decide the initial position of PF06882961 in the extracellular bulk of the simulation box. A visual inspection of the trajectories suggested three major conformational changes that could allow ligand access to the TMD (Figure 5b and c). Transitory openings of the ECD (distance Q47ECD-S310ECL2), TM6-TM7 (distance H3636.52-F3907.45), and TM1-ECL1 (distance E1381.33 and W214ECL1) were observed. Since the opening of TM1-ECL1 was observed in two replicas out of four, we placed the ligand in a favorable position for crossing that region of GLP-1R.\n\nmwSuMD simulations (Table 1) were performed stepwise to dock the ligand within GLP-1R first and then relax the receptor toward the active state. The PF06882961 binding was obtained by supervising at the same time the distance between the ligand\u2019s heavy atoms centroid and the centroid of GLP-1R TM7 residues L3797.34-F3817.36 (C\u03b1 atoms only), which are part of the orthosteric site, and the RMSD of the ECD (residues W33ECD-W120ECD, C\u03b1 atoms only) to the active state (PDB 7LCJ) until the former distance reached 4 \u00c5. In the second phase of mwSuMD, the RMSD of the ECD (residues W33ECD-W120ECD, C\u03b1 atoms only) and the ECL1 to the active state (PDB 7LCJ, C\u03b1 atoms of residues M2042.74-L2243.27) were supervised until the latter reached less than 4 \u00c5. During the third phase, the RMSDs of PF06882961, as well as the RMSD of ECL3 (residues A3686.57-T3787.33, C\u03b1 atoms), were supervised until the former reached values lower than 3 \u00c5. In the last mwSuMD step, only the RMSD of TM6 (residues I3456.34-F3676.56, C\u03b1 atoms) to the active state (PDB 7LCJ) was supervised until less than 5 \u00c5. RMSDs were computed after superimposition on TM2, ECL1, and TM3 residues 170\u2013240 (C\u03b1 atoms), which is the GLP-1R less flexible part (Deganutti et al., 2022).\n\n### Membrane-anchored Gs protein:GLP-1R simulations and GDP dissociation\n\nThe PDB 6EG8 was processed through Charmm-GUI (Jo et al., 2008) to palmitoylate residue C3G\u03b1i and geranylgeranylate residue C65G\u03b3. The resulting system was inserted into a 120\u00d7120 \u00c5 POPC membrane and previously built by using the VMD Membrane Builder plugin 1.1, Membrane Plugin, Version 1.1, at http://www.ks.uiuc.edu/Research/vmd/plugins/membrane. Lipids overlapping the palmitoyl and geranylgeranyl groups were removed and TIP3P water molecules (Jorgensen et al., 1983) were added to the simulation box by means of the VMD Solvate plugin 1.5 (Solvate Plugin, Version 1.5. at https://www.ks.uiuc.edu/Research/vmd/plugins/solvate/). Finally, overall charge neutrality was reached by adding Na+/Cl- counterions up to the final concentration of 0.150 M, using the VMD Autoionize plugin 1.3 (Autoionize Plugin, Version 1.3. at https://www.ks.uiuc.edu/Research/vmd/plugins/autoionize/). The first stage of equilibration was performed as reported above (Methods section System equilibration and general MD settings) for 120 ns, followed by a second stage in the NVT ensemble for a further 1 \u03bcs without any restraints to allow the membrane-anchored heterotrimeric Gs protein to stabilize within the intracellular side of the simulation box. After this two-stage long equilibration, GLP-1R from the final frame of the activation simulation (in complex with PF06882961) was manually inserted into the equilibrated membrane above the Gs protein using the corresponding structure retrieved from the OPM database as a reference, and the system further equilibrated for 120 ns as reported above (Methods section System equilibration and general MD settings). The GLP-1R-Gs system was then subjected to three simulations (Table 1). Each mwSuMD replica was interrupted by 500 ns of classic MD twice, to relax the system during the transition. In the supervised stages, the distance between residues M386-L394 G\u03b1s (all-atoms centroid) of helix 5 (\u03b15) and the GLP-1R intracellular residues R1762.46, R3486.37, S3526.41, and N4057.60 (C\u03b1 atoms only) was monitored, seeding 3 walkers of 200 ps each.\n\nThe AHD opening was simulated starting from the GLP-1R:Gs binding mwSuMD replica with the final lowest Gs RMSD, the lowest PF06882961 binding energy and the highest GDP binding energy (Replica 2 in Figure 5e) by supervising the distance between AHD residues G70-R199G\u03b1s and K300-L394G\u03b1s (all-atoms centroids) during 3 walkers of 100 ps each. 300 ns of classic MD was performed to relax the system. Finally, the GDP unbinding was supervised as the distance between GDP (all-atoms centroid) and residues E50G\u03b1s, K52G\u03b1s, T55G\u03b1s, K293G\u03b1s, and V367G\u03b1s (C\u03b1 atoms only) of G\u03b1s; 5 walkers were used in a 50-ps-long mwSuMD simulations.\n\n### MD analysis\n\nInteratomic distances were computed through MDAnalysis Michaud-Agrawal et al., 2011; RMSD were computed using VMD (Humphrey et al., 1996) and MDAnalysis (Michaud-Agrawal et al., 2011). Interatomic contacts and ligand-protein hydrogen bonds were detected using the GetContacts scripts tool (https://getcontacts.github.io), setting a hydrogen bond donor-acceptor distance of 3.3 \u00c5 and an angle value of 120\u00b0 as geometrical cutoffs. Contacts and hydrogen bond persistency are quantified as the percentage of frames (over all the frames obtained by merging the different replicas) in which protein residues formed contacts or hydrogen bonds with the ligand.\n\nThe MMPBSA.py (Miller et al., 2012) script, from the AmberTools20 suite (The Amber Molecular Dynamics Package, at http://ambermd.org/), was used to compute MM/GBSA method or the molecular mechanics MM/PBSA approach, after transforming the CHARMM psf topology files to an Amber prmtop format using ParmEd (documentation at https://parmed.github.io/ParmEd/html/index.html).\n\nSupplementary videos were produced employing VMD and avconv (at https://libav.org/avconv.html). Molecular graphics images were produced using the UCSF Chimera (Pettersen et al., 2004) (Version 1.14).\n\n### Gs protein:\u03b22 AR binding simulations\n\nmwSuMD simulations started from a not fully active, agonist-bound conformation of the \u03b22 AR and the inactive Gs to resemble pre-coupling conditions. The full-length model of the adrenergic \u03b22 receptor (\u03b22 AR) in a not fully active state was downloaded from GPCRdb (https://gpcrdb.org/). The full agonist adrenaline (ALE) was inserted in the orthosteric site by superposition with the PDB ID 4LDO (fully active \u03b22 AR) (Ring et al., 2013). The structure of the inactive, GDP-bound Gs protein (Liu et al., 2019) was retrieved from the Protein Data Bank (Berman et al., 2000) (PDB ID 6EG8) and placed in the intracellular bulk. The resulting system (Gs >50 \u00c5 away from \u03b22 AR) was prepared for MD simulations and equilibrated as reported above. The PDB ID 3SN6 (fully active \u03b22 AR in complex with Gs [Rasmussen et al., 2011]) was used as the reference for RMSD computations. Three mwSuMD replicas (Table 1) were performed supervising at the same time the distance between the helix 5 (\u03b15) G\u03b1s residues R385-L395 (C\u03b1 atoms centroid) and the \u03b22 AR (residues V31-P330 C\u03b1 atoms centroid) as well as the RMSD (superimposing on \u03b22 AR residues 70\u2013170 C\u03b1 atoms) of \u03b22 AR TM6 residues C265-I278 (C\u03b1 atoms only) to the fully active state, during 100 ps time windows (5 walkers). To monitor the progression of the simulations, we computed the RMSD of the C\u03b1 atoms of the G\u03b1 (residues 11\u201343 and residues 205\u2013394) and G\u03b2 subunits (residues 3\u2013340) to the experimental complex (Rasmussen et al., 2011; Video 3, Figure 5\u2014figure supplement 1). The flexibility of Gs\u03b2 is backed by both MD and cryo-EM data suggesting G protein rocking motions around Gs\u03b1:receptor interactions (Dong et al., 2020; Liang et al., 2020).\n\n### Membrane-anchored Gi protein:A1R simulations\n\nSince the full-length structure of the inactive human Gi protein has not yet been resolved by X-ray or cryo-EM, it was modeled by superimposing the AlphaFold2 (Jumper et al., 2021) AI models of the G\u03b1i (P63096-F1), G\u03b2 (Q9HAV0-F1), and G\u03b3 (P50151-F1) subunits to the PDB file 6EG8 (a Gs heterotrimer). The resulting homotrimer (without GDP) was processed through Charmm-GUI (Jo et al., 2008) to palmitoylate residue C3G\u03b1i and geranylgeranylate residue C65G\u03b3 (Linder et al., 1993; Mystek et al., 2019). The side chains of these two lipidated residues were manually inserted into a 120\u00d7120 \u00c5 POPC membrane and previously built by using the VMD Membrane Builder plugin 1.1, Membrane Plugin, Version 1.1. at http://www.ks.uiuc.edu/Research/vmd/plugins/membrane/. Lipids overlapping the palmitoyl and geranylgeranyl groups were removed and TIP3P water molecules (Jorgensen et al., 1983) were added to the simulation box by means of the VMD Solvate plugin 1.5 (Solvate Plugin, Version 1.5. at https://www.ks.uiuc.edu/Research/vmd/plugins/solvate/). Finally, overall charge neutrality was reached by adding Na+/Cl- counterions up to the final concentration of 0.150 M, using the VMD Autoionize plugin 1.3 (Autoionize Plugin, Version 1.3. at https://www.ks.uiuc.edu/Research/vmd/plugins/autoionize/). The first stage of equilibration was performed as reported above (Methods section System equilibration and general MD settings) for 120 ns, followed by a second stage in the NVT ensemble for a further 1 \u03bcs without any restraints to allow the membrane-anchored heterotrimeric Gi protein to stabilize within the intracellular side of the simulation box. After this two-stage long equilibration, the active state A1R in complex with adenosine (PDB 6D9H) was manually inserted into the equilibrated membrane above the Gi protein using the corresponding structure retrieved from the OPM database as a reference, and the system further equilibrated for 120 ns as reported in the Methods section System equilibration and general MD settings. The A1R-Gi system was then subjected to a 1-\u03bcs-long classic MD simulation and an mwSuMD simulation (Table 1). During the mwSuMD simulation, the RMSD (superimposing on A1R residues 40\u2013140 C\u03b1 atoms) of helix 5 (\u03b15) G\u03b1i residues 329\u2013354 to the PDB 6D9H was supervised, seeding 3 walkers of 100 ps each until the productive simulation time reached 50 ns (total simulation time 150 ns).\n\n### Numbering system\n\nThroughout the manuscript, the Ballesteros-Weinstein residues numbering system for class A (Ballesteros and Weinstein, 1995) and the Wootten residues numbering system for class B GPCRs (Wootten et al., 2013) are adopted.\n",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Toby W Allen, RMIT University Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96513.4.sa0](https://doi.org/10.7554/eLife.96513.4.sa0)\n\nThis study describes an improved adaptive sampling approach, multiple-walker Supervised Molecular Dynamics (mwSuMD), and its application to G protein-coupled receptors (GPCRs), which are the most abundant membrane proteins and key targets for drug discovery. The manuscript provides solid evidence that the mwSuMD approach can assist in the sampling of complex binding processes, leading to useful findings for GPCR activity, including resolution of interactions not seen experimentally. The method has the potential to have broad applicability in structural biology and pharmacology.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96513.4.sa1](https://doi.org/10.7554/eLife.96513.4.sa1)\n\nSummary:\n\nThe authors investigate ligand and protein-binding processes in GPCRs (including dimerization) by the multiple walker supervised molecular dynamics method. The paper is interesting and it is very well written.\n\nStrengths:\n\nThe authors' method is a powerful tool to gain insight on the structural basis for the pharmacology of G protein-coupled receptors.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96513.4.sa2](https://doi.org/10.7554/eLife.96513.4.sa2)\n\nThe study by Deganutti and co-workers is a methodological report on an adaptive sampling approach, multiple walker supervised molecular dynamics (mwSuMD), which represents an improved version of the previous SuMD.\n\nCase-studies concern complex conformational transitions in a number of G protein Coupled Receptors (GPCRs) involving long time-scale motions such as binding-unbinding and collective motions of domains or portions. GPCRs are specialized GEFs (guanine nucleotide exchange factors) of heterotrimeric G\u03b1 proteins of the Ras GTPase superfamily. They constitute the largest superfamily of membrane proteins and are of central biomedical relevance as privileged targets of currently marketed drugs.\n\nMwSuMD was exploited to address:\n\na) binding and unbinding of the arginine-vasopressin (AVP) cyclic peptide agonist to the V2 vasopressin receptor (V2R);\n\nb) molecular recognition of the \u03b22-adrenergic receptor (\u03b22-AR) and heterotrimeric GDP-bound Gs protein;\n\nc) molecular recognition of the A1-adenosine receptor (A1R) and palmotoylated and geranylgeranylated membrane-anchored heterotrimeric GDP-bound Gi protein;\n\nd) the whole process of GDP release from membrane-anchored heterotrimeric Gs following interaction with the glucagon-like peptide 1 receptor (GLP1R), converted to the active state following interaction with the orthosteric non-peptide agonist danuglipron.\n\nThe revised version has improved clarity and rigor compared to the original also thanks to the reduction in the number of complex case studies treated superficially.\n\nThe mwSuMD method is solid and valuable, has wide applicability and is compatible with the most world-widely used MD engines. It may be of interest to the computational structural biology community.\n\nThe huge amount of high-resolution data on GPCRs makes those systems suitable, although challenging, for method validation and development.\n\nWhile the approach is less energy-biased than other enhanced sampling methods, knowledge, at the atomic detail, of binding sites/interfaces and conformational states is needed to define the supervised metrics, the higher the resolution of such metrics is the more accurate the outcome is expected to be. Definition of the metrics is a user- and system-dependent process.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96513.4.sa3](https://doi.org/10.7554/eLife.96513.4.sa3)\n\nSummary:\n\nIn the present work Deganutti et al. report a structural study on GPCR functional dynamics using a computational approach called supervised molecular dynamics.\n\nStrengths:\n\nThe study has the potential to provide novel insight into GPCR functionality. An example is the interaction between D344 and R385 identified during the Gs coupling by GLP-1R. However, validation of the findings, even computationally through for instance in silico mutagenesis study, is advisable.\n\nWeaknesses:\n\nNo significant advance of the existing structural data on GPCR and GPCR/G protein coupling is provided. Most of the results are reproductions of the previously reported structures.\n",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8da440cc-f35a-45e5-b5f3-310b1d7e3edb",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C1",
+      "claim": "GPCRs are the target of about 35% of approved drugs",
+      "claim_type": "EXPLICIT",
+      "source": "The structural basis for the pharmacology of human G protein-coupled receptors (GPCRs), the most abundant membrane proteins and the target of about 35% of approved drugs, is still a matter of intense study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a widely cited statistic in the GPCR field, supported by citation in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "aa97a19b-1ee7-4e78-87ef-b16db5b4fd87",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C2",
+      "claim": "mwSuMD can address complex binding processes intrinsically linked to protein dynamics out of reach of classic MD",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that mwSuMD can address complex binding processes intrinsically linked to protein dynamics out of reach of classic MD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulations and results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "7774ce98-2428-4f9b-9d65-ab86f48b8830",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C3",
+      "claim": "This is the first time the whole sequence of events leading from an inactive GPCR to the GDP release is simulated without any energy bias",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first time the whole sequence of events leading from an inactive GPCR to the GDP release is simulated without any energy bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly state this is a novel achievement based on their simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "76b0c732-092e-4c24-810e-0686a84dbead",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C4",
+      "claim": "Vertebrate GPCRs are subdivided into five subfamilies according to function and sequence",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrate GPCRs are subdivided into five subfamilies (Rhodopsin or class A, Secretin or class B, Glutamate or class C, Adhesion, and Frizzled/Taste2) according to function and sequence (Schi\u00f6th and Fredriksson, 2005; G protein-coupled receptors, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established classification systems.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "33cc7045-ab34-48b1-870b-5f93580e0933",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C5",
+      "claim": "GPCRs possess seven transmembrane helices connected by three extracellular loops and three intracellular loops",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray and cryo-electron microscopy (cryo-EM) show that GPCRs possess seven transmembrane (TM) helices connected by three extracellular loops (ECLs) and three intracellular loops (ICLs), with an extended and structured N-terminal extracellular domain (ECD) in all subtypes, but class A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural description is supported by X-ray and cryo-EM data cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "50b09553-516c-452e-b76d-8d414270fd54",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C6",
+      "claim": "The primary function of GPCRs is transducing extracellular chemical signals into the cytosol by binding and activating four G protein families",
+      "claim_type": "EXPLICIT",
+      "source": "The primary function of GPCRs is transducing extracellular chemical signals into the cytosol by binding and activating four G protein families (Gs/olf, Gi/o, G12/13, and Gq/11) responsible for decreasing (Gi/o) or increasing (Gs/olf) cyclic adenosine-3',5'-monophosphate, and generating inositol-1,4,5-triphosphate and diacylglycerol to increase Ca2+ intracellular levels (Gq) (Syrovatkina et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional description is supported by citation to established GPCR signaling mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "8bcfe0dd-2bbf-4dc4-8e4b-432dd20286e3",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C7",
+      "claim": "Classic MD sampling is limited to the microsecond or, in the best conditions, the millisecond time scale",
+      "claim_type": "EXPLICIT",
+      "source": "However, classic MD sampling is limited to the microsecond or, in the best conditions, the millisecond time scale (Hollingsworth and Dror, 2018; Durrant and McCammon, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This limitation is supported by citations to literature on MD timescales.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "08182161-20f8-410e-a513-828d47984bde",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C8",
+      "claim": "Metadynamics, accelerated MD, and Gaussian-accelerated MD introduce an energy potential to overcome energy barriers",
+      "claim_type": "EXPLICIT",
+      "source": "Among the most popular and effective ones are metadynamics (Bussi and Laio, 2020) and path collective variables metadynamics (D'Amore et al., 2024), accelerated MD (aMD) (Hamelberg et al., 2004), and Gaussian-accelerated MD (GaMD) (Miao et al., 2015), which introduce an energy potential to overcome the energy barriers preventing the complete exploration of the free energy surface, thus de facto bias the simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization of biased MD methods is supported by citations to the respective methodologies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "9f1c8d33-658d-490b-a97b-ac7b95a107d6",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C9",
+      "claim": "SuMD is an energetically unbiased MD protocol",
+      "claim_type": "EXPLICIT",
+      "source": "Energetically unbiased MD protocols, on the other hand, comprise weighted ensemble MD (Zuckerman and Chong, 2017), swarms approach (Fleetwood et al., 2020), AdaptiveGoal (Lovera et al., 2019), and SuMD (Cuzzolin et al., 2016; Sabbadin and Moro, 2014), which have largely been applied to (unbinding) small molecules, peptides, and small proteins (Cuzzolin et al., 2016; Sabbadin and Moro, 2014; Deganutti et al., 2021a; Dong et al., 2020; Deganutti et al., 2021c; Cary et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is supported by citations to the SuMD methodology and related unbiased methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "ea8f7440-acf8-45b9-bf12-8a492d3e87b1",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C10",
+      "claim": "mwSuMD was designed to address more complex conformational transitions and protein-protein associations",
+      "claim_type": "EXPLICIT",
+      "source": "Since SuMD is optimized for (un)bindings, we have designed mwSuMD to address more complex conformational transitions and protein-protein associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the stated purpose of the method development.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "c94e9672-b37a-4204-9a2d-65733dd74c0e",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C11",
+      "claim": "GPCRs preferentially couple to very few G proteins out of 23 possible counterparts",
+      "claim_type": "EXPLICIT",
+      "source": "GPCRs preferentially couple to very few G proteins out of 23 possible counterparts (Flock et al., 2017; Wall et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This selectivity is supported by citations to studies on G protein coupling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "78abd675-7abe-45db-9f65-c2ad81bf9bc7",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C12",
+      "claim": "Dynamic and transient interactions determine whether the encounter between a GPCR and a G protein results in productive or unproductive coupling",
+      "claim_type": "EXPLICIT",
+      "source": "It is increasingly accepted that dynamic and transient interactions determine whether the encounter between a GPCR and a G protein results in productive or unproductive coupling (Culhane et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic understanding is supported by citation to recent work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "5eb9bb0f-172c-44b8-8a4f-592c90e0fb00",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C13",
+      "claim": "AVP is an endogenous hormone that mediates antidiuretic effects on the kidney by signaling through three class A GPCR subtypes",
+      "claim_type": "EXPLICIT",
+      "source": "AVP is an endogenous hormone (Figure 1a) that mediates antidiuretic effects on the kidney by signaling through three class A GPCR subtypes: V1a and V1b receptors activate phospholipases via Gq/11, while the V2R activates adenylyl cyclase by interacting with Gs (Birnbaumer, 2000) and is a therapeutic target for hyponatremia, hypertension, and incontinence (Ball, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional description is supported by citations to AVP pharmacology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "d1e738c0-d34e-4394-bc2a-757387d3c5eb",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C14",
+      "claim": "The average AVP RMSD during a classic MD simulation of the X-ray AVP:V2R complex was 3.80\u00b10.52 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "As a reference, the AVP root mean square deviation (RMSD) during a classic (unsupervised) equilibrium MD simulation of the X-ray AVP:V2R complex was 3.80\u00b10.52 \u00c5 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the simulation data presented in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "8a4a4837-7fcc-4da8-a350-af0c5af4747f",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C15",
+      "claim": "SuMD produced a minimum RMSD to the cryo-EM complex of 4.28 \u00c5 for AVP binding to V2R",
+      "claim_type": "EXPLICIT",
+      "source": "SuMD (Cuzzolin et al., 2016; Sabbadin and Moro, 2014) produced a minimum RMSD to the cryo-EM complex of 4.28 \u00c5, with most of the replicas (i.e. distribution's mode) having an RMSD close to 10 \u00c5 (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the SuMD simulations reported in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "2a589c1d-3e76-4a2e-88ba-8a5b670ab0bf",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C16",
+      "claim": "Decreasing the time window duration from 600 ps to 100 ps impaired the SuMD ability to predict the experimental complex",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, decreasing the time window duration from 600 ps to 100 ps impaired the SuMD ability to predict the experimental complex (Figure 1a), but enhanced mwSuMD accuracy and precision (Figure 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is based on the simulation results shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "e16abc3f-bded-42a8-8474-d478fdc1d32f",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C17",
+      "claim": "The combination of RMSD as the supervised metric and SMscore produced the best results for AVP binding with minimum RMSD of 3.85 \u00c5 and distribution mode RMSD of 4.40 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of RMSD as the supervised metric and SMscore produced the best results in terms of minimum RMSD and distribution mode RMSD, 3.85 \u00c5 and 4.40 \u00c5, respectively (Figure 1d, Video 1), in agreement with the AVP deviations in the equilibrium MD simulation of the X-ray AVP:V2R complex (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the mwSuMD simulations with specific settings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "bbfc0e94-8cb0-48ef-baa0-54677fe8a6c6",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C18",
+      "claim": "mwSuMD pinpointed V2R residues E184ECL2, P298ECL3, and E303ECL3 as involved during AVP binding",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mwSuMD pinpointed V2R residues E184ECL2, P298ECL3, and E303ECL3 (Figure 2a) as involved during AVP binding, although not in contact with the ligand in the orthosteric complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the mwSuMD simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "09cfa011-a072-4a44-a7b5-bc48f18f058f",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C19",
+      "claim": "None of the residues E184ECL2, P298ECL3, and E303ECL3 are yet characterized through mutagenesis studies according to the GPCRdb",
+      "claim_type": "EXPLICIT",
+      "source": "None of them are yet characterized through mutagenesis studies according to the GPCRdb (Isberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a database query cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "d704b10a-f4e2-450f-9b0e-ffc167c18bc5",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C20",
+      "claim": "mwSuMD outperformed SuMD in terms of time required to complete AVP dissociation from V2R",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, mwSuMD outperformed SuMD in terms of time required to complete a dissociation (Figure 2c, Video 2), producing dissociation paths almost 10 times faster than SuMD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of simulation times from the data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "6fa93772-f51e-47b1-ab93-87572984bb51",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C21",
+      "claim": "ECL2 and ECL3 were slightly more involved during AVP association than dissociation",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the V2R residues involved during the dissociation were comparable to the binding (Figure 2a and b), although ECL2 and ECL3 were slightly more involved during the association than the dissociation, in analogy with other class A and B GPCRs (Dong et al., 2020; Deganutti et al., 2021b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing binding and unbinding simulations, supported by citations to similar findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "65dbb6a3-0efe-46a5-aefb-ebf511ff1250",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C22",
+      "claim": "In the inactive GLP-1R, residues forming the binding site for PF06882961 are dislocated and scattered due to structural reorganization of the TMD and ECD",
+      "claim_type": "EXPLICIT",
+      "source": "In the inactive GLP-1R, residues forming the binding site for the non-peptide agonist PF06882961 are dislocated and scattered due to the structural reorganization of the transmembrane domain (TMD) and ECD (Figure 3\u2014figure supplement 1a) that occurs on activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing inactive and active structures.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "69177076-a07f-4436-82c7-f24e4bd2d4af",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C23",
+      "claim": "GLP-1R in complex with GLP-1 or different agonists present distinct structural features, even among structurally related ligands",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GLP-1R in complex with GLP-1 or different agonists present distinct structural features, even among structurally related ligands (Figure 3\u2014figure supplement 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing different GLP-1R structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "268681bb-b60a-42a6-963c-990fc234967a",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C24",
+      "claim": "mwSuMD simulated the binding of PF06882961 reaching an RMSD to its bound conformation in 7LCJ of 3.79\u00b10.83 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated the binding of PF06882961, reaching an RMSD to its bound conformation in 7LCJ of 3.79\u00b10.83 \u00c5 (computed on the second half of the merged trajectory, superimposing on GLP-1R C\u03b1 atoms of TMD residues 150\u2013390), using multistep supervision on different system metrics (Figure 3) to model the structural hallmark of GLP-1R activation (Videos 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the mwSuMD simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "6e8c3f8e-f89e-41fa-b91d-d66e4543e9cc",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C25",
+      "claim": "The mwSuMD simulation sampled a counterclockwise helix rotation of TM6 consistent with GLP-1R cryo-EM structures in the active, Gs-coupled state",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mwSuMD simulation during stage 4 (TM6 supervision) sampled a counterclockwise helix rotation (Figure 3\u2014figure supplement 2a) consistent with the GLP-1R cryo-EM structures in the active, Gs-coupled state (Zhang et al., 2020; Zhang et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation data compared to experimental structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "89929247-27f7-4e16-b218-90da4ba4f388",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C26",
+      "claim": "The central polar network is pivotal for mediating GLP-1 signaling",
+      "claim_type": "EXPLICIT",
+      "source": "A more detailed analysis revealed that the central polar network, which is pivotal for mediating GLP-1 signaling (Wootten et al., 2016), and the residues at the TM6 kink level adopted active-like conformations during the final stage of the simulation (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This functional importance is supported by citation, and the conformational change is observed in the simulation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "4eeac807-7ae2-43c1-af9a-03117ef29b54",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C27",
+      "claim": "During two out of three replicas of \u03b22 AR:Gs binding, both G\u03b1 and G\u03b2 achieved distance values close to 5 \u00c5 with minimum RMSD of 3.94 \u00c5 and 3.96 \u00c5 respectively",
+      "claim_type": "EXPLICIT",
+      "source": "During two out of three replicas, both G\u03b1 and G\u03b2 achieved distance values close to 5 \u00c5 (minimum RMSD = 3.94 \u00c5 and 3.96 \u00c5 respectively), in good agreement with the reference (the \u03b22 AR:Gs complex, PDB 3SN6, Figure 5\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the mwSuMD simulations of \u03b22 AR:Gs binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "24d11a01-91dd-425c-9940-4e1f0b92e462",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C28",
+      "claim": "G proteins bear potential palmitoylation and myristoylation sites that anchor the inactive trimer to the plasma membrane",
+      "claim_type": "EXPLICIT",
+      "source": "A possible pitfall is that G proteins bear potential palmitoylation and myristoylation sites that anchor the inactive trimer to the plasma membrane (Linder et al., 1993; Zhang et al., 2004), de facto restraining possible binding paths to the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on G protein lipidation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "4727111d-d670-4671-987b-b8a10c80a65a",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C29",
+      "claim": "In about 50 ns of mwSuMD, the Gi\u03b1 subunit engaged its intracellular binding site on A1R and formed a complex in good agreement with the cryo-EM structure with RMSD \u2248 5 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "In about 50 ns of mwSuMD, the Gi\u03b1 subunit engaged its intracellular binding site on A1R and formed a complex in good agreement with the cryo-EM structure (PDB 6D9H, RMSD \u2248 5 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the mwSuMD simulation of A1R:Gi binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "e56c6224-50ea-41d5-811c-2b324dbbbc94",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C30",
+      "claim": "1 \u03bcs of classic MD did not produce a productive engagement of Gi with A1R as the Gi\u03b1 remained at RMSD values >40 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, 1 \u03bcs of cMD did not produce a productive engagement as the Gi\u03b1 remained at RMSD values >40 \u00c5 (Figure 5\u2014figure supplement 1d), suggesting the effectiveness of mwSuMD in sampling G protein binding rare events without the input of energy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison between classic MD and mwSuMD results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "e04e3b9f-0c27-47a7-a6c4-fdc159d46575",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C31",
+      "claim": "All three mwSuMD replicas of Gs binding to GLP-1R showed the Gs approaching GLP-1R, with two out of three reaching an RMSD of the Gs\u03b1 subunit close to or less than 10 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "All three mwSuMD replicas showed the Gs approaching GLP-1R, with two out of three reaching an RMSD of the Gs\u03b1 subunit close to or less than 10 \u00c5, compared to the experimental complex 7LCI (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the mwSuMD simulations of Gs binding to GLP-1R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "84f4ad15-7cc9-49ce-b4fa-cd34a06fafbc",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C32",
+      "claim": "Replica 2 of Gs binding to GLP-1R reproduced the cryo-EM GLP-1R:Gs complex with RMSD values of 7.59\u00b11.58 \u00c5, 12.15\u00b12.13 \u00c5, and 13.73\u00b12.24 \u00c5 for G\u03b1, G\u03b2, and G\u03b3, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Replica 2, in particular, reproduced the cryo-EM GLP-1R:Gs complex with RMSD values to 7LCI of 7.59\u00b11.58 \u00c5, 12.15\u00b12.13 \u00c5, and 13.73\u00b12.24 \u00c5 for G\u03b1, G\u03b2, and G\u03b3, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "2c34cd4e-0006-45b6-b61c-a02c45f6f570",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C33",
+      "claim": "PF06882961 and GDP were respectively stabilized and destabilized during the simulated Gs association",
+      "claim_type": "EXPLICIT",
+      "source": "According to the model of G protein activation, the G protein binding has the effect of allosterically stabilizing the orthosteric agonist in complex with the receptor (Deganutti et al., 2022) and destabilizing the GDP bound to G\u03b1, triggering its release and exchange with guanosine triphosphate (Gregorio et al., 2017), upon opening of the G protein alpha-helical domain (AHD). Following this model, PF06882961 and GDP were respectively stabilized and destabilized during the simulated Gs association (Figure 3\u2014figure supplement 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation data that supports a cited model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "e21728dc-2dae-4852-b4c7-34fb810e532c",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C34",
+      "claim": "The interaction between D3446.33 and R385\u03b15 is proposed to be important for Gs coupling",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of atomic contacts along the binding path of Gs to GLP-1R highlights a few persistent interactions not observed in the equilibrium MD simulations of GLP-1R:Gs cryo-EM complexes Deganutti et al., 2022; e.g., we propose the hidden interaction between D3446.33 and R385\u03b15 to be important for Gs coupling (Appendix 1\u2014table 1), which would explain the GLP-1 EC50 reduction upon mutation of position 344 to Ala (Yuan et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on simulation observations and supported by cited mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "ddbb6191-9eda-43f7-bccc-58e0a5d384de",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C35",
+      "claim": "mwSuMD suggested several structural changes as implicated in GDP dissociation including AHD opening, conformational change of \u03b1G-\u03b14 loop, and rupture of the hydrogen bond between GDP and D295G\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "mwSuMD suggested several structural changes as implicated in GDP dissociation (Figure 5f\u2013h): (i) the AHD opening; (ii) the conformational change of \u03b1G-\u03b14 loop (residues A303G\u03b1-P332G\u03b1), in concert with a loosening of interactions between D323G\u03b1 and K3426.31, and (iii) the rupture of the hydrogen bond between GDP and D295G\u03b1 triggered by the movement of \u03b1G away from the GDP binding site (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These are observations from the mwSuMD simulation of GDP dissociation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "42c8c83b-db06-4879-9842-f89c362008d5",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C36",
+      "claim": "The involvement of \u03b1G through the \u03b1G-\u03b14 during the release of GDP from Gs is supported by hydrogen/deuterium exchange experiments",
+      "claim_type": "EXPLICIT",
+      "source": "The involvement of \u03b1G through the \u03b1G-\u03b14 during the release of GDP from Gs is supported by hydrogen/deuterium exchange experiments (Du et al., 2019), while the role of D275G\u03b1 has been probed with functional assays on the Gi isoform mutant D272G\u03b1iA (Ham et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "61cfa9dc-b3a8-41bf-a1dc-18339f0820c0",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C37",
+      "claim": "A similar \u03b1G behavior was recently suggested by MD simulations of the Gs binding pathway to \u03b22 AR",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a similar \u03b1G behavior was recently suggested by MD simulations of the Gs binding pathway to \u03b22 AR (Batebi et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent simulation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "984963c4-7e42-4bf2-b03c-e7cf6929556f",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C38",
+      "claim": "The \u03b1G-\u03b14 loop length and amino acidic composition diverge among G protein isoforms, suggesting a role in G protein selectivity",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the \u03b1G-\u03b14 loop length and amino acidic composition diverge among G protein isoforms, further suggesting a role in G protein selectivity consistent with the hypothesis that, in different G proteins, distinct domains of the G\u03b1 subunit could be responsible for receptor selectivity (Glukhova et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence analysis and supported by citation to a hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "a5259e16-8005-4495-bff9-a243377cfed3",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C39",
+      "claim": "No significant conformational changes of the \u03b26-\u03b15 loop happened before or during the GDP dissociation",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, no significant conformational changes of the \u03b26-\u03b15 loop happened before or during the GDP dissociation, suggesting that its conformational change as captured in the nucleotide-free GLP-1R:Gs complex (Figure 5\u2014figure supplement 2) occurs after the GDP release as a result of the loss of binding stabilization, rather than being an initiator of the GDP dissociation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation trajectory and an inference about the sequence of events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "2c960797-b1b0-4078-8f6d-ddb3516286c5",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C40",
+      "claim": "mwSuMD is based on traditional SuMD while drawing on parallel multiple replica methods",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce some of these limits, we have developed and tested on complex structural events characterizing GPCRs, an energetically unbiased adaptive sampling algorithm, namely mwSuMD, which is based on traditional SuMD, while drawing on parallel multiple replica methods (Dickson and Brooks, 2014; Sugita and Okamoto, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological basis of mwSuMD with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "d377a8a1-fe19-4acf-a788-49f8728b64ab",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C41",
+      "claim": "Distance-driven mwSuMD obtained remarkable predictivity as demonstrated by the lowest deviation from the experimental AVP:V2R complex",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations propose that remarkable predictivity can be obtained with distance-driven mwSuMD, as demonstrated by the lowest deviation from the experimental AVP:V2R complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "2a70ce52-9297-45bc-bae3-cbca3c153542",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C42",
+      "claim": "The dissociation of AVP from V2R was simulated much more rapidly by mwSuMD than by SuMD",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation of AVP from V2R was simulated much more rapidly by mwSuMD than by SuMD, suggesting it is an efficient tool for studying the dissociation of ligands from GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison of simulation times from the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "46236be4-6529-450b-ac29-e8267558b656",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C43",
+      "claim": "mwSuMD performed similarly to SuMD for the dynamic docking of AVP to V2R when time windows of 600 ps were employed",
+      "claim_type": "EXPLICIT",
+      "source": "mwSuMD performed similarly to SuMD for the dynamic docking of AVP to V2R when time windows of 600 ps were employed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of performance from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "36b3b65e-7181-465f-b7e2-c956443ec32a",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C44",
+      "claim": "Time windows of 100 ps remarkably improved mwSuMD performance for AVP binding to V2R",
+      "claim_type": "EXPLICIT",
+      "source": "Time windows of 100 ps remarkably improved mwSuMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing different time window settings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "2dacb026-cfea-41d0-884d-4cabd959bf99",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C45",
+      "claim": "The RMSD should be the metric of choice to study the binding path of well-known intermolecular complexes",
+      "claim_type": "EXPLICIT",
+      "source": "The RMSD of AVP to the experimental coordinates as the supervised metric produced the best results. Consequently, the RMSD should be the metric of choice to study the binding path of well-known intermolecular complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "89817e1d-52ba-43a5-a862-517855a0641d",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C46",
+      "claim": "The distance is necessary when limited structural information about the binding mode is available",
+      "claim_type": "EXPLICIT",
+      "source": "The distance, on the other hand, is necessary when limited structural information about the binding mode is available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on the nature of the metric.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "f103a4e8-d7ce-418a-a57b-280c08dd8f1b",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C47",
+      "claim": "mwSuMD results suggest a concerted effect on GDP binding produced by AHD opening, \u03b1G-\u03b14 loop rearrangement, and \u03b1G shift away from the GDP site",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest a concerted effect on GDP binding produced by AHD opening, \u03b1G-\u03b14 loop rearrangement, and \u03b1G shift away from the GDP site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "5cd2c495-9314-4783-96e0-686bd24a007d",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C48",
+      "claim": "The full rotation and elongation of \u03b15 would occur after the GDP release",
+      "claim_type": "EXPLICIT",
+      "source": "The full rotation and elongation of \u03b15 as in cryo-EM structures would occur after the GDP release, supporting the role of hidden, metastable interactions as the driving force of G protein coupling and selectivity, as per recent work on GLP-1R (Yuan et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation trajectory supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "0face2f2-c7ca-4e68-a3b5-f02bc10f086c",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C49",
+      "claim": "mwSuMD is designed to yield a mechanistic description of structural events",
+      "claim_type": "EXPLICIT",
+      "source": "mwSuMD is designed to yield a mechanistic description of structural events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the purpose and design of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "b900b860-351c-4f64-81c7-3734bc77efee",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C50",
+      "claim": "mwSuMD trajectories can represent a backbone for further MD sampling aimed at quantifying or predicting the kinetics of the transition",
+      "claim_type": "EXPLICIT",
+      "source": "We note that mwSuMD trajectories, since they describe the sequential states along a transition pathway, can represent a precious backbone for further MD sampling aimed at quantifying or predicting the kinetics of the transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "9d3331ac-eaa6-4820-b159-cdb0940dcc09",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C51",
+      "claim": "mwSuMD can be employed to study a wide range of structural phenomena characterizing both membrane and cytosolic proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Given the generality and simplicity of its implementation, we anticipate that mwSuMD can be employed to study a wide range of structural phenomena characterizing both membrane and cytosolic proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader applicability of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "b73c35cd-16c0-4e16-b298-e5bcae952479",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C52",
+      "claim": "mwSuMD can exploit ACEMD, NAMD, GROMACS, and OPENMM as GPU-based MD engines",
+      "claim_type": "EXPLICIT",
+      "source": "mwSuMD is an ongoing project updated on https://github.com/pipitoludovico/mwSuMD_multiEngine (copy archived at Pipit\u00f2, 2025) and, in the recent implementation, can exploit ACEMD (Harvey et al., 2009), NAMD (Phillips et al., 2005), GROMACS (Berendsen et al., 1995), and OPENMM (Eastman et al., 2017) as graphic processing units (GPU)-based MD engines while offering the option to run also on CPUs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the software implementation with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "3d33c47d-ea6c-4207-889c-300663a0ddc5",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C53",
+      "claim": "SuMD is an adaptive sampling method based on a tabu-like algorithm for speeding up the simulation of binding events without the introduction of any energetic bias",
+      "claim_type": "EXPLICIT",
+      "source": "The SuMD is an adaptive sampling method (Deganutti and Moro, 2017) based on a tabu-like algorithm for speeding up the simulation of binding events between small molecules (or peptides [Salmaso et al., 2017; Bower et al., 2018]) and proteins (Cuzzolin et al., 2016; Sabbadin and Moro, 2014) without the introduction of any energetic bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SuMD method with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "60b27cfe-0762-498e-9ac1-1a641db0928f",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C54",
+      "claim": "During SuMD, if the slope of distances is negative, the next simulation step starts from the last set of coordinates and velocities, otherwise the simulation is restarted by randomly assigning the atomic velocities",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, during SuMD, a series of short unbiased MD simulations are performed, and after each simulation, the distances between the centers of mass (or the geometrical centers) of the ligand and the predicted binding site (collected at regular time intervals) are fitted to a linear function. If the resulting slope is negative (showing progress toward the target), the next simulation step starts from the last set of coordinates and velocities, otherwise, the simulation is restarted by randomly assigning the atomic velocities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SuMD algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "ff25ff5e-dc99-4d88-8797-c926cb233d2b",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C55",
+      "claim": "mwSuMD is designed to increase the sampling from a specific configuration by seeding user-decided parallel replicas rather than one short simulation as per SuMD",
+      "claim_type": "EXPLICIT",
+      "source": "mwSuMD is designed to increase the sampling from a specific configuration by seeding user-decided parallel replicas (walkers) rather than one short simulation as per SuMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how mwSuMD differs from SuMD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "096b082a-b5c9-439a-ba76-a7733395f1b1",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C56",
+      "claim": "One replica for each batch of walkers is always considered productive in mwSuMD",
+      "claim_type": "EXPLICIT",
+      "source": "Since one replica for each batch of walkers is always considered productive, mwSuMD gives more control than SuMD on the total wall-clock time used for a simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mwSuMD algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "d8f9e37a-69f0-4e24-b786-9c3cd1a7581d",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C57",
+      "claim": "To maximize mwSuMD, it is optimal to assign one walker per GPU",
+      "claim_type": "EXPLICIT",
+      "source": "On the flip side, to maximize mwSuMD, it is optimal to assign one walker per GPU, requiring multiple GPUs to be effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical recommendation for implementing mwSuMD.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "a779d72a-8da2-4d9b-b368-c517e98cbe5e",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C58",
+      "claim": "The CHARMM36/CGenFF 3.0.1 force field combination was employed in this work",
+      "claim_type": "EXPLICIT",
+      "source": "The CHARMM36 (Huang and MacKerell, 2013; Huang et al., 2017) /CGenFF 3.0.1 (Vanommeslaeghe and MacKerell, 2012; Vanommeslaeghe et al., 2012; Yu et al., 2012) force field combination was employed in this work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "d4d0762e-dea7-4e77-a886-d928816186bd",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "claim_id": "C59",
+      "claim": "The MD engine ACEMD3 was employed for both the equilibration and productive simulations",
+      "claim_type": "EXPLICIT",
+      "source": "The MD engine ACEMD3 (Harvey et al., 2009) was employed for both the equilibration and productive simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed mwSuMD, an energetically unbiased adaptive sampling algorithm based on SuMD that uses multiple parallel replicas (walkers) to address complex conformational transitions and protein-protein associations. This method was designed to simulate the complete sequence of events from inactive GPCR to GDP release without energy bias, representing a novel computational achievement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C10, C40, C49, C51-C57 collectively describe the development and capabilities of mwSuMD. The method is well-documented with clear algorithmic descriptions (C53-C56), implementation details (C52, C57), and stated design goals (C10, C49). The novelty claim (C3) is supported by the comprehensive simulations presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "71f73217-f2fe-4928-ad24-6313b374b307",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "mwSuMD with 100 ps time windows and RMSD supervision using SMscore achieved the best performance for AVP binding to V2R (minimum RMSD 3.85 \u00c5, mode 4.40 \u00c5), outperforming both SuMD and other mwSuMD parameter combinations. The authors recommend RMSD as the metric of choice for known complexes and distance for unknown binding modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17, C41, C43-C46 present a systematic comparison of simulation parameters with quantitative RMSD measurements. The data shows clear performance differences between methods and parameter settings (C16, C17, C44), with the best results (C17) comparable to equilibrium MD (C14). The methodological recommendations (C45, C46) are appropriately qualified based on the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "57363d53-a0b9-4247-9fb9-30205a98d898",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "mwSuMD identified V2R residues E184ECL2, P298ECL3, and E303ECL3 as involved during AVP binding, though these residues are not in direct contact with the ligand in the orthosteric complex and have not been characterized by mutagenesis studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 present a testable prediction from the simulations. The identification of these residues is supported by simulation data (C18), and the lack of prior experimental characterization is verified through database query (C19). This represents a hypothesis-generating result that could guide future experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "89345fb4-6fed-478c-95cb-29a718f7f4c6",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "mwSuMD simulated AVP dissociation from V2R approximately 10 times faster than SuMD, with ECL2 and ECL3 slightly more involved during association than dissociation, consistent with observations in other GPCRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C42 present direct comparisons of simulation efficiency and mechanistic observations. The speed improvement (C20, C42) is quantified and supported by data in Figure 2c. The differential involvement of ECL2/ECL3 (C21) is supported by both simulation data and citations to similar findings in other GPCRs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "738a02e5-3cd4-471a-af6a-8830e45f7ab3",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mwSuMD simulated PF06882961 binding to GLP-1R and receptor activation, achieving an RMSD of 3.79\u00b10.83 \u00c5 to the bound conformation. The simulation captured key activation features including counterclockwise TM6 rotation and active-like conformations of the central polar network and TM6 kink residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 describe a complex multi-stage simulation of ligand binding and receptor activation. The structural observations (C22, C23) provide context, while the simulation results (C24, C25) are quantified with RMSD values and compared to experimental structures. The conformational changes (C25, C26) are supported by both simulation data and citations to experimental work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "7054de7a-51a2-4793-8405-f883ee28282b",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "mwSuMD successfully simulated G protein binding to GPCRs: \u03b22AR:Gs binding achieved minimum RMSDs of 3.94-3.96 \u00c5 in two of three replicas, and A1R:Gi binding reached RMSD \u22485 \u00c5 in ~50 ns, while 1 \u03bcs of classic MD failed to produce productive engagement (RMSD >40 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C29-C30 demonstrate mwSuMD's capability for protein-protein binding simulations with direct quantitative comparisons. The \u03b22AR:Gs results (C27) show good agreement with experimental structures in 2/3 replicas. The A1R:Gi comparison (C29-C30) provides strong evidence of mwSuMD's effectiveness by contrasting with failed classic MD, though the sample size is limited (1 simulation each).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "96e4a194-f8dc-426b-b02e-001c7141e6c3",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "mwSuMD simulated Gs binding to activated GLP-1R, with replica 2 achieving RMSDs of 7.59\u00b11.58 \u00c5 (G\u03b1), 12.15\u00b12.13 \u00c5 (G\u03b2), and 13.73\u00b12.24 \u00c5 (G\u03b3). During binding, PF06882961 was stabilized and GDP destabilized, and a hidden interaction between D344 and R385 was proposed as important for Gs coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C34 present G protein binding results with substantial RMSD values, particularly for G\u03b2 and G\u03b3 (C32). While the authors compare these to previous equilibrium MD simulations, the RMSDs are relatively high and only 2/3 replicas showed convergence (C31). The proposed D344-R385 interaction (C34) is supported by cited mutagenesis data but represents an inference from the simulations. More replicas and validation would strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "02428513-bd7f-4e31-a6ef-956e65a29a6b",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "mwSuMD simulations suggest GDP dissociation from Gs involves concerted structural changes: AHD opening, \u03b1G-\u03b14 loop rearrangement, and \u03b1G shift away from the GDP site. The \u03b26-\u03b15 loop showed no significant changes before GDP release, suggesting its conformational change occurs after GDP dissociation. The \u03b1G-\u03b14 loop's divergent sequence among G protein isoforms suggests a role in selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39, C47-C48 present a mechanistic model of GDP release supported by simulation observations (C35, C39) and experimental validation from cited H/D exchange and mutagenesis studies (C36). The proposed sequence of events (C39, C48) is appropriately qualified as inference. The selectivity hypothesis (C38, C47) is supported by sequence analysis and cited work. However, only one successful GDP dissociation was obtained from three replicas, limiting statistical confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims about GPCRs, their structure, function, and the limitations of classical MD methods are established knowledge supported by appropriate citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C9, C11-C13, C28 provide background context for the study. All are appropriately cited to established literature and represent accepted knowledge in the GPCR and MD simulation fields. These claims provide necessary context but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "ad2f99c1-15ac-4a54-87e0-f6c97328abbf",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that mwSuMD trajectories could serve as a backbone for further MD sampling aimed at quantifying or predicting transition kinetics using methods like path collective variable metadynamics, Markov state models, or machine learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is explicitly labeled as speculation about future applications. This is an appropriate and reasonable proposal given that mwSuMD generates transition pathways, though no data is presented to support this specific application. The claim is properly qualified as a proposed future direction rather than a demonstrated capability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "b63f2821-2ed2-4fe8-83d0-afd71e5b1762",
+      "content_id": "2915fc9a-47e6-4a60-9439-6f5724f6cf43",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The simulations employed the CHARMM36/CGenFF 3.0.1 force field combination and the ACEMD3 MD engine for equilibration and productive simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are straightforward methodological details that are appropriately cited. These are standard, well-established computational tools and their use is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6",
+      "content_id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed mwSuMD, an improved adaptive sampling method based on SuMD that uses multiple parallel replicas (walkers) to address complex conformational transitions and protein-protein associations without energetic bias. The method is compatible with multiple MD engines (ACEMD, NAMD, GROMACS, OPENMM) and designed to yield mechanistic descriptions of structural events.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently affirm the methodological contribution, with one stating 'The mwSuMD method is solid and valuable, has wide applicability and is compatible with the most world-widely used MD engines' and another noting it is 'a powerful tool to gain insight on the structural basis for the pharmacology of G protein-coupled receptors.' The editor confirms 'solid evidence that the mwSuMD approach can assist in the sampling of complex binding processes.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e",
+      "content_id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "mwSuMD simulations of AVP binding to V2R demonstrated improved performance over SuMD, particularly with 100 ps time windows and RMSD as the supervised metric combined with SMscore, achieving minimum RMSD of 3.85 \u00c5 and mode RMSD of 4.40 \u00c5, comparable to the equilibrium MD reference of 3.80\u00b10.52 \u00c5.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these methodological validation results without critique. One reviewer notes the study 'provides solid evidence that the mwSuMD approach can assist in the sampling of complex binding processes,' implicitly supporting the AVP:V2R benchmark data. The comparison to equilibrium MD and systematic parameter testing are not questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "3b6cd2ff-ea02-4f41-a5fb-f7020d99902f",
+      "content_id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "mwSuMD identified V2R residues E184ECL2, P298ECL3, and E303ECL3 as involved during AVP binding (though not in final contact), none of which are characterized in mutagenesis studies. The method also simulated AVP dissociation approximately 10 times faster than SuMD, with ECL2 and ECL3 slightly more involved during association than dissociation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not explicitly challenge these findings, one notes that 'validation of the findings, even computationally through for instance in silico mutagenesis study, is advisable,' suggesting the novel residue predictions require further support. The dissociation speed improvement is accepted as a methodological advantage but the biological insights about ECL involvement are not specifically discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "4226d292-43ca-4f40-a2c3-548289cccdb0",
+      "content_id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "mwSuMD simulated PF06882961 binding to GLP-1R using multistep supervision, achieving RMSD of 3.79\u00b10.83 \u00c5 and sampling a counterclockwise TM6 helix rotation consistent with active Gs-coupled structures. The simulation showed the central polar network and TM6 kink residues adopting active-like conformations, with PF06882961 stabilized and GDP destabilized during the process.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer states 'No significant advance of the existing structural data on GPCR and GPCR/G protein coupling is provided. Most of the results are reproductions of the previously reported structures,' suggesting these findings largely recapitulate known structural features rather than providing novel insights. However, the method's ability to simulate the activation pathway is not directly challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "19c80d3e-19cb-40c1-86d6-e6c5c8300825",
+      "content_id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "mwSuMD successfully simulated G protein binding to GPCRs: \u03b22AR:Gs achieved minimum RMSD of 3.94-3.96 \u00c5 in two of three replicas; A1R:Gi engagement reached RMSD \u22485 \u00c5 in ~50 ns while 1 \u03bcs classic MD failed (RMSD >40 \u00c5); GLP-1R:Gs binding showed two of three replicas reaching RMSD \u226410 \u00c5, with replica 2 achieving 7.59\u00b11.58 \u00c5 for G\u03b1.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these results as demonstrating the method's capability. The editor notes the approach 'can assist in the sampling of complex binding processes, leading to useful findings for GPCR activity.' The comparison to failed classic MD simulations effectively demonstrates mwSuMD's advantage for rare event sampling, which reviewers do not contest.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "141ad9f7-781b-40b0-bd34-0d6c6ee6ce63",
+      "content_id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "mwSuMD identified a 'hidden interaction' between D344^6.33 and R385^\u03b15 proposed to be important for Gs coupling to GLP-1R, which would explain the GLP-1 EC50 reduction upon D344A mutation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer specifically highlights this finding as having 'potential to provide novel insight into GPCR functionality' but emphasizes 'validation of the findings, even computationally through for instance in silico mutagenesis study, is advisable.' This indicates the claim is interesting but requires additional validation beyond the simulation observation and literature correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "be6502cc-3043-4b41-9840-35d9fa1cc50e",
+      "content_id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "mwSuMD simulated the complete sequence from inactive GPCR to GDP release without energy bias for the first time, identifying structural changes including AHD opening, \u03b1G-\u03b14 loop conformational change, and rupture of GDP-D295G\u03b1 hydrogen bond. The \u03b1G-\u03b14 loop's role is supported by H/D exchange experiments, and its sequence divergence among G protein isoforms suggests involvement in selectivity. The \u03b26-\u03b15 loop conformational change occurs after GDP release rather than initiating it.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this as a significant achievement. The editor states the manuscript 'provides solid evidence' for the method's capabilities, and one reviewer notes 'The mwSuMD method is solid and valuable' without challenging the GDP release mechanism. The experimental support cited for \u03b1G-\u03b14 loop involvement and consistency with recent simulations strengthen the claims, which reviewers do not question.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "9ddb107c-1899-44ea-8424-d6a113944b29",
+      "content_id": "59328e71-fabf-47b5-a6aa-e3d8066b208e",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose that mwSuMD trajectories can serve as a backbone for further MD sampling to quantify kinetics and anticipate the method can be applied to a wide range of structural phenomena in both membrane and cytosolic proteins.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers support the method's broad applicability. One states 'has wide applicability and is compatible with the most world-widely used MD engines. It may be of interest to the computational structural biology community,' and the editor notes it 'has the potential to have broad applicability in structural biology and pharmacology.' These forward-looking claims about utility are accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa97a19b-1ee7-4e78-87ef-b16db5b4fd87",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "7774ce98-2428-4f9b-9d65-ab86f48b8830",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "ea8f7440-acf8-45b9-bf12-8a492d3e87b1",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "2c960797-b1b0-4078-8f6d-ddb3516286c5",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "0face2f2-c7ca-4e68-a3b5-f02bc10f086c",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "9d3331ac-eaa6-4820-b159-cdb0940dcc09",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "b73c35cd-16c0-4e16-b298-e5bcae952479",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "3d33c47d-ea6c-4207-889c-300663a0ddc5",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "60b27cfe-0762-498e-9ac1-1a641db0928f",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "ff25ff5e-dc99-4d88-8797-c926cb233d2b",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "096b082a-b5c9-439a-ba76-a7733395f1b1",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "d8f9e37a-69f0-4e24-b786-9c3cd1a7581d",
+      "result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19"
+    },
+    {
+      "claim_id": "d1e738c0-d34e-4394-bc2a-757387d3c5eb",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "8a4a4837-7fcc-4da8-a350-af0c5af4747f",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "2a589c1d-3e76-4a2e-88ba-8a5b670ab0bf",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "e16abc3f-bded-42a8-8474-d478fdc1d32f",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "d377a8a1-fe19-4acf-a788-49f8728b64ab",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "46236be4-6529-450b-ac29-e8267558b656",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "36b3b65e-7181-465f-b7e2-c956443ec32a",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "2dacb026-cfea-41d0-884d-4cabd959bf99",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "89817e1d-52ba-43a5-a862-517855a0641d",
+      "result_id": "71f73217-f2fe-4928-ad24-6313b374b307"
+    },
+    {
+      "claim_id": "bbfc0e94-8cb0-48ef-baa0-54677fe8a6c6",
+      "result_id": "57363d53-a0b9-4247-9fb9-30205a98d898"
+    },
+    {
+      "claim_id": "09cfa011-a072-4a44-a7b5-bc48f18f058f",
+      "result_id": "57363d53-a0b9-4247-9fb9-30205a98d898"
+    },
+    {
+      "claim_id": "d704b10a-f4e2-450f-9b0e-ffc167c18bc5",
+      "result_id": "89345fb4-6fed-478c-95cb-29a718f7f4c6"
+    },
+    {
+      "claim_id": "6fa93772-f51e-47b1-ab93-87572984bb51",
+      "result_id": "89345fb4-6fed-478c-95cb-29a718f7f4c6"
+    },
+    {
+      "claim_id": "2a70ce52-9297-45bc-bae3-cbca3c153542",
+      "result_id": "89345fb4-6fed-478c-95cb-29a718f7f4c6"
+    },
+    {
+      "claim_id": "65dbb6a3-0efe-46a5-aefb-ebf511ff1250",
+      "result_id": "738a02e5-3cd4-471a-af6a-8830e45f7ab3"
+    },
+    {
+      "claim_id": "69177076-a07f-4436-82c7-f24e4bd2d4af",
+      "result_id": "738a02e5-3cd4-471a-af6a-8830e45f7ab3"
+    },
+    {
+      "claim_id": "268681bb-b60a-42a6-963c-990fc234967a",
+      "result_id": "738a02e5-3cd4-471a-af6a-8830e45f7ab3"
+    },
+    {
+      "claim_id": "6e8c3f8e-f89e-41fa-b91d-d66e4543e9cc",
+      "result_id": "738a02e5-3cd4-471a-af6a-8830e45f7ab3"
+    },
+    {
+      "claim_id": "89929247-27f7-4e16-b218-90da4ba4f388",
+      "result_id": "738a02e5-3cd4-471a-af6a-8830e45f7ab3"
+    },
+    {
+      "claim_id": "4eeac807-7ae2-43c1-af9a-03117ef29b54",
+      "result_id": "7054de7a-51a2-4793-8405-f883ee28282b"
+    },
+    {
+      "claim_id": "4727111d-d670-4671-987b-b8a10c80a65a",
+      "result_id": "7054de7a-51a2-4793-8405-f883ee28282b"
+    },
+    {
+      "claim_id": "e56c6224-50ea-41d5-811c-2b324dbbbc94",
+      "result_id": "7054de7a-51a2-4793-8405-f883ee28282b"
+    },
+    {
+      "claim_id": "e04e3b9f-0c27-47a7-a6c4-fdc159d46575",
+      "result_id": "96e4a194-f8dc-426b-b02e-001c7141e6c3"
+    },
+    {
+      "claim_id": "84f4ad15-7cc9-49ce-b4fa-cd34a06fafbc",
+      "result_id": "96e4a194-f8dc-426b-b02e-001c7141e6c3"
+    },
+    {
+      "claim_id": "2c34cd4e-0006-45b6-b61c-a02c45f6f570",
+      "result_id": "96e4a194-f8dc-426b-b02e-001c7141e6c3"
+    },
+    {
+      "claim_id": "e21728dc-2dae-4852-b4c7-34fb810e532c",
+      "result_id": "96e4a194-f8dc-426b-b02e-001c7141e6c3"
+    },
+    {
+      "claim_id": "ddbb6191-9eda-43f7-bccc-58e0a5d384de",
+      "result_id": "02428513-bd7f-4e31-a6ef-956e65a29a6b"
+    },
+    {
+      "claim_id": "42c8c83b-db06-4879-9842-f89c362008d5",
+      "result_id": "02428513-bd7f-4e31-a6ef-956e65a29a6b"
+    },
+    {
+      "claim_id": "61cfa9dc-b3a8-41bf-a1dc-18339f0820c0",
+      "result_id": "02428513-bd7f-4e31-a6ef-956e65a29a6b"
+    },
+    {
+      "claim_id": "984963c4-7e42-4bf2-b03c-e7cf6929556f",
+      "result_id": "02428513-bd7f-4e31-a6ef-956e65a29a6b"
+    },
+    {
+      "claim_id": "a5259e16-8005-4495-bff9-a243377cfed3",
+      "result_id": "02428513-bd7f-4e31-a6ef-956e65a29a6b"
+    },
+    {
+      "claim_id": "f103a4e8-d7ce-418a-a57b-280c08dd8f1b",
+      "result_id": "02428513-bd7f-4e31-a6ef-956e65a29a6b"
+    },
+    {
+      "claim_id": "5cd2c495-9314-4783-96e0-686bd24a007d",
+      "result_id": "02428513-bd7f-4e31-a6ef-956e65a29a6b"
+    },
+    {
+      "claim_id": "8da440cc-f35a-45e5-b5f3-310b1d7e3edb",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "76b0c732-092e-4c24-810e-0686a84dbead",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "33cc7045-ab34-48b1-870b-5f93580e0933",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "50b09553-516c-452e-b76d-8d414270fd54",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "8bcfe0dd-2bbf-4dc4-8e4b-432dd20286e3",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "08182161-20f8-410e-a513-828d47984bde",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "9f1c8d33-658d-490b-a97b-ac7b95a107d6",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "c94e9672-b37a-4204-9a2d-65733dd74c0e",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "78abd675-7abe-45db-9f65-c2ad81bf9bc7",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "5eb9bb0f-172c-44b8-8a4f-592c90e0fb00",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "24d11a01-91dd-425c-9940-4e1f0b92e462",
+      "result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2"
+    },
+    {
+      "claim_id": "b900b860-351c-4f64-81c7-3734bc77efee",
+      "result_id": "ad2f99c1-15ac-4a54-87e0-f6c97328abbf"
+    },
+    {
+      "claim_id": "a779d72a-8da2-4d9b-b368-c517e98cbe5e",
+      "result_id": "b63f2821-2ed2-4fe8-83d0-afd71e5b1762"
+    },
+    {
+      "claim_id": "d4d0762e-dea7-4e77-a886-d928816186bd",
+      "result_id": "b63f2821-2ed2-4fe8-83d0-afd71e5b1762"
+    },
+    {
+      "claim_id": "aa97a19b-1ee7-4e78-87ef-b16db5b4fd87",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "ea8f7440-acf8-45b9-bf12-8a492d3e87b1",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "2c960797-b1b0-4078-8f6d-ddb3516286c5",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "0face2f2-c7ca-4e68-a3b5-f02bc10f086c",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "b73c35cd-16c0-4e16-b298-e5bcae952479",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "3d33c47d-ea6c-4207-889c-300663a0ddc5",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "60b27cfe-0762-498e-9ac1-1a641db0928f",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "ff25ff5e-dc99-4d88-8797-c926cb233d2b",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "096b082a-b5c9-439a-ba76-a7733395f1b1",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "d8f9e37a-69f0-4e24-b786-9c3cd1a7581d",
+      "result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6"
+    },
+    {
+      "claim_id": "d1e738c0-d34e-4394-bc2a-757387d3c5eb",
+      "result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e"
+    },
+    {
+      "claim_id": "8a4a4837-7fcc-4da8-a350-af0c5af4747f",
+      "result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e"
+    },
+    {
+      "claim_id": "2a589c1d-3e76-4a2e-88ba-8a5b670ab0bf",
+      "result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e"
+    },
+    {
+      "claim_id": "e16abc3f-bded-42a8-8474-d478fdc1d32f",
+      "result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e"
+    },
+    {
+      "claim_id": "d377a8a1-fe19-4acf-a788-49f8728b64ab",
+      "result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e"
+    },
+    {
+      "claim_id": "46236be4-6529-450b-ac29-e8267558b656",
+      "result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e"
+    },
+    {
+      "claim_id": "36b3b65e-7181-465f-b7e2-c956443ec32a",
+      "result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e"
+    },
+    {
+      "claim_id": "2dacb026-cfea-41d0-884d-4cabd959bf99",
+      "result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e"
+    },
+    {
+      "claim_id": "bbfc0e94-8cb0-48ef-baa0-54677fe8a6c6",
+      "result_id": "3b6cd2ff-ea02-4f41-a5fb-f7020d99902f"
+    },
+    {
+      "claim_id": "09cfa011-a072-4a44-a7b5-bc48f18f058f",
+      "result_id": "3b6cd2ff-ea02-4f41-a5fb-f7020d99902f"
+    },
+    {
+      "claim_id": "d704b10a-f4e2-450f-9b0e-ffc167c18bc5",
+      "result_id": "3b6cd2ff-ea02-4f41-a5fb-f7020d99902f"
+    },
+    {
+      "claim_id": "6fa93772-f51e-47b1-ab93-87572984bb51",
+      "result_id": "3b6cd2ff-ea02-4f41-a5fb-f7020d99902f"
+    },
+    {
+      "claim_id": "2a70ce52-9297-45bc-bae3-cbca3c153542",
+      "result_id": "3b6cd2ff-ea02-4f41-a5fb-f7020d99902f"
+    },
+    {
+      "claim_id": "65dbb6a3-0efe-46a5-aefb-ebf511ff1250",
+      "result_id": "4226d292-43ca-4f40-a2c3-548289cccdb0"
+    },
+    {
+      "claim_id": "69177076-a07f-4436-82c7-f24e4bd2d4af",
+      "result_id": "4226d292-43ca-4f40-a2c3-548289cccdb0"
+    },
+    {
+      "claim_id": "268681bb-b60a-42a6-963c-990fc234967a",
+      "result_id": "4226d292-43ca-4f40-a2c3-548289cccdb0"
+    },
+    {
+      "claim_id": "6e8c3f8e-f89e-41fa-b91d-d66e4543e9cc",
+      "result_id": "4226d292-43ca-4f40-a2c3-548289cccdb0"
+    },
+    {
+      "claim_id": "89929247-27f7-4e16-b218-90da4ba4f388",
+      "result_id": "4226d292-43ca-4f40-a2c3-548289cccdb0"
+    },
+    {
+      "claim_id": "2c34cd4e-0006-45b6-b61c-a02c45f6f570",
+      "result_id": "4226d292-43ca-4f40-a2c3-548289cccdb0"
+    },
+    {
+      "claim_id": "4eeac807-7ae2-43c1-af9a-03117ef29b54",
+      "result_id": "19c80d3e-19cb-40c1-86d6-e6c5c8300825"
+    },
+    {
+      "claim_id": "4727111d-d670-4671-987b-b8a10c80a65a",
+      "result_id": "19c80d3e-19cb-40c1-86d6-e6c5c8300825"
+    },
+    {
+      "claim_id": "e56c6224-50ea-41d5-811c-2b324dbbbc94",
+      "result_id": "19c80d3e-19cb-40c1-86d6-e6c5c8300825"
+    },
+    {
+      "claim_id": "e04e3b9f-0c27-47a7-a6c4-fdc159d46575",
+      "result_id": "19c80d3e-19cb-40c1-86d6-e6c5c8300825"
+    },
+    {
+      "claim_id": "84f4ad15-7cc9-49ce-b4fa-cd34a06fafbc",
+      "result_id": "19c80d3e-19cb-40c1-86d6-e6c5c8300825"
+    },
+    {
+      "claim_id": "e21728dc-2dae-4852-b4c7-34fb810e532c",
+      "result_id": "141ad9f7-781b-40b0-bd34-0d6c6ee6ce63"
+    },
+    {
+      "claim_id": "7774ce98-2428-4f9b-9d65-ab86f48b8830",
+      "result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e"
+    },
+    {
+      "claim_id": "ddbb6191-9eda-43f7-bccc-58e0a5d384de",
+      "result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e"
+    },
+    {
+      "claim_id": "42c8c83b-db06-4879-9842-f89c362008d5",
+      "result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e"
+    },
+    {
+      "claim_id": "61cfa9dc-b3a8-41bf-a1dc-18339f0820c0",
+      "result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e"
+    },
+    {
+      "claim_id": "984963c4-7e42-4bf2-b03c-e7cf6929556f",
+      "result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e"
+    },
+    {
+      "claim_id": "a5259e16-8005-4495-bff9-a243377cfed3",
+      "result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e"
+    },
+    {
+      "claim_id": "f103a4e8-d7ce-418a-a57b-280c08dd8f1b",
+      "result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e"
+    },
+    {
+      "claim_id": "5cd2c495-9314-4783-96e0-686bd24a007d",
+      "result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e"
+    },
+    {
+      "claim_id": "b900b860-351c-4f64-81c7-3734bc77efee",
+      "result_id": "9ddb107c-1899-44ea-8424-d6a113944b29"
+    },
+    {
+      "claim_id": "9d3331ac-eaa6-4820-b159-cdb0940dcc09",
+      "result_id": "9ddb107c-1899-44ea-8424-d6a113944b29"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "22a80a30-243f-4c44-9b93-d3f91b9fdfc4",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19",
+      "peer_result_id": "b30811f5-332d-4dd5-985d-133a7fbe1ab6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the mwSuMD methodological contribution (C2, C10, C40, C49, C52-C57). OpenEval emphasizes algorithmic documentation and novelty (C3), while peer reviewers highlight wide applicability and compatibility with MD engines. High agreement on method validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "88044ed6-17b2-4a3d-8d19-ae206eafb4f8",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "71f73217-f2fe-4928-ad24-6313b374b307",
+      "peer_result_id": "5b2f807d-75d5-4fb4-8e6e-a237223e3f8e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the systematic parameter comparison and RMSD measurements (C14-C17, C41, C43-C45). OpenEval provides detailed quantitative assessment, peer reviewers accept the validation evidence without critique. Strong concordance on methodological benchmarking.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "e2b8c922-6b4c-424b-bf00-69ee238c50d8",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "02428513-bd7f-4e31-a6ef-956e65a29a6b",
+      "peer_result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the GDP release mechanism (C35-C39, C47-C48). OpenEval notes limited statistical confidence (1/3 successful replicas) but finds claims appropriately qualified. Peer reviewers accept this as significant achievement with experimental support. Agreement despite OpenEval's statistical caveat.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "b3bea1bc-f7b1-4765-a7d3-bbecfb0cd66c",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "738a02e5-3cd4-471a-af6a-8830e45f7ab3",
+      "peer_result_id": "4226d292-43ca-4f40-a2c3-548289cccdb0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of ligand binding and activation pathway (C22-C26). OpenEval finds claims supported with good RMSD agreement to experimental structures. Peer reviewers express uncertainty, noting results largely reproduce known structures without significant advances. Key disagreement on novelty vs. validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "7be0be5f-9c43-412a-b71a-dc6f336d3444",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "89345fb4-6fed-478c-95cb-29a718f7f4c6",
+      "peer_result_id": "3b6cd2ff-ea02-4f41-a5fb-f7020d99902f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address efficiency improvements and mechanistic observations (C20-C21, C42). OpenEval supports speed claims and ECL involvement. Peer reviewers accept methodological advantages but suggest novel residue predictions (C18-C19, grouped by peer) require validation through in silico mutagenesis. Partial agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "0d84dfa2-9f6d-4d70-be2c-adab68b4ee2f",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "7054de7a-51a2-4793-8405-f883ee28282b",
+      "peer_result_id": "19c80d3e-19cb-40c1-86d6-e6c5c8300825",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support protein-protein binding capabilities (C27, C29-C30). OpenEval emphasizes quantitative agreement and contrast with failed classic MD. Peer reviewers accept this as demonstrating rare event sampling capability. Strong agreement on method effectiveness despite limited sample size.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "6111a354-06ab-40bf-8f5b-dfe9093c5d77",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "57363d53-a0b9-4247-9fb9-30205a98d898",
+      "peer_result_id": "3b6cd2ff-ea02-4f41-a5fb-f7020d99902f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address novel residue predictions (C18-C19). OpenEval supports these as hypothesis-generating results from simulation data. Peer reviewers group with C20-C21, C42 and suggest validation is advisable, expressing uncertainty. Moderate disagreement on sufficiency of current evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "58e2e098-a6b9-44b4-adab-3a98173c0e42",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "96e4a194-f8dc-426b-b02e-001c7141e6c3",
+      "peer_result_id": "19c80d3e-19cb-40c1-86d6-e6c5c8300825",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Overlapping claims on G protein binding (C31-C32). OpenEval expresses uncertainty due to high RMSD values and limited convergence (2/3 replicas). Peer reviewers support the overall demonstration of complex binding process sampling. Divergent confidence levels.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "a70f9381-ad7c-4778-a978-21a11e5a7f85",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "96e4a194-f8dc-426b-b02e-001c7141e6c3",
+      "peer_result_id": "141ad9f7-781b-40b0-bd34-0d6c6ee6ce63",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address D344-R385 interaction (C34). OpenEval rates overall G protein results as uncertain due to high RMSDs but notes mutagenesis support for C34. Peer reviewers specifically highlight C34 as having novel insight potential but requiring validation. Agreement on need for additional support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "19b7c532-85d5-4c41-92c9-32305408d2d5",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ad2f99c1-15ac-4a54-87e0-f6c97328abbf",
+      "peer_result_id": "9ddb107c-1899-44ea-8424-d6a113944b29",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address future applications (C50). OpenEval supports this as appropriately qualified speculation about transition pathway analysis. Peer reviewers support broad applicability claims (C50-C51) for computational biology community. Agreement on forward-looking potential.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "ddd756cd-25c2-4bee-a0e5-f6fd0655f0f4",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "08c1292e-ce74-4aac-89bb-ecdc0ce9ebd2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background/context claims (C1, C4-C9, C11-C13, C28) as appropriately cited established knowledge. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "a4fcc99a-ddb2-46b1-80c5-c965be9bebfb",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "b63f2821-2ed2-4fe8-83d0-afd71e5b1762",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports methodological tool citations (C58-C59) as standard, well-documented computational methods. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "5737fa1e-7d4d-432f-9be9-f0f29dd16d3f",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "96e4a194-f8dc-426b-b02e-001c7141e6c3",
+      "peer_result_id": "4226d292-43ca-4f40-a2c3-548289cccdb0",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on C33 (G protein conformational changes). OpenEval groups C33 with other G protein binding results rated as uncertain. Peer reviewers group C33 with activation pathway claims, noting reproduction of known structures. Both express reservations about novelty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    },
+    {
+      "id": "9b205cb5-48a7-4ad8-94a6-aac0593e05db",
+      "submission_id": "4e8fdf5e-b148-4a7f-8f58-bffa44bd9b00",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "1ecfc22c-7b74-4c9a-931a-44ba9ff56c19",
+      "peer_result_id": "be6502cc-3043-4b41-9840-35d9fa1cc50e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on novelty claim C3. OpenEval includes C3 in supported methodological development group. Peer reviewers implicitly accept novelty through positive assessment of GDP release mechanism. Indirect agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:15:42.167544Z"
+    }
+  ]
+}

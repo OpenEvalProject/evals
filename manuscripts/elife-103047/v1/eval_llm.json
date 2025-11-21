@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A longitudinal study was conducted in four villages of the Upper River Region of The Gambia from December 2014 to May 2017, recruiting 1516 participants aged 3-85 years. Active case detection was performed 11 times over 2 years, with additional monthly sampling of 74 asymptomatic carriers from December 2016 to May 2017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24-C25, and C83-C88 provide consistent, detailed information about the study design, location, duration, participant numbers, and sampling strategy. The data are explicitly stated in the manuscript with clear temporal and spatial parameters, and are supported by references to supplementary files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study generated 425 high-quality consensus barcodes (averaging 65 SNPs) from 442 attempted genotyping reactions and 199 high-quality genomes (3756-27516 SNPs) from 331 attempted whole genome sequencing reactions. Genotyping used Agena MassArray to generate 101 bi-allelic SNPs plus six drug resistance markers, while sequencing used Selective Whole Genome Amplification followed by Illumina sequencing with GATK variant calling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C26-C30 provide explicit numbers for samples processed and data generated, while C91-C96 describe the methodological details. The manuscript clearly states these values and methods, with appropriate citations for established protocols. The success rates (425/442 for barcodes, 199/331 for genomes) are reasonable and explicitly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C99",
+      "C100"
+    ],
+    "result": "The complexity of infection (COI) was estimated using three methods: Fws from genomes (40% polygenotype), heterozygous loci from genomes (39% polygenotype), and heterozygous loci from barcodes (34% polygenotype). The proportion of heterozygous loci showed strong negative correlation with Fws for both barcodes (R\u00b2=0.83, p<10\u207b\u00b9\u2075) and genomes (R\u00b2=0.92, p<10\u207b\u00b9\u2075). No seasonal trend in polygenotype proportions was observed over the 2.5-year study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 and C99-C100 present consistent COI estimates across three methods with strong statistical support. The correlations between methods validate the approach, and the lack of seasonal trend is explicitly stated. The statistical significance is very strong (p<10\u207b\u00b9\u2075), and the three methods yield similar proportions (34-40%), supporting the robustness of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C63",
+      "C97",
+      "C98",
+      "C102"
+    ],
+    "result": "An IBD-based pipeline was developed and validated by comparing barcode-IBD with genome-IBD. For IBD values above 0.5, barcode-IBD and genome-IBD showed strong linear correlation (R\u00b2=0.77, p<10\u207b\u00b9\u2075) and strong classification agreement (Cohen's kappa=0.839) with high specificity (0.997), sensitivity (0.841), and precision (0.843). IBD was calculated using hmmIBD with a recombination rate of 13.5 kb/cM, with IBD\u22650.9 defining identical samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C63, C97-C98, and C102 describe the validation of the barcode-based IBD method against whole genome sequencing. The strong correlation (R\u00b2=0.77) and high agreement metrics (kappa=0.839, specificity=0.997) demonstrate that the barcode method is reliable for identifying related parasites. The use of genome-IBD as a gold standard is appropriate, and the statistical support is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C4",
+      "C5",
+      "C64",
+      "C65"
+    ],
+    "result": "Analysis of 284 unique barcodes from December 2014 to December 2016 revealed low inbreeding levels, with only 1.3% (435/34,326) of pairwise comparisons showing relatedness (IBD\u22650.5). Among unique strains, 26% were identical (IBD\u22650.9) to strains from other individuals, 49% were related (0.5\u2264IBD<0.9) to at least one other barcode, and 28% of isolates were polyclonal. This indicates extensive outcrossing and continuous recombination rather than dominance of specific strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C4-C5, and C64-C65 consistently demonstrate low inbreeding through multiple metrics: low proportion of related pairs (1.3%), substantial strain sharing (26% identical), and moderate polyclonality (28%). The interpretation of extensive outcrossing and continuous recombination is well-supported by these data. The analysis appropriately excluded samples from the 2017 cohort to avoid sampling bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C70"
+    ],
+    "result": "Temporal analysis revealed that genetic relatedness declined rapidly with time: barcodes sampled less than 2 months apart showed 4.7% relatedness, which was 10-fold higher than barcodes sampled more than 12 months apart (0.30%, Welch's t-test p<10\u207b\u2074). This 10-fold decrease in relatedness after 1 year is much faster than observed in Colombia (9 years for similar decrease).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C70 demonstrate rapid temporal decay of genetic relatedness with strong statistical support (p<10\u207b\u2074). The comparison with Colombia (C71) provides context for the rate of decay. The 10-fold difference between short and long time intervals is substantial and statistically significant, supporting the interpretation of active recombination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C78",
+      "C109"
+    ],
+    "result": "Spatial analysis showed that barcodes from the same household sampled less than 2 months apart were six times more related than those from different villages (9.3% vs 1.5%, Welch's t-test p<0.05). However, this spatial correlation disappeared when samples were collected more than 2 months apart. This pattern suggests close transmission links within households, likely from the same infectious mosquito or direct transmission chains between household members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C44-C45, C78, and C109 demonstrate significant household clustering with appropriate statistical testing (p<0.05). The sixfold difference is substantial and the loss of spatial signal over time is consistent with ongoing recombination. The interpretation of household transmission is reasonable given the data, though C109 acknowledges this is an inference from the pattern rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C58",
+      "C69"
+    ],
+    "result": "Seasonal analysis revealed that most parasite differentiation occurs during the transition from low to high transmission season. The 'low to high' group showed the lowest relatedness (0.6%) compared to 'within high' (2.6%, p<0.01), 'within low' (2.4%, p<0.05), and 'high to low' (2.4%, p<0.001) groups, representing a fourfold difference. Parasites from the dry season shared more genetic similarity with the previous wet season than the next wet season.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C46, C58, and C69 demonstrate significant seasonal effects on parasite genetics with appropriate statistical testing. The fourfold difference between 'low to high' and other groups is substantial and statistically significant across multiple comparisons. The interpretation that differentiation occurs during the transition to high transmission is well-supported by the data and consistent with increased transmission and recombination during this period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C103",
+      "C110",
+      "C111"
+    ],
+    "result": "Drug resistance marker analysis showed stable prevalence for AAT1 S258L (92%), CRT K76T (64%), DHFR S108N (93%), and MDR1 N86Y (12%) over the study period. Kelch13 C580Y was absent. DHPS A437G showed apparent decreases from high to low transmission seasons in 2015-2016 and 2016-2017, potentially due to selective pressure from Seasonal Malaria Chemoprevention. Overall, 89% of haplotypes from genotyping and sequencing were identical, and 2015-2017 frequencies were similar to 2008 levels, suggesting a plateau in resistance allele frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C52 and C103 provide explicit prevalence data with confidence intervals, and the absence of artemisinin resistance is notable. However, C110 acknowledges the DHPS A437G pattern is speculative ('could be resulting from'), and the seasonal changes are described as 'apparent' without statistical testing. C111's interpretation of a plateau is based on comparison with a single historical timepoint (2008) from a different study. The high agreement between methods (89%, C103) supports data quality, but the seasonal DHPS pattern and plateau interpretation require more rigorous statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C74",
+      "C112"
+    ],
+    "result": "Chronic infections were identified in 32 individuals (20 males, 12 females) with the same dominant parasite genotype persisting from 1 month to 18 months. The longest infection was in an asymptomatic individual aged 5-9 years lasting 18 months. Two individuals showed alternating infections with two distinct strains, with one case showing related strains (IBD\u22480.5) suggesting co-infection of sibling strains with fluctuating abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C53-C56, C74, and C112 provide explicit data on chronic infections with clear identification criteria (IBD\u22650.9 for identical genotypes). The 18-month infection is remarkable and well-documented. The observation of alternating strains in two individuals is interesting, though C112 acknowledges the mechanism is speculative. The finding that 21/32 chronically infected individuals were from the monthly sampling cohort is appropriately noted as potentially inflating detection rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67"
+    ],
+    "result": "The study demonstrates that combining barcode and genome data validates base calling from molecular genotyping and guides method applicability. The stable COI over time reflects constant transmission intensity in the study area, contrasting with overall malaria decline across The Gambia. While >200 SNPs is ideal for accurate relatedness, accuracy is only marginally improved beyond 96 SNPs. Active case detection is necessary to comprehensively characterize parasite genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C67 present methodological insights and interpretations supported by the data. C59 is validated by the high agreement between methods (89%, C103). C60-C61 appropriately interpret stable COI as constant transmission, supported by citations. C62 cites in silico evidence for SNP number requirements. C67's argument for active case detection is well-supported by the finding that symptomatic cases represent a minority of infections (C22-C23) and the contrast with Senegal studies (C66).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C66",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "The manuscript contextualizes findings within the broader literature on asymptomatic malaria. Symptomatic cases represent only a minority of P. falciparum infections, and relying exclusively on clinical cases may miss substantial parasite diversity. Most infections were sub-microscopic (typical when prevalence <20%), and low-density infections can persist for months while remaining asymptomatic. School-age children contribute most to the malaria reservoir through higher asymptomatic carriage and mosquito infectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C66, C72-C73, and C75 are all supported by appropriate citations to prior literature. These claims provide important context for interpreting the study's focus on asymptomatic infections and active case detection. The contrast with Thi\u00e8s, Senegal (C66) highlights the importance of sampling strategy, as that region showed lower diversity with passive surveillance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C108"
+    ],
+    "result": "The study argues that reactive malaria elimination strategies targeting clinical cases and their immediate families are insufficient to break transmission. Instead, the authors recommend mass detection with qPCR followed by treatment of P. falciparum positive cases and all their household members, with reactive approaches broadened to households of asymptomatic carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 and C108 present policy recommendations supported by the study's findings on household clustering (C6-C7, C44), the large asymptomatic reservoir (C22-C23), and chronic infections (C53-C56). C80 cites multiple studies showing limited impact of reactive strategies. The recommendation for mass detection and household treatment is a logical inference from the data, though it represents a proposed intervention rather than a tested result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C68",
+      "C71",
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "The manuscript provides extensive background on malaria epidemiology in The Gambia and West Africa, including seasonal transmission patterns, the role of asymptomatic carriers in bridging transmission seasons, and prior genetic epidemiology findings. This includes information on climate patterns, disease burden, transmission dynamics, and methodological approaches for assessing parasite diversity and relatedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21, C68, C71, C76-C77, and C79 are all background claims supported by appropriate citations to prior literature. These provide essential context for the study but do not represent new findings. The citations appear appropriate and the claims are consistent with established knowledge about malaria in the region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C113",
+      "C114"
+    ],
+    "result": "The manuscript describes standard methodological and ethical procedures: fingerprick samples were tested by varATS qPCR, venous blood samples were collected from positive individuals from July 2016 onwards, barcodes after December 2016 were excluded from relatedness analysis due to sampling bias, and appropriate ethical approvals and informed consent procedures were followed. The study context includes use of Coartem as first-line treatment and Seasonal Malaria Chemoprevention for children 0-5 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C101, and C104-C107 describe standard methodological and ethical procedures that are clearly stated in the manuscript. C113-C114 provide important context about antimalarial drug use in the study area. These are procedural details that support the study's rigor but do not constitute scientific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The study concludes that malaria parasites in the Upper River Region of The Gambia exhibit high genetic diversity driven by frequent recombination events rather than dominance by specific strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is a summary conclusion well-supported by multiple lines of evidence: low inbreeding (C4, C39), extensive outcrossing (C5), rapid temporal decay of relatedness (C42-C43, C70), and seasonal differentiation (C8, C46). This represents an appropriate synthesis of the major findings.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C33",
+      "C35"
+    ],
+    "result": "IDEA is a residue-level, interpretable biophysical model that learns protein-DNA physicochemical interactions by integrating structures and sequences of known protein-DNA complexes into an optimized energy model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C25, C33, and C35 collectively describe the fundamental design and methodology of IDEA. The model's architecture is clearly defined as a residue-level approach that fuses structural and sequence information to create an interpretable energy model, which is consistently demonstrated throughout the manuscript with supporting figures and data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "IDEA accurately predicts sequence-specific DNA binding affinities for the MAX transcription factor, achieving Pearson correlation coefficients of 0.67-0.79 with experimental MITOMI measurements, with performance improving when SELEX data is incorporated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, C40, and C42 provide specific quantitative validation of IDEA's predictive accuracy for MAX-DNA binding, with correlation coefficients directly supported by Figure 2A and supplementary figures. The improvement from 0.67 to 0.79 when incorporating SELEX data demonstrates the model's capacity for enhancement with additional experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "IDEA learns an interpretable family-specific interaction matrix that reveals the molecular grammar of protein-DNA binding, including strong DC-R interactions consistent with structural observations and electrostatic principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, C43, C45, and C46 are supported by the energy matrices shown in Figures 2B and 2C, which demonstrate interpretable amino acid-nucleotide interaction patterns. The observed DC-R interactions are validated both structurally (Figure 2C) and through citation to established knowledge (C44), while the E-DC repulsion (C46) aligns with known electrostatic principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "IDEA successfully differentiates strong from weak binders for 80% of 22 proteins across 12 protein families with AUC scores >0.5, demonstrating performance comparable to state-of-the-art methods including ProBound, DeepBind, rCLAMPS, and DBD-Hunter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C50, and C51 are supported by comprehensive benchmarking data in Figure 2, Figure 2\u2014figure supplement 5, and Figure 2\u2014figure supplement 6. The 80% success rate and comparative performance metrics are directly demonstrated through ROC and PR analyses across multiple protein families, with statistical validation through cross-validation (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C78"
+    ],
+    "result": "IDEA demonstrates transferability across proteins within the same CATH superfamily, with models trained on homologous proteins achieving correlation coefficients >0.5 for MAX binding predictions, explained by similar DNA-binding interfaces and energy patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C58, C59, and C60 are supported by Figure 3A showing transferability results and Figure 3\u2014figure supplement 2 showing PCA clustering of energy models. The structural similarity between PHO4 and MAX (Figure 3B) and their corresponding energy matrices (Figures 2B and 3C) provide mechanistic explanation for the observed transferability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C65",
+      "C66",
+      "C67",
+      "C79"
+    ],
+    "result": "IDEA enables base-pair resolution prediction of genomic DNA-binding sites, successfully identifying MAX binding sites with an AUC score of 0.81 and showing good agreement with ChIP-seq measurements for multiple DNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, and C79 are directly supported by Figure 4 showing genomic binding site predictions for MAX with AUC=0.81, and Figure 4\u2014figure supplement 1 showing successful predictions for EGR1 and CTCF. The base-pair resolution capability (C29) is demonstrated through the detailed genomic position analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C37",
+      "C73",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "Integration of IDEA into a coarse-grained simulation framework enables prediction of absolute protein-DNA binding free energies with physical units, achieving strong correlation with experimental measurements (Pearson=0.81, Spearman=0.90) and representing substantial improvement over non-sequence-specific models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, and C75 are supported by Figure 5C showing the strong correlation between simulation-predicted and experimental binding free energies, with direct comparison to the previous non-sequence-specific model (Figure 5\u2014figure supplement 2). The ability to predict absolute free energies in physical units (C77) addresses a key limitation of the standalone IDEA model (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "IDEA achieves accurate predictions for PHO4 (Pearson=0.60, Spearman=0.63) and Zif268 point-mutated sequences (Pearson=0.57-0.63, Spearman=0.60), with performance improving when additional structures from the same CATH superfamily are included in training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54, and C55 are supported by correlation analyses in Figure 2\u2014figure supplement 8 and Figure 2\u2014figure supplement 9. The improvement from 0.57 to 0.63 for Zif268 when including additional CATH superfamily structures demonstrates the benefit of expanded training data, though the correlations are moderate compared to MAX predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "IDEA features rapid prediction requiring 1-3 days for base-pair resolution genomic binding site predictions of a 1 Mb DNA region using a single CPU, with trivial parallelization enabling genome-wide predictions within weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 describe the computational efficiency of IDEA. While C80 provides specific timing data (1-3 days for 1 Mb region), this appears to be based on the authors' implementation experience rather than systematic benchmarking. The parallelization claim (C81) is a reasonable inference about scalability but lacks explicit validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The optimized IDEA energy model provides a residue-specific interaction matrix that would facilitate discovery of sequence binding motifs for DNA-binding proteins, complementing existing sequence-based and structure-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is supported by the energy matrices shown throughout the manuscript (e.g., Figure 3\u2014figure supplement 2). However, C83 is speculative about future applications for motif discovery, supported only by citations to other methods rather than demonstrated capability within this work. The potential utility is plausible but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "IDEA-based simulation enables investigation of dynamic protein-DNA interactions and can potentially be expanded to include epigenetic variants such as methylated DNA nucleotides and post-translationally modified amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 describes capabilities of the simulation framework supported by citations, but the actual demonstration is limited to binding free energy calculations (Figure 5). Claims C86 and C87 are entirely speculative about future extensions to include epigenetic modifications, with no validation or proof-of-concept provided in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "IDEA has several acknowledged limitations: it assumes fixed protein-DNA structure, uses a residue-based additive energy model that does not account for cooperative effects, and does not incorporate sequence-dependent DNA shape, though potential refinements are proposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C91, and C92 accurately describe limitations of the current IDEA model as acknowledged by the authors. Claim C89 is supported by citations to recent studies on DNA shape. Claims C90 and C93 are speculative suggestions for future improvements but are appropriately framed as potential refinements rather than current capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Current experimental methods for protein-DNA binding characterization face challenges including the need for protein-specific antibodies, high costs, intrinsic biases, and limited base-pair resolution, motivating the need for computational prediction methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C62, and C63 describe limitations of current experimental approaches, supported by citations to relevant literature (Furey 2012, Kohlberger and Gadermaier 2022). These claims establish the motivation for IDEA but represent assessment of the field rather than novel findings. Claim C64 is an inference about the potential benefits of computational methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "IDEA uses a coarse-grained structural representation where protein amino acids are represented by C\u03b1 atoms and DNA nucleotides by either P or C5 atoms, selected based on proximity to surrounding C\u03b1 atoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C95, C96, and C97 describe the structural representation methodology used in IDEA. The selection criterion for DNA atom types is clearly explained and justified by the hypothesis that closer atoms provide more meaningful interaction information. This is a methodological detail rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript provides extensive background on gene regulation, DNA-binding proteins, experimental and computational methods for studying protein-DNA interactions, and the availability of structural data, establishing the scientific context for IDEA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C7-C24) represent background knowledge and literature review establishing the scientific context. They are well-supported by appropriate citations to established literature and represent accurate characterization of the field. However, they are not novel findings from this work but rather contextual information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C99"
+    ],
+    "result": "IDEA is trained using protein-DNA complexes from existing databases and employs optimization strategies similar to those successfully applied in protein folding and protein-protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C99 describe the data sources and methodological precedent for IDEA's optimization approach. Both are supported by appropriate citations (C34: Burley et al. 2023, Mitra et al. 2025; C99: multiple citations to related optimization methods). These represent methodological context rather than primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Previous coarse-grained protein-DNA models using structure-based protein models and 3SPN DNA models have been successful for chromatin studies but lacked sequence-specific interactions between individual amino acids and nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, C71, and C72 describe prior work on coarse-grained modeling and identify a limitation that IDEA addresses. These claims are well-supported by extensive citations to previous modeling studies and accurately characterize the gap that IDEA fills, but represent assessment of prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C28",
+      "C42",
+      "C47"
+    ],
+    "result": "IDEA's predictive accuracy can be enhanced by incorporating experimental binding data such as SELEX-seq, improving correlation with MITOMI measurements from 0.67 to 0.79 for MAX by refining the energy model to better align with physical principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C42, and C47 describe the enhancement protocol and its results. The improvement is clearly demonstrated in Figure 2\u2014figure supplement 2, and the mechanistic explanation (better alignment with physical principles through E-DC repulsion) is supported by Figure 2\u2014figure supplement 3. This demonstrates a practical extension of the base IDEA method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36",
+      "C76"
+    ],
+    "result": "The optimized IDEA energy model can predict relative binding affinities for protein-DNA pairs but provides values in reduced units due to an undetermined prefactor, limiting it to relative rather than absolute free energy predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C76 accurately describe a fundamental characteristic and limitation of the standalone IDEA energy model. This limitation is acknowledged by the authors and is addressed through integration into the simulation framework (C77), which can predict absolute free energies. This represents an honest assessment of the model's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Predictions on point-mutated sequences are known to be challenging due to minor deviations from wild-type sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 represents established knowledge in the field about the difficulty of predicting effects of point mutations. This contextualizes the Zif268 results (C54) but is not a novel finding from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "IDEA holds potential to identify binding sites beyond experimental resolution and aid interpretation of sequencing techniques to uncover factors influencing genome-wide DNA binding such as chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is entirely speculative about future potential applications, supported only by citations to relevant techniques (Boyle et al. 2008, Corces et al. 2017, Granja et al. 2021) rather than demonstrated capability. While the potential is plausible given IDEA's base-pair resolution predictions, this represents future work rather than validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The high structural similarity of protein-DNA interfaces across all MAX proteins likely explains why including additional structures does not significantly improve predictions beyond using a single structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 provides a mechanistic explanation for the observation in C40 that adding more MAX structures yields only marginal improvement (0.67 to 0.68 Pearson correlation). This inference is reasonable given the known structural conservation within protein families, though direct structural similarity analysis is not explicitly shown.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C46",
+      "C34",
+      "C7"
+    ],
+    "result": "STS neurons show significant interactions between head and body orientation, with position-tolerant interactions more prominent in aSTS than mSTS. A large fraction of neurons in both regions showed significant head-body orientation interactions, with aSTS demonstrating greater position tolerance of these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 demonstrate significant main effects and interactions in two-way ANOVAs across both regions and conditions. Claims C44-C46 provide quantitative evidence (median correlations, residual analyses with p-values) showing position tolerance is significantly greater in aSTS (r=0.41, p=9.35e-07) than mSTS (r=0.23). The statistical tests are appropriate and the conclusions (C34, C7) follow logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C50",
+      "C51",
+      "C4",
+      "C5",
+      "C72",
+      "C73",
+      "C74",
+      "C112"
+    ],
+    "result": "aSTS neurons enable superior decoding of head-body configuration angles compared to mSTS, with highest accuracy for zero versus straight angles (0.7-0.9) and lowest for angles differing only in sign (\u00b190\u00b0). This pattern was replicated across experiments 1 and 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe the decoding pattern in experiment 1 with statistical significance (p<0.01). Claims C72-C74 replicate these findings in experiment 2 with a larger sample (n=430 units) showing classification accuracy ~0.9 for zero vs straight angles. The regional difference (C3, C50, C112) is consistently demonstrated across experiments with appropriate controls for reliability (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In aSTS, decoding of head-body angle from summed responses to isolated heads and bodies was markedly lower than from whole-body images and eliminated the differential decoding pattern, suggesting genuine integration requires simultaneous presence of head and body. In mSTS, summed responses produced similar decoding to whole-body images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 show that in aSTS, summed responses produced lower accuracy and no difference between angle pairs (p>0.4), contrasting with whole-body responses. Reliability analyses (C80) rule out alternative explanations. Claims C82-C83 show mSTS summed and whole-body responses were similar, supporting the inference that mSTS lacks genuine head-body angle encoding. The logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C85",
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C98",
+      "C120"
+    ],
+    "result": "Body inversion impairs neural responses and head-body angle decoding in STS. Upright bodies showed consistently higher responses than inverted bodies for whole-body configurations, and decoding accuracy dropped significantly for inverted bodies (p<0.01), with larger drops for zero versus straight angles than for left versus right angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 reports consistent inversion effects across poses and regions with statistical testing (Wilcoxon tests, p-values in Figure 7C). Claims C91-C92 show significant drops in decoding accuracy (p<0.01) with differential effects by angle type. Claim C88 notes the effect was more consistent for whole bodies than isolated parts. The unbiased unit selection (both upright and inverted) strengthens the finding (C122). This is the first demonstration at single-unit level (C120).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "aSTS neurons show relative insensitivity to the sign of head-body angles, confusing configurations differing only in sign (e.g., \u00b190\u00b0). This pattern was robust across three experiments and may be partially explained by mirror symmetry sensitivity, though mirror symmetry alone cannot fully account for the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide specific decoding results showing close-to-chance performance for angles differing only in sign but good performance for angles differing in absolute value. Claim C102 emphasizes robustness across three experiments. Claims C67, C104 provide evidence for mirror-symmetric responses in distance matrices. However, claim C70 appropriately notes mirror symmetry cannot fully explain the pattern. The inference (C63, C105) is reasonable but acknowledged as partial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Responses to whole monkeys were generally subadditive (median MSI < 0), with some neurons showing strong suppression (MSI near -1) even for anatomically possible configurations. Only a minority showed superadditive responses (4.3-6.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 reports median MSI < 0 across subjects, regions, and poses, with citation to consistent prior work. Claims C30-C32 provide specific quantitative data about the distribution of MSI values, including the surprising finding that 53% and 41% of very negative MSI cases (-0.9 to -1) included natural configurations. Claim C33 quantifies the minority showing superaddition. The data are clearly presented with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "aSTS shows significantly higher position tolerance of head-body orientation selectivity than mSTS (median correlations 0.68 vs 0.57, p=0.008), which is not explained by differences in response reliability between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 provides quantitative correlation values with statistical testing (p=0.008). Claims C39-C40 present reliability analyses showing mSTS actually had slightly higher reliability, ruling out this alternative explanation. Claim C41 shows reliability-corrected correlations maintain the regional difference (0.90 vs 0.72). The logic is sound and appropriate controls are included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "When requiring generalization across both orientation and centering, decoding accuracy varied by pose and training-test combination, with P2 showing interactions likely related to head eccentricity variations. Without centering generalization, P1 and P2 showed similar accuracies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe the differential performance across conditions with specific accuracy values. Claim C60 provides a plausible mechanistic explanation with reference to supplementary data. Claim C61 shows that removing centering generalization eliminates the interaction, supporting the interpretation. The pattern is complex but the data and interpretation are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Neuron-dropping analysis suggests less than half of aSTS neurons contributed positively to head-body angle decoding. The 'best' neurons showed diverse tuning profiles and were enriched for significant head-body angle effects (\u226550%) compared to the population (\u226416%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 describes the neuron-dropping result with reference to supplementary figure. Claims C55-C56 provide quantitative characterization of the best neurons with confidence intervals and statistical comparisons to expected values. Claim C57 draws the appropriate inference about population coding from the diversity of tuning. The analysis is appropriate for understanding which neurons contribute to decoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Head- and body-selective aSTS units showed similar decoding patterns for head-body angles, both showing bias for zero versus straight angles and confusion of left versus right angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by supplementary figure analyses that subdivided units by selectivity. This demonstrates the decoding pattern is not driven by a specific subpopulation but is a general property of aSTS units responsive to heads or bodies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Decoding of whole-body orientation was significantly more accurate for upright than inverted monkeys in both aSTS and mSTS for both poses (all p<0.01), with accuracy differences ranging from 0.07 to 0.18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 provides specific quantitative accuracy values with standard deviations and statistical significance (p<0.01) for all conditions. The effect is consistent across regions and poses, supporting a robust body-inversion effect on orientation discrimination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Inversion effects for isolated heads and bodies were less consistent than for whole-body configurations, with significant effects for heads only in P2 mSTS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 describe analyses of isolated body parts with reference to supplementary figures. The finding that inversion effects are more consistent for whole bodies than parts supports the interpretation that the effect depends on the complete configuration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The stronger inversion effect for zero versus straight angle decoding and the generalization across orientations in experiment 1 suggest the head-body angle signal depends on global configuration rather than local features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 draw inferences from the pattern of inversion effects and generalization results. The logic is sound: if local features drove decoding, orientation generalization would not be expected, and inversion (which preserves local features) would not impair decoding. The inference is reasonable though not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In experiment 1, 98 aSTS and 100 mSTS neurons were selected based on responses at least twice as strong to monkeys, faces, or bodies compared to object controls. Averaged responses were strongest for monkeys, followed by bodies and faces, with individual neurons showing varied selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe the neuron selection criteria and response patterns with reference to Figure 1B. The selection criterion (2x response to preferred category vs control) is clearly stated and the resulting sample sizes are reported. The response patterns are descriptive and supported by the figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "About 24-26% of neurons showed significant head-body interactions in both centerings, and for these neurons, correlations between responses to the 64 configurations were similar to the whole population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide specific percentages and describe the correlation pattern for the subset with position-tolerant interactions. This characterizes the proportion of neurons with robust, position-invariant interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Some individual neurons showed tuning to specific head-body orientation combinations irrespective of centering, and tuning generalized across the two poses for responsive neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 describes example neurons with reference to Figure 3D. Claim C48 reports population-level generalization across poses with reference to supplementary figure. These provide evidence for both single-neuron and population-level generalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The difference in decoding accuracy between zero versus straight angles and right versus left angles was not due to differences in mean response strength, as there was no consistent effect of head-body angle on mean response (Friedman ANOVA, all p>0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 describes a control analysis with appropriate statistical testing (Friedman ANOVA) that rules out a simple alternative explanation based on response magnitude. This strengthens the interpretation that the decoding pattern reflects tuning differences rather than overall response strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Distance matrix analyses showed evidence for mirror-symmetric responses for lateral head and body orientations in P2 and face orientations in P1, with less mirror symmetry for P1 body, consistent with poorer image symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe distance matrix results with reference to supplementary figure. The observation that neural mirror symmetry matches stimulus symmetry (C68) provides internal consistency. This supports the potential role of mirror symmetry in the decoding pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Experiment 2 yielded 497 aSTS and 1856 mSTS units that responded selectively to the 16 monkey conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 reports sample sizes for experiment 2 with breakdown by subject. This is straightforward descriptive data about the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In experiment 2, mSTS showed lower classification accuracy than aSTS and no difference between zero versus straight and right versus left angle decoding, despite similar response reliability between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 describe the regional differences in decoding patterns. Claim C77 provides reliability data ruling out this alternative explanation. This replicates and extends the experiment 1 findings regarding regional differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Lower classification accuracy for head-body sums in aSTS was not due to lower reliability of summed responses (median reliability: whole-body 0.69-0.70, sums 0.66-0.76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 provides reliability data that rules out an alternative explanation for the lower sum decoding accuracy. The reliability of summed responses was actually similar or higher than whole-body responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The same population of neurons could decode the angle between head and body irrespective of the configuration's orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 describes orientation-invariant decoding with reference to Figure 4A. This demonstrates that the neural population encodes head-body angle in a way that generalizes across viewpoints, which is computationally important for social perception.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The highest decoding occurred for zero versus straight angles (natural vs anatomically impossible), and all well-decodable angle pairs consisted of possible versus impossible angles. However, dissociating anatomical possibility from absolute angle difference and mirror symmetry is not trivial as these factors covary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 describe the pattern of decodable angles and their relationship to anatomical possibility. Claim C108 offers this as a potential explanation. Claim C109 appropriately acknowledges the limitation that these factors cannot be dissociated with the current design. The reasoning is sound and limitations are acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Decoding of whole-monkey orientation was present in both regions, consistent with previous studies, and decoding of head and body orientation was better in mSTS than aSTS, also consistent with prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 report findings consistent with previous literature (with citations) and reference supplementary figure. These replicate known findings and provide context for the novel head-body angle decoding results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C114",
+      "C117",
+      "C118"
+    ],
+    "result": "No significant effect of head-body orientation angle on mean response strength was observed, indicating anatomically possible and impossible configurations elicited similar responses. However, as a population, neurons could distinguish these configurations well based on absolute angle differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 reports the absence of a mean response effect. Claims C117-C118 draw appropriate inferences: similar mean responses but different population-level discriminability. This demonstrates that information is in the pattern of responses across the population, not in overall response magnitude.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "A previous study showing lower responses to misaligned head-body configurations targeted a partially overlapping patch and examined head-body relative position rather than orientation interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 compare the current study to previous work, noting differences in recording location and experimental manipulation. This appropriately contextualizes why results might differ from prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The regional difference in head-body configuration decoding agrees with previous work suggesting head-body integration is more prominent in anterior than posterior temporal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 relates the current findings to previous literature with appropriate citations. This places the results in the context of the broader understanding of temporal cortex organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Based on the electrophysiological data, discrimination of head-body orientation angle would be predicted to be more accurate for zero versus straight angles than right versus left angles at the behavioral level, but this requires psychophysical testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 makes a prediction based on the neural data but explicitly acknowledges it requires future behavioral testing. This is a reasonable prediction but cannot be evaluated as supported without the behavioral data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Previous studies reported higher responses to upright versus inverted bodies in STS, but those neurons were searched with upright bodies. The current study avoided this search bias by selecting units using both upright and inverted images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 compare the current methodology to previous studies, noting an important methodological improvement. The unbiased selection strengthens the interpretation of the inversion effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The current data suggest a more consistent inversion effect for head-body configurations compared to headless bodies and heads in STS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 summarizes the pattern of inversion effects across stimulus types based on the data from experiment 3. This is a reasonable inference from claims C85-C88.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "Monkeys were not exposed to anatomically impossible head-body orientations, yet responses to these were similar to anatomically possible configurations. The apparent discrepancy with the inversion effect may result from both head and body being in infrequent orientations for inversion, versus only one part for impossible configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 notes an observation about the monkeys' experience and neural responses. Claim C128 offers a speculative explanation for why inversion has stronger effects than anatomical impossibility. This is labeled as speculation in the evidence type and remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C23",
+      "C129",
+      "C130"
+    ],
+    "result": "The study recorded from fMRI-defined monkey patches in two male rhesus monkeys with appropriate ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C129-C130 describe the subjects, recording locations, and ethical approval. These are straightforward methodological details that are clearly documented.",
+    "result_type": "MINOR"
+  }
+]

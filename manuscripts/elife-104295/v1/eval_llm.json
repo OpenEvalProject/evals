@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32",
+      "C51",
+      "C52",
+      "C54",
+      "C60"
+    ],
+    "result": "The zebrafish meioc mutant exhibits arrested spermatogonial differentiation. Mutant testes contain only 2-8 spermatogonia per cyst (up to 3 rounds of division vs. 9 in wild-type), express the undifferentiated marker Plzf, lack meiotic markers Sycp1/Sycp3, and remain in an undifferentiated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C32, C51, C52, C54, and C60 provide converging evidence from histology, marker expression, and cell counts that meioc mutants fail to differentiate beyond early spermatogonia. The phenotypic characterization is well-documented with appropriate controls and multiple independent observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C71"
+    ],
+    "result": "meioc mutant spermatogonia are arrested in a state of low translational activity. OP-Puro assays show that meiocmo/mo spermatogonia have low protein synthesis similar to wild-type 1-2 cell cysts, while wild-type 32\u2264-cell cysts have high synthesis. Cycloheximide experiments demonstrate that translational upregulation is required for SSC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C71 are supported by OP-Puro fluorescence data and cycloheximide dose-response experiments. The cycloheximide experiments (C65-C71) provide functional evidence linking translation to differentiation, though the specificity of the 0.2 \u00b5M dose could be better characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Wild-type zebrafish spermatogonia exhibit heterogeneous rRNA expression with low and high populations in 1-2 cell cysts. In situ hybridization shows that 5.8S, 18S, and 28S rRNA signals are low in a portion of 1-2 cell cysts and increase in 32\u2264-cell cysts. meioc mutants lack cells with high rRNA signals, confirmed by RT-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 are well-supported by in situ hybridization, fluorescence quantification, and RT-qPCR data. The identification of two populations in wild-type and their absence in mutants is documented with appropriate quantification and statistical analysis. The use of sox17::egfp to isolate spermatogonia for RT-qPCR strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "45S pre-rRNA transcripts are reduced in meioc mutants, but processing into intermediates is not affected. Northern blot analysis shows reduced amounts of 45S pre-rRNA and intermediates in meiocmo/mo, but the ratio of mutant to wild-type is similar for pre-rRNA and intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by Northern blot data with appropriate normalization to 7SL RNA. The quantification shows consistent ratios across different probes (5'ETS and ITS1), supporting the conclusion that transcription is reduced but processing is intact. However, only one biological replicate appears to be shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Meioc is required for demethylation of CpG in tandem repeats of the 45S rDNA IGS region. Tandem repeats of 90, 127, and 318 bp were identified in the IGS region. Bisulfite sequencing shows unmethylated CpG is frequent in wild-type sox17::egfp spermatogonia but rare in meiocmo/mo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by bioinformatic identification of tandem repeats and bisulfite sequencing data. The methylation differences between wild-type and mutant are clear from the presented data. However, the number of clones sequenced and biological replicates should be specified for full evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Meioc functions independently of Ythdc2 in early spermatogonial differentiation. Zebrafish Meioc interacts with Ythdc2 by pull-down, but ythdc2-/- mutants show different phenotypes from meiocmo/mo: ythdc2-/- has normal 4-8 cell cyst ratios and normal rRNA expression patterns, while meiocmo/mo has significantly decreased 4-8 cell cyst ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 are well-supported by pull-down assays, histological analysis, cyst counting, and rRNA in situ hybridization. The comparison between meioc and ythdc2 mutants is thorough and demonstrates functional independence in early spermatogonial stages. Statistical analysis supports the quantitative differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Meioc colocalizes with Piwil1 in perinuclear germ granules, and Meioc depletion results in Piwil1 accumulation in nucleoli. Meioc colocalizes with germ granule components (Tdrd1, Tdrd6a, Piwil1, Piwil2, Ddx4) in wild-type. In meiocmo/mo, Piwil1 strongly accumulates in nucleoli while other components remain perinuclear. Meioc interacts with Piwil1 through the coiled-coil domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C104-C115 are strongly supported by immunofluorescence colocalization, co-IP experiments, and domain mapping. The relocalization of Piwil1 to nucleoli in meioc mutants is well-documented with quantification. The interaction is confirmed by multiple approaches including co-IP with and without benzonase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Nucleolar Piwil1 interacts with 45S pre-rRNA in SSCs. RNA immunoprecipitation shows pre-rRNA associates with Piwil1 in wild-type and is more enriched in meiocmo/mo. Pol I inhibitors (actinomycin D, BMH-21) but not Pol II inhibitor (\u03b1-amanitin) reduce nucleolar Piwil1 signals, suggesting pre-rRNA transcripts are involved in Piwil1 nucleolar localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C129-C133 are supported by RIP-qPCR data and pharmacological inhibitor experiments. The enrichment of pre-rRNA with Piwil1 is demonstrated with appropriate controls (IgG). The inhibitor experiments provide functional evidence linking Pol I transcription to Piwil1 localization, though the mechanism remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Piwil1 interacts with Setdb1 and HP1\u03b1 in nucleoli, leading to increased H3K9me3 and HP1\u03b1 accumulation at rDNA loci. Setdb1 and HP1\u03b1 are detected in nucleoli and interact with Piwil1 by co-IP. ChIP-qPCR shows higher H3K9me3 and Piwil1 enrichment at rDNA in meiocmo/mo (high nucleolar Piwil1) and lower enrichment in piwil1+/- (low nucleolar Piwil1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C135-C145 are well-supported by immunofluorescence, co-IP, pull-down assays, and ChIP-qPCR data. The correlation between nucleolar Piwil1 levels and H3K9me3/HP1\u03b1 enrichment at rDNA is demonstrated across multiple genotypes. The ChIP experiments include appropriate controls and multiple primer sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Reduction of Piwil1 in piwil1+/- upregulates rRNAs and partially rescues meioc mutant differentiation defects. piwil1+/- spermatogonia show upregulated 28S rRNA in cytoplasm and nucleoli. meiocmo/mo;piwil1+/- spermatogonia differentiate to 32-cell stage and show increased 4-8 cell cyst numbers compared to meiocmo/mo, with the 4-8/1-2 cell cyst ratio reaching near wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C120-C128 are strongly supported by genetic interaction experiments combining western blot, in situ hybridization, histology, and cyst counting. The partial rescue of meioc mutant phenotypes by reducing Piwil1 provides compelling evidence for the antagonistic relationship between Meioc and Piwil1 in regulating rRNA transcription and differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Meioc expression correlates with rRNA upregulation and inhibits Piwil1 nucleolar localization. In isolated sox17::egfp spermatogonia, Meioc expression ranges from barely detectable to >51 granules. 28S rRNA intensity increases in cells with 11-50 Meioc granules. Piwil1 levels are constant across cells except those with 51\u2264 nuclear Meioc. Nucleolar Piwil1 is observed in cells with 11-50 Meioc granules but not in cells with 51\u2264 Meioc granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C155 are supported by quantitative analysis of Meioc, 28S rRNA, and Piwil1 in isolated cells and tissue sections. The correlation between Meioc expression levels and rRNA upregulation is well-documented. The inverse relationship between high Meioc and nucleolar Piwil1 supports the proposed mechanism, though the analysis is correlative rather than causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C165",
+      "C166"
+    ],
+    "result": "meioc-/- spermatogonia exhibit high levels of H3K9me3 and methylated CpG in the 45S-rDNA region. Meioc is required for reduction of H3K9me3 levels and demethylation of CpG at rDNA loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C165-C166 are supported by ChIP-qPCR data showing increased H3K9me3 at rDNA loci in meioc mutants and bisulfite sequencing showing increased CpG methylation. These findings are consistent with the proposed model of Meioc preventing Piwil1-mediated silencing of rDNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C156",
+      "C170",
+      "C171"
+    ],
+    "result": "Zebrafish SSCs maintain low rRNA transcription with repressive marks, and Meioc promotes differentiation by preventing Piwil1 nucleolar localization to upregulate rRNA transcripts. The model proposes that nucleolar Piwil1 interacts with Setdb1 to maintain low rRNA transcription via H3K9me3 and HP1\u03b1 recruitment, while Meioc blocks Piwil1 nucleolar localization to allow rRNA transcription and SSC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C43-C45, C49, C156, C170-C171 represent the main conclusions synthesizing multiple lines of evidence. The model is well-supported by the collective data on rRNA expression, Piwil1 localization, epigenetic modifications, and genetic interactions. However, some mechanistic details remain to be fully elucidated, such as how Meioc prevents Piwil1 nucleolar localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C41"
+    ],
+    "result": "The minamoto (moto) mutant was isolated by ENU mutagenesis and mapped to the meioc gene (ENSDARG00000090664) encoding a coiled-coil domain protein. MEIOC orthologs are found in vertebrates and most invertebrates but not Drosophila. Zebrafish meioc is orthologous to the mouse gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C33-C35, C41 are supported by genetic mapping, whole-genome sequencing, and database analysis. The identification of the causative gene is confirmed by multiple alleles and complementation testing. The phylogenetic distribution is based on database searches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C58"
+    ],
+    "result": "meioc mutant spermatogonia proliferate but show increased apoptosis. No females or oocytes develop in moto mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 and C58 are supported by Histone H3 phospho-S10 staining, TUNEL assays, and histological analysis. The sex determination phenotype is consistent with other zebrafish mutants disrupting early oogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C181",
+      "C188"
+    ],
+    "result": "LC/MS/MS of Meioc immunoprecipitates from SSC-enriched hyperplastic testes showed enrichment of germ granule components. Many unique Meioc partners including RNA-binding proteins, myosin proteins, Tudor domain proteins, heat shock proteins, and Cnot1 were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C181, C188 are supported by mass spectrometry data. The enrichment of germ granule components is consistent with the colocalization studies. However, the functional significance of many identified partners remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Piwil1 accumulation in nucleoli was not detected in ythdc2-/-. Small RNA production is similar between meiocmo/mo and meioc+/mo testes, though small RNAs derived from rRNAs and R2 transposon decrease in meiocmo/mo, likely due to low rRNA expression. Meioc does not critically affect small RNA generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are supported by immunofluorescence and small RNA sequencing data. The conclusion that Meioc does not critically affect small RNA generation is reasonable given the similar overall abundance, though the decreased rRNA-derived small RNAs are appropriately attributed to reduced rRNA expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Zebrafish meioc and ythdc2 mutants differ from mouse knockouts, which arrest at meiotic prophase I. The amino acid sequence of Meioc is poorly conserved between mice and zebrafish (28.5%) while Ythdc2 is well conserved (65.5%). Zebrafish Meioc likely has different binding partners and regulates different processes than mouse MEIOC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C180 are supported by phenotypic comparisons and sequence analysis. The hypothesis that zebrafish Meioc has different functions is reasonable given the sequence divergence and phenotypic differences, though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on ribosome biogenesis in stem cells: RiBi is vital for stem cells but regulatory mechanisms are obscure. Translation activity is low in most stem cells. Different stem cell types show varying RiBi levels (high in ES cells, hair follicle stem cells, Drosophila GSCs; low in quiescent NSCs; intermediate in HSCs). RiBi defects in Drosophila GSCs show controversial phenotypes. Mechanisms coupling RiBi to translation and differentiation remain obscure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C30 represent literature review and background knowledge, appropriately cited. These establish the context for the current study and identify knowledge gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "Background on MEIOC and related proteins: Mouse MEIOC functions with YTHDC2 to maintain extended meiotic prophase I. Drosophila bam-bgcn complex promotes stem cell differentiation. Zebrafish meioc appears functionally similar to Drosophila bam despite being orthologous to mouse MEIOC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C42 represent literature review with appropriate citations. The functional similarity between zebrafish meioc and Drosophila bam (C42) is an inference supported by the phenotypic data presented in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C50",
+      "C53",
+      "C57",
+      "C59",
+      "C74",
+      "C82",
+      "C83",
+      "C87",
+      "C88",
+      "C93"
+    ],
+    "result": "Background information and technical details: Wild-type spermatogonia undergo 9 rounds of division before meiosis. Plzf is expressed in 1-8 cell cyst spermatogonia. Zebrafish mutants disrupting early oogenesis become male. Completion of pachytene is required for follicle formation. 5S rRNA low intensity was not observed. Drosophila R2 transposes into 28S rDNA. Features of silenced rDNA include DNA methylation, H3K9me3, and HP1\u03b1. rDNA transcription is regulated by modifications in the IGS region. YTHDC2 is a MEIOC binding partner in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C53, C57, C59, C74, C82-C83, C87-C88, C93 represent cited background information, technical observations, or established knowledge that provide context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C134",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Discussion and comparative analysis: Zebrafish SSC low rRNA state is similar to quiescent NSCs rather than high RiBi stem cells. Zebrafish SSCs have long-term BrdU-retaining cells. The epigenetic state of zebrafish rDNA IGS is similar to human silenced rDNA. Tandem repeats function as enhancers in Xenopus. Setdb1 associates with Tip5/NoRC. Drosophila Piwi and C. elegans NRDE-3 have conserved functions in controlling RiBi. Zebrafish Piwil1 uses analogous machinery to Drosophila Piwi-dependent silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134, C157-C160, C172-C176, C182-C187 represent discussion points comparing the findings to other systems and proposing mechanistic connections. These are appropriately cited and represent reasonable interpretations of the data in broader context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C189"
+    ],
+    "result": "Summary and implications: Zebrafish 1-2 cell cyst spermatogonia have low and high rRNA subpopulations; high rRNA cells are absent in meioc mutants and represent an activated state for differentiation. Progenitor 32\u2264-cell cysts have highest translational activity but lower rRNA transcriptional activity than high rRNA 1-2 cell cysts. The novel function of Piwil1 will provide insights into germ granule-nucleolus interactions regulating RiBi and SSC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 and C189 represent summary statements and implications of the findings. These are supported by the collective data, though C189 is somewhat speculative about future insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Cycloheximide dose-response experiments: Cycloheximide decreases OP-Puro fluorescence in differentiating spermatogonia dose-dependently. At 1.0 \u00b5M, BrdU incorporation decreases in 32\u2264-cell cysts but not 1-4 cell spermatogonia. At 0.2 \u00b5M, cycloheximide maintains SSCs without Sycp3 expression, while controls show Sycp3 expression. Bmp2 production by Sertoli cells is not affected at 0.2 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by dose-response experiments, BrdU incorporation assays, and Bmp2 western blots. These experiments establish that translational activity is required for differentiation and validate the experimental conditions used.",
+    "result_type": "MINOR"
+  }
+]

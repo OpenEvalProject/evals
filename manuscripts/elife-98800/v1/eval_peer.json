@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C62",
+      "C63"
+    ],
+    "result": "Three distinct kinetic models of E. coli central carbon metabolism consistently display strong responses to perturbations, characterized by amplification of minor initial discrepancies in metabolite concentrations over time. This pronounced responsiveness is a characteristic feature of realistic metabolic dynamics and is seldom seen in toy models of the metabolic network.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the core finding about strong perturbation responses across models. The editor states 'the evidence supporting the emergent properties of perturbed metabolic systems to network topology and sensitivity to specific metabolites is solid.' Reviewer 1 notes this is 'the first work characterized how perturbed trajectories deviate from equilibrium in large biochemical systems and illustrated interesting findings about the difference between sparse biological systems and randomly simulated reaction networks.' No concerns were raised about these fundamental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C70",
+      "C71"
+    ],
+    "result": "Adenyl cofactors (ATP and ADP) consistently influence the responsiveness of metabolic systems across all three models, demonstrating a marked impact in reducing the average response coefficient when their concentrations are fixed. This impact is confirmed by Sobol' total sensitivity index analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'They discovered that perturbations in the initial concentrations of specific metabolites, such as adenylate cofactors and pyruvate, significantly affect the maximal deviation of the responses from steady-state values.' Reviewer 1 notes the author 'included NADH, NADPH into the analysis' in the latest version, indicating acceptance of the cofactor analysis. The editor's statement about 'solid evidence' for 'sensitivity to specific metabolites' encompasses this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "As the metabolic network becomes denser through addition of random reactions, the perturbation response diminishes. This trend is observed consistently across all three models and persists even when additional reactions are confined to those cataloged in metabolic model databases, demonstrating that inherent sparsity of the backbone reaction network plays a critical role in enabling strong responses to perturbations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly affirms 'the evidence supporting the emergent properties of perturbed metabolic systems to network topology...is solid.' Reviewer 2 states 'they explored whether the network connectivity (sparse versus dense connections) influences these perturbation responses' and notes the authors 'adequately addressed my concerns.' Reviewer 1 characterizes this as an 'interesting finding about the difference between sparse biological systems and randomly simulated reaction networks.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C59",
+      "C60"
+    ],
+    "result": "A minimal model successfully demonstrates strong response to perturbations when the fraction of reactions coupled with cofactors is high and the backbone network is sparse. The heightened response due to cofactor coupling is not solely due to increased nonlinearity, as demonstrated by comparison with a catalytic reaction variant.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the minimal model analysis without raising concerns. Reviewer 1 notes the work 'illustrated interesting findings' about network properties, which encompasses the minimal model results. The editor's statement about 'solid evidence' for emergent properties related to network topology implicitly includes the minimal model demonstrations. No reviewer questioned the minimal model methodology or conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Metabolites that augment the response coefficient when their concentrations are fixed tend to be allosteric regulators associated with negative regulation. Weakening substrate-level regulation by specific metabolites (AKG, OAA, pyruvate) increases responsiveness in the models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly mentions 'perturbations in the initial concentrations of specific metabolites, such as adenylate cofactors and pyruvate, significantly affect the maximal deviation' and notes the authors 'adequately addressed my concerns.' The mechanistic analysis of negative feedback and specific regulatory interactions is accepted without challenge by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C43",
+      "C44",
+      "C45",
+      "C66",
+      "C67"
+    ],
+    "result": "The three kinetic models (Khodayari, Boecker, Chassagnole) were proposed by different research groups in distinct contexts and have different structural features including pathway composition, carbon sources, and aerobic/anaerobic conditions. The models incorporate substrate-level regulations but do not model gene regulation dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 describes the work as 'a valuable comparative analysis of perturbation responses in three nonlinear kinetic models of E. coli central carbon metabolism found in the literature' and notes the authors 'adequately addressed my concerns.' The model descriptions and differences are accepted as methodological context without challenge from any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C53",
+      "C54",
+      "C68",
+      "C69"
+    ],
+    "result": "The perturbation strength of 40% used in simulations is justified as beyond the linear region and consistent with biologically relevant concentration fluctuations estimated from stochastic gene expression models. All initial points in simulations returned to the original steady state, and characteristic features remain consistent across different perturbation strengths.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer raised concerns about the perturbation methodology or the choice of perturbation strength. Reviewer 1 notes the work provides 'systematic perturbation analysis in simulation' and characterizes it as valuable. The methodological choices are implicitly accepted through the reviewers' overall positive assessment and lack of critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Modifications were made to the Khodayari and Chassagnole models to achieve stable steady states, including fixing periplasmic hydrogen concentration, removing competitive inhibition, and introducing ATP hydrolysis reactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes the authors 'adequately addressed my concerns' after revisions. These model modifications are presented as methodological details necessary for the analysis, and no reviewer challenged their validity or appropriateness. The acceptance of the overall results implicitly validates these technical adjustments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C34",
+      "C35",
+      "C36",
+      "C47",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C72",
+      "C73"
+    ],
+    "result": "Background claims about bacterial physiology, metabolic network properties, and previous experimental observations regarding growth laws, cellular memory, trade-offs, and responses to nutrient shifts are cited from the literature to provide context.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are literature-based contextual claims that reviewers do not challenge. Reviewer 1 notes the work has 'important clinical implication in pharmacodynamics' and provides 'initiative for future quantitative analysis,' indicating acceptance of the biological context. No reviewer questioned the accuracy or relevance of the cited background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "Strong responsiveness could serve as an amplifier for external cues in signal transduction, and current metabolic network construction methods often overlook dynamics, which has implications for synthetic biology and artificial cell design.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'The computational analysis in this study provides an initiative for future quantitative analysis on metabolism and homeostasis' and notes 'many open questions inspired from this work can be studied in future.' This indicates acceptance of the broader implications and speculative applications discussed by the authors. No reviewer challenged these interpretative claims.",
+    "result_type": "MINOR"
+  }
+]

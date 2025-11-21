@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C61",
+      "C63",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C80",
+      "C81",
+      "C93",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "The model is a biologically detailed, large-scale simulation of rat non-barrel somatosensory cortex comprising 211,712 neurons in 2.4 mm\u00b3 of tissue, with diverse excitatory cell morphologies, multicompartmental conductances, thalamic input patterns, and extensive computational requirements. The model includes numerous biological features but also has acknowledged limitations including data source heterogeneity and exclusion of certain plasticity mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly praised the 'impressive level of biological detail' and 'very detailed network model' (Reviewer 1, Reviewer 2). The editor's summary states the model offers 'an impressive level of biological detail, addressing many aspects of the cellular and network anatomy and properties.' No reviewer challenged the model specifications or construction, though limitations were acknowledged by the authors and accepted by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C17",
+      "C8",
+      "C60",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The calcium-based plasticity rule maintained stable excitatory firing rates throughout 10 minutes of simulation without explicit homeostatic mechanisms, with potentiation dominating in amplitude and depression counteracting in frequency. This stability contrasts with STDP rules that lead to runaway dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly questions whether this finding is novel, noting 'the observation that network activity remains stable without an explicit homeostatic mechanism...is not clearly framed as a replication or validation step' and that 'this outcome has been previously reported, albeit in models with different levels of biological detail' (citing Higgins et al., 2014). Reviewer 2 requests clarification on 'the role and novelty of this result in the context of existing literature.' While the result itself is not disputed, its significance and contribution are uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C33"
+    ],
+    "result": "Plasticity was sparse, affecting only ~7% of synapses, with depression more common than potentiation. Changes were layer-specific (mostly L5 PC basal dendrites), rate-dependent, and stimulus-structure dependent (25% reduction with random Poisson input). Most large changes crossing the unstable fixed-point occurred within the first minute.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor's summary states 'The evidence supporting the main conclusions is solid' and reviewers did not challenge these quantitative findings. Reviewer 1 notes the study is 'detailed and thorough, covering many aspects of the cellular and network anatomy and properties.' The specific percentages and layer-specific patterns are presented as observational findings that reviewers accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Plastic changes showed layer-to-layer pathway specificity differing from random controls, with strong overexpression of simplices in the subgraph of changing connections and maximal simplex dimension exceeding chance by two.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these network topology findings. The editor notes results are 'solid with results being more observational in nature,' which applies to these structural connectivity observations. No reviewer questioned the simplex analysis or pathway specificity claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Functional assemblies were activated across stimulus repetitions, with plasticity occurring more frequently within assemblies (up to 13.8% depression, 5.2% potentiation) compared to the whole dataset (5% depression, 2% potentiation). Synapses across assemblies underwent more changes than within assemblies. Co-firing in assemblies was a better predictor of plastic changes than firing rate alone, with cells firing together having three times higher chances of synaptic efficacy changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 questions whether this analysis adds substantial insight, stating 'I am not sure this analysis adds much. The main finding is that plasticity occurs more among cells in assemblies than among all cells. But isn't that expected given what was shown in the previous figures? Specifically, the authors showed that for cells that fire more, plasticity is more prominent.' This suggests the finding may be somewhat circular or expected rather than providing new mechanistic insight, though the quantitative '3x' claim was not directly challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C114"
+    ],
+    "result": "Clustered synapses within early/middle assemblies were unlikely to undergo plastic changes, while non-clustered within-assembly synapses were most likely to change across all assemblies. Clustered within-assembly synapses depressed to a significantly smaller degree than other categories. Cross-assembly synapses that were spatially clustered were likely initiated as fully depressed and had high chances of potentiation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 challenges the interpretation, stating 'It is not clear that the results truly support the formulation of the section's title...I can see is that the effect on rho is strong for non-clustered synapses...substantially higher than what is seen for clustered synapses.' Reviewer 1 also questions the causal claim: 'the wording \"synapse clustering contributes to the emergence of cell assemblies\" suggests some kind of causal role...I do not see how the data presented supports that.' The data are complex and the interpretation regarding clustering's role is contested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The indegree of pre- and postsynaptic neurons, and especially k-edge indegree (participation in higher-dimensional simplices), predicted plastic changes. As k-edge indegree increased, probability of change increased, with highest k-edge indegree connections tending toward potentiation and lowest toward depression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 questions the specificity of this finding: 'Can we be certain that it is the edge participation that is a particularly good predictor...as opposed to something simpler? For example, could it be the overall number of synapses, excitatory synapses, or something along these lines?' Reviewer 1 also challenges the claim about 'delineating' potentiation from depression, stating 'I don't see what they mean...even if the effect is stronger, does it mean one can \"delineate\" potentiation from depression better?' The predictive value is questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C53",
+      "C131",
+      "C119",
+      "C120"
+    ],
+    "result": "High k-edge indegree led to higher connection strength in the MICrONS dataset, as predicted by modeling insights. The most central connections (highest edge participation in simplices) had the highest correlations both before and after plasticity, a prediction verified in MICrONS data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises a critical conceptual issue: 'If the aspects of the model that align with MICrONS data are already present before plasticity, then these similarities reflect properties of the initial network architecture or baseline dynamics, rather than outcomes shaped by the plasticity process itself.' Reviewer 2 notes the authors explained that 'total g_AMPA increases with k-edge indegree even in the initial model configuration,' suggesting these features don't depend on plasticity. This undermines the claim that plasticity predictions were validated, as the features may reflect initial architecture rather than plasticity outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The probability of changes only increased with k-edge indegree in assembly sub-graphs associated with the presented pattern or late assemblies, being strongest for pattern-associated assemblies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This pattern-specific refinement of the k-edge indegree finding was not specifically challenged by reviewers. It represents a more nuanced analysis that addresses stimulus-specificity, which reviewers generally accepted as part of the observational findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C124",
+      "C125",
+      "C129",
+      "C130",
+      "C134"
+    ],
+    "result": "After plasticity, firing rates decreased slightly while spike correlations remained stable. An early assembly split into two stimulus-specific assemblies, and assembly sequences became more reliable (increased Hamming similarity) despite decreased single-cell reliability. This demonstrates network-level redistribution of synaptic efficacy that maintained global correlations while enhancing stimulus-specificity and reliability of subpopulations, contributing to robust population coding with unreliable neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These functional outcome findings were generally accepted by reviewers. The editor notes 'evidence supporting the main conclusions is solid.' Reviewer 1 acknowledges these results in the revision comments without challenging them. The contrast between assembly-level and single-cell reliability is a novel observation that reviewers did not dispute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The model's principal observations are that plastic changes were sparse (7% of synapses), non-random, and stimulus-specific, with changes largely determined by anatomical structure of synaptic connectivity and its relation to functional units (co-firing assemblies, clustered synapses, neurons highly innervated by same input, central network edges).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor's summary explicitly states 'The evidence supporting the main conclusions is solid' and all reviewers acknowledged the comprehensive nature of the findings. While reviewers raised questions about mechanistic interpretation and novelty of specific sub-findings, the overall characterization of sparse, structured plasticity was accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The model is not designed to solve a specific task but represents sensory cortex learning stimulus features in an unsupervised manner. Demonstrating stimulus-specificity and increased assembly reliability validates that results have implications for learning beyond just describing biophysical processes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises a fundamental concern: 'it is not clear what the network learns to do...we do not know whether the learning resulted in anything functionally significant. Did the network learn to discriminate the patterns much better than at the beginning...?' Reviewer 1 states 'this issue is of central importance, and it is hard to judge the value of the results when we do not know what the network learned to do, if anything.' While authors claim stimulus-specificity validates learning implications, Reviewer 1's concern about lack of functional task performance remains unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C104"
+    ],
+    "result": "The STDP rule kept inducing the same magnitude of changes throughout 10 minutes instead of stabilizing, and caused the network to flip from synchronous to asynchronous firing within a minute.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 questions the appropriateness of the STDP comparison: 'if I got this right, the authors applied STDP to already generated spikes, that is, did not run a simulation with STDP...The spikes they use here were generated by the system utilizing their calcium-based plasticity rule. Obviously, the spikes would be different if STDP was utilized instead...The comparison therefore is not quite appropriate, is it?' This methodological concern undermines the validity of the STDP comparison results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The plasticity model is not strictly Hebbian since postsynaptic firing alone could change synaptic efficacy, although presynaptic release was required for most changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic characterization of the plasticity rule was not challenged by reviewers. It represents a technical description of the model's behavior that is consistent with the calcium-based framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Adding biological complexity allowed reduction in the number of mechanisms explicitly modeled. The model and detailed instructions are open-sourced.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly praises 'Sharing the model and the associated methods and tools is a big plus.' The philosophical point about biological complexity reducing explicit mechanisms was not challenged, and open-sourcing was universally appreciated.",
+    "result_type": "MINOR"
+  }
+]

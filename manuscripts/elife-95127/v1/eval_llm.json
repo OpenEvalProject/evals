@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes the theoretical foundation that the brain maintains an internal model of the world and must account for uncertainty when updating this model based on prediction errors. This framework is supported by prior behavioral and electrophysiological studies showing that humans estimate uncertainty and adjust behavior accordingly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C12 collectively establish well-accepted theoretical foundations supported by multiple citations to prior work. These claims provide the conceptual basis for the study but represent established knowledge rather than novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior experimental work has identified prediction error neurons in layer 2/3 across diverse brain areas, with evidence that prediction errors result from excitation-inhibition imbalance and may involve SST-mediated subtraction. However, how uncertainty modulates these prediction errors remains unclear, representing a knowledge gap this study addresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C13-C16 accurately summarize prior experimental findings with appropriate citations and correctly identify the knowledge gap. These claims establish the motivation for the current work and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors propose that layer 2/3 neurons represent uncertainty-modulated prediction errors (UPEs) calculated through subtractive and divisive inhibition by different inhibitory cell types, specifically SSTs and PVs. This proposal is derived from normative theory showing that uncertainty should divisively modulate prediction error activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C17-C21 present the core hypothesis of the manuscript. The normative derivation (C18) is mathematically sound as shown in the Methods section. However, these remain hypotheses to be tested rather than established facts. The theoretical derivation is valid, but experimental validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C22",
+      "C30"
+    ],
+    "result": "Computational modeling demonstrates that SST interneurons can learn to represent the mean of stimulus distributions through local activity-dependent plasticity rules. After learning, SST firing rates and synaptic weights reflect the mean of presented stimulus intensities in a context-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C22, and C30 are supported by simulation results shown in Figure 2. The modeling demonstrates that the proposed plasticity rule enables SSTs to learn mean representations. However, this is a computational prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C22",
+      "C31"
+    ],
+    "result": "PV interneurons can learn to estimate variance of stimulus distributions through supralinear integration of inputs and local plasticity rules. Single PV cells can encode variances for different contexts by storing information in synaptic weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C22, and C31 are supported by simulation results in Figure 3 and supplementary figures. The model shows PV firing rates become proportional to variance (\u03c3\u00b2) with appropriate activation functions. The reliance on supralinear integration (C31) is supported by cited experimental work, though the specific computational implementation requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Layer 2/3 pyramidal cells encode uncertainty-modulated prediction errors context-dependently through dendritic nonlinearities. The nonlinear integration of dendritic inputs (via NMDA and calcium spikes) compensates for PV neuron dynamics and enables out-of-distribution detection by amplifying large errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C35-C37 are supported by modeling results in Figures 4-5. The dendritic nonlinearity is based on established neurophysiological properties (C35). The model demonstrates that this mechanism approximates ideal uncertainty modulation and enables error amplification for large deviations. However, the specific computational role requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Uncertainty-modulated prediction errors enable adaptive learning rate modulation, allowing fast learning in low-uncertainty contexts and reduced learning rates in high-uncertainty contexts. The standard deviation of firing rates increases sublinearly with input standard deviation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C42-C45 are directly supported by simulation results in Figure 7. The model demonstrates differential learning dynamics based on uncertainty levels with appropriate controls. This represents a key functional prediction of the UPE framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Positive and negative prediction errors are represented by distinct neuronal populations in layer 2/3, which receive subtractive inhibition from SSTs and divisive inhibition from PVs. However, the specific effects of SSTs and PVs can vary depending on circuit and postsynaptic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are well-supported by multiple citations to experimental work. The authors appropriately acknowledge that inhibitory effects can vary (C29), which is important for the model's biological plausibility. These claims establish the circuit architecture basis for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Experimental observations from prior studies are compatible with model predictions: putative inhibitory neurons increase firing in high uncertainty, error neuron responses decrease in unpredictable contexts, SST responses reflect actual sensory input regardless of predictability, and PV responses are absent in unpredictable environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 cite specific experimental findings that align with model predictions. The authors appropriately interpret these findings in the context of their model. However, these are post-hoc comparisons rather than direct tests of the model's predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The authors propose that uncertainty is computed at each level of the cortical hierarchy, enabling distributed uncertainty representation across processing levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is a theoretical proposal extending the model to hierarchical processing. While conceptually consistent with the framework, this claim lacks direct computational demonstration or experimental support in the manuscript. The hierarchical model is presented (Figure 8) but not extensively validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Neurological disorders including autism spectrum disorder and schizophrenia are associated with maladaptive uncertainty-weighting and aberrant inhibition, particularly reduced PV cells in ASD. This provides a potential link between circuit-level deficits and behavioral symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by appropriate citations to clinical and experimental studies. The authors make a reasonable connection between their model and disorder-related findings, though this remains speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Experimental findings on PV and SST properties support the model's assumptions: PVs have broader sensory tuning but connect preferentially to similarly-tuned pyramidal cells, SSTs are involved in spatial prediction and surround suppression, multiple SST subtypes exist with specialized functions, and SSTs receive top-down inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 cite relevant experimental work supporting the biological plausibility of the model's assumptions. These claims appropriately contextualize the model within existing neurophysiological knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Excitation-inhibition (EI) balance has been observed experimentally, and error responses may result from breaking this balance. Heterosynaptic plasticity mechanisms, including spike-pairing-induced potentiation, can achieve and normalize EI balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by citations to experimental and theoretical work. These claims establish the biological plausibility of the weight-matching requirements in the model and provide potential mechanisms for achieving the necessary circuit properties.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study recruited 123 participants across four groups tested at different time points relative to the COVID-19 pandemic in France: before the outbreak (October 2019, n=30), during the first strict lockdown (March-April 2020, n=34), during a less strict lockdown (May 2021, n=31), and after the lift of the sanitary state of emergency (June 2022, n=28). A subset of 28 participants from the first group were retested during the first lockdown for within-subject comparisons. Sample sizes were determined by power analysis based on pilot data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design and sample composition are clearly described with appropriate detail (C2, C23-C26, C85-C92). The power analysis justification for sample sizes is provided (C93-C94), showing adequate planning. The within-subject component adds methodological rigor. The design appropriately addresses the research question about pandemic effects on belief updating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Optimistically biased belief updating, observed before the pandemic, disappeared during the COVID-19 pandemic and re-emerged after the pandemic ended. This effect was driven by decreased belief updating following good news during the pandemic, with no significant change in updating following bad news. The interaction between estimation error valence and context was statistically significant (\u03b2=-5.54, p=0.001), though with 75% power leaving 25% risk for type II errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The primary finding is supported by multiple converging statistical analyses (C27, C29-C34) including between-group comparisons, within-subject replication (C35), and robustness checks with alternative calculations (C36). The temporal pattern across four time points (C30-C32) strengthens the interpretation. However, the acknowledged 25% type II error risk (C28) indicates moderate statistical power, which is a limitation but does not invalidate the finding given the consistency across analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "During the pandemic, participants showed higher confidence in base rates, made fewer but larger positive estimation errors (overestimations), and showed no difference in negative estimation errors compared to those tested outside the pandemic. This pattern indicates participants held fewer but stronger negative future outlooks during the pandemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about confidence ratings (C37), estimation error patterns (C38-C42), and their interpretation (C43) are supported by appropriate statistical tests with significant results. The pattern is internally consistent: higher confidence in base rates combined with fewer but larger overestimations suggests a shift toward more cautious, reality-based assessments during the pandemic. The statistical evidence is robust with clear effect sizes reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Computational modeling revealed that belief updating outside the pandemic was best explained by an optimistic reinforcement learning model (pxp=1, Ef=0.77), while during the pandemic it was best explained by a rational Bayesian model (pxp=0.90, Ef=0.43). This pattern was replicated in within-subject comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model comparison results (C44-C45) are supported by appropriate Bayesian model selection metrics (protected exceedance probability and estimated frequency). The within-subject replication (C46) strengthens confidence in the finding. However, the interpretation depends on the validity of the computational models themselves, which the authors acknowledge as representing potential rather than definitive mechanisms (see C78). The model recovery analysis (Figure 2\u2014figure supplement 2) provides evidence for model identifiability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Learning rates showed a main effect of estimation error valence and a significant interaction with context. The pandemic context reduced the asymmetry in learning rates between good and bad news, driven specifically by decreased learning from positive estimation errors, with no change in learning from negative errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The learning rate analyses (C47-C54) provide mechanistic insight into the observed behavioral changes. The statistical evidence is robust with both between-subject and within-subject analyses. The pattern is consistent with the observed belief updating behavior, showing that the pandemic specifically affected processing of positive (good news) information. The directional specificity strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Parameter recovery analysis confirmed the identifiability of the scaling and asymmetry components of learning rates. The pandemic context specifically reduced the asymmetry parameter (\u03b2=-0.04, p=0.02) but not the scaling parameter, indicating participants considered positive estimation errors less during the pandemic while maintaining overall learning capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parameter recovery analysis (C55) validates that the model parameters are identifiable and meaningful. The specific effect on asymmetry but not scaling (C56-C57, C60-C61) provides mechanistic clarity about what changed during the pandemic. The within-subject replication strengthens confidence. The interpretation (C59) follows logically from the parameter estimates. This decomposition of learning rate components adds important mechanistic detail to the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C62",
+      "C64"
+    ],
+    "result": "The study demonstrates that belief updating shifted from optimistically biased and reinforcement learning-like outside the pandemic to more rational Bayesian-like during the pandemic. This shift was characterized by reduced integration of positive information, fewer but stronger negative estimations, and increased confidence in base rates, suggesting the change was driven more by uncertainty quantification than motivational factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes the main findings (C3-C8, C62, C64) and offers a mechanistic interpretation (C9). The interpretation is well-supported by the convergence of behavioral, computational, and parametric analyses. The claim about uncertainty quantification versus motivational salience (C9) is a reasonable inference from the Bayesian model fit and increased confidence in base rates, though it remains somewhat speculative as the study did not directly measure these psychological constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "The findings align with prior research showing malleability of optimism bias under stress and threat, and suggest an adaptive shift in cognitive strategy. The shift from computationally efficient RL strategies in stable environments to Bayesian inference under uncertainty represents complementary prediction strategies for functioning under different real-life conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contextualization within prior literature (C63, C72-C74, C76-C77) is well-supported by appropriate citations. The interpretation of the findings as adaptive (C70) and representing complementary strategies (C79) is reasonable given the data, though somewhat speculative. The theoretical framework linking RL to stable environments and Bayesian inference to uncertainty is supported by cited literature (C73-C74, C76-C77). However, the adaptive interpretation would be strengthened by direct measures of outcomes or fitness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The study did not collect physiological stress measures or COVID-19 infection status, limiting direct exploration of infection effects on belief updating. A retrospective correlation between perceived COVID-19 death risk and updating bias was found in a subset of participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations (C68) are appropriately acknowledged by the authors. The retrospective correlation finding (C69) is mentioned but appropriately qualified as limited. This honest reporting of limitations is important for interpreting the scope of the findings, though it does not undermine the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The study provides insight into the resilience and adaptability of belief-updating processes during and following the COVID-19 pandemic, demonstrating the malleability of human ability to anticipate the future and adapt to conditions where overly optimistic views would be harmful. However, computational modeling provides insight into potential mechanisms without confirming that humans actually use these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The summary claims (C80-C81) appropriately synthesize the findings and their implications. The important caveat about computational modeling (C78) is a crucial acknowledgment that the models represent potential rather than definitive mechanisms. This balanced interpretation appropriately conveys both the contributions and limitations of the computational approach. The claims about adaptability and malleability are well-supported by the temporal pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The belief updating task comprised 40 trials with adverse life events and base rates taken from published work. Base rates were approximately uniformly distributed (W=0.952, p=0.088), ranged from 10-70% (mean=40%), and the rating scale (3-77%) ensured adequate space for belief updating. Statistical models controlled for estimation error magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The task design is clearly described (C95-C99) with appropriate methodological details and citations to prior work (C96, C99). The statistical control for estimation error magnitude (C100) is an important methodological strength. The use of established stimuli from prior research enhances comparability. The distribution check (C97) confirms appropriate stimulus properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study received ethical approval from the Local Ethics Committee of Sorbonne University, all participants provided informed consent and consent to publish, and the protocol followed the Declaration of Helsinki.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ethical procedures (C82-C84) are appropriately documented and meet standard requirements for human subjects research. This is important for research integrity but represents standard practice rather than a substantive finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction establishes that optimistically biased belief updating is important for mental health and resilience, involves asymmetric learning from positive and negative information following RL or Bayesian principles, and can be reduced by contextual factors like stress and depression. The COVID-19 pandemic represented a chronic adverse context that increased stress, anxiety, and depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1, C10-C22) are appropriately supported by citations to prior literature. They establish the theoretical framework and rationale for the study. The characterization of the pandemic context (C16-C18) is well-supported. These claims represent accurate summaries of prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mental health assessments showed increased anxiety, stress, paranoia, and depression during the pandemic. The rapid spread of SARS-CoV-2 created a challenging situation that shifted from distant threat to immediate crisis. Economic uncertainties during epidemics can contribute to belief-updating fallacies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims (C65-C67) are supported by appropriate citations and provide important background for interpreting the findings. They represent accurate characterizations of the pandemic context based on prior research rather than new findings from this study.",
+    "result_type": "MINOR"
+  }
+]

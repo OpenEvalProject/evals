@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C32",
+      "C33",
+      "C110",
+      "C113",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study employed a pooled scRNA-seq approach on 18,233 cells from 4,489 F2 yeast segregants, using 10X Genomics Chromium platform with unique molecular identifiers (UMIs) and cell barcodes to simultaneously capture genotype and expression data from a single batch grown in log phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C24, C32-C33, C110, C113, C116-C118 collectively describe the experimental design and data collection methodology. The approach is well-documented with specific technical details (platform, reagents, cell numbers, coverage) and represents a coherent experimental strategy. The use of a single batch (C110, C112) appropriately controls for batch effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Hidden Markov Models (HMMs) were adapted from prior work to infer single-cell genotypes from extremely low-coverage scRNA-seq data (~0.2\u00d7 coverage), improving mean relatedness (R\u00b2) between single cells and reference lineages from 0.59 to 0.73 after correction for sequencing errors, index swapping, and imputation of non-covered sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C48-C53 describe the HMM methodology and validation results. The improvement in R\u00b2 from 0.59 to 0.73 (C52-C53) demonstrates effective genotype inference despite low coverage. The re-estimation of HMM parameters increased strain recovery from 58.6% to 65.7% (C51), supporting the adaptation's validity. Statistical validation through permutation tests (C35) strengthens confidence in the assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C72"
+    ],
+    "result": "The study addressed technical challenges of scRNA-seq (gene dropouts, low sequencing depth) by using UMIs to control for PCR amplification bias and applying DISCERN, a neural network imputation model, which achieved moderate correlation with original expression (mean R\u00b2=50.0%) and reduced model residuals by up to 8%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47, C72 describe the data quality control strategy. The DISCERN imputation shows reasonable but not perfect reconstruction (R\u00b2=50.0%, C46), with high variance explained by PC1 (99.6%, C47) consistent with effective denoising. The 8% reduction in residuals (C72) demonstrates practical benefit. The moderate R\u00b2 suggests appropriate caution about over-imputation while still providing utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The scRNA-seq approach recapitulated results from bulk sequencing methods: narrow-sense heritability estimates were similar to prior work, QTL mapping identified 29 QTL (vs. 31 from bulk barcoded approach) with non-significant differences in effect sizes (p=0.29), and 86.2% similarity between methods, while also confirming enrichment of nonsynonymous and disordered sites in QTL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 demonstrate validation against established methods. The similarity in heritability estimates (C55), comparable QTL numbers (C56-C57), non-significant effect size differences (C58), and high model similarity scores (C59-C61) collectively support that scRNA-seq reproduces bulk sequencing results. The enrichment patterns (C62-C63) further validate biological consistency. This establishes the method's reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C76",
+      "C77",
+      "C78",
+      "C101"
+    ],
+    "result": "Expression heritability analysis revealed that genotype explains 75.7% of overall expression variance and 35.4% at the individual gene level (significantly higher than previous estimates of 30.0%), with genes of highest heritability enriched in carbohydrate catabolism and biosynthetic processes, and positively correlated with expression levels (R\u00b2=0.81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C76-C78, C101 present a coherent picture of expression heritability. The estimates are internally consistent and show significant improvement over prior work (C66, p<2.2e-16). The functional enrichment results (C76, C78) are statistically significant (FDR<0.05) and biologically interpretable. The positive correlation between heritability and expression level (C77) is expected and well-supported (R\u00b2=0.81, p<2.2e-16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C102",
+      "C109"
+    ],
+    "result": "Variance partitioning for the 30C phenotype revealed that genotype-expression interaction explains 47.8% of fitness variation, genotype alone explains 20.9%, while expression independent of genotype explains only 0.69%, indicating that almost all phenotypic variation related to expression is also modulated by mutations, with ~30% residual variance likely not explained by genotype or expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C68-C70, C73-C74, C102, C109 present a comprehensive variance partitioning analysis. The finding that expression-only variation is negligible (0.69%, C70) while genotype-expression interaction is substantial (47.8%, C69) is internally consistent and supports the inference that phenotypic variation related to expression is mutation-modulated (C27). The similarity between broad- and narrow-sense heritability (C74) supports the interpretation about residuals. Sample size effects (C71) demonstrate robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The increased scale of scRNA-seq enabled detection of a median of 21 eQTL per gene (almost 4\u00d7 higher than previous studies), with newly detected eQTL increasing expression heritability by 5% on average (15.7% for 59.8% of genes), and revealing new functional enrichments in DNA metabolic processes and nutrient response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 demonstrate the power advantage of the larger dataset. The 4-fold increase in eQTL detection (C79-C80) is consistent with expected power gains from increased sample size (C81-C82, linear relationship R\u00b2=0.95). The modest average increase in heritability (5%, C83) but substantial increase for a majority of genes (15.7% for 59.8%, C84) is reasonable given small effect sizes. New functional discoveries (C85) demonstrate biological utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "eQTL hotspots (regulatory hubs) showed positive correlation with QTL effect sizes (Spearman \u03c1=0.33, p=5.21e-5), with high-effect QTL genes like MKT1, HAP1, IRA2, and VPS70 located in hotspots regulating growth-related genes, and eQTL effects correlated with fitness effects for 35.1% of genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 establish a link between regulatory hotspots and trait variation. The positive correlation (C86) is statistically significant and biologically meaningful. Specific examples (C87, C89-C92) provide mechanistic support with appropriate citations for gene functions. The 35.1% of genes showing correlation (C88) is a substantial minority. Independent validation from a similar study (C93) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C4",
+      "C104",
+      "C105"
+    ],
+    "result": "Cis/trans analysis revealed that all genes are affected by at least one trans-regulatory locus, with trans-eQTL having larger cumulative aggregate effects than cis-eQTL despite individually smaller effect sizes, and trans-eQTLs having 2\u00d7 higher odds of affecting fitness than cis-eQTL (\u03c7\u00b2 p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97, C4, C104-C105 present a coherent picture of cis vs. trans regulation. The finding that all genes have trans-regulation (C94) while only 750/6088 have strong cis-regulation (C95) supports the aggregate trans dominance. The comparison of individual vs. cumulative effects (C96) is logically sound. The 2\u00d7 higher odds for trans-eQTL affecting fitness (C97, p=0.01) provides statistical support for the biological importance of trans-regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Comparison with the Albert et al. 2018 bulk RNA-seq dataset revealed that the scRNA-seq approach detected a significant association between eQTL hotspots and QTL (with QTL having 2\u00d7 higher odds of being in hotspots), while the bulk dataset showed non-significant association (\u03c7\u00b2 p=0.50) with QTL having lower odds (0.72) of being in hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide a direct comparison demonstrating the advantage of the scRNA-seq approach. The contrasting results (non-significant with odds ratio 0.72 in bulk vs. 2\u00d7 higher odds in scRNA-seq) are clearly stated and attributed to increased sample size and methodological differences. This comparison effectively demonstrates the improved power of the scRNA-seq method for detecting regulatory relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C103"
+    ],
+    "result": "The larger scale and multidimensionality of the scRNA-seq dataset enabled both recapitulation of decades of GPM work from bulk assays and revelation of new associations, with most detected eQTL previously shown to be QTL, demonstrating that gene expression contributes significantly to phenotypic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C103 summarize the overall achievement of the study. The recapitulation of prior results (validated through C55-C63) combined with new discoveries (C79-C85, C86-C93) demonstrates both reliability and novelty. The finding that most eQTL are QTL (C103) provides mechanistic insight into how genetic variation affects phenotypes through expression changes. These claims are well-supported by the detailed analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Traditional GPM methods have limitations: they typically ignore the transcriptome or have low statistical power, reverse genetics fails to account for natural variation, forward genetics cannot highlight transcriptome selection, and eQTL mapping cannot identify low-effect mutations or capture rare cell lineages that can drive disease relapse or drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C17-C20 establish the motivation for the study by describing limitations of existing approaches. These are general knowledge claims appropriately supported by citations (C17-C18, C20). The characterization of method limitations is accurate and provides clear rationale for the scRNA-seq approach. These claims set up the problem that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Historical context: King and Wilson proposed that trait variations arise through gene expression regulation rather than protein-coding evolution, Jacob postulated evolution as a tinkerer working through expression regulation, leading to debate about whether adaptations emerge mainly through cis-regulation, though trans-regulatory effects remain challenging to detect in human GWAS, while yeast studies showed conflicting results with Brem et al. finding cis-dominance and Albert et al. finding trans-dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 provide historical and scientific context through appropriate citations. These are accurately attributed claims from prior work that establish the scientific debate the current study addresses. The progression from King/Wilson (C8) through Jacob (C9) to the cis/trans debate (C10-C16) is logically presented and well-supported by citations. This context is essential for understanding the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C111",
+      "C112",
+      "C114",
+      "C115"
+    ],
+    "result": "The study leveraged a reference panel from Nguyen Ba et al. 2022 containing ~100,000 F2 segregants with only two possible alleles at 41,594 polymorphic sites, derived from BY4741 and RM11-1a strains that differ in temperature adaptation, carbon processing, and antifungal resistance, with fitness data from competitive bulk assays capturing multiple growth phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C111-C112, C114-C115 describe the reference panel and experimental context. These are factual descriptions of the prior work and strain characteristics that are appropriately cited (C30) and provide necessary context for understanding the current study's design. The justification for using log phase expression despite multi-phase fitness assays (C115) is reasonable given prior evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C107",
+      "C108"
+    ],
+    "result": "Analysis of missing heritability revealed that epistasis explains only ~5% of fitness (from prior work), contributes relatively little to phenotypic variance in this cross, and transcriptomic variation contributes little to missing heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C107-C108 address the missing heritability question. The epistasis estimate (C75) is appropriately cited to prior work. The inferences about epistasis and transcriptomic contributions (C107-C108) are consistent with the variance partitioning results (C68-C74) showing that most variance is explained by genotype-expression interactions rather than expression alone. These are reasonable conclusions from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Human transcriptome studies show patterns similar to the yeast findings, with trans-eQTL being cumulatively more impactful and enriched in complex trait loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 provides comparative context from human studies through multiple appropriate citations (Wang et al. 2024, Westra et al. 2013, Yao et al. 2017, Liu et al. 2019). This comparison strengthens the generalizability of the yeast findings and is appropriately supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C28"
+    ],
+    "result": "The study performed eQTL mapping to identify single-cell eQTL and transcriptome variation patterns associated with fitness, estimated transcriptome heritability and fitness associations, differing from previous bulk RNA-seq studies that controlled expression for growth differences under the assumption that considerable phenotypic variation relates to expression independently of mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25, C28 describe the analytical approach and how it differs from prior work. The eQTL mapping methodology (C2) and variance partitioning analyses (C25) are clearly described and executed. The distinction from prior work (C28) is important because it explains why this study can detect the negligible expression-only component (C26) that previous studies assumed was substantial. This methodological difference is well-justified.",
+    "result_type": "MINOR"
+  }
+]

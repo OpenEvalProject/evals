@@ -1,0 +1,1298 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Small molecule ligands exhibit a diverse range of conformations in solution.",
+    "claim_type": "EXPLICIT",
+    "source": "Small molecule ligands exhibit a diverse range of conformations in solution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about ligand behavior presented in the abstract without specific experimental data in this manuscript, but is supported by established scientific knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Upon binding to a target protein, ligand conformational diversity is reduced.",
+    "claim_type": "EXPLICIT",
+    "source": "Upon binding to a target protein, this conformational diversity is reduced.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement reflects established understanding in structural biology, cited in the introduction with reference to Chang et al., 2007.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Ligands can retain some degree of conformational flexibility even when bound to a receptor.",
+    "claim_type": "EXPLICIT",
+    "source": "However, ligands can retain some degree of conformational flexibility even when bound to a receptor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the existence of multiconformer ligand models in the PDB as discussed in the manuscript.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "A small number of ligands in the Protein Data Bank have been modeled with distinct alternative conformations supported by X-ray crystallography density maps.",
+    "claim_type": "EXPLICIT",
+    "source": "In the Protein Data Bank, a small number of ligands have been modeled with distinct alternative conformations that are supported by macromolecular X-ray crystallography density maps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by references to van Zundert et al., 2018 and Liebeschuetz, 2021 in the introduction, and by the dataset of 2,199 PDB files containing ligands with multiple conformations identified in the methods.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The vast majority of structural models are fit to a single-ligand conformation, potentially ignoring underlying conformational heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the vast majority of structural models are fit to a single-ligand conformation, potentially ignoring the underlying conformational heterogeneity present in the sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation that only a small number of ligands are modeled with alternative conformations despite evidence that many more could support such modeling.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The prior version of qFit-ligand had limitations in sampling procedures that often resulted in non-physical conformations.",
+    "claim_type": "EXPLICIT",
+    "source": "While this approach indicated that many ligands populate alternative conformations, limitations in our sampling procedures often resulted in non-physical conformations and could not model complex ligands like macrocycles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by comparison data showing the new version reduces strain compared to the prior version in 68.9% of structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The prior version of qFit-ligand could not model complex ligands like macrocycles.",
+    "claim_type": "EXPLICIT",
+    "source": "While this approach indicated that many ligands populate alternative conformations, limitations in our sampling procedures often resulted in non-physical conformations and could not model complex ligands like macrocycles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is addressed by the new implementation which successfully models macrocycles as demonstrated in the results section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The new version of qFit-ligand integrates RDKit for stochastic conformational sampling.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we introduce several improvements to qFit-ligand, including integrating RDKit for stochastic conformational sampling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological claim directly stated and described in detail in the methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The new sampling method greatly enriches low-energy conformations of small molecules and macrocycles.",
+    "claim_type": "EXPLICIT",
+    "source": "This new sampling method greatly enriches low-energy conformations of small molecules and macrocycles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the strain reduction data showing 61.5% of structures exhibited reduced torsional strain in the true positive dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "qFit-ligand has been extended to identify alternative conformations in PanDDA-modified density maps from high-throughput X-ray fragment screening experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "We further extended qFit-ligand to identify alternative conformations in PanDDA-modified density maps from high-throughput X-ray fragment screening experiments, as well as single-particle cryo-electron microscopy density maps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated with experimental data from fragment screening of SARS-CoV-2 NSP3 macrodomain.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "qFit-ligand has been extended to work with single-particle cryo-electron microscopy density maps.",
+    "claim_type": "EXPLICIT",
+    "source": "We further extended qFit-ligand to identify alternative conformations in PanDDA-modified density maps from high-throughput X-ray fragment screening experiments, as well as single-particle cryo-electron microscopy density maps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated with data from four CDK-activating kinase inhibitor structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The new version of qFit-ligand improves fit to electron density relative to deposited single-conformer models.",
+    "claim_type": "EXPLICIT",
+    "source": "The new version of qFit-ligand improves fit to electron density and reduces torsional strain relative to deposited single-conformer models and our prior version of qFit-ligand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by RSCC improvements in 83.7% of the development dataset and 79.8% of the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The new version of qFit-ligand reduces torsional strain relative to deposited single-conformer models.",
+    "claim_type": "EXPLICIT",
+    "source": "The new version of qFit-ligand improves fit to electron density and reduces torsional strain relative to deposited single-conformer models and our prior version of qFit-ligand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by strain reduction in 61.5% of the development dataset and 55.3% of the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The new version of qFit-ligand improves fit to electron density relative to the prior version of qFit-ligand.",
+    "claim_type": "EXPLICIT",
+    "source": "The new version of qFit-ligand improves fit to electron density and reduces torsional strain relative to deposited single-conformer models and our prior version of qFit-ligand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by RSCC improvements in 57.8% of structures and EDIAm improvements in 85.9% of structures compared to the prior version.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The new version of qFit-ligand reduces torsional strain relative to the prior version of qFit-ligand.",
+    "claim_type": "EXPLICIT",
+    "source": "The new version of qFit-ligand improves fit to electron density and reduces torsional strain relative to deposited single-conformer models and our prior version of qFit-ligand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by strain reduction in 68.9% of structures compared to the prior version.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Both macromolecular X-ray crystallography and cryo-EM generate averaged datasets by compiling scattering information from >10,000s of system copies.",
+    "claim_type": "EXPLICIT",
+    "source": "Both macromolecular X-ray crystallography and cryo-EM generate averaged datasets by compiling scattering information from >10,000s of system copies, including macromolecules, solvents, ions, and small molecules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about how these structural biology techniques work.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The resulting data from X-ray crystallography and cryo-EM encompass significant conformational and compositional heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "The resulting data from which structural models are built encompass significant conformational and compositional heterogeneity (Wankowicz and Fraser, 2024a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Wankowicz and Fraser, 2024a.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Conformational heterogeneity includes subtle, sub-\u00c5ngstrom changes that are difficult to model by eye.",
+    "claim_type": "EXPLICIT",
+    "source": "Conformational heterogeneity, when the same substance is in multiple conformations, includes subtle, sub-\u00c5ngstrom changes that are difficult to model by eye, yet these shifts are crucial for accurate biological interpretation (Wankowicz et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Wankowicz et al., 2022.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Ligand modeling is challenging due to compositional heterogeneity, interference from water molecules, and system-wide conformational heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "Ligand modeling, even as a single conformer, is challenging due to compositional heterogeneity, interference from water molecules, and system-wide conformational heterogeneity, all of which lead to ambiguity in electron density map interpretation (Nicholls, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Nicholls, 2017.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Modeling ligands in multiple conformations can reveal critical information about biological function.",
+    "claim_type": "EXPLICIT",
+    "source": "When handled correctly, modeling ligands in multiple conformations can reveal critical information about biological function (D\u00edaz et al., 2024) and guide small molecule design (Zhao et al., 2023; Mehlman et al., 2024).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to D\u00edaz et al., 2024; Zhao et al., 2023; and Mehlman et al., 2024.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Modeling ligands in multiple conformations can guide small molecule design.",
+    "claim_type": "EXPLICIT",
+    "source": "When handled correctly, modeling ligands in multiple conformations can reveal critical information about biological function (D\u00edaz et al., 2024) and guide small molecule design (Zhao et al., 2023; Mehlman et al., 2024).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Zhao et al., 2023 and Mehlman et al., 2024.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "qFit uses mixed integer quadratic programming (MIQP) to optimize the selection of a parsimonious set of conformers along with their corresponding occupancies.",
+    "claim_type": "EXPLICIT",
+    "source": "The underlying concept of qFit is to enumerate a large number of conformations according to a sampling procedure and then to use mixed integer quadratic programming (MIQP) to optimize the selection of a parsimonious set of conformers, along with their corresponding occupancies (van den Bedem et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological description supported by citation to van den Bedem et al., 2009.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The prior version of qFit-ligand used iterative sampling over each torsional degree of freedom.",
+    "claim_type": "EXPLICIT",
+    "source": "The prior version of qFit-ligand used iterative sampling over each torsional degree of freedom (van Zundert et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to van Zundert et al., 2018.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The prior qFit-ligand approach overlooked correlated motions and over-explored conformations that were energetically unfavorable.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach overlooked correlated motions and over-explored conformations that were energetically unfavorable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the comparison showing the new method produces lower strain conformations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The improved qFit-ligand uses the RDKit implementation of the Experimental-Torsion Knowledge Distance Geometry (ETKDG) conformer generator.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present a redeveloped sampling algorithm powered by the RDKit implementation of the Experimental-Torsion Knowledge Distance Geometry (ETKDG) conformer generator, which is a stochastic search method that combines distance geometry and knowledge derived from experimental structures (Wang et al., 2020; Riniker and Landrum, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological claim supported by citations to Wang et al., 2020 and Riniker and Landrum, 2015.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "ETKDG is a stochastic search method that combines distance geometry and knowledge derived from experimental structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present a redeveloped sampling algorithm powered by the RDKit implementation of the Experimental-Torsion Knowledge Distance Geometry (ETKDG) conformer generator, which is a stochastic search method that combines distance geometry and knowledge derived from experimental structures (Wang et al., 2020; Riniker and Landrum, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Wang et al., 2020 and Riniker and Landrum, 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The majority of qFit models improved real space correlation coefficients (RSCC).",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of qFit models improved real space correlation coefficients (RSCC), electron density support for individual atoms (EDIA), and ligand strain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data showing 83.7% improvement in RSCC in the development dataset and 79.8% in the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The majority of qFit models improved electron density support for individual atoms (EDIA).",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of qFit models improved real space correlation coefficients (RSCC), electron density support for individual atoms (EDIA), and ligand strain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data showing 77.0% improvement in EDIAm in the development dataset and 80.6% in the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The majority of qFit models improved ligand strain.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of qFit models improved real space correlation coefficients (RSCC), electron density support for individual atoms (EDIA), and ligand strain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data showing 61.5% improvement in strain in the development dataset and 55.3% in the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Macrocycles are cyclic molecules consisting of 12 or more atoms.",
+    "claim_type": "EXPLICIT",
+    "source": "Macrocycles, cyclic molecules consisting of 12 or more atoms, have a great ability to interact with flat surfaces or shallow grooves (Yudin, 2015; Driggers et al., 2008; Cummings and Sekharan, 2019; Russo et al., 2016; Garcia Jimenez et al., 2023; Vinogradov et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definitional statement supported by multiple citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Macrocycles have a great ability to interact with flat surfaces or shallow grooves.",
+    "claim_type": "EXPLICIT",
+    "source": "Macrocycles, cyclic molecules consisting of 12 or more atoms, have a great ability to interact with flat surfaces or shallow grooves (Yudin, 2015; Driggers et al., 2008; Cummings and Sekharan, 2019; Russo et al., 2016; Garcia Jimenez et al., 2023; Vinogradov et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The cyclic nature of macrocycles makes modeling their flexibility by the prior qFit-ligand approach incredibly troublesome.",
+    "claim_type": "EXPLICIT",
+    "source": "While the cyclic nature of macrocycles makes modeling the flexibility by our prior approach incredibly troublesome, with improved sampling, we can now model this expanding class of small molecules (Kamenik et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the inability of the prior version to handle macrocycles and the successful modeling in the new version.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "X-ray-based fragment screening has exploded in popularity since the first qFit-ligand release.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, X-ray-based fragment screening has exploded in popularity since our first release; however, these approaches rely on density map manipulations accounting for compositional heterogeneity (Pearce et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Pearce et al., 2017 and general knowledge of the field.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Fragment screening approaches rely on density map manipulations accounting for compositional heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, X-ray-based fragment screening has exploded in popularity since our first release; however, these approaches rely on density map manipulations accounting for compositional heterogeneity (Pearce et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Pearce et al., 2017.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Recent advances in cryo-EM have enabled increasingly high-resolution reconstructions.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, recent advances in cryo-EM have enabled increasingly high-resolution reconstructions, which in turn allow for atom-level modeling of conformational heterogeneity (Cushing et al., 2024).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Cushing et al., 2024.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "High-resolution cryo-EM reconstructions allow for atom-level modeling of conformational heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, recent advances in cryo-EM have enabled increasingly high-resolution reconstructions, which in turn allow for atom-level modeling of conformational heterogeneity (Cushing et al., 2024).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Cushing et al., 2024.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "qFit-ligand generates 5000-7000 ligand conformations depending on the size of the ligand.",
+    "claim_type": "EXPLICIT",
+    "source": "The ensemble is generated under constraints defined by the geometry of the binding site (see Biasing conformer generation), generating 5000\u20137000 ligand conformations depending on the size of the ligand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail describing the algorithm's operation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "For X-ray data, qFit-ligand is restricted to output a maximum of three conformations.",
+    "claim_type": "EXPLICIT",
+    "source": "For X-ray data, we restrict the algorithm to output a maximum of three conformations, whereas cryo-EM is restricted to outputting a maximum of two conformations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological constraint built into the algorithm.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "For cryo-EM data, qFit-ligand is restricted to output a maximum of two conformations.",
+    "claim_type": "EXPLICIT",
+    "source": "For X-ray data, we restrict the algorithm to output a maximum of three conformations, whereas cryo-EM is restricted to outputting a maximum of two conformations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological constraint built into the algorithm.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The RDKit Chem.rdDistGeom.EmbedMultipleConfs function generates a distance bounds matrix containing the minimum and maximum allowable distances between every pair of atoms for an input molecule.",
+    "claim_type": "EXPLICIT",
+    "source": "For an input molecule (Figure 1), the RDKit Chem.rdDistGeom.EmbedMultipleConfs function generates a distance bounds matrix containing the minimum and maximum allowable distances between every pair of atoms for an input molecule (Figure 1\u2014figure supplement 1; Blaney and Scott Dixon, 2007).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a methodological description supported by citation to Blaney and Scott Dixon, 2007 and illustrated in Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "qFit-ligand operates on up to five CPU cores.",
+    "claim_type": "EXPLICIT",
+    "source": "qFit-ligand operates on up to five CPU cores, demonstrating efficient performance on a standard laptop, if all five cores are engaged, with typical runtimes for most ligands (70.6%) being less than 10 min (mean: 8.6 min, median: 6.1 min, range: 1.9\u201344.9 min).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a performance characteristic measured during testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Typical runtimes for most ligands (70.6%) are less than 10 minutes.",
+    "claim_type": "EXPLICIT",
+    "source": "qFit-ligand operates on up to five CPU cores, demonstrating efficient performance on a standard laptop, if all five cores are engaged, with typical runtimes for most ligands (70.6%) being less than 10 min (mean: 8.6 min, median: 6.1 min, range: 1.9\u201344.9 min).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a performance metric measured during testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "There is a strong correlation (Pearson correlation coefficient of 0.75) between the size of the input ligand and the runtime.",
+    "claim_type": "EXPLICIT",
+    "source": "Analysis across a large dataset of structures reveals a strong correlation between the size of the input ligand and the runtime (Pearson correlation coefficient of 0.75), with larger ligands resulting in longer processing times (Figure 1\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by statistical analysis shown in Figure 1\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "2,199 PDB files contain ligands with multiple conformations, more than 10 heavy atoms, and resolutions better than 2.0 \u00c5.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 2,199 PDB files containing ligands with multiple conformations, more than 10 heavy atoms, and resolutions better than 2.0 \u00c5.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a data collection result from querying the PDB.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "After filtering, 1,534 structures remained with multiconformer ligands for the true positive collection.",
+    "claim_type": "EXPLICIT",
+    "source": "We removed structures that had alternative conformers in common crystallographic additives (n = 453), as well as structures with the same protein and ligand pair (n = 212). This further pruned our collection to 1,534 structures, with resolutions ranging from 0.73 to 1.99 \u00c5.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a data processing result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "135 structures were used as a development set for improving qFit-ligand after manual inspection.",
+    "claim_type": "EXPLICIT",
+    "source": "We randomly sampled 150 structures and after a manual inspection, removed 15 where the deposited conformations did not visually resolve well into the density, leaving us with 135 structures as a development set for improving qFit-ligand (Figure 2\u2014figure supplement 1, Supplementary file 1, table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a data curation result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "qFit-ligand modeled an alternative conformation in 72.5% (n = 98) of structures in the development dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "qFit-ligand modeled an alternative conformation in 72.5% (n = 98) of structures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from running qFit-ligand on the development dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "83.7% (n = 113) of qFit-ligand models have a better RSCC compared to modified true positive models in the development dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared with the modified true positive models, 83.7% (n = 113) of qFit-ligand models have a better RSCC, and 77.0% (n = 104) structures saw an improvement in EDIAm, representing an improved fit to experimental data in the vast majority of structures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positives.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "77.0% (n = 104) of structures saw an improvement in EDIAm in the development dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared with the modified true positive models, 83.7% (n = 113) of qFit-ligand models have a better RSCC, and 77.0% (n = 104) structures saw an improvement in EDIAm, representing an improved fit to experimental data in the vast majority of structures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positives.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "61.5% (n = 83) of structures exhibited reduced torsional strain with qFit-ligand in the development dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, the majority of structures (61.5%, n = 83) exhibited reduced torsional strain with qFit-ligand, with a mean difference of \u20130.2 kcal/mol (Figure 2A, B, Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positives, shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The mean difference in torsional strain was \u20130.2 kcal/mol in the development dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, the majority of structures (61.5%, n = 83) exhibited reduced torsional strain with qFit-ligand, with a mean difference of \u20130.2 kcal/mol (Figure 2A, B, Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "48.9% (n = 66) of ligands had both improved RSCC and reduced torsional strain in the development dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, 48.9% (n = 66) of ligands had both improved RSCC and reduced torsional strain, demonstrating that we frequently improved the fit between experimental data, while also maintaining or improving the strain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positives.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The new qFit-ligand achieved higher RSCC values in 57.8% (n = 78) of structures compared to the prior version.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the prior version, we found that the new qFit-ligand achieved higher RSCC values in 57.8% (n = 78) of the structures (Figure 2\u2014figure supplement 4A), lower strain in 68.9% (n = 93) (Figure 2C, Figure 2\u2014figure supplement 4B), and higher EDIAm in 85.9% (n = 116) (Figure 2\u2014figure supplement 4C, D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing the new and prior versions of qFit-ligand.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The new qFit-ligand achieved lower strain in 68.9% (n = 93) of structures compared to the prior version.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the prior version, we found that the new qFit-ligand achieved higher RSCC values in 57.8% (n = 78) of the structures (Figure 2\u2014figure supplement 4A), lower strain in 68.9% (n = 93) (Figure 2C, Figure 2\u2014figure supplement 4B), and higher EDIAm in 85.9% (n = 116) (Figure 2\u2014figure supplement 4C, D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing the new and prior versions of qFit-ligand.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The new qFit-ligand achieved higher EDIAm in 85.9% (n = 116) of structures compared to the prior version.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the prior version, we found that the new qFit-ligand achieved higher RSCC values in 57.8% (n = 78) of the structures (Figure 2\u2014figure supplement 4A), lower strain in 68.9% (n = 93) (Figure 2C, Figure 2\u2014figure supplement 4B), and higher EDIAm in 85.9% (n = 116) (Figure 2\u2014figure supplement 4C, D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing the new and prior versions of qFit-ligand.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Among structures where the prior algorithm produced a model with higher RSCC (n = 56), 67.9% (n = 38/56) were found to be higher in strain compared to the new qFit-ligand models.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, among the structures where the prior algorithm produced a model with a higher RSCC (n = 56), 67.9% (n = 38/56) were found to be higher in strain compared to the models created by the new qFit-ligand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing the new and prior versions of qFit-ligand.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "RSCC values exceeding 0.80 indicate a satisfactory agreement between the model and experimental data.",
+    "claim_type": "EXPLICIT",
+    "source": "RSCC evaluates how well the model fits into the electron density, with values exceeding 0.80 indicating a satisfactory agreement between the model and experimental data (Smart et al., 2018; Shao et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard metric in the field supported by citations to Smart et al., 2018 and Shao et al., 2022.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "qFit-ligand performs most effectively and consistently with map resolutions better than 2.0 \u00c5.",
+    "claim_type": "EXPLICIT",
+    "source": "As map resolution approaches 2.0 \u00c5, regardless of the occupancy split, there is a notable decline in qFit-ligand model RSCC. This suggests that qFit-ligand performs most effectively and consistently with map resolutions better than 2.0 \u00c5.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the synthetic dataset analysis showing RSCC decline at resolutions worse than 2.0 \u00c5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The qFit-ligand occupancy detection limit is around 30%.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that the qFit-ligand occupancy detection limit is around 30%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the synthetic dataset analysis showing increased RMSD variability at 0.80/0.20 and 0.90/0.10 occupancy splits.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "In the unbiased dataset, qFit-ligand models yielded 46.0% (n = 271) with a single conformer.",
+    "claim_type": "EXPLICIT",
+    "source": "The qFit-ligand models yielded 46.0% (n = 271) with a single conformer, 35.7% (n = 210) with two conformers, and 18.3% (n = 108) with three conformers (Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from running qFit-ligand on the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "In the unbiased dataset, qFit-ligand models yielded 35.7% (n = 210) with two conformers.",
+    "claim_type": "EXPLICIT",
+    "source": "The qFit-ligand models yielded 46.0% (n = 271) with a single conformer, 35.7% (n = 210) with two conformers, and 18.3% (n = 108) with three conformers (Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from running qFit-ligand on the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "In the unbiased dataset, qFit-ligand models yielded 18.3% (n = 108) with three conformers.",
+    "claim_type": "EXPLICIT",
+    "source": "The qFit-ligand models yielded 46.0% (n = 271) with a single conformer, 35.7% (n = 210) with two conformers, and 18.3% (n = 108) with three conformers (Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from running qFit-ligand on the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "In the unbiased dataset, 79.8% (n = 470) of qFit-ligand models showed an enhanced RSCC compared to modified true positives.",
+    "claim_type": "EXPLICIT",
+    "source": "Comparing qFit-ligand models to the modified true positives, 79.8% (n = 470) showed an enhanced RSCC and 80.6% (n = 475) of the complexes had a higher EDIAm value (Figure 4C), reflecting a superior fit to the density map.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positives in the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "In the unbiased dataset, 80.6% (n = 475) of qFit-ligand models had a higher EDIAm value compared to modified true positives.",
+    "claim_type": "EXPLICIT",
+    "source": "Comparing qFit-ligand models to the modified true positives, 79.8% (n = 470) showed an enhanced RSCC and 80.6% (n = 475) of the complexes had a higher EDIAm value (Figure 4C), reflecting a superior fit to the density map.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positives in the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "In the unbiased dataset, qFit-ligand models had reduced torsional strain in 55.3% (n = 326) of structures.",
+    "claim_type": "EXPLICIT",
+    "source": "qFit-ligand models had a reduced torsional strain in 55.3% (n = 326) of structures, though the overall strain difference was minimal in most cases (Figure 4B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positives in the unbiased dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "High ligand strain is energetically unfavorable and reduces overall binding affinity.",
+    "claim_type": "EXPLICIT",
+    "source": "High ligand strain is energetically unfavorable, and the associated energy penalty paid to adopt a distorted bound conformation reduces overall binding affinity (Smola et al., 2021; Jain et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Smola et al., 2021 and Jain et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "In the high-strain dataset, qFit-ligand modeled 75.4% (n = 144) of structures with a single conformer.",
+    "claim_type": "EXPLICIT",
+    "source": "qFit-ligand modeled 75.4% (n = 144) of the structures with a single conformer, while 19.4% (n = 37) had two conformers, and 5.2% (n = 10) had three conformers (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from running qFit-ligand on the high-strain dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "In the high-strain dataset, RSCC increased over the deposited model in 53.4% of structures (n = 102).",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, even without modeling an alternative conformer in the majority of structures, RSCC increased over the deposited model in 53.4% of structures (n = 102), EDIAm increased in 81.2% (n = 155), and strain decreased in 66.5% (n = 127) (Figure 5B, Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to deposited models in the high-strain dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "In the high-strain dataset, EDIAm increased in 81.2% (n = 155) of structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, even without modeling an alternative conformer in the majority of structures, RSCC increased over the deposited model in 53.4% of structures (n = 102), EDIAm increased in 81.2% (n = 155), and strain decreased in 66.5% (n = 127) (Figure 5B, Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to deposited models in the high-strain dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "In the high-strain dataset, strain decreased in 66.5% (n = 127) of structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, even without modeling an alternative conformer in the majority of structures, RSCC increased over the deposited model in 53.4% of structures (n = 102), EDIAm increased in 81.2% (n = 155), and strain decreased in 66.5% (n = 127) (Figure 5B, Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to deposited models in the high-strain dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "For the macrocycle dataset, 19.33% (n = 29) could not be refined against the deposited structure factors and were removed from analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Of these, 19.33% (n = 29) could not be refined against the deposited structure factors and were removed from the analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a data processing result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "For the macrocycle dataset, 19 cases of compromised ligand geometry were identified and excluded from analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 19 cases of compromised ligand geometry (8 from pre-qFit and 11 from post-qFit refinement), which were subsequently excluded from this analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a data quality control result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "For the macrocycle dataset, strain calculation failed in 19.3% of cases (n = 29/150), leaving 73 structures available for final analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, strain calculation failed in 19.3% of cases (n = 29/150), producing N/A values, leaving 73 structures available for final analysis (Supplementary file 3, table 3, Supplementary file 4, table 6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a data processing result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "For the macrocycle dataset, qFit-ligand improved the RSCC in 69.9% (n = 51) of structures compared to deposited models.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the single-conformer deposited models, qFit-ligand improved the RSCC in 69.9% (n = 51) of structures (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to deposited macrocycle models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "For the macrocycle dataset, 58.3% (n = 21/36) of structures with resolution better than 2 \u00c5 showed higher EDIAm values in qFit-ligand models.",
+    "claim_type": "EXPLICIT",
+    "source": "Only 36 structures met the 2 \u00c5 resolution criteria, and we computed EDIAm values for this subset. Among them, 58.3% (n = 21/36) showed higher EDIAm values in the qFit-ligand models compared to their corresponding deposited structures (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to deposited macrocycle models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "For the macrocycle dataset, 57.5% (n = 42/73) of structures had lower qFit-ligand model strain.",
+    "claim_type": "EXPLICIT",
+    "source": "Torsion strain analysis showed that 57.5% (n = 42/73) of structures had a lower qFit-ligand model strain, with a mean strain difference of \u20130.1 kcal/mol.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to deposited macrocycle models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "For the macrocycle dataset, the mean strain difference was \u20130.1 kcal/mol.",
+    "claim_type": "EXPLICIT",
+    "source": "Torsion strain analysis showed that 57.5% (n = 42/73) of structures had a lower qFit-ligand model strain, with a mean strain difference of \u20130.1 kcal/mol.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "There is a correlation between the number of conformers generated by qFit-ligand and the RSCC of the input model for macrocycles.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed a correlation between the number of conformers generated by qFit-ligand and the RSCC of the input model (Figure 6\u2014figure supplement 1B), where a lower input RSCC increases the likelihood of identifying more alternate conformers.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed from analysis shown in Figure 6\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "A lower input RSCC increases the likelihood of identifying more alternate conformers for macrocycles.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed a correlation between the number of conformers generated by qFit-ligand and the RSCC of the input model (Figure 6\u2014figure supplement 1B), where a lower input RSCC increases the likelihood of identifying more alternate conformers.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from the correlation analysis shown in Figure 6\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "For the fragment dataset, only 9 of 20 structures exhibit an RMSD of less than 0.5 \u00c5 between the manually modeled 'B' conformer and the closest qFit-ligand conformer.",
+    "claim_type": "EXPLICIT",
+    "source": "Only 9 of the structures exhibit an RMSD of less than 0.5 \u00c5, indicating that for approximately half of the cases, our algorithm struggles to recapitulate the second deposited conformer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to deposited fragment models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "For the fragment dataset, about a third (n = 4/11) of fragments with poor RMSD adopted a completely different binding pose.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 11 fragments with poor RMSD, about a third (n = 4/11) adopted a completely different binding pose, which our current algorithm often fails to capture accurately due to reliance on the input model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from analyzing failures in the fragment dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "For the fragment dataset, 17 structures had higher RSCC in qFit-ligand models compared to modified true positive models.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this, compared to the modified true positive models, the qFit-ligand models had a higher RSCC in 17 structures and a higher EDIAm in 15 (Figure 7B, C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positive fragment models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "For the fragment dataset, 15 structures had higher EDIAm in qFit-ligand models compared to modified true positive models.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this, compared to the modified true positive models, the qFit-ligand models had a higher RSCC in 17 structures and a higher EDIAm in 15 (Figure 7B, C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positive fragment models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "For the fragment dataset, 13 structures have lower strain in the qFit-ligand model.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the torsion strain analysis reveals that 13 structures have a lower strain in the qFit-ligand model, and 12 structures have both a higher RSCC and a lower model strain in the qFit-ligand model (Figure 7B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positive fragment models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "For the fragment dataset, 12 structures have both higher RSCC and lower model strain in the qFit-ligand model.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the torsion strain analysis reveals that 13 structures have a lower strain in the qFit-ligand model, and 12 structures have both a higher RSCC and a lower model strain in the qFit-ligand model (Figure 7B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positive fragment models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "For the fragment dataset, the mean strain improvement in qFit-ligand models was \u20130.6 kcal/mol.",
+    "claim_type": "EXPLICIT",
+    "source": "While the mean strain improvement in the qFit-ligand models was marginal, only \u20130.6 kcal/mol, it indicates that we can reliably fit to density without straining the molecule (Figure 7D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "In all four cryo-EM structures, qFit-ligand identified a second conformation.",
+    "claim_type": "EXPLICIT",
+    "source": "In all four structures, qFit-ligand identified a second conformation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from running qFit-ligand on the cryo-EM dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "In all four cryo-EM structures, all generated multiconformers were improved in terms of RSCC, EDIAm, and strain compared to modified single-conformer true positive input models.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the modified single-conformer true positive input model, all generated multiconformers were improved in terms of RSCC, EDIAm, and strain (Figure 8).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positive cryo-EM models, shown in Figure 8.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "For the cryo-EM dataset, RSCC increased by up to 0.1 in qFit-ligand models.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the four structures, RSCC increased by up to 0.1, EDIAm by up to 0.2, and strain decreased by up to 2.3 kcal/mol in the qFit-ligand models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positive cryo-EM models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "For the cryo-EM dataset, EDIAm increased by up to 0.2 in qFit-ligand models.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the four structures, RSCC increased by up to 0.1, EDIAm by up to 0.2, and strain decreased by up to 2.3 kcal/mol in the qFit-ligand models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positive cryo-EM models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "For the cryo-EM dataset, strain decreased by up to 2.3 kcal/mol in qFit-ligand models.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the four structures, RSCC increased by up to 0.1, EDIAm by up to 0.2, and strain decreased by up to 2.3 kcal/mol in the qFit-ligand models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from comparing qFit-ligand models to modified true positive cryo-EM models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "qFit-ligand is limited by its reliance on an initial single-conformer structure, which introduces bias toward the starting model.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach is limited by its reliance on an initial single-conformer structure, which introduces bias toward the starting model and hinders effective exploration of conformational space when the input ligand is poorly resolved.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This limitation is acknowledged based on the observation that qFit-ligand struggles with large conformational changes like 180\u00b0 flips.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "qFit-ligand performs best when unmodeled density is consistent with subtle conformational changes, such as torsion angle variations or minor translational shifts.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, qFit-ligand performs best when unmodeled density is consistent with subtle conformational changes, such as torsion angle variations or minor translational shifts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the fragment dataset results showing difficulty with large conformational changes.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "qFit-ligand struggles to identify more dramatic conformational heterogeneity, such as 180\u00b0 flip ligand conformations.",
+    "claim_type": "EXPLICIT",
+    "source": "It struggles to identify more dramatic conformational heterogeneity, such as 180\u00b0 flip ligand conformations as seen in our fragment dataset (Gahbauer et al., 2023; Suryawanshi et al., 2024; Correy et al., 2024).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the fragment dataset results and citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Approximately one-third of macrocycle datasets failed in standard preparation or post-refinement pipelines due to ligand parameterization issues.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that macrocycles, due to their complicated and interconnected degrees of freedom, suffer acutely from the refinement issues, as demonstrated by the failure of approximately one-third of datasets in our standard preparation or post-refinement pipelines due to ligand parameterization issues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative observation from the macrocycle dataset processing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Many macrocycle refinement failures stemmed from problematic ligand restraint files.",
+    "claim_type": "EXPLICIT",
+    "source": "Many of these stemmed from problematic ligand restraint files, highlighting the difficulty of encoding the geometric constraints of macrocycles using standard restraint libraries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from analysis of the macrocycle dataset failures.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  }
+]

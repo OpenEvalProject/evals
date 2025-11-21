@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ROCKET contains two distinct CDL binding sites identified through CG-MD simulations: Site 1 (high-occupancy, 71%, distal from protein core) and Site 2 (lower-occupancy, 56%, close to protein core with extensive acyl chain contacts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are well-supported by CG-MD simulation data over 50 \u00b5s showing distinct binding modes, occupancies, and residence times. The structural characterization is consistent across multiple analyses and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The AAXWA mutation (R9A/K10A/R13A) redirects CDL binding from Site 1 to Site 2, stabilizes helix 1 conformation, and increases the force required to separate helices when CDL is present, suggesting inter-helix CDL binding is a prerequisite for lipid-mediated stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by converging evidence from CG-MD simulations showing redirected binding (C42-C43), gas-phase MD showing increased force requirements (C44-C46), and structural snapshots showing multiple inter-subunit contacts (C47). The conclusion about inter-helix binding (C48) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cryo-EM structures of ROCKET and ROCKETAAXWA at 3.8-3.9 \u00c5 resolution show identical architectures confirming mutations do not disrupt native structure, with diffuse density partially overlapping predicted CDL Site 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by cryo-EM data with appropriate resolution reported. The observation of diffuse density (C51) is appropriately qualified as not definitive at this resolution, which is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Native MS of proteoliposomes shows ROCKET retains up to 3 CDL molecules with preference for CDL over other lipids, while ROCKETAAXWA shows similar retention but with ~50% reduced intensity of CDL adducts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by native MS data from proteoliposomes. The preference for CDL (C53) is appropriately inferred from retention despite only 10% abundance in liposomes. The quantification of reduced intensity (C55) is directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Gas-phase dissociation experiments show CDL stabilizes ROCKETAAXWA tetramer to a greater extent than ROCKET, as evidenced by reduced monomer release, while CDL binding to distal Site 1 in ROCKET involves fewer intermolecular contacts and is unlikely to stabilize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by native MS data showing differential monomer release. The inference about stabilization (C57) is appropriate given the controlled experimental design. C58 is a reasonable inference from structural analysis though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Systematic mutagenesis reveals that AAXWA mutation increases CDL stabilization, while A61P mutation does not, D7A/S8R shows intermediate effects, and R66A shows similar stabilization to AAXWA, indicating core destabilization alone is insufficient for lipid-mediated stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by native MS data from multiple independent replicates (n=4) with statistical significance reported. The conclusion about core destabilization (C62) is appropriately inferred from the A61P data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C65",
+      "C66"
+    ],
+    "result": "Spatial arrangement of positively charged residues and local conformational flexibility are key factors distinguishing stabilizing from non-stabilizing CDL interactions, with inter-helix binding and connection of flexible regions producing the most pronounced stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C65-C66 represent the main conclusions supported by the systematic analysis of ROCKET variants. The evidence from multiple mutants with different structural features converges on these principles, though the complexity of compensatory interactions is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Even in the controlled ROCKET system, clear distinction between binding and stabilization is difficult due to overlapping lipid contacts that can compensate for binding site mutations, with mutations causing redistribution to sites with different stabilization effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C81-C83 are supported by the complex patterns observed across ROCKET variants where mutations have non-intuitive effects. This represents an important limitation and insight from the study about the complexity of lipid-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Analysis of E. coli membrane protein CDL binding sites reveals bimodal distribution with 75 sites spanning <30 positions and 180 sites spanning >30 positions; GlpG contains a CDL site between R92 (helix 1) and K167 (helix 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by database analysis and structural identification. The bimodal distribution provides a rational basis for identifying inter-helix sites, and GlpG site identification is confirmed by subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "GlpG thermal stability assays show PG and CDL provide near-complete protection from heat-induced precipitation while PE, PC, and SM do not; CG-MD shows CDL binds exclusively to the predicted site with 96.2% occupancy and 170 ns residence time; native MS confirms single CDL binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by converging evidence from thermal shift assays, CG-MD simulations, and native MS. The high occupancy in simulations (C72) and exclusive binding (C73) are well-documented. The inference about CDL outcompeting POPG (C74) is reasonable given the near-100% occupancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C85",
+      "C86"
+    ],
+    "result": "CDL acts as an allosteric regulator of GlpG with differential effects on substrate preference: both PG and CDL increase soluble substrate (KSp63) cleavage by ~40%, while CDL drastically inhibits transmembrane substrate (KSp96) cleavage to 20% activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C85-C86 are supported by protease activity assays with appropriate controls and statistical significance (p<0.0001 for CDL on KSp96). The differential substrate effects establish CDL as a functional regulator, which is a major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C79",
+      "C80"
+    ],
+    "result": "A stabilizing CDL site exists in GlpG with regulatory influence on substrate preference; both open and closed conformations bind CDL in the same location, with acyl chains extending into the gap between helices 2 and 5 (the lateral gate for transmembrane substrate access).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C79-C80 integrate multiple lines of evidence (thermal stability, MD simulations, native MS, activity assays) to establish functional CDL regulation in a native protein. The mechanism involving the lateral gate (C80) provides a structural rationale for substrate selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The CDL binding site (W70/R71/R151) in yeast ATP/ADP carrier Aac2 has similar hallmarks to the GlpG site, connecting the flexible N-terminal helix to the protein core and resulting in stabilization and increased transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C87 is supported by structural comparison (Figure 4\u2014figure supplement 2), and C89 is supported by citation. However, C88 about the functional consequences is presented as inference without direct experimental validation in this study. The claim relies on cited work (Senoo et al., 2024) rather than data presented here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The gas-phase MS approach has methodological limitations: gas-phase stability does not easily correlate with condensed phase stability, charge interactions are strengthened while hydrophobic contacts are lost, and detergents have delipidating effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 represent appropriate acknowledgment of methodological limitations. C90-C91 are based on established understanding of gas-phase behavior, C92 is supported by citation (Bolla et al., 2020), and C93 is a reasonable inference about the MS process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ROCKET is extremely stable with no function and does not capture the dynamic nature of most membrane proteins; the key finding is that emulating binding site architecture is only the first step, and effects on local dynamics are critical to understanding lipid regulation of membrane protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 represent appropriate discussion of the model system's limitations and the study's key conceptual contribution. C94 is based on ROCKET's design, C95 acknowledges limitations with appropriate citation, and C96 synthesizes the main insight from the systematic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims establishing the importance of membrane proteins, lipid-protein interactions, cardiolipin's regulatory roles, and the methodological approaches (CG-MD, thermal shift assays, native MS) used in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C35 represent background knowledge and prior work appropriately cited throughout. These establish context but are not novel findings of this study. All citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Inter-helix CDL binding stabilizes tetrameric membrane proteins in the gas-phase, recapitulating a key feature of both prokaryotic and eukaryotic membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C59 is supported by the ROCKET experimental data and appropriately contextualized with citations to Gupta et al., 2017 and Pyle et al., 2018. This validates the ROCKET model system as capturing a biologically relevant phenomenon.",
+    "result_type": "MAJOR"
+  }
+]

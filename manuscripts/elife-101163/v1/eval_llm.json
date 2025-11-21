@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C58",
+      "C63",
+      "C64"
+    ],
+    "result": "The study analyzed single-cell methylation data from 15,000-21,000 cells across three human male brains, using ~31,000 X-chromosome fCpG sites as barcodes, with cells having at least 500 covered fCpG sites and cell pairs sharing at least 30 common sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C20, C58, C63, and C64 are well-supported by Table 1 and the Methods section, which provide specific cell counts, fCpG site numbers, and data sources. The filtering criteria and data acquisition methods are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C43",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The fCpG barcode initializes as predominantly methylated in progenitor cells and progressively demethylates during development, with early-appearing neurons (brainstem, inhibitory) showing higher methylation than later-appearing neurons (excitatory, glial), creating a developmental 'stopwatch' that records when different cell types emerge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13, C22-C26, C43, C67-C70 are strongly supported by Figures 2A-C showing the methylation hierarchy across cell types that matches known developmental timing. The pattern is consistent across all three brains (Figure 2 supplements 1-2), and the interpretation aligns with established developmental biology (C11, C12, C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C66"
+    ],
+    "result": "The fCpG barcodes are sufficiently polymorphic to distinguish between most cells, with average pairwise differences (PWDs) of ~0.47 between cells and only ~10 closely related pairs per million (PWD <0.05). Cells of the same phenotype show lower PWDs, suggesting common ancestry, and closely related pairs are ~2.9 times more frequent within brains than between brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C7, C21, C27-C30, and C66 are well-supported by quantitative data in Table 1 and Figures 1B and 3A-C. The within-brain vs. between-brain comparison (C29) provides evidence that low PWDs reflect biological relatedness rather than random chance, though the authors acknowledge sparse sampling limitations (C30, C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C73",
+      "C74",
+      "C75",
+      "C84"
+    ],
+    "result": "Phylogenetic trees constructed from ~1000 cells using IQtree show sequential branching patterns consistent with caudal-to-rostral brain development, with brainstem neurons appearing first, followed by inhibitory neurons, cerebellar cells, glial cells, and finally excitatory neurons with hippocampal neurons at the terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C34, C73-C75, and C84 describe trees that qualitatively match expected developmental patterns (Figure 4), but the authors explicitly acknowledge very low bootstrap support (<15%, C34), sparse sampling limitations, and the possibility of chance similarities. The trees demonstrate feasibility but lack statistical confidence for specific branch relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C44",
+      "C45",
+      "C79",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Lineage fidelity analysis shows that inhibitory neurons have >90% lineage fidelity (nearest neighbors are also inhibitory), while excitatory neurons show slightly lower fidelity, suggesting most inhibitory and excitatory neurons have distinct progenitors with some evidence for common progenitors earlier in development. The barcodes also document known switching between inhibitory neuron subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35, C36, C44, C45, C79, C85-C88 are supported by data in Figure 5A-B showing differential lineage fidelity patterns. However, the authors explicitly acknowledge this approach is speculative due to lack of experimental validation, sparse sampling, and potential for chance matches (C88). The consistency with prior analysis of the same data (C85) provides some validation, but independent confirmation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "Inhibitory neurons show more evidence of tangential migration than excitatory neurons, with nearest neighbor pairs found in the same cortical region ~25% of the time for inhibitory neurons versus ~50% for excitatory neurons. Trees with more cells (~2800) show improved detection of localized excitatory neuron radial migration, though related lower and upper layer pairs remain uncommon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C37-C40, C76-C78, and C80 are supported by location fidelity data in Figures 4C-D and 5C-D. The differential migration patterns are consistent with known developmental biology (C76). However, the authors explicitly acknowledge uncertainty due to sparse sampling and potential chance matches (C77), and the inability to detect radial clonal units may reflect sampling limitations rather than biological reality (C78, C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The study overcame sparse single-cell methylation coverage (<5% of CpG sites) by focusing on X-chromosome fCpG sites in male individuals, where a single read can infer binary methylation state. Sites were selected based on intermediate bulk methylation (0.25-0.75) indicating polymorphism, and are predominantly intergenic (84%), suggesting neutral evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 describe the methodological rationale for barcode design. The logic is sound: X-chromosome hemizygosity in males (C15) simplifies state inference compared to diploid autosomes (C16), and intermediate bulk methylation (C17-C18) indicates single-cell heterogeneity. The intergenic location (C19, Supplementary file 1) supports neutrality, though this assumption remains untested (C52).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C89"
+    ],
+    "result": "fCpGs distinguish between cells more efficiently than mutations due to higher methylation replication error rates. Methylation appears to fluctuate bidirectionally (both demethylation and remethylation) rather than proceeding unidirectionally to complete demethylation, as evidenced by the absence of fully demethylated neurons and ~50% methylation in brain tumors despite many additional divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 and C89 are supported by the observation that no fully demethylated neurons were found (C48, Figures 1A, 2A) and brain tumors maintain ~50% methylation (C49, Figure 3-supplement 3). The inference of bidirectional fluctuation is consistent with prior work on fCpGs in other tissues (C89, Gabbutt et al. 2022). This complicates lineage reconstruction but can be modeled (C50, C61).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The barcode interpretation relies on several untested assumptions including constant error rates, neutrality, and a fully methylated starting state. While epigenetic remodeling after differentiation could erase barcode information, the observation that neurons of the same type show a range of relatedness suggests the fCpG sites are not systematically altered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 represent an honest assessment of limitations. The authors explicitly acknowledge untested assumptions (C52) and potential confounding by post-differentiation remodeling (C53, Ciceri et al. 2024). The counter-evidence that same-type neurons show variable PWDs (C54) is logical but indirect. These limitations are appropriately disclosed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C42",
+      "C46"
+    ],
+    "result": "The study leverages established knowledge about brain development and DNA methylation, including that brain growth is largely prenatal, development follows caudal-to-rostral patterns, brainstem neurons emerge early, and DNA methylation has higher replication error rates than base replication. Tangential migration has been documented in prior sequencing studies using somatic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12, C42, and C46 cite established knowledge from the literature (Stiles and Jernigan 2010, Fan et al. 2020, McKenna and Gagnon 2019, Finlay and Darlington 1995, Lodato et al. 2015, Breuss et al. 2022, Chung et al. 2024, Evrony et al. 2015). These provide the biological context for interpreting the barcode data and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C55",
+      "C56",
+      "C57",
+      "C81",
+      "C82",
+      "C83",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors discuss the conceptual framework, validation strategy, and future applications of fCpG barcodes. They emphasize that barcodes mark ancestry rather than cell type, describe how the brain's developmental biology enables validation through 'serial sampling' of neurons that differentiated at different times, note preliminary evidence of inter-individual lineage heterogeneity, and suggest technical improvements and applications to other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C55-C57, C81-C83, C90-C92 represent conceptual discussion and future directions. The distinction between ancestry markers and cell type classifiers (C41) is important for interpretation. The validation strategy using neurons as temporal samples (C81-C83) is a key insight. Suggestions for improvement (C90) and applications (C57, C91) are reasonable speculation. Inter-individual variation (C92, Figure 4A) is preliminary but documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65"
+    ],
+    "result": "Methodological details for phylogenetic analysis include calculating PWDs between cell pairs with \u226530 matching fCpG sites, using IQtree with the GTR2+FO+G4 model to account for backmutation and missing data, running 1000 bootstraps with 3000 iterations for whole-brain trees and 1000 iterations for cell-type-specific trees, and interpreting PWD=0 as perfect match and PWD=0.5 as randomization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C65 provide clear methodological details that enable reproducibility. The choice of phylogenetic model (C61) is appropriate for binary data with backmutation. The PWD metric definition (C65) is standard. Computational resources are specified (C60). These methods are adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The authors suggest that lineage resolution could be improved by combining mutations and fCpGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is a reasonable speculation for future work. Combining complementary markers (mutations with low error rates but accumulating unidirectionally, and fCpGs with high error rates but fluctuating) could provide improved resolution. This is presented as a suggestion rather than a tested result.",
+    "result_type": "MINOR"
+  }
+]

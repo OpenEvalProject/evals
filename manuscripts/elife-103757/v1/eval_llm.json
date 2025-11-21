@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "PSD-95.FingR-RINGMdm2 degrades exogenously expressed PSD-95 through ubiquitination in COS7 cells. Co-expression reduced PSD-95-myc by ~50%, and this reduction was blocked by the ubiquitination inhibitor TAK243.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 provide converging evidence from western blot analysis showing PSD-95 reduction with PSD-95.FingR-RINGMdm2 expression, rescue with TAK243, and confirmation that TAK243 blocks ubiquitination. The statistical significance (p < 0.05) and appropriate controls support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "PSD-95.FingR-RINGMdm2 reduces endogenous PSD-95 in neurons but with limited efficiency (52-85% reduction). The authors hypothesized that adding the PIR domain from PCDH10 would improve efficiency by recruiting proteasomes, leading to the design of PFE3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 demonstrate partial PSD-95 degradation with statistical significance. The rationale for PFE3 design (C34-C36) is supported by citation to Tsai et al., 2012. However, the discrepancy between total labeling (85%) and puncta count (52%) reduction suggests incomplete synapse elimination, motivating the optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C107",
+      "C108"
+    ],
+    "result": "PFE3 (PSD-95.FingR-RINGMdm2-PIR) efficiently ablates PSD-95 in cultured neurons, reducing PSD-95.FingR labeling by 65% and endogenous PSD-95 puncta by 73%. All three components are required for efficient degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 show significant PSD-95 reduction (p < 0.0001) with appropriate controls (C40, RandE3). Claim C107 confirms all three domains are necessary. The improvement over PSD-95.FingR-RINGMdm2 alone supports the design rationale. Sample sizes (n=14 cells, 3 experiments) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PFE3 expression reduces AMPA receptor (GluA1) presence at synapses. Only 41\u00b15% of remaining PSD-95 puncta contained GluA1 (vs. 89\u00b11% in controls), suggesting ~90% reduction in GluA1 and reduced functional excitatory connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide immunostaining data with appropriate controls and statistics (p < 0.001). The calculation in C44 is mathematically sound (73% puncta loss \u00d7 59% GluA1 loss in remaining = ~90% total). The inference to functional connectivity (C47) is reasonable given C46's citation establishing AMPARs' role in excitatory transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PSD-95 degradation by PFE3 is reversible. After Dox removal, PSD-95.FingR labeling recovered to baseline levels within 5 days, with similar spatial distribution of puncta before and after ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 demonstrate significant reduction followed by recovery with appropriate statistics (Friedman multiple comparison). Claims C53-C54 provide additional evidence of functional recovery. The lack of significant difference between T0 and recovery timepoints (C51-C52) supports reversibility. Sample size (n=8 cells, 4 experiments) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Control experiments with RandE3 (containing random binding pocket) show no PSD-95 degradation, confirming specificity requires PSD-95.FingR targeting. PFE3 without Dox induction shows no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C58 provide appropriate negative controls with non-significant results (p > 0.1). Claim C57 correctly infers that targeting by PSD-95.FingR is necessary. These controls are essential for establishing specificity and rule out non-specific effects of the RINGMdm2-PIR domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "PFE3 expression in vivo blocks excitatory synaptic transmission in retinal ganglion cells. EPSCs were reduced by >80% (79\u00b130 pA vs. 445\u00b178 pA in controls, p < 0.001) in On \u03b1-RGCs receiving input from type 6 bipolar cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 establish the experimental system with appropriate citations. Claim C61 provides electrophysiology data with significant reduction and adequate sample sizes (n=9 PFE3, n=8 control cells from multiple mice). The inference to reduced AMPAR density (C62) is reasonable given the holding potential selects for AMPAergic currents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Existing photodimerization systems (Cry2) have substantial background activity. The authors developed PhLIC, a novel photoactivatable complex based on PhoCl2c that undergoes cleavage at 400 nm but not in dark/ambient light, exposing an epitope recognized by PBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 identifies the problem with existing systems (supported by Figure 5\u2014supplement 1A). Claims C64-C67 describe PhLIC design based on PhoCl properties, supported by citations to Zhang et al., 2017 and Lu et al., 2021. This establishes the rationale for developing a new photoactivation system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PBP was generated using mRNA display and selectively binds photocleaved PhoCl2c but not full-length PhoCl2c. In COS7 cells, PBP-tagRFP translocated to Golgi-targeted PhoCl2c after 400 nm light exposure (3.3\u00b10.5-fold enrichment, p < 0.001) but not with ambient light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 describe the selection method. Claim C70 provides pulldown data confirming specificity. Claims C72-C73 demonstrate light-dependent translocation with appropriate controls and statistics. Claim C74's inference of robust activation with no ambient light background is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "tagRFP-GPHN.FingR-PhoCl2c labels inhibitory synapses and serves as an anchor for PBP-E3 recruitment after photocleavage. paGFE3 shows no background degradation (8% reduction, p > 0.4), unlike Cry2 system (48% reduction, p < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 establish dual function with colocalization data. Claims C78-C79 provide critical comparison showing paGFE3's lack of background vs. Cry2 system's substantial background activity. The statistical comparisons are appropriate and demonstrate the advantage of PhLIC over existing systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "paGFE3 mediates efficient light-dependent degradation of Gephyrin. Cells showed 61\u00b13% reduction in tagRFP labeling and 40\u00b16% reduction in puncta after 400 nm exposure (p < 0.001). Controls without PBP-RING showed minimal reduction (10\u00b12%), likely due to photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide experimental data with appropriate controls distinguishing true degradation from photobleaching. The control showing no change in puncta number (C82) while total labeling decreased slightly supports the photobleaching interpretation. Sample sizes (n=17 and n=14 cells) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "paGFE3-mediated Gephyrin degradation is reversible. After initial 63\u00b15% reduction at +5 hr, labeling increased 130\u00b128% by +4 days, returning to near-baseline (20\u00b19% below T0, p > 0.1). Puncta locations were similar before and after ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 demonstrate time-course of degradation and recovery with appropriate statistics (Friedman test). The non-significant difference between T0 and +4 days supports reversibility. Claim C88 provides spatial evidence. The inference in C89 is well-supported by the complete dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "chGFE3 is based on eDHFR-HaloTag dimerization induced by the small molecule TH. The system is reversible because eDHFR-TMP binding is non-covalent and can be outcompeted by excess TMP. tagRFP-GPHN.FingR-HaloTag labels synapses and anchors E3 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe the chemogenetic system with appropriate citation (Ballister et al., 2014). Claim C93 establishes the dual function analogous to paGFE3. This provides the conceptual framework for chGFE3 design and establishes the basis for reversibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "chGFE3 mediates efficient chemically-induced Gephyrin degradation. TH treatment for 4 hr reduced Gephyrin by 73\u00b13%, and 24 hr treatment reduced it by 89\u00b12% (p < 0.001). Control with SnapTag-E3 showed no effect, confirming dimerization requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 show dose-dependent (time-dependent) degradation with strong statistical significance. Claim C96 provides essential negative control confirming specificity. Sample sizes (n=12 cells, 3 experiments for treatment; n=8-9 for control) are adequate. The inference in C97 is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "chGFE3 is reversible. After TH-induced degradation (83\u00b14% reduction), addition of excess TMP led to 1450\u00b1760% recovery in labeling by 72 hr, returning to near-baseline (24\u00b15% below T0, p > 0.2). Recovered synapses showed GABAA receptor colocalization and similar spatial distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 demonstrate degradation and recovery with appropriate statistics. Claims C102-C103 provide functional and spatial evidence of recovery quality. The large percentage increase (C100) reflects recovery from very low baseline. The inference in C104 is well-supported by the complete dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PFE3 consists of three functional domains: Mdm2 E3 ligase for ubiquitination, PIR domain for proteasome recruitment, and PSD-95.FingR for targeting. This design is based on prior work showing coordinated Mdm2 and PIR action mediates excitatory synapse degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe the molecular architecture with appropriate citation (Tsai et al., 2012). Claim C107 confirms all three components are necessary through experimental validation. This establishes the mechanistic basis for PFE3 function and validates the design strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "PFE3 achieves efficient synapse elimination (48 hr) compared to PSD-95 knockout mice, which show minimal effects. This may be because PFE3 also degrades compensatory SAP-102 (which PSD-95.FingR labels), preventing the upregulation seen in knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is supported by experimental data. Claims C111-C112 about knockout mice are stated as general knowledge with citation. However, claim C113 (PSD-95.FingR labels SAP-102) lacks direct experimental evidence in this manuscript. Claims C114-C115 are speculative inferences. The compensation hypothesis is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "All three tools (PFE3, paGFE3, chGFE3) ablate specific postsynaptic sites and can be expressed in particular cell types, enabling circuit breaking with twofold specificity (synapse type and cell type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims are supported by the collective evidence for each tool's specificity (PFE3 for excitatory, paGFE3/chGFE3 for inhibitory synapses) and the use of genetic expression systems (Dox-inducible, cell-type specific promoters). The concept of twofold specificity is a reasonable synthesis of the demonstrated capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "GFE3 is an established tool that ablates inhibitory synapses by targeting RINGXIAP to Gephyrin, mediating ubiquitination and synapse disassembly. It has been used in multiple studies but is constitutively active, limiting temporal/spatial resolution. No analogous excitatory synapse ablator exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are supported by citations to prior published work establishing GFE3's properties and applications. Claims C6-C7 identify gaps motivating the current study. These are appropriate background claims establishing context and rationale for developing new tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study generated three new synapse ablation tools: PFE3 (excitatory), paGFE3 (photoactivatable inhibitory), and chGFE3 (chemically-activated inhibitory). Each causes reversible synapse loss with specific activation requirements and labeling capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the main findings of the paper. Each tool's properties are supported by detailed experimental evidence in other claim groups. This represents an appropriate high-level summary of the study's contributions, with each specific claim validated by the detailed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Initial attempts to create an excitatory synapse ablator using PSD-95.FingR-RINGXIAP failed. The authors then used RINGMdm2, which is known to be necessary for PSD-95 degradation during homeostatic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 establish PSD-95 as the target with appropriate citation. Claim C23 reports negative results (data not shown, which is a limitation). Claim C24 provides rationale for the alternative approach with appropriate citation (Colledge et al., 2003). The progression is logical despite lack of shown data for C23.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "PSD-95.FingR-tagRFP efficiently labels endogenous PSD-95 in real-time in living cells, with transcriptional regulation matching expression levels to endogenous PSD-95 for low background labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by citation to Gross et al., 2013. Claim C31 describes a property of the transcriptional regulation system. These claims establish the utility of PSD-95.FingR as both a targeting domain and a labeling tool, which is important for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "GFE3 degrades itself, allowing reversal simply by ceasing expression induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by citation to Gross et al., 2016 and provides the rationale for the reversibility experiments with PFE3. This property is important for understanding the mechanism of reversibility and designing the experimental protocols.",
+    "result_type": "MINOR"
+  }
+]

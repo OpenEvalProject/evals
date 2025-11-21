@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "A genome-wide CRISPR screen for GLUT-SPR surface homeostasis identified COMMD3 as the only Commander subunit hit, while Retromer genes (Vps35, Vps29) were recovered as expected. This suggests COMMD3 has a unique, Commander-independent role in GLUT-SPR trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR screen data (C6, Figure 1C) clearly shows Commd3 as the sole Commander subunit hit, while other CCC and Retriever subunits were not significant. Recovery of Retromer genes (C43) validates screen sensitivity. The conclusion of Commander-independent COMMD3 function (C47) is well-supported by this unbiased genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C46"
+    ],
+    "result": "Retromer and Commander complex genes are non-essential for viability and proliferation of mouse preadipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The essentiality screen data (C8, Figure 1D) demonstrates that none of these genes fall below the essentiality cutoff. This is a straightforward negative result with appropriate controls from the genome-wide screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "COMMD3 deletion causes marked reduction in surface GLUT-SPR levels in both preadipocytes and differentiated adipocytes, demonstrating a critical role in GLUT-SPR trafficking across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry (C9, C10, Figures 2B-C) and confocal imaging (Figure 2D) consistently show reduced surface GLUT-SPR in Commd3 KO cells across two cell types. The data are quantitative, replicated, and statistically significant, supporting the conclusion (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C35"
+    ],
+    "result": "Commd3 deletion leads to enlarged early endosomes with increased GLUT-SPR accumulation and enhanced Rab5 co-localization, indicating a trafficking defect at the endosomal recycling step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple imaging modalities (confocal and SIM) with quantification (Figures 3A-E) demonstrate enlarged EEA1-positive endosomes (C11, C12), increased GLUT-SPR accumulation (C13), and enhanced Rab5 co-localization (C14). These converging lines of evidence strongly support an endosomal recycling defect (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C50"
+    ],
+    "result": "Comparative analysis of COMMD1, COMMD3, and COMMD5 knockouts reveals that COMMD3 regulates a distinct set of cargo proteins (TfR, LAMP1, GLUT-SPR) independently of the Commander complex, while all three regulate the Commander-dependent cargo ITGA6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative KO experiments (Figure 4) show differential effects: all COMMD KOs affect ITGA6 (C15, Commander-dependent), but only COMMD3 KO affects TfR (C17), LAMP1 (C19), and GLUT-SPR (C16). The experimental design directly tests Commander-dependence and the data clearly distinguish COMMD3-specific from Commander-dependent functions (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "COMMD3 protein levels are upregulated rather than degraded in Ccdc93 or Vps35l KO cells, unlike the typical interdependent stability of Commander subunits, demonstrating COMMD3 can persist independently of the Commander complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoblot data (Figure 5A, Figure 5\u2014supplement 1) clearly show COMMD3 upregulation in Commander-deficient cells (C20), contrasting with the typical co-degradation of other subunits (C52, C53). This provides direct biochemical evidence for COMMD3's ability to exist outside the Commander complex (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Elevated COMMD3 levels in Commander-deficient cells increase TfR surface levels, and this effect is abolished by Commd3/Ccdc93 double knockout or rescued by COMMD3 overexpression, confirming COMMD3's Commander-independent regulation of TfR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain-of-function (C21, C60) and loss-of-function (C58, C59) experiments with appropriate rescue controls (Figure 5B-D) provide strong genetic evidence. The double KO experiment (C59) is particularly important as it rules out indirect effects and confirms COMMD3 upregulation causes the TfR phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The N-terminal domain (NTD) of COMMD3 is necessary and sufficient for its Commander-independent function, as demonstrated by domain rescue experiments showing NTD but not CTD restores TfR surface levels in Commd3 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain mapping experiment (C22, Figure 6B) clearly shows NTD rescues the KO phenotype while CTD does not. This is a well-controlled experiment with appropriate expression controls (Figure 6\u2014supplement 1). The conclusion that NTD mediates Commander-independent function (C3, C66) is directly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C67"
+    ],
+    "result": "ARF1 was identified as a COMMD3-NTD interactor through unbiased proteomics and validated by co-immunoprecipitation, establishing ARF1 as a candidate mediator of COMMD3's Commander-independent function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic screen (Figure 6F) identified ARF1 as enriched in COMMD3-NTD interactome, and co-IP experiments (Figure 6G) validated the interaction. The combination of unbiased discovery and targeted validation provides strong evidence for the COMMD3-ARF1 interaction (C23, C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C36",
+      "C70"
+    ],
+    "result": "COMMD3-NTD binds and stabilizes ARF1, as demonstrated by co-localization, increased ARF1 levels upon COMMD3 co-expression, and reduced ARF1 levels in Commd3 KO cells that are rescued by COMMD3 re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches support ARF1 stabilization: SIM co-localization (C25, Figure 7A-B), increased ARF1 upon COMMD3 co-expression (C26, Figures 6G, 7C), and reduced ARF1 in KO cells with rescue (C27, Figure 7D). These converging lines of evidence strongly support the stabilization mechanism (C4, C36, C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "ARF1 overexpression fully rescues TfR surface levels in Commd3 KO cells, demonstrating ARF1 functions downstream of COMMD3 in cargo recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ARF1 overexpression rescue experiment (Figure 7E) provides strong functional evidence that ARF1 acts downstream of COMMD3. This is a critical experiment establishing the COMMD3\u2192ARF1 pathway and is well-controlled with appropriate quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C69"
+    ],
+    "result": "AlphaFold3 predicts a high-confidence structure of the ARF1-GTP:COMMD3-NTD complex, showing COMMD3-NTD binds ARF1 switch regions through hydrophobic interactions and hydrogen bonds, and selectively recognizes GTP-bound ARF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AlphaFold3 prediction (Figure 8A-B) shows high confidence scores (pLDDT, ipTM, pTM) and detailed interface analysis. The selective recognition of GTP-ARF1 (C32) is supported by failure to predict high-confidence models with GDP/apo-ARF1 and is consistent with stabilization data (C70). The structural model provides mechanistic insight into the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C91"
+    ],
+    "result": "Structure-guided mutations in COMMD3-NTD that disrupt ARF1 binding fail to rescue TfR surface levels or restore ARF1 expression in Commd3 KO cells, confirming the COMMD3-ARF1 interaction is required for COMMD3's Commander-independent function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis experiment (Figure 8E-F) is well-designed based on the structural model and includes appropriate expression controls (C91, Figure 8D). The mutant's failure to rescue both TfR trafficking (C33) and ARF1 levels (C34) provides strong evidence that the COMMD3-ARF1 interaction is functionally required (C5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C90"
+    ],
+    "result": "The manuscript describes the established architecture and composition of the Commander and Retromer complexes, including their subunit composition and stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C37-C42, C90) describe well-established knowledge about Commander and Retromer complexes, supported by multiple citations to structural and functional studies. This background information is accurately presented and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The authors propose several speculative interpretations including: COMMD3 upregulation as compensatory, GTP-ARF1 requiring stabilization, COMMD3 forming homo-oligomers, and the evolutionary retention of COMMD protein functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C56, C71, C72, C75-C78, C85-C87, C89) are explicitly speculative interpretations and hypotheses for future work. While reasonable based on the data, they lack direct experimental support in this manuscript. The authors appropriately present these as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C88",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The manuscript provides extensive background on COMMD proteins, Commander complex functions, endosomal recycling mechanisms, and the hypothesis that Commander subunits may have functions beyond the holo-complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C73-C74, C79-C84, C88, C92-C97) accurately summarize established knowledge from the literature with appropriate citations. The authors correctly identify the knowledge gap (C83) that their work addresses and provide proper context for their findings.",
+    "result_type": "MINOR"
+  }
+]

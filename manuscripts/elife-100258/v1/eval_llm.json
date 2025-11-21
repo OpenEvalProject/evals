@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The normative weight of evidence for paired observations from correlated Gaussian random variables depends systematically on the sign and magnitude of the correlation. Negative correlations provide stronger evidence with increasing magnitude, while positive correlations provide weaker evidence with increasing magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 present a theoretical derivation shown in Figure 1 that establishes the mathematical relationship between correlation and evidence weight. The theoretical analysis is mathematically sound and provides the foundation for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The experimental design adjusted generative distribution means to equate expected logLR (objective evidence strength) across correlation conditions. This design allows differentiation between participants who use true logLR (producing identical choices and RTs across correlations) versus those who ignore correlations (showing systematic biases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe the experimental design manipulation that is central to testing the study's hypotheses. The design is theoretically sound and appropriately controls for confounds, as shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Participants' choice accuracy was affected by evidence strength but not correlation, while response times were affected by both evidence strength and correlation. Choices did not vary across correlation conditions, consistent with accounting for correlations, but RTs showed correlation-dependent patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 present behavioral results supported by statistical analyses (logistic models, mixed-effects models) with appropriate significance tests. The pattern of results is consistent across individual and aggregate data (Figures 3a, 3b), providing strong empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The RT data imply that participants' use of correlations was not optimal (not equivalent to true logLR) because RTs varied by correlation condition. The RT patterns were consistent with decisions based on approximations of logLR using underestimates of the correlation-dependent scale factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 provide inference from the RT data patterns and comparison to theoretical predictions. The qualitative match between data and simulations (Figure 4) supports the interpretation, though quantitative model fitting provides stronger evidence in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C48"
+    ],
+    "result": "Participants' behavior was consistent with an accumulate-to-bound process scaled on each trial based on normative, correlation-dependent evidence weighing using slight misestimates of correlation. Models without correlation-dependent bound adjustments provided poor fits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C48 are supported by formal model comparison showing the full-\u03c1^ model best captured behavior (Figure 6a). The model comparison uses appropriate statistical methods (AIC, protected exceedance probability) and the results are clear and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "There was a strong relationship between objective and subjective correlations (B=0.71, p<0.001), confirming that participants were sensitive to correlations and used them to adjust their decision process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 present statistical analysis of model fit parameters with appropriate significance testing. The strong correlation and highly significant p-value provide clear evidence for the relationship (Figure 7a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Subjective correlations were more variable for positive versus negative correlations, possibly reflecting weaker consequences of misestimating positive correlations. Despite suboptimalities, performance was much closer to ideal than if correlations were ignored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 present analysis of parameter variability and performance comparison to ideal and na\u00efve observers. The results are supported by quantitative analysis shown in Figure 7, though the explanation for differential variability is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Empirical correlations computed from observed samples were biased toward zero with limited samples, but participants did not appear to compute correlations explicitly on each trial. Instead, they may have used pattern matching or other heuristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present analyses testing whether participants computed empirical correlations trial-by-trial. The lack of relationship between RT and subjective estimates (C55) and between empirical and subjective correlations (C57) supports the conclusion, though the alternative mechanisms proposed are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Participants exhibited learning over the task (decreased RT with minimal accuracy cost), reflected in higher drift rates and lower bounds in the second half. However, subjective correlation estimates remained stable across task halves, suggesting decisions were based on stable correlation estimates used trial-by-trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 present analysis of learning effects with appropriate statistical tests. The dissociation between changes in drift/bound parameters and stability of correlation estimates (Figure 8) supports the interpretation that correlation sensitivity does not require extensive learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C87"
+    ],
+    "result": "Human participants make decisions approximately consistent with using normative logLR that accounts for correlations, and this sensitivity to correlations does not require extensive task-specific learning and can be adjusted flexibly trial-by-trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C87 summarize the main findings, which are well-supported by the convergent evidence from behavioral data, model fitting, and learning analyses presented throughout the results section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Outside simple cases with independent observations, elapsed time cannot serve as sole proxy for stimulus strength because correlations complicate this relationship. Elapsed time should be combined with other statistics like correlation to determine appropriate evidence weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 present implications of the study results for understanding evidence accumulation. The inference is well-supported by the experimental findings showing that correlation-dependent adjustments beyond time-based calibration are necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The data are consistent with decisions using collapsing bounds to adjust for evidence strength changes within correlation conditions, but collapsing bounds alone could not account for behavioral results across correlation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 present inference from model fitting results. The conclusion is supported by the experimental design (constant objective evidence across correlations) and model comparison showing that correlation-dependent computations are necessary beyond collapsing bounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The results contrast with behavioral economics literature showing correlation neglect, likely due to vast differences in task designs. Simplified perceptual tasks may engage different mechanisms than descriptive decision scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 discuss the relationship between current findings and prior literature. The comparison is appropriately supported by citations, and the proposed explanation for discrepant results (task design differences) is reasonable, though the specific mechanisms remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The visual system may have specialized mechanisms for computing correlations among visual stimuli that differ from those supporting higher-order cognition. Suboptimal evidence weighing reflected subjective misestimates at the encoding level, suggesting tight coupling between encoding and evidence conversion mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 present speculation about neural mechanisms based on comparison to prior literature and the current findings. While the inference about encoding-level misestimates (C86) is supported by model fitting, the claims about specialized visual mechanisms (C85) are speculative and would require neural data to support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on normative decision-making principles: The brain forms deliberative decisions following normative principles related to evidence weighing and accumulation. The logLR is central to optimal decision models like SPRT and DDM, though it can be difficult to compute and may be approximated using heuristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide background context supported by appropriate citations to established literature. These claims accurately represent prior knowledge in the field and set up the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Non-independence of observations can substantially affect evidence weighing for effective decisions, with real-world consequences. Whether and how people account for correlations in perceptual decisions is not well understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 establish the knowledge gap and motivation for the study, supported by citations to relevant literature and theoretical analysis (Figure 1). The claims accurately represent the state of knowledge and justify the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Discussion of prior work on evidence weighing: Previous research shows humans can weigh evidence normatively in cue combination and evidence accumulation tasks. However, results on whether people adjust bounds for stimulus strength have been mixed, and standard models are not optimal when stimulus strength varies trial-to-trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 provide discussion context supported by appropriate citations. The claims accurately represent prior literature and its relationship to the current findings, though some nuances about mixed results (C66) could benefit from more detailed discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "One hundred human participants took part in the online study with specified demographics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides basic methodological information about the study sample. The sample size is adequate for the analyses performed, though no power analysis is reported to justify this specific number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Main findings summary: Correlations in observations can dramatically impact evidence weight. With minimal training, participants adapted to trial-by-trial correlation changes and produced decisions based on approximately normative evidence weighing and accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 summarize the main findings, which are well-supported by the detailed results presented in the manuscript. These abstract-level claims accurately represent the empirical findings.",
+    "result_type": "MAJOR"
+  }
+]

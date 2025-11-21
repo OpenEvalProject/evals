@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C26",
+      "C36",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C54"
+    ],
+    "result": "The DeePosit algorithm, based on thermal imaging and a transformer-based video classifier, achieves high accuracy (F1 scores of 0.88 for urine and 0.90 for feces) in detecting and classifying mouse urine and fecal deposits. The algorithm's performance is comparable to human annotators and remains stable across different experimental conditions, sexes, test types, and spatial locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C26, C36, C38, C40-C43, C45, C47, C48, C50-C51, and C54 collectively demonstrate that DeePosit achieves robust performance with quantitative metrics (precision, recall, F1 scores) provided. The algorithm was validated on test datasets (60 videos), compared to human annotators (F1=0.84 vs 0.86), and tested across multiple conditions including different mouse strains (C57BL/6) not in the training set. Statistical tests confirmed stable accuracy across conditions with no significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C46",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C135"
+    ],
+    "result": "DeePosit provides an automated, rapid, and unbiased method for analyzing urination and defecation activities with good temporal and spatial resolution, overcoming limitations of traditional void spot assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C46, C83-C88, and C135 describe the practical advantages of DeePosit. The validation data (C10, C45-C47) supports the claim of human-comparable accuracy. The method's ability to detect temporal dynamics (C83-C84) and overcome void spot assay limitations (C85) is demonstrated by the experimental results showing time-resolved detection of deposits. The use of overhead IR cameras (C87-C88) is a methodological feature that is clearly described and implemented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C27",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65"
+    ],
+    "result": "Urination and defecation exhibit distinct temporal dynamics in CD1 mice: defecation shows a single peak during early habituation across all tests, while urination shows two peaks (early habituation and trial onset) that develop progressively across test days, with sex- and test-dependent differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C27, C55-C62, and C65 describe the main biological findings. The distinct dynamics are supported by quantitative data in Figures 4-5 showing temporal patterns, with statistical comparisons (Wilcoxon rank sum tests) confirming significant differences between time periods. The two-peak pattern for urination vs. single-peak for defecation is clearly visible in the dynamics plots (Figure 4c,d), and statistical analyses (Figure 5a,b) confirm these patterns with appropriate p-values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Scent-marking behavior is strain-specific: C57BL/6 mice show distinct urination and defecation patterns compared to CD1 mice, including earlier urination peaks, absence of small urine spots, and different trial-stage dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 and C127-C131 describe strain differences between CD1 and C57BL/6 mice. These findings are supported by data in Figures 4-5 and supplementary figures showing quantitative comparisons. The absence of small urine spots in C57BL/6 mice (C68) is documented in Figure 3\u2014figure supplement 1. Statistical comparisons confirm significant differences in temporal patterns between strains. However, the C57BL/6 sample size is smaller (n=10 per test) than CD1, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Male CD1 mice show significantly higher urination rates than females in the SxP and ESPs tests (but not SP), and higher defecation rates during early habituation across all tests. Test type significantly affects male but not female deposition patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C82 describe sex-dependent differences in CD1 mice. These findings are supported by statistical analyses in Figure 6 and Table 1, using both Wilcoxon rank sum tests and Chi-square tests to account for zero-inflated data. The Kruskal-Wallis tests (Table 1) confirm significant test-type effects for males but not females. The progressive development of sex differences across test days is well-documented with appropriate statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CD1 mice showed expected social discrimination behavior: males preferred social over object stimuli, opposite-sex over same-sex, and stressed over naive mice; females showed similar preferences except no sex preference. Preferences were reflected only in long (>6s) investigation bouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe behavioral validation of the experimental subjects. These findings are supported by quantitative data in Figure 1 with statistical comparisons (Wilcoxon rank sum tests, p<0.001). The distinction between long and short investigation bouts (C33) is consistent with prior work (Netser et al., 2017) and clearly shown in Figure 1. This validates that the mice exhibited normal social behavior, providing appropriate context for the scent-marking analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C48",
+      "C49"
+    ],
+    "result": "DeePosit significantly outperforms YOLOv8 object detection (F1=0.81 vs 0.58-0.68), likely due to its transformer-based architecture that utilizes temporal information from video sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C104-C105 describe the comparison with YOLOv8. The quantitative comparison is shown in Figure 3h-j with clear performance differences. The inference that temporal information is important (C49, C105) is supported by the observation that YOLOv8 RGB (using 3 time points) outperformed YOLOv8 Gray (single image). However, the comparison is somewhat limited as both algorithms were trained on only 39 videos for fairness, which is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "The early habituation defecation peak may reflect either anxiety in a novel context or scent-marking to label the arena as familiar. The progressive development of urination peaks across test days suggests territorial scent-marking that increases with arena familiarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C120 and C122 present interpretations of the observed behavioral patterns. While the data clearly show the temporal patterns (C113, C117-C120 are SUPPORTED), the mechanistic interpretations (C114-C115, C122) are speculative. The authors appropriately present alternative explanations (anxiety vs. scent-marking for defecation) and provide some supporting logic (C116: defecation peak persists across days when anxiety should decrease), but these remain interpretations rather than directly tested hypotheses. Additional experiments would be needed to definitively distinguish between these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "DeePosit has identified limitations including requirements for visible warm deposits, occlusion by the mouse body causing missed detections, and classification errors particularly for small urine spots. However, error rates are low and uniform across conditions, suggesting minimal experimental bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C103 describe algorithm limitations and error analysis. The error analysis is thorough and quantitative (C96-C101 provide specific error rates from the test set). The inference that errors should not create bias (C102-C103) is supported by the finding that accuracy is stable across conditions (C40-C43). The authors appropriately acknowledge limitations while demonstrating that they do not systematically bias results. This represents good scientific practice in algorithm validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "No consistent spatial distribution of deposits was observed between preferred and non-preferred stimulus sides in CD1 mice, contradicting findings in wild-derived mice from Miller et al., 2023b, possibly due to strain or experimental context differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 describe the absence of spatial preference and comparison to prior work. The finding is clearly stated as negative (C132) and appropriately compared to contradictory prior results (C133). The speculation about reasons for the discrepancy (C134) is reasonable given the methodological differences (CD1 vs. wild-derived mice, two simultaneous stimuli vs. single stimulus). However, the spatial analysis appears limited in the manuscript (only briefly mentioned in Figure 4\u2014figure supplement 2), and more detailed analysis might be warranted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Future improvements to DeePosit could include expanding the training set, implementing end-to-end trainable detection and segmentation, and adapting the algorithm for multi-animal experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 describe potential future improvements. These are appropriately framed as speculative (C106, C108, C110-C112). The observation that larger training sets improve accuracy (C107) is supported by comparing results in Figures 2h and 3h. The identified limitations (C109: classifier doesn't receive detection masks) are valid technical points. These represent reasonable directions for future work based on current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C23",
+      "C24"
+    ],
+    "result": "Thermal imaging captures warm urine and feces deposits immediately after deposition, allowing detection of exact timing and tolerating smeared spots, but feces and small urine spots are difficult to distinguish based on temperature alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C34-C35 describe the physical principles and advantages of thermal imaging. The principle that body-temperature deposits are visible in IR (C23) is well-established physics. The demonstration in Figure 2b-c clearly shows the difference between visible and IR imaging (C34). The challenge of distinguishing feces from small urine (C24) is acknowledged and addressed by the machine learning classifier. The advantages over void spot assays (C35) are demonstrated by examples in Figure 2d-e.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on scent marking: In mammals including rodents, urination and defecation during social interactions serve as scent-marking mechanisms that convey information about identity, social rank, and physiological state, influenced by social context and experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C12-C17 provide background knowledge about scent marking in mammals. These are well-established facts in the field, supported by appropriate citations (C12-C17). This background appropriately motivates the study and provides context for interpreting the results. The claims are general knowledge statements that are not the focus of experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25"
+    ],
+    "result": "Prior methods for analyzing urination have limitations: void spot assays lack temporal resolution and are prone to artifacts; recent thermal imaging studies required time-consuming manual analysis; defecation has been rarely analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18-C22, and C25 describe limitations of prior methods. The limitations of void spot assays (C4, C18-C20) are well-known in the field and demonstrated in Figure 2d-e. The description of prior thermal imaging methods (C21-C22) is supported by appropriate citations. The inference about manual analysis being time-consuming and subject to bias (C25) is reasonable. These claims appropriately motivate the need for the DeePosit algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C136",
+      "C137"
+    ],
+    "result": "DeePosit may be useful for characterizing social behavior in mouse models of disease and could be adapted to various behavioral and experimental contexts beyond social behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C90 and C136-C137 describe potential applications of DeePosit. These are appropriately framed as speculative (\"may be useful\", \"might\"). While the algorithm's capabilities suggest these applications are feasible, they have not been demonstrated in the current study. The trainability of the algorithm (C136) is a design feature that supports adaptability, but specific applications to disease models or non-social contexts would require validation.",
+    "result_type": "MINOR"
+  }
+]

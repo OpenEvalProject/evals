@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C43",
+      "C44",
+      "C45",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C123"
+    ],
+    "result": "VCS MN is a rapid neural network-based classifier that identifies micronucleated cells and their rupture status from low-resolution images. The tool achieved recall of 70% for MN and 65% for MN+ nuclei, with PPV of 89% and 93% respectively in RPE1 cells, and similar performance in U2OS cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledged VCS MN as a valuable tool. Reviewer 1 stated the tools are 'powerful new tools' with 'rigorous and convincing' benchmarking. Reviewer 2 noted 'developing highly specialized tools...is likely valuable to the community.' Reviewer 3 confirmed 'the authors develop a method that allows for automating measurements and analysis of micronuclei' which 'has been something that the field has been missing.' No concerns were raised about VCS MN performance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C122"
+    ],
+    "result": "MNFinder is a robust segmentation pipeline using ensemble neural networks that accurately segments micronuclei across multiple cell lines and imaging conditions. It achieved recall of 74-79% with mIoU values of 74-79%, outperforming existing tools in specificity while maintaining similar sensitivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed MNFinder's performance. Reviewer 1 stated 'the analysis of the new tools and their benchmarking is rigorous and convincing.' Reviewer 3 noted the software 'outperforms available tools for MN segmentation by providing mIoU' and acknowledged it as filling a gap since 'there are no robust MN classifiers with a clear quantification of their efficiency across cell lines.' The high mIoU metric was specifically recognized as important for quantifying MN characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "VCS MN classifies MN rupture status using a Dendra2 fluorescence intensity threshold of 0.16, correctly classifying approximately 90% of MN and identifying 60% of rupture- nuclei and 70% of rupture+ nuclei with PPV near 75%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about the rupture classification method. Reviewer 1 noted that 'applications and remaining limitations are well explained,' implicitly accepting the rupture detection capabilities. Reviewer 3 acknowledged the method 'to identify cells with micronuclei in real-time, mark them using photoconversion, and then isolate them via cell sorting' without questioning the rupture classification component.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C124"
+    ],
+    "result": "Visual cell sorting combined with VCS MN and photoconversion enables isolation of live cells with none, intact, or ruptured MN with 95% sorting efficiency. The method achieved strong enrichment for correct cell types, with MN+ populations showing nearly 7-fold enrichment compared to starting populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly endorsed the visual cell sorting approach. Reviewer 2 stated 'combining automated analysis, single-cell labeling, and cell sorting is an exciting approach to enrich for phenotypes of interest, which the authors demonstrate here.' Reviewer 3 noted 'the authors develop a method to identify cells with micronuclei in real-time...which could change the way we isolate and study MN-containing cells, and the scale at which we do it' and called it 'very powerful as it can allow for the separation of a heterogenous population.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C138",
+      "C139"
+    ],
+    "result": "Visual cell sorting successfully recapitulated established aneuploidy signatures in Mps1i-treated RPE1 cells, identifying 2200 DEGs with substantial overlap in inflammation, EMT, and p53 pathways compared to previous studies, validating the method for bulk transcriptomic analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the validation of visual cell sorting for transcriptomic analysis. Reviewer 1 noted the work is 'rigorous and convincing.' Reviewer 3 acknowledged 'the authors use this method to look at the transcriptome' and that it is 'very powerful' for population analysis. The successful recapitulation of known aneuploidy signatures was not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C31",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C121"
+    ],
+    "result": "Neither micronucleation nor rupture triggers a strong unique transcriptional response in the first cell cycle after chromosome missegregation in RPE1 cells. RNASeq of MN+ vs MN- cells showed minimal differential gene expression, with only two genes (EGR1 and TNFAIP3) upregulated >1.5-fold.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 expressed significant concern about this finding, stating 'there is in general large variance between replicates in experiments looking at cells with ruptured versus intact micronuclei. This limits our ability to assess if lack of changes are due to truly not having changes between these populations or experimental limitations.' They concluded 'more transcriptomic analysis will be necessary to fully understand the downstream consequences of MN rupture,' indicating the evidence is insufficient to definitively support the claim of no transcriptional response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "MN rupture has minimal unique effects on transcription in the first interphase after chromosome missegregation. RNASeq of intact vs ruptured MN+ cells identified 14 DEGs with >1.5-fold changes, but pathway analysis showed almost complete overlap with bulk Mps1i populations, and validation showed no increase in EGR1 and only small shifts in ATF3.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 specifically highlighted this as a weakness: 'The major weakness of this paper is the transcriptomic analysis of MN. There is in general large variance between replicates in experiments looking at cells with ruptured versus intact micronuclei.' They noted this 'limits our ability to assess if lack of changes are due to truly not having changes between these populations or experimental limitations,' directly questioning whether the conclusion of minimal transcriptional effects is valid or an artifact of experimental limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Transcriptional changes in micronucleated cells correlate with small increases in aneuploidy rather than micronucleation itself. Aneuploidy frequency was consistently higher for MN+ compared to MN- cells and higher for ruptured compared to intact MN+ cells for 2/3 chromosomes tested.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this finding without raising concerns. Reviewer 2 summarized the work as showing 'they do not observe a transcriptomic signature specific to MN but find changes that correlate with aneuploidy status,' directly affirming this result. Reviewer 3 noted 'the authors find that RPE-1 cells with MN have similar transcriptomic changes as aneuploid cells,' also supporting this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "VCS MN and MNFinder precision vary across cell types and widely divergent nuclear morphologies from the training set could impair performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly raised this concern: 'Although the classifier outperforms available tools for MN segmentation by providing mIoU, it's not yet at a point where it can be reliably applied to functional genomics assays where we expect a range of phenotypic penetrance in most cell lines (e.g., misshapen, multinucleated, and lagging DNA in addition to micronucleated cells).' They noted 'whether the classifier can rigorously assign MN-presenting cells amidst drastic nuclear aberrancies following a spindle checkpoint loss needs to be tested in the future,' confirming this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C145"
+    ],
+    "result": "Visual cell sorting offers multiple advantages over existing methods: it works on any adherent cell line, overcomes limitations of lamin B2 overexpression and chromosome-specific systems, is highly scalable, captures whole live cells, permits time-resolved analyses, and can be adapted to any wide-field microscope.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed these advantages. Reviewer 1 stated 'applications and remaining limitations are well explained in the paper.' Reviewer 2 noted 'combining automated analysis, single-cell labeling, and cell sorting is an exciting approach' and that 'developing highly specialized tools...is likely valuable to the community.' Reviewer 3 emphasized the method 'could change the way we isolate and study MN-containing cells, and the scale at which we do it,' supporting the claimed advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Visual cell sorting has limitations: only about 200,000 live cells can be analyzed per experiment due to Dendra2 signal decay and ongoing MN rupture, and it requires introduction of photoconvertible and fluorescent proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly noted that 'applications and remaining limitations are well explained in the paper,' indicating acceptance of the stated limitations. No reviewer challenged these specific limitations, and they are consistent with the technical requirements of the photoconversion approach that reviewers endorsed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "A globally lower change in gene expression levels was observed compared to previous studies, which could reflect exclusion of cells with highly lobulated nuclei from the analysis, suggesting nuclear atypia may be a significant contributor to aneuploidy signaling changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this interpretation. Reviewer 3's concern about variance in the rupture experiments does not extend to questioning this observation about nuclear atypia. The speculation is presented as a potential explanation for observed differences and is consistent with the methodological approach of excluding highly lobulated nuclei, which reviewers accepted as part of the study design.",
+    "result_type": "MINOR"
+  }
+]

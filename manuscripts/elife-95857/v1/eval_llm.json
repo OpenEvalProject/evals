@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C24",
+      "C25",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study used eBird citizen science data (16,562,995 checklists from 2005-2020, covering 7635 species and ~3 billion bird observations) to test abundance-occupancy relationships. The dataset was filtered for quality and completeness, correlations were transformed to Fisher's Z, and analyzed using multilevel random effects models with country and state as random factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C89 collectively describe the data source, filtering criteria, sample size, and analytical approach. The methodology is clearly documented with specific inclusion/exclusion criteria, appropriate statistical transformations, and multilevel modeling to account for spatial non-independence. The scale of the dataset (>16 million correlations) is unprecedented for AOR studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C99"
+    ],
+    "result": "The overall meta-analytic relationship between local abundance and global occupancy was near-zero (r=0.015, 95% CI [0.004, 0.025], p=0.0005). While statistically significant, the effect size is negligible and the significance is attributed to the extremely large sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C99 report the primary finding with appropriate statistical details. The authors correctly note that statistical significance with such a large sample does not imply biological or ecological significance. The near-zero correlation contradicts the expected positive AOR relationship, and the confidence interval, while excluding zero, indicates a trivially small effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C100",
+      "C101"
+    ],
+    "result": "After controlling for species number and effort time, the relationship between local abundance and global occupancy became indistinguishable from zero (r=0.0009, 95% CI [-0.0092, 0.0111], p=0.863). Both species number and effort time were significant predictors that decreased the strength of the AOR relationship, with the model explaining 5.1% of variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 and C100-C101 demonstrate that the weak initial relationship disappears when controlling for sampling-related variables. The statistical evidence is robust (non-significant p-value, confidence interval spanning zero). This supports the interpretation that observed AORs may be sampling artifacts. The low R\u00b2 (5.1%) indicates these predictors explain little variance, consistent with most variation being sampling error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The meta-analysis showed unusually low heterogeneity: I\u00b2[total]=13.5% (meaning 86.5% of variation is sampling error) and \u03c3\u00b2[total]=0.011 (approximately 1/30th of the previous meta-analysis and 1/10th of typical ecological meta-analyses). This indicates minimal biological or ecological variability remains to be explained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 provide compelling evidence through comparison to established benchmarks. The I\u00b2 of 13.5% is dramatically lower than the ~92% average for ecological meta-analyses (C35), and the absolute heterogeneity is substantially smaller than both the previous AOR meta-analysis (C37) and typical ecology/evolution meta-analyses (C38). This pattern strongly suggests the phenomenon lacks real biological variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The combination of zero effect and very small heterogeneity is only expected when a particular phenomenon is not real.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 represents a logical inference from meta-analytic principles. When a true effect exists, heterogeneity typically reflects real variation in effect sizes across contexts. The observed pattern (near-zero mean effect with minimal heterogeneity beyond sampling error) is indeed the signature of a non-existent phenomenon, as the authors state. This interpretation is consistent with meta-analytic theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C41",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "A phylogenetically controlled comparative analysis of 7464 bird species found that global range size had no predictive power over mean species density (p=0.808, slope=0.0928, 95% CI [-0.1615, 0.2068]). The analysis used 100 phylogenetic trees and accounted for phylogenetic uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C41, and C90-C93 describe a complementary macro-scale analysis using different abundance measures (mean density per 5-degree grid) and appropriate phylogenetic methods. The non-significant result (p=0.808) with a confidence interval spanning zero corroborates the meta-analytic findings. The phylogenetic approach addresses potential confounding from shared evolutionary history, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The combined results provide overwhelming evidence against a fundamental relationship between species range and local abundance, while being consistent with AOR as a sampling artifact. The observed variation in correlations (null, negative, or positive) can be generated primarily by sampling variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 synthesize the meta-analytic and phylogenetic results. The interpretation is justified by: (1) near-zero overall effect, (2) effect disappearing when controlling for sampling variables, (3) minimal heterogeneity beyond sampling error, and (4) independent confirmation from phylogenetic analysis. The consistency with sampling artifact explanation is supported by the demonstrated effects of species number and effort time (C31-C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The findings necessitate reconsideration of fishing quotas, conservation priorities, and invasive species control strategies based on AORs, and suggest it may be futile to pursue ecological or biological mechanisms proposed for AORs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 represent logical implications of the null finding. If AOR does not exist as a biological phenomenon, then management strategies predicated on this relationship (C5-C6) require reevaluation, and mechanistic explanations (C7) become moot. However, these are recommendations for future action rather than empirical findings, and their implementation would require careful consideration of context-specific evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The near-zero results with small heterogeneity suggest the spatial neutral model is not a suitable null model of macroecology. If local adaptation were disrupting neutral predictions, substantial heterogeneity would be observed rather than a near-zero relationship, as perfect balance between processes is extremely unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 present a logical argument against neutral theory as a macroecological null model. The reasoning is sound: neutral theory predicts positive AORs (C8-C9), but the data show near-zero effects. Local adaptation breaking neutral predictions (C48) would create heterogeneity, not the observed homogeneous near-zero pattern. The improbability of perfect balance (C49) strengthens this argument. This represents a significant theoretical implication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Rabinowitz's framework, which decouples species range and local abundance and identifies seven forms of rarity, has more empirical support from global-scale patterns than AOR and provides a more useful conceptual structure for future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C56 propose Rabinowitz's framework as an alternative to AOR. While the decoupling is consistent with the null AOR finding (C42), the study does not directly test Rabinowitz's framework or demonstrate that it better explains the data. The claim of \"more empirical support\" (C56) is inferential rather than demonstrated. The authors acknowledge this work is \"still limited\" (C56), indicating this is a suggested direction rather than a validated conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study acknowledges limitations: it only examines interspecific AORs in birds, does not account for anthropogenic changes or separate alien from native species, and range size estimates may be overestimated due to gaps in actual distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 transparently acknowledge study limitations. These are appropriate caveats that could affect generalizability (C57), introduce unmeasured confounding (C58-C59), or bias range size estimates (C60). The authors correctly note these limitations while maintaining that the core findings remain robust. This transparency strengthens rather than weakens the overall contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C96"
+    ],
+    "result": "The authors speculate that publication and confirmation biases created the illusion of AOR as a universal pattern. eBird data are free from these biases (as birdwatchers don't consider macroecological patterns), while literature-based meta-analyses are not. The study provided >16 million null effects, far exceeding the \"half million\" fail-safe number from the original meta-analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C68 and C96 propose bias as an explanation for the discrepancy with previous meta-analyses. While supported by meta-research evidence (C65-C68) and the fail-safe number comparison (C63-C64), the claim that eBird is \"free from\" publication/confirmation bias (C62) is speculative and acknowledged as lacking direct evidence. eBird has other potential biases (noted after C62), and the exclusion of checklists with 'X' marks (C82) may introduce bias. The bias explanation is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C97",
+      "C98"
+    ],
+    "result": "Drawing parallels to psychology's replication crisis (where phenomena like ego depletion were nullified), the authors call for a credibility revolution in ecology, re-examining ecological laws and embracing methods like pre-registration, registered reports, and big-team science to counter biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 and C97-C98 draw appropriate parallels between the AOR nullification and psychology's replication crisis. The ego depletion example (C70-C71) is well-documented, and the call for methodological reforms (C75) is justified by meta-research evidence (C65-C66). However, this is primarily a recommendation for future practice rather than an empirical finding. The parallel is apt, but whether ecology faces a crisis of similar magnitude remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes that AOR is considered a robust macroecological pattern with practical applications, but its mechanism remains unresolved, multiple biological explanations lack support, and sampling bias as an explanation has been dismissed despite no systematic assessment of publication and confirmation biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 accurately summarize the state of AOR research based on cited literature. The characterization of AOR as a \"general and robust pattern\" (C1), its applications (C5-C6), unresolved mechanisms (C4, C7), and the dismissal of sampling bias (C12) are all supported by appropriate citations. The identification of a gap regarding systematic bias assessment (C17) motivates the current study. This represents accurate prior work assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C104"
+    ],
+    "result": "The study design was informed by predictions that species richness and sampling duration would reduce AOR magnitude, and that global range size would be more stable than local measures. The authors expected a more modest relationship than the previous meta-analysis (r=0.58 overall; r=0.74 for birds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C104 describe the study's theoretical expectations based on prior work. These predictions are appropriately cited (C21, C23) and provide context for interpreting the results. The expectation of a \"more modest\" relationship (C104) acknowledges potential biases while still anticipating a positive effect, making the null finding more striking. This represents appropriate hypothesis formulation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study employed a cleverly designed learning task with 70 participants in which volatility and noise were independently manipulated across blocks. The task required participants to distinguish whether outcome variability was caused by volatility or noise based on temporal structure rather than magnitude of changes, with similar ranges of outcome magnitudes for high noise and high volatility conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers praised the experimental design. The editor noted it was 'cleverly designed' and one reviewer stated 'The experimental task used is cleverly designed and does a good job of manipulating both volatility and noise.' No concerns were raised about the task design, sample size, or methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C6"
+    ],
+    "result": "Participants showed a significant main effect of volatility on learning rates (higher learning rates when volatility was high), but no main effect of noise. There was a significant interaction between volatility and noise, with an unexpected effect of noise in the opposite direction (outcomes influencing choice more when noise increased).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these behavioral findings without challenge. One reviewer summarized: 'the RL model showed that participants misattributed noise as volatility, leading to higher learning rates in noisy conditions.' The editor noted the study demonstrates 'humans adapt learning rates rationally to environmental volatility yet systematically misattribute noise as volatility.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The intact Bayesian Observer Model (BOM) adapted normatively to both volatility and noise, but lesioned versions did not recapitulate participant behavior. A degraded BOM with coarser representation of noise than volatility better matched participant learning rates, showing greater coarsening of the noise dimension and causing the model to miscategorize high noise trials as high volatility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praised the modeling approach. One reviewer stated 'The modelling approach takes an interesting and creative approach to understand the source of apparently suboptimal adaptation of learning rates to noise, through carefully \"lesioning\" an optimal Bayesian model.' The editor highlighted 'innovative lesion-based comparisons between reinforcement-learning and degraded Bayesian Observer Models' as a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C28",
+      "C80"
+    ],
+    "result": "When trial labels from the degraded BOM were used, participants showed normative responses to uncertainty (increasing learning rates when estimated volatility was high and noise was low). This pattern was not observed with intact BOM labels, demonstrating that participants adapt to estimated noise but with imprecise estimates that lead to misattribution as volatility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This core finding was accepted by all reviewers. One reviewer noted the study 'reveal[s] that apparently suboptimal adaptation of learning rates results from incorrectly detecting volatility in the environment when it is not in fact present.' The editor emphasized this demonstrates 'approximate rationality with simplified internal models.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C91",
+      "C92"
+    ],
+    "result": "Pupillometry data showed that participants' pupils did not adapt normatively to task block structure, but when analyzed using degraded BOM trial labels, the expected increases in pupil size in response to both raised volatility and reduced noise were recovered. The degraded model accounted for variance in pupil responses to noise not explained by the intact model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the pupillometry findings as convergent evidence. The editor noted 'convergent behavioural and pupillometric data' as a strength. One reviewer initially requested 'a direct comparison between the RL framework and the Bayesian model in terms of how well they explain the pupillometry data,' but later confirmed 'The authors have addressed all my questions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study employed multiple modeling approaches including reinforcement learning models fitted to separate blocks, an intact Bayesian Observer Model, and a latent-state model. The RL model included separate learning rates for win and loss outcomes, and various preprocessing and analysis procedures were applied to both behavioral and pupillometry data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the methodological details without substantive critique. One reviewer noted 'The model space could be more extensive, although the authors have covered the most relevant models for the question at hand,' indicating acceptance of the modeling choices. Another reviewer initially requested 'formal model comparisons (e.g., BIC/AIC)' but later confirmed all questions were addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82",
+      "C85",
+      "C96"
+    ],
+    "result": "The study concludes that human learners are relatively insensitive to changes in outcome noise and make internally consistent errors by misattributing environmental noise as volatility, leading to suboptimal choices. This insensitivity occurs when noise and volatility are not unambiguously different, though the study does not specify the lower-level mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers endorsed these conclusions. The editor stated the study 'makes an important contribution by showing that humans adapt learning rates rationally to environmental volatility yet systematically misattribute noise as volatility, demonstrating approximate rationality with simplified internal models.' One reviewer noted the findings 'highlight a rational but approximate learning process.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C44"
+    ],
+    "result": "The study is grounded in normative predictions from learning theory: efficient learning requires adaptation to different forms of uncertainty, with learning rates increasing when volatility is high and/or noise is low, and decreasing when noise is high.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these theoretical foundations without question. The normative framework was treated as established knowledge that provided the basis for evaluating participant behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C97"
+    ],
+    "result": "The manuscript situates findings within existing literature on learning under uncertainty, noting that while many studies have found increased learning rates in response to volatility, normative responses to noise have only been observed when noise is explicitly signaled or unambiguous. The study also discusses theoretical frameworks linking neurotransmitter systems to uncertainty estimation and pupillary responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the characterization of prior literature or theoretical frameworks. The literature review was implicitly accepted as providing appropriate context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C100"
+    ],
+    "result": "The authors acknowledge that the BOM is an algorithmic description of how the task may be solved rather than a description of cognitive or neural implementation, and note that alternative algorithmic approaches exist. They suggest that distinct behavioral and physiological responses to volatility and noise indicate separable neural representations are maintained.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these limitations and interpretations. The acknowledgment of the BOM as an algorithmic rather than implementational model was not challenged, and the inference about separable neural representations was consistent with reviewers' acceptance of the distinct behavioral and physiological findings.",
+    "result_type": "MINOR"
+  }
+]

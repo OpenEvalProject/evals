@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C11",
+      "C73"
+    ],
+    "result": "Heron is a Python-based platform that allows researchers to design experiments as Knowledge Graphs (KGs) that visually and structurally resemble the original mental schema of the experimental pipeline. The platform implements experiments at two levels: graphical (nodes and edges) and code (node functionality).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, C11, and C73 collectively establish Heron's core design philosophy and implementation. The manuscript provides clear descriptions of the dual-level implementation (graphical and code), supported by Figure 1 which illustrates this architecture. The claims are consistent and well-documented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C23",
+      "C24",
+      "C38",
+      "C56",
+      "C115"
+    ],
+    "result": "Heron supports multi-machine, multi-OS experimental pipelines by allowing Nodes to run on different machines connected via SSH, abstracting away low-level networking complexity from users without expertise in hardware connectivity. The platform has been tested on Windows, Linux, MacOS, and Raspberry Pi, and demonstrated with a complex experiment using two machines, three operating systems, and four Python environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C23, C24, C38, C56, and C115 are well-supported by both technical descriptions and concrete experimental demonstrations. The Fetching experiment (C56) provides empirical evidence of the multi-machine capability, and the tested platforms (C24) are explicitly documented. Figure 4 illustrates the distributed architecture in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C25",
+      "C26",
+      "C88",
+      "C92",
+      "C116",
+      "C117"
+    ],
+    "result": "Heron is implemented in Python to balance code simplicity with access to diverse hardware drivers and software libraries, while allowing users to implement Nodes in other languages through 0MQ message passing, which has bindings for almost all commonly used languages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C25-C26, C88, C92, C116-C117 are consistently supported throughout the manuscript. The rationale for Python (C13, C25, C116) is clearly stated, and the capability for multi-language integration (C14, C26, C92, C117) is both described and demonstrated in the Unity/C# example (C58-C59). The 0MQ library's role is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C99",
+      "C100"
+    ],
+    "result": "Heron defines three Node types (Sources, Transforms, Sinks) with distinct message-passing behaviors: Sources generate and transmit data via infinite loops, Transforms receive and transmit data via callbacks, and Sinks only receive data via callbacks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 and C99-C100 provide a clear and consistent description of Heron's Node architecture. The definitions are explicit, illustrated in Figure 1B (C27), and the implementation requirements (C99-C100) are clearly stated. This is a fundamental architectural feature that is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Heron implements an actor-based model where each Node consists of two processes (worker and com), and a running experiment comprises (Number of Nodes) \u00d7 2 + 4 processes including three forwarders (Data, Parameters, Proof-of-life). When Nodes run on different machines, only worker processes execute remotely while com processes remain on the main machine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C33-C37, C94-C98 provide a detailed and consistent description of Heron's process architecture, supported by Figure 2. The actor-based model (C31) is clearly defined, the process count formula (C34) is explicit, and the distributed execution model (C94-C95) is well-explained. The limitation noted in C95 is acknowledged and a future solution proposed in C93.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Heron's code is organized into three main folders (Communications, GUI, Operations) with specific file structure requirements for Nodes. All messages are numpy arrays or Python dictionaries, and Heron has no message buffering, automatically dropping messages that arrive while a Node's worker function is running.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C102-C111 provide comprehensive documentation of Heron's code architecture and technical requirements. The folder structure (C39, C107-C110) is clearly described, the message format requirements (C40-C41) are explicit, and the no-buffering design (C42) is consistently stated. The Node file structure (C102-C106) is well-documented and supported by templates mentioned in C47.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C32",
+      "C72",
+      "C122"
+    ],
+    "result": "Heron's Knowledge Graph provides immediate visual documentation of experimental workflow, making it easy for non-developers to understand experiment logic and for users to recreate experiments from GUI screenshots by combining required Nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C32, C72, and C122 are supported by the manuscript's descriptions and the provided figures (Figures 3-5). The self-documentation benefit is demonstrated through the Probabilistic Reversal Learning example (C72), where the experiment's logic can be understood from the KG visualization. However, this is somewhat subjective and depends on user experience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Heron provides tools for Node development including pre-packaged generic Nodes, templates, a GUI-based Node generator, and a repository system for sharing Nodes. A public GitHub organization (Heron-Repositories) hosts the main repository and Node repositories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C47-C49, C112-C114 describe Heron's extensibility features and are consistently documented. The repository structure (C44, C49, C113-C114) is clearly explained, and the development tools (C47-C48, C112) are explicitly mentioned. The GitHub organization (C49) is stated as the location for all example Nodes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C70",
+      "C71",
+      "C120"
+    ],
+    "result": "The Probabilistic Reversal Learning experiment demonstrates Heron's self-documentation capability through a four-Node Knowledge Graph that makes the experiment's logic immediately apparent to non-developers. The experiment used four male C57/BL6 mice aged 6-8 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C70-C71, and C120 are supported by Figure 3 and the detailed walkthrough in the Materials and methods section. The four-Node structure (C50) is clearly shown, the animal details (C70-C71) are explicitly stated, and the purpose of the example (C120) is clearly articulated. The demonstration effectively illustrates the self-documentation benefit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The Fetching experiment demonstrates Heron's multi-machine capability by integrating a Grasshopper3 camera (Python 3.8 only), ArduCam system (ARM/Linux), and Detectron 2 deep learning (Intel/Linux) across two machines, three operating systems, and four Python environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 provide a detailed description of the Fetching experiment's technical complexity, supported by Figure 4. The hardware constraints (C53, C55) are explicitly stated, the experimental design (C51-C52) is clear, and the multi-environment setup (C56) is well-documented. This effectively demonstrates Heron's capability to handle heterogeneous computing environments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C86"
+    ],
+    "result": "The rats playing computer games experiment demonstrates Heron's integration with non-Python code (Unity/C#) and CPU management features. The 15-Node experiment initially used 100% CPU (24% Unity, 45-55% Heron processes), which was reduced to 80% total by pinning 10 worker processes to specific CPU cores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 and C86 are well-supported by detailed technical descriptions and measurements. The Unity integration (C58-C59) demonstrates multi-language capability, and the CPU measurements (C60-C62) provide concrete performance data. The experimental design (C57, C86) is clearly described and illustrated in Figure 5. The CPU optimization feature (C62, C80) shows practical performance management.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Heron provides synchronization tools including Substate dataframes and Com process log files to time-align data packets across Nodes and machines. In the demonstrated example, a 120-fps projector served as base clock, and only 56 frames (0.02%) were dropped between camera capture and video save across two Nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C82-C85 describe Heron's synchronization capabilities with concrete demonstration. The tools (C83-C84) are clearly defined, the challenge (C82) is acknowledged, and the example (C64-C65) provides quantitative evidence of low frame loss. Figure 5C illustrates the synchronization approach. The no-buffering design (C85) is consistently stated as a trade-off.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C87"
+    ],
+    "result": "Heron allows on-the-fly parameter updates during experiment execution, enabling 'experimenter in the loop' control. The rats playing computer games experiment used this feature with state machines implemented via the Python statemachine library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C87 are supported by descriptions in the manuscript and illustrated in Figure 5E. The on-the-fly parameter update capability (C66) is clearly described as a design feature, and the state machine implementation (C87) is documented with citation. This demonstrates Heron's flexibility for adaptive experimental control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C118"
+    ],
+    "result": "Heron assumes intermediate Python proficiency from users, with a learning curve measured in hours of creating a couple of new Nodes. The limit of what can be achieved is defined by the user's Python knowledge level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C74, and C118 make assertions about user requirements and learning curve that are not empirically validated in the manuscript. While C4 is stated as a design assumption, C74 and C118 are subjective assessments without supporting data from user studies or systematic evaluation. The actual learning curve and capability limits would depend on individual user backgrounds and specific use cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes the problem context by arguing that translating mental schemas to code makes design iteration practically impossible due to large iteration time and interdependency of engineering decisions. Mental schemas and Knowledge Graphs are defined as psychological and mathematical structures for representing human cognition and knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C9, and C10 provide background context supported by citations to relevant literature. The problem statement (C5) motivates Heron's development, and the definitions (C6, C9, C10) are properly cited. However, C5's claim that iteration is 'practically impossible' is somewhat hyperbolic\u2014it would be more accurate to say 'extremely difficult' or 'prohibitively time-consuming.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript positions Heron relative to existing computational graph frameworks (MATLAB Simulink, LabVIEW, Bonsai, EPypes, ROS) and behavioral science tools (pyControl, Bpod, Autopilot), noting that hybrid visual-textual programming improves student retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide appropriate background on related work with proper citations. The descriptions of other frameworks are accurate based on the cited sources, and the educational research citation (C19) supports the hybrid programming approach. This contextualizes Heron's contributions relative to existing tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Heron's GUI allows easy definition of local access networks and supports many-to-many connectivity where a Node's output can connect to any number of inputs and an input can receive any number of outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 describe GUI capabilities that are clearly stated in the manuscript. The network configuration feature (C45) is mentioned as part of the usage description, and the many-to-many connectivity (C46) is explicitly stated as a feature. These are straightforward technical capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "All experiments were conducted under UK Home Office regulations with appropriate ethical approval. The Fetching and Computer Games experiments used 10 adult male Lister Hooded rats (food-restricted, chocolate pellet rewards), while the Probabilistic Reversal Learning experiment used 4 male C57/BL6 mice (water-restricted to 85% base weight, water rewards).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 and C123-C125 provide complete ethical approval and animal details as required for scientific publications. The information is clearly stated and includes all necessary details about species, strain, age, housing, and experimental conditions. This meets standard requirements for animal research reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C93",
+      "C119"
+    ],
+    "result": "Heron is conceptualized as a community project with MIT license for both main code and Node repositories. The separation of repositories enables Node ecosystem growth, and future versions will address current limitations by allowing headless Graph execution. The developers welcome collaboration toward a multi-developer project.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77, C93, and C119 describe Heron's open-source nature and future vision. The MIT license (C76) is clearly stated, the repository structure rationale (C77) is explained, and the community vision (C75, C119) is explicitly articulated. The planned future development (C93) addresses a current limitation (C95). These are statements of intent and design philosophy rather than empirical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Heron is named after Hero of Alexandria. The multi-process approach incurs CPU overhead versus multi-threading, but Heron provides CPU core pinning to optimize performance and can offload computationally intensive processes to separate machines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are straightforward statements about naming, performance trade-offs, and optimization features. The CPU overhead (C79) is acknowledged as a design trade-off, the core pinning feature (C80) is demonstrated in the rats experiment (C62), and the distributed computing capability (C81) is demonstrated in the Fetching experiment. The naming tribute (C78) is a factual statement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Heron poses very few limitations on Node behavior implementation and deliberately does not offer a long list of predefined Nodes to avoid making strong assumptions about experimental mental schemas. Instead, it provides tools for case-by-case Node development at user-chosen abstraction levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 describe Heron's design philosophy of flexibility over prescriptiveness. This is consistently stated throughout the manuscript and demonstrated by the diverse examples. However, C89's claim of 'very few (if any) limitations' is somewhat overstated\u2014there are clear constraints (e.g., message types must be numpy arrays or dictionaries, no buffering, specific file structure requirements).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Each example experiment was chosen to highlight specific Heron competences. The specific experiment files are not made public because they are hardware-specific, but Heron's graphical nature enables recreation from GUI screenshots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 explain the rationale for the examples and the decision not to share specific files. The reasoning (C121) is practical and reasonable given hardware dependencies. The claim about easy recreation (C122) is supported by the detailed figures and descriptions provided, though actual ease would depend on user experience and hardware availability.",
+    "result_type": "MINOR"
+  }
+]

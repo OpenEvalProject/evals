@@ -1,0 +1,131 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C51"
+    ],
+    "result": "The authors demonstrate that AlphaFold's pLDDT confidence scores correlate with experimental measurements of protein flexibility (LDDT_BU and RMSD_BU), and that pLDDT can identify residues that move upon binding. Low pLDDT regions correspond to inaccurate predictions while high pLDDT regions show high accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly identifies this as a strength, stating 'pLLDT is predictive of flexible residues, which they could target for conformational sampling during docking.' The reviewers do not challenge this finding, and it forms a foundational component of the AlphaRED method that reviewers accept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C50"
+    ],
+    "result": "The authors show that interface-pLDDT (average pLDDT of interfacial residues) is a robust metric for discriminating docking quality, with an AUC of 0.86. Using an interface-pLDDT cutoff of 85, they achieve 79% classification accuracy with 75% precision for distinguishing correct from incorrect AFm predictions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 acknowledges this as a strength ('the interface-pLLDT score is predictive of the quality of AFm predictions'), but Reviewer 3 raises significant concerns, stating 'Using pLDDT on the interface region to identify good/bad models is likely suboptimal' and suggests that AFm-specific scores (ipTM or Ranking Confidence) should be used instead. The reviewers request comparison with alternative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C49"
+    ],
+    "result": "AlphaRED successfully improves docking predictions for AFm failures (interface-pLDDT \u226485), achieving improvements in 93 of 97 failed targets and generating CAPRI acceptable-quality or better predictions for 63% of benchmark targets overall.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor notes 'for cases where AFm is not as successful, the improvement is more significant,' and Reviewer 3 acknowledges 'the method generated about 25% more acceptable predictions than AFm.' However, Reviewer 3 also notes 'no models reach a very high accuracy (Fnat ~0.5 compared to 0.8 for the good AFm models),' indicating the improvement is substantial but with limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41"
+    ],
+    "result": "On antibody-antigen targets, AlphaRED demonstrates a success rate of 43% compared to AFm's 20%, representing a significant improvement on this challenging subset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'The evidence for the ReplicaDock approach being more predictive than AFm is particularly convincing for the antibody\u2013antigen test case.' Reviewer 3 acknowledges 'Impressive increase in performance on AB-AG set' as a strength, though notes it is 'a small set.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "For targets with good AFm predictions (interface-pLDDT >85), AlphaRED refinement results in minimal improvements in docking accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly notes 'The level of improvement is modest for cases where AFm is successful,' and Reviewer 3 states 'for the models where the AFm models are good, the improvement is modest (or not at all). See, for instance, the blue dots in Fig 6.' This finding is consistently acknowledged across reviews.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "On CASP15 targets (not included in AFm training), AlphaRED demonstrates substantial improvements, such as reducing interface RMSD from 11.4 \u00c5 to 2.84 \u00c5 for target T205.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 initially expressed concern that 'For the CASP15 targets where this bias is absent, the presentation was very brief' and requested more detail about how AFm helped with docking and direct comparisons. While the revision note states 'This revision has addressed my previous comments,' the limited initial presentation suggests this result needed strengthening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Most benchmark targets in DB5.5 were included in AlphaFold training, creating potential training bias that means measured success rates represent an upper bound.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly raises this concern: 'As admitted by the authors, the AFm predictions for the main dataset are undoubtedly biased because these structures were used for AFm training. Could the authors find a way to assess the extent of this bias?' The authors acknowledge this limitation, and reviewers accept it as a caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors curated a dataset of 254 protein targets from Docking Benchmark Set 5.5, classified by flexibility (rigid, medium, difficult), including a subset of 67 antibody-antigen structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises methodological concerns, stating 'It is unclear strictly what sequences were used as input to the modelling. The authors should use full-length UniProt sequences if that were not done' and 'The antibody-antigen dataset is small. It could easily be expanded to thousands of proteins.' These comments suggest the dataset composition and preparation needed clarification or expansion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "AlphaRED computational costs are 5-7 hours on a 24-core CPU cluster (~100 CPU-hours per target), which is more efficient than alternative approaches like AFSample.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 challenges the comparison: 'The estimates of computing costs for the AFsample are incorrect (check what is presented in their paper).' This suggests the computational cost claims needed verification or correction.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors demonstrate that visual stimulation produces two distinct spectral responses: a broadband power increase spanning 1-150 Hz and a suppression of alpha oscillations (8-13 Hz). Using a model-based spectral decomposition approach, they show that baseline correction is essential to accurately measure alpha suppression, as the two signals overlap in frequency and can mask each other. With baseline correction, alpha pRF gain is consistently negative (29/31 electrodes), variance explained increases 4-fold (43% vs 10%), and pRF size increases systematically with eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C6, C19, C20, C23, C24, C36, C37, C38, and C39 collectively provide strong converging evidence from multiple electrodes and analytical approaches. The spectral decomposition method is well-justified, the baseline correction dramatically improves model fits, and the results are consistent across electrodes. The data in Figures 1, 2, 7 clearly demonstrate the necessity of separating these signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Alpha pRFs have similar center locations (polar angles) to broadband pRFs (r=0.98 in V1-V3, r=0.95 in dorsolateral areas) but are 2-4 times larger in size. Both pRF types show systematic increases in size with eccentricity, but the slope is ~3 times steeper for alpha than broadband. The broadband pRF is contained within the alpha pRF in 92-98% of cases, far exceeding the 25-30% overlap expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C34, and C60-C62 are well-supported by quantitative analyses shown in Figures 3, 5, and supplementary figures. The pRF modeling achieves high cross-validated variance explained (90.2% for broadband, 69.5% for alpha in the example electrode), and the size differences are consistent across 53 electrodes from 4 patients. The shuffle control (C62) provides strong evidence that the spatial relationship is not artifactual.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C53"
+    ],
+    "result": "The larger size of alpha pRFs is not explained by their lower temporal frequency. Low-frequency broadband responses (3-26 Hz) have positive gain and small pRF sizes (1.1 deg) similar to high-frequency broadband (1.0 deg), whereas alpha pRFs have negative gain and much larger sizes (2.3 deg).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C53 provide a critical control analysis shown in Figure 6. By comparing pRFs estimated from different frequency ranges of the broadband signal, the authors demonstrate that frequency per se does not determine pRF size. This strengthens the interpretation that alpha and broadband signals reflect distinct neural processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Alpha oscillations show higher spatial coherence than broadband signals, with coherence of ~0.6 between neighboring electrodes (3mm spacing) declining to baseline (~0.35) by 1 cm. Coherence is highest at the peak alpha frequency and exceeds broadband coherence especially at short distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by coherence analyses from two high-density grids shown in Figure 8 and supplements. The spatial decay of coherence is well-characterized, and the frequency-specificity (Figure 8\u2014supplement 3) argues against volume conduction artifacts. This provides mechanistic insight into why alpha pRFs are larger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C63"
+    ],
+    "result": "The spatial profile of alpha pRFs closely parallels behavioral measures of exogenous (stimulus-driven) attention: both increase with eccentricity, show asymmetry (spreading more peripherally than foveally), and exhibit center-surround organization. The timing also matches (~100ms for attention, the duration of an alpha cycle). The authors propose that stimulus-driven changes in alpha oscillations cause increased cortical excitability and behavioral sensitivity characteristic of exogenous attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C58 and C63 present an intriguing hypothesis linking alpha pRFs to attention, supported by qualitative similarities shown in Figure 10. However, this remains correlational and speculative. The causal claim in C58 is not directly tested\u2014no manipulation of alpha oscillations or measurement of behavioral attention effects is performed in this study. The parallel spatial profiles are suggestive but insufficient to establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C21",
+      "C22"
+    ],
+    "result": "ECoG data were collected from 9 patients (7 from NYU, 2 from UMCU) with subdural electrode implantation. ERP regression had minimal effect on broadband pRF parameters and variance explained, with nearly identical results with vs without regression for most electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C21, and C22 describe methodological details and validation analyses. The data are from a well-characterized clinical population, and Figure 1\u2014supplement 2 demonstrates that the ERP regression preprocessing step does not substantially alter the main broadband results, supporting the robustness of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors' findings reconcile apparent discrepancies with prior studies (Klink et al. 2021, Takaura et al. 2016, Harvey et al. 2013) that reported increases in alpha power with visual stimulation. These studies did not separate alpha oscillations from broadband responses, leading to mixed or positive gains where the broadband increase masked alpha suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 provide important context by explaining how methodological differences (lack of spectral decomposition) led to different conclusions in prior work. This interpretation is consistent with the current findings and strengthens the case for the spectral decomposition approach. However, the authors cannot definitively prove this was the issue in prior studies without reanalyzing those datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The larger size of alpha pRFs is unlikely to be an artifact of lower signal-to-noise ratio. Simulations and empirical studies show that noise does not systematically increase pRF size, and the size difference persists when regressing size vs variance explained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 address a potential confound through citations to prior work and supplementary analysis (Figure 5\u2014supplement 2). The argument is logical and the supporting evidence adequate, though the cited studies are not from the same dataset. This strengthens confidence that the size difference is real.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Alpha oscillations (~10 Hz) are typically largest when cortex is inactive, as established by historical and modern studies. Alpha power decreases with arousal, alertness, and during spatial attention tasks, showing spatial specificity in EEG and MEG studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 summarize well-established prior knowledge supported by multiple citations. These provide essential background context for the study but are not novel findings. The characterization is accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13"
+    ],
+    "result": "Recent intracranial studies in macaques and humans have reported that alpha power increases (rather than decreases) when stimuli are in the receptive field, contrasting with the traditional view that alpha reflects cortical inactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12, and C13 accurately summarize findings from cited studies (Klink et al. 2021, Takaura et al. 2016, Harvey et al. 2013, Luo et al. 2024). This apparent paradox motivates the current study. The characterization of prior work appears accurate based on the citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C54"
+    ],
+    "result": "Broadband signals differ from alpha oscillations in several ways: they span a wide frequency range (not limited to a narrow band), are found throughout the brain (not just occipital cortex), likely arise from non-oscillatory generators, have lower amplitude due to lack of spatial synchronization, and can extend to low frequencies including the alpha band.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C46-C49, C54 summarize established knowledge about broadband signals from multiple cited studies. The characterization is accurate and provides important conceptual background for why separating alpha and broadband signals is necessary. These are not novel findings but appropriate citations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Alpha oscillations are generated by high-threshold thalamocortical neurons in the LGN that produce bursts in the alpha/theta range, synchronized by gap junctions. Feedback from V1 to LGN via corticothalamic cells can modulate the frequency and amplitude of these oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 summarize mechanistic understanding from cited studies (Hughes and Crunelli 2007, Hughes et al. 2011, Lorincz et al. 2009). This provides biological context for interpreting the large spatial extent of alpha pRFs. The characterization appears accurate based on the citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors argue that alpha pRFs are distinct from surround suppression based on differences in sign (alpha is inhibitory/disinhibitory vs suppressive surround), timing (alpha ~100ms vs surround suppression ~60ms), and feature specificity (surround suppression is feature-specific, alpha is spatially coherent over mm). However, surround suppression may be linked to oscillations at higher frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 present a logical argument distinguishing alpha pRFs from surround suppression, supported by cited literature (Bair et al. 2003, Hermes et al. 2019, Ray et al. 2013) and the coherence data (C66). The reasoning is sound, though the distinction could be tested more directly with appropriate stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C73"
+    ],
+    "result": "Alpha oscillations may be related to oculomotor behavior, as oscillations decrease with saccade initiation and saccades can be phase-locked to alpha rhythm. There are parallels and likely shared circuitry between spatial attention and eye movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, and C73 cite relevant literature (Popov et al. 2021b, Drewes and VanRullen 2011, Staudigl et al. 2017, Moore and Fallah 2001, Shepherd et al. 1986) to provide context. The authors appropriately note that their fixation task dissociates alpha modulation from large eye movements, but acknowledge potential connections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Oscillations in the alpha and beta range may play a role in feedback between visual areas, with evidence for specificity in cortical depth from nonhuman primate studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 cites relevant literature (Bastos et al. 2020, Bollimunta et al. 2011) to note an alternative or complementary framework for alpha function. The authors appropriately acknowledge this as an open question requiring future investigation combining surface and depth measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Alpha oscillations likely play a role in how cortex encodes sensory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is a broad concluding statement that is reasonable given the findings but remains speculative. The study demonstrates spatial tuning of alpha suppression but does not directly test encoding of sensory information or information processing capacity. This is an appropriate direction for future work but not directly demonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study profiled the epigenomic and transcriptomic landscape of term-pregnant, nonlabor human myometrium using ChIP-seq (H3K27ac and H3K4me1), RNA-seq, and Hi-C assays across three subjects. An average of 44,238 H3K27ac-positive, 74,325 H3K4me1-positive genomic regions, 12,157 active genes (FPKM\u22651), and 27,162 chromatin loops were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 report direct experimental findings from multi-omic profiling with clear quantitative results presented in Table 1. The methods are standard for epigenomic profiling, and the data provide a foundational resource for subsequent analyses. Sample size (n=3 for ChIP-seq/RNA-seq, n=2 for Hi-C) is modest but appropriate for exploratory epigenomic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C79",
+      "C80",
+      "C84",
+      "C85"
+    ],
+    "result": "Comparison with a prior dataset (Dotts et al., 2023) revealed substantial inter-sample variability in H3K27ac-positive regions. Only 8,563 regions were common across six samples (20.7-71.5% of total per sample), with the present study showing more consistent overlap (56.4-70.0%) than the Dotts dataset (28.0-74.0%). The present study identified ~44,238 H3K27ac regions per sample versus ~19,000 in Dotts et al.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40, C79-C80, C84-C85 document substantial technical and biological variability across samples and studies, which is transparently reported with quantitative metrics. The authors acknowledge this variation and discuss potential sources (batch effects, cell composition, detection thresholds). The comparison is appropriate and highlights reproducibility challenges in epigenomic profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors speculate that heterogeneity in cell type composition, transient epigenomic states, and individual health/environmental factors may contribute to the observed inter-sample variability in cistromic datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83 are speculative explanations for observed variability. While plausible, these hypotheses are not directly tested in the study. The authors appropriately frame these as potential contributing factors, but without experimental validation (e.g., cell-type deconvolution, longitudinal sampling), these remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study identified 13,114 putative enhancers (H3K27ac and H3K4me1 double-positive) common across three subjects. These represent less than half of total putative enhancers per specimen. Over one-third (>33%) are within 100 kb of high-expressing genes (FPKM\u226515), while 13.3% associate with low-expressing genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C45 define putative enhancers using established histone mark criteria (C41 cites Creyghton 2010, Heintzman 2007) and report their genomic distribution. The association with gene expression levels is quantified and visualized (Figure 1B). The definition and analysis are standard for enhancer mapping studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Motif enrichment analysis of common putative enhancers revealed overrepresentation of binding sites for myometrial transcription factors (AP-1, STAT5, NF\u03baB), steroid hormone receptors (PGR, NR3C1), and smooth muscle regulators (SRF, ELK1), suggesting integration of hormonal and smooth muscle control programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C48 report motif enrichment results (Figure 1C, Supplementary file 4) using standard bioinformatic methods (HOMER). The identified factors are biologically relevant to myometrial function. Claim C49 is a reasonable inference from the motif data, though it remains correlative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study identified 540 putative super enhancers common across three subjects. Over 40% are within 100 kb of high-expressing genes (FPKM\u226515), compared to 7.3% near low-expressing genes. Super enhancers show stronger association with highly expressed genes than regular enhancers. Notably, 76% of super enhancers colocalize with PGR-occupied regions, versus 20% for regular enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 report super enhancer identification and characterization with clear quantitative metrics (Figure 2A-B, Figure 2\u2014supplement 1). The preferential association with high-expressing genes and PGR occupancy is well-documented. The comparison between super enhancers and regular enhancers strengthens the findings. Methods for super enhancer calling are described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C55",
+      "C56"
+    ],
+    "result": "Putative myometrial super enhancers are predominantly colocalized with PGR-occupied sites (76% vs 20% for regular enhancers) and preferentially associated with highly expressing genes, suggesting a conserved role of PGR in regulating the myometrial transcriptome between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 integrate super enhancer data with PGR occupancy from prior studies. The 76% colocalization is substantial and statistically meaningful. Claim C7 infers conservation between species based on comparison with mouse data (C62, C97), which is reasonable but would benefit from more direct cross-species analysis. The correlation is strong but causation is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Gene ontology analysis of genes associated with super enhancers revealed enrichment for functions including cytoskeleton organization, extracellular-receptor interaction, transcription regulation, mRNA stability, and estrogen signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 report GO enrichment results (Figure 2C, Supplementary file 6) for genes near super enhancers. The enriched terms are biologically relevant to myometrial function and pregnancy. Standard GO analysis methods appear to be used, though statistical thresholds are not explicitly stated in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Hi-C analysis identified a chromatin loop at the PLCL2 locus spanning ~90 kb upstream of the TSS. Within this loop, seven H3K27ac-marked regions were identified across all three specimens, six of which colocalize with transcription factor binding sites from the ReMap Atlas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 report Hi-C and ChIP-seq integration at the PLCL2 locus (Figure 3A). The chromatin loop provides spatial context for enhancer-promoter interactions. Colocalization with ReMap Atlas data (C66 cites Hammal 2022) adds orthogonal support. The data are clearly visualized and methods are described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CRISPRa screening of candidate regulatory regions upstream of PLCL2 identified multiple gRNAs that significantly increased PLCL2 expression in hTERT-HM cells. gRNA PLCL2-5 (targeting a region ~35 kb upstream) showed the strongest effect, validated by both qRT-PCR and Perturb-Seq, and was functional in a second cell type (T-HESC), supporting this region as a cis-acting element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 report functional validation using CRISPRa with multiple orthogonal readouts (qRT-PCR, Perturb-Seq) and replication in a second cell type. Statistical significance is indicated (Figure 3B-C). The convergence of evidence from multiple gRNAs and assays strongly supports C72's inference that PLCL2-5 targets a functional cis-regulatory element. Sample sizes appear adequate (N=3 with technical replicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Integrative analysis identified candidate upstream regulators of PLCL2, including activators (PGR, ESR1, AP-1) and repressors (MED1, RAD21, SMC3, epigenomic modifiers), based on transcription factor occupancy at the PLCL2-5 enhancer region and differential expression patterns between myometrial tissue and cultured cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 report candidate regulators (Table 2) identified through integration of ReMap Atlas occupancy data with expression profiles. The classification into activators vs. repressors is based on a logical framework (higher expression in tissue vs. cells), though this remains correlative. The candidates are biologically plausible and provide testable hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C75",
+      "C98"
+    ],
+    "result": "PGR overexpression via CRISPRa increased PLCL2 mRNA abundance in hTERT-HM cells, demonstrating PGR-dependent regulation of PLCL2 in human myometrial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C75, C98 report direct experimental evidence linking PGR to PLCL2 expression using CRISPRa-mediated PGR overexpression (Figure 4A-C). Statistical significance is shown (p<0.01). This provides functional validation of the PGR-PLCL2 regulatory relationship in human cells, complementing prior mouse data (C62, C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C77"
+    ],
+    "result": "In 43 human myometrial specimens spanning different hormonal states, inferred PGR activity (T-scores) positively correlated with PLCL2 mRNA levels (r=0.47, Pearson correlation), supporting that PGR acts through the identified cis-acting element to promote PLCL2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C76 report a moderate positive correlation (r=0.47) between inferred PGR activity and PLCL2 expression across 43 specimens (Figure 4D). The correlation is statistically meaningful given the sample size. Claim C77 infers mechanism based on combined in vitro (C75) and in vivo (C76) data. While correlation does not prove causation, the convergence with functional data (C75) and prior mouse studies (C62, C97) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C99"
+    ],
+    "result": "The PGR-PLCL2 regulatory pathway appears conserved between human and mouse based on parallel findings in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C99 infer cross-species conservation based on consistent findings in human (C75, C76, C98) and mouse (C62, C97) models. While direct comparative experiments are not performed, the parallel observations across species provide reasonable support for conservation. This is a common inference pattern in comparative biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The CRISPRa-based Perturb-Seq assay demonstrated capability to screen cis-acting elements, particularly for low-expressing genes. The dCas9VPR activator generated detectable signal-to-noise ratios in single-cell RNA-seq, with 56.7% of cells carrying single gRNAs and 27.0% carrying multiple gRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe technical validation of the Perturb-Seq approach. Claims C89-C90 report quantitative metrics on gRNA detection. Claims C86-C88 are reasonable inferences from the successful application to PLCL2. The approach is well-established in the literature, and the authors provide appropriate technical details and quality metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The identification of the PLCL2 enhancer opens avenues for investigating PGR interactions with other transcription regulators, potentially leading to identification of progesterone signaling modifiers for therapeutic development targeting parturition disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 describe future research directions and potential therapeutic applications. While the foundational work (enhancer identification, PGR regulation) is well-supported, the translational implications remain speculative. These are appropriate forward-looking statements but do not constitute results of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establish that the myometrium maintains quiescence during pregnancy and generates contractile force at term, with preterm birth (characterized by aberrant myometrial activity before 37 weeks) accounting for 35% of neonatal deaths and causing lifelong morbidities. Myometrial remodeling involves genomic regulatory mechanisms influencing gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C19 present established background knowledge with appropriate citations (C16-C17 cite Chawanpaiboon 2019). These are standard introductory statements that frame the study's significance. The 35% statistic for neonatal death is properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C50",
+      "C62",
+      "C63",
+      "C78",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Literature review establishes prior knowledge on myometrial epigenetic regulation, including: dynamic epigenomic changes during pregnancy in mice; progesterone withdrawal via PGR-A/PGR-B shift; AP-1 as PGR coregulator; FOS:JUN regulation of gap junction proteins; epigenetic activation of contractility genes before labor; DNA methylation links to preterm birth; PLCL2/PLCL1 as negative regulators of calcium signaling and contraction; and progesterone regulation of PLCL1/PLCL2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C30, C50, C62-C63, C78, C91-C97 summarize prior literature with appropriate citations throughout. These establish the scientific context and rationale for the current study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  }
+]

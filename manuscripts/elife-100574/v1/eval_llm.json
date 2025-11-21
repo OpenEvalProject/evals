@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C74",
+      "C75"
+    ],
+    "result": "Assembly size strongly correlates with C-value (r=0.97, p<0.001) but tends to underestimate genome size, particularly for larger genomes. This underestimation is independent of sequencing technology (long vs. short reads). The authors conclude that their selected assemblies provide reliable genome size measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide strong statistical evidence for the correlation and systematic bias. The high correlation coefficient and the lack of technology-dependent effects (C24) support the reliability assessment (C74-C75). The quality filtering criteria (contig N50 \u226550 kb, BUSCO \u226570%) provide additional confidence in the dataset quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C6",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "TEs are major drivers of genome size variation across animals, showing very strong positive correlations both across the whole dataset and within taxa (Table 1, Figure 4A). Birds represent a notable exception with weaker correlations. Genome duplications contribute minimally compared to TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide comprehensive statistical evidence across multiple clades. The strong correlations (adjusted-R\u00b2=0.417 overall, higher within most clades per Table 1), consistency with prior literature (C77-C78), and comparative analysis showing minimal contribution from duplications (C27-C29) strongly support this major finding. The avian exception (C26) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C92",
+      "C93"
+    ],
+    "result": "dN/dS serves as a reliable proxy for long-term effective population size (Nee). Bio++ and Coevol dN/dS estimates are highly concordant with each other (r=0.902-0.887, p<0.001) and scale positively with life-history traits (body mass, longevity) as expected under population genetics theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide strong statistical validation through PIC analysis and comparison of two independent methods. The concordance between methods (C38, C92) and expected relationships with LHTs (C35, C39) support the reliability of dN/dS as a Nee proxy. The improved correlations after removing short/long branches (C36-C37) demonstrate methodological rigor. The theoretical foundation (C31-C34) is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C47",
+      "C8",
+      "C72",
+      "C120"
+    ],
+    "result": "No evidence was found for a relationship between dN/dS (as a proxy for Nee) and genome size or TE content across all animal species analyzed. This contradicts the predictions of the Mutational Hazard Hypothesis at broad phylogenetic scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 report null results from PIC analyses that are statistically rigorous and phylogenetically controlled. The consistency across different analytical approaches (full and trimmed phylogenies) strengthens confidence. This is the primary negative finding (C8, C72, C120) that challenges the MHH. The lack of association is appropriately interpreted as absence of evidence rather than evidence of absence, but the large sample size (807 species) provides adequate power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C9",
+      "C73"
+    ],
+    "result": "Clade-specific analyses reveal heterogeneous patterns: negative correlations between dN/dS and TE content in mammals, positive correlations in ray-finned fishes, and inconsistent patterns in birds and insects. These lineage-specific patterns show no consistent response to Nee variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C53 report statistically significant but weak correlations (adjusted-R\u00b2 values 0.004-0.063) with inconsistent directions across clades. While the statistical tests are appropriate, the very low explained variance raises questions about biological significance. The opposite patterns in different clades (C44-C46) are intriguing but the weak effect sizes and multiple comparisons without correction for multiple testing create uncertainty about the robustness of these clade-specific findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Recent TE content (divergence <5% from consensus) shows weak positive correlation with dN/dS across all species (adjusted-R\u00b2=0.012, p=0.003), but clade-specific patterns are inconsistent: negative associations in fishes, positive in mammals, with different methods (PIC vs. Coevol) sometimes yielding opposite results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C71 report weak correlations with inconsistent patterns across clades and methods. The very low explained variance (1.2% overall) and contradictory results between PIC and Coevol approaches (C61-C64) undermine confidence. The 5% divergence threshold for defining 'recent' TEs is applied uniformly across species with different mutation rates and generation times (acknowledged in text), which may introduce noise. The biological interpretation of these weak, inconsistent patterns is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Life-history traits show clade-specific associations with TE content and genome size: in mammals, TE content correlates opposite to MHH predictions (negatively with traits indicating low Nee); in fishes, patterns are consistent with MHH; in birds, genome size and TE content show decoupled patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 and C102-C106 are supported by Coevol analyses (Table 2) showing consistent patterns within clades. The mammalian pattern (C55, C102-C104) is particularly robust and corroborates prior work (Roddy et al., 2021). The fish pattern (C54, C105) is consistent with previous findings (Yi and Streelman, 2005). The avian decoupling (C56-C57, C60, C106) is biologically plausible given the narrow genome size range in birds. These clade-specific patterns are more convincing than the weak dN/dS correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C84",
+      "C85"
+    ],
+    "result": "Genomic duplications have negligible effect on the relationship between dN/dS and genome size. Removing 24 species with >30% duplicated BUSCO genes produced similar results, and the contribution of duplicated genes to genome size is minimal compared to TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 report a sensitivity analysis showing consistent results after removing high-duplication species. Claims C84-C85 provide comparative evidence that TEs explain far more variance than duplications. This effectively rules out genome duplication as a confounding factor. The analysis is appropriate and the conclusion is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C82",
+      "C83"
+    ],
+    "result": "The dnaPipeTE method provides reliable TE quantification for large-scale analysis despite known limitations (underestimation of satellites, inability to detect ancient TEs). Validation against EarlGrey shows strong concordance (r=0.88-0.90, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 acknowledge methodological limitations while providing empirical validation. The comparison with EarlGrey on 29 dipteran genomes (Figure 3) shows strong agreement. The authors appropriately note that satellite underestimation may affect some species (particularly birds) but argue the effect is minimal on general trends. The read-based approach (C76) avoids assembly completeness issues. The validation is adequate for the study's purposes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The dN/dS calculation methodology included rigorous filtering by branch length and topology, with analyses robust to species pruning. The approach captures long-term Nee rather than short-term fluctuations, as supported by theoretical considerations and prior validation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 describe methodological rigor with appropriate filtering and sensitivity analyses. Claims C90-C91 provide theoretical justification for using dN/dS as a long-term Nee proxy, supported by citations to population genetics theory and prior validation work (Latrille et al., 2021). The distinction between long-term (dN/dS) and short-term (polymorphism-based) Nee estimates is important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Phylogenetic structure strongly influences the data: major clades occupy distinct genome size ranges regardless of dN/dS variation. Not accounting for phylogenetic non-independence leads to artifactual positive correlations between genome size and Nee proxies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 highlight a critical methodological point. The observation that mammals have large genomes and low Nee while insects have small genomes and high Nee (C95-C96) creates phylogenetic confounding. The demonstration that uncorrected analyses yield artifactual results (C94, Figure 4B-C) while PIC analyses do not (C97-C99) is convincing. This explains why early MHH studies without phylogenetic correction found support. The point is well-made and important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C73",
+      "C122",
+      "C123"
+    ],
+    "result": "TE dynamics vary according to lineage-specific patterns, and genetic drift is not the predominant force driving long-term genome size evolution in animals. The results reject not only the MHH but any theory predicting that low Nee species accumulate more non-coding DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C73 state the main conclusions, which are supported by the comprehensive analyses showing no consistent relationship between Nee proxies and genome size/TE content across animals (C40-C47) and heterogeneous clade-specific patterns (C42-C53). Claim C122-C123 appropriately broaden the interpretation beyond just the MHH. The conclusion is well-supported by the data, though the weak clade-specific patterns introduce some uncertainty about the strength of lineage-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The five clades analyzed cover very different evolutionary timescales, which may limit detection of Nee-genome size relationships. The results are valuable for highlighting absence of relationships at broad phylogenetic scales but comparing distantly related species might overshadow relationships detectable at finer scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 acknowledge important limitations of the phylogenetic scale. The observation that insects and molluscs are much more ancient than mammals and birds (C117) is factually correct. The interpretation that this limits comparability (C119) is reasonable and supported by citation to M\u00e9rel et al., 2025. The authors appropriately frame their results as applying to long-term evolution (C118) while acknowledging that finer-scale patterns might differ. This is a fair assessment of scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The MHH framework assumes constant TE activity and uniform selective effects across species, but TEs actually show waves of activity, lineage-specific host-parasite dynamics, and variable silencing mechanisms. Treating TEs as universally slightly deleterious may be oversimplified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 provide important theoretical context for interpreting the negative results. The assumptions of the MHH (C125-C126) are clearly stated. The evidence that TEs deviate from these assumptions (C127-C129, supported by multiple citations) is well-documented. The conclusion that the MHH model may be oversimplified for TEs (C130) is a reasonable inference. This discussion strengthens the interpretation of why the MHH predictions are not supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Evidence from population-level and closely related species studies shows that increased genetic drift can lead to short-term TE accumulation, but this process is not visible in long-term evolution. A general selection mechanism against TE proliferation might exist but be detectable only at short evolutionary timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 cite multiple studies showing Nee effects at fine phylogenetic scales. The synthesis (C139-C140) reconciling short-term and long-term patterns is a reasonable interpretation that explains the apparent contradiction between this study and prior work. This is speculative (C140) but well-grounded in the comparative evidence. The temporal scale hypothesis is testable and provides a coherent framework for understanding the field.",
+    "result_type": "MAJOR"
+  }
+]

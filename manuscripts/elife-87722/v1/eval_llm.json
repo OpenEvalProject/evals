@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "First-generation iSBH-sgRNAs enable conditional CRISPR activation in response to RNA detection in HEK293T cells. The engineered sgRNAs contain a 14-nucleotide loop and partially complementary spacer* sequence that creates a complex secondary structure inactivating sgRNA function in the OFF state. When complementary RNA triggers are present, the iSBH-sgRNA conformation changes, exposing spacer sequences and turning ON CRISPR activity. Orthogonality tests demonstrate that iSBH-sgRNAs are only activated by their corresponding triggers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C22 collectively demonstrate functional RNA-responsive CRISPR activation in mammalian cells. The design features (C17-C18), mechanism (C19-C20), and specificity data from orthogonality tests (C21-C22, Figure 1D) provide converging evidence for conditional activation. The experimental data show clear ON/OFF states with statistical significance (p<0.0001) and specificity across multiple sgRNA-trigger pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C82",
+      "C83"
+    ],
+    "result": "iSBH-sgRNAs enable conditional CRISPR activation in zebrafish embryos when chemically modified. Transgenic zebrafish lines were generated encoding dCas9-Vp64 and 8xCTS-ECFP reporter. A second iteration of chemical modifications protecting both the 5' end of the iSBH-sgRNA and the 5' end of the spacer sequence enabled functional activation in vivo, with statistically significant increases in ECFP expression (3.2-fold increase in high ECFP embryos) when RNA triggers were present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C61-C73, C82-C83 demonstrate successful in vivo application of iSBH-sgRNAs. The progression from failed first-iteration modifications (C64) to successful second-iteration modifications (C68-C71) based on mechanistic insights (C73, C82) shows logical experimental design. Statistical validation using \u03c7\u00b2 tests across three replicates (C69, Figure 5E) and quantitative fold-change data (C70) provide robust support. The mechanistic understanding was essential for success (C82-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Second-generation iSBH-sgRNAs with extended backfolds (30 nt) enable detection of longer RNA triggers (up to 250+ nt). A 10 nt extension between spacer and loop sequences increased trigger complementarity from 34 to 44 nt. Second-generation designs showed superior performance compared to first-generation designs, with notable activation (15-30% transfected cells) for all three iSBH-sgRNAs tested with 100 nt 3' flank triggers, and successful detection of triggers with various flank configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 describe iterative design improvements with clear experimental validation. The design rationale (C23-C25) is supported by comparative data (C28-C29, Figure 2C) showing improved performance of second-generation over first-generation designs. Detection of triggers exceeding 250 nt (C31, Figure 2D) demonstrates practical utility. The choice of dCas9-Vp64 and 8xCTS-ECFP for optimal OFF-state (C26) is experimentally justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Modular iSBH-sgRNAs enable independent selection of RNA trigger and CRISPR target sequences through the MODesign computational pipeline. The modular design reduces spacer-CTS complementarity to 17 nt and trigger complementarity to loop plus first 15 nt of backfold, with increased loop sizes (14-34 nt) to maintain binding affinity. MODesign generates multiple candidate designs by screening trigger sub-sequences and validating RNA folding using NuPACK. Experimental validation showed successful detection of four different U6-expressed triggers (up to 300 nt) with high specificity in orthogonality tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C44, C108-C111 describe the development and validation of a modular design system. The design constraints of second-generation systems (C32-C33) motivate the modular approach (C34-C35). The MODesign algorithm (C36-C38) is computationally described and experimentally validated (C39-C44, Figures 3C-E). Orthogonality data (C44, Figure 3E) confirms specificity. While modular designs perform somewhat less well than second-generation designs (C42), they successfully detect diverse RNA triggers up to 300 nt (C108) with demonstrated specificity (C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C75",
+      "C76",
+      "C77",
+      "C112"
+    ],
+    "result": "iSBH-sgRNA activation occurs through a double-stranded RNA cleavage mechanism involving both cellular RNAi machinery and dCas9. RNA circularization assays demonstrated that iSBH-sgRNAs are truncated from 137 bp to 81 bp during activation in the presence of dCas9 and complementary triggers, with engineered components (extension, loop, backfold) removed. RNA triggers are also truncated specifically in the presence of matching iSBH-sgRNAs, but this truncation is not dCas9-dependent. The formation of sgRNAs with 20 nt spacers appears to be dCas9-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45-C60, C75-C77, C112 describe mechanistic investigations using RNA circularization assays. The experimental approach (Figure 4B, D) directly tests two alternative mechanisms (C48-C49). Size changes in both iSBH-sgRNAs (C48-C50) and RNA triggers (C55-C58) are confirmed by gel electrophoresis and sequencing (Figure 4, Figure 4\u2014figure supplement 1). The dCas9-dependence of iSBH-sgRNA truncation (C51-C53, C60) but not trigger truncation (C57) is clearly demonstrated. The mechanism is consistent with known RNAi pathways (C45, C47, C77) and prior observations about spacer processing (C54, C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Chemical modifications at key positions improve iSBH-sgRNA stability in vivo. A first iteration protecting only the 5' end of the iSBH-sgRNA and scaffold failed to enable activation in zebrafish. Based on mechanistic understanding that truncation produces sgRNAs with unprotected spacer sequences prone to 5'-3' degradation, a second iteration additionally protecting the 5' end of the spacer sequence successfully enabled in vivo function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C64-C67 describe rational design of chemical modifications based on mechanistic insights. The failure of first-iteration modifications (C64) and success of second-iteration modifications (C68-C71) validates the mechanistic reasoning (C65-C67). The logical connection between truncation mechanism (Figure 4) and modification strategy (Figure 5C) demonstrates how mechanistic understanding enabled in vivo success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The choice of CRISPR activators and reporters greatly influences iSBH-sgRNA activation dynamic range. Weaker activators like dCas9-Vp64 combined with 8xCTS reporters mask background noise from imperfectly folded iSBH-sgRNAs, providing cleaner OFF states while maintaining strong ON-state activation. Stronger activators (dCas9-VPR) or amplification systems (SAM) improve ON-state activation but compromise OFF-state specificity by amplifying background noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C114-C116 describe systematic optimization of CRISPRa components. The hypothesis about weaker activators masking noise (C114) is supported by comparative data across six different activator/reporter combinations (Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1). The trade-off between ON-state strength and OFF-state cleanliness (C115-C116) is consistently observed across first- and second-generation designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background context on RNA biomarkers and sgRNA engineering. Cellular RNAs encode information about cell identity and disease status. The sgRNA component of S. pyogenes CRISPR-Cas9 tolerates extensive modifications, and inactivated sgRNAs can be re-activated by various triggers including small molecules, proteins, DNA antisense oligonucleotides, and RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 provide established background knowledge supported by appropriate citations. These claims contextualize the work but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Assessment of the field and novelty claims. Published RNA-inducible sgRNA technologies require improvement in dynamic range and generalizability. There is a lack of head-to-head comparisons under standardized conditions, making it difficult to determine which designs are superior. The iSBH-sgRNA system is claimed to be the first RNA-inducible gRNA design tested in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C13, C78-C81 assess the state of the field and claim novelty. While the citations support that prior work exists (C11, C78), the assessments about limitations (C11-C13) and lack of comparisons (C79-C80) are subjective. The novelty claim (C81) about being first in vivo cannot be independently verified from the manuscript alone and depends on the authors' knowledge of unpublished work. The claim is plausible given the citations provided but remains uncertain without comprehensive literature verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C113"
+    ],
+    "result": "Established knowledge about sgRNA structure and RNA targeting. Native sgRNAs have spacer and scaffold components, with the spacer determining specificity and the scaffold stabilizing Cas9 interactions. Previous studies showed that extending hybridization probe length improves RNA targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C113 present established knowledge appropriately supported by citations (Jinek et al., 2012; Gaj et al., 2013; Qu et al., 2019; Hasegawa et al., 2006). These provide necessary background but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Discussion of potential applications and future directions. iSBH-sgRNAs show promise for mammalian synthetic biology applications and could enable complex RNA circuits. Further work is needed to improve ON/OFF ratios in vivo. The technology could address therapeutic challenges by enabling cell-type-specific CRISPR activation based on endogenous RNA biomarkers rather than cell-surface proteins. Various speculations are made about optimal trigger characteristics (up to 300 nt, highly expressed, nuclear localization) and potential improvements through additional chemical modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C107 primarily consist of speculation about future applications and potential improvements. While some assessments are grounded in the presented data (e.g., C84 based on mammalian cell results, C93 based on 300 nt detection), most claims about therapeutic applications (C95-C107) and future optimization strategies (C86-C94) are speculative. The discussion of CRISPR safety concerns (C96-C100) and delivery challenges (C101-C102) is supported by citations but the proposed solutions using iSBH-sgRNAs (C103, C106-C107) remain hypothetical.",
+    "result_type": "MINOR"
+  }
+]

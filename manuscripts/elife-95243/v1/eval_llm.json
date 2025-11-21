@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C18",
+      "C19",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C106"
+    ],
+    "result": "The authors propose a biologically plausible plasticity rule for learning stochastic transitions in spontaneous activity. The model consists of a recurrent spiking neural network with distinct excitatory and inhibitory populations. Excitatory plasticity minimizes the discrepancy between stimulus-evoked and internally predicted activity, while inhibitory plasticity maintains excitatory-inhibitory balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C18, C19, C26-C40, and C106 collectively describe the model architecture and plasticity rules. The model is clearly defined with mathematical formulations (Equations 11-18), network architecture (Figure 1b), and plasticity mechanisms (Figure 1c). The claims are internally consistent and supported by detailed methodological descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C20",
+      "C21",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C64",
+      "C65",
+      "C107"
+    ],
+    "result": "After training with Markovian sequences, the network exhibits spontaneous stochastic transitions of cell assemblies that match the transition statistics of evoked dynamics. Three cell assemblies emerge, and their spontaneous reactivation follows the learned transition probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C20, C21, C41-C54, C64, C65, and C107 demonstrate the core finding that spontaneous activity replicates learned transition statistics. This is supported by multiple figures (2c, 2d, 2e, 2f) showing assembly reactivations, duration distributions, synaptic currents, and quantitative alignment between model and true transition probabilities. The timescale differences between excitatory and inhibitory plasticity (C42-C45) are demonstrated and consistent with experimental data (D'amour and Froemke, 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The model is robust to variations in stimulus duration, learning rate, background input strength, and network composition. The model can learn appropriate transition statistics across different assembly size ratios (1:1.5:2) and with different excitatory/inhibitory ratios (80%/20%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 demonstrate robustness through systematic parameter variations shown in supplementary figures. The model maintains performance with halved stimulus duration (Figure 2\u2014supplement 3), different learning rates (Figure 2\u2014supplement 5), varied background input (Figure 2\u2014supplement 6), and different network compositions (Figure 2\u2014supplement 7). However, performance degrades with extreme assembly size ratios (1:2:3, C57) and under some conditions when all synapses are plastic (C62), indicating boundaries of the model's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C121"
+    ],
+    "result": "The network learns transition statistics by modifying inter-assembly excitatory connections. Within-assembly weights increase and converge to strong values, while between-assembly weights settle at different stationary values proportional to transition probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C67, C68, C69, C70, and C121 describe the weight structure mechanism. Figure 3a-d demonstrates that within-assembly weights strengthen (Figure 3a middle, 3b top) while between-assembly weights encode transition probabilities (Figure 3a right, 3b bottom, 3d). The alignment between learned weights and true transition probabilities is quantitatively shown in Figure 3d.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "Inhibitory plasticity is necessary for generating structured spontaneous activity. Without inhibitory plasticity, the model exhibits blurred assembly structures and fails to reproduce appropriate transition statistics, even though excitatory weights encode transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C108, C110, and C111 demonstrate the necessity of inhibitory plasticity. Figure 3\u2014supplement 1 shows that removing inhibitory plasticity results in blurred assemblies (1a) and misaligned transition statistics (1b), despite excitatory weights encoding transitions (1c, 1d). This establishes that both plasticity mechanisms are required for proper function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model can adapt to task switching by reorganizing between-assembly connections while maintaining within-assembly structures. When the transition matrix switches mid-training, between-assembly weights reorganize quickly while within-assembly weights remain stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 demonstrate task switching capability. Figure 3\u2014supplement 2b shows that between-assembly connections reorganize when switching from task1 to task2 (bottom panel), while within-assembly connections remain stable (top panel). Error dynamics (Figure 3\u2014supplement 2c, 2d) show abrupt increases followed by gradual decreases, with inhibitory error peaks delayed relative to excitatory error, consistent with prior results and experimental data (D'amour and Froemke, 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model can learn complex stochastic sequences with more than three states. The learned network shows spontaneous reactivations of all assemblies with transition dynamics governed by learned probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 demonstrate scalability to complex tasks. Figure 4a shows a complex transition diagram, Figure 4b demonstrates spontaneous reactivations of all assemblies, and Figure 4c shows alignment between model and true transition statistics. Figure 4\u2014supplement 1 confirms weight structures are consistent with transition probabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The model can learn temporal community structure, where transitions within communities occur more frequently than between communities. Low-dimensional representations of stimulus patterns cluster into communities, consistent with experimental observations in humans. Within-community transitions occur faster than between-community transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94 demonstrate learning of temporal community structure. Figure 4d-j shows: (1) the model learns community structure (4e, 4f), (2) within-community transitions are more frequent (4g), (3) PCA reveals clustered representations matching experimental results (4h), (4) clusters persist with scrambled inputs (Figure 4\u2014supplement 2), and (5) within-community transitions are significantly faster than between-community transitions (4j, p=0.014). The comparison to human experimental data (Schapiro et al., 2013) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C23",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The model replicates experimental results from songbirds showing that transition uncertainty modulates neural predictability. In the model, next-state correlations are significantly greater than other-state correlations for low-entropy (certain) transitions but not for high-entropy (uncertain) transitions. Correlation differences increase as entropy decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105, C23, C139-C143 compare model behavior to songbird data (Bouchard and Brainard, 2016). Figure 5a shows PSA examples for low and high entropy cases. Figure 5b demonstrates significant differences in next-state vs. other-state correlations for low entropy (p<0.01) but not high entropy (p>0.3) transitions. Figure 5c shows correlation differences increase as entropy decreases (p<0.01). The mechanistic explanation (trial-averaged PSA marginalizes possible transitions, C103, C141-C143) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The proposed plasticity mechanism differs from Hebbian learning in that it learns transition probabilities rather than uniform connectivity. Unlike Hebbian rules that reach predefined upper limits, the proposed rule ceases learning when prediction error is minimized, resulting in synaptic distributions proportional to transition probabilities. The model differs from prior computational models (Kappel et al., 2014; Barber, 2002) by generating stochastically transitioning assemblies rather than deterministic sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120, C133-C138 provide context and distinguish the work from prior approaches. The distinction from Hebbian learning is conceptually clear: Hebbian rules potentiate until reaching upper limits (C116-C117, supported by citations), while the proposed rule minimizes prediction error (C119). The comparison to prior computational models (C133-C138) correctly identifies that Kappel et al. and Barber et al. learn deterministic sequences or static patterns, while this model generates stochastic transitions. Figure 3b supports the claim that learned weights are proportional to transition probabilities rather than uniform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The proposed mechanism could be implemented through somatodendritic interactions and may offer advantages for flexible computation, probabilistic prediction, and reinforcement learning in uncertain environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C132 are speculative about biological implementation and potential advantages. While the speculation is reasonable and supported by citations to related work (Urbanczik and Senn, 2014; Asabuki and Fukai, 2020), these claims are not directly tested in the manuscript. The potential advantages for reinforcement learning (C128-C132) are plausible but remain hypothetical. The relationship to reward-based plasticity is acknowledged as requiring further study (C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The model has limitations: it cannot learn non-Markovian or higher-order transitions, and it cannot learn transition statistics if states are separated in time. These limitations could potentially be addressed by incorporating working memory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C151 acknowledge limitations of the model. The limitation to Markovian transitions (C147) is supported by citation (Brea et al., 2013) and follows from the local nature of the learning rule. The inability to handle temporally separated states (C149) is a logical consequence of the model architecture. The suggestion that working memory could address these limitations (C150) is speculative but well-supported by citations to relevant literature on activity-dependent and activity-silent working memory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The brain learns internal models through sensory experience, which is reflected in spontaneous activity. Prior computational studies have proposed Hebbian plasticity for learning switching dynamics, but extending these to learn appropriate transition probabilities has been challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10-C17 provide background context supported by appropriate citations. The claims about internal models (C1, C10, C11) are supported by multiple citations (Merfeld et al., 1999; Lewald and Ehrenstein, 1998; Bell et al., 1997; Yasui and Young, 1975; Wolpert et al., 1995). Experimental evidence for spontaneous activity reflecting learned models (C2, C12-C14) is supported by citations (Berkes et al., 2011; Wilson and McNaughton, 1994; Skaggs and McNaughton, 1996; Lee and Wilson, 2002; Davidson et al., 2009; Diba and Buzs\u00e1ki, 2007; Gupta et al., 2010; Wu and Foster, 2014). Prior computational work (C15) and its limitations (C16) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C109"
+    ],
+    "result": "Prior computational studies have proposed Hebbian plasticity for learning switching dynamics, but it has been challenging to learn dynamic spontaneous activity obeying statistical properties of sensory experience. The proposed model addresses this gap by having excitatory connectivity learn transition probabilities during the evoked phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C25, and C109 establish the gap in prior work and how the current study addresses it. The limitation of prior Hebbian approaches (C3, C4, C25) is supported by citations (Levy et al., 2001; Litwin-Kumar and Doiron, 2014; Triplett et al., 2018; Ocker and Doiron, 2019; Asabuki and Fukai, 2024; Chadwick et al., 2015). The claim that excitatory connectivity learns transition probabilities (C109) is supported by the weight analysis in Figure 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C24",
+      "C152",
+      "C153"
+    ],
+    "result": "The model replicates experimental results from songbirds, suggesting the proposed plasticity rule might underlie how animals learn internal models. The work sheds light on the learning mechanism of the brain's internal model and the role of spontaneous activity as an internal generative model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C9, C24, C152, and C153 make broad interpretive statements about the model's implications. While the model does replicate songbird data (C8, supported by Figure 5), the suggestion that it 'might underlie' biological mechanisms (C9, C24) is speculative. The claims about 'shedding light' on brain mechanisms (C152, C153) are reasonable interpretations but go beyond what is directly demonstrated. The songbird comparison is limited to one specific phenomenon (uncertainty modulation of predictability) and does not establish that the proposed mechanism is actually used by the brain.",
+    "result_type": "MAJOR"
+  }
+]

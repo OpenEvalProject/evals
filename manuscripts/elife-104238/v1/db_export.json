@@ -1,0 +1,2483 @@
+{
+  "submission": {
+    "id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T16:06:19.490550Z",
+    "updated_at": "2025-11-21T16:06:19.490550Z"
+  },
+  "content": [
+    {
+      "id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "content_type": "manuscript",
+      "content_text": "# Development of D-box peptides to inhibit the anaphase-promoting complex/cyclosome\n\n## Authors\n\n- Rohan Eapen<sup>1</sup> ([ORCID: 0000-0001-7269-3633](https://orcid.org/0000-0001-7269-3633))\n- Cynthia Okoye<sup>1</sup>\n- Christopher Stubbs<sup>2</sup> ([ORCID: 0000-0002-2373-5478](https://orcid.org/0000-0002-2373-5478))\n- Marianne Schimpl<sup>2</sup>\n- Thomas Tischer<sup>3</sup>\n- Eileen J Fisher<sup>2</sup>\n- Maria Zacharopoulou<sup>1</sup> ([ORCID: 0000-0002-3660-2797](https://orcid.org/0000-0002-3660-2797))\n- Fernando Ferrer<sup>4</sup>\n- David Barford<sup>3</sup> ([ORCID: 0000-0001-8810-950X](https://orcid.org/0000-0001-8810-950X))\n- David R Spring<sup>5</sup> ([ORCID: 0000-0001-7355-2824](https://orcid.org/0000-0001-7355-2824))\n- Catherine Lindon<sup>1</sup> ([ORCID: 0000-0003-3554-2574](https://orcid.org/0000-0003-3554-2574))\n- Christopher Phillips<sup>2</sup>\n- Laura S Itzhaki<sup>1</sup> ([ORCID: 0000-0001-6504-2576](https://orcid.org/0000-0001-6504-2576)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n2. AstraZeneca Cambridge United Kingdom ([ROR:04r9x1a08](https://ror.org/04r9x1a08))\n3. MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))\n4. p53 Laboratory Singapore Singapore\n5. Yusuf Hamid Department of Chemistry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n\n\u2020 Corresponding author\n\n## Abstract\n\nE3 ubiquitin ligases engage their substrates via \u2018degrons\u2019 - short linear motifs typically located within intrinsically disordered regions of substrates. As these enzymes are large, multi-subunit complexes that generally lack natural small-molecule ligands and are difficult to inhibit via conventional means, alternative strategies are needed to target them in diseases, and peptide-based inhibitors derived from degrons represent a promising approach. Here we explore peptide inhibitors of Cdc20, a substrate-recognition subunit and activator of the E3 ubiquitin ligase the anaphase-promoting complex/cyclosome (APC/C) that is essential in mitosis and consequently of interest as an anti-cancer target. APC/C engages substrates via degrons that include the \u2018destruction box\u2019 (D-box) motif. We used a rational design approach to construct binders containing unnatural amino acids aimed at better filling a hydrophobic pocket that contributes to the D-box binding site on the surface of Cdc20. We confirmed binding by thermal-shift assays and surface plasmon resonance and determined the structures of a number of the Cdc20-peptide complexes. Using a cellular thermal shift assay, we confirmed that the D-box peptides also bind to and stabilise Cdc20 in the cell. We found that the D-box peptides inhibit ubiquitination activity of APC/CCdc20 and are more potent than the small-molecule inhibitor Apcin. Lastly, these peptides function as portable degrons capable of driving the degradation of a fused fluorescent protein. Interestingly, we find that although inhibitory activity of the peptides correlates with Cdc20-binding affinity, degradation efficacy does not, which may be due to the complex nature of APC/C regulation and effects of degron binding of subunit recruitment and conformational changes. Our study lays the groundwork for the further development of these peptides as molecular therapeutics for blocking APC/C as well as potentially for harnessing the APC/C for targeted protein degradation.\n\n## Introduction\n\nE3 ubiquitin ligases recognise their substrates via short linear motifs (SLiMs) known as degrons on the substrates, which are often located in intrinsically disordered regions and bind with rather weak affinities (in the micromolar range) (Tompa and Fuxreiter, 2008; Min et al., 2013; Guharoy et al., 2016; Hein and Nilsson, 2014; Pierce et al., 2016). Recognition of the substrate by the proteasome depends on the number, type, and length of polyubiquitin chains and requires poly-ubiquitination through multiple rounds of recruitment of a ubiquitin-loaded conjugating E2 enzyme (UbcH10 or Ube2S) to the substrate-bound E3. There are numerous examples in which ubiquitination and degradation require the E3 to bind to multiple degrons on the substrate, a particularly striking case being the anaphase-promoting complex/cyclosome (APC/C), a giant multi-protein complex that controls progression of cells out of mitosis via the coordinated ubiquitination and degradation of over 100 different substrates (Karamysheva et al., 2009; Di Fiore et al., 2016; Tian et al., 2012; Okoye et al., 2022). APC/C function requires one of two coactivators, Cdc20 and Cdh1/FZR1 (Min et al., 2013; Davey and Morgan, 2016; Bakos et al., 2018), which comprise a substrate-binding WD40 domain and N- and C-terminal disordered regions that bind to other APC/C subunits and lead to conformational change and enhanced E2 binding. APC/CCdc20 activity is further controlled by the mitotic checkpoint complex (MCC) that inhibits APC/C in the presence of faulty chromosome attachments to the mitotic spindle (Izawa and Pines, 2011; Di Fiore et al., 2016; Qiao et al., 2016; Alfieri et al., 2017; Watson et al., 2019). APC/CCdc20 activity reduces as cells exit mitosis, the coactivator is switched to Cdh1/FZR1, and APC/CFZR1 is active until the end of G1 phase. In addition to coactivator switching and post-translational modifications, the APC/C further controls the order of substrate degradation via differential degron-binding affinities (Davey and Morgan, 2016; Alfieri et al., 2017; Bodrug et al., 2021; Okoye et al., 2022), leading to different processivity of ubiquitination and chain linkages and thereby effective engagement of the proteasome, although the precise details of the relationship between APC/C-substrate interactions and the number, type, and length of polyubiquitin chains formed have not been fully resolved (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of APC/C activity during mitotic exit, indicating the switch in co-activator from Cdc20 to FZR1. Most substrates contain variable degrons (D-box in green, KEN in yellow) present in IDRs. (B) Domain structuring of Cdc20 comprising an N-terminal IDR with the C-box, KEN-box, and CRY-box motifs, the central WD40 domain responsible for substrate recruitment via the degron binding sites and the C-terminal IDR containing the IR-tail. (C) Schematic of the structure of the Cdc20 WD40 domain (PDB: 4GGC) overlaid with those of the WD40 domain in complex with Acm1 D-box and ABBA motif peptides (PDB: 4BH6) (He et al., 2013) and the KEN-box peptide 4GGD (Tian et al., 2012).\n\nHigh-resolution structures of the APC/C and its complexes with substrates and E2s have provided tremendous insights into the mechanism of ubiquitination and degradation (Barford, 2020). Coactivators Cdc20 and FZR1 have at least three binding sites for substrate degrons: the \u2018Destruction-box\u2019 (D-box), the KEN motif, and the ABBA motif (thought to be required for Cyclin A degradation only; Qin et al., 2017). A study of the structure of APC/C-FZR1 in complex with its pseudo-substrate inhibitor Acm1 showed that all three of the Acm1 degrons can bind simultaneously (He et al., 2013). The KEN motif is recognised by the \u2018top\u2019 surface of the WD40 beta-propeller domain of the co-activator, and the ABBA motif binds to the \u2018side\u2019 of the beta-propeller at one of its blades. The D-box binding site comprises a cleft between two of the beta-propeller blades and the neighbouring APC/C subunit APC10, which is thought to result in stabilisation of the active complex (Burton and Tsakraklides, 2005; Buschhorn et al., 2011; da Fonseca et al., 2011; Chang et al., 2014; Matyskiela and Morgan, 2009; Qin et al., 2019). Most recently, single-molecule studies have shed new insights into the key role of degron multivalency in enabling efficient substrate ubiquitination and degradation (Hartooni et al., 2022).\n\nInhibitors of APC/CCdc20 activity represent an interesting therapeutic approach to target dividing cells in cancer. Given the large size of the APC/C machine (14 subunits) and the complex mechanisms described above that regulate its function, it is not surprising that it is challenging to inhibit. Apcin and TAME are recently identified small-molecule inhibitors, but they have limited activity and complicated output (Richeson et al., 2020; Sackton et al., 2014). In this paper, we use a rational design approach, based on D-box consensus sequences and a \u2018Super D-box\u2019 peptide derived from Hsl1, and examination of the Cdc20-degron interface, to design a series of more potent binders containing unnatural amino acids aimed at better filling the D-box hydrophobic pocket on the interaction interface. We quantified binding by thermal shift assays (TSAs) and surface plasmon resonance (SPR) and used a cellular thermal shift assay (CETSA) to demonstrate target engagement within the cellular context. The peptides also show functional engagement with APC/C in the cell as evidenced by their ability to drive the degradation of a fluorescent protein. Most strikingly, in vitro ubiquitination assays with recombinant APC/CCdc20 show that these peptides are more potent inhibitors of Cyclin B1 ubiquitination than Apcin. Interestingly, we find that although inhibitory activity of the peptides correlates with Cdc20-binding affinity, their degradation efficacy does not. This may be due to the complex nature of APC/C degrons and their bipartite interaction with different subunits, role in E2 recruitment, and consequent impact of positioning for effective ubiquitination. The results provide a useful starting point for the further development of these peptides as molecular therapeutics for blocking APC/C, as well as potentially also for harnessing APC/C for targeted protein degradation.\n\n## Materials and methods\n\n### Cloning, expression, and purification of Cdc20\n\nDNA encoding residues 161\u2013477 of human Cdc20 (Cdc20WD40) was cloned into a pU1 vector with an N-terminal His6-tag followed by a TEV protease cleavage site. The plasmid was then transformed into DH10 MultiBac cells expressing a Cre-recombinase. Positive clones were grown up and bacmid DNA prepared by standard protocols. Sf21 or Sf9 cells were grown at 27\u00b0C in Erlenmeyer flasks (Corning) and maintained in mid-log phase of growth prior to all experiments. High-titre baculovirus was produced by transfecting bacmid DNA into Sf21 cells at 0.5\u00d7106 cells/ml cells using Superfect (QIAGEN) in 24 deep-well blocks. Virus was harvested 1 week post transfection. For protein over-expression, Sf21 or Sf9 cells were infected with the virus stock and harvested about 60 hours post infection. Cell pellets were resuspended in 50 mM Tris-HCl, 300 mM NaCl, 1 mM MgCl2, 1 mM TCEP, 5% (v/v) glycerol, SigmaFAST EDTA-free protease inhibitor cocktail (1 tablet/100 ml), pH 8.5. Resuspended pellets were lysed by one freeze\u2013thaw cycle at \u201380\u00b0C. Lysates were then clarified by centrifugation at 45,000\u00d7g for 45 minutes at 4\u00b0C. Supernatants were flowed over a 5 ml HisTrap Excel column and washed with 20 column volumes (CV) of 50 mM Tris-HCl, 300 mM NaCl, 10 mM imidazole, 1 mM MgCl2, 1 mM TCEP, 5% (v/v) glycerol, pH 8.5. Proteins were then eluted with the above buffer including 300 mM imidazole directly into a 26/10 desalting column pre-equilibrated in the above buffer without imidazole. Eluted protein fractions were then pooled, and the His6-tag was removed using His6-TEV protease (S219V) overnight at 4\u00b0C. Proteins were then flowed back over a 5 ml HisTrap Excel column, collecting the flow-through containing the non-tagged Cdc20 protein. Protein eluent was then diluted in 25 mM Tris-HCl buffer, 1 mM MgCl2, 1 mM TCEP, 5% (v/v) glycerol, pH 8.5 to a final concentration of 30 mM NaCl. Proteins were then loaded onto a MonoQ 10/100 GL column and eluted over 20 CV with 1 M NaCl. Protein fractions containing the Cdc20 protein were then pooled and concentrated before separating on a Superdex 75 increase 10/300 GL column in the final buffer containing 25 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 5 mM TCEP, 5% (v/v) glycerol, pH 8.5.\n\n### Minimal biotinylation of Cdc20 for SPR\n\nThe protocol for minimal biotinylation was adapted from (Papalia and Myszka, 2010). Purified Cdc20WD40 was diluted into the reaction buffer (10 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 5% [v/v] glycerol, 1 mM TCEP, pH 7.3). A 0.9:1 molar ratio of Sulfo-NHS-LC-LC-Biotin (Thermo Fisher Scientific, A35358) was added to the diluted Cdc20 protein. The contents were briefly mixed by vortex and incubated on ice for 3 hours. The sample was then separated on a Superdex 75 Increase 10/300 GL column to remove free biotin.\n\n### Peptide synthesis and purification\n\nPeptide synthesis was performed on a 0.1 mmol scale using Ramage-ChemMatrix resin (Sigma-Aldrich). Fmoc-L-amino acids (2 eq.), HATU (2 eq.), and HOAt (2 eq.) were dissolved in 2 ml of NMP. DIEA (3.4 eq.) was used to activate the coupling mixture. Activated Fmoc-L-amino acids were coupled for 10 minutes (Fmoc-L-Arginine, 2\u00d75 eq., 30 minutes). Resins were washed in DMF and deprotected in 20% piperidine in DMF for 15 minutes. All peptides were N-terminally acetylated in 4 ml DMF, 4 ml acetic anhydride, 2 mL DIEA for 10 minutes. A peptide cleavage cocktail consisting of 93% TFA, 3.5% TIPS, and 3.5% ddH2O was used to deprotect and cleave the peptide from the resin for 1 hour. The eluate was triturated by the addition of diethyl ether, and the resulting precipitate was isolated by brief centrifugation. All peptides were characterised by LCMS using a Waters ACQUITY H-Class UPLC with an ESCi Multi-Mode Ionisation Waters SQ Detector 2 spectrometer. LC was performed on a ACQUITY UPLC CSH C18 (2.1 mm \u00d7 50 mm, 1.7 \u00b5m, 130 \u00c5) at 40\u00b0C, with a PDA e\u03bb detector 220\u2013800 nm, interval 1.2 nm. The following solvents and gradients were used for LC runs. Solvent A: 2 mM NH4OAc in 95% H2O, 5% MeCN, solvent B: 100% MeCN, solvent C: 2% formic acid from 5 to 95% B with a constant of 5% C over 1 minute at 0.6 ml/min. Analytical and semi-preparative HPLC runs were performed on an Agilent 1260 Infinity system using a Supelcosil ABZ +PLUS (150 mm \u00d7 4.6 mm, 3 \u00b5m) and Supelcosil ABZ +PLUS (250 mm \u00d7 21.2 mm, 5 \u00b5m), respectively. Peptides were eluted with a linear gradient system (solvent A: 0.1% TFA in H2O, solvent B: 0.05% TFA in MeCN) over 15 minutes at 1 ml/min and 20 minutes at 20 ml/min, respectively. Eluents were monitored by UV absorbance at 220 nm and 254 nm. Analytical data for all peptides are shown in Figure 3\u2014figure supplements 2\u20134 and Figure 4\u2014figure supplements 1 and 2.\n\n### Thermal shift assays\n\nAssays were performed using a Roche LightCycler 480 I in 96-well plate format. Each well (20 \u00b5l) was prepared with 750 nM of purified Cdc20WD40 and varying concentrations of D-box peptides, Apcin or DMSO (vehicle control) in assay buffer; 25 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 5% (v/v) glycerol, 1 mM TCEP, 1% (v/v) DMSO, 5\u00d7 SYPRO Orange (Thermo Fisher), pH 8.5. Thermal ramps were conducted from 25\u00b0C to 95\u00b0C at a rate of 0.03\u00b0C/second, and data were collected at a frequency of 20 points/\u00b0C. An excitation wavelength of 483\u00b135 nm was used to excite SYPRO Orange, and the fluorescence emission was detected at a 568\u00b120 nm. Measurements were performed in triplicate and errors listed are the standard deviation. Melting temperatures were determined by the minima peak of the negative differential in the \u2018Tm calling\u2019 analysis within the in-built analysis software.\n\n### Surface plasmon resonance assays\n\nExperiments were performed using a Biacore T200 instrument (GE Healthcare) at 15\u00b0C. Biotinylated-Cdc20WD40 was immobilised onto a SA biosensor chip (GE Healthcare) in running buffer (10 mM HEPES, 150 mM NaCl, 0.1 mM TCEP, 0.05% [v/v] Tween 20 and 1% [v/v] DMSO, pH 7.4) overflow cells 2, 3, and 4 at varying ligand densities. Flow cell 1 was used as a reference cell. Free biotin binding sites were blocked using amine-PEG4-Biotin. Peptides and Apcin analytes were diluted from DMSO stock solutions in running buffer without DMSO and were buffer matched to 1% DMSO. Titrations of each analyte were run over the sensor chip at a flow rate of 30 \u00b5l/min. Binding interactions were detected as a change in response units over the reference flow cell and subtracted from a blank buffer injection. Dissociation constants (KD) were calculated by fitting the response units (RUs) at steady-state equilibrium generated by the binding of an analyte to Cdc20WD40 against the concentration of analyte using the following equation:\n\n$$\nRU_{analyte}=\\frac{RU_{max}\\times[analyte]}{(K_{D}+[analyte])}\n$$\n\nwhere RUanalyte is the response units at equilibrium during a given injection of a concentration of analyte, [analyte]. RUmax is the maximum response produced by the analyte, dependent on the RU of immobilised ligand on a given flow cell. KD is the dissociation constant of a given analyte to the ligand. KD values are shown as the average of measurements from the three reference-subtracted flow cells.\n\n### Cellular thermal shift assays\n\nFull-length Cdc20 (residues 1\u2013499) with a C-terminal HiBiT tag (GSVSGWRLFKKISGS, Promega) was cloned into a pcDNA3.1(-) vector. HEK 293T cells were cultured in DMEM + 10% FBS (Sigma-Aldrich, F7524) at 5% CO2 in a humidified environment. Cells were grown to 70% confluency in T75 flasks prior to transient transfection with 10 \u00b5g of Cdc20_HiBiT_pcDNA3.1(-) plasmid with Lipofectamine 2000 (Invitrogen, Thermo Fisher Scientific) according to the manufacturers\u2019 protocol. Cells were harvested after 48 hours by trypsinisation and were subsequently washed twice in PBS with repeated centrifugation at 1000\u00d7g for 2 minutes. The pellet was then resuspended in lysis buffer (PBS, 1\u00d7SigmaFAST EDTA-free protease inhibitor tablet [Sigma-Aldrich], 2 mM NaVO3, 5 mM NaF, pH 7.4) and freeze\u2013thaw lysed in liquid nitrogen. The lysate was clarified by centrifugation at 20,000\u00d7g, 4\u00b0C for 20 minutes and the protein concentration of the supernatant was quantified by BCA (Pierce). Lysates were used at a final concentration of 0.2 mg/ml in lysis buffer. Lysates were aliquoted in 300 \u00b5l and were spiked with D-box binding site ligands to a concentration of 100 \u00b5M maintaining 1% DMSO. Compounds were incubated on ice for 30 minutes prior to aliquoting further into PCR strip tubes on a PCR block at 4\u00b0C. Lysate aliquots were then heated on a second PCR block at the indicated temperatures for 3 minutes prior to returning to 4\u00b0C. Heated lysates (5 \u00b5l) were then transferred into an AlphaPlate light-grey 384-well plate in quadruplicate by multichannel pipette. Nano-Glo HiBiT lytic detection system (Promega) was diluted as per the manufacturer\u2019s instructions and 5 \u00b5l were added to each well by multichannel pipette. Lysis buffer and a non-transfected HEK 293T cell lysate were used as negative controls. Following 5 minutes of incubation on a plate shaker, the plate was measured using a CLARIOStar microplate reader (BMG Labtech), with the detector set to read at 460\u00b180 nm, the focal height at 10.5 cm, and the gain adjusted to 2000. Data were normalised to the unheated sample (4\u00b0C) and were fitted using a Boltzmann equation to extract the melting temperature (Tm) (Niesen et al., 2007).\n\n### Protein crystallisation\n\nPeptide D21 was added to Cdc20WD40 in a stoichiometric manner and was co-concentrated to 1.9 mg/ml. The resulting complex was crystallised in a 2:1 protein to well solution ratio at 20\u00b0C using the sitting-drop vapour-diffusion method with a well solution containing 0.1 M MES pH 6.5, 12% (w/v) PEG 6000, 10% (v/v) MPD for Cdc20WD40-D21 and 0.1 M MES pH 6.5, 14% (w/v) PEG 6000, 10% (v/v) MPD for Cdc20WD40-D20 and Cdc20WD40-D7. Crystals grew to a maximum size after 3 days of incubation. For soaking experiments, crystals were first looped and washed through three drops containing 0.1 M MES pH 6.5, 20% (w/v) PEG 6000 to wash out MPD from the crystal. Crystals were then looped and incubated in a solution containing 0.1 M MES pH 6.5, 20% (w/v) PEG 6000 and 2.5 mM D21 or D20 (5% (v/v) DMSO) or D7 (10% [v/v] DMSO) for 4 hours. Soaked crystals were cryo-protected in the soak solution supplemented with 10% (v/v) glycerol and were flash frozen in liquid nitrogen.\n\n### Data collection and structure determination\n\nDiffraction data were collected on beamline I04 at the Diamond Light Source (Oxford, UK) and processed using autoPROC-STARANISO STARANISO (Vonrhein et al., 2018). Phases were obtained by molecular replacement using the crystal structure of human Cdc20 (PDB ID code 4GGC) as the search model (Tian et al., 2012). Iterative model building and refinements were performed with COOT and BUSTER, respectively (Emsley et al., 2010, Bricogne et al., 2020). Cdc20-D20 and Cdc20-D21 datasets were first refined using Refmac5 within the CCP4i suite (Winn et al., 2011; Kovalevskiy et al., 2018) before final refinements using BUSTER. Data collection and structure refinement statistics are summarised in Supplementary file 1A.\n\n### Ubiquitination assays\n\nIn vitro ubiquitination experiments were performed using APC/C and Cdc20 purified from insect cells (Zhang et al., 2016). 60 nM APC/C, 30 nM Cdc20, 90 nM UBA1, 300 nM UbcH10, 300 nM Ube2S, 35 mM ubiquitin, 1 mM cyclin B1, 5 mM ATP, 10 mM MgCl2, were mixed in a buffer containing 40 mM HEPES (pH 8.0), 80 mM NaCl, 0.6 mM DTT. The reaction was either performed with the indicated concentrations of peptides or DMSO (Sigma-Aldrich) as the vehicle control. The reaction was incubated for 30 minutes at 23\u00b0C and stopped by the addition of one volume of 2\u00d7 concentrated NuPAGE LDS loading buffer (Invitrogen).\n\n### Protein degradation assays\n\nThe pEGFP-N1 vector was modified by swapping the EGFP-coding sequence for mNeon-coding sequence using the AgeI/NotI cloning sites. The Aurora kinase A (AURKA) C-terminal fragment (364-403) containing the non-degron R371xxL motif (D0) together with an extended IDR was amplified by PCR and cloned into the modified vector with BamHI/AgeI sites. Round the horn site-directed mutagenesis was used to generate different D-box variants and validated by DNA sequencing. U2OS cells were cultured in DMEM supplemented with 10% FBS, 200 \u00b5M Glutamax-1, 100 U/ml penicillin, 100 \u00b5g/ml streptomycin, and 250 ng/ml fungizone (all from Thermo Fisher Scientific) at 37\u00b0C in humidified atmosphere containing 5% CO2. Plasmids were introduced into U2OS cells by electroporation using the Neon Transfection System 10 \u03bcl Kit (Thermo Fisher Scientific) and cells seeded on eight-well microscopy slides (Ibidi) and recovered for 24 hours. DMEM medium was exchanged for phenol red-free Leibovitz\u2019s L15 (Thermo Fisher Scientific), supplemented as above. Time-lapse imaging was conducted at 37\u00b0C using a widefield imaging platform composed of Olympus IX83 motorised inverted microscope, Spectra-X multi-channel LED widefield illuminator (Lumencor, Beaverton, OR, USA), Optospin filter wheel (Cairn Research, Faversham, UK), CoolSnap MYO CCD camera (Photometrics, Tucson, AZ, USA), automated XY stage (ASI, Eugene, OR, USA), and climate chamber (Digital Pixel, Brighton, UK), all controlled using Micro-Manager software (Edelstein et al., 2014). Fluorescence and phase contrast images of cells in mitosis were acquired with a \u00d740 objective binned at 2 \u00d7 2 at 2-minute intervals. Fluorescence intensity of mNeon in individual mitotic cells was quantified from 16-bit tiff files using ImageJ by integrating pixel measurements after subtraction of background fluorescence. Degradation curves were synchronised in silico to anaphase onset to generate average curves for multiple cells in each experimental condition.\n\n## Results\n\n### Quantification of Cdc20-binding activity of the small-molecule Apcin\n\nWe first produced Cdc20 protein in sufficient quantities for biophysical analysis and then used the known small molecule binder, Apcin, to test that the purified protein was functional and to benchmark our peptide-binding measurements. As Cdc20 comprises a WD40 domain that binds to the different degrons and is flanked on each end by long intrinsically disordered regions, we made a construct comprising the WD40 domain (residues 161\u2013477) with an N-terminal His6-tag and expressed this protein in baculovirus as previously described (Sackton et al., 2014; Tian et al., 2012). We biotinylated Cdc20 at a single site, as shown by electrospray-ionisation mass spectrometry for streptavidin-mediated ligand capture in SPR (Figure 2\u2014figure supplement 1). Using TSA and SPR, we confirmed that the purified Cdc20 was capable of binding to Apcin. The KD obtained by SPR was 420\u00b150 nM (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative examples of thermal unfolding traces of Cdc20 WD40 in the presence of 1% DMSO as the vehicle control or Apcin at concentrations of 25, 50, and 100 \u00b5M. (B) Corresponding melting temperatures calculated from derivative plots of the thermal unfolding traces. Mean data from triplicate measurements are shown, with error bars representing standard deviations. (C) Reference-subtracted sensorgrams of biotinylated Cdc20WD40 and Apcin. (D) Binding affinity determination of Apcin to Cdc20WD40 domain by steady-state analysis of the sensorgrams.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The observed mass shift corresponds to one Sulfo-NHS-LC-LC-Biotin molecule added to the purified protein.\n\n### Design of D-box peptides\n\nWe focused on D-box peptides, as there is much evidence from the literature that points to the unique importance of the D-box motif in mediating productive interactions of substrates with the APC/C (i.e. those leading to polyubiquitination & degradation). One of the clearest examples is a study that tested the degradation of 15 substrates of yeast APC/C in strains carrying alleles of Cdh1 in which the docking sites for D-box, KEN, or ABBA were mutated (Qin et al., 2017). The authors observed that, whereas degradation of all 15 substrates depended on D-box binding, only a subset required the KEN binding site on Cdh1 and only one required the ABBA binding site. A more recent study (Hartooni et al., 2022) of binding affinities of different degron peptides concluded that KEN motif has very low affinity for Cdc20 and is unlikely to mediate degradation of APC/C-Cdc20 substrates. Engagement of substrate with the D-box receptor is therefore the most critical event mediating APC/C activity and the interaction that needs to be blocked for most effective inhibition of substrate degradation.\n\nCrystal structures of the D-box-coactivator interactions (Chao et al., 2012; He et al., 2013) show that there are three key residues, Arginine 1, Leucine 4, and Asparagine 9 in the RxxLxxxxN D-box motif (Figure 3A). Leucine 4 contacts a hydrophobic pocket in the co-activator subunit, whereas the \u2018tail\u2019 of the D-box degron and its flanking sequence (residues 8\u201312) contact the APC10 subunit. As a starting point we used two peptides, a 10-residue consensus-like sequence derived from Hsl1 (D1: GRAALSDITN) (Burton and Tsakraklides, 2005; Frye et al., 2013; Davey and Morgan, 2016), and a 9-residue consensus sequence based on known D-box degrons from APC/C substrates (D2: RLPLGDISN) (He et al., 2013). TSA and SPR showed that D1 binds to Cdc20WD40 with a weak affinity (KD = 18.6 \u00b1 0.2 \u00b5M) (Table 1). D2 had no detectable affinity by TSA and, consequently, was not analysed by SPR. We hypothesised that the apparent lack of D2 binding may be due to its low solubility in aqueous buffer rather than an inability to bind. Based on the Cdh1-Acm1 structure, the side chain of the amino acid at position 2 is likely to be solvent exposed in the context of Cdc20WD40 (Figure 3A). Given that we observed a measurable affinity with D1, we chose to incorporate Ala (instead of Leu) at position 2 in all subsequent peptides.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic showing the Acm1 D-box peptide bound to yeast FZR1 homologue Cdh1. R119 of the D-box forms H-bond interactions with D256 and E537 of Cdh1. L122 of the D-box buries into the canonical pocket on the surface of Cdh1 (PDB: 4BH6, He et al., 2013). (B) Melting temperature of Cdc20WD40 in the presence of D-box peptides at 25, 50, and 100 \u00b5M concentrations, calculated from derivative plots of the thermal unfolding traces. Mean data from triplicate measurements are shown, with error bars representing standard deviations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig3-figsupp1-v1.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** LCMS data showing the m/z species for each purified peptide. Analytical HPLC chromatograms (10\u201330% solvent B over 15 minutes, 1 mL l/min, UV trace at 220 nm), with calculated purity of the peptides by the percentage area.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** LCMS data showing the m/z species for each purified peptide. Analytical HPLC chromatograms (10\u201330% solvent B over 15 minutes, 1 mL l/min, UV trace at 220 nm), with calculated purity of the peptides by the percentage area.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** LCMS data showing the m/z species for each purified peptide. Analytical HPLC chromatograms (10\u201330% solvent B over 15 minutes, 1 mL l/min, UV trace at 220 nm), with calculated purity of the peptides by the percentage area.\n\n**Table 1.**\n Binding of D-box peptides to Cdc20WD40 measured by surface plasmon resonance and thermal shift assay.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Peptide</th>\n      <th>Sequence</th>\n      <th>KD(\u00b5M)</th>\n      <th>\u0394Tm(\u00b0C at 100 \u00b5M peptide)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>D1</td>\n      <td>Ac-GRAALSDITN-NH2</td>\n      <td>18.6\u00b10.2</td>\n      <td>1.9\u00b10.1</td>\n    </tr>\n    <tr>\n      <td>D2</td>\n      <td>Ac-RLPLGDISN-NH2</td>\n      <td>n.d.</td>\n      <td>0.3\u00b10.3</td>\n    </tr>\n    <tr>\n      <td>D3</td>\n      <td>Ac-RAPLGDVSN-NH2</td>\n      <td>54.4\u00b10.7</td>\n      <td>1.7\u00b10.3</td>\n    </tr>\n    <tr>\n      <td>D4</td>\n      <td>Ac-RAPLGDISN-NH2</td>\n      <td>19.6\u00b10.2</td>\n      <td>1.51\u00b10.05</td>\n    </tr>\n    <tr>\n      <td>D5</td>\n      <td>Ac-RAPLGDLSN-NH2</td>\n      <td>27\u00b11</td>\n      <td>1.5\u00b10.1</td>\n    </tr>\n    <tr>\n      <td>D10</td>\n      <td>Ac-RAALGDISN-NH2</td>\n      <td>70\u00b13</td>\n      <td>0.6\u00b10.2</td>\n    </tr>\n    <tr>\n      <td>D19</td>\n      <td>Ac-RAPLSDITN-NH2</td>\n      <td>5.9\u00b10.1</td>\n      <td>3.4\u00b10.1</td>\n    </tr>\n  </tbody>\n</table>\n\n_n.d. indicates not detectable._\n\n### Isoleucine at position 7 and proline at position 3 of the D-box peptide are optimal for binding\n\nFrom the consensus sequence, we observed that substrate proteins have approximately equal frequency of Val, Leu, and Ile at position 7.Figure 3A Given the similar structural and physical properties of the three aliphatic side chains, we compared peptides with each of these three amino acids at position 7 and found that D4 with Ile7 had the highest affinity for Cdc20 (1.5-fold higher than D5 with Leu7; 19.6\u00b10.2 \u00b5M and 27\u00b11 \u00b5M respectively) (Table 1 and Figure 3\u2014figure supplement 1C and D). Interestingly, the shorter hydrocarbon chain of Val in D3 gave the weakest affinity, with a KD determined by SPR at 54.4\u00b10.7 \u00b5M (Figure 3\u2014figure supplement 1B).\n\nWe next investigated the contribution of proline versus alanine at position 3 (Table 1). Like the position 7 residues, Pro and Ala appear in approximately equal distribution to each other among known substrate proteins. In the context of D-box degron binding, modelling of our D4 peptide to the Saccharomyces cerevisiae Cdh1 structure showed that Pro3 may form a favourable turn in the D-box peptide backbone to allow the side chain of Leu 4 to adopt its canonical pocket (Figure 3A). We also note that relative to alanine, the side chain of Pro3 forms additional van der Waals contacts with Tyr207 of Cdc20 (Tyr210 of Cdh1). To test this hypothesis, we synthesised D10, a derivative of D4 containing a P3A single point mutation. As expected, this mutation was significantly detrimental with an affinity of 70\u00b13 \u00b5M by SPR and in parallel a loss of thermal stabilisation by TSA (Figure 3B, Figure 3\u2014figure supplement 1E). Upon confirming our hypothesis, we synthesised a derivative of D1 containing the A3P point mutation, yielding D19 (RAPLSDITN). This substitution resulted in a threefold increase in affinity (KD = 5.9 \u00b1 0.1 \u00b5M) compared with its parental sequence (Figure 3\u2014figure supplement 1F, Table 1).\n\n### Unnatural amino acids at position 4 of the D-box peptide result in significantly enhanced binding affinity to Cdc20\n\nThe surface topology of Cdc20 is largely flat, making it hard to drug. Nevertheless, in Apcin the tri-chlorinated moiety makes particular use of the Leu4-binding pocket on Cdc20. Taking inspiration from the small molecule, we explored candidate unnatural amino acids to incorporate into the D-box peptides at position 4. Given that the pocket can accommodate a tri-chlorinated carbon moiety within Apcin, we explored similar moieties to append to our D-box peptides. We incorporated (S)\u20132-amino-4,4-dimethylpentanoic acid (C3) (Figure 4A) into the backbone sequences of D4, D10, and D19 replacing leucine at position 4, yielding peptides D7, D12, and D20, respectively (Table 2). As expected, the structure\u2013activity relationship (SAR) held true between all peptides, whereby incorporation of the unnatural amino acid increased the binding affinity over 6-fold versus the respective parental peptide (Table 2). Building on this success, we further explored the commercially available halogenated analog, (S)\u20132-amino-4,4,4-trifluorobutanoic acid (F3) (Figure 4A), leading to peptide D21 (Table 2). With the tri-fluorinated group, a further increase in binding affinity was achieved (KD = 520 \u00b1 10 nM), which is similar to that of Apcin.\n\n**Table 2.**\n Binding of D-box peptides containing unnatural amino acids replacing Leu4 binding to Cdc20WD40 measured by surface plasmon resonance and thermal shift assay.Reported values are the mean \u00b1 standard deviation of triplicate measurements.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Peptide</th>\n      <th>Sequence</th>\n      <th>KD(\u00b5M)</th>\n      <th>\u0394Tm(\u00b0C, at 100 \u00b5M peptide)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>D7</td>\n      <td>Ac-RAPC3GDISN-NH2</td>\n      <td>3.1\u00b10.1</td>\n      <td>4.13\u00b10.03</td>\n    </tr>\n    <tr>\n      <td>D12</td>\n      <td>Ac-RAAC3GDISN-NH2</td>\n      <td>13.3\u00b10.1</td>\n      <td>2.0\u00b10.3</td>\n    </tr>\n    <tr>\n      <td>D20</td>\n      <td>Ac-RAPC3SDITN-NH2</td>\n      <td>0.90\u00b10.01</td>\n      <td>6.3\u00b10.1*</td>\n    </tr>\n    <tr>\n      <td>D21</td>\n      <td>Ac-RAPF3SDITN-NH2</td>\n      <td>0.52\u00b10.01</td>\n      <td>6.7\u00b10.1</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Standard deviation could not be determined, and the error was estimated based on uncertainties in peptide and protein concentrations._\n\n![Figure 4.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematics of the two unnatural amino acids used. (B) Thermal stabilisation of the Cdc20WD40 by the two highest affinity peptides D20 and D21 calculated from derivative plots in thermal shift assay (TSA) . Surface plasmon resonance (SPR) reference-subtracted sensorgrams and binding curves for (C) D20 and (D) D21.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** LCMS data showing the m/z species for each purified peptide. Analytical HPLC chromatograms (10\u201330% solvent B over 15 minutes, 1 mL l/min, UV trace at 220 nm), with calculated purity of the peptides by the percentage area.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** LCMS data showing the m/z species for each purified peptide. Analytical HPLC chromatograms (10\u201330% solvent B over 15 minutes, 1 mL l/min, UV trace at 220 nm), with calculated purity of the peptides by the percentage area.\n\n### Crystal structures of Cdc20-peptide complexes reveal D-box binding mode\n\nPrevious attempts to co-crystallise Cdc20 and securin-derived or cyclin B1-derived D-box peptides by Tian and co-workers were unsuccessful (Tian et al., 2012), which may be due to the low affinity of peptides comprising these sequences. Despite the relatively high affinity of D21 and the approximate 1:1.5 ratio of protein to peptide used in co-crystallisation experiments, crystals were absent of peptide ligands and instead contained the 2-methyl-2,4-pentanediol (MPD) molecule in the leucine-(P4) binding cleft (data not shown), originating from the crystallisation solution. We therefore adopted a similar protocol to that described by Sackton et al., whereby MPD was \u2018washed\u2019 out from the crystal prior to performing a soaking experiment with the desired ligand. We attempted these soaking experiments with our four highest affinity peptides, D21, D20, D7, and D19 (in order of highest affinity to lowest) and were able to observe sufficient ligand density for all but D19.\n\nThe crystal structures of Cdc20WD40 in complex with each of the other three D-box peptides (Figure 5A\u2013C, Figure 5\u2014figure supplement 1) show that they bound to Cdc20WD40 at the canonical D-box degron binding site, with a largely similar topology to the S. cerevisiae Acm1-Cdh1 structure (Figure 5D; overlay of D21 with Acm1 D-box). The guanidino group of the P1 arginine residue of the D-box peptides forms hydrogen bonds with the carboxylate side chains of Asp177 and Glu465 of Cdc20WD40. The nitrogen backbone atom of the (S)\u20132-amino-4,4,4-trifluorobutanoic acid/(S)\u20132-amino-4,4-dimethylpentanoic acid unnatural amino acids also forms a hydrogen bond with the carbonyl of Asp177. Additionally, the carbonyl of S5 belonging to D21/D20 forms a H-bond with the nitrogen backbone atom of Asp177. Lastly, Asp6 forms inter-molecular H-bonds with Arg174. We also observed an intra-molecular H-bond between the carbonyl of A2 with the amine of Gly5/Ser5, in addition to the carbonyl of A2 to the hydroxyl of Ser5 in D21/D20. Crystal packing of an adjacent asymmetric unit of the WD40 domain likely occludes the assumed binding site for the C-terminal three residues (\u2026ITN-NH2). We therefore conclude that this is the reason for the lack of observed density in this region of the peptides D20 and D21 (Figure 5\u2014figure supplement 1E and F, respectively). We believe that it causes a reduction in binding affinities of all peptides in crystallo, given the evidence from SPR highlighting a role of position 7 in the interaction (Table 1). Interestingly, the observed electron density of the peptide correlates with Cdc20 binding affinity: D21 and D20, having the highest affinities, display the clearest electron density allowing six amino acids to be modelled, whereas D7 shows relatively poor density permitting modelling of only four residues. For D19, the lack of density observed likely reflects its intrinsically weaker affinity compared to the other peptides, in addition to losing the interactions from position 7 due to crystal packing. This hypothesis also correlates to the comments made by Tian et al. in their attempt to co-crystallise securin D-box peptides with Cdc20, in the identical space group (Tian et al., 2012). A recent 2.9 \u00c5 cryo-EM structure of the APC/CCdh1.Emi1 complex showed that the aliphatic residue at P7 interacts with Val178 of Cdh1 and would be predicted to contact the conserved Ile175 of Cdc20 (H\u00f6fler et al., 2024). This non-polar interaction between coactivator and D-box explains our observation that modifying the size of the aliphatic residue at P7 optimises D-box-Cdc20 affinity. Residues P8 and P9 of the D-box do not contact the coactivator but instead interact with APC10.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig5-v1.jpg)\n\n**Figure 5.:** X-ray crystal structures of peptides (A) D21, (B) D20, and (C) D7 bound to the canonical D-box binding pocket of Cdc20. Intermolecular hydrogen bonds between peptides and Cdc20 are shown by dashed lines. (D) Structural alignment of D21-bound Cdc20 and Acm1 D-box peptide bound to Cdh1 (PDB: 4BH6; He et al., 2013). Peptide backbones align with an RMSD of 1.007 \u00c5. Modelled water molecules have been removed from images for clarity.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** All peptides are shown by stick representations (magenta). Intramolecular hydrogen bonds formed within peptides (A) D7, (B), D20, and (C) D21. All peptides form a hydrogen bond between the carbonyl of A2 to the amine of G5/S5. Peptides D20 and D21 form an additional H-bond between the carbonyl of A2 to the hydroxyl group of S5. 2F\u00adoFc maps contoured at 1.0\u03c3 and modelled peptide atoms of (D) D7, (E), D20, and (F) D21. Unbiased FoFc maps from refinement steps prior to including the peptides in the model, contoured at 2.5\u03c3. Maps shown are (G) D7, (H) D20, and (I) D21.\n\n### D-box peptides bind to Cdc20 in the cellular context\n\nWe next investigated whether the four highest affinity peptides D21, D20, D7, and D19 can bind to Cdc20 in the cellular context using CETSA (Martinez Molina et al., 2013). Sackton et al. previously demonstrated that Apcin can stabilise endogenous Cdc20 by using an isothermal CETSA method (Sackton et al., 2014). We were able to reproduce this ligand-induced stabilisation of Cdc20 with the more commonly used temperature gradient approach by densitometric analysis of western blots (Figure 6\u2014figure supplement 1A). However, due to the low throughput of the assay we also explored a more high-throughput approach by making use of Promega\u2019s split-luciferase HiBiT tag appended to the C-terminus of full-length Cdc20 and based on protocols previously described by Martinez and co-workers (Martinez et al., 2018). Notably, the signal is more sensitive and has a larger range compared to a western blot, and it removes a significant time-consuming centrifugation step from the workflow. We first confirmed that omitting the centrifugation step did not significantly affect the observed Tm of vehicle control samples (Figure 6\u2014figure supplement 1B). To further validate that the transfected Cdc20 is functional, we probed binding of 100 \u00b5M Apcin, which gave a Tm of 54.4\u00b0C\u00b10.6\u00b0C (Figure 6\u2014figure supplement 1C). We then explored whether the D-box peptides at a fixed concentration stabilise the Cdc20, and for D7, D20, and D21 we observed increases in the thermal stability of Cdc20 that correlated with their binding affinities as previously determined (Figure 6, Table 3). The lowest-affinity peptide, D19, did not result in a significant thermal stabilisation of Cdc20.\n\n**Table 3.**\n Melting temperatures of HiBiT-tagged Cdc20 in the presence of 100 \u00b5M D-box peptides measured by cellular thermal shift assay.Melting temperatures are calculated from the mean of three experiments, and the standard deviations are listed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Melting temperature (\u00b0C)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DMSO only</td>\n      <td>50.0\u00b10.4</td>\n    </tr>\n    <tr>\n      <td>D19</td>\n      <td>50.4\u00b10.6</td>\n    </tr>\n    <tr>\n      <td>D7</td>\n      <td>51.2\u00b10.3</td>\n    </tr>\n    <tr>\n      <td>D20</td>\n      <td>52.6\u00b10.4</td>\n    </tr>\n    <tr>\n      <td>D21</td>\n      <td>53.2\u00b10.8</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 6.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig6-v1.jpg)\n\n**Figure 6.:** Representative cellular thermal shift assay (CETSA) data are shown for Cdc20-tranfected HEK293T cell lysates incubated with D-box peptides at a concentration of 100 \u00b5M.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Cellular thermal shift assay (CETSA) of endogenous Cdc20 in HEK293T cell lysates by 100 \u00b5M Apcin compared with vehicle control (1% DMSO), analysed by densitometric analysis of western blots. Mean and standard deviation are calculated from two independent experiments. (B) CETSA of transfected Cdc20 with a C-terminal HiBiT tag spiked with 1% DMSO with and without including a centrifugation step following heat denaturation at each temperature set point. (C) Stabilisation of transfected Cdc20 with a C-terminal HiBiT tag by 100 \u00b5M Apcin compared with vehicle control (1% DMSO).\n\n### D-box peptides inhibit APC/CCdc20 ubiquitination activity\n\nWe next assessed whether D21 and D20, the two highest affinity peptides, are able to inhibit APC/CCdc20 activity. In the context of Cyclin B1 ubiquitination, we found that both peptides are more potent inhibitors compared with Apcin at the same concentration despite having slightly lower Cdc20-binding affinities than Apcin (Figure 7). However, in the context of the APC/CCdc20 complex, the D-box peptides, but not Apcin, would also contact APC10, thereby increasing their affinity for the APC/C-coactivator complex and explaining their greater inhibitory potency relative to Apcin.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig7-v1.jpg)\n\n**Figure 7.:** In vitro ubiquitination assays using reconstituted APC/CCdc20 with Cyclin B1 as the substrate for ubiquitination. Lead peptides and Apcin were titrated from 3 \u00b5M to 300 \u00b5M and showed concentration-dependent inhibition of Cyclin B1 ubiquitination compared to the vehicle control (0.7% DMSO).\n\n### D-box peptides are able to target mNeon for degradation\n\nTo probe the functionality of the D-box variants at the cellular level, we conducted live cell degradation assays using mNeon fusions containing those peptide sequences that contain only natural amino acids: D1, D2, D3, and D19 (Figure 8A). The D-box sequences were swapped into an RxxL motif previously shown to have no degron activity (Abdelbaki et al., 2023), which we here refer to as \u2018D0\u2019, adjacent to the endogenous C-terminal IDR of AURKA to enable processing of the ubiquitinated fusion proteins at the 26S proteasome. We found that all four new D-box variants tested could target mNeon for degradation, with timing consistent with targeting by APC/CCdc20 (Figure 8B). We predicted that the higher affinity D-box peptides from the in vitro assays (D1 and D19) would mediate increased rates and extent of degradation compared to the lower affinity peptides (D2 and D3). However, we found the opposite effect: D2 and D3 showed increased rates of mNeon degradation compared to D1 and D19 (Figure 8C and D). This observation is consistent with conclusions from other studies that affinity of degron binding does not necessarily correlate with efficiency of degradation. Indeed, there is no evidence that Hsl1, which is the highest affinity natural D-box (D1) used in our study, is degraded any more rapidly than other substrates of APC/C in yeast mitosis. A number of studies of a yeast \u2018pseudo-substrate\u2019 inhibitor Acm1 have shown that mutation of the high-affinity D-box in Acm1 converts it from inhibitor to substrate (Choi et al., 2008; Enquist-Newman et al., 2008; Burton et al., 2011) through a mechanism that governs recruitment of APC10 (Qin et al., 2019). Our study does not consider the contribution of APC10 to binding of our peptides to APC/CCdc20 complex, but since there is strong cooperativity provided by this additional interaction (Hartooni et al., 2022) we propose this as the critical factor in determining the ability of the different peptides to mediate degradation of mNeon.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/104238/elife-104238-fig8-v1.jpg)\n\n**Figure 8.:** (A) Schematic of D-box-mNeon constructs used in fluorescence timelapse imaging. (B) mNeon fluorescence levels in individual cells plotted over time to show D-box mediated degradation of mNeon in mitosis. Fluorescence measurements from individual cells are normalised to fluorescence at metaphase then in silico synchronised to anaphase onset. Mean degradation curves are shown, with error bars representing SDs. (C) Degradation rate curves show rate of change in relative fluorescence of the D-box variants and reveal maximum degradation rate for each construct. Error bars are depicted as shaded regions and indicate SDs. (D) Levels of relative fluorescence in each cell at t=1 hour after anaphase onset. Degradation of each D-box construct was significant relative to D0 control, using Welch\u2019s t-test. ****p\u22640.0001. In (B\u2013D), n=D0 (20) D1 (23), D2 (40), D3 (38), and D19 (34), with data pooled from two or more independent experiments.\n\n## Discussion\n\nHere, we quantified D-box peptide binding to Cdc20 and show that binding affinities can be enhanced by incorporating unnatural amino acids to better fill the hydrophobic pocket on the Cdc20 surface. We confirmed the success of this approach by determining X-ray crystal structures of Cdc20-peptide complexes. We showed target engagement by the peptides in the cellular context, and we found that the two highest affinity peptides were more potent inhibitors of APC/CCdc20 activity than the small molecule Apcin. Lastly, we found that the D-box peptide is a portable motif that can drive productive ubiquitination, leading to degradation when fused to a fluorescent protein target.\n\nThe finding that the peptides were more potent than Apcin as APC/CCdc20 inhibitors was interesting since Apcin has a slightly higher Cdc20-binding affinity than the peptides. It suggests that inhibiting APC/CCdc20 ubiquitination activity may require larger molecules to compete with substrates effectively. It may also be that, unlike Apcin, the peptides not only block the interaction of substrates with Cdc20 but additionally the interaction with APC10 and/or prevent the conformational change in APC/C that enables recruitment of the E2. In addition, although the inhibitory activity of the D-box peptides roughly correlates with their binding affinity, binding and degron activity (substrate degradation) are not directly correlated. Studies have shown that residues C-terminal of the D-box sequence in Acm1, the \u2018D-Box Extension\u2019 DBE motif, have the potential to inhibit reaction processivity by influencing the conformation of APC10 (Qin et al., 2019). The mNeon-D-box constructs used in our current study all contain the same DBE motif, so a potential contribution from this motif will not affect the interpretation of our results, but it could certainly be added as an element in future inhibitor design.\n\nIn summary, the findings presented here represent a useful starting point for the further development of APC/C inhibitors as both research tools and also molecular therapeutics. Future directions could involve enhancing potency through avidity by incorporating multiple degrons into our molecules and additions to the D-box core sequence to include motifs that engage other components of the APC/C machinery \u2013 namely APC10 and the E2 \u2013 thereby not only blocking substrate binding more effectively but also better impeding ubiquitination activity. The results also have implications for the design of small-molecule and peptide-based degraders that harness the APC/C.\n\n### Statistical analyses\n\nGraphPad Prism 9 (GraphPad Software Inc) and Microsoft Excel (Microsoft Corporation) were used to analyse data, generate graphs, and perform statistical analyses. Statistical parameters, including the sample size, the statistical test used, statistical significance (p-value), and the number of biological replicates, are reported in the figure legends or in the \u2018Materials and methods\u2019.\n\n### Materials availability\n\nMaterials from this study are available from the corresponding author upon reasonable request.\n",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Julien Roche\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104238.3.sa0](https://doi.org/10.7554/eLife.104238.3.sa0)\n\nThe article represents a fundamental advance in designing peptide inhibitors targeting Cdc20, a key activator and substrate-recognition subunit of the APC/C ubiquitin ligase. Supported by compelling biophysical and cellular evidence, the study lays a strong foundation for future developments in degron-based therapeutics. The revised article has been strengthened by additional clarifications and data that address prior reviewer concerns. The work provides a robust framework for developing tools to manipulate protein degradation and will be of broad interest to researchers in protein engineering, cell cycle regulation, and targeted protein degradation.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104238.3.sa1](https://doi.org/10.7554/eLife.104238.3.sa1)\n\nSummary:\n\nIn this manuscript, the authors Eapen, et al. investigated the peptide inhibitors of Cdc20. They applied a rational design approach, substituting residues found in the D-box consensus sequences to better align the peptides with the Cdc20-degron interface. In the process, the authors designed and tested a series of more potent binders, including ones that contain unnatural amino acids, and verified binding modes by elucidating the Cdc-20-peptide structures. The authors further showed that these peptides can engage with Cdc20 in the cellular context, and can inhibit APC/CCdc20 ubiquitination activity. Finally, the authors demonstrated that these peptides could be used as portable degron motifs that drive the degradation of a fused fluorescent protein.\n\nStrengths:\n\nThis manuscript is clear and straightforward to follow. The investigation of different peptide variations was comprehensive and well-executed. This work provided the groundwork for the development of peptide drug modalities to inhibit degradation or applying peptides as portable motifs to achieve targeted degradation. Both of which are impactful. The additional points provided by the authors in response to reviewers further strengthened the manuscript and enhanced its clarity.\n\nWeaknesses:\n\nNone, the authors have addressed all my comments, and I have no additional suggestions.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104238.3.sa2](https://doi.org/10.7554/eLife.104238.3.sa2)\n\nSummary:\n\nEapen and coworkers use a rational design approach to generate new peptide-inspired ligands at the D-box interface of cdc20. These new peptides serve as new starting points for blocking APC/C in the context of cancer, as well as manipulating APC/C for targeted protein degradation therapeutic approaches.\n\nStrengths:\n\nThe characterization of new peptide-like ligands is generally solid and multifaceted, including binding assays, thermal stability enhancement in vitro and in cells, X-ray crystallography, and degradation assays.\n\nComments on revisions:\n\nI am satisfied with the changes in response to the first round of review.\n",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fe7a58c0-2135-4601-bbc1-f0ee28fe3d69",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C1",
+      "claim": "E3 ubiquitin ligases engage their substrates via 'degrons' - short linear motifs typically located within intrinsically disordered regions of substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "E3 ubiquitin ligases engage their substrates via 'degrons' - short linear motifs typically located within intrinsically disordered regions of substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of ubiquitin biology, supported by multiple citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "aa1b8e4a-4ef8-4dc8-90db-5488ae7c5f1b",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C2",
+      "claim": "E3 ubiquitin ligases are large, multi-subunit complexes that generally lack natural small-molecule ligands and are difficult to inhibit via conventional means.",
+      "claim_type": "EXPLICIT",
+      "source": "As these enzymes are large, multi-subunit complexes that generally lack natural small-molecule ligands and are difficult to inhibit via conventional means, alternative strategies are needed to target them in diseases, and peptide-based inhibitors derived from degrons represent a promising approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about the structural complexity of E3 ligases and the challenges in targeting them.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "761dd188-9dd3-4c44-b7d4-3e2423e867d5",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C3",
+      "claim": "Cdc20 is a substrate-recognition subunit and activator of the E3 ubiquitin ligase the anaphase-promoting complex/cyclosome (APC/C) that is essential in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we explore peptide inhibitors of Cdc20, a substrate-recognition subunit and activator of the E3 ubiquitin ligase the anaphase-promoting complex/cyclosome (APC/C) that is essential in mitosis and consequently of interest as an anti-cancer target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Cdc20's role in the APC/C complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "2e4d46b2-f8f3-4acf-97de-bfe5ce407c7e",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C4",
+      "claim": "Cdc20 is of interest as an anti-cancer target.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we explore peptide inhibitors of Cdc20, a substrate-recognition subunit and activator of the E3 ubiquitin ligase the anaphase-promoting complex/cyclosome (APC/C) that is essential in mitosis and consequently of interest as an anti-cancer target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from Cdc20's essential role in mitosis and the general principle that targeting mitotic regulators can be therapeutic in cancer.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "a1e7dc9e-c003-42f3-b16d-c62da31f5177",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C5",
+      "claim": "APC/C engages substrates via degrons that include the 'destruction box' (D-box) motif.",
+      "claim_type": "EXPLICIT",
+      "source": "APC/C engages substrates via degrons that include the 'destruction box' (D-box) motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about APC/C substrate recognition mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "646f0803-8aea-4f04-85f1-091619544eb3",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C6",
+      "claim": "A rational design approach was used to construct binders containing unnatural amino acids aimed at better filling a hydrophobic pocket that contributes to the D-box binding site on the surface of Cdc20.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a rational design approach to construct binders containing unnatural amino acids aimed at better filling a hydrophobic pocket that contributes to the D-box binding site on the surface of Cdc20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "3adf3367-e319-4f04-9a88-b375965ad46a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C7",
+      "claim": "D-box peptide binding to Cdc20 was confirmed by thermal-shift assays and surface plasmon resonance.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed binding by thermal-shift assays and surface plasmon resonance and determined the structures of a number of the Cdc20-peptide complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data from TSA and SPR experiments confirming binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "caea0ab3-f68a-44a7-9979-5740998a15b8",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C8",
+      "claim": "The structures of a number of Cdc20-peptide complexes were determined.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed binding by thermal-shift assays and surface plasmon resonance and determined the structures of a number of the Cdc20-peptide complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Crystal structures are presented in the manuscript (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "e5f03871-f5ff-4183-a5d0-f96e61a99c06",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C9",
+      "claim": "D-box peptides bind to and stabilise Cdc20 in the cell as confirmed by cellular thermal shift assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cellular thermal shift assay, we confirmed that the D-box peptides also bind to and stabilise Cdc20 in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "CETSA data is presented showing thermal stabilization of Cdc20 by peptides in cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "ab115b61-c8b2-4548-9b3e-f19f61d38d3a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C10",
+      "claim": "D-box peptides inhibit ubiquitination activity of APC/CCdc20.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the D-box peptides inhibit ubiquitination activity of APC/CCdc20 and are more potent than the small-molecule inhibitor Apcin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "In vitro ubiquitination assay data is presented showing inhibition of Cyclin B1 ubiquitination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "9c112cee-ad35-4519-add2-8631f88dcad6",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C11",
+      "claim": "D-box peptides are more potent inhibitors of APC/CCdc20 than the small-molecule inhibitor Apcin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the D-box peptides inhibit ubiquitination activity of APC/CCdc20 and are more potent than the small-molecule inhibitor Apcin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative ubiquitination assay data is presented in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "b6d83560-1495-4faa-b2e8-7da17e5fe400",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C12",
+      "claim": "D-box peptides function as portable degrons capable of driving the degradation of a fused fluorescent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, these peptides function as portable degrons capable of driving the degradation of a fused fluorescent protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Live cell degradation assays with mNeon fusions are presented in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "b0176e57-95bd-44dd-895a-52fbe66b188a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C13",
+      "claim": "Inhibitory activity of the peptides correlates with Cdc20-binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that although inhibitory activity of the peptides correlates with Cdc20-binding affinity, degradation efficacy does not, which may be due to the complex nature of APC/C regulation and effects of degron binding of subunit recruitment and conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing binding affinity data (Tables 1 and 2) with ubiquitination inhibition data (Figure 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "bbc92415-c9c3-44c9-a330-8d7939eca7b5",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C14",
+      "claim": "Degradation efficacy of the peptides does not correlate with Cdc20-binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that although inhibitory activity of the peptides correlates with Cdc20-binding affinity, degradation efficacy does not, which may be due to the complex nature of APC/C regulation and effects of degron binding of subunit recruitment and conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from comparing binding affinity data with mNeon degradation data (Figure 8).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "0734834f-91c5-42c9-84b2-d63047dcf897",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C15",
+      "claim": "The lack of correlation between binding affinity and degradation efficacy may be due to the complex nature of APC/C regulation and effects of degron binding on subunit recruitment and conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that although inhibitory activity of the peptides correlates with Cdc20-binding affinity, degradation efficacy does not, which may be due to the complex nature of APC/C regulation and effects of degron binding of subunit recruitment and conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "fc4caca1-7ae0-456f-8719-39f6ec10688e",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C16",
+      "claim": "Degrons bind with rather weak affinities in the micromolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "E3 ubiquitin ligases recognise their substrates via short linear motifs (SLiMs) known as degrons on the substrates, which are often located in intrinsically disordered regions and bind with rather weak affinities (in the micromolar range) (Tompa and Fuxreiter, 2008; Min et al., 2013; Guharoy et al., 2016; Hein and Nilsson, 2014; Pierce et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations and is established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "756cd638-9672-4147-a42f-b3df592f6889",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C17",
+      "claim": "Recognition of the substrate by the proteasome depends on the number, type, and length of polyubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition of the substrate by the proteasome depends on the number, type, and length of polyubiquitin chains and requires poly-ubiquitination through multiple rounds of recruitment of a ubiquitin-loaded conjugating E2 enzyme (UbcH10 or Ube2S) to the substrate-bound E3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about proteasome-mediated degradation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "d21d7ad5-f2b6-4abe-a7c3-b3553b8cc5c4",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C18",
+      "claim": "Ubiquitination and degradation require poly-ubiquitination through multiple rounds of recruitment of a ubiquitin-loaded conjugating E2 enzyme (UbcH10 or Ube2S) to the substrate-bound E3.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition of the substrate by the proteasome depends on the number, type, and length of polyubiquitin chains and requires poly-ubiquitination through multiple rounds of recruitment of a ubiquitin-loaded conjugating E2 enzyme (UbcH10 or Ube2S) to the substrate-bound E3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ubiquitination process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "8f623c3e-d106-42ce-9b63-eee0612ae283",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C19",
+      "claim": "The anaphase-promoting complex/cyclosome (APC/C) controls progression of cells out of mitosis via the coordinated ubiquitination and degradation of over 100 different substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "There are numerous examples in which ubiquitination and degradation require the E3 to bind to multiple degrons on the substrate, a particularly striking case being the anaphase-promoting complex/cyclosome (APC/C), a giant multi-protein complex that controls progression of cells out of mitosis via the coordinated ubiquitination and degradation of over 100 different substrates (Karamysheva et al., 2009; Di Fiore et al., 2016; Tian et al., 2012; Okoye et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "0ce93102-652e-4a81-ba06-c909ffc3a6f4",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C20",
+      "claim": "APC/C function requires one of two coactivators, Cdc20 and Cdh1/FZR1.",
+      "claim_type": "EXPLICIT",
+      "source": "APC/C function requires one of two coactivators, Cdc20 and Cdh1/FZR1 (Min et al., 2013; Davey and Morgan, 2016; Bakos et al., 2018), which comprise a substrate-binding WD40 domain and N- and C-terminal disordered regions that bind to other APC/C subunits and lead to conformational change and enhanced E2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents established knowledge about APC/C structure and function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "62d885b5-d0ba-4ca8-8e3e-4f35f9dbecb3",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C21",
+      "claim": "Cdc20 and Cdh1/FZR1 comprise a substrate-binding WD40 domain and N- and C-terminal disordered regions that bind to other APC/C subunits and lead to conformational change and enhanced E2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "APC/C function requires one of two coactivators, Cdc20 and Cdh1/FZR1 (Min et al., 2013; Davey and Morgan, 2016; Bakos et al., 2018), which comprise a substrate-binding WD40 domain and N- and C-terminal disordered regions that bind to other APC/C subunits and lead to conformational change and enhanced E2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents established structural knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "796c916c-b87f-47e7-9d73-556d87cd1163",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C22",
+      "claim": "APC/CCdc20 activity is controlled by the mitotic checkpoint complex (MCC) that inhibits APC/C in the presence of faulty chromosome attachments to the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "APC/CCdc20 activity is further controlled by the mitotic checkpoint complex (MCC) that inhibits APC/C in the presence of faulty chromosome attachments to the mitotic spindle (Izawa and Pines, 2011; Di Fiore et al., 2016; Qiao et al., 2016; Alfieri et al., 2017; Watson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations and represents established knowledge about the spindle assembly checkpoint.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "9027e522-30ba-47ef-b0c7-a7fed638489a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C23",
+      "claim": "APC/CCdc20 activity reduces as cells exit mitosis, the coactivator is switched to Cdh1/FZR1, and APC/CFZR1 is active until the end of G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "APC/CCdc20 activity reduces as cells exit mitosis, the coactivator is switched to Cdh1/FZR1, and APC/CFZR1 is active until the end of G1 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cell cycle regulation by APC/C, also illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "1932463c-df8b-42db-b55c-6baa39dee785",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C24",
+      "claim": "The APC/C controls the order of substrate degradation via differential degron-binding affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to coactivator switching and post-translational modifications, the APC/C further controls the order of substrate degradation via differential degron-binding affinities (Davey and Morgan, 2016; Alfieri et al., 2017; Bodrug et al., 2021; Okoye et al., 2022), leading to different processivity of ubiquitination and chain linkages and thereby effective engagement of the proteasome, although the precise details of the relationship between APC/C-substrate interactions and the number, type, and length of polyubiquitin chains formed have not been fully resolved (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations and represents current understanding in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "fc06836d-feca-44fc-b10a-aa12dd2c4b64",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C25",
+      "claim": "Differential degron-binding affinities lead to different processivity of ubiquitination and chain linkages and thereby effective engagement of the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to coactivator switching and post-translational modifications, the APC/C further controls the order of substrate degradation via differential degron-binding affinities (Davey and Morgan, 2016; Alfieri et al., 2017; Bodrug et al., 2021; Okoye et al., 2022), leading to different processivity of ubiquitination and chain linkages and thereby effective engagement of the proteasome, although the precise details of the relationship between APC/C-substrate interactions and the number, type, and length of polyubiquitin chains formed have not been fully resolved (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents current understanding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "b885db51-df88-4c13-9949-92c0a3eb8420",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C26",
+      "claim": "The precise details of the relationship between APC/C-substrate interactions and the number, type, and length of polyubiquitin chains formed have not been fully resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to coactivator switching and post-translational modifications, the APC/C further controls the order of substrate degradation via differential degron-binding affinities (Davey and Morgan, 2016; Alfieri et al., 2017; Bodrug et al., 2021; Okoye et al., 2022), leading to different processivity of ubiquitination and chain linkages and thereby effective engagement of the proteasome, although the precise details of the relationship between APC/C-substrate interactions and the number, type, and length of polyubiquitin chains formed have not been fully resolved (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "21436715-d00a-42ca-a8c3-cd3ce1a8cc92",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C27",
+      "claim": "High-resolution structures of the APC/C and its complexes with substrates and E2s have provided tremendous insights into the mechanism of ubiquitination and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution structures of the APC/C and its complexes with substrates and E2s have provided tremendous insights into the mechanism of ubiquitination and degradation (Barford, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "45c20fc5-8c78-4697-bef9-99e7f8fd026a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C28",
+      "claim": "Coactivators Cdc20 and FZR1 have at least three binding sites for substrate degrons: the 'Destruction-box' (D-box), the KEN motif, and the ABBA motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Coactivators Cdc20 and FZR1 have at least three binding sites for substrate degrons: the 'Destruction-box' (D-box), the KEN motif, and the ABBA motif (thought to be required for Cyclin A degradation only; Qin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and is also illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "5110d309-5730-4d8f-8d0e-5bc77c58b56c",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C29",
+      "claim": "The ABBA motif is thought to be required for Cyclin A degradation only.",
+      "claim_type": "EXPLICIT",
+      "source": "Coactivators Cdc20 and FZR1 have at least three binding sites for substrate degrons: the 'Destruction-box' (D-box), the KEN motif, and the ABBA motif (thought to be required for Cyclin A degradation only; Qin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "cdd4b054-afd9-4f3f-8c6f-0d9bd891d357",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C30",
+      "claim": "All three of the Acm1 degrons can bind simultaneously to APC/C-FZR1.",
+      "claim_type": "EXPLICIT",
+      "source": "A study of the structure of APC/C-FZR1 in complex with its pseudo-substrate inhibitor Acm1 showed that all three of the Acm1 degrons can bind simultaneously (He et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "dc1d3489-b2f4-4c45-b00c-fac88b1ac4e6",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C31",
+      "claim": "The KEN motif is recognised by the 'top' surface of the WD40 beta-propeller domain of the co-activator.",
+      "claim_type": "EXPLICIT",
+      "source": "The KEN motif is recognised by the 'top' surface of the WD40 beta-propeller domain of the co-activator, and the ABBA motif binds to the 'side' of the beta-propeller at one of its blades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural studies and is illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "3f62ec01-c586-4c7f-9f08-5c848aca8a7a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C32",
+      "claim": "The ABBA motif binds to the 'side' of the beta-propeller at one of its blades.",
+      "claim_type": "EXPLICIT",
+      "source": "The KEN motif is recognised by the 'top' surface of the WD40 beta-propeller domain of the co-activator, and the ABBA motif binds to the 'side' of the beta-propeller at one of its blades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural studies and is illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "7c4c1fb2-cb4a-4e8a-97cc-24081130a98c",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C33",
+      "claim": "The D-box binding site comprises a cleft between two of the beta-propeller blades and the neighbouring APC/C subunit APC10.",
+      "claim_type": "EXPLICIT",
+      "source": "The D-box binding site comprises a cleft between two of the beta-propeller blades and the neighbouring APC/C subunit APC10, which is thought to result in stabilisation of the active complex (Burton and Tsakraklides, 2005; Buschhorn et al., 2011; da Fonseca et al., 2011; Chang et al., 2014; Matyskiela and Morgan, 2009; Qin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations and structural knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "12ed2e6a-2d00-4252-9693-68e4b9d91c04",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C34",
+      "claim": "The D-box binding site involving APC10 is thought to result in stabilisation of the active complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The D-box binding site comprises a cleft between two of the beta-propeller blades and the neighbouring APC/C subunit APC10, which is thought to result in stabilisation of the active complex (Burton and Tsakraklides, 2005; Buschhorn et al., 2011; da Fonseca et al., 2011; Chang et al., 2014; Matyskiela and Morgan, 2009; Qin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "1c8ca5c0-f245-4d84-880a-d64ef2558be5",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C35",
+      "claim": "Single-molecule studies have shed new insights into the key role of degron multivalency in enabling efficient substrate ubiquitination and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, single-molecule studies have shed new insights into the key role of degron multivalency in enabling efficient substrate ubiquitination and degradation (Hartooni et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "fef44204-f745-40c2-b499-54b1d2578bd9",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C36",
+      "claim": "Inhibitors of APC/CCdc20 activity represent an interesting therapeutic approach to target dividing cells in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitors of APC/CCdc20 activity represent an interesting therapeutic approach to target dividing cells in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the role of APC/CCdc20 in cell division.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "5dda31b8-e891-4564-9eec-55cd340477dc",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C37",
+      "claim": "It is challenging to inhibit APC/C given its large size (14 subunits) and the complex mechanisms that regulate its function.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the large size of the APC/C machine (14 subunits) and the complex mechanisms described above that regulate its function, it is not surprising that it is challenging to inhibit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural and mechanistic complexity of APC/C.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "23eb6f8e-d0ac-458a-b192-d70ac15d3fd3",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C38",
+      "claim": "Apcin and TAME are small-molecule inhibitors of APC/C.",
+      "claim_type": "EXPLICIT",
+      "source": "Apcin and TAME are recently identified small-molecule inhibitors, but they have limited activity and complicated output (Richeson et al., 2020; Sackton et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "cc677c57-4bce-453a-a4bc-bd0206008b30",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C39",
+      "claim": "Apcin and TAME have limited activity and complicated output.",
+      "claim_type": "EXPLICIT",
+      "source": "Apcin and TAME are recently identified small-molecule inhibitors, but they have limited activity and complicated output (Richeson et al., 2020; Sackton et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "05998021-80d9-41f3-9ea4-1304ad08da85",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C40",
+      "claim": "The KD of Apcin binding to Cdc20WD40 is 420\u00b150 nM as measured by SPR.",
+      "claim_type": "EXPLICIT",
+      "source": "The KD obtained by SPR was 420\u00b150 nM (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from SPR measurements presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "54f73cf3-3623-4b85-8ba5-be79fe548aa9",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C41",
+      "claim": "D1 peptide (GRAALSDITN) binds to Cdc20WD40 with a KD of 18.6 \u00b1 0.2 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "TSA and SPR showed that D1 binds to Cdc20WD40 with a weak affinity (KD = 18.6 \u00b1 0.2 \u00b5M) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from SPR measurements presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "31512bfe-81fb-4b96-85d8-b30c1c75f399",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C42",
+      "claim": "D2 peptide had no detectable affinity for Cdc20WD40 by TSA.",
+      "claim_type": "EXPLICIT",
+      "source": "D2 had no detectable affinity by TSA and, consequently, was not analysed by SPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation from TSA experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "636508f1-851b-409e-8c91-52647b8dda53",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C43",
+      "claim": "The apparent lack of D2 binding may be due to its low solubility in aqueous buffer rather than an inability to bind.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesised that the apparent lack of D2 binding may be due to its low solubility in aqueous buffer rather than an inability to bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors to explain the experimental observation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "ebbff347-9c62-4284-ac45-477d1623f966",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C44",
+      "claim": "The side chain of the amino acid at position 2 of the D-box is likely to be solvent exposed in the context of Cdc20WD40.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the Cdh1-Acm1 structure, the side chain of the amino acid at position 2 is likely to be solvent exposed in the context of Cdc20WD40 (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis of the Cdh1-Acm1 structure.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "23f1f934-dbbe-4508-89b8-c5ba581f13c9",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C45",
+      "claim": "D4 peptide with Ile7 had the highest affinity for Cdc20 (1.5-fold higher than D5 with Leu7; 19.6\u00b10.2 \u00b5M and 27\u00b11 \u00b5M respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "From the consensus sequence, we observed that substrate proteins have approximately equal frequency of Val, Leu, and Ile at position 7.Figure 3A Given the similar structural and physical properties of the three aliphatic side chains, we compared peptides with each of these three amino acids at position 7 and found that D4 with Ile7 had the highest affinity for Cdc20 (1.5-fold higher than D5 with Leu7; 19.6\u00b10.2 \u00b5M and 27\u00b11 \u00b5M respectively) (Table 1 and Figure 3\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from SPR measurements comparing different peptides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "a88afd81-e686-4357-98e9-9ac010734db5",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C46",
+      "claim": "D3 peptide with Val7 gave the weakest affinity, with a KD of 54.4\u00b10.7 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the shorter hydrocarbon chain of Val in D3 gave the weakest affinity, with a KD determined by SPR at 54.4\u00b10.7 \u00b5M (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from SPR measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "f1f715b1-e76c-4429-88b8-05d28d1767d1",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C47",
+      "claim": "Pro3 may form a favourable turn in the D-box peptide backbone to allow the side chain of Leu 4 to adopt its canonical pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of D-box degron binding, modelling of our D4 peptide to the Saccharomyces cerevisiae Cdh1 structure showed that Pro3 may form a favourable turn in the D-box peptide backbone to allow the side chain of Leu 4 to adopt its canonical pocket (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on molecular modeling and structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "3b85eadc-d9ce-4f5a-87a0-3e2b134019db",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C48",
+      "claim": "The side chain of Pro3 forms additional van der Waals contacts with Tyr207 of Cdc20 relative to alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that relative to alanine, the side chain of Pro3 forms additional van der Waals contacts with Tyr207 of Cdc20 (Tyr210 of Cdh1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis and modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "5470063f-df0c-4bc9-a98c-5d9b4882183c",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C49",
+      "claim": "D10 peptide (P3A mutation of D4) had a significantly reduced affinity of 70\u00b13 \u00b5M by SPR.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we synthesised D10, a derivative of D4 containing a P3A single point mutation. As expected, this mutation was significantly detrimental with an affinity of 70\u00b13 \u00b5M by SPR and in parallel a loss of thermal stabilisation by TSA (Figure 3B, Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from SPR and TSA measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "8e82e47a-b50f-4946-a4f7-0f01bd73d437",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C50",
+      "claim": "D19 peptide (A3P mutation of D1) resulted in a threefold increase in affinity (KD = 5.9 \u00b1 0.1 \u00b5M) compared with its parental sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon confirming our hypothesis, we synthesised a derivative of D1 containing the A3P point mutation, yielding D19 (RAPLSDITN). This substitution resulted in a threefold increase in affinity (KD = 5.9 \u00b1 0.1 \u00b5M) compared with its parental sequence (Figure 3\u2014figure supplement 1F, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from SPR measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "38bed22b-4415-4d1a-83db-c0a2816500ea",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C51",
+      "claim": "Incorporation of (S)\u20132-amino-4,4-dimethylpentanoic acid (C3) at position 4 increased the binding affinity over 6-fold versus the respective parental peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "We incorporated (S)\u20132-amino-4,4-dimethylpentanoic acid (C3) (Figure 4A) into the backbone sequences of D4, D10, and D19 replacing leucine at position 4, yielding peptides D7, D12, and D20, respectively (Table 2). As expected, the structure\u2013activity relationship (SAR) held true between all peptides, whereby incorporation of the unnatural amino acid increased the binding affinity over 6-fold versus the respective parental peptide (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from SPR measurements comparing peptides with and without the unnatural amino acid.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "959ede88-1d37-45fc-b4c9-3f23251732e7",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C52",
+      "claim": "D21 peptide with (S)\u20132-amino-4,4,4-trifluorobutanoic acid (F3) at position 4 has a KD of 520 \u00b1 10 nM, which is similar to that of Apcin.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on this success, we further explored the commercially available halogenated analog, (S)\u20132-amino-4,4,4-trifluorobutanoic acid (F3) (Figure 4A), leading to peptide D21 (Table 2). With the tri-fluorinated group, a further increase in binding affinity was achieved (KD = 520 \u00b1 10 nM), which is similar to that of Apcin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from SPR measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "febdaa0d-8b4c-48c7-b18a-f92164272648",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C53",
+      "claim": "The crystal structures of Cdc20WD40 in complex with D21, D20, and D7 show that they bound to Cdc20WD40 at the canonical D-box degron binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structures of Cdc20WD40 in complex with each of the other three D-box peptides (Figure 5A\u2013C, Figure 5\u2014figure supplement 1) show that they bound to Cdc20WD40 at the canonical D-box degron binding site, with a largely similar topology to the S. cerevisiae Acm1-Cdh1 structure (Figure 5D; overlay of D21 with Acm1 D-box).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on X-ray crystallography data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "edfc1724-0147-4d8b-88de-88cfe38ebbdc",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C54",
+      "claim": "The guanidino group of the P1 arginine residue of the D-box peptides forms hydrogen bonds with the carboxylate side chains of Asp177 and Glu465 of Cdc20WD40.",
+      "claim_type": "EXPLICIT",
+      "source": "The guanidino group of the P1 arginine residue of the D-box peptides forms hydrogen bonds with the carboxylate side chains of Asp177 and Glu465 of Cdc20WD40.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structures presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "aa304abc-edbe-4ba6-8863-911ab0d510b5",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C55",
+      "claim": "The nitrogen backbone atom of the unnatural amino acids forms a hydrogen bond with the carbonyl of Asp177.",
+      "claim_type": "EXPLICIT",
+      "source": "The nitrogen backbone atom of the (S)\u20132-amino-4,4,4-trifluorobutanoic acid/(S)\u20132-amino-4,4-dimethylpentanoic acid unnatural amino acids also forms a hydrogen bond with the carbonyl of Asp177.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "ca165e62-3a53-406e-9c8e-99d3e1965a16",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C56",
+      "claim": "The carbonyl of S5 belonging to D21/D20 forms a H-bond with the nitrogen backbone atom of Asp177.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the carbonyl of S5 belonging to D21/D20 forms a H-bond with the nitrogen backbone atom of Asp177.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "71b2ecd0-62ea-4b5e-b4ef-b208ee3bc80c",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C57",
+      "claim": "Asp6 forms inter-molecular H-bonds with Arg174.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, Asp6 forms inter-molecular H-bonds with Arg174.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "e520b63f-fa1c-4aaf-930b-00dfc64ba7cd",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C58",
+      "claim": "An intra-molecular H-bond exists between the carbonyl of A2 with the amine of Gly5/Ser5.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed an intra-molecular H-bond between the carbonyl of A2 with the amine of Gly5/Ser5, in addition to the carbonyl of A2 to the hydroxyl of Ser5 in D21/D20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structures presented in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "4de60cf7-849f-4c37-881c-d0334402a901",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C59",
+      "claim": "Crystal packing of an adjacent asymmetric unit of the WD40 domain likely occludes the assumed binding site for the C-terminal three residues (\u2026ITN-NH2).",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal packing of an adjacent asymmetric unit of the WD40 domain likely occludes the assumed binding site for the C-terminal three residues (\u2026ITN-NH2). We therefore conclude that this is the reason for the lack of observed density in this region of the peptides D20 and D21 (Figure 5\u2014figure supplement 1E and F, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from analysis of the crystal structures and packing.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "ab1ffdd1-d1d4-4c48-a5a7-84a225ec7674",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C60",
+      "claim": "The observed electron density of the peptide correlates with Cdc20 binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the observed electron density of the peptide correlates with Cdc20 binding affinity: D21 and D20, having the highest affinities, display the clearest electron density allowing six amino acids to be modelled, whereas D7 shows relatively poor density permitting modelling of only four residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from analysis of the crystal structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "9198a667-2f13-43a1-841e-4a9615789088",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C61",
+      "claim": "For D19, the lack of density observed likely reflects its intrinsically weaker affinity compared to the other peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "For D19, the lack of density observed likely reflects its intrinsically weaker affinity compared to the other peptides, in addition to losing the interactions from position 7 due to crystal packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the binding affinity data and structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "12aa2c4e-df12-4bbc-abfd-5fe3371c6405",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C62",
+      "claim": "D7, D20, and D21 peptides at 100 \u00b5M resulted in increases in the thermal stability of Cdc20 that correlated with their binding affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "We then explored whether the D-box peptides at a fixed concentration stabilise the Cdc20, and for D7, D20, and D21 we observed increases in the thermal stability of Cdc20 that correlated with their binding affinities as previously determined (Figure 6, Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from CETSA experiments presented in Figure 6 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "2fb5aef1-038b-4719-8411-c580122ebbe5",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C63",
+      "claim": "The lowest-affinity peptide, D19, did not result in a significant thermal stabilisation of Cdc20.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest-affinity peptide, D19, did not result in a significant thermal stabilisation of Cdc20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from CETSA experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "922c47d0-a18d-48c3-a7e6-bd4fce4a9bc0",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C64",
+      "claim": "D21 and D20 peptides are more potent inhibitors of Cyclin B1 ubiquitination compared with Apcin at the same concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We next assessed whether D21 and D20, the two highest affinity peptides, are able to inhibit APC/CCdc20 activity. In the context of Cyclin B1 ubiquitination, we found that both peptides are more potent inhibitors compared with Apcin at the same concentration despite having slightly lower Cdc20-binding affinities than Apcin (Figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from in vitro ubiquitination assays presented in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "e04c5b51-c7c9-4aa7-aac2-e9a5e2b5ec9f",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C65",
+      "claim": "The D-box peptides, but not Apcin, would also contact APC10 in the context of the APC/CCdc20 complex, thereby increasing their affinity for the APC/C-coactivator complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the context of the APC/CCdc20 complex, the D-box peptides, but not Apcin, would also contact APC10, thereby increasing their affinity for the APC/C-coactivator complex and explaining their greater inhibitory potency relative to Apcin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural knowledge and explains the observed experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "3cd966e3-8cf7-4002-a5e3-ffc1c8cd889a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C66",
+      "claim": "All four new D-box variants tested (D1, D2, D3, and D19) could target mNeon for degradation, with timing consistent with targeting by APC/CCdc20.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all four new D-box variants tested could target mNeon for degradation, with timing consistent with targeting by APC/CCdc20 (Figure 8B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from live cell degradation assays presented in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "61c4e844-664f-4846-bf87-90e4f3643ff1",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C67",
+      "claim": "D2 and D3 showed increased rates of mNeon degradation compared to D1 and D19.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted that the higher affinity D-box peptides from the in vitro assays (D1 and D19) would mediate increased rates and extent of degradation compared to the lower affinity peptides (D2 and D3). However, we found the opposite effect: D2 and D3 showed increased rates of mNeon degradation compared to D1 and D19 (Figure 8C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from live cell degradation assays presented in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "8b5f22ef-8d8b-4725-8e67-3cf8a71b5587",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C68",
+      "claim": "Affinity of degron binding does not necessarily correlate with efficiency of degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with conclusions from other studies that affinity of degron binding does not necessarily correlate with efficiency of degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and supported by other studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "10d867e8-cde1-4370-86aa-6c70d0046a9c",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C69",
+      "claim": "Mutation of the high-affinity D-box in Acm1 converts it from inhibitor to substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies of a yeast 'pseudo-substrate' inhibitor Acm1 have shown that mutation of the high-affinity D-box in Acm1 converts it from inhibitor to substrate (Choi et al., 2008; Enquist-Newman et al., 2008; Burton et al., 2011) through a mechanism that governs recruitment of APC10 (Qin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "d26b0eea-4919-4ff2-b0f7-6850cdf7986a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C70",
+      "claim": "There is strong cooperativity provided by APC10 interaction with D-box peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study does not consider the contribution of APC10 to binding of our peptides to APC/CCdc20 complex, but since there is strong cooperativity provided by this additional interaction (Hartooni et al., 2022) we propose this as the critical factor in determining the ability of the different peptides to mediate degradation of mNeon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "803e8f89-d8fc-4dc3-a49c-6c2ded013270",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C71",
+      "claim": "APC10 interaction is proposed as the critical factor in determining the ability of the different peptides to mediate degradation of mNeon.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study does not consider the contribution of APC10 to binding of our peptides to APC/CCdc20 complex, but since there is strong cooperativity provided by this additional interaction (Hartooni et al., 2022) we propose this as the critical factor in determining the ability of the different peptides to mediate degradation of mNeon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on the experimental observations and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "d48b864c-5bfc-4951-aa9b-c82206ae8935",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C72",
+      "claim": "Degradation of all 15 substrates of yeast APC/C tested depended on D-box binding.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the clearest examples is a study that tested the degradation of 15 substrates of yeast APC/C in strains carrying alleles of Cdh1 in which the docking sites for D-box, KEN, or ABBA were mutated (Qin et al., 2017). The authors observed that, whereas degradation of all 15 substrates depended on D-box binding, only a subset required the KEN binding site on Cdh1 and only one required the ABBA binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study by Qin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "898a5cb8-92a7-4701-a914-76cd7a86acd8",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C73",
+      "claim": "Only a subset of yeast APC/C substrates required the KEN binding site on Cdh1.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the clearest examples is a study that tested the degradation of 15 substrates of yeast APC/C in strains carrying alleles of Cdh1 in which the docking sites for D-box, KEN, or ABBA were mutated (Qin et al., 2017). The authors observed that, whereas degradation of all 15 substrates depended on D-box binding, only a subset required the KEN binding site on Cdh1 and only one required the ABBA binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study by Qin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "4dce448d-75af-476c-bd66-a523747263ec",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C74",
+      "claim": "Only one yeast APC/C substrate required the ABBA binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the clearest examples is a study that tested the degradation of 15 substrates of yeast APC/C in strains carrying alleles of Cdh1 in which the docking sites for D-box, KEN, or ABBA were mutated (Qin et al., 2017). The authors observed that, whereas degradation of all 15 substrates depended on D-box binding, only a subset required the KEN binding site on Cdh1 and only one required the ABBA binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study by Qin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "c600f6a7-84c0-4e23-899f-32f3de59ce31",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C75",
+      "claim": "KEN motif has very low affinity for Cdc20 and is unlikely to mediate degradation of APC/C-Cdc20 substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent study (Hartooni et al., 2022) of binding affinities of different degron peptides concluded that KEN motif has very low affinity for Cdc20 and is unlikely to mediate degradation of APC/C-Cdc20 substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study by Hartooni et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "1f1b59aa-983e-4463-97d4-08b812715f4c",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C76",
+      "claim": "Engagement of substrate with the D-box receptor is the most critical event mediating APC/C activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Engagement of substrate with the D-box receptor is therefore the most critical event mediating APC/C activity and the interaction that needs to be blocked for most effective inhibition of substrate degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited studies showing the importance of D-box binding.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "1d7840a3-e515-451e-ab5a-8192a8317446",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C77",
+      "claim": "There are three key residues in the RxxLxxxxN D-box motif: Arginine 1, Leucine 4, and Asparagine 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of the D-box-coactivator interactions (Chao et al., 2012; He et al., 2013) show that there are three key residues, Arginine 1, Leucine 4, and Asparagine 9 in the RxxLxxxxN D-box motif (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies and is illustrated in Figure 3A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "cd8d9300-886b-4e3e-a12b-090bdbc19ed3",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C78",
+      "claim": "Leucine 4 of the D-box contacts a hydrophobic pocket in the co-activator subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Leucine 4 contacts a hydrophobic pocket in the co-activator subunit, whereas the 'tail' of the D-box degron and its flanking sequence (residues 8\u201312) contact the APC10 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural studies cited and illustrated in Figure 3A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "2517dfca-7dd1-4b44-b315-108017ec90cc",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C79",
+      "claim": "The 'tail' of the D-box degron and its flanking sequence (residues 8\u201312) contact the APC10 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Leucine 4 contacts a hydrophobic pocket in the co-activator subunit, whereas the 'tail' of the D-box degron and its flanking sequence (residues 8\u201312) contact the APC10 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "4358279d-4480-4b28-b178-182e911cdb55",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C80",
+      "claim": "Substrate proteins have approximately equal frequency of Val, Leu, and Ile at position 7 of the D-box.",
+      "claim_type": "EXPLICIT",
+      "source": "From the consensus sequence, we observed that substrate proteins have approximately equal frequency of Val, Leu, and Ile at position 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of consensus sequences from known substrates.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "ef55445b-98f2-49c8-8eb1-3db916cbf760",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C81",
+      "claim": "Pro and Ala appear in approximately equal distribution to each other at position 3 among known substrate proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We next investigated the contribution of proline versus alanine at position 3 (Table 1). Like the position 7 residues, Pro and Ala appear in approximately equal distribution to each other among known substrate proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of consensus sequences from known substrates.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "2179b858-0068-41f4-bec6-f24053c3fa2d",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C82",
+      "claim": "The aliphatic residue at P7 of the D-box interacts with Val178 of Cdh1 and would be predicted to contact the conserved Ile175 of Cdc20.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent 2.9 \u00c5 cryo-EM structure of the APC/CCdh1.Emi1 complex showed that the aliphatic residue at P7 interacts with Val178 of Cdh1 and would be predicted to contact the conserved Ile175 of Cdc20 (H\u00f6fler et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent cryo-EM structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "96480b99-908c-4637-ae95-f2a5c0072bc6",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C83",
+      "claim": "This non-polar interaction between coactivator and D-box explains the observation that modifying the size of the aliphatic residue at P7 optimises D-box-Cdc20 affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "This non-polar interaction between coactivator and D-box explains our observation that modifying the size of the aliphatic residue at P7 optimises D-box-Cdc20 affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural information and the experimental binding data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "6ff48482-f0f7-417d-bfdc-2107d8a79044",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C84",
+      "claim": "Residues P8 and P9 of the D-box do not contact the coactivator but instead interact with APC10.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues P8 and P9 of the D-box do not contact the coactivator but instead interact with APC10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural knowledge cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "212661ea-f59d-4bfc-9098-0a8c86d31b4d",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C85",
+      "claim": "Residues C-terminal of the D-box sequence in Acm1, the 'D-Box Extension' DBE motif, have the potential to inhibit reaction processivity by influencing the conformation of APC10.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have shown that residues C-terminal of the D-box sequence in Acm1, the 'D-Box Extension' DBE motif, have the potential to inhibit reaction processivity by influencing the conformation of APC10 (Qin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "66e2e7e5-c9f1-4ac4-ac1e-8e9e4b563c44",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C86",
+      "claim": "Future directions could involve enhancing potency through avidity by incorporating multiple degrons into molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Future directions could involve enhancing potency through avidity by incorporating multiple degrons into our molecules and additions to the D-box core sequence to include motifs that engage other components of the APC/C machinery \u2013 namely APC10 and the E2 \u2013 thereby not only blocking substrate binding more effectively but also better impeding ubiquitination activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed future direction based on the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "e966b1cf-3503-4093-83a8-cf606afdfe5d",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "claim_id": "C87",
+      "claim": "The results have implications for the design of small-molecule and peptide-based degraders that harness the APC/C.",
+      "claim_type": "EXPLICIT",
+      "source": "The results also have implications for the design of small-molecule and peptide-based degraders that harness the APC/C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings about D-box peptides functioning as portable degrons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "615da0e6-6330-4951-94e9-a82332a9a40d",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Apcin binds to Cdc20WD40 with a KD of 420\u00b150 nM as measured by SPR, and binding was confirmed by thermal shift assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C7 provide direct experimental evidence from SPR and TSA measurements (Figure 2) demonstrating Apcin binding to purified Cdc20WD40. The KD value is clearly reported with error estimates from replicate measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Initial D-box peptides D1 and D2 were tested for Cdc20 binding, with D1 showing weak affinity (KD = 18.6\u00b10.2 \u00b5M) and D2 showing no detectable binding. Systematic variation of position 7 (Val, Leu, Ile) showed that Ile7 (D4) had highest affinity, while position 3 Pro vs Ala was also investigated based on consensus sequence analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 and C80-C81 are supported by experimental SPR and TSA data presented in Table 1 and Figure 3. The consensus sequence analysis justifying the choice of positions to vary is described, and binding affinities are measured with appropriate replicates and error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "3776f1cf-aafd-496a-8bf6-b505e2228193",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Proline at position 3 of the D-box peptide is critical for binding affinity. Molecular modeling suggested Pro3 forms a favorable backbone turn and additional van der Waals contacts with Tyr207. The P3A mutation (D10) reduced affinity ~3.5-fold, while the A3P mutation (D19) increased affinity ~3-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by molecular modeling (C47, C48) and experimental SPR/TSA data (C49, C50) presented in Table 1 and Figure 3. The hypothesis-driven mutagenesis approach and resulting affinity changes provide strong evidence for the importance of Pro3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "f0df53e4-d449-459a-8492-d12009b0a42c",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Incorporation of unnatural amino acids at position 4 significantly enhanced binding affinity. (S)-2-amino-4,4-dimethylpentanoic acid (C3) increased affinity >6-fold, while (S)-2-amino-4,4,4-trifluorobutanoic acid (F3) in peptide D21 achieved KD = 520\u00b110 nM, similar to Apcin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, and C6 are strongly supported by SPR and TSA data in Table 2 and Figure 4. The rational design approach targeting the hydrophobic pocket with unnatural amino acids successfully achieved high-affinity binders with well-characterized binding constants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Crystal structures of Cdc20WD40 in complex with D21, D20, and D7 peptides were determined, revealing binding at the canonical D-box site with specific hydrogen bonding patterns involving Arg1, the unnatural amino acids at position 4, and other peptide residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 and C8 are supported by X-ray crystallography data presented in Figure 5 and Supplementary file 1A. The structures clearly show the binding mode and specific interactions, though crystal packing effects limited observation of C-terminal residues (C59).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "1a18cb6a-f5b0-4702-bf7f-90b7b90656a4",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Crystal packing effects occluded the C-terminal binding site, explaining lack of electron density for residues 8-10. Electron density quality correlated with binding affinity, with highest-affinity peptides D21 and D20 showing clearest density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide reasonable structural interpretations of the crystallographic data. The correlation between electron density quality and binding affinity (C60) is an appropriate observation, and the crystal packing explanation (C59) is well-justified by structural analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "0fb64af0-830e-481b-90c9-0e785b168f40",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "D-box peptides bind to and stabilize Cdc20 in cells as demonstrated by CETSA. Peptides D7, D20, and D21 showed thermal stabilization correlating with their in vitro binding affinities, while the lowest-affinity peptide D19 showed no significant stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C63, and C9 are supported by CETSA data in Figure 6 and Table 3. The correlation between in vitro binding affinity and cellular thermal stabilization provides strong evidence for target engagement in cells. Appropriate controls and replicates are included.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "92167e0b-43c8-4bd0-936b-4a9c41ddb6d6",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "D-box peptides D21 and D20 inhibit APC/CCdc20-mediated ubiquitination of Cyclin B1 more potently than Apcin at equivalent concentrations, despite having slightly lower Cdc20-binding affinities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C11, and C10 are supported by in vitro ubiquitination assay data in Figure 7. The concentration-dependent inhibition is clearly demonstrated, and the comparison with Apcin is direct and appropriate. The result is significant for demonstrating functional inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "7767a3a9-a575-44b6-9884-eb9359b742d1",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The greater inhibitory potency of D-box peptides compared to Apcin is explained by additional contacts with APC10 subunit in the context of the full APC/CCdc20 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 provides a mechanistically sound explanation for the observed greater potency of peptides vs Apcin (C64). This is based on established structural knowledge about D-box interactions with both Cdc20 and APC10, making it a well-supported inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "f8c56c27-3466-4b2b-8d50-e2e3de90f252",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "All four D-box variants (D1, D2, D3, D19) functioned as portable degrons driving mNeon degradation with APC/CCdc20 timing. Unexpectedly, lower-affinity peptides D2 and D3 showed faster degradation than higher-affinity peptides D1 and D19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C67, and C12 are supported by live cell degradation assays in Figure 8. The data clearly show all variants mediate degradation, and the inverse correlation between binding affinity and degradation rate is well-documented with appropriate statistical analysis (Figure 8D).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "67edadb8-b8ca-4351-b987-46e4141a515a",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Inhibitory activity of peptides correlates with Cdc20-binding affinity, but degradation efficacy does not, consistent with other studies showing affinity and degradation efficiency are not directly correlated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C14, and C68 accurately summarize the key finding that binding affinity predicts inhibitory activity (Figure 7) but not degradation efficiency (Figure 8). This is supported by comparing data across multiple figures and is consistent with cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "504a5c58-260f-4cfc-b858-df1ee50f7a97",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The lack of correlation between binding affinity and degradation efficacy may be due to complex APC/C regulation, with APC10 interaction proposed as a critical factor. This is supported by studies showing D-box mutations in Acm1 convert it from inhibitor to substrate through APC10 recruitment mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C15 and C71 are speculative explanations (marked as SPECULATION/INFERENCE) for the observed data. While C70, C69, and C85 provide supporting citations, the authors explicitly state their study does not measure APC10 contributions. The hypothesis is reasonable but requires additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "e520e7f4-6694-4fde-b6bb-4019518b72f8",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Literature evidence establishes that D-box binding is the most critical degron interaction for APC/C substrates. Studies show all 15 tested yeast substrates required D-box binding, while KEN and ABBA motifs were less universally required, and KEN has very low affinity for Cdc20.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 accurately represent cited literature (Qin et al., 2017; Hartooni et al., 2022) establishing the primacy of D-box interactions. These claims provide important context for focusing on D-box peptides as inhibitors and are appropriately supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "7607a14c-1cc8-4610-9971-275026dbaabe",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Recent structural data shows the aliphatic residue at position 7 of the D-box interacts with Val178 of Cdh1 (predicted Ile175 of Cdc20), explaining why modifying this residue optimizes binding affinity. Positions 8-9 interact with APC10 rather than the coactivator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 appropriately integrate recent structural data (H\u00f6fler et al., 2024) with the experimental binding data from this study. The structural explanation for position 7 effects (C83) is a reasonable inference connecting structure to the observed SAR.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "65b939f7-0802-4c72-9151-a7968343479f",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge about E3 ubiquitin ligases, APC/C structure and function, degron recognition, and the rationale for targeting Cdc20 as an anti-cancer approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C39 and C77-C79 represent established knowledge about ubiquitin biology, APC/C structure/function, and degron recognition mechanisms. These are appropriately supported by multiple citations throughout and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "c1582cb0-4603-4638-a3c8-cf479b57d05b",
+      "content_id": "aa919657-c5a8-435e-b70a-780e04d807a8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Future directions include enhancing potency through multivalent degron incorporation and engaging APC10/E2, with implications for both APC/C inhibitors and degrader design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C87 represent reasonable future directions based on the current findings. These are appropriately speculative statements about potential applications and extensions of the work, clearly marked as future work rather than current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "ed6404bb-eb25-48c0-90be-fe819f2aca74",
+      "content_id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors used a rational design approach to develop D-box peptides with varying affinities for Cdc20, testing natural amino acid variants at positions 3 and 7. They confirmed binding by thermal-shift assays (TSA) and surface plasmon resonance (SPR), identifying peptides with affinities ranging from 18.6 \u00b5M (D1) to 54.4 \u00b5M (D3), with proline at position 3 and isoleucine at position 7 providing optimal binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers described the investigation as 'comprehensive and well-executed' and noted that 'the characterization of new peptide-like ligands is generally solid and multifaceted, including binding assays.' The editor affirmed the work is 'supported by compelling biophysical and cellular evidence,' indicating acceptance of the binding data and rational design approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9",
+      "content_id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors incorporated unnatural amino acids at position 4 of the D-box peptides, achieving >6-fold affinity improvements with (S)-2-amino-4,4-dimethylpentanoic acid (C3) and reaching nanomolar affinity (520 nM) with (S)-2-amino-4,4,4-trifluorobutanoic acid (F3) in peptide D21. Crystal structures of Cdc20-peptide complexes confirmed canonical D-box binding site engagement with detailed hydrogen bonding networks, and electron density quality correlated with binding affinity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praised the structural work, noting 'verified binding modes by elucidating the Cdc-20-peptide structures' and describing the characterization as 'solid and multifaceted, including...X-ray crystallography.' The editor emphasized 'compelling biophysical and cellular evidence,' affirming acceptance of both the unnatural amino acid strategy and structural validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "d1f48b7b-cf14-4215-997a-79bbfd8b16c0",
+      "content_id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrated that D-box peptides bind to and stabilize Cdc20 in cells using cellular thermal shift assay (CETSA). Peptides D7, D20, and D21 at 100 \u00b5M showed thermal stabilization that correlated with their in vitro binding affinities, while the lowest-affinity peptide D19 did not produce significant stabilization.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers noted the characterization included 'thermal stability enhancement in vitro and in cells' as part of the 'multifaceted' approach. The editor confirmed the study is 'supported by compelling biophysical and cellular evidence,' indicating acceptance of the CETSA data demonstrating cellular engagement.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "fdc173e1-7e04-4fb8-9fd5-0bf82a7b6ac1",
+      "content_id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors showed that D-box peptides D20 and D21 inhibit APC/C^Cdc20 ubiquitination activity in vitro and are more potent than the small-molecule inhibitor Apcin at the same concentration, despite having slightly lower Cdc20-binding affinities. They propose this enhanced potency results from additional contacts with APC10 that the peptides make but Apcin does not.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers described the work as providing 'groundwork for the development of peptide drug modalities to inhibit degradation' and noted the characterization included 'degradation assays.' The editor affirmed the study 'lays a strong foundation for future developments in degron-based therapeutics,' indicating acceptance of the inhibition data and comparison with Apcin.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "c84727aa-15d4-4390-9117-9a17499719e5",
+      "content_id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors demonstrated that D-box peptides function as portable degrons capable of driving degradation of fused mNeon fluorescent protein in cells. Unexpectedly, lower-affinity peptides (D2, D3) showed faster degradation than higher-affinity peptides (D1, D19), contrary to predictions. The authors propose APC10 interaction as the critical factor determining degradation efficiency, explaining the lack of correlation between Cdc20-binding affinity and degradation efficacy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly noted the authors 'demonstrated that these peptides could be used as portable degron motifs that drive the degradation of a fused fluorescent protein' and described this as 'impactful.' The editor emphasized the work provides 'a robust framework for developing tools to manipulate protein degradation,' indicating acceptance of both the degradation data and the mechanistic interpretation regarding APC10's role.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "9668b5c0-f0bb-417d-92a4-b5a36456a629",
+      "content_id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors found that while inhibitory activity of the peptides correlates with Cdc20-binding affinity, degradation efficacy does not. They propose this discrepancy may be due to the complex nature of APC/C regulation and effects of degron binding on subunit recruitment and conformational changes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged the observation that 'affinity of degron binding does not necessarily correlate with efficiency of degradation' and noted this is 'consistent with conclusions from other studies.' The editor's statement that the work was 'strengthened by additional clarifications' suggests acceptance of this finding and its interpretation, though the mechanistic explanation remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "07a8944a-6ee9-4c23-b17c-5972401c800f",
+      "content_id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The manuscript provides extensive background on E3 ubiquitin ligases, degrons, APC/C structure and function, cell cycle regulation, degron-binding sites, and the importance of D-box binding for substrate degradation. This includes established knowledge about APC/C's 14-subunit structure, coactivators Cdc20 and Cdh1/FZR1, multiple degron-binding sites (D-box, KEN, ABBA), and the critical role of D-box engagement in mediating APC/C activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers made no objections to the background information and contextual claims. The editor noted the manuscript 'will be of broad interest to researchers in protein engineering, cell cycle regulation, and targeted protein degradation,' implicitly affirming the accuracy and relevance of the background material. These claims represent established knowledge appropriately cited throughout.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "530cdac7-ff4c-4b3e-bdf7-0055422b6021",
+      "content_id": "7548cbae-e922-41ad-ae7d-8fea5fcefdac",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose future directions including enhancing potency through avidity by incorporating multiple degrons and additions to engage APC10 and E2 components. They suggest the results have implications for designing small-molecule and peptide-based degraders that harness the APC/C.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers emphasized the work 'provided the groundwork for the development of peptide drug modalities' and serves as 'new starting points for blocking APC/C in the context of cancer, as well as manipulating APC/C for targeted protein degradation therapeutic approaches.' The editor stated the study 'lays a strong foundation for future developments in degron-based therapeutics,' affirming the proposed implications and future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05998021-80d9-41f3-9ea4-1304ad08da85",
+      "result_id": "615da0e6-6330-4951-94e9-a82332a9a40d"
+    },
+    {
+      "claim_id": "3adf3367-e319-4f04-9a88-b375965ad46a",
+      "result_id": "615da0e6-6330-4951-94e9-a82332a9a40d"
+    },
+    {
+      "claim_id": "54f73cf3-3623-4b85-8ba5-be79fe548aa9",
+      "result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f"
+    },
+    {
+      "claim_id": "31512bfe-81fb-4b96-85d8-b30c1c75f399",
+      "result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f"
+    },
+    {
+      "claim_id": "636508f1-851b-409e-8c91-52647b8dda53",
+      "result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f"
+    },
+    {
+      "claim_id": "ebbff347-9c62-4284-ac45-477d1623f966",
+      "result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f"
+    },
+    {
+      "claim_id": "23f1f934-dbbe-4508-89b8-c5ba581f13c9",
+      "result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f"
+    },
+    {
+      "claim_id": "a88afd81-e686-4357-98e9-9ac010734db5",
+      "result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f"
+    },
+    {
+      "claim_id": "4358279d-4480-4b28-b178-182e911cdb55",
+      "result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f"
+    },
+    {
+      "claim_id": "ef55445b-98f2-49c8-8eb1-3db916cbf760",
+      "result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f"
+    },
+    {
+      "claim_id": "f1f715b1-e76c-4429-88b8-05d28d1767d1",
+      "result_id": "3776f1cf-aafd-496a-8bf6-b505e2228193"
+    },
+    {
+      "claim_id": "3b85eadc-d9ce-4f5a-87a0-3e2b134019db",
+      "result_id": "3776f1cf-aafd-496a-8bf6-b505e2228193"
+    },
+    {
+      "claim_id": "5470063f-df0c-4bc9-a98c-5d9b4882183c",
+      "result_id": "3776f1cf-aafd-496a-8bf6-b505e2228193"
+    },
+    {
+      "claim_id": "8e82e47a-b50f-4946-a4f7-0f01bd73d437",
+      "result_id": "3776f1cf-aafd-496a-8bf6-b505e2228193"
+    },
+    {
+      "claim_id": "38bed22b-4415-4d1a-83db-c0a2816500ea",
+      "result_id": "f0df53e4-d449-459a-8492-d12009b0a42c"
+    },
+    {
+      "claim_id": "959ede88-1d37-45fc-b4c9-3f23251732e7",
+      "result_id": "f0df53e4-d449-459a-8492-d12009b0a42c"
+    },
+    {
+      "claim_id": "646f0803-8aea-4f04-85f1-091619544eb3",
+      "result_id": "f0df53e4-d449-459a-8492-d12009b0a42c"
+    },
+    {
+      "claim_id": "febdaa0d-8b4c-48c7-b18a-f92164272648",
+      "result_id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d"
+    },
+    {
+      "claim_id": "edfc1724-0147-4d8b-88de-88cfe38ebbdc",
+      "result_id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d"
+    },
+    {
+      "claim_id": "aa304abc-edbe-4ba6-8863-911ab0d510b5",
+      "result_id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d"
+    },
+    {
+      "claim_id": "ca165e62-3a53-406e-9c8e-99d3e1965a16",
+      "result_id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d"
+    },
+    {
+      "claim_id": "71b2ecd0-62ea-4b5e-b4ef-b208ee3bc80c",
+      "result_id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d"
+    },
+    {
+      "claim_id": "e520b63f-fa1c-4aaf-930b-00dfc64ba7cd",
+      "result_id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d"
+    },
+    {
+      "claim_id": "caea0ab3-f68a-44a7-9979-5740998a15b8",
+      "result_id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d"
+    },
+    {
+      "claim_id": "4de60cf7-849f-4c37-881c-d0334402a901",
+      "result_id": "1a18cb6a-f5b0-4702-bf7f-90b7b90656a4"
+    },
+    {
+      "claim_id": "ab1ffdd1-d1d4-4c48-a5a7-84a225ec7674",
+      "result_id": "1a18cb6a-f5b0-4702-bf7f-90b7b90656a4"
+    },
+    {
+      "claim_id": "9198a667-2f13-43a1-841e-4a9615789088",
+      "result_id": "1a18cb6a-f5b0-4702-bf7f-90b7b90656a4"
+    },
+    {
+      "claim_id": "12aa2c4e-df12-4bbc-abfd-5fe3371c6405",
+      "result_id": "0fb64af0-830e-481b-90c9-0e785b168f40"
+    },
+    {
+      "claim_id": "2fb5aef1-038b-4719-8411-c580122ebbe5",
+      "result_id": "0fb64af0-830e-481b-90c9-0e785b168f40"
+    },
+    {
+      "claim_id": "e5f03871-f5ff-4183-a5d0-f96e61a99c06",
+      "result_id": "0fb64af0-830e-481b-90c9-0e785b168f40"
+    },
+    {
+      "claim_id": "922c47d0-a18d-48c3-a7e6-bd4fce4a9bc0",
+      "result_id": "92167e0b-43c8-4bd0-936b-4a9c41ddb6d6"
+    },
+    {
+      "claim_id": "9c112cee-ad35-4519-add2-8631f88dcad6",
+      "result_id": "92167e0b-43c8-4bd0-936b-4a9c41ddb6d6"
+    },
+    {
+      "claim_id": "ab115b61-c8b2-4548-9b3e-f19f61d38d3a",
+      "result_id": "92167e0b-43c8-4bd0-936b-4a9c41ddb6d6"
+    },
+    {
+      "claim_id": "e04c5b51-c7c9-4aa7-aac2-e9a5e2b5ec9f",
+      "result_id": "7767a3a9-a575-44b6-9884-eb9359b742d1"
+    },
+    {
+      "claim_id": "3cd966e3-8cf7-4002-a5e3-ffc1c8cd889a",
+      "result_id": "f8c56c27-3466-4b2b-8d50-e2e3de90f252"
+    },
+    {
+      "claim_id": "61c4e844-664f-4846-bf87-90e4f3643ff1",
+      "result_id": "f8c56c27-3466-4b2b-8d50-e2e3de90f252"
+    },
+    {
+      "claim_id": "b6d83560-1495-4faa-b2e8-7da17e5fe400",
+      "result_id": "f8c56c27-3466-4b2b-8d50-e2e3de90f252"
+    },
+    {
+      "claim_id": "b0176e57-95bd-44dd-895a-52fbe66b188a",
+      "result_id": "67edadb8-b8ca-4351-b987-46e4141a515a"
+    },
+    {
+      "claim_id": "bbc92415-c9c3-44c9-a330-8d7939eca7b5",
+      "result_id": "67edadb8-b8ca-4351-b987-46e4141a515a"
+    },
+    {
+      "claim_id": "8b5f22ef-8d8b-4725-8e67-3cf8a71b5587",
+      "result_id": "67edadb8-b8ca-4351-b987-46e4141a515a"
+    },
+    {
+      "claim_id": "0734834f-91c5-42c9-84b2-d63047dcf897",
+      "result_id": "504a5c58-260f-4cfc-b858-df1ee50f7a97"
+    },
+    {
+      "claim_id": "803e8f89-d8fc-4dc3-a49c-6c2ded013270",
+      "result_id": "504a5c58-260f-4cfc-b858-df1ee50f7a97"
+    },
+    {
+      "claim_id": "d26b0eea-4919-4ff2-b0f7-6850cdf7986a",
+      "result_id": "504a5c58-260f-4cfc-b858-df1ee50f7a97"
+    },
+    {
+      "claim_id": "10d867e8-cde1-4370-86aa-6c70d0046a9c",
+      "result_id": "504a5c58-260f-4cfc-b858-df1ee50f7a97"
+    },
+    {
+      "claim_id": "212661ea-f59d-4bfc-9098-0a8c86d31b4d",
+      "result_id": "504a5c58-260f-4cfc-b858-df1ee50f7a97"
+    },
+    {
+      "claim_id": "d48b864c-5bfc-4951-aa9b-c82206ae8935",
+      "result_id": "e520e7f4-6694-4fde-b6bb-4019518b72f8"
+    },
+    {
+      "claim_id": "898a5cb8-92a7-4701-a914-76cd7a86acd8",
+      "result_id": "e520e7f4-6694-4fde-b6bb-4019518b72f8"
+    },
+    {
+      "claim_id": "4dce448d-75af-476c-bd66-a523747263ec",
+      "result_id": "e520e7f4-6694-4fde-b6bb-4019518b72f8"
+    },
+    {
+      "claim_id": "c600f6a7-84c0-4e23-899f-32f3de59ce31",
+      "result_id": "e520e7f4-6694-4fde-b6bb-4019518b72f8"
+    },
+    {
+      "claim_id": "1f1b59aa-983e-4463-97d4-08b812715f4c",
+      "result_id": "e520e7f4-6694-4fde-b6bb-4019518b72f8"
+    },
+    {
+      "claim_id": "2179b858-0068-41f4-bec6-f24053c3fa2d",
+      "result_id": "7607a14c-1cc8-4610-9971-275026dbaabe"
+    },
+    {
+      "claim_id": "96480b99-908c-4637-ae95-f2a5c0072bc6",
+      "result_id": "7607a14c-1cc8-4610-9971-275026dbaabe"
+    },
+    {
+      "claim_id": "6ff48482-f0f7-417d-bfdc-2107d8a79044",
+      "result_id": "7607a14c-1cc8-4610-9971-275026dbaabe"
+    },
+    {
+      "claim_id": "fe7a58c0-2135-4601-bbc1-f0ee28fe3d69",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "aa1b8e4a-4ef8-4dc8-90db-5488ae7c5f1b",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "761dd188-9dd3-4c44-b7d4-3e2423e867d5",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "2e4d46b2-f8f3-4acf-97de-bfe5ce407c7e",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "a1e7dc9e-c003-42f3-b16d-c62da31f5177",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "fc4caca1-7ae0-456f-8719-39f6ec10688e",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "756cd638-9672-4147-a42f-b3df592f6889",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "d21d7ad5-f2b6-4abe-a7c3-b3553b8cc5c4",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "8f623c3e-d106-42ce-9b63-eee0612ae283",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "0ce93102-652e-4a81-ba06-c909ffc3a6f4",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "62d885b5-d0ba-4ca8-8e3e-4f35f9dbecb3",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "796c916c-b87f-47e7-9d73-556d87cd1163",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "9027e522-30ba-47ef-b0c7-a7fed638489a",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "1932463c-df8b-42db-b55c-6baa39dee785",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "fc06836d-feca-44fc-b10a-aa12dd2c4b64",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "b885db51-df88-4c13-9949-92c0a3eb8420",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "21436715-d00a-42ca-a8c3-cd3ce1a8cc92",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "45c20fc5-8c78-4697-bef9-99e7f8fd026a",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "5110d309-5730-4d8f-8d0e-5bc77c58b56c",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "cdd4b054-afd9-4f3f-8c6f-0d9bd891d357",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "dc1d3489-b2f4-4c45-b00c-fac88b1ac4e6",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "3f62ec01-c586-4c7f-9f08-5c848aca8a7a",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "7c4c1fb2-cb4a-4e8a-97cc-24081130a98c",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "12ed2e6a-2d00-4252-9693-68e4b9d91c04",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "1c8ca5c0-f245-4d84-880a-d64ef2558be5",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "fef44204-f745-40c2-b499-54b1d2578bd9",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "5dda31b8-e891-4564-9eec-55cd340477dc",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "23eb6f8e-d0ac-458a-b192-d70ac15d3fd3",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "cc677c57-4bce-453a-a4bc-bd0206008b30",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "1d7840a3-e515-451e-ab5a-8192a8317446",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "cd8d9300-886b-4e3e-a12b-090bdbc19ed3",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "2517dfca-7dd1-4b44-b315-108017ec90cc",
+      "result_id": "65b939f7-0802-4c72-9151-a7968343479f"
+    },
+    {
+      "claim_id": "66e2e7e5-c9f1-4ac4-ac1e-8e9e4b563c44",
+      "result_id": "c1582cb0-4603-4638-a3c8-cf479b57d05b"
+    },
+    {
+      "claim_id": "e966b1cf-3503-4093-83a8-cf606afdfe5d",
+      "result_id": "c1582cb0-4603-4638-a3c8-cf479b57d05b"
+    },
+    {
+      "claim_id": "646f0803-8aea-4f04-85f1-091619544eb3",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "3adf3367-e319-4f04-9a88-b375965ad46a",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "caea0ab3-f68a-44a7-9979-5740998a15b8",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "05998021-80d9-41f3-9ea4-1304ad08da85",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "54f73cf3-3623-4b85-8ba5-be79fe548aa9",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "31512bfe-81fb-4b96-85d8-b30c1c75f399",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "636508f1-851b-409e-8c91-52647b8dda53",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "ebbff347-9c62-4284-ac45-477d1623f966",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "23f1f934-dbbe-4508-89b8-c5ba581f13c9",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "a88afd81-e686-4357-98e9-9ac010734db5",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "f1f715b1-e76c-4429-88b8-05d28d1767d1",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "3b85eadc-d9ce-4f5a-87a0-3e2b134019db",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "5470063f-df0c-4bc9-a98c-5d9b4882183c",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "8e82e47a-b50f-4946-a4f7-0f01bd73d437",
+      "result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74"
+    },
+    {
+      "claim_id": "38bed22b-4415-4d1a-83db-c0a2816500ea",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "959ede88-1d37-45fc-b4c9-3f23251732e7",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "febdaa0d-8b4c-48c7-b18a-f92164272648",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "edfc1724-0147-4d8b-88de-88cfe38ebbdc",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "aa304abc-edbe-4ba6-8863-911ab0d510b5",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "ca165e62-3a53-406e-9c8e-99d3e1965a16",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "71b2ecd0-62ea-4b5e-b4ef-b208ee3bc80c",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "e520b63f-fa1c-4aaf-930b-00dfc64ba7cd",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "4de60cf7-849f-4c37-881c-d0334402a901",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "ab1ffdd1-d1d4-4c48-a5a7-84a225ec7674",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "9198a667-2f13-43a1-841e-4a9615789088",
+      "result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9"
+    },
+    {
+      "claim_id": "e5f03871-f5ff-4183-a5d0-f96e61a99c06",
+      "result_id": "d1f48b7b-cf14-4215-997a-79bbfd8b16c0"
+    },
+    {
+      "claim_id": "12aa2c4e-df12-4bbc-abfd-5fe3371c6405",
+      "result_id": "d1f48b7b-cf14-4215-997a-79bbfd8b16c0"
+    },
+    {
+      "claim_id": "2fb5aef1-038b-4719-8411-c580122ebbe5",
+      "result_id": "d1f48b7b-cf14-4215-997a-79bbfd8b16c0"
+    },
+    {
+      "claim_id": "ab115b61-c8b2-4548-9b3e-f19f61d38d3a",
+      "result_id": "fdc173e1-7e04-4fb8-9fd5-0bf82a7b6ac1"
+    },
+    {
+      "claim_id": "9c112cee-ad35-4519-add2-8631f88dcad6",
+      "result_id": "fdc173e1-7e04-4fb8-9fd5-0bf82a7b6ac1"
+    },
+    {
+      "claim_id": "922c47d0-a18d-48c3-a7e6-bd4fce4a9bc0",
+      "result_id": "fdc173e1-7e04-4fb8-9fd5-0bf82a7b6ac1"
+    },
+    {
+      "claim_id": "e04c5b51-c7c9-4aa7-aac2-e9a5e2b5ec9f",
+      "result_id": "fdc173e1-7e04-4fb8-9fd5-0bf82a7b6ac1"
+    },
+    {
+      "claim_id": "b6d83560-1495-4faa-b2e8-7da17e5fe400",
+      "result_id": "c84727aa-15d4-4390-9117-9a17499719e5"
+    },
+    {
+      "claim_id": "3cd966e3-8cf7-4002-a5e3-ffc1c8cd889a",
+      "result_id": "c84727aa-15d4-4390-9117-9a17499719e5"
+    },
+    {
+      "claim_id": "61c4e844-664f-4846-bf87-90e4f3643ff1",
+      "result_id": "c84727aa-15d4-4390-9117-9a17499719e5"
+    },
+    {
+      "claim_id": "8b5f22ef-8d8b-4725-8e67-3cf8a71b5587",
+      "result_id": "c84727aa-15d4-4390-9117-9a17499719e5"
+    },
+    {
+      "claim_id": "803e8f89-d8fc-4dc3-a49c-6c2ded013270",
+      "result_id": "c84727aa-15d4-4390-9117-9a17499719e5"
+    },
+    {
+      "claim_id": "b0176e57-95bd-44dd-895a-52fbe66b188a",
+      "result_id": "9668b5c0-f0bb-417d-92a4-b5a36456a629"
+    },
+    {
+      "claim_id": "bbc92415-c9c3-44c9-a330-8d7939eca7b5",
+      "result_id": "9668b5c0-f0bb-417d-92a4-b5a36456a629"
+    },
+    {
+      "claim_id": "0734834f-91c5-42c9-84b2-d63047dcf897",
+      "result_id": "9668b5c0-f0bb-417d-92a4-b5a36456a629"
+    },
+    {
+      "claim_id": "fe7a58c0-2135-4601-bbc1-f0ee28fe3d69",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "aa1b8e4a-4ef8-4dc8-90db-5488ae7c5f1b",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "761dd188-9dd3-4c44-b7d4-3e2423e867d5",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "2e4d46b2-f8f3-4acf-97de-bfe5ce407c7e",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "a1e7dc9e-c003-42f3-b16d-c62da31f5177",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "fc4caca1-7ae0-456f-8719-39f6ec10688e",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "756cd638-9672-4147-a42f-b3df592f6889",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "d21d7ad5-f2b6-4abe-a7c3-b3553b8cc5c4",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "8f623c3e-d106-42ce-9b63-eee0612ae283",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "0ce93102-652e-4a81-ba06-c909ffc3a6f4",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "62d885b5-d0ba-4ca8-8e3e-4f35f9dbecb3",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "796c916c-b87f-47e7-9d73-556d87cd1163",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "9027e522-30ba-47ef-b0c7-a7fed638489a",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "1932463c-df8b-42db-b55c-6baa39dee785",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "fc06836d-feca-44fc-b10a-aa12dd2c4b64",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "b885db51-df88-4c13-9949-92c0a3eb8420",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "21436715-d00a-42ca-a8c3-cd3ce1a8cc92",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "45c20fc5-8c78-4697-bef9-99e7f8fd026a",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "5110d309-5730-4d8f-8d0e-5bc77c58b56c",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "cdd4b054-afd9-4f3f-8c6f-0d9bd891d357",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "dc1d3489-b2f4-4c45-b00c-fac88b1ac4e6",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "3f62ec01-c586-4c7f-9f08-5c848aca8a7a",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "7c4c1fb2-cb4a-4e8a-97cc-24081130a98c",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "12ed2e6a-2d00-4252-9693-68e4b9d91c04",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "1c8ca5c0-f245-4d84-880a-d64ef2558be5",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "fef44204-f745-40c2-b499-54b1d2578bd9",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "5dda31b8-e891-4564-9eec-55cd340477dc",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "23eb6f8e-d0ac-458a-b192-d70ac15d3fd3",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "cc677c57-4bce-453a-a4bc-bd0206008b30",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "10d867e8-cde1-4370-86aa-6c70d0046a9c",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "d26b0eea-4919-4ff2-b0f7-6850cdf7986a",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "d48b864c-5bfc-4951-aa9b-c82206ae8935",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "898a5cb8-92a7-4701-a914-76cd7a86acd8",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "4dce448d-75af-476c-bd66-a523747263ec",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "c600f6a7-84c0-4e23-899f-32f3de59ce31",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "1f1b59aa-983e-4463-97d4-08b812715f4c",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "1d7840a3-e515-451e-ab5a-8192a8317446",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "cd8d9300-886b-4e3e-a12b-090bdbc19ed3",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "2517dfca-7dd1-4b44-b315-108017ec90cc",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "4358279d-4480-4b28-b178-182e911cdb55",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "ef55445b-98f2-49c8-8eb1-3db916cbf760",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "2179b858-0068-41f4-bec6-f24053c3fa2d",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "96480b99-908c-4637-ae95-f2a5c0072bc6",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "6ff48482-f0f7-417d-bfdc-2107d8a79044",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "212661ea-f59d-4bfc-9098-0a8c86d31b4d",
+      "result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f"
+    },
+    {
+      "claim_id": "66e2e7e5-c9f1-4ac4-ac1e-8e9e4b563c44",
+      "result_id": "530cdac7-ff4c-4b3e-bdf7-0055422b6021"
+    },
+    {
+      "claim_id": "e966b1cf-3503-4093-83a8-cf606afdfe5d",
+      "result_id": "530cdac7-ff4c-4b3e-bdf7-0055422b6021"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "48e99894-24a8-440f-bd7b-7778e55148e0",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "0fb64af0-830e-481b-90c9-0e785b168f40",
+      "peer_result_id": "d1f48b7b-cf14-4215-997a-79bbfd8b16c0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on CETSA data (C9, C62, C63). Both evaluations support the cellular thermal stabilization evidence demonstrating target engagement in cells. OpenEval emphasizes correlation with in vitro binding and appropriate controls; peer reviewers note this as part of 'multifaceted' characterization with 'compelling biophysical and cellular evidence.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "cf240514-31c0-4ff1-8dac-003ab1f8f6b1",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "c1582cb0-4603-4638-a3c8-cf479b57d05b",
+      "peer_result_id": "530cdac7-ff4c-4b3e-bdf7-0055422b6021",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on future directions (C86, C87). Both evaluations support the proposed implications for therapeutic development. OpenEval describes these as 'reasonable future directions' appropriately marked as speculative; peer reviewers emphasize the work provides 'groundwork for peptide drug modalities' and 'lays a strong foundation for future developments.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "c9c74f3c-0736-4b35-8950-8644dff83596",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "92167e0b-43c8-4bd0-936b-4a9c41ddb6d6",
+      "peer_result_id": "fdc173e1-7e04-4fb8-9fd5-0bf82a7b6ac1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on in vitro ubiquitination assays (C10, C11, C64). Both support the functional inhibition data and comparison with Apcin. OpenEval notes 'concentration-dependent inhibition is clearly demonstrated'; peer reviewers describe this as providing 'groundwork for development of peptide drug modalities to inhibit degradation.' Peer review includes C65 (mechanistic explanation) while OpenEval evaluates it separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "10e61f41-f92b-4cb2-8caa-71cd42c30468",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "65b939f7-0802-4c72-9151-a7968343479f",
+      "peer_result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on background and contextual claims (C1-C39, C77-C79, and additional context claims). Both evaluations support the established knowledge about ubiquitin biology, APC/C structure/function, and degron recognition. OpenEval notes these are 'appropriately supported by multiple citations'; peer reviewers made no objections and affirmed relevance. Peer review R7 includes additional context claims (C69-C85) that OpenEval evaluates separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "3d4f0252-a8f1-47bd-bf33-8e8ff241b7e6",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "f8c56c27-3466-4b2b-8d50-e2e3de90f252",
+      "peer_result_id": "c84727aa-15d4-4390-9117-9a17499719e5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on live cell degradation assays (C12, C66, C67). Both support the degradation data and inverse correlation with binding affinity. OpenEval emphasizes statistical analysis in Figure 8D; peer reviewers describe the portable degron demonstration as 'impactful.' Peer review includes C68 and C71 (mechanistic interpretation) which OpenEval evaluates separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "0365693a-e23e-484d-9a43-3d934d8af653",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "e9e7d780-1be4-4a02-b20f-5adfe1ff307d",
+      "peer_result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on X-ray crystallography data (C53-C58). Both support the structural validation of binding modes and specific interactions. OpenEval notes crystal packing effects limited C-terminal observation; peer reviewers praised 'verified binding modes by elucidating the Cdc-20-peptide structures.' Peer review also includes C51-C52 and C59-C61 which OpenEval evaluates separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "40287a49-4c1b-4f61-88a0-9707fe4e5bf2",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "67edadb8-b8ca-4351-b987-46e4141a515a",
+      "peer_result_id": "9668b5c0-f0bb-417d-92a4-b5a36456a629",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on the key finding that binding affinity predicts inhibitory activity but not degradation efficiency (C13, C14). Both evaluations support this observation. OpenEval emphasizes consistency with cited literature; peer reviewers note this is 'consistent with conclusions from other studies.' Peer review includes C15 (mechanistic speculation) which OpenEval evaluates as UNCERTAIN in R12.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "3aafdfb6-8b70-497d-8be3-1a42d773d243",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "615da0e6-6330-4951-94e9-a82332a9a40d",
+      "peer_result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on Apcin binding to Cdc20 (C40, C7). Both support the SPR and TSA measurements demonstrating direct binding. OpenEval emphasizes KD values with error estimates; peer reviewers describe the investigation as 'comprehensive and well-executed' with 'solid and multifaceted' binding assays. Peer review R1 covers broader scope including C6 and C41-C50.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "abd51d65-e6ae-440f-893d-1d94971f0826",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "80f22a88-2ad1-44ab-a97f-3ae545fc3a4f",
+      "peer_result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on consensus sequence analysis and SAR studies (C41-C46, C80-C81). Both support the experimental SPR/TSA data in Table 1 and Figure 3. OpenEval notes 'appropriate replicates and error estimates'; peer reviewers describe characterization as 'comprehensive and well-executed.' Peer review R1 also covers C6-C8 and C40, C47-C50 which OpenEval evaluates separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "26357d4b-4bdb-4f68-a534-219cd4873683",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "3776f1cf-aafd-496a-8bf6-b505e2228193",
+      "peer_result_id": "ed6404bb-eb25-48c0-90be-fe819f2aca74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on Pro3 importance through mutagenesis (C47-C50). Both support the hypothesis-driven approach combining modeling and experimental data. OpenEval emphasizes 'strong evidence for the importance of Pro3'; peer reviewers note the 'comprehensive and well-executed' investigation. Peer review R1 covers broader scope including earlier claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "a68aead0-aa64-431d-a1f4-5ee336d6ca6b",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "f0df53e4-d449-459a-8492-d12009b0a42c",
+      "peer_result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on unnatural amino acid strategy (C51, C52). Both support the rational design targeting hydrophobic pocket. OpenEval emphasizes 'high-affinity binders with well-characterized binding constants'; peer reviewers praised the 'solid and multifaceted' characterization. OpenEval also includes C6 while peer review R2 covers broader structural validation (C53-C61).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "b43ac1bb-78ba-4075-858a-093421b19255",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "1a18cb6a-f5b0-4702-bf7f-90b7b90656a4",
+      "peer_result_id": "dcae6989-8d85-43da-86aa-3e7328e3d2c9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on structural interpretations (C59-C61). Both support the crystallographic data analysis including electron density correlation and crystal packing effects. OpenEval describes these as 'reasonable structural interpretations'; peer reviewers affirmed with 'compelling biophysical evidence.' Peer review R2 covers broader structural scope (C51-C58).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "e1309b76-fc04-473a-bc5b-01673f398052",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "7767a3a9-a575-44b6-9884-eb9359b742d1",
+      "peer_result_id": "fdc173e1-7e04-4fb8-9fd5-0bf82a7b6ac1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on mechanistic explanation for peptide potency (C65). Both support the interpretation based on D-box interactions with Cdc20 and APC10. OpenEval describes this as 'mechanistically sound explanation'; peer reviewers accepted this as part of the 'groundwork for development' narrative. Peer review R4 also covers experimental inhibition data (C10, C11, C64).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "1aad985f-17ea-473b-9545-0b9d840e5d8f",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "504a5c58-260f-4cfc-b858-df1ee50f7a97",
+      "peer_result_id": "9668b5c0-f0bb-417d-92a4-b5a36456a629",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial alignment on mechanistic speculation (C15). OpenEval rates R12 as UNCERTAIN, noting C15 and C71 are speculative and require validation; peer review R6 appears to accept the interpretation with the caveat that it was 'strengthened by additional clarifications.' This represents a subtle difference in confidence level.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "875f66fb-d220-4edd-a94a-0bba15ad6e6d",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "504a5c58-260f-4cfc-b858-df1ee50f7a97",
+      "peer_result_id": "c84727aa-15d4-4390-9117-9a17499719e5",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial alignment on APC10 role speculation (C71). OpenEval evaluates C15, C71, C69, C70, C85 together as UNCERTAIN, noting the hypothesis is reasonable but requires validation; peer review R5 appears to accept the mechanistic interpretation regarding APC10's role as part of the degradation findings, though acknowledging it remains somewhat speculative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "46bb2212-4fcb-44f4-bedc-2fa4562b608b",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "e520e7f4-6694-4fde-b6bb-4019518b72f8",
+      "peer_result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on D-box primacy literature (C72-C76). Both support these contextual claims from cited literature. OpenEval notes these 'accurately represent cited literature' providing important context; peer reviewers made no objections to background material, implicitly affirming accuracy and relevance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    },
+    {
+      "id": "a5af3dce-95a6-4b57-84e2-1593d5dd1c11",
+      "submission_id": "a479f8a1-9b7d-498a-ac65-f43f8f6bbdf3",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "7607a14c-1cc8-4610-9971-275026dbaabe",
+      "peer_result_id": "07a8944a-6ee9-4c23-b17c-5972401c800f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on structural integration (C82-C84). Both support the integration of recent structural data with experimental findings. OpenEval describes the structural explanation as 'reasonable inference connecting structure to observed SAR'; peer reviewers implicitly accepted this through overall affirmation of the work's quality and relevance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T16:06:19.490550Z"
+    }
+  ]
+}

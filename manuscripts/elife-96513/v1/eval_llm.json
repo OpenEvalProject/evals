@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C10",
+      "C40",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors developed mwSuMD, an energetically unbiased adaptive sampling algorithm based on SuMD that uses multiple parallel replicas (walkers) to address complex conformational transitions and protein-protein associations. This method was designed to simulate the complete sequence of events from inactive GPCR to GDP release without energy bias, representing a novel computational achievement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C10, C40, C49, C51-C57 collectively describe the development and capabilities of mwSuMD. The method is well-documented with clear algorithmic descriptions (C53-C56), implementation details (C52, C57), and stated design goals (C10, C49). The novelty claim (C3) is supported by the comprehensive simulations presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "mwSuMD with 100 ps time windows and RMSD supervision using SMscore achieved the best performance for AVP binding to V2R (minimum RMSD 3.85 \u00c5, mode 4.40 \u00c5), outperforming both SuMD and other mwSuMD parameter combinations. The authors recommend RMSD as the metric of choice for known complexes and distance for unknown binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C41, C43-C46 present a systematic comparison of simulation parameters with quantitative RMSD measurements. The data shows clear performance differences between methods and parameter settings (C16, C17, C44), with the best results (C17) comparable to equilibrium MD (C14). The methodological recommendations (C45, C46) are appropriately qualified based on the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "mwSuMD identified V2R residues E184ECL2, P298ECL3, and E303ECL3 as involved during AVP binding, though these residues are not in direct contact with the ligand in the orthosteric complex and have not been characterized by mutagenesis studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 present a testable prediction from the simulations. The identification of these residues is supported by simulation data (C18), and the lack of prior experimental characterization is verified through database query (C19). This represents a hypothesis-generating result that could guide future experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C42"
+    ],
+    "result": "mwSuMD simulated AVP dissociation from V2R approximately 10 times faster than SuMD, with ECL2 and ECL3 slightly more involved during association than dissociation, consistent with observations in other GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C42 present direct comparisons of simulation efficiency and mechanistic observations. The speed improvement (C20, C42) is quantified and supported by data in Figure 2c. The differential involvement of ECL2/ECL3 (C21) is supported by both simulation data and citations to similar findings in other GPCRs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "mwSuMD simulated PF06882961 binding to GLP-1R and receptor activation, achieving an RMSD of 3.79\u00b10.83 \u00c5 to the bound conformation. The simulation captured key activation features including counterclockwise TM6 rotation and active-like conformations of the central polar network and TM6 kink residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 describe a complex multi-stage simulation of ligand binding and receptor activation. The structural observations (C22, C23) provide context, while the simulation results (C24, C25) are quantified with RMSD values and compared to experimental structures. The conformational changes (C25, C26) are supported by both simulation data and citations to experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C30"
+    ],
+    "result": "mwSuMD successfully simulated G protein binding to GPCRs: \u03b22AR:Gs binding achieved minimum RMSDs of 3.94-3.96 \u00c5 in two of three replicas, and A1R:Gi binding reached RMSD \u22485 \u00c5 in ~50 ns, while 1 \u03bcs of classic MD failed to produce productive engagement (RMSD >40 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C29-C30 demonstrate mwSuMD's capability for protein-protein binding simulations with direct quantitative comparisons. The \u03b22AR:Gs results (C27) show good agreement with experimental structures in 2/3 replicas. The A1R:Gi comparison (C29-C30) provides strong evidence of mwSuMD's effectiveness by contrasting with failed classic MD, though the sample size is limited (1 simulation each).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "mwSuMD simulated Gs binding to activated GLP-1R, with replica 2 achieving RMSDs of 7.59\u00b11.58 \u00c5 (G\u03b1), 12.15\u00b12.13 \u00c5 (G\u03b2), and 13.73\u00b12.24 \u00c5 (G\u03b3). During binding, PF06882961 was stabilized and GDP destabilized, and a hidden interaction between D344 and R385 was proposed as important for Gs coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C34 present G protein binding results with substantial RMSD values, particularly for G\u03b2 and G\u03b3 (C32). While the authors compare these to previous equilibrium MD simulations, the RMSDs are relatively high and only 2/3 replicas showed convergence (C31). The proposed D344-R385 interaction (C34) is supported by cited mutagenesis data but represents an inference from the simulations. More replicas and validation would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C47",
+      "C48"
+    ],
+    "result": "mwSuMD simulations suggest GDP dissociation from Gs involves concerted structural changes: AHD opening, \u03b1G-\u03b14 loop rearrangement, and \u03b1G shift away from the GDP site. The \u03b26-\u03b15 loop showed no significant changes before GDP release, suggesting its conformational change occurs after GDP dissociation. The \u03b1G-\u03b14 loop's divergent sequence among G protein isoforms suggests a role in selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39, C47-C48 present a mechanistic model of GDP release supported by simulation observations (C35, C39) and experimental validation from cited H/D exchange and mutagenesis studies (C36). The proposed sequence of events (C39, C48) is appropriately qualified as inference. The selectivity hypothesis (C38, C47) is supported by sequence analysis and cited work. However, only one successful GDP dissociation was obtained from three replicas, limiting statistical confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C28"
+    ],
+    "result": "Background claims about GPCRs, their structure, function, and the limitations of classical MD methods are established knowledge supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C9, C11-C13, C28 provide background context for the study. All are appropriately cited to established literature and represent accepted knowledge in the GPCR and MD simulation fields. These claims provide necessary context but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The authors propose that mwSuMD trajectories could serve as a backbone for further MD sampling aimed at quantifying or predicting transition kinetics using methods like path collective variable metadynamics, Markov state models, or machine learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is explicitly labeled as speculation about future applications. This is an appropriate and reasonable proposal given that mwSuMD generates transition pathways, though no data is presented to support this specific application. The claim is properly qualified as a proposed future direction rather than a demonstrated capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The simulations employed the CHARMM36/CGenFF 3.0.1 force field combination and the ACEMD3 MD engine for equilibration and productive simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are straightforward methodological details that are appropriately cited. These are standard, well-established computational tools and their use is clearly documented.",
+    "result_type": "MINOR"
+  }
+]

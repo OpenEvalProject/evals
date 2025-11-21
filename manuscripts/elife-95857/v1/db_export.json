@@ -1,0 +1,2462 @@
+{
+  "submission": {
+    "id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:46:46.909627Z",
+    "updated_at": "2025-11-21T17:46:46.909627Z"
+  },
+  "content": [
+    {
+      "id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "content_type": "manuscript",
+      "content_text": "# Decoupling both local and global abundance from global range size, challenging the abundance-occupancy relationship in birds\n\n## Authors\n\n- Shinichi Nakagawa<sup>1</sup> ([ORCID: 0000-0002-7765-5182](https://orcid.org/0000-0002-7765-5182)) \u2020\n- William K Cornwell<sup>1</sup> ([ORCID: 0000-0003-4080-4073](https://orcid.org/0000-0003-4080-4073))\n- Corey T Callaghan<sup>3</sup> ([ORCID: 0000-0003-0415-2709](https://orcid.org/0000-0003-0415-2709)) \u2020\n\n### Affiliations\n\n1. Evolution & Ecology Research Centre, Centre for Ecosystem Science, and School of Biological, Earth and Environmental Sciences, University of New South Wales Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))\n2. Theoretical Sciences Visiting Program, Okinawa Institute of Science and Technology Graduate University Onna Japan ([ROR:02qg15b79](https://ror.org/02qg15b79))\n3. Department of Wildlife Ecology and Conservation, Fort Lauderdale Research and Education Center, University of Florida Davie United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn macroecology, a classic empirical observation has been positive relationships between local abundance and species\u2019 range, known as the abundance-occupancy relationships (AORs). The existence of this empirical relationship has informed both theory development and applied questions. Notably, the spatial neutral model of biodiversity predicts AORs. Yet, based on the largest known meta-analysis of 16,562,995 correlations from ~3 billion bird observations, this relationship was indistinguishable from zero. Further, in a phylogenetic comparative analysis, species range had no predictive power over the global mean abundance of 7464 bird species. We suggest that publication and confirmation biases may have created AORs, an illusion of a \u2018universal\u2019 pattern. This nullification highlights the need for ecologists to instigate a credibility revolution like psychology, where many classic phenomena have been nullified.\n\n## Introduction\n\nA positive interspecific relationship between abundance and distribution \u2013abundance-occupancy relationships (AORs) \u2013 is considered one of the most general and robust patterns in ecology (Blackburn et al., 2006; Gaston, 1996; Gaston et al., 1997b; Ten Caten et al., 2022). Sometimes referred to as a macroecological law (Gaston and Blackburn, 1999b; Lawton, 1999), the AOR asserts that empirically locally abundant species tend to be widely distributed, and conversely, locally rare species tend to be geographically restricted in their range. The mechanism driving this relationship was never proven, and it remains unresolved why species distribution should affect per-unit-area abundance (or vice versa). Nonetheless, the existence of a pervasive AOR has underpinned many practical applications in ecology and conservation (Gaston, 1999a), e.g., setting harvest rates for fisheries (Swain and Morin, 1996), managing invasive species by restricting expansion rather than local elimination, and identifying species at high risk of extinction in biodiversity inventories such as the IUCN Red List Criteria (Gaston et al., 2000). Given the increasing human-induced land-use changes in the Anthropocene (Lewis and Maslin, 2015), concomitantly with increasing debate about global biodiversity change (Leung et al., 2020), fully understanding the relationship between abundance and range size is increasingly important.\n\nMany plausible biological mechanisms have been proposed for AORs, yet none of them has unequivocal support (Gaston et al., 1997b; Ten Caten et al., 2022; Wilson, 2008; Borregaard and Rahbek, 2010). Among all mechanisms, it is noteworthy that a spatially explicit neutral model of biodiversity and biogeography can generate AORs (Bell, 2001; Hubbell, 1997). Specifically, this macroecological \u2018null\u2019 model can produce a positive correlation between species range (or occupancy) and their per-unit-area local, as well as total global abundance. This observation, in turn, supports the utility of neutral theory as a null model of community and macroecology (Bell, 2001). Although neutral theory may provide a biological null model, an additional null hypothesis is that AOR does not exist. Indeed, sampling bias can create AORs because locally rare species are more likely to be missed, resulting in an underestimation of range size or occupancy, thereby generating a positive relationship (Borregaard and Rahbek, 2010; Bock and Ricklefs, 1983). Yet, this sampling explanation has long been discarded as a plausible mechanism leading to observed patterns (Gaston, 1996; Gaston et al., 1997b; Blackburn and Gaston, 2009). This is because of substantial empirical evidence for positive interspecific relationships, including a meta-analysis of 279 effect sizes with an overall effect of r=0.58 (or its Fisher\u2019s transformation: Zr = 0.66) in 2006 (Blackburn et al., 2006). It does not seem that sampling bias alone could explain this remarkably strong relationship.\n\nNonetheless, a large amount of variation does exist in empirical patterns of AORs, including strikingly negative relationships (Wilson, 2008; P\u00e4ivinen et al., 2005; Komonen et al., 2009; Kotiaho et al., 2009). Some of the observed heterogeneity is likely to be due to different aspects of sampling, such as the number of species and spatial and temporal coverage (Gaston et al., 1997b; Ten Caten et al., 2022; Wilson, 2008). Also, other types of bias could generate artefactual AORs: namely \u2018confirmation bias\u2019, where sampling is prejudiced to support one\u2019s hypothesis, and \u2018publication bias\u2019, where statistically significant relationships are preferentially reported and published. Although both biases are widespread, including in ecological studies (Holman et al., 2015; van Wilgenburg and Elgar, 2013; Yang et al., 2023), no studies so far systematically considered or quantified both biases in the context of AORs (Blackburn et al., 2006). Furthermore, there has, until recently, been a lack of large and methodologically consistent data resources, therefore leaving a traditional meta-analytic approach as the best available option for testing the validity and generality of the AOR.\n\n## Results\n\n### A citizen science dataset to test AORs\n\nHere, we use data from eBird \u2013 a global citizen science dataset aimed at counting birds \u2013 to quantify the relationship between local-scale (and global-scale) abundance and global-scale range size as a proxy for occupancy (AOR). This approach is similar to previous works (e.g. Bock and Ricklefs, 1983); they pointed out that the use of arbitrary cut-offs in many AOR studies can lead to artefactual positive AOR relationships. By examining this relationship across a global dataset, we aim to test whether the classic AOR pattern holds at a broader scale using citizen science data, which provides a more comprehensive spatial coverage than traditional studies. Previous AOR studies often focused on local or regional scales, defining occupancy within specific patches or habitats. In contrast, our approach uses global range size to explore how generalisable AOR patterns are when scaled up to global datasets, providing insights into whether the same positive relationship persists across diverse environments and species distributions.\n\nLarge citizen science datasets collected for non-hypothesis-driven purposes are not random samples (see Callaghan et al., 2017), but they have the advantage of avoiding biases such as confirmation and publication bias. Also, using the eBird dataset allows us to estimate heterogeneity due to sampling intensity (e.g. the duration of a sampling event directly influences the number of species recorded). Specifically, we can quantify how AOR will change in relation to increases in species richness and sampling duration, both of which are predicted to reduce the magnitude of AORs (Gaston et al., 1997b; Ten Caten et al., 2022; Komonen et al., 2009).\n\nFor occupancy, we use global range size not only because global range size should be relatively stable \u2013 \u2018local\u2019 range sizes for one species could vary dramatically \u2013 but also because different types of occupancy measures were deemed to contribute less to the observation heterogeneity (Wilson, 2011; Steenweg et al., 2018). Fortunately, for birds, a large database of global range sizes has already been compiled (BirdLife International, 2023). For abundance, we use two different measurements: local species counts and local mean density, as follows. First, we carry out the largest known meta-analysis by synthesising correlations between global range sizes of 7635 species and local species counts collected across 16,562,995 eBird checklists (resulting in 16,562,995 Zr values and corresponding sampling variances; Figure 1). These checklists all included counts of each species present and the duration of observation (hereafter, effort time).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95857/elife-95857-fig1-v1.jpg)\n\n**Figure 1.:** We aggregated individual eBird checklists across the world (shown on the map), represented by the three coloured insets which show the relationship between global range size (x-axis) and local abundance (y-axis) and the associated correlation value. We then aggregated these checklist level measures for 16,562,995 eBird checklists into the largest-ever meta-analysis to find the global-level relationship between global range size and local abundance.\n\nSecond, we conduct a phylogenetically controlled comparative analysis, regressing species range sizes on 7464 estimates of globally derived species\u2019 mean density, equivalent to mean local density (per 5-degree grid cell), estimated in earlier work (Callaghan et al., 2021) (see Materials and methods for more details). Given the different potential biases mentioned before, we expected a more modest relationship in relation to that of the previous meta-analysis (r=0.58; note that this relationship included many different taxa; if restricted to bird species, it was even stronger r=0.74 or Zr = 0.95) (Blackburn and Gaston, 2009). Also, although no such empirical evidence appears to exist, it seems feasible that in filling in an eBird checklist, some people may undercount common and widespread species while they may overcount rare and geographically restricted species. If this is the case, the relationship (AORs) could be further weakened. Yet, if such overcounting and undercounting were present, we expect it would introduce large heterogeneity into our dataset because that type of behaviour would not be consistent across all contributors, and they would sometimes result in negative AORs, increasing variability among the 16,562,995 Zr values.\n\n### Overwhelming support against AOR\n\nSurprisingly, the overall (aggregated) relationship between local abundance and global occupancy was near-zero (r=0.015), although this relationship was statistically significant due to our extremely large sample size (p=0.0005, z=2.805, Zr = b[overall mean]=0.015, 95% confidence interval, CI = [0.004, 0.025]; Figure 2, Supplementary file 1. However, this significant relationship disappeared (r=0.0009) once we controlled for species number and effort time (p=0.863, z=0.173, Zr = b[overall mean]=0.0009, 95% CI = [\u20130.0092, 0.0111]); both variables were statistically significant predictors of the effect. As expected, the increase in species number (modelled as the inverse of species number \u2013 3, which is equivalent to sampling error for Zr) and effort time on the natural log scale decreased the strength of the relationship (sampling variance: p<0.0001, z=140.29; b[sampling variance]=0.0147, 95% CI = [\u20130.0149, \u20130.0145]); ln(effort time): p<0.0001, z=\u2013183.45, b[ln(effort time)]=0.230, 95% CI = [0.226, 0.233]; marginal R2=5.1% for the model with these two predictors; Nakagawa and Schielzeth, 2013; Supplementary file 1). These observations are consistent with the explanation that sampling protocols can create positive artefactual relationships between range and abundance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95857/elife-95857-fig2-v1.jpg)\n\n**Figure 2.:** (A) The relationship between 16,562,995 effect sizes (Fisher\u2019s; x-axis) and their precision (the square root of the inverse of the sampling variance; y-axis). (B) The relationship between 16,562,995 correlations based on 3,005,668,285 observations of 7635 species (Pearson\u2019s correlation coefficients; x-axis) and the number of species \u2013 3, which is the inverse of the sampling variances for Zr (y-axis). Both plots consist of data points with the red dashed line indicating zero effect.\n\nEven more remarkably, our meta-analysis suggested that the AOR is likely indistinguishable from zero even with a larger dataset because the observed heterogeneity among effect sizes was very small (i.e. most effect sizes were effectively zero after accounting for sample size). A measure of relative heterogeneity I2[total] was 13.5%, meaning that 86.5% of all the observed variation (in Figure 2) is due to sampling error, therefore, is neither biological nor ecological (country level; I2=5.5%, \u03c32=0.005; state level: I2=6.3%, \u03c32=0.005; effect-size level; I2=1.5%, \u03c32=0.001); in contrast, the average I2[total] across 86 ecological meta-analyses was approximately 92% (Senior et al., 2016), making our observed heterogeneity unusually low. Low relative heterogeneity, however, does not necessarily mean absolute heterogeneity is also low (Borenstein et al., 2017). We found the absolute heterogeneity, \u03c32[total]=0.011, approximately one-thirtieth of the heterogeneity (\u03c32[total]=0.323) found in the previous meta-analysis (Blackburn et al., 2006). Also, this is around one-tenth of the average heterogeneity (\u03c32[total]=0.125; median = 0.105) found in 31 meta-analyses in ecology and evolution (Yang et al., 2023). Overall, low relative and absolute heterogeneities indicate that our dataset of 16,562,995 effect sizes does not have much variability left to be explained despite our observations coming from many different locations across the globe and contributed by tens of thousands of individual birdwatchers. Importantly, we emphasise that this combination of zero effect and very small heterogeneity is only expected when a particular phenomenon is not real.\n\nMoreover, our phylogenetic comparative analysis, which accounted for phylogenetic uncertainty (Nakagawa and De Villemereuil, 2019), corroborated our meta-analytic results (cf. Gaston et al., 1997a). The global range sizes had little predictive power on mean species density (both on log10; p=0.808, t99.6 = 0.0227, b[slope]=0.0928, 95% CI = [\u20130.1615, 0.2068]; Figure 3, Supplementary file 2). Taken together, our results provide overwhelming evidence against the fundamental relationship between species range and local abundance, while the results are consistent with this relationship as a sampling artefact. Nevertheless, our results are also consistent with previously published empirical evidence. This is because we have shown that relationships between global species ranges and local counts can be null, strongly negative, or strongly positive, which can be generated primarily by sampling (error) variance (shown in Figure 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95857/elife-95857-fig3-v1.jpg)\n\n**Figure 3.:** We calculated the mean density of a species in 5-degree grids where species occurred (y-axis), while the species range size (x-axis) was estimated by the sum of the percentage occurrence of the species multiplied by the grid size (km2) across all the 575 grids (7464 species). The blue line indicates an average slope line from phylogenetic comparative models with 100 different posterior phylogenetic trees.\n\n## Discussion\n\n### Lawless macroecology and non-neutral theory: implications\n\nOur results demonstrate clearly that the AOR is not observed in a very large global dataset, with both applied and theoretical ramifications. First, we must reconsider fishing quotas, conservation priorities, and invasive species control strategies based on AORs (cf. Gaston, 1999a). Second, it may be futile to pursue all ecological or biological mechanisms proposed for AORs (see Gaston et al., 1997b; Borregaard and Rahbek, 2010). We cannot exclude, however, the possibility of AORs occasionally emerging in some restricted areas because there was a small unexplained variance in the meta-analytic dataset. Most notably, our near-zero results with small heterogeneity suggest that contrary to earlier suggestions (Bell, 2001; Hubbell, 1997), the spatial neutral model is not a suitable null model of macroecology. Within the neutral theoretical framework, AORs can be broken by local adaptation (an alternative hypothesis) (Bell, 2001). If local adaptation were to disrupt a predicted positive relationship (AOR), we would have observed substantial heterogeneity and a reduced relationship, not a near-zero relationship. This is because it is extremely unlikely that local adaptation and neutral processes are in a perfect balance, resulting in an exact-zero relationship with little heterogeneity. In other words, local adaptations are expected to create local specificities and global variability/heterogeneity; our meta-analysis did not find such variability.\n\nWe point out that any model of a positive AOR posits a mechanism that connects species range and local abundance on the one hand. Rabinowitz, on the other hand, effectively decoupled these two variables (Rabinowitz, 1981), although studies using her framework found positive correlations between species range and local abundance (Yu and Dobson, 2000). Our results are consistent with this decoupling. By adding habit specificity to species range and abundance, she suggests seven forms of rarity, which could reflect different underlying macroecological mechanisms; e.g., two forms of rarity are geographically restricted but locally abundant with narrow or broad habitat types. Unlike the world created by the spatial neutral model, our results support many such \u2018rare\u2019 species (Yu and Dobson, 2000). In this regard, it is no longer surprising that AORs do not exist. Therefore, we believe Rabinowitz\u2019s framework, rather than the AOR, has more empirical support from global-scale patterns of species abundance and provides a useful conceptual structure for future theoretical and applied work, although this line of work is still limited.\n\n### Potential limitations of current work and future work\n\nThe primary aim of our study was to demonstrate the potential of large-scale citizen science datasets, such as eBird, to revisit and refine longstanding macroecological relationships. These data, with their global coverage and unprecedented spatial resolution, offer unique opportunities to explore broad-scale patterns beyond the scope of traditional, localised studies (e.g. Ten Caten et al., 2022). Although our findings challenge some long-held assumptions about the consistency of the AOR, our work only deals with interspecific AORs among birds, synthesising observations from potentially heterogeneous locations, ecological contexts, and data quality. Therefore, we hope this work serves as we view this study as a foundation for further investigations that utilise such comprehensive datasets.\n\nFuture studies could delve deeper into specific ecological factors that may shape interspecific AORs if they do exist. For instance, investigating how islands might influence abundance-density patterns could shed light on density release, where species on islands achieve higher densities due to reduced competition and predation. Additionally, exploring the impact of latitude and climate, such as how Rapoport\u2019s rule may lead to more extensive ranges and population sizes in temperate regions (Gaston et al., 2000), could provide valuable insights into the variability of AORs across geographic and climatic gradients. Similarly, examining species-specific traits, including body size or wing morphology, may uncover correlations with range size and abundance. We further acknowledge that we did not account for anthropogenic changes in populations or range sizes in our analyses and, therefore, we included alien species without separating them from native ones. More precise range-size estimates would also improve the accuracy of AOR assessments since species range data are often overestimated due to the failure to capture gaps in actual distributions (Ocampo-Pe\u00f1uela et al., 2016).\n\nBeyond these biological and ecological factors, methodological refinements using citizen science data are also needed (Callaghan et al., 2019). Our approach, which relies on relative abundance measures, provides a starting point. While our approach relies on relative abundance measures as a starting point, more sophisticated methods are needed to account for known biases (e.g. differences in species detectability, observer experience) in citizen science data so as to enhance the precision of future macroecological studies. We therefore encourage further work to explore novel analytical approaches and statistical frameworks designed to handle these inherent biases, including variation in both observer effort and detectability across species and habitats. Such improvements should help clarify the conditions under which AORs may emerge, remain weak, or are fully decoupled.\n\n### A credibility revolution in ecology beyond biases and crises\n\nWhilst we provided an explanation for the non-existence of AOR with our work\u2019s limitations in mind, it still feels hard to comprehend the extent of overestimation in the previous meta-analysis (r=0.58 for all taxa; r=0.74 for birds) (Blackburn et al., 2006; Blackburn and Gaston, 2009). We have shown that some bias may be due to sampling bias. However, we speculate that much of the overestimation originates from publication bias and confirmation bias, which is supported by mounting evidence from meta-research studies (Holman et al., 2015; van Wilgenburg and Elgar, 2013; Yang et al., 2023). Although we do not have direct evidence, our eBird datasets are free from these two types of biases (i.e. birdwatchers generally do not think of the macroecological patterns that would later be tested with the data they submit), while the literature-based meta-analyses are not. Regarding publication bias, the original meta-analysis of AOR states, \u2018the fail-safe number indicates that more than half a million unpublished null results would be required to nullify an effect of this magnitude\u2019 (Blackburn et al., 2006). Indeed, we provided much more than half a million null effects to reach our null conclusion (Figure 2). However, we should note that large datasets like eBird have other biases than publication or confirmation biases (Callaghan et al., 2017). For example, it is possible that by excluding checklists with a single \u2018X\u2019 (see Materials and methods), we are preferentially removing abundant species as birdwatchers may report \u2018X\u2019 for more common species with high abundances.\n\nA recent study re-examining 86 ecological and evolutionary meta-analyses demonstrated a 23% reduction in overall effects due to publication bias, turning 33 of 50 statistically significant meta-analytic conclusions (66%) into non-significant (Yang et al., 2023). Similarly, a study examining 83 topics in life sciences showed that the effect size of non-blind studies, which are at risk of confirmation bias, was twice as large as blinded counterparts protected against confirmation bias (Holman et al., 2015). Meta-research on behavioural ecology identified 79 studies on nestmate recognition, 23 of which were conducted blind (van Wilgenburg and Elgar, 2013). Non-blind studies confirmed a hypothesis of no aggression towards nestmates nearly three times more often. It is possible that confirmation bias was at play in earlier AOR studies.\n\nWe finish with an intriguing parallel topic to AORs in psychology, where the current replication crisis started (Aarts, 2015; Eronen and Bringmann, 2021). There have been over 100 studies, and many theoretical models support the hypothesis of \u2018ego depletion\u2019, where self-control is a finite resource, so self-control will decrease once it is exerted (Inzlicht and Schmeichel, 2012). The first meta-analysis of ego depletion, like AOR, suggested very strong support for it (standardised mean difference, or d=0.62). Yet, a subsequent multi-lab replication found that ego depletion does not exist and is so weak as to be negligible (d=0.04) (Hagger et al., 2016). Indeed, a series of multi-lab replications has indicated that several psychological phenomena, which were once believed to be real beyond a reasonable doubt, are too weak to be useful or are non-existent (Kvarven et al., 2020). In ecology, recently collated large datasets collected for non-hypothesis-driven purposes offer a unique opportunity to revisit and retest longstanding ideas.\n\nTaken together, we call for re-examining all ecological laws, rules, and patterns, as very few topics are free from sampling, confirmation, and publication biases (cf. Hughes et al., 2021). To counter such biases, we urgently require a \u2018credibility revolution\u2019, a more optimistic name for a replication crisis, turning this crisis into an opportunity to improve science. A credibility revolution in ecology, like in psychology, needs to embrace non-traditional methods to avoid confirmation and publication bias, such as pre-registration (Nosek et al., 2018), registered reports (Chambers and Tzavella, 2022), prospective and living meta-analyses, open synthesis communities (Nakagawa et al., 2020), and big-team-science collaborations (Coles et al., 2022) involving community (citizen) scientists (Callaghan et al., 2019).\n\n## Materials and methods\n\n### Quantifying AOR at the local scale\n\nWe used the eBird dataset (Sullivan et al., 2014; Sullivan et al., 2009) to assess the relationship between local-scale abundance and occupancy (i.e. global range size). eBird, launched in 2002 by the Cornell Lab of Ornithology, is a global citizen science project that enlists volunteer birdwatchers to submit \u2018checklists\u2019 of birds seen and/or heard while birdwatching. Data undergo a semi-automated filtering process before being entered into the dataset, and expert reviewers additionally review species (or counts of species) that surpass preset filters before being accepted into the dataset (Gilfedder et al., 2019). Importantly, birdwatchers must indicate whether they are submitting a \u2018complete\u2019 checklist representing all birds that an individual birdwatcher was able to identify during their birdwatching outing. Further, birdwatchers can either submit the count of a species during their birding, or they can submit an \u2018X\u2019 to signify that a species was present but not estimate the number of individuals present during their birdwatching outing.\n\nWe downloaded the eBird basic dataset (version ebd_rel-May2020) and considered all eBird checklists between 1 January 2005 and 31 May 2020. We then performed some quality assurance, applying an additional set of filters to the data, potentially removing any \u2018outliers\u2019 that could produce undue leverage on our results. The following filtering was completed (sensu Callaghan et al., 2017; Johnston et al., 2021). We only included: (1) complete checklists; (2) checklists that were <240 min and >5 min; (3) checklists that travelled <5 km; and (4) checklists that travelled <500 ha. Because birdwatchers will sometimes use an \u2018X\u2019 to signify presence, and this is most likely to happen for more abundant species, we excluded any checklist that had at least an \u2018X\u2019 on it, as this could potentially influence the correlation between the abundance of a species and range size by disproportionately removing the most abundant species from the correlation. This exclusion aimed to ensure that correlations between local abundance and range size were not distorted by the lack of abundance data for highly observable, widespread species, and providing all species on a checklist with an abundance estimate maximises the interpretability of the relative abundance measure in our work. We further only considered checklists that had at least 10 species recorded on them, and a correlation test was performed only if we had range size data (see below) for a minimum of four species on the checklist.\n\nWe used range size maps from BirdLife International, 2023, using their global range, ignoring the differences between resident and breeding ranges. We chose to use the global range because of the difficulty of defining species occupancies using grid cells (i.e. almost infinite ways of defining occupancy) and the importance of using the entire species distribution range pointed out by earlier studies (e.g. Bock and Ricklefs, 1983) due to sampling artefacts. When an eBird checklist met the aforementioned criteria, we performed a correlation test using Pearson\u2019s correlation coefficient from the cor.test function in R (R Development Core Team, 2023). Both the counts of every species and the range size were log-transformed before estimating a correlation (for a workflow, see Figure 1). We obtained 16,562,995 correlations based on 3,005,668,285 individual bird observations, including 7635 species. We note that we conducted all computational and statistical work using R, and we created plots using the R package ggplot2 (Wickham, 2016), patchwork (Pedersen, 2022), and their dependencies.\n\n### Meta-analysis of Big Data\n\nWe transformed correlations between species abundance and range into Fisher\u2019s Z or Zr to unbound and calculated sampling variance for each Zr value; note that the inverse of the sampling variance of Zr is N (the number of species in a checklist) \u2013 3 (see Figure 1). We used the R package, asreml (Nakagawa and Santos, 2012), to run a multilevel random effects model (Nakagawa and Santos, 2012); note that asreml is a commercial package, so it is not free. Our large meta-analyses with ~17 million effect sizes were only able to run with asreml given the computational time required for such a large dataset. We had \u2018country\u2019 (245 levels) and state code (2871 levels) as random factors in the model to control for non-independence. In addition, to quantify the variance component for these two clustering factors and also at the level of effect sizes (16,562,995 levels), we modelled \u2018units\u2019 (the effect size level random effect or residuals) in the asreml function with \u2018the number of species \u2013 3\u2019 as the \u2018weights\u2019 argument and asr_gaussian(dispersion = 1) as the \u2018family\u2019 argument. We also obtained the multilevel versions of I2 (Senior et al., 2016; Higgins and Thompson, 2002) to obtain relative heterogeneity for our meta-analytic model (Supplementary file 1; also, all models used in this study are summarised in Supplementary file 3).\n\nTo gauge the impacts of potential biases, we fitted two moderators: (1) the z-transformed version of ln(checklist duration) as a surrogate for the amount of effort for observation and (2) sampling variance, which is usually used to detect publication bias, more specifically, small study bias where effect sizes from small studies can create \u2018funnel asymmetry\u2019, creating bias in meta-analytic overall mean (Nakagawa et al., 2022; Figure 2). We ran two uni-moderator models and one multi-moderator model with both moderators (three meta-regression models in total; Supplementary file 1). We estimated the multilevel model versions of R2 (Nakagawa and Schielzeth, 2013).\n\n### Quantifying the AOR at the macro-scale\n\nTo corroborate our local-level analysis described above, we quantified an additional macro-scale analysis of the relationship between abundance (i.e. density) and occupancy (global range size). For this, we used data from a recently published analysis of global abundances for birds within 5-degree grid cells (Callaghan et al., 2021). This dataset was derived by integrating expert-derived abundance measures with a large, less structured global citizen science dataset using a multiple-imputation technique to estimate density within 5-degree grids for 9700 bird species (575 grids). We used these predicted density estimates from each grid cell and, for each species, took the mean of all density estimates in the grid cells for which a species was found. This mean density was then our measure of macro-scale abundance. For our measure of occupancy, we used a summation of all range sizes for the grids a species was found in, calculated by using range maps from BirdLife International focusing on the entire extent of a species\u2019 extant range, ignoring the effect of transient species. Our analysis incorporated a total of 7464 species of bird species, corresponding to the species for which we had both range maps and estimated density, along with phylogenetic information included in Jetz et al., 2012.\n\n### Phylogenetic comparative analysis\n\nTo statistically test whether there was an effect of abundance and occupancy at the macro-scale, we used phylogenetic comparative analysis. This analysis also addresses the issue of positive interspecific AORs potentially arising from not accounting for phylogenetic relatedness among species examined (Gaston et al., 2000). We used avian phylogeny from Jetz et al., 2012, and analysed 100 phylogenetic trees using the R function phylolm (Ho and An\u00e9, 2014). Resulting estimates from the 100 models were merged using Rubin\u2019s rules, as described in Nakagawa and De Villemereuil, 2019, to obtain current estimates and errors that accounted for phylogenetic uncertainty (Supplementary file 2); we implemented this procedure using the R function miInference from the norm2 package (Schafer, 2021).\n",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel Y Takahashi, Federal University of Rio Grande do Norte Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95857.3.sa0](https://doi.org/10.7554/eLife.95857.3.sa0)\n\nThis study offers a useful discussion of the well-accepted abundance-occupancy relationship in macroecology. While using the ebird large dataset to revisit the theme is interesting, multiple unresolved confounding factors exist, leaving the results inadequate to overturn the repeatedly confirmed abundancy-occupancy relationship.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95857.3.sa1](https://doi.org/10.7554/eLife.95857.3.sa1)\n\nSummary:\n\nThis article presents an analysis that challenges established abundance-occupancy relationships (AORs) by utilizing the largest known bird observation database. The analysis yields contentious outcomes, raising the question of whether these findings could potentially refute AORs.\n\nStrengths:\n\nThe study employed an extensive aggregation of datasets to date to scrutinize the abundance-occupancy relationships (AORs).\n\nWeaknesses:\n\nThe authors should thoroughly address the correlation between checklist data and global range data, ensuring that the foundational assumptions and potential confounding factors are explicitly examined and articulated within the study's context.\n\nIn the revision, the authors have refined their findings to birds and provided additional clarifications and discussion. However, the primary concerns raised by reviewers remain inadequately addressed. My main concern continues to be whether testing AOR at a global scale is meaningful given the numerous confounding factors involved. With the current data and analytical approach, these confounders appear inseparable. The study would be significantly strengthened if the authors identified specific conditions under which AORs are valid.\n",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "07054c18-62f1-4664-abde-e120d5e7211d",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C1",
+      "claim": "A positive interspecific relationship between abundance and distribution (abundance-occupancy relationships or AORs) is considered one of the most general and robust patterns in ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "A positive interspecific relationship between abundance and distribution \u2013abundance-occupancy relationships (AORs) \u2013 is considered one of the most general and robust patterns in ecology (Blackburn et al., 2006; Gaston, 1996; Gaston et al., 1997b; Ten Caten et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple scholarly works that have established this pattern in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "46926860-fed2-421c-a9ef-38dcb547332d",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C2",
+      "claim": "The AOR is sometimes referred to as a macroecological law.",
+      "claim_type": "EXPLICIT",
+      "source": "Sometimes referred to as a macroecological law (Gaston and Blackburn, 1999b; Lawton, 1999), the AOR asserts that empirically locally abundant species tend to be widely distributed, and conversely, locally rare species tend to be geographically restricted in their range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to scholarly works that have characterized AOR as a macroecological law.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "d36e0ecf-30ff-412b-9b48-d2c8d0937f76",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C3",
+      "claim": "Locally abundant species tend to be widely distributed, and locally rare species tend to be geographically restricted in their range.",
+      "claim_type": "EXPLICIT",
+      "source": "Sometimes referred to as a macroecological law (Gaston and Blackburn, 1999b; Lawton, 1999), the AOR asserts that empirically locally abundant species tend to be widely distributed, and conversely, locally rare species tend to be geographically restricted in their range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the core assertion of AOR and is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "3fa7dc60-9bed-4c93-886a-9502a445f771",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C4",
+      "claim": "The mechanism driving the AOR relationship was never proven and remains unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism driving this relationship was never proven, and it remains unresolved why species distribution should affect per-unit-area abundance (or vice versa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the state of knowledge regarding AOR mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "1dc8e7d8-c932-4ef9-b98f-b04efecfdf47",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C5",
+      "claim": "The existence of a pervasive AOR has underpinned many practical applications in ecology and conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the existence of a pervasive AOR has underpinned many practical applications in ecology and conservation (Gaston, 1999a), e.g., setting harvest rates for fisheries (Swain and Morin, 1996), managing invasive species by restricting expansion rather than local elimination, and identifying species at high risk of extinction in biodiversity inventories such as the IUCN Red List Criteria (Gaston et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to works describing practical applications of AOR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "442f4f43-a9b9-4534-8271-13866fa30925",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C6",
+      "claim": "AOR has been used for setting harvest rates for fisheries.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the existence of a pervasive AOR has underpinned many practical applications in ecology and conservation (Gaston, 1999a), e.g., setting harvest rates for fisheries (Swain and Morin, 1996), managing invasive species by restricting expansion rather than local elimination, and identifying species at high risk of extinction in biodiversity inventories such as the IUCN Red List Criteria (Gaston et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific application in fisheries management.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "02b93a34-f7ea-40c4-ac1e-63a846263bf6",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C7",
+      "claim": "Many plausible biological mechanisms have been proposed for AORs, yet none has unequivocal support.",
+      "claim_type": "EXPLICIT",
+      "source": "Many plausible biological mechanisms have been proposed for AORs, yet none of them has unequivocal support (Gaston et al., 1997b; Ten Caten et al., 2022; Wilson, 2008; Borregaard and Rahbek, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple review works discussing proposed mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "33011677-2130-4aaf-96d0-26e81c5bc562",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C8",
+      "claim": "A spatially explicit neutral model of biodiversity and biogeography can generate AORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all mechanisms, it is noteworthy that a spatially explicit neutral model of biodiversity and biogeography can generate AORs (Bell, 2001; Hubbell, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical works on neutral models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "c2f00780-57a3-4920-a706-6abfe646ca6b",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C9",
+      "claim": "The neutral model can produce a positive correlation between species range and their per-unit-area local and total global abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, this macroecological 'null' model can produce a positive correlation between species range (or occupancy) and their per-unit-area local, as well as total global abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the discussion of neutral theory predictions in the context of the preceding citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "56c04bbf-5b78-4598-bc4c-118f778c675f",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C10",
+      "claim": "Neutral theory may provide a biological null model for community and macroecology.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation, in turn, supports the utility of neutral theory as a null model of community and macroecology (Bell, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to theoretical work on neutral theory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "49300c19-2264-4087-ae91-a3cbe779ca1b",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C11",
+      "claim": "Sampling bias can create AORs because locally rare species are more likely to be missed, resulting in an underestimation of range size or occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, sampling bias can create AORs because locally rare species are more likely to be missed, resulting in an underestimation of range size or occupancy, thereby generating a positive relationship (Borregaard and Rahbek, 2010; Bock and Ricklefs, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to works discussing sampling bias as a mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "22b78f0b-b1a6-4ed1-9fb9-4ecdcc827d53",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C12",
+      "claim": "The sampling explanation for AORs has long been discarded as a plausible mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, this sampling explanation has long been discarded as a plausible mechanism leading to observed patterns (Gaston, 1996; Gaston et al., 1997b; Blackburn and Gaston, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to works that have dismissed sampling bias as an explanation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "3061912c-fe51-4ca8-ae24-03f082a0d493",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C13",
+      "claim": "A meta-analysis of 279 effect sizes found an overall effect of r=0.58 (or Fisher's transformation: Zr = 0.66) for AORs in 2006.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because of substantial empirical evidence for positive interspecific relationships, including a meta-analysis of 279 effect sizes with an overall effect of r=0.58 (or its Fisher's transformation: Zr = 0.66) in 2006 (Blackburn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific meta-analysis with quantitative results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "3f81432a-9f4e-444d-a1da-fbcb0cdb2d44",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C14",
+      "claim": "A large amount of variation exists in empirical patterns of AORs, including strikingly negative relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, a large amount of variation does exist in empirical patterns of AORs, including strikingly negative relationships (Wilson, 2008; P\u00e4ivinen et al., 2005; Komonen et al., 2009; Kotiaho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies showing variation in AOR patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "7df483d5-f9d1-4494-b3a5-be018d4a1efb",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C15",
+      "claim": "Some of the observed heterogeneity in AORs is likely due to different aspects of sampling, such as the number of species and spatial and temporal coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the observed heterogeneity is likely to be due to different aspects of sampling, such as the number of species and spatial and temporal coverage (Gaston et al., 1997b; Ten Caten et al., 2022; Wilson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to works discussing sources of heterogeneity in AOR studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "e3439527-b510-4380-962f-bf51c097f33b",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C16",
+      "claim": "Confirmation bias and publication bias are widespread in ecological studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both biases are widespread, including in ecological studies (Holman et al., 2015; van Wilgenburg and Elgar, 2013; Yang et al., 2023), no studies so far systematically considered or quantified both biases in the context of AORs (Blackburn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to meta-research studies on bias in ecology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "550e3b8d-3bfd-4453-9e59-85425eba1cfb",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C17",
+      "claim": "No studies have systematically considered or quantified confirmation bias and publication bias in the context of AORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both biases are widespread, including in ecological studies (Holman et al., 2015; van Wilgenburg and Elgar, 2013; Yang et al., 2023), no studies so far systematically considered or quantified both biases in the context of AORs (Blackburn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the state of research on bias in AOR studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "e1af3621-c5bd-47ed-ae9a-5b067f86ce64",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C18",
+      "claim": "The study uses data from eBird, a global citizen science dataset aimed at counting birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use data from eBird \u2013 a global citizen science dataset aimed at counting birds \u2013 to quantify the relationship between local-scale (and global-scale) abundance and global-scale range size as a proxy for occupancy (AOR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "b3375c20-d86e-490c-a114-14d2eaa37cd8",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C19",
+      "claim": "Large citizen science datasets collected for non-hypothesis-driven purposes have the advantage of avoiding biases such as confirmation and publication bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Large citizen science datasets collected for non-hypothesis-driven purposes are not random samples (see Callaghan et al., 2017), but they have the advantage of avoiding biases such as confirmation and publication bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about the nature of citizen science data collection and is supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "c04100ee-b018-4fc9-92e2-d93d43a2bccd",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C20",
+      "claim": "The eBird dataset allows estimation of heterogeneity due to sampling intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, using the eBird dataset allows us to estimate heterogeneity due to sampling intensity (e.g. the duration of a sampling event directly influences the number of species recorded).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the characteristics of the eBird dataset and logical inference about what can be measured.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "26e5bd4e-04f3-4783-9153-04853f41eea9",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C21",
+      "claim": "Increases in species richness and sampling duration are predicted to reduce the magnitude of AORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we can quantify how AOR will change in relation to increases in species richness and sampling duration, both of which are predicted to reduce the magnitude of AORs (Gaston et al., 1997b; Ten Caten et al., 2022; Komonen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to works predicting these effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "f3999040-3b7f-4f96-9155-0033436d24b6",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C22",
+      "claim": "Global range size should be relatively stable compared to local range sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "For occupancy, we use global range size not only because global range size should be relatively stable \u2013 'local' range sizes for one species could vary dramatically \u2013 but also because different types of occupancy measures were deemed to contribute less to the observation heterogeneity (Wilson, 2011; Steenweg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about the stability of global versus local measures and is supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "c8599416-f9c8-4416-bb39-207ba463ad9e",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C23",
+      "claim": "Different types of occupancy measures contribute less to observation heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "For occupancy, we use global range size not only because global range size should be relatively stable \u2013 'local' range sizes for one species could vary dramatically \u2013 but also because different types of occupancy measures were deemed to contribute less to the observation heterogeneity (Wilson, 2011; Steenweg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on occupancy measures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "4eb27319-a177-40cd-94fe-c50966cc6f18",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C24",
+      "claim": "The study conducted a meta-analysis of 16,562,995 correlations from eBird checklists.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we carry out the largest known meta-analysis by synthesising correlations between global range sizes of 7635 species and local species counts collected across 16,562,995 eBird checklists (resulting in 16,562,995 Zr values and corresponding sampling variances; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "2efc441d-51e5-41b1-8cc1-63f42c438a79",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C25",
+      "claim": "The meta-analysis included 7635 bird species.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we carry out the largest known meta-analysis by synthesising correlations between global range sizes of 7635 species and local species counts collected across 16,562,995 eBird checklists (resulting in 16,562,995 Zr values and corresponding sampling variances; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of species included in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "acebc337-63e7-4f2a-81e6-1c649f000155",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C26",
+      "claim": "The study conducted a phylogenetically controlled comparative analysis regressing species range sizes on 7464 estimates of globally derived species' mean density.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we conduct a phylogenetically controlled comparative analysis, regressing species range sizes on 7464 estimates of globally derived species' mean density, equivalent to mean local density (per 5-degree grid cell), estimated in earlier work (Callaghan et al., 2021) (see Materials and methods for more details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the phylogenetic analysis conducted in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "71e80bf0-ba08-499e-a308-6794e35a2f76",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C27",
+      "claim": "The overall relationship between local abundance and global occupancy was near-zero (r=0.015).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the overall (aggregated) relationship between local abundance and global occupancy was near-zero (r=0.015), although this relationship was statistically significant due to our extremely large sample size (p=0.0005, z=2.805, Zr = b[overall mean]=0.015, 95% confidence interval, CI = [0.004, 0.025]; Figure 2, Supplementary file 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the eBird data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "441133ba-3e9f-4884-8056-a57b8bdbf9de",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C28",
+      "claim": "The relationship between local abundance and global occupancy was statistically significant (p=0.0005) due to the extremely large sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the overall (aggregated) relationship between local abundance and global occupancy was near-zero (r=0.015), although this relationship was statistically significant due to our extremely large sample size (p=0.0005, z=2.805, Zr = b[overall mean]=0.015, 95% confidence interval, CI = [0.004, 0.025]; Figure 2, Supplementary file 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis showing significance despite a near-zero effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "8136d17d-2cb6-4a05-b60c-d8ee27c80366",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C29",
+      "claim": "The significant relationship between local abundance and global occupancy disappeared (r=0.0009) once species number and effort time were controlled for.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this significant relationship disappeared (r=0.0009) once we controlled for species number and effort time (p=0.863, z=0.173, Zr = b[overall mean]=0.0009, 95% CI = [\u20130.0092, 0.0111]); both variables were statistically significant predictors of the effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis controlling for confounding variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "c74af2a8-a5dc-431f-936b-b36bbf45d6c7",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C30",
+      "claim": "Species number and effort time were statistically significant predictors of the AOR effect.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this significant relationship disappeared (r=0.0009) once we controlled for species number and effort time (p=0.863, z=0.173, Zr = b[overall mean]=0.0009, 95% CI = [\u20130.0092, 0.0111]); both variables were statistically significant predictors of the effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis showing these variables as significant predictors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "3ab70dd3-08bf-4bca-a85f-6c437749a3b3",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C31",
+      "claim": "Increases in species number decreased the strength of the AOR relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the increase in species number (modelled as the inverse of species number \u2013 3, which is equivalent to sampling error for Zr) and effort time on the natural log scale decreased the strength of the relationship (sampling variance: p<0.0001, z=140.29; b[sampling variance]=0.0147, 95% CI = [\u20130.0149, \u20130.0145]); ln(effort time): p<0.0001, z=\u2013183.45, b[ln(effort time)]=0.230, 95% CI = [0.226, 0.233]; marginal R2=5.1% for the model with these two predictors; Nakagawa and Schielzeth, 2013; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis showing the effect of species number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "c6ebb25e-fbda-4175-8c6a-97f55883b9e8",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C32",
+      "claim": "Increases in effort time decreased the strength of the AOR relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the increase in species number (modelled as the inverse of species number \u2013 3, which is equivalent to sampling error for Zr) and effort time on the natural log scale decreased the strength of the relationship (sampling variance: p<0.0001, z=140.29; b[sampling variance]=0.0147, 95% CI = [\u20130.0149, \u20130.0145]); ln(effort time): p<0.0001, z=\u2013183.45, b[ln(effort time)]=0.230, 95% CI = [0.226, 0.233]; marginal R2=5.1% for the model with these two predictors; Nakagawa and Schielzeth, 2013; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis showing the effect of effort time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "f1084896-db5e-4b98-b255-db0d7f96344d",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C33",
+      "claim": "The observations are consistent with the explanation that sampling protocols can create positive artefactual relationships between range and abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with the explanation that sampling protocols can create positive artefactual relationships between range and abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the statistical results showing effects of sampling variables.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "324c4f4f-86fe-46eb-9ad0-1652aceef3a7",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C34",
+      "claim": "The relative heterogeneity (I2[total]) was 13.5%, meaning 86.5% of all observed variation is due to sampling error.",
+      "claim_type": "EXPLICIT",
+      "source": "A measure of relative heterogeneity I2[total] was 13.5%, meaning that 86.5% of all the observed variation (in Figure 2) is due to sampling error, therefore, is neither biological nor ecological (country level; I2=5.5%, \u03c32=0.005; state level: I2=6.3%, \u03c32=0.005; effect-size level; I2=1.5%, \u03c32=0.001); in contrast, the average I2[total] across 86 ecological meta-analyses was approximately 92% (Senior et al., 2016), making our observed heterogeneity unusually low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of heterogeneity in the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "dece2b1b-8e42-4261-9a37-f8d865be060a",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C35",
+      "claim": "The average I2[total] across 86 ecological meta-analyses was approximately 92%.",
+      "claim_type": "EXPLICIT",
+      "source": "A measure of relative heterogeneity I2[total] was 13.5%, meaning that 86.5% of all the observed variation (in Figure 2) is due to sampling error, therefore, is neither biological nor ecological (country level; I2=5.5%, \u03c32=0.005; state level: I2=6.3%, \u03c32=0.005; effect-size level; I2=1.5%, \u03c32=0.001); in contrast, the average I2[total] across 86 ecological meta-analyses was approximately 92% (Senior et al., 2016), making our observed heterogeneity unusually low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study comparing heterogeneity across meta-analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "5d27050f-95fd-4203-b119-2af29e1c5e53",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C36",
+      "claim": "The observed heterogeneity in the study was unusually low compared to typical ecological meta-analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "A measure of relative heterogeneity I2[total] was 13.5%, meaning that 86.5% of all the observed variation (in Figure 2) is due to sampling error, therefore, is neither biological nor ecological (country level; I2=5.5%, \u03c32=0.005; state level: I2=6.3%, \u03c32=0.005; effect-size level; I2=1.5%, \u03c32=0.001); in contrast, the average I2[total] across 86 ecological meta-analyses was approximately 92% (Senior et al., 2016), making our observed heterogeneity unusually low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of the study's heterogeneity to published values from other meta-analyses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "ded20dfa-1dae-4f38-99d5-c0de5fb329da",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C37",
+      "claim": "The absolute heterogeneity (\u03c32[total]=0.011) was approximately one-thirtieth of the heterogeneity found in the previous meta-analysis (\u03c32[total]=0.323).",
+      "claim_type": "EXPLICIT",
+      "source": "We found the absolute heterogeneity, \u03c32[total]=0.011, approximately one-thirtieth of the heterogeneity (\u03c32[total]=0.323) found in the previous meta-analysis (Blackburn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of heterogeneity values between the current study and a previous meta-analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "ed272017-f288-4923-be51-2bd0ab26bbc0",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C38",
+      "claim": "The absolute heterogeneity (\u03c32[total]=0.011) is around one-tenth of the average heterogeneity (\u03c32[total]=0.125) found in 31 meta-analyses in ecology and evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, this is around one-tenth of the average heterogeneity (\u03c32[total]=0.125; median = 0.105) found in 31 meta-analyses in ecology and evolution (Yang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison to published heterogeneity values from other meta-analyses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "b23d8958-d85e-46bc-ba11-add80532e000",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C39",
+      "claim": "Low relative and absolute heterogeneities indicate that the dataset does not have much variability left to be explained.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, low relative and absolute heterogeneities indicate that our dataset of 16,562,995 effect sizes does not have much variability left to be explained despite our observations coming from many different locations across the globe and contributed by tens of thousands of individual birdwatchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the heterogeneity statistics.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "264b5358-57a0-4a4f-b4a8-a4c892332917",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C40",
+      "claim": "The combination of zero effect and very small heterogeneity is only expected when a particular phenomenon is not real.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we emphasise that this combination of zero effect and very small heterogeneity is only expected when a particular phenomenon is not real.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about what statistical patterns indicate about the reality of a phenomenon.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "73759ed8-1b69-4f36-a740-366e1f367896",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C41",
+      "claim": "The phylogenetic comparative analysis showed that global range sizes had little predictive power on mean species density (p=0.808, t99.6 = 0.0227, b[slope]=0.0928, 95% CI = [\u20130.1615, 0.2068]).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our phylogenetic comparative analysis, which accounted for phylogenetic uncertainty (Nakagawa and De Villemereuil, 2019), corroborated our meta-analytic results (cf. Gaston et al., 1997a). The global range sizes had little predictive power on mean species density (both on log10; p=0.808, t99.6 = 0.0227, b[slope]=0.0928, 95% CI = [\u20130.1615, 0.2068]; Figure 3, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis from the phylogenetic comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "a1dae82b-f54f-4c9d-ab3a-c1f2873a5c48",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C42",
+      "claim": "The results provide overwhelming evidence against the fundamental relationship between species range and local abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results provide overwhelming evidence against the fundamental relationship between species range and local abundance, while the results are consistent with this relationship as a sampling artefact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the combined results of the meta-analysis and phylogenetic analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "fb15741f-79a4-46cf-b1fc-fc60adf24b8c",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C43",
+      "claim": "The results are consistent with the AOR relationship being a sampling artefact.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results provide overwhelming evidence against the fundamental relationship between species range and local abundance, while the results are consistent with this relationship as a sampling artefact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the statistical results showing effects of sampling variables.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "1756447a-3e89-43fb-b875-0ac4619c3073",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C44",
+      "claim": "Relationships between global species ranges and local counts can be null, strongly negative, or strongly positive, generated primarily by sampling variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our results are also consistent with previously published empirical evidence. This is because we have shown that relationships between global species ranges and local counts can be null, strongly negative, or strongly positive, which can be generated primarily by sampling (error) variance (shown in Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2 and inference from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "1cfc23fd-6395-4316-98a3-bbbfb879db3f",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C45",
+      "claim": "Fishing quotas, conservation priorities, and invasive species control strategies based on AORs must be reconsidered.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate clearly that the AOR is not observed in a very large global dataset, with both applied and theoretical ramifications. First, we must reconsider fishing quotas, conservation priorities, and invasive species control strategies based on AORs (cf. Gaston, 1999a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the study's findings about the non-existence of AOR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "84fe9290-afb5-486c-aaee-26cd147e048b",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C46",
+      "claim": "It may be futile to pursue all ecological or biological mechanisms proposed for AORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it may be futile to pursue all ecological or biological mechanisms proposed for AORs (see Gaston et al., 1997b; Borregaard and Rahbek, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the study's findings about the non-existence of AOR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "e6413ceb-fac6-4fd6-862e-a98f1466f8e6",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C47",
+      "claim": "The spatial neutral model is not a suitable null model of macroecology.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, our near-zero results with small heterogeneity suggest that contrary to earlier suggestions (Bell, 2001; Hubbell, 1997), the spatial neutral model is not a suitable null model of macroecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the study's findings contradicting predictions of neutral theory.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "1fb1d818-c149-422b-9754-ba4c600ff6ad",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C48",
+      "claim": "If local adaptation were to disrupt a predicted positive AOR relationship, substantial heterogeneity and a reduced relationship would be observed, not a near-zero relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the neutral theoretical framework, AORs can be broken by local adaptation (an alternative hypothesis) (Bell, 2001). If local adaptation were to disrupt a predicted positive relationship (AOR), we would have observed substantial heterogeneity and a reduced relationship, not a near-zero relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about what patterns would be expected under local adaptation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "960bc647-bfa1-46a2-83e9-0315cd3ba1c4",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C49",
+      "claim": "It is extremely unlikely that local adaptation and neutral processes are in a perfect balance, resulting in an exact-zero relationship with little heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because it is extremely unlikely that local adaptation and neutral processes are in a perfect balance, resulting in an exact-zero relationship with little heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about the improbability of perfect balance between opposing processes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "ed5848ad-2867-4723-b33b-130b38f7609e",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C50",
+      "claim": "Local adaptations are expected to create local specificities and global variability/heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, local adaptations are expected to create local specificities and global variability/heterogeneity; our meta-analysis did not find such variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about the expected consequences of local adaptation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "807659b3-85d5-4190-9cfd-20607cb2ac1a",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C51",
+      "claim": "Any model of a positive AOR posits a mechanism that connects species range and local abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "We point out that any model of a positive AOR posits a mechanism that connects species range and local abundance on the one hand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about the nature of AOR models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "ed0705ef-5a0d-4bea-baca-f3d2fb8ce1cc",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C52",
+      "claim": "Rabinowitz effectively decoupled species range and local abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Rabinowitz, on the other hand, effectively decoupled these two variables (Rabinowitz, 1981), although studies using her framework found positive correlations between species range and local abundance (Yu and Dobson, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rabinowitz's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "b5ddefe5-1431-47da-838c-a966ae6c8b3a",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C53",
+      "claim": "Studies using Rabinowitz's framework found positive correlations between species range and local abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Rabinowitz, on the other hand, effectively decoupled these two variables (Rabinowitz, 1981), although studies using her framework found positive correlations between species range and local abundance (Yu and Dobson, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study using Rabinowitz's framework.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "2eb556fa-7494-462a-b3e2-0a334465bffb",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C54",
+      "claim": "Rabinowitz suggests seven forms of rarity by adding habitat specificity to species range and abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "By adding habit specificity to species range and abundance, she suggests seven forms of rarity, which could reflect different underlying macroecological mechanisms; e.g., two forms of rarity are geographically restricted but locally abundant with narrow or broad habitat types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of Rabinowitz's framework as discussed in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "41ec965f-a381-4d1d-a226-ed8272439afa",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C55",
+      "claim": "The study's results support the existence of many 'rare' species as defined by Rabinowitz's framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the world created by the spatial neutral model, our results support many such 'rare' species (Yu and Dobson, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the study's findings in relation to Rabinowitz's framework.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "b3893696-1141-4054-a3bd-f3b450ab2ba6",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C56",
+      "claim": "Rabinowitz's framework has more empirical support from global-scale patterns of species abundance than the AOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we believe Rabinowitz's framework, rather than the AOR, has more empirical support from global-scale patterns of species abundance and provides a useful conceptual structure for future theoretical and applied work, although this line of work is still limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the study's findings and comparison to Rabinowitz's framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "81a75327-5d03-4ac5-b1db-5ec250a97e55",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C57",
+      "claim": "The study only deals with interspecific AORs among birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our findings challenge some long-held assumptions about the consistency of the AOR, our work only deals with interspecific AORs among birds, synthesising observations from potentially heterogeneous locations, ecological contexts, and data quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the scope of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "8854ff64-0849-4b48-9dd8-64b021e3f655",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C58",
+      "claim": "The study did not account for anthropogenic changes in populations or range sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We further acknowledge that we did not account for anthropogenic changes in populations or range sizes in our analyses and, therefore, we included alien species without separating them from native ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "451cc415-0170-4f7e-8d88-78e8b7d11007",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C59",
+      "claim": "The study included alien species without separating them from native ones.",
+      "claim_type": "EXPLICIT",
+      "source": "We further acknowledge that we did not account for anthropogenic changes in populations or range sizes in our analyses and, therefore, we included alien species without separating them from native ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study's methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "d275cc85-1127-47c1-a670-1da019786871",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C60",
+      "claim": "Species range data are often overestimated due to the failure to capture gaps in actual distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "More precise range-size estimates would also improve the accuracy of AOR assessments since species range data are often overestimated due to the failure to capture gaps in actual distributions (Ocampo-Pe\u00f1uela et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on range size estimation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "3290659e-bc94-44ec-be00-1680df3c36af",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C61",
+      "claim": "Much of the overestimation in the previous meta-analysis originates from publication bias and confirmation bias.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we speculate that much of the overestimation originates from publication bias and confirmation bias, which is supported by mounting evidence from meta-research studies (Holman et al., 2015; van Wilgenburg and Elgar, 2013; Yang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative but supported by citations to meta-research studies on bias.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "40e66c12-174a-4b67-b9db-d0754c31d6e9",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C62",
+      "claim": "eBird datasets are free from publication and confirmation biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not have direct evidence, our eBird datasets are free from these two types of biases (i.e. birdwatchers generally do not think of the macroecological patterns that would later be tested with the data they submit), while the literature-based meta-analyses are not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the nature of citizen science data collection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "c226faaf-96c6-49dd-8d42-b8749af3b3bd",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C63",
+      "claim": "The original meta-analysis of AOR stated that more than half a million unpublished null results would be required to nullify the effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding publication bias, the original meta-analysis of AOR states, 'the fail-safe number indicates that more than half a million unpublished null results would be required to nullify an effect of this magnitude' (Blackburn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a direct quote from the previous meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "85197897-051a-44f3-bcad-e54524e02083",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C64",
+      "claim": "The study provided much more than half a million null effects to reach a null conclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we provided much more than half a million null effects to reach our null conclusion (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "873a57f5-a69f-489a-b4d2-b87049cd0436",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C65",
+      "claim": "A recent study re-examining 86 ecological and evolutionary meta-analyses demonstrated a 23% reduction in overall effects due to publication bias.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study re-examining 86 ecological and evolutionary meta-analyses demonstrated a 23% reduction in overall effects due to publication bias, turning 33 of 50 statistically significant meta-analytic conclusions (66%) into non-significant (Yang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a meta-research study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "b0a21444-be95-4969-b9c3-f7c29538202b",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C66",
+      "claim": "A study examining 83 topics in life sciences showed that the effect size of non-blind studies was twice as large as blinded counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a study examining 83 topics in life sciences showed that the effect size of non-blind studies, which are at risk of confirmation bias, was twice as large as blinded counterparts protected against confirmation bias (Holman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a meta-research study on confirmation bias.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "557bab1e-1057-493e-9502-f9b977a742b5",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C67",
+      "claim": "Meta-research on behavioural ecology identified 79 studies on nestmate recognition, 23 of which were conducted blind.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-research on behavioural ecology identified 79 studies on nestmate recognition, 23 of which were conducted blind (van Wilgenburg and Elgar, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a meta-research study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "d95d763f-b159-4d96-9d4c-8bdbb209cd55",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C68",
+      "claim": "Non-blind studies confirmed a hypothesis of no aggression towards nestmates nearly three times more often than blind studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-blind studies confirmed a hypothesis of no aggression towards nestmates nearly three times more often.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the meta-research study cited in the previous sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "50e39fc7-e010-4781-97b9-646784daeda3",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C69",
+      "claim": "There have been over 100 studies on ego depletion in psychology.",
+      "claim_type": "EXPLICIT",
+      "source": "There have been over 100 studies, and many theoretical models support the hypothesis of 'ego depletion', where self-control is a finite resource, so self-control will decrease once it is exerted (Inzlicht and Schmeichel, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review of ego depletion research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "ed164474-ec24-43e6-9ee9-72361b0d6f98",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C70",
+      "claim": "The first meta-analysis of ego depletion suggested very strong support for it (d=0.62).",
+      "claim_type": "EXPLICIT",
+      "source": "The first meta-analysis of ego depletion, like AOR, suggested very strong support for it (standardised mean difference, or d=0.62).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of the ego depletion literature discussed in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "74eb8a09-49d4-46da-8a4f-3a8e0fc87996",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C71",
+      "claim": "A subsequent multi-lab replication found that ego depletion does not exist and is so weak as to be negligible (d=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, a subsequent multi-lab replication found that ego depletion does not exist and is so weak as to be negligible (d=0.04) (Hagger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a multi-lab replication study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "aca3c9f5-2f5d-4a33-b60a-cb232a2f0fdf",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C72",
+      "claim": "A series of multi-lab replications has indicated that several psychological phenomena once believed to be real are too weak to be useful or are non-existent.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a series of multi-lab replications has indicated that several psychological phenomena, which were once believed to be real beyond a reasonable doubt, are too weak to be useful or are non-existent (Kvarven et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on replication in psychology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "5de33415-b22a-44eb-aef5-359a78171a0e",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C73",
+      "claim": "Recently collated large datasets collected for non-hypothesis-driven purposes offer a unique opportunity to revisit and retest longstanding ideas in ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "In ecology, recently collated large datasets collected for non-hypothesis-driven purposes offer a unique opportunity to revisit and retest longstanding ideas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the potential of large datasets.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "60d4e3d5-2275-43a1-a7eb-a486ef0eddb1",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C74",
+      "claim": "Very few ecological topics are free from sampling, confirmation, and publication biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we call for re-examining all ecological laws, rules, and patterns, as very few topics are free from sampling, confirmation, and publication biases (cf. Hughes et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from meta-research findings and is supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "03a2cd60-b073-4294-9e67-75a4bb51cbf4",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C75",
+      "claim": "A credibility revolution in ecology needs to embrace non-traditional methods such as pre-registration, registered reports, prospective and living meta-analyses, open synthesis communities, and big-team-science collaborations.",
+      "claim_type": "EXPLICIT",
+      "source": "A credibility revolution in ecology, like in psychology, needs to embrace non-traditional methods to avoid confirmation and publication bias, such as pre-registration (Nosek et al., 2018), registered reports (Chambers and Tzavella, 2022), prospective and living meta-analyses, open synthesis communities (Nakagawa et al., 2020), and big-team-science collaborations (Coles et al., 2022) involving community (citizen) scientists (Callaghan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to works describing these methodological approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "1a92479d-d279-4f9b-acaf-14d8f520de8f",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C76",
+      "claim": "eBird was launched in 2002 by the Cornell Lab of Ornithology.",
+      "claim_type": "EXPLICIT",
+      "source": "eBird, launched in 2002 by the Cornell Lab of Ornithology, is a global citizen science project that enlists volunteer birdwatchers to submit 'checklists' of birds seen and/or heard while birdwatching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the history of eBird.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "f5c09e2f-3258-48d3-80fd-17d3ae9511c2",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C77",
+      "claim": "eBird data undergo a semi-automated filtering process before being entered into the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Data undergo a semi-automated filtering process before being entered into the dataset, and expert reviewers additionally review species (or counts of species) that surpass preset filters before being accepted into the dataset (Gilfedder et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation describing eBird's data quality procedures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "888a77fa-d9a8-476b-b4ef-2cb9d51ef23d",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C78",
+      "claim": "The study downloaded the eBird basic dataset version ebd_rel-May2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We downloaded the eBird basic dataset (version ebd_rel-May2020) and considered all eBird checklists between 1 January 2005 and 31 May 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "246cc2f0-91f9-4b02-b8ad-69ca5ac1356e",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C79",
+      "claim": "The study considered all eBird checklists between 1 January 2005 and 31 May 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We downloaded the eBird basic dataset (version ebd_rel-May2020) and considered all eBird checklists between 1 January 2005 and 31 May 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the temporal scope of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "57a5a3a1-649d-46d7-8b68-7a172b080097",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C80",
+      "claim": "The study only included complete checklists.",
+      "claim_type": "EXPLICIT",
+      "source": "We only included: (1) complete checklists; (2) checklists that were <240 min and >5 min; (3) checklists that travelled <5 km; and (4) checklists that travelled <500 ha.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "2ab23a22-8a56-441c-9df8-92671b20b34d",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C81",
+      "claim": "The study only included checklists that were less than 240 minutes and greater than 5 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "We only included: (1) complete checklists; (2) checklists that were <240 min and >5 min; (3) checklists that travelled <5 km; and (4) checklists that travelled <500 ha.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "9bf6e922-1574-4764-a9f8-b095b4dc7551",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C82",
+      "claim": "The study excluded any checklist that had at least an 'X' on it.",
+      "claim_type": "EXPLICIT",
+      "source": "Because birdwatchers will sometimes use an 'X' to signify presence, and this is most likely to happen for more abundant species, we excluded any checklist that had at least an 'X' on it, as this could potentially influence the correlation between the abundance of a species and range size by disproportionately removing the most abundant species from the correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data filtering criteria and the reasoning behind it.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "d955fc35-4532-44f1-b4ae-8e5e7ef65856",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C83",
+      "claim": "The study only considered checklists that had at least 10 species recorded on them.",
+      "claim_type": "EXPLICIT",
+      "source": "We further only considered checklists that had at least 10 species recorded on them, and a correlation test was performed only if we had range size data (see below) for a minimum of four species on the checklist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "9e5fd276-b840-4dd0-af35-73cd2b191def",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C84",
+      "claim": "The study used range size maps from BirdLife International, 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "We used range size maps from BirdLife International, 2023, using their global range, ignoring the differences between resident and breeding ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data source for range sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "1d3c04cf-1279-43b1-8ed4-63e243fa1d0d",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C85",
+      "claim": "The study obtained 16,562,995 correlations based on 3,005,668,285 individual bird observations.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 16,562,995 correlations based on 3,005,668,285 individual bird observations, including 7635 species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the scale of the data analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "f74d9cdb-b2bf-4c03-9c7f-965b5a7537d8",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C86",
+      "claim": "The study transformed correlations into Fisher's Z (Zr) to unbound and calculated sampling variance for each Zr value.",
+      "claim_type": "EXPLICIT",
+      "source": "We transformed correlations between species abundance and range into Fisher's Z or Zr to unbound and calculated sampling variance for each Zr value; note that the inverse of the sampling variance of Zr is N (the number of species in a checklist) \u2013 3 (see Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "dd260d51-fa46-4731-b7c6-33593e1b0923",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C87",
+      "claim": "The inverse of the sampling variance of Zr is N (the number of species in a checklist) \u2013 3.",
+      "claim_type": "EXPLICIT",
+      "source": "We transformed correlations between species abundance and range into Fisher's Z or Zr to unbound and calculated sampling variance for each Zr value; note that the inverse of the sampling variance of Zr is N (the number of species in a checklist) \u2013 3 (see Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a statistical property of Fisher's Z transformation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "a1556c5a-a7ce-4b38-a538-c6d1323159a4",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C88",
+      "claim": "The study used the R package asreml to run a multilevel random effects model.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the R package, asreml (Nakagawa and Santos, 2012), to run a multilevel random effects model (Nakagawa and Santos, 2012); note that asreml is a commercial package, so it is not free.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical software used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "5083dcc2-9dbe-4e04-9877-febc04d4ca32",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C89",
+      "claim": "The study had 'country' (245 levels) and state code (2871 levels) as random factors in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We had 'country' (245 levels) and state code (2871 levels) as random factors in the model to control for non-independence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "3a45c73e-8eda-46c4-af85-bd02ee1c08b0",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C90",
+      "claim": "The study used data from a recently published analysis of global abundances for birds within 5-degree grid cells for the macro-scale analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we used data from a recently published analysis of global abundances for birds within 5-degree grid cells (Callaghan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data source for the macro-scale analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "8d203001-012a-4c1a-8348-007763b39612",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C91",
+      "claim": "The macro-scale analysis incorporated a total of 7464 bird species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis incorporated a total of 7464 species of bird species, corresponding to the species for which we had both range maps and estimated density, along with phylogenetic information included in Jetz et al., 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of species in the macro-scale analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "5bc99e0b-c581-4265-a53d-a75620572565",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C92",
+      "claim": "The study used avian phylogeny from Jetz et al., 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "We used avian phylogeny from Jetz et al., 2012, and analysed 100 phylogenetic trees using the R function phylolm (Ho and An\u00e9, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the phylogenetic data source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "19834e9b-e346-4605-ad6d-68edc3d45f8d",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C93",
+      "claim": "The study analyzed 100 phylogenetic trees using the R function phylolm.",
+      "claim_type": "EXPLICIT",
+      "source": "We used avian phylogeny from Jetz et al., 2012, and analysed 100 phylogenetic trees using the R function phylolm (Ho and An\u00e9, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the phylogenetic analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "f50f0336-d9e1-4531-a4a3-bb6eed000f4b",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C94",
+      "claim": "The meta-analysis is based on approximately 3 billion bird observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, based on the largest known meta-analysis of 16,562,995 correlations from ~3 billion bird observations, this relationship was indistinguishable from zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the scale of the data in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "c5fec4c4-f2d4-45b5-8bca-e13af4c43162",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C95",
+      "claim": "In the phylogenetic comparative analysis, species range had no predictive power over the global mean abundance of 7464 bird species.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in a phylogenetic comparative analysis, species range had no predictive power over the global mean abundance of 7464 bird species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the results of the phylogenetic analysis in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "a38c82f3-38f7-4db5-b298-5d8a11b4ac3c",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C96",
+      "claim": "Publication and confirmation biases may have created AORs, an illusion of a 'universal' pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that publication and confirmation biases may have created AORs, an illusion of a 'universal' pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on inference from the study's findings and meta-research on bias.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "df00a63a-40a4-4ba2-9a52-c6eb6905dba6",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C97",
+      "claim": "The nullification of AOR highlights the need for ecologists to instigate a credibility revolution like psychology.",
+      "claim_type": "EXPLICIT",
+      "source": "This nullification highlights the need for ecologists to instigate a credibility revolution like psychology, where many classic phenomena have been nullified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on inference from the study's findings and parallels with psychology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "a10e8760-36d6-41eb-98db-ed94b1b4f48b",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C98",
+      "claim": "Many classic phenomena in psychology have been nullified.",
+      "claim_type": "EXPLICIT",
+      "source": "This nullification highlights the need for ecologists to instigate a credibility revolution like psychology, where many classic phenomena have been nullified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of the replication crisis in psychology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "99f615b4-0991-4db2-b1e1-76b868115b05",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C99",
+      "claim": "The relationship between local abundance and global occupancy was r=0.015 with a 95% confidence interval of [0.004, 0.025].",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the overall (aggregated) relationship between local abundance and global occupancy was near-zero (r=0.015), although this relationship was statistically significant due to our extremely large sample size (p=0.0005, z=2.805, Zr = b[overall mean]=0.015, 95% confidence interval, CI = [0.004, 0.025]; Figure 2, Supplementary file 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the statistical results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "3b9330d6-b555-472a-82ef-13c53690afd9",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C100",
+      "claim": "After controlling for species number and effort time, the relationship between local abundance and global occupancy was r=0.0009 with a 95% CI of [\u20130.0092, 0.0111].",
+      "claim_type": "EXPLICIT",
+      "source": "However, this significant relationship disappeared (r=0.0009) once we controlled for species number and effort time (p=0.863, z=0.173, Zr = b[overall mean]=0.0009, 95% CI = [\u20130.0092, 0.0111]); both variables were statistically significant predictors of the effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the statistical results after controlling for confounders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "a14481ad-faad-462d-9736-43371660b533",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C101",
+      "claim": "The marginal R2 was 5.1% for the model with species number and effort time as predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the increase in species number (modelled as the inverse of species number \u2013 3, which is equivalent to sampling error for Zr) and effort time on the natural log scale decreased the strength of the relationship (sampling variance: p<0.0001, z=140.29; b[sampling variance]=0.0147, 95% CI = [\u20130.0149, \u20130.0145]); ln(effort time): p<0.0001, z=\u2013183.45, b[ln(effort time)]=0.230, 95% CI = [0.226, 0.233]; marginal R2=5.1% for the model with these two predictors; Nakagawa and Schielzeth, 2013; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the model fit statistic.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "109f1454-c0de-4373-93ab-f1f3ab83d025",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "claim_id": "C104",
+      "claim": "The previous meta-analysis for birds found r=0.74 or Zr = 0.95.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the different potential biases mentioned before, we expected a more modest relationship in relation to that of the previous meta-analysis (r=0.58; note that this relationship included many different taxa; if restricted to bird species, it was even stronger r=0.74 or Zr = 0.95) (Blackburn and Gaston, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the previous meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f659e121-76ba-40ed-bf1e-cc4afd505862",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used eBird citizen science data (16,562,995 checklists from 2005-2020, covering 7635 species and ~3 billion bird observations) to test abundance-occupancy relationships. The dataset was filtered for quality and completeness, correlations were transformed to Fisher's Z, and analyzed using multilevel random effects models with country and state as random factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C89 collectively describe the data source, filtering criteria, sample size, and analytical approach. The methodology is clearly documented with specific inclusion/exclusion criteria, appropriate statistical transformations, and multilevel modeling to account for spatial non-independence. The scale of the dataset (>16 million correlations) is unprecedented for AOR studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "a037d325-1a27-49f1-92d4-38e38c0732d5",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The overall meta-analytic relationship between local abundance and global occupancy was near-zero (r=0.015, 95% CI [0.004, 0.025], p=0.0005). While statistically significant, the effect size is negligible and the significance is attributed to the extremely large sample size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 and C99 report the primary finding with appropriate statistical details. The authors correctly note that statistical significance with such a large sample does not imply biological or ecological significance. The near-zero correlation contradicts the expected positive AOR relationship, and the confidence interval, while excluding zero, indicates a trivially small effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "After controlling for species number and effort time, the relationship between local abundance and global occupancy became indistinguishable from zero (r=0.0009, 95% CI [-0.0092, 0.0111], p=0.863). Both species number and effort time were significant predictors that decreased the strength of the AOR relationship, with the model explaining 5.1% of variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 and C100-C101 demonstrate that the weak initial relationship disappears when controlling for sampling-related variables. The statistical evidence is robust (non-significant p-value, confidence interval spanning zero). This supports the interpretation that observed AORs may be sampling artifacts. The low R\u00b2 (5.1%) indicates these predictors explain little variance, consistent with most variation being sampling error.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "e338ebac-4e82-4b93-bfda-15eb96597079",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The meta-analysis showed unusually low heterogeneity: I\u00b2[total]=13.5% (meaning 86.5% of variation is sampling error) and \u03c3\u00b2[total]=0.011 (approximately 1/30th of the previous meta-analysis and 1/10th of typical ecological meta-analyses). This indicates minimal biological or ecological variability remains to be explained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 provide compelling evidence through comparison to established benchmarks. The I\u00b2 of 13.5% is dramatically lower than the ~92% average for ecological meta-analyses (C35), and the absolute heterogeneity is substantially smaller than both the previous AOR meta-analysis (C37) and typical ecology/evolution meta-analyses (C38). This pattern strongly suggests the phenomenon lacks real biological variation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "39815612-cbcd-4834-b61b-a3427308eabd",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The combination of zero effect and very small heterogeneity is only expected when a particular phenomenon is not real.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 represents a logical inference from meta-analytic principles. When a true effect exists, heterogeneity typically reflects real variation in effect sizes across contexts. The observed pattern (near-zero mean effect with minimal heterogeneity beyond sampling error) is indeed the signature of a non-existent phenomenon, as the authors state. This interpretation is consistent with meta-analytic theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "9e063564-ccdc-4529-8d8e-e10819dab969",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A phylogenetically controlled comparative analysis of 7464 bird species found that global range size had no predictive power over mean species density (p=0.808, slope=0.0928, 95% CI [-0.1615, 0.2068]). The analysis used 100 phylogenetic trees and accounted for phylogenetic uncertainty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C41, and C90-C93 describe a complementary macro-scale analysis using different abundance measures (mean density per 5-degree grid) and appropriate phylogenetic methods. The non-significant result (p=0.808) with a confidence interval spanning zero corroborates the meta-analytic findings. The phylogenetic approach addresses potential confounding from shared evolutionary history, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "357f6081-196f-4c8c-959b-6f384cb642ce",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The combined results provide overwhelming evidence against a fundamental relationship between species range and local abundance, while being consistent with AOR as a sampling artifact. The observed variation in correlations (null, negative, or positive) can be generated primarily by sampling variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 synthesize the meta-analytic and phylogenetic results. The interpretation is justified by: (1) near-zero overall effect, (2) effect disappearing when controlling for sampling variables, (3) minimal heterogeneity beyond sampling error, and (4) independent confirmation from phylogenetic analysis. The consistency with sampling artifact explanation is supported by the demonstrated effects of species number and effort time (C31-C32).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "65ad6719-716c-4247-b75d-472d5a6f8014",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings necessitate reconsideration of fishing quotas, conservation priorities, and invasive species control strategies based on AORs, and suggest it may be futile to pursue ecological or biological mechanisms proposed for AORs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 represent logical implications of the null finding. If AOR does not exist as a biological phenomenon, then management strategies predicated on this relationship (C5-C6) require reevaluation, and mechanistic explanations (C7) become moot. However, these are recommendations for future action rather than empirical findings, and their implementation would require careful consideration of context-specific evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "510dc155-5444-47cc-9f6e-02a9469b1078",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The near-zero results with small heterogeneity suggest the spatial neutral model is not a suitable null model of macroecology. If local adaptation were disrupting neutral predictions, substantial heterogeneity would be observed rather than a near-zero relationship, as perfect balance between processes is extremely unlikely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 present a logical argument against neutral theory as a macroecological null model. The reasoning is sound: neutral theory predicts positive AORs (C8-C9), but the data show near-zero effects. Local adaptation breaking neutral predictions (C48) would create heterogeneity, not the observed homogeneous near-zero pattern. The improbability of perfect balance (C49) strengthens this argument. This represents a significant theoretical implication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "f60c0ac0-9926-48b8-82a4-0be9e4650446",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Rabinowitz's framework, which decouples species range and local abundance and identifies seven forms of rarity, has more empirical support from global-scale patterns than AOR and provides a more useful conceptual structure for future work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C56 propose Rabinowitz's framework as an alternative to AOR. While the decoupling is consistent with the null AOR finding (C42), the study does not directly test Rabinowitz's framework or demonstrate that it better explains the data. The claim of \"more empirical support\" (C56) is inferential rather than demonstrated. The authors acknowledge this work is \"still limited\" (C56), indicating this is a suggested direction rather than a validated conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "08f3210a-ecc9-472c-a664-c61304269608",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study acknowledges limitations: it only examines interspecific AORs in birds, does not account for anthropogenic changes or separate alien from native species, and range size estimates may be overestimated due to gaps in actual distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 transparently acknowledge study limitations. These are appropriate caveats that could affect generalizability (C57), introduce unmeasured confounding (C58-C59), or bias range size estimates (C60). The authors correctly note these limitations while maintaining that the core findings remain robust. This transparency strengthens rather than weakens the overall contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that publication and confirmation biases created the illusion of AOR as a universal pattern. eBird data are free from these biases (as birdwatchers don't consider macroecological patterns), while literature-based meta-analyses are not. The study provided >16 million null effects, far exceeding the \"half million\" fail-safe number from the original meta-analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C68 and C96 propose bias as an explanation for the discrepancy with previous meta-analyses. While supported by meta-research evidence (C65-C68) and the fail-safe number comparison (C63-C64), the claim that eBird is \"free from\" publication/confirmation bias (C62) is speculative and acknowledged as lacking direct evidence. eBird has other potential biases (noted after C62), and the exclusion of checklists with 'X' marks (C82) may introduce bias. The bias explanation is plausible but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "458f9f38-5ff8-4112-b7f4-456b5c653587",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Drawing parallels to psychology's replication crisis (where phenomena like ego depletion were nullified), the authors call for a credibility revolution in ecology, re-examining ecological laws and embracing methods like pre-registration, registered reports, and big-team science to counter biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C75 and C97-C98 draw appropriate parallels between the AOR nullification and psychology's replication crisis. The ego depletion example (C70-C71) is well-documented, and the call for methodological reforms (C75) is justified by meta-research evidence (C65-C66). However, this is primarily a recommendation for future practice rather than an empirical finding. The parallel is apt, but whether ecology faces a crisis of similar magnitude remains to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "74a67767-3040-4383-8517-b9e80c9c0281",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes that AOR is considered a robust macroecological pattern with practical applications, but its mechanism remains unresolved, multiple biological explanations lack support, and sampling bias as an explanation has been dismissed despite no systematic assessment of publication and confirmation biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 accurately summarize the state of AOR research based on cited literature. The characterization of AOR as a \"general and robust pattern\" (C1), its applications (C5-C6), unresolved mechanisms (C4, C7), and the dismissal of sampling bias (C12) are all supported by appropriate citations. The identification of a gap regarding systematic bias assessment (C17) motivates the current study. This represents accurate prior work assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "58197ee2-239d-401f-9ee8-09b49f564e4e",
+      "content_id": "d2ab970a-be2b-402e-9593-7901ff9df97e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study design was informed by predictions that species richness and sampling duration would reduce AOR magnitude, and that global range size would be more stable than local measures. The authors expected a more modest relationship than the previous meta-analysis (r=0.58 overall; r=0.74 for birds).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C104 describe the study's theoretical expectations based on prior work. These predictions are appropriately cited (C21, C23) and provide context for interpreting the results. The expectation of a \"more modest\" relationship (C104) acknowledges potential biases while still anticipating a positive effect, making the null finding more striking. This represents appropriate hypothesis formulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "ec1c75d4-8466-44ac-a067-781ffd49c123",
+      "content_id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The meta-analysis of 16,562,995 correlations found a near-zero overall relationship between local abundance and global occupancy (r=0.015), which was statistically significant due to large sample size but disappeared (r=0.0009) when controlling for species number and effort time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express that 'multiple unresolved confounding factors exist, leaving the results inadequate to overturn the repeatedly confirmed abundancy-occupancy relationship.' They question 'whether testing AOR at a global scale is meaningful given the numerous confounding factors involved' and note that 'with the current data and analytical approach, these confounders appear inseparable.' This indicates the reviewers view the evidence as insufficient due to methodological concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "ab756e64-ba4e-415c-84e7-eddaf9312ae8",
+      "content_id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Increases in species number and effort time significantly decreased the strength of the AOR relationship, consistent with sampling protocols creating artefactual positive relationships between range and abundance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the statistical findings about sampling variables are not directly challenged, reviewers state that 'confounding factors' remain 'inseparable' from the analysis. The interpretation that sampling creates artefactual relationships is part of the broader conclusion that reviewers find inadequately supported due to unresolved confounders.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49",
+      "content_id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The study found unusually low heterogeneity (I\u00b2=13.5%, \u03c4\u00b2=0.011), with 86.5% of variation due to sampling error, which the authors interpret as indicating the AOR phenomenon is not real.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not explicitly address the heterogeneity findings, but their overarching concern that 'multiple unresolved confounding factors exist' and that the results are 'inadequate to overturn' AOR suggests skepticism about the interpretation of low heterogeneity as evidence against AOR. The reviewers' call for identifying 'specific conditions under which AORs are valid' implies they view the global-scale approach as potentially masking real patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "680107c2-b822-48db-a09a-799aff9cd8f6",
+      "content_id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The phylogenetic comparative analysis of 7464 species showed that global range sizes had little predictive power on mean species density (p=0.808, b=0.0928, 95% CI = [\u22120.1615, 0.2068]).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers state that 'the primary concerns raised by reviewers remain inadequately addressed' and emphasize concerns about 'the correlation between checklist data and global range data' and 'foundational assumptions and potential confounding factors.' This suggests the phylogenetic analysis, while not directly critiqued, is viewed as part of an approach with unresolved methodological issues.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "a8567e3b-58d5-41dd-8bc9-a0d2e6b14f48",
+      "content_id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The combined results provide evidence against a fundamental relationship between species range and local abundance, with the pattern being consistent with a sampling artefact that can produce null, negative, or positive relationships.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers explicitly state the results are 'inadequate to overturn the repeatedly confirmed abundancy-occupancy relationship' and that 'multiple unresolved confounding factors exist.' They emphasize that 'with the current data and analytical approach, these confounders appear inseparable,' directly challenging the authors' conclusion that AOR is a sampling artefact rather than a real phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "fa6944b0-552d-479e-9df8-b279625d0e08",
+      "content_id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The study uses eBird citizen science data, which the authors claim avoids confirmation and publication biases because it was collected for non-hypothesis-driven purposes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers emphasize the need to 'thoroughly address the correlation between checklist data and global range data, ensuring that the foundational assumptions and potential confounding factors are explicitly examined.' This suggests concern about whether the eBird data is appropriate for testing AOR at a global scale, though reviewers do not directly challenge the claim about bias avoidance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "2d50da27-475d-46e8-bfb7-0ae190fcfc23",
+      "content_id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The study acknowledges limitations including that it only addresses interspecific AORs among birds, did not account for anthropogenic changes, and included alien species without separation from native ones.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note these are limitations but do not challenge the authors' acknowledgment of them. The reviewers' concerns focus more broadly on whether the global-scale approach can adequately control for confounding factors, which aligns with but extends beyond these specific acknowledged limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "f1f51097-ec7a-4447-bb19-ed27de2c83f3",
+      "content_id": "afeb0fb0-2286-4f64-bded-3b2e28d0a5e7",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors speculate that publication and confirmation biases in previous literature may have created the illusion of a universal AOR pattern.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers state that the results are 'inadequate to overturn the repeatedly confirmed abundancy-occupancy relationship,' which directly challenges the speculation that previous findings were primarily due to bias. The reviewers' emphasis on 'unresolved confounding factors' in the current study suggests they view the bias explanation as insufficiently supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e1af3621-c5bd-47ed-ae9a-5b067f86ce64",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "b3375c20-d86e-490c-a114-14d2eaa37cd8",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "c04100ee-b018-4fc9-92e2-d93d43a2bccd",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "4eb27319-a177-40cd-94fe-c50966cc6f18",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "2efc441d-51e5-41b1-8cc1-63f42c438a79",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "1a92479d-d279-4f9b-acaf-14d8f520de8f",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "f5c09e2f-3258-48d3-80fd-17d3ae9511c2",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "888a77fa-d9a8-476b-b4ef-2cb9d51ef23d",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "246cc2f0-91f9-4b02-b8ad-69ca5ac1356e",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "57a5a3a1-649d-46d7-8b68-7a172b080097",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "2ab23a22-8a56-441c-9df8-92671b20b34d",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "9bf6e922-1574-4764-a9f8-b095b4dc7551",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "d955fc35-4532-44f1-b4ae-8e5e7ef65856",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "9e5fd276-b840-4dd0-af35-73cd2b191def",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "1d3c04cf-1279-43b1-8ed4-63e243fa1d0d",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "f74d9cdb-b2bf-4c03-9c7f-965b5a7537d8",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "dd260d51-fa46-4731-b7c6-33593e1b0923",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "a1556c5a-a7ce-4b38-a538-c6d1323159a4",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "5083dcc2-9dbe-4e04-9877-febc04d4ca32",
+      "result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862"
+    },
+    {
+      "claim_id": "71e80bf0-ba08-499e-a308-6794e35a2f76",
+      "result_id": "a037d325-1a27-49f1-92d4-38e38c0732d5"
+    },
+    {
+      "claim_id": "441133ba-3e9f-4884-8056-a57b8bdbf9de",
+      "result_id": "a037d325-1a27-49f1-92d4-38e38c0732d5"
+    },
+    {
+      "claim_id": "99f615b4-0991-4db2-b1e1-76b868115b05",
+      "result_id": "a037d325-1a27-49f1-92d4-38e38c0732d5"
+    },
+    {
+      "claim_id": "8136d17d-2cb6-4a05-b60c-d8ee27c80366",
+      "result_id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35"
+    },
+    {
+      "claim_id": "c74af2a8-a5dc-431f-936b-b36bbf45d6c7",
+      "result_id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35"
+    },
+    {
+      "claim_id": "3ab70dd3-08bf-4bca-a85f-6c437749a3b3",
+      "result_id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35"
+    },
+    {
+      "claim_id": "c6ebb25e-fbda-4175-8c6a-97f55883b9e8",
+      "result_id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35"
+    },
+    {
+      "claim_id": "f1084896-db5e-4b98-b255-db0d7f96344d",
+      "result_id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35"
+    },
+    {
+      "claim_id": "3b9330d6-b555-472a-82ef-13c53690afd9",
+      "result_id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35"
+    },
+    {
+      "claim_id": "a14481ad-faad-462d-9736-43371660b533",
+      "result_id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35"
+    },
+    {
+      "claim_id": "324c4f4f-86fe-46eb-9ad0-1652aceef3a7",
+      "result_id": "e338ebac-4e82-4b93-bfda-15eb96597079"
+    },
+    {
+      "claim_id": "dece2b1b-8e42-4261-9a37-f8d865be060a",
+      "result_id": "e338ebac-4e82-4b93-bfda-15eb96597079"
+    },
+    {
+      "claim_id": "5d27050f-95fd-4203-b119-2af29e1c5e53",
+      "result_id": "e338ebac-4e82-4b93-bfda-15eb96597079"
+    },
+    {
+      "claim_id": "ded20dfa-1dae-4f38-99d5-c0de5fb329da",
+      "result_id": "e338ebac-4e82-4b93-bfda-15eb96597079"
+    },
+    {
+      "claim_id": "ed272017-f288-4923-be51-2bd0ab26bbc0",
+      "result_id": "e338ebac-4e82-4b93-bfda-15eb96597079"
+    },
+    {
+      "claim_id": "b23d8958-d85e-46bc-ba11-add80532e000",
+      "result_id": "e338ebac-4e82-4b93-bfda-15eb96597079"
+    },
+    {
+      "claim_id": "264b5358-57a0-4a4f-b4a8-a4c892332917",
+      "result_id": "39815612-cbcd-4834-b61b-a3427308eabd"
+    },
+    {
+      "claim_id": "acebc337-63e7-4f2a-81e6-1c649f000155",
+      "result_id": "9e063564-ccdc-4529-8d8e-e10819dab969"
+    },
+    {
+      "claim_id": "73759ed8-1b69-4f36-a740-366e1f367896",
+      "result_id": "9e063564-ccdc-4529-8d8e-e10819dab969"
+    },
+    {
+      "claim_id": "3a45c73e-8eda-46c4-af85-bd02ee1c08b0",
+      "result_id": "9e063564-ccdc-4529-8d8e-e10819dab969"
+    },
+    {
+      "claim_id": "8d203001-012a-4c1a-8348-007763b39612",
+      "result_id": "9e063564-ccdc-4529-8d8e-e10819dab969"
+    },
+    {
+      "claim_id": "5bc99e0b-c581-4265-a53d-a75620572565",
+      "result_id": "9e063564-ccdc-4529-8d8e-e10819dab969"
+    },
+    {
+      "claim_id": "19834e9b-e346-4605-ad6d-68edc3d45f8d",
+      "result_id": "9e063564-ccdc-4529-8d8e-e10819dab969"
+    },
+    {
+      "claim_id": "c5fec4c4-f2d4-45b5-8bca-e13af4c43162",
+      "result_id": "9e063564-ccdc-4529-8d8e-e10819dab969"
+    },
+    {
+      "claim_id": "a1dae82b-f54f-4c9d-ab3a-c1f2873a5c48",
+      "result_id": "357f6081-196f-4c8c-959b-6f384cb642ce"
+    },
+    {
+      "claim_id": "fb15741f-79a4-46cf-b1fc-fc60adf24b8c",
+      "result_id": "357f6081-196f-4c8c-959b-6f384cb642ce"
+    },
+    {
+      "claim_id": "1756447a-3e89-43fb-b875-0ac4619c3073",
+      "result_id": "357f6081-196f-4c8c-959b-6f384cb642ce"
+    },
+    {
+      "claim_id": "1cfc23fd-6395-4316-98a3-bbbfb879db3f",
+      "result_id": "65ad6719-716c-4247-b75d-472d5a6f8014"
+    },
+    {
+      "claim_id": "84fe9290-afb5-486c-aaee-26cd147e048b",
+      "result_id": "65ad6719-716c-4247-b75d-472d5a6f8014"
+    },
+    {
+      "claim_id": "e6413ceb-fac6-4fd6-862e-a98f1466f8e6",
+      "result_id": "510dc155-5444-47cc-9f6e-02a9469b1078"
+    },
+    {
+      "claim_id": "1fb1d818-c149-422b-9754-ba4c600ff6ad",
+      "result_id": "510dc155-5444-47cc-9f6e-02a9469b1078"
+    },
+    {
+      "claim_id": "960bc647-bfa1-46a2-83e9-0315cd3ba1c4",
+      "result_id": "510dc155-5444-47cc-9f6e-02a9469b1078"
+    },
+    {
+      "claim_id": "ed5848ad-2867-4723-b33b-130b38f7609e",
+      "result_id": "510dc155-5444-47cc-9f6e-02a9469b1078"
+    },
+    {
+      "claim_id": "807659b3-85d5-4190-9cfd-20607cb2ac1a",
+      "result_id": "f60c0ac0-9926-48b8-82a4-0be9e4650446"
+    },
+    {
+      "claim_id": "ed0705ef-5a0d-4bea-baca-f3d2fb8ce1cc",
+      "result_id": "f60c0ac0-9926-48b8-82a4-0be9e4650446"
+    },
+    {
+      "claim_id": "b5ddefe5-1431-47da-838c-a966ae6c8b3a",
+      "result_id": "f60c0ac0-9926-48b8-82a4-0be9e4650446"
+    },
+    {
+      "claim_id": "2eb556fa-7494-462a-b3e2-0a334465bffb",
+      "result_id": "f60c0ac0-9926-48b8-82a4-0be9e4650446"
+    },
+    {
+      "claim_id": "41ec965f-a381-4d1d-a226-ed8272439afa",
+      "result_id": "f60c0ac0-9926-48b8-82a4-0be9e4650446"
+    },
+    {
+      "claim_id": "b3893696-1141-4054-a3bd-f3b450ab2ba6",
+      "result_id": "f60c0ac0-9926-48b8-82a4-0be9e4650446"
+    },
+    {
+      "claim_id": "81a75327-5d03-4ac5-b1db-5ec250a97e55",
+      "result_id": "08f3210a-ecc9-472c-a664-c61304269608"
+    },
+    {
+      "claim_id": "8854ff64-0849-4b48-9dd8-64b021e3f655",
+      "result_id": "08f3210a-ecc9-472c-a664-c61304269608"
+    },
+    {
+      "claim_id": "451cc415-0170-4f7e-8d88-78e8b7d11007",
+      "result_id": "08f3210a-ecc9-472c-a664-c61304269608"
+    },
+    {
+      "claim_id": "d275cc85-1127-47c1-a670-1da019786871",
+      "result_id": "08f3210a-ecc9-472c-a664-c61304269608"
+    },
+    {
+      "claim_id": "3290659e-bc94-44ec-be00-1680df3c36af",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "40e66c12-174a-4b67-b9db-d0754c31d6e9",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "c226faaf-96c6-49dd-8d42-b8749af3b3bd",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "85197897-051a-44f3-bcad-e54524e02083",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "873a57f5-a69f-489a-b4d2-b87049cd0436",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "b0a21444-be95-4969-b9c3-f7c29538202b",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "557bab1e-1057-493e-9502-f9b977a742b5",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "d95d763f-b159-4d96-9d4c-8bdbb209cd55",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "a38c82f3-38f7-4db5-b298-5d8a11b4ac3c",
+      "result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e"
+    },
+    {
+      "claim_id": "50e39fc7-e010-4781-97b9-646784daeda3",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "ed164474-ec24-43e6-9ee9-72361b0d6f98",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "74eb8a09-49d4-46da-8a4f-3a8e0fc87996",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "aca3c9f5-2f5d-4a33-b60a-cb232a2f0fdf",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "5de33415-b22a-44eb-aef5-359a78171a0e",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "60d4e3d5-2275-43a1-a7eb-a486ef0eddb1",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "03a2cd60-b073-4294-9e67-75a4bb51cbf4",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "df00a63a-40a4-4ba2-9a52-c6eb6905dba6",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "a10e8760-36d6-41eb-98db-ed94b1b4f48b",
+      "result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587"
+    },
+    {
+      "claim_id": "07054c18-62f1-4664-abde-e120d5e7211d",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "46926860-fed2-421c-a9ef-38dcb547332d",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "d36e0ecf-30ff-412b-9b48-d2c8d0937f76",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "3fa7dc60-9bed-4c93-886a-9502a445f771",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "1dc8e7d8-c932-4ef9-b98f-b04efecfdf47",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "442f4f43-a9b9-4534-8271-13866fa30925",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "02b93a34-f7ea-40c4-ac1e-63a846263bf6",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "33011677-2130-4aaf-96d0-26e81c5bc562",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "c2f00780-57a3-4920-a706-6abfe646ca6b",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "56c04bbf-5b78-4598-bc4c-118f778c675f",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "49300c19-2264-4087-ae91-a3cbe779ca1b",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "22b78f0b-b1a6-4ed1-9fb9-4ecdcc827d53",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "3061912c-fe51-4ca8-ae24-03f082a0d493",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "3f81432a-9f4e-444d-a1da-fbcb0cdb2d44",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "7df483d5-f9d1-4494-b3a5-be018d4a1efb",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "e3439527-b510-4380-962f-bf51c097f33b",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "550e3b8d-3bfd-4453-9e59-85425eba1cfb",
+      "result_id": "74a67767-3040-4383-8517-b9e80c9c0281"
+    },
+    {
+      "claim_id": "26e5bd4e-04f3-4783-9153-04853f41eea9",
+      "result_id": "58197ee2-239d-401f-9ee8-09b49f564e4e"
+    },
+    {
+      "claim_id": "f3999040-3b7f-4f96-9155-0033436d24b6",
+      "result_id": "58197ee2-239d-401f-9ee8-09b49f564e4e"
+    },
+    {
+      "claim_id": "c8599416-f9c8-4416-bb39-207ba463ad9e",
+      "result_id": "58197ee2-239d-401f-9ee8-09b49f564e4e"
+    },
+    {
+      "claim_id": "109f1454-c0de-4373-93ab-f1f3ab83d025",
+      "result_id": "58197ee2-239d-401f-9ee8-09b49f564e4e"
+    },
+    {
+      "claim_id": "71e80bf0-ba08-499e-a308-6794e35a2f76",
+      "result_id": "ec1c75d4-8466-44ac-a067-781ffd49c123"
+    },
+    {
+      "claim_id": "441133ba-3e9f-4884-8056-a57b8bdbf9de",
+      "result_id": "ec1c75d4-8466-44ac-a067-781ffd49c123"
+    },
+    {
+      "claim_id": "8136d17d-2cb6-4a05-b60c-d8ee27c80366",
+      "result_id": "ec1c75d4-8466-44ac-a067-781ffd49c123"
+    },
+    {
+      "claim_id": "c74af2a8-a5dc-431f-936b-b36bbf45d6c7",
+      "result_id": "ec1c75d4-8466-44ac-a067-781ffd49c123"
+    },
+    {
+      "claim_id": "99f615b4-0991-4db2-b1e1-76b868115b05",
+      "result_id": "ec1c75d4-8466-44ac-a067-781ffd49c123"
+    },
+    {
+      "claim_id": "3b9330d6-b555-472a-82ef-13c53690afd9",
+      "result_id": "ec1c75d4-8466-44ac-a067-781ffd49c123"
+    },
+    {
+      "claim_id": "3ab70dd3-08bf-4bca-a85f-6c437749a3b3",
+      "result_id": "ab756e64-ba4e-415c-84e7-eddaf9312ae8"
+    },
+    {
+      "claim_id": "c6ebb25e-fbda-4175-8c6a-97f55883b9e8",
+      "result_id": "ab756e64-ba4e-415c-84e7-eddaf9312ae8"
+    },
+    {
+      "claim_id": "f1084896-db5e-4b98-b255-db0d7f96344d",
+      "result_id": "ab756e64-ba4e-415c-84e7-eddaf9312ae8"
+    },
+    {
+      "claim_id": "324c4f4f-86fe-46eb-9ad0-1652aceef3a7",
+      "result_id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49"
+    },
+    {
+      "claim_id": "dece2b1b-8e42-4261-9a37-f8d865be060a",
+      "result_id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49"
+    },
+    {
+      "claim_id": "5d27050f-95fd-4203-b119-2af29e1c5e53",
+      "result_id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49"
+    },
+    {
+      "claim_id": "ded20dfa-1dae-4f38-99d5-c0de5fb329da",
+      "result_id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49"
+    },
+    {
+      "claim_id": "ed272017-f288-4923-be51-2bd0ab26bbc0",
+      "result_id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49"
+    },
+    {
+      "claim_id": "b23d8958-d85e-46bc-ba11-add80532e000",
+      "result_id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49"
+    },
+    {
+      "claim_id": "264b5358-57a0-4a4f-b4a8-a4c892332917",
+      "result_id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49"
+    },
+    {
+      "claim_id": "73759ed8-1b69-4f36-a740-366e1f367896",
+      "result_id": "680107c2-b822-48db-a09a-799aff9cd8f6"
+    },
+    {
+      "claim_id": "c5fec4c4-f2d4-45b5-8bca-e13af4c43162",
+      "result_id": "680107c2-b822-48db-a09a-799aff9cd8f6"
+    },
+    {
+      "claim_id": "a1dae82b-f54f-4c9d-ab3a-c1f2873a5c48",
+      "result_id": "a8567e3b-58d5-41dd-8bc9-a0d2e6b14f48"
+    },
+    {
+      "claim_id": "fb15741f-79a4-46cf-b1fc-fc60adf24b8c",
+      "result_id": "a8567e3b-58d5-41dd-8bc9-a0d2e6b14f48"
+    },
+    {
+      "claim_id": "1756447a-3e89-43fb-b875-0ac4619c3073",
+      "result_id": "a8567e3b-58d5-41dd-8bc9-a0d2e6b14f48"
+    },
+    {
+      "claim_id": "e1af3621-c5bd-47ed-ae9a-5b067f86ce64",
+      "result_id": "fa6944b0-552d-479e-9df8-b279625d0e08"
+    },
+    {
+      "claim_id": "b3375c20-d86e-490c-a114-14d2eaa37cd8",
+      "result_id": "fa6944b0-552d-479e-9df8-b279625d0e08"
+    },
+    {
+      "claim_id": "c04100ee-b018-4fc9-92e2-d93d43a2bccd",
+      "result_id": "fa6944b0-552d-479e-9df8-b279625d0e08"
+    },
+    {
+      "claim_id": "40e66c12-174a-4b67-b9db-d0754c31d6e9",
+      "result_id": "fa6944b0-552d-479e-9df8-b279625d0e08"
+    },
+    {
+      "claim_id": "81a75327-5d03-4ac5-b1db-5ec250a97e55",
+      "result_id": "2d50da27-475d-46e8-bfb7-0ae190fcfc23"
+    },
+    {
+      "claim_id": "8854ff64-0849-4b48-9dd8-64b021e3f655",
+      "result_id": "2d50da27-475d-46e8-bfb7-0ae190fcfc23"
+    },
+    {
+      "claim_id": "451cc415-0170-4f7e-8d88-78e8b7d11007",
+      "result_id": "2d50da27-475d-46e8-bfb7-0ae190fcfc23"
+    },
+    {
+      "claim_id": "3290659e-bc94-44ec-be00-1680df3c36af",
+      "result_id": "f1f51097-ec7a-4447-bb19-ed27de2c83f3"
+    },
+    {
+      "claim_id": "a38c82f3-38f7-4db5-b298-5d8a11b4ac3c",
+      "result_id": "f1f51097-ec7a-4447-bb19-ed27de2c83f3"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "726a6f90-5f11-443c-ad3e-be743b74d6d1",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "357f6081-196f-4c8c-959b-6f384cb642ce",
+      "peer_result_id": "a8567e3b-58d5-41dd-8bc9-a0d2e6b14f48",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both address the core conclusion about AOR being a sampling artifact (C42-C44). OpenEval finds this interpretation SUPPORTED by converging evidence from meta-analysis and phylogenetic results. Peer reviewers find it UNSUPPORTED, stating results are 'inadequate to overturn the repeatedly confirmed abundancy-occupancy relationship' due to 'multiple unresolved confounding factors.' This represents the most fundamental disagreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "94803740-969c-4b8b-ae41-b39ec3f73d1c",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a037d325-1a27-49f1-92d4-38e38c0732d5",
+      "peer_result_id": "ec1c75d4-8466-44ac-a067-781ffd49c123",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the primary statistical finding of near-zero correlation (C27-C28, C99). OpenEval finds it SUPPORTED with appropriate caveats about statistical vs. biological significance. Peer reviewers rate it UNCERTAIN, stating 'multiple unresolved confounding factors exist' and questioning whether 'testing AOR at a global scale is meaningful,' suggesting methodological concerns undermine confidence in the finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "36f8a50d-cdde-4bf0-9f81-e31a758c25d4",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1fcaa7e3-bb21-49f3-888f-6bba9191ec35",
+      "peer_result_id": "ab756e64-ba4e-415c-84e7-eddaf9312ae8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the disappearance of correlation when controlling for sampling variables (C31-C33). OpenEval finds this SUPPORTED as robust evidence for sampling artifacts. Peer reviewers rate it UNCERTAIN, noting that while statistical findings aren't directly challenged, 'confounding factors' remain 'inseparable' from the analysis, questioning the interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "62855d6c-a0c6-4abf-9a08-5826e869abf8",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "e338ebac-4e82-4b93-bfda-15eb96597079",
+      "peer_result_id": "eb52af7f-b5f3-4240-aec8-5bf7dc1a4f49",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the low heterogeneity findings (C34-C39) and their interpretation (C40). OpenEval finds this SUPPORTED as compelling evidence against real biological variation. Peer reviewers rate it UNCERTAIN, with their concern about 'unresolved confounding factors' and call for identifying 'specific conditions under which AORs are valid' suggesting skepticism that low heterogeneity disproves AOR.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "8b66924c-0b64-4340-89fd-cd3cbbb73fea",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9e063564-ccdc-4529-8d8e-e10819dab969",
+      "peer_result_id": "680107c2-b822-48db-a09a-799aff9cd8f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the phylogenetic analysis (C41, C95). OpenEval finds it SUPPORTED as corroborating evidence using appropriate methods. Peer reviewers rate it UNCERTAIN, stating 'primary concerns raised by reviewers remain inadequately addressed' regarding 'foundational assumptions and potential confounding factors,' viewing it as part of a methodologically problematic approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "0decf0b8-471b-4df5-ba2a-d356cfcb3ae3",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "08f3210a-ecc9-472c-a664-c61304269608",
+      "peer_result_id": "2d50da27-475d-46e8-bfb7-0ae190fcfc23",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address study limitations (C57-C59). OpenEval finds the acknowledgment SUPPORTED, viewing transparency as strengthening the contribution. Peer reviewers also rate this SUPPORTED, not challenging the authors' acknowledgment but emphasizing broader concerns about whether the global-scale approach can adequately control for confounding factors.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "2aa76a45-36f8-48b1-9060-baf786ae4981",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "51b85863-46eb-4a14-8ca5-b4f0ab33540e",
+      "peer_result_id": "f1f51097-ec7a-4447-bb19-ed27de2c83f3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the bias explanation for discrepancy with previous meta-analyses (C61, C96). OpenEval rates this UNCERTAIN, noting the explanation is plausible but speculative without direct evidence. Peer reviewers rate it UNSUPPORTED, stating results are 'inadequate to overturn' previous findings and emphasizing 'unresolved confounding factors' in the current study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "4a2dc652-e21e-4b5b-8cd5-a026a8dea4be",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f659e121-76ba-40ed-bf1e-cc4afd505862",
+      "peer_result_id": "fa6944b0-552d-479e-9df8-b279625d0e08",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both touch on data source and methodology (C18-C20) and bias claims (C62). OpenEval finds the methodology SUPPORTED with unprecedented scale and clear documentation. Peer reviewers rate this UNCERTAIN, emphasizing need to 'thoroughly address the correlation between checklist data and global range data' and examine 'foundational assumptions,' questioning appropriateness of eBird data for global-scale AOR testing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "ee659f2a-7553-4dad-b946-49be92ec5865",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "39815612-cbcd-4834-b61b-a3427308eabd",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the meta-analytic interpretation (C40) SUPPORTED as consistent with theory that minimal heterogeneity indicates non-existent phenomena. No corresponding peer review evaluation specifically addresses this theoretical claim, though peer R3 expresses general skepticism about the heterogeneity interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "82b29957-f383-457d-abaa-74ee0e5ca6ac",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "65ad6719-716c-4247-b75d-472d5a6f8014",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the management and mechanistic implications (C45-C46) SUPPORTED as logical consequences of null findings, though notes these are recommendations requiring context-specific consideration. No corresponding peer review evaluation addresses these specific implications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "75bb035b-b0a1-47b8-bfcc-755fa059dc8a",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "510dc155-5444-47cc-9f6e-02a9469b1078",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the argument against neutral theory (C47-C50) SUPPORTED with sound reasoning about predicted vs. observed patterns. No corresponding peer review evaluation addresses this theoretical implication regarding neutral theory as a macroecological null model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "f1341c74-b2e7-49a6-8ffb-e49ed3fe1cfc",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "f60c0ac0-9926-48b8-82a4-0be9e4650446",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates Rabinowitz's framework proposal (C51-C56) as UNCERTAIN, noting it's suggested rather than validated and lacks direct testing. No corresponding peer review evaluation addresses this alternative framework or its claimed empirical support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "678231fc-d897-4330-a074-4087a7fb0f6a",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "458f9f38-5ff8-4112-b7f4-456b5c653587",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the parallel to psychology's replication crisis (C69-C75, C97-C98) SUPPORTED as an apt comparison with justified calls for methodological reform. No corresponding peer review evaluation addresses this broader meta-scientific framing or comparison to other fields.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "bfa9ac47-80bd-4cae-a6b4-23adb32711d4",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "74a67767-3040-4383-8517-b9e80c9c0281",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the literature review and characterization of prior AOR research (C1-C17) SUPPORTED as accurate representation of the field. No corresponding peer review evaluation specifically addresses the accuracy of this background characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    },
+    {
+      "id": "a5738d71-f54b-4dd6-bc9a-6a04d2341a31",
+      "submission_id": "a5f1ec25-f8bb-4bd5-be84-eaf6f78e4cfa",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "58197ee2-239d-401f-9ee8-09b49f564e4e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the theoretical expectations and hypothesis formulation (C21-C23, C104) SUPPORTED as appropriately cited and contextualized. No corresponding peer review evaluation addresses the appropriateness of these a priori predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:46:46.909627Z"
+    }
+  ]
+}

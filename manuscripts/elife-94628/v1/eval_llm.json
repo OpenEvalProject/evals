@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9"
+    ],
+    "result": "TORC1 is a master regulator of cell growth and metabolism in eukaryotes, activated by nitrogen and amino acid signals via Gtr1/2 and Pib2 in S. cerevisiae. In nutrient-rich conditions, TORC1 drives anabolic processes; when nutrients drop, TORC1 is inhibited, leading to catabolic metabolism and quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C9 establish well-documented background knowledge about TORC1 function, supported by multiple citations. These claims provide the foundational context for the study and are consistent with established literature in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The dual regulator system of Gtr1/2 and Pib2 pushes TORC1 into three distinct signaling states: (i) Gtr1/2 on, Pib2 on in nutrient-replete conditions (rapid growth); (ii) Gtr1/2 inhibited, Pib2 on in poor-quality medium (adaptive/slow growth); and (iii) Gtr1/2 off, Pib2 off in starvation (quiescence).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 represent the central finding of the manuscript. The three-state model is supported by extensive experimental data including phosphoproteomics (C21-C44), reporter assays (C10-C20, C62-C91), and functional studies (C67-C75). The model integrates multiple lines of evidence across different experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Wild-type, gtr1\u0394, and pib2\u0394 strains show equivalent TORC1 activity in nutrient-replete medium. TORC1 efficiently turns off in the absence of Gtr1 or Pib2 during leucine and complete amino acid starvation. However, during glutamine starvation, TORC1 remains active in wild-type, partially active in pib2\u0394, but is rapidly inhibited in gtr1\u0394 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are directly supported by the Rps6 phosphorylation data in Figure 1. The differential response to glutamine starvation is a key observation that distinguishes this work from the simple redundancy model and is quantified in Figure 1C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The pib2NID\u0394 mutation blocks TORC1 inhibition in gtr1\u0394 but not wild-type backgrounds during glutamine starvation, demonstrating that Pib2 helps drive TORC1 inactivation in the absence of Gtr1. However, Pib2 can only inhibit TORC1 when the Gtr1/2 complex is partially disrupted (gtr1\u0394, gtr2\u0394), not when completely absent (gtr1\u0394gtr2\u0394) or inactive (Gtr1/2off).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are supported by the experimental data in Figure 2A-B showing differential TORC1 activity across multiple genetic backgrounds. The observation that Pib2 requires a partially functional Gtr1/2 complex to inhibit TORC1 is a novel mechanistic insight, though the molecular basis remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Cell lines that fail to inactivate TORC1 during glutamine starvation (wild-type, pib2\u0394, pib2NID\u0394, pib2NID\u0394gtr1\u0394, Gtr1/2off) die at higher rates than gtr1\u0394 and gtr2\u0394 cells, presumably because they do not arrest cell growth in a timely manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is directly supported by the cell death data in Figure 2C. Claim C20 is a reasonable interpretation but remains speculative as the authors did not directly measure cell cycle arrest or growth rates during starvation. The correlation between TORC1 activity and cell death is clear, but the mechanistic link requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Phosphoproteomics analysis identified 445 phosphopeptides (362 phosphosites on 301 proteins) that were up- or downregulated in response to rapamycin, deletion of Gtr1/2, and/or deletion of Pib2. Specifically, 175 were downregulated and 187 upregulated by rapamycin, while 83 changed in gtr1\u0394gtr2\u0394 or pib2\u0394 but not rapamycin-treated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 report quantitative results from the phosphoproteomics experiment with clear statistical thresholds (>2-fold change, p<0.01). The data are presented in Figures 3-4 and Supplementary file 1. The experimental design with quadruplicate samples and appropriate controls supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "TORC1 drives phosphorylation of several N-terminal residues on Ser3 and Ser33, homologous 3-phosphoglycerate dehydrogenases catalyzing the first step in serine/glycine synthesis. This phosphorylation is completely dependent on Pib2 but not altered in gtr1\u0394gtr2\u0394 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by phosphoproteomics data (Figures 3-4) and represent a novel finding. The complete Pib2-dependence without Gtr1/2-dependence distinguishes Ser3/33 from other TORC1 substrates. Claim C26 is established knowledge supported by citation. The functional significance is explored in C45-C61.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Many TORC1-dependent phosphorylation events depend heavily on both Pib2 and Gtr1/2, while others are unperturbed by deletion of either regulator. There is a strong correlation (R=0.70, excluding Ser3/33) between the impact of Pib2 and Gtr1/2 on TORC1-dependent phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by the phosphoproteomics data in Figures 3-4. The correlation analysis (C31) provides quantitative support for the semi-redundant model. The continuum of dependency from complete to none is clearly visualized in Figure 4's organization from top-left to bottom-right.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Proteins with the strongest reliance on Pib2 and Gtr1/2 are predominantly involved in nutrient transport and utilization (8/11 top proteins), including amino acid transporters (Bap2, Agp1, Gnp1, Hip1, Tat1), zinc transporter (Zrt3), zinc-regulated transcription factor (Zap1), hexose transporter (Hxt1), and amino acid metabolism regulator (Npr1, Par32). GO analysis confirmed amino acid transporter activity as the top hit (p=1e-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 are supported by the phosphoproteomics data analysis in Figure 4 and GO enrichment analysis. Claims C33-C37, C39-C40 cite established protein functions. The enrichment for nutrient transport/metabolism proteins among Gtr1/2- and Pib2-dependent substrates is a key finding supporting the three-state model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Proteins dependent on TORC1 but not Gtr1/2 or Pib2 are involved in cell signaling (p=1e-4) and regulation of cell growth (p=9e-3), including key regulators of ribosome and protein synthesis (Sch9, Maf1, Stb3, Gcn2, Kcs1), stress response factor (Hsf1), and autophagy regulator (Ksp1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by GO analysis of phosphoproteomics data (Figure 4, right column). Claims C42-C44 cite established protein functions. This functional distinction between Gtr1/2/Pib2-dependent and -independent substrates is central to the three-state model, showing that growth control proteins remain phosphorylated even when nutrient transport proteins are dephosphorylated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Seven TORC1-dependent phosphorylation sites were identified on Ser33 (S20, S22, S27, S28, S29, S33, T31). Rapamycin, glucose starvation, and complete nitrogen starvation (but not amino acid starvation) lead to rapid Ser33 dephosphorylation. Mutation of these sites to alanine or deletion of Pib2 blocks rapamycin-dependent phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by mass spectrometry data (Figure 5A, Supplementary file 2) and Phos-tag gel experiments (Figure 5B-D). The identification of phosphorylation sites combines global phosphoproteomics with targeted immunopurification-MS. The differential response to various starvation conditions is clearly demonstrated in Figure 5B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Ser33 phosphorylation shows slow dephosphorylation during leucine starvation and no change during glutamine starvation, paralleling Rps6 behavior. However, Ser33 phosphorylation is exquisitely sensitive to nitrogen source quality, going from unphosphorylated in proline to >80% phosphorylated in glutamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by Phos-tag gel data in Figure 5E-F. The nitrogen source quality sensitivity (C53-C54) is a key finding distinguishing Ser33 from other TORC1 substrates and supporting its unique regulation through Pib2. The quantification of >80% phosphorylation in glutamine is clearly shown in Figure 5F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Ser3 and Ser33 bind to Pib2 and not TORC1, as evidenced by significantly higher capture in Pib2 versus Kog1 immunopurifications (2 of 6 proteins enriched in Pib2 over Kog1 out of >200 Kog1-enriched proteins). Ser33-HA is enriched 2.5-fold in Pib2 but not Gtr1/2 purifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by interactome data (Figure 5\u2014figure supplement 1D) and co-immunoprecipitation experiments (Figure 5G). The preferential binding to Pib2 over TORC1 provides a mechanistic explanation for the unique Pib2-dependent regulation of Ser3/33. However, the interaction appears relatively weak (2.5-fold enrichment) and may be transient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The phosphonull (S7A) but not phosphomimic (S7D) version of Ser33 shows a significant delay exiting quiescence in medium lacking serine and glycine, but then grows at the same rate as wild-type once dividing rapidly. This suggests TORC1-dependent phosphorylation helps drive serine/glycine synthesis during transition to rapid growth but is not required for basal activity during log phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 are supported by growth curve data in Figure 5H. However, claims C60-C61 are explicitly stated as speculative by the authors (\"suggest but do not prove\"). The growth phenotype is consistent with the model but alternative explanations exist. Direct measurement of Ser33 enzymatic activity and serine/glycine synthesis rates would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Par32 shifts to a hyperphosphorylated state during amino acid starvation and in gtr1\u0394 and pib2\u0394 cells. When cells are transferred from SC medium to single nitrogen sources, the intermediate signaling state (Sch9 on, Par32 on) is transiently populated in glutamine (2.5-5 min) and leucine media, but cells transition to complete starvation state (Par32 on, Sch9 off) in proline medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by Par32 and Sch9 mobility shift assays in Figures 6B-C. The transient population of the intermediate state during nitrogen source transitions is clearly demonstrated. However, the rapid transition away from the intermediate state in glutamine and leucine suggests additional regulatory mechanisms beyond Gtr1/2 and Pib2 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "TORC1 is in the intermediate signaling state (Sch9 on, Par32 on) during steady-state growth in proline medium. The TORC1 pathway is driven into complete starvation (State II) when cells are first exposed to poor nitrogen sources but transitions to the intermediate state (State III) as cells adapt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by data in Figures 6C-D showing the temporal dynamics of TORC1 signaling states. The discovery that cells maintain the intermediate state during steady-state growth in poor nitrogen sources is a key finding. The inference about the transition from State II to State III (C68-C69) is well-supported by comparing acute (Figure 6C) versus adapted (Figure 6D) conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "When cells are transferred from glutamine to proline medium, Sch9 is initially dephosphorylated but then reactivated over 4 hours, while Par32 and Npr1 remain active throughout. In npr1\u0394 cells, Sch9 remains dephosphorylated throughout, demonstrating that adaptation to poor nitrogen sources is driven by Npr1 and Par32 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by time-course data in Figure 6E. The npr1\u0394 experiment (C72-C73) provides strong genetic evidence that Npr1 is required for the transition from State II to State III. The failure of npr1\u0394 cells to reactivate Sch9 directly supports the model that Npr1-dependent metabolic adaptation enables the intermediate signaling state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Wild-type and npr1\u0394 cells grow at the same rate in SC and glutamine medium, but npr1\u0394 cells grow much slower than wild-type in proline medium. Yeast grow approximately four times faster in SC medium than in proline medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by growth curve data in Figure 6F. The differential requirement for Npr1 in proline versus rich media provides functional validation of the three-state model. The quantification of growth rate differences (C76) is clearly visible in the data, though exact fold-changes are not numerically reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Tod6 is dephosphorylated while Stb3 and Maf1 remain phosphorylated in Gtr1/2 and Pib2 delete cells. TORC1 inhibition triggers nuclear localization of Stb3 and Tod6 to recruit Rpd3L deacetylase and repress ribosome genes. Tod6 moves to the nucleus in both proline medium and rapamycin, while Stb3 only moves to the nucleus in rapamycin, suggesting Tod6 is activated in the intermediate state to slow growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by phosphoproteomics data (Figures 3-4). Claim C79 cites established knowledge. Claims C80-C81 are supported by microscopy data in Figure 7 with quantification showing 67\u00b16% nuclear Tod6 in proline versus 18\u00b13% nuclear Stb3. Claim C82 is a reasonable interpretation but remains somewhat speculative regarding the functional consequence of Tod6 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In Gtr1/2on strains, Par32 is hyperphosphorylated initially during starvation but then erroneously dephosphorylated over time, demonstrating that Gtr1/2 are normally inhibited during steady-state growth in proline and must remain inactive or partially inactive to maintain the intermediate signaling state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by data in Figure 8C. Claims C84-C85 are inferences from the Gtr1/2on experiment showing that constitutive Gtr1/2 activity prevents maintenance of the intermediate state. This genetic manipulation provides strong evidence for the model, though the molecular mechanism of Gtr1/2 inhibition in proline remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Locking Gtr1/2 off causes a moderate decrease in Sch9 but not Rps6 phosphorylation during steady-state growth in proline medium, indicating that Gtr1/2 is partially (rather than fully) inactive during growth in proline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by data in Figure 8A-B. The differential effect on Sch9 versus Rps6 is consistent with the phosphoproteomics data showing substrate-specific dependencies. The inference that Gtr1/2 is partially inactive (C88) is reasonable given the moderate effect, though direct measurement of Gtr1/2 activity would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Deleting Pib2 causes a large decrease in Rps6 and Sch9 phosphorylation during steady-state growth in proline medium, indicating Pib2 is active or mostly active. Thus, Gtr1/2 is partially off and Pib2 is on during steady-state growth in proline, pushing TORC1 into the intermediate/adaptive signaling state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by data in Figure 8A-B showing substantial decreases in both Rps6 and Sch9 phosphorylation in pib2\u0394. Claim C91 integrates findings from C86-C90 to conclude the regulatory state during proline growth. This conclusion is well-supported by the genetic manipulation experiments, though direct biochemical measurement of Gtr1/2 and Pib2 activities would provide additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The three-state model: In nutrient-rich medium, TORC1 is fully active, phosphorylating Sch9 for growth and Npr1 to suppress amino acid starvation response. When first transferred to poor nitrogen sources, TORC1 is inhibited, blocking growth and activating Npr1. As cells adapt, TORC1 enters an intermediate state, phosphorylating Sch9 to reinitiate growth but not Npr1, maintaining amino acid transport/synthesis. Tod6 is dephosphorylated in the intermediate state to slow growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 synthesize the major findings into the three-state model presented in Figure 9. These claims are well-supported by the collective evidence from phosphoproteomics (C21-C44), reporter assays (C62-C91), and functional studies (C74-C76). Claim C95 regarding Tod6 function remains somewhat speculative but is supported by the localization data (C80-C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The three signaling states are determined by Gtr1/2 and Pib2 activity: both on in nutrient-rich medium (fully active TORC1); both off when first transferred to poor nitrogen sources (strong TORC1 inhibition); Pib2 reactivated while Gtr1/2 remains off during adaptation (intermediate TORC1 activity phosphorylating growth proteins but not Npr1, Tod6, and other nutrient metabolism proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe the mechanistic basis of the three-state model, integrating findings from C83-C91. The model is well-supported by genetic manipulation experiments showing differential effects of Gtr1/2 and Pib2 on TORC1 substrates. However, the molecular mechanisms controlling Gtr1/2 and Pib2 activity in response to nitrogen source quality remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The three-state system provides an adaptive solution: yeast in rich medium use selective transporters for rapid growth but lack capacity to import alternative nitrogen sources when amino acids fall. TORC1 inhibition activates Npr1, building capacity to import diverse nitrogen compounds. If adequate nitrogen is available, Pib2 reactivates to restart growth while maintaining the Npr1-dependent starvation response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C101 cite established knowledge about yeast nitrogen metabolism. Claims C100 and C102 are logical inferences integrating this knowledge with the experimental findings. The model provides a coherent explanation for the biological function of the three-state system, though direct testing of these predictions (e.g., measuring transporter expression and nitrogen import capacity) would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Implications of the three-state model include that yeast cells (including fungal pathogens) can be pushed to import alternative nitrogen sources, including toxic analogs, by deletion or inhibition of Gtr1/2 or Pib2, and that yeast growth on poor nitrogen sources can be halted by deletion or inhibition of Pib2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are explicitly speculative implications of the findings. While the model predicts these outcomes, they have not been experimentally tested in this study. The predictions are logical extensions of the three-state model but would require validation through experiments with toxic amino acid analogs and Pib2 inhibitors in poor nitrogen sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Ser33 activity depends on TORC1-Pib2 signaling, ensuring phosphorylation only in high-quality nitrogen sources. This may couple Ser33 activity to glutamate/glutamine levels since the second step in serine synthesis involves amine group transfer from glutamate to the Ser33 product, 3-phosphohydroxypyruvate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by the Ser33 phosphorylation data (C45-C54) and Pib2 binding (C55-C56). Claim C108 cites established biochemistry. Claim C107 is a reasonable hypothesis integrating these findings but remains speculative. The model is consistent with the data but alternative explanations exist, and direct measurement of glutamate/glutamine effects on Ser33 phosphorylation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Gtr1/2 and Pib2 are semi-redundant activators of TORC1, driving it into fully active, partially active, or inactive states via on/on, off/on, or off/off signaling modes. Fully active TORC1 phosphorylates all downstream targets, while partially active TORC1 phosphorylates a subset, creating condition-dependent responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 synthesize the major conceptual advance of the manuscript, revising the simple redundancy model to a semi-redundant, multi-state model. This is well-supported by the phosphoproteomics data showing substrate-specific dependencies (C29-C44) and the genetic experiments demonstrating distinct signaling states (C62-C91). This represents a significant conceptual contribution to understanding TORC1 regulation.",
+    "result_type": "MAJOR"
+  }
+]

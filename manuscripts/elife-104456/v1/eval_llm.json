@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "An evolutionary algorithm with constraints requiring inhibitory AIY-AIZ connections yielded a neural network model with a chemotaxis index (CI) of 0.877, marginally outperforming the unconstrained model (CI = 0.855). The constrained model successfully produced inhibitory AIY-AIZ synaptic connections and exhibited marginally accelerated attainment of the salt concentration peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 provide convergent evidence from the evolutionary algorithm optimization showing that the constrained model achieves high chemotaxis performance (CI = 0.877) and successfully incorporates the experimentally-validated inhibitory AIY-AIZ connections. The trajectory data in Figure 2 supports the marginally improved performance, though the difference is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C33"
+    ],
+    "result": "The constrained model exhibits inhibitory ASER-AIY synaptic connections, while the unconstrained model shows excitatory connections at this synapse. The constrained model reproduces experimentally observed synchronized activation of ASER and AIZ neurons, whereas the unconstrained model shows inverse AIZ activity patterns. Inhibitory ASER-AIY connections are essential for synchronizing AIZ activation with ASER activity when AIY-AIZ connections are inhibitory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C23-C24, and C33 collectively demonstrate that the constrained model's inhibitory ASER-AIY connections are necessary to reproduce experimental observations (Matsumoto et al., 2024) of synchronized ASER-AIZ activation. The unconstrained model's failure to reproduce this pattern (C24) despite similar CI performance validates the importance of incorporating neurophysiological constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The model worm exhibits klinotaxis by continuously turning toward higher salt concentrations based on sensing the concentration gradient normal to its travel direction. Positive correlations between curving rate and both bearing and normal gradient support this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by quantitative analysis shown in Figure 4a,c demonstrating positive correlations between curving rate and both bearing and normal gradient. These correlations provide evidence that the model implements klinotaxis through gradient sensing perpendicular to the direction of movement, consistent with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors propose a mechanism for bidirectional ASER-AIY synaptic plasticity based on differential sensitivity of glutamate receptors GLC-3 (EC50 = 1.9 mM) and MGL-1 (estimated high sensitivity based on MGL-2 homolog EC50 = 9 \u00b5M) expressed on AIY. When basal glutamate is near GLC-3 EC50, MGL-1 saturates and transmission is inhibitory; when basal glutamate is lower, MGL-1 mediates excitatory transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C28 and C44-C47 present a mechanistic hypothesis based on receptor properties and EC50 values from the literature. However, the EC50 for MGL-1 is not directly measured (C44), and the inference from MGL-2 (C45-C46) introduces uncertainty. The mechanism is plausible and supported by analogy to thermotaxis (C57), but lacks direct experimental validation of MGL-1 properties and the proposed switching mechanism in the salt chemotaxis context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Replacing inhibitory ASER-AIY connections with excitatory connections in the constrained model reproduces salt preference behavior observed when worms are cultivated at lower salt concentrations than the current environment. This demonstrates that salt concentration memory is encoded as basal glutamate release from ASER and decoded by differential receptor sensitivities on AIY, enabling bidirectional regulation through synaptic plasticity while downstream circuits function as a modular klinotaxis system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C34-C37 are supported by model simulations (Figure 5c) that match experimental data (Figure 5d) showing reversed salt preference when ASER-AIY connections are switched from inhibitory to excitatory. The model successfully reproduces bidirectional behavior through a single synaptic change, supporting the encoding/decoding mechanism. However, the underlying biochemical mechanism (C27-C28) remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C38"
+    ],
+    "result": "Inhibition of SMB motor neuron activity, either by reducing synaptic connection strength from AIZ or by reducing bias terms, suppresses salt preference behavior in the model, consistent with experimental observations in starved worms. This indicates worms can switch between dwelling and dispersing behaviors by modulating only the most downstream motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C38 are supported by model simulations (Figure 6b and supplement 1b) showing suppression of salt preference behavior upon SMB inhibition, matching experimental data (Figure 6a). Two independent methods of SMB inhibition produce consistent results, strengthening the conclusion. The inference about behavioral switching (C38) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The regulatory mechanism where motor responses to sensory inputs depend on the phase of motor oscillation appears to be a convergent solution for taxis and navigation across species, with analogous mechanisms observed in Drosophila larvae chemotaxis and zebrafish phototaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by citations to studies in other species (Wystrach et al., 2016; Wolf et al., 2017) demonstrating similar phase-dependent sensorimotor coupling. The comparative analysis across species provides evidence for convergent evolution of this control principle, though the claim is primarily based on literature synthesis rather than new experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Prior work demonstrated that basal glutamate release from ASER increases when worms are cultivated at higher salt concentrations (Ccult > Ctest) through PKC-1-mediated phosphorylation of UNC-64/Syntaxin 1A, and decreases when cultivated at lower concentrations (Ccult < Ctest) due to reduced PKC-1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 accurately cite prior experimental work (Hiroki et al., 2022; Sato et al., 2021) establishing the biochemical mechanism of activity-dependent changes in basal glutamate release. These are well-established findings from the literature that provide the foundation for the current modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "C. elegans has 302 fully mapped neurons and exhibits salt chemotaxis mediated by ASE sensory neurons (ASEL and ASER), which show functional asymmetry with ASER responding to decreases and ASEL to increases in salt concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 accurately cite well-established facts about C. elegans neurobiology from the literature (Cook et al., 2019; White et al., 1986; Ward, 1973; Bargmann and Horvitz, 1991; Suzuki et al., 2008). These provide essential background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "C. elegans uses two behavioral strategies for salt chemotaxis (klinokinesis and klinotaxis), and exhibits salt concentration memory-dependent preference behavior where preferred concentrations depend on cultivation history relative to current environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 accurately cite established behavioral observations from the literature (Iino and Yoshida, 2009; Pierce-Shimomura et al., 1999; Kunitomo et al., 2013). These provide the behavioral context that the model aims to explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior work on klinokinesis demonstrated that AIB interneurons exhibit bidirectional responses to salt concentration changes mediated by changes in basal glutamate release from ASER, with the response determined by differential sensitivities of GLR-1 and AVR-14 receptors on AIB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately cite prior experimental work (Sato et al., 2021; Hiroki et al., 2022) on the klinokinesis circuit. This provides important precedent for the proposed mechanism in klinotaxis, though it involves different downstream neurons (AIB vs AIY).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "AIY initiates curving turns through inhibitory synaptic transmission to AIZ, mediated by activation of the Cl\u2212 channel ACC-2 on AIZ by acetylcholine released from AIY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 accurately cite experimental findings (Li et al., 2014) that established the inhibitory nature of AIY-AIZ connections. This neurophysiological constraint was crucial for the constrained evolutionary algorithm approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "GLR-1 is a glutamate-gated cation channel and AVR-14 is a glutamate-gated chloride channel, with GLR-1 sensitivity (EC50 5 mM) being several tens of times lower than AVR-14 (EC50 0.2 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 cite established receptor properties (Hiroki et al., 2022) that are relevant for understanding bidirectional synaptic responses in the klinokinesis circuit. These provide context for the proposed analogous mechanism in klinotaxis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "In the absence of food, PDE neurons do not release dopamine, causing AVK interneurons to release FLP-1 neuropeptides that inhibit SMB motor neurons, contributing to dispersal behavior in starved individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 cite prior work (Oranth et al., 2018) establishing the neural pathway linking food sensing to SMB motor neuron regulation. This provides the biological basis for the model's simulation of starvation effects on chemotaxis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The neuroanatomical minimal circuit was derived from the connectome by minimizing path length between ASE and SMB (minimum of three) and eliminating interneurons not connected by maximum contacts, resulting in a circuit that includes experimentally validated klinotaxis interneurons AIY and AIZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe the methodological approach for deriving the minimal circuit (Izquierdo and Beer, 2013; Oshio, 2003) and note that it includes experimentally validated neurons (Kocabas et al., 2012; Iino and Yoshida, 2009). This validates the circuit selection approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Similar inhibitory synaptic transmission to AIY via GLC-3 activated by glutamate from AFD sensory neurons has been demonstrated in C. elegans thermotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 cites experimental evidence (Ohnishi et al., 2011) of analogous inhibitory transmission in a different sensory context (thermotaxis), providing supporting evidence for the proposed mechanism in salt chemotaxis.",
+    "result_type": "MINOR"
+  }
+]

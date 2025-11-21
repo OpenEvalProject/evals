@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C74",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SCellBOW is a novel computational method for single-cell RNA-seq analysis that treats cells as documents and genes as words, using a Doc2vec-inspired transfer learning framework to generate fixed-length embeddings. The method outperforms existing approaches (Seurat, Scanpy, DESC, ItClust, scETM, scBERT, scPhere) in clustering accuracy across multiple datasets (normal prostate, PBMC, pancreas, in-house matched PBMC-splenocyte), as measured by ARI, NMI, and cell type silhouette index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14-C19, C74 are supported by comprehensive benchmarking data across multiple datasets and metrics (Figures 2, 3). The methodological claims (C15, C16, C36-C38, C42-C44, C46, C80-C86) are clearly described and implemented. The transfer learning approach is well-documented with appropriate preprocessing steps. The performance superiority is demonstrated quantitatively across different resolutions and datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C49",
+      "C50",
+      "C51",
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "SCellBOW's phenotype algebra module enables survival risk stratification of tumor cell subpopulations by performing algebraic operations on cell embeddings. The method was validated on three cancer types (GBM, breast cancer, metastatic prostate cancer), showing that removal of aggressive subtypes from total tumor reduces predicted risk scores in clinically intuitive ways, while raw gene expression data and other methods (scETM, scBERT, scPhere) failed to achieve accurate stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C20-C23, C70-C72 are supported by phenotype algebra results on well-characterized cancer subtypes (Figures 4, 5). The methodology (C75-C76, C87-C89) is clearly described with appropriate use of random survival forests and SMOTE for class imbalance. Claim C49-C51 demonstrate that SCellBOW embeddings are necessary for accurate risk stratification. The validation across multiple cancer types with known clinical outcomes provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C78",
+      "C79"
+    ],
+    "result": "SCellBOW identified a novel AR\u2212/NElow malignant subpopulation (CL2) in metastatic prostate cancer that exhibits higher aggressiveness than conventional NEPC (CL4) despite having mixed AR/NE signatures. This cluster is characterized by stemness, EMT, drug resistance, angiogenesis signatures, and is present across multiple drug-treated patients and metastatic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C24-C34, C78-C79 are supported by multiple lines of evidence: phenotype algebra showing CL2 has higher predicted risk than CL4 (C25, Figure 6b), patient/site distribution analysis (C26, Figure 6c), correlation with AR\u2212/NElow phenotype (C28, Figure 6f), and comprehensive GSVA analysis (C29-C33, Figure 6g). The characterization is thorough with functional enrichment analyses. However, C34-C35 are inferences that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Phenotype algebra can distinguish between malignant and non-malignant subpopulations in the tumor microenvironment, showing that removal of aggressive cancer subtypes decreases risk scores while removal of immune cells increases risk scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by phenotype algebra results on mCRPC tumor microenvironment (Figure 5g-h). The differential effects of removing malignant vs. non-malignant cells provide evidence that the method captures biologically meaningful risk signals. However, the interpretation of immune cell removal increasing risk (C53) requires careful consideration of confounding factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "An in-house matched PBMC-splenocyte dataset was generated from four patients (two healthy, two brain-dead donors) using CITE-seq with hashtag oligos, yielding 4,819 cells after quality control that were annotated into six major cell populations using Azimuth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 describe the experimental methods and data generation for the in-house dataset. The methods are clearly described with appropriate quality control steps. The cell counts and annotation procedures are documented. This provides a valuable validation dataset with multiple covariates (organ, donor, physiological state).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Single-cell RNA-seq enables characterization of tumor heterogeneity, but assessing risk associated with individual cell subpopulations is challenging due to phenotype complexity and lack of clinical annotations in scRNA-seq studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C11 represent established knowledge about scRNA-seq capabilities and tumor biology, supported by appropriate citations. Claim C3 and C10 are reasonable inferences about current limitations that motivate the development of SCellBOW. These provide appropriate context for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C47",
+      "C48",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Background on cancer biology and molecular subtypes: prostate cancer phenotypes (ARPC, NEPC, DNPC, AMPC), breast cancer subtypes (including NORMAL subtype characteristics), GBM subtypes, and mechanisms of lineage plasticity, treatment resistance, and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C47-C48, C55-C69 provide background knowledge supported by appropriate citations. These establish the biological context for the computational analyses. C67-C68 include some speculation about intermediate phenotypes, which is appropriately qualified. This background is necessary for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C45"
+    ],
+    "result": "Existing single-cell transfer learning methods (scETM, ItClust, scBERT) require pre-annotated data, which limits discovery of new cell types and is affected by class imbalance, and they use numerical gene expression values directly as input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41, C45 are supported by citations and knowledge of existing methods. Claim C40 is a reasonable inference about limitations of annotation-dependent approaches. These claims appropriately position SCellBOW relative to existing methods and justify the novel approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C77"
+    ],
+    "result": "SCellBOW is a comprehensive tool for deciphering molecular heterogeneity and inferring survival risks from scRNA-seq data, with potential for clinical applications in tailored therapeutic interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is a summary statement supported by the presented work. However, C77 is speculative about clinical applications. While the computational results are promising, translation to clinical utility would require prospective validation, integration with clinical workflows, and demonstration of impact on patient outcomes. The claim of 'promise' is reasonable but the actual clinical utility remains to be demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

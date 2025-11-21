@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study enrolled 272 patients across multiple centers with CT imaging data (173 from UMMD/JHC, 99 from WUH) and 83 patients from DUH with EV miRNA data. After propensity score matching for age, baseline differences between centers were removed, enabling integrated analysis of imaging and molecular data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide clear cohort descriptions with specific patient numbers and demographic characteristics. The use of PSM (C20) to address baseline differences is methodologically sound and appropriately documented with reference to Figure 2A, strengthening the validity of subsequent cross-center comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Radiomics analysis identified 88 differentially expressed features between benign and malignant pancreatic lesions. Feature selection using Boruta algorithms identified 12 important features, which were further reduced to 4 key features via LASSO regression. The resulting 4-feature radiomics signature achieved high predictive accuracy (AUC=0.911) in an independent test dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe a systematic feature selection pipeline with appropriate dimensionality reduction methods (Boruta, LASSO). The validation in an independent test cohort (WUH) with AUC=0.911 demonstrates robust predictive performance. The methodology is well-documented with references to figures and source data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Integration of radiomics-based patient risk stratification with EV miRNA expression data via WGCNA identified three low-abundance miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, hsa-miR-5695) associated with imaging features. Low-abundance was defined as the lowest 30% CPM values, yielding 295 candidates, of which 12 were in the key WGCNA module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C74-C76 describe a novel radiogenomic integration approach linking imaging features to molecular signatures. The operational definition of low-abundance miRNAs (C74) is clearly stated, and the WGCNA methodology with specific cutoff criteria (|MM|>0.5, |GS|>0.1) is appropriate for identifying co-expressed modules. The convergence on 3 miRNAs from multiple analytical streams is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The three identified miRNAs (hsa-miR-1260b, hsa-miR-151a-3p, hsa-miR-5695) showed significantly elevated expression in tumor patient serum compared to healthy controls, with similar upregulation observed in tumor tissue versus non-tumor tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide experimental validation of the three candidate miRNAs in both serum and tissue samples, with statistical significance demonstrated. The consistency across both sample types strengthens the biological relevance of these biomarkers, though the manuscript notes limited sample size for paracancerous tissue validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C51",
+      "C52",
+      "C53",
+      "C77"
+    ],
+    "result": "A diagnostic model based on the three EV miRNAs achieved high predictive accuracy across multiple datasets: training set (AUC=0.978, sensitivity=0.97, specificity=0.99), two independent test sets (AUC=0.919 and 0.857), and extended validation (AUC=0.897). This performance exceeded the standard biomarker CA19-9 (AUC=0.843).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C51-C53 demonstrate robust diagnostic performance with validation across multiple independent cohorts. The use of 10 machine learning algorithms (C77) to select the optimal model (GBM) is methodologically sound. The comparison to CA19-9 (C33) provides clinical context, showing superior performance. However, the high training accuracy (0.978) raises potential concerns about overfitting despite good test performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C78",
+      "C79"
+    ],
+    "result": "Target prediction identified 117 shared mRNA targets of the three miRNAs, which enabled stratification of tumors into two molecular subtypes (C1 and C2). C2 patients showed significantly better survival outcomes (OS and DFS), while C1 patients were characterized by older age, larger tumors, more positive lymph nodes, higher rates of perineural invasion, and advanced staging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe a biologically-informed molecular subtyping approach based on predicted miRNA targets. The survival differences (C36) are statistically significant with appropriate Kaplan-Meier analysis. Clinical correlations (C37-C38) are well-documented with references to figures. The use of miRPathDB for target prediction (C78) and ConsensusClusterPlus for clustering (C79) represents standard methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C65",
+      "C80"
+    ],
+    "result": "C2 tumors showed significantly higher immune cell infiltration (CD8 T cells, cytotoxic lymphocytes, NK cells) and more physiological immune checkpoint expression compared to C1 tumors, suggesting potential suitability for immunotherapy after standard treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C40 present immune profiling data using MCP-counter algorithms (C80), but the authors acknowledge this is a significant limitation as MCP-counter was designed for solid tissues, not blood samples (C67). The inference about immunotherapy suitability (C65) is speculative and not directly validated. The immune characterization requires validation with methods appropriate for blood samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C81",
+      "C82"
+    ],
+    "result": "Drug sensitivity prediction using GDSC data suggested that C1 patients might be more sensitive to seven FDA-approved drugs including AKT inhibitor VIII, Bleomycin, Dasatinib, GNF-2, PF-562271, Refametinib, and BMS-509744 compared to C2 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 presents drug sensitivity predictions based on computational analysis using pRRophetic package (C82) and GDSC cell line data (C81). However, these are in silico predictions without experimental validation in patient samples or clinical data. The inference that C1 patients \"may benefit\" represents speculation requiring prospective validation. The methodology is appropriate for hypothesis generation but insufficient to support clinical recommendations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C66",
+      "C83",
+      "C84"
+    ],
+    "result": "Functional enrichment analysis revealed that C1 subtype tumors were enriched for intermediate filament organization, ribosome components, and symporter activity, with activation of fatty acid metabolism and biological oxidation pathways, and potential inhibition of apoptosis, DNA repair, and Hippo signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe comprehensive functional enrichment analysis using GSEA (C83) with appropriate statistical thresholds (p\u22640.05, C84). The pathway analysis provides biological context for the poor prognosis of C1 patients (C66), linking molecular signatures to known cancer hallmarks. The methodology is standard and results are clearly presented with references to Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C57",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94"
+    ],
+    "result": "This study represents the first radiogenomic approach to identify plasma EV miRNA biomarkers for pancreatic cancer by integrating CT imaging features with molecular data across eight datasets. Three novel low-abundance miRNAs were identified that distinguish benign from malignant lesions and enable molecular subtyping with distinct survival profiles and therapeutic implications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C57, and C88-C91 describe the study's novel contributions. The integration of radiomics with EV miRNA profiling (C88-C89) represents a methodologically innovative approach. The claim of novelty (C45, C57) appears supported by literature review, though C57 acknowledges this is based on the authors' knowledge. The identification of three miRNAs (C90) and their use for subtyping (C91) is well-documented. However, C94's characterization as \"promising\" for clinical application is aspirational given acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The study focused on low-abundance miRNAs, which are often masked by highly abundant miRNAs in routine sequencing and may be undetectable in benign lesions but elevated in early cancer. Two of the three identified miRNAs (hsa-miR-1260b and hsa-miR-5695) were undetectable in benign samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C48-C49 provide biological rationale for focusing on low-abundance miRNAs, based on established knowledge about RNA-seq limitations. Claim C50 presents data showing two miRNAs were undetectable in benign samples, supporting the early detection potential. However, there is an apparent contradiction: C50 states these miRNAs were \"undetectable in PC samples\" which contradicts C28-C29 showing elevation in tumor samples. This appears to be a textual error in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Previous microRNA biomarker studies for pancreatic cancer reported AUCs of 0.78-0.96 and sensitivities of 0.62-0.88, but many lacked external validation. One prior study identified diagnostic panels with 4 miRNAs (AUC=0.86) or 10 miRNAs (AUC=0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide appropriate contextualization of the current study's performance relative to prior work, with proper citations. The comparison highlights that the current 3-miRNA panel achieves similar or better performance with fewer biomarkers, supporting clinical practicality. The criticism of prior studies lacking external validation (C55) is substantiated by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Literature review revealed that hsa-miR-5695 has been linked to breast and prostate cancer, hsa-miR-1260b has been implicated in multiple cancers including lung, breast, sarcoma, and prostate, and was previously identified as upregulated in IPMN plasma. hsa-miR-151a-3p has been reported as a biomarker for lung cancer bone metastasis and was recently found upregulated in PDAC plasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 provide comprehensive literature context for the three identified miRNAs with appropriate citations. The prior identification of hsa-miR-1260b in IPMN (C60) and hsa-miR-151a-3p in PDAC (C62) supports the biological plausibility of these biomarkers for pancreatic pathology, though C57 correctly notes they haven't been specifically reported as diagnostic biomarkers for PC in the exact context of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study has methodological limitations including use of MCP-counter algorithm on blood samples (designed for solid tissues), lack of cancer cell-specific EV enrichment (e.g., CD147), and potential contamination from non-cancer cell background that may affect cancer specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 represent appropriate acknowledgment of study limitations. The recognition that MCP-counter may not be optimal for blood samples (C67) is important for interpreting immune infiltration results. The lack of cancer-specific EV enrichment (C68-C69) is a significant limitation that could affect specificity, though the strong diagnostic performance suggests this may not be a major confounding factor. These honest assessments strengthen the manuscript's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C85"
+    ],
+    "result": "CT imaging was standardized using 64-slice scanners with 1.0-1.5mm slice thickness, triphasic contrast-enhanced protocol, and portal venous phase selection for radiomics analysis. Preprocessing included resampling, intensity normalization, and N4 bias field correction. Radiomics features were analyzed using limma package with linear modeling and empirical Bayes moderation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 and C85 describe comprehensive imaging acquisition and preprocessing protocols that are appropriate for radiomics analysis. The standardization across centers (C70-C71), rational phase selection (C72), and preprocessing steps (C73) address key technical requirements for reproducible radiomics. The use of limma for high-dimensional data analysis (C85) is methodologically sound and well-suited for the data type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Survival analysis employed Kaplan-Meier analysis with log-rank tests for comparing subtypes, and multivariate Cox proportional hazards models to adjust for confounding clinical variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 describe appropriate statistical methods for survival analysis. The combination of Kaplan-Meier for visualization and Cox models for adjustment is standard practice. However, the manuscript does not specify which clinical variables were included in the multivariate models or present the adjusted results, which limits full evaluation of potential confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C47"
+    ],
+    "result": "Pancreatic cancer has poor prognosis with ~13% 5-year survival, primarily due to lack of early detection leading to late-stage diagnosis. Approximately 90% are PDAC, currently diagnosed via medical imaging (CT, MRI, PET, ultrasound). Existing biomarkers CA19-9 and CEA are prognostic but not effective for screening or early diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C47 provide well-established background information about pancreatic cancer with appropriate citations. These claims accurately represent current knowledge about PC epidemiology, diagnostic challenges, and biomarker limitations. The statistics and clinical context are consistent with oncology literature and properly support the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "MicroRNAs regulate gene expression by inhibiting mRNA translation or enhancing degradation. Extracellular vesicles carry tumor-derived molecular fingerprints and EV-derived miRNAs play roles in cancer differentiation and metastasis. Co-expression network analysis has identified numerous miRNAs as potential diagnostic or prognostic biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide accurate background on miRNA biology and EV function with appropriate citations. These claims establish the biological rationale for investigating EV miRNAs as biomarkers and the use of network analysis approaches. The information is well-established in the literature and properly contextualizes the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Machine learning has been successfully applied to develop diagnostic signatures, including a three-serum miRNA signature for premalignant PC and immune subtype classification for triple-negative breast cancer. Radiogenomics integrates imaging features with genomic signatures for non-invasive molecular prediction, including p53 mutation prediction from CT images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 provide relevant precedents for the study's methodological approach with appropriate citations, including the authors' prior work (C11). These examples establish the feasibility and utility of machine learning for biomarker development and radiogenomic approaches for molecular prediction, supporting the rationale for the current study's integrated approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Pancreatic cancer currently has only two standard systemic treatments with limited efficacy, and the patient population responsive to immunotherapy and targeted therapy remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 accurately describe current treatment limitations for PC with appropriate citation (Neoptolemos et al., 2018). This information provides important clinical context for the study's goal of molecular subtyping to guide treatment selection, though the citation is from 2018 and treatment landscape may have evolved.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "HONs precisely encode net body movement across behaviors with high correlation (r=0.68\u00b10.04), significantly stronger than running speed alone (r=0.50\u00b10.03, p<0.0001), and this correlation persists during non-locomotor epochs (r=0.54\u00b10.03). The video-derived movement metric serves as a reliable biometric for HON population activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 and C76-C78 provide converging evidence from multiple experimental approaches. The high correlation values are statistically significant with appropriate controls (isosbestic excitation for movement artifacts, C77), proper methodology for the movement metric (C78), and adequate sample size (n=15 mice, C76). The finding that movement encoding persists during non-locomotor epochs (C10) strengthens the claim that HONs track general body movement rather than just running.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C79"
+    ],
+    "result": "HON activity tracks the magnitude of movement change rather than encoding discrete behavioral types. Average HON activity during specific behaviors (resting, running, grooming, chewing, sniffing) follows a nearly 1:1 relationship with the movement metric, and model comparison using AIC shows movement magnitude explains HON activity better than behavioral classification alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are well-supported by statistical analysis (rmANOVA p<0.0001, C12) and model comparison (C14). The behavioral classification using deep learning (C79) provides an objective method for testing whether HONs encode behavior type versus movement magnitude. The 1:1 relationship (C13) and behavioral transition analysis (C15) provide converging evidence that HONs track movement magnitude across behavioral contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C80"
+    ],
+    "result": "HON activity and body movement share similar spectral profiles with maximum power around 0.1-0.01 Hz. Active movement epochs prefer the \u03c0/2 HON phase while quiescent epochs prefer the 3\u03c0/2 phase, with strongest phase coupling in the 0.1-0.01 Hz frequency domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by empirical mode decomposition analysis (C80), a validated method for non-stationary biological signals. The spectral similarity between HON activity and movement (C17) and the phase preference analysis (C18-C19) provide frequency-domain evidence for HON movement tracking. The methodology is appropriate and the findings are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C81"
+    ],
+    "result": "HONs are not necessary to maintain movement frequency profiles. HON ablation using the validated HON-DTR model does not significantly alter the power-frequency spectrum of movements or the frequency of small versus large movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by appropriate genetic ablation experiments (C81) with proper controls (wild-type vs DTR+). The statistical analysis shows no significant difference in movement bout frequencies (p=0.2767, C21) and similar power-frequency distributions (C20). This demonstrates that while HONs track movement, they are not necessary for generating the movement patterns themselves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C82"
+    ],
+    "result": "Orexin release at HON projection targets shows projection-specific heterogeneity in movement representation. SNc orexin prefers the downstate (3\u03c0/2) phase while LC orexin prefers the upstate (\u03c0/2) phase during active movement. During movement initiation, orexin signals rise in LC but fall in SNc, especially for large movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by dual-site recordings using the OxLight1 biosensor (C82). The opposite phase preferences (C22-C23) and divergent temporal dynamics during movement initiation (C25) provide strong evidence for projection-specific heterogeneity (C24, C26). The statistical significance for large movements (p=0.03125, C25) supports the interpretation, though the small sample size (n=7 mice) suggests caution in generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "HON movement tracking is independent of metabolic state and spectrally orthogonal to glucose encoding. Movement-HON correlations do not differ across fed, re-fed, and fasted states (p=0.176). Movement information is carried in the high-frequency band (0.1-0.01 Hz) while glucose information is in the low-frequency band (<0.001 Hz), and movement encoding is independent of blood glucose percentile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C31 provide strong evidence for spectral multiplexing. The lack of difference across fasting states (rmANOVA p=0.176, C27) and the significant separation of coefficient weights in different frequency bands (C29-C30) demonstrate orthogonal encoding. The independence from glucose percentile (p=0.5594, C31) further supports this conclusion. However, the glucose experiments use a smaller sample (n=6 mice) from a previous study, which should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C74"
+    ],
+    "result": "HON encoding of body movement occurs in a communication bandwidth distinct from HON encoding of blood glucose, allowing parallel encoding of energy supply and demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C74 are directly supported by the frequency domain analysis showing spectral separation (Figure 6E-F). This is a summary claim that integrates the findings from C28-C30 and provides a functional interpretation. The evidence for spectral orthogonality is strong and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C83"
+    ],
+    "result": "HON encoding of movement is distinct from encoding of pupil-linked arousal. While pupil size (r=0.45\u00b10.08) and ocular movements (r=0.26\u00b10.02) correlate with HON activity, body movement is the most important predictor (~65% contribution). Pupil size is encoded at lower frequencies than body movement, while ocular movements are encoded at higher frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by multivariate analysis using partial least squares regression and drop-one feature analysis (C34). The frequency domain separation (C35-C36) provides additional evidence for distinct encoding. The use of pupil size as an established arousal metric (C83) strengthens the interpretation. The statistical tests are appropriate (paired t-tests with p<0.05), though the sample size is smaller (n=7 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C84"
+    ],
+    "result": "HONs are uniquely positioned to track body movement compared to other subcortical populations. HONs (r=0.68\u00b10.04) and MVeGLUT neurons (r=0.70\u00b10.06) show the strongest movement correlations, while LCNA (r=0.23\u00b10.07), SNcDA (r=-0.28\u00b10.08), and VMHSF-1 (r=0.20\u00b10.11) show weaker correlations. HONs encode small movements significantly better than MVeGLUT neurons (p=0.0099).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C50, and C84 provide comprehensive comparative analysis across multiple genetically-defined neural populations using appropriate Cre-lines (C84). The statistical comparisons are properly conducted with adequate sample sizes for most populations (HONs n=15, LCNA n=20, though MVeGLUT n=6 is smaller). The cross-correlation analysis (C43-C47) provides temporal information, and the clustering analysis (C48-C49) reveals functional differences between HONs and MVeGLUT neurons in encoding small versus large movements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C66",
+      "C67"
+    ],
+    "result": "Orexin in the SNc may be more involved in movement initiation rather than maintenance, as orexin levels are higher before movements. In contrast, orexin in the LC may provide increased arousal during ongoing movement, showing the opposite temporal profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C66, and C67 present interpretations of the temporal dynamics observed in Figure 5. While the data showing opposite profiles between SNc and LC are solid (C22-C25), the functional interpretations about initiation versus maintenance (C66) and arousal during movement (C67) are speculative. These interpretations are reasonable given known roles of these brain regions, but they lack direct experimental validation of the proposed functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C75"
+    ],
+    "result": "Via HON movement tracking, the brain creates a 'wake up' signal proportional to movement. HONs are implicated in mobilizing glucose stores and shuttling glucose from liver to muscle, and multiplexing movement and glucose sensing may optimally match movement processes to energy demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 and C75 present interpretations and speculations about the functional significance of HON movement tracking. While C58 is supported by citation to previous work, C57 and C59 are interpretations based on the current findings combined with known HON functions. These are reasonable hypotheses but lack direct experimental validation in this study. C59 is explicitly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "HON population activity may encode physiological derivatives (rate of change) multiplexed across the frequency domain. HONs track the derivative of blood glucose rather than glycemic state itself, and encoding derivatives allows for anticipatory responses in sensorimotor control loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is explicitly stated as speculation. While C61 is supported by citation to previous work (Viskaitis et al., 2024), and C62 draws on established control theory, the broader claim about HONs encoding multiple physiological derivatives across frequency domains remains speculative. The current study demonstrates this for movement and glucose, but generalization to other physiological variables requires additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "HONs may 'read' movements by sensing them or receiving efference copies/corollary discharges. Prior studies show HON stimulation can evoke movement, while HON suppression or deletion has variable effects on locomotion. Overall, HONs may be sufficient to 'write' movements but are not necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C68 integrate current findings with prior literature. C63 presents theoretical possibilities supported by citations. C64-C65 accurately summarize previous experimental findings with appropriate citations. C68 is a reasonable conclusion based on the ablation experiments (Figure 4) showing movements persist without HONs, combined with cited stimulation studies showing HONs can evoke movements. The logic is sound though the interpretation involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Narcolepsy-cataplexy, caused by HON loss of function, may be explained by oscillations into unwanted sleep states and motor programs due to impaired control loops for wakefulness and movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is explicitly stated as speculation and represents a theoretical interpretation of clinical manifestations based on control theory concepts. While this is an interesting hypothesis that integrates the current findings with clinical knowledge, it lacks direct experimental support and remains speculative. The connection between the observed movement tracking and narcolepsy symptoms requires substantial additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Video-tracked pixel difference could serve as a simple non-invasive biometric for real-time estimation of HON population state in head-fixed behaving mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is a practical application inferred from the high correlation (r=0.68) between movement and HON activity. This is a reasonable inference supported by the data, though it is explicitly limited to head-fixed mice. The claim is appropriately cautious about the scope of validation and cites relevant literature supporting the importance of such tools in neuroscience research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Future work should address how movement information is conveyed to HONs (requiring extensive functional screening due to widespread inputs), define individual HON cell responses to movement (current results likely represent dominant subpopulations), and probe the role of multiple HON transmitters at brain-wide projection targets in movement communications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 appropriately identify limitations and future directions. C71 acknowledges the challenge of identifying upstream inputs given widespread monosynaptic connections. C72 recognizes that population recordings may not capture cellular heterogeneity. C73 suggests extending the projection-specific findings to other targets and transmitters. These are reasonable assessments of what remains unknown and what follow-up work is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "Movement-related signals are widespread in cortical and subcortical areas. HONs track glycemic dynamics and hunger states, orchestrate arousal, and project to SNc and LC which express orexin receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C56 provide background context supported by extensive citations to previous literature. These claims accurately represent prior knowledge and appropriately cite the relevant studies. They establish the scientific context for the current work but do not represent new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "All animal experiments followed Swiss regulatory guidelines. Mice were predominantly male (with some female Vglut2-ires-Cre and DBH-iCre mice pooled), and whether conclusions apply to females remains to be determined. All experiments were performed in the dark phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe methodological details and acknowledge limitations. C85 confirms regulatory compliance. C86 describes the sex distribution of subjects. C87 appropriately acknowledges the limitation regarding generalizability to females. C88 notes the circadian timing of experiments. These are straightforward methodological statements that are adequately documented.",
+    "result_type": "MINOR"
+  }
+]

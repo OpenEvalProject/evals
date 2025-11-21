@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Eight spontaneous T2DM macaques were identified from 1698 captive rhesus macaques, exhibiting significantly elevated FPG, FPI, and HOMA-IR (p<0.01), indicating insulin resistance, while HbA1c, lipid profiles, and BMI remained comparable to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide consistent physiological characterization of the T2DM macaque model. Statistical significance is reported with appropriate p-values (p<0.01 for metabolic markers, p>0.05 for non-significant parameters), and sample sizes are specified (n=8 per group). The data establish insulin resistance without confounding metabolic syndrome features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Gut microbiota composition differed between T2DM and control macaques, with increased Lachnospiraceae (14.48% vs 6.66%) and decreased Lactobacillaceae (20.88% vs 25.95%), and 21 differential microbes identified including elevated Erysipelotrichaceae and Lachnospiraceae members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 demonstrate microbiome alterations using 16S rRNA and metagenomic sequencing with appropriate statistical methods (PCoA, LEfSe). While alpha diversity changes were non-significant (C6), beta diversity and taxonomic composition showed clear differences (C7-C12). Quantitative abundance data and statistical validation support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Metagenomic functional analysis identified 74 differential KEGG pathways associated with T2DM and inflammation, and significant upregulation of CAZy enzyme families (CBMs, GTs, CEs, PLs) indicating altered carbohydrate metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide functional characterization of microbiome changes. The pathway enrichment analysis (C13-C14) and CAZy enzyme profiling (C15-C16) are appropriate methods with statistical validation shown in Figure 1F-G. The interpretation linking enzyme changes to carbohydrate metabolism is reasonable given the functional roles of these enzyme families.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Fecal metabolome analysis identified 64 differential metabolites (VIP>1, p<0.05), including significantly decreased anti-inflammatory tryptophan metabolites (muscon, indole-3-acetaldehyde, serotonin) that are AhR ligands, with enrichment in tryptophan metabolism pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 describe metabolomic findings with appropriate statistical criteria (OPLS-DA, VIP>1, p<0.05). The identification of AhR ligands (C22) and their anti-inflammatory properties (C20, C23) are supported by citations. However, the functional consequence claim (C23) relies on cited literature rather than direct experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Acylcarnitine metabolites were significantly elevated in T2DM macaques (VIP>1, p<0.1), with l-propionylcarnitine showing the highest increase (FC: 16.19), indicating incomplete LCFA \u03b2-oxidation similar to human T2DM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 establish incomplete fatty acid oxidation through acylcarnitine accumulation. The statistical threshold (p<0.1) is slightly less stringent than other analyses but acceptable for exploratory metabolomics. The interpretation (C27) is supported by mechanistic knowledge (C26) and parallel human findings (C28), though the p-value threshold warrants noting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Transcriptome analysis identified 161 DEGs (FDR<0.05) enriched in diabetes-related pathways including insulin resistance, fatty acid metabolism, and inflammation, with specific upregulation of IL6 and IRS1 and downregulation of INSR in the insulin resistance pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 provide transcriptomic characterization with appropriate statistical methods (DESeq2, FDR<0.05) and functional enrichment analysis. The identification of specific pathway components (C34) is supported by Figure 2\u2014figure supplement 1B. Sample size (n=8) and statistical rigor are adequate for RNA-seq analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "WGCNA identified four T2DM-associated gene modules with 546 hub genes (|kME>0.8|), including 102 overlapping DEGs, several of which (IGF2BP2, LEPR, RAP1A, SESTRIN3, ITLN1, ACSM3, HADHB, EFHB) are known T2DM-associated genes in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 demonstrate co-expression network analysis with clear methodology (kME threshold) and validation through overlap with DEGs (C40) and literature support for human T2DM associations (C41-C42). The functional annotation of modules (C37-C38) is consistent with the disease phenotype. The analysis appropriately integrates network topology with differential expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Targeted fatty acid analysis detected 34 fatty acids with significantly elevated saturated fatty acids (p<0.05) in T2DM macaques, particularly PA, palmitoleic acid, and oleic acid (p<0.05, VIP>1), with increased plasma PA and decreased fecal PA, consistent with human T2DM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 validate metabolomic findings through targeted analysis with appropriate statistical criteria. The inverse relationship between plasma and fecal PA (C47) suggests enhanced absorption. Parallel findings in human T2DM (C48) and mechanistic literature support (C49) strengthen the interpretation, though sample size appears reduced (n=7-8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Inflammatory markers showed significantly elevated IL-1\u03b2 (p<0.05) but not TNF-\u03b1 or IL-6 in T2DM macaques, with blood cell analysis revealing increased WBC, neutrophil percentage/number and decreased lymphocyte percentage/number (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate selective inflammatory activation with appropriate statistical validation. The specific elevation of IL-1\u03b2 (C50, C52) without changes in other cytokines (C51) suggests a particular inflammatory profile. Blood cell count changes (C53) provide additional evidence of inflammation. The selective cytokine response is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Correlation analysis revealed significant associations (|r|>0.5, adj p<0.05) between four Lachnospiraceae members (Coprococcus, Lachnospira, Roseburia, Dorea longicatena) and three LCFAs (PA, palmitoleic acid, oleic acid), suggesting Lachnospiraceae participation in LCFA accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 establish microbe-metabolite correlations with appropriate statistical criteria (Spearman correlation, adjusted p-values). However, correlation does not establish causation, and the interpretation of 'participation' (C55) is inferential. The correlation threshold (|r|>0.5) is reasonable but moderate. Additional mechanistic validation would strengthen causal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "FMT from T2DM macaques combined with high PA diet (FTPA) induced prediabetes in mice by day 120 (FPG 6.7 mmol/L), with glucose intolerance, insulin resistance, and elevated body weight, TC, and TG, while FT or PA alone showed only mild effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 demonstrate causative role of microbiota-PA interaction through controlled FMT experiment. The experimental design with four groups (FTPA, FT, PA, Control) appropriately tests synergistic effects. Statistical significance and diagnostic criteria (FPG \u22656.7 mmol/L for prediabetes) are reported. The requirement for both FMT and PA diet (C63) is critical for establishing mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Histopathological examination revealed hepatocyte focal necrosis with inflammatory infiltration and decreased pancreatic islet volume with inflammatory infiltration in FTPA mice, but not in controls or single-treatment groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide histological validation of disease phenotype with appropriate tissue examination (H&E staining). The pathological changes are consistent with prediabetes/T2DM and support the metabolic findings. However, quantitative analysis of histological features (islet area, inflammation score) would strengthen the assessment beyond qualitative description.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PA content was significantly elevated in serum and ileum but decreased in feces of FTPA mice (p<0.05), with upregulated Cd36 expression and reduced IL-17A in ileum (p<0.05), demonstrating that gut microbiota mediated enhanced PA absorption in the ileum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 establish mechanistic pathway for microbiota-mediated PA absorption through compartmental PA measurements and gene/protein expression analysis. The inverse fecal-serum PA relationship (C67-C68) supports enhanced absorption (C69). The Cd36/IL-17A regulatory axis (C70-C72) is supported by citations (C71-C72). The PA-only group control (C73-C74) is critical for establishing microbiota requirement (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Microbiota analysis of mouse groups showed that FTPA and FT groups shared differential microbes with T2DM macaques (increased R. gnavus, Coprococcus sp.; decreased Christensenellaceae, F16, Treponema sp., F. succinogenes), with Lachnospiraceae abundance increasing over time after FMT, while PA-only group did not replicate these changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 demonstrate successful microbiota transfer and identify specific taxa associated with disease phenotype. The temporal tracking (C80) and cross-species comparison (C82) strengthen causal inference. The PA-only group serving as negative control (C83-C84) is critical for establishing microbiota requirement. Sample size (n=4) is modest but acceptable for microbiome studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The transplanted microbiota from T2DM macaques, particularly increased R. gnavus and Coprococcus sp. and decreased Treponema, F. succinogenes, Christensenellaceae, and F16, promoted PA absorption by regulating IL-17A and Cd36 expression, leading to LCFA accumulation and insulin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 integrates multiple lines of evidence (microbiome composition, gene expression, metabolite levels, disease phenotype) into a mechanistic model. While the individual components are well-supported, the complete causal chain involves some inferential steps. The model is consistent with all experimental data and provides a testable mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C121",
+      "C122"
+    ],
+    "result": "Multi-omics analysis of T2DM macaques revealed gut microbiota imbalance (decreased diversity, altered composition), tryptophan metabolism and fatty acid \u03b2-oxidation disorders, LCFA accumulation, and inflammation, which were validated through targeted measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91, C121-C122 summarize the multi-omics characterization of T2DM macaques. These summary claims are supported by the detailed findings in earlier claim groups. The integration across omics platforms (16S, metagenome, metabolome, transcriptome) provides comprehensive disease characterization. Validation experiments (C122) confirm key findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Gene expression analysis revealed dysregulation of genes related to lipolysis, fatty acid oxidation, LCFA accumulation, inflammation, and insulin secretion, with downregulated HADHB and ACSM3 causing acylcarnitine and LCFA accumulation and incomplete LCFA oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 integrate transcriptomic and metabolomic data to propose mechanistic pathways. The gene expression changes (HADHB, ACSM3) are consistent with metabolite accumulation (acylcarnitines, LCFAs). However, the causal language ('cause') is inferential rather than experimentally demonstrated through gene manipulation. The model is biologically plausible and consistent with data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Decreased Lactobacillus sp. likely caused reduction of AhR ligands (serotonin, indole-3-acetaldehyde), promoting expansion of PA-producing Erysipelotrichaceae and increasing PA levels, with both Erysipelotrichaceae and R. gnavus promoting T2DM through inflammation activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 propose a mechanistic pathway linking microbiome changes to PA accumulation and inflammation. While individual components are supported by citations (C95, C97) and correlations, the causal chain is largely inferential (C94, C96 are IMPLICIT claims). The pathway is biologically plausible but lacks direct experimental validation of the proposed sequence. Additional experiments (e.g., Lactobacillus supplementation, Erysipelotrichaceae depletion) would be needed to confirm causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "PA accumulation leads to insulin resistance through the PA-mTORC1-Akt pathway, with significantly changed expression of RAP1A, SESTRIN3, and IRS1, and promotes T2DM development by upregulating the NF-\u03baB signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 propose mechanistic pathways for PA-induced insulin resistance. C99 is supported by literature citation, while C100-C101 integrate gene expression data with pathway knowledge. The gene expression changes are documented, but the causal relationships are inferred rather than experimentally validated through pathway manipulation. The model is consistent with established PA signaling mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Gut microbiota mediated PA absorption in the ileum, resulting in serum PA accumulation and T2DM development in mice, with specific microbiota composition (increased R. gnavus, Coprococcus sp.; decreased Treponema, F. succinogenes, Christensenellaceae, F16) involved in the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 summarize the causal findings from the FMT experiment. The causative role of microbiota is established through the experimental design requiring both FMT and PA diet. The specific microbiota composition (C105) is identified through comparative analysis across groups. The mechanistic pathway is supported by multiple lines of evidence (PA measurements, gene expression, disease phenotype).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "R. gnavus promotes insulin resistance and inflammation through multiple mechanisms including tryptamine/phenethylamine regulation, mucin degradation, and disruption of intestinal barrier integrity, with decreased IL-17A and increased Cd36 expression indicating microbiota-mediated enhancement of PA absorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 integrate literature-supported mechanisms (C106-C107, C109, C111-C113) with experimental findings (C110, C114) to explain R. gnavus effects. The mechanistic model linking mucin degradation, barrier disruption, IL-17A reduction, and Cd36 upregulation is biologically coherent. However, direct experimental validation of R. gnavus-specific effects (e.g., through mono-colonization) is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Beneficial bacteria (F. succinogenes, Christensenellaceae, F16) that protect mucosal barrier and improve insulin resistance were decreased in T2DM, with collective effects of gut microbes determining PA absorption from ileum to serum and contributing to T2DM development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 propose protective roles for decreased bacteria based on literature (C115) and integrate findings into a collective microbiome effect model (C116). The decreased abundance of beneficial bacteria is documented, and their protective functions are supported by citations. However, C116 uses cautious language ('might contribute') acknowledging the inferential nature of the collective effect model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Spontaneous T2DM macaques provide a valuable model for T2DM pathogenesis investigation, confirming the functional role of gut microbiota and PA in T2DM progression, with specific microbiota composition promoting PA absorption and T2DM development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 provide concluding statements about model utility and study findings. C117 and C120 are evaluative statements about model suitability supported by the disease characteristics. C118-C119 summarize the causal findings established through the FMT experiments. These conclusions are appropriately supported by the experimental evidence, though C120's claim of 'best' model is subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Mice transplanted with T2DM macaque fecal microbiota and fed high PA diet developed prediabetes within 120 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 summarizes the key experimental outcome demonstrating causative role of microbiota-PA interaction. This is supported by detailed experimental data (C57-C66) showing metabolic, histological, and physiological changes consistent with prediabetes. The 120-day timeframe and experimental design are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Background literature establishes T2DM as a complex metabolic disease involving gut microbiota, lipid metabolism, and inflammation, with PA being a key LCFA associated with T2DM, but interactions between gut microbiota and LCFA metabolites in T2DM development remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C136 provide literature-based background establishing the scientific context. These claims are supported by appropriate citations and represent established knowledge in the field. C129 and C136 identify knowledge gaps that the study addresses. These background claims appropriately frame the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Spontaneous T2DM in macaques is highly similar to human T2DM and represents an optimal animal model, though naturally occurring cases are rare and high-fat diet alone does not reliably induce T2DM, highlighting controversial effects of dietary fat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 establish the rationale for using spontaneous T2DM macaques as a model system. The similarity to human disease (C137, C139) and advantages over other models (C138-C140) are supported by citations. The rarity of spontaneous cases (C141) and failure of dietary induction (C142) are documented in literature, motivating the study's approach. C143 appropriately identifies the need for further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Prior studies show insulin-resistant patients exhibit altered fecal metabolites and Lachnospiraceae species overproduce LCFAs during metabolic dysfunction, impairing intestinal integrity, suggesting PA content changes may reflect dynamic equilibrium between host absorption and microbial metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 cite recent literature establishing relevant mechanisms, while C147 is an inferential speculation about PA dynamics. The cited studies (C144, C146) provide relevant context for the findings. C147 appropriately uses cautious language ('potentially associated') for the speculative equilibrium model, which is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  }
+]

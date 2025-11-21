@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C58"
+    ],
+    "result": "The UK Biobank study included 117,698 participants with metabolomic data, comprising 4,658 glaucoma cases and 113,040 controls, with participants predominantly of European ancestry (85.8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, and C58 provide consistent demographic information about the study population. The sample sizes are explicitly stated and match across the abstract, results, and methods sections. The ancestry distribution is clearly documented in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Glaucoma cases in the UK Biobank were significantly associated with male gender, older age, and higher intraocular pressure compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are well-supported by Table 1, which shows statistically significant differences (p<0.001) for all three characteristics. The mean age difference (60.9 vs 56.7 years), sex distribution, and IOP measurements (17.8 vs 15.9 mmHg) are clearly documented with appropriate statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C68"
+    ],
+    "result": "Metabolites weakly predicted glaucoma alone (AUC=0.579) but offered marginal yet statistically significant improvement when added to PRS-based models (Model 4: AUC=0.806 with metabolites vs 0.801 without, p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19, C20, and C68 are consistently supported by Figure 3 and the statistical analyses. The AUC values are explicitly reported with confidence intervals, and the DeLong test confirms statistical significance. The improvement is modest but reproducible across models, supporting the conclusion of marginal enhancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Metabolites showed modestly improved predictive value for glaucoma in specific subgroups: White ethnicity (p<0.001), individuals aged 55 and older (p=0.002), and males (p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by Table 2, which presents stratified analyses with appropriate statistical testing. The p-values are explicitly stated and the subgroup analyses follow sound epidemiological practice. However, multiple testing correction is not mentioned, which could affect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In the top decile of glaucoma PRS, elevated levels of lactate (p=8.8E-12), pyruvate (p=1.9E-10), and citrate (p=0.018) were independently associated with reduced glaucoma prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C24-C26 are well-supported by Table 5 and the multivariable-adjusted analysis. The p-values are highly significant for lactate and pyruvate, with appropriate correction for multiple testing using the NEF method. The statistical approach accounts for metabolite covariance, strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Lactate, pyruvate, and citrate combined significantly modified the PRS-glaucoma relationship (Pinteraction=0.011), with the highest resilience metabolite levels in the highest PRS quartile corresponding to an OR of 0.71 (95% CI=0.64-0.80) for glaucoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C27-C30 are supported by Figure 5 and the interaction analysis. The interaction p-value is statistically significant, and the odds ratios show a consistent dose-response relationship. The analysis appropriately adjusts for multiple confounders and demonstrates biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Higher total resilience metabolite levels within the highest PRS quartile corresponded to lower glaucoma prevalence with an odds ratio of 0.71 (95% CI=0.64-0.80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is directly supported by Figure 5B and the statistical analysis. The odds ratio and confidence interval are clearly stated and the finding is consistent with the interaction analysis in C7 and C27-C30.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "There was no evidence of a significant three-way interaction between resilience-associated metabolite sum, PRS, and age (P3-way-interaction=0.65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is explicitly stated with a clear p-value. The lack of three-way interaction is appropriately reported, though the manuscript could benefit from more detail on the statistical power to detect such an interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A significant interaction exists between glaucoma MRS (built from 168 metabolites) and PRS (Pinteraction=0.0012), with the highest combined genetic and metabolic risk (PRS Q4, MRS Q4) yielding an OR of 25.1 (95% CI=18.8-34.1) compared to the lowest risk group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are well-supported by Figure 6 and Appendix 2-figure 1. The interaction is statistically significant and shows a synergistic effect. The odds ratios demonstrate a clear gradient across risk categories, supporting the clinical utility of combined risk assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C39",
+      "C85"
+    ],
+    "result": "Dietary pyruvate supplementation significantly protected Lmx1bV265D mice from IOP elevation (p=0.002) and anterior chamber deepening (p=4.4E-05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C39, and C85 are supported by Figure 7B and 7C with appropriate statistical testing (Fisher's exact test and ANOVA). The experimental design includes adequate controls and sample sizes (n>30 eyes per mutant group). The findings provide experimental validation of the human biobank observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C40"
+    ],
+    "result": "Dietary pyruvate treatment protected against glaucomatous optic nerve degeneration in Lmx1bV265D mice (p<0.0003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C40 are supported by Figure 7D showing optic nerve damage distributions. The p-value is highly significant and the sample sizes are adequate (n=38-41 nerves per group). The grading system is validated and the analysis is appropriately blinded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C84"
+    ],
+    "result": "LMX1B variants are associated with glaucoma in humans, and mice with the Lmx1bV265D mutation on a C57BL/6J background develop severe, early-onset IOP elevation and glaucoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C84 are supported by multiple citations to peer-reviewed literature and the authors' previous work. The mouse model is well-characterized and provides a relevant genetic model for testing metabolite interventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The glaucoma PRS used in this study was derived from MTAG analysis, constructed using 2,673 SNPs (p\u22640.001, LD-clumped at r\u00b2=0.1), with a predictive AUC of 0.68 (95% CI=0.67-0.70) in an independent cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are well-documented in the Methods section with appropriate citation to Craig et al., 2020. The PRS construction methodology is clearly described and the validation in an independent cohort strengthens confidence in the score's performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The UK Biobank used a high-throughput NMR-based platform to measure 249 metabolic biomarkers (168 absolute levels and 81 ratio measures), including 27 EU-certified metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are explicitly stated in the Methods section with citation to Julkunen et al., 2021. The metabolomic platform is well-established and the distinction between absolute and ratio measures is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Glycolysis end products (pyruvate and lactate) are important energy sources for RGCs, with lactate being critical for RGC survival during glucose deprivation, and bioenergetic insufficiency contributing to RGC loss in glaucoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by multiple citations to peer-reviewed literature. The biological rationale for metabolite involvement in glaucoma pathophysiology is well-established, providing mechanistic support for the observational findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C82",
+      "C83"
+    ],
+    "result": "Pyruvate acts as an antioxidant, scavenges ROS, induces Nrf2 expression, promotes autophagy, and has demonstrated neuroprotective effects on RGCs in cell culture, animal models, and a phase II clinical trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C82-C83 are supported by multiple citations including a randomized clinical trial (De Moraes et al., 2022). The mechanistic understanding and clinical evidence provide strong support for pyruvate as a therapeutic candidate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Citrate is a key TCA cycle intermediate important for aerobic energy production, with lower plasma citrate levels found in glaucoma patients, and elevated citrate potentially reflecting enhanced energy supply and antioxidative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C61-C66 combine established biochemical knowledge with cited clinical observations. The mechanistic rationale for citrate's protective role is biologically plausible and supported by the literature, though some claims (C65-C66) are more speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C76",
+      "C77"
+    ],
+    "result": "HDL has antioxidant properties to protect RGCs, can cross blood-ocular barriers, and genes implicated in POAG risk are enriched in apolipoprotein binding and lipid transport processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C76-C77 are supported by multiple citations. The biological plausibility of HDL involvement in glaucoma is established, though the manuscript acknowledges uncertainty about the relative contributions of circulating versus locally synthesized lipoproteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Previous metabolomic studies identified 12 metabolites associated with glaucoma, with higher triglyceride levels adversely associated with glaucoma, potentially through increased blood viscosity and elevated IOP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by citations to systematic reviews and meta-analyses. The findings are consistent with the current study's observations regarding triglycerides, providing external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Study limitations include glaucoma ascertainment based on self-report and hospital records rather than comprehensive examinations, a limited set of 168 plasma metabolites, lack of ocular metabolite profiles, and cross-sectional design preventing temporality assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are explicitly stated as limitations in the Discussion. The authors appropriately acknowledge these constraints, though they note the glaucoma prevalence (~4%) is similar to direct estimates (C67), partially mitigating ascertainment concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The prevalence of glaucoma in the UKBB sample (~4%) is similar to a directly performed disease burden estimate in a comparable UK sample (2.7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by citation to Minassian et al., 2000. This comparison provides reassurance about the validity of the glaucoma ascertainment method, though the cited study population was slightly older.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C69",
+      "C86",
+      "C87"
+    ],
+    "result": "The study demonstrates that pyruvate extends protective effects to ocular drainage tissues, mitigating IOP elevation, and that endogenous pyruvate plays a role in conferring resilience against glaucoma, with oral pyruvate acting as a potent resilience factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C86, and C87 represent interpretive conclusions based on the combined human biobank and mouse experimental data. The conclusions are well-supported by the convergent evidence from both study components, though the manuscript acknowledges uncertainty about endogenous versus exogenous pyruvate contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The statistical interaction between metabolite scores and PRS-derived glaucoma risk helps identify individuals who are less likely to develop glaucoma despite high genetic risk, and an MRS may provide clinically useful measures for patient risk stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 represent the main translational conclusions of the study. They are supported by the interaction analyses (Figures 5 and 6) and the experimental validation. However, the clinical utility requires prospective validation, which is appropriately acknowledged as future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Background context establishes that glaucoma is a polygenic, heritable neurodegenerative disease with high rates of underdiagnosis, that population screening is not cost-effective, that genetic and metabolic factors interact to influence risk, and that prior metabolomic studies were limited in scope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 and C88-C95 provide background context supported by appropriate citations. These claims establish the rationale for the study and are well-documented in the literature. They appropriately frame the research question and knowledge gap.",
+    "result_type": "MINOR"
+  }
+]

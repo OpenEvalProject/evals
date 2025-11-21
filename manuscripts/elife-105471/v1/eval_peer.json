@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C77",
+      "C114",
+      "C115",
+      "C117",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors developed 'thrifty' CNN models using 3-mer embeddings and convolutions that can capture wider sequence context (up to 13-mers) with fewer parameters than traditional 5-mer models, and these models show modest performance improvements over existing approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this core contribution. Reviewer 1 states the models 'outperform previous methods with fewer parameters' and calls the model structure 'quite clever.' Reviewer 2 notes 'Thrifty CNNs outperform traditional 5-mer models' and praises the 'efficiency and performance.' Reviewer 3 describes it as a 'clever solution to expand nucleotide context' with 'complete separation of training and test data.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C86",
+      "C87",
+      "C88",
+      "C107",
+      "C108",
+      "C120",
+      "C121",
+      "C127"
+    ],
+    "result": "Adding per-site rates, transformer architectures, positional encoding, and other modern elaborations to the models did not improve out-of-sample performance, contrasting with previous work by Spisak et al. 2020.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding without challenge. Reviewer 2 explicitly notes 'more complex modeling techniques, like transformers, did not enhance predictive performance, which underscores the role of data availability.' The editor's summary states 'current machine-learning methods are currently limited by the availability of data, which explains the only modest gain in model performance afforded by modern machine learning.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "A per-site effect is not necessary to explain SHM patterns given nucleotide context, and while per-site rate and mesoscale-level effects may exist biologically, their impact appears insufficient to significantly enhance statistical modeling performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question this conclusion. The finding is presented as a key result in all reviewer summaries without critique. Reviewer 1 notes this as a 'surprising finding' but does not challenge its validity. The editor's summary acknowledges the work 'show[s] convincingly' the model's performance characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C34",
+      "C111",
+      "C112",
+      "C113",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The two current methods for fitting SHM models\u2014using out-of-frame sequence data versus synonymous mutations\u2014produce significantly different results, models trained on one do not perform well on the other, and augmenting out-of-frame data with synonymous mutations does not aid performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly highlight this as a key finding. Reviewer 1 calls it 'a surprising finding' that the two training approaches 'give divergent results.' Reviewer 2 states 'A distinction is made between using synonymous mutations and out-of-frame sequences for model training, with evidence suggesting these methods capture different aspects of SHM.' The editor notes models 'learned from nonsynonymous mutations and from out-of-frame sequences are different, prompting new questions about germinal center function.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The thrifty models perform comparably to the much larger DeepSHM model (which has ~100x more parameters), and when trained on combined data, the thrifty models perform slightly better on held-out repertoires.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'Thrifty CNNs...match the performance of significantly larger models like DeepSHM.' No reviewer challenges this comparison or the performance claims. The finding supports the main thesis about parameter efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Performance metrics were better on the tang dataset (from a distinct sequencing experiment) than on held-out briney samples (from the same experiment), which the authors attribute to differences in sequencing error between experiments due to different UMI requirements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this observation or interpretation. The finding is presented as part of the careful data curation that Reviewer 1 praises. No concerns are raised about this cross-dataset comparison or the sequencing error explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C141",
+      "C142"
+    ],
+    "result": "The richness of these models is limited by data volume, and despite efforts, the authors were unable to find additional large datasets with many out-of-frame sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly states 'current machine-learning methods are currently limited by the availability of data.' Reviewer 2 notes 'the work is constrained by the availability of high-quality out-of-frame sequence data.' Reviewer 1 commends the 'careful attention...paid to curating and processing large existing data sets,' implicitly acknowledging the data limitation challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The authors released an open-source Python package with pretrained models and made their analysis reproducible via GitHub repositories.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly praise this contribution. Reviewer 2 lists 'Open Source Contributions: The release of a Python package and pretrained models adds practical value for the community.' Reviewer 3 highlights 'Release of open-source tools and scripts for reproducibility' as a strength. The editor notes 'an open-access tool for using the model' as a strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study follows previous work in using phylogenetic reconstruction and ancestral sequence inference on out-of-frame BCR sequences clustered into clonal families to create parent-child pairs, with the objective of predicting SHM probabilities while assuming site-independence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the methodological approach. Reviewer 3 notes 'Well motivated and defined problem' and 'Complete separation of training and test data by using different subjects for training vs testing.' Reviewer 1 praises 'Careful attention...paid to curating and processing large existing data sets.' No concerns are raised about the fundamental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study compared models to a 5-mer baseline and a reimplementation of Spisak et al. 2020, confirming the reimplementation infers similar parameters, with evaluation limited to positions 80-319 due to sequence coverage constraints.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly commends 'the authors...for their efforts to communicate with the developers of previous models and use the strongest possible versions of those in their current evaluation.' This validation work is treated as a methodological strength rather than questioned.",
+    "result_type": "MINOR"
+  }
+]

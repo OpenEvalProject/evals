@@ -1,0 +1,2181 @@
+{
+  "submission": {
+    "id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T17:11:20.144215Z",
+    "updated_at": "2025-11-21T17:11:20.144215Z"
+  },
+  "content": [
+    {
+      "id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "content_type": "manuscript",
+      "content_text": "# Evolution of lateralized gustation in nematodes\n\n## Authors\n\n- Marisa Mackie<sup>1</sup> ([ORCID: 0009-0001-5549-4453](https://orcid.org/0009-0001-5549-4453))\n- Vivian Vy Le<sup>1</sup>\n- Heather R Carstensen<sup>1</sup> ([ORCID: 0000-0002-2679-3286](https://orcid.org/0000-0002-2679-3286))\n- Nicole R Kushnir<sup>1</sup> ([ORCID: 0009-0008-9040-3669](https://orcid.org/0009-0008-9040-3669))\n- Dylan L Castro<sup>1</sup>\n- Ivan M Dimov<sup>1</sup>\n- Kathleen T Quach<sup>2</sup>\n- Steven J Cook<sup>3</sup> ([ORCID: 0000-0002-1345-7566](https://orcid.org/0000-0002-1345-7566))\n- Oliver Hobert<sup>3</sup> ([ORCID: 0000-0002-7634-2854](https://orcid.org/0000-0002-7634-2854))\n- Sreekanth H Chalasani<sup>2</sup> ([ORCID: 0000-0003-2522-8338](https://orcid.org/0000-0003-2522-8338))\n- Ray L Hong<sup>1</sup> ([ORCID: 0000-0003-1870-8659](https://orcid.org/0000-0003-1870-8659)) \u2020\n\n### Affiliations\n\n1. Department of Biology, California State University, Northridge Northridge United States ([ROR:005f5hv41](https://ror.org/005f5hv41))\n2. Molecular Neurobiology Laboratory, Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n3. Department of Biological Sciences, Howard Hughes Medical Institute, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals with small nervous systems have a limited number of sensory neurons that must encode information from a changing environment. This problem is particularly exacerbated in nematodes that populate a wide variety of distinct ecological niches but only have a few sensory neurons available to encode multiple modalities. How does sensory diversity prevail within this constraint in neuron number? To identify the genetic basis for patterning different nervous systems, we demonstrate that sensory neurons in Pristionchus pacificus respond to various salt sensory cues in a manner that is partially distinct from that of the distantly related nematode Caenorhabditis elegans. Previously we showed that P. pacificus likely lacked bilateral asymmetry (Hong et al., 2019). Here, we show that by visualizing neuronal activity patterns, contrary to previous expectations based on its genome sequence, the salt responses of P. pacificus are encoded in a left/right asymmetric manner in the bilateral ASE neuron pair. Our study illustrates patterns of evolutionary stability and change in the gustatory system of nematodes.\n\n## Introduction\n\nNematodes form a vast array of ecological relationships, from specialized parasite\u2013host dependencies to nematode\u2013microbial interactions, each one demanding exquisitely fine-tuned sets of sensory palates that span multiple modalities (Bargmann, 2006; Hong and Sommer, 2006; Chaisson and Hallem, 2012; Wheeler et al., 2020; Rengarajan and Hallem, 2016; Koneru et al., 2016; Lo and Sommer, 2022; Lo et al., 2024). Yet, the number of sensory neurons across diverse nematode species seems to be constrained (White et al., 1986; Schafer, 2016; Hong et al., 2019). Several free-living and parasitic nematode species examined by serial section electron microscopy have nearly identical numbers of 12\u201313 pairs of head sensory neurons, known as the amphid neurons (Hong et al., 2019; Ward et al., 1975; Li et al., 2001; Bumbarger et al., 2009; Zhu et al., 2011). How does sensory diversity arise within this constraint in neuron number? When coupled with well-described neuronal anatomy, this conserved neuron count allows for detailed comparisons at the single-cell resolution and represents an opportunity to interrogate how sensory cues are processed by anatomically similar nervous systems to produce species-specific or developmental stage-dependent behavioral outputs. To identify the genetic basis for patterning different nervous systems and to understand the processes that underlie evolutionary changes in adapting to different environments, several comparative model systems have been developed to promote comparisons to the well-studied nematode Caenorhabditis elegans at the genetic and cellular levels, including the predatory entomophilic nematode, Pristionchus pacificus (Hong et al., 2019; Loer and Rivard, 2007; Baiocchi et al., 2017; Gang et al., 2020; Bryant et al., 2022).\n\nAs expected from their association with insects in the wild, the olfactory preferences of P. pacificus are distinct from those of C. elegans and the human parasite Strongyloides stercoralis (Hong and Sommer, 2006; Chaisson and Hallem, 2012; Hallem et al., 2011), but little is known about P. pacificus responses to water-soluble compounds. In C. elegans, the main salt receptor neuron class comprises of a bilateral pair of left and right ASE neurons (ASEL and ASER), which serve to induce an attractive locomotory response toward an increase in salt concentration (Bargmann and Horvitz, 1991). The gene che-1 (chemosensory defective) encodes a transcription factor that is exclusively expressed in the ASE neurons and is required for their proper differentiation, such that a che-1 mutant results in defective salt attraction (Dusenbery et al., 1975; Uchida et al., 2003; Chang et al., 2003; Etchberger et al., 2007).\n\nOne major role of C. elegans CHE-1 is to promote lateral asymmetry in the ASE neurons. The left and right ASE neurons asymmetrically express receptor-type guanylyl cyclases (rGCs, encoded by gcy genes) (Yu et al., 1997). This finding led to the realization that the ASE neurons are lateralized, such that the left and the right ASE neurons differentially respond to distinct salt ions (Pierce-Shimomura et al., 2001; Chang et al., 2004; Suzuki et al., 2008; Ortiz et al., 2009). This observation led in turn to the identification of a complex gene regulatory network that genetically programs the distinct sensory potentials of the left and right ASE neurons (Hobert, 2014), which includes a miRNA, lsy-6, at the top of this gene regulatory network (Hobert, 2014; Johnston and Hobert, 2003; Cochella and Hobert, 2012). However, the lsy-6 miRNA evolved selectively in the Caenorhabditis genus (Ahmed et al., 2013) and is absent in P. pacificus. Moreover, P. pacificus does not show an expansion of the ASEL-type and ASER-type rGCs, as C. elegans does (Hong et al., 2019). With these two genomic observations in mind, we had previously proposed that the ASE neurons are unlikely to be lateralized in P. pacificus (Hong et al., 2019).\n\nHowever, we now revise this view in light of our work on mapping chemosensory responses in P. pacificus on the level of behavior and neuronal activity. We demonstrate that P. pacificus does in fact show lateralized chemosensory profiles, indicating that P. pacificus must have evolved independent means to establish ASE laterality. We also show that the tastant palate of P. pacificus is distinct from that of C. elegans, and that its dependence on ASE, as well as its terminal selector transcription factor che-1, have also diverged.\n\n## Results\n\n### P. pacificus and C. elegans differ in their behavioral responses to salts\n\nPrevious cross-species comparisons between P. pacificus and C. elegans indicated strong differences in olfaction preferences that reflect their divergent evolutionary histories and ecology (Hong and Sommer, 2006). To identify the neurons that mediate gustation, we first compared the chemosensory profiles of these two species toward water-soluble ions. In this survey, we found ammonium salts to be the strongest attractants to wildtype P. pacificus J4 to adult hermaphrodites (NH4Br, NH4Cl, and NH4I), with NH4I significantly more attractive to P. pacificus compared to C. elegans (Figure 1). Notably, in contrast to C. elegans (Ward, 1973), we find that P. pacificus is less attracted to NaCl and LiCl compared to the ammonium salts (Figure 1). Also, P. pacificus is repulsed by acetate salts (NaAc and NH4Ac), which induce attractive responses in C. elegans (Fr\u00f8kjaer-Jensen et al., 2008). We conclude that P. pacificus and C. elegans display differences in their salt preferences.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig1-v1.jpg)\n\n**Figure 1.:** J4 to adult hermaphrodites from the two species responded to NH4I, LiCl, and acetates significantly differently. Using two-way ANOVA, significant difference found between wildtype P. pacificus and C. elegans for the same salt is indicated above each pair (*p < 0.05, ****p < 0.0001), while the differences within P. pacificus is as follows: all salts showed difference when compared to NaAc and to NH4Ac (****p < 0.0001), but not between NH4Ac and NaAc. Both LiCl and NaCl attraction are significantly lower than NH4Cl (*p < 0.05) and NH4I (***p < 0.001). Error bars denote standard error of the mean and the sample sizes are indicated on the bottom.\n\n### Ppa-che-1 shows similarities and differences to Cel-che-1 in both expression and function\n\nThe C. elegans che-1 mutant (chemotaxis-defective) was originally isolated for its inability to respond to a broad panel of salt tastants (Dusenbery et al., 1975; Ward, 1973), including those described above (Suzuki et al., 2008; Ortiz et al., 2009; Fr\u00f8kjaer-Jensen et al., 2008). che-1 was found to encode for a Zn finger transcription factor that is exclusively expressed in the ASE neuron pair (Etchberger et al., 2007), which through laser ablations had been found to be the main salt receptor neurons (Bargmann et al., 1993). che-1 was found to control the entire differentiation of the ASE neurons, including the expression of putative receptors of the GCY receptor guanylyl cyclase family (Uchida et al., 2003; Chang et al., 2003; Etchberger et al., 2007; Etchberger et al., 2009).\n\nTo assess whether che-1 performs a similar function in salt perception for P. pacificus as for C. elegans, we analyzed the expression and function of the Ppa-che-1 ortholog. In a previous paper, we reported that the 5\u2032 region of the sole Pristionchus che-1 ortholog directs reporter expression to the Ppa ASE and Ppa ASG neuron classes (Hong et al., 2019). Re-examination of our provisional cell identifications using a newly generated che-1p::GFP strain with stronger neurite expression revealed highly elaborated finger-like dendritic endings in the more anterior amphid neuron that could unambiguously be assigned to the AFD neurons (Figure 2A\u2013C), prompting us to reassign expression of che-1 to ASE and AFD.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) The che-1::GFP marker in the che-1::RCaMP reporter strain is expressed in the ASE and AFD amphid neurons. (C) che-1::GFP expression is detectable in the morphologically distinct AFD neurons with \u2018finger\u2019-like dendritic endings. (D, E) Immunostaining of CHE-1::ALFA shows two pairs of amphid neuron cell bodies corresponding to the ASE and AFD neurons; dorsal\u2013ventral view (n = 114). (F) The loss of che-1 results in loss che-1::RFP expression in the ASE (circle) while retaining reduced AFD expression. (G) ttx-1p::RFP expression in the AFD neurons with \u2018finger\u2019-like dendritic endings. Inset shows expanded inverted black\u2013white image of the AFD dendritic ending. (H) AFD expression of the same ttx-1::RFP animal shown in (G) in a different plane with cell body in focus. (I, J) Immunostaining of TTX-1::ALFA (red) shows one pair of amphid neuron cell bodies co-localizing with the anterior pair of che-1::GFP-expressing AFD neurons (yellow); dorsal\u2013ventral view (n = 13). Anterior is left and the scale bar in (C) represents 50 \u00b5m for all panels except for the G inset, which is 5 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A representative F1 male animal from a cross between the two reporter strains (n = 5). (A) gcy-22.3p::GFP. (B) ttx-1p::RFP. (C) Overlay of gcy-22.3p::GFP and ttx-1p::RFP. (D) Overlay of gcy-22.3p::GFP, ttx-1p::RFP, and DIC. Scale bar in (C) represents 50 \u00b5m for all panels.\n\nWe confirmed that the che-1 reporter transgene indicates the full expression of the endogenous che-1 locus by tagging the endogenous che-1 locus with an ALFA-tag (Igreja et al., 2022). The che-1::ALFA animals showed staining in 2 pairs of head neurons whose position is consistent with being the ASE and AFD neurons (Figure 2D, E). By crossing the che-1 reporter transgene into a che-1 mutant background (see below), we also found that che-1 autoregulates its own expression especially in the ASE neurons (Figure 2F, GFP expression in 97% in WT (n = 36) vs 4% in che-1(\u2212) (n = 48)), as it does in C. elegans (Etchberger et al., 2007). The reduction of che-1p::GFP in the AFDs was also observed (GFP expression in 100% in WT (n = 36) vs 33% in che-1(\u2212) (n = 48)).\n\nTo provide further evidence that Ppa-CHE-1 is indeed expressed in the Ppa-AFD neurons, we analyzed the expression of the Ppa-ttx-1p::RFP reporter. In C. elegans, the OTX homeodomain transcription factor TTX-1 is a terminal selector expressed in the AFD neurons required for designating the AFD fate (Satterlee et al., 2001). We found ttx-1p::RFP to be strongly expressed in a pair of neurons with the hallmark finger-like dendritic ending of the AFD neurons (Figure 2G, H), as well as expression in other head and tail neurons (possibly RIP and RIB) and cells likely to be the pharyngeal marginal cells based on likely conservation with Cel-ttx-1 expression (Reilly et al., 2022). To confirm that endogenous TTX-1 protein expression is co-expressed with che-1p::GFP, we examined C-terminally tagged ttx-1:ALFA animals and found co-localization in the same anterior pair of amphid neurons, but no co-expression in the posterior pair of amphid neurons (Figure 2I, J, n = 15). Interestingly, the promoter expression in the posterior pair of amphid neurons in animals with both ttx-1p::RFP and gcy-22.3p::GFP reporters do co-localize in the ASER neurons (Figure 2\u2014figure supplement 1), possibly due to differences between the expression patterns of the four possible ttx-1 splice forms. The transcriptional and protein co-expression of ttx-1 and che-1 in the AFD neurons unequivocally show the expression of che-1 in both AFD and ASE neurons in P. pacificus.\n\nNext, we examined whether P. pacificus salt responsiveness shows similar che-1 dependence as in C. elegans. We generated two putative null alleles in the Ppa-che-1 homolog using CRISPR/Cas9 genome engineering, through introduction of small deletions in the first exon of the gene, thereby resulting in frameshift and premature stops (Figure 3A; Figure 3\u2014figure supplement 2). Both Ppa-che-1 alleles exhibited defects in attraction toward NH4Cl and LiCl compared to wildtype (Figure 3B). However, unlike in C. elegans, Ppa-che-1 mutants showed no detectable difference in responses to NH4I, NaCl, and NaAc.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig3-v1.jpg)\n\n**Figure 3.:** (A) The che-1 locus with CRISPR/Cas9-induced mutations in Exon 1. (B) The che-1 mutants show defects in attraction toward NH4Br, NH4Cl, and LiCl. Sample sizes are indicated below for attractants and above for repellent. (C) The che-1p::HisCl1 animals lose attraction toward NH4Br, NH4Cl, and NH4I in a histamine-dependent manner. Sample sizes are indicated at the base of each bar. (D) A schematic map of the P. pacificus AM7 (ASE) and AM12 (AFD) amphid neurons that express the che-1p::RCaMP used in calcium imaging. The ASE axons are the only amphid axons in P. pacificus to cross each other over the dorsal lateral midline contralaterally. **p < 0.01, *p < 0.05, two-way ANOVA with Dunnett\u2019s post hoc comparison showing alleles with significant difference to wildtype P. pacificus (PS312). ****p < 0.0001, two-way ANOVA showing significant difference between water control and histamine treatment.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Animals containing the che-1p::HisCl1 transgene and the co-injection marker egl-20p::RFP were scored separately on each assay plate. Unpaired t-test between histamine and water treatment prior to chemotaxis assays (****p < 0.0001). Sample sizes for histamine RFP- (n = 23); RFP+ (n = 8) and water control RFP- (n = 31); RFP+ (n = 23).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** DNA alignment of the Ppa-che-1 and Ppa-gcy-22.3 alleles and their predicted amino acid changes.\n\nWe considered two different possibilities for the behavioral differences of Ppa-che-1 and Cel-che-1 mutants. P. pacificus may use sensory neurons other than ASE to sense these cues, or alternatively, Ppa-che-1 may not have the same fundamental impact on ASE function in P. pacificus as it does in C. elegans. To explore these different possibilities, we silenced che-1 expressing neurons by expressing codon-optimized HisCl1 channel under control of the che-1 promoter. Histamine-treated che-1p::HisCl1 animals showed complete loss of attraction to NH4Br, NH4Cl, and NH4I but did not significantly alter their repulsive response to NaAc (Figure 3C). As a control, we show that the presence of the che-1p::HisCl1 transgene was necessary for the knockdown of NH4Br attraction (Figure 3\u2014figure supplement 1). These findings corroborate that NaAc is sensed by neurons other than ASE (or AFD, in which the che-1 promoter also drives HisCl1). Since NH4I sensation is affected by silencing of che-1(+) neurons but is unaffected in che-1 mutants, ASE function may be more greatly impacted by the silencing of ASE than by the loss of che-1.\n\n### The ASE neurons show left/right asymmetric responses to salt\n\nTo assess whether Ppa ASE neurons show the same lateralized response to salt ions as Cel ASE neurons, we generated transgenic P. pacificus lines that express RCaMP in ASE neurons and assessed calcium responses to attractive salts (Figure 4, Figure 4\u2014figure supplements 1 and 2). Specifically, we looked for changes in calcium levels immediately after the addition and removal of specific salts. When 250 mM NH4Cl is administered, an \u2018ON\u2019 response is observed as calcium transiently increases in the left ASE neuron (ASEL). In contrast, an \u2018OFF\u2019 response was observed as calcium sharply dips in the right ASE neuron (ASER) before quickly returning to baseline when the salt was removed, which suggests hyperpolarization of this neuron (Figure 4A, B; Suzuki et al., 2008). However, when presented with a tenfold lower concentration of 25 mM NH4Cl, the \u2018OFF\u2019 response completely disappeared in ASER while the \u2018ON\u2019 response became more pronounced in ASEL. The ASER responses to 250 and 25 mM NaCl (Figure 4D) were very similar to the \u2018OFF\u2019 response (including hyperpolarization) observed for NH4Cl, but the ASEL responses differ between the two salts: instead of the \u2018ON\u2019 response expected of ASEL, we observed a relatively weak \u2018OFF\u2019 response without the characteristic hyperpolarization but accompanied by an attenuated \u2018bump\u2019, a profile that we classify as an \u2018OFF-2\u2019 response (Figure 4C). Finally, we examined the response to NH4I and found that it also elicited laterally asymmetric responses, but yet again distinct from the responses to both NH4Cl and NaCl, with ASEL showing a strong \u2018ON\u2019 response, and ASER showing an \u2018ON\u2013OFF\u2019 biphasic response to 250 mM NH4I (Figure 4E, F; Kato et al., 2014; Wang et al., 2015). Interestingly, the ASER exhibited an \u2018OFF\u2019-only response to 25 mM NH4I, which was not observed for the same concentration of NH4Cl and NaCl, and thus may reflect the higher response to NH4I than to NH4Cl and NaCl in the behavior assays. Altogether, P. pacificus ASE neurons clearly show left/right asymmetric responses to salt attractants and these asymmetric responses show similarities and differences to the C. elegans ASE taste neurons (see Discussion).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig4-v1.jpg)\n\n**Figure 4.:** Average percent change in RCaMP fluorescence (dF/F) over time (seconds) of tracked ASE (left and right) sensory neurons in P. pacificus. Salts were presented at 10 s (\u2018ON\u2019, left vertical line) for a duration of 20 s, and then removed (\u2018OFF\u2019, right vertical line) for the remaining 30 s; the total recording time was 60 s. (A, B) ASEL and ASER neuron responses to high (250 mM, red) compared to low (25 mM, blue) concentrations of NH4Cl. (C, D) ASEL and ASER neuron responses to NaCl. (E, F) ASEL and ASER neuron responses to NH4I. Shaded ribbons represent 95% confidence intervals. Shaded ribbons in (E, F) have been cropped to maintain consistent y-axes across the plots, allowing for easier comparison. Sample sizes are indicated (n).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Average percent change in fluorescence (dF/F) over time (seconds) of tracked sensory neurons in P. pacificus (black line). Individual animals are represented by colored lines. No salt was presented; vertical lines indicate time points where salt was presented and removed for experimental samples, shown for comparison. csuEx93[Ppa-che-1p::optRCaMP] worms experienced the control solution for the duration of the recording and were imaged under green light. (A) ASE (n = 6). (B) AFD (n = 5).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Average percent change in fluorescence (dF/F) over time (seconds) of tracked ASEL and ASER neurons in P. pacificus (black line). Individual animals are represented by colored lines. For heatmaps, each row represents a single individual. Lighter colors (closer to 1) represent more positive dF/F values and darker colors (closer to 0) represent more negative dF/F values.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Schematic of the microfluidic apparatus to conduct calcium imaging while delivering stimuli directly to the nose of an immobilized worm. Syringes act as reservoirs for buffer solution (light blue), control solution (purple), and stimulant solution (red). Tubing inserts into the microfluidic PDMS chip. Panels (right) zoom in to depict a schematic of the microscope view of the PDMS chip: (top) fluid flow over the worm nose when stimulant is switched OFF (control solution flows over worm nose); (bottom) fluid flow over the worm nose when stimulant is switched ON (stimulant solution flows over worm nose). Created in BioRender. (B) Actual microscope view of PDMS chip design. The outer two channels hold buffer solution and can be switched open (ON) or closed (OFF) by the Valvebank. The inner two channels hold experimental solutions: the inner channel closer to the worm trap holds the control solution, and the inner channel farther from the worm trap holds the stimulant solution. (C) Actual microscope view of P. pacificus loaded into the PDMS chip while fluid is flowing. The PDMS chip features a U-shaped worm trap to facilitate loading the worm head-first, and a tapered opening to ensure the worm fits snugly and will not slide too far forward during recording.\n\n### The AFD neurons also respond to salts in P. pacificus\n\nThe RCaMP line that we used to assess calcium responses in ASE is also expressed in AFD, allowing us to simultaneously examine the calcium responses in the AFD (AM12) neurons (Figure 5, Figure 2\u2014figure supplement 1, Figure 5\u2014figure supplements 1 and 2, Figure 7\u2014figure supplement 1). Surprisingly, we detected a distinctly \u2018ON\u2013OFF\u2019 biphasic response to all three salt types at both concentrations. Specifically, although we observed weaker or comparable responses in AFD neurons when compared to either ASE neuron\u2019s response toward 250 mM NH4Cl, NaCl, and NH4I (Figure 5A, B, E, F, I, J), the AFD responses were more robust than ASER toward 25 mM NH4Cl, NaCl, and NH4I (Figure 5D, H, L). Specifically, AFD neurons responded strongly to 25 mM NaCl when neither one of the ASE neurons showed a positive response (Figure 5G, H). Averaging the calcium transients separately by AFD left versus right did not result in significant differences in the shape of the neuronal calcium responses, with the exception of the AFDR responses to higher versus lower concentrations of NH4I (Figure 5\u2014figure supplement 2, Figure 7\u2014figure supplement 1). We have not further pursued whether these AFD responses are a reflection of a direct perception of salt or a secondary consequence of communication of salt-perceptive neurons (like ASE) to AFD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig5-v1.jpg)\n\n**Figure 5.:** Average percent change in RCaMP fluorescence (dF/F) over time (seconds) as described in Figure 4. Averaged combined AFD (left and right neurons, orange) compared to left or right ASE (green) responses to (A, B) 250 mM NH4Cl, (C, D) 25 mM NH4Cl, (E, F) 250 mM NaCl, (G, H) 25 mM NaCl, (I, J) 250 mM NH4I, and (K, L) 25 mM NH4I. Shaded ribbons represent 95% confidence intervals. Shaded ribbons in (J, K) have been cropped to maintain consistent y-axes across the plots, allowing for easier comparison. Sample sizes are indicated (n).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Average percent change in fluorescence (dF/F) over time (seconds) of tracked left and right AFD neurons in P. pacificus (black line). Individual animals are represented by colored lines. For heatmaps, each row represents a single individual. Lighter colors (closer to 1) represent more positive dF/F values and darker colors (closer to 0) represent more negative dF/F values.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Average percent change in RCaMP fluorescence (dF/F) over time (seconds) as described in Figure 4. Average AFDL and AFDR neuron responses to high (250 mM, red) and low (25 mM, blue) concentrations of salts: (A, B) NH4Cl, (C, D) NaCl, and (E, F) NH4I. Shaded ribbons represent 95% confidence intervals. Shaded ribbons in (D) have been cropped to maintain consistent y-axes across the plots, allowing for easier comparison. Sample sizes are indicated (n).\n\n### A target of che-1, the guanylyl cyclase gcy-22.3, is required for ASER salt response\n\nWe further explored the asymmetric salt perception by the ASE neurons, which in C. elegans is largely mediated through distinct receptor-type guanylyl cyclases (rGC proteins, encoded by gcy genes), which confer salt specificity via their extracellular domains (Ortiz et al., 2009). Our previous genome survey of Ppa homologs of gcy genes has revealed patterns that made us question whether Ppa gcy genes are convincing candidates for lateralized chemotactic responses. Specifically, we noted that ASER-expressed C. elegans gcy genes and ASEL-expressed C. elegans gcy genes have only expanded in the Caenorhabditis genus (Hong et al., 2019). One outlier to this pattern is the Cel-gcy-22 gene, which is expressed in ASER, but has not expanded in C. elegans (Hong et al., 2019; Ortiz et al., 2006). However, this gene has duplicated several times in P. pacificus, resulting in 5 putative Ppa-gcy-22 paralogs (Hong et al., 2019). We fused the promoter of one of these paralogs, Ppa-gcy-22.3, to gfp and found that transgenic animals express GFP exclusively in ASER (Figure 6A), identical to the C. elegans gcy-22 ortholog (Ortiz et al., 2006). We confirmed its expression in ASER by analyzing animals that carry both the Ppa-gcy-22p::gfp reporter and the Ppa-che-1p::rfp reporter, showing a unilateral overlap of these reporters in ASER (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig6-v1.jpg)\n\n**Figure 6.:** (A) The gcy-22.3::GFP marker is expressed exclusively in the right ASE neuron (ASER) (n > 200). (B) The gcy-22.3::GFP marker co-localizes with che-1::RFP expression in the ASER. (C) gcy-22.3::GFP expression is absent in the che-1(ot5012) mutant (n = 55). Anterior is left and dorsal is top. Scale bar in (A) represents 50 \u00b5m for all panels.\n\nTo assess whether Ppa-gcy-22.3 is a potential effector of Ppa-che-1 function, we crossed the gcy-22.3 reporter into che-1(ot5012) mutants. We found expression of gcy-22.3 was eliminated (Figure 6C), leading us to conclude that gcy-22.3 is a potential effector of che-1 function, identical to its homolog in C. elegans.\n\nTo determine whether and which of the observed salt responses is mediated by the ASER-expressing gcy-22.3, we generated a putative gcy-22.3 null mutant through CRISPR/Cas9 genome editing (2 bp complex deletion that introduces a frameshift) (Figure 7A) and examined its response to the higher salt concentration. The \u2018OFF\u2019 response to 250 mM NH4Cl was notably abolished in the ASER neuron in the loss-of-function gcy-22.3 mutant, while the \u2018ON\u2019 response in the ASEL remained intact (Figure 7B, C). However, the responses to 250 mM NaCl were not significantly reduced in either the ASEL or ASER neuron in the gcy-22.3 mutant (Figure 7D, E). Furthermore, the gcy-22.3 mutation also reduced the \u2018ON\u2019 portion of the AFD biphasic response following presentation of 250 mM NH4Cl and NaCl (Figure 7F, G). We also examined the behavioral responses toward individual salt ions in gcy-22.3 mutants, including a second loss-of-function allele csu182. Overall, we found no significant differences between wildtype and mutants in responses toward individual ions, and only the attraction to NH4Cl was slightly enhanced in both alleles (Figure 8), which was unexpected given the lack of calcium response observed in gcy-22.3(csu181) toward NH4Cl. Our findings show that while proper ASE function is critical for salt attraction, defects in individual gcy genes do not lead to a major impact on the worms\u2019 ability to track toward attractive salts.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig7-v1.jpg)\n\n**Figure 7.:** Average percent change in RCaMP fluorescence (dF/F) over time (seconds) as described in Figure 4. (A) http://pristionchus.org/ Genome Browser view of the gcy-22.3 locus with the CRISPR/Cas9-induced mutations indicated with a red bar (Exon 5 of PPA04454 or Exon 4 of Contig12-snapTAU.506). (B, C) ASEL and ASER neuron responses to 250 mM NH4Cl wildtype (gray) and gcy-22.3 mutants (magenta). (D, E) ASEL and ASER neuron responses to 250 mM NaCl in wildtype (gray) and gcy-22.3 mutants (magenta). AFD (combined left and right neurons) responses (F) to 250 mM NH4Cl and (G) to 250 mM NaCl in wildtype (orange) and gcy-22.3 mutants (magenta). Shaded ribbons represent 95% confidence intervals. Sample sizes are indicated (n). For ASEL/R comparisons, bar plots represent the difference between the minimum % dF/F value 10 s pre-stimulus and maximum % dF/F value 10 s post-stimulus for either the (B) ON or (C, E) OFF stimulus. For AFD comparisons, bar plots represent maximum % dF/F values 10 s after the ON and OFF stimulus. *p < 0.05, **p < 0.01, ***p < 0.001 indicate significant difference. \u2018ns\u2019 indicate no significant difference. Comparisons between different genotypes were analyzed using unpaired t-test or Mann\u2013Whitney test.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The combined AFD responses shown in Figure 7F, G have been separated into AFDL and AFDR. Average percent change in RCaMP fluorescence (dF/F) over time (seconds) as described in Figure 4. AFDL and AFDR neuron responses to (A, B) 250 mM NH4Cl and (C, D) 250 mM NaCl in wildtype (orange) compared to gcy-22.3 mutants (magenta). Shaded ribbons represent 95% confidence intervals. Shaded ribbons in (D) have been cropped to maintain consistent y-axes across the plots. Sample sizes are indicated (n).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/103796/elife-103796-fig8-v1.jpg)\n\n**Figure 8.:** Young adult hermaphrodite responses to salt gradients with or without various salts in background. *p < 0.05. Significant differences were found between wildtype PS312 and gcy-22.3 mutants to NH4Cl by two-way ANOVA and Dunnett\u2019s test. Each assay involves a minimum of 10 animals. Sample sizes for each condition are indicated on the bottom. Error bars denote standard error of the mean.\n\n## Discussion\n\nOur study has revealed several insights into the substrates of evolutionary changes between two distantly related nematode species, P. pacificus and C. elegans. We used intracellular calcium levels as our readout for neuronal activity with a genetically encoded calcium sensor in two pairs of che-1-expressing amphid sensory neurons \u2013 the first calcium imaging study in P. pacificus. We show that three neuron types (ASE left, ASE right, and AFD neurons) each have distinct calcium responses to specific ion concentrations, revealing diversity at the single neuron level. We have identified the first laterally asymmetric marker in P. pacificus, gcy-22.3p::GFP, with its expression limited to ASER homolog (AM7). Our unexpected discovery that neuronal asymmetry is present in the ASE homologs between two distantly related nematode species, despite the lack of a lsy-6 homolog, suggests that functional lateralization in P. pacificus may be mediated by a different genetic pathway compared to C. elegans.\n\n### P. pacificus and C. elegans have diverged taste palates\n\nWe have shown that while C. elegans is attracted to acetate salts, P. pacificus avoids these acetates. Previous studies have shown that ammonium acetate (NH4Ac) is sensed both as a water-soluble compound as well as a volatile odorant and is mediated by different signaling pathways (Fr\u00f8kjaer-Jensen et al., 2008). Like C. elegans, it is therefore likely that ammonium and acetate ions involve a different set of neurons in P. pacificus (i.e. non-che-1 expressing neurons), based on the finding that histamine-treated che-1p::HisCl1 animals did not significantly attenuate their repulsive response to NaAc. We find that sodium chloride is a common attractant for both P. pacificus and C. elegans, although the magnitude of response is lower than previously published results (Suzuki et al., 2008). This result is likely due to differences in generating the salt gradients. Nevertheless, we find that P. pacificus neurons have a distinct response to this salt when compared to those observed in C. elegans neurons (Table 1). The P. pacificus ASEL neuron responds to a decrease in NaCl concentration (likely sodium), as evidenced by the \u2018OFF-2\u2019 response profile, whereas the C. elegans ASEL neuron responds to an increase in sodium concentration. However, in both nematodes, the ASER neuron responds to a decrease in chloride concentration. Additionally, the P. pacificus ASER neuron exhibits a unique ON\u2013OFF response to ammonium iodide, whereas in C. elegans, no ON\u2013OFF type of response is seen in the ASE neurons \u2013 the C. elegans ASER neuron responds only to a decrease in iodide concentration. Based on our calcium imaging and chemotaxis results on the gcy-22.3 mutants, attraction to ammonium ions (NH4+) is likely mediated in part by the ASER neuron in P. pacificus. Pristionchus species are entomophilic and most frequently found to be associated with beetles in a necromenic manner and thus insect cadavers could be sources of ammonium in the soil (Koneru et al., 2016; Herrmann et al., 2007; Herrmann et al., 2006; Fielding et al., 2013). Additionally, ammonium salts could represent a biological signature of other nematodes that the predatory morph of P. pacificus could interpret as prey. In P. pacificus, nutritional state has a measurable role in the mouth-form polyphenism decision between predatory and non-predatory morphs (Piskobulu et al., 2025). Collectively, our findings highlight the divergence of the P. pacificus salt sensory neurons compared to those observed in C. elegans.\n\n**Table 1.**\n Comparison of ASEL/R responses between P. pacificus and C. elegans.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"2\">P. pacificus</th>\n      <th colspan=\"2\">C. elegans</th>\n    </tr>\n    <tr>\n      <th>ASEL</th>\n      <th>ASER</th>\n      <th>ASEL</th>\n      <th>ASER</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NH4Cl (1\u201380 mM)</td>\n      <td>ON</td>\n      <td>x</td>\n      <td>x (Suzuki et al., 2008; Ortiz et al., 2009)</td>\n      <td>OFF (Suzuki et al., 2008; Ortiz et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>NH4Cl (81\u2013250 mM)</td>\n      <td>ON</td>\n      <td>OFF</td>\n      <td>?</td>\n      <td>?</td>\n    </tr>\n    <tr>\n      <td>NaCl (1\u201380 mM)</td>\n      <td>x</td>\n      <td>OFF</td>\n      <td>ON (Suzuki et al., 2008; Herrmann et al., 2007; Herrmann et al., 2006; Fielding et al., 2013)</td>\n      <td>OFF (Suzuki et al., 2008; Herrmann et al., 2007; Herrmann et al., 2006; Fielding et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>NaCl (81\u2013250 mM)</td>\n      <td>OFF-2</td>\n      <td>OFF</td>\n      <td>ON (Herrmann et al., 2006)</td>\n      <td>OFF (Herrmann et al., 2006)</td>\n    </tr>\n    <tr>\n      <td>NH4I (1\u201380 mM)</td>\n      <td>ON</td>\n      <td>OFF</td>\n      <td>x (Ortiz et al., 2009)</td>\n      <td>OFF (Ortiz et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>NH4I (81\u2013250 mM)</td>\n      <td>ON</td>\n      <td>ON-OFF</td>\n      <td>?</td>\n      <td>?</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u2018x\u2019 minimal to no response.\u2018?\u2019 represents unknown._\n\n### P. pacificus ASE neurons have narrower sensitivity range\n\nThe sensitivity range of the P. pacificus ASER responses is significantly less compared to the ASEL responses, as well as to C. elegans ASER responses. Whereas the C. elegans ASER has a 40-fold sensitivity range in the \u2018OFF\u2019 response to the removal of various concentrations of NaCl (1\u201340 mM) (Suzuki et al., 2008; Rabinowitch et al., 2014; Shindou et al., 2019; Watteyne et al., 2020), the P. pacificus ASER showed the \u2018OFF\u2019 response only to 250 mM NH4Cl but not to a tenfold reduction in concentration of NH4Cl (25 mM). For the ASEL in contrast, the response to 25 mM was just as strong as to 250 mM NH4Cl (tenfold) and comparable to the eightfold concentration range observed for C. elegans ASEL toward NaCl. Alternatively, the magnitude of these sensitivity differences may be also partially due to differences among calcium indicators (i.e. GCaMP and Cameleon), but multiple P. pacificus che-1p::GCaMP strains did not exhibit sufficient basal fluorescence to allow for image tracking and direct comparison. The narrower sensitivity range in P. pacificus chemosensation was also observed for attraction to volatile odors (Hong and Sommer, 2006), which span only 10-fold, versus up to 10,000-fold in attractive odors for C. elegans (Bargmann and Horvitz, 1991).\n\n### P. pacificus taste neurons exhibit a unique biphasic response\n\nAlthough the left-ON and right-OFF responses are conserved in the ASE neurons in both species, the biphasic response of ASER to 250 mM NH4I has not been observed in either of the ASE neurons toward salts. In C. elegans, hyperosmotic stimulus such as 1 M glycerol, or high concentrations or long duration of CuSO4 exposure both result in biphasic responses by the ASH neurons that sense noxious chemicals (Wang et al., 2015; Chronis et al., 2007). Olfactory neurons that mediate avoidance behavior such as the AWB neurons can also exhibit a biphasic response to the presence and removal of a high concentration isoamyl alcohol that normally elicits avoidance behavior (Yoshida et al., 2012). The neuron-specific response can also be dependent on the concentration of the chemical compound, since the ASER to 25 mM NH4I was a weak \u2018OFF\u2019 rather than a biphasic one. In contrast to the salt-dependent response types by P. pacificus ASE neurons, the P. pacificus AFD neurons also show exclusively biphasic responses with various amplitudes. Further characterization will help determine if biphasic responses can also be found in other sensory neuron types in P. pacificus, specifically those neurons mediating avoidance behavior.\n\n### AFD are potentially polymodal neurons\n\nBroadly speaking, C. elegans chemosensory neurons have been classically characterized as specialized neurons for dedicated modalities such as water-soluble chemicals (ASE), volatile odorants (AWA, AWB, and AWC), noxious chemicals (ASH), pheromones (ADL, ADF, and ASK), and light (ASJ) and temperature (AFD) (Bargmann, 2006; Bargmann et al., 1993; Mori and Ohshima, 1995; Sengupta et al., 1996; Macosko et al., 2009; Liu et al., 2010). Advances in multi-neuron calcium recordings have since shown that a given odor within a certain concentration range is detected by different ensembles of the 12 amphid neuron classes, including the AFD neurons (Leinwand and Chalasani, 2013; Lin et al., 2023; Yemini et al., 2021). Unexpectedly, we found that the P. pacificus AFD neurons exhibit a distinctive biphasic response to all three salts tested (NH4Cl, NaCl, and NH4I), which differ from the C. elegans AFD calcium responses (Yemini et al., 2021; Zaslaver et al., 2015). Moreover, the loss of the receptor gcy-22.3 reduced the AFD \u2018ON\u2019 response to NH4Cl and NaCl, indicating ASER contributes to the AFD response. The strong positive AFD response to 25 mM NaCl that is absent in both ASE neurons further supports the likelihood that AFD receives inputs from other amphid neurons. The integration of thermosensation and chemosensation is important for memory-regulated behavior. In C. elegans, maximum chemotaxis indices toward NH4Cl occurs when there is concordance between cultivation temperature and assay temperature (Kuhara et al., 2008). The C. elegans AFD neurons are also important for gustatory aversive learning in NaCl avoidance (Watteyne et al., 2020). Given the influence of environmental temperature on the P. pacificus mouth-form plasticity and the wide range of micro-climates that wild strains of P. pacificus have been isolated from Leaver et al., 2016; Sieriebriennikov et al., 2017; Leaver et al., 2022, temperature and taste preferences could be regulated at multiple genetic levels during crucial developmental decisions.\n\n### Changes in the gene regulatory architecture of sensory neuron specification\n\nWe found that the key regulator of Cel ASE identity, che-1, is also expressed in Ppa ASE and may play a similar role as a terminal selector in this neuron type, based on its effect on ASE-mediated behavior and regulation of the Ppa-gcy-22.3 gene. However, the stronger behavioral effect of silencing of che-1 expressing neurons compared to a che-1 mutant background could either indicate that che-1 does not have as broad a role in controlling ASE differentiation in P. pacificus versus C. elegans. It is possible that a developmental loss of ASE differentiation may result in compensatory changes in the chemosensory system during early development, as was observed in the C. elegans mating pheromone response by males (White et al., 2007). It is also worthwhile to note that Cel-gcy-22 stands out for being located on a separate chromosome (Chr. V) compared to the other ASER-type gcy genes (gcy-1, gcy-4, gcy-5 on Chr. II) as well as the Cel-gcy-22 mutant having defects in chemoattraction toward a wide range of salt ions (Ortiz et al., 2009; Ortiz et al., 2006). Given that the five P. pacificus gcy-22-like paralogs are located on three separate chromosomes (Chr. I, IV, and X), it is likely that they emerged from independent and repeated gene duplication events after the separation of Caenorhabditis and Pristionchus lineages. Although the promoter fusion reporters of other gcy genes have been uninformative due to lack of expression (Ppa-gcy-22.1, Ppa-gcy-7.1, Ppa-gcy-7.2, and Ppa-gcy-5), it is likely that ASEL-specific gcy genes as well as additional ASER-specific gcy-22-like genes exist. Finding other genes with left\u2013right specific expression could help to identify genetic determinants affecting lateral asymmetry.\n\nUnexpectedly, we found that unlike in C. elegans, the Ppa-che-1 gene is also expressed in the AFD neurons. Since we cannot record neural activity in AFD in a che-1 mutant (the che-1p::RCaMP driver fails to be expressed sufficiently in che-1 mutants due to autoregulation), and do not yet have molecular markers for Ppa AFD neurons, we cannot assess whether che-1 affects AFD neuron differentiation.\n\nPerhaps the most striking difference in the gene regulatory architecture of ASE neuron specification is the apparent lack of the key regulator of ASE asymmetry in P. pacificus, the miRNA lsy-6. In C. elegans, the expression of lsy-6 exclusively in ASEL is prepatterned via an early embryonic Notch signal (Cochella and Hobert, 2012) and serves to downregulate the homeodomain transcription factor cog-1 in the ASEL neuron (Johnston et al., 2005). Through a network of downstream regulatory events, asymmetry of rGCs eventually becomes established (Hobert, 2014). cog-1 and several asymmetrically expressed downstream effectors of cog-1, such as the die-1, lim-6, and fozi-1 transcription factors are conserved in P. pacificus, but whether the function of these factors in controlling P. pacificus ASE laterality is conserved remains to be determined. In this context it is intriguing to note that another prominent gene regulatory pathway that is controlled by miRNAs in C. elegans, the heterochronic pathway (let-7s and lin-4), appears to have diverged in P. pacificus as well, despite the conservation of the overall physiological readouts of this pathway (temporal patterning of cell lineage divisions) (Sharma et al., 2024). It is tempting to speculate that miRNA-meditated regulatory process is particularly labile.\n\nIn conclusion, our work illustrates how comparative behavioral and genetic analyses in nematodes is a powerful strategy to uncover substrates of evolutionary change in simple nervous systems.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMM5</td>\n      <td>This paper</td>\n      <td>Ppa-che-1pei::optRCaMP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pHC30</td>\n      <td>This paper</td>\n      <td>Ppa-che-1pei::optHisCl1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pVL2</td>\n      <td>This paper</td>\n      <td>Ppa-gcy-22.3p::GFP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (P. pacificus)</td>\n      <td>Ppa-che-1p::HisCl1</td>\n      <td>This paper</td>\n      <td>Ppa-che-1pei::optHisCl1; Ppa-egl-20p::turboRFP(promoter with first exon and intron)</td>\n      <td>csuEx83/RLH336</td>\n    </tr>\n    <tr>\n      <td>Strain (P. pacificus)</td>\n      <td>Ppa-che-1::2xALFA</td>\n      <td>This paper</td>\n      <td>Ppa-che-1::ALFA (C-terminal tagged to last exon)</td>\n      <td>RLH325</td>\n    </tr>\n    <tr>\n      <td>Strain (P. pacificus)</td>\n      <td>Ppa-che-1p::RCaMP; che-1p::GFP</td>\n      <td>This paper</td>\n      <td>Ppa-che-1pei::optRCaMP; Ppa-che-1pei::optGFP; Ppa-egl-20p::turboRFP</td>\n      <td>csuEx93/RLH335</td>\n    </tr>\n    <tr>\n      <td>Strain (P. pacificus)</td>\n      <td>Ppa-ttx-1p::RFP</td>\n      <td>This paper</td>\n      <td>Ppa-ttx-1pei::RFP (promoter with first exon and intron)</td>\n      <td>csuEx96/RLH352</td>\n    </tr>\n    <tr>\n      <td>Strain (P. pacificus)</td>\n      <td>Ppa-ttx-1::2xALFA</td>\n      <td>This paper</td>\n      <td>Ppa-ttx-1::ALFA (C-terminal tagged to Exon 18)</td>\n      <td>RLH280</td>\n    </tr>\n  </tbody>\n</table>\n\n### Nematode strains\n\nP. pacificus and other nematode strains were maintained at ~20\u00b0C on NGM plates seeded with E. coli OP50 for food as described previously (Cinkornpumin et al., 2014); these are derived from standard C. elegans culture methods (Brenner, 1974). P. pacificus and other nematode strains used are listed in Supplementary file 1A.\n\n### Chemotaxis assays\n\nThe assay for assessing response to salt gradients was adapted from C. elegans and P. pacificus chemotaxis assays (Hong and Sommer, 2006; Bargmann and Horvitz, 1991; Ortiz et al., 2006). Overnight salt gradients were established on 10 cm chemotaxis plates containing 20 ml agar (5 mM KPO4, 1 M CaCl2, 3% Bacto-agar, and 1 mM MgSO4) by adding 10 \u00b5l of 2.5 M salt solutions for 16 hr. Alternatively, agar containing 25 mM (NH4Cl and NH4I) or 50 mM (NaCl) were used to test for responses to individual salt ions. Following the establishment of the overnight point gradient, another 4 \u00b5l of the same salt solution or water control was added to reinforce the gradient 4 hr before the assay. Just prior to the assay, 1 \u00b5l of 1 M sodium azide was added to both the attractive salt (A) and the control (C) spots. P. pacificus J4 to adult hermaphrodites from near-saturated cultures were washed 3\u00d7 with distilled water and collected by centrifuging at 2000 rpm for 2 min. Approximately 200 worms were loaded onto the edge of each assay plate between the gradient sources, and at least 10 combined worms have to reach the scoring arenas to be considered. At least 10 assays constituted each experimental trial, and multiple trials were conducted and averaged for each condition. The chemotaxis index for each end-point assay plate is defined as (A \u2212 C)/(A+C). To conduct conditional knockdowns of neurons, 5 M histamine dihydrochloride (Sigma-Aldrich H7250) stock solution in sterilized deionized water (Arrowhead CA) was filter-sterilized and top plated onto the agar plates to a final histamine concentration of 25 mM histamine approximately 10 min before loading the worms to commence the assay. Most assays lasted 3\u20134 hr at room temperature to allow P. pacificus sufficient time to reach the scoring arenas, with ~40% of the animals participating. We excluded an outlier due to likely scoring error (value = \u20130.64) in the chemotaxis assay for gcy-22.3(csu182) on NH4Cl (Figure 8). When using the csuEx83[Ppa-che-1p::optHisCl1] strain, only animals expressing Ppa-egl-20p::RFP tail marker from the extrachromosomal array were scored. Because of P. pacificus\u2019 strong aversion to acetate, we could not easily assess the individual contributions of salt ions in a saturated background of ammonium acetate as conventionally practiced in C. elegans studies (Ortiz et al., 2009).\n\n### Ppa-che-1p::HisCl1 strain\n\nTo make the Ppa-che-1p::optHisCl1, the P. pacificus codon-optimized histamine-gated chloride channel sequence used in C. elegans (HisCl1) (Pokala et al., 2014; Pokala and Flavell, 2022) was designed using (https://hallemlab.shinyapps.io/Wild_Worm_Codon_Adapter/; Bryant and Hallem, 2021), was custom synthesized (Twist Bioscience), and subsequently inserted behind the che-1 promoter (3.1 kb containing the first exon and intron) (Hong et al., 2019) to create the pHC30 plasmid construct. This Ppa-che-1p::optHisCl1 plasmid (2 ng/\u00b5l) along with PS312 genomic DNA (80 ng/\u00b5l) and Ppa-egl-20p::RFP co-injection marker (2 ng/\u00b5l) were individually digested with HindIII and assembled as the injection mix to create csuEx83.\n\n### Ppa-che-1p::RCaMP reporter strain\n\nTo make the Ppa-che-1pei::optRCaMP, we generated a transgenic worm strain expressing the codon-optimized genetically encoded calcium indicator (GECI), jRCaMP1a, in the neurons of interest (Kerr et al., 2000; Nakai et al., 2001). jRCaMP1a is an improved red GECI based on mRuby with comparable sensitivity to GCaMP6 (Dana et al., 2016). The codon-optimized RCaMP sequence was custom synthesized (Twist Bioscience), and then subcloned using the plasmid pJET1.2/blunt (Thermo Fisher Scientific) to create the pMM2 plasmid construct. Using Gibson Assembly (E2611, New England Biolab), the codon-optimized RCaMP sequence was introduced downstream of the Ppa-che-1 promoter sequence with the first exon and intron sequences to create the pMM5 plasmid construct. Separately, we also generated a Ppa-che-1pei::optGFP transcriptional reporter with codon-optimized GFP (pMM3) to enable the localization of the che-1-expressing neurons during video acquisition (Han et al., 2020). The Ppa-che-1pei::optRCaMP (2 ng/\u00b5l) and Ppa-che-1pei::optGFP constructs (1 ng/\u00b5l), along with PS312 genomic DNA (80 ng/\u00b5l) and Ppa-egl-20p::RFP (1.5 ng/\u00b5l) were individually digested with HindIII and assembled as the injection mix to create csuEx93. Despite multiple attempts, we were unable to generate an equivalent che-1pei::GCaMP transgenic line with sufficient basal level of GCaMP expression for a comparison to the RCaMP calcium dynamics.\n\n### Promoter fusion reporter strains\n\nThe Ppa-gcy-22.3p::GFP construct contains 899 bp of the upstream promoter of the PPA04554 transcript is fused to the codon-optimized GFP (pVL2). A shorter gcy-22.3 transcript with different first two exons is also predicted, which is more similar in length to other rGC genes in P. pacificus (Contig12-snapTAU.506). The Ppa-ttx-1pei::RFP construct contains 1935 bp of the upstream promoter along with the first exon and intron sequences of Ppa-ttx-1 (PPA26714) fused to the codon-optimized RFP, excluding the first two codons (pDC14). pVL2 (2 ng/\u00b5l) or pDC14 (2 ng/\u00b5l), along with PS312 genomic DNA (80 ng/\u00b5l) were individually digested with HindIII to create the injection mixes to generate the independent reporter strains, csuEx90[Ppa-gcy-22.3p::GFP], as well as Ppa-ttx-1pei::RFP(csuEx94) and Ppa-ttx-1pei::RFP(csuEx96). csuEx96 showed less gland cell expression (which can occlude neuronal expression) and stronger AFD expression than csuEx94.\n\n### CRISPR mutagenesis generated mutants\n\nCRISPR/Cas9 mutagenesis was used to generate mutations (Han et al., 2020; Nakayama et al., 2020). crRNA and primer sequences, and induced mutations, are included in Supplementary file 1C and .\n\n#### che-1 alleles (PPA01143)\n\nTarget crRNA, tracrRNA, and Cas9 nuclease were purchased from IDT Technologies (San Diego, CA). crRNA and tracrRNA were hydrated to 100 \u00b5M with IDT Duplex Buffer, and equal volumes of each (0.61 \u00b5l) were combined and incubated at 95\u00b0C for 5 min, then 25\u00b0C for 5 min. Cas9 protein (0.5 \u00b5l of 10 \u00b5g/\u00b5l) was added, then the mix was incubated at 37\u00b0C for 10 min. Ppa-egl-20p::RFP was used as a co-injection marker. To reach a final total volume of 40 \u00b5l, the Cas9\u2013crRNA\u2013tracrRNA complex was combined with pZH009 (Ppa-egl-20p::RFP) DNA to reach 50 ng/\u00b5l final concentration using nuclease-free water. F1 progeny were screened for the presence of Ppa-egl-20p::RFP expression in the tail and candidate F1\u2019s were sequenced to identify heterozygotes (Nakayama et al., 2020). ot5012 has a 4-bp insertion while ot5013 has an 8-bp complex insertion/deletion, and both mutations cause frameshift mutations and premature stop codons. Each allele was outcrossed two times to wildtype before characterization.\n\n#### gcy-22.3 alleles (PPA04454)\n\nTarget crRNA, tracrRNA, and Cas9 nuclease were purchased from IDT Technologies (San Diego, CA). crRNA (RHL1400) and tracrRNA were hydrated to 100 \u00b5M with IDT Duplex Buffer, and equal volumes of each (0.61 \u00b5l) were combined and incubated at 95\u00b0C for 5 min, then 25\u00b0C for 5 min. Cas9 protein (0.5 \u00b5l of 10 \u00b5g/\u00b5l) was added, then the mix was incubated at 37\u00b0C for 10 min. Ppa-egl-20p::RFP was used as a co-injection marker. To reach a final total volume of 40 \u00b5l, the Cas9\u2013crRNA\u2013tracrRNA complex was combined with pZH009 (Ppa-egl-20p::RFP) DNA to reach 50 ng/\u00b5l final concentration using nuclease-free water. F1 progeny were screened for the presence of Ppa-egl-20p::RFP expression in the tail and candidate F1\u2019s were sequenced to identify heterozygotes (Nakayama et al., 2020). csu181 has a 2-bp complex deletion, while csu182 has a 22-bp complex deletion, both mutations cause frameshifts and premature stop codons. Each allele was outcrossed two times to wildtype before characterization.\n\n#### ALFA C-terminal tagging and immunostaining\n\nFor induction of site-specific insertions via CRISPR/Cas9-mediated mutagenesis, target crRNA, tracrRNA, and Cas9 nuclease were treated as described above. Single-stranded DNA repair template containing the ALFA nanobody tag (RHL1551 for CHE-1 and RHL1519 for TTX-1) with 35 bp of homology arms on the 5\u2032 and 3\u2032 sides were purchased from IDT. To minimize sequence identity, the two copies of the ALFA sequence contain silent mutations. The crRNA (RHL1396 for che-1 and RHL1514 for ttx-1) and tracrRNA were hydrated to 100 \u00b5M with IDT Duplex Buffer, and equal volumes of each (0.61 \u00b5l) were combined and incubated at 95\u00b0C for 5 min, then 25\u00b0C for 5 min. The ALFA tag was C-terminally inserted to the longest ttx-1 splice form in the last 18th exon (ppa_stranded_DN30925_c0_g1_i5) (Trinity 2016 transcripts can be found on http://pristionchus.org/). F1 animals expressing the co-injection marker egl-20::optRFP were lysed and checked by PCR for insertions.\n\nNon-starved healthy cultures of ALFA-tagged CHE-1 (csu226[Ppa-che-1::2xALFA]) or ALFA-tagged TTX-1 (RLH280[Ppa-ttx-1::2xALFA]) (from six 6 cm plate cultures) were washed with M9 and filtered (Sartorius 84 g/m2, Grade 392) and processed as previously described (Igreja et al., 2022). In brief, mixed stage worms were fixed overnight at 4\u00b0C on a nutator with 500 \u00b5l fixation buffer (4% paraformaldehyde in PBS). The worms were then incubated overnight at 37\u00b0C with 500 \u00b5l 4% \u03b2-mercaptoethanol dissolved in 1% Triton X-100 in 0.1 M Tris pH 7.4, and digested in 200 \u03bcl of collagenase buffer with 200 units of collagenase type IV (Gibco, Thermo Fisher Scientific, Waltham, MA, USA) at 37\u00b0C for ~3.5 hr. The partially digested worms were subsequently washed three times with 500 \u00b5l PBST. After collagenase treatment the centrifugation between the washes was done at low speed, 1000 RCF. After washes, the worms were stained in 50 \u00b5l 1% BSA in PBST with the primary antibody (1:100 FluoTag-X2 anti-ALFA-AZdye568, N1502, NanoTag Biotechnologies, G\u00f6ttigen, Germany), overnight at 4\u00b0C in a nutator. Following the washes, worms were resuspended in 50 \u00b5l VectaShield mounting medium (H-1000, Vector Laboratories, USA) containing DAPI (Molecular Probes, Thermo Fisher Scientific) and gently mounted on freshly prepared 3% Noble agar pads. Images were acquired on a Leica DM6000 microscope.\n\n### Calcium imaging\n\nTo conduct calcium imaging, worms were trapped and imaged within a microfluidic PDMS chip while delivering stimuli directly to the nose of an immobilized worm, as previously described (Chronis et al., 2007; Chalasani et al., 2007). The microfluidic chip was connected to a programmable valve controller (ValveBank) that enables the user to toggle between \u2018stimulant ON\u2019 and \u2018stimulant OFF\u2019 states. Specifically, the ValveBank allows controlled switching of flow from the two outer buffer channels in the chip such that either the control solution (stimulant OFF) or the stimulant solution (stimulant ON) flows over the worm nose (Figure 4\u2014figure supplement 3). Buffer solution (for the outer two channels) consisted of M9 buffer with 0.1% Tween-20 and 1 \u00b5g/ml fluorescein (Stiernagle, 2006; Liu et al., 2018). The worm loading solution consisted of M9 buffer with 0.1% Tween-20 and 1.5 mM tetramisole hydrochloride to immobilize the animal. Water-soluble stimulant solutions consisted of the following water-soluble compounds dissolved in nanopure/milli-Q water: ammonium chloride (NH4Cl), ammonium iodide (NH4I), and sodium chloride (NaCl) at concentrations of 250 and 25 mM. 750 mM NaCl elicited very inconsistent responses. The water-soluble stimulant solution was made by diluting the water-soluble compound in nanopure/milli-Q water with 0.1% Tween-20. The control solution consisted of 0.1% Tween-20 nanopure/milli-Q water. Worms were exposed to the control solution, stimulant solution, and then control solution using a 60-s program: 10 s stimulant OFF, 20 s stimulant ON, and 30 s stimulant OFF. As a negative control, animals were exposed only to the control solution, without switching channels, for the duration of the recording. For each animal, the orientation of the nose and vulva were recorded and used as a guide to determine the ventral and dorsal sides of the worm, and subsequently, the left and right sides of the worm. Accounting for the plane of focus of the neuron pairs as viewed through the microscope, it was then determined whether the imaged neuron was the worm\u2019s left or right neuron of each pair. Images were captured using a Zeiss Axio Observer Z1 inverted fluorescence microscope and a pco.panda 4.2 sCMOS camera. Changes in fluorescence intensity were measured in the neurons of interest while the worm was exposed to green light. Images were processed using MetaMorph software version 7.10.5.476. Images were captured at 500 ms exposure time at 2 fps because the baseline fluorescence in Ppa-che-1p::optRCaMP worms was too dim to capture viable data using the standard 100 ms exposure time. Baseline F\u2080 was measured as the average background-subtracted fluorescence from the first 9 s of each recording and change in fluorescence intensity was calculated as dF/F = (F \u2212 F\u2080)/F\u2080, as described (Liu et al., 2018). Data were analyzed and plotted using custom scripts generated in MATLAB versions R2021a\u2013R2024a. This code is available at https://github.com/honglabcsun/Calcium-Imaging, copy archived at Mackie and Hong Lab CSUN, 2025.\n\nFor bar plot comparisons between wildtype and gcy-22.3 mutants, we calculated minimum pre-stimulus and maximum post-stimulus % dF/F values using custom scripts generated in MATLAB. Min\u2013Max data were exported as text files, manually converted and organized into an XLSX file (Microsoft Excel Office16) and imported into Prism GraphPad software (version 10) for data visualization and statistical analysis.\n\n### Nomenclature\n\nThroughout the results section, P. pacificus genes will be referred to without the Ppa- prefix; if necessary for comparison to another species such as C. elegans (Cel-) the Ppa- prefix will then be used.\n\n### Materials availability\n\nThe plasmids and viable nematode strains will be made available upon request.\n",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Albert Cardona, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.103796.3.sa0](https://doi.org/10.7554/eLife.103796.3.sa0)\n\nMackie and colleagues present a valuable comparison of lateralized gustation in two well-studied nematodes. Their results present convincing evidence that ASEL/R lateralization exists and is achieved by different means in P. pacificus compared to C. elegans. This work will be of interest to neurobiologists interested in how small nervous systems make sense of the environment, and how evolution can take multiple paths to asymmetry within a neuron class.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103796.3.sa1](https://doi.org/10.7554/eLife.103796.3.sa1)\n\nSummary:\n\nMackie and colleagues compare chemosensory preferences between C. elegans and P. pacificus, and the cellular and molecular mechanisms underlying them. The nematodes have overlapping and distinct preferences for different salts. Although P. pacificus lacks the lsy-6 miRNA important for establishing asymmetry of the left/right ASE salt sensing neurons in C. elegans, the authors find that P. pacificus ASE homologs achieve molecular (receptor expression) and functional (calcium response) asymmetry by alternative means. This work contributes an important comparison of how these two nematodes sense salts and highlights that evolution can find different ways to establish asymmetry in small nervous systems to optimize the processing of chemosensory cues in the environment.\n\nStrengths:\n\nThe authors use clear and established methods to record the response of neurons to chemosensory cues. They were able to show clearly that ASEL/R are functionally asymmetric in P. pacificus, and combined with genetic perturbation establish a role for che-1-dependent gcy-22.3 in the asymmetric response to NH4Cl.\n\nWeaknesses:\n\nThe mechanism of lsy-6-independent establishment of ASEL/R asymmetry in P. pacificus remains uncharacterized.\n\nComments on revisions: Looks good - all the best\n",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f34b4bfc-f5d6-459a-ae4c-9dd8969913cb",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C1",
+      "claim": "Nematodes populate a wide variety of distinct ecological niches but only have a few sensory neurons available to encode multiple modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals with small nervous systems have a limited number of sensory neurons that must encode information from a changing environment. This problem is particularly exacerbated in nematodes that populate a wide variety of distinct ecological niches but only have a few sensory neurons available to encode multiple modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about nematode biology that draws from established scientific understanding of nematode nervous systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "bbe1cdc4-a373-456a-b803-280bddba9ff8",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C2",
+      "claim": "P. pacificus likely lacked bilateral asymmetry according to Hong et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we showed that P. pacificus likely lacked bilateral asymmetry (Hong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "8efe35e0-ad58-4ff6-8fdb-ef8381723a04",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C3",
+      "claim": "The salt responses of P. pacificus are encoded in a left/right asymmetric manner in the bilateral ASE neuron pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that by visualizing neuronal activity patterns, contrary to previous expectations based on its genome sequence, the salt responses of P. pacificus are encoded in a left/right asymmetric manner in the bilateral ASE neuron pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by neuronal activity visualization data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "0512019b-6574-4d91-8c81-112c2fe21735",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C4",
+      "claim": "Several free-living and parasitic nematode species have nearly identical numbers of 12\u201313 pairs of head sensory neurons, known as the amphid neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Several free-living and parasitic nematode species examined by serial section electron microscopy have nearly identical numbers of 12\u201313 pairs of head sensory neurons, known as the amphid neurons (Hong et al., 2019; Ward et al., 1975; Li et al., 2001; Bumbarger et al., 2009; Zhu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies using electron microscopy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "e302e942-3588-45dc-8600-e374134ff578",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C5",
+      "claim": "The olfactory preferences of P. pacificus are distinct from those of C. elegans and the human parasite Strongyloides stercoralis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from their association with insects in the wild, the olfactory preferences of P. pacificus are distinct from those of C. elegans and the human parasite Strongyloides stercoralis (Hong and Sommer, 2006; Chaisson and Hallem, 2012; Hallem et al., 2011), but little is known about P. pacificus responses to water-soluble compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous comparative studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "3e42262c-97a0-4667-8d3f-f502542fc32f",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C6",
+      "claim": "In C. elegans, the main salt receptor neuron class comprises of a bilateral pair of left and right ASE neurons (ASEL and ASER), which serve to induce an attractive locomotory response toward an increase in salt concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the main salt receptor neuron class comprises of a bilateral pair of left and right ASE neurons (ASEL and ASER), which serve to induce an attractive locomotory response toward an increase in salt concentration (Bargmann and Horvitz, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "39ae0489-4259-4e75-b84f-3ba96db51728",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C7",
+      "claim": "The gene che-1 encodes a transcription factor that is exclusively expressed in the ASE neurons and is required for their proper differentiation in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene che-1 (chemosensory defective) encodes a transcription factor that is exclusively expressed in the ASE neurons and is required for their proper differentiation, such that a che-1 mutant results in defective salt attraction (Dusenbery et al., 1975; Uchida et al., 2003; Chang et al., 2003; Etchberger et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies on C. elegans che-1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "b89cabab-e789-4f5a-9508-dfb7205bdbfb",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C8",
+      "claim": "The left and right ASE neurons in C. elegans asymmetrically express receptor-type guanylyl cyclases (rGCs, encoded by gcy genes).",
+      "claim_type": "EXPLICIT",
+      "source": "The left and right ASE neurons asymmetrically express receptor-type guanylyl cyclases (rGCs, encoded by gcy genes) (Yu et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "eabb09ff-8375-4b17-9b61-d617ec5cc0e8",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C9",
+      "claim": "The left and the right ASE neurons in C. elegans differentially respond to distinct salt ions.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding led to the realization that the ASE neurons are lateralized, such that the left and the right ASE neurons differentially respond to distinct salt ions (Pierce-Shimomura et al., 2001; Chang et al., 2004; Suzuki et al., 2008; Ortiz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "49fd0abf-f141-403c-8bb4-acf694415ffd",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C10",
+      "claim": "The miRNA lsy-6 is at the top of the gene regulatory network that programs the distinct sensory potentials of the left and right ASE neurons in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation led in turn to the identification of a complex gene regulatory network that genetically programs the distinct sensory potentials of the left and right ASE neurons (Hobert, 2014), which includes a miRNA, lsy-6, at the top of this gene regulatory network (Hobert, 2014; Johnston and Hobert, 2003; Cochella and Hobert, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "06c9b65a-3ebc-4d9c-8132-d2c14b935458",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C11",
+      "claim": "The lsy-6 miRNA evolved selectively in the Caenorhabditis genus and is absent in P. pacificus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lsy-6 miRNA evolved selectively in the Caenorhabditis genus (Ahmed et al., 2013) and is absent in P. pacificus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study and genomic observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "2678d394-3790-4bbb-8f7a-4e2044160a9c",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C12",
+      "claim": "P. pacificus does not show an expansion of the ASEL-type and ASER-type rGCs, as C. elegans does.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, P. pacificus does not show an expansion of the ASEL-type and ASER-type rGCs, as C. elegans does (Hong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous genomic study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "21cc1b32-9990-4281-8933-e50ea8282bdf",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C13",
+      "claim": "Ammonium salts (NH4Br, NH4Cl, and NH4I) are the strongest attractants to wildtype P. pacificus J4 to adult hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "In this survey, we found ammonium salts to be the strongest attractants to wildtype P. pacificus J4 to adult hermaphrodites (NH4Br, NH4Cl, and NH4I), with NH4I significantly more attractive to P. pacificus compared to C. elegans (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "693e18b6-0da2-4ea0-a0c6-6f8da7335f78",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C14",
+      "claim": "NH4I is significantly more attractive to P. pacificus compared to C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In this survey, we found ammonium salts to be the strongest attractants to wildtype P. pacificus J4 to adult hermaphrodites (NH4Br, NH4Cl, and NH4I), with NH4I significantly more attractive to P. pacificus compared to C. elegans (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative behavioral data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "4f1e7480-0c22-4e83-9321-e4e8b8f932d4",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C15",
+      "claim": "P. pacificus is less attracted to NaCl and LiCl compared to the ammonium salts.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in contrast to C. elegans (Ward, 1973), we find that P. pacificus is less attracted to NaCl and LiCl compared to the ammonium salts (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 1 and comparison to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "edb24aae-3b1a-42d1-a2bd-efa98c3b3569",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C16",
+      "claim": "P. pacificus is repulsed by acetate salts (NaAc and NH4Ac), which induce attractive responses in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, P. pacificus is repulsed by acetate salts (NaAc and NH4Ac), which induce attractive responses in C. elegans (Fr\u00f8kjaer-Jensen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data and citation to a previous study on C. elegans.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "fc51258f-14b4-444e-a631-8918c89c3e1b",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C17",
+      "claim": "P. pacificus and C. elegans display differences in their salt preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that P. pacificus and C. elegans display differences in their salt preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "817792c1-bfb5-4112-9cff-56377fe99e86",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C18",
+      "claim": "The 5\u2032 region of the Pristionchus che-1 ortholog directs reporter expression to the Ppa ASE and Ppa AFD neuron classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-examination of our provisional cell identifications using a newly generated che-1p::GFP strain with stronger neurite expression revealed highly elaborated finger-like dendritic endings in the more anterior amphid neuron that could unambiguously be assigned to the AFD neurons (Figure 2A\u2013C), prompting us to reassign expression of che-1 to ASE and AFD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reporter expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "b63b9a1e-e491-4a71-8859-d4e129d7d657",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C19",
+      "claim": "The che-1 reporter transgene indicates the full expression of the endogenous che-1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the che-1 reporter transgene indicates the full expression of the endogenous che-1 locus by tagging the endogenous che-1 locus with an ALFA-tag (Igreja et al., 2022). The che-1::ALFA animals showed staining in 2 pairs of head neurons whose position is consistent with being the ASE and AFD neurons (Figure 2D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ALFA-tag immunostaining data shown in Figure 2D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "08848631-67d7-49fc-8883-ccfbb991c941",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C20",
+      "claim": "Ppa-che-1 autoregulates its own expression especially in the ASE neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By crossing the che-1 reporter transgene into a che-1 mutant background (see below), we also found that che-1 autoregulates its own expression especially in the ASE neurons (Figure 2F, GFP expression in 97% in WT (n = 36) vs 4% in che-1(\u2212) (n = 48)), as it does in C. elegans (Etchberger et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reporter expression data in mutant background shown in Figure 2F and citation to C. elegans study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "957cc281-57e1-42c3-aa24-15fcd344d32f",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C21",
+      "claim": "In C. elegans, the OTX homeodomain transcription factor TTX-1 is a terminal selector expressed in the AFD neurons required for designating the AFD fate.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the OTX homeodomain transcription factor TTX-1 is a terminal selector expressed in the AFD neurons required for designating the AFD fate (Satterlee et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study on C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "79306461-5fcc-46d4-81e5-41d589602edc",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C22",
+      "claim": "Ppa-ttx-1p::RFP is strongly expressed in a pair of neurons with the hallmark finger-like dendritic ending of the AFD neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found ttx-1p::RFP to be strongly expressed in a pair of neurons with the hallmark finger-like dendritic ending of the AFD neurons (Figure 2G, H), as well as expression in other head and tail neurons (possibly RIP and RIB) and cells likely to be the pharyngeal marginal cells based on likely conservation with Cel-ttx-1 expression (Reilly et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reporter expression data shown in Figure 2G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "6822e659-d542-4c70-bd61-de73086c5bd3",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C23",
+      "claim": "Endogenous TTX-1 protein expression is co-expressed with che-1p::GFP in the same anterior pair of amphid neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that endogenous TTX-1 protein expression is co-expressed with che-1p::GFP, we examined C-terminally tagged ttx-1:ALFA animals and found co-localization in the same anterior pair of amphid neurons, but no co-expression in the posterior pair of amphid neurons (Figure 2I, J, n = 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by co-localization data shown in Figure 2I, J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "ae7d99c2-cfce-4de1-a552-91ec8ff6027f",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C24",
+      "claim": "Both Ppa-che-1 alleles exhibited defects in attraction toward NH4Cl and LiCl compared to wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Ppa-che-1 alleles exhibited defects in attraction toward NH4Cl and LiCl compared to wildtype (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "bfe44b22-6252-4a03-9f99-ab150f1e410a",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C25",
+      "claim": "Ppa-che-1 mutants showed no detectable difference in responses to NH4I, NaCl, and NaAc.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike in C. elegans, Ppa-che-1 mutants showed no detectable difference in responses to NH4I, NaCl, and NaAc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data comparing mutant and wildtype responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "13a2b5ab-c5cd-47a1-b5cf-b9d63306ab9c",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C26",
+      "claim": "Histamine-treated che-1p::HisCl1 animals showed complete loss of attraction to NH4Br, NH4Cl, and NH4I but did not significantly alter their repulsive response to NaAc.",
+      "claim_type": "EXPLICIT",
+      "source": "Histamine-treated che-1p::HisCl1 animals showed complete loss of attraction to NH4Br, NH4Cl, and NH4I but did not significantly alter their repulsive response to NaAc (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by neuronal silencing data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "4a2d6f6b-77d2-4a65-9f85-d7527be32786",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C27",
+      "claim": "NaAc is sensed by neurons other than ASE or AFD.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings corroborate that NaAc is sensed by neurons other than ASE (or AFD, in which the che-1 promoter also drives HisCl1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the neuronal silencing data showing no effect on NaAc response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "c67b7933-37be-42d1-9adf-79d81ea9fb38",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C28",
+      "claim": "When 250 mM NH4Cl is administered, an 'ON' response is observed as calcium transiently increases in the left ASE neuron (ASEL).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we looked for changes in calcium levels immediately after the addition and removal of specific salts. When 250 mM NH4Cl is administered, an 'ON' response is observed as calcium transiently increases in the left ASE neuron (ASEL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "08cf89d4-6bfa-4e15-a11a-01f691a5118d",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C29",
+      "claim": "An 'OFF' response was observed as calcium sharply dips in the right ASE neuron (ASER) before quickly returning to baseline when NH4Cl was removed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an 'OFF' response was observed as calcium sharply dips in the right ASE neuron (ASER) before quickly returning to baseline when the salt was removed, which suggests hyperpolarization of this neuron (Figure 4A, B; Suzuki et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 4A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "9feb568b-91e5-4ead-baaa-b796e8c7e78f",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C30",
+      "claim": "When presented with 25 mM NH4Cl, the 'OFF' response completely disappeared in ASER while the 'ON' response became more pronounced in ASEL.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when presented with a tenfold lower concentration of 25 mM NH4Cl, the 'OFF' response completely disappeared in ASER while the 'ON' response became more pronounced in ASEL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calcium imaging data comparing different concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "ccf2dfa8-7d4c-49b6-8887-63541e3cef69",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C31",
+      "claim": "ASER responses to 250 and 25 mM NaCl were very similar to the 'OFF' response observed for NH4Cl.",
+      "claim_type": "EXPLICIT",
+      "source": "The ASER responses to 250 and 25 mM NaCl (Figure 4D) were very similar to the 'OFF' response (including hyperpolarization) observed for NH4Cl, but the ASEL responses differ between the two salts: instead of the 'ON' response expected of ASEL, we observed a relatively weak 'OFF' response without the characteristic hyperpolarization but accompanied by an attenuated 'bump', a profile that we classify as an 'OFF-2' response (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 4C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "f2be31d9-b14c-4a09-8cef-25633baf9553",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C32",
+      "claim": "ASEL showed a strong 'ON' response to NH4I, and ASER showed an 'ON\u2013OFF' biphasic response to 250 mM NH4I.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined the response to NH4I and found that it also elicited laterally asymmetric responses, but yet again distinct from the responses to both NH4Cl and NaCl, with ASEL showing a strong 'ON' response, and ASER showing an 'ON\u2013OFF' biphasic response to 250 mM NH4I (Figure 4E, F; Kato et al., 2014; Wang et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 4E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "9f74ffcc-679f-457d-a5f6-2666494267af",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C33",
+      "claim": "P. pacificus ASE neurons clearly show left/right asymmetric responses to salt attractants.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, P. pacificus ASE neurons clearly show left/right asymmetric responses to salt attractants and these asymmetric responses show similarities and differences to the C. elegans ASE taste neurons (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calcium imaging data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "fdb09749-6f7c-4cc2-820c-c17b27063cfb",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C34",
+      "claim": "AFD neurons responded with a distinctly 'ON\u2013OFF' biphasic response to all three salt types at both concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we detected a distinctly 'ON\u2013OFF' biphasic response to all three salt types at both concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "1deb0029-5469-498f-a9af-01ed5a835150",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C35",
+      "claim": "AFD responses were more robust than ASER toward 25 mM NH4Cl, NaCl, and NH4I.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, although we observed weaker or comparable responses in AFD neurons when compared to either ASE neuron's response toward 250 mM NH4Cl, NaCl, and NH4I (Figure 5A, B, E, F, I, J), the AFD responses were more robust than ASER toward 25 mM NH4Cl, NaCl, and NH4I (Figure 5D, H, L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "136f774a-b417-4fc0-a9a6-a7547f104c4d",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C36",
+      "claim": "AFD neurons responded strongly to 25 mM NaCl when neither one of the ASE neurons showed a positive response.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, AFD neurons responded strongly to 25 mM NaCl when neither one of the ASE neurons showed a positive response (Figure 5G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 5G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "150f2a99-ff12-43d8-b6cf-1087847d9d05",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C37",
+      "claim": "Ppa-gcy-22.3 is expressed exclusively in ASER.",
+      "claim_type": "EXPLICIT",
+      "source": "We fused the promoter of one of these paralogs, Ppa-gcy-22.3, to gfp and found that transgenic animals express GFP exclusively in ASER (Figure 6A), identical to the C. elegans gcy-22 ortholog (Ortiz et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reporter expression data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "68042ce9-0e7e-4546-8518-7abaa27d67e9",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C38",
+      "claim": "Expression of gcy-22.3 was eliminated in che-1(ot5012) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether Ppa-gcy-22.3 is a potential effector of Ppa-che-1 function, we crossed the gcy-22.3 reporter into che-1(ot5012) mutants. We found expression of gcy-22.3 was eliminated (Figure 6C), leading us to conclude that gcy-22.3 is a potential effector of che-1 function, identical to its homolog in C. elegans.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reporter expression data in mutant background shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "fb319927-0230-4fa8-b9de-7c9769d6b833",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C39",
+      "claim": "The 'OFF' response to 250 mM NH4Cl was notably abolished in the ASER neuron in the loss-of-function gcy-22.3 mutant, while the 'ON' response in the ASEL remained intact.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'OFF' response to 250 mM NH4Cl was notably abolished in the ASER neuron in the loss-of-function gcy-22.3 mutant, while the 'ON' response in the ASEL remained intact (Figure 7B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data in mutant background shown in Figure 7B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "ab902d80-3ded-4a5b-8980-b3e7675d607e",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C40",
+      "claim": "The responses to 250 mM NaCl were not significantly reduced in either the ASEL or ASER neuron in the gcy-22.3 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the responses to 250 mM NaCl were not significantly reduced in either the ASEL or ASER neuron in the gcy-22.3 mutant (Figure 7D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data in mutant background shown in Figure 7D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "e7be685e-eeb3-4cc3-97d0-be2b4cc96502",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C41",
+      "claim": "The gcy-22.3 mutation reduced the 'ON' portion of the AFD biphasic response following presentation of 250 mM NH4Cl and NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the gcy-22.3 mutation also reduced the 'ON' portion of the AFD biphasic response following presentation of 250 mM NH4Cl and NaCl (Figure 7F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data in mutant background shown in Figure 7F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "adcefbf1-b4e1-4923-93b2-cad594aad7d6",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C42",
+      "claim": "No significant differences were found between wildtype and gcy-22.3 mutants in responses toward individual ions, except that attraction to NH4Cl was slightly enhanced in both alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the behavioral responses toward individual salt ions in gcy-22.3 mutants, including a second loss-of-function allele csu182. Overall, we found no significant differences between wildtype and mutants in responses toward individual ions, and only the attraction to NH4Cl was slightly enhanced in both alleles (Figure 8), which was unexpected given the lack of calcium response observed in gcy-22.3(csu181) toward NH4Cl.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "3254dcb9-7bc5-428d-9da4-03b9618e3746",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C43",
+      "claim": "While proper ASE function is critical for salt attraction, defects in individual gcy genes do not lead to a major impact on the worms' ability to track toward attractive salts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings show that while proper ASE function is critical for salt attraction, defects in individual gcy genes do not lead to a major impact on the worms' ability to track toward attractive salts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral and calcium imaging data on gcy-22.3 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "9608eb0b-96e5-4c9a-bfb7-a58cf7233661",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C44",
+      "claim": "Functional lateralization in P. pacificus may be mediated by a different genetic pathway compared to C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our unexpected discovery that neuronal asymmetry is present in the ASE homologs between two distantly related nematode species, despite the lack of a lsy-6 homolog, suggests that functional lateralization in P. pacificus may be mediated by a different genetic pathway compared to C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of lateralization despite absence of lsy-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "10ee547e-6d88-4600-817b-7c8be7d35dd2",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C45",
+      "claim": "While C. elegans is attracted to acetate salts, P. pacificus avoids these acetates.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that while C. elegans is attracted to acetate salts, P. pacificus avoids these acetates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of behavioral data presented earlier in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "1b125f3a-6c03-4fb4-9b20-eb1226709a8c",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C46",
+      "claim": "Ammonium acetate (NH4Ac) is sensed both as a water-soluble compound as well as a volatile odorant and is mediated by different signaling pathways in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that ammonium acetate (NH4Ac) is sensed both as a water-soluble compound as well as a volatile odorant and is mediated by different signaling pathways (Fr\u00f8kjaer-Jensen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study on C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "f36e9a58-0d54-430e-ab80-1b11747d08c7",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C47",
+      "claim": "The P. pacificus ASEL neuron responds to a decrease in NaCl concentration (likely sodium), whereas the C. elegans ASEL neuron responds to an increase in sodium concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The P. pacificus ASEL neuron responds to a decrease in NaCl concentration (likely sodium), as evidenced by the 'OFF-2' response profile, whereas the C. elegans ASEL neuron responds to an increase in sodium concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on calcium imaging data and previous C. elegans studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "48e9a7d2-f761-423e-aebf-06078c764d0c",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C48",
+      "claim": "In both P. pacificus and C. elegans, the ASER neuron responds to a decrease in chloride concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in both nematodes, the ASER neuron responds to a decrease in chloride concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on calcium imaging data and previous C. elegans studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "17a8a07a-fa00-41ab-9208-aec811d759a5",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C49",
+      "claim": "The P. pacificus ASER neuron exhibits a unique ON\u2013OFF response to ammonium iodide, whereas in C. elegans, no ON\u2013OFF type of response is seen in the ASE neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the P. pacificus ASER neuron exhibits a unique ON\u2013OFF response to ammonium iodide, whereas in C. elegans, no ON\u2013OFF type of response is seen in the ASE neurons \u2013 the C. elegans ASER neuron responds only to a decrease in iodide concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on calcium imaging data and previous C. elegans studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "67aa5b63-86d6-4bc0-8341-b2b4e73be9cc",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C50",
+      "claim": "Attraction to ammonium ions (NH4+) is likely mediated in part by the ASER neuron in P. pacificus.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our calcium imaging and chemotaxis results on the gcy-22.3 mutants, attraction to ammonium ions (NH4+) is likely mediated in part by the ASER neuron in P. pacificus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calcium imaging and behavioral data on gcy-22.3 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "289830b5-5d8c-4153-9f73-2a1d03eabe21",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C51",
+      "claim": "Pristionchus species are entomophilic and most frequently found to be associated with beetles in a necromenic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Pristionchus species are entomophilic and most frequently found to be associated with beetles in a necromenic manner and thus insect cadavers could be sources of ammonium in the soil (Koneru et al., 2016; Herrmann et al., 2007; Herrmann et al., 2006; Fielding et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous ecological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "f1879cd9-815c-49fc-a842-70424d3f65e5",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C52",
+      "claim": "In P. pacificus, nutritional state has a measurable role in the mouth-form polyphenism decision between predatory and non-predatory morphs.",
+      "claim_type": "EXPLICIT",
+      "source": "In P. pacificus, nutritional state has a measurable role in the mouth-form polyphenism decision between predatory and non-predatory morphs (Piskobulu et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "1d722f92-5aa6-472e-a7c5-1c49bcdb377b",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C53",
+      "claim": "The sensitivity range of the P. pacificus ASER responses is significantly less compared to the ASEL responses, as well as to C. elegans ASER responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity range of the P. pacificus ASER responses is significantly less compared to the ASEL responses, as well as to C. elegans ASER responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "4b2e7f7e-092d-49e3-a24c-e71a70fabbb0",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C54",
+      "claim": "The C. elegans ASER has a 40-fold sensitivity range in the 'OFF' response to the removal of various concentrations of NaCl (1\u201340 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the C. elegans ASER has a 40-fold sensitivity range in the 'OFF' response to the removal of various concentrations of NaCl (1\u201340 mM) (Suzuki et al., 2008; Rabinowitch et al., 2014; Shindou et al., 2019; Watteyne et al., 2020), the P. pacificus ASER showed the 'OFF' response only to 250 mM NH4Cl but not to a tenfold reduction in concentration of NH4Cl (25 mM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous C. elegans studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "3fbe29ab-2d80-4bb7-8c82-25c30b23d790",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C55",
+      "claim": "The narrower sensitivity range in P. pacificus chemosensation was also observed for attraction to volatile odors, which span only 10-fold, versus up to 10,000-fold in attractive odors for C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The narrower sensitivity range in P. pacificus chemosensation was also observed for attraction to volatile odors (Hong and Sommer, 2006), which span only 10-fold, versus up to 10,000-fold in attractive odors for C. elegans (Bargmann and Horvitz, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "416da0f1-2333-4f51-8c3e-7effea04ec6c",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C56",
+      "claim": "In C. elegans, hyperosmotic stimulus such as 1 M glycerol, or high concentrations or long duration of CuSO4 exposure both result in biphasic responses by the ASH neurons that sense noxious chemicals.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, hyperosmotic stimulus such as 1 M glycerol, or high concentrations or long duration of CuSO4 exposure both result in biphasic responses by the ASH neurons that sense noxious chemicals (Wang et al., 2015; Chronis et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous C. elegans studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "cb3746fb-ab0e-49c7-b085-bd2ac993b5c5",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C57",
+      "claim": "C. elegans olfactory neurons that mediate avoidance behavior such as the AWB neurons can exhibit a biphasic response to the presence and removal of a high concentration isoamyl alcohol that normally elicits avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory neurons that mediate avoidance behavior such as the AWB neurons can also exhibit a biphasic response to the presence and removal of a high concentration isoamyl alcohol that normally elicits avoidance behavior (Yoshida et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous C. elegans study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "41e723a0-8dd4-40b2-8139-64514a9525a8",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C58",
+      "claim": "C. elegans chemosensory neurons have been classically characterized as specialized neurons for dedicated modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly speaking, C. elegans chemosensory neurons have been classically characterized as specialized neurons for dedicated modalities such as water-soluble chemicals (ASE), volatile odorants (AWA, AWB, and AWC), noxious chemicals (ASH), pheromones (ADL, ADF, and ASK), and light (ASJ) and temperature (AFD) (Bargmann, 2006; Bargmann et al., 1993; Mori and Ohshima, 1995; Sengupta et al., 1996; Macosko et al., 2009; Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous C. elegans studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "c00c3811-26fb-4389-9ae3-14578b05a47f",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C59",
+      "claim": "Advances in multi-neuron calcium recordings have shown that a given odor within a certain concentration range is detected by different ensembles of the 12 amphid neuron classes, including the AFD neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in multi-neuron calcium recordings have since shown that a given odor within a certain concentration range is detected by different ensembles of the 12 amphid neuron classes, including the AFD neurons (Leinwand and Chalasani, 2013; Lin et al., 2023; Yemini et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies using calcium imaging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "08cd841f-1656-4202-89c5-b6a2c905a7d8",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C60",
+      "claim": "The loss of the receptor gcy-22.3 reduced the AFD 'ON' response to NH4Cl and NaCl, indicating ASER contributes to the AFD response.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the loss of the receptor gcy-22.3 reduced the AFD 'ON' response to NH4Cl and NaCl, indicating ASER contributes to the AFD response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calcium imaging data in gcy-22.3 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "5bdfb00a-6a08-41cc-87f1-a1e2f88e3967",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C61",
+      "claim": "The integration of thermosensation and chemosensation is important for memory-regulated behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of thermosensation and chemosensation is important for memory-regulated behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "b7d0ce85-47ca-44fc-9c43-993435763742",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C62",
+      "claim": "In C. elegans, maximum chemotaxis indices toward NH4Cl occurs when there is concordance between cultivation temperature and assay temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, maximum chemotaxis indices toward NH4Cl occurs when there is concordance between cultivation temperature and assay temperature (Kuhara et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous C. elegans study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "fc2816eb-9b09-4024-b271-881735438cf9",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C63",
+      "claim": "The C. elegans AFD neurons are important for gustatory aversive learning in NaCl avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "The C. elegans AFD neurons are also important for gustatory aversive learning in NaCl avoidance (Watteyne et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous C. elegans study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "c3e955f3-fb5a-4e2a-83cd-160e0370d092",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C64",
+      "claim": "The key regulator of Cel ASE identity, che-1, is also expressed in Ppa ASE and may play a similar role as a terminal selector in this neuron type.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the key regulator of Cel ASE identity, che-1, is also expressed in Ppa ASE and may play a similar role as a terminal selector in this neuron type, based on its effect on ASE-mediated behavior and regulation of the Ppa-gcy-22.3 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the expression data and functional studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "cd965e8b-ea27-4172-971f-1d6f326e804b",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C65",
+      "claim": "A developmental loss of ASE differentiation may result in compensatory changes in the chemosensory system during early development, as was observed in the C. elegans mating pheromone response by males.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that a developmental loss of ASE differentiation may result in compensatory changes in the chemosensory system during early development, as was observed in the C. elegans mating pheromone response by males (White et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on a previous C. elegans study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "b04aef3f-caa8-4674-97d8-b5a6a6ebfd27",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C66",
+      "claim": "Cel-gcy-22 stands out for being located on a separate chromosome (Chr. V) compared to the other ASER-type gcy genes (gcy-1, gcy-4, gcy-5 on Chr. II).",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worthwhile to note that Cel-gcy-22 stands out for being located on a separate chromosome (Chr. V) compared to the other ASER-type gcy genes (gcy-1, gcy-4, gcy-5 on Chr. II) as well as the Cel-gcy-22 mutant having defects in chemoattraction toward a wide range of salt ions (Ortiz et al., 2009; Ortiz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on C. elegans gcy genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "83d5c9b7-b741-42f1-ba93-8040fabe4718",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C67",
+      "claim": "The five P. pacificus gcy-22-like paralogs are located on three separate chromosomes (Chr. I, IV, and X), likely emerging from independent and repeated gene duplication events after the separation of Caenorhabditis and Pristionchus lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the five P. pacificus gcy-22-like paralogs are located on three separate chromosomes (Chr. I, IV, and X), it is likely that they emerged from independent and repeated gene duplication events after the separation of Caenorhabditis and Pristionchus lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from genomic data on gene locations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "db307906-1401-40e6-a076-5118b0720d99",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C68",
+      "claim": "Unlike in C. elegans, the Ppa-che-1 gene is also expressed in the AFD neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that unlike in C. elegans, the Ppa-che-1 gene is also expressed in the AFD neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "3b9d20bf-d154-4808-9ed1-1a42d134b636",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C69",
+      "claim": "The miRNA lsy-6 is apparently lacking in P. pacificus, representing the most striking difference in the gene regulatory architecture of ASE neuron specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the most striking difference in the gene regulatory architecture of ASE neuron specification is the apparent lack of the key regulator of ASE asymmetry in P. pacificus, the miRNA lsy-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "34315b38-a828-4d57-8b6b-f5b7c3e0085a",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C70",
+      "claim": "In C. elegans, the expression of lsy-6 exclusively in ASEL is prepatterned via an early embryonic Notch signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the expression of lsy-6 exclusively in ASEL is prepatterned via an early embryonic Notch signal (Cochella and Hobert, 2012) and serves to downregulate the homeodomain transcription factor cog-1 in the ASEL neuron (Johnston et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous C. elegans studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "1495a30c-1ea4-4020-9d6c-abc83a65ef62",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C71",
+      "claim": "cog-1 and several asymmetrically expressed downstream effectors of cog-1, such as the die-1, lim-6, and fozi-1 transcription factors are conserved in P. pacificus.",
+      "claim_type": "EXPLICIT",
+      "source": "cog-1 and several asymmetrically expressed downstream effectors of cog-1, such as the die-1, lim-6, and fozi-1 transcription factors are conserved in P. pacificus, but whether the function of these factors in controlling P. pacificus ASE laterality is conserved remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic conservation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "31280887-43ff-4a83-bd5d-9bb8330c6dec",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C72",
+      "claim": "Another prominent gene regulatory pathway that is controlled by miRNAs in C. elegans, the heterochronic pathway (let-7s and lin-4), appears to have diverged in P. pacificus as well, despite the conservation of the overall physiological readouts of this pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context it is intriguing to note that another prominent gene regulatory pathway that is controlled by miRNAs in C. elegans, the heterochronic pathway (let-7s and lin-4), appears to have diverged in P. pacificus as well, despite the conservation of the overall physiological readouts of this pathway (temporal patterning of cell lineage divisions) (Sharma et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "8c4a1177-7dda-44e3-a328-0ccecfb3a21f",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "claim_id": "C73",
+      "claim": "miRNA-meditated regulatory process is particularly labile.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to speculate that miRNA-meditated regulatory process is particularly labile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed divergence in miRNA pathways.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "29f3b151-8b41-421e-80c1-bbc2be9f6f1b",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "P. pacificus and C. elegans exhibit distinct behavioral preferences for water-soluble salts. P. pacificus shows strongest attraction to ammonium salts (NH4Br, NH4Cl, NH4I), with NH4I significantly more attractive to P. pacificus than C. elegans. P. pacificus is less attracted to NaCl and LiCl compared to ammonium salts and is repulsed by acetate salts (NaAc, NH4Ac), which attract C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 are well-supported by behavioral chemotaxis data shown in Figure 1, with statistical comparisons between species. The data clearly demonstrate species-specific differences in salt preferences using standard chemotaxis assays with appropriate controls and replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "993d8352-2bf1-4898-9004-ae6b9bc51368",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The P. pacificus che-1 ortholog is expressed in both ASE and AFD neurons, unlike C. elegans where che-1 is exclusively expressed in ASE. Expression was confirmed using both reporter transgenes and endogenous ALFA-tagging, and che-1 autoregulates its own expression in ASE neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C22-C23, and C68 are strongly supported by multiple lines of evidence including reporter expression (Figure 2A-C), endogenous ALFA-tag immunostaining (Figure 2D-E), autoregulation experiments (Figure 2F), and co-localization with ttx-1 (Figure 2I-J). The convergence of transgenic and endogenous tagging approaches provides robust validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "4a5a4b6f-a508-494f-86f6-24f4be46e4c4",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ppa-che-1 mutants show defects in attraction to NH4Cl and LiCl but not to NH4I, NaCl, or NaAc. Neuronal silencing using che-1p::HisCl1 eliminates attraction to NH4Br, NH4Cl, and NH4I but not NaAc repulsion, indicating NaAc is sensed by non-ASE/AFD neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by behavioral data from che-1 mutants (Figure 3B) and histamine-mediated neuronal silencing (Figure 3C). The discrepancy between mutant and silencing phenotypes for NH4I is noted but not fully explained, suggesting potential compensatory mechanisms. The conclusion about NaAc sensing is logically sound based on the silencing data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "8ef1a0eb-f456-4f8b-b942-3c2277ef7441",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "P. pacificus ASE neurons show left/right asymmetric calcium responses to salt attractants. ASEL shows 'ON' responses to NH4Cl and NH4I, while ASER shows 'OFF' responses to NH4Cl and biphasic 'ON-OFF' responses to NH4I. Responses are concentration-dependent and differ between salt types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 are well-supported by calcium imaging data (Figure 4) showing distinct response profiles for ASEL and ASER neurons to different salts and concentrations. The data clearly demonstrate lateralized responses with appropriate controls (Figure 4\u2014figure supplement 1) and individual animal traces (Figure 4\u2014figure supplement 2). Sample sizes are adequate (n=10-14).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "2bd8d143-a258-43ff-a989-cdb087f22596",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AFD neurons respond to salts with biphasic 'ON-OFF' responses to all three salt types at both concentrations tested. AFD responses are more robust than ASER at lower concentrations (25 mM) and AFD responds strongly to 25 mM NaCl when neither ASE neuron shows positive response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by calcium imaging data (Figure 5) showing consistent biphasic AFD responses across different salts and concentrations. The comparison to ASE responses is quantitatively shown. However, the authors acknowledge uncertainty about whether AFD directly senses salts or receives secondary input from other neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "3f35afac-f19b-4351-9562-3d7ac14023ab",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ppa-gcy-22.3 is expressed exclusively in ASER and its expression is eliminated in che-1 mutants, indicating it is a downstream effector of che-1 function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by reporter expression data (Figure 6A) showing ASER-specific expression and loss of expression in che-1 mutants (Figure 6C). Co-localization with che-1p::rfp confirms ASER identity (Figure 6B). The conclusion about che-1 regulation is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "226b7d7c-0057-4e5d-9d1e-044cd611db0a",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Loss of gcy-22.3 abolishes the ASER 'OFF' response to 250 mM NH4Cl while ASEL 'ON' response remains intact. The mutation does not significantly affect responses to NaCl in either ASE neuron but reduces the AFD 'ON' response to both NH4Cl and NaCl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by calcium imaging data in gcy-22.3 mutants (Figure 7B-G) with statistical comparisons to wildtype. The selective effect on NH4Cl but not NaCl responses in ASER suggests salt-specific receptor functions. The AFD phenotype supports functional connectivity between ASER and AFD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "078f914a-79d0-410d-9742-1d42328f74c4",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Behavioral analysis of gcy-22.3 mutants shows no significant differences from wildtype in responses to individual salt ions except slightly enhanced attraction to NH4Cl. This indicates that while ASE function is critical for salt attraction, individual gcy gene defects do not majorly impact chemotaxis behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C43 are based on behavioral data (Figure 8), but the results are puzzling given the clear calcium imaging defects in gcy-22.3 mutants. The enhanced NH4Cl attraction contradicts the loss of ASER calcium response. This discrepancy suggests either compensatory mechanisms, redundancy among gcy genes, or that the calcium responses measured do not directly correlate with behavioral output. The conclusion requires additional experiments to resolve.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "3ac0a75e-977e-4c32-af83-22e659d40db4",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Despite lacking the lsy-6 miRNA and showing no expansion of ASEL/ASER-type rGCs, P. pacificus exhibits functional lateralization in ASE neurons, suggesting a different genetic pathway mediates asymmetry compared to C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C11, C12, and C69 are supported by the demonstration of functional lateralization (calcium imaging data) combined with genomic observations about the absence of lsy-6 and lack of gcy gene expansion. The inference that a different genetic pathway must exist is logical, though the actual pathway remains to be identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "22129beb-0f26-47f8-be9e-b8f8a924771d",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comparison of ASE responses between P. pacificus and C. elegans reveals both conserved and divergent features. P. pacificus ASEL responds to decreasing NaCl (OFF-2 response) while C. elegans ASEL responds to increasing sodium. Both species show ASER responses to decreasing chloride. P. pacificus ASER shows unique ON-OFF response to NH4I not seen in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by comparison of current calcium imaging data with cited C. elegans studies. The comparative analysis is presented in Table 1 and discussed with appropriate citations. The identification of species-specific differences is well-founded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "853f09a0-5dd3-487f-8245-5099da3d6770",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "P. pacificus ASER has a narrower sensitivity range compared to ASEL and to C. elegans ASER. P. pacificus ASER responds to 250 mM but not 25 mM NH4Cl (10-fold range), while C. elegans ASER has 40-fold sensitivity range to NaCl. This narrower range is also observed for volatile odors in P. pacificus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by calcium imaging data showing concentration-dependent responses and comparison to cited C. elegans studies. The authors appropriately note that differences in calcium indicators (RCaMP vs GCaMP/Cameleon) may contribute to observed differences. The parallel observation for olfaction strengthens the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "ca3ac979-2d83-4402-938f-52e65bcd2bad",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Attraction to ammonium ions is likely mediated in part by ASER in P. pacificus, and ASER contributes to AFD responses based on gcy-22.3 mutant analysis showing reduced AFD 'ON' response to NH4Cl and NaCl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C60 are inferred from calcium imaging and behavioral data on gcy-22.3 mutants. The logic is sound: loss of ASER-specific receptor affects both ASER and AFD responses, suggesting functional connectivity. However, the behavioral data (C42) showing minimal effect of gcy-22.3 mutation on chemotaxis creates some uncertainty about the functional significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "ba685511-2577-42ce-b3cf-334ef60a85b5",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ppa-che-1 is expressed in ASE and may play a similar terminal selector role as in C. elegans based on behavioral effects and gcy-22.3 regulation. However, the stronger effect of neuronal silencing versus che-1 mutation suggests either che-1 has a less comprehensive role in P. pacificus or developmental compensation occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 is partially supported by expression and functional data, but the discrepancy between che-1 mutant and silencing phenotypes (C24-C26) raises questions about che-1's role. Claim C65 is speculation about compensation. The conclusion requires additional experiments to determine whether che-1 truly functions as a terminal selector in P. pacificus or has a more limited role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "ea187ed6-30b6-4435-bd7b-bfdad8e60f35",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The five P. pacificus gcy-22-like paralogs are located on three separate chromosomes, likely emerging from independent gene duplication events after Caenorhabditis-Pristionchus divergence. This contrasts with C. elegans where gcy-22 is on a separate chromosome from other ASER-type gcy genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C66 are supported by genomic data on gene locations and citations to previous studies. The inference about independent duplication events is reasonable based on chromosomal distribution. This represents a clear evolutionary difference in gcy gene organization between species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "5967fb78-b141-4814-a47e-99654e9aab36",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Several downstream effectors of the C. elegans ASE laterality pathway (cog-1, die-1, lim-6, fozi-1) are conserved in P. pacificus, but their function in controlling laterality remains unknown. The heterochronic miRNA pathway has also diverged in P. pacificus despite conserved physiological outputs, suggesting miRNA-mediated regulation may be particularly labile evolutionarily.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is supported by genomic conservation data but explicitly states function is undetermined. Claim C72 is supported by citation. Claim C73 is speculation. While the pattern of miRNA pathway divergence is interesting, the speculation about lability requires more comparative data across species to be well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "ccefc5af-584f-4337-b776-893c7ad00635",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Nematodes populate diverse ecological niches but have constrained sensory neuron numbers, with free-living and parasitic species having nearly identical numbers (12-13 pairs) of amphid sensory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C4 are supported by multiple citations to electron microscopy studies across nematode species. These are well-established facts in the field that provide important context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "261bf284-cdd3-4a62-a02e-c83374c7ea75",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In C. elegans, ASE neurons are the main salt receptors, with che-1 required for their differentiation. ASE neurons are lateralized with asymmetric expression of gcy genes and differential responses to salt ions, controlled by a gene regulatory network including the miRNA lsy-6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 are well-established facts about C. elegans supported by multiple citations to previous studies. These provide essential background for the comparative analysis with P. pacificus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "ab9cd2b7-46db-4ea1-a42a-8de58044db88",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Pristionchus species are entomophilic, associated with beetles in a necromenic manner, and insect cadavers could be sources of ammonium in soil. Nutritional state influences mouth-form polyphenism in P. pacificus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C52 are supported by citations to previous ecological and developmental studies. These provide ecological context for interpreting the ammonium salt preferences observed in P. pacificus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "af19cc97-c025-43fd-96c4-e7f1abe25710",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "C. elegans chemosensory neurons were classically characterized as specialized for dedicated modalities, but multi-neuron calcium recordings show that odors are detected by ensembles of amphid neurons. Biphasic responses have been observed in ASH and AWB neurons under specific conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by citations to previous C. elegans studies. These provide important context for interpreting the biphasic AFD responses and polymodal sensory processing observed in P. pacificus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "5aacec8d-4193-4cee-a21e-e36b11711c40",
+      "content_id": "6a2940b1-d88b-4eaf-9926-8895bca82d72",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Integration of thermosensation and chemosensation is important for memory-regulated behavior in C. elegans. AFD neurons are involved in temperature-dependent chemotaxis and gustatory aversive learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by citations to previous C. elegans studies. These provide context for discussing the potential polymodal function of AFD neurons in P. pacificus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "c2a05d43-3cb5-4471-9edf-5d0f69da48cf",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "P. pacificus displays distinct salt preferences compared to C. elegans, with ammonium salts (NH4Br, NH4Cl, NH4I) being the strongest attractants, NH4I being significantly more attractive to P. pacificus than C. elegans, reduced attraction to NaCl and LiCl compared to ammonium salts, and repulsion by acetate salts that attract C. elegans.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm these findings, with one reviewer stating the work 'compare[s] chemosensory preferences between C. elegans and P. pacificus' and noting 'the nematodes have overlapping and distinct preferences for different salts.' The behavioral data showing species-specific salt preferences is accepted without critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "P. pacificus ASE neurons show left/right asymmetric calcium responses to salt attractants, with ASEL displaying 'ON' responses to NH4Cl and NH4I, ASER showing 'OFF' responses to NH4Cl and NaCl, and concentration-dependent response patterns that differ between the two neurons.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise this finding, stating the authors 'were able to show clearly that ASEL/R are functionally asymmetric in P. pacificus' and that the results present 'convincing evidence that ASEL/R lateralization exists.' The calcium imaging methodology is described as using 'clear and established methods.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "50266f4d-67f0-4af9-ad64-70872afffdc7",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The P. pacificus che-1 ortholog is expressed in both ASE and AFD neurons (unlike C. elegans where it is ASE-specific), autoregulates its own expression especially in ASE neurons, and the reporter transgene accurately reflects endogenous expression as confirmed by ALFA-tag immunostaining.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these expression findings without critique. One reviewer notes the work establishes 'a role for che-1-dependent gcy-22.3' and acknowledges the molecular characterization. The unexpected AFD expression is treated as a valid finding rather than questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "c01393c5-eedc-42e7-a88e-5b8af14bf7dc",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "P. pacificus che-1 mutants show defects in attraction to NH4Cl and LiCl but not to NH4I, NaCl, or NaAc. Neuronal silencing experiments using che-1p::HisCl1 confirm that ASE/AFD neurons mediate attraction to ammonium salts but not NaAc repulsion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm these functional studies, with one stating the authors 'combined with genetic perturbation establish a role for che-1-dependent gcy-22.3' in salt responses. The behavioral phenotypes of che-1 mutants are accepted as demonstrating ASE function in salt chemotaxis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "b25b3991-9ec1-49fa-a382-fff8ffae2f3c",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The receptor gcy-22.3 is expressed exclusively in ASER in a che-1-dependent manner. Loss of gcy-22.3 abolishes the ASER 'OFF' response to NH4Cl but not to NaCl, and reduces the AFD 'ON' response to both NH4Cl and NaCl.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly validate this molecular and functional characterization, stating the authors 'establish a role for che-1-dependent gcy-22.3 in the asymmetric response to NH4Cl.' The calcium imaging data in gcy-22.3 mutants is accepted as demonstrating the receptor's specific role.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "42a4bd87-3161-4b39-96a9-94b136c80f95",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Despite clear calcium imaging defects, gcy-22.3 mutants show no significant behavioral defects in salt attraction except slightly enhanced attraction to NH4Cl, suggesting that while ASE function is critical for salt attraction, individual gcy genes do not have major impacts on chemotaxis behavior.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this finding, though it represents an unexpected disconnect between cellular and behavioral phenotypes. The observation is accepted as part of the overall characterization showing redundancy or compensation in the chemosensory system.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "9c339258-71d2-4a88-b9ab-1d6f697a5564",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "P. pacificus AFD neurons respond to salts with biphasic 'ON-OFF' responses at both high and low concentrations, with particularly robust responses to low concentrations (25 mM) of NH4Cl, NaCl, and NH4I. Loss of gcy-22.3 reduces AFD responses, indicating ASER contributes to AFD salt sensing.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings about AFD salt responses without critique. The calcium imaging data showing AFD involvement in salt sensing is treated as a valid discovery, contributing to the overall picture of distributed chemosensory processing in P. pacificus.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "f44867f8-e4cf-4331-b520-7f325ca372e8",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Despite previous expectations that P. pacificus lacked bilateral asymmetry based on the absence of lsy-6 miRNA and lack of expansion of ASEL/ASER-type receptor guanylyl cyclases, functional lateralization exists in P. pacificus ASE neurons, suggesting it is achieved by a different genetic pathway than in C. elegans.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly highlight this as a key contribution, stating the work shows 'P. pacificus ASE homologs achieve molecular (receptor expression) and functional (calcium response) asymmetry by alternative means' and that it 'highlights that evolution can find different ways to establish asymmetry.' One reviewer notes this as a 'weakness' only in that 'the mechanism of lsy-6-independent establishment of ASEL/R asymmetry in P. pacificus remains uncharacterized,' but accepts the finding itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "8146c9ed-a2e9-4003-84fb-e2ba5cc3bbc6",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Comparative analysis reveals that P. pacificus ASEL responds to decreases in NaCl (opposite to C. elegans ASEL which responds to increases), both species' ASER responds to chloride decreases, P. pacificus ASER shows unique ON-OFF responses to ammonium iodide, and P. pacificus ASER has a narrower sensitivity range than C. elegans ASER.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these comparative findings as part of the valuable contribution of the work. One reviewer states the work 'contributes an important comparison of how these two nematodes sense salts,' implicitly supporting the specific differences identified between the species.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "eb567fae-08a2-4d6a-a29e-6ba94a6d67d1",
+      "content_id": "8cf52a73-a499-41be-bc08-fec620c4ea0d",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The transcription factor che-1 is conserved in P. pacificus ASE and likely plays a similar terminal selector role based on its effects on ASE-mediated behavior and regulation of gcy-22.3. Downstream effectors of the C. elegans laterality pathway (cog-1, die-1, lim-6, fozi-1) are also conserved in P. pacificus, though their function in controlling ASE laterality remains undetermined.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers accept the che-1 conservation and function, one explicitly notes as a 'weakness' that 'the mechanism of lsy-6-independent establishment of ASEL/R asymmetry in P. pacificus remains uncharacterized.' This indicates the downstream pathway components are acknowledged but their functional roles are uncertain and require further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21cc1b32-9990-4281-8933-e50ea8282bdf",
+      "result_id": "29f3b151-8b41-421e-80c1-bbc2be9f6f1b"
+    },
+    {
+      "claim_id": "693e18b6-0da2-4ea0-a0c6-6f8da7335f78",
+      "result_id": "29f3b151-8b41-421e-80c1-bbc2be9f6f1b"
+    },
+    {
+      "claim_id": "4f1e7480-0c22-4e83-9321-e4e8b8f932d4",
+      "result_id": "29f3b151-8b41-421e-80c1-bbc2be9f6f1b"
+    },
+    {
+      "claim_id": "edb24aae-3b1a-42d1-a2bd-efa98c3b3569",
+      "result_id": "29f3b151-8b41-421e-80c1-bbc2be9f6f1b"
+    },
+    {
+      "claim_id": "fc51258f-14b4-444e-a631-8918c89c3e1b",
+      "result_id": "29f3b151-8b41-421e-80c1-bbc2be9f6f1b"
+    },
+    {
+      "claim_id": "817792c1-bfb5-4112-9cff-56377fe99e86",
+      "result_id": "993d8352-2bf1-4898-9004-ae6b9bc51368"
+    },
+    {
+      "claim_id": "b63b9a1e-e491-4a71-8859-d4e129d7d657",
+      "result_id": "993d8352-2bf1-4898-9004-ae6b9bc51368"
+    },
+    {
+      "claim_id": "08848631-67d7-49fc-8883-ccfbb991c941",
+      "result_id": "993d8352-2bf1-4898-9004-ae6b9bc51368"
+    },
+    {
+      "claim_id": "79306461-5fcc-46d4-81e5-41d589602edc",
+      "result_id": "993d8352-2bf1-4898-9004-ae6b9bc51368"
+    },
+    {
+      "claim_id": "6822e659-d542-4c70-bd61-de73086c5bd3",
+      "result_id": "993d8352-2bf1-4898-9004-ae6b9bc51368"
+    },
+    {
+      "claim_id": "db307906-1401-40e6-a076-5118b0720d99",
+      "result_id": "993d8352-2bf1-4898-9004-ae6b9bc51368"
+    },
+    {
+      "claim_id": "ae7d99c2-cfce-4de1-a552-91ec8ff6027f",
+      "result_id": "4a5a4b6f-a508-494f-86f6-24f4be46e4c4"
+    },
+    {
+      "claim_id": "bfe44b22-6252-4a03-9f99-ab150f1e410a",
+      "result_id": "4a5a4b6f-a508-494f-86f6-24f4be46e4c4"
+    },
+    {
+      "claim_id": "13a2b5ab-c5cd-47a1-b5cf-b9d63306ab9c",
+      "result_id": "4a5a4b6f-a508-494f-86f6-24f4be46e4c4"
+    },
+    {
+      "claim_id": "4a2d6f6b-77d2-4a65-9f85-d7527be32786",
+      "result_id": "4a5a4b6f-a508-494f-86f6-24f4be46e4c4"
+    },
+    {
+      "claim_id": "c67b7933-37be-42d1-9adf-79d81ea9fb38",
+      "result_id": "8ef1a0eb-f456-4f8b-b942-3c2277ef7441"
+    },
+    {
+      "claim_id": "08cf89d4-6bfa-4e15-a11a-01f691a5118d",
+      "result_id": "8ef1a0eb-f456-4f8b-b942-3c2277ef7441"
+    },
+    {
+      "claim_id": "9feb568b-91e5-4ead-baaa-b796e8c7e78f",
+      "result_id": "8ef1a0eb-f456-4f8b-b942-3c2277ef7441"
+    },
+    {
+      "claim_id": "ccf2dfa8-7d4c-49b6-8887-63541e3cef69",
+      "result_id": "8ef1a0eb-f456-4f8b-b942-3c2277ef7441"
+    },
+    {
+      "claim_id": "f2be31d9-b14c-4a09-8cef-25633baf9553",
+      "result_id": "8ef1a0eb-f456-4f8b-b942-3c2277ef7441"
+    },
+    {
+      "claim_id": "9f74ffcc-679f-457d-a5f6-2666494267af",
+      "result_id": "8ef1a0eb-f456-4f8b-b942-3c2277ef7441"
+    },
+    {
+      "claim_id": "fdb09749-6f7c-4cc2-820c-c17b27063cfb",
+      "result_id": "2bd8d143-a258-43ff-a989-cdb087f22596"
+    },
+    {
+      "claim_id": "1deb0029-5469-498f-a9af-01ed5a835150",
+      "result_id": "2bd8d143-a258-43ff-a989-cdb087f22596"
+    },
+    {
+      "claim_id": "136f774a-b417-4fc0-a9a6-a7547f104c4d",
+      "result_id": "2bd8d143-a258-43ff-a989-cdb087f22596"
+    },
+    {
+      "claim_id": "150f2a99-ff12-43d8-b6cf-1087847d9d05",
+      "result_id": "3f35afac-f19b-4351-9562-3d7ac14023ab"
+    },
+    {
+      "claim_id": "68042ce9-0e7e-4546-8518-7abaa27d67e9",
+      "result_id": "3f35afac-f19b-4351-9562-3d7ac14023ab"
+    },
+    {
+      "claim_id": "fb319927-0230-4fa8-b9de-7c9769d6b833",
+      "result_id": "226b7d7c-0057-4e5d-9d1e-044cd611db0a"
+    },
+    {
+      "claim_id": "ab902d80-3ded-4a5b-8980-b3e7675d607e",
+      "result_id": "226b7d7c-0057-4e5d-9d1e-044cd611db0a"
+    },
+    {
+      "claim_id": "e7be685e-eeb3-4cc3-97d0-be2b4cc96502",
+      "result_id": "226b7d7c-0057-4e5d-9d1e-044cd611db0a"
+    },
+    {
+      "claim_id": "adcefbf1-b4e1-4923-93b2-cad594aad7d6",
+      "result_id": "078f914a-79d0-410d-9742-1d42328f74c4"
+    },
+    {
+      "claim_id": "3254dcb9-7bc5-428d-9da4-03b9618e3746",
+      "result_id": "078f914a-79d0-410d-9742-1d42328f74c4"
+    },
+    {
+      "claim_id": "9608eb0b-96e5-4c9a-bfb7-a58cf7233661",
+      "result_id": "3ac0a75e-977e-4c32-af83-22e659d40db4"
+    },
+    {
+      "claim_id": "06c9b65a-3ebc-4d9c-8132-d2c14b935458",
+      "result_id": "3ac0a75e-977e-4c32-af83-22e659d40db4"
+    },
+    {
+      "claim_id": "2678d394-3790-4bbb-8f7a-4e2044160a9c",
+      "result_id": "3ac0a75e-977e-4c32-af83-22e659d40db4"
+    },
+    {
+      "claim_id": "3b9d20bf-d154-4808-9ed1-1a42d134b636",
+      "result_id": "3ac0a75e-977e-4c32-af83-22e659d40db4"
+    },
+    {
+      "claim_id": "f36e9a58-0d54-430e-ab80-1b11747d08c7",
+      "result_id": "22129beb-0f26-47f8-be9e-b8f8a924771d"
+    },
+    {
+      "claim_id": "48e9a7d2-f761-423e-aebf-06078c764d0c",
+      "result_id": "22129beb-0f26-47f8-be9e-b8f8a924771d"
+    },
+    {
+      "claim_id": "17a8a07a-fa00-41ab-9208-aec811d759a5",
+      "result_id": "22129beb-0f26-47f8-be9e-b8f8a924771d"
+    },
+    {
+      "claim_id": "1d722f92-5aa6-472e-a7c5-1c49bcdb377b",
+      "result_id": "853f09a0-5dd3-487f-8245-5099da3d6770"
+    },
+    {
+      "claim_id": "4b2e7f7e-092d-49e3-a24c-e71a70fabbb0",
+      "result_id": "853f09a0-5dd3-487f-8245-5099da3d6770"
+    },
+    {
+      "claim_id": "3fbe29ab-2d80-4bb7-8c82-25c30b23d790",
+      "result_id": "853f09a0-5dd3-487f-8245-5099da3d6770"
+    },
+    {
+      "claim_id": "67aa5b63-86d6-4bc0-8341-b2b4e73be9cc",
+      "result_id": "ca3ac979-2d83-4402-938f-52e65bcd2bad"
+    },
+    {
+      "claim_id": "08cd841f-1656-4202-89c5-b6a2c905a7d8",
+      "result_id": "ca3ac979-2d83-4402-938f-52e65bcd2bad"
+    },
+    {
+      "claim_id": "c3e955f3-fb5a-4e2a-83cd-160e0370d092",
+      "result_id": "ba685511-2577-42ce-b3cf-334ef60a85b5"
+    },
+    {
+      "claim_id": "cd965e8b-ea27-4172-971f-1d6f326e804b",
+      "result_id": "ba685511-2577-42ce-b3cf-334ef60a85b5"
+    },
+    {
+      "claim_id": "83d5c9b7-b741-42f1-ba93-8040fabe4718",
+      "result_id": "ea187ed6-30b6-4435-bd7b-bfdad8e60f35"
+    },
+    {
+      "claim_id": "b04aef3f-caa8-4674-97d8-b5a6a6ebfd27",
+      "result_id": "ea187ed6-30b6-4435-bd7b-bfdad8e60f35"
+    },
+    {
+      "claim_id": "1495a30c-1ea4-4020-9d6c-abc83a65ef62",
+      "result_id": "5967fb78-b141-4814-a47e-99654e9aab36"
+    },
+    {
+      "claim_id": "31280887-43ff-4a83-bd5d-9bb8330c6dec",
+      "result_id": "5967fb78-b141-4814-a47e-99654e9aab36"
+    },
+    {
+      "claim_id": "8c4a1177-7dda-44e3-a328-0ccecfb3a21f",
+      "result_id": "5967fb78-b141-4814-a47e-99654e9aab36"
+    },
+    {
+      "claim_id": "f34b4bfc-f5d6-459a-ae4c-9dd8969913cb",
+      "result_id": "ccefc5af-584f-4337-b776-893c7ad00635"
+    },
+    {
+      "claim_id": "0512019b-6574-4d91-8c81-112c2fe21735",
+      "result_id": "ccefc5af-584f-4337-b776-893c7ad00635"
+    },
+    {
+      "claim_id": "3e42262c-97a0-4667-8d3f-f502542fc32f",
+      "result_id": "261bf284-cdd3-4a62-a02e-c83374c7ea75"
+    },
+    {
+      "claim_id": "39ae0489-4259-4e75-b84f-3ba96db51728",
+      "result_id": "261bf284-cdd3-4a62-a02e-c83374c7ea75"
+    },
+    {
+      "claim_id": "b89cabab-e789-4f5a-9508-dfb7205bdbfb",
+      "result_id": "261bf284-cdd3-4a62-a02e-c83374c7ea75"
+    },
+    {
+      "claim_id": "eabb09ff-8375-4b17-9b61-d617ec5cc0e8",
+      "result_id": "261bf284-cdd3-4a62-a02e-c83374c7ea75"
+    },
+    {
+      "claim_id": "49fd0abf-f141-403c-8bb4-acf694415ffd",
+      "result_id": "261bf284-cdd3-4a62-a02e-c83374c7ea75"
+    },
+    {
+      "claim_id": "289830b5-5d8c-4153-9f73-2a1d03eabe21",
+      "result_id": "ab9cd2b7-46db-4ea1-a42a-8de58044db88"
+    },
+    {
+      "claim_id": "f1879cd9-815c-49fc-a842-70424d3f65e5",
+      "result_id": "ab9cd2b7-46db-4ea1-a42a-8de58044db88"
+    },
+    {
+      "claim_id": "416da0f1-2333-4f51-8c3e-7effea04ec6c",
+      "result_id": "af19cc97-c025-43fd-96c4-e7f1abe25710"
+    },
+    {
+      "claim_id": "cb3746fb-ab0e-49c7-b085-bd2ac993b5c5",
+      "result_id": "af19cc97-c025-43fd-96c4-e7f1abe25710"
+    },
+    {
+      "claim_id": "41e723a0-8dd4-40b2-8139-64514a9525a8",
+      "result_id": "af19cc97-c025-43fd-96c4-e7f1abe25710"
+    },
+    {
+      "claim_id": "c00c3811-26fb-4389-9ae3-14578b05a47f",
+      "result_id": "af19cc97-c025-43fd-96c4-e7f1abe25710"
+    },
+    {
+      "claim_id": "5bdfb00a-6a08-41cc-87f1-a1e2f88e3967",
+      "result_id": "5aacec8d-4193-4cee-a21e-e36b11711c40"
+    },
+    {
+      "claim_id": "b7d0ce85-47ca-44fc-9c43-993435763742",
+      "result_id": "5aacec8d-4193-4cee-a21e-e36b11711c40"
+    },
+    {
+      "claim_id": "fc2816eb-9b09-4024-b271-881735438cf9",
+      "result_id": "5aacec8d-4193-4cee-a21e-e36b11711c40"
+    },
+    {
+      "claim_id": "21cc1b32-9990-4281-8933-e50ea8282bdf",
+      "result_id": "c2a05d43-3cb5-4471-9edf-5d0f69da48cf"
+    },
+    {
+      "claim_id": "693e18b6-0da2-4ea0-a0c6-6f8da7335f78",
+      "result_id": "c2a05d43-3cb5-4471-9edf-5d0f69da48cf"
+    },
+    {
+      "claim_id": "4f1e7480-0c22-4e83-9321-e4e8b8f932d4",
+      "result_id": "c2a05d43-3cb5-4471-9edf-5d0f69da48cf"
+    },
+    {
+      "claim_id": "edb24aae-3b1a-42d1-a2bd-efa98c3b3569",
+      "result_id": "c2a05d43-3cb5-4471-9edf-5d0f69da48cf"
+    },
+    {
+      "claim_id": "fc51258f-14b4-444e-a631-8918c89c3e1b",
+      "result_id": "c2a05d43-3cb5-4471-9edf-5d0f69da48cf"
+    },
+    {
+      "claim_id": "8efe35e0-ad58-4ff6-8fdb-ef8381723a04",
+      "result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9"
+    },
+    {
+      "claim_id": "c67b7933-37be-42d1-9adf-79d81ea9fb38",
+      "result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9"
+    },
+    {
+      "claim_id": "08cf89d4-6bfa-4e15-a11a-01f691a5118d",
+      "result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9"
+    },
+    {
+      "claim_id": "9feb568b-91e5-4ead-baaa-b796e8c7e78f",
+      "result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9"
+    },
+    {
+      "claim_id": "ccf2dfa8-7d4c-49b6-8887-63541e3cef69",
+      "result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9"
+    },
+    {
+      "claim_id": "f2be31d9-b14c-4a09-8cef-25633baf9553",
+      "result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9"
+    },
+    {
+      "claim_id": "9f74ffcc-679f-457d-a5f6-2666494267af",
+      "result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9"
+    },
+    {
+      "claim_id": "817792c1-bfb5-4112-9cff-56377fe99e86",
+      "result_id": "50266f4d-67f0-4af9-ad64-70872afffdc7"
+    },
+    {
+      "claim_id": "b63b9a1e-e491-4a71-8859-d4e129d7d657",
+      "result_id": "50266f4d-67f0-4af9-ad64-70872afffdc7"
+    },
+    {
+      "claim_id": "08848631-67d7-49fc-8883-ccfbb991c941",
+      "result_id": "50266f4d-67f0-4af9-ad64-70872afffdc7"
+    },
+    {
+      "claim_id": "db307906-1401-40e6-a076-5118b0720d99",
+      "result_id": "50266f4d-67f0-4af9-ad64-70872afffdc7"
+    },
+    {
+      "claim_id": "ae7d99c2-cfce-4de1-a552-91ec8ff6027f",
+      "result_id": "c01393c5-eedc-42e7-a88e-5b8af14bf7dc"
+    },
+    {
+      "claim_id": "bfe44b22-6252-4a03-9f99-ab150f1e410a",
+      "result_id": "c01393c5-eedc-42e7-a88e-5b8af14bf7dc"
+    },
+    {
+      "claim_id": "13a2b5ab-c5cd-47a1-b5cf-b9d63306ab9c",
+      "result_id": "c01393c5-eedc-42e7-a88e-5b8af14bf7dc"
+    },
+    {
+      "claim_id": "4a2d6f6b-77d2-4a65-9f85-d7527be32786",
+      "result_id": "c01393c5-eedc-42e7-a88e-5b8af14bf7dc"
+    },
+    {
+      "claim_id": "150f2a99-ff12-43d8-b6cf-1087847d9d05",
+      "result_id": "b25b3991-9ec1-49fa-a382-fff8ffae2f3c"
+    },
+    {
+      "claim_id": "68042ce9-0e7e-4546-8518-7abaa27d67e9",
+      "result_id": "b25b3991-9ec1-49fa-a382-fff8ffae2f3c"
+    },
+    {
+      "claim_id": "fb319927-0230-4fa8-b9de-7c9769d6b833",
+      "result_id": "b25b3991-9ec1-49fa-a382-fff8ffae2f3c"
+    },
+    {
+      "claim_id": "ab902d80-3ded-4a5b-8980-b3e7675d607e",
+      "result_id": "b25b3991-9ec1-49fa-a382-fff8ffae2f3c"
+    },
+    {
+      "claim_id": "e7be685e-eeb3-4cc3-97d0-be2b4cc96502",
+      "result_id": "b25b3991-9ec1-49fa-a382-fff8ffae2f3c"
+    },
+    {
+      "claim_id": "adcefbf1-b4e1-4923-93b2-cad594aad7d6",
+      "result_id": "42a4bd87-3161-4b39-96a9-94b136c80f95"
+    },
+    {
+      "claim_id": "3254dcb9-7bc5-428d-9da4-03b9618e3746",
+      "result_id": "42a4bd87-3161-4b39-96a9-94b136c80f95"
+    },
+    {
+      "claim_id": "fdb09749-6f7c-4cc2-820c-c17b27063cfb",
+      "result_id": "9c339258-71d2-4a88-b9ab-1d6f697a5564"
+    },
+    {
+      "claim_id": "1deb0029-5469-498f-a9af-01ed5a835150",
+      "result_id": "9c339258-71d2-4a88-b9ab-1d6f697a5564"
+    },
+    {
+      "claim_id": "136f774a-b417-4fc0-a9a6-a7547f104c4d",
+      "result_id": "9c339258-71d2-4a88-b9ab-1d6f697a5564"
+    },
+    {
+      "claim_id": "08cd841f-1656-4202-89c5-b6a2c905a7d8",
+      "result_id": "9c339258-71d2-4a88-b9ab-1d6f697a5564"
+    },
+    {
+      "claim_id": "bbe1cdc4-a373-456a-b803-280bddba9ff8",
+      "result_id": "f44867f8-e4cf-4331-b520-7f325ca372e8"
+    },
+    {
+      "claim_id": "06c9b65a-3ebc-4d9c-8132-d2c14b935458",
+      "result_id": "f44867f8-e4cf-4331-b520-7f325ca372e8"
+    },
+    {
+      "claim_id": "2678d394-3790-4bbb-8f7a-4e2044160a9c",
+      "result_id": "f44867f8-e4cf-4331-b520-7f325ca372e8"
+    },
+    {
+      "claim_id": "9608eb0b-96e5-4c9a-bfb7-a58cf7233661",
+      "result_id": "f44867f8-e4cf-4331-b520-7f325ca372e8"
+    },
+    {
+      "claim_id": "3b9d20bf-d154-4808-9ed1-1a42d134b636",
+      "result_id": "f44867f8-e4cf-4331-b520-7f325ca372e8"
+    },
+    {
+      "claim_id": "f36e9a58-0d54-430e-ab80-1b11747d08c7",
+      "result_id": "8146c9ed-a2e9-4003-84fb-e2ba5cc3bbc6"
+    },
+    {
+      "claim_id": "48e9a7d2-f761-423e-aebf-06078c764d0c",
+      "result_id": "8146c9ed-a2e9-4003-84fb-e2ba5cc3bbc6"
+    },
+    {
+      "claim_id": "17a8a07a-fa00-41ab-9208-aec811d759a5",
+      "result_id": "8146c9ed-a2e9-4003-84fb-e2ba5cc3bbc6"
+    },
+    {
+      "claim_id": "1d722f92-5aa6-472e-a7c5-1c49bcdb377b",
+      "result_id": "8146c9ed-a2e9-4003-84fb-e2ba5cc3bbc6"
+    },
+    {
+      "claim_id": "c3e955f3-fb5a-4e2a-83cd-160e0370d092",
+      "result_id": "eb567fae-08a2-4d6a-a29e-6ba94a6d67d1"
+    },
+    {
+      "claim_id": "1495a30c-1ea4-4020-9d6c-abc83a65ef62",
+      "result_id": "eb567fae-08a2-4d6a-a29e-6ba94a6d67d1"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "657c57ad-fb70-4db6-8b93-e8dd2276f156",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "29f3b151-8b41-421e-80c1-bbc2be9f6f1b",
+      "peer_result_id": "c2a05d43-3cb5-4471-9edf-5d0f69da48cf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C13-C17 regarding species-specific salt preferences. Both evaluations find the behavioral chemotaxis data well-supported and accept the findings without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "10b4e57f-fb88-43ad-9a8b-f9265eef1d4b",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "4a5a4b6f-a508-494f-86f6-24f4be46e4c4",
+      "peer_result_id": "c01393c5-eedc-42e7-a88e-5b8af14bf7dc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C24-C27 regarding che-1 mutant and silencing phenotypes. Both accept the behavioral data demonstrating ASE function in salt chemotaxis, though OpenEval notes the unexplained discrepancy between mutant and silencing results for NH4I.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "11b3b03b-18ca-44cc-ae75-08e268bdd905",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "078f914a-79d0-410d-9742-1d42328f74c4",
+      "peer_result_id": "42a4bd87-3161-4b39-96a9-94b136c80f95",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on claims C42-C43 but with different perspectives. OpenEval rates as UNCERTAIN due to the puzzling disconnect between calcium imaging defects and behavioral phenotypes in gcy-22.3 mutants. Peer reviewers accept the finding as SUPPORTED, treating it as evidence of redundancy/compensation without expressing concern about the contradiction.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "2a5883b2-ae97-4246-bb46-39a6c6da2554",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "8ef1a0eb-f456-4f8b-b942-3c2277ef7441",
+      "peer_result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C28-C33 regarding ASEL/R functional asymmetry. Both evaluations praise the calcium imaging data showing lateralized responses. Peer review also includes C3 (not in OpenEval R4) and explicitly highlights the convincing evidence for lateralization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "17e018d2-4d70-4cab-a28e-7da516480557",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "3ac0a75e-977e-4c32-af83-22e659d40db4",
+      "peer_result_id": "f44867f8-e4cf-4331-b520-7f325ca372e8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C11, C12, C44, C69 regarding lsy-6-independent asymmetry establishment. Both find the evidence SUPPORTED. Peer review explicitly highlights this as a key contribution showing alternative evolutionary mechanisms, while noting the actual pathway remains uncharacterized.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "f9fa301d-744e-4cfe-abba-b8f2b29e4b49",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "2bd8d143-a258-43ff-a989-cdb087f22596",
+      "peer_result_id": "9c339258-71d2-4a88-b9ab-1d6f697a5564",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C34-C36 regarding AFD biphasic salt responses. Both find the calcium imaging data SUPPORTED. Peer review additionally includes C60 (AFD-ASER connectivity) which OpenEval addresses separately in R12.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "7201618e-fe08-41ef-bf86-dc14b3c89d46",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "22129beb-0f26-47f8-be9e-b8f8a924771d",
+      "peer_result_id": "8146c9ed-a2e9-4003-84fb-e2ba5cc3bbc6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C47-C49 regarding species-specific differences in salt sensing. Both find the comparative analysis SUPPORTED. Peer review also includes C53 (concentration-dependent responses) which OpenEval addresses separately in R11.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "5f3533bf-b98e-4a85-9a31-48668c795523",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "993d8352-2bf1-4898-9004-ae6b9bc51368",
+      "peer_result_id": "50266f4d-67f0-4af9-ad64-70872afffdc7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C18-C20, C68 regarding che-1 expression patterns. Both find the reporter and endogenous tagging data SUPPORTED. OpenEval R2 additionally includes C22-C23 (autoregulation and ttx-1 co-localization) not mentioned in peer review R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "a557f21d-674b-42ea-8ba3-63c8f5784579",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "226b7d7c-0057-4e5d-9d1e-044cd611db0a",
+      "peer_result_id": "b25b3991-9ec1-49fa-a382-fff8ffae2f3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C39-C41 regarding gcy-22.3 mutant calcium imaging phenotypes. Both find the data SUPPORTED. Peer review R5 additionally includes C37-C38 (gcy-22.3 expression) which OpenEval addresses separately in R6.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "6426274a-d818-4d11-9efc-afdb9db87e28",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "3f35afac-f19b-4351-9562-3d7ac14023ab",
+      "peer_result_id": "b25b3991-9ec1-49fa-a382-fff8ffae2f3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on gcy-22.3 characterization. OpenEval R6 focuses on claims C37-C38 (expression and che-1 regulation) rated SUPPORTED. Peer review R5 includes these claims along with C39-C41 (functional data), all rated SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "07b48348-8a08-463d-b155-c7c873fbd117",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ba685511-2577-42ce-b3cf-334ef60a85b5",
+      "peer_result_id": "eb567fae-08a2-4d6a-a29e-6ba94a6d67d1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Disagreement on claim C64 regarding che-1 function. OpenEval rates as UNCERTAIN, questioning whether che-1 truly functions as a terminal selector based on phenotypic discrepancies. Peer review rates as UNCERTAIN but focuses on the uncharacterized downstream pathway rather than questioning che-1's role itself.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "d2091984-470b-4e0e-a8bb-693b82bb91fe",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "5967fb78-b141-4814-a47e-99654e9aab36",
+      "peer_result_id": "eb567fae-08a2-4d6a-a29e-6ba94a6d67d1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claim C71 regarding miRNA pathway conservation. OpenEval rates C71-C73 as UNCERTAIN, noting that speculation about lability requires more data. Peer review R10 addresses C64 and C71 together, rating UNCERTAIN due to uncharacterized mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "0bc83ba0-11f5-4793-842a-def6d9af24eb",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "ca3ac979-2d83-4402-938f-52e65bcd2bad",
+      "peer_result_id": "9c339258-71d2-4a88-b9ab-1d6f697a5564",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C60 regarding AFD-ASER connectivity. OpenEval R12 addresses C50 and C60 as SUPPORTED inferences from calcium imaging and behavioral data. Peer review R7 includes C60 with C34-C36 (AFD responses), all rated SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "2b774ebb-2e18-49a4-b643-f0c6d1467059",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "853f09a0-5dd3-487f-8245-5099da3d6770",
+      "peer_result_id": "8146c9ed-a2e9-4003-84fb-e2ba5cc3bbc6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C53 regarding concentration-dependent responses. OpenEval R11 addresses C53-C55 as SUPPORTED with appropriate caveats about calcium indicator differences. Peer review R9 includes C53 with C47-C49 (species differences), all rated SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "a8d662c2-5788-4e01-bf92-bcd85987c081",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "ea187ed6-30b6-4435-bd7b-bfdad8e60f35",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C67, C66 regarding independent gcy gene duplication events, rating as SUPPORTED based on genomic data. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "8bacac35-4cbc-47fc-99a7-f39e6c7b83ce",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "ccefc5af-584f-4337-b776-893c7ad00635",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C1, C4 regarding conserved amphid neuron structure across nematodes, rating as SUPPORTED based on literature. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "4a995ce2-2153-4d12-9626-260913ad658a",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "261bf284-cdd3-4a62-a02e-c83374c7ea75",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C6-C10 regarding established C. elegans ASE biology, rating as SUPPORTED based on literature. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "219952ea-29f3-443a-846b-01292b221838",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "ab9cd2b7-46db-4ea1-a42a-8de58044db88",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C51-C52 regarding P. pacificus ecology, rating as SUPPORTED based on literature. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "f0ffcff3-3fb8-435d-bf2d-1b605234f266",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "af19cc97-c025-43fd-96c4-e7f1abe25710",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C56-C59 regarding C. elegans AFD function and polymodal processing, rating as SUPPORTED based on literature. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "73b04891-2e9d-4670-92e9-07110463f809",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "5aacec8d-4193-4cee-a21e-e36b11711c40",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C61-C63 regarding C. elegans AFD thermosensory and oxygen-sensing functions, rating as SUPPORTED based on literature. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    },
+    {
+      "id": "6b07532d-ea8d-4758-a306-869e449f0ac2",
+      "submission_id": "6ac9a587-8523-4cb1-8c22-769e26964b6b",
+      "comparison_id": "CMP21",
+      "openeval_result_id": null,
+      "peer_result_id": "6f3e9e11-9361-44ef-b7f9-ca24c2a92dc9",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer review R2 addresses claim C3 (ASE homology) along with calcium imaging claims C28-C33, rating all as SUPPORTED. OpenEval does not have a result specifically addressing C3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T17:11:20.144215Z"
+    }
+  ]
+}

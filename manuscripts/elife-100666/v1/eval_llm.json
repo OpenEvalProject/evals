@@ -1,0 +1,155 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16"
+    ],
+    "result": "The neural covariance spectrum exhibits scale invariance across randomly sampled cell assemblies in larval zebrafish brain-wide calcium imaging, with this pattern holding across diverse datasets and experimental techniques including light-sheet imaging, two-photon imaging, and Neuropixels recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C16 collectively demonstrate scale invariance through experimental data showing eigenspectrum collapse across different sample sizes (Figure 2F) and validation across multiple datasets and recording methods (Figure 2\u2014figure supplement 2E\u2013L). The experimental evidence is robust and reproducible across different systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C26"
+    ],
+    "result": "The observed scale invariance can be explained by an extended Euclidean Random Matrix (ERM) theory that incorporates three key factors: slow neural correlation decay (power-law kernel function), higher functional space dimension, and heterogeneity of neural activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C24, and C26 present a theoretical framework validated through simulations and comparison with experimental data. The ERM model with slow-decaying kernel functions reproduces the experimental eigenspectra (Figure 3C, D), and the three contributing factors are analytically derived and numerically verified (Figure 4A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The scale invariance phenomenon is non-trivial and cannot be explained by several alternative models including independent noise models, random eigenvector models, randomly connected recurrent neural networks, or latent variable models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 systematically rule out alternative explanations through simulations (Figures 2G-I, Appendix 1\u2014figure 6). Each alternative model is tested and shown to fail to reproduce the scale-invariant spectrum observed in data, strengthening the case for the proposed ERM framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Neural activity dimensionality grows with sample size and saturates at a maximum value predicted by the finite mean squared covariance condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is directly supported by experimental data (Figure 2D) matching theoretical predictions from Equation 1. The saturation behavior is consistent with the finite mean squared covariance observed in the data (Figure 2\u2014figure supplement 2A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The covariance matrix consistently shows greater scale invariance (smaller collapse index) than the correlation matrix across all datasets, indicating that heterogeneity of neuronal activity variances significantly affects the eigenspectrum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is quantitatively demonstrated across multiple datasets (Figure 4C, Figure 4\u2014figure supplement 2C) and theoretically explained by the intermediate-density regime of the ERM model (Figure 4\u2014figure supplement 2A, B). The consistent pattern across datasets strengthens this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The scale invariance of the covariance spectrum is robust to variations in spatial distribution of neurons and geometry of the functional space, with these factors having minimal impact on large eigenvalues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are demonstrated through systematic simulations testing different spatial distributions (Gaussian, uniform, clustered) and geometries (flat square, sphere, hemisphere) as shown in Appendix 1\u2014figure 1B, C. This robustness analysis strengthens the generality of the theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Scale invariance persists and is enhanced after removing hunting behavior from the data, with neurons in one cluster dispersing in functional space while maintaining consistent anatomical distribution from midbrain to hindbrain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 demonstrate that scale invariance is not dependent on task-related activity and reveal functional reorganization during hunting. The findings are supported by data analysis with and without hunting frames (Figure 4C, Appendix 1\u2014figure 7) and consistent anatomical patterns across fish (Appendix 1\u2014figure 9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Brain-wide Ca2+ activity was recorded at 10 Hz in head-fixed larval zebrafish using Fourier light-field microscopy, analyzing approximately 2000 ROIs per fish with diameters of 16.84 \u00b1 8.51 \u00b5m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 describe the experimental methodology with specific quantitative details. The methods are well-established (citation to Cong et al., 2017) and the ROI analysis is documented with clear statistics and supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C58"
+    ],
+    "result": "The functional space may represent latent cognitive variables, with slow-decaying correlations potentially arising from long-range connections, and scale invariance potentially supporting efficient multiscale information encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C50, and C58 are explicitly speculative interpretations without direct experimental validation. While these interpretations are plausible and consistent with the findings, they represent hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C56"
+    ],
+    "result": "The brain encodes information using a finite set of dimensions rather than an infinitely complex space, with scale-invariant spectra occurring when the power-law exponent \u03b1 is close to 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C56 are supported by the theoretical analysis showing dimensionality saturation (Equation 1) and the power-law behavior of eigenspectra (Equation 3). The finite dimensionality is directly observed in experimental data (Figure 2D) and contrasts with alternative models like balanced E-I networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C51"
+    ],
+    "result": "Prior work has established that geometric analysis reveals neural representations, dimensionality reduction simplifies neural data, recording capabilities have grown exponentially, and critical brains may optimize information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C7, and C51 accurately summarize established knowledge in the field with appropriate citations. These provide necessary context for the current work and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

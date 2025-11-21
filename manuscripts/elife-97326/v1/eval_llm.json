@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Rats learned an auditory discrimination task over 13 days, with success rates increasing from ~50% to ~90%. The acquisition phase was divided into early (<60%), middle (60-80%), and late (80-100%) stages based on success rate, while response time and omission rate remained stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are well-supported by behavioral data in Figure 1B-F with appropriate statistical analyses (repeated measures ANOVA with post-hoc tests). The learning curve shows clear progression with plateau at Day 13, and the stage divisions are empirically justified by significant differences between time points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "18F-FDG-PET imaging revealed distinct temporal activation patterns in striatal subregions during auditory discrimination learning: aDLS activity peaked at Day 6 (middle stage), pVLS activity peaked at Day 10 (late stage), while DMS activity remained unchanged during acquisition but decreased in the learned phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C29 are supported by quantitative PET data (Figure 2J-L) with statistical validation. The imaging approach is appropriate for measuring regional brain activity, though the authors acknowledge in limitations that PET signals may reflect both neuronal and glial activity. The temporal dissociation between aDLS and pVLS is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Bilateral excitotoxic lesions demonstrated that aDLS and pVLS are necessary for auditory discrimination acquisition (with aDLS effects prominent at middle stage), while DMS lesions did not impair learning but affected response time, indicating a role in action execution rather than learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by lesion data (Figure 3G-I) with appropriate controls (PBS vs IBO groups). The stage-specific impairment in aDLS lesions aligns with PET imaging results. However, the pVLS lesion effects are less temporally specific than claimed (C31 notes 'unclear' period), introducing some uncertainty about precise timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Lesion analysis of behavioral strategies revealed that aDLS promotes stimulus-response (win-shift-win) associations while suppressing response-outcome (lose-shift-lose) associations, whereas pVLS selectively facilitates stimulus-response strategy acquisition without affecting response-outcome associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by behavioral strategy analysis (Figure 3J-K) following lesions. The interpretation relies on prior literature definitions (C35-C36 cite Bergstrom et al., 2018) of what these strategies represent. The data show clear dissociation between aDLS (affecting both strategies) and pVLS (affecting only win-shift-win), supporting distinct functional roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Transient muscimol inactivation confirmed stage-specific functions: aDLS inactivation at middle stage decreased success rate and increased lose-shift-lose strategy, while pVLS inactivation at late stage decreased success rate and win-shift-win strategy, supporting the PET imaging findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by transient inactivation data (Figure 4C-H) with appropriate controls. The stage-specific effects align with PET imaging and lesion results. However, the authors note that aDLS inactivation showed only a 'tendency' to decrease win-shift-win (C46), which is weaker than the chronic lesion effect, suggesting timing or duration of inhibition matters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Multi-unit electrophysiological recordings identified 1062 neurons from aDLS and 423 from pVLS across three learning stages, with 96% and 91% classified as putative medium spiny neurons (MSNs), respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by electrophysiological data (Figure 5\u2014figure supplement 2) with clear classification criteria based on spike width (>0.6 ms for MSNs). The neuron counts and proportions are directly reported from recordings with appropriate spike sorting procedures (Kilosort2, manual curation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "aDLS neurons showed outcome-related activity, with greater firing for correct versus error responses, and this population decreased across learning stages. In contrast, pVLS neurons did not show outcome-related activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by reward sound-related neuron analysis (Figure 5D-F, Figure 5\u2014figure supplement 5). The aDLS data show clear discrimination between correct and error trials with statistical validation, and the proportion analysis demonstrates learning-dependent decrease. The pVLS negative result (C54) is appropriately supported by lack of significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Both aDLS and pVLS contained neurons showing sustained post-reward activity, but with distinct patterns: aDLS neurons were specific to individual stimulus-response combinations (HR or LL) with decreasing activity extent across learning, while pVLS neurons responded to both correct responses with increasing proportions at late stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by first licking-related neuron analysis (Figure 6, Figure 6\u2014figure supplements 1-2). The data show clear differences in selectivity (aDLS: specific to HR or LL; pVLS: both HR and LL) and learning-dependent changes. Statistical analyses support the temporal dynamics, though the authors note in limitations that these changes don't fully explain PET signal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "pVLS neurons encoded the beginning (cue onset) and ending (choice response) of behavior with increasing proportions throughout learning stages, representing the formation of stimulus-response associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by cue onset and choice response neuron analysis (Figure 7A-F, Figure 7\u2014figure supplement 2). The transient activation patterns at behavior boundaries and increasing neuron proportions across stages are consistent with encoding learned behavioral sequences. The interpretation aligns with prior literature on striatal encoding of action chunks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Anatomical tracing revealed that aDLS and pVLS receive inputs from distinct cortical, thalamic, and midbrain regions and project to different basal ganglia nuclei, forming segregated cortico-basal ganglia loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by bidirectional tracing data (Figure 8) showing clear spatial segregation of inputs and outputs. The use of CTb as a bidirectional tracer is appropriate, and the results are consistent with prior anatomical studies in rodents (Foster et al., 2021; Hintiryan et al., 2016). The anatomical segregation supports the functional dissociation observed in other experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C9",
+      "C62",
+      "C64"
+    ],
+    "result": "The aDLS and pVLS integrate auditory discrimination learning through spatiotemporally and functionally distinct mechanisms at different stages: aDLS promotes stimulus-response associations while suppressing response-outcome associations primarily at middle stage, while pVLS contributes to forming and maintaining stimulus-response associations at late stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C9, C62, C64 represent the main conclusions synthesizing multiple lines of evidence (PET imaging, lesions, inactivation, electrophysiology). The convergence of results from different methodologies strengthens these conclusions. However, the mechanistic explanation for how aDLS 'suppresses' response-outcome associations (C4) is somewhat speculative\u2014it could be direct suppression or indirect via competition, as the authors acknowledge in Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C32",
+      "C34"
+    ],
+    "result": "The DMS is not necessary for auditory discrimination acquisition but contributes to action execution, particularly response time regulation, contrasting with its proposed role in goal-directed learning in other tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C32, C34 are supported by DMS lesion data (Figure 3I, Figure 3\u2014figure supplement 1C) showing no learning impairment but prolonged response times. This challenges some prior models but is consistent with recent studies cited by authors (Featherstone and McDonald, 2004; Smith et al., 2021). The result is task-specific and may reflect differences between auditory discrimination and instrumental conditioning paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The findings challenge the prior model proposing functional dominance shifts from associative (DMS) to sensorimotor (DLS) striatal subregions during procedural learning, instead revealing parallel processing through distinct lateral striatal circuits (aDLS and pVLS) at different learning stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by the collective evidence showing aDLS and pVLS engagement without DMS involvement in learning (C14-C18 provide the prior model context). However, this conclusion is specific to auditory discrimination and may not generalize to all procedural learning tasks. The authors appropriately note this represents a 'remarkable difference' rather than complete refutation of prior models, which were based on different behavioral paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C26"
+    ],
+    "result": "Background knowledge establishes that striatal subregions form functionally heterogeneous cortico-basal ganglia loops that mediate procedural learning through parallel processing, and that 18F-FDG-PET measures brain activity via glucose metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10-C13, C26 represent established background knowledge supported by appropriate citations to prior literature. These provide the conceptual framework for the study. The 18F-FDG-PET methodology (C26) is well-established in the field with proper citations (Cui et al., 2015; Kornblum et al., 2000).",
+    "result_type": "MINOR"
+  }
+]

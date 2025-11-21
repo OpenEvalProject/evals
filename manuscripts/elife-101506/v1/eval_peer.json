@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Machine learning models can predict a neuron's anatomical location across multiple brain regions and structures based solely on spiking activity. This prediction is reliable across various stimulus conditions (drifting gratings, naturalistic movies, spontaneous activity) and generalizes across animals and research laboratories, suggesting a fundamental principle of neural organization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers acknowledge the core finding. Reviewer 1 states the paper 'provides a useful systematic quantification of the relationship between electrophysiological response properties of single neurons with their position in the brain' with 'high quality' methodology. Reviewer 2 notes the paper 'uncovers that, at the single neuron level, the firing pattern of a neuron carries some information on the neuron's anatomical location.' Reviewer 3 confirms 'the machine learning is reasonable, and the authors demonstrate that a nonlinear population based classifier can pull out reasonable information about the brain area and layer.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Unsupervised dimensionality reduction methods (PCA, clustering) showed low adjusted rand index (ARI) values and failed to reveal prominent clustering organization aligned with brain structures or regions. Supervised LDA showed greater alignment, suggesting the potential of supervised analyses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these preliminary negative findings from unsupervised methods. The claims serve as motivation for the supervised classification approach that follows, which all reviewers accept as the main contribution. No reviewer questions the dimensionality reduction results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Individual spiking metrics (14 features) supported weak but above-chance classification for brain regions, hippocampal structures, and thalamic structures, but performed notably poorly for visuocortical structures. The arrangement of metrics was highly task-dependent, and combining all 14 metrics substantially increased balanced accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as part of the systematic analysis. Reviewer 3 notes 'the authors walk the reader through various analyses starting as simply as PCA, then finally showing a MLP trained on ISI distributions and PSTHs performs modestly well.' The progression from simple to complex features is treated as methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MLPs trained on ISI distributions and concatenated PSTHs outperformed logistic regression models across all classification tasks. Brain region classification was most effective with ISI distributions (65.29% balanced accuracy), while structure-level discrimination was greatest with concatenated PSTHs. Visual cortical structures showed the most robust embedding when using visual stimulus information (38.35% balanced accuracy).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these comparative results. Reviewer 1 notes 'the quality of the classification setup is high.' Reviewer 3 states 'a MLP trained on ISI distributions and PSTHs performs modestly well in decoding brain area. The key is ISI distributions work well in inductive settings for generalizing from one mouse to the other.' The modest performance levels are acknowledged but not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Sensitivity for brain region classification increased with input data duration, with positive slopes even at 1800s. Feature importance analysis revealed that certain ISI time windows were more important than others, varying by brain region (e.g., fast ISIs <150ms for midbrain, 200-600ms ISIs for visual cortex), with statistically significant differences in ISI distribution statistics across regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these detailed analyses of temporal features and their region-specific importance. These findings support the main claim that anatomical information is embedded in spike timing patterns. No reviewer raises concerns about the feature importance methodology or interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Information about visuocortical structures was embedded in responses to multiple stimulus variants, though some stimuli carried more predictive value than others. Similar improvements with concatenated PSTHs were observed for hippocampal and thalamic structures despite PSTHs being defined by visual stimuli.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these stimulus-related findings. The observation that visual stimulus-defined features help classify non-visual structures is noted but not challenged. This supports the broader claim about anatomical embedding in spike patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Inductive models (trained on one set of animals, tested on others) performed significantly above chance in 7/8 conditions and were statistically indistinguishable from transductive models for ISI-based tasks. For concatenated PSTH tasks, inductive models showed significantly lower accuracy than transductive models, suggesting ISI distribution-based anatomical information is general across animals while stimulus-dependent representations are more animal-specific.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly highlights this as a key finding: 'The key is ISI distributions work well in inductive settings for generalizing from one mouse to the other.' Reviewer 2 notes the paper demonstrates 'the firing pattern of a neuron carries some information on the neuron's anatomical location,' implicitly accepting the generalization results. The distinction between ISI and PSTH generalization is not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Spatial smoothing (consensus-based correction using neighboring neurons) dramatically increased balanced accuracy across all four tasks (e.g., brain regions: 65.10% to 89.47%; hippocampus: 35.89% to 51.01%; thalamus: 32.79% to 53.21%; visuocortex: 25.52% to 38.48%), suggesting erroneously labeled neurons do not share anatomically relevant spike patterns with nearby cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the smoothing results or their interpretation. This methodological improvement is accepted as part of the systematic analysis. The substantial performance gains support the claim that anatomical information is locally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "A hierarchical inductive model achieved 46.91\u00b11.90% balanced accuracy across all 19 labels (18 structures and midbrain), with only 5 out of 250 possible cross-regional errors occurring above chance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as part of the comprehensive classification analysis. The hierarchical approach and its performance are not challenged. This demonstrates the method's ability to handle complex multi-level anatomical classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Within visual isocortex, anatomical embedding is robust at the level of layers and primary (VISp) versus secondary areas, but does not robustly separate individual secondary structures. Binary classification of VISp vs. VISs achieved 79.98\u00b13.03% balanced accuracy (VISs: 96% sensitivity), and collapsing secondary regions yielded 91.02\u00b10.95% accuracy, suggesting computational differentiability is at the level of VISp versus secondary areas.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 expresses concern about this finding: 'given that ISIs cannot separate between visual areas, why is the statement that these are conserved. I still find it somewhat underwhelming that the thalamus, hippocampus, and visual cortex have different ISI distributions.' The reviewer questions whether the inability to separate visual areas undermines claims about conservation of anatomical signatures. However, the authors' interpretation that this reflects genuine neurobiological features is speculative (C100) and not strongly supported by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Structures within hippocampus and thalamus are robustly separable based on spike patterns. Visuocortical layers were robustly recoverable, with transductive and inductive models achieving similar accuracies for ISI-based classification. Layer information was more robust in ISI distributions than concatenated PSTHs, though Layer IV showed greatest confusion (28% sensitivity).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings about hippocampal, thalamic, and layer classification. Reviewer 3 notes the paper shows 'ISI distributions can modestly predict brain area and layer.' The contrast between successful layer classification and poor visual area separation is acknowledged but not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "MLPs performed far above chance across almost every task and train/test stimulus condition pairing. Brain region classification showed remarkable generalizability across stimuli (mean MCC=0.90). The only chance-level performance occurred in visuocortical superstructure tasks when trained on drifting gratings and tested on spontaneous activity or naturalistic movies. Within-stimulus models produced significantly greater MCCs than across-stimulus models, though all were above chance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the cross-stimulus generalization results. Reviewer 2 notes 'the firing pattern of a neuron carries some information on the neuron's anatomical location,' which is consistent with cross-stimulus robustness. The specific failure modes (visuocortical with drifting gratings) are not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Models trained on Allen Institute data successfully predicted brain regions above chance in 9/10 Steinmetz et al. animals (drifting gratings: 80.46%; combined stimuli: 81.28%). At the structure level, combined stimuli models were generally more effective than drifting gratings models. Visuocortical structures did not transfer effectively between laboratories (28.41-28.34%), but hippocampal and thalamic structures and visuocortical layers were identifiable well above chance, especially with mixed models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the cross-laboratory generalization as evidence for the robustness of anatomical signatures. Reviewer 2 acknowledges 'the paper uncovers that, at the single neuron level, the firing pattern of a neuron carries some information on the neuron's anatomical location,' which is demonstrated by cross-lab transfer. The failure of visuocortical structure transfer is consistent with earlier findings and not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ISI distributions encapsulate intrinsic properties of neuronal firing patterns that appear conserved across animals, potentially reflecting stable, anatomy-specific computational features. These might include cell types and ion channel compositions, local circuit motifs, or homeostatic mechanisms that shape firing statistics independent of stimuli.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises a fundamental concern about interpretation: 'it is not clear whether the observed differences in firing is epiphenomenal' and questions 'the inability to dissect whether the paper's findings point to a mechanism utilized by neurons or merely represent an epiphenomenon.' Reviewer 3 also questions the conservation claim given the failure to separate visual areas. The mechanistic interpretations (C91-C93) are speculative and reviewers express uncertainty about functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "The murky distinction between primary and secondary visual areas in mice is reflected in the classification data, with the most reliable discrimination occurring between VISp and grouped secondary areas. This suggests laminar organization may play a more fundamental role in shaping neuronal computations than areal boundaries in mouse visual cortex, and that computational properties of neurons in different visual areas may be largely indistinguishable based on spike timing alone.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 questions this interpretation: 'given that ISIs cannot separate between visual areas, why is the statement that these are conserved.' The claim that this reflects 'genuine neurobiological features' (C100) is speculative. While reviewers accept the empirical finding of poor visual area separation, they express skepticism about whether this represents a fundamental principle versus a limitation of the approach.",
+    "result_type": "MAJOR"
+  }
+]

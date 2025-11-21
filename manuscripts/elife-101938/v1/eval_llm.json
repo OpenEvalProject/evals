@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study collected 207 clinical isolates from Japan, of which 150 were emm89 strains. Combined with 161 previously sequenced strains, the Japanese cohort consisted of 311 emm89 strains (135 severe invasive, 176 non-invasive). A global cohort of 666 emm89 strains was also assembled from public databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C33-C35 describe the cohort construction methodology and sample sizes. The numbers are consistently reported across abstract and results sections, with supporting data in Figure 1A showing emm type distribution. The methodology for strain collection and phenotype classification is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Pan-genome analysis revealed 1417 core genes (of 3334 total) in the Japanese cohort and 1327 core genes (of 4743 total) in the global cohort. Phylogenetic analysis identified four clusters (A, B1, B2, B3), with cluster B3 containing 640 strains predominantly from Europe, North America, and Japan. MLST analysis showed ST101 (522 strains, 80.9%) and ST646 (96 strains, 14.8%) as dominant types in cluster B3, with ST646 being Japan-specific and differing from ST101 by only one nucleotide in murI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 describe pan-genome and phylogenetic analyses with specific numerical results shown in Figures 1B and 1C. The core gene counts, cluster assignments, and MLST distributions are clearly documented. The Japan-specific nature of ST646 is supported by both phylogenetic data and database searches (C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SNP/indel-based pan-GWAS of the Japanese cohort detected 17 significant SNPs/indels in 13 core genes from 24,627 total variants. These included 7 single-nucleotide deletions, 7 non-synonymous SNPs, and 3 synonymous SNPs. Four SNDs in covS showed the lowest p-values (p=1.16\u00d710\u207b\u2077 and p=1.15\u00d710\u207b\u2076) and were associated with severe invasive infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45-C50 report GWAS results for the Japanese cohort shown in Figure 2A. The statistical methodology is described with appropriate population structure correction (7 principal components). The significance threshold was determined by permutation testing (p=5.75\u00d710\u207b\u2074). The covS deletions are well-documented and consistent with prior literature on emm1 strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SNP/indel-based pan-GWAS of the global cohort detected 1075 significant SNPs/indels in 360 core genes from 47,060 total variants. The most significant SNP was in lacE (p=1.35\u00d710\u207b\u00b9\u2074), associated with invasiveness primarily in US strains. Ten SNPs/indels overlapped with the Japanese cohort, including 4 covS deletions, while 6 loci (gatA, group_1102, group_647, iscS_1, recU, fhuB) were Japan-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C51-C58 describe global cohort GWAS results shown in Figures 2B-C. The statistical approach mirrors the Japanese analysis with 3 principal components for population correction. The identification of both shared (covS) and region-specific (fhuB) variants is well-documented in the distribution heatmap (Figure 2C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Gene-based pan-GWAS identified 2 significant genes in the Japanese cohort (group_184 encoding hypothetical protein, divIC encoding septum formation protein) and 169 genes in the global cohort. Approximately 90% (152/169) of global significant genes were associated with non-invasiveness, including 37 phage-related and 11 MGE-related genes. The most significant gene was group_829 (transposase) associated with invasiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C59-C63 report gene presence/absence GWAS results shown in Figure 3. The statistical methodology is consistent with SNP analysis. The predominance of non-invasiveness-associated genes and enrichment for phage/MGE elements is clearly documented. The lack of overlap between Japanese and global significant genes is explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "K-mers-based GWAS detected two regions in the Japanese cohort and five in the global cohort associated with invasiveness. The most significant Japanese region (Comp_11, q=1.49\u00d710\u207b\u00b2) contained an SND and 10 polymorphisms in covS, causing frameshift truncation to 35 amino acids. The most significant global region (Comp_7, q=1.90\u00d710\u207b\u00b2) contained the same covS SND.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 describe k-mer GWAS results shown in Figure 4. The de Bruijn graph approach complements SNP-based analysis by detecting complex variants. The covS frameshift mutations are validated by structural predictions (Figure 5A-B) and consistent with prior literature (C67 cites Cole et al., 2011). The q-value threshold of 0.05 is appropriate for FDR control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "AlphaFold structural predictions showed that the invasive-associated lacE G554V mutation is located in the intracellular EIIB domain of a 9-transmembrane protein. CovS forms homodimers with two transmembrane regions, and frameshift mutations truncate the protein to 35 or 45 amino acids, eliminating the C-terminal kinase domain required for CovR phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe structural predictions for LacE and CovS shown in Figures 5 and Figure 5\u2014supplement 1. The AlphaFold predictions are complemented by SOSUI transmembrane predictions. The functional interpretation of covS truncation is consistent with known CovR/S biology (C73 cites Jain et al., 2020). However, the functional impact of lacE G554V remains speculative without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The non-invasiveness-associated fhuB T218C mutation (V73A) is located in a ferrichrome ABC transporter component. Structural modeling of the FhuBCCDG complex predicted that V73A creates a small surface indentation adjacent to FhuD, potentially affecting the hydrophobic bond stability and ferrichrome transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C76-C81 describe structural analysis of FhuB shown in Figure 5C-E. The AlphaFold multimer prediction (ipTM+pTM=0.791) shows reasonable confidence. The V73A mutation's location and predicted structural impact are documented, though the functional consequences remain speculative (C81 uses 'considered to potentially affect'). Experimental validation follows in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Introduction of fhuB T218C into a severe invasive strain (TK02') resulted in significantly reduced survival in human blood at 2-3 hours (C88). The mutant showed decreased survival with erythrocytes, polymorphonuclear cells, and plasma (C89), but not heat-inactivated plasma (C90), indicating complement susceptibility. RNA-seq revealed differential gene expression in blood versus THY, with upregulation of CovR-regulated virulence genes in both strains, but the mutant showed downregulated mga/emm and upregulated fhuBCD (C82-C86). No difference in intracellular ferric ion concentration was observed (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C82-C92 describe experimental validation of fhuB T218C shown in Figures 6-7. The bactericidal assays show statistically significant differences (Mann-Whitney test with Benjamini-Hochberg correction) at multiple time points across different blood components. RNA-seq analysis with appropriate replication (n=3) shows transcriptional changes. The complement susceptibility inference (C91) is well-supported by the heat-inactivation experiment. However, the mechanism linking V73A to reduced survival remains incompletely explained, as ferric ion levels were unchanged (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "CovR/S mutations are known to promote virulence in emm1 S. pyogenes by upregulating multiple virulence factors (DNase, capsule, NADase, SLO, SpeA) and downregulating SpeB and SLS. In Japan, 46.3% of severe invasive strains carry covR/S nonsense mutations versus 1.69% of non-severe strains. However, covR/S mutations do not account for all invasive strains, indicating additional mechanisms exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32, C94-C96 summarize prior literature on CovR/S with appropriate citations (Walker et al., 2007; Sumby et al., 2006; Ikebe et al., 2010; Cole et al., 2011). The epidemiological data (C30-C31) provides clear rationale for seeking additional invasiveness mechanisms. The current study confirms covS mutations in emm89 (C95) and extends understanding to additional factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "emm89 clade 3 carries the same nga promoter pattern as emm1 strains, conferring high nga/slo expression. RNA-seq showed a severe invasive Japanese strain without covS mutations upregulated speB, nga, slo, and sag operon genes in blood. This suggests multiple gene expression profiles contribute to invasiveness beyond covR/S mutations, with synergy between blood survival optimization and virulence factor upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 integrate prior knowledge (C97 cites Turner et al., 2015; Zhu et al., 2015a) with current RNA-seq data (C98, Figure 6C). The observation that SpeB/SLS can act as virulence factors (C99-C100) despite being downregulated by covR/S mutations is well-cited. The synthesis (C101-C102) is a reasonable interpretation of the combined data, though the 'synergy' claim is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Two potential mechanisms for fhuB mutation effects are proposed: (1) increased susceptibility to free radicals generated by Fenton/Haber-Weiss reactions in erythrocytes, analogous to pneumococcal growth inhibition; (2) altered transcriptional profiles reducing blood survival fitness, including lower emm expression leading to attenuated immune evasion through reduced C4b/C3b inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C108 present mechanistic hypotheses in the Discussion. While both mechanisms are plausible and supported by citations (C104: Cimen, 2008; C105: Yamaguchi et al., 2013; C108: Laabei and Ermert, 2019), they remain speculative. The free radical hypothesis (C103) is not directly tested, as ferric ion levels were unchanged (C87). The transcriptional hypothesis (C106-C107) is better supported by RNA-seq data showing emm downregulation (C84), but causality is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The FhuBCCDG complex may be a promising vaccine target, as antibodies against FhuD (FtsB) reduce bacterial burden and abscess formation in murine emm1 infection models, and FhuD has been studied as a vaccine candidate against S. aureus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C111 propose vaccine potential based on prior work (C109: He et al., 2022; C110: Nguyen and G\u00f6tz, 2016). While the citations support FhuD as a vaccine candidate in other contexts, the extrapolation to emm89 S. pyogenes (C111) is speculative. No vaccine experiments were performed in this study, and the current work actually shows fhuB mutation reduces invasiveness, which doesn't directly support vaccine targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Gene-based pan-GWAS found no significant association between known virulence factor genes and invasiveness, suggesting invasive infections result from gene expression changes rather than virulence factor acquisition. The 169 significant genes in the global cohort included 37 phage-related and 11 MGE-related genes, with 90% associated with non-invasiveness. A cluster of 49 non-invasiveness-associated genes included antibiotic resistance genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 describe gene-based GWAS results and their interpretation. The lack of virulence factor associations (C112) is clearly stated and supports the gene expression hypothesis (C113). The enrichment for phage/MGE genes (C114-C118) is documented in Figure 3 and Figure 3\u2014supplement 1. The correlation analysis identifying gene clusters (C119) is shown in the supplementary figure. The interpretation that non-invasiveness associations may reflect fitness cost is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "ST101 was the dominant MLST type (522/666 strains, 78.4%) in the global cohort. ST646 was the second most prevalent in Japan (96 strains) but not detected elsewhere, differing from ST101 by only one nucleotide in murI. Database searches confirmed all ST646 strains are emm89 and Japan-specific. ST646 increased after 2012 while ST101 was dominant until 2008, suggesting ST646 is a relatively new Japan-specific lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 describe MLST analysis shown in Figure 1C and Figure 1\u2014supplement 1. The ST646 Japan-specificity is supported by phylogenetic data, database searches (C123 cites Jolley et al., 2018), and prior literature (C125 cites Ubukata et al., 2020). The close relationship between ST101 and ST646 (C122) and temporal dynamics (C125) support the interpretation of ST646 as a recent Japan-specific emergence (C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "S. pyogenes causes diseases ranging from mild pharyngitis to life-threatening invasive infections. Invasive infections are increasing globally (>0.6 million in 2005), with STSS mortality of 23-81% despite treatment. No commercial vaccine exists. emm89 strains have increased since the mid-2000s, becoming a dominant invasive lineage. emm89 strains cluster into three clades based on nga promoter and hasABC presence, with clade 3 showing NADase/SLO overexpression and capsule loss, but no difference in invasiveness frequency between clades in Japan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C26 provide background context with appropriate citations. The epidemiological data (C12-C14, C19-C22) establishes disease burden and emm89 emergence. The clade classification (C23-C25) and lack of clade-invasiveness association in Japan (C26) provide rationale for the current study. All claims are well-supported by cited literature, though C2's statement that 'only half' of invasive infections are explained by known mutations is somewhat imprecise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "By focusing on bacteria within closed phylogenies (single emm type), false positives caused by confounding lineage effects were minimized, contributing to higher pan-GWAS accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 describes a key methodological strength. Restricting analysis to emm89 strains reduces population stratification compared to multi-emm type studies. The use of genetic distance matrices and principal components (7 for Japan, 3 for global) as covariates further controls for residual population structure. This approach is well-justified and represents good GWAS practice.",
+    "result_type": "MINOR"
+  }
+]

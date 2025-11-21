@@ -1,0 +1,479 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C32"
+    ],
+    "result": "The authors developed a normative neural network model for spatial navigation that formalizes the concept of a cognitive map and uses a novel non-trainable decoding scheme to estimate position directly from learned representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C32 describe the core methodological innovation of the work. The model architecture, decoding scheme, and mathematical formalization are clearly presented with equations and figures (Figure 1). The approach is well-documented in the Methods section with sufficient detail for reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C40",
+      "C49",
+      "C50",
+      "C52",
+      "C80"
+    ],
+    "result": "The trained network learns place-like representations in output units and boundary-tuned representations in recurrent units, with border representations forming the main basis for place cell formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C40, C49-C50, C52, and C80 are supported by visual evidence in Figures 2c-d showing ratemaps that resemble biological place and border cells. The characterization of place fields as unimodal, isotropic, and Gaussian-like is based on visual inspection. While qualitative, the resemblance to biological cells is clear and the finding aligns with prior theory (C40 cites Barry et al., 2006).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C55",
+      "C56",
+      "C57",
+      "C63",
+      "C64",
+      "C65",
+      "C81"
+    ],
+    "result": "The model's place-like units exhibit global remapping between different environments, with spatial correlations across environments matching shuffled distributions while correlations within the same environment remain high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C55-C57, C63-C65, and C81 are supported by multiple quantitative analyses in Figure 3. The spatial correlation analysis (C63-C64, Figure 3b) provides statistical evidence that representations are uncorrelated across environments but correlated within environments. Visual inspection of ratemaps (Figure 3a) shows marked shifts in firing locations. The comparison to shuffled distributions provides appropriate statistical controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C45",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C82",
+      "C152"
+    ],
+    "result": "Remapping in place-like output units is supported by rate changes in upstream boundary-tuned recurrent units, which primarily remap through rate modulation rather than changes in preferred firing location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C45, C58-C62, C82, and C152 describe the mechanistic basis of remapping. The finding is supported by visual inspection of ratemaps (Figure 3a) and rate overlap/difference analyses (Figures 3c-d). The interpretation that recurrent units rate remap while maintaining spatial tuning is consistent with the data, though the mechanistic link between recurrent rate changes and output remapping is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C41",
+      "C137",
+      "C170",
+      "C184"
+    ],
+    "result": "The model does not learn grid-like representations despite successfully performing path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C41, C137, C170, and C184 state the absence of grid cells in the model. This is supported by visual inspection of ratemaps (Figures 2d, Appendix figures) showing no hexagonal periodic firing patterns. The model's ability to path integrate is demonstrated by stable decoding errors (Figure 2a, C47-C48) and successful trajectory reconstruction (Figure 2b). The absence of grid cells is a negative result but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C43",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Place unit centers form clusters organized in a hexagonal lattice in open fields, with distortions in non-symmetric environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C43, C131-C134 describe the hexagonal arrangement of place field centers. This is supported by visual evidence in Figure 7a showing decoded center locations across multiple trajectories. The hexagonal pattern is especially clear in square and large square environments, with documented elongation in rectangular environments. The finding is based on visual inspection of spatial distributions rather than quantitative metrics of hexagonality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C150",
+      "C194"
+    ],
+    "result": "Analysis of CA1 place fields in mice provides preliminary evidence of clustering and possible hexagonal arrangement similar to the model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15, C144-C148, C150, and C194 describe analysis of experimental mouse data. Figure 7e-f shows clustering near boundaries and Ripley's H analysis indicating non-uniform clustering. However, the authors explicitly state this is 'preliminary evidence' (C150) and note that most animals did not show pronounced spatial arrangement (C149). The sample size appears limited (one example animal shown), and the hexagonal pattern is less clear than in the model. The statistical significance is marginal (outside 2 standard deviations at specific scales).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The model reproduces geometric remapping behaviors including field elongation, field completion, and field doubling in response to environmental manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C95 describe responses to geometric manipulations shown in Figure 4. Field elongation (C83-C84) and field completion (C87) are clearly visible in ratemaps. Field doubling (C90) is observed in some units during uniform expansion. The comparison to biological observations (C85 cites O'Keefe and Burgess, 1996) strengthens the validation. The findings are primarily based on visual inspection of ratemaps rather than quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Rate overlap and rate difference analyses show that units are active in only one environment (bimodal distribution) when comparing across contexts, but show small symmetric changes when revisiting the same environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 describe rate overlap and difference analyses shown in Figures 3c-d. The bimodal distribution of rate differences between environments (C72) and zero-centered distribution within environments (C69) are clearly visible. The comparison to shuffled distributions provides appropriate controls. The interpretation that many units are active in only one environment (C73) follows logically from the bimodal distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Ratemap population vector correlations show sharp transitions between environments with uncorrelated population vectors across contexts but high correlations within environments after a time delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 describe population vector correlation analysis shown in Figure 3e. The sharp drop-off at environment transitions (C76) and high within-environment correlations (C78) are clearly visible. The time delay before maximum correlation (C79) is evident in the figure. This analysis provides population-level evidence complementing the single-unit analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The network exhibits attractor-like dynamics, showing robustness to noise injection with states recovering to highly correlated configurations, with recovery time proportional to noise magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 describe noise injection experiments shown in Figure 5. The temporary decrease in correlations followed by recovery (C99-C100) and proportional recovery time (C101) are clearly visible in the correlation matrices. The interpretation of attractor dynamics (C103-C104) is reasonable given the data, though the term 'approximate attractor' (C103) appropriately acknowledges uncertainty about the precise dynamical characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Low-dimensional projections of network states capture the shape of traversed environments, with recurrent states forming environment-specific manifolds and output states forming intersecting hyperplanes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 describe dimensionality reduction results shown in Figure 6a. The UMAP projections clearly show environment-specific structure in recurrent states and intersecting hyperplanes in output states. The visual correspondence between projection structure and environment geometry is striking. However, the interpretation relies heavily on visual inspection of low-dimensional projections, which can be sensitive to hyperparameter choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "PCA reveals that recurrent states within an environment are low-dimensional (4 components explain >90% variance) while output states require more components, with multi-environment representations requiring many more components for both layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 describe PCA results shown in Figures 6b-c. The quantitative findings about explained variance are clearly presented. The interpretation that multi-environment representations can be factorized (C114) and that output units are more distributed (C117-C118) follows logically from the data. The analysis provides insight into the representational structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The recurrent weight matrix has eigenvalues with above-unit magnitude suggesting potential instability, yet the network exhibits stable performance, possibly due to nonlinearity or attractor dynamics associated with remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 describe eigenvalue analysis shown in Figure 6d. The presence of above-unit eigenvalues (C119) is clearly documented. The apparent contradiction with observed stability (C121-C122) is acknowledged. The proposed explanations (C123-C124) are speculative but reasonable. The analysis raises interesting questions about network dynamics though the mechanistic interpretation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Context weights are predominantly negative and uncorrelated across environments, potentially enabling sparse orthogonal representations through selective inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 describe context weight analysis shown in Figures 6e-f. The predominance of negative weights and low correlations are clearly visible. The mechanistic interpretation (C128) is speculative but provides a plausible explanation for how context signals could drive remapping through differential inhibition. The analysis connects network architecture to observed behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The model achieves a decoding error converging around 0.15 with validation error closely tracking training error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 describe training performance shown in Figure 2a. The convergence value and close tracking of validation error are clearly visible. This demonstrates successful learning without obvious overfitting. The error metric is averaged across environments and time, with more detailed breakdowns in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "A large fraction of units in both output and recurrent layers are silent or display no clear spatial tuning, with approximately half of output units silent in the square arena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe the sparsity of representations. The finding is supported by reference to supplementary figures (Appendix 1-figures 2 and 3) and the specific quantification for the square arena (C54). Sparsity is an important characteristic of the learned representations and relevant to the mechanistic interpretation of remapping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C125"
+    ],
+    "result": "Context signals determine the resulting representation up to geometric deformations, as demonstrated by context mismatch experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105 and C125 describe context mismatch experiments that are referenced but not shown in the main figures ('see Representations are guided by context for details and ratemaps'). Without access to these results, the strength of evidence cannot be fully evaluated. The claim is plausible given the model architecture and other results, but the supporting data is not presented in the reviewed material.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C175",
+      "C176",
+      "C186",
+      "C187"
+    ],
+    "result": "The model raises questions about the necessity of grid cells for path integration and the causal relationship between place cells and grid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C175-C176, and C186-C187 present interpretations of the model's implications. The inference is logical given that the model performs path integration without grid cells (C41, C184). However, these are interpretive claims about what the model suggests rather than direct findings. The authors appropriately frame these as questions raised rather than definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C44",
+      "C138",
+      "C193"
+    ],
+    "result": "Although grid-like cells are not necessary to form place cells, optimal position decoding dictates hexagonal symmetry in place field center arrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C138, and C193 present an interpretation connecting the absence of grid cells to the hexagonal arrangement of place field centers. The inference is logical given the model's optimization objective (position decoding) and the observed hexagonal pattern (C43, C131). However, this is an interpretation rather than a directly tested hypothesis. The claim appropriately uses tentative language ('appears likely', 'may be optimal').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C151",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The model predicts that border-type input is sufficient to explain place cell global remapping through sparse rate-remapping boundary cells, which could be tested experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 present a prediction from the model and acknowledge tension with current experimental evidence (C153). The model finding (C152) is supported by the data. The reconciliation (C154) that only sparse rate-remapping is needed is a reasonable interpretation. The suggestion for future experiments (C155) is appropriate. This represents a testable prediction that could validate or refute the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The model does not reproduce field doubling when walls are inserted, likely due to lack of sensory information, suggesting that adding sensory modalities could uncover additional place cell behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C165 acknowledge a limitation of the model and provide a plausible explanation. The absence of field doubling is stated but not shown ('results not shown'). The explanation (C162) is reasonable given the model's inputs. The suggestion for future work (C163, C165) is appropriate. The citation to Uria et al., 2020 (C164) supports the proposed solution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The model lacks multiple firing fields as seen in biological place cells, potentially due to the single-center decoding operation, suggesting alternative decoding approaches could improve expressivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C169 acknowledge another limitation and provide a mechanistic explanation. The observation that the network shows more fields during expansion (C167) but lacks the reliable multiple fields of biological cells is accurate. The interpretation that the decoding scheme limits expressivity (C168) is plausible. The suggestion for future work (C169) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The model predicts center-surround-like tuning profiles in output units during large circular environment expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 presents a specific testable prediction based on observations in Figure 4d. The center-surround profile is visible in the ratemaps for 3x expansion of the circular environment. This is a concrete, experimentally testable prediction that could validate the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Alternative mechanisms such as gating of boundary signals by contextual input from lateral entorhinal cortex could explain place cell formation and remapping even if border cells do not rate remap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C159 present speculative alternative mechanisms. These are explicitly framed as possibilities ('could be', 'could conceivably') rather than findings. The analogy to Jeffery 2011's gating mechanism (C158) provides theoretical support. However, these are untested hypotheses rather than results from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "The hexagonal place field arrangement suggests a border-to-place-to-grid cell model where boundary cells inform place cell patterns which guide grid cell patterns, potentially explaining grid cell behavior in non-standard environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C196-C204 present a speculative mechanistic model connecting border, place, and grid cells. While the hypothesis is creative and supported by citations to relevant experimental observations (C199, C201, C203), this is primarily theoretical speculation rather than a direct finding from the model. The proposed mechanisms (C200, C204) are untested. The claims are appropriately framed as possibilities ('could', 'suggests') but represent future work rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The difference between recurrent and output state structure may reflect pronounced sparsity in recurrent layers and reuse of output units during remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C111 present speculative interpretations of the dimensionality reduction results. While the observations about sparsity and reuse are supported by other analyses, the causal connection to the observed differences in low-dimensional structure is inferential. The claims appropriately use tentative language ('may reflect', 'could make for').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Place field centers cluster along environment borders, potentially reflecting upstream boundary input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 describe clustering near borders observed in both model (Figure 7b) and experimental data (Figure 7e). The observation is supported by visual evidence and comparison to Harland et al., 2021. The mechanistic interpretation (C140) is speculative but plausible given the model architecture. The finding is consistent across model and biological data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "Single-trajectory decoding does not reveal as pronounced hexagonal arrangement as aggregate decoding over multiple trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 compares Figures 7a and 7b, noting that the hexagonal pattern is clearer when aggregating across trajectories. This is a methodological observation about how the pattern emerges with sampling. The finding suggests that the hexagonal arrangement is a population-level property that requires sufficient sampling to visualize.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Center locations show no apparent pattern of transformation between environments, supporting global-type remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 describe analysis shown in Figures 7c-d. The lack of systematic transformation of center locations between environments is consistent with global remapping where representations are uncorrelated across contexts. This provides additional evidence for global remapping from a different analytical perspective.",
+    "result_type": "MINOR"
+  }
+]

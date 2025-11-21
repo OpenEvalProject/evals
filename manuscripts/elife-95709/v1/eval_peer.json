@@ -1,0 +1,134 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C44",
+      "C45",
+      "C51",
+      "C56",
+      "C57"
+    ],
+    "result": "ADPT demonstrates significantly reduced tracking drift compared to DeepLabCut and SLEAP across single-animal pose estimation tasks in mice and monkeys. The method successfully detected all 16 body parts in mice while existing methods encountered inexplicable tracking drifts, showed lower drift percentages across different individuals and backgrounds, and remained unaffected by the presence of similar objects (humans) that caused drift in other methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledged this as the 'major strength of the paper,' stating ADPT 'successfully demonstrat[es] a model that is less likely to have incorrect large keypoint jumps compared to existing methods.' The editor's assessment confirms 'the efficacy of this new algorithm for single-animal pose estimation was demonstrated through comparisons with two popular algorithms' with 'solid' strength of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C60",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ADPT achieves comparable or improved pose estimation accuracy compared to DeepLabCut and SLEAP across multiple datasets (fly, OMS, mouse), with significantly lower RMSE than SLEAP and performance that matches or exceeds DeepLabCut depending on the metric and body part.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned the characterization of performance differences, noting that when the manuscript claims ADPT 'exceled with an average mAP of 92.83%, surpassing both DeepLabCut and SLEAP,' Figure 5B shows 'ADPT and DeepLabCut look identical' with overlapping uncertainty bars. The reviewer challenges claims of superiority, asking why results are called 'equivalent' when they differ and pointing out inconsistent interpretation of what constitutes meaningful performance differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ADPT achieved 93.16% identification accuracy for 10 unmarked mice in isolation, 90.36% accuracy for freely interacting unmarked mice without post-processing, and 99.72% accuracy after temporal identity correction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised significant concerns about the validation methodology, noting 'a relatively limited dataset of 10 mice IDs with only two in the same arena' and questioning whether 'frames from each video [were] randomly assigned to the training or validation sets,' which would inflate performance estimates. The reviewer states validation performance 'doesn't indicate much about performance on more realistic use cases' if training and validation frames are temporally interspersed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "ADPT achieves robust pose estimation for multi-animal (two mice) scenarios, outperforming DeepLabCut and SLEAP with 15% improvement in pose estimation accuracy and 5-10 times improvement in tracking accuracy on homecage social mice dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly criticized the lack of proper multi-animal validation, stating 'there is no validation of either of these things [pose estimation and anti-drift performance] relating to multi-animal video.' The reviewer notes that 'when one actually watches the key points in the video of the two mice...the pose estimation is relatively poor with tails rarely being detected and many pose issues when the mice get close to each other.' The multi-animal model was 'not compared with the model performance of the multi-animal mode of DeepLabCut or SLEAP.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C6"
+    ],
+    "result": "ADPT exhibits computational efficiency with inference speed of 90\u00b14 fps, making it suitable for real-time analysis with its end-to-end design.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned the validity of the speed comparison, noting the manuscript states images were 'reduced to half of the original size' for training but the speed test claims to use '1288 x 964 resolution.' The reviewer asks 'Were different image sizes used for training and validation? Or Did ADPT not use 1288 x 964 resolution images as input which would obviously have major implications for the speed comparison?' Additionally, the characterization of 90\u00b14 fps as 'equivalent to SLEAP (106\u00b14 fps)' was questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C70",
+      "C71",
+      "C81"
+    ],
+    "result": "Ablation studies demonstrate that the transformer component improved average accuracy by 0.4% and LRSS improved accuracy by 0.2-0.3% on fly datasets, while BAF improved pose estimation accuracy by 0.4 pixels on social mice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These ablation results are presented as quantitative findings without specific reviewer critique. The editor's assessment that 'the strength of evidence is solid' for single-animal pose estimation implicitly supports these architectural validation experiments, though reviewers did not comment on them specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ADPT demonstrates lesser susceptibility to individual animal variations and background factors compared to DeepLabCut and SLEAP, with drift occurrences in DeepLabCut more affected by backgrounds and SLEAP more affected by individual variations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These cross-individual and cross-background robustness findings are part of the single-animal pose estimation results that reviewers acknowledged as demonstrating 'remarkable anti-drift performance, cross-individual and cross-view capabilities.' The editor confirmed the efficacy was 'demonstrated through comparisons with two popular algorithms.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C36",
+      "C37",
+      "C84",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "ADPT's architecture combines CNN and Transformer with skip connections, using ResNet50 backbone for shallow feature extraction and transformer modules for capturing global relationships, generating outputs including confidence heatmaps, location refinement, LRSS, and BAF maps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted methodological clarity issues, stating 'there were a number of places where what was actually done wasn't clear.' Specifically regarding architecture, the reviewer questioned whether 'only the one-eight branch have deconvolution or do the other branches also?' indicating insufficient detail in the architectural description.",
+    "result_type": "MINOR"
+  }
+]

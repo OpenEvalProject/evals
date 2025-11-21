@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C60"
+    ],
+    "result": "Nsp16 is degraded via the ubiquitin-proteasome system (UPS) with a half-life of 2-3 hours. Proteasome inhibitors (MG132, Bortezomib, Carfilzomib) stabilize nsp16, while lysosomal and autophagy inhibitors have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C18-C20, and C60 collectively demonstrate UPS-mediated degradation of nsp16 through multiple complementary approaches: proteasome inhibitor rescue experiments (C16, C18), negative controls with lysosomal inhibitors (C19), and half-life extension experiments (C20). The data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Mass spectrometry analysis identified nsp16-interacting proteins enriched after MG132 treatment, including six E3 ligases (UBR5, MARCHF7, HECTD1, TRIM32, MYCBP2, TRIM21) and proteins involved in viral processes, mRNA stability, and antiviral defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe MS-based identification of nsp16 interactors with appropriate bioinformatics validation (KEGG/GO analysis). The experimental design comparing +/- MG132 treatment is sound for identifying degradation-related interactors. However, MS data quality metrics and statistical thresholds are not provided in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "UBR5 and MARCHF7 independently mediate nsp16 degradation. Knockdown of either ligase stabilizes nsp16, and dual knockdown has additive effects. Only wild-type ligases with intact HECT (UBR5) or RING (MARCHF7) domains degrade nsp16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 demonstrate independent action through genetic epistasis experiments (C24) and domain requirement studies (C25). The use of catalytically inactive mutants provides strong evidence for enzymatic requirement. Statistical significance is shown (Figure 2), and multiple complementary approaches support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C71",
+      "C72"
+    ],
+    "result": "Nsp16 undergoes ubiquitination mediated by UBR5 (K48-linked) and MARCHF7 (K27-linked). Knockdown of either ligase reduces nsp16 ubiquitination, with distinct ubiquitin linkage specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29, C71-C72 demonstrate ubiquitination through Co-IP experiments with and without exogenous ubiquitin (C26), knockdown effects (C27), and linkage-specific ubiquitin mutants (C28-C29). The use of single-lysine ubiquitin mutants (Figure 3E-F) provides strong evidence for linkage specificity, though the claim that nsp16 can be modified by multiple ubiquitin chain types (Figure 3D) suggests complexity beyond just K27 and K48.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "UBR5 and MARCHF7 directly interact with nsp16 independently of each other, colocalizing predominantly in the endoplasmic reticulum (ER) rather than mitochondria or Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 use complementary approaches: Co-IP (C30, C32), FRET (C31), and immunofluorescence with organelle markers (C33-C34). FRET provides strong evidence for direct interaction. The independence of binding is demonstrated by reciprocal knockdown experiments (C32). Colocalization with PDI (ER marker) but not COX5A or GM130 supports ER localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The HECT domain of UBR5 and the N-terminal region (aa 1-542) plus RING domain of MARCHF7 are required for nsp16 degradation and ubiquitination. Domain deletion mutants lose the ability to degrade and ubiquitinate nsp16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 systematically map functional domains using deletion mutants. The HECT domain requirement for UBR5 (C35-C36) is consistent with its known mechanism. For MARCHF7, the N-terminal region mediates binding (C38) while the RING domain is required for ubiquitination (C39). The experimental design appropriately separates binding from catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Knockdown of UBR5 or MARCHF7 significantly increases SARS-CoV-2 replication (IME-BJ01 and Omicron strains) in cell culture, with increased viral mRNA, protein levels, and titers. Endogenous nsp16 interacts with UBR5 and MARCHF7 during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 demonstrate antiviral effects through multiple readouts: viral mRNA (C42), viral titers (C43), and protein levels. The use of two viral strains (IME-BJ01 and Omicron) strengthens the conclusion. Co-IP with endogenous proteins during infection (C41) validates physiological relevance. Statistical significance is shown across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Overexpression of UBR5 or MARCHF7 reduces SARS-CoV-2 replication, but this effect is counteracted by nsp16 overexpression. Catalytically inactive mutants fail to suppress viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate gain-of-function effects with appropriate rescue experiments (C45) and negative controls using catalytically inactive mutants (C46). The rescue by nsp16 overexpression provides strong evidence that the antiviral effect is mediated through nsp16 degradation. However, the transfection efficiency in different cell types may affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C74"
+    ],
+    "result": "UBR5 and MARCHF7 degrade nsp16 variants from multiple SARS-CoV-2 strains (including XBB variants), exhibiting broad-spectrum antiviral activity. MG132 treatment restores nsp16 levels for all tested variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C74 demonstrate broad-spectrum activity across multiple viral variants. The use of MG132 as a positive control (C47) validates UPS-mediated degradation for variants. However, the claim notes degradation occurs 'to varying degrees' (C48), suggesting some variants may be more resistant. The number of variants tested and the extent of sequence variation should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "SARS-CoV-2 infection reduces MARCHF7 expression consistently with increasing viral titers, while UBR5 levels initially rise before declining. In patient samples, UBR5 expression negatively correlates with disease severity, but MARCHF7 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C52 describe expression changes during infection and in patients. The in vitro data (C49-C50) are supported by RT-qPCR and immunoblotting. However, the patient data (C51-C52) have limitations: small sample size (acknowledged by authors), use of PBMCs rather than lung tissue, and lack of statistical significance for MARCHF7 (C52). The variability in human immune responses and the inconsistent MARCHF7 trend weaken confidence in the clinical relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In vivo overexpression of UBR5 or MARCHF7 in mice reduces SARS-CoV-2 viral loads, decreases weight loss, reduces lung pathology, and lowers inflammatory cytokine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 demonstrate in vivo antiviral effects through multiple readouts: viral titers (C53), clinical signs (C54), histopathology (C55), and cytokine levels (C56). The use of high-pressure tail vein injection for gene delivery is validated by citations. However, the authors acknowledge limitations of this delivery method, including variable transfection efficiency and potential immune activation. The n=3 per group is relatively small for in vivo studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Mass spectrometry identified K76 as a ubiquitination site on nsp16. The K76R mutant shows reduced ubiquitination but still undergoes degradation, indicating K76 is one of multiple ubiquitination sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 identify a specific ubiquitination site through MS (C66) and validate its functional role through mutagenesis (C67). The observation that K76R mutation reduces but does not eliminate ubiquitination is consistent with the presence of 18 lysine residues in nsp16 and suggests multiple sites contribute to degradation. This is appropriately interpreted by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims about SARS-CoV-2 epidemiology, viral proteins, nsp16 function, and therapeutic development are supported by appropriate citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide background context supported by citations. These are standard background claims that establish the rationale for studying nsp16. The citations appear appropriate and the claims are consistent with established knowledge about SARS-CoV-2 biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims about the ubiquitin-proteasome system, E3 ligase classification, and mechanisms are supported by appropriate citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 provide standard background on the UPS and E3 ligase biology, supported by appropriate citations. These establish the conceptual framework for the study and are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Background claims about nsp16 structures, host E3 ligases targeting viral proteins, UBR5 and MARCHF7 functions in other contexts are supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 provide relevant background on nsp16 structural studies, host-virus interactions, and the specific E3 ligases studied. The citations appear appropriate and establish the novelty of studying UBR5 and MARCHF7 in the context of SARS-CoV-2 nsp16.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Background claims about high-pressure tail vein injection as a gene delivery method and its limitations in human trials are supported by citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 provide context for the in vivo delivery method used in the study. The authors appropriately acknowledge limitations and cite relevant literature on both the method's utility and its risks in human applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C73"
+    ],
+    "result": "Summary claims that UBR5 and MARCHF7 independently target nsp16 for degradation and suppress SARS-CoV-2 replication are supported by the collective experimental evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C73 are high-level summary statements supported by the totality of experimental evidence from multiple result groups. These represent the main conclusions of the paper and are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Background claim that nsp8 undergoes TRIM22-mediated ubiquitination and proteasomal degradation is supported by citation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 provides context for why the authors focused on nsp16 rather than nsp8 after initial screening. The citation to Fan et al., 2024 supports this background claim.",
+    "result_type": "MINOR"
+  }
+]

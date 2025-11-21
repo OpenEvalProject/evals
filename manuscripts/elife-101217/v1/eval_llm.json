@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The topAI-yjhQP operon is regulated by an 8-codon upstream ORF (uORF) named toiL, located 139 nt upstream of topAI. This uORF is conserved across related bacterial species and acts as a sensor for translation stress caused by multiple classes of ribosome-targeting antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C49, C51, and C52 provide converging experimental evidence from ribosome profiling, reporter assays, and sequence conservation analysis. The identification of toiL through manual inspection of ribosome profiling data (C49), validation through stop codon insertion experiments (C51), and demonstration of sequence conservation (C52) provide strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C67",
+      "C70",
+      "C73"
+    ],
+    "result": "Rho-dependent transcription termination occurs within the topAI coding region (between nucleotides 10-42) as a consequence of translational repression. The Rho utilization (Rut) site is located in the 5' UR at the pyrimidine-rich sequence, and Rho loads early but terminates >180 nt downstream within the ORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of experimental evidence support this result: reporter assays in rho mutants (C37, C39-40), ChIP-qPCR showing increased RNAP occupancy in rho mutants (C67, C70), and qRT-PCR showing increased RNA levels (C73). The mutational analysis of the Rut sequence (C39-41) and comparison of reporter constructs of different lengths (C42) provide strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C61",
+      "C62",
+      "C7",
+      "C65",
+      "C66"
+    ],
+    "result": "Active translation of toiL is absolutely required for antibiotic-mediated induction of topAI expression. Five different classes of ribosome-targeting antibiotics (tetracycline, spectinomycin, retapamulin, tylosin, and erythromycin) induce topAI expression 250- to 4000-fold, while chloramphenicol and several aminoglycosides do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for toiL translation is demonstrated by mutations in the toiL start codon (C53) and Shine-Dalgarno sequence (C54) that abolish or greatly reduce antibiotic induction. The luciferase reporter assays (C61) provide quantitative measurements of induction by multiple antibiotics with appropriate controls (C62), supporting the conclusion that topAI responds to diverse translation stresses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C99",
+      "C100"
+    ],
+    "result": "In the absence of translation stress, a secondary structure in the 5' UR forms a hairpin between toiL and the topAI ribosome-binding site, occluding the topAI RBS and repressing translation. This structure is supported by computational predictions, prior dsRNA mapping, and SHAPE-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed RNA secondary structure is supported by multiple independent lines of evidence: computational prediction (C77), prior experimental dsRNA mapping (C78), evolutionary conservation analysis (C79), and in-cell SHAPE-seq data (C80-81). The SHAPE-seq experiments show statistically significant changes in reactivity upon tetracycline treatment consistent with the model (C81), providing strong experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C115"
+    ],
+    "result": "Different ribosome-targeting antibiotics stall ribosomes at different positions within toiL: tetracycline and retapamulin stall at the start codon (+16 to +18), tylosin stalls at Val5, and erythromycin stalls during translation termination. Ribosome stalling at any of these positions is sufficient to induce topAI expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by ribosome profiling data showing tetracycline-induced stalling at start codons genome-wide (C86) and specifically at toiL (C85), and by stalling reporter assays that map antibiotic-specific stalling positions (C91-95). The observation that different antibiotics induce expression despite stalling at different positions (C97-98) is well-supported by the experimental data, though the spectinomycin data are less clear (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C102",
+      "C103"
+    ],
+    "result": "Tetracycline treatment relieves topAI repression by inducing ribosome stalling within toiL, which disrupts the repressive hairpin structure, leading to topAI translation. This translation in turn prevents premature Rho-dependent transcription termination within topAI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is supported by ChIP-qPCR showing tetracycline increases RNAP occupancy across topAI-yjhQP (C71), qRT-PCR showing increased RNA levels (C75), and the integration of structural, ribosome profiling, and reporter data. The mechanistic link between translation and Rho termination is well-established and the data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Mutations in 23S rRNA (\u0394T1917 in helix 69) induce topAI expression when supplied in trans, and this effect is dominant over the seven wild-type chromosomal rRNA operons, suggesting the effect is not simply due to reduced ribosome levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trans-complementation experiment (C56-57) with appropriate controls demonstrates that the mutant rRNA can induce topAI expression. The dominance observation (C58) is a reasonable inference from the data, though the mechanism by which a single mutant operon dominates is not fully explained. The result is consistent with the model that ribosome processivity defects can induce topAI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C106",
+      "C107"
+    ],
+    "result": "toiL is a multipurpose uORF capable of responding to diverse translation stresses because base-pairing with the topAI ribosome-binding site occurs across the entire length of the toiL ORF, allowing ribosome stalling at any position within toiL to disrupt the repressive hairpin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C9, C106-107) is well-supported by the structural data showing extensive base-pairing (C77-79), the stalling reporter data showing that different antibiotics stall at different positions yet all induce expression (C91-98), and the observation that mutations at different positions in toiL affect regulation (C53-54). The mechanistic explanation is logical and consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "In rho mutant cells, tetracycline treatment causes an additional ~2-fold increase in topAI-yjhQP RNA levels, suggesting a modest additional level of regulation at the level of mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the qRT-PCR data (C104) show a statistically significant 2-fold increase, the interpretation as mRNA stability regulation (C105) is speculative. The increase could also reflect transcriptional effects, RNA processing, or other mechanisms. Additional experiments such as RNA half-life measurements would be needed to definitively establish mRNA stability as the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C144",
+      "C145"
+    ],
+    "result": "The mechanism by which translation prevents Rho termination at topAI is distinct from other characterized examples because the Rut is located in the 5' UR rather than within the ORF. Ribosomes translating topAI likely prevent Rho from catching elongating RNAP rather than preventing Rho loading, and the Rut must overlap the actively translated toiL ORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The location of the Rut in the 5' UR (C139) is well-established by the mutational analysis (C39-41). The inference that this represents a distinct mechanism (C140-141) is logical given the unusual Rut location. The conclusion that the Rut overlaps toiL (C144-145) is a reasonable inference based on the length requirements for Rut sequences and the genomic organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Premature Rho-dependent transcription termination destabilizes the topAI-yjhQP mRNA, as evidenced by increased RNA levels even upstream of the termination site when Rho is mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qRT-PCR data showing increased RNA levels upstream of the termination site in rho mutants (C73) support this inference (C74). The observation that RNA levels increase in regions that should not be directly affected by termination suggests a destabilization effect, though the mechanism is not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C157"
+    ],
+    "result": "Analysis of ribosome profiling data reveals that several other genes known to be associated with uORFs (mgtA, corA, speC) show >5-fold increases in ribosome-associated RNA levels upon tetracycline treatment, suggesting widespread uORF-mediated regulation in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ribosome profiling analysis (C157) provides direct evidence for tetracycline-responsive regulation of other known uORF-containing genes. This supports the broader implication that uORF-mediated antibiotic sensing may be more widespread than previously recognized, though functional validation of these specific cases would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The mechanisms by which different antibiotics induce ribosome stalling within toiL are consistent with their known mechanisms of action and sequence preferences. Tetracycline likely prevents aminoacyl-tRNA association at the A-site of initiating ribosomes; macrolides (erythromycin, tylosin) induce stalling through nascent peptide-antibiotic interactions in the exit tunnel; and chloramphenicol fails to induce stalling due to the absence of its preferred codons (Ala, Ser, Thr) in toiL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic explanations are well-supported by citations to prior work on antibiotic mechanisms (C120, C123-127, C130-131, C135) and are consistent with the experimental observations in this study. The comparison of toiL and msrDL sequences (C127-128) provides additional support for the erythromycin stalling mechanism. The chloramphenicol explanation (C136) is speculative but reasonable given the sequence composition of toiL.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on bacterial gene regulation: Expression of many bacterial genes is regulated by cis- and trans-acting elements in 5' URs, including uORFs that sense translation stress through ribosome stalling. Translation repression can lead to Rho-dependent transcription termination, and genome-wide studies suggest this is a widespread regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C26) represent established knowledge in the field, supported by appropriate citations to prior work. They provide necessary context for understanding the significance of the topAI regulatory mechanism but do not constitute novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C59",
+      "C60",
+      "C63",
+      "C64"
+    ],
+    "result": "Background on the topAI-yjhQP system: The topAI gene is operonic with yjhQ and yjhP, encoding a type II toxin-antitoxin system. Previous genome-scale studies identified a Rho termination site in topAI, and prior studies reported induction by certain antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C27-C30, C34-C35, C59-C60, C63-C64) are supported by appropriate citations to prior work and provide necessary background for the current study. They establish what was known about the system before this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Comparison to other antibiotic-sensing uORFs: Several other bacterial uORFs (cplR, vmlR, vga(A), whiB7) sense multiple antibiotics, but most stall ribosomes at start codons. The toiL system is distinctive in that different antibiotics stall at different positions within the uORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparisons to other systems (C111-C114, C116-C119) are supported by appropriate citations and accurately represent prior work. The distinction drawn between toiL and these other systems (C115) is well-supported by the experimental data in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Two alternative mechanisms are proposed for how Rho can load onto the topAI 5' region despite the overlapping toiL ORF: (i) Rho loads only after toiL translation terminates, or (ii) Rho loops the RNA around toiL to access upstream and downstream Rut elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative proposals (C146-C147) without direct experimental support in this study. While the citation to prior work on Rho stepping over roadblocks (C148) provides some precedent, neither proposed mechanism is tested experimentally. Additional experiments would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "Mutations in helix 69 and helix 80 of 23S rRNA induce topAI expression because these residues promote ribosome processivity, and slowed ribosomes translating toiL have effects similar to stalled ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This explanation (C108) is supported by citations to prior work on ribosome processivity and is consistent with the genetic screen results and the trans-complementation data (C56-C58). The mechanistic link between reduced processivity and the toiL regulatory mechanism is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C152",
+      "C153",
+      "C156"
+    ],
+    "result": "Speculation on physiological function and prevalence: The toiL sequence may have evolved to stall ribosomes in response to various antibiotics. The physiological signal that toiL senses could be antibiotics or non-antibiotic molecules like amino acids or polyamines. Large numbers of regulatory uORFs may exist even in well-characterized bacteria like E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims (C110, C152-C153, C156) that extend beyond the experimental data. While the speculation is reasonable and supported by citations to related work, these hypotheses require additional experimental validation. The suggestion about widespread uORFs (C156) is supported by the ribosome profiling analysis (C157) but remains speculative.",
+    "result_type": "MINOR"
+  }
+]

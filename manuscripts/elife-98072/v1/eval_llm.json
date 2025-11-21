@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The manuscript provides background information on SFTs, including their incidence (1/1,000,000 per year), recurrence rates (30-40%), lack of effective therapies, and the NAB2-STAT6 fusion as their molecular hallmark. These claims establish the clinical and molecular context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C4, C59-C61, C70-C73, C84-C86) are well-established facts about SFTs supported by multiple citations to prior literature. They provide necessary background context and are not primary findings of this study. The claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript reviews established knowledge about STAT6 and NAB2 protein functions, including STAT6's role in JAK/STAT signaling and NAB2's characterization as an EGR1/2 co-repressor that can also function as a co-activator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C62-C69) summarize well-established molecular biology of STAT6 and NAB2 proteins, supported by appropriate citations. C69 references the authors' own prior work. These provide necessary molecular context for understanding the fusion protein's function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C88"
+    ],
+    "result": "RNA-seq analysis of eight primary SFT tumors versus matched normal tissue reveals that all tumors share a common NAB2-STAT6 isoform (exons 1-4 of NAB2, exons 2-22 of STAT6), with IGF2 as the most upregulated gene, broad upregulation of neuronal development programs, downregulation of immune pathways, and enrichment of EGR1 binding motifs at promoters of upregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C88 are directly supported by RNA-seq data from FFPE samples (Figure 1), fusion detection using Arriba, differential expression analysis, GO/GSEA analysis, and motif enrichment analysis. The data quality appears appropriate for FFPE samples, and the analytical approaches are standard. The conclusion that an EGR1-bound neuronal program is activated is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In a doxycycline-inducible U2OS cell model, NAB2-STAT6 expression peaks at 48 hours and induces upregulation of 562 genes (73% of differentially expressed genes) enriched for EGR1 motifs but not STAT motifs. Expression of endogenous NAB2, NAB1, and EGR1 increases over time, suggesting a feed-forward mechanism and that NAB2-STAT6 functions primarily as a transcriptional activator rather than repressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 and C89-C91 are supported by immunoblot (Figure 2a), 3' mRNA QuantSeq (Figure 2c-f), and motif analysis (Figure 2e). The inducible system provides temporal control, and the data show clear dose-dependent effects. The inference about feed-forward activation (C90) and lack of co-repressor activity (C91) are reasonable interpretations of the observed upregulation of NAB2, NAB1, and EGR1. However, the claim about 'primary function' (C89) is somewhat speculative as it's based on the ratio of up- vs downregulated genes without mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "U2OS cells can model NAB2-STAT6 activity but do not accurately represent the cell of origin of SFTs, as evidenced by limited overlap (15%) in differentially expressed genes between U2OS and primary tumors despite similar GO/TF enrichment patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by comparison of gene lists and enrichment analyses between U2OS and primary SFT data (Figure 2\u2014figure supplement 1d). The authors appropriately acknowledge the limitations of their model system while noting that key mechanistic features (EGR1 enrichment, neuronal gene activation) are conserved. This is an important caveat for interpreting the U2OS data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C93"
+    ],
+    "result": "ChIP-seq and ATAC-seq in U2OS cells reveal that NAB2-STAT6 binds 1394 genomic sites (57% promoters, 43% enhancers) that are enriched for EGR1/EGR2 motifs but not STAT motifs. At these sites, endogenous EGR1 binding and chromatin accessibility increase at least twofold upon NAB2-STAT6 expression, and genes near these sites are significantly upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 and C93 are well-supported by ChIP-seq for NAB2-STAT6 FLAG, endogenous EGR1, NAB2, and STAT6, plus ATAC-seq data (Figure 3). The motif analysis using HOMER is appropriate, and GSEA shows correlation between binding and gene expression. The observation that endogenous NAB2 but not STAT6 localizes to NAB2-STAT6 peaks in control conditions (C25) and that NAB2-STAT6 doesn't bind STAT6 control sites (C26) strongly supports the conclusion that the fusion protein's localization is driven by the NAB2 moiety and EGR1 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C82",
+      "C94"
+    ],
+    "result": "ChIP-seq in a primary SFT tumor identifies 718 putative NAB2-STAT6 binding sites (69% distal enhancers) by overlapping NAB2 and STAT6 peaks. These sites are enriched for EGR1/2 motifs, correlate with upregulated genes in SFTs, and show limited overlap with U2OS NAB2-STAT6 sites, suggesting conserved mechanisms but cell-type-specific targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34, C82, and C94 are supported by ChIP-seq data from a primary tumor (Figure 4). The dual-antibody strategy to identify fusion protein binding sites is clever and validated by showing minimal NAB2/STAT6 overlap in control U2OS cells (Figure 4\u2014figure supplement 1b). The motif analysis and GSEA support the functional relevance of these sites. The limited overlap with U2OS (C34) is appropriately interpreted as reflecting cell-type specificity while maintaining mechanistic conservation. However, the conclusion that localization is 'exclusively' driven by EGR1 (C94) may be overstated\u2014'predominantly' would be more accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C95",
+      "C96"
+    ],
+    "result": "IP-MS experiments reveal that NAB1 and EGR1 are the top interactors of NAB2-STAT6, with NAB1 being the strongest interactor across multiple experiments. EGR1 co-purifies with CBP/P300 and RNAPII subunits, suggesting NAB2-STAT6 co-opts EGR1 co-activator functions. The fusion protein can also heterodimerize with endogenous full-length NAB2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C95-C96 are supported by LC-MS/MS analysis of immunoprecipitates using NAB2, STAT6, EGR1, and FLAG antibodies (Figure 5a, Figure 5\u2014figure supplement 1). The data from multiple IP approaches (NAB2, STAT6, FLAG in U2OS and HEK293T) provide strong convergent evidence. The identification of peptides unique to full-length NAB2 (C38) is particularly convincing. The inference that NAB2-STAT6 'co-opts' EGR1 functions (C96) is reasonable given the co-purification data, though direct functional validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Subcellular fractionation and immunocytochemistry demonstrate that in physiological conditions, NAB2 and NAB1 are primarily cytoplasmic while STAT6 is nuclear. Upon NAB2-STAT6 expression, the fusion protein is exclusively nuclear and redirects endogenous NAB2, NAB1, and EGR1 to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39-C41, C43-C46 are supported by subcellular fractionation/immunoblot (Figure 5b) and immunocytochemistry in both U2OS cells and primary SFT tumor cells (Figure 5c-d). The data clearly show the redistribution of normally cytoplasmic proteins to the nucleus upon NAB2-STAT6 expression. The use of both biochemical fractionation and imaging provides strong convergent evidence. The controls (GAPDH, Histone H3) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C97"
+    ],
+    "result": "The STAT6 moiety is the major driver of NAB2-STAT6 nuclear localization, but does not endow the fusion protein with the ability to recognize STAT motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C97 are supported by the observation that STAT6 is nuclear in control conditions while NAB2 is cytoplasmic (Figure 5b), and the fusion protein is fully nuclear. The lack of STAT motif enrichment at NAB2-STAT6 binding sites (Figures 3b, 4c) and absence of binding to STAT6 control sites (Figure 3\u2014figure supplement 1c) strongly support C97. However, the claim that STAT6 is the 'major driver' (C8) is an inference\u2014direct mutagenesis of nuclear localization signals would provide stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Primary SFT tumor cells show strong nuclear staining for both NAB2 and STAT6 by immunocytochemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is directly supported by immunocytochemistry data shown in Figure 5c. This validates that the nuclear localization observed in the U2OS model system also occurs in actual tumor cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "NAB2-STAT6 operates as a transcriptional coactivator for EGR1 target enhancers and promoters by redirecting NAB1, NAB2, and EGR1 to the nucleus. Under physiological conditions, NAB2/NAB1 are co-activators of EGR1 targets, but cytoplasmic localization restrains their activity. The NAB2 moiety of the fusion protein does not recruit Integrator subunits but retains co-activator abilities through CBP/P300 and RHA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, C76-C78 represent the central mechanistic model of the paper, integrating multiple lines of evidence: ChIP-seq showing EGR1 motif enrichment (C5), localization studies showing nuclear redistribution (C7), IP-MS showing protein interactions (C76-C78), and comparison with prior work on full-length NAB2 (C78). The model is well-supported by the data, though the claim that NAB2/NAB1 are co-activators 'under physiological conditions' (C77) is somewhat speculative since the data primarily show they become co-activators when brought to the nucleus by the fusion protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C57",
+      "C58"
+    ],
+    "result": "Single-sample GSEA across TCGA reveals that SFTs activate a neuroendocrine gene signature that correlates most strongly with neuroendocrine tumors (glioblastoma, neuroblastoma, pheochromocytoma/paraganglioma) and least with myeloid/lymphoid malignancies. This pattern is also observed in correlation with Human Protein Atlas neuronal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C47-C49, C57-C58 are supported by ssGSEA analysis across TCGA (Figure 6a) and Spearman correlation with Human Protein Atlas data (Figure 6\u2014figure supplement 1). The analysis is appropriate and the sample size is large (22,687 TCGA samples). This provides important context for understanding SFT biology and suggests they may be more similar to neuroendocrine tumors than to typical sarcomas. The correlation analysis is descriptive but informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C80"
+    ],
+    "result": "Survival analysis across TCGA shows that tumors with high SFT gene signature scores have significantly worse outcomes, suggesting that EGR1 gene signature expression underlies tumor aggressiveness and/or therapy resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is supported by survival analysis (Figure 6b) showing statistically significant differences (p<0.0001). However, the mechanistic interpretation in C80 that the EGR1 signature 'underlies' aggressiveness/resistance is speculative. The correlation could reflect many factors, and causality is not established. The survival analysis is across diverse tumor types, not specifically SFTs, which limits interpretation. Additional validation in SFT-specific cohorts would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The SFT gene signature successfully identifies a misclassified SFT (sample SH-A7BH) within the TCGA mesothelioma cohort, which was confirmed to harbor a NAB2-STAT6 fusion by Arriba analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by ssGSEA analysis (Figure 6c) and fusion detection (Figure 6d). This provides strong validation that the SFT gene signature is specific and can identify NAB2-STAT6-driven tumors even when misclassified. This is a nice demonstration of the signature's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C81"
+    ],
+    "result": "InterPro domain analysis reveals that the Homeobox domain is the most enriched protein domain in the top 400 SFT signature genes. Several homeodomain transcription factors (ALX4, SHOX2, SIX1) and entire HOX clusters (HOXA, HOXC) are upregulated in SFTs, with RNAPII-bound enhancers showing enrichment for homeotic protein and Nanog motifs. This suggests SFTs may originate from a corrupted developmental process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by InterPro analysis (Figure 6e), RNA-seq and RNAPII ChIP-seq data (Figure 6f), and HOMER motif analysis (Figure 6g). The data clearly show upregulation of developmental transcription factors. However, the speculation that SFTs 'may originate from a corrupted developmental process' (C81) is highly speculative and not directly tested. The authors appropriately use cautious language ('perhaps suggesting'), but this remains a hypothesis requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C87"
+    ],
+    "result": "SFTs upregulate secreted metabolic regulators, neuropeptides, and chemokines/cytokines, and may be immunologically 'cold' based on downregulation of immune pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by RNA-seq data (Supplementary file 1), and C87 is supported by GO/GSEA analysis showing downregulation of immune pathways (Figure 1\u2014figure supplement 1d-e). The characterization of SFTs as 'immunologically cold' is an inference that could be validated with additional immune profiling, but is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C83"
+    ],
+    "result": "The mechanism of transcription activation by NAB2-STAT6 is conserved across cell types, but the specific target genes are cell-type specific. The fusion protein may reinforce its own expression by binding to the NAB2 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is a reasonable inference from the limited overlap in binding sites but similar mechanisms between U2OS and primary tumors. Claim C83 is supported by observation of NAB2-STAT6 binding to the NAB2 promoter with increased accessibility and EGR1 binding (Figure 4f). However, functional validation (e.g., by disrupting this binding) would strengthen the claim about self-reinforcement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The STAT6 moiety may recruit additional co-activators to the fusion protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is speculative, based on the known function of STAT6 and the presence of SND1 and RHA in the interactome. While SND1 is known to be recruited by STAT6, the data don't definitively show whether these co-activators are recruited via the STAT6 moiety or through other interactions. This would require domain deletion studies or other functional validation.",
+    "result_type": "MINOR"
+  }
+]

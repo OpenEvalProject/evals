@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors propose that layer 2/3 neurons represent uncertainty-modulated prediction errors (UPEs), calculated through subtractive inhibition by SST interneurons and divisive inhibition by PV interneurons. This is a core theoretical hypothesis derived from normative principles about how uncertainty should modulate prediction errors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this theoretical framework. The editor states the model 'effectively illustrate[s]' how 'a canonical layer 2/3 cortical circuit...can generate uncertainty-modulated prediction errors.' Reviewer 1 confirms 'the authors show that if two different classes of inhibitory interneurons...act in different (divisive vs. subtractive) ways...then pyramidal neurons...can indeed encode uncertainty-modulated prediction errors.' Reviewer 2 notes the model is 'novel and well-implemented' with 'sufficient biological accuracy.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C22",
+      "C23",
+      "C30"
+    ],
+    "result": "The computational model demonstrates that SST neurons learn to represent the mean of stimulus distributions through local plasticity rules, with weights and firing rates reflecting the mean of presented stimuli in a context-dependent manner.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'SSTs learn to represent the mean of a stimulus distribution' and notes 'the simulations shown demonstrate that...the authors' theory works very well.' The editor confirms 'simulations effectively illustrate that, with appropriate synaptic plasticity,' the circuit can perform these computations. No reviewer challenges these modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C22",
+      "C31",
+      "C36",
+      "C37"
+    ],
+    "result": "The model shows that PV neurons can estimate variance of stimulus distributions, with dendritic nonlinearities in pyramidal cells compensating for PV neuron dynamics to approximate ideal variance representation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Reviewer 1 confirms 'PVs learn to estimate its variance' as part of the model's successful operation, Reviewer 2 explicitly identifies this as speculative, stating 'One key idea the model hinges on is that stimulus uncertainty is encoded in the firing rate of parvalbumin positive interneurons. While this assumption is rather speculative, the model also here makes experimentally testable predictions.' This indicates acceptance of the modeling results but uncertainty about biological validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C25",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The mechanism enables adaptive learning rates through uncertainty modulation, allowing faster learning in low-uncertainty contexts and reduced learning rates in high-uncertainty contexts, with firing rate variability increasing sublinearly with input variability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly confirms 'the level of uncertainty automatically tunes the learning rate, so that variable observations are less impactful in a high uncertainty setting.' The editor notes the model 'yields a range of testable predictions' without challenging this specific result. No reviewer questions the adaptive learning rate findings from the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C36"
+    ],
+    "result": "Error neurons can implement out-of-distribution detection through nonlinear activation functions that amplify large errors while reducing small errors, with dendritic nonlinearities approximating ideal variance-based modulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor acknowledges the model 'yields a range of testable predictions' and Reviewer 1 notes the 'framework used by the authors is biologically plausible and matches some known biological data.' No reviewer specifically challenges the out-of-distribution detection mechanism or the role of dendritic nonlinearities shown in the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The model aligns with experimental observations showing that inhibitory neurons increase firing during uncertainty, prediction error responses decrease in unpredictable contexts, and SST/PV responses differ between predictable and unpredictable environments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The authors are able to point to some experimental observations that are at least consistent with their computational results.' The editor notes the model 'does align with empirical observations.' While the editor acknowledges the model 'has not yet been compared directly to data,' reviewers accept the consistency with existing experimental findings without challenging these specific observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The model has implications for understanding neurological disorders like autism spectrum disorder and schizophrenia, which are associated with maladaptive uncertainty weighting and aberrant inhibition, particularly reduced PV cell function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor notes the model 'yields a range of testable predictions' and Reviewer 1 confirms 'The results attained, as well as the assumptions that go into the theory, provide several predictions for future experimental testing.' No reviewer challenges the clinical implications or the cited associations between these disorders and inhibitory dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The model's assumptions about SST and PV interneuron properties are supported by experimental evidence, including their connectivity patterns, functional roles, and diversity of subtypes, though the specific roles can vary depending on circuit properties.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'The framework used by the authors is biologically plausible and matches some known biological data' and 'there is at least some biological support' for the assumptions. The editor confirms the model 'does align with empirical observations.' Reviewer 1 also states 'the authors do lay out and discuss their key assumptions in the Discussion section, so readers can assess their validity,' indicating acceptance of how these are presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The model's plasticity mechanisms, including heterosynaptic plasticity and excitation-inhibition balance, are consistent with experimental observations and previous theoretical work on how prediction errors arise from breaking EI balance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'simulations effectively illustrate that, with appropriate synaptic plasticity' the circuit functions as proposed. Reviewer 1 confirms the model demonstrates that 'synaptic weights evolve in a way that causes the impact of certain inputs to balance the firing rates.' No reviewer challenges the biological plausibility of these plasticity mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C27",
+      "C35",
+      "C49"
+    ],
+    "result": "The manuscript establishes theoretical background and knowledge gaps regarding prediction errors, uncertainty estimation, and cortical processing, including that prediction error neurons exist in layer 2/3 but how uncertainty modulates them remains unclear.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 confirms 'There is ample experimental evidence for prediction error responses in cortex' and that 'a central prediction of the theory is that these prediction error responses are regulated by the uncertainty of the input.' Reviewer 1 acknowledges 'The impact of uncertainty on prediction errors in an understudied topic' which validates the identified knowledge gap. No reviewer challenges the background claims.",
+    "result_type": "MINOR"
+  }
+]

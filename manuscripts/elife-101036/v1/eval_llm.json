@@ -1,0 +1,414 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study recruited 385 participants (298 children aged 3-17 years and 87 adults) from 38 US states using a remote online video game paradigm, with appropriate ethical approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, C129, C130 provide consistent sample size and demographic information. Claims C131 and C132 confirm ethical approval and consent procedures. The study design is clearly documented with appropriate oversight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C32",
+      "C33",
+      "C85"
+    ],
+    "result": "In the continuous probabilistic task, learning performance showed a clear developmental trajectory: 3-8 year-olds showed incomplete or absent learning, while performance gradually improved to adult-like levels by adolescence, with distance from target significantly decreasing with age (R\u00b2=0.256, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C25, C32, C33, and C85 consistently describe the developmental trajectory with statistical support. The regression analysis (C32) provides quantitative evidence, and group-level data (C25) confirms the pattern. The findings are well-documented across multiple age bins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C35",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A reinforcement learning model identified two age-dependent factors underlying developmental improvement: exploration variability increased nearly fourfold from youngest to oldest children (p<0.001), while motor noise decreased by approximately 40% across the age range tested (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18, C19, C35, C45, C46, and C47 provide convergent evidence from both empirical data (C35: fail clamp variability) and model parameters (C45, C46). The statistical significance is well-documented, and the model-based interpretation (C47) is supported by the parameter estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C20",
+      "C51",
+      "C56",
+      "C57",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Switching to discrete targets and deterministic reward improved learning in 3-8 year-olds to adult-like levels. ANOVA showed significant main effects of both target type (F1,168=12.87, p<0.001) and reward landscape (F1,168=43.66, p<0.001) with no interaction, indicating additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C20, C62, C63, C64, and C67 provide consistent statistical evidence for the main effects and their additivity. Claims C51, C56, C57, C65, and C66 provide supporting empirical observations. The ANOVA results are appropriately interpreted, and the lack of interaction supports the additivity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C26",
+      "C89",
+      "C90"
+    ],
+    "result": "Young children demonstrated adequate motor accuracy and task comprehension: all but one participant performed well in the baseline block hitting discrete targets, and accuracy was maintained throughout the experiment (no effect of block: F1,106=0.282, p=0.597).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, and C26 provide direct evidence of baseline motor competence with statistical support. Claims C89 and C90 correctly infer that poor learning in young children was not due to motor accuracy or task comprehension deficits, which is supported by the baseline performance data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Baseline precision (endpoint variability relative to target center) decreased significantly with age (R\u00b2=0.153, p<0.001), consistent with known developmental changes in motor variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 provides statistical evidence for age-related improvement in baseline precision. Claim C31 appropriately contextualizes this finding within the existing literature on motor development. The effect size and significance are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "Adults showed high variability after failure and low variability after success, while variability after success was relatively stable across age in children (R\u00b2=0.012, p=0.249), suggesting younger children do not explore as much after failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C36 provide empirical observations with statistical support. Claim C37 is a reasonable inference from the pattern of results showing age-dependent increases in fail clamp variability but not success clamp variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C92"
+    ],
+    "result": "Model 11 was the preferred reinforcement learning model (\u0394BIC=216 to next best model), representing a special case of the Therrien et al. 2018 model with no exploration after success. This model was consistently preferred across different data subsets and outperformed a value-based model (\u0394BIC=3018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C40 provide strong evidence for model selection using BIC. The large \u0394BIC values indicate clear model preference. Claim C92 appropriately contextualizes the model within existing literature. The robustness checks (C39) strengthen confidence in the model selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C93",
+      "C94"
+    ],
+    "result": "The preferred model specifies that after failure, the current reach includes exploration variability and motor noise, while after success, only motor noise is present. The desired reach is updated only after success by incorporating any exploration from the previous trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, C43, C93, and C94 provide a coherent description of the model mechanics. These are direct descriptions of the model structure that was selected through BIC comparison, making them well-supported by the model selection process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C50"
+    ],
+    "result": "The model simulations with fit parameters accounted for differences in learning across age groups (R\u00b2=0.41 for learning phase) and explained 16% and 42% of variance in success and fail clamp phases, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C50 provide quantitative assessments of model fit. The R\u00b2 values are modest but reasonable given the stochastic nature of the task. The authors appropriately note the limited number of trials (9) for calculating clamp block standard deviations, which contextualizes the variance explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C59"
+    ],
+    "result": "In the discrete probabilistic task, distance from target decreased with age (R\u00b2=0.074, p=0.005), baseline precision improved with age (R\u00b2=0.150, p<0.001), and fail clamp variability increased with age (R\u00b2=0.162, p<0.001). Model-based exploration increased significantly with age (p<0.001), but motor noise change was not significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C54, C55, C58, and C59 provide consistent statistical evidence for age-related changes in the discrete probabilistic task. The pattern largely mirrors the continuous probabilistic task, though the non-significant motor noise effect (C59) is an important difference that is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C68"
+    ],
+    "result": "There were no significant differences in mean age between the four tasks (F3,168=1.072, p=0.362), no interaction between task and sex on learning (F3,164=0.97, p=0.409), and no significant differences in baseline precision across tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, and C68 provide important control analyses showing that differences in learning across tasks were not due to age differences, sex effects, or baseline motor ability differences. These null results are appropriately reported with statistical tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In clamp blocks, success clamp variability showed a main effect of reward landscape (F1,168=6.71, p=0.01) but not target type, while fail clamp variability showed main effects of both target type (F1,168=29.93, p<0.001) and reward landscape (F1,168=9.26, p=0.003), suggesting young children rationally adjust exploration based on task features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, and C71 provide statistical evidence for differential effects in clamp conditions. Claims C72 and C73 offer reasonable mechanistic interpretations. Claim C74 is a justified inference that young children's exploration patterns are sensitive to task structure, though the term 'rational' may be somewhat strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Model parameters for 3-8 year-olds showed that motor noise was significantly affected by reward landscape (F1,168=35.5, p<0.001) but not target type, while exploration variability was significantly affected by both reward landscape (F1,168=60.1, p<0.001) and target type (F1,168=16.6, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C76 provide clear statistical evidence for how task manipulations affected model parameters. The differential effects on motor noise versus exploration variability provide insight into the mechanisms underlying the behavioral improvements observed in younger children.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C97",
+      "C98"
+    ],
+    "result": "Model simulations showed that as motor noise increases, the optimal amount of exploration variability decreases (with mathematical proof in Appendix 1). While children showed the same trend, they generally did not produce the optimal amount of exploration, though their behavior was rational in terms of increasing exploration as motor noise decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C97 describe model predictions with reference to a mathematical proof. Claims C78 and C98 appropriately distinguish between the optimal behavior predicted by the model and the actual behavior observed in children, noting both similarities and differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "A subset of 16 participants (including 5 aged 3-8 years) completed the continuous probabilistic task in the lab. These participants could accurately describe the task goal, and their performance was not significantly different from online participants across multiple measures (all p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C80, C81, and C82 provide evidence for task comprehension and validate the online data collection approach. The Wilcoxon signed-rank tests (C82) appropriately compare in-lab and online performance across multiple measures, supporting the validity of remote data collection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C87",
+      "C91"
+    ],
+    "result": "In the discrete deterministic condition, 18 of 21 children aged 3-5 years had performance better fit by the preferred model than a noise-only model, and these youngest children could learn similarly to adults in this task, demonstrating they possess fundamental mechanisms for interpreting binary reward signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, C87, and C91 provide converging evidence that young children understand the task and possess basic reinforcement learning mechanisms. The model comparison approach (C83) provides a principled method for assessing task comprehension beyond informal assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C112"
+    ],
+    "result": "Children aged 3-8 years did not effectively utilize reward signals to learn in situations requiring response to probabilistic environments or lacking spatial cues specifying distinct targets, suggesting an inability to effectively utilize probabilistic reward signals or find high reward locations without clearly delineated spatial cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C112 provide a coherent interpretation of the pattern of results across tasks. This interpretation is well-supported by the differential performance across the four task conditions, particularly the strong performance in discrete deterministic tasks but poor performance in continuous probabilistic tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Younger children's movements were more curved (larger path length ratios) compared to older children, and while movement times were similar across ages, younger children took longer to initiate trials (longer reaction time) and start moving after initiating (longer stationary time).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C29 describe kinematic differences across ages with reference to supplementary figures. These are descriptive findings that characterize age-related differences in movement execution, though they were not the primary focus of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C102"
+    ],
+    "result": "The finding that exploration increases with age in this study diverges from some previous research showing exploration decreases with age. This divergence is attributed to differences in experimental design and the role of motor noise, with the optimal amount of exploration being task-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C96, and C102 appropriately acknowledge and address discrepancies with prior literature. The explanation focusing on motor noise and task design differences (C96) is reasonable and supported by the model simulations showing the relationship between motor noise and optimal exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Older children make larger adjustments after failure compared to younger children to find the highly rewarded zone more quickly, a pattern also observed in other motor tasks including real-world throwing (6-12 year-olds) and postural control tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 describes the age-related difference in exploration behavior observed in this study. Claims C100 and C101 appropriately cite convergent evidence from other motor tasks, strengthening the generalizability of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The continuous target task likely relies more on spatial working memory, which is not fully developed in children under 10 years. Younger children may benefit from clear environmental markers to differentiate spatial positions, consistent with their preference for discrete choices over continuous scales and the later development of phonological encoding compared to visual encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C104, C105, and C106 present speculations about cognitive mechanisms supported by citations to developmental literature. While the speculation is reasonable and well-grounded in prior research, the current study did not directly test spatial working memory or encoding mechanisms, making this interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The deterministic landscape is less ambiguous than the probabilistic landscape, and younger children take longer to adopt reward maximization strategies in probabilistic environments. In deterministic landscapes, probability matching and reward maximizing produce the same behavior, potentially explaining younger children's improved performance. Young children's behavior may also reflect a fundamental need to prioritize hypothesis testing and information gathering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107, C108, C109, C110, and C111 present reasonable interpretations supported by citations to prior research. However, the study did not directly measure decision-making strategies (probability matching vs. maximizing) or information-seeking motivations, making these interpretations speculative though plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The differential ability to incorporate reward signals across childhood may stem from maturation of brain reward centers including the basal ganglia, dorsolateral prefrontal cortex, posterior parietal cortex, and anterior cingulate cortex. The pallidum reaches peak volume at 7.7-9.5 years and the thalamus at 13.8-17.4 years. Brain activity after positive versus negative rewards becomes more distinct with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116, C117, C118, C119, C120, and C121 present neurobiological speculation supported by citations to brain development literature. While the developmental timeline of brain structures aligns with the behavioral findings, the study did not include neuroimaging data, making the neural mechanism claims speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The remote study design lacked control over computer quality, internet speed, and testing environment, and did not allow detailed analysis of movement timing parameters. However, comparisons across large groups likely factored out uncontrolled variables. Other processes such as memory and motivation could affect performance but were not directly tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C123, C124, and C125 appropriately acknowledge limitations of the remote study design. The authors reasonably argue that large sample sizes mitigate some concerns (C124), and the in-lab validation data (C79-C82) support the validity of the online approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The findings in typical development provide a foundation for understanding childhood behavior and could inform understanding of function lost after injury. There is a need to consider both disease process and age for interventions, as developmental differences in motor learning capacity exist at different ages. Understanding age-related differences can guide intervention decisions to optimize rehabilitation outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C127, and C128 present reasonable implications of the research findings for clinical applications. These are appropriate forward-looking statements about potential applications, though they represent future directions rather than demonstrated outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Movement trajectories were sampled at the polling rate of the selected input device, with data uploaded to Google Firebase Realtime Database after each trial. Sampling rates had a mean of 37.363 \u00b1 4.184 Hz after manual inspection of each trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133 and C134 provide methodological details about data collection. The sampling rate information is clearly reported with mean and standard deviation, providing transparency about data quality.",
+    "result_type": "MINOR"
+  }
+]
